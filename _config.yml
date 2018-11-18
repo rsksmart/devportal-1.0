@@ -1,0 +1,25 @@
+title: RSK Name Service Docs
+description: >
+  RNS provides an architecture which enables the identification 
+  of RSK addresses by human-readable names.
+
+rss: rss
+
+breadcrumbs:
+  root:
+    hide: true
+    image: false
+
+permalink: pretty
+
+repository: rnsdomains/rnsdomains.github.io
+domain: docs.rns.rsk.co
+
+highlighter: rouge
+
+gems:
+ - jekyll-last-modified-at
+
+plugins:
+ - jekyll-feed
+ - jekyll-github-metadata

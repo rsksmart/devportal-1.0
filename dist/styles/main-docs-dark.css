@@ -1,0 +1,24 @@
+body.dark .page-wrapper,
+body.dark pre.highlight
+{
+	background: #333132;
+	color: #f1f2ed;
+}
+body.dark pre.highlight .o
+{
+	color: #f1f2ed;
+}
+body.dark pre.highlight .s1,
+body.dark .highlight .s2,
+body.dark .highlight .s
+{
+	color: black;
+}
+body.dark .highlight .na,
+body.dark .highlight .mh{
+	color: #6666ff;
+}
+body.dark h1
+{
+	color: #53c676;
+}
