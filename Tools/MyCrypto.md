@@ -38,7 +38,7 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
 
 3. Create the bid
     In Registrar contract, select `newBid` function. Complete with the following:
-    - `sealedBid`: the result obtained in step 3.
+    - `sealedBid`: the result obtained in step 2.
     - `tokenQuantity`: the same token value set in step.
 
     Send the transaction and wait until confirmed.
