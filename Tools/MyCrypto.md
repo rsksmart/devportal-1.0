@@ -31,7 +31,7 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
     In Registrar contract, in _Read / Write Contract_ select `shaBid` function. Complete with the following:
     - `hash`: the sha3 hash of the label you want to bid to (without .rsk suffix). 
     - `owner`: owner's address, case winning the auction. 
-    - `value`: amount of RIF token to bid.
+    - `value`: amount of RIFi token to bid.
     - `salt`: any number.
 
     Save the result (a hex value), and `value` and `salt` values!
