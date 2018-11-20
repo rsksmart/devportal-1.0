@@ -1,20 +1,5 @@
 {% if site.root or true %}
 <nav class="breadcrumbs bootstrap hidden-sm-down">
-	<div class="actions">
-		<a href="https://github.com/{{ site.repository }}/edit/master/{{ page.path }}">Edit</a> | 
-		<a href="#" onclick="$('body').toggleClass('dark');if($(this).text() ==='Dark'){$(this).text('Light')}else{$(this).text('Dark')} return false;">Dark</a> | 
-		<a href="#" onclick="$('#sharing-menu').toggle();return false;">Share</a> |
-		<div class="dropdown-menu" id="sharing-menu" role="menu" style="display:none;">
-			<ul data-bi-name="share-links">
-				<li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2F{{ site.domain }}{{ page.url }}&amp;text={{ page.title }}&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2F{{ site.domain }}{{ page.url }}"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
-				<li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2F{{ site.domain }}{{ page.url }}"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
-				<li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F{{ site.domain }}{{ page.url }}"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-				<li><a class="share-email" data-bi-name="email" href="mailto:?subject={{ page.title }}&amp;body={{ page.title }}%0A%0Ahttps%3A%2F%2F{{ site.domain }}{{ page.url }}"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-				<li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://{{ site.domain }}{{ page.url }}').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
-			</ul>
-		</div>
-		<!--{{ site.github.contributors }}-->
-	</div>
    <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
 
       {% for crumb in breadcrumbs %} 
@@ -77,14 +62,8 @@
    }
 
    nav.breadcrumbs.bootstrap .breadcrumb-item {
-      float: none;
+      float: left;
    }
-   
-   @media (min-width: 768px){
-	   nav.breadcrumbs.bootstrap .breadcrumb-item {
-		  float: left;
-	   }
-	}
    
    nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
       display: inline-block;
