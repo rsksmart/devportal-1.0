@@ -54,28 +54,27 @@
   </nav>
 </header>
 
-<div class="wrapper" role="document">
-  <div class="hero">
-    <div class="page-header">
-      <div class="circles"></div>
-    </div>
+<div class="hero">
+  <div class="page-header">
+    <div class="circles"></div>
   </div>
-  <div class="page-wrapper">
-    <div class="content-wrap">
-      <div class="container">
-        {% include nav-breadcrumbs-actions.html %}
-        <div id="main-content">
-		      <h1 class="page-title">{{ page.title }}</h1>	 
-		      <div class="page-metadata">
-            <time role="presentation" datetime="{{ page.last_modified_at }}T00:00:00.000Z">{{ page.last_modified_at | date: '%Y-%m-%d' }}</time> | 
-            {% assign words = content | number_of_words %}
-            {{ words | divided_by:180 }} minutes to read
-		      </div>
-		      {{ content }}
+</div>
+
+<div class="page-wrapper">
+  <div class="container">
+    {% include nav-breadcrumbs-actions.html %}
+    <div class="row">
+      <div class="col-lg-8 col-lg-push-4">
+        <h1 class="page-title">{{ page.title }}</h1>
+        <div class="page-metadata">
+          <time role="presentation" datetime="{% last_modified_at %}T00:00:00.000Z">{% last_modified_at %}</time> | 
+          {% assign words = content | number_of_words %}
+          {{ words | divided_by:180 }} minutes to read
         </div>
-        <div id="main-menu">
-		      {% include nav-page-menu.html %}
-        </div>
+        {{ content }}
+      </div>
+      <div class="col-lg-4 col-lg-pull-8">
+        {% include nav-page-menu.html %}
       </div>
     </div>
   </div>

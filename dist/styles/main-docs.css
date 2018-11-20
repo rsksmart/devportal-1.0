@@ -76,4 +76,11 @@ h1.page-title{
     padding: 10px 0 0 20px;
 }
 
-    
+@media (min-width: 1200px) {
+	.col-lg-push-4 {
+		left: 33%;
+	}
+	.col-lg-pull-8 {
+		right: 66%;
+	}
+}
