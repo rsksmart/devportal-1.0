@@ -143,3 +143,9 @@ nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
 	height: 0.8rem;
 	width: 0.8rem;
 }
+
+blockquote {
+	font-style: italic;
+	padding: 0 0 0 20px;
+	border-left: 5px solid #006ebe;
+}
