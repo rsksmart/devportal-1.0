@@ -1,97 +1,27 @@
-{% if site.root or true %}
 <nav class="breadcrumbs bootstrap hidden-sm-down">
-   <ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+		{% for crumb in breadcrumbs %} 
+			{% if forloop.last %}
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<span property="name">{{ crumb.title }}</span>
+					<meta property="position" content="{{ crumb.position }}" />
+				</li>
+				{% continue %}
+			{% endif %}
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
+					<span property="name">{{ crumb.title }}</span>
+					<meta property="position" content="{{ crumb.position }}" />
+				</a>
+			</li>
+		{% endfor %}
 
-      {% for crumb in breadcrumbs %} 
-         {% if forloop.first and site.breadcrumbs.root.image %}
-         <li class="breadcrumb-item breadcrumb-item-icon" property="itemListElement" typeof="ListItem">
-            <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
-               <span class="icon" property="name">{% include nav-breadcrumb-icon.svg %}</span>
-               <meta property="position" content="{{ crumb.position }}" />
-            </a>
-         </li>
-         {% continue %} 
-      {% endif %} 
-      {% if forloop.last %}
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <span property="name">{{ crumb.title }}</span>
-         <meta property="position" content="{{ crumb.position }}" />
-      </li>
-      {% continue %} {% endif %}
-      <li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-         <a property="item" typeof="WebPage" href="{{ crumb.url | relative_url }}">
-            <span property="name">{{ crumb.title }}</span>
-            <meta property="position" content="{{ crumb.position }}" />
-         </a>
-      </li>
-      {% endfor %}
-
-   </ol>
+		{% assign count = breadcrumbs | size %}
+		{% if count == 0 %}
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<span property="name">RNS</span>
+				<meta property="position" content="{{ crumb.position }}" />
+			</li>
+		{% endif %}
+	</ol>
 </nav>
-
-
-
-<style>
-   nav.breadcrumbs.bootstrap ol,
-	nav.breadcrumbs.bootstrap ul   {
-      margin-left: 0
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb {
-      font-size: 1rem;
-      padding: 0.75rem 1rem;
-      margin-bottom: 1rem;
-      list-style: none;
-      background-color: #f1f2ed;
-      border-radius: 0.25rem;
-	  color: #295d76;
-   }
-   
-   nav.breadcrumbs.bootstrap .actions {
-      float: right;
-	  padding: 12px 20px 0 0;
-	  font-size: 16px;
-	  color: #295d76;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb::after,
-	nav.breadcrumbs.bootstrap .actions::after   {
-      content: "";
-      display: table;
-      clear: both;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item {
-      float: left;
-   }
-   
-   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item::before {
-      display: inline-block;
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-      color: #818a91;
-      content: "/";
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
-      text-decoration: underline;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item+.breadcrumb-item:hover::before {
-      text-decoration: none;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb-item-active {
-      color: #818a91;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb .icon {
-      display: inline-block;
-   }
-
-   nav.breadcrumbs.bootstrap .breadcrumb .icon svg {
-      height: 0.8rem;
-      width: 0.8rem;
-   }
-</style>
-{% endif %} 
