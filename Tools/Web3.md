@@ -17,7 +17,7 @@ web3.setProvider(new web3.providers.HttpProvider(config.node))
 Instance the [Registrar contract](/Architecture/Registrar) and the [RIF Token contract](/RIF-Token/):
 
 ```js
-var registrarAbi = [] 
+var registrarAbi = []
 var registrarAddress = ''
 var registrarInstance =  web3.eth.contract(registrarAbi)
 var registrar = registrar.at(registrarAddress)
@@ -77,7 +77,7 @@ function startAuction(name, n_extras) {
 
     for (let i = 0; i < n_extras; i++)
         hashes.push(web3.sha3(hash + i.toString()))
-    
+
     shuffle(hashses) // optional: shuffle them
 
     registrar.startAuctions(hashes)
@@ -121,7 +121,7 @@ function createAndBid(name, owner, bidTokens, amountSent) {
 
     for (let i = 0; i < n_extras; i++)
         hashes.push(web3.sha3(hash + i.toString()))
-    
+
     shuffle(hashses) // optional: shuffle them
 
     let tokens = web3.toWei(bidTokens, 'ether')
@@ -286,7 +286,7 @@ function setTTL(domain, ttl) {
 
 ### Create a subdomain
 
-This is also used to change the subdomain owner. 
+This is also used to change the subdomain owner.
 
 The `name` field is the subdomain inherited from the domain.
 

@@ -30,7 +30,7 @@ The resolution can be described in three steps:
     if (resolverAddress == '0x0') console.log('No resolver configure for ' + label)
     else console.log('Resolver address configure for ' + label + ' is ' + resolverAddress)
     ```
-    
+
     Yielded address may be 0x0 if the Resolver is not configured or the domain node is not yet present in the Registry.
 
 3. Finally resolve the domain through the `addr` getter from the Resolver:

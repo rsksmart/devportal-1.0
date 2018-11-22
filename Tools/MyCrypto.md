@@ -3,7 +3,7 @@ layout: rns
 title: MyCrypto
 ---
 
-MyCrypto is an open-source, client-side tool for generating ether wallets, handling ERC-20 tokens, and interacting with the blockchain more easily. 
+MyCrypto is an open-source, client-side tool for generating ether wallets, handling ERC-20 tokens, and interacting with the blockchain more easily.
 
 There are two platforms to access MyCrypto, both with almost the same functionalities: the web app and the desktop app. There are more ways to access a wallet via desktop app, for example using a mnemonic or a private key.
 
@@ -17,7 +17,7 @@ There are two ways to access a contract:
 
 A domain is composed by a label and the .rsk suffix (top level domain). For example: `nakamoto.rsk`, where `nakamoto` is the label.
 
-When `sha3` or `namehash` evaluations are asked, go [here]() to interact with the tools and get the requested value. 
+When `sha3` or `namehash` evaluations are asked, go [here]() to interact with the tools and get the requested value.
 
 When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffix. But when asked for `namehash` you **must** add .rsk suffix.
 
@@ -29,8 +29,8 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
 
 2. Get bid data for a name
     In Registrar contract, in _Read / Write Contract_ select `shaBid` function. Complete with the following:
-    - `hash`: the sha3 hash of the label you want to bid to (without .rsk suffix). 
-    - `owner`: owner's address, case winning the auction. 
+    - `hash`: the sha3 hash of the label you want to bid to (without .rsk suffix).
+    - `owner`: owner's address, case winning the auction.
     - `value`: amount of RIFi token to bid.
     - `salt`: any number.
 
@@ -47,7 +47,7 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
 
 4. Create the bid
 
-    There are two ways to create a bid. Since the RIF Token is ERC677 compliant, which is ERC20 compatible, we can use both flows, the ERC20 `approve` and then call or the `approveAndCall` method provided by the ERC677 interface.  
+    There are two ways to create a bid. Since the RIF Token is ERC677 compliant, which is ERC20 compatible, we can use both flows, the ERC20 `approve` and then call or the `approveAndCall` method provided by the ERC677 interface.
 
     **ERC20**
     In the RIF Token contract, select the `approve` method. Complete the parameters:
@@ -73,7 +73,7 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
     - `_hash`: sha3 of the label.
     - `_value`: step 3. `value`.
     - `_salt`: step 3. `salt`.
-    
+
     Send transaction and wait until confirmed.
 
     After this step, it is necessary to wait until revealing bid time ends. This time lasts 2 (two) days.
@@ -92,7 +92,7 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
     In Registry contract, select `setResolver` function. Set parameters:
     - `node`: the name-hash of the domain you want to bid to. You can get that hash using [this tool](name-hash tool).
     - `resolverAddress`: the Resolver contract address, used in step 2.
-    
+
     Send transaction and wait until confirmed.
 
 8. In the Resolver contract access `setAddr` function. Set parameters:
@@ -101,7 +101,7 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
     - `addrValue`: the address that will resolve the domain label.
 
     Send transaction and wait until confirmed.
-    
+
 
 **Verification:**
 
@@ -138,7 +138,7 @@ To register a subdomain you must do it form the domain's owner account.
     - `addrValue`: the address that will resolve the subdomain label.
 
     Send transaction and wait until confirmed.
-    
+
 **Verification:**
 
 From Resolver contract, access to `addr` function. Set parameters:
@@ -146,7 +146,7 @@ From Resolver contract, access to `addr` function. Set parameters:
 
 Check if the result is equal to the address set in step 3.
 
-   
+
 ## Renewing domain rent
 
 after 9 months of auction's end (`finalizeAuction`) , within the next 3 months, the domain owner should renew the rent of that name.
@@ -155,10 +155,10 @@ after 9 months of auction's end (`finalizeAuction`) , within the next 3 months, 
     - `_hash`: sha3 of the domain label.
 
 Read the result and copy/save `address` result. This is the address of your deed contract.
-    
+
 2. Just as in the bid creation, there are two ways of paying rent.
 
-    **ERC20**    
+    **ERC20**
     In the RIF Token contract, select the `approve` method. Complete the parameters:
     - `spender`: the Registrar address.
     - `value`: 1 token.

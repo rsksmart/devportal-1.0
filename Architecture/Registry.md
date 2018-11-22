@@ -3,7 +3,7 @@ layout: rns
 title: Registry
 ---
 
-The RNS Registry is the contract that stores the ownership of the nodes. 
+The RNS Registry is the contract that stores the ownership of the nodes.
 
 When an address is registered, the [Registrar contract](/Architecture/Registrar) stores the name in the Registry contract:  when an auction is finalized, Registrar calls the `setSubnodeOwner` method using the root node as parent node.
 
@@ -15,7 +15,7 @@ When an address is registered, the [Registrar contract](/Architecture/Registrar)
 ![registry](/img/registry.png)
 
 **Node**
-    
+
 The node is the main structure of the RSK Name Service Registry. A node has an owner, a Resolver and a time to live (TTL). A node owner can:
 - Register sub nodes derived from it, with their owners
 - Set the node's Resolver: Resolvers are responsible for performing resource lookups for a name - for instance, returning a contract address, a content hash, or IP address(es) as appropriate.
