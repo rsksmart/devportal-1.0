@@ -1,6 +1,11 @@
 .highlight {
+    margin: 10px;
     padding: 10px;
     background-color: #f6f8fa;
+}
+
+.highlight .highlight {
+    margin: 0px;
 }
 
 .highlight .hll { background-color: #ffffcc }

@@ -5,7 +5,6 @@ title: Resolver
 
 The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Learn how to [implement a custom Resolver](/Operation/Resolve-a-name/#custom-resolver), or use the [default resolver](#default-resolver).
 
-
 ## Default Resolver
 
 Along the RNS registry and initial registrar there is a default resolver deployed as well (see the PublicResolver contract). This contract is available for anybody to use it, but the only restriction is that only owners of a domain can modify its record in this resolver. 
@@ -14,7 +13,6 @@ Additionally, it is used as the default resolver configured for new nodes create
 
 - **Adrress**: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](http://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
 - **ABI**: [ResolverABI.json](/Architecture/ResolverABI.json)
-
 
 ## Structure
 

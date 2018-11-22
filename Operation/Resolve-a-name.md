@@ -5,7 +5,6 @@ title: Resolve a name
 
 The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver.
 
-
 ## Libraries
 
 [Resolution libraries](/Libs) are available for developers to integrate and resolve RNS domains and subdomains in their own applications, wallets, exchanges.
@@ -24,11 +23,12 @@ The resolution can be described in three steps:
 2. Query the RNS to retrieve the domain's resolver:
 
     ```js
-    var node = namehash('adomain.rsk')
+    var label = 'satoshi'
+    var node = namehash(label + '.rsk')
     var resolverAddress = rns.resolver(node)
 
-    if (resolverAddress == '0x0') console.log("No resolver configure for domain 'adomain'");
-    else console.log("Resolver address configure for 'adomain' is " + resolverAddress);
+    if (resolverAddress == '0x0') console.log('No resolver configure for ' + label)
+    else console.log('Resolver address configure for ' + label + ' is ' + resolverAddress)
     ```
     
     Yielded address may be 0x0 if the Resolver is not configured or the domain node is not yet present in the Registry.
@@ -39,7 +39,7 @@ The resolution can be described in three steps:
     var resolver = ResolverInterface.at(resolverAddress)
     var address = resolver.addr(node)
 
-    if (address == '0x0') console.log("The domain 'adomain' does not resolve to any address!")
+    if (address == '0x0') console.log('The domain ' + label + ' does not resolve to any address!')
     else console.log("The domain 'adomain' resolves to " + address)
     ```
 

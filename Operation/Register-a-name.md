@@ -3,8 +3,6 @@ layout: rns
 title: Register a name
 ---
 
-
-
 The process consists of two main phases:
 
 1. [The auction phases](#the-auction-phase)

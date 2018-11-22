@@ -5,7 +5,7 @@ title: Registrar
 
 The Registrar is the contract that handles the domain issuing logic. In this section we'll explain the interaction with this contract.
 
-As explained in the [RNS specification doc](https://docs.rsk.co/RNS-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid. 
+As explained in the [RNS specification doc](https://docs.rsk.co/RNS-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.
 
 Is RNS, the auction lasts 5 days and is divided in two periods: 
 - **Auction phase**: the first 3 days to bid for a specific domain.
@@ -22,58 +22,58 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 - [Rent and domain expiration](#rent-and-domain-expiration)
 - [Structure](#structure)
 - [Methods](#methods)
-  - [startauction](#startauction)
-  - [startauctions](#startauctions)
-  - [newbid](#newbid)
-  - [newbidwithtoken](#newbidwithtoken)
-  - [startauctionsandbid](#startauctionsandbid)
-  - [unsealbid](#unsealbid)
-  - [finalizeauction](#finalizeauction)
-  - [payrent](#payrent)
-  - [payrentwithtoken](#payrentwithtoken)
-  - [transfer](#transfer)
-  - [releasedeed](#releasedeed)
-  - [erasenode](#erasenode)
-  - [transferregistrar](#transferregistrar)
-  - [acceptregistrartransfer](#acceptregistrartransfer)
-  - [state](#state)
-  - [entries](#entries)
-  - [shabid](#shabid)
-  - [tokenfallback](#tokenfallback)
+    - [startauction](#startauction)
+    - [startauctions](#startauctions)
+    - [newbid](#newbid)
+    - [newbidwithtoken](#newbidwithtoken)
+    - [startauctionsandbid](#startauctionsandbid)
+    - [unsealbid](#unsealbid)
+    - [finalizeauction](#finalizeauction)
+    - [payrent](#payrent)
+    - [payrentwithtoken](#payrentwithtoken)
+    - [transfer](#transfer)
+    - [releasedeed](#releasedeed)
+    - [erasenode](#erasenode)
+    - [transferregistrar](#transferregistrar)
+    - [acceptregistrartransfer](#acceptregistrartransfer)
+    - [state](#state)
+    - [entries](#entries)
+    - [shabid](#shabid)
+    - [tokenfallback](#tokenfallback)
 - [Events](#events)
 - [States](#states)
 - [Refund Schedule](#refund-schedule)
 
 ## The process
 
-0. Instance Registrar contract
+1. Instance Registrar contract
 
-```js
-var registrarInstance = web3.contract(registrarAbi)
-var registrar = registrarInstance.at(registrarAddress)
-```
+    ```js
+    var registrarInstance = web3.contract(registrarAbi)
+    var registrar = registrarInstance.at(registrarAddress)
+    ```
 
-1. Hash your domain
+2. Hash your domain
 
     ```js
     var label = 'nakamoto'
     var sha3 = web3.sha3(label)
     ```
 
-2. Verify domain status after starting an auction for the name
+3. Verify domain status after starting an auction for the name
 
     ```js
     var status = registrar.status(sha3)
     ```
 
-3. If the dmain name is in Open state, start an auction. The auctions are public, this means anyone can bid in it.
+4. If the dmain name is in Open state, start an auction. The auctions are public, this means anyone can bid in it.
 
     ```js
     if (status === 0)
         registrar.startAuction(sha3)
     ```
 
-4. Within the next 3 days, the name is in auction state. Bid!
+5. Within the next 3 days, the name is in auction state. Bid!
 
     Bids are sent by sending a message to the Registrar contract with a hash and an amount. The hash contains information about the bid, including the hash of the domain bided, the bid amount, and a random salt. The value of the bid itself can be masqueraded by sending more than the value of your actual bid. 
 
@@ -95,7 +95,9 @@ var registrar = registrarInstance.at(registrarAddress)
 
 
     - If the bid doesn't meet the requirements (below min value or created during the reveal period) or doesn't beat the second-best bid, all of the tokens locked in the Deed are refunded.
+
     - If the bid doesn't best the highest value offered, but does beat the second highest, the final value of the auction is updated to equal the bid and all locked tokens are refunded.
+
     - If the bid turns out to be the biggest yet, the auction's highest value and second highest are updated. The former highest bid is refunded to its owner.
 
     ```js
@@ -155,7 +157,7 @@ struct Entry {
 }
 ```
 
-`Entry` the actual state of a hash
+- `Entry` the actual state of a hash
 
 **Storage**
 ```js
@@ -163,9 +165,9 @@ mapping (bytes32 => Entry) _entries;
 mapping (address => mapping (bytes32 => TokenDeed)) public sealedBids;
 ```
 
-`_entries` store all hash states. The state is not modified when someone bids, but it is when someone reveals a bid.
+- `_entries` store all hash states. The state is not modified when someone bids, but it is when someone reveals a bid.
 
-`sealedBids` store, for each user, the Deed address for each sealed bid. Notices that the sealed bid is not recoverable without the salt value
+- `sealedBids` store, for each user, the Deed address for each sealed bid. Notices that the sealed bid is not recoverable without the salt value
 
 **Constants**
 ```js

@@ -15,7 +15,7 @@ h4 {
 	color: #006ebe;
 }
 
-.page-metadata{
+.page-metadata {
     text-transform: uppercase;
     font-size: 18px;
     margin: 0 0 30px;
@@ -24,11 +24,11 @@ h4 {
     letter-spacing: 1px;
 }
 
-.content-wrap{
+.content-wrap {
 	padding: 0;
 }
 
-h1.page-title{	
+h1.page-title {	
     margin-bottom: -5px;
 }
 
@@ -46,7 +46,7 @@ h1.page-title{
 	height: 75px;
 }
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 	.page-header {
 		height: 110px;
 	}
@@ -65,12 +65,12 @@ h1.page-title{
 	display: none;
 }
 
-#sharing-menu.dropdown-menu{
+#sharing-menu.dropdown-menu {
 	left: auto;
 	display: block;
 }
 
-#sharing-menu.dropdown-menu ul{
+#sharing-menu.dropdown-menu ul {
 	list-style: none;
     padding: 10px 0 0 20px;
 }
@@ -84,7 +84,7 @@ h1.page-title{
 	}
 }
 
-nav.breadcrumbs.bootstrap ol, nav.breadcrumbs.bootstrap ul   {
+nav.breadcrumbs.bootstrap ol, nav.breadcrumbs.bootstrap ul {
 	margin-left: 0
 }
 

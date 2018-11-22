@@ -200,8 +200,8 @@ function payRent(name) {
     })
 
     // With transfer and call
-    const data = '0xe1ac9915' + hash.slice(2);
-    rif.transferAndCall(registrar.address, amount, data);
+    const data = '0xe1ac9915' + hash.slice(2)
+    rif.transferAndCall(registrar.address, amount, data)
 }
 ```
 

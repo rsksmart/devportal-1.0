@@ -11,7 +11,6 @@ The RSK Name Service architecture is based on 4 components:
 
 ![Architecture](/img/structure.png)
 
-
 ## Registrar
 
 To [register a domain](/Operation/Register-a-name) in RNS is by auction that is performed by the [registrar contract](/Architecture/Registrar). This contract manages the auction process, any user can start an auction for any available domain name, any user can bid in any auction in [Open state](/Architecture/Registrar/#states), and only the highest bidder acquires that domain name.
@@ -21,10 +20,9 @@ The subdomains can be delegated using the [registry contract](/Architecture/Regi
 ## Deed
 
 The [Deed contract](/Architecture/Deed) has two main functions:
-- Register the bid payment: 
-    For each bid, the Registrar contract deploys a Deed contract and sends user's bade RIF tokens to it.
-- Manage the annual rent: 
-    The owner must pay an annual rent for each domain acquired.
+- Register the bid payment: for each bid, the Registrar contract deploys a Deed contract and sends user's bade RIF tokens to it.
+
+- Manage the annual rent: the owner must pay an annual rent for each domain acquired.
 
 ## Registry
 

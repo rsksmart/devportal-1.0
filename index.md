@@ -3,13 +3,11 @@ layout: rns
 title: RNS
 ---
 
-
 RSK Name Service provides an architecture which enables the identification of RSK addresses by human-readable names.
 
 By adding a name resolution service, also known as “alias”, the probability of errors is significantly reduced. In addition, centralizing the access to multiple resources associated with a human-readable name improves the RSK platform user experience. As resource names may change over time, the system needs to be flexible to support frequent changes. 
 
 Currently over the World Wide Web, the Domain Name System (DNS) is responsible for mapping human-readable names to IP addresses. RNS is a decentralized and secure service that works over RSK's blockchain.
-
 
 ![introduction](/img/introduction.png)
 
@@ -46,8 +44,6 @@ The second way is, if Bob is the owner of _“bob.rsk”_ and Alice wants the su
 Once Alice gets a domain, she should set on the domain's entry in the Registry contract the Resolver that will perform the resolution between the new domain and the desired resource. If a user doesn't set a Resolver, a default one is set. This default Resolver is the new owned domain's parent's Resolver.
 
 Learn more how to [register a domain](/Operation/Register-a-name/)
-
-<br>
 
 ## How to start?
 

@@ -23,7 +23,7 @@ sealedBids[_from][_sealedBid] = createdBid;
 Once bidded, you can query for a particular bid's Deed:
 
 ```js
-var deedAddress = registrar.sealedBids(address, sealedBid);
+var deedAddress = registrar.sealedBids(address, sealedBid)
 var deedInstante = web3.contract(deedAbi)
 var deed = deedInstance.at(deedAddress)
 ```

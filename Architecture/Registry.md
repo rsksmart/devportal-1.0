@@ -56,7 +56,7 @@ const label = web3.sha3('satoshi');
 const owner = '0xc5032...';
 const newOwner = '0x23fb8...';
 
-rns.setSubnodeOwner(node, label, newOwner, { from: owner });
+rns.setSubnodeOwner(node, label, newOwner)
 ```
 
 In this example we are adding the entry 'satoshi.nakamoto.rsk' to the Registry and assigning ownership of it to '0x23fb8...'. The subdomain is created using its parent Resolver.
@@ -92,8 +92,8 @@ var resolverAddress = rns.resolver(node)
 var resolverInstance = web3.contract(resolverAddress)
 var resolver = resolverInstance.at(resolverAddress)
 
-var resolveTo = '0x9eb63...';
-resolver.setAddr(node, resolveTo);
+var resolveTo = '0x9eb63...'
+resolver.setAddr(node, resolveTo)
 ```
 
 ## Transfer ownership

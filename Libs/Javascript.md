@@ -187,4 +187,3 @@ resolver.supportsInterface('0x3b3b57de') //supportsInterface returns true.
 resolver.supportsInterface('0xd8389dc5') //supportsInterface returns true.
 resolver.supportsInterface('0x11122233') //supportsInterface returns false.
 ```
-
