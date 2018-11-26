@@ -10,7 +10,27 @@ When an address is registered, the [Registrar contract](/Architecture/Registrar)
 - **Adrress**: [`0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5`](http://explorer.rsk.co/address/0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5)
 - **ABI**: [RNSABI.json](/Architecture/RNSABI.json)
 
-## Structure
+## Index
+
+- [Abstract](#abstract)
+- [Acquire a domain](#acquire-a-domain)
+    - [Set a subdomain](#set-a-subdomain)
+- [Change the Resolver](#change-the-resolver)
+- [Transfer ownership](#transfer-ownership)
+- [Release a domain ownership](#release-a-domain-ownership)
+- [Structure](#structure)
+- [Methods](#methods)
+    - [`owner`](#owner)
+    - [`setOwner`](#setowner)
+    - [`setSubnodeOwner`](#setsubnodeowner)
+    - [`resolver`](#resolver)
+    - [`setResolver`](#setresolver)
+    - [`ttl`](#ttl)
+    - [`setTTL`](#setttl)
+    - [`setDefaultResolver`](#setdefaultresolver)
+
+
+## Abstract
 
 ![registry](/img/registry.png)
 

@@ -57,4 +57,4 @@ Go to [Resolve a name](/Operation/Resolve-a-name) and [Libraries](/Libs) section
 
 > I'm a blockchain developer. I want to code!
 
-Go to [Architecture](/Architecture) and [Libraries](/Libs) sections, contribute in the [RNS Github](https://github.com/rnsdomains/RNS), or read the [RNS specification doc](https://docs.rsk.co/RNS-specification-en.pdf).
+Go to [Architecture](/Architecture) and [Libraries](/Libs) sections, contribute in the [RNS Github](https://github.com/rnsdomains/RNS), or read the [RNS specification doc](https://docs.rsk.co/rsk-name-service-specification-en.pdf).

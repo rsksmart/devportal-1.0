@@ -5,7 +5,7 @@ title: Registrar
 
 The Registrar is the contract that handles the domain issuing logic. In this section we'll explain the interaction with this contract.
 
-As explained in the [RNS specification doc](https://docs.rsk.co/RNS-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.
+As explained in the [RNS specification doc](https://docs.rsk.co/rsk-name-service-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.
 
 Is RNS, the auction lasts 5 days and is divided in two periods:
 - **Auction phase**: the first 3 days to bid for a specific domain.
@@ -16,30 +16,30 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 - **Adrress**: [`0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6`](http://explorer.rsk.co/address/0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6)
 - **ABI**: [RegistrarABI.json](/Architecture/RegistrarABI.json)
 
-## Page index
+## Index
 
 - [The process](#the-process)
 - [Rent and domain expiration](#rent-and-domain-expiration)
 - [Structure](#structure)
 - [Methods](#methods)
-    - [startauction](#startauction)
-    - [startauctions](#startauctions)
-    - [newbid](#newbid)
-    - [newbidwithtoken](#newbidwithtoken)
-    - [startauctionsandbid](#startauctionsandbid)
-    - [unsealbid](#unsealbid)
-    - [finalizeauction](#finalizeauction)
-    - [payrent](#payrent)
-    - [payrentwithtoken](#payrentwithtoken)
-    - [transfer](#transfer)
-    - [releasedeed](#releasedeed)
-    - [erasenode](#erasenode)
-    - [transferregistrar](#transferregistrar)
-    - [acceptregistrartransfer](#acceptregistrartransfer)
-    - [state](#state)
-    - [entries](#entries)
-    - [shabid](#shabid)
-    - [tokenfallback](#tokenfallback)
+    - [`startAuction`](#startauction)
+    - [`startAuctions`](#startauctions)
+    - [`newBid`](#newbid)
+    - [`newBidWithToken`](#newbidwithtoken)
+    - [`startAuctionsAndBid`](#startauctionsandbid)
+    - [`unsealBid`](#unsealbid)
+    - [`finalizeAuction`](#finalizeauction)
+    - [`payRent`](#payrent)
+    - [`payRentWithToken`](#payrentwithtoken)
+    - [`transfer`](#transfer)
+    - [`releaseDeed`](#releasedeed)
+    - [`eraseNode`](#erasenode)
+    - [`transfeRegistrar`](#transferregistrar)
+    - [`acceptRegistrarTransfer`](#acceptregistrartransfer)
+    - [`state`](#state)
+    - [`entries`](#entries)
+    - [`shaBid`](#shabid)
+    - [`tokenFallback`](#tokenfallback)
 - [Events](#events)
 - [States](#states)
 - [Refund Schedule](#refund-schedule)

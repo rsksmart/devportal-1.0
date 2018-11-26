@@ -14,6 +14,17 @@ Additionally, it is used as the default resolver configured for new nodes create
 - **Adrress**: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](http://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
 - **ABI**: [ResolverABI.json](/Architecture/ResolverABI.json)
 
+## Index
+
+- [Structure](#structure)
+- [Methods](#methods)
+    - [`has`](#has)
+    - [`supportsinterface`](#supportsinterface)
+    - [`addr`](#addr)
+    - [`setAddr`](#setaddr)
+    - [`content`](#content)
+    - [`setContent`](#setcontent)
+
 ## Structure
 
 ![resolver](/img/public-resolver.png)
