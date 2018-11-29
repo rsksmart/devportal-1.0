@@ -12,7 +12,6 @@ Now browse to http://localhost:4000.
 
 Read [Jekyll](https://jekyllrb.com) docs for more information.
 
-
 ## Contributing
 
 To contribute in RNS Documentation:

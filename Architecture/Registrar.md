@@ -5,9 +5,9 @@ title: Registrar
 
 The Registrar is the contract that handles the domain issuing logic. In this section we'll explain the interaction with this contract.
 
-As explained in the [RNS specification doc](https://docs.rsk.co/RNS-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid. 
+As explained in the [RNS specification doc](https://docs.rsk.co/rsk-name-service-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.
 
-Is RNS, the auction lasts 5 days and is divided in two periods: 
+Is RNS, the auction lasts 5 days and is divided in two periods:
 - **Auction phase**: the first 3 days to bid for a specific domain.
 - **Reveal phase**: the next 2 days for revealing the bids.
 
@@ -16,66 +16,66 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 - **Adrress**: [`0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6`](http://explorer.rsk.co/address/0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6)
 - **ABI**: [RegistrarABI.json](/Architecture/RegistrarABI.json)
 
-## Page index
+## Index
 
 - [The process](#the-process)
 - [Rent and domain expiration](#rent-and-domain-expiration)
 - [Structure](#structure)
 - [Methods](#methods)
-  - [startauction](#startauction)
-  - [startauctions](#startauctions)
-  - [newbid](#newbid)
-  - [newbidwithtoken](#newbidwithtoken)
-  - [startauctionsandbid](#startauctionsandbid)
-  - [unsealbid](#unsealbid)
-  - [finalizeauction](#finalizeauction)
-  - [payrent](#payrent)
-  - [payrentwithtoken](#payrentwithtoken)
-  - [transfer](#transfer)
-  - [releasedeed](#releasedeed)
-  - [erasenode](#erasenode)
-  - [transferregistrar](#transferregistrar)
-  - [acceptregistrartransfer](#acceptregistrartransfer)
-  - [state](#state)
-  - [entries](#entries)
-  - [shabid](#shabid)
-  - [tokenfallback](#tokenfallback)
+    - [`startAuction`](#startauction)
+    - [`startAuctions`](#startauctions)
+    - [`newBid`](#newbid)
+    - [`newBidWithToken`](#newbidwithtoken)
+    - [`startAuctionsAndBid`](#startauctionsandbid)
+    - [`unsealBid`](#unsealbid)
+    - [`finalizeAuction`](#finalizeauction)
+    - [`payRent`](#payrent)
+    - [`payRentWithToken`](#payrentwithtoken)
+    - [`transfer`](#transfer)
+    - [`releaseDeed`](#releasedeed)
+    - [`eraseNode`](#erasenode)
+    - [`transfeRegistrar`](#transferregistrar)
+    - [`acceptRegistrarTransfer`](#acceptregistrartransfer)
+    - [`state`](#state)
+    - [`entries`](#entries)
+    - [`shaBid`](#shabid)
+    - [`tokenFallback`](#tokenfallback)
 - [Events](#events)
 - [States](#states)
 - [Refund Schedule](#refund-schedule)
 
 ## The process
 
-0. Instance Registrar contract
+1. Instance Registrar contract
 
-```js
-var registrarInstance = web3.contract(registrarAbi)
-var registrar = registrarInstance.at(registrarAddress)
-```
+    ```js
+    var registrarInstance = web3.contract(registrarAbi)
+    var registrar = registrarInstance.at(registrarAddress)
+    ```
 
-1. Hash your domain
+2. Hash your domain
 
     ```js
     var label = 'nakamoto'
     var sha3 = web3.sha3(label)
     ```
 
-2. Verify domain status after starting an auction for the name
+3. Verify domain status after starting an auction for the name
 
     ```js
     var status = registrar.status(sha3)
     ```
 
-3. If the dmain name is in Open state, start an auction. The auctions are public, this means anyone can bid in it.
+4. If the dmain name is in Open state, start an auction. The auctions are public, this means anyone can bid in it.
 
     ```js
     if (status === 0)
         registrar.startAuction(sha3)
     ```
 
-4. Within the next 3 days, the name is in auction state. Bid!
+5. Within the next 3 days, the name is in auction state. Bid!
 
-    Bids are sent by sending a message to the Registrar contract with a hash and an amount. The hash contains information about the bid, including the hash of the domain bided, the bid amount, and a random salt. The value of the bid itself can be masqueraded by sending more than the value of your actual bid. 
+    Bids are sent by sending a message to the Registrar contract with a hash and an amount. The hash contains information about the bid, including the hash of the domain bided, the bid amount, and a random salt. The value of the bid itself can be masqueraded by sending more than the value of your actual bid.
 
     Bids must be placed before the reveal period begins. Any bid created during or after this period won't be considered valid.
 
@@ -91,11 +91,13 @@ var registrar = registrarInstance.at(registrarAddress)
 
 5. Within the next 2 days, the name is in Reveal state. Reveal your bid!
 
-    Once the reveal phase of the auction starts, it's time to unseal your bid. You can do this by calling the method `unsealBid` with the same parameters used originally for `shaBid`. 
+    Once the reveal phase of the auction starts, it's time to unseal your bid. You can do this by calling the method `unsealBid` with the same parameters used originally for `shaBid`.
 
 
     - If the bid doesn't meet the requirements (below min value or created during the reveal period) or doesn't beat the second-best bid, all of the tokens locked in the Deed are refunded.
+
     - If the bid doesn't best the highest value offered, but does beat the second highest, the final value of the auction is updated to equal the bid and all locked tokens are refunded.
+
     - If the bid turns out to be the biggest yet, the auction's highest value and second highest are updated. The former highest bid is refunded to its owner.
 
     ```js
@@ -103,8 +105,8 @@ var registrar = registrarInstance.at(registrarAddress)
         registrar.unsealBid(sha3, value, salt)
     ```
 
-6. Once the Auction phase finalized, if you are the winner you must register your domain name.  In order to concrete the auction and finalize apply the changes to the Registry, the auction winner must call the `finalizeAuction` method. 
-    
+6. Once the Auction phase finalized, if you are the winner you must register your domain name.  In order to concrete the auction and finalize apply the changes to the Registry, the auction winner must call the `finalizeAuction` method.
+
     This function can't be called by any other account but the new owner of the auctioned name.
 
     When calling this method, the Registrar contract refunds the difference between the highest and the second highest values and modifies the Registry adding (or modifying) the entry which links the full domain and the new owner.
@@ -155,7 +157,7 @@ struct Entry {
 }
 ```
 
-`Entry` the actual state of a hash
+- `Entry` the actual state of a hash
 
 **Storage**
 ```js
@@ -163,9 +165,9 @@ mapping (bytes32 => Entry) _entries;
 mapping (address => mapping (bytes32 => TokenDeed)) public sealedBids;
 ```
 
-`_entries` store all hash states. The state is not modified when someone bids, but it is when someone reveals a bid.
+- `_entries` store all hash states. The state is not modified when someone bids, but it is when someone reveals a bid.
 
-`sealedBids` store, for each user, the Deed address for each sealed bid. Notices that the sealed bid is not recoverable without the salt value
+- `sealedBids` store, for each user, the Deed address for each sealed bid. Notices that the sealed bid is not recoverable without the salt value
 
 **Constants**
 ```js
@@ -234,7 +236,7 @@ Submit a new sealed bid on a desired hash in a blind auction
 
 Bids are sent by sending a message to the main contract with a hash and an amount. The hash contains information about the bid, including the bided hash, the bid amount, and a random salt. Bids are not tied to any one auction until they are revealed. The value of the bid itself can be masqueraded by sending more than the value of your actual bid. For bids revealed after reveal period, a percentage (defined in the late unsealing [Refund schedule](#refund-schedule)) will be sent to a special RIF address.
 
-This method requires the sender to approve the Registrar to use the specified `tokenQuantity` in the ERC677 (inherited form ERC20) contract. 
+This method requires the sender to approve the Registrar to use the specified `tokenQuantity` in the ERC677 (inherited form ERC20) contract.
 Otherwise it can be done through the `tokenFallback` after a transfer with the corresponding parameters.
 
 **Signature**
@@ -327,7 +329,7 @@ rif.approve(registrar.address, amountSent, (err, res) => {
 
 #### unsealBid
 
-Submit the properties of a bid to reveal them. The hash, value and salt must be the same set in the sealed bid, otherwise, no bid will be unsealed. 
+Submit the properties of a bid to reveal them. The hash, value and salt must be the same set in the sealed bid, otherwise, no bid will be unsealed.
 
 The [refund schedule](#refund-schedule) is defined in this method.
 
@@ -379,7 +381,7 @@ Pay the annual rent for a name. The rent value is 1 RIF.
 
 Domains have a validity of 1 year after the registration date. Said expiry date is reflected through the associated Deed contract. Owners have a period of 3 months before the expiryDate to pay the rent and extend their ownership for 1 year.
 
-This method requires the sender to approve the Registrar to use the specified tokenQuantity in the ERC677 contract. 
+This method requires the sender to approve the Registrar to use the specified tokenQuantity in the ERC677 contract.
 Otherwise it can be done through the `tokenFallback` after a transfer with the corresponding parameters.
 
 **Signature**
@@ -512,7 +514,7 @@ function state(bytes32 _hash) public view returns (Mode)
 
 - `_hash`: hash of the name to query about
 
-**Returns** 
+**Returns**
 - `Mode`
 
 **Example**
@@ -534,7 +536,7 @@ function entries(bytes32 _hash) public view returns (Mode, address, uint, uint, 
 
 - `_hash`: hash of the name to query about
 
-**Returns** 
+**Returns**
 - `Mode` - state: the state of the auction for the label.
 - `address` - deed: the address of the current winning Deed.
 - `uint` - registration date: the auction's finish date. It is a number that represents the seconds remaining to the auction's finish date.

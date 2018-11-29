@@ -3,7 +3,7 @@ layout: rns
 title: RIF Token
 ---
 
-RSK Name Service (RNS) implements the RIF Directory Protocol (RDP) which recommends the usage of the RIF Token to stake at name auctions and also paying for name maintenance rent. 
+RSK Name Service (RNS) implements the RIF Directory Protocol (RDP) which recommends the usage of the RIF Token to stake at name auctions and also paying for name maintenance rent.
 
 To interact with RNS, it's important to understand the nature of the RIF Token.
 
@@ -29,7 +29,7 @@ An ERC677 token transfer will be the same as an ERC20 transfer. On the other han
     function transfer(address _to, uint256 _value) public returns (bool)
     ```
 
-- Transfer and call: 
+- Transfer and call:
     ```js
     function transfer(address _to, uint256 _value, bytes data)
     ```

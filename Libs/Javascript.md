@@ -3,7 +3,7 @@ layout: rns
 title: Javacript SDK
 ---
 
-The Resolver SDK provides facilities to interact with a Resolver Contract from a NodeJS project. 
+The Resolver SDK provides facilities to interact with a Resolver Contract from a NodeJS project.
 
 ## NPM Library
 
@@ -44,7 +44,7 @@ With `{resolver-contract}` the contract file name.
 
 ## Methods
 
- Functions that require communicating with the node return promises, rather than using callbacks. A promise has a `then` function, which takes a callback and will call it when the promise is fulfilled; `then` returns another promise, so you can chain callbacks. 
+ Functions that require communicating with the node return promises, rather than using callbacks. A promise has a `then` function, which takes a callback and will call it when the promise is fulfilled; `then` returns another promise, so you can chain callbacks.
 
  Assume at first, the next sentence is executed:
 
@@ -187,4 +187,3 @@ resolver.supportsInterface('0x3b3b57de') //supportsInterface returns true.
 resolver.supportsInterface('0xd8389dc5') //supportsInterface returns true.
 resolver.supportsInterface('0x11122233') //supportsInterface returns false.
 ```
-

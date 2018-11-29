@@ -3,19 +3,39 @@ layout: rns
 title: Registry
 ---
 
-The RNS Registry is the contract that stores the ownership of the nodes. 
+The RNS Registry is the contract that stores the ownership of the nodes.
 
 When an address is registered, the [Registrar contract](/Architecture/Registrar) stores the name in the Registry contract:  when an auction is finalized, Registrar calls the `setSubnodeOwner` method using the root node as parent node.
 
 - **Adrress**: [`0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5`](http://explorer.rsk.co/address/0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5)
 - **ABI**: [RNSABI.json](/Architecture/RNSABI.json)
 
-## Structure
+## Index
+
+- [Abstract](#abstract)
+- [Acquire a domain](#acquire-a-domain)
+    - [Set a subdomain](#set-a-subdomain)
+- [Change the Resolver](#change-the-resolver)
+- [Transfer ownership](#transfer-ownership)
+- [Release a domain ownership](#release-a-domain-ownership)
+- [Structure](#structure)
+- [Methods](#methods)
+    - [`owner`](#owner)
+    - [`setOwner`](#setowner)
+    - [`setSubnodeOwner`](#setsubnodeowner)
+    - [`resolver`](#resolver)
+    - [`setResolver`](#setresolver)
+    - [`ttl`](#ttl)
+    - [`setTTL`](#setttl)
+    - [`setDefaultResolver`](#setdefaultresolver)
+
+
+## Abstract
 
 ![registry](/img/registry.png)
 
 **Node**
-    
+
 The node is the main structure of the RSK Name Service Registry. A node has an owner, a Resolver and a time to live (TTL). A node owner can:
 - Register sub nodes derived from it, with their owners
 - Set the node's Resolver: Resolvers are responsible for performing resource lookups for a name - for instance, returning a contract address, a content hash, or IP address(es) as appropriate.
@@ -56,7 +76,7 @@ const label = web3.sha3('satoshi');
 const owner = '0xc5032...';
 const newOwner = '0x23fb8...';
 
-rns.setSubnodeOwner(node, label, newOwner, { from: owner });
+rns.setSubnodeOwner(node, label, newOwner)
 ```
 
 In this example we are adding the entry 'satoshi.nakamoto.rsk' to the Registry and assigning ownership of it to '0x23fb8...'. The subdomain is created using its parent Resolver.
@@ -92,8 +112,8 @@ var resolverAddress = rns.resolver(node)
 var resolverInstance = web3.contract(resolverAddress)
 var resolver = resolverInstance.at(resolverAddress)
 
-var resolveTo = '0x9eb63...';
-resolver.setAddr(node, resolveTo);
+var resolveTo = '0x9eb63...'
+resolver.setAddr(node, resolveTo)
 ```
 
 ## Transfer ownership

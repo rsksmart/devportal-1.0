@@ -5,16 +5,25 @@ title: Resolver
 
 The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Learn how to [implement a custom Resolver](/Operation/Resolve-a-name/#custom-resolver), or use the [default resolver](#default-resolver).
 
-
 ## Default Resolver
 
-Along the RNS registry and initial registrar there is a default resolver deployed as well (see the PublicResolver contract). This contract is available for anybody to use it, but the only restriction is that only owners of a domain can modify its record in this resolver. 
+Along the RNS registry and initial registrar there is a default resolver deployed as well (see the PublicResolver contract). This contract is available for anybody to use it, but the only restriction is that only owners of a domain can modify its record in this resolver.
 
 Additionally, it is used as the default resolver configured for new nodes created in the registry.
 
 - **Adrress**: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](http://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
 - **ABI**: [ResolverABI.json](/Architecture/ResolverABI.json)
 
+## Index
+
+- [Structure](#structure)
+- [Methods](#methods)
+    - [`has`](#has)
+    - [`supportsinterface`](#supportsinterface)
+    - [`addr`](#addr)
+    - [`setAddr`](#setaddr)
+    - [`content`](#content)
+    - [`setContent`](#setcontent)
 
 ## Structure
 
@@ -33,7 +42,7 @@ mapping(bytes32=>address) addresses;
 mapping(bytes32=>bytes32) hashes;
 ```
 
-- `adresses`: for each `namehash` entry, stores an address 
+- `adresses`: for each `namehash` entry, stores an address
 - `hashes`: for each `namehash` entry, stores a hash
 
 ## Methods
@@ -42,7 +51,7 @@ mapping(bytes32=>bytes32) hashes;
 
 Returns true if the specified node has the specified record type.
 
-**Signature**   
+**Signature**
 ```js
 function has(bytes32 node, bytes32 kind) public view returns (bool)
 ```
@@ -58,7 +67,7 @@ function has(bytes32 node, bytes32 kind) public view returns (bool)
 
 Returns true if the resolver implements the interface specified by the provided hash.
 
-This Resolver supports 
+This Resolver supports
 - `0x3b3b57de = sha3(addr(bytes32))`
 - `0xd8389dc5 = sha3(content(bytes32))`
 

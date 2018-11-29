@@ -17,7 +17,7 @@ web3.setProvider(new web3.providers.HttpProvider(config.node))
 Instance the [Registrar contract](/Architecture/Registrar) and the [RIF Token contract](/RIF-Token/):
 
 ```js
-var registrarAbi = [] 
+var registrarAbi = []
 var registrarAddress = ''
 var registrarInstance =  web3.eth.contract(registrarAbi)
 var registrar = registrar.at(registrarAddress)
@@ -30,7 +30,7 @@ var rif = rifInstace.at(rifAddress)
 
 ### Check the auction status
 
-After making any operation, check the domain [state](/Architecture/Registrar#States):
+After making any operation, check the domain [state](/Architecture/Registrar#state):
 
 > `name` field does not include _.rsk_ suffix
 
@@ -55,6 +55,8 @@ switch(check(myname)) {
 }
 ```
 
+Further reading: [`state`](/Architecture/Registrar#state).
+
 ### Start an auction
 
 To open a single auction:
@@ -65,6 +67,8 @@ function startAuction(name) {
     registrar.startAuction(hash)
 }
 ```
+
+Further reading: [`startAuction`](/Architecture/Deed#startauction).
 
 Or open many auctions at once for better anonymity:
 
@@ -77,12 +81,14 @@ function startAuction(name, n_extras) {
 
     for (let i = 0; i < n_extras; i++)
         hashes.push(web3.sha3(hash + i.toString()))
-    
+
     shuffle(hashses) // optional: shuffle them
 
     registrar.startAuctions(hashes)
 }
 ```
+
+Further reading: [`startAuctions`](/Architecture/Registrar#startauctions).
 
 ### Bid
 
@@ -110,6 +116,8 @@ function bid(name, owner, bidTokens, amountSent) {
 }
 ```
 
+Further reading: [`bid`](/Architecture/Registrar#bid).
+
 If you want to create an auction a bid in only one transaction:
 
 ```js
@@ -121,7 +129,7 @@ function createAndBid(name, owner, bidTokens, amountSent) {
 
     for (let i = 0; i < n_extras; i++)
         hashes.push(web3.sha3(hash + i.toString()))
-    
+
     shuffle(hashses) // optional: shuffle them
 
     let tokens = web3.toWei(bidTokens, 'ether')
@@ -135,6 +143,8 @@ function createAndBid(name, owner, bidTokens, amountSent) {
     })
 }
 ```
+
+Further reading: [`startAuctionsAndBid`](/Architecture/Registrar#startauctionsandbid).
 
 ### Unseal bid
 
@@ -150,6 +160,8 @@ function bid(name, owner, bid_tokens, displayed_tokens) {
 }
 ```
 
+Further reading: [`unsealBid`](/Architecture/Registrar#unsealbid).
+
 ### Register won auction
 
 To register the name recently won in the RND Registry contract:
@@ -160,6 +172,8 @@ function finalizeAuction(name) {
     registrar.finalizeAuction(hash)
 }
 ```
+
+Further reading: [`finalizeAuction`](/Architecture/Registrar#finalizeauction).
 
 ### Transfer domain ownership
 
@@ -172,6 +186,8 @@ function transfer(name, to) {
 }
 ```
 
+Further reading: [`transfer`](/Architecture/Registrar#transfer).
+
 ### Release a domain
 
 A domain can be released within the rent payment period. [Check this](#check-rent-status) and then, to release de domain:
@@ -182,6 +198,8 @@ function release(name) {
     registrar.releaseDeed(hash)
 }
 ```
+
+Further reading: [`releaseDeed`](/Architecture/Registrar#releasedeed).
 
 ### Pay rent
 
@@ -200,10 +218,12 @@ function payRent(name) {
     })
 
     // With transfer and call
-    const data = '0xe1ac9915' + hash.slice(2);
-    rif.transferAndCall(registrar.address, amount, data);
+    const data = '0xe1ac9915' + hash.slice(2)
+    rif.transferAndCall(registrar.address, amount, data)
 }
 ```
+
+Further reading: [`payRent`](/Architecture/Registrar#payrent).
 
 ### Check rent status
 
@@ -225,6 +245,8 @@ function withinRentPaymentPeriod(name) {
 }
 ```
 
+Further reading: [`canPayRent`](/Architecture/Deed#canpayrent).
+
 Or resolve it logically:
 
 ```js
@@ -235,6 +257,8 @@ function withinRentPaymentPeriod(name) {
     })
 }
 ```
+
+Further reading: [`entries`](/Architecture/Registrar#entries).
 
 ## RNS Registry
 
@@ -255,7 +279,7 @@ var namehash = require('eth-ens-namehash').hash
 
 > `domain` field does include _.rsk_ suffix
 
-For further information have a look at [RNS Registry contract](/Architecture/Registry).
+Further reading: [RNS Registry contract](/Architecture/Registry).
 
 ### Change the resolver
 
@@ -266,6 +290,8 @@ function setResolver(domain, newResolver) {
 }
 ```
 
+Further reading: [`setResolver`](/Architecture/Resolver#setresolver).
+
 ### Change the node owner
 
 ```js
@@ -274,6 +300,8 @@ function setOwner(domain, owner) {
     rns.setOwner(hash, owner)
 }
 ```
+
+Further reading: [`setOwner`](/Architecture/Resolver#setowner).
 
 ### Change the TTL
 
@@ -284,9 +312,11 @@ function setTTL(domain, ttl) {
 }
 ```
 
+Further reading: [`setTTL`](/Architecture/Deed#setttl).
+
 ### Create a subdomain
 
-This is also used to change the subdomain owner. 
+This is also used to change the subdomain owner.
 
 The `name` field is the subdomain inherited from the domain.
 
@@ -294,9 +324,11 @@ The `name` field is the subdomain inherited from the domain.
 function subdomain(domain, name, owner) {
     var domainHash = namehash(domain)
     var hash = web3.sha3(name)
-    rns.setOwner(domainHash, hash, owner)
+    rns.setSubnodeOwner(domainHash, hash, owner)
 }
 ```
+
+Further reading: [`setSubnodeOwner`](/Architecture/Deed#setsubnodeowner).
 
 ## Resolver
 

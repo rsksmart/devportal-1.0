@@ -14,10 +14,10 @@ module Jekyll
       clearAddressCache
       site.documents.each { |page| addAddressItem(page.url, page['crumbtitle'] || page['title'] || '') } # collection files including posts
       site.pages.each { |page| addAddressItem(page.url, page['crumbtitle'] || page['title'] || '') } # pages
-      site.posts.docs.each { |page| addAddressItem(page.url, page['crumbtitle'] || page['title'] || '') } # posts      
+      site.posts.docs.each { |page| addAddressItem(page.url, page['crumbtitle'] || page['title'] || '') } # posts
     end
 
-    def self.addAddressItem(url, title)    
+    def self.addAddressItem(url, title)
       key = createAddressCacheKey(url)
       @@sideAddresses[key] = {:url => url, :title => title}
     end
@@ -28,7 +28,7 @@ module Jekyll
     end
 
     def self.createAddressCacheKey(path)
-      path.chomp("/").empty? ? "/" : path.chomp("/")              
+      path.chomp("/").empty? ? "/" : path.chomp("/")
     end
 
     def self.buildSideBreadcrumbs(side, payload)
@@ -42,7 +42,7 @@ module Jekyll
       -1.upto(path.size - 1) do |int|
          joined_path = int == -1 ? "" : path[0..int].join
          item = findAddressItem(joined_path)
-         if item 
+         if item
             position += 1
             item[:position] = position
             item[:root_image] = root_image
@@ -53,7 +53,7 @@ module Jekyll
 
    # Config
    def self.loadConfig(site)
-      config = site.config["breadcrumbs"] || {"root" => {"hide" => false, "image" => false}} 
+      config = site.config["breadcrumbs"] || {"root" => {"hide" => false, "image" => false}}
       root = config["root"]
       @@config[:root_hide] = root["hide"] || false
       @@config[:root_image] = root["image"] || false
