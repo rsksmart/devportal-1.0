@@ -7,7 +7,7 @@ The Resolver SDK provides facilities to interact with a Resolver Contract from a
 
 ## NPM Library
 
-[https://www.npmjs.com/package/rns-sdk-js](https://www.npmjs.com/package/rns-sdk-js)
+[https://www.npmjs.com/package/@rnsdomains/rns-sdk-js](https://www.npmjs.com/package/@rnsdomains/rns-sdk-js)
 <br>
 (Use [https://nodei.co](https://nodei.co))
 
