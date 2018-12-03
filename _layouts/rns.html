@@ -65,7 +65,7 @@
 				<div class="col-lg-8 col-lg-push-4">
 					<h1 class="page-title">{{ page.title }}</h1>
 					<div class="page-metadata">
-						<time role="presentation" datetime="{% last_modified_at %}T00:00:00.000Z">{% last_modified_at %}</time> |
+						<time role="presentation" datetime="{{ page.last_modified_at }}T00:00:00.000Z">{{ page.last_modified_at | date: '%Y-%m-%d' }}</time> |
 						{% assign words = content | number_of_words %}{{ words | divided_by:180 }} minutes to read |
 						<a href="https://github.com/{{ site.repository }}/edit/master/{{ page.path }}">Edit</a> |
 						<div class="dropdown" style="display: inline-block">
