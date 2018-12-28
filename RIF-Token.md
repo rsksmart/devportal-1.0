@@ -39,4 +39,4 @@ An ERC677 token transfer will be the same as an ERC20 transfer. On the other han
     - `_value: uint256`: Amount of RIF tokens to send.
     - `data: bytes`: 4-byte signature of the function to be executed, followed by the function parameters to be executed with encoded as a byte array.
 
-As explained in the [Registrar](/Contracts/Registrar) section, both **bid submission** and **rent payment** can be executed through the ERC677 transfer methods.
+As explained in the [Registrar](/Architecture/Registrar) section, both **bid submission** and **rent payment** can be executed through the ERC677 transfer methods.
