@@ -16,14 +16,14 @@ The Resolver SDK provides facilities to interact with a Resolver Contract from a
 At first install the library
 
 ```bash
-npm install rns-sdk-js
+npm install @rnsdomains/rns-sdk-js
 ```
 
 On the NodeJS project, import and instance the Resolver SDK
 
 ```js
 // import RNS's Resolver SDK object.
-var Resolver = require('rns-sdk-js');
+var Resolver = require('@rnsdomains/rns-sdk-js');
 ```
 
 ```js
@@ -49,7 +49,7 @@ With `{resolver-contract}` the contract file name.
  Assume at first, the next sentence is executed:
 
 ```js
-var Resolver = require('rns-sdk-js');
+var Resolver = require('@rnsdomains/rns-sdk-js');
 resolver = new Resolver(currentProvider, resolverAddress, resolverABI);
 ```
 
