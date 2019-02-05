@@ -49,7 +49,7 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 1. Instance Registrar contract
 
     ```js
-    var registrarInstance = web3.contract(registrarAbi)
+    var registrarInstance = web3.eth.contract(registrarAbi)
     var registrar = registrarInstance.at(registrarAddress)
     ```
 
@@ -63,13 +63,13 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 3. Verify domain status after starting an auction for the name
 
     ```js
-    var status = registrar.status(sha3)
+    var status = registrar.entries(sha3)
     ```
 
 4. If the dmain name is in Open state, start an auction. The auctions are public, this means anyone can bid in it.
 
     ```js
-    if (status === 0)
+    if (status[0] == 0)
         registrar.startAuction(sha3)
     ```
 
