@@ -34,7 +34,7 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
     - [`transfer`](#transfer)
     - [`releaseDeed`](#releasedeed)
     - [`eraseNode`](#erasenode)
-    - [`transfeRegistrar`](#transferregistrar)
+    - [`transferRegistrar`](#transferregistrar)
     - [`acceptRegistrarTransfer`](#acceptregistrartransfer)
     - [`state`](#state)
     - [`entries`](#entries)
