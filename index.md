@@ -3,9 +3,9 @@ layout: rns
 title: RNS
 ---
 
-RSK Name Service provides an architecture which enables the identification of RSK addresses by human-readable names.
+RIF Name Service provides an architecture which enables the identification of blockchain addresses by human-readable names.
 
-By adding a name resolution service, also known as “alias”, the probability of errors is significantly reduced. In addition, centralizing the access to multiple resources associated with a human-readable name improves the RSK platform user experience. As resource names may change over time, the system needs to be flexible to support frequent changes.
+By adding a name resolution service, also known as “alias”, the probability of errors is significantly reduced. In addition, centralizing the access to multiple resources associated with a human-readable name improves the blockchain platform user experience. As resource names may change over time, the system needs to be flexible to support frequent changes.
 
 Currently over the World Wide Web, the Domain Name System (DNS) is responsible for mapping human-readable names to IP addresses. RNS is a decentralized and secure service that works over RSK's blockchain.
 
@@ -13,7 +13,7 @@ Currently over the World Wide Web, the Domain Name System (DNS) is responsible f
 
 ## The basics
 
-RSK Name Service's architecture is based on the Ethereum Name Service (ENS) described on [EIP-137](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md). It is primarily divided in 4 components:
+RIF Name Service's architecture is based on the Ethereum Name Service (ENS) described on [EIP-137](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md). It is primarily divided in 4 components:
 
 ### Registry
 
@@ -57,4 +57,4 @@ Go to [Resolve a name](/Operation/Resolve-a-name) and [Libraries](/Libs) section
 
 > I'm a blockchain developer. I want to code!
 
-Go to [Architecture](/Architecture) and [Libraries](/Libs) sections, contribute in the [RNS Github](https://github.com/rnsdomains/RNS), or read the [RNS specification doc](https://docs.rsk.co/rsk-name-service-specification-en.pdf).
+Go to [Architecture](/Architecture) and [Libraries](/Libs) sections, contribute in the [RNS Github](https://github.com/rnsdomains/RNS), or read the [RNS specification doc](https://docs.rifos.org/rif-name-service-specification-en.pdf).
