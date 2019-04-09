@@ -3,7 +3,7 @@ layout: rns
 title: Web3
 ---
 
-To use web3 and interact with the contracts, we must instance `web3` with a provider. To do so we can use [RSK public nodes](https://github.com/rsksmart/rskj/wiki/rsk-public-nodes):
+To use web3 and interact with the contracts, we must instance `web3` with a provider. To do so we can use [RSK public nodes](https://nodes.rsk.co):
 
 ```js
 var Web3 = require('web3')

@@ -16,7 +16,7 @@ Any user can start an auction for any available domain name. It is a public auct
 
 A Vickrey auction is a type of blind auction. Bidders submit written bids without knowing the bid of the other people in the auction. The highest bidder wins but the price paid is the second-highest bid.
 
-> The good obtained after the auction is a domain registered under the `rsk` top level domain in the **RSK Name Service running on the RSK blockchain**.
+> The good obtained after the auction is a domain registered under the `rsk` top level domain in the **RIF Name Service running on the RSK blockchain**.
 
 ![auction-phase](/img/auction-phase.png)
 

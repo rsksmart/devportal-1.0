@@ -1,6 +1,6 @@
 # RNS Documentation
 
-The RNS Documentation is hosted on [docs.rns.rsk.co](https://docs.rns.rsk.co)
+The RNS Documentation is hosted on [docs.rns.rifos.org](https://docs.rns.rifos.org)
 
 ## Run locally
 

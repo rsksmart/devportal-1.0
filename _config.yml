@@ -1,7 +1,7 @@
-title: RSK Name Service Docs
+title: RIF Name Service Docs
 description: >
   RNS provides an architecture which enables the identification
-  of RSK addresses by human-readable names.
+  of blockchain addresses by human-readable names.
 
 rss: rss
 
@@ -13,7 +13,7 @@ breadcrumbs:
 permalink: pretty
 
 repository: rnsdomains/rnsdomains.github.io
-domain: docs.rns.rsk.co
+domain: docs.rns.rifos.org
 
 highlighter: rouge
 

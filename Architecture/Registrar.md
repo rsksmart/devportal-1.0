@@ -5,7 +5,7 @@ title: Registrar
 
 The Registrar is the contract that handles the domain issuing logic. In this section we'll explain the interaction with this contract.
 
-As explained in the [RNS specification doc](https://docs.rsk.co/rsk-name-service-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.
+As explained in the [RNS specification doc](https://docs.rifos.org/rif-name-service-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.
 
 Is RNS, the auction lasts 5 days and is divided in two periods:
 - **Auction phase**: the first 3 days to bid for a specific domain.

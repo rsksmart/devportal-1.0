@@ -3,7 +3,7 @@ layout: rns
 title: Architecture
 ---
 
-The RSK Name Service architecture is based on 4 components:
+The RIF Name Service architecture is based on 4 components:
 - [**Registrar**](#registrar): the auction logic manager.
 - [**Deeds**](#deed): handle locked tokens and rent payment commits.
 - [**Registry**](#registry): RNS domain registry.

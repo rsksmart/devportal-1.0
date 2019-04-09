@@ -3,7 +3,7 @@ layout: rns
 title: RIF Token
 ---
 
-RSK Name Service (RNS) implements the RIF Directory Protocol (RDP) which recommends the usage of the RIF Token to stake at name auctions and also paying for name maintenance rent.
+RIF Name Service (RNS) implements the RIF Directory Protocol (RDP) which recommends the usage of the RIF Token to stake at name auctions and also paying for name maintenance rent.
 
 To interact with RNS, it's important to understand the nature of the RIF Token.
 

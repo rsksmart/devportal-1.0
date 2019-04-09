@@ -3,7 +3,7 @@ layout: rns
 title: RNS Manager
 ---
 
-The [RNS Manager](https://manager.rns.rsk.co) is a simple tool that interacts with RNS Smart Contracts via Metamask. It has the following methods:
+The [RNS Manager](https://manager.rns.rifos.org) is a simple tool that interacts with RNS Smart Contracts via Metamask. It has the following methods:
 - Manage auction with Registrar contract
     - Check domain status with `entries`
     - Start an auction with `startAuction` ERC-677
@@ -22,6 +22,6 @@ The [RNS Manager](https://manager.rns.rsk.co) is a simple tool that interacts wi
     - Resolve a name with `addr`
     - Change address resolution with `setAddr`
 
-For further information go to the [site](https://manager.rns.rsk.co).
+For further information go to the [site](https://manager.rns.rifos.org).
 
 This project is open source: [fork and PR!](https://github.com/rnsdomains/RNS-manager)
