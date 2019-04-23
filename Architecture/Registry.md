@@ -7,8 +7,11 @@ The RNS Registry is the contract that stores the ownership of the nodes.
 
 When an address is registered, the [Registrar contract](/Architecture/Registrar) stores the name in the Registry contract:  when an auction is finalized, Registrar calls the `setSubnodeOwner` method using the root node as parent node.
 
+### Registry mainnet
 - **Address**: [`0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5`](http://explorer.rsk.co/address/0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5)
 - **ABI**: [RNSABI.json](/Architecture/RNSABI.json)
+
+See [RNS Testnet section](/RNS-Testnet) for testing environment information.
 
 ## Index
 

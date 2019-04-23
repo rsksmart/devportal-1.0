@@ -332,4 +332,4 @@ Further reading: [`setSubnodeOwner`](/Architecture/Deed#setsubnodeowner).
 
 ## Resolver
 
-Have a look at the [Resolve a name](/Operation/Resolve-a-name) and [Default Resolver contract](/Architecture/Resolver#default-resolver) section for further information.
+Have a look at the [Resolve a name](/Operation/Resolve-a-name) and [Public Resolver contract](/Architecture/Resolver#public-resolver) section for further information.

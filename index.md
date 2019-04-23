@@ -41,7 +41,7 @@ The first is to opening an auction through the Registrar contract for the desire
 
 The second way is, if Bob is the owner of _“bob.rsk”_ and Alice wants the subdomain _“subdomain.bob.rsk”_, Bob can delegate the subdomain ownership to Alice without an auction process.
 
-Once Alice gets a domain, she should set on the domain's entry in the Registry contract the Resolver that will perform the resolution between the new domain and the desired resource. If a user doesn't set a Resolver, a default one is set. This default Resolver is the new owned domain's parent's Resolver.
+Once Alice gets a domain, she should set on the domain's entry in the Registry contract the Resolver that will perform the resolution between the new domain and the desired resource. If a user doesn't set a Resolver, a default one is set. This Public Resolver is the new owned domain's parent's Resolver.
 
 Learn more how to [register a domain](/Operation/Register-a-name/)
 
