@@ -10,3 +10,4 @@ The developer community is working to help other developers enabling libraries a
 | Platform | Component |
 | --- | --- | --- |
 | [Javascript](/Libs/Javascript) | Resolver |
+| [Android](/Libs/Android) | Resolver |

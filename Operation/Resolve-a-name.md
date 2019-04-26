@@ -43,9 +43,9 @@ The resolution can be described in three steps:
     else console.log("The domain 'adomain' resolves to " + address)
     ```
 
-## Default Resolver
+## Public Resolver
 
-RNS provides a [Default Resolver](/Architecture/Resolver) that supports `addr` and `hash` storage for each node registered in the Registrar contract.
+RNS provides a [Public Resolver](/Architecture/Resolver) that supports `addr` and `hash` storage for each node registered in the Registrar contract.
 The `addr` is the typical resolution for and address node, and the `hash` is free to use. The resolution for a name that uses the Public Resolver looks like this:
 
 ```js

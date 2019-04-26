@@ -4,9 +4,9 @@ title: Architecture
 ---
 
 The RIF Name Service architecture is based on 4 components:
+- [**Registry**](#registry): RNS domain registry.
 - [**Registrar**](#registrar): the auction logic manager.
 - [**Deeds**](#deed): handle locked tokens and rent payment commits.
-- [**Registry**](#registry): RNS domain registry.
 - [**Resolver**](#resolver): the resolution between a domain and a resource.
 
 ![Architecture](/img/structure.png)

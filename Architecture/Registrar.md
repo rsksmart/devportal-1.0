@@ -13,8 +13,11 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 
 > There is no "soft start" phase, meaning that all names are available on launch time.
 
+### Registrar mainnet
 - **Address**: [`0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6`](http://explorer.rsk.co/address/0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6)
 - **ABI**: [RegistrarABI.json](/Architecture/RegistrarABI.json)
+
+See [RNS Testnet section](/RNS-Testnet) for testing environment information.
 
 ## Index
 
