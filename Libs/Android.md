@@ -11,7 +11,7 @@ Android SDK to resolve your RIF Name Service address on your app.
 Clone the project.
 
 ```console
-user@computer:~/some/path/$ git clone git@github.com:rootstock/RNS-SDK-android.git
+user@computer:~/some/path/$ git clone git@github.com:rnsdomamins/RNS-SDK-android.git
 Cloning into 'RNS-SDK-android'...
 ```
 
