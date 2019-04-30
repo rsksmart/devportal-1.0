@@ -30,6 +30,7 @@ You will need access to a running rsk node that can made calls to the JSON-RPC. 
       //Configuration for prod
       buildConfigField "String", "NODE", '"https://public-node.rsk.co"'
       buildConfigField "String", "RESOLVER_ADDRESS", '"0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a"'
+      buildConfigField "String", "RNS_ADDRESS", '"0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5"'
   }
 ```
 
@@ -42,7 +43,7 @@ You should just create your resolver with the default constructor if you are goi
 Or you can use another constructor if you want to use a personal node.
 
 ```java
- RnsResolver resolver = new RnsResolver("http://your.node.org", "RSK_ADDRES_TO_RESOLVER");
+ RnsResolver resolver = new RnsResolver("http://your.node.org", "RSK_ADDRES_TO_YOUR_RESOLVER");
 ```
 
 Then you can start using your resolver in the [AsyncTask](https://developer.android.com/reference/android/os/AsyncTask) defined in the android API.
