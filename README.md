@@ -1,3 +1,5 @@
+<img src="/logo.png" alt="logo" height="200" />
+
 # RNS Documentation
 
 The RNS Documentation is hosted on [docs.rns.rifos.org](https://docs.rns.rifos.org)
@@ -56,3 +58,18 @@ Describe each file change.
 - [@julianlen](https://github.com/julianlen)
 - [@ilanolkies](https://github.com/ilanolkies)
 - [@alebanzas](https://github.com/alebanzas)
+
+---
+
+## Related links
+
+- [RSK](https://rsk.co)
+    - [Docs](https://github.com/rsksmart/rskj/wiki)
+- [RIF](https://rifos.org)
+    - [Docs](https://www.rifos.org/documentation/)
+    - [Whitepaper](https://docs.rifos.org/rif-whitepaper-en.pdf)
+    - [Testnet faucet](https://faucet.rifos.org)
+- RNS
+    - [Docs](https://docs.rns.rifos.org)
+    - [Manager](https://rns.rifos.org)
+    - [Testnet registrar](https://testnet.rns.rifos.org)
