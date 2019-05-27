@@ -35,7 +35,7 @@ See [RNS Testnet section](/RNS-Testnet) for testing environment information.
     - [`setAddr`](#setaddr)
     - [`content`](#content)
     - [`setContent`](#setcontent)
-- [MultiChainResolverMethods](#MultiChainResolver Methods)
+- [MultiChainResolverMethods](#MultiChainResolverMethods)
     - [`supportsinterface`](#supportsinterface)
     - [`addr`](#addr)
     - [`setAddr`](#setaddr)
@@ -157,7 +157,7 @@ function setContent(bytes32 node, bytes32 hash) public only_owner(node)
 - `node`: the node to update.
 - `hash`: the content hash to set
 
-## MultiChainResolver Methods
+## MultiChainResolverMethods
 
 #### supportsInterface
 
@@ -180,7 +180,7 @@ function supportsInterface(bytes4 interfaceID) public pure returns (bool)
 
 #### addr
 
-Returns the address associated with an RNS node. Using the RSKCHAINID as the default chain.
+Returns the address associated with an RNS node. Using the RSKCHAINID as the default chain. Same as calling `chainAddr` with this node and RSK chain id as parameters.
 
 **Signature**
 ```js
@@ -194,7 +194,7 @@ function addr(bytes32 node) public view returns (address)
 - `string`: the associated address.
 
 #### setAddr
-Sets the address associated with an RNS node. May only be called by the owner of that node in the RNS registry.
+Sets the address associated with an RNS node, using the RSK chain id as default chain. May only be called by the owner of that node in the RNS registry.
 
 **Signature**
 ```js
