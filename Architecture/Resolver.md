@@ -28,14 +28,14 @@ See [RNS Testnet section](/RNS-Testnet) for testing environment information.
 ## Index
 
 - [Structure](#structure)
-- [Public Resolver Methods](#Public Resolver Methods)
+- [PublicResolverMethods](#PublicResolverMethods)
     - [`has`](#has)
     - [`supportsinterface`](#supportsinterface)
     - [`addr`](#addr)
     - [`setAddr`](#setaddr)
     - [`content`](#content)
     - [`setContent`](#setcontent)
-- [MultiChainResolver Methods](#MultiChainResolver Methods)
+- [MultiChainResolverMethods](#MultiChainResolver Methods)
     - [`supportsinterface`](#supportsinterface)
     - [`addr`](#addr)
     - [`setAddr`](#setaddr)
@@ -67,7 +67,7 @@ mapping(bytes32=>bytes32) hashes;
 - `adresses`: for each `namehash` entry, stores an address
 - `hashes`: for each `namehash` entry, stores a hash
 
-## Public Resolver Methods
+## PublicResolverMethods
 
 #### has
 
