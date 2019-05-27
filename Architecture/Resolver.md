@@ -238,7 +238,7 @@ Returns the address associated with an RNS node for a particular chain id. Using
 
 **Signature**
 ```js
-function chainAddr(bytes32 node, bytes4 chainId) public view returns (bool)
+function chainAddr (bytes32 node, bytes4 chain) public view returns (string memory)
 ```
 
 **Parameters**
