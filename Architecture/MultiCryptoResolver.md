@@ -1,16 +1,16 @@
 ---
 layout: rns
-title: Multichain Resolver
+title: Multi-Crypto Resolver
 ---
 
-## Multichain Resolver
+## Multi-Crypto Resolver
 
 In the RNS registry we have launched a resolver capable of resolve addresses from other blockchains using a [`chain id`](https://github.com/satoshilabs/slips/blob/master/slip-0044.md) as an identifier. With the same restrictions and visibility as the Public Resolver. This resolver implements all the methods described in the [resolver specification](/Architecture/Resolver)
 
 ### Mainnet information
 
-- **MultiChainResolver Adrress**: [`0x99a12be4C89CbF6CFD11d1F2c029904a7B644368`](http://explorer.rsk.co/address/0x99a12be4C89CbF6CFD11d1F2c029904a7B644368)
-- **ABI**: [MultiChainResolverABI.json](/Architecture/MultiChainResolverABI.json)
+- **Multi-Crypto Resolver Adrress**: [`0x99a12be4C89CbF6CFD11d1F2c029904a7B644368`](http://explorer.rsk.co/address/0x99a12be4C89CbF6CFD11d1F2c029904a7B644368)
+- **ABI**: [MultiCryptoResolverABI.json](/Architecture/MultiCryptoResolverABI.json)
 
 See [RNS Testnet section](/RNS-Testnet) for testing environment information.
 
@@ -71,7 +71,7 @@ function setContent(bytes32 node, bytes32 hash) public only_owner(node)
 - `node`: the node to update.
 - `hash`: the content hash to set
 
-## MultiChainResolverMethods
+## Multi-Crypto Resolver Methods
 
 #### supportsInterface
 

@@ -1,16 +1,22 @@
 ---
 layout: rns
-title: Public Resolver
+title: RSK Resolver
 ---
 
-Along the RNS registry and initial registrar there is a public resolver deployed as well (see the PublicResolver contract). This contract is available for anybody to use it, but the only restriction is that only owners of a domain can modify its record in this resolver. This resolver implements all the methods described in the [Resolver specification](/Architecture/Resolver)
+Along the RNS registry and initial registrar there is a public resolver deployed as well (see the RSKResolver contract). This contract is available for anybody to use it, but the only restriction is that only owners of a domain can modify its record in this resolver. This resolver implements all the methods described in the [Resolver specification](/Architecture/Resolver)
 
 Additionally, it is used as the default resolver configured for new nodes created in the registry.
 
+<div class="alert alert-warning">
+<p>There is an upgraded version of this resolver. See <a href="/Architecture/MultiCryptoResolver">Multi-crypto resolver</a> page.</p>
+<p>To migrate your resolver, execute the <a href="/Architecture/Registry/#setresolver">setResolver</a> command on the registry.</p>
+</div>
+
+
 ### Mainnet information
 
-- **PublicResolver Adrress**: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](http://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
-- **ABI**: [ResolverABI.json](/Architecture/ResolverABI.json)
+- **RSKResolver Adrress**: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](http://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
+- **ABI**: [RSKResolverABI.json](/Architecture/RSKResolverABI.json)
 
 See [RNS Testnet section](/RNS-Testnet) for testing environment information.
 

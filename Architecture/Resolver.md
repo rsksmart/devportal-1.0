@@ -3,7 +3,7 @@ layout: rns
 title: Resolver
 ---
 
-The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Learn how to [implement a custom Resolver](/Operation/Resolve-a-name/#custom-resolver), or use one of our resolvers, the [public resolver](/Architecture/PublicResolver) or the [multichain resolver](/Architecture/MultichainResolver).
+The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Learn how to [implement a custom Resolver](/Operation/Resolve-a-name/#custom-resolver), or use one of our resolvers, the [Multi-Crypto Resolver](/Architecture/MultiCryptoResolver), or the [RSK Resolver](/Architecture/RSKResolver).
 
 ## Index
 
