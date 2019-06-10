@@ -94,7 +94,7 @@ function supportsInterface(bytes4 interfaceID) public pure returns (bool)
 
 #### addr
 
-Returns the address associated with an RNS node. Using the RSKCHAINID as the default chain. Same as calling `chainAddr` with this node and RSK chain id as parameters.
+Returns the address associated with an RNS node. Same as calling `chainAddr` with this node and RSK chain id as parameters.
 
 **Signature**
 ```js
@@ -164,7 +164,8 @@ function chainAddr (bytes32 node, bytes4 chain) public view returns (string memo
 
 #### setChainAddr
 
-Associates the address with the node in the chain id specified. Emits the `AddrChanged` event if the chainId supplied was RSKCHAINID, otherwise emits `ChainAddrChanged`.
+Sets the address associated with an RNS node and a chain id. May only be called by the owner of that node in the RNS registry. Emits the `AddrChanged` event if the chainId supplied was RSKCHAINID, otherwise emits `ChainAddrChanged`.
+
 
 **Signature**
 ```js
