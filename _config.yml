@@ -17,9 +17,7 @@ domain: docs.rns.rifos.org
 
 highlighter: rouge
 
-gems:
- - jekyll-last-modified-at
-
 plugins:
+ - jekyll-last-modified-at
  - jekyll-feed
  - jekyll-github-metadata
