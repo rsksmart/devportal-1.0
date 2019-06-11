@@ -7,11 +7,29 @@ RIF Name Service (RNS) implements the RIF Directory Protocol (RDP) which recomme
 
 To interact with RNS, it's important to understand the nature of the RIF Token.
 
-| Token Name | RIF |
-| Total Supply | 1,000,000,000 RIF |
-| Contract Testnet Address | [0xd8c5adcac8d465c5a2d0772b86788e014ddec516](http://explorer.testnet.rsk.co/address/0xd8c5adcac8d465c5a2d0772b86788e014ddec516) (see [RNS Testnet](/RNS-Testnet) section)|
-| Contract Mainnet Address | [0x2acc95758f8b5f583470ba265eb685a8f45fc9d5](http://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) |
-| Contract Type | ERC677 |
+
+<table class="table">
+  <tbody>
+    <tr>
+      <td scope="row">Token Name</td>
+      <td>RIF</td>
+    </tr>
+    <tr>
+      <td scope="row">Total Supply</td>
+      <td>1,000,000,000 tRIF</td>
+    </tr>
+    <tr>
+      <td scope="row">Contract Address</td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5" target="_blank">0x2acc95758f8b5f583470ba265eb685a8f45fc9d5</a></td>
+    </tr>
+    <tr>
+      <td scope="row">Contract Type</td>
+      <td>ERC677</td>
+    </tr>
+  </tbody>
+</table>
+
+> <a href="/RNS-Testnet#trif">Testnet version</a>
 
 ## ERC677 token standard
 

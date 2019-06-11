@@ -24,7 +24,7 @@ Import using AndroidStudio
 
 File -> New -> Import Module...
 
-![Import Module Dialog](/img/AndroidSDK.png)
+<img src="/img/AndroidSDK.png" class="img-fluid" alt="android-sdk" />
 
 #### With either of those methods methods
 

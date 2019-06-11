@@ -9,7 +9,7 @@ By adding a name resolution service, also known as “alias”, the probability 
 
 Currently over the World Wide Web, the Domain Name System (DNS) is responsible for mapping human-readable names to IP addresses. RNS is a decentralized and secure service that works over RSK's blockchain.
 
-![introduction](/img/introduction.png)
+<img src="/img/introduction.png" class="img-fluid" alt="introduction" />
 
 ## The basics
 
@@ -31,7 +31,7 @@ The Registrar is responsible of RNS governance. In addition, it is responsible f
 
 In order to prevent unnecessary used storage due to unused domains or prevent name squatting, the domain owner should have incentives to forfeit their ownership of them. To achieve this, the domain owner locks tokens which will be refunded when the domain is released.
 
-![introduction](/img/use-cases.png)
+<img src="/img/use-cases.png" class="img-fluid" alt="use-case" />
 
 ## Register a domain
 
