@@ -30,4 +30,4 @@ The [Registry contract](/Architecture/Registry) stores and handles the resolutio
 
 ## Resolver
 
-The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. A user can use [RNS Public Resolver](/Architecture/Resolver) or [implement a custom Resolver](/Operation/Resolve-a-name/).
+The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. A user can use [RNS Resolver](/Architecture/Resolver) or [implement a custom Resolver](/Operation/Resolve-a-name/).

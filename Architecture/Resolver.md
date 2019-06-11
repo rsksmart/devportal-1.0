@@ -3,30 +3,18 @@ layout: rns
 title: Resolver
 ---
 
-The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Learn how to [implement a custom Resolver](/Operation/Resolve-a-name/#custom-resolver), or use the [public resolver](#public-resolver).
-
-## Public Resolver
-
-Along the RNS registry and initial registrar there is a public resolver deployed as well (see the PublicResolver contract). This contract is available for anybody to use it, but the only restriction is that only owners of a domain can modify its record in this resolver.
-
-Additionally, it is used as the default resolver configured for new nodes created in the registry.
-
-### Mainnet information
-- **Adrress**: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](http://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
-- **ABI**: [ResolverABI.json](/Architecture/ResolverABI.json)
-
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Learn how to [implement a custom Resolver](/Operation/Resolve-a-name/#custom-resolver), or use one of our resolvers, the [Multi-Crypto Resolver](/Architecture/MultiCryptoResolver), or the [RSK Resolver](/Architecture/RSKResolver).
 
 ## Index
 
 - [Structure](#structure)
 - [Methods](#methods)
-    - [`has`](#has)
     - [`supportsinterface`](#supportsinterface)
     - [`addr`](#addr)
     - [`setAddr`](#setaddr)
-    - [`content`](#content)
-    - [`setContent`](#setcontent)
+
+- [Events](#events)
+    - [`AddrChanged`](#addrchanged)
 
 ## Structure
 
@@ -49,22 +37,6 @@ mapping(bytes32=>bytes32) hashes;
 - `hashes`: for each `namehash` entry, stores a hash
 
 ## Methods
-
-#### has
-
-Returns true if the specified node has the specified record type.
-
-**Signature**
-```js
-function has(bytes32 node, bytes32 kind) public view returns (bool)
-```
-
-**Parameters**
-- `node`: the RNS node to query.
-- `kind`: the record type name, as specified in EIP137.
-
-**Returns**
-`bool`: true if this resolver has a record of the provided type on the provided node.
 
 #### supportsInterface
 
@@ -112,28 +84,11 @@ function setAddr(bytes32 node, address addrValue) public only_owner(node)
 - `node`: the node to update.
 - `addrValue`: the address to set.
 
-#### content
-Returns the content hash associated with an RNS node. Note that this resource type is not standardized, and will likely change in future to a resource type based on multihash.
+## Events
 
-**Signature**
-```js
-function content(bytes32 node) public view returns (bytes32)
-```
+#### AddrChanged
 
-**Parameters**
-`node`: the RNS node to query.
+This events should be fired when the method `setAddr` is sucessfully called and has to propagate the information:
 
-**Returns**
-- `bytes32`: the associated content hash.
-
-#### setContent
-Sets the content hash associated with an RNS node. May only be called by the owner of that node in the RNS registry. Note that this resource type is not standardized, and will likely change in future to a resource type based on multihash.
-
-**Signature**
-```js
-function setContent(bytes32 node, bytes32 hash) public only_owner(node)
-```
-
-**Parameters**
 - `node`: the node to update.
-- `hash`: the content hash to set
+- `addrValue`: the address to set.
