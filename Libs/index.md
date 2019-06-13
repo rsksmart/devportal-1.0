@@ -11,3 +11,4 @@ The developer community is working to help other developers enabling libraries a
 | --- | --- | --- |
 | [Javascript](/Libs/Javascript) | Resolver |
 | [Android](/Libs/Android) | Resolver |
+| [iOS](/Libs/iOS) | Resolver |
