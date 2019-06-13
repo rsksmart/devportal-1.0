@@ -63,7 +63,7 @@ function resolve(domain) {
 
 ### Example
 
-![alice-rsk](/img/alice-rsk.png)
+<img src="/img/alice-rsk.png" class="img-fluid" alt="alice-rsk" />
 
 ## Custom Resolver
 
@@ -77,17 +77,35 @@ This method can be queried from outside the contract to verify whether it suppor
 
 Defined or well-known record types are:
 
-| Type | Method | ID |
-| - | - | - |
-| Address | `addr` | `0x3b3b57de` |
-| Name | `name` | `0x691f3431` |
-| ABI | `ABI` | `0x2203ab56` |
-| Public Key | `pubkey` | `0xc8690233` |
-| Text | `text` | `0x59d1d43c` |
-| Multihash | `multihash` | `0xe89401a1` |
-| Content | `content` | `0xd8389dc5` |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Interface</th>
+      <th scope="col">ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Address</th>
+      <td><code>addr(bytes32)</code></td>
+      <td>0x3b3b57de</td>
+    </tr>
+    <tr>
+      <th scope="row">Chain address</th>
+      <td><code>chainAddr(bytes32,bytes8)</code></td>
+      <td>0x8be4b5f6</td>
+    </tr>
+    <tr>
+      <th scope="row">Content</th>
+      <td><code>content(bytes32)</code></td>
+      <td>0xd8389dc5</td>
+    </tr>
+  </tbody>
+</table>
 
 So, when the resolver is a custom on, we should:
+
 ```js
 function resolve(domain) {
     var node = namehash(domain);
@@ -106,7 +124,7 @@ function resolve(domain) {
 
 ### Org. example
 
-![alice-inc-rsk](/img/alice-inc-rsk.png)
+<img src="/img/alice-inc-rsk.png" class="img-fluid" alt="alice-inc-rsk" />
 
 ## Resolve onchain
 

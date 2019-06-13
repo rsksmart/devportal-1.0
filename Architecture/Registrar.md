@@ -137,7 +137,7 @@ The domains whose annual rent is not paid, backs to Open state and becomes avail
 
 ## Structure
 
-![registrar](/img/registrar.png)
+<img src="/img/registrar.png" class="img-fluid" alt="regsitrar" />
 
 **Context**
 ```js
@@ -605,7 +605,7 @@ event HashReleased(bytes32 indexed hash, uint value);
 
 ## States
 
-![states](/img/auction-states.png)
+<img src="/img/auction-states.png" class="img-fluid" alt="auction-states" />
 
 The states are defined:
 
@@ -619,13 +619,37 @@ enum Mode {
 }
 ```
 
-| Number | State | |
-| - | - | - |
-| **0** | Open | Domain is available and the auction hasn’t started |
-| **1** | Auction | Domain is available and the auction has been started |
-| **2** | Owned | Domain is taken and currently owned by someone |
-| **4** | Reveal | Domain is currently in the ‘reveal’ stage of the auction |
-
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">State</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">0</th>
+      <td>Open</td>
+      <td>Domain is available and the auction hasn’t started</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Auction</td>
+      <td>Domain is available and the auction has been started</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Owned</td>
+      <td>Domain is taken and currently owned by someone</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Reveal</td>
+      <td>Domain is currently in the ‘reveal’ stage of the auction</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Refund Schedule
 

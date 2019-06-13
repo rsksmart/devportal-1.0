@@ -8,7 +8,7 @@ The process consists of two main phases:
 1. [The auction phases](#the-auction-phase)
 2. [The annual rent payment](#the-storage-rent-payment)
 
-![phases](/img/phases.png)
+<img src="/img/phases.png" class="img-fluid" alt="phases" />
 
 ## The auction phase
 
@@ -18,7 +18,7 @@ A Vickrey auction is a type of blind auction. Bidders submit written bids withou
 
 > The good obtained after the auction is a domain registered under the `rsk` top level domain in the **RIF Name Service running on the RSK blockchain**.
 
-![auction-phase](/img/auction-phase.png)
+<img src="/img/auction-phase.png" class="img-fluid" alt="auction-phase" />
 
 The Vickrey auction process consists in 4 phases:
 
@@ -50,6 +50,6 @@ Once the name is acquired, the owner must pay an annual rent for the value of th
 
 Those domains the rent is not paid for and do expire will go back to the Open state and will be available to open up for auction again.
 
-![rent-phase](/img/rent-phase.png)
+<img src="/img/rent-phase.png" class="img-fluid" alt="rent-phase" />
 
 > Please note that if your domain expires it will not be automatically cleared from the registry and resolver.

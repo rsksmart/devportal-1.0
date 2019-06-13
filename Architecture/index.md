@@ -9,7 +9,7 @@ The RIF Name Service architecture is based on 4 components:
 - [**Deeds**](#deed): handle locked tokens and rent payment commits.
 - [**Resolver**](#resolver): the resolution between a domain and a resource.
 
-![Architecture](/img/structure.png)
+<img src="/img/structure.png" class="img-fluid" alt="architecture" />
 
 ## Registrar
 

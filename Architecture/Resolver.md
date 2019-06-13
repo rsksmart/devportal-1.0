@@ -18,7 +18,7 @@ The Resolver contract handles the resolution between the name domain and the res
 
 ## Structure
 
-![resolver](/img/public-resolver.png)
+<img src="/img/public-resolver.png" class="img-fluid" alt="resolver" />
 
 **Context**
 ```js
