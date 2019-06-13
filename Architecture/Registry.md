@@ -35,7 +35,7 @@ See [RNS Testnet section](/RNS-Testnet) for testing environment information.
 
 ## Abstract
 
-![registry](/img/registry.png)
+<img src="/img/registry.png" class="img-fluid" alt="registry" />
 
 **Node**
 
