@@ -1,6 +1,6 @@
 ---
 layout: rns
-title: Android SDK
+title: iOS Library
 ---
 
 Implementation for resolvers for the RIF Name Service, available for iOS.
@@ -9,7 +9,9 @@ Implementation for resolvers for the RIF Name Service, available for iOS.
 
 RNS is available through CocoaPods. To install it, simpy add the following line to your Podfile:
 
-  `pod "Rns"`
+```
+`pod "Rns"`
+```
 
 ## How to use
 
