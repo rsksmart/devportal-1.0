@@ -1,3 +1,27 @@
+#content {
+	width: 100%;
+	float: left;
+}
+
+.wrapper {
+	display: flex;
+	align-items: stretch;
+}
+
+#sidebar {
+	float: left;
+	min-width: 400px;
+	max-width: 400px;
+	min-height: 100vh;
+	transition: all 0.3s;
+	background:rgb(241, 242, 237);
+	float: left;
+}
+
+#sidebar.active {
+	margin-left: -400px;
+}
+
 .page-metadata {
 	text-transform: uppercase;
 	margin: 0 0 30px;
@@ -24,6 +48,10 @@
 	#main-menu{
 		width: 25%;
 	}
+}
+
+#sidebarContent {
+	padding: 10px;
 }
 
 #sidebarContent .filterHolder .clearInput, #sidebarContent .filterHolder .emptyFilterMessage {
@@ -56,14 +84,18 @@ nav.breadcrumbs.bootstrap ol, nav.breadcrumbs.bootstrap ul {
 nav.breadcrumbs.bootstrap .breadcrumb {
 	font-size: 1rem;
 	padding: 0.75rem 1rem;
-	margin-bottom: 1rem;
 	list-style: none;
 	background-color: #f1f2ed;
 	border-radius: 0.25rem;
+	border-bottom: 1px solid #006ebe;
 }
 
 blockquote {
 	font-style: italic;
 	padding: 0 0 0 20px;
 	border-left: 5px solid #006ebe;
+}
+
+.breadcrumb {
+	margin-bottom: 0px;
 }
