@@ -3,11 +3,15 @@ body.dark .page-wrapper, body.dark pre.highlight {
 	color: #f1f2ed;
 }
 
-body.dark pre.highlight .o {
+body.dark pre.highlight .o,
+body.dark .table {
 	color: #f1f2ed;
 }
 
-body.dark pre.highlight .s1, body.dark .highlight .s2, body.dark .highlight .s {
+body.dark pre.highlight .s1, 
+body.dark .highlight .s2, 
+body.dark .highlight .s,
+body.dark nav.breadcrumbs.bootstrap .breadcrumb {
 	color: black;
 }
 

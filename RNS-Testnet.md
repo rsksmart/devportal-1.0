@@ -12,7 +12,7 @@ To test application integrations, we've deployed two variants of RNS contracts i
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Perio</th>
+      <th scope="col">Period</th>
       <th scope="col">Auction variant</th>
       <th scope="col">FIFS variant</th>
     </tr>

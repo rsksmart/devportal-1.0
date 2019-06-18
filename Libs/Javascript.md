@@ -1,6 +1,6 @@
 ---
 layout: rns
-title: Javacript SDK
+title: Javacript Library
 ---
 
 The Resolver SDK provides facilities to interact with a Resolver Contract from a NodeJS project.

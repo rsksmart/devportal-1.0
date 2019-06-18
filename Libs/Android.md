@@ -1,9 +1,9 @@
 ---
 layout: rns
-title: Android SDK
+title: Android Library
 ---
 
-Android SDK to resolve your RIF Name Service address on your app.
+Android Library to resolve your RIF Name Service address on your app.
 
 ## Import into your app
 
