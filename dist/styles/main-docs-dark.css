@@ -1,4 +1,4 @@
-body.dark .page-wrapper, body.dark pre.highlight {
+body.dark, body.dark pre.highlight {
 	background: #172b36;
 	color: #f1f2ed;
 }
