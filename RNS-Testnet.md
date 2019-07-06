@@ -3,6 +3,8 @@ layout: rns
 title: RNS Testnet
 ---
 
+<div class="fade alert alert-warning show">Testnet reset: on Friday, July 5th 2019, 12:00 PM (GMT) the RSK testnet was reseted. <a href="https://www.rsk.co/noticia/announcement-upcoming-rsk-testnet-reset-and-wasabi-rollout-plan/">Learn more about this</a>.</div>
+
 To test application integrations, we've deployed two variants of RNS contracts in the [RSK Testnet](https://explorer.testnet.rsk.co), an [auction registrar](#auction-variant) (a clone of mainnet), and a [First Come First Served](#fcfs-variant) variant, both connected with the [tRIF token](#trif).
 
 
