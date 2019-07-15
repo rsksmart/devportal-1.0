@@ -3,7 +3,7 @@ layout: rns
 title: RNS Testnet
 ---
 
-<div class="fade alert alert-warning show">Testnet reset: on Friday, July 5th 2019, 12:00 PM (GMT) the RSK testnet was reseted. <a href="https://www.rsk.co/noticia/announcement-upcoming-rsk-testnet-reset-and-wasabi-rollout-plan/">Learn more about this</a>.</div>
+<div class="fade alert alert-warning show">UPDATED INFO: on Friday, July 5th 2019, 12:00 PM (GMT) the RSK testnet was reseted. <a href="https://www.rsk.co/noticia/announcement-upcoming-rsk-testnet-reset-and-wasabi-rollout-plan/">Learn more about this</a>. This page now shows the information of the solution on the reseted network.</div>
 
 To test application integrations, we've deployed two variants of RNS contracts in the [RSK Testnet](https://explorer.testnet.rsk.co), an [auction registrar](#auction-variant) (a clone of mainnet), and a [First Come First Served](#fcfs-variant) variant, both connected with the [tRIF token](#trif).
 
@@ -55,19 +55,19 @@ To test application integrations, we've deployed two variants of RNS contracts i
   <tbody>
     <tr>
       <td scope="row"><a href="/Architecture/Registry">Registry</a></td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0x83355fcb41acbe3919e4ff73ecffc07a3147b7e8" target="_blank">0x83355fcb41acbe3919e4ff73ecffc07a3147b7e8</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0xe0ba8a9ff14a7dfeab227a4f685b08a1084f4ad1" target="_blank">0xe0ba8a9ff14a7dfeab227a4f685b08a1084f4ad1</a></td>
     </tr>
     <tr>
       <td scope="row"><a href="/Architecture/Registrar">Registrar</a></td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0xb0cf0517302acf52f967d0342827ff9c01d353f2" target="_blank">0xb0cf0517302acf52f967d0342827ff9c01d353f2</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0x8cd41103edcf309714e771cd0c01f1e2b09f4842" target="_blank">0x8cd41103edcf309714e771cd0c01f1e2b09f4842</a></td>
     </tr>
     <tr>
       <td scope="row"><a href="/Architecture/RSKResolver">RSK Resolver</a></td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0xf1143e2797bef4f8bd6059605e8134686efaa355" target="_blank">0xf1143e2797bef4f8bd6059605e8134686efaa355</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0x480fee7506db34dde84cfec85057a6bd96b38e1b" target="_blank">0x480fee7506db34dde84cfec85057a6bd96b38e1b</a></td>
     </tr>
     <tr>
       <td scope="row"><a href="/Architecture/MultiCryptoResolver">Multi-crypto Resolver</a></td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0x5c10db6fc2876fc61f67629770301c70562b1d13" target="_blank">0x5c10db6fc2876fc61f67629770301c70562b1d13</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0x4e88e8253d4a4f023103d2941458ccb2333db62f" target="_blank">0x4e88e8253d4a4f023103d2941458ccb2333db62f</a></td>
     </tr>
   </tbody>
 </table>
@@ -78,23 +78,31 @@ To test application integrations, we've deployed two variants of RNS contracts i
 <table class="table">
   <tbody>
     <tr>
+      <td scope="row">Registration cost</td>
+      <td>1 tRIF (fixed)</td>
+    </tr>
+    <tr>
+      <td scope="row">Registration tool</td>
+      <td><a href="https://testnet.rns.rifos.org" target="_blank">FIFS registrar client</a></td>
+    </tr>
+    <tr>
       <td scope="row"><a href="/Architecture/Registry">Registry</a></td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0xc1f9b554f9764a8b9db5d30d99c0a99ccf30b895" target="_blank">0xc1f9b554f9764a8b9db5d30d99c0a99ccf30b895</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0xeff983147ae97758c04f65ac7dee7c7cacf48ba2" target="_blank">0xeff983147ae97758c04f65ac7dee7c7cacf48ba2</a></td>
     </tr>
     <tr>
       <td scope="row"><a href="/Architecture/Registrar">Registrar</a></td>
       <td>
-        <a href="http://explorer.testnet.rsk.co/address/0xb39103ddb46edb1d64a26e9958c7cf458dbc4023" target="_blank">0xb39103ddb46edb1d64a26e9958c7cf458dbc4023</a>
+        <a href="http://explorer.testnet.rsk.co/address/0x92e0e035fbc120f268c1438051fb5b8c24d43641" target="_blank">0x92e0e035fbc120f268c1438051fb5b8c24d43641</a>
         (<a href="/Architecture/TestnetFCFSRegistrar.json">ABI</a>)
       </td>
     </tr>
     <tr>
       <td scope="row"><a href="/Architecture/RSKResolver">RSK Resolver</a></td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0x40669137f90206bb3533358ebbd0f1910c39238a" target="_blank">0x40669137f90206bb3533358ebbd0f1910c39238a</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0xa1190a76aea568300c512f3ee6e05e504da1797f" target="_blank">0xa1190a76aea568300c512f3ee6e05e504da1797f</a></td>
     </tr>
     <tr>
       <td scope="row"><a href="/Architecture/MultiCryptoResolver">Multi-crypto Resolver</a></td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0xee2bc6bc30d552bf638e5a9f7b499b00886fe327" target="_blank">0xee2bc6bc30d552bf638e5a9f7b499b00886fe327</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0xc52dde9af11185e13ecc516dc337a29b6f16d821" target="_blank">0xc52dde9af11185e13ecc516dc337a29b6f16d821</a></td>
     </tr>
   </tbody>
 </table>
@@ -113,7 +121,7 @@ To test application integrations, we've deployed two variants of RNS contracts i
     </tr>
     <tr>
       <td scope="row">Contract Testnet Address</td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0xd8c5adcac8d465c5a2d0772b86788e014ddec516" target="_blank">0xd8c5adcac8d465c5a2d0772b86788e014ddec516</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE" target="_blank">0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE</a></td>
     </tr>
     <tr>
       <td scope="row">Contract Type</td>
