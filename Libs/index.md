@@ -35,5 +35,11 @@ The developer community is working to help other developers enabling libraries a
         <a href="https://github.com/rnsdomains/rns-ios-sampleapp" target="_blank">Sample App</a>
       </td>
     </tr>
+    <tr>
+      <td scope="row">Python</td>
+      <td>
+        <a href="/Libs/Python">Resolver</a>
+      </td>
+    </tr>
   </tbody>
 </table>
