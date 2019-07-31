@@ -20,7 +20,7 @@ To interact with RNS, it's important to understand the nature of the RIF Token.
     </tr>
     <tr>
       <td scope="row">Contract Address</td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5" target="_blank">0x2acc95758f8b5f583470ba265eb685a8f45fc9d5</a></td>
+      <td><a href="http://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5" target="_blank">0x2acc95758f8b5f583470ba265eb685a8f45fc9d5</a></td>
     </tr>
     <tr>
       <td scope="row">Contract Type</td>
