@@ -41,5 +41,11 @@ The developer community is working to help other developers enabling libraries a
         <a href="/Libs/Python">Resolver</a>
       </td>
     </tr>
+    <tr>
+      <td scope="row">Solidity</td>
+      <td>
+        <a href="/Libs/rns-artifacts">rns-artifacts</a>
+      </td>
+    </tr>
   </tbody>
 </table>
