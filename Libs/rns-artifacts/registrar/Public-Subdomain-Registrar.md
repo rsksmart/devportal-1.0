@@ -3,7 +3,7 @@ layout: rns-artifacts
 title: rns-artifacts - Public Subdomain Registrar
 ---
 
-This contract is owner of RNS nodes and allows anyone to create subnodes under any of them.
+This contract is owner of RNS nodes and allows anyone to create sub-nodes under any of them.
 
 ### Usage
 
