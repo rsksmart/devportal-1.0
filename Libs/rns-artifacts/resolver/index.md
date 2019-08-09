@@ -8,4 +8,4 @@ The Resolver contract handles the resolution between the name domain and the res
 _[Further reading](https://docs.rns.rifos.org/Architecture/Resolver)_
 
 ## Resources
-- [Multi Chain Resolver](Multi-Chain-Resolver): stores rsk address and addresses of different chains.
+- [Multi-Crypto Resolver](Multi-Chain-Resolver): stores rsk address and addresses of different chains.
