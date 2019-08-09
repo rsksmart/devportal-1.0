@@ -3,7 +3,7 @@ layout: rns-artifacts
 title: Subdomain Registrar
 ---
 
-This contract is owner of an RNS node and allows anyone to create subnodes under this node.
+This contract is owner of an RNS node and allows anyone to create sub-nodes under this node.
 
 ### Usage
 
