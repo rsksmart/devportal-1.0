@@ -2,7 +2,7 @@
 layout: rns-artifacts
 title: rns-artifacts - Price Subdomain Registrar
 ---
-This contract is owner of an RNS node and allows anyone who is whitelisted to create subnodes under the given
+This contract is owner of an RNS node and allows anyone who is whitelisted to create sub-nodes under the given
 RNS node, and sends a token price to the new owner.
 
 ### Usage
