@@ -9,7 +9,7 @@ Welcome to the `rns-artifacts`!
 
 It provides implementations of RNS Registry, Registrars, and Resolvers which you can deploy as-is or extend to suit your needs, as well as Solidity components to build custom contracts and more complex decentralized systems.
 
-[Registrar](registrar): contract owner of a node. It can emit subnodes and set their owners. For example `rsk` owner can change `alice.rsk` owner.
+[Registrar](registrar): contract owner of a node. It can emit sub-nodes and set their owners. For example, `rsk` owner can change `alice.rsk` owner.
 - [Subdomain Registrar](registrar/Subdomain-Registrar)
 - [Public Subdomain Registrar](registrar/Public-Subdomain-Registrar)
 - [Price Subdomain Registrar](registrar/Price-Subdomain-Registrar)
