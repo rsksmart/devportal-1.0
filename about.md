@@ -1,5 +1,5 @@
 ---
-layout: rns
+layout: rsk
 title: About
 permalink: /about/
 ---
