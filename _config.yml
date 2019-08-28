@@ -6,7 +6,7 @@ rss: rss
 
 breadcrumbs:
   root:
-    hide: true
+    hide: false
     image: false
 
 permalink: pretty

@@ -1,3 +1,7 @@
+---
+layout: rsk
+title: RSK Tesnet Faucet
+---
 ## RSK Tesnet Faucet
 
 RSK [Testne Faucet](https://faucet.testnet.rsk.co/) can provide you with small denomination RSK coins for Testnet after you input your wallet address and pass the CAPTCHA.

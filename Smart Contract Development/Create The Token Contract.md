@@ -1,11 +1,9 @@
+---
+layout: rsk
+title: Create The Token Contract
+---
 ## Create The Token Contract
 
-<style>
-  img{
-    margin:0 auto;
-    width:80%;
-  }
-</style>
 
 #### Preparing the environment
 

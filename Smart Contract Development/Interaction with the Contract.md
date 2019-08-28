@@ -1,3 +1,7 @@
+---
+layout: rsk
+title: Interaction with the Contract
+---
 ## Interaction with the Contract
 
 #### Syntax Simplification

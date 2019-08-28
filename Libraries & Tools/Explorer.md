@@ -1,4 +1,7 @@
-
+---
+layout: rsk
+title: Overview Of The Explorer
+---
 ## Overview Of The Explorer
 
 You can browse the overview of RSK on this page with https://explorer.rsk.co/  like below.

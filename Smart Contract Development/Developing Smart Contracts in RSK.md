@@ -1,3 +1,7 @@
+---
+layout: rsk
+title: Developing Smart Contracts in RSK
+---
 ## Developing Smart Contracts in RSK
 
 

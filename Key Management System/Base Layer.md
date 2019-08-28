@@ -1,5 +1,9 @@
-## Base Layer
+---
+layout: rsk
+title: Base Layer
+---
 
+## Base Layer
 The Base Layer enableds wallet(private keys) to be stored in secure enclave and hardware device. It also provides ways to store, protect, access and recovery wallets.
 
 ## Wallet API
