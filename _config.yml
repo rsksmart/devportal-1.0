@@ -1,7 +1,6 @@
-title: RIF Name Service Docs
+title: RSK Docs
 description: >
-  RNS provides an architecture which enables the identification
-  of blockchain addresses by human-readable names.
+  RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.
 
 rss: rss
 
@@ -12,8 +11,8 @@ breadcrumbs:
 
 permalink: pretty
 
-repository: rnsdomains/rnsdomains.github.io
-domain: docs.rns.rifos.org
+repository: xuhuang37/xuhuang37.github.io
+domain: rsk.co
 
 highlighter: rouge
 

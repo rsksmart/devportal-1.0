@@ -7,7 +7,7 @@
 
 	<link rel="canonical" href="https://{{ site.domain }}{{ page.url }}">
 
-	<title>{{ page.title }} - Docs - RIF Name Service</title>
+	<title>{{ page.title }} - Docs - RSK</title>
 
 	<link rel="stylesheet" href="/dist/styles/main.css">
 	<link rel="stylesheet" href="/dist/styles/main-docs.css">
@@ -55,10 +55,7 @@ $('#sidebarCollapse').on('click', function () {
 						<a title="Github" href="https://github.com/chrisli30/RIL-DOCS" class="nav-link">Github</a>
 					</li>
 					<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="nav-item">
-						<a title="Documentation" href="https://github.com/chrisli30/RIL-DOCS" class="nav-link">Documentation</a>
-					</li>
-					<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="nav-item">
-						<a title="RNS Manager" href="https://github.com/chrisli30/RIL-DOCS" class="nav-link">Manager</a>
+						<a title="Documentation" href="/" class="nav-link">Documentation</a>
 					</li>
 				</ul>
 			</div>
@@ -80,7 +77,7 @@ $('#sidebarCollapse').on('click', function () {
 							<h1 class="page-title">{{ page.title }}</h1>
 							<div class="page-metadata">
 								<time role="presentation" datetime="{{ page.last_modified_at }}T00:00:00.000Z">{{ page.last_modified_at | date: '%Y-%m-%d' }}</time> |
-								{% assign words = content | number_of_words %}{{ words | divided_by:180 }} minutes to read |
+								{% assign words = content | number_of_words %}{% assign minutes = words | divided_by:180.0 %} {{ minutes | ceil }} minutes to read |
 								<a href="https://github.com/{{ site.repository }}/edit/master/{{ page.path }}">Edit</a> |
 								<div class="dropdown" style="display: inline-block">
 									<a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -102,64 +99,6 @@ $('#sidebarCollapse').on('click', function () {
 		</div>
 	</div>
 
-	<!-- <footer id="footer" class="bg-dark-alt pt-4 pb-4">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3 mb-4">
-					<img src="/dist/images/logo-footer.png" alt="RIF OS" width="150" />
-				</div>
-				<div class="col-sm-3 mb-4">
-					<h5 class="text-light">RNS</h5>
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<a href="https://rns.rifos.org/">Home</a>
-						</li>
-						<li class="nav-item">
-							<a href="https://github.com/rnsdomains/">Github</a>
-						</li>
-						<li class="nav-item">
-							<a href="https://docs.rifos.org/rif-name-service-specification-en.pdf">Specification</a>
-						</li>
-						<li class="nav-item">
-							<a href="https://githug.com/rnsdomains/RNSIPs/">Collaborate</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-3 mb-4">
-					<h5 class="text-light">RESOURCES</h5>
-					<ul class="nav flex-column">
-						<li class="nav-item">
-							<a href="https://manager.rns.rifos.org/">Manager</a>
-						</li>
-						<li class="nav-item">
-							<a href="https://docs.rns.rifos.org/">Documentation</a>
-						</li>
-						<li class="nav-item">
-							<a href="https://rifos.org/">RIF OS</a>
-						</li>
-						<li class="nav-item">
-							<a href="https://rsk.co/">RSK Smart</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-sm-3 mb-4">
-					<h5 class="text-light">COPYRIGHT</h5>
-					<p class="text-primary">© 2019 RIF Labs Limited. <br>All Rights Reserved.</p>
-					<ul class="nav">
-						<li class="nav-item">
-								<a class="nav-link h3" href="https://github.com/rnsdomains"><i class="fab fa-github"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link h3" href="https://twitter.com/rif_os"><i class="fab fa-twitter-square"></i></a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link h3" href="https://t.me/rif_os"><i class="fab fa-telegram"></i></a>
-							</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
