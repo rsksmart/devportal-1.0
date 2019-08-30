@@ -21,10 +21,15 @@ First we need to obtain an account on RSK Testnet and get some free RSK token fr
 1. Enter RBTC as SymbolPut and Save
 1. Copy the account address
 
+![Configurate MetaMask for RSK TestNet](../dist/images/metamask-testnet.png)
+
 **Get free token**
 Visit the [faucet website](https://faucet.testnet.rsk.co/) to gain some free RSK token for Testnet
 
 Enter the account address from MetaMask and wait several minutes for MetaMask to refresh the new balance.
+
+![Testnet Faucet](../dist/images/testnet-faucet.png)
+
 
 #### Truffle Configuration
 Now edit the truffle-config.js to be same as the following. It directs Truffle to connect to the public Testnet node.
@@ -64,6 +69,3 @@ truffle compile
 truffle migrate 
 ```
 
-If success, it will print out messages like this in the console
-```
-```
