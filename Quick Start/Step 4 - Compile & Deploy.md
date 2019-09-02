@@ -14,6 +14,11 @@ If you link this Truffle project to Ganache, you will be able to see the contrac
 1. Pick the truffle-config.js file from <tutorial-root>/truffle/truffle-config.js
 1. Save and Restart Ganache
 
+![Add Project To Ganache 1](../dist/images/add-ganache-1.png)
+![Add Project To Ganache 2](../dist/images/add-ganache-2.png)
+![Add Project To Ganache 3](../dist/images/add-ganache-3.png)
+
+
 #### Compling Contracts
 Change to the root of the truffle directory and then type the following command into a terminal
 ```shell
