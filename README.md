@@ -4,12 +4,12 @@
 - ***GCC and Make*** (in case your system doesn’t have them installed, which you can check by running gcc -v,g++ -v and make -v in your system’s command line interface)
 
 ## Install Jekyll
-#### On Mojave (10.14)
+#### On MacOS Mojave (10.14)
 ```shell
 sudo gem install bundler
 sudo gem install -n /usr/local/bin/ jekyll
 ```
-#### Before Mojave (<10.14)
+#### Before MacOS Mojave (<10.14)
 ```shell
 sudo gem install bundler jekyll
 ```
