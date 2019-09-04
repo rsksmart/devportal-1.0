@@ -1,3 +1,8 @@
+---
+layout: rsk
+title: Deploy to MainNet
+---
+
 ## Step 4 : Deploy to MainNet
 <style>
   img{

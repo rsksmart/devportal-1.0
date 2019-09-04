@@ -1,3 +1,8 @@
+---
+layout: rsk
+title: Execute the Smart Contract
+---
+
 ## Step 3 : Execute the Smart Contract
 <style>
   img{

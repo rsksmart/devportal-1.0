@@ -1,3 +1,7 @@
+---
+layout: rsk
+title: Deploy Solidity Code as RSK Smart Contract
+---
 ## Step 2 : Deploy Solidity Code as RSK Smart Contract
 
 <style>
