@@ -1,15 +1,9 @@
 ---
 layout: rsk
-title: Import Existing Code
+title: Port Ethereum Apps -  Step1
 ---
 ## Step 1 : Import Existing Code
 
-<style>
-  img{
-    margin:0 auto;
-    width:80%;
-  }
-</style>
 
 Smart contracts for RSK are written using Solidity (a Javascript like programming language) and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK Smart without doing any changes.
 

@@ -1,15 +1,9 @@
 ---
 layout: rsk
-title: Execute the Smart Contract
+title: Port Ethereum Apps -  Step3
 ---
 
 ## Step 3 : Execute the Smart Contract
-<style>
-  img{
-    margin:0 auto;
-    width:80%;
-  }
-</style>
 
 Once the deployment is successful. We can call smart contract methods directly in truffle console.
 

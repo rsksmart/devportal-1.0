@@ -1,15 +1,9 @@
 ---
 layout: rsk
-title: Deploy to MainNet
+title: Port Ethereum Apps - Step4
 ---
 
 ## Step 4 : Deploy to MainNet
-<style>
-  img{
-    margin:0 auto;
-    width:80%;
-  }
-</style>
 
 Deploying Smart Contracts to RSK MainNet can follow the same steps as the TestNet.
 

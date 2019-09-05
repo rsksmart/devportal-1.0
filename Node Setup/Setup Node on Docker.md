@@ -22,9 +22,7 @@ docker build -t mainnet -f Dockerfile.MainNet .
 ```
 docker build -t testnet -f Dockerfile.TestNet .
 ```
-
 * RegTest
-
 ```
 docker build -t regtest -f Dockerfile.RegTest .
 ```
@@ -34,7 +32,6 @@ When the build finishes, you have a container ready to run RSK.
 To run the container, you should execute (depending on your node's type):
 
 * MaiNet
-
 ```
 docker run -d --name mainnet-node-01  -p 4444:4444 -p 5050:5050 mainnet
 ```
@@ -42,9 +39,7 @@ docker run -d --name mainnet-node-01  -p 4444:4444 -p 5050:5050 mainnet
 ```
 docker run -d --name testnet-node-01  -p 4444:4444 -p 50505:50505 testnet
 ```
-
 * RegTest
-
 ```
 docker run -d --name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
 ```

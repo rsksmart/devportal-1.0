@@ -3,6 +3,12 @@ layout: rsk
 title: Setup Node on Ubuntu
 ---
 
+<style>
+  img.setup-node-ubuntu{
+    margin:0 auto;
+    width:80%;
+  }
+</style>
 > Minimum Requirement
 Make sure your system meet the [Minimum Requirement](http://google.com) before installing the RSK nodes on it.  
 
@@ -24,11 +30,11 @@ $ sudo apt-get install rskj
 
 During the installation, you will be asked to accept the terms and confirm the network.   
 
-![license](https://files.readme.io/302140d-Screen_Shot_2019-06-04_at_1.11.27_PM.png)
+<img alt="" class="setup-node-ubuntu" src="https://files.readme.io/302140d-Screen_Shot_2019-06-04_at_1.11.27_PM.png">
 
 Choose Yes and Enter to accept the license to continue
 
-![choose mainnet](https://files.readme.io/53d7723-Screen_Shot_2019-06-04_at_1.11.54_PM.png)
+<img alt="choose mainnet" class="setup-node-ubuntu" src="https://files.readme.io/53d7723-Screen_Shot_2019-06-04_at_1.11.54_PM.png">
 
 Choose Mainnet and Enter to continue
 
@@ -69,8 +75,7 @@ The installer will configure your node in the following paths:
   *   /var/lib/rsk/database: the directory where the database will be stored.
   *   /var/log/rsk: the directory where the logs will be stored.
 
-![path](https://files.readme.io/01c77ce-Screen_Shot_2019-06-04_at_1.14.31_PM.png)
-
+<img alt="path" class="setup-node-ubuntu" src="https://files.readme.io/01c77ce-Screen_Shot_2019-06-04_at_1.14.31_PM.png">
 
 ### Start/Stop the Node
 
@@ -96,6 +101,4 @@ sudo service rsk restart
 ```shell
 sudo service rsk status
 ```
-
-![scripts](https://files.readme.io/67dd7bd-Screen_Shot_2019-06-04_at_1.13.05_PM.png)
-
+<img alt="scripts" class="setup-node-ubuntu" src="https://files.readme.io/67dd7bd-Screen_Shot_2019-06-04_at_1.13.05_PM.png">

@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Intro 3-Layer Architecture
+title: Wallet API
 ---
 ## What is it for?
 THe RSK Key Management System library is to assist developers to easily interact with the RSK blockchain and its ecosystem. The goal is to build a general-purpose library around the core functionalities of the RSK blockchain.

@@ -1,15 +1,16 @@
 ---
 layout: rsk
-title: Deploy Solidity Code as RSK Smart Contract
+title: Port Ethereum Apps - Step2
 ---
-## Step 2 : Deploy Solidity Code as RSK Smart Contract
 
 <style>
-  img{
+  img.port-eth-app-img{
     margin:0 auto;
-    width:80%;
+    width: 80%;
   }
 </style>
+## Step 2 : Deploy Solidity Code as RSK Smart Contract
+
 
 We are going to deploy the example smart contract on to RSK Testnet.
 
@@ -25,15 +26,14 @@ First we need to obtain an account on RSK Testnet and get some free RSK token fr
 1. Enter RBTC as SymbolPut and Save
 1. Copy the account address
 
-![Configurate MetaMask for RSK TestNet](../dist/images/metamask-testnet.png)
+<img alt="Configurate MetaMask for RSK TestNet" class="port-eth-app-img" src="/dist/images/metamask-testnet.png">
 
 **Get free token**
 Visit the [faucet website](https://faucet.testnet.rsk.co/) to gain some free RSK token for Testnet
 
 Enter the account address from MetaMask and wait several minutes for MetaMask to refresh the new balance.
 
-![Testnet Faucet](../dist/images/testnet-faucet.png)
-
+<img class="port-eth-app-img" src="/dist/images/testnet-faucet.png">
 
 #### Truffle Configuration
 Now edit the truffle-config.js to be same as the following. It directs Truffle to connect to the public Testnet node.
