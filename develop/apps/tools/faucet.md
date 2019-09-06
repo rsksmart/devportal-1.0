@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Faucet
+title: RSK Tesnet Faucet
 ---
 ## RSK Tesnet Faucet
 
