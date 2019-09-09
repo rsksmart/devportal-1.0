@@ -36,6 +36,7 @@ Wait for Azure to finish the deployment.
       ```
   That's all! You have your own node running on an Azure Service.
 
+<span id="rpc"></span>
 #### Enable RPC calls
 1. Enable 4444 port. That is the default RSK port for RPC calls.
 Navigate to the virtual machine where you are runing RSK. Go to networking configuration.
@@ -83,6 +84,7 @@ Should return something like:
 ``` 
 {"jsonrpc":"2.0","id":666,"result":"0x70d03"} 
 ```
+<span id="connect"></span>
 #### Connect your computer to the node using bash
 
 In a terminal run:

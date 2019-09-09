@@ -17,13 +17,13 @@ RIF OS Protocols enable broad interoperability and faster time-to-deployment, an
 
 RNS is a decentralized service that allows users to have a readable domain or alias. It can be used to identify other personal resources, such as payment or communication addresses.
 
-Learn more about [RIF Name Service](./RNS.md)
+Learn more about [RIF Name Service](./rns)
 
 #### RIF Lumino Network 
 
 RIF Lumino Network is a third-layer solution to the Bitcoin blockchain, that enables state channels for every token built on RSK increasing transaction throughput and reduces costs by orders of magnitude.
 
-Learn more about [RIF Lumino Network](./Lumino.md)
+Learn more about [RIF Lumino Network](./payments/lumino)
 
 #### RIF OS White Paper
 

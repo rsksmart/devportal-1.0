@@ -10,17 +10,17 @@ title: Setup node on Ubuntu
   }
 </style>
 > Minimum Requirement
-Make sure your system meet the [Minimum Requirement](http://google.com) before installing the RSK nodes on it.  
+Make sure your system meet the [Minimum Requirement](https://github.com/rsksmart/rskj/wiki/Node-Minimum-Requirements) before installing the RSK nodes on it.  
 
 ## Install RSK node via Ubuntu Package
 
-The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package. By default, the node connects to MainNet.  To change the network choice, follow the instructions on [Switching Networks](http://google.com). To change other configuration of the node, please refer to the instructions on [RSK Node Configuration](http://google.com).
+The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package. By default, the node connects to MainNet.  To change the network choice, follow the instructions on [Switching Networks](https://github.com/rsksmart/rskj/wiki/Switching-networks). To change other configuration of the node, please refer to the instructions on [RSK Node Configuration](https://github.com/rsksmart/rskj/wiki/RSK-node-configuration).
 
 ### Install via PPA
 
 Type the commands below to install RskJ on Ubuntu using our PPAs for Ubuntu. 
 
-The installed repo public key Fingerprint is 5EED 9995 C84A 49BC 02D4 F507 DF10 691F 518C 7BEA. Also, the public key could be found in document [Ubuntu Key Server](http://google.com).
+The installed repo public key Fingerprint is 5EED 9995 C84A 49BC 02D4 F507 DF10 691F 518C 7BEA. Also, the public key could be found in document [Ubuntu Key Server](https://keyserver.ubuntu.com/).
 
 ```shell
 $ sudo add-apt-repository ppa:rsksmart/rskj

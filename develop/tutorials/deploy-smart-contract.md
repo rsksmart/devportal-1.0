@@ -3,6 +3,13 @@ layout: rsk
 title: Deploy Smart Contract
 ---
 
+<style>
+  img.deploy-smart-contract-img{
+    margin:0 auto;
+    width: 80%;
+  }
+</style>
+
 ## Developing Smart Contracts in RSK
 
 
@@ -55,17 +62,9 @@ Commands:
   Migrate:        truffle migrate
   Test contracts: truffle test
 ```
-Then you can see the file structure like this:
-
-├── contracts
-│   └── Migrations.sol
-├── migrations
-│   └── 1_initial_migration.js
-├── test
-└── truffle-config.js
 
 This is shown in my editor:
-<div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/36d06eb-truffle-1.png"></div> 
+<img class="deploy-smart-contract-img" src="https://files.readme.io/36d06eb-truffle-1.png">
 
 * **./contracts:** All our smart contracts will be stored in this folder.
 * **./migrations:** Deployment scripts will be stored in this folder.
@@ -129,7 +128,7 @@ truffle(develop)> create contract SimpleStorage
 
 Now, you can see the new SimpleStorage.sol file in the contracts folder:
 
-<div style="text-align:center"><img width="auto" style="margin:0 auto" src="https://files.readme.io/d1d815f-truffle-4.png"></div> 
+<img class="deploy-smart-contract-img" src="https://files.readme.io/d1d815f-truffle-4.png"> 
 
 In this file, we are going to code these lines:
 ```java
@@ -315,7 +314,7 @@ The transaction generates a receipt. This is the answer the blockchain generates
 1. In the 'Generate a random mnemonic' field, we select 12 words and generate it. 
 2. Then tap on 'Generate'. 
 3. The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:
-<div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/3670eb8-truffle-12.png"></div> 
+<img class="deploy-smart-contract-img" src="https://files.readme.io/3670eb8-truffle-12.png">
 
 8.2 Connect Truffle to RSK public node
 
@@ -391,17 +390,17 @@ truffle(rsk)> account
 ```
 
 >We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
-<div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/7d28c33-get-balance-faucet.png"></div> 
+<img class="deploy-smart-contract-img" src="https://files.readme.io/7d28c33-get-balance-faucet.png">
 
 >Steps of usage:
 1. Enter the address we got earlier 
 2. Enter the Enter check code 
 3. Submit form
 >
-<div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/34161e4-get-balance-faucet2.png"></div> 
+<img class="deploy-smart-contract-img" src="https://files.readme.io/34161e4-get-balance-faucet2.png"> 
 
 >Congratulations, you get the balance for testing.
-<div style="text-align:centeDr"><img style="margin:0 auto" src="https://files.readme.io/27e29ce-get-balance-from-faucet.png"></div> 
+<img class="deploy-smart-contract-img" src="https://files.readme.io/27e29ce-get-balance-from-faucet.png"> 
 
 >Now, let's check our balance in the console:
 ```js
@@ -492,5 +491,5 @@ Summary
 ```
 
 >Once the contract is deployed we can use the deployed() method as we did in the private blockchain. To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
-<div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/21f88b0-check-on-explorer-1.png"></div> 
-<div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/4365ef7-check-on-explorer.png"></div>
+<img class="deploy-smart-contract-img" src="https://files.readme.io/21f88b0-check-on-explorer-1.png"> 
+<img class="deploy-smart-contract-img" src="https://files.readme.io/4365ef7-check-on-explorer.png">

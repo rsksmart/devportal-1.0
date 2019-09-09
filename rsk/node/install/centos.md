@@ -5,7 +5,7 @@ title: Setup node on CentOS
 ## Install RSK node in CentOS Distribution
 
 
-Using the scripts below to install and run a RSK node on CentOS. By default, the node connects to MainNet.  To change the network choice, follow the instructions on [Switching Networks](http://google.com). To change other configuration of the node, please refer to the instructions on [RSK Node Configuration](http://google.com).
+Using the scripts below to install and run a RSK node on CentOS. By default, the node connects to MainNet.  To change the network choice, follow the instructions on [Switching Networks](https://github.com/rsksmart/rskj/wiki/Switching-networks). To change other configuration of the node, please refer to the instructions on [RSK Node Configuration](https://github.com/rsksmart/rskj/wiki/RSK-node-configuration).
 
 
 ```shell
