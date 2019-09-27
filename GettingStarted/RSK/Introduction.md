@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Introduction
+title: RSK Blockchain
 ---
 
 ## RSK Technology & Security Model Overview
