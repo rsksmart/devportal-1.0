@@ -4,7 +4,7 @@ description: >
 
 rss: rss
 
-source: src
+source: _sources
 
 breadcrumbs:
   root:

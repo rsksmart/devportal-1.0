@@ -28,7 +28,12 @@ We recommend to use Electrum BTC wallet for connecting to BTC testnet.
 
 > Note: The Bitcoin wallet needs to be legacy (not Segwit) whose public key starts with either *m* or *n*, and private key starting with *p2pkh:*
 
-![Create a Legacy(P2PK) wallet](../dist/images/legacy-private-key.png)
+![Create a Legacy(P2PK) wallet](/dist/images/legacy-private-key.png)
+{{ site }}
+
+{{ site.static_files }}
+
+{{ site.static_files.images }}
 
 ![Get a Bitcoin testnet address in Electrum Wallet](../dist/images/electrum-wallet.png)
 
