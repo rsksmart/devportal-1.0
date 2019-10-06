@@ -19,14 +19,14 @@ body {
 .navbar::after {
   content: '';
   width: 110%;
-  height: 200px;
+  height: 60px;
   background: url(/assets/img/green_shape.png);
   background-position: center;
   position: absolute;
   background-size: 150%;
   background-repeat: no-repeat;
   z-index: -1;
-  top: 75px;
+  top: 108px;
   display: block;
   left: -100px;
   transition: all 0.4s ease;
