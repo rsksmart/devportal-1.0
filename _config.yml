@@ -4,8 +4,6 @@ description: >
 
 rss: rss
 
-source: _sources
-
 breadcrumbs:
   root:
     hide: false
@@ -16,6 +14,11 @@ permalink: pretty
 repository: rootstock/rootstock.github.io
 domain: rootstock.github.io
 
+breadcrumbs:
+  root:
+    hide: true
+    image: false
+
 highlighter: rouge
 
 plugins:
@@ -23,4 +26,3 @@ plugins:
  - jekyll-feed
  - jekyll-github-metadata
  - jekyll-sitemap
-theme: jekyll-theme-minimal
