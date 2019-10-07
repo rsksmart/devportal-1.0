@@ -102,3 +102,9 @@ sudo service rsk restart
 sudo service rsk status
 ```
 <img alt="scripts" class="setup-node-ubuntu" src="https://files.readme.io/67dd7bd-Screen_Shot_2019-06-04_at_1.13.05_PM.png">
+
+## Video
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/eW9UF2aJQgs?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

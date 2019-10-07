@@ -44,3 +44,9 @@ docker run -d --name testnet-node-01  -p 4444:4444 -p 50505:50505 testnet
 ```
 docker run -d --name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
 ```
+
+## Video
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/c-YGtE3UIjE?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

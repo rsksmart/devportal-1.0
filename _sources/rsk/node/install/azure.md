@@ -98,3 +98,9 @@ To get user and server navigate to RSK virtual machine and go to the Overview wi
 
 Copy and paste the text in Ḷogin using VM local account in the console 
 ![azure-logssh](https://files.readme.io/3d09a04-azure-logssh.png)
+
+## Video
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/0gk10ob5dr4?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

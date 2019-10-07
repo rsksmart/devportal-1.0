@@ -133,6 +133,11 @@ Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise 
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
 > Note: The release process on Bitcoin network takes 4000 RSK block confirmations and at least 10 more minutes.
 
+## Video
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/1jdYVw8zLUg?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ### Q & A
 **1. How frequent does Federation address change?**
 Federation address has changed three times since RSK mainnet launch.

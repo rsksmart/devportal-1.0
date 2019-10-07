@@ -17,15 +17,70 @@ RSK node can be installed on all major platforms, including Linux, Windows, and 
 
 #### Supported Systems and Methods
 
-|  Type |  Platform | Supported Methods |
-|---|---|---|
-|  Local |  Linux |  [Ubuntu Package](), [CentOS](), [Fat JAR](), [Docker]() |
-|  Local |  Windows | [Fat JAR](), [Docker]()   |
-|  Local |  Mac |  [Fat JAR](), [Docker]()  |
-|  Cloud |  Google |  [Ubuntu Package](), [Fat JAR](), [Docker]()  |
-|  Cloud |  AWS |  [AWS AMI](), [Ubuntu Package](), [Docker]()  |
-|  Cloud | Azure  |  [Azure Image](), [Ubuntu Package](), [Docker]()  |
-
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Type</th>
+      <th scope="col">Platform</th>
+      <th scope="col">Supported Methods</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Local</td>
+      <td scope="row">Linux</td>
+      <td>
+        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>, 
+        <a href="/rsk/node/install/centos">CentOS</a>, 
+        <a href="/rsk/node/install/java">Fat JAR</a>, 
+        <a href="/rsk/node/install/docker">Docker</a> 
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Local</td>
+      <td scope="row">Mac</td>
+      <td>
+        <a href="/rsk/node/install/java">Fat JAR</a>, 
+        <a href="/rsk/node/install/docker">Docker</a>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Local</td>
+      <td scope="row">Windows</td>
+      <td>
+        <a href="/rsk/node/install/java">Fat JAR</a>, 
+        <a href="/rsk/node/install/docker">Docker</a>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Cloud</td>
+      <td scope="row">AWS</td>
+      <td>
+        <a href="/rsk/node/install/aws">AWS AMI</a>, 
+        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>, 
+        <a href="/rsk/node/install/docker">Docker</a> 
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Cloud</td>
+      <td scope="row">Azure</td>
+      <td>
+        <a href="/rsk/node/install/azure">Azure VM Image</a>,
+        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>,
+        <a href="/rsk/node/install/docker">Docker</a> 
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Cloud</td>
+      <td scope="row">Google</td>
+      <td>
+        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>, 
+        <a href="/rsk/node/install/java">Fat JAR</a>, 
+        <a href="/rsk/node/install/docker">Docker</a> 
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 #### Using Ubuntu Package
 <img class="node-setup-img" src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="ubuntu logo"/>

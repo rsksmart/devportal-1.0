@@ -35,3 +35,9 @@ If you want to change the network use these commands:
 - RegTest: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest`
 
 Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-1.0.2-WASABI-all.jar`
+
+## Video
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/TxpS6WhxUiU?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
