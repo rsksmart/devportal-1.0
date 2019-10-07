@@ -112,7 +112,7 @@ button:focus {
 .btn-outline-secondary:hover {
   background: transparent;
   color: #CCC;
-  opacidad: 1;
+  opacity: 1;
 }
 
 .btn-outline-secondary:active {
