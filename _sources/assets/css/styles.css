@@ -273,15 +273,13 @@ button:focus {
 
 pre {
   white-space: pre-wrap;
+  padding: 5px;
 }
 
 code {
-  background: #CCC;
-  width: 100%;
-  display: block;
-  padding: 15px;
-  color: black;
-  font-size: 14px!important;
+  display: inline;
+  padding: 5px;
+  font-size: 16px!important;
 }
 
 .main-central-col {
@@ -329,8 +327,13 @@ h4,
 h5,
 h6 {
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
-  margin-bottom: 15px;
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: bold;
+}
+
+h1{ 
+  font-size: 22px;
 }
 
 
