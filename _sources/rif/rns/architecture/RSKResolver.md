@@ -8,8 +8,8 @@ Along the RNS registry and initial registrar there is a public resolver deployed
 Additionally, it is used as the default resolver configured for new nodes created in the registry.
 
 <div class="alert alert-warning">
-<p>There is an upgraded version of this resolver. See <a href="/Architecture/MultiCryptoResolver">Multi-crypto resolver</a> page.</p>
-<p>To migrate your resolver, execute the <a href="/Architecture/Registry/#setresolver">setResolver</a> command on the registry.</p>
+<p>There is an upgraded version of this resolver. See <a href="/rif/rns/architecture/MultiCryptoResolver">Multi-crypto resolver</a> page.</p>
+<p>To migrate your resolver, execute the <a href="/rif/rns/architecture/Registry/#setresolver">setResolver</a> command on the registry.</p>
 </div>
 
 
