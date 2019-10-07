@@ -1,0 +1,552 @@
+[
+{
+    "constant": true,
+    "inputs": [],
+    "name": "tokenContract",
+    "outputs": [
+    {
+        "name": "",
+        "type": "address"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+},
+{
+    "constant": true,
+    "inputs": [
+    {
+        "name": "",
+        "type": "address"
+    },
+    {
+        "name": "",
+        "type": "bytes32"
+    }
+    ],
+    "name": "sealedBids",
+    "outputs": [
+    {
+        "name": "",
+        "type": "address"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+},
+{
+    "constant": true,
+    "inputs": [],
+    "name": "rns",
+    "outputs": [
+    {
+        "name": "",
+        "type": "address"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+},
+{
+    "constant": true,
+    "inputs": [],
+    "name": "rootNode",
+    "outputs": [
+    {
+        "name": "",
+        "type": "bytes32"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+},
+{
+    "inputs": [
+    {
+        "name": "_rns",
+        "type": "address"
+    },
+    {
+        "name": "_rootNode",
+        "type": "bytes32"
+    },
+    {
+        "name": "_tokenAddr",
+        "type": "address"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+},
+{
+    "anonymous": false,
+    "inputs": [
+    {
+        "indexed": true,
+        "name": "hash",
+        "type": "bytes32"
+    },
+    {
+        "indexed": false,
+        "name": "registrationDate",
+        "type": "uint256"
+    }
+    ],
+    "name": "AuctionStarted",
+    "type": "event"
+},
+{
+    "anonymous": false,
+    "inputs": [
+    {
+        "indexed": true,
+        "name": "hash",
+        "type": "bytes32"
+    },
+    {
+        "indexed": true,
+        "name": "bidder",
+        "type": "address"
+    },
+    {
+        "indexed": false,
+        "name": "deposit",
+        "type": "uint256"
+    }
+    ],
+    "name": "NewBid",
+    "type": "event"
+},
+{
+    "anonymous": false,
+    "inputs": [
+    {
+        "indexed": true,
+        "name": "hash",
+        "type": "bytes32"
+    },
+    {
+        "indexed": true,
+        "name": "owner",
+        "type": "address"
+    },
+    {
+        "indexed": false,
+        "name": "value",
+        "type": "uint256"
+    },
+    {
+        "indexed": false,
+        "name": "status",
+        "type": "uint8"
+    }
+    ],
+    "name": "BidRevealed",
+    "type": "event"
+},
+{
+    "anonymous": false,
+    "inputs": [
+    {
+        "indexed": true,
+        "name": "hash",
+        "type": "bytes32"
+    },
+    {
+        "indexed": true,
+        "name": "owner",
+        "type": "address"
+    },
+    {
+        "indexed": false,
+        "name": "value",
+        "type": "uint256"
+    },
+    {
+        "indexed": false,
+        "name": "registrationDate",
+        "type": "uint256"
+    }
+    ],
+    "name": "HashRegistered",
+    "type": "event"
+},
+{
+    "anonymous": false,
+    "inputs": [
+    {
+        "indexed": true,
+        "name": "hash",
+        "type": "bytes32"
+    },
+    {
+        "indexed": false,
+        "name": "value",
+        "type": "uint256"
+    }
+    ],
+    "name": "HashReleased",
+    "type": "event"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "startAuction",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hashes",
+        "type": "bytes32[]"
+    }
+    ],
+    "name": "startAuctions",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_sealedBid",
+        "type": "bytes32"
+    },
+    {
+        "name": "_tokenQuantity",
+        "type": "uint256"
+    }
+    ],
+    "name": "newBid",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_from",
+        "type": "address"
+    },
+    {
+        "name": "_tokenQuantity",
+        "type": "uint256"
+    },
+    {
+        "name": "_sealedBid",
+        "type": "bytes32"
+    }
+    ],
+    "name": "newBidWithToken",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hashes",
+        "type": "bytes32[]"
+    },
+    {
+        "name": "_sealedBid",
+        "type": "bytes32"
+    },
+    {
+        "name": "_tokenQuantity",
+        "type": "uint256"
+    }
+    ],
+    "name": "startAuctionsAndBid",
+    "outputs": [],
+    "payable": true,
+    "stateMutability": "payable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    },
+    {
+        "name": "_value",
+        "type": "uint256"
+    },
+    {
+        "name": "_salt",
+        "type": "bytes32"
+    }
+    ],
+    "name": "unsealBid",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "finalizeAuction",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    },
+    {
+        "name": "_newOwner",
+        "type": "address"
+    }
+    ],
+    "name": "transfer",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "releaseDeed",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_labels",
+        "type": "bytes32[]"
+    }
+    ],
+    "name": "eraseNode",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "transferRegistrars",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "payRent",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_from",
+        "type": "address"
+    },
+    {
+        "name": "_tokenQuantity",
+        "type": "uint256"
+    },
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "payRentWithToken",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+},
+{
+    "constant": true,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    },
+    {
+        "name": "_deed",
+        "type": "address"
+    },
+    {
+        "name": "_registrationDate",
+        "type": "uint256"
+    }
+    ],
+    "name": "acceptRegistrarTransfer",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+},
+{
+    "constant": true,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "state",
+    "outputs": [
+    {
+        "name": "",
+        "type": "uint8"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+},
+{
+    "constant": true,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    }
+    ],
+    "name": "entries",
+    "outputs": [
+    {
+        "name": "",
+        "type": "uint8"
+    },
+    {
+        "name": "",
+        "type": "address"
+    },
+    {
+        "name": "",
+        "type": "uint256"
+    },
+    {
+        "name": "",
+        "type": "uint256"
+    },
+    {
+        "name": "",
+        "type": "uint256"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+},
+{
+    "constant": true,
+    "inputs": [
+    {
+        "name": "_hash",
+        "type": "bytes32"
+    },
+    {
+        "name": "_owner",
+        "type": "address"
+    },
+    {
+        "name": "_value",
+        "type": "uint256"
+    },
+    {
+        "name": "_salt",
+        "type": "bytes32"
+    }
+    ],
+    "name": "shaBid",
+    "outputs": [
+    {
+        "name": "",
+        "type": "bytes32"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "pure",
+    "type": "function"
+},
+{
+    "constant": false,
+    "inputs": [
+    {
+        "name": "_from",
+        "type": "address"
+    },
+    {
+        "name": "_value",
+        "type": "uint256"
+    },
+    {
+        "name": "_data",
+        "type": "bytes"
+    }
+    ],
+    "name": "tokenFallback",
+    "outputs": [
+    {
+        "name": "",
+        "type": "bool"
+    }
+    ],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+}
+]
