@@ -3,12 +3,7 @@ layout: rsk
 title: Setup node on Ubuntu
 ---
 
-<style>
-  img.setup-node-ubuntu{
-    margin:0 auto;
-    width:80%;
-  }
-</style>
+
 > Minimum Requirement
 Make sure your system meet the [Minimum Requirement](https://github.com/rsksmart/rskj/wiki/Node-Minimum-Requirements) before installing the RSK nodes on it.  
 
