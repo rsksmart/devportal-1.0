@@ -4,12 +4,10 @@ title: Quick Start - Step 2
 ---
 ## Step 2 : Install Truffle and Ganache
 
-
-Truffle and Ganache provides a development environment, testing framework and asset pipeline for blockchains. 
-
+Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains. 
 
 #### Install Truffle
-- Navigate to under /truffle
+- Navigate to `truffle`
 ```shell
 cd <tutorial-root>/truffle
 ```
@@ -19,7 +17,7 @@ cd <tutorial-root>/truffle
 npm install
 ```
 
-Open the truffle-config.js file in the truffle directory. Locate the following part under networks. This part tells Truffle how to connect to our RegNet node.
+Open the `truffle-config.js` file in the truffle directory. Locate the following part under `networks`. This part tells Truffle how to connect to our RegNet node.
 ```javascript
 regtest: {
     provider: new PrivateKeyProvider(privateKey,  "http://127.0.0.1:4444"),
@@ -32,7 +30,7 @@ regtest: {
 
 #### Install Ganache
 
-- Navigate to under /ganache
+- Navigate to `ganache`
 ```shell
 cd <tutorial-root>/ganache
 ```
@@ -48,4 +46,4 @@ npm start
 ```
 
 #### More on Truffle and Ganache
-Learn more about turffle's commands, visit the official website [here](https://www.trufflesuite.com/docs/truffle/overview)
+To learn more about Truffle's commands, visit their official website [here](https://www.trufflesuite.com/docs/truffle/overview)
