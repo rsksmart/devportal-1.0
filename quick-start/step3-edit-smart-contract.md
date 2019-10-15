@@ -4,22 +4,21 @@ title: Quick Start - Step 3
 ---
 ## Step 3 : Edit Smart Contract
 
-
-In this tutorial, we have two sample smart contracts available for experiments. 
+In this tutorial, we have two sample smart contracts available to experiment with.
 
 - Coin.sol a minimal token contract
 - EIP20.sol an implementation of [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md) tokens provided by [ConsenSys](https://github.com/ConsenSys/Tokens)
 
 #### Locate the Smart Contract files for an EIP20 Coin
-- Navigate to under /truffle/contracts/eip20
+- Navigate to `truffle/contracts/eip20`
 ```shell
 cd truffle/contracts/eip20
 ls
 ```
-There are two .sol files in this directory: EIP20Interface.sol and EIP20.sol
+There are two `.sol` files in this directory: `EIP20Interface.sol` and `EIP20.sol`
 
-#### Understand the Smart Contracts Files
-EIP20Interface.sol defines the required functions for the ERC20 base standard.
+#### Understand the Smart Contract Files
+`EIP20Interface.sol` defines the required functions for the ERC20 base standard.
 
 ``` javascript
 /// @param _owner The address from which the balance will be retrieved
@@ -34,7 +33,7 @@ function balanceOf(address _owner) public view returns (uint256 balance);
 function transfer(address _to, uint256 _value) public returns (bool success);
 ```
 
-EIP20.sol provides the implementation for the functions declared in EIP20Interface.sol
+`EIP20.sol` provides the implementation for the functions declared in `EIP20Interface.sol`.
 
 ``` javascript
 function balanceOf(address _owner) public view returns (uint256 balance) {
@@ -53,7 +52,7 @@ function transfer(address _to, uint256 _value) public       returns (bool succes
 ```
 
 #### Edit the EIP20 Token Name
-At the top of the EIP20.sol token contract, the constructor function has input of initial amount, token name, decimal unit, and token symbol. You can customize these paramsters to create your own token.
+At the top of the `EIP20.sol` token contract, the constructor function defined inputs for: initial amount, token name, decimal unit, and token symbol. You can customize these parameters to create your own token.
 
 ```javascript
 function EIP20(
@@ -72,7 +71,7 @@ function EIP20(
 }
 ```
 
-To set those values, open 3_deploy_tokens.js in folder truffle/migrations/. This is a migration script that controls the deployment of smart constrcts. We will talk more about migrations in next step. The file content looks like this. 
+To set those values, open `3_deploy_tokens.js` in folder `truffle/migrations/`. This is a migration script that controls the deployment of smart contracts. We will talk more about migrations in next step. The contents of the file should look like this.
 
 ``` javascript
 const EIP20 = artifacts.require('./EIP20.sol');
@@ -83,11 +82,9 @@ module.exports = (deployer) => {
 
 ```
 
-Now let's change the name to something you like, e.g. Flower Token. And we are ready to deploy this contract to generate our own 10000 Flower Tokens!
+Now let's change the name to something you like, e.g. Flower Token. We are now ready ready to deploy this contract, which will generate our own 10000 Flower Tokens!
 ```javascript
 module.exports = (deployer) => {
   deployer.deploy(EIP20, 10000, 'Flower Token', 1, 'FLT');
 };
 ```
-
-
