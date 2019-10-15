@@ -13,6 +13,12 @@ sudo gem install -n /usr/local/bin/ jekyll
 ```shell
 sudo gem install bundler jekyll
 ```
+
+#### Ubuntu
+```shell
+sudo gem install
+```
+
 ## Host in local
 
 Run the cmd below in the root
