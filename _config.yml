@@ -6,18 +6,13 @@ rss: rss
 
 breadcrumbs:
   root:
-    hide: false
+    hide: true
     image: false
 
 permalink: pretty
 
 repository: rootstock/rootstock.github.io
 domain: rootstock.github.io
-
-breadcrumbs:
-  root:
-    hide: true
-    image: false
 
 highlighter: rouge
 
