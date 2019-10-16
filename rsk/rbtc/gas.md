@@ -29,7 +29,11 @@ Gas price is the price you set for operations. The gas limit is the maximum pric
 
 Gas is the _fee_  collected by the miner which mines the block that includes the transaction. 
 
-Therefore, the resulting fee is: **fee = totalGas * gasPrice**
+Therefore, the resulting fee is:
+
+```
+fee = totalGas * gasPrice
+```
 
 ## How do I choose an appropriate gas price and limit?
 If you want to spend less on a transaction, you can do so by lowering the amount you pay per unit of gas (gas price). Similar to Bitcoin, the price you pay for each unit increases or decreases how **quickly your transaction will be mined.**

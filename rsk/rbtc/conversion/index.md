@@ -9,6 +9,15 @@ title: Conversion
 
 In this article we will explain step by step on how to convert from BTC to RBTC and vice versa. The process of conversion is called a **2-way peg** mechanism, which locks BTC token on BTC network in BTC-to-RBTC conversion and release the BTC token during RBTC-to-BTC conversion.
 
+<div class="fade alert alert-warning show">IMPORTANT: WHITELIST PROCESS. To use the 2-way-peg you must first <a href="/rsk/rbtc/conversion/whitelist">get whitelisted</a>.</div>
+
+## Step by step instructions
+You can try the peg process using your hardware wallet (if you have) or not:
+- [Having a Trezor](/rsk/rbtc/conversion/with-trezor)
+- [Having a Ledger](/rsk/rbtc/conversion/with-ledger)
+- [Not having any HW](/rsk/rbtc/conversion/with-node-and-console)
+
+
 ### Testnet Guide
 
 In this section we will go over the steps of converting BTC to RBTC and vice versa in BTC and RBTC testnet.
@@ -147,3 +156,4 @@ There is a grace period for Federation address change. You will still be able to
 
 ### Feedback
 For any questions and suggestions you can post to RSK [Gitter channels](https://gitter.im/rsksmart/getting-started).
+
