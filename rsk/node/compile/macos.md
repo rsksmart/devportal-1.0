@@ -51,7 +51,7 @@ git checkout tags/WASABI-1.0.2 -b WASABI-1.0.2
 *Note:* it is better to download the code into a short path.
 
 ## Ensure the security chain
-Ensure the security chain of the downloaded source code as explained [here](https://github.com/rsksmart/rskj/wiki/Ensure-security-chain-of-RskJ-source-code).
+[Ensure the security chain](/rsk/node/compile/verify) of the downloaded source code.
 
 ## Get external dependencies
 Before you can launch IntelliJ IDEA, there is an important step.
