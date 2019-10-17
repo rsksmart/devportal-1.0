@@ -7,47 +7,76 @@ title: Quick Start - Step 5
 Once the smart contract has been deployed successfully. We can use Truffle console to execute its methods.
 
 #### Enter Truffle Console Mode
+
 Truffle console is a basic interactive console connecting to our local node. Type the following command into a terminal.
+
 ```shell
 truffle console --network regtest
 ```
+
 Note that the `--network regtest` parameter tells Truffle to connect to our local RegNet node.
 
-
+=
 #### Check Balance of Our EIP20 Token
-Now type the following command into truffle console.
+
+First, let us get the address of the account which was used to deploy the the contract.
+
+```javascript
+accounts = await web3.eth.getAccounts()
+accounts[0]
 ```
-EIP20.deployed().then((instance => instance.balanceOf("0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826")))
+
+This should print out an address, similar to `0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826`.
+Check that this value matches the first address that you see in Ganache's accounts tab.
+
+Now we can check its balance:
+
+```javascript
+EIP20instance = await EIP20.deployed()
+await EIP20instance.balanceOf(accounts[0])
 ```
-EIP20 is the name of our contract. This command will print out the balance of account address `0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826` as a **big number**. To see it as an integer, change the command to 
+
+EIP20 is the name of our contract. This command will print out the balance of the main account as a **big number**, which should appear as `<BN: 2710>`. To see it as an integer:
+
+```javascript
+(await EIP20instance.balanceOf(accounts[0])).toNumber()
 ```
-EIP20.deployed().then((instance => instance.balanceOf("0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826").then(b => b.toNumber())))
-``` 
+
+This should appear as `10000`, the number of the tokens was specified in the parameter to the constructor of the smart contract, in the truffle migration.
 
 #### Transfer Token Directly Between Two Accounts
-Now use the following command to transfer 1 token from the minter account to another account
-```shell
-EIP20.deployed().then((instance => instance.transfer("0x7986b3DF570230288501EEa3D890bd66948C9B79", 1)))
-```
-After its success execution, check the minter account's balance again to see that it has changed.
-```
-EIP20.deployed().then(( instance =>instance.balanceOf("0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826").then(b => b.toNumber())))
-``` 
 
-#### Spend Token with Allowance
-1. Approve another account for certain allowance to spend
+In Ganache, copy the address of the second account in the accounts tab, and then save it as a variable:
+
+```javascript
+account2 = '0x2e898C937f22f84a2603fb0BfDeEF43CdAC87f93'
+(await EIP20instance.balanceOf(accounts[0])).toNumber()
+(await EIP20instance.balanceOf(account2)).toNumber()
 ```
-EIP20.deployed().then((instance => instance.approve("0x7986b3DF570230288501EEa3D890bd66948C9B79", 10)))
+
+This should print out `10000` and `0` respectively - all the tokens belong to the first account, and the second account has none.
+
+Next, use the following command to transfer some tokens from the first account to the second account.
+
+```javascript
+await EIP20instance.transfer(account2, 10)
 ```
-2. Check the allowance is indeed existing 
+
+This should print out an object containing transaction data.
+
+Finally, let us check the account balances to ensure that everything went smoothly:
+
+```javascript
+(await EIP20instance.balanceOf(accounts[0])).toNumber()
+(await EIP20instance.balanceOf(account2)).toNumber()
 ```
-EIP20.deployed().then((instance => instance.allowance("0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826","0x7986b3DF570230288501EEa3D890bd66948C9B79")))
-```
-3. Open another truffle console with the other account
-```
-truffle console --network regtest
-```
-4. Execute this token transfer from the new console. It successes because it has gained allowance from the minter.
-```
-EIP20.deployed().then((instance => instance.transferFrom("0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826", "0x7986b3DF570230288501EEa3D890bd66948C9B79",3)))
-```
+
+This should print out `9990` and `10` respectively. The first account has fewer tokens as they have been transferred to the second account.
+
+#### Congratulations
+
+You have reached the end of the quick start tutorials. You are now ready to develop decentralised applications!
+
+----
+
+[Previous](../step4-compile-and-deploy)
