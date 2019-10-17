@@ -88,3 +88,9 @@ module.exports = (deployer) => {
   deployer.deploy(EIP20, 10000, 'Flower Token', 1, 'FLT');
 };
 ```
+
+----
+
+[Previous](../step2-install-truffle-and-ganache)
+|
+[Next](../step4-compile-and-deploy)

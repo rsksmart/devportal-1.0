@@ -46,4 +46,11 @@ npm start
 ```
 
 #### More on Truffle and Ganache
-To learn more about Truffle's commands, visit their official website [here](https://www.trufflesuite.com/docs/truffle/overview)
+
+To learn more about Truffle's commands, visit their [official website](https://www.trufflesuite.com/docs/truffle/overview).
+
+----
+
+[Previous](../step1-install-rsk-local-node)
+|
+[Next](../step3-edit-smart-contract)

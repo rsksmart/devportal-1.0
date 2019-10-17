@@ -51,3 +51,11 @@ truffle console --network regtest
 ```
 EIP20.deployed().then((instance => instance.transferFrom("0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826", "0x7986b3DF570230288501EEa3D890bd66948C9B79",3)))
 ```
+
+#### Congratulations
+
+You have reached the end of the quick start tutorials. You are now ready to develop decentralised applications!
+
+----
+
+[Previous](../step4-compile-and-deploy)
