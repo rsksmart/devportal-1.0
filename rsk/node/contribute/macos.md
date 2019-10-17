@@ -51,7 +51,7 @@ git checkout tags/WASABI-1.0.2 -b WASABI-1.0.2
 *Note:* it is better to download the code into a short path.
 
 ## Ensure the security chain
-[Ensure the security chain](/rsk/node/compile/verify) of the downloaded source code.
+[Ensure the security chain](/rsk/node/contribute/verify) of the downloaded source code.
 
 ## Get external dependencies
 Before you can launch IntelliJ IDEA, there is an important step.
@@ -67,18 +67,18 @@ When IntelliJ IDEA is launched you should have a window with different choices.
 - Within the dialog select *Use default gradle wrapper* and then click *Finish*.
 *Keep IntelliJ IDEA opened*.
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/IdeaRskJWelcome.png)
+![img](/assets/img/rsk/howToInstallAndRun/IdeaRskJWelcome.png)
 
 ### IDEA Build/Run configuration
 
 We need to create a new configuration profile to run the node from IDEA.
 That can be done by clicking on *Run* -> *Edit Configurations* or as shown in the following picture:
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/EditConfigs.png)
+![img](/assets/img/rsk/howToInstallAndRun/EditConfigs.png)
 
 Then set the options as shown below:
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/AddNewConfig.png)
+![img](/assets/img/rsk/howToInstallAndRun/AddNewConfig.png)
 
 - Main Class: `co.rsk.Start`
 - Working directory: `/path-to-code/rskJ`
@@ -89,11 +89,11 @@ Then set the options as shown below:
 
 We are ready to run the node using IDEA, just press the *Start* (green arrow) button at the right of the configuration we've just created.
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/Run.png)
+![img](/assets/img/rsk/howToInstallAndRun/Run.png)
 
 If everything is OK you should see the debug information like that:
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/Running.png)
+![img](/assets/img/rsk/howToInstallAndRun/Running.png)
 
 And yes! Congratulations! Now you're running a local RSK node :)
 
@@ -106,4 +106,4 @@ If you want to switch the network, add:
 Inside the field `Program arguments` in your run configuration.
 
 ## Any problems?
-We hope our [troubleshooting section](/rsk/troubleshooting) can help you!
+We hope our [troubleshooting section](/rsk/node/troubleshooting) can help you!

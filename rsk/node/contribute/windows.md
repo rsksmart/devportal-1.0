@@ -12,7 +12,7 @@ To do that follow the next steps:
 - Browse in the RskJ downloaded code the file `rskj\build.gradle` and select it.
 - Within the dialog select *Use default gradle wrapper* and then press *Finish*.
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/IdeaRskJWelcome.png)
+![img](/assets/img/rsk/howToInstallAndRun/IdeaRskJWelcome.png)
 
 
 ### IDEA Build/Run configuration
@@ -20,11 +20,11 @@ To do that follow the next steps:
 We need to create a new configuration profile to run the node from IDEA.
 That can be done by clicking on *Run* -> *Edit Configurations* or as shown in the following picture:
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/EditConfigs.png)
+![img](/assets/img/rsk/howToInstallAndRun/EditConfigs.png)
 
 Then set the options as shown below:
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/AddNewConfig.png)
+![img](/assets/img/rsk/howToInstallAndRun/AddNewConfig.png)
 
 - Main Class: `co.rsk.Start`
 - Working directory: `/path/to/code/rskJ`
@@ -39,11 +39,11 @@ Then set the options as shown below:
 
 We are ready to run the node using IDEA, just press the *Start* button at the right of the configuration we've just created.
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/Run.png)
+![img](/assets/img/rsk/howToInstallAndRun/Run.png)
 
 If everything is OK you should see the debug information like that:
 
-![img](https://github.com/rsksmart/rskj/wiki/img/howToInstallAndRun/Running.png)
+![img](/assets/img/rsk/howToInstallAndRun/Running.png)
 
 And yes! Congratulations! Now you're running a local RSK node :)
 
@@ -56,4 +56,4 @@ If you want to switch the network, add:
 Inside the field `Program Arguments` in your run configuration.
 
 ## Any problems?
-We hope our [troubleshooting section](/rsk/troubleshooting) can help you!
+We hope our [troubleshooting section](/rsk/node/troubleshooting) can help you!
