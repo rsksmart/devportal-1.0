@@ -3,7 +3,7 @@ layout: rsk
 title: Hardware requirements
 ---
 
-These are the minimum requirements that should be taken into account to run an RSK node:
+These are the minimum requirements that must be met to run an RSK node:
 
 - 2 cores
 - 8 GB RAM
