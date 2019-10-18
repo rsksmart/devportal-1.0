@@ -21,11 +21,11 @@ $ sudo apt-get install rskj
 
 During the installation, you will be asked to accept the terms and confirm the network.   
 
-<img alt="" class="setup-node-ubuntu" src="https://files.readme.io/302140d-Screen_Shot_2019-06-04_at_1.11.27_PM.png">
+<img alt="" class="setup-node-ubuntu" src="/assets/img/ubuntu/ubuntu1.png">
 
 Choose Yes and Enter to accept the license to continue
 
-<img alt="choose mainnet" class="setup-node-ubuntu" src="https://files.readme.io/53d7723-Screen_Shot_2019-06-04_at_1.11.54_PM.png">
+<img alt="choose mainnet" class="setup-node-ubuntu" src="/assets/img/ubuntu/ubuntu2.png">
 
 Choose `mainnet` and press `Enter` to continue
 
@@ -63,7 +63,7 @@ The installer will configure your node in the following paths:
 * `/var/lib/rsk/database`: the directory where the database will be stored.
 * `/var/log/rsk`: the directory where the logs will be stored.
 
-<img alt="path" class="setup-node-ubuntu" src="https://files.readme.io/01c77ce-Screen_Shot_2019-06-04_at_1.14.31_PM.png">
+<img alt="path" class="setup-node-ubuntu" src="/assets/img/ubuntu/ubuntu3.png">
 
 ### Start/Stop the Node
 
@@ -93,7 +93,7 @@ sudo service rsk restart
 sudo service rsk status
 ```
 
-<img alt="scripts" class="setup-node-ubuntu" src="https://files.readme.io/67dd7bd-Screen_Shot_2019-06-04_at_1.13.05_PM.png">
+<img alt="scripts" class="setup-node-ubuntu" src="/assets/img/ubuntu/ubuntu4.png">
 
 ## Video
 

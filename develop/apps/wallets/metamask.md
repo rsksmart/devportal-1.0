@@ -16,7 +16,7 @@ Step 1: Open MetaMask chrome extension.
 Step 2: In the network options, choose Custom RPC.
 Step 3: Type the node URL in New RPC URL and Save
 
-<div style="text-align:center"><img style="margin:0 auto; width:30%;" src="https://files.readme.io/3f36557-Screen_Shot_2019-06-24_at_1.55.50_PM.png"></div>
+<div style="text-align:center"><img style="margin:0 auto; width:30%;" src="/assets/img/metamask/metamask.png"></div>
 
 Now MetaMask is ready to use with RSK!
 
