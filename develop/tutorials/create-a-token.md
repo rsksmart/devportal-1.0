@@ -29,7 +29,7 @@ mkdir token
 npm init
 ```
 
-<div style="text-align:center"><img src="https://files.readme.io/0948147-tokens-1.png"></div> 
+<div style="text-align:center"><img src="/assets/img/create-token/create-token1.png"></div> 
 2. Install openzeppelin-solidity
 
 
@@ -81,7 +81,7 @@ Then you can see the file structure like this:
 └── truffle-config.js
 
 In my editor,it shows like this:
-<div style="text-align:center"><img src="https://files.readme.io/907e71c-token-2.png"></div>
+<div style="text-align:center"><img src="/assets/img/create-token/create-token2.png"></div>
 
 
 
@@ -100,7 +100,7 @@ In my editor,it shows like this:
     * 5.1.3 The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:
 
 
-    <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/3670eb8-truffle-12.png"></div>
+    <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token3.png"></div>
 
  * 5.2 Create an account:
 
@@ -147,7 +147,7 @@ In my editor,it shows like this:
   
   * 5.3 To get funds to use in this network.
     > We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
-    <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/7d28c33-get-balance-faucet.png"></div> 
+    <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token4.png"></div> 
 
 
     Steps of usage:
@@ -155,10 +155,10 @@ In my editor,it shows like this:
     * 5.3.1 Enter the address we got earlier. 
     * 5.3.2 Enter the Enter check code. 
     * 5.3.3 Submit form.
-    <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/34161e4-get-balance-faucet2.png"></div> 
+    <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token5.png"></div> 
 
     * 5.3.4 Finally it will show us a successful page.
-    <div style="text-align:center"><img src="https://files.readme.io/27e29ce-get-balance-from-faucet.png"></div> 
+    <div style="text-align:center"><img src="/assets/img/create-token/create-token6.png"></div> 
 
     * 5.3.5 Now, let's check our balance in the console.
       Run this command in our truffle console:
@@ -316,7 +316,7 @@ In my editor,it shows like this:
 **8. Creating the Migration**
   
   * 8.1 Create a file named 2_deploy_token.js in **~/token/migrations**
-  <div style="text-align:center"><img src="https://files.readme.io/b505597-token3.png"></div> 
+  <div style="text-align:center"><img src="/assets/img/create-token/create-token7.png"></div> 
 
   * 8.2 The code should look like:
     ```js
@@ -380,8 +380,8 @@ In my editor,it shows like this:
 
 * 9.4 To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
 
-  <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/21f88b0-check-on-explorer-1.png"></div> 
-  <div style="text-align:center"><img style="margin:0 auto" src="https://files.readme.io/57c65c4-token-4.png"></div>
+  <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token8.png"></div> 
+  <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token9.png"></div>
 
 
 

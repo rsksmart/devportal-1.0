@@ -9,12 +9,12 @@ Following the instructions below you will install and run the RSK node in Azure.
 
 #### Install The Node Using Azure
 1. ***On Azure, create a resource.***
-![create resource](https://files.readme.io/b00bff9-azure-create-resource.png)
+![create resource](/assets/img/azure/azure1.png)
 1. ***Search for RSK, choose the node's version and click Create.***
-![Search for RSK](https://files.readme.io/e562a79-azure-search-rsk.png)
+![Search for RSK](/assets/img/azure/azure2.png)
 1. ***You will see 4 steps after deploying the node:***
     1. Basics: complete this step with your information. Choose a name for the node, user name, password, subscription and resource group.
-    ![step-1](https://files.readme.io/e562a79-azure-search-rsk.png)
+    ![step-1](/assets/img/azure/azure3.png)
     1. Size: select your VM options. Check recommended minimum requirements.
     1. Settings: configure optional features.
     1. Summary: review the summary of what you have set and press Create.
@@ -40,14 +40,14 @@ Wait for Azure to finish the deployment.
 #### Enable RPC calls
 1. Enable 4444 port. That is the default RSK port for RPC calls.
 Navigate to the virtual machine where you are runing RSK. Go to networking configuration.
-  ![azure-networking](https://files.readme.io/21862c4-azure-networking.png)
+  ![azure-networking](/assets/img/azure/azure4.png)
 Add an inbound port rule with the following options:
-![azure-security-rule](https://files.readme.io/2b7a894-azure-security-rule.png)
+![azure-security-rule](/assets/img/azure/azure5.png)
 
 >:exclamation: Important: this is a basic configuration that enables any call. Any other options can be added. At least you must maintain the destination to 4444.
 >
 You should get something like this:
-![azure-port-4444](https://files.readme.io/07b69a9-azure-port-4444.png)
+![azure-port-4444](/assets/img/azure/azure6.png)
 
 2. [Connect your computer to the node using bash](#connect) .
 
@@ -94,10 +94,10 @@ ssh user@server
 ```
 
 To get user and server navigate to RSK virtual machine and go to the Overview window. Open Connect option in the top left corner.
-![azure-connect](https://files.readme.io/0df82e8-azure-connect.png)
+![azure-connect](/assets/img/azure/azure7.png)
 
 Copy and paste the text in Ḷogin using VM local account in the console 
-![azure-logssh](https://files.readme.io/3d09a04-azure-logssh.png)
+![azure-logssh](/assets/img/azure/azure8.png)
 
 ## Video
 
