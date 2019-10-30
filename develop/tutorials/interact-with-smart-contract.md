@@ -47,7 +47,7 @@ truffle(rsk)> cfToken.setON('Andres Bachfischer', {from: acc1})
 0x5f115190b60238240bedf36d1c5bb69a443a0f8ee971b0fc40fe5ca9c727d47c
 ```
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/4079e31-token5.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract1.png"></div>
 
 
 With the transaction’s hash we see that the returned value was false and the function was not executed properly. Calling the **getON** function again, we see that the variable didn’t change its value.
@@ -60,7 +60,7 @@ truffle(rsk)> cfToken.setON('Andres Bachfischer', {from: acc0})
 ```
 
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/0639492-token6.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract2.png"></div>
 
 
 
@@ -70,7 +70,7 @@ Calling again the function getON, we see that the ownership library worked as we
   truffle(rsk)> cfToken.getON()
 ```
 
-<div style="text-align:center"><img width="50%" src="https://files.readme.io/220ac09-token7.png"></div>
+<div style="text-align:center"><img width="50%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract3.png"></div>
 
 **Ownable.sol** also has a function that allows us to change the owner of the contract to another address. We’ll not use it. Nevertheless, its usage is the following
 
@@ -103,14 +103,14 @@ truffle(rsk)> cfToken.transfer(acc1, web3.toWei(88.8), {from: acc0})
 0xd45437b777f1430e7cec57bd80b261ce8f87bf8a3f9a113fecd20563403c4d9c
 ```
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/a94633a-token8.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract4.png"></div>
 
 ```js
 truffle(rsk)> web3.fromWei(cfToken.balanceOf(acc0).toString(10)) // = '733.6'
 truffle(rsk)> web3.fromWei(cfToken.balanceOf(acc1).toString(10)) // = '266.4'
 ```
 
-<div style="text-align:center"><img width="50%" src="https://files.readme.io/7390a1b-token9.png"></div>
+<div style="text-align:center"><img width="50%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract5.png"></div>
 
 We see that tokens taken from our deployment account were the same amount as the ones received in the **acc1** .
 
@@ -122,7 +122,7 @@ truffle(rsk)> cfToken.transferFrom(acc1, acc0, web3.toWei(5), {from: acc0})
 ```
 
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/88d30a7-token10.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract6.png"></div>
 
 After checking that **acc0** is not allowed to send from **acc1**
 ```
@@ -134,7 +134,7 @@ truffle(rsk)> cfToken.approve(acc0, web3.toWei(10), {from: acc1})
 0x6e1a202f4ca7f43dfb28034952d54a572993b986a55857790aa51854afbc1fb4
 ```
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/91f23ca-token11.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract7.png"></div>
 
 
 In the output log, we see that the function was completed successfully with true and the log shows the amount allowed to **acc0** for spending. Checking with allowance
@@ -142,7 +142,7 @@ In the output log, we see that the function was completed successfully with true
 truffle(rsk)> web3.fromWei(cfToken.allowance(acc1, acc0, {from: acc0}).toString(10)) // = '10'
 ```
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/f6c7e7a-token12.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract8.png"></div>
 
 Now if we execute again the spending transaction
 ```js
@@ -151,7 +151,7 @@ truffle(rsk)> cfToken.transferFrom(acc1, acc0, web3.toWei(5), {from: acc0})
 ```
 we get a successful transaction with status ‘0x01’.
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/d7274e1-token13.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract9.png"></div>
 
 Checking the balances again
 ```js
@@ -160,7 +160,7 @@ truffle(rsk)> web3.fromWei(cfToken.balanceOf(acc1).toString(10)) // = '261.4'
 ```
 
 
-<div style="text-align:center"><img width="50%" src="https://files.readme.io/73b88cb-token14.png"></div>
+<div style="text-align:center"><img width="50%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract10.png"></div>
 
 Lastly, if we sign a transaction calling a function that’s not available, our fallback function will be called. Signing a transaction like
 ```js
@@ -168,7 +168,7 @@ truffle(rsk)> web3.eth.sendTransaction({from: acc0, to: cfToken.address})
 0x4106a287fc60669bf9682a73ec4c457b094c086ec7408a5dea95d200688c4ee9
 ```
 
-<div style="text-align:center"><img width="80%" src="https://files.readme.io/4cb5d07-token15.png"></div>
+<div style="text-align:center"><img width="80%" src="/assets/img/interact-with-smart-contract/interact-with-smart-contract11.png"></div>
 
 Will return us a log whose data represents the string “Error 404: Function not found” in hex
 

@@ -6,18 +6,20 @@ title: Quick Start - Step 3
 
 In this tutorial, we have two sample smart contracts available to experiment with.
 
-- Coin.sol a minimal token contract
-- EIP20.sol an implementation of [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md) tokens provided by [ConsenSys](https://github.com/ConsenSys/Tokens)
+- `Coin.sol`: A minimal token contract
+- `EIP20.sol`: An implementation of [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md) tokens provided by [ConsenSys](https://github.com/ConsenSys/Tokens)
 
 #### Locate the Smart Contract files for an EIP20 Coin
-- Navigate to `truffle/contracts/eip20`
+
+Navigate to `truffle/contracts/eip20`, and observe that there are two Solidity files in this directory: `EIP20Interface.sol` and `EIP20.sol`
+
 ```shell
 cd truffle/contracts/eip20
 ls
 ```
-There are two `.sol` files in this directory: `EIP20Interface.sol` and `EIP20.sol`
 
 #### Understand the Smart Contract Files
+
 `EIP20Interface.sol` defines the required functions for the ERC20 base standard.
 
 ``` javascript
@@ -25,6 +27,7 @@ There are two `.sol` files in this directory: `EIP20Interface.sol` and `EIP20.so
 /// @return The balance
 function balanceOf(address _owner) public view returns (uint256 balance);
 ```
+
 ``` javascript
 /// @notice send `_value` token to `_to` from `msg.sender`
 /// @param _to The address of the recipient
@@ -33,14 +36,15 @@ function balanceOf(address _owner) public view returns (uint256 balance);
 function transfer(address _to, uint256 _value) public returns (bool success);
 ```
 
-`EIP20.sol` provides the implementation for the functions declared in `EIP20Interface.sol`.
+`EIP20.sol` provides implementations of the functions declared in `EIP20Interface.sol`.
+Here are the implementation of the two functions that we looked at in the interface.
 
 ``` javascript
 function balanceOf(address _owner) public view returns (uint256 balance) {
     return balances[_owner];
 }
-
 ```
+
 ``` javascript
 function transfer(address _to, uint256 _value) public       returns (bool success) {
     require(balances[msg.sender] >= _value);
@@ -52,7 +56,10 @@ function transfer(address _to, uint256 _value) public       returns (bool succes
 ```
 
 #### Edit the EIP20 Token Name
-At the top of the `EIP20.sol` token contract, the constructor function defined inputs for: initial amount, token name, decimal unit, and token symbol. You can customize these parameters to create your own token.
+
+At the top of the `EIP20.sol` token contract, the constructor function defined inputs for:
+Initial amount, token name, decimal unit, and token symbol.
+You can customize these parameters to create your own token.
 
 ```javascript
 function EIP20(
@@ -83,8 +90,15 @@ module.exports = (deployer) => {
 ```
 
 Now let's change the name to something you like, e.g. Flower Token. We are now ready ready to deploy this contract, which will generate our own 10000 Flower Tokens!
+
 ```javascript
 module.exports = (deployer) => {
   deployer.deploy(EIP20, 10000, 'Flower Token', 1, 'FLT');
 };
 ```
+
+----
+
+[Previous](../step2-install-truffle-and-ganache)
+|
+[Next](../step4-compile-and-deploy)
