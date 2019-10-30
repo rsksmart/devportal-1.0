@@ -15,7 +15,10 @@ RIF Payments is a set of protocols whose primary goal is to enable fast and chea
 2. RIF Payments Light: it is a protocol to allow light clients to access RIF Payments Full without jeopardizing security and decentralization.
 3. RIF Payments Exchange: this protocol will be used to discover intra-token exchange rates, optimizing the routing of payments to a great extent, selecting the nodes to route payments based on their scoring, exchange rate, and fees among other criteria.
 
-#### [Video Tutorial](https://cdn.rifos.org/tutorial-lumino-network-en.mp4)
+<div class="video-container">
+  <video style="width: 100%" controls src="https://cdn.rifos.org/tutorial-lumino-network-en.mp4"></video>
+</div>
+
 
 #### RIF Lumino Explorer
 
