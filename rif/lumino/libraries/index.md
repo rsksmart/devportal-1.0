@@ -16,7 +16,7 @@ The developer community is working to help other developers enabling libraries a
     <tr>
       <td scope="row">Javascript</td>
       <td>
-        <a href="/rif/lumino/libraries/nodejs/">Lumino JS SDK</a>
+        <a href="/rif/lumino/libraries/lumino-js/">Lumino JS SDK</a>
       </td>
     </tr>
   </tbody>
