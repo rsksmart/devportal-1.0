@@ -13,7 +13,9 @@ title: Lumino Explorer WEB
 1. Get the [RELEASE.NUMBER] code from [GITHUB.URL]
 2. Go to the path you downloaded or cloned Lumino's code (lets call this path `$RIF_LUMINO_EXPLORER_WEB_PATH`)
 
-```yarn install```
+```bash
+yarn install
+```
 
 ## Start your RIF Lumino Explorer WEB
 
@@ -24,13 +26,26 @@ title: Lumino Explorer WEB
 RIF_LUMINO_EXPLORER_WEB_PATH=$YOUR_LUIMNO_API_HOST_AND_PORT yarn start
 ```
 
-| FIELD                                   | DESCRIPTION                                                                |
-|-----------------------------------------|----------------------------------------------------------------------------|
-| `$YOUR_LUIMNO_API_HOST_AND_PORT`                          | If this parameter is not present, the value that the application will take to invoke services to the api explorer will be http://localhost:8080                                                  |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">FIELD</th>
+      <th scope="col">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">$YOUR_LUIMNO_API_HOST_AND_PORT</td>
+      <td>
+        If this parameter is not present, the value that the application will take to invoke services to the api explorer will be http://localhost:8080
+      </td>
+    </tr>
+  </tbody>
+</table>
 
-3. After you run yarn command, you will be presented with the following message:
+After you run yarn command, you will be presented with the following message:
 
-```
+```bash
 yarn run $YOUR_YARN_VERSION
 $ react-scripts start
 Starting the development server...
@@ -58,7 +73,7 @@ Download: [https://yarnpkg.com/en/docs/install#debian-stable](https://yarnpkg.co
 You will first need to configure the repository:
 
 ``` curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add - ```
-```
+```bash
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 ```
 
@@ -68,13 +83,13 @@ Update your local APT repository:
 
 Install Yarn:
 
-``````
+``````bash
 sudo apt-get install --no-install-recommends yarn
 ``````
 
 Test that Yarn is installed by running:
 
-```
+```bash
 yarn --version
 ```
 

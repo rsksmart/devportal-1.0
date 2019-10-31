@@ -17,20 +17,20 @@ title: Get your own RIF Lumino node up and running on Ubuntu
 
 Update your packages and install pre-requisites:
 
-```
+```bash
 sudo apt update
 sudo apt install software-properties-common
 ```
 
 Add deadsnakes PPA to your sources list:
 
-```
+```bash
 sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 
 Once the repository is enabled install Python 3.7:
 
-```
+```bash
 sudo apt install python3.7
 ```
 
@@ -39,13 +39,13 @@ sudo apt install python3.7
 
 If you didn't update your local APT repository:
 
-```
+```bash
 sudo apt update
 ```
 
 To install python 3.7-dev run the following command:
 
-```
+```bash
 sudo apt-get install libpq-dev python3.7-dev
 ```
 
@@ -54,13 +54,13 @@ sudo apt-get install libpq-dev python3.7-dev
 
 If you didn't update your local APT repository:
 
-```
+```bash
 sudo apt update
 ```
 
 Install pip3:
 
-```
+```bash
 sudo apt-get install python3-pip
 ```
 
@@ -68,17 +68,15 @@ sudo apt-get install python3-pip
 
 If you didn't update your local APT repository:
 
-```
+```bash
 sudo apt update
 ```
 
 Install virtualenv:
 
-```
+```bash
 sudo apt-get install virtualenv
 ```
-
-
 
 ## Build RIF Lumino from code
 
@@ -96,13 +94,13 @@ Replace `<PATH_TO_PYTHON3.7>` with the path where Python3.7 is installed in your
 
 4. Activate python virtual env, by executing the following command:
 
-```
+```bash
 source clientEnv/bin/activate
 ```
 
 5. Check if the Python version is correct inside the virtual environment by running:
 
-```
+```bash
 python --version
 ```
 
@@ -110,13 +108,13 @@ This command should output version 3.7.x
 
 6. Install RIF Lumino requirements. Inside the virtual environment run the following command (this could take a few minutes):
 
-```
+```bash
 pip install -c constraints.txt --upgrade -r requirements-dev.txt
 ```
 
 7. Run Lumino setup with the following command:
 
-```
+```bash
 python setup.py develop
 ```
 
@@ -126,7 +124,7 @@ python setup.py develop
 2. If you haven't execute it before, run: source ``clientEnv/bin/activate``
 3. Run the following command:
 
-```
+```bash
 lumino
 	 --rnsdomain=$RNS_DOMAIN_OF_YOUR_NODE_ADDRESS
 	 --keystore-path $KEYSTORE_PATH
@@ -143,19 +141,68 @@ lumino
 
 The following list describes each field:
 
-| FIELD                                  | DESCRIPTION                                                                                                                |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| keystore-path                          | The path to your keystore                                                                                                  |
-| network-id                          | The network id (MainNet is 30)                                                                                                 |
-| eth-rpc-endpoint                       | URL of your RSK node (http://URL:PORT)                                                                                     |
-| tokennetwork-registry-contract-address | Address for the token registry contract deployed (view contracts table for the contract address of testnet and mainnet)    |
-| secret-registry-contract-address       | Address for the secret registry contract deployed (view contracts table for the contract address of testnet and mainnet)   |
-| endpoint-registry-contract-address     | Address for the endpoint registry contract deployed (view contracts table for the contract address of testnet and mainnet) |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">FIELD</th>
+      <th scope="col">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        keystore-path
+      </td>
+      <td>
+		The path to your keystore
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+        network-id  
+      </td>
+      <td>
+		The network id (MainNet is 30)
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+		eth-rpc-endpoint
+      </td>
+      <td>
+		URL of your RSK node (http://URL:PORT) 
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+		tokennetwork-registry-contract-address
+      </td>
+      <td>
+        Address for the token registry contract deployed (view contracts table for the contract address of testnet and mainnet)      
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+		secret-registry-contract-address
+      </td>
+      <td>
+        Address for the secret registry contract deployed (view contracts table for the contract address of testnet and mainnet)       
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+        endpoint-registry-contract-address 
+      </td>
+      <td>
+        Address for the endpoint registry contract deployed (view contracts table for the contract address of testnet and mainnet)      
+      </td>
+    </tr>
+  </tbody>
+</table>
 
+After you run the “lumino” command you will be presented with the following confirmation message:
 
-4. After you run the “lumino” command you will be presented with the following confirmation message:
-
-```
+```bash
 Welcome to RIF Lumino Payments Protocol, Version 0.1
 
 This is an Alpha version of experimental open source software released under the MIT license.
@@ -191,7 +238,7 @@ press Y followed by Enter.
 
 ```
 
-5. After you accepted you will be asked to select the account you want to use. Select the account and enter your passphrase to continue.
+After you accepted you will be asked to select the account you want to use. Select the account and enter your passphrase to continue.
 
 
 ### Contract addresses on each environment

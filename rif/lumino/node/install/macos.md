@@ -15,7 +15,7 @@ title: Get your own RIF Lumino node up and running on MacOS
 
 ### Install command line tools
 
-```
+```bash
 xcode-select --install
 ```
 
@@ -23,13 +23,13 @@ xcode-select --install
 
 From a Terminal window run:
 
-```
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 ### Install OpenSSL
 
-```
+```bash
 brew install openssl
 export LC_ALL="en_US.UTF-8"\nexport LC_CTYPE="en_US.UTF-8"
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
@@ -38,13 +38,13 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 ### Install Python 3.7
 
 
-```
+```bash
 brew install python3
 ```
 
 ### Install PIP
 
-```
+```bash
 sudo easy_install pip
 ```
 
@@ -52,25 +52,25 @@ sudo easy_install pip
 
 
 
-```
+```bash
 pip3 install virtualenv
 ```
 
 ### Install libpq
 
-```
+```bash
 brew install libpq
 ```
 
 ### Install postgresql
 
-```
+```bash
 brew install postgresql
 ```
 
 ### Install psycopg2
 
-```
+```bash
 env LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib" pip install psycopg2
 ```
 
@@ -82,7 +82,7 @@ env LDFLAGS="-I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib" pip 
 2. Go to the path you uncompressed the code in the previous step (lets call this path `$RIF_LUMINO_PATH`)
 3. Create python virtual env for RIF Lumino (this needs to be performed only once) and execute the following command:
 
-```
+```bash
 virtualenv -p <PATH_TO_PYTHON3.7> clientEnv
 ```
 
@@ -91,13 +91,13 @@ Replace `<PATH_TO_PYTHON3.7>` with the path where Python3.7 is installed in your
 
 4. Activate python virtual env, by executing the following command:
 
-```
+```bash
 source clientEnv/bin/activate
 ```
 
 5. Check if the Python version is correct inside the virtual environment by running:
 
-```
+```bash
 python --version
 ```
 
@@ -105,13 +105,13 @@ This command should output version 3.7.x
 
 6. Install RIF Lumino requirements. Inside the virtual environment run the following command (this could take a few minutes):
 
-```
+```bash
 pip install -c constraints.txt --upgrade -r requirements-dev.txt
 ```
 
 7. Run Lumino setup with the following command:
 
-```
+```bash
 python setup.py develop
 ```
 
@@ -121,7 +121,7 @@ python setup.py develop
 2. If you haven't execute it before, run: source ``clientEnv/bin/activate``
 3. Run the following command:
 
-```
+```bash
 lumino
 	 --rnsdomain=$RNS_DOMAIN_OF_YOUR_NODE_ADDRESS
 	 --keystore-path $KEYSTORE_PATH
@@ -138,19 +138,68 @@ lumino
 
 The following list describes each field:
 
-| FIELD                                  | DESCRIPTION                                                                                                                |
-|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| keystore-path                          | The path to your keystore                                                                                                  |
-| network-id                          | The network id (MainNet is 30)                                                                                                 |
-| eth-rpc-endpoint                       | URL of your RSK node (http://URL:PORT)                                                                                     |
-| tokennetwork-registry-contract-address | Address for the token registry contract deployed (view contracts table for the contract address of testnet and mainnet)    |
-| secret-registry-contract-address       | Address for the secret registry contract deployed (view contracts table for the contract address of testnet and mainnet)   |
-| endpoint-registry-contract-address     | Address for the endpoint registry contract deployed (view contracts table for the contract address of testnet and mainnet) |
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">FIELD</th>
+      <th scope="col">DESCRIPTION</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">
+        keystore-path
+      </td>
+      <td>
+		The path to your keystore
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+        network-id  
+      </td>
+      <td>
+		The network id (MainNet is 30)
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+		eth-rpc-endpoint
+      </td>
+      <td>
+		URL of your RSK node (http://URL:PORT) 
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+		tokennetwork-registry-contract-address
+      </td>
+      <td>
+        Address for the token registry contract deployed (view contracts table for the contract address of testnet and mainnet)      
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+		secret-registry-contract-address
+      </td>
+      <td>
+        Address for the secret registry contract deployed (view contracts table for the contract address of testnet and mainnet)       
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+        endpoint-registry-contract-address 
+      </td>
+      <td>
+        Address for the endpoint registry contract deployed (view contracts table for the contract address of testnet and mainnet)      
+      </td>
+    </tr>
+  </tbody>
+</table>
 
+After you run the “lumino” command you will be presented with the following confirmation message:
 
-4. After you run the “lumino” command you will be presented with the following confirmation message:
-
-```
+```bash
 Welcome to RIF Lumino Payments Protocol, Version 0.1
 
 This is an Alpha version of experimental open source software released under the MIT license.
@@ -186,10 +235,9 @@ press Y followed by Enter.
 
 ```
 
-5. After you accepted you will be asked to select the account you want to use. Select the account and enter your passphrase to continue.
+After you accepted you will be asked to select the account you want to use. Select the account and enter your passphrase to continue.
 
 
 ### Contract addresses on each environment
-
 
 Go to [https://github.com/rsksmart/lumino](https://github.com/rsksmart/lumino) for the updated addresses of the contracts.

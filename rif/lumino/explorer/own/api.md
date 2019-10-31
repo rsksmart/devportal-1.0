@@ -25,7 +25,9 @@ title: Lumino Explorer API
 
 6. Install project dependencies with the follow command:
 
-``` mvn install```
+```bash
+mvn install
+```
 
 ## Set Up Mongo Database
 
@@ -67,7 +69,7 @@ Bye
 1. Go to `$RIF_LUMINO_EXPLORER_API_PATH`
 2. Run the following command:
 
-```
+```bash
  mvn spring-boot:run
 ```
 
@@ -83,20 +85,24 @@ The following sections are created using an Ubuntu 18.04.2 LTS
 
 Start by updating the package index:
 
-```$ sudo apt update ```
+```bash
+$ sudo apt update 
+```
 
 Next, install Maven by typing the following command:
 
-```$ sudo apt install maven```
+```bash
+$ sudo apt install maven
+```
 
 Verify the installation by running the `mvn -version` command:
 
-```
+```bash
 $ mvn -version
 ```
 The output should look something like this:
 
-```
+```bash
 output
 Apache Maven $MAVEN_VERSION
 Maven home: $YOUR_MAVEN_HOME
