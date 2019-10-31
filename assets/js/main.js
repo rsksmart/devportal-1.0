@@ -21,12 +21,13 @@ if ($('#siteBreadcrumb ol.breadcrumb')) {
 $("<span>/</span>").insertAfter(".breadcrumb li");
 
 // collapse all ul from inner nav
-$('#accordion ul').addClass('collapse');
+//$('#accordion ul').addClass('collapse');
 
 
 // add active class to li in inner nav based on url
 //uncollapse parents and child of active li
 $(function () {
+	return
 	var pageUrl = location.href;
 	$('a').each(function () {
 		$(this).parent().toggleClass('active', this.href === pageUrl);

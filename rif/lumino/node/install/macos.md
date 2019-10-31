@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: MacOs
+title: Get your own RIF Lumino node up and running on MacOS
 ---
-
-# Get your own RIF Lumino node up and running on MacOS
 
 ## Prerequisites
 

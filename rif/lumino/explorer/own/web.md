@@ -1,12 +1,9 @@
 ---
 layout: rsk
-title: Web
+title: Lumino Explorer WEB
 ---
 
-# RIF Lumino Explorer WEB
-
 ## Pre requisites
-
 
 1. Lumino Explorer Api Running
 2. Yarn (Latest Version)

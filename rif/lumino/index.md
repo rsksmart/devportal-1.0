@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: Lumino
+title: RIF Lumino Network
 ---
-
-## RIF Lumino Network
 
 The RIF Lumino Network is the first off-chain state channel network launched on RSK. It is also a cornerstone of a broader vision called RIF Payments which will allow users to seamlessly interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.
 

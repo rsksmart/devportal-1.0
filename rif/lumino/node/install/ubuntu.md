@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: Ubuntu
+title: Get your own RIF Lumino node up and running on Ubuntu
 ---
-
-# Get your own RIF Lumino node up and running on Ubuntu
 
 ## Prerequisites
 

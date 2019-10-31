@@ -3,8 +3,6 @@ layout: rsk
 title: Light Client
 ---
 
-## Overview
-
 In the current implementation of RIF Lumino users must run a full node in order to open off-chain payment channels and make payments. To get mass adoption, we need to allow users and developers to make payments from wallets and dapps, without the need to run a full node.
 
 To achieve that, the implementation of a Light Client is a must. A RIF Lumino Light Client is a piece of software that must be able to:
