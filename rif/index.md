@@ -11,7 +11,10 @@ RIF OS is an all in one, easy to use, blockchain infrastructure service framewor
 
 RIF OS Protocols enable broad interoperability and faster time-to-deployment, and aim to bridge the gap between blockchain technologies and their mass-market adoption. RIF OS Protocols complete the RSK Smart Contract Network vision of bringing the Internet of Value to life.
 
-#### [Video Introduction to RIF](https://cdn.rifos.org/home_video.mp4)
+<div class="video-container">
+  <video style="width: 100%" controls src="https://cdn.rifos.org/home_video.mp4"></video>
+</div>
+
 
 #### RIF Name Service
 

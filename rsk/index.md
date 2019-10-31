@@ -9,7 +9,7 @@ The [Smart Bitcoin (RBTC)](/rsk/rbtc) is the native token in RSK and it is used 
 
 To learn more about RSK architecture, please refer to the [Original](https://www.rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf) or [Updated](https://www.rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf) RSK whitepaper.
 
-<a href="/quick-start/" class="green-button">Start now!</a>
+<a href="/quick-start/" class="green-button">Start now</a>
 
 RSK has two networks, one is a development or testing network (also known as Testnet) and a production network (Mainnet), with blocks every 30 seconds.
 
