@@ -100,4 +100,4 @@ For the above example, `<container id>` is `regtest-node-01`.
 
 ----
 
-[Next](../step2-install-truffle-and-ganache)
+<a href="/quick-start/step2-install-truffle-and-ganache" class="green-button">Next</a>

@@ -45,7 +45,7 @@ We recommend to use Electrum BTC wallet for connecting to BTC testnet.
 There are a few options to get Bitcoin on Testnet. We use [https://testnet-faucet.mempool.co/](https://testnet-faucet.mempool.co/)
 
 **1.3 Whitelist Bitcoin address in RSK**
-You can contact us in RSK official [Gitter channels](https://gitter.im/rsksmart/getting-started) to whitelist your Bitcoin testnet address. The admin Alejandro Cavallero @alepc253 will add you to the whitelist.
+You can contact us in RSK official [Gitter channels](https://gitter.im/rsksmart/getting-started) to whitelist your Bitcoin testnet address.
 
 **1.4 Send Bitcoin to RSK Federation address**
 The Federation address is retrieved by making a Smart Contract call on RSK Testnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, selet RSK Testnet in *"More Networks"*, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like below screenshot.
@@ -104,16 +104,26 @@ Any Bitcoin wallet that supports legacy(P2PK) private key works for this step, a
 ![Create a Legacy(P2PK) wallet](/dist/images/legacy-private-key.png)
 
 **1.2 Whitelist Bitcoin address in RSK**
-You need to complete whitelisting in this [Google Forum](https://docs.google.com/forms/d/e/1FAIpQLSfoG_qF5wPY27tqcYnFbzNv4uwwDq6JeBe5no_zoYvKH62mBA/viewform). We will contact you once receiving the form.
+You need to complete [whitelisting](/rsk/rbtc/conversion/whitelist).
 
 **1.3 Send Bitcoin to RSK Federation address**
+
+<div class="fade alert alert-warning show">IMPORTANT: DO NOT EXECUTE THIS STEP BEFORE BEING <a href="/rsk/rbtc/conversion/whitelist">WHITELISTED</a>.</div>
+
+<div class="fade alert alert-warning show">Note: You need to send a minimum amount of 0.01 BTC and not more than 10 BTC for conversion.</div>
+
 The Federation address is retrieved by making a Smart Contract call on RSK Mainnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, selet RSK Network, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like below screenshot.
 
 ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
 
 Once got Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
 
-> Note: You need to send a minimum amount of 0.01 BTC for conversion.
+**1.4 Wait for BTC confirmations**
+
+To ensure the transaction, we need to wait 100 BTC confirmations, be patient :) 
+
+> 100 blocks * 10 minutes/block = 1000 minutes = 16.667 hours approx.
+
 
 **1.4 Get RBTC address with BTC private key**
 You can get a corresponding RBTC address with your BTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).

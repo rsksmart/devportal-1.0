@@ -101,4 +101,4 @@ module.exports = (deployer) => {
 
 [Previous](../step2-install-truffle-and-ganache)
 |
-[Next](../step4-compile-and-deploy)
+<a href="/quick-start/step4-compile-and-deploy" class="green-button">Next</a>
