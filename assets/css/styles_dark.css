@@ -310,6 +310,10 @@ h6 {
 	border: 1px #F26122 solid;
 }
 
+.table {
+	color: white;
+}
+
 @media (max-width: 991px) {
 	.navbar_bottom_shape {
 		top: -40px;
