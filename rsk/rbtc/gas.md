@@ -4,7 +4,7 @@ title: Gas
 ---
 
 Gas is the internal pricing for running a transaction or contract.
-When you send tokens, interact with a contract, send RBTC or do anything else on the blockchain, you must **pay for that computation**. That payment is calculated in **Gas** and gas in RSK is paid in RBTC.
+When you send tokens, interact with a contract, send RBTC or do anything else on the blockchain, you must **pay for that computation**. That payment is calculated in **Gas** and gas in RSK is paid in [RBTC](/rsk/rbtc).
 
 - [What is gas?](#what-is-gas)
 - [How do I choose an appropriate gas price and limit?](#how-do-i-choose-an-appropriate-gas-price-and-limit)
@@ -43,6 +43,10 @@ Gas price changes along time. To choose an appropriate gas price you should cons
 - What is _minimum gas price_ and how it changes
 - How to get that _minimum gas price_
 
+### MinimumGasPrice
+The minimumGasPrice is written in the block header by miners and establishes the minimum gas price a transaction should have in order to be included in that block.
+Negotiated minimum gas price is described in RSKIP-09.
+
 Minimum gas price is written in the block header by miners and describes the minimum gas price a transaction should have to be included in that block. It can change along time: at most 0.01% respect to the previous block.
 Last block minimum gas price can be obtained using this Web3 method:
 ```
@@ -69,7 +73,6 @@ Negotiated minimum gas price is described in [RSKIP-09](https://github.com/rsksm
 
 ## What happen if I run out of gas?
 If a transaction reaches the gas limit, all changes will be reverted but **the fee is still paid**.
-
 
 ## Gas in smart contracts
 When you compile smart contracts (commonly written in [Solidity](https://solidity.readthedocs.io/en/latest/)), they get converted to operation codes, known as 'opcodes'.
