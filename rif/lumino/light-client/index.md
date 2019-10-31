@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: Architecture
+title: Light Client
 ---
-
-# RIF Lumino Light Client
 
 ## Overview
 
