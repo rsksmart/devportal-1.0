@@ -71,4 +71,4 @@ To learn more about Truffle's commands, visit their [official website](https://w
 
 [Previous](../step1-install-rsk-local-node)
 |
-[Next](../step3-edit-smart-contract)
+<a href="/quick-start/step3-edit-smart-contract" class="green-button">Next</a>
