@@ -1,3 +1,4 @@
+blockquote {font-style: italic; font-weight: bold; border-left: 2px solid #F26122;padding-left: 10px;}
 code { color: #F26122; }
 .highlight { margin: 10px; padding: 10px; background-color: #f6f8fa; }
 .highlight .highlight { margin: 0px; }
