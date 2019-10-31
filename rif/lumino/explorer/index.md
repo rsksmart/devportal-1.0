@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: How To Use
+title: Lumino Explorer How To Use
 ---
-
-# RIF Lumino Explorer
 
 Repository: [https://github.com/rsksmart/lumino-explorer](https://github.com/rsksmart/lumino-explorer)
 

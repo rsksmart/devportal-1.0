@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: Contribute
+title: Creating an Issue
 ---
-
-**Creating an Issue**
 
 If you find an issue in Lumino and want to report it, or you want to request a feature. You can make an issue in the github repo, we suggest to create an issue with the folowwing structure:
 

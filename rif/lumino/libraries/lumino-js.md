@@ -1,10 +1,8 @@
 ---
 layout: rsk
-title: Node JS SDK
+title: Lumino JS SDK
 ---
 
-
-# Lumino JavaScript SDK
 
 This SDK aims to help the development of integrations with Lumino that use JavaScript, providing an easy interface to communicate with Lumino's REST API and request the information required.
 For that purpose, many ES2015 features were used, as well as Promises notation to help dealing with asynchronous code.

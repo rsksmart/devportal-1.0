@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: API
+title: Lumino Explorer API
 ---
-
-# RIF Lumino Explorer API
 
 ## Pre requisites
 
