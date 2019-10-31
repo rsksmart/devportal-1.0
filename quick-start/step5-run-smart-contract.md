@@ -16,7 +16,6 @@ truffle console --network regtest
 
 Note that the `--network regtest` parameter tells Truffle to connect to our local RegNet node.
 
-=
 #### Check Balance of Our EIP20 Token
 
 First, let us get the address of the account which was used to deploy the the contract.

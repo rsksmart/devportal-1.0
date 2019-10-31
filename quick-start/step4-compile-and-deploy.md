@@ -45,7 +45,7 @@ Artifacts of the compilation will be placed in the `truffle/build/contracts` dir
 
 Migrations are JavaScript files that help you deploy contracts to the blockchain network. In this tutorial project, we have already created migration scripts in the migrations folder.
 
-We have previusly edited the migration script for the EIP20 token contract (`3_deploy_tokens.js`), which should now look like this:
+We have previously edited the migration script for the EIP20 token contract (`3_deploy_tokens.js`), which should now look like this:
 
 ```javascript
 const EIP20 = artifacts.require('./EIP20.sol');
