@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: Lumino
+title: RIF Lumino Network
 ---
-
-## RIF Lumino Network
 
 The RIF Lumino Network is the first off-chain state channel network launched on RSK. It is also a cornerstone of a broader vision called RIF Payments which will allow users to seamlessly interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.
 
@@ -15,14 +13,17 @@ RIF Payments is a set of protocols whose primary goal is to enable fast and chea
 2. RIF Payments Light: it is a protocol to allow light clients to access RIF Payments Full without jeopardizing security and decentralization.
 3. RIF Payments Exchange: this protocol will be used to discover intra-token exchange rates, optimizing the routing of payments to a great extent, selecting the nodes to route payments based on their scoring, exchange rate, and fees among other criteria.
 
-#### [Video Tutorial](https://cdn.rifos.org/tutorial-lumino-network-en.mp4)
+<div class="video-container">
+  <video style="width: 100%" controls src="https://cdn.rifos.org/tutorial-lumino-network-en.mp4"></video>
+</div>
+
 
 #### RIF Lumino Explorer
 
 Lumino Explorer shows information about the nodes of RIF Lumino Network
 MainNet public explorer: http://explorer.lumino.rifos.org/
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino1.png" alt="overview of nodes"/></div>
+<div align="center"><img width="100%" src="/assets/img/lumino/lumino1.png" alt=""/></div>
 
 #### How to setup a Lumino Node
 

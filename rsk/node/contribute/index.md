@@ -3,6 +3,8 @@ layout: rsk
 title: Contribute
 ---
 
+<a href="https://github.com/rsksmart/rskj/blob/master/CONTRIBUTING.md" target="_blank" class="green-button">Contribution guide</a>
+
 Compile and run your own node, step by step:
 
 - From [command line](/rsk/node/contribute/cli) 

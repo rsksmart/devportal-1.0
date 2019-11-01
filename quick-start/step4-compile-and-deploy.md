@@ -69,4 +69,4 @@ The migration process may take several minutes depending on the block generation
 
 [Previous](../step3-edit-smart-contract)
 |
-[Next](../step5-run-smart-contract)
+<a href="/quick-start/step5-run-smart-contract" class="green-button">Next</a>

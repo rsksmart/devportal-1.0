@@ -36,6 +36,9 @@
       <!-- Main Stylesheet File -->
       <link href="/assets/css/styles.css" rel="stylesheet">
       <link href="/assets/css/styles_dark.css" rel="stylesheet" disabled>
+      <link href="/assets/css/code.css" rel="stylesheet">
+      <link href="/assets/css/owl.carousel.min.css" rel="stylesheet">
+      <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet">
    </head>
    <body>
       <!-- Google Tag Manager (noscript) -->
@@ -227,5 +230,28 @@
       <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
       <script src="/assets/js/main.js"></script>
       <script src="/assets/vendor/malihu-custom-scrollbar-plugin-master/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="/assets/vendor/carousel/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          nav:true,
+          center:true,
+          URLhashListener:true,
+          autoplayHoverPause:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+
+      </script>
+
    </body>
 </html>
