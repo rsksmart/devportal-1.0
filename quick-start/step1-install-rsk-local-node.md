@@ -88,6 +88,42 @@ sudo docker container logs --follow regtest-node-01
 
 You should see this in the logs: `INFO success: rsk entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)`. That indicates that an RSKJ node is running within this docker container.
 
+#### Testing the nodes
+
+RSK nodes allow you to connect over HTTP, whcih is exposed on port `4444`.
+Let us verify that this works.
+
+```bash
+curl http://localhost:4444/1.1.0/ -X POST -H "Content-Type: application/json"     --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+{"jsonrpc":"2.0","id":1,"result":"0x2db0b"}
+```
+You can enter any valid JSON-RPC commands as the `POST` body.
+
+The RSK nodes also allow you to connect over websockets, which are exposed on port `4445`.
+Let us verify that this works too.
+
+```bash
+npx wscat -c ws://localhost:4445/websocket
+```
+
+If you have not installed `wscat` globally before, wait for it to do so,
+and then it will load up its own shell.
+
+```text
+Connected (press CTRL+C to quit)
+>
+```
+
+Again, you can enter any valid JSON-RPC command in the prompt.
+Be sure to check that you receive a valid and expected response.
+
+```text
+> {"jsonrpc":"2.0","method":"eth_blockNumber", "params": [], "id":1}
+< {"jsonrpc":"2.0","id":1,"result":"0x72"}
+```
+
+#### Cleaning up
+
 After finishing the tutorial, you can use the following commands to shut down or remove the container.
 
 ```shell
