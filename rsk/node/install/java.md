@@ -9,7 +9,7 @@ You also need to install [Java 8 JDK](https://www.java.com/download/).
 
 ## Install the node using a JAR file
 
-The Fat JAR or Uber JAR can be [downloaded](https://github.com/rsksmart/rskj/releases) or compiled (in a [reproducible way](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [not](https://github.com/rsksmart/rskj/wiki/Compile-and-run-a-RSK-node-locally)).
+The Fat JAR or Uber JAR can be [downloaded](https://github.com/rsksmart/rskj/releases) or compiled (in a [reproducible way](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [not](/rsk/node/contribute)).
 
 To run the node:
 ```bash

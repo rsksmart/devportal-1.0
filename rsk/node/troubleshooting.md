@@ -27,19 +27,19 @@ You'll get a result with the process (if any) already using that port for UDP.
 * with the process id you got (the value at the far right) run this command `tasklist /FI "PID eq processId-you-got"`.
 This will let you know which application/service is using this port.
 
-Please make sure the port of you preference is not taken by other application. If so, you need to change the node configuration as [it is explained here](https://github.com/rsksmart/rskj/wiki/RSK-node-configuration#setting-your-own-config-preferences) overwriting the [peer](https://github.com/rsksmart/rskj/wiki/Configuration-file-reference#peer) port option.
+Please make sure the port of you preference is not taken by other application. If so, you need to change the node configuration as [it is explained here](/rsk/node/configure#setting-your-own-config-preferences) overwriting the [peer](/rsk/node/configure#peer) port option.
 
 > Note: we are considering the possibility of changing this port (5050) in future releases to avoid this problem.
 
 ### I don't see the logs
-You can configure your own log level, following this [instructions](https://github.com/rsksmart/rskj/wiki/Configuring-RSK-node-logging-file-verbosity).
+You can configure your own log level, following this [instructions](/rsk/node/configure/verbosity).
 
 ### Plugin with id witness not found
 If you have this error it's possible that you have missed to run rskj's dependencies.
 So please, follow the instructions depending on your operation system:
-- [Windows](https://github.com/rsksmart/rskj/wiki/RSK-node-on-Windows#get-external-dependencies)
-- [Mac](https://github.com/rsksmart/rskj/wiki/RSK-node-on-Mac#get-external-dependencies)
-- [Linux](https://github.com/rsksmart/rskj/wiki/RSK-node-on-Linux#get-external-dependencies)
+  - [On Windows](/rsk/node/contribute/windows)
+  - [On Linux](/rsk/node/contribute/linux)
+  - [On Mac](/rsk/node/contribute/macos)
 
 ### Truffle doesn't seem to work connected to RSK
 If you can not get `truffle migrate` complete, you will see something like:
@@ -103,8 +103,8 @@ prune {
 ### Can't get public IP
 
 If you get the error:
-`Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip` parameter](https://github.com/rsksmart/rskj/wiki/Configuration-file-reference#publicip).
+`Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip` parameter](/rsk/node/configure#publicip).
 
 To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, use a service as https://www.whatismyip.com/es/ to get it). 
 
-If you don't know how to change node's config file, read [this page](https://github.com/rsksmart/rskj/wiki/RSK-node-configuration).
+If you don't know how to change node's config file, read [this page](/rsk/node/configure).
