@@ -8,8 +8,12 @@ $(this).toggleClass('active', this.href === pageUrl);
 })
 
 
+
+
+
 $(document).ready(function(){
  $('ul li:has(ul)').addClass('subnav');
+ //$(".subnav > a").click(function(event){
    $(".desktop_accordion .subnav > a").click(function(event){
    event.preventDefault();
    $(this).parent().toggleClass("rotate-chevron");
@@ -18,7 +22,18 @@ $(document).ready(function(){
 });
 
 
+
+
+
+
+
+
+
+
  $(document).ready(function() {
+    //var path = location.href;
+    //if (path) {$('li a[href$="' + path + '"]:first').attr('class', 'current');}
+    //var crumbs = $(".current").parents("ul")
 var pageUrl = location.href;
 $('.desktop_accordion ul li a').each(function () {
 $(this).toggleClass('current', this.href === pageUrl);
@@ -55,6 +70,15 @@ $(document).ready(function(){
 });
 
 
+
+
+
+
+
+
+
+
+
 // Header scroll class
 $(window).scroll(function () {
 	if ($(this).scrollTop() > 10) {
@@ -70,6 +94,11 @@ $(window).scroll(function () {
 		$('.navbar_bottom_shape').removeClass('header-scrolled');
 	}
 });
+
+
+
+
+
 
 
  // Header scroll class
