@@ -33,7 +33,7 @@ Change to the root of the truffle directory and then type the following command 
 
 ```shell
 cd <tutorial-root>/truffle
-npx truffle compile
+truffle compile
 ```
 
 Upon first run, all contracts will be compiled. Upon subsequent runs, Truffle will compile only the contracts that have been changed since the last compile.

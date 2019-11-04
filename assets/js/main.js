@@ -1,41 +1,58 @@
-//Breadcrumbs based on URL location
-if ($('#siteBreadcrumb ol.breadcrumb')) {
-	var here = location.href.replace(/(\?.*)$/, '').split('/').slice(3);
-	var parts = [{
-		"text": 'Home',
-		"link": '/'
-	}];
 
-	for (var j = 0; j < here.length; j++) {
-		var part = here[j];
-		var pageName = part.toLowerCase();
-		pageName = part.charAt(0).toUpperCase() + part.slice(1);
-		var link = '/' + here.slice(0, j + 1).join('/');
-		$('#siteBreadcrumb ol.breadcrumb').append('<li><a href="' + link + '">' + pageName.replace(/\.(htm[l]?|asp[x]?|php|jsp)$/, '') + '</a></li>');
-		parts.push({
-			"text": pageName,
-			"link": link
-		});
-	}
-}
-$("<span>/</span>").insertAfter(".breadcrumb li");
-
-// collapse all ul from inner nav
-//$('#accordion ul').addClass('collapse');
-
-
-// add active class to li in inner nav based on url
-//uncollapse parents and child of active li
+// add active class to a in inner nav based on url
 $(function () {
-	return
-	var pageUrl = location.href;
-	$('a').each(function () {
-		$(this).parent().toggleClass('active', this.href === pageUrl);
-		$('.active').parentsUntil('#accordion').addClass('show');
-		$('.active').parents().addClass('active-parent');
-		$('.active').children().addClass('show');
+var pageUrl = location.href;
+$('a').each(function () {
+$(this).toggleClass('active', this.href === pageUrl);
 	});
 })
+
+
+$(document).ready(function(){
+ $('ul li:has(ul)').addClass('subnav');
+   $(".desktop_accordion .subnav > a").click(function(event){
+   event.preventDefault();
+   $(this).parent().toggleClass("rotate-chevron");
+   $(this).next('ul').toggleClass("subnav-reveal");
+});
+});
+
+
+ $(document).ready(function() {
+var pageUrl = location.href;
+$('.desktop_accordion ul li a').each(function () {
+$(this).toggleClass('current', this.href === pageUrl);
+	});
+
+    var crumbs = $(".current").parentsUntil(".exclude-doc-from-breadcrumbs")
+        .prev("a").add(".current")
+    .map(function() {
+        link = $(this).attr('href');
+        link_text = $(this).text();
+        title = $(this).attr('title');
+        bc = "<li><a href="+link+" title="+''+">"+link_text+"</a></li>";    
+        return bc; 
+    }).get().join("  ");
+    $(".breadcrumb").html(crumbs);
+});
+
+ $(document).ready(function() {
+var liText = '', liList = $('.breadcrumb li'), listForRemove = [];
+$(liList).each(function () {    
+  var text = $(this).text();
+  if (liText.indexOf('|'+ text + '|') == -1)
+    liText += '|'+ text + '|';
+  else
+    listForRemove.push($(this));    
+});   
+$(listForRemove).each(function () { $(this).remove(); });
+});
+
+
+$(document).ready(function(){
+ $(".current").parentsUntil(".first_level").addClass("subnav-reveal rotate-chevron");
+ $(".current").parents().addClass("rotate-chevron current");
+});
 
 
 // Header scroll class
@@ -53,11 +70,6 @@ $(window).scroll(function () {
 		$('.navbar_bottom_shape').removeClass('header-scrolled');
 	}
 });
-
-
-
-
-
 
 
  // Header scroll class
