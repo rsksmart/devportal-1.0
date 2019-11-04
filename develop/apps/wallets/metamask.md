@@ -3,10 +3,7 @@ layout: rsk
 title: MetaMask
 ---
 
-You can connect RSK blockchain with MetaMask's Custom RPC support. For this module, it is supposed that you have an RSK node running. Or you can use our public nodes.
-
-* https://public-node.testnet.rsk.co (Testnet)
-* https://public-node.rsk.co (Mainnet)
+You can connect RSK blockchain with MetaMask's Custom RPC support. For this module, it is supposed that you have an RSK node running. Or you can use our [public nodes](/rsk/public-nodes).
 
 For MetaMask installation, please <a href="https://metamask.io/" target="_blank">visit here</a>.
 
@@ -16,11 +13,11 @@ Step 1: Open MetaMask chrome extension.
 Step 2: In the network options, choose Custom RPC.
 Step 3: Type the node URL in New RPC URL and Save
 
-<div style="text-align:center"><img style="margin:0 auto; width:30%;" src="/assets/img/metamask/metamask.png"></div>
+<div style="text-align:center"><img style="margin:0 auto; max-width:250px;" src="/assets/img/metamask/metamask.png"></div>
 
 Now MetaMask is ready to use with RSK!
 
 ### Important Notes:
 
 Currency may still show ETH. They are RBTC actually.
-The node's CORS must be enabled. It can be full enabled using '*'. Please review the <a href="https://github.com/rsksmart/rskj/wiki/Configuration-file-reference" target="_blank">configuration file reference</a>
+The node's CORS must be enabled. It can be full enabled using '*'. Please review the [configuration file reference](/rsk/node/configure)
