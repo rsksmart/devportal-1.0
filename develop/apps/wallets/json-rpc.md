@@ -5,7 +5,7 @@ title: RPC
 
 For this , it is supposed that you have an RSK node running. Be sure your node has enabled personal module in the config file. Method personal.newAccount will be used.
 
-** It's NOT recommended to use RPC personal module on MainNet. Use it only for testing purposes (on TestNet or RegTest).**
+| It's NOT recommended to use RPC personal module on MainNet. Use it only for testing purposes (on Testnet or Regtest).
 
 There are two simple ways to call RPC methods:
 
@@ -17,7 +17,7 @@ From the command line, execute node console.js -server HOST:PORT. If everything 
 ```
 RSK > web3.personal.newAccount("passphrase")
 ```
-** Don't forget this passphrase! **
+| Don't forget this passphrase!
 
 This command generates a new private key and stores it in the key store directory. The key file is encrypted with the given passphrase. Finally, it returns the address of the new account.
 

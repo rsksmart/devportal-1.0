@@ -5,11 +5,12 @@ title: The RSK Addresses (Account Based)
 
 RSK Addresses incorporate an optional blockchain identifier (also known as chain-id). If the chain-id is not present, it is assumed the address refers to the RSK main network.
 
-## How to get an address:
-[https://github.com/rsksmart/rskj/wiki/Get-an-RSK-account](https://github.com/rsksmart/rskj/wiki/Get-an-RSK-account)
+## How to get an address
+Check out the already [integrated wallets](/develop/apps/wallets) or [integrate your wallet](/develop/apps/integrate). 
 
 ## Checksum
 RSK implements [EIP-1191](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1191.md) to protect users from losing funds by mixing addresses of different Ethereum based networks.
+
 [In this document](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1191.md), you can find out how to apply the checksum and validate an address. This EIP is also supported by web3 and hardware wallets.
 
 ## Chain ID

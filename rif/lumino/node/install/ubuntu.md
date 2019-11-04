@@ -6,8 +6,9 @@ title: Get your own RIF Lumino node up and running on Ubuntu
 ## Prerequisites
 
 1. Access to a synched RSK node. You can do this in a variety of ways:
-	1. Run your own node on TestNet or MainNet, see [https://github.com/rsksmart/rskj/wiki/Install-RskJ-and-join-the-RSK-Orchid-Mainnet-Beta](https://github.com/rsksmart/rskj/wiki/Install-RskJ-and-join-the-RSK-Orchid-Mainnet-Beta)
-	2. Compile and run a RSK node locally, see [https://github.com/rsksmart/rskj/wiki/Compile-and-run-a-RSK-node-locally](https://github.com/rsksmart/rskj/wiki/Compile-and-run-a-RSK-node-locally)
+	* [Public nodes](/rsk/public-nodes)
+  * [Run your own node](/rsk/node/install) on TestNet or MainNet
+  * [Compile and run a RSK node locally](/rsk/node/contribute)
 2. An RSK account with an RBTC balance NOT lower than 0.001 RBTC
 3. Ubuntu 18.04+
 

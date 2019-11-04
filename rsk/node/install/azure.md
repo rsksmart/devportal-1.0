@@ -5,7 +5,7 @@ title: Setup node on Azure
 
 ## Install RskJ Using Azure
 
-Following the instructions below you will install and run the RSK node in Azure. By default, the node connects to MainNet. If you want to change the network read [this section](https://github.com/rsksmart/rskj/wiki/Switching-networks). If you want to change some configuration, please refer to our [RSK node configuration section](https://github.com/rsksmart/rskj/wiki/RSK-node-configuration). Also you can [enable RPC calls](#rpc) to interact with the node (by default it's not enabled).
+Following the instructions below you will install and run the RSK node in Azure. By default, the node connects to MainNet. If you want to change the network read [this section](/rsk/node/configure/switch-network). If you want to change some configuration, please refer to our [RSK node configuration section](/rsk/node/configure). Also you can [enable RPC calls](#rpc) to interact with the node (by default it's not enabled).
 
 #### Install The Node Using Azure
 1. ***On Azure, create a resource.***
@@ -19,7 +19,7 @@ Following the instructions below you will install and run the RSK node in Azure.
     1. Settings: configure optional features.
     1. Summary: review the summary of what you have set and press Create.
 Wait for Azure to finish the deployment.
-1. Initialize RSK node configuration file settings (you can do it while [switching network](https://github.com/rsksmart/rskj/wiki/install-rskj-using-azure#Switching-networks)).
+1. Initialize RSK node configuration file settings (you can do it while [switching network](#Switching-networks)).
     * [Connect your computer to the node using bash](#connect).
     * Edit configuration file using vi:
       ```
@@ -37,6 +37,7 @@ Wait for Azure to finish the deployment.
   That's all! You have your own node running on an Azure Service.
 
 <span id="rpc"></span>
+
 #### Enable RPC calls
 1. Enable 4444 port. That is the default RSK port for RPC calls.
 Navigate to the virtual machine where you are runing RSK. Go to networking configuration.

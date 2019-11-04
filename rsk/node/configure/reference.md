@@ -1,9 +1,10 @@
 ---
 layout: rsk
-title: Configure
+title: Configuration reference 
 ---
 
-### Index
+
+## Configuration reference
 - [peer](#peer)
 - [database](#database)
 - [vm](#vm)
@@ -202,7 +203,7 @@ scoring {
 }
 ```
 ## miner
-For more information about configuring RSK node to mine go [here](https://github.com/rsksmart/rskj/wiki/Configure-your-RSK-node-to-be-used-from-a-merge-mining-pool).
+For more information about configuring RSK node to mine go [here](/rsk/node/configure/for-mining).
 
 ## blockchain.config.name
 It is a string that describe the name of the configuration.
