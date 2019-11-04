@@ -92,12 +92,8 @@ button:focus {
 
 #home {
 	min-height: 100vh;
-	padding-top: 250px;
+	padding-top: 200px;
 	padding-bottom: 250px;
-}
-
-.header-inner {
-	margin-bottom: 50px;
 }
 
 .btn-outline-secondary {
