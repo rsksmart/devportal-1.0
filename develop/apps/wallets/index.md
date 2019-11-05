@@ -73,7 +73,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     
     <div class="item">
         <a href="https://www.uport.me/" target="blank">
-        <img id="square-fix" src="https://rsk.co/img/wallets/8-uport.png" alt="uPort">
+        <img src="https://rsk.co/img/wallets/8-uport.png" alt="uPort" style="margin:10px;width:82px">
         <a class="company-name" href="https://www.uport.me/" target="blank">uPort</a>
         </a>
     </div>

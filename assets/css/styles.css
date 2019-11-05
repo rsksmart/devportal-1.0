@@ -290,23 +290,23 @@ a:not([href]):not([tabindex]) {
 
 
 
-li > a{ color:#CCCCCC!important;}
+li > a{ color:#666666!important;}
 li:hover > a, li.current > a{font-weight:bold!important;color:black!important;}
 li:hover > span, li.current > span{color:black!important;}
 li > span{position: relative;
     top: 3px;
-    color: #CCCCCC;}
+    color: #666666;}
 
 /*.rotate-chevron > a{color:black!important; font-weight:bold;}
 .rotate-chevron > a::before{background: black;}*/
 .rotate-chevron > span{top: -3px;}
 
 
-.first_level > a{font-family: 'Quicksand', sans-serif!important; color:#CCCCCC!important; font-weight:bold!important; padding: 7px 0;
+.first_level > a{font-family: 'Quicksand', sans-serif!important; color:#666666!important; font-weight:bold!important; padding: 7px 0;
     display: block; font-size:13px;}
 .first_level > span{position: relative;
     top: 10px;
-    color: #CCCCCC;}
+    color: #666666;}
 .first_level > a::before{
 content: "\A";
 width: 7px;
@@ -912,10 +912,6 @@ color:white!important;
 	font-size: 14px;
 	color: #000;
 	text-align: center;
-}
-
-#square-fix {
-	padding: 0 30px;
 }
 
 .owl-nav {
