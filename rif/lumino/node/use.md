@@ -5,8 +5,9 @@ title: How To Use
 **Pre requisites for a Lumino Node**
 
 1. Access to a synched RSK node. You can do this in a variety of ways:
-  - Run your own node on TestNet or MainNet, see [https://github.com/rsksmart/rskj/wiki/Install-RskJ-and-join-the-RSK-Orchid-Mainnet-Beta](https://github.com/rorolopetegui/lumino/blob/light-client-payments-onboarding)
-  - Compile and run a RSK node locally, see [https://github.com/rsksmart/rskj/wiki/Compile-and-run-a-RSK-node-locally](https://github.com/rorolopetegui/lumino/blob/light-client-payments-onboarding)
+  * [Public nodes](/rsk/public-nodes)
+  * [Run your own node](/rsk/node/install) on TestNet or MainNet
+  * [Compile and run a RSK node locally](/rsk/node/contribute)
 2. RSK account with RBTC balance
 3. Python 3.7
 4. Pip

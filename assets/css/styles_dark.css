@@ -56,14 +56,33 @@ border-radius: 50%;background:#F26122!important;
 display: inline-block;
 margin: 0 10px 0 0;}
 
-
-
 #accordion > div > a:hover{color:white!important;}
 
 .search-input {
 	border: solid 1px #F26122;
 	color: #F26122 !important;
 	background: transparent;
+}
+
+.table {
+	color: white!important;
+}
+
+
+/* The stack */
+
+.the-stack .row{
+ color:#000000;}
+
+ .the-stack .row .col{
+ 	background:#E6E6E6;
+ }
+
+ .the-stack .row .col span{
+	color:#000000;
+}
+ .the-stack .row .col span{
+	color:#000000;
 }
 
 
@@ -86,6 +105,12 @@ li:hover > span, li.current > span{color:black!important;}
 	.navbar_bottom_shape {
 		top: -60px;
 	}
+}
+
+@media screen and (max-width: 1200px) {
+	.the-stack .reverse_mobile .col{
+background:#00b520!important;
+}
 }
 
 @media (min-width: 1500px) {

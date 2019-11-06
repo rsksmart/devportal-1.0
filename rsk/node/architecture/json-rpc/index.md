@@ -131,6 +131,7 @@ RSK is currently supporting the following:
 | txpool_status | YES | |
 
 ## RPC PUB SUB methods
+
 | Method | Supported | Comments |
 | ------ | ------ | ------ |
 | eth_subscribe | PARTIALLY | Only option "newHeaders" is supported |

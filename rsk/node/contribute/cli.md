@@ -3,7 +3,7 @@ layout: rsk
 title: CLI
 ---
 
-After fulfilling the steps *Pre-requisites*, *Get the source code*, *Ensure the security chain* and *Get external dependencies* according to your operating system ([Windows](https://github.com/rsksmart/rskj/wiki/RSK-node-on-windows), [Linux](https://github.com/rsksmart/rskj/wiki/RSK-node-on-linux), [Mac](https://github.com/rsksmart/rskj/wiki/RSK-node-on-mac)), you can compile and run an RSK node from command line following this steps.
+After fulfilling the steps *Pre-requisites*, *Get the source code*, *Ensure the security chain* and *Get external dependencies* according to your operating system ([Windows](/rsk/node/contribute/windows), [Linux](/rsk/node/contribute/linux), [Mac](/rsk/node/contribute/macos)), you can compile and run an RSK node from command line following this steps.
 
 ## Compiling and running the node
 From the root directory where the code was downloaded execute:

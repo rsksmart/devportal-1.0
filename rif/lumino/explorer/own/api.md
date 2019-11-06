@@ -6,8 +6,8 @@ title: Lumino Explorer API
 ## Pre requisites
 
 1. Access to a synched RSK node. You can do this in a variety of ways:
-   * Run your own node on TestNet or MainNet, [see](https://github.com/rsksmart/rskj/wiki/Install-RskJ-and-join-the-RSK-Orchid-Mainnet-Beta)
-   * Compile and run a RSK node locally, [see](https://github.com/rsksmart/rskj/wiki/Compile-and-run-a-RSK-node-locally)
+   * [Run your own node](/rsk/node/install) on TestNet or MainNet
+   * [Compile and run a RSK node locally](/rsk/node/contribute)
 2. Mongo Database Server (Version 3.6.x)
 3. Java 8 (Lastest Release)
 4. Maven (Version 3.6.x)
@@ -115,7 +115,7 @@ OS name: $YOUR_OS_VERSION
 ## Useful Links
 
 * [RIF Lumino Network documentation](https://www.rifos.org/rif-lumino-network/)
-* [http://explorer.lumino.rifos.org/]()
+* [http://explorer.lumino.rifos.org/](http://explorer.lumino.rifos.org/)
 * [RIF Lumino Contracts](https://github.com/rsksmart/lumino-contracts) 
 * [RIF Lumino Web](https://github.com/rsksmart/lumino-web) 
 * [RIF Lumino Network](https://github.com/rsksmart/lumino) 
