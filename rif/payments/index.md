@@ -1,4 +1,4 @@
 ---
-layout: rsk
-title: Payments
+layout: redirect
+redirect: /rif/lumino
 ---
