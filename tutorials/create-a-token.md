@@ -93,7 +93,7 @@ In my editor,it shows like this:
 
 **5. Create an RSK account**
 
-  >To create our wallet we are going to use this web app: https://iancoleman.io/bip39/. This may not be used for any 'real' wallet; it's not a secure way to generate a private key! We are going to use it just for learning the basics.
+  >To create our wallet we are going to use this web app: [https://iancoleman.io/bip39/](https://iancoleman.io/bip39/). This may not be used for any 'real' wallet; it's not a secure way to generate a private key! We are going to use it just for learning the basics.
   * 5.1 Generate a random mnemonic:
     * 5.1.1 In the 'Generate a random mnemonic' field, we select 12 words andgenerate it.
     * 5.1.2 Then tap on 'Generate'.
@@ -146,7 +146,7 @@ In my editor,it shows like this:
       This string in the last line is our address.
   
   * 5.3 To get funds to use in this network.
-    > We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
+    > We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
     <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token4.png"></div> 
 
 
