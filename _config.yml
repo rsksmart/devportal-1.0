@@ -11,8 +11,8 @@ breadcrumbs:
 
 permalink: pretty
 
-repository: rootstock/rootstock.github.io
-domain: rootstock.github.io
+repository: rsksmart/rsksmart.github.io
+domain: developers.rsk.co
 
 highlighter: rouge
 
