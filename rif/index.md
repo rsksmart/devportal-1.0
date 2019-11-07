@@ -31,7 +31,7 @@ Learn more about [RIF Lumino Network](./payments/lumino)
 #### RIF OS White Paper
 
 To understand general vision behind RIF OS read the RIF OS White Paper.
-https://docs.rifos.org/rif-whitepaper-en.pdf
+[https://docs.rifos.org/rif-whitepaper-en.pdf](https://docs.rifos.org/rif-whitepaper-en.pdf)
 
 #### RIF FAQ
 
