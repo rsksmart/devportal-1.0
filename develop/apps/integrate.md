@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: How to integrate
+title: How to Integrate
 ---
 
 ## Step 1: Install a node
@@ -28,7 +28,8 @@ The Smart Bitcoin (RBTC) is the token used to pay for the execution of transacti
 
 ## Step 4: Connect your app
 
-Smart contracts for RSK are written using Solidity and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK Smart without doing any changes.
+Smart contracts for RSK are written using Solidity and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK Smart without making any changes.
 
 <a href="/tutorials/port-ethereum-dapps" class="green-button">Port Ethereum dApps</a>
 <a href="/tutorials" class="green-button">More Tutorials</a>
+<br/><br/>
