@@ -1,4 +1,4 @@
 ---
-layout: rsk
-title: Develop
+layout: redirect
+redirect: /develop/apps/integrate
 ---
