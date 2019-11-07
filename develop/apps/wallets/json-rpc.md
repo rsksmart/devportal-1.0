@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RPC
+title: JSON-RPC
 ---
 
 In order to use JSON-RPC, you should have an RSK node running. Additionally, ensure that your node has enabled the `personal` module in the config file, as the `personal.newAccount` method will be used.
