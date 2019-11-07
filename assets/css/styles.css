@@ -294,23 +294,23 @@ a:not([href]):not([tabindex]) {
 
 
 
-li > a{ color:#CCCCCC!important;}
+li > a{ color:#666666!important;}
 li:hover > a, li.current > a{font-weight:bold!important;color:black!important;}
 li:hover > span, li.current > span{color:black!important;}
 li > span{position: relative;
     top: 3px;
-    color: #CCCCCC;}
+    color: #666666;}
 
 /*.rotate-chevron > a{color:black!important; font-weight:bold;}
 .rotate-chevron > a::before{background: black;}*/
 .rotate-chevron > span{top: -3px;}
 
 
-.first_level > a{font-family: 'Quicksand', sans-serif!important; color:#CCCCCC!important; font-weight:bold!important; padding: 7px 0;
+.first_level > a{font-family: 'Quicksand', sans-serif!important; color:#666666!important; font-weight:bold!important; padding: 7px 0;
     display: block; font-size:13px;}
 .first_level > span{position: relative;
     top: 10px;
-    color: #CCCCCC;}
+    color: #666666;}
 .first_level > a::before{
 content: "\A";
 width: 7px;
@@ -536,13 +536,15 @@ margin: 0 0 15px 0;
 	font-size: 16px;
 }
 
-.page-metadata {
-	margin-bottom: 20px;
+.page-metadata ,
+.page-metadata a{
+	font-size: 12px;
+	font-weight: bold;
+	color: #00B520!important;
 }
 
 .main-central-col p a,
-.main-central-col a,
-.page-metadata a{
+.main-central-col a{
 	font-size: 16px;
 	font-weight: bold;
 	color: #00B520!important;
@@ -628,6 +630,16 @@ color:white!important;
 	border-radius: 50px!important;
 }
 
+.scrollup {
+    position: fixed;
+    bottom: 50px;
+    right: -10px;
+    color: #666;
+    font-size: 14px;
+    transform: rotate(-90deg);
+    font-family: 'Quicksand', sans-serif;
+    transition: all 0.5s ease;
+}
 
 /*footer*/
 
@@ -937,10 +949,6 @@ color:white!important;
 	font-size: 14px;
 	color: #000;
 	text-align: center;
-}
-
-#square-fix {
-	padding: 0 30px;
 }
 
 .owl-nav {

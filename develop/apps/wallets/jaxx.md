@@ -5,7 +5,7 @@ title: Jaxx
 
 ## How to Setup a Jaxx Desktop Wallet
 
-* To get started, visit their official website https://jaxx.io/ and click the "Download" button.
+* To get started, visit their official website [https://jaxx.io/](https://jaxx.io/) and click the "Download" button.
 
 <div align="center"><img width="100%" src="/assets/img/jaxx/jaxx1.png" alt="overview of download page"/></div>
 

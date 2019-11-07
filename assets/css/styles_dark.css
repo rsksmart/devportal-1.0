@@ -68,7 +68,6 @@ margin: 0 10px 0 0;}
 	color: white!important;
 }
 
-
 /* The stack */
 
 .the-stack .row{
@@ -84,8 +83,6 @@ margin: 0 10px 0 0;}
  .the-stack .row .col span{
 	color:#000000;
 }
-
-
 
 @media (max-width: 991px) {
 	.btn-outline-secondary{color:#F26122!important;}

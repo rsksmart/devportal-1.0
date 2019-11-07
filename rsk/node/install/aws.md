@@ -9,7 +9,7 @@ title: Setup node on AWS
 
 ## Step 1:
 
-Navigate to the AWS Console site: https://console.aws.amazon.com
+Navigate to the AWS Console site: [https://console.aws.amazon.com](https://console.aws.amazon.com)
 
 ## Step 2:
 

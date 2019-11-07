@@ -11,7 +11,7 @@ Overview
 ``RSKJs`` is the **JavaScript** Library within the **RSK 
 Foundation**. Work is mainly done within the following GitHub organization:
 
-- https://github.com/rsksmart
+- [https://github.com/rsksmart](https://github.com/rsksmart)
 
 There are currently over 20 active repositories, most (with some exceptions like
 `keythereum <https://github.com/ethereumjs/keythereum>`_ or  

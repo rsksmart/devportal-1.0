@@ -16,10 +16,10 @@ title: Lumino Explorer API
 
 ## Build RIF Lumino Explorer API from code
 
-1. Get the code by cloning this repo
-2. Go to the path you downloaded or cloned Lumino's code (lets call this path `$RIF_LUMINO_EXPLORER_API_PATH`)
+1. Get the code by cloning [the repo](https://github.com/rsksmart/lumino-explorer/)
+2. Go to the path you downloaded or cloned Lumino's code (let's call this path `$RIF_LUMINO_EXPLORER_API_PATH`)
 3. Go to the application.properties and set the `lumino.contract.tokenNetworkRegistry` property, set the value with your Token Network registry. 
-4. Set the `lumino.explorer.api.account.file` property to the .json file of your RSK account. Example: `lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json`
+4. Set the `lumino.explorer.api.account.file` property to the JSON file of your RSK account. Example: `lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json`
 
 5. Set the `lumino.explorer.api.account.password` property to the password of your account. Example: `lumino.explorer.api.account.paassword=3XhLXn[(Tub6'~Qe`
 
@@ -37,7 +37,7 @@ mvn install
 
 ```user:~/mongo lumino-explorer-api-database-setup.js```
 
-If not, you must execute the following script, specifying a host, port and authentication credentials
+If an error is showed, you must execute the following script, specifying a host, port and authentication credentials
 
 ```user:~/mongo --host <hostname> -u <username> -p <password> lumino-explorer-api-database-setup.js```
 

@@ -5,7 +5,7 @@ title: Lumino JS SDK
 
 
 This SDK aims to help the development of integrations with Lumino that use JavaScript, providing an easy interface to communicate with Lumino's REST API and request the information required.
-For that purpose, many ES2015 features were used, as well as Promises notation to help dealing with asynchronous code.
+For that purpose, many ES2015 features were used, and Promises are used as notation to help dealing with asynchronous code.
 
 ## Requirements
 In order to use this SDK, you'll need the following tools:
