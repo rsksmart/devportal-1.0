@@ -310,7 +310,7 @@ The transaction generates a receipt. This is the answer the blockchain generates
 #### 8. Smart contract on RSK
 8.1 Get an RSK account
 
->To create our wallet we are going to use this web app: https://iancoleman.io/bip39/. **This may not be used for any 'real' wallet; it's not a secure way to generate a private key!** We are going to use it just for learning the basics.
+>To create our wallet we are going to use this web app: [https://iancoleman.io/bip39/](https://iancoleman.io/bip39/). **This may not be used for any 'real' wallet; it's not a secure way to generate a private key!** We are going to use it just for learning the basics.
 1. In the 'Generate a random mnemonic' field, we select 12 words and generate it. 
 2. Then tap on 'Generate'. 
 3. The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:
@@ -389,7 +389,7 @@ truffle(rsk)> account
 '0xf08f6c2eac2183dfc0a5910c58c186496f32498d'
 ```
 
->We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: https://faucet.testnet.rsk.co.
+>We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
 <img class="deploy-smart-contract-img" src="/assets/img/deploy-smart-contract/deploy-smart-contract4.png">
 
 >Steps of usage:

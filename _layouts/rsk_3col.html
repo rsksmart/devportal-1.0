@@ -58,7 +58,7 @@
                      <a class="nav-link" href="https://developers.rsk.co" target="_blank">Develop</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="https://www.rsk.co/development-roadmap/" target="_blank">Roadmap</a>
+                     <a class="nav-link" href="https://www.rsk.co/development-roadmap" target="_blank">Roadmap</a>
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="https://fund.rsk.co" target="_blank">Ecosystem Fund</a>
@@ -127,7 +127,7 @@
                      <a href="#" onclick="return ChangeTheme(this);">Dark</a>
                   </div>
                   
-                  <h1 class="page-title">{{ page.title }}</h1>
+                  <h1 class="page-title" id="top">{{ page.title }}</h1>
                   
                   {{ content }}
                   
@@ -145,7 +145,7 @@
             </div>
          </div>
       </section>
-      <!-- footer -->
+<!-- footer -->
       <footer id="footer" class="section-bg">
          <div class="footer-top">
          <div class="container">
@@ -161,7 +161,7 @@
                         <div class="footer-info">
                            <p>Rsk is the most secure smart contract<span class="falsebreak"><br></span> network in the world and enables<span class="falsebreak"><br></span> decentralized applications secured by the<span class="falsebreak"><br></span> Bitcoin Network to empower people and<span class="falsebreak"><br></span> improve the quality of life of millions.</p>
                            <br>
-                           <a href="https://developers.rsk.co/quick-start" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
+                           <a href="https://developers.rsk.co/" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
                         </div>
                      </div>
                      <div class="col-sm-5"></div>
@@ -172,32 +172,35 @@
                      <div class="col-md-4">
                         <div class="footer-links">
                            <ul>
-                              <li>Whitepapers</li>
+                              <li class="negbottom">Whitepapers</li>
                               <li class="sub-item-footer"><a href="https://www.rsk.co/wp-content/uploads/2019/02/RSK_White_Paper-ORIGINAL.pdf" target="_blank">Original</a></li>
                               <li class="sub-item-footer"><a href="https://www.rsk.co/wp-content/uploads/2019/02/RSK-White-Paper-Updated.pdf" target="_blank">Updated</a></li>
                               <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" target="_blank">RIF</a></li>
                               <li><a href="https://fund.rsk.co" target="_blank">Ecosystem Fund</a></li>
                               <li><a href="https://studio.rsk.co" target="_blank">Innovation Studio</a></li>
+                              <li><a href="https://mining.rsk.co/" target="_blank">Merged Mining</a></li>
                            </ul>
                         </div>
                      </div>
                      <div class="col-md-4">
                         <div class="footer-links">
                            <ul>
-                              <li><a href="https://www.rsk.co/development-roadmap/" target="_blank">Roadmap</a></li>
+                             <li><a href="https://www.rsk.co/development-roadmap/" target="_blank">Roadmap</a></li>
                               <li><a href="https://www.rsk.co/faqs/" target="_blank">Faqs</a></li>
                               <li><a href="https://www.iovlabs.org/about_us.html" target="_blank">About us</a></li>
                               <li><a href="https://www.iovlabs.org/contact.html" target="_blank">Contact</a></li>
                               <li><a href="https://rsk.co/noticias/" target="_blank">Blog</a></li>
+                              <li><a href="https://rsk.co/Use-cases">Use cases</a></li>
                            </ul>
                         </div>
                      </div>
                      <div class="col-md-4">
                         <div class="footer-links">
                            <ul>
-                              <li><a class="bold" href="https://www.rsk.co/terms-conditions/" target="_blank">Terms & Conditions</a></li>
-                              <li><a class="bold mb-30" href="https://www.rsk.co/privacy-policy/" target="_blank">Privacy Policy</a></li>
-                              <a href="https://developers.rsk.co" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                              <li><a class="bold" href="https://www.rsk.co/Brand_Guidelines/rsk_brandmanual.pdf" target="_blank">Brand Guidelines</a></li>
+                              <li><a class="bold" href="https://www.rsk.co/terms-conditions/">Terms & Conditions</a></li>
+                              <li><a class="bold mb-30" href="https://www.rsk.co/privacy-policy">Privacy Policy</a></li>
+                              <a href="https://developers.doc.rsk.co/docs" target="_blank" class="footer-button" title="Documentation">Documentation</a>
                            </ul>
                         </div>
                      </div>
@@ -231,6 +234,7 @@
          </div>
       </footer>
       <!-- #footer -->
+      <a href="#top" class="scrollup"><p>Go to top</p></a>
       <!-- Bootstrap core JavaScript -->
       <script src="/assets/vendor/jquery/jquery.min.js"></script>
       <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

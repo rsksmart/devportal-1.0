@@ -105,6 +105,6 @@ prune {
 If you get the error:
 `Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip` parameter](/rsk/node/configure#publicip).
 
-To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, use a service as https://www.whatismyip.com/es/ to get it). 
+To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, use a service as [https://www.whatismyip.com/es/](https://www.whatismyip.com/es/) to get it). 
 
 If you don't know how to change node's config file, read [this page](/rsk/node/configure).

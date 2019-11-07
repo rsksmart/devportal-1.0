@@ -278,11 +278,11 @@ EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F
 Deploying Smart Contracts to RSK MainNet can follow the same steps as the TestNet.
 
 #### MainNet Node
-The public node of RSK Main Net is https://public-node.rsk.co
+The [public node](/rsk/public-nodes) of RSK Main Net is https://public-node.rsk.co
 
 #### MainNet Explorer
 You will be able to check the MainNet's transactions and blocks in real time at this address
-https://explorer.rsk.co/
+[https://explorer.rsk.co/](https://explorer.rsk.co/)
 
 #### Get RBTC through 2-way peg
 To deploy onto MainNet, we need to get some RBTC through the 2-way pg mechanism between BTC and RBTC.

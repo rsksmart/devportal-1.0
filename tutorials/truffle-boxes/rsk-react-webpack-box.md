@@ -16,7 +16,7 @@ This starter contains two main elements
 
 Install node or update 
 
-Install node -> https://nodejs.org/en/download/
+Install node -> [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
 
 Update node -> npm update
 
