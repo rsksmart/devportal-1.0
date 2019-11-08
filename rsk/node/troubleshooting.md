@@ -3,11 +3,12 @@ layout: rsk
 title: Troubleshooting
 ---
 
-This section explains how to solve some problems that are known or frequent. 
+This section explains how to solve some known or frequently encountered issues.
 
 If what you need is not in this section, **please contact us** without hesitation through our [Gitter channel](https://gitter.im/rsksmart/rskj). We will be happy to help you!
 
 ## Index
+
 - ['Discovery can't be started'](#discovery-cant-be-started)
 - ['I don't see the logs'](#i-dont-see-the-logs)
 - ['Plugin with id 'witness' not found'](#plugin-with-id-witness-not-found)
@@ -16,25 +17,31 @@ If what you need is not in this section, **please contact us** without hesitatio
 - ['Can't get public IP'](#cant-get-public-ip)
 
 ## Sections
+
 ### Discovery can't be started
+
 On Windows, if you start the node and it doesn't do anything, there is a high chance you have a problem with the UDP port of the node.
 
 The UDP port is configured in the node's configuration file, specifically with the value `peer.port`. By default this port is configured to `5050`.
 
 To check if that port is already taken by other application you can follow these steps:
-* Open a cmd console and run `netstat -ano -p UDP | findstr :5050` (or replace 5050 with the port of your preference). 
-You'll get a result with the process (if any) already using that port for UDP.
-* with the process id you got (the value at the far right) run this command `tasklist /FI "PID eq processId-you-got"`.
+
+* Open a `cmd` console and run `netstat -ano -p UDP | findstr :5050` (or replace `5050` with the port of your preference). 
+* You will get a result with the process ID (if any) already using that port for UDP.
+* With the process ID (the value at the far right), run this command `tasklist /FI "PID eq processId-you-got"`.
+
 This will let you know which application/service is using this port.
 
-Please make sure the port of you preference is not taken by other application. If so, you need to change the node configuration as [it is explained here](/rsk/node/configure#setting-your-own-config-preferences) overwriting the [peer](/rsk/node/configure#peer) port option.
+Please make sure the port of your preference is not taken by other application. If so, you need to change the node configuration [as explained here](/rsk/node/configure#setting-your-own-config-preferences), by overwriting the [peer](/rsk/node/configure#peer) port option.
 
 > Note: we are considering the possibility of changing this port (5050) in future releases to avoid this problem.
 
 ### I don't see the logs
-You can configure your own log level, following this [instructions](/rsk/node/configure/verbosity).
+
+You can configure your own log level, following these [instructions](/rsk/node/configure/verbosity).
 
 ### Plugin with id witness not found
+
 If you have this error it's possible that you have missed to run rskj's dependencies.
 So please, follow the instructions depending on your operation system:
   - [On Windows](/rsk/node/contribute/windows)
@@ -42,6 +49,7 @@ So please, follow the instructions depending on your operation system:
   - [On Mac](/rsk/node/contribute/macos)
 
 ### Truffle doesn't seem to work connected to RSK
+
 If you can not get `truffle migrate` complete, you will see something like:
 
 ```javascript
@@ -72,6 +80,7 @@ module.exports = {
 ```
 
 ### The node takes up too much space
+
 The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.
 
 To enable prune service in your node [override your configuration](RSK-node-configuration#setting-your-own-config-preferences). These are the recommended parameters:
@@ -103,8 +112,8 @@ prune {
 ### Can't get public IP
 
 If you get the error:
-`Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip` parameter](/rsk/node/configure#publicip).
+`Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip`](/rsk/node/configure#publicip) parameter.
 
-To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, use a service as [https://www.whatismyip.com/es/](https://www.whatismyip.com/es/) to get it). 
+To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, simply [search for it](https://www.google.com/search?q=what's+my+IP+address)).
 
-If you don't know how to change node's config file, read [this page](/rsk/node/configure).
+[This page](/rsk/node/configure) will show you how to change a node's configuration file.

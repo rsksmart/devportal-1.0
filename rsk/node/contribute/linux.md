@@ -8,18 +8,14 @@ Here you have the steps to compile and run an RSK node on Linux.
 This page is organized in this way:
 
 - [Pre-requisites](#pre-requisites)
-
 - [Get the source code](#get-the-source-code)
-
 - [Ensure the security chain](#ensure-the-security-chain)
-
 - [Get external dependencies](#get-external-dependencies)
-
 - [Compiling and running the node](#compiling-and-running-the-node)
 
 ## Pre-requisites
-First of all, you will need to install:
 
+First of all, you will need to install:
 
 |Dependency        | Details|
 |------------- |-------------|
@@ -28,40 +24,51 @@ First of all, you will need to install:
 |[IntelliJ IDEA Community](https://www.jetbrains.com/idea/download/#section=linux)| Install this Java IDE |
 
 ## Get the source code 
+
 Using the installed command-line tool Git, you need to retrieve (or clone) the RskJ Github source code from [here](https://github.com/rsksmart/rskj).
 
 Run these commands on Git command line:
-```
+
+```shell
 git clone --recursive https://github.com/rsksmart/rskj.git
 cd rskj
 git checkout tags/WASABI-1.0.2 -b WASABI-1.0.2
 ```
-*Note:* it is better to download the code into a short path.
 
+*Note:* It is better to download the code into a short path.
 
 ## Ensure the security chain
+
 [Ensure the security chain](/rsk/node/contribute/verify) of the downloaded source code.
 
-
 ## Get external dependencies
+
 Before you can launch IntelliJ IDEA, there is an important step.
 Browse in your RskJ cloned directory and then launch `configure.sh` with the following terminal command:
-`./configure.sh`.
-This will download and set important components (e.g. Gradle Wrapper). 
 
+```shell
+./configure.sh
+```
+
+This will download and set important components (e.g. Gradle Wrapper).
 
 ## Compiling and running the node
+
 Now, you can launch IntelliJ IDEA:
-in a terminal, and from the folder you extracted the `tar.gz`, go into `idea/bin/`.
+
+In a terminal, and from the folder you extracted the `tar.gz`, go into `idea/bin/`.
 Then, type the following command to load the script:
+
 ```
 ./idea/sh
 ```
+
 When IntelliJ IDEA is launched you should have a window with different choices.
+
 - Choose *Import project*.
 - Browse in the RskJ downloaded code the file `rskj\build.gradle` and select it. Click *NEXT*.
 - Within the dialog select *Use default gradle wrapper* and then click *Finish*.
-*Keep IntelliJ IDEA opened*.
+*Keep IntelliJ IDEA open*.
 
 ![img](/assets/img/rsk/howToInstallAndRun/IdeaRskJWelcome.png)
 
@@ -96,10 +103,12 @@ And yes! Congratulations! Now you're running a local RSK node :)
 You're joined to MainNet by default. 
 
 If you want to switch the network, add:
+
 - For TestNet: `--testnet`
 - For RegTest: `--regtest`
 
 Inside the field `Program Arguments` in your run configuration.
 
 ## Any problems?
+
 We hope our [troubleshooting section](/rsk/node/troubleshooting) can help you!
