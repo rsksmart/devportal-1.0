@@ -3,23 +3,21 @@ layout: rsk
 title: Creating an Issue
 ---
 
-If you find an issue in Lumino and want to report it, or you want to request a feature. You can make an issue in the github repo, we suggest to create an issue with the folowwing structure:
+If you find an issue in Lumino and want to report it, or you want to request a feature. You can make an issue in the github repo, we suggest to create an issue with the following structure:
 
 For Feature Requests:
 
 - Full description of the feature
-- Explanation of why you think it&#39;s useful for Lumino.
+- Explanation of why you think it's useful for Lumino.
 
 For Bugs:
 
 - Short description for the problem
-- Setup description (System you&#39;re using, lumino version, RSKj version, etc)
+- Setup description (System you're using, Lumino version, RSKj version, etc)
 - Explain exactly what was the bug
 - Expected behavior
 
 **Creating a Pull Request**
-
-
 
 To contribute with the codebase of Lumino, you can open a Pull Request (PR) against our repository.
 

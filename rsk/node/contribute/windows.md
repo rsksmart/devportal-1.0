@@ -4,6 +4,7 @@ title: Windows
 ---
 
 ## Compiling and running the node
+
 After opening IDEA we need to load the RskJ project, this can be done by using the *Import project* option in IDEA.
 
 To do that follow the next steps:
@@ -13,7 +14,6 @@ To do that follow the next steps:
 - Within the dialog select *Use default gradle wrapper* and then press *Finish*.
 
 ![img](/assets/img/rsk/howToInstallAndRun/IdeaRskJWelcome.png)
-
 
 ### IDEA Build/Run configuration
 
@@ -32,6 +32,7 @@ Then set the options as shown below:
 - JRE need to be set as: `Default (1.8 - SDK of 'rsk-core_main' module)`
 
 *Note:*
+
 - If it isn't configured the default JDK, you have to set it in: *File -> Project Structure*.
 - If the IDE doesn't recognize the configuration options, open `rskj/rskj-core/build.gradle` and sync it from `Gradle` tab.
 
@@ -41,7 +42,7 @@ We are ready to run the node using IDEA, just press the *Start* button at the ri
 
 ![img](/assets/img/rsk/howToInstallAndRun/Run.png)
 
-If everything is OK you should see the debug information like that:
+If everything is OK, you should see the debug information like that:
 
 ![img](/assets/img/rsk/howToInstallAndRun/Running.png)
 
@@ -50,10 +51,12 @@ And yes! Congratulations! Now you're running a local RSK node :)
 You're joined to MainNet by default. 
 
 If you want to switch the network, add:
+
 - For TestNet: `--testnet`
 - For RegTest: `--regtest`
 
 Inside the field `Program Arguments` in your run configuration.
 
 ## Any problems?
+
 We hope our [troubleshooting section](/rsk/node/troubleshooting) can help you!

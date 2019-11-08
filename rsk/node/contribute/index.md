@@ -8,7 +8,6 @@ title: Contribute
 Compile and run your own node, step by step:
 
 - From [command line](/rsk/node/contribute/cli) 
-
 - Using IntelliJ IDEA:
   - [On Windows](/rsk/node/contribute/windows)
   - [On Linux](/rsk/node/contribute/linux)

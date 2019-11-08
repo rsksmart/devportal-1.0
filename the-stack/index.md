@@ -29,11 +29,11 @@ title: The Stack
 </div>
 
 <div class="row has-unique-col">
-    <div class="col"><span><a href="/rsk/">rsk Business Logic</a></span></div>
+    <div class="col"><span><a href="/rsk/">RSK: Business Logic</a></span></div>
 </div>
 
 <div class="row has-unique-col green_reverse">
-    <div class="col"><span><a href="https://bitcoin.org/en/development">Bitcoin Store of Value</a></span></div>
+    <div class="col"><span><a href="https://bitcoin.org/en/development">Bitcoin: Store of Value</a></span></div>
 </div>
 
 </div>
