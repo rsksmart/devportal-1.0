@@ -184,7 +184,7 @@ function setSubnodeOwner(bytes32 node, bytes32 label, address ownerAddress) publ
 
 **Parameters**
 - `node`: the parent node.
-- `label`: the hash of the label specifying the sub node.
+- `label`: the sha3 hash of the label specifying the sub node.
 - `ownerAddress`: the address of the new owner.
 
 #### resolver
