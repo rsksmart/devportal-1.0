@@ -5,7 +5,7 @@ title: RSK Infrastructure Framework
 
 ## RIF Services
 
-Root Infrastructure Framework Open Standard (RIF OS) is a suite of open and decentralized infrastructure protocols that enable faster, easier and scalable development of distributed applications (dApps) within a unified environment.
+RSK Infrastructure Framework Open Standard (RIF OS) is a suite of open and decentralized infrastructure protocols that enable faster, easier and scalable development of distributed applications (dApps) within a unified environment.
 
 RIF OS is an all in one, easy to use, blockchain infrastructure service framework that provides developers and organizations access to a variety of services across multiple crypto-economies.
 
@@ -58,6 +58,6 @@ RSK is the first open-source smart contract platform secured by the Bitcoin Netw
 
 Q: What’s the difference between RIF token and RBTC?
 
-A: Root Infrastructure Framework Open Standard (RIF OS) is a suite of open and decentralized infrastructure protocols that enable faster, easier and scalable development of decentralized applications (dApps) within a unified environment. RIF OS includes support for decentralized, third-party, off-chain payment networks; a set of APIs for seamless and secure communications between decentralized applications; and easy-to-use interfaces for developers. Access to, and payment for, RIF OS services are based on the RIF Token, which allows developers to access the suite of services built on top of RIF protocols such as Directory, Payments, Data Feeds, Storage and Communications including third party-developed infrastructure services, and any other apps that might be deployed on RIF’s framework that agrees to accept RIF Tokens as a means of accessing / consuming the service or app.
+A: RSK Infrastructure Framework Open Standard (RIF OS) is a suite of open and decentralized infrastructure protocols that enable faster, easier and scalable development of decentralized applications (dApps) within a unified environment. RIF OS includes support for decentralized, third-party, off-chain payment networks; a set of APIs for seamless and secure communications between decentralized applications; and easy-to-use interfaces for developers. Access to, and payment for, RIF OS services are based on the RIF Token, which allows developers to access the suite of services built on top of RIF protocols such as Directory, Payments, Data Feeds, Storage and Communications including third party-developed infrastructure services, and any other apps that might be deployed on RIF’s framework that agrees to accept RIF Tokens as a means of accessing / consuming the service or app.
 
 RBTC is the native token of the RSK Live Mainnet and is pegged 1:1 to BTC. It's used as gas to pay for Smart Contract execution in the same way as ETH is used as gas for Ethereum. Technical users can obtain RBTC in a decentralized manner, by converting to and from BTC by using the bridge between the Bitcoin and RSK protocols. Less technical users can obtain RBTC from supporting exchanges like Huobi and Bitfinex, among others. This is necessary in order to use RSK and all of the applications that run on RSK, including RIFOS once it launches.
