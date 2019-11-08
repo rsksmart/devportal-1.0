@@ -21,3 +21,4 @@ plugins:
  - jekyll-feed
  - jekyll-github-metadata
  - jekyll-sitemap
+ - jemoji
