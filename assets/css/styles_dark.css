@@ -56,7 +56,7 @@ border-radius: 50%;background:#F26122!important;
 display: inline-block;
 margin: 0 10px 0 0;}
 
-#accordion > div > a:hover{color:white!important;}
+.menu-container div > a:hover{color:white!important;}
 
 .search-input {
 	border: solid 1px #F26122;
@@ -87,27 +87,19 @@ margin: 0 10px 0 0;}
 @media (max-width: 991px) {
 	.btn-outline-secondary{color:#F26122!important;}
 	li:hover > a, li.current > a{color:black!important;}
-li:hover > span, li.current > span{color:black!important;}
-.first_level > a{color:#F26122!important;}
-.first_level > a::before{background: #F26122!important;}
-#accordion > div > a:hover {
-	color:black!important;
-}
-	.navbar_bottom_shape {
-		top: -40px;
-	}
+	li:hover > span, li.current > span{color:black!important;}
+	.first_level > a{color:#F26122!important;}
+	.first_level > a::before{background: #F26122!important;}
+	.menu-container > div > a:hover { color:black!important; }
+	.navbar_bottom_shape { top: -40px; }
 }
 
 @media (max-width: 576px) {
-	.navbar_bottom_shape {
-		top: -60px;
-	}
+	.navbar_bottom_shape { top: -60px; }
 }
 
 @media screen and (max-width: 1200px) {
-	.the-stack .reverse_mobile .col{
-background:#00b520!important;
-}
+	.the-stack .reverse_mobile .col{ background:#00b520!important; }
 }
 
 @media (min-width: 1500px) {

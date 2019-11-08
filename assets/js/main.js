@@ -8,13 +8,12 @@ $(this).toggleClass('active', this.href === pageUrl);
 })
 
 $(document).ready(function(){
- $('ul li:has(ul)').addClass('subnav');
- //$(".subnav > a").click(function(event){
-   $(".desktop_accordion .subnav > a").click(function(event){
-   event.preventDefault();
-   $(this).parent().toggleClass("rotate-chevron");
-   $(this).next('ul').toggleClass("subnav-reveal");
-});
+  $('ul li:has(ul)', ".menu-container").addClass('subnav');
+  $(".desktop_accordion .subnav > a").click(function(event){
+    event.preventDefault();
+    $(this).parent().toggleClass("rotate-chevron");
+    $(this).next('ul').toggleClass("subnav-reveal");
+  });
 });
 
 $('a[href^="#"]').on('click', function(event) {
