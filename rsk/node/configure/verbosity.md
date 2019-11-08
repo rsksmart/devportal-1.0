@@ -102,7 +102,11 @@ This file allows you to configure different log levels for different parts of th
   (The watcher can take up to 1 hour to notice the changes and reload the logging configuration)
 * RSK logs with default installation will rotate on daily basis and/or when the log file reach 100MB
 
-Using this configuration the application will be ONLY log ERROR events.
+Using this configuration:
+
+- Most areas of the application will **only** log `FATAL` and `ERROR` events for most areas of the application.
+- The `execute`, `blockvalidator`, `blockexecutor`, `web3`, `minerserver`, `pendingstate`, `blockchain`, `messageProcess`, areas specify `INFO`, so those will **only** log `FATAL`, `ERROR`, `WARN`, and `INFO` events.
+- The will be no `DEBUG`, `INFO`, and `TRACE` logs.
 
 ## Using logback configuration file
 
