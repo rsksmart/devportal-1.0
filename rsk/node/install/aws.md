@@ -29,7 +29,7 @@ Optionally change the default values on this screen, and continue clicking on �
 
 ## Step 6:
 
-In the Storage section, increase the size to 100GB, the minimum recommended to run the node, then click on “Next: Add Tags”
+In the Storage section, increase the size to any size that is 50GB or higher, the minimum recommended to run the node, then click on “Next: Add Tags”
 
 ## Step 7:
 
