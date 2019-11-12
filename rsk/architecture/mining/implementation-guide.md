@@ -3,7 +3,7 @@ layout: rsk
 title: Implementation Guide
 ---
 
-Here are the stesp needed to add RSK merged mining capabilities to mining pool software.
+Here are the steps needed to add RSK merged mining capabilities to mining pool software.
 
 ## What do you need to do
 

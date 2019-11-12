@@ -52,7 +52,7 @@ Now we present several different scenarios:
     The miner of the block at height N is paid
     <img src="https://latex.codecogs.com/svg.latex?Miners_{rwd}"/>
     * **Rule was broken**
-    The miner is paid the ~90% of
+    The miner is paid 90% of the
     <img src="https://latex.codecogs.com/svg.latex?Miners_{rwd}"/>
     which is defined as
     <img src="https://latex.codecogs.com/svg.latex?%20Miners_{rwdBroken}=Miners_{rwd}-\frac{Miners_{rwd}}{10}%20%22"/>
@@ -84,7 +84,7 @@ Each **publisher** receives
 <img src="https://latex.codecogs.com/svg.latex?PubFee_{rwd}"/>
 The **miner of the main block** receives
 <img src="https://latex.codecogs.com/svg.latex?IndMiningFee_{rwd}"/>
-Also, for **each sibling**, a new amount needs to be calculated. This is, for each late block that the sibling published, it receives a punishment of the ~5% of
+Also, for **each sibling**, a new amount needs to be calculated. This is, for each late block that the sibling published, it receives a punishment of ~5% of the
 <img src="https://latex.codecogs.com/svg.latex?IndMiningFee{rwd}"/>.
 The sibling is added on the block N+D for some positive value of D. A punishment for late publication is calculated for each as
 <img src="https://latex.codecogs.com/svg.latex?L=%20\frac{(D-1)%20*%20IndMiningFee_{Rwd}}{20}"/>
