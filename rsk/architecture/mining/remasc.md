@@ -5,7 +5,9 @@ title: REMASC
 
 ## About
 
-Reward Manager Smart Contract (REMASC) is a pre-compiled smart-contract that is executed on every block and has the responsibility to fairly distribute rewards collected from transaction fees into several participants of the network. However the distribution of rewards of a block is only performed once the block reaches a certain maturity. In other words, the rewards are paid only after a  fixed number of blocks have confirmed a block. With the exception of the first blocks in the blockchain after genesis, every time a block is added to the blockchain, another previous block reaches maturity and its rewards are paid. 
+Reward Manager Smart Contract (REMASC) is a pre-compiled smart-contract that is executed on every block and has the responsibility to fairly distribute rewards collected from transaction fees into several participants of the network. However the distribution of rewards of a block is only performed once the block reaches a certain maturity. In other words, the rewards are paid only after a  fixed number of blocks have confirmed a block. With the exception of the first blocks in the blockchain after genesis, every time a block is added to the blockchain, another previous block reaches maturity and its rewards are paid.
+
+REMASC is an implementation of DECOR+ [[1]](https://scalingbitcoin.org/papers/DECOR-LAMI.pdf)
 
 ## How it Works
 
@@ -21,7 +23,7 @@ From this Reward Balance, the 10% (127500 in the example) will be subtracted to 
 The amount of fees in F will be affected by the following variables:
 
 * The number of siblings mined at the same processing height
-* The fact that the Selection Rule [[1]](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP15.md) was respected or broken
+* The fact that the Selection Rule [[2]](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP15.md) was respected or broken
 
 Some additional definitions will be introduced before we formalize how the payment is calculated for each miner.
 
@@ -130,4 +132,5 @@ For this example, an assumption that there wasn’t a broken rule for any block 
 
 ## References
 
-[1] [RSKIP-15](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP15.md)
+[1] [DECOR+](https://scalingbitcoin.org/papers/DECOR-LAMI.pdf)
+[2] [RSKIP-15](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP15.md)

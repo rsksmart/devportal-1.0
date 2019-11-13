@@ -21,6 +21,6 @@ Once the platform enters the maturity phase, we estimate the security of RSK wil
 
 ## Main features:
 
-- DECOR+ consensus protocol
+- [REMASC consensus protocol](/rsk/architecture/mining/remasc/)
 - One-day maturity for mining reward
 - No loss of efficiency in Bitcoin mining expected from merge mining (for late mid-state switching)
