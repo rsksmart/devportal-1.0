@@ -25,11 +25,11 @@ Run the unbox command
 truffle unbox rsk-starter-box
 ```
 
-## Setup envirnoment
+## Setup environment
 
 The only thing you'll need to do it's to copy your mnemonic to truffle-config.js
 
-```js
+```javascript
 // truffle-config.json
 
 const HDWalletProvider = require('truffle-hdwallet-provider');
@@ -62,6 +62,6 @@ truffle migrate --network mainnet
 truffle migrate --network testnet
 ```
 
-
 ## Repo
-[https://github.com/rsksmart/rsk-starter-box](https://github.com/rsksmart/rsk-starter-box)
+
+[github.com/rsksmart/rsk-starter-box](https://github.com/rsksmart/rsk-starter-box)
