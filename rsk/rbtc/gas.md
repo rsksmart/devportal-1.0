@@ -76,7 +76,7 @@ myContract.methods.myMethod(param1, param2, ...).estimateGas(options, callback)
 
 #### How does gas price change over time?
 
-Each miner can vote to increase or decrease the minGasPrice up to 0.01%. This allows miners to increase the `mininumGasPrice` 100% in approximately one day, assuming a block every 10 seconds.
+Each miner can vote to increase or decrease the `minimumGasPrice` up to 1%. This allows miners to increase the `minimumGasPrice` 100% in approximately 50 minutes, assuming a block every 30 seconds.
 Nodes that forward transactions could check that the advertised **gas price in a transaction is at least 1% higher than the minimum**. This assures the transaction a lifetime of 100 blocks assuming a constantly increasing block `minimumGasPrice`.
 Negotiated minimum gas price is described in [RSKIP09](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP09.md).
 
