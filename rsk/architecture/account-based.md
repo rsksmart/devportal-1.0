@@ -3,7 +3,7 @@ layout: rsk
 title: Account Based RSK Addresses
 ---
 
-RSK Addresses incorporate an optional blockchain identifier (also known as chain ID). If the chain ID is not present, it is assumed the address refers to the RSK main network.
+RSK Addresses incorporate an optional blockchain identifier (also known as `chainId`). If the `chainId` is not present, it is assumed the address refers to the RSK main network.
 
 ## How to get an address
 
@@ -15,10 +15,10 @@ RSK implements [EIP-1191](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-
 
 [In this document](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1191.md), you can find out how to apply the checksum and validate an address. This EIP is also supported by Web3 and hardware wallets.
 
-## Chain ID
+## `chainId`
 
-To avoid a replay attack by using an already-signed Tx, broadcasted in “network A”,  replaying it in “network B”, the EVM-based networks use `chainId` as part of the transaction properties.
-All chain IDs can be found here: [https://chainid.network/](https://chainid.network/)
+To avoid a replay attack by using an already-signed transaction, originally broadcast in “network A”, and subsequently replayed it in “network B”, the EVM-based networks use `chainId` as part of the transaction properties.
+All `chainId`s can be found at [chainid.network](https://chainid.network/).
 
 ```
 RSK Mainnet: 30
@@ -29,5 +29,5 @@ See [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md#user-
 
 We strongly recommend the following:
 
-1.	Add the chainId in the RSK integration (and every time you integrate EVM-based blockchains)
-2.	Use a different account to hold value for each blockchain (do not share the same account among RSK, ETH, and others)
+1. Add the `chainId` in the RSK integration (and every time you integrate EVM-based blockchains)
+2. Use a different account to hold value for each blockchain (do not share the same account among RSK, ETH, and others)
