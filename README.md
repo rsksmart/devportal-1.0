@@ -16,7 +16,10 @@ sudo gem install bundler jekyll
 
 #### Ubuntu
 ```shell
-sudo gem install
+sudo gem install bundler
+```
+```shell
+sudo gem install jekyll
 ```
 
 ## Host in local
