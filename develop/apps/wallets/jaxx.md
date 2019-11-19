@@ -5,17 +5,17 @@ title: Jaxx
 
 ## How to Setup a Jaxx Desktop Wallet
 
-* To get started, visit their official website [https://jaxx.io/](https://jaxx.io/) and click the "Download" button.
+* To get started, visit their official website [jaxx.io/](https://jaxx.io/), and click the "Download" button.
 
 <div align="center"><img width="100%" src="/assets/img/jaxx/jaxx1.png" alt="overview of download page"/></div>
 
-* Since we will be explaining the desktop version, please select the platform that corresponds to your desktop. In this guide, we will opt for the desktop version of Windows.
+* Select the platform that corresponds to your desktop. In this guide, we show the Windows desktop version.
 
 <div align="center"><img width="100%" src="/assets/img/jaxx/jaxx2.png" alt="overview of desktop versions"/></div>
 
 * Once the file is downloaded, double-click the setup.
 
-<div align="center"><img width="100%" src="/assets/img/jaxx/jaxx3.png" alt="setup package"/></div>
+<div align="center"><img width="240px" src="/assets/img/jaxx/jaxx3.png" alt="setup package"/></div>
 
 * Now you have two options available. Choose Option 1 "Create New Wallet".
 
@@ -29,7 +29,7 @@ title: Jaxx
 
 <div align="center"><img width="100%" src="/assets/img/jaxx/jaxx6.png" alt="overview of welcome page"/></div>
 
-#### Back Up Your Wallet
+### Back Up Your Wallet
 
 In the next step the wallet will ask you to back up.
 
@@ -43,7 +43,7 @@ In the next step the wallet will ask you to back up.
 
 <div align="center"><img width="100%" src="/assets/img/jaxx/jaxx9.png" alt="overview of backup phrase"/></div>
 
-* On the next window, you need to confirm the 12-word backup phrase. Type in this word mix in the correct order and click "Confirm".
+* On the next window, you need to confirm the 12-word backup phrase. Type them in the correct order and click "Confirm".
 
 <div align="center"><img width="100%" src="/assets/img/jaxx/jaxx10.png" alt="confirmation of backup phrase"/></div>
 
@@ -51,7 +51,7 @@ In the next step the wallet will ask you to back up.
 
 <div align="center"><img width="100%" src="/assets/img/jaxx/jaxx11.png" alt="backup complete page"/></div>
 
-#### Set a Password
+### Set a Password
 
 * Open the menu at the top right and go to "Security Password". Adding a password allows you to further secure your wallet.
 
