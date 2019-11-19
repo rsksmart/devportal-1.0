@@ -17,17 +17,19 @@ sudo gem install bundler jekyll
 #### Ubuntu
 ```shell
 sudo gem install bundler
-```
-```shell
 sudo gem install jekyll
 ```
 
 ## Host in local
 
-Run the cmd below in the root
+Run the following cmds in the root.
+
+If running for the first time, or dependencies have changed:
+```shell
+bundle install
+```
+To start the server:
 ```shell
 bundle exec jekyll serve
 ```
 You can browse to http://127.0.0.1:4000.
-
-
