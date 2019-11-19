@@ -22,7 +22,7 @@ sudo gem install jekyll
 
 ## Host in local
 
-Run the following cmds in the root.
+Run the following commands from the root of the project.
 
 If running for the first time, or dependencies have changed:
 ```shell
