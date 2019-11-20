@@ -4,22 +4,25 @@ title: Blockmason
 ---
 
 ## Using RSK with Blockmason Link
+
 RSK is an open source, Ethereum compatible, Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.
 
 In this onboarding example, we will deploy a smart contract to the RSK Testnet. 
 
 ### Setup
+
 You can obtain some Testnet RBTC tokens from [RSK Testnet Faucet](https://faucet.testnet.rsk.co/) to be sent to your Link default account address:
 ![RSK Testnet Faucet](/assets/img/tutorials/using-blockmason/testnet_faucet.png)
 
 ### API project setup in Link
+
 1\. In Link, open up the setting dropdown menu and select *`New Project`* which starts the new project wizard.
 
 ![Link New Project](/assets/img/tutorials/using-blockmason/link_new_project.png)
 
 2\. Under **Which contract would you like to use?**, select `Ownership` if the contract already exists, or select *`Create new`* and then copy and paste the `Ownership.sol` code into the *Source Code* field. Set the *Display Name* as `Ownership`. Press *`Save`* and *`Next`*.
 
-![New Contract Link](/assets/img/tutorials/using-blockmason/new_contract_link.png).
+![New Contract Link](/assets/img/tutorials/using-blockmason/new_contract_link.png)
 
 3\. Under *`Which Ethereum account would you like to use?`*, use the *`Default Account`*. This is the account we seeded with test RBTC tokens as part of the setup. 
 
@@ -74,6 +77,7 @@ And we see our contract deployed on RSK!
 Now you can go ahead and use the API endpoints which are linked to the Ownership smart contract deployed on RSK Testnet!
 
 ### Test Ownership API endpoints
+
 A simple JavaScript file using the Link JavaScript SDK in a Node environment can be found here:
 
 [https://github.com/blockmason/link-onboarding/blob/master/ownership-link-sdk-demo.js](https://github.com/blockmason/link-onboarding/blob/master/ownership-link-sdk-demo.js)
