@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RIF Storage
+title: storage/index
 ---
- 
+
 WIP
