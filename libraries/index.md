@@ -9,7 +9,6 @@ title: Libs
 - [Nethereum](https://nethereum.com/)
 - [Web3py](https://web3py.readthedocs.io/)
 
-
 ## RIF Libraries
 
 - [RNS](/rif/rns/libs)
