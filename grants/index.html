@@ -9,7 +9,6 @@
   <meta name="author" content="IOV Labs">
 
   <link rel="stylesheet" href="assets/grants.css">
-
 </head>
 
 <body>
@@ -43,7 +42,75 @@
   </section>
   <section class="apply">
     <h2>Submit your idea</h2>
-    TODO apply
+    <div>
+      <form
+        class="signup-form"
+        method="POST"
+        action="https://script.google.com/a/iovlabs.org/macros/s/AKfycbxKNB558VaAOhvfNGUXdWpSUzs8UAF34_FOCD2fuQ/exec"
+      >
+        <div
+          class="form-group signup-inputs"
+        >
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Full Name"
+          >
+        </div>
+        <div
+          class="form-group signup-inputs"
+        >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Email address"
+          >
+        </div>
+        <div
+          class="form-group signup-inputs"
+        >
+          <input
+            type="url"
+            class="form-control link"
+            id="link"
+            name="link"
+            placeholder="Link to portfolio/ website/ etc"
+          >
+        </div>
+        <div
+          class="form-group signup-inputs"
+        >
+          <textarea
+            type="text"
+            class="form-control link"
+            id="idea"
+            name="idea"
+            placeholder="Brief description of idea"
+          ></textarea>
+        </div>
+        <div
+          class="form-group signup-inputs"
+        >
+          <button
+            type="submit"
+            class="btn btn-primary mx-auto"
+          >Send</button>
+        </div>
+
+        <div class="signup-thanks d-none">
+          <h2 class="text-white mb-5">
+            Thank you for submitting your idea
+          </h2>
+          <p class="text-white mb-0">
+            The RSK team will be in touch with you after as soon as possible.
+          </p>
+        </div>
+      </form>
+    </div>
   </section>
   <script src="assets/grants.js"></script>
 </body>
