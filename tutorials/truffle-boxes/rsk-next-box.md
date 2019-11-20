@@ -8,6 +8,7 @@ title: Truffle Box (rsk-next-box)
 In this box you'll find a basic starter pack. It includes Truffle and Next JS.
 
 This starter contains two main elements
+
 - Truffle framework 
 - Next JS App (located at `app/` folder)
 
@@ -26,6 +27,7 @@ For simplicity, there is hook that is going to setup the environment and install
 ### Description
 
 As said before, this box comes with two environments
+
 - Truffle environment (located at root folder)
 - Next environment (located at `/app`)
 
@@ -48,7 +50,7 @@ To install truffle dependencies
 npm install
 ```
 
-Now, the only thing you'll need to do it's to copy your mnemonic to truffle-config.js
+Now, the only thing you'll need to do it's to copy your mnemonic to `truffle-config.js`
 
 ```js
 // truffle-config.json
@@ -85,7 +87,7 @@ truffle migrate --network testnet
 
 ### App environment setup
 
-First install it's dependenices.
+First install it's dependencies.
 
 ```bash
 # At app folder (I.E '../rsk-next-box/app')
@@ -110,9 +112,9 @@ To build the `app/` run
 npm build
 ```
 
-#### Comunicating with RSK network
+#### Communicating with RSK network
 
-[Web3 JS](https://web3js.readthedocs.io) and [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) have been bundled in order to comunicate with RSK network.
+[Web3 JS](https://web3js.readthedocs.io) and [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) have been bundled in order to communicate with RSK network.
 
 #### Code format with Prettier
 
@@ -127,6 +129,6 @@ To define new rules or edit exsting ones, just edit `.prettierrc`
 
 You can ignore files at `.prettierignore`
 
-
 ## Repo
-[https://github.com/rsksmart/rsk-next-box](https://github.com/rsksmart/rsk-next-box)
+
+[github.com/rsksmart/rsk-next-box](https://github.com/rsksmart/rsk-next-box)

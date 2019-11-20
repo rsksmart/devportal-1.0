@@ -9,6 +9,7 @@ In this box you'll find a basic starter pack. It includes Truffle, React and Web
 The app was created with create-react-app and it can be customized with customize-cra.
 
 This starter contains two main elements
+
 - Truffle framework 
 - React App (located at `app/` folder)
 
@@ -16,9 +17,9 @@ This starter contains two main elements
 
 Install node or update 
 
-Install node -> [https://nodejs.org/en/download/](https://nodejs.org/en/download/)
+Install node -> [nodejs.org/en/download/](https://nodejs.org/en/download/)
 
-Update node -> npm update
+Update node -> `npm update`
 
 
 ## Unboxing
@@ -34,6 +35,7 @@ truffle unbox rsksmart/rsk-react-webpack-box
 ### Description
 
 This box comes with two environments
+
 - Truffle environment (located at root folder)
 - React environment (located at `/app`)
 
@@ -58,11 +60,11 @@ npm install -g truffle
 To install truffle dependencies 
 
 ```bash
-# At project root folder (I.E '../resk-react-webpack-box/')
+# At project root folder (I.E '../rsk-react-webpack-box/')
 npm install
 ```
 
-Now, the only thing you'll need to do it's to create in the root directory a .env file and write your nemonic there
+Now, the only thing you'll need to do it's to create in the root directory a .env file and write your mnemonic there
 
 ```
 A_MNEMONIC="Write your seed words here"
@@ -71,7 +73,7 @@ A_MNEMONIC="Write your seed words here"
 
 In your `truffle-config.json` file import env variables 
 
-```js
+```javascript
 // truffle-config.json
 
 const HDWalletProvider = require('truffle-hdwallet-provider');
@@ -112,17 +114,17 @@ truffle migrate --network testnet
 
 ### App environment setup
 
-First install it's dependenices. Remember that you'll need to manage it with `yarn` package manager.
+First install it's dependencies. Remember that you'll need to manage it with `yarn` package manager.
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-react-webpack-box/app')
 yarn
 ```
 
 Then you can run the `app/` with
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-react-webpack-box/app')
 yarn start
 ```
 
@@ -133,15 +135,13 @@ yarn start
 To build the `app/` run 
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-react-webpack-box/app')
 yarn build
 ```
 
+#### Communicating with RSK network
 
-
-#### Comunicating with RSK network
-
-[Web3 JS](https://web3js.readthedocs.io) and [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) have been bundled for comunicating with RSK network.
+[Web3 JS](https://web3js.readthedocs.io) and [ethereumjs-tx](https://github.com/ethereumjs/ethereumjs-tx) have been bundled for communicating with RSK network.
 
 #### Customizing create-react-app default options
 
@@ -151,16 +151,17 @@ You can customize it at `app/config-overrides.js`.
 
 #### Code format with Prettier
 
-This project is integrated with [Prettier](https://prettier.io/) for handling code format. You can format the `app/` runing 
+This project is integrated with [Prettier](https://prettier.io/) for handling code format. You can format the `app/` running 
 
 ```bash
-# At app folder (I.E '../resk-react-webpack-box/app')
+# At app folder (I.E '../rsk-react-webpack-box/app')
 yarn lint
 ```
 
-To define new rules or edit exsting ones, just edit `.prettierrc`
+To define new rules or edit existing ones, just edit `.prettierrc`
 
 You can ignore files at `.prettierignore`
 
 ## Repo
-[https://github.com/rsksmart/rsk-react-webpack-box](https://github.com/rsksmart/rsk-react-webpack-box)
+
+[github.com/rsksmart/rsk-react-webpack-box](https://github.com/rsksmart/rsk-react-webpack-box)
