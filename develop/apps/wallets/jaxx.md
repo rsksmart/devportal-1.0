@@ -15,7 +15,7 @@ title: Jaxx
 
 * Once the file is downloaded, double-click the setup.
 
-<div align="center"><img width="240px" src="/assets/img/jaxx/jaxx3.png" alt="setup package"/></div>
+<div align="center"><img width="100%" src="/assets/img/jaxx/jaxx3.png" alt="setup package"/></div>
 
 * Now you have two options available. Choose Option 1 "Create New Wallet".
 
