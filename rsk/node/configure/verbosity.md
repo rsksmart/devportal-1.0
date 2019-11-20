@@ -36,7 +36,7 @@ When you configure your log level, all log items for that level and below get wr
 
 ## Setting your desired verbosity configuration
 
-You need to edit `logback.xml` file to set your desired level of verbosity. 
+You need to edit `logback.xml` file to set your desired level of verbosity.
 
 ```bash
 sudo vi /etc/rsk/logback.xml

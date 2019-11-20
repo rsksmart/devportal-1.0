@@ -7,7 +7,7 @@ The Smart Bitcoin (RBTC) is the token used to pay for the execution of transacti
 
 - Name: Smart Bitcoin
 - Ticker name: [RBTC](https://coinmarketcap.com/currencies/rsk-smart-bitcoin/)
-- Total supply: 21.000.000 RBTC (fixed)
+- Total supply: 21,000,000 RBTC (fixed)
 - Circulating supply: [Bridge contract](https://explorer.rsk.co/address/0x0000000000000000000000000000000001000006)
 - Logo: [RBTC-logo.png](/assets/img/rsk/RBTC-logo.png)
 
