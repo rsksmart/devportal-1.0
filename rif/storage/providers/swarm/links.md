@@ -3,5 +3,8 @@ layout: rsk
 title: swarm/links
 ---
 
-- [Official website](https://swarm.ethereum.org/)
-- [Read the docs](https://swarm-guide.readthedocs.io/en/latest/)
+- Official website
+  - [Web 2.0](https://swarm.ethereum.org/)
+  - [Web 3.0](bzz://swarm.eth)
+- [Read the Docs](https://swarm-guide.readthedocs.io/en/latest/)
+- [Github repository](https://github.com/ethersphere/swarm)
