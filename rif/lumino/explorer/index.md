@@ -5,7 +5,7 @@ title: Lumino Explorer How To Use
 
 Repository: [https://github.com/rsksmart/lumino-explorer](https://github.com/rsksmart/lumino-explorer)
 
-MainNet public explorer: [https://explorer.lumino.rifos.org/](https://explorer.lumino.rifos.org/)
+Mainnet public explorer: [https://explorer.lumino.rifos.org/](https://explorer.lumino.rifos.org/)
 
 RIF Lumino Explorer is a website which allows us to view the status of the Lumino Network. Each node can decide to be present or not in this explorer.
 
@@ -34,7 +34,7 @@ At the left of the dashboard we will see a summary widget with some general info
 
 <img src="/assets/img/lumino/widget.png" alt=""/>
 
-In the Dashboard (Screenshots above) we got some statistics from the MainNet.
+In the Dashboard (Screenshots above) we got some statistics from the Mainnet.
 
 1. How many nodes are connected to the Lumino Network
 2. How many nodes have channels opened in the selected token.

@@ -5,7 +5,7 @@ title: JSON-RPC
 
 In order to use JSON-RPC, you should have an RSK node running. Additionally, ensure that your node has enabled the `personal` module in the config file, as the `personal.newAccount` method will be used.
 
-> It's **not** recommended to use RPC personal module on MainNet. Use it only for testing purposes (on Testnet or Regtest).
+> It's **not** recommended to use RPC personal module on Mainnet. Use it only for testing purposes (on Testnet or Regtest).
 
 There are two simple ways to call RPC methods:
 

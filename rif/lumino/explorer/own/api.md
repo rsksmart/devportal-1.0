@@ -6,13 +6,12 @@ title: Lumino Explorer API
 ## Pre requisites
 
 1. Access to a synched RSK node. You can do this in a variety of ways:
-   * [Run your own node](/rsk/node/install) on TestNet or MainNet
+   * [Run your own node](/rsk/node/install) on Testnet or Mainnet
    * [Compile and run a RSK node locally](/rsk/node/contribute)
 2. Mongo Database Server (Version 3.6.x)
 3. Java 8 (Lastest Release)
 4. Maven (Version 3.6.x)
 5. RSK valid account
-
 
 ## Build RIF Lumino Explorer API from code
 

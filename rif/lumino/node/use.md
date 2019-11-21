@@ -6,7 +6,7 @@ title: How To Use
 
 1. Access to a synched RSK node. You can do this in a variety of ways:
   * [Public nodes](/rsk/public-nodes)
-  * [Run your own node](/rsk/node/install) on TestNet or MainNet
+  * [Run your own node](/rsk/node/install) on TestNet or Mainnet
   * [Compile and run a RSK node locally](/rsk/node/contribute)
 2. RSK account with RBTC balance
 3. Python 3.7
