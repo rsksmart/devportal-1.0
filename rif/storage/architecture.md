@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Architecture
+title: storage/architecture
 ---
 
 WIP

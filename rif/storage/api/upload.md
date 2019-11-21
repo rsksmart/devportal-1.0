@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: api/upload
+title: storage/api/upload
 ---
 
 WIP

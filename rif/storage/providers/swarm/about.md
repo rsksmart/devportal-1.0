@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Swarm
+title: About Swarm
 ---
 
 Swarm is a censorship resistant, permissionless, decentralised storage and communication infrastructure.

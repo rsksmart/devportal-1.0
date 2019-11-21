@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: api
+title: storage/api
 ---
 
 WIP

@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: ipfs/index
+title: storage/providers/ipfs/index
 ---
 
 WIP

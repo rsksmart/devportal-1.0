@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: swarm/links
+title: Swarm Links
 ---
 
 - Official website

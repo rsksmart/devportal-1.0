@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: swarm/index
+title: storage/providers/swarm/index
 ---
 
 WIP

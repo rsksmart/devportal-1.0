@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: providers/index
+title: storage/providers/index
 ---
 
 WIP
