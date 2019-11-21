@@ -27,9 +27,6 @@ mkdir $HOME/go
 
 Verify this step was successful through `echo $GOPATH`.
 
-## 1.3 Geth
-To install `Geth`, follow the instructions [here](https://geth.ethereum.org/docs/install-and-build/installing-geth).
-
 # 2. Create the Swarm binaries
 
 If needed, create the directory for the project:
