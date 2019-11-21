@@ -56,6 +56,10 @@ cd $GOPATH/src/github.com/ethersphere/swarm/build/bin/ &&
 ./swarm version
 ```
 
+# 3. Updating & Reinstalling
+
+To update the Swarm client simply download the newest source code and recompile.
+
 ------
 
 _Guide based on [Swarm for Node-Operators: Installation and Updates](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#installation-and-updates), by the Swarm team._
