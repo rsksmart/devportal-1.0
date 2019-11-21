@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Interact with Smart Contract
+title: Interact with Smart Contracts
 ---
 
 ## Interaction with the Contract

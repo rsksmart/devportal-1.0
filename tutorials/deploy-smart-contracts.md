@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Deploy Smart Contract
+title: Deploy Smart Contracts
 ---
 
 <style>
