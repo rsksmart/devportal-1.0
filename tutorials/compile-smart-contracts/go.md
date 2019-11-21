@@ -7,7 +7,7 @@ title: Compile Smart Contracts to Go
 
 In order to interact with a Smart Contract in a Go application, the ABI ([application binary interface](https://solidity.readthedocs.io/en/latest/abi-spec.html)) of the contract must first be generated, and then compiled so that it can be imported in said application.
 
-# 1. Pre-requisites
+# 1. Prerequisites
 ## 1.1 Solidity compiler
 Also known as `solc`, can be installed through:
 ```sh
