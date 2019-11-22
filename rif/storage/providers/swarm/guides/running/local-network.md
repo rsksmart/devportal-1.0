@@ -202,7 +202,7 @@ If you want the to maintain state when restarting the network, only repeat the `
 
 ------
 
-# Add more nodes to the local network
+# Add more nodes to the network
 
 To start up more Swarm nodes, repeat the previous instructions with as many directories (`./s1`, `./s2`, `./s3`, ..., `./sn`) as you wish.
 
