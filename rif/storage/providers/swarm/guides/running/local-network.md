@@ -13,7 +13,7 @@ If you need these nodes to run with incentivization, please refer to the [Incent
 
 ## 1. Requirements
 
-### `websocat` (optional)
+### 1.1 `websocat` (optional)
 
 `websocat` is a command-line web socket client, used to query the nodes running in the private network.
 
@@ -76,9 +76,9 @@ If you plan to [query the nodes](#query-the-nodes), follow the instructions [her
 
 ## 2. Start the blockchain
 
-### 2.1 Start ganache
+### 2.1 Start `ganache`
 
-Start a ganache instance with **this** specific seed:
+Start a Ganache instance with **this** specific seed:
 
 ```bash
 ganache-cli -m "sound oval reform desk episode taxi tribe frequent quiz about answer vendor" -p 9545
@@ -86,7 +86,7 @@ ganache-cli -m "sound oval reform desk episode taxi tribe frequent quiz about an
 
 ### 2.2 Deploy a SWAP Factory Smart Contract
 
-Once started, a `SimpleSwapFactory` contract will need to be deployed. 
+A `SimpleSwapFactory` Smart Contract will need to be deployed to the blockchain next. 
 
 This is a security measure to verify chequebook contracts deployed by the nodes in the network.
 
@@ -125,15 +125,23 @@ rm -rf "$DATADIR2" && mkdir "$DATADIR2" &&
 This will populate the directories with all of the files needed for each of the Swarm nodes. 
 
 Note that:
-- The node accounts will already be pre-funded in Ganache; this is achieved through using this specific seed and node keys.
+- The node accounts will already be pre-funded in Ganache; this is achieved through the use of a specific seed and hard-coded node keys.
+- Sync is disabled by default in order to be able to [trigger a cheque manually](#trigger-cheques) later.
 - A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
 - The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
 - Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The APIs enabled in this case are `accounting`, `bzz`, and `swap`. Others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
 
+## 3. Interact with the nodes
 
-# Generate a random file and upload
+See [interact with the network](#interact-with-the-network) section.
 
-This generates a 1.6MB file, pushes it to one nodes and then retrieves it one the other one which should be large enough to immediately trigger a cheque. 
+## 4. Trigger cheques
+
+It's possible to generate a random file and upload it to the network in order to trigger a cheque to be sent from one node to the other.
+
+The following command generates a 1.6MB file, pushes it to one node and then retrieves it on the other. 
+
+The file should be large enough to immediately trigger a cheque. 
 
 ```bash
 dd if=/dev/urandom of=output bs=1600k count=1 &&
@@ -141,13 +149,17 @@ dd if=/dev/urandom of=output bs=1600k count=1 &&
 "bzz-raw://$(./build/bin/swarm --bzzapi http://localhost:9100 up output)"
 ```
 
+If this doesn't work, vrify that:
+- The size of the file is enough to trigger a cheque to be sent.
+- The ports (specified in `bzzapi`) match the parameters for starting the nodes.
+
 ------
 
 # Restart the networks
 
 If you want to start from scratch, simply execute the entire code again. 
 
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node, and make sure the `DATADIR` variables are defined.
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each (make sure the `DATADIR` variables are defined).
 
 ------
 
