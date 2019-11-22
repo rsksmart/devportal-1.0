@@ -3,9 +3,25 @@ layout: rsk
 title: Running a local Swarm network
 ---
 
-# Swap Test Guide
+This guide sets up 2 Swarm nodes in a private network with balances on their bzzaccounts on a local blockchain. 
 
-This sets up 2 swarm nodes in a private network with balances on their bzzaccounts on a local blockchain. The nodes use the datadirs `./s1` and `./s2`. Requires `ganache-cli` and `websocat` to be installed. (https://www.npmjs.com/package/ganache-cli)
+Each of the nodes is loaded into a specific directory; in this case, it's the folders `./s1` and `./s2`. 
+
+The guide can be adapted to run without SWAP or incentives; for this reason incentives-related steps will be <span style="color:crimson">**marked as such.**</span>
+
+# 1. Requirements
+
+## 1.1 `ganache-cli` (optional, <span style="color:crimson">incentives</span>)
+
+`Ganache CLI` is a command line version of a local private blokchain, used generally for development purposes.
+
+To install it, follow the instructions [here](https://github.com/trufflesuite/ganache-cli#installation).
+
+## 1.2 `websocat` (optional)
+
+`websocat` is a command-line web socket client, used to query the nodes running in the private network.
+
+If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
 
 # Ganache session
 
@@ -49,19 +65,25 @@ dd if=/dev/urandom of=output bs=1600k count=1 &&
 "bzz-raw://$(./build/bin/swarm --bzzapi http://localhost:9100 up output)"
 ```
 
-# Query Balances
+# Query the nodes
 
-Query all balances:
+`websocat` can be used to call functions exposed through [RPC](https://www.tutorialspoint.com/remote-procedure-call-rpc).
+
+For example, to query all balances for the node listening on port `8546`, execute the following:
+
 ```bash
 echo swap_balances | websocat "ws://127.0.0.1:8546" --origin localhost --jsonrpc -n --one-message &&
-echo swap_balances | websocat "ws://127.0.0.1:8556" --origin localhost --jsonrpc -n --one-message
 ```
 
-Query a specific balance:
-```bash
-ADDRESS=02a4c0fafcf4ad9b189b5d9fda216968c8268e07c25a7ac235d643c521682de7 # example
-echo swap_peerBalance \"$ADDRESS\" | websocat "ws://127.0.0.1:8546" --origin localhost --jsonrpc -n --one-message
-```
+Note that this requires SWAP to be enabled in this node.
+
+Other calls might only be available depending on the [configuration parameters](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters).
+
+The Swarm documentation might not be up-to-date in terms of including all exposed functions. Search for the `rpc.API` string in the Swarm [codebase](https://github.com/ethersphere/swarm) to figure out which calls are available.
+
+# Add more nodes to the local network
+
+To start up more Swarm nodes, repeat the previous commands with as many directories (`./s1`, `./s2`, `./s3`, ..., `./sn`) as you wish.
 
 ------
 
