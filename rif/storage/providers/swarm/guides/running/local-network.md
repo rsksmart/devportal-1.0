@@ -3,7 +3,7 @@ layout: rsk
 title: Running a local Swarm network
 ---
 
-This guide sets up 2 Swarm nodes in a local, private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
+This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
 
 If you need these nodes to run with incentivization, please refer to the [Incentivized version](#incentivized-network) of the guide. If not, follow the much simpler [Standard version](#standard-network).
 
@@ -127,10 +127,10 @@ This will populate the directories with all of the files needed for each of the 
 Note that:
 - The node accounts will already be pre-funded in Ganache; this is achieved through the use of a specific seed and hard-coded node keys.
 - The Swarm network id `5` must be used for incentives to be enabled. This value can be verified by inspecting the `AllowedNetworkID` variable set in the [codebase](https://github.com/ethersphere/swarm).
-- Sync is disabled by default in order to be able to [trigger a cheque manually](#trigger-cheques) later.
+- Sync is disabled by default in order to be able to [trigger a cheque manually](#4-trigger-cheques) later.
 - A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
 - The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
-- Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The APIs enabled in this case are `accounting`, `bzz`, and `swap`. Others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
+- Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The APIs enabled in this case are `accounting`, `bzz`, and `swap`. You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
 
 ## 3. Interact with the nodes
 
@@ -156,21 +156,13 @@ If this doesn't work, check that:
 
 ------
 
-# Restart the Network
-
-If you want to start from scratch, simply execute the entire code again. 
-
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each (make sure the `DATADIR` variables are defined).
-
-------
-
 # Interact with the Network
 
+You can interact with the nodes in the network through the following means.
 
+## 1. Query the nodes
 
-# Query the nodes
-
-`websocat` can be used to call functions exposed through [RPC](https://www.tutorialspoint.com/remote-procedure-call-rpc).
+`websocat` can be used to call Swarm functions exposed through [RPC](https://www.tutorialspoint.com/remote-procedure-call-rpc).
 
 For example, to query all balances for the node listening on port `8546`, execute the following:
 
@@ -178,11 +170,35 @@ For example, to query all balances for the node listening on port `8546`, execut
 echo swap_balances | websocat "ws://127.0.0.1:8546" --origin localhost --jsonrpc -n --one-message &&
 ```
 
-Note that this requires SWAP to be enabled in this node.
+Note that this particular example requires SWAP to be enabled for this node.
 
-Other calls might only be available depending on the [configuration parameters](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters).
+Other calls might only be available depending on the `wsapi` [configuration parameter](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters).
 
 The Swarm documentation might not be up-to-date in terms of including all exposed functions. Search for the `rpc.API` string in the Swarm [codebase](https://github.com/ethersphere/swarm) to figure out which calls are available.
+
+## 2. Web interface
+
+A Swarm local web server endpoint for each node should be accessible through your browser.
+
+The web interface will allow you to upload and download files.
+
+By default, the server will be located at `http://localhost:8500`.
+
+You can find which port is used for each node by taking a look at the `bzzapi` flag used in each case.
+
+## 3. CLI
+
+By using the specific binary for each node (refer to the `swarm` file in each datadir forlder) you can execute operations in the standard manner, such as `up`, `down`, etc.
+
+You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/latest/dapp_developer/upload_cli.html#reference-table).
+
+------
+
+# Restart the Network
+
+If you want to start from scratch, simply execute the entire code again. 
+
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each (make sure the `DATADIR` variables are defined).
 
 ------
 
