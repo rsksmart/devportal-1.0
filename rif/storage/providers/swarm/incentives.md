@@ -26,7 +26,7 @@ SWAP allows nodes to keep track of their balances, so that if a node requests ma
 <img src="https://www.rifos.org/wp-content/uploads/2019/07/5.-swap.gif"/>
 <p style="text-align:center;"><sub>The SWAP mechanism shown here, where nodes send and receive chunks from each other and the balance is settled once the chunk-o-meter tilts too much to one side.</sub></p>
 
-While simple in design, such a concept is powerful in a decentralized network. As illustrated by the rise of Bitcoin and cryptocurrencies, incentives —when well structured—can nudge nodes to behave in certain manners desirable for the health of the network. 
+While simple in design, such a concept is powerful in a decentralized network. As illustrated by the rise of Bitcoin and cryptocurrencies, incentives—when well structured—can nudge nodes to behave in certain manners desirable for the health of the network. 
 
 In this case, we expect nodes driven by profit to join the network and serve the most desired chunks from high-throughput servers, which will make the network more robust, faster and more difficult to take down. 
 
