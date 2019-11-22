@@ -4,7 +4,7 @@ title: Debugging Swarm
 ---
 
 ## 1. Open the `swarm` project
-Load the entire Swarm project into your favorite IDE.
+Load the entire [Swarm project](https://github.com/ethersphere/swarm) into your favorite IDE.
 
 The default location should be `$GOPATH/src/github.com/ethersphere/swarm`.
 

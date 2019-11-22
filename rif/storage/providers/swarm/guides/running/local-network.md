@@ -188,7 +188,7 @@ You can find which port is used for each node by taking a look at the `bzzapi` f
 
 ## 3. CLI
 
-By using the specific binary for each node (refer to the `swarm` file in each datadir forlder) you can execute operations in the standard manner, such as `up`, `down`, etc.
+By using the specific binaries for each node (refer to the `swarm` file in each datadir folder) you can execute operations in the standard manner, such as `up`, `down`, etc.
 
 You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/latest/dapp_developer/upload_cli.html#reference-table).
 
