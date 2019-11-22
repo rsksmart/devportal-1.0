@@ -126,6 +126,7 @@ This will populate the directories with all of the files needed for each of the 
 
 Note that:
 - The node accounts will already be pre-funded in Ganache; this is achieved through the use of a specific seed and hard-coded node keys.
+- The Swarm network id `5` must be used for incentives to be enabled. This value can be verified by inspecting the `AllowedNetworkID` variable set in the [codebase](https://github.com/ethersphere/swarm).
 - Sync is disabled by default in order to be able to [trigger a cheque manually](#trigger-cheques) later.
 - A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
 - The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
@@ -139,7 +140,7 @@ See [interact with the network](#interact-with-the-network) section.
 
 It's possible to generate a random file and upload it to the network in order to trigger a cheque to be sent from one node to the other.
 
-The following command generates a 1.6MB file, pushes it to one node and then retrieves it on the other. 
+The following command generates a 1.6 MB file, pushes it to one node and then retrieves it on the other. 
 
 The file should be large enough to immediately trigger a cheque. 
 
@@ -149,13 +150,13 @@ dd if=/dev/urandom of=output bs=1600k count=1 &&
 "bzz-raw://$(./build/bin/swarm --bzzapi http://localhost:9100 up output)"
 ```
 
-If this doesn't work, vrify that:
-- The size of the file is enough to trigger a cheque to be sent.
+If this doesn't work, check that:
 - The ports (specified in `bzzapi`) match the parameters for starting the nodes.
+- The size of the file is enough to trigger a cheque to be sent. This can be verified through the value of the `paymentThreshold` variable set in the [codebase](https://github.com/ethersphere/swarm).
 
 ------
 
-# Restart the networks
+# Restart the Network
 
 If you want to start from scratch, simply execute the entire code again. 
 
@@ -183,9 +184,16 @@ Other calls might only be available depending on the [configuration parameters](
 
 The Swarm documentation might not be up-to-date in terms of including all exposed functions. Search for the `rpc.API` string in the Swarm [codebase](https://github.com/ethersphere/swarm) to figure out which calls are available.
 
+------
+
 # Add more nodes to the local network
 
-To start up more Swarm nodes, repeat the previous commands with as many directories (`./s1`, `./s2`, `./s3`, ..., `./sn`) as you wish.
+To start up more Swarm nodes, repeat the previous instructions with as many directories (`./s1`, `./s2`, `./s3`, ..., `./sn`) as you wish.
+
+Make sure that:
+- You use different ports for each node.
+- All nodes except the first one have the same `bootnodes` parameter value.
+- Nodes use node IDs (`bzzkeyhex`) which are prefunded by the Ganache seed.
 
 ------
 
