@@ -3,7 +3,7 @@ layout: rsk
 title: Running Swarm for the first time
 ---
 
-## Check the `swarm` command is in the PATH
+## 1. Check the `swarm` command is in the PATH
 
 Verify this with `which swarm`.
 
@@ -11,7 +11,7 @@ If the `swarm` command cannot be found, you can [add the Swarm binary route to y
 
 Alternatively, you will need to use `$GOPATH/bin/swarm` instead.
 
-## Execute the `swarm` command
+## 2. Execute the `swarm` command
 
 To boot up Swarm for the first time simply execute:
 
@@ -19,7 +19,7 @@ To boot up Swarm for the first time simply execute:
 swarm
 ```
 
-## Add a `Geth` account
+## 3. Add a `Geth` account
 
 You will need account to use one. When running
 
@@ -37,6 +37,6 @@ Verify that Swarm boots up correctly (replace the account address with your own)
 $GOPATH/src/github.com/ethersphere/swarm/build/bin/swarm --bzzaccount 0x2f1cd699b0bf461dcfbf0098ad8f5587b038f0f1
 ```
 
-## Interacting with the client
+## 4. Interacting with the client
 
 After this, the Swarm local web server endpoint should be accessible through your browser, by default at `http://localhost:8500`.
