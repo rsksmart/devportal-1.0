@@ -151,7 +151,7 @@ dd if=/dev/urandom of=output bs=1600k count=1 &&
 ```
 
 If this doesn't work, check that:
-- The ports (specified in `bzzapi`) match the parameters for starting the nodes.
+- The endpoints (specified in `bzzapi`) match the parameters for starting the nodes.
 - The size of the file is enough to trigger a cheque to be sent. This can be verified through the value of the `paymentThreshold` variable set in the [codebase](https://github.com/ethersphere/swarm).
 
 ------
@@ -184,11 +184,11 @@ The web interface will allow you to upload and download files.
 
 By default, the server will be located at `http://localhost:8500`.
 
-You can find which port is used for each node by taking a look at the `bzzapi` flag used in each case.
+You can find which port is used for each node by taking a look at the `bzzport` flag used in each case.
 
 ## 3. CLI
 
-By using the specific binaries for each node (refer to the `swarm` file in each datadir folder) you can execute operations in the standard manner, such as `up`, `down`, etc.
+By using the `swarm` binary you can execute operations in the standard manner, such as `up`, `down`, etc., for the node that uses the default parameters (such as port `8500`).
 
 You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/latest/dapp_developer/upload_cli.html#reference-table).
 

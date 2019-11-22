@@ -19,24 +19,31 @@ To boot up Swarm for the first time simply execute:
 swarm
 ```
 
-## 3. Add a `Geth` account
+## 3. Specify a `Geth` account
 
-You will need account to use one. When running
+You will need a `Geth` account to use Swarm. This can either:
+- be specified by the `bzzaccount` [flag](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters) (if the account already exists)
+- be created through a Swarm prompt (if not specified)
 
-You will be prompted to create a geth account.
+Note that after used once, an account will continue to be used by default if not specified the next time.
 
-In case you need to create a Geth account, do the following:
+## 4. Verify the client is running
 
-```sh
-$GOPATH/bin/geth account new
-```
+If Swarm was started successfully, the local web server endpoint should be accessible through your browser, by default at `http://localhost:8500`.
 
-Verify that Swarm boots up correctly (replace the account address with your own).
+This web interface will allow you to upload and download files manually.
 
-```sh
-$GOPATH/src/github.com/ethersphere/swarm/build/bin/swarm --bzzaccount 0x2f1cd699b0bf461dcfbf0098ad8f5587b038f0f1
-```
+In contrast, the terminal in which `swarm` was executed will allow you to take a look at log outputs and relevant execution messages, as well as errors.
 
-## 4. Interacting with the client
+## 5. CLI interaction
 
-After this, the Swarm local web server endpoint should be accessible through your browser, by default at `http://localhost:8500`.
+The terminal can be used to interact with Swarm once the system is up and running. The 2 most basic commands are:
+
+- `up`
+  - e.g. `swarm up dog.png`
+  - the output will look something like `858ce596aedec06c4d31d983dcc8a0df404b3c925600a8a9ac0332cc296b7883`. This is (in essence) the content hash for the uploaded file, which can then be used to retrieve it.
+- `down`
+  - e.g. `swarm down bzz://858ce596aedec06c4d31d983dcc8a0df404b3c925600a8a9ac0332cc296b7883`
+  - if successful, there will be no output, and the corresponding file according to this hash will be placed in the current directory.
+
+You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/latest/dapp_developer/upload_cli.html#reference-table).
