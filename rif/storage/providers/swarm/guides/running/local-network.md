@@ -198,7 +198,7 @@ You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/lat
 
 If you want to start from scratch, simply execute the entire code again. 
 
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each (make sure the `DATADIR` variables are defined).
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#22-start-each-node-1).
 
 ------
 
@@ -210,6 +210,7 @@ Make sure that:
 - You use different ports for each node.
 - All nodes except the first one have the same `bootnodes` parameter value.
 - Nodes use node IDs (`bzzkeyhex`) which are prefunded by the Ganache seed.
+  - Alternatively, use node IDs outside of this seed to see how nodes without funding behave in an incentivized network.
 
 ------
 
