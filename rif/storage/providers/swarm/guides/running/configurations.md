@@ -75,3 +75,9 @@ For example:
 ```sh
 swarm --bzznetworkid 5 --swap --swap-backend-url https://ropsten.infura.io/E4bWUMMVp0qItxErZ69u --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
+
+This will start a SWAP-enabled Swarm node using network ID `5`, which means it will only be able to connect to other nodes with this same network ID. 
+
+It will also use Ropsten as a blockchain, deploying on it a new chequebook and making a deposit of `500000000000` Wei to it.
+
+The smart contract used to verify the chequebook contracts of discovered peers is located at address `0x41ca78f7fd9e745beabb2145a9ffd60992a96a28`.
