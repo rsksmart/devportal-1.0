@@ -11,15 +11,16 @@ For a full list of the available command line options for `swarm`, see [here](ht
 1. [ENS Resolution](#1-ens-resolution)
 2. [Incentivization](#2-incentivization)
 
+
 # 1. ENS Resolution
 
 Swarm can't resolve ENS addresses by itself; it needs to delegate this task. 
 
-## Through `Geth`
+## 1.1 Through `Geth`
 
 The easiest way to do this is to run a **Geth** node locally and let Swarm make calls to this instance when attempting to resolve addresses.
 
-Run Geth through the `geth` command. Leave the node running long enough so that it's in-sync with the blockchain.
+Run Geth through the `geth` command (to install Geth, follow [these instructions](https://geth.ethereum.org/docs/install-and-build/installing-geth)). Leave the node running long enough so that it's in-sync with the blockchain.
 
 **Tip**: save resources by running Geth in light mode:
 
@@ -35,9 +36,9 @@ swarm --ens-api $HOME/.ethereum/geth.ipc
 
 where the value of the `ens-api` flag is a valid path to a running Geth IPC.
 
-## Through Smart Contracts
+## 1.2 Through Smart Contracts
 
-As an alternative, you can resolve ENS addresses by specifying pairs of top level domains (TLD) and Smart Contracts. For example:
+As an alternative, you can resolve ENS addresses by specifying pairs of top level domains (TLD) and Smart Contracts of the [Resolver type](https://docs.ens.domains/#ens-architecture). For example:
 
 ```shell
 swarm --ens-api eth:0x98a12be4d89bbf6cdf11d1a2c029904a7b644368@https://public-node.rsk.co
@@ -51,6 +52,15 @@ In this example:
 See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using-swarm-together-with-the-testnet-ens) for more information.
 
 # 2. Incentivization
+
+Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network. In particular:
+
+- SWAP-enabled nodes can only be run under specific networks IDs.
+- SWAP needs to be enabled.
+- An endpoint (in the form of a node URL) used for calls to the blockchain needs to be provided.
+
+For example:
+
 ```sh
 swarm --bzznetworkid 5 --swap --swap-backend-url https://ropsten.infura.io/E4bWUMMVp0qItxErZ69u --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
