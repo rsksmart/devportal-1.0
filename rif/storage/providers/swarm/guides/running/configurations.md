@@ -56,7 +56,7 @@ See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using
 Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network. In particular:
 
 - SWAP-enabled nodes can only be run under specific networks IDs.
-- SWAP needs to be enabled.
+- SWAP needs to be explicitely enabled as a protocol.
 - An endpoint (in the form of a node URL) used for calls to the blockchain needs to be provided.
 
 For example:
@@ -65,6 +65,7 @@ For example:
 swarm --bzznetworkid 5 --swap --swap-backend-url https://ropsten.infura.io/E4bWUMMVp0qItxErZ69u --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
 
+In this example:
 - `bzznetworkid` matches the allowed network ID for SWAP, which is set through the `AllowedNetworkID`. This can be verified by inspecting the [codebase](https://github.com/ethersphere/swarm).
 - `swap` explicitely activates SWAP.
 - `swap-backend-url` is URL of the Ethereum API provider.
