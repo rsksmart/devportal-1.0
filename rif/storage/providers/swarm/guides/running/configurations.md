@@ -46,7 +46,7 @@ swarm --ens-api eth:0x314159265dD8dbb310642f98f50C066173C1259b@https://mainnet.i
 
 In this example:
 - `eth` is the TLD.
-- `0x314159265dD8dbb310642f98f50C066173C1259b` is the smart contract address.
+- `0x314159265dD8dbb310642f98f50C066173C1259b` is the address for the ENS resolver smart contract.
 - `https://mainnet.infura.io` is the blockchain endpoint to be used when interacting with the contract.
 
 See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using-swarm-together-with-the-testnet-ens) for more information.
