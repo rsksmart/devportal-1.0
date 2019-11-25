@@ -53,34 +53,25 @@ See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using
 
 # 2. Incentivization
 
-Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network. In particular:
+Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network. 
 
-| Parameter| Info |
+Here are the incentives-related parameters. Some of these are optional, whether to use any of these or not depends on your use case.
+
+| Parameter | Info |
 |---|---|
 | `bzznetworkid` | Numerical network identifier. The default is the public swarm testnet. SWAP-enabled nodes can only be run under a specific networks ID, which is set through the `AllowedNetworkID` constant. Its current value is `5`, but this can be verified by inspecting the [codebase](https://github.com/ethersphere/swarm).  |
-| `swap` | Enables SWAP, which is by default disabled.  |
-| `swap-chequebook` | The address of the SWAP chequebook smart contract that the node is going to use. Note that if not provided, Swarm will attempt to deploy a new chequebook contract. Also note that the same. |
-| `swap-chequebook-factory` | The address of the SWAP chequebook factory smart contract used to validate chequebook smart contracts. |
-| `swap-initial-deposit` |   |
-| `swap-backend-url` | The URL of the Ethereum API provider to use when calling the blockchain (to settle payments in the case of SWAP). |
-|   |   |
-|   |   |
+| `swap` | Enables SWAP, which is by default disabled. |
+| `swap-chequebook` | The address of the SWAP chequebook smart contract that the node is going to use. Note that if not provided, Swarm will attempt to deploy a new chequebook contract, unless it remembers a previously used chequebook. Also keep in mind that the same chequebook cannot be used in different blockchains. |
+| `swap-chequebook-factory` | The address of the SWAP chequebook factory smart contract used to validate chequebook smart contracts. You can provide your own contract, but its bytecode will be validated on node start-up. You should only submit this parameter if there is no default factory for the blockchain that you are using (to check this, look for the `Deployments` map in the [codebase](https://github.com/ethersphere/swarm)). If 2 nodes deploy chequebook contracts with different factories, an error will occur during handshake. |
+| `swap-initial-deposit` | Amount of Wei to deposit to the SWAP chequebook when deployed. |
+| `swap-backend-url` | The URL of the Ethereum API provider to use when calling the blockchain. This will be used when deploying contracts or settling payments. |
+| `swap-payment-threshold` | Balance that indicates when to make a payment to a peer to which your node is indebted. You shouldn't need to change this one, generally. |
+| `swap-disconnect-threshold` | Balance that indicates when to disconnect a peer which is indebted to your node. You shouldn't need to change this one, generally. |
 
-
-
-- 
-- SWAP needs to be explicitely enabled as a protocol.
-- An endpoint (in the form of a node URL) used for calls to the blockchain needs to be provided.
+------
 
 For example:
 
 ```sh
 swarm --bzznetworkid 5 --swap --swap-backend-url https://ropsten.infura.io/E4bWUMMVp0qItxErZ69u --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
-
-In this example:
-- `bzznetworkid` matches the allowed network ID for SWAP, which is set through the `AllowedNetworkID`. This can be verified by inspecting the [codebase](https://github.com/ethersphere/swarm).
-- `swap` explicitely enables SWAP.
-- `swap-backend-url` is URL of the Ethereum API provider.
-- `swap-initial-deposit` is the initial deposit amount for the SWAP chequebook that this node will use.
-- `swap-chequebook-factory` is the SWAP chequebook factory contract address.
