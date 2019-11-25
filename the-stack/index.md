@@ -6,7 +6,7 @@ title: The Stack
 
 <div class="container the-stack">
 
-<div class="row reverse_mobile">
+<div class="row rsk_green">
     <div class="col"><span><a href="/develop/apps/wallets/">Wallet</a></span></div>
     <div class="col"><span><a href="/develop/apps/exchanges/">Exchange</a></span></div>
     <div class="col"><span><a href="/tutorials/create-a-token">Tokenization</a></span></div>
@@ -16,7 +16,7 @@ title: The Stack
 <div class="row has-unique-col">
     <div class="col"><span><a href="/develop/">Dapps</a></span></div>
 </div>
-<div class="row has-unique-col reverse_mobile">
+<div class="row has-unique-col rif_blue_text">
     <div class="col"><span><a href="/libraries/">Libraries</a></span></div>
 </div>
 <div class="row rif_blue">
@@ -28,11 +28,11 @@ title: The Stack
     <div class="col"><span>Marketplace</span></div>
 </div>
 
-<div class="row has-unique-col">
+<div class="row has-unique-col rsk_blue">
     <div class="col"><span><a href="/rsk/">RSK: Business Logic</a></span></div>
 </div>
 
-<div class="row has-unique-col green_reverse">
+<div class="row has-unique-col">
     <div class="col"><span><a href="https://bitcoin.org/en/development">Bitcoin: Store of Value</a></span></div>
 </div>
 

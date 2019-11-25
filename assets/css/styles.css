@@ -1169,7 +1169,7 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 
 
 .the-stack .row .col a{
-	padding:15px;
+	/*padding:15px;*/
 	width: 100%;
 	color:#00b520; 
 }
@@ -1180,7 +1180,7 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 
 .the-stack .row .col span{
 	padding:15px;
-	color:#00b520;
+	color: rgb(255, 255, 255)!important;
 }
 
 .the-stack .row .col a > span{
@@ -1189,12 +1189,10 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 
-
-
 .the-stack .has-unique-col .col a{
 	font-size:20px;
-	 min-height:0px;
-	     width: 100%;
+	min-height:0px;
+	width: 100%;
 }
 
 .the-stack .has-unique-col .col span{
@@ -1204,18 +1202,92 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 
 
 
+
+
+
+.the-stack .rsk_green .col {
+	color: rgb(255, 255, 255)!important;
+	background-color: rgb(0, 181, 32)!important;  
+} 
+
+.the-stack .rsk_green .col a {
+	color: rgb(255, 255, 255)!important;
+	    width: 100%;
+} 
+
+.the-stack .rsk_green .col span{
+	color:rgb(255, 255, 255)!important;
+} 
+
+/* rif blue bg white text */
+
 .the-stack .rif_blue .col {
-	color: rgb(0, 191, 255)!important; 
+	color: rgb(255, 255, 255)!important;
+	background-color: rgb(0, 191, 255)!important;  
 } 
 
 .the-stack .rif_blue .col a {
-	color: rgb(0, 191, 255)!important; 
+	color: rgb(255, 255, 255)!important;
 	    width: 100%;
 } 
 
 .the-stack .rif_blue .col span{
-	color: rgb(0, 191, 255)!important; 
+	color:rgb(255, 255, 255)!important;
 } 
+
+
+/* rif blue text white bg */
+
+.the-stack .rif_blue_text .col {
+	color: rgb(0, 191, 255)!important;  
+	
+} 
+
+.the-stack .rif_blue_text .col a {
+	color: rgb(0, 191, 255)!important;  
+	    width: 100%;
+} 
+
+.the-stack .rif_blue_text .col span{
+	color: rgb(0, 191, 255)!important;  
+} 
+
+
+/* rsk blue bg white text */
+
+.the-stack .rsk_blue .col {
+	color: rgb(255, 255, 255)!important;
+	background-color: rgb(0, 157, 195)!important;  
+} 
+
+.the-stack .rsk_blue .col a {
+	color: rgb(255, 255, 255)!important;
+	    width: 100%;
+} 
+
+.the-stack .rsk_blue .col span{
+	color:rgb(255, 255, 255)!important;
+} 
+
+
+/* rsk blue text white bg */
+
+.the-stack .rsk_blue_text .col {
+	color: rgb(0, 157, 195)!important;  
+	
+} 
+
+.the-stack .rsk_blue_text .col a {
+	color: rgb(0, 157, 195)!important;  
+	    width: 100%;
+} 
+
+.the-stack .rsk_blue_text .col span{
+	color: rgb(0, 157, 195)!important;  
+} 
+
+
+
 
 .the-stack .green_reverse .col{
 	background:#00B520!important;
