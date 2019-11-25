@@ -7,7 +7,11 @@ Use the following cheatsheet to run Swarm with the desired capabilities.
 
 For a full list of the available command line options for `swarm`, see [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters).
 
-# ENS resolution
+# Table of Contents
+1. [ENS Resolution](#1-ens-resolution)
+2. [Incentivization](#2-incentivization)
+
+# 1. ENS Resolution
 
 Swarm can't resolve ENS addresses by itself; it needs to delegate this task. 
 
@@ -46,8 +50,7 @@ In this example:
 
 See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using-swarm-together-with-the-testnet-ens) for more information.
 
-# Incentivization
-
+# 2. Incentivization
 ```sh
 swarm --bzznetworkid 5 --swap --swap-backend-url https://ropsten.infura.io/E4bWUMMVp0qItxErZ69u --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
