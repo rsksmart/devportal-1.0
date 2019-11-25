@@ -2,7 +2,6 @@
 layout: rsk
 title: The Stack
 ---
- 
 
 <div class="container the-stack">
 

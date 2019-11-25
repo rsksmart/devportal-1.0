@@ -13,7 +13,6 @@ body {
 	line-height: 25px!important;
 }
 
-
 .navbar_bottom_shape {
 	width: 100%;
 	height: 200px;
@@ -244,14 +243,14 @@ a:not([href]):not([tabindex]) {
 
 
 .menu-container a {
-	display: block; 
+	display: block;
 	width: 100%;
 }
 
 .menu-container a.index {
 	font-family: 'Quicksand', sans-serif!important;
-	color:#CCCCCC!important; 
-	font-weight:bold!important; 
+	color:#CCCCCC!important;
+	font-weight:bold!important;
 	padding: 0 0 30px 0;
 	font-size:15px;
 }
@@ -278,7 +277,7 @@ a:not([href]):not([tabindex]) {
 
 .exclude-doc-from-breadcrumbs {
 	padding-left: 0px!important;
-} 
+}
 
 .first_level > ul {
 	padding-left: 0px!important;
@@ -520,7 +519,7 @@ margin: 0 0 15px 0;
 }
 
 
- 
+
 .rsk_green {
 	color: #00B520;
 }
@@ -754,7 +753,7 @@ color:white!important;
 #footer .footer-top .footer-links ul a:hover {
 	color: white!important;
 	text-decoration: none;
-	
+
 }
 
 #footer .footer-top .footer-links ul li:hover .bold {
@@ -1147,12 +1146,12 @@ color:white!important;
     flex-wrap: wrap;
  color:#00b520;}
 
- 
+
 
 .the-stack .row .col{
 	display: flex;
 	 align-items: center;
-	 justify-content: center;  
+	 justify-content: center;
 	font-family: 'Quicksand', sans-serif;
 	    line-height: 20px;
 	 text-align: center;
@@ -1171,7 +1170,7 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 .the-stack .row .col a{
 	/*padding:15px;*/
 	width: 100%;
-	color:#00b520; 
+	color:#00b520;
 }
 
 .the-stack .row .col a:hover{
@@ -1184,7 +1183,7 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .the-stack .row .col a > span{
-	padding:0px; 
+	padding:0px;
 
 }
 
@@ -1207,105 +1206,105 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 
 .the-stack .rsk_green .col {
 	color: rgb(255, 255, 255)!important;
-	background-color: rgb(0, 181, 32)!important;  
-} 
+	background-color: rgb(0, 181, 32)!important;
+}
 
 .the-stack .rsk_green .col a {
 	color: rgb(255, 255, 255)!important;
 	    width: 100%;
-} 
+}
 
 .the-stack .rsk_green .col span{
 	color:rgb(255, 255, 255)!important;
-} 
+}
 
 /* rif blue bg white text */
 
 .the-stack .rif_blue .col {
 	color: rgb(255, 255, 255)!important;
-	background-color: rgb(0, 191, 255)!important;  
-} 
+	background-color: rgb(0, 191, 255)!important;
+}
 
 .the-stack .rif_blue .col a {
 	color: rgb(255, 255, 255)!important;
 	    width: 100%;
-} 
+}
 
 .the-stack .rif_blue .col span{
 	color:rgb(255, 255, 255)!important;
-} 
+}
 
 
 /* rif blue text white bg */
 
 .the-stack .rif_blue_text .col {
-	color: rgb(0, 191, 255)!important;  
-	
-} 
+	color: rgb(0, 191, 255)!important;
+
+}
 
 .the-stack .rif_blue_text .col a {
-	color: rgb(0, 191, 255)!important;  
+	color: rgb(0, 191, 255)!important;
 	    width: 100%;
-} 
+}
 
 .the-stack .rif_blue_text .col span{
-	color: rgb(0, 191, 255)!important;  
-} 
+	color: rgb(0, 191, 255)!important;
+}
 
 
 /* rsk blue bg white text */
 
 .the-stack .rsk_blue .col {
 	color: rgb(255, 255, 255)!important;
-	background-color: rgb(0, 157, 195)!important;  
-} 
+	background-color: rgb(0, 157, 195)!important;
+}
 
 .the-stack .rsk_blue .col a {
 	color: rgb(255, 255, 255)!important;
 	    width: 100%;
-} 
+}
 
 .the-stack .rsk_blue .col span{
 	color:rgb(255, 255, 255)!important;
-} 
+}
 
 
 /* rsk blue text white bg */
 
 .the-stack .rsk_blue_text .col {
-	color: rgb(0, 157, 195)!important;  
-	
-} 
+	color: rgb(0, 157, 195)!important;
+
+}
 
 .the-stack .rsk_blue_text .col a {
-	color: rgb(0, 157, 195)!important;  
+	color: rgb(0, 157, 195)!important;
 	    width: 100%;
-} 
+}
 
 .the-stack .rsk_blue_text .col span{
-	color: rgb(0, 157, 195)!important;  
-} 
+	color: rgb(0, 157, 195)!important;
+}
 
 
 
 
 .the-stack .green_reverse .col{
 	background:#00B520!important;
-} 
+}
 
 .the-stack .green_reverse .col a{
 	color: white!important;
-	padding:15px; 
+	padding:15px;
 	    width: 100%;
-} 
+}
 
 .the-stack .green_reverse .col span{
-	color: white!important; 
+	color: white!important;
 	padding:15px;
 }
 
 .the-stack .green_reverse .col a > span{
-	color: white!important; 
+	color: white!important;
 	padding:0px;
 }
 
@@ -1435,11 +1434,11 @@ background:#00b520;
 }
 
 .the-stack .reverse_mobile .col a{
-	color:#FFFFFF!important; 
+	color:#FFFFFF!important;
 }
 
 .the-stack .reverse_mobile span{
-	color:#FFFFFF!important; 
+	color:#FFFFFF!important;
 }
 
 
