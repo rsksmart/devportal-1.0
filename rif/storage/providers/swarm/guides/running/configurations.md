@@ -41,13 +41,13 @@ where the value of the `ens-api` flag is a valid path to a running Geth IPC.
 As an alternative, you can resolve ENS addresses by specifying pairs of top level domains (TLD) and Smart Contracts of the [Resolver type](https://docs.ens.domains/#ens-architecture). For example:
 
 ```shell
-swarm --ens-api eth:0x98a12be4d89bbf6cdf11d1a2c029904a7b644368@https://public-node.rsk.co
+swarm --ens-api eth:0x314159265dD8dbb310642f98f50C066173C1259b@https://mainnet.infura.io
 ```
 
 In this example:
 - `eth` is the TLD.
-- `0x98a12be4d89bbf6cdf11d1a2c029904a7b644368` is the smart contract address.
-- `https://public-node.rsk.co` is the blockchain endpoint to be used when interacting with the contract.
+- `0x314159265dD8dbb310642f98f50C066173C1259b` is the smart contract address.
+- `https://mainnet.infura.io` is the blockchain endpoint to be used when interacting with the contract.
 
 See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using-swarm-together-with-the-testnet-ens) for more information.
 
