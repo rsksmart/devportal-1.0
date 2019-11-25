@@ -55,7 +55,20 @@ See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using
 
 Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network. In particular:
 
-- SWAP-enabled nodes can only be run under specific networks IDs.
+| Parameter| Info |
+|---|---|
+| `bzznetworkid` | Numerical network identifier. The default is the public swarm testnet. SWAP-enabled nodes can only be run under a specific networks ID, which is set through the `AllowedNetworkID` constant. Its current value is `5`, but this can be verified by inspecting the [codebase](https://github.com/ethersphere/swarm).  |
+| `swap` | Enables SWAP, which is by default disabled.  |
+| `swap-chequebook` | The address of the SWAP chequebook smart contract that the node is going to use. Note that if not provided, Swarm will attempt to deploy a new chequebook contract. Also note that the same. |
+| `swap-chequebook-factory` | The address of the SWAP chequebook factory smart contract used to validate chequebook smart contracts. |
+| `swap-initial-deposit` |   |
+| `swap-backend-url` | The URL of the Ethereum API provider to use when calling the blockchain (to settle payments in the case of SWAP). |
+|   |   |
+|   |   |
+
+
+
+- 
 - SWAP needs to be explicitely enabled as a protocol.
 - An endpoint (in the form of a node URL) used for calls to the blockchain needs to be provided.
 
@@ -67,7 +80,7 @@ swarm --bzznetworkid 5 --swap --swap-backend-url https://ropsten.infura.io/E4bWU
 
 In this example:
 - `bzznetworkid` matches the allowed network ID for SWAP, which is set through the `AllowedNetworkID`. This can be verified by inspecting the [codebase](https://github.com/ethersphere/swarm).
-- `swap` explicitely activates SWAP.
+- `swap` explicitely enables SWAP.
 - `swap-backend-url` is URL of the Ethereum API provider.
 - `swap-initial-deposit` is the initial deposit amount for the SWAP chequebook that this node will use.
 - `swap-chequebook-factory` is the SWAP chequebook factory contract address.
