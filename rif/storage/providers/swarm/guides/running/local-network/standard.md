@@ -5,7 +5,7 @@ title: Running a local Swarm network
 
 This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
 
-If you need these nodes to run with incentivization, please refer to the [Incentivized version](#incentivized-network) of the guide. If not, follow the much simpler [Standard version](#standard-network).
+If you need these nodes to run with <a href="../../../../incentives/">incentivization</a>, please refer to the incentivized versions of this guide (<a href="../on-ethereum/">for Ethereum</a>, or <a href="../on-rsk/">for RSK</a>).
 
 ------
 
