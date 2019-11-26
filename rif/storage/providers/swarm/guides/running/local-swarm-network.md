@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Running a local Swarm network on Ethereum
+title: Running a local Swarm network
 ---
 
 This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
