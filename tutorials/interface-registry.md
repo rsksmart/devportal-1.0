@@ -27,6 +27,13 @@ Though the ERC20 token standard is well documented and well implemented overall,
 
 The ERC777 token standard solves this problem using the EIP1820 interface registry, and it is backward compatible with the ECR20 token standard.
 
+In order to enable implementations based on the ERC777 token standard,
+as well as any other smart contracts that would benefit from
+the use of a universal smart contract interface registry,
+RSK has deployed an implementation of the EIP1820 registry on both its
+[Mainnet](https://explorer.rsk.co/address/0x1820a4b7618bde71dce8cdc73aab6c95905fad24),
+and [Testnet](https://explorer.testnet.rsk.co/address/0x1820a4b7618bde71dce8cdc73aab6c95905fad24).
+
 ## Links and Information
 
 Original:
