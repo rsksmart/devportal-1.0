@@ -13,25 +13,25 @@ If you need these nodes to run with incentivization, please refer to the incenti
 
 ------
 
-# Run the Network
+# Requirements
 
-# 1. Requirements
-
-## 1.1. `websocat` (optional)
+## 1. `websocat` (optional)
 
 `websocat` is a command-line web socket client, used to query the nodes running in the private network.
 
 If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
 
-# 2. Start the nodes
+------
 
-## 2.1. Run a terminal in the repo folder
+# Run the Network
+
+## 1. Run a terminal in the repo folder
 
 To do this you can start a terminal and run `cd` to move to the repo folder.
 
 By the default, the directory should be `$GOPATH/src/github.com/ethersphere/swarm`.
 
-## 2.2. Start each node
+## 2. Start each node
 
 Start the first node through:
 
