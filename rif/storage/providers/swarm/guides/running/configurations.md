@@ -8,15 +8,29 @@ Use the following cheatsheet to run Swarm with the desired capabilities.
 For a full list of the available command line options for `swarm`, see [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters).
 
 ## Table of Contents
-1. [ENS Resolution](#1-ens-resolution)
-2. [Incentivization](#2-incentivization)
+1. [RNS Resolution](#1-rns-resolution)
+2. [ENS Resolution](#2-ens-resolution)
+3. [Incentivization](#3-incentivization)
 
+# 1. RNS Resolution
 
-# 1. ENS Resolution
+You can resolve RNS addresses by specifying the <a href="../../../../../../rns/architecture/Resolver/">RNS Resolver Smart Contract</a> to use through the `rns-api` flag. 
 
-Swarm can't resolve ENS addresses by itself; it needs to delegate this task. 
+For example:
 
-## 1.1 Through `Geth`
+```shell
+swarm --rns-api 0x99a12be4C89CbF6CFD11d1F2c029904a7B644368@https://public-node.rsk.co
+```
+
+In this example:
+- `0x99a12be4C89CbF6CFD11d1F2c029904a7B644368` is the address for the RNS Resolver contract.
+- `https://public-node.rsk.co` is the RSK blockchain endpoint to be used when interacting with the contract.
+
+# 2. ENS Resolution
+
+Swarm cannot resolve ENS addresses by itself; it needs to delegate this task. There are 2 ways to do this.
+
+## 2.1 Through `Geth`
 
 The easiest way to do this is to run a **Geth** node locally and let Swarm make calls to this instance when attempting to resolve addresses.
 
@@ -36,9 +50,11 @@ swarm --ens-api $HOME/.ethereum/geth.ipc
 
 where the value of the `ens-api` flag is a valid path to a running Geth IPC.
 
-## 1.2 Through Smart Contracts
+## 2.2 Through Smart Contracts
 
-As an alternative, you can resolve ENS addresses by specifying pairs of top level domains (TLD) and Smart Contracts of the [Resolver type](https://docs.ens.domains/#ens-architecture). For example:
+As an alternative, you can resolve ENS addresses by specifying pairs of top level domains (TLD) and Smart Contracts of the [Resolver type](https://docs.ens.domains/#ens-architecture) with the use of the `ens-api` flag. 
+
+For example:
 
 ```shell
 swarm --ens-api eth:0x314159265dD8dbb310642f98f50C066173C1259b@https://mainnet.infura.io
@@ -51,7 +67,7 @@ In this example:
 
 See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using-swarm-together-with-the-testnet-ens) for more information.
 
-# 2. Incentivization
+# 3. Incentivization
 
 Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network. 
 
