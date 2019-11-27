@@ -15,7 +15,7 @@ If you need these nodes to run with incentivization, please refer to the incenti
 
 # Requirements
 
-## 1. `websocat` (optional)
+## `websocat` (optional)
 
 `websocat` is a command-line web socket client, used to query the nodes running in the private network.
 
@@ -100,7 +100,7 @@ You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/lat
 
 If you want to start from scratch, simply execute the entire code again. 
 
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#2-start-the-nodes).
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [start the nodes](#2-start-each-node) section.
 
 ------
 
