@@ -21,7 +21,7 @@ If you need these nodes to run with incentivization, please refer to the incenti
 
 `websocat` is a command-line web socket client, used to query the nodes running in the private network.
 
-If you plan to [query the nodes](#31-query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
+If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
 
 # 2. Start the nodes
 
@@ -54,13 +54,15 @@ This will populate the directories with all of the files needed for each of the 
 Note that:
 - A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
 - The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
-- Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The only API enabled in this case is `bzz`, but others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#31-query-the-nodes).
+- Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The only API enabled in this case is `bzz`, but others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
 
-# 3. Interact with the Network
+------
+
+# Interact with the Network
 
 You can interact with the nodes in the network through the following means.
 
-## 3.1. Query the nodes
+## Query the nodes
 
 `websocat` can be used to call Swarm functions exposed through [RPC](https://www.tutorialspoint.com/remote-procedure-call-rpc).
 
@@ -76,7 +78,7 @@ Other calls might only be available depending on the `wsapi` [configuration para
 
 The Swarm documentation might not be up-to-date in terms of including all exposed functions. Search for the `rpc.API` string in the Swarm [codebase](https://github.com/ethersphere/swarm) to figure out which calls are available.
 
-## 3.2. Web interface
+## Web interface
 
 A Swarm local web server endpoint for each node should be accessible through your browser.
 
@@ -86,7 +88,7 @@ By default, the server will be located at `http://localhost:8500`.
 
 You can find which port is used for each node by taking a look at the `bzzport` flag used in each case.
 
-## 3.3. CLI
+## CLI
 
 By using the `swarm` binary you can execute operations in the standard manner, such as `up`, `down`, etc., for the node that uses the default parameters (such as port `8500`).
 
