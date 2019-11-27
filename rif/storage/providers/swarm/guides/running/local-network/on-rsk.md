@@ -192,4 +192,49 @@ Make sure that:
 
 ------
 
-_Guide based on [Swap Test Guide](https://hackmd.io/yZLFmgdSRDCMEpBXCiBeBA?view) by Ralph Pichler._
+# Known issues
+
+## Failure to suggest Gas price
+
+### Cashing cheques does not work
+
+```bash
+ERROR[11-26|16:29:40.620] error cashing cheque                     
+swaplog=* base=d79b7346431a6112 err="failed to suggest gas price: Post http://localhost:4444: EOF"
+```
+
+### Chequebook deploying requires multiple tries
+
+```bash
+INFO [11-26|16:32:48.728] Deploying new swap                       swaplog=* base=d79b7346431a6112 owner=0xc45D64d8F9642a604Db93C59FD38492b262391CA deposit=500000000000
+WARN [11-26|16:32:48.733] chequebook deploy error, retrying...     swaplog=* base=d79b7346431a6112 try=0 error="failed to suggest gas price: Post http://localhost:4444: EOF"
+INFO [11-26|16:32:51.780] Deployed chequebook                      swaplog=* base=d79b7346431a6112 contract address=0x8e9a2a73BCA088852de1b6b510D9d9673cc09e90 deposit=500000000000 owner=0xc45D64d8F9642a604Db93C59FD38492b262391CA
+```
+
+#### Linux
+
+On a Linux VM it works less often than on MAC.
+
+```bash
+INFO [11-26|17:09:11.769] Deploying new swap                       swaplog=* base=1b02472d87b178b0 owner=0xbf4f9637C281DDFb1Fbd3be5a1daE6531D408F11 deposit=500000000000
+WARN [11-26|17:09:11.777] chequebook deploy error, retrying...     swaplog=* base=1b02472d87b178b0 try=0 error="Post http://localhost:4444: read tcp 127.0.0.1:40528->127.0.0.1:4444: read: connection reset by peer"
+WARN [11-26|17:09:12.784] chequebook deploy error, retrying...     swaplog=* base=1b02472d87b178b0 try=1 error="failed to suggest gas price: Post http://localhost:4444: read tcp 127.0.0.1:40532->127.0.0.1:4444: read: connection reset by peer"
+WARN [11-26|17:09:13.790] chequebook deploy error, retrying...     swaplog=* base=1b02472d87b178b0 try=2 error="failed to suggest gas price: Post http://localhost:4444: EOF"
+WARN [11-26|17:09:14.796] chequebook deploy error, retrying...     swaplog=* base=1b02472d87b178b0 try=3 error="failed to suggest gas price: Post http://localhost:4444: read tcp 127.0.0.1:40540->127.0.0.1:4444: read: connection reset by peer"
+WARN [11-26|17:09:15.801] chequebook deploy error, retrying...     swaplog=* base=1b02472d87b178b0 try=4 error="failed to suggest gas price: Post http://localhost:4444: read tcp 127.0.0.1:40544->127.0.0.1:4444: read: connection reset by peer"
+Fatal: Error starting protocol stack: failed to deploy chequebook: <nil>
+```
+
+Under the hood Gas Price Suggestion uses `eth_gasPrice` for RPC connections. 
+
+This call works on RSKj as verified with `curl`:
+
+```bash
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[], "id":1 }' http://localhost:4444 
+```
+
+It is unknown if this problem is due to SWAP or the RSK node.
+
+------
+
+_Guide based on [Swap RSK Guide](https://hackmd.io/ijxzDYaySrqZ06LsR36OsA?view) by Ralph Pichler._
