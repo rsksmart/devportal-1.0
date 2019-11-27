@@ -17,6 +17,7 @@ This guide uses a local RSK network. If you want to use Ethereum as a blockchain
 3. [Interact with the network](#interact-with-the-network)
 4. [Restart the network](#restart-the-network)
 5. [Add more nodes to the network](#add-more-nodes-to-the-network)
+6. [Known issues](#known-issues)
 
 ------
 
