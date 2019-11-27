@@ -17,11 +17,13 @@ This guide uses a local RSK network. If you want to use Ethereum as a blockchain
 
 # 1. Requirements
 
-## 1.1. `ganache-cli`
+## 1.1. RSKj
 
-`Ganache CLI` is a command line version of a local private blockchain, used generally for development purposes.
+This will be the node use to start the local RSK blockchain.
 
-To install it, follow the instructions [here](https://github.com/trufflesuite/ganache-cli#installation).
+Download it from:
+- [Google Drive](https://drive.google.com/open?id=1zdYpL6kFaOtyZjhbssWkNbYzdQwBA36j)
+- [Swarm](https://swarm-gateways.net/bzz:/52d5a1a3a18cbb2b163288554159eabb2c1a531883df23fba5ce329a18285279)
 
 ### 1.2. `websocat` (optional)
 
