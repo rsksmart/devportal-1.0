@@ -5,78 +5,33 @@ title: Running a local Swarm network on Ethereum
 
 This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
 
+ The *Swarm Accounting Protocol* (**SWAP**) is required in order to form an <a href="../../../../incentives/">incentivized network</a> in Swarm. This requires chequebook Smart Contracts which keep track of the accounting done between Swarm nodes, and therefore there is need for a blockchain.
+
 If you need these nodes to run without incentivization, please refer to the much simpler <a href="../standard/">Standard version</a> of this guide.
+
+This guide uses a local private Ethereum network. If you want to use RSK as a blockchain, follow the instructions <a href="../on-rsk/">here</a>.
 
 ------
 
 # Run the Network
 
-## 1. Requirements
-
-### 1.1 `websocat` (optional)
-
-`websocat` is a command-line web socket client, used to query the nodes running in the private network.
-
-If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
-
-## 2. Start the nodes
-
-### 2.1 Run a terminal in the repo folder
-
-To do this you can start a terminal and run `cd` to move to the repo folder.
-
-By the default, the directory should be `$GOPATH/src/github.com/ethersphere/swarm`.
-
-### 2.2 Start each node
-
-Start the first node through:
-
-```bash
-DATADIR1="s1" && 
-rm -rf "$DATADIR1" && mkdir "$DATADIR1/" &&
-make && ./build/bin/swarm --datadir "$DATADIR1" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsorigins='*' --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2
-```
-
-Start the second node through:
-
-```bash
-DATADIR2="s2" &&
-rm -rf "$DATADIR2" && mkdir "$DATADIR2" &&
-./build/bin/swarm --datadir "$DATADIR2" --port 40400 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsport 8556 --wsorigins='*'
-```
-
-This will populate the directories with all of the files needed for each of the Swarm nodes. 
-
-Note that:
-- A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
-- The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
-- Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The only API enabled in this case is `bzz`, but others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
-
-## 3. Interact with the nodes
-
-See [interact with the network](#interact-with-the-network) section.
-
-------
-
-# Incentivized Network
-
 # 1. Requirements
 
-## 1.1 `ganache-cli`
+## 1.1. `ganache-cli`
 
 `Ganache CLI` is a command line version of a local private blokchain, used generally for development purposes.
 
 To install it, follow the instructions [here](https://github.com/trufflesuite/ganache-cli#installation).
 
-### 1.2 `websocat` (optional)
+### 1.2. `websocat` (optional)
 
 `websocat` is a command-line web socket client, used to query the nodes running in the private network.
 
-If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
+If you plan to [query the nodes](#31-query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
 
 ## 2. Start the blockchain
 
-### 2.1 Start `ganache`
+### 2.1. Start `ganache`
 
 Start a Ganache instance with **this** specific seed:
 
@@ -84,7 +39,7 @@ Start a Ganache instance with **this** specific seed:
 ganache-cli -m "sound oval reform desk episode taxi tribe frequent quiz about answer vendor" -p 9545
 ```
 
-### 2.2 Deploy a SWAP Factory Smart Contract
+### 2.2. Deploy a SWAP Factory Smart Contract
 
 A `SimpleSwapFactory` Smart Contract will need to be deployed to the blockchain next. 
 
