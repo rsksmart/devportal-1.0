@@ -19,7 +19,7 @@ This guide uses a local private Ethereum network. If you want to use RSK as a bl
 
 ## 1.1. `ganache-cli`
 
-`Ganache CLI` is a command line version of a local private blokchain, used generally for development purposes.
+`Ganache CLI` is a command line version of a local private blockchain, used generally for development purposes.
 
 To install it, follow the instructions [here](https://github.com/trufflesuite/ganache-cli#installation).
 
@@ -141,7 +141,7 @@ dd if=/dev/urandom of=output bs=1600k count=1 &&
 
 If this doesn't work, check that:
 - The endpoints (specified in `bzzapi`) match the parameters for starting the nodes.
-- The size of the file is enough to trigger a cheque to be sent. This can be verified through the value of the `paymentThreshold` variable set in the [codebase](https://github.com/ethersphere/swarm).
+- The size of the file is enough to trigger a cheque to be sent. This can be verified through the value of the `SwapPaymentThreshold` variable set in the [codebase](https://github.com/ethersphere/swarm).
 
 ------
 
@@ -149,7 +149,7 @@ If this doesn't work, check that:
 
 If you want to start from scratch, simply execute the entire code again. 
 
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#3-start-the-nodes).
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#3-start-the-nodes).
 
 ------
 
