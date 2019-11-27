@@ -5,7 +5,11 @@ title: Running a local Swarm network
 
 This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
 
-If you need these nodes to run with <a href="../../../../incentives/">incentivization</a>, please refer to the incentivized versions of this guide (<a href="../on-ethereum/">for Ethereum</a>, or <a href="../on-rsk/">for RSK</a>).
+Swarm can be run without a blockchain, since each node—with the help of the bootnodes—will form a network with its peers through [Kademlia](https://en.wikipedia.org/wiki/Kademlia).
+
+It is through the *Swarm Accounting Protocol* (**SWAP**) that Smart Contracts come into play in Swarm, in order to form an <a href="../../../../incentives/">incentivized network</a>.
+
+If you need these nodes to run with incentivization, please refer to the incentivized versions of this guide (<a href="../on-ethereum/">for Ethereum</a>, or <a href="../on-rsk/">for RSK</a>).
 
 ------
 
@@ -17,7 +21,7 @@ If you need these nodes to run with <a href="../../../../incentives/">incentiviz
 
 `websocat` is a command-line web socket client, used to query the nodes running in the private network.
 
-If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
+If you plan to [query the nodes](#31-query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
 
 # 2. Start the nodes
 
@@ -50,7 +54,7 @@ This will populate the directories with all of the files needed for each of the 
 Note that:
 - A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
 - The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
-- Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The only API enabled in this case is `bzz`, but others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
+- Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The only API enabled in this case is `bzz`, but others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#31-query-the-nodes).
 
 # 3. Interact with the Network
 
@@ -94,7 +98,7 @@ You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/lat
 
 If you want to start from scratch, simply execute the entire code again. 
 
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#22-start-each-node-1).
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#2-start-the-nodes).
 
 ------
 

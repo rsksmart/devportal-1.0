@@ -9,7 +9,7 @@ If you need these nodes to run without incentivization, please refer to the much
 
 ------
 
-# Standard Network
+# Run the Network
 
 ## 1. Requirements
 
