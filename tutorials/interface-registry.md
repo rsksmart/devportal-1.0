@@ -47,7 +47,3 @@ RSK:
 - [RSK Mainnet deployed EIP1820 smart contract](https://explorer.rsk.co/address/0x1820a4b7618bde71dce8cdc73aab6c95905fad24)
 - [RSK Testnet deployed EIP1820 smartcontract](https://explorer.testnet.rsk.co/address/0x1820a4b7618bde71dce8cdc73aab6c95905fad24)
 - Corresponding RSK Improvement Proposal: [RSKIP148](https://github.com/rsksmart/RSKIPs/blob/e0ac990679a2e6f476e41db0c1050132cd2b1bfc/IPs/RSKIP148.md)
-
-Implementations in other crypto-networks:
-
-- [POA](https://forum.poa.network/t/just-deployed-the-erc1820-registry-on-xdai/2777)
