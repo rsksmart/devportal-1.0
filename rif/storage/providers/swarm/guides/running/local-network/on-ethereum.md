@@ -38,9 +38,9 @@ If you plan to [query the nodes](#query-the-nodes), follow the instructions [her
 
 # Run the network
 
-## 1. Start the blockchain
+# 1. Start the blockchain
 
-## 1.1. Start `ganache`
+## 1.1. Start Ganache
 
 Start a Ganache instance with **this** specific seed:
 
