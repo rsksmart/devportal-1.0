@@ -11,6 +11,13 @@ It is through the *Swarm Accounting Protocol* (**SWAP**) that Smart Contracts co
 
 If you need these nodes to run with incentivization, please refer to the incentivized versions of this guide (<a href="../on-ethereum/">for Ethereum</a>, or <a href="../on-rsk/">for RSK</a>).
 
+## Table of Contents
+1. [Requirements](#requirements)
+2. [Run the network](#run-the-network)
+3. [Interact with the network](#interact-with-the-network)
+4. [Restart the network](#restart-the-network)
+5. [Add more nodes to the network](#add-more-nodes-to-the-network)
+
 ------
 
 # Requirements
@@ -23,7 +30,7 @@ If you plan to [query the nodes](#query-the-nodes), follow the instructions [her
 
 ------
 
-# Run the Network
+# Run the network
 
 ## 1. Run a terminal in the repo folder
 
@@ -58,7 +65,7 @@ Note that:
 
 ------
 
-# Interact with the Network
+# Interact with the network
 
 You can interact with the nodes in the network through the following means.
 
@@ -96,11 +103,11 @@ You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/lat
 
 ------
 
-# Restart the Network
+# Restart the network
 
 If you want to start from scratch, simply execute the entire code again. 
 
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [start the nodes](#2-start-each-node) section.
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [start the nodes](#run-the-network) section.
 
 ------
 

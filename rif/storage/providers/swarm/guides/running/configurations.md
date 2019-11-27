@@ -7,7 +7,7 @@ Use the following cheatsheet to run Swarm with the desired capabilities.
 
 For a full list of the available command line options for `swarm`, see [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters).
 
-# Table of Contents
+## Table of Contents
 1. [ENS Resolution](#1-ens-resolution)
 2. [Incentivization](#2-incentivization)
 
