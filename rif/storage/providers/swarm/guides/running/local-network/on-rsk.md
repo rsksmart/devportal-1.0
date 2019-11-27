@@ -47,7 +47,7 @@ If you plan to [query the nodes](#query-the-nodes), follow the instructions [her
 Start the RSK node through:
 
 ```bash
-rm -rf datadir # cleanup previous directory
+rm -rf datadir # clean up previous directory
 java -jar rskj-core-unformatted-log-all.jar co.rsk.Start --regtest -base-path datadir
 ```
 
@@ -67,6 +67,17 @@ curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","metho
 
 The factory will be deployed at address `0x77045e71a7a2c50903d88e564cd72fab11e82051`.
 
+## 1.3. Pre-fund the nodes
+
+Execute:
+
+```bash
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{ "from": "0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826", "to": "0xbf4f9637C281DDFb1Fbd3be5a1daE6531D408F11", "value":"0xde0b6b3a7640000" }], "id":1 }' http://localhost:4444 &&
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_sendTransaction","params":[{ "from": "0xcd2a3d9f938e13cd947ec05abc7fe734df8dd826", "to": "0xc45D64d8F9642a604Db93C59FD38492b262391CA", "value":"0xde0b6b3a7640000" }], "id":1 }' http://localhost:4444
+```
+
+Unlike in Ethereum, transactions don't confirm instantly here. Wait a few seconds after this step!
+
 # 2. Start the nodes
 
 ## 2.1. Run a terminal in the repo folder
@@ -82,7 +93,7 @@ Start the first node through:
 ```bash
 DATADIR1="s1" && 
 rm -rf "$DATADIR1" && mkdir "$DATADIR1/" &&
-make && ./build/bin/swarm --bzznetworkid 5 --datadir "$DATADIR1" --swap --swap-backend-url http://localhost:9545 --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsorigins='*' --no-sync --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
+make && ./build/bin/swarm --bzznetworkid 5 --datadir "$DATADIR1" --swap --swap-backend-url http://localhost:4444 --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsorigins='*' --no-sync --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x77045e71a7a2c50903d88e564cd72fab11e82051
 ```
 
 Start the second node through:
@@ -90,7 +101,7 @@ Start the second node through:
 ```bash
 DATADIR2="s2" &&
 rm -rf "$DATADIR2" && mkdir "$DATADIR2" &&
-./build/bin/swarm --bzznetworkid 5 --datadir "$DATADIR2" --port 40400 --swap --swap-backend-url http://localhost:9545 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsport 8556 --wsorigins='*' --no-sync --bzzkeyhex 73f0f0e024f09059acb267f836ba7924e0a02fe9dd8089293e7ca3b7a1c14a67 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
+./build/bin/swarm --bzznetworkid 5 --datadir "$DATADIR2" --port 40400 --swap --swap-backend-url http://localhost:4444 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsport 8556 --wsorigins='*' --no-sync --bzzkeyhex 73f0f0e024f09059acb267f836ba7924e0a02fe9dd8089293e7ca3b7a1c14a67 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x77045e71a7a2c50903d88e564cd72fab11e82051
 ```
 
 This will populate the directories with all of the files needed for each of the Swarm nodes. 
