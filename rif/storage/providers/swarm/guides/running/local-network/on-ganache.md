@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Running a local Swarm network on Ethereum 
+title: Running a local Swarm network on Ganache 
 ---
 
 This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
@@ -9,7 +9,7 @@ The *Swarm Accounting Protocol* (**SWAP**) is required in order to form an <a hr
 
 If you need these nodes to run without incentivization, please refer to the much simpler <a href="../standard/">Standard version</a> of this guide.
 
-This guide uses a local private Ethereum network. If you want to use RSK as a blockchain, follow the instructions <a href="../on-rsk/">here</a>.
+This guide uses a local private Ganache network. If you want to use RSK as a blockchain, follow the instructions <a href="../on-rsk/">here</a>.
 
 ## Table of Contents
 1. [Requirements](#requirements)

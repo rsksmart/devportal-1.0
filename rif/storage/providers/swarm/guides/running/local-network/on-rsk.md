@@ -9,7 +9,7 @@ This guide sets up 2 Swarm nodes in a local private network. Each of the nodes i
 
 If you need these nodes to run without incentivization, please refer to the much simpler <a href="../standard/">Standard version</a> of this guide.
 
-This guide uses a local RSK network. If you want to use Ethereum as a blockchain, follow the instructions <a href="../on-ethereum/">here</a>.
+This guide uses a local RSK network. If you want to use Ganache instead, follow the instructions <a href="../on-ganache/">here</a>.
 
 ## Table of Contents
 1. [Requirements](#requirements)
