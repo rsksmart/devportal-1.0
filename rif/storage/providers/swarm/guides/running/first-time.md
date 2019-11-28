@@ -19,9 +19,9 @@ To boot up Swarm for the first time simply execute:
 swarm
 ```
 
-## 3. Specify a `Geth` account
+## 3. Specify a private key
 
-You will need a `Geth` account to use Swarm. This can either:
+You will need a private key (sometimes referred to as _account_) to use Swarm. This can either:
 - be specified by the `bzzaccount` [flag](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters) (if the account already exists)
 - be created through a Swarm prompt (if not specified)
 
