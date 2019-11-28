@@ -5,7 +5,7 @@ title: web3.personal
 
 For this , it is supposed that you have an RSK node running. Be sure your node has enabled personal module in the config file. Method personal.newAccount will be used.
 
-** It's NOT recommended to use RPC personal module on MainNet. Use it only for testing purposes (on TestNet or RegTest).**
+** It's NOT recommended to use RPC personal module on Mainnet. Use it only for testing purposes (on Testnet or Regtest).**
 
 There are two simple ways to call RPC methods:
 

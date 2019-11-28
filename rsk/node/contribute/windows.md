@@ -48,12 +48,12 @@ If everything is OK, you should see the debug information like that:
 
 And yes! Congratulations! Now you're running a local RSK node :)
 
-You're joined to MainNet by default. 
+You're joined to Mainnet by default.
 
 If you want to switch the network, add:
 
-- For TestNet: `--testnet`
-- For RegTest: `--regtest`
+- For Testnet: `--testnet`
+- For Regtest: `--regtest`
 
 Inside the field `Program Arguments` in your run configuration.
 

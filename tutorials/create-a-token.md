@@ -138,7 +138,7 @@ In my editor,it shows like this:
     ```
     This string in the last line is our address.
   * 5.3 To get funds to use in this network.
-    > We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
+    > We mentioned before that RSK Testnet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
     <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token4.png"></div> 
 
 Steps of usage:
