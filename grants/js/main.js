@@ -9,7 +9,6 @@ $(document).ready(function () {
     $(".navbar-dark").css("background-color", "transparent");
   });
 
-
   $('a[href^="#"]').on('click', function (event) {
     var target = $(this.getAttribute('href'));
     if (target.length) {
@@ -18,14 +17,12 @@ $(document).ready(function () {
         scrollTop: target.offset().top - 100
       }, 1000);
     }
-
   });
 
   // collapse mobile nav on click
   $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
   });
-
 
   // Navigation active state on scroll
   var nav_sections = $('section');
@@ -114,6 +111,19 @@ $(document).ready(function () {
     var $textarea = $(this).find('.textarea');
     var $counter = $(this).find('.counter');
     $textarea.limiter($counter);
+  });
+
+  // dynamically override the content for the rewards bullet point
+  var rewardsUl = $('#rewards .rewards_list').last();
+  rewardsUl.empty();
+  [
+    'Modifying rsk nodes?',
+    'Creating a DApp on rsk?',
+    'Implementing RIFOS services?',
+    'Creating a DApp that uses RIFOS?',
+    '&hellip; if so, we would be very happy to hear about it.',
+  ].forEach(function (ulText) {
+    rewardsUl.append(`<li>${ulText}</li>`);
   });
 
   // init for wow.js v1.1.2
