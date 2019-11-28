@@ -10,7 +10,7 @@ Any name that has been registered using the [Auction Model](Register-a-name-auct
 Once you migrated your name, follow [this](Renew-a-name) guide to renew your domain's expiration.
 
 <div class="alert alert-warning">
-    If a name is not migrated before expiration, you will lose the domain ownership. In that case, you will be prompted to [register](Register-a-name) your domain again.
+    If a name is not migrated before expiration, you will lose the domain ownership. In that case, you will be prompted to <a href="/rif/rns/operation/Register-a-name">register</a> your domain again.
 </div>
 
 ## How to migrate a name?
