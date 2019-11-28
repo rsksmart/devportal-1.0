@@ -62,20 +62,20 @@ curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","metho
 
 # 2. Start the nodes
 
-## 2.1. Run a terminal in the repo folder
+## 2.1. Create a directory
 
-To do this you can start a terminal and run `cd` to move to the repo folder.
-
-By the default, the directory should be `$GOPATH/src/github.com/ethersphere/swarm`.
+Start a terminal and run `cd` to move to a directory where the files for the nodes will be created.
 
 ## 2.2. Start each node
+
+Make sure the `swarm` command boots up Swarm correctly before starting the nodes.
 
 Start the first node through:
 
 ```bash
 DATADIR1="s1" && 
 rm -rf "$DATADIR1" && mkdir "$DATADIR1/" &&
-make && ./build/bin/swarm --bzznetworkid 5 --datadir "$DATADIR1" --swap --swap-backend-url http://localhost:9545 --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsorigins='*' --no-sync --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
+swarm --bzznetworkid 5 --datadir "$DATADIR1" --swap --swap-backend-url http://localhost:9545 --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsorigins='*' --no-sync --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
 
 Start the second node through:
@@ -83,7 +83,7 @@ Start the second node through:
 ```bash
 DATADIR2="s2" &&
 rm -rf "$DATADIR2" && mkdir "$DATADIR2" &&
-./build/bin/swarm --bzznetworkid 5 --datadir "$DATADIR2" --port 40400 --swap --swap-backend-url http://localhost:9545 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsport 8556 --wsorigins='*' --no-sync --bzzkeyhex 73f0f0e024f09059acb267f836ba7924e0a02fe9dd8089293e7ca3b7a1c14a67 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
+swarm --bzznetworkid 5 --datadir "$DATADIR2" --port 40400 --swap --swap-backend-url http://localhost:9545 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsport 8556 --wsorigins='*' --no-sync --bzzkeyhex 73f0f0e024f09059acb267f836ba7924e0a02fe9dd8089293e7ca3b7a1c14a67 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
 
 This will populate the directories with all of the files needed for each of the Swarm nodes. 
