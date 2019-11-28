@@ -62,7 +62,7 @@ curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","metho
 
 # 2. Start the nodes
 
-## 2.1. Create a directory
+## 2.1. Choose a directory
 
 Start a terminal and run `cd` to move to a directory where the files for the nodes will be created.
 
@@ -144,8 +144,8 @@ The file should be large enough to immediately trigger a cheque.
 
 ```bash
 dd if=/dev/urandom of=output bs=1600k count=1 &&
-./build/bin/swarm --bzzapi http://localhost:8500 down \
-"bzz-raw://$(./build/bin/swarm --bzzapi http://localhost:9100 up output)"
+swarm --bzzapi http://localhost:8500 down \
+"bzz-raw://$(swarm --bzzapi http://localhost:9100 up output)"
 ```
 
 If this doesn't work, check that:

@@ -32,20 +32,20 @@ If you plan to [query the nodes](#query-the-nodes), follow the instructions [her
 
 # Run the network
 
-## 1. Run a terminal in the repo folder
+## 1. Choose a directory
 
-To do this you can start a terminal and run `cd` to move to the repo folder.
-
-By the default, the directory should be `$GOPATH/src/github.com/ethersphere/swarm`.
+Start a terminal and run `cd` to move to a directory where the files for the nodes will be created.
 
 ## 2. Start each node
+
+Make sure the `swarm` command boots up Swarm correctly before starting the nodes.
 
 Start the first node through:
 
 ```bash
 DATADIR1="s1" && 
 rm -rf "$DATADIR1" && mkdir "$DATADIR1/" &&
-make && ./build/bin/swarm --datadir "$DATADIR1" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsorigins='*' --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2
+swarm --datadir "$DATADIR1" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsorigins='*' --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2
 ```
 
 Start the second node through:
@@ -53,7 +53,7 @@ Start the second node through:
 ```bash
 DATADIR2="s2" &&
 rm -rf "$DATADIR2" && mkdir "$DATADIR2" &&
-./build/bin/swarm --datadir "$DATADIR2" --port 40400 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsport 8556 --wsorigins='*'
+swarm --datadir "$DATADIR2" --port 40400 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsport 8556 --wsorigins='*'
 ```
 
 This will populate the directories with all of the files needed for each of the Swarm nodes. 

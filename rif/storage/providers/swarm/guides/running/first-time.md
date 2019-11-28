@@ -9,7 +9,7 @@ Verify this with `which swarm`.
 
 If the `swarm` command cannot be found, you can [add the Swarm binary route to your PATH](https://unix.stackexchange.com/questions/26047/how-to-correctly-add-a-path-to-path) for easier access.
 
-Alternatively, you will need to use `$GOPATH/bin/swarm` instead.
+Alternatively, you will need to use `$GOPATH/bin/swarm` instead, assuming you are <a href="../../installation#2-compile-from-source-code">compiling directly from the source code</a>.
 
 ## 2. Execute the `swarm` command
 
