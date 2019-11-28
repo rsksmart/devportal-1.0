@@ -31,7 +31,7 @@ Now you’ll be able to:
 * See your RIF Token balance
 * Send RIFs 
 
-If you want to Send tokens, you’ll need to consider certain things, in order to send up to 5 transactions
+If you want to Send tokens, you’ll need to consider certain things:
  * Gas price: should be 0.06 gwei
  * Gas limit:  60000
  
