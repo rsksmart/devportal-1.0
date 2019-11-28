@@ -1,6 +1,4 @@
 $(document).ready(function () {
-
-
   $(".navbar").on("show.bs.collapse", function (e) {
     console.log("open")
     $(".navbar-dark").css("background-color", "rgb(0, 181, 32)");
@@ -65,7 +63,6 @@ $(document).ready(function () {
   });
 
   // grant process
-
   $(".step-block-1").hover(function () {
     $(".step-block-2, .step-block-3, .step-block-4").toggleClass("half_opacity");
   });
@@ -78,7 +75,6 @@ $(document).ready(function () {
   $(".step-block-4").hover(function () {
     $(".step-block-1, .step-block-2, .step-block-3").toggleClass("half_opacity");
   });
-
 
   //duplicate input in form
   var maxRows = 5;
@@ -94,34 +90,52 @@ $(document).ready(function () {
   });
 
   // limit characters in textarea
-$.fn.extend({
-  limiter: function (counter) {
-    var limit = this.attr('maxlength');
+  $.fn.extend({
+    limiter: function (counter) {
+      var limit = this.attr('maxlength');
 
-    $(this).on("keyup focus", function () {
-      setCounter(this, counter);
-    });
+      $(this).on("keyup focus", function () {
+        setCounter(this, counter);
+      });
 
-    function setCounter(source, counter) {
-      var chars = source.value.length;
-      if (chars > limit) {
-        source.value = source.value.substr(0, limit);
-        chars = limit;
+      function setCounter(source, counter) {
+        var chars = source.value.length;
+        if (chars > limit) {
+          source.value = source.value.substr(0, limit);
+          chars = limit;
+        }
+        counter.html(limit - chars);
       }
-      counter.html(limit - chars);
+      setCounter($(this)[0], counter);
     }
-    setCounter($(this)[0], counter);
-  }
+  });
+
+  $(".limited-textarea").each(function () {
+    var $textarea = $(this).find('.textarea');
+    var $counter = $(this).find('.counter');
+    $textarea.limiter($counter);
+  });
+
+  // init for wow.js v1.1.2
+  new WOW().init();
+
+  // init for owl.carousel.js
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:true,
+    center:true,
+    URLhashListener:true,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
 });
-
-$(".limited-textarea").each(function () {
-  var $textarea = $(this).find('.textarea');
-  var $counter = $(this).find('.counter');
-  $textarea.limiter($counter);
-});
-
-});
-
-
-
-
