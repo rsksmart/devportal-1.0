@@ -7,13 +7,13 @@ To install Swarm, you can download the latest binaries or—alternatively—comp
 
 ------
 
-# 1. Download the binaries
+# • Download the binaries
 
 Pre-compiled binaries for Linux, macOS and Windows are available to download from [the Swarm official homepage](https://swarm-gateways.net/bzz:/swarm.eth/downloads/).
 
 ------
 
-# 2. Compile from source code
+# • Compile from source code
 
 ## Prerequisites
 
