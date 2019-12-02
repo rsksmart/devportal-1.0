@@ -35,27 +35,27 @@ $(document).ready(function() {
   $(this).toggleClass('current', this.href === pageUrl);
 	});
 
-    var crumbs = $(".current").parentsUntil(".exclude-doc-from-breadcrumbs")
-        .prev("a").add(".current")
-    .map(function() {
-        link = $(this).attr('href');
-        link_text = $(this).text();
-        title = $(this).attr('title');
-        bc = "<li><a href="+link+" title="+''+">"+link_text+"</a></li>";    
-        return bc; 
-    }).get().join("  ");
-    $(".breadcrumb").html(crumbs);
+  var crumbs = $(".current").parentsUntil(".exclude-doc-from-breadcrumbs")
+    .prev("a").add(".current")
+  .map(function() {
+    var link = $(this).attr('href');
+    var link_text = $(this).text();
+    var title = $(this).attr('title');
+    var bc = "<li><a href="+link+" title="+''+">"+link_text+"</a></li>";
+    return bc;
+  }).get().join("  ");
+  $(".breadcrumb").html(crumbs);
 });
 
  $(document).ready(function() {
 var liText = '', liList = $('.breadcrumb li'), listForRemove = [];
-$(liList).each(function () {    
+$(liList).each(function () {
   var text = $(this).text();
   if (liText.indexOf('|'+ text + '|') == -1)
     liText += '|'+ text + '|';
   else
-    listForRemove.push($(this));    
-});   
+    listForRemove.push($(this));
+});
 $(listForRemove).each(function () { $(this).remove(); });
 });
 
@@ -101,10 +101,10 @@ $(window).scroll(function () {
 
 function ChangeTheme(e){
 	if($(e).text() ==='Dark'){
-		$(e).text('Light'); 
+		$(e).text('Light');
 		$('link[href="/assets/css/styles_dark.css"]').prop('disabled', false);
 	}else{
-		$(e).text('Dark'); 
+		$(e).text('Dark');
 		$('link[href="/assets/css/styles_dark.css"]').prop('disabled', true);
 	}
 	return false;
