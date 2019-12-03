@@ -69,4 +69,4 @@ sudo service rsk start
 
 ```
 
-By default, the node connects to MainNet.  To change the network choice, follow the instructions on [Switching Networks](/rsk/node/configure/switch-network). To change other configuration of the node, please refer to the instructions on [RSK Node Configuration](/rsk/node/configure).
+By default, the node connects to Mainnet.  To change the network choice, follow the instructions on [Switching Networks](/rsk/node/configure/switch-network). To change other configuration of the node, please refer to the instructions on [RSK Node Configuration](/rsk/node/configure).

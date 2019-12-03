@@ -39,14 +39,14 @@ This document explains how to try the 2-way peg mechanism using Ledger.
   ```
 4. Send some funds to the address `bitcoinAddress` obtained. 
 5. You need to whitelist the `bitcoinAddress` in the RSK network [(what's to be whitelisted?)](/rsk/rbtc/conversion/whitelist)
-6. Use Electrum to send some BTC to the *Federation Address* (you got it in step 2) from `bitcoinAddress` obtained. To do that:
+6. Use Electrum to send some BTC to the *RSK Federation Address* (you got it in step 2) from `bitcoinAddress` obtained. To do that:
     - Open Electrum  
     - Go to Addresses Tab
     - Find the whitelisted address (your `bitcoinAddress`)
     - Right click over it
     - Select the option "Spend From":
 ![Spend from](/assets/img/rsk/peg-ledger/electrumSpendFromOption.png)
-    - Finally do a payment to the RSK Federation Address
+    - Finally make a payment to the RSK Federation Address
 *The minimum amount to send is 0.01 BTC*
 ![Sending Payment](/assets/img/rsk/peg-ledger/electrumSpendFrom.png)
 7. Wait the stipulated time.

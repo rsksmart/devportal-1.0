@@ -56,11 +56,11 @@ You can contact us in RSK official [Gitter channels](https://gitter.im/rsksmart/
 
 **1.4 Send Bitcoin to RSK Federation address**
 
-The Federation address is retrieved by making a Smart Contract call on RSK Testnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, select RSK Testnet in *"More Networks"*, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like the screenshot below.
+The RSK Federation address is retrieved by making a Smart Contract call on RSK Testnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, select RSK Testnet in *"More Networks"*, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like the screenshot below.
 
 ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
 
-Once got Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
+Once you have the RSK Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
 
 > Note: You need to send a minimum amount of 0.01 BTC for conversion.
 
@@ -130,11 +130,11 @@ You need to complete [whitelisting](/rsk/rbtc/conversion/whitelist).
 
 <div class="fade alert alert-warning show">Note: You need to send a minimum amount of 0.01 BTC and not more than 10 BTC for conversion.</div>
 
-The Federation address is retrieved by making a Smart Contract call on RSK Mainnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, select RSK Network, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like the screenshot below.
+The RSK Federation address is retrieved by making a Smart Contract call on RSK Mainnet. In order to make the call, you will need to have [MyCrypto](https://mycrypto.com/contracts/interact) installed, select RSK Network, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call. It should look like the screenshot below.
 
 ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
 
-Once you have the Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
+Once you have the RSK Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
 
 **1.4 Wait for BTC confirmations**
 
@@ -183,13 +183,13 @@ You can either use Electrum wallet downloaded earlier or from any Bitcoin explor
 
 ### Q & A
 
-**1. How often does the Federation address change?**
+**1. How often does the RSK Federation address change?**
 
-Federation address has changed three times since RSK mainnet launch.
+RSK Federation address has changed three times since RSK mainnet launch.
 
-**2. Do I lose my Bitcoin if Federation address change during my transfer?**
+**2. Do I lose my Bitcoin if the RSK Federation address change during my transfer?**
 
-There is a grace period for Federation address change. You will still be able to lock Bicoin and get RBTC during the grace period, however, any Bitcoin sent to the old Federation address will be lost post to the grace period.
+There is a grace period for the RSK Federation address change. You will still be able to lock Bitcoin and get RBTC during the grace period. However, any Bitcoin sent to the old RSK Federation address will be lost post to the grace period.
 
 ### Feedback
 

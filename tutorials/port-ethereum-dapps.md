@@ -205,7 +205,7 @@ First we need to obtain an account on RSK Testnet and get some free RSK token fr
 1. Enter RBTC as SymbolPut and Save
 1. Copy the account address
 
-<img alt="Configure MetaMask for RSK TestNet" class="port-eth-app-img" src="/dist/images/metamask-testnet.png">
+<img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/dist/images/metamask-testnet.png">
 
 **Get free token**
 
@@ -286,21 +286,21 @@ After its success execution, check the minter account's balance again to see tha
 EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F44d2093A2856997").then(b=>b.toNumber())))
 ``` 
 
-## Step 4 : Deploy to MainNet
+## Step 4 : Deploy to Mainnet
 
-Deploying Smart Contracts to RSK MainNet can follow the same steps as the TestNet.
+Deploying Smart Contracts to RSK Mainnet can follow the same steps as the Testnet.
 
-#### MainNet Node
+#### Mainnet Node
 
 The [public node](/rsk/public-nodes) of RSK Main Net is https://public-node.rsk.co
 
-#### MainNet Explorer
+#### Mainnet Explorer
 
-You will be able to check the MainNet's transactions and blocks in real time at 
+You will be able to check the Mainnet's transactions and blocks in real time at 
 [explorer.rsk.co/](https://explorer.rsk.co/)
 
 #### Get RBTC through 2-way peg
 
-To deploy onto MainNet, we need to get some RBTC through the 2-way peg mechanism between BTC and RBTC.
+To deploy onto Mainnet, we need to get some RBTC through the 2-way peg mechanism between BTC and RBTC.
 
 - Detailed tutorial [2-way peg](/rsk/architecture/2-way-peg/)
