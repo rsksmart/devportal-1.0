@@ -5,7 +5,7 @@ title: Setup node on Azure
 
 ## Install RskJ Using Azure
 
-Follow the instructions below to install and run an RSK node in Azure. By default, the node connects to MainNet. If you want to change the network read [this section](/rsk/node/configure/switch-network). If you want to change some configuration, please refer to our [RSK node configuration section](/rsk/node/configure). Also you can [enable RPC calls](#rpc) to interact with the node (by default it's disabled).
+Follow the instructions below to install and run an RSK node in Azure. By default, the node connects to Mainnet. If you want to change the network read [this section](/rsk/node/configure/switch-network). If you want to change some configuration, please refer to our [RSK node configuration section](/rsk/node/configure). Also you can [enable RPC calls](#rpc) to interact with the node (by default it's disabled).
 
 #### Install The Node Using Azure
 
@@ -28,7 +28,7 @@ Follow the instructions below to install and run an RSK node in Azure. By defaul
       cd /etc/rsk
       sudo vi <NETWORK>.conf
       ```
-    * Replace <NETWORK> with the network you are using. If you have not switched it, by default it is MainNet.
+    * Replace <NETWORK> with the network you are using. If you have not switched it, by default it is Mainnet.
     * Restart RSK service:
       ```shell
       sudo service rsk start
@@ -65,7 +65,7 @@ cd /etc/rsk
 sudo vi <NETWORK>.conf
 ```
 
-Replace `<NETWORK>` with the network you are using. If you have not switched, by default it's MainNet.
+Replace `<NETWORK>` with the network you are using. If you have not switched, by default it's Mainnet.
 
 Press `i` to enable insert mode. Edit the following values:
 

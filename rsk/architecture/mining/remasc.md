@@ -34,7 +34,7 @@ The payment for the miners of the main block, the siblings and the publishers wi
 * <img src="https://latex.codecogs.com/svg.latex?$\textit{FullBlock_{rwd}}$"/> *is the 100% of the block reward*
 * RSK will receive a fee of ~20% of the full block reward:
   <img src="https://latex.codecogs.com/svg.latex?Rsk_{rwd}=\frac{FullBlock_{rwd}}{5}"/>
-* Federation will receive a fee of  ~0.8% of the full block reward:
+* RSK Federation will receive a fee of ~0.8% of the full block reward:
   <img src="https://latex.codecogs.com/svg.latex?Fed_{rwd}=\frac{FullBlock_{rwd}-Rsk_{rwd}}{100}"/>
 * Miners will receive a payment of ~79,2% of the full block reward:
   <img src="https://latex.codecogs.com/svg.latex?Miners_{rwd}=FullBlock_{rwd}-Rsk_{rwd}-Fed_{rwd}"/>
@@ -109,7 +109,7 @@ This way, we compute:
 
 * **RSK** receives
   <img src="https://latex.codecogs.com/svg.latex?Rsk_{rwd}=%20\frac{FullBlock_{rwd}}{5}%20\implies%20\frac{10000}{5}%20\implies%20Rsk_{rwd}%20=%202000"/>
-* **Federation** receives
+* **RSK Federation** receives
   <img src="https://latex.codecogs.com/svg.latex?Fed_{rwd}=%20\frac{FullBlock_{rwd}-Rsk_{rwd}}{100}%20\implies%20\frac{10000-2000}{100}%20\implies%20Fed_{rwd}%20=%2080"/>
 * **Miners** receive a total of
   <img src="https://latex.codecogs.com/svg.latex?MinerFee_{rwd}=%20Miner_{rwd}-PubFee_{rwd}%20\implies%207920-792%20\implies%20MinerFee_{rwd}%20=%207128"/>

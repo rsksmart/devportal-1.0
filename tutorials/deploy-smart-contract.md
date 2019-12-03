@@ -390,7 +390,7 @@ truffle(rsk)> account
 '0xf08f6c2eac2183dfc0a5910c58c186496f32498d'
 ```
 
-> We mentioned before that RSK TestNet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
+> We mentioned before that RSK Testnet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
 
 <img class="deploy-smart-contract-img" src="/assets/img/deploy-smart-contract/deploy-smart-contract4.png">
 

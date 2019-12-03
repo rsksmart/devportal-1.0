@@ -32,9 +32,9 @@ The response should look similar to `{"jsonrpc":"2.0","id":1,"result":"0xfc0"}`,
 
 If you want to change the network use these commands:
 
-- MainNet: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start`
-- TestNet: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --testnet`
-- RegTest: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest`
+- Mainnet: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start`
+- Testnet: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --testnet`
+- Regtest: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest`
 
 Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-1.0.2-WASABI-all.jar`
 

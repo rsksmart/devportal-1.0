@@ -7,7 +7,7 @@ title: Get your own RIF Lumino node up and running on Ubuntu
 
 1. Access to a synched RSK node. You can do this in a variety of ways:
   * [Public nodes](/rsk/public-nodes)
-  * [Run your own node](/rsk/node/install) on TestNet or MainNet
+  * [Run your own node](/rsk/node/install) on Testnet or Mainnet
   * [Compile and run a RSK node locally](/rsk/node/contribute)
 1. An RSK account with an RBTC balance NOT lower than 0.001 RBTC
 1. Ubuntu 18.04+
@@ -163,7 +163,7 @@ The following list describes each field:
         network-id  
       </td>
       <td>
-		The network id (MainNet is 30)
+		The network id (Mainnet is 30)
       </td>
     </tr>
     <tr>

@@ -11,41 +11,34 @@ The Resolver contract handles the resolution between the name domain and the res
 
 ## Resolution process
 
-The resolution can be described in three steps:
+The resolution can be described in two steps:
 
-1. Check the state of a domain in the registrar:
+1. Query the RNS to retrieve the domain's resolver:
 
     ```js
-    var state = registrar.state(web3.sha3('adomain'))
-    if (state != 2) console.log("This domain is not owned!")
+    const name = 'satoshi.rsk'
+    const node = namehash()
+    const resolverAddress = rns.resolver(node)
+
+    if (resolverAddress == '0x00') console.error('No resolver configured for ' + name)
+    else console.log('Resolver address configure for ' + name + ' is ' + resolverAddress)
     ```
 
-2. Query the RNS to retrieve the domain's resolver:
+    Yielded address may be `0x00` if the Resolver is not configured or the domain node is not yet present in the Registry.
+
+2. Finally resolve the domain through the `addr` getter from the Resolver:
 
     ```js
-    var label = 'satoshi'
-    var node = namehash(label + '.rsk')
-    var resolverAddress = rns.resolver(node)
+    const resolver = ResolverInterface.at(resolverAddress)
+    const address = resolver.addr(node)
 
-    if (resolverAddress == '0x0') console.log('No resolver configure for ' + label)
-    else console.log('Resolver address configure for ' + label + ' is ' + resolverAddress)
-    ```
-
-    Yielded address may be 0x0 if the Resolver is not configured or the domain node is not yet present in the Registry.
-
-3. Finally resolve the domain through the `addr` getter from the Resolver:
-
-    ```js
-    var resolver = ResolverInterface.at(resolverAddress)
-    var address = resolver.addr(node)
-
-    if (address == '0x0') console.log('The domain ' + label + ' does not resolve to any address!')
-    else console.log("The domain 'adomain' resolves to " + address)
+    if (address == '0x00') console.error('The domain ' + name + ' does not resolve to any address!')
+    else console.log("The domain " + name +" resolves to " + address)
     ```
 
 ## Public Resolver
 
-RNS provides a [Public Resolver](/rif/rns/architecture/Resolver) that supports `addr` and `hash` storage for each node registered in the Registrar contract.
+RNS provides a [Public Resolver](/rif/rns/architecture/Resolver) that supports `addr` and `hash` storage for each node registered in the Registry contract.
 The `addr` is the typical resolution for and address node, and the `hash` is free to use. The resolution for a name that uses the Public Resolver looks like this:
 
 ```js
@@ -53,7 +46,7 @@ function resolve(domain) {
     var node = namehash(domain)
     var resolverAddress = rns.resolver(node)
 
-    if (resolverAddress == '0x0') return null
+    if (resolverAddress == '0x00') return null
 
     var resolver = ResolverInterface.at(resolverAddress)
     var address = resolver.addr(node)
