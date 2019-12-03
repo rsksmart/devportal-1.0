@@ -29,7 +29,7 @@ This guide uses a local RSK network. If you want to use Ganache instead, follow 
 
 Download it from:
 - [Google Drive](https://drive.google.com/open?id=1zdYpL6kFaOtyZjhbssWkNbYzdQwBA36j)
-- [Swarm](https://swarm-gateways.net/bzz:/52d5a1a3a18cbb2b163288554159eabb2c1a531883df23fba5ce329a18285279)
+- [Swarm](https://swarm-gateways.net/bzz:/52d5a1a3a18cbb2b163288554159eabb2c1a531883df23fba5ce329a18285279) (make sure to rename the downloaded file to `rskj-core-unformatted-log-all.jar`)
 
 ## 2. `websocat` (optional)
 
