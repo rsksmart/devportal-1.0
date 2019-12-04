@@ -5,25 +5,10 @@ title: Architecture
 
 The RIF Name Service architecture is based on 4 components:
 - [**Registry**](#registry): RNS domain registry.
-- [**Registrar**](#registrar): the auction logic manager.
-- [**Deeds**](#deed): handle locked tokens and rent payment commits.
 - [**Resolver**](#resolver): the resolution between a domain and a resource.
 - [**Reverse resolution**](#resolver): the resolution between an address and a name.
 
 <img src="/assets/img/rns/structure.png" class="img-fluid" alt="architecture" />
-
-## Registrar
-
-To [register a domain](/rif/rns/operation/Register-a-name) in RNS is by auction that is performed by the [registrar contract](/rif/rns/architecture/Registrar). This contract manages the auction process, any user can start an auction for any available domain name, any user can bid in any auction in [Open state](/rif/rns/architecture/Registrar/#states), and only the highest bidder acquires that domain name.
-
-The subdomains can be delegated using the [registry contract](/rif/rns/architecture/Registry) without an auction process only by the domain owner. For example: `nakamoto.rsk` can register `satoshi.nakamoto.rsk` subdomain directly, and delegate the ownership of the subdomain.
-
-## Deed
-
-The [Deed contract](/rif/rns/architecture/Deed) has two main functions:
-- Register the bid payment: for each bid, the Registrar contract deploys a Deed contract and sends user's bade RIF tokens to it.
-
-- Manage the annual rent: the owner must pay an annual rent for each domain acquired.
 
 ## Registry
 

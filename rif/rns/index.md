@@ -25,11 +25,7 @@ Resolver contracts are responsible for the resolution of a resource name. A Reso
 
 ### RSK Registrar
 
-The Registrar is responsible of RNS governance. In addition, it is responsible for registering the name of a domain for a user, and the only entity capable of updating the RNS Registry.
-
-### Deed
-
-In order to prevent unnecessary used storage due to unused domains or prevent name squatting, the domain owner should have incentives to forfeit their ownership of them. To achieve this, the domain owner locks tokens which will be refunded when the domain is released.
+The Registrar is responsible of RNS governance. In addition, it is responsible for registering the name of a domain for a user.
 
 ### Reverse suite
 
@@ -37,20 +33,7 @@ Permits associating a human-readable name with any RSK blockchain address.
 
 > While name services are mostly used for forward resolution - going from human-readable identifiers to machine-readable ones - there are many use-cases in which reverse resolution is useful as well.
 
-
 <img src="/assets/img/rns/use-cases.png" class="img-fluid" alt="use-case" />
-
-## Register a domain
-
-There are two ways users can get a domain.
-
-The first is to opening an auction through the Registrar contract for the desired domain. For example, if “.rsk is the TLD and Alice wants to get the domain _“alice.rsk”_, she can open an auction to this domain, make a bid, and if it is the highest, she will become the new owner of _“alice.rsk”_ domain.
-
-The second way is, if Bob is the owner of _“bob.rsk”_ and Alice wants the subdomain _“subdomain.bob.rsk”_, Bob can delegate the subdomain ownership to Alice without an auction process.
-
-Once Alice gets a domain, she should set on the domain's entry in the Registry contract the Resolver that will perform the resolution between the new domain and the desired resource. If a user doesn't set a Resolver, a default one is set. This Public Resolver is the new owned domain's parent's Resolver.
-
-Learn more how to [register a domain](/rif/rns/operation/Register-a-name/)
 
 ## How to start?
 
