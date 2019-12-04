@@ -5,8 +5,12 @@ title: Architecture
 
 The RIF Name Service architecture is based on 4 components:
 - [**Registry**](#registry): RNS domain registry.
+<<<<<<< HEAD
 - [**Registrar**](#registrar): the auction logic manager.
 - [**Deeds**](#deed): handle locked tokens and rent payment commits.
+=======
+- [**RSK top level domain**](#rsk-tld)
+>>>>>>> d878cac... New registration structure
 - [**Resolver**](#resolver): the resolution between a domain and a resource.
 - [**Reverse resolution**](#resolver): the resolution between an address and a name.
 
@@ -28,6 +32,10 @@ The [Deed contract](/rif/rns/architecture/Deed) has two main functions:
 ## Registry
 
 The [Registry contract](/rif/rns/architecture/Registry) stores and handles the resolution between a domain name, its owner and the resolver for the domain.
+
+## RSK TLD
+
+The registrar is separated into several components for simplicity, modularity, and privilege minimization. Register names under a first-in first-served model. Find out more [here](/rsk).
 
 ## Resolver
 
