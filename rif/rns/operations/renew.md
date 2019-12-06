@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Renew a name
+title: Renew a domain
 ---
 
 Don't forget to <a href="/rif/rns/operation/Migrate-a-name">migrate</a> your name before renewing it!

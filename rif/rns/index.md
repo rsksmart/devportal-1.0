@@ -11,57 +11,58 @@ Currently over the World Wide Web, the Domain Name System (DNS) is responsible f
 
 <img src="/assets/img/rns/introduction.png" class="img-fluid" alt="introduction" />
 
+Want to register a domain? Go [here](operations/register) to find out more.
+
 ## The basics
 
-RIF Name Service's architecture is based on the Ethereum Name Service (ENS) described on [EIP-137](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-137.md). It is primarily divided in 4 components:
+RNS is a hierarchical name space inspired in DNS, with the hierarchy roughly corresponding to organizational structure, and names using "."  as the character to mark the boundary between hierarchy levels.
 
-### RNS Registry
+### Design
 
-The Registry contract provides a simple mapping between a domain and its Resolver. Everything related to a domain ownership is managed in this contract, including ownership transfer and sub-domain creation.
+The design goals of the RIF Name Service influence its structure.
 
-### Address Resolver
+- The primary goal is a consistent name space which will be used for referring to resources.
+- All data associated with a name is tagged with a type, and queries can be limited to a single type.
+- Because we want the name space to be useful in dissimilar networks and applications, we provide the ability to use the same name space with different protocol families or management. The RNS tags all data with a class as well as the type, so that we can allow parallel use of different formats for data of type address.
+- Where there tradeoffs between the cost of acquiring data, the speed of updates, and the accuracy of caches, the source of the data should control the tradeoff.
 
-Resolver contracts are responsible for the resolution of a resource name. A Resolver has many user-defined functions and each function enables a different resource type to be fetched on the same Node.
+[RNS specs](specs)
 
-### RSK Registrar
+### Elements of the RNS
 
-The Registrar is responsible of RNS governance. In addition, it is responsible for registering the name of a domain for a user, and the only entity capable of updating the RNS Registry.
+RNS has two major components:
 
-### Deed
+- **The RNS Registry**, which is specification for a tree structured name space and data associated with the names.
 
-In order to prevent unnecessary used storage due to unused domains or prevent name squatting, the domain owner should have incentives to forfeit their ownership of them. To achieve this, the domain owner locks tokens which will be refunded when the domain is released.
+  Conceptually, each node and leaf of the domain name space tree names a set of information, and query operations are attempts to extract specific types of information from a particular set. A query names the domain name of interest and describes the type of resource information that is desired.
 
-### Reverse suite
+  [Specs](specs/registry)
 
-Permits associating a human-readable name with any RSK blockchain address.
+  [Implementation](architecture/registry)
 
-> While name services are mostly used for forward resolution - going from human-readable identifiers to machine-readable ones - there are many use-cases in which reverse resolution is useful as well.
+- **RNS Resolvers** are contracts that provide information from a name in response to client requests.
 
+  Resolvers must be able to answer a query directly, or pursue the query using referrals to other resolvers. A resolver will typically be a contract's public function that is directly accessible to user programs or other contracts; hence no protocol is necessary between the resolver and the user program.
 
-<img src="/assets/img/rns/use-cases.png" class="img-fluid" alt="use-case" />
+  [Specs](specs/resolvers)
 
-## Register a domain
+These three components roughly correspond to the three layers or views of the domain system:
+- From the user's point of view, the domain system is accessed through a simple [resolution operation](operations/resolve). The domain space consists of a single tree and the user can request information from any section of the tree.
+- From the resolver's point of view, the domain system is composed of an unknown number of names. Each name has a corresponding resolver that provides information for a set of [resolution types](specs/resolution-types) directly.
+- From the registry's point of view, the domain system consists of a [hierarchical tree](architecture/registry) where each leaf have an owner (contract or account) and an associated resolver that provides information of the name.
 
-There are two ways users can get a domain.
+### Guidelines on use
 
-The first is to opening an auction through the Registrar contract for the desired domain. For example, if “.rsk is the TLD and Alice wants to get the domain _“alice.rsk”_, she can open an auction to this domain, make a bid, and if it is the highest, she will become the new owner of _“alice.rsk”_ domain.
+Before the RNS can be used to hold naming information for some kind of object, two needs must be met:
+- A convention for mapping between object names and domain names. This describes how information about an object is accessed. Find specs [here](specs#name-mapping-convention)
+- Resource record types and data formats for describing the object. Find specs [here](specs/resolvers).
 
-The second way is, if Bob is the owner of _“bob.rsk”_ and Alice wants the subdomain _“subdomain.bob.rsk”_, Bob can delegate the subdomain ownership to Alice without an auction process.
+The guideline for finding a a specific record of a name is as follows:
+1. Calculate the name identifier with [`namehash` function](specs#name-mapping-convention).
+2. Get the name's resolver address via [`resolver(bytes32)`](specs/registry#access).
+3. Determinate if resolver supports desired resource record via [ERC-165 interface detection](https://eips.ethereum.org/EIPS/eip-165).
+4. Get the desired resource record. Find currently standardized resolvers [here](specs/resolvers).
 
-Once Alice gets a domain, she should set on the domain's entry in the Registry contract the Resolver that will perform the resolution between the new domain and the desired resource. If a user doesn't set a Resolver, a default one is set. This Public Resolver is the new owned domain's parent's Resolver.
+### Resource records
 
-Learn more how to [register a domain](/rif/rns/operation/Register-a-name/)
-
-## How to start?
-
-Get an RSK Domain:
-
-Go to [RNS Manager](/rif/rns/tools/RNS-Manager) or [MyCrypto](/rif/rns/tools/MyCrypto) sections.
-
-> Integrate RNS in my app (Wallet, Exchange, dApp, etc):
-
-Go to [Resolve a name](/rif/rns/operation/Resolve-a-name) and [Libraries](/rif/rns/libs) sections.
-
-> I'm a blockchain developer. I want to code!
-
-Go to [Architecture](/rif/rns/architecture) and [Libraries](/rif/rns/libs) sections, contribute in the [RNS Github](https://github.com/rnsdomains/RNS), or read the [RNS specification doc](https://docs.rifos.org/rif-name-service-specification-en.pdf).
+A domain name identifies a node. Each node has a set of resource information, which may be empty. The set of resource information associated with a particular name is composed of separate resource records (RRs). The order of RRs in a set is not significant. Resource records associated with a name are found in the domain's resolver

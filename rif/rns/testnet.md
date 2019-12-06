@@ -18,3 +18,7 @@ BytesUtils: [0x7faf084ef72cb71f3383a5c568c70853ac4c298e](https://explorer.testne
 
 ### RSK Registrar legacy
 TokenRegistrar (auction): [0x3d1a11c623bd21375f2b69f4eec814f4ceeb1d8d](https://explorer.testnet.rsk.co/address/0x3d1a11c623bd21375f2b69f4eec814f4ceeb1d8d)
+
+## RNS Manager
+
+https://testnet.manager.rns.rifos.org

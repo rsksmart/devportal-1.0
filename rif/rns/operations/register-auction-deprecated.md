@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Register a name - Deprecated
+title: Register a domain - Deprecated
 ---
 
 <div class="alert alert-danger">
