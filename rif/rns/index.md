@@ -49,18 +49,18 @@ RNS has two major components:
 These three components roughly correspond to the three layers or views of the domain system:
 - From the user's point of view, the domain system is accessed through a simple [resolution operation](operations/resolve). The domain space consists of a single tree and the user can request information from any section of the tree.
 - From the resolver's point of view, the domain system is composed of an unknown number of names. Each name has a corresponding resolver that provides information for a set of [resolution types](specs/resolution-types) directly.
-- From the registry's point of view, the domain system consists of a [hierarchical tree](architecture/registry) where each leaf have an owner (contract or account) and an associated resolver that provides information of the name.
+- From the registry's point of view, the domain system consists of a [hierarchical tree](architecture/registry) where each leaf has an owner (contract or account) and an associated resolver that provides information of the name.
 
 ### Guidelines on use
 
-Before the RNS can be used to hold naming information for some kind of object, two needs must be met:
+Before RNS can be used to hold naming information for some kind of object, two needs must be met:
 - A convention for mapping between object names and domain names. This describes how information about an object is accessed. Find specs [here](specs#name-mapping-convention)
 - Resource record types and data formats for describing the object. Find specs [here](specs/resolvers).
 
-The guideline for finding a a specific record of a name is as follows:
+The guideline for finding a specific record for a name is as follows:
 1. Calculate the name identifier with [`namehash` function](specs#name-mapping-convention).
 2. Get the name's resolver address via [`resolver(bytes32)`](specs/registry#access).
-3. Determinate if resolver supports desired resource record via [ERC-165 interface detection](https://eips.ethereum.org/EIPS/eip-165).
+3. Determine if resolver supports desired resource record via [ERC-165 interface detection](https://eips.ethereum.org/EIPS/eip-165).
 4. Get the desired resource record. Find currently standardized resolvers [here](specs/resolvers).
 
 ### Resource records
