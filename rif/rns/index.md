@@ -15,7 +15,7 @@ Want to register a domain? Go [here](operations/register) to find out more.
 
 ## The basics
 
-RNS is a hierarchical name space inspired in DNS, with the hierarchy roughly corresponding to organizational structure, and names using "."  as the character to mark the boundary between hierarchy levels.
+RNS is a hierarchical name space inspired by DNS, with the hierarchy roughly corresponding to organizational structure, and uses the "." character to delimit its levels.
 
 ### Design
 
