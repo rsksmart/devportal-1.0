@@ -5,9 +5,9 @@ title: Resolve a domain address
 
 The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver.
 
-To find a name's resolution:
+To find a domain's resolution:
 1. Go to [RNS Manager resolution page](https://manager.rns.rifos.org/resolve)
-2. Type the name you want to resolve
+2. Type the domain you want to resolve
 3. Resolve!
 
 ![resolve](/assets/img/rns/resolve.png)
