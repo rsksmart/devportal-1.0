@@ -12,7 +12,7 @@ Any name that has been registered using the [Auction Model](../register-auction-
 
 <hr />
 
-To renew you domain's expiration, migrate your domain!
+To renew you domain's rent time, migrate your domain!
 
 From now on, every new domain registered under `.rsk` top level domain will be managed by the [RSKOwner](https://github.com/rnsdomains/rns-rskregistrar/blob/master/contracts/RSKOwner.sol) contract. This contract is in charge of domain expirations.
 
