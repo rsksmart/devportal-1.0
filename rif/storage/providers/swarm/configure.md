@@ -14,7 +14,7 @@ For a full list of the available command line options for `swarm`, see [here](ht
 
 # • RNS Resolution
 
-You can resolve RNS addresses by specifying the <a href="../../../../../../rns/architecture/Resolver/">RNS Resolver Smart Contract</a> to use through the `rns-api` flag.
+You can resolve RNS addresses by specifying the <a href="/rif/rns/architecture/Resolver/">RNS Resolver Smart Contract</a> to use through the `rns-api` flag.
 
 For example:
 
@@ -69,7 +69,7 @@ See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using
 
 # • Incentivization
 
-Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network.
+Since <a href="/rif/storage/providers/swarm/incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network.
 
 Here are the incentives-related parameters. Some of these are optional, whether to use any of these or not depends on your use case.
 

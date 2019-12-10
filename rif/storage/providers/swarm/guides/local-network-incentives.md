@@ -1,11 +1,11 @@
 ---
 layout: rsk
-title: Running a local Swarm network on RSK 
+title: Running a local Swarm network on RSK
 ---
 
-This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
+This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`.
 
- The *Swarm Accounting Protocol* (**SWAP**) is required in order to form an <a href="../../../../incentives/">incentivized network</a> in Swarm. This requires chequebook Smart Contracts which keep track of the accounting done between Swarm nodes, and therefore there is need for a blockchain.
+ The *Swarm Accounting Protocol* (**SWAP**) is required in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a> in Swarm. This requires chequebook Smart Contracts which keep track of the accounting done between Swarm nodes, and therefore there is need for a blockchain.
 
 If you need these nodes to run without incentivization, please refer to the much simpler <a href="../standard/">Standard version</a> of this guide.
 
@@ -56,7 +56,7 @@ This starts the blockchain with the pre-mined address of `0xcd2a3d9f938e13cd947e
 
 ## 1.2. Deploy a SWAP Factory Smart Contract
 
-A `SimpleSwapFactory` Smart Contract will need to be deployed to the blockchain next. 
+A `SimpleSwapFactory` Smart Contract will need to be deployed to the blockchain next.
 
 This is a security measure to verify chequebook contracts deployed by the nodes in the network.
 
@@ -92,7 +92,7 @@ Make sure the `swarm` command boots up Swarm correctly before starting the nodes
 Start the first node through:
 
 ```bash
-DATADIR1="s1" && 
+DATADIR1="s1" &&
 rm -rf "$DATADIR1" && mkdir "$DATADIR1/" &&
 swarm --bzznetworkid 5 --datadir "$DATADIR1" --swap --swap-backend-url http://localhost:4444 --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsorigins='*' --no-sync --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x77045e71a7a2c50903d88e564cd72fab11e82051
 ```
@@ -105,7 +105,7 @@ rm -rf "$DATADIR2" && mkdir "$DATADIR2" &&
 swarm --bzznetworkid 5 --datadir "$DATADIR2" --port 40400 --swap --swap-backend-url http://localhost:4444 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=accounting,bzz,swap --wsport 8556 --wsorigins='*' --no-sync --bzzkeyhex 73f0f0e024f09059acb267f836ba7924e0a02fe9dd8089293e7ca3b7a1c14a67 --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x77045e71a7a2c50903d88e564cd72fab11e82051
 ```
 
-This will populate the directories with all of the files needed for each of the Swarm nodes. 
+This will populate the directories with all of the files needed for each of the Swarm nodes.
 
 Note that:
 - The node accounts will already be pre-funded in Ganache; this is achieved through the use of a specific seed and hard-coded node keys.
@@ -157,9 +157,9 @@ You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/lat
 
 It's possible to generate a random file and upload it to the network in order to trigger a cheque to be sent from one node to the other.
 
-The following command generates a 1.6 MB file, pushes it to one node and then retrieves it on the other. 
+The following command generates a 1.6 MB file, pushes it to one node and then retrieves it on the other.
 
-The file should be large enough to immediately trigger a cheque. 
+The file should be large enough to immediately trigger a cheque.
 
 ```bash
 dd if=/dev/urandom of=output bs=1600k count=1 &&
@@ -175,7 +175,7 @@ If this doesn't work, check that:
 
 # Restart the Network
 
-If you want to start from scratch, simply execute the entire code again. 
+If you want to start from scratch, simply execute the entire code again.
 
 If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#3-start-the-nodes).
 
@@ -200,7 +200,7 @@ Make sure that:
 ### Cashing cheques does not work
 
 ```bash
-ERROR[11-26|16:29:40.620] error cashing cheque                     
+ERROR[11-26|16:29:40.620] error cashing cheque
 swaplog=* base=d79b7346431a6112 err="failed to suggest gas price: Post http://localhost:4444: EOF"
 ```
 
@@ -226,12 +226,12 @@ WARN [11-26|17:09:15.801] chequebook deploy error, retrying...     swaplog=* bas
 Fatal: Error starting protocol stack: failed to deploy chequebook: <nil>
 ```
 
-Under the hood Gas Price Suggestion uses `eth_gasPrice` for RPC connections. 
+Under the hood Gas Price Suggestion uses `eth_gasPrice` for RPC connections.
 
 This call works on RSKj as verified with `curl`:
 
 ```bash
-curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[], "id":1 }' http://localhost:4444 
+curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[], "id":1 }' http://localhost:4444
 ```
 
 It is unknown if this problem is due to SWAP or the RSK node.

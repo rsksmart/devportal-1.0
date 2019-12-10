@@ -3,11 +3,11 @@ layout: rsk
 title: Running a local Swarm network
 ---
 
-This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`. 
+This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`.
 
 Swarm can be run without a blockchain, since each node—with the help of the bootnodes—will form a network with its peers through [Kademlia](https://en.wikipedia.org/wiki/Kademlia).
 
-It is through the *Swarm Accounting Protocol* (**SWAP**) that Smart Contracts come into play in Swarm, in order to form an <a href="../../../../incentives/">incentivized network</a>.
+It is through the *Swarm Accounting Protocol* (**SWAP**) that Smart Contracts come into play in Swarm, in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a>.
 
 If you need these nodes to run with incentivization, please refer to the incentivized versions of this guide (<a href="../on-ganache/">for Ganache</a>, or <a href="../on-rsk/">for RSK</a>).
 
@@ -43,7 +43,7 @@ Make sure the `swarm` command boots up Swarm correctly before starting the nodes
 Start the first node through:
 
 ```bash
-DATADIR1="s1" && 
+DATADIR1="s1" &&
 rm -rf "$DATADIR1" && mkdir "$DATADIR1/" &&
 swarm --datadir "$DATADIR1" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsorigins='*' --bzzkeyhex 40b3e576b606d4580ad3c875e9fda07ba3e4d99a40534c5bf1bc72226451adb1 --nodekeyhex 2eae3526db799cb5f1ab6ab64255ba8182cdaeb4f773a0ae1244f4ca59978dc2
 ```
@@ -56,7 +56,7 @@ rm -rf "$DATADIR2" && mkdir "$DATADIR2" &&
 swarm --datadir "$DATADIR2" --port 40400 --bzzport 9100 --bootnodes "enode://9b7571c26d50bed78f614be5bf3b2d661176fdfeb546f100b84dd03545f4bc98e42e640286ac92fe110ec5f4995141743e47d8f642aa49ac05bd5f2cab2e881a@127.0.0.1:30399" --ws --wsaddr=0.0.0.0 --wsapi=bzz --wsport 8556 --wsorigins='*'
 ```
 
-This will populate the directories with all of the files needed for each of the Swarm nodes. 
+This will populate the directories with all of the files needed for each of the Swarm nodes.
 
 Note that:
 - A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
@@ -105,7 +105,7 @@ You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/lat
 
 # Restart the network
 
-If you want to start from scratch, simply execute the entire code again. 
+If you want to start from scratch, simply execute the entire code again.
 
 If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [start the nodes](#run-the-network) section.
 
