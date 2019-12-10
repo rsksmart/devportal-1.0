@@ -3,7 +3,7 @@ layout: rsk
 title: About RIF Storage
 ---
 
-RIF Storage is an open, censorship resistant, permissionless and decentralized storage protocol. It provides a unified interfaceto a 3rd party decentralized storage providers like [IPFS](/rif/storage/ipfs) or [Swarm](/rif/storage/swarm) making it easy . We are adding incentives to these systems to ensure resistance to trivial attacks, availability and to allow participants to be rewarded for their participation in the network.
+RIF Storage is an open, censorship resistant, permissionless and decentralized storage protocol. It provides a unified interface to a 3rd party decentralized storage providers like [IPFS](/rif/storage/ipfs) or [Swarm](/rif/storage/swarm) making it easy . We are adding incentives to these systems to ensure resistance to trivial attacks, availability and to allow participants to be rewarded for their participation in the network.
 
 As an end-user RIF Storage allows you to take back ownership of your data. Even if service you are using stops existing you can retrieve all your content.
 
