@@ -12,10 +12,8 @@ From the end user's perspective, Swarm is not that different from the world wide
 # Resources
 
 ## Links
-- Official website
-  - [Web 2.0](https://swarm.ethereum.org/)
-  - [Web 3.0](bzz://swarm.eth)
-- [Read the Docs](https://swarm-guide.readthedocs.io/en/latest/)
+- [Official website](https://swarm.ethereum.org/)
+- [Documentation](https://swarm-guide.readthedocs.io/en/latest/)
 - [Github repository](https://github.com/ethersphere/swarm)
 
 ## Papers

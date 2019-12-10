@@ -14,7 +14,7 @@ For a full list of the available command line options for `swarm`, see [here](ht
 
 # • RNS Resolution
 
-You can resolve RNS addresses by specifying the <a href="../../../../../../rns/architecture/Resolver/">RNS Resolver Smart Contract</a> to use through the `rns-api` flag. 
+You can resolve RNS addresses by specifying the <a href="../../../../../../rns/architecture/Resolver/">RNS Resolver Smart Contract</a> to use through the `rns-api` flag.
 
 For example:
 
@@ -52,7 +52,7 @@ where the value of the `ens-api` flag is a valid path to a running Geth IPC.
 
 ## Through Smart Contracts
 
-As an alternative, you can resolve ENS addresses by specifying pairs of top level domains (TLD) and Smart Contracts of the [Resolver type](https://docs.ens.domains/#ens-architecture) with the use of the `ens-api` flag. 
+As an alternative, you can resolve ENS addresses by specifying pairs of top level domains (TLD) and Smart Contracts of the [Resolver type](https://docs.ens.domains/#ens-architecture) with the use of the `ens-api` flag.
 
 For example:
 
@@ -69,7 +69,7 @@ See [here](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#using
 
 # • Incentivization
 
-Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network. 
+Since <a href="../../../incentives/">incentivization</a> is not yet enabled by default, several parameters are needed to run Swarm as a node which is part of an incentivized network.
 
 Here are the incentives-related parameters. Some of these are optional, whether to use any of these or not depends on your use case.
 
@@ -92,7 +92,7 @@ For example:
 swarm --bzznetworkid 5 --swap --swap-backend-url https://ropsten.infura.io/E4bWUMMVp0qItxErZ69u --swap-initial-deposit 500000000000 --swap-chequebook-factory 0x41ca78f7fd9e745beabb2145a9ffd60992a96a28
 ```
 
-This will start a SWAP-enabled Swarm node using network ID `5`, which means it will only be able to connect to other nodes with this same network ID. 
+This will start a SWAP-enabled Swarm node using network ID `5`, which means it will only be able to connect to other nodes with this same network ID.
 
 It will also use Ropsten as a blockchain, deploying on it a new chequebook and making a deposit of `500000000000` Wei to it.
 
