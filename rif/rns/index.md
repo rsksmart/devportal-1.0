@@ -24,7 +24,7 @@ The design goals of the RIF Name Service influence its structure.
 - The primary goal is a consistent name space which will be used for referring to resources.
 - All data associated with a name is tagged with a type, and queries can be limited to a single type.
 - Because we want the name space to be useful in dissimilar networks and applications, we provide the ability to use the same name space with different protocol families or management. The RNS tags all data with a class as well as the type, so that we can allow parallel use of different formats for data of type address.
-- Where there tradeoffs between the cost of acquiring data, the speed of updates, and the accuracy of caches, the source of the data should control the tradeoff.
+- There may be tradeoffs between the cost of acquiring data, the speed of updates, and the accuracy of caches. The owner of the domain, who is the source of the data, should weigh these tradeoffs, and decide what to store, and how to cache.
 
 [RNS specs](specs)
 
