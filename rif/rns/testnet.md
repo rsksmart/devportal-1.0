@@ -31,3 +31,7 @@ NameResolver: [0x7d284aaac6e925aad802a53c0c69efe3764597b8](https://explorer.test
 ### RSK Registrar legacy
 
 TokenRegistrar (auction): [0x3d1a11c623bd21375f2b69f4eec814f4ceeb1d8d](https://explorer.testnet.rsk.co/address/0x3d1a11c623bd21375f2b69f4eec814f4ceeb1d8d)
+
+## RNS Manager
+
+https://testnet.manager.rns.rifos.org
