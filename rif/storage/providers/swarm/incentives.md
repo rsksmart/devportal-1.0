@@ -3,7 +3,6 @@ layout: rsk
 title: Swarm Incentives
 ---
 
-# Introduction
 
 File sharing systems heavily rely on users distributing files to others willingly. But strictly speaking, a user could choose to download a file and consume resources without uploading in return.
 
@@ -11,7 +10,7 @@ Incentivization is of major importance for such systems. Why? Think for a second
 
 Ask yourself another question: what would make you willing to serve chunks and contribute to a healthy network? 
 
-# Swarm Incentives
+## Swarm Incentives
 
 Swarm defines the *Swarm Accounting Protocol* (**SWAP**), which is a tit-for-tat system where nodes account how much data they request and serve. 
 
@@ -21,7 +20,7 @@ However, there is a problem with this in a network of file storage. We expect a 
 
 SWAP allows nodes to keep track of their balances, so that if a node requests many more chunks from another than what it serves, this will cause it to issue a payment through a second-layer payment solution. 
 
-# SWAP
+## SWAP
 
 <img src="https://www.rifos.org/wp-content/uploads/2019/07/5.-swap.gif"/>
 <p style="text-align:center;"><sub>The SWAP mechanism shown here, where nodes send and receive chunks from each other and the balance is settled once the chunk-o-meter tilts too much to one side.</sub></p>
@@ -30,6 +29,5 @@ While simple in design, such a concept is powerful in a decentralized network. A
 
 In this case, we expect nodes driven by profit to join the network and serve the most desired chunks from high-throughput servers, which will make the network more robust, faster and more difficult to take down. 
 
-------
 
-_Based on the blog post "[RIF Storage: The First Chunks](https://www.rifos.org/blog/rif-storage-the-first-chunks/)", by Vojtěch Šimetka & Rinke Hendriksen._
+> Based on the blog post "[RIF Storage: The First Chunks](https://www.rifos.org/blog/rif-storage-the-first-chunks/)", by Vojtěch Šimetka & Rinke Hendriksen.

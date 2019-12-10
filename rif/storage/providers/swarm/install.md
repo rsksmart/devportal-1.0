@@ -5,27 +5,25 @@ title: Installing Swarm
 
 To install Swarm, you can download the latest binaries or—alternatively—compile them directly from the source code.
 
----
 
-# • Download the binaries (recommended)
+## Download the binaries (recommended)
 
 Pre-compiled binaries for Linux, macOS and Windows are available to download from [the Swarm official homepage](https://swarm-gateways.net/bzz:/swarm.eth/downloads/).
 
----
 
-# • Compile from source code
+## Compile from source code
 
-## Prerequisites
+### Prerequisites
 
-### 1. Git
+#### 1. Git
 
 To install `git`, follow the instructions [here](https://git-scm.com/downloads).
 
-### 2. Golang
+#### 2. Golang
 
 To install `go`, follow the instructions [here](https://golang.org/doc/install).
 
-#### 2.1 Set up Go environmnet
+##### 2.1 Set up Go environmnet
 
 Make sure the `GOPATH` environment variable is set:
 
@@ -43,7 +41,7 @@ mkdir $HOME/go
 
 Verify this step was successful through `echo $GOPATH`.
 
-## Create the Swarm binaries
+### Create the Swarm binaries
 
 If needed, create the directory for the project:
 
@@ -72,10 +70,9 @@ cd $GOPATH/src/github.com/ethersphere/swarm/build/bin/ &&
 ./swarm version
 ```
 
-## Updating & Reinstalling
+### Updating & Reinstalling
 
 To update the Swarm client simply download the newest source code and recompile.
 
----
 
-_Guide based on [Swarm for Node-Operators: Installation and Updates](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#installation-and-updates), by the Swarm team._
+> Guide based on [Swarm for Node-Operators: Installation and Updates](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#installation-and-updates), by the Swarm team.
