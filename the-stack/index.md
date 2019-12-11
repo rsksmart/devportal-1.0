@@ -21,7 +21,7 @@ title: The Stack
 <div class="row rif_blue">
     <div class="col"><span><a href="/rif/rns/">Name Services</a></span></div>
     <div class="col"><span><a href="/rif/lumino/">Payments (Lumino)</a></span></div>
-    <div class="col"><span>Data Storage</span></div>
+    <div class="col"><span><a href="/rif/storage/">Storage</a></span></div>
     <div class="col"><span>Secure Comms</span></div>
     <div class="col"><span>Data feeds</span></div>
     <div class="col"><span>Marketplace</span></div>
