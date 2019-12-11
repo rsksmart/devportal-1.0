@@ -21,7 +21,7 @@ title: The Stack
 <div class="row rif_blue">
     <div class="col"><span><a href="/rif/rns/">RIF Directory</a></span></div>
     <div class="col"><span><a href="/rif/lumino/">RIF Payments</a></span></div>
-    <div class="col"><span>RIF Storage</span></div>
+    <div class="col"><span><a href="/rif/storage/">RIF Storage</a></span></div>
     <div class="col"><span>RIF Comms</span></div>
     <div class="col"><span>RIF Gateways</span></div>
     <div class="col"><span>RIF Marketplace</span></div>
