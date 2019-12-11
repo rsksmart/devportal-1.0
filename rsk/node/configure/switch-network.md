@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Switch network
+description: "How to switch your RSK node between the Mainnet, Testnet, and RegTest networks"
 ---
 
 If you want to switch your node to Mainnet, Testnet, or RegTest networks:
@@ -55,7 +56,7 @@ sudo service rsk start
 By running these instructions in your shell, you are:
 
 - Stopping the running RSK service.
-- Moving to RSK configuration folder (`cd`). 
+- Moving to RSK configuration folder (`cd`).
 - Removing `node.conf`, that is a symbolic link to the configuration you're using (`rm` deletes it).
 - Linking `node.conf` with the configuration file you decide (`ls` with the `-s` option, it makes symbolic - or _soft_ - links). The node is configured to read directly from the `node.conf` link.
 - Restarting the RSK service.
