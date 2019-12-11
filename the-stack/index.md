@@ -19,16 +19,16 @@ title: The Stack
     <div class="col"><span><a href="/libraries/">Libraries</a></span></div>
 </div>
 <div class="row rif_blue">
-    <div class="col"><span><a href="/rif/rns/">Name Services</a></span></div>
-    <div class="col"><span><a href="/rif/lumino/">Payments (Lumino)</a></span></div>
-    <div class="col"><span><a href="/rif/storage/">Storage</a></span></div>
-    <div class="col"><span>Secure Comms</span></div>
-    <div class="col"><span>Data feeds</span></div>
-    <div class="col"><span>Marketplace</span></div>
+    <div class="col"><span><a href="/rif/rns/">RIF Directory</a></span></div>
+    <div class="col"><span><a href="/rif/lumino/">RIF Payments</a></span></div>
+    <div class="col"><span><a href="/rif/storage/">RIF Storage</a></span></div>
+    <div class="col"><span>RIF Comms</span></div>
+    <div class="col"><span>RIF Gateways</span></div>
+    <div class="col"><span>RIF Marketplace</span></div>
 </div>
 
 <div class="row has-unique-col rsk_blue">
-    <div class="col"><span><a href="/rsk/">RSK: Business Logic</a></span></div>
+    <div class="col"><span><a href="/rsk/">rsk smart contracts</a></span></div>
 </div>
 
 <div class="row has-unique-col">
