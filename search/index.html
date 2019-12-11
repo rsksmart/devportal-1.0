@@ -1,7 +1,13 @@
+---
+layout: rsk
+title: "Search RSK documentation"
+skip_search: true
+---
+
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
-<ul id="results-container"></ul>
+  <input type="text" id="search-input" placeholder="search...">
+  <ul id="results-container"></ul>
 </div>
 
 <!-- Script pointing to search-script.js -->
@@ -9,9 +15,9 @@
 
 <!-- Configuration -->
 <script>
-SimpleJekyllSearch({
-  searchInput: document.getElementById('search-input'),
-  resultsContainer: document.getElementById('results-container'),
-  json: '/search/search.json'
-})
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search/search.json'
+  });
 </script>
