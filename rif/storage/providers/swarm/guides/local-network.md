@@ -9,7 +9,7 @@ Swarm can be run without a blockchain, since each node—with the help of the bo
 
 It is through the *Swarm Accounting Protocol* (**SWAP**) that Smart Contracts come into play in Swarm, in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a>.
 
-If you need these nodes to run with incentivization, please refer to the incentivized versions of this guide (<a href="/rif/storage/providers/swarm/guides/backup/on-ganache/">for Ganache</a>, or <a href="/rif/storage/providers/swarm/guides/local-network-incentives.md">for RSK</a>).
+If you need these nodes to run with incentivization, please refer to the incentivized versions of this guide (<a href="/rif/storage/providers/swarm/guides/backup/on-ganache/">for Ganache</a>, or <a href="/rif/storage/providers/swarm/guides/local-network-incentives/">for RSK</a>).
 
 ## Table of Contents
 1. [Requirements](#requirements)
