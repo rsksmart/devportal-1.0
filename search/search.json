@@ -1,0 +1,19 @@
+---
+---
+{% assign pages = site.pages | where_exp: "page", "page.skip_search != true" %}
+[
+  {% for page in pages %}
+    {
+      "title"    : "{{ page.title | strip_html | escape }}",
+      "url"      : "{{ site.baseurl }}{{ page.url }}",
+      "category" : "{{ page.categories | join: ', '}}",
+      "tags"     : "{{ page.tags | join: ', ' }}",
+      "date"     : "{{ page.date }}",
+      {% if page.description %}
+      "description" : "{{ page.description | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
+      {% else %}
+      "description" : "{{ page.content | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
+      {% endif %}
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
