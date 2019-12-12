@@ -1,0 +1,28 @@
+{% if page.collection %}
+  {% assign posts = site[page.collection] | where_exp: "page", "page.collection_order > 0" | sort: 'collection_order' %}
+  {% for links in posts %}
+    {% if links.title == page.title %}
+      {% unless forloop.first %}
+        {% assign prevpost = prev %}
+      {% endunless %}
+      {% unless forloop.last %}
+        {% assign nextpost = posts[forloop.index] %}
+      {% endunless %}
+    {% endif %}
+    {% assign prev = links %}
+  {% endfor %}
+  <div class="prev-next-links">
+      {% if posts.size > 1 %}
+        {% if prevpost %}
+          <a href="{{prevpost.url}}" class="prev green-button">
+            &laquo;&nbsp;{{prevpost.title}}
+          </a>
+        {% endif %}
+        {% if nextpost %}
+          <a href="{{nextpost.url}}" class="next green-button">
+            {{nextpost.title}}&nbsp;&raquo;
+          </a>
+        {% endif %}
+      {% endif %}
+  </div>
+{% endif %}
