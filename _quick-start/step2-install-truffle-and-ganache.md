@@ -1,10 +1,11 @@
 ---
 layout: rsk
 title: Quick Start - Step 2
+collection_order: 20
 ---
 ## Step 2 : Install Truffle and Ganache
 
-Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains. 
+Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains.
 
 ### Install Truffle
 
@@ -112,9 +113,3 @@ Ganache is a GUI app, and starting it in this manner makes DevTools available.
 ### More on Truffle and Ganache
 
 To learn more about Truffle's commands, visit their [official website](https://www.trufflesuite.com/docs/truffle/overview).
-
-----
-
-[Previous](../step1-install-rsk-local-node)
-|
-<a href="/quick-start/step3-edit-smart-contract" class="green-button">Next</a>

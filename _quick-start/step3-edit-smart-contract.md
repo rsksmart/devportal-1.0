@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Quick Start - Step 3
+collection_order: 30
 ---
 ## Step 3 : Edit Smart Contract
 
@@ -73,7 +74,7 @@ function EIP20(
     name = _tokenName;                                   // Set the name for display purposes
     decimals = _decimalUnits;                            // Amount of decimals for display purposes
     symbol = _tokenSymbol;                               // Set the symbol for display purposes
-    emit Transfer(msg.sender, msg.sender, 0); 
+    emit Transfer(msg.sender, msg.sender, 0);
     emit Approval(msg.sender, msg.sender, 0);
 }
 ```
@@ -96,9 +97,3 @@ module.exports = (deployer) => {
   deployer.deploy(EIP20, 10000, 'Flower Token', 1, 'FLT');
 };
 ```
-
-----
-
-[Previous](../step2-install-truffle-and-ganache)
-|
-<a href="/quick-start/step4-compile-and-deploy" class="green-button">Next</a>
