@@ -587,6 +587,13 @@ img {
 	height: 100%;
 }
 
+/* prev-next-links */
+
+.prev-next-links {
+	display: block;
+	width: auto;
+	overflow: hidden;
+}
 
 /*buttons*/
 
@@ -643,6 +650,27 @@ color:white!important;
     transform: rotate(-90deg);
     font-family: 'Quicksand', sans-serif;
     transition: all 0.5s ease;
+}
+
+/* prev-next-links */
+
+.prev-next-links {
+	display: block;
+	width: auto;
+	overflow: hidden;
+}
+
+.prev-next-links .prev, .prev-next-links .next {
+	display: block;
+	margin: 1em 0;
+}
+
+.prev-next-links .prev {
+	float: left;
+}
+
+.prev-next-links .next {
+	float: right;
 }
 
 /*footer*/
