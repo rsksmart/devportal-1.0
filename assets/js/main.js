@@ -64,6 +64,7 @@ $(document).ready(function () {
 $(document).ready(function () {
  $('.current').parentsUntil('.first_level').addClass('subnav-reveal rotate-chevron');
  $('.current').parents().addClass('rotate-chevron current');
+ $('.expand-all').on('click', expandAll);
 });
 
 // Header scroll class
@@ -89,5 +90,26 @@ function ChangeTheme (e) {
     $(e).text('Dark');
     $('link[href="/assets/css/styles_dark.css"]').prop('disabled', true);
   }
+  return false;
+}
+
+// toggle between expand all and collapse all
+function expandAll (e) {
+  // work out whether we are expanding or collapsing
+  var target = $(this);
+  target.toggleClass('collapsed');
+  var isCollapsed = target.hasClass('collapsed');
+  var targetText = isCollapsed ? 'Expand All' : 'Collapse All';
+
+  // update the text we just clicked on
+  target.find('.text').text(targetText);
+  target.toggleClass('rotate-chevron', !isCollapsed);
+
+  // update every item in the collapsible menu
+  $('.desktop_accordion .subnav > a').each(function () {
+    $(this).parent().toggleClass('rotate-chevron', !isCollapsed);
+    $(this).next('ul').toggleClass('subnav-reveal', !isCollapsed);
+  });
+
   return false;
 }
