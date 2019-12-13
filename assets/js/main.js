@@ -64,7 +64,7 @@ $(document).ready(function () {
 $(document).ready(function () {
  $('.current').parentsUntil('.first_level').addClass('subnav-reveal rotate-chevron');
  $('.current').parents().addClass('rotate-chevron current');
- $('.expand-all').on('click', expandAll);
+ $('.toggle-nav-column-visibility').on('click', toggleNavColumnVisibility);
 });
 
 // Header scroll class
@@ -94,7 +94,7 @@ function ChangeTheme (e) {
 }
 
 // toggle between expand all and collapse all
-function expandAll (e) {
+function toggleNavColumnVisibility (e) {
   // work out whether we are expanding or collapsing
   var target = $(this);
   target.toggleClass('collapsed');
