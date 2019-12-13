@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>RSK Grants Application Follow Up</title>
+  <link rel="stylesheet" type="text/css" href="deps/opt/bootstrap.css" />
+</head>
+<body>
+  <h1>RSK Grants Application Follow Up</h1>
+  <form></form>
+  <div id="res" class="alert"></div>
+  <script type="text/javascript" src="deps/jquery.min.js"></script>
+  <script type="text/javascript" src="deps/underscore.js"></script>
+  <script type="text/javascript" src="deps/opt/jsv.js"></script>
+  <script type="text/javascript" src="lib/jsonform.js"></script>
+  <script type="text/javascript">
+    $.getJSON('form.json', function (data) {
+      var jsonFormInitialisation = Object.assign({}, data, {
+        onSubmit: function (errors, values) {
+          if (errors) {
+            $('#res').html('<p>Please fix the errors highlighted above.</p>');
+          } else {
+            $('#res').html('<p>Thank you for submitting your application.</p>');
+          }
+        }
+      });
+      $('form').jsonForm(jsonFormInitialisation);
+    });
+  </script>
+</body>
+
+</html>
