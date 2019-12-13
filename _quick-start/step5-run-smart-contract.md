@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Quick Start - Step 5
+collection_order: 50
 ---
 ## Step 5 : Run Smart Contracts
 
@@ -82,7 +83,3 @@ This should print out `9990` and `10` respectively. The first account has fewer 
 #### Congratulations
 
 You have reached the end of the quick start tutorials. You are now ready to develop decentralised applications!
-
-----
-
-[Previous](../step4-compile-and-deploy)

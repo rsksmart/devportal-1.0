@@ -1,12 +1,13 @@
 ---
 layout: rsk
 title: Quick Start - Step 1
+collection_order: 10
 ---
 ## Step 1 : Install RSK local node
 
 RSK node can be installed on all major platforms, including Linux, Windows, and Mac. In this tutorial, we provide step-by-step instructions for running a local RegNet node through Docker. Docker installation supports Mac, Windows, and Linux.
 
-#### Prepare the Environment 
+#### Prepare the Environment
 
 The tutorial project files can be downloaded from this [github repo](https://github.com/rsksmart/truffle-integration).
 
@@ -18,10 +19,10 @@ cd truffle-integration
 
 For Mac OSX Developers:
 
-Please ensure you are running xcode directly and not the command-line instance. Run 
+Please ensure you are running xcode directly and not the command-line instance. Run
 
 ```shell
-sudo xcode-select -s /Applications/Xcode.app/Contents/Developer 
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 ```
 
 #### Install Docker Desktop Client
@@ -133,7 +134,3 @@ docker rm <container id>
 ```
 
 For the above example, `<container id>` is `regtest-node-01`.
-
-----
-
-<a href="/quick-start/step2-install-truffle-and-ganache" class="green-button">Next</a>
