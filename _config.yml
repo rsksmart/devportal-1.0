@@ -6,6 +6,9 @@ collections:
   quick-start:
     sort_by: collection_order
     output: true
+  rsk:
+    sort_by: collection_order
+    output: true
 
 rss: rss
 
@@ -20,6 +23,8 @@ repository: rsksmart/rsksmart.github.io
 domain: developers.rsk.co
 
 highlighter: rouge
+
+github: [metadata]
 
 plugins:
  - jekyll-last-modified-at

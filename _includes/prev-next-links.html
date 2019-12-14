@@ -1,4 +1,4 @@
-{% if page.collection %}
+{% if page.collection and page.collection_order > 0 %}
   {% assign posts = site[page.collection] | where_exp: "page", "page.collection_order > 0" | sort: 'collection_order' %}
   {% for links in posts %}
     {% if links.title == page.title %}
