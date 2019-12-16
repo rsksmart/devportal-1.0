@@ -1363,7 +1363,14 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 	padding:0px;
 }
 
-
+.nav-search-item > a {
+	font-family: 'Quicksand', sans-serif;
+	color: #0e0e0e;
+	font-weight: bold;
+	padding: 7px 0;
+	display: block;
+	font-size: 1.2em;
+}
 
 /* media queries*/
 

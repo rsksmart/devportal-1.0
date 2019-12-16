@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RNS Specs
+description: "RNS specifications, and name mapping convention"
 ---
 
 The domain name space is a tree structure. Each node and leaf on the tree corresponds to a resource set (which may be empty). The domain system makes no distinctions between the uses of the interior nodes and leaves, and this memo uses the term "node" to refer to both.
