@@ -2,18 +2,23 @@
 skip_search: true
 ---
 {% assign pages = site.pages | where_exp: "page", "page.skip_search != true" %}
+{% assign   content_sections = "quick-start|the-stack|rsk|rif|develop|contribute" | split: "|" %}
 [
-  {% for page in pages %}
+  {% for page in pages %} {% assign page_section = page.url | split: "/" %}
     {
-      "title"    : "{{ page.title | strip_html | escape }}",
       "url"      : "{{ site.baseurl }}{{ page.url }}",
+      "title"    : "{{ page.title | strip_html | escape }}",
       "category" : "{{ page.categories | join: ', '}}",
       "tags"     : "{{ page.tags | join: ', ' }}",
       "date"     : "{{ page.date }}",
+      {% if content_sections contains page_section[1] %}
       {% if page.description %}
-      "desc" : "{{ page.description | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
+      "desc"     : "{{ page.description | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
       {% else %}
-      "desc" : "{{ page.content | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
+      "desc"     : "{{ page.content | truncatewords: 200, "…" | markdownify | strip_html | normalize_whitespace | strip_newlines | escape }}"
+      {% endif %}
+      {% else %}
+      "desc"     : ""
       {% endif %}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
