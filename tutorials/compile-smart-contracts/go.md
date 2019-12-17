@@ -35,7 +35,7 @@ make devtools
 ### 1.3 ABI file
 Save the Smart Contract ABI to your local drive and keep the location at hand.
 
-If you do not have an ABI, you can generate one from the contract replacing the `.sol` file with your own smart contract file name:
+If you do not have an ABI, you can generate one from the contract replacing the `.sol` file with your own smart contract filename:
 ```sh
 solc --abi Contract.sol -o build
 ```
