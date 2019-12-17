@@ -9,10 +9,8 @@ In order to interact with a Smart Contract in a Go application, the ABI ([applic
 
 # 1. Prerequisites
 ## 1.1 Solidity compiler
-Also known as `solc`, can be installed through:
-```sh
-sudo snap install solc --edge
-```
+Also known as `solc`, follow the instructions [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) to install it.
+
 ## 1.2 `abigen` tool
 This is the tool used to generate the `.go` files with the contract ABI as input.
 
