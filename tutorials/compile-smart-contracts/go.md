@@ -7,11 +7,11 @@ title: Compile Smart Contracts to Go
 
 In order to interact with a Smart Contract in a Go application, the ABI ([application binary interface](https://solidity.readthedocs.io/en/latest/abi-spec.html)) of the contract must first be generated, and then compiled so that it can be imported in said application.
 
-# 1. Prerequisites
-## 1.1 Solidity compiler
+## 1. Prerequisites
+### 1.1 Solidity compiler
 Also known as `solc`, follow the instructions [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) to install it.
 
-## 1.2 `abigen` tool
+### 1.2 `abigen` tool
 This is the tool used to generate the `.go` files with the contract ABI as input.
 
 ### 1.2.1 `protoc` tool (dependency)
@@ -33,23 +33,23 @@ cd $GOPATH/src/github.com/ethereum/go-ethereum/
 make
 make devtools
 ```
-## 1.3 ABI file
+### 1.3 ABI file
 Save the Smart Contract ABI to your local drive and keep the location at hand.
 
-If you do not have an ABI, you can generate one from the contract like so (replace the `.sol` file with your own):
+If you do not have an ABI, you can generate one from the contract replacing the `.sol` file with your own smart contract name:
 ```sh
 solc --abi Contract.sol -o build
 ```
 For this example, the resulting file will be `./build/Contract.abi`.
 
-# 2. Compilation
+## 2. Compilation
 To convert the ABI into a Go file, execute the following command:
 ```sh
 abigen --abi=./build/Contract.abi --pkg=mypackage --out=Contract.go
 ```
 Replace the contract and package names with your own.
 
-## 2.1 Example
+## Example
 In this fashion, the [RNS Resolver](https://github.com/rnsdomains/rns-go-lib/tree/master/resolver/multi_chain_resolver) was compiled by doing:
 ```sh
 abigen --abi=MultiChainResolverABI.json --pkg=multichainresolver --out=multi_chain_resolver.go
