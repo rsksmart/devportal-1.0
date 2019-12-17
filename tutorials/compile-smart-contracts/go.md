@@ -11,7 +11,7 @@ In order to interact with a Smart Contract in a Go application, the ABI ([applic
 ### 1.1 Solidity compiler
 Also known as `solc`, follow the instructions [here](https://solidity.readthedocs.io/en/latest/installing-solidity.html) to install it.
 
-### 1.2 `abigen` tool
+### 1.2 `abigen`
 This is the tool used to generate the `.go` files with the contract ABI as input.
 
 ### 1.2.1 `protoc` tool (dependency)
@@ -24,8 +24,7 @@ sudo unzip -o $PROTOC_ZIP -d /usr/local include/*
 rm -f $PROTOC_ZIP
 ```
 
-------
-
+### 1.2.2 `abigen` tool
 Install `abigen` by doing:
 ```sh
 go get -u github.com/ethereum/go-ethereum
@@ -36,7 +35,7 @@ make devtools
 ### 1.3 ABI file
 Save the Smart Contract ABI to your local drive and keep the location at hand.
 
-If you do not have an ABI, you can generate one from the contract replacing the `.sol` file with your own smart contract name:
+If you do not have an ABI, you can generate one from the contract replacing the `.sol` file with your own smart contract file name:
 ```sh
 solc --abi Contract.sol -o build
 ```
