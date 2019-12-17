@@ -1,13 +1,14 @@
 ---
 layout: rsk
 title: Blockmason
+description: "How to use RSK with Blockmason Link, with an example of deploying a smart contract to the Testnet"
 ---
 
 ## Using RSK with Blockmason Link
 
 RSK is an open source, Ethereum compatible, Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.
 
-In this onboarding example, we will deploy a smart contract to the RSK Testnet. 
+In this onboarding example, we will deploy a smart contract to the RSK Testnet.
 
 ### Setup
 
@@ -24,7 +25,7 @@ You can obtain some Testnet RBTC tokens from [RSK Testnet Faucet](https://faucet
 
 ![New Contract Link](/assets/img/tutorials/using-blockmason/new_contract_link.png)
 
-3\. Under *`Which Ethereum account would you like to use?`*, use the *`Default Account`*. This is the account we seeded with test RBTC tokens as part of the setup. 
+3\. Under *`Which Ethereum account would you like to use?`*, use the *`Default Account`*. This is the account we seeded with test RBTC tokens as part of the setup.
 
 ![Default Link Account](/assets/img/tutorials/using-blockmason/default_account_link.png)
 
@@ -60,7 +61,7 @@ You can obtain some Testnet RBTC tokens from [RSK Testnet Faucet](https://faucet
 
 ![Create new OAuth](/assets/img/tutorials/using-blockmason/oauth_link_new.png)
 
-Once you hit *`Finish`*, you should end up back at Home page and see your Ownership code in the IDE, the API tab and a gear icon containing the `client_id` and `client_secret` at the bottom of the page which you will use in your app. 
+Once you hit *`Finish`*, you should end up back at Home page and see your Ownership code in the IDE, the API tab and a gear icon containing the `client_id` and `client_secret` at the bottom of the page which you will use in your app.
 
 ![API Documentation Link](/assets/img/tutorials/using-blockmason/link_home_post_setup.png)
 
@@ -90,7 +91,7 @@ A simple JavaScript file using the Link JavaScript SDK in a Node environment can
 
  ![Ownership Script Example](/assets/img/tutorials/using-blockmason/ownership_sdk_example.png)
 
- > Check your Ownership contract using the RSK Testnet Explorer to confirm the new transactions representing the `setOwner()` and `getOwner()` function calls. 
+ > Check your Ownership contract using the RSK Testnet Explorer to confirm the new transactions representing the `setOwner()` and `getOwner()` function calls.
 
 ### Deploying to RSK Mainnet
 

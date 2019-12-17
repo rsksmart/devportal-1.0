@@ -32,8 +32,8 @@ Describes how your node peers other nodes.
 
 | Network | `ip.list` |
 | - | - 
-| TestNet |`"bootstrap02.testnet.rsk.co:50505","bootstrap03.testnet.rsk.co:50505","bootstrap04.testnet.rsk.co:50505","bootstrap05.testnet.rsk.co:50505"` | 
-| MainNet | `"bootstrap01.rsk.co:5050","bootstrap02.rsk.co:5050","bootstrap03.rsk.co:5050","bootstrap04.rsk.co:5050","bootstrap05.rsk.co:5050","bootstrap06.rsk.co:5050","bootstrap07.rsk.co:5050","bootstrap08.rsk.co:5050","bootstrap09.rsk.co:5050","bootstrap10.rsk.co:5050","bootstrap11.rsk.co:5050","bootstrap12.rsk.co:5050","bootstrap13.rsk.co:5050","bootstrap14.rsk.co:5050","bootstrap15.rsk.co:5050","bootstrap16.rsk.co:5050"` |
+| Testnet |`"bootstrap02.testnet.rsk.co:50505","bootstrap03.testnet.rsk.co:50505","bootstrap04.testnet.rsk.co:50505","bootstrap05.testnet.rsk.co:50505"` | 
+| Mainnet | `"bootstrap01.rsk.co:5050","bootstrap02.rsk.co:5050","bootstrap03.rsk.co:5050","bootstrap04.rsk.co:5050","bootstrap05.rsk.co:5050","bootstrap06.rsk.co:5050","bootstrap07.rsk.co:5050","bootstrap08.rsk.co:5050","bootstrap09.rsk.co:5050","bootstrap10.rsk.co:5050","bootstrap11.rsk.co:5050","bootstrap12.rsk.co:5050","bootstrap13.rsk.co:5050","bootstrap14.rsk.co:5050","bootstrap15.rsk.co:5050","bootstrap16.rsk.co:5050"` |
 
 * `peer.active = []` is used to connect to specific nodes. It can be empty. 
 * `peer.trusted = []` is a list of peers whose incoming connections are always accepted from. It can be empty. 
@@ -42,8 +42,8 @@ Describes how your node peers other nodes.
 | Network | `peer.port` |
 | - | - |
 | Regtest | 30305 |
-| TestNet | 50505 | 
-| MainNet | 5050 |
+| Testnet | 50505 |
+| Mainnet | 5050 |
 
 * `peer.connection.timeout = number (seconds)` defines *in seconds* the timeout for trying to connect to a peer. Suggested value: `2`.
 * `channel.read.timeout = number (seconds)` specifies how much time you will wait for a message to come before closing the channel. Suggested value: `30`.
@@ -53,8 +53,8 @@ Describes how your node peers other nodes.
 | Network | `peer.networkId` |
 | - | - |
 | Regtest | 34567 |
-| TestNet | 779 |
-| MainNet | 775 |
+| Testnet | 779 |
+| Mainnet | 775 |
 
 
 * `peer.maxActivePeers = int` is the max number of active peers that your node will maintain. Suggested value: `30`.
@@ -212,8 +212,8 @@ We use:
 | Network | `blockchain.config.name` |
 | - | - |
 | Regtest | regtest |
-| TestNet | testnet |
-| MainNet | main |
+| Testnet | testnet |
+| Mainnet | main |
 
 
 ## bind_address
@@ -232,8 +232,8 @@ The folder *resources/genesis* contains several versions of genesis configuratio
 | Network | `genesis` |
 | - | - |
 | Regtest | rsk-dev.json |
-| TestNet | bamboo-testnet.json |
-| MainNet | rsk-mainnet.json |
+| Testnet | bamboo-testnet.json |
+| Mainnet | rsk-mainnet.json |
 
 ## transaction.outdated
 It defines when a transaction is outdated: 

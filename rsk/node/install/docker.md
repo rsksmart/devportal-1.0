@@ -13,23 +13,23 @@ First of all, download the RSK a Dockerfile and supervisord.conf from [artifacts
 
 Inside the artifacts repo, you can choose which ***type of*** node you are going to install:
 
-* A node connected to the public RSK MainNet: `Dockerfile.MainNet`
-* A node connected to the public RSK TestNet: `Dockerfile.TestNet`
+* A node connected to the public RSK Mainnet: `Dockerfile.MainNet`
+* A node connected to the public RSK Testnet: `Dockerfile.TestNet`
 * A node connected to a private RegTest network: `Dockerfile.RegTest`
 
 #### Install the node using Docker containers
 
 Then build the container by running (depending on your node's type):
 
-* MainNet
+* Mainnet
   ```
   docker build -t mainnet -f Dockerfile.MainNet .
   ```
-* TestNet
+* Testnet
   ```
   docker build -t testnet -f Dockerfile.TestNet .
   ```
-* RegTest
+* Regtest
   ```
   docker build -t regtest -f Dockerfile.RegTest .
   ```
@@ -38,15 +38,15 @@ When the build finishes, you have a container ready to run RSK.
 
 To run the container, you should execute (depending on your node's type):
 
-* MainNet
+* Mainnet
   ```
   docker run -d --name mainnet-node-01  -p 4444:4444 -p 5050:5050 mainnet
   ```
-* TestNet
+* Testnet
   ```
   docker run -d --name testnet-node-01  -p 4444:4444 -p 50505:50505 testnet
   ```
-* RegTest
+* Regtest
   ```
   docker run -d --name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
   ```

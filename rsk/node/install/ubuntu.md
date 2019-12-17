@@ -54,7 +54,7 @@ We recommend that you check that the SHA256 hash of the downloaded package file 
 
 ## After installation
 
-By default, the node connects to MainNet. To change the network choice (MainNet/ TestNet/ RegTest), refer to the instructions in [switching networks](/rsk/node/configure/switch-network). To change configurations for the node, refer to the instructions in [RSK Node Configuration](/rsk/node/configure).
+By default, the node connects to Mainnet. To change the network choice (Mainnet/ Testnet/ Regtest), refer to the instructions in [switching networks](/rsk/node/configure/switch-network). To change configurations for the node, refer to the instructions in [RSK Node Configuration](/rsk/node/configure).
 
 The installer will configure your node in the following paths:
 

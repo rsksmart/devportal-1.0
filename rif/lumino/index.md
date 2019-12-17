@@ -21,7 +21,7 @@ RIF Payments is a set of protocols whose primary goal is to enable fast and chea
 #### RIF Lumino Explorer
 
 Lumino Explorer shows information about the nodes of RIF Lumino Network
-MainNet public explorer: [http://explorer.lumino.rifos.org/](http://explorer.lumino.rifos.org/)
+Mainnet public explorer: [http://explorer.lumino.rifos.org/](http://explorer.lumino.rifos.org/)
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino1.png" alt=""/></div>
 

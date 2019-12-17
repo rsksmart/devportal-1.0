@@ -48,7 +48,7 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
          <div class="container">
-            <a class="navbar-brand" href="#"><img id="logo" src="/assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
+            <a class="navbar-brand" href="https://rsk.co"><img id="logo" src="/assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -123,7 +123,7 @@
                </div>
             </div>
             <div class="row">
-               <!-- left col desktop -->             
+               <!-- left col desktop -->
                <div class="col-lg-3 main-left-col">
                   <div class="desktop_accordion">
                      {% include nav-page-menu.html %}
@@ -131,11 +131,12 @@
                </div>
                <!-- central col -->
                <div class="col-lg-9 main-central-col">
-                  
+
                   <h1 class="page-title" id="top">{{ page.title }}</h1>
-                  
+
                   {{ content }}
-                  
+
+                  {% include prev-next-links.html %}
                </div>
             </div>
          </div>
@@ -168,12 +169,14 @@
                         <div class="footer-links">
                            <ul>
                               <li class="negbottom">Whitepapers</li>
-                              <li class="sub-item-footer"><a href="https://www.rsk.co/wp-content/uploads/2019/02/RSK_White_Paper-ORIGINAL.pdf" target="_blank">Original</a></li>
-                              <li class="sub-item-footer"><a href="https://www.rsk.co/wp-content/uploads/2019/02/RSK-White-Paper-Updated.pdf" target="_blank">Updated</a></li>
-                              <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" target="_blank">RIF</a></li>
-                              <li><a href="https://fund.rsk.co" target="_blank">Ecosystem Fund</a></li>
-                              <li><a href="https://studio.rsk.co" target="_blank">Innovation Studio</a></li>
-                              <li><a href="https://mining.rsk.co/" target="_blank">Merged Mining</a></li>
+                              <li class="sub-item-footer"><a href="https://www.rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="noopener noreferrer" target="_blank">Original</a></li>
+                              <li class="sub-item-footer"><a href="https://www.rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="noopener noreferrer" target="_blank">Updated</a></li>
+                              <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="noopener noreferrer" target="_blank">RIF</a></li>
+                              <li><a href="https://fund.rsk.co" rel="noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
+                              <li><a href="https://studio.rsk.co" rel="noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                              <li><a href="https://mining.rsk.co" rel="noopener noreferrer" target="_blank">Merged Mining</a></li>
+                              <li><a href="https://grants.rsk.co" rel="noopener noreferrer" target="_blank">Grants Program</a></li>
+                              <li><a href="https://rsk.co/defi" rel="noopener noreferrer" target="_blank">Defi</a></li>
                            </ul>
                         </div>
                      </div>
@@ -192,7 +195,7 @@
                      <div class="col-md-4">
                         <div class="footer-links">
                            <ul>
-                              <li><a class="bold" href="https://www.rsk.co/Brand_Guidelines/rsk_brandmanual.pdf" target="_blank">Brand Guidelines</a></li>
+                              <li><a class="bold" href="https://www.rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" target="_blank">Brand Guidelines</a></li>
                               <li><a class="bold" href="https://www.rsk.co/terms-conditions/">Terms & Conditions</a></li>
                               <li><a class="bold mb-30" href="https://www.rsk.co/privacy-policy">Privacy Policy</a></li>
                               <a href="https://developers.doc.rsk.co/docs" target="_blank" class="footer-button" title="Documentation">Documentation</a>
