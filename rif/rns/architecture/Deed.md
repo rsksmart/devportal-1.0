@@ -4,7 +4,7 @@ title: Deed
 ---
 
 <div class="alert alert-danger">
-  Deprecated. Find new registrar <a href="../rsk-registrar">here</a>.
+  :warning: Deprecated. Find new registrar <a href="../rsk-registrar">here</a>.
 </div>
 
 The Deed contract has two main features:
