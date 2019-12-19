@@ -4,7 +4,7 @@ title: Registrar
 ---
 
 <div class="alert alert-danger">
-  Deprecated. Find new registrar <a href="../rsk-registrar">here</a>.
+  :warning: Deprecated. Find new registrar <a href="../rsk-registrar">here</a>.
 </div>
 
 The Registrar is the contract that handles the domain issuing logic. In this section we'll explain the interaction with this contract.
