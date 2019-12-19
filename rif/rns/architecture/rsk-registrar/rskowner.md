@@ -8,7 +8,7 @@ title: RSK Owner
 Owner of _rsk_ top level domain. It can `setSubdomainOwner` in RNS.
 
 - It represents domain ownership implementing [ERC-721](https://eips.ethereum.org/EIPS/eip-721)<sup>1</sup> non-fungible token standard. This standard provides basic functionality to track and transfer NFTs<sup>2</sup>.
-- Stores domains' expiration time. The expiration time determines wether a domain is owned or not.
+- Stores domains' expiration time. The expiration time determines whether a domain is owned or not.
 - Determines if a domain is available to be purchased.
 - Accepts domain ownership clamming from previous _rsk_ registrar.
 - Grants access to other contracts for registering new domains (registrar role)<sup>2</sup>.
