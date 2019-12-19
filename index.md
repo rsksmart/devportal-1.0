@@ -8,7 +8,6 @@ The Developer Portal is the home for RSK documentation for end users and develop
 
 <div class="features-list">
     <ul class="row">
-    
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/quick-start">
@@ -26,10 +25,8 @@ The Developer Portal is the home for RSK documentation for end users and develop
                 </a><a class="green" href="/quick-start">Read More</a>
             </div>
             </div>
-        
         </div>
         </li>
-
         <li class="col-xl-6 col-md-6 ">
         <div class="feature-card">
             <a href="/rsk/node/install">
@@ -47,7 +44,6 @@ The Developer Portal is the home for RSK documentation for end users and develop
                 </a><a class="orange" href="/rsk/node/install">Read More</a>
             </div>
             </div>
-        
         </div>
         </li>
         <li class="col-xl-6 col-md-6">
@@ -67,7 +63,6 @@ The Developer Portal is the home for RSK documentation for end users and develop
                 </a><a class="orange" href="/develop">Read More</a>
             </div>
             </div>
-        
         </div>
         </li>
         <li class="col-xl-6 col-md-6">
@@ -87,7 +82,6 @@ The Developer Portal is the home for RSK documentation for end users and develop
                 </a><a class="blue" href="/rif">Read More</a>
             </div>
             </div>
-        
         </div>
         </li>
         <li class="col-xl-6 col-md-6">
@@ -107,7 +101,6 @@ The Developer Portal is the home for RSK documentation for end users and develop
                 </a><a class="blue" href="/rif/rns">Read More</a>
             </div>
             </div>
-        
         </div>
         </li>
         <li class="col-xl-6 col-md-6">
@@ -127,8 +120,16 @@ The Developer Portal is the home for RSK documentation for end users and develop
                 </a><a class="green" href="/rif/lumino">Read More</a>
             </div>
             </div>
-        
         </div>
         </li>
     </ul>
 </div>
+
+## Quick Links
+
+- Mainnet:
+  [Explorer](https://explorer.rsk.co/),
+  [stats](https://stats.rsk.co/)
+- Testnet:
+  [Explorer](https://explorer.testnet.rsk.co/),
+  [stats](https://stats.testnet.rsk.co/)
