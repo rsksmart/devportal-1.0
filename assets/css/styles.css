@@ -1238,6 +1238,15 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 	 min-height:0px;
 }
 
+.the-stack .rotate{
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
 .the-stack .dapps {
 	padding: 20px;
 }
@@ -1246,7 +1255,15 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 	margin: 5px;
 }
 
-.the-stack .dapps .col span {
+.the-stack .bitcoin .col {
+	background: #FF9900;
+}
+.the-stack .bitcoin .col a {
+	color: white!important;
+}
+
+.the-stack .dapps .col span,
+.the-stack .defi {
 	padding: 10px;
 }
 
@@ -1286,6 +1303,10 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 	color:rgb(255, 255, 255)!important;
 }
 
+.the-stack .rif_blue .col.grey,
+.the-stack .rsk_green .col.grey {
+	background-color: #666666!important;
+}
 
 /* rif blue text white bg */
 
