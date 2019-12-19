@@ -3,7 +3,7 @@ layout: rsk
 title: RSK Owner
 ---
 
-[0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1](https://explorer.rsk.co/address/0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1)
+RSK MainNet: [0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1](https://explorer.rsk.co/address/0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1)
 
 Owner of _rsk_ top level domain. It can `setSubdomainOwner` in RNS.
 
