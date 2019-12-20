@@ -160,17 +160,70 @@
   <script type="text/javascript">
     $.getJSON('form.json', function (data) {
       var jsonFormInitialisation = Object.assign({}, data, {
-        onSubmit: function (errors, values) {
-          console.log(values);
-          if (errors) {
-            $('#res').html('<p>Please fix the errors highlighted above.</p>');
-          } else {
-            $('#res').html('<p>Thank you for submitting your application.</p>');
-          }
-        }
+        onSubmit: onFormSubmit,
       });
       $('form').jsonForm(jsonFormInitialisation);
     });
+
+    function onFormSubmit (errors, values) {
+      values.timeline = values.timeline.map(function (milestone, index) {
+        return '#' + index + ': ' + milestone.duration + 'w - ' +
+          milestone.deliverable.replace('\r\n', '\n');
+      }).join('\n');
+      values.urlsAdditional = (values.urlsAdditional && values.urlsAdditional.length > 0) ?
+        values.urlsAdditional.join('\n') : '';
+      values.experienceSpecific = values.experienceSpecific.replace('\r\n', '\n');
+      values.experienceGeneral = values.experienceGeneral.replace('\r\n', '\n');
+      values.experienceGeneral = values.experienceGeneral.replace('\r\n', '\n');
+      values.reportMethod = values.reportMethod.replace('\r\n', '\n');
+      values.form = 'followup';
+      console.log(values);
+      if (errors) {
+        $('#res').html('<p>Please fix the errors highlighted above.</p>');
+        return;
+      }
+
+      $('#res').html('<p>Submitting...</p>');
+
+      var url = 'https://script.google.com/a/iovlabs.org/macros/s/AKfycbxKNB558VaAOhvfNGUXdWpSUzs8UAF34_FOCD2fuQ/exec';
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', url);
+      // xhr.withCredentials = true;
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4) {
+          console.log(xhr.status, xhr.responseText);
+          if (xhr.status >= 200 && xhr.status < 400) {
+            $('#res').html('<p>Thank you for your application!</p>');
+          } else {
+            $('#res').html('<p>Thank you for your application!</p>');
+          }
+        }
+      };
+
+      // url encode form data for sending as post data
+      values.formDataNameOrder = JSON.stringify([
+        'email',
+        'name',
+        'urlPortfolio',
+        'urlProfile',
+        'urlsAdditional',
+        'experienceSpecific',
+        'experienceGeneral',
+        'amountRequested',
+        'amountTotal',
+        'timeline',
+        'reportMethod',
+      ]);
+      values.formGoogleSheetName = 'responses'; // default sheet name
+      values.formGoogleSend = ''; // no email by default
+      // var encoded = JSON.stringify(values);
+      var encoded = Object.keys(values).map(function(k) {
+        return encodeURIComponent(k) + '=' + encodeURIComponent(values[k]);
+      }).join('&');
+
+      xhr.send(encoded);
+    }
   </script>
 </body>
 
