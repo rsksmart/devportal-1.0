@@ -251,8 +251,12 @@ a:not([href]):not([tabindex]) {
 	font-family: 'Quicksand', sans-serif!important;
 	color:#CCCCCC!important;
 	font-weight:bold!important;
-	padding: 0 0 30px 0;
+	padding: 0 0 10px 0;
 	font-size:15px;
+}
+
+.toggle-nav-column-visibility {
+	padding: 0 0 30px 0;
 }
 
 .menu-container > div > a:hover {
