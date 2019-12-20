@@ -21,6 +21,9 @@ domain: developers.rsk.co
 
 highlighter: rouge
 
+exclude:
+  - .jekyll-cache
+
 plugins:
  - jekyll-last-modified-at
  - jekyll-feed
