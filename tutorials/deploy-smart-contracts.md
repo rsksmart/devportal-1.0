@@ -311,16 +311,16 @@ Let's get an instance of our contract! In migrations, we defined a name for our 
 
 #### 8.2 Connect Truffle to RSK public node
 
-> To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider).(Node >= 7.6)
+> To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [@truffle/hdwallet-provider](https://github.com/trufflesuite/@truffle/hdwallet-provider).(Node >= 7.6)
 
 ```shell
-npm install truffle-hdwallet-provider
+npm install @truffle/hdwallet-provider
 ```
 
 > Open truffle-config.js file in your Truffle project and overwrite it with the following code:
 
 ```javascript
-var HDWalletProvider = require('truffle-hdwallet-provider')
+var HDWalletProvider = require('@truffle/hdwallet-provider')
 var mnemonic = 'rocket fault regular ... YOUR MNEMONIC';// 12 key words we generated before
 var publicNode = 'https://public-node.testnet.rsk.co:443';
 module.exports = {
