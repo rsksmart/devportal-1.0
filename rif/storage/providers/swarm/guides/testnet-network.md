@@ -3,17 +3,9 @@ layout: rsk
 title: Connecting to testnet Swarm network
 ---
 
-# RIF Storage testnet launch
-Ever since the [launch](https://www.iovlabs.org/press/partnership-between-swarm-and-rsk-infrastructure-framework-rif-to-develop-a-breakthrough-storage-solution.html) of the RIF Storage team, we have been working hard to make the vision of a decentralized internet a reality. Last week, during [laBITconf](https://www.labitconf.com/), IOV-labs officially launched the RIF-Storage testnet; an important milestone towards a decentralized internet!
-In this blog post, we give you some background to how we achieved this milestone; in the end, we explain to you how to connect and download from RIF Storage!
-
 ## What is the RIF Storage testnet
 The RIF Storage testnet allows developers and end-users to get a feeling with how it is to interact with a decentralized storage protocol. For now, RIF Storage is integrated with [Swarm](https://swarm.ethereum.org/). On top of this, we are also integrating with [IPFS](https://ipfs.io/) (more to be announced soon!) and we are developing the specifications for the [gateways](https://www.rifos.org/gateways), [marketplaces](https://www.rifos.org/marketplace) and [pinning services](https://docs.ipfs.io/guides/concepts/pinning/)
 A crucial difference between the testnet, just launched by us, and the official Swarm testnet is the usage of the RIF Token to incentivize bandwidth accounting in the RIF Storage testnet. Ultimately, the vision of both Swarm and RIF is to support multiple currencies under the same network, but until that vision becomes a reality we want to give developers in the RIF ecosystem the opportunity to try out the user experience of RIF Storage, using the RIF (test) token. 
-
-
-## History and our contribution
-IOV Labs [announced](https://www.rifos.org/blog/rif-storage-the-first-chunks/) some time ago a partnership with Swarm.  Since that time, the RIF storage team has formed the incentives track within Swarm and we have worked hard to implement the Swarm Accounting protocol (read more [here](https://www.rifos.org/blog/rif-storage-the-first-chunks/)). While the launch of the testnet is an important milestone, it does not signal that we are done; currently, the incentives track is working on persistent storage (via pinning and postage lottery) and a market mechanism for the network to decide on a price for the bandwidth accounting. 
 
 ## Hands-on
 Be one of the first to interact with the Swarm testnet and download a special surprise!
