@@ -11,7 +11,7 @@ title: RIF Token
     </tr>
     <tr>
       <td scope="row">Total Supply</td>
-      <td>1,000,000,000 tRIF</td>
+      <td>1,000,000,000 RIF</td>
     </tr>
     <tr>
       <td scope="row">Contract Address</td>
