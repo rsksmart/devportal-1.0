@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /tutorials/truffle-boxes
+permalink: /tutorials/truffle-boxes/
 redirect: /tools/truffle/boxes
 ---

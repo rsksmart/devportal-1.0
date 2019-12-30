@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /develop
+permalink: /develop/
 redirect: /develop/apps/integrate
 ---
