@@ -1,9 +1,23 @@
 ---
 layout: rsk
-title: Testnet Addresses and Links
+title: Addresses and Links
 ---
 
-## List of Addresses
+# MainNet Addresses and Links
+
+### On RSK
+  - "bridge": [0x9d11937e2179dc5270aa86a3f8143232d6da0e69](https://explorer.rsk.co/address/0x9d11937e2179dc5270aa86a3f8143232d6da0e69)
+  - "federation": [0xac42761c37d4467ff69082249b9e67d6b35d50cb](https://explorer.rsk.co/address/0xac42761c37d4467ff69082249b9e67d6b35d50cb)
+  - "allowTokens": [0xe4aa0f414725c9322a1a9d80d469c5e234786653](https://explorer.rsk.co/address/0xe4aa0f414725c9322a1a9d80d469c5e234786653)
+  - "multiSigWallet": [0x040007b1804ad78a97f541bebed377dcb60e4138](https://explorer.rsk.co/address/0x040007b1804ad78a97f541bebed377dcb60e4138)
+  - "RIF": [0x2acc95758f8b5f583470ba265eb685a8f45fc9d5](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5)
+### On Ethereum
+  - "bridge": ["0x12ed69359919fc775bc2674860e8fe2d2b6a7b5d"](https://etherscan.io/address/0x12ed69359919fc775bc2674860e8fe2d2b6a7b5d)
+  - "federation": ["0x8c1901c031cdf42a846c0c422a3b5a2c943f4944"](https://etherscan.io/address/0x8c1901c031cdf42a846c0c422a3b5a2c943f4944)
+  - "allowTokens": [0xe4aa0f414725c9322a1a9d80d469c5e234786653](https://etherscan.io/address/0xe4aa0f414725c9322a1a9d80d469c5e234786653)
+  - "multiSigWallet": [0x040007b1804ad78a97f541bebed377dcb60e4138](https://etherscan.io/address/0x040007b1804ad78a97f541bebed377dcb60e4138)
+
+# Testnet Addresses and Links
 
 ### On RSk
   - "bridge": [0x684a8a976635fb7ad74a0134ace990a6a0fcce84](https://explorer.testnet.rsk.co/address/0x684a8a976635fb7ad74a0134ace990a6a0fcce84)
@@ -25,7 +39,7 @@ title: Testnet Addresses and Links
 ## RSK Testnet Explorer faucet and stats
 - https://stats.testnet.rsk.co/
 - https://explorer.testnet.rsk.co/
-- https://faucet.testnet.rsk.co/
+- https://faucet.rsk.co/
 - https://faucet.rifos.org/
 
 ## Kovan (Ethereum testnet) Explorer and faucet

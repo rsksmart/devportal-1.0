@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Token bridge interaction guide
+title: Interaction guide using MyCrypto
 ---
 
 This guide describes the necessary steps to perform a token transfer between two blockchain networks, hereinafter referred to as **Mainchain** and **Sidechain**, through interaction with special contracts that make up a subsystem called **TokenBridge**.
