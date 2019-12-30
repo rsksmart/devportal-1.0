@@ -5,7 +5,7 @@ title: Testnet Addresses and Links
 
 ## List of Addresses
 
-### On RSk
+### On RSK Testnet
   - "bridge": [0x684a8a976635fb7ad74a0134ace990a6a0fcce84](https://explorer.testnet.rsk.co/address/0x684a8a976635fb7ad74a0134ace990a6a0fcce84)
   - "federation": [0x36c893a955399cf15a4a2fbef04c0e06d4d9b379](https://explorer.testnet.rsk.co/address/0x36c893a955399cf15a4a2fbef04c0e06d4d9b379)
   - "allowTokens": [0x952b706a9ab5fd2d3b36205648ed7852676afbe7](https://explorer.testnet.rsk.co/address/0x952b706a9ab5fd2d3b36205648ed7852676afbe7)
@@ -25,7 +25,7 @@ title: Testnet Addresses and Links
 ## RSK Testnet Explorer faucet and stats
 - https://stats.testnet.rsk.co/
 - https://explorer.testnet.rsk.co/
-- https://faucet.testnet.rsk.co/
+- https://faucet.rsk.co/
 - https://faucet.rifos.org/
 
 ## Kovan (Ethereum testnet) Explorer and faucet
