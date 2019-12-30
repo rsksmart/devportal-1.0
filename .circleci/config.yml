@@ -13,6 +13,7 @@ jobs:
           command: |
                     sudo gem install bundler
                     sudo gem install jekyll
+                    sudo bundle update && bundle install
       - run:
           name: Run Test
           command: |

@@ -1,7 +1,6 @@
 source "https://rubygems.org"
 
 gem "rouge"
-source 'https://rubygems.org'
 
 require 'json'
 require 'open-uri'
