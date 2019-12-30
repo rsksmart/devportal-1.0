@@ -2,6 +2,30 @@ require 'json'
 require 'html-proofer'
 
 Rake::TaskManager.record_task_metadata = true
+SEARCH_JSON_PATH = "./_site/search/search.json"
+
+desc "build site for production purposes"
+task :build_for_prod => [] do |task|
+  puts "rake> " + task.name + ": " + task.comment
+  sh "bundle exec jekyll build --config \"_config.yml\""
+  puts "rake> " + task.name + ": OK!"
+end
+
+desc "rebuild generated search json"
+task :rebuild_search_json => [] do |task|
+  puts "rake> " + task.name + ": " + task.comment
+  search_json_string = File.read(SEARCH_JSON_PATH)
+  search_json = JSON.parse(search_json_string)
+  search_json_string_again = JSON.pretty_generate(search_json, { :indent => ' ' })
+  File.write(SEARCH_JSON_PATH, search_json_string_again)
+  puts "rake> " + task.name + ": OK!"
+end
+
+desc "production build for deployment"
+task :prod => [:build_for_prod, :rebuild_search_json] do |task|
+  puts "rake> " + task.name + ": " + task.comment
+  puts "rake> " + task.name + ": OK!"
+end
 
 desc "development mode where site is rebuilt each time a file is saved"
 task :dev => [] do |task|
@@ -17,9 +41,9 @@ task :build_for_test => [] do |task|
 end
 
 desc "check if generated search json file is ok"
-task :test_search_json => [:build_for_test] do |task|
+task :test_search_json => [:build_for_test, :rebuild_search_json] do |task|
   puts "rake> " + task.name + ": " + task.comment
-  search_json_string = File.read("./_site/search/search.json")
+  search_json_string = File.read(SEARCH_JSON_PATH)
   # JSON.parse throws an error if file is invalid JSON
   JSON.parse(search_json_string)
   puts "rake> " + task.name + ": OK!"
