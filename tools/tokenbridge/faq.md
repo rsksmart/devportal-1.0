@@ -21,10 +21,10 @@ The original token  native tokens lives on the network that it was deployed for 
 
 ## What is the Side Token Contract Address, Symbol, and # of Decimal Places in order to add it as a Custom Coin on MyEtherWallet?
 The symbol of the SideToken is the original token symbol with an r prefix if it is created in RSK or an e prefix if it is created in Ethereum. For example, if we cross the RIF token to Ethereum, the Side Token symbol would be eRIF. 
-The number of Decimal places will be 18. This are the ['addresses'](./docs/ContractAdddresses.md) of the deployed contrats in the different networks.
+The number of Decimal places will be 18. These are the ['addresses'](/tools/tokenbridge/contractaddresses/) of the deployed contracts in the different networks.
 
 ## How do I transform my original tokens to Side Tokens?
-The Token Bridge will be a public DApp where users will be able to access by using Nifty Wallet or Metamask. You will be able to send your original tokens and receive an equivalent amount of Side Tokens on the other network. By toggling the network on Nifty or Metamask, you’re also able to transfer the other way around and send Side Tokens tokens to the original token.
+The Token Bridge will be a public DApp where users will be able to access by using Nifty Wallet or Metamask. You will be able to send your original tokens and receive an equivalent amount of Side Tokens on the other network. By toggling the network on Nifty or Metamask, you’re also able to transfer the other way around and send Side Tokens to the original token.
 
 ## If I sell my Side Tokens, what happens to my original tokens?
 Upon receiving your   you no longer own your original tokens. The moment you use the bridge to send them to the other network (RSK or Ethereum), they are locked up and stored in the contract address. Thus you effectively have no original tokens on the original Network and now have Side Tokens on the other network.
@@ -42,7 +42,7 @@ During the trial period only whitelisted tokens can cross the bridge. The federa
 The federation is paying and sponsoring the fees for the multiple transactions during the trial period. This will change after the trial period is complete and the token bridge change from a federated schema to a fully decentralized one. Users will need to pay a small amount of gas fee when using Metamask for to submit their transactions.
 
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
-There will 15 confirmations. On the POA mainnet and 15 confirmations on the Ethereum network. On Sokol testnet and Kovan testnet, the test bridge will have 2 confirmations.
+There will 15 confirmations. On the POA Mainnet and 15 confirmations on the Ethereum network. On Sokol Testnet and Kovan Testnet, the test bridge will have 2 confirmations.
 
 ## How does the Token Bridge work?
 The TokenBridge functionality is quite unique yet simple to understand. The ratio of tokens during network transfer always remains 1:1 and behaves in the following manner:

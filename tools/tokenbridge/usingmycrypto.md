@@ -31,9 +31,7 @@ In particular for this use case, it was used:
 
 Start by connecting the blockchain interface client to the Mainchain network. In this case the connection is to a custom local node that was previously started.
 
-<p align="center">
-  <img src="/assets/img/tools/tokenbridge/rsk_node_setup.png" width="500" height="350" />
-</p>
+<img src="/assets/img/tools/tokenbridge/rsk_node_setup.png" />
 
 ---
 
@@ -61,9 +59,8 @@ Then confirm the gas price, write and sign the transaction and finally send it. 
 
 !["Transaction Write"](/assets/img/tools/tokenbridge/transaction_write.png "Transaction Write")
 !["Transaction Send"](/assets/img/tools/tokenbridge/transaction_send.png "Transaction Send")
-<p align="center">
-  <img src="/assets/img/tools/tokenbridge/transaction_confirm.png" width="300" height="330" />
-</p>
+
+<img src="/assets/img/tools/tokenbridge/transaction_confirm.png" />
 
 ---
 
@@ -89,9 +86,7 @@ On this occasion invoke the receiveTokens method placing the IER20 contract addr
 
 Again, write, sign and confirm the transaction and wait for it to be approved.
 
-<p align="center">
-  <img src="/assets/img/tools/tokenbridge/transaction_confirm_receive.png" width="300" height="330" />
-</p>
+<img src="/assets/img/tools/tokenbridge/transaction_confirm_receive.png" />
 
 ---
 
