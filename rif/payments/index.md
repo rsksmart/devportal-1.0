@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/payments
+permalink: /rif/payments/
 redirect: /rif/lumino
 ---

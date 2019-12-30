@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /quick-start
+permalink: /quick-start/
 redirect: /quick-start/step1-install-rsk-local-node
 ---
