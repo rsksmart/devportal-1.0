@@ -1,0 +1,45 @@
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/smart-contracts
+    # The primary container is an instance of the first image listed. The job's commands run in this container.
+    docker:
+      - image: circleci/openjdk:8-jdk
+
+    steps:
+      - checkout
+      - run:
+          name: Avoid hosts unknown for github
+          command: mkdir -p ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
+          name: Clone and Build RSKj
+          command: |
+                    GIT_SSH_COMMAND='ssh -i ~/.ssh/id_rsa_fingerprint'
+                    git clone git@github.com:rsksmart/rskj.git ~/rsksmart/rskj
+                    cd ~/rsksmart/rskj/
+                    ./configure.sh
+                    ./gradlew clean build -x test
+      - run:
+          name: Prepare npm
+          command: |
+                    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+                    sudo apt update
+                    sudo apt-get install -y nodejs
+                    sudo apt install npm
+                    sudo apt install build-essential
+      - run:
+          name: Prepare Truffle
+          command: |
+                    sudo npm install -g truffle
+                    cd ~/smart-contracts/
+                    npm install 
+      - run:
+          name: Start RskJ & Run Truffle Tests
+          command: |
+                    java -cp ~/rsksmart/rskj/rskj-core/build/libs/rskj-core-1.2.0-SNAPSHOT-all.jar co.rsk.Start --regtest nohup &               
+                    until nc -z 127.0.0.1 4444
+                    do
+                      echo "Waiting for RskJ..."
+                      sleep 1
+      
+
