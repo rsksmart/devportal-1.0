@@ -33,16 +33,16 @@ title: Addresses and Links
   - "multiSigWallet": [0x040007b1804ad78a97f541bebed377dcb60e4138](https://kovan.etherscan.io/address/0x040007b1804ad78a97f541bebed377dcb60e4138)
   - "etRIF": [0x69f6d4d4813f8e2e618dae7572e04b6d5329e207](https://kovan.etherscan.io/address/0x69f6d4d4813f8e2e618dae7572e04b6d5329e207)
 
-## List of Abis
+## List of ABIs
 [abis used](https://github.com/rsksmart/tokenbridge/tree/master/abis)
 
-## RSK Testnet Explorer faucet and stats
+## RSK Testnet Explorer, Faucet and Stats
 - https://stats.testnet.rsk.co/
 - https://explorer.testnet.rsk.co/
 - https://faucet.rsk.co/
 - https://faucet.rifos.org/
 
-## Kovan (Ethereum testnet) Explorer and faucet
+## Kovan (Ethereum Testnet), Explorer and Faucet
 - https://kovan.etherscan.io/
 - https://faucet.kovan.network/
 - https://gitter.im/kovan-testnet/faucet
