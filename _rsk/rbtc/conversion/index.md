@@ -2,7 +2,7 @@
 layout: rsk
 title: Conversion
 collection_order: 3100
-permalink: /rsk/rbtc/conversion
+permalink: /rsk/rbtc/conversion/
 ---
 
 ## BTC RBTC Conversion

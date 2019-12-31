@@ -2,7 +2,7 @@
 layout: rsk
 title: Contribute
 collection_order: 2500
-permalink: /rsk/node/contribute
+permalink: /rsk/node/contribute/
 ---
 
 <a href="https://github.com/rsksmart/rskj/blob/master/CONTRIBUTING.md" target="_blank" class="green-button">Contribution guide</a>

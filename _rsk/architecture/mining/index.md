@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Merged Mining
-permalink: /rsk/architecture/mining
+permalink: /rsk/architecture/mining/
 collection_order: 4400
 ---
 
@@ -10,7 +10,8 @@ Merged mining is the process that allows RSK blockchain to be mined simultaneous
 ## How it works
 
 Bitcoin mining pools include a reference to RSK's block in every mining job they deliver to miners.
-Everytime miners find a solution, it is compared to both networks difficulties (Bitcoin and RSK) delivering three possible outcomes:
+Every time miners find a solution, it is compared to both networks difficulties (Bitcoin and RSK) delivering three possible outcomes:
+
 - Solution satisfies Bitcoin network difficulty. Hence, a block is assembled and sent to the network. RSK's merged mining reference will be included and ignored by Bitcoin network. Since RSK's network difficulty is lower than Bitcoin, this solution will also work for RSK and can be submitted to the network.
 - Solution does not satisfy Bitcoin network difficulty, but does satisfy RSK network difficulty. As a consequence, solution will be submitted to RSK network and not to Bitcoin network.
 - Solution only satisfies pool difficulty, which is many times lower than Bitcoin or RSK network difficulty, and it is not submitted to any network.

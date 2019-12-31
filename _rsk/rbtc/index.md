@@ -2,7 +2,7 @@
 layout: rsk
 title: RBTC Token
 collection_order: 3000
-permalink: /rsk/rbtc
+permalink: /rsk/rbtc/
 ---
 
 The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [2-way peg](/rsk/architecture/2-way-peg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/).

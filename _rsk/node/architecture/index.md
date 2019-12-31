@@ -2,7 +2,7 @@
 layout: rsk
 title: Architecture
 collection_order: 2100
-permalink: /rsk/node/architecture
+permalink: /rsk/node/architecture/
 ---
 
 <ul>

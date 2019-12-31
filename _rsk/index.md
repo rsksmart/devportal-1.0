@@ -2,7 +2,7 @@
 layout: rsk
 title: RSK Blockchain
 collection_order: 1000
-permalink: /rsk
+permalink: /rsk/
 ---
 
 RSK is the Smart Contract platform of Bitcoin. Its engine is a forked version of the EVM (Ethereum Virtual Machine), and the RVM (RSK Virtual Machine) is compatible with Ethereum [Smart Contracts](/develop) and the [tools](/tools) used to [deploy and interact](/tutorials/) with them.

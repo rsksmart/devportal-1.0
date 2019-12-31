@@ -2,7 +2,7 @@
 layout: rsk
 title: Install
 collection_order: 2300
-permalink: /rsk/node/install
+permalink: /rsk/node/install/
 ---
 
 <style>

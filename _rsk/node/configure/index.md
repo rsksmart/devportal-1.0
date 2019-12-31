@@ -2,7 +2,7 @@
 layout: rsk
 title: Configure
 collection_order: 2400
-permalink: /rsk/node/configure
+permalink: /rsk/node/configure/
 ---
 
 ## Setting your own config preferences
