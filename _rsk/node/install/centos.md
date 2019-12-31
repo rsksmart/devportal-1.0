@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Setup node on CentOS
+description: "How to install and run an RSK node on CentOS"
 collection_order: 2323
 ---
 

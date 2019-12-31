@@ -1,5 +1,11 @@
 <div class="menu-container">
-   <a href="/" class="index">RSK Documentation</a>
+   <span>
+      <a href="/" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+         <span class="fa fa-chevron-right"></span>
+         <span class="text">Expand All</span>
+      </div>
+   </span>
    <ul class="exclude-doc-from-breadcrumbs">
       <li class="first_level">
          <span class="fa fa-chevron-right"></span>
@@ -180,9 +186,18 @@
                      <a href="/rif/rns/architecture/">Architecture</a>
                      <ul>
                         <li class="hide-mobile"><a href="/rif/rns/architecture/">Architecture</a></li>
-                        <li><a href="/rif/rns/architecture/Registry/">Registry</a></li>
-                        <li><a href="/rif/rns/architecture/Registrar/">Registrar</a></li>
-                        <li><a href="/rif/rns/architecture/Deed/">Deed</a></li>
+                        <li><a href="/rif/rns/architecture/registry/">Registry</a></li>
+                        <li>
+                           <span class="fa fa-chevron-right"></span>
+                           <a href="/rif/rns/architecture/rsk-registrar/">.rsk Registrar</a>
+                           <ul>
+                              <li><a href="/rif/rns/architecture/rsk-registrar/">.rsk Registrar</a></li>
+                              <li><a href="/rif/rns/architecture/rsk-registrar/rskowner">RSK Owner</a></li>
+                              <li><a href="/rif/rns/architecture/rsk-registrar/registrars/fifs">FIFS Registrar</a></li>
+                              <li><a href="/rif/rns/architecture/rsk-registrar/renewers/renewer">Renewer</a></li>
+                              <li><a href="/rif/rns/architecture/rsk-registrar/other/nameprice">Name Price</a></li>
+                           </ul>
+                        </li>
                         <li>
                            <span class="fa fa-chevron-right"></span>
                            <a href="/rif/rns/architecture/Resolver/">Resolver</a>
@@ -207,7 +222,7 @@
                      <span class="fa fa-chevron-right"></span>
                      <a>Tools</a>
                      <ul>
-                        <li><a href="/rif/rns/tools/web3/">Web3</a></li>
+                        <li><a href="/rif/rns/tools/Web3/">Web3</a></li>
                         <li><a href="/rif/rns/tools/MyCrypto/">MyCrypto</a></li>
                         <li><a href="/rif/rns/tools/RNS-Manager/">RNS Manager</a></li>
                         <li><a href="/rif/rns/tools/Subdomain-tool">Subdomain tool</a></li>
@@ -286,23 +301,23 @@
                   </li>
                </ul>
             </li>
-            <li>
+            <!--<li>
                <span class="fa fa-chevron-right"></span>
-               <a href="/rif/communication/">RIF Communication</a>
+               <a href="/rif/communication/">Communication</a>
                <ul>
                  <li><a href="/rif/communication/">About</a></li>
                  <li><a href="/rif/communication/architecture/">Architecture</a></li>
                </ul>
-            </li>
+            </li>-->
             <li>
                <span class="fa fa-chevron-right"></span>
-               <a href="/rif/storage/">RIF Storage</a>
+               <a href="/rif/storage/">Storage</a>
                <ul>
                   <li><a href="/rif/storage/">About</a></li>
                   <li><a href="/rif/storage/architecture/">Architecture</a></li>
                   <li>
                      <span class="fa fa-chevron-right"></span>
-                     <a href="/rif/storage/api/">Libraries</a>
+                     <a href="/rif/storage/libraries/">Libraries</a>
                      <ul>
                         <li><a href="/rif/storage/libraries/javascript/">RIF Storage JS</a></li>
                      </ul>
@@ -335,7 +350,7 @@
                            <span class="fa fa-chevron-right"></span>
                            <a href="/rif/storage/providers/ipfs/">IPFS</a>
                            <ul>
-                              <li><a href="/rif/storage/providers/ipfs/about/">About</a></li>
+                              <li><a href="/rif/storage/providers/ipfs/">About</a></li>
                            </ul>
                         </li>
                      </ul>
@@ -356,8 +371,15 @@
                   <!--li><a href="/tutorials/hello-world">Hello World!</a></li-->
                   <li class="hide-mobile"><a href="/tutorials/">Tutorials</a></li>
                   <li><a href="/tutorials/port-ethereum-dapps/">Port Ethereum dApps</a></li>
-                  <li><a href="/tutorials/deploy-smart-contract/">Deploy Smart Contract</a></li>
-                  <li><a href="/tutorials/interact-with-smart-contract/">Interact with Smart Contract</a></li>
+                  <li>
+                     <span class="fa fa-chevron-right"></span>
+                     <a href="/tutorials/compile-smart-contracts/">Compile Smart Contracts</a>
+                     <ul>
+                        <li><a href="/tutorials/compile-smart-contracts/go/">Go</a></li>
+                     </ul>
+                  </li>
+                  <li><a href="/tutorials/deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+                  <li><a href="/tutorials/interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
                   <li><a href="/tutorials/create-a-token/">Create a Token</a></li>
                   <li>
                      <span class="fa fa-chevron-right"></span>
@@ -449,6 +471,20 @@
                      </ul>
                   </li>
                   <li><a href="http://rskgasstation.info/">Gas Station</a></li>
+                  
+                  <li>
+                     <span class="fa fa-chevron-right"></span>
+                     <a href="/tools/tokenbridge/">Token Bridge</a>
+                     <ul>
+                        <li class="hide-mobile"><a href="/tools/tokenbridge/">Token Bridge</a></li>
+                        <li><a href="/tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                        <li><a href="/tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                        <li><a href="/tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                        <li><a href="/tools/tokenbridge/bridge/">Token Bridge Contracts</a></li>
+                        <li><a href="/tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                        <li><a href="/tools/tokenbridge/federator/">Federator</a></li>
+                     </ul>
+                  </li>
                </ul>
             </li>
          </ul>
@@ -477,4 +513,7 @@
          <a href="/defi/" target="_blank">DeFi on Bitcoin</a>
       </li>
    </ul>
+   <div class="nav-search-item">
+      <a href="/search/" target="_blank">Search</a>
+   </div>
 </div>

@@ -3,6 +3,10 @@ layout: rsk
 title: Deed
 ---
 
+<div class="alert alert-danger">
+  :warning: Deprecated. Find new registrar <a href="../rsk-registrar">here</a>.
+</div>
+
 The Deed contract has two main features:
 - Store RIF tokens locked on a bid
 - Handle the annual rent payment.

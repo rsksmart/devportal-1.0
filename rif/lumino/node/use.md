@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: How To Use
+description: "How to build and run a Lumino node. How to use its user interface to view dashboard, quick payments, token view, send tokens, pay, deposit, close channels, and view payments"
 ---
 **Pre requisites for a Lumino Node**
 
@@ -98,7 +99,7 @@ lumino
     </tr>
     <tr>
       <td scope="row">
-        $TOKENNETWORK\_REGISTRY\_CONTRACT\_ADDRESS     
+        $TOKENNETWORK\_REGISTRY\_CONTRACT\_ADDRESS
       </td>
       <td>
         Address for the token registry contract deployed (view contracts table)
@@ -109,7 +110,7 @@ lumino
         $SECRET\_REGISTRY\_CONTRACT\_ADDRESS
       </td>
       <td>
-        Address for the secret registry contract deployed (view contracts table) 
+        Address for the secret registry contract deployed (view contracts table)
       </td>
     </tr>
     <tr>
@@ -117,12 +118,12 @@ lumino
         $ENDPOINT\_REGISTRY\_CONTRACT\_ADDRESS
       </td>
       <td>
-        Address for the secret registry contract deployed (view contracts table) 
+        Address for the secret registry contract deployed (view contracts table)
       </td>
     </tr>
     <tr>
       <td scope="row">
-        $YOUR\_RNS\_DOMAIN      
+        $YOUR\_RNS\_DOMAIN
       </td>
       <td>
         RNS address associated with your rsk node address. i.e: --rnsdomain=lumino.rsk.co This parameter is optional
@@ -192,7 +193,7 @@ Each token display the following information &amp; actions:
 **Channels**
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-channels.png" alt=""/></div><br/>
- 
+
 This view is used for:
 
 - Create channels between nodes

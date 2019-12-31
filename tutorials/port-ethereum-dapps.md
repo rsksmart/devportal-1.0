@@ -220,7 +220,7 @@ Enter the account address from MetaMask and wait several minutes for MetaMask to
 Now edit the `truffle-config.js` to be same as the following. It directs Truffle to connect to the public Testnet node.
 
 ```javascript
-var HDWalletProvider = require('truffle-hdwallet-provider')
+var HDWalletProvider = require('@truffle/hdwallet-provider')
 
 var mnemonic = 'thing tuition ranch ... YOUR MNEMONIC'
 var publicNode = 'https://public-node.testnet.rsk.co:443'

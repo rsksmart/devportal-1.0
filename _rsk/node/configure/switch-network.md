@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Switch network
+description: "How to switch your RSK node between the Mainnet, Testnet, and RegTest networks"
 collection_order: 2430
 ---
 
