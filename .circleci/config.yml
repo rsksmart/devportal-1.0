@@ -12,7 +12,7 @@ jobs:
           name: Preparing project
           command: |
                     sudo gem install bundler
-                    sudo gem install jekyll
+                    sudo gem install jekyll -v 3.8.5
                     sudo bundle update && bundle install
       - run:
           name: Run Test
