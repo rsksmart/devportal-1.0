@@ -13,6 +13,8 @@ jobs:
           command: |
                     sudo gem install bundler
                     sudo gem install jekyll -v 3.8.5
+                    sudo gem uninstall faraday
+                    sudo gem install faraday -v 0.16.0
                     sudo bundle update && bundle install
       - run:
           name: Run Test
