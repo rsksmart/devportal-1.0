@@ -4,7 +4,7 @@ jobs:
     working_directory: ~/tmp
     # The primary container is an instance of the first image listed. The job's commands run in this container.
     docker:
-      - image: circleci/ruby:latest
+      - image: circleci/ruby:2.6.3
 
     steps:
       - checkout
