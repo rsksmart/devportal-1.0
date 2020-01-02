@@ -3,7 +3,9 @@ layout: rsk
 title: RSK Owner
 ---
 
-RSK MainNet: [0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1](https://explorer.rsk.co/address/0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1)
+- RSK MainNet: [0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1](https://explorer.rsk.co/address/0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1)
+- RSK TestNet: [0xca0a477e19bac7e0e172ccfd2e3c28a7200bdb71](https://explorer.testnet.rsk.co/address/0xca0a477e19bac7e0e172ccfd2e3c28a7200bdb71)
+- [Smart contract](https://github.com/rnsdomains/rns-rskregistrar/blob/master/contracts/RSKOwner.sol)
 
 Owner of _rsk_ top level domain. It can `setSubdomainOwner` in RNS.
 
