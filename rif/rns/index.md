@@ -67,7 +67,7 @@ The guideline for finding a specific record for a name is as follows:
 3. Determine if resolver supports desired resource record via [ERC-165 interface detection](https://eips.ethereum.org/EIPS/eip-165).
 4. Get the desired resource record. Find currently standardized resolvers [here](specs/resolvers).
 
-> Guidelines on [integration](/integrate)
+> Guidelines on [integration](integrate)
 
 ### Resource records
 
