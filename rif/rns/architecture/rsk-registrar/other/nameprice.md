@@ -3,8 +3,8 @@ layout: rsk
 title: Name Price
 ---
 
-- MainNet: [0xd09adf13e482928e47e96dd6f02aad1daf7a5a47](https://explorer.rsk.co/address/0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61)
-- TestNet: [0x794f99f1a9382ba88b453ddb4bfa00acae8d50e8](https://explorer.testnet.rsk.co/address/0x36ffda909f941950a552011f2c50569fda14a169)
+- MainNet: [0xd09adf13e482928e47e96dd6f02aad1daf7a5a47](https://explorer.rsk.co/address/0xd09adf13e482928e47e96dd6f02aad1daf7a5a47)
+- TestNet: [0x794f99f1a9382ba88b453ddb4bfa00acae8d50e8](https://explorer.testnet.rsk.co/address/0x794f99f1a9382ba88b453ddb4bfa00acae8d50e8)
 - [Smart contract](https://github.com/rnsdomains/rns-rskregistrar/blob/master/contracts/NamePrice.sol)
 
 Determines the price of a domain.
