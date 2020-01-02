@@ -61,10 +61,3 @@ truffle migrate --network rskregtest
 ```
 
 This will also generate the json files for that network with the addresses of the deployed contracts that will be called by the federator.
-
-
-
-
-
-
-
