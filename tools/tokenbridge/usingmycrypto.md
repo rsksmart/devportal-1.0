@@ -3,7 +3,7 @@ layout: rsk
 title: Interaction guide using MyCrypto
 ---
 
-This guide describes the necessary steps to perform a token transfer between two blockchain networks, hereinafter referred to as **Mainchain** and **Sidechain**, through interaction with special contracts that make up a subsystem called **TokenBridge**.
+This guide describes the necessary steps to perform a token transfer between two blockchain networks, which we will refer to to as **Mainchain** and **Sidechain**, through interaction with special contracts that make up a subsystem called **TokenBridge**.
 
 The test performed uses the RSK (with a local regtest node) and Ethereum (through the Ganache client) nodes as Mainchain and Sidechain respectively. The demonstration images to interact with both Blockchain were taken from the MyCrypto application. Alternatively, MyEtherWallet or similar can be used which will give the same results.
 
@@ -78,7 +78,7 @@ Next, access the Bridge contract in the Mainchain, entering its address (which i
 
 ---
 
-On this occasion invoke the receiveTokens method placing the IER20 contract address in the tokenToUse input and the amount in unit of wei that we wish to receive.
+On this occasion, invoke the `receiveTokens` method placing the IERC20 contract address in the `tokenToUse` input, and the amount, in wei, that we wish to receive.
 
 !["Contract Receive"](/assets/img/tools/tokenbridge/contract_receive.png "Contract Receive")
 
@@ -90,14 +90,13 @@ Again, write, sign and confirm the transaction and wait for it to be approved.
 
 ---
 
-Once this transaction  is processed on Bridge contract, the federator service will identify the event and cross the information to the Sidechain. The federator might be configured to wait a few blocks before transferring transactions.
-
+Once this transaction  is processed on Bridge contract, the federator service will identify the event and cross the information to the Sidechain. The federator may be configured to wait a few blocks before transferring transactions.
 
 ## Switch networks
 
 The next step is to connect the Blockchain interface client to the Sidechain, where the tokens will be received. In this case we use the Ganache client with the corresponding contracts previously deployed.
 
-Then connect to the Bridge's Sidechain contract using the corresponding address and JSON ABI once again. This time call the mappedTokens method passing as a parameter the address of the IERC20 contract of the Mainchain that was previously used. The result of this operation will be the address of the associated contract on the Sidechain that holds the transferred tokens.
+Then connect to the Bridge's Sidechain contract using the corresponding address and JSON ABI once again. This time call the `mappedTokens` method, passing as a parameter the address of the IERC20 contract of the Mainchain that was previously used. The result of this operation will be the address of the associated contract on the Sidechain that holds the transferred tokens.
 
 !["Contract Mapped Tokens"](/assets/img/tools/tokenbridge/contract_mapped_tokens.png "Contract Mapped Tokens")
 
@@ -105,7 +104,7 @@ Then connect to the Bridge's Sidechain contract using the corresponding address 
 
 ## Validating result
 
-Using the obtained address from the previous step (`0x1684e1C7bd0225917C48F60FbdC7f47b2982a3C2`) and the IER20 ABI interface, let’s connect to the contract.
+Using the address obtained from the previous step (`0x1684e1C7bd0225917C48F60FbdC7f47b2982a3C2`), and the IERC20 ABI interface, let’s connect to the contract.
 
 !["Access Contract Sidetoken"](/assets/img/tools/tokenbridge/access_contract_sidetoken.png "Access Contract Sidetoken")
 
