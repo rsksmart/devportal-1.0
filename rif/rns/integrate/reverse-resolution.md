@@ -3,7 +3,7 @@ layout: rsk
 title: Reverse address resolution
 ---
 
-Finding the domain associated to a an address consists of X steps:
+Finding the domain associated with an address consists of X steps:
 
 1. Obtain the identifier of the address reverse records.
 
@@ -30,7 +30,7 @@ Finding the domain associated to a an address consists of X steps:
 ```js
 
 function reverseResolve (address) {
-  const reverseName = `${address.slice(2).toLowerCase}.addr.reverse`;
+  const reverseName = `${address.slice(2).toLowerCase()}.addr.reverse`;
   const node = namehash(reverseName);
   const resolver = rns.resolver(node);
   const name = resolver.name(node);

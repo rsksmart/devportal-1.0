@@ -25,7 +25,7 @@ Has renewer role in `RSK Owner`.
 function price (string memory name, uint expires, uint duration) public view returns(uint);
 ```
 
-Price of a name in RIF
+Returns the price of a name in RIF
 
 - `name` not used. Pass `''`
 - `expires` not used. Pass `0`
@@ -41,14 +41,14 @@ Renews a name in Node Owner.
 
 This method should be called if the domain is owned by someone.
 
-Previously execute [`approve()`](https://github.com/riflabs/RIF-Token/blob/master/contracts/third-party/openzeppelin/token/ERC20/StandardToken.sol#L53) for the amount of tokens to be transferred.
+You must have previously executed [`approve()`](https://github.com/riflabs/RIF-Token/blob/master/contracts/third-party/openzeppelin/token/ERC20/StandardToken.sol#L53) for the amount of tokens to be transferred.
 
 - `name` The name to register.
 - `duration` Time to register in years.
 
 ## Register via ERC-677
 
-Use RIF [`transferAndCall` method](https://github.com/riflabs/RIF-Token/blob/master/contracts/RIF/RIFToken.sol#L278) with the following encoding to perform a one-transaction RIF token transfer + domain renovation.
+Use RIF [`transferAndCall` method](https://github.com/riflabs/RIF-Token/blob/master/contracts/RIF/RIFToken.sol#L278) with the following encoding to perform a RIF token transfer and domain renewal in a single transaction.
 
 Encoding:
 
@@ -58,11 +58,10 @@ Encoding:
 | duration   | 32 bytes      |  4 bytes |
 | name       | variable size | 36 bytes |
 
-Parameters are used int he same manner as [`register`](#register). Use `0xc2c414c8` as the signature.
+Parameters are used in the same manner as [`register`](#register). Use `0xc2c414c8` as the signature.
 
 ---
 
 1. https://eips.ethereum.org/EIPS/eip-20
 2. https://github.com/ethereum/EIPs/issues/677
 3. https://github.com/OpenZeppelin/openzeppelin-contracts implementation.
-

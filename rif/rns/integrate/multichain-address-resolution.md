@@ -21,7 +21,7 @@ Resolving a chain address (for example, a Bitcoin address) associated to a domai
 
 4. Query for address resolution.
 
-    Use `chaiAddr(bytes32,bytes4)` with the domain identifier and the [chain hexa identifier](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
+    Use `chainAddr(bytes32,bytes4)` with the domain identifier and the [chain hexa identifier](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
 
     > [`chainAddr(bytes32,bytes4)` spec](../specs/resolvers/chain-addr-resolver)
 

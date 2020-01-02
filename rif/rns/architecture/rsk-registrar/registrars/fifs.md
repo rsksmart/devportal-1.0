@@ -42,7 +42,7 @@ The registration must be performed as follows:
 function price (string memory name, uint expires, uint duration) public view returns(uint);
 ```
 
-Price of a name in RIF
+Calculates the price of a name, denominated in RIF.
 
 - `name` not used. Pass `''`
 - `expires` not used. Pass `0`
@@ -56,13 +56,14 @@ function makeCommitment (bytes32 label, address nameOwner, bytes32 secret) publi
 
 Create a commitment for register action.
 
-Don't use this method on-chain when committing.
+:warning:  Don't use this method on-chain, as that will reveal your `secret`.
+Instead run this method off-chain (note that it is `pure`), and save the return value.
 
 - `label` keccak256 of the name to be registered.
 - `nameOwner` Owner of the name to be registered.
 - `secret` Secret to protect the name to be registered.
 
-Returns The commitment hash.
+Returns the commitment hash.
 
 ### `commit`
 
@@ -88,7 +89,7 @@ This method can be polled to ensure registration.
 
 - `commitment` Commitment to be queried.
 
-Returns Wether the commitment can be revealed or not.
+Returns whether the commitment can be revealed or not.
 
 ### `register`
 
@@ -96,11 +97,11 @@ Returns Wether the commitment can be revealed or not.
 function register(string calldata name, address nameOwner, bytes32 secret, uint duration);
 ```
 
-Registers a .rsk name in RNS.
+Registers a `.rsk` name in RNS.
 
 This method must be called after committing.
 
-Previously execute [`approve()`](https://github.com/riflabs/RIF-Token/blob/master/contracts/third-party/openzeppelin/token/ERC20/StandardToken.sol#L53) for the amount of tokens to be transferred.
+You must have previously executed [`approve()`](https://github.com/riflabs/RIF-Token/blob/master/contracts/third-party/openzeppelin/token/ERC20/StandardToken.sol#L53) for the amount of tokens to be transferred.
 
 - `name` The name to register.
 - `nameOwner` The owner of the name to register.
@@ -109,7 +110,7 @@ Previously execute [`approve()`](https://github.com/riflabs/RIF-Token/blob/maste
 
 ## Register via ERC-677
 
-Use RIF [`transferAndCall` method](https://github.com/riflabs/RIF-Token/blob/master/contracts/RIF/RIFToken.sol#L278) with the following encoding to perform a one-transaction RIF token transfer + domain registration.
+Use RIF [`transferAndCall` method](https://github.com/riflabs/RIF-Token/blob/master/contracts/RIF/RIFToken.sol#L278) with the following encoding to perform a RIF token transfer and domain registration in a single transaction
 
 Encoding:
 
