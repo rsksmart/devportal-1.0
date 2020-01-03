@@ -106,13 +106,13 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
 **Verification:**
 
 From Resolver contract, access to `addr` function. Set parameters:
-    - `node`: the result of applying `namehash` function (see description [here](/rif/rns/operation/Resolve-a-name/#namehash)).
+    - `node`: the result of applying `namehash` function (see description [here](/rif/rns/operations/Resolve-a-name/#namehash)).
 
 Read the result and check it is equal to the address set in step 9.
 
 ### Alternatives:
 
-Have a look at [RIF Token](/RIF-Token) section
+Have a look at [RIF Token](/rif/token) section
 
 ## Registring a subdomain
 

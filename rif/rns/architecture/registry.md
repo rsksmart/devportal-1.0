@@ -9,7 +9,7 @@ The RNS Registry is the contract that stores the ownership of the nodes.
 - **Address**: [`0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5`](http://explorer.rsk.co/address/0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5)
 - **ABI**: [RNSABI.json](/rif/rns/architecture/RNSABI.json)
 
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 
@@ -95,7 +95,7 @@ The owner of the original domain can call `setSubnodeOwner` at any time and over
 
 ## Change the Resolver
 
-Once you gain ownership over a domain you must configure the name resolution for said domain. For more information about resolutions have a look at [Resolver contract](/rif/rns/architecture/Resolver) and '[Resolving a name](/rif/rns/operation/Resolve-a-name)'.
+Once you gain ownership over a domain you must configure the name resolution for said domain. For more information about resolutions have a look at [Resolver contract](/rif/rns/architecture/Resolver) and '[Resolving a name](/rif/rns/operations/Resolve-a-name)'.
 
 ```js
 var node = namehash('adomain.rsk')

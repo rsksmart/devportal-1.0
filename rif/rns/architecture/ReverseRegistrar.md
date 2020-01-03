@@ -10,7 +10,7 @@ The owner of the `addr.reverse` domain is a registrar that permits the caller to
 - **Address**: [0xd25c3f94a743b93ecffecbe691beea51c3c2d9d1](https://explorer.rsk.co/address/0xd25c3f94a743b93ecffecbe691beea51c3c2d9d1)
 - **ABI**: [ReverseRegistrarABI.json](/rif/rns/architecture/ReverseRegistrarABI.json)
 
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 

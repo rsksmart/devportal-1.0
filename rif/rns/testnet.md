@@ -4,6 +4,7 @@ title: RNS Testnet
 ---
 
 ### RNS
+
 [0x7d284aaac6e925aad802a53c0c69efe3764597b8](https://explorer.testnet.rsk.co/address/0x7d284aaac6e925aad802a53c0c69efe3764597b8)
 
 ### Resolvers
