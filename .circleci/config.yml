@@ -8,6 +8,14 @@ jobs:
 
     steps:
       - checkout
+
+      # Restore bundle cache
+      - type: cache-restore
+        keys:
+          - v1-dependencies-bundler-{{ checksum "Gemfile.lock" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-bundler-
+
       - run:
           name: Preparing project
           command: |
@@ -16,6 +24,13 @@ jobs:
                     sudo gem uninstall faraday
                     sudo gem install faraday -v 0.16.0
                     sudo bundle update && bundle install
+
+      # Store bundle cache
+      - type: cache-save
+        key: v1-dependencies-bundler-{{ checksum "Gemfile.lock" }}
+        paths:
+          - vendor/bundle
+
       - run:
           name: Run Test
           command: |
