@@ -8,7 +8,7 @@ jobs:
     steps:
       - checkout
       # Restore bundle cache
-      - type: cache-restore
+      - restore_cache:
           keys:
             - v1-dependencies-bundler-{{ checksum "Gemfile.lock" }}
             # fallback to using the latest cache if no exact match is found
@@ -20,7 +20,7 @@ jobs:
                     sudo bundle update && bundle install
                     ruby -v && bundler -v && bundle exec jekyll -v
       # Store bundle cache
-      - type: cache-save
+      - save_cache:
           key: v1-dependencies-bundler-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
