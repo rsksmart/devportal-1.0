@@ -6,26 +6,42 @@ jobs:
       - image: circleci/ruby:2.6.3
 
     steps:
+      - run:
+          name: Env Vars
+          command: |
+            echo "export BUNDLE_PATH=~/tmp/vendor/bundle" >> $BASH_ENV
+            echo "export GEM_HOME=~/tmp/vendor/bundle" >> $BASH_ENV
+
       - checkout
+
       # Restore bundle cache
       - restore_cache:
           keys:
-            - v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
-            - v1-gem-cache-{{ arch }}-{{ .Branch }}-
+            - v1-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
             - v1-gem-cache-{{ arch }}-
+
       - run:
-          name: Set up
+          name: Set up bundler
           command: |
-                    sudo gem install bundler
-                    sudo bundle update && bundle install
-                    ruby -v && bundler -v && bundle exec jekyll -v
+            echo "BUNDLE_PATH=${BUNDLE_PATH}"
+            echo "GEM_HOME=${GEM_HOME}"
+            gem install bundler
+            bundle config set path "${BUNDLE_PATH}"
+            ruby -v && bundle -v
+
+      - run:
+          name: Set up bundle gems
+          command: |
+            bundle check || bundle install --jobs=4 --retry=3
+            bundle exec jekyll -v
+
       # Store bundle cache
       - save_cache:
-          key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+          key: v1-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
           paths:
-            - vendor/bundle
+            - "{{ .Environment.BUNDLE_PATH }}"
 
       - run:
           name: Tests
           command: |
-                    sudo rake test
+            bundle exec rake test
