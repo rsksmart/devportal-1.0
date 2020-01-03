@@ -21,7 +21,7 @@ Follow the instructions below to install and run an RSK node in Azure. By defaul
     1. Settings: configure optional features.
     1. Summary: review the summary of what you have set and press Create.
        Wait for Azure to finish the deployment.
-1. Initialize RSK node configuration file settings (you can do it while [switching network](#Switching-networks)).
+1. Initialize RSK node configuration file settings (you can do it while [switching network](/rsk/node/configure/switch-network)).
     * [Connect your computer to the node using bash](#connect).
     * Edit configuration file using vi:
       ```shell
