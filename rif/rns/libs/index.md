@@ -44,6 +44,9 @@ The developer community is working to help other developers enabling libraries a
     <tr>
       <td scope="row">Solidity</td>
       <td>
+        <a href="/rif/rns/libs/smart-contracts">RNS Full Smart contract suite</td>
+      </td>
+      <td>
         <a href="/rif/rns/libs/rns-artifacts">rns-artifacts</a>
       </td>
     </tr>
