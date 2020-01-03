@@ -1,9 +1,9 @@
 ---
 layout: rsk
-title: RNS
+title: RIF Name Service
 ---
 
-RIF Name Service provides an architecture which enables the identification of blockchain addresses by human-readable names.
+RNS provides an architecture which enables the identification of blockchain addresses by human-readable names.
 
 By adding a name resolution service, also known as “alias”, the probability of errors is significantly reduced. In addition, centralizing the access to multiple resources associated with a human-readable name improves the blockchain platform user experience. As resource names may change over time, the system needs to be flexible to support frequent changes.
 
@@ -11,13 +11,17 @@ Currently over the World Wide Web, the Domain Name System (DNS) is responsible f
 
 <img src="/assets/img/rns/introduction.png" class="img-fluid" alt="introduction" />
 
-Want to register a domain? Go [here](operations/register) to find out more.
-
-## The basics
+<div class="row has-unique-col rsk_green">
+  <div class="col">
+    <span>
+      <a href="https://manager.rns.rifos.org" target="_blank">Register a domain</a>
+    </span>
+  </div>
+</div>
 
 RNS is a hierarchical name space inspired by DNS, with the hierarchy roughly corresponding to organizational structure, and uses the "." character to delimit its levels.
 
-### Design
+## Design
 
 The design goals of the RIF Name Service influence its structure.
 
@@ -28,7 +32,7 @@ The design goals of the RIF Name Service influence its structure.
 
 [RNS specs](specs)
 
-### Elements of the RNS
+## Elements of the RNS
 
 RNS has two major components:
 
@@ -51,7 +55,7 @@ These three components roughly correspond to the three layers or views of the do
 - From the resolver's point of view, the domain system is composed of an unknown number of names. Each name has a corresponding resolver that provides information for a set of [resolution types](specs/resolution-types) directly.
 - From the registry's point of view, the domain system consists of a [hierarchical tree](architecture/registry) where each leaf has an owner (contract or account) and an associated resolver that provides information of the name.
 
-### Guidelines on use
+## Guidelines on use
 
 Before RNS can be used to hold naming information for some kind of object, two needs must be met:
 - A convention for mapping between object names and domain names. This describes how information about an object is accessed. Find specs [here](specs#name-mapping-convention)
@@ -62,6 +66,8 @@ The guideline for finding a specific record for a name is as follows:
 2. Get the name's resolver address via [`resolver(bytes32)`](specs/registry#access).
 3. Determine if resolver supports desired resource record via [ERC-165 interface detection](https://eips.ethereum.org/EIPS/eip-165).
 4. Get the desired resource record. Find currently standardized resolvers [here](specs/resolvers).
+
+> Guidelines on [integration](integrate)
 
 ### Resource records
 
