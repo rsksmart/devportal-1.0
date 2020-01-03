@@ -1,0 +1,20 @@
+version: 2.1
+jobs:
+  build:
+    working_directory: ~/tmp
+
+    docker:
+      - image: circleci/ruby:2.6.3
+
+    steps:
+      - checkout
+      - run:
+          name: Set up
+          command: |
+            sudo gem install bundler
+            sudo bundle update && bundle install
+            ruby -v && bundler -v && bundle exec jekyll -v
+      - run:
+          name: Tests
+          command: |
+            sudo rake test
