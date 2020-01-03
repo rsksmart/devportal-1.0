@@ -29,10 +29,7 @@ jobs:
         paths:
           - vendor/bundle
 
-            sudo gem install bundler
-            sudo bundle update && bundle install
-            ruby -v && bundler -v && bundle exec jekyll -v
       - run:
           name: Tests
           command: |
-            sudo rake test
+                    sudo rake test
