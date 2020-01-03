@@ -10,9 +10,9 @@ jobs:
       # Restore bundle cache
       - restore_cache:
           keys:
-            - v1-dependencies-bundler-{{ checksum "Gemfile.lock" }}
-            # fallback to using the latest cache if no exact match is found
-            - v1-dependencies-bundler-
+            - v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
+            - v1-gem-cache-{{ arch }}-{{ .Branch }}-
+            - v1-gem-cache-{{ arch }}-
       - run:
           name: Set up
           command: |
@@ -21,7 +21,7 @@ jobs:
                     ruby -v && bundler -v && bundle exec jekyll -v
       # Store bundle cache
       - save_cache:
-          key: v1-dependencies-bundler-{{ checksum "Gemfile.lock" }}
+          key: v1-gem-cache-{{ arch }}-{{ .Branch }}-{{ checksum "Gemfile.lock" }}
           paths:
             - vendor/bundle
 
