@@ -2,21 +2,19 @@ version: 2.1
 jobs:
   build:
     working_directory: ~/tmp
-    # The primary container is an instance of the first image listed. The job's commands run in this container.
+
     docker:
       - image: circleci/ruby:2.6.3
 
     steps:
       - checkout
       - run:
-          name: Preparing project
+          name: Set up
           command: |
-                    sudo gem install bundler
-                    sudo gem install jekyll -v 3.8.5
-                    sudo gem uninstall faraday
-                    sudo gem install faraday -v 0.16.0
-                    sudo bundle update && bundle install
+            sudo gem install bundler
+            sudo bundle update && bundle install
+            ruby -v && bundler -v && bundle exec jekyll -v
       - run:
-          name: Run Test
+          name: Tests
           command: |
-                    sudo rake test
+            sudo rake test
