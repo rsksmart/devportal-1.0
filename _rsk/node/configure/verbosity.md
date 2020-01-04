@@ -115,7 +115,7 @@ A logback configuration example can be downloaded from [here](https://github.com
 
 #### Using logback with a installed node
 
-If you're running a node [using the release jar file](install-rskj-using-fat-jar) use the following command:
+If you're running a node [using the release jar file](/rsk/node/install/java) use the following command:
 
 ```bash
 java -cp rskj-core-0.6.2-ORCHID-all.jar co.rsk.Start -Dlogback.configurationFile=path/to/logback.xml
@@ -123,7 +123,7 @@ java -cp rskj-core-0.6.2-ORCHID-all.jar co.rsk.Start -Dlogback.configurationFile
 
 #### Using logback with a compiled node
 
-If you're running a node [by compiling the code](Compile-and-run-a-RSK-node-locally) on VM Options *add*:
+If you're running a node [by compiling the code](/rsk/node/install/java) on VM Options *add*:
 
 ```shell
 -Dlogback.configurationFile=path/to/logback.xml

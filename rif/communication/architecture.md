@@ -17,7 +17,7 @@ Let's discuss a each layer in greater detail.
 The **user facing layer** contains services that are using the RIF Communication protocol and libraries. This layer will contain mostly 3rd party solutions as we are focused on building the infrastructure layers. However, we are building 3 services that we see as necessary for the success of the platform.
 
 - **RIF Communication Gateways** allows users, for a small fee, to interact with RIF Communication network without the need of operating node while allowing gateway operators to profit. This is a service open to 3rd parties to operate and has some privacy caveats.
-- The **Mailbox service** gives users to receive messages even if they are not online. It is similar to real world mailbox service and as such it also has privacy trade-offs. Mailbox services will be listed on [RIF Marketplace](/rif/marketplace).
+- The **Mailbox service** gives users to receive messages even if they are not online. It is similar to real world mailbox service and as such it also has privacy trade-offs. Mailbox services will be listed on [RIF Marketplace](https://www.rifos.org/marketplace).
 - Node operators can use **Node manager** to monitor their communication instances and understand the utilization of their service.
 
 ## Developer facing layer

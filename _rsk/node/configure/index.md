@@ -23,7 +23,7 @@ Your node's config file is in `/etc/rsk`.
 Default configurations are defined there and they are the same as [these ones](https://github.com/rsksmart/artifacts/tree/master/rskj-ubuntu-installer/config).
 
 You should edit the config related with the network you are using (`mainnet.conf`, `testnet.conf`, `regtest.conf`).
-Check [here](Configuration-file-reference) all the configuration options you could change.
+Check [here](/rsk/node/configure/reference) all the configuration options you could change.
 
 
 ### Using `java` command

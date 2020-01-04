@@ -13,7 +13,7 @@ Has registration role in `RSK Owner`.
 - Accepts payments via
   - ERC-20 `approve()` + `register()`.<sup>1</sup>
   - ERC-721 `transferAndCall()`.<sup>2</sup>
-- Calculates price using [`NamePrice` contract](../other/nameprice).
+- Calculates price using [`NamePrice` contract](../../other/nameprice).
 - It has an owner that can<sup>3</sup>
   - Set minimum commitment age.
   - Set minimum registration name length available.

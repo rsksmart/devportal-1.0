@@ -7,9 +7,9 @@ This guide sets up 2 Swarm nodes in a local private network. Each of the nodes i
 
 The *Swarm Accounting Protocol* (**SWAP**) is required in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a> in Swarm. This requires chequebook Smart Contracts which keep track of the accounting done between Swarm nodes, and therefore there is need for a blockchain.
 
-If you need these nodes to run without incentivization, please refer to the much simpler <a href="/ rif/storage/providers/swarm/guides/standard/">Standard version</a> of this guide.
+If you need these nodes to run without incentivization, please refer to the much simpler <a href="/rif/storage/providers/swarm/guides/standard/">Standard version</a> of this guide.
 
-This guide uses a local private Ganache network. If you want to use RSK as a blockchain, follow the instructions <a href="/ rif/storage/providers/swarm/guides/on-rsk/">here</a>.
+This guide uses a local private Ganache network. If you want to use RSK as a blockchain, follow the instructions <a href="/rif/storage/providers/swarm/guides/on-rsk/">here</a>.
 
 ## Table of Contents
 1. [Requirements](#requirements)
