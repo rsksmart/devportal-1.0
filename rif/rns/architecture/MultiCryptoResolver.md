@@ -12,7 +12,7 @@ In the RNS registry we have launched a resolver capable of resolve addresses fro
 - **Multi-Crypto Resolver Adrress**: [`0x99a12be4C89CbF6CFD11d1F2c029904a7B644368`](http://explorer.rsk.co/address/0x99a12be4C89CbF6CFD11d1F2c029904a7B644368)
 - **ABI**: [MultiCryptoResolverABI.json](/rif/rns/architecture/MultiCryptoResolverABI.json)
 
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 

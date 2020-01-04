@@ -21,7 +21,7 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 - **Address**: [`0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6`](http://explorer.rsk.co/address/0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6)
 - **ABI**: [RegistrarABI.json](/rif/rns/architecture/RegistrarABI.json)
 
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 
@@ -130,7 +130,7 @@ See [RNS Testnet section](/RNS-Testnet) for testing environment information.
     }
     ```
 
-Now the name is registered in the [RNS Registry](/rif/rns/architecture/Registry).
+Now the name is registered in the [RNS Registry](/rif/rns/architecture/registry).
 
 
 ## Rent and domain expiration

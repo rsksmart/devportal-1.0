@@ -84,7 +84,7 @@ module.exports = {
 
 The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.
 
-To enable prune service in your node [override your configuration](RSK-node-configuration#setting-your-own-config-preferences). These are the recommended parameters:
+To enable prune service in your node [override your configuration](/rsk/node/configure). These are the recommended parameters:
 ```
 prune {
     # prune service could be enabled or not

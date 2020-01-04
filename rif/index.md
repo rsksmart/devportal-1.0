@@ -22,11 +22,11 @@ RNS is a decentralized service that allows users to have a readable domain or al
 
 Learn more about [RIF Name Service](./rns)
 
-#### RIF Lumino Network 
+#### RIF Lumino Network
 
 RIF Lumino Network is a third-layer solution to the Bitcoin blockchain, that enables state channels for every token built on RSK increasing transaction throughput and reduces costs by orders of magnitude.
 
-Learn more about [RIF Lumino Network](./payments/lumino)
+Learn more about [RIF Lumino Network](./lumino)
 
 #### RIF OS White Paper
 
