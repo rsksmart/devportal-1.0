@@ -17,8 +17,8 @@ jobs:
       # Restore bundle cache
       - restore_cache:
           keys:
-            - v1-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
-            - v1-gem-cache-{{ arch }}-
+            - v2-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
+            - v2-gem-cache-{{ arch }}-
 
       - run:
           name: Set up bundler
@@ -37,9 +37,9 @@ jobs:
 
       # Store bundle cache
       - save_cache:
-          key: v1-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
+          key: v2-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
           paths:
-            - "{{ .Environment.BUNDLE_PATH }}"
+            - ~/tmp/vendor/bundle
 
       - run:
           name: Tests
