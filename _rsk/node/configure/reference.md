@@ -4,8 +4,8 @@ title: Configuration reference
 collection_order: 2410
 ---
 
-
 ## Configuration reference
+
 - [peer](#peer)
 - [database](#database)
 - [vm](#vm)
@@ -20,12 +20,13 @@ collection_order: 2410
 - [genesis](#genesis)
 - [transaction.outdated](#transactionoutdated)
 - [play.vm](#playvm)
-- [hello.phrase](#phrase)
+- [hello.phrase](#hellophrase)
 - [details.inmemory.storage.limit](#detailsinmemorystoragelimit)
 - [solc.path](#solcpath)
 - [prune](#prune)
 
 ## peer
+
 Describes how your node peers other nodes.
 
 * `peer.discovery.enabled = [true/false]` enables the possibility of being discovered by new peers.
@@ -64,6 +65,7 @@ Describes how your node peers other nodes.
 
 
 ## database
+
 Describes where the blockchain  database is saved.
 
 * `database.dir = path` is the place to save physical storage files.
@@ -72,6 +74,7 @@ Describes where the blockchain  database is saved.
 
 
 ## vm
+
 Enabling de `vm.structured` will log all the calls to the VM in the local database, this means, all the contract executions (opcodes).
 When testing, using this module is the only way to see Exceptions.
 
@@ -91,6 +94,7 @@ vm.structured {
 ```
 
 ## sync
+
 Options related to syncing the blockchain:
 * `sync.enabled = [true/false]` enables the blockchain synchronization. Should be set to `true` to keep the node updated.
 * `sync.max.hashes.ask = int` determines the max amount of blocks to sync in a same batch. The synchronization is done in batches of blocks. Suggested value: `10000`.
@@ -116,6 +120,7 @@ sync {
 ```
 
 ## rpc
+
 Describes the configuration for the RPC protocol.
 * `rpc.providers = []` lists the different providers (up to this moment, just `web`). `rpc.providers.web` has a global setting for every web provider, `cors`.
     * `rpc.providers.web.cors = domain` restricts the RPC calls from other domains. Default value is `localhost`.
@@ -164,6 +169,7 @@ RSK has implemented an RPC [miner module](/develop/json-rpc-api). To use it, you
 ```
 
 ## wallet
+
 You can store your accounts on the node to use them to sign transactions. However, it is not secure to use a wallet in a public node.
 
 ```
@@ -178,8 +184,8 @@ wallet {
 }
 ```
 
-
 ## scoring
+
 Scoring is the way the node 'punishes' other nodes when bad responses are sent. Punishment can be done by node id or address.
 * `scoring.nodes.number = int` number of nodes to keep scoring.
 * `scoring.nodes.duration` and `scoring.addresses.duration` initial punishment duration (in minutes). Default is `10`.
@@ -204,9 +210,11 @@ scoring {
 }
 ```
 ## miner
+
 For more information about configuring RSK node to mine go [here](/rsk/node/configure/for-mining).
 
 ## blockchain.config.name
+
 It is a string that describe the name of the configuration.
 We use:
 
@@ -218,15 +226,18 @@ We use:
 
 
 ## bind_address
+
 It's the network interface with *wire protocol* and *peer discovery*.
 
 It is the last resort for public IP when it cannot be obtained by other ways.
 
 
 ## public.ip
+
 It is the node's public IP. If it's not configured, default is the IPv4 returned by `http://checkip.amazonaws.com`.
 
 ## genesis
+
 It is the path to the genesis file (in *resources/genesis*).
 The folder *resources/genesis* contains several versions of genesis configuration according to the network the peer will run on.
 
@@ -237,22 +248,27 @@ The folder *resources/genesis* contains several versions of genesis configuratio
 | Mainnet | rsk-mainnet.json |
 
 ## transaction.outdated
+
 It defines when a transaction is outdated:
 * `transaction.outdated.threshold = int` is the number of blocks that should pass before pending transaction is removed. Suggested value: `10`.
 * `transaction.outdated.timeout = int` is the number of seconds that should pass before pending transaction is removed. Suggested value: `100` (10 blocks * 10 seconds per block).
 
 
 ## play.vm
+
 It is a boolean that invokes vm program on message received, if the vm is not invoked the balance transfer occurs anyway. Suggested value: `true`.
 
 ## hello.phrase
+
 It is a string that will be included in the hello message of the peer.
 
 ## details.inmemory.storage.limit
+
 Specifies when exactly to switch managing storage of the account on autonomous db. Suggested value: `1`.
 If the inmemory storage of the contract exceded the limit, just deltas are saved.
 
 ## solc.path
+
 It is the path to the [Solidity](http://solidity.readthedocs.io) compiler. It's set because you may want to use the node to compile your smart contracts.
 If you don't have Solidity installed, you can use `/bin/false` as value.
 
