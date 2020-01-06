@@ -30,6 +30,8 @@ github: [metadata]
 
 exclude:
   - .jekyll-cache
+  - .bundle
+  - vendor
 
 plugins:
  - jekyll-last-modified-at
