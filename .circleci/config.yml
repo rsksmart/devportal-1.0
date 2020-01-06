@@ -2,19 +2,46 @@ version: 2.1
 jobs:
   build:
     working_directory: ~/tmp
-
     docker:
       - image: circleci/ruby:2.6.3
 
     steps:
-      - checkout
       - run:
-          name: Set up
+          name: Env Vars
           command: |
-            sudo gem install bundler
-            sudo bundle update && bundle install
-            ruby -v && bundler -v && bundle exec jekyll -v
+            echo "export BUNDLE_PATH=~/tmp/vendor/bundle" >> $BASH_ENV
+            echo "export GEM_HOME=~/tmp/vendor/bundle" >> $BASH_ENV
+
+      - checkout
+
+      # Restore bundle cache
+      - restore_cache:
+          keys:
+            - v2-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
+            - v2-gem-cache-{{ arch }}-
+
+      - run:
+          name: Set up bundler
+          command: |
+            echo "BUNDLE_PATH=${BUNDLE_PATH}"
+            echo "GEM_HOME=${GEM_HOME}"
+            gem install bundler
+            bundle config set path "${BUNDLE_PATH}"
+            ruby -v && bundle -v
+
+      - run:
+          name: Set up bundle gems
+          command: |
+            bundle check || bundle install --jobs=4 --retry=3
+            bundle exec jekyll -v
+
+      # Store bundle cache
+      - save_cache:
+          key: v2-gem-cache-{{ arch }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - ~/tmp/vendor/bundle
+
       - run:
           name: Tests
           command: |
-            sudo rake test
+            bundle exec rake test
