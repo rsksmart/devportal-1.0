@@ -50,12 +50,14 @@ $(document).ready(function () {
       $('.logo').addClass('header-scrolled');
       $('.navbar-toggler-icon').addClass('header-scrolled');
       $('.scrollup').addClass('header-scrolled');
+      $('.dropdown-menu').addClass('header-scrolled');
 
     } else {
       $('.navbar').removeClass('header-scrolled');
       $('.logo').removeClass('header-scrolled');
       $('.navbar-toggler-icon').removeClass('header-scrolled');
       $('.scrollup').removeClass('header-scrolled');
+      $('.dropdown-menu').removeClass('header-scrolled');
     }
   });
 

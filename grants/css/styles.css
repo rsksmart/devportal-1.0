@@ -9,6 +9,22 @@ body {
   line-height: 30px!important;
 }
 
+.btn:focus {
+  outline: 0!important;
+  box-shadow: inset 0 -1px 0 transparent;
+  border: none;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+  border: none;
+}
+
 .scrollup {
   position: fixed;
   bottom: 50px;
@@ -78,6 +94,73 @@ button:focus {
 .logo.header-scrolled {
   width: 90px!important;
 }
+
+#languages .btn {
+  line-height: 30px!important;
+  font-weight: bold;
+}
+
+#languages .dropdown-menu {
+  background: transparent;
+  border: none;
+}
+
+#languages .dropdown-menu.header-scrolled {
+  background: #00B520 !important;
+  border: none;
+}
+
+#languages .dropdown-menu .dropdown-item {
+  color: #FFFFFF;
+}
+
+#languages .dropdown-menu .dropdown-item:hover {
+  background: transparent!important;
+}
+
+.ruso .nav-link {
+  font-size: 12px;
+  padding: 10px 5px!important;
+}
+
+.ruso .scrollup {
+  bottom: 100px;
+  right: -90px;
+}
+
+.ruso .container-arrow {
+  font-size: 25px
+}
+
+.portugues .nav-link{
+  font-size: 14px;
+  padding: 10px 5px!important;
+}
+.espagnol .nav-link {
+  font-size: 16px;
+  padding: 10px 5px!important;
+}
+
+.portugues .scrollup {
+  right: -20px;
+}
+
+.corean .nav-link {
+  font-size: 12px;
+  padding: 10px 10px!important;
+}
+
+.japones .nav-link {
+  font-size: 14px;
+  padding: 10px 15px!important;
+}
+
+.japones .container-arrow {
+  font-size: 28px;
+}
+ .espagnol .container-arrow {
+    font-size: 28px;
+  }
 
 
 /*sections */
@@ -276,6 +359,7 @@ h6 {
   display: block;
   width: 100%;
   font-size: 12px!important;
+  line-height: 15px;
 }
 
 .rubro-name:hover {
@@ -548,7 +632,6 @@ h6 {
   color: white;
 }
 
-
 .smarty_image {
   max-width: 340px;
   position: relative;
@@ -817,6 +900,7 @@ h6 {
 .question-group {
   display: block;
   font-size: 22px;
+  min-height: 175px;
 }
 
 .question-block {
@@ -952,8 +1036,10 @@ textarea[type=text]:focus {
   color: #2C9DC3!important;
 }
 
-.counter-container{float: right;
-font-size: 14px;}
+.counter-container {
+  float: right;
+  font-size: 14px;
+}
 
 .clone .disabled {
   pointer-events: none;
@@ -1069,9 +1155,6 @@ font-size: 14px;}
 #why p {
   font-weight: 300;
 }
-
-
-
 
 
 /*footer*/
@@ -1290,9 +1373,17 @@ font-size: 14px;}
 }
 
 @media (max-width: 1200px) {
+	.espagnol .nav-link {
+  font-size: 12px;}
   .container-arrow {
     font-size: 25px;
     line-height: 28px;
+  }
+  .ruso .container-arrow {
+    font-size: 16px;
+  }
+  .japones .container-arrow {
+    font-size: 16px;
   }
   .process_illust {
     max-width: 335px;
@@ -1307,6 +1398,12 @@ font-size: 14px;}
 }
 
 @media (max-width: 991px) {
+  .ruso #home-text,
+  .corean #home-text,
+  .japones #home-text,
+  .espagnol #home-text {
+    max-width: 100%;
+  }
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
@@ -1316,6 +1413,7 @@ font-size: 14px;}
   .nav-link {
     color: #FFF!important;
     padding: 5px 15px!important;
+    font-size:16px!important;
   }
   .falsebreak {
     display: none;
@@ -1485,6 +1583,15 @@ font-size: 14px;}
 }
 
 @media (max-width: 768px) {
+  .ruso .container-arrow {
+    font-size: 22px;
+  }
+  .japones .container-arrow {
+    font-size: 24px;
+  }
+  .espagnol .container-arrow {
+    font-size: 28px;
+  }
   .home-title {}
   .home-bajada {
     font-size: 25px;
@@ -1523,6 +1630,10 @@ font-size: 14px;}
 }
 
 @media (max-width: 576px) {
+  .ruso .scrollup {
+    bottom: 100px;
+    right: -80px;
+  }
   .scrollup {
     font-size: 12px;
     right: -26px;
