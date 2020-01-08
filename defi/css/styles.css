@@ -309,7 +309,7 @@ button:focus {
     background: transparent;
     padding: .375rem .75rem;
     margin-top: -5px;
-    width: 70px;
+    width: 135px;
 }
 
 #languages .dropdown-item.header-scrolled,

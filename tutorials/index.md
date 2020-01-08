@@ -7,8 +7,8 @@ title: Tutorials
 
 - [Quick Start](/quick-start)
 - [Port Ethereum dApps](/tutorials/port-ethereum-dapps/)
-- [Deploy Smart Contract](/tutorials/deploy-smart-contract/)
-- [Interact with Smart Contract](/tutorials/interact-with-smart-contract/)
+- [Deploy Smart Contract](/tutorials/deploy-smart-contracts/)
+- [Interact with Smart Contract](/tutorials/interact-with-smart-contracts/)
 - [Create a Token](/tutorials/create-a-token/)
 
 ## Truffle tutorials

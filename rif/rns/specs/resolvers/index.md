@@ -14,3 +14,4 @@ Currently standardized resolver interfaces are specified in the table below.
 | Interface name | Description | Query via | Interface id | Specs |
 | addr | RSK Address | `addr(bytes32 node)` | `0x3b3b57de` | [Address resolver](addr-resolver) |
 | hash | 32 bytes | `hash(bytes32 node)` | `0xd8389dc5` | - |
+| chain addr | Chain Address | `chainAddr(bytes32,bytes4)` |  `0x8be4b5f6` | [Chain address resolver](chain-addr-resolver)

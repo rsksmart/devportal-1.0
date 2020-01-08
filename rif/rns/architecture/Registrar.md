@@ -3,6 +3,10 @@ layout: rsk
 title: Registrar
 ---
 
+<div class="alert alert-danger">
+  :warning: Deprecated. Find new registrar <a href="../rsk-registrar">here</a>.
+</div>
+
 The Registrar is the contract that handles the domain issuing logic. In this section we'll explain the interaction with this contract.
 
 As explained in the [RNS specification doc](https://docs.rifos.org/rif-name-service-specification-en.pdf), the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.
@@ -17,7 +21,7 @@ Is RNS, the auction lasts 5 days and is divided in two periods:
 - **Address**: [`0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6`](http://explorer.rsk.co/address/0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6)
 - **ABI**: [RegistrarABI.json](/rif/rns/architecture/RegistrarABI.json)
 
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 
@@ -126,7 +130,7 @@ See [RNS Testnet section](/RNS-Testnet) for testing environment information.
     }
     ```
 
-Now the name is registered in the [RNS Registry](/rif/rns/architecture/Registry).
+Now the name is registered in the [RNS Registry](/rif/rns/architecture/registry).
 
 
 ## Rent and domain expiration

@@ -9,7 +9,7 @@ Additionally, it is used as the default resolver configured for new nodes create
 
 <div class="alert alert-warning">
 <p>There is an upgraded version of this resolver. See <a href="/rif/rns/architecture/MultiCryptoResolver">Multi-crypto resolver</a> page.</p>
-<p>To migrate your resolver, execute the <a href="/rif/rns/architecture/Registry/#setresolver">setResolver</a> command on the registry.</p>
+<p>To migrate your resolver, execute the <a href="/rif/rns/architecture/registry/#setresolver">setResolver</a> command on the registry.</p>
 </div>
 
 
@@ -18,7 +18,7 @@ Additionally, it is used as the default resolver configured for new nodes create
 - **RSKResolver Adrress**: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](http://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
 - **ABI**: [RSKResolverABI.json](/rif/rns/architecture/RSKResolverABI.json)
 
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 

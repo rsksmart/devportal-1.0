@@ -5,9 +5,9 @@ title: The Stack
 
 <div class="container the-stack">
 
-
 <div class="row has-unique-col">
     <div class="col">
+        <div class="row rotate defi"><a href="/defi/">DeFi</a></div>
         <div class="row rsk_blue dapps">
             <div class="col"><span><a href="/develop/apps/wallets/">Wallet</a></span></div>
             <div class="col"><span><a href="/develop/apps/exchanges/">Exchange</a></span></div>
@@ -22,6 +22,7 @@ title: The Stack
             <div class="col"><span>Prediction Markets</span></div>
             <div class="col"><span>Marketplaces</span></div>
             <div class="col"><span>Scoring</span></div>
+            <div class="col"><span>Liquidity protocols</span></div>
         </div>
 
     </div>
@@ -31,21 +32,25 @@ title: The Stack
     <div class="col"><span><a href="/libraries/">Libraries</a></span></div>
 </div>
 
-<div class="row rif_blue">
-    <div class="col"><span><a href="/rif/rns/">RIF Directory</a></span></div>
-    <div class="col"><span><a href="/rif/lumino/">RIF Payments</a></span></div>
-    <div class="col"><span><a href="/rif/storage/">RIF Storage</a></span></div>
-    <div class="col"><span>RIF Comms</span></div>
-    <div class="col"><span>RIF Gateways</span></div>
-    <div class="col"><span>RIF Marketplace</span></div>
-    <div class="col"><span>Your sharing economy</span></div>
+<div class="row has-unique-col">
+    <div class="col">
+        <div class="row rotate">RIF Marketplace</div>
+        <div class="row rif_blue dapps">
+            <div class="col"><span><a href="/rif/rns/">RIF Directory</a></span></div>
+            <div class="col"><span><a href="/rif/lumino/">RIF Payments</a></span></div>
+            <div class="col"><span><a href="/rif/storage/">RIF Storage</a></span></div>
+            <div class="col"><span>RIF Comms</span></div>
+            <div class="col"><span>RIF Gateways</span></div>
+            <div class="col grey"><span>Your sharing economy</span></div>
+        </div>
+    </div>
 </div>
 
 <div class="row has-unique-col rsk_green">
     <div class="col"><span><a href="/rsk/">rsk smart contracts</a></span></div>
 </div>
 
-<div class="row has-unique-col">
+<div class="row has-unique-col bitcoin">
     <div class="col"><span><a href="https://bitcoin.org/en/development">Bitcoin: Store of Value</a></span></div>
 </div>
 

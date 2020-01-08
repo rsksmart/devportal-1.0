@@ -12,4 +12,4 @@ RIF Communications is an infrastructure protocol built on top of libp2p, which a
 
 By using their public keys as a discovery mechanism, users can publish pseudonyms on the RIF Directory and be discoverable without the need to remember long public keys. The RIF Secure Communications Infrastructure protocol aims to fulfill the need for establishing secure links between end users, RIFOS parties or services.
 
-In adition, RIF Communication also aspires to expose a low level library suitable to be used as communication layer in decentralised applications like RSK node, Lumino network node and similar.
+In addition, RIF Communication also aspires to expose a low level library suitable to be used as communication layer in decentralised applications like RSK node, Lumino network node and similar.
