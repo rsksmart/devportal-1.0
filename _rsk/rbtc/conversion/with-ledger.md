@@ -22,7 +22,7 @@ This document explains how to try the 2-way peg mechanism using Ledger.
 
 ## From BTC to RBTC
 
-:exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/#locking-from-btc-to-rbtc)
+:exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-rbtc-conversion)
 
 1. Set a derivation path in the key `derivationPath` in `config.json` file. You should use BTC mainnet/testnet derivation path `44'/0'/0'/0/0`.
 2. Unlock Ledger, and open the **Bitcoin App**.
@@ -55,7 +55,7 @@ This document explains how to try the 2-way peg mechanism using Ledger.
 
 ## From RBTC to BTC
 
-:exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/#releasing-from-rbtc-to-btc).
+:exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/#2-rbtc-to-btc-conversion).
 
 1. Set a derivation path in the key `derivationPath` in `./config.json` file. You should use BTC mainnet/testnet derivation path `44'/0'/0'/0/0`.
 2. Set the correct `chainId` in the `config.json` file. It depends on the network you are going to use (See [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md#list-of-chain-ids)).

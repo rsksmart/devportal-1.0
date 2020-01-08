@@ -33,7 +33,7 @@ To check if that port is already taken by other application you can follow these
 
 This will let you know which application/service is using this port.
 
-Please make sure the port of your preference is not taken by other application. If so, you need to change the node configuration [as explained here](/rsk/node/configure#setting-your-own-config-preferences), by overwriting the [peer](/rsk/node/configure#peer) port option.
+Please make sure the port of your preference is not taken by other application. If so, you need to change the node configuration [as explained here](/rsk/node/configure/#setting-your-own-config-preferences), by overwriting the [peer](/rsk/node/configure/reference/#peer) port option.
 
 > Note: we are considering the possibility of changing this port (5050) in future releases to avoid this problem.
 
@@ -85,6 +85,7 @@ module.exports = {
 The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.
 
 To enable prune service in your node [override your configuration](/rsk/node/configure). These are the recommended parameters:
+
 ```
 prune {
     # prune service could be enabled or not
@@ -113,7 +114,7 @@ prune {
 ### Can't get public IP
 
 If you get the error:
-`Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip`](/rsk/node/configure#publicip) parameter.
+`Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip`](/rsk/node/configure/reference/#publicip) parameter.
 
 To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, simply [search for it](https://www.google.com/search?q=what's+my+IP+address)).
 

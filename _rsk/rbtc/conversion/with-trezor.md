@@ -20,7 +20,7 @@ This document explains how to try the 2-way peg mechanism using Trezor. You can 
 
 ## From BTC to RBTC
 
-:exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/#locking-from-btc-to-rbtc)
+:exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-rbtc-conversion)
 
 1. Open `trezor-peg.html` in your web browser.
 2. Get your BTC Address clicking "Get BTC Address" button on the left top.
@@ -44,7 +44,7 @@ This document explains how to try the 2-way peg mechanism using Trezor. You can 
 
 ## From RBTC to BTC
 
-:exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/#releasing-from-rbtc-to-btc).
+:exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/#2-rbtc-to-btc-conversion).
 
 1. Go to "Release process" section at the bottom.
 2.  Get RSK Address clicking "Get RSK Address" button on the right top and keep it. Put this value in "From RSK Address" field.
