@@ -1,9 +1,13 @@
 title: RSK Docs
+
 description: >
   RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.
 
 collections:
   quick-start:
+    sort_by: collection_order
+    output: true
+  rsk:
     sort_by: collection_order
     output: true
 
@@ -17,12 +21,17 @@ breadcrumbs:
 permalink: pretty
 
 repository: rsksmart/rsksmart.github.io
+
 domain: developers.rsk.co
 
 highlighter: rouge
 
+github: [metadata]
+
 exclude:
   - .jekyll-cache
+  - .bundle
+  - vendor
 
 plugins:
  - jekyll-last-modified-at

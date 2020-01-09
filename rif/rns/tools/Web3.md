@@ -14,7 +14,7 @@ web3.setProvider(new web3.providers.HttpProvider(config.node))
 
 ## Registrar
 
-Instance the [Registrar contract](/rif/rns/architecture/Registrar) and the [RIF Token contract](/RIF-Token/):
+Instance the [Registrar contract](/rif/rns/architecture/Registrar) and the [RIF Token contract](/rif/token):
 
 ```js
 var registrarAbi = []
@@ -279,7 +279,7 @@ var namehash = require('eth-ens-namehash').hash
 
 > `domain` field does include _.rsk_ suffix
 
-Further reading: [RNS Registry contract](/rif/rns/architecture/Registry).
+Further reading: [RNS Registry contract](/rif/rns/architecture/registry).
 
 ### Change the resolver
 
@@ -332,4 +332,4 @@ Further reading: [`setSubnodeOwner`](/rif/rns/architecture/Deed#setsubnodeowner)
 
 ## Resolver
 
-Have a look at the [Resolve a name](/rif/rns/operation/Resolve-a-name) and [Public Resolver Contract](/rif/rns/architecture/Resolver) section for further information.
+Have a look at the [Resolve a name](/rif/rns/operations/Resolve-a-name) and [Public Resolver Contract](/rif/rns/architecture/Resolver) section for further information.

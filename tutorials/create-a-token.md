@@ -40,12 +40,12 @@ Inside the folder, we import the [libraries from OpenZeppelin](https://github.co
 
 The version 1.12.0 is what we need.
 
-**3. Install truffle-hdwallet-provider.**
+**3. Install @truffle/hdwallet-provider.**
 
->To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [truffle-hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider).(Node >= 7.6)
+>To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [@truffle/hdwallet-provider](https://github.com/trufflesuite/@truffle/hdwallet-provider).(Node >= 7.6)
 
 ```shell
-  npm install truffle-hdwallet-provider
+  npm install @truffle/hdwallet-provider
 ```
 
 **4. Initialize a Truffle project.**
@@ -102,7 +102,7 @@ In my editor,it shows like this:
 
   * 5.2.1 Open truffle-config.js file in your Truffle project and overwrite it with the following code:
     ```javascript
-      var HDWalletProvider = require('truffle-hdwallet-provider')
+      var HDWalletProvider = require('@truffle/hdwallet-provider')
       var mnemonic = 'rocket fault regular ... YOUR MNEMONIC';// 12 key words we generated before
       var publicNode = 'https://public-node.testnet.rsk.co:443';
       module.exports = {

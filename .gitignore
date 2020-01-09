@@ -2,6 +2,7 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.bundle
+vendor/bundle
 .DS_Store
 yarn.lock
-Gemfile.lock
