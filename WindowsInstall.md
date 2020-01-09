@@ -1,10 +1,34 @@
+# Windows computers instructions
+
 ## Requirements
 
-- ***Windows computers*** Requirements and install instructions [here](https://github.com/rsksmart/rsksmart.github.io/blob/master/WindowsInstall.md)
-<br/>
-- ***Ruby*** version 2.6.3, including all development headers (ruby version can be checked by running `ruby -v`)
+- ***Ruby*** - including all development headers (ruby version can be checked by running `ruby -v`)
   - [RVM](https://rvm.io/) is recommended to install and switch between multiple Ruby versions.
-- ***RubyGems*** (which you can check by running `gem -v`)
+- ***RubyGems*** - it is installed with Ruby (which you can check by running `gem -v`)
+- ***GCC and Make*** (install MSYS2 which is included with Ruby installer)
+
+
+## Installing the requirements
+
+### Ruby
+Check the correct version to install [here](https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile)<br/>
+file: https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile
+
+```ruby version
+ruby "2.6.3"
+```
+
+- Installers for windows: [https://rubyinstaller.org/](https://rubyinstaller.org/)
+
+The version 2.6.3 is not the last, so you nedd to go here to find it:
+- Old versions: [https://rubyinstaller.org/downloads/archives/](https://rubyinstaller.org/downloads/archives/)
+
+
+Aso you need to install MSYS2 which is included with Ruby installer. <br/>
+If it don´t start automatically, at the end of Ruby installer, run ‘ridk install’ to setup MSYS2 and development toolchain. <br/>
+At terminal, you need to choose option ***1***
+
+- ***RubyGems*** - it is installed with Ruby (which you can check by running `gem -v`)
 - ***GCC and Make*** (in case your system doesn’t have them installed, which you can check by running `gcc -v`,`g++ -v` and `make -v` in your system’s command line interface)
 
 
