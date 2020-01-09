@@ -7,7 +7,7 @@ source "https://rubygems.org"
 
 gem "rouge", "3.11.0"
 gem "faraday", "0.17.1"
-gem "wdm", "0.1.0" if Gem.win_platform?
+gem "wdm", "0.1.1" if Gem.win_platform?
 gem "html-proofer", "3.15.0"
 gem "rake", "13.0.1"
 
