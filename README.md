@@ -1,6 +1,6 @@
 ## Requirements
 
-- ***Windows computers*** Requirements and install instructions: [click here](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/windowsInstall.md)
+- ***Windows computers*** Requirements and install instructions: [click here](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/WindowsInstall.md)
  
  &nbsp;
 
