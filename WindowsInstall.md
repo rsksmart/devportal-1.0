@@ -6,12 +6,13 @@
   - [RVM](https://rvm.io/) is recommended to install and switch between multiple Ruby versions.
 - ***RubyGems*** - it is installed with Ruby (which you can check by running `gem -v`)
 - ***GCC and Make*** (install MSYS2 which is included with Ruby installer)
+- ***Jekyll*** (version can be checked by running `jekyll -v`)
 
 
 ## Installing the requirements
 
 ### Ruby
-Check the correct version to install [here](https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile)<br/>
+Check the correct version to install [here](https://github.com/solangegueiros/rsksmart.github.io/blob/master/Gemfile)<br/>
 file: https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile
 
 ```ruby version
@@ -24,12 +25,58 @@ The version 2.6.3 is not the last, so you nedd to go here to find it:
 - Old versions: [https://rubyinstaller.org/downloads/archives/](https://rubyinstaller.org/downloads/archives/)
 
 
-Aso you need to install MSYS2 which is included with Ruby installer. <br/>
-If it don´t start automatically, at the end of Ruby installer, run ‘ridk install’ to setup MSYS2 and development toolchain. <br/>
-At terminal, you need to choose option ***1***
+ &nbsp;
 
-- ***RubyGems*** - it is installed with Ruby (which you can check by running `gem -v`)
-- ***GCC and Make*** (in case your system doesn’t have them installed, which you can check by running `gcc -v`,`g++ -v` and `make -v` in your system’s command line interface)
+![Ruby install path](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-01.png)
+
+*Do not install in Program files, if you do it, after it not works because it do not find it.*
+
+&nbsp;
+
+![Check MSYS2](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-02.png)
+
+*You need to install MSYS2 which is included with Ruby installer.*
+
+&nbsp;
+
+![Run ridk install](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-03.png)
+
+*MSYS2 setup will run start automatically, at the end of Ruby installer.*
+
+If it don't start automatically, at the end of Ruby installer, run `ridk install` to setup MSYS2 and development toolchain. 
+
+&nbsp;
+
+At terminal, choose option **1**
+
+![At terminal, choose option **1**](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-04.png)
+
+
+&nbsp;
+
+When you finished, at terminal, you can check if all is ok:
+```shell
+ruby -v
+gem -v
+```
+
+&nbsp;
+
+### Jekyll
+
+At terminal:
+```shell
+gem install bundler jekyll
+gem -v
+```
+
+Verify your installation:
+```shell
+bundler -v
+jekyll -v
+```
+
+&nbsp;
 
 
 ## Set up
@@ -37,10 +84,13 @@ At terminal, you need to choose option ***1***
 Clone this repository, and run the following commands in its directory:
 
 ```shell
-sudo gem install bundler
-bundle update
 bundle install
 ```
+
+If you had this error:
+Your Ruby version is 2.6.5, but your Gemfile specified 2.6.3
+You must install the correct Ruby version, look [here](https://github.com/solangegueiros/test/blob/feature/WindowsSetupInstructions/windowsInstall.md#ruby).
+
 
 Verify your installation:
 
@@ -55,37 +105,17 @@ and they should all print out their version numbers.
 
 ## Usage
 
-### Production build
-
-```bash
-rake prod
-```
-
-You will now find a site ready for production in `./_site`.
-
 ### Development mode
 
 ```bash
-rake dev
+bundle exec jekyll serve
 ```
-
-You will now find a site located in `./_site`,
-and this will be served at [`https://localhost:4000/`](https://localhost:4000/).
+You will now find a site located in `./_site` .
 Each time you save a file, the site will get regenerated.
 
-### Test build outputs
+Open in the browser: [`https://localhost:4000/`](https://localhost:4000/).
 
-To run tests that check whether there are any errors in the site:
-
-```bash
-rake test
-```
-
-This run tests that check whether there are any errors in the site.
-Currently runs the following basic checks:
-
-- Detect broken links
-- Validate generated JSON file used by search
+&nbsp;
 
 ## Contributing
 
