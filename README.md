@@ -1,9 +1,14 @@
 ## Requirements
 
-- ***Ruby*** version 2.6.3 or above, including all development headers (ruby version can be checked by running `ruby -v`)
+- ***Windows computers*** Requirements and install instructions: [click here](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/WindowsInstall.md)
+ 
+ &nbsp;
+
+- ***Ruby*** version 2.6.3, including all development headers (ruby version can be checked by running `ruby -v`)
   - [RVM](https://rvm.io/) is recommended to install and switch between multiple Ruby versions.
 - ***RubyGems*** (which you can check by running `gem -v`)
 - ***GCC and Make*** (in case your system doesn’t have them installed, which you can check by running `gcc -v`,`g++ -v` and `make -v` in your system’s command line interface)
+
 
 ## Set up
 
