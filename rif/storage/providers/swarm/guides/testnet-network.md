@@ -32,7 +32,7 @@ Since the RIF Storage network is incentivized, you will need both tRIF and tRBTC
 
 Get the coins on any address via the faucets:
 - tRBTC: [faucet.rsk.co](https://faucet.rsk.co/)
-- tRIF: https://faucet.rifos.org/
+- tRIF: [faucet.rifos.org](https://faucet.rifos.org/)
 
 Make note of the address that has the coins, you need it for the next step.
 
