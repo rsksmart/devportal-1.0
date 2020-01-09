@@ -107,19 +107,6 @@ $(document).ready(function () {
     $textarea.limiter($counter);
   });
 
-  // dynamically override the content for the rewards bullet point
-  var rewardsUl = $('#rewards .rewards_list').last();
-  rewardsUl.empty();
-  [
-    'Modifying rsk nodes?',
-    'Creating a DApp on rsk?',
-    'Implementing RIFOS services?',
-    'Creating a DApp that uses RIFOS?',
-    '&hellip; if so, we would be very happy to hear about it.',
-  ].forEach(function (ulText) {
-    rewardsUl.append(`<li>${ulText}</li>`);
-  });
-
   // init for wow.js v1.1.2
   new WOW().init();
 
