@@ -101,7 +101,7 @@ button:focus {
 }
 
 #languages .dropdown-menu {
-  background: transparent;
+  background: rgba(124, 112, 112, 0.5);
   border: none;
 }
 
@@ -1398,6 +1398,8 @@ textarea[type=text]:focus {
 }
 
 @media (max-width: 991px) {
+  #languages .dropdown-menu {
+  background: transparent;}
   .ruso #home-text,
   .corean #home-text,
   .japones #home-text,
