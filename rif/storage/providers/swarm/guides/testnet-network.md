@@ -58,5 +58,3 @@ To download a file, run: `curl http://localhost:8500/bzz:/<swarm_hash_or_RNS>/<f
 #### Surprise!
 We promised you a surprise at the beginning of this tutorial... If you have come this far, please download the file with hash `9c8335dbcdadb5c853fa82177afbca3f3b26ade6763eb3c99dbfec7ad3e95823` (or RNS: `anthem.rsk`) and name `Bitcoin_Anthem_Oflow_Show.mp3`. Enjoy listening!
 [Bitcoin Anthem](https://swarm.rifgateways.org/bzz:/anthem.rsk/Bitcoin_Anthem_Oflow_Show.mp3)
-
-_Guide based on [RIF Storage testnet launch](https://hackmd.io/yZLFmgdSRDCMEpBXCiBeBA?view) by Rinke Hendriksen._
