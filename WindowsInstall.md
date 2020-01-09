@@ -12,7 +12,7 @@
 ## Installing the requirements
 
 ### Ruby
-Check the correct version to install [here](https://github.com/solangegueiros/rsksmart.github.io/blob/master/Gemfile)<br/>
+Check the correct version to install [here](https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile)<br/>
 file: https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile
 
 ```ruby version
@@ -27,19 +27,19 @@ The version 2.6.3 is not the last, so you nedd to go here to find it:
 
  &nbsp;
 
-![Ruby install path](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-01.png)
+![Ruby install path](https://github.com/rsksmart/rsksmart.github.io/blob/master/assets/img/windowsInstall/windowsInstall-01.png)
 
 *Do not install in Program files, if you do it, after it not works because it do not find it.*
 
 &nbsp;
 
-![Check MSYS2](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-02.png)
+![Check MSYS2](https://github.com/rsksmart/rsksmart.github.io/blob/master/assets/img/windowsInstall/windowsInstall-02.png)
 
 *You need to install MSYS2 which is included with Ruby installer.*
 
 &nbsp;
 
-![Run ridk install](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-03.png)
+![Run ridk install](https://github.com/rsksmart/rsksmart.github.io/blob/master/assets/img/windowsInstall/windowsInstall-03.png)
 
 *MSYS2 setup will run start automatically, at the end of Ruby installer.*
 
@@ -49,7 +49,7 @@ If it don't start automatically, at the end of Ruby installer, run `ridk install
 
 At terminal, choose option **1**
 
-![At terminal, choose option **1**](https://github.com/solangegueiros/rsksmart.github.io/blob/feature/WindowsSetupInstructions/assets/img/windowsInstall/windowsInstall-04.png)
+![At terminal, choose option **1**](https://github.com/rsksmart/rsksmart.github.io/blob/master/assets/img/windowsInstall/windowsInstall-04.png)
 
 
 &nbsp;
