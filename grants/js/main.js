@@ -45,20 +45,12 @@ $(document).ready(function () {
 
   // Header scroll class
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 10) {
-      $('.navbar').addClass('header-scrolled');
-      $('.logo').addClass('header-scrolled');
-      $('.navbar-toggler-icon').addClass('header-scrolled');
-      $('.scrollup').addClass('header-scrolled');
-      $('.dropdown-menu').addClass('header-scrolled');
-
-    } else {
-      $('.navbar').removeClass('header-scrolled');
-      $('.logo').removeClass('header-scrolled');
-      $('.navbar-toggler-icon').removeClass('header-scrolled');
-      $('.scrollup').removeClass('header-scrolled');
-      $('.dropdown-menu').removeClass('header-scrolled');
-    }
+    var isHeaderScrolled = ($(this).scrollTop() > 10);
+    $('.navbar').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.logo').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.navbar-toggler-icon').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.scrollup').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.dropdown-menu').toggleClass('header-scrolled', isHeaderScrolled);
   });
 
   // grant process
