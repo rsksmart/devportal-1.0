@@ -31,7 +31,7 @@ TLDR; RIF Storage is operating a gateway service, so you can interact with Swarm
 Since the RIF Storage network is incentivized, you will need both tRIF and tRBTC to interact with the network. tRIF to pay for your bandwidth costs in the network (the proceedings will go to the nodes hosting and forwarding the files your request) and tRBTC to pay for the transaction costs in RSK.
 
 Get the coins on any address via the faucets:
-- tRBTC: https://faucet.rsk.co/
+- tRBTC: [faucet.rsk.co](https://faucet.rsk.co/)
 - tRIF: https://faucet.rifos.org/
 
 Make note of the address that has the coins, you need it for the next step.
