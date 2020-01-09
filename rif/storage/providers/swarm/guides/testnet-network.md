@@ -19,7 +19,7 @@ TLDR; RIF Storage is operating a gateway service, so you can interact with Swarm
 - RSKj
   - Local instance of the RSKj blockchain described below
 - RNS
-  - Used as an alternative to content hashes, similar to ens but for rsk domains.
+  - Used as an alternative to content hashes, similar to ENS but for RSK domains.
 
 ### Download Swarm
 - Get the latest release of Swarm [here](https://swarm.ethereum.org/downloads) (any release above 0.5.5, checksum: 0f3debd195b01505e59d246515dd57b5). Note: edge binaries are only available for Linux.
