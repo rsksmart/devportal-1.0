@@ -87,7 +87,7 @@ Clone this repository, and run the following commands in its directory:
 bundle install
 ```
 
-If you had this error:
+If you get an error similar to this:
 Your Ruby version is 2.6.5, but your Gemfile specified 2.6.3
 You must install the correct Ruby version, look [here](https://github.com/solangegueiros/test/blob/feature/WindowsSetupInstructions/windowsInstall.md#ruby).
 
