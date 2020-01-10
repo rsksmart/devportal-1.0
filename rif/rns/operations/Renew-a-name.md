@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect: rns/rif/operations/renew
+redirect: /rif/rns/operations/renew
 ---

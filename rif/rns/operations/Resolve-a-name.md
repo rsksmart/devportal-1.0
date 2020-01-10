@@ -1,4 +1,4 @@
 ---
 layout: redirect
-redirect: rif/rns/operations/resolve
+redirect: /rif/rns/operations/resolve
 ---
