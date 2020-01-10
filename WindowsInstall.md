@@ -21,7 +21,7 @@ ruby "2.6.3"
 
 - Installers for windows: [https://rubyinstaller.org/](https://rubyinstaller.org/)
 
-The version 2.6.3 is not the last, so you nedd to go here to find it:
+The version 2.6.3 is not the latest, so you need to go here to find it:
 - Old versions: [https://rubyinstaller.org/downloads/archives/](https://rubyinstaller.org/downloads/archives/)
 
 
