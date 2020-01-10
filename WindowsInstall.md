@@ -29,7 +29,7 @@ The version 2.6.3 is not the latest, so you need to go here to find it:
 
 ![Ruby install path](https://github.com/rsksmart/rsksmart.github.io/blob/master/assets/img/windowsInstall/windowsInstall-01.png)
 
-*Do not install in Program files, if you do it, after it not works because it do not find it.*
+*Do not install in Program files, as your system will be unable to find it if you do so.*
 
 &nbsp;
 
