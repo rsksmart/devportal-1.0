@@ -3,7 +3,6 @@
 ## Requirements
 
 - ***Ruby*** - including all development headers (ruby version can be checked by running `ruby -v`)
-  - [RVM](https://rvm.io/) is recommended to install and switch between multiple Ruby versions.
 - ***RubyGems*** - it is installed with Ruby (which you can check by running `gem -v`)
 - ***GCC and Make*** (install MSYS2 which is included with Ruby installer)
 - ***Jekyll*** (version can be checked by running `jekyll -v`)
@@ -15,7 +14,7 @@
 Check the correct version to install [here](https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile)<br/>
 file: https://github.com/rsksmart/rsksmart.github.io/blob/master/Gemfile
 
-```ruby version
+```
 ruby "2.6.3"
 ```
 
@@ -23,7 +22,6 @@ ruby "2.6.3"
 
 The version 2.6.3 is not the latest, so you need to go here to find it:
 - Old versions: [https://rubyinstaller.org/downloads/archives/](https://rubyinstaller.org/downloads/archives/)
-
 
  &nbsp;
 
@@ -43,7 +41,7 @@ The version 2.6.3 is not the latest, so you need to go here to find it:
 
 *MSYS2 setup will run start automatically, at the end of Ruby installer.*
 
-If it don't start automatically, at the end of Ruby installer, run `ridk install` to setup MSYS2 and development toolchain. 
+If it doesn't start automatically, at the end of Ruby installer, run `ridk install` to setup MSYS2 and development toolchain.
 
 &nbsp;
 
@@ -51,10 +49,10 @@ At terminal, choose option **1**
 
 ![At terminal, choose option **1**](https://github.com/rsksmart/rsksmart.github.io/blob/master/assets/img/windowsInstall/windowsInstall-04.png)
 
-
 &nbsp;
 
 When you finished, at terminal, you can check if all is ok:
+
 ```shell
 ruby -v
 gem -v
@@ -65,19 +63,20 @@ gem -v
 ### Jekyll
 
 At terminal:
+
 ```shell
 gem install bundler jekyll
 gem -v
 ```
 
 Verify your installation:
+
 ```shell
 bundler -v
 jekyll -v
 ```
 
 &nbsp;
-
 
 ## Set up
 
@@ -88,9 +87,12 @@ bundle install
 ```
 
 If you get an error similar to this:
-Your Ruby version is 2.6.5, but your Gemfile specified 2.6.3
-You must install the correct Ruby version, look [here](https://github.com/solangegueiros/test/blob/feature/WindowsSetupInstructions/windowsInstall.md#ruby).
 
+```
+Your Ruby version is 2.6.5, but your Gemfile specified 2.6.3
+```
+
+You must install the correct Ruby version, look [here](https://github.com/solangegueiros/test/blob/feature/WindowsSetupInstructions/windowsInstall.md#ruby).
 
 Verify your installation:
 
@@ -102,36 +104,3 @@ bundle exec jekyll -v
 
 None of these three commands should error,
 and they should all print out their version numbers.
-
-## Usage
-
-### Development mode
-
-```bash
-bundle exec jekyll serve
-```
-You will now find a site located in `./_site` .
-Each time you save a file, the site will get regenerated.
-
-Open in the browser: [`https://localhost:4000/`](https://localhost:4000/).
-
-&nbsp;
-
-## Contributing
-
-### Issues
-
-When you open an issue, you should be given the option to choose a category.
-Choose the most appropriate one.
-
-Next, the description should be automatically populated from a template.
-Fill it in accordingly. Note that **What** and **Why** sections are compulsory, and the **Refs** section is optional.
-
-### Pull Requests
-
-When you open a pull request, the description should be automatically populated
-from a template. Fill it in accordingly. Note that **What** and **Why** sections are compulsory, and the **Refs** section is optional.
-
-Please run `rake test` to test the build output of your branch prior to
-creating a new pull request, or pushing more commits to an existing one.
-Don't introduce any regressions!
