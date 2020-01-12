@@ -23,7 +23,7 @@ Resolving a chain address (for example, a Bitcoin address) associated to a domai
 
     Use `chainAddr(bytes32,bytes4)` with the domain identifier and the [chain hexa identifier](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
 
-    > [`chainAddr(bytes32,bytes4)` spec](../specs/resolvers/chain-addr-resolver)
+    > [`chainAddr(bytes32,bytes4)` spec](/rif/rns/specs/resolvers/chain-addr-resolver)
 
 ```js
 function getAddr(domain, chain) {
