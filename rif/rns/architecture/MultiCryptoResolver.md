@@ -16,14 +16,14 @@ See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 
-- [Methods](#Methods)
+- [Methods](#methods)
     - [`content`](#content)
     - [`setContent`](#setcontent)
-    - [`chainAddr`](#chainAddr)
-    - [`setChainAddr`](#setChainAddr)
-    - [`chainMetadata`](#chainMetadata)
-    - [`setChainMetadata`](#setChainMetadata)
-    - [`setChainAddrWithMetadata`](#setChainAddrWithMetadata)
+    - [`chainAddr`](#chainaddr)
+    - [`setChainAddr`](#setchainaddr)
+    - [`chainMetadata`](#chainmetadata)
+    - [`setChainMetadata`](#setchainmetadata)
+    - [`setChainAddrWithMetadata`](#setchainaddrwithmetadata)
 - [Events](#events)
     - [`ChainAddrChanged`](#chainaddrchanged)
 
@@ -212,7 +212,7 @@ function setChainMetadata (bytes32 node, bytes4 chain, bytes32 metadataValue)
 
 #### setChainAddrWithMetadata
 
-Its a call to both methods [`setChainAddr`](#setChainAddr) and [`setChainMetadata`](#setChainMetadata)
+Its a call to both methods [`setChainAddr`](#setchainaddr) and [`setChainMetadata`](#setchainmetadata)
 **Signature**
 
 ```js

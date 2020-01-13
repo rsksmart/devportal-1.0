@@ -5,13 +5,12 @@ title: Running a local Swarm network on RSK
 
 This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`.
 
- The *Swarm Accounting Protocol* (**SWAP**) is required in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a> in Swarm. This requires chequebook Smart Contracts which keep track of the accounting done between Swarm nodes, and therefore there is need for a blockchain.
+The _Swarm Accounting Protocol_ (**SWAP**) is required in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a> in Swarm. This requires chequebook Smart Contracts which keep track of the accounting done between Swarm nodes, and therefore there is need for a blockchain.
 
-If you need these nodes to run without incentivization, please refer to the much simpler <a href="/rif/storage/providers/swarm/guides/standard/">Standard version</a> of this guide.
-
-This guide uses a local RSK network. If you want to use Ganache instead, follow the instructions <a href="/rif/storage/providers/swarm/guides/backup/on-ganache/">here</a>.
+If you need these nodes to run without incentivization, please refer to the much simpler <a href="/rif/storage/providers/swarm/guides/local-network/">Standard version</a> of this guide.
 
 ## Table of Contents
+
 1. [Requirements](#requirements)
 2. [Run the network](#run-the-network)
 3. [Interact with the network](#interact-with-the-network)
@@ -19,7 +18,7 @@ This guide uses a local RSK network. If you want to use Ganache instead, follow 
 5. [Add more nodes to the network](#add-more-nodes-to-the-network)
 6. [Known issues](#known-issues)
 
-------
+---
 
 # Requirements
 
@@ -28,6 +27,7 @@ This guide uses a local RSK network. If you want to use Ganache instead, follow 
 [RSKj](https://github.com/rsksmart/rskj) will be the node used to start the local RSK blockchain.
 
 Download it from:
+
 - [Google Drive](https://drive.google.com/open?id=1zdYpL6kFaOtyZjhbssWkNbYzdQwBA36j)
 - [Swarm](https://swarm-gateways.net/bzz:/52d5a1a3a18cbb2b163288554159eabb2c1a531883df23fba5ce329a18285279) (make sure to rename the downloaded file to `rskj-core-unformatted-log-all.jar`)
 
@@ -37,7 +37,7 @@ Download it from:
 
 If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
 
-------
+---
 
 # Run the Network
 
@@ -108,6 +108,7 @@ swarm --bzznetworkid 5 --datadir "$DATADIR2" --port 40400 --swap --swap-backend-
 This will populate the directories with all of the files needed for each of the Swarm nodes.
 
 Note that:
+
 - The node accounts will already be pre-funded in Ganache; this is achieved through the use of a specific seed and hard-coded node keys.
 - The Swarm network id `5` must be used for incentives to be enabled. This value can be verified by inspecting the `AllowedNetworkID` variable set in the [codebase](https://github.com/ethersphere/swarm).
 - Sync is disabled by default in order to be able to [trigger a cheque manually](#trigger-cheques) later.
@@ -115,7 +116,7 @@ Note that:
 - The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
 - Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The APIs enabled in this case are `accounting`, `bzz`, and `swap`. You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
 
-------
+---
 
 # Interact with the Network
 
@@ -168,30 +169,32 @@ swarm --bzzapi http://localhost:8500 down \
 ```
 
 If this doesn't work, check that:
+
 - The endpoints (specified in `bzzapi`) match the parameters for starting the nodes.
 - The size of the file is enough to trigger a cheque to be sent. This can be verified through the value of the `SwapPaymentThreshold` variable set in the [codebase](https://github.com/ethersphere/swarm).
 
-------
+---
 
 # Restart the Network
 
 If you want to start from scratch, simply execute the entire code again.
 
-If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#3-start-the-nodes).
+If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [Start the nodes section](#2-start-the-nodes).
 
-------
+---
 
 # Add more nodes to the network
 
 To start up more Swarm nodes, repeat the previous instructions with as many directories (`./s1`, `./s2`, `./s3`, ..., `./sn`) as you wish.
 
 Make sure that:
+
 - You use different ports for each node.
 - All nodes except the first one have the same `bootnodes` parameter value.
 - Nodes use node IDs (`bzzkeyhex`) which are prefunded by the Ganache seed.
   - Alternatively, use node IDs outside of this seed to see how nodes without funding behave in an incentivized network.
 
-------
+---
 
 # Known issues
 
@@ -236,6 +239,6 @@ curl -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","metho
 
 It is unknown if this problem is due to SWAP or the RSK node.
 
-------
+---
 
 _Guide based on [Swap RSK Guide](https://hackmd.io/ijxzDYaySrqZ06LsR36OsA?view) by Ralph Pichler._
