@@ -37,7 +37,11 @@ Get the coins on any address via the faucets:
 Make note of the address that has the coins, you need it for the next step.
 
 ### Start the RSKj deamon
-To interact with Swarm, you need a connection to a blockchain backend. Please head to the [RSKj WIKI](https://github.com/rsksmart/rskj/wiki) and follow the steps to install, compile and run an RSK node locally. Be sure to switch to the RSK TestNet (instructions to switch [here](https://github.com/rsksmart/rskj/wiki/Switching-networks)).
+To interact with Swarm, you need a connection to a blockchain backend.  
+
+- Use the public node of rsk
+- Run your own RSKj Node
+Please head to the [RSKj WIKI](https://github.com/rsksmart/rskj/wiki) and follow the steps to install, compile and run an RSK node locally. Be sure to switch to the RSK TestNet (instructions to switch [here](https://github.com/rsksmart/rskj/wiki/Switching-networks)).
 
 It will take some time for your node to synchronize with the network (+- 8 hours). You can verify that you are synched by requesting the current blockheight of your node:
 `curl -H"Content-type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' 127.0.0.1:4444` and comparing the answer to the blockheight mentioned at the [official explorer](https://explorer.testnet.rsk.co/).
