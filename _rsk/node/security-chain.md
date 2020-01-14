@@ -2,7 +2,7 @@
 layout: rsk
 title: Ensure security chain of RskJ source code
 collection_order: 2500
-permalink: /rsk/node/contribute/security-chain/
+permalink: /rsk/node/security-chain/
 ---
 
 # Verify authenticity of RskJ source code and its binary dependencies
