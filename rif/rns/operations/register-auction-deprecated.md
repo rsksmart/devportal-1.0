@@ -10,7 +10,7 @@ title: Register a domain - Deprecated
 The process consists of two main phases:
 
 1. [The auction phase](#the-auction-phase)
-2. [The annual rent payment](#the-storage-rent-payment)
+2. [The annual rent payment](#rent-payment)
 
 <img src="/assets/img/rns/phases.png" class="img-fluid" alt="phases" />
 

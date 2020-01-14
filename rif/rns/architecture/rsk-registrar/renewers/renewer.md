@@ -58,7 +58,7 @@ Encoding:
 | duration   | 32 bytes      |  4 bytes |
 | name       | variable size | 36 bytes |
 
-Parameters are used in the same manner as [`register`](#register). Use `0xc2c414c8` as the signature.
+Parameters are used in the same manner as [`register`](/rif/rns/architecture/rsk-registrar/registrars/fifs#register). Use `0xc2c414c8` as the signature.
 
 ---
 

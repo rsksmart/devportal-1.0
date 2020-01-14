@@ -3,7 +3,7 @@ layout: rsk
 title: RNS Specs - Registry
 ---
 
-The registry contract provides a simple mapping between a domain and its resolver. Everything related to domain ownership is managed in this contract, including ownership transfer and sub-domain creation. Each registry entry refers to a resolver which handles the [resolution](resolvers) between the name domain and the desired resource.
+The registry contract provides a simple mapping between a domain and its resolver. Everything related to domain ownership is managed in this contract, including ownership transfer and sub-domain creation. Each registry entry refers to a resolver which handles the [resolution](/rif/rns/specs/resolvers) between the name domain and the desired resource.
 
 The RNS Registry contract exposes functions for accessing data and functions to modify data:
 

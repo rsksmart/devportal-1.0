@@ -45,18 +45,12 @@ $(document).ready(function () {
 
   // Header scroll class
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 10) {
-      $('.navbar').addClass('header-scrolled');
-      $('.logo').addClass('header-scrolled');
-      $('.navbar-toggler-icon').addClass('header-scrolled');
-      $('.scrollup').addClass('header-scrolled');
-
-    } else {
-      $('.navbar').removeClass('header-scrolled');
-      $('.logo').removeClass('header-scrolled');
-      $('.navbar-toggler-icon').removeClass('header-scrolled');
-      $('.scrollup').removeClass('header-scrolled');
-    }
+    var isHeaderScrolled = ($(this).scrollTop() > 10);
+    $('.navbar').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.logo').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.navbar-toggler-icon').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.scrollup').toggleClass('header-scrolled', isHeaderScrolled);
+    $('.dropdown-menu').toggleClass('header-scrolled', isHeaderScrolled);
   });
 
   // grant process
@@ -111,19 +105,6 @@ $(document).ready(function () {
     var $textarea = $(this).find('.textarea');
     var $counter = $(this).find('.counter');
     $textarea.limiter($counter);
-  });
-
-  // dynamically override the content for the rewards bullet point
-  var rewardsUl = $('#rewards .rewards_list').last();
-  rewardsUl.empty();
-  [
-    'Modifying rsk nodes?',
-    'Creating a DApp on rsk?',
-    'Implementing RIFOS services?',
-    'Creating a DApp that uses RIFOS?',
-    '&hellip; if so, we would be very happy to hear about it.',
-  ].forEach(function (ulText) {
-    rewardsUl.append(`<li>${ulText}</li>`);
   });
 
   // init for wow.js v1.1.2
