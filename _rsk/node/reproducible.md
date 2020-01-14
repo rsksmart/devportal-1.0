@@ -2,7 +2,7 @@
 layout: rsk
 title: Reproducible Build
 collection_order: 2500
-permalink: /rsk/node/contribute/reproducible/
+permalink: /rsk/node/reproducible/
 ---
 
 Gradle building
@@ -46,7 +46,7 @@ RUN apt-get update -y && \
     apt-get clean	
 RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4	
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4	
-RUN git clone --single-branch --depth 1 --branch WASABI-1.1.0 https://github.com/rsksmart/rskj.git /code/rskj	
+RUN git clone --single-branch --depth 1 --branch WASABI-1.2.0 https://github.com/rsksmart/rskj.git /code/rskj	
 WORKDIR /code/rskj	
 RUN gpg --verify SHA256SUMS.asc	
 RUN sha256sum --check SHA256SUMS.asc	
@@ -63,7 +63,7 @@ Run build
 To create a reproducible build, run:	
 
 ```bash	
-sudo docker build -t rskj-wasabi-1.1.0-reproducible .	
+sudo docker build -t rskj-wasabi-1.2.0-reproducible .	
 ```	
 
 This may take several minutes to complete. What is done is:	
@@ -76,7 +76,7 @@ This may take several minutes to complete. What is done is:
 To obtain SHA-256 checksums, run the following command:	
 
 ```bash	
-sudo docker run --rm rskj-wasabi-1.1.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI-all.jar /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI.jar /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI.pom	
+sudo docker run --rm rskj-wasabi-1.2.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI-all.jar /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI.jar /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI.pom	
 ```	
 
 Check Results	
@@ -85,10 +85,10 @@ After running the build process, a JAR file will be created in ```/code/rskj-cor
 
 You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.	
 ```bash	
-20a82720dd39864ae3603b7eb777ed454e4577c7d984b9560017fc4ddd820924 /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI-all.jar	
-0f76a447ecdf7a78c990293a90388c3a316996e66ecc670bb59a0ece3d237dcc /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI-sources.jar	
-d233feac37d6e5daca2ffa78d4ece4a3e00fe9ebbca00d0fdf862addc5564fcf /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI.jar	
-1aa633056a24056d0e50d310d1b000595205b46d1a449d63c1cf6381b9257960 /code/rskj/rskj-core/build/libs/rskj-core-1.1.0-WASABI.pom	
+e3901dd011ee798559ee965186a4a54fdb2233acfd73bbe2e3164f66d821e661  rskj-core/build/libs/rskj-core-1.2.0-WASABI-all.jar
+7176ab053ca10479095c66415807a29b801f2004505ae7b6fde1fb212802cfac  rskj-core/build/libs/rskj-core-1.2.0-WASABI-sources.jar
+0093793bbbcaf3ed9c5dead91b7dd5f36305a9d8f65413f7f03cdb995b9330ce  rskj-core/build/libs/rskj-core-1.2.0-WASABI.jar
+cd4b595eaa5b6f60de6e9fd368e37bc09bec20f2dec572849d7fed53ae7ca390  rskj-core/build/libs/rskj-core-1.2.0-WASABI.pom
 ```	
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).	
