@@ -52,10 +52,8 @@ end
 desc "check if built html is ok, note that this is slow"
 task :test_html_proofer => [:build_for_test] do |task|
   puts "rake> " + task.name + ": " + task.comment
-  options = {
-    # run checks in parallel to speed up tests
-    :parallel => { :in_processes => 8 },
 
+  options = {
     # check external links no more often than this
     # disabled because of "ArgumentError: invalid byte sequence in UTF-8"
     # :cache => { :timeframe => "1w" },
@@ -79,6 +77,14 @@ task :test_html_proofer => [:build_for_test] do |task|
     # thus override this check
     :url_ignore => [/^mailto:\?subject=/]
   }
+  unless Gem.win_platform?
+    # Process.fork is not suppported on some windows Rubies
+    options.merge!({
+      # run checks in parallel to speed up tests
+      :parallel => { :in_processes => 8 },
+    })
+  end
+
   HTMLProofer.check_directory("./_site", options).run
   puts "rake> " + task.name + ": OK!"
 end
