@@ -29,7 +29,7 @@ BytesUtils: [0x7faf084ef72cb71f3383a5c568c70853ac4c298e](https://explorer.testne
 
 ReverseRegistrar:[0xc1cb803d5169e0a9894bf0f8dcdf83090999842a](https://explorer.testnet.rsk.co/address/0xc1cb803d5169e0a9894bf0f8dcdf83090999842a)
 
-NameResolver: [0x7d284aaac6e925aad802a53c0c69efe3764597b8](https://explorer.testnet.rsk.co/address/0x7d284aaac6e925aad802a53c0c69efe3764597b8)
+NameResolver: [0x8587385ad60038bB181aFfDF687c4D1B80C4787e](https://explorer.testnet.rsk.co/address/0x8587385ad60038bB181aFfDF687c4D1B80C4787e)
 
 ### RSK Registrar legacy
 
