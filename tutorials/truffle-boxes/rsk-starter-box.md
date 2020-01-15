@@ -38,7 +38,7 @@ First ensure you are in a new and empty directory.
 
 **NOTE**: This box is not a complete dapp.
 
-##RSK
+## RSK
 
 ### Setup an account & Get RBTC
 
