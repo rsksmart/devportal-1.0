@@ -21,7 +21,7 @@
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
       "head": "refs/heads/master",
-      "commit": null,
+      "commit": "8a7a224860d7e6f5d17cd9f9cfee1cc4bf29b80c",
       "commands": [
         {
           "name": "copySingle",
