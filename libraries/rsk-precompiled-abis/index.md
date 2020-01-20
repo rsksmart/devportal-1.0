@@ -4,7 +4,7 @@ title: RSK Pre-compiled ABIs
 tags: [libraries, abi, pre-compiled]
 ---
 
-<img src="/RSK_Logo_RGB_300dpi.png" alt="logo" height="200" />
+<img src="./RSK_Logo_RGB_300dpi.png" alt="logo" height="200" />
 
 # Welcome to the pre-compiled ABIs from RSK repository.
 

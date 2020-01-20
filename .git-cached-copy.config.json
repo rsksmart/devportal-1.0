@@ -21,17 +21,21 @@
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
       "head": "refs/heads/master",
-      "commit": "8a7a224860d7e6f5d17cd9f9cfee1cc4bf29b80c",
+      "commit": "bcdd0f37a19a222b90eff57e94e3d8bf16f0937f",
       "commands": [
         {
           "name": "copySingle",
           "remoteFilePath": "readme.md",
-          "localFilePath": "libraries/rsk-precompiled-abis.md",
+          "localFilePath": "libraries/rsk-precompiled-abis/index.md",
           "localPreserveFrontMatter": true,
           "remotePreserveFrontMatter": false
+        },
+        {
+          "name": "copySingleAsStream",
+          "remoteFilePath": "RSK_Logo_RGB_300dpi.png",
+          "localFilePath": "libraries/rsk-precompiled-abis/RSK_Logo_RGB_300dpi.png"
         }
-      ],
-      "remoteCommit": "8a7a224860d7e6f5d17cd9f9cfee1cc4bf29b80c"
+      ]
     }
   ]
 }
