@@ -10,9 +10,28 @@
         {
           "name": "copySingle",
           "remoteFilePath": "README.md",
-          "localFilePath": "tutorials/truffle-boxes/rsk-starter-box.md"
+          "localFilePath": "tutorials/truffle-boxes/rsk-starter-box.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
         }
       ]
+    },
+    {
+      "id": "rsk-precompiled-abis",
+      "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
+      "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
+      "head": "refs/heads/master",
+      "commit": null,
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "readme.md",
+          "localFilePath": "libraries/rsk-precompiled-abis.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ],
+      "remoteCommit": "8a7a224860d7e6f5d17cd9f9cfee1cc4bf29b80c"
     }
   ]
 }
