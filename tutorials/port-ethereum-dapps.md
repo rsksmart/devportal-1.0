@@ -7,7 +7,7 @@ title: Port Ethereum dApps
 
 Smart contracts for RSK are written using Solidity (a Javascript like programming language) and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK Smart without doing any changes.
 
-#### Sodility and Editor
+#### Solidity and Editor
 
 If you are new to Solidity, you can learn through a good introduction at [Solidity docs](https://solidity.readthedocs.io/en/v0.5.11/).
 
