@@ -10,7 +10,30 @@
         {
           "name": "copySingle",
           "remoteFilePath": "README.md",
-          "localFilePath": "tutorials/truffle-boxes/rsk-starter-box.md"
+          "localFilePath": "tutorials/truffle-boxes/rsk-starter-box.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },
+    {
+      "id": "rsk-precompiled-abis",
+      "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
+      "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
+      "head": "refs/heads/master",
+      "commit": "bcdd0f37a19a222b90eff57e94e3d8bf16f0937f",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "readme.md",
+          "localFilePath": "libraries/rsk-precompiled-abis/index.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        },
+        {
+          "name": "copySingleAsStream",
+          "remoteFilePath": "RSK_Logo_RGB_300dpi.png",
+          "localFilePath": "libraries/rsk-precompiled-abis/RSK_Logo_RGB_300dpi.png"
         }
       ]
     }
