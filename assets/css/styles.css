@@ -249,7 +249,7 @@ a:not([href]):not([tabindex]) {
 
 .menu-container a.index {
 	font-family: 'Quicksand', sans-serif!important;
-	color:#CCCCCC!important;
+	color:#009DC3!important;
 	font-weight:bold!important;
 	padding: 0 0 10px 0;
 	font-size:15px;
