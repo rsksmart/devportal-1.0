@@ -32,6 +32,7 @@ exclude:
   - .jekyll-cache
   - .bundle
   - vendor
+  - assets/img/windowsInstall/
 
 plugins:
  - jekyll-last-modified-at

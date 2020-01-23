@@ -7,17 +7,17 @@ This guide sets up 2 Swarm nodes in a local private network. Each of the nodes i
 
 Swarm can be run without a blockchain, since each node—with the help of the bootnodes—will form a network with its peers through [Kademlia](https://en.wikipedia.org/wiki/Kademlia).
 
-It is through the *Swarm Accounting Protocol* (**SWAP**) that Smart Contracts come into play in Swarm, in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a>.
+It is through the _Swarm Accounting Protocol_ (**SWAP**) that Smart Contracts come into play in Swarm, in order to form an <a href="/rif/storage/providers/swarm/incentives/">incentivized network</a>.
 
-If you need these nodes to run with incentivization, please refer to the incentivized versions of this guide (<a href="/rif/storage/providers/swarm/guides/backup/on-ganache/">for Ganache</a>, or <a href="/rif/storage/providers/swarm/guides/local-network-incentives/">for RSK</a>).
+If you need these nodes to run with incentivization, please refer to the <a href="/rif/storage/providers/swarm/guides/local-network-incentives/"> incentivized version</a> of this guide.
 
 ## Table of Contents
+
 1. [Requirements](#requirements)
 2. [Run the network](#run-the-network)
 3. [Interact with the network](#interact-with-the-network)
 4. [Restart the network](#restart-the-network)
 5. [Add more nodes to the network](#add-more-nodes-to-the-network)
-
 
 ## Requirements
 
@@ -26,7 +26,6 @@ If you need these nodes to run with incentivization, please refer to the incenti
 `websocat` is a command-line web socket client, used to query the nodes running in the private network.
 
 If you plan to [query the nodes](#query-the-nodes), follow the instructions [here](https://github.com/vi/websocat/) to install it.
-
 
 ## Run the network
 
@@ -57,10 +56,10 @@ swarm --datadir "$DATADIR2" --port 40400 --bzzport 9100 --bootnodes "enode://9b7
 This will populate the directories with all of the files needed for each of the Swarm nodes.
 
 Note that:
+
 - A private key is specified in the first node so that the second one can find it through the `bootnodes` parameter.
 - The first node uses default values for parameters such as ports, but the second one needs them explicitely specified to avoid clashes.
 - Both nodes have web socket endpoints enabled through the `ws` (and related) parameters. The only API enabled in this case is `bzz`, but others can be added at discretion (e.g. `swap`, `pss`, etc.). You can omit this parameter if you don't plan to [query the nodes](#query-the-nodes).
-
 
 ## Interact with the network
 
@@ -98,23 +97,21 @@ By using the `swarm` binary you can execute operations in the standard manner, s
 
 You can find a list of commands [here](https://swarm-guide.readthedocs.io/en/latest/dapp_developer/upload_cli.html#reference-table).
 
-
 ## Restart the network
 
 If you want to start from scratch, simply execute the entire code again.
 
 If you want the to maintain state when restarting the network, only repeat the `swarm` command for each node (make sure the `DATADIR` variables are defined) found in the [start the nodes](#run-the-network) section.
 
-
 ## Add more nodes to the network
 
 To start up more Swarm nodes, repeat the previous instructions with as many directories (`./s1`, `./s2`, `./s3`, ..., `./sn`) as you wish.
 
 Make sure that:
+
 - You use different ports for each node.
 - All nodes except the first one have the same `bootnodes` parameter value.
 - Nodes use node IDs (`bzzkeyhex`) which are prefunded by the Ganache seed.
   - Alternatively, use node IDs outside of this seed to see how nodes without funding behave in an incentivized network.
-
 
 _Guide based on [Swap Test Guide](https://hackmd.io/yZLFmgdSRDCMEpBXCiBeBA?view) by Ralph Pichler._

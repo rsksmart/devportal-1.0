@@ -5,9 +5,19 @@ title: Libs
 
 ## RSK Libraries
 
+- [RSK Pre-compiled ABIs](/libraries/rsk-precompiled-abis/)
+
+## RSK Libraries - External
+
+### Javascript
 - [Web3js](https://web3js.readthedocs.io/)
-- [Nethereum](https://nethereum.com/)
+
+### Python
 - [Web3py](https://web3py.readthedocs.io/)
+- [ethlite](https://github.com/emilianobilli/ethlite)
+
+### .NET
+- [Nethereum](https://nethereum.com/)
 
 ## RIF Libraries
 
