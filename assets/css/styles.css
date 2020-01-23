@@ -1260,7 +1260,7 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .the-stack .bitcoin .col {
-	background: #FF9900;
+	background: #FF9900!important;
 }
 .the-stack .bitcoin .col a {
 	color: white!important;
