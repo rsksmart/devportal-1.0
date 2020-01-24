@@ -127,9 +127,20 @@ The Developer Portal is the home for RSK documentation for end users and develop
 
 ## Quick Links
 
-- Mainnet:
-  [Explorer](https://explorer.rsk.co/),
-  [stats](https://stats.rsk.co/)
-- Testnet:
-  [Explorer](https://explorer.testnet.rsk.co/),
-  [stats](https://stats.testnet.rsk.co/)
+<ul>
+  <li>Mainnet:
+    <a href="https://explorer.rsk.co/" target="_blank">Explorer</a>,
+    <a href="https://stats.rsk.co/" target="_blank">Stats</a>
+  </li>
+  <li>Testnet:
+    <a href="https://explorer.testnet.rsk.co/" target="_blank">Explorer</a>,
+    <a href="https://stats.testnet.rsk.co/" target="_blank">Stats</a>
+   </li>
+</ul>
+
+## Search
+
+<form id="quick-search" action="/search/" method="GET">
+    <input type="search" class="search-input" type="text" id="q" name="q" placeholder="Search" />
+    <input type="hidden" id="from" name="from" value="">
+</form>

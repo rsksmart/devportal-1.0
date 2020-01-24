@@ -249,14 +249,15 @@ a:not([href]):not([tabindex]) {
 
 .menu-container a.index {
 	font-family: 'Quicksand', sans-serif!important;
-	color:#CCCCCC!important;
+	color:#009DC3!important;
 	font-weight:bold!important;
 	padding: 0 0 10px 0;
 	font-size:15px;
 }
 
 .toggle-nav-column-visibility {
-	padding: 0 0 30px 0;
+	margin: 0 0 30px 0;
+	cursor: pointer;
 }
 
 .menu-container > div > a:hover {
@@ -1260,7 +1261,7 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 }
 
 .the-stack .bitcoin .col {
-	background: #FF9900;
+	background: #FF9900!important;
 }
 .the-stack .bitcoin .col a {
 	color: white!important;
