@@ -133,3 +133,10 @@ The Developer Portal is the home for RSK documentation for end users and develop
 - Testnet:
   [Explorer](https://explorer.testnet.rsk.co/),
   [stats](https://stats.testnet.rsk.co/)
+
+## Search
+
+<form id="quick-search" action="/search/" method="GET">
+    <input type="search" class="search-input" type="text" id="q" name="q" placeholder="Search" />
+    <input type="hidden" id="from" name="from" value="">
+</form>

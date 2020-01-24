@@ -1,6 +1,9 @@
 <div class="row header-inner">
     <div class="col-lg-3">
-       <!--<input class="search-input" type="text" placeholder="Search" />-->
+      <form id="quick-search" action="/search/" method="GET">
+         <input type="search" class="search-input" type="text" id="q" name="q" placeholder="Search" />
+         <input type="hidden" id="from" name="from" value="">
+      </form>
 
        <!-- mobile dropdown left column -->
        <div class="mobile-left-menu">
