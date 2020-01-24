@@ -81,6 +81,23 @@ Tips:
   ensure that you set a `permalink` attribute in the front matter,
   with a trailing `/`.
 
+### Replicating existing documentation
+
+This applies for you have documentation in other git repositories
+which need to be replicated here.
+This is expected to be used sparingly, only for libraries with existing documentation.
+
+Steps:
+
+1. Create a markdown file which contains **only** front matter.
+2. Edit `/.git-cached-copy.config.json` to specify the details of files from other git repositories should be copied.
+
+Tips:
+
+- Test the build output to ensure that the following common errors are fixed
+  - Hyperlinks to anchors by ID attribute are correct
+  - Referenced image files are also copied
+
 ### Issues
 
 When you open an issue, you should be given the option to choose a category.
