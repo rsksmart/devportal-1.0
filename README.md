@@ -98,6 +98,36 @@ Tips:
   - Hyperlinks to anchors by ID attribute are correct
   - Referenced image files are also copied
 
+### Findability
+
+When you add new documentation, you should check that a visitor
+is able to find it through *both* the navigation bar,
+and the search functionality.
+
+#### Navigation menu
+
+- Edit the navigation menu component: `/_includes/nav-page-menu.html`
+- Ensure that every new page that you have added has a link in here
+- If your new pages are within a collection
+ - The reader may use "previous" and "next" links to go through the pages in a sequence
+  - Ensure that all pages within the collection have a **unique** value for `collection_order` in their front matter - use positive whole numbers only
+  - Ensure that the sequence is in a correct order - it starts from lowest `collection_order` and ends at highest `collection_order`
+  - Look at `_quick-start/*.md` for a good example of this
+
+#### Search results
+
+- A reader may find your new pages through the search feature available at `/search/index.html`
+- To maximise the quality of the search results, ensure that you add all of the following to the front matter for each new page
+  - `title`:
+    This is the title of the page which is also displayed to the reader.
+    Avoid using special characters, unicode characters, or emoji,
+    as readers are less likely to use these in search.
+  - `tags`:
+    Use this to set the categories, labels, or other keywords which you think a reader would search for when looking for this page.
+  - `description`:
+    If this is not present, it defaults to the first 200 words in the content.
+    It is a good idea to set this to include any words or phrases which you think a reader would search for when looking for this page.
+
 ### Issues
 
 When you open an issue, you should be given the option to choose a category.
