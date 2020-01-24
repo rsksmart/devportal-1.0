@@ -1,7 +1,7 @@
 ## Requirements
 
 - ***Windows computers*** Requirements and install instructions: [click here](https://github.com/rsksmart/rsksmart.github.io/blob/master/WindowsInstall.md)
- 
+
  &nbsp;
 
 - ***Ruby*** version 2.6.3, including all development headers (ruby version can be checked by running `ruby -v`)
@@ -66,6 +66,20 @@ Currently runs the following basic checks:
 - Validate generated JSON file used by search
 
 ## Contributing
+
+### Writing original documentation
+
+Steps:
+
+1. Create a markdown file in the appropriate folder.
+
+Tips:
+
+- Add `title`, `tags`, `description`, and `collection_order` attributes
+  to the front matter as appropriate - see below for more details.
+- If the new page is within a collection, and it is named `index.md`,
+  ensure that you set a `permalink` attribute in the front matter,
+  with a trailing `/`.
 
 ### Issues
 
