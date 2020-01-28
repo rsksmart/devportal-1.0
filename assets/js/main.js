@@ -131,6 +131,9 @@ function setUpMainSearch () {
   }
   const searchInput = document.getElementById('search-input');
   const resultsContainer = document.getElementById('results-container');
+  const searchResultTemplate = `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`
+  //const searchResultTemplate = '<a href="{url}" title="{desc}">  <h2 class="archive__item-title" itemprop="headline">{title}<\/h2>  <p class="archive__item-excerpt" itemprop="description">{desc}<\/p><\/a>'
+  
 
   $.getJSON('/search/search.json', function (searchJson) {
     // defer initialisation of search feature until *after*
@@ -143,6 +146,34 @@ function setUpMainSearch () {
       json: searchJson,
       limit: 15,
       fuzzy: true,
+      searchResultTemplate,
+      templateMiddleware: (prop, text, template) => {
+        if (prop == 'desc') {
+          const truncate = (str, no_words) => str.split(" ").splice(0,no_words).join(" ");
+          const searchInputValue = searchInput.value.toLowerCase();
+          const regexp = new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
+          const decodedText = decodeURIComponent(text);
+          
+          const result = [...decodedText.matchAll(regexp)];
+          
+          if(!result || result == null || result.length < 1)
+             return ""
+          
+          const resultString = truncate(result[0][0], 20); //only show the first result
+          const otherResults = `<div class="row pt-0 pl-3" style="font-style: italic;">Other results found</div>`;
+          const parsedResult = `<div class="row"><div class="col p-0">${result[0].length == 1 ? resultString : resultString + otherResults}</div></div>`
+          
+          console.log(parsedResult)
+
+          return parsedResult;
+        } else if(prop == 'tags') {
+          const tags = text.split(', ');
+          const badges = tags.map(tag => `<a href="${`?q=${tag}&from=%2Fsearch%2F`}"><span class="badge badge-secondary p-1">${tag}</span><a/>`);
+          const parsedTags = `<div class="row">${badges.reduce((a,b) => a + b)}<div>`
+
+          return parsedTags
+        }
+      }
     });
     try {
       // if quick search has been used, use query parameters in URL to
