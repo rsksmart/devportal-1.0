@@ -7,11 +7,12 @@ tags: [rif, rns, testnet]
 ## Registartion flow
 
 1. Download a browser wallet. Recommended: [Nifty Wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid)
-2. Connect wallet to RSK Testnet. Do it with the top left selector on Nifty Wallet.
+2. Connect your wallet to RSK Testnet. You can do it with the top left selector on Nifty Wallet.
 3. (optional) List tRIF token using this address: 0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE. Add it in Tokens tab on Nifty Wallet.
 4. Browse to [RSK faucet](https://faucet.testnet.rsk.co) to get some gas.
 5. Browse to [tRIF faucet](https://faucet.rifos.org) to get some test RIF tokens.
-5. Browse to [RNS Testnet Manager](https://testnet.manager.rifos.org) and search for your desired domain!
+6. Browse to [RNS Testnet Manager](https://testnet.manager.rifos.org) and search for your desired domain.
+7. Follow the registration process.
 
 ## Smart contracts
 
