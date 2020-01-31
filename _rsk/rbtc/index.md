@@ -5,15 +5,79 @@ collection_order: 3000
 permalink: /rsk/rbtc/
 ---
 
-The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [2-way peg](/rsk/architecture/2-way-peg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/).
+The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [2-way peg](/rsk/architecture/2-way-peg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
 
-- Name: Smart Bitcoin
-- Ticker name: [RBTC](https://coinmarketcap.com/currencies/rsk-smart-bitcoin/)
-- Total supply: 21,000,000 RBTC (fixed)
-- Circulating supply: [Bridge contract](https://explorer.rsk.co/address/0x0000000000000000000000000000000001000006)
-- Logo: [RBTC-logo.png](/assets/img/rsk/RBTC-logo.png)
+## RBTC (Smart Bitcoin in Mainnet)
 
-<img src="/assets/img/rsk/RBTC-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
+<table class="table">
+  <tbody>
+    <tr>
+      <td scope="row">Token Name</td>
+      <td><a href="https://coinmarketcap.com/currencies/rsk-smart-bitcoin/" target="_blank">RBTC</a></td>
+    </tr>
+    <tr>
+      <td scope="row">Total Supply</td>
+      <td>21,000,000 RBTC</td>
+    </tr>
+    <tr>
+      <td scope="row">Circulating supply</td>
+      <td><a href="https://backend.explorer.rsk.co/circulating/circulatingSupply" target="_blank">API</a></td>
+    </tr>
+    <tr>
+      <td scope="row">Contract Type</td>
+      <td>Native (<a href="https://explorer.rsk.co/address/0x0000000000000000000000000000000001000006" target="_blank">Bridge contract</a>)</td>
+    </tr>
+    <tr>
+      <td scope="row">How to get</td>
+      <td>
+        <ul>
+            <li><a href="#exchanges" target="_blank">Exchanges</a></li>
+            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Logo</td>
+      <td>
+        <img src="/assets/img/rsk/RBTC-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
+        <a href="/assets/img/rsk/RBTC-logo.png" target="_blank">RBTC-logo.png</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## tRBTC (Smart Bitcoin in Testnet)
+
+<table class="table">
+  <tbody>
+    <tr>
+      <td scope="row">Token Name</td>
+      <td>tRBTC</td>
+    </tr>
+    <tr>
+      <td scope="row">Total Supply</td>
+      <td>21,000,000 tRBTC</td>
+    </tr>
+    <tr>
+      <td scope="row">Circulating supply</td>
+      <td><a href="https://backend.explorer.testnet.rsk.co/circulating/circulatingSupply" target="_blank">API</a></td>
+    </tr>
+    <tr>
+      <td scope="row">Contract Type</td>
+      <td>Native (<a href="https://explorer.testnet.rsk.co/address/0x0000000000000000000000000000000001000006" target="_blank">Bridge contract</a>)</td>
+    </tr>
+    <tr>
+      <td scope="row">How to get</td>
+      <td>
+        <ul>
+            <li><a href="https://faucet.rsk.co" target="_blank">Faucet</a></li>
+            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 
 ## Exchanges
 

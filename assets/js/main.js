@@ -1,3 +1,7 @@
+$(document).ready(function () {
+  setUpQuickSearch();
+  setUpMainSearch();
+});
 // add active class to a in inner nav based on url
 $(function () {
   var pageUrl = location.href;
@@ -112,4 +116,47 @@ function toggleNavColumnVisibility (e) {
   });
 
   return false;
+}
+
+// search
+function setUpQuickSearch () {
+  // quick search is available on all pages
+  $('form#quick-search input#from').val(window.location.pathname);
+}
+
+function setUpMainSearch () {
+  if (document.location.pathname.indexOf('/search/') !== 0) {
+    // only relevant on the search page
+    return;
+  }
+  const searchInput = document.getElementById('search-input');
+  const resultsContainer = document.getElementById('results-container');
+
+  $.getJSON('/search/search.json', function (searchJson) {
+    // defer initialisation of search feature until *after*
+    // we have loaded the search JSON manually,
+    // because search feature does not provide event or callback
+    // to signal completion of asynchronous load of data
+    const search = SimpleJekyllSearch({
+      searchInput,
+      resultsContainer,
+      json: searchJson,
+      limit: 15,
+      fuzzy: true,
+    });
+    try {
+      // if quick search has been used, use query parameters in URL to
+      // perform search immediately
+      const queryParams = (new URL(document.location)).searchParams;
+      const q = queryParams.get('q');
+      if (typeof q !== 'undefined') {
+        searchInput.value = q;
+        setTimeout(function () {
+          search.search(q);
+        }, 0);
+      }
+    } catch (ex) {
+      // do nothing
+    }
+  });
 }
