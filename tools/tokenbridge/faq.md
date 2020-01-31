@@ -13,7 +13,7 @@ The UI is available at:
 
 ## What is a Side Token?
 
-Side Token is an ERC777 representation of a ERC20 tokens which is on the other network(could be  on Ethereum or RSK network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places that offer ERC20 compatibility.
+Side Token is an ERC777 representation of a ERC20 compatible tokens which is on the other network(could be  on Ethereum or RSK network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
 
 ## What is the purpose of having a Side Token?
 
@@ -25,7 +25,7 @@ No! It’s important to note that there will be no increase in the original toke
 
 ## What is the difference between original tokens and Side Tokens?
 
-The original token  native tokens lives on the network that it was deployed for example Ethereum, while the Side Token is a representation of the original token on the other network, for example RSK.
+The original token lives on the network that it was deployed for example Ethereum, while the Side Token is a representation of the original token on the other network, for example RSK.
 
 ## What is the Side Token Contract Address, Symbol, and # of Decimal Places in order to add it as a Custom Coin on MyEtherWallet?
 
@@ -60,7 +60,8 @@ The federation is paying and sponsoring the fees for the multiple transactions d
 
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
 
-15 confirmations are necessary. On the POA Mainnet and 15 confirmations on the Ethereum network. On Sokol Testnet and Kovan Testnet, the test bridge will have 2 confirmations.
+- 120 confirmations are necessary on the RSK Mainnet, and 120 confirmations on the Ethereum Mainnet.
+- 10 confirmations are necessary on the RSK Testnet, and 10 confirmations on the Ethereum Kovan Testnet.
 
 ## How does the Token Bridge work?
 
