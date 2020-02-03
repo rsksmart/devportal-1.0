@@ -32,6 +32,8 @@ RSKOwner: [`0xca0a477e19bac7e0e172ccfd2e3c28a7200bdb71`](https://explorer.testne
 
 FIFSRegistrar: [`0x36ffda909f941950a552011f2c50569fda14a169`](https://explorer.testnet.rsk.co/address/0x36ffda909f941950a552011f2c50569fda14a169)
 
+FIFSAddrRegistrar: [`0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d`](https://explorer.testnet.rsk.co/address/0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d)
+
 Renewer: [`0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b`](https://explorer.testnet.rsk.co/address/0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b)
 
 NamePrice: [`0x794f99f1a9382ba88b453ddb4bfa00acae8d50e8`](https://explorer.testnet.rsk.co/address/0x794f99f1a9382ba88b453ddb4bfa00acae8d50e8)
