@@ -141,8 +141,8 @@ function setUpMainSearch () {
       searchInput,
       resultsContainer,
       json: searchJson,
-      limit: 15,
-      fuzzy: true,
+      limit: 10,
+      fuzzy: false,
     });
     try {
       // if quick search has been used, use query parameters in URL to

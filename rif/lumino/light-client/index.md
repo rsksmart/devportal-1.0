@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Light Client
+tags: lumino, client, rif
+description: "Lumino Light Client design and implementation specifications"
 ---
 
 In the current implementation of RIF Lumino users must run a full node in order to open off-chain payment channels and make payments. To get mass adoption, we need to allow users and developers to make payments from wallets and dapps, without the need to run a full node.
@@ -142,7 +144,7 @@ Our SDKs will interact with different components:
         RIF Lumino Node
       </td>
       <td>
-       This is the most obvious connection, our light client will have to maintain a connection with a RIF Lumino HUB in order to interact with RIF Lumino Network. 
+       This is the most obvious connection, our light client will have to maintain a connection with a RIF Lumino HUB in order to interact with RIF Lumino Network.
       </td>
     </tr>
   </tbody>
@@ -261,7 +263,7 @@ It should send a JSON object in the body with the following structure:
     </tr>
     <tr>
       <td scope="row">
-        signed\_tx      
+        signed\_tx
       </td>
       <td>
         Raw transaction to open the channel.
@@ -359,18 +361,18 @@ Next you will see the diagram describing the interaction between the Light Clien
     </tr>
     <tr>
       <td scope="row">
-        MyCrypto  
+        MyCrypto
       </td>
       <td>
-        JavaScript      
+        JavaScript
       </td>
     </tr>
     <tr>
       <td scope="row">
-        MEW (My Ether Wallet)       
+        MEW (My Ether Wallet)
       </td>
       <td>
-        JavaScript      
+        JavaScript
       </td>
     </tr>
     <tr>
@@ -378,7 +380,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         Jaxx Liberty
       </td>
       <td>
-        JavaScript      
+        JavaScript
       </td>
     </tr>
     <tr>
@@ -386,7 +388,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         Muun
       </td>
       <td>
-        Android      
+        Android
       </td>
     </tr>
     <tr>
@@ -394,7 +396,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         Edge
       </td>
       <td>
-        JavaScript      
+        JavaScript
       </td>
     </tr>
     <tr>
@@ -402,7 +404,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         MelloWallet
       </td>
       <td>
-        JavaScript      
+        JavaScript
       </td>
     </tr>
     <tr>
@@ -410,7 +412,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         Copay
       </td>
       <td>
-        JavaScript      
+        JavaScript
       </td>
     </tr>
     <tr>
@@ -418,7 +420,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         Samurai
       </td>
       <td>
-        JavaScript/Android      
+        JavaScript/Android
       </td>
     </tr>
     <tr>
@@ -426,7 +428,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         LightningLabs
       </td>
       <td>
-        JavaScript     
+        JavaScript
       </td>
     </tr>
     <tr>
@@ -434,7 +436,7 @@ Next you will see the diagram describing the interaction between the Light Clien
         DexFreight
       </td>
       <td>
-        JavaScript     
+        JavaScript
       </td>
     </tr>
   </tbody>
