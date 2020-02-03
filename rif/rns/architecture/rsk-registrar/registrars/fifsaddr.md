@@ -48,4 +48,4 @@ Encoding:
 | addr       | 20 bytes      | 88 bytes  |
 | name       | variable size | 108 bytes |
 
-Parameters are used int he same manner as [`register`](#Register-method). Use `0x5f7b99d5` as the signature.
+Parameters are used int he same manner as [`register`](#register-method). Use `0x5f7b99d5` as the signature.
