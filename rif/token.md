@@ -30,7 +30,6 @@ The RIF Token allows any token holder to consume the services that are compatibl
       <td>
         <ul>
             <li><a href="#exchanges" target="_blank">Exchanges</a></li>
-            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
         </ul>
       </td>
     </tr>
@@ -69,7 +68,6 @@ The RIF Token allows any token holder to consume the services that are compatibl
       <td>
         <ul>
             <li><a href="#exchanges" target="_blank">Exchanges</a></li>
-            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
         </ul>
       </td>
     </tr>
