@@ -144,9 +144,9 @@ function setUpMainSearch () {
       searchInput,
       resultsContainer,
       json: searchJson,
-      limit: 15,
-      fuzzy: true,
       searchResultTemplate,
+      limit: 10,
+      fuzzy: false,
       templateMiddleware: (prop, text, template) => {
         if (prop == 'desc') {
           const truncate = (str, no_words) => str.split(" ").splice(0,no_words).join(" ");

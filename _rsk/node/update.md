@@ -47,7 +47,7 @@ sudo service rsk start
 Check logs:
 
 ```
-tail -f /varlog/rsk/rsk.log
+tail -f /var/log/rsk/rsk.log
 ```
 
 Blockchain is moving forward adding blocks:
