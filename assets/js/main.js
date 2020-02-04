@@ -168,7 +168,12 @@ function setUpMainSearch () {
           return parsedResult;
         } else if(prop == 'tags') {
           const tags = text.split(', ');
-          const badges = tags.map(tag => `<a href="${`?q=${tag}&from=%2Fsearch%2F`}"><span class="badge badge-secondary p-1">${tag}</span><a/>`);
+          const badges = tags.map(tag => {
+              const normalBadge = `<span class="badge badge-secondary p-1">${tag}</span>`;
+              const badgeLinked = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`
+              
+              return tag != 'no tags' ? badgeLinked : normalBadge; 
+          });
           const parsedTags = `<div class="row">${badges.reduce((a,b) => a + b)}<div>`
 
           return parsedTags
