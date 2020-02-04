@@ -156,7 +156,7 @@ function setUpMainSearch () {
           
           const result = [...decodedText.matchAll(regexp)];
           
-          if(!result || result == null || result.length < 1)
+          if(!result || result.length < 1)
              return ""
           
           const resultString = truncate(result[0][0], 20); //only show the first result
