@@ -5,13 +5,13 @@ tags: rns, fifs, registrar
 description: "Register an RNS address using the FIFS registrar, with address resolution"
 ---
 
-- RSK MainNet: [0xd9c79ced86ecf49f5e4a973594634c83197c35ab](https://explorer.rsk.co/address/0xd9c79ced86ecf49f5e4a973594634c83197c35ab)
-- RSK TestNet: [0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d](https://explorer.testnet.rsk.co/address/0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d)
+- RSK MainNet: [`0xd9c79ced86ecf49f5e4a973594634c83197c35ab`](https://explorer.rsk.co/address/0xd9c79ced86ecf49f5e4a973594634c83197c35ab)
+- RSK TestNet: [`0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d`](https://explorer.testnet.rsk.co/address/0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d)
 - [Smart contract](https://github.com/rnsdomains/rns-rskregistrar/blob/master/contracts/FIFSAddrRegistrar.sol)
 
 Has registration role in `RSK Owner`.
 
-- Adds an extra functionality to [FIFS Registrar](../fifs): set address resolution in registration transaction.
+- Adds an extra functionality to [FIFS Registrar](../fifs): Set address resolution in registration transaction.
 
 The registration must be performed following [FIFS Registrar](../fifs) steps, adding address resolution in the last step.
 
@@ -41,13 +41,13 @@ Use RIF [`transferAndCall` method](https://github.com/riflabs/RIF-Token/blob/mas
 
 Encoding:
 
-| size       | size          | offset    |
+| parameter  | size          | offset    |
 | ---------- | ------------- | --------- |
-| signature  |  4 bytes      |  0 bytes  |
-| owner      | 20 bytes      |  4 bytes  |
-| secret     | 32 bytes      | 24 bytes  |
-| duration   | 32 bytes      | 56 bytes  |
-| addr       | 20 bytes      | 88 bytes  |
+| signature  |  4 bytes      |   0 bytes |
+| owner      | 20 bytes      |   4 bytes |
+| secret     | 32 bytes      |  24 bytes |
+| duration   | 32 bytes      |  56 bytes |
+| addr       | 20 bytes      |  88 bytes |
 | name       | variable size | 108 bytes |
 
-Parameters are used int he same manner as [`register`](#register-method). Use `0x5f7b99d5` as the signature.
+Parameters are used in the same manner as [`register`](#register-method). Use `0x5f7b99d5` as the signature.

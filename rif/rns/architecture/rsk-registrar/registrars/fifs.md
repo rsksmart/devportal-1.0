@@ -5,8 +5,8 @@ tags: rns, fifs, registrar
 description: "Register an RNS address using the FIFS registrar, without address resolution"
 ---
 
-- RSK MainNet: [0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61](https://explorer.rsk.co/address/0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61)
-- RSK TestNet: [0x36ffda909f941950a552011f2c50569fda14a169](https://explorer.testnet.rsk.co/address/0x36ffda909f941950a552011f2c50569fda14a169)
+- RSK MainNet: [`0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61`](https://explorer.rsk.co/address/0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61)
+- RSK TestNet: [`0x36ffda909f941950a552011f2c50569fda14a169`](https://explorer.testnet.rsk.co/address/0x36ffda909f941950a552011f2c50569fda14a169)
 - [Smart contract](https://github.com/rnsdomains/rns-rskregistrar/blob/master/contracts/FIFSRegistrar.sol)
 
 Has registration role in `RSK Owner`.
@@ -116,7 +116,7 @@ Use RIF [`transferAndCall` method](https://github.com/riflabs/RIF-Token/blob/mas
 
 Encoding:
 
-| size       | size          | offset   |
+| parameter  | size          | offset   |
 | ---------- | ------------- | -------- |
 | signature  |  4 bytes      |  0 bytes |
 | owner      | 20 bytes      |  4 bytes |
