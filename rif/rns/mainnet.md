@@ -20,6 +20,8 @@ RSKOwner: [`0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1`](https://explorer.rsk.co
 
 FIFSRegistrar: [`0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61`](https://explorer.rsk.co/address/0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61)
 
+FIFSAddrRegistrar: [`0xd9c79ced86ecf49f5e4a973594634c83197c35ab`](https://explorer.rsk.co/address/0xd9c79ced86ecf49f5e4a973594634c83197c35ab)
+
 Renewer: [`0x7a9872a7615c475b62a62b8f6e491077fb05f663`](https://explorer.rsk.co/address/0x7a9872a7615c475b62a62b8f6e491077fb05f663)
 
 NamePrice: [`0xd09adf13e482928e47e96dd6f02aad1daf7a5a47`](https://explorer.rsk.co/address/0xd09adf13e482928e47e96dd6f02aad1daf7a5a47)
