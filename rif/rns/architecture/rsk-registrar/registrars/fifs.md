@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: First-in first-served .rsk registrar
+tags: rns, fifs, registrar
+description: "Register an RNS address using the FIFS registrar, without address resolution"
 ---
 
 - RSK MainNet: [0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61](https://explorer.rsk.co/address/0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61)
