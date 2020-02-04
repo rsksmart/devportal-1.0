@@ -174,7 +174,7 @@ function setUpMainSearch () {
               
               return tag != 'no tags' ? linkedBadge : normalBadge; 
           });
-          const parsedTags = `<div class="row">${badges.reduce((a,b) => a + b)}<div>`
+          const parsedTags = `<div class="row">${badges.join('')}<div>`;
 
           return parsedTags;
         }
