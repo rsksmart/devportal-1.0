@@ -152,19 +152,19 @@ function setUpMainSearch () {
           const truncate = (str, no_words) => str.split(" ").splice(0,no_words).join(" ");
 
           const searchInputValue = searchInput.value.toLowerCase();
-          const regexp = new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
+          const matchValueAndSiblings = new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
           const decodedText = decodeURIComponent(text);
           
-          const result = [...decodedText.matchAll(regexp)];
+          const result = [...decodedText.matchAll(matchValueAndSiblings)];
           
           if(!result || result == null || result.length < 1)
              return ""
           
-          const resultString = truncate(result[0][0], 20); //only show the first result
+          const resultString = truncate(result[0][0], 20); //only shows the first result and its first 20 words
+          const isUniqueResult = result[0].length == 1;
           const otherResults = `<div class="row pt-0 pl-3" style="font-style: italic;">Other results found</div>`;
-          const parsedResult = `<div class="row"><div class="col p-0">${result[0].length == 1 ? resultString : resultString + otherResults}</div></div>`
+          const parsedResult = `<div class="row"><div class="col p-0">${ isUniqueResult ? resultString : resultString + otherResults}</div></div>`
           
-
           return parsedResult;
         } else if(prop == 'tags') {
           const tags = text.split(', ');
