@@ -1386,6 +1386,20 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 	font-size: 1.2em;
 }
 
+.search-button {
+	border-radius: 50px;
+}
+
+.search-input {
+	border-top: none; 
+	border-left: none; 
+	border-right: none;
+}
+
+.hide-element {
+	display: none;
+}
+
 /* media queries*/
 
 @media (min-width: 992px) {
