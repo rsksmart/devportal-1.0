@@ -28,7 +28,6 @@ Current and previous versions are accessible through these routes:
 * `/`: version `1.2.1` (deprecated)
 * `/1.2.1`, `/1.2.1/`: version `1.2.1` (current)
 
-The use of `/` will be removed in future releases.
 
 ## Supported RPC methods
 
