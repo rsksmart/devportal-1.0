@@ -169,7 +169,7 @@ function setUpMainSearch () {
         } else if(prop == 'tags') {
           const tags = text.split(', ');
           const badges = tags.map(tag => `<a href="${`?q=${tag}&from=%2Fsearch%2F`}"><span class="badge badge-secondary p-1">${tag}</span><a/>`);
-          const parsedTags = `<div class="row">${badges.reduce((a,b) => a + b)}<div>`
+          const parsedTags = `<div class="row">${badges.join('')}<div>`;
 
           return parsedTags
         }
