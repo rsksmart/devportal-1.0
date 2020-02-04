@@ -157,7 +157,7 @@ function setUpMainSearch () {
           
           const result = [...decodedText.matchAll(matchValueAndSiblings)];
           
-          if(!result || result == null || result.length < 1)
+          if(!result || result.length < 1)
              return ""
           
           const resultString = truncate(result[0][0], 20); //only shows the first result and its first 20 words
@@ -170,13 +170,13 @@ function setUpMainSearch () {
           const tags = text.split(', ');
           const badges = tags.map(tag => {
               const normalBadge = `<span class="badge badge-secondary p-1">${tag}</span>`;
-              const badgeLinked = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`
+              const linkedBadge = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`
               
-              return tag != 'no tags' ? badgeLinked : normalBadge; 
+              return tag != 'no tags' ? linkedBadge : normalBadge; 
           });
           const parsedTags = `<div class="row">${badges.reduce((a,b) => a + b)}<div>`
 
-          return parsedTags
+          return parsedTags;
         }
       }
     });
