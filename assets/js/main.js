@@ -148,6 +148,8 @@ function setUpMainSearch () {
       limit: 10,
       fuzzy: false,
       templateMiddleware: (prop, text, template) => {
+        $('.page-title').text((index, text) => `Search Result for "${searchInput.value}"`)
+
         if (prop == 'desc') {
           const truncate = (str, no_words) => str.split(" ").splice(0,no_words).join(" ");
           const searchInputValue = searchInput.value.toLowerCase();
