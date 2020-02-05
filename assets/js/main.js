@@ -140,40 +140,44 @@ function setUpMainSearch () {
       searchResultTemplate,
       limit: 10,
       fuzzy: false,
-      templateMiddleware: (prop, text, template) => {
-        $('.page-title').text((index, text) => `Search Result for "${searchInput.value}"`)
+      templateMiddleware: (prop, text) => {
+        $('.page-title').text(() => `Search results for "${searchInput.value}"`);
 
-        if (prop == 'desc') {
-          const truncate = (str, no_words) => str.split(" ").splice(0,no_words).join(" ");
+        if (prop === 'desc') {
+          const truncate = (str, no_words) => str.split(' ').splice(0, no_words).join(' ');
 
           const searchInputValue = searchInput.value.toLowerCase();
           const matchValueAndSiblings = new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
           const decodedText = decodeURIComponent(text);
-          
+
           const result = [...decodedText.matchAll(matchValueAndSiblings)];
-          
-          if(!result || result.length < 1)
-             return ""
-          
-          const resultString = truncate(result[0][0], 20); //only shows the first result and its first 20 words
+
+          if (!result || result.length < 1) {
+            return '';
+          }
+
+          //only shows the first result and its first 20 words
+          const resultString = truncate(result[0][0], 20);
           const isUniqueResult = result[0].length == 1;
-          const otherResults = `<div class="row pt-0 pl-3" style="font-style: italic;">Other results found</div>`;
-          const parsedResult = `<div class="row"><div class="col p-0">${ isUniqueResult ? resultString : resultString + otherResults}</div></div>`
-          
+          const otherResults =
+            `<div class="row pt-0 pl-3" style="font-style: italic;">Other results found</div>`;
+          const parsedResult =
+            `<div class="row"><div class="col p-0">${ isUniqueResult ? resultString : resultString + otherResults}</div></div>`;
+
           return parsedResult;
-        } else if(prop == 'tags') {
+        } else if (prop === 'tags') {
           const tags = text.split(', ');
           const badges = tags.map(tag => {
-              const normalBadge = `<span class="badge badge-secondary p-1">${tag}</span>`;
-              const linkedBadge = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`
-              
-              return tag != 'no tags' ? linkedBadge : normalBadge; 
+            const normalBadge = `<span class="badge badge-secondary p-1">${tag}</span>`;
+            const linkedBadge = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`;
+
+            return tag != 'no tags' ? linkedBadge : normalBadge;
           });
           const parsedTags = `<div class="row">${badges.join('')}<div>`;
 
           return parsedTags;
         }
-      }
+      },
     });
     try {
       // if quick search has been used, use query parameters in URL to
