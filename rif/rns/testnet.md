@@ -11,7 +11,7 @@ tags: [rif, rns, testnet]
 3. (optional) List tRIF token balance using this address: 0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE. In Nifty wallet do this in Tokens tab.
 4. Browse to [RSK faucet](https://faucet.testnet.rsk.co) to get some gas.
 5. Browse to [tRIF faucet](https://faucet.rifos.org) to get some test RIF tokens.
-6. Browse to [RNS Testnet Manager](https://testnet.manager.rifos.org) and search for your desired domain.
+6. Browse to [RNS Testnet Manager](https://testnet.manager.rns.rifos.org) and search for your desired domain.
 7. Follow the registration process.
 
 ## Smart contracts
@@ -31,6 +31,8 @@ MultiChain Resolver: [`0x404308f2a2eec2cdc3cb53d7d295af11c903414e`](https://expl
 RSKOwner: [`0xca0a477e19bac7e0e172ccfd2e3c28a7200bdb71`](https://explorer.testnet.rsk.co/address/0xca0a477e19bac7e0e172ccfd2e3c28a7200bdb71)
 
 FIFSRegistrar: [`0x36ffda909f941950a552011f2c50569fda14a169`](https://explorer.testnet.rsk.co/address/0x36ffda909f941950a552011f2c50569fda14a169)
+
+FIFSAddrRegistrar: [`0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d`](https://explorer.testnet.rsk.co/address/0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d)
 
 Renewer: [`0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b`](https://explorer.testnet.rsk.co/address/0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b)
 
