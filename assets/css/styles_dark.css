@@ -58,12 +58,6 @@ margin: 0 10px 0 0;}
 
 .menu-container div > a:hover{color:white!important;}
 
-.search-input {
-	border: solid 1px #F26122;
-	color: #F26122 !important;
-	background: transparent;
-}
-
 .table {
 	color: white!important;
 }
