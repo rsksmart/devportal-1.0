@@ -155,16 +155,17 @@ function setUpMainSearch () {
 
       return parsedResult;
     } else if (prop === 'tags') {
-      const tags = text.split(', ');
-      const badges = tags.map(tag => {
-        const normalBadge = `<span class="badge badge-secondary p-1">${tag}</span>`;
-        const linkedBadge = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`;
+      if (text === '') {
+        return `<span class="badge badge-secondary p-1">(no tags)</span>`;
+      }
+      const badges = text
+        .split(', ')
+        .map(
+          (tag) => (`<a href="${`?q=${tag}&from=%2Fsearch%2F`}"><span class="badge badge-secondary p-1">${tag}</span><a/>`),
+        )
+        .join('');
 
-        return tag != 'no tags' ? linkedBadge : normalBadge;
-      });
-      const parsedTags = `<div class="row">${badges.join('')}<div>`;
-
-      return parsedTags;
+      return `<div class="row">${badges}<div>`;
     }
   }
 

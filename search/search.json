@@ -9,16 +9,12 @@ skip_search: true
       "url"      : "{{ site.baseurl }}{{ page.url }}",
       "title"    : "{{ page.title | strip_html | escape }}",
       "category" : "{{ page.categories | join: ', '}}",
-      {% if page.tags != blank %}
-        "tags": "{{ page.tags | join: ', ' }}",
-      {% else %}
-        "tags": "no tags",
-      {% endif %}  
+      "tags"     : "{{ page.tags | join: ', ' }}",
       "date"     : "{{ page.date }}",
       {% if content_sections contains page_section[1] %}
       {% if page.description %}
         "desc"     : "{{ page.description | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
-      {% else %} 
+      {% else %}
         "desc"     : "{{ page.content | truncatewords: 200, "…" | markdownify | strip_html | normalize_whitespace | strip_newlines | escape }}"
       {% endif %}
       {% else %}
