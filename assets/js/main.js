@@ -119,6 +119,7 @@ function toggleNavColumnVisibility (e) {
 }
 
 // search
+
 function setUpMainSearch () {
   if (document.location.pathname.indexOf('/search/') !== 0) {
     // only relevant on the search page
@@ -127,6 +128,45 @@ function setUpMainSearch () {
   const searchInput = document.getElementById('search-input');
   const resultsContainer = document.getElementById('results-container');
   const searchResultTemplate = `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`
+
+  const truncate = (str, num_words) => str.split(' ').splice(0, num_words).join(' ');
+
+  function templateMiddleware (prop, text) {
+    $('.page-title').text(() => `Search results for "${searchInput.value}"`);
+
+    if (prop === 'desc') {
+      const searchInputValue = searchInput.value.toLowerCase();
+      const matchValueAndSiblings = new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
+      const decodedText = decodeURIComponent(text);
+
+      const result = [...decodedText.matchAll(matchValueAndSiblings)];
+
+      if (!result || result.length < 1) {
+        return '';
+      }
+
+      //only shows the first result and its first 20 words
+      const resultString = truncate(result[0][0], 20);
+      const isUniqueResult = result[0].length == 1;
+      const otherResults =
+        `<div class="row pt-0 pl-3" style="font-style: italic;">Other results found</div>`;
+      const parsedResult =
+        `<div class="row"><div class="col p-0">${ isUniqueResult ? resultString : resultString + otherResults}</div></div>`;
+
+      return parsedResult;
+    } else if (prop === 'tags') {
+      const tags = text.split(', ');
+      const badges = tags.map(tag => {
+        const normalBadge = `<span class="badge badge-secondary p-1">${tag}</span>`;
+        const linkedBadge = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`;
+
+        return tag != 'no tags' ? linkedBadge : normalBadge;
+      });
+      const parsedTags = `<div class="row">${badges.join('')}<div>`;
+
+      return parsedTags;
+    }
+  }
 
   $.getJSON('/search/search.json', function (searchJson) {
     // defer initialisation of search feature until *after*
@@ -140,44 +180,7 @@ function setUpMainSearch () {
       searchResultTemplate,
       limit: 10,
       fuzzy: false,
-      templateMiddleware: (prop, text) => {
-        $('.page-title').text(() => `Search results for "${searchInput.value}"`);
-
-        if (prop === 'desc') {
-          const truncate = (str, no_words) => str.split(' ').splice(0, no_words).join(' ');
-
-          const searchInputValue = searchInput.value.toLowerCase();
-          const matchValueAndSiblings = new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
-          const decodedText = decodeURIComponent(text);
-
-          const result = [...decodedText.matchAll(matchValueAndSiblings)];
-
-          if (!result || result.length < 1) {
-            return '';
-          }
-
-          //only shows the first result and its first 20 words
-          const resultString = truncate(result[0][0], 20);
-          const isUniqueResult = result[0].length == 1;
-          const otherResults =
-            `<div class="row pt-0 pl-3" style="font-style: italic;">Other results found</div>`;
-          const parsedResult =
-            `<div class="row"><div class="col p-0">${ isUniqueResult ? resultString : resultString + otherResults}</div></div>`;
-
-          return parsedResult;
-        } else if (prop === 'tags') {
-          const tags = text.split(', ');
-          const badges = tags.map(tag => {
-            const normalBadge = `<span class="badge badge-secondary p-1">${tag}</span>`;
-            const linkedBadge = `<a href="${`?q=${tag}&from=%2Fsearch%2F`}">${normalBadge}</span><a/>`;
-
-            return tag != 'no tags' ? linkedBadge : normalBadge;
-          });
-          const parsedTags = `<div class="row">${badges.join('')}<div>`;
-
-          return parsedTags;
-        }
-      },
+      templateMiddleware,
     });
     try {
       // if quick search has been used, use query parameters in URL to
