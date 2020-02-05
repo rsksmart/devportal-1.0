@@ -1,7 +1,7 @@
 $(document).ready(function () {
-  setUpQuickSearch();
   setUpMainSearch();
 });
+
 // add active class to a in inner nav based on url
 $(function () {
   var pageUrl = location.href;
@@ -119,11 +119,6 @@ function toggleNavColumnVisibility (e) {
 }
 
 // search
-function setUpQuickSearch () {
-  // quick search is available on all pages
-  $('form#quick-search input#from').val(window.location.pathname);
-}
-
 function setUpMainSearch () {
   if (document.location.pathname.indexOf('/search/') !== 0) {
     // only relevant on the search page
