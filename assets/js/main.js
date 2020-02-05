@@ -149,7 +149,7 @@ function setUpMainSearch () {
       const resultString = truncate(result[0][0], 20);
       const isUniqueResult = result[0].length == 1;
       const otherResults =
-        `<div class="row pt-0 pl-3" style="font-style: italic;">Other results found</div>`;
+        `<div class="row pt-0 pl-3" style="font-style: italic;">(multiple matches found)</div>`;
       const parsedResult =
         `<div class="row"><div class="col p-0">${ isUniqueResult ? resultString : resultString + otherResults}</div></div>`;
 
