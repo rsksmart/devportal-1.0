@@ -7,6 +7,7 @@ SEARCH_JSON_PATH = "./_site/search/search.json"
 desc "build site for production purposes"
 task :build_for_prod => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
+  ENV["RAKE_BUILD_FOR"] = "prod"
   sh "bundle exec jekyll build --config \"_config.yml\""
   puts "rake> " + task.name + ": OK!"
 end
@@ -30,12 +31,14 @@ end
 desc "development mode where site is rebuilt each time a file is saved"
 task :dev => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
+  ENV["RAKE_BUILD_FOR"] = "dev"
   sh "bundle exec jekyll serve --trace --config \"_config.yml,_config.localhost.yml\""
 end
 
 desc "build site for testing purposes"
 task :build_for_test => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
+  ENV["RAKE_BUILD_FOR"] = "dev"
   sh "bundle exec jekyll build --config \"_config.yml,_config.localhost.yml\""
   puts "rake> " + task.name + ": OK!"
 end

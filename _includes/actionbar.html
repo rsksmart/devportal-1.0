@@ -9,7 +9,7 @@
           <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2F{{ site.domain }}{{ page.url }}"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
           <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2F{{ site.domain }}{{ page.url }}"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
           <li><a class="share-email" data-bi-name="email" href="mailto:?subject={{ page.title }}&amp;body={{ page.title }}%0A%0Ahttps%3A%2F%2F{{ site.domain }}{{ page.url }}"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://{{ site.domain }}{{ page.url }}').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('{{ site.url }}{{ page.url }}').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
     <a href="#" onclick="return ChangeTheme(this);">Dark</a>
