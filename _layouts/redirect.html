@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="canonical" href="https://{{ site.domain }}{{ page.redirect }}">
-    <meta http-equiv="refresh" content="0; URL=//{{ site.domain }}{{ page.redirect }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.redirect }}">
+    <meta http-equiv="refresh" content="0; URL={{ site.url }}{{ page.redirect }}">
     <title>Redirecting...</title>
   </head>
   <body>
     <h1>Redirecting...</h1>
-    <a href="//{{ site.domain }}{{ page.redirect }}">Click here</a> if you are not redirected.
+    <a href="{{ site.url }}{{ page.redirect }}">Click here</a> if you are not redirected.
   </body>
 </html>
