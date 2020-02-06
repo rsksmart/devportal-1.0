@@ -18,5 +18,6 @@ group :jekyll_plugins do
   gem "jekyll-last-modified-at", "1.2.1"
   gem "jekyll-github-metadata", "2.12.1"
   gem "jemoji", "0.10.2"
+  gem "jekyll-target-blank", "2.0.0" if ENV["RAKE_BUILD_FOR"] == "prod"
 end
 
