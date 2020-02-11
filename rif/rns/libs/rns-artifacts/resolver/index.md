@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RNS Solidity artifacts - resolvers
+tags: rns, artifacts, resolvers
 ---
 
 The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver.
@@ -8,4 +9,5 @@ The Resolver contract handles the resolution between the name domain and the res
 _[Further reading](/rif/rns/specs/resolvers)_
 
 ## Resources
+
 - [String Resolver](string-resolver): stores string resolution for a given domain.
