@@ -1,14 +1,17 @@
 ---
 layout: rsk
 title: Javacript Library
+tags: rns, javascript
 ---
+
+## Installation
 
 ```
 npm i web3 @rsksmart/rns
 ```
 
-Source code: https://github.com/rnsdomains/rns-js
-npm: https://www.npmjs.com/package/@rsksmart/rns
+- Source code: [github.com/rnsdomains/rns-js](https://github.com/rnsdomains/rns-js)
+- npm: [npmjs.com/package/@rsksmart/rns](https://www.npmjs.com/package/@rsksmart/rns)
 
 ## Basic usage
 
@@ -21,21 +24,25 @@ const rns = new RNS(web3)
 ```
 
 Get an address:
+
 ```javascript
 rns.addr('testing.rsk').then(console.log)
 ```
 
 Get Bitcoin address:
+
 ```javascript
 rns.addr('testing.rsk', '0x80000000').then(console.log)
 ```
 
 Check if `example.testing.rsk` subdomain is available:
+
 ```javascript
 rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
 ```
 
-Reverse lookup: get name of a given address:
+Reverse lookup - get name of a given address:
+
 ```javascript
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
