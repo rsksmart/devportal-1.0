@@ -1,7 +1,8 @@
 ---
 skip_search: true
 ---
-{% assign pages = site.pages | where_exp: "page", "page.skip_search != true" | where_exp: "page", "page.layout != 'redirect'" %}
+{% assign all_pages = site.pages | concat: site.documents  %}
+{% assign pages = all_pages | where_exp: "page", "page.skip_search != true" | where_exp: "page", "page.layout != 'redirect'" %}
 {% assign content_sections = "quick-start|the-stack|rsk|rif|develop|contribute" | split: "|" %}
 [
   {% for page in pages %} {% assign page_section = page.url | split: "/" %}
