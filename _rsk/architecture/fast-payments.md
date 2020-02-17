@@ -2,14 +2,16 @@
 layout: rsk
 title: Fast payments
 collection_order: 4700
+tags: rsk, remasc, interval, speed, propagation
+description: "Achieving faster on-chain block intervals"
 ---
 
-RSK already enables second layer off-chain payment networks, but still RSK aims to provide a much better on-chain payment network compared to Bitcoin. To achieve this, RSK adopts the [REMASC protocol](/rsk/architecture/mining/remasc/), which allows RSK to reach a fifteen second average block rate, without creating incentives for mining centralization and selfish mining.
+RSK already enables second layer off-chain payment networks, but RSK still aims to provide a much better on-chain payment network compared to Bitcoin. To achieve this, RSK adopts the [REMASC protocol](/rsk/architecture/mining/remasc/), which allows RSK to reach a fifteen second average block rate, without creating incentives for mining centralization and selfish mining.
 
 Main features:
 
 * Fifteen to thirty second block intervals, depending on the miner’s state switching efficiency
-* Full network propagation of last competing blocks to prevent selfish mining and  reduce stale block rate
+* Full network propagation of last competing blocks to prevent selfish mining and reduce stale block rate
   * [RSK White Paper Overview](https://www.rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf), see page 17
 * New network command to spread block headers with time critical priority
 * [REMASC protocol](/rsk/architecture/mining/remasc/) for reward sharing between competing blocks
