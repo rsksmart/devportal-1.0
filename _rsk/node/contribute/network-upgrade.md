@@ -3,7 +3,7 @@ layout: rsk
 title: Network Upgrades
 ---
 
-## What it's a network upgrade ?
+## What's a network upgrade ?
 
 A network upgrade is a change or group of changes to the protocol consensus rules, which are activated at a defined block number.
 
@@ -15,7 +15,7 @@ Consensus rules changes are introduced as part of a group of changes called Netw
 
 ## How to add a new consensus rule?
 
-1. Set the release version (If not yet defined in the code) Define the new tag in `NetworkUpgrade` enum file.
+1. Set the release version (if not yet defined in the code). Define the new tag in `NetworkUpgrade` enum file.
     ```java
     public enum NetworkUpgrade {
         WASABI_100("wasabi100"),
@@ -23,7 +23,7 @@ Consensus rules changes are introduced as part of a group of changes called Netw
     ```
 
 2. Set the network upgrade block activation height in `[main||testnet||regtest||devnet].conf` files
-    
+
     ```conf
     # IE for main.conf
 
@@ -35,7 +35,7 @@ Consensus rules changes are introduced as part of a group of changes called Netw
     }
     ```
     > For local development you should ONLY need to edit `regtest.conf`.
-    
+
     >`[main||testnet||devnet].conf` will only need to be edited before a NetworkUpgrade deploy, when the block activation height is already known.
 
 
@@ -59,9 +59,9 @@ Consensus rules changes are introduced as part of a group of changes called Netw
 
 ## Coding a consensus rule change for an RSK Network Upgrade
 
-When implementing a network upgrade you'll need to check if that change it's active:
+When implementing a network upgrade you'll need to check if that change is active:
 
-```java 
+```java
 if (activations.isActive(ConsensusRule.RSKIP106) && address.equals(HD_WALLET_UTILS_ADDR_DW)) {
     return new HDWalletUtils(config.getActivationConfig(), HD_WALLET_UTILS_ADDR);
 }
@@ -69,7 +69,7 @@ if (activations.isActive(ConsensusRule.RSKIP106) && address.equals(HD_WALLET_UTI
 
 ## Testing
 
-To run tests with specifc consensus rules changes, you'll need to combine previously descripted methods at `ActivationConfigTest.BASE_CONFIG`
+To run tests with specific consensus rules changes, you'll need to combine previously described methods at `ActivationConfigTest.BASE_CONFIG`
 
 ```java
 public class ActivationConfigTest {
