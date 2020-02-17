@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Network Upgrades
+tags: rsk, upgrade, protocol, consensus, rskip
+description: "How to introduce consensus rules changes using network upgrades on an RSK node"
 ---
 
 ## What's a network upgrade ?
