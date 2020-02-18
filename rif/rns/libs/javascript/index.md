@@ -8,5 +8,5 @@ tags: rns, javascript
 - [RNS.js instance](./RNS-instance/)
 - [Operations](./Operations/)
 - [Advanced usage](./Advanced-usage/)
-- [Errors](./Errors/)
+- [Error knowledge base](./Errors/)
 - [Contribute](./Contribute/)
