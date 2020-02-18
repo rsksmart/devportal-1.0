@@ -2,6 +2,8 @@
 layout: rsk
 title: Security model
 collection_order: 4500
+tags: rsk, security, peg, federation
+description: "Achieving security in a 2-way pegged sidechain using proofs of payment"
 ---
 
 A sidechain is an independent blockchain whose native currency is pegged to the value of another blockchain currency automatically by using proofs of payment. There is a [2-way peg](/rsk/architecture/2-way-peg/) when two currencies can be exchanged freely, automatically, and without incurring in a price negotiation. In RSK, the Smart Bitcoin (RBTC) is two-way pegged to the BTC.

@@ -2,6 +2,8 @@
 layout: rsk
 title: 2-way peg
 collection_order: 4300
+tags: rsk, rbtc, btc, peg
+description: "Transfer BTC to RBTC, and RBTC to BTC through a 2-way peg."
 ---
 
 The 2-Way Peg is a method to [transfer BTC into RBTC](/rsk/rbtc/conversion/), and vice-versa. In practice, when BTC and RBTC are exchanged, no currency is “transferred” between blockchains.

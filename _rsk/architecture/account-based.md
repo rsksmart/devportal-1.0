@@ -2,6 +2,8 @@
 layout: rsk
 title: Account Based RSK Addresses
 collection_order: 4200
+tags: rsk, checksum, chainId, address
+description: "EIP1191 chainId is used in RSK addresses as a checksum"
 ---
 
 RSK Addresses incorporate an optional blockchain identifier (also known as `chainId`). If the `chainId` is not present, it is assumed the address refers to the RSK main network.
