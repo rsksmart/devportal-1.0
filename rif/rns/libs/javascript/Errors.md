@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RNS JS Library - Errors
+title: RNS JS Library - Error knowledge base
 tags: rns, javascript
 ---
 
