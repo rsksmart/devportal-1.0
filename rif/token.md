@@ -67,7 +67,7 @@ The RIF Token allows any token holder to consume the services that are compatibl
       <td scope="row">How to get</td>
       <td>
         <ul>
-            <li><a href="#exchanges" target="_blank">Exchanges</a></li>
+            <li><a href="https://faucet.rifos.org/" target="_blank">Faucet</a></li>
         </ul>
       </td>
     </tr>
