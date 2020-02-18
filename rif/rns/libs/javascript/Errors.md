@@ -7,7 +7,7 @@ tags: rns, javascript
 |Code | Message | Description |
 |--- | --- | ---|
 |KB001|No addr resolution set|The given domain has a resolver, but the resolution has not been set|
-|KB002|No addr resolution|The given domain has a resolver, but it does not support [addr](/rif/rns/architecture/resolver#addr) interface|
+|KB002|No addr resolution|The given domain has a resolver, but it does not support [addr](/rif/rns/architecture/Resolver/#addr) interface|
 |KB003|No resolver|The given domain doesn't have a resolver set|
 |KB004|Library not composed|Thrown when trying to accesses `rns.contracts` before executing `rns.compose()`|
 |KB005|No contract addresses provided|Thrown when constructing lib on a local/custom RNS environment and contract addresses are not provided|

@@ -28,11 +28,11 @@ async addr(domain: string, chainId?: ChainId): Promise<string>
 
 
 **Throws**
-- [KB001](/rif/rns/libs/javascript/errors)
-- [KB002](/rif/rns/libs/javascript/errors)
-- [KB003](/rif/rns/libs/javascript/errors)
-- [KB006](/rif/rns/libs/javascript/errors)
-- [KB007](/rif/rns/libs/javascript/errors)
+- [KB001](/rif/rns/libs/javascript/Errors)
+- [KB002](/rif/rns/libs/javascript/Errors)
+- [KB003](/rif/rns/libs/javascript/Errors)
+- [KB006](/rif/rns/libs/javascript/Errors)
+- [KB007](/rif/rns/libs/javascript/Errors)
 
 **Examples**
 Get an address:
@@ -63,8 +63,8 @@ async reverse(address: string): Promise<string>
 - `string`: Domain or subdomain associated to the given address.
 
 **Throws**
-- [KB013](/rif/rns/libs/javascript/errors)
-- [KB014](/rif/rns/libs/javascript/errors)
+- [KB013](/rif/rns/libs/javascript/Errors)
+- [KB014](/rif/rns/libs/javascript/Errors)
 
 **Example**
 
@@ -89,11 +89,11 @@ async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
 - `boolean`: true if available, false if not
 
 **Throws**
-- [KB008](/rif/rns/libs/javascript/errors)
-- [KB009](/rif/rns/libs/javascript/errors)
-- [KB010](/rif/rns/libs/javascript/errors)
-- [KB011](/rif/rns/libs/javascript/errors)
-- [KB012](/rif/rns/libs/javascript/errors)
+- [KB008](/rif/rns/libs/javascript/Errors)
+- [KB009](/rif/rns/libs/javascript/Errors)
+- [KB010](/rif/rns/libs/javascript/Errors)
+- [KB011](/rif/rns/libs/javascript/Errors)
+- [KB012](/rif/rns/libs/javascript/Errors)
 
 **Example**
 
