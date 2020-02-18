@@ -14,7 +14,7 @@ tags: rns, javascript
 |KB006|No chain address resolution|The given domain has a resolver, but the resolution for the given chain has not been set|
 |KB007|No chain address resolution set|The given domain has a resolver, but it does not support [chainAddr](/rif/rns/architecture/MultiCryptoResolver) interface|
 |KB008|Search only domains|-|
-|KB009|Search only .rsk domains|-|
+|KB009|Search only `.rsk` domains|-|
 |KB010|Invalid domain, must be alphanumeric and lower case|-|
 |KB011|Invalid label, must be alphanumeric and lower case|-|
 |KB012|The given domain does not exist|-|
