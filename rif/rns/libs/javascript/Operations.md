@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Javacript Library
+title: RNS JS Library - Operations
 tags: rns, javascript
 ---
 

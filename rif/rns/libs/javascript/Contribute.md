@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Javacript Library - Contribute
+title: RNS JS Library - Contribute
 tags: rns, javascript
 ---
 
