@@ -6,7 +6,7 @@ tags: rns, javascript
 
 ## Instantiate the lib with your local blockchain
 
-The lib has already set the contract addresses for RSK Mainnet and Testnet, so if the web3 instance point to one of those networks, no extra action is needed.
+The library has already set the contract addresses for RSK Mainnet and Testnet, so if the Web3 instance points to one of those networks, no extra action is needed.
 If you want to use your local blockchain, contract addresses must be provided and should be sent as parameter.
 
 **Example** 

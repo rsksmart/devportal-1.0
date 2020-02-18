@@ -11,8 +11,8 @@ tags: rns, javascript
   - [`isSubdomainAvailable`](#isSubdomainAvailable)
 
 
-### addr
-Get address of a given domain and chain. If chainId is not provided, it resolves current blockchain address.
+### `addr`
+Get the address of a given domain and chain. If `chainId` is not provided, it resolves current blockchain address.
 
 **Signature**
 ```javascript
@@ -20,8 +20,8 @@ async addr(domain: string, chainId?: ChainId): Promise<string>
 ```
 
 **Parameters**
-- `domain`: domain to be resolved.
-- `chainId`: chain identifier listed in SLIP44 [https://github.com/satoshilabs/slips/blob/master/slip-0044.md](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
+- `domain`: Domain to be resolved.
+- `chainId`: Chain identifier listed in [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
 
 **Returns**
 - `string`: the address resolution
@@ -39,8 +39,8 @@ Get Bitcoin address:
 rns.addr('testing.rsk', '0x80000000').then(console.log)
 ```
 
-### reverse
-Reverse lookup: get name of a given address.
+### `reverse`
+Reverse lookup: Get the name of a given address.
 
 **Signature**
 ```javascript
@@ -59,8 +59,8 @@ async reverse(address: string): Promise<string>
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
-### isSubdomainAvailable
-Checks if the given label subdomain is available under the given domain tree
+### `isSubdomainAvailable`
+Checks if the given label subdomain is available under the given domain tree.
 
 **Signature**
 ```javascript
@@ -68,8 +68,8 @@ async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
 ```
 
 **Parameters**
-- `domain`: parent .rsk domain. ie: wallet.rsk
-- `label`: subdomain to check if is available. ie: alice
+- `domain`: Parent `.rsk` domain. For example, `wallet.rsk`
+- `label`: Subdomain whose availability should be checked. For example, `alice`
 
 **Returns**
 - `boolean`: true if available, false if not
@@ -84,4 +84,4 @@ rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
 
 ## Advanced operations
 
-Use Web3 `Contract`s directly, find instructions [here](/rif/rns/libs/javascript/advanced-usage)
+Use Web3 `Contract`s directly, find instructions [here](/rif/rns/libs/javascript/advanced-usage).

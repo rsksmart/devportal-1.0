@@ -22,7 +22,7 @@ npm test
 
 ## Try out your development
 
-Create a testing project
+Create a test project
 
 ```
 # in rns-js folder
@@ -36,12 +36,12 @@ npm i web3
 npm link @rsksmart/rns
 ```
 
-Create a new .js file, [instantiate](/rif/rns/libs/javascript/RNS-instance) the library and try out your development.
+Create a new `.js` file, [instantiate](/rif/rns/libs/javascript/RNS-instance) the library and try out your development.
 
 ## Versioning
 
-- `master` branch point to latest release.
+- `master` branch points to the latest release.
 - `develop` branch contains changes that will apply next release. The first commit after release bumps to next version.
 - Other branches (feature branches) point to `develop`.
 
-Find releases scopes in [milestones](https://github.com/rnsdomains/rns-js/milestones)
+Find release scopes in [milestones](https://github.com/rnsdomains/rns-js/milestones).

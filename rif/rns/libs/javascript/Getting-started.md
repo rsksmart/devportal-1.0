@@ -41,7 +41,7 @@ Check if `example.testing.rsk` subdomain is available:
 rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
 ```
 
-Reverse lookup: get name of a given address:
+Reverse lookup: Get the name of a given address:
 ```javascript
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
