@@ -8,10 +8,10 @@ tags: rns, javascript
 
   - [`addr`](#addr)
   - [`reverse`](#reverse)
-  - [`isSubdomainAvailable`](#isSubdomainAvailable)
-
+  - [`isSubdomainAvailable`](#issubdomainavailable)
 
 ### `addr`
+
 Get the address of a given domain and chain. If `chainId` is not provided, it resolves current blockchain address.
 
 **Signature**
@@ -40,6 +40,7 @@ rns.addr('testing.rsk', '0x80000000').then(console.log)
 ```
 
 ### `reverse`
+
 Reverse lookup: Get the name of a given address.
 
 **Signature**
@@ -60,6 +61,7 @@ rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
 ### `isSubdomainAvailable`
+
 Checks if the given label subdomain is available under the given domain tree.
 
 **Signature**
@@ -84,4 +86,4 @@ rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
 
 ## Advanced operations
 
-Use Web3 `Contract`s directly, find instructions [here](/rif/rns/libs/javascript/advanced-usage).
+Use Web3 `Contract`s directly, find instructions [here](/rif/rns/libs/javascript/Advanced-usage).

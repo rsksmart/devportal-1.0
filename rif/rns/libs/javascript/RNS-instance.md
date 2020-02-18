@@ -23,7 +23,7 @@ const web3 = new Web3('https://public-node.rsk.co') // or 'https://public-node.t
 const rns = new RNS(web3)
 ```
 
-## Instance in Chrome with wallet extension (Metamask or Nifty) 
+## Instance in Chrome with wallet extension (Metamask or Nifty)
 
 ```javascript
 import Web3 from 'web3'
@@ -37,4 +37,4 @@ const web3 = new Web3(window.web3.currentProvider)
 const rns = new RNS(web3)
 ```
 
-> Find instructions in the [advanced usage](/rif/rns/libs/javascript/advanced-usage) section if running local or custom blockchains.
+> Find instructions in the [advanced usage](/rif/rns/libs/javascript/Advanced-usage) section if running local or custom blockchains.

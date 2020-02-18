@@ -23,7 +23,7 @@ const web3 = new Web3('https://public-node.rsk.co')
 const rns = new RNS(web3)
 ```
 
-> Find instructions in the [advanced usage](/rif/rns/libs/javascript/advanced-usage) section if running local or custom blockchains.
+> Find instructions in the [advanced usage](/rif/rns/libs/javascript/Advanced-usage/) section if running local or custom blockchains.
 
 
 Get an address:
@@ -46,8 +46,8 @@ Reverse lookup: Get the name of a given address:
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
-Find the operations spec [here](/rif/rns/libs/javascript/operations).
+Find the operations spec [here](/rif/rns/libs/javascript/Operations).
 
 ## Advanced usage
 
-If you want to interact directly with the contracts, find instructions in the the [advanced usage](/rif/rns/libs/javascript/advanced-usage) section.
+If you want to interact directly with the contracts, find instructions in the the [advanced usage](/rif/rns/libs/javascript/Advanced-usage) section.

@@ -9,7 +9,7 @@ tags: rns, javascript
 The library has already set the contract addresses for RSK Mainnet and Testnet, so if the Web3 instance points to one of those networks, no extra action is needed.
 If you want to use your local blockchain, contract addresses must be provided and should be sent as parameter.
 
-**Example** 
+**Example**
 ```javascript
 async function myCustomGetOwner(domain) {
   const web3 = new Web3('http://localhost:7545');
@@ -42,4 +42,4 @@ async function myCustomGetOwner(domain) {
 }
 ```
 
-## Want to contribute? Find the process [here](/rif/rns/libs/javascript/contribute)
+## Want to contribute? Find the process [here](/rif/rns/libs/javascript/Contribute/)
