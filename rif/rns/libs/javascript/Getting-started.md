@@ -46,7 +46,7 @@ Reverse lookup: Get the name of a given address:
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
-Find the operations spec [here](/rif/rns/libs/javascript/Operations).
+Find the whole operations specs [here](/rif/rns/libs/javascript/Operations).
 
 ## Advanced usage
 

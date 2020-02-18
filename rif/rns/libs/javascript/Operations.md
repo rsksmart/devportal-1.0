@@ -26,6 +26,14 @@ async addr(domain: string, chainId?: ChainId): Promise<string>
 **Returns**
 - `string`: the address resolution
 
+
+**Throws**
+- [KB001](/rif/rns/libs/javascript/errors)
+- [KB002](/rif/rns/libs/javascript/errors)
+- [KB003](/rif/rns/libs/javascript/errors)
+- [KB006](/rif/rns/libs/javascript/errors)
+- [KB007](/rif/rns/libs/javascript/errors)
+
 **Examples**
 Get an address:
 
@@ -54,6 +62,10 @@ async reverse(address: string): Promise<string>
 **Returns**
 - `string`: Domain or subdomain associated to the given address.
 
+**Throws**
+- [KB013](/rif/rns/libs/javascript/errors)
+- [KB014](/rif/rns/libs/javascript/errors)
+
 **Example**
 
 ```javascript
@@ -75,6 +87,13 @@ async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
 
 **Returns**
 - `boolean`: true if available, false if not
+
+**Throws**
+- [KB008](/rif/rns/libs/javascript/errors)
+- [KB009](/rif/rns/libs/javascript/errors)
+- [KB010](/rif/rns/libs/javascript/errors)
+- [KB011](/rif/rns/libs/javascript/errors)
+- [KB012](/rif/rns/libs/javascript/errors)
 
 **Example**
 
