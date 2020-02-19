@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: REMASC
+tags: rsk, mining, bitcoin, remasc
 collection_order: 4430
 ---
 

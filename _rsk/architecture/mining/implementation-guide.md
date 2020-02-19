@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Implementation Guide
+tags: rsk, mining, bitcoin, pool
+description: "How to merge mine RSK using Bitcoin mining pool software"
 collection_order: 4410
 ---
 

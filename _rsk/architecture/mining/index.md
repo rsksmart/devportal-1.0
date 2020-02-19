@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Merged Mining
+tags: rsk, mining, bitcoin, pow
+description: "How merge mining RSK with Bitcoin works, and its benefits"
 permalink: /rsk/architecture/mining/
 collection_order: 4400
 ---
