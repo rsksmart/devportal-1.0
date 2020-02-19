@@ -32,16 +32,16 @@ Choose `mainnet` and press `Enter` to continue
 
 ## Install via Direct Downloads
 
-You can also download the RskJ Ubuntu Package for Orchid 0.6.2 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
+You can also download the RskJ Ubuntu Package for Wasabi 1.3.0 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
 
 ```shell
 # first install openjdk-8-jre or oracle-java8-installer
 sudo apt-get install openjdk-8-jre
 
-# download the RskJ pacakge and find the file rskj_0.6.2~yourUbuntuVersionName_amd64.deb
+# download the RskJ pacakge and find the file rskj_1.3.0~yourUbuntuVersionName_amd64.deb
 
 # run this command in the same directory as the deb file above
-dpkg -i rskj_0.6.2~yourUbuntuVersionName_amd64.deb
+dpkg -i rskj_1.3.0~yourUbuntuVersionName_amd64.deb
 ```
 
 We recommend that you check that the SHA256 hash of the downloaded package file matches, prior to installation:

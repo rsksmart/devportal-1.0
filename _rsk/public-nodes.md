@@ -25,8 +25,8 @@ https://public-node.rsk.co
 
 Current and previous versions are accessible through these routes:
 
-* `/`: version `1.2.1` (deprecated)
-* `/1.2.1`, `/1.2.1/`: version `1.2.1` (current)
+* `/`: version `1.3.10` (current)
+* `/1.2.1`, `/1.2.1/`: version `1.2.1` (previous)
 
 
 ## Supported RPC methods

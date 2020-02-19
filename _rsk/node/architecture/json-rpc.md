@@ -127,6 +127,8 @@ RSK is currently supporting the following:
 | `personal_sendTransaction` | YES | |
 | `personal_sign` | NO | |
 | `personal_ecRecover` | NO | |
+| `trace_block` | PARTIALLY | Option "pending" not supported. It also supports block hash as parameter |
+| `trace_transaction` | YES | |
 | `txpool_content` | YES | |
 | `txpool_inspect` | YES | |
 | `txpool_status` | YES | |
