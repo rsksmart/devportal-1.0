@@ -88,6 +88,11 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     //Put your mnemonic here, be careful not to deploy your mnemonic into production!
     const mnemonic = 'A_MNEMONIC';
     ```
+    Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
+    - RSK Mainnet dpath: `m/44’/137’/0’/0`
+    - RSK Testnet dpath: `m/44’/37310’/0’/0`
+
+    For more information check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md).
 
 2. Check the gas price of the network, and update `truffle-config.js` if necessary.
 
