@@ -127,31 +127,44 @@ function setUpMainSearch () {
   }
   const searchInput = document.getElementById('search-input');
   const resultsContainer = document.getElementById('results-container');
-  const searchResultTemplate = `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`
+  const searchResultTemplate =
+    `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`
 
-  const truncate = (str, num_words) => str.split(' ').splice(0, num_words).join(' ');
+  const defaultTruncateWordNum = 20;
+
+  function truncateWords(str, numWords = defaultTruncateWordNum) {
+    return str.split(' ').splice(0, numWords).join(' ');
+  }
 
   function templateMiddleware (prop, text) {
     $('.page-title').text(() => `Search results for "${searchInput.value}"`);
 
     if (prop === 'desc') {
       const searchInputValue = searchInput.value.toLowerCase();
-      const matchValueAndSiblings = new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
+      const matchValueAndSiblings =
+        new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
       const decodedText = decodeURIComponent(text);
 
       const result = [...decodedText.matchAll(matchValueAndSiblings)];
 
       if (!result || result.length < 1) {
-        return '';
+        // No match found, so we cannot skip ahead to that.
+        // Instead we simply return the text from the start.
+        const truncatedDesc = truncateWords(text);
+        const truncatedResult =
+          `<div class="row"><div class="col p-0">${truncatedDesc}</div></div>`;
+        return truncatedResult;
       }
 
-      //only shows the first result and its first 20 words
-      const resultString = truncate(result[0][0], 20);
-      const isUniqueResult = result[0].length == 1;
+      //only shows the first result and its first few words
+      const resultString = truncateWords(result[0][0]);
+      const isUniqueResult = (result[0].length == 1);
       const otherResults =
         `<div class="row pt-0 pl-3" style="font-style: italic;">(multiple matches found)</div>`;
+      const uniqueAndMaybeOtherResults =
+        isUniqueResult ? resultString : resultString + otherResults;
       const parsedResult =
-        `<div class="row"><div class="col p-0">${ isUniqueResult ? resultString : resultString + otherResults}</div></div>`;
+        `<div class="row"><div class="col p-0">${uniqueAndMaybeOtherResults}</div></div>`;
 
       return parsedResult;
     } else if (prop === 'tags') {
