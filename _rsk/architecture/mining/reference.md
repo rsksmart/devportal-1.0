@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Merged mining reference
+tags: rsk, mining, bitcoin
+description: "How RSK leverages the Bitcoin network's consensus mechanism for its own secruity, and adds additional features to prevent double spending"
 collection_order: 4420
 ---
 
