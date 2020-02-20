@@ -11,7 +11,6 @@ RskJ is a Java implementation of the [RSK blockchain](/rsk) node.
 
 <a href="/quick-start/" class="green-button">Start now</a>
 
-
 # Learn more
 
 - [Architecture](/rsk/node/architecture/)

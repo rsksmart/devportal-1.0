@@ -47,9 +47,10 @@ You can configure your own log level, following these [instructions](/rsk/node/c
 
 If you have this error it's possible that you have missed to run rskj's dependencies.
 So please, follow the instructions depending on your operation system:
-  - [On Windows](/rsk/node/contribute/windows)
-  - [On Linux](/rsk/node/contribute/linux)
-  - [On Mac](/rsk/node/contribute/macos)
+
+- [On Windows](/rsk/node/contribute/windows)
+- [On Linux](/rsk/node/contribute/linux)
+- [On Mac](/rsk/node/contribute/macos)
 
 ### Truffle doesn't seem to work connected to RSK
 
