@@ -46,12 +46,12 @@ dpkg -i rskj_1.3.0~yourUbuntuVersionName_amd64.deb
 
 We recommend that you check that the SHA256 hash of the downloaded package file matches, prior to installation:
 
-* `rskj_1.2.1~bionic_amd64.deb`: `1217a52028eff87feef3d46baab9c8be7a7d37811b43646c679f1373b0be4ff0`
-* `rskj_1.2.1_bionic_i386.deb`: `7b31c2cce78e1b43bad4ca0f1de5757bc0454a855e499abe3effdb4388e79c1f`
-* `rskj_1.2.1_trusty_amd64.deb`: `0c638ca45c98ef7e2b767fab46624f25c22f0505c917e11e374be1f2b0d93923`
-* `rskj_1.2.1_trusty_i386.deb`: `1e56f1d360aaa5ef4e654db53c672a46c626532d9089b52c194ae57d7df73c54`
-* `rskj_1.2.1_xenial_amd64.deb`: `d2151daf3d22df58280e44b7e41a82e8a05753c81d8d2304b5121921f44494fa`
-* `rskj_1.2.1_xenial_i386.deb`: `de37059219adc93d82b9ce811ba819163fddc9ab767bb499f75f919e3d00ed2b`
+* `rskj_1.3.0_bionic_amd64.deb`: `57851fda0efe790ce0f45daebc0d7e51b022c82afed4be576d9f02e4d912ae0f`
+* `rskj_1.3.0_bionic_i386.deb`: `ba68f39d0a09306949417de2271254cdb74cbbfd424951ef0c6dd94f4e649e6c`
+* `rskj_1.3.0_trusty_amd64.deb`: `e9e60115fe5d98b8216829817d7b2068ae5eea89fdaa0cbcb3510b3499ca9cee`
+* `rskj_1.3.0_trusty_i386.deb`: `9186e450fd3aff33278500b97a9b0886ba2403c10a94e9d654d7d75fde15c45b`
+* `rskj_1.3.0_xenial_amd64.deb`: `4eddb44be7011b97a49a4f500bb20867234967c18a9f6bc117390021a2963338`
+* `rskj_1.3.0_xenial_i386.deb`: `bf443f3efbb8dcc2da6154ca35ac29942d726fd936f8727aaf942e11449e6801`
 
 ## After installation
 
