@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Troubleshooting
+tags: rsk, rskj, node, faq, troubleshoot
+description: "How to solve some known or frequently encountered issues when working with RskJ"
 collection_order: 2600
 ---
 

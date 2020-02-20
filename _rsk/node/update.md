@@ -1,6 +1,8 @@
 ---
 layout: rsk
-title: Update 
+title: RSK Node Updates
+tags: rsk, rskj, node, update, version
+description: "How update RskJ, the RSK node, to a newer version, and verify that it works correctly. Also sign up for updates to get notified when there is a new version released."
 ---
 
 
