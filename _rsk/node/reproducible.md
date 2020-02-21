@@ -48,7 +48,7 @@ RUN apt-get update -y && \
     apt-get clean
 RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN git clone --single-branch --depth 1 --branch WASABI-1.2.0 https://github.com/rsksmart/rskj.git /code/rskj
+RUN git clone --single-branch --depth 1 --branch WASABI-1.3.0 https://github.com/rsksmart/rskj.git /code/rskj
 WORKDIR /code/rskj
 RUN gpg --verify SHA256SUMS.asc
 RUN sha256sum --check SHA256SUMS.asc
@@ -65,7 +65,7 @@ Run build
 To create a reproducible build, run:
 
 ```bash
-sudo docker build -t rskj-wasabi-1.2.0-reproducible .
+sudo docker build -t rskj-wasabi-1.3.0-reproducible .
 ```
 
 This may take several minutes to complete. What is done is:
@@ -78,7 +78,7 @@ This may take several minutes to complete. What is done is:
 To obtain SHA-256 checksums, run the following command:
 
 ```bash
-sudo docker run --rm rskj-wasabi-1.2.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI-all.jar /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI.jar /code/rskj/rskj-core/build/libs/rskj-core-1.2.0-WASABI.pom
+sudo docker run --rm rskj-wasabi-1.3.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI-all.jar /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI.jar /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI.pom
 ```
 
 Check Results
@@ -87,10 +87,10 @@ After running the build process, a JAR file will be created in ```/code/rskj-cor
 
 You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.
 ```bash
-e3901dd011ee798559ee965186a4a54fdb2233acfd73bbe2e3164f66d821e661  rskj-core/build/libs/rskj-core-1.2.0-WASABI-all.jar
-7176ab053ca10479095c66415807a29b801f2004505ae7b6fde1fb212802cfac  rskj-core/build/libs/rskj-core-1.2.0-WASABI-sources.jar
-0093793bbbcaf3ed9c5dead91b7dd5f36305a9d8f65413f7f03cdb995b9330ce  rskj-core/build/libs/rskj-core-1.2.0-WASABI.jar
-cd4b595eaa5b6f60de6e9fd368e37bc09bec20f2dec572849d7fed53ae7ca390  rskj-core/build/libs/rskj-core-1.2.0-WASABI.pom
+1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd  rskj-core/build/libs/rskj-core-1.3.0-WASABI-all.jar
+5ab02adee2c610d923432704e72601066e78b2d78b9d55a0f4ce2757ab8a1e3f  rskj-core/build/libs/rskj-core-1.2.0-WASABI-sources.jar
+c34c2dbcf2aee1f51b1a0850fa406dece3427b051acf11f2a2ef4d69840278ba  rskj-core/build/libs/rskj-core-1.3.0-WASABI.jar
+60f87f549f72532cabe8f1583c55006636b99ef29ef6bd1ff4e71b907bffe140  rskj-core/build/libs/rskj-core-1.3.0-WASABI.pom
 ```
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).

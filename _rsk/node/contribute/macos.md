@@ -45,7 +45,7 @@ Run these commands on Git command line:
 ```
 git clone --recursive https://github.com/rsksmart/rskj.git
 cd rskj
-git checkout tags/WASABI-1.0.2 -b WASABI-1.0.2
+git checkout tags/WASABI-1.3.0 -b WASABI-1.3.0
 ```
 
 *Note:* It is better to download the code into a short path.

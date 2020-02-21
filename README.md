@@ -9,7 +9,6 @@
 - ***RubyGems*** (which you can check by running `gem -v`)
 - ***GCC and Make*** (in case your system doesn’t have them installed, which you can check by running `gcc -v`,`g++ -v` and `make -v` in your system’s command line interface)
 
-
 ## Set up
 
 Clone this repository, and run the following commands in its directory:
@@ -127,6 +126,22 @@ and the search functionality.
   - `description`:
     If this is not present, it defaults to the first 200 words in the content.
     It is a good idea to set this to include any words or phrases which you think a reader would search for when looking for this page.
+
+### New version
+
+When a new version of RSKj is released:
+
+- Update the version numbers list in the public nodes page:
+  - `_rsk/public-nodes.md`
+- Update the version numbers and checksums in the installation instructions pages:
+  - `_rsk/node/install/java.md`
+  - `_rsk/node/contribute/linux.md`
+  - `_rsk/node/contribute/macos.md`
+  - `_rsk/node/install/ubuntu.md`
+- Update the version numbers and checksums in the reproducible builds page:
+  - `_rsk/node/reproducible.md`
+- Update to add/ remove/ update any RPC methods, if relevant, in the RPC page
+  - `_rsk/node/architecture/json-rpc.md`
 
 ### Issues
 
