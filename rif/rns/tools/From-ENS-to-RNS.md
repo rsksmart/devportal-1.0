@@ -1,4 +1,5 @@
 ---
 layout: rsk
-title: Form ENS to RNS
+title: From ENS to RNS
+skip_search: true
 ---
