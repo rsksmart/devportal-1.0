@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Using RSK Nodes
+tags: rsk, networks, versions, rpc
 description: "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
 collection_order: 2200
 ---

@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RSK Blockchain
+tags: rsk
+description: "What is RSK?"
 collection_order: 1000
 permalink: /rsk/
 ---

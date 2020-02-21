@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Node (RSKJ)
+tags: rsk, rskj, node
+description: "Learn more about RskJ, a node implementation for the RSK blockchain"
 collection_order: 2000
 permalink: /rsk/node/
 ---
@@ -8,7 +10,6 @@ permalink: /rsk/node/
 RskJ is a Java implementation of the [RSK blockchain](/rsk) node.
 
 <a href="/quick-start/" class="green-button">Start now</a>
-
 
 # Learn more
 
