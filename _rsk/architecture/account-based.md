@@ -2,7 +2,7 @@
 layout: rsk
 title: Account Based RSK Addresses
 collection_order: 4200
-tags: rsk, checksum, chainId, address
+tags: rsk, checksum, chainId, address, derivation
 description: "EIP1191 chainId is used in RSK addresses as a checksum"
 ---
 
@@ -12,13 +12,20 @@ RSK Addresses incorporate an optional blockchain identifier (also known as `chai
 
 Check out the already [integrated wallets](/develop/apps/wallets) or [integrate your wallet](/develop/apps/integrate).
 
+## Derivation path info
+
+```
+RSK Mainnet: m/44'/137'/0'/0
+RSK Testnet: m/44'/37310'/0'/0
+```
+
 ## Checksum
 
 RSK implements [EIP-1191](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1191.md) to protect users from losing funds by mixing addresses of different Ethereum based networks.
 
 [In this document](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1191.md), you can find out how to apply the checksum and validate an address. This EIP is also supported by Web3 and hardware wallets.
 
-## `chainId`
+## ChainId
 
 To avoid a replay attack by using an already-signed transaction, originally broadcast in “network A”, and subsequently replayed it in “network B”, the EVM-based networks use `chainId` as part of the transaction properties.
 All `chainId`s can be found at [chainid.network](https://chainid.network/).
