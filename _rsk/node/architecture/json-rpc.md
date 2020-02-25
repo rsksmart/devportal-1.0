@@ -16,68 +16,68 @@ RSK currently supports the following:
 
 | Method | Supported | Comments |
 | ------ | ------ | ------ |
-| `web3_clientVersion` | YES | |
-| `web3_sha3` | YES | |
-| `net_version` | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
-| `net_peerCount` | YES | |
-| `net_listening` | YES | |
-| `eth_protocolVersion` | YES | |
-| `eth_syncing` | YES | |
-| `eth_coinbase` | YES | |
-| `eth_mining` | YES | |
-| `eth_hashrate` | YES | |
-| `eth_gasPrice` | YES | |
-| `eth_accounts` | YES | |
-| `eth_blockNumber` | YES | |
-| `eth_getBalance` | YES | |
-| `eth_getStorageAt` | YES | |
-| `eth_getTransactionCount` | YES | |
-| `eth_getBlockTransactionCountByHash` | YES | |
-| `eth_getBlockTransactionCountByNumber` | YES | |
-| `eth_getUncleCountByBlockHash` | YES | |
-| `eth_getUncleCountByBlockNumber` | PARTIALLY | Option "pending" not yet supported. |
-| `eth_getCode` | PARTIALLY | Option "pending" not yet supported. |
-| `eth_sign` | YES | |
-| `eth_sendTransaction` | YES | |
-| `eth_sendRawTransaction` | YES | |
-| `eth_call` | YES | |
-| `eth_estimateGas` | YES | |
-| `eth_getBlockByHash` | YES | |
-| `eth_getBlockByNumber` | PARTIALLY | Option "pending" not yet supported. |
-| `eth_getTransactionByHash` | YES | |
-| `eth_getTransactionByBlockHashAndIndex` | YES | |
-| `eth_getTransactionByBlockNumberAndIndex` | PARTIALLY | Option "pending" not yet supported. |
-| `eth_getTransactionReceipt` | YES | |
-| `eth_getUncleByBlockHashAndIndex` | YES | |
-| `eth_getUncleByBlockNumberAndIndex` | PARTIALLY | Option "pending" not yet supported. |
+| [`web3_clientVersion`](#web3_clientversion) | YES | |
+| [`web3_sha3`](#web3_sha3) | YES | |
+| [`net_version`](#net_version) | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
+| [`net_peerCount`](#net_peercount) | YES | |
+| [`net_listening`](#net_listening) | YES | |
+| [`eth_protocolVersion`](#eth_protocolversion) | YES | |
+| [`eth_syncing`](#eth_syncing) | YES | |
+| [`eth_coinbase`](#eth_coinbase) | YES | |
+| [`eth_mining`](#eth_mining) | YES | |
+| [`eth_hashrate`](#eth_hashrate) | YES | |
+| [`eth_gasPrice`](#eth_gasprice) | YES | |
+| [`eth_accounts`](#eth_accounts) | YES | |
+| [`eth_blockNumber`](#eth_blocknumber) | YES | |
+| [`eth_getBalance`](#eth_getbalance) | YES | |
+| [`eth_getStorageAt`](#eth_getstorageat) | YES | |
+| [`eth_getTransactionCount`](#eth_gettransactioncount) | YES | |
+| [`eth_getBlockTransactionCountByHash`](#eth_getblocktransactioncountbyhash) | YES | |
+| [`eth_getBlockTransactionCountByNumber`](#eth_getblocktransactioncountbynumber) | YES | |
+| [`eth_getUncleCountByBlockHash`](#eth_getunclecountbyblockhash) | YES | |
+| [`eth_getUncleCountByBlockNumber`](#eth_getunclecountbyblocknumber) | PARTIALLY | Option "pending" not yet supported. |
+| [`eth_getCode`](#eth_getcode) | PARTIALLY | Option "pending" not yet supported. |
+| [`eth_sign`](#eth_sign) | YES | |
+| [`eth_sendTransaction`](#eth_sendtransaction) | YES | |
+| [`eth_sendRawTransaction`](#eth_sendrawtransaction) | YES | |
+| [`eth_call`](#eth_call) | YES | |
+| [`eth_estimateGas`](#eth_estimategas) | YES | |
+| [`eth_getBlockByHash`](#eth_getblockbyhash) | YES | |
+| [`eth_getBlockByNumber`](#eth_getblockbynumber) | PARTIALLY | Option "pending" not yet supported. |
+| [`eth_getTransactionByHash`](#eth_gettransactionbyhash) | YES | |
+| [`eth_getTransactionByBlockHashAndIndex`](#eth_gettransactionbyblockhashandindex) | YES | |
+| [`eth_getTransactionByBlockNumberAndIndex`](#eth_gettransactionbyblocknumberandindex) | PARTIALLY | Option "pending" not yet supported. |
+| [`eth_getTransactionReceipt`](#eth_gettransactionreceipt) | YES | |
+| [`eth_getUncleByBlockHashAndIndex`](#eth_getunclebyblockhashandindex) | YES | |
+| [`eth_getUncleByBlockNumberAndIndex`](#eth_getunclebyblocknumberandindex) | PARTIALLY | Option "pending" not yet supported. |
 | `eth_getCompilers` | - | For security reasons, we've decided not to include compilers in node. |
 | `eth_compileLLL` | - | For security reasons, we've decided not to include compilers in node. |
 | `eth_compileSolidity` | - | For security reasons, we've decided not to include compilers in node. |
 | `eth_compileSerpent` | - | For security reasons, we've decided not to include compilers in node. |
-| `eth_newFilter` | YES | |
-| `eth_newBlockFilter` | YES | |
-| `eth_newPendingTransactionFilter` | YES | |
-| `eth_uninstallFilter` | YES | |
-| `eth_getFilterChanges` | YES | |
-| `eth_getFilterLogs` | YES | |
-| `eth_getLogs` | YES | |
-| `eth_getWork` | YES | Method name is `mnr_getWork`. |
-| `eth_submitWork` | YES | Method name is `mnr_submitBitcoinBlock`. |
-| `eth_submitHashrate` | - | |
-| `db_putString` | - | Deprecated |
-| `db_getString` | - | Deprecated |
-| `db_putHex` | - | Deprecated |
-| `db_getHex` | - | Deprecated |
-| `shh_post` | - | Whisper protocol not supported. |
-| `shh_version` | - | Whisper protocol not supported. |
-| `shh_newIdentity` | - | Whisper protocol not supported. |
-| `shh_hasIdentity` | - | Whisper protocol not supported. |
-| `shh_newGroup` | - | Whisper protocol not supported. |
-| `shh_addToGroup` | - | Whisper protocol not supported. |
-| `shh_newFilter` | - | Whisper protocol not supported. |
-| `shh_uninstallFilter` | - | Whisper protocol not supported. |
-| `shh_getFilterChanges` | - | Whisper protocol not supported. |
-| `shh_getMessages` | - | Whisper protocol not supported. |
+| [`eth_newFilter`](#eth_newfilter) | YES | |
+| [`eth_newBlockFilter`](#eth_newblockfilter) | YES | |
+| [`eth_newPendingTransactionFilter`](#eth_newpendingtransactionfilter) | YES | |
+| [`eth_uninstallFilter`](#eth_uninstallfilter) | YES | |
+| [`eth_getFilterChanges`](#eth_getfilterchanges) | YES | |
+| [`eth_getFilterLogs`](#eth_getfilterlogs) | YES | |
+| [`eth_getLogs`](#eth_getlogs) | YES | |
+| [`eth_getWork`](#eth_getwork) | YES | Method name is `mnr_getWork`. |
+| [`eth_submitWork`](#eth_submitwork) | YES | Method name is `mnr_submitBitcoinBlock`. |
+| eth_submitHashrate | - | |
+| db_putString | - | Deprecated |
+| db_getString | - | Deprecated |
+| db_putHex | - | Deprecated |
+| db_getHex | - | Deprecated |
+| shh_post | - | Whisper protocol not supported. |
+| shh_version | - | Whisper protocol not supported. |
+| shh_newIdentity | - | Whisper protocol not supported. |
+| shh_hasIdentity | - | Whisper protocol not supported. |
+| shh_newGroup | - | Whisper protocol not supported. |
+| shh_addToGroup | - | Whisper protocol not supported. |
+| shh_newFilter | - | Whisper protocol not supported. |
+| shh_uninstallFilter | - | Whisper protocol not supported. |
+| shh_getFilterChanges | - | Whisper protocol not supported. |
+| shh_getMessages | - | Whisper protocol not supported. |
 
 ### JSON RPC method details
 
