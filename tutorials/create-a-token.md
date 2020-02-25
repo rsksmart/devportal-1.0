@@ -6,7 +6,7 @@ title: Create a token
 
 **Install truffle**
 
-Truffle is a development environment, testing framework and asset pipeline for blockchains. 
+Truffle is a development environment, testing framework and asset pipeline for blockchains.
 
 ```shell
 npm install -g truffle
@@ -139,14 +139,14 @@ In my editor,it shows like this:
     This string in the last line is our address.
   * 5.3 To get funds to use in this network.
     > We mentioned before that RSK Testnet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
-    <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token4.png"></div> 
+    <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token4.png"></div>
 
 Steps of usage:
 
-* 5.3.1 Enter the address we got earlier. 
-* 5.3.2 Enter the Enter check code. 
+* 5.3.1 Enter the address we got earlier.
+* 5.3.2 Enter the Enter check code.
 * 5.3.3 Submit form.
-  <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token5.png"></div> 
+  <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token5.png"></div>
 * 5.3.4 Finally it will show us a successful page.
   <div style="text-align:center"><img src="/assets/img/create-token/create-token6.png"></div>
 * 5.3.5 Now, let's check our balance in the console.
@@ -196,7 +196,7 @@ Steps of usage:
 
       function () public payable {
         if (msg.value > 0) {
-          emit Yes('Thanks for donating RBTC! :)');
+          emit Yes('Thanks for donating R-BTC! :)');
         } else {
           emit No('Error 404: Function not found :P');
         }
@@ -239,7 +239,7 @@ Steps of usage:
   ```java
   constructor() public {
     totalSupply_ = INITIAL_SUPPLY * (10**uint(decimals));
-    balances[msg.sender] = totalSupply_; 
+    balances[msg.sender] = totalSupply_;
   }
   ```
     * 7.5.1 The number of the INITIAL_SUPPLY times the precision of the decimals will be assigned to the totalSupply_ of the BasicToken contract with
@@ -266,7 +266,7 @@ Steps of usage:
   ```java
     function () public payable {
         if (msg.value > 0) {
-          emit Yes('Thanks for donating RBTC! :)');
+          emit Yes('Thanks for donating R-BTC! :)');
         } else {
           emit No('Error 404: Function not found :P');
         }
@@ -281,9 +281,9 @@ Steps of usage:
   ```
 
 **8. Creating the Migration**
-  
+
 * 8.1 Create a file named 2_deploy_token.js in **~/token/migrations**
-  <div style="text-align:center"><img src="/assets/img/create-token/create-token7.png"></div> 
+  <div style="text-align:center"><img src="/assets/img/create-token/create-token7.png"></div>
 * 8.2 The code should look like:
   ```javascript
     var YourNewToken = artifacts.require("./YourNewToken.sol");
@@ -343,7 +343,7 @@ Steps of usage:
   ```
   > The migration contract will be deployed first. Truffle gives us the transaction hashes of each operation, so we can check for details or logs later. Here is the complete output that I’ve received.
 * 9.4 To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
-  <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token8.png"></div> 
+  <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token8.png"></div>
   <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token9.png"></div>
 
 

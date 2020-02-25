@@ -19,7 +19,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/quick-start">
             <div class="content-container">
                 <p class="card-title rsk_green">Getting Started</p>
-                <p>SmartBitcoin (RBTC) is linked 1:1 to Bitcoin (1 RBTC = 1BTC)</p>
+                <p>SmartBitcoin (R-BTC) is linked 1:1 to Bitcoin (1 R-BTC = 1BTC)</p>
             </div>
             </a><div class="btn-container "><a href="/quick-start">
                 </a><a class="green" href="/quick-start">Read More</a>
