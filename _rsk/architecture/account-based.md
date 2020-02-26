@@ -2,8 +2,8 @@
 layout: rsk
 title: Account Based RSK Addresses
 collection_order: 4200
-tags: rsk, checksum, chainId, address, derivation
-description: "EIP1191 chainId is used in RSK addresses as a checksum"
+tags: rsk, checksum, chainId, address, derivation, eip1191, eip155, bip44, slip44
+description: "EIP-1191 chainId is used in RSK addresses as a checksum. m/44'/137'/0'/0 is the derivation path used for BIP-44 compatible wallets."
 ---
 
 RSK Addresses incorporate an optional blockchain identifier (also known as `chainId`). If the `chainId` is not present, it is assumed the address refers to the RSK main network.
@@ -14,10 +14,22 @@ Check out the already [integrated wallets](/develop/apps/wallets) or [integrate 
 
 ## Derivation path info
 
+When using
+[BIP-44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki "Multi-Account Hierarchy for Deterministic Wallets")-compatible
+wallet software, you will need to specify a derivation path.
+
 ```
 RSK Mainnet: m/44'/137'/0'/0
 RSK Testnet: m/44'/37310'/0'/0
 ```
+
+- The first level of the hierarchy is for *purpose*,
+  and is always `44'`, as per the BIP44 specification.
+- The second level of the hierarchy is for the *registered coin type*
+  and should be `137'` for RSK Mainnet, as per the
+  [SLIP-44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md "Registered coin types for BIP-0044"),
+  and [RSKIP-57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md)  specifications.
+
 
 ## Checksum
 
