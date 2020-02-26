@@ -4,11 +4,10 @@ title: Conversion with node and console
 collection_order: 3140
 ---
 
-### Summary
 This document explains how to try the 2-way peg mechanism using Ledger.
 - [General requirements](#general-requirements)
-- [Lock: From BTC to RBTC](#from-btc-to-rbtc)
-- [Release: From RBTC to BTC](#from-rbtc-to-btc)
+- [Lock: From BTC to R-BTC](#from-btc-to-r-btc)
+- [Release: From R-BTC to BTC](#from-r-btc-to-btc)
 
 ## General Requirements
 * Clone [this project](https://github.com/rsksmart/utilities/tree/master/peg/hw/ledger).
@@ -18,8 +17,8 @@ This document explains how to try the 2-way peg mechanism using Ledger.
 * Use Ledger firmware less than `1.5.5`
 
 
-## From BTC to RBTC
-:exclamation: **Before start:** read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-rbtc-conversion)
+## From BTC to R-BTC
+:exclamation: **Before start:** read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-r-btc-conversion)
 1. Set a derivation path in the key `derivationPath` in `config.json` file. You should use BTC mainnet/testnet derivation path `44'/0'/0'/0/0`.
 2. Unlock Ledger and open the **Bitcoin App**.
 
@@ -51,18 +50,16 @@ Derivation Path: 44'/1'/0'/0/0
 
 7. Wait the stipulated time.
 
-8. Then use our [Testnet Explorer](https://explorer.testnet.rsk.co) or [Mainnet Explorer](https://explorer.rsk.co) to see your RBTC balance.
+8. Then use our [Testnet Explorer](https://explorer.testnet.rsk.co) or [Mainnet Explorer](https://explorer.rsk.co) to see your R-BTC balance.
 
-
-
-## From RBTC to BTC
-:exclamation: **Before start:** read [release requirements](/rsk/rbtc/conversion/#2-rbtc-to-btc-conversion).
+## From R-BTC to BTC
+:exclamation: **Before start:** read [release requirements](/rsk/rbtc/conversion/#2-r-btc-to-btc-conversion).
 1. Set a derivation path in the key `derivationPath` in `./config.json` file. You should use BTC mainnet/testnet derivation path `44'/0'/0'/0/0`.
 
 2. Set the correct `chainId` in the `config.json` file. It depends on the network you are going to use (See [EIP-155](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-155.md#list-of-chain-ids)).
 
 3. Choose the value to send and set it in hexa in `valueToSend` in `config.json` file.
-*The minimum amount to send is 0.005 RBTC for Testnet and 0.008 RBTC for Mainnet*
+*The minimum amount to send is 0.005 R-BTC for Testnet and 0.008 R-BTC for Mainnet*
 
 4. Unlock Ledger and open **RSK App**.
 

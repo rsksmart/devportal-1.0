@@ -1,15 +1,11 @@
 ---
 layout: rsk
-title: Conversion
+title: BTC to R-BTC Conversion
 collection_order: 3100
 permalink: /rsk/rbtc/conversion/
 ---
 
-## BTC RBTC Conversion
-
-### Introduction
-
-In this article we will explain step by step on how to convert from BTC to RBTC, and vice versa. The process of conversion is a **2-way peg** mechanism, which locks BTC token on BTC network in BTC-to-RBTC conversion, and releases the BTC token during RBTC-to-BTC conversion.
+In this article we will explain step by step on how to convert from BTC to R-BTC, and vice versa. The process of conversion is a **2-way peg** mechanism, which locks BTC token on BTC network in BTC-to-R-BTC conversion, and releases the BTC token during R-BTC-to-BTC conversion.
 
 <div class="fade alert alert-warning show">IMPORTANT: WHITELIST PROCESS. To use the 2-way-peg you must first <a href="/rsk/rbtc/conversion/whitelist">get whitelisted</a>.</div>
 
@@ -23,12 +19,12 @@ You can try the peg process using either a hardware wallet, or using software:
 
 ### Testnet Guide
 
-In this section we will go over the steps of converting BTC to RBTC, and vice versa on the BTC and RBTC testnets.
+In this section we will go over the steps of converting BTC to R-BTC, and vice versa on the BTC and R-BTC testnets.
 
 Note:
 The minimum amount of Bitcoin to convert is **0.01 BTC** for Testnet.
 
-#### 1. BTC to RBTC conversion
+#### 1. BTC to R-BTC conversion
 
 **1.1 Connect a wallet to BTC testnet**
 
@@ -66,30 +62,30 @@ Once you have the RSK Federation address, you can send Bitcoin to it from your w
 
 > Note: You need to send a minimum amount of 0.01 BTC for conversion.
 
-**1.5 Get RBTC address with BTC private key**
+**1.5 Get R-BTC address with BTC private key**
 
-You can get a corresponding RBTC address with your BTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).
+You can get a corresponding R-BTC address with your BTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).
 
 > Note: when entering Bitcoin private key do not include *p2pkh:* in the front.
 
-**1.6 Check RBTC balance on Testnet**
+**1.6 Check R-BTC balance on Testnet**
 
-You can check balance of above RBTC address on Metamask, MyCrypto or any RSK testnet compatible wallets.
+You can check balance of above R-BTC address on Metamask, MyCrypto or any RSK testnet compatible wallets.
 
-> Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your RBTC balance
+> Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your R-BTC balance
 
-#### 2. RBTC to BTC conversion
+#### 2. R-BTC to BTC conversion
 
-**2.1 Get BTC address with RBTC private key**
+**2.1 Get BTC address with R-BTC private key**
 
 If you forgot BTC public address you can retrieve it with RSK private key from [https://utils.rsk.co/](https://utils.rsk.co/).
 
 
-**2.2 Send RBTC to RSK Bridge Contract**
+**2.2 Send R-BTC to RSK Bridge Contract**
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> Note: The minimum amount to send is 0.005 RBTC for Testnet
+> Note: The minimum amount to send is 0.005 R-BTC for Testnet
 Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail. Gas Price can be set to 0.06 gwei.
 
 ![Customize Gas in Metamask before send transaction on RSK](/dist/images/metamask-gas-limit.png)
@@ -101,12 +97,12 @@ You can either use Electrum wallet downloaded earlier or from any Bitcoin explor
 
 ### Mainnet Guide
 
-In this section we will go over the steps of converting BTC to RBTC and vice versa in BTC and RBTC mainnet.
+In this section we will go over the steps of converting BTC to R-BTC and vice versa in BTC and R-BTC mainnet.
 
 Note:
 The minimum amount of Bitcoin to convert is **0.01 BTC** for Mainnet.
 
-#### 1. BTC to RBTC conversion
+#### 1. BTC to R-BTC conversion
 
 **1.1 Get a BTC address with balance**
 
@@ -144,29 +140,29 @@ To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 > 100 blocks * 10 minutes/block = 1000 minutes = 16.667 hours approx.
 
-**1.4 Get RBTC address with BTC private key**
+**1.4 Get R-BTC address with BTC private key**
 
-You can get a corresponding RBTC address with your BTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).
+You can get a corresponding R-BTC address with your BTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).
 
 > Note: when entering Bitcoin private key do not include *p2pkh:* in the front.
 
-**1.5 Check RBTC balance**
+**1.5 Check R-BTC balance**
 
-You can check balance of RBTC address on Metamask, MyCrypto, or any RSK compatible wallets.
+You can check balance of R-BTC address on Metamask, MyCrypto, or any RSK compatible wallets.
 
-> Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your RBTC balance
+> Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your R-BTC balance
 
-#### 2. RBTC to BTC conversion
+#### 2. R-BTC to BTC conversion
 
-**2.1 Get BTC address with RBTC private key**
+**2.1 Get BTC address with R-BTC private key**
 
 If you forgot BTC public address you can retrieve it with RSK private key from [https://utils.rsk.co/](https://utils.rsk.co/).
 
-**2.2 Send RBTC to RSK Bridge Contract**
+**2.2 Send R-BTC to RSK Bridge Contract**
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> Note: The minimum amount to send is 0.008 RBTC for Mainnet
+> Note: The minimum amount to send is 0.008 R-BTC for Mainnet
 Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail. Gas Price can be set to 0.06 gwei.
 
 ![Customize Gas in Metamask before send transaction on RSK](/dist/images/metamask-gas-limit.png)
@@ -191,7 +187,7 @@ RSK Federation address has changed three times since RSK mainnet launch.
 
 **2. Do I lose my Bitcoin if the RSK Federation address change during my transfer?**
 
-There is a grace period for the RSK Federation address change. You will still be able to lock Bitcoin and get RBTC during the grace period. However, any Bitcoin sent to the old RSK Federation address will be lost post to the grace period.
+There is a grace period for the RSK Federation address change. You will still be able to lock Bitcoin and get R-BTC during the grace period. However, any Bitcoin sent to the old RSK Federation address will be lost post to the grace period.
 
 ### Feedback
 

@@ -128,7 +128,7 @@ function setUpMainSearch () {
   const searchInput = document.getElementById('search-input');
   const resultsContainer = document.getElementById('results-container');
   const searchResultTemplate =
-    `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`
+    `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`;
 
   const defaultTruncateWordNum = 20;
 
