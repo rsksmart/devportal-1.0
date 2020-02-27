@@ -35,6 +35,7 @@ async addr(domain: string, chainId?: ChainId): Promise<string>
 - [KB007](/rif/rns/libs/javascript/Errors)
 
 **Examples**
+
 Get an address:
 
 ```javascript
@@ -89,7 +90,6 @@ async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
 - `boolean`: true if available, false if not
 
 **Throws**
-- [KB008](/rif/rns/libs/javascript/Errors)
 - [KB009](/rif/rns/libs/javascript/Errors)
 - [KB010](/rif/rns/libs/javascript/Errors)
 - [KB011](/rif/rns/libs/javascript/Errors)
@@ -101,6 +101,37 @@ Check if `example.testing.rsk` subdomain is available:
 
 ```javascript
 rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
+```
+
+### `createSubdomain`
+
+Creates a new subdomain under the given domain tree.
+> Precondition: the sender should be the owner of the parent domain.
+
+**Signature**
+```javascript
+async createSubdomain(domain: string, label: string, owner: string): Promise<void>
+```
+
+**Parameters**
+- `domain`: Parent `.rsk` domain. For example, `wallet.rsk`
+- `label`: Subdomain to register. For example, `alice`
+- `owner`: The new owner's address
+
+**Throws**
+- [KB009](/rif/rns/libs/javascript/Errors)
+- [KB010](/rif/rns/libs/javascript/Errors)
+- [KB011](/rif/rns/libs/javascript/Errors)
+- [KB012](/rif/rns/libs/javascript/Errors)
+- [KB015](/rif/rns/libs/javascript/Errors)
+
+**Example**
+
+Register `example.testing.rsk` and give ownership to `0x0000000000000000000000000000000000000001`:
+
+```javascript
+const newOwnerAddress = '0x0000000000000000000000000000000000000001';
+await rns.createSubdomain('testing.rsk', 'example', newOwnerAddress);
 ```
 
 ## Advanced operations
