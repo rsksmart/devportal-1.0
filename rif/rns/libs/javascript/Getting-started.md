@@ -47,6 +47,7 @@ rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
 Create a subdomain under my parent domain:
+
 ```javascript
 const newOwnerAddress = '0x0000000000000000000000000000000000000001';
 rns.createSubdomain('mydomain.rsk', 'example', newOwnerAddress);

@@ -15,17 +15,19 @@ tags: rns, javascript
 Get the address of a given domain and chain. If `chainId` is not provided, it resolves current blockchain address.
 
 **Signature**
+
 ```javascript
 async addr(domain: string, chainId?: ChainId): Promise<string>
 ```
 
 **Parameters**
+
 - `domain`: Domain to be resolved.
 - `chainId`: Chain identifier listed in [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
 
 **Returns**
-- `string`: the address resolution
 
+- `string`: the address resolution
 
 **Throws**
 - [KB001](/rif/rns/libs/javascript/Errors)
@@ -53,14 +55,17 @@ rns.addr('testing.rsk', '0x80000000').then(console.log)
 Reverse lookup: Get the name of a given address.
 
 **Signature**
+
 ```javascript
 async reverse(address: string): Promise<string>
 ```
 
 **Parameters**
+
 - `address`: address to be resolved.
 
 **Returns**
+
 - `string`: Domain or subdomain associated to the given address.
 
 **Throws**
@@ -78,15 +83,18 @@ rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 Checks if the given label subdomain is available under the given domain tree.
 
 **Signature**
+
 ```javascript
 async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
 ```
 
 **Parameters**
+
 - `domain`: Parent `.rsk` domain. For example, `wallet.rsk`
 - `label`: Subdomain whose availability should be checked. For example, `alice`
 
 **Returns**
+
 - `boolean`: true if available, false if not
 
 **Throws**
@@ -106,14 +114,17 @@ rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
 ### `createSubdomain`
 
 Creates a new subdomain under the given domain tree.
+
 > Precondition: the sender should be the owner of the parent domain.
 
 **Signature**
+
 ```javascript
 async createSubdomain(domain: string, label: string, owner: string): Promise<void>
 ```
 
 **Parameters**
+
 - `domain`: Parent `.rsk` domain. For example, `wallet.rsk`
 - `label`: Subdomain to register. For example, `alice`
 - `owner`: The new owner's address

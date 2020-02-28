@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RNS JS Library - Error knowledge base
-tags: rns, javascript
+tags: rns, javascript, error
 ---
 
 ## `KB001`
