@@ -55,8 +55,6 @@ $(document).ready(function () {
       $('.navbar-toggler-icon').addClass('header-scrolled');
       $('.scrollup').addClass('header-scrolled');
       $('.dropdown-item').addClass('header-scrolled');
-      $("#logo").attr("src", "img/logo-defi-dark.svg");
-      $("#logo_inner").attr("src", "../img/logo-defi-dark.svg");
 
     } else {
       $('.navbar').removeClass('header-scrolled');
@@ -64,8 +62,6 @@ $(document).ready(function () {
       $('.navbar-toggler-icon').removeClass('header-scrolled');
       $('.scrollup').removeClass('header-scrolled');
       $('.dropdown-item').removeClass('header-scrolled');
-      $("#logo").attr("src", "img/logo-defi.svg");
-      $("#logo_inner").attr("src", "../img/logo-defi.svg");
     }
   });
 });
