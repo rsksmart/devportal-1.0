@@ -21,7 +21,7 @@ You can edit Solidity using any text editor but it is a good idea to use more ad
 
 There is an open source tool called Truffle that facilitates development a lot since it allows you to connect to your local RSK Smart node and call the compiler, run unit tests and publish your contracts in a very easy way. We have an example project showing the usage of Truffle and Ganache with a local RSK node [here](https://github.com/rsksmart/truffle-integration).
 
-In this tutorial, we will use Truffle for compiling and publishing your smart contracts. 
+In this tutorial, we will use Truffle for compiling and publishing your smart contracts.
 
 Run the following commands to install truffle on your local machine
 
@@ -43,7 +43,7 @@ The init command will create 3 folders and a configuration file for this project
 
 In this tutorial, we are going to use the token contract code from [Consensys/Token] (https://github.com/ConsenSys/Tokens) as the example.
 
-Now create two files named EIP20.sol and 
+Now create two files named EIP20.sol and
 
 EIP20Interface.sol content:
 
@@ -130,7 +130,7 @@ contract EIP20 is EIP20Interface {
         name = _tokenName;                                   // Set the name for display purposes
         decimals = _decimalUnits;                            // Amount of decimals for display purposes
         symbol = _tokenSymbol;                               // Set the symbol for display purposes
-        emit Transfer(msg.sender, msg.sender, 0); 
+        emit Transfer(msg.sender, msg.sender, 0);
         emit Approval(msg.sender, msg.sender, 0);
     }
 
@@ -170,7 +170,7 @@ contract EIP20 is EIP20Interface {
 }
 ```
 
-We also need to create a migration script in the migration folder. 
+We also need to create a migration script in the migration folder.
 `migrations/2_deploy_tokens.js`
 
 ```
@@ -194,7 +194,7 @@ We are going to deploy the example smart contract on to RSK Testnet.
 
 #### Testnet and Faucet
 
-First we need to obtain an account on RSK Testnet and get some free RSK token from the testnet Faucet. 
+First we need to obtain an account on RSK Testnet and get some free RSK token from the testnet Faucet.
 
 **Create new Account with MetaMask**
 
@@ -202,7 +202,7 @@ First we need to obtain an account on RSK Testnet and get some free RSK token fr
 1. In the network options, choose custom RPC
 1. Enter RSK Testnet as the Network Name
 1. Enter https://public-node.testnet.rsk.co as the RPC URL
-1. Enter RBTC as SymbolPut and Save
+1. Enter R-BTC as SymbolPut and Save
 1. Copy the account address
 
 <img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/dist/images/metamask-testnet.png">
@@ -251,7 +251,7 @@ Run the following commands in Terminal to compile and deploy the contracts.
 ```shell
 truffle console --network rskTestnet
 truffle compile
-truffle migrate 
+truffle migrate
 ```
 
 ## Step 3 : Execute the Smart Contract
@@ -266,11 +266,11 @@ Now type the following command into truffle console.
 EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F44d2093A2856997")))
 ```
 
-EIP20 is the name of our contract. This command will print out the balance of account address `0xa07982385a16f0C7a9eEbAD5F44d2093A2856997` as a big number. To see it as an integer, change the command to 
+EIP20 is the name of our contract. This command will print out the balance of account address `0xa07982385a16f0C7a9eEbAD5F44d2093A2856997` as a big number. To see it as an integer, change the command to
 
 ```javascript
 EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F44d2093A2856997").then(b=>b.toNumber())))
-``` 
+```
 
 **Transfer Token Directly Between Two Accounts**
 
@@ -284,7 +284,7 @@ After its success execution, check the minter account's balance again to see tha
 
 ```javascript
 EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F44d2093A2856997").then(b=>b.toNumber())))
-``` 
+```
 
 ## Step 4 : Deploy to Mainnet
 
@@ -296,11 +296,11 @@ The [public node](/rsk/public-nodes) of RSK Main Net is https://public-node.rsk.
 
 #### Mainnet Explorer
 
-You will be able to check the Mainnet's transactions and blocks in real time at 
+You will be able to check the Mainnet's transactions and blocks in real time at
 [explorer.rsk.co/](https://explorer.rsk.co/)
 
-#### Get RBTC through 2-way peg
+#### Get R-BTC through 2-way peg
 
-To deploy onto Mainnet, we need to get some RBTC through the 2-way peg mechanism between BTC and RBTC.
+To deploy onto Mainnet, we need to get some R-BTC through the 2-way peg mechanism between BTC and R-BTC.
 
 - Detailed tutorial [2-way peg](/rsk/architecture/2-way-peg/)

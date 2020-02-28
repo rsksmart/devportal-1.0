@@ -19,6 +19,6 @@ Now MetaMask is ready to use with RSK!
 
 ### Important Notes:
 
-- Currency may be displayed as ETH. They are actually RBTC.
+- Currency may be displayed as ETH. They are actually R-BTC.
 - The node must have CORS enabled. It can be fully enabled using `'*'`.
   - Please review the [configuration file reference](/rsk/node/configure).

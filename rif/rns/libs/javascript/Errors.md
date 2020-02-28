@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RNS JS Library - Error knowledge base
-tags: rns, javascript
+tags: rns, javascript, error
 ---
 
 ## `KB001`
@@ -87,3 +87,9 @@ tags: rns, javascript
 **Message**: No reverse resolution set
 
 **Description**: The given address has not the reverse resolution set
+
+## `KB015`
+
+**Message**: There are no accounts to sign the transaction
+
+**Description**: The web3 instance provided does not have a private key associated

@@ -12,7 +12,7 @@ title: Send RIF Tokens through Metamask
         * Network: Name RSK Mainnet        
         * New RPC URL https://public-node.rsk.co:443
         * Chain ID 30
-        * Symbol rBTC
+        * Symbol R-BTC
         * Block Explorer URL https://explorer.rsk.co
 
 ![](/assets/img/tutorials/send-tokens-through-metamask/metamask-settings.png)

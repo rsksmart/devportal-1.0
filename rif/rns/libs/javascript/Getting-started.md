@@ -46,6 +46,13 @@ Reverse lookup: Get the name of a given address:
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
+Create a subdomain under my parent domain:
+
+```javascript
+const newOwnerAddress = '0x0000000000000000000000000000000000000001';
+rns.createSubdomain('mydomain.rsk', 'example', newOwnerAddress);
+```
+
 Check out the [operations](/rif/rns/libs/javascript/Operations)
 specification for more details.
 

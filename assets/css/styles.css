@@ -1394,7 +1394,12 @@ webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
 	border-top: none; 
 	border-left: none; 
 	border-right: none;
+	padding: 0;
 }
+
+.first_level .subnav li a:before {
+	content: "| ";
+ }
 
 .hide-element {
 	display: none;
