@@ -13,7 +13,7 @@ It is possible to test the transfer of tokens between RSK and Kovan networks usi
 
 ## Steps
 
-Start by connecting your wallet browser extension to the RSK Testnet network. If everything is correct, you should see the following:
+Start by connecting your wallet (Nifty Wallet or Metamask) to the RSK Testnet network. If everything is correct, you should see the following:
 
 <img src="/assets/img/tools/tokenbridge/dapp-image1.png" />
 
@@ -39,7 +39,7 @@ If the transfer is successful, a new alert is displayed
 
 <img src="/assets/img/tools/tokenbridge/dapp-image7.png" />
 
-Next, you can obtain the address associated with the token on the other network, in this case Kovan. To do this, switch from the browser extension to the Kovan network and enter the original token address. Confirm with Get Side Token Address.
+Next, you can obtain the address associated with the token on the other network (in this case Kovan). To do this, switch from the browser extension to the Kovan network and enter the original (in this case RSK testnet) token address. Confirm with Get Side Token Address.
 A new address that corresponds to the associated token in Kovan should appear
 
 <img src="/assets/img/tools/tokenbridge/dapp-image8.png" />

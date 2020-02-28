@@ -219,9 +219,9 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.13.0)
     multipart-post (2.1.1)
-    nokogiri (1.10.7)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
-    nokogiri (1.10.7-x64-mingw32)
+    nokogiri (1.10.8-x64-mingw32)
       mini_portile2 (~> 2.4.0)
     nokogumbo (2.0.2)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -260,7 +260,6 @@ GEM
     tzinfo (1.2.6)
       thread_safe (~> 0.1)
     unicode-display_width (1.6.0)
-    wdm (0.1.1)
     yell (2.2.1)
 
 PLATFORMS
@@ -278,7 +277,6 @@ DEPENDENCIES
   jemoji (= 0.10.2)
   rake (= 13.0.1)
   rouge (= 3.11.0)
-  wdm (= 0.1.1)
 
 RUBY VERSION
    ruby 2.6.3p62

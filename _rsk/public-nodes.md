@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Using RSK Nodes
+tags: rsk, networks, versions, rpc
 description: "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
 collection_order: 2200
 ---
@@ -25,11 +26,9 @@ https://public-node.rsk.co
 
 Current and previous versions are accessible through these routes:
 
-* `/`: version `1.0.2` (deprecated)
-* `/1.0.2`, `/1.0.2/`: version `1.0.2`
-* `/1.1.0`, `/1.1.0/`: version `1.1.0` (current)
+* `/`: version `1.3.0` (current)
+* `/1.2.1`, `/1.2.1/`: version `1.2.1` (previous)
 
-The use of `/` will be removed in future releases.
 
 ## Supported RPC methods
 

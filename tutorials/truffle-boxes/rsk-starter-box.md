@@ -42,15 +42,15 @@ First ensure you are in a new and empty directory.
 
 ## RSK
 
-### Setup an account & get RBTC
+### Setup an account & get R-BTC
 
 - Get an address using [these instructions](https://developers.rsk.co/rsk/architecture/account-based/ "Account Based RSK Addresses - RSK Developers Portal").
-- For the RSK Testnet, get tRBTC from [our faucet](https://faucet.testnet.rsk.co/).
-- For the RSK Mainnet, get RBTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
+- For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
+- For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
 
 ### Setup the gas price
 
-**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **RBTC**.
+**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To get the **minimumGasPrice** do the following steps:
@@ -88,6 +88,11 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     //Put your mnemonic here, be careful not to deploy your mnemonic into production!
     const mnemonic = 'A_MNEMONIC';
     ```
+    Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
+    - RSK Mainnet dpath: `m/44’/137’/0’/0`
+    - RSK Testnet dpath: `m/44’/37310’/0’/0`
+
+    For more information check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md).
 
 2. Check the gas price of the network, and update `truffle-config.js` if necessary.
 

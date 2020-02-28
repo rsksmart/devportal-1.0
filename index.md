@@ -19,7 +19,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/quick-start">
             <div class="content-container">
                 <p class="card-title rsk_green">Getting Started</p>
-                <p>SmartBitcoin (RBTC) is linked 1:1 to Bitcoin (1 RBTC = 1BTC)</p>
+                <p>SmartBitcoin (R-BTC) is linked 1:1 to Bitcoin (1 R-BTC = 1 BTC)</p>
             </div>
             </a><div class="btn-container "><a href="/quick-start">
                 </a><a class="green" href="/quick-start">Read More</a>
@@ -95,7 +95,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/rif/rns">
             <div class="content-container">
                 <p class="card-title rsk_blue">Register a Domain</p>
-                <p>Learn more about RSK Naming Service</p>
+                <p>Learn more about RSK Name Service</p>
             </div>
             </a><div class="btn-container"><a href="/rif/rns">
                 </a><a class="blue" href="/rif/rns">Read More</a>
@@ -137,10 +137,3 @@ The Developer Portal is the home for RSK documentation for end users and develop
     <a href="https://stats.testnet.rsk.co/" target="_blank">Stats</a>
    </li>
 </ul>
-
-## Search
-
-<form id="quick-search" action="/search/" method="GET">
-    <input type="search" class="search-input" type="text" id="q" name="q" placeholder="Search" />
-    <input type="hidden" id="from" name="from" value="">
-</form>

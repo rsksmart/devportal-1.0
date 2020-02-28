@@ -1,7 +1,8 @@
 ---
 skip_search: true
 ---
-{% assign pages = site.pages | where_exp: "page", "page.skip_search != true" | where_exp: "page", "page.layout != 'redirect'" %}
+{% assign all_pages = site.pages | concat: site.documents  %}
+{% assign pages = all_pages | where_exp: "page", "page.skip_search != true" | where_exp: "page", "page.layout != 'redirect'" %}
 {% assign content_sections = "quick-start|the-stack|rsk|rif|develop|contribute" | split: "|" %}
 [
   {% for page in pages %} {% assign page_section = page.url | split: "/" %}
@@ -13,12 +14,12 @@ skip_search: true
       "date"     : "{{ page.date }}",
       {% if content_sections contains page_section[1] %}
       {% if page.description %}
-      "desc"     : "{{ page.description | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
+        "desc"     : "{{ page.description | strip_html | escape | strip_newlines | truncatewords: 200, "…" }}"
       {% else %}
-      "desc"     : "{{ page.content | truncatewords: 200, "…" | markdownify | strip_html | normalize_whitespace | strip_newlines | escape }}"
+        "desc"     : "{{ page.content | truncatewords: 200, "…" | markdownify | strip_html | normalize_whitespace | strip_newlines | escape }}"
       {% endif %}
       {% else %}
-      "desc"     : ""
+        "desc"     : ""
       {% endif %}
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}

@@ -50,7 +50,6 @@ module.exports = {
 ```
 
 &hellip; where the `mainchain` is `rsktestnet` and the `sidechain` is `kovan`, the JSON files are in the `/federator/config` folder, and includes the addresses of the contracts in that network and the block number in which they were deployed.
-The order of `sidechain` and `mainchain` is not important, as federators are bi-directional.
 The JSON files also reference the host for each network. For example, this is the `rsktestnet-kovan.json`
 
 ```json
@@ -66,7 +65,7 @@ The JSON files also reference the host for each network. For example, this is th
 ```
 
 You need to change `"<YOUR NODE HOST AND RPC PORT>"` to the URL of your node for that network and the JSON-RPC port. **Remember to do it for both networks**.
-Also you need to create a `federetaros.key` file with the federator's private key in it.
+You also need to create a `federator.key` file with the federator's private key in it.
 Once you have changed the configuration, create the docker image using.
 `docker build . -t fed-tokenbridge`
 

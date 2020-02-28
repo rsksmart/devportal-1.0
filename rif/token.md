@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Token
+tags: rif, token, erc677
+description: "Information about the RIF token, where to obtain it, how to transfer it, and technical details on its token standard"
 ---
 
 The RIF Token allows any token holder to consume the services that are compatible with the [RIF architecture](/rif/).
@@ -30,7 +32,6 @@ The RIF Token allows any token holder to consume the services that are compatibl
       <td>
         <ul>
             <li><a href="#exchanges" target="_blank">Exchanges</a></li>
-            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
         </ul>
       </td>
     </tr>
@@ -68,8 +69,7 @@ The RIF Token allows any token holder to consume the services that are compatibl
       <td scope="row">How to get</td>
       <td>
         <ul>
-            <li><a href="#exchanges" target="_blank">Exchanges</a></li>
-            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
+            <li><a href="https://faucet.rifos.org/" target="_blank">Faucet</a></li>
         </ul>
       </td>
     </tr>
@@ -145,11 +145,14 @@ The RIF Token allows any token holder to consume the services that are compatibl
 </div>
 
 ## Technical information
+
 ### ERC677 token standard
 
-An ERC20 token transaction between a regular/non-contract address and contract are two different transactions: You should call approve on the token contract and then call transferFrom on the other contract when you want to deposit your tokens into it.
+An [ERC20](https://github.com/ethereum/EIPs/issues/20)
+token transaction between a regular/non-contract address and contract are two different transactions: You should call `approve` on the token contract and then call `transferFrom` on the other contract when you want to deposit your tokens into it.
 
-ERC677 simplifies this requirement and allows using the same transfer function. ERC677 tokens can be sent by calling transfer function on the token contract with no difference if the receiver is a contract or a wallet address, since there is a new way to notify the receive contract of the transfer.
+[ERC677](https://github.com/ethereum/EIPs/issues/677)
+simplifies this requirement and allows using the same transfer function. ERC677 tokens can be sent by calling `transfer` function on the token contract with no difference if the receiver is a contract or a wallet address, since there is a new way to notify the receiving contract of the transfer.
 
 An ERC677 token transfer will be the same as an ERC20 transfer. On the other hand, if the receiver is a contract, then the ERC677 token contract will try to call `tokenFallback` function on receiver contract. If there is no `tokenFallback` function on receiver contract, the transaction will fail.
 

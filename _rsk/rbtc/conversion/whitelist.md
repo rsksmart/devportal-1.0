@@ -29,4 +29,4 @@ Keep in mind that whitelisting in Testnet is just for testing the 2-way-peg comp
 
 ## What's next?
 
-Once you are approved, you can proceed to [convert your BTC to RBTC](/rsk/rbtc/conversion).
+Once you are approved, you can proceed to [convert your BTC to R-BTC](/rsk/rbtc/conversion).

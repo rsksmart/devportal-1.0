@@ -3,22 +3,23 @@ layout: rsk
 title: How To Use
 description: "How to build and run a Lumino node. How to use its user interface to view dashboard, quick payments, token view, send tokens, pay, deposit, close channels, and view payments"
 ---
+
 **Pre requisites for a Lumino Node**
 
 1. Access to a synched RSK node. You can do this in a variety of ways:
   * [Public nodes](/rsk/public-nodes)
   * [Run your own node](/rsk/node/install) on TestNet or Mainnet
   * [Compile and run a RSK node locally](/rsk/node/contribute)
-2. RSK account with RBTC balance
+2. RSK account with R-BTC balance
 3. Python 3.7
 4. Pip
 5. Virtualenv
 
 **Build your Lumino Node**
 
-Note: We&#39;re actually using Linux, it may be different in others OS
+Note: We're actually using Linux, it may be different in others OS
 
-- Clone [https://github.com/rsksmart/lumino](https://github.com/rsksmart/lumino) (We&#39;re actually using branch &quot;light-client-payments-onboarding&quot;)
+- Clone [https://github.com/rsksmart/lumino](https://github.com/rsksmart/lumino) (We're actually using branch &quot;light-client-payments-onboarding&quot;)
 - Go to the path that you cloned the node
 - Create python virtual-env for Rif Lumino (Has to be made only one time)
   - `virtualenv -p \&lt;PATH\_TO\_PYTHON3.7\&gt; clientEnv`
@@ -29,15 +30,11 @@ Note: We&#39;re actually using Linux, it may be different in others OS
   - `python --version (it should output version 3.7.x)`
 - Install Lumino requirements (For dev purposes we use requirements-dev.txt)
   - `pip install -r requirements-dev.txt -c constraints.txt -e .`
-- You&#39;re ready to start your Lumino node!
+- You're ready to start your Lumino node!
 
 Be sure the blockchain has the contracts deployed
 
 When deploying the contracts you should store 3 parameters brought to you, to later deploy your node, parameters are: EndpointRegistry, SecretRegistry, TokenNetworkRegistry
-
-
-
-
 
 **Run your Lumino node**
 
@@ -140,13 +137,13 @@ For more information or for a guide about how to install it please go to: [https
 
 **Access the UI**
 
-To access the Dashboard of your Lumino node, use a browser and put the URL you settled in the api-address param before. We&#39;re going to use localhost:5002 in this example.
+To access the Dashboard of your Lumino node, use a browser and put the URL you settled in the api-address param before. We're going to use localhost:5002 in this example.
 
 **Dashboard**
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-dashboard.png" alt=""/></div><br/>
 
-Let&#39;s talk about the dashboard view:
+Let's talk about the dashboard view:
 
 **Header**
 
@@ -158,7 +155,7 @@ Let&#39;s talk about the dashboard view:
   2. Channels
   3. Tokens
 3. Quick payment (we will talk more about this in the following sections)
-4. Notifications Bell, in there we are going to see a list of Todo&#39;s, and all sorts of things related to notifications, like when a payment has been made, etc.
+4. Notifications Bell, in there we are going to see a list of Todo's, and all sorts of things related to notifications, like when a payment has been made, etc.
 
 **Quick Payment**
 
@@ -187,7 +184,7 @@ Each token display the following information &amp; actions:
 - Token Address: The Address of this token
 - Balance: your balance on the particular token
 - Two possible actions (just one is displayed):
-  - Join Network: If you don&#39;t have any channel open in this token this button will show. If you go for this action Lumino will create 3 new channels in the token with random partners. This function is very useful when you want to have channels in a particular token to start to send &amp; receive payments but you don&#39;t know any other partner yet
+  - Join Network: If you don't have any channel open in this token this button will show. If you go for this action Lumino will create 3 new channels in the token with random partners. This function is very useful when you want to have channels in a particular token to start to send &amp; receive payments but you don't know any other partner yet
   - Leave Network: If you already have at least one channel in the token, a Leave Network action will appear. This action will close ALL your open channels in the token.
 
 **Channels**
@@ -216,7 +213,7 @@ After you create the channel, you will see a new channel widget like the followi
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-channel-list.png" alt=""/></div><br/>
 
-We already discussed about the actions before, so let&#39;s talk about the information displayed:
+We already discussed about the actions before, so let's talk about the information displayed:
 
 - Channel Id: The id of the channel
 - Address of the partner
@@ -226,7 +223,7 @@ We already discussed about the actions before, so let&#39;s talk about the infor
 
 **Pay button (from channel widget)**
 
-As an example we&#39;re going to send some tokens to the partner, lets send 15 tokens:
+As an example we're going to send some tokens to the partner, lets send 15 tokens:
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-payments.png" alt=""/></div><br/>
 
@@ -234,15 +231,15 @@ After that, we receive a Success message indicating the amount that we just sent
 
 <div align="center"><img src="/assets/img/lumino/lumino-node-transfer-success.png" alt=""/></div><br/>
 
-**Reminder note:** In the notifications we display the amounts in wei, that&#39;s why you see those big numbers there.
+**Reminder note:** In the notifications we display the amounts in wei, that's why you see those big numbers there.
 
 **Deposit button (from channel widget)**
 
-If we want to deposit more tokens in the channel we can do it by clicking the Deposit button, and indicating some amount. Let&#39;s add some tokens to the balance at our node side.
+If we want to deposit more tokens in the channel we can do it by clicking the Deposit button, and indicating some amount. Let's add some tokens to the balance at our node side.
 
 <div align="center"><img src="/assets/img/lumino/lumino-node-deposit.png" alt=""/></div><br/>
 
-After we receive the confirmation, check the channel and you&#39;ll see that in effect, the balance is upgraded
+After we receive the confirmation, check the channel and you'll see that in effect, the balance is upgraded
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-balance.png" alt=""/></div><br/>
 
@@ -252,7 +249,7 @@ Remember, we got 80 at the start, we paid 15 to our partner, and now we deposite
 
 View Details button (from channel widget)
 
-Let&#39;s check the View Details button, so we can see the transaction that we recently made
+Let's check the View Details button, so we can see the transaction that we recently made
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-details.png" alt=""/></div><br/>
 
@@ -269,15 +266,15 @@ Here we got some features to filter the transactions that happened in the channe
 - Pagination
   - Indicate how many rows you want to see. Options are: 5, 10, 20, 25, 50, 100 rows.
   - Advance between pages
-- Also you have some interesting data presented with more beauty in the top of the page. Such as your address, the token that we&#39;re using, and the partner address.
+- Also you have some interesting data presented with more beauty in the top of the page. Such as your address, the token that we're using, and the partner address.
 
 **Close (Channel)**
 
 <div align="center"><img src="/assets/img/lumino/lumino-node-close-channel.png" alt=""/></div><br/>
 
-When clicking the close, you&#39;ll need to confirm the action.
+When clicking the close, you'll need to confirm the action.
 
-The channel status will go to &quot;Closed&quot; and then after a few validations, it&#39;ll go to &quot;Waiting\_for\_settlement&quot; (This action will take 500 blocks), after that the channel status will say &quot;Settled&quot; for a short period and the channel will be deleted from the view.
+The channel status will go to &quot;Closed&quot; and then after a few validations, it'll go to &quot;Waiting\_for\_settlement&quot; (This action will take 500 blocks), after that the channel status will say &quot;Settled&quot; for a short period and the channel will be deleted from the view.
 
 When all this procedures are finished the payment is done.
 

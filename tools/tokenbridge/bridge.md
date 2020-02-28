@@ -3,6 +3,10 @@ layout: rsk
 title: Token Bridge Contracts
 ---
 
+## Bridge Contracts
+
+Go to the bridge subfolder of the Token Bridge repository [https://github.com/rsksmart/tokenbridge/tree/master/bridge](https://github.com/rsksmart/tokenbridge/tree/master/bridge)
+
 ## Install Truffle
 
 ```
