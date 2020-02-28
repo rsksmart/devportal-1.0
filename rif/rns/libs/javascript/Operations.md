@@ -30,11 +30,12 @@ async addr(domain: string, chainId?: ChainId): Promise<string>
 - `string`: the address resolution
 
 **Throws**
-- [KB001](/rif/rns/libs/javascript/Errors)
-- [KB002](/rif/rns/libs/javascript/Errors)
-- [KB003](/rif/rns/libs/javascript/Errors)
-- [KB006](/rif/rns/libs/javascript/Errors)
-- [KB007](/rif/rns/libs/javascript/Errors)
+
+- [`KB001`](/rif/rns/libs/javascript/Errors#kb001)
+- [`KB002`](/rif/rns/libs/javascript/Errors#kb002)
+- [`KB003`](/rif/rns/libs/javascript/Errors#kb003)
+- [`KB006`](/rif/rns/libs/javascript/Errors#kb006)
+- [`KB007`](/rif/rns/libs/javascript/Errors#kb007)
 
 **Examples**
 
@@ -69,8 +70,9 @@ async reverse(address: string): Promise<string>
 - `string`: Domain or subdomain associated to the given address.
 
 **Throws**
-- [KB013](/rif/rns/libs/javascript/Errors)
-- [KB014](/rif/rns/libs/javascript/Errors)
+
+- [`KB013`](/rif/rns/libs/javascript/Errors#kb013)
+- [`KB014`](/rif/rns/libs/javascript/Errors#kb014)
 
 **Example**
 
@@ -98,10 +100,11 @@ async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
 - `boolean`: true if available, false if not
 
 **Throws**
-- [KB009](/rif/rns/libs/javascript/Errors)
-- [KB010](/rif/rns/libs/javascript/Errors)
-- [KB011](/rif/rns/libs/javascript/Errors)
-- [KB012](/rif/rns/libs/javascript/Errors)
+
+- [`KB009`](/rif/rns/libs/javascript/Errors#kb009)
+- [`KB010`](/rif/rns/libs/javascript/Errors#kb010)
+- [`KB011`](/rif/rns/libs/javascript/Errors#kb011)
+- [`KB012`](/rif/rns/libs/javascript/Errors#kb012)
 
 **Example**
 
@@ -130,11 +133,12 @@ async createSubdomain(domain: string, label: string, owner: string): Promise<voi
 - `owner`: The new owner's address
 
 **Throws**
-- [KB009](/rif/rns/libs/javascript/Errors)
-- [KB010](/rif/rns/libs/javascript/Errors)
-- [KB011](/rif/rns/libs/javascript/Errors)
-- [KB012](/rif/rns/libs/javascript/Errors)
-- [KB015](/rif/rns/libs/javascript/Errors)
+
+- [`KB009`](/rif/rns/libs/javascript/Errors#kb009)
+- [`KB010`](/rif/rns/libs/javascript/Errors#kb010)
+- [`KB011`](/rif/rns/libs/javascript/Errors#kb011)
+- [`KB012`](/rif/rns/libs/javascript/Errors#kb012)
+- [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
 
 **Example**
 
