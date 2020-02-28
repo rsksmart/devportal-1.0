@@ -23,13 +23,15 @@ RSK Mainnet: m/44'/137'/0'/0
 RSK Testnet: m/44'/37310'/0'/0
 ```
 
-- The first level of the hierarchy is for *purpose*,
-  and is always `44'`, as per the BIP44 specification.
-- The second level of the hierarchy is for the *registered coin type*
-  and should be `137'` for RSK Mainnet, as per the
-  [SLIP-44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md "Registered coin types for BIP-0044"),
-  and [RSKIP-57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md)  specifications.
-
+- The first level of the hierarchy is for *purpose*.
+  This is always `44'`, as per the BIP44 specification.
+- The second level of the hierarchy is for the *registered coin type*.
+  - For RSK Mainnet, this should be `137'`, as per the
+    [SLIP-44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md "Registered coin types for BIP-0044")
+    specification.
+  - For RSK Testnet, this should be `37310'`, as per the
+    [RSKIP-57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md "Derivation Path for Hierarchical Deterministic Wallets")
+    specification.
 
 ## Checksum
 
