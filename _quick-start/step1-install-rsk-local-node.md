@@ -161,7 +161,7 @@ This should respond with something that looks like the following:
 
 ### Cleaning up
 
-After finishing the tutorial, you can use the following commands to shut down (kill) or remove (rm) the container.
+After finishing the tutorial, you can use the following commands to shut down (`kill`) or remove (`rm`) the container.
 
 ```shell
 docker container list
