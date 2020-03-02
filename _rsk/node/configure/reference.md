@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Configuration reference
+tags: rsk, rskj, node, config
+description: "Configuration reference for RSKj"
 collection_order: 2410
 ---
 
