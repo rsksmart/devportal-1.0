@@ -184,7 +184,7 @@ In the left side panel, go to the button `Deploy and run transactions`. Actually
 
 ![Deploy and run transactions](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-21.png)
 
-For now we have only one smart contract, so it is automatically select at dropbox
+For now we have only one smart contract, so it is automatically selected in the dropdown.
 
 ![SimpleStorage.sol](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-22.png)
 
