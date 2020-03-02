@@ -152,7 +152,7 @@ And paste it here:
 ![SimpleStorage.sol](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-15.png)
 ### SimpleStorage.sol
 
-This smart contract have:
+This smart contract has:
 
 * A variable storedData to store a number
 * A function get() to return the number stored at variable storedData
