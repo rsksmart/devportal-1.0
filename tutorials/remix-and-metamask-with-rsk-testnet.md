@@ -228,7 +228,7 @@ The RSK explorer is the blockchain explorer for RSK transactions. We will use th
 
 ![explorer](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-30.png)
 
-Past the transaction hash at search field, in the top of screen
+Past the transaction hash at search field, at the top of the screen
 
 ![search](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-31.png)
 
