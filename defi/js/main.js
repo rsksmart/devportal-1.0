@@ -64,4 +64,25 @@ $(document).ready(function () {
       $('.dropdown-item').removeClass('header-scrolled');
     }
   });
+
+// owl carousel
+$('.owl-carousel').owlCarousel({
+       loop:true,
+       nav:true,
+       center:true,
+       URLhashListener:true,
+       autoplayHoverPause:true,
+       responsive:{
+        0:{
+         items:1
+      },
+      600:{
+         items:1
+      },
+      1000:{
+         items:3
+      }
+   }
+});
+  
 });
