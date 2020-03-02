@@ -124,7 +124,7 @@ Click on the second button on the left side - file explorer
 
 ![file explorer](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-12.png)
 
-Click at + create a new file
+Click on + create a new file
 
 ![create a new file](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-13.png)
 
