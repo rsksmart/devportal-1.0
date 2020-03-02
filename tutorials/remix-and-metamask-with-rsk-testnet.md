@@ -128,7 +128,7 @@ Click on + create a new file
 
 ![create a new file](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-13.png)
 
-File name: SimpleStorage.sol
+File name: `SimpleStorage.sol`
 
 ![SimpleStorage.sol](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-14.png)
 
