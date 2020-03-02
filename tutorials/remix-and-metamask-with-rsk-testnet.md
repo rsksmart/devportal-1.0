@@ -64,7 +64,7 @@ https://explorer.testnet.rsk.co/
 
 ![RSK Testnet configuration](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-02.png)
 
-After configurate it, select the RSK Tesnet network.
+After configuring it, select the RSK Tesnet.
 
 
 ### TestNet Faucet
