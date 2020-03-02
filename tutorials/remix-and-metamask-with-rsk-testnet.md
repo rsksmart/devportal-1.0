@@ -81,9 +81,7 @@ Wait a few seconds...
 
 ![Received some R-BTCs](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-05.png)
 
-You can see the transaction hash, this is my example:
-
-[https://explorer.testnet.rsk.co/tx/0xf63c45dabd52e0b44f4cf15825985e9ddfe790b4323a88a3531f762a417f9011](https://explorer.testnet.rsk.co/tx/0xf63c45dabd52e0b44f4cf15825985e9ddfe790b4323a88a3531f762a417f9011)
+You can see the transaction hash, for example [`0xf63c45dabd52e0b44f4cf15825985e9ddfe790b4323a88a3531f762a417f9011`](https://explorer.testnet.rsk.co/tx/0xf63c45dabd52e0b44f4cf15825985e9ddfe790b4323a88a3531f762a417f9011).
 
 Now I have 0.05 R-BTC!
 
