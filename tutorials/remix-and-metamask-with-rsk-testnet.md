@@ -207,7 +207,7 @@ Once it is confirmed, we can check it
 
 ![check the transaction](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-26.png)
 
-Click at transaction line or debug button (at right side) to see more details of transaction:
+Click on the transaction line or the debug button (at the right side) to see more details of the transaction:
 
 ![transaction details](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-27.png)
 
