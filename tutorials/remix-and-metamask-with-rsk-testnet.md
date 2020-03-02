@@ -67,7 +67,7 @@ https://explorer.testnet.rsk.co/
 After configuring it, select the RSK Tesnet.
 ### TestNet Faucet
 
-You can get some RSK coins for Testnet at [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/)
+You can get some Testnet R-BTC at [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/).
 
 Copy your address from Metamask
 
