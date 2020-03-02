@@ -294,9 +294,7 @@ At bottom right, we have the transaction’s details
 
 ![transaction details](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-42.png)
 
-You can copy the transaction hash and verify at RSK explorer too:
-
-[https://explorer.testnet.rsk.co/tx/0xb9f4d73e7555d2b3cdf516f2d3044daa58669f7324cb957f2b83da21a6c89b4b](https://explorer.testnet.rsk.co/tx/0xb9f4d73e7555d2b3cdf516f2d3044daa58669f7324cb957f2b83da21a6c89b4b)
+You can copy the transaction hash and verify at RSK explorer too: [`0xb9f4d73e7555d2b3cdf516f2d3044daa58669f7324cb957f2b83da21a6c89b4b`](https://explorer.testnet.rsk.co/tx/0xb9f4d73e7555d2b3cdf516f2d3044daa58669f7324cb957f2b83da21a6c89b4b)
 
 ![explorer](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-43.png)
 ### Get (again)
