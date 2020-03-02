@@ -8,7 +8,7 @@ title: Using Remix and Metamask with RSK testnet
 RSK's virtual machine implementation is compatible with the Ethereum EVM,
 we can also use many of Ethereum's developer tools.
 
-In this tutorial I will show you step by step how to use Remix and Metamask, which was builded to Ethereum blockchain, to create and deploy a simple smart contract at RSK testnet network.
+In this tutorial I will show you step by step how to use Remix and Metamask, which are tools that were originally built for Ethereum, to create and deploy a simple smart contract on RSK's Testnet.
 
 ### Requirements
 
