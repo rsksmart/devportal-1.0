@@ -286,7 +286,7 @@ At bottom right, we can verify that the transaction is pending, waiting confirma
 
 ![transaction status](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-40.png)
 
-After a few seconds, Metamask will show when the transaction is mined!
+After a few seconds, Metamask will show when the transaction has been confirmed!
 
 ![transaction mined](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-41.png)
 
