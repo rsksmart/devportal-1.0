@@ -57,7 +57,7 @@ RSK Testnet
 
 - Symbol (optional)
 
-RBTC
+R-BTC
 
 - Block Explorer URL (optional)
 
