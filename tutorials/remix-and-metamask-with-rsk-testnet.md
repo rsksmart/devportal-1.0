@@ -73,7 +73,7 @@ Copy your address from Metamask
 
 ![Copy address from Metamask](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-03.png)
 
-Fill your wallet address and pass the CAPTCHA.
+Enter your wallet address and pass the CAPTCHA.
 
 Wait a few seconds...
 
