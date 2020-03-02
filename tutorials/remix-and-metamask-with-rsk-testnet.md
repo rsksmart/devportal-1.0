@@ -325,7 +325,7 @@ It is possible to verify all transactions in metamask
 
 Did you think that it would be so easy to use Remix and Metamask to create a smart contract which can be used on both Ethereum or RSK networks?
 
-I showed to you how we can use some tools which was builded to Ethereum blockchain, and it is great to realize that they can be used at RSK network. 
+I showed to you how we can use some Ethereum developer tools, and it is great to realize that they can be used on the RSK network as well. 
 
 Our goal is to join forces and give options to people who believe in smart contracts based both Ethereum, but also believe in the Bitcoin power, through RSK network.
 
