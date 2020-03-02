@@ -25,7 +25,7 @@ Go to [metamask.io](https://metamask.io/) and install it.
 
 Create an account.
 
-Write down your seed prhase, or mnemonic, or backup phrase (all means the same), with 12 words. This is used to recover your account. Even if you lose your password, you can access your account again. 
+Write down your seed phrase, or mnemonic, or backup phrase (all these terms mean the same), with 12 words. This is used to recover your account, in case you lose your password.
 
 The seed prhase is the most important thing in a wallet / account!
 
