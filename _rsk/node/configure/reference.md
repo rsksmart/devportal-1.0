@@ -6,26 +6,24 @@ description: "Configuration reference for RSKj"
 collection_order: 2410
 ---
 
-## Configuration reference
-
-- [peer](#peer)
-- [database](#database)
-- [vm](#vm)
-- [sync](#sync)
-- [rpc](#rpc)
-- [wallet](#wallet)
-- [scoring](#scoring)
-- [miner](#miner)
-- [blockchain.config.name](#blockchainconfigname)
-- [bind_address](#bind_address)
-- [public.ip](#publicip)
-- [genesis](#genesis)
-- [transaction.outdated](#transactionoutdated)
-- [play.vm](#playvm)
-- [hello.phrase](#hellophrase)
-- [details.inmemory.storage.limit](#detailsinmemorystoragelimit)
-- [solc.path](#solcpath)
-- [prune](#prune)
+- [`peer`](#peer)
+- [`database`](#database)
+- [`vm`](#vm)
+- [`sync`](#sync)
+- [`rpc`](#rpc)
+- [`wallet`](#wallet)
+- [`scoring`](#scoring)
+- [`miner`](#miner)
+- [`blockchain.config.name`](#blockchainconfigname)
+- [`bind_address`](#bind_address)
+- [`public.ip`](#publicip)
+- [`genesis`](#genesis)
+- [`transaction.outdated`](#transactionoutdated)
+- [`play.vm`](#playvm)
+- [`hello.phrase`](#hellophrase)
+- [`details.inmemory.storage.limit`](#detailsinmemorystoragelimit)
+- [`solc.path`](#solcpath)
+- [`prune`](#prune)
 
 ## peer
 
