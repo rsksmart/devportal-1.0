@@ -254,7 +254,7 @@ These are the same functions we created in our smart contract!
 
 The orange buttons are functions which will change some information stored on the blockchain, we call it state changes. This kind of function expends gas when used.
 
-The blue buttons are functions which only read functions and it does not change anything on blockchain network. We do not need gas to use it.
+The blue buttons are functions which are read-only and it does not change anything stored on the blockchain. We do not need to expend gas when using them.
 
 ### Get
 
