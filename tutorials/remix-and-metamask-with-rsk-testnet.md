@@ -31,7 +31,7 @@ The seed phrase is the most important thing in a wallet / account!
 
 ### Remix
 
-Remix is web tool, online. It is a Solidity IDE (Integrated Development Environment) used to write, compile, deploy and debug Solidity code. Can be connected with Metamask and used to deploy smart contracts at RSK testnet and mainnet.
+Remix is an online web tool. It is an IDE (Integrated Development Environment) used to write, compile, deploy and debug Solidity code. Can be connected with Metamask and used to deploy smart contracts to both the RSK Testnet and Mainnet.
 
 Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
 
