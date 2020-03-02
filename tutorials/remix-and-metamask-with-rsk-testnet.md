@@ -154,9 +154,9 @@ And paste it here:
 
 This smart contract has:
 
-* A variable storedData to store a number
-* A function get() to return the number stored at variable storedData
-* A function set() to change the number stored at variable storedData
+* A variable `storedData` to store a number
+* A function `get()` to return the number stored at variable `storedData`
+* A function `set()` to change the number stored at variable `storedData`
 
 ### Compile a smart contract 
 
