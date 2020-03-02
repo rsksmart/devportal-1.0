@@ -120,7 +120,7 @@ Injected Web3 connects Remix with active account in Metamask
 ChainID 31 was defined at RSK Testnet custom network in Metamask.
 # Create a smart contract
 
-Click at second button on the left side - file explorer 
+Click on the second button on the left side - file explorer 
 
 ![file explorer](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-12.png)
 
