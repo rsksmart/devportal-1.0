@@ -174,7 +174,7 @@ For now click in the button Compile SimpleStorage.sol
 
 ![Compile SimpleStorage.sol](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-19.png)
 
-Check the green sign at 3th button with the message compilation successful
+Check the green sign at 3rd button with the message compilation successful
 
 ![compilation successful](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-20.png)
 
