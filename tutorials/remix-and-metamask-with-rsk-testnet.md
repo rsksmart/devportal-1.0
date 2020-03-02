@@ -329,4 +329,4 @@ I showed to you how we can use some Ethereum developer tools, and it is great to
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
-I hope this tutorial "Using Remix and Metamask with RSK testnet" has been helpful and I'd appreciate any of your feedback. Share it if you like it :)
+I hope this tutorial has been helpful and I'd appreciate your feedback. Share it if you like it :)
