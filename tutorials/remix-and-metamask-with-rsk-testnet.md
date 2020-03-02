@@ -30,6 +30,7 @@ Write down your seed phrase, or mnemonic, or backup phrase (all these terms mean
 The seed phrase is the most important thing in a wallet / account!
 
 ### Remix
+
 Remix is web tool, online. It is a Solidity IDE (Integrated Development Environment) used to write, compile, deploy and debug Solidity code. Can be connected with Metamask and used to deploy smart contracts at RSK testnet and mainnet.
 
 Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
