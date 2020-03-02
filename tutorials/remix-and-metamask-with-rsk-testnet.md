@@ -65,8 +65,6 @@ https://explorer.testnet.rsk.co/
 ![RSK Testnet configuration](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-02.png)
 
 After configuring it, select the RSK Tesnet.
-
-
 ### TestNet Faucet
 
 You can get some RSK coins for Testnet at [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/)
