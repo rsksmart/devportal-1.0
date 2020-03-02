@@ -242,7 +242,7 @@ You can verify my example at: [`0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c
 
 ### Interact with the smart contract 
 
-When a smart contract is deployed with Remix, we can see it in the left panel in deploy and run transactions:
+When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions:
 
 ![deployed contracts](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-34.png)
 
