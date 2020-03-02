@@ -90,8 +90,6 @@ You can see the transaction hash, this is my example:
 Now I have 0.05 RBTC!
 
 ![R-BTCs at Metamask wallet](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-06.png)
-
-
 # Remix
 
 Go to 
