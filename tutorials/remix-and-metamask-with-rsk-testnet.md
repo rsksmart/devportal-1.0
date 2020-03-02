@@ -252,7 +252,7 @@ Click on > to expand SimpleStorage:
 
 These are the same functions we created in our smart contract!
 
-The orange buttons are functions which will change some information at blockchain, we call it change states. This kind of function spent gas to use it.
+The orange buttons are functions which will change some information stored on the blockchain, we call it state changes. This kind of function expends gas when used.
 
 The blue buttons are functions which only read functions and it does not change anything on blockchain network. We do not need gas to use it.
 
