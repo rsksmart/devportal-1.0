@@ -222,7 +222,7 @@ Is this example, the transaction hash is:
 0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c2914ccd0bd2bb331da
 ### RSK Explorer
 
-The RSK explorer is the blockchain explorer to RSK transactions. We will use the testnet explorer:
+The RSK explorer is the blockchain explorer for RSK transactions. We will use the Testnet explorer:
 
 [explorer.testnet.rsk.co](https://explorer.testnet.rsk.co/)
 
