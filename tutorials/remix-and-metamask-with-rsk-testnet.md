@@ -280,7 +280,7 @@ It will open a Metamask popup window, to confirm the transaction to store a valu
 
 ![confirm transaction](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-39.png)
 
-Click in confirm
+Click on confirm
 
 At bottom right, we can verify that the transaction is pending, waiting confirmation at blockchain:
 
