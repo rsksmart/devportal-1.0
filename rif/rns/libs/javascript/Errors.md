@@ -93,3 +93,9 @@ tags: rns, javascript, error
 **Message**: There are no accounts to sign the transaction
 
 **Description**: The web3 instance provided does not have a private key associated
+
+## `KB016`
+
+**Message**: The subdomain is not available
+
+**Description**: The subdomain is already owned

@@ -38,7 +38,7 @@ rns.addr('testing.rsk', '0x80000000').then(console.log)
 
 Check if `example.testing.rsk` subdomain is available:
 ```javascript
-rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
+rns.subdomains.available('testing.rsk', 'example').then(console.log)
 ```
 
 Reverse lookup: Get the name of a given address:
@@ -50,7 +50,7 @@ Create a subdomain under my parent domain:
 
 ```javascript
 const newOwnerAddress = '0x0000000000000000000000000000000000000001';
-rns.createSubdomain('mydomain.rsk', 'example', newOwnerAddress);
+rns.subdomains.setOwner('mydomain.rsk', 'example', newOwnerAddress);
 ```
 
 Check out the [operations](/rif/rns/libs/javascript/Operations)
