@@ -11,9 +11,9 @@ The Developer Portal is the home for RSK documentation for end users and develop
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/quick-start">
-            <div class="icon started green h-100">
+            <div class="icon started h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="https://rsk.co/img/features/started-icon.png" alt="started icon">
+            <img src="assets/img/features/started-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/quick-start">
@@ -30,18 +30,18 @@ The Developer Portal is the home for RSK documentation for end users and develop
         <li class="col-xl-6 col-md-6 ">
         <div class="feature-card">
             <a href="/rsk/node/install">
-            <div class="icon node orange h-100">
+            <div class="icon node h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="https://rsk.co/img/features/node-icon.png" alt="started icon">
+            <img src="assets/img/features//node-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rsk/node/install">
             <div class="content-container">
-                <p class="card-title rsk_orange">Node Setup </p>
+                <p class="card-title rsk_green">Node Setup </p>
                 <p>Learn how to set up a RSK node.</p>
             </div>
             </a><div class="btn-container"><a href="/rsk/node/install">
-                </a><a class="orange" href="/rsk/node/install">Read More</a>
+                </a><a class="green" href="/rsk/node/install">Read More</a>
             </div>
             </div>
         </div>
@@ -49,18 +49,18 @@ The Developer Portal is the home for RSK documentation for end users and develop
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/develop">
-            <div class="icon smart orange h-100">
+            <div class="icon smart h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="https://rsk.co/img/features/contract-icon.png" alt="started icon">
+            <img src="assets/img/features/contract-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content two-line-title-content"><a href="/develop">
             <div class="content-container">
-                <p class="card-title rsk_orange">Smart Contract Development</p>
+                <p class="card-title rsk_green">Smart Contract Development</p>
                 <p>Learn how to port Ethereum projects to RSK</p>
             </div>
             </a><div class="btn-container"><a href="/develop">
-                </a><a class="orange" href="/develop">Read More</a>
+                </a><a class="green" href="/develop">Read More</a>
             </div>
             </div>
         </div>
@@ -68,18 +68,18 @@ The Developer Portal is the home for RSK documentation for end users and develop
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/rif">
-            <div class="icon rif blue h-100">
+            <div class="icon rif h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="https://rsk.co/img/features/rif-icon.png" alt="started icon">
+            <img src="assets/img/features/rif-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rif">
             <div class="content-container">
-                <p class="card-title rsk_blue">RIF Services</p>
+                <p class="card-title rsk_green">RIF Services</p>
                 <p>Access storage, oracles, naming and CPU services all in one place with the RIF token</p>
             </div>
             </a><div class="btn-container"><a href="/rif">
-                </a><a class="blue" href="/rif">Read More</a>
+                </a><a class="green" href="/rif">Read More</a>
             </div>
             </div>
         </div>
@@ -87,18 +87,18 @@ The Developer Portal is the home for RSK documentation for end users and develop
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/rif/rns">
-            <div class="icon domain blue h-100">
+            <div class="icon domain h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="https://rsk.co/img/features/domain-icon.png" alt="started icon">
+            <img src="assets/img/features/domain-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rif/rns">
             <div class="content-container">
-                <p class="card-title rsk_blue">Register a Domain</p>
+                <p class="card-title rsk_green">Register a Domain</p>
                 <p>Learn more about RSK Name Service</p>
             </div>
             </a><div class="btn-container"><a href="/rif/rns">
-                </a><a class="blue" href="/rif/rns">Read More</a>
+                </a><a class="green" href="/rif/rns">Read More</a>
             </div>
             </div>
         </div>
@@ -106,9 +106,9 @@ The Developer Portal is the home for RSK documentation for end users and develop
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/rif/lumino">
-            <div class="icon tools green h-100">
+            <div class="icon tools h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="https://rsk.co/img/features/tools-icon.png" alt="started icon">
+            <img src="assets/img/features/tools-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rif/lumino">
