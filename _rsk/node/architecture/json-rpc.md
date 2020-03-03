@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: JSON-RPC
+tags: rsk, rskj, node, rpc
+description: "The JSON-RPC methods supported by RSK nodes."
 collection_order: 2110
 ---
 
@@ -63,21 +65,21 @@ RSK currently supports the following:
 | [`eth_getLogs`](#eth_getlogs) | YES | |
 | [`eth_getWork`](#eth_getwork) | YES | Method name is `mnr_getWork`. |
 | [`eth_submitWork`](#eth_submitwork) | YES | Method name is `mnr_submitBitcoinBlock`. |
-| eth_submitHashrate | - | |
-| db_putString | - | Deprecated |
-| db_getString | - | Deprecated |
-| db_putHex | - | Deprecated |
-| db_getHex | - | Deprecated |
-| shh_post | - | Whisper protocol not supported. |
-| shh_version | - | Whisper protocol not supported. |
-| shh_newIdentity | - | Whisper protocol not supported. |
-| shh_hasIdentity | - | Whisper protocol not supported. |
-| shh_newGroup | - | Whisper protocol not supported. |
-| shh_addToGroup | - | Whisper protocol not supported. |
-| shh_newFilter | - | Whisper protocol not supported. |
-| shh_uninstallFilter | - | Whisper protocol not supported. |
-| shh_getFilterChanges | - | Whisper protocol not supported. |
-| shh_getMessages | - | Whisper protocol not supported. |
+| `eth_submitHashrate` | - | |
+| `db_putString` | - | Deprecated |
+| `db_getString` | - | Deprecated |
+| `db_putHex` | - | Deprecated |
+| `db_getHex` | - | Deprecated |
+| `shh_post` | - | Whisper protocol not supported. |
+| `shh_version` | - | Whisper protocol not supported. |
+| `shh_newIdentity` | - | Whisper protocol not supported. |
+| `shh_hasIdentity` | - | Whisper protocol not supported. |
+| `shh_newGroup` | - | Whisper protocol not supported. |
+| `shh_addToGroup` | - | Whisper protocol not supported. |
+| `shh_newFilter` | - | Whisper protocol not supported. |
+| `shh_uninstallFilter` | - | Whisper protocol not supported. |
+| `shh_getFilterChanges` | - | Whisper protocol not supported. |
+| `shh_getMessages` | - | Whisper protocol not supported. |
 
 ### JSON RPC method details
 
