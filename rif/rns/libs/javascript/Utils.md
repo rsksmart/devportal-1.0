@@ -136,7 +136,7 @@ rns.utils.namehash('testing.rsk').then(console.log)
 
 ### `labelhash`
 
-Returns `0x` + the sha3 representation of the given label.
+Returns `0x` + the keccak256 representation of the given label.
 
 **Signature**
 
@@ -190,14 +190,34 @@ Checks if the contract in the given address has the given method
 **Signature**
 
 ```javascript
-hasMethod(web3:Web3, contractAddress:string, signatureHash: string): boolean;
+hasMethod(web3:Web3, contractAddress:string, methodId: string): boolean;
 ```
 
 **Parameters**
 
 - `web3`: Web3 instance.
 - `contractAddress`: address of the contract to check.
-- `signatureHash`: sha3 of the method signature
+- `methodId`: the first 4 bytes of the keccak256 hash of the ASCII form of the signature
+
+> How to obtain the methodId? 
+>
+> Given the following Solidity function
+>
+>```solidity
+function max(uint256 a, uint256 b) internal pure returns (uint256) {
+    return a >= b ? a : b;
+}
+```
+> The signature is `max(uint256, uint256)`.
+>
+> The methodId is calculated with this Javascript function:
+>
+>```javascript
+function getMethodId(signature) {
+  const hash = keccak256(signature);
+  return `0x${hash.substring(0, 8)}`;
+}
+```
 
 **Returns**
 
