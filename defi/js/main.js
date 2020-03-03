@@ -55,8 +55,6 @@ $(document).ready(function () {
       $('.navbar-toggler-icon').addClass('header-scrolled');
       $('.scrollup').addClass('header-scrolled');
       $('.dropdown-item').addClass('header-scrolled');
-      $("#logo").attr("src", "img/logo-defi-dark.svg");
-      $("#logo_inner").attr("src", "../img/logo-defi-dark.svg");
 
     } else {
       $('.navbar').removeClass('header-scrolled');
@@ -64,8 +62,27 @@ $(document).ready(function () {
       $('.navbar-toggler-icon').removeClass('header-scrolled');
       $('.scrollup').removeClass('header-scrolled');
       $('.dropdown-item').removeClass('header-scrolled');
-      $("#logo").attr("src", "img/logo-defi.svg");
-      $("#logo_inner").attr("src", "../img/logo-defi.svg");
     }
   });
+
+// owl carousel
+$('.owl-carousel').owlCarousel({
+       loop:true,
+       nav:true,
+       center:true,
+       URLhashListener:true,
+       autoplayHoverPause:true,
+       responsive:{
+        0:{
+         items:1
+      },
+      600:{
+         items:1
+      },
+      1000:{
+         items:3
+      }
+   }
+});
+  
 });
