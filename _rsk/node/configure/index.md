@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Configure
+tags: rsk, rskj, node, config
+description: "Setting your own config preferences, when using the Java command, Ubuntu, Azure, AWS, or Docker"
 collection_order: 2400
 permalink: /rsk/node/configure/
 ---

@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Configure Verbosity
+tags: rsk, rskj, node, config, logs
+description: "Configure RSKj for desired log verbosity, finding log files, and using logback."
 collection_order: 2420
 ---
 
