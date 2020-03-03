@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Configure RSKj node for mining
+tags: rsk, rskj, node, config, mining
+description: "How to run RSKj in a manner suited for mining."
 collection_order: 2440
 ---
 
