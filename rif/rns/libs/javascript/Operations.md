@@ -10,6 +10,7 @@ tags: rns, javascript
   - [`reverse`](#reverse)
   - [`subdomains.available`](#available)
   - [`subdomains.setOwner`](#setowner)
+  - [`utils`](/rif/rns/libs/javascript/Utils)
 
 ### `addr`
 
