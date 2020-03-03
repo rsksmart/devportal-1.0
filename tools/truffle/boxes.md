@@ -10,6 +10,6 @@ You can create a bare project template, but for those just getting started, you 
 RSK has its own specialized Truffle Boxes:
 
 - [rsk-starter-box](/tutorials/truffle-boxes/rsk-starter-box): This box comes with everything you need to start using smart contracts at RSK Network. It includes network configs for Mainnet and Testnet.
-- [rsk-react-webpack-box](/tutorials/truffle-boxes/rsk-react-webpack-box): In this box you'll find a basic starter pack. It includes Truffle, React and Webpack. 
+- [rsk-react-box](/tutorials/truffle-boxes/rsk-react-box): This box comes with everything you need to start using smart contracts from a react app on RSK Network. 
 - [rsk-next-box](/tutorials/truffle-boxes/rsk-next-box): In this box you'll find a basic starter pack. It includes Truffle and Next JS.
 - [rsk-react-express-box](/tutorials/truffle-boxes/rsk-react-express-box): In this box you'll find a basic starter pack. It includes Truffle, React and Express JS.
