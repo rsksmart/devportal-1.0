@@ -8,7 +8,9 @@ tags: rns, javascript
 
   - [`addr`](#addr)
   - [`reverse`](#reverse)
-  - [`isSubdomainAvailable`](#issubdomainavailable)
+  - [`subdomains.available`](#available)
+  - [`subdomains.setOwner`](#setowner)
+  - [`utils`](/rif/rns/libs/javascript/Utils)
 
 ### `addr`
 
@@ -80,14 +82,16 @@ async reverse(address: string): Promise<string>
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
-### `isSubdomainAvailable`
+### subdomains
+
+#### `available`
 
 Checks if the given label subdomain is available under the given domain tree.
 
 **Signature**
 
 ```javascript
-async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
+async available(domain: string, label: string): Promise<boolean>
 ```
 
 **Parameters**
@@ -111,10 +115,10 @@ async isSubdomainAvailable(domain: string, label: string): Promise<boolean>
 Check if `example.testing.rsk` subdomain is available:
 
 ```javascript
-rns.isSubdomainAvailable('testing.rsk', 'example').then(console.log)
+rns.subdomains.available('testing.rsk', 'example').then(console.log)
 ```
 
-### `createSubdomain`
+#### `setOwner`
 
 Creates a new subdomain under the given domain tree.
 
@@ -123,7 +127,7 @@ Creates a new subdomain under the given domain tree.
 **Signature**
 
 ```javascript
-async createSubdomain(domain: string, label: string, owner: string): Promise<void>
+async setOwner(domain: string, label: string, owner: string): Promise<void>
 ```
 
 **Parameters**
@@ -139,6 +143,7 @@ async createSubdomain(domain: string, label: string, owner: string): Promise<voi
 - [`KB011`](/rif/rns/libs/javascript/Errors#kb011)
 - [`KB012`](/rif/rns/libs/javascript/Errors#kb012)
 - [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
+- [`KB016`](/rif/rns/libs/javascript/Errors#kb016)
 
 **Example**
 
@@ -146,7 +151,7 @@ Register `example.testing.rsk` and give ownership to `0x000000000000000000000000
 
 ```javascript
 const newOwnerAddress = '0x0000000000000000000000000000000000000001';
-await rns.createSubdomain('testing.rsk', 'example', newOwnerAddress);
+await rns.subdomains.setOwner('testing.rsk', 'example', newOwnerAddress);
 ```
 
 ## Advanced operations
