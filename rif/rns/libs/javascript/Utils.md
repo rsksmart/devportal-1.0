@@ -208,7 +208,7 @@ function max(uint256 a, uint256 b) internal pure returns (uint256) {
     return a >= b ? a : b;
 }
 ```
-> The signature is `max(uint256, uint256)`.
+> The signature is `max(uint256,uint256)`.
 >
 > The methodId is calculated with this Javascript function:
 >
