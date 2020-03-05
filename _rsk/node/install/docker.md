@@ -6,7 +6,28 @@ collection_order: 2321
 
 Make sure your system meets the [minimum requirements](../requirements/) before installing RSK nodes on it.
 
-For this method, you also need to install [Docker](https://docs.docker.com/install/).
+### Install Docker Desktop Client
+
+Docker Desktop provides an easy and fast way for running containerized applications on various of operating systems.
+
+For Mac OSX and Windows:
+
+- [Download](https://www.docker.com/products/docker-desktop) and install
+- Start the Docker Desktop client
+- Login with a Docker Hub free account
+
+For Linux:
+
+- Install [Docker Engine Community](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- Note that you will need to use `sudo` for all docker commands, by default. To avoid this [additional steps](https://docs.docker.com/install/linux/linux-postinstall/) are required.
+
+Ensure that docker is running by running the following command - it should run without any errors.
+
+```shell
+docker ps
+```
+
+More information about Docker install [here](https://docs.docker.com/install/).
 
 ## Install RskJ Using Docker
 
