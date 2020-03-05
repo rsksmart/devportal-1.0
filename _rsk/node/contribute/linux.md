@@ -55,14 +55,14 @@ Browse in your RskJ cloned directory and then launch `configure.sh` with the fol
 
 This will download and set important components (e.g. Gradle Wrapper).
 
-## Compiling and running the node
+## Compiling the node
 
 Now, you can launch IntelliJ IDEA:
 
 In a terminal, and from the folder you extracted the `tar.gz`, go into `idea/bin/`.
 Then, type the following command to load the script:
 
-```
+```shell
 ./idea/sh
 ```
 

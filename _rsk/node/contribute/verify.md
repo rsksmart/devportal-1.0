@@ -6,8 +6,6 @@ description: "Using release signing public key, GPG fingerprints, and SHA checks
 collection_order: 2550
 ---
 
-# Verify authenticity of RskJ source code and its binary dependencies
-
 The authenticity of the source code must be verified by checking the signature of the release tags in the official Git repository. The authenticity of the binary dependencies is verified by Gradle after following the steps below to install the necessary plugins.
 
 ## Download RSK Release Signing Key public key
@@ -53,7 +51,7 @@ Primary key fingerprint: 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
 
 The authenticity of the script `configure.sh` is checked using the `sha256sum` command and the signed `SHA256SUM.asc` file. The script is used to download and check the authenticity of the Gradle Wrapper and Gradle Witness plugins. After these plugins are installed, the authenticity of the rest of the binary dependencies is checked by Gradle.
 
-Linux - Windows (bash console)
+Linux or Windows (bash console)
 
 ```bash
 $ sha256sum --check SHA256SUMS.asc
