@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Contribute
+tags: rsk, rskj, node, contribute
+description: "Getting set up with RSKj and contributing towards its development."
 collection_order: 2500
 permalink: /rsk/node/contribute/
 ---

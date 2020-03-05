@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: CLI
+tags: rsk, rskj, node, contribute, cli
+description: "How to compile and run an RSKj node from the command line interface."
 collection_order: 2510
 ---
 

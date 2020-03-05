@@ -1,6 +1,8 @@
 ---
 layout: rsk
-title: MacOS
+title: Mac OSX
+tags: rsk, rskj, node, contribute, mac, osx
+description: "How to compile and run an RSKj node on Mac OSX. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
 collection_order: 2530
 ---
 

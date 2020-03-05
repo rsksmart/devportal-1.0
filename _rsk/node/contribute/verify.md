@@ -1,6 +1,8 @@
 ---
 layout: rsk
-title: Verify
+title: Verify authenticity of RskJ source code and its binary dependencies
+tags: rsk, rskj, node, contribute, verify, checksum, sha, gpg, fingerprint
+description: "Using release signing public key, GPG fingerprints, and SHA checksums to verify the RSKj release and its binary dependencies."
 collection_order: 2550
 ---
 
