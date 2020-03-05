@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: BTC to R-BTC Conversion
+tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
+description: "Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet."
 collection_order: 3100
 permalink: /rsk/rbtc/conversion/
 ---
