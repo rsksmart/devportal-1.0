@@ -21,7 +21,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-react-express-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-express-box",
       "head": "refs/heads/master",
-      "commit": "",
+      "commit": "e38cc795a4e48bd023e040e0af15a9a6bedc5766",
       "commands": [
         {
           "name": "copySingle",
