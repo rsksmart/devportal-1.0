@@ -7,7 +7,7 @@ layout: home
 The Developer Portal is the home for RSK documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
 
 <div class="features-list">
-    <ul class="row">
+    <ul id="card-list" class="row">
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/quick-start">
@@ -19,7 +19,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/quick-start">
             <div class="content-container">
                 <p class="card-title rsk_green">Getting Started</p>
-                <p>SmartBitcoin (R-BTC) is linked 1:1 to Bitcoin (1 R-BTC = 1 BTC)</p>
+                <p class="card-desc">SmartBitcoin (R-BTC) is linked 1:1 to Bitcoin (1 R-BTC = 1 BTC)</p>
             </div>
             </a><div class="btn-container "><a href="/quick-start">
                 </a><a class="green" href="/quick-start">Read More</a>
@@ -27,7 +27,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </div>
         </div>
         </li>
-        <li class="col-xl-6 col-md-6 ">
+        <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/rsk/node/install">
             <div class="icon node h-100">
@@ -38,7 +38,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/rsk/node/install">
             <div class="content-container">
                 <p class="card-title rsk_green">Node Setup </p>
-                <p>Learn how to set up a RSK node.</p>
+                <p class="card-desc">Learn how to set up a RSK node.</p>
             </div>
             </a><div class="btn-container"><a href="/rsk/node/install">
                 </a><a class="green" href="/rsk/node/install">Read More</a>
@@ -57,7 +57,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content two-line-title-content"><a href="/develop">
             <div class="content-container">
                 <p class="card-title rsk_green">Smart Contract Development</p>
-                <p>Learn how to port Ethereum projects to RSK</p>
+                <p class="card-desc">Learn how to port Ethereum projects to RSK</p>
             </div>
             </a><div class="btn-container"><a href="/develop">
                 </a><a class="green" href="/develop">Read More</a>
@@ -76,7 +76,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/rif">
             <div class="content-container">
                 <p class="card-title rsk_green">RIF Services</p>
-                <p>Access storage, oracles, naming and CPU services all in one place with the RIF token</p>
+                <p class="card-desc">Access storage, oracles, naming and CPU services all in one place with the RIF token</p>
             </div>
             </a><div class="btn-container"><a href="/rif">
                 </a><a class="green" href="/rif">Read More</a>
@@ -95,7 +95,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/rif/rns">
             <div class="content-container">
                 <p class="card-title rsk_green">Register a Domain</p>
-                <p>Learn more about RSK Name Service</p>
+                <p class="card-desc">Learn more about RSK Name Service</p>
             </div>
             </a><div class="btn-container"><a href="/rif/rns">
                 </a><a class="green" href="/rif/rns">Read More</a>
@@ -114,7 +114,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             </a><div class="content"><a href="/rif/lumino">
             <div class="content-container">
                 <p class="card-title rsk_green">Lumino network</p>
-                <p>Launch a Lumino Node</p>
+                <p class="card-desc">Launch a Lumino Node</p>
             </div>
             </a><div class="btn-container"><a href="/rif/lumino">
                 </a><a class="green" href="/rif/lumino">Read More</a>
