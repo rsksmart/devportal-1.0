@@ -3,21 +3,32 @@
 $(document).ready(function(){
     // Check local storage and set theme
     if(localStorage.theme) {
-        $('body').addClass( localStorage.theme );
+        $('html').addClass( localStorage.theme );
     } 
     else{
-        $('body').addClass('light'); // set default theme. No need to set via php now
+        $('html').addClass('light'); // set default theme. No need to set via php now
     }
+
+  if ($('html').hasClass('dark')) {
+  $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
+  $('#theme-toggler').text('Light');
+} 
+else  { 
+   $('#logo').attr('src','/assets/img/rsk_logo.svg');
+   $('#theme-toggler').text('Dark');
+ }
+
+
     //Switch theme and store in local storage ...
     $("#theme-toggler").click(function(){
-       if ($('body').hasClass( 'light')){
-        $('body').removeClass('light').addClass('dark');
+       if ($('html').hasClass( 'light')){
+        $('html').removeClass('light').addClass('dark');
         $('#theme-toggler').text('Light');
         $('#logo').attr("src", "/assets/img/rsk_logo_reverse.svg");
         localStorage.theme = 'dark';
     }
     else  {
-        $('body').removeClass('dark').addClass('light');
+        $('html').removeClass('dark').addClass('light');
         $('#theme-toggler').text('Dark');
         $('#logo').attr("src", "/assets/img/rsk_logo.svg");
         localStorage.theme = 'light';
@@ -26,16 +37,6 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function () {
-if ($('body').hasClass('dark')) {
-  $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
-  $('#theme-toggler').text('Light');
-} 
-else  { 
-   $('#logo').attr('src','/assets/img/rsk_logo.svg');
-   $('#theme-toggler').text('Dark');
- }
- });
 
 $(document).ready(function () {
   setUpMainSearch();
