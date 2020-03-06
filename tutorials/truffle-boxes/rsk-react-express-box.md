@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Truffle Box (rsk-react-express-box)
+tags: tutorial, rsk, truffle, react, express
+description: "How to install and use a Truffle box that comes with React and Express, and work with the RSK network."
 ---
 
 # RSK React + Express JS Box
@@ -112,13 +114,13 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
 
 3. Check Express JS component. If you want to connect the server to RSK Network, update line 11 of `app/src/server/index.js`
     **Mainnet**
-    ```js        
+    ```js
     const provider = new Web3.providers.HttpProvider("https://public-node.rsk.co");
     ```
 
     **Testnet**
-    ```js    
-    const provider = new Web3.providers.HttpProvider("https://public-node.testnet.rsk.co");    
+    ```js
+    const provider = new Web3.providers.HttpProvider("https://public-node.testnet.rsk.co");
     ```
 
 4. Run the development console for any RSK network.

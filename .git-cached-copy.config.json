@@ -17,6 +17,22 @@
       ]
     },
     {
+      "id": "rsk-react-express-box",
+      "gitUrl": "git@github.com:rsksmart/rsk-react-express-box.git",
+      "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-express-box",
+      "head": "refs/heads/master",
+      "commit": "",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "README.md",
+          "localFilePath": "tutorials/truffle-boxes/rsk-react-express-box.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },
+    {
       "id": "rsk-precompiled-abis",
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
