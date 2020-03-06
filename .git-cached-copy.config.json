@@ -5,7 +5,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-starter-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-starter-box",
       "head": "refs/heads/master",
-      "commit": "55cfb31da71727cdee37c1fd83d733d3758f8457",
+      "commit": "f7fbe160c85468caf135c041f2b6f311117379c8",
       "commands": [
         {
           "name": "copySingle",
@@ -53,7 +53,7 @@
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
       "head": "refs/heads/master",
-      "commit": "bcdd0f37a19a222b90eff57e94e3d8bf16f0937f",
+      "commit": "b0fc6b52e782a7cf817980c6b3d41deb71dcb713",
       "commands": [
         {
           "name": "copySingle",
