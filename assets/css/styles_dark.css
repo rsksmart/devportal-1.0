@@ -1,17 +1,25 @@
 /* CSS Document */
 
-body.dark {
+.dark body {
     color: #E6E6E6!important;
     background: #141414!important;
+    background-color: #141414!important;
+}
+
+.dark .bg-dark {
+    background-color: #141414!important;
+}
+
+
+.dark .navbar {
+    background-color: #141414!important;
 }
 
 .dark .navbar-dark .navbar-toggler-icon {
     background-image: url(../img/burger_dark.svg);
 }
 
-.dark .bg-dark {
-    background-color: #141414!important;
-}
+
 
 .dark .navbar.header-scrolled {
     background: #141414!important;
@@ -24,6 +32,14 @@ body.dark {
 .dark .nav-link:hover {
     color: white!important;
     font-weight: bold;
+}
+
+.dark .menu-container a[target="_blank"]:hover:after {
+    background: url(../img/ext-link-hover-reverse.svg);
+}
+
+.dark .first_level>a[target="_blank"]:hover:after {
+    background: url(../img/first-level-ext-link-hover.svg);
 }
 
 .dark .search-input {
