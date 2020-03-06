@@ -14,7 +14,9 @@ This page is organized in this way:
 - [Get the source code](#get-the-source-code)
 - [Ensure the security chain](#ensure-the-security-chain)
 - [Get external dependencies](#get-external-dependencies)
-- [Compiling and running the node](#compiling-and-running-the-node)
+- [Compiling the node](#compiling-the-node)
+- [IDEA Build/Run configuration](#idea-buildrun-configuration)
+- [Running the node](#running-the-node)
 
 ## Pre-requisites
 
@@ -67,7 +69,7 @@ Browse in your RskJ cloned directory and then launch `configure.sh` with the fol
 
 This will download and set important components (e.g. Gradle Wrapper).
 
-## Compiling and running the node
+## Compiling the node
 
 Now, you can launch IntelliJ IDEA.
 When IntelliJ IDEA is launched you should have a window with different choices.
