@@ -1,3 +1,43 @@
+// store dark /light theme 
+
+$(document).ready(function(){
+    // Check local storage and set theme
+    if(localStorage.theme) {
+        $('html').addClass( localStorage.theme );
+    } 
+    else{
+        $('html').addClass('light'); // set default theme. No need to set via php now
+    }
+
+  if ($('html').hasClass('dark')) {
+  $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
+  $('#theme-toggler').text('Light');
+} 
+else  { 
+   $('#logo').attr('src','/assets/img/rsk_logo.svg');
+   $('#theme-toggler').text('Dark');
+ }
+
+
+    //Switch theme and store in local storage ...
+    $("#theme-toggler").click(function(){
+       if ($('html').hasClass( 'light')){
+        $('html').removeClass('light').addClass('dark');
+        $('#theme-toggler').text('Light');
+        $('#logo').attr("src", "/assets/img/rsk_logo_reverse.svg");
+        localStorage.theme = 'dark';
+    }
+    else  {
+        $('html').removeClass('dark').addClass('light');
+        $('#theme-toggler').text('Dark');
+        $('#logo').attr("src", "/assets/img/rsk_logo.svg");
+        localStorage.theme = 'light';
+    }
+});
+});
+
+
+
 $(document).ready(function () {
   setUpMainSearch();
 });
@@ -86,16 +126,6 @@ $(window).scroll(function () {
   }
 });
 
-function ChangeTheme (e) {
-  if ($(e).text() === 'Dark') {
-    $(e).text('Light');
-    $('link[href="/assets/css/styles_dark.css"]').prop('disabled', false);
-  } else {
-    $(e).text('Dark');
-    $('link[href="/assets/css/styles_dark.css"]').prop('disabled', true);
-  }
-  return false;
-}
 
 // toggle between expand all and collapse all
 function toggleNavColumnVisibility (e) {

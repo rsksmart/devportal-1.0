@@ -1,122 +1,173 @@
 /* CSS Document */
 
-body {
-	color: #E6E6E6!important;
-	background: #141414!important;
+.dark body {
+    color: #E6E6E6!important;
+    background: #141414!important;
+    background-color: #141414!important;
 }
 
-.bg-dark {
-	background-color: #000000!important;
+.dark .bg-dark {
+    background-color: #141414!important;
 }
 
-.navbar_bottom_shape {
-	width: 100%;
-	height: 200px;
-	background: url(/assets/img/dark_green_shape.png);
-	background-repeat: no-repeat;
-	background-position: bottom center;
-	background-size: contain;
-	display: block;
-	position: absolute;
-	top: -15px;
-	transition: all 0.5s ease;
+
+.dark .navbar {
+    background-color: #141414!important;
 }
 
-.navbar.header-scrolled {
-	background: #000000 !important;
+.dark .navbar-dark .navbar-toggler-icon {
+    background-image: url(../img/burger_dark.svg);
 }
 
-.breadcrumb .active a,
-.btn-outline-secondary .parag {
-	color: #F26122!important;
+
+
+.dark .navbar.header-scrolled {
+    background: #141414!important;
 }
 
-.breadcrumb li a {
-	color: #FFFFFF!important;}
-
-.breadcrumb li a:hover {
-	color:#F26122!important;
-	font-weight: normal!important;
-}
-.breadcrumb li:last-child a {
-	color:#F26122!important;
+.dark .nav-link {
+    color: white!important;
 }
 
-li:hover > a, li.current > a{color:white!important;}
-li:hover > span, li.current > span{color:white!important;}
-
-.first_level:hover > a{color:#F26122!important;}
-.first_level:hover > a::before{background: #F26122;}
-.first_level:hover > span{color:#F26122!important;}
-
-.first_level.current > a, .first_level.current > span{color:#F26122!important;}
-.first_level.current > a::before{content: "\A";width: 7px;
-height: 7px;
-border-radius: 50%;background:#F26122!important;
-display: inline-block;
-margin: 0 10px 0 0;}
-
-.menu-container div > a:hover{color:white!important;}
-
-.table {
-	color: white!important;
+.dark .nav-link:hover {
+    color: white!important;
+    font-weight: bold;
 }
+
+.dark .menu-container a[target="_blank"]:hover:after {
+    background: url(../img/ext-link-hover-reverse.svg);
+}
+
+.dark .first_level>a[target="_blank"]:hover:after {
+    background: url(../img/first-level-ext-link-hover.svg);
+}
+
+.dark .search-input {
+    background: transparent;
+    border-color: #008CFF;
+    color: #008CFF;
+}
+
+.dark .breadcrumb .active a,
+.dark .btn-outline-secondary .parag {
+    color: #FFFFFF!important;
+}
+
+.dark .breadcrumb li a {
+    color: #E6E6E6!important;
+}
+
+.dark .breadcrumb li a:hover {
+    color: #FFFFFF!important;
+    font-weight: bold!important;
+}
+
+.dark .breadcrumb li:last-child a {
+    color: #FFFFFF!important;
+}
+
+.dark .menu-container li:hover>a,
+.dark li.current>a {
+    color: white!important;
+}
+
+.dark .menu-container li:hover>span,
+.dark li.current>span {
+    color: white!important;
+}
+
+.dark .first_level.current>a,
+.dark .first_level.current>span {
+    color: #008CFF!important;
+}
+
+.dark .menu-container .first_level:hover>a {
+    color: #008CFF!important;
+}
+
+.dark .menu-container .first_level:hover>a::before {
+    background: #008CFF;
+}
+
+.dark .menu-container .first_level:hover>span {
+    color: #008CFF!important;
+}
+
+.dark .menu-container div>a:hover {
+    color: #008CFF!important;
+}
+
+.dark .table {
+    color: white!important;
+}
+
+.dark .feature-card a p {
+    color: white;
+}
+
 
 /* The stack */
 
-.the-stack .row{
- color:#000000;}
-
- .the-stack .row .col{
- 	background:#E6E6E6;
- }
-
- .the-stack .row .col span{
-	color:#000000;
+.dark .the-stack .row {
+    color: #000000;
 }
- .the-stack .row .col span{
-	color:#000000;
+
+.dark .the-stack .row .col {
+    background: #E6E6E6;
+}
+
+.dark .the-stack .row .col span {
+    color: #000000;
+}
+
+.dark .the-stack .row .col span {
+    color: #000000;
 }
 
 @media (max-width: 991px) {
-	.btn-outline-secondary{color:#F26122!important;}
-	li:hover > a, li.current > a{color:black!important;}
-	li:hover > span, li.current > span{color:black!important;}
-	.first_level > a{color:#F26122!important;}
-	.first_level > a::before{background: #F26122!important;}
-	.menu-container > div > a:hover { color:black!important; }
-	.navbar_bottom_shape { top: -40px; }
+    .dark li:hover>a,
+    li.current>a {
+        color: black!important;
+    }
+    .dark li:hover>span,
+    li.current>span {
+        color: black!important;
+    }
+    /*.dark .first_level>a {
+        color: #FFFFFF!important;
+    }
+    .dark .first_level>a::before {
+        background: #FFFFFF!important;
+    }*/
+
+
+
+
+    .dark .menu-container>div>a:hover {
+        color: black!important;
+    }
+    
 }
 
-@media (max-width: 576px) {
-	.navbar_bottom_shape { top: -60px; }
-}
+
 
 @media screen and (max-width: 1200px) {
-	.the-stack .reverse_mobile .col{ background:#00b520!important; }
+    .dark .the-stack .reverse_mobile .col {
+        background: #00b520!important;
+    }
 }
 
-@media (min-width: 1500px) {
-	.navbar_bottom_shape {
-		background-position: bottom center;
-		background-size: cover;
-		top: 0px;
-	}
-}
+
 
 @media screen and (min-width: 1900px) {
-	#home {
-		padding-top: 300px;
-	}
-	.navbar_bottom_shape {
-		background-position: bottom center;
-		background-size: cover;
-		top: 40px;
-	}
+    .dark #home {
+        padding-top: 300px;
+    }
+    
 }
 
 @media (min-width: 2600px) {
-	#home {
-		padding-top: 350px;
-	}
+    .dark #home {
+        padding-top: 350px;
+    }
 }
