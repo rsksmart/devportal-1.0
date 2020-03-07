@@ -5,7 +5,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-starter-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-starter-box",
       "head": "refs/heads/master",
-      "commit": "f7fbe160c85468caf135c041f2b6f311117379c8",
+      "commit": "c10b71b7ea18f4f83784750215cd1c19383a9aff",
       "commands": [
         {
           "name": "copySingle",
@@ -21,7 +21,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-react-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-box",
       "head": "refs/heads/master",
-      "commit": "f9d664c7b8a8139befde7050cc2ce9ea94a675dc",
+      "commit": "5010ce2bcef0ce43671baced96354417b548f9f3",
       "commands": [
         {
           "name": "copySingle",
@@ -37,7 +37,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-react-express-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-express-box",
       "head": "refs/heads/master",
-      "commit": "e38cc795a4e48bd023e040e0af15a9a6bedc5766",
+      "commit": "5fb1f886090749fdba82c95f1b6b1ef207a28adf",
       "commands": [
         {
           "name": "copySingle",
@@ -53,7 +53,7 @@
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
       "head": "refs/heads/master",
-      "commit": "b0fc6b52e782a7cf817980c6b3d41deb71dcb713",
+      "commit": "037690ca83b78e82b3e95b4fba2fb9ad5b1ec647",
       "commands": [
         {
           "name": "copySingle",
