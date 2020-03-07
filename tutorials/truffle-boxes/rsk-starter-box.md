@@ -50,7 +50,7 @@ First ensure you are in a new and empty directory.
 
 ### Setup the gas price
 
-**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
+**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To get the **minimumGasPrice** do the following steps:
@@ -112,3 +112,4 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     compile
     migrate
     ```
+    
