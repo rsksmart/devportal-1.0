@@ -59,7 +59,7 @@ The RIF Token allows any token holder to consume the services that are compatibl
     </tr>
     <tr>
       <td scope="row">Contract Testnet Address</td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE" target="_blank">0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0x19f64674D8a5b4e652319F5e239EFd3bc969a1FE" target="_blank">0x19f64674D8a5b4e652319F5e239EFd3bc969a1FE</a></td>
     </tr>
     <tr>
       <td scope="row">Contract Type</td>
