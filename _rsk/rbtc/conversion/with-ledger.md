@@ -1,10 +1,10 @@
 ---
 layout: rsk
 title: Conversion with Ledger
+tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, ledger
+description: "How to perform the 2-way peg mechanism using Ledger"
 collection_order: 3120
 ---
-
-This document explains how to try the 2-way peg mechanism using Ledger.
 
 - [General requirements](#general-requirements)
 - [Lock: From BTC to R-BTC](#from-btc-to-r-btc)
@@ -19,6 +19,8 @@ This document explains how to try the 2-way peg mechanism using Ledger.
 * Use Ledger firmware less than `1.5.5`
 
 ## From BTC to R-BTC
+
+How to perform a peg-out.
 
 :exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-r-btc-conversion)
 
@@ -52,6 +54,8 @@ This document explains how to try the 2-way peg mechanism using Ledger.
 8. Then use our [Testnet Explorer](https://explorer.testnet.rsk.co) or [Mainnet Explorer](https://explorer.rsk.co) to see your R-BTC balance.
 
 ## From R-BTC to BTC
+
+How to perform a peg-in.
 
 :exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/#2-r-btc-to-btc-conversion).
 
