@@ -53,5 +53,5 @@ To apply your configuration options, you need to set your own config file's path
 
 This can be done in two ways:
 
-- Running the node with de `java` command, add `-Drsk.conf.file=path/to/your/file.conf`
+- Running the node with the `java` command, add `-Drsk.conf.file=path/to/your/file.conf`
 - Compiling the node with IntelliJ, add to VM options: `-Drsk.conf.file=path/to/your/file.conf`
