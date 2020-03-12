@@ -36,7 +36,7 @@ The payment for the miners of the main block, the siblings and the publishers wi
   <img src="https://latex.codecogs.com/svg.latex?Rsk_{rwd}=\frac{FullBlock_{rwd}}{5}"/>
 * RSK Federation will receive a fee of ~0.8% of the full block reward:
   <img src="https://latex.codecogs.com/svg.latex?Fed_{rwd}=\frac{FullBlock_{rwd}-Rsk_{rwd}}{100}"/>
-* Miners will receive a payment of ~79,2% of the full block reward:
+* Miners will receive a payment of ~79.2% of the full block reward:
   <img src="https://latex.codecogs.com/svg.latex?Miners_{rwd}=FullBlock_{rwd}-Rsk_{rwd}-Fed_{rwd}"/>
 
 <br/>
