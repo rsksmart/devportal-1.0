@@ -221,7 +221,7 @@ await rns.subdomains.setOwner('testing.rsk', 'example', newOwnerAddress);
 
 #### `create`
 
-Creates a new subdomain under the given domain tree if it is available, and set the resolution if addr is provided.
+Creates a new subdomain under the given domain tree if it is available, and sets its resolution if addr is provided.
 
 > Precondition: the sender should be the owner of the parent domain.
 

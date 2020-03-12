@@ -8,7 +8,6 @@ tags: rns, javascript
 
 The library has already set the contract addresses for RSK Mainnet and Testnet, so if the Web3 instance points to one of those networks, no extra action is needed.
 If you want to use your local blockchain, contract addresses must be provided and should be sent as parameter.
-You can also specify a different networkId to perform checksum validations, should be added in the `options` parameter.
 
 > If a custom blockchain has been set but the contracts addresses are not provided, it will throw [“No contract addresses provided”](/rif/rns/libs/javascript/Errors/) on the first operation invoked.
 
@@ -29,7 +28,7 @@ async function myCustomGetOwner(domain) {
 }
 ```
 
-You can also specify a different `networkId` to perform checksum validations, should be added in the `options` parameter. 
+You can also specify a different `networkId` to perform checksum validations, it should be added in the `options` parameter. 
 > `networkId` could be used also when instantiating the lib using RSK Mainnet or RSK Testnet
 
 **Example**
