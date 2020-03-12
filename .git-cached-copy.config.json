@@ -5,7 +5,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk3.js.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk3.js",
       "head": "refs/heads/master",
-      "commit": "",
+      "commit": "c91118029e3f791af954070937f775d5cdc912d6",
       "commands": [
         {
           "name": "copySingle",
