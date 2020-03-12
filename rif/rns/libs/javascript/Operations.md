@@ -8,8 +8,11 @@ tags: rns, javascript
 
   - [`addr`](#addr)
   - [`reverse`](#reverse)
+  - [`setAddr`](#setaddr)
+  - [`setResolver`](#setresolver)
   - [`subdomains.available`](#available)
   - [`subdomains.setOwner`](#setowner)
+  - [`subdomains.create`](#create)
   - [`utils`](/rif/rns/libs/javascript/Utils)
 
 ### `addr`
@@ -82,6 +85,68 @@ async reverse(address: string): Promise<string>
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
+### `setAddr`
+
+Set address resolution of a given domain using the [AbstractAddrResolver](/rif/rns/architecture/Resolver#setaddr) interface.
+
+**Signature**
+
+```javascript
+async setAddr(domain: string, addr: string): Promise<void>
+```
+
+**Parameters**
+
+- `domain`: Domain to set resolution.
+- `addr`: Address to be set as the resolution of the given domain
+
+**Throws**
+
+- [`KB002`](/rif/rns/libs/javascript/Errors#kb002)
+- [`KB003`](/rif/rns/libs/javascript/Errors#kb003)
+- [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
+- [`KB017`](/rif/rns/libs/javascript/Errors#kb017)
+- [`KB018`](/rif/rns/libs/javascript/Errors#kb018)
+- [`KB019`](/rif/rns/libs/javascript/Errors#kb019)
+
+**Examples**
+
+Set an address:
+
+```javascript
+rns.setAddr('testing.rsk', '0x0000000000000000000000000000000123456789').then(() => console.log('Done!'))
+```
+
+### `setResolver`
+
+Set [resolver](/rif/rns/architecture/registry#setresolver) of a given domain.
+
+**Signature**
+
+```javascript
+async setResolver(domain: string, resolver: string): Promise<void>
+```
+
+**Parameters**
+
+- `domain`: Domain to set resolver.
+- `resolver`: Address to be set as the resolver of the given domain
+
+**Throws**
+
+- [`KB012`](/rif/rns/libs/javascript/Errors#kb012)
+- [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
+- [`KB017`](/rif/rns/libs/javascript/Errors#kb017)
+- [`KB019`](/rif/rns/libs/javascript/Errors#kb019)
+
+**Examples**
+
+Set a custom resolver:
+
+```javascript
+rns.setResolver('testing.rsk', '0x0000000000000000000000000000000123456789').then(() => console.log('Done!'))
+```
+
 ### subdomains
 
 #### `available`
@@ -120,7 +185,7 @@ rns.subdomains.available('testing.rsk', 'example').then(console.log)
 
 #### `setOwner`
 
-Creates a new subdomain under the given domain tree.
+Creates a new subdomain under the given domain tree if it is available.
 
 > Precondition: the sender should be the owner of the parent domain.
 
@@ -152,6 +217,55 @@ Register `example.testing.rsk` and give ownership to `0x000000000000000000000000
 ```javascript
 const newOwnerAddress = '0x0000000000000000000000000000000000000001';
 await rns.subdomains.setOwner('testing.rsk', 'example', newOwnerAddress);
+```
+
+#### `create`
+
+Creates a new subdomain under the given domain tree if it is available, and sets its resolution if addr is provided.
+
+> Precondition: the sender should be the owner of the parent domain.
+
+**Signature**
+
+```javascript
+async create(domain: string, label: string, owner: string, addr: string): Promise<void>
+```
+
+**Parameters**
+
+- `domain`: Parent `.rsk` domain. For example, `wallet.rsk`
+- `label`: Subdomain to register. For example, `alice`
+- `owner`: The owner of the new subdomain. If not provided, the address who executes the tx will be the owner
+- `addr`: The address to be set as resolution of the new subdomain
+
+> If `addr` is not provided, no resolution will be set
+>
+> If `owner` is not provided, the sender will be set as the new owner
+>
+> If `owner` and `addr` are provided and `owner` is equals to the sender, two txs will be sent.
+>
+> If `owner` and `addr` are provided but `owner` is different from the sender, then three txs will be sent.
+
+**Throws**
+
+- [`KB002`](/rif/rns/libs/javascript/Errors#kb002)
+- [`KB009`](/rif/rns/libs/javascript/Errors#kb009)
+- [`KB010`](/rif/rns/libs/javascript/Errors#kb010)
+- [`KB011`](/rif/rns/libs/javascript/Errors#kb011)
+- [`KB012`](/rif/rns/libs/javascript/Errors#kb012)
+- [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
+- [`KB016`](/rif/rns/libs/javascript/Errors#kb016)
+- [`KB017`](/rif/rns/libs/javascript/Errors#kb017)
+- [`KB019`](/rif/rns/libs/javascript/Errors#kb019)
+
+**Example**
+
+Register `example.testing.rsk`, give ownership to `0x0000000000000000000000000000000000000001` and set resolution to `0x0000000000000000000000000000000000000002`:
+
+```javascript
+const newOwnerAddress = '0x0000000000000000000000000000000000000001';
+const resolution = '0x0000000000000000000000000000000000000002';
+await rns.subdomains.create('testing.rsk', 'example', newOwnerAddress, resolution);
 ```
 
 ## Advanced operations
