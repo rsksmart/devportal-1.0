@@ -10,7 +10,7 @@
         {
           "name": "copySingle",
           "remoteFilePath": "README.md",
-          "localFilePath": "libraries/rsk3js/index.md",
+          "localFilePath": "libraries/rsk3js/docs/index.md",
           "localPreserveFrontMatter": true,
           "remotePreserveFrontMatter": false
         },
