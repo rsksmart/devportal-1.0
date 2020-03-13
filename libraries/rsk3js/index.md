@@ -4,6 +4,10 @@ title: rsk3.js
 tags: libraries, rsk, rsk3js, javascript, web3js
 ---
 
+## Source code
+
+- [github.com/rsksmart/rsk3.js](https://github.com/rsksmart/rsk3.js/)
+
 ## Guides
 
 - [Installation, usage, and development](./docs/)
