@@ -1,10 +1,10 @@
-// store dark /light theme 
+// store dark /light theme
 
 $(document).ready(function(){
     // Check local storage and set theme
     if(localStorage.theme) {
         $('html').addClass( localStorage.theme );
-    } 
+    }
     else{
         $('html').addClass('light'); // set default theme. No need to set via php now
     }
@@ -12,8 +12,8 @@ $(document).ready(function(){
   if ($('html').hasClass('dark')) {
   $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
   $('#theme-toggler').text('Light');
-} 
-else  { 
+}
+else  {
    $('#logo').attr('src','/assets/img/rsk_logo.svg');
    $('#theme-toggler').text('Dark');
  }
@@ -241,4 +241,22 @@ function setUpMainSearch () {
       // do nothing
     }
   });
+}
+
+function renderEquations() {
+  console.log('renderEquations');
+  var elemNodeList = document.querySelectorAll('a[title^="tex-render "]');
+  var elems = Array.prototype.slice.call(elemNodeList);
+  elems.forEach(renderEquation);
+}
+
+function renderEquation(el) {
+  var equation = el.getAttribute('title').slice('tex-render '.length);
+  var equationEl = document.createElement('span');
+  katex.render(equation, equationEl, {
+    throwOnError: false,
+  });
+  equationEl.setAttribute('title', equation);
+  equationEl.classList.add('tex-rendered');
+  el.replaceWith(equationEl);
 }
