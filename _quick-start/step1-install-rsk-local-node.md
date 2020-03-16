@@ -5,7 +5,10 @@ collection_order: 10
 ---
 ## Step 1 : Install RSK local node
 
-RSK node can be installed on all major platforms, including Linux, Windows, and Mac. In this tutorial, we provide step-by-step instructions for running a local RegTest node through Docker. Docker installation supports Mac, Windows, and Linux.
+RSK node can be installed on all major platforms, including Linux, Windows, and Mac. 
+Originally named in Bitcoin, local node is know as RegTest node.
+
+In this tutorial, we provide step-by-step instructions for running a local RegTest node through Docker. Docker installation supports Mac, Windows, and Linux.
 
 ### Prepare the Environment
 
@@ -74,11 +77,16 @@ Start a container with the built image. This command will start an RSKJ node wit
 
 ```shell
 docker run -d \
-  --name regtest-node-01 \
-  -p 4444:4444 \
-  -p 4445:4445 \
-  -p 30305:30305 \
-  regtest:latest
+ --name regtest-node-01 \
+ -p 4444:4444 \
+ -p 4445:4445 \
+ -p 30305:30305 \
+ regtest:latest
+```
+
+For Windows, it must be in a single line:
+```shell
+docker run -d --name regtest-node-01 -p 4444:4444 -p 4445:4445 -p 30305:30305 regtest:latest
 ```
 
 If the container runs successfully, you should get an output that is a hash, for example: `2f75d6c3f08dc15232be42ed2dabcc370742b3dd573f45fcac7253abce151f9d`.
@@ -103,6 +111,8 @@ RSK nodes allow you to connect over HTTP,
 which is exposed on port `4444`.
 Let us verify that this works.
 
+In a terminal which supports curl:
+
 ```bash
 curl http://localhost:4444/1.1.0/ \
   -X POST -H "Content-Type: application/json" \
@@ -126,7 +136,7 @@ Let us verify that this works too.
 npx wscat -c ws://localhost:4445/websocket
 ```
 
-If you have not installed `wscat` globally before, wait for it to do so,
+If you have not installed [`wscat`](https://www.npmjs.com/package/wscat) globally before, wait for it to do so,
 and then it will load up its own shell.
 
 ```text
@@ -151,7 +161,7 @@ This should respond with something that looks like the following:
 
 ### Cleaning up
 
-After finishing the tutorial, you can use the following commands to shut down or remove the container.
+After finishing the tutorial, you can use the following commands to shut down (`kill`) or remove (`rm`) the container.
 
 ```shell
 docker container list

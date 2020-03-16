@@ -1,23 +1,27 @@
 ---
 layout: rsk
 title: Conversion with node and console
+tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, node, cli
+description: "How to perform the 2-way peg mechanism using node and console"
 collection_order: 3140
 ---
 
-This document explains how to try the 2-way peg mechanism using Ledger.
 - [General requirements](#general-requirements)
 - [Lock: From BTC to R-BTC](#from-btc-to-r-btc)
 - [Release: From R-BTC to BTC](#from-r-btc-to-btc)
 
 ## General Requirements
+
 * Clone [this project](https://github.com/rsksmart/utilities/tree/master/peg/hw/ledger).
 * You need a [Ledger](https://www.ledger.com/) with Bitcoin and RSK Apps installed. We recommend you to have [Ledger Live](https://www.ledger.com/pages/ledger-live) and review this tutorial [Use the Manager](https://support.ledgerwallet.com/hc/en-us/articles/360006523674-Use-the-Manager).
 * You need to have [Electrum](https://electrum.org/). Install it and [configure it to be used with Ledger](https://support.ledgerwallet.com/hc/en-us/articles/115005161925-Set-up-and-use-Electrum).
 * Set the correct [RSK public node](/rsk/public-nodes) in the `config.json` file depending on the network you are going to use.
 * Use Ledger firmware less than `1.5.5`
 
-
 ## From BTC to R-BTC
+
+How to perform a peg-out.
+
 :exclamation: **Before start:** read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-r-btc-conversion)
 1. Set a derivation path in the key `derivationPath` in `config.json` file. You should use BTC mainnet/testnet derivation path `44'/0'/0'/0/0`.
 2. Unlock Ledger and open the **Bitcoin App**.
@@ -53,6 +57,9 @@ Derivation Path: 44'/1'/0'/0/0
 8. Then use our [Testnet Explorer](https://explorer.testnet.rsk.co) or [Mainnet Explorer](https://explorer.rsk.co) to see your R-BTC balance.
 
 ## From R-BTC to BTC
+
+How to perform a peg-in.
+
 :exclamation: **Before start:** read [release requirements](/rsk/rbtc/conversion/#2-r-btc-to-btc-conversion).
 1. Set a derivation path in the key `derivationPath` in `./config.json` file. You should use BTC mainnet/testnet derivation path `44'/0'/0'/0/0`.
 

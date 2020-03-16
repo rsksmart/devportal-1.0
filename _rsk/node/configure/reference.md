@@ -70,7 +70,7 @@ Describes where the blockchain  database is saved.
 
 * `database.dir = path` is the place to save physical storage files.
 * `database.reset = [true/false]
-` resets de database when application starts if it is set to *true*.
+` resets the database when the application starts if it is set to *true*.
 
 
 ## vm

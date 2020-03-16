@@ -5,7 +5,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-starter-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-starter-box",
       "head": "refs/heads/master",
-      "commit": "55cfb31da71727cdee37c1fd83d733d3758f8457",
+      "commit": "c10b71b7ea18f4f83784750215cd1c19383a9aff",
       "commands": [
         {
           "name": "copySingle",
@@ -17,11 +17,43 @@
       ]
     },
     {
+      "id": "rsk-react-box",
+      "gitUrl": "git@github.com:rsksmart/rsk-react-box.git",
+      "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-box",
+      "head": "refs/heads/master",
+      "commit": "5010ce2bcef0ce43671baced96354417b548f9f3",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "README.md",
+          "localFilePath": "tutorials/truffle-boxes/rsk-react-box.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },
+    {
+      "id": "rsk-react-express-box",
+      "gitUrl": "git@github.com:rsksmart/rsk-react-express-box.git",
+      "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-express-box",
+      "head": "refs/heads/master",
+      "commit": "5fb1f886090749fdba82c95f1b6b1ef207a28adf",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "README.md",
+          "localFilePath": "tutorials/truffle-boxes/rsk-react-express-box.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },
+    {
       "id": "rsk-precompiled-abis",
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
       "head": "refs/heads/master",
-      "commit": "bcdd0f37a19a222b90eff57e94e3d8bf16f0937f",
+      "commit": "037690ca83b78e82b3e95b4fba2fb9ad5b1ec647",
       "commands": [
         {
           "name": "copySingle",

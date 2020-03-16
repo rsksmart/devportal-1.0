@@ -93,3 +93,27 @@ tags: rns, javascript, error
 **Message**: There are no accounts to sign the transaction
 
 **Description**: The web3 instance provided does not have a private key associated
+
+## `KB016`
+
+**Message**: The subdomain is not available
+
+**Description**: The subdomain is already owned
+
+## `KB017`
+
+**Message**: The given address is invalid
+
+**Description**: The given address has an invalid syntax.
+
+## `KB018`
+
+**Message**: The resolver does not implements setAddr method
+
+**Description**: Domain resolver should implement [setAddr](/rif/rns/architecture/Resolver#setaddr) interface.
+
+## `KB019`
+
+**Message**: The given address checksum is invalid
+
+**Description**: The given address checksum is invalid for the current networkId. Check out [here](https://eips.ethereum.org/EIPS/eip-1191) how checksum validation is performed.

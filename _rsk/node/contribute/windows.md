@@ -1,10 +1,20 @@
 ---
 layout: rsk
 title: Windows
+tags: rsk, rskj, node, contribute, windows
+description: "How to compile and run an RSKj node on Windows. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
 collection_order: 2540
 ---
 
-## Compiling and running the node
+Here you have the steps to compile and run an RSK node on Windows.
+
+This page is organized in this way:
+
+- [Compiling the node](#compiling-the-node)
+- [IDEA Build/Run configuration](#idea-buildrun-configuration)
+- [Running the node](#running-the-node)
+
+## Compiling the node
 
 After opening IDEA we need to load the RskJ project, this can be done by using the *Import project* option in IDEA.
 
