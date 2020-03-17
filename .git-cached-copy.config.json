@@ -68,6 +68,22 @@
           "localFilePath": "libraries/rsk-precompiled-abis/RSK_Logo_RGB_300dpi.png"
         }
       ]
+    },
+    {
+      "id": "tutorial-rsk-api",
+      "gitUrl": "git@github.com:ajlopez/RskApi.git",
+      "httpUrl": "https://raw.githubusercontent.com/ajlopez/RskApi",
+      "head": "refs/heads/master",
+      "commit": "",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "post.md",
+          "localFilePath": "tutorials/rsk-api.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
     }
   ]
 }
