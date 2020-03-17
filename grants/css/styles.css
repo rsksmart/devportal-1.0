@@ -1084,8 +1084,24 @@ line-height: 25px;
   padding: 8px 10px;
 }
 
+
+.japones .negletterspacing {
+    letter-spacing: -2px;
+}
+
 .footer-button:hover {
   text-decoration: none;
+}
+
+.espagnol .footer-top .col-lg-8 .col-lg-3:first-child {
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 22%;
+}
+.espagnol .footer-top .col-lg-8 .col-lg-3:last-child {
+    -ms-flex: 0 0 28%;
+    flex: 0 0 28%;
+    max-width: 28%;
 }
 
 .rounded {
@@ -1169,10 +1185,11 @@ line-height: 25px;
   line-height: 28px;
   margin-bottom: 0;
   color: white;
+  max-width: 265px;
 }
 
 #footer .footer-top .social-links {
-  margin-top: 30px;
+  margin-top: 50px;
   float: right;
 }
 
@@ -1217,7 +1234,7 @@ line-height: 25px;
 
 #footer .footer-top .footer-links ul li {
   padding: 6px 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 #footer .footer-top .footer-links ul li:first-child {
@@ -1242,11 +1259,27 @@ line-height: 25px;
 #footer .footer-top .footer-links .sub-item-footer {
   padding: 0 0 0px 15px !important;
   font-style: italic;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
+}
+
+.negletterspacing {
+    letter-spacing: -2px;
 }
 
 .negbottom {
-  margin-bottom: 0px!important;
+    margin-bottom: 7px!important;
+    line-height: 20px;
+}
+
+.lastcol ul li {
+    padding: 6px 0;
+    margin-bottom: 0px!important;
+}
+
+
+.lastcol-lastitem {
+    margin-bottom: 18px;
+    display:block;
 }
 
 .mb-30 {
@@ -1288,6 +1321,28 @@ line-height: 25px;
   color: #0a98c0;
 }
 
+
+.portugues .footer-top .col-lg-8 .col-lg-3:first-child {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+.portugues .footer-top .col-lg-8 .col-lg-3:nth-child(2) {
+    -ms-flex: 0 0 27%;
+    flex: 0 0 27%;
+    max-width: 27%;
+}
+.portugues .footer-top .col-lg-8 .col-lg-3:last-child {
+    -ms-flex: 0 0 28%;
+    flex: 0 0 28%;
+    max-width: 28%;
+}
+.portugues .lastcol ul li {
+    margin-bottom: -3px!important;
+}
+.portugues .lastcol-lastitem {
+    margin-bottom: 10px;
+}
 
 /* media queries*/
 
@@ -1465,6 +1520,10 @@ line-height: 25px;
     width: calc( 100% - 30px);
     margin-top: 30px;
   }
+
+    #footer .footer-top .footer-info p {
+    max-width: inherit;
+}
   #footer .footer-top .social-links {
     float: left;
   }
@@ -1483,6 +1542,24 @@ line-height: 25px;
   #footer .credits {
     text-align: left;
   }
+
+  .portugues .footer-top .col-lg-8 .col-lg-3:first-child {
+        -ms-flex: 0 0 17%;
+        flex: 0 0 17%;
+        max-width: 17%;
+    }
+    
+    .portugues .footer-top .col-lg-8 .col-lg-3:nth-child(3) {
+        -ms-flex: 0 0 26%;
+        flex: 0 0 26%;
+        max-width: 26%;
+    }
+    
+    .portugues .footer-top .col-lg-8 .col-lg-3:last-child {
+        -ms-flex: 0 0 30%;
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1544,6 +1621,38 @@ line-height: 25px;
     padding-left: 0px;
     padding-top: 60px!important;
   }
+  #footer .footer-top .social-links {
+    margin-top: 50px;
+    float: left;
+}
+.espagnol .footer-top .col-lg-8 .col-lg-3:first-child {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .espagnol .footer-top .col-lg-8 .col-lg-3:last-child {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .espagnol .lastcol ul li {
+        margin-bottom: 4px!important;
+    }
+
+     .portugues .footer-top .col-lg-8 .col-lg-3:first-child,
+    .portugues .footer-top .col-lg-8 .col-lg-3:nth-child(2),
+    .portugues .footer-top .col-lg-8 .col-lg-3:nth-child(3),
+    .portugues .footer-top .col-lg-8 .col-lg-3:last-child {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    
+    .portugues .lastcol ul li {
+        margin-bottom: 4px!important;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1606,6 +1715,21 @@ line-height: 25px;
     padding-top: 40px!important;
     padding-bottom: 30px;
   }
+  #footer .footer-top .footer-links ul li:first-child {
+    padding-top: 0;
+    color: white;
+}
+.espagnol .footer-top .col-lg-8 .col-lg-3:first-child {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+    
+    .espagnol .footer-top .col-lg-8 .col-lg-3:last-child {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 345px) {
