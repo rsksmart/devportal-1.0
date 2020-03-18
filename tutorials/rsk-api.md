@@ -12,7 +12,7 @@ with [RSK](https://www.rsk.co/) blockchains nodes (local, testnet, mainnet)
 and also with local ganache, geth and parity nodes.
 The way to connect from an external application to those
 Ethereum nodes is using [JSON RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC).
-Although there are several libraries (in JavaScript, Python and other languages) to send these messages, I preferred to write my own library to learn how the protocol works. As I try to pursue simplicity, I was not convinced to use libraries
+Although there are several libraries (in JavaScript, Python and other languages) to send these messages, I preferred writing my own library to learn how the protocol works. As I try to pursue simplicity, I was not convinced to use libraries
 (like [web3js](https://web3js.readthedocs.io/en/v1.2.6/)) that seem too huge to me.
 
 So I wrote [RskAPI as a personal project](https://github.com/ajlopez/rskapi). It is a JavaScript library that allows connecting to a node,
@@ -51,7 +51,7 @@ const bestBlock = await client.block(number); // retrieve best block
 ```
 
 But I found very useful to have sample commands:
-command-line programs that executes tasks, and save
+Command-line programs that executes tasks, and save
 results in a configuration file. See [samples/commands](https://github.com/ajlopez/RskApi/tree/master/samples/commands)
 folder.
 
@@ -100,7 +100,7 @@ Retrieve all the balance:
 node getbalances
 ```
 
-The sample also includes some smart contracts in `contracts` folder and their compilation result (using truffle) already available in `build/contracts` folder. So, without truffle, you even can deploy the contract, ie Counter, to an instance, using the funds of an account to pay the deployment:
+The sample also includes some smart contracts in `contracts` folder and their compilation result (using truffle) already available in `build/contracts` folder. So, without truffle, you even can deploy the contract, e.g. Counter, to an instance, using the funds of an account to pay the deployment:
 
 
 ```
@@ -131,7 +131,7 @@ I’m using some older versions of these commands and library
 
 ## Other available objects
 
-There are other objects that can be use from the library. One is the host: a client is only a wrapper of a host, that it is in charge of some formatting and validations, not to be discussed here (I’m thinking of some internal refactors).
+There are other objects that can be use from the library. One is the host: A client is only a wrapper of a host, that it is in charge of some formatting and validations, not to be discussed here (I’m thinking of some internal refactors).
 
 You can get an host in two ways:
 
@@ -152,11 +152,8 @@ const provider = host.provider();
 
 that is an instance of [simplejsonrpc project](https://github.com/ajlopez/simplejsonrpc).
 
-## Future works
+## Future work
 
 I will add some additional functions to clients, like log retrieval and code retrieval. I plan to add the commands too. And I will add some programming examples, with more intensive tasks, like sending many transactions from differents accounts, deploying and invoking tokens, etc.
 
 I’m having fun :-)
-
-
-

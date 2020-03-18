@@ -74,7 +74,7 @@
       "gitUrl": "git@github.com:ajlopez/RskApi.git",
       "httpUrl": "https://raw.githubusercontent.com/ajlopez/RskApi",
       "head": "refs/heads/master",
-      "commit": "5f479d4b8eed20dfe2954d212985b7892322010b",
+      "commit": "c1d5a66425a1672ee60eef53ab1354312fcc148b",
       "commands": [
         {
           "name": "copySingle",
