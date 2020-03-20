@@ -5,23 +5,73 @@ title: RIF Name Service
 
 RNS provides an architecture which enables the identification of blockchain addresses by human-readable names.
 
+<div class="container the-stack">
+  <div class="row has-unique-col rif_blue_text">
+    <div class="col"><span><a href="https://manager.rns.rifos.org" target="_blank">Register a domain</a></span></div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div style="padding: 10px;">
+        <a href="try-rns">Try the service</a>
+        <br />
+        <br />
+        <p>Register a domain in the Testnet, for free.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div style="padding: 10px;">
+        <a href="integrate">Integrate with RNS</a>
+        <br />
+        <br />
+        <p>Easy guides on how to integrate RNS in your solution.</p>
+      </div>
+    </div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div style="padding: 10px;">
+        <a href="run-locally">Develop on top of RNS</a>
+        <br />
+        <br />
+        <p>Deploy RNS suite in your local development environment</p>
+      </div>
+    </div>
+    <div class="col">
+      <div style="padding: 10px;">
+        <a href="libs">Use the libraries</a>
+        <br />
+        <br />
+        <p>Use simple libraries to interact with RNS service.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+## The stack
+
+<div class="container the-stack">
+  <div class="row has-unique-col">
+    <div class="col">
+      <div class="row rotate defi"><a href="/rif/rns">RNS</a></div>
+      <div class="row rsk_blue dapps">
+        <div class="col"><span><a href="/rif/rns/operations">dApp</a></span></div>
+        <div class="col"><span><a href="/rif/rns/libs">Libraries</a></span></div>
+        <div class="col"><span><a href="/rif/rns/architecture">Smart contracts</a></span></div>
+        <div class="col"><span><a href="/rif/rns/specs">Specifications</a></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+## Motivation
+
 By adding a name resolution service, also known as “alias”, the probability of errors is significantly reduced. In addition, centralizing the access to multiple resources associated with a human-readable name improves the blockchain platform user experience. As resource names may change over time, the system needs to be flexible to support frequent changes.
 
 Currently over the World Wide Web, the Domain Name System (DNS) is responsible for mapping human-readable names to IP addresses. RNS is a decentralized and secure service that works over RSK's blockchain.
 
-<img src="/assets/img/rns/introduction.png" class="img-fluid" alt="introduction" />
-
-<div class="row has-unique-col rsk_green">
-  <div class="col">
-    <span>
-      <a href="https://manager.rns.rifos.org" target="_blank">Register a domain</a>
-    </span>
-  </div>
-</div>
+## Design
 
 RNS is a hierarchical name space inspired by DNS, with the hierarchy roughly corresponding to organizational structure, and uses the "." character to delimit its levels.
-
-## Design
 
 The design goals of the RIF Name Service influence its structure.
 
