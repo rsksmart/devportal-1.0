@@ -100,6 +100,10 @@ async setAddr(domain: string, addr: string): Promise<void>
 - `domain`: Domain to set resolution.
 - `addr`: Address to be set as the resolution of the given domain
 
+**Returns**
+
+- `TransactionReceipt`
+
 **Throws**
 
 - [`KB002`](/rif/rns/libs/javascript/Errors#kb002)
@@ -131,6 +135,10 @@ async setResolver(domain: string, resolver: string): Promise<void>
 
 - `domain`: Domain to set resolver.
 - `resolver`: Address to be set as the resolver of the given domain
+
+**Returns**
+
+- `TransactionReceipt`
 
 **Throws**
 
@@ -201,6 +209,10 @@ async setOwner(domain: string, label: string, owner: string): Promise<void>
 - `label`: Subdomain to register. For example, `alice`
 - `owner`: The new owner's address
 
+**Returns**
+
+- `TransactionReceipt`
+
 **Throws**
 
 - [`KB009`](/rif/rns/libs/javascript/Errors#kb009)
@@ -208,7 +220,6 @@ async setOwner(domain: string, label: string, owner: string): Promise<void>
 - [`KB011`](/rif/rns/libs/javascript/Errors#kb011)
 - [`KB012`](/rif/rns/libs/javascript/Errors#kb012)
 - [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
-- [`KB016`](/rif/rns/libs/javascript/Errors#kb016)
 
 **Example**
 
@@ -245,6 +256,10 @@ async create(domain: string, label: string, owner: string, addr: string): Promis
 > If `owner` and `addr` are provided and `owner` is equals to the sender, two txs will be sent.
 >
 > If `owner` and `addr` are provided but `owner` is different from the sender, then three txs will be sent.
+
+**Returns**
+
+- `TransactionReceipt` of the latest transaction
 
 **Throws**
 
