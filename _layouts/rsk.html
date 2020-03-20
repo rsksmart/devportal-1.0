@@ -89,6 +89,11 @@
       {% endif %}
       <script src="/assets/vendor/carousel/owl.carousel.min.js"></script>
       <script type="text/javascript">
+      $('#frm-rns-search').on('submit', (e) => {
+         e.preventDefault();
+         window.open('https://manager.rns.rifos.org/search?domain=' + $('#txt-rns-name').val(), '_blank');
+      });
+
       $('.owl-carousel').owlCarousel({
           loop:true,
           nav:true,
