@@ -36,6 +36,19 @@ else  {
 });
 });
 
+// smooth scroll to anchor links with offset
+$(document).ready(function() {
+var hash= window.location.hash
+if ( hash == '' || hash == '#' || hash == undefined ) return false;
+      var target = $(hash);
+      headerHeight = 80;
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').stop().animate({
+          scrollTop: target.offset().top - 80 //offsets for fixed header
+        }, 'linear');
+      }
+});
 
 
 $(document).ready(function () {
