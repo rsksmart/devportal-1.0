@@ -102,4 +102,58 @@ function concatValues( obj ) {
   return value;
 }
 
+  renderLocalTimes();
 });
+
+function renderLocalTimes() {
+  console.log('renderLocalTimes');
+  $('.eventos').each(function () {
+    var timestamp = $(this).data('timestamp');
+    if (timestamp) {
+      renderLocalTime(this, timestamp);
+    }
+  });
+}
+
+function renderLocalTime(el, timestamp) {
+  var dateStr = new Date(timestamp).toLocaleDateString(
+    undefined,
+    {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    },
+  );
+
+  var timeStr = new Date(timestamp).toLocaleDateString(
+    undefined,
+    {
+      hour: 'numeric',
+      minute: 'numeric',
+    },
+  );
+
+  var fullDateString = (new Date(timestamp)).toString();
+  var tzSplitIndex = nthCharacter(fullDateString, ' ', 5);
+  var tzStr = fullDateString.substring(tzSplitIndex + 1);
+
+  var dateEl = $(el).find('.display-date');
+  var timeEl = $(el).find('.display-time');
+  var tzEl = $(el).find('.display-tz');
+  dateEl.text(dateStr);
+  timeEl.text(timeStr);
+  tzEl.text(tzStr);
+}
+
+function nthCharacter(string, character, n) {
+  var count = 0;
+  var i = 0;
+  while (count < n && (i = string.indexOf(character, i) + 1)) {
+    ++count;
+  }
+  if (count === n) {
+    return i - 1;
+  };
+  return 0;
+}
