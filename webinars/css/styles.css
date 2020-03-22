@@ -694,7 +694,7 @@ select {
 
 .image-group {
     width: 100%;
-    height: 190px;
+    height: 218px;
     background: url("../img/events/event1.jpg");
     background-size: cover;
     background-position: center top;
@@ -733,13 +733,23 @@ select {
 .desc-group {
     font-size: 14px;
     line-height: 18px;
-    height: 98px;
+    height: 124px;
 }
 
 .desc-group span {
     display: block;
     padding-left: 10px;
     line-height: 20px;
+}
+
+.desc-group span.text {
+    display: inline;
+    padding-left: unset;
+    line-height: unset;
+}
+
+.desc-group .display-tz {
+    font-size: 0.5em;
 }
 
 .desc-group span:first-child {
