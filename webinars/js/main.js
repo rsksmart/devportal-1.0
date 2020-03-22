@@ -102,7 +102,33 @@ function concatValues( obj ) {
   return value;
 }
 
+  renderLocalTimes();
 });
+
+function renderLocalTimes() {
+  console.log('renderLocalTimes');
+  $('.eventos').each(function () {
+    var timestamp = $(this).data('timestamp');
+    if (timestamp) {
+      renderLocalTime(this, timestamp);
+    }
+  });
+}
+
+function renderLocalTime(el, timestamp) {
+  var dateString = (new Date(timestamp)).toString();
+  var splitIdx1 = nthCharacter(dateString, ' ', 4);
+  var splitIdx2 = nthCharacter(dateString, ' ', 5);
+  var dateStr = dateString.substring(0, splitIdx1);
+  var timeStr = dateString.substring(splitIdx1 + 1, splitIdx2);
+  var tzStr = dateString.substring(splitIdx2 + 1);
+  var dateEl = $(el).find('.display-date');
+  var timeEl = $(el).find('.display-time');
+  var tzEl = $(el).find('.display-tz');
+  dateEl.text(dateStr);
+  timeEl.text(timeStr);
+  tzEl.text(tzStr);
+}
 
 function nthCharacter(string, character, n){
   var count = 0;
