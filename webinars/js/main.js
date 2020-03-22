@@ -103,3 +103,15 @@ function concatValues( obj ) {
 }
 
 });
+
+function nthCharacter(string, character, n){
+  var count = 0;
+  var i = 0;
+  while (count < n && (i = string.indexOf(character, i) + 1)) {
+    ++count;
+  }
+  if (count === n) {
+    return i - 1;
+  };
+  return 0;
+}
