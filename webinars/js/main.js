@@ -116,12 +116,28 @@ function renderLocalTimes() {
 }
 
 function renderLocalTime(el, timestamp) {
-  var dateString = (new Date(timestamp)).toString();
-  var splitIdx1 = nthCharacter(dateString, ' ', 4);
-  var splitIdx2 = nthCharacter(dateString, ' ', 5);
-  var dateStr = dateString.substring(0, splitIdx1);
-  var timeStr = dateString.substring(splitIdx1 + 1, splitIdx2);
-  var tzStr = dateString.substring(splitIdx2 + 1);
+  var dateStr = new Date(timestamp).toLocaleDateString(
+    undefined,
+    {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    },
+  );
+
+  var timeStr = new Date(timestamp).toLocaleDateString(
+    undefined,
+    {
+      hour: 'numeric',
+      minute: 'numeric',
+    },
+  );
+
+  var fullDateString = (new Date(timestamp)).toString();
+  var tzSplitIndex = nthCharacter(fullDateString, ' ', 5);
+  var tzStr = fullDateString.substring(tzSplitIndex + 1);
+
   var dateEl = $(el).find('.display-date');
   var timeEl = $(el).find('.display-time');
   var tzEl = $(el).find('.display-tz');
@@ -130,7 +146,7 @@ function renderLocalTime(el, timestamp) {
   tzEl.text(tzStr);
 }
 
-function nthCharacter(string, character, n){
+function nthCharacter(string, character, n) {
   var count = 0;
   var i = 0;
   while (count < n && (i = string.indexOf(character, i) + 1)) {
