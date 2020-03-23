@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/rootstock/rootstock.github.io#readme",
   "dependencies": {
-    "ical-generator": "^1.9.3"
+    "ical-generator": "1.9.3"
   }
 }
