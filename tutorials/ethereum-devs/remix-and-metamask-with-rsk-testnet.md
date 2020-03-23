@@ -1,16 +1,30 @@
 ---
 layout: rsk
 title: Using Remix and Metamask with RSK testnet
+tags: tutorial, rsk, remix, metamask
+description: "Configure a wallet using Metamask, connect with Remix, compile and deploy a smart contract at RSK testnet."
 ---
-
-## Using Remix and Metamask with RSK testnet
 
 RSK's virtual machine implementation is compatible with the Ethereum EVM,
 we can also use many of Ethereum's developer tools.
 
 In this tutorial I will show you step by step how to use Remix and Metamask, which are tools that were originally built for Ethereum, to create and deploy a simple smart contract on RSK's Testnet.
 
-### Requirements
+## Overview
+
+We will do this steps:
+
+1. Configure Metamask to connect to RSK testnet;
+2. Get some testnet R-BTCs at faucet;
+3. Connect Remix with RSK Testnet;
+3. Create a smart contract at Remix;
+4. Compile it;
+5. Using Remix, deploy the smart contract at RSK Testnet;
+6. Know the RSK explorer;
+7. Interact with the smart contract;
+8. Check the transactions in Metamask.
+
+## Requirements
 
 - Metamask
 - Remix
@@ -34,7 +48,8 @@ The seed phrase is the most important thing in a wallet / account!
 Remix is an online web tool. It is an IDE (Integrated Development Environment) used to write, compile, deploy and debug Solidity code. Can be connected with Metamask and used to deploy smart contracts to both the RSK Testnet and Mainnet.
 
 Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
-### Connect MetaMask to RSK testnet
+
+## Connect MetaMask to RSK testnet
 
 - Go to networks 
 - Custom RPC
@@ -65,7 +80,8 @@ https://explorer.testnet.rsk.co/
 ![RSK Testnet configuration](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-02.png)
 
 After configuring it, select the RSK Tesnet.
-### TestNet Faucet
+
+## TestNet Faucet
 
 You can get some Testnet R-BTC at [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/).
 
@@ -86,7 +102,8 @@ You can see the transaction hash, for example [`0xf63c45dabd52e0b44f4cf15825985e
 Now I have 0.05 R-BTC!
 
 ![R-BTCs at Metamask wallet](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-06.png)
-# Remix
+
+## Remix
 
 Go to 
 
@@ -96,7 +113,7 @@ In the home / welcome page, choose environment `Solidity`.
 
 ![Remix environment Solidity](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-08.png)
 
-# Remix Connect RSK Testnet
+## Remix Connect RSK Testnet
 
 With the RSK network selected at Metamask...
 
@@ -114,7 +131,8 @@ Injected Web3 connects Remix with active account in Metamask
 ![Injected Web3 - ChainID 31](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-11.png)
 
 ChainID 31 was defined at RSK Testnet custom network in Metamask.
-# Create a smart contract
+
+## Create a smart contract
 
 Click on the second button on the left side - file explorer 
 
@@ -148,6 +166,7 @@ contract SimpleStorage {
 
 And paste it here:
 ![SimpleStorage.sol](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-15.png)
+
 ### SimpleStorage.sol
 
 This smart contract has:
@@ -156,7 +175,7 @@ This smart contract has:
 * A function `get()` to return the number stored at variable `storedData`
 * A function `set()` to change the number stored at variable `storedData`
 
-### Compile a smart contract 
+## Compile a smart contract 
 
 In the 3rd button at left side click on Solidity compiler
 
@@ -176,7 +195,7 @@ Check the green sign at 3rd button with the message compilation successful
 
 ![compilation successful](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-20.png)
 
-### Deploy a smart contract at RSK testnet
+## Deploy a smart contract at RSK testnet
 
 In the left side panel, go to the button `Deploy and run transactions`. Actually, it is the 4th button.
 
@@ -218,7 +237,8 @@ Copy the transaction hash to verify at blockchain explorer
 Is this example, the transaction hash is: 
 
 0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c2914ccd0bd2bb331da
-### RSK Explorer
+
+## RSK Explorer
 
 The RSK explorer is the blockchain explorer for RSK transactions. We will use the Testnet explorer:
 
@@ -238,7 +258,7 @@ This is the result:
 
 You can verify my example at: [`0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c2914ccd0bd2bb331da`](https://explorer.testnet.rsk.co/tx/0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c2914ccd0bd2bb331da)
 
-### Interact with the smart contract 
+## Interact with the smart contract 
 
 When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions:
 
@@ -268,7 +288,7 @@ At bottom right, we can check that it was a call to `SimpleStorage.get()` functi
 
 ![transaction get](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-37.png)
 
-## Set
+### Set
 
 Put a value in the field at the right side of the set button, and click on the button
 
@@ -295,6 +315,7 @@ At bottom right, we have the transaction’s details
 You can copy the transaction hash and verify at RSK explorer too: [`0xb9f4d73e7555d2b3cdf516f2d3044daa58669f7324cb957f2b83da21a6c89b4b`](https://explorer.testnet.rsk.co/tx/0xb9f4d73e7555d2b3cdf516f2d3044daa58669f7324cb957f2b83da21a6c89b4b)
 
 ![explorer](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-43.png)
+
 ### Get (again)
 
 Now we have the value 2020 saved, and we can check it
@@ -305,7 +326,7 @@ Click in the button get
 
 And the value is correct!
 
-### Transactions in Metamask
+## Transactions in Metamask
 
 It is possible to verify all transactions in metamask
 
@@ -313,7 +334,7 @@ It is possible to verify all transactions in metamask
 
 ![Metamask transactions](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-46.png)
 
-# Final considerations
+## Final considerations
 
 Did you think that it would be so easy to use Remix and Metamask to create a smart contract which can be used on both Ethereum or RSK networks?
 
