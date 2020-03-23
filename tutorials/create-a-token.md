@@ -17,7 +17,7 @@ npm install -g truffle
 **1. create a new folder,my folder name is token**
 
 ```shell
-mkdir token
+mkdir token && cd token
 ```
 
 **2. Initialize a npm project.**
