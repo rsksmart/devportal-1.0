@@ -4,6 +4,19 @@ title: RNS JS Library - Error knowledge base
 tags: rns, javascript, error
 ---
 
+## Handle errors with RNS library
+
+RNS Library extend [`Error` class](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Error) with two extra properties:
+
+- `id` - The knowladge base id
+- `ref` - A link to this page, scrolling to the error title.
+
+## `KB000`
+
+**Message**: Unknown error.
+
+**Description**: Unknown error.
+
 ## `KB001`
 
 **Message**: No addr resolution set
