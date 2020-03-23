@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -168,41 +170,52 @@
                </div>
             </div>
             <div class="row">
+               <!-- Event grid -->
                <div class="grid">
-                  <!-- Event grid -->
+               {% for event in site.data.webinars.events %}
+                  <!-- Event -->
                   <div
-                     class="col-lg-4 eventos online online-workshop general non-developers asia"
-                     data-timestamp="2020-03-23T21:00:00.000Z">
-                     <a href="https://www.meetup.com/rsk-community/events/269504497/"
+                     class="col-lg-4 eventos {{ event.tags }}"
+                     data-timestamp="{{ event.timestamp }}">
+                     <a href="{{ event.url }}"
                         target="_blank"
                         rel="noopener noreferrer">
                         <div class="eventos-content">
-                           <div class="image-group" style="background-image: url('img/events/event1.jpg');">
-                              <div class="event-type">Talk</div>
+                           <div class="image-group" style="background-image: url('{{ event.image }}');">
+                              <div class="event-type">{{ event.category }}</div>
                            </div>
                            <div class="info-group">
                               <div class="title-group">
-                                 What’s Blockchain<br>
-                                 What’s Bitcoin
+                                 {{ event.title }}
+                                 <br>
+                                 {{ event.subtitle }}
                               </div>
                               <div class="desc-group">
-                                 <span class="bold">ONLINE EVENT</span>
+                                 <span class="bold">
+                                 {% if locationCategory == "online" %}
+                                    ONLINE EVENT
+                                 {% elsif locationCategory == "physical" %}
+                                    IN-PERSON EVENT
+                                 {% elsif locationCategory == "onlineAndPhysical" %}
+                                    ONLINE &amp; IN-PERSON EVENT
+                                 {% endif %}
+                                 </span>
                                  <span>
                                     <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">English</span>
+                                    <span class="text display-language">{{ event.language }}</span>
                                  </span>
                                  <span>
                                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date">Monday 23 March 2020</span>
+                                    <span class="text display-date"></span>
                                  </span>
                                  <span>
                                     <i class="fa fa-clock" aria-hidden="true"></i>
-                                    <span class="text display-time">03:00 pm</span>
-                                    <span class="text display-tz">GMT -6</span>
+                                    <span class="text display-time"></span>
+                                    <span class="text display-tz"></span>
                                  </span>
                                  <span class="place">
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text display-space">Mexico City</span>
+                                    <span class="text display-space">{{ event.location }}</span>
                                  </span>
                               </div>
                            </div>
@@ -211,206 +224,7 @@
                      </a>
                   </div>
                   <!-- -->
-
-                  <!-- -->
-                  <div
-                     class="col-lg-4 eventos online online-workshop general non-developers asia"
-                     data-timestamp="2020-03-26T00:00:00.000Z">
-                     <a href="https://www.meetup.com/rsk-community/events/269565719/" target="_blank" rel="noopener noreferrer">
-                        <div class="eventos-content">
-                           <div class="image-group" style="background-image: url('img/events/event2.jpg');">
-                              <div class="event-type">Workshop</div>
-                           </div>
-                           <div class="info-group">
-                              <div class="title-group">
-                                 How to create your first Smart Contract using Remix and Metamask at RSK Network
-                              </div>
-                              <div class="desc-group">
-                                 <span class="bold">ONLINE EVENT</span>
-                                 <span>
-                                    <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">English</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date">Thursday 26 March 2020</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-clock" aria-hidden="true"></i>
-                                    <span class="text display-time">08:00 am</span>
-                                    <span class="text display-tz">GMT +8</span>
-                                 </span>
-                                 <span class="place">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text display-space">Singapore</span>
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="button-group">More info +</div>
-                        </div>
-                     </a>
-                  </div>
-                  <!-- -->
-
-                  <!-- -->
-                  <div
-                     class="col-lg-4 eventos online online-workshop general non-developers asia"
-                     data-timestamp="2020-03-25T21:00:00.000Z">
-                     <a href="https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096" target="_blank" rel="noopener noreferrer">
-                        <div class="eventos-content">
-                           <div class="image-group" style="background-image: url('img/events/event2.jpg');">
-                              <div class="event-type">Workshop</div>
-                           </div>
-                           <div class="info-group">
-                              <div class="title-group">
-                                 Cómo crear su primer contrato inteligente usando Remix y Metamask en la red RSK
-                              </div>
-                              <div class="desc-group">
-                                 <span class="bold">ONLINE EVENT</span>
-                                 <span>
-                                    <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">Español</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date">Wednesday 25 March 2020</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-clock" aria-hidden="true"></i>
-                                    <span class="text display-time">03:00 pm</span>
-                                    <span class="text display-tz">GMT -6</span>
-                                 </span>
-                                 <span class="place">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text display-space">Mexico City</span>
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="button-group">More info +</div>
-                        </div>
-                     </a>
-                  </div>
-                  <!-- -->
-
-                  <!-- -->
-                  <div
-                     class="col-lg-4 eventos online online-workshop general non-developers asia"
-                     data-timestamp="2020-03-25T22:30:00.000Z">
-                     <a href="https://www.meetup.com/rsk-community/events/269566069/" target="_blank" rel="noopener noreferrer">
-                        <div class="eventos-content">
-                           <div class="image-group" style="background-image: url('img/events/event2.jpg');">
-                              <div class="event-type">Workshop</div>
-                           </div>
-                           <div class="info-group">
-                              <div class="title-group">
-                                 Como criar seu primeiro contrato inteligente usando Remix e Metamask na RSK Network
-                              </div>
-                              <div class="desc-group">
-                                 <span class="bold">ONLINE EVENT</span>
-                                 <span>
-                                    <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">Português</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date">Wednesday 25 March 2020</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-clock" aria-hidden="true"></i>
-                                    <span class="text display-time">07:30 pm</span>
-                                    <span class="text display-tz">GMT -3</span>
-                                 </span>
-                                 <span class="place">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text display-space">Brazil</span>
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="button-group">More info +</div>
-                        </div>
-                     </a>
-                  </div>
-                  <!-- -->
-
-                  <!-- -->
-                  <div
-                     class="col-lg-4 eventos online online-workshop general non-developers asia"
-                     data-timestamp="2020-03-27T00:30:00.000Z">
-                     <a href="https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497/" target="_blank" rel="noopener noreferrer">
-                        <div class="eventos-content">
-                           <div class="image-group" style="background-image: url('img/events/event3.jpg');">
-                              <div class="event-type">Talk</div>
-                           </div>
-                           <div class="info-group">
-                              <div class="title-group">
-                                 Gasnet: la red Blockchain para el Ecosistema de Gas
-                              </div>
-                              <div class="desc-group">
-                                 <span class="bold">ONLINE EVENT</span>
-                                 <span>
-                                    <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">Español</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date">Thursday 26 March 2020</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-clock" aria-hidden="true"></i>
-                                    <span class="text display-time">9:30 am</span>
-                                    <span class="text display-tz">GMT -3</span>
-                                 </span>
-                                 <span class="place">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text display-space">Argentina</span>
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="button-group">More info +</div>
-                        </div>
-                     </a>
-                  </div>
-                  <!-- -->
-
-                  <!-- -->
-                  <div
-                     class="col-lg-4 eventos online online-workshop general non-developers asia"
-                     data-timestamp="2020-03-27T19:00:00.000Z">
-                     <a href="https://hacklatam.com/bhs-santiago-2020" target="_blank" rel="noopener noreferrer">
-                        <div class="eventos-content">
-                           <div class="image-group" style="background-image: url('img/events/event4.jpg');">
-                              <div class="event-type">Workshop</div>
-                           </div>
-                           <div class="info-group">
-                              <div class="title-group">
-                                 ¿Qué es RSK? Herramientas para ganar un Hackathon
-                              </div>
-                              <div class="desc-group">
-                                 <span class="bold">ONLINE EVENT</span>
-                                 <span>
-                                    <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">Español</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date">From 27 to 29 March 2020</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-clock" aria-hidden="true"></i>
-                                    <span class="text display-time">04:00 pm</span>
-                                    <span class="text display-tz">GMT -3</span>
-                                 </span>
-                                 <span class="place">
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text display-space">Chile</span>
-                                 </span>
-                              </div>
-                           </div>
-                           <div class="button-group">More info +</div>
-                        </div>
-                     </a>
-                  </div>
-                  <!-- -->
+               {% endfor %}
                </div>
             </div>
             <!-- EVENTOS ENDS -->
