@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Tutorials
+tags: tutorial, rsk
+description: "General tutorials, tutorials for ethereum developers, truffle tutorials, and other tutorials"
 ---
 
 ## General tutorials
@@ -10,6 +12,12 @@ title: Tutorials
 - [Deploy Smart Contract](/tutorials/deploy-smart-contracts/)
 - [Interact with Smart Contract](/tutorials/interact-with-smart-contracts/)
 - [Create a Token](/tutorials/create-a-token/)
+
+## For Ethereum developers
+
+- [Geth attach to RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/)
+- [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
+- [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
 ## Truffle tutorials
 
