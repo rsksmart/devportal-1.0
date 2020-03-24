@@ -7,15 +7,17 @@ tags: tutorial
 ## General tutorials
 
 - [Quick Start](/quick-start)
-- [Port Ethereum dApps](/tutorials/port-ethereum-dapps/)
 - [Deploy Smart Contract](/tutorials/deploy-smart-contracts/)
 - [Interact with Smart Contract](/tutorials/interact-with-smart-contracts/)
 - [Create a Token](/tutorials/create-a-token/)
 
 ## For Ethereum developers
+
 - [Geth attach to RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/)
 - [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
+- [Port Ethereum dApps](/tutorials/ethereum-devs/port-ethereum-dapps/)
 - [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
+
 
 ## Truffle tutorials
 
@@ -27,5 +29,9 @@ tags: tutorial
 
 ## Other tutorials
 
-- [Using Blockmason](/tutorials/using-blockmason/)
+- [Compile Smart Contracts to Go](/tutorials/compile-smart-contracts-go/)
 - [Interface Registry](/tutorials/interface-registry/)
+- [RSK API CLI](/tutorials/rsk-api/)
+- [Send RIF Tokens through Metamask](/tutorials/send-tokens-through-metamask/)
+- [Using Blockmason](/tutorials/using-blockmason/)
+
