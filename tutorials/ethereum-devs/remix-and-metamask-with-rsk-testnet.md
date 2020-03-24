@@ -8,11 +8,11 @@ description: "Configure a wallet using Metamask, connect with Remix, compile and
 RSK's virtual machine implementation is compatible with the Ethereum EVM,
 we can also use many of Ethereum's developer tools.
 
-In this tutorial I will show you step by step how to use Remix and Metamask, which are tools that were originally built for Ethereum, to create and deploy a simple smart contract on RSK's Testnet.
+In this tutorial I will show you step-by-step how to use Remix and Metamask, which are tools that were originally built for Ethereum, to create and deploy a simple smart contract on RSK's Testnet.
 
 ## Overview
 
-We will do this steps:
+We will do these steps:
 
 1. Configure Metamask to connect to RSK testnet;
 2. Get some testnet R-BTCs at faucet;
@@ -51,7 +51,7 @@ Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
 
 ## Connect MetaMask to RSK testnet
 
-- Go to networks 
+- Go to networks
 - Custom RPC
 
 ![networks - custom RPC](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-01.png)
@@ -105,7 +105,7 @@ Now I have 0.05 R-BTC!
 
 ## Remix
 
-Go to 
+Go to
 
 [remix.ethereum.org](http://remix.ethereum.org/)
 
@@ -117,7 +117,7 @@ In the home / welcome page, choose environment `Solidity`.
 
 With the RSK network selected at Metamask...
 
-At Remix, on the left side, locate the button `Deploy and run transactions`. 
+At Remix, on the left side, locate the button `Deploy and run transactions`.
 For now it is the 4th button
 
 ![Deploy and run transactions](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-09.png)
@@ -134,7 +134,7 @@ ChainID 31 was defined at RSK Testnet custom network in Metamask.
 
 ## Create a smart contract
 
-Click on the second button on the left side - file explorer 
+Click on the second button on the left side - file explorer
 
 ![file explorer](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-12.png)
 
@@ -175,7 +175,7 @@ This smart contract has:
 * A function `get()` to return the number stored at variable `storedData`
 * A function `set()` to change the number stored at variable `storedData`
 
-## Compile a smart contract 
+## Compile a smart contract
 
 In the 3rd button at left side click on Solidity compiler
 
@@ -234,7 +234,7 @@ Copy the transaction hash to verify at blockchain explorer
 
 ![transaction hash copied](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-29.png)
 
-Is this example, the transaction hash is: 
+Is this example, the transaction hash is:
 
 0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c2914ccd0bd2bb331da
 
@@ -258,7 +258,7 @@ This is the result:
 
 You can verify my example at: [`0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c2914ccd0bd2bb331da`](https://explorer.testnet.rsk.co/tx/0x419c4b17ec0bf59568d9b5f5c7f0e4678039f52b9c644c2914ccd0bd2bb331da)
 
-## Interact with the smart contract 
+## Interact with the smart contract
 
 When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions:
 
@@ -338,7 +338,7 @@ It is possible to verify all transactions in metamask
 
 Did you think that it would be so easy to use Remix and Metamask to create a smart contract which can be used on both Ethereum or RSK networks?
 
-I showed to you how we can use some Ethereum developer tools, and it is great to realize that they can be used on the RSK network as well. 
+I showed to you how we can use some Ethereum developer tools, and it is great to realize that they can be used on the RSK network as well.
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 

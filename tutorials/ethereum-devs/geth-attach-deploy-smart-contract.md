@@ -28,7 +28,7 @@ We will do these steps:
 - Geth
 - Remix - web tool, online
 
-You will need to complete this tutorial before proceeding: [Using Geth attach to a RSK local node](/tutorials/geth-attach-local-node/).
+You will need to complete this tutorial before proceeding: [Using Geth attach to a RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/).
 
 ## Run a RSK local node
 
@@ -40,7 +40,7 @@ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
 
-Check the tutorial: [using Geth attach to a RSK local node](https://developers.rsk.co/tutorials/geth-attach-local-node/) for more details on how to do this.
+Check the tutorial: [using Geth attach to a RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/) for more details on how to do this.
 
 ## Connect with a RSK local node using Geth attach
 
@@ -48,7 +48,7 @@ Check the tutorial: [using Geth attach to a RSK local node](https://developers.r
 geth attach http://127.0.0.1:4444
 ```
 
-Check the tutorial: [Using Geth attach to a RSK local node](/tutorials/geth-attach-local-node/) for more details on how to do this.
+Check the tutorial: [Using Geth attach to a RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/) for more details on how to do this.
 
 ## Remix
 

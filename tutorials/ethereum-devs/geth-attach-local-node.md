@@ -12,7 +12,7 @@ We do this to establish that the local node is running.
 
 ## Overview
 
-We will do this steps:
+We will do these steps:
 
 1. Install the requirements: Java SDK, RSK local node and Geth;
 2. Do a Geth attach;
@@ -152,7 +152,7 @@ We are running geth to attach (connect) to RSK local node. The address `http://1
 ### Supported RPC methods
 
 There is a list with all RPC methods enabled on RSK nodes here:
-[RSK JSON-RPC](https://developers.rsk.co/rsk/node/architecture/json-rpc/)
+[RSK JSON-RPC](/rsk/node/architecture/json-rpc/)
 
 For more information  about RPC methods, check the Ethereum website, but remember that not all of them are implemented on RSK nodes:
 
@@ -357,7 +357,7 @@ exit
 
 Did you think that it would be so easy to use Geth, an Ethereum client, to interact with an RSK local node?
 
-We can do more things using Geth, such as [deploy a smart contract at RSK local node using Geth and Remix](https://developers.rsk.co/tutorials/geth-attach-deploy-smart-contract/).
+We can do more things using Geth, such as [deploy a smart contract at RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
