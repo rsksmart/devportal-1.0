@@ -10,7 +10,7 @@ This is a demonstration of how to get the address of a domain. We are going to d
 - [Node](https://nodejs.org)
 - [npm](https://npmjs.org)
 - [yarn](https://yarnpkg.com/)
-- [`create-react-app`](https://create-react-app.dev/)
+- [create-react-app](https://create-react-app.dev/)
 
 ## Recipe
 
@@ -39,10 +39,10 @@ This is a demonstration of how to get the address of a domain. We are going to d
         super(props);
 
         this.state = {
-        domain: '',
-        getting: false,
-        addr: null,
-        error: null,
+            domain: '',
+            getting: false,
+            addr: null,
+            error: null,
         };
 
         this.handleDomainChange = this.handleDomainChange.bind(this);
@@ -90,11 +90,11 @@ This is a demonstration of how to get the address of a domain. We are going to d
 
 ## Result
 
-![](https://i.imgur.com/bJG0Xsc.png)
+![](/assets/img/rns/get_addr_sample.png)
 
-Try the app in [rnsdomains.github.io/rns-addr-sample-app](https://rnsdomains.github.io/rns-addr-sample-app)
+Try the app in [rnsdomains.github.io/rns-addr-sample-app](https://rnsdomains.github.io/rns-addr-sample-app).
 
-Repo: [@rnsdomains/rns-addr-sample-app](https://github.com/rnsdomains/rns-addr-sample-app)
+Repository: [github.com/rnsdomains/rns-addr-sample-app](https://github.com/rnsdomains/rns-addr-sample-app).
 
 <div class="container the-stack">
   {% include rns-integrate-dapp-wallet.html %}

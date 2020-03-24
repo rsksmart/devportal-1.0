@@ -10,7 +10,7 @@ RNS provides an architecture which enables the identification of blockchain addr
 <div class="container the-stack">
   <div class="row rif_blue_text">
     <div class="col">
-      <div style="padding: 10px;">
+      <div class="rns-index-box">
         <a href="try-rns">Try the service</a>
         <br />
         <br />
@@ -18,7 +18,7 @@ RNS provides an architecture which enables the identification of blockchain addr
       </div>
     </div>
     <div class="col">
-      <div style="padding: 10px;">
+      <div class="rns-index-box">
         <a href="integrate">Integrate with RNS</a>
         <br />
         <br />
@@ -28,7 +28,7 @@ RNS provides an architecture which enables the identification of blockchain addr
   </div>
   <div class="row rif_blue_text">
     <div class="col">
-      <div style="padding: 10px;">
+      <div class="rns-index-box">
         <a href="run-locally">Develop on top of RNS</a>
         <br />
         <br />
@@ -36,7 +36,7 @@ RNS provides an architecture which enables the identification of blockchain addr
       </div>
     </div>
     <div class="col">
-      <div style="padding: 10px;">
+      <div class="rns-index-box">
         <a href="libs">Use the libraries</a>
         <br />
         <br />

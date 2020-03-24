@@ -3,6 +3,6 @@ layout: rsk
 title: Run RNS locally
 ---
 
-1. Use RSK local network or Ganache
-2. Deploy RNS contracts
-3. Setup manager to run locally
+More information coming soon!
+
+[Collaborate on Github](https://github.com/rsksmart/rsksmart.github.io/issues/207)

@@ -3,9 +3,6 @@ layout: rsk
 title: Try RNS
 ---
 
-TBD
+More information coming soon!
 
-1. Get Nifty or setup
-2. Get RBTC
-3. Get RIF Tokens
-4. Register domain in RNS Manager
+[Collaborate on Github](https://github.com/rsksmart/rsksmart.github.io/issues/208)
