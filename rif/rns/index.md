@@ -5,19 +5,7 @@ title: RIF Name Service
 
 RNS provides an architecture which enables the identification of blockchain addresses by human-readable names.
 
-<form class="form" id="frm-rns-search">
-  <div class="form-group">
-    <div class="input-group">
-      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
-      <div class="input-group-append">
-        <span class="input-group-text">.rsk</span>
-      </div>
-      <div class="input-group-append">
-        <button class="btn" style="background-color: #008CFF; color: white;">Register!</button>
-      </div>
-    </div>
-  </div>
-</form>
+{% include rns-register.html %}
 
 <div class="container the-stack">
   <div class="row rif_blue_text">
