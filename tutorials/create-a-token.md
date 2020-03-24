@@ -17,7 +17,8 @@ npm install -g truffle
 **1. create a new folder,my folder name is token**
 
 ```shell
-mkdir token && cd token
+mkdir token
+cd token
 ```
 
 **2. Initialize a npm project.**
@@ -345,7 +346,6 @@ Steps of usage:
 * 9.4 To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/). All interactions with our contract will appear in the explorer!
   <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token8.png"></div>
   <div style="text-align:center"><img style="margin:0 auto" src="/assets/img/create-token/create-token9.png"></div>
-
 
 
 
