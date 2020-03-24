@@ -105,8 +105,9 @@ function concatValues( obj ) {
   renderLocalTimes();
 });
 
+// Iterate over all "event" elements and attempt to render their times
+// where the timestamp property is present
 function renderLocalTimes() {
-  console.log('renderLocalTimes');
   $('.eventos').each(function () {
     var timestamp = $(this).data('timestamp');
     if (timestamp) {
@@ -115,28 +116,45 @@ function renderLocalTimes() {
   });
 }
 
+// For a particular "event" element, update its DOM in specific places
+// to display the date, time, and time zone specific to the user' locale.
+// In older browsers, use a best-effort approach for date-time localisation.
 function renderLocalTime(el, timestamp) {
-  var dateStr = new Date(timestamp).toLocaleDateString(
-    undefined,
-    {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    },
-  );
+  var timeStampDate = new Date(timestamp);
 
-  var timeStr = new Date(timestamp).toLocaleDateString(
-    undefined,
-    {
-      hour: 'numeric',
-      minute: 'numeric',
-    },
-  );
-
-  var fullDateString = (new Date(timestamp)).toString();
+  // extract full timezone details from Date, for user's locale
+  var fullDateString = (timeStampDate).toString();
   var tzSplitIndex = nthCharacter(fullDateString, ' ', 5);
   var tzStr = fullDateString.substring(tzSplitIndex + 1);
+
+  var dateStr;
+  var timeStr;
+  if (typeof timeStampDate.toLocaleTimeString === 'function') {
+    // for modern browsers, extract locale specific date and time strings
+    dateStr = timeStampDate.toLocaleDateString(
+      undefined,
+      {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+      },
+    );
+
+    timeStr = timeStampDate.toLocaleTimeString(
+      undefined,
+      {
+        hour: 'numeric',
+        minute: 'numeric',
+      },
+    );
+  } else {
+    // for older browsers, fall back on `Date.prototype.toString` to extract
+    // non-locale specific date and time strings
+    var timeSplitIndex = nthCharacter(fullDateString, ' ', 4);
+    dateStr = fullDateString.substring(0, timeSplitIndex);
+    timeStr = fullDateString.substring(timeSplitIndex + 1, tzSplitIndex);
+  }
 
   var dateEl = $(el).find('.display-date');
   var timeEl = $(el).find('.display-time');
@@ -146,9 +164,11 @@ function renderLocalTime(el, timestamp) {
   tzEl.text(tzStr);
 }
 
+// Returns the index of the `n`th occurrence of `character` within `string`
 function nthCharacter(string, character, n) {
   var count = 0;
   var i = 0;
+  // repeatedly call `String.prototype.indexOf` until the nth count has been reached
   while (count < n && (i = string.indexOf(character, i) + 1)) {
     ++count;
   }
