@@ -3,8 +3,11 @@ layout: rsk
 title: RNS Integration guidelines
 ---
 
-- [RSK Address resolution](rsk-address-resolution)
-- [Multi-chain address resolution](multichain-address-resolution)
-- [Reverse resolution](reverse-resolution)
-- [Domain keys management](domain-keys-management)
-- [Domain registration](domain-registration)
+<div class="container the-stack">
+  <div class="row has-unique-col rif_blue_text">
+    <div class="col">
+      <a href="integrate-addr-resolution">Use domains instead of long hexadecimal addresses</a>
+    </div>
+  </div>
+  {% include rns-integrate-dapp-wallet.html %}
+</div>

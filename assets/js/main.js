@@ -1,39 +1,41 @@
 // store dark /light theme
 
-$(document).ready(function(){
-    // Check local storage and set theme
-    if(localStorage.theme) {
-        $('html').addClass( localStorage.theme );
-    }
-    else{
-        $('html').addClass('light'); // set default theme. No need to set via php now
-    }
+$(document).ready(function() {
+  // Check local storage and set theme
+  if(localStorage.theme) {
+    $('html').addClass( localStorage.theme );
+  } else {
+    $('html').addClass('light'); // set default theme. No need to set via php now
+  }
 
   if ($('html').hasClass('dark')) {
-  $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
-  $('#theme-toggler').text('Light');
-}
-else  {
+    $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
+    $('#theme-toggler').text('Light');
+  } else {
    $('#logo').attr('src','/assets/img/rsk_logo.svg');
    $('#theme-toggler').text('Dark');
- }
+  }
 
 
-    //Switch theme and store in local storage ...
-    $("#theme-toggler").click(function(){
-       if ($('html').hasClass( 'light')){
-        $('html').removeClass('light').addClass('dark');
-        $('#theme-toggler').text('Light');
-        $('#logo').attr("src", "/assets/img/rsk_logo_reverse.svg");
-        localStorage.theme = 'dark';
+  //Switch theme and store in local storage ...
+  $("#theme-toggler").click(function() {
+    if ($('html').hasClass( 'light')){
+      $('html').removeClass('light').addClass('dark');
+      $('#theme-toggler').text('Light');
+      $('#logo').attr("src", "/assets/img/rsk_logo_reverse.svg");
+      localStorage.theme = 'dark';
+    } else {
+      $('html').removeClass('dark').addClass('light');
+      $('#theme-toggler').text('Dark');
+      $('#logo').attr("src", "/assets/img/rsk_logo.svg");
+      localStorage.theme = 'light';
     }
-    else  {
-        $('html').removeClass('dark').addClass('light');
-        $('#theme-toggler').text('Dark');
-        $('#logo').attr("src", "/assets/img/rsk_logo.svg");
-        localStorage.theme = 'light';
-    }
-});
+  });
+
+  $('#frm-rns-search').on('submit', (e) => {
+    e.preventDefault();
+    window.open('https://manager.rns.rifos.org/search?domain=' + $('#txt-rns-name').val(), '_blank');
+  });
 });
 
 // smooth scroll to anchor links with offset

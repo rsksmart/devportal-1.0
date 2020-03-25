@@ -1695,6 +1695,18 @@ img {
     }
 }
 
+.btn-rns-register {
+    background-color: #008CFF; color: white;
+}
+
+.rns-integrate-box {
+    padding: 10px;
+}
+
+.rns-index-box {
+    padding: 10px;
+}
+
 @media (max-width: 768px){
 #footer .footer-top .social-links {
     margin-top: 50px;
