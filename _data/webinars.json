@@ -2,6 +2,38 @@
   "events": [
     {
       "type": "event/1",
+      "id": "202003-001",
+      "version": 1,
+      "lastModified": "2020-03-23T06:00:00.000Z",
+      "url": "https://www.meetup.com/rsk-community/events/269504497/",
+      "timestamp": "2020-03-23T21:00:00.000Z",
+      "title": "What’s Blockchain",
+      "subtitle": "What’s Bitcoin",
+      "image": "img/events/event1.jpg",
+      "category": "Talk",
+      "locationCategory": "online",
+      "language": "English",
+      "location": "Online only",
+      "tags": "online online-workshop general non-developers latam"
+    },
+    {
+      "type": "event/1",
+      "id": "202003-002",
+      "version": 1,
+      "lastModified": "2020-03-23T06:00:00.000Z",
+      "url": "https://www.meetup.com/rsk-community/events/269565719/",
+      "timestamp": "2020-03-26T00:00:00.000Z",
+      "title": "How to create your first Smart Contract using Remix and Metamask at RSK Network",
+      "subtitle": "",
+      "image": "img/events/event2.jpg",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "language": "English",
+      "location": "Online only",
+      "tags": "online online-workshop general non-developers asia"
+    },
+    {
+      "type": "event/1",
       "id": "202003-003",
       "version": 1,
       "lastModified": "2020-03-23T06:00:00.000Z",
@@ -32,22 +64,6 @@
       "location": "Online only",
       "tags": "eventos online online-workshop general non-developers latam"
     },
-    {
-      "type": "event/1",
-      "id": "202003-002",
-      "version": 1,
-      "lastModified": "2020-03-23T06:00:00.000Z",
-      "url": "https://www.meetup.com/rsk-community/events/269565719/",
-      "timestamp": "2020-03-26T00:00:00.000Z",
-      "title": "How to create your first Smart Contract using Remix and Metamask at RSK Network",
-      "subtitle": "",
-      "image": "img/events/event2.jpg",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "language": "English",
-      "location": "Online only",
-      "tags": "online online-workshop general non-developers asia"
-    },    
     {
       "type": "event/1",
       "id": "202003-005",
