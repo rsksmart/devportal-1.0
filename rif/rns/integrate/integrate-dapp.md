@@ -3,19 +3,13 @@ layout: rsk
 title: Integrate your dApp with RNS
 ---
 
-# First steps before start coding
-
-## Register dApp domain name
+Surely you want to reserve the name of your dapp now! Search it here
 
 {% include rns-register.html %}
 
-## Use a compatible wallet
-  * Our recommendation: [Nifty wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en)
-  * [Metamask](https://metamask.io/)
-  * [Brave](https://brave.com/)
-  * If you use another wallet, [here](/develop/apps/wallets/) are some stuff you may need to set it up.
 
-# Let's code!
+**Content**
+*  [Use a compatible wallet](#use-a-compatible-wallet)
 *  [Detect user current broswer wallet](#detect-user-current-browser-wallet)
 *  [Authenticate users](#authenticate-users)
     *  [With a given domain](#authenticate-with-a-given-domain)
@@ -24,6 +18,12 @@ title: Integrate your dApp with RNS
     * [Create subdomains under your user's domain](#create-subdomains-under-your-users-domain)
     * [Update a subdomain](#set-a-new-address-for-your-users-domain)
 *  [Use domains instead of addresses within your app](#use-domains-instead-of-addresses-within-your-app)
+
+## Use a compatible wallet
+  * Our recommendation: [Nifty wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en)
+  * [Metamask](https://metamask.io/)
+  * [Brave](https://brave.com/)
+  * If you use another wallet, [here](/develop/apps/wallets/) are some stuff you may need to set it up.
 
 ## Detect user current browser wallet
 
