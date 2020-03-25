@@ -32,7 +32,7 @@ We are pretty sure that the provided example is not enough for all your needings
 <div class="container the-stack">
   <div class="row has-unique-col rif_blue_text">
     <div class="col">
-      <a href="integrate-addr-resolution">Use domains instead of long hexa addresses</a>
+      <a href="integrate-addr-resolution">Use domains instead of long hexadecimal addresses</a>
     </div>
   </div>
 </div>
