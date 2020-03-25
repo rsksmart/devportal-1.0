@@ -18,7 +18,7 @@ RNS will be in charge of translating that domain to an actual blockchain address
 ```javascript
 const transferToDomain = async (domain) => {
     const address = await rns.addr(domain);
-    
+
     return transferTo(address);
 }
 ```
@@ -35,6 +35,7 @@ We are pretty sure that the provided example is not enough for all your needings
       <a href="integrate-addr-resolution">Use domains instead of long hexadecimal addresses</a>
     </div>
   </div>
+  {% include rns-integrate-dapp-wallet.html %}
 </div>
 
 _This guides explain how to integrate with RNS within your JavaScript app._
