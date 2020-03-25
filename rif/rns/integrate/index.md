@@ -48,9 +48,9 @@ _Install [`Web3.js`](https://www.npmjs.com/package/web3) and [`@rsksmart/rns`](h
 npm i web3 @rsksmart/rns
 ```
 
-> _This was tested with Node vCOMPLETE - npm vCOMPLETE - yarn vCOMPLETE._
+> _This was tested with Node v10.15.1 - npm v6.13.6 - yarn v1.17.3._
 >
-> _This should work in most of Node environemnts. In case something goes wrong try activating vCOMPLETE with [nvm](https://github.com/nvm-sh/nvm)_
+> _This should work in most of Node environemnts. In case something goes wrong try activating v10.15.1 with [nvm](https://github.com/nvm-sh/nvm)_
 
 <div class="container the-stack">
   {% include rns-integrate-dapp-wallet.html %}
