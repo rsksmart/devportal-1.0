@@ -172,7 +172,11 @@
             <div class="row">
                <!-- Event grid -->
                <div class="grid">
-               {% for event in site.data.webinars.events %}
+               {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+               {% assign events = (site.data.webinars.events | sort: 'timestamp') %}
+               {% for event in events %}
+                  {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
+                  {% if timestamp > now %}
                   <!-- Event -->
                   <div
                      class="col-lg-4 eventos {{ event.tags }}"
@@ -224,6 +228,7 @@
                      </a>
                   </div>
                   <!-- -->
+                  {% endif %}
                {% endfor %}
                </div>
             </div>
