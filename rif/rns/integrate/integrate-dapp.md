@@ -23,7 +23,7 @@ Surely you want to reserve the name of your dapp now! Search it here
   * Our recommendation: [Nifty wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en)
   * [Metamask](https://metamask.io/)
   * [Brave](https://brave.com/)
-  * If you use another wallet, [here](/develop/apps/wallets/) are some stuff you may need to set it up.
+  * If you use another wallet, [here](/develop/apps/wallets/) you may need to perform additional steps.
 
 ## Detect user current browser wallet
 
@@ -45,7 +45,7 @@ if (window.ethereum) {
 }
 ```
 
-> From now on, the rest of the code snippets assume that the wallet is already enabled and the `currentAddres` variable is set.
+> From this point onward, the code snippets assume that the wallet is already enabled and that the `currentAddress` variable is set.
 
 *Check if the wallet is connected to the proper network*
 
@@ -105,13 +105,13 @@ As you are the owner of `myapp.rsk`, you are in charge of registering those new 
 
 There are different approaches to create subdomains under your domain:
 * [Create subdomains one by one from the RNS Manager](/rif/rns/operations/register-subdomain/)
-* Create multiple subdomains using [this tool](https://github.com/rnsdomains/rns-subdomain-batch) 
+* Create multiple subdomains using the [RNS subdomain batch tool](https://github.com/rnsdomains/rns-subdomain-batch) 
 * Create a backend in charge of creating subdomains on demand
-    * Find an example [here](https://github.com/rnsdomains/rns-subdomain-tool)
+    * [Example](https://github.com/rnsdomains/rns-subdomain-tool)
 
 ## Create subdomains under your user's domain
 
-In order to create a subdomain, the sender should be the owner of the parent domain (more information [here](/rif/rns/architecture/registry/)). So if you want to let your users create subdomains under their domains, is something really easy to do.
+In order to create a subdomain, the sender should be the owner of the parent domain ([more information](/rif/rns/architecture/registry/)). This allow your users create subdomains under their own domains.
 
 ```javascript
 const domain = 'alice.myapp.rsk';
@@ -142,9 +142,9 @@ const setAddressForDomain = async (domain, newAddress) => {
 
 ## Use domains instead of addresses within your app
 
-The main goal of RNS is to simplify the blockchain usability, let's do it! Why instead of typing addresses, you let your users to type domains? It will be much simple.
+A fundamental goal of RNS is to simplify blockchain user experience! Instead of typing addresses, why not let your users to type domains? This is so much simpler!
 
-The following code snippet is a method that receives a domain and returns an address. You can use it in your dApp inputs, so the users will type just domains.
+The following code snippet is a method that receives a domain and returns an address. You can use it in your (client-side) dApp inputs, allowing users to type just domains.
 
 ```javascript
 const getAddressFromDomain = async (domain) => {
