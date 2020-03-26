@@ -4,6 +4,19 @@ title: RNS JS Library - Error knowledge base
 tags: rns, javascript, error
 ---
 
+## Handle errors with RNS library
+
+RNS Library extends the [`Error` class](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Error) with two extra properties:
+
+- `id` - The knowledge base ID
+- `ref` - A link to the specific error within this page
+
+## `KB000`
+
+**Message**: Unknown error.
+
+**Description**: Unknown error.
+
 ## `KB001`
 
 **Message**: No addr resolution set
@@ -116,4 +129,4 @@ tags: rns, javascript, error
 
 **Message**: The given address checksum is invalid
 
-**Description**: The given address checksum is invalid for the current networkId. Check out [here](https://eips.ethereum.org/EIPS/eip-1191) how checksum validation is performed.
+**Description**: The given address checksum is invalid for the current networkId. Check out [EIP-1191](https://eips.ethereum.org/EIPS/eip-1191) for information about how checksum validation is performed.

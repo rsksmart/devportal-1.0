@@ -44,11 +44,7 @@ curl -X POST --data '{"jsonrpc": "2.0", "id":"1", "method": "mnr_getWork", "para
 {
 "jsonrpc":"2.0",
 "id":1,
-"result":
-  {
-  "jsonrpc":"2.0",
-  "id":"1",
-  "result":{
+"result":{
   "blockHashForMergedMining":"0x43513e9808bab44f1b4e9858ff737b226d7893d7d7ed4f92fdc885e5d0922672",
   "target":"0x5555555555555555555555555555555555555555555555555555555555555555",
   "feesPaidToMiner":"0",

@@ -30,6 +30,6 @@ The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transact
 
 Smart contracts for RSK are written using Solidity and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK Smart without making any changes.
 
-<a href="/tutorials/port-ethereum-dapps" class="green-button">Port Ethereum dApps</a>
+<a href="/tutorials/ethereum-devs/port-ethereum-dapps" class="green-button">Port Ethereum dApps</a>
 <a href="/tutorials" class="green-button">More Tutorials</a>
 <br/><br/>

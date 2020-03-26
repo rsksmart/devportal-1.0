@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Port Ethereum dApps
+tags: tutorial, rsk, ethereum dapps
 ---
 
 ## Step 1 : Import Existing Code
@@ -205,7 +206,7 @@ First we need to obtain an account on RSK Testnet and get some free RSK token fr
 1. Enter R-BTC as SymbolPut and Save
 1. Copy the account address
 
-<img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/dist/images/metamask-testnet.png">
+<img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/assets/img/tutorials/port-ethereum-dapps/metamask-testnet.png">
 
 **Get free token**
 
@@ -213,7 +214,7 @@ Visit the [faucet website](https://faucet.testnet.rsk.co/) to gain some free RSK
 
 Enter the account address from MetaMask and wait several minutes for MetaMask to refresh the new balance.
 
-<img class="port-eth-app-img" src="/dist/images/testnet-faucet.png">
+<img class="port-eth-app-img" src="/assets/img/tutorials/port-ethereum-dapps/testnet-faucet.png">
 
 #### Truffle Configuration
 
