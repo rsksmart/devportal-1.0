@@ -1,6 +1,9 @@
 ---
 layout: rsk
 title: Integrate your dApp with RNS
+
+tags: rif rns integrate
+description: Learn how to integrate RNS with your dApp.
 tags: rns, javascript, dapp, integrate
 ---
 
