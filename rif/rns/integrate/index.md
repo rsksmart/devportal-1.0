@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RNS Integration guidelines
+tags: rif rns integrate
+description: Learn how to integrate RNS with your wallet or dApp.
 tags: rns, javascript, dapp, wallet, integrate
 ---
 
