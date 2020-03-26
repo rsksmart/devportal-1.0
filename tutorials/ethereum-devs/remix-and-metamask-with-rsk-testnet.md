@@ -58,23 +58,23 @@ Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
 
 - Network Name
 
-RSK Testnet
+    RSK Testnet
 
 - New RPC URL
 
-[https://public-node.testnet.rsk.co](https://public-node.testnet.rsk.co)
+    [https://public-node.testnet.rsk.co](https://public-node.testnet.rsk.co)
 
 - ChainID (optional)
 
-31
+    31
 
 - Symbol (optional)
 
-R-BTC
+    tR-BTC
 
 - Block Explorer URL (optional)
 
-https://explorer.testnet.rsk.co/
+    https://explorer.testnet.rsk.co/
 
 
 ![RSK Testnet configuration](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-02.png)
