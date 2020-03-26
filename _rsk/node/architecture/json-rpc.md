@@ -21,6 +21,7 @@ RSK currently supports the following:
 | `net_version` | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
 | `net_peerCount` | YES | |
 | `net_listening` | YES | |
+| `eth_chainId` | YES | Same response than eth_protocolVersion |
 | `eth_protocolVersion` | YES | |
 | `eth_syncing` | YES | |
 | `eth_coinbase` | YES | |
@@ -140,3 +141,11 @@ RSK currently supports the following:
 | ------ | ------ | ------ |
 | `eth_subscribe` | PARTIALLY | Only option "newHeaders" is supported. |
 | `eth_unsubscribe` | YES | |
+
+## RPC SPV methods
+| Method | Supported | Comments |
+| ------ | ------ | ------ |
+| `rsk_getRawBlockHeaderByNumber` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block number (in hexa) or the string "latest" "pending" "genesis". |
+| `rsk_getRawBlockHeaderByHash` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block hash as parameter. |
+| `rsk_getRawTransactionReceiptByHash` | YES | Obtains the RLP encoded Transaction Receipt, if this is hashed using Keccack256 it gives the transaction receipt hash. This function takes the transaction hash as parameter.|
+| `rsk_getTransactionReceiptNodesByHash` | YES | Obtains an array of nodes of the transactions receipt Trie. This is used to hash up to the transaction receipt root. This function takes the block hash and transaction hash as parameters.|
