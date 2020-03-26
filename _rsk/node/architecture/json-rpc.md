@@ -986,6 +986,7 @@ params: [
   - `receiptsRoot`: `DATA`, 32 Bytes - the root of the receipts trie of the block.
   - `miner`: `DATA`, 20 Bytes - the address of the beneficiary to whom the mining rewards were given.
   - `difficulty`: `QUANTITY` - integer of the difficulty for this block.
+  - `cumulativeDifficulty`: `QUANTITY` - integer of the difficulty for this block plus its uncles' difficulties.
   - `totalDifficulty`: `QUANTITY` - integer of the total difficulty of the chain until this block.
   - `extraData`: `DATA` - the "extra data" field of this block.
   - `size`: `QUANTITY` - integer the size of this block in bytes.
