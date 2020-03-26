@@ -55,10 +55,6 @@ npm i web3 @rsksmart/rns
 >
 > _This should work in most of Node environemnts. In case something goes wrong try activating v10.15.1 with [nvm](https://github.com/nvm-sh/nvm)_
 
-<div class="container the-stack">
-  {% include rns-integrate-dapp-wallet.html %}
-</div>
-
 RNS JavaScript library related links:
 - Read the [docs](https://developers.rsk.co/rif/rns/libs/javascript)
 - Collaborate in [Github](https://github.com/rnsdomains/rns-js)
