@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Integrate your dApp with RNS
+tags: rns, javascript, dapp, integrate
 ---
 
 Surely you want to reserve the name of your dapp now! Search it here
@@ -144,7 +145,7 @@ const setAddressForDomain = async (domain, newAddress) => {
 
 A fundamental goal of RNS is to simplify blockchain user experience! Instead of typing addresses, why not let your users to type domains? This is so much simpler!
 
-The following code snippet is a method that receives a domain and returns an address. You can use it in your (client-side) dApp inputs, allowing users to type just domains.
+The following code snippet is a method that receives a domain and returns an address. You can use it in your (client-side) dApp inputs, allowing users to enter just domains.
 
 ```javascript
 const getAddressFromDomain = async (domain) => {

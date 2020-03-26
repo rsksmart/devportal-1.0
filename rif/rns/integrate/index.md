@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RNS Integration guidelines
+tags: rns, javascript, dapp, wallet, integrate
 ---
 
 RIF Name Service (RNS) is a decentralized service that allows users to have a readable domain in any blockchain. It can be used to identify other personal resources, such as payment, ID, storage or communication addresses.
@@ -11,7 +12,7 @@ In order to accomplish that, you should integrate this service to your dApp or w
 
 Just to provide a simple example, let's try to send funds from one wallet to another. So, instead of asking the user to write an unfriendly blockchain address, let's allow him/her to enter just a domain.
 
-![](https://i.imgur.com/eO4FG1s.png)
+!![](/assets/img/rns/rns-integrate.png)
 
 RNS will be in charge of translating that domain to an actual blockchain address.
 
