@@ -11,7 +11,7 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
 
 2. In the network selector (top right corner), choose Custom RPC.
 
-  <div style="text-align:center"><img style="margin:1em auto; max-width:250px;" src="/assets/img/metamask/metamask.png"></div>
+  <div style="text-align:center"><img class="metamask-screenshot" src="/assets/img/metamask/metamask.png"></div>
 
 3. Fill with these values to connect to RSK Mainnet or Testnet
 
