@@ -13,7 +13,7 @@ The RIF Token allows any token holder to consume the services that are compatibl
   <tbody>
     <tr>
       <td scope="row">Token Name</td>
-      <td><a href="https://coinmarketcap.com/currencies/rif-token/" target="_blank">RIF</a></td>
+      <td><a href="https://coinmarketcap.com/currencies/rsk-infrastructure-framework/" target="_blank">RIF</a></td>
     </tr>
     <tr>
       <td scope="row">Total Supply</td>
