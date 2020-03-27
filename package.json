@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-webinar-ical": "node .scripts/generate-webinar-ical.js"
+    "generate-webinar-ical": "node .scripts/generate-webinar-ical.js",
+    "generate-webinar-json": "node .scripts/generate-webinar-json.js"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/rootstock/rootstock.github.io#readme",
   "dependencies": {
+    "csvtojson": "2.0.10",
     "ical-generator": "1.9.3"
   }
 }
