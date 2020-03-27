@@ -23,6 +23,7 @@ RSK currently supports the following:
 | [`net_version`](#net_version) | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
 | [`net_peerCount`](#net_peercount) | YES | |
 | [`net_listening`](#net_listening) | YES | |
+| [`eth_chainId`](#eth_chainid) | YES | Same response than eth_protocolVersion |
 | [`eth_protocolVersion`](#eth_protocolversion) | YES | |
 | [`eth_syncing`](#eth_syncing) | YES | |
 | [`eth_coinbase`](#eth_coinbase) | YES | |
@@ -224,6 +225,32 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
   "id":74,
   "jsonrpc": "2.0",
   "result": "0x2" // 2
+}
+```
+
+***
+
+#### eth_chainId
+
+Returns the currently configured chain id, a value used in replay-protected transaction signing as introduced by EIP-155.
+
+##### Parameters
+none
+
+##### Returns
+
+`String` - The current chainId.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+
+// Result
+{
+  "id":67,
+  "jsonrpc": "2.0",
+  "result": "0x1e"
 }
 ```
 
@@ -1891,3 +1918,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x12345
 | ------ | ------ | ------ |
 | `eth_subscribe` | PARTIALLY | Only option "newHeaders" is supported. |
 | `eth_unsubscribe` | YES | |
+
+## RPC SPV methods
+| Method | Supported | Comments |
+| ------ | ------ | ------ |
+| `rsk_getRawBlockHeaderByNumber` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block number (in hexa) or the string "latest" "pending" "genesis". |
+| `rsk_getRawBlockHeaderByHash` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block hash as parameter. |
+| `rsk_getRawTransactionReceiptByHash` | YES | Obtains the RLP encoded Transaction Receipt, if this is hashed using Keccack256 it gives the transaction receipt hash. This function takes the transaction hash as parameter.|
+| `rsk_getTransactionReceiptNodesByHash` | YES | Obtains an array of nodes of the transactions receipt Trie. This is used to hash up to the transaction receipt root. This function takes the block hash and transaction hash as parameters.|
