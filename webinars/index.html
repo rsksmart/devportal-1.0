@@ -89,16 +89,11 @@
             <div class="row h-100">
                <div class="container h-100">
                   <div class="row h-100">
-                     <div id="home-text" class="col-lg-6 my-auto">
+                     <div id="home-text" class="col-lg-12 my-auto">
                         <h1><span class="bold rsk_green">Webinars</span>
                         </h1>
-                        <p class="mb-5"><span class="bold">Welcome to RSK & RIF Webinars!</span><br>
-                           Now you can watch and learn more about <span class="falsebreak"><br></span>Blockchain! Check the latest news, information, <span class="falsebreak"><br></span>tools, tutorials and workshops around <span class="bold">RSK, <span class="falsebreak"><br></span>RIF, Blockchain, Bitcoin and the Internet of Value</span>.
+                        <p class="mb-5"><span class="bold">Welcome to RSK & RIF Webinars!</span> Now you can watch and learn more about Blockchain! Check the latest news, information, tools, tutorials and workshops around <span class="bold">RSK, RIF, Blockchain, Bitcoin and the Internet of Value</span>.
                         </p>
-                        <img src="img/rsk-rif-iov.png" class="img-fluid three-brands">
-                     </div>
-                     <div class="col-lg-6 my-auto px-5">
-                        <img src="img/home_section_image.png" class="img-fluid">
                      </div>
                   </div>
                </div>
@@ -111,7 +106,7 @@
          <div class="container">
             <div class="row mb-3">
                <div class="col-lg-6">
-                  <h2><span class="bold rsk_green">Calendars</span></h2>
+                  <h2><span class="bold rsk_green">Calendar</span></h2>
                </div>
             </div>
             <!-- Event selection -->
@@ -172,19 +167,22 @@
             <div class="row">
                <!-- Event grid -->
                <div class="grid">
-               {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+                  <div class="row">
+               
+{% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
                {% assign events = (site.data.webinars.events | sort: 'timestamp') %}
                {% for event in events %}
                   {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
                   {% if timestamp > now %}
                   <!-- Event -->
+
                   <div
                      class="col-lg-4 eventos {{ event.tags }}"
                      data-timestamp="{{ event.timestamp }}">
                      <a href="{{ event.url }}"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <div class="eventos-content">
+                        
                            <div class="image-group" style="background-image: url('{{ event.image }}');">
                               <div class="event-type">{{ event.category }}</div>
                            </div>
@@ -217,37 +215,52 @@
                                     <span class="text display-time"></span>
                                     <span class="text display-tz"></span>
                                  </span>
-                                 <span class="place">
+                                 <span>
                                     <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     <span class="text display-space">{{ event.location }}</span>
                                  </span>
                               </div>
                            </div>
                            <div class="button-group">More info +</div>
-                        </div>
+                        
                      </a>
                   </div>
+              
                   <!-- -->
                   {% endif %}
                {% endfor %}
+
                </div>
             </div>
             <!-- EVENTOS ENDS -->
          </div>
       </section>
+ <section id="add-calendar">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12 my-auto text-center">
+                  <a href="https://developers.rsk.co/webinars/calendar.ical" target="_blank" rel="noreferrer noopener"><img src="img/calendar-image.png" class="calendar-image"></a>
+                  <h4>Add to your <span class="rsk_green bold">Calendar</span></h4>
+                  
+               </div>
+            </div>
+         </div>
+         <img class="circle-blue" src="img/circles/circle-blue.png">
+      </section>
+
       <!-- youtube -->
       <section id="youtube">
+         <img class="circle-green" src="img/circles/circle-green.png">
          <img class="semi-circle-right" src="img/circles/semi-circle-right.png">
          <img class="semi-circle-left" src="img/circles/semi-circle-left.png">
          <div class="container">
             <div class="row">
                <div class="col-lg-12 my-auto text-center">
-                  <h4>Watch our videos in <span class="rsk_green bold">YouTube</span></h4>
+                  <h4>Access all our past Webinars <br>in <span class="rsk_green bold">YouTube</span></h4>
                   <a href="https://www.youtube.com/rsksmart" target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube"></i></a>
                </div>
             </div>
          </div>
-         <img class="circle-green" src="img/circles/circle-green.png">
       </section>
       <!-- scope -->
       <section id="brands">

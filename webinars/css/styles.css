@@ -78,14 +78,21 @@ button:focus {
 .circle-blue {
     width: 55px;
     right: 10%;
-    margin-top: -95px;
+    margin-top: -45px;
     height: auto;
     position: absolute;
 }
 
+#add-calendar .circle-blue {
+       width: 40px;
+    left: 20%;
+    margin-top: -60px;
+}
+
 .circle-green {
-    width: 40px;
-    right: 10%;
+     width: 40px;
+    right: 49%;
+    margin-top: -125px;
     height: auto;
     position: absolute;
 }
@@ -101,20 +108,22 @@ button:focus {
 /*sections */
 
 #home {
-    min-height: 100vh;
     padding-top: 110px;
     color: black;
     position: relative;
+    margin-bottom: 0px;
 }
 
 .three-brands {
     max-width: 65%;
 }
+#rules{margin-top:0px;}
 
-#rules,
 #youtube {
     padding-top: 100px;
 }
+
+.calendar-image{margin-bottom: 30px;}
 
 #newsletter {
     text-align: center;
@@ -624,6 +633,7 @@ a:hover {
 
 .grid {
     width: 100%;
+    padding:0 15px;
 }
 
 
@@ -675,16 +685,37 @@ select {
 .eventos {
     float: left;
     padding: 15px;
-    display: block;
+    display: flex;
+    position: relative!important;
+    left: initial!important;
+    top: initial!important;
 }
 
-.eventos-content {
+/*.eventos-content {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
 .eventos-content:hover {
+    -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    cursor: pointer;
+}*/
+
+.eventos > a {
+    display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+            justify-content: space-between;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+.eventos > a:hover {
     -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
@@ -715,7 +746,7 @@ select {
 
 .info-group {
     font-family: 'Quicksand', sans-serif;
-    padding: 10px 15px;
+    padding: 10px 15px 15px;
     color: black;
     transition: all 0.5s ease;
 }
@@ -727,25 +758,28 @@ select {
     line-height: 20px;
     transition: all 0.5s ease;
     text-decoration: none!important;
-    min-height: 100px;
+    min-height: 80px;
+}
 }
 
 .desc-group {
     font-size: 14px;
     line-height: 18px;
-    height: 124px;
 }
 
 .desc-group span {
-    display: block;
+    display: inline-flex!important;
     padding-left: 10px;
     line-height: 20px;
+    width: 100%;
 }
 
 .desc-group span.text {
     display: inline;
     padding-left: unset;
     line-height: unset;
+        width: unset;
+    padding-right: 5px;
 }
 
 .desc-group .display-tz {
@@ -759,16 +793,16 @@ select {
 }
 
 .desc-group .fa {
-    position: relative;
-    width: 14px;
-    top: 0px;
+       position: relative;
+    width: 20px;
+    top: 1px;
     left: -10px;
 }
 
-.place {
+/*.place {
     height: 36px;
     display: inline-flex!important;
-}
+}*/
 
 .place .fa-map-marker,
 .place span {
@@ -954,6 +988,8 @@ a:hover .desc-group span:first-child {
     .ui-group h3 {
         width: 100px;
     }
+
+    .title-group {min-height: unset; padding-bottom: 15px;}
     select {
         width: 250px;
     }
@@ -984,6 +1020,9 @@ a:hover .desc-group span:first-child {
     .es .lastcol ul li {
         margin-bottom: 4px!important;
     }
+    #add-calendar .circle-blue {
+    margin-top: -20px;
+}
 }
 
 @media (max-width: 630px) {
