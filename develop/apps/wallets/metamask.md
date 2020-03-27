@@ -17,7 +17,7 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
 
   | Field | RSK Mainnet | RSK Testnet |
   | - | - | - |
-  | Netwrok Name | RSK Mainnet | RSK Testnet |
+  | Network Name | RSK Mainnet | RSK Testnet |
   | RPC Url | https://public-node.rsk.co | https://public-node.testnet.rsk.co |
   | ChainID | 30 | 31 |
   | Symbol | R-BTC | tR-BTC |
