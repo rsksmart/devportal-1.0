@@ -14,7 +14,7 @@ In order to accomplish that, you should integrate this service to your dApp or w
 
 Just to provide a simple example, let's try to send funds from one wallet to another. So, instead of asking the user to write an unfriendly blockchain address, let's allow him/her to enter just a domain.
 
-!![](/assets/img/rns/rns-integrate.png)
+![](/assets/img/rns/rns-integrate.png)
 
 RNS will be in charge of translating that domain to an actual blockchain address.
 
@@ -41,7 +41,7 @@ We are pretty sure that the provided example is not enough for all your needs, s
   {% include rns-integrate-dapp-wallet.html %}
 </div>
 
-_This guides explain how to integrate with RNS within your JavaScript app._
+_This guide explains how to integrate with RNS within your JavaScript app._
 
 ### Basic setup
 

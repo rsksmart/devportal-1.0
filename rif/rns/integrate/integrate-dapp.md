@@ -1,7 +1,6 @@
 ---
 layout: rsk
 title: Integrate your dApp with RNS
-
 tags: rif rns integrate
 description: Learn how to integrate RNS with your dApp.
 tags: rns, javascript, dapp, integrate
@@ -13,6 +12,7 @@ Surely you want to reserve the name of your dapp now! Search it here
 
 
 **Content**
+
 *  [Use a compatible wallet](#use-a-compatible-wallet)
 *  [Detect user current broswer wallet](#detect-user-current-browser-wallet)
 *  [Authenticate users](#authenticate-users)
@@ -24,6 +24,7 @@ Surely you want to reserve the name of your dapp now! Search it here
 *  [Use domains instead of addresses within your app](#use-domains-instead-of-addresses-within-your-app)
 
 ## Use a compatible wallet
+
   * Our recommendation: [Nifty wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en)
   * [Metamask](https://metamask.io/)
   * [Brave](https://brave.com/)
@@ -71,7 +72,7 @@ await rns.compose();
 const networkId = rns.currentNetworkId;
 ```
 
-> From now one, we assume `rns` is already instantiated.
+> From now on, we assume that `rns` is already instantiated.
 
 ## Authenticate users
 
@@ -134,7 +135,7 @@ This will create a new domain called `wallet.allice.myapp.rsk` that will point t
 
 ## Set a new address for your user's domain
 
-It's really simple to change the address associated to a domain. You just need to make sure that the `currentAddress` is the owner of the domain and copy the method placed below.
+It's really simple to change the address associated with a domain. You just need to make sure that the `currentAddress` is the owner of the domain and copy the method placed below.
 
 ```javascript
 const setAddressForDomain = async (domain, newAddress) => {
@@ -146,7 +147,7 @@ const setAddressForDomain = async (domain, newAddress) => {
 
 ## Use domains instead of addresses within your app
 
-A fundamental goal of RNS is to simplify blockchain user experience! Instead of typing addresses, why not let your users to type domains? This is so much simpler!
+A fundamental goal of RNS is to simplify blockchain user experience! Instead of typing addresses, why not let your users type domains? This is so much simpler!
 
 The following code snippet is a method that receives a domain and returns an address. You can use it in your (client-side) dApp inputs, allowing users to enter just domains.
 
