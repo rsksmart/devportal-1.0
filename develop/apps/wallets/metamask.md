@@ -13,7 +13,7 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
 
   <div style="text-align:center"><img style="margin:1em auto; max-width:250px;" src="/assets/img/metamask/metamask.png"></div>
 
-3. Fill with this values to connect to RSK Mainnet or Testnet
+3. Fill with these values to connect to RSK Mainnet or Testnet
 
   | Field | RSK Mainnet | RSK Testnet |
   | - | - | - |
