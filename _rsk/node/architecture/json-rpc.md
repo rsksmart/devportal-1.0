@@ -23,7 +23,7 @@ RSK currently supports the following:
 | [`net_version`](#net_version) | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
 | [`net_peerCount`](#net_peercount) | YES | |
 | [`net_listening`](#net_listening) | YES | |
-| [`eth_chainId`](#eth_chainId) | YES | Same response than eth_protocolVersion |
+| [`eth_chainId`](#eth_chainid) | YES | Same response than eth_protocolVersion |
 | [`eth_protocolVersion`](#eth_protocolversion) | YES | |
 | [`eth_syncing`](#eth_syncing) | YES | |
 | [`eth_coinbase`](#eth_coinbase) | YES | |
