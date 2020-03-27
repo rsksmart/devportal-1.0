@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/rootstock/rootstock.github.io#readme",
   "dependencies": {
+    "csvtojson": "2.0.10",
     "ical-generator": "1.9.3"
   }
 }
