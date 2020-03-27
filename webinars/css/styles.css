@@ -930,13 +930,13 @@ a:hover .desc-group span:first-child {
     }
     #home-text {
         margin-top: 10vh!important;
-        margin-bottom: 10vh!important;
+        margin-bottom: 0px!important;
     }
     ¿ h5 {
         color: #00B520;
     }
     #rules {
-        padding-top: 70px;
+        padding-top: 0px;
     }
     #rules .right-col {
         padding-left: 15px;
