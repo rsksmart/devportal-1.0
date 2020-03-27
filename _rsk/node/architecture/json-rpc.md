@@ -1013,6 +1013,7 @@ params: [
   - `receiptsRoot`: `DATA`, 32 Bytes - the root of the receipts trie of the block.
   - `miner`: `DATA`, 20 Bytes - the address of the beneficiary to whom the mining rewards were given.
   - `difficulty`: `QUANTITY` - integer of the difficulty for this block.
+  - `cumulativeDifficulty`: `QUANTITY` - integer of the difficulty for this block plus its uncles' difficulties.
   - `totalDifficulty`: `QUANTITY` - integer of the total difficulty of the chain until this block.
   - `extraData`: `DATA` - the "extra data" field of this block.
   - `size`: `QUANTITY` - integer the size of this block in bytes.
@@ -1043,6 +1044,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
     "stateRoot": "0xd5855eb08b3387c0af375e9cdb6acfc05eb8f519e419b874b6ff2ffda7ed1dff",
     "miner": "0x4e65fda2159562a496f9f3522f89122a3088497a",
     "difficulty": "0x027f07", // 163591
+    "cumulativeDifficulty": "0x027f07", // 163591
     "totalDifficulty":  "0x027f07", // 163591
     "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "size":  "0x027f07", // 163591
