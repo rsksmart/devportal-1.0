@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-webinar": "npm run generate-webinar-json && npm run generate-webinar-ical",
     "generate-webinar-ical": "node .scripts/generate-webinar-ical.js",
     "generate-webinar-json": "node .scripts/generate-webinar-json.js"
   },
