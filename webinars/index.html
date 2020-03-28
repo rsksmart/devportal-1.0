@@ -168,7 +168,7 @@
                <!-- Event grid -->
                <div class="grid">
                   <div class="row">
-               
+
 {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
                {% assign events = (site.data.webinars.events | sort: 'timestamp') %}
                {% for event in events %}
@@ -182,7 +182,7 @@
                      <a href="{{ event.url }}"
                         target="_blank"
                         rel="noopener noreferrer">
-                        
+
                            <div class="image-group" style="background-image: url('{{ event.image }}');">
                               <div class="event-type">{{ event.category }}</div>
                            </div>
@@ -222,10 +222,10 @@
                               </div>
                            </div>
                            <div class="button-group">More info +</div>
-                        
+
                      </a>
                   </div>
-              
+
                   <!-- -->
                   {% endif %}
                {% endfor %}

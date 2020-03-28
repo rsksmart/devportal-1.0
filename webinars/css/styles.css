@@ -373,6 +373,10 @@ a:hover {
     color: #383838!important;
 }
 
+.rsk_black {
+    color: #000000;
+}
+
 .title-sm {
     font-size: 24px;
     line-height: 1.4;
@@ -384,7 +388,7 @@ a:hover {
     color: #000;
 }
 
-#home p a:hoverr {
+#home p a:hover {
     text-decoration: none;
 }
 
