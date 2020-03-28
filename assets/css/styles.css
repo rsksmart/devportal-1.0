@@ -1707,6 +1707,11 @@ img {
     padding: 10px;
 }
 
+.metamask-screenshot {
+    margin:1em auto;
+    max-width:250px;
+}
+
 @media (max-width: 768px){
 #footer .footer-top .social-links {
     margin-top: 50px;
