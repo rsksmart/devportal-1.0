@@ -1,0 +1,19 @@
+timestamp,id,version,url,title,category,locationCategory,location,language,lastModified
+2020-03-23T06:00:00.000Z,202003-001,1,https://www.meetup.com/es-ES/rsk-community/events/269504497/,"What is Blockchain?
+What is Bitcoin?",Talk,online,Online only,English,2020-03-23T06:00:00.000Z
+2020-03-23T06:00:00.000Z,202003-002,1,https://www.meetup.com/es-ES/rsk-community/events/269565719/,How to create your first Smart Contract using Remix and Metamask at RSK Network,Workshop,online,Online only,English,2020-03-23T06:00:00.000Z
+2020-03-23T06:00:00.000Z,202003-003,1,https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096,Crea tu primer smart contract en RSK usando Remix and Nifty Wallet ,Workshop,online,Online only,Spanish,2020-03-23T06:00:00.000Z
+2020-03-23T06:00:00.000Z,202003-004,1,https://www.meetup.com/es-ES/rsk-community/events/269566069/,Como criar smart contracts na RSK network utilizando Remix e Metamask,Workshop,online,Online only,Portuguese,2020-03-23T06:00:00.000Z
+2020-03-23T06:00:00.000Z,202003-005,1,https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497/,Gasnet: la red Blockchain para el Ecosistema de Gas,Talk,online,Online only,Spanish,2020-03-23T06:00:00.000Z
+2020-03-27T16:00:00-03:00,202003-006,2,https://www.meetup.com/es-ES/RSKBuenosAires/events/269565762/,"¿Qué es RSK?
+Herramientas para ganar un Hackathon",Workshop,online,Online only,Spanish,2020-03-27T19:00:00+08:00
+2020-03-30T17:00:00-07:00,202003-007,1,https://www.meetup.com/es-ES/rsk-community/events/269677327/,"What is RSK?
+What is Metamask?
+Set your first wallet!",Talk,online,Online only,English,2020-03-27T15:00:00+08:00
+2020-03-30T15:00:00-06:00,202003-008,1,https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016/,"¿Qué es RSK?
+¿Qué es Metamask?
+Programá tu primera cartera",Talk,online,Online only,Spanish,2020-03-27T15:00:00+08:00
+2020-04-01T17:00:00-07:00,202004-001,1,https://www.meetup.com/es-ES/rsk-community/events/269677379/,Run your own first node by using Geth attaching to a RSK local node,Workshop,online,Online only,English,2020-03-27T15:00:00+08:00
+2020-04-01T19:30:00-03:00,202004-002,1,https://www.meetup.com/es-ES/rsk-community/events/269676954/,Instale seu primeiro nó usando Geth com seu nó local do RSK,Workshop,online,Online only,Portuguese,2020-03-27T15:00:00+08:00
+2020-04-02T13:00:00-06:00,202004-003,1,https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265/,Instala tu primer nodo usando Geth con tu nodo local de RSK ,Workshop,online,Online only,Spanish,2020-03-27T15:00:00+08:00
+2020-04-03T14:00:00-03:00,202004-004,1,https://www.meetup.com/es-ES/rsk-community/events/269685307/,RIF Services overview,Talk,online,Online only,English,2020-03-27T15:00:00+08:00
