@@ -140,7 +140,7 @@
       "id": "202004-002",
       "version": "1",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269676954/",
-      "title": "Instale seu primeiro nó usando Geth com seu nó local do RSK",
+      "title": "Utilizando Geth attach para interagir com um nó local da rede RSK",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -151,9 +151,9 @@
       "image": "img/events/event4.jpg"
     },
     {
-      "timestamp": "2020-04-02T19:00:00.000Z",
+      "timestamp": "2020-04-02T21:00:00.000Z",
       "id": "202004-003",
-      "version": "1",
+      "version": "2",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265/",
       "title": "Instala tu primer nodo usando Geth con tu nodo local de RSK",
       "category": "Workshop",

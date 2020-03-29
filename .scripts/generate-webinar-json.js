@@ -12,6 +12,8 @@ const csvConverter = csvToJson({
   colParser: {
     timestamp: timestampColumnParser,
     lastModified: timestampColumnParser,
+    title: stringColumnParser,
+    location: stringColumnParser,
   },
 });
 
@@ -47,4 +49,8 @@ function timestampColumnParser(item) {
   const date = new Date(item);
   const iso8601 = date.toISOString();
   return iso8601;
+}
+
+function stringColumnParser(item) {
+  return item.replace(/\r?\n/g, '\n').trim();
 }

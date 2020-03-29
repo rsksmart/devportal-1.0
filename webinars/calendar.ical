@@ -131,7 +131,7 @@ UID:202004-002@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200401T223000Z
 DTSTART:20200401T223000Z
-SUMMARY:Instale seu primeiro nó usando Geth com seu nó local do RSK 
+SUMMARY:Utilizando Geth attach para interagir com um nó local da rede RSK 
 LOCATION:Online only
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269676954/
@@ -141,8 +141,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202004-003@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200402T190000Z
-DTSTART:20200402T190000Z
+DTSTAMP:20200402T210000Z
+DTSTART:20200402T210000Z
 SUMMARY:Instala tu primer nodo usando Geth con tu nodo local de RSK 
 LOCATION:Online only
 CATEGORIES:Workshop
