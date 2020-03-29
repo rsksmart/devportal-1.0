@@ -153,14 +153,14 @@
     {
       "timestamp": "2020-04-02T21:00:00.000Z",
       "id": "202004-003",
-      "version": "1",
+      "version": "2",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265/",
       "title": "Instala tu primer nodo usando Geth con tu nodo local de RSK",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
-      "lastModified": "2020-03-27T11:00:00.000Z",
+      "lastModified": "2020-03-27T07:00:00.000Z",
       "type": "event/1",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg"
