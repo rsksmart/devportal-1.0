@@ -75,9 +75,9 @@ function processEventV1(event) {
     ],
     // NOTE that X-attributes are not yet able to be specified in this manner
     // REF: https://github.com/sebbo2002/ical-generator/pull/185
-    x: [
-      ['LANGUAGE', language],
-    ],
+    x: {
+      'X-LANGUAGE': language,
+    },
     status: 'confirmed',
   };
 }
