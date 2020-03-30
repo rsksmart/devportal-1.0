@@ -6,6 +6,8 @@ const icalGenerator = require('ical-generator');
 
 const webinarsJson = require('../_data/webinars.json');
 
+const organiserEmail = 'devnet@iovlabs.org';
+
 const events = webinarsJson.events.map(processEvent);
 
 const icalData = {
@@ -41,9 +43,39 @@ function processEvent(event) {
   switch (event.type) {
     case 'event/1':
       return processEventV1(event);
+    case 'event/2':
+      return processEventV2(event);
     default:
       throw new Error(`Unsupported type: ${event.type}`);
   }
+}
+
+function processEventV2(event) {
+  const processedEventV1 = processEventV1(event);
+
+  const {
+    title,
+    presenter,
+    presenterDescription,
+    presenterContact,
+    videoStreamUrl,
+  } = event;
+
+  const firstPresenter = getFirstLineOf(presenter);
+  const firstPresenterDescription = getFirstLineOf(presenterDescription);
+  const firstPresenterContact = getFirstLineOf(presenterContact);
+  const organizer = {
+    name: `${firstPresenter}, ${firstPresenterDescription}, ${firstPresenterContact}`,
+    email: organiserEmail,
+  };
+
+  const description = `\n${title}\nJoin: ${videoStreamUrl}\n`;
+
+  return {
+    ...processedEventV1,
+    organizer,
+    description,
+  };
 }
 
 function processEventV1(event) {
@@ -60,6 +92,7 @@ function processEventV1(event) {
   } = event;
   const timestampDate = new Date(timestamp);
   const lastModifiedDate = new Date(lastModified);
+
   return {
     uid: id,
     start: timestampDate,
@@ -80,4 +113,8 @@ function processEventV1(event) {
     },
     status: 'confirmed',
   };
+}
+
+function getFirstLineOf(multilineStr) {
+  return multilineStr.split(/\s*\n+\s*/)[0];
 }
