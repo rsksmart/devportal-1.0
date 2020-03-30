@@ -14,13 +14,18 @@ const csvConverter = csvToJson({
     lastModified: timestampColumnParser,
     title: stringColumnParser,
     location: stringColumnParser,
+    presenter: stringColumnParser,
+    presenterDescription: stringColumnParser,
+    presenterContact: stringColumnParser,
+    url: stringColumnParser,
+    videoStreamUrl: stringColumnParser,
   },
 });
 
 csvConverter
   .fromFile('./_data/rsk-published-events.csv')
   .subscribe((item, itemIndex) => {
-    item.type = 'event/1';
+    item.type = 'event/2';
     item.tags = 'online online-workshop general non-developers';
     if (!item.image) {
       // rotate between the 6 available generic images
