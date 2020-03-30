@@ -10,7 +10,7 @@ tags: rns, javascript
   - [`reverse`](#reverse)
   - [`setAddr`](#setaddr)
   - [`setResolver`](#setresolver)
-  - [`available`](#available)
+  - [`available`](#available) (for domains)
   - [`subdomains.available`](#available-for-subdomains)
   - [`subdomains.setOwner`](#setowner)
   - [`subdomains.create`](#create)
