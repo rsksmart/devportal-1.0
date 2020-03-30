@@ -343,3 +343,9 @@ I showed to you how we can use some Ethereum developer tools, and it is great to
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
 I hope this tutorial has been helpful and I'd appreciate your feedback. Share it if you like it :)
+
+## Translations
+
+- Português:
+  - [Crie seu primeiro smart contract utilizando Remix e Metamask com a RSK testnet](https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/)
+  - [Webinar recording: Como criar seu primeiro smart contract na RSK network usando Remix e Metamask](https://www.youtube.com/watch?v=TTTUcgGO-Ko)
