@@ -55,6 +55,8 @@ function processEventV2(event) {
 
   const {
     title,
+    url,
+    location,
     presenter,
     presenterDescription,
     presenterContact,
@@ -69,12 +71,38 @@ function processEventV2(event) {
     email: organiserEmail,
   };
 
-  const description = `\n${title}\nJoin: ${videoStreamUrl}\n`;
+  const descriptionItems = [
+    ['', title],
+    ['', location],
+    ['RSVP', `${url}`],
+    ['Video stream', `${videoStreamUrl}`],
+  ];
+
+  const description =
+    descriptionItems.map((item) => {
+      const heading = (!item[0]) ?
+        '' :
+        `${item[0]}: `;
+      return heading + item[1];
+    }).join('\n\n') + '\n';
+
+  let htmlDescriptionBody = descriptionItems.map((item) => {
+    const heading = (!item[0]) ?
+      '' :
+      `<b>${item[0]} &nbsp;</b>`;
+    const value = anchorLinkIfUrl(item[1]);
+    return `<div>${heading}<span>${value}</span></div>`;
+  }).join('\n');
+  const htmlDescription =
+    `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY>${
+      htmlDescriptionBody
+    }\n</BODY>\n</HTML>`;
 
   return {
     ...processedEventV1,
     organizer,
     description,
+    htmlDescription,
   };
 }
 
@@ -84,6 +112,7 @@ function processEventV1(event) {
     timestamp,
     url,
     location,
+    locationCategory,
     category,
     language,
     title,
@@ -93,6 +122,10 @@ function processEventV1(event) {
   const timestampDate = new Date(timestamp);
   const lastModifiedDate = new Date(lastModified);
 
+  const renderedLocation = (locationCategory === 'online') ?
+    undefined :
+    location;
+
   return {
     uid: id,
     start: timestampDate,
@@ -100,7 +133,7 @@ function processEventV1(event) {
     lastModified: lastModifiedDate,
     url,
     summary: ([title, subtitle].join(' ')),
-    location,
+    location: renderedLocation,
     categories: [
       {
         name: category,
@@ -117,4 +150,12 @@ function processEventV1(event) {
 
 function getFirstLineOf(multilineStr) {
   return multilineStr.split(/\s*\n+\s*/)[0];
+}
+
+function anchorLinkIfUrl(str) {
+  const result = str.match(/(^https?\:\/\/)(.*)/);
+  if (!result) {
+    return str;
+  }
+  return `<a href="${str}">${result[2]}</a>`;
 }
