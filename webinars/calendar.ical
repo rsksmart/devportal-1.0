@@ -17,11 +17,19 @@ SEQUENCE:0
 DTSTAMP:20200323T210000Z
 DTSTART:20200323T210000Z
 SUMMARY:What is Blockchain?\nWhat is Bitcoin? 
-LOCATION:Online only
-DESCRIPTION:\nWhat is Blockchain?\nWhat is Bitcoin?\nJoin: https://zoom.us
- /j/915605031\n
+DESCRIPTION:What is Blockchain?\nWhat is Bitcoin?\n\nOnline only\n\nRSVP: 
+ https://www.meetup.com/es-ES/rsk-community/events/269504497/\n\nVideo stre
+ am: https://zoom.us/j/915605031\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>What is
+  Blockchain?\nWhat is Bitcoin?</span></div>\n<div><span>Online only</span>
+ </div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-
+ ES/rsk-community/events/269504497/\">www.meetup.com/es-ES/rsk-community/ev
+ ents/269504497/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a
+  href=\"https://zoom.us/j/915605031\">zoom.us/j/915605031</a></span></div>
+ \n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
- devnet@iovlabs.org
+ developers@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269504497/
 STATUS:CONFIRMED
@@ -35,11 +43,20 @@ DTSTAMP:20200326T010000Z
 DTSTART:20200326T010000Z
 SUMMARY:How to create your first Smart Contract using Remix and Metamask a
  t RSK Network 
-LOCATION:Online only
-DESCRIPTION:\nHow to create your first Smart Contract using Remix and Meta
- mask at RSK Network\nJoin: https://zoom.us/j/850527491\n
-ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:devnet@
- iovlabs.org
+DESCRIPTION:How to create your first Smart Contract using Remix and Metama
+ sk at RSK Network\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk
+ -community/events/269565719/\n\nVideo stream: https://zoom.us/j/850527491\
+ n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How to 
+ create your first Smart Contract using Remix and Metamask at RSK Network</
+ span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b>
+ <span><a href=\"https://www.meetup.com/es-ES/rsk-community/events/26956571
+ 9/\">www.meetup.com/es-ES/rsk-community/events/269565719/</a></span></div>
+ \n<div><b>Video stream &nbsp\;</b><span><a href=\"https://zoom.us/j/850527
+ 491\">zoom.us/j/850527491</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269565719/
 STATUS:CONFIRMED
@@ -53,11 +70,19 @@ DTSTAMP:20200325T210000Z
 DTSTART:20200325T210000Z
 SUMMARY:Crea tu primer smart contract en RSK usando Remix and Nifty Wallet
   
-LOCATION:Online only
-DESCRIPTION:\nCrea tu primer smart contract en RSK usando Remix and Nifty 
- Wallet\nJoin: https://zoom.us/j/182679010\n
+DESCRIPTION:Crea tu primer smart contract en RSK usando Remix and Nifty Wa
+ llet\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/e
+ vents/269566096\n\nVideo stream: https://zoom.us/j/182679010\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Crea tu
+  primer smart contract en RSK usando Remix and Nifty Wallet</span></div>\n
+ <div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href
+ =\"https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096\">www.meet
+ up.com/es-ES/RSKBuenosAires/events/269566096</a></span></div>\n<div><b>Vid
+ eo stream &nbsp\;</b><span><a href=\"https://zoom.us/j/182679010\">zoom.us
+ /j/182679010</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
- devnet@iovlabs.org
+ developers@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096
 STATUS:CONFIRMED
@@ -71,11 +96,19 @@ DTSTAMP:20200325T223000Z
 DTSTART:20200325T223000Z
 SUMMARY:Como criar smart contracts na RSK network utilizando Remix e Metam
  ask 
-LOCATION:Online only
-DESCRIPTION:\nComo criar smart contracts na RSK network utilizando Remix e
-  Metamask\nJoin: https://zoom.us/j/211449645\n
+DESCRIPTION:Como criar smart contracts na RSK network utilizando Remix e M
+ etamask\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community
+ /events/269566069/\n\nVideo stream: https://zoom.us/j/211449645\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Como cr
+ iar smart contracts na RSK network utilizando Remix e Metamask</span></div
+ >\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a h
+ ref=\"https://www.meetup.com/es-ES/rsk-community/events/269566069/\">www.m
+ eetup.com/es-ES/rsk-community/events/269566069/</a></span></div>\n<div><b>
+ Video stream &nbsp\;</b><span><a href=\"https://zoom.us/j/211449645\">zoom
+ .us/j/211449645</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
- to:devnet@iovlabs.org
+ to:developers@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269566069/
 STATUS:CONFIRMED
@@ -88,11 +121,19 @@ SEQUENCE:0
 DTSTAMP:20200326T123000Z
 DTSTART:20200326T123000Z
 SUMMARY:Gasnet: la red Blockchain para el Ecosistema de Gas 
-LOCATION:Online only
-DESCRIPTION:\nGasnet: la red Blockchain para el Ecosistema de Gas\nJoin: h
- ttps://zoom.us/j/666038949\n
+DESCRIPTION:Gasnet: la red Blockchain para el Ecosistema de Gas\n\nOnline 
+ only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497
+ /\n\nVideo stream: https://zoom.us/j/666038949\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Gasnet:
+  la red Blockchain para el Ecosistema de Gas</span></div>\n<div><span>Onli
+ ne only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.
+ meetup.com/es-ES/RSKBuenosAires/events/269468497/\">www.meetup.com/es-ES/R
+ SKBuenosAires/events/269468497/</a></span></div>\n<div><b>Video stream &nb
+ sp\;</b><span><a href=\"https://zoom.us/j/666038949\">zoom.us/j/666038949<
+ /a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Guillermo Villanueva\, CEO - Grupo Sabra\, @guillevi":mailto
- :devnet@iovlabs.org
+ :developers@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497
  /
@@ -106,11 +147,19 @@ SEQUENCE:0
 DTSTAMP:20200327T190000Z
 DTSTART:20200327T190000Z
 SUMMARY:¿Qué es RSK?\nHerramientas para ganar un Hackathon 
-LOCATION:Online only
-DESCRIPTION:\n¿Qué es RSK?\nHerramientas para ganar un Hackathon\nJoin: ht
- tps://zoom.us/j/388106531\n
+DESCRIPTION:¿Qué es RSK?\nHerramientas para ganar un Hackathon\n\nOnline o
+ nly\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/269565762/
+ \n\nVideo stream: https://zoom.us/j/388106531\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>¿Qué es
+  RSK?\nHerramientas para ganar un Hackathon</span></div>\n<div><span>Onlin
+ e only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.m
+ eetup.com/es-ES/RSKBuenosAires/events/269565762/\">www.meetup.com/es-ES/RS
+ KBuenosAires/events/269565762/</a></span></div>\n<div><b>Video stream &nbs
+ p\;</b><span><a href=\"https://zoom.us/j/388106531\">zoom.us/j/388106531</
+ a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
- devnet@iovlabs.org
+ developers@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269565762
  /
@@ -124,12 +173,21 @@ SEQUENCE:0
 DTSTAMP:20200331T000000Z
 DTSTART:20200331T000000Z
 SUMMARY:What is RSK?\nWhat is Nifty Wallet?\nSet your first wallet! 
-LOCATION:Online only
-DESCRIPTION:\nWhat is RSK?\nWhat is Nifty Wallet?\nSet your first wallet!\
- nJoin: https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw
- \n
-ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:devnet@
- iovlabs.org
+DESCRIPTION:What is RSK?\nWhat is Nifty Wallet?\nSet your first wallet!\n\
+ nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/26
+ 9677327/\n\nVideo stream: https://zoom.us/meeting/register/tJYsf--oqj4vdrQ
+ oPSjX2wpMtM_z5dhvyw\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>What is
+  RSK?\nWhat is Nifty Wallet?\nSet your first wallet!</span></div>\n<div><s
+ pan>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"http
+ s://www.meetup.com/es-ES/rsk-community/events/269677327/\">www.meetup.com/
+ es-ES/rsk-community/events/269677327/</a></span></div>\n<div><b>Video stre
+ am &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/tJYsf--oqj4
+ vdrQoPSjX2wpMtM_z5dhvyw\">zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wp
+ MtM_z5dhvyw</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677327/
 STATUS:CONFIRMED
@@ -143,12 +201,21 @@ DTSTAMP:20200330T210000Z
 DTSTART:20200330T210000Z
 SUMMARY:¿Qué es RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera carte
  ra 
-LOCATION:Online only
-DESCRIPTION:\n¿Qué es RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera
-  cartera\nJoin: https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-
- IjMyuCbOg\n
+DESCRIPTION:¿Qué es RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera c
+ artera\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires
+ /events/269676016/\n\nVideo stream: https://zoom.us/meeting/register/vJcvd
+ OqsrzgqhE2wf9mjTL2f-IjMyuCbOg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>¿Qué es
+  RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera cartera</span></div>
+ \n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a hr
+ ef=\"https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016/\">www.m
+ eetup.com/es-ES/RSKBuenosAires/events/269676016/</a></span></div>\n<div><b
+ >Video stream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/
+ vJcvdOqsrzgqhE2wf9mjTL2f-IjMyuCbOg\">zoom.us/meeting/register/vJcvdOqsrzgq
+ hE2wf9mjTL2f-IjMyuCbOg</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
- devnet@iovlabs.org
+ developers@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016
  /
@@ -163,12 +230,21 @@ DTSTAMP:20200402T000000Z
 DTSTART:20200402T000000Z
 SUMMARY:Run your own first node by using Geth attaching to a RSK local nod
  e 
-LOCATION:Online only
-DESCRIPTION:\nRun your own first node by using Geth attaching to a RSK loc
- al node\nJoin: https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2S
- RY1EpNBg\n
-ORGANIZER;CN="Brendan\, Developer Advocate\, @bguiz":mailto:devnet@iovlabs
- .org
+DESCRIPTION:Run your own first node by using Geth attaching to a RSK local
+  node\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/e
+ vents/269677379/\n\nVideo stream: https://zoom.us/meeting/register/v5IlcuC
+ uqjgp2Hk8MSfma_UM2SRY1EpNBg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Run you
+ r own first node by using Geth attaching to a RSK local node</span></div>\
+ n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a hre
+ f=\"https://www.meetup.com/es-ES/rsk-community/events/269677379/\">www.mee
+ tup.com/es-ES/rsk-community/events/269677379/</a></span></div>\n<div><b>Vi
+ deo stream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/v5I
+ lcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg\">zoom.us/meeting/register/v5IlcuCuqjgp2Hk
+ 8MSfma_UM2SRY1EpNBg</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan\, Developer Advocate\, @bguiz":mailto:developers@iov
+ labs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677379/
 STATUS:CONFIRMED
@@ -181,12 +257,21 @@ SEQUENCE:0
 DTSTAMP:20200401T223000Z
 DTSTART:20200401T223000Z
 SUMMARY:Utilizando Geth attach para interagir com um nó local da rede RSK 
-LOCATION:Online only
-DESCRIPTION:\nUtilizando Geth attach para interagir com um nó local da red
- e RSK\nJoin: https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1
- fKj-HA\n
+DESCRIPTION:Utilizando Geth attach para interagir com um nó local da rede 
+ RSK\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/eve
+ nts/269676954/\n\nVideo stream: https://zoom.us/meeting/register/u5Avd-Chq
+ jMvMaSTcuJyoo-Tljt1fKj-HA\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Utiliza
+ ndo Geth attach para interagir com um nó local da rede RSK</span></div>\n<
+ div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=
+ \"https://www.meetup.com/es-ES/rsk-community/events/269676954/\">www.meetu
+ p.com/es-ES/rsk-community/events/269676954/</a></span></div>\n<div><b>Vide
+ o stream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/u5Avd
+ -ChqjMvMaSTcuJyoo-Tljt1fKj-HA\">zoom.us/meeting/register/u5Avd-ChqjMvMaSTc
+ uJyoo-Tljt1fKj-HA</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
- to:devnet@iovlabs.org
+ to:developers@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269676954/
 STATUS:CONFIRMED
@@ -199,12 +284,21 @@ SEQUENCE:0
 DTSTAMP:20200402T210000Z
 DTSTART:20200402T210000Z
 SUMMARY:Instala tu primer nodo usando Geth con tu nodo local de RSK 
-LOCATION:Online only
-DESCRIPTION:\nInstala tu primer nodo usando Geth con tu nodo local de RSK\
- nJoin: https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg
- \n
+DESCRIPTION:Instala tu primer nodo usando Geth con tu nodo local de RSK\n\
+ nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/2
+ 69676265/\n\nVideo stream: https://zoom.us/meeting/register/tJIpce6pqTgobH
+ -tXjWMMYplRN_qVoNtSg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Instala
+  tu primer nodo usando Geth con tu nodo local de RSK</span></div>\n<div><s
+ pan>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"http
+ s://www.meetup.com/es-ES/RSKBuenosAires/events/269676265/\">www.meetup.com
+ /es-ES/RSKBuenosAires/events/269676265/</a></span></div>\n<div><b>Video st
+ ream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/tJIpce6pq
+ TgobH-tXjWMMYplRN_qVoNtSg\">zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMM
+ YplRN_qVoNtSg</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
- devnet@iovlabs.org
+ developers@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265
  /
@@ -218,11 +312,20 @@ SEQUENCE:0
 DTSTAMP:20200403T170000Z
 DTSTART:20200403T170000Z
 SUMMARY:RIF Services overview 
-LOCATION:Online only
-DESCRIPTION:\nRIF Services overview\nJoin: https://zoom.us/meeting/registe
- r/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ\n
+DESCRIPTION:RIF Services overview\n\nOnline only\n\nRSVP: https://www.meet
+ up.com/es-ES/rsk-community/events/269685307/\n\nVideo stream: https://zoom
+ .us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF Ser
+ vices overview</span></div>\n<div><span>Online only</span></div>\n<div><b>
+ RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-community
+ /events/269685307/\">www.meetup.com/es-ES/rsk-community/events/269685307/<
+ /a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://
+ zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ\">zoom.us/meet
+ ing/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ</a></span></div>\n</BODY>\
+ n</HTML>
 ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
- lto:devnet@iovlabs.org
+ lto:developers@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269685307/
 STATUS:CONFIRMED
