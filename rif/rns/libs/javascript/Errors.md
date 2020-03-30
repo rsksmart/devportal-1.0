@@ -130,3 +130,16 @@ RNS Library extends the [`Error` class](https://developer.mozilla.org/es/docs/We
 **Message**: The given address checksum is invalid
 
 **Description**: The given address checksum is invalid for the current networkId. Check out [EIP-1191](https://eips.ethereum.org/EIPS/eip-1191) for information about how checksum validation is performed.
+
+## `KB020`
+
+**Message**: The given TLD does not exists
+
+**Description**: The domain provided is under a top level domain that not exists in RNS.
+
+## `KB021`
+
+**Message**: The owner of the TLD does not implement the available method
+
+**Description**: The top level domain owner should be a contract that implements [available](/rif/rns/architecture/rsk-registrar/rskowner#available) method.
+
