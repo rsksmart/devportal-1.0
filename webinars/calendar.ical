@@ -14,71 +14,91 @@ X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:202003-001@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200323T060000Z
-DTSTART:20200323T060000Z
+DTSTAMP:20200323T210000Z
+DTSTART:20200323T210000Z
 SUMMARY:What is Blockchain?\nWhat is Bitcoin? 
 LOCATION:Online only
+DESCRIPTION:\nWhat is Blockchain?\nWhat is Bitcoin?\nJoin: https://zoom.us
+ /j/915605031\n
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
+ devnet@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269504497/
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200323T060000Z
+LAST-MODIFIED:20200330T030000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202003-002@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200323T060000Z
-DTSTART:20200323T060000Z
+DTSTAMP:20200326T010000Z
+DTSTART:20200326T010000Z
 SUMMARY:How to create your first Smart Contract using Remix and Metamask a
  t RSK Network 
 LOCATION:Online only
+DESCRIPTION:\nHow to create your first Smart Contract using Remix and Meta
+ mask at RSK Network\nJoin: https://zoom.us/j/850527491\n
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:devnet@
+ iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269565719/
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200323T060000Z
+LAST-MODIFIED:20200330T030000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202003-003@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200323T060000Z
-DTSTART:20200323T060000Z
+DTSTAMP:20200325T210000Z
+DTSTART:20200325T210000Z
 SUMMARY:Crea tu primer smart contract en RSK usando Remix and Nifty Wallet
   
 LOCATION:Online only
+DESCRIPTION:\nCrea tu primer smart contract en RSK usando Remix and Nifty 
+ Wallet\nJoin: https://zoom.us/j/182679010\n
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
+ devnet@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200323T060000Z
+LAST-MODIFIED:20200330T030000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202003-004@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200323T060000Z
-DTSTART:20200323T060000Z
+DTSTAMP:20200325T223000Z
+DTSTART:20200325T223000Z
 SUMMARY:Como criar smart contracts na RSK network utilizando Remix e Metam
  ask 
 LOCATION:Online only
+DESCRIPTION:\nComo criar smart contracts na RSK network utilizando Remix e
+  Metamask\nJoin: https://zoom.us/j/211449645\n
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:devnet@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269566069/
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200323T060000Z
+LAST-MODIFIED:20200330T030000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202003-005@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200323T060000Z
-DTSTART:20200323T060000Z
+DTSTAMP:20200326T123000Z
+DTSTART:20200326T123000Z
 SUMMARY:Gasnet: la red Blockchain para el Ecosistema de Gas 
 LOCATION:Online only
+DESCRIPTION:\nGasnet: la red Blockchain para el Ecosistema de Gas\nJoin: h
+ ttps://zoom.us/j/666038949\n
+ORGANIZER;CN="Guillermo Villanueva\, CEO - Grupo Sabra\, @guillevi":mailto
+ :devnet@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497
  /
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200323T060000Z
+LAST-MODIFIED:20200330T030000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202003-006@developers.rsk.co/
@@ -87,6 +107,10 @@ DTSTAMP:20200327T190000Z
 DTSTART:20200327T190000Z
 SUMMARY:¿Qué es RSK?\nHerramientas para ganar un Hackathon 
 LOCATION:Online only
+DESCRIPTION:\n¿Qué es RSK?\nHerramientas para ganar un Hackathon\nJoin: ht
+ tps://zoom.us/j/388106531\n
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
+ devnet@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269565762
  /
@@ -99,8 +123,13 @@ UID:202003-007@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200331T000000Z
 DTSTART:20200331T000000Z
-SUMMARY:What is RSK?\nWhat is Metamask?\nSet your first wallet! 
+SUMMARY:What is RSK?\nWhat is Nifty Wallet?\nSet your first wallet! 
 LOCATION:Online only
+DESCRIPTION:\nWhat is RSK?\nWhat is Nifty Wallet?\nSet your first wallet!\
+ nJoin: https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw
+ \n
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:devnet@
+ iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677327/
 STATUS:CONFIRMED
@@ -112,8 +141,14 @@ UID:202003-008@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200330T210000Z
 DTSTART:20200330T210000Z
-SUMMARY:¿Qué es RSK?\n¿Qué es Metamask?\nProgramá tu primera cartera 
+SUMMARY:¿Qué es RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera carte
+ ra 
 LOCATION:Online only
+DESCRIPTION:\n¿Qué es RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera
+  cartera\nJoin: https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-
+ IjMyuCbOg\n
+ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
+ devnet@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016
  /
@@ -129,6 +164,11 @@ DTSTART:20200402T000000Z
 SUMMARY:Run your own first node by using Geth attaching to a RSK local nod
  e 
 LOCATION:Online only
+DESCRIPTION:\nRun your own first node by using Geth attaching to a RSK loc
+ al node\nJoin: https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2S
+ RY1EpNBg\n
+ORGANIZER;CN="Brendan\, Developer Advocate\, @bguiz":mailto:devnet@iovlabs
+ .org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677379/
 STATUS:CONFIRMED
@@ -142,6 +182,11 @@ DTSTAMP:20200401T223000Z
 DTSTART:20200401T223000Z
 SUMMARY:Utilizando Geth attach para interagir com um nó local da rede RSK 
 LOCATION:Online only
+DESCRIPTION:\nUtilizando Geth attach para interagir com um nó local da red
+ e RSK\nJoin: https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1
+ fKj-HA\n
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:devnet@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269676954/
 STATUS:CONFIRMED
@@ -155,6 +200,11 @@ DTSTAMP:20200402T210000Z
 DTSTART:20200402T210000Z
 SUMMARY:Instala tu primer nodo usando Geth con tu nodo local de RSK 
 LOCATION:Online only
+DESCRIPTION:\nInstala tu primer nodo usando Geth con tu nodo local de RSK\
+ nJoin: https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg
+ \n
+ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
+ devnet@iovlabs.org
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265
  /
@@ -169,10 +219,14 @@ DTSTAMP:20200403T170000Z
 DTSTART:20200403T170000Z
 SUMMARY:RIF Services overview 
 LOCATION:Online only
+DESCRIPTION:\nRIF Services overview\nJoin: https://zoom.us/meeting/registe
+ r/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ\n
+ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
+ lto:devnet@iovlabs.org
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269685307/
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200327T070000Z
+LAST-MODIFIED:20200329T140000Z
 END:VEVENT
 END:VCALENDAR
