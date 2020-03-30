@@ -6,7 +6,7 @@ const icalGenerator = require('ical-generator');
 
 const webinarsJson = require('../_data/webinars.json');
 
-const organiserEmail = 'devnet@iovlabs.org';
+const organiserEmail = 'developers@iovlabs.org';
 
 const events = webinarsJson.events.map(processEvent);
 
