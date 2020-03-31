@@ -133,13 +133,12 @@ RNS Library extends the [`Error` class](https://developer.mozilla.org/es/docs/We
 
 ## `KB020`
 
-**Message**: The given TLD does not exists
+**Message**: The given TLD does not exist
 
-**Description**: The domain provided is under a top level domain that not exists in RNS.
+**Description**: The domain provided is under a top level domain that does not exist in RNS.
 
 ## `KB021`
 
 **Message**: The owner of the TLD does not implement the available method
 
-**Description**: The top level domain owner should be a contract that implements [available](/rif/rns/architecture/rsk-registrar/rskowner#available) method.
-
+**Description**: The top level domain owner should be a contract that implements the [available](/rif/rns/architecture/rsk-registrar/rskowner#available) method.

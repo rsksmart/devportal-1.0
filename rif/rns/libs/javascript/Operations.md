@@ -150,7 +150,7 @@ async setResolver(domain: string, resolver: string): Promise<void>
 
 ### `available`
 
-Check if given domain is available or if there are any availability for the given label.
+Check if given domain is available or if there is any availability for the given label.
 
 **Signature**
 
