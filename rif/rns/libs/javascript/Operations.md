@@ -10,7 +10,8 @@ tags: rns, javascript
   - [`reverse`](#reverse)
   - [`setAddr`](#setaddr)
   - [`setResolver`](#setresolver)
-  - [`subdomains.available`](#available)
+  - [`available`](#available) (for domains)
+  - [`subdomains.available`](#available-for-subdomains)
   - [`subdomains.setOwner`](#setowner)
   - [`subdomains.create`](#create)
   - [`utils`](/rif/rns/libs/javascript/Utils)
@@ -147,17 +148,45 @@ async setResolver(domain: string, resolver: string): Promise<void>
 - [`KB017`](/rif/rns/libs/javascript/Errors#kb017)
 - [`KB019`](/rif/rns/libs/javascript/Errors#kb019)
 
-**Examples**
+### `available`
 
-Set a custom resolver:
+Check if given domain is available or if there is any availability for the given label.
+
+**Signature**
 
 ```javascript
-rns.setResolver('testing.rsk', '0x0000000000000000000000000000000123456789').then(() => console.log('Done!'))
+async available(domain: string): Promise<boolean | string[]>
+```
+
+**Parameters**
+
+- `domain`: Domain or label to check availability.
+
+**Returns**
+
+- `true` if the domain is available, `false` if not, or an array of available domains under possible TLDs if the parameter is a label
+
+**Throws**
+
+- [`KB009`](/rif/rns/libs/javascript/Errors#kb009)
+- [`KB010`](/rif/rns/libs/javascript/Errors#kb010)
+- [`KB011`](/rif/rns/libs/javascript/Errors#kb011)
+- [`KB020`](/rif/rns/libs/javascript/Errors#kb020)
+- [`KB021`](/rif/rns/libs/javascript/Errors#kb021)
+
+**Examples**
+
+```javascript
+rns.available('testing.rsk').then(console.log) // will print true or false
+```
+
+```javascript
+rns.available('testing').then(console.log) // will print [ 'testing.rsk' ] if is available or [ ] if not.
 ```
 
 ### subdomains
 
-#### `available`
+#### `available` (for subdomains)
 
 Checks if the given label subdomain is available under the given domain tree.
 
