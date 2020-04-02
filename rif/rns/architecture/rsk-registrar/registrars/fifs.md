@@ -14,7 +14,7 @@ Has registration role in `RSK Owner`.
 - Defines a commit-reveal process to avoid front-running.
 - Accepts payments via
   - ERC-20 `approve()` + `register()`.<sup>1</sup>
-  - ERC-721 `transferAndCall()`.<sup>2</sup>
+  - ERC-677 `transferAndCall()`.<sup>2</sup>
 - Calculates price using [`NamePrice` contract](../../other/nameprice).
 - It has an owner that can<sup>3</sup>
   - Set minimum commitment age.

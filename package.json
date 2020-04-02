@@ -1,0 +1,32 @@
+{
+  "name": "rsk-devportal",
+  "version": "0.0.0",
+  "private": true,
+  "description": "RSK Developer Portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-webinar": "npm run generate-webinar-json && npm run generate-webinar-ical",
+    "generate-webinar-ical": "node .scripts/generate-webinar-ical.js",
+    "generate-webinar-json": "node .scripts/generate-webinar-json.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootstock/rootstock.github.io.git"
+  },
+  "keywords": [
+    "rsk",
+    "developer",
+    "documentation"
+  ],
+  "author": "bguiz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rootstock/rootstock.github.io/issues"
+  },
+  "homepage": "https://github.com/rootstock/rootstock.github.io#readme",
+  "dependencies": {
+    "csvtojson": "2.0.10",
+    "ical-generator": "1.9.4"
+  }
+}

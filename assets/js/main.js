@@ -1,41 +1,56 @@
-// store dark /light theme 
+// store dark /light theme
 
-$(document).ready(function(){
-    // Check local storage and set theme
-    if(localStorage.theme) {
-        $('html').addClass( localStorage.theme );
-    } 
-    else{
-        $('html').addClass('light'); // set default theme. No need to set via php now
-    }
+$(document).ready(function() {
+  // Check local storage and set theme
+  if(localStorage.theme) {
+    $('html').addClass( localStorage.theme );
+  } else {
+    $('html').addClass('light'); // set default theme. No need to set via php now
+  }
 
   if ($('html').hasClass('dark')) {
-  $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
-  $('#theme-toggler').text('Light');
-} 
-else  { 
+    $('#logo').attr('src','/assets/img/rsk_logo_reverse.svg');
+    $('#theme-toggler').text('Light');
+  } else {
    $('#logo').attr('src','/assets/img/rsk_logo.svg');
    $('#theme-toggler').text('Dark');
- }
+  }
 
 
-    //Switch theme and store in local storage ...
-    $("#theme-toggler").click(function(){
-       if ($('html').hasClass( 'light')){
-        $('html').removeClass('light').addClass('dark');
-        $('#theme-toggler').text('Light');
-        $('#logo').attr("src", "/assets/img/rsk_logo_reverse.svg");
-        localStorage.theme = 'dark';
+  //Switch theme and store in local storage ...
+  $("#theme-toggler").click(function() {
+    if ($('html').hasClass( 'light')){
+      $('html').removeClass('light').addClass('dark');
+      $('#theme-toggler').text('Light');
+      $('#logo').attr("src", "/assets/img/rsk_logo_reverse.svg");
+      localStorage.theme = 'dark';
+    } else {
+      $('html').removeClass('dark').addClass('light');
+      $('#theme-toggler').text('Dark');
+      $('#logo').attr("src", "/assets/img/rsk_logo.svg");
+      localStorage.theme = 'light';
     }
-    else  {
-        $('html').removeClass('dark').addClass('light');
-        $('#theme-toggler').text('Dark');
-        $('#logo').attr("src", "/assets/img/rsk_logo.svg");
-        localStorage.theme = 'light';
-    }
-});
+  });
+
+  $('#frm-rns-search').on('submit', (e) => {
+    e.preventDefault();
+    window.open('https://manager.rns.rifos.org/search?domain=' + $('#txt-rns-name').val(), '_blank');
+  });
 });
 
+// smooth scroll to anchor links with offset
+$(document).ready(function() {
+var hash= window.location.hash
+if ( hash == '' || hash == '#' || hash == undefined ) return false;
+      var target = $(hash);
+      headerHeight = 80;
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').stop().animate({
+          scrollTop: target.offset().top - 80 //offsets for fixed header
+        }, 'linear');
+      }
+});
 
 
 $(document).ready(function () {
@@ -241,4 +256,22 @@ function setUpMainSearch () {
       // do nothing
     }
   });
+}
+
+function renderEquations() {
+  console.log('renderEquations');
+  var elemNodeList = document.querySelectorAll('a[title^="tex-render "]');
+  var elems = Array.prototype.slice.call(elemNodeList);
+  elems.forEach(renderEquation);
+}
+
+function renderEquation(el) {
+  var equation = el.getAttribute('title').slice('tex-render '.length);
+  var equationEl = document.createElement('span');
+  katex.render(equation, equationEl, {
+    throwOnError: false,
+  });
+  equationEl.setAttribute('title', equation);
+  equationEl.classList.add('tex-rendered');
+  el.replaceWith(equationEl);
 }

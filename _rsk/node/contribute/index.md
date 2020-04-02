@@ -20,5 +20,4 @@ Compile and run your own node, step by step:
 After the previous steps have been completed, you can try these tutorials:
 
 - [From one node to a mining local network](/rsk/node/configure/for-mining)
-- [Monitor the blockchain](https://github.com/rsksmart/rskj/wiki/Monitor-the-blockchain)
 - [Smart contracts and queries over the blockchain](/tutorials)

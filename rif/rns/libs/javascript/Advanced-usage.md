@@ -28,6 +28,27 @@ async function myCustomGetOwner(domain) {
 }
 ```
 
+You can also specify a different `networkId` to perform checksum validations, it should be added in the `options` parameter. 
+> `networkId` could be used also when instantiating the lib using RSK Mainnet or RSK Testnet
+
+**Example**
+```javascript
+async function myCustomGetOwner(domain) {
+  const web3 = new Web3('https://public-node.rsk.co');
+
+  const options = {
+    contractAddresses: {
+      registry: '0x0000000000000000000000000000000123456789'
+    },
+    networkId: 32,
+  };
+
+  const rns = new RNS(web3, options);
+
+  const address = await rns.addr('testing.rsk');
+}
+```
+
 
 ## Advanced usage
 

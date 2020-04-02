@@ -1,10 +1,10 @@
 ---
 layout: rsk
 title: Conversion with Trezor
+tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, trezor
+description: "How to perform the 2-way peg mechanism using Trezor"
 collection_order: 3130
 ---
-
-This document explains how to try the 2-way peg mechanism using Trezor. You can use 2-way peg in Testnet.
 
 - [General requirements](#general-requirements)
 - [Lock: From BTC to R-BTC](#from-btc-to-r-btc)
@@ -17,6 +17,8 @@ This document explains how to try the 2-way peg mechanism using Trezor. You can 
 * We recommend you to have [Trezor Bridge](https://wallet.trezor.io/#/bridge/) installed and review this [Developers Guide](https://wiki.trezor.io/Developers_guide).
 
 ## From BTC to R-BTC
+
+How to perform a peg-out.
 
 :exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-r-btc-conversion)
 
@@ -41,6 +43,8 @@ This document explains how to try the 2-way peg mechanism using Trezor. You can 
 14. Then use our [Testnet Explorer](https://explorer.testnet.rsk.co) to see your R-BTC balance.
 
 ## From R-BTC to BTC
+
+How to perform a peg-in.
 
 :exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/#2-r-btc-to-btc-conversion).
 

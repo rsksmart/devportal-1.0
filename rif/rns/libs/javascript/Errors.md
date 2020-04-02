@@ -4,6 +4,19 @@ title: RNS JS Library - Error knowledge base
 tags: rns, javascript, error
 ---
 
+## Handle errors with RNS library
+
+RNS Library extends the [`Error` class](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Error) with two extra properties:
+
+- `id` - The knowledge base ID
+- `ref` - A link to the specific error within this page
+
+## `KB000`
+
+**Message**: Unknown error.
+
+**Description**: Unknown error.
+
 ## `KB001`
 
 **Message**: No addr resolution set
@@ -99,3 +112,33 @@ tags: rns, javascript, error
 **Message**: The subdomain is not available
 
 **Description**: The subdomain is already owned
+
+## `KB017`
+
+**Message**: The given address is invalid
+
+**Description**: The given address has an invalid syntax.
+
+## `KB018`
+
+**Message**: The resolver does not implements setAddr method
+
+**Description**: Domain resolver should implement [setAddr](/rif/rns/architecture/Resolver#setaddr) interface.
+
+## `KB019`
+
+**Message**: The given address checksum is invalid
+
+**Description**: The given address checksum is invalid for the current networkId. Check out [EIP-1191](https://eips.ethereum.org/EIPS/eip-1191) for information about how checksum validation is performed.
+
+## `KB020`
+
+**Message**: The given TLD does not exist
+
+**Description**: The domain provided is under a top level domain that does not exist in RNS.
+
+## `KB021`
+
+**Message**: The owner of the TLD does not implement the available method
+
+**Description**: The top level domain owner should be a contract that implements the [available](/rif/rns/architecture/rsk-registrar/rskowner#available) method.
