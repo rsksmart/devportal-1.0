@@ -5,7 +5,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk3.js.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk3.js",
       "head": "refs/heads/master",
-      "commit": "c91118029e3f791af954070937f775d5cdc912d6",
+      "commit": "c1a003ac9e2b7c56762866d563d4e59ecac2c6f7",
       "commands": [
         {
           "name": "copySingle",
@@ -125,7 +125,7 @@
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
       "head": "refs/heads/master",
-      "commit": "037690ca83b78e82b3e95b4fba2fb9ad5b1ec647",
+      "commit": "6c2683d52720ee35c75449970afacde08a426daf",
       "commands": [
         {
           "name": "copySingle",
@@ -146,7 +146,7 @@
       "gitUrl": "git@github.com:ajlopez/RskApi.git",
       "httpUrl": "https://raw.githubusercontent.com/ajlopez/RskApi",
       "head": "refs/heads/master",
-      "commit": "c1d5a66425a1672ee60eef53ab1354312fcc148b",
+      "commit": "9baf2af451ad035c53e76fe83f357affa8bdd5ad",
       "commands": [
         {
           "name": "copySingle",

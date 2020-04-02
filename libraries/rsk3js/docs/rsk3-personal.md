@@ -18,7 +18,7 @@ call these functions over a unsecured Websocket or HTTP provider, as
 your password will be sent in plain text!
 
 ``` javascript
-import {Personal} from 'rsk3-personal';
+import {Personal} from '@rsksmart/rsk3-personal';
 
 const personal = new Personal('ws://some.local-or-remote.node:8546', null, options);
 

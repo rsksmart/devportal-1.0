@@ -13,7 +13,7 @@ a ABI (Application Binary Interface). This will be used for calling
 functions of a deployed smart-contract.
 
 ``` javascript
-import {AbiCoder} from 'rsk3-abi';
+import {AbiCoder} from '@rsksmart/rsk3-abi';
 
 const abiCoder = new AbiCoder();
 
@@ -21,7 +21,7 @@ const abiCoder = new AbiCoder();
 
 ------------------------------------------------------------------------
 
-encodeFunctionSignature 
+encodeFunctionSignature
 =======================
 
 ``` javascript

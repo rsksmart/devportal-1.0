@@ -139,6 +139,71 @@ To run single package tests, under the root run
 
 Code Formatting is done using `eslint`. `.eslintrc.json` under root configures formatting rules for the whole project, and `.eslintignore` file exclude files watched by eslint.
 
+## Release process
+
+Decide on the new version number,
+in this example we shall use `12.34.56`.
+
+Check out a release branch to prepare a pull request:
+
+```shell
+git checkout -b proj/release-12.34.56
+
+```
+
+This command uses lerna to bump the version number in all of the packages:
+
+```shell
+npm run release -- 12.34.56
+
+```
+
+```shell
+$ git status
+On branch proj/release-12.34.56
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   lerna.json
+        modified:   packages/rsk3-abi/package.json
+        modified:   packages/rsk3-account/package.json
+        modified:   packages/rsk3-contract/package.json
+        modified:   packages/rsk3-net/package.json
+        modified:   packages/rsk3-personal/package.json
+        modified:   packages/rsk3-utils/package.json
+        modified:   packages/rsk3/package.json
+
+```
+
+Add, commit, tag, and push:
+
+```shell
+git add -p
+git commit -m "proj: release v12.34.56"
+git push origin proj/release-12.34.56
+
+```
+
+Create a pull request, get it reviewed, and merge to master
+
+Create a tag for the new version number:
+
+```shell
+git fetch origin master:master
+git checkout master
+git tag v12.34.56 -m v12.34.56
+git push origin --tags
+
+```
+
+Publish new versions of all the packages on npm:
+
+```shell
+npm run publish
+
+```
+
 ## Note
 
 The majority of code in packages are similar to those with the same name in Web3.js, and will be upgraded in sync with Web3.js

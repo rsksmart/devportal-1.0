@@ -13,7 +13,7 @@ The `rsk3` allows you to interact with a Rsk
 blockchain itself and the deployed smart contracts.
 
 ``` javascript
-import {Rsk3} from 'rsk3';
+import {Rsk3} from '@rsksmart/rsk3';
 
 
 const rsk3 = new Rsk3('ws://some.local-or-remote.node:8546', null, options);
@@ -97,7 +97,7 @@ An Rsk3 module does provide several options for configuring the
 transaction confirmation worklfow or for defining default values. These
 are the currently available option properties on a Rsk3 module:
 
-### Module Options 
+### Module Options
 
 `defaultAccount`
 
@@ -136,7 +136,7 @@ const rsk3 = new Rsk3('http://localhost:8545', null, options);
 
 ------------------------------------------------------------------------
 
-defaultBlock 
+defaultBlock
 ------------
 
 ``` javascript
@@ -172,7 +172,7 @@ Default is `"latest"`
 
 ------------------------------------------------------------------------
 
-defaultAccount 
+defaultAccount
 --------------
 
 ``` javascript
@@ -190,7 +190,7 @@ key for that address in your node or keystore. (Default is `undefined`)
 
 ------------------------------------------------------------------------
 
-defaultGasPrice 
+defaultGasPrice
 ---------------
 
 ``` javascript
@@ -206,7 +206,7 @@ The default gas price which will be used for a request.
 
 ------------------------------------------------------------------------
 
-defaultGas 
+defaultGas
 ----------
 
 ``` javascript
@@ -242,7 +242,7 @@ rejects with a timeout error when the timeout got exceeded.
 ------------------------------------------------------------------------
 
 
-transactionConfirmationBlocks 
+transactionConfirmationBlocks
 
 ``` javascript
 rsk3.transactionConfirmationBlocks
@@ -259,7 +259,7 @@ be handled as confirmed.
 ------------------------------------------------------------------------
 
 
-transactionPollingTimeout 
+transactionPollingTimeout
 
 ``` javascript
 rsk3.transactionPollingTimeout
@@ -276,7 +276,7 @@ until the first confirmation happens.
 
 ------------------------------------------------------------------------
 
-transactionSigner 
+transactionSigner
 -----------------
 
 ``` javascript
@@ -947,7 +947,7 @@ Returns a transaction matching the given transaction hash.
 2.  `Function` - (optional) Optional callback, returns an error object
     as first parameter and the result as second.
 
-### Returns 
+### Returns
 
 `Promise<object>` - A transaction object its hash `transactionHash`:
 
@@ -991,7 +991,7 @@ rsk3.getTransaction('0x9fc76417374aa880d4449a1f7f31ec597f00b1f6f3dd2d66f4c9c6c44
 
 ------------------------------------------------------------------------
 
-getPendingTransactions 
+getPendingTransactions
 ----------------------
 
 ``` javascript
@@ -1005,7 +1005,7 @@ Returns a list of pending transactions.
 1.  `Function` - (optional) Optional callback, returns an error object
     as first parameter and the result as second.
 
-### Returns 
+### Returns
 
 `Promise<object[]>` - Array of pending transactions:
 
@@ -1122,7 +1122,7 @@ The receipt is not available for pending transactions and returns
 2.  `Function` - (optional) Optional callback, returns an error object
     as first parameter and the result as second.
 
-### Returns 
+### Returns
 
 `Promise` returns `Object` - A transaction receipt object, or `null`
 when no receipt was found:
@@ -1170,7 +1170,7 @@ const receipt = rsk3.getTransactionReceipt('0x9fc76417374aa880d4449a1f7f31ec597f
 
 ------------------------------------------------------------------------
 
-getTransactionCount 
+getTransactionCount
 -------------------
 
 ``` javascript
@@ -1202,7 +1202,7 @@ rsk3.getTransactionCount("0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe").then(cons
 
 ------------------------------------------------------------------------
 
-sendTransaction 
+sendTransaction
 ---------------
 
 ``` javascript
@@ -1251,7 +1251,7 @@ The `from` property can also be an address or index from the
 account, and send the transaction via
 `rsk3.sendSignedTransaction()`
 
-### Returns 
+### Returns
 
 The **callback** will return the 32 bytes transaction hash.
 
@@ -1316,7 +1316,7 @@ rsk3.sendTransaction({
 
 ------------------------------------------------------------------------
 
-sendSignedTransaction 
+sendSignedTransaction
 ---------------------
 
 ``` javascript
@@ -1576,7 +1576,7 @@ Gets past logs, matching the given options.
         pass an array for each topic with options for that topic e.g.
         `[null, ['option1', 'option2']]`
 
-### Returns 
+### Returns
 
 `Promise<Array>` - Array of log objects.
 
