@@ -199,21 +199,20 @@ UID:202003-008@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200330T210000Z
 DTSTART:20200330T210000Z
-SUMMARY:¿Qué es RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera carte
- ra 
-DESCRIPTION:¿Qué es RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera c
- artera\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires
- /events/269676016/\n\nVideo stream: https://zoom.us/meeting/register/vJcvd
- OqsrzgqhE2wf9mjTL2f-IjMyuCbOg\n
+SUMMARY:¿Qué es RSK?\n¿Qué es Nifty Wallet?\nPrograma tu primera cartera 
+DESCRIPTION:¿Qué es RSK?\n¿Qué es Nifty Wallet?\nPrograma tu primera carte
+ ra\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/eve
+ nts/269676016/\n\nVideo stream: https://zoom.us/meeting/register/vJcvdOqsr
+ zgqhE2wf9mjTL2f-IjMyuCbOg\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>¿Qué es
-  RSK?\n¿Qué es una Nifty Wallet?\nProgramá tu primera cartera</span></div>
- \n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a hr
- ef=\"https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016/\">www.m
- eetup.com/es-ES/RSKBuenosAires/events/269676016/</a></span></div>\n<div><b
- >Video stream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/
- vJcvdOqsrzgqhE2wf9mjTL2f-IjMyuCbOg\">zoom.us/meeting/register/vJcvdOqsrzgq
- hE2wf9mjTL2f-IjMyuCbOg</a></span></div>\n</BODY>\n</HTML>
+  RSK?\n¿Qué es Nifty Wallet?\nPrograma tu primera cartera</span></div>\n<d
+ iv><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\
+ "https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016/\">www.meetu
+ p.com/es-ES/RSKBuenosAires/events/269676016/</a></span></div>\n<div><b>Vid
+ eo stream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/vJcv
+ dOqsrzgqhE2wf9mjTL2f-IjMyuCbOg\">zoom.us/meeting/register/vJcvdOqsrzgqhE2w
+ f9mjTL2f-IjMyuCbOg</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 CATEGORIES:Talk
@@ -331,5 +330,192 @@ URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269685307/
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200329T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-005@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200403T210000Z
+DTSTART:20200403T210000Z
+SUMMARY:¿Qué es Bitcoin?\n¿Qué es Blockchain? 
+DESCRIPTION:¿Qué es Bitcoin?\n¿Qué es Blockchain?\n\nOnline only\n\nRSVP: 
+ https://www.meetup.com/es-ES/RSKBuenosAires/events/269812231/\n\nVideo str
+ eam: https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7aaA\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>¿Qué es
+  Bitcoin?\n¿Qué es Blockchain?</span></div>\n<div><span>Online only</span>
+ </div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-
+ ES/RSKBuenosAires/events/269812231/\">www.meetup.com/es-ES/RSKBuenosAires/
+ events/269812231/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span>
+ <a href=\"https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7
+ aaA\">zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7aaA</a></spa
+ n></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
+ developers@iovlabs.org
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269812231
+ /
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200403T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-006@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200406T170000Z
+DTSTART:20200406T170000Z
+SUMMARY:What is Decentralized Finance or DeFi? 
+DESCRIPTION:What is Decentralized Finance or DeFi?\n\nOnline only\n\nRSVP:
+  https://www.meetup.com/es-ES/rsk-community/events/269838616/\n\nVideo str
+ eam: https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>What is
+  Decentralized Finance or DeFi?</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es
+ -ES/rsk-community/events/269838616/\">www.meetup.com/es-ES/rsk-community/e
+ vents/269838616/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoE
+ vg\">zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg</a></span
+ ></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Maximiliano del Hoyo\, DeFi PO\, @maxdh_ar":mailto:developer
+ s@iovlabs.org
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838616/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200403T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-007@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200406T210000Z
+DTSTART:20200406T210000Z
+SUMMARY:¿Qué son las Finanzas Descentralizadas? 
+DESCRIPTION:¿Qué son las Finanzas Descentralizadas?\n\nOnline only\n\nRSVP
+ : https://www.meetup.com/es-ES/RSKBuenosAires/events/269835498/\n\nVideo s
+ tream: https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig
+ \n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>¿Qué so
+ n las Finanzas Descentralizadas?</span></div>\n<div><span>Online only</spa
+ n></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/e
+ s-ES/RSKBuenosAires/events/269835498/\">www.meetup.com/es-ES/RSKBuenosAire
+ s/events/269835498/</a></span></div>\n<div><b>Video stream &nbsp\;</b><spa
+ n><a href=\"https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfE
+ zzqig\">zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig</a></s
+ pan></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Maximiliano del Hoyo\, DeFi PO\, @maxdh_ar":mailto:developer
+ s@iovlabs.org
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269835498
+ /
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200403T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-008@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200407T153000Z
+DTSTART:20200407T153000Z
+SUMMARY:Introducción a los servicios de RIF 
+DESCRIPTION:Introducción a los servicios de RIF\n\nOnline only\n\nRSVP: ht
+ tps://www.meetup.com/es-ES/RSKBuenosAires/events/269837767\n\nVideo stream
+ : https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Introdu
+ cción a los servicios de RIF</span></div>\n<div><span>Online only</span></
+ div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES
+ /RSKBuenosAires/events/269837767\">www.meetup.com/es-ES/RSKBuenosAires/eve
+ nts/269837767</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a h
+ ref=\"https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ\
+ ">zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ</a></span></
+ div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
+ lto:developers@iovlabs.org
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269837767
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200403T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-009@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200408T223000Z
+DTSTART:20200408T223000Z
+SUMMARY:Aprenda a utilizar rWallet e librerias RSK 
+DESCRIPTION:Aprenda a utilizar rWallet e librerias RSK\n\nOnline only\n\nR
+ SVP: https://www.meetup.com/es-ES/rsk-community/events/269838837/\n\nVideo
+  stream: https://zoom.us/meeting/register/tJ0oc-iurTgjD1dvKkK-XHHzP2Heq_aI
+ pA\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Aprenda
+  a utilizar rWallet e librerias RSK</span></div>\n<div><span>Online only</
+ span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.co
+ m/es-ES/rsk-community/events/269838837/\">www.meetup.com/es-ES/rsk-communi
+ ty/events/269838837/</a></span></div>\n<div><b>Video stream &nbsp\;</b><sp
+ an><a href=\"https://zoom.us/meeting/register/tJ0oc-iurTgjD1dvKkK-XHHzP2He
+ q_aIpA\">zoom.us/meeting/register/tJ0oc-iurTgjD1dvKkK-XHHzP2Heq_aIpA</a></
+ span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838837/
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200403T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200409T000000Z
+DTSTART:20200409T000000Z
+SUMMARY:rWallet and RSK libraries 
+DESCRIPTION:rWallet and RSK libraries\n\nOnline only\n\nRSVP: https://www.
+ meetup.com/es-ES/rsk-community/events/269838823/\n\nVideo stream: https://
+ zoom.us/meeting/register/vJ0pcuCspjov7k22_PYHpHhH3sBTUjSdXA\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>rWallet
+  and RSK libraries</span></div>\n<div><span>Online only</span></div>\n<div
+ ><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-commu
+ nity/events/269838823/\">www.meetup.com/es-ES/rsk-community/events/2698388
+ 23/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"http
+ s://zoom.us/meeting/register/vJ0pcuCspjov7k22_PYHpHhH3sBTUjSdXA\">zoom.us/
+ meeting/register/vJ0pcuCspjov7k22_PYHpHhH3sBTUjSdXA</a></span></div>\n</BO
+ DY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838823/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200403T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-011@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200409T210000Z
+DTSTART:20200409T210000Z
+SUMMARY:rWallet y librería de RSK 
+DESCRIPTION:rWallet y librería de RSK\n\nOnline only\n\nRSVP: https://www.
+ meetup.com/es-ES/RSKBuenosAires/events/269838453/\n\nVideo stream: https:/
+ /zoom.us/meeting/register/uJQlfuyurjopTVdCqUxT0A-MqiTMoCCbdg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>rWallet
+  y librería de RSK</span></div>\n<div><span>Online only</span></div>\n<div
+ ><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuenos
+ Aires/events/269838453/\">www.meetup.com/es-ES/RSKBuenosAires/events/26983
+ 8453/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"ht
+ tps://zoom.us/meeting/register/uJQlfuyurjopTVdCqUxT0A-MqiTMoCCbdg\">zoom.u
+ s/meeting/register/uJQlfuyurjopTVdCqUxT0A-MqiTMoCCbdg</a></span></div>\n</
+ BODY>\n</HTML>
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
+ developers@iovlabs.org
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269838453
+ /
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200403T140000Z
 END:VEVENT
 END:VCALENDAR
