@@ -39,8 +39,21 @@ csvConverter
     }
   })
   .then((list) => {
-    const json = { events: list };
-    const jsonStr = JSON.stringify(json, undefined, 2);
+    const sortedList = list.sort((eventA, eventB) => {
+      if (eventA.id < eventB.id) {
+        return -1;
+      } else if (eventA.id > eventB.id) {
+        return 1;
+      } else if (eventA.timestamp < eventB.timestamp) {
+        return -1;
+      } else if (eventA.timestamp > eventB.timestamp) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    const json = { events: sortedList };
+    const jsonStr = JSON.stringify(json, undefined, 2) + '\n';
     fs.writeFile(jsonPath, jsonStr, (err) => {
       if (err) {
         console.error(err);
