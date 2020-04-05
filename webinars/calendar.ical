@@ -4,6 +4,7 @@ permalink: /webinars/calendar.ical
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//developers.rsk.co//events-calendar//EN
+URL:https://developers.rsk.co/webinars/calendar.ical
 CALSCALE:GREGORIAN
 NAME:RSK and RIF Webinars
 X-WR-CALNAME:RSK and RIF Webinars
@@ -30,6 +31,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  \n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:What is Blockchain?\nWhat is Bitcoin? 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269504497/
 STATUS:CONFIRMED
@@ -57,6 +63,12 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  491\">zoom.us/j/850527491</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
  ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:How to create your first Smart Contract using Remix and Metama
+ sk at RSK Network 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269565719/
 STATUS:CONFIRMED
@@ -83,6 +95,12 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /j/182679010</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Crea tu primer smart contract en RSK usando Remix and Nifty Wa
+ llet 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096
 STATUS:CONFIRMED
@@ -109,6 +127,12 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  .us/j/211449645</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Como criar smart contracts na RSK network utilizando Remix e M
+ etamask 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269566069/
 STATUS:CONFIRMED
@@ -134,6 +158,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Guillermo Villanueva\, CEO - Grupo Sabra\, @guillevi":mailto
  :developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Gasnet: la red Blockchain para el Ecosistema de Gas 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497
  /
@@ -160,6 +189,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:¿Qué es RSK?\nHerramientas para ganar un Hackathon 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269565762
  /
@@ -188,6 +222,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  MtM_z5dhvyw</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
  ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:What is RSK?\nWhat is Nifty Wallet?\nSet your first wallet! 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677327/
 STATUS:CONFIRMED
@@ -215,6 +254,12 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  f9mjTL2f-IjMyuCbOg</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:¿Qué es RSK?\n¿Qué es Nifty Wallet?\nPrograma tu primera carte
+ ra 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016
  /
@@ -244,6 +289,12 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  8MSfma_UM2SRY1EpNBg</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Brendan\, Developer Advocate\, @bguiz":mailto:developers@iov
  labs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Run your own first node by using Geth attaching to a RSK local
+  node 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677379/
 STATUS:CONFIRMED
@@ -271,6 +322,12 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  uJyoo-Tljt1fKj-HA</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Utilizando Geth attach para interagir com um nó local da rede 
+ RSK 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269676954/
 STATUS:CONFIRMED
@@ -298,6 +355,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  YplRN_qVoNtSg</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Instala tu primer nodo usando Geth con tu nodo local de RSK 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265
  /
@@ -325,6 +387,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  n</HTML>
 ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
  lto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RIF Services overview 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269685307/
 STATUS:CONFIRMED
@@ -351,6 +418,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  n></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:¿Qué es Bitcoin?\n¿Qué es Blockchain? 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269812231
  /
@@ -378,6 +450,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  ></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Maximiliano del Hoyo\, DeFi PO\, @maxdh_ar":mailto:developer
  s@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:What is Decentralized Finance or DeFi? 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838616/
 STATUS:CONFIRMED
@@ -405,6 +482,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  pan></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Maximiliano del Hoyo\, DeFi PO\, @maxdh_ar":mailto:developer
  s@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:¿Qué son las Finanzas Descentralizadas? 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269835498
  /
@@ -432,6 +514,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
  lto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Introducción a los servicios de RIF 
+END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269837767
 STATUS:CONFIRMED
@@ -459,6 +546,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Aprenda a utilizar rWallet e librerias RSK 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838837/
 STATUS:CONFIRMED
@@ -485,6 +577,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  DY>\n</HTML>
 ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
  ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:rWallet and RSK libraries 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838823/
 STATUS:CONFIRMED
@@ -511,6 +608,11 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:rWallet y librería de RSK 
+END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269838453
  /
