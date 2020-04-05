@@ -18,6 +18,7 @@ const icalData = {
   scale: 'gregorian',
   ttl: 3600,
   organizer: 'RSK',
+  url: 'https://developers.rsk.co/webinars/calendar.ical',
   events,
 };
 
@@ -98,11 +99,19 @@ function processEventV2(event) {
       htmlDescriptionBody
     }\n</BODY>\n</HTML>`;
 
+  const alarms = [
+    {
+      type: 'display',
+      trigger: 600,
+    },
+  ];
+
   return {
     ...processedEventV1,
     organizer,
     description,
     htmlDescription,
+    alarms,
   };
 }
 
