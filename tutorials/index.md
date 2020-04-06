@@ -35,4 +35,4 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 - [RSK API CLI](/tutorials/rsk-api/)
 - [Send RIF Tokens through Metamask](/tutorials/send-tokens-through-metamask/)
 - [Using Blockmason](/tutorials/using-blockmason/)
-
+- [Resolve Nitfy Issue](/tutorials/resolve-nifty-issue)
