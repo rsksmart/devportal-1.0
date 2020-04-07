@@ -33,6 +33,8 @@ button:focus {
     background-color: transparent;
 }
 
+.navbar {z-index:99!important;}
+
 .navbar-dark .navbar-toggler {
     border: none;
 }
@@ -743,7 +745,7 @@ img {
 .scrollup {
     position: fixed;
     bottom: 50px;
-    right: -10px;
+    left: 10px;
     color: #666;
     font-size: 14px;
     transform: rotate(-90deg);
@@ -1710,6 +1712,10 @@ img {
 .metamask-screenshot {
     margin:1em auto;
     max-width:250px;
+}
+
+.gitter-open-chat-button, .gitter-open-chat-button:visited{
+    background: #00B520!important;
 }
 
 @media (max-width: 768px){
