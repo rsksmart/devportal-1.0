@@ -93,6 +93,7 @@ To run the node:
 ```shell
 java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 ```
+
 Leave running, and open new terminal
 
 (Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file).
@@ -171,8 +172,6 @@ ls -l
 # -rwxr-xr-x  1 owanate  staff  14693948 Mar 16 13:53 puppeth
 # -rwxr-xr-x  1 owanate  staff   3446104 Mar 16 13:53 rlpdump
 # -rwxr-xr-x  1 owanate  staff  26705564 Mar 16 13:53 wnode
-
-Feel free to find-and-replace owanate with a placeholder username like username.
 
 ./geth version
 # Version: 1.9.12-stable
