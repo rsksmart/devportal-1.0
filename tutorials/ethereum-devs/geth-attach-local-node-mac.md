@@ -10,7 +10,8 @@ RSK's virtual machine implementation is compatible with the Ethereum virtual mac
 In this tutorial I will show you step-by-step how to use the Ethereum client Geth to attach to an RSK local node (which is called regtest) and run a few JSON-RPC commands.
 We do this to establish that the local node is running.
 
-A step-by-step tutorial for Windows users can be found [here](/tutorials/ethereum-devs/geth-attach-local-node/)
+Here is the [equivalent step-by-step tutorial for Windows users](/tutorials/ethereum-devs/geth-attach-local-node/ "Using geth to attach to a RSK local node").
+
 
 ## Overview
 
@@ -41,7 +42,7 @@ Go to [Java Download](https://java.com/en/download/mac_download.jsp) if you need
 
 ![Java Download](/assets/img/tutorials/geth-attach-local-node/image-24.png)
 
-Alternatively, you could install Java using bash:
+Alternatively, you could install Java using shell commands via SDKman:
 
 ```shell
 curl -s "https://get.sdkman.io" | bash
@@ -80,6 +81,11 @@ shasum rskj-core-1.3.0-WASABI-all.jar
 grep "rskj-core" rskj-core-1.3.0-WASABI-all.SHA256SUMS.asc
 # 1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd rskj-core/build/libs/rskj-core-1.3.0-WASABI-all.jar
 ```
+
+The curl commands download a binary which is the RSKj executable, as well as a plain text file containing the checksum for the JAR file. The subsequent `shasum` (or `sha256sum` depending on your *NIX variety), and grep are used to verify that these the checksum recorded as part of the release process does indeed match the computed checksum of the file that was downloaded.
+
+
+Note that verifying the checksum is not the only form of verification of the RSKj binary. There are [more detailed instructions](/rsk/node/contribute/verify/ "Verify authenticity of RSKj source code and its binary dependencies") available on how to do this.
 
 #### Run RSKj
 
@@ -148,9 +154,9 @@ Choose the default installer for Mac
 mkdir -p ~/code/ethereum/geth-node
 cd ~/code/ethereum/geth-node
 curl \
--L \
-https://gethstore.blob.core.windows.net/builds/geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz 
-> geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
+  -L \
+  https://gethstore.blob.core.windows.net/builds/geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz 
+  > geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
 
 tar -xf geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
 
@@ -167,15 +173,18 @@ ls -l
 # -rwxr-xr-x  1 owanate  staff   3446104 Mar 16 13:53 rlpdump
 # -rwxr-xr-x  1 owanate  staff  26705564 Mar 16 13:53 wnode
 
+Feel free to find-and-replace owanate with a placeholder username like username.
+
 ./geth version
 # Version: 1.9.12-stable
 ```
 
 In this link, you have more information about how to install Geth:
-[https://geth.ethereum.org/docs/install-and-build/installing-geth](https://geth.ethereum.org/docs/install-and-build/installing-geth)
+[geth.ethereum.org/docs/install-and-build/installing-geth](https://geth.ethereum.org/docs/install-and-build/installing-geth)
 
 
 ## Connect geth to RSKj
+
 This procedure is only for a node running in your machine or any in a network that you are allowed. Geth attach gives you full control of the remote instance, so do not expect someone else to  give you such access to their machine.
 
 ```shell
@@ -200,6 +209,7 @@ For more information  about RPC methods, check the Ethereum website, but remembe
 - [github.com/ethereum/wiki/wiki/JSON-RPC](https://github.com/ethereum/wiki/wiki/JSON-RPC)
 
 # Check if the node is running
+
 
 ### Check block number
 > Shows the last block number
@@ -266,7 +276,7 @@ List all things related to accounts in your local node.
 
 ### List Accounts
 
-list the accounts in your local node:
+List the accounts in your local node:
 
 ```shell
 > personal.listAccounts
@@ -347,7 +357,8 @@ I would like to check the newly created account (`0x8a0e79a725b9d2e3fa34fd5ccdb3
 I have one trillion R-BTC in account 1 and nothing on the new account. I'd like to transfer 300 billion R-BTC from account 1 to the new account:
 
 ```shell
-> eth.sendTransaction({ from: eth.accounts[1], to: myNewAccount, value: web3.toWei(300000000000, 'ether') "0x9e1e49528d687e7414ce7832bafa776ed387a84b504deb9a648c923ec5d756ba"
+> eth.sendTransaction({ from: eth.accounts[1], to: myNewAccount, value: web3.toWei(300000000000, 'ether')
+# "0x9e1e49528d687e7414ce7832bafa776ed387a84b504deb9a648c923ec5d756ba"
 ```
 
 ### Check Balance of account 1
@@ -376,7 +387,7 @@ To exit the geth console:
 
 Did you think that it would be so easy to use Geth, an Ethereum client, to interact with an RSK local node?
 
-We can do more things using Geth, such as [deploy a smart contract at RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
+Alternatively, we can do more things using Geth, such as [deploy a smart contract on an RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
