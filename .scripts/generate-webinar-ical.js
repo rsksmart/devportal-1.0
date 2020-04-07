@@ -7,24 +7,27 @@ const icalGenerator = require('ical-generator');
 const webinarsJson = require('../_data/webinars.json');
 
 const organiserEmail = 'developers@iovlabs.org';
+const calendarDomain = 'developers.rsk.co';
+const calendarPermalink = '/webinars/calendar.ical';
+const calendarUrl = `https://developers.rsk.co${calendarPermalink}`;
 
 const events = webinarsJson.events.map(processEvent);
 
 const icalData = {
-  domain: 'developers.rsk.co/',
-  prodId: '//developers.rsk.co//events-calendar//EN',
+  domain: `${calendarDomain}/`,
+  prodId: `//${calendarDomain}//events-calendar//EN`,
   name: 'RSK and RIF Webinars',
   timezone: 'Etc/UTC',
   scale: 'gregorian',
   ttl: 3600,
   organizer: 'RSK',
-  url: 'https://developers.rsk.co/webinars/calendar.ical',
+  url: calendarUrl,
   events,
 };
 
 const ical = icalGenerator(icalData);
 
-const icalPrefix = '---\npermalink: /webinars/calendar.ical\n---\n';
+const icalPrefix = `---\npermalink: ${calendarPermalink}\n---\n`;
 const icalSuffix = '\n';
 const icalPath = './webinars/calendar.ical';
 
@@ -62,6 +65,7 @@ function processEventV2(event) {
     presenterDescription,
     presenterContact,
     videoStreamUrl,
+    status,
   } = event;
 
   const firstPresenter = getFirstLineOf(presenter);
@@ -75,9 +79,20 @@ function processEventV2(event) {
   const descriptionItems = [
     ['', title],
     ['', location],
-    ['RSVP', `${url}`],
-    ['Video stream', `${videoStreamUrl}`],
   ];
+
+  if (status !== 'cancelled') {
+    descriptionItems.push(
+      ['RSVP', `${url}`],
+    );
+    descriptionItems.push(
+      ['Video stream', `${videoStreamUrl}`],
+    );
+  } else {
+    descriptionItems.push(
+      ['Cancelled, see webinars page for more details', calendarUrl],
+    );
+  }
 
   const description =
     descriptionItems.map((item) => {
@@ -127,6 +142,7 @@ function processEventV1(event) {
     title,
     subtitle,
     lastModified,
+    status,
   } = event;
   const timestampDate = new Date(timestamp);
   const lastModifiedDate = new Date(lastModified);
@@ -134,6 +150,13 @@ function processEventV1(event) {
   const renderedLocation = (locationCategory === 'online') ?
     undefined :
     location;
+
+  // if status is not one of the allowed values, default to 'confirmed'
+  const renderedStatus = [
+    'confirmed',
+    'tentative',
+    'cancelled',
+  ].indexOf(status) >= 0 ? status : 'confirmed';
 
   return {
     uid: id,
@@ -153,7 +176,7 @@ function processEventV1(event) {
     x: {
       'X-LANGUAGE': language,
     },
-    status: 'confirmed',
+    status: renderedStatus,
   };
 }
 

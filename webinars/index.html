@@ -169,8 +169,8 @@
                <div class="grid">
                   <div class="row">
 
-{% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-               {% assign events = (site.data.webinars.events | sort: 'timestamp') %}
+               {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+               {% assign events = (site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'" | sort: 'timestamp') %}
                {% for event in events %}
                   {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
                   {% if timestamp > now %}

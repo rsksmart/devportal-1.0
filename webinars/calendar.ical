@@ -287,8 +287,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  deo stream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/v5I
  lcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg\">zoom.us/meeting/register/v5IlcuCuqjgp2Hk
  8MSfma_UM2SRY1EpNBg</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Brendan\, Developer Advocate\, @bguiz":mailto:developers@iov
- labs.org
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -531,19 +531,15 @@ SEQUENCE:0
 DTSTAMP:20200408T223000Z
 DTSTART:20200408T223000Z
 SUMMARY:Aprenda a utilizar rWallet e librerias RSK 
-DESCRIPTION:Aprenda a utilizar rWallet e librerias RSK\n\nOnline only\n\nR
- SVP: https://www.meetup.com/es-ES/rsk-community/events/269838837/\n\nVideo
-  stream: https://zoom.us/meeting/register/tJ0oc-iurTgjD1dvKkK-XHHzP2Heq_aI
- pA\n
+DESCRIPTION:Aprenda a utilizar rWallet e librerias RSK\n\nOnline only\n\nC
+ ancelled\, see webinars page for more details: https://developers.rsk.co/w
+ ebinars/calendar.ical\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Aprenda
   a utilizar rWallet e librerias RSK</span></div>\n<div><span>Online only</
- span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.co
- m/es-ES/rsk-community/events/269838837/\">www.meetup.com/es-ES/rsk-communi
- ty/events/269838837/</a></span></div>\n<div><b>Video stream &nbsp\;</b><sp
- an><a href=\"https://zoom.us/meeting/register/tJ0oc-iurTgjD1dvKkK-XHHzP2He
- q_aIpA\">zoom.us/meeting/register/tJ0oc-iurTgjD1dvKkK-XHHzP2Heq_aIpA</a></
- span></div>\n</BODY>\n</HTML>
+ span></div>\n<div><b>Cancelled\, see webinars page for more details &nbsp\
+ ;</b><span><a href=\"https://developers.rsk.co/webinars/calendar.ical\">de
+ velopers.rsk.co/webinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
@@ -552,10 +548,9 @@ TRIGGER:-PT10M
 DESCRIPTION:Aprenda a utilizar rWallet e librerias RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838837/
-STATUS:CONFIRMED
+STATUS:CANCELLED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200403T140000Z
+LAST-MODIFIED:20200407T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-010@developers.rsk.co/
@@ -563,18 +558,15 @@ SEQUENCE:0
 DTSTAMP:20200409T000000Z
 DTSTART:20200409T000000Z
 SUMMARY:rWallet and RSK libraries 
-DESCRIPTION:rWallet and RSK libraries\n\nOnline only\n\nRSVP: https://www.
- meetup.com/es-ES/rsk-community/events/269838823/\n\nVideo stream: https://
- zoom.us/meeting/register/vJ0pcuCspjov7k22_PYHpHhH3sBTUjSdXA\n
+DESCRIPTION:rWallet and RSK libraries\n\nOnline only\n\nCancelled\, see we
+ binars page for more details: https://developers.rsk.co/webinars/calendar.
+ ical\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>rWallet
   and RSK libraries</span></div>\n<div><span>Online only</span></div>\n<div
- ><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-commu
- nity/events/269838823/\">www.meetup.com/es-ES/rsk-community/events/2698388
- 23/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"http
- s://zoom.us/meeting/register/vJ0pcuCspjov7k22_PYHpHhH3sBTUjSdXA\">zoom.us/
- meeting/register/vJ0pcuCspjov7k22_PYHpHhH3sBTUjSdXA</a></span></div>\n</BO
- DY>\n</HTML>
+ ><b>Cancelled\, see webinars page for more details &nbsp\;</b><span><a hre
+ f=\"https://developers.rsk.co/webinars/calendar.ical\">developers.rsk.co/w
+ ebinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
  ers@iovlabs.org
 BEGIN:VALARM
@@ -583,10 +575,9 @@ TRIGGER:-PT10M
 DESCRIPTION:rWallet and RSK libraries 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838823/
-STATUS:CONFIRMED
+STATUS:CANCELLED
 X-LANGUAGE:English
-LAST-MODIFIED:20200403T140000Z
+LAST-MODIFIED:20200407T000000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-011@developers.rsk.co/
@@ -594,18 +585,15 @@ SEQUENCE:0
 DTSTAMP:20200409T210000Z
 DTSTART:20200409T210000Z
 SUMMARY:rWallet y librería de RSK 
-DESCRIPTION:rWallet y librería de RSK\n\nOnline only\n\nRSVP: https://www.
- meetup.com/es-ES/RSKBuenosAires/events/269838453/\n\nVideo stream: https:/
- /zoom.us/meeting/register/uJQlfuyurjopTVdCqUxT0A-MqiTMoCCbdg\n
+DESCRIPTION:rWallet y librería de RSK\n\nOnline only\n\nCancelled\, see we
+ binars page for more details: https://developers.rsk.co/webinars/calendar.
+ ical\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>rWallet
   y librería de RSK</span></div>\n<div><span>Online only</span></div>\n<div
- ><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuenos
- Aires/events/269838453/\">www.meetup.com/es-ES/RSKBuenosAires/events/26983
- 8453/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"ht
- tps://zoom.us/meeting/register/uJQlfuyurjopTVdCqUxT0A-MqiTMoCCbdg\">zoom.u
- s/meeting/register/uJQlfuyurjopTVdCqUxT0A-MqiTMoCCbdg</a></span></div>\n</
- BODY>\n</HTML>
+ ><b>Cancelled\, see webinars page for more details &nbsp\;</b><span><a hre
+ f=\"https://developers.rsk.co/webinars/calendar.ical\">developers.rsk.co/w
+ ebinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
@@ -614,10 +602,102 @@ TRIGGER:-PT10M
 DESCRIPTION:rWallet y librería de RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269838453
+STATUS:CANCELLED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200407T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-012@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200408T223000Z
+DTSTART:20200408T223000Z
+SUMMARY:Por dentro do Solidty 
+DESCRIPTION:Por dentro do Solidty\n\nOnline only\n\nRSVP: https://www.meet
+ up.com/es-ES/rsk-community/events/269897747/\n\nVideo stream: https://zoom
+ .us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Por den
+ tro do Solidty</span></div>\n<div><span>Online only</span></div>\n<div><b>
+ RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-community
+ /events/269897747/\">www.meetup.com/es-ES/rsk-community/events/269897747/<
+ /a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://
+ zoom.us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg\">zoom.us/meet
+ ing/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg</a></span></div>\n</BODY>\
+ n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Por dentro do Solidty 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269897747/
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200407T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-013@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200409T000000Z
+DTSTART:20200409T000000Z
+SUMMARY:Inside Solidity 
+DESCRIPTION:Inside Solidity\n\nOnline only\n\nRSVP: https://www.meetup.com
+ /es-ES/rsk-community/events/269897805/\n\nVideo stream: https://zoom.us/me
+ eting/register/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Inside 
+ Solidity</span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &
+ nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-community/event
+ s/269897805/\">www.meetup.com/es-ES/rsk-community/events/269897805/</a></s
+ pan></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://zoom.u
+ s/meeting/register/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg\">zoom.us/meeting/re
+ gister/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg</a></span></div>\n</BODY>\n</HTM
+ L>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Inside Solidity 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269897805/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200407T000000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-014@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200409T210000Z
+DTSTART:20200409T210000Z
+SUMMARY:Por dentro de Solidty 
+DESCRIPTION:Por dentro de Solidty\n\nOnline only\n\nRSVP: https://www.meet
+ up.com/es-ES/RSKBuenosAires/events/269897477/\n\nVideo stream: https://zoo
+ m.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Por den
+ tro de Solidty</span></div>\n<div><span>Online only</span></div>\n<div><b>
+ RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuenosAire
+ s/events/269897477/\">www.meetup.com/es-ES/RSKBuenosAires/events/269897477
+ /</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https:
+ //zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw\">zoom.us/me
+ eting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw</a></span></div>\n</BODY
+ >\n</HTML>
+ORGANIZER;CN="Angel Lopez\, Software Engineer\, @ajlopez":mailto:developer
+ s@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Por dentro de Solidty 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269897477
  /
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200403T140000Z
+LAST-MODIFIED:20200407T000000Z
 END:VEVENT
 END:VCALENDAR
