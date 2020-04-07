@@ -82,8 +82,7 @@ grep "rskj-core" rskj-core-1.3.0-WASABI-all.SHA256SUMS.asc
 # 1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd rskj-core/build/libs/rskj-core-1.3.0-WASABI-all.jar
 ```
 
-The curl commands download a binary which is the RSKj executable, as well as a plain text file containing the checksum for the JAR file. The subsequent `shasum` (or `sha256sum` depending on your *NIX variety), and grep are used to verify that these the checksum recorded as part of the release process does indeed match the computed checksum of the file that was downloaded.
-
+The curl commands download a binary which is the RSKj executable, as well as a plain text file containing the checksum for the JAR file. The subsequent `shasum` (or `sha256sum` depending on your *NIX variety), and `grep` are used to verify that the checksum recorded as part of the release process does indeed match the computed checksum of the file that was downloaded.
 
 Note that verifying the checksum is not the only form of verification of the RSKj binary. There are [more detailed instructions](/rsk/node/contribute/verify/ "Verify authenticity of RSKj source code and its binary dependencies") available on how to do this.
 
@@ -94,7 +93,7 @@ To run the node:
 ```shell
 java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 ```
-# leave running, and open new terminal
+Leave running, and open new terminal
 
 (Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file).
 
@@ -387,7 +386,7 @@ To exit the geth console:
 
 Did you think that it would be so easy to use Geth, an Ethereum client, to interact with an RSK local node?
 
-Alternatively, we can do more things using Geth, such as [deploy a smart contract on an RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
+We can do more things using Geth, such as [deploy a smart contract on an RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
