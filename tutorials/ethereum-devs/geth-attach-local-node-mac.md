@@ -93,8 +93,8 @@ To run the node:
 
 ```shell
 java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
-# leave running, and open new terminal
 ```
+# leave running, and open new terminal
 
 (Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file).
 
