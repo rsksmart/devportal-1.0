@@ -10,6 +10,8 @@ RSK's virtual machine implementation is compatible with the Ethereum virtual mac
 In this tutorial I will show you step-by-step how to use the Ethereum client Geth to attach to an RSK local node (which is called regtest) and run a few JSON-RPC commands.
 We do this to establish that the local node is running.
 
+A step-by-step tutorial for Mac users can be found [here](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
+
 ## Overview
 
 We will do these steps:
@@ -260,7 +262,7 @@ personal.listAccounts
 
 ![personal.listAccounts](/assets/img/tutorials/geth-attach-local-node/image-15.png)
 
-There are another command to do the same thing:
+There are other commands which do the same thing:
 
 ```js
 eth.accounts
