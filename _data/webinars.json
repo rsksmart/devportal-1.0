@@ -15,6 +15,7 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/915605031",
       "lastModified": "2020-03-30T03:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg"
@@ -34,6 +35,7 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/j/850527491",
       "lastModified": "2020-03-30T03:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg"
@@ -53,6 +55,7 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/182679010",
       "lastModified": "2020-03-30T03:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg"
@@ -72,6 +75,7 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/j/211449645",
       "lastModified": "2020-03-30T03:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg"
@@ -91,6 +95,7 @@
       "presenterContact": "@guillevi\n@cgamin7",
       "videoStreamUrl": "https://zoom.us/j/666038949",
       "lastModified": "2020-03-30T03:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg"
@@ -110,6 +115,7 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/388106531",
       "lastModified": "2020-03-27T11:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg"
@@ -129,6 +135,7 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw",
       "lastModified": "2020-03-27T07:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg"
@@ -148,6 +155,7 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-IjMyuCbOg",
       "lastModified": "2020-03-27T07:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg"
@@ -162,11 +170,12 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
-      "presenter": "Brendan",
+      "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg",
       "lastModified": "2020-03-27T07:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg"
@@ -186,6 +195,7 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1fKj-HA",
       "lastModified": "2020-03-27T07:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg"
@@ -205,6 +215,7 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg",
       "lastModified": "2020-03-27T07:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg"
@@ -224,6 +235,7 @@
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ",
       "lastModified": "2020-03-29T14:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg"
@@ -243,6 +255,7 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7aaA",
       "lastModified": "2020-04-03T14:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg"
@@ -262,6 +275,7 @@
       "presenterContact": "@maxdh_ar",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg",
       "lastModified": "2020-04-03T14:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg"
@@ -281,6 +295,7 @@
       "presenterContact": "@maxdh_ar",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig",
       "lastModified": "2020-04-03T14:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg"
@@ -300,6 +315,7 @@
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ",
       "lastModified": "2020-04-03T14:00:00.000Z",
+      "status": "confirmed",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg"
@@ -307,8 +323,8 @@
     {
       "timestamp": "2020-04-08T22:30:00.000Z",
       "id": "202004-009",
-      "version": "1",
-      "url": "https://www.meetup.com/es-ES/rsk-community/events/269838837/",
+      "version": "2",
+      "url": "",
       "title": "Aprenda a utilizar rWallet e librerias RSK",
       "category": "Workshop",
       "locationCategory": "online",
@@ -317,8 +333,9 @@
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
-      "videoStreamUrl": "https://zoom.us/meeting/register/tJ0oc-iurTgjD1dvKkK-XHHzP2Heq_aIpA",
-      "lastModified": "2020-04-03T14:00:00.000Z",
+      "videoStreamUrl": "",
+      "lastModified": "2020-04-07T00:00:00.000Z",
+      "status": "cancelled",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg"
@@ -326,8 +343,8 @@
     {
       "timestamp": "2020-04-09T00:00:00.000Z",
       "id": "202004-010",
-      "version": "1",
-      "url": "https://www.meetup.com/es-ES/rsk-community/events/269838823/",
+      "version": "2",
+      "url": "",
       "title": "rWallet and RSK libraries",
       "category": "Workshop",
       "locationCategory": "online",
@@ -336,8 +353,9 @@
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
-      "videoStreamUrl": "https://zoom.us/meeting/register/vJ0pcuCspjov7k22_PYHpHhH3sBTUjSdXA",
-      "lastModified": "2020-04-03T14:00:00.000Z",
+      "videoStreamUrl": "",
+      "lastModified": "2020-04-07T00:00:00.000Z",
+      "status": "cancelled",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg"
@@ -345,8 +363,8 @@
     {
       "timestamp": "2020-04-09T21:00:00.000Z",
       "id": "202004-011",
-      "version": "1",
-      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269838453/",
+      "version": "2",
+      "url": "",
       "title": "rWallet y librería de RSK",
       "category": "Workshop",
       "locationCategory": "online",
@@ -355,11 +373,72 @@
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
-      "videoStreamUrl": "https://zoom.us/meeting/register/uJQlfuyurjopTVdCqUxT0A-MqiTMoCCbdg",
-      "lastModified": "2020-04-03T14:00:00.000Z",
+      "videoStreamUrl": "",
+      "lastModified": "2020-04-07T00:00:00.000Z",
+      "status": "cancelled",
       "type": "event/2",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg"
+    },
+    {
+      "timestamp": "2020-04-08T22:30:00.000Z",
+      "id": "202004-012",
+      "version": "1",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/269897747/",
+      "title": "Por dentro do Solidty",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "presenter": "Solange Gueiros",
+      "presenterDescription": "Developer Advocate",
+      "presenterContact": "@solangegueiros",
+      "videoStreamUrl": "https://zoom.us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg",
+      "lastModified": "2020-04-07T00:00:00.000Z",
+      "status": "confirmed",
+      "type": "event/2",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event2.jpg"
+    },
+    {
+      "timestamp": "2020-04-09T00:00:00.000Z",
+      "id": "202004-013",
+      "version": "1",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/269897805/",
+      "title": "Inside Solidity",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "presenter": "Brendan Graetz",
+      "presenterDescription": "Developer Advocate",
+      "presenterContact": "@bguiz",
+      "videoStreamUrl": "https://zoom.us/meeting/register/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg",
+      "lastModified": "2020-04-07T00:00:00.000Z",
+      "status": "confirmed",
+      "type": "event/2",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event3.jpg"
+    },
+    {
+      "timestamp": "2020-04-09T21:00:00.000Z",
+      "id": "202004-014",
+      "version": "1",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269897477/",
+      "title": "Por dentro de Solidty",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "presenter": "Angel Lopez",
+      "presenterDescription": "Software Engineer",
+      "presenterContact": "@ajlopez",
+      "videoStreamUrl": "https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw",
+      "lastModified": "2020-04-07T00:00:00.000Z",
+      "status": "confirmed",
+      "type": "event/2",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event4.jpg"
     }
   ]
 }
