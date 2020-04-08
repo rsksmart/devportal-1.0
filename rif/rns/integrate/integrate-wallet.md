@@ -119,7 +119,7 @@ This method is the simplest one for end users, because you will pay the transact
 
 Just need to create a service that will register subdomains on demand. It means that once a user creates a wallet, your app will dispatch a request to your server (who hosts a private key with funds) and that server will register domains by sending a transaction to a registrar contract. Check out this [example of the API and contract implementations](https://github.com/rnsdomains/rns-subdomain-tool), which even includes a sample front end.
 
-![](https://i.imgur.com/eFA66Kf.png)
+![](/assets/img/rns/subdomain-registration.png)
 
 Here's the checklist of the things you should do to complete this solution
 
@@ -157,7 +157,7 @@ This method needs a trigger that will activate the batch subdomain tool. You wil
 
 You will also need to consider on the client side that the delay of this method could be long. Have creativity! We receive all your ideas on how to entertain the user while waiting to publish them in our articles.
 
-![](https://i.imgur.com/kAmhoRC.png)
+![](/assets/img/rns/subdomain-batch.png)
 
 Here's the checklist of the things you should do to acquire this solution
 
@@ -169,7 +169,8 @@ Here's the checklist of the things you should do to acquire this solution
 
 ## Create more subdomains
 
-In order to create a subdomain, the sender should be the owner of the parent domain ([more information](/rif/rns/architecture/registry/)). When you have registered the subdomains for your user, you have decided if the owner of that subdomain was the user or another address. If you gave ownership to the user, so he can create more subdomains from his own. You can help him and provide that service within your wallet by using this code snippet.
+The RNS Registry is a tree of nodes ([more information](/rif/rns/architecture/registry/)). Each node owner governs the node, thus you are the owner of `mywallet.rsk`, you've created new domains for your users under your node. Let's assume you've created a new domain called `alice.mywallet.rsk` and have given the ownership of that new node to `Alice`'s address. Only `Alice` is allowed to create new nodes under her node, and you can help her to do that!
+Just need to provide that service within your wallet by using this code snippet.
 
 ```javascript
 const domain = 'alice.mywallet.rsk';
