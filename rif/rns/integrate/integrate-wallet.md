@@ -4,7 +4,7 @@ title: Integrate your wallet with RNS
 tags: rns, wallet, javascript, integrate
 ---
 
-First thing you need to do is to register the name of your wallet now! Search it here
+The first thing you need to do is to register the name of your wallet now! Search for it here:
 
 {% include rns-register.html %}
 
@@ -25,7 +25,7 @@ First thing you need to do is to register the name of your wallet now! Search it
 * [Create more subdomains under a user subdomain](#create-more-subdomains)
 
 <div class="alert alert-info">
-    This tutorial has been created to be used with the <a href="/rif/rns/libs/javascript/Getting-started/">RNS JS</a> library. The library needs <a href="https://www.npmjs.com/package/web3">Web3</a> to be instantiated, so if you use Web3, welcome to the journey!<br />
+    This tutorial has been created to be used with the <a href="/rif/rns/libs/javascript/Getting-started/">RNS JS</a> library. The library needs <a href="https://www.npmjs.com/package/web3">Web3</a> to be instantiated, so if you already use Web3, welcome to the journey!<br />
     If not, don't worry, you are still able to check out our <a href="/rif/rns/architecture/">smart contracts architecture</a> and interact directly with them, it's easy! We are working to port this library for different clients.
 </div>
 
@@ -35,7 +35,7 @@ A fundamental goal of RNS is to simplify blockchain user experience! Instead of 
 
 ### Use domains for RSK Addresses
 
-The following code snippet is a method that receives a domain and returns an address. You can use it in your wallet inputs, allowing users to enter just domains.
+The following code snippet is a method that receives a domain and returns an address. You can use it in your wallet inputs, allowing users to enter domains instead of addresses.
 
 ```javascript
 const getAddressFromDomain = async (domain) => {
@@ -57,11 +57,11 @@ const getAddressFromDomain = async (domain, coinId) => {
 }
 ```
 
-The coin id should match the one in [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
+The coin ID should match the one in [SLIP-0044](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
 
 ## Set address resolution
 
-Sometimes the user choose to change the address or your wallet does it for privacy purposes, so is important to keep the domain's address resolution updated.
+Sometimes a user may choose to change their address, or your wallet may choose to do so for privacy purposes. It is important to keep the domain's address resolution updated.
 
 ### Set RSK addresses
 
@@ -73,15 +73,15 @@ const setAddressForDomain = async (domain, newAddress) => {
 }
 ```
 
-Take in account that this method submits a transaction, so it will spend some gas.
+Take into account that this method submits a transaction, so it will spend some gas.
 
 ### Set other blockchain addresses
 
-The implementation of this method in the RNS JS library is in progress, you can check the status [here](https://github.com/rnsdomains/rns-js/issues/45). If you are not so patient, you can interact directly with the contracts. [Here](/rif/rns/architecture/MultiCryptoResolver/) you have some information about multichain resolution.
+The implementation of this method in the RNS JS library is in progress, and you can check [its status here](https://github.com/rnsdomains/rns-js/issues/45). If you do not wish to wait, you can interact directly with the contracts. Check out this article about [multichain resolution](/rif/rns/architecture/MultiCryptoResolver/).
 
 ## Register subdomains for newcomers
 
-There are several options to register subdomains to your users. The main thing you need to know is that the only payment needed is the transaction fee. Subdomains are completely free! The owner of the domains decides when, how and who will receive a subdomain.
+There are several options to register subdomains for your users. The main thing you need to know is that the only payment needed is the transaction fee. Subdomains are **completely free**! The owner of a domain decides when, how, and who receives subdomains.
 
 But before registering a subdomain, you need to make sure that the subdomain is available. Let's code a bit.
 
@@ -107,7 +107,8 @@ const rns = new RNS(web3Instance);
 const available = await rns.subdomains.available('mywallet.rsk', 'alice');
 ```
 
-If the subdomain is available, we can create it. Take a look on the different options:
+If the subdomain is available, we can create it. Take a look at these different options:
+
 * [Create a backend that executes registrations](#create-a-backend)
 * [Create a smart contract that gifts subdomains](#develop-a-smart-contract)
 * [Use the batch registration tool](#batch-subdomain-registration)
@@ -116,7 +117,7 @@ If the subdomain is available, we can create it. Take a look on the different op
 
 This method is the simplest one for end users, because you will pay the transaction fees.
 
-Just need to create a service that will register subdomains on demand. It means that once a user creates a wallet, your app will dispatch a request to your server (who hosts a private key with funds) and that server will register domains by sending a transaction to a registrar contract. You can find an example of the API and contract implementations [here](https://github.com/rnsdomains/rns-subdomain-tool). The app has a sample front end too.
+Just need to create a service that will register subdomains on demand. It means that once a user creates a wallet, your app will dispatch a request to your server (who hosts a private key with funds) and that server will register domains by sending a transaction to a registrar contract. Check out this [example of the API and contract implementations](https://github.com/rnsdomains/rns-subdomain-tool), which even includes a sample front end.
 
 ![](https://i.imgur.com/eFA66Kf.png)
 
@@ -130,12 +131,12 @@ Here's the checklist of the things you should do to complete this solution
 - [ ] Use that backend from your front end :smile_cat: -- [another sample here](https://github.com/rnsdomains/rns-subdomain-tool/blob/master/public/index.html)
 
 <div class="alert alert-warning">
-    Take in account that this solution is a centralized solution, <b>your server is a single point of failure.</b>
+    Take into account that this solution is a centralized solution, <b>your server is a single point of failure.</b>
 </div>
 
 #### Develop a smart contract
 
-This method it's fully descentralized, oriented to advanced users because they are in charge of paying the transaction fee.
+This method is fully decentralized, and is oriented towards advanced users because they are in charge of paying the transaction fee.
 
 You just need to develop a registrar smart contract (find an example [here](https://github.com/rnsdomains/rns-subdomain-tool/blob/master/contracts/registrar/SubdomainRegistrar.sol)) that will be the owner of your domain. Thus that contract is the owner, it is allowed to create subdomains under your wallet domain. So, once the user creates a wallet, your app will prompt him/her to create a subdomain by just submitting a transaction.
 
@@ -150,7 +151,7 @@ Here's the checklist of the things you should do to complete this solution
 
 #### Batch subdomain registration
 
-This solution is more complicated. We have a tool to register subdomains in fewer transactions and lower costs.
+This solution is more complicated. We have a tool which registers multiple subdomains using fewer transactions, and this incurring lower costs.
 
 This method needs a trigger that will activate the batch subdomain tool. You will also need to store in some place all the subdomains that should be created at the same time. We provide an example of that tool [here](https://github.com/rnsdomains/rns-subdomain-batch).
 
@@ -183,4 +184,5 @@ const createSubdomain = async (domain, label, aliceAddress, address) => {
 
 This will create a new domain called `savings.allice.mywallet.rsk` that will point to `address`. The owner of this new domain will be `alice.mywallet.rsk`.
 
-> As we said before, take in account that `alice.mywallet.rsk` should sign the transaction because she is the owner of the parent domain.
+> Take into account that `alice.mywallet.rsk` should sign the transaction because she is the owner of the parent domain.
+> If `mywallet.rsk` attempts to sign the transaction, it would fail, because it is not the owner of the parent domain.
