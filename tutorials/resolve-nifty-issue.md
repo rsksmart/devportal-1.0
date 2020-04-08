@@ -40,7 +40,7 @@ the **original set** of addresses by
 
 ## Add RSK as custom node
 
-To continue to us the derivation paths that were used previously by Nifty Wallet,
+To continue to use the derivation paths that were used previously by Nifty Wallet,
 perform the following steps to add RSK as a custom node.
 
 - Open Nifty Wallet
