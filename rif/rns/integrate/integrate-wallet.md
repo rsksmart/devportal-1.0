@@ -151,7 +151,7 @@ Here's the checklist of the things you should do to complete this solution
 
 #### Batch subdomain registration
 
-This solution is more complicated. We have a tool which registers multiple subdomains using fewer transactions, and this incurring lower costs.
+This solution is more complicated. We have a tool which registers multiple subdomains using fewer transactions, and thus incurs lower costs.
 
 This method needs a trigger that will activate the batch subdomain tool. You will also need to store in some place all the subdomains that should be created at the same time. We provide an example of that tool [here](https://github.com/rnsdomains/rns-subdomain-batch).
 
@@ -169,8 +169,8 @@ Here's the checklist of the things you should do to acquire this solution
 
 ## Create more subdomains
 
-The RNS Registry is a tree of nodes ([more information](/rif/rns/architecture/registry/)). Each node owner governs the node, thus you are the owner of `mywallet.rsk`, you've created new domains for your users under your node. Let's assume you've created a new domain called `alice.mywallet.rsk` and have given the ownership of that new node to `Alice`'s address. Only `Alice` is allowed to create new nodes under her node, and you can help her to do that!
-Just need to provide that service within your wallet by using this code snippet.
+The RNS Registry is a tree of nodes ([more information](/rif/rns/architecture/registry/)). Each node owner governs the node, thus if you are the owner of `mywallet.rsk`, you are able to create new domains for your users under your node. Let's assume you've created a new domain called `alice.mywallet.rsk` and have given the ownership of that new node to Alice. Only Alice is allowed to create new nodes under her node, and you can help her to do that!
+To do so, you need to provide that service within your wallet by using the following code snippet.
 
 ```javascript
 const domain = 'alice.mywallet.rsk';
