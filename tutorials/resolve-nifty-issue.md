@@ -5,6 +5,14 @@ description: "Resolution for breaking change in derivation path for Nifty Wallet
 tags: tutorial, nifty, chainId, address, derivation, bip44, slip44
 ---
 
+## Am I affected?
+
+First, check your Nifty wallet version:
+- Click the menu on the right (three horizontal lines)
+- Click "Info/Help"
+- If version is "5.0.0", then read the next section. If not, you are OK.
+## Nifty wallet version 5.0.0
+
 Recently, Nifty Wallet has fixed this issue:
 [Incorrect addresses derived from mnemonic for custom networks (RSK/ETC)](https://github.com/poanetwork/nifty-wallet/issues/331).
 Before it was fixed, Nifty incorrectly used Ethereum derivation paths,
