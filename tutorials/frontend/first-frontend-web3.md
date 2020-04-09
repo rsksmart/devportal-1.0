@@ -24,8 +24,8 @@ Below is a summary of the steps we would take to achieve this:
 
 Step 1 and 2 are explained in detail in the tutorial links below: 
 
-* [using Geth attach to a RSK local lode](/tutorials/geth-attach-local-node/)
-* [using Geth attach to a RSK local lode for Mac Users](/tutorials/geth-attach-local-node-mac/)
+* [using Geth attach to a RSK local lode](/tutorials/ethereum-devs/geth-attach-local-node/)
+* [using Geth attach to a RSK local lode for Mac Users](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
 
 Step 4 and 5 are explained in detail in the tutorial links below: 
 
@@ -44,8 +44,8 @@ Step 4 and 5 are explained in detail in the tutorial links below:
 
 As earlier mentioned,  Java JDK, RSK local node and Geth are explained in detail in the tutorial below: 
 
-* [using Geth attach to a RSK local lode](/tutorials/geth-attach-local-node/)
-* [using Geth attach to a RSK local lode for Mac Users](/tutorials/geth-attach-local-node-mac/)
+* [using Geth attach to a RSK local lode](/tutorials/ethereum-devs/geth-attach-local-node/)
+* [using Geth attach to a RSK local lode for Mac Users](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
 
 ## Node.js and NPM (Node Package Manager)
 
@@ -167,7 +167,7 @@ java -cp C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar -Drpc.providers.web.cors=* c
 java -cp /RSK/node/rskj-core-1.3.0-WASABI-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
-Check the tutorial: [using Geth attach to a RSK local node](/tutorials/geth-attach-local-node/) for more details on how to do this.
+Check the tutorial: [using Geth attach to a RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/) for more details on how to do this.
 
 **Important:**
 
@@ -193,7 +193,7 @@ geth attach [http://127.0.0.1:4444](http://127.0.0.1:4444)
 
 ![geth attach](/assets/img/tutorials/first-frontend-web3/image-06.png)
 
-Check the tutorial: [Using Geth attach to a RSK local node](/tutorials/geth-attach-local-node/) for more details on how to do this.
+Check the tutorial: [Using Geth attach to a RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/) for more details on how to do this.
 
 # Deploy a smart contract
 
@@ -201,7 +201,7 @@ Now we must create the file `register.js`, which is a script to deploy a smart c
 
 It is explained in detail in the tutorial: 
 
-* [Deploy a smart contract at RSK local node using Geth and Remix](/tutorials/geth-attach-deploy-smart-contract/).
+* [Deploy a smart contract at RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
 
 ![register.js](/assets/img/tutorials/first-frontend-web3/image-07.png)
 
