@@ -700,4 +700,98 @@ STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200407T000000Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202004-015@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200413T170000Z
+DTSTART:20200413T170000Z
+SUMMARY:RIF Name Services (Spanish) 
+DESCRIPTION:RIF Name Services (Spanish)\n\nOnline only\n\nRSVP: https://ww
+ w.meetup.com/es-ES/RSKBuenosAires/events/269959329\n\nVideo stream: https:
+ //zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF Nam
+ e Services (Spanish)</span></div>\n<div><span>Online only</span></div>\n<d
+ iv><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuen
+ osAires/events/269959329\">www.meetup.com/es-ES/RSKBuenosAires/events/2699
+ 59329</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"ht
+ tps://zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA\">zoom.u
+ s/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA</a></span></div>\n</
+ BODY>\n</HTML>
+ORGANIZER;CN="Ilan Olkies\, RNS PO\, @ilanolkies":mailto:developers@iovlab
+ s.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RIF Name Services (Spanish) 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269959329
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200410T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-016@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200414T170000Z
+DTSTART:20200414T170000Z
+SUMMARY:RIF Name Services (English) 
+DESCRIPTION:RIF Name Services (English)\n\nOnline only\n\nRSVP: https://ww
+ w.meetup.com/es-ES/rsk-community/events/269959370/\n\nVideo stream: https:
+ //zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF Nam
+ e Services (English)</span></div>\n<div><span>Online only</span></div>\n<d
+ iv><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-com
+ munity/events/269959370/\">www.meetup.com/es-ES/rsk-community/events/26995
+ 9370/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"ht
+ tps://zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw\">zoom.u
+ s/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw</a></span></div>\n</
+ BODY>\n</HTML>
+ORGANIZER;CN="Ilan Olkies\, RNS PO\, @ilanolkies":mailto:developers@iovlab
+ s.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RIF Name Services (English) 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269959370/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200410T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-017@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200415T223000Z
+DTSTART:20200415T223000Z
+SUMMARY:Crie seu primeiro frontend para um Smart Contract 
+DESCRIPTION:Crie seu primeiro frontend para um Smart Contract\n\nOnline on
+ ly\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/269959494/\n
+ \nVideo stream: https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZ
+ RaKHrhYZw\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Crie se
+ u primeiro frontend para um Smart Contract</span></div>\n<div><span>Online
+  only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.me
+ etup.com/es-ES/rsk-community/events/269959494/\">www.meetup.com/es-ES/rsk-
+ community/events/269959494/</a></span></div>\n<div><b>Video stream &nbsp\;
+ </b><span><a href=\"https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJ
+ Z3LZRaKHrhYZw\">zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZRaKHrhYZ
+ w</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Crie seu primeiro frontend para um Smart Contract 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269959494/
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200410T020000Z
+END:VEVENT
 END:VCALENDAR
