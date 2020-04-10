@@ -5,7 +5,7 @@ tags: tutorial, rsk, frontend, web3
 description: "How to create your first frontend for smart contracts using web3.js."
 ---
 
-In this tutorial I will show you step by step how to create your first front end to interact with a smart contract deployed at RSK local network, using only javascript and html.
+In this tutorial I will show you step by step how to create your first front end to interact with a smart contract deployed at RSK local network, using only Javascript and HTML.
 
 # Overview
 
@@ -42,16 +42,16 @@ Step 4 and 5 are explained in detail in the tutorial links below:
 * HTTP server: express
 * web3.js
 
-As earlier mentioned,  Java JDK, RSK local node and Geth are explained in detail in the tutorial below: 
+As mentioned above, the set up for Java JDK, RSK local node, and Geth are explained in detail in the tutorial below: 
 
 * [using Geth attach to a RSK local lode](/tutorials/ethereum-devs/geth-attach-local-node/)
 * [using Geth attach to a RSK local lode for Mac Users](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
 
 ## Node.js and NPM (Node Package Manager)
 
-We need to have Node.js and NPM, NPM comes with Node.js.
+We need to have Node.js and NPM, which come together.
 
-NB: Check if Node and NPM is already installed by inputting the following commands in the terminal:
+NB: Check if Node and NPM are already installed by inputting the following commands in the terminal:
 
 ```shell
 node --version
@@ -86,9 +86,9 @@ cd Register
 npm init -y
 ```
 
-For example, I will create a  folder at this location - C:\RSK\
+For example, I will create a  folder at this location - `C:\RSK\`
 
-My project can be located in the folder C:\RSK\Register.
+My project can be located in the folder `C:\RSK\Register`.
 
 ![Register project](/assets/img/tutorials/first-frontend-web3/image-03.png)
 
@@ -126,7 +126,7 @@ More info:
 
 ## Check package.json
 
-Package.json is a file created by npm with some configurations, including the packages which we installed before.
+`package.json` is a file created by npm with some configurations, including the packages which we installed before.
 
 After the installations, I will open the project at VS Code and verify the file package.json, take a look at dependencies:
 
@@ -151,7 +151,7 @@ java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtes
 
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file). 
 
-I am using a Windows OS and I saved the file at C:\RSK\node, so for me the full path is  `C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar`
+I am using a Windows OS and I saved the file at `C:\RSK\node`, so for me the full path is `C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar`
 
 The commands required to run the RSK node are:
 
@@ -223,7 +223,7 @@ contract Register {
 }
 ```
 
-This smart contract have:
+This smart contract has:
 
 * A variable `info` to store a string
 * A function `getInfo()` to return the string stored at variable info
@@ -264,7 +264,7 @@ We have only 2 files in the front end:
 
 ## Index.html
 
-At Register folder, create the file index.html
+In Register folder, create a file named `index.html`.
 
 Copy and paste a smart contract from the following gist, or inline below:
 
@@ -330,7 +330,7 @@ Copy and paste a smart contract from the following gist, or inline below:
 
 ## Index.js
 
-At Register folder, create the file index.js
+In the `Register` folder, create the file `index.js`.
 
 Copy and paste a smart contract from the following gist, or inline below:
 
@@ -384,7 +384,7 @@ function registerGetInfo() {
 }
 ```
 
-This line connected to RSK Local node:
+This line connects to the RSK Local node:
 
 ```javascript
 var web3 = new Web3(new Web3.providers.HttpProvider('http://127.0.0.1:4444/'));
@@ -402,7 +402,7 @@ var contractAddress = '0x73ec81da0c72dd112e06c09a6ec03b5544d26f05';
 
 # HTML server
 
-At Register folder, create the file server.js
+In the `Register` folder, create a file named `server.js`.
 
 ```javascript
 var express = require('express');
@@ -424,7 +424,7 @@ node server.js
 
 ![node server.js](/assets/img/tutorials/first-frontend-web3/image-10.png)
 
-In your browser, to go 
+In your browser, go to:
 
 ```shell
 [http://localhost:3300](http://localhost:3300)
