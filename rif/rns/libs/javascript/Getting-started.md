@@ -30,7 +30,7 @@ const web3 = new Web3('https://public-node.rsk.co')
 const rns = new RNS(web3)
 ```
 
-> If running the code in a webpage, don't need to copy the first two lines with the `import` statements, just instantiate them from the global scope.
+> Remember that if you are running the code in a webpage, no `import` statements are needed, just instantiate the libs made available in the global scope.
 
 > Find instructions in the [advanced usage](/rif/rns/libs/javascript/Advanced-usage/) section if running local or custom blockchains.
 

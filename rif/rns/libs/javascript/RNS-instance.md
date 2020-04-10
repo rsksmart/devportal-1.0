@@ -30,7 +30,7 @@ const web3 = new Web3('https://public-node.rsk.co') // or 'https://public-node.t
 const rns = new RNS(web3)
 ```
 
-> Remember that if you are running the code in a webpage, no `import` are needed, just instantiate the libs from the global scope.
+> Remember that if you are running the code in a webpage, no `import` statements are needed, just instantiate the libs made available in the global scope.
 
 ## Instance in Chrome with wallet extension (Metamask or Nifty)
 
