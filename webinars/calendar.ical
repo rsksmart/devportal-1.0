@@ -794,4 +794,94 @@ STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200410T020000Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202004-018@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200416T000000Z
+DTSTART:20200416T000000Z
+SUMMARY:Create your first frontend for Smart Contracts 
+DESCRIPTION:Create your first frontend for Smart Contracts\n\nOnline only\
+ n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/269959427\n\nVi
+ deo stream: https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQWt5
+ _q1Ug\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Create 
+ your first frontend for Smart Contracts</span></div>\n<div><span>Online on
+ ly</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetu
+ p.com/es-ES/rsk-community/events/269959427\">www.meetup.com/es-ES/rsk-comm
+ unity/events/269959427</a></span></div>\n<div><b>Video stream &nbsp\;</b><
+ span><a href=\"https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQ
+ Wt5_q1Ug\">zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQWt5_q1Ug</a>
+ </span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Create your first frontend for Smart Contracts 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269959427
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200412T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-019@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200416T123000Z
+DTSTART:20200416T123000Z
+SUMMARY:CANCELLED 
+DESCRIPTION:CANCELLED\n\nOnline only\n\nCancelled\, see webinars page for 
+ more details: https://developers.rsk.co/webinars/calendar.ical\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>CANCELL
+ ED</span></div>\n<div><span>Online only</span></div>\n<div><b>Cancelled\, 
+ see webinars page for more details &nbsp\;</b><span><a href=\"https://deve
+ lopers.rsk.co/webinars/calendar.ical\">developers.rsk.co/webinars/calendar
+ .ical</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Pedro Parrota (grupo sabra)\, \, ":mailto:developers@iovlabs
+ .org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:CANCELLED 
+END:VALARM
+CATEGORIES:Talk
+STATUS:CANCELLED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200412T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-020@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200417T170000Z
+DTSTART:20200417T170000Z
+SUMMARY:Crea tu primer frontend para Smart Contracts 
+DESCRIPTION:Crea tu primer frontend para Smart Contracts\n\nOnline only\n\
+ nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915\n\nVid
+ eo stream: https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdf
+ ky6w\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Crea tu
+  primer frontend para Smart Contracts</span></div>\n<div><span>Online only
+ </span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.
+ com/es-ES/RSKBuenosAires/events/269959915\">www.meetup.com/es-ES/RSKBuenos
+ Aires/events/269959915</a></span></div>\n<div><b>Video stream &nbsp\;</b><
+ span><a href=\"https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1
+ tXdfky6w\">zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdfky6w</a>
+ </span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Ilan Olkies\, RNS PO\, @ilanolkies":mailto:developers@iovlab
+ s.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Crea tu primer frontend para Smart Contracts 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200412T020000Z
+END:VEVENT
 END:VCALENDAR
