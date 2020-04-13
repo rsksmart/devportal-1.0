@@ -50,7 +50,7 @@ node --version
 npm --version
 ```
 
-![node and npm version](/assets/img/tutorials/first-frontend-web3injected/image-01.png)
+![node and npm version](/assets/img/tutorials/first-frontend-web3-injected/image-01.png)
 
 Go to [NodeJS](https://nodejs.org/en/) if you need to install it.
 
@@ -66,7 +66,7 @@ Verify if your VS code installation was successful by typing the following comma
 code -v
 ```
 
-![visual code version](/assets/img/tutorials/first-frontend-web3injected/image-02.png)
+![visual code version](/assets/img/tutorials/first-frontend-web3-injected/image-02.png)
 
 # Create the Register project
 
@@ -82,7 +82,7 @@ For example, I will create a  folder at this location - `C:\RSK\`
 
 My project can be located in the folder `C:\RSK\Register`.
 
-![Register project](/assets/img/tutorials/first-frontend-web3injected/image-03.png)
+![Register project](/assets/img/tutorials/first-frontend-web3-injected/image-03.png)
 
 ## Express
 
@@ -122,7 +122,7 @@ More info:
 
 After the installations, I will open the project at VS Code and verify the file package.json, take a look at dependencies:
 
-![package.json](/assets/img/tutorials/first-frontend-web3injected/image-04.png)
+![package.json](/assets/img/tutorials/first-frontend-web3-injected/image-04.png)
 
 You will find the previously installed packages:
 
@@ -153,7 +153,7 @@ File name: `Register.sol`
 
 Copy and paste a smart contract from the following gist, or inline below:
 
-[https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3injected/register.sol](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3injected/register.sol)
+[https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/register.sol](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/register.sol)
 
 ```
 pragma solidity 0.5.4;
@@ -187,15 +187,15 @@ In the 3rd button at the left side select Solidity compiler and click in the but
 
 In the left side panel, go to the button Deploy and run transactions. Then click in the button Deploy.
 
-![Deploy and run transactions](/assets/img/tutorials/first-frontend-web3injected/image-05.png)
+![Deploy and run transactions](/assets/img/tutorials/first-frontend-web3-injected/image-05.png)
 
 When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions. 
 
 Click on the copy button at right side of the smart contract to copy the address of the smart contract. We will need it for use in the frontend.
 
-![Copy](/assets/img/tutorials/first-frontend-web3injected/image-06.png)
+![Copy](/assets/img/tutorials/first-frontend-web3-injected/image-06.png)
 
-![smart contract address](/assets/img/tutorials/first-frontend-web3injected/image-07.png)
+![smart contract address](/assets/img/tutorials/first-frontend-web3-injected/image-07.png)
 
 In my example, the contract address is `0xc864D0fef177A69aFa8E302A1b90e450910A4c3E`.
 
@@ -214,7 +214,7 @@ In Register folder, create a file named `index.html`.
 
 Copy and paste a smart contract from the following gist, or inline below:
 
-[https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3injected/index.html](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3injected/index.html)
+[https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html)
 
 ```html
 <!DOCTYPE html>
@@ -281,18 +281,80 @@ In the `Register` folder, create the file `index.js`.
 
 Copy and paste a smart contract from the following gist, or inline below:
 
-#UPDATE
-[https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3injected/index.js](https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3injected/index.js)
+[https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js](https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js)
 
 
 ```javascript
+// Source code to interact with smart contract
 
+//connection with node using web3 injected
+if (window.ethereum) {
+  window.web3 = new Web3(window.ethereum)
+  window.ethereum.enable()
+}
+else if (window.web3) {
+  window.web3 = new Web3(window.web3.currentProvider)
+}
+else {
+  window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
+}
+console.log (window.web3.currentProvider)
+
+
+// contractAddress and abi are setted after contract deploy
+var contractAddress = '0xc864D0fef177A69aFa8E302A1b90e450910A4c3E';
+var abi = JSON.parse( '[{"constant":true,"inputs":[],"name":"getInfo","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_info","type":"string"}],"name":"setInfo","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}]' );
+
+//contract instance
+contract = new web3.eth.Contract(abi, contractAddress);
+
+// Accounts
+var account;
+
+web3.eth.getAccounts(function(err, accounts) {
+  if (err != null) {
+    alert("Error retrieving accounts.");
+    return;
+  }
+  if (accounts.length == 0) {
+    alert("No account found! Make sure the Ethereum client is configured properly.");
+    return;
+  }
+  account = accounts[0];
+  console.log('Account: ' + account);
+  web3.eth.defaultAccount = account;
+});
+
+//Smart contract functions
+function registerSetInfo() {
+  info = $("#newInfo").val();
+  contract.methods.setInfo (info).send( {from: account}).then( function(tx) { 
+    console.log("Transaction: ", tx); 
+  });
+  $("#newInfo").val('');
+}
+
+function registerGetInfo() {
+  contract.methods.getInfo().call().then( function( info ) { 
+    console.log("info: ", info);
+    document.getElementById('lastInfo').innerHTML = info;
+  });    
+}
 ```
 
 This part connected to RSK Local node using the wallet injected, in our case, Metamask:
 
 ```javascript
-
+if (window.ethereum) {
+  window.web3 = new Web3(window.ethereum)
+  window.ethereum.enable()
+}
+else if (window.web3) {
+  window.web3 = new Web3(window.web3.currentProvider)
+}
+else {
+  window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
+}
 ```
 
 # Update index.js
@@ -327,7 +389,7 @@ The last step is to execute the express server.
 node server.js
 ```
 
-![node server.js](/assets/img/tutorials/first-frontend-web3injected/image-08.png)
+![node server.js](/assets/img/tutorials/first-frontend-web3-injected/image-08.png)
 
 In your browser, go to:
 
@@ -335,7 +397,7 @@ In your browser, go to:
 [http://localhost:3300](http://localhost:3300)
 ```
 
-![register frontend](/assets/img/tutorials/first-frontend-web3injected/image-09.png)
+![register frontend](/assets/img/tutorials/first-frontend-web3-injected/image-09.png)
 
 # Interact with the smart contract
 
@@ -345,7 +407,7 @@ Click on the Get button.
 
 It will call the function `getInfo()`at the smart contract instance register.
 
-![getInfo](/assets/img/tutorials/first-frontend-web3injected/image-10.png)
+![getInfo](/assets/img/tutorials/first-frontend-web3-injected/image-10.png)
 
 We do not have any info stored, because we did not specify an initial value in the smart contract.
 
@@ -357,7 +419,7 @@ It will call the `setInfo()` function at the smart contract instance register, w
 
 I will enter the value "RSK".
 
-![setInfo](/assets/img/tutorials/first-frontend-web3injected/image-11.png)
+![setInfo](/assets/img/tutorials/first-frontend-web3-injected/image-11.png)
 
 ### getInfo (again)
 
@@ -365,7 +427,7 @@ Now we have the value "RSK" saved, and we can check it.
 
 Click on the Get button again
 
-![getInfo again](/assets/img/tutorials/first-frontend-web3injected/image-12.png)
+![getInfo again](/assets/img/tutorials/first-frontend-web3-injected/image-12.png)
 
 And it returned the info "RSK".
 
@@ -377,6 +439,6 @@ You have successfully built your first decentralized application (DApp) powered 
 
 You can download the full source code to this tutorial here:
 
-[https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3injected](https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3injected)
+[https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3-injected](https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3-injected)
 
 Happy with this tutorial? I’d appreciate your feedback and share it if you like it :)
