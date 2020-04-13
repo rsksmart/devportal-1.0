@@ -383,7 +383,7 @@ This file configures the express HTML server.
 
 ## Running
 
-The last step is to execute the express server.
+The last step is to execute the express server. Input the command below into the terminal.
 
 ```shell
 node server.js
