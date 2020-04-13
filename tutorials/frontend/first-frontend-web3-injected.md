@@ -22,7 +22,7 @@ Below is a summary of the steps to be taken to build our front end:
 9. Install and run a local server;
 10. Interact with the smart contract.
 
-Steps 1 to 4 are explained in detail in the tutorial links below: 
+Steps 1 to 4 are explained in detail in the tutorial link below: 
 
 * [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
