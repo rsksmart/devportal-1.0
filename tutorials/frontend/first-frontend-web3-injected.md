@@ -5,17 +5,17 @@ tags: tutorial, rsk, frontend, web3
 description: "How to create your first frontend for smart contracts using an injected web3 provider."
 ---
 
-In this tutorial I will show you step by step how to create your first front end to interact with a smart contract deployed at RSK local network, using only Javascript and HTML and connected to a wallet with web3 injected.
+In this tutorial I will show you step-by-step how to create your first front end to interact with a smart contract deployed at RSK local network, using only Javascript and HTML and connected to a wallet using a web3 provider.
 
 # Overview
 
-Below is a summary of the steps we would take to achieve this:
+Below is a summary of the steps to be taken to build our front end:
 
 1. Configure Metamask to connect to RSK testnet;
 2. Get some testnet R-BTCs at faucet;
 3. Connect Remix with RSK Testnet;
-4. Create, compile and deploy a smart contract RSK Testnet using Remix;
-5. Initialise a project;
+4. Create, compile and deploy a smart contract on RSK Testnet using Remix;
+5. Initialise the project;
 6. Install web3.js;
 7. Create a javascript file;
 8. Create a html file;
@@ -30,20 +30,20 @@ Steps 1 to 4 are explained in detail in the tutorial links below:
 
 * Metamask
 * Remix - web tool, online
-* NodeJs and npm
-* Visual code or other editor
+* Node.js and NPM (Node Package Manager)
+* Visual Studio Code (VSCode) or any other editor of your choice
 * HTTP server: express
 * web3.js
 
-As earlier mentioned, to install Metamask and connect to RSK testnet and connect Remix with RSK Testnet are explained in detail in the tutorial below: 
+As earlier mentioned, to install Metamask and connect to RSK testnet and to connect Remix with RSK Testnet are explained in detail in the tutorial link below: 
 
 * [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
-## Node.js and NPM (Node Package Manager)
+## Node.js and NPM
 
-We need to have Node.js and NPM, which come together.
+Node.js and NPM are needed, though both are usually installed at once.
 
-NB: Check if Node and NPM are already installed by inputting the following commands in the terminal:
+NB: To check if Node.js and NPM is already installed, input the following commands in the terminal:
 
 ```shell
 node --version
@@ -52,11 +52,11 @@ npm --version
 
 ![node and npm version](/assets/img/tutorials/first-frontend-web3-injected/image-01.png)
 
-Go to [NodeJS](https://nodejs.org/en/) if you need to install it.
+Go to [Node.js](https://nodejs.org/en/) if you need to install it.
 
 ## Visual Studio Code (VSCode)
 
-I am using Visual Studio Code to create and edit my project. 
+In this tutorial, We would use VSCode to create and deploy our project.
 
 To use VSCode [download it here](https://code.visualstudio.com/download).
 
@@ -70,7 +70,7 @@ code -v
 
 # Create the Register project
 
-Create a folder named Register, and start an npm project in the Register folder, by typing the following commands below into the terminal:
+Create a folder named Register, and start an npm project in the Register folder by typing the following commands below into the terminal:
 
 ```shell
 mkdir Register
@@ -86,9 +86,9 @@ My project can be located in the folder `C:\RSK\Register`.
 
 ## Express
 
-Express is Node.js web application framework that helps to develop web applications. It is a small HTTP server.
+Express is a Node.js web application framework that helps to develop web applications. It is a minimalist HTTP server.
 
-To install the small HTTP server Express, run this command at your project location:
+To install Express, input the command below into the terminal and press `enter` at your project location:
 
 ```shell
 npm install express --save
@@ -106,7 +106,9 @@ Web3.js helps us to develop websites or clients that interact with the blockchai
 
 The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to do the communications between the front-end and the RSK local node.
 
-To install web3.js, run this command at your project location:
+The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to interact with the front end and the RSK local node.
+
+To install web3.js, input the command below into the terminal and press `enter` at your project location:
 
 ```shell
 npm install web3 --save
@@ -118,9 +120,9 @@ More info:
 
 ## Check package.json
 
-`package.json` is a file created by npm with some configurations, including the packages which we installed before.
+`package.json` is a file created by npm with some configurations, including the packages which we installed before using the command `npm init -y`.
 
-After the installations, I will open the project at VS Code and verify the file package.json, take a look at dependencies:
+After the installations, I will open the project folder named Register in VSCode and verify the file package.json. Let's take a look at the dependencies in the file:
 
 ![package.json](/assets/img/tutorials/first-frontend-web3-injected/image-04.png)
 
@@ -135,7 +137,7 @@ You will find the previously installed packages:
 
 # Deploy a smart contract
 
-It is explained in detail in the tutorial: 
+This is explained in detail in the tutorial: 
 
 * [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
@@ -151,7 +153,7 @@ Create a new file
 
 File name: `Register.sol`
 
-Copy and paste a smart contract from the following gist, or inline below:
+Copy and paste the smart contract from the following gist, or copy and paste the code below:
 
 [https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/register.sol](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/register.sol)
 
@@ -185,13 +187,13 @@ In the 3rd button at the left side select Solidity compiler and click in the but
 
 ### Deploy a smart contract 
 
-In the left side panel, go to the button Deploy and run transactions. Then click in the button Deploy.
+In the left side panel, go to the button Deploy and run transactions. Then click the button `Deploy`.
 
 ![Deploy and run transactions](/assets/img/tutorials/first-frontend-web3-injected/image-05.png)
 
 When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions. 
 
-Click on the copy button at right side of the smart contract to copy the address of the smart contract. We will need it for use in the frontend.
+Click on the copy button at the right side of the smart contract to copy the address of the smart contract. We will need it for use on the front end.
 
 ![Copy](/assets/img/tutorials/first-frontend-web3-injected/image-06.png)
 
@@ -199,7 +201,7 @@ Click on the copy button at right side of the smart contract to copy the address
 
 In my example, the contract address is `0xc864D0fef177A69aFa8E302A1b90e450910A4c3E`.
 
-# Client-Side Application - The frontend
+# Client-Side Application - The front end
 
 Now let's start building out the client-side application that will talk to our smart contract. 
 
