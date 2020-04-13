@@ -435,7 +435,7 @@ Great! Now we have an information stored in our smart contract, and we can retri
 
 # Congratulations!
 
-You have successfully built your first decentralized application (DApp) powered by RSK smart contracts! 
+You have successfully built and deployed your first decentralized application (DApp) powered by RSK smart contracts! 
 
 You can download the full source code to this tutorial here:
 
