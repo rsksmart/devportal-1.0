@@ -214,7 +214,7 @@ We have only 2 files in the front end:
 
 In Register folder, create a file named `index.html`.
 
-Copy and paste a smart contract from the following gist, or inline below:
+Copy and paste the smart contract from the following gist, or copy and paste the code below:
 
 [https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html)
 
@@ -281,7 +281,7 @@ Copy and paste a smart contract from the following gist, or inline below:
 
 In the `Register` folder, create the file `index.js`.
 
-Copy and paste a smart contract from the following gist, or inline below:
+Copy and paste the smart contract from the following gist, or copy and paste the code below:
 
 [https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js](https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js)
 
@@ -385,7 +385,7 @@ This file configures the express HTML server.
 
 ## Running
 
-The last step is to execute the express server.
+The last step is to execute the express server. Input the command below into the terminal.
 
 ```shell
 node server.js
@@ -411,7 +411,7 @@ It will call the function `getInfo()`at the smart contract instance register.
 
 ![getInfo](/assets/img/tutorials/first-frontend-web3-injected/image-10.png)
 
-We do not have any info stored, because we did not specify an initial value in the smart contract.
+We do not have any information stored, because we did not specify an initial value in the smart contract.
 
 ### Set
 
@@ -433,14 +433,14 @@ Click on the Get button again
 
 And it returned the info "RSK".
 
-Great! Now we have information registered in our smart contract, and we can retrieve it!
+Great! Now we have an information stored in our smart contract, and we can retrieve it!
 
 # Congratulations!
 
-You have successfully built your first decentralized application (DApp) powered by RSK smart contracts! 
+You have successfully built and deployed your first decentralized application (DApp) powered by RSK smart contracts! 
 
 You can download the full source code to this tutorial here:
 
 [https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3-injected](https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3-injected)
 
-Happy with this tutorial? I’d appreciate your feedback and share it if you like it :)
+Satisfied with this tutorial? I’d appreciate your feedback and you can share it :)
