@@ -203,7 +203,7 @@ In my example, the contract address is `0xc864D0fef177A69aFa8E302A1b90e450910A4c
 
 # Client-Side Application - The front end
 
-Now let's start building out the client-side application that will talk to our smart contract. 
+Now let's start building out the front end that will interact with the smart contract. 
 
 We have only 2 files in the front end:
 
