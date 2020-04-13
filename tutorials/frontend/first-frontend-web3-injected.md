@@ -409,7 +409,7 @@ It will call the function `getInfo()`at the smart contract instance register.
 
 ![getInfo](/assets/img/tutorials/first-frontend-web3-injected/image-10.png)
 
-We do not have any info stored, because we did not specify an initial value in the smart contract.
+We do not have any information stored, because we did not specify an initial value in the smart contract.
 
 ### Set
 
