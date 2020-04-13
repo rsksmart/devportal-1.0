@@ -2,7 +2,7 @@
 layout: rsk
 title: How to create your first frontend for smart contracts
 tags: tutorial, rsk, frontend, web3
-description: "How to create your first frontend for smart contracts using web3.js injected."
+description: "How to create your first frontend for smart contracts using an injected web3 provider."
 ---
 
 In this tutorial I will show you step by step how to create your first front end to interact with a smart contract deployed at RSK local network, using only Javascript and HTML and connected to a wallet with web3 injected.
