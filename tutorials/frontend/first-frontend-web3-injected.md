@@ -279,7 +279,7 @@ Copy and paste the smart contract from the following gist, or copy and paste the
 
 In the `Register` folder, create the file `index.js`.
 
-Copy and paste a smart contract from the following gist, or inline below:
+Copy and paste the smart contract from the following gist, or copy and paste the code below:
 
 [https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js](https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js)
 
