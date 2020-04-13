@@ -149,7 +149,7 @@ Go to [http://remix.ethereum.org/](http://remix.ethereum.org/)
 
 Create a new file
 
-File name: Register.sol
+File name: `Register.sol`
 
 Copy and paste a smart contract from the following gist, or inline below:
 
