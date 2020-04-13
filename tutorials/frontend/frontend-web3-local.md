@@ -1,11 +1,11 @@
 ---
 layout: rsk
-title: How to create your first frontend for smart contracts
+title: Create a frontend for smart contracts using web3 in a loca node
 tags: tutorial, rsk, frontend, web3
-description: "How to create your first frontend for smart contracts using web3.js."
+description: "How to create a frontend for smart contracts using web3.js directly connected to a local node."
 ---
 
-In this tutorial I will show you step by step how to create your first front end to interact with a smart contract deployed at RSK local network, using only Javascript and HTML.
+In this tutorial I will show you step by step how to create a front end to interact with a smart contract deployed at RSK local network, using only Javascript and HTML.
 
 # Overview
 
@@ -58,11 +58,11 @@ node --version
 npm --version
 ```
 
-![node and npm version](/assets/img/tutorials/first-frontend-web3/image-01.png)
+![node and npm version](/assets/img/tutorials/frontend-web3-local/image-01.png)
 
 Go to [NodeJS](https://nodejs.org/en/) if you need to install it.
 
-## Visual Studio Code(VSCode)
+## Visual Studio Code (VSCode)
 
 I am using Visual Studio Code to create and edit my project. 
 
@@ -74,7 +74,7 @@ Verify if your VS code installation was successful by typing the following comma
 code -v
 ```
 
-![visual code version](/assets/img/tutorials/first-frontend-web3/image-02.png)
+![visual code version](/assets/img/tutorials/frontend-web3-local/image-02.png)
 
 # Create the Register project
 
@@ -90,7 +90,7 @@ For example, I will create a  folder at this location - `C:\RSK\`
 
 My project can be located in the folder `C:\RSK\Register`.
 
-![Register project](/assets/img/tutorials/first-frontend-web3/image-03.png)
+![Register project](/assets/img/tutorials/frontend-web3-local/image-03.png)
 
 ## Express
 
@@ -130,7 +130,7 @@ More info:
 
 After the installations, I will open the project at VS Code and verify the file package.json, take a look at dependencies:
 
-![package.json](/assets/img/tutorials/first-frontend-web3/image-04.png)
+![package.json](/assets/img/tutorials/frontend-web3-local/image-04.png)
 
 You will find the previously installed packages:
 
@@ -175,7 +175,7 @@ Check the tutorial: [using Geth attach to a RSK local node](/tutorials/ethereum-
 
 This is the result on Windows OS:
 
-![run RSK local node](/assets/img/tutorials/first-frontend-web3/image-05.png)
+![run RSK local node](/assets/img/tutorials/frontend-web3-local/image-05.png)
 
 ## Geth attach
 
@@ -191,7 +191,7 @@ In this second window terminal, execute the geth attaching it to the node runnin
 geth attach [http://127.0.0.1:4444](http://127.0.0.1:4444)
 ```
 
-![geth attach](/assets/img/tutorials/first-frontend-web3/image-06.png)
+![geth attach](/assets/img/tutorials/frontend-web3-local/image-06.png)
 
 Check the tutorial: [Using Geth attach to a RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/) for more details on how to do this.
 
@@ -203,7 +203,7 @@ It is explained in detail in the tutorial:
 
 * [Deploy a smart contract at RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
 
-![register.js](/assets/img/tutorials/first-frontend-web3/image-07.png)
+![register.js](/assets/img/tutorials/frontend-web3-local/image-07.png)
 
 ### Register.sol
 
@@ -237,7 +237,7 @@ After creating the file `register.js`, in the second terminal:
 loadScript("C:/RSK/Register/register.js");
 ```
 
-![loadScript](/assets/img/tutorials/first-frontend-web3/image-08.png)
+![loadScript](/assets/img/tutorials/frontend-web3-local/image-08.png)
 
 
 Copy the address of the smart contract. We will need it for use in the frontend.
@@ -245,7 +245,7 @@ Copy the address of the smart contract. We will need it for use in the frontend.
 
 In my example, the contract address is `0x73ec81da0c72dd112e06c09a6ec03b5544d26f05`.
 
-![contract address](/assets/img/tutorials/first-frontend-web3/image-09.png)
+![contract address](/assets/img/tutorials/frontend-web3-local/image-09.png)
 
 **Important:**
 
@@ -422,7 +422,7 @@ The last step is to execute the express server.
 node server.js
 ```
 
-![node server.js](/assets/img/tutorials/first-frontend-web3/image-10.png)
+![node server.js](/assets/img/tutorials/frontend-web3-local/image-10.png)
 
 In your browser, go to:
 
@@ -430,7 +430,7 @@ In your browser, go to:
 [http://localhost:3300](http://localhost:3300)
 ```
 
-![register frontend](/assets/img/tutorials/first-frontend-web3/image-11.png)
+![register frontend](/assets/img/tutorials/frontend-web3-local/image-11.png)
 
 # Interact with the smart contract
 
@@ -440,7 +440,7 @@ Click on the Get button.
 
 It will call the function `getInfo()`at the smart contract instance register.
 
-![getInfo](/assets/img/tutorials/first-frontend-web3/image-12.png)
+![getInfo](/assets/img/tutorials/frontend-web3-local/image-12.png)
 
 We do not have any info stored, because we did not specify an initial value in the smart contract.
 
@@ -452,7 +452,7 @@ It will call the `setInfo()` function at the smart contract instance register, w
 
 I will enter the value "RSK".
 
-![setInfo](/assets/img/tutorials/first-frontend-web3/image-13.png)
+![setInfo](/assets/img/tutorials/frontend-web3-local/image-13.png)
 
 ### getInfo (again)
 
@@ -460,7 +460,7 @@ Now we have the value "RSK" saved, and we can check it.
 
 Click on the Get button again
 
-![getInfo again](/assets/img/tutorials/first-frontend-web3/image-14.png)
+![getInfo again](/assets/img/tutorials/frontend-web3-local/image-14.png)
 
 And it returned the info "RSK".
 
