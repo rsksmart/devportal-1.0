@@ -431,7 +431,7 @@ Click on the Get button again
 
 And it returned the info "RSK".
 
-Great! Now we have information registered in our smart contract, and we can retrieve it!
+Great! Now we have an information stored in our smart contract, and we can retrieve it!
 
 # Congratulations!
 
