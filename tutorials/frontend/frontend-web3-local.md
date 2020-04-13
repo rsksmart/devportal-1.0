@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Create a frontend for smart contracts using web3 in a loca node
+title: Create a frontend for smart contracts using web3 connected to a local node
 tags: tutorial, rsk, frontend, web3
 description: "How to create a frontend for smart contracts using web3.js directly connected to a local node."
 ---
