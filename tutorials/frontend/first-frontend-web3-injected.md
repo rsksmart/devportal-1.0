@@ -441,4 +441,4 @@ You can download the full source code to this tutorial here:
 
 [https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3-injected](https://github.com/solangegueiros/dapp-register-rsk/tree/master/register-rsk-web3-injected)
 
-Happy with this tutorial? I’d appreciate your feedback and share it if you like it :)
+Satisfied with this tutorial? I’d appreciate your feedback and you can share it :)
