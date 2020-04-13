@@ -212,7 +212,7 @@ We have only 2 files in the front end:
 
 In Register folder, create a file named `index.html`.
 
-Copy and paste a smart contract from the following gist, or inline below:
+Copy and paste the smart contract from the following gist, or copy and paste the code below:
 
 [https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html)
 
