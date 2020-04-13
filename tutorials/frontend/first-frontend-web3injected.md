@@ -217,6 +217,61 @@ Copy and paste a smart contract from the following gist, or inline below:
 [https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3injected/index.html](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3injected/index.html)
 
 ```html
+<!DOCTYPE html>
+<html >
+  <head>
+    <title>Register information at Blockchain</title>
+
+    <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="./index.js"></script>    
+  </head>
+
+  <body class="container">
+
+    <h1 class="page-header">Register information at Blockchain - RSK network</h1>
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Set information</h3>
+        <form class="form-inline" role="form">
+          <div class="form-group">
+            <table>
+              <tr>
+                <td><label for="newInfo">Info:</label> </td>
+                <td>
+                  <input class="form-control" id="newInfo">
+                </td>                          
+              </tr>
+            </table>
+          </div>
+          <a href="#" onclick="registerSetInfo()" class="btn btn-primary">Set</a>
+        </form>
+      </div>
+    </div>    
+
+    <div class="row">
+      <div>
+        <h3 class="sub-header">Get last information saved</h3>
+        <form class="form-inline" role="form">
+          <a href="#" onclick="registerGetInfo()" class="btn btn-primary">Get</a>
+          <div class="form-group">
+            <table>
+              <tr>
+                <td>Info:</td>
+                <td>
+                  <label id="lastInfo">
+                </td>                          
+              </tr>
+            </table>
+          </div>                
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>
 
 ```
 
