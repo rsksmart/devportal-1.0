@@ -23,7 +23,7 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 ## To build your front end
 
 - [How to create your first frontend for smart contracts](/tutorials/frontend/first-frontend-web3injected/)
-- [How to create a frontend for smart contracts using web3 in a local node](/tutorials/frontend/frontend-web3-local/)
+- [How to create a frontend for smart contracts using web3 connected to a local node](/tutorials/frontend/frontend-web3-local/)
 
 ## Truffle tutorials
 
