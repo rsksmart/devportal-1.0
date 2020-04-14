@@ -187,7 +187,11 @@ In the 3rd button at the left side select Solidity compiler and click in the but
 
 ### Deploy a smart contract 
 
-In the left side panel, go to the button Deploy and run transactions. Then click the button `Deploy`.
+In the left side panel, go to the button Deploy and run transactions. 
+
+At Environment, make sure you have selected the `Injected Web3`.
+
+Then click the button `Deploy`.
 
 ![Deploy and run transactions](/assets/img/tutorials/first-frontend-web3-injected/image-05.png)
 
@@ -283,25 +287,37 @@ In the `Register` folder, create the file `index.js`.
 
 Copy and paste the smart contract from the following gist, or copy and paste the code below:
 
-[https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js](https://github.com/solangegueiros/dapp-register-rsk/blob/master/register-rsk-web3-injected/index.js)
+[https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.js](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.js)
 
 
 ```javascript
 // Source code to interact with smart contract
 
-//connection with node using web3 injected
-if (window.ethereum) {
-  window.web3 = new Web3(window.ethereum)
-  window.ethereum.enable()
-}
-else if (window.web3) {
-  window.web3 = new Web3(window.web3.currentProvider)
-}
-else {
-  window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
-}
+// web3 provider with fallback for old version
+window.addEventListener('load', async () => {
+  // New web3 provider
+  if (window.ethereum) {
+      window.web3 = new Web3(ethereum);
+      try {
+          // ask user for permission
+          await ethereum.enable();
+          // user approved permission
+      } catch (error) {
+          // user rejected permission
+          console.log('user rejected permission');
+      }
+  }
+  // Old web3 provider
+  else if (window.web3) {
+      window.web3 = new Web3(web3.currentProvider);
+      // no need to ask for permission
+  }
+  // No web3 provider
+  else {
+      console.log('No web3 provider detected');
+  }
+});
 console.log (window.web3.currentProvider)
-
 
 // contractAddress and abi are setted after contract deploy
 var contractAddress = '0xc864D0fef177A69aFa8E302A1b90e450910A4c3E';
@@ -347,16 +363,30 @@ function registerGetInfo() {
 This part connected to RSK Local node using the wallet injected, in our case, Metamask:
 
 ```javascript
-if (window.ethereum) {
-  window.web3 = new Web3(window.ethereum)
-  window.ethereum.enable()
-}
-else if (window.web3) {
-  window.web3 = new Web3(window.web3.currentProvider)
-}
-else {
-  window.alert('Non-Ethereum browser detected. You should consider trying MetaMask!')
-}
+// web3 provider with fallback for old version
+window.addEventListener('load', async () => {
+  // New web3 provider
+  if (window.ethereum) {
+      window.web3 = new Web3(ethereum);
+      try {
+          // ask user for permission
+          await ethereum.enable();
+          // user approved permission
+      } catch (error) {
+          // user rejected permission
+          console.log('user rejected permission');
+      }
+  }
+  // Old web3 provider
+  else if (window.web3) {
+      window.web3 = new Web3(web3.currentProvider);
+      // no need to ask for permission
+  }
+  // No web3 provider
+  else {
+      console.log('No web3 provider detected');
+  }
+});
 ```
 
 # Update index.js
@@ -423,6 +453,8 @@ I will enter the value "RSK".
 
 ![setInfo](/assets/img/tutorials/first-frontend-web3-injected/image-11.png)
 
+Wait a few seconds for the transaction to be included in a block...
+
 ### getInfo (again)
 
 Now we have the value "RSK" saved, and we can check it.
@@ -434,6 +466,11 @@ Click on the Get button again
 And it returned the info "RSK".
 
 Great! Now we have an information stored in our smart contract, and we can retrieve it!
+
+### Note
+> We have a smart contract with a public function that has no restrictions about who is allowed to call it, but that's just for a demo.
+> 
+> In a real world smart contract there would definitely be some checks performed in any functions that alter the smart contract state.
 
 # Congratulations!
 
