@@ -66,6 +66,16 @@ Currently runs the following basic checks:
 
 ## Contributing
 
+### Gemfile
+
+The `Gemfile.lock` file in the root may change whenever you run bundler commands.
+However, do not commit this unless you explicitly want to update the dependencies.
+
+If you do wish to update the dependencies,
+do so in a separate branch whose name starts with `proj/`.
+This is to enforce separation of concerns,
+e.g. a documentation PR doees not contain dependency changes.
+
 ### Writing original documentation
 
 Steps:
