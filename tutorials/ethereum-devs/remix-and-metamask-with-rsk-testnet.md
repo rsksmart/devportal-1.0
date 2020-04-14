@@ -24,6 +24,25 @@ We will do these steps:
 7. Interact with the smart contract;
 8. Check the transactions in Metamask.
 
+## Webinar
+
+We have run a webinar in which we run through this tutorial:
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/-pJahYxJ4ms?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+The same webinar is also available in
+[Español](https://www.youtube.com/watch?v=TyKkkwF1PdM)
+and [Português](https://www.youtube.com/watch?v=45ii2vFLKJc).
+
+Check out our [other webinars](/webinars).
+
+## Translations
+
+This article is also available in
+[Português](https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/ "Crie seu primeiro smart contract utilizando Remix e Metamask com a RSK testnet").
+
 ## Requirements
 
 - Metamask
@@ -343,9 +362,3 @@ I showed to you how we can use some Ethereum developer tools, and it is great to
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
 I hope this tutorial has been helpful and I'd appreciate your feedback. Share it if you like it :)
-
-## Translations
-
-- Português:
-  - [Crie seu primeiro smart contract utilizando Remix e Metamask com a RSK testnet](https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/)
-  - [Webinar recording: Como criar seu primeiro smart contract na RSK network usando Remix e Metamask](https://www.youtube.com/watch?v=TTTUcgGO-Ko)
