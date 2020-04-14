@@ -141,7 +141,7 @@ This is explained in detail in the tutorial:
 
 * [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
-I will resume it here:
+We'll do the relevant parts of that tutorial here.
 
 ### Remix
 
