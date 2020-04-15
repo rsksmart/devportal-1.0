@@ -39,19 +39,68 @@ csvConverter
     }
   })
   .then((list) => {
-    const sortedList = list.sort((eventA, eventB) => {
-      if (eventA.id < eventB.id) {
-        return -1;
-      } else if (eventA.id > eventB.id) {
-        return 1;
-      } else if (eventA.timestamp < eventB.timestamp) {
-        return -1;
-      } else if (eventA.timestamp > eventB.timestamp) {
-        return 1;
-      } else {
-        return 0;
-      }
-    });
+    const sortedList = list
+      .sort((eventA, eventB) => {
+        // Order by lexical order of primary key, and a fallback on date time.
+        // Fallback should, under normal circumstances, never be needed,
+        // as primary key is unique, however is included in case of bad data.
+        if (eventA.id < eventB.id) {
+          return -1;
+        } else if (eventA.id > eventB.id) {
+          return 1;
+        } else if (eventA.timestamp < eventB.timestamp) {
+          return -1;
+        } else if (eventA.timestamp > eventB.timestamp) {
+          return 1;
+        } else {
+          return 0;
+        }
+      })
+      .map((event) => {
+        // Stabilise object key order (where implementation allows for it).
+        const {
+          type,
+          id,
+          version,
+          timestamp,
+          lastModified,
+          status,
+          url,
+          title,
+          category,
+          locationCategory,
+          location,
+          language,
+          presenter,
+          presenterDescription,
+          presenterContact,
+          videoStreamUrl,
+          tags,
+          image,
+          ...rest
+        } = event;
+        return {
+          type,
+          id,
+          version,
+          timestamp,
+          lastModified,
+          status,
+          url,
+          title,
+          category,
+          locationCategory,
+          location,
+          language,
+          presenter,
+          presenterDescription,
+          presenterContact,
+          videoStreamUrl,
+          tags,
+          image,
+          ...rest,
+        };
+      });
     const json = { events: sortedList };
     const jsonStr = JSON.stringify(json, undefined, 2) + '\n';
     fs.writeFile(jsonPath, jsonStr, (err) => {
