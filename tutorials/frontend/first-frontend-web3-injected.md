@@ -189,7 +189,8 @@ In the 3rd button at the left side select Solidity compiler and click in the but
 
 In the left side panel, go to the button Deploy and run transactions. 
 
-At Environment, make sure you have selected the `Injected Web3`.
+Under `Environment`, make sure you have selected the `Injected Web3` option,
+as this tells Remix to use the the Web3 provider injected by a browser plugin such as MetaMask of Nifty.
 
 Then click the button `Deploy`.
 
@@ -468,9 +469,10 @@ And it returned the info "RSK".
 Great! Now we have an information stored in our smart contract, and we can retrieve it!
 
 ### Note
-> We have a smart contract with a public function that has no restrictions about who is allowed to call it, but that's just for a demo.
+
+> We have a smart contract with a public function that has no restrictions about who is allowed to call it, but that's just for demonstration purposes.
 > 
-> In a real world smart contract there would definitely be some checks performed in any functions that alter the smart contract state.
+> In a real world smart contract, such checks would be performed in any functions that alter the smart contract state.
 
 # Congratulations!
 
