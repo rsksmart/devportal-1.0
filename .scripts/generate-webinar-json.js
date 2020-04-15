@@ -19,6 +19,8 @@ const csvConverter = csvToJson({
     presenterContact: stringColumnParser,
     url: stringColumnParser,
     videoStreamUrl: stringColumnParser,
+    recordedVideoUrl: stringColumnParser,
+    resources: multilineLabelledUrlColumnParser,
   },
 });
 
@@ -77,6 +79,8 @@ csvConverter
           videoStreamUrl,
           tags,
           image,
+          resources,
+          recordedVideoUrl,
           ...rest
         } = event;
         return {
@@ -98,6 +102,8 @@ csvConverter
           videoStreamUrl,
           tags,
           image,
+          resources,
+          recordedVideoUrl,
           ...rest,
         };
       });
@@ -118,6 +124,39 @@ function timestampColumnParser(item) {
   return iso8601;
 }
 
+const newLineRegexGlobal = /\r?\n/g;
+const newLineRegex = /\r?\n/;
+
 function stringColumnParser(item) {
-  return item.replace(/\r?\n/g, '\n').trim();
+  return item.replace(newLineRegexGlobal, '\n').trim();
+}
+
+const labelledUrlRegex = /([^:]+):\ (.+)/;
+
+function multilineLabelledUrlColumnParser(item) {
+  const result = [];
+  if (!item) {
+    return result;
+  }
+  const lines = item.trim().split(newLineRegex);
+  if (lines.length < 1) {
+    return result;
+  }
+  lines.forEach((line) => {
+    const lineResult = line.match(labelledUrlRegex);
+    if (lineResult && lineResult.length === 3) {
+      result.push({
+        label: lineResult[1],
+        url: lineResult[2],
+      });
+    } else {
+      console.log({
+        line,
+        lineResult,
+      });
+    }
+  });
+  console.log(item); // DEBUG remove me
+  console.log(result); // DEBUG remove me
+  return result;
 }
