@@ -18,7 +18,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/915605031",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event1.jpg"
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -38,7 +40,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/j/850527491",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event2.jpg"
+      "image": "img/events/event2.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -58,7 +62,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/182679010",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event3.jpg"
+      "image": "img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -78,7 +84,9 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/j/211449645",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event4.jpg"
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -98,7 +106,9 @@
       "presenterContact": "@guillevi\n@cgamin7",
       "videoStreamUrl": "https://zoom.us/j/666038949",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event5.jpg"
+      "image": "img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -118,7 +128,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/388106531",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event6.jpg"
+      "image": "img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -138,7 +150,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event2.jpg"
+      "image": "img/events/event2.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -158,7 +172,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-IjMyuCbOg",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event1.jpg"
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -178,7 +194,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event3.jpg"
+      "image": "img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -198,7 +216,9 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1fKj-HA",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event4.jpg"
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -218,7 +238,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event5.jpg"
+      "image": "img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -238,7 +260,9 @@
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event6.jpg"
+      "image": "img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -258,7 +282,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7aaA",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event1.jpg"
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -278,7 +304,9 @@
       "presenterContact": "@maxdh_ar",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event2.jpg"
+      "image": "img/events/event2.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -298,7 +326,9 @@
       "presenterContact": "@maxdh_ar",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event3.jpg"
+      "image": "img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -318,7 +348,9 @@
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event4.jpg"
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -338,7 +370,9 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event5.jpg"
+      "image": "img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -358,7 +392,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event6.jpg"
+      "image": "img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -378,7 +414,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event1.jpg"
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -398,14 +436,16 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event2.jpg"
+      "image": "img/events/event2.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
       "id": "202004-013",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-09T00:00:00.000Z",
-      "lastModified": "2020-04-07T00:00:00.000Z",
+      "lastModified": "2020-04-15T05:45:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269897805/",
       "title": "Inside Solidity",
@@ -418,7 +458,22 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event3.jpg"
+      "image": "img/events/event3.jpg",
+      "resources": [
+        {
+          "label": "notes",
+          "url": "https://gist.github.com/bguiz/a718ec6715a00cab3cef1654ffbe4810"
+        },
+        {
+          "label": "slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQGq3lXF_X51zJMGwLE04IDqumhP8T2subFdYSmgO0VP4TrxNx0lkuYFe0F12bUnYT2_4DHDDnXFhW3/pub?start=false&loop=false&delayms=600000#slide=id.p"
+        },
+        {
+          "label": "hands-on",
+          "url": "https://dappsdev.org/hands-on/solidity-intro/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/AXAqwreIQgQ"
     },
     {
       "type": "event/2",
@@ -438,7 +493,9 @@
       "presenterContact": "@ajlopez",
       "videoStreamUrl": "https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event4.jpg"
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -458,7 +515,9 @@
       "presenterContact": "@ilanolkies",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event5.jpg"
+      "image": "img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -478,7 +537,9 @@
       "presenterContact": "@ilanolkies",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event6.jpg"
+      "image": "img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -498,7 +559,9 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZRaKHrhYZw",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event1.jpg"
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -518,7 +581,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQWt5_q1Ug",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event2.jpg"
+      "image": "img/events/event2.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -538,7 +603,9 @@
       "presenterContact": "",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event3.jpg"
+      "image": "img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -558,7 +625,9 @@
       "presenterContact": "@ilanolkies",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdfky6w",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event4.jpg"
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -578,7 +647,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event5.jpg"
+      "image": "img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -598,7 +669,9 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event6.jpg"
+      "image": "img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -618,7 +691,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event1.jpg"
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -638,7 +713,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event2.jpg"
+      "image": "img/events/event2.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -658,7 +735,9 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event3.jpg"
+      "image": "img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -678,7 +757,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event4.jpg"
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -698,7 +779,9 @@
       "presenterContact": "@bguiz",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event5.jpg"
+      "image": "img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -718,7 +801,9 @@
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event6.jpg"
+      "image": "img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
@@ -738,7 +823,9 @@
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "",
       "tags": "online online-workshop general non-developers",
-      "image": "img/events/event1.jpg"
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     }
   ]
 }

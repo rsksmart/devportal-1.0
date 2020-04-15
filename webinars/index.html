@@ -100,7 +100,11 @@
             </div>
          </div>
       </section>
+
       <!-- Calendar -->
+      {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
+      {% assign events = (site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'" | sort: 'timestamp') %}
+
       <section id="rules">
          <img class="circle-blue" src="img/circles/circle-blue.png">
          <div class="container">
@@ -120,7 +124,7 @@
                            <option value=".general">General Public</option>
                            <option value=".developers-audience">Developers</option>
                            <option value=".enterprise">Enterprise</option>
-                           <option value=".startups">Startups & Entrepreneurs</option>
+                           <option value=".startups">Startups &amp; Entrepreneurs</option>
                         </select>
                      </div>
                      <div class="ui-group">
@@ -164,13 +168,11 @@
                   </div>
                </div>
             </div>
+
             <div class="row">
                <!-- Event grid -->
                <div class="grid">
                   <div class="row">
-
-               {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-               {% assign events = (site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'" | sort: 'timestamp') %}
                {% for event in events %}
                   {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
                   {% if timestamp > now %}
@@ -181,7 +183,8 @@
                      data-timestamp="{{ event.timestamp }}">
                      <a href="{{ event.url }}"
                         target="_blank"
-                        rel="noopener noreferrer">
+                        rel="noopener noreferrer"
+                        class="event-inner">
 
                            <div class="image-group" style="background-image: url('{{ event.image }}');">
                               <div class="event-type">{{ event.category }}</div>
@@ -226,15 +229,17 @@
                      </a>
                   </div>
 
-                  <!-- -->
+                  <!-- /Event -->
                   {% endif %}
                {% endfor %}
-
+                  </div>
                </div>
+               <!-- /Event grid -->
             </div>
-            <!-- EVENTOS ENDS -->
          </div>
       </section>
+
+      <!-- ical -->
       <section id="add-calendar">
          <div class="container">
             <div class="row">
@@ -279,6 +284,149 @@
             </div>
          </div>
       </section>
+
+      <!-- past events calendar -->
+      <section id="calendar-past">
+         <img class="circle-blue" src="img/circles/circle-blue.png">
+         <div class="container">
+            <div class="row mb-3">
+               <div class="col-lg-6">
+                  <h2><span class="bold rsk_green">Past events</span></h2>
+               </div>
+            </div>
+            <!-- Event selection -->
+            <div class="row mb-5" style="display: none;">
+               <div class="col">
+                  <div class="filters">
+                     <div class="ui-group">
+                        <h3 class="title-sm">Audience</h3>
+                        <select class="filter-select" value-group="audience">
+                           <option value="">All</option>
+                           <option value=".general">General Public</option>
+                           <option value=".developers-audience">Developers</option>
+                           <option value=".enterprise">Enterprise</option>
+                           <option value=".startups">Startups &amp; Entrepreneurs</option>
+                        </select>
+                     </div>
+                     <div class="ui-group">
+                        <h3 class="title-sm">Content</h3>
+                        <select class="filter-select" value-group="content">
+                           <option value="">All</option>
+                           <option value=".developers">For Developers</option>
+                           <option value=".non-developers">For non Developers</option>
+                        </select>
+                     </div>
+                     <div class="ui-group">
+                        <h3 class="title-sm">Type</h3>
+                        <select class="filter-select" value-group="shape">
+                           <option value="">All</option>
+                           <option class="option-level-one" value=".online">Online</option>
+                           <option value=".online-webinar">Webinar</option>
+                           <option value=".online-talk">Talk</option>
+                           <option value=".online-workshop">Workshop</option>
+                           <option value=".online-hackathon">Hackathon</option>
+                           <option value=".online-conference">Conference</option>
+                           <option class="option-level-one" value=".offline">Offline</option>
+                           <option value=".offline-talk">Talk</option>
+                           <option value=".offline-workshop">Workshop</option>
+                           <option value=".offline-hackathon">Hackathon</option>
+                           <option value=".offline-conference">Conference</option>
+                           <option value=".offline-meetup">Meetup</option>
+                        </select>
+                     </div>
+                     <div class="ui-group">
+                        <h3 class="title-sm">Region</h3>
+                        <select class="filter-select" value-group="region">
+                           <option value="">Worldwide</option>
+                           <option value=".europe">Europe</option>
+                           <option value=".asia">Asia</option>
+                           <option value=".africa">Africa</option>
+                           <option value=".latam">Latam</option>
+                           <option value=".north-america">North America</option>
+                           <option value=".oceania">Oceania</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+               <!-- Past event grid -->
+               <div class="grid">
+                  <div class="row">
+               {% for event in events %}
+                  {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
+                  {% if timestamp <= now and event.recordedVideoUrl != "" %}
+                  <!-- Past event -->
+
+                  <div
+                     class="col-lg-4 eventos {{ event.tags }}"
+                     data-timestamp="{{ event.timestamp }}">
+                     <div class="event-inner">
+
+                           <div class="image-group" style="background-image: url('{{ event.image }}');">
+                              <div class="event-type">{{ event.category }}</div>
+                           </div>
+                           <div class="info-group">
+                              <div class="title-group">
+                                 {{ event.title }}
+                                 <br>
+                                 {{ event.subtitle }}
+                              </div>
+                              <div class="desc-group">
+                                 <span class="bold">
+                                 </span>
+                                 <span>
+                                    <i class="fa fa-video" aria-hidden="true"></i>
+                                    <span class="text display-recorded-video-url">
+                                       <a href="{{ event.recordedVideoUrl }}"
+                                          rel="noreferrer noopener"
+                                          target="_blank">
+                                          View Recording
+                                       </a>
+                                    </span>
+                                 </span>
+                                 <span>
+                                    <i class="fa fa-language" aria-hidden="true"></i>
+                                    <span class="text display-language">{{ event.language }}</span>
+                                 </span>
+                                 <span>
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span class="text display-date"></span>
+                                 </span>
+                                 {% assign resourceCount = event.resources | size %}
+                                 {% if resourceCount > 0 %}
+                                 <span>
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                    <span class="text">Resources</span>
+                                 </span>
+                                 <ul class="text display-resource">
+                                    {% for resource in event.resources %}
+                                       <li>
+                                          <a href="{{ resource.url }}"
+                                             rel="noreferrer noopener"
+                                             target="_blank">
+                                             {{ resource.label }}
+                                          </a>
+                                       </li>
+                                    {% endfor %}
+                                 </ul>
+                                 {% endif %}
+                              </div>
+                           </div>
+                     </a>
+                  </div>
+
+                  <!-- /Past event -->
+                  {% endif %}
+               {% endfor %}
+                  </div>
+               </div>
+               <!-- /Past event grid -->
+            </div>
+         </div>
+      </section>
+
       <!-- scope -->
       <section id="brands">
          <div class="container">
@@ -289,6 +437,7 @@
             </div>
          </div>
       </section>
+
       <!-- footer -->
       <footer id="footer" class="section-bg">
          <div class="footer-top">
