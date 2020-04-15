@@ -117,7 +117,11 @@ button:focus {
 .three-brands {
     max-width: 65%;
 }
-#rules{margin-top:0px;}
+
+#calendar,
+#calendar-past {
+    margin-top:0px;
+}
 
 #youtube {
     padding-top: 100px;
@@ -130,13 +134,23 @@ button:focus {
 }
 
 
-/* Rules */
+/* Calendar */
 
-#rules .right-col {
+#calendar .right-col {
     padding-left: 30px;
 }
 
-#rules .left-col {
+#calendar .left-col {
+    padding-right: 30px;
+}
+
+/* Calendar-past */
+
+#calendar-past .right-col {
+    padding-left: 30px;
+}
+
+#calendar-past .left-col {
     padding-right: 30px;
 }
 
@@ -710,17 +724,17 @@ select {
     cursor: pointer;
 }*/
 
-.eventos > a {
+.eventos > .event-inner {
     display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-            justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 
-.eventos > a:hover {
+.eventos > *:hover {
     -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
@@ -910,7 +924,8 @@ a:hover .desc-group span:first-child {
     body {
         font-size: 16px!important;
     }
-    #rules,
+    #calendar,
+    #calendar-past,
     #scope {
         margin-bottom: 0px;
     }
@@ -940,13 +955,16 @@ a:hover .desc-group span:first-child {
     ¿ h5 {
         color: #00B520;
     }
-    #rules {
+    #calendar,
+    #calendar-past {
         padding-top: 0px;
     }
-    #rules .right-col {
+    #calendar .right-col,
+    #calendar-past .right-col {
         padding-left: 15px;
     }
-    #rules .left-col {
+    #calendar .left-col,
+    #calendar-past .left-col {
         padding-right: 15px;
     }
     #scope {
