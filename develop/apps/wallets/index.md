@@ -84,6 +84,7 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
 - [Jaxx](/develop/apps/wallets/jaxx)
 - [Ledger](/develop/apps/wallets/ledger)
 - [MyCrypto](/develop/apps/wallets/mycrypto)
+- [Nifty](/develop/apps/wallets/nifty)
 - [Metamask](/develop/apps/wallets/metamask)
 - [RPC](/develop/apps/wallets/json-rpc)
 
