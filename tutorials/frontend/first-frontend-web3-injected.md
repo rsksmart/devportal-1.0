@@ -189,7 +189,7 @@ This smart contract has:
 
 In the 3rd button at the left side select Solidity compiler.
 
-![Solidity Compile](/assets/img/tutorials/first-frontend-web3-injected/image-14.png)
+![Solidity Compiler](/assets/img/tutorials/first-frontend-web3-injected/image-14.png)
 
 Click the button **Compile Register.sol**.
 
