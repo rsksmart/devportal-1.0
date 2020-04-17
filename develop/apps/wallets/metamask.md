@@ -15,13 +15,38 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
 
 3. Fill with these values to connect to RSK Mainnet or Testnet
 
-  | Field | RSK Mainnet | RSK Testnet |
-  | - | - | - |
-  | Network Name | RSK Mainnet | RSK Testnet |
-  | RPC Url | https://public-node.rsk.co | https://public-node.testnet.rsk.co |
-  | ChainID | 30 | 31 |
-  | Symbol | R-BTC | tR-BTC |
-  | Block explorer URL | https://explroer.rsk.co/ | https://explroer.testnet.rsk.co/ |
+  <table class="table">
+    <tr>
+      <td>Field</td>
+      <td>RSK Mainnet</td>
+      <td>RSK Testnet</td>
+    </tr>
+    <tr>
+      <td>Network Name</td>
+      <td>RSK Mainnet</td>
+      <td>RSK Testnet</td>
+    </tr>
+    <tr>
+      <td>RPC URL</td>
+      <td>https://public-node.rsk.co</td>
+      <td>https://public-node.testnet.rsk.co</td>
+    </tr>
+    <tr>
+      <td>ChainID</td>
+      <td>30</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Symbol</td>
+      <td>R-BTC</td>
+      <td>tR-BTC</td>
+    </tr>
+    <tr>
+      <td>Block explorer URL</td>
+      <td>https://explroer.rsk.co/</td>
+      <td>https://explroer.testnet.rsk.co/</td>
+    </tr>
+  </table>
 
 Now MetaMask is ready to use with RSK!
 
