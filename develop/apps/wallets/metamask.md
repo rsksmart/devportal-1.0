@@ -16,11 +16,14 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
 3. Fill with these values to connect to RSK Mainnet or Testnet
 
   <table class="table">
+  <thead>
     <tr>
-      <td>Field</td>
-      <td>RSK Mainnet</td>
-      <td>RSK Testnet</td>
+      <th scope="col">Field</th>
+      <th scope="col">RSK Mainnet</th>
+      <th scope="col">RSK Testnet</th>
     </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>Network Name</td>
       <td>RSK Mainnet</td>
@@ -43,9 +46,10 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
     </tr>
     <tr>
       <td>Block explorer URL</td>
-      <td>https://explroer.rsk.co/</td>
-      <td>https://explroer.testnet.rsk.co/</td>
+      <td><a href="https://explorer.rsk.co/" target="_blank">https://explorer.rsk.co/</a></td>
+      <td><a href="https://explorer.testnet.rsk.co/" target="_blank">https://explorer.testnet.rsk.co/</a></td>
     </tr>
+  </tbody>
   </table>
 
 Now MetaMask is ready to use with RSK!
@@ -59,6 +63,6 @@ Try RSK in the testnet
 ## Disclaimer
 
 - Currency may be displayed as ETH. They are actually R-BTC.
-- This tutorial uses [RSK public nodes](/rsk/public-nodes). You can connect to another node by changing the RPC Url
+- This tutorial uses [RSK public nodes](/rsk/public-nodes). You can connect to another node by changing the RPC URL
 - The node must have CORS enabled. It can be fully enabled using `'*'`.
   - Please review the [configuration file reference](/rsk/node/configure).
