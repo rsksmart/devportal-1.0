@@ -156,7 +156,5 @@ function multilineLabelledUrlColumnParser(item) {
       });
     }
   });
-  console.log(item); // DEBUG remove me
-  console.log(result); // DEBUG remove me
   return result;
 }
