@@ -147,6 +147,10 @@ We'll do the relevant parts of that tutorial here.
 
 Go to [http://remix.ethereum.org/](http://remix.ethereum.org/)
 
+![Remix Homepage](/assets/img/tutorials/first-frontend-web3-injected/image-15.png)
+
+NB: Ensure to click the **Solidity** button under **Environment** in the image above, since our code is written in the solidity language, we'll use the Solidity Environment to compile our smart contract.
+
 ### Create a smart contract
 
 Create a new file
@@ -183,18 +187,28 @@ This smart contract has:
 
 ### Compile a smart contract 
 
-In the 3rd button at the left side select Solidity compiler and click in the button Compile Register.sol.
+In the 3rd button at the left side select Solidity compiler.
+
+![Solidity Compile](/assets/img/tutorials/first-frontend-web3-injected/image-14.png)
+
+Click the button **Compile Register.sol**.
+
+![Compile Register.sol](/assets/img/tutorials/first-frontend-web3-injected/image-16.png)
 
 ### Deploy a smart contract 
 
 In the left side panel, go to the button Deploy and run transactions. 
 
 Under `Environment`, make sure you have selected the `Injected Web3` option,
-as this tells Remix to use the the Web3 provider injected by a browser plugin such as MetaMask of Nifty.
+as this tells Remix to use the Web3 provider injected by a browser plugin such as [MetaMask](https://metamask.io/) or [Nifty](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en).
+
+![Injected Web3](/assets/img/tutorials/first-frontend-web3-injected/image-13.png)
 
 Then click the button `Deploy`.
 
 ![Deploy and run transactions](/assets/img/tutorials/first-frontend-web3-injected/image-05.png)
+
+> NB: Ensure you have test ETH in your wallet, this is needed to deploy the smart contracts, to do this please follow the guide: [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/).
 
 When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions. 
 
@@ -427,16 +441,17 @@ node server.js
 In your browser, go to:
 
 ```shell
-[http://localhost:3300](http://localhost:3300)
+http://localhost:3300
 ```
+Click on the **Connect** button when the Metamask Wallet pops up
 
-![register frontend](/assets/img/tutorials/first-frontend-web3-injected/image-09.png)
+![register frontend](/assets/img/tutorials/first-frontend-web3-injected/image-17.png)
 
 # Interact with the smart contract
 
 ### Get
 
-Click on the Get button.
+Click on the **Get** button.
 
 It will call the function `getInfo()`at the smart contract instance register.
 
@@ -448,7 +463,7 @@ We do not have any information stored, because we did not specify an initial val
 
 Enter any value in the info text field, and click on the Set button.
 
-It will call the `setInfo()` function at the smart contract instance register, with the info that you defined.
+The web3 instance would call the `setInfo()` function at the smart contract instance register, with the info that you defined.
 
 I will enter the value "RSK".
 
