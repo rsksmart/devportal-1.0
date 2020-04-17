@@ -728,7 +728,7 @@ select {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: start;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
@@ -778,12 +778,13 @@ select {
     transition: all 0.5s ease;
     text-decoration: none!important;
     min-height: 80px;
-}
+    padding-top: 7px;
 }
 
 .desc-group {
     font-size: 14px;
     line-height: 18px;
+    margin-bottom: 5px;
 }
 
 .desc-group span {
@@ -841,6 +842,7 @@ select {
     font-weight: bold;
     font-size: 12px;
     padding: 5px 15px;
+    margin-top: auto;
 }
 
 a:hover .event-type {

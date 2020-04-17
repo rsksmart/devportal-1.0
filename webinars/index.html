@@ -105,7 +105,7 @@
       {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
       {% assign events = (site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'" | sort: 'timestamp') %}
 
-      <section id="rules">
+      <section id="calendar">
          <img class="circle-blue" src="img/circles/circle-blue.png">
          <div class="container">
             <div class="row mb-3">
@@ -185,47 +185,45 @@
                         target="_blank"
                         rel="noopener noreferrer"
                         class="event-inner">
-
-                           <div class="image-group" style="background-image: url('{{ event.image }}');">
-                              <div class="event-type">{{ event.category }}</div>
+                        <div class="image-group" style="background-image: url('{{ event.image }}');">
+                           <div class="event-type">{{ event.category }}</div>
+                        </div>
+                        <div class="info-group">
+                           <div class="title-group">
+                              {{ event.title }}
+                              <br>
+                              {{ event.subtitle }}
                            </div>
-                           <div class="info-group">
-                              <div class="title-group">
-                                 {{ event.title }}
-                                 <br>
-                                 {{ event.subtitle }}
-                              </div>
-                              <div class="desc-group">
-                                 <span class="bold">
-                                 {% if locationCategory == "online" %}
-                                    ONLINE EVENT
-                                 {% elsif locationCategory == "physical" %}
-                                    IN-PERSON EVENT
-                                 {% elsif locationCategory == "onlineAndPhysical" %}
-                                    ONLINE &amp; IN-PERSON EVENT
-                                 {% endif %}
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">{{ event.language }}</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date"></span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-clock" aria-hidden="true"></i>
-                                    <span class="text display-time"></span>
-                                    <span class="text display-tz"></span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                    <span class="text display-space">{{ event.location }}</span>
-                                 </span>
-                              </div>
+                           <div class="desc-group">
+                              <span class="bold">
+                              {% if locationCategory == "online" %}
+                                 ONLINE EVENT
+                              {% elsif locationCategory == "physical" %}
+                                 IN-PERSON EVENT
+                              {% elsif locationCategory == "onlineAndPhysical" %}
+                                 ONLINE &amp; IN-PERSON EVENT
+                              {% endif %}
+                              </span>
+                              <span>
+                                 <i class="fa fa-language" aria-hidden="true"></i>
+                                 <span class="text display-language">{{ event.language }}</span>
+                              </span>
+                              <span>
+                                 <i class="fa fa-calendar" aria-hidden="true"></i>
+                                 <span class="text display-date"></span>
+                              </span>
+                              <span>
+                                 <i class="fa fa-clock" aria-hidden="true"></i>
+                                 <span class="text display-time"></span>
+                                 <span class="text display-tz"></span>
+                              </span>
+                              <span>
+                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                 <span class="text display-space">{{ event.location }}</span>
+                              </span>
                            </div>
-                           <div class="button-group">More info +</div>
-
+                        </div>
+                        <div class="button-group">More info +</div>
                      </a>
                   </div>
 
@@ -363,58 +361,58 @@
                      class="col-lg-4 eventos {{ event.tags }}"
                      data-timestamp="{{ event.timestamp }}">
                      <div class="event-inner">
-
-                           <div class="image-group" style="background-image: url('{{ event.image }}');">
-                              <div class="event-type">{{ event.category }}</div>
+                        <div class="image-group" style="background-image: url('{{ event.image }}');">
+                           <div class="event-type">{{ event.category }}</div>
+                        </div>
+                        <div class="info-group">
+                           <div class="title-group">
+                              {{ event.title }}
+                              <br>
+                              {{ event.subtitle }}
                            </div>
-                           <div class="info-group">
-                              <div class="title-group">
-                                 {{ event.title }}
-                                 <br>
-                                 {{ event.subtitle }}
-                              </div>
-                              <div class="desc-group">
-                                 <span class="bold">
+                           <div class="desc-group">
+                              <span class="bold">
+                              </span>
+                              <span>
+                                 <i class="fa fa-video" aria-hidden="true"></i>
+                                 <span class="text display-recorded-video-url">
+                                    <a href="{{ event.recordedVideoUrl }}"
+                                       rel="noreferrer noopener"
+                                       target="_blank">
+                                       View Recording
+                                    </a>
                                  </span>
-                                 <span>
-                                    <i class="fa fa-video" aria-hidden="true"></i>
-                                    <span class="text display-recorded-video-url">
-                                       <a href="{{ event.recordedVideoUrl }}"
+                              </span>
+                              <span>
+                                 <i class="fa fa-language" aria-hidden="true"></i>
+                                 <span class="text display-language">{{ event.language }}</span>
+                              </span>
+                              <span>
+                                 <i class="fa fa-calendar" aria-hidden="true"></i>
+                                 <span class="text display-date"></span>
+                              </span>
+                              {% assign resourceCount = event.resources | size %}
+                              {% if resourceCount > 0 %}
+                              <span>
+                                 <i class="fa fa-link" aria-hidden="true"></i>
+                                 <span class="text">Resources</span>
+                              </span>
+                              <ul class="text display-resource">
+                                 {% for resource in event.resources %}
+                                    <li>
+                                       <a href="{{ resource.url }}"
                                           rel="noreferrer noopener"
                                           target="_blank">
-                                          View Recording
+                                          {{ resource.label }}
                                        </a>
-                                    </span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-language" aria-hidden="true"></i>
-                                    <span class="text display-language">{{ event.language }}</span>
-                                 </span>
-                                 <span>
-                                    <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    <span class="text display-date"></span>
-                                 </span>
-                                 {% assign resourceCount = event.resources | size %}
-                                 {% if resourceCount > 0 %}
-                                 <span>
-                                    <i class="fa fa-link" aria-hidden="true"></i>
-                                    <span class="text">Resources</span>
-                                 </span>
-                                 <ul class="text display-resource">
-                                    {% for resource in event.resources %}
-                                       <li>
-                                          <a href="{{ resource.url }}"
-                                             rel="noreferrer noopener"
-                                             target="_blank">
-                                             {{ resource.label }}
-                                          </a>
-                                       </li>
-                                    {% endfor %}
-                                 </ul>
-                                 {% endif %}
-                              </div>
+                                    </li>
+                                 {% endfor %}
+                              </ul>
+                              {% endif %}
                            </div>
-                     </a>
+                        </div>
+                        <div class="button-group"></div>
+                     </div>
                   </div>
 
                   <!-- /Past event -->
