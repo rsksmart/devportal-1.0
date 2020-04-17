@@ -28,7 +28,7 @@ Now MetaMask is ready to use with RSK!
 ## Now what?
 
 Try RSK in the testnet
-- [Get test R-BTC](https://facuet.rsk.co)
+- [Get test R-BTC](https://faucet.rsk.co)
 - [Get test RIF tokens](https://faucet.rifos.org)
 
 ## Disclaimer
