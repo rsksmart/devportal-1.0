@@ -20,14 +20,14 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/g2UZa7pJ7cI"
     },
     {
       "type": "event/2",
       "id": "202003-002",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-03-26T01:00:00.000Z",
-      "lastModified": "2020-03-30T03:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269565719/",
       "title": "How to create your first Smart Contract using Remix and Metamask at RSK Network",
@@ -41,15 +41,24 @@
       "videoStreamUrl": "https://zoom.us/j/850527491",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vTld4SkM84Yat76nPRUX5F1LH-DuoEEKBZf4hrtz4snu7Q_5M8CjmucrOGs-7y3rxF1sRnLCc1Sob-P/pub?start=false&loop=false&delayms=600000"
+        },
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/-pJahYxJ4ms"
     },
     {
       "type": "event/2",
       "id": "202003-003",
       "version": "3",
       "timestamp": "2020-03-25T21:00:00.000Z",
-      "lastModified": "2020-03-30T03:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096",
       "title": "Crea tu primer smart contract en RSK usando Remix and Nifty Wallet",
@@ -63,15 +72,20 @@
       "videoStreamUrl": "https://zoom.us/j/182679010",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/TyKkkwF1PdM"
     },
     {
       "type": "event/2",
       "id": "202003-004",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-03-25T22:30:00.000Z",
-      "lastModified": "2020-03-30T03:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269566069/",
       "title": "Como criar smart contracts na RSK network utilizando Remix e Metamask",
@@ -85,8 +99,17 @@
       "videoStreamUrl": "https://zoom.us/j/211449645",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
+        },
+        {
+          "label": "Portuguese Tutorial",
+          "url": "https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/45ii2vFLKJc"
     },
     {
       "type": "event/2",
@@ -108,7 +131,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/2emqQlK4Glw"
     },
     {
       "type": "event/2",
@@ -130,14 +153,14 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/mFaieJnJ7RA"
     },
     {
       "type": "event/2",
       "id": "202003-007",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-03-31T00:00:00.000Z",
-      "lastModified": "2020-03-27T07:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269677327/",
       "title": "What is RSK?\nWhat is Nifty Wallet?\nSet your first wallet!",
@@ -151,8 +174,13 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vR5ykBL7yfq5ZE25EFs1ogvPCs8dqsdk0xldPnR13JiB5dOnJSPaPvEy6ilILIG8a3MeKDzAROsT7Xw/pub?start=false&loop=false&delayms=600000"
+        }
+      ],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=k6w_XN7qygE"
     },
     {
       "type": "event/2",
@@ -174,14 +202,14 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7"
     },
     {
       "type": "event/2",
       "id": "202004-001",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-04-02T00:00:00.000Z",
-      "lastModified": "2020-03-27T07:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269677379/",
       "title": "Run your own first node by using Geth attaching to a RSK local node",
@@ -195,15 +223,28 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQr8yOp8xWXKhIBlPqRzHfjARcyZW40vp1VTe_-Qh-iAYgsWXpwBRo5OFtfIYgJCy8gx2ONhwBm6aTb/pub?start=false&loop=false&delayms=600000"
+        },
+        {
+          "label": "Notes",
+          "url": "https://gist.github.com/bguiz/a0400b44bb0c3d0baa5f8e6db0c2ef22"
+        },
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-local-node/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/apcD6bcSWpw"
     },
     {
       "type": "event/2",
       "id": "202004-002",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-04-01T22:30:00.000Z",
-      "lastModified": "2020-03-27T07:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269676954/",
       "title": "Utilizando Geth attach para interagir com um nó local da rede RSK",
@@ -217,15 +258,20 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1fKj-HA",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-local-node/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/z5AiHy0mC8U"
     },
     {
       "type": "event/2",
       "id": "202004-003",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-04-02T21:00:00.000Z",
-      "lastModified": "2020-03-27T07:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265/",
       "title": "Instala tu primer nodo usando Geth con tu nodo local de RSK",
@@ -239,8 +285,13 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-local-node/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/1Zs2m5z_S9g"
     },
     {
       "type": "event/2",
@@ -262,7 +313,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/lxrBOdcSQfo"
     },
     {
       "type": "event/2",
@@ -284,7 +335,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/WzheOfMretc"
     },
     {
       "type": "event/2",
@@ -306,7 +357,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/EBjrvm_5IoE"
     },
     {
       "type": "event/2",
@@ -328,7 +379,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/573jdX0TCZE"
     },
     {
       "type": "event/2",
@@ -350,7 +401,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/8yxo4-fu1H0"
     },
     {
       "type": "event/2",
@@ -438,14 +489,14 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/5QPytWwRsP8"
     },
     {
       "type": "event/2",
       "id": "202004-013",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-09T00:00:00.000Z",
-      "lastModified": "2020-04-15T05:45:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269897805/",
       "title": "Inside Solidity",
@@ -461,15 +512,15 @@
       "image": "img/events/event3.jpg",
       "resources": [
         {
-          "label": "notes",
-          "url": "https://gist.github.com/bguiz/a718ec6715a00cab3cef1654ffbe4810"
-        },
-        {
-          "label": "slides",
+          "label": "Slides",
           "url": "https://docs.google.com/presentation/d/e/2PACX-1vQGq3lXF_X51zJMGwLE04IDqumhP8T2subFdYSmgO0VP4TrxNx0lkuYFe0F12bUnYT2_4DHDDnXFhW3/pub?start=false&loop=false&delayms=600000#slide=id.p"
         },
         {
-          "label": "hands-on",
+          "label": "Notes",
+          "url": "https://gist.github.com/bguiz/a718ec6715a00cab3cef1654ffbe4810"
+        },
+        {
+          "label": "Hands on",
           "url": "https://dappsdev.org/hands-on/solidity-intro/"
         }
       ],
@@ -495,7 +546,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/9MLAykZ0U4Q"
     },
     {
       "type": "event/2",
@@ -517,7 +568,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/XzNcAcMAZXE"
     },
     {
       "type": "event/2",
@@ -539,7 +590,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/tvXEM1IExI8"
     },
     {
       "type": "event/2",
@@ -566,9 +617,9 @@
     {
       "type": "event/2",
       "id": "202004-018",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-16T00:00:00.000Z",
-      "lastModified": "2020-04-12T02:00:00.000Z",
+      "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959427",
       "title": "Create your first frontend for Smart Contracts",
@@ -582,7 +633,20 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQWt5_q1Ug",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQNSiv3jzp78IYyJTnqHEv1rfyLBEkosM2r8Y-VvzT0Obc3UWK4wgtpO9b50cJ42QqWYnQxUlnOsW5O/pub?start=false&loop=false&delayms=600000"
+        },
+        {
+          "label": "Notes",
+          "url": "https://gist.github.com/bguiz/e4297582b2627e090cf44455d33f2592"
+        },
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
