@@ -4,9 +4,9 @@ title: Nifty
 ---
 # How To Create A Nifty Wallet
 
-## Installing Nifty
+## Installing Nifty Wallet
 
-To install Nifty, please visit [POA Nifty](https://www.poa.network/for-users/nifty-wallet)
+To install the Nifty wallet, please visit [POA Nifty](https://www.poa.network/for-users/nifty-wallet)
 
 ## Connect with Nifty
 
@@ -14,7 +14,7 @@ To install Nifty, please visit [POA Nifty](https://www.poa.network/for-users/nif
 
 2. In the network selector (top right corner), choose RSK Testnet for testing and development purposes.
 
-2.1 For the Mainnet choose RSK, please note that this deals with real cryptocurrencies
+2.1 For the Mainnet choose RSK, please note that this deals with real cryptocurrencies.
 
 ![Nifty Wallet](/assets/img/nifty/niftyrsk.png)
 
