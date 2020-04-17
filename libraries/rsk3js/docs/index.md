@@ -9,13 +9,13 @@ tags: libraries, rsk, rsk3js, javascript, web3js
 ## Installation
 
 ```shell
-npm install rsk3
+npm install @rsksmart/rsk3
 ```
 
 ## Usage
 
 ```javascript
-import Rsk3 from 'rsk3';
+import Rsk3 from '@rsksmart/rsk3';
 
 // Create a Rsk3 instance
 const rsk3Instance = new Rsk3('http://localhost:4444');
@@ -42,7 +42,7 @@ Rsk3.utils.isAddress('0xCd2a3D9f938e13Cd947EC05aBc7fE734df8dD826');
 This example shows a complete code snippet to construct and send a transaction with Rsk3.
 
 ```javascript
-import Rsk3 from 'rsk3';
+import Rsk3 from '@rsksmart/rsk3';
 const rsk3 = new Rsk3('http://localhost:4444');
 const publicKey = '';
 const privateKey = '';
