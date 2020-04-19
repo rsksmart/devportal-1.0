@@ -891,12 +891,17 @@ DTSTAMP:20200422T130000Z
 DTSTART:20200422T130000Z
 SUMMARY:Create your own token on the RSK network 
 DESCRIPTION:Create your own token on the RSK network\n\nOnline only\n\nRSV
- P: \n\nVideo stream: \n
+ P: https://www.meetup.com/es-ES/rsk-community/events/270120775/\n\nVideo s
+ tream: https://attendee.gotowebinar.com/register/4626395691306412302\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Create 
  your own token on the RSK network</span></div>\n<div><span>Online only</sp
- an></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stre
- am &nbsp\;</b><span></span></div>\n</BODY>\n</HTML>
+ an></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/
+ es-ES/rsk-community/events/270120775/\">www.meetup.com/es-ES/rsk-community
+ /events/270120775/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span
+ ><a href=\"https://attendee.gotowebinar.com/register/4626395691306412302\"
+ >attendee.gotowebinar.com/register/4626395691306412302</a></span></div>\n<
+ /BODY>\n</HTML>
 ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
  ers@iovlabs.org
 BEGIN:VALARM
@@ -905,9 +910,10 @@ TRIGGER:-PT10M
 DESCRIPTION:Create your own token on the RSK network 
 END:VALARM
 CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120775/
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200415T023000Z
+LAST-MODIFIED:20200418T094000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-022@developers.rsk.co/
@@ -915,13 +921,18 @@ SEQUENCE:0
 DTSTAMP:20200422T223000Z
 DTSTART:20200422T223000Z
 SUMMARY:Como criar seu token na RSK network 
-DESCRIPTION:Como criar seu token na RSK network\n\nOnline only\n\nRSVP: \n
- \nVideo stream: \n
+DESCRIPTION:Como criar seu token na RSK network\n\nOnline only\n\nRSVP: ht
+ tps://www.meetup.com/es-ES/rsk-community/events/270120781/\n\nVideo stream
+ : https://attendee.gotowebinar.com/register/4099803288880978958\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Como cr
  iar seu token na RSK network</span></div>\n<div><span>Online only</span></
- div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &n
- bsp\;</b><span></span></div>\n</BODY>\n</HTML>
+ div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES
+ /rsk-community/events/270120781/\">www.meetup.com/es-ES/rsk-community/even
+ ts/270120781/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a h
+ ref=\"https://attendee.gotowebinar.com/register/4099803288880978958\">atte
+ ndee.gotowebinar.com/register/4099803288880978958</a></span></div>\n</BODY
+ >\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
@@ -930,9 +941,10 @@ TRIGGER:-PT10M
 DESCRIPTION:Como criar seu token na RSK network 
 END:VALARM
 CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120781/
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200415T023000Z
+LAST-MODIFIED:20200418T094000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-023@developers.rsk.co/
@@ -940,13 +952,18 @@ SEQUENCE:0
 DTSTAMP:20200424T000000Z
 DTSTART:20200424T000000Z
 SUMMARY:Crea tu propio token en RSK network 
-DESCRIPTION:Crea tu propio token en RSK network\n\nOnline only\n\nRSVP: \n
- \nVideo stream: \n
+DESCRIPTION:Crea tu propio token en RSK network\n\nOnline only\n\nRSVP: ht
+ tps://www.meetup.com/es-ES/RSKBuenosAires/events/270120697/\n\nVideo strea
+ m: https://attendee.gotowebinar.com/register/4361944453128924174\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Crea tu
   propio token en RSK network</span></div>\n<div><span>Online only</span></
- div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &n
- bsp\;</b><span></span></div>\n</BODY>\n</HTML>
+ div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES
+ /RSKBuenosAires/events/270120697/\">www.meetup.com/es-ES/RSKBuenosAires/ev
+ ents/270120697/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a
+  href=\"https://attendee.gotowebinar.com/register/4361944453128924174\">at
+ tendee.gotowebinar.com/register/4361944453128924174</a></span></div>\n</BO
+ DY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
@@ -955,9 +972,11 @@ TRIGGER:-PT10M
 DESCRIPTION:Crea tu propio token en RSK network 
 END:VALARM
 CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270120697
+ /
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200415T023000Z
+LAST-MODIFIED:20200418T094000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-024@developers.rsk.co/
@@ -1033,6 +1052,104 @@ CATEGORIES:Workshop
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200415T023000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-027@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200423T130000Z
+DTSTART:20200423T130000Z
+SUMMARY:Create your first frontend for Smart Contracts 
+DESCRIPTION:Create your first frontend for Smart Contracts\n\nOnline only\
+ n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/270120788/\n\nV
+ ideo stream: https://attendee.gotowebinar.com/register/7663789965959102736
+ \n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Create 
+ your first frontend for Smart Contracts</span></div>\n<div><span>Online on
+ ly</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetu
+ p.com/es-ES/rsk-community/events/270120788/\">www.meetup.com/es-ES/rsk-com
+ munity/events/270120788/</a></span></div>\n<div><b>Video stream &nbsp\;</b
+ ><span><a href=\"https://attendee.gotowebinar.com/register/766378996595910
+ 2736\">attendee.gotowebinar.com/register/7663789965959102736</a></span></d
+ iv>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Create your first frontend for Smart Contracts 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120788/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200419T053600Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-028@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200424T170000Z
+DTSTART:20200424T170000Z
+SUMMARY:An introduction to RIF Lumino:\nConcepts\, ideas and architecture 
+DESCRIPTION:An introduction to RIF Lumino:\nConcepts\, ideas and architect
+ ure\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/eve
+ nts/270120801/\n\nVideo stream: https://attendee.gotowebinar.com/register/
+ 6455007773111865870\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>An intr
+ oduction to RIF Lumino:\nConcepts\, ideas and architecture</span></div>\n<
+ div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=
+ \"https://www.meetup.com/es-ES/rsk-community/events/270120801/\">www.meetu
+ p.com/es-ES/rsk-community/events/270120801/</a></span></div>\n<div><b>Vide
+ o stream &nbsp\;</b><span><a href=\"https://attendee.gotowebinar.com/regis
+ ter/6455007773111865870\">attendee.gotowebinar.com/register/64550077731118
+ 65870</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
+ lto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:An introduction to RIF Lumino:\nConcepts\, ideas and architect
+ ure 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120801/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200419T053600Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202004-029@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200424T190000Z
+DTSTART:20200424T190000Z
+SUMMARY:Introducción a RIF Lumino:\nConceptos\, ideas y arquitectura 
+DESCRIPTION:Introducción a RIF Lumino:\nConceptos\, ideas y arquitectura\n
+ \nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/
+ 270120715/\n\nVideo stream: https://attendee.gotowebinar.com/register/2428
+ 593993172923662\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Introdu
+ cción a RIF Lumino:\nConceptos\, ideas y arquitectura</span></div>\n<div><
+ span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"htt
+ ps://www.meetup.com/es-ES/RSKBuenosAires/events/270120715/\">www.meetup.co
+ m/es-ES/RSKBuenosAires/events/270120715/</a></span></div>\n<div><b>Video s
+ tream &nbsp\;</b><span><a href=\"https://attendee.gotowebinar.com/register
+ /2428593993172923662\">attendee.gotowebinar.com/register/24285939931729236
+ 62</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
+ lto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Introducción a RIF Lumino:\nConceptos\, ideas y arquitectura 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270120715
+ /
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200419T053600Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-001@developers.rsk.co/
