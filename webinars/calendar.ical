@@ -673,32 +673,32 @@ UID:202004-014@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200409T210000Z
 DTSTART:20200409T210000Z
-SUMMARY:Por dentro de Solidty 
-DESCRIPTION:Por dentro de Solidty\n\nOnline only\n\nRSVP: https://www.meet
- up.com/es-ES/RSKBuenosAires/events/269897477/\n\nVideo stream: https://zoo
- m.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw\n
+SUMMARY:Solidity por Dentro 
+DESCRIPTION:Solidity por Dentro\n\nOnline only\n\nRSVP: https://www.meetup
+ .com/es-ES/RSKBuenosAires/events/269897477/\n\nVideo stream: https://zoom.
+ us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
- /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Por den
- tro de Solidty</span></div>\n<div><span>Online only</span></div>\n<div><b>
- RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuenosAire
- s/events/269897477/\">www.meetup.com/es-ES/RSKBuenosAires/events/269897477
- /</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https:
- //zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw\">zoom.us/me
- eting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw</a></span></div>\n</BODY
- >\n</HTML>
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Solidit
+ y por Dentro</span></div>\n<div><span>Online only</span></div>\n<div><b>RS
+ VP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuenosAires/
+ events/269897477/\">www.meetup.com/es-ES/RSKBuenosAires/events/269897477/<
+ /a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://
+ zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw\">zoom.us/meet
+ ing/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw</a></span></div>\n</BODY>\
+ n</HTML>
 ORGANIZER;CN="Angel Lopez\, Software Engineer\, @ajlopez":mailto:developer
  s@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
-DESCRIPTION:Por dentro de Solidty 
+DESCRIPTION:Solidity por Dentro 
 END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269897477
  /
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200407T000000Z
+LAST-MODIFIED:20200420T013000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-015@developers.rsk.co/
@@ -882,7 +882,7 @@ CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200412T020000Z
+LAST-MODIFIED:20200420T013000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-021@developers.rsk.co/

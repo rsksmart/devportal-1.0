@@ -529,12 +529,12 @@
     {
       "type": "event/2",
       "id": "202004-014",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-09T21:00:00.000Z",
-      "lastModified": "2020-04-07T00:00:00.000Z",
+      "lastModified": "2020-04-20T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269897477/",
-      "title": "Por dentro de Solidty",
+      "title": "Solidity por Dentro",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -545,7 +545,12 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vSR3C6irA_Wty7jI1a2CmsUAmv8BC2OP8eawwntAOrL6pdjM35vAQGZf9kfhwpjTC8YArjPY-H89pQy/pub?start=false&loop=false&delayms=3000"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/9MLAykZ0U4Q"
     },
     {
@@ -674,9 +679,9 @@
     {
       "type": "event/2",
       "id": "202004-020",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-17T17:00:00.000Z",
-      "lastModified": "2020-04-12T02:00:00.000Z",
+      "lastModified": "2020-04-20T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915",
       "title": "Crea tu primer frontend para Smart Contracts",
@@ -690,7 +695,12 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdfky6w",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://hackmd.io/@ilanolkies/primer-fe-rsk"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
