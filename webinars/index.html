@@ -179,6 +179,7 @@
                   <!-- Event -->
 
                   <div
+                     id="event-id-{{ event.id }}"
                      class="col-lg-4 eventos {{ event.tags }}"
                      data-timestamp="{{ event.timestamp }}">
                      <a href="{{ event.url }}"
@@ -358,7 +359,8 @@
                   <!-- Past event -->
 
                   <div
-                     class="col-lg-4 eventos {{ event.tags }}"
+                     id="event-id-{{ event.id }}"
+                     class="col-lg-4 eventos eventos-past {{ event.tags }}"
                      data-timestamp="{{ event.timestamp }}">
                      <div class="event-inner">
                         <div class="image-group" style="background-image: url('{{ event.image }}');">
