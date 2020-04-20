@@ -455,7 +455,7 @@ Click on the **Connect** button when the Metamask Wallet pops up
 
 Click on the **Get** button.
 
-The web3 instance will call the `setInfo()` function at the smart contract instance `register`, with the info that you entered into the text field.
+The web3 instance will call the `setInfo()` function on the `register` smart contract instance, with the info that you entered into the text field.
 
 ![getInfo](/assets/img/tutorials/first-frontend-web3-injected/image-10.png)
 
