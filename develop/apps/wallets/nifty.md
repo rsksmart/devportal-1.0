@@ -24,7 +24,7 @@ Now the Nifty wallet is ready to use with RSK!
 
 Try RSK in the testnet using the links below:
 
-- [Get test R-BTC](https://facuet.rsk.co)
+- [Get test R-BTC](https://faucet.rsk.co)
 - [Get test RIF tokens](https://faucet.rifos.org)
 
 ## Disclaimer
