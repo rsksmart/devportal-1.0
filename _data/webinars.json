@@ -529,12 +529,12 @@
     {
       "type": "event/2",
       "id": "202004-014",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-09T21:00:00.000Z",
-      "lastModified": "2020-04-07T00:00:00.000Z",
+      "lastModified": "2020-04-20T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269897477/",
-      "title": "Por dentro de Solidty",
+      "title": "Solidity por Dentro",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -545,7 +545,12 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vSR3C6irA_Wty7jI1a2CmsUAmv8BC2OP8eawwntAOrL6pdjM35vAQGZf9kfhwpjTC8YArjPY-H89pQy/pub?start=false&loop=false&delayms=3000"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/9MLAykZ0U4Q"
     },
     {
@@ -674,9 +679,9 @@
     {
       "type": "event/2",
       "id": "202004-020",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-17T17:00:00.000Z",
-      "lastModified": "2020-04-12T02:00:00.000Z",
+      "lastModified": "2020-04-20T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915",
       "title": "Crea tu primer frontend para Smart Contracts",
@@ -690,17 +695,22 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdfky6w",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://hackmd.io/@ilanolkies/primer-fe-rsk"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
       "id": "202004-021",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-04-22T13:00:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-18T09:40:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270120775/",
       "title": "Create your own token on the RSK network",
       "category": "Workshop",
       "locationCategory": "online",
@@ -709,20 +719,33 @@
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://attendee.gotowebinar.com/register/4626395691306412302",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQNSiv3jzp78IYyJTnqHEv1rfyLBEkosM2r8Y-VvzT0Obc3UWK4wgtpO9b50cJ42QqWYnQxUlnOsW5O/pub?start=false&loop=false&delayms=600000"
+        },
+        {
+          "label": "Notes",
+          "url": "https://gist.github.com/bguiz/e4297582b2627e090cf44455d33f2592"
+        },
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
       "id": "202004-022",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-04-22T22:30:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-18T09:40:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270120781/",
       "title": "Como criar seu token na RSK network",
       "category": "Workshop",
       "locationCategory": "online",
@@ -731,20 +754,25 @@
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://attendee.gotowebinar.com/register/4099803288880978958",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
       "id": "202004-023",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-04-24T00:00:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-18T09:40:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270120697/",
       "title": "Crea tu propio token en RSK network",
       "category": "Workshop",
       "locationCategory": "online",
@@ -753,10 +781,15 @@
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://attendee.gotowebinar.com/register/4361944453128924174",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
@@ -820,6 +853,85 @@
       "presenterDescription": "Devoloper Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
+    },
+    {
+      "type": "event/2",
+      "id": "202004-027",
+      "version": "1",
+      "timestamp": "2020-04-23T13:00:00.000Z",
+      "lastModified": "2020-04-19T05:36:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270120788/",
+      "title": "Create your first frontend for Smart Contracts",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "presenter": "Brendan Graetz",
+      "presenterDescription": "Developer Advocate",
+      "presenterContact": "@bguiz",
+      "videoStreamUrl": "https://attendee.gotowebinar.com/register/7663789965959102736",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event2.jpg",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQNSiv3jzp78IYyJTnqHEv1rfyLBEkosM2r8Y-VvzT0Obc3UWK4wgtpO9b50cJ42QqWYnQxUlnOsW5O/pub?start=false&loop=false&delayms=600000"
+        },
+        {
+          "label": "Notes",
+          "url": "https://gist.github.com/bguiz/e4297582b2627e090cf44455d33f2592"
+        },
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+        }
+      ],
+      "recordedVideoUrl": ""
+    },
+    {
+      "type": "event/2",
+      "id": "202004-028",
+      "version": "1",
+      "timestamp": "2020-04-24T17:00:00.000Z",
+      "lastModified": "2020-04-19T05:36:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270120801/",
+      "title": "An introduction to RIF Lumino:\nConcepts, ideas and architecture",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "presenter": "Alejandro Narancio",
+      "presenterDescription": "Payments and Tools PO",
+      "presenterContact": "@anarancio",
+      "videoStreamUrl": "https://attendee.gotowebinar.com/register/6455007773111865870",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
+    },
+    {
+      "type": "event/2",
+      "id": "202004-029",
+      "version": "1",
+      "timestamp": "2020-04-24T19:00:00.000Z",
+      "lastModified": "2020-04-19T05:36:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270120715/",
+      "title": "Introducción a RIF Lumino:\nConceptos, ideas y arquitectura",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "presenter": "Alejandro Narancio",
+      "presenterDescription": "Payments and Tools PO",
+      "presenterContact": "@anarancio",
+      "videoStreamUrl": "https://attendee.gotowebinar.com/register/2428593993172923662",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
       "resources": [],
