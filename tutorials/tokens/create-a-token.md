@@ -15,7 +15,7 @@ Here is a summary of the steps to be taken to build our front end:
 2. Install Open Zeppelin smart contracts at project;
 3. Create a wallet mnemonic;
 4. Configure Truffle to connect to RSK testnet;
-5. Get some testnet R-BTCs at faucet;
+5. Get some tR-BTC from a faucet;
 6. Create smart contract of token;
 7. Create deploy file at Truffle;
 8. Deploy a smart contract on RSK Testnet using Truffle;
@@ -44,7 +44,8 @@ Go to [Node.js](https://nodejs.org/en/) if you need to install it.
 
 ## Visual Studio Code (VSCode)
 
-In this tutorial, We would use VSCode to create and deploy our project.
+In this tutorial, we will use VSCode to create and deploy our project.
+Feel free to use any other code editor of your choice.
 
 To use VSCode [download it here](https://code.visualstudio.com/download).
 
@@ -58,12 +59,12 @@ code -v
 
 ## Truffle
 
-Truffle is a popular development framework for Ethereum with a mission to make your life a whole lot easier. 
+Truffle is a popular development framework for smart contract developers with a mission to make your work a whole lot easier. 
 Among its features, it has smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management. 
 
 It can make the RSK life easier too because we can configure a RSK network in Truffle.
 
-To install Truffle, input the command below into the terminal and press `enter` at your project location:
+To install Truffle, input the command below into the terminal and press `enter`, in the directory of your project:
 
 ```shell
 npm install truffle -g
@@ -122,15 +123,15 @@ Then you can see the file structure like this:
 
 ![truffle file structure](/assets/img/tutorials/create-a-token/image-06.png)
 
-* ./contracts: all our smart contracts will be stored in this folder.
-* ./migrations: deployment scripts will be stored in this folder.
-* ./test: test scripts will be stored in this folder.
-* ./truffle-config: this is Truffle’s configuration file. We’ll be able to configure networks, including RSK networks.
+* `./contracts`: All our smart contracts will be stored in this folder.
+* `./migrations`: Deployment scripts will be stored in this folder.
+* `./test`: Test scripts will be stored in this folder.
+* `./truffle-config.js`: This is Truffle’s configuration file. We’ll be able to configure networks, including RSK networks.
 
-Note that files were also created:
+Note that the following files were also created:
 
-* Migrations.sol - keeps track of which migrations were done on the current network.
-* 1_initial_migration.js - deploy Migrations.sol
+* `Migrations.sol`: Keeps track of which migrations were done on the current network.
+* `1_initial_migration.js`: Deployment for `Migrations.sol`.
 
 ## Initialize an npm project
 
@@ -144,11 +145,11 @@ npm init -y
 
 ## Install Open Zeppelin
 
-OpenZeppelin Contracts is a set of libraries of smart contracts for Ethereum and other blockchains. 
+OpenZeppelin Contracts is a set of smart contract libraries for Ethereum. They work well with other compatible blockchains, including **RSK**. 
 These libraries will install not only the main libraries of our token but also libraries for ownership, safe math, and many other utilities. 
-It’s worth mentioning that these libraries have been reviewed and audited to accomplish high standards of security so contracts that depend on them are less susceptible to hacking when used correctly.
+It’s worth mentioning that these libraries have been both peer reviewed and audited to accomplish high standards of security so contracts that depend on them are less susceptible to hacking when used correctly.
 
-At terminal, inside the folder token, install OpenZeppelin libraries with this command:
+In the terminal, inside the folder token, install OpenZeppelin libraries with this command:
 
 ```shell
 npm install @openzeppelin/contracts --save
@@ -163,12 +164,12 @@ More info:
 ## Install HD wallet provider
 
 To connect to the RSK network, we are going to use a provider that allows us to connect to any network unlocking an account locally. 
-We are going to use @truffle/hdwallet-provider. 
+We are going to use `@truffle/hdwallet-provider`. 
 It can be used to sign transactions for addresses derived from a 12 or 24 word mnemonic.
 
 > You need to have installed Node >= 7.6.
 
-At terminal, inside the folder token, install it with this command:
+In the terminal, inside the folder token, install it with this command:
 
 ```shell
 npm install @truffle/hdwallet-provider --save
@@ -176,7 +177,7 @@ npm install @truffle/hdwallet-provider --save
 
 ![hd wallet provider install](/assets/img/tutorials/create-a-token/image-09.png)
 
-This is a large package with many facilities. After a while you will see the message of successful installation.
+This is a large package with many utilities. After a while you will see the message of successful installation.
 
 ![hd wallet provider successful installation](/assets/img/tutorials/create-a-token/image-10.png)
 
@@ -184,7 +185,7 @@ This is a large package with many facilities. After a while you will see the mes
 
 `package.json` is a file created by npm with some configurations, including the packages which we installed before using the command `npm init -y`.
 
-After the installations, I will open the project folder named Register in VSCode and verify the file package.json. Let's take a look at the dependencies in the file:
+After the installation, I will open the project folder named `Register` in VSCode and verify the `package.json` file. Let's take a look at the dependencies in the file:
 
 ![package.json](/assets/img/tutorials/create-a-token/image-11.png)
 
@@ -196,7 +197,7 @@ We are going to use this web app:
 
 [iancoleman.io/bip39](https://iancoleman.io/bip39/)
 
-> It is not recommended to be used for any 'real' wallet because it's not a secure way to generate a private key, but can be used for learning purposes.
+> It is not recommended to be used for any 'real' wallet because it's not a secure way to generate a private key, however we will use this here for learning purposes, and since we're using the Testnet anyway.
 
 In the `Generate a random mnemonic` field, select 12 words and click on the `generate` button.
 
@@ -319,7 +320,7 @@ web3.eth.getBalance(account, (err, res) => console.log(res))
 
 # Create the smart contract
 
-In the Contracts folder, create a new file named `Token.sol`
+In the `contracts` folder, create a new file named `Token.sol`.
 
 ![create Token.sol](/assets/img/tutorials/create-a-token/image-21.png)
 
@@ -339,7 +340,7 @@ contract Token is ERC20Mintable {
 }
 ```
 
-Let me explain the above code.
+Let's review the above code.
 
 To create our ERC20 Token, we will import `ERC20Mintable` from Open Zeppelin. 
 This library itself imports several other libraries such as `SafeMath.sol`, the standards for this kind of token, and the capability to mint tokens.
@@ -362,15 +363,15 @@ compile
 
 # Deploy a smart contract
 
-First of all, we need to create a file in truffle structure with instructions to deploy the smart contract.
+First of all, we need to create a a new migrations file where truffle will find it, containing instructions to deploy the smart contract.
 
 ## Create file 2_deploy_contracts.js
 
-Folder migrations has JavaScript files that help you deploy contracts to the network. 
+The migrations  folder has JavaScript files that help you deploy contracts to the network. 
 These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time. 
 A history of previously run migrations is recorded on-chain through a special Migrations contract, detailed below. (source: [truffle: running-migrations](https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations))
 
-At folder migrations, create the file `2_deploy_contracts.js`
+In the migrations folder, create the file `2_deploy_contracts.js`
 
 ![create 2_deploy_contracts.js](/assets/img/tutorials/create-a-token/image-24.png)
 
@@ -418,7 +419,7 @@ This is the transaction:
 
 Congratulations!
 
-`My RSK Token` is published at RSK Testnet.
+`My RSK Token` is now published on the RSK Testnet.
 
 Save the contract address of token, it will be used later: 
 
