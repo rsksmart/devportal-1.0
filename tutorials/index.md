@@ -10,7 +10,6 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 - [Quick Start](/quick-start)
 - [Deploy Smart Contract](/tutorials/deploy-smart-contracts/)
 - [Interact with Smart Contract](/tutorials/interact-with-smart-contracts/)
-- [Create a Token](/tutorials/create-a-token/)
 
 ## For Ethereum developers
 
@@ -24,6 +23,11 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 
 - [How to create your first frontend for smart contracts](/tutorials/frontend/first-frontend-web3-injected/)
 - [How to create a frontend for smart contracts using web3 connected to a local node](/tutorials/frontend/frontend-web3-local/)
+
+## To create tokens
+
+- [How to create your first token with less than 10 lines of code](/tutorials/tokens/create-a-token/)
+- [Create other token](/tutorials/tokens/create-a-token-02/)
 
 ## Truffle tutorials
 
