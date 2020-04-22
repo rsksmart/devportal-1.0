@@ -11,7 +11,7 @@ title: The Stack
         <div class="row rsk_blue dapps">
             <div class="col"><span><a href="/develop/apps/wallets/">Wallet</a></span></div>
             <div class="col"><span><a href="/develop/apps/exchanges/">Exchange</a></span></div>
-            <div class="col"><span><a href="/tutorials/create-a-token">Asset Tokenization</a></span></div>
+            <div class="col"><span><a href="/tutorials/tokens/create-a-token">Asset Tokenization</a></span></div>
             <div class="col"><span>Stablecoins</span></div>
             <div class="col"><span>Payments</span></div>
             <div class="col"><span>Margin Trading</span></div>
