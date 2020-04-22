@@ -8,6 +8,7 @@ tags: rns, javascript
 
   - [`addr`](#addr)
   - [`reverse`](#reverse)
+  - [`setReverse`](#setreverse)
   - [`setAddr`](#setaddr)
   - [`setResolver`](#setresolver)
   - [`available`](#available) (for domains)
@@ -57,6 +58,50 @@ Get Bitcoin address:
 rns.addr('testing.rsk', '0x80000000').then(console.log)
 ```
 
+### `setAddr`
+
+Set the address of a given domain and chain. If `chainId` is not provided, it sets the address resolution for the current blockchain.
+
+**Signature**
+
+```javascript
+async setAddr(domain: string, addr: string, chainId?: ChainId): Promise<TransactionReceipt>
+```
+
+**Parameters**
+
+- `domain`: Domain to set resolution.
+- `addr`: Address to be set as the resolution of the given domain
+- `chainId`: Chain identifier listed in [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
+
+**Returns**
+
+- `TransactionReceipt`
+
+**Throws**
+
+- [`KB002`](/rif/rns/libs/javascript/Errors#kb002)
+- [`KB003`](/rif/rns/libs/javascript/Errors#kb003)
+- [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
+- [`KB017`](/rif/rns/libs/javascript/Errors#kb017)
+- [`KB018`](/rif/rns/libs/javascript/Errors#kb018)
+- [`KB019`](/rif/rns/libs/javascript/Errors#kb019)
+- [`KB024`](/rif/rns/libs/javascript/Errors#kb024)
+
+**Examples**
+
+Set an address:
+
+```javascript
+rns.setAddr('testing.rsk', '0x0000000000000000000000000000000123456789').then(() => console.log('Done!'))
+```
+
+Set an address for Bitcoin:
+
+```javascript
+rns.setAddr('testing.rsk', '1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2', ChainId.BITCOIN).then(() => console.log('Done!'))
+```
+
 ### `reverse`
 
 Reverse lookup: Get the name of a given address.
@@ -86,20 +131,19 @@ async reverse(address: string): Promise<string>
 rns.reverse('0x0000000000000000000000000000000123456789').then(console.log)
 ```
 
-### `setAddr`
+### `setReverse`
 
-Set address resolution of a given domain using the [AbstractAddrResolver](/rif/rns/architecture/Resolver#setaddr) interface.
+Set reverse resolution with the given name for the current address using [setName](/rif/rns/architecture/ReverseRegistrar#setname) interface
 
 **Signature**
 
 ```javascript
-async setAddr(domain: string, addr: string): Promise<void>
+async setName(name: string): Promise<TransactionReceipt>
 ```
 
 **Parameters**
 
-- `domain`: Domain to set resolution.
-- `addr`: Address to be set as the resolution of the given domain
+- `name`: Name to be set as the reverse resolution of the current address
 
 **Returns**
 
@@ -107,20 +151,20 @@ async setAddr(domain: string, addr: string): Promise<void>
 
 **Throws**
 
-- [`KB002`](/rif/rns/libs/javascript/Errors#kb002)
-- [`KB003`](/rif/rns/libs/javascript/Errors#kb003)
+- [`KB010`](/rif/rns/libs/javascript/Errors#kb010)
 - [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
-- [`KB017`](/rif/rns/libs/javascript/Errors#kb017)
-- [`KB018`](/rif/rns/libs/javascript/Errors#kb018)
-- [`KB019`](/rif/rns/libs/javascript/Errors#kb019)
+- [`KB022`](/rif/rns/libs/javascript/Errors#kb022)
+- [`KB023`](/rif/rns/libs/javascript/Errors#kb023)
 
-**Examples**
+**Example**
 
-Set an address:
+Set name resolution of the current address as `testing.rsk`
 
 ```javascript
-rns.setAddr('testing.rsk', '0x0000000000000000000000000000000123456789').then(() => console.log('Done!'))
+rns.setReverse('testing.rsk').then(() => console.log('Done!'))
 ```
+
+Once this transaction is confirmed, `rns.reverse(YOUR_CURRENT_ADDRESS)` will return `testing.rsk`
 
 ### `setResolver`
 
@@ -129,7 +173,7 @@ Set [resolver](/rif/rns/architecture/registry#setresolver) of a given domain.
 **Signature**
 
 ```javascript
-async setResolver(domain: string, resolver: string): Promise<void>
+async setResolver(domain: string, resolver: string): Promise<TransactionReceipt>
 ```
 
 **Parameters**
@@ -229,7 +273,7 @@ Creates a new subdomain under the given domain tree if it is available.
 **Signature**
 
 ```javascript
-async setOwner(domain: string, label: string, owner: string): Promise<void>
+async setOwner(domain: string, label: string, owner: string): Promise<TransactionReceipt>
 ```
 
 **Parameters**
@@ -268,7 +312,7 @@ Creates a new subdomain under the given domain tree if it is available, and sets
 **Signature**
 
 ```javascript
-async create(domain: string, label: string, owner: string, addr: string): Promise<void>
+async create(domain: string, label: string, owner: string, addr: string): Promise<TransactionReceipt>
 ```
 
 **Parameters**
