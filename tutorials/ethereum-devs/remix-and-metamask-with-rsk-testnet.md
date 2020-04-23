@@ -26,7 +26,9 @@ We will do these steps:
 
 ## Webinar
 
-We have run a webinar in which we run through this tutorial:
+We have run a
+[webinar](/webinars/#event-id-202003-002 "Create and Deploy your first Smart Contract to the RSK Network using Remix and Metamask")
+in which we run through this tutorial:
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/-pJahYxJ4ms?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
