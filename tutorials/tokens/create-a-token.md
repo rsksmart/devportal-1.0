@@ -1,8 +1,8 @@
 ---
 layout: rsk
-title: Create a token
+title: Create your first token
 tags: tutorial, rsk, token, openzeppelin, erc20, truffle 
-description: "How to create a token less than 10 lines of code, using Truffle and Open Zeppelin smart contracts at RSK testnet"
+description: "How to create a token with less than 10 lines of code, using Truffle and Open Zeppelin smart contracts at RSK testnet"
 ---
 
 In this tutorial I will show you step-by-step how to create a token with less than 10 lines of code, using Truffle plus Open Zeppelin smart contracts, and deploy it to the RSK testnet.
@@ -152,8 +152,10 @@ It’s worth mentioning that these libraries have been both peer reviewed and au
 In the terminal, inside the folder token, install OpenZeppelin libraries with this command:
 
 ```shell
-npm install @openzeppelin/contracts --save
+npm install --E @openzeppelin/contracts@2.5.0
 ```
+
+The option `--E` is to save dependencies with an exact version rather than using npm's default.
 
 ![openzeppelin install](/assets/img/tutorials/create-a-token/image-08.png)
 
@@ -172,7 +174,7 @@ It can be used to sign transactions for addresses derived from a 12 or 24 word m
 In the terminal, inside the folder token, install it with this command:
 
 ```shell
-npm install @truffle/hdwallet-provider --save
+npm install --E @truffle/hdwallet-provider@1.0.34
 ```
 
 ![hd wallet provider install](/assets/img/tutorials/create-a-token/image-09.png)
@@ -185,7 +187,7 @@ This is a large package with many utilities. After a while you will see the mess
 
 `package.json` is a file created by npm with some configurations, including the packages which we installed before using the command `npm init -y`.
 
-After the installation, I will open the project folder named `Register` in VSCode and verify the `package.json` file. Let's take a look at the dependencies in the file:
+After the installation, I will open the project folder named `Token` in VSCode and verify the `package.json` file. Let's take a look at the dependencies in the file:
 
 ![package.json](/assets/img/tutorials/create-a-token/image-11.png)
 
@@ -286,6 +288,16 @@ In my example, it is `0x9682725a85f85f097ab368555a286618dc982c99`. Copy this.
 
 ![account address](/assets/img/tutorials/create-a-token/image-16.png)
 
+## Check balance
+
+Now, let’s check our balance in the console. Run this command in our truffle console:
+
+```javascript
+web3.eth.getBalance(account, (err, res) => console.log(res))
+```
+
+The balance is 0 and we need tR-BTC. Let's get it in the next step.
+
 # TestNet Faucet
 
 You can get some tR-BTC from 
@@ -308,7 +320,7 @@ You can see the transaction hash:
 
 Now I have 0.05 tR-BTC!
 
-## Check balance
+## Check balance (again)
 
 Now, let’s check our balance in the console. Run this command in our truffle console:
 
@@ -464,7 +476,7 @@ Put the instance’s name:  `token`, hit ., then hit TAB twice to trigger autoco
 This will display the published address, transaction hash of deploy, among other things, including all methods available.
 
 ```javascript
-token . [TAB] [TAB]
+token. [TAB] [TAB]
 ```
 
 ![token tab tab](/assets/img/tutorials/create-a-token/image-32.png)
