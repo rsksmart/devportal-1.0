@@ -157,7 +157,7 @@ npm install --E @openzeppelin/contracts@2.5.0
 
 The option `--E` is to save dependencies with an exact version rather than using npm's default.
 
-CHANGE ![openzeppelin install](/assets/img/tutorials/create-a-token/image-08.png)
+![openzeppelin install](/assets/img/tutorials/create-a-token/image-08.png)
 
 More info: 
 
@@ -177,19 +177,19 @@ In the terminal, inside the folder token, install it with this command:
 npm install --E @truffle/hdwallet-provider@1.0.34
 ```
 
-CHANGE ![hd wallet provider install](/assets/img/tutorials/create-a-token/image-09.png)
+![hd wallet provider install](/assets/img/tutorials/create-a-token/image-09.png)
 
 This is a large package with many utilities. After a while you will see the message of successful installation.
 
-CHANGE ![hd wallet provider successful installation](/assets/img/tutorials/create-a-token/image-10.png)
+![hd wallet provider successful installation](/assets/img/tutorials/create-a-token/image-10.png)
 
 ## Check package.json
 
 `package.json` is a file created by npm with some configurations, including the packages which we installed before using the command `npm init -y`.
 
-After the installation, I will open the project folder named `Register` in VSCode and verify the `package.json` file. Let's take a look at the dependencies in the file:
+After the installation, I will open the project folder named `Token` in VSCode and verify the `package.json` file. Let's take a look at the dependencies in the file:
 
-CHANGE ![package.json](/assets/img/tutorials/create-a-token/image-11.png)
+![package.json](/assets/img/tutorials/create-a-token/image-11.png)
 
 # Create a mnemonic
 
