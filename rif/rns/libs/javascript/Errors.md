@@ -147,16 +147,16 @@ RNS Library extends the [`Error` class](https://developer.mozilla.org/es/docs/We
 
 **Message**: No reverse registrar
 
-**Description**: The owner of `addr.reverse` node has not been set. More information about reverse operations [here](/rif/rns/architecture/ReverseRegistrar).
+**Description**: The owner of `addr.reverse` node has not been set. More information about reverse operations in [Reverse Registar](/rif/rns/architecture/ReverseRegistrar).
 
 ## `KB023`
 
 **Message**: The reverse registrar does not implement setName method
 
-**Description**: The owner of `addr.reverse` (Reverse Registrar) should implement [setName](/rif/rns/architecture/ReverseRegistrar#setname) method.
+**Description**: The owner of `addr.reverse` (Reverse Registrar) should implement [`setName`](/rif/rns/architecture/ReverseRegistrar#setname) method.
 
 ## `KB024`
 
 **Message**: The resolver does not implement setChainAddr method
 
-**Description**: Domain resolver should implement [setChainAddr](/rif/rns/architecture/MultiCryptoResolver#setchainaddr) interface.
+**Description**: Domain resolver should implement [`setChainAddr`](/rif/rns/architecture/MultiCryptoResolver#setchainaddr) interface.
