@@ -22,9 +22,25 @@ Below is a summary of the steps to be taken to build our front end:
 9. Install and run a local server;
 10. Interact with the smart contract.
 
-Steps 1 to 4 are explained in detail in the tutorial link below: 
+Steps 1 to 4 are explained in detail in the tutorial link below:
 
 * [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
+
+## Webinar
+
+We have run a
+[webinar](/webinars/#event-id-202004-027 "Create your first frontend for a Smart Contract on RSK")
+in which we run through this tutorial:
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/CoO9k1LYO04?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+The same webinar is also available in
+[Español](https://www.youtube.com/watch?v=CoO9k1LYO04)
+and [Português](https://www.youtube.com/watch?v=bm1dJyxe1mc).
+
+Check out our [other webinars](/webinars).
 
 # Requirements
 
@@ -35,7 +51,7 @@ Steps 1 to 4 are explained in detail in the tutorial link below:
 * HTTP server: express
 * web3.js
 
-As earlier mentioned, to install Metamask and connect to RSK testnet and to connect Remix with RSK Testnet are explained in detail in the tutorial link below: 
+As earlier mentioned, to install Metamask and connect to RSK testnet and to connect Remix with RSK Testnet are explained in detail in the tutorial link below:
 
 * [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
@@ -94,7 +110,7 @@ To install Express, input the command below into the terminal and press `enter` 
 npm install express --save
 ```
 
-More info: 
+More info:
 
 - [http://expressjs.com/](http://expressjs.com/)
 
@@ -102,7 +118,7 @@ More info:
 
 ## Web3.js
 
-Web3.js helps us to develop websites or clients that interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts. 
+Web3.js helps us to develop websites or clients that interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts.
 
 The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to do the communications between the front-end and the RSK local node.
 
@@ -114,7 +130,7 @@ To install web3.js, input the command below into the terminal and press `enter` 
 npm install web3 --save
 ```
 
-More info: 
+More info:
 
 - [https://web3js.readthedocs.io/](https://web3js.readthedocs.io/)
 
@@ -137,7 +153,7 @@ You will find the previously installed packages:
 
 # Deploy a smart contract
 
-This is explained in detail in the tutorial: 
+This is explained in detail in the tutorial:
 
 * [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
@@ -187,7 +203,7 @@ This smart contract has:
 * A function `getInfo()` to return the string stored at variable info
 * A function `setInfo()` to change the string stored at variable info
 
-### Compile a smart contract 
+### Compile a smart contract
 
 In the 3rd button at the left side select Solidity compiler.
 
@@ -197,9 +213,9 @@ Click the button **Compile Register.sol**.
 
 ![Compile Register.sol](/assets/img/tutorials/first-frontend-web3-injected/image-16.png)
 
-### Deploy a smart contract 
+### Deploy a smart contract
 
-In the left side panel, go to the button Deploy and run transactions. 
+In the left side panel, go to the button Deploy and run transactions.
 
 Under `Environment`, make sure you have selected the `Injected Web3` option,
 as this tells Remix to use the Web3 provider injected by a browser plugin such as [MetaMask](https://metamask.io/) or [Nifty](https://www.poa.network/for-users/nifty-wallet).
@@ -212,7 +228,7 @@ Then click the button `Deploy`.
 
 > Ensure that you have tR-BTC in your wallet, as this is needed to pay gas fees when deploying the smart contracts. To do so, please follow this guide: [Using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/).
 
-When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions. 
+When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions.
 
 Click on the copy button at the right side of the smart contract to copy the address of the smart contract. We will need it for use on the front end.
 
@@ -224,7 +240,7 @@ In my example, the contract address is `0xc864D0fef177A69aFa8E302A1b90e450910A4c
 
 # Client-Side Application - The front end
 
-Now let's start building out the front end that will interact with the smart contract. 
+Now let's start building out the front end that will interact with the smart contract.
 
 We have only 2 files in the front end:
 
@@ -248,7 +264,7 @@ Copy and paste the smart contract from the following gist, or copy and paste the
     <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
     <script src="./node_modules/web3/dist/web3.min.js"></script>
-    <script src="./index.js"></script>    
+    <script src="./index.js"></script>
   </head>
 
   <body class="container">
@@ -265,14 +281,14 @@ Copy and paste the smart contract from the following gist, or copy and paste the
                 <td><label for="newInfo">Info:</label> </td>
                 <td>
                   <input class="form-control" id="newInfo">
-                </td>                          
+                </td>
               </tr>
             </table>
           </div>
           <a href="#" onclick="registerSetInfo()" class="btn btn-primary">Set</a>
         </form>
       </div>
-    </div>    
+    </div>
 
     <div class="row">
       <div>
@@ -285,10 +301,10 @@ Copy and paste the smart contract from the following gist, or copy and paste the
                 <td>Info:</td>
                 <td>
                   <label id="lastInfo">
-                </td>                          
+                </td>
               </tr>
             </table>
-          </div>                
+          </div>
         </form>
       </div>
     </div>
@@ -363,17 +379,17 @@ web3.eth.getAccounts(function(err, accounts) {
 //Smart contract functions
 function registerSetInfo() {
   info = $("#newInfo").val();
-  contract.methods.setInfo (info).send( {from: account}).then( function(tx) { 
-    console.log("Transaction: ", tx); 
+  contract.methods.setInfo (info).send( {from: account}).then( function(tx) {
+    console.log("Transaction: ", tx);
   });
   $("#newInfo").val('');
 }
 
 function registerGetInfo() {
-  contract.methods.getInfo().call().then( function( info ) { 
+  contract.methods.getInfo().call().then( function( info ) {
     console.log("info: ", info);
     document.getElementById('lastInfo').innerHTML = info;
-  });    
+  });
 }
 ```
 
@@ -488,12 +504,12 @@ Great! Now we have an information stored in our smart contract, and we can retri
 ### Note
 
 > We have a smart contract with a public function that has no restrictions about who is allowed to call it, but that's just for demonstration purposes.
-> 
+>
 > In a real world smart contract, such checks would be performed in any functions that alter the smart contract state.
 
 # Congratulations!
 
-You have successfully built and deployed your first decentralized application (DApp) powered by RSK smart contracts! 
+You have successfully built and deployed your first decentralized application (DApp) powered by RSK smart contracts!
 
 You can download the full source code to this tutorial here:
 

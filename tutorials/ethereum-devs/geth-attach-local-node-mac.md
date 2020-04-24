@@ -2,7 +2,7 @@
 layout: rsk
 title: Using geth to attach to a RSK local node for Mac Users
 tags: tutorial, rsk, geth, ethereum
-description: "How to use the Ethereum client Geth to attach to an RSK local node (regtest) and run JSON-RPC commands on a Mac" 
+description: "How to use the Ethereum client Geth to attach to an RSK local node (regtest) and run JSON-RPC commands on a Mac"
 ---
 
 RSK's virtual machine implementation is compatible with the Ethereum virtual machine (EVM), which enables us to make use of many Ethereum developer tools.
@@ -11,7 +11,6 @@ In this tutorial I will show you step-by-step how to use the Ethereum client Get
 We do this to establish that the local node is running.
 
 Here is the [equivalent step-by-step tutorial for Windows users](/tutorials/ethereum-devs/geth-attach-local-node/ "Using geth to attach to a RSK local node").
-
 
 ## Overview
 
@@ -23,6 +22,22 @@ We will do these steps:
 4. Know some useful functions;
 5. Learn how to interact with accounts: list, create;
 6. Transfer funds between accounts.
+
+## Webinar
+
+We have run a
+[webinar](/webinars/#event-id-202004-001 "Run your own local RSK node with Geth attached")
+in which we run through this tutorial:
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/apcD6bcSWpw?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+The same webinar is also available in
+[Español](https://www.youtube.com/watch?v=1Zs2m5z_S9g)
+and [Português](https://www.youtube.com/watch?v=z5AiHy0mC8U).
+
+Check out our [other webinars](/webinars).
 
 ## Requirements
 
@@ -155,7 +170,7 @@ mkdir -p ~/code/ethereum/geth-node
 cd ~/code/ethereum/geth-node
 curl \
   -L \
-  https://gethstore.blob.core.windows.net/builds/geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz 
+  https://gethstore.blob.core.windows.net/builds/geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
   > geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
 
 tar -xf geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz

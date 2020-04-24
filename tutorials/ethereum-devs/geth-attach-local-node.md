@@ -23,6 +23,22 @@ We will do these steps:
 5. Learn how to interact with accounts: list, create;
 6. Transfer funds between accounts.
 
+## Webinar
+
+We have run a
+[webinar](/webinars/#event-id-202004-001 "Run your own local RSK node with Geth attached")
+in which we run through this tutorial:
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/apcD6bcSWpw?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+The same webinar is also available in
+[Español](https://www.youtube.com/watch?v=1Zs2m5z_S9g)
+and [Português](https://www.youtube.com/watch?v=z5AiHy0mC8U).
+
+Check out our [other webinars](/webinars).
+
 ## Requirements
 
 - Java JDK
