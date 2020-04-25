@@ -30,7 +30,7 @@
       "lastModified": "2020-04-17T01:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269565719/",
-      "title": "How to create your first Smart Contract using Remix and Metamask at RSK Network",
+      "title": "Create and Deploy your first Smart Contract to the RSK Network using Remix and Metamask",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -207,12 +207,12 @@
     {
       "type": "event/2",
       "id": "202004-001",
-      "version": "4",
+      "version": "5",
       "timestamp": "2020-04-02T00:00:00.000Z",
-      "lastModified": "2020-04-17T01:30:00.000Z",
+      "lastModified": "2020-04-23T04:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269677379/",
-      "title": "Run your own first node by using Geth attaching to a RSK local node",
+      "title": "Run your own local RSK node with Geth attached",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -489,7 +489,7 @@
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/5QPytWwRsP8"
+      "recordedVideoUrl": "https://youtu.be/68AMoiQfgEE"
     },
     {
       "type": "event/2",
@@ -556,9 +556,9 @@
     {
       "type": "event/2",
       "id": "202004-015",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-13T17:00:00.000Z",
-      "lastModified": "2020-04-10T02:00:00.000Z",
+      "lastModified": "2020-04-25T13:50:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269959329",
       "title": "RIF Name Services (Spanish)",
@@ -572,15 +572,20 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1SVeyzllyeq_gTVWsr5umXx6EechFXnGvjI2o7ACP0Lk/edit?usp=sharing"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/XzNcAcMAZXE"
     },
     {
       "type": "event/2",
       "id": "202004-016",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-14T17:00:00.000Z",
-      "lastModified": "2020-04-10T02:00:00.000Z",
+      "lastModified": "2020-04-25T13:50:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959370/",
       "title": "RIF Name Services (English)",
@@ -594,15 +599,20 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1MpCe8A4hxaF8f2ppQscIqWxPVwN_fW7Z4a1-SH9A2l4/edit?usp=sharing"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/tvXEM1IExI8"
     },
     {
       "type": "event/2",
       "id": "202004-017",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-15T22:30:00.000Z",
-      "lastModified": "2020-04-10T02:00:00.000Z",
+      "lastModified": "2020-04-25T13:50:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959494/",
       "title": "Crie seu primeiro frontend para um Smart Contract",
@@ -616,8 +626,13 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZRaKHrhYZw",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg",
-      "resources": [],
-      "recordedVideoUrl": ""
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/bm1dJyxe1mc"
     },
     {
       "type": "event/2",
@@ -679,9 +694,9 @@
     {
       "type": "event/2",
       "id": "202004-020",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-17T17:00:00.000Z",
-      "lastModified": "2020-04-20T01:30:00.000Z",
+      "lastModified": "2020-04-25T13:50:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915",
       "title": "Crea tu primer frontend para Smart Contracts",
@@ -699,16 +714,24 @@
         {
           "label": "Slides",
           "url": "https://hackmd.io/@ilanolkies/primer-fe-rsk"
+        },
+        {
+          "label": "Based on",
+          "url": "https://ilanolkies.com/post/Hello-world-to-descentralized-applications"
+        },
+        {
+          "label": "Source code",
+          "url": "https://github.com/rsksmart/webinar-primer-frontend"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/CoO9k1LYO04"
     },
     {
       "type": "event/2",
       "id": "202004-021",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-04-22T13:00:00.000Z",
-      "lastModified": "2020-04-18T09:40:00.000Z",
+      "lastModified": "2020-04-23T04:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120775/",
       "title": "Create your own token on the RSK network",
@@ -725,15 +748,19 @@
       "resources": [
         {
           "label": "Slides",
-          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQNSiv3jzp78IYyJTnqHEv1rfyLBEkosM2r8Y-VvzT0Obc3UWK4wgtpO9b50cJ42QqWYnQxUlnOsW5O/pub?start=false&loop=false&delayms=600000"
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vSTQR4r5jp35WxNuTnOX61ubjzScNNAm-RzuMGLAzrIUSZwG1gk_72esQJZ-58nRCgoZQL9INhtMDr8/pub?start=false&loop=false&delayms=600000"
         },
         {
           "label": "Notes",
-          "url": "https://gist.github.com/bguiz/e4297582b2627e090cf44455d33f2592"
+          "url": "https://github.com/bguiz/workshop-rsk-create-erc20-token-with-oz-truffle-bguiz/blob/master/walkthru.md"
+        },
+        {
+          "label": "Hands on",
+          "url": "https://github.com/bguiz/workshop-rsk-create-erc20-token-with-oz-truffle-bguiz/"
         },
         {
           "label": "Tutorial",
-          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+          "url": "https://developers.rsk.co/tutorials/tokens/create-a-token/"
         }
       ],
       "recordedVideoUrl": ""
@@ -760,7 +787,7 @@
       "resources": [
         {
           "label": "Tutorial",
-          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+          "url": "https://developers.rsk.co/tutorials/tokens/create-a-token/"
         }
       ],
       "recordedVideoUrl": ""
@@ -787,7 +814,7 @@
       "resources": [
         {
           "label": "Tutorial",
-          "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
+          "url": "https://developers.rsk.co/tutorials/tokens/create-a-token/"
         }
       ],
       "recordedVideoUrl": ""
@@ -795,9 +822,9 @@
     {
       "type": "event/2",
       "id": "202004-024",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-29T13:00:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-25T02:08:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Learn how to use Truffle boxes with RSK",
@@ -808,7 +835,7 @@
       "presenter": "Brendan",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
       "resources": [],
@@ -817,11 +844,11 @@
     {
       "type": "event/2",
       "id": "202004-025",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-29T22:30:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-25T00:46:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270248291/",
       "title": "Como utilizar Truffle box com RSK",
       "category": "Workshop",
       "locationCategory": "online",
@@ -830,7 +857,7 @@
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-box-com-rsk",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg",
       "resources": [],
@@ -839,11 +866,11 @@
     {
       "type": "event/2",
       "id": "202004-026",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-01T00:00:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-25T00:46:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270249389/",
       "title": "Aprende a usar Truffle Boxes con RSK",
       "category": "Workshop",
       "locationCategory": "online",
@@ -852,7 +879,7 @@
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Devoloper Advocate",
       "presenterContact": "@Dulce_vird",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
       "resources": [],
@@ -861,9 +888,9 @@
     {
       "type": "event/2",
       "id": "202004-027",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-23T13:00:00.000Z",
-      "lastModified": "2020-04-19T05:36:00.000Z",
+      "lastModified": "2020-04-22T22:11:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120788/",
       "title": "Create your first frontend for Smart Contracts",
@@ -874,7 +901,7 @@
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
-      "videoStreamUrl": "https://attendee.gotowebinar.com/register/7663789965959102736",
+      "videoStreamUrl": "https://attendee.gotowebinar.com/register/877417282457269771",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
       "resources": [
@@ -939,10 +966,54 @@
     },
     {
       "type": "event/2",
-      "id": "202005-001",
+      "id": "202004-030",
       "version": "1",
+      "timestamp": "2020-04-27T17:00:00.000Z",
+      "lastModified": "2020-04-25T13:11:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270247186/",
+      "title": "Blockchain and RSK use cases",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "presenter": "Gloria Vailati\nMaximiliano del Hoyo",
+      "presenterDescription": "CMO\nDeFi Lead",
+      "presenterContact": "@gloriavailati\n@maxdh_ar",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-cases",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
+    },
+    {
+      "type": "event/2",
+      "id": "202004-031",
+      "version": "1",
+      "timestamp": "2020-04-28T14:00:00.000Z",
+      "lastModified": "2020-04-25T13:11:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270248095/",
+      "title": "Blockchain para la industria financiera: el caso del Banco Central de la República Argentina",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "presenter": "Claudio Fiorillo\nGuillermo Villanueva",
+      "presenterDescription": "",
+      "presenterContact": "",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-para-la-industria-financiera",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
+    },
+    {
+      "type": "event/2",
+      "id": "202005-001",
+      "version": "2",
       "timestamp": "2020-05-06T13:00:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-25T02:45:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "How to create your own collectable token on the RSK network",
@@ -953,7 +1024,7 @@
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-create-your-own-collectable-token",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event5.jpg",
       "resources": [],
@@ -962,9 +1033,9 @@
     {
       "type": "event/2",
       "id": "202005-002",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-06T22:30:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-25T02:45:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Como criar seu token colecionável na RSK network",
@@ -975,7 +1046,7 @@
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-criar-seu-token-colecionavel",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event6.jpg",
       "resources": [],
@@ -984,12 +1055,12 @@
     {
       "type": "event/2",
       "id": "202005-003",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-08T00:00:00.000Z",
-      "lastModified": "2020-04-15T02:30:00.000Z",
+      "lastModified": "2020-04-25T02:45:00.000Z",
       "status": "confirmed",
       "url": "",
-      "title": "Crea tu propio token non-fungible en RSK network",
+      "title": "Crea tu propio non-fungible token en la red de RSK",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -997,7 +1068,7 @@
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
-      "videoStreamUrl": "",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/crea-tu-propio-non-fungible-token",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
