@@ -28,9 +28,7 @@ Steps 1 to 4 are explained in detail in the tutorial link below:
 
 ## Webinar
 
-We have run a
-[webinar](/webinars/#event-id-202004-027 "Create your first frontend for a Smart Contract on RSK")
-in which we run through this tutorial:
+We have run a webinar in which we run through this tutorial:
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/CoO9k1LYO04?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
