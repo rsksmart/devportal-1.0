@@ -355,7 +355,7 @@
                   <div class="row">
                {% for event in events %}
                   {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
-                  {% if timestamp <= now and event.recordedVideoUrl != "" %}
+                  {% if timestamp <= now %}
                   <!-- Past event -->
 
                   <div
@@ -378,11 +378,17 @@
                               <span>
                                  <i class="fa fa-video" aria-hidden="true"></i>
                                  <span class="text display-recorded-video-url">
+                                    {% if event.recordedVideoUrl != "" %}
                                     <a href="{{ event.recordedVideoUrl }}"
                                        rel="noreferrer noopener"
                                        target="_blank">
                                        View Recording
                                     </a>
+                                    {% else %}
+                                    <span>
+                                       Recording not available
+                                    </span>
+                                    {% endif %}
                                  </span>
                               </span>
                               <span>
