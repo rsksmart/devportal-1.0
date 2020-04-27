@@ -84,16 +84,10 @@ web3.eth.net.getId()
 
 Ensure that the output is `33`, which is the network ID of the regtest node.
 
-Enter the command below to exit the REPL on Windows.
+Enter the command below to exit the REPL.
 
 ```shell
-CTRL-Z
-```
-
-Enter the command below to exit the REPL on Mac.
-
-```shell
-CTRL-C
+.exit
 ```
 
 ### Install Ganache
