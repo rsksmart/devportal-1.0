@@ -186,6 +186,8 @@ This is quite simple, we load the script using the following command:
 loadScript("C:/RSK/Register/register.js");
 ```
 
+> For Mac users type `pwd` to locate the current path you're on.
+
 Note that even if you are using Windows OS, the file path should use `/` instead of `\`.
 
 ![loadScript](/assets/img/tutorials/geth-attach-deploy-smart-contract/image-17.png)
@@ -208,7 +210,7 @@ register . [TAB] [TAB]
 
 ### getInfo
 
-It returns the string stored at variable info.
+It returns the string stored at variable `info`.
 
 You can check if we have some info at smart contract:
 
@@ -222,7 +224,7 @@ We do not have any info stored, because we did not define anything when we deplo
 
 ### setInfo
 
-A function to change the string stored at variable info.
+A function to change the string stored at variable `info`.
 
 Let us save some information in the smart contract by invoking it:
 
