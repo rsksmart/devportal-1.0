@@ -78,11 +78,17 @@ and look for the options related to that within the `truffle-config.js` file.
 We can verify this by entering the following command:
 
 ```javascript
-truffle(regtest)>  web3.eth.net.getId()
+web3.eth.net.getId()
 33
 ```
 
-Esnure that the output is `33`, which is the network ID of the regtest node.
+Ensure that the output is `33`, which is the network ID of the regtest node.
+
+Enter the command below to exit the REPL.
+
+```shell
+.exit
+```
 
 ### Install Ganache
 
