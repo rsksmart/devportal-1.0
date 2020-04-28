@@ -293,6 +293,8 @@ async setOwner(domain: string, label: string, owner: string): Promise<Transactio
 - [`KB011`](/rif/rns/libs/javascript/Errors#kb011)
 - [`KB012`](/rif/rns/libs/javascript/Errors#kb012)
 - [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
+- [`KB017`](/rif/rns/libs/javascript/Errors#kb017)
+- [`KB019`](/rif/rns/libs/javascript/Errors#kb019)
 
 **Example**
 
