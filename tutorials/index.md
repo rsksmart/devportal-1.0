@@ -18,6 +18,7 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 - [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
 - [Port Ethereum dApps](/tutorials/ethereum-devs/port-ethereum-dapps/)
 - [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
+- [Using Truffle Boxes with RSK](/tutorials/ethereum-devs/truffle-box)
 
 ## To build your front end
 
