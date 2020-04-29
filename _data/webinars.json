@@ -822,31 +822,44 @@
     {
       "type": "event/2",
       "id": "202004-024",
-      "version": "2",
-      "timestamp": "2020-04-29T13:00:00.000Z",
-      "lastModified": "2020-04-25T02:08:00.000Z",
+      "version": "3",
+      "timestamp": "2020-04-30T00:00:00.000Z",
+      "lastModified": "2020-04-29T10:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270250688/",
       "title": "Learn how to use Truffle boxes with RSK",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
-      "presenter": "Brendan",
+      "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event2.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/truffle-box/"
+        },
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQaImNXhx-tr0FsqtmXmwZQIVCnvwVOIwDFxZ8cfAxrZOC4MEol4Gc5ojHOdLA_e_XfAhQqwBy6eD6V/pub?start=false&loop=false&delayms=600000"
+        },
+        {
+          "label": "Sample Code",
+          "url": "https://github.com/bguiz/workshop-rsk-truffle-box-bguiz"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
       "id": "202004-025",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-29T22:30:00.000Z",
-      "lastModified": "2020-04-25T00:46:00.000Z",
+      "lastModified": "2020-04-29T10:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270248291/",
       "title": "Como utilizar Truffle box com RSK",
@@ -860,15 +873,24 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-box-com-rsk",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event3.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/truffle-box/"
+        },
+        {
+          "label": "Sample Code",
+          "url": "https://github.com/bguiz/workshop-rsk-truffle-box-bguiz"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
       "id": "202004-026",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-01T00:00:00.000Z",
-      "lastModified": "2020-04-25T00:46:00.000Z",
+      "lastModified": "2020-04-29T10:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270249389/",
       "title": "Aprende a usar Truffle Boxes con RSK",
@@ -882,7 +904,16 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk",
       "tags": "online online-workshop general non-developers",
       "image": "img/events/event4.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/truffle-box/"
+        },
+        {
+          "label": "Sample Code",
+          "url": "https://github.com/bguiz/workshop-rsk-truffle-box-bguiz"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {

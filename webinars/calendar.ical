@@ -979,30 +979,33 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202004-024@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200429T130000Z
-DTSTART:20200429T130000Z
+DTSTAMP:20200430T000000Z
+DTSTART:20200430T000000Z
 SUMMARY:Learn how to use Truffle boxes with RSK 
 DESCRIPTION:Learn how to use Truffle boxes with RSK\n\nOnline only\n\nRSVP
- : \n\nVideo stream: https://app.livestorm.co/iov-labs-1/learn-how-to-use-t
- ruffle-boxes\n
+ : https://www.meetup.com/es-ES/rsk-community/events/270250688/\n\nVideo st
+ ream: https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Learn h
  ow to use Truffle boxes with RSK</span></div>\n<div><span>Online only</spa
- n></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video strea
- m &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/learn-how
- -to-use-truffle-boxes\">app.livestorm.co/iov-labs-1/learn-how-to-use-truff
- le-boxes</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Brendan\, Developer Advocate\, @bguiz":mailto:developers@iov
- labs.org
+ n></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/e
+ s-ES/rsk-community/events/270250688/\">www.meetup.com/es-ES/rsk-community/
+ events/270250688/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span>
+ <a href=\"https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-box
+ es\">app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes</a></span>
+ </div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
 DESCRIPTION:Learn how to use Truffle boxes with RSK 
 END:VALARM
 CATEGORIES:Workshop
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270250688/
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200425T020800Z
+LAST-MODIFIED:20200429T100000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-025@developers.rsk.co/
@@ -1033,7 +1036,7 @@ CATEGORIES:Workshop
 URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270248291/
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200425T004600Z
+LAST-MODIFIED:20200429T100000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-026@developers.rsk.co/
@@ -1066,7 +1069,7 @@ URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270249389
  /
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200425T004600Z
+LAST-MODIFIED:20200429T100000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-027@developers.rsk.co/
