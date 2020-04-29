@@ -28,8 +28,11 @@ async function myCustomGetOwner(domain) {
 }
 ```
 
-You can also specify a different `networkId` to perform checksum validations, it should be added in the `options` parameter. 
-> `networkId` could be used also when instantiating the lib using RSK Mainnet or RSK Testnet
+You can also specify a different `networkId` to perform checksum validations according to
+[EIP-1191](https://eips.ethereum.org/EIPS/eip-1191),
+it should be added in the `options` parameter.
+If the `networkId` is not provided, and the current blockchain is not RSK Mainnet or RSK Testnet, the library will validate addresses without taking in consideration the `networkId`, as explained in
+[EIP-55](https://eips.ethereum.org/EIPS/eip-55).
 
 **Example**
 ```javascript
