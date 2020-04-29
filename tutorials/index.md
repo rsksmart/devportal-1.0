@@ -18,7 +18,6 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 - [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
 - [Port Ethereum dApps](/tutorials/ethereum-devs/port-ethereum-dapps/)
 - [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
-- [Using Truffle Boxes with RSK](/tutorials/ethereum-devs/truffle-box)
 
 ## To build your front end
 
@@ -37,6 +36,7 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 - [rsk-react-box](/tutorials/truffle-boxes/rsk-react-box): This box comes with everything you need to start using smart contracts from a react app on RSK Network.
 - [rsk-next-box](/tutorials/truffle-boxes/rsk-next-box): In this box you'll find a basic starter pack. It includes Truffle and Next JS.
 - [rsk-react-express-box](/tutorials/truffle-boxes/rsk-react-express-box): In this box you'll find a basic starter pack. It includes Truffle, React and Express JS.
+- [Using Truffle Boxes with RSK](/tutorials/truffle-boxes/pet-shop-box)
 
 ## Other tutorials
 
