@@ -29,6 +29,16 @@ First ensure you are in a new and empty directory.
     truffle develop
     ```
 
+You may encounter an error: 
+    ```shell
+    Cannot find module '@truffle/hdwallet-provider'
+    ```
+To solve this error, enter the command below:
+
+    ```shell
+    npm install
+    ```
+
 4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
     ```javascript
     compile
@@ -51,7 +61,7 @@ First ensure you are in a new and empty directory.
     truffle test
     ```
 
-7. Jest is included for testing React components. Compile your contracts before running Jest, or you may receive some file not found errors.
+7. Jest is included for testing React components. Compile your contracts before running Jest, or you may receive some `file not found` errors.
     ```javascript
     // ensure you are inside the client directory when running this
     npm run test
@@ -62,6 +72,7 @@ First ensure you are in a new and empty directory.
     // ensure you are inside the client directory when running this
     npm run build
     ```
+
 ## RSK
 
 ### Setup an account & get R-BTC
@@ -108,6 +119,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     const HDWalletProvider = require('@truffle/hdwallet-provider');
 
     //Put your mnemonic here, be careful not to deploy your mnemonic into production!
+    // NB: you can find the mnemonic in the truffle develop prompt
     const mnemonic = 'A_MNEMONIC';
     ```
     Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
@@ -124,7 +136,7 @@ For more information about the **Gas** and **minimumGasPrice** please go [here](
     # Console for Mainnet
     truffle console --network mainnet
 
-    # Console forn Testnet
+    # Console for Testnet
     truffle console --network testnet
     ```
 
