@@ -11,7 +11,9 @@ The UI is available at:
 - Mainnet: [tokenbridge.rsk.co](https://tokenbridge.rsk.co/)
 - Testnet: [testnet.tokenbridge.rsk.co](https://testnet.tokenbridge.rsk.co/)
 
-## What is a Side Token?
+<img src="/assets/img/tools/tokenbridge/token-bridge-diagram.png"/>
+
+## What is a Side Token (mirror ERC20)?
 
 Side Token is an ERC777 representation of a ERC20 compatible tokens which is on the other network(could be  on Ethereum or RSK network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
 
@@ -56,7 +58,7 @@ During the trial period, only whitelisted tokens can cross the bridge. The feder
 
 ## What are the fees for converting original tokens to Side Tokens and vice-versa? Who will be paying these fees?
 
-The federation is paying and sponsoring the fees for the multiple transactions during the trial period. This will change after the trial period is complete, and the token bridge changes from a federated schema to a fully decentralized one. Users will need to pay a small amount of gas fee when using Metamask for to submit their transactions.
+The federation is paying and sponsoring the fees for the multiple transactions during the trial period. This will change after the trial period is complete, and the Token Bridge changes from a federated schema to a fully decentralized one. Users will need to pay a small amount of gas fee when using Metamask for to submit their transactions.
 
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
 
@@ -65,12 +67,12 @@ The federation is paying and sponsoring the fees for the multiple transactions d
 
 ## How does the Token Bridge work?
 
-The TokenBridge functionality is quite unique, yet simple to understand. The ratio of tokens during network transfer always remains 1:1 and behaves in the following manner:
+The Token Bridge functionality is quite unique, yet simple to understand. The ratio of tokens during network transfer always remains 1:1 and behaves in the following manner:
 
 When original tokens are moved to the other network
 - Original tokens are locked in the Token Bridge smart contract
-- Side Tokens are minted and can move freely on the side chain network
+- Side Tokens are minted and assigned to the same address that originally called the bridge
 
 When Side Tokens are moved back from the other network
 - Side Tokens are burned
-- Original tokens are unlocked in the Token Bridge smart contract, and can mode freely on the original network
+- Original tokens are unlocked in the Token Bridge smart contract, and transfered to the same address that originally called the bridge
