@@ -334,8 +334,8 @@ Alternatively, use `mnemonics` to do the same.
 
 ```shell
 mnemonics > .secret
-git add .secret
-git commit -m "step: 04-01: save BIP39 mnemonic"
+echo ".secret" >> .gitignore #never add your seed phrase to your github project ;)
+git commit -m "step: 04-01: create BIP39 mnemonic and add .secret to gitignore"
 
 ```
 
