@@ -431,7 +431,7 @@ The effect that this has is to get a slightly higher priority for our transactio
 Test the connection to RSK Testnet.
 
 ```shell
-truffle console --network regtest
+truffle console --network testnet
 
 ```
 
@@ -469,7 +469,7 @@ This part configures a connection to the RSK Regtest.
 Test the connection to RSK Regtest.
 
 ```shell
-truffle console --network testnet
+truffle console --network regtest
 
 ```
 
