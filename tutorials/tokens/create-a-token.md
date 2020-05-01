@@ -618,7 +618,7 @@ Transaction:
 
 [0x529dbbe27e21770c21f4af34dbbbe23733af9be5c8c09b7dd4314fef743275a2](https://explorer.testnet.rsk.co/tx/0x529dbbe27e21770c21f4af34dbbbe23733af9be5c8c09b7dd4314fef743275a2)
 
-Account 2 did not have any tokens before the transfer, and now it should have 40. Let’s check the balance of account 2:
+Account 2 had no tokens before the transfer, and now it should have 40. Let’s check the balance of account 2:
 
 ```javascript
 (await token.balanceOf(accounts[2])).toString()
