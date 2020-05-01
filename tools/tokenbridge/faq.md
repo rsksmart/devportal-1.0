@@ -15,7 +15,7 @@ The UI is available at:
 
 ## What is a Side Token (mirror ERC20)?
 
-Side Token is an ERC777 representation of a ERC20 compatible tokens which is on the other network(could be  on Ethereum or RSK network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
+Side Token is an ERC777 representation of a ERC20 compatible tokens which is on another network(could be  on Ethereum or RSK network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
 
 ## What is the purpose of having a Side Token?
 
@@ -58,7 +58,7 @@ During the trial period, only whitelisted tokens can cross the bridge. The feder
 
 ## What are the fees for converting original tokens to Side Tokens and vice-versa? Who will be paying these fees?
 
-The federation is paying and sponsoring the fees for the multiple transactions during the trial period. This will change after the trial period is complete, and the Token Bridge changes from a federated schema to a fully decentralized one. Users will need to pay a small amount of gas fee when using Metamask for to submit their transactions.
+The federation is paying and sponsoring the fees for the multiple transactions during the trial period. This will change after the trial period is complete, and the Token Bridge changes from a federated schema to a fully decentralized one. Users will need to pay a small amount of gas fee when using Metamask to submit transactions.
 
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
 
@@ -75,4 +75,4 @@ When original tokens are moved to the other network
 
 When Side Tokens are moved back from the other network
 - Side Tokens are burned
-- Original tokens are unlocked in the Token Bridge smart contract, and transfered to the same address that originally called the bridge
+- Original tokens are unlocked in the Token Bridge smart contract, and transfered to the same address that originally called the bridge contract.

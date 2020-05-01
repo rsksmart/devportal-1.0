@@ -17,14 +17,14 @@ See the [FAQ](/tools/tokenbridge/faq/) to learn more about how it works!
 <img src="/assets/img/tools/tokenbridge/token-bridge-diagram.png"/>
 
 
-The bridge contracts are upgradeable as we wish to move to a decentralized bridge in the future. Here is the first
+The bridge contracts are upgradeable, this enables a smoother move to a more decentralized bridge in the future. Here is the first
 [POC of the trustless decentralized bridge](https://github.com/rsksmart/tokenbridge/releases/tag/decentralized-poc-v0.1)
 
 ## Usage
 
 You can use the ['Token Bridge Dapp'](https://tokenbridge.rsk.co/) together with [Nifty Wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid) or [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) to move tokens between networks. 
 
-This is the [Dapp guide](/tools/tokenbridge/dappguide/) if you don't know how to use it.
+Follow the [Dapp guide](/tools/tokenbridge/dappguide/) for more details on how to use the token bridge.
 
 Alternatively, you can use a wallet or web3js with the ABI of the contracts. See ['interaction guide using MyCrypto'](/tools/tokenbridge/usingmycrypto/) for more information on how to use the bridge.
 
