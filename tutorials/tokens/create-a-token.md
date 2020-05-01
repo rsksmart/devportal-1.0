@@ -340,7 +340,7 @@ You can see the transaction hash:
 
 Now I have 0.05 tR-BTC!
 
-## Check balance (again)
+## Recheck balance
 
 To check balance again, run this command in the Truffle console:
 
