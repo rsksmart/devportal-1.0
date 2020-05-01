@@ -7,12 +7,12 @@ This Decentralized Application helps you to interact with the Token Bridge contr
 
 ## Description
 
-This guide describes the steps to transfer tokens using the Web Interface for the RSK Token Bridge system. Please refer to the project documentation if you’d like to know more about how this bridge works. It is possible to test the transfer of tokens between RSK Testnet and Kovan networks or RSK Mainnet and Ethereum networks using the RSK Token Bridge web interface. 
+This guide describes the steps to transfer tokens using the Web Interface for the RSK Token Bridge system. Please refer to the project documentation if you’d like to know more about how this bridge works. It is possible to test the transfer of tokens between RSK Testnet and Kovan networks, or RSK Mainnet and Ethereum networks using the RSK Token Bridge web interface. 
 
 ### Prerequisites
 
 This will require access to either Chrome or Chromium web browser, with either [Nifty Wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid) or [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) wallet browser extension installed. The derivation path used in RSK is different from the one used in Ethereum, so you need to [use a custom network](https://developers.rsk.co/tutorials/resolve-nifty-issue/#add-rsk-as-custom-node) to keep the same address in RSK and Ethereum.
-You will need RBTC on RSK and ETH on Ethereum to pay for the necessary transactions.
+You will need R-BTC on RSK and ETH on Ethereum to pay for the necessary transactions.
 
 ## Steps
 
