@@ -570,7 +570,7 @@ The transaction:
 
 [`0x1534230dea0ba07b876dd0ad22fdcb693359de42cb12e5af5e55e17543828a85`](https://explorer.testnet.rsk.co/tx/0x1534230dea0ba07b876dd0ad22fdcb693359de42cb12e5af5e55e17543828a85)
 
-## Check the token balance (again)
+## Reconfirm the token balance
 
 Check the balance of account 0 again:
 
