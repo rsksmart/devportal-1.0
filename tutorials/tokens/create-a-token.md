@@ -139,10 +139,10 @@ It’s worth mentioning that these libraries have been both peer reviewed and au
 In the terminal, inside the folder token, install OpenZeppelin libraries with this command:
 
 ```shell
-npm install --E @openzeppelin/contracts@2.5.0
+npm install -E @openzeppelin/contracts@2.5.0
 ```
 
-The option `--E` is to save dependencies with an exact version rather than using npm's default.
+The option `-E` is to save dependencies with an exact version rather than using npm's default.
 > Some contracts may change over time, so it is important to set the version. This tutorial was written using the specific version gotten when we ran the `truffle version` command above.
 
 ![openzeppelin install](/assets/img/tutorials/create-a-token/image-08.png)
@@ -162,7 +162,7 @@ It can be used to sign transactions for addresses derived from a 12 or 24 word m
 In the terminal, inside the folder token, install it with this command:
 
 ```shell
-npm install --E @truffle/hdwallet-provider@1.0.34
+npm install -E @truffle/hdwallet-provider@1.0.34
 ```
 
 ![hd wallet provider install](/assets/img/tutorials/create-a-token/image-09.png)
@@ -211,11 +211,13 @@ To verify the block number, visit [explorer.testnet.rsk.co](https://explorer.tes
 
 Let's create a mnemonic to generate addresses with it.
 
+To learn more about it: [Bip39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+
 We are going to use this web app: 
 
 [iancoleman.io/bip39](https://iancoleman.io/bip39/)
 
-> It is not recommended to be used for any 'real' wallet because it's not a secure way to generate a private key, however we will use this here for learning purposes, and since we're using the Testnet anyway.
+> The way we are creating the mnemonic is not recommended to be used for any 'real' wallet because it's not secure generate a private key in a website, however we will use this here for learning purposes, and since we're using the Testnet anyway.
 
 In the `Generate a random mnemonic` field, select `12 words` and click on the `generate` button.
 
@@ -350,7 +352,7 @@ To check balance again, run this command in the Truffle console:
 
 ![getBalance](/assets/img/tutorials/create-a-token/image-20.png)
 
-Now I have 50000000000000000, which means that I have 0.05 with 18 decimal places of precision.
+Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.
 
 # Create the smart contract
 
