@@ -209,9 +209,9 @@ To verify the block number, visit [explorer.testnet.rsk.co](https://explorer.tes
 
 # Create a mnemonic
 
-Let's create a mnemonic to generate addresses with it.
+Let's create a mnemonic in order to generate some accounts.
 
-To learn more about it: [Bip39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+To learn more about it: [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 
 We are going to use this web app: 
 
