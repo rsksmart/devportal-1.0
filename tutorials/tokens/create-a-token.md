@@ -9,10 +9,10 @@ In this tutorial I will show you step-by-step how to create a token with less th
 
 # Overview
 
-Here is a summary of the steps to be taken to build our front end:
+Here is a summary of the steps to be taken to build our token:
 
 1. Initialize a project using Truffle;
-2. Install Open Zeppelin smart contracts at project;
+2. Install Open Zeppelin smart contracts in the project folder;
 3. Create a wallet mnemonic;
 4. Configure Truffle to connect to RSK testnet;
 5. Get some tR-BTC from a faucet;
@@ -62,9 +62,9 @@ code -v
 Truffle is a popular development framework for smart contract developers with a mission to make your work a whole lot easier. 
 Among its features, it has smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management. 
 
-It can make the RSK life easier too because we can configure a RSK network in Truffle.
+Truffle makes it easy to configure a connection to the RSK network.
 
-To install Truffle, input the command below into the terminal and press `enter`, in the directory of your project:
+To install Truffle, input the command below into the terminal and press `enter`:
 
 ```shell
 npm install truffle -g
@@ -72,7 +72,7 @@ npm install truffle -g
 
 ![truffle install](/assets/img/tutorials/create-a-token/image-03.png)
 
-When the installation is finished, close the terminal,open it again and check the Truffle version:
+When the installation is finished, close the terminal, open it again and check the Truffle version:
 
 ```shell
 truffle version
@@ -84,37 +84,24 @@ More info:
 
 [trufflesuite.com/truffle](https://www.trufflesuite.com/truffle)
 
-# Verify that you can connect to RSK Testnet
-
-Enter the following command into your terminal. If you are using a Windows OS, I suggest to use the Git Bash terminal.
-
-```shell
-curl https://public-node.testnet.rsk.co/1.3.0/ \
-  -X POST -H "Content-Type: application/json" \
-  --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
-```
-
-This is a very simple query that simply asks what the latest block number is.
-
-You should receive a response similar to the following:
-
-```json
-{"jsonrpc":"2.0","id":1,"result":"0xc1266"}
-```
-
-If you have Windows OS and you do not have Git installed, download the installer for Windows from the [Git official site](https://git-scm.com/).
-
 # Initialize a Truffle project
 
-Create a new folder, in a folder named `token`.
-
-Start an Truffle project in the token folder by typing the following commands below into the terminal:
+Create a new folder named `token`:
 
 ```shell
 mkdir token
 cd token
+```
+
+Start an Truffle project in the token folder by typing the following command below into the terminal:
+
+```shell
 truffle init
 ```
+
+For example, I will create a  folder at this location - `C:\RSK\` (I'm using windows OS).
+
+My project can be located in the folder `C:\RSK\token`.
 
 ![truffle init](/assets/img/tutorials/create-a-token/image-05.png)
 
@@ -135,7 +122,7 @@ Note that the following files were also created:
 
 ## Initialize an npm project
 
-Start an npm project in the token folder by typing the following commands below into the terminal:
+Start an npm project in the token folder by typing the following command below into the terminal:
 
 ```shell
 npm init -y
@@ -152,10 +139,11 @@ It’s worth mentioning that these libraries have been both peer reviewed and au
 In the terminal, inside the folder token, install OpenZeppelin libraries with this command:
 
 ```shell
-npm install --E @openzeppelin/contracts@2.5.0
+npm install -E @openzeppelin/contracts@2.5.0
 ```
 
-The option `--E` is to save dependencies with an exact version rather than using npm's default.
+The option `-E` is to save dependencies with an exact version rather than using npm's default.
+> Some contracts may change over time, so it is important to set the version. This tutorial was written using the specific version gotten when we ran the `truffle version` command above.
 
 ![openzeppelin install](/assets/img/tutorials/create-a-token/image-08.png)
 
@@ -174,12 +162,12 @@ It can be used to sign transactions for addresses derived from a 12 or 24 word m
 In the terminal, inside the folder token, install it with this command:
 
 ```shell
-npm install --E @truffle/hdwallet-provider@1.0.34
+npm install -E @truffle/hdwallet-provider@1.0.34
 ```
 
 ![hd wallet provider install](/assets/img/tutorials/create-a-token/image-09.png)
 
-This is a large package with many utilities. After a while you will see the message of successful installation.
+This `truffle` package comes with so many dependencies. A successful installation message is shown if everything works fine.
 
 ![hd wallet provider successful installation](/assets/img/tutorials/create-a-token/image-10.png)
 
@@ -191,17 +179,47 @@ After the installation, I will open the project folder named `Token` in VSCode a
 
 ![package.json](/assets/img/tutorials/create-a-token/image-11.png)
 
+# Verify that you can connect to RSK Testnet
+
+Enter the following command into your terminal. 
+
+If you are using a Windows OS, I suggest to use the Git Bash terminal. 
+Download the installer from the [Git official site](https://git-scm.com/).
+
+```shell
+curl https://public-node.testnet.rsk.co/1.3.0/ \
+  -X POST -H "Content-Type: application/json" \
+  --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+```
+
+This is a command to query the network for the latest block number.
+
+If all goes well, you'll see an output similar to the following:
+
+```json
+{"jsonrpc":"2.0","id":1,"result":"0xc3f9b"}
+```
+
+![eth_blockNumber jsonrpc result](/assets/img/tutorials/create-a-token/image-42.png)
+
+The `result` value is presented in hexadecimal. `0xc3f9b` is the block number in hexadecimal, the corresponding decimal is: `802715`. 
+To verify the block number, visit [explorer.testnet.rsk.co](https://explorer.testnet.rsk.co/).
+
+![explorer.testnet.rsk.co blockNumber](/assets/img/tutorials/create-a-token/image-43.png)
+
 # Create a mnemonic
 
-Let's create a mnemonic to generate addresses with it.
+Let's create a mnemonic in order to generate some accounts.
+
+To learn more about it: [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 
 We are going to use this web app: 
 
 [iancoleman.io/bip39](https://iancoleman.io/bip39/)
 
-> It is not recommended to be used for any 'real' wallet because it's not a secure way to generate a private key, however we will use this here for learning purposes, and since we're using the Testnet anyway.
+> The way we are creating the mnemonic is not recommended to be used for any 'real' wallet because it's not secure generate a private key in a website, however we will use this here for learning purposes, and since we're using the Testnet anyway.
 
-In the `Generate a random mnemonic` field, select 12 words and click on the `generate` button.
+In the `Generate a random mnemonic` field, select `12 words` and click on the `generate` button.
 
 ![Generate a random mnemonic](/assets/img/tutorials/create-a-token/image-12.png)
 
@@ -219,7 +237,7 @@ I will copy these 12 words to use it later.
 
 ## File .secret
 
-In the terminal terminal, inside the folder token, create a file named `.secret`.
+Inside the `token` folder, create a file named `.secret`.
 
 Paste your mnemonic in this file and save it.
 
@@ -254,11 +272,11 @@ module.exports = {
 
 # Truffle Console connect to RSK local network
 
-Truffle has your own console to run commands.
+> You can use the Truffle console to run commands.
 
 ## Verify the connection
 
-Let’s open a Truffle console to check our connection.
+Open a Truffle console to verify the connection.
 
 At terminal, inside the folder token, run this command:
 
@@ -270,37 +288,41 @@ And you go to a new console:
 
 ![truffle console](/assets/img/tutorials/create-a-token/image-15.png)
 
-What we are doing here is telling truffle to connect to an RSK public testnet node, and giving it control over your recently created account.
+This action instructs Truffle to connect to an RSK public testnet node and grants it permission to control the newly created account.
 
 ## To get our address
 
-Let’s type this in truffle console to know what address was unlocked with our mnemonic:
+Enter the command below into the Truffle console to save the first address generated with our mnemonic into an `account` variable:
 
 ```javascript
 var account = Object.keys(web3.currentProvider.wallets)[0]
+```
 
+The output is your account address. Enter this command to view it:
+
+```javascript
 account
 ```
 
-The result is your account address. 
-
-In my example, it is `0x9682725a85f85f097ab368555a286618dc982c99`. Copy this.
+In my example, the output is `0x9682725a85f85f097ab368555a286618dc982c99`. Copy this address.
 
 ![account address](/assets/img/tutorials/create-a-token/image-16.png)
 
 ## Check balance
 
-Now, let’s check our balance in the console. Run this command in our truffle console:
+To check the balance, run this command in Truffle console:
 
 ```javascript
-web3.eth.getBalance(account, (err, res) => console.log(res))
+(await web3.eth.getBalance(account)).toString()
 ```
 
-The balance is 0 and we need tR-BTC. Let's get it in the next step.
+The balance is 0 and we need some to pay for gas fees. We shall get some tR-BTC in the next step.
 
-# TestNet Faucet
+![getBalance(account) 0](/assets/img/tutorials/create-a-token/image-44.png)
 
-You can get some tR-BTC from 
+# Testnet Faucet
+
+You can get some tR-BTC from the RSK Testnet faucet.
 
 [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/)
 
@@ -320,15 +342,17 @@ You can see the transaction hash:
 
 Now I have 0.05 tR-BTC!
 
-## Check balance (again)
+## Recheck balance
 
-Now, let’s check our balance in the console. Run this command in our truffle console:
+To check balance again, run this command in the Truffle console:
 
 ```javascript
-web3.eth.getBalance(account, (err, res) => console.log(res))
+(await web3.eth.getBalance(account)).toString()
 ```
 
 ![getBalance](/assets/img/tutorials/create-a-token/image-20.png)
+
+Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.
 
 # Create the smart contract
 
@@ -336,11 +360,14 @@ In the `contracts` folder, create a new file named `Token.sol`.
 
 ![create Token.sol](/assets/img/tutorials/create-a-token/image-21.png)
 
-# Token.sol with only 7 lines!
+## Token.sol with only 7 lines!
 
 This smart contract is a mintable ERC20 token.
+This means that, in addition to the standard ERC20 specification, it has a function for issuing new tokens.
 
-Copy and paste the following code.
+> To learn more about it, go to [EIP 20: ERC-20 Token Standard](https://eips.ethereum.org/EIPS/eip-20)
+
+Copy and paste the following code:
 
 ```javascript
 pragma solidity 0.5.2;
@@ -365,7 +392,7 @@ To inherit the library's attributes and functions, we simply define our contract
 
 # Compile a smart contract
 
-In the truffle console, run this command:
+In the Truffle console, run this command:
 
 ```
 compile
@@ -375,13 +402,13 @@ compile
 
 # Deploy a smart contract
 
-First of all, we need to create a a new migrations file where truffle will find it, containing instructions to deploy the smart contract.
+First of all, we need to create a a new migrations file where Truffle will find it, containing instructions to deploy the smart contract.
 
-## Create file 2_deploy_contracts.js
+## Create token deployment file
 
-The migrations  folder has JavaScript files that help you deploy contracts to the network. 
+The `migrations` folder has JavaScript files that help you deploy contracts to the network. 
 These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time. 
-A history of previously run migrations is recorded on-chain through a special Migrations contract, detailed below. (source: [truffle: running-migrations](https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations))
+A history of previously run migrations is recorded on-chain through a special Migrations contract. (source: [truffle: running-migrations](https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations))
 
 In the migrations folder, create the file `2_deploy_contracts.js`
 
@@ -401,7 +428,7 @@ module.exports = function(deployer) {
 
 ## Migrate
 
-In the truffle console, run this command:
+In the Truffle console, run this command:
 
 ```
 migrate
@@ -433,27 +460,29 @@ Congratulations!
 
 `My RSK Token` is now published on the RSK Testnet.
 
-Save the contract address of token, it will be used later: 
+Save the contract address of token, it will be used shortly:
 
 ![token address](/assets/img/tutorials/create-a-token/image-29.png)
+
+In the tutorial example:
 
 ```javascript
 tokenAddress = "0x095156af46597754926874dA15DB40e10113fb4d" 
 ```
 
-# Interact with the smart contract 
+# Interact with the token using Truffle console 
 
-First of all, let us interact with our token using the truffle console.
+We need to interact with the newly created token in Truffle console.
 
 ## Get your accounts
 
-In the truffle console
+In the Truffle console, enter:
 
 ```javascript
 const accounts = await web3.eth.getAccounts()
 ```
 
-To check it:
+To view each account:
 
 ```javascript
 accounts[0]
@@ -470,10 +499,10 @@ const token = await Token.deployed()
 
 ![token instance](/assets/img/tutorials/create-a-token/image-31.png)
 
-Check if our instance is OK.
+Confirm if our instance is OK.
 
-Put the instance’s name:  `token`, hit ., then hit TAB twice to trigger autocomplete. 
-This will display the published address, transaction hash of deploy, among other things, including all methods available.
+Enter the instance’s name:  `token`, then `.`, without space hit the TAB button twice to trigger auto-complete as seen below. 
+This will display the published address of the smart contract, and the transaction hash for its deployment, among other things, including all public variables and methods available.
 
 ```javascript
 token. [TAB] [TAB]
@@ -483,10 +512,10 @@ token. [TAB] [TAB]
 
 ## Check the total supply
 
-Call the function totalSupply to check if we have tokens already minted:
+To check if we have tokens already minted, call the `totalSupply` function:
 
 ```javascript
-token.totalSupply((err, res) => console.log(res))
+(await token.totalSupply()).toString()
 ```
 
 ![totalSupply 0](/assets/img/tutorials/create-a-token/image-33.png)
@@ -495,10 +524,10 @@ The returned value is 0, which is expected, since we did not perform any initial
 
 ## Check the token balance
 
-Call the function balanceOf to check the balance of the account 1:
+To check the balance of an account, call the `balanceOf` function. For example, to check the balance of account 0:
 
 ```javascript
-token.balanceOf(accounts[1], (err, res) => console.log(res))
+(await token.balanceOf(accounts[0])).toString()
 ```
 
 ![balanceOf 0](/assets/img/tutorials/create-a-token/image-34.png)
@@ -513,21 +542,23 @@ Run this command:
 token.mint(accounts[0], 10000)
 ```
 
-It sent a transaction to mint 100 tokens for account 0. 
+This command sent a transaction to mint 100 tokens for account 0. 
 
-It is possible to verify the transaction at explorer:
+![token.mint account 0](/assets/img/tutorials/create-a-token/image-45.png)
 
-[0xb1ff5196d916943e38df6d089cedcb8aee8306e88150a4ad061067fd5370fb5c](https://explorer.testnet.rsk.co/tx/0xb1ff5196d916943e38df6d089cedcb8aee8306e88150a4ad061067fd5370fb5c)
+To verify the transaction in the explorer, visit:
 
-You can mint for other accounts, per example, account 1:
+[`0x2162617b34ffcd55cf719cb998e69a33cf115c5d4d58b7ee639c1060fae81355`](https://explorer.testnet.rsk.co/tx/0x2162617b34ffcd55cf719cb998e69a33cf115c5d4d58b7ee639c1060fae81355)
+
+You can mint tokens for other accounts, for example, account 1:
 
 ```javascript
 token.mint(accounts[1], 10000)
 ```
 
-For each account, the result will be the following:
+For each account, the result will be like the following:
 
-![token.mint account](/assets/img/tutorials/create-a-token/image-35.png)
+![token.mint account 1](/assets/img/tutorials/create-a-token/image-35.png)
 
 I can also mint to a specific address, `0xa52515946DAABe072f446Cc014a4eaA93fb9Fd79`:
 
@@ -539,24 +570,24 @@ token.mint("0xa52515946DAABe072f446Cc014a4eaA93fb9Fd79", 10000)
 
 The transaction:
 
-[0x9da701cb2daf548cda8c7a99c243ccce63d05fedee4088708a8bf68ba6bb0bb7](https://explorer.testnet.rsk.co/tx/0x9da701cb2daf548cda8c7a99c243ccce63d05fedee4088708a8bf68ba6bb0bb7)
+[`0x1534230dea0ba07b876dd0ad22fdcb693359de42cb12e5af5e55e17543828a85`](https://explorer.testnet.rsk.co/tx/0x1534230dea0ba07b876dd0ad22fdcb693359de42cb12e5af5e55e17543828a85)
 
-## Check the token balance (again)
+## Reconfirm the token balance
 
-Check the balance of account 1 again:
+Check the balance of account 0 again:
 
 ```javascript
-token.balanceOf(accounts[1], (err, res) => console.log(res))
+(await token.balanceOf(accounts[0])).toString()
 ```
 
 ![balanceOf account 100](/assets/img/tutorials/create-a-token/image-37.png)
 
 The returned value is 10000, which is 100 with 2 decimal places of precision. This is exactly what we expected, as we issued 100 tokens
 
-Also you can get the balance of a specific address, for example,  `0xa52515946DAABe072f446Cc014a4eaA93fb9Fd79`:
+Also, you can get the balance of a specific address, for example, `0xa52515946DAABe072f446Cc014a4eaA93fb9Fd79`:
 
 ```javascript
-token.balanceOf("0xa52515946DAABe072f446Cc014a4eaA93fb9Fd79", (err, res) => console.log(res))
+(await token.balanceOf("0xa52515946DAABe072f446Cc014a4eaA93fb9Fd79")).toString()
 ```
 
 ![balanceOf address 100](/assets/img/tutorials/create-a-token/image-38.png)
@@ -566,7 +597,7 @@ token.balanceOf("0xa52515946DAABe072f446Cc014a4eaA93fb9Fd79", (err, res) => cons
 Check the total supply again:
 
 ```javascript
-token.totalSupply((err, res) => console.log(res))
+(await token.totalSupply()).toString()
 ```
 
 ![totalSupply 300](/assets/img/tutorials/create-a-token/image-39.png)
@@ -576,23 +607,28 @@ After minting 100 tokens for 3 accounts, this is perfect!
 
 ## Transfer tokens
 
-I would like to transfer 50 tokens from account 0 to account 3
+To transfer 40 tokens from account 0 to account 2. 
+This can be done by calling the `transfer` function.
 
 ```javascript
-token.transfer(accounts[3], 5000, {from: accounts[0]})
+token.transfer(accounts[2], 4000, {from: accounts[0]})
 ```
 
 ![token.transfer](/assets/img/tutorials/create-a-token/image-40.png)
 
-Account 3 did not have any tokens before the transfer, and now it should have 50. Let’s check the balance of account 3:
+Transaction:
+
+[0x529dbbe27e21770c21f4af34dbbbe23733af9be5c8c09b7dd4314fef743275a2](https://explorer.testnet.rsk.co/tx/0x529dbbe27e21770c21f4af34dbbbe23733af9be5c8c09b7dd4314fef743275a2)
+
+Account 2 had no tokens before the transfer, and now it should have 40. Let’s check the balance of account 2:
 
 ```javascript
-token.balanceOf(accounts[3], (err, res) => console.log(res))
+(await token.balanceOf(accounts[2])).toString()
 ```
 
 ![balanceOf account 3](/assets/img/tutorials/create-a-token/image-41.png)
 
-Great! The balance of account 3 is correct.
+Great! The balance of account 2 is correct.
 
 # Final considerations
 
