@@ -26,8 +26,8 @@ First ensure you are in a new and empty directory.
 
 3. Run the development console.
     ```javascript
+    npm install
     truffle develop
-    // You may encounter an error: "Cannot find module '@truffle/hdwallet-provider'". Run "npm install" in the terminal to solve this.
     ```
 
 4. Compile and migrate the smart contracts. Note inside the development console we don't preface commands with `truffle`.
