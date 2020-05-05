@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RSK Api
+title: RSK API
 description: "A library and commands to interact with RSK and Ethereum nodes"
 tags: tutorial, rsk, cli
 ---
