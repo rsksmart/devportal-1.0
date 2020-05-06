@@ -308,7 +308,7 @@ sha256sum rskj-core-1.3.0-WASABI-all.jar
 
 > Note: When installing and running the RSKj node,
 > it is always a good idea to verify that your copy is legitimate.
-> [Full instructions](/rsk/node/contribute/verify/ "Verify authenticity of RskJ source code and its binary dependencies")
+> [Full instructions](/rsk/node/security-chain/ "Verify authenticity of RskJ source code and its binary dependencies")
 > on how to do this.
 
 For the purposes of this workshop,

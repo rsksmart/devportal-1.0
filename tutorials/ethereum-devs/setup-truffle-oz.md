@@ -193,7 +193,7 @@ For this version, it looked like this:
 
 For more information about verifying that your copy is legitimate,
 including signature verification, check out the 
-[full instructions](/rsk/node/contribute/verify/ "Verify authenticity of RskJ source code and its binary dependencies")
+[full instructions](/rsk/node/security-chain/ "Verify authenticity of RskJ source code and its binary dependencies")
 on how to do this.
 
 ### Run 
