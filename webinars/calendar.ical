@@ -1424,4 +1424,37 @@ STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200502T135700Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202005-007@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200508T170000Z
+DTSTART:20200508T170000Z
+SUMMARY:Casos de uso de Blockchain construidos sobre RSK y RIF 
+DESCRIPTION:Casos de uso de Blockchain construidos sobre RSK y RIF\n\nOnli
+ ne only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/270466
+ 986/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/casos-de-uso-de-
+ rsk-y-rif\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Casos d
+ e uso de Blockchain construidos sobre RSK y RIF</span></div>\n<div><span>O
+ nline only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://w
+ ww.meetup.com/es-ES/RSKBuenosAires/events/270466986/\">www.meetup.com/es-E
+ S/RSKBuenosAires/events/270466986/</a></span></div>\n<div><b>Video stream 
+ &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/casos-de-us
+ o-de-rsk-y-rif\">app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif</a>
+ </span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Gloria Vailati\, CMO\, @gloriavailati":mailto:developers@iov
+ labs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Casos de uso de Blockchain construidos sobre RSK y RIF 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986
+ /
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200505T193300Z
+END:VEVENT
 END:VCALENDAR
