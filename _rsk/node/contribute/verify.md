@@ -45,7 +45,7 @@ gpg: Good signature from "RSK Release Signing Key <support@rsk.co>" [ultimate]
 Primary key fingerprint: 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
      Subkey fingerprint: D135 DDC0 B54D 6EF3 5901  52DF 67D0 6695 A44D CC86
 ```
-*Note:* You can read [this page](https://www.gnupg.org/gph/en/manual/x334.html) to fnd out more about key management.
+*Note:* You can read [this page](https://www.gnupg.org/gph/en/manual/x334.html) to find out more about key management.
 
 ## Verification of binary dependencies
 
