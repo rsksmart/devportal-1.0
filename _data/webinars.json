@@ -1170,6 +1170,28 @@
       "image": "img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": ""
+    },
+    {
+      "type": "event/2",
+      "id": "202005-007",
+      "version": "1",
+      "timestamp": "2020-05-08T17:00:00.000Z",
+      "lastModified": "2020-05-05T19:33:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986/",
+      "title": "Casos de uso de Blockchain construidos sobre RSK y RIF",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "presenter": "Gloria Vailati",
+      "presenterDescription": "CMO",
+      "presenterContact": "@gloriavailati",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif",
+      "tags": "online online-workshop general non-developers",
+      "image": "img/events/event4.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
     }
   ]
 }
