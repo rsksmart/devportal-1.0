@@ -8,19 +8,19 @@ title: RIF Storage JS
 ### npm
 
 ```sh
-> npm install rif-storage
+> npm install @rsksmart/rif-storage
 ```
 
 ### Use in Node.js
 
 ```js
-var RifStorage = require('rif-storage')
+var RifStorage = require('@rsksmart/rif-storage')
 ```
 
 ### Use in a browser with browserify, webpack or any other bundler
 
 ```js
-var RifStorage = require('rif-storage')
+var RifStorage = require('@rsksmart/rif-storage')
 ```
 
 ### Use in a browser Using a script tag
@@ -28,9 +28,9 @@ var RifStorage = require('rif-storage')
 Loading this module through a script tag will make the `RifStorage` obj available in the global namespace.
 
 ```html
-<script src="https://unpkg.com/rif-storage/dist/index.min.js"></script>
+<script src="https://unpkg.com/@rsksmart/rif-storage/dist/index.min.js"></script>
 <!-- OR -->
-<script src="https://unpkg.com/rif-storage/dist/index.js"></script>
+<script src="https://unpkg.com/@rsksmart/rif-storage/dist/index.js"></script>
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ Loading this module through a script tag will make the `RifStorage` obj availabl
 This is a client library, therefore you need to provide access to the provider's running node for specifics see [Providers](#providers).
 
 ```javascript
-import RifStorage, { Provider } from 'rif-storage'
+import RifStorage, { Provider } from '@rsksmart/rif-storage'
 
 // Connects to locally running node
 const storage = RifStorage(Provider.IPFS, { host: 'localhost', port: '5001', protocol: 'http' })
