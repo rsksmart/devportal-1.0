@@ -18,6 +18,7 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 - [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
 - [Port Ethereum dApps](/tutorials/ethereum-devs/port-ethereum-dapps/)
 - [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
+- [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
 ## To build your front end
 
@@ -27,7 +28,8 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 ## To create tokens
 
 - [How to create your first token with less than 10 lines of code](/tutorials/tokens/create-a-token/)
-- [Create other token](/tutorials/tokens/create-a-token-02/)
+- [Create other ERC20 token](/tutorials/tokens/create-a-token-02/)
+- [Create your own collectable token](/tutorials/tokens/create-a-collectable-token/)
 
 ## Truffle tutorials
 
