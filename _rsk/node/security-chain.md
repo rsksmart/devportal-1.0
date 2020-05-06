@@ -25,6 +25,7 @@ gpg:               imported: 1  (RSA: 1)
 ```
 
 ## Verify the fingerprint of the public key
+
 ``` bash
 $ gpg --finger 5DECF4415E3B8FA4
 pub   4096R/5E3B8FA4 2017-05-16 [expires: 2022-05-15]
