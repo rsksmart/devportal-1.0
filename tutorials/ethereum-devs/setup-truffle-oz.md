@@ -308,7 +308,7 @@ We have two options for initializing a project:
 1. An empty project
 2. A project based in a Truffle Box
 
-## 1- Initialize an empty Truffle project
+## 1 - Initialize an empty Truffle project
 
 Create a new folder. For example, `myproject`, and navigate to the folder in the terminal.
 
@@ -317,7 +317,7 @@ mkdir myproject
 cd myproject
 ```
 
-For example, I will create a folder at this location - `C:\RSK\` (I'm using windows OS).
+For example, I will create a folder at this location - `C:\RSK\` (I'm using Windows).
 
 My project can be located in the folder `C:\RSK\myproject`.
 
@@ -331,7 +331,7 @@ truffle init
 
 ![truffle init](/assets/img/tutorials/setup-truffle-oz/image-14.png)
 
-Open the folder in VSCode to view the file structure like this:
+Open the folder in VS Code to view the file structure like this:
 
 ![truffle file structure](/assets/img/tutorials/setup-truffle-oz/image-15.png)
 
@@ -357,32 +357,34 @@ npm init -y
 
 ![npm init](/assets/img/tutorials/setup-truffle-oz/image-16.png)
 
-## 2- Initialize a project based in a Truffle Box
+## 2 - Initialize a project based in a Truffle Box
 
-Remember only choose this option if you haven't gone through option 1.
+> Note: Only do this if you have not done option 1.
 
 Truffle Boxes are templates. 
 In addition to Truffle, 
-Truffle Boxes can contain other helpful modules, such as, Solidity contracts & libraries, front-end views and more.
+Truffle Boxes can contain other helpful modules, such as Solidity smart contracts, libraries, front-end views, and more.
 
 In option 1, when we use `truffle init`, we used a special kind of truffle box. 
-Check out other [boxes] (https://www.trufflesuite.com/boxes)
+Check out other [boxes] (https://www.trufflesuite.com/boxes).
 
-Also we have some of them already configured for RSK, [check it out here](https://developers.rsk.co/tutorials/truffle-boxes/)
+Also we have some of them already configured for RSK, [check it out here](https://developers.rsk.co/tutorials/truffle-boxes/).
 
-# Install Open Zeppelin (OZ)
+## Install Open Zeppelin
 
-OpenZeppelin Contracts is a set of libraries of smart contracts for Ethereum and other blockchains. 
-These libraries will install not only the main libraries of our token but also libraries for ownership, safe math, and many other utilities. 
-It's worth mentioning that these libraries have been reviewed and audited to accomplish high standards of security so contracts that depend on them are less susceptible to hacking when used correctly.
+Open Zeppelin Contracts is a set of libraries of Solidity smart contracts for Ethereum and other blockchains. 
+These libraries will install not only the main libraries required for our token,
+but also libraries for ownership, safe math, and many other utilities. 
+It's worth mentioning that these libraries have been reviewed and audited to accomplish high standards of security,
+so contracts that depend on them are less susceptible to hacking when used correctly.
 
-In the terminal, inside `myproject` folder, install OpenZeppelin libraries using this command:
+In the terminal, inside `myproject` folder, install Open Zeppelin libraries using this command:
 
 ```shell
 npm install -E @openzeppelin/contracts@2.5.0
 ```
 
-The option `-E` is to save dependencies with an exact version rather than using npm's default.
+The option `-E` is to save dependencies with an exact version rather than the latest version published on npm.
 
 ![openzeppelin install](/assets/img/tutorials/setup-truffle-oz/image-17.png)
 
@@ -397,7 +399,7 @@ For more info:
 To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. We are going to use `@truffle/hdwallet-provider`. 
 This can be used to sign transactions for addresses derived from a 12 or 24 word mnemonic.
 
-> You need to have installed Node >= 7.6.
+> You need to have Node >= 7.6 installed.
 
 In the terminal, inside the `myproject` folder, install the HD wallet provider with this command:
 
@@ -407,9 +409,8 @@ npm install -E @truffle/hdwallet-provider@1.0.34
 
 ![hd wallet provider install](/assets/img/tutorials/setup-truffle-oz/image-18.png)
 
-As I said before, the option `-E` is to save dependencies with an exact version rather than using npm's default.
-
-This `truffle package` comes with so many dependencies. 
+This `truffle package` comes with many dependencies,
+and so can take a long time to complete. 
 A successful installation message is shown if everything works fine.
 
 ![hd wallet provider successful installation](/assets/img/tutorials/setup-truffle-oz/image-19.png)
@@ -420,7 +421,7 @@ A successful installation message is shown if everything works fine.
 including the packages which we installed before using the command `npm init -y`.
 
 After the installations, 
-I will open the project folder named `myproject` in VSCode and verify the file package.json. 
+I will open the project folder named `myproject` in VS Code and verify the file `package.json`. 
 Let's take a look at the dependencies in the file:
 
 ![package.json](/assets/img/tutorials/setup-truffle-oz/image-20.png)
@@ -444,7 +445,7 @@ Another way is using this web app:
 
 [iancoleman.io/bip39](https://iancoleman.io/bip39/)
 
-> In this tutorial, the method used in creating the mnemonic is not recommended to be used for any 'real' wallet because it's not secure enough to generate a private key in a website, however we will use this here for learning purposes, and because we're using the Testnet.
+> Note: In this tutorial, the method used to store the mnemonic is not recommended to be used for any 'real' wallet because it's not secure enough to generate a private key in a website, however we will use this here for learning purposes, and because we're using the Testnet, so no real amounts are at stake.
 
 In the `Generate a random mnemonic` field, select `12 words` and click on the `generate` button.
 
@@ -463,7 +464,7 @@ energy knife ice mouse merge track cram brown decorate atom rule virus
 
 Copy these 12 words, we'll use it later in this tutorial.
 
-## Package mnemonics
+## mnemonics module
 
 Another alternative is using package [mnemonics](https://github.com/itinance/mnemonics), 
 which is a simple utility that can be used to generate [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonics.
@@ -474,15 +475,15 @@ To install `mnemonics` globally, input the command below into the terminal and p
 npm install -g mnemonics@1.1.3
 ```
 
-To use it to generate a 12-word BIP39 mnemonic, enter this command into your terminal:
+Use this to generate a 12-word BIP39 mnemonic, by entering this command:
 
 ```shell
 mnemonics > .secret
 ```
 
-This is saving a new mnemonic in the file named `.secret`, which is the next step.
+This saves a new mnemonic in the file named `.secret`, which is the next step.
 
-# Create file .secret
+# Create .secret file
 
 In the terminal, inside the `myproject folder`, create a file named `.secret`.
 
@@ -544,8 +545,6 @@ In your project folder, run this cURL command:
 curl https://public-node.testnet.rsk.co/1.3.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
 ```
 
-If you are using a Windows OS, I suggest you use the Git Bash terminal. 
-
 ![gas price result](/assets/img/tutorials/setup-truffle-oz/image-25.png)
 
 You should receive a response similar to the following in the file:
@@ -584,7 +583,7 @@ In the `truffle-config.js` file, include this configuration at `network` section
 
 ## Truffle config with local and testnet RSK networks
 
-This is the final `truffle-config.js` file with both networks configurations:
+This is the final `truffle-config.js` file with configurations for both networks:
 
 ```javascript
 const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -623,7 +622,7 @@ module.exports = {
 }
 ```
 
-Check out the VSCode image too:
+Check out the VS Code image too:
 
 ![truffle-config](/assets/img/tutorials/setup-truffle-oz/image-27.png)
 
@@ -661,7 +660,7 @@ truffle console --network testnet
 ```
 
 It takes a little longer to establish this connection when compared to the local node. 
-And you go to a new console:
+This will open a new console:
 
 ![truffle console network testnet](/assets/img/tutorials/setup-truffle-oz/image-29.png)
 
@@ -721,9 +720,7 @@ And run this command to save the addresses at variable `accounts`:
 const accounts = Object.keys(web3.currentProvider.wallets)
 ```
 
-You may get an`undefined` response,  though strange, but it means that everything is fine.
-
-It is possible to see the addresses after it by entering the command below:
+See the addresses after it by entering the command below:
 
 ```javascript
 accounts
@@ -753,8 +750,9 @@ To check the balance of an account, for example, the first account of our list (
 
 ![getBalance accounts 0](/assets/img/tutorials/setup-truffle-oz/image-37.png)
 
-The balance is 0 and we need some tR-BTC to pay gas fees, they will be used to publish smart contracts or interact with them. 
-We shall get some tR-BTC in the next step.
+The balance is 0 and we need some tR-BTC to pay gas fees,
+which will be used to publish smart contracts and interact with them. 
+We shall obtain some in the next step.
 
 # TestNet Faucet
 
@@ -796,9 +794,12 @@ Great! Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18
 
 # Where to go from here
 
-Now we have installed all requirements and created an empty project using Truffle framework and Open Zeppelin smart contracts library, connected to a RSK local node or RSK testnet.
+At this point, we have installed all requirements and created an empty project using Truffle framework and Open Zeppelin smart contracts library,
+connected to both an RSK local node (Regtest) and the RSK Testnet.
 
-We have not developed anything yet, but this tutorial equips you to move to the next tutorials, where we will develop very cool projects!
+We have not developed anything yet,
+but you are now ready to move on to the next tutorials,
+where we will develop some very cool projects!
 
 Choose any of these to tutorials to begin:
 
