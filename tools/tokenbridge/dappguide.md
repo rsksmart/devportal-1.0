@@ -11,8 +11,9 @@ This guide describes the steps to transfer tokens using the Web Interface for th
 
 ### Prerequisites
 
-This will require access to either Chrome or Chromium web browser, with either [Nifty Wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid) or [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) wallet browser extension installed. The derivation path used in RSK is different from the one used in Ethereum, so you need to [use a custom network](https://developers.rsk.co/tutorials/resolve-nifty-issue/#add-rsk-as-custom-node) to keep the same address in RSK and Ethereum.
-You will need R-BTC on RSK and ETH on Ethereum to pay for the necessary transactions.
+This will require the use of either Chrome or Chromium web browser, with one of the following wallet browser extensions: 
+- [Nifty Wallet](https://www.poa.network/for-users/nifty-wallet) using a [custom network](/tutorials/resolve-nifty-issue/#add-rsk-as-custom-node) for RSK to keep the same addresses as Ethereum.
+- [Metamask](https://metamask.io/download.html) using a [custom network](/develop/apps/wallets/metamask/) to add the RSK network.
 
 ## Steps
 
