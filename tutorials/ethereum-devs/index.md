@@ -9,3 +9,4 @@ description: "Tutorials for Ethereum developers: Using Geth, Remix, and MetaMask
 - [Geth attach to RSK local node for Mac users](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
 - [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
 - [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
+- [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
