@@ -5,9 +5,9 @@ tags: tutorial, rsk, openzeppelin, truffle
 description: "How to create a new blockchain project, using Truffle framework and Open Zeppelin library connected to a RSK local node and RSK testnet"
 ---
 
-It does not matter whether you are an experienced developer, or just learning to code, you do not need to be a blockchain expert to follow along. 
-
 In this tutorial, I will show you step-by-step how to create a new blockchain project, using Truffle framework and Open Zeppelin smart contracts library, connected to a RSK local node or RSK testnet.
+
+It does not matter whether you are an experienced developer, or just learning to code, you do not need to be a blockchain expert to follow along. 
 
 # Overview
 
@@ -21,7 +21,7 @@ Here is a summary of the steps to be taken to build our project:
 6. Create a wallet mnemonic;
 7. Configure Truffle to connect to RSK networks;
 8. Use Truffle console;
-9. Get some testnet R-BTCs at faucet;
+9. Get some testnet R-BTCs from the RSK faucet;
 
 # Requirements
 
@@ -37,16 +37,15 @@ Here is a summary of the steps to be taken to build our project:
 The **Portable Operating System Interface (POSIX)** is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems. Source: [Wikipidia](https://en.wikipedia.org/wiki/POSIX)
 
 * Mac OSX and Linux distributions: Use the standard terminal
-
 * Windows: If you use the standard cmd terminal, or PowerShell, the commands here may not work. 
-Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled. 
-Here is a [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
+  Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled. 
+  Here is a [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
 
-## Curl
+## cURL
 
 This is a system command that is likely already installed on your system.
 
-If curl --version displays an error, [download curl](https://curl.haxx.se/download.html).
+If `curl --version` displays an error, [download curl](https://curl.haxx.se/download.html).
 
 ## Java
 
@@ -60,7 +59,7 @@ java -version
 
 ![java -version](/assets/img/tutorials/setup-truffle-oz/image-01.png)
 
-If java -version displays an error, 
+If `java -version` displays an error, 
 or displays a version other than 1.8, 
 you will need to install it. 
 Go to [Java Download](https://www.java.com/en/download/) if you need to install it:
@@ -103,25 +102,25 @@ npm --version
 
 If there's no output like that in the image above, go to [Node.js](https://nodejs.org/en/) install. 
 
-NB: The NPM package is usually installed together with Node.js, so after installing node.js, there's no need to install NPM.
+Note that NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
 
 If you want to have more than one version installed, 
 the most fuss-free way to install and manage multiple versions of `node` on your computer is [nvm](https://github.com/nvm-sh/nvm).
 
 ## Code editor
 
-We need a software that is able to edit text files. 
+We need some software that is able to edit text files. 
 Preferably one that has support for syntax highlighting for both Solidity and Javascript.
 
 [VS Code](https://code.visualstudio.com/) is a good choice if you don't already have one.
 
-### Visual Studio Code (VSCode)
+### Visual Studio Code (VS Code)
 
-In this tutorial, We would use VSCode to create and deploy our project.
+In this tutorial, We would use VS Code to create and deploy our project.
 
-To use VSCode [download it here](https://code.visualstudio.com/download).
+To use VS Code [download it here](https://code.visualstudio.com/download).
 
-Verify if your VS code installation was successful by typing the following command into the terminal:
+Verify if your VS Code installation was successful by typing the following command into the terminal:
 
 ```shell
 code -v
@@ -131,9 +130,9 @@ code -v
 
 ## Truffle
 
-Truffle is a popular development framework for Ethereum with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management. 
+Truffle is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management. 
 
-It also makes developing on  RSK easier, with the ability to configure a RSK network in Truffle.
+It also makes developing on RSK easier, with the ability to configure custom networks for RSK.
 
 To install Truffle, input the command below into the terminal and press `enter` at your project location:
 
@@ -143,7 +142,7 @@ npm install -g truffle
 
 ![truffle install](/assets/img/tutorials/setup-truffle-oz/image-05.png)
 
-When the installation is finished, close the terminal,open it again and check the Truffle version:
+When the installation is finished, close the terminal, open it again and check the Truffle version:
 
 ```shell
 truffle version
@@ -157,7 +156,7 @@ For more info:
 
 # RSK regtest (Local node)
 
-When we develop a project using Truffle Framework, we need a blockchain running locally, it is better for development, library reference and run tests. We'll connect to the RSK network via a local node.
+When we develop a project using Truffle Framework, we need a blockchain node running locally. This is better for development, and running tests. We'll connect to the RSK network via this local node.
 
 There are several ways to set up a RSK local node. Here, we will download a JAR file and run it using the Java SDK that has been installed.
 
@@ -189,10 +188,12 @@ For this version, it looked like this:
 
 ![Verify authenticity](/assets/img/tutorials/setup-truffle-oz/image-08.png)
 
-If you are using a Windows OS, I suggest to use the Git Bash terminal. Download the installer from the [Git official site](https://git-scm.com/) .
+> Note that if you are using Windows, you will need a POSIX compliant shell for this.
+> See instructions [about using Git Bash](#posix-compliant-shell) above.
 
-For more information about verifying that your copy is legitimate, get this 
-[Full instructions](/rsk/node/contribute/verify/ "Verify authenticity of RskJ source code and its binary dependencies")
+For more information about verifying that your copy is legitimate,
+including signature verification, check out the 
+[full instructions](/rsk/node/contribute/verify/ "Verify authenticity of RskJ source code and its binary dependencies")
 on how to do this.
 
 ### Run 
@@ -228,9 +229,14 @@ java -cp C:/RSK/node/rskj-core-1.3.0-WASABI-all.jar -Drpc.providers.web.cors=* c
 java -cp ~/RSK/node/rskj-core-1.3.0-WASABI-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
-> Add the parameter  `-Drpc.providers.web.cors=*` before `co.rsk.Start` to enable our RSK local node to accept connections from our front-end, by disabling Cross-origin Resource Sharing (CORS) restrictions.
+If you see no output - that is a good thing:
+Its output is directed to a log file.
 
-If you do not have any output after running the command, this usually means that the node is running successfully. We will confirm this in the next step.
+> Note the flag provided above: `-Drpc.providers.web.cors=*`
+> This disables cross origin resource sharing protection,
+> effectively allowing any web page to access it.
+> As we want to make JSON-RPC requests from a browser,
+> such as a DApp, we need this flag.
 
 This is the result in the terminal in Windows OS:
 
@@ -238,15 +244,14 @@ This is the result in the terminal in Windows OS:
 
 **Important:**
 
-> Do not close this terminal/console window, If closed the local node would stop running.
+> Do not close this terminal/console window,
+> if closed the local node will stop running.
 
 ### Check if the node is running using cURL
 
 Open a new terminal window. 
 
-Issue a request to the node's RPC HTTP server. 
-
-If you are using a Windows OS, I suggest to use the Git Bash terminal. Download the installer from the Git official site. [https://git-scm.com/](https://git-scm.com/) .
+Issue a JSON-RPC request to the RSK node's HTTP server. 
 
 This is an example using cURL:
 
@@ -262,14 +267,14 @@ The response should look similar to this:
 {"jsonrpc":"2.0","id":1,"result":"0x2991b"}
 ```
 
-The result property is the number of the latest block that has been synced. Note that this value (`0x2991b`) is the block number in hexadecimal, so the output above indicates that the current block number is 170267 in decimal.
+The `result` property is the number of the latest block that has been synced. Note that this value (`0x2991b`) is the block number in hexadecimal (base 16), so the output above indicates that the current block number is `170267` in decimal (base 10).
 
 * To get more information about this process:
-[Setup RSKj with Java](/rsk/node/install/java/)
-
-* If you encounter any problems, check if your system meets the [minimum requirements](/rsk/node/install/requirements/).
-
-* There are other ways to install a RSK node, in other supported platforms: [Installing RSKj](/rsk/node/install/)
+  Check out [set up RSKj with Java](/rsk/node/install/java/).
+* If you encounter any problems, check if your system meets the
+  [minimum requirements](/rsk/node/install/requirements/).
+* There are other ways to install an RSK node, in other supported platforms:
+  Check out [installing RSKj](/rsk/node/install/).
 
 # RSK Testnet - verify the connection 
 
@@ -280,8 +285,6 @@ This is an example using cURL. Enter the following command into your terminal.
 ```shell
 curl https://public-node.testnet.rsk.co/1.3.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
-
-> If you are using a Windows OS, I suggest to use the Git Bash terminal. Download the installer from the Git official site. [https://git-scm.com/](https://git-scm.com/) 
 
 This is a very simple query that simply asks what the latest block number is. 
 
