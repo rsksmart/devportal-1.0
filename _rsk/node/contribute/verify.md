@@ -67,8 +67,6 @@ configure.sh: OK
 sha256sum: WARNING: 19 lines are improperly formatted
 ```
 
-*Note:* If you are collaborating on this project with Git, it might produce unexpected results because of the way it is configured to handle line endings. Check out [this article](https://help.github.com/articles/dealing-with-line-endings/#platform-windows) on how to solve the problem.
-
 ## Run configure script to configure secure environment
 
 ```bash
