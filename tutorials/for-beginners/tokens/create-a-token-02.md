@@ -1,9 +1,10 @@
 ---
 layout: rsk
-title: Create a token - other approach
+title: Create a token - a second approach
 tags: tutorial, rsk, token, openzeppelin, erc20, truffle 
-description: "Other approach to create a token using Truffle and Open Zeppelin smart contracts at RSK testnet"
+description: "A second approach to creating a token using Truffle and Open Zeppelin smart contracts at RSK testnet"
 ---
+
 ## Preparing the environment
 
 **Install truffle**
