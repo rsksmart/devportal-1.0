@@ -14,7 +14,7 @@ To achieve that, the implementation of a Light Client is a must. A RIF Lumino Li
 
 We have identified two possible ways that a Light Client can be implemented:
 
-1. Create different sdks that are able to run into a client environment (ie: node.js sdk, android sdk, ios sdk). Those sdks implements the full RIF Lumino protocol, which means:
+1. Create different SDKs that are able to run into a client environment (ie: node.js SDK, Android SDK, iOS SDK). These SDKs implement the full RIF Lumino protocol, which means:
     - Interact with Lumino smart contracts
     - Implement the Lumino protocol specification. Basically, porting the code of the full node to each client SDK..
 
