@@ -215,7 +215,7 @@ The following diagram describes the process that takes place when a light client
 
 **Open Channel**
 
-In order to open a channel the Light Client must call the endpoint &quot;light\_channels&quot; using the PUT method (we actually can make the light client send the open channel transaction directly to RSK without passing thru the node, but for the sake of maintain all the logic on the node and keep the light client SDK simpler we decided to left it on the node side).
+In order to open a channel the Light Client must call the endpoint `light\_channels` using the PUT method (we actually can make the light client send the open channel transaction directly to RSK without passing thru the node, but for the sake of maintain all the logic on the node and keep the light client SDK simpler we decided to left it on the node side).
 
 It should send a JSON object in the body with the following structure:
 
