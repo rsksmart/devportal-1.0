@@ -321,7 +321,9 @@ The following diagram describe the logical message interactions required between
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-interaction.png" alt=""/></div>
 
-Next you will see the diagram describing the interaction between the Light Client SDK and the Lumino Hub [THIS DIAGRAM IS A DRAFT VERSION].
+Next you will see the diagram describing the interaction between the Light Client SDK and the Lumino Hub
+
+> Note: The following diagram is a draft version.
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-interaction-2.png" alt=""/></div>
 
