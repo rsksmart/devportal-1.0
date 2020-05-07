@@ -23,6 +23,7 @@ npm install truffle -g
 ```
 
 ## More info:
+- [Truffle Open Zeppelin](/tutorials/ethereum-devs/setup-truffle-oz)
 - [Truffle Boxes](/tools/truffle/boxes)
 - [Truffle Ganache](/tools/truffle/ganache)
 - [Truffle Documentation](https://www.trufflesuite.com/docs)
