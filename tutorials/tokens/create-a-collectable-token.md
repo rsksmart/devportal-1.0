@@ -5,14 +5,14 @@ tags: tutorial, rsk, token, openzeppelin, erc721, truffle, frontend, web3, react
 description: "How to create your own collectable token on RSK network using Truffle framework, Open Zeppelin libraries and a react frontend."
 ---
 
-In this tutorial, you will learn about blockchain programming from scratch by building a full decentralized application step-by-step. 
-You will also learn how to create your own collectable token on the RSK blockchain network using the Truffle framework, Open Zeppelin libraries, and build a frontend with the `create-react-app`.
+In this tutorial, you will learn about blockchain programming from scratch by building a fully decentralized application step-by-step. 
+You will also learn how to create your own collectable token on the RSK blockchain network using the Truffle framework, Open Zeppelin(OZ) libraries, and build a frontend with the `create-react-app`.
 
 We will create a dapp inspired by the popular website [Cryptokitties](https://www.cryptokitties.co/), 
 a popular blockchain game where you can collect and breed digital cats. 
 In this tutorial, instead of collecting felines in our app, we are going to collect exclusive color tokens.
 
-### Fungible vs Non-Fungible
+### Fungible vs Non-Fungible Token
 
 A fungible token represents an asset that can be exchanged for any other asset of equal value in its class.
 
@@ -31,7 +31,7 @@ for representing non-fungible digital assets.
 
 The most important properties for this kind of asset is to have a way to check who owns what and a way to move things around.
 
-It is easy to create new ERC721-compliant contracts by importing it from the OpenZeppelin library and we will do so in this tutorial.
+It is easy to create new ERC721-compliant contracts by importing it from the OZ library and we will do so in this tutorial.
 
 The interface for ERC-721 provides two methods:
 
@@ -42,7 +42,7 @@ And this is enough to represent an NFT!
 
 ### Colors
 
-In this tutorial, We are going to create a non-fungible token to represent our collectible color tokens. 
+In this tutorial, We are going to create a NFT to represent our collectible color tokens. 
 
 You will be able to create new color tokens and claim them so that they can be held in a digital blockchain wallet.
 
@@ -51,7 +51,7 @@ You will be able to create new color tokens and claim them so that they can be h
 Here is a summary of the steps to be taken to build our token:
 
 1. Installation requirements;
-2. Initialize a project using Truffle and Open Zeppelin;
+2. Initialize a project using Truffle and OZ;
 3. Configure Truffle to connect to RSK testnet;
 4. Get a wallet with some testnet R-BTCs;
 5. Initialize the client side application;
@@ -90,7 +90,7 @@ Do the steps below, following instructions from the tutorial
 
 1. Initialize an empty Truffle project;
 2. Initialize an npm project;
-3. Install Open Zeppelin;
+3. Install OZ;
 4. Install HD wallet provider;
 5. Create a wallet mnemonic;
 6. Create file .secret;
@@ -268,7 +268,7 @@ It looked like this:
 
 ## Understanding the smart contract
 
-To create our ERC721 Token, we will import `ERC721Full` from Open Zeppelin. 
+To create our ERC-721 Token, we will import `ERC721Full` from OZ. 
 This library itself imports several other libraries such as `SafeMath.sol`, 
 the standards for this kind of token and some extra features, 
 like enumeration and metadata. 
@@ -336,7 +336,7 @@ In the terminal, run this command:
 truffle migrate --network testnet
 ```
 
-Wait a few minutes while the transactions for the smart contract deployments are sent to the blockchain…
+Wait a few minutes while the transactions for the smart contract deployments are sent to the blockchain.
 
 The migrate command will compile the smart contract again if necessary.
 
@@ -613,13 +613,13 @@ export default App;
 
 ## Understanding App.js
 
-After import web3 here:
+Import web3 here:
 
 ```javascript
 import Web3 from 'web3'
 ```
 
-This part connected to RSK testnet using the wallet injected, in this case, Metamask:
+This part is connected to RSK testnet using the web3 wallet injected, in this case, Metamask:
 
 ```javascript
   async loadWeb3() {
@@ -798,7 +798,7 @@ And my collection is growing!
 
 # Congratulations!
 
-Did you think that it would be so easy to create a NFT? 
+Hope it was easy for you to create a NFT? 
 
 I showed you how to connect Truffle to the RSK network and deploy your own NFT token using the Open Zeppelin libraries, and that they work on the RSK network.
 
