@@ -21,11 +21,11 @@ We have identified two possible ways that a Light Client can be implemented:
     Advantages:
 
     - There is no need for another node to connect to the network
-    - You don&#39;t need to trust into another node to make off-chain payments
+    - You don't need to trust into another node to make off-chain payments
 
     Disadvantages:
 
-    - The Light Client will be &quot;light&quot; only because it will be able to run into a browser or mobile app, but the full protocol and state machine of a full node must be implemented.
+    - The Light Client will be "light" only because it will be able to run into a browser or mobile app, but the full protocol and state machine of a full node must be implemented.
     - We need to do that for each environment, we need to rewrite the code for each language or platform.
 
 2. Creation of RIF Lumino HUB and a Light Client library.
