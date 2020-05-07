@@ -800,7 +800,7 @@ And my collection is growing!
 
 Hope it was easy for you to create a NFT? 
 
-I showed you how to connect Truffle to the RSK network and deploy your own NFT token using the Open Zeppelin libraries, and that they work on the RSK network.
+I showed you how to connect Truffle to the RSK network and deploy your own NFT using the Open Zeppelin(OZ) libraries, and that they work on the RSK network.
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
