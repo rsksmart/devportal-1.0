@@ -5,8 +5,8 @@ tags: tutorial, rsk, token, openzeppelin, erc721, truffle, frontend, web3, react
 description: "How to create your own collectable token on RSK network using Truffle framework, Open Zeppelin libraries and a react frontend."
 ---
 
-In this tutorial, you will learn about blockchain programming from scratch by building a fully decentralized application step-by-step. 
-You will also learn how to create your own collectable token on the RSK blockchain network using the Truffle framework, Open Zeppelin(OZ) libraries, and build a frontend with the `create-react-app`.
+In this tutorial, you will learn about blockchain programming from scratch by building a fully decentralized application (DApp), step by step. 
+You will also learn how to create your own collectable token on the RSK blockchain network using the Truffle framework, Open Zeppelin (OZ) libraries, and build a front end with React, using `create-react-app`.
 
 We will create a dapp inspired by the popular website [Cryptokitties](https://www.cryptokitties.co/), 
 a popular blockchain game where you can collect and breed digital cats. 
@@ -42,7 +42,7 @@ And this is enough to represent an NFT!
 
 ### Colors
 
-In this tutorial, We are going to create a NFT to represent our collectible color tokens. 
+In this tutorial, we are going to create an NFT to represent our collectible color tokens.
 
 You will be able to create new color tokens and claim them so that they can be held in a digital blockchain wallet.
 
@@ -619,7 +619,7 @@ Import web3 here:
 import Web3 from 'web3'
 ```
 
-This part is connected to RSK testnet using the web3 wallet injected, in this case, Metamask:
+This part is connected to the RSK Testnet using the injected web3 provider, in this case, MetaMask:
 
 ```javascript
   async loadWeb3() {
@@ -798,9 +798,9 @@ And my collection is growing!
 
 # Congratulations!
 
-Hope it was easy for you to create a NFT? 
+Hope it was easy for you to create a NFT!
 
-I showed you how to connect Truffle to the RSK network and deploy your own NFT using the Open Zeppelin(OZ) libraries, and that they work on the RSK network.
+I showed you how to connect Truffle to the RSK network and deploy your own NFT using the OZ libraries, and that they work on the RSK network.
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
