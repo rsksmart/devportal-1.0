@@ -99,7 +99,7 @@ grep "rskj-core" rskj-core-1.3.0-WASABI-all.SHA256SUMS.asc
 
 The curl commands download a binary which is the RSKj executable, as well as a plain text file containing the checksum for the JAR file. The subsequent `shasum` (or `sha256sum` depending on your *NIX variety), and `grep` are used to verify that the checksum recorded as part of the release process does indeed match the computed checksum of the file that was downloaded.
 
-Note that verifying the checksum is not the only form of verification of the RSKj binary. There are [more detailed instructions](/rsk/node/contribute/verify/ "Verify authenticity of RSKj source code and its binary dependencies") available on how to do this.
+Note that verifying the checksum is not the only form of verification of the RSKj binary. There are [more detailed instructions](/rsk/node/security-chain/ "Verify authenticity of RSKj source code and its binary dependencies") available on how to do this.
 
 #### Run RSKj
 

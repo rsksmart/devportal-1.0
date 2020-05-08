@@ -25,6 +25,7 @@ gpg:               imported: 1  (RSA: 1)
 ```
 
 ## Verify the fingerprint of the public key
+
 ``` bash
 $ gpg --finger 5DECF4415E3B8FA4
 pub   4096R/5E3B8FA4 2017-05-16 [expires: 2022-05-15]
@@ -69,8 +70,6 @@ $ shasum --check SHA256SUMS.asc
 configure.sh: OK
 sha256sum: WARNING: 19 lines are improperly formatted
 ```
-
-*Note:* if you are collaborating on this project with Git, it might produce unexpected results because the way it's configured to handle line endings. See [here](https://help.github.com/articles/dealing-with-line-endings/#platform-windows) how to solve the problem.
 
 ## Run configure script to configure secure environment
 

@@ -44,7 +44,7 @@ git checkout tags/WASABI-1.3.0 -b WASABI-1.3.0
 
 ## Ensure the security chain
 
-[Ensure the security chain](/rsk/node/contribute/verify) of the downloaded source code.
+[Ensure the security chain](/rsk/node/security-chain) of the downloaded source code.
 
 ## Get external dependencies
 
