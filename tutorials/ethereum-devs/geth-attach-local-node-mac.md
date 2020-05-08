@@ -74,8 +74,8 @@ java -version
 There are several different ways to set up a RSK node. Here we will download and run the file from bash.
 
 
-#### Download and Verify RSKj 1.3.0
-Find the [Releases page](https://github.com/rsksmart/rskj/releases/tag/WASABI-1.3.0)
+#### Download and Verify RSKj 2.0.1
+Find the [Releases page](https://github.com/rsksmart/rskj/releases/tag/PAPYRUS-2.0.1)
 
 To download and verify RSKj:
 
@@ -85,16 +85,16 @@ mkdir rskj-node
 cd rskj-node
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/WASABI-1.3.0/rskj-core-1.3.0-WASABI-all.jar \
-  > ./rskj-core-1.3.0-WASABI-all.jar
+  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/rskj-core-2.0.1-PAPYRUS-all.jar \
+  > ./rskj-core-2.0.1-PAPYRUS-all.jar
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/WASABI-1.3.0/SHA256SUMS.asc \
-  > ./rskj-core-1.3.0-WASABI-all.SHA256SUMS.asc
-shasum rskj-core-1.3.0-WASABI-all.jar
-# 1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd  rskj-core-1.3.0-WASABI-all.jar
-grep "rskj-core" rskj-core-1.3.0-WASABI-all.SHA256SUMS.asc
-# 1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd rskj-core/build/libs/rskj-core-1.3.0-WASABI-all.jar
+  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/SHA256SUMS.asc \
+  > ./rskj-core-2.0.1-PAPYRUS-all.SHA256SUMS.asc
+shasum rskj-core-2.0.1-PAPYRUS-all.jar
+# 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0  rskj-core-2.0.1-PAPYRUS-all.jar
+grep "rskj-core" rskj-core-2.0.1-PAPYRUS-all.SHA256SUMS.asc
+# 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
 The curl commands download a binary which is the RSKj executable, as well as a plain text file containing the checksum for the JAR file. The subsequent `shasum` (or `sha256sum` depending on your *NIX variety), and `grep` are used to verify that the checksum recorded as part of the release process does indeed match the computed checksum of the file that was downloaded.
@@ -116,7 +116,7 @@ Leave running, and open new terminal
 > To locate the full path, run `pwd` on current working directory on bash
 
 ```shell
-java -cp ./rskj-core-1.3.0-WASABI-all.jar co.rsk.Start --regtest
+java -cp ./rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
 ```
 
 If you do not have any output after running the command, this usually means that the node is running successfully. We will confirm this in the next step.
@@ -203,7 +203,7 @@ This procedure is only for a node running in your machine or any in a network th
 ```shell
 ./geth attach http://127.0.0.1:4444
 # Welcome to the Geth JavaScript console!
-# instance: RskJ/1.3.0/Mac OS X/Java1.8/WASABI-36f480d
+# instance: RskJ/2.0.1/Mac OS X/Java1.8/PAPYRUS-36f480d
 # coinbase: 0xec4ddeb4380ad69b3e509baad9f158cdf4e4681d
 #at block: 4448 (Fri Apr 03 2020 11:30:13 GMT+0100 (WAT))
 # modules: debug:1.0 eth:1.0 evm:1.0 net:1.0 personal:1.0 rpc:1.0 rsk:1.0 sco:1.0 #trace:1.0 txpool:1.0 web3:1.0

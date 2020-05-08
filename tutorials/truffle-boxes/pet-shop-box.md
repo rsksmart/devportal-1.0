@@ -299,10 +299,10 @@ mkdir -p ~/code/rsk/rskj-node
 cd ~/code/rsk/rskj-node
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/WASABI-1.3.0/rskj-core-1.3.0-WASABI-all.jar \
-  > ./rskj-core-1.3.0-WASABI-all.jar
-sha256sum rskj-core-1.3.0-WASABI-all.jar
-# 1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd  rskj-core-1.3.0-WASABI-all.jar
+  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/rskj-core-2.0.1-PAPYRUS-all.jar \
+  > ./rskj-core-2.0.1-PAPYRUS-all.jar
+sha256sum rskj-core-2.0.1-PAPYRUS-all.jar
+# 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0  rskj-core-2.0.1-PAPYRUS-all.jar
 
 ```
 
@@ -315,7 +315,7 @@ For the purposes of this workshop,
 we will run RSKj on Regtest.
 
 ```shell
-java -cp rskj-core-1.3.0-WASABI-all.jar co.rsk.Start --regtest
+java -cp rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
 
 ```
 
@@ -343,12 +343,12 @@ Get the current gas price of the network, and save to `.gas-price.json`.
 
 ```shell
 curl \
-  https://public-node.testnet.rsk.co/1.3.0/ \
+  https://public-node.testnet.rsk.co/2.0.1/ \
   -X POST -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' \
   > .gas-price-testnet.json
 curl \
-  http://localhost:4444/1.3.0/ \
+  http://localhost:4444/2.0.1/ \
   -X POST -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' \
   > .gas-price-regtest.json
@@ -417,7 +417,7 @@ The effect that this has is to get a slightly higher priority for our transactio
     testnet: {
       provider: () => new HDWalletProvider(
         mnemonic,
-        'https://public-node.testnet.rsk.co/1.3.0/',
+        'https://public-node.testnet.rsk.co/2.0.1/',
       ),
       network_id: 31,
       gasPrice: gasPriceTestnet + 1e6,

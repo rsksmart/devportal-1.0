@@ -32,26 +32,26 @@ Choose `mainnet` and press `Enter` to continue
 
 ## Install via Direct Downloads
 
-You can also download the RskJ Ubuntu Package for Wasabi 1.3.0 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
+You can also download the RskJ Ubuntu Package for Papyrus 2.0.1 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
 
 ```shell
 # first install openjdk-8-jre or oracle-java8-installer
 sudo apt-get install openjdk-8-jre
 
-# download the RskJ pacakge and find the file rskj_1.3.0~yourUbuntuVersionName_amd64.deb
+# download the RskJ pacakge and find the file rskj_2.0.1~yourUbuntuVersionName_amd64.deb
 
 # run this command in the same directory as the deb file above
-dpkg -i rskj_1.3.0~yourUbuntuVersionName_amd64.deb
+dpkg -i rskj_2.0.1~yourUbuntuVersionName_amd64.deb
 ```
 
 We recommend that you check that the SHA256 hash of the downloaded package file matches, prior to installation:
 
-* `rskj_1.3.0_bionic_amd64.deb`: `57851fda0efe790ce0f45daebc0d7e51b022c82afed4be576d9f02e4d912ae0f`
-* `rskj_1.3.0_bionic_i386.deb`: `ba68f39d0a09306949417de2271254cdb74cbbfd424951ef0c6dd94f4e649e6c`
-* `rskj_1.3.0_trusty_amd64.deb`: `e9e60115fe5d98b8216829817d7b2068ae5eea89fdaa0cbcb3510b3499ca9cee`
-* `rskj_1.3.0_trusty_i386.deb`: `9186e450fd3aff33278500b97a9b0886ba2403c10a94e9d654d7d75fde15c45b`
-* `rskj_1.3.0_xenial_amd64.deb`: `4eddb44be7011b97a49a4f500bb20867234967c18a9f6bc117390021a2963338`
-* `rskj_1.3.0_xenial_i386.deb`: `bf443f3efbb8dcc2da6154ca35ac29942d726fd936f8727aaf942e11449e6801`
+* `rskj_2.0.1_bionic_amd64.deb`: `b2f0f30ac597e56afc3269318bbdc0a5186f7c3f7d23a795cf2305d7c7b12638`
+* `rskj_2.0.1_bionic_i386.deb`: `3ca031ee133691ed86bb078827e8b2d82600d7bbd76194358289bbc02385d971`
+* `rskj_2.0.1_trusty_amd64.deb`: `4c56d8d0ed0efc277afe341aa7026e87f47047ff69bd6dd99296c5ecab1fa550`
+* `rskj_2.0.1_trusty_i386.deb`: `e5cb7b72e4aff8be4cbcd5d1e757e1fda463f1565154ae05395fcf1796ecf9fb`
+* `rskj_2.0.1_xenial_amd64.deb`: `70c245388a7f521b96905bf49b93e38f58c54970e4e4effa36d7f2b0a2aa8ef4`
+* `rskj_2.0.1_xenial_i386.deb`: `f067301454eb5976bbf00052ccd6523b1ee61f6aeb33ef4ea6fcb07ff0328668`
 
 ## After installation
 

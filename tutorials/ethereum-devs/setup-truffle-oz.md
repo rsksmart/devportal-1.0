@@ -177,13 +177,13 @@ it is always a good idea to verify that your copy is legitimate.
 In the folder where you download the JAR file, go to a POSIX terminal and run this command:
 
 ```shell
-sha256sum rskj-core-1.3.0-WASABI-all.jar
+sha256sum rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
 For this version, it looked like this:
 
 ```shell
-1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd *rskj-core-1.3.0-WASABI-all.jar
+43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 *rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
 ![Verify authenticity](/assets/img/tutorials/setup-truffle-oz/image-08.png)
@@ -207,26 +207,26 @@ java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtes
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
 
 I am using a Windows OS and I saved the file at `C:\RSK\node`,
-so for me the full path is `C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar`.
+so for me the full path is `C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar`.
 
 The commands required to run the RSK node are:
 
 #### On Windows terminal
 
 ```shell
-java -cp C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 #### Using Git Bash
 
 ```shell
-java -cp C:/RSK/node/rskj-core-1.3.0-WASABI-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp C:/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 #### On Linux and Mac
 
 ```shell
-java -cp ~/RSK/node/rskj-core-1.3.0-WASABI-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp ~/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 If you see no output - that is a good thing:
@@ -283,7 +283,7 @@ In addition to using the local node, we want to publish smart contracts to the t
 This is an example using cURL. Enter the following command into your terminal. 
 
 ```shell
-curl https://public-node.testnet.rsk.co/1.3.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
 
 This is a very simple query that simply asks what the latest block number is. 
@@ -542,7 +542,7 @@ Get the current gas price of the testnet network, and save to `.gas-price-testne
 In your project folder, run this cURL command:
 
 ```shell
-curl https://public-node.testnet.rsk.co/1.3.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
+curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
 ```
 
 ![gas price result](/assets/img/tutorials/setup-truffle-oz/image-25.png)
@@ -574,7 +574,7 @@ In the `truffle-config.js` file, include this configuration at `network` section
 
 ```javascript
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/1.3.0/'),
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9
@@ -609,7 +609,7 @@ module.exports = {
       network_id: "*"
     },
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/1.3.0/'),
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9

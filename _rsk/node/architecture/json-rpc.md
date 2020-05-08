@@ -22,6 +22,7 @@ RSK currently supports the following:
 | [`web3_sha3`](#web3_sha3) | YES | |
 | [`net_version`](#net_version) | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
 | [`net_peerCount`](#net_peercount) | YES | |
+| [`net_peerList`](#net_peerlist) | YES | |
 | [`net_listening`](#net_listening) | YES | |
 | [`eth_chainId`](#eth_chainid) | YES | Same response than eth_protocolVersion |
 | [`eth_protocolVersion`](#eth_protocolversion) | YES | |
@@ -225,6 +226,36 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
   "id":74,
   "jsonrpc": "2.0",
   "result": "0x2" // 2
+}
+```
+
+***
+
+#### net_peerList
+
+Returns list of peers known to the client.
+
+##### Parameters
+none
+
+##### Returns
+
+`Array` - The list of peers.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"peerList","params":[],"id":1}'
+
+
+// Result
+{
+  "jsonrpc":"2.0",
+  "id":1,
+  "result": [
+    "3fd44f66 | ec2-52-15-37-171.us-east-2.compute.amazonaws.com/52.15.37.171:5050",
+    "50517861 | bootstrap14.rsk.co/54.169.136.187:5050",
+    "434f8932 | bootstrap07.rsk.co/54.169.12.15:5050"]
 }
 ```
 
@@ -1918,7 +1949,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x12345
 
 | Method | Supported | Comments |
 | ------ | ------ | ------ |
-| `eth_subscribe` | PARTIALLY | Only option "newHeaders" is supported. |
+| `eth_subscribe` | PARTIALLY | Only options "newHeads" and "logs" are supported. |
 | `eth_unsubscribe` | YES | |
 
 ## RPC SPV methods

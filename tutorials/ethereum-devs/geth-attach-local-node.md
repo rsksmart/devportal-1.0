@@ -81,20 +81,20 @@ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
 
 I am using a Windows OS and I saved the file at `C:\RSK\node`,
-so for me the full path is `C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar`.
+so for me the full path is `C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar`.
 
 The commands required to run the RSK node are:
 
 #### On Windows
 
 ```shell
-java -cp C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar co.rsk.Start --regtest
+java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
 ```
 
 #### On Linux and Mac
 
 ```shell
-java -cp C:/RSK/node/rskj-core-1.3.0-WASABI-all.jar co.rsk.Start --regtest
+java -cp C:/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
 ```
 
 If you do not have any output after running the command, this usually means that the node is running successfully. We will confirm this in the next step.
