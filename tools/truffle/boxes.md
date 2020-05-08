@@ -13,4 +13,4 @@ RSK has its own specialized Truffle Boxes:
 - [rsk-react-box](/tutorials/truffle-boxes/rsk-react-box): This box comes with everything you need to start using smart contracts from a react app on RSK Network. 
 - [rsk-next-box](/tutorials/truffle-boxes/rsk-next-box): In this box you'll find a basic starter pack. It includes Truffle and Next JS.
 - [rsk-react-express-box](/tutorials/truffle-boxes/rsk-react-express-box): In this box you'll find a basic starter pack. It includes Truffle, React and Express JS.
-- [rsk-pet-shop-box](/tutorials/truffle-boxes/pet-shop-box/): In this box, you will find all the guide needed to deploy smart contracts to multiple networks (Regtest and Testnet).
+- [rsk-pet-shop-box](/tutorials/truffle-boxes/pet-shop-box/):This tutorial is a guide on how to use a Truffle box, and on how to to deploy smart contracts to multiple networks (Regtest and Testnet).
