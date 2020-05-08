@@ -2,7 +2,8 @@
 
 This repo contains the RSK + RIF Developer Portal: [https://developers.rsk.co](https://developers.rsk.co)
 
-Feel free to do a [PR](https://github.com/rsksmart/rsksmart.github.io/pulls) or to [report issues](https://github.com/rsksmart/rsksmart.github.io/issues) to improve the experience in the website.
+## Contributing
+We encourage you to contribute to the Developer's portal by sending a [PR](https://github.com/rsksmart/rsksmart.github.io/pulls) or [report issues](https://github.com/rsksmart/rsksmart.github.io/issues).
 
 ## Requirements
 
