@@ -7,7 +7,8 @@ We encourage you to contribute to the Developer's portal by sending a [PR](https
 
 ## Requirements
 
-- ***Windows computers*** Requirements and install instructions: [click here](https://github.com/rsksmart/rsksmart.github.io/blob/master/WindowsInstall.md)
+### Windows
+To install, see the [Installation Guide](https://github.com/rsksmart/rsksmart.github.io/blob/master/WindowsInstall.md)
 
  &nbsp;
 
