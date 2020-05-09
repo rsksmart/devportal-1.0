@@ -17,7 +17,7 @@ To run the node:
 $ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
 ```
 
-Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-1.3.0-WASABI-all.jar`
+Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
 ## Check the RPC
 
@@ -37,7 +37,7 @@ If you want to change the network use these commands:
 - Testnet: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --testnet`
 - Regtest: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest`
 
-Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-1.3.0-WASABI-all.jar`
+Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
 ## Video
 
