@@ -73,6 +73,8 @@
                   {% include prev-next-links.html %}
                </div>
             </div>
+            
+            {% include newsletter.html %}
          </div>
       </section>
 
@@ -110,6 +112,11 @@
       });
 
       </script>
-
+      <script>
+      ((window.gitter = {}).chat = {}).options = {
+         room: 'rsksmart/getting-started'
+      };
+      </script>
+      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
    </body>
 </html>

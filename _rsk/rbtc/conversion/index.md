@@ -91,7 +91,7 @@ Once you have the RSK Federation address, you can send Bitcoin to it from your w
 
 **1.5 Get tR-BTC address with tBTC private key**
 
-You can get a corresponding tR-BTC address with your tBTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).
+You can get a corresponding tR-BTC address with your tBTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 > Note: when entering Bitcoin private key do not include *p2pkh:* in the front.
 
@@ -108,7 +108,7 @@ Instructions on how to do a Testnet peg-in.
 
 **2.1 Get tBTC address with tR-BTC private key**
 
-If you forgot tBTC public address you can retrieve it with RSK private key from [https://utils.rsk.co/](https://utils.rsk.co/).
+If you forgot tBTC public address you can retrieve it with RSK private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 
 **2.2 Send tR-BTC to RSK Bridge Contract**
@@ -177,7 +177,7 @@ To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 **1.4 Get R-BTC address with BTC private key**
 
-You can get a corresponding R-BTC address with your BTC private key from [https://utils.rsk.co/](https://utils.rsk.co/).
+You can get a corresponding R-BTC address with your BTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 > Note: when entering Bitcoin private key do not include *p2pkh:* in the front.
 
@@ -193,7 +193,7 @@ Instructions on how to do a Mainnet peg-in.
 
 **2.1 Get BTC address with R-BTC private key**
 
-If you forgot BTC public address you can retrieve it with RSK private key from [https://utils.rsk.co/](https://utils.rsk.co/).
+If you forgot BTC public address you can retrieve it with RSK private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 **2.2 Send R-BTC to RSK Bridge Contract**
 

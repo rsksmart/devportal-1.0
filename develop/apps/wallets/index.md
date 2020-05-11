@@ -84,9 +84,16 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
 - [Jaxx](/develop/apps/wallets/jaxx)
 - [Ledger](/develop/apps/wallets/ledger)
 - [MyCrypto](/develop/apps/wallets/mycrypto)
+- [Nifty](/develop/apps/wallets/nifty)
 - [Metamask](/develop/apps/wallets/metamask)
 - [RPC](/develop/apps/wallets/json-rpc)
 
 ## Integrate your wallet
 
 Follow the [integration guide](/develop/apps/integrate) to integrate your wallet with RSK.
+
+## Resources for developers
+
+- <a href="https://github.com/rsksmart/rwallet" target="_blank">rWallet</a>
+- <a href="https://github.com/rsksmart/MultiSigWallet" target="_blank">Customized Gnosis Multisig Web</a>
+- <a href="https://github.com/rsksmart/multi-sig-factory" target="_blank">Gnosis Multisig Factory for Truffle</a>

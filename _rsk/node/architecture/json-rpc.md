@@ -22,7 +22,9 @@ RSK currently supports the following:
 | [`web3_sha3`](#web3_sha3) | YES | |
 | [`net_version`](#net_version) | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
 | [`net_peerCount`](#net_peercount) | YES | |
+| [`net_peerList`](#net_peerlist) | YES | |
 | [`net_listening`](#net_listening) | YES | |
+| [`eth_chainId`](#eth_chainid) | YES | Same response than eth_protocolVersion |
 | [`eth_protocolVersion`](#eth_protocolversion) | YES | |
 | [`eth_syncing`](#eth_syncing) | YES | |
 | [`eth_coinbase`](#eth_coinbase) | YES | |
@@ -224,6 +226,62 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerCount","params":[],"id":
   "id":74,
   "jsonrpc": "2.0",
   "result": "0x2" // 2
+}
+```
+
+***
+
+#### net_peerList
+
+Returns list of peers known to the client.
+
+##### Parameters
+none
+
+##### Returns
+
+`Array` - The list of peers.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"peerList","params":[],"id":1}'
+
+
+// Result
+{
+  "jsonrpc":"2.0",
+  "id":1,
+  "result": [
+    "3fd44f66 | ec2-52-15-37-171.us-east-2.compute.amazonaws.com/52.15.37.171:5050",
+    "50517861 | bootstrap14.rsk.co/54.169.136.187:5050",
+    "434f8932 | bootstrap07.rsk.co/54.169.12.15:5050"]
+}
+```
+
+***
+
+#### eth_chainId
+
+Returns the currently configured chain id, a value used in replay-protected transaction signing as introduced by EIP-155.
+
+##### Parameters
+none
+
+##### Returns
+
+`String` - The current chainId.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_chainId","params":[],"id":67}'
+
+// Result
+{
+  "id":67,
+  "jsonrpc": "2.0",
+  "result": "0x1e"
 }
 ```
 
@@ -986,6 +1044,7 @@ params: [
   - `receiptsRoot`: `DATA`, 32 Bytes - the root of the receipts trie of the block.
   - `miner`: `DATA`, 20 Bytes - the address of the beneficiary to whom the mining rewards were given.
   - `difficulty`: `QUANTITY` - integer of the difficulty for this block.
+  - `cumulativeDifficulty`: `QUANTITY` - integer of the difficulty for this block plus its uncles' difficulties.
   - `totalDifficulty`: `QUANTITY` - integer of the total difficulty of the chain until this block.
   - `extraData`: `DATA` - the "extra data" field of this block.
   - `size`: `QUANTITY` - integer the size of this block in bytes.
@@ -1016,6 +1075,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getBlockByHash","params":["0
     "stateRoot": "0xd5855eb08b3387c0af375e9cdb6acfc05eb8f519e419b874b6ff2ffda7ed1dff",
     "miner": "0x4e65fda2159562a496f9f3522f89122a3088497a",
     "difficulty": "0x027f07", // 163591
+    "cumulativeDifficulty": "0x027f07", // 163591
     "totalDifficulty":  "0x027f07", // 163591
     "extraData": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "size":  "0x027f07", // 163591
@@ -1889,5 +1949,13 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x12345
 
 | Method | Supported | Comments |
 | ------ | ------ | ------ |
-| `eth_subscribe` | PARTIALLY | Only option "newHeaders" is supported. |
+| `eth_subscribe` | PARTIALLY | Only options "newHeads" and "logs" are supported. |
 | `eth_unsubscribe` | YES | |
+
+## RPC SPV methods
+| Method | Supported | Comments |
+| ------ | ------ | ------ |
+| `rsk_getRawBlockHeaderByNumber` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block number (in hexa) or the string "latest" "pending" "genesis". |
+| `rsk_getRawBlockHeaderByHash` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block hash as parameter. |
+| `rsk_getRawTransactionReceiptByHash` | YES | Obtains the RLP encoded Transaction Receipt, if this is hashed using Keccack256 it gives the transaction receipt hash. This function takes the transaction hash as parameter.|
+| `rsk_getTransactionReceiptNodesByHash` | YES | Obtains an array of nodes of the transactions receipt Trie. This is used to hash up to the transaction receipt root. This function takes the block hash and transaction hash as parameters.|

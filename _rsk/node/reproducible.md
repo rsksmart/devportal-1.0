@@ -48,7 +48,7 @@ RUN apt-get update -y && \
     apt-get clean
 RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN git clone --single-branch --depth 1 --branch WASABI-1.3.0 https://github.com/rsksmart/rskj.git /code/rskj
+RUN git clone --single-branch --depth 1 --branch PAPYRUS-2.0.1 https://github.com/rsksmart/rskj.git /code/rskj
 WORKDIR /code/rskj
 RUN gpg --verify SHA256SUMS.asc
 RUN sha256sum --check SHA256SUMS.asc
@@ -65,7 +65,7 @@ Run build
 To create a reproducible build, run:
 
 ```bash
-sudo docker build -t rskj-wasabi-1.3.0-reproducible .
+sudo docker build -t rskj-papyrus-2.0.1-reproducible .
 ```
 
 This may take several minutes to complete. What is done is:
@@ -78,7 +78,7 @@ This may take several minutes to complete. What is done is:
 To obtain SHA-256 checksums, run the following command:
 
 ```bash
-sudo docker run --rm rskj-wasabi-1.3.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI-all.jar /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI.jar /code/rskj/rskj-core/build/libs/rskj-core-1.3.0-WASABI.pom
+sudo docker run --rm rskj-papyrus-2.0.1-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-all.jar /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.jar /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.pom
 ```
 
 Check Results
@@ -87,10 +87,10 @@ After running the build process, a JAR file will be created in ```/code/rskj-cor
 
 You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.
 ```bash
-1343a100363d78db8c6563ec0778646b17af7fdaf7de2ac5932537582c079ddd  rskj-core/build/libs/rskj-core-1.3.0-WASABI-all.jar
-5ab02adee2c610d923432704e72601066e78b2d78b9d55a0f4ce2757ab8a1e3f  rskj-core/build/libs/rskj-core-1.2.0-WASABI-sources.jar
-c34c2dbcf2aee1f51b1a0850fa406dece3427b051acf11f2a2ef4d69840278ba  rskj-core/build/libs/rskj-core-1.3.0-WASABI.jar
-60f87f549f72532cabe8f1583c55006636b99ef29ef6bd1ff4e71b907bffe140  rskj-core/build/libs/rskj-core-1.3.0-WASABI.pom
+43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-all.jar
+c1bdb9aeff6463906d75874773e2633f006281d41b244e5cbc6b4115d023a7f8  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-sources.jar
+7833de3cf827fc7c665b4d03fb425afb0d26140dfbade5b70edb4cb6e2694561  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.jar
+9b915279251248222c56f95fae060f84464f4c89bb9bc32ac2e2594f937f9fa5  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.pom
 ```
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).

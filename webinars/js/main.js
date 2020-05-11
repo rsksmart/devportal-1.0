@@ -103,6 +103,7 @@ function concatValues( obj ) {
 }
 
   renderLocalTimes();
+  enablePermalinkCopyToClipboard();
 });
 
 // Iterate over all "event" elements and attempt to render their times
@@ -176,4 +177,53 @@ function nthCharacter(string, character, n) {
     return i - 1;
   };
   return 0;
+}
+
+function enablePermalinkCopyToClipboard() {
+  $('.eventos-past .button-group').on('click', function() {
+    console.log('clicked');
+    var eventId = $(this).data('eventId');
+    var url = new URL(window.location.href);
+    url.hash = `event-id-${eventId}`;
+    var urlString = url.toString();
+    copyStringToClipboard(urlString);
+  });
+}
+
+function copyStringToClipboard(str) {
+  if (!navigator.clipboard) {
+    return copyStringToClipboardForOldBrowsers(str);
+  }
+  navigator.clipboard.writeText(str).then(function () {
+    // do nothing
+  }, function (err) {
+    console.error(err);
+  });
+}
+
+function copyStringToClipboardForOldBrowsers(str) {
+  var textArea = document.createElement("textarea");
+  textArea.style.position = 'fixed';
+  textArea.style.top = 0;
+  textArea.style.left = 0;
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+  textArea.style.padding = 0;
+  textArea.style.border = 'none';
+  textArea.style.outline = 'none';
+  textArea.style.boxShadow = 'none';
+  textArea.style.background = 'transparent';
+  textArea.value = str;
+
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+
+  try {
+    document.execCommand('copy');
+  } catch (err) {
+    console.error(err);
+  }
+
+  document.body.removeChild(textArea);
 }

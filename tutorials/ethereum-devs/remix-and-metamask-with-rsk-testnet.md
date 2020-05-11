@@ -24,6 +24,27 @@ We will do these steps:
 7. Interact with the smart contract;
 8. Check the transactions in Metamask.
 
+## Webinar
+
+We have run a
+[webinar](/webinars/#event-id-202003-002 "Create and Deploy your first Smart Contract to the RSK Network using Remix and Metamask")
+in which we run through this tutorial:
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/-pJahYxJ4ms?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+The same webinar is also available in
+[Español](https://www.youtube.com/watch?v=TyKkkwF1PdM)
+and [Português](https://www.youtube.com/watch?v=45ii2vFLKJc).
+
+Check out our [other webinars](/webinars).
+
+## Translations
+
+This article is also available in
+[Português](https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/ "Crie seu primeiro smart contract utilizando Remix e Metamask com a RSK testnet").
+
 ## Requirements
 
 - Metamask
@@ -58,23 +79,19 @@ Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
 
 - Network Name
 
-    RSK Testnet
-
+  `RSK Testnet`
 - New RPC URL
 
-    [https://public-node.testnet.rsk.co](https://public-node.testnet.rsk.co)
-
+  [`https://public-node.testnet.rsk.co`](https://public-node.testnet.rsk.co)
 - ChainID (optional)
 
-    31
-
+  `31`
 - Symbol (optional)
 
-    tR-BTC
-
+  `tR-BTC`
 - Block Explorer URL (optional)
 
-    https://explorer.testnet.rsk.co/
+  [`https://explorer.testnet.rsk.co`](https://explorer.testnet.rsk.co)
 
 
 ![RSK Testnet configuration](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-02.png)

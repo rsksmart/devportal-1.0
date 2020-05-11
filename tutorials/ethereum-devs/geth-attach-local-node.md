@@ -10,6 +10,8 @@ RSK's virtual machine implementation is compatible with the Ethereum virtual mac
 In this tutorial I will show you step-by-step how to use the Ethereum client Geth to attach to an RSK local node (which is called regtest) and run a few JSON-RPC commands.
 We do this to establish that the local node is running.
 
+A step-by-step tutorial for Mac users can be found [here](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
+
 ## Overview
 
 We will do these steps:
@@ -20,6 +22,22 @@ We will do these steps:
 4. Know some useful functions;
 5. Learn how to interact with accounts: list, create;
 6. Transfer funds between accounts.
+
+## Webinar
+
+We have run a
+[webinar](/webinars/#event-id-202004-001 "Run your own local RSK node with Geth attached")
+in which we run through this tutorial:
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/apcD6bcSWpw?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+The same webinar is also available in
+[Español](https://www.youtube.com/watch?v=1Zs2m5z_S9g)
+and [Português](https://www.youtube.com/watch?v=z5AiHy0mC8U).
+
+Check out our [other webinars](/webinars).
 
 ## Requirements
 
@@ -63,20 +81,20 @@ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
 
 I am using a Windows OS and I saved the file at `C:\RSK\node`,
-so for me the full path is `C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar`.
+so for me the full path is `C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar`.
 
 The commands required to run the RSK node are:
 
 #### On Windows
 
 ```shell
-java -cp C:\RSK\node\rskj-core-1.3.0-WASABI-all.jar co.rsk.Start --regtest
+java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
 ```
 
 #### On Linux and Mac
 
 ```shell
-java -cp C:/RSK/node/rskj-core-1.3.0-WASABI-all.jar co.rsk.Start --regtest
+java -cp C:/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
 ```
 
 If you do not have any output after running the command, this usually means that the node is running successfully. We will confirm this in the next step.
@@ -260,7 +278,7 @@ personal.listAccounts
 
 ![personal.listAccounts](/assets/img/tutorials/geth-attach-local-node/image-15.png)
 
-There are another command to do the same thing:
+There are other commands which do the same thing:
 
 ```js
 eth.accounts
