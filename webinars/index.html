@@ -116,7 +116,7 @@
 
             <div class="row">
                <!-- Event grid -->
-               <div class="grid">
+               <div class="grid-nofilters">
                   <div class="row">
                {% for event in events %}
                   {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}

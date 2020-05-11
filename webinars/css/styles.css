@@ -645,7 +645,7 @@ a:hover {
 
 /* ---- isotope ---- */
 
-.grid {
+.grid, .grid-nofilters {
     width: 100%;
     padding:0 15px;
     height:auto!important;
