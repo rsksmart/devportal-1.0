@@ -13,11 +13,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/915605031",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-general",
       "image": "img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/g2UZa7pJ7cI"
@@ -35,11 +38,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/j/850527491",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [
         {
@@ -66,11 +72,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/182679010",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [
         {
@@ -93,11 +102,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/j/211449645",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event4.jpg",
       "resources": [
         {
@@ -124,11 +136,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "enterprise"
+      ],
       "presenter": "Guillermo Villanueva\nCarlos Amin\nAlbert Ruiz",
       "presenterDescription": "CEO - Grupo Sabra\nCIO - Gasnor\nLíder Técnico - Gasnet",
       "presenterContact": "@guillevi\n@cgamin7",
       "videoStreamUrl": "https://zoom.us/j/666038949",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-enterprise",
       "image": "img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/2emqQlK4Glw"
@@ -146,11 +161,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/j/388106531",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event6.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/mFaieJnJ7RA"
@@ -168,11 +186,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [
         {
@@ -195,11 +216,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Devoloper Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-IjMyuCbOg",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7"
@@ -217,11 +241,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [
         {
@@ -252,11 +279,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1fKj-HA",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event4.jpg",
       "resources": [
         {
@@ -279,11 +309,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Devoloper Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event5.jpg",
       "resources": [
         {
@@ -306,11 +339,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Alejandro Narancio",
       "presenterDescription": "Payments and Tools PO",
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-general",
       "image": "img/events/event6.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/lxrBOdcSQfo"
@@ -328,11 +364,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7aaA",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/WzheOfMretc"
@@ -350,11 +389,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Maximiliano del Hoyo",
       "presenterDescription": "DeFi PO",
       "presenterContact": "@maxdh_ar",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-general",
       "image": "img/events/event2.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/EBjrvm_5IoE"
@@ -372,11 +414,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Maximiliano del Hoyo",
       "presenterDescription": "DeFi PO",
       "presenterContact": "@maxdh_ar",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/573jdX0TCZE"
@@ -394,11 +439,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Alejandro Narancio",
       "presenterDescription": "Payments and Tools PO",
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/8yxo4-fu1H0"
@@ -416,11 +464,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -438,11 +489,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event6.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -460,11 +514,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -482,11 +539,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/68AMoiQfgEE"
@@ -504,11 +564,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [
         {
@@ -539,11 +602,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Angel Lopez",
       "presenterDescription": "Software Engineer",
       "presenterContact": "@ajlopez",
       "videoStreamUrl": "https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event4.jpg",
       "resources": [
         {
@@ -566,11 +632,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Ilan Olkies",
       "presenterDescription": "RNS PO",
       "presenterContact": "@ilanolkies",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event5.jpg",
       "resources": [
         {
@@ -593,11 +662,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Ilan Olkies",
       "presenterDescription": "RNS PO",
       "presenterContact": "@ilanolkies",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-general",
       "image": "img/events/event6.jpg",
       "resources": [
         {
@@ -620,11 +692,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZRaKHrhYZw",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event1.jpg",
       "resources": [
         {
@@ -647,11 +722,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQWt5_q1Ug",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [
         {
@@ -682,11 +760,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Pedro Parrota (grupo sabra)",
       "presenterDescription": "",
       "presenterContact": "",
       "videoStreamUrl": "",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -704,11 +785,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Ilan Olkies",
       "presenterDescription": "RNS PO",
       "presenterContact": "@ilanolkies",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdfky6w",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event4.jpg",
       "resources": [
         {
@@ -739,11 +823,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4626395691306412302",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event5.jpg",
       "resources": [
         {
@@ -778,11 +865,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4099803288880978958",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event6.jpg",
       "resources": [
         {
@@ -805,11 +895,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4361944453128924174",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event1.jpg",
       "resources": [
         {
@@ -832,11 +925,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [
         {
@@ -867,11 +963,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-box-com-rsk",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [
         {
@@ -898,11 +997,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Devoloper Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event4.jpg",
       "resources": [
         {
@@ -929,11 +1031,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/877417282457269771",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [
         {
@@ -964,11 +1069,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Alejandro Narancio",
       "presenterDescription": "Payments and Tools PO",
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/6455007773111865870",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -986,11 +1094,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Alejandro Narancio",
       "presenterDescription": "Payments and Tools PO",
       "presenterContact": "@anarancio",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/2428593993172923662",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1008,11 +1119,15 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "startups",
+        "enterprise"
+      ],
       "presenter": "Gloria Vailati\nMaximiliano del Hoyo",
       "presenterDescription": "CMO\nDeFi Lead",
       "presenterContact": "@gloriavailati\n@maxdh_ar",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-cases",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1030,11 +1145,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "enterprise"
+      ],
       "presenter": "Claudio Fiorillo\nGuillermo Villanueva",
       "presenterDescription": "",
       "presenterContact": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-para-la-industria-financiera",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-enterprise",
       "image": "img/events/event6.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1052,11 +1170,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Brendan Graetz",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-create-your-own-collectable-token",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1074,11 +1195,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Solange Gueiros",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-criar-seu-token-colecionavel",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event6.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1096,11 +1220,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
       "presenter": "Dulce Villarreal",
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/crea-tu-propio-non-fungible-token",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1118,11 +1245,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "enterprise"
+      ],
       "presenter": "Connie Gallippi\nAgustin Pandolfini",
       "presenterDescription": "Founder and Executive Director of BitGive\nSocial Impact Lead",
       "presenterContact": "@conniegallippi\n@agustinfini",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-enterprise",
       "image": "img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1140,11 +1270,14 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Santiago Lavallaz",
       "presenterDescription": "Director Capital Markets",
       "presenterContact": "@__Santino__",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-english audiencia-general",
       "image": "img/events/event2.jpg",
       "resources": [],
       "recordedVideoUrl": ""
@@ -1162,12 +1295,41 @@
       "locationCategory": "online",
       "location": "Online only",
       "language": "Spanish",
+      "audiences": [
+        "general"
+      ],
       "presenter": "Santiago Lavallaz",
       "presenterDescription": "Director Capital Markets",
       "presenterContact": "@__Santino__",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol",
-      "tags": "online online-workshop general non-developers",
+      "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": ""
+    },
+    {
+      "type": "event/2",
+      "id": "202005-007",
+      "version": "1",
+      "timestamp": "2020-05-08T17:00:00.000Z",
+      "lastModified": "2020-05-05T19:33:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986/",
+      "title": "Casos de uso de Blockchain construidos sobre RSK y RIF",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "startups",
+        "enterprise"
+      ],
+      "presenter": "Gloria Vailati",
+      "presenterDescription": "CMO",
+      "presenterContact": "@gloriavailati",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
+      "image": "img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": ""
     }
