@@ -46,8 +46,8 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
     </tr>
     <tr>
       <td>Block explorer URL</td>
-      <td><a href="https://explorer.rsk.co/" target="_blank">https://explorer.rsk.co/</a></td>
-      <td><a href="https://explorer.testnet.rsk.co/" target="_blank">https://explorer.testnet.rsk.co/</a></td>
+      <td><a href="https://explorer.rsk.co" target="_blank">https://explorer.rsk.co</a></td>
+      <td><a href="https://explorer.testnet.rsk.co" target="_blank">https://explorer.testnet.rsk.co</a></td>
     </tr>
   </tbody>
   </table>

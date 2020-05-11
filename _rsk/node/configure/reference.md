@@ -8,6 +8,7 @@ collection_order: 2410
 
 - [`peer`](#peer)
 - [`database`](#database)
+- [`database.import`](#databaseimport)
 - [`vm`](#vm)
 - [`sync`](#sync)
 - [`rpc`](#rpc)
@@ -71,6 +72,15 @@ Describes where the blockchain  database is saved.
 * `database.dir = path` is the place to save physical storage files.
 * `database.reset = [true/false]
 ` resets the database when the application starts if it is set to *true*.
+
+
+## database.import
+
+Options related to experimental import sync v0.1.
+
+* `database.import.url = URL` is the url to the S3 bucket that hosts the database.
+* `database.import.trusted-keys = []` list of trusted public keys to validate legit source.
+* `database.import.enabled = [true/false]` enable the import sync.
 
 
 ## vm

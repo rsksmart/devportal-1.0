@@ -1,6 +1,11 @@
+# RSK + RIF Developer Portal
+
+This repo contains the RSK + RIF Developer Portal: [https://developers.rsk.co](https://developers.rsk.co)
+
 ## Requirements
 
-- ***Windows computers*** Requirements and install instructions: [click here](https://github.com/rsksmart/rsksmart.github.io/blob/master/WindowsInstall.md)
+### Windows
+To install, see the [Installation Guide](https://github.com/rsksmart/rsksmart.github.io/blob/master/WindowsInstall.md)
 
  &nbsp;
 
@@ -196,13 +201,15 @@ This is **not** necessary for the development of the main site.
 
 ### Issues
 
-When you open an issue, you should be given the option to choose a category.
+We encourage you to [report issues](https://github.com/rsksmart/rsksmart.github.io/issues). When you open an issue, you should be given the option to choose a category.
 Choose the most appropriate one.
 
 Next, the description should be automatically populated from a template.
 Fill it in accordingly. Note that **What** and **Why** sections are compulsory, and the **Refs** section is optional.
 
 ### Pull Requests
+
+You can also contribute to the Developer's portal by sending a [PR](https://github.com/rsksmart/rsksmart.github.io/pulls).
 
 When you open a pull request, the description should be automatically populated
 from a template. Fill it in accordingly. Note that **What** and **Why** sections are compulsory, and the **Refs** section is optional.
