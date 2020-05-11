@@ -28,7 +28,16 @@ csvConverter
   .fromFile('./_data/rsk-published-events.csv')
   .subscribe((item, itemIndex) => {
     item.type = 'event/2';
-    item.tags = 'online online-workshop general non-developers';
+    item.audiences =
+      (item.audiences || 'general developers enterprise startups')
+      .toLowerCase()
+      .split(/\s+/);
+    item.tags =
+      (item.tags || '') +
+      ` idioma-${item.language.toLowerCase()} ` +
+      item.audiences
+        .map((audience) => (`audiencia-${audience}`))
+        .join(' ');
     if (!item.image) {
       // rotate between the 6 available generic images
       const imageIndex = itemIndex % 6 + 1;
@@ -73,6 +82,7 @@ csvConverter
           locationCategory,
           location,
           language,
+          audiences,
           presenter,
           presenterDescription,
           presenterContact,
@@ -96,6 +106,7 @@ csvConverter
           locationCategory,
           location,
           language,
+          audiences,
           presenter,
           presenterDescription,
           presenterContact,
