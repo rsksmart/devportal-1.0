@@ -298,7 +298,7 @@ The color management is performed with the variable `colors`, which is an array 
 
 Also we have a function to create new color tokens. 
 This is the basic structure of the function. 
-It will accept 1 argument of bytes3 type, which will be a hexadecimal code that corresponds to the token's color. 
+It will accept 1 argument of the `bytes3` type, which will be a hexadecimal code that corresponds to the token's color. 
 
 For example, if we want to create a green token, 
 we will pass "#00FF00" when we call this function. 
