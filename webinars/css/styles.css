@@ -645,7 +645,7 @@ a:hover {
 
 /* ---- isotope ---- */
 
-.grid {
+.grid, .grid-nofilters {
     width: 100%;
     padding:0 15px;
     height:auto!important;
@@ -810,6 +810,9 @@ select {
     padding-right: 5px;
 }
 
+.desc-group span.text a, .desc-group ul.text li a {
+ color: #00b520;
+}
 .desc-group .display-tz {
     font-size: 0.5em;
 }
