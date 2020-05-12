@@ -30,7 +30,6 @@ Thus, these conversions are referred to as peg-ins and peg-outs.
 
 You can try the conversion process using either a hardware wallet, or using software:
 
-- [Using a Trezor hardware wallet](/rsk/rbtc/conversion/with-trezor)
 - [Using a Ledger hardware wallet](/rsk/rbtc/conversion/with-ledger)
 - [Using software](/rsk/rbtc/conversion/with-node-and-console)
 

@@ -116,7 +116,7 @@
 
             <div class="row">
                <!-- Event grid -->
-               <div class="grid">
+               <div class="grid-nofilters">
                   <div class="row">
                {% for event in events %}
                   {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
@@ -245,6 +245,7 @@
                      <div class="ui-group">
                         <h3 class="title-sm">Language</h3>
                         <select class="filter-select" value-group="language">
+                           <option selected="true" disabled="disabled">Select Language</option>
                            <option value="">All</option>
                            <option value=".idioma-english">English</option>
                            <option value=".idioma-spanish">Español</option>
@@ -254,6 +255,7 @@
                      <div class="ui-group">
                         <h3 class="title-sm">Audience</h3>
                         <select class="filter-select" value-group="audience">
+                           <option selected="true" disabled="disabled">Select Audience</option>
                            <option value="">All</option>
                            <option value=".audiencia-general">General</option>
                            <option value=".audiencia-developers">Developers</option>

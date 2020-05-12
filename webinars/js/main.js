@@ -78,6 +78,11 @@ var $grid = $('.grid').isotope({
   itemSelector: '.eventos'
 });
 
+//no filters applyied by default
+var $grid = $('.grid').isotope({
+  filter: '.none'
+});
+
 // store filter for each group
 var filters = {};
 
