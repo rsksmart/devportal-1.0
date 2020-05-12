@@ -819,7 +819,7 @@ Hope it was easy for you to create a NFT!
 
 I showed you how to connect Truffle to the RSK network and deploy your own NFT using the OZ libraries, and that they work on the RSK network.
 
-This tutorial was inspired by Gregory McCubbin tutorial, from dApp University. Take a look in the [original](https://www.dappuniversity.com/articles/blockchain-programming) article.
+This tutorial was inspired by Gregory McCubbin's tutorial, from dApp University. Check out the [original](https://www.dappuniversity.com/articles/blockchain-programming) article.
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
