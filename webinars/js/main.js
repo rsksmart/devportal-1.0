@@ -80,8 +80,8 @@ var $grid = $('.grid').isotope({
 
 //no filters applyied by default
 var $grid = $('.grid').isotope({
-        filter: '.none'
-    });
+  filter: '.none'
+});
 
 // store filter for each group
 var filters = {};
