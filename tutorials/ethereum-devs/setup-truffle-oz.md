@@ -23,6 +23,11 @@ Here is a summary of the steps to be taken to build our project:
 8. Use Truffle console;
 9. Get some testnet R-BTCs from the RSK faucet;
 
+## Translations
+
+This article is also available in
+[Português](https://solange.dev/2020/2020-05-10-Rsk-SetupTruffleOZ/ "Como criar um projeto utilizando Truffle e OpenZeppelin conectado à rede RSK").
+
 # Requirements
 
 * POSIX compliant shell
@@ -116,7 +121,7 @@ Preferably one that has support for syntax highlighting for both Solidity and Ja
 
 ### Visual Studio Code (VS Code)
 
-In this tutorial, We would use VS Code to create and deploy our project.
+In this tutorial, we will use VS Code to create our project.
 
 To use VS Code [download it here](https://code.visualstudio.com/download).
 
@@ -323,7 +328,7 @@ My project can be located in the folder `C:\RSK\myproject`.
 
 ![myproject folder](/assets/img/tutorials/setup-truffle-oz/image-13.png)
 
-In your project folder, start an Truffle project in this folder by typing the below command into the terminal:
+In your project folder, start an Truffle project by typing the command below into the terminal:
 
 ```shell
 truffle init
@@ -433,11 +438,11 @@ The best way is to create a wallet from a mnemonic, using the pattern defined at
 
 There are a few ways to do this.
 
-One is to create using a web wallet, such as Metamask or Nifty wallet. 
+One is to create using a web wallet, such as [Metamask](https://metamask.io/) or [Nifty](https://www.poa.network/for-users/nifty-wallet) wallet. 
 These wallets generate the mnemonic for you. 
 If you wanted to create using Metamask, you can get the instructions here:
 
-- [using Remix and Metamask with RSK testnet](https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
+- [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
 ## iancoleman.io/bip39
 
@@ -485,7 +490,7 @@ This saves a new mnemonic in the file named `.secret`, which is the next step.
 
 # Create .secret file
 
-In the terminal, inside the `myproject folder`, create a file named `.secret`.
+In the terminal, inside the `myproject` folder, create a file named `.secret`.
 
 Do you remember your mnemonic? 
 Paste your mnemonic in this file and save it.
@@ -670,7 +675,7 @@ On any of the networks, run this commands in the Truffle console:
 
 ### Block number
 
-Shows the last block number
+Shows the last block number.
 
 ```javascript
 (await web3.eth.getBlockNumber()).toString()
