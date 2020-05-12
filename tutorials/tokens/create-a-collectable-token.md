@@ -22,7 +22,7 @@ you can freely exchange these bills with one another because they have the same 
 no matter the serial number on the specific $100 bill. 
 They are fungible bills.
 
-On the other hand, a Non-Fungible Token (NFT) is a unique token, so collectible items are non-fungibles assets and can be represented by NFTs.
+On the other hand, a Non-Fungible Token (NFT) is a unique token. So collectible items are non-fungible assets, and can be represented by NFTs.
 
 ### ERC-721
 
