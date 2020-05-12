@@ -22,7 +22,7 @@ you can freely exchange these bills with one another because they have the same 
 no matter the serial number on the specific $100 bill. 
 They are fungible bills.
 
-On the other hand, a Non-Fungible Token (NFT) is a unique token, so collectible items are non-fungibles assets and can be represented by NFTs.
+On the other hand, a Non-Fungible Token (NFT) is a unique token. So collectible items are non-fungible assets, and can be represented by NFTs.
 
 ### ERC-721
 
@@ -35,7 +35,7 @@ It is easy to create new ERC721-compliant contracts by importing it from the OZ 
 
 The interface for ERC-721 provides two methods:
 
-* `ownerOf`: to know who owns a token
+* `ownerOf`: to query a token's owner
 * `transferFrom`: to transfer ownership of a token
 
 And this is enough to represent an NFT!
@@ -69,7 +69,7 @@ Steps 1 to 4 are explained in detail in the tutorial link below:
 ## Webinar
 
 We have run a
-[webinar](/webinars/#event-id-202005-001 "How to create your own collectable token on the RSK network").
+[webinar](/webinars/#event-id-202005-001 "How to create your own collectible token on the RSK network").
 
 The same webinar is also available in
 [Português](https://www.youtube.com/watch?v=3gt-lmwZscE).
@@ -92,7 +92,7 @@ The requirements 1 to 3 are explained in detail in the tutorial links below:
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
-For requirement 4, to install Metamask and connect to RSK testnet and get some tR-BTCs are explained step-by-step in the tutorial link below: 
+For requirement 4, installing Metamask, connecting to RSK testnet, and getting some tR-BTCs, this is explained step-by-step in the tutorial link below: 
 
 * [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
@@ -141,7 +141,7 @@ npx create-react-app app --use-npm
 
 The option `--use-npm` is to select npm as package manager.
 
-[npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f).
+[npx](https://blog.npmjs.org/post/162869356040/introducing-npx-an-npm-package-runner) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f).
 
 This is a large package and this might take a couple of minutes to show the message of successful installation:
 
@@ -188,7 +188,7 @@ As I said before, the option `-E` is to save dependencies with an exact version 
 
 # Configure Truffle
 
-Come back to the project folder, open `truffle-config.js` file at VS Code and overwrite it with the following code:
+Come back to the project folder, open `truffle-config.js` file in VS Code and overwrite it with the following code:
 
 ```javascript
 const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -298,7 +298,7 @@ The color management is performed with the variable `colors`, which is an array 
 
 Also we have a function to create new color tokens. 
 This is the basic structure of the function. 
-It will accept 1 argument of bytes3 type, which will be a hexadecimal code that corresponds to the token's color. 
+It will accept 1 argument of the `bytes3` type, which will be a hexadecimal code that corresponds to the token's color. 
 
 For example, if we want to create a green token, 
 we will pass "#00FF00" when we call this function. 
@@ -388,7 +388,7 @@ tokenAddress = "0x5505a54a8F3e63D37095c37d9f8AcF0f4900B61F"
 # Client side application
 
 Now let's start building out the front end that will interact with the smart contract. 
-It will allow us to create new color tokens, and list out all of the existing tokens in you wallet.
+It will allow us to create new color tokens, and list out all of the existing tokens in your wallet.
 
 In the `app` folder, we need to customize some files.
 
@@ -793,7 +793,7 @@ I will enter the color red, value `#FF0000`.
 
 ![#FF0000 Metamask confirm](/assets/img/tutorials/create-a-collectable-token/image-24.png)
 
-Click at `confirm` button.
+Click on the `confirm` button.
 
 Great! Now I have my first color collectable token: 
 
@@ -819,7 +819,7 @@ Hope it was easy for you to create a NFT!
 
 I showed you how to connect Truffle to the RSK network and deploy your own NFT using the OZ libraries, and that they work on the RSK network.
 
-This tutorial was inspired by Gregory McCubbin tutorial, from dApp University. Take a look in the [original](https://www.dappuniversity.com/articles/blockchain-programming) article.
+This tutorial was inspired by Gregory McCubbin's tutorial, from dApp University. Check out the [original](https://www.dappuniversity.com/articles/blockchain-programming) article.
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
