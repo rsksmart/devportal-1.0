@@ -121,7 +121,7 @@ Preferably one that has support for syntax highlighting for both Solidity and Ja
 
 ### Visual Studio Code (VS Code)
 
-In this tutorial, we would use VS Code to create and deploy our project.
+In this tutorial, we will use VS Code to create our project.
 
 To use VS Code [download it here](https://code.visualstudio.com/download).
 
@@ -328,7 +328,7 @@ My project can be located in the folder `C:\RSK\myproject`.
 
 ![myproject folder](/assets/img/tutorials/setup-truffle-oz/image-13.png)
 
-In your project folder, start an Truffle project by typing the below command into the terminal:
+In your project folder, start an Truffle project by typing the command below into the terminal:
 
 ```shell
 truffle init
