@@ -19,6 +19,24 @@ $ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
 
 Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
+## OPTIONAL: Using experimental import sync
+
+If you don't want to syncronize your node in the regular way, you can use the import sync. This method imports a synchronized dabase from a trusted origin in a fraction of the time currently required.
+
+Use this command to run the node:
+
+```bash
+$ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+```
+
+If your hardware meets the minimum RAM memory requirement or you get a memory error during the process, please consider adding the following flag to the command:
+
+```bash
+$ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+```
+
+Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
+
 ## Check the RPC
 
 If you see no output, it means that the node is running. To check, you can open a new console tab (it is important you do not close this one or interrupt the process) and issue a request to the node's RPC HTTP server. This is an example using cURL:
