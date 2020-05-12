@@ -1,14 +1,14 @@
 ---
 layout: rsk
-title: Using RSK Nodes
-tags: rsk, networks, versions, rpc
+title: Using RSK Public Nodes (Mainnet & Testnet) provided by IOVLabs
+tags: rsk, networks, versions, rpc, mainnet, testnet, cUrl
 description: "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
 collection_order: 2200
 ---
 
 ## Public Nodes
 
-RSK is currently provides two public nodes for testing purposes:
+IOVLabs currently provides two public nodes that you can use for testing purposes and you can find the information bellow. In case you want to run your own RSK Node (highly recommended for production environments in accordance to the bitcoiner's maxim: Don't trust. Verify.) you can follow the <a href="/rsk/node/install/">installation instructions here</a>.
 
 ### Testnet
 
