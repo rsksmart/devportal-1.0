@@ -8,7 +8,7 @@ description: "How to create your own collectable token on RSK network using Truf
 In this tutorial, you will learn about blockchain programming from scratch by building a fully decentralized application (DApp), step by step. 
 You will also learn how to create your own collectable token on the RSK blockchain network using the Truffle framework, Open Zeppelin (OZ) libraries, and build a front end with React, using `create-react-app`.
 
-We will create a dapp inspired by the popular website [Cryptokitties](https://www.cryptokitties.co/), 
+We will create a dapp inspired by [Cryptokitties](https://www.cryptokitties.co/), 
 a popular blockchain game where you can collect and breed digital cats. 
 In this tutorial, instead of collecting felines in our app, we are going to collect exclusive color tokens.
 
@@ -22,7 +22,7 @@ you can freely exchange these bills with one another because they have the same 
 no matter the serial number on the specific $100 bill. 
 They are fungible bills.
 
-A Non-Fungible Token (NFT) is a unique token, so collectible items are non-Fungibles assets and can be represented by NFTs.
+On the other hand, a Non-Fungible Token (NFT) is a unique token, so collectible items are non-fungibles assets and can be represented by NFTs.
 
 ### ERC-721
 
@@ -35,8 +35,8 @@ It is easy to create new ERC721-compliant contracts by importing it from the OZ 
 
 The interface for ERC-721 provides two methods:
 
-* function `ownerOf`: to know who owns a token
-* function `transferFrom`: to transfer ownership of a token
+* `ownerOf`: to know who owns a token
+* `transferFrom`: to transfer ownership of a token
 
 And this is enough to represent an NFT!
 
@@ -62,9 +62,24 @@ Here is a summary of the steps to be taken to build our token:
 10. Create client side application;
 11. Interact with the smart contract.
 
-Steps 1 to 4 are explained in detail in the tutorial links below: 
+Steps 1 to 4 are explained in detail in the tutorial link below: 
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
+
+## Webinar
+
+We have run a
+[webinar](/webinars/#event-id-202005-001 "How to create your own collectable token on the RSK network").
+
+The same webinar is also available in
+[Português](https://www.youtube.com/watch?v=3gt-lmwZscE).
+
+Check out our [other webinars](/webinars).
+
+## Translations
+
+This article is also available in
+[Português](https://solange.dev/2020/2020-05-11-Rsk-CreateTokenNFT/ "Crie seu token colecionável na rede RSK").
 
 # Requirements
 
@@ -77,7 +92,7 @@ The requirements 1 to 3 are explained in detail in the tutorial links below:
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
-For requirement 5, to install Metamask and connect to RSK testnet and get some tR-BTCs are explained in detail in the tutorial link below: 
+For requirement 4, to install Metamask and connect to RSK testnet and get some tR-BTCs are explained step-by-step in the tutorial link below: 
 
 * [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
@@ -85,7 +100,7 @@ For requirement 5, to install Metamask and connect to RSK testnet and get some t
 
 Create a new folder named `colors`.
 
-Do the steps below, following instructions from the tutorial 
+Inside the folder `colors`, do the steps below, following instructions from the tutorial 
 [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
 1. Initialize an empty Truffle project;
@@ -93,7 +108,7 @@ Do the steps below, following instructions from the tutorial
 3. Install OZ;
 4. Install HD wallet provider;
 5. Create a wallet mnemonic;
-6. Create file .secret;
+6. Create .secret file;
 7. Get the current gas price at RSK testnet;
 8. Configure Truffle to connect to RSK testnet;
 9. Use Truffle console;
@@ -124,7 +139,7 @@ npx create-react-app app --use-npm
 
 ![create-react-app](/assets/img/tutorials/create-a-collectable-token/image-01.png)
 
-The option `--use-npm` is to select npm  as package manager
+The option `--use-npm` is to select npm as package manager.
 
 [npx](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b) comes with npm 5.2+ and higher, see [instructions for older npm versions](https://gist.github.com/gaearon/4064d3c23a77c74a3614c498a8bb1c5f).
 
@@ -173,7 +188,7 @@ As I said before, the option `-E` is to save dependencies with an exact version 
 
 # Configure Truffle
 
-Come back to the project folder, open `truffle-config.js` file and overwrite it with the following code:
+Come back to the project folder, open `truffle-config.js` file at VS Code and overwrite it with the following code:
 
 ```javascript
 const HDWalletProvider = require('@truffle/hdwallet-provider');
@@ -229,7 +244,7 @@ We will create a smart contract named `Color.sol` that will inherit the ERC721 d
 
 ## Create the smart contract Color.sol
 
-In the Contracts folder, create a new file named `Color.sol`
+In the Contracts folder, create a new file named `Color.sol`.
 
 ![Create Color.sol](/assets/img/tutorials/create-a-collectable-token/image-09.png)
 
@@ -283,7 +298,7 @@ The color management is performed with the variable `colors`, which is an array 
 
 Also we have a function to create new color tokens. 
 This is the basic structure of the function. 
-It will accept 1 argument of string type, which will be a hexadecimal code that corresponds to the token's color. 
+It will accept 1 argument of bytes3 type, which will be a hexadecimal code that corresponds to the token's color. 
 
 For example, if we want to create a green token, 
 we will pass "#00FF00" when we call this function. 
@@ -301,16 +316,16 @@ truffle compile
 
 # Deploy a smart contract at testnet
 
-First of all, we need to create a file in truffle structure with instructions to deploy the smart contract.
+First of all, we need to create a file in Truffle structure with instructions to deploy the smart contract.
 
 ## Create file 2_deploy_contracts.js
 
-Folder migrations has JavaScript files that help you deploy contracts to the network. 
+Folder `migrations` has JavaScript files that help you deploy contracts to the network. 
 These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time. 
-A history of previously run migrations is recorded on-chain through a special Migrations contract, detailed below. 
+A history of previously run migrations is recorded on-chain through a special Migrations contract which is automatically created by Truffle. 
 (source: [running migrations](https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations))
 
-In the migrations folder, create the file `2_deploy_contracts.js`
+In the `migrations` folder, create the file `2_deploy_contracts.js`
 
 ![create 2_deploy_contracts](/assets/img/tutorials/create-a-collectable-token/image-12.png)
 
@@ -342,7 +357,7 @@ The migrate command will compile the smart contract again if necessary.
 
 ![truffle migrate compile](/assets/img/tutorials/create-a-collectable-token/image-14.png)
 
-First, it deploys the smart contract `Migrations.sol`, file generated by truffle:
+First, it deploys the smart contract `Migrations.sol`, file generated by Truffle:
 
 ![truffle migrate Migrations.sol](/assets/img/tutorials/create-a-collectable-token/image-15.png)
 
@@ -358,6 +373,8 @@ This is the transaction at RSK testnet:
 
 [0x2c2d2932a7d637fbba100b5c482c1fa1899c4fe24bd1a458976a93cee6c5ba85](https://explorer.testnet.rsk.co/tx/0x2c2d2932a7d637fbba100b5c482c1fa1899c4fe24bd1a458976a93cee6c5ba85)
 
+>A tip: if there is a communication problem with the testnet between the publication of Migrations.sol and Color.sol, just run the migrate command again, it will deploy only what is missing.
+
 **Congratulations!**
 
 Our NFT Color is published at RSK Testnet.
@@ -371,15 +388,15 @@ tokenAddress = "0x5505a54a8F3e63D37095c37d9f8AcF0f4900B61F"
 # Client side application
 
 Now let's start building out the front end that will interact with the smart contract. 
-It will allow us to create new color tokens, and list out all of the existing tokens on the page.
+It will allow us to create new color tokens, and list out all of the existing tokens in you wallet.
 
-In the `app\src` folder, we need to customize some files.
+In the `app` folder, we need to customize some files.
 
 ## index.html
 
-Open `index.html` file. 
+In the `app\public` folder, open `index.html` file. 
 
-At `head` section, and update the `title`:
+At `head` section, update the `title`:
 
 ```html
 <title>NFT Colors</title>
@@ -387,7 +404,7 @@ At `head` section, and update the `title`:
 
 ## index.js
 
-Open `index.js` file and add a line to use bootstrap in out project
+In the `app\src` folder, open `index.js` file and add a line to use bootstrap in out project
 
 ```javascript
 import 'bootstrap/dist/css/bootstrap.css';
@@ -399,7 +416,7 @@ Also remove this line:
 import './index.css';
 ```
 
-The final index.js is this. You can overwrite it with the code from following gist, or inline below:
+The final `index.js` is this. You can overwrite it with the code from following gist, or inline below:
 
 [index.js](https://raw.githubusercontent.com/solangegueiros/tokens-rsk/master/colors-create-react-app/app/src/index.js)
 
@@ -423,7 +440,7 @@ ReactDOM.render(
 serviceWorker.unregister();
 ```
 
-At this point, your completed index.js file should looks like this:
+At this point, your completed `index.js` file should looks like this:
 
 ![index.js](/assets/img/tutorials/create-a-collectable-token/image-17.png)
 
@@ -641,7 +658,7 @@ This part is connected to the RSK Testnet using the injected web3 provider, in t
   }
 ```
 
-To load the instance of  smart contract Color already published, we need to load the informations from truffle deploy:
+To load the instance of smart contract Color already published, we need to load the informations from Truffle deploy:
 
 ```javascript
 import Color from './contracts/Color.json';
@@ -709,7 +726,7 @@ Finally, the `render()` function is responsible for the HTML code for the applic
 
 ## Running
 
-In the app folder, at terminal, run:
+In the `app` folder, at terminal, run:
 
 ```
 npm start
@@ -723,7 +740,7 @@ If it does not open, you can enter the local url manually in the browser.
 
 ![localhost:3000](/assets/img/tutorials/create-a-collectable-token/image-20.png)
 
-Metamask automatically detects that our app would like to connect, authorize this action by clicking on the Connect button
+Metamask automatically detects that our app would like to connect, authorize this action by clicking on the `Connect` button.
 
 ![authorize Metamask](/assets/img/tutorials/create-a-collectable-token/image-21.png)
 
@@ -764,11 +781,11 @@ Some color codes:
 
 ## Mint
 
-Choose a color and enter your hexadecimal representation in the info text field, and click on the MINT button.
+Choose a color and enter your hexadecimal representation in the info text field, and click on the `MINT` button.
 
 It will call the `mint()` function at the smart contract instance Color, with the color that you defined.
 
-I will enter the color value `#FF0000`.
+I will enter the color red, value `#FF0000`.
 
 > Do not forget to use the symbol `#`
 
@@ -776,7 +793,7 @@ I will enter the color value `#FF0000`.
 
 ![#FF0000 Metamask confirm](/assets/img/tutorials/create-a-collectable-token/image-24.png)
 
-Click at confirm button
+Click at `confirm` button.
 
 Great! Now I have my first color collectable token: 
 
@@ -801,6 +818,8 @@ And my collection is growing!
 Hope it was easy for you to create a NFT!
 
 I showed you how to connect Truffle to the RSK network and deploy your own NFT using the OZ libraries, and that they work on the RSK network.
+
+This tutorial was inspired by Gregory McCubbin tutorial, from dApp University. Take a look in the [original](https://www.dappuniversity.com/articles/blockchain-programming) article.
 
 Our goal is to join forces and give options to people who believe in smart contracts based on Ethereum, and also believe in the power of Bitcoin, through RSK.
 
