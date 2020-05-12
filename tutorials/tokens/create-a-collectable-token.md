@@ -92,7 +92,7 @@ The requirements 1 to 3 are explained in detail in the tutorial links below:
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
-For requirement 4, to install Metamask and connect to RSK testnet and get some tR-BTCs are explained step-by-step in the tutorial link below: 
+For requirement 4, installing Metamask, connecting to RSK testnet, and getting some tR-BTCs, this is explained step-by-step in the tutorial link below: 
 
 * [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
