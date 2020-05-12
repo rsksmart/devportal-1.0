@@ -188,7 +188,7 @@ As I said before, the option `-E` is to save dependencies with an exact version 
 
 # Configure Truffle
 
-Come back to the project folder, open `truffle-config.js` file at VS Code and overwrite it with the following code:
+Come back to the project folder, open `truffle-config.js` file in VS Code and overwrite it with the following code:
 
 ```javascript
 const HDWalletProvider = require('@truffle/hdwallet-provider');
