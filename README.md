@@ -110,7 +110,7 @@ Steps:
 
 1. Create a markdown file which contains **only** front matter.
 1. Edit `/.git-cached-copy.config.json` to specify the details
-   of files from other git repositories should be copied.
+   of files from other git repositories that should be copied.
 
 Tips:
 
@@ -202,7 +202,7 @@ This is **not** necessary for the development of the main site.
   - `git diff ./webinars/calendar.ical`
   - Data corruption is usually most obvious when looking the JSON file
   - Common things to look out for:
-    - When the any fields in an existing event are updated,
+    - When the fields in an existing event are updated,
       but `version` and `lastModified` are not
     - When `id` for a field has changed
     - Off-by-one alignment -
