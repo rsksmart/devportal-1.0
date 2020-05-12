@@ -35,7 +35,7 @@ It is easy to create new ERC721-compliant contracts by importing it from the OZ 
 
 The interface for ERC-721 provides two methods:
 
-* `ownerOf`: to know who owns a token
+* `ownerOf`: to query a token's owner
 * `transferFrom`: to transfer ownership of a token
 
 And this is enough to represent an NFT!
