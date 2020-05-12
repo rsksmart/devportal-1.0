@@ -388,7 +388,7 @@ tokenAddress = "0x5505a54a8F3e63D37095c37d9f8AcF0f4900B61F"
 # Client side application
 
 Now let's start building out the front end that will interact with the smart contract. 
-It will allow us to create new color tokens, and list out all of the existing tokens in you wallet.
+It will allow us to create new color tokens, and list out all of the existing tokens in your wallet.
 
 In the `app` folder, we need to customize some files.
 
