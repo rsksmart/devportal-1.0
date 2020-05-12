@@ -69,7 +69,7 @@ Steps 1 to 4 are explained in detail in the tutorial link below:
 ## Webinar
 
 We have run a
-[webinar](/webinars/#event-id-202005-001 "How to create your own collectable token on the RSK network").
+[webinar](/webinars/#event-id-202005-001 "How to create your own collectible token on the RSK network").
 
 The same webinar is also available in
 [Português](https://www.youtube.com/watch?v=3gt-lmwZscE).
