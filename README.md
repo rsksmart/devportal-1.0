@@ -5,14 +5,19 @@ This repo contains the RSK + RIF Developer Portal: [https://developers.rsk.co](h
 ## Requirements
 
 ### Windows
+
 To install, see the [Installation Guide](https://github.com/rsksmart/rsksmart.github.io/blob/master/WindowsInstall.md)
 
  &nbsp;
 
-- ***Ruby*** version 2.6.3, including all development headers (ruby version can be checked by running `ruby -v`)
-  - [RVM](https://rvm.io/) is recommended to install and switch between multiple Ruby versions.
+- ***Ruby*** version 2.6.3, including all development headers
+  (ruby version can be checked by running `ruby -v`)
+  - [RVM](https://rvm.io/) is recommended to install and
+    switch between multiple Ruby versions.
 - ***RubyGems*** (which you can check by running `gem -v`)
-- ***GCC and Make*** (in case your system doesn’t have them installed, which you can check by running `gcc -v`,`g++ -v` and `make -v` in your system’s command line interface)
+- ***GCC and Make*** (in case your system doesn’t have them installed,
+  which you can check by running `gcc -v`,`g++ -v` and
+  `make -v` in your system’s command line interface)
 
 ## Set up
 
@@ -104,7 +109,8 @@ This is expected to be used sparingly, only for libraries with existing document
 Steps:
 
 1. Create a markdown file which contains **only** front matter.
-2. Edit `/.git-cached-copy.config.json` to specify the details of files from other git repositories should be copied.
+1. Edit `/.git-cached-copy.config.json` to specify the details
+   of files from other git repositories that should be copied.
 
 Tips:
 
@@ -123,24 +129,29 @@ and the search functionality.
 - Edit the navigation menu component: `/_includes/nav-page-menu.html`
 - Ensure that every new page that you have added has a link in here
 - If your new pages are within a collection
- - The reader may use "previous" and "next" links to go through the pages in a sequence
-  - Ensure that all pages within the collection have a **unique** value for `collection_order` in their front matter - use positive whole numbers only
-  - Ensure that the sequence is in a correct order - it starts from lowest `collection_order` and ends at highest `collection_order`
+  - The reader may use "previous" and "next" links to go through the pages in a sequence
+  - Ensure that all pages within the collection have a **unique** value for `collection_order`
+    in their front matter - use positive whole numbers only
+  - Ensure that the sequence is in a correct order -
+    it starts from lowest `collection_order` and ends at highest `collection_order`
   - Look at `_quick-start/*.md` for a good example of this
 
 #### Search results
 
 - A reader may find your new pages through the search feature available at `/search/index.html`
-- To maximise the quality of the search results, ensure that you add all of the following to the front matter for each new page
+- To maximise the quality of the search results,
+  ensure that you add all of the following to the front matter for each new page
   - `title`:
     This is the title of the page which is also displayed to the reader.
     Avoid using special characters, unicode characters, or emoji,
     as readers are less likely to use these in search.
   - `tags`:
-    Use this to set the categories, labels, or other keywords which you think a reader would search for when looking for this page.
+    Use this to set the categories, labels, or other keywords which
+    you think a reader would search for when looking for this page.
   - `description`:
     If this is not present, it defaults to the first 200 words in the content.
-    It is a good idea to set this to include any words or phrases which you think a reader would search for when looking for this page.
+    It is a good idea to set this to include any words or phrases which
+    you think a reader would search for when looking for this page.
 
 ### New version
 
@@ -164,55 +175,65 @@ Run `npm install` to obtain the NodeJs dependencies required.
 This is **not** necessary for the development of the main site.
 
 1. Edit the CSV file containing all of the event data:
-     `_data/rsk-published-events.csv`
+   `_data/rsk-published-events.csv`
 1. Run the JSON and iCal generation scripts
-    - `npm run generate-webinar`
-    - Example output:
-      ```shell
-      > rsk-devportal@0.0.0 generate-webinar /home/bguiz/code/rsk/rootstock.github.io
-      > npm run generate-webinar-json && npm run generate-webinar-ical
+  - `npm run generate-webinar`
+  - Example output:
+    ```shell
+    > rsk-devportal@0.0.0 generate-webinar /home/bguiz/code/rsk/rootstock.github.io
+    > npm run generate-webinar-json && npm run generate-webinar-ical
 
+    > rsk-devportal@0.0.0 generate-webinar-json /home/bguiz/code/rsk/rootstock.github.io
+    > node .scripts/generate-webinar-json.js
 
-      > rsk-devportal@0.0.0 generate-webinar-json /home/bguiz/code/rsk/rootstock.github.io
-      > node .scripts/generate-webinar-json.js
+    JSON output successfully: ./_data/webinars.json
 
-      JSON output successfully: ./_data/webinars.json
+    > rsk-devportal@0.0.0 generate-webinar-ical /home/bguiz/code/rsk/rootstock.github.io
+    > node .scripts/generate-webinar-ical.js
 
-      > rsk-devportal@0.0.0 generate-webinar-ical /home/bguiz/code/rsk/rootstock.github.io
-      > node .scripts/generate-webinar-ical.js
+    iCal output successfully: ./webinars/calendar.ical
 
-      iCal output successfully: ./webinars/calendar.ical
-      ```
-    - If the generation script crashes,
-      then investigate if the cause is corrupted or unprocessable data
-      - e.g. non-ISO8601 datetime values
+    ```
+  - If the generation script crashes,
+    then investigate if the cause is corrupted or unprocessable data
+    - e.g. non-ISO8601 datetime values
 1. Check the diffs to verify that there was no data corruption from the spreadsheet
-    - `git diff ./_data/webinars.json`
-    - `git diff ./webinars/calendar.ical`
-    - Data corruption is usually most obvious when looking the JSON file
-    - Common things to look out for:
-      - When the any fields in an existing event are updated, but `version` and `lastModified` are not
-      - When `id` for a field has changed
-      - Off-by-one alignment - when events seem to have "jumped" from one row to the next
+  - `git diff ./_data/webinars.json`
+  - `git diff ./webinars/calendar.ical`
+  - Data corruption is usually most obvious when looking the JSON file
+  - Common things to look out for:
+    - When the fields in an existing event are updated,
+      but `version` and `lastModified` are not
+    - When `id` for a field has changed
+    - Off-by-one alignment -
+      when events seem to have "jumped" from one row to the next
 1. Check that the webinars page looks OK in the webpage locally
-    - `rake dev` (if you already don't have it running)
-    - Visit http://localhost:4000/webinars/ and verify that
-      there aren't any missing events, or time zone issues.
+  - `rake dev` (if you already don't have it running)
+  - Visit `http://localhost:4000/webinars/` and verify that
+    there aren't any missing events, or time zone issues.
 
 ### Issues
 
-We encourage you to [report issues](https://github.com/rsksmart/rsksmart.github.io/issues). When you open an issue, you should be given the option to choose a category.
+We encourage you to
+[report issues](https://github.com/rsksmart/rsksmart.github.io/issues).
+When you open an issue, you should be given the option to choose a category.
 Choose the most appropriate one.
 
 Next, the description should be automatically populated from a template.
-Fill it in accordingly. Note that **What** and **Why** sections are compulsory, and the **Refs** section is optional.
+Fill it in accordingly.
+Note that **What** and **Why** sections are compulsory,
+and the **Refs** section is optional.
 
 ### Pull Requests
 
-You can also contribute to the Developer's portal by sending a [PR](https://github.com/rsksmart/rsksmart.github.io/pulls).
+You can also contribute to the Developer's portal by sending a
+[PR](https://github.com/rsksmart/rsksmart.github.io/pulls).
 
-When you open a pull request, the description should be automatically populated
-from a template. Fill it in accordingly. Note that **What** and **Why** sections are compulsory, and the **Refs** section is optional.
+When you open a pull request,
+the description should be automatically populated from a template.
+Fill it in accordingly.
+Note that **What** and **Why** sections are compulsory,
+and the **Refs** section is optional.
 
 Please run `rake test` to test the build output of your branch prior to
 creating a new pull request, or pushing more commits to an existing one.

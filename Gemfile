@@ -10,6 +10,7 @@ gem "faraday", "0.17.1"
 gem "wdm", "0.1.1" if Gem.win_platform?
 gem "html-proofer", "3.15.0"
 gem "rake", "13.0.1"
+gem "mdl", "0.2.1"
 
 gem "jekyll", "3.8.5"
 group :jekyll_plugins do

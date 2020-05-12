@@ -1,5 +1,6 @@
 require 'json'
 require 'html-proofer'
+require 'mdl'
 
 Rake::TaskManager.record_task_metadata = true
 SEARCH_JSON_PATH = "./_site/search/search.json"
@@ -92,8 +93,15 @@ task :test_html_proofer => [:build_for_test] do |task|
   puts "rake> " + task.name + ": OK!"
 end
 
+desc "lint markdown"
+task :lint_markdown => [] do |task|
+  puts "rake> " + task.name + ": " + task.comment
+  sh "bundle exec mdl --config \".mdlrc\" \"README.md\""
+  puts "rake> " + task.name + ": OK!"
+end
+
 desc "run all tasks related to testing"
-task :test => [:test_search_json, :test_html_proofer] do |task|
+task :test => [:lint_markdown, :test_search_json, :test_html_proofer] do |task|
   puts "rake> " + task.name + ": " + task.comment
   puts "rake> " + task.name + ": OK!"
 end
