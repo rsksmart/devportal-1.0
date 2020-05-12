@@ -793,7 +793,7 @@ I will enter the color red, value `#FF0000`.
 
 ![#FF0000 Metamask confirm](/assets/img/tutorials/create-a-collectable-token/image-24.png)
 
-Click at `confirm` button.
+Click on the `confirm` button.
 
 Great! Now I have my first color collectable token: 
 
