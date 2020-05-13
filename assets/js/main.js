@@ -281,3 +281,14 @@ function renderCustomTerminals() {
     .parent()
     .addClass('windows-command-prompt')
 }
+
+$('#newsletter-form').submit(function() {
+    
+  var output = jQuery.map($(':checkbox[name=skillscb]:checked'), function (n, i) {
+      return n.value;
+  }).join(',');
+
+  $("#mce-SKILLS").val(output);
+
+  return true;
+});
