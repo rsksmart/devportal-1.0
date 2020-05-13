@@ -19,9 +19,16 @@ $ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
 
 Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
-## OPTIONAL: Using experimental import sync
+## Using import sync
 
-If you don't want to syncronize your node in the regular way, you can use the import sync. This method imports a synchronized dabase from a trusted origin in a fraction of the time currently required.
+> Note: This feature is optional.
+
+> Note: This feature, first released as part of RSKj v2.0.1, is currently experimental.
+
+If you don't want to synchronize your node in the default way,
+you can use the import sync feature.
+This method imports a synchronized database from a trusted origin
+in a fraction of the time currently required.
 
 Use this command to run the node:
 
