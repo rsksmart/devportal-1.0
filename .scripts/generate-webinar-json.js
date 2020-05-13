@@ -40,7 +40,7 @@ csvConverter
         .join(' ');
     if (!item.image) {
       // rotate between the 12  available generic images
-      const imageIndex = itemIndex % 12 + 1;
+      const imageIndex = (((itemIndex % 2) * 6) + itemIndex) % 12 + 1;
       item.image = `img/events/event${imageIndex}.jpg`;
     }
   })
