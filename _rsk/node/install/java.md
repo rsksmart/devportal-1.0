@@ -36,7 +36,11 @@ Use this command to run the node:
 $ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
 ```
 
-If your hardware meets the minimum RAM memory requirement or you get a memory error during the process, please consider adding the following flag to the command:
+If your hardware meets the
+[minimum hardware requirements](/rsk/node/install/requirements/),
+but you get a memory error during the process,
+please consider adding the following flag to the command
+to change the memory allocated to the process:
 
 ```bash
 $ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
