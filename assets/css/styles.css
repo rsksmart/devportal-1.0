@@ -1569,8 +1569,8 @@ img {
 }
 
 .search-input {
-    /*border-top: none; 
-	border-left: none; 
+    /*border-top: none;
+	border-left: none;
 	border-right: none;*/
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
@@ -1615,7 +1615,7 @@ img {
 }
 
 .btn-suscribe:hover {
-  
+
   background: #00B520;
   color: #fff;
   -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
@@ -1639,6 +1639,46 @@ img {
 .email-suscribe::placeholder {
   color: #CCC!important;
   font-size:18px;
+}
+
+.windows-command-prompt {
+  padding-left: 0;
+}
+
+.windows-command-prompt::before {
+    content: "Command Prompt";
+    display: block;
+    height: 31px;
+    border-width: 0px 129px 0px 139px;
+    border-style: solid;
+    border-image:
+        url("/assets/img/custom-terminals/title-bar.png")
+        0 129 0 139
+        fill;
+    color: transparent;
+    background-color: #ffffff;
+}
+
+.windows-command-prompt > .language-windows-command-prompt {
+    display: block;
+    min-height: 31px;
+    border-width: 16px 19px 16px 2px;
+    border-style: solid;
+    border-image:
+      url("/assets/img/custom-terminals/body.png")
+      16 19 16 2
+      stretch;
+      color: #e0e0e0;
+    background-color: #0c0c0c;
+    font-family: "MS Sans Serif", consolas, monospace;
+    margin: 0 0 0 0;
+    padding: 0 0.5em 0 0.5em;
+    overflow-x: hidden;
+    white-space: pre;
+}
+
+.windows-command-prompt > .language-windows-command-prompt::selection {
+    background: #aaaaaa;
 }
 
 
