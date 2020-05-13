@@ -92,9 +92,9 @@
     {
       "type": "event/2",
       "id": "202003-004",
-      "version": "4",
+      "version": "5",
       "timestamp": "2020-03-25T22:30:00.000Z",
-      "lastModified": "2020-04-17T01:30:00.000Z",
+      "lastModified": "2020-05-12T14:03:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269566069/",
       "title": "Como criar smart contracts na RSK network utilizando Remix e Metamask",
@@ -113,12 +113,12 @@
       "image": "img/events/event4.jpg",
       "resources": [
         {
-          "label": "Tutorial",
-          "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
+          "label": "Tutorial (em português)",
+          "url": "https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/"
         },
         {
-          "label": "Portuguese Tutorial",
-          "url": "https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/"
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
         }
       ],
       "recordedVideoUrl": "https://youtu.be/45ii2vFLKJc"
@@ -269,9 +269,9 @@
     {
       "type": "event/2",
       "id": "202004-002",
-      "version": "4",
+      "version": "5",
       "timestamp": "2020-04-01T22:30:00.000Z",
-      "lastModified": "2020-04-17T01:30:00.000Z",
+      "lastModified": "2020-05-12T14:03:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269676954/",
       "title": "Utilizando Geth attach para interagir com um nó local da rede RSK",
@@ -290,8 +290,20 @@
       "image": "img/events/event4.jpg",
       "resources": [
         {
-          "label": "Tutorial",
+          "label": "Tutorial (em português) - part 1",
+          "url": "https://solange.dev/2020/2020-04-05-Rsk-GethAttachLocalNode/"
+        },
+        {
+          "label": "Tutorial (em português) - part 2",
+          "url": "https://solange.dev/2020/2020-04-06-Rsk-GethSmartContract/"
+        },
+        {
+          "label": "Tutorial - part 1",
           "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "label": "Tutorial - part 2",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/"
         }
       ],
       "recordedVideoUrl": "https://youtu.be/z5AiHy0mC8U"
@@ -682,9 +694,9 @@
     {
       "type": "event/2",
       "id": "202004-017",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-15T22:30:00.000Z",
-      "lastModified": "2020-04-25T13:50:00.000Z",
+      "lastModified": "2020-05-12T14:03:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959494/",
       "title": "Crie seu primeiro frontend para um Smart Contract",
@@ -703,6 +715,10 @@
       "image": "img/events/event1.jpg",
       "resources": [
         {
+          "label": "Tutorial (em português)",
+          "url": "https://solange.dev/2020/2020-04-18-Rsk-FirstFrontendWeb3injected/"
+        },
+        {
           "label": "Tutorial",
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
@@ -712,9 +728,9 @@
     {
       "type": "event/2",
       "id": "202004-018",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-16T00:00:00.000Z",
-      "lastModified": "2020-04-17T01:30:00.000Z",
+      "lastModified": "2020-05-12T14:03:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959427",
       "title": "Create your first frontend for Smart Contracts",
@@ -745,7 +761,7 @@
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=E2kTSLFHPgk"
     },
     {
       "type": "event/2",
@@ -855,9 +871,9 @@
     {
       "type": "event/2",
       "id": "202004-022",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-04-22T22:30:00.000Z",
-      "lastModified": "2020-04-18T09:40:00.000Z",
+      "lastModified": "2020-05-12T14:03:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120781/",
       "title": "Como criar seu token na RSK network",
@@ -875,6 +891,10 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event6.jpg",
       "resources": [
+        {
+          "label": "Tutorial (em português)",
+          "url": "https://solange.dev/2020/2020-04-26-Rsk-CreateToken/"
+        },
         {
           "label": "Tutorial",
           "url": "https://developers.rsk.co/tutorials/tokens/create-a-token/"
@@ -982,7 +1002,7 @@
           "url": "https://github.com/bguiz/workshop-rsk-truffle-box-bguiz"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "https://youtu.be/5W4jhPJh9-c"
     },
     {
       "type": "event/2",
@@ -1162,7 +1182,7 @@
       "id": "202005-001",
       "version": "2",
       "timestamp": "2020-05-06T13:00:00.000Z",
-      "lastModified": "2020-04-25T02:45:00.000Z",
+      "lastModified": "2020-04-24T15:45:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270378750",
       "title": "How to create your own collectable token on the RSK network",
@@ -1179,15 +1199,28 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-create-your-own-collectable-token",
       "tags": " idioma-english audiencia-developers",
       "image": "img/events/event5.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Hands on",
+          "url": "https://github.com/bguiz/workshop-rsk-erc721-token-with-oz-react-truffle-bguiz/blob/master/walkthru.md"
+        },
+        {
+          "label": "Live demo",
+          "url": "https://github.com/bguiz/workshop-rsk-erc721-token-with-oz-truffle-bguiz-live"
+        },
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vQDr0B_K2HZXMV_y-pFK7HwSbXmKDcuxTeZoxyqcs7D1SxvHOHyMgfHbtUxjLpoUYUwxs6Adk42qqAj/pub?start=false&loop=false&delayms=600000"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
       "type": "event/2",
       "id": "202005-002",
-      "version": "2",
+      "version": "4",
       "timestamp": "2020-05-06T22:30:00.000Z",
-      "lastModified": "2020-04-25T02:45:00.000Z",
+      "lastModified": "2020-05-12T14:03:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270378822",
       "title": "Como criar seu token colecionável na RSK network",
@@ -1204,7 +1237,24 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-criar-seu-token-colecionavel",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event6.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Pré-requisitos (em português)",
+          "url": "https://solange.dev/2020/2020-05-10-Rsk-SetupTruffleOZ/"
+        },
+        {
+          "label": "Tutorial (em português)",
+          "url": "https://solange.dev/2020/2020-05-11-Rsk-CreateTokenNFT/"
+        },
+        {
+          "label": "Pre-requisites tutorial",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/setup-truffle-oz/"
+        },
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/tokens/create-a-collectable-token/"
+        }
+      ],
       "recordedVideoUrl": ""
     },
     {
