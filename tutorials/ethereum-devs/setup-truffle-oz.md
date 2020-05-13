@@ -3,11 +3,12 @@ layout: rsk
 title: How to create a new project using Truffle and OpenZeppelin connected to RSK network
 tags: tutorial, rsk, openzeppelin, truffle
 description: "How to create a new blockchain project, using Truffle framework and Open Zeppelin library connected to a RSK local node and RSK testnet"
+render_custom_terminals: true
 ---
 
 In this tutorial, I will show you step-by-step how to create a new blockchain project, using Truffle framework and Open Zeppelin smart contracts library, connected to a RSK local node or RSK testnet.
 
-It does not matter whether you are an experienced developer, or just learning to code, you do not need to be a blockchain expert to follow along. 
+It does not matter whether you are an experienced developer, or just learning to code, you do not need to be a blockchain expert to follow along.
 
 # Overview
 
@@ -42,8 +43,8 @@ This article is also available in
 The **Portable Operating System Interface (POSIX)** is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems. Source: [Wikipidia](https://en.wikipedia.org/wiki/POSIX)
 
 * Mac OSX and Linux distributions: Use the standard terminal
-* Windows: If you use the standard cmd terminal, or PowerShell, the commands here may not work. 
-  Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled. 
+* Windows: If you use the standard cmd terminal, or PowerShell, the commands here may not work.
+  Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled.
   Here is a [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
 
 ## cURL
@@ -54,7 +55,7 @@ If `curl --version` displays an error, [download curl](https://curl.haxx.se/down
 
 ## Java
 
-You will need Java 8 in order to run RSKj. 
+You will need Java 8 in order to run RSKj.
 
 Check if you already have Java installed:
 
@@ -64,14 +65,14 @@ java -version
 
 ![java -version](/assets/img/tutorials/setup-truffle-oz/image-01.png)
 
-If `java -version` displays an error, 
-or displays a version other than 1.8, 
-you will need to install it. 
+If `java -version` displays an error,
+or displays a version other than 1.8,
+you will need to install it.
 Go to [Java Download](https://www.java.com/en/download/) if you need to install it:
 
 ![Java Download](/assets/img/tutorials/setup-truffle-oz/image-02.png)
 
-### For Mac OSX and Linux distributions 
+### For Mac OSX and Linux distributions
 
 There are a variety of ways to do this, and SDKman is one which allows you to install and switch between multiple versions as needed:
 
@@ -103,18 +104,26 @@ node --version
 npm --version
 ```
 
-![node and npm version](/assets/img/tutorials/setup-truffle-oz/image-03.png)
+```windows-command-prompt
+C:>node --version
+v10.16.3
 
-If there's no output like that in the image above, go to [Node.js](https://nodejs.org/en/) install. 
+C:>npm --version
+v6.9.0
+
+C:>
+```
+
+If there's no output like that in the image above, go to [Node.js](https://nodejs.org/en/) install.
 
 Note that NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
 
-If you want to have more than one version installed, 
+If you want to have more than one version installed,
 the most fuss-free way to install and manage multiple versions of `node` on your computer is [nvm](https://github.com/nvm-sh/nvm).
 
 ## Code editor
 
-We need some software that is able to edit text files. 
+We need some software that is able to edit text files.
 Preferably one that has support for syntax highlighting for both Solidity and Javascript.
 
 [VS Code](https://code.visualstudio.com/) is a good choice if you don't already have one.
@@ -135,7 +144,7 @@ code -v
 
 ## Truffle
 
-Truffle is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management. 
+Truffle is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management.
 
 It also makes developing on RSK easier, with the ability to configure custom networks for RSK.
 
@@ -155,7 +164,7 @@ truffle version
 
 ![truffle version](/assets/img/tutorials/setup-truffle-oz/image-06.png)
 
-For more info: 
+For more info:
 
 [trufflesuite.com/truffle](https://www.trufflesuite.com/truffle)
 
@@ -165,7 +174,7 @@ When we develop a project using Truffle Framework, we need a blockchain node run
 
 There are several ways to set up a RSK local node. Here, we will download a JAR file and run it using the Java SDK that has been installed.
 
-### Download 
+### Download
 
 Go to the [releases page](https://github.com/rsksmart/rskj/releases) and click on the most recent to download it.
 
@@ -174,7 +183,7 @@ It's name should be `rskj-core-*.jar`:
 
 ![Download last RSK release](/assets/img/tutorials/setup-truffle-oz/image-07.png)
 
-### Verify authenticity 
+### Verify authenticity
 
 When installing and running the RSKj node,
 it is always a good idea to verify that your copy is legitimate.
@@ -197,11 +206,11 @@ For this version, it looked like this:
 > See instructions [about using Git Bash](#posix-compliant-shell) above.
 
 For more information about verifying that your copy is legitimate,
-including signature verification, check out the 
+including signature verification, check out the
 [full instructions](/rsk/node/security-chain/ "Verify authenticity of RskJ source code and its binary dependencies")
 on how to do this.
 
-### Run 
+### Run
 
 To run the node:
 
@@ -254,9 +263,9 @@ This is the result in the terminal in Windows OS:
 
 ### Check if the node is running using cURL
 
-Open a new terminal window. 
+Open a new terminal window.
 
-Issue a JSON-RPC request to the RSK node's HTTP server. 
+Issue a JSON-RPC request to the RSK node's HTTP server.
 
 This is an example using cURL:
 
@@ -281,17 +290,17 @@ The `result` property is the number of the latest block that has been synced. No
 * There are other ways to install an RSK node, in other supported platforms:
   Check out [installing RSKj](/rsk/node/install/).
 
-# RSK Testnet - verify the connection 
+# RSK Testnet - verify the connection
 
 In addition to using the local node, we want to publish smart contracts to the testnet. Before it, let's check if the connection is working.
 
-This is an example using cURL. Enter the following command into your terminal. 
+This is an example using cURL. Enter the following command into your terminal.
 
 ```shell
 curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
 
-This is a very simple query that simply asks what the latest block number is. 
+This is a very simple query that simply asks what the latest block number is.
 
 You should receive a response similar to the following:
 
@@ -301,7 +310,7 @@ You should receive a response similar to the following:
 
 ![testnet eth_blockNumber](/assets/img/tutorials/setup-truffle-oz/image-11.png)
 
-The result field is presented in hexadecimal. `0xc3f9b` is the block number, and it's decimal equivalent is: `802715`.  
+The result field is presented in hexadecimal. `0xc3f9b` is the block number, and it's decimal equivalent is: `802715`.
 You can consult [testnet explorer](https://explorer.testnet.rsk.co/) and verify that it is the same result for block number.
 
 ![explorer testnet block number](/assets/img/tutorials/setup-truffle-oz/image-12.png)
@@ -366,20 +375,20 @@ npm init -y
 
 > Note: Only do this if you have not done option 1.
 
-Truffle Boxes are templates. 
-In addition to Truffle, 
+Truffle Boxes are templates.
+In addition to Truffle,
 Truffle Boxes can contain other helpful modules, such as Solidity smart contracts, libraries, front-end views, and more.
 
-In option 1, when we use `truffle init`, we used a special kind of truffle box. 
+In option 1, when we use `truffle init`, we used a special kind of truffle box.
 Check out other [boxes] (https://www.trufflesuite.com/boxes).
 
 Also we have some of them already configured for RSK, [check it out here](https://developers.rsk.co/tutorials/truffle-boxes/).
 
 ## Install Open Zeppelin
 
-Open Zeppelin Contracts is a set of libraries of Solidity smart contracts for Ethereum and other blockchains. 
+Open Zeppelin Contracts is a set of libraries of Solidity smart contracts for Ethereum and other blockchains.
 These libraries will install not only the main libraries required for our token,
-but also libraries for ownership, safe math, and many other utilities. 
+but also libraries for ownership, safe math, and many other utilities.
 It's worth mentioning that these libraries have been reviewed and audited to accomplish high standards of security,
 so contracts that depend on them are less susceptible to hacking when used correctly.
 
@@ -395,13 +404,13 @@ The option `-E` is to save dependencies with an exact version rather than the la
 
 > Some contracts may change over time, so it is important to set the version. This tutorial was written using this specific version.
 
-For more info: 
+For more info:
 
 [openzeppelin.com/contracts](https://openzeppelin.com/contracts/)
 
 # Install HD wallet provider
 
-To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. We are going to use `@truffle/hdwallet-provider`. 
+To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. We are going to use `@truffle/hdwallet-provider`.
 This can be used to sign transactions for addresses derived from a 12 or 24 word mnemonic.
 
 > You need to have Node >= 7.6 installed.
@@ -415,38 +424,38 @@ npm install -E @truffle/hdwallet-provider@1.0.34
 ![hd wallet provider install](/assets/img/tutorials/setup-truffle-oz/image-18.png)
 
 This `truffle package` comes with many dependencies,
-and so can take a long time to complete. 
+and so can take a long time to complete.
 A successful installation message is shown if everything works fine.
 
 ![hd wallet provider successful installation](/assets/img/tutorials/setup-truffle-oz/image-19.png)
 
 # Check package.json
 
-`package.json` is a file created by npm with some configurations, 
+`package.json` is a file created by npm with some configurations,
 including the packages which we installed before using the command `npm init -y`.
 
-After the installations, 
-I will open the project folder named `myproject` in VS Code and verify the file `package.json`. 
+After the installations,
+I will open the project folder named `myproject` in VS Code and verify the file `package.json`.
 Let's take a look at the dependencies in the file:
 
 ![package.json](/assets/img/tutorials/setup-truffle-oz/image-20.png)
 
 # Create a wallet
 
-To use testnet, we need tR-BTC and an address to store them. 
+To use testnet, we need tR-BTC and an address to store them.
 The best way is to create a wallet from a mnemonic, using the pattern defined at [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 
 There are a few ways to do this.
 
-One is to create using a web wallet, such as [Metamask](https://metamask.io/) or [Nifty](https://www.poa.network/for-users/nifty-wallet) wallet. 
-These wallets generate the mnemonic for you. 
+One is to create using a web wallet, such as [Metamask](https://metamask.io/) or [Nifty](https://www.poa.network/for-users/nifty-wallet) wallet.
+These wallets generate the mnemonic for you.
 If you wanted to create using Metamask, you can get the instructions here:
 
 - [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
 ## iancoleman.io/bip39
 
-Another way is using this web app: 
+Another way is using this web app:
 
 [iancoleman.io/bip39](https://iancoleman.io/bip39/)
 
@@ -456,12 +465,12 @@ In the `Generate a random mnemonic` field, select `12 words` and click on the `g
 
 ![Generate a random mnemonic](/assets/img/tutorials/setup-truffle-oz/image-21.png)
 
-The result appears in the `BIP39 Mnemonic` field. 
+The result appears in the `BIP39 Mnemonic` field.
 They should be 12 random words like the words in the image:
 
 ![BIP39 Mnemonic](/assets/img/tutorials/setup-truffle-oz/image-22.png)
 
-My mnemonic is: 
+My mnemonic is:
 
 ```
 energy knife ice mouse merge track cram brown decorate atom rule virus
@@ -471,7 +480,7 @@ Copy these 12 words, we'll use it later in this tutorial.
 
 ## mnemonics module
 
-Another alternative is using package [mnemonics](https://github.com/itinance/mnemonics), 
+Another alternative is using package [mnemonics](https://github.com/itinance/mnemonics),
 which is a simple utility that can be used to generate [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonics.
 
 To install `mnemonics` globally, input the command below into the terminal and press `enter` at your project location:
@@ -492,7 +501,7 @@ This saves a new mnemonic in the file named `.secret`, which is the next step.
 
 In the terminal, inside the `myproject` folder, create a file named `.secret`.
 
-Do you remember your mnemonic? 
+Do you remember your mnemonic?
 Paste your mnemonic in this file and save it.
 
 ![dot secret](/assets/img/tutorials/setup-truffle-oz/image-23.png)
@@ -520,7 +529,7 @@ module.exports = {
 }
 ```
 
-The `hdwallet-provider` allows us to connect to any network by unlocking an account locally, including the RSK networks. 
+The `hdwallet-provider` allows us to connect to any network by unlocking an account locally, including the RSK networks.
 
 Also we are loading the mnemonic stored in file `.secret`, and saving it at variable mnemonic.
 
@@ -533,7 +542,7 @@ In the `truffle-config.js` file, include this configuration at `network` section
       host: "127.0.0.1",
       port: 4444,
       network_id: "*"
-    },  
+    },
 ```
 
 This is the result:
@@ -542,7 +551,7 @@ This is the result:
 
 ## Get the current gas price of testnet
 
-Get the current gas price of the testnet network, and save to `.gas-price-testnet.json`. 
+Get the current gas price of the testnet network, and save to `.gas-price-testnet.json`.
 
 In your project folder, run this cURL command:
 
@@ -592,20 +601,20 @@ This is the final `truffle-config.js` file with configurations for both networks
 
 ```javascript
 const HDWalletProvider = require('@truffle/hdwallet-provider');
- 
+
 const fs = require('fs');
 const mnemonic = fs.readFileSync(".secret").toString().trim();
 if (!mnemonic || mnemonic.split(' ').length !== 12) {
   throw new Error('unable to retrieve mnemonic from .secret');
 }
- 
+
 const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
 const gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
 if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
   throw new Error('unable to retrieve network gas price from .gas-price-testnet.json');
 }
 console.log("Gas price Testnet: " + gasPriceTestnet);
- 
+
 module.exports = {
   networks: {
     development: {
@@ -618,7 +627,7 @@ module.exports = {
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9
-    },        
+    },
   },
   compilers: {
     solc: {
@@ -647,16 +656,16 @@ truffle console
 
 ![Truffle console development](/assets/img/tutorials/setup-truffle-oz/image-28.png)
 
-> Any network defined with the name `development` is considered the default network. 
+> Any network defined with the name `development` is considered the default network.
 
 ## Connect to RSK testnet
 
-Thus far we have only connected to a blockchain that runs using just 1 node, that runs on your own computer. 
+Thus far we have only connected to a blockchain that runs using just 1 node, that runs on your own computer.
 Let's now switch to interacting with a "real" blockchain, which is running on multiple nodes distributed across multiple computers!
 
 To connect Truffle console in another network, you need to specify the network:
 
-Open up a new terminal. 
+Open up a new terminal.
 
 In the new terminal, inside the `myproject` folder, run this command:
 
@@ -664,7 +673,7 @@ In the new terminal, inside the `myproject` folder, run this command:
 truffle console --network testnet
 ```
 
-It takes a little longer to establish this connection when compared to the local node. 
+It takes a little longer to establish this connection when compared to the local node.
 This will open a new console:
 
 ![truffle console network testnet](/assets/img/tutorials/setup-truffle-oz/image-29.png)
@@ -756,7 +765,7 @@ To check the balance of an account, for example, the first account of our list (
 ![getBalance accounts 0](/assets/img/tutorials/setup-truffle-oz/image-37.png)
 
 The balance is 0 and we need some tR-BTC to pay gas fees,
-which will be used to publish smart contracts and interact with them. 
+which will be used to publish smart contracts and interact with them.
 We shall obtain some in the next step.
 
 # TestNet Faucet
