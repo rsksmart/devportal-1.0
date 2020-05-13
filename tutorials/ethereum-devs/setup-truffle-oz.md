@@ -105,13 +105,13 @@ npm --version
 ```
 
 ```windows-command-prompt
-C:>node --version
+C:\>node --version
 v10.16.3
 
-C:>npm --version
+C:\>npm --version
 v6.9.0
 
-C:>
+C:\>
 ```
 
 If there's no output like that in the image above, go to [Node.js](https://nodejs.org/en/) install.
