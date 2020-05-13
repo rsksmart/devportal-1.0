@@ -39,8 +39,8 @@ csvConverter
         .map((audience) => (`audiencia-${audience}`))
         .join(' ');
     if (!item.image) {
-      // rotate between the 6 available generic images
-      const imageIndex = itemIndex % 6 + 1;
+      // rotate between the 12  available generic images
+      const imageIndex = itemIndex % 12 + 1;
       item.image = `img/events/event${imageIndex}.jpg`;
     }
   })
