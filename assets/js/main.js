@@ -275,3 +275,9 @@ function renderEquation(el) {
   equationEl.classList.add('tex-rendered');
   el.replaceWith(equationEl);
 }
+
+function renderCustomTerminals() {
+  $('.language-windows-command-prompt')
+    .parent()
+    .addClass('windows-command-prompt')
+}
