@@ -25,6 +25,7 @@ Or just use it directly in your webpage:
 ```javascript
 import Web3 from 'web3'
 import RNS from '@rsksmart/rns'
+import { ChainId } from '@rsksmart/rns/types'
 
 const web3 = new Web3('https://public-node.rsk.co')
 const rns = new RNS(web3)
@@ -42,7 +43,7 @@ rns.addr('testing.rsk').then(console.log)
 
 Get Bitcoin address:
 ```javascript
-rns.addr('testing.rsk', '0x80000000').then(console.log)
+rns.addr('testing.rsk', ChainId.BITCOIN).then(console.log)
 ```
 
 Check if `example.testing.rsk` subdomain is available:

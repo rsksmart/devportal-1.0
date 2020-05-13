@@ -55,7 +55,7 @@ rns.addr('testing.rsk').then(console.log)
 Get Bitcoin address:
 
 ```javascript
-rns.addr('testing.rsk', '0x80000000').then(console.log)
+rns.addr('testing.rsk', ChainId.BITCOIN).then(console.log)
 ```
 
 ### `setAddr`
