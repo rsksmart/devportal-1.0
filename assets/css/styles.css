@@ -1681,6 +1681,12 @@ img {
     background: #aaaaaa;
 }
 
+/* newsletter sign up page */
+
+table.table.newsletter input[type="checkbox"] {
+    margin-right: 5px;
+}
+
 
 /* media queries*/
 
