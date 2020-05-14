@@ -1641,6 +1641,8 @@ img {
   font-size:18px;
 }
 
+/* custom terminal render */
+
 .windows-command-prompt {
   padding-left: 0;
 }
@@ -1679,6 +1681,61 @@ img {
 
 .windows-command-prompt > .language-windows-command-prompt::selection {
     background: #aaaaaa;
+}
+
+/* sprite transform animation */
+
+.sprite-transform-animation {
+    height: 100%;
+    background-size: 100%, 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sprite-transform-animation.rsk-mining {
+    width: 1800%;
+    background-image: url('/assets/img/home/rsk-mining-animation-sprite.png');
+    animation-name: sprite-transform-animation-keyframes-18;
+    animation-duration: 10s;
+    animation-timing-function: steps(17);
+    animation-iteration-count: infinite;
+}
+
+.sprite-transform-animation.rsk-peg {
+    width: 900%;
+    background-image: url('/assets/img/home/rsk-peg-animation-sprite.png');
+    animation-name: sprite-transform-animation-keyframes-9;
+    animation-duration: 20s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+}
+
+@keyframes sprite-transform-animation-keyframes-18 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-94.44444444%);
+    }
+}
+
+@keyframes sprite-transform-animation-keyframes-9 {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-88.88888889%);
+    }
+}
+
+.sprite-transform-animation-wrapper {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    min-height: 386px;
 }
 
 /* newsletter sign up page */

@@ -125,7 +125,81 @@ The Developer Portal is the home for RSK documentation for end users and develop
     </ul>
 </div>
 
-## Quick Links
+# What is RSK?
+
+RSK's full [technology stack](/the-stack) is built on to of bitcoin:
+From RSK smart contracts
+to the RSK Infrastructure Framework.
+The stack is designed to create a
+more fair and inclusive financial system.
+
+![RSK Technology Stack - High Level](/assets/img/home/rsk-tech-stack-high-level.png)
+
+**Bitcoin**, is a store and transfer of value.
+The blockchain is secure because miners
+with high infrastructure and energy costs
+create the new blocks to be added to the blockchain every 10 minutes.
+The more hashing power they provide, more secure the network is.
+
+**RSK** is the first open source smart contract platform that is
+powered by the bitcoin network.
+RSK's goal is to add value and functionality to the
+bitcoin ecosystem by enabling smart-contracts,
+near instant payments, and higher-scalability.
+
+How RSK is connected to bitcoin?
+
+## Merged mining with Bitcoin
+
+The first point of contact is through mining.
+
+The bitcoin miners do what is known as
+[merged mining](/rsk/architecture/mining/),
+securing both networks with the same infrastructure and energy consumption.
+
+<div class="sprite-transform-animation-wrapper rsk-mining">
+  <div class="sprite-transform-animation rsk-mining"></div>
+</div>
+
+They create blocks on the bitcoin network every 10 minutes,
+including transfer of bitcoin from different addresses
+and in the process they create new bitcoins.
+
+On RSK, blocks are created every 30 seconds,
+to secure the execution of smart contracts.
+This does not mint any new coins in the process,
+but does earn a reward from the merged mining.
+
+Check out [mining.rsk.co](https://mining.rsk.co/)
+to learn more about mining.
+
+## 2-way peg with Bitcoin
+
+The second point of contact is the
+[2-way peg](/rsk/architecture/2-way-peg/),
+also known as the bridge.
+
+This component connects both networks to allow
+the transfer of bitcoins to RSK,
+thereby allowing developers to interact with smart contracts.
+They pay gas using the same bitcoin, the smart bitcoin.
+
+<div class="sprite-transform-animation-wrapper rsk-peg">
+  <div class="sprite-transform-animation rsk-peg"></div>
+</div>
+
+To do so, you send bitcoin to a special address,
+where they are locked in the bitcoin network.
+Next, in the same address over in the RSK network,
+that same bitcoin is released to the user
+for use in the RSK network.
+This is called peg-in.
+
+You can do the reverse operation called peg-out,
+by sending your bitcoin to a special address in the RSK network,
+and receiving your bitcoin back in the bitcoin network.
+
+# Quick Links
 
 <ul>
   <li>Mainnet:
