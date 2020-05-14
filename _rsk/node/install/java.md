@@ -19,6 +19,38 @@ $ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
 
 Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
+## Using import sync
+
+> Note: This feature is optional.
+
+> Note: This feature, first released as part of RSKj v2.0.1, is currently experimental.
+
+If you don't want to synchronize your node in the default way,
+you can use the import sync feature.
+This method imports a synchronized database from a trusted origin
+in a fraction of the time currently required.
+
+Use this command to run the node:
+
+```bash
+$ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+```
+
+If your hardware meets the
+[minimum hardware requirements](/rsk/node/install/requirements/),
+but you get a memory error during the process,
+please consider adding the following flag to the command
+to change the memory allocated to the process:
+
+```bash
+$ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+```
+
+Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
+
+For further reference, check out the
+[`database.import` configuration setting](/rsk/node/configure/reference/#databaseimport).
+
 ## Check the RPC
 
 If you see no output, it means that the node is running. To check, you can open a new console tab (it is important you do not close this one or interrupt the process) and issue a request to the node's RPC HTTP server. This is an example using cURL:
