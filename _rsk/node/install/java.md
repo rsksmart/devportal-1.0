@@ -48,7 +48,8 @@ $ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
 
 Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
-For further reference, check this [configuration settings](/rsk/node/configure/reference/#databaseimport).
+For further reference, check out the
+[`database.import` configuration setting](/rsk/node/configure/reference/#databaseimport).
 
 ## Check the RPC
 
