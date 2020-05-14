@@ -1,17 +1,11 @@
 ---
 layout: rsk
 title: Resolve Nifty Wallet Issue
-description: "Resolution for breaking change in derivation path for Nifty Wallet 5.0.0"
+description: "Resolution for breaking change in derivation path for Nifty Wallet 5.1.0"
 tags: tutorial, nifty, chainId, address, derivation, bip44, slip44
 ---
 
-## Am I affected?
-
-First, check your Nifty wallet version:
-- Click the menu on the right (three horizontal lines)
-- Click "Info/Help"
-- If version is "5.0.0", then read the next section. If not, you are OK.
-## Nifty wallet version 5.0.0
+## Nifty wallet version 5.1.0
 
 Recently, Nifty Wallet has fixed this issue:
 [Incorrect addresses derived from mnemonic for custom networks (RSK/ETC)](https://github.com/poanetwork/nifty-wallet/issues/331).
@@ -23,27 +17,32 @@ instead of the RSK derivation paths:
 
 This was a **breaking change**.
 Check out Nifty's release notes for more information:
-[Nifty Wallet Release 5.0.0](https://forum.poa.network/t/nifty-wallet-release-5-0-0/3335).
+[Nifty Wallet Release 5.0.0](https://forum.poa.network/t/nifty-wallet-release-5-0-0/3335)
+and [Nifty Wallet Release 5.1.0](https://forum.poa.network/t/nifty-wallet-release-5-1-0/3440).
 
 Also check out RSK's documentation on our
 [derivation paths](/rsk/architecture/account-based/ "Account Based RSK Addresses").
 
-## If you created your accounts after this release
+## If you created your wallet after this release
 
 Continue using Nifty Wallet.
 No further action is necessary.
 
-## If you created your accounts before this release
+## If you created your wallet before this release
 
-If you created your account prior to this release,
-the same seed phrase will result in a the derivation of
-a **different set** of addresses.
-This means that Nifty Wallet will **not** display the same
-set of addresses which you saw previously,
-and therefore you will have zero balances.
-
-Not to worry, you will be able to derive
-the **original set** of addresses by
+If you created your wallet (and account) prior to this release,
+you will see this label: "The account is derived from
+ETH derivation path despite you connected to another chain.
+If you are ready to switch to correct derivation path, just
+restore from the same seed phrase.".
+In other words, this means that your seed phrase was used to
+generate your account as if it were an ETH account and not an
+RSK account.
+You will see your account as usual until you restore your seed.
+Once you do that, you won't find your former account and,
+therefore, your balance.
+If that happen and you didn't move your funds, not to worry,
+you will be able to derive the **original set** of addresses by
 [adding RSK as a custom node](#add-rsk-as-custom-node).
 
 ## Add RSK as custom node
