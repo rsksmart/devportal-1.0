@@ -157,7 +157,9 @@ The bitcoin miners do what is known as
 [merged mining](/rsk/architecture/mining/),
 securing both networks with the same infrastructure and energy consumption.
 
-TODO animation
+<div class="sprite-transform-animation-wrapper rsk-mining">
+  <div class="sprite-transform-animation rsk-mining"></div>
+</div>
 
 They create blocks on the bitcoin network every 10 minutes,
 including transfer of bitcoin from different addresses
@@ -182,7 +184,9 @@ the transfer of bitcoins to RSK,
 thereby allowing developers to interact with smart contracts.
 They pay gas using the same bitcoin, the smart bitcoin.
 
-TODO animation
+<div class="sprite-transform-animation-wrapper rsk-peg">
+  <div class="sprite-transform-animation rsk-peg"></div>
+</div>
 
 To do so, you send bitcoin to a special address,
 where they are locked in the bitcoin network.
