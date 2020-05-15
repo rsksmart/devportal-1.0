@@ -7,6 +7,20 @@ collection_order: 20
 
 Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains.
 
+### Clone the tutorial project
+
+Before we begin, let's make a copy of the project
+which we will use for the remainder of this tutorial.
+
+The tutorial project files can be downloaded from
+[github.com/rsksmart/truffle-integration](https://github.com/rsksmart/truffle-integration).
+
+```shell
+git clone https://github.com/rsksmart/truffle-integration
+cd truffle-integration
+
+```
+
 ### Install Truffle
 
 Navigate to the `truffle` directory within the tutorial, and install its dependencies.
