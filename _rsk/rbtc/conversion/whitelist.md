@@ -3,7 +3,7 @@ layout: rsk
 title: Whitelist
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, whitelist
 description: "Why a whitelist is necessary, how to get whitelisted, and what is next"
-collection_order: 3110
+collection_order: 3130
 ---
 
 ## What is a *whitelist*?
