@@ -1675,8 +1675,9 @@ img {
     font-family: "MS Sans Serif", consolas, monospace;
     margin: 0 0 0 0;
     padding: 0 0.5em 0 0.5em;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
     overflow-x: hidden;
-    white-space: pre;
 }
 
 .windows-command-prompt > .language-windows-command-prompt::selection {
