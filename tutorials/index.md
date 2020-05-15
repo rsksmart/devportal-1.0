@@ -14,7 +14,6 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 ## For Ethereum developers
 
 - [Geth attach to RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/)
-- [Geth attach to RSK local node for Mac Users](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
 - [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
 - [Port Ethereum dApps](/tutorials/ethereum-devs/port-ethereum-dapps/)
 - [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
