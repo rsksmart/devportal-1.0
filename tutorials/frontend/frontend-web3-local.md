@@ -25,7 +25,6 @@ Below is a summary of the steps we would take to achieve this:
 Step 1 and 2 are explained in detail in the tutorial links below: 
 
 * [using Geth attach to a RSK local lode](/tutorials/ethereum-devs/geth-attach-local-node/)
-* [using Geth attach to a RSK local lode for Mac Users](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
 
 Step 4 and 5 are explained in detail in the tutorial links below: 
 
