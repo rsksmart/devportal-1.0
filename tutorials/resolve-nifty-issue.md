@@ -1,11 +1,11 @@
 ---
 layout: rsk
 title: Resolve Nifty Wallet Issue
-description: "Resolution for breaking change in derivation path for Nifty Wallet 5.1.0"
+description: "Resolution for breaking change in derivation path for Nifty Wallet 5"
 tags: tutorial, nifty, chainId, address, derivation, bip44, slip44
 ---
 
-## Nifty wallet version 5.1.0
+## Nifty wallet version 5
 
 Recently, Nifty Wallet has fixed this issue:
 [Incorrect addresses derived from mnemonic for custom networks (RSK/ETC)](https://github.com/poanetwork/nifty-wallet/issues/331).
@@ -30,18 +30,21 @@ No further action is necessary.
 
 ## If you created your wallet before this release
 
-If you created your wallet (and account) prior to this release,
-you will see this label: "The account is derived from
-ETH derivation path despite you connected to another chain.
-If you are ready to switch to correct derivation path, just
-restore from the same seed phrase.".
+If you created your wallet (and therefore accounts)
+prior to this release, you will see this label:
+
+> The account is derived from
+> ETH derivation path despite you connected to another chain.
+> If you are ready to switch to correct derivation path, just
+> restore from the same seed phrase.
+
 In other words, this means that your seed phrase was used to
-generate your account as if it were an ETH account and not an
-RSK account.
+generate your account as if it were an Ethereum account
+and not an RSK account.
 You will see your account as usual until you restore your seed.
 Once you do that, you won't find your former account and,
 therefore, your balance.
-If that happen and you didn't move your funds, not to worry,
+If that happens, and you didn't move your funds, not to worry,
 you will be able to derive the **original set** of addresses by
 [adding RSK as a custom node](#add-rsk-as-custom-node).
 
