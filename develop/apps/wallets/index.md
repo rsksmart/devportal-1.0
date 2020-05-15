@@ -94,6 +94,12 @@ Follow the [integration guide](/develop/apps/integrate) to integrate your wallet
 
 ## Resources for developers
 
+### All-purpose wallet
+
 - <a href="https://github.com/rsksmart/rwallet" target="_blank">rWallet</a>
-- <a href="https://github.com/rsksmart/MultiSigWallet" target="_blank">Customized Gnosis Multisig Web</a>
+
+### Multisig wallet
+
+- <a href="https://gnosis.rsk.co" target="_blank">Customized Gnosis Multisig Web - WebApp</a>
+- <a href="https://github.com/rsksmart/MultiSigWallet" target="_blank">Customized Gnosis Multisig Web - Source</a>
 - <a href="https://github.com/rsksmart/multi-sig-factory" target="_blank">Gnosis Multisig Factory for Truffle</a>
