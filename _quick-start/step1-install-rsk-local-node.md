@@ -2,10 +2,12 @@
 layout: rsk
 title: Quick Start - Step 1
 collection_order: 10
+render_custom_terminals: true
 ---
+
 ## Step 1 : Install RSK local node
 
-RSK node can be installed on all major platforms, including Linux, Windows, and Mac. 
+RSK node can be installed on all major platforms, including Linux, Windows, and Mac.
 Originally named in Bitcoin, local node is know as RegTest node.
 
 In this tutorial, we provide step-by-step instructions for running a local RegTest node through Docker. Docker installation supports Mac, Windows, and Linux.
@@ -114,9 +116,16 @@ Let us verify that this works.
 In a terminal which supports curl:
 
 ```bash
-curl http://localhost:4444/1.1.0/ \
+curl http://localhost:4444/ \
   -X POST -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+```
+
+On Windows, the equivalent curl command is slightly different:
+
+```windows-command-prompt
+C:> curl -H "Content-Type: application/json" -X POST http://localhost:4444/ -d "{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}"
+
 ```
 
 This should respond with something that looks like the following:
