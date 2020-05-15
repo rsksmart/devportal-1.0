@@ -24,13 +24,13 @@ ls
 
 `EIP20Interface.sol` defines the required functions for the ERC20 base standard.
 
-``` javascript
+```solidity
 /// @param _owner The address from which the balance will be retrieved
 /// @return The balance
 function balanceOf(address _owner) public view returns (uint256 balance);
 ```
 
-``` javascript
+```solidity
 /// @notice send `_value` token to `_to` from `msg.sender`
 /// @param _to The address of the recipient
 /// @param _value The amount of token to be transferred
@@ -41,13 +41,13 @@ function transfer(address _to, uint256 _value) public returns (bool success);
 `EIP20.sol` provides implementations of the functions declared in `EIP20Interface.sol`.
 Here are the implementation of the two functions that we looked at in the interface.
 
-``` javascript
+```solidity
 function balanceOf(address _owner) public view returns (uint256 balance) {
     return balances[_owner];
 }
 ```
 
-``` javascript
+```solidity
 function transfer(address _to, uint256 _value) public       returns (bool success) {
     require(balances[msg.sender] >= _value);
     balances[msg.sender] -= _value;
@@ -63,7 +63,7 @@ At the top of the `EIP20.sol` token contract, the constructor function defined i
 Initial amount, token name, decimal unit, and token symbol.
 You can customize these parameters to create your own token.
 
-```javascript
+```solidity
 function EIP20(
     uint256 _initialAmount,
     string _tokenName,
@@ -82,13 +82,12 @@ function EIP20(
 
 To set those values, open `3_deploy_tokens.js` in folder `truffle/migrations/`. This is a migration script that controls the deployment of smart contracts. We will talk more about migrations in next step. The contents of the file should look like this.
 
-``` javascript
+```javascript
 const EIP20 = artifacts.require('./EIP20.sol');
 
 module.exports = (deployer) => {
   deployer.deploy(EIP20, 10000, 'Simon Bucks', 1, 'SBX');
 };
-
 ```
 
 Now let's change the name to something you like, e.g. Flower Token. We are now ready ready to deploy this contract, which will generate our own 10000 Flower Tokens!

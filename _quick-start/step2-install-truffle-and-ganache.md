@@ -50,18 +50,18 @@ This part tells Truffle how to connect to our RegNet node.
 
 ```javascript
 module.exports = {
-    // ...
-    networks: {
-        //...
-        regtest: {
-            provider: new PrivateKeyProvider(privateKey,  "http://127.0.0.1:4444"),
-            host: "127.0.0.1",
-            port: 4444,
-            network_id: 33,
-        }
-        //...
+  // ...
+  networks: {
+    //...
+    regtest: {
+      provider: new PrivateKeyProvider(privateKey, 'http://127.0.0.1:4444'),
+      host: '127.0.0.1',
+      port: 4444,
+      network_id: 33,
     },
-    // ...
+    //...
+  },
+  // ...
 };
 ```
 
@@ -84,7 +84,7 @@ This will open a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93
 in your terminal, in which you can type in commands to interact with
 the node that you have connected to, using the `web3.js` API.
 
-```javascript
+```text
 truffle(regtest)>
 ```
 
@@ -92,7 +92,7 @@ Note that the `--network` parameter identifies which network we should connect t
 and look for the options related to that within the `truffle-config.js` file.
 We can verify this by entering the following command:
 
-```javascript
+```javascript-repl
 web3.eth.net.getId()
 33
 ```
