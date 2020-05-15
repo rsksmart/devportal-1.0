@@ -79,11 +79,15 @@ C:\>
 If `java -version` displays an error,
 or displays a version other than 1.8,
 you will need to install it.
-Go to [Java Download](https://www.java.com/en/download/) if you need to install it:
+
+### Install Java on Windows
+
+Go to the official [Java download](https://www.java.com/en/download/) page,
+and download and run the installer from there.
 
 ![Java Download](/assets/img/tutorials/setup-truffle-oz/image-02.png)
 
-### For Mac OSX and Linux distributions
+### Install Java on Mac OSX and Linux
 
 There are a variety of ways to do this, and SDKman is one which allows you to install and switch between multiple versions as needed:
 

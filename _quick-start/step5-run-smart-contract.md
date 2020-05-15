@@ -3,7 +3,8 @@ layout: rsk
 title: Quick Start - Step 5
 collection_order: 50
 ---
-## Step 5 : Run Smart Contracts
+
+# Step 5 : Run Smart Contracts
 
 Once the smart contract has been deployed successfully. We can use Truffle console to execute its methods.
 
@@ -14,7 +15,7 @@ truffle console --network regtest
 
 ```
 
-#### Check Balance of Our EIP20 Token
+## Check Balance of Our EIP20 Token
 
 First, let us get the address of the account which was used to deploy the the contract.
 We shall save this in the variable `account1`.
@@ -44,7 +45,7 @@ EIP20 is the name of our contract. This command will print out the balance of th
 
 This should appear as `10000`, the number of the tokens was specified in the parameter to the constructor of the smart contract, in the truffle migration.
 
-#### Transfer Token Directly Between Two Accounts
+## Transfer Token Directly Between Two Accounts
 
 In Ganache, copy the address of the second account in the accounts tab.
 We shall save it as a variable, `account2`:
@@ -80,6 +81,6 @@ Finally, let us check the account balances to ensure that everything went smooth
 
 This should print out `9990` and `10` respectively. The first account has fewer tokens as they have been transferred to the second account.
 
-#### Congratulations
+## Congratulations
 
 You have reached the end of the quick start tutorials. You are now ready to develop decentralised applications!

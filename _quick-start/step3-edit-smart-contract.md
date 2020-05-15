@@ -3,14 +3,15 @@ layout: rsk
 title: Quick Start - Step 3
 collection_order: 30
 ---
-## Step 3 : Edit Smart Contract
+
+# Step 3 : Edit Smart Contract
 
 In this tutorial, we have two sample smart contracts available to experiment with.
 
 - `Coin.sol`: A minimal token contract
 - `EIP20.sol`: An implementation of [EIP20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md) tokens provided by [ConsenSys](https://github.com/ConsenSys/Tokens)
 
-#### Locate the Smart Contract files for an EIP20 Coin
+## Locate the Smart Contract files for an EIP20 Coin
 
 Navigate to `truffle/contracts/eip20`, and observe that there are two Solidity files in this directory: `EIP20Interface.sol` and `EIP20.sol`
 
@@ -19,7 +20,7 @@ cd truffle/contracts/eip20
 ls
 ```
 
-#### Understand the Smart Contract Files
+## Understand the Smart Contract Files
 
 `EIP20Interface.sol` defines the required functions for the ERC20 base standard.
 
@@ -56,7 +57,7 @@ function transfer(address _to, uint256 _value) public       returns (bool succes
 }
 ```
 
-#### Edit the EIP20 Token Name
+## Edit the EIP20 Token Name
 
 At the top of the `EIP20.sol` token contract, the constructor function defined inputs for:
 Initial amount, token name, decimal unit, and token symbol.

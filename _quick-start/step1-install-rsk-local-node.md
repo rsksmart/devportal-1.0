@@ -115,7 +115,8 @@ The output checksum should match the checksum seen on the releases page.
 
 For more information about verifying that your copy is legitimate,
 including signature verification, check out the
-[full instructions](/rsk/node/security-chain/ "Verify authenticity of RskJ source code and its binary dependencies")
+[full instructions](/rsk/node/security-chain/
+"Verify authenticity of RskJ source code and its binary dependencies")
 on how to do this.
 
 ### Run
@@ -127,7 +128,7 @@ java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtes
 
 ```
 
-(Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
+(Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file).
 
 > Example:
 >
@@ -184,10 +185,12 @@ The response should look similar to this:
 The `result` property is the number of the latest block that has been synced. Note that this value (`0x2991b`) is the block number in hexadecimal (base 16), so the output above indicates that the current block number is `170267` in decimal (base 10).
 
 * To get more information about this process:
-  Check out [set up RSKj with Java](/rsk/node/install/java/).
+  Check out
+  [set up RSKj with Java](/rsk/node/install/java/).
 * If you encounter any problems, check if your system meets the
   [minimum requirements](/rsk/node/install/requirements/).
-* There are other ways to install an RSK node, in other supported platforms:
+* There are other ways to install an RSK node,
+  on other supported platforms:
   Check out [installing RSKj](/rsk/node/install/).
 
 > Note: You can enter any other valid JSON-RPC commands as the `POST` body.
