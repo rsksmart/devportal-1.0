@@ -10,8 +10,6 @@ RSK's virtual machine implementation is compatible with the Ethereum virtual mac
 In this tutorial I will show you step-by-step how to use the Ethereum client Geth to attach to an RSK local node (which is called regtest) and run a few JSON-RPC commands.
 We do this to establish that the local node is running.
 
-A step-by-step tutorial for Mac users can be found [here](/tutorials/ethereum-devs/geth-attach-local-node-mac/)
-
 ## Overview
 
 We will do these steps:
@@ -25,9 +23,9 @@ We will do these steps:
 
 ## Webinar
 
-We have run a
+Check out the
 [webinar](/webinars/#event-id-202004-001 "Run your own local RSK node with Geth attached")
-in which we run through this tutorial:
+version of this tutorial:
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/apcD6bcSWpw?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -37,7 +35,7 @@ The same webinar is also available in
 [Español](https://www.youtube.com/watch?v=1Zs2m5z_S9g)
 and [Português](https://www.youtube.com/watch?v=z5AiHy0mC8U).
 
-Check out our [other webinars](/webinars).
+Also check out our [other webinars](/webinars).
 
 ## Requirements
 
@@ -57,6 +55,20 @@ Go to [Java Download](https://www.java.com/en/download/) if you need to install 
 
 ![Java Download](/assets/img/tutorials/geth-attach-local-node/image-01.png)
 
+For MacOS and Linux Users:
+
+You could install Java using shell commands via SDKman:
+
+```shell
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk list java  | grep "8\." to get a filtered list of available java versions
+sdk install java 8.0.242.j9-adpt
+sdk install java 11.0.6.j9-adpt
+sdk use java 8.0.242.j9-adpt
+java -version
+```
+
 ### Installing RSK local Node
 
 There are several different ways to set up a RSK node. Here we will download and run a JAR file, and run it using the Java SDK that has been installed.
@@ -65,12 +77,34 @@ There are several different ways to set up a RSK node. Here we will download and
 
 Go to the [releases page](https://github.com/rsksmart/rskj/releases) and click on the most recent to download it.
 
-You need to click on the JAR file, in the end of the post about the lastest release.
+You need to click on the JAR file, in the end of the post about the latest release.
 It's name should be `rskj-core-*.jar`:
 
-![Download last RSK release](/assets/img/tutorials/geth-attach-local-node/image-02.png)
+![Download latest RSK release](/assets/img/tutorials/geth-attach-local-node/image-02.png)
 
-#### Run
+Alternatively, you could download and run the file from bash using the commands below:
+
+```shell
+cd ~/code/rsk
+mkdir rskj-node
+cd rskj-node
+curl \
+  -L \
+  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/rskj-core-2.0.1-PAPYRUS-all.jar \
+  > ./rskj-core-2.0.1-PAPYRUS-all.jar
+curl \
+  -L \
+  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/SHA256SUMS.asc \
+  > ./rskj-core-2.0.1-PAPYRUS-all.SHA256SUMS.asc
+shasum rskj-core-2.0.1-PAPYRUS-all.jar
+grep "rskj-core" rskj-core-2.0.1-PAPYRUS-all.SHA256SUMS.asc
+```
+
+The curl commands download a binary which is the RSKj executable, as well as a plain text file containing the checksum for the JAR file. The subsequent `shasum` (or `sha256sum` depending on your *NIX variety), and `grep` are used to verify that the checksum recorded as part of the release process does indeed match the computed checksum of the file that was downloaded.
+
+Note that verifying the checksum is not the only form of verification of the RSKj binary. There are [more detailed instructions](/rsk/node/security-chain/ "Verify authenticity of RSKj source code and its binary dependencies") available on how to do this.
+
+#### Run RSKj
 
 To run the node:
 
@@ -79,6 +113,9 @@ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 ```
 
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
+
+> For Mac users run `pwd` on current working directory on bash, to locate the full path.
+
 
 I am using a Windows OS and I saved the file at `C:\RSK\node`,
 so for me the full path is `C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar`.
@@ -103,7 +140,7 @@ If you do not have any output after running the command, this usually means that
 
 **Important:**
 
-> Do not close this terminal / console window. The node is running here, and if you close, you will stop it.
+Do not close this terminal/console window. The node is running here, and if closed will stop the running node.
 
 ### Check if the node is running using cURL
 
@@ -142,9 +179,28 @@ Do the installation with all default options.
 
 ![Geth install](/assets/img/tutorials/geth-attach-local-node/image-05.png)
 
+Alternatively, on MacOS and Linux, enter the commands below on bash to install geth:
+
+```shell
+mkdir -p ~/code/ethereum/geth-node
+cd ~/code/ethereum/geth-node
+curl \
+  -L \
+  https://gethstore.blob.core.windows.net/builds/geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
+  > geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
+
+tar -xf geth-alltools-darwin-amd64-1.9.12-b6f1c8dc.tar.gz
+
+cd geth-alltools-darwin-amd64-1.9.12-b6f1c8dc
+
+ls -l
+
+./geth version
+```
+
 > This tutorial was made using version 1.9.12, I recommend using this version.
 
-At terminal, run this command to check the version, if it runs and returns a version, it is ok:
+In the terminal, run this command to check the version, if it runs and returns a version, this means `geth` was installed successfully:
 
 ```shell
 geth version
@@ -157,7 +213,7 @@ In this link, you have more information about how to install Geth:
 
 ## Geth attach
 
-This procedure is only for a node running in your machine or any in a network that you are allowed. Geth attach gives you full control of the remote instance, so do not expect someone else to  give you such access to their machine.
+This procedure is only for a node running in your machine or in a network that you have access to. Geth attach gives you full control of the remote instance, so do not expect someone else to  give you such access to their machine.
 
 ```shell
 geth attach http://127.0.0.1:4444
@@ -373,7 +429,7 @@ exit
 
 ## Final considerations
 
-Did you think that it would be so easy to use Geth, an Ethereum client, to interact with an RSK local node?
+Hope it was easy for you to use Geth, an Ethereum client, to interact with an RSK local node.
 
 We can do more things using Geth, such as [deploy a smart contract at RSK local node using Geth and Remix](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/).
 
