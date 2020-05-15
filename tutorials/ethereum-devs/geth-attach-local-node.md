@@ -55,7 +55,7 @@ Go to [Java Download](https://www.java.com/en/download/) if you need to install 
 
 ![Java Download](/assets/img/tutorials/geth-attach-local-node/image-01.png)
 
-For MacOS and Linux Users:
+For Linux and Mac users:
 
 You could install Java using shell commands via SDKman:
 
@@ -77,7 +77,7 @@ There are several different ways to set up a RSK node. Here we will download and
 
 Go to the [releases page](https://github.com/rsksmart/rskj/releases) and click on the most recent to download it.
 
-You need to click on the JAR file, in the end of the post about the latest release.
+You need to click on the link for the JAR file, at the bottom of the post about the latest release.
 It's name should be `rskj-core-*.jar`:
 
 ![Download latest RSK release](/assets/img/tutorials/geth-attach-local-node/image-02.png)
@@ -114,7 +114,7 @@ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
 
-> For Mac users run `pwd` on current working directory on bash, to locate the full path.
+> For Linux and Mac users run `pwd` on current working directory on bash, to locate the full path.
 
 
 I am using a Windows OS and I saved the file at `C:\RSK\node`,
@@ -140,7 +140,7 @@ If you do not have any output after running the command, this usually means that
 
 **Important:**
 
-Do not close this terminal/console window. The node is running here, and if closed will stop the running node.
+Do not close this terminal window. If closed, the RSK node running here will stop.
 
 ### Check if the node is running using cURL
 
