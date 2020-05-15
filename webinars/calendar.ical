@@ -1457,4 +1457,231 @@ STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200505T193300Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202005-008@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200512T203000Z
+DTSTART:20200512T203000Z
+SUMMARY:IOVlabs at Foundations - Consensus 2020 
+DESCRIPTION:IOVlabs at Foundations - Consensus 2020\n\nOnline only\n\nRSVP
+ : https://next.brella.io/events/consensusdistributed/schedule/118437\n\nVi
+ deo stream: https://next.brella.io/events/consensusdistributed/schedule/11
+ 8437\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>IOVlabs
+  at Foundations - Consensus 2020</span></div>\n<div><span>Online only</spa
+ n></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://next.brella.io/e
+ vents/consensusdistributed/schedule/118437\">next.brella.io/events/consens
+ usdistributed/schedule/118437</a></span></div>\n<div><b>Video stream &nbsp
+ \;</b><span><a href=\"https://next.brella.io/events/consensusdistributed/s
+ chedule/118437\">next.brella.io/events/consensusdistributed/schedule/11843
+ 7</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Diego Gutierrez Zaldivar\, CEO\, @dieguito":mailto:developer
+ s@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:IOVlabs at Foundations - Consensus 2020 
+END:VALARM
+CATEGORIES:Conference
+URL;VALUE=URI:https://next.brella.io/events/consensusdistributed/schedule/
+ 118437
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200515T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-009@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200513T183000Z
+DTSTART:20200513T183000Z
+SUMMARY:RIF: the building blocks of a truly decentralized Internet - Conse
+ nsus 2020 
+DESCRIPTION:RIF: the building blocks of a truly decentralized Internet - C
+ onsensus 2020\n\nOnline only\n\nRSVP: https://next.brella.io/events/consen
+ susdistributed/schedule/118604\n\nVideo stream: https://next.brella.io/eve
+ nts/consensusdistributed/schedule/118604\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF: th
+ e building blocks of a truly decentralized Internet - Consensus 2020</span
+ ></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><spa
+ n><a href=\"https://next.brella.io/events/consensusdistributed/schedule/11
+ 8604\">next.brella.io/events/consensusdistributed/schedule/118604</a></spa
+ n></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://next.bre
+ lla.io/events/consensusdistributed/schedule/118604\">next.brella.io/events
+ /consensusdistributed/schedule/118604</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Gabriel Kurman\, RIF Strategist\, @GabrielKurman":mailto:dev
+ elopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RIF: the building blocks of a truly decentralized Internet - C
+ onsensus 2020 
+END:VALARM
+CATEGORIES:Conference
+URL;VALUE=URI:https://next.brella.io/events/consensusdistributed/schedule/
+ 118604
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200515T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200518T170000Z
+DTSTART:20200518T170000Z
+SUMMARY:RSK - Ethereum Token Bridge 
+DESCRIPTION:RSK - Ethereum Token Bridge\n\nOnline only\n\nRSVP: https://ww
+ w.meetup.com/es-ES/rsk-community/events/270653530/\n\nVideo stream: https:
+ //app.livestorm.co/iov-labs-1/ethereum-bridge\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK - E
+ thereum Token Bridge</span></div>\n<div><span>Online only</span></div>\n<d
+ iv><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-com
+ munity/events/270653530/\">www.meetup.com/es-ES/rsk-community/events/27065
+ 3530/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"ht
+ tps://app.livestorm.co/iov-labs-1/ethereum-bridge\">app.livestorm.co/iov-l
+ abs-1/ethereum-bridge</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Pedro Prete\, Interoperability PO\, @PedroMPrete":mailto:dev
+ elopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK - Ethereum Token Bridge 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270653530/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200515T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-011@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200518T210000Z
+DTSTART:20200518T210000Z
+SUMMARY:RSK - Ethereum Token Bridge 
+DESCRIPTION:RSK - Ethereum Token Bridge\n\nOnline only\n\nRSVP: https://ww
+ w.meetup.com/es-ES/RSKBuenosAires/events/270653808/\n\nVideo stream: https
+ ://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK - E
+ thereum Token Bridge</span></div>\n<div><span>Online only</span></div>\n<d
+ iv><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuen
+ osAires/events/270653808/\">www.meetup.com/es-ES/RSKBuenosAires/events/270
+ 653808/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"
+ https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol\"
+ >app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol</a></spa
+ n></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Pedro Prete\, Interoperability PO\, @PedroMPrete":mailto:dev
+ elopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK - Ethereum Token Bridge 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270653808
+ /
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200515T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-012@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200520T170000Z
+DTSTART:20200520T170000Z
+SUMMARY:From Bitcoin Mining to RSK Merged Mining 
+DESCRIPTION:From Bitcoin Mining to RSK Merged Mining\n\nOnline only\n\nRSV
+ P: https://www.meetup.com/es-ES/rsk-community/events/270656095/\n\nVideo s
+ tream: https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merg
+ ed-mining\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>From Bi
+ tcoin Mining to RSK Merged Mining</span></div>\n<div><span>Online only</sp
+ an></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/
+ es-ES/rsk-community/events/270656095/\">www.meetup.com/es-ES/rsk-community
+ /events/270656095/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span
+ ><a href=\"https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-
+ merged-mining\">app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-mer
+ ged-mining</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Martin Medina\, Mining Lead\, @ThisIsTincho":mailto:develope
+ rs@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:From Bitcoin Mining to RSK Merged Mining 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270656095/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200515T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-013@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200520T210000Z
+DTSTART:20200520T210000Z
+SUMMARY:De Minería de Bitcoin a Merged Mining sobre RSK 
+DESCRIPTION:De Minería de Bitcoin a Merged Mining sobre RSK\n\nOnline only
+ \n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/270655653/\n\
+ nVideo stream: https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a
+ -merged-mining\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>De Mine
+ ría de Bitcoin a Merged Mining sobre RSK</span></div>\n<div><span>Online o
+ nly</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meet
+ up.com/es-ES/RSKBuenosAires/events/270655653/\">www.meetup.com/es-ES/RSKBu
+ enosAires/events/270655653/</a></span></div>\n<div><b>Video stream &nbsp\;
+ </b><span><a href=\"https://app.livestorm.co/iov-labs-1/de-mineria-de-bitc
+ oin-a-merged-mining\">app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-
+ merged-mining</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Martin Medina\, Mining Lead\, @ThisIsTincho":mailto:develope
+ rs@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:De Minería de Bitcoin a Merged Mining sobre RSK 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270655653
+ /
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200515T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-014@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200522T220000Z
+DTSTART:20200522T220000Z
+SUMMARY:Why we need Decentralized Storage and Communications 
+DESCRIPTION:Why we need Decentralized Storage and Communications\n\nOnline
+  only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/270662407
+ /\n\nVideo stream: https://app.livestorm.co/iov-labs-1/why-we-need-decentr
+ alized-storage\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Why we 
+ need Decentralized Storage and Communications</span></div>\n<div><span>Onl
+ ine only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www
+ .meetup.com/es-ES/rsk-community/events/270662407/\">www.meetup.com/es-ES/r
+ sk-community/events/270662407/</a></span></div>\n<div><b>Video stream &nbs
+ p\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/why-we-need-dec
+ entralized-storage\">app.livestorm.co/iov-labs-1/why-we-need-decentralized
+ -storage</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Vojtech Simetka\, Storage and Communication PO\, @vojtechsim
+ etka":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Why we need Decentralized Storage and Communications 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270662407/
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200515T091500Z
+END:VEVENT
 END:VCALENDAR
