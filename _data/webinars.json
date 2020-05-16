@@ -23,7 +23,8 @@
       "tags": " idioma-english audiencia-general",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/g2UZa7pJ7cI"
+      "recordedVideoUrl": "https://youtu.be/g2UZa7pJ7cI",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -57,7 +58,8 @@
           "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/-pJahYxJ4ms"
+      "recordedVideoUrl": "https://youtu.be/-pJahYxJ4ms",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -87,7 +89,8 @@
           "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/TyKkkwF1PdM"
+      "recordedVideoUrl": "https://youtu.be/TyKkkwF1PdM",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -121,7 +124,8 @@
           "url": "https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/45ii2vFLKJc"
+      "recordedVideoUrl": "https://youtu.be/45ii2vFLKJc",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -146,7 +150,8 @@
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/2emqQlK4Glw"
+      "recordedVideoUrl": "https://youtu.be/2emqQlK4Glw",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -171,7 +176,8 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event12.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/mFaieJnJ7RA"
+      "recordedVideoUrl": "https://youtu.be/mFaieJnJ7RA",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -201,7 +207,8 @@
           "url": "https://docs.google.com/presentation/d/e/2PACX-1vR5ykBL7yfq5ZE25EFs1ogvPCs8dqsdk0xldPnR13JiB5dOnJSPaPvEy6ilILIG8a3MeKDzAROsT7Xw/pub?start=false&loop=false&delayms=600000"
         }
       ],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=k6w_XN7qygE"
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=k6w_XN7qygE",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -226,7 +233,8 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event7.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7"
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -264,7 +272,8 @@
           "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-local-node/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/apcD6bcSWpw"
+      "recordedVideoUrl": "https://youtu.be/apcD6bcSWpw",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -306,7 +315,8 @@
           "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/z5AiHy0mC8U"
+      "recordedVideoUrl": "https://youtu.be/z5AiHy0mC8U",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -336,7 +346,8 @@
           "url": "https://developers.rsk.co/tutorials/ethereum-devs/geth-attach-local-node/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/1Zs2m5z_S9g"
+      "recordedVideoUrl": "https://youtu.be/1Zs2m5z_S9g",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -361,7 +372,8 @@
       "tags": " idioma-english audiencia-general",
       "image": "img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/lxrBOdcSQfo"
+      "recordedVideoUrl": "https://youtu.be/lxrBOdcSQfo",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -386,7 +398,8 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/WzheOfMretc"
+      "recordedVideoUrl": "https://youtu.be/WzheOfMretc",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -411,7 +424,8 @@
       "tags": " idioma-english audiencia-general",
       "image": "img/events/event8.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/EBjrvm_5IoE"
+      "recordedVideoUrl": "https://youtu.be/EBjrvm_5IoE",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -436,7 +450,8 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/573jdX0TCZE"
+      "recordedVideoUrl": "https://youtu.be/573jdX0TCZE",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -461,7 +476,8 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event10.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/8yxo4-fu1H0"
+      "recordedVideoUrl": "https://youtu.be/8yxo4-fu1H0",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -486,7 +502,8 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -511,7 +528,8 @@
       "tags": " idioma-english audiencia-developers",
       "image": "img/events/event12.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -536,7 +554,8 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event7.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -561,7 +580,8 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/68AMoiQfgEE"
+      "recordedVideoUrl": "https://youtu.be/68AMoiQfgEE",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -599,7 +619,8 @@
           "url": "https://dappsdev.org/hands-on/solidity-intro/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/AXAqwreIQgQ"
+      "recordedVideoUrl": "https://youtu.be/AXAqwreIQgQ",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -629,7 +650,8 @@
           "url": "https://docs.google.com/presentation/d/e/2PACX-1vSR3C6irA_Wty7jI1a2CmsUAmv8BC2OP8eawwntAOrL6pdjM35vAQGZf9kfhwpjTC8YArjPY-H89pQy/pub?start=false&loop=false&delayms=3000"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/9MLAykZ0U4Q"
+      "recordedVideoUrl": "https://youtu.be/9MLAykZ0U4Q",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -659,7 +681,8 @@
           "url": "https://docs.google.com/presentation/d/1SVeyzllyeq_gTVWsr5umXx6EechFXnGvjI2o7ACP0Lk/edit?usp=sharing"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/XzNcAcMAZXE"
+      "recordedVideoUrl": "https://youtu.be/XzNcAcMAZXE",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -689,7 +712,8 @@
           "url": "https://docs.google.com/presentation/d/1MpCe8A4hxaF8f2ppQscIqWxPVwN_fW7Z4a1-SH9A2l4/edit?usp=sharing"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/tvXEM1IExI8"
+      "recordedVideoUrl": "https://youtu.be/tvXEM1IExI8",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -723,7 +747,8 @@
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/bm1dJyxe1mc"
+      "recordedVideoUrl": "https://youtu.be/bm1dJyxe1mc",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -761,7 +786,8 @@
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
       ],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=E2kTSLFHPgk"
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=E2kTSLFHPgk",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -786,7 +812,8 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -824,7 +851,8 @@
           "url": "https://github.com/rsksmart/webinar-primer-frontend"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/CoO9k1LYO04"
+      "recordedVideoUrl": "https://youtu.be/CoO9k1LYO04",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -866,7 +894,8 @@
           "url": "https://developers.rsk.co/tutorials/tokens/create-a-token/"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -900,7 +929,8 @@
           "url": "https://developers.rsk.co/tutorials/tokens/create-a-token/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/3O9emzzLt-Y"
+      "recordedVideoUrl": "https://youtu.be/3O9emzzLt-Y",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -930,7 +960,8 @@
           "url": "https://developers.rsk.co/tutorials/tokens/create-a-token/"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -952,7 +983,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes",
-      "tags": " idioma-english audiencia-developers",
+      "tags": " idioma-english audiencia-developers recent",
       "image": "img/events/event2.jpg",
       "resources": [
         {
@@ -968,7 +999,8 @@
           "url": "https://github.com/bguiz/workshop-rsk-truffle-box-bguiz"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -990,7 +1022,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-box-com-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
+      "tags": " idioma-portuguese audiencia-developers recent",
       "image": "img/events/event9.jpg",
       "resources": [
         {
@@ -1002,7 +1034,8 @@
           "url": "https://github.com/bguiz/workshop-rsk-truffle-box-bguiz"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/5W4jhPJh9-c"
+      "recordedVideoUrl": "https://youtu.be/5W4jhPJh9-c",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1024,7 +1057,7 @@
       "presenterDescription": "Devoloper Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk",
-      "tags": " idioma-spanish audiencia-developers",
+      "tags": " idioma-spanish audiencia-developers recent",
       "image": "img/events/event4.jpg",
       "resources": [
         {
@@ -1036,7 +1069,8 @@
           "url": "https://github.com/bguiz/workshop-rsk-truffle-box-bguiz"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1074,7 +1108,8 @@
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1099,7 +1134,8 @@
       "tags": " idioma-english audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1124,7 +1160,8 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event10.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1150,7 +1187,8 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1175,7 +1213,8 @@
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "img/events/event12.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1197,7 +1236,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-create-your-own-collectable-token",
-      "tags": " idioma-english audiencia-developers",
+      "tags": " idioma-english audiencia-developers recent",
       "image": "img/events/event11.jpg",
       "resources": [
         {
@@ -1213,7 +1252,8 @@
           "url": "https://docs.google.com/presentation/d/e/2PACX-1vQDr0B_K2HZXMV_y-pFK7HwSbXmKDcuxTeZoxyqcs7D1SxvHOHyMgfHbtUxjLpoUYUwxs6Adk42qqAj/pub?start=false&loop=false&delayms=600000"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1235,7 +1275,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-criar-seu-token-colecionavel",
-      "tags": " idioma-portuguese audiencia-developers",
+      "tags": " idioma-portuguese audiencia-developers recent",
       "image": "img/events/event6.jpg",
       "resources": [
         {
@@ -1255,7 +1295,8 @@
           "url": "https://developers.rsk.co/tutorials/tokens/create-a-collectable-token/"
         }
       ],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1277,10 +1318,11 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/crea-tu-propio-non-fungible-token",
-      "tags": " idioma-spanish audiencia-developers",
+      "tags": " idioma-spanish audiencia-developers recent",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1302,10 +1344,11 @@
       "presenterDescription": "Founder and Executive Director of BitGive\nSocial Impact Lead",
       "presenterContact": "@conniegallippi\n@agustinfini",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid",
-      "tags": " idioma-english audiencia-enterprise",
+      "tags": " idioma-english audiencia-enterprise recent",
       "image": "img/events/event7.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1327,10 +1370,11 @@
       "presenterDescription": "Director Capital Markets",
       "presenterContact": "@__Santino__",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain",
-      "tags": " idioma-english audiencia-general",
+      "tags": " idioma-english audiencia-general recent",
       "image": "img/events/event2.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1352,10 +1396,11 @@
       "presenterDescription": "Director Capital Markets",
       "presenterContact": "@__Santino__",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol",
-      "tags": " idioma-spanish audiencia-general",
+      "tags": " idioma-spanish audiencia-general recent",
       "image": "img/events/event9.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1378,10 +1423,11 @@
       "presenterDescription": "CMO",
       "presenterContact": "@gloriavailati",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif",
-      "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
       "image": "img/events/event4.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1404,10 +1450,11 @@
       "presenterDescription": "CEO\nCTF Capital Managing Partner\nRIF Strategist",
       "presenterContact": "@dieguito\n@BrianPrilick\n@GabrielKurman",
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118437",
-      "tags": " idioma-english audiencia-startups audiencia-enterprise",
+      "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
       "image": "img/events/event11.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov"
+      "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1430,10 +1477,11 @@
       "presenterDescription": "RIF Strategist\nStorage and Communications PO\nPayments and Tools PO\nDirectory PO\nMarketplace PO",
       "presenterContact": "@GabrielKurman\n@vojtechsimetka\n@anarancio\n@miltonberman\n@julianmrodri_",
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118604",
-      "tags": " idioma-english audiencia-startups audiencia-enterprise",
+      "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
       "image": "img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1459,7 +1507,8 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": false
     },
     {
       "type": "event/2",
@@ -1485,7 +1534,8 @@
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "img/events/event8.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": false
     },
     {
       "type": "event/2",
@@ -1511,7 +1561,8 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": false
     },
     {
       "type": "event/2",
@@ -1537,7 +1588,8 @@
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "img/events/event10.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": false
     },
     {
       "type": "event/2",
@@ -1563,7 +1615,8 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": ""
+      "recordedVideoUrl": "",
+      "_isPast": false
     }
   ]
 }
