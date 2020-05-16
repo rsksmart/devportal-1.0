@@ -29,19 +29,18 @@ csvConverter
   .fromFile('./_data/rsk-published-events.csv')
   .subscribe((item, itemIndex) => {
     item.type = 'event/2';
-    item.audiences =
-      (item.audiences || 'general developers enterprise startups')
+    item.audiences = (
+      item.audiences || 'general developers enterprise startups'
+    )
       .toLowerCase()
       .split(/\s+/);
     item.tags =
       (item.tags || '') +
       ` idioma-${item.language.toLowerCase()} ` +
-      item.audiences
-        .map((audience) => (`audiencia-${audience}`))
-        .join(' ');
+      item.audiences.map((audience) => `audiencia-${audience}`).join(' ');
     if (!item.image) {
-      // rotate between the 12  available generic images
-      const imageIndex = (((itemIndex % 2) * 6) + itemIndex) % 12 + 1;
+      // rotate between the 12 available generic images
+      const imageIndex = (((itemIndex % 2) * 6 + itemIndex) % 12) + 1;
       item.image = `img/events/event${imageIndex}.jpg`;
     }
   })
@@ -51,18 +50,19 @@ csvConverter
     }
   })
   .then(async (list) => {
-    const nowTimestamp = (new Date()).toISOString();
+    const nowTimestamp = new Date().toISOString();
     let mostRecentEvent = {
       timestamp: '1970-12-31T00:00:00.000Z', // sentinel
     };
     let recentIndex = 0;
     list.forEach((event) => {
-      if (event.timestamp < nowTimestamp && event.timestamp > mostRecentEvent.timestamp) {
+      if (
+        event.timestamp < nowTimestamp &&
+        event.timestamp > mostRecentEvent.timestamp
+      ) {
         mostRecentEvent = event;
       }
     });
-    console.log('mostRecentEvent.timestamp');
-    console.log(mostRecentEvent.timestamp);
 
     const sortedList = list
       .sort((eventA, eventB) => {
@@ -73,7 +73,8 @@ csvConverter
         } else {
           return 0;
         }
-      }).map((event) => {
+      })
+      .map((event) => {
         if (recentIndex >= recentCount) {
           return event;
         } else if (event.timestamp <= mostRecentEvent.timestamp) {
