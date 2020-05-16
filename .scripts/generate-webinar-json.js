@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const csvToJson = require('csvtojson');
 
-const jsonPath = './_data/webinars.json';
+const jsonPathAll = './_data/webinars.json';
 
 const csvConverter = csvToJson({
   flatKeys: true,
@@ -49,7 +49,7 @@ csvConverter
       console.error(error);
     }
   })
-  .then((list) => {
+  .then(async (list) => {
     const sortedList = list
       .sort((eventA, eventB) => {
         // Order by lexical order of primary key, and a fallback on date time.
@@ -68,6 +68,8 @@ csvConverter
         }
       })
       .map((event) => {
+        const nowTimestamp = (new Date()).toISOString();
+        const _isPast = event.timestamp < nowTimestamp;
         // Stabilise object key order (where implementation allows for it).
         const {
           type,
@@ -116,17 +118,14 @@ csvConverter
           resources,
           recordedVideoUrl,
           ...rest,
+          _isPast,
         };
       });
     const json = { events: sortedList };
     const jsonStr = JSON.stringify(json, undefined, 2) + '\n';
-    fs.writeFile(jsonPath, jsonStr, (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log(`JSON output successfully: ${jsonPath}`);
-      }
-    });
+    await fs.promises.writeFile(jsonPathAll, jsonStr);
+    console.log(`JSON output successfully: ${jsonPathAll}`);
+    return sortedList;
   });
 
 function timestampColumnParser(item) {
