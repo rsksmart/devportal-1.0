@@ -78,9 +78,9 @@ var $grid = $('.grid').isotope({
   itemSelector: '.eventos'
 });
 
-//no filters applyied by default
+// filters applied by default
 var $grid = $('.grid').isotope({
-  filter: '.none'
+  filter: '.recent'
 });
 
 // store filter for each group

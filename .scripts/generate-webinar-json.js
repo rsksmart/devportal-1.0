@@ -5,6 +5,7 @@ const fs = require('fs');
 const csvToJson = require('csvtojson');
 
 const jsonPathAll = './_data/webinars.json';
+const recentCount = 12;
 
 const csvConverter = csvToJson({
   flatKeys: true,
@@ -50,7 +51,42 @@ csvConverter
     }
   })
   .then(async (list) => {
+    const nowTimestamp = (new Date()).toISOString();
+    let mostRecentEvent = {
+      timestamp: '1970-12-31T00:00:00.000Z', // sentinel
+    };
+    let recentIndex = 0;
+    list.forEach((event) => {
+      if (event.timestamp < nowTimestamp && event.timestamp > mostRecentEvent.timestamp) {
+        mostRecentEvent = event;
+      }
+    });
+    console.log('mostRecentEvent.timestamp');
+    console.log(mostRecentEvent.timestamp);
+
     const sortedList = list
+      .sort((eventA, eventB) => {
+        if (eventA.timestamp < eventB.timestamp) {
+          return 1;
+        } else if (eventA.timestamp > eventB.timestamp) {
+          return -1;
+        } else {
+          return 0;
+        }
+      }).map((event) => {
+        if (recentIndex >= recentCount) {
+          return event;
+        } else if (event.timestamp <= mostRecentEvent.timestamp) {
+          const updatedEvent = {
+            ...event,
+            tags: `${event.tags} recent`,
+          };
+          ++recentIndex;
+          return updatedEvent;
+        } else {
+          return event;
+        }
+      })
       .sort((eventA, eventB) => {
         // Order by lexical order of primary key, and a fallback on date time.
         // Fallback should, under normal circumstances, never be needed,
@@ -68,7 +104,6 @@ csvConverter
         }
       })
       .map((event) => {
-        const nowTimestamp = (new Date()).toISOString();
         const _isPast = event.timestamp < nowTimestamp;
         // Stabilise object key order (where implementation allows for it).
         const {
