@@ -983,7 +983,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event2.jpg",
       "resources": [
         {
@@ -1022,7 +1022,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-box-com-rsk",
-      "tags": " idioma-portuguese audiencia-developers recent",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event9.jpg",
       "resources": [
         {
@@ -1617,6 +1617,60 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202005-015",
+      "version": "1",
+      "timestamp": "2020-05-11T09:45:00.000Z",
+      "lastModified": "2020-05-17T09:15:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Demo: Bitcoin Halving Livestream 2020",
+      "category": "Demo",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenter": "Alejandro Banzas",
+      "presenterDescription": "Head of Developers Relations",
+      "presenterContact": "@alebanzas",
+      "videoStreamUrl": "",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "image": "img/events/event12.jpg",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/5qy3aAnhCwc",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202005-016",
+      "version": "1",
+      "timestamp": "2020-05-11T09:45:00.000Z",
+      "lastModified": "2020-05-17T09:15:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Moneyonchain a Stablecion descentralizada baseada no Bitcoin. Tudo sobre o MoC, DoC, Bpro e BTCx",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "enterprise",
+        "general"
+      ],
+      "presenter": "Solange Gueiros",
+      "presenterDescription": "Developer Advocate",
+      "presenterContact": "@solangegueiros",
+      "videoStreamUrl": "",
+      "tags": " idioma-portuguese audiencia-enterprise audiencia-general recent",
+      "image": "img/events/event7.jpg",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/iXaKY7Nn4L4",
+      "_isPast": true
     }
   ]
 }
