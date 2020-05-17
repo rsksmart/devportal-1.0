@@ -103,7 +103,9 @@
 
       <!-- Calendar -->
       {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-      {% assign events = (site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'" | sort: 'timestamp') %}
+      {% assign events = (site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'") %}
+      {% assign past_events = (events | where_exp: "event", "event._isPast == true" | sort: 'timestamp' | reverse) %}
+      {% assign future_events = (events | where_exp: "event", "event._isPast == false" | sort: 'timestamp') %}
 
       <section id="calendar">
          <img class="circle-blue" src="img/circles/circle-blue.png">
@@ -118,9 +120,7 @@
                <!-- Event grid -->
                <div class="grid-nofilters">
                   <div class="row">
-               {% for event in events %}
-                  {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
-                  {% if timestamp > now %}
+               {% for event in future_events %}
                   <!-- Event -->
 
                   <div
@@ -174,7 +174,6 @@
                   </div>
 
                   <!-- /Event -->
-                  {% endif %}
                {% endfor %}
                   </div>
                </div>
@@ -243,6 +242,14 @@
                <div class="col">
                   <div class="filters">
                      <div class="ui-group">
+                        <h3 class="title-sm">Recent</h3>
+                        <select class="filter-select" value-group="language">
+                           <option disabled="disabled">Select Recency</option>
+                           <option value="">All</option>
+                           <option value=".recent" selected="true">Most recent only</option>
+                        </select>
+                     </div>
+                     <div class="ui-group">
                         <h3 class="title-sm">Language</h3>
                         <select class="filter-select" value-group="language">
                            <option selected="true" disabled="disabled">Select Language</option>
@@ -271,9 +278,7 @@
                <!-- Past event grid -->
                <div class="grid">
                   <div class="row">
-               {% for event in events %}
-                  {% capture timestamp %}{{ event.timestamp | date: '%s' | plus: 0 %}}{% endcapture %}
-                  {% if timestamp <= now %}
+               {% for event in past_events %}
                   <!-- Past event -->
 
                   <div
@@ -345,7 +350,6 @@
                   </div>
 
                   <!-- /Past event -->
-                  {% endif %}
                {% endfor %}
                   </div>
                </div>

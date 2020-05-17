@@ -31,17 +31,15 @@ const icalPrefix = `---\npermalink: ${calendarPermalink}\n---\n`;
 const icalSuffix = '\n';
 const icalPath = './webinars/calendar.ical';
 
-fs.writeFile(
-  icalPath,
-  icalPrefix + ical.toString() + icalSuffix,
-  function (err) {
-    if (err) {
-      throw err;
-    } else {
-      console.log(`iCal output successfully: ${icalPath}`);
-    }
-  },
-);
+fs.writeFile(icalPath, icalPrefix + ical.toString() + icalSuffix, function (
+  err,
+) {
+  if (err) {
+    throw err;
+  } else {
+    console.log(`iCal output successfully: ${icalPath}`);
+  }
+});
 
 function processEvent(event) {
   switch (event.type) {
@@ -82,37 +80,31 @@ function processEventV2(event) {
   ];
 
   if (status !== 'cancelled') {
-    descriptionItems.push(
-      ['RSVP', `${url}`],
-    );
-    descriptionItems.push(
-      ['Video stream', `${videoStreamUrl}`],
-    );
+    descriptionItems.push(['RSVP', `${url}`]);
+    descriptionItems.push(['Video stream', `${videoStreamUrl}`]);
   } else {
-    descriptionItems.push(
-      ['Cancelled, see webinars page for more details', calendarUrl],
-    );
+    descriptionItems.push([
+      'Cancelled, see webinars page for more details',
+      calendarUrl,
+    ]);
   }
 
   const description =
-    descriptionItems.map((item) => {
-      const heading = (!item[0]) ?
-        '' :
-        `${item[0]}: `;
-      return heading + item[1];
-    }).join('\n\n') + '\n';
+    descriptionItems
+      .map((item) => {
+        const heading = !item[0] ? '' : `${item[0]}: `;
+        return heading + item[1];
+      })
+      .join('\n\n') + '\n';
 
-  let htmlDescriptionBody = descriptionItems.map((item) => {
-    const heading = (!item[0]) ?
-      '' :
-      `<b>${item[0]} &nbsp;</b>`;
-    const value = anchorLinkIfUrl(item[1]);
-    return `<div>${heading}<span>${value}</span></div>`;
-  }).join('\n');
-  const htmlDescription =
-    `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY>${
-      htmlDescriptionBody
-    }\n</BODY>\n</HTML>`;
+  let htmlDescriptionBody = descriptionItems
+    .map((item) => {
+      const heading = !item[0] ? '' : `<b>${item[0]} &nbsp;</b>`;
+      const value = anchorLinkIfUrl(item[1]);
+      return `<div>${heading}<span>${value}</span></div>`;
+    })
+    .join('\n');
+  const htmlDescription = `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY>${htmlDescriptionBody}\n</BODY>\n</HTML>`;
 
   const alarms = [
     {
@@ -147,16 +139,13 @@ function processEventV1(event) {
   const timestampDate = new Date(timestamp);
   const lastModifiedDate = new Date(lastModified);
 
-  const renderedLocation = (locationCategory === 'online') ?
-    undefined :
-    location;
+  const renderedLocation = locationCategory === 'online' ? undefined : location;
 
   // if status is not one of the allowed values, default to 'confirmed'
-  const renderedStatus = [
-    'confirmed',
-    'tentative',
-    'cancelled',
-  ].indexOf(status) >= 0 ? status : 'confirmed';
+  const renderedStatus =
+    ['confirmed', 'tentative', 'cancelled'].indexOf(status) >= 0
+      ? status
+      : 'confirmed';
 
   return {
     uid: id,
@@ -164,7 +153,7 @@ function processEventV1(event) {
     timestamp: timestampDate,
     lastModified: lastModifiedDate,
     url,
-    summary: ([title, subtitle].join(' ')),
+    summary: [title, subtitle].join(' '),
     location: renderedLocation,
     categories: [
       {

@@ -4,7 +4,8 @@ const fs = require('fs');
 
 const csvToJson = require('csvtojson');
 
-const jsonPath = './_data/webinars.json';
+const jsonPathAll = './_data/webinars.json';
+const recentCount = 12;
 
 const csvConverter = csvToJson({
   flatKeys: true,
@@ -28,19 +29,18 @@ csvConverter
   .fromFile('./_data/rsk-published-events.csv')
   .subscribe((item, itemIndex) => {
     item.type = 'event/2';
-    item.audiences =
-      (item.audiences || 'general developers enterprise startups')
+    item.audiences = (
+      item.audiences || 'general developers enterprise startups'
+    )
       .toLowerCase()
       .split(/\s+/);
     item.tags =
       (item.tags || '') +
       ` idioma-${item.language.toLowerCase()} ` +
-      item.audiences
-        .map((audience) => (`audiencia-${audience}`))
-        .join(' ');
+      item.audiences.map((audience) => `audiencia-${audience}`).join(' ');
     if (!item.image) {
-      // rotate between the 12  available generic images
-      const imageIndex = (((itemIndex % 2) * 6) + itemIndex) % 12 + 1;
+      // rotate between the 12 available generic images
+      const imageIndex = (((itemIndex % 2) * 6 + itemIndex) % 12) + 1;
       item.image = `img/events/event${imageIndex}.jpg`;
     }
   })
@@ -49,8 +49,45 @@ csvConverter
       console.error(error);
     }
   })
-  .then((list) => {
+  .then(async (list) => {
+    const nowTimestamp = new Date().toISOString();
+    let mostRecentEvent = {
+      timestamp: '1970-12-31T00:00:00.000Z', // sentinel
+    };
+    let recentIndex = 0;
+    list.forEach((event) => {
+      if (
+        event.timestamp < nowTimestamp &&
+        event.timestamp > mostRecentEvent.timestamp
+      ) {
+        mostRecentEvent = event;
+      }
+    });
+
     const sortedList = list
+      .sort((eventA, eventB) => {
+        if (eventA.timestamp < eventB.timestamp) {
+          return 1;
+        } else if (eventA.timestamp > eventB.timestamp) {
+          return -1;
+        } else {
+          return 0;
+        }
+      })
+      .map((event) => {
+        if (recentIndex >= recentCount) {
+          return event;
+        } else if (event.timestamp <= mostRecentEvent.timestamp) {
+          const updatedEvent = {
+            ...event,
+            tags: `${event.tags} recent`,
+          };
+          ++recentIndex;
+          return updatedEvent;
+        } else {
+          return event;
+        }
+      })
       .sort((eventA, eventB) => {
         // Order by lexical order of primary key, and a fallback on date time.
         // Fallback should, under normal circumstances, never be needed,
@@ -68,6 +105,7 @@ csvConverter
         }
       })
       .map((event) => {
+        const _isPast = event.timestamp < nowTimestamp;
         // Stabilise object key order (where implementation allows for it).
         const {
           type,
@@ -116,17 +154,14 @@ csvConverter
           resources,
           recordedVideoUrl,
           ...rest,
+          _isPast,
         };
       });
     const json = { events: sortedList };
     const jsonStr = JSON.stringify(json, undefined, 2) + '\n';
-    fs.writeFile(jsonPath, jsonStr, (err) => {
-      if (err) {
-        console.error(err);
-      } else {
-        console.log(`JSON output successfully: ${jsonPath}`);
-      }
-    });
+    await fs.promises.writeFile(jsonPathAll, jsonStr);
+    console.log(`JSON output successfully: ${jsonPathAll}`);
+    return sortedList;
   });
 
 function timestampColumnParser(item) {
