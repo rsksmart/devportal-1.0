@@ -83,7 +83,7 @@ you will need to install it.
 ### Install Java on Windows
 
 Go to the official [Java download](https://www.java.com/en/download/) page,
-and download and run the installer from there.
+download, and run the installer from there.
 
 ![Java Download](/assets/img/tutorials/setup-truffle-oz/image-02.png)
 

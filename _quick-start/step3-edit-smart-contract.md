@@ -90,7 +90,9 @@ module.exports = (deployer) => {
 };
 ```
 
-Now let's change the name to something you like, e.g. Flower Token. We are now ready ready to deploy this contract, which will generate our own 10000 Flower Tokens!
+Now let's change the name to something you like, e.g. Flower Token.
+We are now ready to deploy this contract,
+which will generate 10000 of our own Flower Tokens!
 
 ```javascript
 module.exports = (deployer) => {
