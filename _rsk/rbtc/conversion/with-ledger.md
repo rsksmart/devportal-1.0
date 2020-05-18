@@ -9,16 +9,16 @@ collection_order: 3140
 In this section we will go over the steps of converting BTC to R-BTC using Ledger hardware wallet, and vice versa on the Bitcoin and RSK networks.
 
 - [General requirements](#general-requirements)
-- [Lock: From BTC to R-BTC](#from-btc-to-r-btc)
-- [Release: From R-BTC to BTC](#from-r-btc-to-btc)
+- [BTC to R-BTC conversion](#btc-to-r-btc-conversion)
+- [R-BTC to BTC conversion](#r-btc-to-btc-conversion)
 
 ## General Requirements
 
 * You need a [Ledger](https://www.ledger.com/) with Bitcoin and RSK Apps installed. We recommend you to have [Ledger Live](https://www.ledger.com/pages/ledger-live) and review this tutorial [Use the Manager](https://support.ledgerwallet.com/hc/en-us/articles/360006523674-Use-the-Manager).
 * You need to have [Electrum](https://electrum.org/). Install it and [configure it to be used with Ledger](https://support.ledgerwallet.com/hc/en-us/articles/115005161925-Set-up-and-use-Electrum).
-* node >= 10.16.0 
+* node >= 10.16.0
 
-## 1. BTC to R-BTC conversion
+## BTC to R-BTC conversion
 
 Instructions on how to do a Mainnet peg-in.
 
@@ -35,7 +35,7 @@ We recommend to use Electrum BTC wallet for connecting to BTC mainnet using Ledg
 * At the keystore screen, select Use a hardware device and click Next.
 * Select your Ledger device and click next.
 * Choose the right derivation path for your account and click Next:
-  * Legacy for an account that has addresses starting with a 1  
+  * Legacy for an account that has addresses starting with a 1
 * Go to the third tab "Receive". You will see a Bitcoin address.
 
 > Note: Check this [configure it to be used with Ledger](https://support.ledgerwallet.com/hc/en-us/articles/)
@@ -47,7 +47,7 @@ We recommend to use Electrum BTC wallet for connecting to BTC mainnet using Ledg
 You will need to find the corresponding BTC address derived from the BTC derivation path in Electrum "Receive" tab.
 
 * Check the derivation path for BTC to be used:
-  - Mainnet: 44'/0'/0'/0/0 [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) **Legacy** 
+  - Mainnet: 44'/0'/0'/0/0 [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki) **Legacy**
 
 * Unlock Ledger and open the **Bitcoin App**
 * To get the BTC address derived from the derivation path that you have specified. Run the following script:
@@ -57,13 +57,13 @@ You will need to find the corresponding BTC address derived from the BTC derivat
   const AppBtc = require("@ledgerhq/hw-app-btc").default;
 
   const getBtcAddress = async (derivationPath = "44'/0'/0'/0/0") => {
-    try{    
+    try{
         const transport = await Transport.create();
         const btc = new AppBtc(transport);
         const result = await btc.getWalletPublicKey(derivationPath);
 
-        console.log('BTC Address');        
-        console.log(result.bitcoinAddress);        
+        console.log('BTC Address');
+        console.log(result.bitcoinAddress);
         console.log('Derivation Path: ' + derivationPath);
     }
     catch(err){
@@ -72,7 +72,7 @@ You will need to find the corresponding BTC address derived from the BTC derivat
   };
 
   (async () => {
-    await getBtcAddress("44'/0'/0'/0/0");    
+    await getBtcAddress("44'/0'/0'/0/0");
   })();
   ```
 
@@ -106,11 +106,11 @@ const getFederationAddress = async function(){
     const bridge = precompiled.bridge.build(new Web3('https://public-node.rsk.co'));
     const address = await bridge.methods.getFederationAddress().call();
     console.log('Federation Address:');
-    console.log(address);    
+    console.log(address);
 }
 
-(async () => {    
-    await getFederationAddress();    
+(async () => {
+    await getFederationAddress();
 })();
 ```
 
@@ -123,7 +123,7 @@ Use Electrum to send BTCs to the RSK Federation Address. To do that:
   * Right click over it
   * Select the option "Spend From":
 ![Spend from](/assets/img/rsk/peg-ledger/electrumSpendFromOption.png)
-  * Finally make a payment to the RSK Federation Address      
+  * Finally make a payment to the RSK Federation Address
 ![Sending Payment](/assets/img/rsk/peg-ledger/electrumSpendFrom.png)
 
 **1.5 Wait for BTC confirmations**
@@ -143,7 +143,7 @@ Get the corresponding R-BTC address from your Ledger harware wallet, following t
     const AppEth = require("@ledgerhq/hw-app-eth").default;
 
     const getRskAddress = async (derivationPath = "44'/0'/0'/0/0") => {
-      try{    
+      try{
           const transport = await Transport.create();
           const eth = new AppEth(transport);
           const result = await eth.getAddress(derivationPath);
@@ -157,8 +157,8 @@ Get the corresponding R-BTC address from your Ledger harware wallet, following t
       }
     };
 
-    (async () => {    
-      await getRskAddress("44'/0'/0'/0/0");    
+    (async () => {
+      await getRskAddress("44'/0'/0'/0/0");
     })();
 
   ```
@@ -171,7 +171,7 @@ You can check balance of R-BTC address on MyCrypto or MEW setting the correspond
 
 > Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your R-BTC balance
 
-## 2. R-BTC to BTC conversion
+## R-BTC to BTC conversion
 
 Instructions on how to do a Mainnet peg-in.
 

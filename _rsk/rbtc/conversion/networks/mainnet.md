@@ -4,14 +4,14 @@ title: Mainnet Guide
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
 description: "Converting BTC to R-BTC (peg-in) and R-BTC to BTC (peg-out)."
 collection_order: 3110
-permalink: /rsk/rbtc/conversion/networks/mainnet
+permalink: /rsk/rbtc/conversion/networks/mainnet/
 ---
 
 In this section we will go over the steps of converting BTC to R-BTC and vice versa in Bitcoin and RSK Mainnets.
 
 > Note: The minimum amount of Bitcoin to convert is **0.01 BTC** for Mainnet.
 
-## 1. BTC to R-BTC conversion
+## BTC to R-BTC conversion
 
 Instructions on how to do a Mainnet peg-in.
 
@@ -63,7 +63,7 @@ You can check balance of R-BTC address on Metamask, MyCrypto, or any RSK compati
 
 > Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your R-BTC balance
 
-## 2. R-BTC to BTC conversion
+## R-BTC to BTC conversion
 
 Instructions on how to do a Mainnet peg-in.
 

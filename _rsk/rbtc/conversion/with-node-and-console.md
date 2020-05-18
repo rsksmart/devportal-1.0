@@ -9,9 +9,8 @@ collection_order: 3150
 This document explains how to try the 2-way peg mechanism using your RSK node and a command line.
 
 - [General requirements](#general-requirements)
-- [Lock: From BTC to R-BTC](#from-btc-to-r-btc)
-- [Release: From R-BTC to BTC](#from-r-btc-to-btc)
-
+- [BTC to R-BTC conversion](#btc-to-r-btc-conversion)
+- [R-BTC to BTC conversion](#r-btc-to-btc-conversion)
 
 ## General Requirements
 
@@ -19,23 +18,22 @@ This document explains how to try the 2-way peg mechanism using your RSK node an
  - You need a BTC Wallet properly configured using the previously mentioned private key.
  - _[Only for release process]_ You need an RSK node up and running, with the RPC interface enabled with the personal and eth modules enabled ([how do I run an RSK Node?](/rsk/node/install/)).
 
- 
-## From BTC to R-BTC
+## BTC to R-BTC conversion
 
 How to perform a peg-out.
 
-:exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/#1-btc-to-r-btc-conversion)
- 
- 1. With your whitelisted Bitcoin address, send a BTC transaction to the RSK Federation Address. 
+:exclamation: **Before starting:** Read [lock requirements](/rsk/rbtc/conversion/networks/mainnet/#btc-to-r-btc-conversion)
+
+ 1. With your whitelisted Bitcoin address, send a BTC transaction to the RSK Federation Address.
  2. Using your preferred BTC block explorer (i.e. [Blocktrail](https://www.blocktrail.com/BTC)) follow your transaction and wait the stipulated time.
  3. Convert the private key to RSK format with this tool: [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils)), and write down your RSK account information.
- 2. Then use the [RSK Testnet Explorer](https://explorer.testnet.rsk.co) or [RSK Mainnet Explorer](https://explorer.rsk.co) to see your R-BTC balance. Remember that RSK addresses must start with `0x`. 
+ 2. Then use the [RSK Testnet Explorer](https://explorer.testnet.rsk.co) or [RSK Mainnet Explorer](https://explorer.rsk.co) to see your R-BTC balance. Remember that RSK addresses must start with `0x`.
 
-## From R-BTC to BTC
+## R-BTC to BTC conversion
 
 How to perform a peg-in.
 
-:exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/#2-r-btc-to-btc-conversion)
+:exclamation: **Before starting:** Read [release requirements](/rsk/rbtc/conversion/networks/mainnet/#r-btc-to-btc-conversion)
 
  1. Add your obtained RSK private key to your RSK node. Replace `RSKConvertedPrivateKey`, `RSKNode` and `RSKNodePort` and run this command:
 ```

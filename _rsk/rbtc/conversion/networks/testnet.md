@@ -4,7 +4,7 @@ title: Tesnet Guide
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
 description: "Converting t-BTC to tR-BTC (peg-in) and tR-BTC to t-BTC (peg-out)."
 collection_order: 3120
-permalink: /rsk/rbtc/conversion/networks/testnet
+permalink: /rsk/rbtc/conversion/networks/testnet/
 ---
 
 In this section we will go over the steps of converting t-BTC to tR-BTC,
@@ -13,7 +13,7 @@ and vice versa on the Bitcoin and RSK Testnets.
 Note:
 The minimum amount of Bitcoin to convert is **0.01 BTC** for Testnet.
 
-#### 1. tBTC to tR-BTC conversion
+## tBTC to tR-BTC conversion
 
 Instructions on how to do a Testnet peg-in.
 
@@ -73,7 +73,7 @@ MyCrypto or any RSK Testnet compatible wallets.
 
 > Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your R-BTC balance
 
-## 2. tR-BTC to tBTC conversion
+## tR-BTC to tBTC conversion
 
 Instructions on how to do a Testnet peg-in.
 
