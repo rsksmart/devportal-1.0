@@ -98,7 +98,7 @@ Let's compute the checksum using the following command:
 sha256sum rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
-For this version, it looked like this:
+For this version, the output should look like this:
 
 ```shell
 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 *rskj-core-2.0.1-PAPYRUS-all.jar
@@ -107,7 +107,16 @@ For this version, it looked like this:
 On Windows, use this command instead:
 
 ```windows-command-prompt
-C:>certutil -hashfile C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar SHA256
+C:>certutil -hashfile rskj-core-2.0.1-PAPYRUS-all.jar SHA256
+
+```
+
+For this version, the output on windows should look like this:
+
+```windows-command-prompt
+SHA256 hash of rskj-core-2.0.1-PAPYRUS-all.jar:
+43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0
+CertUtil: -hashfile command completed successfully.
 
 ```
 
