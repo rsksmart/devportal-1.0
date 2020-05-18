@@ -8,7 +8,14 @@ collection_order: 2200
 
 ## Public Nodes
 
-IOVLabs currently provides two public nodes that you can use for testing purposes and you can find the information bellow. In case you want to run your own RSK Node (highly recommended for production environments in accordance to the bitcoiner's maxim: Don't trust. Verify.) you can follow the <a href="/rsk/node/install/">installation instructions here</a>.
+IOVLabs currently provides two public nodes that you can use
+for testing purposes, and you will find that information below.
+
+Alternatively, follow the [installation instructions](/rsk/node/install/),
+to run your own RSK node.
+This is highly recommended for production environments,
+and in accordance with the bitcoiners' maxim: **Don't trust. Verify.**
+
 
 ### Testnet
 
