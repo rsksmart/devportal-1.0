@@ -1684,4 +1684,58 @@ STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200515T091500Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202005-015@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200511T094500Z
+DTSTART:20200511T094500Z
+SUMMARY:RSK Demo: Bitcoin Halving Livestream 2020 
+DESCRIPTION:RSK Demo: Bitcoin Halving Livestream 2020\n\nOnline only\n\nRS
+ VP: \n\nVideo stream: \n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Dem
+ o: Bitcoin Halving Livestream 2020</span></div>\n<div><span>Online only</s
+ pan></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video str
+ eam &nbsp\;</b><span></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Alejandro Banzas\, Head of Developers Relations\, @alebanzas
+ ":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Demo: Bitcoin Halving Livestream 2020 
+END:VALARM
+CATEGORIES:Demo
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200517T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-016@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200511T094500Z
+DTSTART:20200511T094500Z
+SUMMARY:Moneyonchain a Stablecion descentralizada baseada no Bitcoin. Tudo
+  sobre o MoC\, DoC\, Bpro e BTCx 
+DESCRIPTION:Moneyonchain a Stablecion descentralizada baseada no Bitcoin. 
+ Tudo sobre o MoC\, DoC\, Bpro e BTCx\n\nOnline only\n\nRSVP: \n\nVideo str
+ eam: \n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Moneyon
+ chain a Stablecion descentralizada baseada no Bitcoin. Tudo sobre o MoC\, 
+ DoC\, Bpro e BTCx</span></div>\n<div><span>Online only</span></div>\n<div>
+ <b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><s
+ pan></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Moneyonchain a Stablecion descentralizada baseada no Bitcoin. 
+ Tudo sobre o MoC\, DoC\, Bpro e BTCx 
+END:VALARM
+CATEGORIES:Talk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200517T091500Z
+END:VEVENT
 END:VCALENDAR
