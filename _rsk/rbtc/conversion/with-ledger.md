@@ -22,7 +22,7 @@ In this section we will go over the steps of converting BTC to R-BTC using Ledge
 
 Instructions on how to do a Mainnet peg-in.
 
-**1.1 Get a BTC address with balance**
+**1 Get a BTC address with balance**
 
 We recommend to use Electrum BTC wallet for connecting to BTC mainnet using Ledger harware wallet.
 
@@ -42,7 +42,7 @@ We recommend to use Electrum BTC wallet for connecting to BTC mainnet using Ledg
 
 > Note: The Bitcoin wallet needs to be legacy (not Segwit) whose public key starts with either *m* or *n*, and private key starting with *p2pkh:*
 
-**1.2 Find a BTC address with balance**
+**2 Find a BTC address with balance**
 
 You will need to find the corresponding BTC address derived from the BTC derivation path in Electrum "Receive" tab.
 
@@ -86,11 +86,11 @@ You will need to find the corresponding BTC address derived from the BTC derivat
 
 **So that is the address that you have to use in order to do the transfer to the federation.**
 
-**1.3 Whitelist Bitcoin address in RSK**
+**3 Whitelist Bitcoin address in RSK**
 
 You need to complete [whitelisting](/rsk/rbtc/conversion/whitelist).
 
-**1.4 Send Bitcoin to RSK Federation address**
+**4 Send Bitcoin to RSK Federation address**
 
 <div class="fade alert alert-warning show">IMPORTANT: DO NOT EXECUTE THIS STEP BEFORE BEING <a href="/rsk/rbtc/conversion/whitelist">WHITELISTED</a>.</div>
 
@@ -126,13 +126,13 @@ Use Electrum to send BTCs to the RSK Federation Address. To do that:
   * Finally make a payment to the RSK Federation Address
 ![Sending Payment](/assets/img/rsk/peg-ledger/electrumSpendFrom.png)
 
-**1.5 Wait for BTC confirmations**
+**5 Wait for BTC confirmations**
 
 To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 > 100 blocks * 10 minutes/block = 1000 minutes = 16.667 hours approx.
 
-**1.6 Get R-BTC address from Ledger harware wallet**
+**6 Get R-BTC address from Ledger harware wallet**
 
 Get the corresponding R-BTC address from your Ledger harware wallet, following these steps:
 * Connect and unlock your Ledger device.
@@ -165,7 +165,7 @@ Get the corresponding R-BTC address from your Ledger harware wallet, following t
 * Go to MyCrypto and connect to Ledger harware wallet.
 * Select **Custom** Address and put the derivation path **m/44'/0'/0'/0**. Then choose the address that you got from the previous step.
 
-**1.7 Check R-BTC balance**
+**7 Check R-BTC balance**
 
 You can check balance of R-BTC address on MyCrypto or MEW setting the corresponding derivation path and selection the address.
 
@@ -173,13 +173,13 @@ You can check balance of R-BTC address on MyCrypto or MEW setting the correspond
 
 ## R-BTC to BTC conversion
 
-Instructions on how to do a Mainnet peg-in.
+Instructions on how to do a Mainnet peg-out.
 
-**2.1 Get BTC address with Ledger hardware wallet**
+**1 Get BTC address with Ledger hardware wallet**
 
 If you forgot your BTC public address you can check the section **1.1**. The important thing is that the reciving is BTC address will be the same that it was used to send to the federation.
 
-**2.2 Send R-BTC to RSK Bridge Contract**
+**2 Send R-BTC to RSK Bridge Contract**
 
 Open MyCrypto or MEW. setting the corresponding derivation path and selection the address. This address have to be the same that section **1.6**. Then do a transaction to the Bridge Contract.
 
@@ -190,7 +190,7 @@ Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise 
 
 ![Customize Gas in Metamask before send transaction on RSK](/dist/images/metamask-gas-limit.png)
 
-**2.3 Check balance of BTC address**
+**3 Check balance of BTC address**
 
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
 

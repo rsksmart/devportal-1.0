@@ -15,7 +15,7 @@ In this section we will go over the steps of converting BTC to R-BTC and vice ve
 
 Instructions on how to do a Mainnet peg-in.
 
-**1.1 Get a BTC address with balance**
+**1 Get a BTC address with balance**
 
 Any Bitcoin wallet that supports legacy(P2PK) private key works for this step, and here we recommend to use Electrum BTC wallet for connecting to BTC mainnet.
 
@@ -29,11 +29,11 @@ Any Bitcoin wallet that supports legacy(P2PK) private key works for this step, a
 
 ![Create a Legacy(P2PK) wallet](/dist/images/legacy-private-key.png)
 
-**1.2 Whitelist Bitcoin address in RSK**
+**2 Whitelist Bitcoin address in RSK**
 
 You need to complete [whitelisting](/rsk/rbtc/conversion/whitelist).
 
-**1.3 Send Bitcoin to RSK Federation address**
+**3 Send Bitcoin to RSK Federation address**
 
 <div class="fade alert alert-warning show">IMPORTANT: DO NOT EXECUTE THIS STEP BEFORE BEING <a href="/rsk/rbtc/conversion/whitelist">WHITELISTED</a>.</div>
 
@@ -45,19 +45,19 @@ The RSK Federation address is retrieved by making a Smart Contract call on RSK M
 
 Once you have the RSK Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
 
-**1.4 Wait for BTC confirmations**
+**4 Wait for BTC confirmations**
 
 To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 > 100 blocks * 10 minutes/block = 1000 minutes = 16.667 hours approx.
 
-**1.5 Get R-BTC address with BTC private key**
+**5 Get R-BTC address with BTC private key**
 
 You can get a corresponding R-BTC address with your BTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 > Note: when entering Bitcoin private key do not include *p2pkh:* in the front.
 
-**1.6 Check R-BTC balance**
+**6 Check R-BTC balance**
 
 You can check balance of R-BTC address on Metamask, MyCrypto, or any RSK compatible wallets.
 
@@ -65,13 +65,13 @@ You can check balance of R-BTC address on Metamask, MyCrypto, or any RSK compati
 
 ## R-BTC to BTC conversion
 
-Instructions on how to do a Mainnet peg-in.
+Instructions on how to do a Mainnet peg-out.
 
-**2.1 Get BTC address with R-BTC private key**
+**1 Get BTC address with R-BTC private key**
 
 If you forgot BTC public address you can retrieve it with RSK private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
-**2.2 Send R-BTC to RSK Bridge Contract**
+**2 Send R-BTC to RSK Bridge Contract**
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
@@ -80,7 +80,7 @@ Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise 
 
 ![Customize Gas in Metamask before send transaction on RSK](/dist/images/metamask-gas-limit.png)
 
-**2.3 Check balance of BTC address**
+**3 Check balance of BTC address**
 
 You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
 
