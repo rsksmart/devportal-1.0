@@ -2,7 +2,7 @@
 layout: rsk
 title: BTC to R-BTC Conversion
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
-description: "Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet."
+description: 'Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet.'
 collection_order: 3100
 permalink: /rsk/rbtc/conversion/
 ---
@@ -17,8 +17,8 @@ Thus, these conversions are referred to as peg-ins and peg-outs.
   - Releases R-BTC in the RSK derived address
 - **Peg-out**:
   - A conversion from R-BTC to BTC
-  - Locks R-BTC on the RSK network 
-  - Releases BTC on the Bitcoin network  
+  - Locks R-BTC on the RSK network
+  - Releases BTC on the Bitcoin network
 
 <div class="fade alert alert-warning show">IMPORTANT: WHITELIST PROCESS. To use the 2-way-peg you must first <a href="/rsk/rbtc/conversion/whitelist">get whitelisted</a>.</div>
 

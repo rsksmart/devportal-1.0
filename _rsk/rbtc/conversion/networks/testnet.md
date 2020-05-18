@@ -2,7 +2,7 @@
 layout: rsk
 title: Tesnet Guide
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
-description: "Converting t-BTC to tR-BTC (peg-in) and tR-BTC to t-BTC (peg-out)."
+description: 'Converting t-BTC to tR-BTC (peg-in) and tR-BTC to t-BTC (peg-out).'
 collection_order: 3120
 permalink: /rsk/rbtc/conversion/networks/testnet/
 ---
@@ -21,18 +21,21 @@ Instructions on how to do a Testnet peg-in.
 
 We recommend to use Electrum BTC wallet for connecting to Bitcoin Testnet.
 
-* Download the wallet from [Electrum Website](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/)
-* Install Electrum
-* Start Electrum in Testnet mode
-  * For example on MacOS:
-`/Applications/Electrum.app/Contents/MacOS/Electrum --testnet`
-* After Electrum starts, create or import a wallet
-* Go to the third tab, "Receive". You will see a Bitcoin Testnet address like below.
+- Download the wallet from
+  [Electrum Website](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/)
+- Install Electrum
+- Start Electrum in Testnet mode
+  - For example on MacOS:
+    `/Applications/Electrum.app/Contents/MacOS/Electrum --testnet`
+- After Electrum starts, create or import a wallet
+- Go to the third tab, "Receive".
+  You will see a Bitcoin Testnet address like below.
 
 ![Create a Legacy(P2PK) wallet](/dist/images/legacy-private-key.png)
 
 > Note: The Bitcoin wallet needs to be legacy (not Segwit)
-> whose public key starts with either *m* or *n*, and private key starting with *p2pkh:*
+> whose public key starts with either _m_ or _n_,
+> and private key starting with _p2pkh:_
 
 ![Get a Bitcoin Testnet address in Electrum Wallet](/dist/images/electrum-wallet.png)
 
@@ -43,20 +46,25 @@ We use [https://testnet-faucet.mempool.co/](https://testnet-faucet.mempool.co/)
 
 **3 Whitelist Bitcoin address in RSK**
 
-You can contact us in RSK official [Gitter channels](https://gitter.im/rsksmart/getting-started)
+You can contact us in RSK official
+[Gitter channels](https://gitter.im/rsksmart/getting-started)
 to whitelist your Bitcoin Testnet address.
 
 **4 Send Bitcoin to RSK Federation address**
 
-The RSK Federation address is retrieved by making a Smart Contract call on RSK Testnet.
+The RSK Federation address is retrieved by making a Smart Contract call
+on RSK Testnet.
 In order to make the call, you will need to have
-[MyCrypto](https://mycrypto.com/contracts/interact) installed,
-select RSK Testnet in *"More Networks"*, and Navigate to *"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"* to execute the call.
+[MyCrypto](https://mycrypto.com/contracts/interact)
+installed, select RSK Testnet in
+_"More Networks"_, and Navigate to _"MyCrypto -> Contracts -> Select Existing Contracts -> "Bridge" -> "getFederationAddress"_
+to execute the call.
 It should look like the screenshot below.
 
 ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
 
-Once you have the RSK Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
+Once you have the RSK Federation address,
+you can send Bitcoin to it from your whitelisted Bitcoin address.
 
 > Note: You need to send a minimum amount of 0.01 BTC for conversion.
 
@@ -64,14 +72,15 @@ Once you have the RSK Federation address, you can send Bitcoin to it from your w
 
 You can get a corresponding tR-BTC address with your tBTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
-> Note: when entering Bitcoin private key do not include *p2pkh:* in the front.
+> Note: when entering Bitcoin private key do not include _p2pkh:_ in the front.
 
 **6 Check tR-BTC balance on Testnet**
 
 You can check balance of above tR-BTC address on Metamask,
 MyCrypto or any RSK Testnet compatible wallets.
 
-> Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your R-BTC balance
+> Note: You have to wait a minimum of 100 confirmations +
+> a minimum of 5 minutes for checking your R-BTC balance
 
 ## tR-BTC to tBTC conversion
 
@@ -79,8 +88,8 @@ Instructions on how to do a Testnet peg-out.
 
 **1 Get tBTC address with tR-BTC private key**
 
-If you forgot tBTC public address you can retrieve it with RSK private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
-
+If you forgot tBTC public address you can retrieve it with RSK private key
+from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 **2 Send tR-BTC to RSK Bridge Contract**
 
@@ -96,6 +105,8 @@ Gas Price can be set to 0.06 gwei.
 
 **3 Check balance of tBTC address on Bitcoin Testnet**
 
-You can either use Electrum wallet downloaded earlier or from any Bitcoin explorer to check the balance.
+You can either use Electrum wallet downloaded earlier or from
+any Bitcoin explorer to check the balance.
 
-> Note: The release process on Bitcoin network takes 4000 RSK block confirmations and at least 10 more minutes.
+> Note: The release process on Bitcoin network takes
+> 4000 RSK block confirmations and at least 10 more minutes.
