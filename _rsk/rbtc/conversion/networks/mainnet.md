@@ -17,7 +17,7 @@ Instructions on how to do a Mainnet peg-in.
 
 **1 Get a BTC address with balance**
 
-Any Bitcoin wallet that supports legacy(P2PK) private key works for this step,
+Any Bitcoin wallet that supports legacy (`p2pkh`) private key works for this step,
 and here we recommend to use Electrum BTC wallet for connecting to BTC Mainnet.
 
 - Download the wallet from [Electrum Website](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/)
@@ -27,10 +27,10 @@ and here we recommend to use Electrum BTC wallet for connecting to BTC Mainnet.
 - Go to the third tab "Receive". You will see a Bitcoin Testnet address like below.
 
 > Note: The Bitcoin wallet needs to be legacy (not Segwit)
-> whose public key starts with either _m_ or _n_,
-> and private key starting with _p2pkh:_
+> whose public key starts with either `m` or `n`,
+> and private key starting with `p2pkh:`
 
-![Create a Legacy(P2PK) wallet](/dist/images/legacy-private-key.png)
+![Create a Legacy (`p2pkh`) wallet](/dist/images/legacy-private-key.png)
 
 **2 Whitelist Bitcoin address in RSK**
 

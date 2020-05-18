@@ -48,9 +48,9 @@ BTC Mainnet using Ledger hardware wallet.
 > Note: Check out this article
 > [configure it to be used with Ledger](https://support.ledgerwallet.com/hc/en-us/articles/)
 
-> Note: The Bitcoin wallet needs to be legacy (not Segwit) whose
-> public key starts with either _m_ or _n_,
-> and private key starting with _p2pkh:_
+> Note: The Bitcoin wallet needs to be legacy (not Segwit)
+> whose public key starts with either `m` or `n`,
+> and private key starting with `p2pkh:`
 
 **2 Find a BTC address with balance**
 
