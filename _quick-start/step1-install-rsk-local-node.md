@@ -72,7 +72,7 @@ java -version
 RSKj is the software for running RSK nodes.
 
 There are [several ways](/rsk/node/install/)
-to set up a RSK node.
+to set up an RSK node.
 Here, we will download a JAR file,
 and run it using the Java SDK that has been installed.
 
@@ -90,7 +90,7 @@ Its name should be `rskj-core-*.jar`:
 ## Verify authenticity of RSKj
 
 When installing and running the RSKj node,
-it is always a good idea to verify that your copy is legitimate.
+it is always good practice to verify that your copy is legitimate.
 
 Let's compute the checksum using the following command:
 
@@ -198,7 +198,7 @@ The `result` property is the number of the latest block that has been synced. No
 
 RSKj also allows you to connect over websockets,
 and is currently listening on port `4445`.
-Let us verify that this works too.
+Let's verify that this works too.
 
 > Note: This step is optional,
 > the HTTP connection above is sufficient.

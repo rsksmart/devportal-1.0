@@ -41,7 +41,7 @@ This should output a version that matches the version number for truffle specifi
 in `<tutorial-root>/truffle/package.json`.
 
 Note that we use `npx truffle` instead of `truffle` to ensure that the version installed within this directory is used,
-not a globally installed copy of truffle.
+and not a globally installed copy of truffle.
 
 ### Truffle Network Configuration
 

@@ -18,8 +18,8 @@ truffle console --network regtest
 
 ## Check Balance of Our EIP20 Token
 
-First, let us get the address of the account which was \
-used to deploy the the contract.
+First, let's get the address of the account which was \
+used to deploy the contract.
 We shall save this in the variable `account1`.
 
 ```javascript-repl
@@ -78,7 +78,7 @@ await EIP20instance.transfer(account2, 10)
 
 This should print out an object containing transaction data.
 
-Finally, let us check the account balances to ensure
+Finally, let's check the account balances to ensure
 that everything went smoothly:
 
 ```javascript-repl
