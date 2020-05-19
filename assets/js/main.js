@@ -55,6 +55,18 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 
 $(document).ready(function () {
   setUpMainSearch();
+  const renderFeatures = $('.render-features')
+    .data('features')
+    .split(/\s+/);
+  renderFeatures.forEach((feature) => {
+    switch (feature) {
+      case 'tables-with-borders':
+        renderTablesWithBorders();
+        return;
+      default:
+        console.error('Unsupported render feature:', feature);
+    }
+  });
 });
 
 // add active class to a in inner nav based on url
@@ -282,8 +294,13 @@ function renderCustomTerminals() {
     .addClass('windows-command-prompt')
 }
 
+function renderTablesWithBorders() {
+  $('table')
+    .addClass('table-with-border');
+}
+
 $('#newsletter-form').submit(function() {
-    
+
   var output = jQuery.map($(':checkbox[name=skillscb]:checked'), function (n, i) {
       return n.value;
   }).join(',');
