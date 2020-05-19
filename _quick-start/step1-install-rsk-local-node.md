@@ -107,7 +107,7 @@ For this version, the output should look like this:
 On Windows, use this command instead:
 
 ```windows-command-prompt
-C:>certutil -hashfile rskj-core-2.0.1-PAPYRUS-all.jar SHA256
+C:\>certutil -hashfile rskj-core-2.0.1-PAPYRUS-all.jar SHA256
 
 ```
 
@@ -180,7 +180,7 @@ curl http://localhost:4444/ \
 For Windows:
 
 ```windows-command-prompt
-C:>curl http://localhost:4444/ -s -X POST -H "Content-Type: application/json" --data "{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}"
+C:\>curl http://localhost:4444/ -s -X POST -H "Content-Type: application/json" --data "{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}"
 
 ```
 

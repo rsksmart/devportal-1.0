@@ -92,7 +92,7 @@ Note that the `--network` parameter identifies which network we should connect t
 and look for the options related to that within the `truffle-config.js` file.
 We can verify this by entering the following command:
 
-```javascript-repl
+```javascript
 web3.eth.net.getId()
 33
 ```
