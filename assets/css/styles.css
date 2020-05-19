@@ -1641,6 +1641,30 @@ img {
   font-size:18px;
 }
 
+/* tables with borders */
+
+.table-with-border {
+    border: 0;
+    border-collapse: collapse;
+}
+
+.table-with-border thead,
+.table-with-border tbody,
+.table-with-border tfoot,
+.table-with-border tr,
+.table-with-border td,
+.table-with-border th {
+    border: inherit;
+    border-collapse: inherit;
+}
+
+.table-with-border tr,
+.table-with-border td,
+.table-with-border th {
+    border: 1px solid #ddd;
+    padding: 0.2em;
+}
+
 /* custom terminal render */
 
 .windows-command-prompt {
