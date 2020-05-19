@@ -267,7 +267,7 @@ rns.subdomains.available('testing.rsk', 'example').then(console.log)
 #### `setOwner`
 
 Sets a subdomain owner, it does not check for subdomain availability.
-It submits a [setSubnodeOwner](/rif/rns/architecture/registry#set-a-subdomain) transaction, so if the subdomain exists, it will overwrite the existing owner and will set the resolver of the parent domain.  If the subdomain does not exists, will create it.
+It submits a [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain) transaction, so if the subdomain exists, it will overwrite the existing owner and will set the resolver of the parent domain.  If the subdomain does not exists, will create it.
 
 > Precondition: the sender should be the owner of the parent domain.
 
@@ -309,7 +309,7 @@ await rns.subdomains.setOwner('testing.rsk', 'example', newOwnerAddress);
 #### `create`
 
 Creates a new subdomain under the given domain tree if it is available, and sets its resolution if `addr` is provided.
-It could send one, two or three transactions based on the value of the sent parameters.
+It may send one, two, or three transactions, based on the value of the sent parameters.
 
 > Precondition: the sender should be the owner of the parent domain.
 
@@ -326,13 +326,13 @@ async create(domain: string, label: string, owner: string, addr: string): Promis
 - `owner`: The owner of the new subdomain. If not provided, the address who executes the tx will be the owner
 - `addr`: The address to be set as resolution of the new subdomain
 
-> If `addr` is not provided, no resolution will be set and will send only one [setSubnodeOwner](/rif/rns/architecture/registry#set-a-subdomain) transaction.
+> If `addr` is not provided, no resolution will be set, and will send only one [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain) transaction.
 >
-> If `owner` is not provided, the sender will be set as the new owner, will send one [setSubnodeOwner](/rif/rns/architecture/registry#set-a-subdomain) transaction
+> If `owner` is not provided, the sender will be set as the new owner, and will send one [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain) transaction.
 >
-> If `owner` and `addr` are provided and `owner` is equals to the sender, will send two transactions: [setSubnodeOwner](/rif/rns/architecture/registry#set-a-subdomain) and [addr](/rif/rns/architecture/Resolver#addr).
+> If `owner` and `addr` are provided and `owner` is equals to the sender, will send two transactions: [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain), and [`addr`](/rif/rns/architecture/Resolver#addr).
 >
-> If `owner` and `addr` are provided but `owner` is different from the sender, then three transactions will be sent: [setSubnodeOwner](/rif/rns/architecture/registry#set-a-subdomain), [addr](/rif/rns/architecture/Resolver#addr) and [setSubnodeOwner](/rif/rns/architecture/registry#set-a-subdomain) again.
+> If `owner` and `addr` are provided, but `owner` is different from the sender, will send three transactions: [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain), [`addr`](/rif/rns/architecture/Resolver#addr), and [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain) again.
 
 **Returns**
 
