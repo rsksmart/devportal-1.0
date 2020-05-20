@@ -1953,6 +1953,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x12345
 | `eth_unsubscribe` | YES | |
 
 ## RPC SPV methods
+
 | Method | Supported | Comments |
 | ------ | ------ | ------ |
 | `rsk_getRawBlockHeaderByNumber` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block number (in hexa) or the string "latest" "pending" "genesis". |

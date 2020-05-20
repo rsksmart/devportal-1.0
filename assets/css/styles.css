@@ -1960,3 +1960,253 @@ table.table.newsletter input[type="checkbox"] {
         padding-top: 350px;
     }
 }
+
+/* rWallet */
+.graph .row,
+.grafbox {
+	font-family: 'Quicksand', sans-serif;
+	line-height: 20px;
+	text-align: center;
+	font-weight: 900;
+	border-radius: 15px;
+	min-height: 70px;
+	padding: 0;
+	font-size: 14px;
+}
+
+.grafboxrow,
+.grafbox {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 15px 0px;
+	-webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.grafboxrow {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.grafbox {
+	margin: 15px 0px
+}
+
+.grafbox.h-100 {
+	height: calc(100% - 30px)!important;
+}
+
+.one-third-height {
+	min-height: 45px!important
+}
+
+.orange-bitcoin {
+	background: #FF9900!important;
+	color: white!important;
+}
+
+.orange-bitcoin a {
+	color: white!important;
+}
+
+.orange-bitcoin a:hover {
+	color: white!important;
+	text-decoration: none;
+}
+
+.green-rsk {
+	color: rgb(0, 181, 32)!important;
+}
+
+.green-rsk a {
+	color: rgb(0, 181, 32)!important;
+}
+
+.green-rsk a:hover {
+	color: rgb(0, 181, 32)!important;
+	text-decoration: none;
+}
+
+.green-rsk-solid {
+	background: rgb(0, 181, 32)!important;
+	;
+	color: white!important;
+}
+
+.green-rsk-solid a {
+	color: white!important;
+}
+
+.green-rsk-solid a:hover {
+	color: white!important;
+	text-decoration: none;
+}
+
+.graph .grey {
+	color: #666666!important;
+}
+
+.graph .grey a {
+	color: #666666!important;
+}
+
+.graph .grey a:hover {
+	color: #666666!important;
+	text-decoration: none;
+}
+
+.graph .rif_blue {
+	color: #008CFF!important;
+}
+
+.graph .rif_blue a {
+	color: #008CFF!important;
+}
+
+.graph .rif_blue a:hover {
+	color: #008CFF!important;
+	text-decoration: none;
+}
+
+.graph .rsk_orange {
+	color: #F26122!important;
+}
+
+.graph .rsk_orange a {
+	color: #F26122!important;
+}
+
+.graph .rsk_orange a:hover {
+	color: #F26122!important;
+	text-decoration: none;
+}
+
+#rWallet {
+	margin-left: 80px;
+}
+
+#walletAPI::before {
+	content: "";
+	width: 1px;
+	border-left: solid 2px #CCCCCC;
+	position: absolute;
+	left: 50%;
+	top: -30px;
+	height: 45px;
+}
+
+#walletAPI::after {
+	content: "";
+	width: 1px;
+	border-left: solid 2px #CCCCCC;
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	height: 30px;
+}
+
+#walletAPI_content::after {
+	content: "";
+	width: 534px;
+	border-bottom: solid 2px #CCCCCC;
+	position: absolute;
+	left: -30%;
+	bottom: -15px;
+	height: 2px;
+}
+
+#explorerAPI::before {
+	content: "";
+	width: 30px;
+	border-bottom: solid 2px #CCCCCC;
+	position: absolute;
+	left: -15px;
+	top: 50%;
+	height: 2px;
+}
+
+#rsk3::before,
+#rnslibs::before,
+#bitcoinjs::before {
+	content: "";
+	width: 1px;
+	border-left: solid 2px #CCCCCC;
+	position: absolute;
+	left: 50%;
+	height: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+	#walletAPI_content::after {
+		width: 445px;
+	}
+	#rWallet {
+		margin-left: 60px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#rWallet {
+		margin-left: 40px;
+	}
+	#walletAPI_content::after {
+		width: 327px;
+	}
+	.graph .row,
+	.grafbox {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#group-row {
+		padding-right: 15px!important;
+	}
+	.one-third-height {
+		min-height: 70px!important;
+	}
+	#walletAPI::before {
+		top: -70px;
+		height: 85px;
+	}
+	#walletAPI_content::after {
+		width: 187%;
+		left: 25%;
+	}
+	#rWallet {
+		margin-left: unset;
+		padding: 0!important;
+	}
+	.grafboxrow_mobile {
+		align-items: center;
+		justify-content: center;
+		margin-top: 15px 0px;
+		-webkit-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-radius: 15px;
+	}
+	.pr-0-sm {
+		padding-right: 0px!important;
+	}
+	.rotate {
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg);
+		-moz-transform: rotate(-90deg);
+		-ms-transform: rotate(-90deg);
+		-o-transform: rotate(-90deg);
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		line-height: 12px;
+		min-width: 150px;
+	}
+	@media screen and (max-width: 450px) {
+		#walletAPI_content::after {
+			width: 190%;
+			left: 25%;
+		}
+	}
+}
