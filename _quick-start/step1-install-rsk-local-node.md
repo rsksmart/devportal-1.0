@@ -3,6 +3,7 @@ layout: rsk
 title: Quick Start - Step 1
 collection_order: 10
 render_custom_terminals: true
+render_features: "custom-terminals"
 ---
 
 # Step 1 : Install RSK local node
