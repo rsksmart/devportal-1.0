@@ -96,7 +96,7 @@ end
 desc "lint markdown"
 task :lint_markdown => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
-  sh "bundle exec mdl --config \".mdlrc\" \"README.md\""
+  sh "bundle exec mdl --config \".mdlrc\" \"README.md\" \"_quick-start\""
   puts "rake> " + task.name + ": OK!"
 end
 

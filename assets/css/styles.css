@@ -6,15 +6,12 @@ html {
     outline: none;
 }
 
-
 body {
     font-family: 'Open Sans', sans-serif!important;
     color: #000;
     font-size: 16px!important;
     line-height: 25px!important;
 }
-
-
 
 button:active {
     outline: none;
@@ -1699,8 +1696,11 @@ img {
     font-family: "MS Sans Serif", consolas, monospace;
     margin: 0 0 0 0;
     padding: 0 0.5em 0 0.5em;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
     overflow-x: hidden;
-    white-space: pre;
+    font-style: normal;
+    font-weight: normal;
 }
 
 .windows-command-prompt > .language-windows-command-prompt::selection {
