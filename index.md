@@ -127,7 +127,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
 
 # What is RSK?
 
-RSK's full [technology stack](/the-stack) is built on to of bitcoin:
+RSK's full [technology stack](/the-stack) is built on top of bitcoin:
 From RSK smart contracts
 to the RSK Infrastructure Framework.
 The stack is designed to create a
@@ -139,7 +139,7 @@ more fair and inclusive financial system.
 The blockchain is secure because miners
 with high infrastructure and energy costs
 create the new blocks to be added to the blockchain every 10 minutes.
-The more hashing power they provide, more secure the network is.
+The more hashing power they provide, the more secure the network is.
 
 **RSK** is the first open source smart contract platform that is
 powered by the bitcoin network.
