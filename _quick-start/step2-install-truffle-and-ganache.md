@@ -92,7 +92,7 @@ Note that the `--network` parameter identifies which network we should connect t
 and look for the options related to that within the `truffle-config.js` file.
 We can verify this by entering the following command:
 
-```javascript
+```nodejs-repl
 web3.eth.net.getId()
 33
 ```
@@ -101,7 +101,7 @@ Ensure that the output is `33`, which is the network ID of the regtest node.
 
 Enter the command below to exit the REPL.
 
-```shell
+```nodejs-repl
 .exit
 ```
 
