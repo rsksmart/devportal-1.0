@@ -6,11 +6,11 @@ tags: tutorial, rsk, ethereum dapps
 
 ## Step 1 : Import Existing Code
 
-Smart contracts for RSK are written using Solidity (a Javascript like programming language) and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK Smart without doing any changes.
+Smart contracts for RSK are written using Solidity (a Javascript like programming language) and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK without changing the smart contract.
 
 #### Solidity and Editor
 
-If you are new to Solidity, you can learn through a good introduction at [Solidity docs](https://solidity.readthedocs.io/en/v0.5.11/).
+New to Solidity? You can learn more using the [Solidity docs](https://solidity.readthedocs.io/en/v0.5.11/).
 
 You can edit Solidity using any text editor but it is a good idea to use more advanced tools, the following is a list of some of them:
 
@@ -20,17 +20,17 @@ You can edit Solidity using any text editor but it is a good idea to use more ad
 
 #### Truffle Framework
 
-There is an open source tool called Truffle that facilitates development a lot since it allows you to connect to your local RSK Smart node and call the compiler, run unit tests and publish your contracts in a very easy way. We have an example project showing the usage of Truffle and Ganache with a local RSK node [here](https://github.com/rsksmart/truffle-integration).
+Truffle is an open source framework that facilitates the testing and development of smart contracts. It allows you to connect to a local RSK node and call the compiler, run unit tests, and publish your smart contracts easily. Check out [this tutorial](https://github.com/rsksmart/truffle-integration) which demonstrates the usage of Truffle and Ganache with a local RSK node.
 
-In this tutorial, we will use Truffle for compiling and publishing your smart contracts.
+In this tutorial, we will use Truffle for compiling and publishing our smart contracts.
 
-Run the following commands to install truffle on your local machine
+Enter the following commands in the terminal to install truffle on your local machine
 
 ```shell
 npm install -g truffle
 ```
 
-Then create a new folder and create an empty project
+Then create a new folder and a truffle project using the commands below:
 
 ```shell
 mkdir rsk-truffle-example
@@ -44,11 +44,9 @@ The init command will create 3 folders and a configuration file for this project
 
 In this tutorial, we are going to use the token contract code from [Consensys/Token] (https://github.com/ConsenSys/Tokens) as the example.
 
-Now create two files named EIP20.sol and
+Now create two files named `EIP20.sol` and `EIP20Interface.sol`:
 
-EIP20Interface.sol content:
-
-```solidity
+```
 pragma solidity ^0.4.21;
 
 contract EIP20Interface {
@@ -98,7 +96,7 @@ contract EIP20Interface {
 }
 ```
 
-EIP20.sol content:
+EIP20.sol:
 
 ```
 pragma solidity ^0.4.21;
@@ -195,12 +193,12 @@ We are going to deploy the example smart contract on to RSK Testnet.
 
 #### Testnet and Faucet
 
-First we need to obtain an account on RSK Testnet and get some free RSK token from the testnet Faucet.
+First, we need to obtain an account on RSK Testnet and get some tR-BTC from the Testnet faucet.
 
 **Create new Account with MetaMask**
 
 1. Open MetaMask Chrome extension
-1. In the network options, choose custom RPC
+1. In the network options, choose `custom RPC`
 1. Enter RSK Testnet as the Network Name
 1. Enter https://public-node.testnet.rsk.co as the RPC URL
 1. Enter R-BTC as SymbolPut and Save
@@ -208,9 +206,9 @@ First we need to obtain an account on RSK Testnet and get some free RSK token fr
 
 <img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/assets/img/tutorials/port-ethereum-dapps/metamask-testnet.png">
 
-**Get free token**
+**Get tR-BTC**
 
-Visit the [faucet website](https://faucet.testnet.rsk.co/) to gain some free RSK token for Testnet
+Visit the [faucet](https://faucet.testnet.rsk.co/) to gain some tR-BTC to use in the Testnet.
 
 Enter the account address from MetaMask and wait several minutes for MetaMask to refresh the new balance.
 
@@ -218,7 +216,7 @@ Enter the account address from MetaMask and wait several minutes for MetaMask to
 
 #### Truffle Configuration
 
-Now edit the `truffle-config.js` to be same as the following. It directs Truffle to connect to the public Testnet node.
+Edit the `truffle-config.js` to be same as the code below. The `truffle-config.js` file directs Truffle to connect to the public Testnet node.
 
 ```javascript
 var HDWalletProvider = require('@truffle/hdwallet-provider')
@@ -247,7 +245,7 @@ module.exports = {
 
 #### Compile and Deploy
 
-Run the following commands in Terminal to compile and deploy the contracts.
+Enter the following commands in the Terminal to compile and deploy the contracts.
 
 ```shell
 truffle console --network rskTestnet
@@ -257,11 +255,11 @@ truffle migrate
 
 ## Step 3 : Execute the Smart Contract
 
-Once the deployment is successful. We can call smart contract methods directly in truffle console.
+Once the deployment is successful. We can call smart contract methods directly in the truffle console.
 
 **Check Account Balance**
 
-Now type the following command into truffle console.
+Enter the following command into truffle console.
 
 ```javascript
 EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F44d2093A2856997")))
@@ -281,7 +279,7 @@ Now use the following command to transfer 1 token from the minter account to ano
 EIP20.deployed().then((instance=>instance.transfer("0x7dadb9d442cfe7fc75fd472d63afc16934d7aa44", 1)))
 ```
 
-After its success execution, check the minter account's balance again to see that it has changed.
+After its successful execution, check the minter's account again to see the change in balance.
 
 ```javascript
 EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F44d2093A2856997").then(b=>b.toNumber())))
@@ -304,4 +302,4 @@ You will be able to check the Mainnet's transactions and blocks in real time at
 
 To deploy onto Mainnet, we need to get some R-BTC through the 2-way peg mechanism between BTC and R-BTC.
 
-- Detailed tutorial [2-way peg](/rsk/architecture/2-way-peg/)
+- Check out a detailed tutorial on the [2-way peg](/rsk/architecture/2-way-peg/)
