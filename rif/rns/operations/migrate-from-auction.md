@@ -3,7 +3,7 @@ layout: rsk
 title: Migrate from auction model
 ---
 
-Any name that has been registered using the [Auction Model](register-auction-deprecated.md) contract should be migrated to the new [registration model](/rif/rns/operations/register).
+Any name that has been registered using the [Auction Model](/rif/rns/operations/register-auction-deprecated) contract should be migrated to the new [registration model](/rif/rns/operations/register).
 
 1. Login to the [RNS Manager](https://beta.manager.rns.rifos.org/admin).
 2. You will see the following alert in the admin tab if your name has not been migrated yet.

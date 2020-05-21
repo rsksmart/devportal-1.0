@@ -5,29 +5,29 @@ tags: tutorial, rsk, token, openzeppelin, erc721, truffle, frontend, web3, react
 description: "How to create your own collectable token on RSK network using Truffle framework, Open Zeppelin libraries and a react frontend."
 ---
 
-In this tutorial, you will learn about blockchain programming from scratch by building a fully decentralized application (DApp), step by step. 
+In this tutorial, you will learn about blockchain programming from scratch by building a fully decentralized application (DApp), step by step.
 You will also learn how to create your own collectable token on the RSK blockchain network using the Truffle framework, Open Zeppelin (OZ) libraries, and build a front end with React, using `create-react-app`.
 
-We will create a dapp inspired by [Cryptokitties](https://www.cryptokitties.co/), 
-a popular blockchain game where you can collect and breed digital cats. 
+We will create a dapp inspired by [Cryptokitties](https://www.cryptokitties.co/),
+a popular blockchain game where you can collect and breed digital cats.
 In this tutorial, instead of collecting felines in our app, we are going to collect exclusive color tokens.
 
 ### Fungible vs Non-Fungible Token
 
 A fungible token represents an asset that can be exchanged for any other asset of equal value in its class.
 
-A currency is an example of a fungible asset. 
-A $100 bill is equal to any other $100 bill, 
-you can freely exchange these bills with one another because they have the same value, 
-no matter the serial number on the specific $100 bill. 
+A currency is an example of a fungible asset.
+A $100 bill is equal to any other $100 bill,
+you can freely exchange these bills with one another because they have the same value,
+no matter the serial number on the specific $100 bill.
 They are fungible bills.
 
 On the other hand, a Non-Fungible Token (NFT) is a unique token. So collectible items are non-fungible assets, and can be represented by NFTs.
 
 ### ERC-721
 
-ERC-721 was the first standard, and currently still the most popular standard, 
-for representing non-fungible digital assets. 
+ERC-721 was the first standard, and currently still the most popular standard,
+for representing non-fungible digital assets.
 
 The most important properties for this kind of asset is to have a way to check who owns what and a way to move things around.
 
@@ -62,7 +62,7 @@ Here is a summary of the steps to be taken to build our token:
 10. Create client side application;
 11. Interact with the smart contract.
 
-Steps 1 to 4 are explained in detail in the tutorial link below: 
+Steps 1 to 4 are explained in detail in the tutorial link below:
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
@@ -92,7 +92,7 @@ The requirements 1 to 3 are explained in detail in the tutorial links below:
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
-For requirement 4, installing Metamask, connecting to RSK testnet, and getting some tR-BTCs, this is explained step-by-step in the tutorial link below: 
+For requirement 4, installing Metamask, connecting to RSK testnet, and getting some tR-BTCs, this is explained step-by-step in the tutorial link below:
 
 * [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
@@ -100,7 +100,7 @@ For requirement 4, installing Metamask, connecting to RSK testnet, and getting s
 
 Create a new folder named `colors`.
 
-Inside the folder `colors`, do the steps below, following instructions from the tutorial 
+Inside the folder `colors`, do the steps below, following instructions from the tutorial
 [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
 1. Initialize an empty Truffle project;
@@ -127,7 +127,7 @@ We have 3 requirements to build the frontend:
 
 ## Create React App
 
-This is the official template to create single-page React applications. It offers a build setup with no configuration. 
+This is the official template to create single-page React applications. It offers a build setup with no configuration.
 
 To learn more: [create react app](https://reactjs.org/docs/create-a-new-react-app.html#create-react-app)
 
@@ -153,7 +153,7 @@ Now you have a new folder named `app` and we will customize our frontend later.
 
 ## Web3.js
 
-Web3.js helps us to develop websites or clients that interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts. 
+Web3.js helps us to develop websites or clients that interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts.
 
 The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to interact with the front end and the RSK local node.
 
@@ -170,7 +170,7 @@ The option `-E` is to save dependencies with an exact version rather than using 
 
 ![web3 successful installation](/assets/img/tutorials/create-a-collectable-token/image-05.png)
 
-More info: 
+More info:
 [web3.js](https://web3js.readthedocs.io/)
 
 ## Bootstrap
@@ -209,17 +209,17 @@ console.log("Gas price Testnet: " + gasPriceTestnet);
 const path = require("path");
 
 module.exports = {
-  networks: { 
+  networks: {
     testnet: {
       provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9
     },
-  }, 
+  },
 
-  contracts_build_directory: path.join(__dirname, "app/src/contracts"), 
-  
+  contracts_build_directory: path.join(__dirname, "app/src/contracts"),
+
   compilers: {
     solc: {
       version: "0.5.7",
@@ -234,7 +234,7 @@ It looked like this:
 
 ## About contracts_build_directory
 
-We add the library `path` to use with a new parameter `contracts_build_directory` that defines the locale where files for contracts artifacts, like abi and deployed addresses are saved. 
+We add the library `path` to use with a new parameter `contracts_build_directory` that defines the locale where files for contracts artifacts, like abi and deployed addresses are saved.
 
 It will be located in a different folder: `app/src/contracts`.
 
@@ -283,12 +283,12 @@ It looked like this:
 
 ## Understanding the smart contract
 
-To create our ERC-721 Token, we will import `ERC721Full` from OZ. 
-This library itself imports several other libraries such as `SafeMath.sol`, 
-the standards for this kind of token and some extra features, 
-like enumeration and metadata. 
+To create our ERC-721 Token, we will import `ERC721Full` from OZ.
+This library itself imports several other libraries such as `SafeMath.sol`,
+the standards for this kind of token and some extra features,
+like enumeration and metadata.
 
-With metadata we can customize our token by giving it a name and a symbol at constructor. 
+With metadata we can customize our token by giving it a name and a symbol at constructor.
 
 This function gets run only once; whenever the smart contract is created the first time, i.e., deployed to the blockchain.
 
@@ -296,12 +296,12 @@ We are calling the constructor function of the parent smart contract `ERC721Full
 
 The color management is performed with the variable `colors`, which is an array of colors and `_colorExists`, which is a fast "lookup" to know when a color is already minted.
 
-Also we have a function to create new color tokens. 
-This is the basic structure of the function. 
-It will accept 1 argument of the `bytes3` type, which will be a hexadecimal code that corresponds to the token's color. 
+Also we have a function to create new color tokens.
+This is the basic structure of the function.
+It will accept 1 argument of the `bytes3` type, which will be a hexadecimal code that corresponds to the token's color.
 
-For example, if we want to create a green token, 
-we will pass "#00FF00" when we call this function. 
+For example, if we want to create a green token,
+we will pass "#00FF00" when we call this function.
 Or if we want to create a red token, we'll use "#FF0000".
 
 # Compile a smart contract
@@ -320,9 +320,9 @@ First of all, we need to create a file in Truffle structure with instructions to
 
 ## Create file 2_deploy_contracts.js
 
-Folder `migrations` has JavaScript files that help you deploy contracts to the network. 
-These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time. 
-A history of previously run migrations is recorded on-chain through a special Migrations contract which is automatically created by Truffle. 
+Folder `migrations` has JavaScript files that help you deploy contracts to the network.
+These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time.
+A history of previously run migrations is recorded on-chain through a special Migrations contract which is automatically created by Truffle.
 (source: [running migrations](https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations))
 
 In the `migrations` folder, create the file `2_deploy_contracts.js`
@@ -379,7 +379,7 @@ This is the transaction at RSK testnet:
 
 Our NFT Color is published at RSK Testnet.
 
-Save the contract address of token, it can be used later: 
+Save the contract address of token, it can be used later:
 
 ```javascript
 tokenAddress = "0x5505a54a8F3e63D37095c37d9f8AcF0f4900B61F"
@@ -387,14 +387,14 @@ tokenAddress = "0x5505a54a8F3e63D37095c37d9f8AcF0f4900B61F"
 
 # Client side application
 
-Now let's start building out the front end that will interact with the smart contract. 
+Now let's start building out the front end that will interact with the smart contract.
 It will allow us to create new color tokens, and list out all of the existing tokens in your wallet.
 
 In the `app` folder, we need to customize some files.
 
 ## index.html
 
-In the `app\public` folder, open `index.html` file. 
+In the `app\public` folder, open `index.html` file.
 
 At `head` section, update the `title`:
 
@@ -613,7 +613,7 @@ class App extends Component {
             { this.state.colors.map((colorStr, key) => {
               return (
                 <div key={key} className="col-md-3 mb-3">
-                  <div className="token" style={{ backgroundColor: colorStr }}></div>
+                  <div className="token" style={ { backgroundColor: colorStr } }></div>
                   <div>{colorStr}</div>
                 </div>
               );
@@ -795,7 +795,7 @@ I will enter the color red, value `#FF0000`.
 
 Click on the `confirm` button.
 
-Great! Now I have my first color collectable token: 
+Great! Now I have my first color collectable token:
 
 ![Red minted](/assets/img/tutorials/create-a-collectable-token/image-25.png)
 
