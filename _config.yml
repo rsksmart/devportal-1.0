@@ -46,6 +46,5 @@ exclude:
 plugins:
  - jekyll-last-modified-at
  - jekyll-feed
- - jekyll-github-metadata
  - jekyll-sitemap
  - jemoji

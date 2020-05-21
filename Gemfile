@@ -5,19 +5,19 @@ ruby "2.6.3"
 
 source "https://rubygems.org"
 
-gem "rouge", "3.11.0"
+gem "kramdown", "2.2.1"
+gem "rouge", "3.19.0"
 gem "faraday", "0.17.1"
 gem "wdm", "0.1.1" if Gem.win_platform?
-gem "html-proofer", "3.15.0"
+gem "html-proofer", "3.15.3"
 gem "rake", "13.0.1"
-gem "mdl", "0.2.1"
+gem "mdl", "0.9.0"
 
-gem "jekyll", "3.8.5"
+gem "jekyll", "4.0.1"
 group :jekyll_plugins do
-  gem "jekyll-feed", "0.11"
-  gem 'github-pages', "202"
-  gem "jekyll-last-modified-at", "1.2.1"
-  gem "jekyll-github-metadata", "2.12.1"
-  gem "jemoji", "0.10.2"
+  gem "jekyll-feed", "0.13.0"
+  gem "jekyll-sitemap", "1.4.0"
+  gem "jekyll-last-modified-at", "1.3.0"
+  gem "jemoji", "0.12.0"
   gem "jekyll-target-blank", "2.0.0" if ENV["RAKE_BUILD_FOR"] == "prod" or ENV["GH_ENV"] == "gh_pages"
 end
