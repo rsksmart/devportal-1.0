@@ -20,7 +20,7 @@ You can edit Solidity using any text editor but it is a good idea to use more ad
 
 #### Truffle Framework
 
-Truffle is an open source framework that facilitates the testing and development of smart contracts. It allows you to connect to a local RSK node and call the compiler, run unit tests and publish your smart contracts easily. Check out this tutorial which demonstrates the usage of Truffle and Ganache with a local RSK node [here](https://github.com/rsksmart/truffle-integration).
+Truffle is an open source framework that facilitates the testing and development of smart contracts. It allows you to connect to a local RSK node and call the compiler, run unit tests, and publish your smart contracts easily. Check out [this tutorial](https://github.com/rsksmart/truffle-integration) which demonstrates the usage of Truffle and Ganache with a local RSK node.
 
 In this tutorial, we will use Truffle for compiling and publishing our smart contracts.
 
@@ -193,7 +193,7 @@ We are going to deploy the example smart contract on to RSK Testnet.
 
 #### Testnet and Faucet
 
-First, we need to obtain an account on RSK Testnet and get some test RSK tokens from the testnet Faucet.
+First, we need to obtain an account on RSK Testnet and get some tR-BTC from the Testnet faucet.
 
 **Create new Account with MetaMask**
 
@@ -206,9 +206,9 @@ First, we need to obtain an account on RSK Testnet and get some test RSK tokens 
 
 <img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/assets/img/tutorials/port-ethereum-dapps/metamask-testnet.png">
 
-**Get free token**
+**Get tR-BTC**
 
-Visit the [faucet website](https://faucet.testnet.rsk.co/) to gain some test RSK token to use in the Testnet
+Visit the [faucet](https://faucet.testnet.rsk.co/) to gain some tR-BTC to use in the Testnet.
 
 Enter the account address from MetaMask and wait several minutes for MetaMask to refresh the new balance.
 
@@ -279,7 +279,7 @@ Now use the following command to transfer 1 token from the minter account to ano
 EIP20.deployed().then((instance=>instance.transfer("0x7dadb9d442cfe7fc75fd472d63afc16934d7aa44", 1)))
 ```
 
-After its successful execution, check the minter account's balance again to see the changed balance.
+After its successful execution, check the minter's account again to see the change in balance.
 
 ```javascript
 EIP20.deployed().then((instance=>instance.balanceOf("0xa07982385a16f0C7a9eEbAD5F44d2093A2856997").then(b=>b.toNumber())))
