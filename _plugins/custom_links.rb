@@ -27,7 +27,21 @@ def customise_links!(p)
       process_link_external!(a)
     elsif href =~ /\A\//i
       # handle internal absolute link
-      process_link_internal_absolute!(a, href.to_s, url)
+      process_link_internal_absolute!(a, href.to_s, 'href', url)
+    end
+  end
+  dom.css('img, script').each do |img|
+    src = img.get_attribute('src')
+    if src =~ /\A\//i
+      # handle internal absolute link
+      process_link_internal_absolute!(img, src.to_s, 'src', url)
+    end
+  end
+  dom.css('link').each do |link|
+    href = link.get_attribute('href')
+    if href =~ /\A\//i
+      # handle internal absolute link
+      process_link_internal_absolute!(link, href.to_s, 'href', url)
     end
   end
   p.output = dom.to_s
@@ -40,12 +54,12 @@ def process_link_external!(a)
   a.set_attribute('target', '_blank')
 end
 
-def process_link_internal_absolute!(a, href, from_url)
+def process_link_internal_absolute!(elem, href, attr_name, from_url)
   # for example when the current page is at /foo/bar/baz
   # and the link is for /quux/oof
   # this should change the link to ../../quux/oof
   from_path = Pathname.new(from_url)
   to_path = Pathname.new(href)
-  relative_href = to_path.relative_path_from(from_path).to_s
-  a.set_attribute('href', relative_href)
+  relative_path = to_path.relative_path_from(from_path).to_s
+  elem.set_attribute(attr_name, relative_path)
 end
