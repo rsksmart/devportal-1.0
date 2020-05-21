@@ -91,4 +91,4 @@ workflows:
             - docs_build
           filters:
             branches:
-              only: proj/rouge-language-aliases
+              only: proj/relative-links
