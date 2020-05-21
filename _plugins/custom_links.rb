@@ -14,7 +14,7 @@ def customise_links!(p)
     return
   end
   url = p.url.to_s
-  if (p.permalink&.end_with?('.html'))
+  if (p.permalink&.end_with?('.html', '.htm'))
     # need to indent one extra level for the purposes of
     # relative URL comparison
     url = Pathname.new(url).parent.to_s
@@ -61,5 +61,8 @@ def process_link_internal_absolute!(elem, href, attr_name, from_url)
   from_path = Pathname.new(from_url)
   to_path = Pathname.new(href)
   relative_path = to_path.relative_path_from(from_path).to_s
+  if (!relative_path&.end_with?('.js', '.css', '.png', '.svg', '.jpeg', '.jpg', '.html', '.htm'))
+    relative_path = relative_path + '/'
+  end
   elem.set_attribute(attr_name, relative_path)
 end
