@@ -334,7 +334,7 @@ li>a {
 }
 
 .menu-container a[target="_blank"]:after {
-	    content: "";
+    content: "";
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -490,7 +490,8 @@ code {
     background: transparent!important;
 }
 
-.main-central-col a:not([href*='https://developers.rsk.co']):not([href^='#']):not([href^='/']):after {content: "";
+.main-central-col a[target="_blank"]:after {
+    content: "";
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -500,7 +501,8 @@ code {
     margin-left: 5px;
     margin-bottom: 3px;}
 
-#results-container a:not([href*='https://developers.rsk.co']):not([href^='#']):not([href^='/']):after {content: "";
+#results-container a[target="_blank"]:after {
+    content: "";
     width: 0px;
     height: 0px;
    }
