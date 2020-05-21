@@ -8,7 +8,7 @@ description: "How update RskJ, the RSK node, to a newer version, and verify that
 Sign up for our RSK Node update notifications. We will use your email only for the purpose of keeping your application connected to the most up to date version of the node.
 
 <!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+<link href="https://cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
 <style>#mc_embed_signup form { padding: 0; }</style>
 <div id="mc_embed_signup">
 <form action="https://rifos.us15.list-manage.com/subscribe/post?u=f52247d792ffe22c6f7be1379&amp;id=bb20694a36" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
