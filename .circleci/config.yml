@@ -91,4 +91,4 @@ workflows:
             - docs_build
           filters:
             branches:
-              only: proj/jekyll-4
+              only: master
