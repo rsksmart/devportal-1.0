@@ -9,7 +9,7 @@ desc "build site for production purposes"
 task :build_for_prod => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
   ENV["RAKE_BUILD_FOR"] = "prod"
-  sh "bundle exec jekyll build --config \"_config.yml\""
+  sh "bundle exec jekyll build --trace --config \"_config.yml\""
   puts "rake> " + task.name + ": OK!"
 end
 
