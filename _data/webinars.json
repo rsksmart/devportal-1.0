@@ -1505,10 +1505,15 @@
       "presenterContact": "@PedroMPrete",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ethereum-bridge",
       "tags": " idioma-english audiencia-developers audiencia-general",
-      "image": "img/events/event1.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
+      "image": "img/events/bridge.jpg",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://www.slideshare.net/PedroPrete/webinar-in-english-for-the-token-bridge-between-rsk-and-ethereum"
+        }
+      ],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=3ZOvpLE3MvM",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1532,10 +1537,15 @@
       "presenterContact": "@PedroMPrete",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol",
       "tags": " idioma-spanish audiencia-developers audiencia-general",
-      "image": "img/events/event8.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
+      "image": "img/events/bridge.jpg",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://www.slideshare.net/PedroPrete/webinar-en-espaol-del-token-bridge-entre-rsk-y-ethereum"
+        }
+      ],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=6a4KD2CElQY",
+      "_isPast": true
     },
     {
       "type": "event/2",
