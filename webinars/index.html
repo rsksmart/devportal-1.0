@@ -102,10 +102,9 @@
       </section>
 
       <!-- Calendar -->
-      {% capture now %}{{ 'now' | date: '%s' | plus: 0 %}}{% endcapture %}
-      {% assign events = (site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'") %}
-      {% assign past_events = (events | where_exp: "event", "event._isPast == true" | sort: 'timestamp' | reverse) %}
-      {% assign future_events = (events | where_exp: "event", "event._isPast == false" | sort: 'timestamp') %}
+      {% assign events = site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'" %}
+      {% assign past_events = events | where_exp: "event", "event._isPast == true" | sort: 'timestamp' | reverse %}
+      {% assign future_events = events | where_exp: "event", "event._isPast == false" | sort: 'timestamp' %}
 
       <section id="calendar">
          <img class="circle-blue" src="img/circles/circle-blue.png">
