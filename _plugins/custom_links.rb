@@ -22,7 +22,7 @@ def customise_links!(p)
   dom = Nokogiri::HTML(p.output)
   dom.css('a').each do |elem|
     href = elem.get_attribute('href')
-    if href =~ /\Ahttp(s)?:\/\//i
+    if (href =~ /\Ahttp(s)?:\/\//i || href =~ /\A\/\//i)
       # handle external link
       process_link_external!(elem)
     elsif href =~ /\A\//i
@@ -32,14 +32,14 @@ def customise_links!(p)
   end
   dom.css('img, script').each do |elem|
     src = elem.get_attribute('src')
-    if src =~ /\A\//i
+    if (src =~ /\A\//i && !(src =~ /\A\/\//i))
       # handle internal absolute link
       process_link_internal_absolute!(from_url, elem, 'src')
     end
   end
   dom.css('link').each do |elem|
     href = elem.get_attribute('href')
-    if href =~ /\A\//i
+    if (href =~ /\A\//i && !(href =~ /\A\/\//i))
       # handle internal absolute link
       process_link_internal_absolute!(from_url, elem, 'href')
     end
