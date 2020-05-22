@@ -37,7 +37,7 @@ TRIGGER:-PT10M
 DESCRIPTION:What is Blockchain?\nWhat is Bitcoin? 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269504497/
+URL;VALUE=URI:https://zoom.us/j/915605031
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200330T030000Z
@@ -70,7 +70,7 @@ DESCRIPTION:Create and Deploy your first Smart Contract to the RSK Network
   using Remix and Metamask 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269565719/
+URL;VALUE=URI:https://zoom.us/j/850527491
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200417T013000Z
@@ -102,7 +102,7 @@ DESCRIPTION:Crea tu primer smart contract en RSK usando Remix and Nifty Wa
  llet 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096
+URL;VALUE=URI:https://zoom.us/j/182679010
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200417T013000Z
@@ -134,7 +134,7 @@ DESCRIPTION:Como criar smart contracts na RSK network utilizando Remix e M
  etamask 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269566069/
+URL;VALUE=URI:https://zoom.us/j/211449645
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200512T140300Z
@@ -164,8 +164,7 @@ TRIGGER:-PT10M
 DESCRIPTION:Gasnet: la red Blockchain para el Ecosistema de Gas 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497
- /
+URL;VALUE=URI:https://zoom.us/j/666038949
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200330T030000Z
@@ -195,8 +194,7 @@ TRIGGER:-PT10M
 DESCRIPTION:¿Qué es RSK?\nHerramientas para ganar un Hackathon 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269565762
- /
+URL;VALUE=URI:https://zoom.us/j/388106531
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200327T110000Z
@@ -228,7 +226,8 @@ TRIGGER:-PT10M
 DESCRIPTION:What is RSK?\nWhat is Nifty Wallet?\nSet your first wallet! 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677327/
+URL;VALUE=URI:https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_
+ z5dhvyw
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200417T013000Z
@@ -261,8 +260,8 @@ DESCRIPTION:¿Qué es RSK?\n¿Qué es Nifty Wallet?\nPrograma tu primera carte
  ra 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016
- /
+URL;VALUE=URI:https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-Ij
+ MyuCbOg
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200327T070000Z
@@ -294,7 +293,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Run your own local RSK node with Geth attached 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269677379/
+URL;VALUE=URI:https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2SR
+ Y1EpNBg
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200423T043000Z
@@ -327,7 +327,8 @@ DESCRIPTION:Utilizando Geth attach para interagir com um nó local da rede
  RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269676954/
+URL;VALUE=URI:https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt
+ 1fKj-HA
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200512T140300Z
@@ -359,8 +360,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Instala tu primer nodo usando Geth con tu nodo local de RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265
- /
+URL;VALUE=URI:https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_
+ qVoNtSg
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200417T013000Z
@@ -391,7 +392,8 @@ TRIGGER:-PT10M
 DESCRIPTION:RIF Services overview 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269685307/
+URL;VALUE=URI:https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1
+ P7fuXwQ
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200329T140000Z
@@ -422,8 +424,8 @@ TRIGGER:-PT10M
 DESCRIPTION:¿Qué es Bitcoin?\n¿Qué es Blockchain? 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269812231
- /
+URL;VALUE=URI:https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpq
+ Vap7aaA
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200403T140000Z
@@ -454,7 +456,8 @@ TRIGGER:-PT10M
 DESCRIPTION:What is Decentralized Finance or DeFi? 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269838616/
+URL;VALUE=URI:https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32
+ t5qoEvg
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200403T140000Z
@@ -486,8 +489,8 @@ TRIGGER:-PT10M
 DESCRIPTION:¿Qué son las Finanzas Descentralizadas? 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269835498
- /
+URL;VALUE=URI:https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85A
+ fEzzqig
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200403T140000Z
@@ -518,7 +521,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Introducción a los servicios de RIF 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269837767
+URL;VALUE=URI:https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kn
+ o-k72oQ
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200403T140000Z
@@ -630,7 +634,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Por dentro do Solidty 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269897747/
+URL;VALUE=URI:https://zoom.us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oY
+ uQ3XzQg
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200407T000000Z
@@ -661,7 +666,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Inside Solidity 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269897805/
+URL;VALUE=URI:https://zoom.us/meeting/register/uJMqceCrpj8vwF12sWEGGYUwakq
+ npBe5rg
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200417T013000Z
@@ -692,8 +698,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Solidity por Dentro 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269897477
- /
+URL;VALUE=URI:https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfW
+ nHjPkKw
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200420T013000Z
@@ -724,7 +730,8 @@ TRIGGER:-PT10M
 DESCRIPTION:RIF Name Services (Spanish) 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269959329
+URL;VALUE=URI:https://zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElE
+ Y6fqrWA
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200425T135000Z
@@ -755,7 +762,8 @@ TRIGGER:-PT10M
 DESCRIPTION:RIF Name Services (English) 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269959370/
+URL;VALUE=URI:https://zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tne
+ iGkFDAw
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200425T135000Z
@@ -787,7 +795,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Crie seu primeiro frontend para um Smart Contract 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269959494/
+URL;VALUE=URI:https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZRa
+ KHrhYZw
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200512T140300Z
@@ -819,7 +828,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Create your first frontend for Smart Contracts 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/269959427
+URL;VALUE=URI:https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQW
+ t5_q1Ug
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200512T140300Z
@@ -877,7 +887,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Crea tu primer frontend para Smart Contracts 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915
+URL;VALUE=URI:https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1t
+ Xdfky6w
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200425T135000Z
@@ -908,7 +919,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Create your own token on the RSK network 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120775/
+URL;VALUE=URI:https://attendee.gotowebinar.com/register/462639569130641230
+ 2
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200423T043000Z
@@ -939,7 +951,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Como criar seu token na RSK network 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120781/
+URL;VALUE=URI:https://attendee.gotowebinar.com/register/409980328888097895
+ 8
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200512T140300Z
@@ -970,8 +983,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Crea tu propio token en RSK network 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270120697
- /
+URL;VALUE=URI:https://attendee.gotowebinar.com/register/436194445312892417
+ 4
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200418T094000Z
@@ -1002,7 +1015,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Learn how to use Truffle boxes with RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270250688/
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle
+ -boxes
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200429T100000Z
@@ -1033,7 +1047,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Como utilizar Truffle box com RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270248291/
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-bo
+ x-com-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200429T100000Z
@@ -1065,8 +1080,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Aprende a usar Truffle Boxes con RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270249389
- /
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-b
+ oxes-con-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200429T100000Z
@@ -1098,7 +1113,7 @@ TRIGGER:-PT10M
 DESCRIPTION:Create your first frontend for Smart Contracts 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120788/
+URL;VALUE=URI:https://attendee.gotowebinar.com/register/877417282457269771
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200422T221100Z
@@ -1131,7 +1146,8 @@ DESCRIPTION:An introduction to RIF Lumino:\nConcepts\, ideas and architect
  ure 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270120801/
+URL;VALUE=URI:https://attendee.gotowebinar.com/register/645500777311186587
+ 0
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200419T053600Z
@@ -1163,8 +1179,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Introducción a RIF Lumino:\nConceptos\, ideas y arquitectura 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270120715
- /
+URL;VALUE=URI:https://attendee.gotowebinar.com/register/242859399317292366
+ 2
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200419T053600Z
@@ -1195,8 +1211,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Blockchain and RSK use cases 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270247186
- /
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-c
+ ases
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200425T131100Z
@@ -1230,8 +1246,8 @@ DESCRIPTION:Blockchain para la industria financiera: el caso del Banco Cen
  tral de la República Argentina 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270248095
- /
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/blockchain-para-la-indus
+ tria-financiera
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200425T131100Z
@@ -1263,7 +1279,8 @@ TRIGGER:-PT10M
 DESCRIPTION:How to create your own collectable token on the RSK network 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270378750
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-to-create-your-own-c
+ ollectable-token
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200424T154500Z
@@ -1295,7 +1312,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Como criar seu token colecionável na RSK network 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270378822
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/como-criar-seu-token-col
+ ecionavel
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200512T140300Z
@@ -1327,7 +1345,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Crea tu propio non-fungible token en la red de RSK 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270378844
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/crea-tu-propio-non-fungi
+ ble-token
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200425T024500Z
@@ -1358,7 +1377,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Bitgive + IOV Labs for Covid-19 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270367793/
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covi
+ d
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200502T135700Z
@@ -1388,7 +1408,7 @@ TRIGGER:-PT10M
 DESCRIPTION:RIF On Chain 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270370376/
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-on-chain
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200502T135700Z
@@ -1418,8 +1438,7 @@ TRIGGER:-PT10M
 DESCRIPTION:RIF On Chain 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270378726
- /
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200502T135700Z
@@ -1451,8 +1470,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Casos de uso de Blockchain construidos sobre RSK y RIF 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986
- /
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-ri
+ f
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200505T193300Z
@@ -1550,7 +1569,7 @@ TRIGGER:-PT10M
 DESCRIPTION:RSK - Ethereum Token Bridge 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270653530/
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/ethereum-bridge
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200515T091500Z
@@ -1581,8 +1600,8 @@ TRIGGER:-PT10M
 DESCRIPTION:RSK - Ethereum Token Bridge 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270653808
- /
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridg
+ e-en-espanol
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200515T091500Z
@@ -1614,7 +1633,8 @@ TRIGGER:-PT10M
 DESCRIPTION:From Bitcoin Mining to RSK Merged Mining 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270656095/
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-r
+ sk-merged-mining
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200515T091500Z
@@ -1646,8 +1666,8 @@ TRIGGER:-PT10M
 DESCRIPTION:De Minería de Bitcoin a Merged Mining sobre RSK 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/RSKBuenosAires/events/270655653
- /
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-
+ merged-mining
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200515T091500Z
@@ -1679,7 +1699,8 @@ TRIGGER:-PT10M
 DESCRIPTION:Why we need Decentralized Storage and Communications 
 END:VALARM
 CATEGORIES:Talk
-URL;VALUE=URI:https://www.meetup.com/es-ES/rsk-community/events/270662407/
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/why-we-need-decentralize
+ d-storage
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200515T091500Z
@@ -1737,5 +1758,72 @@ CATEGORIES:Talk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200517T091500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-017@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200527T190000Z
+DTSTART:20200527T190000Z
+SUMMARY:DeFi para Desarrolladores Blockchain 
+DESCRIPTION:DeFi para Desarrolladores Blockchain\n\nOnline only\n\nRSVP: h
+ ttps://www.meetup.com/es-ES/RSKBuenosAires/events/270797663/\n\nVideo stre
+ am: https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockcha
+ in\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>DeFi pa
+ ra Desarrolladores Blockchain</span></div>\n<div><span>Online only</span><
+ /div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-E
+ S/RSKBuenosAires/events/270797663/\">www.meetup.com/es-ES/RSKBuenosAires/e
+ vents/270797663/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blo
+ ckchain\">app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockchain
+ </a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Angel Lopez\, Software Developer\, @ajlopez":mailto:develope
+ rs@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:DeFi para Desarrolladores Blockchain 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/defi-para-desarrolladore
+ s-blockchain
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200522T034500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202005-018@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200529T180000Z
+DTSTART:20200529T180000Z
+SUMMARY:RSK Ecosystem Fund:\nCriteria\, process\, first round of investmen
+ ts review 
+DESCRIPTION:RSK Ecosystem Fund:\nCriteria\, process\, first round of inves
+ tments review\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-com
+ munity/events/270798560/\n\nVideo stream: https://app.livestorm.co/iov-lab
+ s-1/rsk-ecosystem-fund\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Eco
+ system Fund:\nCriteria\, process\, first round of investments review</span
+ ></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><spa
+ n><a href=\"https://www.meetup.com/es-ES/rsk-community/events/270798560/\"
+ >www.meetup.com/es-ES/rsk-community/events/270798560/</a></span></div>\n<d
+ iv><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov
+ -labs-1/rsk-ecosystem-fund\">app.livestorm.co/iov-labs-1/rsk-ecosystem-fun
+ d</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Katerina Stroponiati\, Monday Capital Founder Partner\, @kat
+ erinastro":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Ecosystem Fund:\nCriteria\, process\, first round of inves
+ tments review 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200522T034500Z
 END:VEVENT
 END:VCALENDAR
