@@ -126,7 +126,7 @@ function processEventV1(event) {
   const {
     id,
     timestamp,
-    url,
+    videoStreamUrl,
     location,
     locationCategory,
     category,
@@ -152,7 +152,7 @@ function processEventV1(event) {
     start: timestampDate,
     timestamp: timestampDate,
     lastModified: lastModifiedDate,
-    url,
+    url: videoStreamUrl,
     summary: [title, subtitle].join(' '),
     location: renderedLocation,
     categories: [
