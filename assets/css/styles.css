@@ -41,7 +41,7 @@ button:focus {
 }
 
 .navbar-dark .navbar-toggler-icon {
-   background-image: url("/assets/img/burger_light.svg");
+   background-image: url('../img/burger_light.svg');
 }
 
 .logo {
@@ -1142,13 +1142,13 @@ img {
 }
 
 .owl-prev::after {
-    content: url('/assets/img/prev-arrow.png');
+    content: url('../img/prev-arrow.png');
     width: 32px;
     height: 36px;
 }
 
 .owl-next::after {
-    content: url('/assets/img/next-arrow.png');
+    content: url('../img/next-arrow.png');
 }
 
 #stats-carousel.owl-carousel .item img {
@@ -1677,7 +1677,7 @@ img {
     border-width: 0px 129px 0px 139px;
     border-style: solid;
     border-image:
-        url("/assets/img/custom-terminals/title-bar.png")
+        url('../img/custom-terminals/title-bar.png')
         0 129 0 139
         fill;
     color: transparent;
@@ -1690,7 +1690,7 @@ img {
     border-width: 16px 19px 16px 2px;
     border-style: solid;
     border-image:
-      url("/assets/img/custom-terminals/body.png")
+      url('../img/custom-terminals/body.png')
       16 19 16 2
       stretch;
       color: #e0e0e0;
@@ -1722,7 +1722,7 @@ img {
 
 .sprite-transform-animation.rsk-mining {
     width: 1800%;
-    background-image: url('/assets/img/home/rsk-mining-animation-sprite.png');
+    background-image: url('../img/home/rsk-mining-animation-sprite.png');
     animation-name: sprite-transform-animation-keyframes-18;
     animation-duration: 10s;
     animation-timing-function: steps(17);
@@ -1731,7 +1731,7 @@ img {
 
 .sprite-transform-animation.rsk-peg {
     width: 900%;
-    background-image: url('/assets/img/home/rsk-peg-animation-sprite.png');
+    background-image: url('../img/home/rsk-peg-animation-sprite.png');
     animation-name: sprite-transform-animation-keyframes-9;
     animation-duration: 20s;
     animation-timing-function: steps(8);
