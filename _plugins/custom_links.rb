@@ -63,10 +63,7 @@ def process_link_internal_absolute!(from_url, elem, attr_name)
   # this should change the link to ../../quux/oof
   from_path = Pathname.new(from_url)
   to_path = Pathname.new(elem.get_attribute(attr_name))
-  relative_path = to_path.relative_path_from(from_path).to_s
-  if (!relative_path&.end_with?('.js', '.css', '.png', '.svg', '.jpeg', '.jpg', '.html', '.htm'))
-    relative_path = relative_path + '/'
-  end
+  relative_path = get_relative_path(from_path, to_path)
   elem.set_attribute(attr_name, relative_path)
 end
 
@@ -83,6 +80,19 @@ def process_meta_refresh_internal_absolute!(from_url, elem)
     redirect_time = 0;
   end
   to_path = Pathname.new(redirect_url)
-  relative_path = to_path.relative_path_from(from_path).to_s
+  relative_path = get_relative_path(from_path, to_path)
   elem.set_attribute('content', "#{redirect_time}; URL=#{relative_path}")
+end
+
+def get_relative_path(from_path, to_path)
+  relative_path = to_path.relative_path_from(from_path).to_s
+  if (
+    !to_path.to_s.include?('#') &&
+    !relative_path&.end_with?(
+      '.js', '.css', '.png', '.svg', '.jpeg', '.jpg', '.html', '.htm'
+    )
+  )
+    relative_path = relative_path + '/'
+  end
+  return relative_path.to_s
 end
