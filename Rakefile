@@ -9,7 +9,7 @@ desc "build site for production purposes"
 task :build_for_prod => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
   ENV["RAKE_BUILD_FOR"] = "prod"
-  sh "bundle exec jekyll build --config \"_config.yml\""
+  sh "bundle exec jekyll build --trace --config \"_config.yml\""
   puts "rake> " + task.name + ": OK!"
 end
 
@@ -29,11 +29,18 @@ task :prod => [:build_for_prod, :rebuild_search_json] do |task|
   puts "rake> " + task.name + ": OK!"
 end
 
-desc "development mode where site is rebuilt each time a file is saved"
+desc "development mode where full site is rebuilt each time a file is saved"
 task :dev => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
   ENV["RAKE_BUILD_FOR"] = "dev"
   sh "bundle exec jekyll serve --trace --config \"_config.yml,_config.localhost.yml\""
+end
+
+desc "development mode where site is incrementally rebuilt each time a file is saved"
+task :devi => [] do |task|
+  puts "rake> " + task.name + ": " + task.comment
+  ENV["RAKE_BUILD_FOR"] = "dev"
+  sh "bundle exec jekyll serve --incremental --trace --config \"_config.yml,_config.localhost.yml\""
 end
 
 desc "build site for testing purposes"
