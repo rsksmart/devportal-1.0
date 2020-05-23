@@ -80,31 +80,31 @@ Tutorial: https://developers.rsk.co/tutorials/tokens/create-a-collectable-token/
 2020-05-07T19:00:00-05:00,202005-003,2,2020-04-24T23:45:00-03:00,confirmed,,developers,https://www.meetup.com/es-ES/RSKBuenosAires/events/270378844,Crea tu propio non-fungible token en la red de RSK,Workshop,online,Online only,Spanish,Dulce Villarreal ,Developer Advocate,@Dulce_vird,https://app.livestorm.co/iov-labs-1/crea-tu-propio-non-fungible-token,
 2020-04-23T21:00:00+08:00,202004-027,2,2020-04-22T19:11:00-03:00,confirmed,"Slides: https://docs.google.com/presentation/d/e/2PACX-1vQNSiv3jzp78IYyJTnqHEv1rfyLBEkosM2r8Y-VvzT0Obc3UWK4wgtpO9b50cJ42QqWYnQxUlnOsW5O/pub?start=false&loop=false&delayms=600000
 Notes: https://gist.github.com/bguiz/e4297582b2627e090cf44455d33f2592
-Tutorial: https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/",developers,https://www.meetup.com/es-ES/rsk-community/events/270120788/,Create your first frontend for Smart Contracts,Workshop,online,Online only,English,Brendan Graetz,Developer Advocate,@bguiz,https://attendee.gotowebinar.com/register/877417282457269771,
+Tutorial: https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/",developers,https://www.meetup.com/es-ES/rsk-community/events/270120788/,Create your first frontend for Smart Contracts,Workshop,online,Online only,English,Brendan Graetz,Developer Advocate,@bguiz,https://attendee.gotowebinar.com/register/877417282457269771,https://youtu.be/E2kTSLFHPgk
 2020-04-24T14:00:00-03:00,202004-028,1,2020-04-19T02:36:00-03:00,confirmed,,developers,https://www.meetup.com/es-ES/rsk-community/events/270120801/,"An introduction to RIF Lumino:
-Concepts, ideas and architecture",Talk,online,Online only,English,Alejandro Narancio,Payments and Tools PO,@anarancio,https://attendee.gotowebinar.com/register/6455007773111865870,
+Concepts, ideas and architecture",Talk,online,Online only,English,Alejandro Narancio,Payments and Tools PO,@anarancio,https://attendee.gotowebinar.com/register/6455007773111865870,https://youtu.be/6tc05aep-W4
 2020-04-24T16:00:00-03:00,202004-029,1,2020-04-19T02:36:00-03:00,confirmed,,developers,https://www.meetup.com/es-ES/RSKBuenosAires/events/270120715/,"Introducción a RIF Lumino:
-Conceptos, ideas y arquitectura",Talk,online,Online only,Spanish,Alejandro Narancio,Payments and Tools PO,@anarancio,https://attendee.gotowebinar.com/register/2428593993172923662,
+Conceptos, ideas y arquitectura",Talk,online,Online only,Spanish,Alejandro Narancio,Payments and Tools PO,@anarancio,https://attendee.gotowebinar.com/register/2428593993172923662,https://youtu.be/WvvrIEaF0NA
 2020-04-27T14:00:00-03:00,202004-030,1,2020-04-25T10:11:00-03:00,confirmed,,startups enterprise,https://www.meetup.com/es-ES/RSKBuenosAires/events/270247186/,Blockchain and RSK use cases,Talk,online,Online only,English,"Gloria Vailati
 Maximiliano del Hoyo","CMO
 DeFi Lead","@gloriavailati
-@maxdh_ar",https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-cases,
+@maxdh_ar",https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-cases,https://youtu.be/dw_khz1Cw3Q
 2020-04-28T11:00:00-03:00,202004-031,1,2020-04-25T10:11:00-03:00,confirmed,,enterprise,https://www.meetup.com/es-ES/RSKBuenosAires/events/270248095/,Blockchain para la industria financiera: el caso del Banco Central de la República Argentina,Talk,online,Online only,Spanish,"Claudio Fiorillo
-Guillermo Villanueva",,,https://app.livestorm.co/iov-labs-1/blockchain-para-la-industria-financiera,
+Guillermo Villanueva",,,https://app.livestorm.co/iov-labs-1/blockchain-para-la-industria-financiera,https://youtu.be/fEnbO1y2qXM
 2020-05-04T15:00:00-03:00,202005-004,1,2020-05-02T10:57:00-03:00,confirmed,,enterprise,https://www.meetup.com/es-ES/rsk-community/events/270367793/,Bitgive + IOV Labs for Covid-19,Talk,online,Online only,English,"Connie Gallippi
 Agustin Pandolfini","Founder and Executive Director of BitGive
 Social Impact Lead","@conniegallippi
-@agustinfini",https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid,
-2020-05-05T19:00:00+02:00,202005-005,1,2020-05-02T10:57:00-03:00,confirmed,,general,https://www.meetup.com/es-ES/rsk-community/events/270370376/,RIF On Chain,Talk,online,Online only,English,Santiago Lavallaz,Director Capital Markets,@__Santino__,https://app.livestorm.co/iov-labs-1/rif-on-chain,
-2020-05-05T21:00:00+02:00,202005-006,1,2020-05-02T10:57:00-03:00,confirmed,,general,https://www.meetup.com/es-ES/RSKBuenosAires/events/270378726/,RIF On Chain,Talk,online,Online only,Spanish,Santiago Lavallaz,Director Capital Markets,@__Santino__,https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol,
-2020-05-08T14:00:00-03:00,202005-007,1,2020-05-05T16:33:00-03:00,confirmed,,startups enterprise,https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986/,Casos de uso de Blockchain construidos sobre RSK y RIF,Talk,online,Online only,Spanish,Gloria Vailati,CMO,@gloriavailati,https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif,
+@agustinfini",https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid,https://youtu.be/y7auw58TeXM
+2020-05-05T19:00:00+02:00,202005-005,1,2020-05-02T10:57:00-03:00,confirmed,,general,https://www.meetup.com/es-ES/rsk-community/events/270370376/,RIF On Chain,Talk,online,Online only,English,Santiago Lavallaz,Director Capital Markets,@__Santino__,https://app.livestorm.co/iov-labs-1/rif-on-chain,https://youtu.be/egk8WzquT3U
+2020-05-05T21:00:00+02:00,202005-006,1,2020-05-02T10:57:00-03:00,confirmed,,general,https://www.meetup.com/es-ES/RSKBuenosAires/events/270378726/,RIF On Chain,Talk,online,Online only,Spanish,Santiago Lavallaz,Director Capital Markets,@__Santino__,https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol,https://youtu.be/BIaDKSGG3C4
+2020-05-08T14:00:00-03:00,202005-007,1,2020-05-05T16:33:00-03:00,confirmed,,startups enterprise,https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986/,Casos de uso de Blockchain construidos sobre RSK y RIF,Talk,online,Online only,Spanish,Gloria Vailati,CMO,@gloriavailati,https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif,https://youtu.be/QpbtVlulChQ
 2020-05-12T16:30:00-04:00,202005-008,1,2020-05-15T17:15:00+08:00,confirmed,,startups enterprise,https://next.brella.io/events/consensusdistributed/schedule/118437,IOVlabs at Foundations - Consensus 2020,Conference,online,Online only,English,"Diego Gutierrez Zaldivar
 Brian Prilick
 Gabriel Kurman","CEO
 CTF Capital Managing Partner
 RIF Strategist","@dieguito
 @BrianPrilick
-@GabrielKurman",https://next.brella.io/events/consensusdistributed/schedule/118437,https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov
+@GabrielKurman",https://next.brella.io/events/consensusdistributed/schedule/118437,
 2020-05-13T14:30:00-04:00,202005-009,1,2020-05-15T17:15:00+08:00,confirmed,,startups enterprise,https://next.brella.io/events/consensusdistributed/schedule/118604,RIF: the building blocks of a truly decentralized Internet - Consensus 2020,Conference,online,Online only,English,"Gabriel Kurman
 Vojtech Simetka
 Alejandro Narancio
@@ -118,10 +118,13 @@ Marketplace PO","@GabrielKurman
 @anarancio
 @miltonberman
 @julianmrodri_",https://next.brella.io/events/consensusdistributed/schedule/118604,
-2020-05-18T14:00:00-03:00,202005-010,1,2020-05-15T17:15:00+08:00,confirmed,"Slides:https://www.slideshare.net/PedroPrete/webinar-in-english-for-the-token-bridge-between-rsk-and-ethereum",developers general,https://www.meetup.com/es-ES/rsk-community/events/270653530/,RSK - Ethereum Token Bridge,Talk,online,Online only,English,Pedro Prete,Interoperability PO,@PedroMPrete,https://app.livestorm.co/iov-labs-1/ethereum-bridge,https://www.youtube.com/watch?v=3ZOvpLE3MvM
-2020-05-18T18:00:00-03:00,202005-011,1,2020-05-15T17:15:00+08:00,confirmed,"Slides:https://www.slideshare.net/PedroPrete/webinar-en-espaol-del-token-bridge-entre-rsk-y-ethereum",developers general,https://www.meetup.com/es-ES/RSKBuenosAires/events/270653808/,RSK - Ethereum Token Bridge,Talk,online,Online only,Spanish,Pedro Prete,Interoperability PO,@PedroMPrete,https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol,https://www.youtube.com/watch?v=6a4KD2CElQY
+2020-05-18T14:00:00-03:00,202005-010,1,2020-05-15T17:15:00+08:00,confirmed,,developers general,https://www.meetup.com/es-ES/rsk-community/events/270653530/,RSK - Ethereum Token Bridge,Talk,online,Online only,English,Pedro Prete,Interoperability PO,@PedroMPrete,https://app.livestorm.co/iov-labs-1/ethereum-bridge,https://youtu.be/3ZOvpLE3MvM
+2020-05-18T18:00:00-03:00,202005-011,1,2020-05-15T17:15:00+08:00,confirmed,,developers general,https://www.meetup.com/es-ES/RSKBuenosAires/events/270653808/,RSK - Ethereum Token Bridge,Talk,online,Online only,Spanish,Pedro Prete,Interoperability PO,@PedroMPrete,https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol,https://youtu.be/6a4KD2CElQY
 2020-05-20T14:00:00-03:00,202005-012,1,2020-05-15T17:15:00+08:00,confirmed,,developers general,https://www.meetup.com/es-ES/rsk-community/events/270656095/,From Bitcoin Mining to RSK Merged Mining,Talk,online,Online only,English,Martin Medina,Mining Lead,@ThisIsTincho,https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merged-mining,
 2020-05-20T18:00:00-03:00,202005-013,1,2020-05-15T17:15:00+08:00,confirmed,,developers general,https://www.meetup.com/es-ES/RSKBuenosAires/events/270655653/,De Minería de Bitcoin a Merged Mining sobre RSK,Talk,online,Online only,Spanish,Martin Medina,Mining Lead,@ThisIsTincho,https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-merged-mining,
 2020-05-22T19:00:00-03:00,202005-014,1,2020-05-15T17:15:00+08:00,confirmed,,startups enterprise,https://www.meetup.com/es-ES/rsk-community/events/270662407/,Why we need Decentralized Storage and Communications,Talk,online,Online only,English,Vojtech Simetka,Storage and Communication PO,@vojtechsimetka,https://app.livestorm.co/iov-labs-1/why-we-need-decentralized-storage,
 2020-05-11T05:45:00-04:00,202005-015,1,2020-05-17T17:15:00+08:00,confirmed,,developers general,,RSK Demo: Bitcoin Halving Livestream 2020,Demo,online,Online only,English,Alejandro Banzas,Head of Developers Relations,@alebanzas,,https://youtu.be/5qy3aAnhCwc
 2020-05-11T05:45:00-04:00,202005-016,1,2020-05-17T17:15:00+08:00,confirmed,,enterprise general,,"Moneyonchain a Stablecion descentralizada baseada no Bitcoin. Tudo sobre o MoC, DoC, Bpro e BTCx",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,,https://youtu.be/iXaKY7Nn4L4
+2020-05-27T16:00:00-03:00,202005-017,1,2020-05-22T11:45:00+08:00,confirmed,,developers spanish,https://www.meetup.com/es-ES/RSKBuenosAires/events/270797663/,DeFi para Desarrolladores Blockchain,Workshop,online,Online only,Spanish,Angel Lopez,Software Developer,@ajlopez,https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockchain,
+2020-05-29T14:00:00-04:00,202005-018,1,2020-05-22T11:45:00+08:00,confirmed,,"enterprise, entrepreneurs, general audience",https://www.meetup.com/es-ES/rsk-community/events/270798560/,"RSK Ecosystem Fund:
+Criteria, process, first round of investments review",Talk,online,Online only,English,Katerina Stroponiati,Monday Capital Founder Partner,@katerinastro,https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund,

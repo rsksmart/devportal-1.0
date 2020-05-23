@@ -1057,7 +1057,7 @@
       "presenterDescription": "Devoloper Advocate",
       "presenterContact": "@Dulce_vird",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk",
-      "tags": " idioma-spanish audiencia-developers recent",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event4.jpg",
       "resources": [
         {
@@ -1108,7 +1108,7 @@
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/E2kTSLFHPgk",
       "_isPast": true
     },
     {
@@ -1134,7 +1134,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/6tc05aep-W4",
       "_isPast": true
     },
     {
@@ -1160,7 +1160,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event10.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/WvvrIEaF0NA",
       "_isPast": true
     },
     {
@@ -1187,7 +1187,7 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/dw_khz1Cw3Q",
       "_isPast": true
     },
     {
@@ -1213,7 +1213,7 @@
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "img/events/event12.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/fEnbO1y2qXM",
       "_isPast": true
     },
     {
@@ -1344,10 +1344,10 @@
       "presenterDescription": "Founder and Executive Director of BitGive\nSocial Impact Lead",
       "presenterContact": "@conniegallippi\n@agustinfini",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid",
-      "tags": " idioma-english audiencia-enterprise recent",
+      "tags": " idioma-english audiencia-enterprise",
       "image": "img/events/event7.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/y7auw58TeXM",
       "_isPast": true
     },
     {
@@ -1370,10 +1370,10 @@
       "presenterDescription": "Director Capital Markets",
       "presenterContact": "@__Santino__",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain",
-      "tags": " idioma-english audiencia-general recent",
+      "tags": " idioma-english audiencia-general",
       "image": "img/events/event2.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/egk8WzquT3U",
       "_isPast": true
     },
     {
@@ -1396,10 +1396,10 @@
       "presenterDescription": "Director Capital Markets",
       "presenterContact": "@__Santino__",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol",
-      "tags": " idioma-spanish audiencia-general recent",
+      "tags": " idioma-spanish audiencia-general",
       "image": "img/events/event9.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/BIaDKSGG3C4",
       "_isPast": true
     },
     {
@@ -1426,7 +1426,7 @@
       "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
       "image": "img/events/event4.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/QpbtVlulChQ",
       "_isPast": true
     },
     {
@@ -1453,7 +1453,7 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
       "image": "img/events/event11.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov",
+      "recordedVideoUrl": "",
       "_isPast": true
     },
     {
@@ -1504,15 +1504,10 @@
       "presenterDescription": "Interoperability PO",
       "presenterContact": "@PedroMPrete",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ethereum-bridge",
-      "tags": " idioma-english audiencia-developers audiencia-general",
-      "image": "img/events/bridge.jpg",
-      "resources": [
-        {
-          "label": "Slides",
-          "url": "https://www.slideshare.net/PedroPrete/webinar-in-english-for-the-token-bridge-between-rsk-and-ethereum"
-        }
-      ],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=3ZOvpLE3MvM",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "image": "img/events/event1.jpg",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/3ZOvpLE3MvM",
       "_isPast": true
     },
     {
@@ -1536,15 +1531,10 @@
       "presenterDescription": "Interoperability PO",
       "presenterContact": "@PedroMPrete",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol",
-      "tags": " idioma-spanish audiencia-developers audiencia-general",
-      "image": "img/events/bridge.jpg",
-      "resources": [
-        {
-          "label": "Slides",
-          "url": "https://www.slideshare.net/PedroPrete/webinar-en-espaol-del-token-bridge-entre-rsk-y-ethereum"
-        }
-      ],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=6a4KD2CElQY",
+      "tags": " idioma-spanish audiencia-developers audiencia-general recent",
+      "image": "img/events/event8.jpg",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/6a4KD2CElQY",
       "_isPast": true
     },
     {
@@ -1568,11 +1558,11 @@
       "presenterDescription": "Mining Lead",
       "presenterContact": "@ThisIsTincho",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merged-mining",
-      "tags": " idioma-english audiencia-developers audiencia-general",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1595,11 +1585,11 @@
       "presenterDescription": "Mining Lead",
       "presenterContact": "@ThisIsTincho",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-merged-mining",
-      "tags": " idioma-spanish audiencia-developers audiencia-general",
+      "tags": " idioma-spanish audiencia-developers audiencia-general recent",
       "image": "img/events/event10.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1681,6 +1671,62 @@
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/iXaKY7Nn4L4",
       "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202005-017",
+      "version": "1",
+      "timestamp": "2020-05-27T19:00:00.000Z",
+      "lastModified": "2020-05-22T03:45:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270797663/",
+      "title": "DeFi para Desarrolladores Blockchain",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "developers",
+        "spanish"
+      ],
+      "presenter": "Angel Lopez",
+      "presenterDescription": "Software Developer",
+      "presenterContact": "@ajlopez",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockchain",
+      "tags": " idioma-spanish audiencia-developers audiencia-spanish",
+      "image": "img/events/event2.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202005-018",
+      "version": "1",
+      "timestamp": "2020-05-29T18:00:00.000Z",
+      "lastModified": "2020-05-22T03:45:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270798560/",
+      "title": "RSK Ecosystem Fund:\nCriteria, process, first round of investments review",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "enterprise,",
+        "entrepreneurs,",
+        "general",
+        "audience"
+      ],
+      "presenter": "Katerina Stroponiati",
+      "presenterDescription": "Monday Capital Founder Partner",
+      "presenterContact": "@katerinastro",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund",
+      "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience",
+      "image": "img/events/event9.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_isPast": false
     }
   ]
 }
