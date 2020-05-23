@@ -1236,7 +1236,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@bguiz",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-create-your-own-collectable-token",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "img/events/event11.jpg",
       "resources": [
         {
@@ -1486,9 +1486,9 @@
     {
       "type": "event/2",
       "id": "202005-010",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-05-18T17:00:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-05-23T05:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270653530/",
       "title": "RSK - Ethereum Token Bridge",
@@ -1506,16 +1506,21 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ethereum-bridge",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "img/events/event1.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://www.slideshare.net/PedroPrete/webinar-in-english-for-the-token-bridge-between-rsk-and-ethereum"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/3ZOvpLE3MvM",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-011",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-05-18T21:00:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-05-23T05:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270653808/",
       "title": "RSK - Ethereum Token Bridge",
@@ -1533,7 +1538,12 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol",
       "tags": " idioma-spanish audiencia-developers audiencia-general recent",
       "image": "img/events/event8.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://www.slideshare.net/PedroPrete/webinar-en-espaol-del-token-bridge-entre-rsk-y-ethereum"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/6a4KD2CElQY",
       "_isPast": true
     },
@@ -1612,11 +1622,11 @@
       "presenterDescription": "Storage and Communication PO",
       "presenterContact": "@vojtechsimetka",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/why-we-need-decentralized-storage",
-      "tags": " idioma-english audiencia-startups audiencia-enterprise",
+      "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
       "image": "img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
