@@ -701,10 +701,9 @@ img {
 /*buttons*/
 
 .green-button {
+  display: inline-block;
+  margin: 4px 10px 0 0;
   background: #00b520;
-}
-
-.green-button {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   border: 0;
