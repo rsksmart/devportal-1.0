@@ -340,7 +340,7 @@ function render2WayPegVerifierSetup() {
   // </script>
   const scriptEl = document.createElement('script');
   scriptEl.setAttribute('defer', 'defer');
-  scriptEl.setAttribute('src', '/assets/js/pegin-address-verifier.umd.js');
+  scriptEl.setAttribute('src', '/assets/vendor/pegin-address-verifier/pegin-address-verifier.umd.js');
   scriptEl.setAttribute('onload', 'render2WayPegVerifier();');
   document.body.appendChild(scriptEl);
 }
@@ -365,11 +365,11 @@ function render2WayPegVerifierCheck() {
   var info = RskPegInAddressVerifier.getAddressInformation(address);
   // e.g. {"network":"testnet","type":"p2pkh"}
   var displayAddress = `<code>${address}</code>`;
-  var displayAddressType = `<code>${info.type.toUpperCase()}</code>`;
-  var displayNetwork = `<code>${info.network.charAt(0).toUpperCase()}${info.network.slice(1)}</code>`;
   if (!info) {
     result = `The address ${displayAddress} is not valid.`;
   } else {
+    var displayAddressType = `<code>${info.type.toUpperCase()}</code>`;
+    var displayNetwork = `<code>${info.network.charAt(0).toUpperCase()}${info.network.slice(1)}</code>`;
     var canPegIn = RskPegInAddressVerifier.canPegIn(info);
     if (canPegIn) {
       result = `The address ${displayAddress
