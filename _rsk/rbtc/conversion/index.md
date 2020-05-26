@@ -5,7 +5,7 @@ tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
 description: 'Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet.'
 collection_order: 3100
 permalink: /rsk/rbtc/conversion/
-render_features: 'tables-with-borders'
+render_features: '2-way-peg-verifier tables-with-borders'
 ---
 
 In this article we will explain step by step on how to convert from BTC to R-BTC, and vice versa.
@@ -51,6 +51,12 @@ In the following matrixes will be shown the different types of addresses that ar
 > Note: On the Testnets, the token symbols are prefixed with a lowercase `t`.
 > Thus we have `BTC` and `R-BTC` on the Mainnets,
 > which correspond to `tBTC` and `tR-BTC` of the Testnets.
+
+### Address verifier
+
+Enter your BTC address below to verify whether it may be used to peg in from BTC to R-BTC.
+
+[](#top "pegin-address-verifier")
 
 ## Step by step instructions
 
