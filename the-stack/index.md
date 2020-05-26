@@ -9,8 +9,8 @@ title: The Stack
     <div class="col">
         <div class="row rotate defi"><a href="/defi/">DeFi</a></div>
         <div class="row rsk_blue dapps">
-            <div class="col"><span><a href="/develop/apps/wallets/">Wallet</a></span></div>
-            <div class="col"><span><a href="/develop/apps/exchanges/">Exchange</a></span></div>
+            <div class="col"><span><a href="/wallet/">Wallet</a></span></div>
+            <div class="col"><span>Exchange</span></div>
             <div class="col"><span><a href="/tutorials/tokens/create-a-token">Asset Tokenization</a></span></div>
             <div class="col"><span>Stablecoins</span></div>
             <div class="col"><span>Payments</span></div>

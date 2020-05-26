@@ -3,7 +3,7 @@ layout: rsk
 title: How to create a new project using Truffle and OpenZeppelin connected to RSK network
 tags: tutorial, rsk, openzeppelin, truffle
 description: "How to create a new blockchain project, using Truffle framework and Open Zeppelin library connected to a RSK local node and RSK testnet"
-render_custom_terminals: true
+render_features: "custom-terminals"
 ---
 
 In this tutorial, I will show you step-by-step how to create a new blockchain project, using Truffle framework and Open Zeppelin smart contracts library, connected to a RSK local node or RSK testnet.
@@ -40,7 +40,8 @@ This article is also available in
 
 ## POSIX compliant shell
 
-The **Portable Operating System Interface (POSIX)** is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems. Source: [Wikipidia](https://en.wikipedia.org/wiki/POSIX)
+The **Portable Operating System Interface (POSIX)** is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems.
+Source: [Wikepidia](https://en.wikipedia.org/wiki/POSIX)
 
 * Mac OSX and Linux distributions: Use the standard terminal
 * Windows: If you use the standard cmd terminal, or PowerShell, the commands here may not work.
@@ -49,9 +50,12 @@ The **Portable Operating System Interface (POSIX)** is a family of standards spe
 
 ## cURL
 
-This is a system command that is likely already installed on your system.
+This is a system command that is likely already installed on your system,
+which allows you to make network requests, such as HTTP requests,
+from your command line.
 
-If `curl --version` displays an error, [download curl](https://curl.haxx.se/download.html).
+If `curl --version` displays an error,
+[download curl](https://curl.haxx.se/download.html).
 
 ## Java
 
@@ -63,16 +67,27 @@ Check if you already have Java installed:
 java -version
 ```
 
-![java -version](/assets/img/tutorials/setup-truffle-oz/image-01.png)
+```windows-command-prompt
+C:\>java version
+java version "1.8.0_241"
+Java(TM) SE Runtime Environment (build 1.8.0_241-b07)
+Java HotSpot(TM) Client VM (build 25.241-b07, mixed mode)
+
+C:\>
+```
 
 If `java -version` displays an error,
 or displays a version other than 1.8,
 you will need to install it.
-Go to [Java Download](https://www.java.com/en/download/) if you need to install it:
+
+### Install Java on Windows
+
+Go to the official [Java download](https://www.java.com/en/download/) page,
+download, and run the installer from there.
 
 ![Java Download](/assets/img/tutorials/setup-truffle-oz/image-02.png)
 
-### For Mac OSX and Linux distributions
+### Install Java on Mac OSX and Linux
 
 There are a variety of ways to do this, and SDKman is one which allows you to install and switch between multiple versions as needed:
 

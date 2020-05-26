@@ -2,141 +2,228 @@
 layout: rsk
 title: Quick Start - Step 1
 collection_order: 10
+render_custom_terminals: true
+render_features: "custom-terminals"
 ---
-## Step 1 : Install RSK local node
 
-RSK node can be installed on all major platforms, including Linux, Windows, and Mac. 
-Originally named in Bitcoin, local node is know as RegTest node.
+# Step 1 : Install RSK local node
 
-In this tutorial, we provide step-by-step instructions for running a local RegTest node through Docker. Docker installation supports Mac, Windows, and Linux.
+RSK node can be installed on all major platforms,
+including Linux, Windows, and Mac.
+The RSK local node is known as RegTest,
+the same name as bitcoin's local node.
 
-### Prepare the Environment
+In this step, we provide step-by-step instructions
+for running an RSK RegTest node.
 
-The tutorial project files can be downloaded from this [github repo](https://github.com/rsksmart/truffle-integration).
+## Prepare the Environment
 
-```shell
-git clone https://github.com/rsksmart/truffle-integration
-cd truffle-integration
-```
+> Note: This step is only necessary for Mac OSX Developers.
 
-For Mac OSX Developers:
-
-Please ensure you are running xcode directly and not the command-line instance. Run
+Please ensure you are running xcode directly,
+and not the command line instance:
 
 ```shell
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+
 ```
 
-### Install Docker Desktop Client
+## cURL
 
-Docker Desktop provides an easy and fast way for running containerized applications on various of operating systems.
+This is a system command that is likely already installed on your system.
 
-For Mac OSX and Windows:
+If `curl --version` displays an error,
+[download curl](https://curl.haxx.se/download.html).
 
-- [Download](https://www.docker.com/products/docker-desktop) and install
-- Start the Docker Desktop client
-- Login with a Docker Hub free account
+## Install Java on Windows
 
-For Linux:
+Go to the official
+[Java download page](https://www.java.com/en/download/),
+and download and run the installer from there.
 
-- Install [Docker Engine Community](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-- Note that you will need to use `sudo` for all docker commands, by default. To avoid this [additional steps](https://docs.docker.com/install/linux/linux-postinstall/) are required.
+![Java Download](/assets/img/tutorials/setup-truffle-oz/image-02.png)
 
-Ensure that docker is running by running the following command - it should run without any errors.
+## Install Java on Mac OSX and Linux
+
+There are a variety of ways to do this, and
+[SDKman](https://get.sdkman.io/)
+is one which allows you to install and
+switch between multiple versions as needed:
 
 ```shell
-docker ps
+curl -s "https://get.sdkman.io/" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+# to get a filtered list of available java versions
+sdk list java  | grep "8\." # copy a selection for use below
+
+# install the version of java copied above
+# (replace accordingly)
+sdk install java 8.0.242.j9-adpt
+
+# show installed versions, and switch to the selected one
+# (replace accordingly)
+sdk list java | grep installed
+sdk use java 8.0.242.j9-adpt
+java -version
+
 ```
 
-### RSKJ Docker Images
+# RSKj
 
-Dockerfiles corresponding to the different environments can be downloaded from the [RSK Artifacts](https://github.com/rsksmart/artifacts/tree/master/Dockerfiles/RSK-Node) page.
-If you wish, you may follow the instructions there to build
-the Mainnet and Testnet nodes.
+RSKj is the software for running RSK nodes.
 
-For this tutorial however, we will be using a `Dockerfile` and configuration
-that are pre-prepared, and located within this tutorial folder.
+There are [several ways](/rsk/node/install/)
+to set up an RSK node.
+Here, we will download a JAR file,
+and run it using the Java SDK that has been installed.
 
-### Start RSKJ Container for a RegTest Node
+## Download RSKj
 
-For this quick start tutorial, we are going to use the `RegTest` docker
+Go to the [releases page](https://github.com/rsksmart/rskj/releases),
+and click on the most recent one to download it.
 
-Run this command to build a RSKJ node for RegTest
+You need to click on the JAR file,
+in the end of the post about the latest release.
+Its name should be `rskj-core-*.jar`:
+
+![Download latest RSK release](/assets/img/tutorials/setup-truffle-oz/image-07.png)
+
+## Verify authenticity of RSKj
+
+When installing and running the RSKj node,
+it is always good practice to verify that your copy is legitimate.
+
+Let's compute the checksum using the following command:
 
 ```shell
-cd <tutorial-root>/docker/
-docker build -t regtest -f Dockerfile.RegTest .
+sha256sum rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
-This creates a docker image, containing an RSK node
-which is configured with the contents of
-[`regtest.conf`](https://github.com/rsksmart/truffle-integration/blob/staging/docker/regtest.conf).
-The final line of output for this should look similar to `Successfully tagged regtest:latest`.
-
-Start a container with the built image. This command will start an RSKJ node with port 4444, 4445 and 30305 open.
+For this version, the output should look like this:
 
 ```shell
-docker run -d \
- --name regtest-node-01 \
- -p 4444:4444 \
- -p 4445:4445 \
- -p 30305:30305 \
- regtest:latest
+43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 *rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
-For Windows, it must be in a single line:
+On Windows, use this command instead:
+
+```windows-command-prompt
+C:\>certutil -hashfile rskj-core-2.0.1-PAPYRUS-all.jar SHA256
+
+```
+
+For this version, the output on windows should look like this:
+
+```windows-command-prompt
+SHA256 hash of rskj-core-2.0.1-PAPYRUS-all.jar:
+43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0
+CertUtil: -hashfile command completed successfully.
+
+```
+
+The output checksum should match the checksum seen on the releases page.
+
+For more information about verifying that your copy is legitimate,
+including signature verification, check out the
+[full instructions](/rsk/node/security-chain/ 'Verify authenticity of RskJ source code and its binary dependencies')
+on how to do this.
+
+### Run
+
+To run the node:
+
 ```shell
-docker run -d --name regtest-node-01 -p 4444:4444 -p 4445:4445 -p 30305:30305 regtest:latest
+java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtest
+
 ```
 
-If the container runs successfully, you should get an output that is a hash, for example: `2f75d6c3f08dc15232be42ed2dabcc370742b3dd573f45fcac7253abce151f9d`.
+(Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file).
 
-You should be able to view the shell output for the container.
-Instead of the container ID, you may also use the hash that was output previously.
+> Example:
+>
+> ```windows-command-prompt
+> C:\>java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+>
+> ```
 
-```shell
-docker container logs --follow regtest-node-01
-# or:
-docker container logs --follow 2f75d6c3f08dc15232be42ed2dabcc370742b3dd573f45fcac7253abce151f9d
-```
+If you see no output - that is a good thing:
+Its output is directed to a log file.
 
-You should see this in the logs: `INFO success: rsk entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)`.
-That indicates that an RSKJ node is running within this docker container.
+> Note: The flag provided above, `-Drpc.providers.web.cors=*`,
+> This disables cross origin resource sharing protection,
+> effectively allowing any web page to access it.
+> As we want to make JSON-RPC requests from a browser,
+> such as a DApp, we need this flag.
 
-### Testing the nodes
+Do **not** close this terminal.
+If closed, the RSKj node will stop running.
+Run the following commands in a new terminal.
 
-### HTTP
+### Connect over HTTP
 
-RSK nodes allow you to connect over HTTP,
-which is exposed on port `4444`.
+RSKj allows you to connect over HTTP,
+and is currently listening on port `4444`.
 Let us verify that this works.
+Open a new terminal window.
 
-In a terminal which supports curl:
+Issue a JSON-RPC request to the RSKj over HTTP.
+For example:
 
-```bash
-curl http://localhost:4444/1.1.0/ \
-  -X POST -H "Content-Type: application/json" \
+```shell
+curl http://localhost:4444/ \
+  -s \
+  -X POST \
+  -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+
 ```
 
-This should respond with something that looks like the following:
+For Windows:
+
+```windows-command-prompt
+C:\>curl http://localhost:4444/ -s -X POST -H "Content-Type: application/json" --data "{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}"
+
+```
+
+The response should look similar to this:
 
 ```json
-{"jsonrpc":"2.0","id":1,"result":"0x2db0b"}
+{ "jsonrpc": "2.0", "id": 1, "result": "0x2991b" }
 ```
-You can enter any other valid JSON-RPC commands as the `POST` body.
 
-### Websockets
+The `result` property is the number of the latest block that has been synced. Note that this value (`0x2991b`) is the block number in hexadecimal (base 16), so the output above indicates that the current block number is `170267` in decimal (base 10).
 
-The RSK nodes also allow you to connect over websockets,
-which are exposed on port `4445`.
-Let us verify that this works too.
+- To get more information about this process:
+  Check out
+  [set up RSKj with Java](/rsk/node/install/java/).
+- If you encounter any problems, check if your system meets the
+  [minimum requirements](/rsk/node/install/requirements/).
+- There are other ways to install an RSK node,
+  on other supported platforms:
+  Check out [installing RSKj](/rsk/node/install/).
+
+> Note: You can enter any other valid JSON-RPC commands as the `POST` body.
+
+### Connect over Websockets
+
+RSKj also allows you to connect over websockets,
+and is currently listening on port `4445`.
+Let's verify that this works too.
+
+> Note: This step is optional,
+> the HTTP connection above is sufficient.
+
+> Note: You will need NodeJs and npm
+> installed on your system for this.
 
 ```bash
 npx wscat -c ws://localhost:4445/websocket
+
 ```
 
-If you have not installed [`wscat`](https://www.npmjs.com/package/wscat) globally before, wait for it to do so,
+If you have not installed
+[`wscat`](https://www.npmjs.com/package/wscat) globally before,
+wait for it to do so,
 and then it will load up its own shell.
 
 ```text
@@ -147,26 +234,20 @@ Connected (press CTRL+C to quit)
 Again, you can enter any valid JSON-RPC command in the prompt.
 Be sure to check that you receive a valid and expected response.
 
-For example, enter the following:
+For example, enter the following request:
 
 ```json
 > {"jsonrpc":"2.0","method":"eth_blockNumber", "params": [], "id":1}
 ```
 
-This should respond with something that looks like the following:
+This should return a response similar to the following:
 
 ```json
-< {"jsonrpc":"2.0","id":1,"result":"0x72"}
+< {"jsonrpc":"2.0","id":1,"result":"0x299d3"}
 ```
 
-### Cleaning up
+## Next
 
-After finishing the tutorial, you can use the following commands to shut down (`kill`) or remove (`rm`) the container.
-
-```shell
-docker container list
-docker kill <container id>
-docker rm <container id>
-```
-
-For the above example, `<container id>` is `regtest-node-01`.
+Now that we have an RSK Regtest node running,
+we're ready to begin the next step,
+where we will connect to this.
