@@ -121,6 +121,22 @@
       ]
     },
     {
+      "id": "rsk-next-box",
+      "gitUrl": "git@github.com:rsksmart/rsk-next-box.git",
+      "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-next-box",
+      "head": "refs/heads/master",
+      "commit": "d126c2806899dbdbe88605b18e348b737e401a6b",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "README.md",
+          "localFilePath": "tutorials/truffle-boxes/rsk-next-box.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },    
+    {
       "id": "rsk-precompiled-abis",
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
