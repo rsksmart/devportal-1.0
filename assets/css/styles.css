@@ -702,9 +702,6 @@ img {
 
 .green-button {
   background: #00b520;
-}
-
-.green-button {
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   border: 0;
@@ -1650,6 +1647,19 @@ img {
 .table-with-border th {
   border: 1px solid #ddd;
   padding: 0.2em;
+}
+
+/* 2 way peg verifier check */
+
+.pegin-address-verifier {
+  margin: 10px auto;
+}
+
+.pegin-address-verifier .address {
+  margin: 10px auto;
+  min-width: 380px;
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 14px;
 }
 
 /* custom terminal render */
