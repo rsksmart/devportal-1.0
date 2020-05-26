@@ -28,20 +28,24 @@ In the following matrixes will be shown the different types of addresses that ar
 | Before Papyrus | | Accepted in BTC | | Accepted in RSK | | Refundable | | Processable |
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: | | --- | | :---: |
 | P2PKH | | ✔ | | ✔ | | ✔ | | ✔ |
+| P2SH-P2WPKH | | ✔ | | ❌ | | ❌ | | ❌ |
 | P2SH-MULTISIG | | ✔ | | ❌ | | ❌ | | ❌ |
-| P2SH-MULTISIG | | ✔ | | ❌ | | ❌ | | ❌ |
+| P2SH-P2WSH | | ✔ | | ❌ | | ❌ | | ❌ |
 | PWPKH (BECH32) | | ✔ | | ❌ | | ❌ | | ❌ |
 | OTHERS | | ✔ | | ❌ | | ❌ | | ❌ |
-| | | | | | | | | |
+
+<br/>
 
 | After Papyrus | | Accepted in BTC | | Accepted in RSK | | Refundable | | Processable |
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: | | --- | | :---: |
 | P2PKH | | ✔ | | ✔ | | ✔ | | ✔ |
-| P2SH-MULTISIG | | ✔ | | ✔ | | ✔ | | ✔ |
+| P2SH-P2WPKH | | ✔ | | ✔ | | ✔ | | ✔ |
 | P2SH-MULTISIG | | ✔ | | ✔ | | ✔ | | ❌ |
+| P2SH-P2WSH | | ✔ | | ✔ | | ✔ | | ❌ |
 | PWPKH (BECH32) | | ✔ | | ❌ | | ❌ | | ❌ |
 | OTHERS | | ✔ | | ❌ | | ❌ | | ❌ |
-| | | | | | | | | |
+
+<br/>
 
 - **Accepted in BTC**: Is this type of address accepted in regular BTC transactions? (including sending BTC to the Federation address)
 - **Accepted in RSK**: is this type of address received by RSK Bridge smart contract?

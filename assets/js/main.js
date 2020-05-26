@@ -372,14 +372,22 @@ function render2WayPegVerifierCheck() {
     var displayNetwork = `<code>${info.network.charAt(0).toUpperCase()}${info.network.slice(1)}</code>`;
     var canPegIn = RskPegInAddressVerifier.canPegIn(info);
     if (canPegIn) {
-      result = `The address ${displayAddress
+      if (info.type == 'p2pkh'){
+        result = `The address ${displayAddress
+          } is a valid ${displayAddressType
+          } address, and may peg in on ${displayNetwork}.`;
+      }
+      else{
+        result = `The address ${displayAddress
         } is a valid ${displayAddressType
-        } address, and may peg in on ${displayNetwork}.`;
+        } address, however, may not peg in on ${displayNetwork
+        }. Please check the compatibility matrix.`;        
+      }
     } else {
       result = `The address ${displayAddress
         } is a valid ${displayAddressType
-        } address, however, may not peg in on ${displayNetwork
-        }. Please check the compatibility matrix.`;
+        } address, however, will not peg in on ${displayNetwork
+        }.<br/> Do not use this wallet, your BTC will be LOST. Please check the compatibility matrix.`;
     }
   }
   document.querySelector('.pegin-address-verifier .result').innerHTML = result;
