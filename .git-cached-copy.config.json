@@ -158,6 +158,22 @@
       ]
     },
     {
+      "id": "workshop-first-swarm-website",
+      "gitUrl": "git@github.com:bguiz/workshop-rif-first-swarm-website",
+      "httpUrl": "https://raw.githubusercontent.com/bguiz/workshop-rif-first-swarm-website",
+      "head": "refs/heads/master",
+      "commit": "0b95f69deac584a3a43515e0dcda8cbc38c18e60",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "README.md",
+          "localFilePath": "tutorials/dweb/first-swarm-website.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },
+    {
       "id": "tutorial-rsk-api",
       "gitUrl": "git@github.com:ajlopez/RskApi.git",
       "httpUrl": "https://raw.githubusercontent.com/ajlopez/RskApi",
