@@ -103,6 +103,15 @@ Install all dependencies for `npm run bootstrap`
 npm run bootstrap
 ```
 
+If you encounter an error:
+"Maximum call stack size exceeded", you may wish to use
+[`yarn`](https://yarnpkg.com/)
+for the bootstrap process:
+
+```shell
+npm run bootstrap-yarn
+```
+
 Examine formatting of source code using `eslint`
 
 ```shell
@@ -154,9 +163,33 @@ git checkout -b proj/release-12.34.56
 This command uses lerna to bump the version number in all of the packages:
 
 ```shell
-npm run release -- 12.34.56
+npm run release
 
 ```
+
+```text
+? Select a new version (currently 12.34.55) Patch (12.34.56)
+
+Changes:
+ - @rsksmart/rsk3-abi: 12.34.55 => 12.34.56
+ - @rsksmart/rsk3-account: 12.34.55 => 12.34.56
+ - @rsksmart/rsk3-contract: 12.34.55 => 12.34.56
+ - @rsksmart/rsk3-net: 12.34.55 => 12.34.56
+ - @rsksmart/rsk3-personal: 12.34.55 => 12.34.56
+ - @rsksmart/rsk3-utils: 12.34.55 => 12.34.56
+ - @rsksmart/rsk3: 12.34.55 => 12.34.56
+
+? Are you sure you want to create these versions? Yes
+```
+
+> Note that if you do not see **all** of the packages listed here,
+> you will **fail the version check** in subsequent steps,
+> as it requires that all packages have the same version number.
+> So enter "no" in the prompt above.
+> In order to work around this behaviour of lerna,
+> edit any file in `rsk3-utils`, for example `packages/rsk3-utils/src/index.js`
+> to introduce a diff, then run the above command again.
+> After this command is completed, undo the change made in `rsk3-utils`.
 
 ```shell
 $ git status
@@ -166,12 +199,21 @@ Changes not staged for commit:
   (use "git checkout -- <file>..." to discard changes in working directory)
 
         modified:   lerna.json
+        modified:   package-lock.json
+        modified:   package.json
+        modified:   packages/rsk3-abi/package-lock.json
         modified:   packages/rsk3-abi/package.json
+        modified:   packages/rsk3-account/package-lock.json
         modified:   packages/rsk3-account/package.json
+        modified:   packages/rsk3-contract/package-lock.json
         modified:   packages/rsk3-contract/package.json
+        modified:   packages/rsk3-net/package-lock.json
         modified:   packages/rsk3-net/package.json
+        modified:   packages/rsk3-personal/package-lock.json
         modified:   packages/rsk3-personal/package.json
+        modified:   packages/rsk3-utils/package-lock.json
         modified:   packages/rsk3-utils/package.json
+        modified:   packages/rsk3/package-lock.json
         modified:   packages/rsk3/package.json
 
 ```
@@ -207,3 +249,7 @@ npm run publish
 ## Note
 
 The majority of code in packages are similar to those with the same name in Web3.js, and will be upgraded in sync with Web3.js
+
+## Audit
+
+An independant security audit details can be found here: [/docs/auditreport.pdf](https://github.com/rsksmart/rsk3.js/blob/master/docs/auditreport.pdf)
