@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Truffle Box (rsk-next-box)
+tags: tutorial, rsk, truffle, next
+description: "How to install and use a Truffle box that comes with Next JS, and works with the RSK network."
 ---
 
 # RSK Next JS Box
