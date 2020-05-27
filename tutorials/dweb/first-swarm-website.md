@@ -630,6 +630,8 @@ The hash resulting from the upload is output,
 in my case it was
 `37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8`.
 
+## Understanding the Swarm manifest
+
 Let's use that hash to download the manifest like so,
 making use of `curl`.
 
@@ -663,13 +665,92 @@ $ curl -s http://localhost:8500/bzz-raw:/37dc50f16176901ff7a18dc815432f1144f93f2
 
 ```
 
-Note that the `curl` output has been piped through `jq`
-to "pretty print" the JSON.
-If you do not have `jq` on your system,
-just skip the pipe.
-The output will be the same, just a bit harder to read.
+> Note that the `curl` output has been piped through `jq`
+> to "pretty print" the JSON.
+> If you do not have `jq` installed on your system,
+> just skip the pipe.
+> The output will be the same, just a little bit harder to read.
 
 The manifest file simply gives us some metadata about what we uploaded.
+
+The first entry, for `css/styles.css` is almost self-explanatory,
+it is saying that that's the path of the file,
+and here's the hash that it is stored at.
+Let's try accessing just this file alone by its hash:
+
+```shell
+$ curl -s http://localhost:8500/bzz:/7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a | jq
+.circles {
+  width: 500px;
+  height: 400px;
+}
+```
+
+The second entry is a little bit more difficult to grok.
+To figure out what is going on here,
+we have to know how `swarm up` handles a folder (`--recursive`).
+It builds a [trie](https://en.wikipedia.org/wiki/Trie) of all of the file paths,
+and creates a recursive set of manifests from those.
+... so what this is saying is that there are multiple paths starting with `i`,
+and here's the hash with the manifest for any files under those paths.
+Let's try drilling down one more level:
+
+```shell
+$ curl -s http://localhost:8500/bzz-raw:/7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a | jq
+{
+  "entries": [
+    {
+      "hash": "1e5602f91d0f24eb2c4a0612729258b8aec23da782dc6f6c90cbcbb200d77068",
+      "path": "mg/circles1.svg",
+      "contentType": "image/svg+xml",
+      "mode": 436,
+      "size": 677,
+      "mod_time": "2020-05-19T15:19:01+08:00"
+    },
+    {
+      "hash": "02d47eba9b51da786d345d1219c167cb66de756af330c3c12968f825172ac0c2",
+      "path": "ndex.html",
+      "contentType": "text/html; charset=utf-8",
+      "mode": 436,
+      "size": 558,
+      "mod_time": "2020-05-19T15:24:19+08:00"
+    }
+  ]
+}
+
+```
+
+... and now we finally have the hashes for all of the files in our site.
+I shall use the stylistic output format of the
+[UNIX `tree` command](https://en.wikipedia.org/wiki/Tree_(command))
+to illustrate Swarm's trie.
+
+```
+"/": 37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8
+├── "css/styles.css": 7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a
+├── "i"
+│   └── "mg/circles1.svg": 1e5602f91d0f24eb2c4a0612729258b8aec23da782dc6f6c90cbcbb200d77068
+│   └── "ndex.html": 02d47eba9b51da786d345d1219c167cb66de756af330c3c12968f825172ac0c2
+└── "" : 02d47eba9b51da786d345d1219c167cb66de756af330c3c12968f825172ac0c2
+```
+
+Compare/ contrast that with the output of an actual `tree` command,
+and observe how the Swarm trie maps to the directory structure:
+
+```shell
+$ tree dist
+dist
+├── css
+│   └── styles.css
+├── img
+│   └── circles1.svg
+└── index.html
+
+2 directories, 3 files
+```
+
+## Download files from Swarm to disk
+
 Let's actually get and view the files that we want.
 To do that, let's use the `swarm down` command:
 
@@ -697,6 +778,8 @@ cat ./dist/{index.html,img/circles1.svg,css/styles.css} | sha256sum
 $ cat ./swarm-down-copy/{index.html,img/circles1.svg,css/styles.css} | sha256sum
 3521ac76a1f61cd3ace92d4e3e672c62eb0183688faf6ba2c4efdd9bf5d23991  -
 ```
+
+## Surf the DWeb!
 
 Finally let's bring this home by visiting the website in Swarm.
 

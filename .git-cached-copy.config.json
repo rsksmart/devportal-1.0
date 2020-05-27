@@ -162,7 +162,7 @@
       "gitUrl": "git@github.com:bguiz/workshop-rif-first-swarm-website",
       "httpUrl": "https://raw.githubusercontent.com/bguiz/workshop-rif-first-swarm-website",
       "head": "refs/heads/master",
-      "commit": "3be91a2953f6cff3707a98eb789e648cd08f5a74",
+      "commit": "98420e8d1ebf58e3e112bb3031a0cb0a985930a1",
       "commands": [
         {
           "name": "copySingle",
