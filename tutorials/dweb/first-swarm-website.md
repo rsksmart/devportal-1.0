@@ -7,6 +7,21 @@ description: "How to deploy a decentralised website using Swarm"
 
 ## Getting started
 
+Before we begin,
+you will need the following things set up on your system:
+
+- A [POSIX](https://en.wikipedia.org/wiki/POSIX)-compliant terminal
+  - Recommended option for Linux/ Mac: Default/ built in terminal
+  - Recommended option for Windows: [Git Bash](https://gitforwindows.org/)
+- [`git`](https://git-scm.com/)
+- [`curl`](https://curl.haxx.se/)
+- [`jq`](https://stedolan.github.io/jq/)
+  - optional, only needed for pretty-print
+- [NodeJs](https://nodejs.org/en/)
+  - optional, only needed to preview site using a centralised HTTP server
+  - Recommended install method for Linux/ Mac: [`nvm`](https://github.com/nvm-sh/nvm)
+  - Recommended install method for Windows: [Official installer](https://nodejs.org/en/)
+
 Clone the demo git repo, and `cd` into its folder.
 
 ```shell
@@ -21,7 +36,10 @@ Start a HTTP server of your choice,
 and serve the `dist` folder at port `7500`.
 
 ```shell
-$ npx http-server -c-1 -p 7500 ./dist/
+npx http-server -c-1 -p 7500 ./dist/
+```
+
+```text
 Starting up http-server, serving ./dist/
 Available on:
   http://127.0.0.1:7500
@@ -43,7 +61,7 @@ The easiest way to install Swarm is via its pre-compiled releases.
 There are also instructions for
 [compiling the source yourself instead](https://developers.rsk.co/rif/storage/providers/swarm/install/).
 
-Visit (swarm.ethereum.org/downloads)[https://swarm.ethereum.org/downloads/]
+Visit [swarm.ethereum.org/downloads](https://swarm.ethereum.org/downloads/)
 and select the appropriate package to install for your system.
 This page should automatically select and highlight the right one for you (in bold).
 
@@ -56,7 +74,6 @@ mkdir -p ${HOME}/swarm/bin
 mv swarm-linux-amd64-0.5.7-5ccfd995/swarm ${HOME}/swarm/bin
 echo 'export PATH=$PATH:${HOME}/swarm/bin' >> ~/.bashrc
 ```
-
 Mac OSX or Windows (with a POSIX-compliant shell such as git bash)
 should be pretty similar.
 
@@ -66,7 +83,10 @@ as we'll need the updated `PATH` environment variable.
 Let's check that we have got a working binary.
 
 ```shell
-$ swarm version
+swarm version
+```
+
+```text
 Swarm
 Version: 0.5.8-unstable
 Git Commit: 6faff7fcb6f25c706e75d8d3c8945c4231663b93
@@ -78,7 +98,10 @@ OS: linux
 Next, let's start swarm.
 
 ```shell
-$ swarm
+swarm
+```
+
+```text
 INFO [05-19|15:03:36.058] Maximum peer count                       ETH=50 LES=0 total=50
 INFO [05-19|15:03:36.059] You don't have an account yet. Creating one...
 Your new account is locked with a password. Please give a password. Do not forget this password.
@@ -96,7 +119,7 @@ Passphrase:
 > which will be used to uniquely identify this particular node -
 > that is what the password is for.
 
-```shell
+```text
 INFO [05-19|15:03:53.009] Starting peer-to-peer node               instance=swarm/v0.5.8-6faff7fc/linux-amd64/go1.14.3
 INFO [05-19|15:03:53.065] New local node record                    seq=1 id=0f1272cb73bcf1ba ip=127.0.0.1 udp=30399 tcp=30399
 INFO [05-19|15:03:53.065] Updated bzz local addr                   oaddr=5c31b4c2924e4689554b80893c663833de5852b32f090969860739dbdb1a69c0 uaddr=enode://d18081c0f7bf09c021d519e0d8351473def7a408820bffabc62bf2e878fd2ff84df3b46407ab347d632dfbec4f13cd7635ea2ee4c8fdace17c442ae032615d48@127.0.0.1:30399
@@ -126,13 +149,12 @@ otherwise jump back into your terminal.
 
 You should see output similar to this related to serving up the front end.
 
-```shell
+```text
 INFO [05-19|15:08:08.421] created ruid for request                 ruid=ffcc6158   method=GET url=/
 INFO [05-19|15:08:08.421] respondHTML                              ruid=ffcc6158   code=200
 INFO [05-19|15:08:08.422] request served                           ruid=ffcc6158   code=200 time=570.234µs
 INFO [05-19|15:08:08.453] created ruid for request                 ruid=d89959fa   method=GET url=/favicon.ico
 INFO [05-19|15:08:08.453] request served                           ruid=d89959fa   code=200 time=41.936µs
-
 ```
 
 ## Upload a website to Swarm
@@ -145,7 +167,10 @@ this time using Swarm, which is decentralised.
 Open up a new terminal window and enter the following `swarm up` command.
 
 ```shell
-$ swarm --defaultpath ./dist/index.html --manifest=true --recursive up ./dist
+swarm --defaultpath ./dist/index.html --manifest=true --recursive up ./dist
+```
+
+```text
 37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8
 ```
 
@@ -153,7 +178,7 @@ Note the following:
 
 - `--defaultpath`
   identifies the "first" file to be loaded when this folder is loaded.
-  We're following the web browser convention of `index.html` here.
+  In this example, we're following the web browser convention of `index.html`.
 - `--recursive`
   means that we want to upload a folder full of files,
   as opposed to uploading a single file.
@@ -175,7 +200,10 @@ Let's use that hash to download the manifest like so,
 making use of `curl`.
 
 ```shell
-$ curl -s http://localhost:8500/bzz-raw:/37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8 | jq
+curl -s http://localhost:8500/bzz-raw:/37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8 | jq
+```
+
+```json
 {
   "entries": [
     {
@@ -213,12 +241,15 @@ $ curl -s http://localhost:8500/bzz-raw:/37dc50f16176901ff7a18dc815432f1144f93f2
 The manifest file simply gives us some metadata about what we uploaded.
 
 The first entry, for `css/styles.css` is almost self-explanatory,
-it is saying that that's the path of the file,
-and here's the hash that it is stored at.
+it states the path of the file,
+and the hash that it is stored at.
 Let's try accessing just this file alone by its hash:
 
 ```shell
-$ curl -s http://localhost:8500/bzz:/7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a | jq
+curl -s http://localhost:8500/bzz:/7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a | jq
+```
+
+```css
 .circles {
   width: 500px;
   height: 400px;
@@ -230,12 +261,16 @@ To figure out what is going on here,
 we have to know how `swarm up` handles a folder (`--recursive`).
 It builds a [trie](https://en.wikipedia.org/wiki/Trie) of all of the file paths,
 and creates a recursive set of manifests from those.
-... so what this is saying is that there are multiple paths starting with `i`,
-and here's the hash with the manifest for any files under those paths.
-Let's try drilling down one more level:
+... so what this manifest entry states is that
+there are **multiple paths** starting with `i`,
+and the hash for the **nested manifest** for any files under those paths.
+Let's try drilling down one more level using the hash of the nested manifest:
 
 ```shell
-$ curl -s http://localhost:8500/bzz-raw:/7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a | jq
+curl -s http://localhost:8500/bzz-raw:/7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a | jq
+```
+
+```json
 {
   "entries": [
     {
@@ -264,20 +299,27 @@ I shall use the stylistic output format of the
 [UNIX `tree` command](https://en.wikipedia.org/wiki/Tree_(command))
 to illustrate Swarm's trie.
 
-```
-"/": 37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8
-├── "css/styles.css": 7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a
+```text
+"/"
+├── "css/styles.css"
 ├── "i"
-│   └── "mg/circles1.svg": 1e5602f91d0f24eb2c4a0612729258b8aec23da782dc6f6c90cbcbb200d77068
-│   └── "ndex.html": 02d47eba9b51da786d345d1219c167cb66de756af330c3c12968f825172ac0c2
-└── "" : 02d47eba9b51da786d345d1219c167cb66de756af330c3c12968f825172ac0c2
+│   └── "mg/circles1.svg"
+│   └── "ndex.html"
+└── ""
 ```
 
-Compare/ contrast that with the output of an actual `tree` command,
-and observe how the Swarm trie maps to the directory structure:
+It is kind of similar to a the way an operating system represents
+folders and files are arranged on a disk,
+except that it uses common string prefixes to determine where the splits are.
+This becomes apparent when we compare/ contrast that
+with the output of an actual `tree` command.
+We can see how the Swarm trie maps to the directory structure:
 
 ```shell
-$ tree dist
+tree dist
+```
+
+```text
 dist
 ├── css
 │   └── styles.css
@@ -288,15 +330,39 @@ dist
 2 directories, 3 files
 ```
 
+Let's augment the same structure above with the hashes required to obtain each file:
+
+```text
+"/": 37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8
+├── "css/styles.css": 7ad69261097980d8e4c4296d2579b958feb4563d7c69a87475ea61f626e1227a
+├── "i"
+│   └── "mg/circles1.svg": 1e5602f91d0f24eb2c4a0612729258b8aec23da782dc6f6c90cbcbb200d77068
+│   └── "ndex.html": 02d47eba9b51da786d345d1219c167cb66de756af330c3c12968f825172ac0c2
+└── "" : 02d47eba9b51da786d345d1219c167cb66de756af330c3c12968f825172ac0c2
+```
+
+If you have been paying keen attention, you may have noticed that
+the path for `/` and `/index.html` have the exact same hash.
+This means that if you visit either
+`bzz:/${HASH}/` or `bzz:/${HASH}/index.html`
+you will get the same page!
+
+Pretty neat huh?
+
 ## Download files from Swarm to disk
 
-Let's actually get and view the files that we want.
-To do that, let's use the `swarm down` command:
+So far we have downloaded and inspected individual files from Swarm.
+We do have the option of downloading the entire site if we want to.
+
+To do that, we'll use the `swarm down` command:
 
 ```shell
-$ mkdir swarm-down-copy
-$ swarm down --recursive bzz:/37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8 ./swarm-down-copy
-$ tree swarm-down-copy/
+mkdir swarm-down-copy
+swarm down --recursive bzz:/37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8 ./swarm-down-copy
+tree swarm-down-copy/
+```
+
+```text
 swarm-down-copy/
 ├── css
 │   └── styles.css
@@ -309,18 +375,30 @@ swarm-down-copy/
 
 Now, inspect the files, they should be the same.
 Want to really makes sure they are **identical**?
-Enter the following commands and observe that their hashes are the same
+Enter the following commands.
 
 ```shell
 cat ./dist/{index.html,img/circles1.svg,css/styles.css} | sha256sum
-3521ac76a1f61cd3ace92d4e3e672c62eb0183688faf6ba2c4efdd9bf5d23991  -
-$ cat ./swarm-down-copy/{index.html,img/circles1.svg,css/styles.css} | sha256sum
+```
+
+```text
 3521ac76a1f61cd3ace92d4e3e672c62eb0183688faf6ba2c4efdd9bf5d23991  -
 ```
+
+```shell
+cat ./swarm-down-copy/{index.html,img/circles1.svg,css/styles.css} | sha256sum
+```
+
+```text
+3521ac76a1f61cd3ace92d4e3e672c62eb0183688faf6ba2c4efdd9bf5d23991  -
+```
+
+Observe that their hashes are the same, demonstrating that they are indeed the same files.
 
 ## Surf the DWeb!
 
 Finally let's bring this home by visiting the website in Swarm.
+We're surfing the **decentralised web**!
 
 Visit [http://localhost:8500/bzz:/37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8/](http://localhost:8500/bzz:/37dc50f16176901ff7a18dc815432f1144f93f2f26f7c794d17d6ec81f8810a8/)
 
