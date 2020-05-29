@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Quick Start - Step 5
+tags: quick-start, smart-contract, truffle, web3
+description: 'quick start - smart contract interactions through web3 REPL'
 collection_order: 50
 ---
 
@@ -18,7 +20,7 @@ truffle console --network regtest
 
 ## Check Balance of Our EIP20 Token
 
-First, let's get the address of the account which was \
+First, let's get the address of the account which was
 used to deploy the contract.
 We shall save this in the variable `account1`.
 
