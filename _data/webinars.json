@@ -1275,7 +1275,7 @@
       "presenterDescription": "Developer Advocate",
       "presenterContact": "@solangegueiros",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-criar-seu-token-colecionavel",
-      "tags": " idioma-portuguese audiencia-developers recent",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "img/events/event6.jpg",
       "resources": [
         {
@@ -1505,7 +1505,7 @@
       "presenterContact": "@PedroMPrete",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ethereum-bridge",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
-      "image": "img/events/event1.jpg",
+      "image": "/webinars/img/events/bridge.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -1537,7 +1537,7 @@
       "presenterContact": "@PedroMPrete",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol",
       "tags": " idioma-spanish audiencia-developers audiencia-general recent",
-      "image": "img/events/event8.jpg",
+      "image": "/webinars/img/events/bridge.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -1703,11 +1703,11 @@
       "presenterDescription": "Software Developer",
       "presenterContact": "@ajlopez",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockchain",
-      "tags": " idioma-spanish audiencia-developers audiencia-spanish",
+      "tags": " idioma-spanish audiencia-developers audiencia-spanish recent",
       "image": "img/events/event2.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
