@@ -387,7 +387,7 @@ function render2WayPegVerifierCheck() {
       result = `The address ${displayAddress
         } is a valid ${displayAddressType
         } address, however, will not peg in on ${displayNetwork
-        }.<br/> Do not use this wallet, your BTC will be LOST. Please check the compatibility matrix.`;
+        }.<br/><strong>Do not use</strong> this wallet, your BTC will be <strong>lost</strong>. Please check the compatibility matrix.`;
     }
   }
   document.querySelector('.pegin-address-verifier .result').innerHTML = result;
