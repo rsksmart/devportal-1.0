@@ -371,7 +371,7 @@ It is an optional parameter in every method that submits one or more transaction
 
 The object contains the following fields:
 
-- `from` - String (optional): The address the transaction should be sent from.
+- `from` - String (optional): The address the transaction should be sent from. If not provided, it will use the first account associated to the current provider.
 - `gasPrice` - String (optional): The gas price in wei to use for this transaction.
 - `gas` - Number (optional): The maximum gas provided for this transaction (gas limit).
 
