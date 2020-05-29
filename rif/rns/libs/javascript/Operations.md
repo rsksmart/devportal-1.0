@@ -65,7 +65,7 @@ Set the address of a given domain and chain. If `chainId` is not provided, it se
 **Signature**
 
 ```javascript
-async setAddr(domain: string, addr: string, chainId?: ChainId): Promise<TransactionReceipt>
+async setAddr(domain: string, addr: string, chainId?: ChainId, options?: Options): Promise<TransactionReceipt>
 ```
 
 **Parameters**
@@ -73,6 +73,7 @@ async setAddr(domain: string, addr: string, chainId?: ChainId): Promise<Transact
 - `domain`: Domain to set resolution.
 - `addr`: Address to be set as the resolution of the given domain
 - `chainId`: Chain identifier listed in [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
+- `options`: Optional. More information [here](#options)
 
 **Returns**
 
@@ -138,12 +139,13 @@ Set reverse resolution with the given name for the current address using [setNam
 **Signature**
 
 ```javascript
-async setName(name: string): Promise<TransactionReceipt>
+async setName(name: string, options?: Options): Promise<TransactionReceipt>
 ```
 
 **Parameters**
 
 - `name`: Name to be set as the reverse resolution of the current address
+- `options`: Optional. More information [here](#options)
 
 **Returns**
 
@@ -173,13 +175,14 @@ Set [resolver](/rif/rns/architecture/registry#setresolver) of a given domain.
 **Signature**
 
 ```javascript
-async setResolver(domain: string, resolver: string): Promise<TransactionReceipt>
+async setResolver(domain: string, resolver: string, options?: Options): Promise<TransactionReceipt>
 ```
 
 **Parameters**
 
 - `domain`: Domain to set resolver.
 - `resolver`: Address to be set as the resolver of the given domain
+- `options`: Optional. More information [here](#options)
 
 **Returns**
 
@@ -274,7 +277,7 @@ It submits a [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain)
 **Signature**
 
 ```javascript
-async setOwner(domain: string, label: string, owner: string): Promise<TransactionReceipt>
+async setOwner(domain: string, label: string, owner: string, options?: Options): Promise<TransactionReceipt>
 ```
 
 **Parameters**
@@ -282,6 +285,7 @@ async setOwner(domain: string, label: string, owner: string): Promise<Transactio
 - `domain`: Parent `.rsk` domain. For example, `wallet.rsk`
 - `label`: Subdomain to register. For example, `alice`
 - `owner`: The new owner's address
+- `options`: Optional. More information [here](#options)
 
 **Returns**
 
@@ -316,7 +320,7 @@ It may send one, two, or three transactions, based on the value of the sent para
 **Signature**
 
 ```javascript
-async create(domain: string, label: string, owner: string, addr: string): Promise<TransactionReceipt>
+async create(domain: string, label: string, owner: string, addr: string, options?: Options): Promise<TransactionReceipt>
 ```
 
 **Parameters**
@@ -325,6 +329,7 @@ async create(domain: string, label: string, owner: string, addr: string): Promis
 - `label`: Subdomain to register. For example, `alice`
 - `owner`: The owner of the new subdomain. If not provided, the address who executes the tx will be the owner
 - `addr`: The address to be set as resolution of the new subdomain
+- `options`: Optional. More information [here](#options)
 
 > If `addr` is not provided, no resolution will be set, and will send only one [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain) transaction.
 >
@@ -359,6 +364,16 @@ const newOwnerAddress = '0x0000000000000000000000000000000000000001';
 const resolution = '0x0000000000000000000000000000000000000002';
 await rns.subdomains.create('testing.rsk', 'example', newOwnerAddress, resolution);
 ```
+
+## Options
+
+It is an optional parameter in every method that submits one or more transactions. 
+
+The object contains the following fields:
+
+- `from` - String (optional): The address the transaction should be sent from.
+- `gasPrice` - String (optional): The gas price in wei to use for this transaction.
+- `gas` - Number (optional): The maximum gas provided for this transaction (gas limit).
 
 ## Advanced operations
 
