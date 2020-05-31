@@ -1826,4 +1826,100 @@ STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200522T034500Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202006-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200605T090000Z
+DTSTART:20200605T090000Z
+SUMMARY:How to Upload a Website on RIF Storage 
+DESCRIPTION:How to Upload a Website on RIF Storage\n\nOnline only\n\nRSVP:
+  https://www.meetup.com/es-ES/rsk-community/events/270954178/\n\nVideo str
+ eam: https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-st
+ orage\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How to 
+ Upload a Website on RIF Storage</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es
+ -ES/rsk-community/events/270954178/\">www.meetup.com/es-ES/rsk-community/e
+ vents/270954178/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-ri
+ f-storage\">app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-sto
+ rage</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Rinke Hendriksen\, Swarm PO & Researcher\, @hendriksenrinke"
+ :mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:How to Upload a Website on RIF Storage 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-
+ on-rif-storage
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200529T165200Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200603T220000Z
+DTSTART:20200603T220000Z
+SUMMARY:O que é RSK? 
+DESCRIPTION:O que é RSK?\n\nOnline only\n\nRSVP: https://www.meetup.com/es
+ -ES/rsk-community/events/270942375/\n\nVideo stream: https://app.livestorm
+ .co/iov-labs-1/o-que-e-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>O que é
+  RSK?</span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbs
+ p\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-community/events/2
+ 70942375/\">www.meetup.com/es-ES/rsk-community/events/270942375/</a></span
+ ></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.lives
+ torm.co/iov-labs-1/o-que-e-rsk\">app.livestorm.co/iov-labs-1/o-que-e-rsk</
+ a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:O que é RSK? 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/o-que-e-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200531T064500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200604T220000Z
+DTSTART:20200604T220000Z
+SUMMARY:Minería de Bitcoin y Macro tendencias de la Industria 
+DESCRIPTION:Minería de Bitcoin y Macro tendencias de la Industria\n\nOnlin
+ e only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/2709410
+ 73/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/mineria-de-bitcoi
+ n-y-macro-tendencias\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Minería
+  de Bitcoin y Macro tendencias de la Industria</span></div>\n<div><span>On
+ line only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://ww
+ w.meetup.com/es-ES/RSKBuenosAires/events/270941073/\">www.meetup.com/es-ES
+ /RSKBuenosAires/events/270941073/</a></span></div>\n<div><b>Video stream &
+ nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/mineria-de-b
+ itcoin-y-macro-tendencias\">app.livestorm.co/iov-labs-1/mineria-de-bitcoin
+ -y-macro-tendencias</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Martin Medina\, Head of Mining\, @thisistincho":mailto:devel
+ opers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Minería de Bitcoin y Macro tendencias de la Industria 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-mac
+ ro-tendencias
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200531T064500Z
+END:VEVENT
 END:VCALENDAR
