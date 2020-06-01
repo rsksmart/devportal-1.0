@@ -1625,8 +1625,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  ><a href=\"https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-
  merged-mining\">app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-mer
  ged-mining</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Martin Medina\, Mining Lead\, @ThisIsTincho":mailto:develope
- rs@iovlabs.org
+ORGANIZER;CN="Martin Medina\, Head of Mining\, @ThisIsTincho":mailto:devel
+ opers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -1658,8 +1658,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  </b><span><a href=\"https://app.livestorm.co/iov-labs-1/de-mineria-de-bitc
  oin-a-merged-mining\">app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-
  merged-mining</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Martin Medina\, Mining Lead\, @ThisIsTincho":mailto:develope
- rs@iovlabs.org
+ORGANIZER;CN="Martin Medina\, Head of Mining\, @ThisIsTincho":mailto:devel
+ opers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M

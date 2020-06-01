@@ -378,7 +378,7 @@
     {
       "type": "event/2",
       "id": "202004-005",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-03T21:00:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
@@ -404,7 +404,7 @@
     {
       "type": "event/2",
       "id": "202004-006",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-06T17:00:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
@@ -430,7 +430,7 @@
     {
       "type": "event/2",
       "id": "202004-007",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-06T21:00:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
@@ -456,7 +456,7 @@
     {
       "type": "event/2",
       "id": "202004-008",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-07T15:30:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
@@ -560,7 +560,7 @@
     {
       "type": "event/2",
       "id": "202004-012",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-08T22:30:00.000Z",
       "lastModified": "2020-04-07T00:00:00.000Z",
       "status": "confirmed",
@@ -792,7 +792,7 @@
     {
       "type": "event/2",
       "id": "202004-019",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-16T12:30:00.000Z",
       "lastModified": "2020-04-12T02:00:00.000Z",
       "status": "cancelled",
@@ -1114,7 +1114,7 @@
     {
       "type": "event/2",
       "id": "202004-028",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-24T17:00:00.000Z",
       "lastModified": "2020-04-19T05:36:00.000Z",
       "status": "confirmed",
@@ -1140,7 +1140,7 @@
     {
       "type": "event/2",
       "id": "202004-029",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-24T19:00:00.000Z",
       "lastModified": "2020-04-19T05:36:00.000Z",
       "status": "confirmed",
@@ -1166,7 +1166,7 @@
     {
       "type": "event/2",
       "id": "202004-030",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-27T17:00:00.000Z",
       "lastModified": "2020-04-25T13:11:00.000Z",
       "status": "confirmed",
@@ -1193,7 +1193,7 @@
     {
       "type": "event/2",
       "id": "202004-031",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-28T14:00:00.000Z",
       "lastModified": "2020-04-25T13:11:00.000Z",
       "status": "confirmed",
@@ -1252,7 +1252,7 @@
           "url": "https://docs.google.com/presentation/d/e/2PACX-1vQDr0B_K2HZXMV_y-pFK7HwSbXmKDcuxTeZoxyqcs7D1SxvHOHyMgfHbtUxjLpoUYUwxs6Adk42qqAj/pub?start=false&loop=false&delayms=600000"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/ThA8rkw-nTY",
       "_isPast": true
     },
     {
@@ -1295,7 +1295,7 @@
           "url": "https://developers.rsk.co/tutorials/tokens/create-a-collectable-token/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/JomHBILaBpA",
       "_isPast": true
     },
     {
@@ -1321,13 +1321,13 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/U8NMo8PUH6Q",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-004",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-04T18:00:00.000Z",
       "lastModified": "2020-05-02T13:57:00.000Z",
       "status": "confirmed",
@@ -1353,7 +1353,7 @@
     {
       "type": "event/2",
       "id": "202005-005",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-05T17:00:00.000Z",
       "lastModified": "2020-05-02T13:57:00.000Z",
       "status": "confirmed",
@@ -1379,7 +1379,7 @@
     {
       "type": "event/2",
       "id": "202005-006",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-05T19:00:00.000Z",
       "lastModified": "2020-05-02T13:57:00.000Z",
       "status": "confirmed",
@@ -1405,7 +1405,7 @@
     {
       "type": "event/2",
       "id": "202005-007",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-08T17:00:00.000Z",
       "lastModified": "2020-05-05T19:33:00.000Z",
       "status": "confirmed",
@@ -1432,7 +1432,7 @@
     {
       "type": "event/2",
       "id": "202005-008",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-12T20:30:00.000Z",
       "lastModified": "2020-05-15T09:15:00.000Z",
       "status": "confirmed",
@@ -1459,7 +1459,7 @@
     {
       "type": "event/2",
       "id": "202005-009",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-13T18:30:00.000Z",
       "lastModified": "2020-05-15T09:15:00.000Z",
       "status": "confirmed",
@@ -1550,7 +1550,7 @@
     {
       "type": "event/2",
       "id": "202005-012",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-20T17:00:00.000Z",
       "lastModified": "2020-05-15T09:15:00.000Z",
       "status": "confirmed",
@@ -1565,19 +1565,19 @@
         "general"
       ],
       "presenter": "Martin Medina",
-      "presenterDescription": "Mining Lead",
+      "presenterDescription": "Head of Mining",
       "presenterContact": "@ThisIsTincho",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merged-mining",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/-ht5UhUuIUE",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-013",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-20T21:00:00.000Z",
       "lastModified": "2020-05-15T09:15:00.000Z",
       "status": "confirmed",
@@ -1592,13 +1592,13 @@
         "general"
       ],
       "presenter": "Martin Medina",
-      "presenterDescription": "Mining Lead",
+      "presenterDescription": "Head of Mining",
       "presenterContact": "@ThisIsTincho",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-merged-mining",
       "tags": " idioma-spanish audiencia-developers audiencia-general recent",
       "image": "img/events/event10.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/CQ95g6xxS-Y",
       "_isPast": true
     },
     {
@@ -1625,7 +1625,7 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
       "image": "img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=Yeinq7aiGWQ",
       "_isPast": true
     },
     {
