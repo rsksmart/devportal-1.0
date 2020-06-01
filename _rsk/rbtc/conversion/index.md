@@ -5,6 +5,7 @@ tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
 description: 'Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet.'
 collection_order: 3100
 permalink: /rsk/rbtc/conversion/
+render_features: '2-way-peg-verifier tables-with-borders'
 ---
 
 In this article we will explain step by step on how to convert from BTC to R-BTC, and vice versa.
@@ -20,11 +21,46 @@ Thus, these conversions are referred to as peg-ins and peg-outs.
   - Locks R-BTC on the RSK network
   - Releases BTC on the Bitcoin network
 
-<div class="fade alert alert-warning show">IMPORTANT: WHITELIST PROCESS. To use the 2-way-peg you must first <a href="/rsk/rbtc/conversion/whitelist">get whitelisted</a>.</div>
+## Compatibility Matrix
 
-> Note: On Testnets, the token symbols are prefixed with a lowercase `t`.
-> Thus we have `BTC` and `R-BTC` on Mainnets,
-> which correspond to `tBTC` and `tR-BTC` of Testnets.
+In the following matrixes will be shown the different types of addresses that are accepted for the Federation.
+
+| Before Papyrus | | Accepted in BTC | | Accepted in RSK | | Refundable | | Processable |
+| :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: | | --- | | :---: |
+| P2PKH | | ✔ | | ✔ | | ✔ | | ✔ |
+| P2SH-P2WPKH | | ✔ | | ❌ | | ❌ | | ❌ |
+| P2SH-MULTISIG | | ✔ | | ❌ | | ❌ | | ❌ |
+| P2SH-P2WSH | | ✔ | | ❌ | | ❌ | | ❌ |
+| PWPKH (BECH32) | | ✔ | | ❌ | | ❌ | | ❌ |
+| OTHERS | | ✔ | | ❌ | | ❌ | | ❌ |
+
+<br/>
+
+| After Papyrus | | Accepted in BTC | | Accepted in RSK | | Refundable | | Processable |
+| :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: | | --- | | :---: |
+| P2PKH | | ✔ | | ✔ | | ✔ | | ✔ |
+| P2SH-P2WPKH | | ✔ | | ✔ | | ✔ | | ✔ |
+| P2SH-MULTISIG | | ✔ | | ✔ | | ✔ | | ❌ |
+| P2SH-P2WSH | | ✔ | | ✔ | | ✔ | | ❌ |
+| PWPKH (BECH32) | | ✔ | | ❌ | | ❌ | | ❌ |
+| OTHERS | | ✔ | | ❌ | | ❌ | | ❌ |
+
+<br/>
+
+- **Accepted in BTC**: Is this type of address accepted in regular BTC transactions? (including sending BTC to the Federation address)
+- **Accepted in RSK**: is this type of address received by RSK Bridge smart contract?
+- **Refundable**: is this type of address able to generate a refund transaction (this occurs when the transaction won't be processable, then we refund the sender its BTC)
+- **Processable**: is this type of address able to generate a refund transaction (this occurs when the transaction won't be processable, then we refund the sender its BTC)
+
+> Note: On the Testnets, the token symbols are prefixed with a lowercase `t`.
+> Thus we have `BTC` and `R-BTC` on the Mainnets,
+> which correspond to `tBTC` and `tR-BTC` of the Testnets.
+
+### Address verifier
+
+Enter your BTC address below to verify whether it may be used to peg in from BTC to R-BTC.
+
+[](#top "pegin-address-verifier")
 
 ## Step by step instructions
 

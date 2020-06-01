@@ -1,9 +1,11 @@
 ---
 layout: rsk
 title: Quick Start - Step 1
+tags: quick-start, rskj
+description: 'quick start - install RSK local node - prep environment, verify and install RSKj'
 collection_order: 10
 render_custom_terminals: true
-render_features: "custom-terminals"
+render_features: 'custom-terminals'
 ---
 
 # Step 1 : Install RSK local node
