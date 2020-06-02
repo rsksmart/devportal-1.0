@@ -15,16 +15,16 @@
       <meta name="description" content="Welcome to RSK & RIF Webinars!">
       <meta name="author" content="RSK">
       <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-      <title>{{ page.title }} - RSK + RIF Webinars</title>
+      <title>{{ page.event_title }} - RSK + RIF Webinars</title>
       <!-- og info -->
-      <meta property="og:title" content="Webinars">
-      <meta property="og:description" content="Security experts, software developers and hackers who dedicate time and effort to improve the rsk platform are rewarded. ">
+      <meta property="og:title" content="{{ page.event_title }} - RSK + RIF Webinars">
+      <meta property="og:description" content="{{ page.event_description }} - RSK + RIF Webinars">
       <meta property="og:image" content="https://rsk.co/img/og/rsk.jpg">
       <meta property="og:url" content="https://www.rsk.co/bounty-program">
       <!-- Twitter Card data -->
       <meta name="twitter:card" content="summary">
-      <meta name="twitter:title" content="Webinars">
-      <meta name="twitter:description" content="Welcome to RSK & RIF Webinars!">
+      <meta name="twitter:title" content="{{ page.event_title }} - RSK + RIF Webinars">
+      <meta name="twitter:description" content="{{ page.event_description }} - RSK + RIF Webinars">
       <meta name="twitter:image" content="https://rsk.co/img/og/rsk.jpg">
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="/webinars/img/favicons/apple-touch-icon.png">
@@ -54,7 +54,9 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
          <div class="container">
-            <a class="navbar-brand" href="https://www.rsk.co/" rel="nofollow noopener noreferrer" target="_blank"><img id="logo" src="img/rsk_logo.svg" class="logo" alt="RSK"></a>
+            <a class="navbar-brand" href="https://www.rsk.co/" rel="nofollow noopener noreferrer" target="_blank">
+              <img id="logo" src="/webinars/img/rsk_logo.svg" class="logo" alt="RSK">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -91,10 +93,89 @@
                <div class="container h-100">
                   <div class="row h-100">
                      <div id="home-text" class="col-lg-12 my-auto">
-                        <h1><span class="bold rsk_green">Webinars</span>
+                        <h1>
+                          <span class="bold rsk_green">{{ page.event_title }} - RSK + RIF Webinars</span>
                         </h1>
-                        <p class="mb-5"><span class="bold">Welcome to RSK &amp; RIF Webinars!</span> Now you can watch and learn more about Blockchain! Check the latest news, information, tools, tutorials and workshops around <span class="bold">RSK, RIF, Blockchain, Bitcoin and the Internet of Value</span>.
+                        <p class="mb-5">
+                          {{ page.event_description }}
                         </p>
+                        <p class="mb-5">
+                          <div class="image-group" style="background-image: url('{{ page.event_image }}');">
+                            <div class="event-type">{{ page.event_category }}</div>
+                          </div>
+                        </p>
+                        <p
+                          class="tiempo mb-5"
+                          data-timestamp="{{ page.event_timestamp }}"
+                        >
+                          <span>
+                              <i class="fa fa-calendar" aria-hidden="true"></i>
+                              <span class="display-date">{{ page.event_timestamp }}</span>
+                              <span class="display-time"></span>
+                              <span class="display-tz"></span>
+                          </span>
+                        </p>
+                        <p class="mb-5">
+                          <span>
+                              <i class="fa fa-language" aria-hidden="true"></i>
+                              <span class="text display-language">{{ page.event_language }}</span>
+                          </span>
+                        </p>
+                        <div class="mb-5">
+                          <i class="fa fa-chalkboard-teacher" aria-hidden="true"></i>
+                          <ul>
+                          {% for presenter in page.event_presenters %}
+                          <li class="presenter">
+                            <span class="presenter-name">{{ presenter.name }}</span>{% if presenter.description %},
+                            <span class="presenter-description">{{ presenter.description }}</span>{% endif %}
+                            {% if presenter.contact %}- (<span class="presenter-contact">{{ presenter.contact }}</span>){% endif %}
+                          </li>
+                          {% endfor %}
+                          </ul>
+                        </div>
+                        <p class="mb-5">
+                          {% if page.event_isPast %}
+                            <span>
+                                <i class="fa fa-video" aria-hidden="true"></i>
+                                <span class="text display-recorded-video-url">
+                                  {% if page.event_recordedVideoUrl != "" %}
+                                  <a href="{{ page.event_recordedVideoUrl }}"
+                                      rel="noreferrer noopener"
+                                      target="_blank">
+                                      View Recording
+                                  </a>
+                                  {% else %}
+                                  <span>
+                                      Recording not available
+                                  </span>
+                                  {% endif %}
+                                </span>
+                            </span>
+                          {% else %}
+                            <span>
+                                RSVP now!
+                            </span>
+                          {% endif %}
+                        </p>
+                        {% assign resourceCount = page.event_resources | size %}
+                        {% if resourceCount > 0 %}
+                        <p class="mb-5">
+                          <span>
+                              <i class="fa fa-link" aria-hidden="true"></i>
+                          </span>
+                          <ul class="text display-resource">
+                              {% for resource in page.event_resources %}
+                                <li>
+                                    <a href="{{ resource.url }}"
+                                      rel="noreferrer noopener"
+                                      target="_blank">
+                                      {{ resource.label }}
+                                    </a>
+                                </li>
+                              {% endfor %}
+                          </ul>
+                        </p>
+                        {% endif %}
                      </div>
                   </div>
                </div>
@@ -102,39 +183,33 @@
          </div>
       </section>
 
-      <section id="event">
-        <pre>
-          permalink: {{ page.permalink }}
-          event_id: {{ page.event_id }}
-          event_timestamp: {{ page.event_timestamp }}
-          event_title: {{ page.event_title }}
-          event_description: {{ page.event_description }}
-          event_rsvpEmbedUrl: {{ page.event_rsvpEmbedUrl }}
-          event_category: {{ page.event_category }}
-          event_locationCategory: {{ page.event_locationCategory }}
-          event_location: {{ page.event_location }}
-          event_language: {{ page.event_language }}
-          event_audiences: {{ page.event_audiences }}
-          event_presenter: {{ page.event_presenter }}
-          event_presenterDescription: {{ page.event_presenterDescription }}
-          event_presenterContact: {{ page.event_presenterContact }}
-          event_videoStreamUrl: {{ page.event_videoStreamUrl }}
-          event_tags: {{ page.event_tags }}
-          event_image: {{ page.event_image }}
-          event_resources: {{ page.event_resources }}
-          event_recordedVideoUrl: {{ page.event_recordedVideoUrl }}
-          event_isPast: {{ page.event_isPast }}
-        </pre>
-      </section>
-
-      <section>
-        <iframe
-          width="100%"
-          height="420"
-          frameborder="0"
-          src="{{ page.event_rsvpEmbedUrl }}"
-          title="{{ page.event_title }}"
-        ></iframe>
+      <section id="event-rsvp-embed">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div id="home-text" class="col-lg-12 my-auto">
+                  {% if page.event_isPast %}
+                    <p>
+                      This event has concluded, and RSVPs are closed.
+                    </p>
+                    <p>
+                      <a href="/webinars">Check out our future webinars!</a>
+                    </p>
+                  {% else %}
+                    <iframe
+                      width="100%"
+                      height="420"
+                      frameborder="0"
+                      src="{{ page.event_rsvpEmbedUrl }}"
+                      title="{{ page.event_title }}"
+                    ></iframe>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- scope -->
