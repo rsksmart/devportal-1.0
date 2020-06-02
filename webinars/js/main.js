@@ -114,7 +114,7 @@ function concatValues( obj ) {
 // Iterate over all "event" elements and attempt to render their times
 // where the timestamp property is present
 function renderLocalTimes() {
-  $('.eventos').each(function () {
+  $('.tiempo').each(function () {
     var timestamp = $(this).data('timestamp');
     if (timestamp) {
       renderLocalTime(this, timestamp);
