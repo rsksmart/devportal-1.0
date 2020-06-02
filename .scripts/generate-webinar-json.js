@@ -41,7 +41,22 @@ csvConverter
     if (!item.image) {
       // rotate between the 12 available generic images
       const imageIndex = (((itemIndex % 2) * 6 + itemIndex) % 12) + 1;
-      item.image = `img/events/event${imageIndex}.jpg`;
+      item.image = `/webinars/img/events/event${imageIndex}.jpg`;
+    }
+    if (item.presenter) {
+      const presenterDescriptionSplit = item.presenterDescription.split('\n');
+      const presenterContactSplit = item.presenterContact.split('\n');
+      item.presenters = item.presenter.split('\n')
+        .filter((name) => (!!name))
+        .map((name, idx) => {
+          return {
+            name,
+            description: presenterDescriptionSplit[idx] || '',
+            contact: presenterContactSplit[idx] || '',
+          };
+        });
+    } else {
+      item.presenters = [];
     }
   })
   .on('error', (error) => {
@@ -116,14 +131,14 @@ csvConverter
           status,
           url,
           title,
+          description,
           category,
           locationCategory,
           location,
           language,
           audiences,
-          presenter,
-          presenterDescription,
-          presenterContact,
+          presenters,
+          rsvpEmbedUrl,
           videoStreamUrl,
           tags,
           image,
@@ -140,20 +155,19 @@ csvConverter
           status,
           url,
           title,
+          description,
           category,
           locationCategory,
           location,
           language,
           audiences,
-          presenter,
-          presenterDescription,
-          presenterContact,
+          presenters,
+          rsvpEmbedUrl,
           videoStreamUrl,
           tags,
           image,
           resources,
           recordedVideoUrl,
-          ...rest,
           _isPast,
         };
       });

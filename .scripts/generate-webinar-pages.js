@@ -9,11 +9,34 @@ function writeEventFiles() {
     .filter(
       (event) => (
         event.description &&
-        event.rsvpEmbedUrl &&
+        (event.rsvpEmbedUrl || event._isPast) &&
         event.status === 'confirmed'
       ),
     )
     .map((event) => {
+      const eventPresentersYaml =
+        (!Array.isArray(event.presenters) || event.presenters.length < 1) ?
+          '' :
+          ('event_presenters:\n' +
+          event.presenters
+            .map((presenter) => {
+              return `  - name: "${presenter.name}"
+    description: "${presenter.description}"
+    contact: "${presenter.contact}"`;
+            })
+            .join('\n'));
+
+      const eventResourcesYaml =
+        (!Array.isArray(event.resources) || event.resources.length < 1) ?
+          '' :
+          ('event_resources:\n' +
+          event.resources
+          .map((resource) => {
+            return `  - label: "${resource.label}"
+    url: "${resource.url}"`;
+          })
+          .join('\n'));
+
       const markdown = `---
 layout: event_page
 permalink: "/webinars/${event.id}/"
@@ -27,15 +50,13 @@ event_locationCategory: "${event.locationCategory}"
 event_location: "${event.location}"
 event_language: "${event.language}"
 event_audiences: "${event.audiences}"
-event_presenter: "${event.presenter}"
-event_presenterDescription: "${event.presenterDescription}"
-event_presenterContact: "${event.presenterContact}"
+${eventPresentersYaml}
 event_videoStreamUrl: "${event.videoStreamUrl}"
 event_tags: "${event.tags}"
 event_image: "${event.image}"
-event_resources: "${event.resources}"
+${eventResourcesYaml}
 event_recordedVideoUrl: "${event.recordedVideoUrl}"
-event_isPast: "${event._isPast}"
+event_isPast: ${event._isPast}
 ---
 `;
       return {
