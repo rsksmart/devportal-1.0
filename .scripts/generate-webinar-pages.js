@@ -17,7 +17,7 @@ function writeEventFiles() {
       const eventPresentersYaml =
         (!Array.isArray(event.presenters) || event.presenters.length < 1) ?
           '' :
-          ('event_presenters:\n' +
+          ('  presenters:\n' +
           event.presenters
             .map((presenter) => {
               return `  - name: "${presenter.name}"
@@ -29,7 +29,7 @@ function writeEventFiles() {
       const eventResourcesYaml =
         (!Array.isArray(event.resources) || event.resources.length < 1) ?
           '' :
-          ('event_resources:\n' +
+          ('  resources:\n' +
           event.resources
           .map((resource) => {
             return `  - label: "${resource.label}"
@@ -40,24 +40,28 @@ function writeEventFiles() {
       const markdown = `---
 layout: event_page
 permalink: "/webinars/${event.id}/"
-event_id: "${event.id}"
-event_timestamp: "${event.timestamp}"
-event_title: "${event.title}"
-event_description: "${event.description}"
-event_rsvpEmbedUrl: "${event.rsvpEmbedUrl}"
-event_category: "${event.category}"
-event_locationCategory: "${event.locationCategory}"
-event_location: "${event.location}"
-event_language: "${event.language}"
-event_audiences: "${event.audiences}"
+event:
+  id: "${event.id}"
+  timestamp: "${event.timestamp}"
+  title: "${event.title}"
+  rsvpEmbedUrl: "${event.rsvpEmbedUrl}"
+  category: "${event.category}"
+  locationCategory: "${event.locationCategory}"
+  location: "${event.location}"
+  language: "${event.language}"
+  audiences: "${event.audiences}"
 ${eventPresentersYaml}
-event_videoStreamUrl: "${event.videoStreamUrl}"
-event_tags: "${event.tags}"
-event_image: "${event.image}"
+  videoStreamUrl: "${event.videoStreamUrl}"
+  tags: "${event.tags}"
+  image: "${event.image}"
 ${eventResourcesYaml}
-event_recordedVideoUrl: "${event.recordedVideoUrl}"
-event_isPast: ${event._isPast}
+  recordedVideoUrl: "${event.recordedVideoUrl}"
+  isPast: ${event._isPast}
 ---
+
+
+${event.description}
+
 `;
       return {
         ...event,
