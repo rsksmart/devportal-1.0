@@ -1829,22 +1829,18 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202006-001@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200605T090000Z
-DTSTART:20200605T090000Z
+DTSTAMP:20200612T090000Z
+DTSTART:20200612T090000Z
 SUMMARY:How to Upload a Website on RIF Storage 
-DESCRIPTION:How to Upload a Website on RIF Storage\n\nOnline only\n\nRSVP:
-  https://www.meetup.com/es-ES/rsk-community/events/270954178/\n\nVideo str
- eam: https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-st
- orage\n
+DESCRIPTION:How to Upload a Website on RIF Storage\n\nOnline only\n\nCance
+ lled\, see webinars page for more details: https://developers.rsk.co/webin
+ ars/calendar.ical\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How to 
  Upload a Website on RIF Storage</span></div>\n<div><span>Online only</span
- ></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es
- -ES/rsk-community/events/270954178/\">www.meetup.com/es-ES/rsk-community/e
- vents/270954178/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><
- a href=\"https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-ri
- f-storage\">app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-sto
- rage</a></span></div>\n</BODY>\n</HTML>
+ ></div>\n<div><b>Cancelled\, see webinars page for more details &nbsp\;</b
+ ><span><a href=\"https://developers.rsk.co/webinars/calendar.ical\">develo
+ pers.rsk.co/webinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Rinke Hendriksen\, Swarm PO & Researcher\, @hendriksenrinke"
  :mailto:developers@iovlabs.org
 BEGIN:VALARM
@@ -1855,9 +1851,9 @@ END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-
  on-rif-storage
-STATUS:CONFIRMED
+STATUS:CANCELLED
 X-LANGUAGE:English
-LAST-MODIFIED:20200529T165200Z
+LAST-MODIFIED:20200601T231400Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202006-002@developers.rsk.co/
@@ -1921,5 +1917,35 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-mac
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200531T064500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-004@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200610T090000Z
+DTSTART:20200610T090000Z
+SUMMARY:How to Upload a Website on RIF Storage 
+DESCRIPTION:How to Upload a Website on RIF Storage\n\nOnline only\n\nRSVP:
+  \n\nVideo stream: https://app.livestorm.co/iov-labs-1/how-to-upload-a-web
+ site-on-rif-storage\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How to 
+ Upload a Website on RIF Storage</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream
+  &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/how-to-upl
+ oad-a-website-on-rif-storage\">app.livestorm.co/iov-labs-1/how-to-upload-a
+ -website-on-rif-storage</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Rinke Hendriksen\, Swarm PO & Researcher\, @hendriksenrinke"
+ :mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:How to Upload a Website on RIF Storage 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-
+ on-rif-storage
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200602T144500Z
 END:VEVENT
 END:VCALENDAR

@@ -6,9 +6,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-webinar": "npm run generate-webinar-json && npm run generate-webinar-ical",
+    "generate-webinar": "npm run generate-webinar-json && npm run generate-webinar-ical && npm run generate-webinar-pages",
     "generate-webinar-ical": "node .scripts/generate-webinar-ical.js",
-    "generate-webinar-json": "node .scripts/generate-webinar-json.js"
+    "generate-webinar-json": "node .scripts/generate-webinar-json.js",
+    "generate-webinar-pages": "node .scripts/generate-webinar-pages.js"
   },
   "repository": {
     "type": "git",

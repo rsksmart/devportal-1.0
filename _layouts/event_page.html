@@ -2,6 +2,7 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
+   {% assign event = page.event %}
    <head>
       <!-- Google Tag Manager -->
       <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -14,36 +15,37 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="Welcome to RSK & RIF Webinars!">
       <meta name="author" content="RSK">
-      <title>Webinars</title>
+      <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+      <title>{{ event.title }} - RSK + RIF Webinars</title>
       <!-- og info -->
-      <meta property="og:title" content="Webinars">
-      <meta property="og:description" content="Security experts, software developers and hackers who dedicate time and effort to improve the rsk platform are rewarded. ">
+      <meta property="og:title" content="{{ event.title }} - RSK + RIF Webinars">
+      <meta property="og:description" content="{{ event.description }} - RSK + RIF Webinars">
       <meta property="og:image" content="https://rsk.co/img/og/rsk.jpg">
       <meta property="og:url" content="https://www.rsk.co/bounty-program">
       <!-- Twitter Card data -->
       <meta name="twitter:card" content="summary">
-      <meta name="twitter:title" content="Webinars">
-      <meta name="twitter:description" content="Welcome to RSK & RIF Webinars!">
+      <meta name="twitter:title" content="{{ event.title }} - RSK + RIF Webinars">
+      <meta name="twitter:description" content="{{ event.description }} - RSK + RIF Webinars">
       <meta name="twitter:image" content="https://rsk.co/img/og/rsk.jpg">
       <!-- Favicons -->
-      <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-      <link rel="manifest" href="img/favicons/site.webmanifest">
-      <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#000000">
-      <link rel="shortcut icon" href="img/favicons/favicon.ico">
+      <link rel="apple-touch-icon" sizes="180x180" href="/webinars/img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/webinars/img/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/webinars/img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="/webinars/img/favicons/site.webmanifest">
+      <link rel="mask-icon" href="/webinars/img/favicons/safari-pinned-tab.svg" color="#000000">
+      <link rel="shortcut icon" href="/webinars/img/favicons/favicon.ico">
       <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+      <meta name="msapplication-config" content="/webinars/img/favicons/browserconfig.xml">
       <meta name="theme-color" content="#ffffff">
       <!-- Google Fonts -->
       <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,900&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800&display=swap" rel="stylesheet">
       <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/webinars/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
       <!-- Libraries CSS Files -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
       <!-- Main Stylesheet File -->
-      <link href="css/styles.css" rel="stylesheet">
+      <link href="/webinars/css/styles.css" rel="stylesheet">
    </head>
    <body>
       <!-- Google Tag Manager (noscript) -->
@@ -53,7 +55,9 @@
       <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
          <div class="container">
-            <a class="navbar-brand" href="https://www.rsk.co/" rel="nofollow noopener noreferrer" target="_blank"><img id="logo" src="img/rsk_logo.svg" class="logo" alt="RSK"></a>
+            <a class="navbar-brand" href="https://www.rsk.co/" rel="nofollow noopener noreferrer" target="_blank">
+              <img id="logo" src="/webinars/img/rsk_logo.svg" class="logo" alt="RSK">
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -90,271 +94,130 @@
                <div class="container h-100">
                   <div class="row h-100">
                      <div id="home-text" class="col-lg-12 my-auto">
-                        <h1><span class="bold rsk_green">Webinars</span>
+                        <h1>
+                          <span class="bold rsk_green">{{ event.title }} - RSK + RIF Webinars</span>
                         </h1>
-                        <p class="mb-5"><span class="bold">Welcome to RSK & RIF Webinars!</span> Now you can watch and learn more about Blockchain! Check the latest news, information, tools, tutorials and workshops around <span class="bold">RSK, RIF, Blockchain, Bitcoin and the Internet of Value</span>.
+                        <p class="mb-5">
+                          {{ content }}
                         </p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- Calendar -->
-      {% assign events = site.data.webinars.events | where_exp: "event", "event.status != 'cancelled'" %}
-      {% assign past_events = events | where_exp: "event", "event._isPast == true" | sort: 'timestamp' | reverse %}
-      {% assign future_events = events | where_exp: "event", "event._isPast == false" | sort: 'timestamp' %}
-
-      <section id="calendar">
-         <img class="circle-blue" src="img/circles/circle-blue.png">
-         <div class="container">
-            <div class="row mb-3">
-               <div class="col-lg-6">
-                  <h2><span class="bold rsk_green">Calendar</span></h2>
-               </div>
-            </div>
-
-            <div class="row">
-               <!-- Event grid -->
-               <div class="grid-nofilters">
-                  <div class="row">
-               {% for event in future_events %}
-                  <!-- Event -->
-
-                  <div
-                     id="event-id-{{ event.id }}"
-                     class="col-lg-4 eventos tiempo {{ event.tags }}"
-                     data-timestamp="{{ event.timestamp }}">
-                     <a href="{{ event.videoStreamUrl }}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="event-inner">
-                        <div class="image-group" style="background-image: url('{{ event.image }}');">
-                           <div class="event-type">{{ event.category }}</div>
-                        </div>
-                        <div class="info-group">
-                           <div class="title-group">
-                              {{ event.title }}
-                              <br>
-                              {{ event.subtitle }}
-                           </div>
-                           <div class="desc-group">
-                              <span class="bold">
-                              {% if locationCategory == "online" %}
-                                 ONLINE EVENT
-                              {% elsif locationCategory == "physical" %}
-                                 IN-PERSON EVENT
-                              {% elsif locationCategory == "onlineAndPhysical" %}
-                                 ONLINE &amp; IN-PERSON EVENT
-                              {% endif %}
-                              </span>
-                              <span>
-                                 <i class="fa fa-language" aria-hidden="true"></i>
-                                 <span class="text display-language">{{ event.language }}</span>
-                              </span>
+                        <p class="mb-5">
+                          <div class="image-group" style="background-image: url('{{ event.image }}');">
+                            <div class="event-type">{{ event.category }}</div>
+                          </div>
+                        </p>
+                        <div
+                          class="tiempo mb-5"
+                          data-timestamp="{{ event.timestamp }}"
+                        >
+                          <p class="event-date">
                               <span>
                                  <i class="fa fa-calendar" aria-hidden="true"></i>
-                                 <span class="text display-date"></span>
+                                 <span class="text display-date">{{ event.timestamp }}</span>
                               </span>
+                          </p>
+                          <p class="event-time">
                               <span>
                                  <i class="fa fa-clock" aria-hidden="true"></i>
                                  <span class="text display-time"></span>
                                  <span class="text display-tz"></span>
                               </span>
+                          </p>
+                          <p class="event-language">
+                            <span>
+                                <i class="fa fa-language" aria-hidden="true"></i>
+                                <span class="text display-language">{{ event.language }}</span>
+                            </span>
+                          </p>
+                          <p class="event-presenters">
+                            <i class="fa fa-chalkboard-teacher" aria-hidden="true"></i>
+                            <ul>
+                            {% for presenter in event.presenters %}
+                            <li class="presenter">
+                              <span class="presenter-name">{{ presenter.name }}</span>{% if presenter.description %},
+                              <span class="presenter-description">{{ presenter.description }}</span>{% endif %}
+                              {% if presenter.contact %}- (<span class="presenter-contact">{{ presenter.contact }}</span>){% endif %}
+                            </li>
+                            {% endfor %}
+                            </ul>
+                          </p>
+                          {% assign resourceCount = event.resources | size %}
+                          {% if resourceCount > 0 %}
+                          <p class="event-resources">
+                            <span>
+                                <i class="fa fa-link" aria-hidden="true"></i>
+                            </span>
+                            <ul class="text display-resource">
+                                {% for resource in event.resources %}
+                                  <li>
+                                      <a href="{{ resource.url }}"
+                                        rel="noreferrer noopener"
+                                        target="_blank">
+                                        {{ resource.label }}
+                                      </a>
+                                  </li>
+                                {% endfor %}
+                            </ul>
+                          </p>
+                          {% endif %}
+                          <p class="event-recording">
+                            {% if event.isPast %}
                               <span>
-                                 <i class="fa fa-map-marker" aria-hidden="true"></i>
-                                 <span class="text display-space">{{ event.location }}</span>
-                              </span>
-                           </div>
-                        </div>
-                        <div class="button-group">More info +</div>
-                     </a>
-                  </div>
-
-                  <!-- /Event -->
-               {% endfor %}
-                  </div>
-               </div>
-               <!-- /Event grid -->
-            </div>
-         </div>
-      </section>
-
-      <!-- ical -->
-      <section id="add-calendar">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 my-auto text-center">
-                  <a
-                     href="/webinars/calendar.ical"
-                     target="_blank"
-                     rel="noreferrer noopener">
-                     <img src="img/calendar-image.png" class="calendar-image">
-                     <h4>
-                        <span class="rsk_black">Add to your</span>
-                        <span class="rsk_green bold">Calendar</span>
-                     </h4>
-                  </a>
-               </div>
-            </div>
-         </div>
-         <img class="circle-blue" src="img/circles/circle-blue.png">
-      </section>
-
-      <!-- youtube -->
-      <section id="youtube">
-         <img class="circle-green" src="img/circles/circle-green.png">
-         <img class="semi-circle-right" src="img/circles/semi-circle-right.png">
-         <img class="semi-circle-left" src="img/circles/semi-circle-left.png">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-12 my-auto text-center">
-                  <a
-                     href="https://www.youtube.com/rsksmart"
-                     target="_blank"
-                     rel="noreferrer noopener">
-                     <h4>
-                        <span class="rsk_black">Access all our past Webinars</span>
-                        <br>
-                        <span class="rsk_black">on</span>
-                        <span class="rsk_green bold">YouTube</span>
-                     </h4>
-                     <i class="fab fa-youtube"></i>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- past events calendar -->
-      <section id="calendar-past">
-         <img class="circle-blue" src="img/circles/circle-blue.png">
-         <div class="container">
-            <div class="row mb-3">
-               <div class="col-lg-6">
-                  <h2><span class="bold rsk_green">Past events</span></h2>
-               </div>
-            </div>
-            <!-- Event selection -->
-            <div class="row mb-5">
-               <div class="col">
-                  <div class="filters">
-                     <div class="ui-group">
-                        <h3 class="title-sm">Recent</h3>
-                        <select class="filter-select" value-group="language">
-                           <option disabled="disabled">Select Recency</option>
-                           <option value="">All</option>
-                           <option value=".recent" selected="true">Most recent only</option>
-                        </select>
-                     </div>
-                     <div class="ui-group">
-                        <h3 class="title-sm">Language</h3>
-                        <select class="filter-select" value-group="language">
-                           <option selected="true" disabled="disabled">Select Language</option>
-                           <option value="">All</option>
-                           <option value=".idioma-english">English</option>
-                           <option value=".idioma-spanish">Español</option>
-                           <option value=".idioma-portuguese">Português</option>
-                        </select>
-                     </div>
-                     <div class="ui-group">
-                        <h3 class="title-sm">Audience</h3>
-                        <select class="filter-select" value-group="audience">
-                           <option selected="true" disabled="disabled">Select Audience</option>
-                           <option value="">All</option>
-                           <option value=".audiencia-general">General</option>
-                           <option value=".audiencia-developers">Developers</option>
-                           <option value=".audiencia-enterprise">Enterprise</option>
-                           <option value=".audiencia-startups">Startups &amp; Entrepreneurs</option>
-                        </select>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div class="row">
-               <!-- Past event grid -->
-               <div class="grid">
-                  <div class="row">
-               {% for event in past_events %}
-                  <!-- Past event -->
-
-                  <div
-                     id="event-id-{{ event.id }}"
-                     class="col-lg-4 eventos eventos-past tiempo {{ event.tags }}"
-                     data-timestamp="{{ event.timestamp }}">
-                     <div class="event-inner">
-                        <div class="image-group" style="background-image: url('{{ event.image }}');">
-                           <div class="event-type">{{ event.category }}</div>
-                        </div>
-                        <div class="info-group">
-                           <div class="title-group">
-                              {{ event.title }}
-                              <br>
-                              {{ event.subtitle }}
-                           </div>
-                           <div class="desc-group">
-                              <span class="bold">
-                              </span>
-                              <span>
-                                 <i class="fa fa-video" aria-hidden="true"></i>
-                                 <span class="text display-recorded-video-url">
+                                  <i class="fa fa-video" aria-hidden="true"></i>
+                                  <span class="text display-recorded-video-url">
                                     {% if event.recordedVideoUrl != "" %}
                                     <a href="{{ event.recordedVideoUrl }}"
-                                       rel="noreferrer noopener"
-                                       target="_blank">
-                                       View Recording
+                                        rel="noreferrer noopener"
+                                        target="_blank">
+                                        View Recording
                                     </a>
                                     {% else %}
                                     <span>
-                                       Recording not available
+                                        Recording not available
                                     </span>
                                     {% endif %}
-                                 </span>
+                                  </span>
                               </span>
+                            {% else %}
                               <span>
-                                 <i class="fa fa-language" aria-hidden="true"></i>
-                                 <span class="text display-language">{{ event.language }}</span>
+                                  RSVP now!
                               </span>
-                              <span>
-                                 <i class="fa fa-calendar" aria-hidden="true"></i>
-                                 <span class="text display-date"></span>
-                              </span>
-                              {% assign resourceCount = event.resources | size %}
-                              {% if resourceCount > 0 %}
-                              <span>
-                                 <i class="fa fa-link" aria-hidden="true"></i>
-                                 <span class="text">Resources</span>
-                              </span>
-                              <ul class="text display-resource">
-                                 {% for resource in event.resources %}
-                                    <li>
-                                       <a href="{{ resource.url }}"
-                                          rel="noreferrer noopener"
-                                          target="_blank">
-                                          {{ resource.label }}
-                                       </a>
-                                    </li>
-                                 {% endfor %}
-                              </ul>
-                              {% endif %}
-                           </div>
-                        </div>
-                        <div
-                           class="button-group"
-                           data-event-id="{{ event.id }}">
+                            {% endif %}
+                          </p>
                         </div>
                      </div>
                   </div>
-
-                  <!-- /Past event -->
-               {% endfor %}
-                  </div>
                </div>
-               <!-- /Past event grid -->
             </div>
          </div>
+      </section>
+
+      <section id="event-rsvp-embed">
+        <div class="container-fluid h-100">
+          <div class="row h-100">
+            <div class="container h-100">
+              <div class="row h-100">
+                <div id="home-text" class="col-lg-12 my-auto">
+                  {% if event.isPast %}
+                    <p>
+                      This event has concluded, and RSVPs are closed.
+                    </p>
+                    <p>
+                      <a href="/webinars">Check out our future webinars!</a>
+                    </p>
+                  {% else %}
+                    <iframe
+                      width="100%"
+                      height="420"
+                      frameborder="0"
+                      src="{{ event.rsvpEmbedUrl }}"
+                      title="{{ event.title }}"
+                    ></iframe>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- scope -->
@@ -362,7 +225,7 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-12 my-auto text-center">
-                  <img src="img/rsk-rif-iov.png" class="img-fluid three-brands">
+                  <img src="/webinars/img/rsk-rif-iov.png" class="img-fluid three-brands">
                </div>
             </div>
          </div>
@@ -374,7 +237,7 @@
             <div class="container">
                <div class="row">
                   <div class="col-lg-12">
-                     <img src="img/powered_by_iov.svg" class="img-fluid powered_by">
+                     <img src="/webinars/img/powered_by_iov.svg" class="img-fluid powered_by">
                   </div>
                </div>
                <div class="row">
@@ -463,9 +326,9 @@
       </footer>
       <!-- #footer -->
       <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <script src="js/isotope.pkgd.min.js"></script>
-      <script src="js/main.js"></script>
+      <script src="/webinars/vendor/jquery/jquery.min.js"></script>
+      <script src="/webinars/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/webinars/js/isotope.pkgd.min.js"></script>
+      <script src="/webinars/js/main.js"></script>
    </body>
 </html>
