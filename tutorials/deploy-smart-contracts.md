@@ -248,10 +248,7 @@ Let's get an instance of our contract! In migrations, we defined a name for our 
 
 2. Call the `get()` method to get the storage in the contract.
   ```shell
-  truffle(develop)> simpleStorage.get()
-  # BN { negative: 0, words: [ 0, <1 empty item> ], length: 1, red: null }
-  truffle(develop)> simpleStorage.get().then(bn => bn.toNumber())
-  # 0  
+  truffle(develop)> (await simpleStorage.get()).toNumber()
   # This method does not modify the storage of the contract, so no funds are spent calling it.
   ```
 3. Now we are going to modify the storage. To modify a contract's storage we must pay with gas. This gas is discounted from the account balance.
@@ -302,11 +299,9 @@ Let's get an instance of our contract! In migrations, we defined a name for our 
 
 #### 8.2 Create a .secret file
 
-In the terminal, inside the project folder, create a file named .secret.
+In the terminal, inside the project folder, create a file named `.secret`.
 
 Do you remember your mnemonic? Paste your mnemonic in this file and save it.
-
-![Secret File](/assets/img/deploy-smart-contract/deploy-smart-contract9.png)
 
 #### 8.3 Connect Truffle to RSK public network
 
@@ -448,7 +443,7 @@ truffle(testnet)> web3.eth.getBlockNumber((err,res)=>console.log(res))
 # 904502
 ```
 
-> Why not **web3.eth.blockNumber**? When we use providers to connect to a node, we must do it asynchronously!
+> Why not `web3.eth.blockNumber`? When we use providers to connect to a node, we must do it asynchronously!
 Do not close this console. We are going to use it in the next steps.
 
 #### 8.4 Get funds on RSK account
