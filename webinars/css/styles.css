@@ -851,6 +851,10 @@ select {
     margin-top: auto;
 }
 
+.button-group a {
+    color: white;
+}
+
 a:hover .event-type {
     color: #00b520;
     text-decoration: none!important;
