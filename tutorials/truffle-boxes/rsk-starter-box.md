@@ -23,7 +23,7 @@ Here is a summary of the steps we will take in this tutorial:
 7. Deploy a smart contract on RSK network using Truffle;
 8. Interact with the smart contract at Truffle console.
 
-If you came from [Truffle box page rsk-starter-box](https://github.com/rsksmart/rsk-starter-box) 
+If you were redirected from the [Truffle-rsk-starter-box](https://github.com/rsksmart/rsk-starter-box) page, this tutorial provides more explanatory steps with examples for you to follow.
 and successfully executed all the instructions, you can go ahead and interact with the published smart contract:
 - [In the Truffle development console](#interact-with-a-smart-contract-in-development-console).
 - [On RSK network](#truffle-console-connect-to-rsk-network).
