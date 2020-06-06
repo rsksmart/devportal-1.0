@@ -5,7 +5,7 @@ tags: tutorial, rsk, truffle, truffle-box
 description: "How to use the Truffle box rsk-starter-box, which comes with everything you need to start using Truffle on RSK networks. It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy."
 ---
 
-In this tutorial I will show you step-by-step how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box), 
+In this tutorial, I will show you step-by-step how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box), 
 which comes with everything you need to start using Truffle on RSK networks. 
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
 
