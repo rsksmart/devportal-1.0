@@ -907,7 +907,7 @@ It's the same as we did for Truffle development console, but now it will be for 
 
 The next commands will run inside the Truffle console.
 
-## Connect with our contract published
+## Connect with our published contract
 
 ```javascript
 const simpleStorage = await SimpleStorage.deployed()
