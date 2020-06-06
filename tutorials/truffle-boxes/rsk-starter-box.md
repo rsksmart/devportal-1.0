@@ -746,7 +746,7 @@ truffle(testnet)>
 
 The balance is 0 and we need some tR-BTC to pay gas fees,
 which will be used to publish smart contracts and interact with them.
-We shall obtain some in the next step.
+We shall obtain some tR-BTC in the next step.
 
 ## Exit Truffle console
 
