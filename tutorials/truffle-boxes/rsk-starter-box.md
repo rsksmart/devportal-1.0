@@ -55,7 +55,7 @@ which allows you to make network requests, such as HTTP requests,
 from your command line.
 
 If `curl --version` displays an error,
-[download curl](https://curl.haxx.se/download.html).
+then [download curl](https://curl.haxx.se/download.html).
 
 Tak a look in Windows SO:
 
