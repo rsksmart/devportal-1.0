@@ -90,7 +90,7 @@ v6.9.0
 C:\>
 ```
 
-If there's no output like that in the image above, go to [Node.js](https://nodejs.org/en/) install.
+If there's no output like the one above, go to [Node.js](https://nodejs.org/en/) install.
 
 Note that NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
 
