@@ -22,6 +22,9 @@ const csvConverter = csvToJson({
     videoStreamUrl: stringColumnParser,
     recordedVideoUrl: stringColumnParser,
     resources: multilineLabelledUrlColumnParser,
+    status: stringColumnParserLower,
+    audiences: stringColumnParserLower,
+    id: stringColumnParserLower,
   },
 });
 
@@ -189,6 +192,10 @@ const newLineRegex = /\r?\n/;
 
 function stringColumnParser(item) {
   return item.replace(newLineRegexGlobal, '\n').trim();
+}
+
+function stringColumnParserLower(item) {
+  return stringColumnParser(item).toLowerCase();
 }
 
 const labelledUrlRegex = /([^:]+):\ (.+)/;
