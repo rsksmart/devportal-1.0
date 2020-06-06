@@ -1507,7 +1507,7 @@ URL;VALUE=URI:https://next.brella.io/events/consensusdistributed/schedule/
  118437
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200515T091500Z
+LAST-MODIFIED:20200605T160100Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-009@developers.rsk.co/
@@ -1542,7 +1542,7 @@ URL;VALUE=URI:https://next.brella.io/events/consensusdistributed/schedule/
  118604
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200515T091500Z
+LAST-MODIFIED:20200605T160100Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-010@developers.rsk.co/
@@ -1947,5 +1947,38 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200602T144500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-005@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200612T190000Z
+DTSTART:20200612T190000Z
+SUMMARY:Tokens para Desarrolladores Blockchain 
+DESCRIPTION:Tokens para Desarrolladores Blockchain\n\nOnline only\n\nRSVP:
+  https://www.meetup.com/es-ES/RSKBuenosAires/events/271110707/\n\nVideo st
+ ream: https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-bloc
+ kchain\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Tokens 
+ para Desarrolladores Blockchain</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es
+ -ES/RSKBuenosAires/events/271110707/\">www.meetup.com/es-ES/RSKBuenosAires
+ /events/271110707/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span
+ ><a href=\"https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores
+ -blockchain\">app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-bloc
+ kchain</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Angel Lopez\, Senior Developer\, @ajlopez":mailto:developers
+ @iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Tokens para Desarrolladores Blockchain 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/tokens-para-desarrollado
+ res-blockchain
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200606T014500Z
 END:VEVENT
 END:VCALENDAR

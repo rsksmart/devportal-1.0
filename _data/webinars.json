@@ -1724,7 +1724,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif",
-      "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/QpbtVlulChQ",
@@ -1733,9 +1733,9 @@
     {
       "type": "event/2",
       "id": "202005-008",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-12T20:30:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-06-05T16:01:00.000Z",
       "status": "confirmed",
       "url": "https://next.brella.io/events/consensusdistributed/schedule/118437",
       "title": "IOVlabs at Foundations - Consensus 2020",
@@ -1770,15 +1770,15 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
       "image": "/webinars/img/events/event11.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-009",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-13T18:30:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-06-05T16:01:00.000Z",
       "status": "confirmed",
       "url": "https://next.brella.io/events/consensusdistributed/schedule/118604",
       "title": "RIF: the building blocks of a truly decentralized Internet - Consensus 2020",
@@ -1823,7 +1823,7 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
       "image": "/webinars/img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=QEKz243x_IY&list=PLSyELPaIli1kpVbzJ3c7metuPBPojGwlG",
       "_isPast": true
     },
     {
@@ -2061,7 +2061,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
-      "tags": " idioma-portuguese audiencia-enterprise audiencia-general recent",
+      "tags": " idioma-portuguese audiencia-enterprise audiencia-general",
       "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/iXaKY7Nn4L4",
@@ -2132,7 +2132,7 @@
       "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience recent",
       "image": "/webinars/img/events/event9.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=rjKLb1gd514&list=PLSyELPaIli1nDXVOtUXMjRrWtd2eMiRXi",
       "_isPast": true
     },
     {
@@ -2199,11 +2199,12 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/87ee7c1e-3ff0-48b7-8625-a939dea73347/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/o-que-e-rsk",
-      "tags": " idioma-portuguese audiencia-general",
+      "tags": " idioma-portuguese audiencia-general recent",
       "image": "/webinars/img/events/event11.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
+      "recordedVideoUrl": "https://youtu.be/hu5mV_OkJs0",
+      "_permalink": "/webinars/202006-002/",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2237,11 +2238,12 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/7aaa3958-5508-4c24-804c-10498f7e154e/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-macro-tendencias",
-      "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
       "image": "/webinars/img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
+      "recordedVideoUrl": "https://youtu.be/xwC0lpT4n80",
+      "_permalink": "/webinars/202006-003/",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2288,6 +2290,41 @@
         }
       ],
       "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-004/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-005",
+      "version": "1",
+      "timestamp": "2020-06-12T19:00:00.000Z",
+      "lastModified": "2020-06-06T01:45:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/271110707/",
+      "title": "Tokens para Desarrolladores Blockchain",
+      "description": "Si sos desarrollador y querés entender todo sobre los tokens construidas tanto en Ethereum como en RSK:\n\n✅ Cómo funcionan,\n✅ Cuántos y de qué tipos existen,\n✅ Las principales aplicaciones existentes\n\nNo podés perdertelo.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Angel Lopez",
+          "description": "Senior Developer",
+          "contact": "@ajlopez"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/6be94df7-619c-4b91-b7e6-ece7ce2ec32c/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-blockchain",
+      "tags": " idioma-spanish audiencia-developers audiencia-general",
+      "image": "/webinars/img/events/event8.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-005/",
       "_isPast": false
     }
   ]
