@@ -28,7 +28,7 @@ and successfully executed all the instructions, you can go ahead and interact wi
 - [In the Truffle development console](#interact-with-a-smart-contract-in-development-console).
 - [On RSK network](#truffle-console-connect-to-rsk-network).
 
-On the other hand, if you would like to review your steps with more details and images, you can continue right here.
+On the other hand, if you would like to review the steps with more explanatory details and images, you would find this tutorial helpful.
 
 # Setup prerequisites
 
