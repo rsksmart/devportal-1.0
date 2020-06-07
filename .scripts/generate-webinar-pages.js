@@ -7,11 +7,7 @@ const webinarsJson = require('../_data/webinars.json');
 function writeEventFiles() {
   return webinarsJson.events
     .filter(
-      (event) => (
-        event.description &&
-        (event.rsvpEmbedUrl || event._isPast) &&
-        event.status === 'confirmed'
-      ),
+      (event) => (event._hasPage),
     )
     .map((event) => {
       const eventPresentersYaml =
@@ -39,7 +35,7 @@ function writeEventFiles() {
 
       const markdown = `---
 layout: event_page
-permalink: "/webinars/${event.id}/"
+permalink: "${event._permalink}"
 event:
   id: "${event.id}"
   timestamp: "${event.timestamp}"

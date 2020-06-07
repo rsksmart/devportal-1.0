@@ -22,6 +22,9 @@ const csvConverter = csvToJson({
     videoStreamUrl: stringColumnParser,
     recordedVideoUrl: stringColumnParser,
     resources: multilineLabelledUrlColumnParser,
+    status: stringColumnParserLower,
+    audiences: stringColumnParserLower,
+    id: stringColumnParserLower,
   },
 });
 
@@ -121,6 +124,15 @@ csvConverter
       })
       .map((event) => {
         const _isPast = event.timestamp < nowTimestamp;
+        const _hasPage = (
+          event.description &&
+          (event._isPast || event.rsvpEmbedUrl) &&
+          event.status === 'confirmed'
+        );
+        const _permalink = _hasPage ?
+          `/webinars/${event.id}/` :
+          undefined;
+
         // Stabilise object key order (where implementation allows for it).
         const {
           type,
@@ -144,7 +156,6 @@ csvConverter
           image,
           resources,
           recordedVideoUrl,
-          ...rest
         } = event;
         return {
           type,
@@ -168,6 +179,7 @@ csvConverter
           image,
           resources,
           recordedVideoUrl,
+          _permalink,
           _isPast,
         };
       });
@@ -189,6 +201,10 @@ const newLineRegex = /\r?\n/;
 
 function stringColumnParser(item) {
   return item.replace(newLineRegexGlobal, '\n').trim();
+}
+
+function stringColumnParserLower(item) {
+  return stringColumnParser(item).toLowerCase();
 }
 
 const labelledUrlRegex = /([^:]+):\ (.+)/;

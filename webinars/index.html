@@ -121,15 +121,19 @@
                   <div class="row">
                {% for event in future_events %}
                   <!-- Event -->
-
                   <div
                      id="event-id-{{ event.id }}"
                      class="col-lg-4 eventos tiempo {{ event.tags }}"
                      data-timestamp="{{ event.timestamp }}">
+                     {% if event._permalink %}
+                     <a href="{{ event._permalink }}"
+                        class="event-inner">
+                     {% else %}
                      <a href="{{ event.videoStreamUrl }}"
                         target="_blank"
                         rel="noopener noreferrer"
                         class="event-inner">
+                     {% endif %}
                         <div class="image-group" style="background-image: url('{{ event.image }}');">
                            <div class="event-type">{{ event.category }}</div>
                         </div>
@@ -344,6 +348,11 @@
                         <div
                            class="button-group"
                            data-event-id="{{ event.id }}">
+                           {% if event._permalink %}
+                           <a href="{{ event._permalink }}">
+                              More info +
+                           </a>
+                           {% endif %}
                         </div>
                      </div>
                   </div>
