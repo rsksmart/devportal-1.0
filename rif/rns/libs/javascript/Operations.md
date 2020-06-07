@@ -73,7 +73,7 @@ async setAddr(domain: string, addr: string, chainId?: ChainId, options?: Options
 - `domain`: Domain to set resolution.
 - `addr`: Address to be set as the resolution of the given domain
 - `chainId`: Chain identifier listed in [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md)
-- `options`: Optional. More information [here](#options)
+- `options`: Optional. See [options](#options) for details.
 
 **Returns**
 
@@ -145,7 +145,7 @@ async setName(name: string, options?: Options): Promise<TransactionReceipt>
 **Parameters**
 
 - `name`: Name to be set as the reverse resolution of the current address
-- `options`: Optional. More information [here](#options)
+- `options`: Optional. See [options](#options) for details.
 
 **Returns**
 
@@ -182,7 +182,7 @@ async setResolver(domain: string, resolver: string, options?: Options): Promise<
 
 - `domain`: Domain to set resolver.
 - `resolver`: Address to be set as the resolver of the given domain
-- `options`: Optional. More information [here](#options)
+- `options`: Optional. See [options](#options) for details.
 
 **Returns**
 
@@ -285,7 +285,7 @@ async setOwner(domain: string, label: string, owner: string, options?: Options):
 - `domain`: Parent `.rsk` domain. For example, `wallet.rsk`
 - `label`: Subdomain to register. For example, `alice`
 - `owner`: The new owner's address
-- `options`: Optional. More information [here](#options)
+- `options`: Optional. See [options](#options) for details.
 
 **Returns**
 
@@ -329,7 +329,7 @@ async create(domain: string, label: string, owner: string, addr: string, options
 - `label`: Subdomain to register. For example, `alice`
 - `owner`: The owner of the new subdomain. If not provided, the address who executes the tx will be the owner
 - `addr`: The address to be set as resolution of the new subdomain
-- `options`: Optional. More information [here](#options)
+- `options`: Optional. See [options](#options) for details.
 
 > If `addr` is not provided, no resolution will be set, and will send only one [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain) transaction.
 >
@@ -367,12 +367,12 @@ await rns.subdomains.create('testing.rsk', 'example', newOwnerAddress, resolutio
 
 ## Options
 
-It is an optional parameter in every method that submits one or more transactions. 
+`options` is an optional parameter in every method that submits one or more transactions. 
 
-The object contains the following fields:
+This object contains the following fields:
 
-- `from` - String (optional): The address the transaction should be sent from. If not provided, it will use the first account associated to the current provider.
-- `gasPrice` - String (optional): The gas price in wei to use for this transaction.
+- `from` - String (optional): The address the transaction should be sent from. If not provided, it will use the first account associated with the current provider.
+- `gasPrice` - String (optional): The gas price, denominated in wei, to use for this transaction.
 - `gas` - Number (optional): The maximum gas provided for this transaction (gas limit).
 
 ## Advanced operations
