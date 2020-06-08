@@ -1636,8 +1636,25 @@ img {
 .table-with-border tr,
 .table-with-border td,
 .table-with-border th {
-  border: 1px solid #ddd;
-  padding: 0.2em;
+  border: 1px;
+  padding: 0.4em;
+}
+
+.table-with-border tr{
+  border-bottom: 1pt solid grey!;
+}
+
+/* 2 way peg verifier check */
+
+.pegin-address-verifier {
+  margin: 10px auto;
+}
+
+.pegin-address-verifier .address {
+  margin: 10px auto;
+  min-width: 380px;
+  font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  font-size: 14px;
 }
 
 /* custom terminal render */

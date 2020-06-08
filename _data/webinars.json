@@ -9,6 +9,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269504497/",
       "title": "What is Blockchain?\nWhat is Bitcoin?",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -16,12 +17,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/j/915605031",
       "tags": " idioma-english audiencia-general",
-      "image": "img/events/event1.jpg",
+      "image": "/webinars/img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/g2UZa7pJ7cI",
       "_isPast": true
@@ -35,6 +41,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269565719/",
       "title": "Create and Deploy your first Smart Contract to the RSK Network using Remix and Metamask",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -42,12 +49,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/j/850527491",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event8.jpg",
+      "image": "/webinars/img/events/event8.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -70,6 +82,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269566096",
       "title": "Crea tu primer smart contract en RSK usando Remix and Nifty Wallet",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -77,12 +90,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/j/182679010",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event3.jpg",
+      "image": "/webinars/img/events/event3.jpg",
       "resources": [
         {
           "label": "Tutorial",
@@ -101,6 +119,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269566069/",
       "title": "Como criar smart contracts na RSK network utilizando Remix e Metamask",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -108,12 +127,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/j/211449645",
       "tags": " idioma-portuguese audiencia-developers",
-      "image": "img/events/event10.jpg",
+      "image": "/webinars/img/events/event10.jpg",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -136,6 +160,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497/",
       "title": "Gasnet: la red Blockchain para el Ecosistema de Gas",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -143,12 +168,27 @@
       "audiences": [
         "enterprise"
       ],
-      "presenter": "Guillermo Villanueva\nCarlos Amin\nAlbert Ruiz",
-      "presenterDescription": "CEO - Grupo Sabra\nCIO - Gasnor\nLíder Técnico - Gasnet",
-      "presenterContact": "@guillevi\n@cgamin7",
+      "presenters": [
+        {
+          "name": "Guillermo Villanueva",
+          "description": "CEO - Grupo Sabra",
+          "contact": "@guillevi"
+        },
+        {
+          "name": "Carlos Amin",
+          "description": "CIO - Gasnor",
+          "contact": "@cgamin7"
+        },
+        {
+          "name": "Albert Ruiz",
+          "description": "Líder Técnico - Gasnet",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/j/666038949",
       "tags": " idioma-spanish audiencia-enterprise",
-      "image": "img/events/event5.jpg",
+      "image": "/webinars/img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/2emqQlK4Glw",
       "_isPast": true
@@ -162,6 +202,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269565762/",
       "title": "¿Qué es RSK?\nHerramientas para ganar un Hackathon",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -169,12 +210,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/j/388106531",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event12.jpg",
+      "image": "/webinars/img/events/event12.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/mFaieJnJ7RA",
       "_isPast": true
@@ -188,6 +234,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269677327/",
       "title": "What is RSK?\nWhat is Nifty Wallet?\nSet your first wallet!",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -195,12 +242,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event2.jpg",
+      "image": "/webinars/img/events/event2.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -219,6 +271,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269676016/",
       "title": "¿Qué es RSK?\n¿Qué es Nifty Wallet?\nPrograma tu primera cartera",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -226,12 +279,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Devoloper Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Devoloper Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-IjMyuCbOg",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event7.jpg",
+      "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7",
       "_isPast": true
@@ -245,6 +303,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269677379/",
       "title": "Run your own local RSK node with Geth attached",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -252,12 +311,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event9.jpg",
+      "image": "/webinars/img/events/event9.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -284,6 +348,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269676954/",
       "title": "Utilizando Geth attach para interagir com um nó local da rede RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -291,12 +356,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1fKj-HA",
       "tags": " idioma-portuguese audiencia-developers",
-      "image": "img/events/event4.jpg",
+      "image": "/webinars/img/events/event4.jpg",
       "resources": [
         {
           "label": "Tutorial (em português) - part 1",
@@ -327,6 +397,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269676265/",
       "title": "Instala tu primer nodo usando Geth con tu nodo local de RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -334,12 +405,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Devoloper Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Devoloper Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event11.jpg",
+      "image": "/webinars/img/events/event11.jpg",
       "resources": [
         {
           "label": "Tutorial",
@@ -358,6 +434,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269685307/",
       "title": "RIF Services overview",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -365,12 +442,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Alejandro Narancio",
-      "presenterDescription": "Payments and Tools PO",
-      "presenterContact": "@anarancio",
+      "presenters": [
+        {
+          "name": "Alejandro Narancio",
+          "description": "Payments and Tools PO",
+          "contact": "@anarancio"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ",
       "tags": " idioma-english audiencia-general",
-      "image": "img/events/event6.jpg",
+      "image": "/webinars/img/events/event6.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/lxrBOdcSQfo",
       "_isPast": true
@@ -378,12 +460,13 @@
     {
       "type": "event/2",
       "id": "202004-005",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-03T21:00:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269812231/",
       "title": "¿Qué es Bitcoin?\n¿Qué es Blockchain?",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -391,12 +474,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7aaA",
       "tags": " idioma-spanish audiencia-general",
-      "image": "img/events/event1.jpg",
+      "image": "/webinars/img/events/event1.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/WzheOfMretc",
       "_isPast": true
@@ -404,12 +492,13 @@
     {
       "type": "event/2",
       "id": "202004-006",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-06T17:00:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269838616/",
       "title": "What is Decentralized Finance or DeFi?",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -417,12 +506,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Maximiliano del Hoyo",
-      "presenterDescription": "DeFi PO",
-      "presenterContact": "@maxdh_ar",
+      "presenters": [
+        {
+          "name": "Maximiliano del Hoyo",
+          "description": "DeFi PO",
+          "contact": "@maxdh_ar"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg",
       "tags": " idioma-english audiencia-general",
-      "image": "img/events/event8.jpg",
+      "image": "/webinars/img/events/event8.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/EBjrvm_5IoE",
       "_isPast": true
@@ -430,12 +524,13 @@
     {
       "type": "event/2",
       "id": "202004-007",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-06T21:00:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269835498/",
       "title": "¿Qué son las Finanzas Descentralizadas?",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -443,12 +538,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Maximiliano del Hoyo",
-      "presenterDescription": "DeFi PO",
-      "presenterContact": "@maxdh_ar",
+      "presenters": [
+        {
+          "name": "Maximiliano del Hoyo",
+          "description": "DeFi PO",
+          "contact": "@maxdh_ar"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig",
       "tags": " idioma-spanish audiencia-general",
-      "image": "img/events/event3.jpg",
+      "image": "/webinars/img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/573jdX0TCZE",
       "_isPast": true
@@ -456,12 +556,13 @@
     {
       "type": "event/2",
       "id": "202004-008",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-07T15:30:00.000Z",
       "lastModified": "2020-04-03T14:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269837767",
       "title": "Introducción a los servicios de RIF",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -469,12 +570,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Alejandro Narancio",
-      "presenterDescription": "Payments and Tools PO",
-      "presenterContact": "@anarancio",
+      "presenters": [
+        {
+          "name": "Alejandro Narancio",
+          "description": "Payments and Tools PO",
+          "contact": "@anarancio"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ",
       "tags": " idioma-spanish audiencia-general",
-      "image": "img/events/event10.jpg",
+      "image": "/webinars/img/events/event10.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/8yxo4-fu1H0",
       "_isPast": true
@@ -488,6 +594,7 @@
       "status": "cancelled",
       "url": "",
       "title": "Aprenda a utilizar rWallet e librerias RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -495,12 +602,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
       "tags": " idioma-portuguese audiencia-developers",
-      "image": "img/events/event5.jpg",
+      "image": "/webinars/img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -514,6 +626,7 @@
       "status": "cancelled",
       "url": "",
       "title": "rWallet and RSK libraries",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -521,12 +634,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event12.jpg",
+      "image": "/webinars/img/events/event12.jpg",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -540,6 +658,7 @@
       "status": "cancelled",
       "url": "",
       "title": "rWallet y librería de RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -547,12 +666,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event7.jpg",
+      "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -560,12 +684,13 @@
     {
       "type": "event/2",
       "id": "202004-012",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-08T22:30:00.000Z",
       "lastModified": "2020-04-07T00:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269897747/",
       "title": "Por dentro do Solidty",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -573,12 +698,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg",
       "tags": " idioma-portuguese audiencia-developers",
-      "image": "img/events/event2.jpg",
+      "image": "/webinars/img/events/event2.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/68AMoiQfgEE",
       "_isPast": true
@@ -592,6 +722,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269897805/",
       "title": "Inside Solidity",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -599,12 +730,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event9.jpg",
+      "image": "/webinars/img/events/event9.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -631,6 +767,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269897477/",
       "title": "Solidity por Dentro",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -638,12 +775,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Angel Lopez",
-      "presenterDescription": "Software Engineer",
-      "presenterContact": "@ajlopez",
+      "presenters": [
+        {
+          "name": "Angel Lopez",
+          "description": "Software Engineer",
+          "contact": "@ajlopez"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event4.jpg",
+      "image": "/webinars/img/events/event4.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -662,6 +804,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269959329",
       "title": "RIF Name Services (Spanish)",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -669,12 +812,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Ilan Olkies",
-      "presenterDescription": "RNS PO",
-      "presenterContact": "@ilanolkies",
+      "presenters": [
+        {
+          "name": "Ilan Olkies",
+          "description": "RNS PO",
+          "contact": "@ilanolkies"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA",
       "tags": " idioma-spanish audiencia-general",
-      "image": "img/events/event11.jpg",
+      "image": "/webinars/img/events/event11.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -693,6 +841,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959370/",
       "title": "RIF Name Services (English)",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -700,12 +849,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Ilan Olkies",
-      "presenterDescription": "RNS PO",
-      "presenterContact": "@ilanolkies",
+      "presenters": [
+        {
+          "name": "Ilan Olkies",
+          "description": "RNS PO",
+          "contact": "@ilanolkies"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw",
       "tags": " idioma-english audiencia-general",
-      "image": "img/events/event6.jpg",
+      "image": "/webinars/img/events/event6.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -724,6 +878,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959494/",
       "title": "Crie seu primeiro frontend para um Smart Contract",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -731,12 +886,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZRaKHrhYZw",
       "tags": " idioma-portuguese audiencia-developers",
-      "image": "img/events/event1.jpg",
+      "image": "/webinars/img/events/event1.jpg",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -759,6 +919,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269959427",
       "title": "Create your first frontend for Smart Contracts",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -766,12 +927,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQWt5_q1Ug",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event8.jpg",
+      "image": "/webinars/img/events/event8.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -792,12 +958,13 @@
     {
       "type": "event/2",
       "id": "202004-019",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-16T12:30:00.000Z",
       "lastModified": "2020-04-12T02:00:00.000Z",
       "status": "cancelled",
       "url": "",
       "title": "CANCELLED",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -805,12 +972,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Pedro Parrota (grupo sabra)",
-      "presenterDescription": "",
-      "presenterContact": "",
+      "presenters": [
+        {
+          "name": "Pedro Parrota (grupo sabra)",
+          "description": "",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event3.jpg",
+      "image": "/webinars/img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -824,6 +996,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269959915",
       "title": "Crea tu primer frontend para Smart Contracts",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -831,12 +1004,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Ilan Olkies",
-      "presenterDescription": "RNS PO",
-      "presenterContact": "@ilanolkies",
+      "presenters": [
+        {
+          "name": "Ilan Olkies",
+          "description": "RNS PO",
+          "contact": "@ilanolkies"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdfky6w",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event10.jpg",
+      "image": "/webinars/img/events/event10.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -863,6 +1041,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120775/",
       "title": "Create your own token on the RSK network",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -870,12 +1049,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4626395691306412302",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event5.jpg",
+      "image": "/webinars/img/events/event5.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -906,6 +1090,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120781/",
       "title": "Como criar seu token na RSK network",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -913,12 +1098,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4099803288880978958",
       "tags": " idioma-portuguese audiencia-developers",
-      "image": "img/events/event12.jpg",
+      "image": "/webinars/img/events/event12.jpg",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -941,6 +1131,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270120697/",
       "title": "Crea tu propio token en RSK network",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -948,12 +1139,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4361944453128924174",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event7.jpg",
+      "image": "/webinars/img/events/event7.jpg",
       "resources": [
         {
           "label": "Tutorial",
@@ -972,6 +1168,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270250688/",
       "title": "Learn how to use Truffle boxes with RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -979,12 +1176,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event2.jpg",
+      "image": "/webinars/img/events/event2.jpg",
       "resources": [
         {
           "label": "Tutorial",
@@ -1011,6 +1213,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270248291/",
       "title": "Como utilizar Truffle box com RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -1018,12 +1221,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-box-com-rsk",
       "tags": " idioma-portuguese audiencia-developers",
-      "image": "img/events/event9.jpg",
+      "image": "/webinars/img/events/event9.jpg",
       "resources": [
         {
           "label": "Tutorial",
@@ -1046,6 +1254,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270249389/",
       "title": "Aprende a usar Truffle Boxes con RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -1053,12 +1262,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Devoloper Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Devoloper Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event4.jpg",
+      "image": "/webinars/img/events/event4.jpg",
       "resources": [
         {
           "label": "Tutorial",
@@ -1081,6 +1295,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120788/",
       "title": "Create your first frontend for Smart Contracts",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -1088,12 +1303,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/877417282457269771",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event8.jpg",
+      "image": "/webinars/img/events/event8.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -1114,12 +1334,13 @@
     {
       "type": "event/2",
       "id": "202004-028",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-24T17:00:00.000Z",
       "lastModified": "2020-04-19T05:36:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120801/",
       "title": "An introduction to RIF Lumino:\nConcepts, ideas and architecture",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1127,12 +1348,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Alejandro Narancio",
-      "presenterDescription": "Payments and Tools PO",
-      "presenterContact": "@anarancio",
+      "presenters": [
+        {
+          "name": "Alejandro Narancio",
+          "description": "Payments and Tools PO",
+          "contact": "@anarancio"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/6455007773111865870",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event3.jpg",
+      "image": "/webinars/img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/6tc05aep-W4",
       "_isPast": true
@@ -1140,12 +1366,13 @@
     {
       "type": "event/2",
       "id": "202004-029",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-24T19:00:00.000Z",
       "lastModified": "2020-04-19T05:36:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270120715/",
       "title": "Introducción a RIF Lumino:\nConceptos, ideas y arquitectura",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1153,12 +1380,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Alejandro Narancio",
-      "presenterDescription": "Payments and Tools PO",
-      "presenterContact": "@anarancio",
+      "presenters": [
+        {
+          "name": "Alejandro Narancio",
+          "description": "Payments and Tools PO",
+          "contact": "@anarancio"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/2428593993172923662",
       "tags": " idioma-spanish audiencia-developers",
-      "image": "img/events/event10.jpg",
+      "image": "/webinars/img/events/event10.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/WvvrIEaF0NA",
       "_isPast": true
@@ -1166,12 +1398,13 @@
     {
       "type": "event/2",
       "id": "202004-030",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-27T17:00:00.000Z",
       "lastModified": "2020-04-25T13:11:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270247186/",
       "title": "Blockchain and RSK use cases",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1180,12 +1413,22 @@
         "startups",
         "enterprise"
       ],
-      "presenter": "Gloria Vailati\nMaximiliano del Hoyo",
-      "presenterDescription": "CMO\nDeFi Lead",
-      "presenterContact": "@gloriavailati\n@maxdh_ar",
+      "presenters": [
+        {
+          "name": "Gloria Vailati",
+          "description": "CMO",
+          "contact": "@gloriavailati"
+        },
+        {
+          "name": "Maximiliano del Hoyo",
+          "description": "DeFi Lead",
+          "contact": "@maxdh_ar"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-cases",
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
-      "image": "img/events/event5.jpg",
+      "image": "/webinars/img/events/event5.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/dw_khz1Cw3Q",
       "_isPast": true
@@ -1193,12 +1436,13 @@
     {
       "type": "event/2",
       "id": "202004-031",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-04-28T14:00:00.000Z",
       "lastModified": "2020-04-25T13:11:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270248095/",
       "title": "Blockchain para la industria financiera: el caso del Banco Central de la República Argentina",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1206,12 +1450,22 @@
       "audiences": [
         "enterprise"
       ],
-      "presenter": "Claudio Fiorillo\nGuillermo Villanueva",
-      "presenterDescription": "",
-      "presenterContact": "",
+      "presenters": [
+        {
+          "name": "Claudio Fiorillo",
+          "description": "",
+          "contact": ""
+        },
+        {
+          "name": "Guillermo Villanueva",
+          "description": "",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-para-la-industria-financiera",
       "tags": " idioma-spanish audiencia-enterprise",
-      "image": "img/events/event12.jpg",
+      "image": "/webinars/img/events/event12.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/fEnbO1y2qXM",
       "_isPast": true
@@ -1225,6 +1479,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270378750",
       "title": "How to create your own collectable token on the RSK network",
+      "description": "Learn how to create your own non-fungible token, and deploy it on RSK.\nYou will make use of Truffle, MetaMask, Open Zeppelin and the ERC721 token standard.",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -1232,12 +1487,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Brendan Graetz",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@bguiz",
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-create-your-own-collectable-token",
       "tags": " idioma-english audiencia-developers",
-      "image": "img/events/event11.jpg",
+      "image": "/webinars/img/events/event11.jpg",
       "resources": [
         {
           "label": "Hands on",
@@ -1252,7 +1512,7 @@
           "url": "https://docs.google.com/presentation/d/e/2PACX-1vQDr0B_K2HZXMV_y-pFK7HwSbXmKDcuxTeZoxyqcs7D1SxvHOHyMgfHbtUxjLpoUYUwxs6Adk42qqAj/pub?start=false&loop=false&delayms=600000"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/ThA8rkw-nTY",
       "_isPast": true
     },
     {
@@ -1264,6 +1524,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270378822",
       "title": "Como criar seu token colecionável na RSK network",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -1271,12 +1532,17 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-criar-seu-token-colecionavel",
-      "tags": " idioma-portuguese audiencia-developers recent",
-      "image": "img/events/event6.jpg",
+      "tags": " idioma-portuguese audiencia-developers",
+      "image": "/webinars/img/events/event6.jpg",
       "resources": [
         {
           "label": "Pré-requisitos (em português)",
@@ -1295,7 +1561,7 @@
           "url": "https://developers.rsk.co/tutorials/tokens/create-a-collectable-token/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/JomHBILaBpA",
       "_isPast": true
     },
     {
@@ -1307,6 +1573,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270378844",
       "title": "Crea tu propio non-fungible token en la red de RSK",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -1314,25 +1581,31 @@
       "audiences": [
         "developers"
       ],
-      "presenter": "Dulce Villarreal",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@Dulce_vird",
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/crea-tu-propio-non-fungible-token",
-      "tags": " idioma-spanish audiencia-developers recent",
-      "image": "img/events/event1.jpg",
+      "tags": " idioma-spanish audiencia-developers",
+      "image": "/webinars/img/events/event1.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/U8NMo8PUH6Q",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-004",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-04T18:00:00.000Z",
       "lastModified": "2020-05-02T13:57:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270367793/",
       "title": "Bitgive + IOV Labs for Covid-19",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1340,12 +1613,22 @@
       "audiences": [
         "enterprise"
       ],
-      "presenter": "Connie Gallippi\nAgustin Pandolfini",
-      "presenterDescription": "Founder and Executive Director of BitGive\nSocial Impact Lead",
-      "presenterContact": "@conniegallippi\n@agustinfini",
+      "presenters": [
+        {
+          "name": "Connie Gallippi",
+          "description": "Founder and Executive Director of BitGive",
+          "contact": "@conniegallippi"
+        },
+        {
+          "name": "Agustin Pandolfini",
+          "description": "Social Impact Lead",
+          "contact": "@agustinfini"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid",
       "tags": " idioma-english audiencia-enterprise",
-      "image": "img/events/event7.jpg",
+      "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/y7auw58TeXM",
       "_isPast": true
@@ -1353,12 +1636,13 @@
     {
       "type": "event/2",
       "id": "202005-005",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-05T17:00:00.000Z",
       "lastModified": "2020-05-02T13:57:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270370376/",
       "title": "RIF On Chain",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1366,12 +1650,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Santiago Lavallaz",
-      "presenterDescription": "Director Capital Markets",
-      "presenterContact": "@__Santino__",
+      "presenters": [
+        {
+          "name": "Santiago Lavallaz",
+          "description": "Director Capital Markets",
+          "contact": "@__Santino__"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain",
       "tags": " idioma-english audiencia-general",
-      "image": "img/events/event2.jpg",
+      "image": "/webinars/img/events/event2.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/egk8WzquT3U",
       "_isPast": true
@@ -1379,12 +1668,13 @@
     {
       "type": "event/2",
       "id": "202005-006",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-05T19:00:00.000Z",
       "lastModified": "2020-05-02T13:57:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270378726/",
       "title": "RIF On Chain",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1392,12 +1682,17 @@
       "audiences": [
         "general"
       ],
-      "presenter": "Santiago Lavallaz",
-      "presenterDescription": "Director Capital Markets",
-      "presenterContact": "@__Santino__",
+      "presenters": [
+        {
+          "name": "Santiago Lavallaz",
+          "description": "Director Capital Markets",
+          "contact": "@__Santino__"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol",
       "tags": " idioma-spanish audiencia-general",
-      "image": "img/events/event9.jpg",
+      "image": "/webinars/img/events/event9.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/BIaDKSGG3C4",
       "_isPast": true
@@ -1405,12 +1700,13 @@
     {
       "type": "event/2",
       "id": "202005-007",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-08T17:00:00.000Z",
       "lastModified": "2020-05-05T19:33:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986/",
       "title": "Casos de uso de Blockchain construidos sobre RSK y RIF",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1419,12 +1715,17 @@
         "startups",
         "enterprise"
       ],
-      "presenter": "Gloria Vailati",
-      "presenterDescription": "CMO",
-      "presenterContact": "@gloriavailati",
+      "presenters": [
+        {
+          "name": "Gloria Vailati",
+          "description": "CMO",
+          "contact": "@gloriavailati"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif",
-      "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
-      "image": "img/events/event4.jpg",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
+      "image": "/webinars/img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/QpbtVlulChQ",
       "_isPast": true
@@ -1432,12 +1733,13 @@
     {
       "type": "event/2",
       "id": "202005-008",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-05-12T20:30:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-06-05T16:01:00.000Z",
       "status": "confirmed",
       "url": "https://next.brella.io/events/consensusdistributed/schedule/118437",
       "title": "IOVlabs at Foundations - Consensus 2020",
+      "description": "",
       "category": "Conference",
       "locationCategory": "online",
       "location": "Online only",
@@ -1446,25 +1748,41 @@
         "startups",
         "enterprise"
       ],
-      "presenter": "Diego Gutierrez Zaldivar\nBrian Prilick\nGabriel Kurman",
-      "presenterDescription": "CEO\nCTF Capital Managing Partner\nRIF Strategist",
-      "presenterContact": "@dieguito\n@BrianPrilick\n@GabrielKurman",
+      "presenters": [
+        {
+          "name": "Diego Gutierrez Zaldivar",
+          "description": "CEO",
+          "contact": "@dieguito"
+        },
+        {
+          "name": "Brian Prilick",
+          "description": "CTF Capital Managing Partner",
+          "contact": "@BrianPrilick"
+        },
+        {
+          "name": "Gabriel Kurman",
+          "description": "RIF Strategist",
+          "contact": "@GabrielKurman"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118437",
       "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
-      "image": "img/events/event11.jpg",
+      "image": "/webinars/img/events/event11.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-009",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-05-13T18:30:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-06-05T16:01:00.000Z",
       "status": "confirmed",
       "url": "https://next.brella.io/events/consensusdistributed/schedule/118604",
       "title": "RIF: the building blocks of a truly decentralized Internet - Consensus 2020",
+      "description": "",
       "category": "Conference",
       "locationCategory": "online",
       "location": "Online only",
@@ -1473,14 +1791,39 @@
         "startups",
         "enterprise"
       ],
-      "presenter": "Gabriel Kurman\nVojtech Simetka\nAlejandro Narancio\nMilton Berman\nJulian Rodriguez",
-      "presenterDescription": "RIF Strategist\nStorage and Communications PO\nPayments and Tools PO\nDirectory PO\nMarketplace PO",
-      "presenterContact": "@GabrielKurman\n@vojtechsimetka\n@anarancio\n@miltonberman\n@julianmrodri_",
+      "presenters": [
+        {
+          "name": "Gabriel Kurman",
+          "description": "RIF Strategist",
+          "contact": "@GabrielKurman"
+        },
+        {
+          "name": "Vojtech Simetka",
+          "description": "Storage and Communications PO",
+          "contact": "@vojtechsimetka"
+        },
+        {
+          "name": "Alejandro Narancio",
+          "description": "Payments and Tools PO",
+          "contact": "@anarancio"
+        },
+        {
+          "name": "Milton Berman",
+          "description": "Directory PO",
+          "contact": "@miltonberman"
+        },
+        {
+          "name": "Julian Rodriguez",
+          "description": "Marketplace PO",
+          "contact": "@julianmrodri_"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118604",
       "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
-      "image": "img/events/event6.jpg",
+      "image": "/webinars/img/events/event6.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=QEKz243x_IY&list=PLSyELPaIli1kpVbzJ3c7metuPBPojGwlG",
       "_isPast": true
     },
     {
@@ -1492,6 +1835,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270653530/",
       "title": "RSK - Ethereum Token Bridge",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1500,12 +1844,17 @@
         "developers",
         "general"
       ],
-      "presenter": "Pedro Prete",
-      "presenterDescription": "Interoperability PO",
-      "presenterContact": "@PedroMPrete",
+      "presenters": [
+        {
+          "name": "Pedro Prete",
+          "description": "Interoperability PO",
+          "contact": "@PedroMPrete"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ethereum-bridge",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
-      "image": "img/events/event1.jpg",
+      "image": "/webinars/img/events/bridge.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -1524,6 +1873,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270653808/",
       "title": "RSK - Ethereum Token Bridge",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1532,12 +1882,17 @@
         "developers",
         "general"
       ],
-      "presenter": "Pedro Prete",
-      "presenterDescription": "Interoperability PO",
-      "presenterContact": "@PedroMPrete",
+      "presenters": [
+        {
+          "name": "Pedro Prete",
+          "description": "Interoperability PO",
+          "contact": "@PedroMPrete"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol",
       "tags": " idioma-spanish audiencia-developers audiencia-general recent",
-      "image": "img/events/event8.jpg",
+      "image": "/webinars/img/events/bridge.jpg",
       "resources": [
         {
           "label": "Slides",
@@ -1550,12 +1905,13 @@
     {
       "type": "event/2",
       "id": "202005-012",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-20T17:00:00.000Z",
       "lastModified": "2020-05-15T09:15:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270656095/",
       "title": "From Bitcoin Mining to RSK Merged Mining",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1564,25 +1920,31 @@
         "developers",
         "general"
       ],
-      "presenter": "Martin Medina",
-      "presenterDescription": "Mining Lead",
-      "presenterContact": "@ThisIsTincho",
+      "presenters": [
+        {
+          "name": "Martin Medina",
+          "description": "Head of Mining",
+          "contact": "@ThisIsTincho"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merged-mining",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
-      "image": "img/events/event3.jpg",
+      "image": "/webinars/img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/-ht5UhUuIUE",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-013",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-20T21:00:00.000Z",
       "lastModified": "2020-05-15T09:15:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270655653/",
       "title": "De Minería de Bitcoin a Merged Mining sobre RSK",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1591,14 +1953,19 @@
         "developers",
         "general"
       ],
-      "presenter": "Martin Medina",
-      "presenterDescription": "Mining Lead",
-      "presenterContact": "@ThisIsTincho",
+      "presenters": [
+        {
+          "name": "Martin Medina",
+          "description": "Head of Mining",
+          "contact": "@ThisIsTincho"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-merged-mining",
       "tags": " idioma-spanish audiencia-developers audiencia-general recent",
-      "image": "img/events/event10.jpg",
+      "image": "/webinars/img/events/event10.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/CQ95g6xxS-Y",
       "_isPast": true
     },
     {
@@ -1610,6 +1977,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270662407/",
       "title": "Why we need Decentralized Storage and Communications",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1618,14 +1986,19 @@
         "startups",
         "enterprise"
       ],
-      "presenter": "Vojtech Simetka",
-      "presenterDescription": "Storage and Communication PO",
-      "presenterContact": "@vojtechsimetka",
+      "presenters": [
+        {
+          "name": "Vojtech Simetka",
+          "description": "Storage and Communication PO",
+          "contact": "@vojtechsimetka"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/why-we-need-decentralized-storage",
       "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
-      "image": "img/events/event5.jpg",
+      "image": "/webinars/img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=Yeinq7aiGWQ",
       "_isPast": true
     },
     {
@@ -1637,6 +2010,7 @@
       "status": "confirmed",
       "url": "",
       "title": "RSK Demo: Bitcoin Halving Livestream 2020",
+      "description": "",
       "category": "Demo",
       "locationCategory": "online",
       "location": "Online only",
@@ -1645,12 +2019,17 @@
         "developers",
         "general"
       ],
-      "presenter": "Alejandro Banzas",
-      "presenterDescription": "Head of Developers Relations",
-      "presenterContact": "@alebanzas",
+      "presenters": [
+        {
+          "name": "Alejandro Banzas",
+          "description": "Head of Developers Relations",
+          "contact": "@alebanzas"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
-      "image": "img/events/event12.jpg",
+      "image": "/webinars/img/events/event12.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/5qy3aAnhCwc",
       "_isPast": true
@@ -1664,6 +2043,7 @@
       "status": "confirmed",
       "url": "",
       "title": "Moneyonchain a Stablecion descentralizada baseada no Bitcoin. Tudo sobre o MoC, DoC, Bpro e BTCx",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1672,12 +2052,17 @@
         "enterprise",
         "general"
       ],
-      "presenter": "Solange Gueiros",
-      "presenterDescription": "Developer Advocate",
-      "presenterContact": "@solangegueiros",
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
-      "tags": " idioma-portuguese audiencia-enterprise audiencia-general recent",
-      "image": "img/events/event7.jpg",
+      "tags": " idioma-portuguese audiencia-enterprise audiencia-general",
+      "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/iXaKY7Nn4L4",
       "_isPast": true
@@ -1691,6 +2076,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270797663/",
       "title": "DeFi para Desarrolladores Blockchain",
+      "description": "",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -1699,15 +2085,20 @@
         "developers",
         "spanish"
       ],
-      "presenter": "Angel Lopez",
-      "presenterDescription": "Software Developer",
-      "presenterContact": "@ajlopez",
+      "presenters": [
+        {
+          "name": "Angel Lopez",
+          "description": "Software Developer",
+          "contact": "@ajlopez"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockchain",
-      "tags": " idioma-spanish audiencia-developers audiencia-spanish",
-      "image": "img/events/event2.jpg",
+      "tags": " idioma-spanish audiencia-developers audiencia-spanish recent",
+      "image": "/webinars/img/events/event2.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
+      "recordedVideoUrl": "https://youtu.be/DypxxvAMCZ8",
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -1718,6 +2109,7 @@
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270798560/",
       "title": "RSK Ecosystem Fund:\nCriteria, process, first round of investments review",
+      "description": "",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -1728,14 +2120,211 @@
         "general",
         "audience"
       ],
-      "presenter": "Katerina Stroponiati",
-      "presenterDescription": "Monday Capital Founder Partner",
-      "presenterContact": "@katerinastro",
+      "presenters": [
+        {
+          "name": "Katerina Stroponiati",
+          "description": "Monday Capital Founder Partner",
+          "contact": "@katerinastro"
+        }
+      ],
+      "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund",
-      "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience",
-      "image": "img/events/event9.jpg",
+      "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience recent",
+      "image": "/webinars/img/events/event9.jpg",
+      "resources": [],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=rjKLb1gd514&list=PLSyELPaIli1nDXVOtUXMjRrWtd2eMiRXi",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202006-001",
+      "version": "4",
+      "timestamp": "2020-06-12T09:00:00.000Z",
+      "lastModified": "2020-06-01T23:14:00.000Z",
+      "status": "cancelled",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270954178/",
+      "title": "How to Upload a Website on RIF Storage",
+      "description": "Now more than ever decentralized storage solutions are needed to resist censorship and ensure personal data privacy. RIF Storage sets out to create the base-layer of a truly decentralized internet 🌀🌀\n\nIn this webinar, learn how to launch your own serverless website using RIF Storage- it’s easier than you think! \n\nRight now, everybody is able to launch an unstoppable, serverless website and we will show you how 💪💪\n\nSPEAKERS:\n\n👨‍💻Rinke Hendriksen: Swarm PO and Researcher\n👨‍💻Brendan Graetz: Developer Advocate\n\nTo learn more about RIF storage, visit our website and roadmap: https://www.rifos.org/storage",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Rinke Hendriksen",
+          "description": "Swarm PO & Researcher",
+          "contact": "@hendriksenrinke"
+        },
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/1de3f667-da89-4880-b634-a28f30e544c2/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
+      "tags": " idioma-english audiencia-developers audiencia-general",
+      "image": "/webinars/img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": "",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-002",
+      "version": "1",
+      "timestamp": "2020-06-03T22:00:00.000Z",
+      "lastModified": "2020-05-31T06:45:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270942375/",
+      "title": "O que é RSK?",
+      "description": "O que é a rede RSK? \nO que faz com que ela esteja ligada ao Bitcoin?\nQuais os diferenciais desta rede?\nEstas serão algumas das perguntas que responderemos no próximo webinar!",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/87ee7c1e-3ff0-48b7-8625-a939dea73347/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/o-que-e-rsk",
+      "tags": " idioma-portuguese audiencia-general recent",
+      "image": "/webinars/img/events/event11.jpg",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/hu5mV_OkJs0",
+      "_permalink": "/webinars/202006-002/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202006-003",
+      "version": "1",
+      "timestamp": "2020-06-04T22:00:00.000Z",
+      "lastModified": "2020-05-31T06:45:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270941073/",
+      "title": "Minería de Bitcoin y Macro tendencias de la Industria",
+      "description": "Legal Hackers Montevideo y IOVlabs presentan:\n\n⛏️ MINERÍA DE BITCOIN Y MACRO TENDENCIAS DE LA INDUSTRIA ⛏️\n\nSpeakers:\n\n👨‍💻 Martin Medina, head of Mining de IOVlabs\n👨‍💻 Guzman Pintos, co-founder & head of Growth de Luxor\n\nUnete a esta nueva conversación con dos de los especialistas más reconocidos de minería de Bitcoin.\n\nRegistro ➡️ https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-macro-tendencias",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "startups",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Martin Medina",
+          "description": "Head of Mining",
+          "contact": "@thisistincho"
+        },
+        {
+          "name": "Guzman Pintos",
+          "description": "Co-founder & Head of Growth of Luxor Technologies",
+          "contact": "@guzmanpintos"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/7aaa3958-5508-4c24-804c-10498f7e154e/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-macro-tendencias",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
+      "image": "/webinars/img/events/event6.jpg",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/xwC0lpT4n80",
+      "_permalink": "/webinars/202006-003/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202006-004",
+      "version": "4",
+      "timestamp": "2020-06-10T09:00:00.000Z",
+      "lastModified": "2020-06-02T14:45:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "How to Upload a Website on RIF Storage",
+      "description": "Now more than ever decentralized storage solutions are needed to resist censorship and ensure personal data privacy. RIF Storage sets out to create the base-layer of a truly decentralized internet 🌀🌀\n\nIn this webinar, learn how to launch your own serverless website using RIF Storage- it’s easier than you think! \n\nRight now, everybody is able to launch an unstoppable, serverless website and we will show you how 💪💪\n\nSPEAKERS:\n\n👨‍💻Rinke Hendriksen: Swarm PO and Researcher\n👨‍💻Brendan Graetz: Developer Advocate\n\nTo learn more about RIF storage, visit our website and roadmap: https://www.rifos.org/storage",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Rinke Hendriksen",
+          "description": "Swarm PO & Researcher",
+          "contact": "@hendriksenrinke"
+        },
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/1de3f667-da89-4880-b634-a28f30e544c2/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
+      "tags": " idioma-english audiencia-developers audiencia-general",
+      "image": "/webinars/img/events/event1.jpg",
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://developers.rsk.co/tutorials/dweb/first-swarm-website/"
+        },
+        {
+          "label": "Workshop",
+          "url": "https://github.com/bguiz/workshop-rif-first-swarm-website/"
+        }
+      ],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-004/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-005",
+      "version": "1",
+      "timestamp": "2020-06-12T19:00:00.000Z",
+      "lastModified": "2020-06-06T01:45:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/271110707/",
+      "title": "Tokens para Desarrolladores Blockchain",
+      "description": "Si sos desarrollador y querés entender todo sobre los tokens construidas tanto en Ethereum como en RSK:\n\n✅ Cómo funcionan,\n✅ Cuántos y de qué tipos existen,\n✅ Las principales aplicaciones existentes\n\nNo podés perdertelo.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Angel Lopez",
+          "description": "Senior Developer",
+          "contact": "@ajlopez"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/6be94df7-619c-4b91-b7e6-ece7ce2ec32c/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-blockchain",
+      "tags": " idioma-spanish audiencia-developers audiencia-general",
+      "image": "/webinars/img/events/event8.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-005/",
       "_isPast": false
     }
   ]

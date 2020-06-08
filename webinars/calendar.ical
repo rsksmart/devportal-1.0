@@ -1507,7 +1507,7 @@ URL;VALUE=URI:https://next.brella.io/events/consensusdistributed/schedule/
  118437
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200515T091500Z
+LAST-MODIFIED:20200605T160100Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-009@developers.rsk.co/
@@ -1542,7 +1542,7 @@ URL;VALUE=URI:https://next.brella.io/events/consensusdistributed/schedule/
  118604
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200515T091500Z
+LAST-MODIFIED:20200605T160100Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-010@developers.rsk.co/
@@ -1625,8 +1625,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  ><a href=\"https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-
  merged-mining\">app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-mer
  ged-mining</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Martin Medina\, Mining Lead\, @ThisIsTincho":mailto:develope
- rs@iovlabs.org
+ORGANIZER;CN="Martin Medina\, Head of Mining\, @ThisIsTincho":mailto:devel
+ opers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -1658,8 +1658,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  </b><span><a href=\"https://app.livestorm.co/iov-labs-1/de-mineria-de-bitc
  oin-a-merged-mining\">app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-
  merged-mining</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Martin Medina\, Mining Lead\, @ThisIsTincho":mailto:develope
- rs@iovlabs.org
+ORGANIZER;CN="Martin Medina\, Head of Mining\, @ThisIsTincho":mailto:devel
+ opers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -1825,5 +1825,160 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200522T034500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200612T090000Z
+DTSTART:20200612T090000Z
+SUMMARY:How to Upload a Website on RIF Storage 
+DESCRIPTION:How to Upload a Website on RIF Storage\n\nOnline only\n\nCance
+ lled\, see webinars page for more details: https://developers.rsk.co/webin
+ ars/calendar.ical\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How to 
+ Upload a Website on RIF Storage</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>Cancelled\, see webinars page for more details &nbsp\;</b
+ ><span><a href=\"https://developers.rsk.co/webinars/calendar.ical\">develo
+ pers.rsk.co/webinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Rinke Hendriksen\, Swarm PO & Researcher\, @hendriksenrinke"
+ :mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:How to Upload a Website on RIF Storage 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-
+ on-rif-storage
+STATUS:CANCELLED
+X-LANGUAGE:English
+LAST-MODIFIED:20200601T231400Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200603T220000Z
+DTSTART:20200603T220000Z
+SUMMARY:O que é RSK? 
+DESCRIPTION:O que é RSK?\n\nOnline only\n\nRSVP: https://www.meetup.com/es
+ -ES/rsk-community/events/270942375/\n\nVideo stream: https://app.livestorm
+ .co/iov-labs-1/o-que-e-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>O que é
+  RSK?</span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbs
+ p\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-community/events/2
+ 70942375/\">www.meetup.com/es-ES/rsk-community/events/270942375/</a></span
+ ></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.lives
+ torm.co/iov-labs-1/o-que-e-rsk\">app.livestorm.co/iov-labs-1/o-que-e-rsk</
+ a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:O que é RSK? 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/o-que-e-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200531T064500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200604T220000Z
+DTSTART:20200604T220000Z
+SUMMARY:Minería de Bitcoin y Macro tendencias de la Industria 
+DESCRIPTION:Minería de Bitcoin y Macro tendencias de la Industria\n\nOnlin
+ e only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/2709410
+ 73/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/mineria-de-bitcoi
+ n-y-macro-tendencias\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Minería
+  de Bitcoin y Macro tendencias de la Industria</span></div>\n<div><span>On
+ line only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://ww
+ w.meetup.com/es-ES/RSKBuenosAires/events/270941073/\">www.meetup.com/es-ES
+ /RSKBuenosAires/events/270941073/</a></span></div>\n<div><b>Video stream &
+ nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/mineria-de-b
+ itcoin-y-macro-tendencias\">app.livestorm.co/iov-labs-1/mineria-de-bitcoin
+ -y-macro-tendencias</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Martin Medina\, Head of Mining\, @thisistincho":mailto:devel
+ opers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Minería de Bitcoin y Macro tendencias de la Industria 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-mac
+ ro-tendencias
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200531T064500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-004@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200610T090000Z
+DTSTART:20200610T090000Z
+SUMMARY:How to Upload a Website on RIF Storage 
+DESCRIPTION:How to Upload a Website on RIF Storage\n\nOnline only\n\nRSVP:
+  \n\nVideo stream: https://app.livestorm.co/iov-labs-1/how-to-upload-a-web
+ site-on-rif-storage\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How to 
+ Upload a Website on RIF Storage</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream
+  &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/how-to-upl
+ oad-a-website-on-rif-storage\">app.livestorm.co/iov-labs-1/how-to-upload-a
+ -website-on-rif-storage</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Rinke Hendriksen\, Swarm PO & Researcher\, @hendriksenrinke"
+ :mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:How to Upload a Website on RIF Storage 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-
+ on-rif-storage
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200602T144500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-005@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200612T190000Z
+DTSTART:20200612T190000Z
+SUMMARY:Tokens para Desarrolladores Blockchain 
+DESCRIPTION:Tokens para Desarrolladores Blockchain\n\nOnline only\n\nRSVP:
+  https://www.meetup.com/es-ES/RSKBuenosAires/events/271110707/\n\nVideo st
+ ream: https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-bloc
+ kchain\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Tokens 
+ para Desarrolladores Blockchain</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es
+ -ES/RSKBuenosAires/events/271110707/\">www.meetup.com/es-ES/RSKBuenosAires
+ /events/271110707/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span
+ ><a href=\"https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores
+ -blockchain\">app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-bloc
+ kchain</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Angel Lopez\, Senior Developer\, @ajlopez":mailto:developers
+ @iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Tokens para Desarrolladores Blockchain 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/tokens-para-desarrollado
+ res-blockchain
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200606T014500Z
 END:VEVENT
 END:VCALENDAR

@@ -59,18 +59,17 @@ function processEventV2(event) {
     title,
     url,
     location,
-    presenter,
-    presenterDescription,
-    presenterContact,
+    presenters,
     videoStreamUrl,
     status,
   } = event;
 
-  const firstPresenter = getFirstLineOf(presenter);
-  const firstPresenterDescription = getFirstLineOf(presenterDescription);
-  const firstPresenterContact = getFirstLineOf(presenterContact);
+  const firstPresenter = presenters[0];
+  const organiserName = !!firstPresenter ?
+  `${firstPresenter.name}, ${firstPresenter.description}, ${firstPresenter.contact}` :
+  '-';
   const organizer = {
-    name: `${firstPresenter}, ${firstPresenterDescription}, ${firstPresenterContact}`,
+    name: organiserName,
     email: organiserEmail,
   };
 
