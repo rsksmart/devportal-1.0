@@ -331,7 +331,7 @@ truffle(develop)>
 
 # Deploy a smart contract
 
-To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it, containing instructions to deploy the smart contract. 
+To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it. This file contains instructions to deploy the smart contract. 
 
 The `migrations` folder has JavaScript files that help you deploy contracts to the network. 
 These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time. 
