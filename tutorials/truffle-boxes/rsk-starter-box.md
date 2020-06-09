@@ -784,7 +784,7 @@ Wait a few seconds…
 ![Received some R-BTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
 
 You can see the transaction hash:
-[0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95](https://explorer.testnet.rsk.co/tx/0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95)
+[`0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95`](https://explorer.testnet.rsk.co/tx/0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95)
 
 ## Recheck balance
 
