@@ -460,7 +460,7 @@ truffle(develop)>
 
 The next commands will run inside the development console.
 
-## Connect with our contract published
+## Connect with our published contract
 
 ```javascript
 const simpleStorage = await SimpleStorage.deployed()
