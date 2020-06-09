@@ -3,6 +3,7 @@ layout: rsk
 title: Using Truffle box rsk-starter-box
 tags: tutorial, rsk, truffle, truffle-box 
 description: "How to use the Truffle box rsk-starter-box, which comes with everything you need to start using Truffle on RSK networks. It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy."
+render_features: "custom-terminals"
 ---
 
 In this tutorial, I will show you step-by-step how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box), 
@@ -24,7 +25,7 @@ Here is a summary of the steps we will take in this tutorial:
 7. Deploy a smart contract on RSK network using Truffle;
 8. Interact with the smart contract at Truffle console.
 
-If you were redirected from the [Truffle-rsk-starter-box](https://github.com/rsksmart/rsk-starter-box) page, this tutorial provides more explanatory steps with examples for you to follow.
+If you were redirected from the [Truffle-rsk-starter-box](https://github.com/rsksmart/rsk-starter-box) page 
 and successfully executed all the instructions, you can go ahead and interact with the published smart contract:
 - [In the Truffle development console](#interact-with-a-smart-contract-in-development-console).
 - [On RSK network](#truffle-console-connect-to-rsk-network).
@@ -109,7 +110,7 @@ Preferably one that has support for syntax highlighting for both Solidity and Ja
 
 In this tutorial, we will use VS Code to create our project.
 
-To use VS Code [download it here](https://code.visualstudio.com/download).
+Go to [VS Code download](https://code.visualstudio.com/download) if you would like to use it too.
 
 Verify if your VS Code installation was successful by typing the following command into the terminal:
 
@@ -168,9 +169,7 @@ Web3.js v1.2.1
 C:\>
 ```
 
-For more info:
-
-[trufflesuite.com/truffle](https://www.trufflesuite.com/truffle)
+For more info: [trufflesuite.com/truffle](https://www.trufflesuite.com/truffle)
 
 # Install RSK Truffle Starter Box
 
@@ -331,7 +330,8 @@ truffle(develop)>
 
 # Deploy a smart contract
 
-To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it. This file contains instructions to deploy the smart contract. 
+To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it. 
+This file contains instructions to deploy the smart contract. 
 
 The `migrations` folder has JavaScript files that help you deploy contracts to the network. 
 These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time. 
@@ -681,9 +681,9 @@ truffle console --network mainnet
 truffle console --network testnet
 ```
 
-This action instructs Truffle to connect to an RSK public node and grants it permission to control the accounts created with your mnemonic through HD wallet provider.
+This action instructs Truffle to connect to an RSK public node and grants it permission to control the accounts created with your mnemonic through the `HD wallet provider`.
 
-I will do it on Testnet:
+I will connect to the Testnet network:
 
 ```windows-command-prompt
 C:\RSK\rsk-starter>truffle console --network testnet
@@ -893,8 +893,6 @@ C:\RSK\rsk-starter>
 Congratulations!
 
 `Simple storage` is now published on the RSK network.
-
-![Simple storage published](/assets/img/tutorials/rsk-starter-box/image-14.png)
 
 > Make sure you have enough R-BTC to deploy it.
     

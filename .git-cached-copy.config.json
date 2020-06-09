@@ -5,7 +5,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk3.js.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk3.js",
       "head": "refs/heads/master",
-      "commit": "c1a003ac9e2b7c56762866d563d4e59ecac2c6f7",
+      "commit": "9d167772eda4df13d582f1018ac6a10f3255f2cd",
       "commands": [
         {
           "name": "copySingle",
@@ -73,6 +73,22 @@
       ]
     },
     {
+      "id": "rsk-starter-box",
+      "gitUrl": "git@github.com:rsksmart/rsk-starter-box.git",
+      "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-starter-box",
+      "head": "refs/heads/master",
+      "commit": "21de544951f41600521344804ebcd29d2fef1e76",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "README.md",
+          "localFilePath": "tutorials/truffle-boxes/rsk-starter-box.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },
+    {
       "id": "rsk-react-box",
       "gitUrl": "git@github.com:rsksmart/rsk-react-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-box",
@@ -93,7 +109,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-react-express-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-react-express-box",
       "head": "refs/heads/master",
-      "commit": "5fb1f886090749fdba82c95f1b6b1ef207a28adf",
+      "commit": "75edd0bd3788c66c2f22e3abd4b11b2903e447f7",
       "commands": [
         {
           "name": "copySingle",
@@ -119,13 +135,13 @@
           "remotePreserveFrontMatter": false
         }
       ]
-    },    
+    },
     {
       "id": "rsk-precompiled-abis",
       "gitUrl": "git@github.com:rsksmart/precompiled-abis.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/precompiled-abis",
       "head": "refs/heads/master",
-      "commit": "6c2683d52720ee35c75449970afacde08a426daf",
+      "commit": "f8568252993160bd693ca0578dc246bb501232b2",
       "commands": [
         {
           "name": "copySingle",
@@ -142,11 +158,27 @@
       ]
     },
     {
+      "id": "workshop-first-swarm-website",
+      "gitUrl": "git@github.com:bguiz/workshop-rif-first-swarm-website",
+      "httpUrl": "https://raw.githubusercontent.com/bguiz/workshop-rif-first-swarm-website",
+      "head": "refs/heads/master",
+      "commit": "451ee52f6f1ccdb5fdd78c74e25bb6fcf3a611d1",
+      "commands": [
+        {
+          "name": "copySingle",
+          "remoteFilePath": "README.md",
+          "localFilePath": "tutorials/dweb/first-swarm-website.md",
+          "localPreserveFrontMatter": true,
+          "remotePreserveFrontMatter": false
+        }
+      ]
+    },
+    {
       "id": "tutorial-rsk-api",
       "gitUrl": "git@github.com:ajlopez/RskApi.git",
       "httpUrl": "https://raw.githubusercontent.com/ajlopez/RskApi",
       "head": "refs/heads/master",
-      "commit": "9baf2af451ad035c53e76fe83f357affa8bdd5ad",
+      "commit": "b170eddef7e153ab036f42586d094c9f0de7c07e",
       "commands": [
         {
           "name": "copySingle",
