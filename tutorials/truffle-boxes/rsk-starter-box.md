@@ -665,7 +665,7 @@ For more information about the **Gas** and **minimumGasPrice** please visit the 
 
 ![gasPrice](/assets/img/tutorials/rsk-starter-box/image-09.png)
 
-# Truffle Console connect to RSK network
+# Using Truffle Console to connect to the RSK network
 
  Run the development console for any RSK network.
 
