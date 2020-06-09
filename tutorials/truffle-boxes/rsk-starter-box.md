@@ -480,7 +480,7 @@ The section `networks` has the networks in which the smart contract was publishe
 
 ![simpleStorage.json networks](/assets/img/tutorials/rsk-starter-box/image-02.png)
 
-The ABI - Application Binary Interface also is very important because to connect with one smart contract, we must know the ABI and the address of the smart contract.
+The ABI - Application Binary Interface is also very important because to connect with one smart contract, we must know the ABI and the address of the smart contract.
 
 ![simpleStorage.json abi](/assets/img/tutorials/rsk-starter-box/image-03.png)
 
