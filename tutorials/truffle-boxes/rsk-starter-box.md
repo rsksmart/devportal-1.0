@@ -58,7 +58,7 @@ from your command line.
 If `curl --version` displays an error,
 then [download curl](https://curl.haxx.se/download.html).
 
-Take a look in Windows SO:
+In Windows:
 
 ```windows-command-prompt
 C:\>curl --version
