@@ -2248,9 +2248,9 @@
     {
       "type": "event/2",
       "id": "202006-004",
-      "version": "4",
+      "version": "5",
       "timestamp": "2020-06-10T09:00:00.000Z",
-      "lastModified": "2020-06-02T14:45:00.000Z",
+      "lastModified": "2020-06-09T14:45:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "How to Upload a Website on RIF Storage",
@@ -2280,6 +2280,10 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event1.jpg",
       "resources": [
+        {
+          "label": "Slides",
+          "url": "https://developers.rsk.co/webinars/202006-004/slides/"
+        },
         {
           "label": "Tutorial",
           "url": "https://developers.rsk.co/tutorials/dweb/first-swarm-website/"
