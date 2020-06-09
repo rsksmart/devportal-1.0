@@ -421,7 +421,7 @@ truffle(develop)>
 
 # Test a smart contract
 
-Truffle has an automated testing framework to facilitate testing your contracts.
+Truffle has an automated testing framework to facilitate the testing of contracts.
 All test files should be located in the `test` directory.
 To learn more, go to the Truffle documentation, in the section [testing your contracts](https://www.trufflesuite.com/docs/truffle/testing/testing-your-contracts).
 
