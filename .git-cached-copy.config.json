@@ -77,12 +77,12 @@
       "gitUrl": "git@github.com:rsksmart/rsk-starter-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-starter-box",
       "head": "refs/heads/master",
-      "commit": "21de544951f41600521344804ebcd29d2fef1e76",
+      "commit": "1bee4a5b6fa150216da5bc6bfd60bcde27827333",
       "commands": [
         {
           "name": "copySingle",
           "remoteFilePath": "README.md",
-          "localFilePath": "tutorials/truffle-boxes/rsk-starter-box.md",
+          "localFilePath": "tools/truffle/boxes/rsk-starter-box.md",
           "localPreserveFrontMatter": true,
           "remotePreserveFrontMatter": false
         }
