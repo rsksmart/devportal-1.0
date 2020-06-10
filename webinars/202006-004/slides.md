@@ -16,11 +16,19 @@ description: "DWeb - How to Upload a Website on RIF Storage"
 
 [developers.rsk.co/webinars/202006-004/slides](/webinars/202006-004/slides/)
 
+---NOTE
+
+`Brendan`
+
 ---
 
 This works best as a hands-on session.
 
 (so get your computers ready!)
+
+---NOTE
+
+`Brendan`
 
 ---
 
@@ -29,6 +37,8 @@ This works best as a hands-on session.
 [50+ past events](/webinars/#calendar-past)
 
 ---NOTE
+
+`Brendan`
 
 For those of you joining us in this webinar for the first time,
 we would like to highlight that this is just one of a very large series of webinars, that is over 50 and counting at the moment.
@@ -42,6 +52,10 @@ so check out developers.rsk.co for all the details.
 
 - Rinke
 - Brendan
+
+---NOTE
+
+`Brendan`
 
 ---SUB
 
@@ -57,35 +71,108 @@ so check out developers.rsk.co for all the details.
 
 ---NOTE
 
-- Ya lo he estado aprendiendo durante màs de doscientos días en Dúolingo
+- Ya lo he estado aprendiendo durante más de doscientos días en Dúolingo
 - Estoy practicando mi español ahora mismo 😃 but that's all the Spanish you're going to get from me today!
-
----
-
-### Rinke
-
-- Swarm product owner & researcher
-- Hilversum 🇳🇱
-- // TODO Rinke
-
----NOTE
-
-TODO Rinke
 
 ---SUB
 
-## DWeb
+### Rinke
 
-- Decentralised web
-    - Immutable
-    - Censorship resistant
-    - Permissionless
-- Domain name + storage
+- Economist and (smart-contract) dev
+- Swarm product owner & researcher
+- Hilversum, The Netherlands
+- I am here because: innovation, impact, decentralization,
 
 ---NOTE
 
-Rinke
-TODO
+`Rinke`
+
+---
+
+## Web 1...2...3!
+
+- Why do we need decentralized storage?
+- A little history...
+
+---NOTE
+
+`Rinke`
+
+---SUB
+
+### Web 1.0
+
+- Self-hosted
+- Decentralized
+- Not scalable
+
+---NOTE
+
+`Rinke`
+
+---SUB
+
+### Web 2.0
+
+- Faustian bargain
+    - Content ownership for scalable website
+- Some big and professional platforms
+- "Platforming"
+- Centralized and scalable
+
+---NOTE
+
+`Rinke`
+
+---SUB
+
+### Web 2.0 vs Web 3.0
+
+![web 2.0 vs web 3.0](../web2-vs-web3.png)
+
+---NOTE
+
+`Rinke`
+
+---SUB
+
+## Web 3.0
+
+- Censorship resistant
+- Permissionless
+- Immutable
+- Scalable
+
+---NOTE
+
+`Rinke`
+
+mention characteristics of Web 3.0 here
+
+---
+
+## How does RIF Contribute to Web 3.0?
+
+- RIF Storage
+- RNS
+- Swarm / BEE
+
+---NOTE
+
+`Rinke`
+
+---SUB
+
+## RIF Storage
+
+- [developers.rsk.co/rif/storage](/rif/storage/)
+- Unified IPFS + Swarm
+- Built-in economic incentives
+    - RIF token
+
+---NOTE
+
+`Rinke`
 
 ---
 
@@ -97,8 +184,7 @@ TODO
 
 ---NOTE
 
-Rinke
-TODO
+`Rinke`
 
 ---
 
@@ -112,10 +198,9 @@ TODO
 
 ---NOTE
 
-Rinke
-TODO
+`Rinke`
 
----
+---SUB
 
 ## Bee
 
@@ -126,24 +211,7 @@ TODO
 
 ---NOTE
 
-Rinke
-TODO
-
----
-
-## RIF Storage
-
-- [developers.rsk.co/rif/storage](/rif/storage/)
-- Unified IPFS + Swarm
-- Built-in economic incentives
-    - RIF token
-
----NOTE
-
-Rinke
-TODO
-
-Mention RIF Publish release in the upcoming weeks?
+`Rinke`
 
 ---
 
@@ -156,6 +224,8 @@ Mention RIF Publish release in the upcoming weeks?
 - [NodeJs](https://nodejs.org/en/) (optional)
 
 ---NOTE
+
+`Brendan`
 
 POSIX compliant terminal:
 
@@ -176,9 +246,13 @@ NodeJs:
 
 ---NOTE
 
-Brendan
+`Brendan`
 
 Now we are about to start our hand-on section of today's webinar.
+
+The article linked here is the materials that we will be following along today in today's demo,
+so please open it up in a new browser tab as it will make it much easier to follow along.
+
 Time to start up your fire up your terminals and code editors!
 
 - Brendan: Installs Swarm, opens code editor and uploads website (with html and image).
@@ -187,7 +261,7 @@ Time to start up your fire up your terminals and code editors!
 - Rinke views website on localhost.
 - Rinke: Here comes a bit of theory, explaining what has been happening on the background (peer-to-peer).
 - Rinke: Then edits the website and uploads it again. Gives hash to Brendan and Brendan takes over again :)
-- Brendan: View Rinke's hash on loclalost
+- Brendan: View Rinke's hash on localhost
 - Brendan: View Rinke's hash on swarm gateway
 - Brendan: Ask audience to share their hashes in the chat
 
@@ -199,10 +273,14 @@ Share your `bzz:/` URLs in the chat!
 
 ---NOTE
 
-Brendan & Rinke to show each others' demos
+`Rinke`
 
-- Encourage audience to share your own Swarm hashes
-- Instructions on how to convert from localhost to swarm gateway
+- Audience should have already seen us viewing each others Swarm hashes
+- Ask audience to visit Brendan's Swarm hash and Rinke's Swarm hash themselves
+- Encourage audience to share their own Swarm hashes
+- Instructions on how to convert a localhost `bzz:/` URL to swarm gateway `bzz:/` URL
+  - `http://localhost:8500/bzz:/1c97998044167e1d836e4290d60f812a7838d1c1551ebd86fd2b4bae2f9a44ee/`
+  - `https://swarm-gateways.net/bzz:/1c97998044167e1d836e4290d60f812a7838d1c1551ebd86fd2b4bae2f9a44ee/`
 
 ---
 
@@ -212,7 +290,7 @@ Questions?
 
 ---NOTE
 
-Brendan
+`Brendan`
 
 That was the demo!
 
@@ -220,25 +298,25 @@ Did anyone have any questions before we wrap up?
 
 ---
 
-## Advanced
+## Pushing the boundaries
 
 - DWeb technology is cutting edge
-- Cutting edge → Edge cases
 
 ---NOTE
 
-So before we wrap up, I would just like to mention,
-very briefly, some advanced topics.
-These are good to know, and aren't intended as part of this webinar.
-Instead these are things that are good to know.
+`Brendan`
 
-One thing to take note of is that while Swarm is at the cutting edge of the decentralised web,
-the DWeb is still very much in its infancy.
-So there are a bunch of edge cases that still need ironing out. Here are a couple of them.
+So before we wrap up, I would just like to quickly mention,
+that while Swarm is at the cutting edge of the decentralised web,
+the DWeb, as a whole, is still very much in its infancy.
+
+So watch this space!
+
+(skip sub-slides)
 
 ---SUB
 
-Brendan
+`Brendan`
 
 - [Transforming links](https://github.com/rsksmart/rsksmart.github.io/blob/768be3be60f14eba780f1ac118694de8bf2aaa54/_plugins/custom_links.rb)
 
@@ -265,48 +343,69 @@ takes all such absolute links and transforms them to their relative forms, such 
 
 ---NOTE
 
-Brendan
+`Brendan`
 
 The site that we created today works as an excellent example, under demo conditions, because it has relatively few files,
 and their paths do not overlap in certain ways that trip up the way in which the actual filenames to be served are resolved, which we may be accustomed to, such as trailing `/`-es and auto-appending `index.html`.
 
-As such, in order for this to work with a fairly complex website such as the RSK DevPortal, I created a simple proxy server to augement the standard `bzz:/` protocol server that ships with swarm.
+As such, in order for this to work with a fairly complex website such as the RSK DevPortal, I created a simple proxy server to augment the standard `bzz:/` protocol server that ships with swarm.
 
 ---
 
-## Roadmap
+## Coming up!
 
-- // TODO Rinke
+- RIF Publish: ~ end of month
+- BEE Alpha release: ~ end of month
+- Global pinning: ~ 2 months
+- RIF Storage services: ~ 2 months
 
 ---NOTE
 
-Rinke
+`Rinke`
 
 ---
 
 ## Resources
 
-- // TODO Rinke
+- [rifos.org/blog/rif-storage-the-first-chunks](https://www.rifos.org/blog/rif-storage-the-first-chunks)
+- [rifos.org/blog/rif-storage-testnet-launch](https://www.rifos.org/blog/rif-storage-testnet-launch)
+- [rifos.org/blog/rif-storage-and-swarms-swap-swips](https://www.rifos.org/blog/rif-storage-and-swarms-swap-swips)
+- [rifos.org/blog/how-to-launch-a-serverless-website-using-rif-storage](https://www.rifos.org/blog/how-to-launch-a-serverless-website-using-rif-storage)
+- [rifos.org/blog/rif-publish-ux-focused-censorship-resistant-publishing](https://www.rifos.org/blog/rif-publish-ux-focused-censorship-resistant-publishing)
 
 ---NOTE
 
-Rinke
+`Rinke`
+
+---SUB
+
+## Resources
+
+- [chipin.com/swarm-and-rsk-infrastructure-framework-partnership](https://www.chipin.com/swarm-and-rsk-infrastructure-framework-partnership/)
+- [developers.rsk.co/rif/storage/providers/swarm](/rif/storage/providers/swarm/)
+- [github.com/ethersphere/bee](https://www.github.com/ethersphere/bee)
+- [github.com/ethersphere/swarm](https://www.github.com/ethersphere/swarm)
+
+---NOTE
+
+`Rinke`
 
 ---
 
 ## Where to go from here?
 
-- Update the contents of your website on Swarm
-- View your website through multiple gateways (not just localhost)
 - Register a decentralised domain name for your website on Swarm
-  - After this, update website contents and point domain at new version
-- Dual deployment of your website on both swarm and a centralised web server
+- Swarm Feeds and messaging
+- Using the incentivized Swarm network
 
 ---NOTE
 
+`Brendan`
+
 What we have done today is not all there is for a decentralised web!
 There are a number of other topics to cover,
-and we will be sure to let you know when we run the next sessions on these topics!
+and we will be sure to let you know when we run the next sessions on these topics
+that we have up here on the screen now!
 
 ---
 
@@ -318,6 +417,10 @@ Thank you!
 
 ---NOTE
 
+`Brendan`
+
 Thanks to everyone for attending!
 
 Be sure to check out developers.rsk.co/webinars for more sessions on RSK and RIF!
+
+Thank you!
