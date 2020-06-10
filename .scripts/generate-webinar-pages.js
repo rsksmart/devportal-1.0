@@ -7,7 +7,7 @@ const webinarsJson = require('../_data/webinars.json');
 function writeEventFiles() {
   return webinarsJson.events
     .filter(
-      (event) => (event._hasPage),
+      (event) => (event._permalink),
     )
     .map((event) => {
       const eventPresentersYaml =
