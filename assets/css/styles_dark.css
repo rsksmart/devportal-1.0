@@ -1,0 +1,177 @@
+/* CSS Document */
+
+.dark body {
+    color: #E6E6E6!important;
+    background: #141414!important;
+    background-color: #141414!important;
+}
+
+.dark .bg-dark {
+    background-color: #141414!important;
+}
+
+
+.dark .navbar {
+    background-color: #141414!important;
+}
+
+.dark .navbar-dark .navbar-toggler-icon {
+    background-image: url(../img/burger_dark.svg);
+}
+
+
+
+.dark .navbar.header-scrolled {
+    background: #141414!important;
+}
+
+.dark .nav-link {
+    color: white!important;
+}
+
+.dark .nav-link:hover {
+    color: white!important;
+    font-weight: bold;
+}
+
+.dark .menu-container a[target="_blank"]:hover:after {
+    background: url(../img/ext-link-hover-reverse.svg);
+}
+
+.dark .first_level>a[target="_blank"]:hover:after {
+    background: url(../img/first-level-ext-link-hover.svg);
+}
+
+.dark .search-input {
+    background: transparent;
+    border-color: #008CFF;
+    color: #008CFF;
+}
+
+.dark .breadcrumb .active a,
+.dark .btn-outline-secondary .parag {
+    color: #FFFFFF!important;
+}
+
+.dark .breadcrumb li a {
+    color: #E6E6E6!important;
+}
+
+.dark .breadcrumb li a:hover {
+    color: #FFFFFF!important;
+    font-weight: bold!important;
+}
+
+.dark .breadcrumb li:last-child a {
+    color: #FFFFFF!important;
+}
+
+.dark .menu-container li:hover>a,
+.dark li.current>a {
+    color: white!important;
+}
+
+.dark .menu-container li:hover>span,
+.dark li.current>span {
+    color: white!important;
+}
+
+.dark .first_level.current>a,
+.dark .first_level.current>span {
+    color: #008CFF!important;
+}
+
+.dark .menu-container .first_level:hover>a {
+    color: #008CFF!important;
+}
+
+.dark .menu-container .first_level:hover>a::before {
+    background: #008CFF;
+}
+
+.dark .menu-container .first_level:hover>span {
+    color: #008CFF!important;
+}
+
+.dark .menu-container div>a:hover {
+    color: #008CFF!important;
+}
+
+.dark .table {
+    color: white!important;
+}
+
+.dark .feature-card a p {
+    color: white;
+}
+
+
+/* The stack */
+
+.dark .the-stack .row {
+    color: #000000;
+}
+
+.dark .the-stack .row .col {
+    background: #E6E6E6;
+}
+
+.dark .the-stack .row .col span {
+    color: #000000;
+}
+
+.dark .the-stack .row .col span {
+    color: #000000;
+}
+
+.dark .grafboxrow, .grafbox {
+    box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 1);
+}
+
+@media (max-width: 991px) {
+    .dark li:hover>a,
+    li.current>a {
+        color: black!important;
+    }
+    .dark li:hover>span,
+    li.current>span {
+        color: black!important;
+    }
+    /*.dark .first_level>a {
+        color: #FFFFFF!important;
+    }
+    .dark .first_level>a::before {
+        background: #FFFFFF!important;
+    }*/
+
+
+
+
+    .dark .menu-container>div>a:hover {
+        color: black!important;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .dark .the-stack .reverse_mobile .col {
+        background: #00b520!important;
+    }
+}
+
+
+
+@media screen and (min-width: 1900px) {
+    .dark #home {
+        padding-top: 300px;
+    }
+    
+}
+
+@media (min-width: 2600px) {
+    .dark #home {
+        padding-top: 350px;
+    }
+}

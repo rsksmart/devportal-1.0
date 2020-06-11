@@ -1,0 +1,2316 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-56J7JTD');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
+      <meta name="author" content="RSK Developers Portal">
+      <link rel="canonical" href="http://localhost:4000/rif/rns/architecture/Registrar/">
+   	<title>Registrar - RSK Developers Portal</title>
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/img/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="../../../../assets/img/favicons/site.webmanifest/">
+      <link rel="mask-icon" href="../../../../assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+      <link rel="shortcut icon" href="../../../../assets/img/favicons/favicon.ico/">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assetsimg/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,900&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800&amp;display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="../../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Libraries CSS Files -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../../../assets/vendor/malihu-custom-scrollbar-plugin-master/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+      <!-- Main Stylesheet File -->
+      <link href="../../../../assets/css/styles.css" rel="stylesheet">
+      <link href="../../../../assets/css/styles_dark.css" rel="stylesheet">
+      <link href="../../../../assets/css/code.css" rel="stylesheet">
+      <link href="../../../../assets/css/owl.carousel.min.css" rel="stylesheet">
+      <link href="../../../../assets/css/owl.theme.default.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56J7JTD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://rsk.co" rel="external noopener noreferrer" target="_blank"><img id="logo" src="../../../../assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../../../the-stack/" target="_self">The Stack
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../../develop/" target="_self">Develop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://fund.rsk.co" target="_blank" rel="external noopener noreferrer">Ecosystem Fund</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://rsk.co/defi" target="_blank" rel="external noopener noreferrer">Defi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://developers.rsk.co/webinars" target="_blank" rel="external noopener noreferrer">Webinars</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- Page Content -->
+      <!-- home -->
+      <section id="home">
+         <div class="container">
+
+            <div class="row header-inner">
+    <div class="col-lg-3">
+       <!-- mobile dropdown left column -->
+       <div class="mobile-left-menu">
+          <button class="btn btn-outline-secondary dropdown-toggle rsk_blue" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-menu drop-mobile-left-menu">
+             <div class="mobile_accordion">
+                <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../">RSK Infrastructure Framework</a></li>
+          <li><a href="../../../token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../">Name Service</a>
+            <ul>
+              <li><a href="../../">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../specs/">Specs</a>
+                <ul>
+                  <li><a href="../../specs/">Specs</a></li>
+                  <li><a href="../../specs/registry/">Registry specs</a></li>
+                  <li><a href="../../specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../operations/">Operations</a></li>
+                  <li><a href="../../operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../">Architecture</a></li>
+                  <li><a href="../registry/">Registry</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../Resolver/">Resolver</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../Resolver/">Resolver</a></li>
+                      <li><a href="../MultiCryptoResolver/">Multi-Crypto Resolver</a></li>
+                      <li><a href="../RSKResolver/">RSK Resolver</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../tools/Web3/">Web3</a></li>
+                  <li><a href="../../tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../libs/">Libs</a>
+                <ul>
+                  <li><a href="../../libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../libs/javascript/">Javascript</a></li>
+                      <li><a href="../../libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../libs/Android/">Android</a></li>
+                  <li><a href="../../libs/iOS/">iOS</a></li>
+                  <li><a href="../../libs/Python/">Python</a></li>
+                  <li><a href="../../libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../integrate/">Integrate</a></li>
+                  <li><a href="../../integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../mainnet/">Mainnet</a></li>
+              <li><a href="../../testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../lumino/">Lumino</a></li>
+                  <li><a href="../../../lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../../lumino/node/install/">Install</a></li>
+                          <li><a href="../../../lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../../lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../../lumino/node/use/">How to use</a></li>
+                      <li><a href="../../../lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../../lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../../lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../../lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../../lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../../lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../../lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../storage/">Storage</a>
+            <ul>
+              <li><a href="../../../storage/">About</a></li>
+              <li><a href="../../../storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/swarm/">About</a></li>
+                      <li><a href="../../../storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../../storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../../storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../../storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../../storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tutorials/">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tutorials/">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/ethereum-devs/">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/setup-truffle-oz/">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../../../../tutorials/frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../../../../tutorials/frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../../../../tutorials/tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../../../../tutorials/truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../../../../tutorials/dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../../../../tutorials/deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interface-registry/">Interface Registry</a></li>
+              <li><a href="../../../../tutorials/rsk-api/">RSK API CLI</a></li>
+              <li><a href="../../../../tutorials/send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../../../../tutorials/using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../../../../tutorials/resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../wallet/">Wallet</a></li>
+              <li><a href="../../../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../wallet/use/">Use</a></li>
+                  <li><a href="../../../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../libraries/">Libs</a></li>
+              <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../libs/">RNS</a></li>
+              <li><a href="../../../lumino/libraries/">Lumino</a></li>
+              <li><a href="../../../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/truffle/">Truffle</a></li>
+                  <li><a href="../../../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <li><a href="../../../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../contribute/">Contribute</a></li>
+          <li><a href="../../../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="col-lg-5">
+       <!-- <nav class="breadcrumbs bootstrap hidden-sm-down">
+	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/">
+					<span property="name"></span>
+					<meta property="position" content="1" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/rif/">
+					<span property="name">RSK Infrastructure Framework</span>
+					<meta property="position" content="2" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/rif/rns/">
+					<span property="name">RIF Name Service</span>
+					<meta property="position" content="3" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/rif/rns/architecture/">
+					<span property="name">Architecture</span>
+					<meta property="position" content="4" />
+				</a>
+			</li>
+		
+			
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<span property="name">Registrar</span>
+					<meta property="position" content="5" />
+				</li>
+				
+
+		
+		
+	</ol>
+</nav>
+ -->
+       <nav id="siteBreadcrumb" class="show active-parent">
+          <ol class="breadcrumb">
+         </ol>
+       </nav>
+    </div>
+    <div class="col-lg-4 input-col">
+       <div class="page-metadata">
+    <!--time role="presentation" datetime="2020-01-03 04:45:22 +0000T00:00:00.000Z">2020-01-03</time> | -->
+     25' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/architecture/Registrar.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <div class="dropdown" style="display: inline-block">
+       <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
+       <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Flocalhost:4000/rif/rns/architecture/Registrar/&amp;text=Registrar&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Flocalhost:4000/rif/rns/architecture/Registrar/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Flocalhost:4000/rif/rns/architecture/Registrar/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flocalhost:4000/rif/rns/architecture/Registrar/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=Registrar&amp;body=Registrar%0A%0Ahttps%3A%2F%2Flocalhost:4000/rif/rns/architecture/Registrar/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('http://localhost:4000/rif/rns/architecture/Registrar/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+       </ul>
+    </div> |
+    <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
+ </div>
+    </div>
+ </div>
+
+            <div class="row">
+               <!-- left col desktop -->
+               <div class="col-lg-3 main-left-col">
+                  <div class="desktop_accordion">
+                     <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../">RSK Infrastructure Framework</a></li>
+          <li><a href="../../../token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../">Name Service</a>
+            <ul>
+              <li><a href="../../">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../specs/">Specs</a>
+                <ul>
+                  <li><a href="../../specs/">Specs</a></li>
+                  <li><a href="../../specs/registry/">Registry specs</a></li>
+                  <li><a href="../../specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../operations/">Operations</a></li>
+                  <li><a href="../../operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../">Architecture</a></li>
+                  <li><a href="../registry/">Registry</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../Resolver/">Resolver</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../Resolver/">Resolver</a></li>
+                      <li><a href="../MultiCryptoResolver/">Multi-Crypto Resolver</a></li>
+                      <li><a href="../RSKResolver/">RSK Resolver</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../tools/Web3/">Web3</a></li>
+                  <li><a href="../../tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../libs/">Libs</a>
+                <ul>
+                  <li><a href="../../libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../libs/javascript/">Javascript</a></li>
+                      <li><a href="../../libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../libs/Android/">Android</a></li>
+                  <li><a href="../../libs/iOS/">iOS</a></li>
+                  <li><a href="../../libs/Python/">Python</a></li>
+                  <li><a href="../../libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../integrate/">Integrate</a></li>
+                  <li><a href="../../integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../mainnet/">Mainnet</a></li>
+              <li><a href="../../testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../lumino/">Lumino</a></li>
+                  <li><a href="../../../lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../../lumino/node/install/">Install</a></li>
+                          <li><a href="../../../lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../../lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../../lumino/node/use/">How to use</a></li>
+                      <li><a href="../../../lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../../lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../../lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../../lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../../lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../../lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../../lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../storage/">Storage</a>
+            <ul>
+              <li><a href="../../../storage/">About</a></li>
+              <li><a href="../../../storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/swarm/">About</a></li>
+                      <li><a href="../../../storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../../storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../../storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../../storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../../storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tutorials/">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tutorials/">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/ethereum-devs/">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/setup-truffle-oz/">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../../../../tutorials/frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../../../../tutorials/frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../../../../tutorials/tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../../../../tutorials/truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../../../../tutorials/dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../../../../tutorials/deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interface-registry/">Interface Registry</a></li>
+              <li><a href="../../../../tutorials/rsk-api/">RSK API CLI</a></li>
+              <li><a href="../../../../tutorials/send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../../../../tutorials/using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../../../../tutorials/resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../wallet/">Wallet</a></li>
+              <li><a href="../../../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../wallet/use/">Use</a></li>
+                  <li><a href="../../../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../libraries/">Libs</a></li>
+              <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../libs/">RNS</a></li>
+              <li><a href="../../../lumino/libraries/">Lumino</a></li>
+              <li><a href="../../../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/truffle/">Truffle</a></li>
+                  <li><a href="../../../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <li><a href="../../../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../contribute/">Contribute</a></li>
+          <li><a href="../../../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+                  </div>
+               </div>
+               <!-- central col -->
+               <div class="col-lg-9 main-central-col">
+                  <div class="alert alert-info" role="alert">
+    <a href="https://developers.rsk.co/webinars?utm_source=devportal&amp;utm_medium=infobar&amp;utm_campaign=webinars" style="color: black!important;text-decoration: underline;" rel="external noopener noreferrer" target="_blank">
+        Join our Webinars! Now you can watch and learn more about Blockchain!
+    </a>
+</div>
+
+                  <h1 class="page-title" id="top">Registrar</h1>
+
+                  <div class="alert alert-danger">
+  <img class="emoji" title=":warning:" alt=":warning:" src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png" height="20" width="20"> Deprecated. Find new registrar <a href="../rsk-registrar">here</a>.
+</div>
+
+<p>The Registrar is the contract that handles the domain issuing logic. In this section we’ll explain the interaction with this contract.</p>
+
+<p>As explained in the <a href="https://docs.rifos.org/rif-name-service-specification-en.pdf" rel="external noopener noreferrer" target="_blank">RNS specification doc</a>, the domain ownership is determinate by a Vickrey auction. A Vickrey auction is a type of sealed-bid auction. Bidders submit bids without knowing the bided amount of any other participant. The highest bidder is the winner and the price paid is the second-highest bid.</p>
+
+<p>Is RNS, the auction lasts 5 days and is divided in two periods:</p>
+<ul>
+  <li>
+<strong>Auction phase</strong>: the first 3 days to bid for a specific domain.</li>
+  <li>
+<strong>Reveal phase</strong>: the next 2 days for revealing the bids.</li>
+</ul>
+
+<blockquote>
+  <p>There is no “soft start” phase, meaning that all names are available on launch time.</p>
+</blockquote>
+
+<h3 id="registrar-mainnet">Registrar mainnet</h3>
+<ul>
+  <li>
+<strong>Address</strong>: <a href="http://explorer.rsk.co/address/0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6</code></a>
+</li>
+  <li>
+<strong>ABI</strong>: <a href="../RegistrarABI.json/">RegistrarABI.json</a>
+</li>
+</ul>
+
+<p>See <a href="../../testnet/">RNS Testnet section</a> for testing environment information.</p>
+
+<h2 id="index">Index</h2>
+
+<ul>
+  <li><a href="#the-process">The process</a></li>
+  <li><a href="#rent-and-domain-expiration">Rent and domain expiration</a></li>
+  <li><a href="#structure">Structure</a></li>
+  <li>
+<a href="#methods">Methods</a>
+    <ul>
+      <li><a href="#startauction"><code class="highlighter-rouge">startAuction</code></a></li>
+      <li><a href="#startauctions"><code class="highlighter-rouge">startAuctions</code></a></li>
+      <li><a href="#newbid"><code class="highlighter-rouge">newBid</code></a></li>
+      <li><a href="#newbidwithtoken"><code class="highlighter-rouge">newBidWithToken</code></a></li>
+      <li><a href="#startauctionsandbid"><code class="highlighter-rouge">startAuctionsAndBid</code></a></li>
+      <li><a href="#unsealbid"><code class="highlighter-rouge">unsealBid</code></a></li>
+      <li><a href="#finalizeauction"><code class="highlighter-rouge">finalizeAuction</code></a></li>
+      <li><a href="#payrent"><code class="highlighter-rouge">payRent</code></a></li>
+      <li><a href="#payrentwithtoken"><code class="highlighter-rouge">payRentWithToken</code></a></li>
+      <li><a href="#transfer"><code class="highlighter-rouge">transfer</code></a></li>
+      <li><a href="#releasedeed"><code class="highlighter-rouge">releaseDeed</code></a></li>
+      <li><a href="#erasenode"><code class="highlighter-rouge">eraseNode</code></a></li>
+      <li><a href="#transferregistrar"><code class="highlighter-rouge">transferRegistrar</code></a></li>
+      <li><a href="#acceptregistrartransfer"><code class="highlighter-rouge">acceptRegistrarTransfer</code></a></li>
+      <li><a href="#state"><code class="highlighter-rouge">state</code></a></li>
+      <li><a href="#entries"><code class="highlighter-rouge">entries</code></a></li>
+      <li><a href="#shabid"><code class="highlighter-rouge">shaBid</code></a></li>
+      <li><a href="#tokenfallback"><code class="highlighter-rouge">tokenFallback</code></a></li>
+    </ul>
+  </li>
+  <li><a href="#events">Events</a></li>
+  <li><a href="#states">States</a></li>
+  <li><a href="#refund-schedule">Refund Schedule</a></li>
+</ul>
+
+<h2 id="the-process">The process</h2>
+
+<ol>
+  <li>
+    <p>Instance Registrar contract</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">registrarInstance</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">registrarAbi</span><span class="p">)</span>
+ <span class="kd">var</span> <span class="nx">registrar</span> <span class="o">=</span> <span class="nx">registrarInstance</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="nx">registrarAddress</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Hash your domain</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span>
+ <span class="kd">var</span> <span class="nx">sha3</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="nx">label</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Verify domain status after starting an auction for the name</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">status</span> <span class="o">=</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">sha3</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>If the dmain name is in Open state, start an auction. The auctions are public, this means anyone can bid in it.</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="k">if</span> <span class="p">(</span><span class="nx">status</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+     <span class="nx">registrar</span><span class="p">.</span><span class="nx">startAuction</span><span class="p">(</span><span class="nx">sha3</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Within the next 3 days, the name is in auction state. Bid!</p>
+
+    <p>Bids are sent by sending a message to the Registrar contract with a hash and an amount. The hash contains information about the bid, including the hash of the domain bided, the bid amount, and a random salt. The value of the bid itself can be masqueraded by sending more than the value of your actual bid.</p>
+
+    <p>Bids must be placed before the reveal period begins. Any bid created during or after this period won’t be considered valid.</p>
+
+    <p>Since this is an auction, it is expected that most public hashes, like known domains and common dictionary words, will have multiple bidders pushing the price up.</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">owner</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">salt</span>
+ <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+     <span class="kd">var</span> <span class="nx">shaBid</span> <span class="o">=</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">shaBid</span><span class="p">(</span><span class="nx">sha3</span><span class="p">,</span> <span class="nx">owner</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">salt</span><span class="p">)</span>
+     <span class="nx">registrar</span><span class="p">.</span><span class="nx">newBid</span><span class="p">(</span><span class="nx">shaBid</span><span class="p">)</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Within the next 2 days, the name is in Reveal state. Reveal your bid!</p>
+
+    <p>Once the reveal phase of the auction starts, it’s time to unseal your bid. You can do this by calling the method <code class="highlighter-rouge">unsealBid</code> with the same parameters used originally for <code class="highlighter-rouge">shaBid</code>.</p>
+
+    <ul>
+      <li>
+        <p>If the bid doesn’t meet the requirements (below min value or created during the reveal period) or doesn’t beat the second-best bid, all of the tokens locked in the Deed are refunded.</p>
+      </li>
+      <li>
+        <p>If the bid doesn’t best the highest value offered, but does beat the second highest, the final value of the auction is updated to equal the bid and all locked tokens are refunded.</p>
+      </li>
+      <li>
+        <p>If the bid turns out to be the biggest yet, the auction’s highest value and second highest are updated. The former highest bid is refunded to its owner.</p>
+      </li>
+    </ul>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="k">if</span> <span class="p">(</span><span class="nx">status</span> <span class="o">===</span> <span class="mi">4</span><span class="p">)</span>
+     <span class="nx">registrar</span><span class="p">.</span><span class="nx">unsealBid</span><span class="p">(</span><span class="nx">sha3</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">salt</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Once the Auction phase finalized, if you are the winner you must register your domain name.  In order to concrete the auction and finalize apply the changes to the Registry, the auction winner must call the <code class="highlighter-rouge">finalizeAuction</code> method.</p>
+
+    <p>This function can’t be called by any other account but the new owner of the auctioned name.</p>
+
+    <p>When calling this method, the Registrar contract refunds the difference between the highest and the second highest values and modifies the Registry adding (or modifying) the entry which links the full domain and the new owner.</p>
+
+    <p>As well as modifying the registry, the registrar also signals the Deed to start its expiration period, which lasts one year, and pay the initial annual rent fee.</p>
+
+    <div class="language-js highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">var</span> <span class="nx">entry</span> <span class="o">=</span> <span class="nx">entries</span><span class="p">(</span><span class="nx">sha3</span><span class="p">)</span>
+ <span class="k">if</span> <span class="p">(</span><span class="nx">entry</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">===</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+     <span class="kd">var</span> <span class="nx">deedInstance</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">contract</span><span class="p">(</span><span class="nx">deedAbi</span><span class="p">)</span>
+     <span class="kd">var</span> <span class="nx">deed</span> <span class="o">=</span> <span class="nx">deedInstance</span><span class="p">.</span><span class="nx">at</span><span class="p">(</span><span class="nx">entry</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+     <span class="k">if</span> <span class="p">(</span><span class="nx">deed</span><span class="p">.</span><span class="nx">owner</span><span class="p">()</span> <span class="o">===</span> <span class="nx">me</span><span class="p">)</span>
+         <span class="nx">registrar</span><span class="p">.</span><span class="nx">finalizeAuction</span><span class="p">(</span><span class="nx">sha3</span><span class="p">)</span>
+ <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Now the name is registered in the <a href="../registry/">RNS Registry</a>.</p>
+
+<h2 id="rent-and-domain-expiration">Rent and domain expiration</h2>
+
+<p>Domain names have a validity of 1 year after the registration date. Said expiry date is reflected through the associated Deed contract. Owners have a period of 3 months before the expiry date to pay the rent and extend their ownership for 1 year. The rent value is 1 RIF token.</p>
+
+<p>The domains whose annual rent is not paid, backs to Open state and becomes available to open an auction again. If a user wins an auction over it, she is able to override the existing name resolution.</p>
+
+<h2 id="structure">Structure</h2>
+
+<p><img src="../../../../assets/img/rns/registrar.png" class="img-fluid" alt="regsitrar"></p>
+
+<p><strong>Context</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">RNS</span> <span class="kr">public</span> <span class="nx">rns</span><span class="p">;</span>
+<span class="nx">bytes32</span> <span class="kr">public</span> <span class="nx">rootNode</span><span class="p">;</span>
+<span class="nx">RIFToken</span> <span class="kr">public</span> <span class="nx">tokenContract</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">rns</code> the Registry contract
+<code class="highlighter-rouge">rootNode</code> the top-level domain. For RNS <code class="highlighter-rouge">web3.sha3('rsk')</code>. All new nodes are sub nodes of ‘rsk’
+<code class="highlighter-rouge">tokenContract</code> the RIF ERC-677 token contract</p>
+
+<p><strong>Types</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">struct</span> <span class="nx">Entry</span> <span class="p">{</span>
+    <span class="nx">TokenDeed</span> <span class="nx">deed</span><span class="p">;</span>
+    <span class="nx">uint</span> <span class="nx">registrationDate</span><span class="p">;</span>
+    <span class="nx">uint</span> <span class="nx">value</span><span class="p">;</span>
+    <span class="nx">uint</span> <span class="nx">highestBid</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Entry</code> the actual state of a hash</li>
+</ul>
+
+<p><strong>Storage</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">mapping</span> <span class="p">(</span><span class="nx">bytes32</span> <span class="o">=&gt;</span> <span class="nx">Entry</span><span class="p">)</span> <span class="nx">_entries</span><span class="p">;</span>
+<span class="nx">mapping</span> <span class="p">(</span><span class="nx">address</span> <span class="o">=&gt;</span> <span class="nx">mapping</span> <span class="p">(</span><span class="nx">bytes32</span> <span class="o">=&gt;</span> <span class="nx">TokenDeed</span><span class="p">))</span> <span class="kr">public</span> <span class="nx">sealedBids</span><span class="p">;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">_entries</code> store all hash states. The state is not modified when someone bids, but it is when someone reveals a bid.</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">sealedBids</code> store, for each user, the Deed address for each sealed bid. Notices that the sealed bid is not recoverable without the salt value</p>
+  </li>
+</ul>
+
+<p><strong>Constants</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">uint32</span> <span class="nx">constant</span> <span class="nx">TOTAL_AUCTION_LENGTH</span> <span class="o">=</span> <span class="mi">5</span> <span class="nx">days</span><span class="p">;</span>
+<span class="nx">uint32</span> <span class="nx">constant</span> <span class="nx">REVEAL_PERIOD</span> <span class="o">=</span> <span class="mi">48</span> <span class="nx">hours</span><span class="p">;</span>
+<span class="nx">uint32</span> <span class="nx">constant</span> <span class="nx">LATE_UNSEAL_PERIOD</span> <span class="o">=</span> <span class="mi">15</span> <span class="nx">days</span><span class="p">;</span>
+<span class="nx">uint</span> <span class="nx">constant</span> <span class="nx">RELEASE_FEE_PER_MIL</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>    <span class="c1">// 200 of 1000 = 20%</span>
+<span class="nx">uint</span> <span class="nx">constant</span> <span class="nx">MIN_TOKEN_QUANTITY</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">18</span><span class="p">;</span>  <span class="c1">// 1 token</span>
+<span class="nx">uint</span> <span class="nx">constant</span> <span class="nx">RENT_VALUE</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">10</span><span class="o">**</span><span class="mi">18</span><span class="p">;</span>  <span class="c1">// 1 token</span>
+</code></pre></div></div>
+
+<h2 id="methods">Methods</h2>
+
+<h4 id="startauction">startAuction</h4>
+
+<p>Start an auction for an available hash</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">startAuction</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">registryOpen</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: the hash to start an auction on</li>
+</ul>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">AuctionStarted</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span>
+<span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+<span class="nx">registrar</span><span class="p">.</span><span class="nx">startAuction</span><span class="p">(</span><span class="nx">hash</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="startauctions">startAuctions</h4>
+
+<p>Start multiple auctions for better anonymity.</p>
+
+<p>A user can start an auction by sending an array of hashes that they want to bid for. This array is sent so that the user can open an auction for X dummy hashes when she is only interested in bidding for one. This will increase the cost for an attacker to simply bid blindly on all new auctions. Dummy auctions that are open but not bid on are closed after a week.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">startAuctions</span><span class="p">(</span><span class="nx">bytes32</span><span class="p">[]</span> <span class="nx">_hashes</span><span class="p">)</span> <span class="kr">public</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hashes</code>: an array of hashes, at least one of which the user wants to bid on</li>
+</ul>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">AuctionStarted</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span>
+<span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="nx">label</span><span class="p">)</span>
+
+<span class="kd">var</span> <span class="nx">fake1</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto1</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">fake2</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto2</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">registrar</span><span class="p">.</span><span class="nx">startAuctions</span><span class="p">([</span><span class="nx">fake1</span><span class="p">,</span> <span class="nx">hash</span><span class="p">,</span> <span class="nx">fake2</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h4 id="newbid">newBid</h4>
+
+<p>Submit a new sealed bid on a desired hash in a blind auction</p>
+
+<p>Bids are sent by sending a message to the main contract with a hash and an amount. The hash contains information about the bid, including the bided hash, the bid amount, and a random salt. Bids are not tied to any one auction until they are revealed. The value of the bid itself can be masqueraded by sending more than the value of your actual bid. For bids revealed after reveal period, a percentage (defined in the late unsealing <a href="#refund-schedule">Refund schedule</a>) will be sent to a special RIF address.</p>
+
+<p>This method requires the sender to approve the Registrar to use the specified <code class="highlighter-rouge">tokenQuantity</code> in the ERC677 (inherited form ERC20) contract.
+Otherwise it can be done through the <code class="highlighter-rouge">tokenFallback</code> after a transfer with the corresponding parameters.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">newBid</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_sealedBid</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_tokenQuantity</span><span class="p">)</span> <span class="kr">public</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_sealedBid</code>: a sealed bid, created by the <code class="highlighter-rouge">shaBid</code> function</li>
+  <li>
+<code class="highlighter-rouge">_tokenQuantity</code>: token quantity to bid</li>
+</ul>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">NewBid</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">owner</span> <span class="o">=</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="kd">var</span> <span class="nx">amount</span> <span class="o">=</span> <span class="mi">8</span><span class="nx">e18</span>
+<span class="kd">var</span> <span class="nx">sentAmount</span> <span class="o">=</span> <span class="mi">10</span><span class="nx">e18</span>
+<span class="kd">var</span> <span class="nx">salt</span> <span class="o">=</span> <span class="nx">random</span><span class="p">()</span>
+<span class="kd">var</span> <span class="nx">shaBid</span> <span class="o">=</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">shaBid</span><span class="p">(</span><span class="nx">hash</span><span class="p">,</span> <span class="nx">owner</span><span class="p">,</span> <span class="nx">amount</span><span class="p">,</span> <span class="nx">salt</span><span class="p">)</span>
+
+<span class="nx">rif</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">registrar</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">sentAmount</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">err</span><span class="p">)</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">newBid</span><span class="p">(</span><span class="nx">shaBid</span><span class="p">,</span> <span class="nx">sentAmount</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h4 id="newbidwithtoken">newBidWithToken</h4>
+
+<p>Method to be called through a dynamic invocation from an ERC677 token contract</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">newBidWithToken</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_from</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_tokenQuantity</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">_sealedBid</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Hash</strong> <code class="highlighter-rouge">0x1413151f</code></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">_from</code>: address sending the tokens as well as submitting the bid</li>
+  <li>
+<code class="highlighter-rouge">_tokenQuantity</code>: amount in tokens received through the transference</li>
+  <li>
+<code class="highlighter-rouge">_sealedBid</code>: sealed bid, created through the <code class="highlighter-rouge">shaBid</code> function</li>
+</ul>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">NewBid</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">deposit</span> <span class="o">=</span> <span class="mi">200</span><span class="nx">e18</span>
+<span class="kd">const</span> <span class="nx">sealedBid</span> <span class="o">=</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">shaBid</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">),</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">150</span><span class="nx">e18</span><span class="p">,</span> <span class="mi">4512</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0x1413151f</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">sealedBid</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="nx">rif</span><span class="p">.</span><span class="nx">transferAndCall</span><span class="p">(</span><span class="nx">registrar</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">deposit</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="startauctionsandbid">startAuctionsAndBid</h4>
+
+<p>Start a set of auctions and bid on one of them. This method functions identically to calling <code class="highlighter-rouge">startAuctions</code> followed by <code class="highlighter-rouge">newBid</code>, but all in one transaction.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">startAuctionsAndBid</span><span class="p">(</span><span class="nx">bytes32</span><span class="p">[]</span> <span class="nx">_hashes</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">_sealedBid</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_tokenQuantity</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">payable</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hashes</code>: a list of hashes to start auctions on.</li>
+  <li>
+<code class="highlighter-rouge">_sealedBid</code>: a sealed bid for one of the auctions.</li>
+  <li>
+<code class="highlighter-rouge">_tokenQuantity</code>: amount of tokens to mask the bid with.</li>
+</ul>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">AuctionStarted</code></li>
+  <li><code class="highlighter-rouge">NewBid</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">hashes</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">fake1</span><span class="dl">'</span><span class="p">),</span>
+    <span class="nx">hash</span><span class="p">,</span>
+    <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">fake2</span><span class="dl">'</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="kd">var</span> <span class="nx">amountSent</span> <span class="o">=</span> <span class="mi">15</span><span class="nx">e18</span>
+
+<span class="kd">var</span> <span class="nx">shaBid</span> <span class="o">=</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">shaBid</span><span class="p">(</span><span class="nx">hash</span><span class="p">,</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">10</span><span class="nx">e8</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="nx">rif</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">registrar</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">amountSent</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">err</span><span class="p">)</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">startAuctionsAndBid</span><span class="p">(</span><span class="nx">hashes</span><span class="p">,</span> <span class="nx">shaBid</span><span class="p">,</span> <span class="nx">amountSent</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h4 id="unsealbid">unsealBid</h4>
+
+<p>Submit the properties of a bid to reveal them. The hash, value and salt must be the same set in the sealed bid, otherwise, no bid will be unsealed.</p>
+
+<p>The <a href="#refund-schedule">refund schedule</a> is defined in this method.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">unsealBid</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_value</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">_salt</span><span class="p">)</span> <span class="kr">public</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: the node in the sealedBid</li>
+  <li>
+<code class="highlighter-rouge">_value</code>: the bid amount in the sealedBid</li>
+  <li>
+<code class="highlighter-rouge">_salt</code>: the sale in the sealedBid</li>
+</ul>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">BidRevealed</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">registrar</span><span class="p">.</span><span class="nx">unsealBid</span><span class="p">(</span><span class="nx">myHash</span><span class="p">,</span> <span class="nx">myValueBade</span><span class="p">,</span> <span class="nx">mySalt</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="finalizeauction">finalizeAuction</h4>
+
+<p>Finalize an auction after the registration date has passed. Updates the Registry to reflect the new node owner. Starts the winning Deed’s expiration period.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">finalizeAuction</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">onlyOwner</span><span class="p">(</span><span class="nx">_hash</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: the hash of the name the auction is for</li>
+</ul>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">HashRegistered</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">name</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">registrar</span><span class="p">.</span><span class="nx">finalizeAuction</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+
+<span class="c1">// Now you might</span>
+<span class="nx">registry</span><span class="p">.</span><span class="nx">setResolver</span><span class="p">(</span><span class="nx">namehash</span><span class="p">(</span><span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">.rsk</span><span class="dl">'</span><span class="p">),</span> <span class="nx">myResolverAddress</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="payrent">payRent</h4>
+
+<p>Pay the annual rent for a name. The rent value is 1 RIF.</p>
+
+<p>Domains have a validity of 1 year after the registration date. Said expiry date is reflected through the associated Deed contract. Owners have a period of 3 months before the expiryDate to pay the rent and extend their ownership for 1 year.</p>
+
+<p>This method requires the sender to approve the Registrar to use the specified tokenQuantity in the ERC677 contract.
+Otherwise it can be done through the <code class="highlighter-rouge">tokenFallback</code> after a transfer with the corresponding parameters.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">payRent</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: the hash of the name to pay the rent for</li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rif</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">registrar</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="mi">1</span><span class="nx">e18</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">registrar</span><span class="p">.</span><span class="nx">payRent</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">),</span> <span class="mi">1</span><span class="nx">e18</span><span class="p">)</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h4 id="payrentwithtoken">payRentWithToken</h4>
+
+<p>Method to be called through a dynamic invocation from an ERC223 token contract.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">payRentWithToken</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_from</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_tokenQuantity</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span>
+</code></pre></div></div>
+
+<p><strong>Hash</strong> <code class="highlighter-rouge">0xe1ac9915</code></p>
+
+<p><strong>Parameters</strong>
+<code class="highlighter-rouge">_from</code>: address sending the tokens as well as submitting the bid
+<code class="highlighter-rouge">_tokenQuantity</code>: amount in tokens received through the transference
+<code class="highlighter-rouge">_hash</code>: hash of the name to pay the rent for</p>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">rent</span> <span class="o">=</span> <span class="mi">1</span><span class="nx">e18</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0xe1ac9915</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">hash</span><span class="p">.</span><span class="nx">slice</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="nx">rif</span><span class="p">.</span><span class="nx">transferAndCall</span><span class="p">(</span><span class="nx">registrar</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">rent</span><span class="p">,</span> <span class="nx">data</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h4 id="transfer">transfer</h4>
+
+<p>Change the owner of the domain. This impacts in the Registry and the token Deed. The owner of a domain may transfer it to someone else at any time.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">transfer</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">_newOwner</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">onlyOwner</span><span class="p">(</span><span class="nx">_hash</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: the node to transfer</li>
+  <li>
+<code class="highlighter-rouge">_newOwner</code>: the address to transfer ownership to</li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">newOwnerAddress</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0x53ab...</span><span class="dl">'</span>
+<span class="nx">reigstrar</span><span class="p">.</span><span class="nx">trasnfer</span><span class="p">(</span><span class="nx">hash</span><span class="p">,</span> <span class="nx">newOwnerAddress</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="releasedeed">releaseDeed</h4>
+
+<p>After some time, or if we’re no longer the Registrar, the owner can release the name and get a part of their tokens back. The allowed release period is within the annual rent payment period, which starts 3 months before the expiration date.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">releaseDeed</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">onlyOwner</span><span class="p">(</span><span class="nx">_hash</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash </code>: the node to release</li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">hash</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">registrar</span><span class="p">.</span><span class="nx">releaseDeed</span><span class="p">(</span><span class="nx">hash</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Events</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">HashReleased</code></li>
+</ul>
+
+<h4 id="erasenode">eraseNode</h4>
+
+<p>Allows anyone to delete the owner and resolver records for (subdomain of) a domain name that is not currently owned in the Registrar. If passing, ex: ‘foo.bar.rsk’, the owner and Resolver fields on ‘foo.bar.rsk’ and ‘bar.rsk’ will all be cleared.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">eraseNode</span><span class="p">(</span><span class="nx">bytes32</span><span class="p">[]</span> <span class="nx">_labels</span><span class="p">)</span> <span class="kr">public</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_labels</code>: a series of label hashes identifying the name to zero out, rooted at the registrar’s root. Must contain at least one element. For instance, to zero ‘foo.bar.rsk’ on a registrar that owns ‘.rsk’, pass an array containing <code class="highlighter-rouge">[web3.sha3('foo'), web3.sha3('bar')]</code>.</li>
+</ul>
+
+<h4 id="transferregistrar">transferRegistrar</h4>
+
+<p>Transfers the Deed to the current Registrar, if different from this one. Used during the upgrade process to an enhanced Registrar.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">transferRegistrars</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">onlyOwner</span><span class="p">(</span><span class="nx">_hash</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code> The name-hash to transfer.</li>
+</ul>
+
+<h4 id="acceptregistrartransfer">acceptRegistrarTransfer</h4>
+
+<p>Accepts a transfer from a previous Registrar; stubbed out here since there is no previous registrar implementing this interface.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">acceptRegistrarTransfer</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">,</span> <span class="nx">TokenDeed</span> <span class="nx">_deed</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_registrationDate</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">pure</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: the sha3 hash of the label to transfer.</li>
+  <li>
+<code class="highlighter-rouge">_deed</code>: the TokenDeed object for the name being transferred in.</li>
+  <li>
+<code class="highlighter-rouge">_registrationDate</code>: the date at which the name was originally registered.</li>
+</ul>
+
+<h4 id="state">state</h4>
+
+<p>Returns the <a href="#states">state</a> of a hash auction.</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">state</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">Mode</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: hash of the name to query about</li>
+</ul>
+
+<p><strong>Returns</strong></p>
+<ul>
+  <li><code class="highlighter-rouge">Mode</code></li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">state</span> <span class="o">=</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">state</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">This name is available for auction!</span><span class="dl">'</span><span class="p">)</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">This name is already in auction!</span><span class="dl">'</span><span class="p">)</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">This name is already owned!</span><span class="dl">'</span><span class="p">)</span>
+<span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="nx">state</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">This name is during reveal phase!</span><span class="dl">'</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h4 id="entries">entries</h4>
+
+<p>Returns information related to a certain name</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">entries</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">Mode</span><span class="p">,</span> <span class="nx">address</span><span class="p">,</span> <span class="nx">uint</span><span class="p">,</span> <span class="nx">uint</span><span class="p">,</span> <span class="nx">uint</span><span class="p">)</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: hash of the name to query about</li>
+</ul>
+
+<p><strong>Returns</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">Mode</code> - state: the state of the auction for the label.</li>
+  <li>
+<code class="highlighter-rouge">address</code> - deed: the address of the current winning Deed.</li>
+  <li>
+<code class="highlighter-rouge">uint</code> - registration date: the auction’s finish date. It is a number that represents the seconds remaining to the auction’s finish date.</li>
+  <li>
+<code class="highlighter-rouge">uint</code> - value: the second highest bid. It is a number that represents the tokens bade. It may be 0 if there is only one bid.</li>
+  <li>
+<code class="highlighter-rouge">uint</code> - highest bid: the highest bid (and winning value) made for the auction. It is a number that represents the tokens bade.</li>
+</ul>
+
+<p><strong>Example</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">entry</span> <span class="o">=</span> <span class="nx">registrar</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">sha3</span><span class="p">(</span><span class="dl">'</span><span class="s1">nakamoto</span><span class="dl">'</span><span class="p">))</span>
+
+<span class="kd">var</span> <span class="nx">iAmWinning</span> <span class="o">=</span> <span class="nx">entry</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">===</span> <span class="nx">myDeed</span>
+<span class="kd">var</span> <span class="nx">endDate</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">entry</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="mi">1000</span><span class="p">)</span>
+<span class="k">if</span><span class="p">(</span><span class="nx">iAmWinning</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">iWillPay</span> <span class="o">=</span> <span class="nx">entry</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+    <span class="kd">var</span> <span class="nx">iBade</span> <span class="o">=</span> <span class="nx">entry</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="shabid">shaBid</h4>
+
+<p>Hash the values required for a secret bid</p>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">shaBid</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">_hash</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">_owner</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_value</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">_salt</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">pure</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">bytes32</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_hash</code>: the node corresponding to the desired name-hash</li>
+  <li>
+<code class="highlighter-rouge">_value</code>: the bid amount in tokens</li>
+  <li>
+<code class="highlighter-rouge">_salt</code>: a random value to ensure secrecy of the bid</li>
+</ul>
+
+<p><strong>Returns</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">bytes32</code> The hash of the bid values</li>
+</ul>
+
+<h4 id="tokenfallback">tokenFallback</h4>
+
+<p>Fallback function to be called when the contract receives a transference through an ERC677 contract.</p>
+
+<p>Functions supported:</p>
+<ul>
+  <li>
+<code class="highlighter-rouge">newBidWithToken</code> (signature <code class="highlighter-rouge">0x1413151f</code>) with a 32 byte parameter (sealedBid to submit)</li>
+  <li>
+<code class="highlighter-rouge">payRentWithToken</code> (signature <code class="highlighter-rouge">0xe1ac9915</code>) with a 32 byte parameter (hash of the name to pay the rent for)</li>
+</ul>
+
+<p><strong>Signature</strong></p>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">tokenFallback</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_from</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">_value</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">_data</span><span class="p">)</span> <span class="kr">public</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+<ul>
+  <li>
+<code class="highlighter-rouge">_from</code>: address which sent the tokens</li>
+  <li>
+<code class="highlighter-rouge">_value</code>: amount of tokens sent</li>
+  <li>
+<code class="highlighter-rouge">_data</code>: byte array with information of which function to call and the parameters used for the invocation</li>
+</ul>
+
+<h2 id="events">Events</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">AuctionStarted</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">hash</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">registrationDate</span><span class="p">);</span>
+<span class="nx">event</span> <span class="nx">NewBid</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">hash</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">indexed</span> <span class="nx">bidder</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">deposit</span><span class="p">);</span>
+<span class="nx">event</span> <span class="nx">BidRevealed</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">hash</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">indexed</span> <span class="nx">owner</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">uint8</span> <span class="nx">status</span><span class="p">);</span>
+<span class="nx">event</span> <span class="nx">HashRegistered</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">hash</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">indexed</span> <span class="nx">owner</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">registrationDate</span><span class="p">);</span>
+<span class="nx">event</span> <span class="nx">HashReleased</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">hash</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">value</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="states">States</h2>
+
+<p><img src="../../../../assets/img/rns/auction-states.png" class="img-fluid" alt="auction-states"></p>
+
+<p>The states are defined:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">Mode</span> <span class="p">{</span>
+    <span class="nx">Open</span><span class="p">,</span>
+    <span class="nx">Auction</span><span class="p">,</span>
+    <span class="nx">Owned</span><span class="p">,</span>
+    <span class="nx">Forbidden</span><span class="p">,</span>
+    <span class="nx">Reveal</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">State</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">0</th>
+      <td>Open</td>
+      <td>Domain is available and the auction hasn’t started</td>
+    </tr>
+    <tr>
+      <th scope="row">1</th>
+      <td>Auction</td>
+      <td>Domain is available and the auction has been started</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Owned</td>
+      <td>Domain is taken and currently owned by someone</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Reveal</td>
+      <td>Domain is currently in the ‘reveal’ stage of the auction</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="refund-schedule">Refund Schedule</h2>
+
+<ul>
+  <li>If the bid is revealed <strong>during the reveal period</strong>
+    <ul>
+      <li>Auction winner: Funds are locked in Deed. 80% are returned on Deed release</li>
+      <li>Auction loser: 100% refund over the losing bid</li>
+    </ul>
+  </li>
+  <li>If the bid is revealed <strong>within the 2 weeks after auction finishes</strong>
+    <ul>
+      <li>Bid that <strong>would have won</strong>: 20% taken as fee</li>
+      <li>Bid that <strong>would have affected 2nd place</strong>: Difference with the actual 2nd place taken as fee</li>
+      <li>
+<strong>Otherwise</strong>: 0.5% taken as fee</li>
+    </ul>
+  </li>
+  <li>Otherwise, if the bid is unsealed <strong>past the 2 weeks after finished</strong>
+    <ul>
+      <li>No refund</li>
+    </ul>
+  </li>
+</ul>
+
+
+                  
+
+               </div>
+            </div>
+
+            <section class="mt-5">
+    <div class="container newsletter">
+     <div class="row justify-content-center">
+       <div class="body-title col-md-8 text-center">
+        <h2>
+<span class="bold rsk_green">Subscribe</span> to our Newsletter</h2>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://rifos.us15.list-manage.com/subscribe/post?u=f52247d792ffe22c6f7be1379&amp;id=a7030f092b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <div id="mc_embed_signup_scroll">
+              <div class="input-group mb-3">
+                <input type="email" value="" name="EMAIL" class="required email form-control email-suscribe" id="mce-EMAIL" placeholder="E-mail adress">
+                <input type="hidden" name="MMERGE5" id="MMERGE5" value="Developer,DevPortal,EN">
+                <div class="input-group-append">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-suscribe">
+                </div> 
+              </div> 
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f52247d792ffe22c6f7be1379_a7030f092b" tabindex="-1" value=""></div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+</section>
+         </div>
+         <div class="render-features" data-features="">
+         </div>
+      </section>
+
+      <!-- footer -->
+<footer id="footer" class="section-bg">
+   <div class="footer-top">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <img src="../../../../assets/img/powered_by_iov.svg" class="img-fluid powered_by">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4">
+               <div class="footer-info">
+                  <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
+                  <br>
+                  <a href="https://developers.rsk.co/" rel="external noopener noreferrer" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
+               </div>
+            </div>
+            <div class="col-lg-8">
+               <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li class="negbottom">Whitepapers</li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="external noopener noreferrer" target="_blank">Original</a></li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="external noopener noreferrer" target="_blank">Updated</a></li>
+                           <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="external noopener noreferrer" target="_blank">RIF</a></li>
+                           <li><a href="https://rsk.co/development-roadmap.html" rel="external noopener noreferrer" target="_blank">Roadmap</a></li>
+                           <li><a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">Explorer</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://mining.rsk.co/" rel="external noopener noreferrer" target="_blank">Merged Mining</a></li>
+                           <li><a href="https://www.rsk.co/bounty-program/index" rel="external noopener noreferrer" target="_blank">Bounty Program</a></li>
+                           <li><a href="https://grants.rsk.co" rel="external noopener noreferrer" target="_blank">Grants Program</a></li>
+                           <li><a href="https://fund.rsk.co" rel="external noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
+                           <li><a href="https://studio.rsk.co" rel="external noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://rsk.co/defi" rel="external noopener noreferrer" target="_blank">DeFi</a></li>
+                           <li><a href="https://rsk.co/Use-cases.html" rel="external noopener noreferrer" target="_blank">Use cases</a></li>
+                           <li><a href="https://rsk.co/faqs.html" rel="external noopener noreferrer" target="_blank">Faqs</a></li>
+                           <li><a href="https://blog.rsk.co/" rel="external noopener noreferrer" target="_blank">Blog</a></li>
+                           <li><a href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" rel="external noopener noreferrer" target="_blank">Brand Guidelines</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links lastcol">
+                        <ul>
+                           <li><a class="bold" href="https://rsk.co/terms-conditions.html" rel="external noopener noreferrer" target="_blank">Terms &amp; Conditions</a></li>
+                           <li><a class="bold" href="https://rsk.co/privacy-policy.html" rel="external noopener noreferrer" target="_blank">Privacy Policy</a></li>
+                           <li><a class="bold" href="https://www.iovlabs.org" rel="external noopener noreferrer" target="_blank">About IOVlabs</a></li>
+                           <li><a class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html" rel="external noopener noreferrer" target="_blank">Contact IOVlabs</a></li>
+                           <a href="https://developers.doc.rsk.co/docs" rel="external noopener noreferrer" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="social-links">
+                  <a href="https://twitter.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="facebook"><i class="fab fa-youtube"></i></a>
+                  <a href="https://www.facebook.com/RSKsmart/" rel="external noopener noreferrer" target="_blank" class="linkedin"><i class="fab fa-facebook"></i></a>
+                  <a href="https://gitter.im/rsksmart" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-gitter"></i></a>
+                  <a href="https://www.reddit.com/r/rootstock/" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-reddit"></i></a>
+                  <a href="https://t.me/rskofficialcommunity" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://medium.com/@RSKNews" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-medium"></i></a>
+                  <a href="https://t.me/rsksmartcontract" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://www.instagram.com/rsksmart/" rel="external noopener noreferrer" target="_blank" class=""><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="col-md-12">
+            <div class="row">
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="copyright">Copyright © 2015 - 2020 RSK Labs. All rights reserved.</p>
+               </div>
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="credits"> RSK Public Key (2ED3 E888 0384 D3D9 70B6  A612 BEBC A6A9 63F6 1479)</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- #footer -->
+
+      <a href="#top" class="scrollup"><p>Go to top</p></a>
+      <!-- Bootstrap core JavaScript -->
+      <script src="../../../../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../../../../assets/js/main.js"></script>
+      <script src="../../../../assets/vendor/carousel/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          nav:true,
+          center:true,
+          URLhashListener:true,
+          autoplayHoverPause:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+
+      </script>
+      <script>
+      ((window.gitter = {}).chat = {}).options = {
+         room: 'rsksmart/getting-started'
+      };
+      </script>
+      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+   </body>
+</html>

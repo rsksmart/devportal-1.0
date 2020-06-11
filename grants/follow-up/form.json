@@ -1,0 +1,198 @@
+{
+  "schema": {
+    "name": {
+      "title": "Name of the project",
+      "description": "",
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "title": "Email",
+      "description": "This email address should match the one used in your initial application",
+      "type": "string",
+      "format": "email",
+      "required": true
+    },
+    "urlPortfolio": {
+      "title": "URL for you personal or organisation public code repositories or other portfolio",
+      "description": "For example, Github",
+      "type": "string",
+      "format": "url",
+      "required": true
+    },
+    "urlProfile": {
+      "title": "URL for you personal or organisation public code repositories or other portfolio",
+      "description": "For example, LinkedIn",
+      "type": "string",
+      "format": "url",
+      "required": true
+    },
+    "urlsAdditional": {
+      "title": "Additional URLs",
+      "description": "Any additional links that you wish to provide, either personal or organisation.",
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 5,
+      "items": {
+        "title": "Additional URL",
+        "description": "",
+        "type": "string",
+        "format": "url",
+        "required": true
+      }
+    },
+    "experienceSpecific": {
+      "title": "Describe your core team’s past experience with RSK, Bitcoin, Ethereum, or other blockchains",
+      "description": "If there is no experience in these areas, enter \"none\".",
+      "type": "string",
+      "required": true
+    },
+    "experienceGeneral": {
+      "title": "Describe your core team’s past experience with distributed systems, mechanism design, or cryptography",
+      "description": "If there is no experience in these areas, enter \"none\".",
+      "type": "string",
+      "required": true
+    },
+    "amountRequested": {
+      "title": "Requested grant amount",
+      "description": "A whole dollar amount denominated in USD",
+      "type": "number",
+      "format": "integer",
+      "minimum": 0,
+      "required": true
+    },
+    "amountTotal": {
+      "title": "Estimated total overall budget",
+      "description": "A whole number denominated in USD, which may be more than or equal to the requested grant amount",
+      "type": "number",
+      "format": "integer",
+      "minimum": 0,
+      "required": true
+    },
+    "timeline": {
+      "title": "Estimated timeline for development milestones and completion",
+      "description": "For each milestone, specify planned deliverables, and estimated duration",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "title": "Milestone",
+        "properties": {
+          "deliverable": {
+            "title": "Deliverables",
+            "description": "Planned deliverables for this milestone",
+            "type": "string",
+            "required": true
+          },
+          "duration": {
+            "title": "Number of weeks",
+            "description": "Estimated duration taken to complete deliverables - if more than 12 weeks, consider splitting into smaller milestones",
+            "type": "number",
+            "format": "integer",
+            "minimum": 1,
+            "maximum": 12,
+            "required": true
+          }
+        }
+      }
+    },
+    "reportMethod": {
+      "title": "Proposed method for reporting progress and achievement on deliverables",
+      "description": "How you intend to measure and communicate the deliverables stated in your milestones",
+      "type": "string",
+      "required": true
+    }
+  },
+  "form": [
+    {
+      "key": "name"
+    },
+    {
+      "key": "email",
+      "type": "email"
+    },
+    {
+      "key": "urlPortfolio",
+      "type": "url"
+    },
+    {
+      "key": "urlProfile",
+      "type": "url"
+    },
+    {
+      "title": "Additional URLs",
+      "description": "Any additional links that you wish to provide, either personal or organisation - use <strong>+</strong> and <strong>-</strong> to add and remove links",
+      "type": "help",
+      "helpvalue": ""
+    },
+    {
+      "type": "array",
+      "items": [
+        {
+          "type": "section",
+          "items": [
+            {
+              "key": "urlsAdditional[]",
+              "format": "url",
+              "notitle": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "experienceSpecific",
+      "type": "textarea"
+    },
+    {
+      "key": "experienceGeneral",
+      "type": "textarea"
+    },
+    {
+      "key": "amountRequested",
+      "format": "integer",
+      "append": "USD"
+    },
+    {
+      "key": "amountTotal",
+      "format": "integer",
+      "append": "USD"
+    },
+    {
+      "title": "Estimated timeline for development milestones and completion",
+      "description": "",
+      "type": "help",
+      "helpvalue": ""
+    },
+    {
+      "type": "tabarray",
+      "items": [
+        {
+          "type": "section",
+          "legend": "Milestone #{{idx}}",
+          "items": [
+            {
+              "key": "timeline[].deliverable",
+              "format": "textarea"
+            },
+            {
+              "key": "timeline[].duration",
+              "format": "integer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "reportMethod",
+      "type": "textarea"
+    },
+    {
+      "type": "help",
+      "helpvalue": "<strong>Click on <em>Submit</em></strong> to continue your grants application. By doing so, you agree to the terms and conditions available at <a href=\"https://grants.rsk.co/\" target=\"_blank\">grants.rsk.co</a>"
+    },
+    {
+      "type": "submit",
+      "title": "Submit"
+    }
+  ]
+}

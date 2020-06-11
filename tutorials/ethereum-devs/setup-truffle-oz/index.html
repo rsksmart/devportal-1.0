@@ -1,0 +1,2357 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-56J7JTD');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
+      <meta name="author" content="RSK Developers Portal">
+      <link rel="canonical" href="http://localhost:4000/tutorials/ethereum-devs/setup-truffle-oz/">
+   	<title>How to create a new project using Truffle and OpenZeppelin connected to RSK network - RSK Developers Portal</title>
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../../assets/img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="../../../assets/img/favicons/site.webmanifest/">
+      <link rel="mask-icon" href="../../../assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+      <link rel="shortcut icon" href="../../../assets/img/favicons/favicon.ico/">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assetsimg/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,900&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800&amp;display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Libraries CSS Files -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../../assets/vendor/malihu-custom-scrollbar-plugin-master/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+      <!-- Main Stylesheet File -->
+      <link href="../../../assets/css/styles.css" rel="stylesheet">
+      <link href="../../../assets/css/styles_dark.css" rel="stylesheet">
+      <link href="../../../assets/css/code.css" rel="stylesheet">
+      <link href="../../../assets/css/owl.carousel.min.css" rel="stylesheet">
+      <link href="../../../assets/css/owl.theme.default.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56J7JTD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://rsk.co" rel="external noopener noreferrer" target="_blank"><img id="logo" src="../../../assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../../the-stack/" target="_self">The Stack
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../develop/" target="_self">Develop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://fund.rsk.co" target="_blank" rel="external noopener noreferrer">Ecosystem Fund</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://rsk.co/defi" target="_blank" rel="external noopener noreferrer">Defi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://developers.rsk.co/webinars" target="_blank" rel="external noopener noreferrer">Webinars</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- Page Content -->
+      <!-- home -->
+      <section id="home">
+         <div class="container">
+
+            <div class="row header-inner">
+    <div class="col-lg-3">
+       <!-- mobile dropdown left column -->
+       <div class="mobile-left-menu">
+          <button class="btn btn-outline-secondary dropdown-toggle rsk_blue" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-menu drop-mobile-left-menu">
+             <div class="mobile_accordion">
+                <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../rif/">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../rif/">RSK Infrastructure Framework</a></li>
+          <li><a href="../../../rif/token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rif/rns/">Name Service</a>
+            <ul>
+              <li><a href="../../../rif/rns/">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/specs/">Specs</a>
+                <ul>
+                  <li><a href="../../../rif/rns/specs/">Specs</a></li>
+                  <li><a href="../../../rif/rns/specs/registry/">Registry specs</a></li>
+                  <li><a href="../../../rif/rns/specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../../rif/rns/operations/">Operations</a></li>
+                  <li><a href="../../../rif/rns/operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../../rif/rns/operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../../rif/rns/operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../../rif/rns/operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../../rif/rns/operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../../rif/rns/operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../../rif/rns/operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../../rif/rns/operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../../rif/rns/operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../../rif/rns/operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../../rif/rns/operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../../rif/rns/operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rif/rns/architecture/">Architecture</a></li>
+                  <li><a href="../../../rif/rns/architecture/registry/">Registry</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/architecture/Resolver/">Resolver</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/rns/architecture/Resolver/">Resolver</a></li>
+                      <li><a href="../../../rif/rns/architecture/MultiCryptoResolver/">Multi-Crypto Resolver</a></li>
+                      <li><a href="../../../rif/rns/architecture/RSKResolver/">RSK Resolver</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/architecture/ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/rns/architecture/ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../../../rif/rns/architecture/ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../../rif/rns/tools/Web3/">Web3</a></li>
+                  <li><a href="../../../rif/rns/tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../../rif/rns/tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../../rif/rns/tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/libs/">Libs</a>
+                <ul>
+                  <li><a href="../../../rif/rns/libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../../rif/rns/libs/javascript/">Javascript</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../../rif/rns/libs/Android/">Android</a></li>
+                  <li><a href="../../../rif/rns/libs/iOS/">iOS</a></li>
+                  <li><a href="../../../rif/rns/libs/Python/">Python</a></li>
+                  <li><a href="../../../rif/rns/libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rif/rns/integrate/">Integrate</a></li>
+                  <li><a href="../../../rif/rns/integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../../rif/rns/integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../../rif/rns/integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../rif/rns/mainnet/">Mainnet</a></li>
+              <li><a href="../../../rif/rns/testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rif/payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rif/lumino/">Lumino</a></li>
+                  <li><a href="../../../rif/lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../rif/lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../../rif/lumino/node/install/">Install</a></li>
+                          <li><a href="../../../rif/lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../../rif/lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../../rif/lumino/node/use/">How to use</a></li>
+                      <li><a href="../../../rif/lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../../rif/lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../../rif/lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../../rif/lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../rif/lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../../rif/lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../../rif/lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../../rif/lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rif/storage/">Storage</a>
+            <ul>
+              <li><a href="../../../rif/storage/">About</a></li>
+              <li><a href="../../../rif/storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../rif/storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../../rif/storage/providers/swarm/">About</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../rif/storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../../rif/storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../../rif/storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../../rif/storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../../rif/storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../../rif/storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="./">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../../frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../../frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../../tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../../tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../../tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../../truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../../truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../../truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../../truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../interface-registry/">Interface Registry</a></li>
+              <li><a href="../../rsk-api/">RSK API CLI</a></li>
+              <li><a href="../../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../../using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../wallet/">Wallet</a></li>
+              <li><a href="../../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../wallet/use/">Use</a></li>
+                  <li><a href="../../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../libraries/">Libs</a></li>
+              <li><a href="../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../../rif/rns/libs/">RNS</a></li>
+              <li><a href="../../../rif/lumino/libraries/">Lumino</a></li>
+              <li><a href="../../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../tools/truffle/">Truffle</a></li>
+                  <li><a href="../../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <li><a href="../../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../contribute/">Contribute</a></li>
+          <li><a href="../../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="col-lg-5">
+       <!-- <nav class="breadcrumbs bootstrap hidden-sm-down">
+	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/">
+					<span property="name"></span>
+					<meta property="position" content="1" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/tutorials/">
+					<span property="name">Tutorials</span>
+					<meta property="position" content="2" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/tutorials/ethereum-devs/">
+					<span property="name">Tutorials for Ethereum Developers</span>
+					<meta property="position" content="3" />
+				</a>
+			</li>
+		
+			
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<span property="name">How to create a new project using Truffle and OpenZeppelin connected to RSK network</span>
+					<meta property="position" content="4" />
+				</li>
+				
+
+		
+		
+	</ol>
+</nav>
+ -->
+       <nav id="siteBreadcrumb" class="show active-parent">
+          <ol class="breadcrumb">
+         </ol>
+       </nav>
+    </div>
+    <div class="col-lg-4 input-col">
+       <div class="page-metadata">
+    <!--time role="presentation" datetime="2020-05-20 02:00:10 +0000T00:00:00.000Z">2020-05-20</time> | -->
+     25' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/ethereum-devs/setup-truffle-oz.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <div class="dropdown" style="display: inline-block">
+       <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
+       <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Flocalhost:4000/tutorials/ethereum-devs/setup-truffle-oz/&amp;text=How%20to%20create%20a%20new%20project%20using%20Truffle%20and%20OpenZeppelin%20connected%20to%20RSK%20network&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Flocalhost:4000/tutorials/ethereum-devs/setup-truffle-oz/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Flocalhost:4000/tutorials/ethereum-devs/setup-truffle-oz/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flocalhost:4000/tutorials/ethereum-devs/setup-truffle-oz/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=How%20to%20create%20a%20new%20project%20using%20Truffle%20and%20OpenZeppelin%20connected%20to%20RSK%20network&amp;body=How%20to%20create%20a%20new%20project%20using%20Truffle%20and%20OpenZeppelin%20connected%20to%20RSK%20network%0A%0Ahttps%3A%2F%2Flocalhost:4000/tutorials/ethereum-devs/setup-truffle-oz/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('http://localhost:4000/tutorials/ethereum-devs/setup-truffle-oz/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+       </ul>
+    </div> |
+    <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
+ </div>
+    </div>
+ </div>
+
+            <div class="row">
+               <!-- left col desktop -->
+               <div class="col-lg-3 main-left-col">
+                  <div class="desktop_accordion">
+                     <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../rif/">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../rif/">RSK Infrastructure Framework</a></li>
+          <li><a href="../../../rif/token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rif/rns/">Name Service</a>
+            <ul>
+              <li><a href="../../../rif/rns/">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/specs/">Specs</a>
+                <ul>
+                  <li><a href="../../../rif/rns/specs/">Specs</a></li>
+                  <li><a href="../../../rif/rns/specs/registry/">Registry specs</a></li>
+                  <li><a href="../../../rif/rns/specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../../rif/rns/operations/">Operations</a></li>
+                  <li><a href="../../../rif/rns/operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../../rif/rns/operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../../rif/rns/operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../../rif/rns/operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../../rif/rns/operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../../rif/rns/operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../../rif/rns/operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../../rif/rns/operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../../rif/rns/operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../../rif/rns/operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../../rif/rns/operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../../rif/rns/operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rif/rns/architecture/">Architecture</a></li>
+                  <li><a href="../../../rif/rns/architecture/registry/">Registry</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../../../rif/rns/architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/architecture/Resolver/">Resolver</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/rns/architecture/Resolver/">Resolver</a></li>
+                      <li><a href="../../../rif/rns/architecture/MultiCryptoResolver/">Multi-Crypto Resolver</a></li>
+                      <li><a href="../../../rif/rns/architecture/RSKResolver/">RSK Resolver</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/architecture/ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/rns/architecture/ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../../../rif/rns/architecture/ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../../../rif/rns/architecture/NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../../rif/rns/tools/Web3/">Web3</a></li>
+                  <li><a href="../../../rif/rns/tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../../rif/rns/tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../../rif/rns/tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/libs/">Libs</a>
+                <ul>
+                  <li><a href="../../../rif/rns/libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/rns/libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../../rif/rns/libs/javascript/">Javascript</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../../rif/rns/libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../../rif/rns/libs/Android/">Android</a></li>
+                  <li><a href="../../../rif/rns/libs/iOS/">iOS</a></li>
+                  <li><a href="../../../rif/rns/libs/Python/">Python</a></li>
+                  <li><a href="../../../rif/rns/libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/rns/integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rif/rns/integrate/">Integrate</a></li>
+                  <li><a href="../../../rif/rns/integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../../rif/rns/integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../../rif/rns/integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../rif/rns/mainnet/">Mainnet</a></li>
+              <li><a href="../../../rif/rns/testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rif/payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../rif/lumino/">Lumino</a></li>
+                  <li><a href="../../../rif/lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../rif/lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../../rif/lumino/node/install/">Install</a></li>
+                          <li><a href="../../../rif/lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../../rif/lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../../rif/lumino/node/use/">How to use</a></li>
+                      <li><a href="../../../rif/lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../../rif/lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../../rif/lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../../rif/lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../rif/lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../rif/lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../../rif/lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../../rif/lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../../rif/lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../rif/storage/">Storage</a>
+            <ul>
+              <li><a href="../../../rif/storage/">About</a></li>
+              <li><a href="../../../rif/storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../rif/storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../rif/storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../../rif/storage/providers/swarm/">About</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../../rif/storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../rif/storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../../rif/storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../../rif/storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../../rif/storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../../rif/storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../rif/storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../../rif/storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="./">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../../frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../../frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../../tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../../tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../../tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../../truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../../truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../../truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../../truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../interface-registry/">Interface Registry</a></li>
+              <li><a href="../../rsk-api/">RSK API CLI</a></li>
+              <li><a href="../../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../../using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../wallet/">Wallet</a></li>
+              <li><a href="../../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../wallet/use/">Use</a></li>
+                  <li><a href="../../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../libraries/">Libs</a></li>
+              <li><a href="../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../../rif/rns/libs/">RNS</a></li>
+              <li><a href="../../../rif/lumino/libraries/">Lumino</a></li>
+              <li><a href="../../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../tools/truffle/">Truffle</a></li>
+                  <li><a href="../../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <li><a href="../../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../contribute/">Contribute</a></li>
+          <li><a href="../../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+                  </div>
+               </div>
+               <!-- central col -->
+               <div class="col-lg-9 main-central-col">
+                  <div class="alert alert-info" role="alert">
+    <a href="https://developers.rsk.co/webinars?utm_source=devportal&amp;utm_medium=infobar&amp;utm_campaign=webinars" style="color: black!important;text-decoration: underline;" rel="external noopener noreferrer" target="_blank">
+        Join our Webinars! Now you can watch and learn more about Blockchain!
+    </a>
+</div>
+
+                  <h1 class="page-title" id="top">How to create a new project using Truffle and OpenZeppelin connected to RSK network</h1>
+
+                  <p>In this tutorial, I will show you step-by-step how to create a new blockchain project, using Truffle framework and Open Zeppelin smart contracts library, connected to a RSK local node or RSK testnet.</p>
+
+<p>It does not matter whether you are an experienced developer, or just learning to code, you do not need to be a blockchain expert to follow along.</p>
+
+<h1 id="overview">Overview</h1>
+
+<p>Here is a summary of the steps to be taken to build our project:</p>
+
+<ol>
+  <li>Installation requirements;</li>
+  <li>Run a RSK local node;</li>
+  <li>Initialize a project using Truffle;</li>
+  <li>Install Open Zeppelin smart contracts in our project;</li>
+  <li>Install HD wallet provider;</li>
+  <li>Create a wallet mnemonic;</li>
+  <li>Configure Truffle to connect to RSK networks;</li>
+  <li>Use Truffle console;</li>
+  <li>Get some testnet R-BTCs from the RSK faucet;</li>
+</ol>
+
+<h2 id="translations">Translations</h2>
+
+<p>This article is also available in
+<a href="https://solange.dev/2020/2020-05-10-Rsk-SetupTruffleOZ/" title="Como criar um projeto utilizando Truffle e OpenZeppelin conectado à rede RSK" rel="external noopener noreferrer" target="_blank">Português</a>.</p>
+
+<h1 id="requirements">Requirements</h1>
+
+<ul>
+  <li>POSIX compliant shell</li>
+  <li>Curl</li>
+  <li>Java</li>
+  <li>Node.js and NPM (Node Package Manager)</li>
+  <li>Code editor: Visual Studio Code (VSCode) or any other editor of your choice</li>
+  <li>Truffle</li>
+</ul>
+
+<h2 id="posix-compliant-shell">POSIX compliant shell</h2>
+
+<p>The <strong>Portable Operating System Interface (POSIX)</strong> is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems.
+Source: <a href="https://en.wikipedia.org/wiki/POSIX" rel="external noopener noreferrer" target="_blank">Wikepidia</a></p>
+
+<ul>
+  <li>Mac OSX and Linux distributions: Use the standard terminal</li>
+  <li>Windows: If you use the standard cmd terminal, or PowerShell, the commands here may not work.
+Consider installing <a href="https://gitforwindows.org/" rel="external noopener noreferrer" target="_blank">Git for Windows</a>, which comes with Git Bash bundled.
+Here is a <a href="https://www.atlassian.com/git/tutorials/git-bash" rel="external noopener noreferrer" target="_blank">tutorial on installing and using Git Bash</a>.</li>
+</ul>
+
+<h2 id="curl">cURL</h2>
+
+<p>This is a system command that is likely already installed on your system,
+which allows you to make network requests, such as HTTP requests,
+from your command line.</p>
+
+<p>If <code class="highlighter-rouge">curl --version</code> displays an error,
+<a href="https://curl.haxx.se/download.html" rel="external noopener noreferrer" target="_blank">download curl</a>.</p>
+
+<h2 id="java">Java</h2>
+
+<p>You will need Java 8 in order to run RSKj.</p>
+
+<p>Check if you already have Java installed:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-version</span>
+</code></pre></div></div>
+
+<pre><code class="language-windows-command-prompt">C:\&gt;java version
+java version "1.8.0_241"
+Java(TM) SE Runtime Environment (build 1.8.0_241-b07)
+Java HotSpot(TM) Client VM (build 25.241-b07, mixed mode)
+
+C:\&gt;
+</code></pre>
+
+<p>If <code class="highlighter-rouge">java -version</code> displays an error,
+or displays a version other than 1.8,
+you will need to install it.</p>
+
+<h3 id="install-java-on-windows">Install Java on Windows</h3>
+
+<p>Go to the official <a href="https://www.java.com/en/download/" rel="external noopener noreferrer" target="_blank">Java download</a> page,
+download, and run the installer from there.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-02.png" alt="Java Download"></p>
+
+<h3 id="install-java-on-mac-osx-and-linux">Install Java on Mac OSX and Linux</h3>
+
+<p>There are a variety of ways to do this, and SDKman is one which allows you to install and switch between multiple versions as needed:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-s</span> <span class="s2">"https://get.sdkman.io/"</span> | bash
+<span class="nb">source</span> <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.sdkman/bin/sdkman-init.sh"</span>
+<span class="c"># to get a filtered list of available java versions</span>
+sdk list java  | <span class="nb">grep</span> <span class="s2">"8</span><span class="se">\.</span><span class="s2">"</span> <span class="c"># copy a selection for use below</span>
+
+<span class="c"># install the version of java copied above</span>
+<span class="c"># (replace accordingly)</span>
+sdk <span class="nb">install </span>java 8.0.242.j9-adpt
+
+<span class="c"># show installed versions, and switch to the selected one</span>
+<span class="c"># (replace accordingly)</span>
+sdk list java | <span class="nb">grep </span>installed
+sdk use java 8.0.242.j9-adpt
+java <span class="nt">-version</span>
+</code></pre></div></div>
+
+<h2 id="nodejs-and-npm">Node.js and NPM</h2>
+
+<p>Another dependency is NPM, which comes bundled with Node.js.</p>
+
+<p>To check if you have node already installed, enter this command into your terminal:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node <span class="nt">--version</span>
+npm <span class="nt">--version</span>
+</code></pre></div></div>
+
+<pre><code class="language-windows-command-prompt">C:\&gt;node --version
+v10.16.3
+
+C:\&gt;npm --version
+v6.9.0
+
+C:\&gt;
+</code></pre>
+
+<p>If there’s no output like that in the image above, go to <a href="https://nodejs.org/en/" rel="external noopener noreferrer" target="_blank">Node.js</a> install.</p>
+
+<p>Note that NPM is usually installed together with Node.js, so after installing Node.js, there’s no need to install it separately.</p>
+
+<p>If you want to have more than one version installed,
+the most fuss-free way to install and manage multiple versions of <code class="highlighter-rouge">node</code> on your computer is <a href="https://github.com/nvm-sh/nvm" rel="external noopener noreferrer" target="_blank">nvm</a>.</p>
+
+<h2 id="code-editor">Code editor</h2>
+
+<p>We need some software that is able to edit text files.
+Preferably one that has support for syntax highlighting for both Solidity and Javascript.</p>
+
+<p><a href="https://code.visualstudio.com/" rel="external noopener noreferrer" target="_blank">VS Code</a> is a good choice if you don’t already have one.</p>
+
+<h3 id="visual-studio-code-vs-code">Visual Studio Code (VS Code)</h3>
+
+<p>In this tutorial, we will use VS Code to create our project.</p>
+
+<p>To use VS Code <a href="https://code.visualstudio.com/download" rel="external noopener noreferrer" target="_blank">download it here</a>.</p>
+
+<p>Verify if your VS Code installation was successful by typing the following command into the terminal:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code <span class="nt">-v</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-04.png" alt="vscode version"></p>
+
+<h2 id="truffle">Truffle</h2>
+
+<p>Truffle is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment &amp; migrations, automated contract testing and simple network management.</p>
+
+<p>It also makes developing on RSK easier, with the ability to configure custom networks for RSK.</p>
+
+<p>To install Truffle, input the command below into the terminal and press <code class="highlighter-rouge">enter</code> at your project location:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> truffle
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-05.png" alt="truffle install"></p>
+
+<p>When the installation is finished, close the terminal, open it again and check the Truffle version:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle version
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-06.png" alt="truffle version"></p>
+
+<p>For more info:</p>
+
+<p><a href="https://www.trufflesuite.com/truffle" rel="external noopener noreferrer" target="_blank">trufflesuite.com/truffle</a></p>
+
+<h1 id="rsk-regtest-local-node">RSK regtest (Local node)</h1>
+
+<p>When we develop a project using Truffle Framework, we need a blockchain node running locally. This is better for development, and running tests. We’ll connect to the RSK network via this local node.</p>
+
+<p>There are several ways to set up a RSK local node. Here, we will download a JAR file and run it using the Java SDK that has been installed.</p>
+
+<h3 id="download">Download</h3>
+
+<p>Go to the <a href="https://github.com/rsksmart/rskj/releases" rel="external noopener noreferrer" target="_blank">releases page</a> and click on the most recent to download it.</p>
+
+<p>You need to click on the JAR file, in the end of the post about the lastest release.
+It’s name should be <code class="highlighter-rouge">rskj-core-*.jar</code>:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-07.png" alt="Download last RSK release"></p>
+
+<h3 id="verify-authenticity">Verify authenticity</h3>
+
+<p>When installing and running the RSKj node,
+it is always a good idea to verify that your copy is legitimate.</p>
+
+<p>In the folder where you download the JAR file, go to a POSIX terminal and run this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sha256sum </span>rskj-core-2.0.1-PAPYRUS-all.jar
+</code></pre></div></div>
+
+<p>For this version, it looked like this:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 <span class="k">*</span>rskj-core-2.0.1-PAPYRUS-all.jar
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-08.png" alt="Verify authenticity"></p>
+
+<blockquote>
+  <p>Note that if you are using Windows, you will need a POSIX compliant shell for this.
+See instructions <a href="#posix-compliant-shell">about using Git Bash</a> above.</p>
+</blockquote>
+
+<p>For more information about verifying that your copy is legitimate,
+including signature verification, check out the
+<a href="../../../rsk/node/security-chain/" title="Verify authenticity of RskJ source code and its binary dependencies">full instructions</a>
+on how to do this.</p>
+
+<h3 id="run">Run</h3>
+
+<p>To run the node:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+</code></pre></div></div>
+
+<p>(Replace <path-to-the-rskj-jar> with your path to the JAR file).</path-to-the-rskj-jar></p>
+
+<p>I am using a Windows OS and I saved the file at <code class="highlighter-rouge">C:\RSK\node</code>,
+so for me the full path is <code class="highlighter-rouge">C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar</code>.</p>
+
+<p>The commands required to run the RSK node are:</p>
+
+<h4 id="on-windows-terminal">On Windows terminal</h4>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> C:<span class="se">\R</span>SK<span class="se">\n</span>ode<span class="se">\r</span>skj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+</code></pre></div></div>
+
+<h4 id="using-git-bash">Using Git Bash</h4>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> C:/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+</code></pre></div></div>
+
+<h4 id="on-linux-and-mac">On Linux and Mac</h4>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> ~/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+</code></pre></div></div>
+
+<p>If you see no output - that is a good thing:
+Its output is directed to a log file.</p>
+
+<blockquote>
+  <p>Note the flag provided above: <code class="highlighter-rouge">-Drpc.providers.web.cors=*</code>
+This disables cross origin resource sharing protection,
+effectively allowing any web page to access it.
+As we want to make JSON-RPC requests from a browser,
+such as a DApp, we need this flag.</p>
+</blockquote>
+
+<p>This is the result in the terminal in Windows OS:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-09.png" alt="Run local node"></p>
+
+<p><strong>Important:</strong></p>
+
+<blockquote>
+  <p>Do not close this terminal/console window,
+if closed the local node will stop running.</p>
+</blockquote>
+
+<h3 id="check-if-the-node-is-running-using-curl">Check if the node is running using cURL</h3>
+
+<p>Open a new terminal window.</p>
+
+<p>Issue a JSON-RPC request to the RSK node’s HTTP server.</p>
+
+<p>This is an example using cURL:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl localhost:4444/1.1.0/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-10.png" alt="local node eth_blockNumber"></p>
+
+<p>The response should look similar to this:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"0x2991b"</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">result</code> property is the number of the latest block that has been synced. Note that this value (<code class="highlighter-rouge">0x2991b</code>) is the block number in hexadecimal (base 16), so the output above indicates that the current block number is <code class="highlighter-rouge">170267</code> in decimal (base 10).</p>
+
+<ul>
+  <li>To get more information about this process:
+Check out <a href="../../../rsk/node/install/java/">set up RSKj with Java</a>.</li>
+  <li>If you encounter any problems, check if your system meets the
+<a href="../../../rsk/node/install/requirements/">minimum requirements</a>.</li>
+  <li>There are other ways to install an RSK node, in other supported platforms:
+Check out <a href="../../../rsk/node/install/">installing RSKj</a>.</li>
+</ul>
+
+<h1 id="rsk-testnet---verify-the-connection">RSK Testnet - verify the connection</h1>
+
+<p>In addition to using the local node, we want to publish smart contracts to the testnet. Before it, let’s check if the connection is working.</p>
+
+<p>This is an example using cURL. Enter the following command into your terminal.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.testnet.rsk.co/2.0.1/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'</span>
+</code></pre></div></div>
+
+<p>This is a very simple query that simply asks what the latest block number is.</p>
+
+<p>You should receive a response similar to the following:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"0xc3f9b"</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-11.png" alt="testnet eth_blockNumber"></p>
+
+<p>The result field is presented in hexadecimal. <code class="highlighter-rouge">0xc3f9b</code> is the block number, and it’s decimal equivalent is: <code class="highlighter-rouge">802715</code>.
+You can consult <a href="https://explorer.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">testnet explorer</a> and verify that it is the same result for block number.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-12.png" alt="explorer testnet block number"></p>
+
+<h1 id="initialize-a-truffle-project">Initialize a Truffle project</h1>
+
+<p>We have two options for initializing a project:</p>
+
+<ol>
+  <li>An empty project</li>
+  <li>A project based in a Truffle Box</li>
+</ol>
+
+<h2 id="1---initialize-an-empty-truffle-project">1 - Initialize an empty Truffle project</h2>
+
+<p>Create a new folder. For example, <code class="highlighter-rouge">myproject</code>, and navigate to the folder in the terminal.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>myproject
+<span class="nb">cd </span>myproject
+</code></pre></div></div>
+
+<p>For example, I will create a folder at this location - <code class="highlighter-rouge">C:\RSK\</code> (I’m using Windows).</p>
+
+<p>My project can be located in the folder <code class="highlighter-rouge">C:\RSK\myproject</code>.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-13.png" alt="myproject folder"></p>
+
+<p>In your project folder, start an Truffle project by typing the command below into the terminal:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle init
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-14.png" alt="truffle init"></p>
+
+<p>Open the folder in VS Code to view the file structure like this:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-15.png" alt="truffle file structure"></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">./contracts</code>: All our smart contracts will be stored in this folder.</li>
+  <li>
+<code class="highlighter-rouge">./migrations</code>: Deployment scripts will be stored in this folder.</li>
+  <li>
+<code class="highlighter-rouge">./test</code>: Test scripts will be stored in this folder.</li>
+  <li>
+<code class="highlighter-rouge">./truffle-config.js</code>: This is Truffle’s configuration file used to configure networks, including RSK networks.</li>
+</ul>
+
+<p>Note that the following files were also created:</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">Migrations.sol</code>: Keeps track of which migrations were done on the current network.</li>
+  <li>
+<code class="highlighter-rouge">1_initial_migration.js</code>: Deployment instructions for <code class="highlighter-rouge">Migrations.sol</code>.</li>
+</ul>
+
+<h3 id="initialize-an-npm-project">Initialize an npm project</h3>
+
+<p>When we initialize an empty Truffle project, we also need to initialize an npm project.</p>
+
+<p>Start an npm project in the <code class="highlighter-rouge">myproject</code> folder by typing the following commands below into the terminal:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm init <span class="nt">-y</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-16.png" alt="npm init"></p>
+
+<h2 id="2---initialize-a-project-based-in-a-truffle-box">2 - Initialize a project based in a Truffle Box</h2>
+
+<blockquote>
+  <p>Note: Only do this if you have not done option 1.</p>
+</blockquote>
+
+<p>Truffle Boxes are templates.
+In addition to Truffle,
+Truffle Boxes can contain other helpful modules, such as Solidity smart contracts, libraries, front-end views, and more.</p>
+
+<p>In option 1, when we use <code class="highlighter-rouge">truffle init</code>, we used a special kind of truffle box.
+Check out other [boxes] (https://www.trufflesuite.com/boxes).</p>
+
+<p>Also we have some of them already configured for RSK, <a href="https://developers.rsk.co/tutorials/truffle-boxes/" rel="external noopener noreferrer" target="_blank">check it out here</a>.</p>
+
+<h2 id="install-open-zeppelin">Install Open Zeppelin</h2>
+
+<p>Open Zeppelin Contracts is a set of libraries of Solidity smart contracts for Ethereum and other blockchains.
+These libraries will install not only the main libraries required for our token,
+but also libraries for ownership, safe math, and many other utilities.
+It’s worth mentioning that these libraries have been reviewed and audited to accomplish high standards of security,
+so contracts that depend on them are less susceptible to hacking when used correctly.</p>
+
+<p>In the terminal, inside <code class="highlighter-rouge">myproject</code> folder, install Open Zeppelin libraries using this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-E</span> @openzeppelin/contracts@2.5.0
+</code></pre></div></div>
+
+<p>The option <code class="highlighter-rouge">-E</code> is to save dependencies with an exact version rather than the latest version published on npm.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-17.png" alt="openzeppelin install"></p>
+
+<blockquote>
+  <p>Some contracts may change over time, so it is important to set the version. This tutorial was written using this specific version.</p>
+</blockquote>
+
+<p>For more info:</p>
+
+<p><a href="https://openzeppelin.com/contracts/" rel="external noopener noreferrer" target="_blank">openzeppelin.com/contracts</a></p>
+
+<h1 id="install-hd-wallet-provider">Install HD wallet provider</h1>
+
+<p>To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. We are going to use <code class="highlighter-rouge">@truffle/hdwallet-provider</code>.
+This can be used to sign transactions for addresses derived from a 12 or 24 word mnemonic.</p>
+
+<blockquote>
+  <p>You need to have Node &gt;= 7.6 installed.</p>
+</blockquote>
+
+<p>In the terminal, inside the <code class="highlighter-rouge">myproject</code> folder, install the HD wallet provider with this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-E</span> @truffle/hdwallet-provider@1.0.34
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-18.png" alt="hd wallet provider install"></p>
+
+<p>This <code class="highlighter-rouge">truffle package</code> comes with many dependencies,
+and so can take a long time to complete.
+A successful installation message is shown if everything works fine.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-19.png" alt="hd wallet provider successful installation"></p>
+
+<h1 id="check-packagejson">Check package.json</h1>
+
+<p><code class="highlighter-rouge">package.json</code> is a file created by npm with some configurations,
+including the packages which we installed before using the command <code class="highlighter-rouge">npm init -y</code>.</p>
+
+<p>After the installations,
+I will open the project folder named <code class="highlighter-rouge">myproject</code> in VS Code and verify the file <code class="highlighter-rouge">package.json</code>.
+Let’s take a look at the dependencies in the file:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-20.png" alt="package.json"></p>
+
+<h1 id="create-a-wallet">Create a wallet</h1>
+
+<p>To use testnet, we need tR-BTC and an address to store them.
+The best way is to create a wallet from a mnemonic, using the pattern defined at <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" rel="external noopener noreferrer" target="_blank">BIP39</a></p>
+
+<p>There are a few ways to do this.</p>
+
+<p>One is to create using a web wallet, such as <a href="https://metamask.io/" rel="external noopener noreferrer" target="_blank">Metamask</a> or <a href="https://www.poa.network/for-users/nifty-wallet" rel="external noopener noreferrer" target="_blank">Nifty</a> wallet.
+These wallets generate the mnemonic for you.
+If you wanted to create using Metamask, you can get the instructions here:</p>
+
+<ul>
+  <li><a href="../remix-and-metamask-with-rsk-testnet/">using Remix and Metamask with RSK testnet</a></li>
+</ul>
+
+<h2 id="iancolemaniobip39">iancoleman.io/bip39</h2>
+
+<p>Another way is using this web app:</p>
+
+<p><a href="https://iancoleman.io/bip39/" rel="external noopener noreferrer" target="_blank">iancoleman.io/bip39</a></p>
+
+<blockquote>
+  <p>Note: In this tutorial, the method used to store the mnemonic is not recommended to be used for any ‘real’ wallet because it’s not secure enough to generate a private key in a website, however we will use this here for learning purposes, and because we’re using the Testnet, so no real amounts are at stake.</p>
+</blockquote>
+
+<p>In the <code class="highlighter-rouge">Generate a random mnemonic</code> field, select <code class="highlighter-rouge">12 words</code> and click on the <code class="highlighter-rouge">generate</code> button.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-21.png" alt="Generate a random mnemonic"></p>
+
+<p>The result appears in the <code class="highlighter-rouge">BIP39 Mnemonic</code> field.
+They should be 12 random words like the words in the image:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-22.png" alt="BIP39 Mnemonic"></p>
+
+<p>My mnemonic is:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>energy knife ice mouse merge track cram brown decorate atom rule virus
+</code></pre></div></div>
+
+<p>Copy these 12 words, we’ll use it later in this tutorial.</p>
+
+<h2 id="mnemonics-module">mnemonics module</h2>
+
+<p>Another alternative is using package <a href="https://github.com/itinance/mnemonics" rel="external noopener noreferrer" target="_blank">mnemonics</a>,
+which is a simple utility that can be used to generate <a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" rel="external noopener noreferrer" target="_blank">BIP39</a> mnemonics.</p>
+
+<p>To install <code class="highlighter-rouge">mnemonics</code> globally, input the command below into the terminal and press <code class="highlighter-rouge">enter</code> at your project location:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> mnemonics@1.1.3
+</code></pre></div></div>
+
+<p>Use this to generate a 12-word BIP39 mnemonic, by entering this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mnemonics <span class="o">&gt;</span> .secret
+</code></pre></div></div>
+
+<p>This saves a new mnemonic in the file named <code class="highlighter-rouge">.secret</code>, which is the next step.</p>
+
+<h1 id="create-secret-file">Create .secret file</h1>
+
+<p>In the terminal, inside the <code class="highlighter-rouge">myproject</code> folder, create a file named <code class="highlighter-rouge">.secret</code>.</p>
+
+<p>Do you remember your mnemonic?
+Paste your mnemonic in this file and save it.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-23.png" alt="dot secret"></p>
+
+<h1 id="configure-truffle-to-connect-to-rsk-networks">Configure Truffle to connect to RSK networks</h1>
+
+<p>Open <code class="highlighter-rouge">truffle-config.js</code> file in your Truffle project and overwrite it with the following code:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">HDWalletProvider</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@truffle/hdwallet-provider</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mnemonic</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">"</span><span class="s2">.secret</span><span class="dl">"</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">trim</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">mnemonic</span> <span class="o">||</span> <span class="nx">mnemonic</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">).</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">unable to retrieve mnemonic from .secret</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">networks</span><span class="p">:</span> <span class="p">{</span>
+  <span class="p">},</span>
+  <span class="na">compilers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">solc</span><span class="p">:</span> <span class="p">{</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">hdwallet-provider</code> allows us to connect to any network by unlocking an account locally, including the RSK networks.</p>
+
+<p>Also we are loading the mnemonic stored in file <code class="highlighter-rouge">.secret</code>, and saving it at variable mnemonic.</p>
+
+<h2 id="configure-truffle-to-connect-to-rsk-regtest-local-node">Configure Truffle to connect to RSK regtest (local node)</h2>
+
+<p>In the <code class="highlighter-rouge">truffle-config.js</code> file, include this configuration at <code class="highlighter-rouge">network</code> section:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">development</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nl">host</span><span class="p">:</span> <span class="dl">"</span><span class="s2">127.0.0.1</span><span class="dl">"</span><span class="p">,</span>
+      <span class="nx">port</span><span class="p">:</span> <span class="mi">4444</span><span class="p">,</span>
+      <span class="nx">network_id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">*</span><span class="dl">"</span>
+    <span class="p">},</span>
+</code></pre></div></div>
+
+<p>This is the result:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-24.png" alt="network development"></p>
+
+<h2 id="get-the-current-gas-price-of-testnet">Get the current gas price of testnet</h2>
+
+<p>Get the current gas price of the testnet network, and save to <code class="highlighter-rouge">.gas-price-testnet.json</code>.</p>
+
+<p>In your project folder, run this cURL command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.testnet.rsk.co/2.0.1/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'</span> <span class="o">&gt;</span> .gas-price-testnet.json
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-25.png" alt="gas price result"></p>
+
+<p>You should receive a response similar to the following in the file:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"0x3938700"</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-26.png" alt="gas-price-testnet.json"></p>
+
+<p>The result value is presented in hexadecimal.</p>
+
+<p>Modify the <code class="highlighter-rouge">truffle-config</code> file again to use the updated gas price. After mnemonic part, include this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">gasPriceTestnetRaw</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">"</span><span class="s2">.gas-price-testnet.json</span><span class="dl">"</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">trim</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">gasPriceTestnet</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">gasPriceTestnetRaw</span><span class="p">).</span><span class="nx">result</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">gasPriceTestnet</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span> <span class="o">||</span> <span class="nb">isNaN</span><span class="p">(</span><span class="nx">gasPriceTestnet</span><span class="p">))</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">unable to retrieve network gas price from .gas-price-testnet.json</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Gas price Testnet: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">gasPriceTestnet</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="configure-truffle-to-connect-to-rsk-testnet">Configure Truffle to connect to RSK testnet</h2>
+
+<p>In the <code class="highlighter-rouge">truffle-config.js</code> file, include this configuration at <code class="highlighter-rouge">network</code> section:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">testnet</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nl">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/2.0.1/</span><span class="dl">'</span><span class="p">),</span>
+      <span class="nx">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
+      <span class="nx">gasPrice</span><span class="p">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">gasPriceTestnet</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">),</span>
+      <span class="nx">networkCheckTimeout</span><span class="p">:</span> <span class="mi">1</span><span class="nx">e9</span>
+    <span class="p">},</span>
+</code></pre></div></div>
+
+<h2 id="truffle-config-with-local-and-testnet-rsk-networks">Truffle config with local and testnet RSK networks</h2>
+
+<p>This is the final <code class="highlighter-rouge">truffle-config.js</code> file with configurations for both networks:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">HDWalletProvider</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@truffle/hdwallet-provider</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mnemonic</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">"</span><span class="s2">.secret</span><span class="dl">"</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">trim</span><span class="p">();</span>
+<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">mnemonic</span> <span class="o">||</span> <span class="nx">mnemonic</span><span class="p">.</span><span class="nx">split</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">).</span><span class="nx">length</span> <span class="o">!==</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">unable to retrieve mnemonic from .secret</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">gasPriceTestnetRaw</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">"</span><span class="s2">.gas-price-testnet.json</span><span class="dl">"</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">trim</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">gasPriceTestnet</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">gasPriceTestnetRaw</span><span class="p">).</span><span class="nx">result</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">gasPriceTestnet</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span> <span class="o">||</span> <span class="nb">isNaN</span><span class="p">(</span><span class="nx">gasPriceTestnet</span><span class="p">))</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">unable to retrieve network gas price from .gas-price-testnet.json</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Gas price Testnet: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">gasPriceTestnet</span><span class="p">);</span>
+
+<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="na">networks</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">development</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">host</span><span class="p">:</span> <span class="dl">"</span><span class="s2">127.0.0.1</span><span class="dl">"</span><span class="p">,</span>
+      <span class="na">port</span><span class="p">:</span> <span class="mi">4444</span><span class="p">,</span>
+      <span class="na">network_id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">*</span><span class="dl">"</span>
+    <span class="p">},</span>
+    <span class="na">testnet</span><span class="p">:</span> <span class="p">{</span>
+      <span class="na">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/2.0.1/</span><span class="dl">'</span><span class="p">),</span>
+      <span class="na">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
+      <span class="na">gasPrice</span><span class="p">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">gasPriceTestnet</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">),</span>
+      <span class="na">networkCheckTimeout</span><span class="p">:</span> <span class="mi">1</span><span class="nx">e9</span>
+    <span class="p">},</span>
+  <span class="p">},</span>
+  <span class="na">compilers</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">solc</span><span class="p">:</span> <span class="p">{</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Check out the VS Code image too:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-27.png" alt="truffle-config"></p>
+
+<h1 id="truffle-console-connected-to-rsk-network">Truffle Console connected to RSK network</h1>
+
+<p>Truffle has its own console to run commands, and can be connected on any network previously configured in <code class="highlighter-rouge">truffle-config.js</code> file.</p>
+
+<h2 id="connect-to-rsk-regtest-local-node">Connect to RSK regtest (local node)</h2>
+
+<p>Let’s open a Truffle console to connect to our local node.</p>
+
+<p>In the terminal, inside the <code class="highlighter-rouge">myproject</code> folder, run this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle console
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-28.png" alt="Truffle console development"></p>
+
+<blockquote>
+  <p>Any network defined with the name <code class="highlighter-rouge">development</code> is considered the default network.</p>
+</blockquote>
+
+<h2 id="connect-to-rsk-testnet">Connect to RSK testnet</h2>
+
+<p>Thus far we have only connected to a blockchain that runs using just 1 node, that runs on your own computer.
+Let’s now switch to interacting with a “real” blockchain, which is running on multiple nodes distributed across multiple computers!</p>
+
+<p>To connect Truffle console in another network, you need to specify the network:</p>
+
+<p>Open up a new terminal.</p>
+
+<p>In the new terminal, inside the <code class="highlighter-rouge">myproject</code> folder, run this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle console <span class="nt">--network</span> testnet
+</code></pre></div></div>
+
+<p>It takes a little longer to establish this connection when compared to the local node.
+This will open a new console:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-29.png" alt="truffle console network testnet"></p>
+
+<h2 id="test-the-connection-to-rsk-network">Test the connection to RSK network</h2>
+
+<p>On any of the networks, run this commands in the Truffle console:</p>
+
+<h3 id="block-number">Block number</h3>
+
+<p>Shows the last block number.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">await</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getBlockNumber</span><span class="p">()).</span><span class="nx">toString</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-30.png" alt="getBlockNumber"></p>
+
+<h3 id="network-id">Network ID</h3>
+
+<p>To get the network ID, run this command:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">await</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">net</span><span class="p">.</span><span class="nx">getId</span><span class="p">()).</span><span class="nx">toString</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>For the local node, the network ID is <code class="highlighter-rouge">33</code>.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-31.png" alt="getId local"></p>
+
+<p>And for testnet, it is <code class="highlighter-rouge">31</code>.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-32.png" alt="getId testnet"></p>
+
+<h2 id="exit-truffle-console">Exit Truffle console</h2>
+
+<p>In the Truffle console, enter this command to exit the terminal:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.exit
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-33.png" alt="exit Truffle console"></p>
+
+<h1 id="get-addresses">Get addresses</h1>
+
+<p>We will use a special instruction in Truffle console to get the first 10 addresses in our hierarchical deterministic wallet for the RSK Testnet network, that are generated from our mnemonic.</p>
+
+<p>In the terminal, inside the <code class="highlighter-rouge">myproject</code> folder, go to the Truffle console connected to testnet:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle console <span class="nt">--network</span> testnet
+</code></pre></div></div>
+
+<p>And run this command to save the addresses at variable <code class="highlighter-rouge">accounts</code>:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">accounts</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">currentProvider</span><span class="p">.</span><span class="nx">wallets</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>See the addresses after it by entering the command below:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">accounts</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-34.png" alt="list accounts"></p>
+
+<p>Now we will write them to a file named <code class="highlighter-rouge">.accounts</code></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">).</span><span class="nx">promises</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="dl">'</span><span class="s1">.accounts</span><span class="dl">'</span><span class="p">,</span> <span class="nx">accounts</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="dl">'</span><span class="se">\n</span><span class="dl">'</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-35.png" alt="create file .accounts"></p>
+
+<p>And we can check the file:</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-36.png" alt="file .accounts"></p>
+
+<h2 id="check-balance">Check balance</h2>
+
+<p>To check the balance of an account, for example, the first account of our list (<code class="highlighter-rouge">account[0]</code>), run this command in Truffle console:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">await</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getBalance</span><span class="p">(</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">])).</span><span class="nx">toString</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-37.png" alt="getBalance accounts 0"></p>
+
+<p>The balance is 0 and we need some tR-BTC to pay gas fees,
+which will be used to publish smart contracts and interact with them.
+We shall obtain some in the next step.</p>
+
+<h1 id="testnet-faucet">TestNet Faucet</h1>
+
+<p>You can get some tR-BTC from the <a href="https://faucet.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Testnet faucet</a>.</p>
+
+<p>Copy the first address from <code class="highlighter-rouge">.accounts</code> file. In my case, it is</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0xe16f6abdd5815f3d24b4e5c29138f863933b000a
+</code></pre></div></div>
+
+<p>Enter your wallet address and pass the CAPTCHA.</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-38.png" alt="faucet.testnet.rsk.co"></p>
+
+<p>Wait a few seconds…</p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-39.png" alt="Wait a few seconds"></p>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-40.png" alt="Received some R-BTCs"></p>
+
+<p>You can see the transaction hash:</p>
+
+<p><a href="https://explorer.testnet.rsk.co/tx/0x4a2bf1f65c525219020c3a1215a29453c20f4ced90575d9a7d13f8fe666d05b4" rel="external noopener noreferrer" target="_blank">0x4a2bf1f65c525219020c3a1215a29453c20f4ced90575d9a7d13f8fe666d05b4</a></p>
+
+<p>Now I have 0.05 R-BTC!</p>
+
+<h2 id="recheck-balance">Recheck balance</h2>
+
+<p>To check balance again, run this command in the Truffle console:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">await</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getBalance</span><span class="p">(</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">])).</span><span class="nx">toString</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-41.png" alt="getBalance accounts 0 again"></p>
+
+<p>Great! Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.</p>
+
+<h1 id="where-to-go-from-here">Where to go from here</h1>
+
+<p>At this point, we have installed all requirements and created an empty project using Truffle framework and Open Zeppelin smart contracts library,
+connected to both an RSK local node (Regtest) and the RSK Testnet.</p>
+
+<p>We have not developed anything yet,
+but you are now ready to move on to the next tutorials,
+where we will develop some very cool projects!</p>
+
+<p>Choose any of these to tutorials to begin:</p>
+
+<ul>
+  <li><a href="https://developers.rsk.co/tutorials/tokens/create-a-token/" rel="external noopener noreferrer" target="_blank">Create your first Token</a></li>
+  <li><a href="https://developers.rsk.co/tutorials/truffle-boxes/pet-shop-box/" rel="external noopener noreferrer" target="_blank">Petshop</a></li>
+  <li><a href="https://developers.rsk.co/tutorials/tokens/create-a-collectable-token/" rel="external noopener noreferrer" target="_blank">Create your own collectable token</a></li>
+</ul>
+
+
+                  
+
+               </div>
+            </div>
+
+            <section class="mt-5">
+    <div class="container newsletter">
+     <div class="row justify-content-center">
+       <div class="body-title col-md-8 text-center">
+        <h2>
+<span class="bold rsk_green">Subscribe</span> to our Newsletter</h2>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://rifos.us15.list-manage.com/subscribe/post?u=f52247d792ffe22c6f7be1379&amp;id=a7030f092b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <div id="mc_embed_signup_scroll">
+              <div class="input-group mb-3">
+                <input type="email" value="" name="EMAIL" class="required email form-control email-suscribe" id="mce-EMAIL" placeholder="E-mail adress">
+                <input type="hidden" name="MMERGE5" id="MMERGE5" value="Developer,DevPortal,EN">
+                <div class="input-group-append">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-suscribe">
+                </div> 
+              </div> 
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f52247d792ffe22c6f7be1379_a7030f092b" tabindex="-1" value=""></div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+</section>
+         </div>
+         <div class="render-features" data-features="custom-terminals">
+         </div>
+      </section>
+
+      <!-- footer -->
+<footer id="footer" class="section-bg">
+   <div class="footer-top">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <img src="../../../assets/img/powered_by_iov.svg" class="img-fluid powered_by">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4">
+               <div class="footer-info">
+                  <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
+                  <br>
+                  <a href="https://developers.rsk.co/" rel="external noopener noreferrer" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
+               </div>
+            </div>
+            <div class="col-lg-8">
+               <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li class="negbottom">Whitepapers</li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="external noopener noreferrer" target="_blank">Original</a></li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="external noopener noreferrer" target="_blank">Updated</a></li>
+                           <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="external noopener noreferrer" target="_blank">RIF</a></li>
+                           <li><a href="https://rsk.co/development-roadmap.html" rel="external noopener noreferrer" target="_blank">Roadmap</a></li>
+                           <li><a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">Explorer</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://mining.rsk.co/" rel="external noopener noreferrer" target="_blank">Merged Mining</a></li>
+                           <li><a href="https://www.rsk.co/bounty-program/index" rel="external noopener noreferrer" target="_blank">Bounty Program</a></li>
+                           <li><a href="https://grants.rsk.co" rel="external noopener noreferrer" target="_blank">Grants Program</a></li>
+                           <li><a href="https://fund.rsk.co" rel="external noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
+                           <li><a href="https://studio.rsk.co" rel="external noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://rsk.co/defi" rel="external noopener noreferrer" target="_blank">DeFi</a></li>
+                           <li><a href="https://rsk.co/Use-cases.html" rel="external noopener noreferrer" target="_blank">Use cases</a></li>
+                           <li><a href="https://rsk.co/faqs.html" rel="external noopener noreferrer" target="_blank">Faqs</a></li>
+                           <li><a href="https://blog.rsk.co/" rel="external noopener noreferrer" target="_blank">Blog</a></li>
+                           <li><a href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" rel="external noopener noreferrer" target="_blank">Brand Guidelines</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links lastcol">
+                        <ul>
+                           <li><a class="bold" href="https://rsk.co/terms-conditions.html" rel="external noopener noreferrer" target="_blank">Terms &amp; Conditions</a></li>
+                           <li><a class="bold" href="https://rsk.co/privacy-policy.html" rel="external noopener noreferrer" target="_blank">Privacy Policy</a></li>
+                           <li><a class="bold" href="https://www.iovlabs.org" rel="external noopener noreferrer" target="_blank">About IOVlabs</a></li>
+                           <li><a class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html" rel="external noopener noreferrer" target="_blank">Contact IOVlabs</a></li>
+                           <a href="https://developers.doc.rsk.co/docs" rel="external noopener noreferrer" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="social-links">
+                  <a href="https://twitter.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="facebook"><i class="fab fa-youtube"></i></a>
+                  <a href="https://www.facebook.com/RSKsmart/" rel="external noopener noreferrer" target="_blank" class="linkedin"><i class="fab fa-facebook"></i></a>
+                  <a href="https://gitter.im/rsksmart" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-gitter"></i></a>
+                  <a href="https://www.reddit.com/r/rootstock/" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-reddit"></i></a>
+                  <a href="https://t.me/rskofficialcommunity" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://medium.com/@RSKNews" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-medium"></i></a>
+                  <a href="https://t.me/rsksmartcontract" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://www.instagram.com/rsksmart/" rel="external noopener noreferrer" target="_blank" class=""><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="col-md-12">
+            <div class="row">
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="copyright">Copyright © 2015 - 2020 RSK Labs. All rights reserved.</p>
+               </div>
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="credits"> RSK Public Key (2ED3 E888 0384 D3D9 70B6  A612 BEBC A6A9 63F6 1479)</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- #footer -->
+
+      <a href="#top" class="scrollup"><p>Go to top</p></a>
+      <!-- Bootstrap core JavaScript -->
+      <script src="../../../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../../../assets/js/main.js"></script>
+      <script src="../../../assets/vendor/carousel/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          nav:true,
+          center:true,
+          URLhashListener:true,
+          autoplayHoverPause:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+
+      </script>
+      <script>
+      ((window.gitter = {}).chat = {}).options = {
+         room: 'rsksmart/getting-started'
+      };
+      </script>
+      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+   </body>
+</html>
