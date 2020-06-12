@@ -2028,7 +2028,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "",
-      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event12.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/5qy3aAnhCwc",
@@ -2277,7 +2277,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/1de3f667-da89-4880-b634-a28f30e544c2/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
-      "tags": " idioma-english audiencia-developers audiencia-general",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event1.jpg",
       "resources": [
         {
@@ -2295,7 +2295,7 @@
       ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202006-004/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2329,6 +2329,184 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202006-005/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-006",
+      "version": "1",
+      "timestamp": "2020-06-17T22:00:00.000Z",
+      "lastModified": "2020-06-12T06:45:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Criando um nó local na RSK",
+      "description": "Como configurar um nó local para construção de aplicações na rede RSK.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "developers"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/e42994d6-a586-4136-b19d-056010079403/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk",
+      "tags": " idioma-portuguese audiencia-developers",
+      "image": "/webinars/img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-006/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-007",
+      "version": "1",
+      "timestamp": "2020-06-19T17:00:00.000Z",
+      "lastModified": "2020-06-12T06:45:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Bleumi: Covering the 'last mile' of RSK Ecosystem as a Payment Technology Partner",
+      "description": "As a payment technology partner, Bleumi is enabling blockchain adoption by every-day users in ever-day payment and payout use.\n\n\nWebinar Agenda:\n\nIntroduction to Bleumi Pay (All-in-One Global Digital Currency Payment Platform)\nWhy Bleumi Pay for Digital Currency Payments?\nBleumi Product Roadmap\nDemo of RSK Token Payment using Bleumi Pay on eCommerce Store (WooCommerce / Magento)",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Thomas Arul",
+          "description": "CEO",
+          "contact": "@BleumiInc"
+        },
+        {
+          "name": "John Melvin",
+          "description": "COO",
+          "contact": "@BleumiInc"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/fca33a5d-83a7-43e0-976d-90367a48846f/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk",
+      "tags": " idioma-english audiencia-general",
+      "image": "/webinars/img/events/event10.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-007/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-008",
+      "version": "1",
+      "timestamp": "2020-06-26T00:00:00.000Z",
+      "lastModified": "2020-06-12T06:45:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "De App a dApp:\nAprende como migrar tu App en JavaScript a un RSK Smart Contract",
+      "description": "De App a dApp:\nDiviertete migrando tu App construida en Java Script a RSK con Smart Contracts asegurados por la red de Bitcoin.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "developers"
+      ],
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/e42994d6-a586-4136-b19d-056010079403/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-app-a-dap",
+      "tags": " idioma-spanish audiencia-developers",
+      "image": "/webinars/img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-008/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-009",
+      "version": "1",
+      "timestamp": "2020-06-26T17:00:00.000Z",
+      "lastModified": "2020-06-12T06:45:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK made easy with SIMBA Chain",
+      "description": "-",
+      "category": "Demo",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Tommy Cooksey",
+          "description": "Blockchain Architect",
+          "contact": "@tommycooksey"
+        },
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/697bea3b-c18f-433c-90c4-4a12f5153435/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain",
+      "tags": " idioma-english audiencia-developers audiencia-general",
+      "image": "/webinars/img/events/event12.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-009/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202006-010",
+      "version": "1",
+      "timestamp": "2020-06-30T19:00:00.000Z",
+      "lastModified": "2020-06-12T06:45:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Self Sovereign Identity and RIF",
+      "description": "-",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers",
+        "general",
+        "ngo"
+      ],
+      "presenters": [
+        {
+          "name": "Milton Berman",
+          "description": "RIF Identity PO",
+          "contact": "@miltonberman"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
+      "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo",
+      "image": "/webinars/img/events/event7.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202006-010/",
       "_isPast": false
     }
   ]
