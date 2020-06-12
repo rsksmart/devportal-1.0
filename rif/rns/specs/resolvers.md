@@ -11,6 +11,8 @@ Resolvers must implement [ERC-165](https://eips.ethereum.org/EIPS/eip-165) inter
 
 Currently standardized resolver interfaces are specified below.
 
+> find the implementation [here](/rif/rns/architecture/definitive-resolver)
+
 ### Contract address
 
 Provides the contract address for the specified domain.
