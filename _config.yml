@@ -26,6 +26,8 @@ repository: rsksmart/rsksmart.github.io
 
 domain: "developers.rsk.co"
 url: "https://developers.rsk.co"
+redirect_base: ""
+redirect_time: 0
 
 highlighter: rouge
 

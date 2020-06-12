@@ -60,6 +60,9 @@ $(document).ready(function () {
     .split(/\s+/);
   renderFeatures.forEach((feature) => {
     switch (feature) {
+      case '':
+        // do nothing when render features list is empty
+        return;
       case 'tables-with-borders':
         renderTablesWithBorders();
         return;
@@ -68,6 +71,9 @@ $(document).ready(function () {
         return;
       case 'equations':
         renderEquationsSetup();
+        return;
+      case '2-way-peg-verifier':
+        render2WayPegVerifierSetup();
         return;
       default:
         console.error('Unsupported render feature:', feature);
@@ -322,6 +328,69 @@ function renderEquation(el) {
   equationEl.setAttribute('title', equation);
   equationEl.classList.add('tex-rendered');
   el.replaceWith(equationEl);
+}
+
+// render feature: 2-way peg verifier
+
+function render2WayPegVerifierSetup() {
+  // <script
+  //   defer
+  //   src="/assets/js/pegin-address-verifier.umd.js"
+  //   onload="render2WayPegVerifier();">
+  // </script>
+  const scriptEl = document.createElement('script');
+  scriptEl.setAttribute('defer', 'defer');
+  scriptEl.setAttribute('src', '/assets/vendor/pegin-address-verifier/pegin-address-verifier.umd.js');
+  scriptEl.setAttribute('onload', 'render2WayPegVerifier();');
+  document.body.appendChild(scriptEl);
+}
+
+function render2WayPegVerifier() {
+  var originalElem = document.querySelector('a[title="pegin-address-verifier"]');
+  var newElem = document.createElement('div');
+  newElem.innerHTML = `
+    <div class="pegin-address-verifier">
+      <input type="text" class="address">
+      <button class="check green-button">Check</button>
+      <div class="result"></div>
+    </div>
+  `;
+  originalElem.parentNode.replaceChild(newElem, originalElem);
+  document.querySelector('.pegin-address-verifier .check').addEventListener('click', render2WayPegVerifierCheck);
+}
+
+function render2WayPegVerifierCheck() {
+  var result;
+  var address = document.querySelector('.pegin-address-verifier .address').value;
+  var info = RskPegInAddressVerifier.getAddressInformation(address);
+  // e.g. {"network":"testnet","type":"p2pkh"}
+  var displayAddress = `<code>${address}</code>`;
+  if (!info) {
+    result = `The address ${displayAddress} is not valid.`;
+  } else {
+    var displayAddressType = `<code>${info.type.toUpperCase()}</code>`;
+    var displayNetwork = `<code>${info.network.charAt(0).toUpperCase()}${info.network.slice(1)}</code>`;
+    var canPegIn = RskPegInAddressVerifier.canPegIn(info);
+    if (canPegIn) {
+      if (info.type == 'p2pkh'){
+        result = `The address ${displayAddress
+          } is a valid ${displayAddressType
+          } address, and may peg in on ${displayNetwork}.`;
+      }
+      else{
+        result = `The address ${displayAddress
+        } is a valid ${displayAddressType
+        } address, however, may not peg in on ${displayNetwork
+        }. Please check the compatibility matrix.`;        
+      }
+    } else {
+      result = `The address ${displayAddress
+        } is a valid ${displayAddressType
+        } address, however, will not peg in on ${displayNetwork
+        }.<br/><strong>Do not use</strong> this wallet, your BTC will be <strong>lost</strong>. Please check the compatibility matrix.`;
+    }
+  }
+  document.querySelector('.pegin-address-verifier .result').innerHTML = result;
 }
 
 // render feature: custom terminals
