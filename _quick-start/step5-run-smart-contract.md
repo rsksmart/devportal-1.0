@@ -24,7 +24,7 @@ First, let's get the address of the account which was
 used to deploy the contract.
 We shall save this in the variable `account1`.
 
-```javascript
+```nodejs-repl
 account1 = (await web3.eth.getAccounts())[0]
 ```
 
@@ -35,7 +35,7 @@ you see in Ganache's accounts tab.
 
 Now we can check its balance:
 
-```javascript
+```nodejs-repl
 EIP20instance = await EIP20.deployed()
 
 await EIP20instance.balanceOf(account1)
@@ -46,7 +46,7 @@ This command will print out the balance of the main account
 as a **big number**, which should appear as `<BN: 2710>`.
 To see it as an integer:
 
-```javascript
+```nodejs-repl
 (await EIP20instance.balanceOf(account1)).toNumber()
 ```
 
@@ -59,7 +59,7 @@ the constructor of the smart contract, in the truffle migration.
 In Ganache, copy the address of the second account in the accounts tab.
 We shall save it as a variable, `account2`:
 
-```javascript
+```nodejs-repl
 account2 = web3.utils.toChecksumAddress('0x2e898C937f22f84a2603fb0BfDeEF43CdAC87f93')
 
 (await EIP20instance.balanceOf(account1)).toNumber()
@@ -74,7 +74,7 @@ and the second account has none.
 Next, use the following command to transfer some tokens from
 the first account to the second account.
 
-```javascript
+```nodejs-repl
 await EIP20instance.transfer(account2, 10)
 ```
 
@@ -83,7 +83,7 @@ This should print out an object containing transaction data.
 Finally, let's check the account balances to ensure
 that everything went smoothly:
 
-```javascript
+```nodejs-repl
 (await EIP20instance.balanceOf(account1)).toNumber()
 
 (await EIP20instance.balanceOf(account2)).toNumber()

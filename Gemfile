@@ -19,5 +19,4 @@ group :jekyll_plugins do
   gem "jekyll-sitemap", "1.4.0"
   gem "jekyll-last-modified-at", "1.3.0"
   gem "jemoji", "0.12.0"
-  gem "jekyll-target-blank", "2.0.0" if ENV["RAKE_BUILD_FOR"] == "prod" or ENV["GH_ENV"] == "gh_pages"
 end

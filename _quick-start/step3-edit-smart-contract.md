@@ -26,13 +26,13 @@ ls
 
 `EIP20Interface.sol` defines the required functions for the ERC20 base standard.
 
-```javascript
+```solidity
 /// @param _owner The address from which the balance will be retrieved
 /// @return The balance
 function balanceOf(address _owner) public view returns (uint256 balance);
 ```
 
-```javascript
+```solidity
 /// @notice send `_value` token to `_to` from `msg.sender`
 /// @param _to The address of the recipient
 /// @param _value The amount of token to be transferred
@@ -65,7 +65,7 @@ At the top of the `EIP20.sol` token contract, the constructor function defined i
 Initial amount, token name, decimal unit, and token symbol.
 You can customize these parameters to create your own token.
 
-```javascript
+```solidity
 function EIP20(
     uint256 _initialAmount,
     string _tokenName,
