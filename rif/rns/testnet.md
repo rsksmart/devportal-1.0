@@ -20,11 +20,9 @@ tags: [rif, rns, testnet]
 
 [`0x7d284aaac6e925aad802a53c0c69efe3764597b8`](https://explorer.testnet.rsk.co/address/0x7d284aaac6e925aad802a53c0c69efe3764597b8)
 
-### Resolvers
+### Resolver
 
-Public Resolver: [`0x1e7ae43e3503efb886104ace36051ea72b301cdf`](https://explorer.testnet.rsk.co/address/0x1e7ae43e3503efb886104ace36051ea72b301cdf)
-
-MultiChain Resolver: [`0x404308f2a2eec2cdc3cb53d7d295af11c903414e`](https://explorer.testnet.rsk.co/address/0x404308f2a2eec2cdc3cb53d7d295af11c903414e)
+[0x25C289ccCFFf700c6a38722F4913924fE504De0e](https://explorer.testnet.rsk.co/address/0x25c289cccfff700c6a38722f4913924fe504de0e)
 
 ### RSK Registrar
 
@@ -49,6 +47,12 @@ NameResolver: [`0x8587385ad60038bB181aFfDF687c4D1B80C4787e`](https://explorer.te
 ### RSK Registrar legacy
 
 TokenRegistrar (auction): [`0x3d1a11c623bd21375f2b69f4eec814f4ceeb1d8d`](https://explorer.testnet.rsk.co/address/0x3d1a11c623bd21375f2b69f4eec814f4ceeb1d8d)
+
+### Legacy Resolvers
+
+Public Resolver: [`0x1e7ae43e3503efb886104ace36051ea72b301cdf`](https://explorer.testnet.rsk.co/address/0x1e7ae43e3503efb886104ace36051ea72b301cdf)
+
+MultiChain Resolver: [`0x404308f2a2eec2cdc3cb53d7d295af11c903414e`](https://explorer.testnet.rsk.co/address/0x404308f2a2eec2cdc3cb53d7d295af11c903414e)
 
 ## RNS Manager
 

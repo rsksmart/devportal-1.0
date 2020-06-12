@@ -8,11 +8,9 @@ tags: [rif, rns, mainnet]
 
 [`0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5`](https://explorer.rsk.co/address/0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5)
 
-### Resolvers
+## Resolver
 
-Public Resolver: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](https://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
-
-MultiChain Resolver: [`0x99a12be4C89CbF6CFD11d1F2c029904a7B644368`](https://explorer.rsk.co/address/0x99a12be4C89CbF6CFD11d1F2c029904a7B644368)
+[0xD87f8121D44F3717d4bAdC50b24E50044f86D64B](https://explorer.rsk.co/address/0xd87f8121d44f3717d4badc50b24e50044f86d64b)
 
 ### RSK Registrar
 
@@ -37,6 +35,12 @@ NameResolver: [`0x4b1a11bf6723e60b9d2e02aa3ece34e24bde77d9`](https://explorer.rs
 ### RSK Registrar legacy
 
 TokenRegistrar (auction): [`0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6`](https://explorer.rsk.co/address/0x5269f5bc51cdd8aa62755c97229b7eeddd8e69a6)
+
+### Legacy resolvers
+
+Public Resolver: [`0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a`](https://explorer.rsk.co/address/0x4efd25e3d348f8f25a14fb7655fba6f72edfe93a)
+
+MultiChain Resolver: [`0x99a12be4C89CbF6CFD11d1F2c029904a7B644368`](https://explorer.rsk.co/address/0x99a12be4C89CbF6CFD11d1F2c029904a7B644368)
 
 ## RNS Manager
 
