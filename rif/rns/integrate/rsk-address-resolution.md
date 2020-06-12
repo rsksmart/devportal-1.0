@@ -23,7 +23,7 @@ Resolving an RSK address associated to a domain consist of 4 steps:
 
     Use `addr(bytes32)` with the domain identifier.
 
-    > [`addr(bytes32)` spec](/rif/rns/specs/resolvers/addr-resolver)
+    > [`addr(bytes32)` spec](/rif/rns/specs/resolvers#contract-address)
 
 ```js
 function getAddr(domain) {
