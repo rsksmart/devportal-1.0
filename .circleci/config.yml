@@ -1,6 +1,8 @@
 version: 2.1
+
 jobs:
-  build:
+
+  docs_build:
     working_directory: ~/tmp
     docker:
       - image: circleci/ruby:2.6.3
@@ -51,3 +53,42 @@ jobs:
           name: Tests
           command: |
             bundle exec rake test
+
+      # so that results from docs_build may be used in docs_deploy
+      - persist_to_workspace:
+          root: ./
+          paths: _site
+
+  docs_deploy:
+    docker:
+      - image: node:12.16.1
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ./
+      - run:
+          name: "Disable jekyll builds"
+          command: touch ./_site/.nojekyll
+      - run:
+          name: Configure git
+          command: |
+            git config user.email "bguiz@users.noreply.github.com"
+            git config user.name "bguiz"
+      - add_ssh_keys:
+          fingerprints:
+            - "2f:34:c5:6b:c2:e5:a4:2b:15:9c:74:e9:99:03:b0:f4"
+      - run:
+          name: Deploy docs to gh-pages branch
+          command: npx gh-pages@2.0.1 --dotfiles --message "[skip ci] published at $( date --iso-8601=seconds )" --dist ./_site
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - docs_build
+      - docs_deploy:
+          requires:
+            - docs_build
+          filters:
+            branches:
+              only: master
