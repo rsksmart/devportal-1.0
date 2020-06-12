@@ -76,7 +76,7 @@ jobs:
             git config user.name "bguiz"
       - add_ssh_keys:
           fingerprints:
-            - "2f:34:c5:6b:c2:e5:a4:2b:15:9c:74:e9:99:03:b0:f4"
+            - "b6:c7:47:67:68:72:69:72:e7:57:4b:b0:2e:47:28:6c"
       - run:
           name: Deploy docs to gh-pages branch
           command: npx gh-pages@2.0.1 --dotfiles --message "[skip ci] published at $( date --iso-8601=seconds )" --dist ./_site
@@ -91,4 +91,4 @@ workflows:
             - docs_build
           filters:
             branches:
-              only: proj/rouge-language-aliases
+              only: master

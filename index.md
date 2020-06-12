@@ -13,7 +13,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             <a href="/quick-start">
             <div class="icon started h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="assets/img/features/started-icon.png" alt="started icon">
+            <img src="/assets/img/features/started-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/quick-start">
@@ -32,7 +32,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             <a href="/rsk/node/install">
             <div class="icon node h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="assets/img/features//node-icon.png" alt="started icon">
+            <img src="/assets/img/features/node-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rsk/node/install">
@@ -51,7 +51,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             <a href="/develop">
             <div class="icon smart h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="assets/img/features/contract-icon.png" alt="started icon">
+            <img src="/assets/img/features/contract-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content two-line-title-content"><a href="/develop">
@@ -70,7 +70,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             <a href="/rif">
             <div class="icon rif h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="assets/img/features/rif-icon.png" alt="started icon">
+            <img src="/assets/img/features/rif-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rif">
@@ -89,7 +89,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             <a href="/rif/rns">
             <div class="icon domain h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="assets/img/features/domain-icon.png" alt="started icon">
+            <img src="/assets/img/features/domain-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rif/rns">
@@ -108,7 +108,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
             <a href="/rif/lumino">
             <div class="icon tools h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="assets/img/features/tools-icon.png" alt="started icon">
+            <img src="/assets/img/features/tools-icon.png" alt="started icon">
             </div>
             </div>
             </a><div class="content"><a href="/rif/lumino">

@@ -1,7 +1,7 @@
 # executed just before the pages rendering
 Jekyll::Hooks.register :site, :pre_render do |site|
   require "rouge"
-  puts "rouge code fence langauge aliases..."
+  puts "rouge code fence language aliases..."
 
   # extend rouge lexers to add custom aliases
 
