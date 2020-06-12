@@ -12,6 +12,7 @@ def customise_links!(p)
   site_redirect_base = p.site.config['redirect_base']
   from_url = p.url.to_s
   if (p.output_ext != '.html' && p.output_ext != '.htm')
+    # only process html pages
     return
   end
   if (p.permalink&.end_with?('.html', '.htm'))
@@ -64,6 +65,9 @@ def process_link_internal_absolute!(from_url, elem, attr_name)
   from_path = Pathname.new(from_url)
   to_path = Pathname.new(elem.get_attribute(attr_name))
   relative_path = get_relative_path(from_path, to_path)
+  # also handle any accidental redundant consecutive slashes
+  # e.g. foo//bar/baz --> foo/bar/baz
+  relative_path.gsub!(/\/{2,}/, '/')
   elem.set_attribute(attr_name, relative_path)
 end
 
@@ -89,7 +93,7 @@ def get_relative_path(from_path, to_path)
   if (
     !to_path.to_s.include?('#') &&
     !relative_path&.end_with?(
-      '.js', '.css', '.png', '.svg', '.jpeg', '.jpg', '.html', '.htm'
+      '.js', '.css', '.png', '.svg', '.jpeg', '.jpg', '.html', '.htm', '.ical'
     )
   )
     relative_path = relative_path + '/'
