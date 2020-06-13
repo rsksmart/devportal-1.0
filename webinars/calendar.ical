@@ -1978,4 +1978,163 @@ STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200606T014500Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202006-006@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200617T220000Z
+DTSTART:20200617T220000Z
+SUMMARY:Criando um nó local na RSK 
+DESCRIPTION:Criando um nó local na RSK\n\nOnline only\n\nRSVP: https://www
+ .meetup.com/es-ES/rsk-community/events/271259617/\n\nVideo stream: https:/
+ /app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Criando
+  um nó local na RSK</span></div>\n<div><span>Online only</span></div>\n<di
+ v><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-comm
+ unity/events/271259617/\">www.meetup.com/es-ES/rsk-community/events/271259
+ 617/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"htt
+ ps://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk\">app.livestor
+ m.co/iov-labs-1/criando-um-no-local-na-rsk</a></span></div>\n</BODY>\n</HT
+ ML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Criando um nó local na RSK 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-r
+ sk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200612T220700Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-007@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200619T170000Z
+DTSTART:20200619T170000Z
+SUMMARY:Bleumi: Covering the 'last mile' of RSK Ecosystem as a Payment Tec
+ hnology Partner 
+DESCRIPTION:Bleumi: Covering the 'last mile' of RSK Ecosystem as a Payment
+  Technology Partner\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/r
+ sk-community/events/271259908/\n\nVideo stream: https://app.livestorm.co/i
+ ov-labs-1/bleumi-covering-the-last-mile-of-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Bleumi:
+  Covering the 'last mile' of RSK Ecosystem as a Payment Technology Partner
+ </span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</
+ b><span><a href=\"https://www.meetup.com/es-ES/rsk-community/events/271259
+ 908/\">www.meetup.com/es-ES/rsk-community/events/271259908/</a></span></di
+ v>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.
+ co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk\">app.livestorm.co/iov-
+ labs-1/bleumi-covering-the-last-mile-of-rsk</a></span></div>\n</BODY>\n</H
+ TML>
+ORGANIZER;CN="Thomas Arul\, Bleumi CEO\, @thomasarul":mailto:developers@io
+ vlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Bleumi: Covering the 'last mile' of RSK Ecosystem as a Payment
+  Technology Partner 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/bleumi-covering-the-last
+ -mile-of-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200612T223500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-008@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200626T000000Z
+DTSTART:20200626T000000Z
+SUMMARY:De App a dApp:\nAprende como migrar tu App en JavaScript a un RSK 
+ Smart Contract 
+DESCRIPTION:De App a dApp:\nAprende como migrar tu App en JavaScript a un 
+ RSK Smart Contract\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.l
+ ivestorm.co/iov-labs-1/de-app-a-dap\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>De App 
+ a dApp:\nAprende como migrar tu App en JavaScript a un RSK Smart Contract<
+ /span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b
+ ><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"http
+ s://app.livestorm.co/iov-labs-1/de-app-a-dap\">app.livestorm.co/iov-labs-1
+ /de-app-a-dap</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
+ developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:De App a dApp:\nAprende como migrar tu App en JavaScript a un 
+ RSK Smart Contract 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/de-app-a-dap
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200612T064500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-009@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200626T170000Z
+DTSTART:20200626T170000Z
+SUMMARY:RSK made easy with SIMBA Chain 
+DESCRIPTION:RSK made easy with SIMBA Chain\n\nOnline only\n\nRSVP: \n\nVid
+ eo stream: https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-ch
+ ain\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK mad
+ e easy with SIMBA Chain</span></div>\n<div><span>Online only</span></div>\
+ n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;
+ </b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-made-easy-with
+ -simba-chain\">app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain<
+ /a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Tommy Cooksey\, SIMBA Chain Blockchain Architect\, @tommycoo
+ ksey":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK made easy with SIMBA Chain 
+END:VALARM
+CATEGORIES:Demo
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba
+ -chain
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200612T192000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202006-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200630T190000Z
+DTSTART:20200630T190000Z
+SUMMARY:Self Sovereign Identity and RIF 
+DESCRIPTION:Self Sovereign Identity and RIF\n\nOnline only\n\nRSVP: \n\nVi
+ deo stream: https://app.livestorm.co/iov-labs-1/self-sovereign-identity-an
+ d-rif\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Self So
+ vereign Identity and RIF</span></div>\n<div><span>Online only</span></div>
+ \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
+ ;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/self-sovereign-id
+ entity-and-rif\">app.livestorm.co/iov-labs-1/self-sovereign-identity-and-r
+ if</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Milton Berman\, RIF Identity PO\, @miltonberman":mailto:deve
+ lopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Self Sovereign Identity and RIF 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/self-sovereign-identity-
+ and-rif
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200612T064500Z
+END:VEVENT
 END:VCALENDAR
