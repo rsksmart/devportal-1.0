@@ -33,11 +33,6 @@ highlighter: rouge
 
 github: [metadata]
 
-target-blank:
-  add_css_classes: external-link
-  noopener: false
-  noreferrer: false
-
 exclude:
   - .jekyll-cache
   - .bundle
@@ -48,6 +43,5 @@ exclude:
 plugins:
  - jekyll-last-modified-at
  - jekyll-feed
- - jekyll-github-metadata
  - jekyll-sitemap
  - jemoji

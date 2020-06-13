@@ -78,7 +78,7 @@ button:focus {
 
 .navbar.header-scrolled {
   background: white !important;
-  webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
     0 1px 5px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15),
     0 1px 5px rgba(0, 0, 0, 0.075);
@@ -494,17 +494,6 @@ code {
   background: transparent !important;
 }
 
-.main-central-col a[target='_blank']:after {
-  content: '';
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: url(../img/ext-link-main-col.svg);
-  background-repeat: no-repeat;
-  background-size: 10px;
-  margin-left: 5px;
-  margin-bottom: 3px;
-}
 
 #results-container a[target='_blank']:after {
   content: '';
