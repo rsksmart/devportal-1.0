@@ -1767,7 +1767,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118437",
-      "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
+      "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event11.jpg",
       "resources": [],
       "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov",
@@ -1820,7 +1820,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118604",
-      "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
+      "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event6.jpg",
       "resources": [],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=QEKz243x_IY&list=PLSyELPaIli1kpVbzJ3c7metuPBPojGwlG",
@@ -2167,11 +2167,11 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/1de3f667-da89-4880-b634-a28f30e544c2/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
-      "tags": " idioma-english audiencia-developers audiencia-general",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2324,21 +2324,21 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/6be94df7-619c-4b91-b7e6-ece7ce2ec32c/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-blockchain",
-      "tags": " idioma-spanish audiencia-developers audiencia-general",
+      "tags": " idioma-spanish audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event8.jpg",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202006-005/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202006-006",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-06-17T22:00:00.000Z",
-      "lastModified": "2020-06-12T06:45:00.000Z",
+      "lastModified": "2020-06-12T22:07:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271259617/",
       "title": "Criando um nó local na RSK",
       "description": "Como configurar um nó local para construção de aplicações na rede RSK.",
       "category": "Workshop",
@@ -2367,11 +2367,11 @@
     {
       "type": "event/2",
       "id": "202006-007",
-      "version": "1",
+      "version": "3",
       "timestamp": "2020-06-19T17:00:00.000Z",
-      "lastModified": "2020-06-12T06:45:00.000Z",
+      "lastModified": "2020-06-12T22:35:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271259908/",
       "title": "Bleumi: Covering the 'last mile' of RSK Ecosystem as a Payment Technology Partner",
       "description": "As a payment technology partner, Bleumi is enabling blockchain adoption by every-day users in ever-day payment and payout use.\n\n\nWebinar Agenda:\n\nIntroduction to Bleumi Pay (All-in-One Global Digital Currency Payment Platform)\nWhy Bleumi Pay for Digital Currency Payments?\nBleumi Product Roadmap\nDemo of RSK Token Payment using Bleumi Pay on eCommerce Store (WooCommerce / Magento)",
       "category": "Talk",
@@ -2384,13 +2384,13 @@
       "presenters": [
         {
           "name": "Thomas Arul",
-          "description": "CEO",
-          "contact": "@BleumiInc"
+          "description": "Bleumi CEO",
+          "contact": "@thomasarul"
         },
         {
-          "name": "John Melvin",
-          "description": "COO",
-          "contact": "@BleumiInc"
+          "name": "John Melvin Susai",
+          "description": "Bleumi COO",
+          "contact": "@johnmelvins"
         }
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/fca33a5d-83a7-43e0-976d-90367a48846f/form",
@@ -2438,9 +2438,9 @@
     {
       "type": "event/2",
       "id": "202006-009",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-06-26T17:00:00.000Z",
-      "lastModified": "2020-06-12T06:45:00.000Z",
+      "lastModified": "2020-06-12T19:20:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "RSK made easy with SIMBA Chain",
@@ -2456,7 +2456,7 @@
       "presenters": [
         {
           "name": "Tommy Cooksey",
-          "description": "Blockchain Architect",
+          "description": "SIMBA Chain Blockchain Architect",
           "contact": "@tommycooksey"
         },
         {

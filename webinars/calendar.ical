@@ -1987,15 +1987,18 @@ SEQUENCE:0
 DTSTAMP:20200617T220000Z
 DTSTART:20200617T220000Z
 SUMMARY:Criando um nó local na RSK 
-DESCRIPTION:Criando um nó local na RSK\n\nOnline only\n\nRSVP: \n\nVideo s
- tream: https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk\n
+DESCRIPTION:Criando um nó local na RSK\n\nOnline only\n\nRSVP: https://www
+ .meetup.com/es-ES/rsk-community/events/271259617/\n\nVideo stream: https:/
+ /app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Criando
   um nó local na RSK</span></div>\n<div><span>Online only</span></div>\n<di
- v><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b>
- <span><a href=\"https://app.livestorm.co/iov-labs-1/criando-um-no-local-na
- -rsk\">app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk</a></span></
- div>\n</BODY>\n</HTML>
+ v><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-comm
+ unity/events/271259617/\">www.meetup.com/es-ES/rsk-community/events/271259
+ 617/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"htt
+ ps://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk\">app.livestor
+ m.co/iov-labs-1/criando-um-no-local-na-rsk</a></span></div>\n</BODY>\n</HT
+ ML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
@@ -2008,7 +2011,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-r
  sk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200612T064500Z
+LAST-MODIFIED:20200612T220700Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202006-007@developers.rsk.co/
@@ -2018,18 +2021,21 @@ DTSTART:20200619T170000Z
 SUMMARY:Bleumi: Covering the 'last mile' of RSK Ecosystem as a Payment Tec
  hnology Partner 
 DESCRIPTION:Bleumi: Covering the 'last mile' of RSK Ecosystem as a Payment
-  Technology Partner\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.
- livestorm.co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk\n
+  Technology Partner\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/r
+ sk-community/events/271259908/\n\nVideo stream: https://app.livestorm.co/i
+ ov-labs-1/bleumi-covering-the-last-mile-of-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Bleumi:
   Covering the 'last mile' of RSK Ecosystem as a Payment Technology Partner
  </span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</
- b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"htt
- ps://app.livestorm.co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk\">ap
- p.livestorm.co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk</a></span><
- /div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Thomas Arul\, CEO\, @BleumiInc":mailto:developers@iovlabs.or
- g
+ b><span><a href=\"https://www.meetup.com/es-ES/rsk-community/events/271259
+ 908/\">www.meetup.com/es-ES/rsk-community/events/271259908/</a></span></di
+ v>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.
+ co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk\">app.livestorm.co/iov-
+ labs-1/bleumi-covering-the-last-mile-of-rsk</a></span></div>\n</BODY>\n</H
+ TML>
+ORGANIZER;CN="Thomas Arul\, Bleumi CEO\, @thomasarul":mailto:developers@io
+ vlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -2041,7 +2047,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/bleumi-covering-the-last
  -mile-of-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200612T064500Z
+LAST-MODIFIED:20200612T223500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202006-008@developers.rsk.co/
@@ -2090,8 +2096,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  </b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-made-easy-with
  -simba-chain\">app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain<
  /a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Tommy Cooksey\, Blockchain Architect\, @tommycooksey":mailto
- :developers@iovlabs.org
+ORGANIZER;CN="Tommy Cooksey\, SIMBA Chain Blockchain Architect\, @tommycoo
+ ksey":mailto:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -2102,7 +2108,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba
  -chain
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200612T064500Z
+LAST-MODIFIED:20200612T192000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202006-010@developers.rsk.co/
