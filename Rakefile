@@ -52,7 +52,7 @@ task :build_for_test => [] do |task|
 end
 
 desc "check if generated search json file is ok"
-task :test_search_json => [:build_for_test, :rebuild_search_json] do |task|
+task :test_search_json => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
   search_json_string = File.read(SEARCH_JSON_PATH)
   # JSON.parse throws an error if file is invalid JSON
@@ -61,7 +61,7 @@ task :test_search_json => [:build_for_test, :rebuild_search_json] do |task|
 end
 
 desc "check if built html is ok, note that this is slow"
-task :test_html_proofer => [:build_for_test] do |task|
+task :test_html_proofer => [] do |task|
   puts "rake> " + task.name + ": " + task.comment
 
   options = {
@@ -108,7 +108,13 @@ task :lint_markdown => [] do |task|
 end
 
 desc "run all tasks related to testing"
-task :test => [:lint_markdown, :test_search_json, :test_html_proofer] do |task|
+task :test => [:lint_markdown, :rebuild_search_json, :test_search_json, :test_html_proofer] do |task|
+  puts "rake> " + task.name + ": " + task.comment
+  puts "rake> " + task.name + ": OK!"
+end
+
+desc "ci"
+task :ci => [:lint_markdown, :prod, :test_search_json, :test_html_proofer] do |task|
   puts "rake> " + task.name + ": " + task.comment
   puts "rake> " + task.name + ": OK!"
 end
