@@ -50,9 +50,9 @@ jobs:
             - ~/tmp/vendor/bundle
 
       - run:
-          name: Tests
+          name: Build and test
           command: |
-            bundle exec rake test
+            bundle exec rake ci
 
       # so that results from docs_build may be used in docs_deploy
       - persist_to_workspace:
