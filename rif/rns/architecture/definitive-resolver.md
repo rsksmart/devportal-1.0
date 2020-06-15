@@ -3,8 +3,8 @@ layout: rsk
 title: Resolver
 ---
 
-- RSK Mainnet: [0xD87f8121D44F3717d4bAdC50b24E50044f86D64B](https://explorer.rsk.co/address/0xd87f8121d44f3717d4badc50b24e50044f86d64b)
-- RSK Testnet: [0x25C289ccCFFf700c6a38722F4913924fE504De0e](https://explorer.testnet.rsk.co/address/0x25c289cccfff700c6a38722f4913924fe504de0e)
+- RSK Mainnet: [`0xD87f8121D44F3717d4bAdC50b24E50044f86D64B`](https://explorer.rsk.co/address/0xd87f8121d44f3717d4badc50b24e50044f86d64b)
+- RSK Testnet: [`0x25C289ccCFFf700c6a38722F4913924fE504De0e`](https://explorer.testnet.rsk.co/address/0x25c289cccfff700c6a38722f4913924fe504de0e)
 - Repo: [rnsdomains/rns-resolver](https://github.com/rnsdomains/rns-resolver)
 
 ## Features
