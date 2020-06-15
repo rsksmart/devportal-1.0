@@ -1,0 +1,80 @@
+{
+  "id": "devportal",
+  "groups": [
+    {
+      "id": "rns-guide",
+      "rootDir": "rif/rns/guide",
+      "copier": "httpGet",
+      "filters": [],
+      "postProcessors": [
+        {
+          "id": "markdownFrontMatter",
+          "options": {
+            "merge": "localFmRemoteBody"
+          }
+        },
+        {
+          "id": "markdownLinkFixer",
+          "options": {
+            "substitutions": [
+              [
+                "/@ilanolkies/rns-user-guide-intro",
+                "/rif/rns/guide/intro/"
+              ],
+              [
+                "/@ilanolkies/rns-user-guide-setup",
+                "/rif/rns/guide/setup/"
+              ],
+              [
+                "/@jesseclark/Connect-Brave-to-RSK",
+                "/rif/rns/guide/brave/"
+              ],
+              [
+                "/@ilanolkies/rns-user-guide-gs",
+                "/rif/rns/guide/getting-started/"
+              ],
+              [
+                "/@ilanolkies/rns-user-guide-operations",
+                "/rif/rns/guide/operations/"
+              ],
+              [
+                "/@ilanolkies/rns-user-guide-advanced",
+                "/rif/rns/guide/advanced/"
+              ]
+            ]
+          }
+        }
+      ],
+      "files": [
+        {
+          "remote": "https://hackmd.io/@ilanolkies/rns-user-guide/download",
+          "local": "index.md"
+        },
+        {
+          "remote": "https://hackmd.io/@ilanolkies/rns-user-guide-intro/download",
+          "local": "intro.md"
+        },
+        {
+          "remote": "https://hackmd.io/@ilanolkies/rns-user-guide-setup/download",
+          "local": "setup.md"
+        },
+        {
+          "remote": "https://hackmd.io/@jesseclark/Connect-Brave-to-RSK/download",
+          "local": "brave.md"
+        },
+        {
+          "remote": "https://hackmd.io/@ilanolkies/rns-user-guide-gs/download",
+          "local": "getting-started.md"
+        },
+        {
+          "remote": "https://hackmd.io/@ilanolkies/rns-user-guide-operations/download",
+          "local": "operations.md"
+        },
+        {
+          "remote": "https://hackmd.io/@ilanolkies/rns-user-guide-advanced/download",
+          "local": "advanced.md"
+        }
+      ]
+    }
+  ]
+}
