@@ -44,7 +44,7 @@ Resolution protocol:
 
 ### Multicoin address
 
-Overload for the `addr` field for resolvers, which permit resolution of addresses for other blockchains.
+Add multiple `addr` fields for resolvers, which permit resolution of addresses across multiple blockchains.
 
 ```solidity
 function addr(bytes32 node, uint coinType) external view returns(bytes memory);
