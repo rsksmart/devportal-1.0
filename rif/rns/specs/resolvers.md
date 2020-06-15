@@ -92,7 +92,7 @@ function contenthash(bytes32 node) external view returns (bytes memory);
 - `node`: the namehash of the domain to query for.
 - Returns a machine-readable multicodec representation of the content address. The format is specified as follows: `<protoCode uvarint><value []byte>`.
 
-> protoCodes and their meanings are specified in the [multiformats/multicodec](https://github.com/multiformats/multicodec) repository.
+> `protoCode`s and their meanings are specified in the [multiformats/multicodec](https://github.com/multiformats/multicodec) repository.
 
 When updated emits:
 
