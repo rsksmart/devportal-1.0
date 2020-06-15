@@ -74,7 +74,7 @@ function multicall(bytes[] calldata data) external returns(bytes[] memory result
 
 - `data` is an array of ABI-encoded calls to be performed. ([spec](https://solidity.readthedocs.io/en/v0.5.3/abi-spec.html))
 
-An example in JS setting the address and contenthash:
+An example in Javascript, which sets the address and content hash:
 
 ```javascript
 const resolver = new web3.eth.Contract(resolverAbi, resolverAddress)
