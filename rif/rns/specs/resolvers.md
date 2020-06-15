@@ -131,7 +131,7 @@ function ABI(bytes32 node, uint256 contentType) constant returns (uint256, bytes
 
 - `node`: the namehash of the domain to query for.
 - `contentType`: a bitwise OR of the ABI formats accepted by the caller.
-- Returns the content type of the return value and the ABI data. `(0, "")` is returns if the domain has no ABI specified, or do not support any of the requested formats.
+- Returns the content type of the return value and the ABI data. `(0, "")` is returned if the domain has no ABI specified, or does not support any of the requested formats.
 
 > The currently recognised encodings are described in [ABI encodings section](https://eips.ethereum.org/EIPS/eip-205#abi-encodings) EIP-205.
 
