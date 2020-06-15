@@ -21,7 +21,7 @@ Supported resolution protocols:
 
 Architecture:
 
-- Upgradeable contracts using OpenZeppelin Upgrades [OpenZeppelin Upgrades](https://docs.openzeppelin.com/upgrades/2.8/).
+- Upgradeable contracts using [OpenZeppelin Upgrades](https://docs.openzeppelin.com/upgrades/2.8/).
 - Use `setAuthorisation` to enable others set your records.
 - Use `multicall` to perform multiple operations in one call/transaction.
 
