@@ -34,7 +34,7 @@ Architecture:
   - SECP256k1 public keys: `pubkey` and `setPubkey`
   - Text records: `text` and `setText`
   - Interface discovery: `interfaceImplementer` and `setInterfaceImplementer`
-- Administartive
+- Administrative
   - Authorisations: `authorisations`, `setAuthorisation` and `isAuthorised`
   - Multiple calls: `multicall`
 
