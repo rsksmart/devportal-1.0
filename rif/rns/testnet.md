@@ -22,7 +22,7 @@ tags: [rif, rns, testnet]
 
 ### Resolver
 
-[0x25C289ccCFFf700c6a38722F4913924fE504De0e](https://explorer.testnet.rsk.co/address/0x25c289cccfff700c6a38722f4913924fe504de0e)
+[`0x25C289ccCFFf700c6a38722F4913924fE504De0e`](https://explorer.testnet.rsk.co/address/0x25c289cccfff700c6a38722f4913924fe504de0e)
 
 ### RSK Registrar
 
