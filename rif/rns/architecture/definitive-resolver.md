@@ -66,7 +66,7 @@ Returns if the sender is authorised for the given node.
 
 ### Multi calling
 
-This method allows to update more than one record in a single transaction or retrive more than one record in a single call.
+This method allows to update more than one record in a single transaction or retrieve more than one record in a single call.
 
 ```
 function multicall(bytes[] calldata data) external returns(bytes[] memory results);
