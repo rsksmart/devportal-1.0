@@ -141,7 +141,7 @@ When updated emits:
 event ABIChanged(bytes32 indexed node, uint256 indexed contentType);
 ```
 
-> Notice that the udpated content is not emitted. It requires an extra query to get the resource record when logged, but saves gas setting it.
+> Notice that the updated content is not emitted. It requires an extra query to get the resource record when logged, but saves gas setting it.
 
 Interface ID: `0x2203ab56`
 
