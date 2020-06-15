@@ -50,8 +50,8 @@ Add multiple `addr` fields for resolvers, which permit resolution of addresses a
 function addr(bytes32 node, uint coinType) external view returns(bytes memory);
 ```
 
-- `node`: the namehash of the domain to query for.
-- `coinType`: the cryptocurrency coin type index from [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
+- `node`: The name hash of the domain to query for.
+- `coinType`: The cryptocurrency coin type index from [SLIP44](https://github.com/satoshilabs/slips/blob/master/slip-0044.md).
 - Returns the cryptocurency address in its native binary format. A zero-length string is returned if the specified coin ID does not exist on the specified node.
 
 > Detailed descriptions of the binary encodings for several popular chains are provided in the [Address Encoding section](https://eips.ethereum.org/EIPS/eip-2304#address-encoding) of EIP-2304.
