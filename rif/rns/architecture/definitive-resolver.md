@@ -139,7 +139,7 @@ Returns the contenthash associated with an RNS node.
 function setABI(bytes32 node, uint256 contentType, bytes calldata data) external;
 ```
 
-Sets the ABI associated with an ENS node. Nodes may have one ABI of each content type. To remove an ABI, set it to the empty string.
+Sets the ABI associated with an ENS node. Nodes may have one ABI of each content type. To remove an ABI, set its value to an empty string.
 
 ```
 function ABI(bytes32 node, uint256 contentTypes) external view returns (uint256, bytes memory)
