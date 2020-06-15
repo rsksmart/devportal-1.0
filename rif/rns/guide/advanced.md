@@ -22,11 +22,11 @@ To active the advanced mode:
 
 ![](https://i.imgur.com/PHOxh2E.png)
 
-More operations are listed in the [basic operations guide](/@ilanolkies/rns-user-guide-operations).
+More operations are listed in the [basic operations guide](/rif/rns/guide/operations/).
 
 ## Change the controller of the domain
 
-The controller of the domain is who can change resource record contents on it. It can be the authorative owner or not. For a reference about the authroative owner read [transfer domain section](/@ilanolkies/rns-user-guide-operations#Transfer-your-domain).
+The controller of the domain is who can change resource record contents on it. It can be the authorative owner or not. For a reference about the authroative owner read [transfer domain section](/rif/rns/guide/operations/#transfer-your-domain).
 
 > In 'Your addresses' view
 
@@ -123,4 +123,4 @@ Reverse lookups are used to find the domain name of an address, the other way ro
 
 ### Disable reverse resolution lookups
 
-Do the same as in [Enable reverse resolution lookups](#Enable-reverse-resolution-lookups) and set an empty string.
+Do the same as in [Enable reverse resolution lookups](#enable-reverse-resolution-lookups) and set an empty string.

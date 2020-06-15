@@ -7,12 +7,12 @@ tags: rns, guide, rns-user-guide
 
 ## Getting started
 
-- [Register a domain](#Register-a-domain)
-- [Log in to a domain](#Log-in-to-a-domain)
-- [Log out of a domain](#Log-out-of-a-domain)
-- [Change the language](#Change-the-language)
+- [Register a domain](#register-a-domain)
+- [Log in to a domain](#log-in-to-a-domain)
+- [Log out of a domain](#log-out-of-a-domain)
+- [Change the language](#change-the-language)
 
-> Please read the [setup guide](/@ilanolkies/rns-user-guide-setup) if you haven't yet.
+> Please read the [setup guide](/rif/rns/guide/setup/) if you haven't yet.
 
 ### Register a domain
 
@@ -57,7 +57,7 @@ The registration consist of two transactions. The process takes more or less 5 m
 
     ![](https://i.imgur.com/YIv3FcP.png)
     
-You can now click on 'Admin my domain' and following [this guides](/@ilanolkies/rns-user-guide-operations) you can find a lot of things you can do with your domain.
+You can now click on 'Admin my domain' and following [this guides](/rif/rns/guide/operations/) you can find a lot of things you can do with your domain.
 
 ### Log in to a domain
 
@@ -79,7 +79,7 @@ If the domain is already in the list you can login to it by clicking here:
 
 If you want to remove a domain from the list of logged in domains
 
-1. [Login to the domain](#Log-in-to-a-domain)
+1. [Login to the domain](#log-in-to-a-domain)
 
 2. Click in the domain in the top right
 

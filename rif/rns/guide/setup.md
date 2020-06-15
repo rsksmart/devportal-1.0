@@ -10,13 +10,13 @@ tags: rns, guide, rns-user-guide
 
 To use the application and the service we are going to need three things:
 
-1. An internet browser extension wallet. Read [here](#Compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#Connect-Nifty-wallet-to-RSK) and [Metamask wallet](#Connect-Metamask-wallet-to-RSK) to RSK
-2. RBTC to pay for the transaction cost -- [Getting RBTC](#Getting-RBTC)
-3. RIF tokens to buy or extend the expiration of a domain -- [Getting RIF Tokens](#Getting-RIF-Tokens). Also read [here](#Display-amount-of-tokens-in-the-Nifty-wallet) how to view your tokens in your wallet.
+1. An internet browser extension wallet. Read [here](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
+2. RBTC to pay for the transaction cost -- [Getting RBTC](#getting-rbtc)
+3. RIF tokens to buy or extend the expiration of a domain -- [Getting RIF Tokens](#getting-rif-tokens). Also read [here](#display-amount-of-tokens-in-the-nifty-wallet) how to view your tokens in your wallet.
 
 ### Compatible wallets
 
-The RNS Manager can be used seamlessly with the following wallets. To the wallets you need to follow the wallet's setup process and [connect it to RSK network](#Connect-Nifty-wallet-to-RSK).
+The RNS Manager can be used seamlessly with the following wallets. To the wallets you need to follow the wallet's setup process and [connect it to RSK network](#connect-nifty-wallet-to-rsk).
 
 <div style="width: 40%; float: left; text-align: center;
     border: solid #f8f9fa; margin: 5% 30%; border-radius: 2em;">
@@ -96,7 +96,7 @@ Read [this article](https://developers.rsk.co/rif/token/) to find exchagnes and 
 
 To see how many tokens you have in your wallet you should list the RIF Token.
 
-1. Open your wallet ([ensure you are connected to RSK](#Connect-Nifty-wallet-to-RSK))
+1. Open your wallet ([ensure you are connected to RSK](#connect-nifty-wallet-to-rsk))
 2. Go to 'Tokens view'
 
     ![](https://i.imgur.com/xU2f5Fr.png)

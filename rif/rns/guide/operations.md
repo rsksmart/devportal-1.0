@@ -9,21 +9,21 @@ tags: rns, guide, rns-user-guide
 
 This are the basic operations you can perform with the RNS manager:
 
-- [Domain info](#Domain-info)
-    - [Extend your domain expiration time](#Extend-your-domain-expiration-time)
-    - [Transfer your domain](#Transfer-your-domain)
-- [Domain addresses](#Domain-addresses)
-    - [Change the RSK address](#Change-the-RSK-address)
-    - [Add a cryptocurrency address](#Add-a-currency-address)
-    - [Update a cryptocurrency address](#Change-a-currency-address)
-    - [Delete a cryptocurrency address](#Delete-a-currency-address)
-    - [Activate multi chain functionality](#Activate-multi-chain-functionality)
-- [Subdomains](#Subdomains)
-    - [Create a subdomain](#Create-a-subdomain)
-    - [Change a dubdomain's owner](#Change-a-dubdomain’s-owner)
-    - [Delete a subdomain](#Delete-a-subdomain)
+- [Domain info](#domain-info)
+    - [Extend your domain expiration time](#extend-your-domain-expiration-time)
+    - [Transfer your domain](#transfer-your-domain)
+- [Domain addresses](#domain-addresses)
+    - [Change the RSK address](#change-the-rsk-address)
+    - [Add a cryptocurrency address](#add-a-currency-address)
+    - [Update a cryptocurrency address](#change-a-currency-address)
+    - [Delete a cryptocurrency address](#delete-a-currency-address)
+    - [Activate multi chain functionality](#activate-multi-chain-functionality)
+- [Subdomains](#subdomains)
+    - [Create a subdomain](#create-a-subdomain)
+    - [Change a dubdomain's owner](#change-a-dubdomains-owner)
+    - [Delete a subdomain](#delete-a-subdomain)
 
-**First**: to perform any operation you will have to [login to your domain](/@ilanolkies/rns-user-guide-gs). 
+**First**: to perform any operation you will have to [login to your domain](/rif/rns/guide/getting-started/). 
 
 **Second**: browse to admin page. If you are not in the admin page, click on your domain name in the top right, and click over the domain you want to view the admin page of.
 
@@ -33,7 +33,7 @@ This are the basic operations you can perform with the RNS manager:
 
 ![](https://i.imgur.com/EUfvIwQ.png)
 
-More operations are listed in the [advanced operations guide](/@ilanolkies/rns-user-guide-advanced).
+More operations are listed in the [advanced operations guide](/rif/rns/guide/advanced/).
 
 ## Domain info
 
@@ -108,7 +108,7 @@ You can also use your domain in other crypto currencies. You can set your other 
 
 ### Add a currency address
 
-You might need to [activate the multi chain funcitonality](#Activate-multi-chain-functionality) first.
+You might need to [activate the multi chain funcitonality](#activate-multi-chain-functionality) first.
 
 1. Choose the currency you want to add and fill the address. Then click on 'Add'
 
