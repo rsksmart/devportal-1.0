@@ -1,0 +1,40 @@
+---
+layout: rsk
+title: "RNS User guide"
+description: "A user guide for the RIF Name Service"
+tags: rns, guide, rns-user-guide
+---
+
+- [Go to RNS Manager](https://manager.rns.rifos.org)
+- ### [Introduction](intro/)
+    - [Use the testnet](intro/#Use-the-testnet)
+- ### [Setup](setup/)
+    - ### [Compatible wallets](setup/#Compatible-wallets)
+        - [Connect Nifty wallet to RSK](setup/#Connect-Nifty-wallet-to-RSK)
+        - [Connect Metamask wallet to RSK](setup/#Connect-Metamask-wallet-to-RSK)
+        - [Connect Brave to RSK](brave/)
+    - [Getting RBTC](setup/#Getting-RBTC)
+    - ### [Getting RIF Tokens](setup/#Getting-RIF-Tokens)
+        - [Display RIF Token in Nifty wallet](setup/#Display-amount-of-tokens-in-the-Nifty-wallet)
+        - [Display RIF Token in Metamask wallet](setup/#Display-amount-of-tokens-in-the-Metamask-wallet)
+        - [Display RIF Token in Brave wallet](brave/#Add-the-RIF-token)
+- ### [Getting started](getting-started/)
+    - [Register a domain](getting-started/#Register-a-domain)
+    - [Log in to a domain](getting-started/#Log-in-to-a-domain)
+    - [Log out of a domain](getting-started/#Log-out-of-a-domain)
+    - [Change the language](getting-started/#Change-the-language)
+- ### [Operations](operations)
+    - ### [Domain info](operations/#Domain-info)
+        - [Extend your domain expiration time](operations/#Extend-your-domain-expiration-time)
+        - [Transfer your domain](operations/#Transfer-your-domain)
+    - [Domain addresses](operations/#Domain-addresses)
+        - [Change the RSK address](operations/#Change-the-RSK-address)
+        - [Add a cryptocurrency address](operations/#Add-a-currency-address)
+        - [Update a cryptocurrency address](operations/#Change-a-currency-address)
+        - [Delete a cryptocurrency address](operations/#Delete-a-currency-address)
+        - [Activate multi chain functionality](operations/#Activate-multi-chain-functionality)
+    - ### [Subdomains](operations/#Subdomains)
+        - [Create a subdomain](operations/#Create-a-subdomain)
+        - [Change a dubdomain's owner](operations/#Change-a-dubdomain’s-owner)
+        - [Delete a subdomain](operations/#Delete-a-subdomain)
+- [Advanced operations](advanced/)
