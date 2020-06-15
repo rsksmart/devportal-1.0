@@ -10,7 +10,7 @@ tags: [rif, rns, mainnet]
 
 ## Resolver
 
-[0xD87f8121D44F3717d4bAdC50b24E50044f86D64B](https://explorer.rsk.co/address/0xd87f8121d44f3717d4badc50b24e50044f86d64b)
+[`0xD87f8121D44F3717d4bAdC50b24E50044f86D64B`](https://explorer.rsk.co/address/0xd87f8121d44f3717d4badc50b24e50044f86d64b)
 
 ### RSK Registrar
 
