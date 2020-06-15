@@ -192,7 +192,7 @@ function text(bytes32 node, string key) constant returns (string text);
 - `key`: the text data key to query.
 - Returns the associated text data. If the key is not present, the zero-length string is returned.
 
-> For supported keys reffer to [initial recommended keys section](https://eips.ethereum.org/EIPS/eip-634#initial-recommended-keys) in EIP-634.
+> For supported keys refer to the [initial recommended keys section of EIP-634](https://eips.ethereum.org/EIPS/eip-634#initial-recommended-keys).
 
 When updated emits:
 
