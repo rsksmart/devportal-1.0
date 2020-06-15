@@ -181,4 +181,4 @@ Sets an interface associated with a name. Setting the address to 0 restores the 
 function interfaceImplementer(bytes32 node, bytes4 interfaceID) external view returns (address);
 ```
 
-Returns the address of a contract that implements the specified interface for this name. If an implementer has not been set for this interfaceID and name, the resolver will query the contract at `addr()`. If `addr()` is set, a contract exists at that address, and that contract implements EIP165 and returns `true` for the specified interfaceID, its address will be returned.
+Returns the address of a contract that implements the specified interface for this name. If an implementer has not been set for this `interfaceID` and name, the resolver will query the contract at `addr()`. If `addr()` is set, a contract exists at that address, and that contract implements [EIP-165](https://eips.ethereum.org/EIPS/eip-165) and returns `true` for the specified `interfaceID`, its address will be returned.
