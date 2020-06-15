@@ -151,7 +151,7 @@ Resolution protocol:
 
 1. Query the resolver address to the registry.
 2. Query `ABI` to the resolver contract with a bitwise OR of the ABI formats accepted by the caller.
-3. Check for non `(0, "")` response.
+3. Check for a response that is not  `(0, "")`.
 
 ### SECP256k1 public keys
 
