@@ -11,24 +11,24 @@ tags: rns, guide, rns-user-guide
 
 The wallet in the Brave browser is not as prominent as it is with Chrome or Firefox Nifty and Metamask plugins. The wallet is located under the Main Menu / Crypto Wallet:
 
-![](https://i.imgur.com/ee210Rg.jpg)
+![](/rif/rns/guide/images/ee210Rg.jpg)
 
 
 If this is the first time you have set up Brave it will ask you to create a wallet. This article assumes that you have already a wallet. Since the wallet is hidden under the main menu, I would suggest creating a bookmark for it on the bookmark row. To do this, on Windows press `[CTRL]+[D]` or on Mac, `[Apple]+[D]`.
 
-![](https://i.imgur.com/l8Xc37x.jpg)
+![](/rif/rns/guide/images/l8Xc37x.jpg)
 
 
 This should place Wallets on the bookmark bar for easy access. This will make it easier to switch between different networks and accounts.
 
-![](https://i.imgur.com/1iLUKEa.jpg)
+![](/rif/rns/guide/images/1iLUKEa.jpg)
 
 
 ## Connect to the RSK Mainnet and Testnet
 
 On the wallet screen, towards the right, it should show that it is connected to the Main Ethereum Network. If you toggle the dropdown, towards the bottom there an option to connect to a "Custom RPC".
 
-![](https://i.imgur.com/kGfNmmn.jpg)
+![](/rif/rns/guide/images/kGfNmmn.jpg)
 
 
 The New Network tab will open and ask some questions about the network. For RKS Mainnet, use the following settings:
@@ -43,7 +43,7 @@ The New Network tab will open and ask some questions about the network. For RKS 
 
 **Example:**
 
-![](https://i.imgur.com/AUhoBtJ.jpg)
+![](/rif/rns/guide/images/AUhoBtJ.jpg)
 
 Hit Save and close settings. 
 
@@ -51,7 +51,7 @@ Hit Save and close settings.
 
 If you closed out of the wallet, navigate back to your Crypto Wallets by using the bookmark you set. Under "Account 1" you will see your address and a copy button. Copy your address to the clipboard.
 
-![](https://i.imgur.com/gldRM3h.jpg)
+![](/rif/rns/guide/images/gldRM3h.jpg)
 
 This is the address that you will use in the next step of getting RBTC.
 
@@ -59,7 +59,7 @@ This is the address that you will use in the next step of getting RBTC.
 
 Next, we need to add the RIF token which is used in the RSK network. While connected to the RSK Mainnet, on the Accounts page, towards the bottom there is a heading "Don't see your Tokens?" and a link to "Add Token":
 
-![](https://i.imgur.com/nDoJWDt.png)
+![](/rif/rns/guide/images/nDoJWDt.png)
 
 
 Click the Add Token link and then click on the "Custom Token" tab. In the first field, Token Contract Address put the RIF Token Address:
@@ -71,7 +71,7 @@ Click the Add Token link and then click on the "Custom Token" tab. In the first 
 
 When you press tab, or  move to the next field, Token Symbol and Decimals of Precision will autofill with the token's information:
 
-![](https://i.imgur.com/60JzGfm.jpg)
+![](/rif/rns/guide/images/60JzGfm.jpg)
 
 
 Click "Next" and then "Add Tokens.".

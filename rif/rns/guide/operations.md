@@ -27,11 +27,11 @@ This are the basic operations you can perform with the RNS manager:
 
 **Second**: browse to admin page. If you are not in the admin page, click on your domain name in the top right, and click over the domain you want to view the admin page of.
 
-![](https://i.imgur.com/fPcHVx3.png)
+![](/rif/rns/guide/images/fPcHVx3.png)
 
 **Third**: you can browse on the admin sections by clicking over tehir names at the left of the screen.
 
-![](https://i.imgur.com/EUfvIwQ.png)
+![](/rif/rns/guide/images/EUfvIwQ.png)
 
 More operations are listed in the [advanced operations guide](/rif/rns/guide/advanced/).
 
@@ -56,11 +56,11 @@ Each extra year over the three years cost 1 RIF token.
 
 1. Click on the renew button. This will prompt a duration selector.
 
-    ![](https://i.imgur.com/DQS1Uoy.png)
+    ![](/rif/rns/guide/images/DQS1Uoy.png)
 
 2. Choose the time you want to extend your domain for and click on 'Renew domain'.
 
-    ![](https://i.imgur.com/ndauxbs.png)
+    ![](/rif/rns/guide/images/ndauxbs.png)
 
 3. Submit the transaction.
 
@@ -70,11 +70,11 @@ Each extra year over the three years cost 1 RIF token.
 
 1. Click in the button to edit the owner of the domain.
 
-    ![](https://i.imgur.com/UC7W8MJ.png)
+    ![](/rif/rns/guide/images/UC7W8MJ.png)
 
 2. Input the address you want to transfer the domain to and click on transfer
     
-    ![](https://i.imgur.com/FwPzIrL.png)
+    ![](/rif/rns/guide/images/FwPzIrL.png)
 
 3. Submit the transaction.
 
@@ -96,11 +96,11 @@ You can also use your domain in other crypto currencies. You can set your other 
 
 1. Click in the button to edit the RSK Address.
 
-    ![](https://i.imgur.com/9gYozvR.png)
+    ![](/rif/rns/guide/images/9gYozvR.png)
 
 2. Input the address you want to set as the address of your domain.
 
-    ![](https://i.imgur.com/Bm0E1Zo.png)
+    ![](/rif/rns/guide/images/Bm0E1Zo.png)
 
 3. Submit the transaction.
 
@@ -112,7 +112,7 @@ You might need to [activate the multi chain funcitonality](#activate-multi-chain
 
 1. Choose the currency you want to add and fill the address. Then click on 'Add'
 
-    ![](https://i.imgur.com/Bl5Pm2b.png)
+    ![](/rif/rns/guide/images/Bl5Pm2b.png)
 
 2. Submit the transaction.
 
@@ -123,11 +123,11 @@ You might need to [activate the multi chain funcitonality](#activate-multi-chain
 
 1. Click in the button to edit the the desired address.
 
-    ![](https://i.imgur.com/L6BsW5T.png)
+    ![](/rif/rns/guide/images/L6BsW5T.png)
 
 2. Input the address you want to set as the address of your domain and click 'Change'.
 
-    ![](https://i.imgur.com/8sWbcTL.png)
+    ![](/rif/rns/guide/images/8sWbcTL.png)
 
 3. Submit the transaction.
 
@@ -137,11 +137,11 @@ You might need to [activate the multi chain funcitonality](#activate-multi-chain
 
 1. Click in the button to delete the the desired address.
 
-    ![](https://i.imgur.com/dckQkoR.png)
+    ![](/rif/rns/guide/images/dckQkoR.png)
 
 2. Click on 'Delete'
 
-    ![](https://i.imgur.com/JA6uXnn.png)
+    ![](/rif/rns/guide/images/JA6uXnn.png)
 
 3. Submit the transaction.
 
@@ -153,7 +153,7 @@ This might appear the first time you use the RNS Manager.
 
 1. Click on 'Activate' bellow the _Multi chain_ title
 
-    ![](https://i.imgur.com/c8x3kSK.png)
+    ![](/rif/rns/guide/images/c8x3kSK.png)
     
 2. Submit the transaction.
 
@@ -169,7 +169,7 @@ The owner of the subdomain is the account that can set the addresses for that su
 
 1. Fill the name and the owner for the subdomain, then click on 'Create'
 
-![](https://i.imgur.com/N1rqLu5.png)
+![](/rif/rns/guide/images/N1rqLu5.png)
 
 2. Submit the transaction.
 
@@ -179,11 +179,11 @@ The owner of the subdomain is the account that can set the addresses for that su
 
 1. Click in the button to edit the the desired subdomain.
 
-    ![](https://i.imgur.com/vOM1GLI.png)
+    ![](/rif/rns/guide/images/vOM1GLI.png)
 
 2. Input the address you want to set as the owner of the subdomain and click 'Change'.
 
-    ![](https://i.imgur.com/FkAs3K6.png)
+    ![](/rif/rns/guide/images/FkAs3K6.png)
 
 3. Submit the transaction.
 
@@ -193,11 +193,11 @@ The owner of the subdomain is the account that can set the addresses for that su
 
 1. Click in the button to delete the the desired subdomain.
 
-    ![](https://i.imgur.com/Yq0Ke3T.png)
+    ![](/rif/rns/guide/images/Yq0Ke3T.png)
 
 2. Click on 'Delete'
 
-    ![](https://i.imgur.com/2ZoPhtG.png)
+    ![](/rif/rns/guide/images/2ZoPhtG.png)
 
 3. Submit the transaction.
 

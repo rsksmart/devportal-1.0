@@ -48,11 +48,11 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
 1. Open your wallet.
 2. Open network selctor
 
-    ![](https://i.imgur.com/6PNTmiK.png)
+    ![](/rif/rns/guide/images/6PNTmiK.png)
 
 3. Choose 'RSK' option
 
-    ![](https://i.imgur.com/VJEs1qu.png)
+    ![](/rif/rns/guide/images/VJEs1qu.png)
 
 <div class="alert alert-info">
     To use the RSK testnet network choose the 'RSK Testnet' option instead of RSK.
@@ -99,15 +99,15 @@ To see how many tokens you have in your wallet you should list the RIF Token.
 1. Open your wallet ([ensure you are connected to RSK](#connect-nifty-wallet-to-rsk))
 2. Go to 'Tokens view'
 
-    ![](https://i.imgur.com/xU2f5Fr.png)
+    ![](/rif/rns/guide/images/xU2f5Fr.png)
 
 3. Click on 'Add token'
 
-    ![](https://i.imgur.com/YFS4mlr.png)
+    ![](/rif/rns/guide/images/YFS4mlr.png)
 
 4. Select RIF Token
 
-    ![](https://i.imgur.com/FBR4RZU.png)
+    ![](/rif/rns/guide/images/FBR4RZU.png)
     
     > You are also able to choose RNS Token. This represents the amount of .rsk domains owned by your wallet, you can add it too.
 

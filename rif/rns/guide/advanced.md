@@ -20,7 +20,7 @@ This are the advanced operations you can perform with the RNS manager:
 
 To active the advanced mode:
 
-![](https://i.imgur.com/PHOxh2E.png)
+![](/rif/rns/guide/images/PHOxh2E.png)
 
 More operations are listed in the [basic operations guide](/rif/rns/guide/operations/).
 
@@ -32,11 +32,11 @@ The controller of the domain is who can change resource record contents on it. I
 
 1. Click in the button to edit the the controller of your domain.
 
-    ![](https://i.imgur.com/oLAHoXz.png)
+    ![](/rif/rns/guide/images/oLAHoXz.png)
 
 2. Input the address you want to set as the controller and click 'Change'.
 
-    ![](https://i.imgur.com/wrJU3AY.png)
+    ![](/rif/rns/guide/images/wrJU3AY.png)
 
 3. Submit the transaction.
 
@@ -52,11 +52,11 @@ This operations are performed in 'Resolver' view.
 
 1. Click in the button to edit the the resolver of your domain.
 
-    ![](https://i.imgur.com/ATDRLiU.png)
+    ![](/rif/rns/guide/images/ATDRLiU.png)
 
 2. Input the address you want to set as the resolver and click 'Change'.
 
-    ![](https://i.imgur.com/NKafXx4.png)
+    ![](/rif/rns/guide/images/NKafXx4.png)
 
 3. Submit the transaction.
 
@@ -66,7 +66,7 @@ This operations are performed in 'Resolver' view.
 
 1. Choose desired option for the record type to add in 'Add recrods' section and fill with the desired content. Then click on 'Add'.
 
-    ![](https://i.imgur.com/SkwVC6X.png)
+    ![](/rif/rns/guide/images/SkwVC6X.png)
 
 2. Submit the transaction.
 
@@ -76,12 +76,12 @@ This operations are performed in 'Resolver' view.
 
 1. Click in the button to edit the desired record.
 
-    ![](https://i.imgur.com/1PRJT9e.png)
+    ![](/rif/rns/guide/images/1PRJT9e.png)
 
 
 2. Input the new value you want to set and click 'Change'.
 
-    ![](https://i.imgur.com/EehT2FM.png)
+    ![](/rif/rns/guide/images/EehT2FM.png)
 
 3. Submit the transaction.
 
@@ -91,11 +91,11 @@ This operations are performed in 'Resolver' view.
 
 1. Click in the button to delete the the desired record.
 
-    ![](https://i.imgur.com/k3W65Xr.png)
+    ![](/rif/rns/guide/images/k3W65Xr.png)
 
 2. Click on 'Delete'
 
-    ![](https://i.imgur.com/YS6t3cG.png)
+    ![](/rif/rns/guide/images/YS6t3cG.png)
 
 3. Submit the transaction.
 
@@ -110,11 +110,11 @@ Reverse lookups are used to find the domain name of an address, the other way ro
 
 1. Click in the button to edit the reverse.
 
-    ![](https://i.imgur.com/fBlwVLo.png)
+    ![](/rif/rns/guide/images/fBlwVLo.png)
 
 2. Input your domain and click on 'Change'.
 
-    ![](https://i.imgur.com/Off77FM.png)
+    ![](/rif/rns/guide/images/Off77FM.png)
 
 3. Submit the transaction.
 
