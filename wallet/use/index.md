@@ -81,9 +81,26 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
 
 ## How to use
 
-- [Jaxx](/develop/apps/wallets/jaxx)
-- [Ledger](/develop/apps/wallets/ledger)
-- [MyCrypto](/develop/apps/wallets/mycrypto)
-- [Nifty](/develop/apps/wallets/nifty)
-- [Metamask](/develop/apps/wallets/metamask)
-- [RPC](/develop/apps/wallets/json-rpc)
+- [Jaxx](/wallet/use/jaxx)
+- [Ledger](/wallet/use/ledger)
+- [MyCrypto](/wallet/use/mycrypto)
+- [Nifty](/wallet/use/nifty)
+- [Metamask](/wallet/use/metamask)
+- [RPC](/wallet/use/json-rpc)
+
+
+## Compatibility Matrix
+
+In the following matrix you can see the different features by wallet.
+
+| Wallet | | RSK Checksum | | RSK dPath | | Customizable dPath |
+| :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
+| Ledger | | ✔ | | ✔ | | ❌ |
+| Trezor | | ✔ | | ✔ | | ❌ |
+| MyCrypto | | ✔ | | ✔ | | ✔ |
+| MEW | | ✔ | | ✔ | | ✔ |
+| Nifty | | ✔ | | ✔ | | ❌ |
+| Metamask | | ❌ | | ❌ | | ❌ |
+| rWallet | | ✔ | | ✔ | | ✔ |
+| Edge | | ✔ | | ✔ | | ❌ |
+| Mellow | | ✔ | | ✔ | | ❌ |
