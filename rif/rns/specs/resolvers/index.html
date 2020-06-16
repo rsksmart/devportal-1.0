@@ -304,6 +304,7 @@
                 <ul>
                   <li class="hide-mobile"><a href="../../architecture/">Architecture</a></li>
                   <li><a href="../../architecture/registry/">Registry</a></li>
+                  <li><a href="../../architecture/Resolver/">Resolver</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../../architecture/rsk-registrar/">.rsk Registrar</a>
@@ -314,15 +315,6 @@
                       <li><a href="../../architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
                       <li><a href="../../architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
                       <li><a href="../../architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fa fa-chevron-right"></span>
-                    <a href="../../architecture/Resolver/">Resolver</a>
-                    <ul>
-                      <li class="hide-mobile"><a href="../../architecture/Resolver/">Resolver</a></li>
-                      <li><a href="../../architecture/MultiCryptoResolver/">Multi-Crypto Resolver</a></li>
-                      <li><a href="../../architecture/RSKResolver/">RSK Resolver</a></li>
                     </ul>
                   </li>
                   <li>
@@ -742,9 +734,9 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-01-02 06:21:24 +0000T00:00:00.000Z">2020-01-02</time> | -->
-     1' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/specs/resolvers/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2020-06-15 17:41:49 +0000T00:00:00.000Z">2020-06-15</time> | -->
+     8' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/specs/resolvers.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
@@ -976,6 +968,7 @@
                 <ul>
                   <li class="hide-mobile"><a href="../../architecture/">Architecture</a></li>
                   <li><a href="../../architecture/registry/">Registry</a></li>
+                  <li><a href="../../architecture/Resolver/">Resolver</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../../architecture/rsk-registrar/">.rsk Registrar</a>
@@ -986,15 +979,6 @@
                       <li><a href="../../architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
                       <li><a href="../../architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
                       <li><a href="../../architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <span class="fa fa-chevron-right"></span>
-                    <a href="../../architecture/Resolver/">Resolver</a>
-                    <ul>
-                      <li class="hide-mobile"><a href="../../architecture/Resolver/">Resolver</a></li>
-                      <li><a href="../../architecture/MultiCryptoResolver/">Multi-Crypto Resolver</a></li>
-                      <li><a href="../../architecture/RSKResolver/">RSK Resolver</a></li>
                     </ul>
                   </li>
                   <li>
@@ -1373,40 +1357,285 @@
 
 <p>Resolvers must implement <a href="https://eips.ethereum.org/EIPS/eip-165" rel="external noopener noreferrer" target="_blank">ERC-165</a> interface detection standard. <code class="highlighter-rouge">supportsInterface</code> method must return if the <code class="highlighter-rouge">interfaceID</code> queried is simply equal to the signature hash of the function that resolves the desired resource record.</p>
 
-<p>Currently standardized resolver interfaces are specified in the table below.</p>
+<p>Currently standardized resolver interfaces are specified below.</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Interface name</td>
-      <td>Description</td>
-      <td>Query via</td>
-      <td>Interface id</td>
-      <td>Specs</td>
-    </tr>
-    <tr>
-      <td>addr</td>
-      <td>RSK Address</td>
-      <td><code class="highlighter-rouge">addr(bytes32 node)</code></td>
-      <td><code class="highlighter-rouge">0x3b3b57de</code></td>
-      <td><a href="addr-resolver">Address resolver</a></td>
-    </tr>
-    <tr>
-      <td>hash</td>
-      <td>32 bytes</td>
-      <td><code class="highlighter-rouge">hash(bytes32 node)</code></td>
-      <td><code class="highlighter-rouge">0xd8389dc5</code></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>chain addr</td>
-      <td>Chain Address</td>
-      <td><code class="highlighter-rouge">chainAddr(bytes32,bytes4)</code></td>
-      <td><code class="highlighter-rouge">0x8be4b5f6</code></td>
-      <td><a href="chain-addr-resolver">Chain address resolver</a></td>
-    </tr>
-  </tbody>
-</table>
+<blockquote>
+  <p>Check out <a href="../../architecture/definitive-resolver/">definitive resolver</a> for implementation details.</p>
+</blockquote>
+
+<h3 id="contract-address">Contract address</h3>
+
+<p>Provides the contract address for the specified domain.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">addr</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">)</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">address</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">node</code>: the namehash of the domain to query for.</li>
+  <li>Returns the contract address of the specified domain. A zero address is returned if the node has no address specified.</li>
+</ul>
+
+<p>When updated emits</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">AddrChanged</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">a</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Interface ID: <code class="highlighter-rouge">0x3b3b57de</code></p>
+
+<p>Specification: <a href="https://eips.ethereum.org/EIPS/eip-137#resolver-specification" rel="external noopener noreferrer" target="_blank">EIP-137</a></p>
+
+<p>Resolution protocol:</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">addr</code> to the resolver contract.</li>
+  <li>Check for non zero-address response.</li>
+</ol>
+
+<blockquote>
+  <p>No modifications to the adoption of this protocol.</p>
+</blockquote>
+
+<h3 id="multicoin-address">Multicoin address</h3>
+
+<p>Add multiple <code class="highlighter-rouge">addr</code> fields for resolvers, which permit resolution of addresses across multiple blockchains.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">addr</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">coinType</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">view</span> <span class="nx">returns</span><span class="p">(</span><span class="nx">bytes</span> <span class="nx">memory</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">node</code>: The name hash of the domain to query for.</li>
+  <li>
+<code class="highlighter-rouge">coinType</code>: The cryptocurrency coin type index from <a href="https://github.com/satoshilabs/slips/blob/master/slip-0044.md" rel="external noopener noreferrer" target="_blank">SLIP44</a>.</li>
+  <li>Returns the cryptocurency address in its native binary format. A zero-length string is returned if the specified coin ID does not exist on the specified node.</li>
+</ul>
+
+<blockquote>
+  <p>Detailed descriptions of the binary encodings for several popular chains are provided in the <a href="https://eips.ethereum.org/EIPS/eip-2304#address-encoding" rel="external noopener noreferrer" target="_blank">Address Encoding section</a> of EIP-2304.</p>
+</blockquote>
+
+<p>When updated emits</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">AddressChanged</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">uint</span> <span class="nx">coinType</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">newAddress</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Specification: <a href="https://eips.ethereum.org/EIPS/eip-2304" rel="external noopener noreferrer" target="_blank">EIP-2304</a></p>
+
+<p>Interface ID: <code class="highlighter-rouge">0xf1cb7e06</code></p>
+
+<p>Deprecates: <a href="https://github.com/rnsdomains/RNSIPs/blob/master/IPs/RNSIP03.md" rel="external noopener noreferrer" target="_blank">RNSIP-03</a></p>
+
+<p>Resolution protocol:</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">addr</code> to the resolver contract with the specified coin type.</li>
+  <li>Check for non zero-length string response.</li>
+</ol>
+
+<p>Resolvers implementing this interface may utilise a fallback strategy regarding backward compatibility.</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">addr</code> to the resolver contract with the specified coin type.</li>
+  <li>If zero-length string is returned, query <code class="highlighter-rouge">chainAddr</code> to the resolver contract.</li>
+  <li>Check for non zero-length string response.</li>
+</ol>
+
+<h3 id="contenthash">Contenthash</h3>
+
+<p>System of mapping names to network and content addresses.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">contenthash</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">bytes</span> <span class="nx">memory</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">node</code>: the namehash of the domain to query for.</li>
+  <li>Returns a machine-readable multicodec representation of the content address. The format is specified as follows: <code class="highlighter-rouge">&lt;protoCode uvarint&gt;&lt;value []byte&gt;</code>.</li>
+</ul>
+
+<blockquote>
+  <p><code class="highlighter-rouge">protoCode</code>s and their meanings are specified in the <a href="https://github.com/multiformats/multicodec" rel="external noopener noreferrer" target="_blank">multiformats/multicodec</a> repository.</p>
+</blockquote>
+
+<p>When updated emits:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">ContenthashChanged</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">hash</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Interface ID: <code class="highlighter-rouge">0xbc1c58d1</code></p>
+
+<p>Specification: <a href="https://eips.ethereum.org/EIPS/eip-1577" rel="external noopener noreferrer" target="_blank">EIP-1577</a></p>
+
+<p>Deprecates: <code class="highlighter-rouge">content</code> and <a href="https://eips.ethereum.org/EIPS/eip-1577" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">multihash</code></a> fields.</p>
+
+<p>Resolution protocol:</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">contenthash</code> to the resolver contract.</li>
+  <li>Check for non zero-length string response.</li>
+</ol>
+
+<p>Resolvers implementing this interface may utilise a fallback strategy regarding backward compatibility.</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">contenthash</code> to the resolver contract.</li>
+  <li>If zero-length string is returned, query <code class="highlighter-rouge">multihash</code> to the resolver contract.</li>
+  <li>If zero-length string is returned, query <code class="highlighter-rouge">content</code> to the resolver contract.</li>
+  <li>Check for non zero-length string response.</li>
+</ol>
+
+<h3 id="contract-abi">Contract ABI</h3>
+
+<p>Easy lookup of contract interfaces by callers</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">ABI</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">contentType</span><span class="p">)</span> <span class="nx">constant</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">memory</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">node</code>: the namehash of the domain to query for.</li>
+  <li>
+<code class="highlighter-rouge">contentType</code>: a bitwise OR of the ABI formats accepted by the caller.</li>
+  <li>Returns the content type of the return value and the ABI data. <code class="highlighter-rouge">(0, "")</code> is returned if the domain has no ABI specified, or does not support any of the requested formats.</li>
+</ul>
+
+<blockquote>
+  <p>The currently recognised encodings are described in <a href="https://eips.ethereum.org/EIPS/eip-205#abi-encodings" rel="external noopener noreferrer" target="_blank">ABI encodings section</a> EIP-205.</p>
+</blockquote>
+
+<p>When updated emits:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">ABIChanged</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">indexed</span> <span class="nx">contentType</span><span class="p">);</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Notice that the updated content is not emitted. It requires an extra query to get the resource record when logged, but saves gas setting it.</p>
+</blockquote>
+
+<p>Interface ID: <code class="highlighter-rouge">0x2203ab56</code></p>
+
+<p>Specification: <a href="https://eips.ethereum.org/EIPS/eip-205" rel="external noopener noreferrer" target="_blank">EIP-205</a></p>
+
+<p>Resolution protocol:</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">ABI</code> to the resolver contract with a bitwise OR of the ABI formats accepted by the caller.</li>
+  <li>Check for a response that is not  <code class="highlighter-rouge">(0, "")</code>.</li>
+</ol>
+
+<h3 id="secp256k1-public-keys">SECP256k1 public keys</h3>
+
+<p>Permits the lookup of SECP256k1 public keys.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">pubkey</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">)</span> <span class="nx">constant</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">bytes32</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">y</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">node</code>: the namehash of the domain to query for.</li>
+  <li>Returns the coordinates of an uncompressed SECP256k1 curve point comprising the public key. A <code class="highlighter-rouge">(0, 0)</code> value is returned if the domain has no pubkey specified.</li>
+</ul>
+
+<p>When updated emits:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">PubkeyChanged</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">x</span><span class="p">,</span> <span class="nx">bytes32</span> <span class="nx">y</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Interface ID: <code class="highlighter-rouge">0xc8690233</code></p>
+
+<p>Specification: <a href="https://github.com/ethereum/EIPs/pull/619" rel="external noopener noreferrer" target="_blank">EIP-619</a></p>
+
+<p>Resolution protocol:</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">pubkey</code> to the resolver contract.</li>
+  <li>Check for non <code class="highlighter-rouge">(0, 0)</code> response.</li>
+</ol>
+
+<h3 id="text-records">Text records</h3>
+
+<p>Permits the lookup of arbitrary key-value text data.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">text</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">string</span> <span class="nx">key</span><span class="p">)</span> <span class="nx">constant</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">string</span> <span class="nx">text</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">node</code>: the namehash of the domain to query for.</li>
+  <li>
+<code class="highlighter-rouge">key</code>: the text data key to query.</li>
+  <li>Returns the associated text data. If the key is not present, the zero-length string is returned.</li>
+</ul>
+
+<blockquote>
+  <p>For supported keys refer to the <a href="https://eips.ethereum.org/EIPS/eip-634#initial-recommended-keys" rel="external noopener noreferrer" target="_blank">initial recommended keys section of EIP-634</a>.</p>
+</blockquote>
+
+<p>When updated emits:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">TextChanged</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">string</span> <span class="nx">indexed</span> <span class="nx">indexedKey</span><span class="p">,</span> <span class="nx">string</span> <span class="nx">key</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Interface ID: <code class="highlighter-rouge">0x59d1d43c</code></p>
+
+<p>Specification: <a href="https://eips.ethereum.org/EIPS/eip-634" rel="external noopener noreferrer" target="_blank">EIP-634</a></p>
+
+<p>Resolution protocol:</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">text</code> to the resolver contract with the specified key.</li>
+  <li>Check for non zero-length string response.</li>
+</ol>
+
+<h3 id="interface-discovery">Interface discovery</h3>
+
+<p>Defines a method of associating contract interfaces with domains and addresses, and of discovering those interfaces.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">interfaceImplementer</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">bytes4</span> <span class="nx">interfaceID</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">address</span><span class="p">);</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">node</code>: the namehash of the domain to query for.</li>
+  <li>
+<code class="highlighter-rouge">interfaceID</code>: The EIP 165 interface ID to query for.</li>
+  <li>Returns the address of a contract that implements the specified interface for the given domain. A zero-address value is returned if there is no interface matching that interface ID for that node.</li>
+</ul>
+
+<p>When updated emits:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">event</span> <span class="nx">InterfaceChanged</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">indexed</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">bytes4</span> <span class="nx">indexed</span> <span class="nx">interfaceID</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">implementer</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Interface ID: <code class="highlighter-rouge">0xb8f2bbb4</code></p>
+
+<p>Specifitcation: <a href="https://eips.ethereum.org/EIPS/eip-1844" rel="external noopener noreferrer" target="_blank">EIP-1844</a></p>
+
+<p>Resolution protocol:</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">interfaceImplementer</code> to the resolver contract with the specified interface ID.</li>
+  <li>Check for non zero-address response.</li>
+</ol>
+
+<p>Resolvers implementing this interface may utilise a fallback strategy. This strategy has nothing to do with backward compatibility.</p>
+
+<ol>
+  <li>Query the resolver address to the registry.</li>
+  <li>Query <code class="highlighter-rouge">interfaceImplementer</code> to the resolver contract with the specified interface ID.</li>
+  <li>If zero-address string is returned, query <code class="highlighter-rouge">addr</code> to the resolver contract and query <code class="highlighter-rouge">supportsInterface</code> to the given contract address.</li>
+  <li>Check for non zero-address response.</li>
+</ol>
 
 
                   
