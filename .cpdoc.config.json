@@ -14,6 +14,12 @@
           }
         },
         {
+          "id": "markdownExternalImageReplacer",
+          "options": {
+            "imageDir": "rif/rns/guide/images"
+          }
+        },
+        {
           "id": "markdownLinkFixer",
           "options": {
             "substitutions": [
