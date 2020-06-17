@@ -17,7 +17,7 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
 
 <div style="width: 40%; float: left; text-align: center;
     border: solid #f8f9fa; margin: 5% 30%; border-radius: 2em;">
-    <img src="https://i.imgur.com/xacetSm.png" style="width: 70%" />
+    ![](/rif/rns/guide/images/xacetSm.png)
     <p>
         Nifty wallet <span class="badge badge-primary">recommended</span><br/>
         [Get the wallet](https://www.poa.network/for-users/nifty-wallet)
@@ -25,7 +25,7 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
 </div>
 
 <div style="width: 40%; float: left;  text-align: center; border: solid #f8f9fa; margin: 5%; border-radius: 2em;">
-    <img src="https://i.imgur.com/JVWXQca.png"style="width: 50%; margin: 10%" />
+    ![](/rif/rns/guide/images/JVWXQca.png)
     <p>
         Metamask<br />
         [Get the wallet](https://metamask.io/)
@@ -33,7 +33,7 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
 </div>
 
 <div style="width: 40%; float: left;  text-align: center; border: solid #f8f9fa; margin: 5%; border-radius: 2em;">
-    <img src="https://i.imgur.com/CaM23s8.png" style="width: 50%; margin: 10%; height: 135px; width: auto" />
+    ![](/rif/rns/guide/images/CaM23s8.png)
     <p>
         Brave's Wallet<br />
         [Get the browser](https://brave.com/)

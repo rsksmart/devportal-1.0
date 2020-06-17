@@ -17,13 +17,6 @@
           "id": "markdownFirstHeadingRemover"
         },
         {
-          "id": "markdownExternalImageReplacer",
-          "options": {
-            "skipDownloads": true,
-            "imageDir": "rif/rns/guide/images"
-          }
-        },
-        {
           "id": "markdownLinkFixer",
           "options": {
             "substitutions": [
@@ -52,6 +45,13 @@
                 "/rif/rns/guide/advanced/"
               ]
             ]
+          }
+        },
+        {
+          "id": "markdownExternalImageReplacer",
+          "options": {
+            "skipDownloads": true,
+            "imageDir": "rif/rns/guide/images"
           }
         }
       ],
