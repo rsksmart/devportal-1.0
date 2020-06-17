@@ -77,7 +77,7 @@
       "gitUrl": "git@github.com:rsksmart/rsk-starter-box.git",
       "httpUrl": "https://raw.githubusercontent.com/rsksmart/rsk-starter-box",
       "head": "refs/heads/master",
-      "commit": "1bee4a5b6fa150216da5bc6bfd60bcde27827333",
+      "commit": "21de544951f41600521344804ebcd29d2fef1e76",
       "commands": [
         {
           "name": "copySingle",
