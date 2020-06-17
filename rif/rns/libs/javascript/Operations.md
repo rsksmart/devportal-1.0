@@ -120,9 +120,9 @@ async contenthash(domain: string): Promise<DecodedContenthash>
 
 **Returns**
 
-- `DecodedContenthash`: object with the following fields.
-  - `decoded`: the decoded contenthash
-  - `protocolType`: could be `ipfs`, `bzz`, `onion` or `onion3`.
+- `DecodedContenthash`: Object with the following fields.
+  - `decoded`: The decoded contenthash
+  - `protocolType`: May be either `ipfs`, `bzz`, `onion`, or `onion3`.
 
 **Throws**
 
@@ -150,7 +150,7 @@ async contenthash(domain: string): Promise<DecodedContenthash>
 **Parameters**
 
 - `domain`: Domain to associate the given contenthash.
-- `contenthash`: Contenthash to be associated to the given domain. Must be decoded, the library will encode and save it.
+- `contenthash`: Contenthash to be associated with the given domain. Must be decoded, the library will encode and save it.
 - `options`: Optional. See [options](#options) for details.
 
 **Returns**
@@ -433,7 +433,7 @@ await rns.subdomains.create('testing.rsk', 'example', newOwnerAddress, resolutio
 
 ## Options
 
-`options` is an optional parameter in every method that submits one or more transactions. 
+`options` is an optional parameter in every method that submits one or more transactions.
 
 This object contains the following fields:
 
