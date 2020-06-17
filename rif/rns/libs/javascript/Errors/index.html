@@ -742,8 +742,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-04-23 02:52:08 +0000T00:00:00.000Z">2020-04-23</time> | -->
-     3' to read |
+    <!--time role="presentation" datetime="2020-06-17 05:16:14 +0000T00:00:00.000Z">2020-06-17</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/libs/javascript/Errors.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1519,6 +1519,25 @@
 <p><strong>Message</strong>: The resolver does not implement setChainAddr method</p>
 
 <p><strong>Description</strong>: Domain resolver should implement <a href="../../../architecture/MultiCryptoResolver#setchainaddr"><code class="highlighter-rouge">setChainAddr</code></a> interface.</p>
+
+<h2 id="kb025"><code class="highlighter-rouge">KB025</code></h2>
+
+<p><strong>Message</strong>: The contenthash protocol is not supported</p>
+
+<p><strong>Description</strong>: The contenthash associated with the given domain could not be decoded because it has an invalid protocol. The <code class="highlighter-rouge">protocolType</code> must be <code class="highlighter-rouge">ipfs</code>, <code class="highlighter-rouge">bzz</code>, <code class="highlighter-rouge">onion</code> or <code class="highlighter-rouge">onion3</code>.</p>
+
+<h2 id="kb026"><code class="highlighter-rouge">KB026</code></h2>
+
+<p><strong>Message</strong>: No contenthash resolution set</p>
+
+<p><strong>Description</strong>: The given domain has a supported resolver, but the contenthash for the given domain has not been set.</p>
+
+<h2 id="kb027"><code class="highlighter-rouge">KB027</code></h2>
+
+<p><strong>Message</strong>: No contenthash interface</p>
+
+<p><strong>Description</strong>: The resolver does not implement the contenthash interface.</p>
+
 
 
                   

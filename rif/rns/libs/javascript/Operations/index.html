@@ -742,8 +742,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-06-07 14:45:13 +0000T00:00:00.000Z">2020-06-07</time> | -->
-     10' to read |
+    <!--time role="presentation" datetime="2020-06-17 05:16:14 +0000T00:00:00.000Z">2020-06-17</time> | -->
+     11' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/libs/javascript/Operations.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1363,9 +1363,11 @@
 
 <ul>
   <li><a href="#addr"><code class="highlighter-rouge">addr</code></a></li>
+  <li><a href="#setaddr"><code class="highlighter-rouge">setAddr</code></a></li>
+  <li><a href="#contenthash"><code class="highlighter-rouge">contenthash</code></a></li>
+  <li><a href="#setcontenthash"><code class="highlighter-rouge">setContenthash</code></a></li>
   <li><a href="#reverse"><code class="highlighter-rouge">reverse</code></a></li>
   <li><a href="#setreverse"><code class="highlighter-rouge">setReverse</code></a></li>
-  <li><a href="#setaddr"><code class="highlighter-rouge">setAddr</code></a></li>
   <li><a href="#setresolver"><code class="highlighter-rouge">setResolver</code></a></li>
   <li>
 <a href="#available"><code class="highlighter-rouge">available</code></a> (for domains)</li>
@@ -1429,7 +1431,7 @@
 
 <p><strong>Signature</strong></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setAddr</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">addr</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">chainId</span><span class="p">?:</span> <span class="nx">ChainId</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">TransactionReceipt</span><span class="o">&gt;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setAddr</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">addr</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">chainId</span><span class="p">?:</span> <span class="nx">ChainId</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
 <p><strong>Parameters</strong></p>
@@ -1449,7 +1451,8 @@
 <p><strong>Returns</strong></p>
 
 <ul>
-  <li><code class="highlighter-rouge">TransactionReceipt</code></li>
+  <li>
+<code class="highlighter-rouge">string</code>: hash of the submitted transaction.</li>
 </ul>
 
 <p><strong>Throws</strong></p>
@@ -1474,6 +1477,89 @@
 <p>Set an address for Bitcoin:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rns</span><span class="p">.</span><span class="nx">setAddr</span><span class="p">(</span><span class="dl">'</span><span class="s1">testing.rsk</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2</span><span class="dl">'</span><span class="p">,</span> <span class="nx">ChainId</span><span class="p">.</span><span class="nx">BITCOIN</span><span class="p">).</span><span class="nx">then</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Done!</span><span class="dl">'</span><span class="p">))</span>
+</code></pre></div></div>
+<h3 id="contenthash"><code class="highlighter-rouge">contenthash</code></h3>
+
+<p>Get decoded contenthash and protocol type associated of a given domain</p>
+
+<p><strong>Signature</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">contenthash</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">DecodedContenthash</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">domain</code>: Domain to be resolved.</li>
+</ul>
+
+<p><strong>Returns</strong></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">DecodedContenthash</code>: Object with the following fields.
+    <ul>
+      <li>
+<code class="highlighter-rouge">decoded</code>: The decoded contenthash</li>
+      <li>
+<code class="highlighter-rouge">protocolType</code>: May be either <code class="highlighter-rouge">ipfs</code>, <code class="highlighter-rouge">bzz</code>, <code class="highlighter-rouge">onion</code>, or <code class="highlighter-rouge">onion3</code>.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Throws</strong></p>
+
+<ul>
+  <li><a href="../Errors#kb003"><code class="highlighter-rouge">KB003</code></a></li>
+  <li><a href="../Errors#kb025"><code class="highlighter-rouge">KB025</code></a></li>
+  <li><a href="../Errors#kb026"><code class="highlighter-rouge">KB026</code></a></li>
+  <li><a href="../Errors#kb027"><code class="highlighter-rouge">KB027</code></a></li>
+</ul>
+
+<p><strong>Examples</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rns</span><span class="p">.</span><span class="nx">contenthash</span><span class="p">(</span><span class="dl">'</span><span class="s1">testing.rsk</span><span class="dl">'</span><span class="p">).</span><span class="nx">then</span><span class="p">(({</span> <span class="nx">decoded</span><span class="p">,</span> <span class="nx">protocolType</span> <span class="p">}))</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`</span><span class="p">${</span><span class="nx">protocolType</span><span class="p">}</span><span class="s2">://</span><span class="p">${</span><span class="nx">decoded</span><span class="p">}</span><span class="s2">)`</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="setcontenthash"><code class="highlighter-rouge">setContenthash</code></h3>
+
+<p>Set contenthash of a given domain</p>
+
+<p><strong>Signature</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">contenthash</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">DecodedContenthash</span><span class="o">&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Parameters</strong></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">domain</code>: Domain to associate the given contenthash.</li>
+  <li>
+<code class="highlighter-rouge">contenthash</code>: Contenthash to be associated with the given domain. Must be decoded, the library will encode and save it.</li>
+  <li>
+<code class="highlighter-rouge">options</code>: Optional. See <a href="#options">options</a> for details.</li>
+</ul>
+
+<p><strong>Returns</strong></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">string</code>: Hash of the executed transaction</li>
+</ul>
+
+<p><strong>Throws</strong></p>
+
+<ul>
+  <li><a href="../Errors#kb003"><code class="highlighter-rouge">KB003</code></a></li>
+  <li><a href="../Errors#kb015"><code class="highlighter-rouge">KB015</code></a></li>
+  <li><a href="../Errors#kb027"><code class="highlighter-rouge">KB027</code></a></li>
+</ul>
+
+<p><strong>Examples</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rns</span><span class="p">.</span><span class="nx">setContenthash</span><span class="p">(</span><span class="dl">'</span><span class="s1">testing.rsk</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ipfs://QmRAQB6YaCyidP37UdDnjFY5vQuiBrcqdyoW1CuDgwxkD4</span><span class="dl">'</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h3 id="reverse"><code class="highlighter-rouge">reverse</code></h3>
@@ -1517,7 +1603,7 @@
 
 <p><strong>Signature</strong></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setName</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">TransactionReceipt</span><span class="o">&gt;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setName</span><span class="p">(</span><span class="nx">name</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
 <p><strong>Parameters</strong></p>
@@ -1532,7 +1618,8 @@
 <p><strong>Returns</strong></p>
 
 <ul>
-  <li><code class="highlighter-rouge">TransactionReceipt</code></li>
+  <li>
+<code class="highlighter-rouge">string</code>: hash of the submitted transaction.</li>
 </ul>
 
 <p><strong>Throws</strong></p>
@@ -1559,7 +1646,7 @@
 
 <p><strong>Signature</strong></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setResolver</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">resolver</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">TransactionReceipt</span><span class="o">&gt;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setResolver</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">resolver</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
 <p><strong>Parameters</strong></p>
@@ -1576,7 +1663,8 @@
 <p><strong>Returns</strong></p>
 
 <ul>
-  <li><code class="highlighter-rouge">TransactionReceipt</code></li>
+  <li>
+<code class="highlighter-rouge">string</code>: hash of the submitted transaction.</li>
 </ul>
 
 <p><strong>Throws</strong></p>
@@ -1686,7 +1774,7 @@ It submits a <a href="../../../architecture/registry#set-a-subdomain"><code clas
 
 <p><strong>Signature</strong></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setOwner</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">label</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">owner</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">TransactionReceipt</span><span class="o">&gt;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">setOwner</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">label</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">owner</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
 <p><strong>Parameters</strong></p>
@@ -1707,7 +1795,8 @@ It submits a <a href="../../../architecture/registry#set-a-subdomain"><code clas
 <p><strong>Returns</strong></p>
 
 <ul>
-  <li><code class="highlighter-rouge">TransactionReceipt</code></li>
+  <li>
+<code class="highlighter-rouge">string</code>: hash of the submitted transaction.</li>
 </ul>
 
 <p><strong>Throws</strong></p>
@@ -1741,7 +1830,7 @@ It may send one, two, or three transactions, based on the value of the sent para
 
 <p><strong>Signature</strong></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">create</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">label</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">owner</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">addr</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">TransactionReceipt</span><span class="o">&gt;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">async</span> <span class="nx">create</span><span class="p">(</span><span class="nx">domain</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">label</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">owner</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">addr</span><span class="p">:</span> <span class="nx">string</span><span class="p">,</span> <span class="nx">options</span><span class="p">?:</span> <span class="nx">Options</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="nx">string</span><span class="o">&gt;</span>
 </code></pre></div></div>
 
 <p><strong>Parameters</strong></p>
@@ -1775,7 +1864,7 @@ It may send one, two, or three transactions, based on the value of the sent para
 
 <ul>
   <li>
-<code class="highlighter-rouge">TransactionReceipt</code> of the latest transaction</li>
+<code class="highlighter-rouge">string</code>: hash of the last transaction.</li>
 </ul>
 
 <p><strong>Throws</strong></p>
