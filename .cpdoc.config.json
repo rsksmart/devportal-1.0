@@ -14,8 +14,12 @@
           }
         },
         {
+          "id": "markdownFirstHeadingRemover"
+        },
+        {
           "id": "markdownExternalImageReplacer",
           "options": {
+            "skipDownloads": true,
             "imageDir": "rif/rns/guide/images"
           }
         },
