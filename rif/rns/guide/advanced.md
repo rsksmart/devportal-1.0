@@ -5,8 +5,6 @@ description: "How to change the controller of the domain, change the resolver of
 tags: rns, guide, rns-user-guide
 ---
 
-# Advanced operations
-
 This are the advanced operations you can perform with the RNS manager:
 
 - Change the controller of the domain

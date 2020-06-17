@@ -5,8 +5,6 @@ description: "How to login to your domain, extend your domain expiration time, t
 tags: rns, guide, rns-user-guide
 ---
 
-# Operations
-
 This are the basic operations you can perform with the RNS manager:
 
 - [Domain info](#domain-info)
@@ -84,7 +82,7 @@ Each extra year over the three years cost 1 RIF token.
     <strong>Warning:</strong> this operation transfers full control of the domain. once executed there is no going back.
 </div>
 
-## Your addresses
+## Domain addresses
 
 Here you can do a the basic setup for your domain. You can choose the RSK address you want your domain to map to.
 

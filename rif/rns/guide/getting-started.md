@@ -5,8 +5,6 @@ description: "How to register a domain, log in to a domain, log out of a domain,
 tags: rns, guide, rns-user-guide
 ---
 
-## Getting started
-
 - [Register a domain](#register-a-domain)
 - [Log in to a domain](#log-in-to-a-domain)
 - [Log out of a domain](#log-out-of-a-domain)

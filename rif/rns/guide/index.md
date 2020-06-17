@@ -5,9 +5,6 @@ description: "A user guide for the RIF Name Service"
 tags: rns, guide, rns-user-guide
 ---
 
-RNS User guide
-===
-
 - <a href="https://manager.rns.rifos.org" target="_blank">Go to RNS Manager</a>
 - ### [Introduction](/rif/rns/guide/intro/)
     - [Use the testnet](/rif/rns/guide/intro/#use-the-testnet)

@@ -5,8 +5,6 @@ description: "How to locate Brave's Wallet, connect to the RSK Mainnet and Testn
 tags: rns, guide, rns-user-guide
 ---
 
-# Connect Brave to the RSK Network
-
 ## Locate Brave's Wallet
 
 The wallet in the Brave browser is not as prominent as it is with Chrome or Firefox Nifty and Metamask plugins. The wallet is located under the Main Menu / Crypto Wallet:

@@ -5,9 +5,6 @@ description: "Compatible wallets, connect Nifty wallet to RSK, connect Metamask 
 tags: rns, guide, rns-user-guide
 ---
 
-## Setup
-
-
 To use the application and the service we are going to need three things:
 
 1. An internet browser extension wallet. Read [here](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
