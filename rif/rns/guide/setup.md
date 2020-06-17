@@ -20,7 +20,7 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
     <img src="https://i.imgur.com/xacetSm.png" style="width: 70%" />
     <p>
         Nifty wallet <span class="badge badge-primary">recommended</span><br/>
-        <a href="https://www.poa.network/for-users/nifty-wallet" target="_blank">Get the wallet</a>
+        [Get the wallet](https://www.poa.network/for-users/nifty-wallet)
     </p>
 </div>
 
@@ -28,7 +28,7 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
     <img src="https://i.imgur.com/JVWXQca.png"style="width: 50%; margin: 10%" />
     <p>
         Metamask<br />
-        <a href="https://metamask.io/" target="_blank">Get the wallet</a>
+        [Get the wallet](https://metamask.io/)
     </p>
 </div>
 
@@ -36,7 +36,7 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
     <img src="https://i.imgur.com/CaM23s8.png" style="width: 50%; margin: 10%; height: 135px; width: auto" />
     <p>
         Brave's Wallet<br />
-        <a href="https://brave.com/" target="_blank">Get the browser</a>
+        [Get the browser](https://brave.com/)
     </p>
 </div>
 
@@ -66,7 +66,7 @@ As RNS works on top of RSK blockchain, to pay for transactional fees you will ne
 Read [this article](https://developers.rsk.co/rsk/rbtc/) to find exchagnes and more RBTC token information.
 
 <div class="alert alert-info">
-    If you are using the testnet you can get free founds in the <a href="https://faucet.rsk.co/" target="_blank">RSK faucet</a>
+    If you are using the testnet you can get free founds in the [RSK faucet](https://faucet.rsk.co/)
 </div>
 
 ### Getting RIF Tokens
@@ -86,7 +86,7 @@ Each extra year over the three years cost 1 RIF token.
 Read [this article](https://developers.rsk.co/rif/token/) to find exchagnes and more RIF token information.
 
 <div class="alert alert-info">
-    If you are using the testnet you can get free founds in the <a href="https://faucet.rifos.org/" target="_blank">RIF faucet</a>
+    If you are using the testnet you can get free founds in the [RIF faucet](https://faucet.rifos.org/)
 </div>
 
 #### Display amount of tokens in the Nifty wallet

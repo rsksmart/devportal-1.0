@@ -16,7 +16,7 @@ tags: rns, guide, rns-user-guide
 
 The registration consist of two transactions. The process takes more or less 5 minutes. Let's start:
 
-1. Go to the <a href="https://manager.rns.rifos.org" target="_blank">RNS Manager</a>. Type the domain you ant to register and click on 'Search'.
+1. Go to the [RNS Manager](https://manager.rns.rifos.org). Type the domain you ant to register and click on 'Search'.
 
     ![](/rif/rns/guide/images/6jIRPrD.png)
 
@@ -61,7 +61,7 @@ You can now click on 'Admin my domain' and following [this guides](/rif/rns/guid
 
 If you already own a domain, use the top right selector to login with it. You can login to more than one domain and switch between accounts to perform the different operations you need.
 
-1. Go to the <a href="https://manager.rns.rifos.org" target="_blank">RNS Manager</a>. Click on login to right selector.
+1. Go to the [RNS Manager](https://manager.rns.rifos.org). Click on login to right selector.
 
     ![](/rif/rns/guide/images/06rLWpH.png)
 
@@ -89,7 +89,7 @@ If you want to remove a domain from the list of logged in domains
 
 ### Change the language
 
-1. Go to the <a href="https://manager.rns.rifos.org" target="_blank">RNS Manager</a>
+1. Go to the [RNS Manager](https://manager.rns.rifos.org)
 
 2. Change the language with the top right selector
 
