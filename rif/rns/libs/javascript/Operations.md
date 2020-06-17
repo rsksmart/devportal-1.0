@@ -7,9 +7,11 @@ tags: rns, javascript
 ## Available operations
 
   - [`addr`](#addr)
+  - [`setAddr`](#setaddr)
+  - [`contenthash`](#contenthash)
+  - [`setContenthash`](#setcontenthash)
   - [`reverse`](#reverse)
   - [`setReverse`](#setreverse)
-  - [`setAddr`](#setaddr)
   - [`setResolver`](#setresolver)
   - [`available`](#available) (for domains)
   - [`subdomains.available`](#available-for-subdomains)
@@ -65,7 +67,7 @@ Set the address of a given domain and chain. If `chainId` is not provided, it se
 **Signature**
 
 ```javascript
-async setAddr(domain: string, addr: string, chainId?: ChainId, options?: Options): Promise<TransactionReceipt>
+async setAddr(domain: string, addr: string, chainId?: ChainId, options?: Options): Promise<string>
 ```
 
 **Parameters**
@@ -77,7 +79,7 @@ async setAddr(domain: string, addr: string, chainId?: ChainId, options?: Options
 
 **Returns**
 
-- `TransactionReceipt`
+- `string`: hash of the submitted transaction.
 
 **Throws**
 
@@ -101,6 +103,70 @@ Set an address for Bitcoin:
 
 ```javascript
 rns.setAddr('testing.rsk', '1BvBMSEYstWetqTFn5Au4m4GFg7xJaNVN2', ChainId.BITCOIN).then(() => console.log('Done!'))
+```
+### `contenthash`
+
+Get decoded contenthash and protocol type associated of a given domain
+
+**Signature**
+
+```javascript
+async contenthash(domain: string): Promise<DecodedContenthash>
+```
+
+**Parameters**
+
+- `domain`: Domain to be resolved.
+
+**Returns**
+
+- `DecodedContenthash`: object with the following fields.
+  - `decoded`: the decoded contenthash
+  - `protocolType`: could be `ipfs`, `bzz`, `onion` or `onion3`.
+
+**Throws**
+
+- [`KB003`](/rif/rns/libs/javascript/Errors#kb003)
+- [`KB025`](/rif/rns/libs/javascript/Errors#kb025)
+- [`KB026`](/rif/rns/libs/javascript/Errors#kb026)
+- [`KB027`](/rif/rns/libs/javascript/Errors#kb027)
+
+**Examples**
+
+```javascript
+rns.contenthash('testing.rsk').then(({ decoded, protocolType })) => console.log(`${protocolType}://${decoded})`)
+```
+
+### `setContenthash`
+
+Set contenthash of a given domain
+
+**Signature**
+
+```javascript
+async contenthash(domain: string): Promise<DecodedContenthash>
+```
+
+**Parameters**
+
+- `domain`: Domain to associate the given contenthash.
+- `contenthash`: Contenthash to be associated to the given domain. Must be decoded, the library will encode and save it.
+- `options`: Optional. See [options](#options) for details.
+
+**Returns**
+
+- `string`: Hash of the executed transaction
+
+**Throws**
+
+- [`KB003`](/rif/rns/libs/javascript/Errors#kb003)
+- [`KB015`](/rif/rns/libs/javascript/Errors#kb015)
+- [`KB027`](/rif/rns/libs/javascript/Errors#kb027)
+
+**Examples**
+
+```javascript
+rns.setContenthash('testing.rsk', 'ipfs://QmRAQB6YaCyidP37UdDnjFY5vQuiBrcqdyoW1CuDgwxkD4').then(console.log)
 ```
 
 ### `reverse`
@@ -139,7 +205,7 @@ Set reverse resolution with the given name for the current address using [setNam
 **Signature**
 
 ```javascript
-async setName(name: string, options?: Options): Promise<TransactionReceipt>
+async setName(name: string, options?: Options): Promise<string>
 ```
 
 **Parameters**
@@ -149,7 +215,7 @@ async setName(name: string, options?: Options): Promise<TransactionReceipt>
 
 **Returns**
 
-- `TransactionReceipt`
+- `string`: hash of the submitted transaction.
 
 **Throws**
 
@@ -175,7 +241,7 @@ Set [resolver](/rif/rns/architecture/registry#setresolver) of a given domain.
 **Signature**
 
 ```javascript
-async setResolver(domain: string, resolver: string, options?: Options): Promise<TransactionReceipt>
+async setResolver(domain: string, resolver: string, options?: Options): Promise<string>
 ```
 
 **Parameters**
@@ -186,7 +252,7 @@ async setResolver(domain: string, resolver: string, options?: Options): Promise<
 
 **Returns**
 
-- `TransactionReceipt`
+- `string`: hash of the submitted transaction.
 
 **Throws**
 
@@ -277,7 +343,7 @@ It submits a [`setSubnodeOwner`](/rif/rns/architecture/registry#set-a-subdomain)
 **Signature**
 
 ```javascript
-async setOwner(domain: string, label: string, owner: string, options?: Options): Promise<TransactionReceipt>
+async setOwner(domain: string, label: string, owner: string, options?: Options): Promise<string>
 ```
 
 **Parameters**
@@ -289,7 +355,7 @@ async setOwner(domain: string, label: string, owner: string, options?: Options):
 
 **Returns**
 
-- `TransactionReceipt`
+- `string`: hash of the submitted transaction.
 
 **Throws**
 
@@ -320,7 +386,7 @@ It may send one, two, or three transactions, based on the value of the sent para
 **Signature**
 
 ```javascript
-async create(domain: string, label: string, owner: string, addr: string, options?: Options): Promise<TransactionReceipt>
+async create(domain: string, label: string, owner: string, addr: string, options?: Options): Promise<string>
 ```
 
 **Parameters**
@@ -341,7 +407,7 @@ async create(domain: string, label: string, owner: string, addr: string, options
 
 **Returns**
 
-- `TransactionReceipt` of the latest transaction
+- `string`: hash of the last transaction.
 
 **Throws**
 

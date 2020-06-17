@@ -160,3 +160,22 @@ RNS Library extends the [`Error` class](https://developer.mozilla.org/es/docs/We
 **Message**: The resolver does not implement setChainAddr method
 
 **Description**: Domain resolver should implement [`setChainAddr`](/rif/rns/architecture/MultiCryptoResolver#setchainaddr) interface.
+
+## `KB025`
+
+**Message**: The contenthash protocol is not supported
+
+**Description**: The contentsh associated to the given domain could not be decoded because it has an invalid protocol. The `protocolType` must be `ipfs`, `bzz`, `onion` or `onion3`.
+
+## `KB026`
+
+**Message**: No contenthash resolution set
+
+**Description**: The given domain has a supported resolver, but the contenthash for the given domain has not been set
+
+## `KB027`
+
+**Message**: No contenthash interface
+
+**Description**: The resolver does not implement the contentash interface
+
