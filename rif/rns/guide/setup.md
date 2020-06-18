@@ -7,13 +7,13 @@ tags: rns, guide, rns-user-guide
 
 To use the application and the service we are going to need three things:
 
-1. An internet browser extension wallet. Read [here](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
-2. RBTC to pay for the transaction cost -- [Getting RBTC](#getting-rbtc)
-3. RIF tokens to buy or extend the expiration of a domain -- [Getting RIF Tokens](#getting-rif-tokens). Also read [here](#display-amount-of-tokens-in-the-nifty-wallet) how to view your tokens in your wallet.
+1. An internet browser extension wallet. Read [Compatible wallets](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
+2. RBTC to pay for the transaction cost. See [Getting RBTC](#getting-rbtc)
+3. RIF tokens to buy or extend the expiration of a domain. See [Getting RIF Tokens](#getting-rif-tokens). Also, read [here](#display-amount-of-tokens-in-the-nifty-wallet) on how to view your tokens in your wallet.
 
 ### Compatible wallets
 
-The RNS Manager can be used seamlessly with the following wallets. To the wallets you need to follow the wallet's setup process and [connect it to RSK network](#connect-nifty-wallet-to-rsk).
+The RNS Manager can be used seamlessly with the following wallets. To setup your wallet, follow the instructions in [connect to RSK network](#connect-nifty-wallet-to-rsk).
 
 <div style="width: 40%; float: left; text-align: center;
     border: solid #f8f9fa; margin: 5% 30%; border-radius: 2em;">
@@ -43,31 +43,28 @@ The RNS Manager can be used seamlessly with the following wallets. To the wallet
 #### Connect Nifty wallet to RSK
 
 1. Open your wallet.
-2. Open network selctor
+2. Open network selector
 
-    ![](/rif/rns/guide/images/6PNTmiK.png)
+    ![Setup - Nifty wallet network selector](/rif/rns/guide/images/setup-nifty-wallet-network-selector.png)
 
 3. Choose 'RSK' option
 
-    ![](/rif/rns/guide/images/VJEs1qu.png)
+    ![Setup - Nifty wallet network selector RSK](/rif/rns/guide/images/setup-nifty-wallet-network-selector-rsk.png)
 
-<div class="alert alert-info">
-    To use the RSK testnet network choose the 'RSK Testnet' option instead of RSK.
-</div>
+> To use the RSK testnet network choose the 'RSK Testnet' option instead of RSK.
 
 #### Connect Metamask wallet to RSK
 
-Find the guides [here](https://developers.rsk.co/develop/apps/wallets/metamask/).
+Find the guide on [Metamask](https://developers.rsk.co/develop/apps/wallets/metamask/).
 
 ### Getting RBTC
 
-As RNS works on top of RSK blockchain, to pay for transactional fees you will need RBTC toknes. This are going to be used in the registration and for updating any configuration on the domain.
+Since RNS works on top of RSK blockchain, to pay for transactional fees you will need RBTC tokens. This is going to be used in the registration and for updating any configuration on the domain.
 
-Read [this article](https://developers.rsk.co/rsk/rbtc/) to find exchagnes and more RBTC token information.
+Read the [R-BTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
 
-<div class="alert alert-info">
-    If you are using the testnet you can get free founds in the [RSK faucet](https://faucet.rsk.co/)
-</div>
+
+> If you are using the testnet you can get free funds in the [RSK faucet](https://faucet.rsk.co/)
 
 ### Getting RIF Tokens
 
@@ -83,11 +80,9 @@ The RNS domains have a value in RIF tokens. The cost is described in this table:
 
 Each extra year over the three years cost 1 RIF token.
 
-Read [this article](https://developers.rsk.co/rif/token/) to find exchagnes and more RIF token information.
+Read [RIF Token](https://developers.rsk.co/rif/token/) to find exchagnes and more RIF token information.
 
-<div class="alert alert-info">
-    If you are using the testnet you can get free founds in the [RIF faucet](https://faucet.rifos.org/)
-</div>
+> If you are using the testnet you can get free funds in the [RIF faucet](https://faucet.rifos.org/)
 
 #### Display amount of tokens in the Nifty wallet
 
@@ -96,15 +91,15 @@ To see how many tokens you have in your wallet you should list the RIF Token.
 1. Open your wallet ([ensure you are connected to RSK](#connect-nifty-wallet-to-rsk))
 2. Go to 'Tokens view'
 
-    ![](/rif/rns/guide/images/xU2f5Fr.png)
+    ![Setup - Nifty wallet Tokens View](/rif/rns/guide/images/setup-nifty-wallet-tokens-view.png)
 
 3. Click on 'Add token'
 
-    ![](/rif/rns/guide/images/YFS4mlr.png)
+    ![Setup - Nifty wallet Add token](/rif/rns/guide/images/setup-nifty-wallet-add-token.png)
 
 4. Select RIF Token
 
-    ![](/rif/rns/guide/images/FBR4RZU.png)
+    ![Setup - Nifty wallet RIF Token](/rif/rns/guide/images/setup-nifty-wallet-rif-token.png)
     
     > You are also able to choose RNS Token. This represents the amount of .rsk domains owned by your wallet, you can add it too.
 
@@ -112,4 +107,4 @@ To see how many tokens you have in your wallet you should list the RIF Token.
 
 #### Display amount of tokens in the Metamask wallet
 
-Read [this guide](https://docs.matic.network/newbies/conf-custom-tokens-metamask/) to add a custom token to the wallet. You should add the token address dispalyed [here](https://developers.rsk.co/rif/token).
+Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/custom-tokens) to add a custom token to the wallet. You should add the token address displayed [here](https://developers.rsk.co/rif/token).

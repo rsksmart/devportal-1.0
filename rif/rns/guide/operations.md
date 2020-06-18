@@ -5,7 +5,7 @@ description: "How to login to your domain, extend your domain expiration time, t
 tags: rns, guide, rns-user-guide
 ---
 
-This are the basic operations you can perform with the RNS manager:
+These are the basic operations you can perform with the RNS manager:
 
 - [Domain info](#domain-info)
     - [Extend your domain expiration time](#extend-your-domain-expiration-time)
@@ -18,18 +18,18 @@ This are the basic operations you can perform with the RNS manager:
     - [Activate multi chain functionality](#activate-multi-chain-functionality)
 - [Subdomains](#subdomains)
     - [Create a subdomain](#create-a-subdomain)
-    - [Change a dubdomain's owner](#change-a-dubdomains-owner)
+    - [Change a subdomain's owner](#change-a-subdomains-owner)
     - [Delete a subdomain](#delete-a-subdomain)
 
-**First**: to perform any operation you will have to [login to your domain](/rif/rns/guide/getting-started/). 
+**First**: To perform any operation you will have to [login to your domain](/rif/rns/guide/getting-started/).
 
-**Second**: browse to admin page. If you are not in the admin page, click on your domain name in the top right, and click over the domain you want to view the admin page of.
+**Second**: Browse to the admin page. If you are not on the admin page, click on your domain name in the top right, and click over the domain you want to view the admin page of.
 
-![](/rif/rns/guide/images/fPcHVx3.png)
+![Operations - Browse to the RNS admin page](/rif/rns/guide/images/operations-browse-to-the-rns-admin-page.png)
 
-**Third**: you can browse on the admin sections by clicking over tehir names at the left of the screen.
+**Third**: You can browse on the admin sections by clicking on their names at the left of the screen.
 
-![](/rif/rns/guide/images/EUfvIwQ.png)
+![Operations - Browse admin section](/rif/rns/guide/images/operations-browse-admin-section.png)
 
 More operations are listed in the [advanced operations guide](/rif/rns/guide/advanced/).
 
@@ -54,11 +54,11 @@ Each extra year over the three years cost 1 RIF token.
 
 1. Click on the renew button. This will prompt a duration selector.
 
-    ![](/rif/rns/guide/images/DQS1Uoy.png)
+    ![Operations - Duration selector](/rif/rns/guide/images/operations-duration-selector.png)
 
 2. Choose the time you want to extend your domain for and click on 'Renew domain'.
 
-    ![](/rif/rns/guide/images/ndauxbs.png)
+    ![Operations - Renew domain](/rif/rns/guide/images/operations-renew-domain.png)
 
 3. Submit the transaction.
 
@@ -66,21 +66,21 @@ Each extra year over the three years cost 1 RIF token.
 
 ### Transfer your domain
 
-1. Click in the button to edit the owner of the domain.
+1. Click on the button to edit the owner of the domain.
 
-    ![](/rif/rns/guide/images/UC7W8MJ.png)
+    ![Operations - Edit domain Owner](/rif/rns/guide/images/operations-edit-domain-owner.png)
 
 2. Input the address you want to transfer the domain to and click on transfer
-    
-    ![](/rif/rns/guide/images/FwPzIrL.png)
+
+    ![Operations - Transfer domain owner](/rif/rns/guide/images/operations-transfer-domain-owner.png)
 
 3. Submit the transaction.
 
 4. Wait until the transaction is confirmed. This can take a minute.
 
-<div class="alert alert-warning">
-    <strong>Warning:</strong> this operation transfers full control of the domain. once executed there is no going back.
-</div>
+
+    > **Warning: This operation transfers full control of the domain. once executed there is no going back.**
+
 
 ## Domain addresses
 
@@ -92,17 +92,17 @@ You can also use your domain in other crypto currencies. You can set your other 
 
 ### Change the RSK address
 
-1. Click in the button to edit the RSK Address.
+1. Click on the button to edit the RSK Address.
 
-    ![](/rif/rns/guide/images/9gYozvR.png)
+    ![Operations - Edit RSK Address](/rif/rns/guide/images/operations-edit-rsk-address.png)
 
 2. Input the address you want to set as the address of your domain.
 
-    ![](/rif/rns/guide/images/Bm0E1Zo.png)
+    ![Operations - Set RSK Address](/rif/rns/guide/images/operations-set-rsk-address.png)
 
 3. Submit the transaction.
 
-4. Wait until the transaction is confirmed. This can take a minute.
+4. Wait until the transaction is confirmed, this can take a minute.
 
 ### Add a currency address
 
@@ -110,52 +110,52 @@ You might need to [activate the multi chain funcitonality](#activate-multi-chain
 
 1. Choose the currency you want to add and fill the address. Then click on 'Add'
 
-    ![](/rif/rns/guide/images/Bl5Pm2b.png)
+    ![Operations - Add currency address](/rif/rns/guide/images/operations-add-currency-address.png)
 
 2. Submit the transaction.
 
-3. Wait until the transaction is confirmed. This can take a minute.
+3. Wait until the transaction is confirmed, this can take a minute.
 
 
 ### Change a currency address
 
-1. Click in the button to edit the the desired address.
+1. Click on the button to edit the desired address.
 
-    ![](/rif/rns/guide/images/L6BsW5T.png)
+    ![Operations - Edit currency address](/rif/rns/guide/images/operations-edit-currency-address.png)
 
 2. Input the address you want to set as the address of your domain and click 'Change'.
 
-    ![](/rif/rns/guide/images/8sWbcTL.png)
+    ![Operations - Change currency address](/rif/rns/guide/images/operations-change-currency-address.png)
 
 3. Submit the transaction.
 
-4. Wait until the transaction is confirmed. This can take a minute.
+4. Wait until the transaction is confirmed, this can take a minute.
 
 ### Delete a currency address
 
-1. Click in the button to delete the the desired address.
+1. Click on the button to delete the desired address.
 
-    ![](/rif/rns/guide/images/dckQkoR.png)
+    ![Operations - Click delete currency button](/rif/rns/guide/images/operations-click-delete-currency-button.png)
 
 2. Click on 'Delete'
 
-    ![](/rif/rns/guide/images/JA6uXnn.png)
+    ![Operations - Delete currency address](/rif/rns/guide/images/operations-delete-currency-address.png)
 
 3. Submit the transaction.
 
-4. Wait until the transaction is confirmed. This can take a minute.
+4. Wait until the transaction is confirmed, this can take a minute.
 
 ### Activate multi chain functionality
 
 This might appear the first time you use the RNS Manager.
 
-1. Click on 'Activate' bellow the _Multi chain_ title
+1. Click on 'Activate' below the _Multi chain_ title
 
-    ![](/rif/rns/guide/images/c8x3kSK.png)
-    
+    ![Operations - Activate multi-chain](/rif/rns/guide/images/operations-activate-multi-chain.png)
+
 2. Submit the transaction.
 
-3. Wait until the transaction is confirmed. This can take a minute.
+3. Wait until the transaction is confirmed, this can take a minute.
 
 ## Subdomains
 
@@ -167,36 +167,36 @@ The owner of the subdomain is the account that can set the addresses for that su
 
 1. Fill the name and the owner for the subdomain, then click on 'Create'
 
-![](/rif/rns/guide/images/N1rqLu5.png)
+![Operations - Create owner subdomain](/rif/rns/guide/images/operations-create-owner-subdomain.png)
 
 2. Submit the transaction.
 
 3. Wait until the transaction is confirmed. This can take a minute.
 
-### Change a dubdomain's owner
+### Change a subdomain's owner
 
-1. Click in the button to edit the the desired subdomain.
+1. Click on the button to edit the desired subdomain.
 
-    ![](/rif/rns/guide/images/vOM1GLI.png)
+    ![Operations - Click Edit subdomain](/rif/rns/guide/images/operations-click-edit-subdomain.png)
 
 2. Input the address you want to set as the owner of the subdomain and click 'Change'.
 
-    ![](/rif/rns/guide/images/FkAs3K6.png)
+    ![Operations - Set domain address](/rif/rns/guide/images/operations-set-domain-address.png)
 
 3. Submit the transaction.
 
-4. Wait until the transaction is confirmed. This can take a minute.
+4. Wait until the transaction is confirmed, this can take a minute.
 
 ### Delete a subdomain
 
-1. Click in the button to delete the the desired subdomain.
+1. Click on the button to delete the desired subdomain.
 
-    ![](/rif/rns/guide/images/Yq0Ke3T.png)
+    ![Operations - Click Delete subdomain button](/rif/rns/guide/images/operations-click-delete-subdomain-button.png)
 
 2. Click on 'Delete'
 
-    ![](/rif/rns/guide/images/2ZoPhtG.png)
+    ![Operations - Delete subdomain](/rif/rns/guide/images/operations-delete-subdomain.png)
 
 3. Submit the transaction.
 
-4. Wait until the transaction is confirmed. This can take a minute.
+4. Wait until the transaction is confirmed, this can take a minute.

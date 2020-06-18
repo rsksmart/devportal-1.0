@@ -14,64 +14,65 @@ tags: rns, guide, rns-user-guide
 
 ### Register a domain
 
-The registration consist of two transactions. The process takes more or less 5 minutes. Let's start:
+To register a domain, two transactions are involved. This process takes more or less 5 minutes. Let's start:
 
-1. Go to the [RNS Manager](https://manager.rns.rifos.org). Type the domain you ant to register and click on 'Search'.
+1. Go to the [RNS Manager](https://manager.rns.rifos.org). Type the domain you want to register and click on 'Search'.
 
-    ![](/rif/rns/guide/images/6jIRPrD.png)
+    ![UserGuide - Search domain](/rif/rns/guide/images/userguide-search-domain.png)
 
-2. If it is available click on 'Register', otherwise search another domain.
+2. If it is available click on 'Register', otherwise search for another domain.
 
-    ![](/rif/rns/guide/images/X59aFiz.png)
+    ![UserGuide - Register domain](/rif/rns/guide/images/userguide-register-domain.png)
 
 3. Choose the amount of years you want to register your domain for and click on 'Request domain'.
 
-    ![](/rif/rns/guide/images/d86C2e2.png)
+    ![UserGuide - Request domain](/rif/rns/guide/images/userguide-request-domain.png)
     
     > You can extend the expiration time whenever you need to.
 
 4. Confirm the transaction.
 
-    ![](/rif/rns/guide/images/1wGtSWk.png)
+    ![UserGuide - Confirm transaction](/rif/rns/guide/images/userguide-confirm-transaction.png)
 
 5. Wait for aproximately 2 minutes until the domain is requested. A new screen will be prompted.
 
-    ![](/rif/rns/guide/images/7AkQ2fj.png)
+    ![UserGuide - Prompt screen](/rif/rns/guide/images/userguide-prompt-screen.png)
 
 6. Click on 'Register domain'.
 
-    ![](/rif/rns/guide/images/4xfbhlq.png)
+    ![UserGuide - Click register domain](/rif/rns/guide/images/userguide-click-register-domain.png)
 
 
 7. Confirm the transaction clicking on 'Submit'
 
-    ![](/rif/rns/guide/images/De8a44U.png)
+    ![UserGuide - Click submit transaction](/rif/rns/guide/images/userguide-click-submit-transaction.png)
 
 8. Wait for transaction confirmation
 
-    ![](/rif/rns/guide/images/aywKF7e.png)
+    ![UserGuide - Transaction Confirmation](/rif/rns/guide/images/userguide-transaction-confirmation.png)
 
-9. Done! You know own an RNS domain.
+9. Done! You now own an RNS domain.
 
-    ![](/rif/rns/guide/images/YIv3FcP.png)
+    ![UserGuide - RNS Domain](/rif/rns/guide/images/userguide-rns-domain.png)
     
-You can now click on 'Admin my domain' and following [this guides](/rif/rns/guide/operations/) you can find a lot of things you can do with your domain.
+Now, click on 'Admin my domain' and following the [Operation guide](/rif/rns/guide/operations/) you can find a lot of things you can do with your domain.
 
 ### Log in to a domain
 
 If you already own a domain, use the top right selector to login with it. You can login to more than one domain and switch between accounts to perform the different operations you need.
 
-1. Go to the [RNS Manager](https://manager.rns.rifos.org). Click on login to right selector.
+1. Go to the [RNS Manager](https://manager.rns.rifos.org). Click on **login**, located at the right selector.
 
-    ![](/rif/rns/guide/images/06rLWpH.png)
+
+    ![UserGuide - Click Login Selector](/rif/rns/guide/images/userguide-click-login-selector.png)
 
 2. Type the domain you own, and click on 'Enter'.
 
-    ![](/rif/rns/guide/images/IHpP5XL.png)
+    ![UserGuide - Click Enter Domain](/rif/rns/guide/images/userguide-click-enter-domain.png)
     
 If the domain is already in the list you can login to it by clicking here:
 
-![](/rif/rns/guide/images/1aixasF.png)
+![UserGuide - Login to domain](/rif/rns/guide/images/userguide-login-to-domain.png)
 
 ### Log out of a domain
 
@@ -79,20 +80,20 @@ If you want to remove a domain from the list of logged in domains
 
 1. [Login to the domain](#log-in-to-a-domain)
 
-2. Click in the domain in the top right
+2. Click on the domain in the top right
 
-    ![](/rif/rns/guide/images/zcrmquY.png)
+    ![UserGuide - Click on domain](/rif/rns/guide/images/userguide-click-on-domain.png)
 
-3. Click in 'Log out'
+3. Click on 'Log out'
 
-    ![](/rif/rns/guide/images/K8xWlvO.png)
+    ![UserGuide - Log out of domain](/rif/rns/guide/images/userguide-log-out-of-domain.png)
 
 ### Change the language
 
-1. Go to the [RNS Manager](https://manager.rns.rifos.org)
+1. Go to the [RNS Manager](https://manager.rns.rifos.org).
 
 2. Change the language with the top right selector
 
-    ![](/rif/rns/guide/images/HJDUzjv.png)
+    ![UserGuide - Change language](/rif/rns/guide/images/userguide-change-language.png)
 
 3. Choose the language you want.

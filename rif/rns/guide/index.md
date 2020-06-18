@@ -35,6 +35,6 @@ tags: rns, guide, rns-user-guide
         - [Activate multi chain functionality](/rif/rns/guide/operations/#activate-multi-chain-functionality)
     - ### [Subdomains](/rif/rns/guide/operations/#subdomains)
         - [Create a subdomain](/rif/rns/guide/operations/#create-a-subdomain)
-        - [Change a dubdomain's owner](/rif/rns/guide/operations/#change-a-dubdomains-owner)
+        - [Change a subdomain's owner](/rif/rns/guide/operations/#change-a-subdomains-owner)
         - [Delete a subdomain](/rif/rns/guide/operations/#delete-a-subdomain)
 - [Advanced operations](/rif/rns/guide/advanced/)
