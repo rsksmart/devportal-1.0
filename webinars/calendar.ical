@@ -2113,16 +2113,15 @@ SEQUENCE:0
 DTSTAMP:20200630T190000Z
 DTSTART:20200630T190000Z
 SUMMARY:Self Sovereign Identity and RIF 
-DESCRIPTION:Self Sovereign Identity and RIF\n\nOnline only\n\nRSVP: \n\nVi
- deo stream: https://app.livestorm.co/iov-labs-1/self-sovereign-identity-an
- d-rif\n
+DESCRIPTION:Self Sovereign Identity and RIF\n\nOnline only\n\nCancelled\, 
+ see webinars page for more details: https://developers.rsk.co/webinars/cal
+ endar.ical\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Self So
  vereign Identity and RIF</span></div>\n<div><span>Online only</span></div>
- \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
- ;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/self-sovereign-id
- entity-and-rif\">app.livestorm.co/iov-labs-1/self-sovereign-identity-and-r
- if</a></span></div>\n</BODY>\n</HTML>
+ \n<div><b>Cancelled\, see webinars page for more details &nbsp\;</b><span>
+ <a href=\"https://developers.rsk.co/webinars/calendar.ical\">developers.rs
+ k.co/webinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Milton Berman\, RIF Identity PO\, @miltonberman":mailto:deve
  lopers@iovlabs.org
 BEGIN:VALARM
@@ -2133,8 +2132,8 @@ END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/self-sovereign-identity-
  and-rif
-STATUS:CONFIRMED
+STATUS:CANCELLED
 X-LANGUAGE:English
-LAST-MODIFIED:20200612T064500Z
+LAST-MODIFIED:20200616T135300Z
 END:VEVENT
 END:VCALENDAR
