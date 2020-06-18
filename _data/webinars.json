@@ -2170,7 +2170,7 @@
       "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event4.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/lFjYCcp21zw",
       "_isPast": true
     },
     {
@@ -2293,7 +2293,7 @@
           "url": "https://github.com/bguiz/workshop-rif-first-swarm-website/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/lFjYCcp21zw",
       "_permalink": "/webinars/202006-004/",
       "_isPast": true
     },
@@ -2327,7 +2327,7 @@
       "tags": " idioma-spanish audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event8.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/dZYVohPV-XM",
       "_permalink": "/webinars/202006-005/",
       "_isPast": true
     },
@@ -2444,7 +2444,7 @@
       "status": "confirmed",
       "url": "",
       "title": "RSK made easy with SIMBA Chain",
-      "description": "-",
+      "description": "SIMBA is an amazing platform that enables companies and devs to quickly create and deploy blockchain dApps. Watch the demo, and deploy dApps in RSK quickly.",
       "category": "Demo",
       "locationCategory": "online",
       "location": "Online only",
@@ -2477,10 +2477,10 @@
     {
       "type": "event/2",
       "id": "202006-010",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-06-30T19:00:00.000Z",
-      "lastModified": "2020-06-12T06:45:00.000Z",
-      "status": "confirmed",
+      "lastModified": "2020-06-16T13:53:00.000Z",
+      "status": "cancelled",
       "url": "",
       "title": "Self Sovereign Identity and RIF",
       "description": "-",
@@ -2506,7 +2506,6 @@
       "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_permalink": "/webinars/202006-010/",
       "_isPast": false
     }
   ]
