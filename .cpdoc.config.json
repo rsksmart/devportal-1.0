@@ -50,7 +50,7 @@
         {
           "id": "markdownExternalImageReplacer",
           "options": {
-            "skipDownloads": true,
+            "downloadMode": "default",
             "imageDir": "rif/rns/guide/images"
           }
         }
