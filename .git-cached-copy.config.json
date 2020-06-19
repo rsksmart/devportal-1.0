@@ -82,7 +82,7 @@
         {
           "name": "copySingle",
           "remoteFilePath": "README.md",
-          "localFilePath": "tutorials/truffle-boxes/rsk-starter-box.md",
+          "localFilePath": "tools/truffle/boxes/rsk-starter-box.md",
           "localPreserveFrontMatter": true,
           "remotePreserveFrontMatter": false
         }
