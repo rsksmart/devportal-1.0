@@ -2127,6 +2127,12 @@ table.table.newsletter input[type='checkbox'] {
   height: 15px;
 }
 
+/* markdown rendered elements */
+
+.markdown-width20 {
+  width: 20%;
+}
+
 @media screen and (max-width: 1200px) {
   #walletAPI_content::after {
     width: 445px;
