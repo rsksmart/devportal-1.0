@@ -2139,4 +2139,241 @@ STATUS:CANCELLED
 X-LANGUAGE:English
 LAST-MODIFIED:20200616T135300Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202007-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200701T220000Z
+DTSTART:20200701T220000Z
+SUMMARY:Testes utilizando Truffle na RSK 
+DESCRIPTION:Testes utilizando Truffle na RSK\n\nOnline only\n\nRSVP: \n\nV
+ ideo stream: https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle
+ -na-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testes 
+ utilizando Truffle na RSK</span></div>\n<div><span>Online only</span></div
+ >\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp
+ \;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/testes-utilizand
+ o-truffle-na-rsk\">app.livestorm.co/iov-labs-1/testes-utilizando-truffle-n
+ a-rsk</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Testes utilizando Truffle na RSK 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testes-utilizando-truffl
+ e-na-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200703T180000Z
+DTSTART:20200703T180000Z
+SUMMARY:RIF Lumino workshop 
+DESCRIPTION:RIF Lumino workshop\n\nOnline only\n\nRSVP: \n\nVideo stream: 
+ https://app.livestorm.co/iov-labs-1/rif-lumino-workshop\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF Lum
+ ino workshop</span></div>\n<div><span>Online only</span></div>\n<div><b>RS
+ VP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/rif-lumino-workshop\">app.liv
+ estorm.co/iov-labs-1/rif-lumino-workshop</a></span></div>\n</BODY>\n</HTML
+ >
+ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
+ lto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RIF Lumino workshop 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-lumino-workshop
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200703T220000Z
+DTSTART:20200703T220000Z
+SUMMARY:RIF Lumino workshop 
+DESCRIPTION:RIF Lumino workshop\n\nOnline only\n\nRSVP: \n\nVideo stream: 
+ https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF Lum
+ ino workshop</span></div>\n<div><span>Online only</span></div>\n<div><b>RS
+ VP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espano
+ l\">app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol</a></span><
+ /div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
+ lto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RIF Lumino workshop 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-e
+ spanol
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-004@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200706T200000Z
+DTSTART:20200706T200000Z
+SUMMARY:Self Sovereign Identity and RIF 
+DESCRIPTION:Self Sovereign Identity and RIF\n\nOnline only\n\nRSVP: \n\nVi
+ deo stream: https://app.livestorm.co/iov-labs-1/self-sovereign-identity-an
+ d-rif\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Self So
+ vereign Identity and RIF</span></div>\n<div><span>Online only</span></div>
+ \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
+ ;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/self-sovereign-id
+ entity-and-rif\">app.livestorm.co/iov-labs-1/self-sovereign-identity-and-r
+ if</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Milton Berman\, RIF Identity PO\, @miltonberman":mailto:deve
+ lopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Self Sovereign Identity and RIF 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/self-sovereign-identity-
+ and-rif
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-005@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200708T070000Z
+DTSTART:20200708T070000Z
+SUMMARY:Testing Smart Contracts with Truffle 
+DESCRIPTION:Testing Smart Contracts with Truffle\n\nOnline only\n\nRSVP: \
+ n\nVideo stream: https://app.livestorm.co/iov-labs-1/testing-smart-contrac
+ ts-with-truffle\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testing
+  Smart Contracts with Truffle</span></div>\n<div><span>Online only</span><
+ /div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &
+ nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/testing-smar
+ t-contracts-with-truffle\">app.livestorm.co/iov-labs-1/testing-smart-contr
+ acts-with-truffle</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Testing Smart Contracts with Truffle 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testing-smart-contracts-
+ with-truffle
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-006@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200715T220000Z
+DTSTART:20200715T220000Z
+SUMMARY:Migrando dApps do Ethereum para RSK (Port Ethereum dApps) 
+DESCRIPTION:Migrando dApps do Ethereum para RSK (Port Ethereum dApps)\n\nO
+ nline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/
+ migrando-dapps-do-ethereum-para-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Migrand
+ o dApps do Ethereum para RSK (Port Ethereum dApps)</span></div>\n<div><spa
+ n>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<
+ div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/io
+ v-labs-1/migrando-dapps-do-ethereum-para-rsk\">app.livestorm.co/iov-labs-1
+ /migrando-dapps-do-ethereum-para-rsk</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Migrando dApps do Ethereum para RSK (Port Ethereum dApps) 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethere
+ um-para-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-007@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200723T000000Z
+DTSTART:20200723T000000Z
+SUMMARY:Testeando Smart Contracts con Truffle 
+DESCRIPTION:Testeando Smart Contracts con Truffle\n\nOnline only\n\nRSVP: 
+ \n\nVideo stream: https://app.livestorm.co/iov-labs-1/testeando-smart-cont
+ racts-con-truffle\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testean
+ do Smart Contracts con Truffle</span></div>\n<div><span>Online only</span>
+ </div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream 
+ &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/testeando-s
+ mart-contracts-con-truffle\">app.livestorm.co/iov-labs-1/testeando-smart-c
+ ontracts-con-truffle</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
+ developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Testeando Smart Contracts con Truffle 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testeando-smart-contract
+ s-con-truffle
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-008@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200729T220000Z
+DTSTART:20200729T220000Z
+SUMMARY:Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK 
+DESCRIPTION:Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK\n
+ \nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs
+ -1/utilizando-truffle-boxes-na-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Utiliza
+ ndo Truffle Boxes na RSK = Using Truffle Boxes in RSK</span></div>\n<div><
+ span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>
+ \n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co
+ /iov-labs-1/utilizando-truffle-boxes-na-rsk\">app.livestorm.co/iov-labs-1/
+ utilizando-truffle-boxes-na-rsk</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes
+ -na-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200619T063000Z
+END:VEVENT
 END:VCALENDAR
