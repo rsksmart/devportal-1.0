@@ -92,8 +92,8 @@ def get_relative_path(from_path, to_path)
   relative_path = to_path.relative_path_from(from_path).to_s
   if (
     !to_path.to_s.include?('#') &&
-    !relative_path&.end_with?(
-      '.js', '.css', '.png', '.svg', '.jpeg', '.jpg', '.html', '.htm', '.ical'
+    !relative_path&.downcase.end_with?(
+      '.js', '.css', '.png', '.svg', '.jpeg', '.jpg', '.html', '.htm', '.ical', '.conf', '.ico', '.gif', '.json', '.pdf'
     )
   )
     relative_path = relative_path + '/'
