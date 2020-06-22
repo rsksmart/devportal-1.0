@@ -16,30 +16,32 @@ To use the application and the service we are going to need three things:
 
 The RNS Manager can be used seamlessly with the following wallets. To setup your wallet, follow the instructions in [connect to RSK network](#connect-nifty-wallet-to-rsk).
 
-<div style="width: 40%; float: left; text-align: center;
-    border: solid #f8f9fa; margin: 5% 30%; border-radius: 2em;">
-    ![](/rif/rns/guide/images/xacetSm.png)
+
+
+<div class="markdown-light-rounded-border markdown-width40 markdown-horizontal-margin30">
+    <img src="https://i.imgur.com/xacetSm.png" alt="" />
     <p>
         Nifty wallet <span class="badge badge-primary">recommended</span><br/>
-        [Get the wallet](https://www.poa.network/for-users/nifty-wallet)
+        <a href="https://www.poa.network/for-users/nifty-wallet">Get the wallet</a>
     </p>
 </div>
 
-<div style="width: 40%; float: left;  text-align: center; border: solid #f8f9fa; margin: 5%; border-radius: 2em;">
-    ![](/rif/rns/guide/images/JVWXQca.png)
+<div class="markdown-light-rounded-border markdown-width40">
+    <img src="https://i.imgur.com/JVWXQca.png" alt="" />
     <p>
         Metamask<br />
-        [Get the wallet](https://metamask.io/)
+        <a href="https://metamask.io/">Get the wallet</a>
     </p>
 </div>
 
-<div style="width: 40%; float: left;  text-align: center; border: solid #f8f9fa; margin: 5%; border-radius: 2em;">
-    ![](/rif/rns/guide/images/CaM23s8.png)
+<div class="markdown-light-rounded-border markdown-width40">
+    <img src="https://i.imgur.com/CaM23s8.png" alt="" />
     <p>
         Brave's Wallet<br />
-        [Get the browser](https://brave.com/)
+        <a href="https://brave.com/">Get the browser</a>
     </p>
 </div>
+
 
 #### Connect Nifty wallet to RSK
 
