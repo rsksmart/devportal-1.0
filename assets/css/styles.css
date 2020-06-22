@@ -2128,9 +2128,38 @@ table.table.newsletter input[type='checkbox'] {
 }
 
 /* markdown rendered elements */
+.markdown-light-rounded-border {
+  float: left;
+  text-align: center;
+  border: solid #f8f9fa;
+  margin: 5%;
+  border-radius: 2em;
+}
 
 .markdown-width20 {
   width: 20%;
+}
+
+.markdown-width40 {
+  width: 40%;
+}
+
+.markdown-width50 {
+  width: 50%;
+}
+
+.markdown-width70 {
+  width: 70%;
+}
+
+.markdown-margin10 {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.markdown-horizontal-margin30 {
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 @media screen and (max-width: 1200px) {
