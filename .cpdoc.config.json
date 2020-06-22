@@ -48,6 +48,9 @@
           }
         },
         {
+          "id": "markdownHtmlStyleRemover"
+        },
+        {
           "id": "markdownExternalImageReplacer",
           "options": {
             "downloadMode": "default",
