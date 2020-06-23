@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-56J7JTD');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
+      <meta name="author" content="RSK Developers Portal">
+      <link rel="canonical" href="https://developers.rsk.co/rif/rns/guide/brave/">
+   	<title>Connect Brave to the RSK Network - RNS User guide - RSK Developers Portal</title>
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/img/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../../../assets/img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="../../../../assets/img/favicons/site.webmanifest/">
+      <link rel="mask-icon" href="../../../../assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+      <link rel="shortcut icon" href="../../../../assets/img/favicons/favicon.ico">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assetsimg/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,900&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800&amp;display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="../../../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Libraries CSS Files -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../../../assets/vendor/malihu-custom-scrollbar-plugin-master/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+      <!-- Main Stylesheet File -->
+      <link href="../../../../assets/css/styles.css" rel="stylesheet">
+      <link href="../../../../assets/css/styles_dark.css" rel="stylesheet">
+      <link href="../../../../assets/css/code.css" rel="stylesheet">
+      <link href="../../../../assets/css/owl.carousel.min.css" rel="stylesheet">
+      <link href="../../../../assets/css/owl.theme.default.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56J7JTD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://rsk.co" rel="external noopener noreferrer" target="_blank"><img id="logo" src="../../../../assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../../../the-stack/" target="_self">The Stack
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../../develop/" target="_self">Develop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://fund.rsk.co" target="_blank" rel="external noopener noreferrer">Ecosystem Fund</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://rsk.co/defi" target="_blank" rel="external noopener noreferrer">Defi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../../../webinars/" target="_self">Webinars</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- Page Content -->
+      <!-- home -->
+      <section id="home">
+         <div class="container">
+
+            <div class="row header-inner">
+    <div class="col-lg-3">
+       <!-- mobile dropdown left column -->
+       <div class="mobile-left-menu">
+          <button class="btn btn-outline-secondary dropdown-toggle rsk_blue" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-menu drop-mobile-left-menu">
+             <div class="mobile_accordion">
+                <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../">RSK Infrastructure Framework</a></li>
+          <li><a href="../../../token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../">Name Service</a>
+            <ul>
+              <li><a href="../../">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../specs/">Specs</a>
+                <ul>
+                  <li><a href="../../specs/">Specs</a></li>
+                  <li><a href="../../specs/registry/">Registry specs</a></li>
+                  <li><a href="../../specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../operations/">Operations</a></li>
+                  <li><a href="../../operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../architecture/">Architecture</a></li>
+                  <li><a href="../../architecture/registry/">Registry</a></li>
+                  <li><a href="../../architecture/definitive-resolver/">Resolver</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../architecture/rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../../architecture/rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../../architecture/rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../../architecture/rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../../architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../../architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../../architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../architecture/ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../architecture/ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../../architecture/ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../../architecture/NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../tools/Web3/">Web3</a></li>
+                  <li><a href="../../tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../libs/">Libs</a>
+                <ul>
+                  <li><a href="../../libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../libs/javascript/">Javascript</a></li>
+                      <li><a href="../../libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../libs/Android/">Android</a></li>
+                  <li><a href="../../libs/iOS/">iOS</a></li>
+                  <li><a href="../../libs/Python/">Python</a></li>
+                  <li><a href="../../libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../integrate/">Integrate</a></li>
+                  <li><a href="../../integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../mainnet/">Mainnet</a></li>
+              <li><a href="../../testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../lumino/">Lumino</a></li>
+                  <li><a href="../../../lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../../lumino/node/install/">Install</a></li>
+                          <li><a href="../../../lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../../lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../../lumino/node/use/">How to use</a></li>
+                      <li><a href="../../../lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../../lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../../lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../../lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../../lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../../lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../../lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../storage/">Storage</a>
+            <ul>
+              <li><a href="../../../storage/">About</a></li>
+              <li><a href="../../../storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/swarm/">About</a></li>
+                      <li><a href="../../../storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../../storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../../storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../../storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../../storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tutorials/">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tutorials/">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/ethereum-devs/">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/setup-truffle-oz/">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../../../../tutorials/frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../../../../tutorials/frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../../../../tutorials/tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../../../../tutorials/truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../../../../tutorials/dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../../../../tutorials/deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interface-registry/">Interface Registry</a></li>
+              <li><a href="../../../../tutorials/rsk-api/">RSK API CLI</a></li>
+              <li><a href="../../../../tutorials/send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../../../../tutorials/using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../../../../tutorials/resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../wallet/">Wallet</a></li>
+              <li><a href="../../../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../wallet/use/">Use</a></li>
+                  <li><a href="../../../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../libraries/">Libs</a></li>
+              <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../libs/">RNS</a></li>
+              <li><a href="../../../lumino/libraries/">Lumino</a></li>
+              <li><a href="../../../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/truffle/">Truffle</a></li>
+                  <li class="hide-mobile"><a href="../../../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <ul>
+                    <li><a href="../../../../tools/truffle/boxes/rsk-starter-box/">rsk-starter-box</a></li>                      
+                  </ul>
+                  <li><a href="../../../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../contribute/">Contribute</a></li>
+          <li><a href="../../../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="col-lg-5">
+       <!-- <nav class="breadcrumbs bootstrap hidden-sm-down">
+	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/">
+					<span property="name"></span>
+					<meta property="position" content="1" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/rif/">
+					<span property="name">RSK Infrastructure Framework</span>
+					<meta property="position" content="2" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/rif/rns/">
+					<span property="name">RIF Name Service</span>
+					<meta property="position" content="3" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/rif/rns/guide/">
+					<span property="name">RNS User guide</span>
+					<meta property="position" content="4" />
+				</a>
+			</li>
+		
+			
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<span property="name">Connect Brave to the RSK Network - RNS User guide</span>
+					<meta property="position" content="5" />
+				</li>
+				
+
+		
+		
+	</ol>
+</nav>
+ -->
+       <nav id="siteBreadcrumb" class="show active-parent">
+          <ol class="breadcrumb">
+         </ol>
+       </nav>
+    </div>
+    <div class="col-lg-4 input-col">
+       <div class="page-metadata">
+    <!--time role="presentation" datetime="2020-06-23 01:47:24 +0000T00:00:00.000Z">2020-06-23</time> | -->
+     3' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/guide/brave.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <div class="dropdown" style="display: inline-block">
+       <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
+       <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/rns/guide/brave/&amp;text=Connect%20Brave%20to%20the%20RSK%20Network%20-%20RNS%20User%20guide&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/rns/guide/brave/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/rns/guide/brave/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/rns/guide/brave/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=Connect%20Brave%20to%20the%20RSK%20Network%20-%20RNS%20User%20guide&amp;body=Connect%20Brave%20to%20the%20RSK%20Network%20-%20RNS%20User%20guide%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/rns/guide/brave/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/rns/guide/brave/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+       </ul>
+    </div> |
+    <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
+ </div>
+    </div>
+ </div>
+
+            <div class="row">
+               <!-- left col desktop -->
+               <div class="col-lg-3 main-left-col">
+                  <div class="desktop_accordion">
+                     <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../">RSK Infrastructure Framework</a></li>
+          <li><a href="../../../token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../">Name Service</a>
+            <ul>
+              <li><a href="../../">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../specs/">Specs</a>
+                <ul>
+                  <li><a href="../../specs/">Specs</a></li>
+                  <li><a href="../../specs/registry/">Registry specs</a></li>
+                  <li><a href="../../specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../operations/">Operations</a></li>
+                  <li><a href="../../operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../architecture/">Architecture</a></li>
+                  <li><a href="../../architecture/registry/">Registry</a></li>
+                  <li><a href="../../architecture/definitive-resolver/">Resolver</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../architecture/rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../../architecture/rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../../architecture/rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../../architecture/rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../../architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../../architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../../architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../architecture/ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../architecture/ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../../architecture/ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../../architecture/NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../tools/Web3/">Web3</a></li>
+                  <li><a href="../../tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../libs/">Libs</a>
+                <ul>
+                  <li><a href="../../libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../libs/javascript/">Javascript</a></li>
+                      <li><a href="../../libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../libs/Android/">Android</a></li>
+                  <li><a href="../../libs/iOS/">iOS</a></li>
+                  <li><a href="../../libs/Python/">Python</a></li>
+                  <li><a href="../../libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../integrate/">Integrate</a></li>
+                  <li><a href="../../integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../mainnet/">Mainnet</a></li>
+              <li><a href="../../testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../lumino/">Lumino</a></li>
+                  <li><a href="../../../lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../../lumino/node/install/">Install</a></li>
+                          <li><a href="../../../lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../../lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../../lumino/node/use/">How to use</a></li>
+                      <li><a href="../../../lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../../lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../../lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../../lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../../lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../../lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../../lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../../lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../storage/">Storage</a>
+            <ul>
+              <li><a href="../../../storage/">About</a></li>
+              <li><a href="../../../storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/swarm/">About</a></li>
+                      <li><a href="../../../storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../../storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../../storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../../storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../../storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../../storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../../storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../../storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../../storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tutorials/">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tutorials/">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/ethereum-devs/">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="../../../../tutorials/ethereum-devs/setup-truffle-oz/">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../../../../tutorials/frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../../../../tutorials/frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../../../../tutorials/tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../../../../tutorials/tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tutorials/truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../../../../tutorials/truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../../../../tutorials/truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../../../../tutorials/dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../../../../tutorials/deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/interface-registry/">Interface Registry</a></li>
+              <li><a href="../../../../tutorials/rsk-api/">RSK API CLI</a></li>
+              <li><a href="../../../../tutorials/send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../../../../tutorials/using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../../../../tutorials/resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../wallet/">Wallet</a></li>
+              <li><a href="../../../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../wallet/use/">Use</a></li>
+                  <li><a href="../../../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../libraries/">Libs</a></li>
+              <li><a href="../../../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../libs/">RNS</a></li>
+              <li><a href="../../../lumino/libraries/">Lumino</a></li>
+              <li><a href="../../../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/truffle/">Truffle</a></li>
+                  <li class="hide-mobile"><a href="../../../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <ul>
+                    <li><a href="../../../../tools/truffle/boxes/rsk-starter-box/">rsk-starter-box</a></li>                      
+                  </ul>
+                  <li><a href="../../../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../../../contribute/">Contribute</a></li>
+          <li><a href="../../../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+                  </div>
+               </div>
+               <!-- central col -->
+               <div class="col-lg-9 main-central-col">
+                  <div class="alert alert-info" role="alert">
+    <a href="../../../../webinars?utm_source=devportal&amp;utm_medium=infobar&amp;utm_campaign=webinars/" style="color: black!important;text-decoration: underline;">
+        Join our Webinars! Now you can watch and learn more about Blockchain!
+    </a>
+</div>
+
+                  <h1 class="page-title" id="top">Connect Brave to the RSK Network - RNS User guide</h1>
+
+                  <h2 id="locate-braves-wallet">Locate Brave’s Wallet</h2>
+
+<p>The wallet in the Brave browser is not as prominent as it is with Chrome or Firefox Nifty and Metamask plugins. The wallet is located under the Main Menu / Crypto Wallet:</p>
+
+<p><img src="../images/brave-locate-brave-wallet.jpg" alt="Brave - Locate Brave Wallet"></p>
+
+<p>If this is the first time you have set up Brave it will ask you to <a href="https://brave.com/funding-your-brave-wallet/" rel="external noopener noreferrer" target="_blank">create a wallet</a>. This article assumes that you already have a wallet. Since the wallet is hidden under the main menu, It is advised to bookmark the URL, and place it on the bookmark row. To do this, on Windows press <code class="highlighter-rouge">[CTRL]+[D]</code> or on Mac, <code class="highlighter-rouge">[Apple]+[D]</code>.</p>
+
+<p><img src="../images/brave-create-a-wallet.jpg" alt="Brave - Create a wallet"></p>
+
+<p>This should place Wallets on the bookmark bar for easy access. This will make it easier to switch between different networks and accounts.</p>
+
+<p><img src="../images/brave-switch-networks.jpg" alt="Brave - Switch networks"></p>
+
+<h2 id="connect-to-the-rsk-mainnet-and-testnet">Connect to the RSK Mainnet and Testnet</h2>
+
+<p>On the wallet screen, towards the right, it should show that it is connected to the Main Ethereum Network. If you toggle the dropdown, towards the bottom there is an option to connect to a “Custom RPC”. See the image below;</p>
+
+<p><img src="../images/brave-connect-to-mainnet.jpg" alt="Brave - Connect to Mainnet"></p>
+
+<p>The New Network tab will open and ask some questions about the network. For RSK Mainnet, use the following settings:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Input Field</th>
+      <th>RSK Mainnet Value</th>
+      <th>RSK Testnet Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Network Name</td>
+      <td>RSK Mainnet</td>
+      <td>RSK Testnet</td>
+    </tr>
+    <tr>
+      <td>New RPC Url</td>
+      <td>https://public-node.rsk.co</td>
+      <td>https://public-node.testnet.rsk.co</td>
+    </tr>
+    <tr>
+      <td>Chain Id</td>
+      <td>30</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Symbol</td>
+      <td>RBTC</td>
+      <td>RBTC</td>
+    </tr>
+    <tr>
+      <td>Block Explorer URL</td>
+      <td>https://explorer.rsk.co</td>
+      <td>https://explorer.testnet.rsk.co/</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Example:</strong></p>
+
+<p><img src="../images/brave-testnet-and-mainnet.jpg" alt="Brave - Testnet and Mainnet"></p>
+
+<p>Hit Save and close settings.</p>
+
+<h2 id="getting-your-rsk-account-address">Getting your RSK account address</h2>
+
+<p>If you closed out of the wallet, navigate back to your Crypto Wallets by using the bookmark you set. Under “Account 1” you will see your address and a copy button. Copy your address to the clipboard.</p>
+
+<p><img src="../images/brave-copy-address-to-clipboard.jpg" alt="Brave - Copy address to clipboard"></p>
+
+<p>This is the address that you will use in the next step of getting RBTC.</p>
+
+<h2 id="add-the-rif-token">Add the RIF token</h2>
+
+<p>Next, we need to add the RIF token which is used in the RSK network. While connected to the RSK Mainnet, on the Accounts page, towards the bottom there is a heading “Don’t see your Tokens?” and a link to “Add Token”:</p>
+
+<p><img src="../images/brave-add-rif-token.png" alt="Brave - Add RIF Token"></p>
+
+<p>Click the Add Token link and then click on the “Custom Token” tab. In the first field, Token Contract Address put the RIF Token Address:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th>RIF Contract Address</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RSK Mainnet</td>
+      <td>0x2acc95758f8b5f583470ba265eb685a8f45fc9d5</td>
+    </tr>
+    <tr>
+      <td>RSK Testnet</td>
+      <td>0x19f64674d8a5b4e652319f5e239efd3bc969a1fe</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>When you press tab, or move to the next field, Token Symbol and Decimals of Precision will autofill with the token’s information:</p>
+
+<p><img src="../images/brave-add-decimal-and-token-symbol.jpg" alt="Brave - Add Decimal and Token Symbol"></p>
+
+<p>Click “Next” and then “Add Tokens”.</p>
+
+<p>You can repeat these steps for the RSK Testnet.</p>
+
+<hr>
+
+<p><a href="https://gitter.im/rsksmart/rif-name-service" rel="external noopener noreferrer" target="_blank">Contact us on Gitter</a> |
+<a href="https://github.com/rnsdomains" rel="external noopener noreferrer" target="_blank">Github</a> |
+<a href="https://manager.rns.rifos.org/search" rel="external noopener noreferrer" target="_blank">Register Domain</a></p>
+
+
+                  
+
+               </div>
+            </div>
+
+            <section class="mt-5">
+    <div class="container newsletter">
+     <div class="row justify-content-center">
+       <div class="body-title col-md-8 text-center">
+        <h2>
+<span class="bold rsk_green">Subscribe</span> to our Newsletter</h2>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://rifos.us15.list-manage.com/subscribe/post?u=f52247d792ffe22c6f7be1379&amp;id=a7030f092b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <div id="mc_embed_signup_scroll">
+              <div class="input-group mb-3">
+                <input type="email" value="" name="EMAIL" class="required email form-control email-suscribe" id="mce-EMAIL" placeholder="E-mail adress">
+                <input type="hidden" name="MMERGE5" id="MMERGE5" value="Developer,DevPortal,EN">
+                <div class="input-group-append">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-suscribe">
+                </div> 
+              </div> 
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f52247d792ffe22c6f7be1379_a7030f092b" tabindex="-1" value=""></div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+</section>
+         </div>
+         <div class="render-features" data-features="">
+         </div>
+      </section>
+
+      <!-- footer -->
+<footer id="footer" class="section-bg">
+   <div class="footer-top">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <img src="../../../../assets/img/powered_by_iov.svg" class="img-fluid powered_by">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4">
+               <div class="footer-info">
+                  <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
+                  <br>
+                  <a href="https://developers.rsk.co/" rel="external noopener noreferrer" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
+               </div>
+            </div>
+            <div class="col-lg-8">
+               <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li class="negbottom">Whitepapers</li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="external noopener noreferrer" target="_blank">Original</a></li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="external noopener noreferrer" target="_blank">Updated</a></li>
+                           <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="external noopener noreferrer" target="_blank">RIF</a></li>
+                           <li><a href="https://rsk.co/development-roadmap.html" rel="external noopener noreferrer" target="_blank">Roadmap</a></li>
+                           <li><a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">Explorer</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://mining.rsk.co/" rel="external noopener noreferrer" target="_blank">Merged Mining</a></li>
+                           <li><a href="https://www.rsk.co/bounty-program/index" rel="external noopener noreferrer" target="_blank">Bounty Program</a></li>
+                           <li><a href="https://grants.rsk.co" rel="external noopener noreferrer" target="_blank">Grants Program</a></li>
+                           <li><a href="https://fund.rsk.co" rel="external noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
+                           <li><a href="https://studio.rsk.co" rel="external noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://rsk.co/defi" rel="external noopener noreferrer" target="_blank">DeFi</a></li>
+                           <li><a href="https://rsk.co/Use-cases.html" rel="external noopener noreferrer" target="_blank">Use cases</a></li>
+                           <li><a href="https://rsk.co/faqs.html" rel="external noopener noreferrer" target="_blank">Faqs</a></li>
+                           <li><a href="https://blog.rsk.co/" rel="external noopener noreferrer" target="_blank">Blog</a></li>
+                           <li><a href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" rel="external noopener noreferrer" target="_blank">Brand Guidelines</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links lastcol">
+                        <ul>
+                           <li><a class="bold" href="https://rsk.co/terms-conditions.html" rel="external noopener noreferrer" target="_blank">Terms &amp; Conditions</a></li>
+                           <li><a class="bold" href="https://rsk.co/privacy-policy.html" rel="external noopener noreferrer" target="_blank">Privacy Policy</a></li>
+                           <li><a class="bold" href="https://www.iovlabs.org" rel="external noopener noreferrer" target="_blank">About IOVlabs</a></li>
+                           <li><a class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html" rel="external noopener noreferrer" target="_blank">Contact IOVlabs</a></li>
+                           <a href="https://developers.doc.rsk.co/docs" rel="external noopener noreferrer" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="social-links">
+                  <a href="https://twitter.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="facebook"><i class="fab fa-youtube"></i></a>
+                  <a href="https://www.facebook.com/RSKsmart/" rel="external noopener noreferrer" target="_blank" class="linkedin"><i class="fab fa-facebook"></i></a>
+                  <a href="https://gitter.im/rsksmart" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-gitter"></i></a>
+                  <a href="https://www.reddit.com/r/rootstock/" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-reddit"></i></a>
+                  <a href="https://t.me/rskofficialcommunity" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://medium.com/@RSKNews" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-medium"></i></a>
+                  <a href="https://t.me/rsksmartcontract" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://www.instagram.com/rsksmart/" rel="external noopener noreferrer" target="_blank" class=""><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="col-md-12">
+            <div class="row">
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="copyright">Copyright © 2015 - 2020 RSK Labs. All rights reserved.</p>
+               </div>
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="credits"> RSK Public Key (2ED3 E888 0384 D3D9 70B6  A612 BEBC A6A9 63F6 1479)</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- #footer -->
+
+      <a href="#top" class="scrollup"><p>Go to top</p></a>
+      <!-- Bootstrap core JavaScript -->
+      <script src="../../../../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../../../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../../../../assets/js/main.js"></script>
+      <script src="../../../../assets/vendor/carousel/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          nav:true,
+          center:true,
+          URLhashListener:true,
+          autoplayHoverPause:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+
+      </script>
+      <script>
+      ((window.gitter = {}).chat = {}).options = {
+         room: 'rsksmart/getting-started'
+      };
+      </script>
+      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+   </body>
+</html>

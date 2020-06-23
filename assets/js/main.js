@@ -75,6 +75,9 @@ $(document).ready(function () {
       case '2-way-peg-verifier':
         render2WayPegVerifierSetup();
         return;
+      case 'next-elem-class':
+        renderNextElemClassSetup();
+        return;
       default:
         console.error('Unsupported render feature:', feature);
     }
@@ -381,7 +384,7 @@ function render2WayPegVerifierCheck() {
         result = `The address ${displayAddress
         } is a valid ${displayAddressType
         } address, however, may not peg in on ${displayNetwork
-        }. Please check the compatibility matrix.`;        
+        }. Please check the compatibility matrix.`;
       }
     } else {
       result = `The address ${displayAddress
@@ -406,6 +409,49 @@ function renderCustomTerminals() {
 function renderTablesWithBorders() {
   $('table')
     .addClass('table-with-border');
+}
+
+// render feature: next elem class
+
+function renderNextElemClassSetup() {
+  var elemNodeList = document.querySelectorAll('a[title^="next-elem-class "]');
+  var elems = Array.prototype.slice.call(elemNodeList);
+  elems.forEach(renderNextElemClass);
+}
+
+function renderNextElemClass(el) {
+  var classNames = el
+    .getAttribute('title')
+    .slice('next-elem-class '.length)
+    .split(/\s+/);
+  let nextEl = el.nextSibling;
+  while (true) {
+    if (nextEl && nextEl.nodeType === Node.TEXT_NODE) {
+      const textContent = nextEl.textContent;
+      if (!textContent || !textContent.trim()) {
+        // skip empty or whitespace only text nodes
+        nextEl = nextEl.nextSibling;
+      } else {
+        // convert text node to a <span>
+        // in order to be able to apply classes to it
+        const span = document.createElement('span');
+        nextEl.parentNode.replaceChild(span, nextEl);
+        span.textContent = textContent;
+        nextEl = span;
+        break;
+      }
+    } else {
+      break;
+    }
+  }
+  console.log(el, nextEl);
+  if (!nextEl) {
+    return;
+  }
+  el.parentNode.replaceChild(nextEl, el);
+  classNames.map((className) => {
+    nextEl.classList.add(className);
+  });
 }
 
 $('#newsletter-form').submit(function() {
