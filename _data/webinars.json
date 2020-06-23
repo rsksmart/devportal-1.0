@@ -1853,7 +1853,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ethereum-bridge",
-      "tags": " idioma-english audiencia-developers audiencia-general",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/bridge.jpg",
       "resources": [
         {
@@ -2357,12 +2357,12 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e42994d6-a586-4136-b19d-056010079403/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers recent",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "resources": [],
-      "recordedVideoUrl": "https://youtu.be/SlfGy5o5esg",
+      "recordedVideoUrl": "",
       "_permalink": "/webinars/202006-006/",
-      "_isPast": true
+      "_isPast": false
     },
     {
       "type": "event/2",
@@ -2483,7 +2483,7 @@
       "status": "cancelled",
       "url": "",
       "title": "Self Sovereign Identity and RIF",
-      "description": "",
+      "description": "-",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -2506,266 +2506,6 @@
       "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-001",
-      "version": "1",
-      "timestamp": "2020-07-01T22:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "Testes utilizando Truffle na RSK",
-      "description": "Neste webinar você vai aprender a elaborar testes em smart contracts utilizando o Truffle Framework.",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "Portuguese",
-      "audiences": [
-        "developers"
-      ],
-      "presenters": [
-        {
-          "name": "Solange Gueiros",
-          "description": "Developer Advocate",
-          "contact": "@solangegueiros"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/2442473d-a268-4bba-8678-2bd6903f8894/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
-      "image": "/webinars/img/events/event2.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_permalink": "/webinars/202007-001/",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-002",
-      "version": "1",
-      "timestamp": "2020-07-03T18:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "RIF Lumino workshop",
-      "description": "",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "English",
-      "audiences": [
-        "developers"
-      ],
-      "presenters": [
-        {
-          "name": "Alejandro Narancio",
-          "description": "Payments and Tools PO",
-          "contact": "@anarancio"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-developers",
-      "image": "/webinars/img/events/event9.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-003",
-      "version": "1",
-      "timestamp": "2020-07-03T22:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "RIF Lumino workshop",
-      "description": "",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "Spanish",
-      "audiences": [
-        "developers"
-      ],
-      "presenters": [
-        {
-          "name": "Alejandro Narancio",
-          "description": "Payments and Tools PO",
-          "contact": "@anarancio"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/c1b34ea2-d1c8-475f-b6a8-5f2e44405571/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol",
-      "tags": " idioma-spanish audiencia-developers",
-      "image": "/webinars/img/events/event4.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-004",
-      "version": "1",
-      "timestamp": "2020-07-06T20:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "Self Sovereign Identity and RIF",
-      "description": "",
-      "category": "Talk",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "English",
-      "audiences": [
-        "general"
-      ],
-      "presenters": [
-        {
-          "name": "Milton Berman",
-          "description": "RIF Identity PO",
-          "contact": "@miltonberman"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
-      "tags": " idioma-english audiencia-general",
-      "image": "/webinars/img/events/event11.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-005",
-      "version": "1",
-      "timestamp": "2020-07-08T07:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "Testing Smart Contracts with Truffle",
-      "description": "Learn how to create and run tests on your RSK smart contracts using Truffle.",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "English",
-      "audiences": [
-        "developers"
-      ],
-      "presenters": [
-        {
-          "name": "Brendan Graetz",
-          "description": "Developer Advocate",
-          "contact": "@bguiz"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers",
-      "image": "/webinars/img/events/event6.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_permalink": "/webinars/202007-005/",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-006",
-      "version": "1",
-      "timestamp": "2020-07-15T22:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "Migrando dApps do Ethereum para RSK (Port Ethereum dApps)",
-      "description": "Este webinar é para os desenvolvedores Ethereum que desejam conhecer as possibilidades para migrar suas aplicações para a rede RSK.",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "Portuguese",
-      "audiences": [
-        "developers"
-      ],
-      "presenters": [
-        {
-          "name": "Solange Gueiros",
-          "description": "Developer Advocate",
-          "contact": "@solangegueiros"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/9948fd38-4bfd-488e-a7ea-868d9384c80a/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
-      "image": "/webinars/img/events/event1.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_permalink": "/webinars/202007-006/",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-007",
-      "version": "1",
-      "timestamp": "2020-07-23T00:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "Testeando Smart Contracts con Truffle",
-      "description": "",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "Spanish",
-      "audiences": [
-        "developers"
-      ],
-      "presenters": [
-        {
-          "name": "Dulce Villarreal",
-          "description": "Devoloper Advocate",
-          "contact": "@Dulce_vird"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/23f72a43-a63d-4837-963c-db2f1a107064/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testeando-smart-contracts-con-truffle",
-      "tags": " idioma-spanish audiencia-developers",
-      "image": "/webinars/img/events/event8.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_isPast": false
-    },
-    {
-      "type": "event/2",
-      "id": "202007-008",
-      "version": "1",
-      "timestamp": "2020-07-29T22:00:00.000Z",
-      "lastModified": "2020-06-19T06:30:00.000Z",
-      "status": "confirmed",
-      "url": "",
-      "title": "Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK",
-      "description": "RSK possui diversos Truffle boxes, que são estruturas de projetos prontos para serem customizados 😄\n\nEles incluem todas as configurações e dependencias necessárias para você se concentrar no que realmente importa:\n\n➡️ O desenvolvimento da sua aplicação descentralizada e seus smart contracts.\n\nNeste webinar você vai conhecer os Truffle Boxes da RSK e aprender a utilizá-los.",
-      "category": "Workshop",
-      "locationCategory": "online",
-      "location": "Online only",
-      "language": "Portuguese",
-      "audiences": [
-        "developers"
-      ],
-      "presenters": [
-        {
-          "name": "Solange Gueiros",
-          "description": "Developer Advocate",
-          "contact": "@solangegueiros"
-        }
-      ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/acd7505e-a8e6-4e83-9a6a-26f54c808695/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
-      "image": "/webinars/img/events/event3.jpg",
-      "resources": [],
-      "recordedVideoUrl": "",
-      "_permalink": "/webinars/202007-008/",
       "_isPast": false
     }
   ]
