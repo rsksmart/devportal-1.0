@@ -111,3 +111,9 @@ To see how many tokens you have in your wallet you should list the RIF Token.
 #### Display amount of tokens in the Metamask wallet
 
 Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/custom-tokens) to add a custom token to the wallet. You should add the token address displayed [here](https://developers.rsk.co/rif/token).
+
+----
+
+[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Github](https://github.com/rnsdomains) |
+[Register Domain](https://manager.rns.rifos.org/search)

@@ -200,3 +200,9 @@ The owner of the subdomain is the account that can set the addresses for that su
 3. Submit the transaction.
 
 4. Wait until the transaction is confirmed, this can take a minute.
+
+----
+
+[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Github](https://github.com/rnsdomains) |
+[Register Domain](https://manager.rns.rifos.org/search)

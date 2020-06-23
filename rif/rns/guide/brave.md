@@ -75,3 +75,9 @@ When you press tab, or move to the next field, Token Symbol and Decimals of Prec
 Click "Next" and then "Add Tokens".
 
 You can repeat these steps for the RSK Testnet.
+
+----
+
+[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Github](https://github.com/rnsdomains) |
+[Register Domain](https://manager.rns.rifos.org/search)

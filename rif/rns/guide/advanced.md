@@ -122,3 +122,9 @@ Reverse lookups are used to find the domain name of an address, the other way ro
 ### Disable reverse resolution lookups
 
 To disable reverse resolution lookup, follow the same instructions in [Enable reverse resolution lookups](#enable-reverse-resolution-lookups) and set an empty string.
+
+----
+
+[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Github](https://github.com/rnsdomains) |
+[Register Domain](https://manager.rns.rifos.org/search)

@@ -97,3 +97,9 @@ If you want to remove a domain from the list of logged in domains
     ![UserGuide - Change language](/rif/rns/guide/images/userguide-change-language.png)
 
 3. Choose the language you want.
+
+----
+
+[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Github](https://github.com/rnsdomains) |
+[Register Domain](https://manager.rns.rifos.org/search)

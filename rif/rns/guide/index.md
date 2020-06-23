@@ -38,3 +38,9 @@ tags: rns, guide, rns-user-guide
         - [Change a subdomain's owner](/rif/rns/guide/operations/#change-a-subdomains-owner)
         - [Delete a subdomain](/rif/rns/guide/operations/#delete-a-subdomain)
 - [Advanced operations](/rif/rns/guide/advanced/)
+
+----
+
+[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Github](https://github.com/rnsdomains) |
+[Register Domain](https://manager.rns.rifos.org/search)

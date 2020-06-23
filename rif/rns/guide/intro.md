@@ -18,3 +18,9 @@ RIF Name Service is a decentralized domain service built on top of RSK blockchai
 The whole RNS suite is available on the RSK testnet, this enables you to try the product for free.
 
 Browse the [testnet manager](https://testnet.manager.rns.rifos.org).
+
+----
+
+[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Github](https://github.com/rnsdomains) |
+[Register Domain](https://manager.rns.rifos.org/search)
