@@ -1659,6 +1659,53 @@ img {
 
 /* custom terminal render */
 
+.multi-terminal-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.multi-terminal-tab {
+  float: left;
+  border: 1px solid #c2c2c2;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 2px 2px 0 0;
+  padding: 0.1em 0.25em 0 0.25em;
+  margin: 0 0.1em 0 0;
+  background-color: #b0b0b0;
+}
+
+.multi-terminal-tab:hover {
+  background-color: #c2c2c2;
+}
+
+.multi-terminal-tabtitle {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 0.25em;
+  transition: 0.25s;
+  font-size: 1.25em;
+}
+
+.multi-terminal-tabcontent {
+  display: none;
+  width: 100%;
+  border: 1px solid #c2c2c2;
+  border-radius: 0 2px 2px 2px;
+  margin-top: -1px;
+  padding: 5px;
+}
+
+.multi-terminal-tab.active {
+  background-color: #ffffff;
+}
+
+.multi-terminal-tabcontent.active {
+  display: block;
+}
+
 .windows-command-prompt {
   padding-left: 0;
 }
