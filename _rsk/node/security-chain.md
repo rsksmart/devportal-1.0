@@ -2,20 +2,20 @@
 layout: rsk
 title: Ensure security chain of RskJ source code
 tags: rsk, rskj, node, security, verification
-description: "All the different ways what you can verify RskJ: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
+description: "All the different ways what you can verify RSKj: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
 collection_order: 2500
 permalink: /rsk/node/security-chain/
 render_features: 'custom-terminals'
 ---
 
-# Verify authenticity of RskJ source code and its binary dependencies
+# Verify authenticity of RSKj source code and its binary dependencies
 
 The authenticity of the source code must be verified by checking the signature of the release tags in the official Git repository. The authenticity of the binary dependencies is verified by Gradle after following the steps below to install the necessary plugins.
 
 ## Download RSK Release Signing Key public key
 
-For Linux based OS (Ubuntu for example) it's recommended to install `curl` and `gnupg-curl` in order to download the key through HTTPS.
-We recommend using GPG v1 to download the public key because GPG v2 has problems to connect to HTTPS key servers. You can also download the key using curl, wget or a web browser but always check the fingerprint before importing it.
+For Linux based OS (Ubuntu for example), it's recommended to install `curl` and `gnupg-curl` in order to download the key through HTTPS.
+We recommend using GPG v1 to download the public key because GPG v2 encounters problems when connecting to HTTPS key servers. You can also download the key using curl, wget or a web browser but always check the fingerprint before importing it.
 
 [](#top "multiple-terminals")
 - Linux, Mac OSX

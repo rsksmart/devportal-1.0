@@ -73,7 +73,7 @@ For further reference, check out the
 
 ## Check the RPC
 
-If you see no output, it means that the node is running. To check, you can open a new console tab (it is important you do not close this one or interrupt the process) and issue a request to the node's RPC HTTP server. This is an example using cURL:
+If you see no output, it means that the node is running. To confirm, you can open a new console tab (it is important you do not close this tab or interrupt the process) and issue a request to the node's RPC HTTP server. This is an example using cURL:
 
 [](#top "multiple-terminals")
 - Linux, Mac OSX
