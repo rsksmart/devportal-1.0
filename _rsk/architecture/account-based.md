@@ -19,8 +19,8 @@ When using
 wallet software, you will need to specify a derivation path.
 
 ```
-RSK Mainnet: m/44'/137'/0'/0
-RSK Testnet: m/44'/37310'/0'/0
+RSK Mainnet: m/44'/137'/0'/0/N
+RSK Testnet: m/44'/37310'/0'/0/N
 ```
 
 - The first level of the hierarchy is for *purpose*.
