@@ -733,7 +733,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-02-28 02:49:08 +0000T00:00:00.000Z">2020-02-28</time> | -->
+    <!--time role="presentation" datetime="2020-06-25 06:01:05 +0000T00:00:00.000Z">2020-06-25</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/architecture/account-based.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1377,8 +1377,8 @@
 <a href="https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki" title="Multi-Account Hierarchy for Deterministic Wallets" rel="external noopener noreferrer" target="_blank">BIP-44</a>-compatible
 wallet software, you will need to specify a derivation path.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RSK Mainnet: m/44'/137'/0'/0
-RSK Testnet: m/44'/37310'/0'/0
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RSK Mainnet: m/44'/137'/0'/0/N
+RSK Testnet: m/44'/37310'/0'/0/N
 </code></pre></div></div>
 
 <ul>
@@ -1394,6 +1394,7 @@ specification.</li>
 specification.</li>
     </ul>
   </li>
+  <li>The final level of the hierarchy is for <em>index</em>: Addresses are numbered from index 0 in sequentially increasing manner. This number is used as child index in <a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#specification-key-derivation" title="Hierarchical Deterministic Wallets - Key Derivation" rel="external noopener noreferrer" target="_blank">BIP32 derivation</a>. Public derivation is used at this level.</li>
 </ul>
 
 <h2 id="checksum">Checksum</h2>
