@@ -741,7 +741,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-06 19:34:30 +0000T00:00:00.000Z">2020-05-06</time> | -->
+    <!--time role="presentation" datetime="2020-06-25 08:35:34 +0000T00:00:00.000Z">2020-06-25</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/security-chain.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1373,44 +1373,62 @@
 
                   <h1 class="page-title" id="top">Ensure security chain of RskJ source code</h1>
 
-                  <h1 id="verify-authenticity-of-rskj-source-code-and-its-binary-dependencies">Verify authenticity of RskJ source code and its binary dependencies</h1>
+                  <h1 id="verify-authenticity-of-rskj-source-code-and-its-binary-dependencies">Verify authenticity of RSKj source code and its binary dependencies</h1>
 
 <p>The authenticity of the source code must be verified by checking the signature of the release tags in the official Git repository. The authenticity of the binary dependencies is verified by Gradle after following the steps below to install the necessary plugins.</p>
 
 <h2 id="download-rsk-release-signing-key-public-key">Download RSK Release Signing Key public key</h2>
 
-<p>For Linux based OS (Ubuntu for example) it’s recommended to install <code class="highlighter-rouge">curl</code> and <code class="highlighter-rouge">gnupg-curl</code> in order to download the key through HTTPS.
-We recommend using GPG v1 to download the public key because GPG v2 has problems to connect to HTTPS key servers. You can also download the key using curl, wget or a web browser but always check the fingerprint before importing it.</p>
+<p>For Linux based OS (Ubuntu for example), it’s recommended to install <code class="highlighter-rouge">curl</code> and <code class="highlighter-rouge">gnupg-curl</code> in order to download the key through HTTPS.
+We recommend using GPG v1 to download the public key because GPG v2 encounters problems when connecting to HTTPS key servers. You can also download the key using curl, wget or a web browser but always check the fingerprint before importing it.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--keyserver</span> https://secchannel.rsk.co/release.asc <span class="nt">--recv-keys</span> 5DECF4415E3B8FA4
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--keyserver</span> https://secchannel.rsk.co/release.asc <span class="nt">--recv-keys</span> 5DECF4415E3B8FA4
 gpg: requesting key 5E3B8FA4 from https server secchannel.rsk.co
-gpg: key 5E3B8FA4: public key <span class="s2">"RSK Release Signing Key &lt;support@rsk.co&gt;"</span> imported
+gpg: key 5E3B8FA4: public key <span class="s2">"RSK Release Signing Key &lt;support@rsk.co&gt;"</span>      imported
 gpg: Total number processed: 1
 gpg:               imported: 1  <span class="o">(</span>RSA: 1<span class="o">)</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h2 id="verify-the-fingerprint-of-the-public-key">Verify the fingerprint of the public key</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--finger</span> 5DECF4415E3B8FA4
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--finger</span> 5DECF4415E3B8FA4
 pub   4096R/5E3B8FA4 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
       Key fingerprint <span class="o">=</span> 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
 uid                  RSK Release Signing Key &lt;support@rsk.co&gt;
 sub   4096R/A44DCC86 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
 sub   4096R/5E488E87 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
 sub   4096R/9FC3E7C2 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h2 id="verify-the-signature-of-sha256sumsasc">Verify the signature of SHA256SUMS.asc</h2>
 
 <p>The file<code class="highlighter-rouge">SHA256SUMS.asc</code> is signed with RSK public key and includes SHA256 hashes of the files necessary to start the build process.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--verify</span> SHA256SUMS.asc
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--verify</span> SHA256SUMS.asc
 gpg: Signature made mar 16 may 2017 16:47:56 ART
 gpg:                using RSA key 0x67D06695A44DCC86
 gpg: Good signature from <span class="s2">"RSK Release Signing Key &lt;support@rsk.co&gt;"</span> <span class="o">[</span>ultimate]
 Primary key fingerprint: 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
-     Subkey fingerprint: D135 DDC0 B54D 6EF3 5901  52DF 67D0 6695 A44D CC86
-</code></pre></div></div>
+    Subkey fingerprint: D135 DDC0 B54D 6EF3 5901  52DF 67D0 6695 A44D CC86
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <p><em>Note:</em> Learn more about <a href="https://www.gnupg.org/gph/en/manual/x334.html" rel="external noopener noreferrer" target="_blank">key management</a> here.</p>
 
@@ -1420,22 +1438,34 @@ Primary key fingerprint: 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
 
 <p>Linux - Windows (bash console)</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sha256sum</span> <span class="nt">--check</span> SHA256SUMS.asc
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sha256sum</span> <span class="nt">--check</span> SHA256SUMS.asc
 configure.sh: OK
 <span class="nb">sha256sum</span>: WARNING: 19 lines are improperly formatted
-</code></pre></div></div>
-
-<p>MacOs</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>shasum <span class="nt">--check</span> SHA256SUMS.asc
+</code></pre></div>    </div>
+  </li>
+  <li>Mac OSX
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>shasum <span class="nt">--check</span> SHA256SUMS.asc
 configure.sh: OK
 <span class="nb">sha256sum</span>: WARNING: 19 lines are improperly formatted
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h2 id="run-configure-script-to-configure-secure-environment">Run configure script to configure secure environment</h2>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./configure.sh
-</code></pre></div></div>
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-bash highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>./configure.sh
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 
                   
@@ -1491,7 +1521,7 @@ configure.sh: OK
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="custom-terminals">
          </div>
       </section>
 

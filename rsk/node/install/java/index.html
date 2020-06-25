@@ -749,7 +749,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-14 01:15:18 +0000T00:00:00.000Z">2020-05-14</time> | -->
+    <!--time role="presentation" datetime="2020-06-25 08:12:43 +0000T00:00:00.000Z">2020-06-25</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/install/java.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1390,8 +1390,19 @@
 <p>The Fat JAR or Uber JAR can be <a href="https://github.com/rsksmart/rskj/releases" rel="external noopener noreferrer" target="_blank">downloaded</a> or compiled (in a <a href="https://github.com/rsksmart/rskj/wiki/Reproducible-Build" rel="external noopener noreferrer" target="_blank">reproducible way</a> or <a href="../../contribute/">not</a>).</p>
 
 <p>To run the node:</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start
-</code></pre></div></div>
+
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start
+</code></pre></div>    </div>
+  </li>
+  <li>Windows
+    <pre><code class="language-windows-command-prompt">C:\&gt; java -cp &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start
+</code></pre>
+  </li>
+</ul>
 
 <p>Replace <code class="highlighter-rouge">&lt;PATH-TO-THE-RSKJ-JAR&gt;</code> with your path to the JAR file. As an example: <code class="highlighter-rouge">C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar</code></p>
 
@@ -1412,8 +1423,18 @@ in a fraction of the time currently required.</p>
 
 <p>Use this command to run the node:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start <span class="nt">--import</span>
-</code></pre></div></div>
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start <span class="nt">--import</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Windows
+    <pre><code class="language-windows-command-prompt">C:\&gt; java -cp &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start --import
+</code></pre>
+  </li>
+</ul>
 
 <p>If your hardware meets the
 <a href="../requirements/">minimum hardware requirements</a>,
@@ -1421,8 +1442,18 @@ but you get a memory error during the process,
 please consider adding the following flag to the command
 to change the memory allocated to the process:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>java <span class="nt">-Xmx4G</span> <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start <span class="nt">--import</span>
-</code></pre></div></div>
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>java <span class="nt">-Xmx4G</span> <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start <span class="nt">--import</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Windows
+    <pre><code class="language-windows-command-prompt">C:\&gt; java -Xmx4G -cp &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start --import
+</code></pre>
+  </li>
+</ul>
 
 <p>Replace <code class="highlighter-rouge">&lt;PATH-TO-THE-RSKJ-JAR&gt;</code> with your path to the JAR file. As an example: <code class="highlighter-rouge">C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar</code></p>
 
@@ -1431,12 +1462,27 @@ to change the memory allocated to the process:</p>
 
 <h2 id="check-the-rpc">Check the RPC</h2>
 
-<p>If you see no output, it means that the node is running. To check, you can open a new console tab (it is important you do not close this one or interrupt the process) and issue a request to the node’s RPC HTTP server. This is an example using cURL:</p>
+<p>If you see no output, it means that the node is running. To confirm, you can open a new console tab (it is important you do not close this tab or interrupt the process) and issue a request to the node’s RPC HTTP server. This is an example using cURL:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl localhost:4444/1.1.0/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'</span>
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl http://localhost:4444/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Windows
+    <pre><code class="language-windows-command-prompt">C:\&gt; curl http://localhost:4444/ -X POST -H "Content-Type: application/json" --data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}'
+</code></pre>
+  </li>
+</ul>
+
+<p>The response should look similar to:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{"jsonrpc":"2.0","id":1,"result":"0xfc0"}
 </code></pre></div></div>
 
-<p>The response should look similar to <code class="highlighter-rouge">{"jsonrpc":"2.0","id":1,"result":"0xfc0"}</code>, where the <code class="highlighter-rouge">result</code> property is the number of the latest block that has been synced (in hexadecimal).</p>
+<p>… where the <code class="highlighter-rouge">result</code> property is the number of the latest block that has been synced (in hexadecimal).</p>
 
 <h2 id="switching-networks">Switching networks</h2>
 
@@ -1513,7 +1559,7 @@ to change the memory allocated to the process:</p>
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="custom-terminals">
          </div>
       </section>
 

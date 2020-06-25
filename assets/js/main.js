@@ -398,6 +398,41 @@ function render2WayPegVerifierCheck() {
 
 // render feature: custom terminals
 
+function insertDomNodeRelativeTo(node, newNode, isAfter) {
+  if (isAfter) {
+    if (node.nextSibling) {
+      // newNode will be after node, and before node's current next node
+      node.parentNode.insertBefore(
+        newNode,
+        node.nextSibling,
+      );
+    } else {
+      // newNode is after node, but node is the last child
+      node.parentNode.appendChild(newNode);
+    }
+  } else {
+    // newNode is before node
+    node.parentNode.insertBefore(
+      newNode,
+      node,
+    );
+  }
+}
+
+function savedOsSelection(os) {
+  if (!localStorage) {
+    // older browsers simply skip this feature
+    return undefined;
+  }
+  if (os) {
+    // set value
+    return localStorage.setItem('multi-terminal-renderer--selected-os', os);
+  } else {
+    // get value
+    return localStorage.getItem('multi-terminal-renderer--selected-os');
+  }
+}
+
 function renderCustomTerminalsSetup() {
   var elemNodeList = document.querySelectorAll(
     'a[title="multiple-terminals"]',
@@ -444,9 +479,16 @@ function renderMultipleTerminalsListElem(ul, li, liIdx) {
     );
     return;
   }
-  const tabText = li.childNodes[0].textContent.trim();
-  const tabTextId = tabText.toLowerCase();
-  if (['linux', 'mac', 'windows'].indexOf(tabTextId) < 0) {
+  var tabText = li.childNodes[0].textContent.trim();
+  var oses = tabText.split(', ').map(function (s) { return s.trim(); });
+  oses.forEach(function (osText, osIdx) {
+    renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul);
+  });
+}
+
+function renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul) {
+  var os = (osText.split(' ')[0]).toLowerCase();
+  if (['linux', 'mac', 'windows'].indexOf(os) < 0) {
     console.warn(
       `Child element #${liIdx} does not reference a supported OS terminal.`,
       ul,
@@ -454,73 +496,87 @@ function renderMultipleTerminalsListElem(ul, li, liIdx) {
     );
     return;
   }
+  var isLastOs = (osIdx === oses.length - 1);
+  var tab = li;
 
   // create a tabTitle <span> to replace the text node in <li>,
   // in order to apply classes
-  const tabTitle = document.createElement('span');
-  tabTitle.textContent = tabText;
+  var tabTitle = document.createElement('span');
+  tabTitle.textContent = osText;
   tabTitle.classList.add('multi-terminal-tabtitle');
-  tabTitle.classList.add(`multi-terminal-tabtitle-${tabTextId}`);
-  tabTitle.setAttribute('data-os', tabTextId);
-  li.replaceChild(tabTitle, li.childNodes[0]);
+  tabTitle.classList.add(`multi-terminal-tabtitle-${os}`);
+  tabTitle.setAttribute('data-os', os);
+  if (isLastOs) {
+    tab.replaceChild(tabTitle, tab.childNodes[0]);
+  } else {
+    // we have to create a new list element as well
+    var newTab = document.createElement('li');
+    newTab.appendChild(tabTitle);
+    insertDomNodeRelativeTo(tab, newTab, false);
+    tab = newTab;
+  }
 
   // create a new tabContent <div>
   // and move rest of contents of the <li> into this
-  const tabContent = document.createElement('div');
+  var tabContent = document.createElement('div');
   tabContent.classList.add('multi-terminal-tabcontent');
-  tabContent.classList.add(`multi-terminal-tabcontent-${tabTextId}`);
-  tabContent.setAttribute('data-os', tabTextId);
+  tabContent.classList.add(`multi-terminal-tabcontent-${os}`);
+  tabContent.setAttribute('data-os', os);
   for (let childIdx = 1; childIdx < li.childNodes.length; ++childIdx) {
-    tabContent.appendChild(li.childNodes[childIdx]);
+    if (isLastOs) {
+      tabContent.appendChild(li.childNodes[childIdx]);
+    } else {
+      tabContent.appendChild(li.childNodes[childIdx].cloneNode(true));
+    }
   }
 
   // place the tabContent <div> immediately subsequent to the <ul>
   // to which this <li> belongs
   // also set the 1st one among them to be active,
   // otherwise none will be visible by default
-  li.classList.add('multi-terminal-tab');
-  li.classList.add(`multi-terminal-tab-${tabTextId}`);
-  li.setAttribute('data-os', tabTextId);
-  const isFirstTab = (liIdx === 0);
-  li.classList.toggle('active', isFirstTab);
-  tabTitle.classList.toggle('active', isFirstTab);
-  tabContent.classList.toggle('active', isFirstTab);
-  ul.parentNode.insertBefore(
-    tabContent,
-    ul.nextSibling,
-  );
+  tab.classList.add('multi-terminal-tab');
+  tab.classList.add(`multi-terminal-tab-${os}`);
+  tab.setAttribute('data-os', os);
+  var prevOs = savedOsSelection();
+  var isActiveTab = (prevOs === os) ||
+    (!prevOs && liIdx === 0 && osIdx === 0);
+  tab.classList.toggle('active', isActiveTab);
+  tabTitle.classList.toggle('active', isActiveTab);
+  tabContent.classList.toggle('active', isActiveTab);
+  insertDomNodeRelativeTo(ul, tabContent, true);
 }
 
 function renderMultipleTerminalsOnClickTabTitle (e) {
-  const tabTitle = e.target;
+  var tabTitle = e.target;
   if (tabTitle.classList.contains('multi-terminal-tabtitle')) {
-    const tab = tabTitle.parentNode;
-    const tabTextId = tab.getAttribute('data-os');
-    const allTabsNodeList =
+    var tab = tabTitle.parentNode;
+    var os = tab.getAttribute('data-os');
+    var allTabsNodeList =
       document.querySelectorAll('.multi-terminal-tab');
-    const allTabs =
+    var allTabs =
       Array.prototype.slice.call(allTabsNodeList);
     allTabs.forEach(function (currTab) {
       currTab.classList.toggle(
         'active',
-        (currTab.getAttribute('data-os') === tabTextId),
+        (currTab.getAttribute('data-os') === os),
       );
     });
-    const allTabsContentNodeList =
+    var allTabsContentNodeList =
       document.querySelectorAll('.multi-terminal-tabcontent');
-    const allTabsContent =
+    var allTabsContent =
       Array.prototype.slice.call(allTabsContentNodeList);
     allTabsContent.forEach(function (currTabContent) {
       currTabContent.classList.toggle(
         'active',
-        (currTabContent.getAttribute('data-os') === tabTextId),
+        (currTabContent.getAttribute('data-os') === os),
       );
     });
+    savedOsSelection(os);
   }
 }
 
 function renderCustomTerminalsFrames() {
-  const elemNodeList =
+  var elemNodeList =
     document.querySelectorAll('.language-windows-command-prompt');
   var elems = Array.prototype.slice.call(elemNodeList);
   elems.forEach(function (el) {
