@@ -1694,7 +1694,7 @@ img {
   width: 100%;
   border: 1px solid #c2c2c2;
   border-radius: 0 2px 2px 2px;
-  margin-top: -1px;
+  margin: -1px 0 1em 0;
   padding: 5px;
 }
 
