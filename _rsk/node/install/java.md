@@ -2,6 +2,7 @@
 layout: rsk
 title: Setup node on Java
 collection_order: 2324
+render_features: 'custom-terminals'
 ---
 
 Make sure your system meets the [minimum requirements](../requirements/) before installing RSK nodes on it.
@@ -13,9 +14,16 @@ You also need to install [Java 8 JDK](https://www.java.com/download/).
 The Fat JAR or Uber JAR can be [downloaded](https://github.com/rsksmart/rskj/releases) or compiled (in a [reproducible way](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [not](/rsk/node/contribute)).
 
 To run the node:
-```bash
-$ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
-```
+
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+  $ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
+  ```
+- Windows
+  ```windows-command-prompt
+  C:\> java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
+  ```
 
 Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
@@ -32,9 +40,15 @@ in a fraction of the time currently required.
 
 Use this command to run the node:
 
-```bash
-$ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
-```
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+  $ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+  ```
+- Windows
+  ```windows-command-prompt
+  C:\> java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+  ```
 
 If your hardware meets the
 [minimum hardware requirements](/rsk/node/install/requirements/),
@@ -42,9 +56,15 @@ but you get a memory error during the process,
 please consider adding the following flag to the command
 to change the memory allocated to the process:
 
-```bash
-$ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
-```
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+  $ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+  ```
+- Windows
+  ```windows-command-prompt
+  C:\> java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+  ```
 
 Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar`
 
@@ -53,13 +73,25 @@ For further reference, check out the
 
 ## Check the RPC
 
-If you see no output, it means that the node is running. To check, you can open a new console tab (it is important you do not close this one or interrupt the process) and issue a request to the node's RPC HTTP server. This is an example using cURL:
+If you see no output, it means that the node is running. To confirm, you can open a new console tab (it is important you do not close this tab or interrupt the process) and issue a request to the node's RPC HTTP server. This is an example using cURL:
 
-```bash
-$ curl localhost:4444/1.1.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+  $ curl http://localhost:4444/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+  ```
+- Windows
+  ```windows-command-prompt
+  C:\> curl http://localhost:4444/ -X POST -H "Content-Type: application/json" --data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}'
+  ```
+
+The response should look similar to:
+
+```
+{"jsonrpc":"2.0","id":1,"result":"0xfc0"}
 ```
 
-The response should look similar to `{"jsonrpc":"2.0","id":1,"result":"0xfc0"}`, where the `result` property is the number of the latest block that has been synced (in hexadecimal).
+... where the `result` property is the number of the latest block that has been synced (in hexadecimal).
 
 ## Switching networks
 
