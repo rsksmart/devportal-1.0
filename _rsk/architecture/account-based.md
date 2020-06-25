@@ -19,8 +19,8 @@ When using
 wallet software, you will need to specify a derivation path.
 
 ```
-RSK Mainnet: m/44'/137'/0'/0
-RSK Testnet: m/44'/37310'/0'/0
+RSK Mainnet: m/44'/137'/0'/0/N
+RSK Testnet: m/44'/37310'/0'/0/N
 ```
 
 - The first level of the hierarchy is for *purpose*.
@@ -32,6 +32,7 @@ RSK Testnet: m/44'/37310'/0'/0
   - For RSK Testnet, this should be `37310'`, as per the
     [RSKIP-57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md "Derivation Path for Hierarchical Deterministic Wallets")
     specification.
+- The final level of the hierarchy is for *index*: Addresses are numbered from index 0 in sequentially increasing manner. This number is used as child index in [BIP32 derivation](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki#specification-key-derivation "Hierarchical Deterministic Wallets - Key Derivation"). Public derivation is used at this level.
 
 ## Checksum
 
