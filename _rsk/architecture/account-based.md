@@ -32,6 +32,7 @@ RSK Testnet: m/44'/37310'/0'/0/N
   - For RSK Testnet, this should be `37310'`, as per the
     [RSKIP-57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md "Derivation Path for Hierarchical Deterministic Wallets")
     specification.
+  - Address index: Addresses are numbered from index 0 in sequentially increasing manner. This number is used as child index in BIP32 derivation. Public derivation is used at this level.
 
 ## Checksum
 
