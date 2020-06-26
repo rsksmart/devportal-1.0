@@ -419,6 +419,21 @@ function insertDomNodeRelativeTo(node, newNode, isAfter) {
   }
 }
 
+function removeAllEmptyTextNodes(node) {
+  if (!node) {
+    return;
+  }
+  const childNodes = node.childNodes;
+  var el;
+  for (var i = 0; i < childNodes.length; ++i) {
+    el = childNodes[i];
+    if (el.nodeType === Node.TEXT_NODE &&
+      !el.textContent.trim()) {
+      node.removeChild(el);
+    }
+  }
+}
+
 function savedOsSelection(os) {
   if (!localStorage) {
     // older browsers simply skip this feature
@@ -529,6 +544,9 @@ function renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul) {
       tabContent.appendChild(li.childNodes[childIdx].cloneNode(true));
     }
   }
+  removeAllEmptyTextNodes(tabContent);
+  removeAllEmptyTextNodes(tabContent.querySelector('.language-shell'));
+  removeAllEmptyTextNodes(tabContent.querySelector('.language-shell > .highlight'));
 
   // place the tabContent <div> immediately subsequent to the <ul>
   // to which this <li> belongs
