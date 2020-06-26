@@ -381,6 +381,11 @@ await rns.subdomains.setOwner('testing.rsk', 'example', newOwnerAddress);
 Creates a new subdomain under the given domain tree if it is available, and sets its resolution if `addr` is provided.
 It may send one, two, or three transactions, based on the value of the sent parameters.
 
+<div class="alert alert-warning">
+  This endpoint is not working as expected in public networks (it works ok in Ganache). To workaround failed transactions pass <code>gas: 85000</code>.<br />
+  <a href="https://github.com/rnsdomains/rns-js/issues/112" target="_blank">More info</a>
+</div>
+
 > Precondition: the sender should be the owner of the parent domain.
 
 **Signature**
