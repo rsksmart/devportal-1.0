@@ -457,20 +457,20 @@ li > a {
 }
 
 .highlight {
-  margin: 30px 0 !important;
-  padding: 0px !important;
-  background-color: #cccccc !important;
+  margin: 30px 0;
+  padding: 0px;
+  background-color: #cccccc;
 }
 
 .highlight .highlight {
-  padding: 15px !important;
+  padding: 15px;
 }
 
 .main-central-col li > a {
-  color: #00b520 !important;
+  color: #00b520;
 }
 .main-central-col li:hover > a {
-  color: #00b520 !important;
+  color: #00b520;
 }
 
 pre {
@@ -1657,6 +1657,33 @@ img {
   font-size: 14px;
 }
 
+/* pygments overrides */
+
+.multi-terminal-tabcontent .highlight {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+}
+
+.multi-terminal-tabcontent .highlight .highlight {
+  padding: 5px;
+}
+
+.multi-terminal-tabcontent code {
+  display: inline;
+  font-size: 16px;
+}
+
+.multi-terminal-tabcontent pre {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  color: #212529;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
 /* custom terminal render */
 
 .multi-terminal-group {
@@ -1706,6 +1733,55 @@ img {
   display: block;
 }
 
+/* linux terminal */
+
+.multi-terminal-tabcontent .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.multi-terminal-tabcontent-linux::before {
+  content: "Terminal";
+  display: block;
+  height: 39px;
+  border-width: 0px 39px 0px 39px;
+  border-style: solid;
+  border-image:
+    url("../img/custom-terminals/linux-terminal-title-bar.png")
+    0 39 0 39
+    fill;
+  color: transparent;
+}
+
+.multi-terminal-tabcontent-linux .language-shell {
+  display: block;
+  min-height: 45px;
+  border-width: 1px 14px 21px 3px;
+  border-style: solid;
+  border-image:
+    url("../img/custom-terminals/linux-terminal-body.png")
+    1 14 21 3
+    stretch;
+    color: #e0e0e0;
+  background-color: #0c0c0c;
+  font-family: "Ubuntu Mono", consolas, monospace;
+  margin: 0 0 0 0;
+  padding: 0.25em 0.5em 0 0.5em;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow-x: hidden;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.multi-terminal-tabcontent-linux .language-shell *::selection {
+  background: #22f200;
+}
+
+/* windows-command-prompt */
+
 .windows-command-prompt {
   padding-left: 0;
 }
@@ -1716,7 +1792,7 @@ img {
   height: 31px;
   border-width: 0px 129px 0px 139px;
   border-style: solid;
-  border-image: url('../img/custom-terminals/title-bar.png') 0 129 0 139 fill;
+  border-image: url('../img/custom-terminals/windows-command-prompt-title-bar.png') 0 129 0 139 fill;
   color: transparent;
   background-color: #ffffff;
 }
@@ -1726,7 +1802,7 @@ img {
   min-height: 31px;
   border-width: 16px 19px 16px 2px;
   border-style: solid;
-  border-image: url('../img/custom-terminals/body.png') 16 19 16 2 stretch;
+  border-image: url('../img/custom-terminals/windows-command-prompt-body.png') 16 19 16 2 stretch;
   color: #e0e0e0;
   background-color: #0c0c0c;
   font-family: 'MS Sans Serif', consolas, monospace;
@@ -1842,7 +1918,7 @@ table.table.newsletter input[type='checkbox'] {
   .first_level > a::before {
     background: #008cff;
   }
-  li > span {
+  .menu-container li > span {
     display: none !important;
   }
   .hide-mobile {
