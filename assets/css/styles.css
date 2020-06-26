@@ -1842,7 +1842,7 @@ table.table.newsletter input[type='checkbox'] {
   .first_level > a::before {
     background: #008cff;
   }
-  li > span {
+  .menu-container li > span {
     display: none !important;
   }
   .hide-mobile {
