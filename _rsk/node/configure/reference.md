@@ -69,7 +69,7 @@ Describes how your node peers with other nodes.
   is the number of the network to connect to.
   It's important to maintain these numbers.
   It identifies the network you are going to connect to.
-  For a Regtest private network, you should use always the same
+  For a Regtest private network, you should always use the same
   (not necessarily 34567).
   RSK networks IDs:
 
@@ -87,7 +87,7 @@ Describes how your node peers with other nodes.
 
 ## database
 
-Describes where the blockchain  database is saved.
+Describes where the blockchain database is saved.
 
 * `database.dir = path`
   is the place to save physical storage files.
@@ -107,7 +107,7 @@ Options related to experimental import sync v0.1.
 
 ## vm
 
-Enabling de `vm.structured` will log all the calls to the VM in the local database.
+Enabling the `vm.structured` will log all the calls to the VM in the local database.
 This includes all the contract executions (opcodes).
 When testing, using this module is the only way to see exceptions.
 
@@ -384,7 +384,7 @@ If you don't have Solidity installed, you can use `/bin/false` as value.
 The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized.
 This process removes useless data over a determined amount of blocks processed.
 
-To enable the prune service in your node, override your.
+To enable the prune service in your node, override your configuration.
 
 These are the recommended parameters:
 
