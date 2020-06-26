@@ -63,7 +63,7 @@ This can be done in two ways:
 
 If you see the following error message,
 it means that RSKj is unable to bind to a particular port number,
-as another process has already bound to the same one prior.
+because prior to this, another process has already bound to the same port number.
 
 ```
 Exception in thread "UDPServer" co.rsk.net.discovery.PeerDiscoveryException: Discovery can't be started.
