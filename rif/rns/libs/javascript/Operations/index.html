@@ -757,8 +757,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-06-17 05:16:14 +0000T00:00:00.000Z">2020-06-17</time> | -->
-     11' to read |
+    <!--time role="presentation" datetime="2020-06-26 13:07:32 +0000T00:00:00.000Z">2020-06-26</time> | -->
+     12' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/libs/javascript/Operations.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1853,6 +1853,11 @@ It submits a <a href="../../../architecture/registry#set-a-subdomain"><code clas
 
 <p>Creates a new subdomain under the given domain tree if it is available, and sets its resolution if <code class="highlighter-rouge">addr</code> is provided.
 It may send one, two, or three transactions, based on the value of the sent parameters.</p>
+
+<div class="alert alert-warning">
+  This endpoint is not working as expected in public networks (it works ok in Ganache). To workaround failed transactions pass <code>gas: 85000</code>.<br>
+  <a href="https://github.com/rnsdomains/rns-js/issues/112" target="_blank" rel="external noopener noreferrer">More info</a>
+</div>
 
 <blockquote>
   <p>Precondition: the sender should be the owner of the parent domain.</p>
