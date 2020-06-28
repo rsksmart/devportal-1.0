@@ -6,6 +6,16 @@ description: "Configuration reference for RSKj"
 collection_order: 2410
 ---
 
+## Advanced Configuration
+
+For advanced configuration requirements, please refer to this
+[expected configuration file](https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/resources/expected.conf).
+This contains all possible configuration fields parsed by RSKj.
+
+## Guide
+
+The following detail the most commonly used configuration fields parsed by RSKj.
+
 - [`peer`](#peer)
 - [`database`](#database)
 - [`database.import`](#databaseimport)
