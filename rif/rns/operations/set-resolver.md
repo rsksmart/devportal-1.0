@@ -1,6 +1,7 @@
 ---
-layout: rsk
+layout: redirect
 title: Set resolver
+redirect: /rif/rns/guide/advanced#change-the-resolver-of-the-domain
 ---
 
 This operation is used to change the resource record types for a domain. Use this guide to set multi-chain resolver for your domain.
