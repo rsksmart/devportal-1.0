@@ -1,6 +1,7 @@
 ---
-layout: rsk
+layout: redirect
 title: Set chain address resolution
+redirect: /rif/rns/guide/operations#add-a-currency-address
 ---
 
 This operation is used to set a chain address resolution of a domain. If you are using your domain to receive assets, you may use this guide to change the wallet address where you receive payments.
