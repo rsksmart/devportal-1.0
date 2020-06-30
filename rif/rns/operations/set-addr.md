@@ -1,6 +1,7 @@
 ---
-layout: rsk
+layout: redirect
 title: Set address resolution
+redirect: /rif/rns/operations#change-the-rsk-address
 ---
 
 This operation is used to set the address resolution of a domain. If you are using your domain to receive assets, you may use this guide to change the wallet address where you receive payments.
