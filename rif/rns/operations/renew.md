@@ -1,6 +1,7 @@
 ---
-layout: rsk
+layout: redirect
 title: Renew a domain
+redirect: /rif/rns/guide/operations#extend-your-domain-expiration-time
 ---
 
 Don't forget to [migrate](/rif/rns/operations/Migrate-a-name) your name before renewing it!
