@@ -1,6 +1,7 @@
 ---
-layout: rsk
+layout: redirect
 title: Find the name of an address
+redirect: /rif/rns/guide/advanced#enable-reverse-resolution-lookups
 ---
 
 This process describes how to expose a name for an owned address. This requires you have the keys to unlock the account.
