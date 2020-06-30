@@ -1,7 +1,10 @@
 ---
-layout: rsk
-title: Find the name of an address
+layout: redirect
+permalink: /rif/rns/operations/get-reverse/
+redirect: /rif/rns/guide/advanced#reverse
+title: "Migrate from auction model"
 ---
+
 
 This process describes how to find a name for a given address. This depends on the owner of the account having set its reverse resolution.
 
