@@ -741,8 +741,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-03-12 16:03:15 +0000T00:00:00.000Z">2020-03-12</time> | -->
-     2' to read |
+    <!--time role="presentation" datetime="2020-06-26 08:08:19 +0000T00:00:00.000Z">2020-06-26</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/configure/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1428,6 +1428,36 @@ Check <a href="reference/">here</a> for all the configuration option.</p>
 </li>
 </ul>
 
+<h3 id="troubleshooting">Troubleshooting</h3>
+
+<h4 id="udp-port-already-in-use">UDP port already in use</h4>
+
+<p>If you see the following error message,
+it means that RSKj is unable to bind to a particular port number,
+because prior to this, another process has already bound to the same port number.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Exception in thread "UDPServer" co.rsk.net.discovery.PeerDiscoveryException: Discovery can't be started.
+        at co.rsk.net.discovery.UDPServer$1.run(UDPServer.java:65)
+Caused by: java.net.BindException: Address already in use: bind
+</code></pre></div></div>
+
+<p>To rectify this,
+change the value of <code class="highlighter-rouge">peer.port</code> in the config file,
+or add a <code class="highlighter-rouge">peer.port</code> flag to the command when you start RSKj.</p>
+
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>java <span class="nt">-Dpeer</span>.port<span class="o">=</span>50505 <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start
+</code></pre></div>    </div>
+  </li>
+  <li>Windows
+    <pre><code class="language-windows-command-prompt">C:\&gt; java -Dpeer.port=50505 -cp &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start
+</code></pre>
+  </li>
+</ul>
+
 
                   
   
@@ -1482,7 +1512,7 @@ Check <a href="reference/">here</a> for all the configuration option.</p>
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="custom-terminals">
          </div>
       </section>
 
