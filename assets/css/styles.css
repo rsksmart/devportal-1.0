@@ -1621,7 +1621,6 @@ img {
 .table-with-border {
   border: 0;
   border-collapse: collapse;
-  margin-bottom: 1em;
 }
 
 .table-with-border thead,
@@ -1630,17 +1629,19 @@ img {
 .table-with-border tr,
 .table-with-border td,
 .table-with-border th {
-  border: none;
+  border: inherit;
   border-collapse: inherit;
 }
 
+.table-with-border tr,
 .table-with-border td,
 .table-with-border th {
-  padding: 0.1em 0.5em 0.1em 0.5em;
+  border: 1px;
+  padding: 0.4em;
 }
 
-.table-with-border tr {
-  border-bottom: 1px solid #dedede;
+.table-with-border tr{
+  border-bottom: 1pt solid grey!;
 }
 
 /* 2 way peg verifier check */

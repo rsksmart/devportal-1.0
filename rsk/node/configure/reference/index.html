@@ -749,7 +749,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-06-30 02:29:05 +0000T00:00:00.000Z">2020-06-30</time> | -->
+    <!--time role="presentation" datetime="2020-06-26 04:12:51 +0000T00:00:00.000Z">2020-06-26</time> | -->
      10' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/configure/reference.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1415,140 +1415,119 @@ This contains all possible configuration fields parsed by RSKj.</p>
 
 <h2 id="peer">peer</h2>
 
-<p>Describes how your node peers with other nodes.</p>
+<p>Describes how your node peers other nodes.</p>
 
 <ul>
   <li>
-<code class="highlighter-rouge">peer.discovery.enabled = [true/false]</code>
-enables the possibility of being discovered by new peers.</li>
+<code class="highlighter-rouge">peer.discovery.enabled = [true/false]</code> enables the possibility of being discovered by new peers.</li>
   <li>
-    <p><code class="highlighter-rouge">peer.discovery.ip.list = []</code>
-is a list of the peers to start the discovering.
-These peers must have the <code class="highlighter-rouge">discovery.enabled</code> option set to true.
-These are the list of some of RSK bootstrap nodes:</p>
+<code class="highlighter-rouge">peer.discovery.ip.list = []</code> is a list of the peer to start the discovering. These peers must have the <code class="highlighter-rouge">discovery.enabled</code> option set to true. These are the list of some of RSK bootstrap nodes:</li>
+</ul>
 
-    <table>
-      <thead>
-        <tr>
-          <th> </th>
-          <th><code class="highlighter-rouge">ip.list</code></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Regtest</td>
-          <td>Not applicable</td>
-        </tr>
-        <tr>
-          <td>Testnet</td>
-          <td><code class="highlighter-rouge">"bootstrap02.testnet.rsk.co:50505","bootstrap03.testnet.rsk.co:50505","bootstrap04.testnet.rsk.co:50505","bootstrap05.testnet.rsk.co:50505"</code></td>
-        </tr>
-        <tr>
-          <td>Mainnet</td>
-          <td><code class="highlighter-rouge">"bootstrap01.rsk.co:5050","bootstrap02.rsk.co:5050","bootstrap03.rsk.co:5050","bootstrap04.rsk.co:5050","bootstrap05.rsk.co:5050","bootstrap06.rsk.co:5050","bootstrap07.rsk.co:5050","bootstrap08.rsk.co:5050","bootstrap09.rsk.co:5050","bootstrap10.rsk.co:5050","bootstrap11.rsk.co:5050","bootstrap12.rsk.co:5050","bootstrap13.rsk.co:5050","bootstrap14.rsk.co:5050","bootstrap15.rsk.co:5050","bootstrap16.rsk.co:5050"</code></td>
-        </tr>
-      </tbody>
-    </table>
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">ip.list</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testnet</td>
+      <td><code class="highlighter-rouge">"bootstrap02.testnet.rsk.co:50505","bootstrap03.testnet.rsk.co:50505","bootstrap04.testnet.rsk.co:50505","bootstrap05.testnet.rsk.co:50505"</code></td>
+    </tr>
+    <tr>
+      <td>Mainnet</td>
+      <td><code class="highlighter-rouge">"bootstrap01.rsk.co:5050","bootstrap02.rsk.co:5050","bootstrap03.rsk.co:5050","bootstrap04.rsk.co:5050","bootstrap05.rsk.co:5050","bootstrap06.rsk.co:5050","bootstrap07.rsk.co:5050","bootstrap08.rsk.co:5050","bootstrap09.rsk.co:5050","bootstrap10.rsk.co:5050","bootstrap11.rsk.co:5050","bootstrap12.rsk.co:5050","bootstrap13.rsk.co:5050","bootstrap14.rsk.co:5050","bootstrap15.rsk.co:5050","bootstrap16.rsk.co:5050"</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">peer.active = []</code> is used to connect to specific nodes. It can be empty.</li>
+  <li>
+<code class="highlighter-rouge">peer.trusted = []</code> is a list of peers whose incoming connections are always accepted from. It can be empty.</li>
+  <li>
+<code class="highlighter-rouge">peer.port</code> is the port used to listen to incoming connections. Default port by each RSK network:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">peer.port</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regtest</td>
+      <td>30305</td>
+    </tr>
+    <tr>
+      <td>Testnet</td>
+      <td>50505</td>
+    </tr>
+    <tr>
+      <td>Mainnet</td>
+      <td>5050</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">peer.connection.timeout = number (seconds)</code> defines <em>in seconds</em> the timeout for trying to connect to a peer. Suggested value: <code class="highlighter-rouge">2</code>.</li>
+  <li>
+<code class="highlighter-rouge">channel.read.timeout = number (seconds)</code> specifies how much time you will wait for a message to come before closing the channel. Suggested value: <code class="highlighter-rouge">30</code>.</li>
+  <li>
+<code class="highlighter-rouge">peer.privateKey = hash</code> a securely generated private key unique for your node that <strong>must</strong> be set.</li>
+  <li>
+<code class="highlighter-rouge">peer.networkId = int</code> is the number of the network to connect to. It’s important to mantain these numbers. It identifies the network you are going to connect to. For a regtest private network, you should use always the same (not necessary 34567). RSK networks Ids:</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Network</th>
+      <th><code class="highlighter-rouge">peer.networkId</code></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Regtest</td>
+      <td>34567</td>
+    </tr>
+    <tr>
+      <td>Testnet</td>
+      <td>779</td>
+    </tr>
+    <tr>
+      <td>Mainnet</td>
+      <td>775</td>
+    </tr>
+  </tbody>
+</table>
+
+<ul>
+  <li>
+    <p><code class="highlighter-rouge">peer.maxActivePeers = int</code> is the max number of active peers that your node will maintain. Suggested value: <code class="highlighter-rouge">30</code>.</p>
   </li>
   <li>
-<code class="highlighter-rouge">peer.active = []</code>
-is used to connect to specific nodes.
-It can be empty.</li>
-  <li>
-<code class="highlighter-rouge">peer.trusted = []</code>
-is a list of peers whose incoming connections are always accepted from.
-It can be empty.</li>
-  <li>
-    <p><code class="highlighter-rouge">peer.port</code> is the port used to listen to incoming connections.
-Default port by each RSK network:</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th> </th>
-          <th><code class="highlighter-rouge">peer.port</code></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Regtest</td>
-          <td>30305</td>
-        </tr>
-        <tr>
-          <td>Testnet</td>
-          <td>50505</td>
-        </tr>
-        <tr>
-          <td>Mainnet</td>
-          <td>5050</td>
-        </tr>
-      </tbody>
-    </table>
+    <p><code class="highlighter-rouge">peer.p2p.eip8 = bool</code> forces peer to send handshake message in format defined by <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md" rel="external noopener noreferrer" target="_blank">EIP-8</a>.</p>
   </li>
-  <li>
-<code class="highlighter-rouge">peer.connection.timeout = number (seconds)</code>
-specifies <em>in seconds</em> the timeout for trying to connect to a peer.
-Suggested value: <code class="highlighter-rouge">2</code>.</li>
-  <li>
-<code class="highlighter-rouge">channel.read.timeout = number (seconds)</code>
-specifies <em>in seconds</em> how much time you will wait for a message to come before closing the channel.
-Suggested value: <code class="highlighter-rouge">30</code>.</li>
-  <li>
-<code class="highlighter-rouge">peer.privateKey = hash</code>
-is a securely generated private key unique for your node that <strong>must</strong> be set.</li>
-  <li>
-    <p><code class="highlighter-rouge">peer.networkId = int</code>
-is the number of the network to connect to.
-It’s important to maintain these numbers.
-It identifies the network you are going to connect to.
-For a Regtest private network, you should always use the same
-(not necessarily 34567).
-RSK networks IDs:</p>
-
-    <table>
-      <thead>
-        <tr>
-          <th> </th>
-          <th><code class="highlighter-rouge">peer.networkId</code></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Regtest</td>
-          <td>34567</td>
-        </tr>
-        <tr>
-          <td>Testnet</td>
-          <td>779</td>
-        </tr>
-        <tr>
-          <td>Mainnet</td>
-          <td>775</td>
-        </tr>
-      </tbody>
-    </table>
-  </li>
-  <li>
-<code class="highlighter-rouge">peer.maxActivePeers = int</code>
-is the max number of active peers that your node will maintain.
-Suggested value: <code class="highlighter-rouge">30</code>.</li>
-  <li>
-<code class="highlighter-rouge">peer.p2p.eip8 = bool</code>
-forces peer to send handshake message in format defined by
-<a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-8.md" rel="external noopener noreferrer" target="_blank">EIP-8</a>.</li>
 </ul>
 
 <h2 id="database">database</h2>
 
-<p>Describes where the blockchain database is saved.</p>
+<p>Describes where the blockchain  database is saved.</p>
 
 <ul>
   <li>
-<code class="highlighter-rouge">database.dir = path</code>
-is the place to save physical storage files.</li>
+<code class="highlighter-rouge">database.dir = path</code> is the place to save physical storage files.</li>
   <li>
-<code class="highlighter-rouge">database.reset = [true/false]</code>
-resets the database when the application starts when set to <em>true</em>.</li>
+<code class="highlighter-rouge">database.reset = [true/false]
+</code> resets the database when the application starts if it is set to <em>true</em>.</li>
 </ul>
 
 <h2 id="databaseimport">database.import</h2>
@@ -1557,39 +1536,29 @@ resets the database when the application starts when set to <em>true</em>.</li>
 
 <ul>
   <li>
-<code class="highlighter-rouge">database.import.url = URL</code>
-is the URL to the S3 bucket that hosts the database.</li>
+<code class="highlighter-rouge">database.import.url = URL</code> is the url to the S3 bucket that hosts the database.</li>
   <li>
-<code class="highlighter-rouge">database.import.trusted-keys = []</code>
-list of trusted public keys to validate legit source.</li>
+<code class="highlighter-rouge">database.import.trusted-keys = []</code> list of trusted public keys to validate legit source.</li>
   <li>
-<code class="highlighter-rouge">database.import.enabled = [true/false]</code>
-enable the import sync.</li>
+<code class="highlighter-rouge">database.import.enabled = [true/false]</code> enable the import sync.</li>
 </ul>
 
 <h2 id="vm">vm</h2>
 
-<p>Enabling the <code class="highlighter-rouge">vm.structured</code> will log all the calls to the VM in the local database.
-This includes all the contract executions (opcodes).
-When testing, using this module is the only way to see exceptions.</p>
+<p>Enabling de <code class="highlighter-rouge">vm.structured</code> will log all the calls to the VM in the local database, this means, all the contract executions (opcodes).
+When testing, using this module is the only way to see Exceptions.</p>
 
 <ul>
   <li>
-<code class="highlighter-rouge">trace = [true/false]</code>
-enables the <code class="highlighter-rouge">vm.structured</code>.</li>
+<code class="highlighter-rouge">trace = [true/false]</code> enables the <code class="highlighter-rouge">vm.structured</code>.</li>
   <li>
-<code class="highlighter-rouge">dir = foldername</code>
-the directory where calls are saved.</li>
+<code class="highlighter-rouge">dir = foldername</code> the directory where calls are saved.</li>
   <li>
-<code class="highlighter-rouge">compressed = [true/false]</code>
-compress data when enabled.</li>
-  <li>
-<code class="highlighter-rouge">initStorageLimit = int</code>
-the storage limit.</li>
+<code class="highlighter-rouge">compressed = [true/false]</code> compress data when enabled.
+<code class="highlighter-rouge">initStorageLimit = int</code> the storage limit.</li>
 </ul>
 
 <p>An example:</p>
-
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>vm.structured {
     trace = false
     dir = vmtrace
@@ -1601,43 +1570,24 @@ the storage limit.</li>
 <h2 id="sync">sync</h2>
 
 <p>Options related to syncing the blockchain:</p>
-
 <ul>
   <li>
-<code class="highlighter-rouge">sync.enabled = [true/false]</code>
-enables the blockchain synchronization.
-Should be set to <code class="highlighter-rouge">true</code> to keep the node updated.</li>
+<code class="highlighter-rouge">sync.enabled = [true/false]</code> enables the blockchain synchronization. Should be set to <code class="highlighter-rouge">true</code> to keep the node updated.</li>
   <li>
-<code class="highlighter-rouge">sync.max.hashes.ask = int</code>
-determines the max amount of blocks to sync in a same batch.
-The synchronization is done in batches of blocks.
-Suggested value: <code class="highlighter-rouge">10000</code>.</li>
+<code class="highlighter-rouge">sync.max.hashes.ask = int</code> determines the max amount of blocks to sync in a same batch. The synchronization is done in batches of blocks. Suggested value: <code class="highlighter-rouge">10000</code>.</li>
   <li>
-<code class="highlighter-rouge">sync.peer.count = int</code>
-minimum peers count used in syncing.
-Sync may use more peers than this value but always trying to get at least this number from discovery.
-However, it will continue syncing if it’s not reached.</li>
+<code class="highlighter-rouge">sync.peer.count = int</code> minimum peers count used in syncing. Sync may use more peers than this value but always trying to get at least this number from discovery. However, it will continue syncing if it’s not reached.</li>
   <li>
-<code class="highlighter-rouge">sync.timeoutWaitingPeers = int (seconds)</code>
-timeout to start to wait for syncing requests.</li>
+<code class="highlighter-rouge">sync.timeoutWaitingPeers = int (seconds)</code> timeout to start to wait for syncing requests.</li>
   <li>
-<code class="highlighter-rouge">sync.timeoutWaitingRequests = int (seconds)</code>
-expiration time in minutes for peer status.</li>
+<code class="highlighter-rouge">sync.timeoutWaitingRequests = int (seconds)</code> expiration time in minutes for peer status.</li>
   <li>
-<code class="highlighter-rouge">sync.maxSkeletonChunks = int</code>
-maximum amount of chunks included in a skeleton message.</li>
+<code class="highlighter-rouge">sync.maxSkeletonChunks = int</code> maximum amount of chunks included in a skeleton message.</li>
   <li>
-<code class="highlighter-rouge">sync.chunkSize = int</code>
-amount of blocks contained in a chunk,
-<strong>must be</strong> 192 or a divisor of 192:
-    <ul>
-      <li>1, 2, 3, 4, 6, 8, 12, 16, 24, 32, 48, 64, 96, 192</li>
-    </ul>
-  </li>
+<code class="highlighter-rouge">sync.shunkSize = int</code> amount of blocks contained in a chunk, <strong>must be</strong> <code class="highlighter-rouge">192</code> or a <code class="highlighter-rouge">divisor of 192</code>.</li>
 </ul>
 
 <p>An example:</p>
-
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sync {
     enabled = true
     max.hashes.ask = 10000
@@ -1654,106 +1604,80 @@ amount of blocks contained in a chunk,
 <h2 id="rpc">rpc</h2>
 
 <p>Describes the configuration for the RPC protocol.</p>
-
 <ul>
   <li>
-<code class="highlighter-rouge">rpc.providers = []</code>
-lists the different providers (up to this moment, just <code class="highlighter-rouge">web</code>).
-<code class="highlighter-rouge">rpc.providers.web</code> has a global setting for every web provider,
-<code class="highlighter-rouge">cors</code>.
+<code class="highlighter-rouge">rpc.providers = []</code> lists the different providers (up to this moment, just <code class="highlighter-rouge">web</code>). <code class="highlighter-rouge">rpc.providers.web</code> has a global setting for every web provider, <code class="highlighter-rouge">cors</code>.
     <ul>
       <li>
-<code class="highlighter-rouge">rpc.providers.web.cors = domain</code>
-restricts the RPC calls from other domains.
-Default value is <code class="highlighter-rouge">localhost</code>.</li>
+<code class="highlighter-rouge">rpc.providers.web.cors = domain</code> restricts the RPC calls from other domains. Default value is <code class="highlighter-rouge">localhost</code>.</li>
     </ul>
   </li>
   <li>
 <code class="highlighter-rouge">rpc.providers.web</code> options:
     <ul>
       <li>
-<code class="highlighter-rouge">rpc.providers.web.http</code>
-defines HTTP configuration:
+<code class="highlighter-rouge">rpc.providers.web.http</code> defines http configuration:
         <ul>
           <li>
-<code class="highlighter-rouge">rpc.providers.web.http.enabled = [true/false]</code>
-enables this web provider. Default value is <code class="highlighter-rouge">true</code>.</li>
+<code class="highlighter-rouge">rpc.providers.web.http.enabled = [true/false]</code> enables this web provider. Default value is <code class="highlighter-rouge">true</code>.</li>
           <li>
-<code class="highlighter-rouge">rpc.providers.web.http.port = port</code>
-is the HTTP-RPC server listening port.
-By default RSK uses <code class="highlighter-rouge">4444</code>.</li>
+<code class="highlighter-rouge">rpc.providers.web.http.port = port</code> is the HTTP-RPC server listening port. By default RSK uses <code class="highlighter-rouge">4444</code>.</li>
           <li>
-<code class="highlighter-rouge">rpc.providers.web.http.bind_address = address</code>
-is the HTTP-RPC server listening interface.
-By default RSK uses <code class="highlighter-rouge">localhost</code>.</li>
+<code class="highlighter-rouge">rpc.providers.web.http.bind_address = address</code> is the HTTP-RPC server listening interface. By default RSK uses <code class="highlighter-rouge">localhost</code>.</li>
           <li>
-<code class="highlighter-rouge">rpc.providers.web.http.hosts = []</code>
-is the list of node’s domain names or IPs.
-Check <a href="https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_host_names" rel="external noopener noreferrer" target="_blank">restrictions on valid host names</a>.</li>
+<code class="highlighter-rouge">rpc.providers.web.http.hosts = []</code> is the list of node’s domain names or IPs. Check <a href="https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_host_names" rel="external noopener noreferrer" target="_blank">restrictions on valid host names</a>.</li>
         </ul>
       </li>
       <li>
-<code class="highlighter-rouge">rpc.providers.web.ws</code>
-defines WebSocket configuration:
+<code class="highlighter-rouge">rpc.providers.web.ws</code> defines web sockets configuration:
         <ul>
           <li>
-<code class="highlighter-rouge">rpc.providers.web.ws.enabled = [true/false]</code>
-enables this web provider.
-Default value is <code class="highlighter-rouge">true</code>.</li>
+<code class="highlighter-rouge">rpc.providers.web.ws.enabled = [true/false]</code> enables this web provider. Default value is <code class="highlighter-rouge">true</code>.</li>
           <li>
-<code class="highlighter-rouge">rpc.providers.web.ws.port = port</code>
-is the WS-RPC server listening port.
-By default RSK uses <code class="highlighter-rouge">4445</code>.</li>
+<code class="highlighter-rouge">rpc.providers.web.ws.port = port</code> is the WS-RPC server listening port. By default RSK uses <code class="highlighter-rouge">4445</code>.</li>
           <li>
-<code class="highlighter-rouge">rpc.providers.web.ws.bind_address = address</code>
-is the WS-RPC server listening interface.
-By default RSK uses <code class="highlighter-rouge">localhost</code>.</li>
+<code class="highlighter-rouge">rpc.providers.web.ws.bind_address = address</code> is the WS-RPC server listening interface. By default RSK uses <code class="highlighter-rouge">localhost</code>.</li>
         </ul>
       </li>
     </ul>
   </li>
   <li>
-<code class="highlighter-rouge">rpc.modules</code> lists of different RPC modules.
-If a module is not in the list and enabled,
-its RPC calls are discarded.</li>
-</ul>
-
-<p>Examples:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>modules = [
-    { name: "eth", version: "1.0", enabled: "true" },
-    { name: "net", version: "1.0", enabled: "true" },
-    { name: "rpc", version: "1.0", enabled: "true" },
-    { name: "web3", version: "1.0", enabled: "true" },
-    { name: "evm", version: "1.0", enabled: "true" },
-    { name: "sco", version: "1.0", enabled: "true" },
-    { name: "txpool", version: "1.0", enabled: "true" },
-    { name: "personal", version: "1.0", enabled: "true" }
+<code class="highlighter-rouge">rpc.modules</code> lists of different RPC modules. If a module is not in the list and enabled, its RPC calls are discard.
+Examples:
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>modules = [
+  { name: "eth", version: "1.0", enabled: "true" },
+  { name: "net", version: "1.0", enabled: "true" },
+  { name: "rpc", version: "1.0", enabled: "true" },
+  { name: "web3", version: "1.0", enabled: "true" },
+  { name: "evm", version: "1.0", enabled: "true" },
+  { name: "sco", version: "1.0", enabled: "true" },
+  { name: "txpool", version: "1.0", enabled: "true" },
+  { name: "personal", version: "1.0", enabled: "true" }
 ]
-</code></pre></div></div>
-
-<p>It is possible to enable/ disable particular methods in a module.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-    name: "evm",
-    version: "1.0",
-    enabled: "true",
-    methods: {
-        enabled: ["evm_snapshot", "evm_revert"],
-        disabled: [ "evm_reset", "evm_increaseTime"]
-    }
+</code></pre></div>    </div>
+    <p>It is possible to enable/disable particular methods in a module.</p>
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>{
+  name: "evm",
+  version: "1.0",
+  enabled: "true",
+  methods: {
+      enabled: ["evm_snapshot", "evm_revert"],
+      disabled: [ "evm_reset", "evm_increaseTime"]
+  }
 }
-</code></pre></div></div>
-
-<p>To use the <a href="../../../../develop/json-rpc-api/">RPC miner module</a>
-you must include:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{ name: "mnr", version: "1.0", enabled: "true" }
-</code></pre></div></div>
+</code></pre></div>    </div>
+    <p>RSK has implemented an RPC <a href="../../../../develop/json-rpc-api/">miner module</a>. To use it, you have to include:</p>
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>{ name: "mnr", version: "1.0", enabled: "true" }
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <h2 id="wallet">wallet</h2>
 
-<p>You can store your accounts on the node to use them to sign transactions. However, it is <strong>not secure</strong> to use a wallet in a public node.</p>
+<p>You can store your accounts on the node to use them to sign transactions. However, it is not secure to use a wallet in a public node.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wallet {
     enabled = true
@@ -1768,32 +1692,21 @@ you must include:</p>
 
 <h2 id="scoring">scoring</h2>
 
-<p>Scoring is the way the node ‘punishes’ other nodes when bad responses are sent. Punishment can be done by node ID or address.</p>
-
+<p>Scoring is the way the node ‘punishes’ other nodes when bad responses are sent. Punishment can be done by node id or address.</p>
 <ul>
   <li>
-<code class="highlighter-rouge">scoring.nodes.number = int</code>
-number of nodes to keep scoring.</li>
+<code class="highlighter-rouge">scoring.nodes.number = int</code> number of nodes to keep scoring.</li>
   <li>
-<code class="highlighter-rouge">scoring.nodes.duration</code> and <code class="highlighter-rouge">scoring.addresses.duration</code>
-initial punishment duration (in minutes).
-Default is <code class="highlighter-rouge">10</code>.</li>
+<code class="highlighter-rouge">scoring.nodes.duration</code> and <code class="highlighter-rouge">scoring.addresses.duration</code> initial punishment duration (in minutes). Default is <code class="highlighter-rouge">10</code>.</li>
   <li>
-<code class="highlighter-rouge">scoring.nodes.increment</code> and <code class="highlighter-rouge">scoring.addresses.increment</code>
-punishment duration increment (in percentage).
-Default is <code class="highlighter-rouge">10</code>.</li>
+<code class="highlighter-rouge">scoring.nodes.increment</code> and <code class="highlighter-rouge">scoring.addresses.increment</code> punishment duration increment (in percentage). Default is <code class="highlighter-rouge">10</code>.</li>
   <li>
-<code class="highlighter-rouge">scoring.nodes.maximum</code>
-maximum punishment duration (in minutes).
-Default is <code class="highlighter-rouge">0</code>.</li>
+<code class="highlighter-rouge">scoring.nodes.maximum</code> maximum punishment duration (in minutes). Default is <code class="highlighter-rouge">0</code>.</li>
   <li>
-<code class="highlighter-rouge">scoring.addresses.maximum</code>
-maximum punishment duration (in minutes).
-Default is <code class="highlighter-rouge">1 week</code>.</li>
+<code class="highlighter-rouge">scoring.addresses.maximum</code> maximum punishment duration (in minutes). Default is <code class="highlighter-rouge">1 week</code>.</li>
 </ul>
 
 <p>An example:</p>
-
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>scoring {
     nodes {
         number: 100
@@ -1808,21 +1721,19 @@ Default is <code class="highlighter-rouge">1 week</code>.</li>
     }
 }
 </code></pre></div></div>
-
 <h2 id="miner">miner</h2>
 
-<p>Check out <a href="../for-mining/">Configure RSKj node for mining</a>
-for detailed information about the <code class="highlighter-rouge">miner</code> configuration.</p>
+<p>For more information about configuring RSK node to mine go <a href="../for-mining/">here</a>.</p>
 
 <h2 id="blockchainconfigname">blockchain.config.name</h2>
 
-<p>A string that describe the name of the configuration.
+<p>It is a string that describe the name of the configuration.
 We use:</p>
 
 <table>
   <thead>
     <tr>
-      <th> </th>
+      <th>Network</th>
       <th><code class="highlighter-rouge">blockchain.config.name</code></th>
     </tr>
   </thead>
@@ -1844,27 +1755,23 @@ We use:</p>
 
 <h2 id="bind_address">bind_address</h2>
 
-<p>The network interface with <em>wire protocol</em> and <em>peer discovery</em>.</p>
+<p>It’s the network interface with <em>wire protocol</em> and <em>peer discovery</em>.</p>
 
-<p>This is the last resort for public IP address when it cannot be obtained by other ways.</p>
+<p>It is the last resort for public IP when it cannot be obtained by other ways.</p>
 
 <h2 id="publicip">public.ip</h2>
 
-<p>The node’s public IP address.</p>
-
-<p>If it is not configured, defaults to the IPv4 returned
-by <code class="highlighter-rouge">http://checkip.amazonaws.com</code>.</p>
+<p>It is the node’s public IP. If it’s not configured, default is the IPv4 returned by <code class="highlighter-rouge">http://checkip.amazonaws.com</code>.</p>
 
 <h2 id="genesis">genesis</h2>
 
 <p>It is the path to the genesis file (in <em>resources/genesis</em>).
-The folder <em>resources/genesis</em> contains several versions of
-genesis configuration according to the network the peer will run on.</p>
+The folder <em>resources/genesis</em> contains several versions of genesis configuration according to the network the peer will run on.</p>
 
 <table>
   <thead>
     <tr>
-      <th> </th>
+      <th>Network</th>
       <th><code class="highlighter-rouge">genesis</code></th>
     </tr>
   </thead>
@@ -1887,52 +1794,36 @@ genesis configuration according to the network the peer will run on.</p>
 <h2 id="transactionoutdated">transaction.outdated</h2>
 
 <p>It defines when a transaction is outdated:</p>
-
 <ul>
   <li>
-<code class="highlighter-rouge">transaction.outdated.threshold = int</code>
-is the number of blocks that should pass before pending transaction is removed.
-Suggested value: <code class="highlighter-rouge">10</code>.</li>
+<code class="highlighter-rouge">transaction.outdated.threshold = int</code> is the number of blocks that should pass before pending transaction is removed. Suggested value: <code class="highlighter-rouge">10</code>.</li>
   <li>
-<code class="highlighter-rouge">transaction.outdated.timeout = int</code>
-is the number of seconds that should pass before pending transaction is removed.
-Suggested value: <code class="highlighter-rouge">100</code> (10 blocks * 10 seconds per block).</li>
+<code class="highlighter-rouge">transaction.outdated.timeout = int</code> is the number of seconds that should pass before pending transaction is removed. Suggested value: <code class="highlighter-rouge">100</code> (10 blocks * 10 seconds per block).</li>
 </ul>
 
 <h2 id="playvm">play.vm</h2>
 
-<p>A boolean that invokes VM program on message received.
-If the VM is not invoked, the balance transfer occurs anyway.
-Suggested value: <code class="highlighter-rouge">true</code>.</p>
+<p>It is a boolean that invokes vm program on message received, if the vm is not invoked the balance transfer occurs anyway. Suggested value: <code class="highlighter-rouge">true</code>.</p>
 
 <h2 id="hellophrase">hello.phrase</h2>
 
-<p>A string that will be included in the hello message of the peer.</p>
+<p>It is a string that will be included in the hello message of the peer.</p>
 
 <h2 id="detailsinmemorystoragelimit">details.inmemory.storage.limit</h2>
 
-<p>Specifies when exactly to switch managing storage of the account
-on autonomous DB.
-Suggested value: <code class="highlighter-rouge">1</code>.</p>
-
-<p>If the in-memory storage of the contract exceeds the limit,
-only deltas are saved.</p>
+<p>Specifies when exactly to switch managing storage of the account on autonomous db. Suggested value: <code class="highlighter-rouge">1</code>.
+If the inmemory storage of the contract exceded the limit, just deltas are saved.</p>
 
 <h2 id="solcpath">solc.path</h2>
 
-<p>The path to the <a href="http://solidity.readthedocs.io" rel="external noopener noreferrer" target="_blank">Solidity</a> compiler.
-This is set when you may want to use the node to compile your smart contracts.
+<p>It is the path to the <a href="http://solidity.readthedocs.io" rel="external noopener noreferrer" target="_blank">Solidity</a> compiler. It’s set because you may want to use the node to compile your smart contracts.
 If you don’t have Solidity installed, you can use <code class="highlighter-rouge">/bin/false</code> as value.</p>
 
 <h2 id="prune">prune</h2>
 
-<p>The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized.
-This process removes useless data over a determined amount of blocks processed.</p>
+<p>The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.</p>
 
-<p>To enable the prune service in your node, override your configuration.</p>
-
-<p>These are the recommended parameters:</p>
-
+<p>To enable prune service in your node <a href="../">override your configuration</a>. These are the recommended parameters:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prune {
     # prune service could be enabled or not
     # values: [true/false]
@@ -2011,7 +1902,7 @@ This process removes useless data over a determined amount of blocks processed.<
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="tables-with-borders">
+         <div class="render-features" data-features="">
          </div>
       </section>
 
