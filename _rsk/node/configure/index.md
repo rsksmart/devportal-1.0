@@ -5,6 +5,7 @@ tags: rsk, rskj, node, config
 description: "Setting your own config preferences, when using the Java command, Ubuntu, Azure, AWS, or Docker"
 collection_order: 2400
 permalink: /rsk/node/configure/
+render_features: 'custom-terminals'
 ---
 
 ## Setting your own config preferences
@@ -55,3 +56,32 @@ This can be done in two ways:
 
 - Running the node with the `java` command, add `-Drsk.conf.file=path/to/your/file.conf`
 - Compiling the node with IntelliJ, add to VM options: `-Drsk.conf.file=path/to/your/file.conf`
+
+### Troubleshooting
+
+#### UDP port already in use
+
+If you see the following error message,
+it means that RSKj is unable to bind to a particular port number,
+because prior to this, another process has already bound to the same port number.
+
+```
+Exception in thread "UDPServer" co.rsk.net.discovery.PeerDiscoveryException: Discovery can't be started.
+        at co.rsk.net.discovery.UDPServer$1.run(UDPServer.java:65)
+Caused by: java.net.BindException: Address already in use: bind
+```
+
+To rectify this,
+change the value of `peer.port` in the config file,
+or add a `peer.port` flag to the command when you start RSKj.
+
+
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+  $ java -Dpeer.port=50505 -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
+  ```
+- Windows
+  ```windows-command-prompt
+  C:\> java -Dpeer.port=50505 -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
+  ```
