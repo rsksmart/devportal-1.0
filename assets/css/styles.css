@@ -1621,6 +1621,7 @@ img {
 .table-with-border {
   border: 0;
   border-collapse: collapse;
+  margin-bottom: 1em;
 }
 
 .table-with-border thead,
@@ -1629,19 +1630,17 @@ img {
 .table-with-border tr,
 .table-with-border td,
 .table-with-border th {
-  border: inherit;
+  border: none;
   border-collapse: inherit;
 }
 
-.table-with-border tr,
 .table-with-border td,
 .table-with-border th {
-  border: 1px;
-  padding: 0.4em;
+  padding: 0.1em 0.5em 0.1em 0.5em;
 }
 
-.table-with-border tr{
-  border-bottom: 1pt solid grey!;
+.table-with-border tr {
+  border-bottom: 1px solid #dedede;
 }
 
 /* 2 way peg verifier check */
@@ -1657,34 +1656,7 @@ img {
   font-size: 14px;
 }
 
-/* pygments overrides */
-
-.multi-terminal-tabcontent .highlight {
-  margin: 0;
-  padding: 0;
-  background-color: #cccccc;
-}
-
-.multi-terminal-tabcontent .highlight .highlight {
-  padding: 5px;
-}
-
-.multi-terminal-tabcontent code {
-  display: inline;
-  font-size: 16px;
-}
-
-.multi-terminal-tabcontent pre {
-  display: block;
-  white-space: pre-wrap;
-  padding: 0;
-  color: #212529;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  overflow: auto;
-}
-
-/* custom terminal render */
+/* multi terminal */
 
 .multi-terminal-group {
   list-style-type: none;
@@ -1733,13 +1705,43 @@ img {
   display: block;
 }
 
-/* linux terminal */
+/* pygments overrides */
+
+.multi-terminal-tabcontent .highlight {
+  margin: 0;
+  padding: 0;
+}
+
+.multi-terminal-tabcontent .highlight .highlight {
+  padding: 5px;
+}
+
+.multi-terminal-tabcontent code {
+  display: inline;
+  font-size: 16px;
+}
+
+.multi-terminal-tabcontent pre {
+  display: block;
+  white-space: pre-wrap;
+  padding: 0;
+  color: transparent;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
 
 .multi-terminal-tabcontent .highlight {
   margin: 0;
   padding: 0;
   border: none;
   background: none;
+}
+
+/* linux terminal */
+.multi-terminal-tabcontent-linux .highlight pre,
+.multi-terminal-tabcontent-linux .highlight {
+  background-color: #000000;
 }
 
 .multi-terminal-tabcontent-linux::before {
@@ -1765,10 +1767,9 @@ img {
     1 14 21 3
     stretch;
     color: #e0e0e0;
-  background-color: #0c0c0c;
+  background-color: #000000;
   font-family: "Ubuntu Mono", consolas, monospace;
   margin: 0 0 0 0;
-  padding: 0.25em 0.5em 0 0.5em;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
   overflow-x: hidden;
@@ -1777,6 +1778,49 @@ img {
 }
 
 .multi-terminal-tabcontent-linux .language-shell *::selection {
+  background: #22f200;
+}
+
+/* mac terminal */
+.multi-terminal-tabcontent-mac .highlight pre,
+.multi-terminal-tabcontent-mac .highlight {
+  background-color: #242424;
+}
+
+.multi-terminal-tabcontent-mac::before {
+  content: "Terminal";
+  display: block;
+  height: 23px;
+  border-width: 0px 6px 0px 62px;
+  border-style: solid;
+  border-image:
+    url("../img/custom-terminals/mac-terminal-title-bar.png")
+    0 6 0 62
+    fill;
+  color: transparent;
+}
+
+.multi-terminal-tabcontent-mac .language-shell {
+  display: block;
+  min-height: 45px;
+  border-width: 1px 16px 13px 6px;
+  border-style: solid;
+  border-image:
+    url("../img/custom-terminals/mac-terminal-body.png")
+    1 7 13 7
+    stretch;
+    color: #e0e0e0;
+  background-color: #242424;
+  font-family: "Ubuntu Mono", consolas, monospace;
+  margin: 0 0 0 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  overflow-x: hidden;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.multi-terminal-tabcontent-mac .language-shell *::selection {
   background: #22f200;
 }
 
