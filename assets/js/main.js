@@ -474,6 +474,19 @@ function renderMultipleTerminals(el) {
     console.warn('Expected at least 1 <li> element:', ul);
     return;
   }
+  var errorIndices = children.reduce(function(acc, li, liIdx) {
+    if (!li.querySelector('code')) {
+      acc.push(liIdx);
+    }
+    return acc;
+  }, []);
+  if (errorIndices.length > 0) {
+    console.error(
+      'Cannot render multi-terminal group, no <code> element within <li> at indices:',
+      errorIndices,
+    );
+    return;
+  }
   ul.classList.add('multi-terminal-group');
   children.forEach(function (li, liIdx) {
     renderMultipleTerminalsListElem(ul, li, liIdx);
