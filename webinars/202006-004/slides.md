@@ -37,8 +37,10 @@ NOTE:
 
 ---
 
-## [developers.rsk.co/webinars](/webinars/)
+<!-- .slide: data-background="/assets/img/preso/webinars-page-screenshot.png" -->
 
+<!-- .element: style="background-color: #ffffffb0;" -->
+## [developers.rsk.co/webinars](/webinars/)
 [50+ past events](/webinars/#calendar-past)
 
 NOTE:
