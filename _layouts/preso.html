@@ -47,7 +47,7 @@
           data-separator="^---$"
           data-separator-vertical="^----$"
           data-separator-notes="^NOTE:$"
-          data-background-image="/assets/img/preso/background-default.png"
+          data-background-image="{{ page.backgroundImage | default: "/assets/img/preso/preso-rsk-slide-body.png" }}"
         >
           <script type="text/template">
 {{ page.content }}

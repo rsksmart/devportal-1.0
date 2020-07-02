@@ -2,8 +2,13 @@
 layout: preso
 permalink: "/webinars/202006-004/slides/"
 title: How to Upload a Website on RIF Storage
-tags: rif, swarm, dweb
+tags: rif, swarm, dweb, slides
 description: "DWeb - How to Upload a Website on RIF Storage"
+backgroundImage: "/assets/img/preso/preso-rif-slide-body.png"
+---
+
+<!-- .slide: data-background="/assets/img/preso/preso-rif-slide-title.png" -->
+
 ---
 
 # How to Upload a Website on RIF Storage
@@ -424,3 +429,7 @@ Thanks to everyone for attending!
 Be sure to check out developers.rsk.co/webinars for more sessions on RSK and RIF!
 
 Thank you!
+
+---
+
+<!-- .slide: data-background="/assets/img/preso/preso-rif-slide-fin.png" -->
