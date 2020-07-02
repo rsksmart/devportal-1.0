@@ -2,8 +2,13 @@
 layout: preso
 permalink: "/webinars/202006-004/slides/"
 title: How to Upload a Website on RIF Storage
-tags: rif, swarm, dweb
+tags: rif, swarm, dweb, slides
 description: "DWeb - How to Upload a Website on RIF Storage"
+backgroundImage: "/assets/img/preso/preso-rif-slide-body.png"
+---
+
+<!-- .slide: data-background="/assets/img/preso/preso-rif-slide-title.png" -->
+
 ---
 
 # How to Upload a Website on RIF Storage
@@ -16,7 +21,7 @@ description: "DWeb - How to Upload a Website on RIF Storage"
 
 [developers.rsk.co/webinars/202006-004/slides](/webinars/202006-004/slides/)
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -26,7 +31,7 @@ This works best as a hands-on session.
 
 (so get your computers ready!)
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -36,7 +41,7 @@ This works best as a hands-on session.
 
 [50+ past events](/webinars/#calendar-past)
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -53,11 +58,11 @@ so check out developers.rsk.co for all the details.
 - Rinke
 - Brendan
 
----NOTE
+NOTE:
 
 `Brendan`
 
----SUB
+----
 
 ### Brendan
 
@@ -69,12 +74,12 @@ so check out developers.rsk.co for all the details.
   🍜→♻️→🌱
 - Estudiante español
 
----NOTE
+NOTE:
 
 - Ya lo he estado aprendiendo durante más de doscientos días en Dúolingo
 - Estoy practicando mi español ahora mismo 😃 but that's all the Spanish you're going to get from me today!
 
----SUB
+----
 
 ### Rinke
 
@@ -83,7 +88,7 @@ so check out developers.rsk.co for all the details.
 - Hilversum, The Netherlands
 - I am here because: innovation, impact, decentralization,
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -94,11 +99,11 @@ so check out developers.rsk.co for all the details.
 - Why do we need decentralized storage?
 - A little history...
 
----NOTE
+NOTE:
 
 `Rinke`
 
----SUB
+----
 
 ### Web 1.0
 
@@ -106,11 +111,11 @@ so check out developers.rsk.co for all the details.
 - Decentralized
 - Not scalable
 
----NOTE
+NOTE:
 
 `Rinke`
 
----SUB
+----
 
 ### Web 2.0
 
@@ -120,21 +125,21 @@ so check out developers.rsk.co for all the details.
 - "Platforming"
 - Centralized and scalable
 
----NOTE
+NOTE:
 
 `Rinke`
 
----SUB
+----
 
 ### Web 2.0 vs Web 3.0
 
 ![web 2.0 vs web 3.0](../web2-vs-web3.png)
 
----NOTE
+NOTE:
 
 `Rinke`
 
----SUB
+----
 
 ## Web 3.0
 
@@ -143,7 +148,7 @@ so check out developers.rsk.co for all the details.
 - Immutable
 - Scalable
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -157,11 +162,11 @@ mention characteristics of Web 3.0 here
 - RNS
 - Swarm / BEE
 
----NOTE
+NOTE:
 
 `Rinke`
 
----SUB
+----
 
 ## RIF Storage
 
@@ -170,7 +175,7 @@ mention characteristics of Web 3.0 here
 - Built-in economic incentives
     - RIF token
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -182,7 +187,7 @@ mention characteristics of Web 3.0 here
 - Decentralised DNS
 - (upcoming webinars)
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -196,11 +201,11 @@ mention characteristics of Web 3.0 here
     - Web pages, databases, media streams
 - "Unstoppable storage"
 
----NOTE
+NOTE:
 
 `Rinke`
 
----SUB
+----
 
 ## Bee
 
@@ -209,7 +214,7 @@ mention characteristics of Web 3.0 here
     - devp2p → libp2p
 - 👀 for announcements
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -223,7 +228,7 @@ mention characteristics of Web 3.0 here
 - [`jq`](https://stedolan.github.io/jq/) (optional)
 - [NodeJs](https://nodejs.org/en/) (optional)
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -244,7 +249,7 @@ NodeJs:
 
 [developers.rsk.co/tutorials/dweb/first-swarm-website](/tutorials/dweb/first-swarm-website/)
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -271,7 +276,7 @@ Time to start up your fire up your terminals and code editors!
 
 Share your `bzz:/` URLs in the chat!
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -288,7 +293,7 @@ Share your `bzz:/` URLs in the chat!
 
 Questions?
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -302,7 +307,7 @@ Did anyone have any questions before we wrap up?
 
 - DWeb technology is cutting edge
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -314,13 +319,13 @@ So watch this space!
 
 (skip sub-slides)
 
----SUB
+----
 
 `Brendan`
 
 - [Transforming links](https://github.com/rsksmart/rsksmart.github.io/blob/768be3be60f14eba780f1ac118694de8bf2aaa54/_plugins/custom_links.rb)
 
----NOTE
+NOTE:
 
 When you upload a website onto decentralised storage,
 it's address is going to be a hash.
@@ -337,11 +342,11 @@ In preparation for uploading it to the DWeb on Swarm,
 I have created a custom Jekyll plugin that
 takes all such absolute links and transforms them to their relative forms, such that they will work without knowing the hash ahead of time.
 
----SUB
+----
 
 - [`bzz-web:/`](https://github.com/bguiz/bzz-web)
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -359,7 +364,7 @@ As such, in order for this to work with a fairly complex website such as the RSK
 - Global pinning: ~ 2 months
 - RIF Storage services: ~ 2 months
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -373,11 +378,11 @@ As such, in order for this to work with a fairly complex website such as the RSK
 - [rifos.org/blog/how-to-launch-a-serverless-website-using-rif-storage](https://www.rifos.org/blog/how-to-launch-a-serverless-website-using-rif-storage)
 - [rifos.org/blog/rif-publish-ux-focused-censorship-resistant-publishing](https://www.rifos.org/blog/rif-publish-ux-focused-censorship-resistant-publishing)
 
----NOTE
+NOTE:
 
 `Rinke`
 
----SUB
+----
 
 ## Resources
 
@@ -386,7 +391,7 @@ As such, in order for this to work with a fairly complex website such as the RSK
 - [github.com/ethersphere/bee](https://www.github.com/ethersphere/bee)
 - [github.com/ethersphere/swarm](https://www.github.com/ethersphere/swarm)
 
----NOTE
+NOTE:
 
 `Rinke`
 
@@ -398,7 +403,7 @@ As such, in order for this to work with a fairly complex website such as the RSK
 - Swarm Feeds and messaging
 - Using the incentivized Swarm network
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -415,7 +420,7 @@ Thank you!
 
 [developers.rsk.co/webinars](/webinars/)
 
----NOTE
+NOTE:
 
 `Brendan`
 
@@ -424,3 +429,7 @@ Thanks to everyone for attending!
 Be sure to check out developers.rsk.co/webinars for more sessions on RSK and RIF!
 
 Thank you!
+
+---
+
+<!-- .slide: data-background="/assets/img/preso/preso-rif-slide-fin.png" -->
