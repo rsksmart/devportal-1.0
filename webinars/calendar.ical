@@ -2232,8 +2232,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202007-005@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200708T070000Z
-DTSTART:20200708T070000Z
+DTSTAMP:20200708T010000Z
+DTSTART:20200708T010000Z
 SUMMARY:Testing Smart Contracts with Truffle 
 DESCRIPTION:Testing Smart Contracts with Truffle\n\nOnline only\n\nRSVP: \
  n\nVideo stream: https://app.livestorm.co/iov-labs-1/testing-smart-contrac
@@ -2256,6 +2256,35 @@ CATEGORIES:Workshop
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testing-smart-contracts-
  with-truffle
 STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200630T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-005-c@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200708T070000Z
+DTSTART:20200708T070000Z
+SUMMARY:Testing Smart Contracts with Truffle 
+DESCRIPTION:Testing Smart Contracts with Truffle\n\nOnline only\n\nCancell
+ ed\, see webinars page for more details: https://developers.rsk.co/webinar
+ s/calendar.ical\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testing
+  Smart Contracts with Truffle</span></div>\n<div><span>Online only</span><
+ /div>\n<div><b>Cancelled\, see webinars page for more details &nbsp\;</b><
+ span><a href=\"https://developers.rsk.co/webinars/calendar.ical\">develope
+ rs.rsk.co/webinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Testing Smart Contracts with Truffle 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testing-smart-contracts-
+ with-truffle
+STATUS:CANCELLED
 X-LANGUAGE:English
 LAST-MODIFIED:20200624T093000Z
 END:VEVENT
@@ -2348,5 +2377,70 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200624T093000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-009@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200706T210000Z
+DTSTART:20200706T210000Z
+SUMMARY:Carnes Validadas: plataforma de trazabilidad ganadera sobre Blockc
+ hain 
+DESCRIPTION:Carnes Validadas: plataforma de trazabilidad ganadera sobre Bl
+ ockchain\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.c
+ o/iov-labs-1/caso-carnes-validadas\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Carnes 
+ Validadas: plataforma de trazabilidad ganadera sobre Blockchain</span></di
+ v>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></s
+ pan></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.li
+ vestorm.co/iov-labs-1/caso-carnes-validadas\">app.livestorm.co/iov-labs-1/
+ caso-carnes-validadas</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Diego Heinrich\, CEO de Carnes Validadas\, @CarnesValidadas"
+ :mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Carnes Validadas: plataforma de trazabilidad ganadera sobre Bl
+ ockchain 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/caso-carnes-validadas
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200630T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200713T180000Z
+DTSTART:20200713T180000Z
+SUMMARY:Cómo dexFreight potencia la infraestructura de RSK para generar so
+ luciones reales en la industria trillonaria de la logística 
+DESCRIPTION:Cómo dexFreight potencia la infraestructura de RSK para genera
+ r soluciones reales en la industria trillonaria de la logística\n\nOnline 
+ only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/how-is
+ -dexfreight-leveraging-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Cómo de
+ xFreight potencia la infraestructura de RSK para generar soluciones reales
+  en la industria trillonaria de la logística</span></div>\n<div><span>Onli
+ ne only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b
+ >Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs
+ -1/how-is-dexfreight-leveraging-rsk\">app.livestorm.co/iov-labs-1/how-is-d
+ exfreight-leveraging-rsk</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Hector Hernandez\, dexFreight CEO\, @dexHector":mailto:devel
+ opers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Cómo dexFreight potencia la infraestructura de RSK para genera
+ r soluciones reales en la industria trillonaria de la logística 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-is-dexfreight-levera
+ ging-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200630T020000Z
 END:VEVENT
 END:VCALENDAR

@@ -1929,7 +1929,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merged-mining",
-      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event3.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/-ht5UhUuIUE",
@@ -1962,7 +1962,7 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-merged-mining",
-      "tags": " idioma-spanish audiencia-developers audiencia-general recent",
+      "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/CQ95g6xxS-Y",
@@ -2428,12 +2428,12 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e42994d6-a586-4136-b19d-056010079403/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-app-a-dap",
-      "tags": " idioma-spanish audiencia-developers",
+      "tags": " idioma-spanish audiencia-developers recent",
       "image": "/webinars/img/events/event5.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/FQBPPd2FOvQ",
       "_permalink": "/webinars/202006-008/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2467,12 +2467,12 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/697bea3b-c18f-433c-90c4-4a12f5153435/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain",
-      "tags": " idioma-english audiencia-developers audiencia-general",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event12.jpg",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/SAXzU4_ifR8",
       "_permalink": "/webinars/202006-009/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2609,10 +2609,48 @@
     {
       "type": "event/2",
       "id": "202007-005",
-      "version": "1",
+      "version": "3",
+      "timestamp": "2020-07-08T01:00:00.000Z",
+      "lastModified": "2020-06-30T02:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Testing Smart Contracts with Truffle",
+      "description": "Learn how to create and run tests on your RSK smart contracts using Truffle.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers"
+      ],
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        },
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
+      "tags": " idioma-english audiencia-developers",
+      "image": "/webinars/img/events/event3.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202007-005/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202007-005-c",
+      "version": "2",
       "timestamp": "2020-07-08T07:00:00.000Z",
       "lastModified": "2020-06-24T09:30:00.000Z",
-      "status": "confirmed",
+      "status": "cancelled",
       "url": "",
       "title": "Testing Smart Contracts with Truffle",
       "description": "Learn how to create and run tests on your RSK smart contracts using Truffle.",
@@ -2636,7 +2674,6 @@
       "image": "/webinars/img/events/event11.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_permalink": "/webinars/202007-005/",
       "_isPast": false
     },
     {
@@ -2736,6 +2773,79 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-008/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202007-009",
+      "version": "1",
+      "timestamp": "2020-07-06T21:00:00.000Z",
+      "lastModified": "2020-06-30T02:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Carnes Validadas: plataforma de trazabilidad ganadera sobre Blockchain",
+      "description": "Carnes validadas is developing a value creation network in the Argentina meat chain, based on RSK to provide transparency, clarity and streamline the meat production process, from genealogy to the consumer. At this webinar Carnes Validadas CEO will provide us details on what their vision is and how Carnes Validadas will revolutionze the Meat Industry.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Diego Heinrich",
+          "description": "CEO de Carnes Validadas",
+          "contact": "@CarnesValidadas"
+        },
+        {
+          "name": "Edy Weber",
+          "description": "CEO de Koibanx",
+          "contact": "@weber_edy"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/b5c806ac-1ec7-470b-b5a6-1c7a889c9f17/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/caso-carnes-validadas",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "image": "/webinars/img/events/event10.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202007-009/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202007-010",
+      "version": "1",
+      "timestamp": "2020-07-13T18:00:00.000Z",
+      "lastModified": "2020-06-30T02:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Cómo dexFreight potencia la infraestructura de RSK para generar soluciones reales en la industria trillonaria de la logística",
+      "description": "dexFreight es una plataforma descentralizada orientada a la industria logística que provee una solución integral para toda la cadena de valor desde la compra de un producto hasta su llegada a destino.Los clientes principales de dexFreight incluyen proveedores de logística, y transportistas. dexFreight permitirá un flujo mucho más eficiente para llevar los productos a manos del consumidor final reduciendo tiempos de entrega y optimizando costos. Al mismo tiempo, al generar eficiencias en toda la cadena dexFreight permitirá liberar gran cantidad de capital subutilizado o inmovilizado en inventarios, camiones, remolques, almacenes, etc.En este seminario web, Héctor Hernádez CEO de dexFreight CEO nos compartirá su visión sobre cómo blockchain y dexFreight están configurados para revolucionar la industria logística en la próxima década.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Hector Hernandez",
+          "description": "dexFreight CEO",
+          "contact": "@dexHector"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/90643f0a-2561-4790-ba09-e158c8e780f3/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-is-dexfreight-leveraging-rsk",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "image": "/webinars/img/events/event5.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202007-010/",
       "_isPast": false
     }
   ]
