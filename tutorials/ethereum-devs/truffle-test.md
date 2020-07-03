@@ -6,7 +6,7 @@ description: "How to create and run tests on your RSK smart contracts using Truf
 render_features: "custom-terminals"
 ---
 
-In this tutorial, I will show you step-by-step how create and run tests in smart contracts using Truffle framework connected to a RSK local node.
+In this tutorial, I will show you step-by-step how to create and run tests in smart contracts using Truffle framework connected to an RSK local node.
 
 # Overview
 
@@ -42,7 +42,7 @@ All requirements are explained in detail in the tutorial link below:
 
 When we develop a project using Truffle Framework, we need a blockchain node running locally. This is better for development, and running tests. We'll run a local node, also known as regtest.
 
-There are several ways to set up a RSK local node. To know how to download a JAR file and run it using the Java SDK, look the tutorial: 
+There are several ways to set up an RSK local node. To know how to download a JAR file and run it using the Java SDK, check out the tutorial: 
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
@@ -137,7 +137,7 @@ In your terminal, inside the project folder, run this command:
 truffle create contract Register
 ```
 
-This command creates a smart contract 'skeleton'. See the result in the `contracts` folder:
+This command creates a 'skeleton' smart contract. See the results in the `contracts` folder:
 
 ![truffle create contract Register](/assets/img/tutorials/truffle-test/image-05.png)
 
@@ -193,7 +193,7 @@ Compiling your contracts...
 C:\RSK\Register>
 ```
 
-# Testing without deploy
+# Testing without deployment
 
 It is possible to test a smart contract which is not published in any network yet.
 
@@ -230,7 +230,7 @@ In the terminal, run this command:
 truffle test
 ```
 
-Look the result:
+Check out the result:
 
 ![truffle test](/assets/img/tutorials/truffle-test/image-09.png)
 
@@ -238,11 +238,11 @@ Our test passed :)
 
 # Deploy on RSK local node
 
-First of all, we need to create a file in Truffle structure with instructions to deploy the smart contract.
+Firstly, we need to create a file in the Truffle structure with instructions to deploy the smart contract.
 
 ## Create file 2_deploy_contracts.js
 
-Folder `migrations` has JavaScript files that help you deploy contracts to the network.
+The `migrations` folder has JavaScript files that help you deploy contracts to the network.
 More about [running migrations](https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations)
 
 In the `migrations` folder, create the file `2_deploy_contracts.js`
@@ -395,7 +395,7 @@ We will run the tests of the `register.js` file. In the terminal, execute this c
 truffle test test/register.js
 ```
 
-Look the result:
+Check out the result:
 
 ![truffle test register.js](/assets/img/tutorials/truffle-test/image-16.png)
 
