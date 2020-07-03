@@ -127,7 +127,7 @@ module.exports = {
 
 Check out the VS Code image:
 
-![truffle-config](/images/image-04.png)
+![truffle-config](/assets/img/tutorials/truffle-test/image-04.png)
 
 # Smart contract
 
@@ -139,7 +139,7 @@ truffle create contract Register
 
 This command creates a smart contract 'skeleton'. See the result in the `contracts` folder:
 
-![truffle create contract Register](/images/image-05.png)
+![truffle create contract Register](/assets/img/tutorials/truffle-test/image-05.png)
 
 Overwrite it with the following code:
 
@@ -161,7 +161,7 @@ contract Register {
 
 Check out the VS Code image:
 
-![VS Code Register.sol](/images/image-06.png)
+![VS Code Register.sol](/assets/img/tutorials/truffle-test/image-06.png)
 
 ## Register.sol
 
@@ -218,7 +218,7 @@ contract('Test new Register', (accounts) => {
 
 Check out the VS Code image:
 
-![VSCode register_new](/images/image-08.png)
+![VSCode register_new](/assets/img/tutorials/truffle-test/image-08.png)
 
 > To do tests in a smart contract which is not published in any network, use `.new()`. It will create a new smart contract instance for run the tests.
 
@@ -232,7 +232,7 @@ truffle test
 
 Look the result:
 
-![truffle test](/images/image-09.png)
+![truffle test](/assets/img/tutorials/truffle-test/image-09.png)
 
 Our test passed :)
 
@@ -259,7 +259,7 @@ module.exports = function(deployer) {
 
 Check out the VS Code image:
 
-![2_deploy_contracts.js](/images/image-10.png)
+![2_deploy_contracts.js](/assets/img/tutorials/truffle-test/image-10.png)
 
 ## Migrate
 
@@ -362,7 +362,7 @@ This command creates in the folder `test` a file for the smart contract `Registe
 
 Check out the VS Code image:
 
-![truffle create test Register](/images/image-14.png)
+![truffle create test Register](/assets/img/tutorials/truffle-test/image-14.png)
 
 Let's replace the file with the instructions to execute the same tests we did before, but now for the `deployed` smart contract: 
 
@@ -381,7 +381,7 @@ contract('Test deployed Register', (accounts) => {
 });
 ```
 
-![Test deployed Register](/images/image-15.png)
+![Test deployed Register](/assets/img/tutorials/truffle-test/image-15.png)
 
 ## Running the test
 
@@ -397,7 +397,7 @@ truffle test test/register.js
 
 Look the result:
 
-![truffle test register.js](/images/image-16.png)
+![truffle test register.js](/assets/img/tutorials/truffle-test/image-16.png)
 
 Our test passed again :)
 
