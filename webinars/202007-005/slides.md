@@ -74,7 +74,11 @@ NOTE:
 
 ### Dulce
 
-- // TODO Dulce
+- Dev 🥑 IOVlabs: RSK + RIF
+- México 🇲🇽 - San Francisco 🌁
+- Economist & data scientist 🧮
+- Foodie & mezcal sommelier 🌮 🍛 🍣
+- Roller skater ⛸️
 
 NOTE:
 
@@ -98,6 +102,24 @@ NOTE:
 
 - Ya he estado aprendiendo por más de doscientos días en Dúolingo
 - Estoy practicando mi español ahora mismo 😃 but that's all the Spanish you're going to get from me today!
+
+---
+
+## Pre-requisites
+
+[github.com/bguiz/workshop-rsk-prereqs](https://github.com/bguiz/workshop-rsk-prereqs/)
+
+[POSIX compliant shell](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell) /
+[curl](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#curl) /
+[NodeJs](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs) /
+[Code editor](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#code-editor) /
+[Truffle](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#truffle) /
+[Java](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#java) /
+[RSKj](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj)
+
+NOTE:
+
+- Please make sure you have all of these things installed and working on your system
 
 ---
 
@@ -151,7 +173,7 @@ NOTE:
 - The main task of a test runner is to execute tests and generate a report
 - But before we get there, we first need to understand some terms: implementation, specification, and then we can loop back to the test runner
 
-----
+---
 
 ### Implementation
 
@@ -166,7 +188,7 @@ NOTE:
 
 - Implementations form the actual parts of the code that perform the functionality of your program or application
 
-----
+---
 
 ### Specification
 
@@ -183,7 +205,7 @@ NOTE:
 - Specifications are similar to implementation because they are also code
 - However they are not executed by the user of your programm or application, instead the specifications run the implmentations in certain pre-defined ways
 
-----
+---
 
 ### Test runner
 
@@ -231,6 +253,32 @@ NOTE:
 
 `Brendan`
 
+---
+
+### Pre-requisites
+
+[github.com/bguiz/workshop-rsk-prereqs](https://github.com/bguiz/workshop-rsk-prereqs/)
+
+[POSIX compliant shell](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell) /
+[NodeJs](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs)
+
+NOTE:
+
+- To follow along in this hands-on section of the workshop, you will need to have these things on your system
+- For those of you who have just joined us,
+  please check out the pre-requisites section that we covered at the beginning of the webinar,
+  this is merely a quick recap
+
+---
+
+## Testing JS: Hands-on
+
+[github.com/bguiz/workshop-rsk-js-testing](https://github.com/bguiz/workshop-rsk-js-testing/)
+
+NOTE:
+
+`Brendan` + `Dulce`
+
 - Alright, now we're going to do a Javascript testing hands-on.
 - Please follow the link above and it will take you to a workshop from DApps Dev Club created for a session which I ran last year.
 - Instead of me presenting and doing the demo at the same time, I'm going to ask Dulce to do this,
@@ -242,7 +290,7 @@ NOTE:
 - (follow the instructions)
 - (swap screenshare back)
 
-----
+---
 
 ## Right/wrong impl/spec
 
@@ -264,17 +312,157 @@ NOTE:
 
 ## Testing Solidity
 
+|  | Impl | Spec | Test Runner |
+| --- | --- | --- | --- |
+| Javascript | `*.js` | `*.spec.js` | `mocha` |
+| Smart contract | `*.sol` | `*.spec.js` | `truffle test` |
+
+NOTE:
+
+`Brendan`
+
+- As promised earlier, we're going to switch gears from testing pure Javascript to testing smart contracts
+- This means that we're going to switch from using mocha as the test runner to using truffle as the test runner
+- Why did we spend all that time earlier learning about mocha? I have a gut feel that some of you are thinking this.
+- Truffle test is based on Mocha - it is just a wrapper around it, which changes about 1%, and the other 99% of it is the same, from a test writer's point of view.
+
+---
+
+### `mocha` vs `truffle test`
+
+| `mocha` | `truffle test` |
+| --- | --- |
+| `require()` | `artifacts.require()` |
+| `describe()` | `contract()` ⃰ |
+| `describe(() => {...})` | `contract((accounts) => {...})` |
+
+
 NOTE:
 
 `Brendan`
 
 ---
 
-## Testing Solidity: Hands-on
+### State machines
+
+- Finite State Automata
 
 NOTE:
 
 `Brendan`
+
+- Before we start the hands-on section,
+  let's talk about some computer science,
+  very briefly, so that we have a better
+  understanding of our approach towards testing.
+- "State machines" is a term that derives from Mathematics about finite state automata
+- Smart contracts have properties of state machines, let's get into some specifics
+
+----
+
+### State
+
+- Smart contracts are stateful systems.
+- This means that a smart contract can be
+  said to be in a particular "state",
+  at any point of time.
+- This "state" is a set of variables,
+  including their current values,
+  stored by the smart contract.
+
+NOTE:
+
+`Brendan`
+
+----
+
+### State transitions
+
+- A state transition is a function that allows
+  users to change the state of the smart contract.
+- When the values of one or more variables
+  in the smart contract is updated,
+  that is a state change.
+- A transaction added to to the ledger is the
+  vehicle for a smart contract state change.
+
+---
+
+## Testing Solidity: Hands-on
+
+- State
+- State transitions
+- Events
+- ~~Mocked functions~~
+
+NOTE:
+
+`Brendan`
+
+- Here are a few common categories of things to do while testing
+- We will **not** be doing any mocking in this session in light of time constraints. Instead, we'll give ourselves more time to focus on testing state, state transitions, and events
+
+---
+
+### Pre-requisites:
+
+[github.com/bguiz/workshop-rsk-prereqs](https://github.com/bguiz/workshop-rsk-prereqs/)
+
+[POSIX compliant shell](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell)
+[NodeJs](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs)
+[Truffle](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#truffle) /
+[RSKj](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj)
+
+NOTE:
+
+- To follow along in this hands-on section of the workshop, you will need to have these things on your system
+- For those of you who have just joined us,
+  please check out the prerequisites section that we covered at the beginning of the webinar,
+  this is merely a quick recap
+- In this hands-on session, we are going to make use of a demo truffle project which has all of the stuff mostly in place, and you just to `git clone` the starting point
+- You will also need to install truffle via NodeJs
+- And finally you will need to have the RSK node, called RSKj, installed on your system and running on the Regtest network
+  - If you do not have this on your system already, please check out our previous webinars in which we go through the steps for this in great detail
+
+---
+
+## Testing Solidity: Hands-on
+
+[github.com/bguiz/workshop-rsk-smart-contract-testing-truffle](https://github.com/bguiz/workshop-rsk-smart-contract-testing-truffle/)
+
+NOTE:
+
+`Brendan`
+
+- Please go ahead and open up the link to that article which is essentially the written form of this tutorial
+- One of the first few steps will be to git clone the repo at the github link above
+- Now I'm going to swap over the screenshare to Dulce, who will demo this while I narrate,
+  just like we did in the previous hands-on
+- (swap screen share)
+
+`Dulce`
+
+- (does demo)
+- (swap back screen share)
+
+---
+
+## Summary
+
+- Testing
+- Smart contracts as state machines
+- Testing Javascript: **Impl** and **spec** were both JS
+- Testing Solidity: **Impl** was Solidity, **spec** was JS
+  - RSK Regtest
+
+NOTE:
+
+`Brendan`
+
+- While this webinar has been primarily intended as a hands-on workshop, we have covered some theory too, to do with softwate engineering principles around testing, and thinkign about smart contracts in terms of state and state transitions.
+- And in the hands on section we created a Javascript application and tested it with Javascript, and followed that up with creating a smart contract in Solidity and testing that with Javascript.
+- You will have noticed that we have used the RSK regtest network for our smart contracts, which runs locally, on your computer only. This is intentional: For these kinds of tests where you're doing active development, and needs faster iterations, a localhost-only blockchain is the right choice.
+- However, note that you always have the option of running tests against your smart contracts deployed on a real peer-to-peer decentralised blockchain network, such as the RSK Testnet, or even the RSK Mainnet - but usually one would reserve this for a later stage in the project where you have considerations such as economic incentive based attacks or networks congestions or gas price hikes.
 
 ---
 
