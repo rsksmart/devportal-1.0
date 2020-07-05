@@ -167,7 +167,7 @@ CATEGORIES:Talk
 URL;VALUE=URI:https://zoom.us/j/666038949
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200330T030000Z
+LAST-MODIFIED:20200702T232700Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202003-006@developers.rsk.co/
@@ -396,7 +396,7 @@ URL;VALUE=URI:https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1
  P7fuXwQ
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200329T140000Z
+LAST-MODIFIED:20200702T232200Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-005@developers.rsk.co/
@@ -460,7 +460,7 @@ URL;VALUE=URI:https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32
  t5qoEvg
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200403T140000Z
+LAST-MODIFIED:20200702T232500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-007@developers.rsk.co/
@@ -493,7 +493,7 @@ URL;VALUE=URI:https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85A
  fEzzqig
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200403T140000Z
+LAST-MODIFIED:20200702T232500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-008@developers.rsk.co/
@@ -525,7 +525,7 @@ URL;VALUE=URI:https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kn
  o-k72oQ
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200403T140000Z
+LAST-MODIFIED:20200702T232200Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-009@developers.rsk.co/
@@ -1150,7 +1150,7 @@ URL;VALUE=URI:https://attendee.gotowebinar.com/register/645500777311186587
  0
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200419T053600Z
+LAST-MODIFIED:20200702T231800Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-029@developers.rsk.co/
@@ -1183,7 +1183,7 @@ URL;VALUE=URI:https://attendee.gotowebinar.com/register/242859399317292366
  2
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200419T053600Z
+LAST-MODIFIED:20200702T231800Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-030@developers.rsk.co/
@@ -1215,7 +1215,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-c
  ases
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200425T131100Z
+LAST-MODIFIED:20200702T231600Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202004-031@developers.rsk.co/
@@ -1250,7 +1250,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/blockchain-para-la-indus
  tria-financiera
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200425T131100Z
+LAST-MODIFIED:20200702T233000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-001@developers.rsk.co/
@@ -1381,7 +1381,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covi
  d
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200502T135700Z
+LAST-MODIFIED:20200702T231200Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-005@developers.rsk.co/
@@ -1411,7 +1411,7 @@ CATEGORIES:Talk
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-on-chain
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200502T135700Z
+LAST-MODIFIED:20200702T231000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-006@developers.rsk.co/
@@ -1441,7 +1441,7 @@ CATEGORIES:Talk
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200502T135700Z
+LAST-MODIFIED:20200702T231000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-007@developers.rsk.co/
@@ -1474,7 +1474,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-ri
  f
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200505T193300Z
+LAST-MODIFIED:20200702T231500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-008@developers.rsk.co/
@@ -1637,7 +1637,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-r
  sk-merged-mining
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200515T091500Z
+LAST-MODIFIED:20200702T230400Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-013@developers.rsk.co/
@@ -1670,7 +1670,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-
  merged-mining
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200515T091500Z
+LAST-MODIFIED:20200702T230400Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-014@developers.rsk.co/
@@ -1703,7 +1703,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/why-we-need-decentralize
  d-storage
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200515T091500Z
+LAST-MODIFIED:20200702T230000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-015@developers.rsk.co/
@@ -1735,14 +1735,14 @@ UID:202005-016@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200511T094500Z
 DTSTART:20200511T094500Z
-SUMMARY:Moneyonchain a Stablecion descentralizada baseada no Bitcoin. Tudo
+SUMMARY:Moneyonchain a Stablecoin descentralizada baseada no Bitcoin. Tudo
   sobre o MoC\, DoC\, Bpro e BTCx 
-DESCRIPTION:Moneyonchain a Stablecion descentralizada baseada no Bitcoin. 
+DESCRIPTION:Moneyonchain a Stablecoin descentralizada baseada no Bitcoin. 
  Tudo sobre o MoC\, DoC\, Bpro e BTCx\n\nOnline only\n\nRSVP: \n\nVideo str
  eam: \n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Moneyon
- chain a Stablecion descentralizada baseada no Bitcoin. Tudo sobre o MoC\, 
+ chain a Stablecoin descentralizada baseada no Bitcoin. Tudo sobre o MoC\, 
  DoC\, Bpro e BTCx</span></div>\n<div><span>Online only</span></div>\n<div>
  <b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><s
  pan></span></div>\n</BODY>\n</HTML>
@@ -1751,7 +1751,7 @@ ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
-DESCRIPTION:Moneyonchain a Stablecion descentralizada baseada no Bitcoin. 
+DESCRIPTION:Moneyonchain a Stablecoin descentralizada baseada no Bitcoin. 
  Tudo sobre o MoC\, DoC\, Bpro e BTCx 
 END:VALARM
 CATEGORIES:Talk
@@ -1790,7 +1790,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/defi-para-desarrolladore
  s-blockchain
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200522T034500Z
+LAST-MODIFIED:20200702T225900Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202005-018@developers.rsk.co/
@@ -1824,7 +1824,7 @@ CATEGORIES:Talk
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200522T034500Z
+LAST-MODIFIED:20200702T225700Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202006-001@developers.rsk.co/
@@ -1916,7 +1916,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-mac
  ro-tendencias
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200531T064500Z
+LAST-MODIFIED:20200702T225600Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202006-004@developers.rsk.co/
@@ -1925,15 +1925,18 @@ DTSTAMP:20200610T090000Z
 DTSTART:20200610T090000Z
 SUMMARY:How to Upload a Website on RIF Storage 
 DESCRIPTION:How to Upload a Website on RIF Storage\n\nOnline only\n\nRSVP:
-  \n\nVideo stream: https://app.livestorm.co/iov-labs-1/how-to-upload-a-web
- site-on-rif-storage\n
+  https://www.meetup.com/es-ES/rsk-community/events/270954178/\n\nVideo str
+ eam: https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-st
+ orage\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How to 
  Upload a Website on RIF Storage</span></div>\n<div><span>Online only</span
- ></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream
-  &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/how-to-upl
- oad-a-website-on-rif-storage\">app.livestorm.co/iov-labs-1/how-to-upload-a
- -website-on-rif-storage</a></span></div>\n</BODY>\n</HTML>
+ ></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es
+ -ES/rsk-community/events/270954178/\">www.meetup.com/es-ES/rsk-community/e
+ vents/270954178/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-ri
+ f-storage\">app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-sto
+ rage</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Rinke Hendriksen\, Swarm PO & Researcher\, @hendriksenrinke"
  :mailto:developers@iovlabs.org
 BEGIN:VALARM
@@ -2011,7 +2014,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-r
  sk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200612T220700Z
+LAST-MODIFIED:20200702T233900Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202006-007@developers.rsk.co/
@@ -2057,15 +2060,18 @@ DTSTART:20200626T000000Z
 SUMMARY:De App a dApp:\nAprende como migrar tu App en JavaScript a un RSK 
  Smart Contract 
 DESCRIPTION:De App a dApp:\nAprende como migrar tu App en JavaScript a un 
- RSK Smart Contract\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.l
- ivestorm.co/iov-labs-1/de-app-a-dap\n
+ RSK Smart Contract\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RS
+ KBuenosAires/events/271395876/\n\nVideo stream: https://app.livestorm.co/i
+ ov-labs-1/de-app-a-dap\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>De App 
  a dApp:\nAprende como migrar tu App en JavaScript a un RSK Smart Contract<
  /span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b
- ><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"http
- s://app.livestorm.co/iov-labs-1/de-app-a-dap\">app.livestorm.co/iov-labs-1
- /de-app-a-dap</a></span></div>\n</BODY>\n</HTML>
+ ><span><a href=\"https://www.meetup.com/es-ES/RSKBuenosAires/events/271395
+ 876/\">www.meetup.com/es-ES/RSKBuenosAires/events/271395876/</a></span></d
+ iv>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm
+ .co/iov-labs-1/de-app-a-dap\">app.livestorm.co/iov-labs-1/de-app-a-dap</a>
+ </span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
@@ -2086,16 +2092,18 @@ SEQUENCE:0
 DTSTAMP:20200626T170000Z
 DTSTART:20200626T170000Z
 SUMMARY:RSK made easy with SIMBA Chain 
-DESCRIPTION:RSK made easy with SIMBA Chain\n\nOnline only\n\nRSVP: \n\nVid
- eo stream: https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-ch
- ain\n
+DESCRIPTION:RSK made easy with SIMBA Chain\n\nOnline only\n\nRSVP: https:/
+ /www.meetup.com/es-ES/rsk-community/events/271395816/\n\nVideo stream: htt
+ ps://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK mad
  e easy with SIMBA Chain</span></div>\n<div><span>Online only</span></div>\
- n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;
- </b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-made-easy-with
- -simba-chain\">app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain<
- /a></span></div>\n</BODY>\n</HTML>
+ n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-
+ community/events/271395816/\">www.meetup.com/es-ES/rsk-community/events/27
+ 1395816/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\
+ "https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain\">app.
+ livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain</a></span></div>\n<
+ /BODY>\n</HTML>
 ORGANIZER;CN="Tommy Cooksey\, SIMBA Chain Blockchain Architect\, @tommycoo
  ksey":mailto:developers@iovlabs.org
 BEGIN:VALARM
@@ -2169,7 +2177,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testes-utilizando-truffl
  e-na-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200624T093000Z
+LAST-MODIFIED:20200703T043000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202007-002@developers.rsk.co/
@@ -2177,17 +2185,14 @@ SEQUENCE:0
 DTSTAMP:20200703T180000Z
 DTSTART:20200703T180000Z
 SUMMARY:RIF Lumino workshop 
-DESCRIPTION:RIF Lumino workshop\n\nOnline only\n\nRSVP: https://www.meetup
- .com/es-ES/rsk-community/events/271483324/\n\nVideo stream: https://app.li
- vestorm.co/iov-labs-1/rif-lumino-workshop\n
+DESCRIPTION:RIF Lumino workshop\n\nOnline only\n\nCancelled\, see webinars
+  page for more details: https://developers.rsk.co/webinars/calendar.ical\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF Lum
- ino workshop</span></div>\n<div><span>Online only</span></div>\n<div><b>RS
- VP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-community/e
- vents/271483324/\">www.meetup.com/es-ES/rsk-community/events/271483324/</a
- ></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://ap
- p.livestorm.co/iov-labs-1/rif-lumino-workshop\">app.livestorm.co/iov-labs-
- 1/rif-lumino-workshop</a></span></div>\n</BODY>\n</HTML>
+ ino workshop</span></div>\n<div><span>Online only</span></div>\n<div><b>Ca
+ ncelled\, see webinars page for more details &nbsp\;</b><span><a href=\"ht
+ tps://developers.rsk.co/webinars/calendar.ical\">developers.rsk.co/webinar
+ s/calendar.ical</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
  lto:developers@iovlabs.org
 BEGIN:VALARM
@@ -2197,9 +2202,9 @@ DESCRIPTION:RIF Lumino workshop
 END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-lumino-workshop
-STATUS:CONFIRMED
+STATUS:CANCELLED
 X-LANGUAGE:English
-LAST-MODIFIED:20200624T093000Z
+LAST-MODIFIED:20200702T234200Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202007-003@developers.rsk.co/
@@ -2235,16 +2240,19 @@ SEQUENCE:0
 DTSTAMP:20200708T010000Z
 DTSTART:20200708T010000Z
 SUMMARY:Testing Smart Contracts with Truffle 
-DESCRIPTION:Testing Smart Contracts with Truffle\n\nOnline only\n\nRSVP: \
- n\nVideo stream: https://app.livestorm.co/iov-labs-1/testing-smart-contrac
- ts-with-truffle\n
+DESCRIPTION:Testing Smart Contracts with Truffle\n\nOnline only\n\nRSVP: h
+ ttps://www.meetup.com/es-ES/rsk-community/events/271698862/\n\nVideo strea
+ m: https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffl
+ e\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testing
   Smart Contracts with Truffle</span></div>\n<div><span>Online only</span><
- /div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &
- nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/testing-smar
- t-contracts-with-truffle\">app.livestorm.co/iov-labs-1/testing-smart-contr
- acts-with-truffle</a></span></div>\n</BODY>\n</HTML>
+ /div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-E
+ S/rsk-community/events/271698862/\">www.meetup.com/es-ES/rsk-community/eve
+ nts/271698862/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a 
+ href=\"https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-tr
+ uffle\">app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle</
+ a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
  ers@iovlabs.org
 BEGIN:VALARM
@@ -2257,7 +2265,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testing-smart-contracts-
  with-truffle
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200630T020000Z
+LAST-MODIFIED:20200704T081500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202007-005-c@developers.rsk.co/
@@ -2316,7 +2324,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethere
  um-para-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200624T093000Z
+LAST-MODIFIED:20200630T020000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202007-007@developers.rsk.co/
@@ -2386,15 +2394,17 @@ DTSTART:20200706T210000Z
 SUMMARY:Carnes Validadas: plataforma de trazabilidad ganadera sobre Blockc
  hain 
 DESCRIPTION:Carnes Validadas: plataforma de trazabilidad ganadera sobre Bl
- ockchain\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.c
- o/iov-labs-1/caso-carnes-validadas\n
+ ockchain\n\nOnline only\n\nRSVP: meetup.com/es-ES/RSKBuenosAires/events/27
+ 1629531/?isFirstPublish=true\n\nVideo stream: https://app.livestorm.co/iov
+ -labs-1/caso-carnes-validadas\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Carnes 
  Validadas: plataforma de trazabilidad ganadera sobre Blockchain</span></di
- v>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></s
- pan></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.li
- vestorm.co/iov-labs-1/caso-carnes-validadas\">app.livestorm.co/iov-labs-1/
- caso-carnes-validadas</a></span></div>\n</BODY>\n</HTML>
+ v>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span>mee
+ tup.com/es-ES/RSKBuenosAires/events/271629531/?isFirstPublish=true</span><
+ /div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livesto
+ rm.co/iov-labs-1/caso-carnes-validadas\">app.livestorm.co/iov-labs-1/caso-
+ carnes-validadas</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Diego Heinrich\, CEO de Carnes Validadas\, @CarnesValidadas"
  :mailto:developers@iovlabs.org
 BEGIN:VALARM
@@ -2442,5 +2452,38 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/how-is-dexfreight-levera
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200630T020000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-011@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200730T210000Z
+DTSTART:20200730T210000Z
+SUMMARY:Cómo incentivar la economía local en Municipios implementando tecn
+ ología Blockchain 
+DESCRIPTION:Cómo incentivar la economía local en Municipios implementando 
+ tecnología Blockchain\n\nOnline only\n\nRSVP: \n\nVideo stream: https://ap
+ p.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Cómo in
+ centivar la economía local en Municipios implementando tecnología Blockcha
+ in</span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;
+ </b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"h
+ ttps://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios
+ \">app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios</a>
+ </span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Juan Pablo Orlando\, Head of Sales de Koibanx\, @koibanx":ma
+ ilto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Cómo incentivar la economía local en Municipios implementando 
+ tecnología Blockchain 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/incentivar-economia-loca
+ l-en-municipios
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200704T081500Z
 END:VEVENT
 END:VCALENDAR

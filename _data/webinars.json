@@ -154,9 +154,9 @@
     {
       "type": "event/2",
       "id": "202003-005",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-03-26T12:30:00.000Z",
-      "lastModified": "2020-03-30T03:00:00.000Z",
+      "lastModified": "2020-07-02T23:27:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269468497/",
       "title": "Gasnet: la red Blockchain para el Ecosistema de Gas",
@@ -189,7 +189,12 @@
       "videoStreamUrl": "https://zoom.us/j/666038949",
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1aB0CzP3ckoZ6kfiJCnR4UuyZLE3jV4Hn/view?usp=sharing"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/2emqQlK4Glw",
       "_isPast": true
     },
@@ -428,9 +433,9 @@
     {
       "type": "event/2",
       "id": "202004-004",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-04-03T17:00:00.000Z",
-      "lastModified": "2020-03-29T14:00:00.000Z",
+      "lastModified": "2020-07-02T23:22:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269685307/",
       "title": "RIF Services overview",
@@ -453,7 +458,16 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event6.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1WeaK_-7VpcUl-s74bw2_Cdcl8_PL_1xP/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rifos.org/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/lxrBOdcSQfo",
       "_isPast": true
     },
@@ -492,9 +506,9 @@
     {
       "type": "event/2",
       "id": "202004-006",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-06T17:00:00.000Z",
-      "lastModified": "2020-04-03T14:00:00.000Z",
+      "lastModified": "2020-07-02T23:25:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/269838616/",
       "title": "What is Decentralized Finance or DeFi?",
@@ -517,16 +531,25 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event8.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1u56PrkbwYModJl1IVOIJ0ZQBiBUGx2WH/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://developers.rsk.co/defi/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/EBjrvm_5IoE",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202004-007",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-06T21:00:00.000Z",
-      "lastModified": "2020-04-03T14:00:00.000Z",
+      "lastModified": "2020-07-02T23:25:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269835498/",
       "title": "¿Qué son las Finanzas Descentralizadas?",
@@ -549,16 +572,25 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event3.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1qAUBtS-OhLgPrhvTJFV5cYvAA3Io1Z-d/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://developers.rsk.co/defi/es/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/573jdX0TCZE",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202004-008",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-07T15:30:00.000Z",
-      "lastModified": "2020-04-03T14:00:00.000Z",
+      "lastModified": "2020-07-02T23:22:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/269837767",
       "title": "Introducción a los servicios de RIF",
@@ -581,7 +613,16 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1gru6DogGD4w93G7jZfyw9DWnORzpzcVk/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rifos.org/es/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/8yxo4-fu1H0",
       "_isPast": true
     },
@@ -1334,9 +1375,9 @@
     {
       "type": "event/2",
       "id": "202004-028",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-24T17:00:00.000Z",
-      "lastModified": "2020-04-19T05:36:00.000Z",
+      "lastModified": "2020-07-02T23:18:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270120801/",
       "title": "An introduction to RIF Lumino:\nConcepts, ideas and architecture",
@@ -1359,16 +1400,25 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/6455007773111865870",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1FzatGBiT4sNtnOrn09SCpNrVHs4-sX3B/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rifos.org/payments"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/6tc05aep-W4",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202004-029",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-24T19:00:00.000Z",
-      "lastModified": "2020-04-19T05:36:00.000Z",
+      "lastModified": "2020-07-02T23:18:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270120715/",
       "title": "Introducción a RIF Lumino:\nConceptos, ideas y arquitectura",
@@ -1391,16 +1441,25 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/2428593993172923662",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event10.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1d6TpdE5IC4qKdjlkpnZCQOiEfnoib_j9/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rifos.org/es/payments"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/WvvrIEaF0NA",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202004-030",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-27T17:00:00.000Z",
-      "lastModified": "2020-04-25T13:11:00.000Z",
+      "lastModified": "2020-07-02T23:16:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270247186/",
       "title": "Blockchain and RSK use cases",
@@ -1429,16 +1488,25 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-cases",
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1y_-JVSzRT0zLwQQPICXOspNUyIhNaX1y/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rsk.co/Use-cases"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/dw_khz1Cw3Q",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202004-031",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-04-28T14:00:00.000Z",
-      "lastModified": "2020-04-25T13:11:00.000Z",
+      "lastModified": "2020-07-02T23:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270248095/",
       "title": "Blockchain para la industria financiera: el caso del Banco Central de la República Argentina",
@@ -1466,7 +1534,12 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-para-la-industria-financiera",
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "/webinars/img/events/event12.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1wi0GORDtQ1uxI4cm8O5kTIEoA7sShKZp/view?usp=sharing"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/fEnbO1y2qXM",
       "_isPast": true
     },
@@ -1599,9 +1672,9 @@
     {
       "type": "event/2",
       "id": "202005-004",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-04T18:00:00.000Z",
-      "lastModified": "2020-05-02T13:57:00.000Z",
+      "lastModified": "2020-07-02T23:12:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270367793/",
       "title": "Bitgive + IOV Labs for Covid-19",
@@ -1629,16 +1702,25 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid",
       "tags": " idioma-english audiencia-enterprise",
       "image": "/webinars/img/events/event7.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1sjJy32bTnnmAqVs-8S2CsxX0ZJv2SduH/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.bitgivefoundation.org/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/y7auw58TeXM",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-005",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-05T17:00:00.000Z",
-      "lastModified": "2020-05-02T13:57:00.000Z",
+      "lastModified": "2020-07-02T23:10:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270370376/",
       "title": "RIF On Chain",
@@ -1661,16 +1743,25 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event2.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/191c39S3Kj144D-sv8gq1XlhlGdCvEz_j/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rifos.org/blog/rif-on-chain-launch"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/egk8WzquT3U",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-006",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-05T19:00:00.000Z",
-      "lastModified": "2020-05-02T13:57:00.000Z",
+      "lastModified": "2020-07-02T23:10:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270378726/",
       "title": "RIF On Chain",
@@ -1693,16 +1784,25 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event9.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1yRWcMnw2x9M1oS63yeiifhDXnypaMLzb/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rifos.org/es/blog/rif-on-chain-launch"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/BIaDKSGG3C4",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-007",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-08T17:00:00.000Z",
-      "lastModified": "2020-05-05T19:33:00.000Z",
+      "lastModified": "2020-07-02T23:15:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270466986/",
       "title": "Casos de uso de Blockchain construidos sobre RSK y RIF",
@@ -1726,7 +1826,16 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif",
       "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event4.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1hXP_VETriTD0vOtMsSZClgwGeYzF2JfK/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rsk.co/es/Use-cases"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/QpbtVlulChQ",
       "_isPast": true
     },
@@ -1905,9 +2014,9 @@
     {
       "type": "event/2",
       "id": "202005-012",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-20T17:00:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-07-02T23:04:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270656095/",
       "title": "From Bitcoin Mining to RSK Merged Mining",
@@ -1931,16 +2040,25 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merged-mining",
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event3.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1x3PsqJULlklU81WjR8q8VvMdIOO20T90/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://mining.rsk.co/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/-ht5UhUuIUE",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-013",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-05-20T21:00:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-07-02T23:04:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270655653/",
       "title": "De Minería de Bitcoin a Merged Mining sobre RSK",
@@ -1964,16 +2082,25 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-merged-mining",
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1Fy0ITim7fB9vePWcCSw1SaiIJdlD7HuO/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://mining.rsk.co/es/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/CQ95g6xxS-Y",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-014",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-22T22:00:00.000Z",
-      "lastModified": "2020-05-15T09:15:00.000Z",
+      "lastModified": "2020-07-02T23:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270662407/",
       "title": "Why we need Decentralized Storage and Communications",
@@ -1995,9 +2122,18 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/why-we-need-decentralized-storage",
-      "tags": " idioma-english audiencia-startups audiencia-enterprise recent",
+      "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1FXOPxSK0LCaJnuQt3kmiBUYnamHB1vZd/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://www.rifos.org/storage"
+        }
+      ],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=Yeinq7aiGWQ",
       "_isPast": true
     },
@@ -2042,7 +2178,7 @@
       "lastModified": "2020-05-17T09:15:00.000Z",
       "status": "confirmed",
       "url": "",
-      "title": "Moneyonchain a Stablecion descentralizada baseada no Bitcoin. Tudo sobre o MoC, DoC, Bpro e BTCx",
+      "title": "Moneyonchain a Stablecoin descentralizada baseada no Bitcoin. Tudo sobre o MoC, DoC, Bpro e BTCx",
       "description": "",
       "category": "Talk",
       "locationCategory": "online",
@@ -2070,9 +2206,9 @@
     {
       "type": "event/2",
       "id": "202005-017",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-27T19:00:00.000Z",
-      "lastModified": "2020-05-22T03:45:00.000Z",
+      "lastModified": "2020-07-02T22:59:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270797663/",
       "title": "DeFi para Desarrolladores Blockchain",
@@ -2094,18 +2230,27 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockchain",
-      "tags": " idioma-spanish audiencia-developers audiencia-spanish recent",
+      "tags": " idioma-spanish audiencia-developers audiencia-spanish",
       "image": "/webinars/img/events/event2.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1OnZ7dnqOZI7SiNlrYvuKesBHrdWnN_G7/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://developers.rsk.co/defi/"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/DypxxvAMCZ8",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202005-018",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-05-29T18:00:00.000Z",
-      "lastModified": "2020-05-22T03:45:00.000Z",
+      "lastModified": "2020-07-02T22:57:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/270798560/",
       "title": "RSK Ecosystem Fund:\nCriteria, process, first round of investments review",
@@ -2129,9 +2274,18 @@
       ],
       "rsvpEmbedUrl": "",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund",
-      "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience recent",
+      "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience",
       "image": "/webinars/img/events/event9.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1SwMzuRA4FyCg8ViJmu1G59RCHJWCq6iF/view?usp=sharing"
+        },
+        {
+          "label": "url",
+          "url": "https://fund.rsk.co/"
+        }
+      ],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=rjKLb1gd514&list=PLSyELPaIli1nDXVOtUXMjRrWtd2eMiRXi",
       "_isPast": true
     },
@@ -2199,9 +2353,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/87ee7c1e-3ff0-48b7-8625-a939dea73347/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/o-que-e-rsk",
-      "tags": " idioma-portuguese audiencia-general recent",
+      "tags": " idioma-portuguese audiencia-general",
       "image": "/webinars/img/events/event11.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vTEASUlYeV_YDYuxfqeVCle33UYHBDtkAzWuFt5NvsnHhtq1OEuqjQDvuNAfABL64JwUEyumNcZFyxH/pub?start=true&loop=false&delayms=5000"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/hu5mV_OkJs0",
       "_permalink": "/webinars/202006-002/",
       "_isPast": true
@@ -2209,9 +2368,9 @@
     {
       "type": "event/2",
       "id": "202006-003",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-06-04T22:00:00.000Z",
-      "lastModified": "2020-05-31T06:45:00.000Z",
+      "lastModified": "2020-07-02T22:56:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/270941073/",
       "title": "Minería de Bitcoin y Macro tendencias de la Industria",
@@ -2240,7 +2399,12 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-macro-tendencias",
       "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
       "image": "/webinars/img/events/event6.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://drive.google.com/file/d/1Ievu0bxTzwYu1JpcjNNaTLG3GDX_pnRi/view?usp=sharing"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/xwC0lpT4n80",
       "_permalink": "/webinars/202006-003/",
       "_isPast": true
@@ -2252,7 +2416,7 @@
       "timestamp": "2020-06-10T09:00:00.000Z",
       "lastModified": "2020-06-09T14:45:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/270954178/",
       "title": "How to Upload a Website on RIF Storage",
       "description": "Now more than ever decentralized storage solutions are needed to resist censorship and ensure personal data privacy. RIF Storage sets out to create the base-layer of a truly decentralized internet 🌀🌀\n\nIn this webinar, learn how to launch your own serverless website using RIF Storage- it’s easier than you think! \n\nRight now, everybody is able to launch an unstoppable, serverless website and we will show you how 💪💪\n\nSPEAKERS:\n\n👨‍💻Rinke Hendriksen: Swarm PO and Researcher\n👨‍💻Brendan Graetz: Developer Advocate\n\nTo learn more about RIF storage, visit our website and roadmap: https://www.rifos.org/storage",
       "category": "Talk",
@@ -2334,9 +2498,9 @@
     {
       "type": "event/2",
       "id": "202006-006",
-      "version": "2",
+      "version": "4",
       "timestamp": "2020-06-17T22:00:00.000Z",
-      "lastModified": "2020-06-12T22:07:00.000Z",
+      "lastModified": "2020-07-02T23:39:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/271259617/",
       "title": "Criando um nó local na RSK",
@@ -2355,11 +2519,16 @@
           "contact": "@solangegueiros"
         }
       ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/e42994d6-a586-4136-b19d-056010079403/form",
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/f869f5f9-4c3a-498d-aeca-f3fecd0099ff/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk",
       "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event3.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vRoMwDdcBU4YujKCotpkkskYO6UlXlQhh_pEl2NwLePUvDrId6hMxoHzTHBXBLNHIFiMBXx1IYgPIgw/pub?start=true&loop=false&delayms=5000"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/SlfGy5o5esg",
       "_permalink": "/webinars/202006-006/",
       "_isPast": true
@@ -2409,9 +2578,9 @@
       "timestamp": "2020-06-26T00:00:00.000Z",
       "lastModified": "2020-06-12T06:45:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/271395876/",
       "title": "De App a dApp:\nAprende como migrar tu App en JavaScript a un RSK Smart Contract",
-      "description": "De App a dApp:\nDiviertete migrando tu App construida en Java Script a RSK con Smart Contracts asegurados por la red de Bitcoin.",
+      "description": "De App a dApp:\nDiviertete migrando tu App en JavaScript a RSK con Smart Contracts asegurados por la red de Bitcoin y usando Swarm - almacenaje descentralizado-. ",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -2442,7 +2611,7 @@
       "timestamp": "2020-06-26T17:00:00.000Z",
       "lastModified": "2020-06-12T19:20:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271395816/",
       "title": "RSK made easy with SIMBA Chain",
       "description": "SIMBA is an amazing platform that enables companies and devs to quickly create and deploy blockchain dApps. Watch the demo, and deploy dApps in RSK quickly.",
       "category": "Demo",
@@ -2502,18 +2671,18 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
-      "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo",
+      "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo recent",
       "image": "/webinars/img/events/event7.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202007-001",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-07-01T22:00:00.000Z",
-      "lastModified": "2020-06-24T09:30:00.000Z",
+      "lastModified": "2020-07-03T04:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/271482311/",
       "title": "Testes utilizando Truffle na RSK",
@@ -2534,20 +2703,25 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/2442473d-a268-4bba-8678-2bd6903f8894/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
+      "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event2.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Tutorial",
+          "url": "https://solange.dev/2020/rsk-truffle-tests/"
+        }
+      ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-001/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202007-002",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-07-03T18:00:00.000Z",
-      "lastModified": "2020-06-24T09:30:00.000Z",
-      "status": "confirmed",
+      "lastModified": "2020-07-02T23:42:00.000Z",
+      "status": "cancelled",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/271483324/",
       "title": "RIF Lumino workshop",
       "description": "On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",
@@ -2567,12 +2741,11 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-developers",
+      "tags": " idioma-english audiencia-developers recent",
       "image": "/webinars/img/events/event9.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_permalink": "/webinars/202007-002/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2600,20 +2773,20 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/c1b34ea2-d1c8-475f-b6a8-5f2e44405571/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol",
-      "tags": " idioma-spanish audiencia-developers",
+      "tags": " idioma-spanish audiencia-developers recent",
       "image": "/webinars/img/events/event4.jpg",
       "resources": [],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202007-005",
-      "version": "3",
+      "version": "4",
       "timestamp": "2020-07-08T01:00:00.000Z",
-      "lastModified": "2020-06-30T02:00:00.000Z",
+      "lastModified": "2020-07-04T08:15:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271698862/",
       "title": "Testing Smart Contracts with Truffle",
       "description": "Learn how to create and run tests on your RSK smart contracts using Truffle.",
       "category": "Workshop",
@@ -2639,7 +2812,20 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "System pre-requisites",
+          "url": "https://github.com/bguiz/workshop-rsk-prereqs"
+        },
+        {
+          "label": "Javascript testing hands-on",
+          "url": "https://github.com/bguiz/workshop-rsk-js-testing"
+        },
+        {
+          "label": "Smart contract testing hands-on",
+          "url": "https://github.com/bguiz/workshop-rsk-smart-contract-testing-truffle"
+        }
+      ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-005/",
       "_isPast": false
@@ -2672,7 +2858,16 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://developers.rsk.co/webinars/202007-005/slides/"
+        },
+        {
+          "label": "Javascript Hands-on",
+          "url": "https://dappsdev.org/hands-on/mocha-intro/"
+        }
+      ],
       "recordedVideoUrl": "",
       "_isPast": false
     },
@@ -2681,7 +2876,7 @@
       "id": "202007-006",
       "version": "2",
       "timestamp": "2020-07-15T22:00:00.000Z",
-      "lastModified": "2020-06-24T09:30:00.000Z",
+      "lastModified": "2020-06-30T02:00:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Migrando dApps do Ethereum para RSK (Port Ethereum dApps)",
@@ -2782,7 +2977,7 @@
       "timestamp": "2020-07-06T21:00:00.000Z",
       "lastModified": "2020-06-30T02:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "meetup.com/es-ES/RSKBuenosAires/events/271629531/?isFirstPublish=true",
       "title": "Carnes Validadas: plataforma de trazabilidad ganadera sobre Blockchain",
       "description": "Carnes validadas is developing a value creation network in the Argentina meat chain, based on RSK to provide transparency, clarity and streamline the meat production process, from genealogy to the consumer. At this webinar Carnes Validadas CEO will provide us details on what their vision is and how Carnes Validadas will revolutionze the Meat Industry.",
       "category": "Talk",
@@ -2846,6 +3041,40 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-010/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202007-011",
+      "version": "1",
+      "timestamp": "2020-07-30T21:00:00.000Z",
+      "lastModified": "2020-07-04T08:15:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Cómo incentivar la economía local en Municipios implementando tecnología Blockchain",
+      "description": "En este webseminar Koibanx propone conocer la plataforma de digitalización de activos que desarrolló sobre tecnología Blockchain para estimular la economía local de municipios.\n\nSe hablará de cómo se crean activos digitales para gobierno, se realizará una demo en vivo y los detalles sobre la exitosa implementación que hicimos en conjunto con el Municipio de Marcos Paz en la Provincia de Buenos Aires, se explicará el marco jurídico actual y por último se responderán preguntas.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Juan Pablo Orlando",
+          "description": "Head of Sales de Koibanx",
+          "contact": "@koibanx"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/da00591e-f86f-47ba-8b7c-b41d912306b5/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "image": "/webinars/img/events/event12.jpg",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202007-011/",
       "_isPast": false
     }
   ]
