@@ -107,15 +107,15 @@ NOTE:
 
 ## Pre-requisites
 
-[github.com/bguiz/workshop-rsk-prereqs](https://github.com/bguiz/workshop-rsk-prereqs/)
+[developers.rsk.co/tutorials/workshop-prereqs](/tutorials/workshop-prereqs/)
 
-[POSIX compliant shell](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell) /
-[curl](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#curl) /
-[NodeJs](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs) /
-[Code editor](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#code-editor) /
-[Truffle](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#truffle) /
-[Java](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#java) /
-[RSKj](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj)
+[POSIX compliant shell](/tutorials/workshop-prereqs/#posix-compliant-shell) /
+[curl](/tutorials/workshop-prereqs/#curl) /
+[NodeJs](/tutorials/workshop-prereqs/#nodejs) /
+[Code editor](/tutorials/workshop-prereqs/#code-editor) /
+[Truffle](/tutorials/workshop-prereqs/#truffle) /
+[Java](/tutorials/workshop-prereqs/#java) /
+[RSKj](/tutorials/workshop-prereqs/#rskj)
 
 NOTE:
 
@@ -257,10 +257,10 @@ NOTE:
 
 ### Pre-requisites
 
-[github.com/bguiz/workshop-rsk-prereqs](https://github.com/bguiz/workshop-rsk-prereqs/)
+[developers.rsk.co/tutorials/workshop-prereqs/](/tutorials/workshop-prereqs/)
 
-[POSIX compliant shell](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell) /
-[NodeJs](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs)
+[POSIX compliant shell](/tutorials/workshop-prereqs/#posix-compliant-shell) /
+[NodeJs](/tutorials/workshop-prereqs/#nodejs)
 
 NOTE:
 
@@ -273,7 +273,7 @@ NOTE:
 
 ## Testing JS: Hands-on
 
-[github.com/bguiz/workshop-rsk-js-testing](https://github.com/bguiz/workshop-rsk-js-testing/)
+[developers.rsk.co/tutorials/workshop-js-testing/](/tutorials/workshop-js-testing/)
 
 NOTE:
 
@@ -406,12 +406,12 @@ NOTE:
 
 ### Pre-requisites:
 
-[github.com/bguiz/workshop-rsk-prereqs](https://github.com/bguiz/workshop-rsk-prereqs/)
+[developers.rsk.co/tutorials/workshop-prereqs](/tutorials/workshop-prereqs/)
 
-[POSIX compliant shell](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell)
-[NodeJs](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs)
-[Truffle](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#truffle) /
-[RSKj](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj)
+[POSIX compliant shell](/tutorials/workshop-prereqs/#posix-compliant-shell)
+[NodeJs](/tutorials/workshop-prereqs/#nodejs)
+[Truffle](/tutorials/workshop-prereqs/#truffle) /
+[RSKj](/tutorials/workshop-prereqs/#rskj)
 
 NOTE:
 
@@ -428,7 +428,7 @@ NOTE:
 
 ## Testing Solidity: Hands-on
 
-[github.com/bguiz/workshop-rsk-smart-contract-testing-truffle](https://github.com/bguiz/workshop-rsk-smart-contract-testing-truffle/)
+[developers.rsk.co/tutorials/workshop-smart-contract-testing-truffle](/tutorials/workshop-smart-contract-testing-truffle/)
 
 NOTE:
 
