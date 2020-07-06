@@ -2,6 +2,70 @@
   "id": "devportal",
   "groups": [
     {
+      "id": "rsk-workshop-testing-smart-contracts-with-truffle-slides",
+      "rootDir": "webinars/202007-005",
+      "skip": false,
+      "copier": "httpGet",
+      "filters": [],
+      "postProcessors": [
+        {
+          "id": "markdownFrontMatter",
+          "options": {
+            "merge": "localFmRemoteBody"
+          }
+        },
+        {
+          "id": "markdownExternalImageReplacer",
+          "options": {
+            "downloadMode": "default",
+            "imageDir": "webinars/202007-005"
+          }
+        }
+      ],
+      "files": [
+        {
+          "remote": "https://hackmd.io/@bguiz/rsk-workshop-testing-smart-contracts-with-truffle-slides/download",
+          "local": "slides.md"
+        }
+      ]
+    },
+    {
+      "id": "rsk-workshop-testing-smart-contracts-with-truffle-workshops",
+      "rootDir": "tutorials",
+      "skip": false,
+      "copier": "httpGet",
+      "filters": [],
+      "postProcessors": [
+        {
+          "id": "markdownFrontMatter",
+          "options": {
+            "merge": "localFmRemoteBody"
+          }
+        },
+        {
+          "id": "markdownExternalImageReplacer",
+          "options": {
+            "downloadMode": "default",
+            "imageDir": "tutorials"
+          }
+        }
+      ],
+      "files": [
+        {
+          "remote": "https://raw.githubusercontent.com/bguiz/workshop-rsk-prereqs/master/walkthru.md",
+          "local": "workshop-prereqs.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/bguiz/workshop-rsk-js-testing/master/walkthru.md",
+          "local": "workshop-js-testing.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/bguiz/workshop-rsk-smart-contract-testing-truffle/master/walkthru.md",
+          "local": "workshop-smart-contract-testing-truffle.md"
+        }
+      ]
+    },
+    {
       "id": "rns-guide",
       "rootDir": "rif/rns/guide",
       "copier": "httpGet",
