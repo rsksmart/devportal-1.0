@@ -1,0 +1,2297 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-56J7JTD');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
+      <meta name="author" content="RSK Developers Portal">
+      <link rel="canonical" href="https://developers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/">
+   	<title>RSK Workshop: Smart Contract Testing using Truffle - RSK Developers Portal</title>
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="../../assets/img/favicons/site.webmanifest/">
+      <link rel="mask-icon" href="../../assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+      <link rel="shortcut icon" href="../../assets/img/favicons/favicon.ico">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assetsimg/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,900&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800&amp;display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="../../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Libraries CSS Files -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="../../assets/vendor/malihu-custom-scrollbar-plugin-master/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+      <!-- Main Stylesheet File -->
+      <link href="../../assets/css/code.css" rel="stylesheet">
+      <link href="../../assets/css/styles.css" rel="stylesheet">
+      <link href="../../assets/css/styles_dark.css" rel="stylesheet">
+      <link href="../../assets/css/owl.carousel.min.css" rel="stylesheet">
+      <link href="../../assets/css/owl.theme.default.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56J7JTD" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+      <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="https://rsk.co" rel="external noopener noreferrer" target="_blank"><img id="logo" src="../../assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../../the-stack/" target="_self">The Stack
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../develop/" target="_self">Develop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://fund.rsk.co" target="_blank" rel="external noopener noreferrer">Ecosystem Fund</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://rsk.co/defi" target="_blank" rel="external noopener noreferrer">Defi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../../webinars/" target="_self">Webinars</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+      <!-- Page Content -->
+      <!-- home -->
+      <section id="home">
+         <div class="container">
+
+            <div class="row header-inner">
+    <div class="col-lg-3">
+       <!-- mobile dropdown left column -->
+       <div class="mobile-left-menu">
+          <button class="btn btn-outline-secondary dropdown-toggle rsk_blue" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Menu <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-menu drop-mobile-left-menu">
+             <div class="mobile_accordion">
+                <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../rif/">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../rif/">RSK Infrastructure Framework</a></li>
+          <li><a href="../../rif/token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rif/rns/">Name Service</a>
+            <ul>
+              <li><a href="../../rif/rns/">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/guide/">User Guide</a>
+                <ul>
+                  <li><a href="../../rif/rns/guide/">User Guide</a></li>
+                  <li><a href="../../rif/rns/guide/intro/">Introduction</a></li>
+                  <li><a href="../../rif/rns/guide/setup/">Setup</a></li>
+                  <li><a href="../../rif/rns/guide/getting-started/">Getting Started</a></li>
+                  <li><a href="../../rif/rns/guide/operations/">Operations</a></li>
+                  <li><a href="../../rif/rns/guide/advanced/">Advanced Operations</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/specs/">Specs</a>
+                <ul>
+                  <li><a href="../../rif/rns/specs/">Specs</a></li>
+                  <li><a href="../../rif/rns/specs/registry/">Registry specs</a></li>
+                  <li><a href="../../rif/rns/specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../rif/rns/operations/">Operations</a></li>
+                  <li><a href="../../rif/rns/operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../rif/rns/operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../rif/rns/operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../rif/rns/operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../rif/rns/operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../rif/rns/operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../rif/rns/operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../rif/rns/operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../rif/rns/operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../rif/rns/operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../rif/rns/operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../rif/rns/operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rif/rns/architecture/">Architecture</a></li>
+                  <li><a href="../../rif/rns/architecture/registry/">Registry</a></li>
+                  <li><a href="../../rif/rns/architecture/definitive-resolver/">Resolver</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/rns/architecture/ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/rns/architecture/ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../../rif/rns/architecture/ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../rif/rns/tools/Web3/">Web3</a></li>
+                  <li><a href="../../rif/rns/tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../rif/rns/tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../rif/rns/tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/libs/">Libs</a>
+                <ul>
+                  <li><a href="../../rif/rns/libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/rns/libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../rif/rns/libs/javascript/">Javascript</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../rif/rns/libs/Android/">Android</a></li>
+                  <li><a href="../../rif/rns/libs/iOS/">iOS</a></li>
+                  <li><a href="../../rif/rns/libs/Python/">Python</a></li>
+                  <li><a href="../../rif/rns/libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rif/rns/integrate/">Integrate</a></li>
+                  <li><a href="../../rif/rns/integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../rif/rns/integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../rif/rns/integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../rif/rns/mainnet/">Mainnet</a></li>
+              <li><a href="../../rif/rns/testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rif/payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rif/lumino/">Lumino</a></li>
+                  <li><a href="../../rif/lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../rif/lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../rif/lumino/node/install/">Install</a></li>
+                          <li><a href="../../rif/lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../rif/lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../rif/lumino/node/use/">How to use</a></li>
+                      <li><a href="../../rif/lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../rif/lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../rif/lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../rif/lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../rif/lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../rif/lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../rif/lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../rif/lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rif/storage/">Storage</a>
+            <ul>
+              <li><a href="../../rif/storage/">About</a></li>
+              <li><a href="../../rif/storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../rif/storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../rif/storage/providers/swarm/">About</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../rif/storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../rif/storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../rif/storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../rif/storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../rif/storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../rif/storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../ethereum-devs/">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../ethereum-devs/geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../ethereum-devs/geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../ethereum-devs/port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../ethereum-devs/remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="../ethereum-devs/setup-truffle-oz/">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../interface-registry/">Interface Registry</a></li>
+              <li><a href="../rsk-api/">RSK API CLI</a></li>
+              <li><a href="../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../wallet/">Wallet</a></li>
+              <li><a href="../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../wallet/use/">Use</a></li>
+                  <li><a href="../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../libraries/">Libs</a></li>
+              <li><a href="../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../rif/rns/libs/">RNS</a></li>
+              <li><a href="../../rif/lumino/libraries/">Lumino</a></li>
+              <li><a href="../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../tools/truffle/">Truffle</a></li>
+                  <li class="hide-mobile"><a href="../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <ul>
+                    <li><a href="../../tools/truffle/boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  </ul>
+                  <li><a href="../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="col-lg-5">
+       <!-- <nav class="breadcrumbs bootstrap hidden-sm-down">
+	<ol class="breadcrumb list-unstyled" vocab="http://schema.org/" typeof="BreadcrumbList">
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/">
+					<span property="name"></span>
+					<meta property="position" content="1" />
+				</a>
+			</li>
+		
+			
+			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+				<a property="item" typeof="WebPage" href="/tutorials/">
+					<span property="name">Tutorials</span>
+					<meta property="position" content="2" />
+				</a>
+			</li>
+		
+			
+				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
+					<span property="name">RSK Workshop: Smart Contract Testing using Truffle</span>
+					<meta property="position" content="3" />
+				</li>
+				
+
+		
+		
+	</ol>
+</nav>
+ -->
+       <nav id="siteBreadcrumb" class="show active-parent">
+          <ol class="breadcrumb">
+         </ol>
+       </nav>
+    </div>
+    <div class="col-lg-4 input-col">
+       <div class="page-metadata">
+    <!--time role="presentation" datetime="2020-07-07 00:53:41 +0000T00:00:00.000Z">2020-07-07</time> | -->
+     25' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/workshop-smart-contract-testing-truffle.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <div class="dropdown" style="display: inline-block">
+       <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
+       <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/&amp;text=RSK%20Workshop:%20Smart%20Contract%20Testing%20using%20Truffle&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=RSK%20Workshop:%20Smart%20Contract%20Testing%20using%20Truffle&amp;body=RSK%20Workshop:%20Smart%20Contract%20Testing%20using%20Truffle%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+       </ul>
+    </div> |
+    <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
+ </div>
+    </div>
+ </div>
+
+            <div class="row">
+               <!-- left col desktop -->
+               <div class="col-lg-3 main-left-col">
+                  <div class="desktop_accordion">
+                     <div class="menu-container">
+  <div class="container p-0 mb-2">
+  <form class="form-inline" action="/search/" method="GET">
+<div class="input-group mb-3">
+  <input type="search" id="q" name="q" placeholder="Search" class="form-control form-control-sm search-input">
+  <div class="input-group-append">
+    <button class="btn btn-outline-success btn-sm my-2 my-sm-0 search-button" type="submit"><i class="fas fa-search"></i></button>
+  </div>
+</div>
+  </form>
+</div>
+
+  <br>
+  <div class="container p-0">
+    <div>
+      <a href="../../" class="index">RSK Documentation</a>
+      <div class="toggle-nav-column-visibility collapsed">
+        <span class="fa fa-chevron-right"></span>
+        <span class="text">Expand All</span>
+      </div>
+    </div>
+    <ul class="exclude-doc-from-breadcrumbs">
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../quick-start/step1-install-rsk-local-node/">Quick Start</a>
+        <ul>
+          <li><a href="../../quick-start/step1-install-rsk-local-node/">Step 1 - Install RSK Local Node</a></li>
+          <li><a href="../../quick-start/step2-install-truffle-and-ganache/">Step 2 - Install Truffle &amp; Ganache</a></li>
+          <li><a href="../../quick-start/step3-edit-smart-contract/">Step 3 - Edit Smart Contract</a></li>
+          <li><a href="../../quick-start/step4-compile-and-deploy/">Step 4 - Compile &amp; Deploy</a></li>
+          <li><a href="../../quick-start/step5-run-smart-contract/">Step 5 - Run Smart Contract</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../webinars/" target="_blank">Webinars</a>
+      </li>
+      <li class="first_level">
+        <a href="../../the-stack/">The Stack</a>
+      </li>
+      <li>
+      </li>
+<li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../rsk/">RSK Blockchain</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../rsk/">RSK Blockchain</a></li>
+          <li>
+<span class="fa fa-chevron-right"></span>
+            <a href="../../rsk/node/">Node (RSKj)</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../rsk/node/">Node (RSKj)</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/architecture/">Architecture</a></li>
+                  <li><a href="../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+                  <li><a href="https://web3js.readthedocs.io/en/v1.2.0/" target="_blank" rel="external noopener noreferrer">Web3</a></li>
+                  <li><a href="https://blog.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/" target="_blank" rel="external noopener noreferrer">Storage</a></li>
+                  <!-- <li><a>Logs</a></li> -->
+                  <!-- <li><a>Peer discovery</a></li> -->
+                </ul>
+              </li>
+              <li><a href="../../rsk/public-nodes/">Use</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/install/">Install</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/install/">Install</a></li>
+                  <li><a href="../../rsk/node/update/">Update</a></li>
+                  <li><a href="../../rsk/node/install/requirements/">Hardware requirements</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rsk/node/install/docker/">Operating Systems</a>
+                    <ul>
+                      <li><a href="../../rsk/node/install/docker/">Setup node on Docker</a></li>
+                      <li><a href="../../rsk/node/install/ubuntu/">Setup node on Ubuntu</a></li>
+                      <li><a href="../../rsk/node/install/centos/">Setup node on Centos</a></li>
+                      <li><a href="../../rsk/node/install/java/">Setup node on Java</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rsk/node/install/azure/">Cloud fast deploy</a>
+                    <ul>
+                      <li><a href="../../rsk/node/install/azure/">Setup node on Azure</a></li>
+                      <li><a href="../../rsk/node/install/aws/">Setup node on AWS</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+              <span class="fa fa-chevron-right"></span>
+              <a href="../../rsk/node/configure/">Configure</a>
+              <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/configure/">Configure</a></li>
+                  <li><a href="../../rsk/node/configure/reference/">Reference</a></li>
+                  <li><a href="../../rsk/node/configure/verbosity/">Verbosity</a></li>
+                  <li><a href="../../rsk/node/configure/switch-network/">Switch networks</a></li>
+                  <li><a href="../../rsk/node/configure/for-mining/">For mining</a></li>
+              </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/contribute/">Contribute</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/node/contribute/">Contribute</a></li>
+                  <li><a href="../../rsk/node/contribute/cli/">CLI</a></li>
+                  <li><a href="../../rsk/node/contribute/linux/">Linux</a></li>
+                  <li><a href="../../rsk/node/contribute/macos/">MacOS</a></li>
+                  <li><a href="../../rsk/node/contribute/windows/">Windows</a></li>
+                  <li><a href="../../rsk/node/reproducible/">Reproducible Build</a></li>
+                  <li><a href="../../rsk/node/security-chain/">Ensure security chain</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="../../rsk/node/troubleshooting/">Troubleshooting</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rsk/rbtc/">R-BTC Token</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../rsk/rbtc/">R-BTC Token</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/rbtc/conversion/">Conversion</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/rbtc/conversion/">Conversion</a></li>
+                  <ul>
+                    <li><a href="../../rsk/rbtc/conversion/networks/mainnet/">Mainnet</a></li>
+                    <li><a href="../../rsk/rbtc/conversion/networks/testnet/">Testnet</a></li>
+                  </ul>
+                  <li><a href="../../rsk/rbtc/conversion/whitelist/">Whitelist</a></li>
+                  <li><a href="../../rsk/rbtc/conversion/with-ledger/">With Ledger</a></li>
+                  <li><a href="../../rsk/rbtc/conversion/with-node-and-console/">With CLI</a></li>
+                </ul>
+              </li>
+              <li><a href="../../rsk/rbtc/gas/">Gas</a></li>
+              <!--li><a href="/rsk/rbtc/differences-with-ethereum">Differences with Ethereum</a></li-->
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a>Architecture</a>
+            <ul>
+              <li><a href="../../rsk/architecture/turing-complete/">Turing complete</a></li>
+              <li><a href="../../rsk/architecture/account-based/">Account based</a></li>
+              <li><a href="../../rsk/architecture/2-way-peg/">2-way peg</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/architecture/mining/">Merged mining</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rsk/architecture/mining/">Merged mining</a></li>
+                  <li><a href="../../rsk/architecture/mining/implementation-guide/">Implementation guide</a></li>
+                  <li><a href="../../rsk/architecture/mining/reference/">Reference</a></li>
+                  <li><a href="../../rsk/architecture/mining/remasc/">REMASC</a></li>
+                </ul>
+              </li>
+              <li><a href="../../rsk/architecture/security/">Security model</a></li>
+              <li><a href="../../rsk/architecture/privacy/">Transaction privacy &amp; scalability</a></li>
+              <li><a href="../../rsk/architecture/fast-payments/">Fast payments</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../rif/">RSK Infrastructure Framework</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../rif/">RSK Infrastructure Framework</a></li>
+          <li><a href="../../rif/token/">RIF Token</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rif/rns/">Name Service</a>
+            <ul>
+              <li><a href="../../rif/rns/">Name Service</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/guide/">User Guide</a>
+                <ul>
+                  <li><a href="../../rif/rns/guide/">User Guide</a></li>
+                  <li><a href="../../rif/rns/guide/intro/">Introduction</a></li>
+                  <li><a href="../../rif/rns/guide/setup/">Setup</a></li>
+                  <li><a href="../../rif/rns/guide/getting-started/">Getting Started</a></li>
+                  <li><a href="../../rif/rns/guide/operations/">Operations</a></li>
+                  <li><a href="../../rif/rns/guide/advanced/">Advanced Operations</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/specs/">Specs</a>
+                <ul>
+                  <li><a href="../../rif/rns/specs/">Specs</a></li>
+                  <li><a href="../../rif/rns/specs/registry/">Registry specs</a></li>
+                  <li><a href="../../rif/rns/specs/resolvers/">Resolvers specs</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Operations</a>
+                <ul>
+                  <li><a href="../../rif/rns/operations/">Operations</a></li>
+                  <li><a href="../../rif/rns/operations/register/">Register an .rsk domain</a></li>
+                  <li><a href="../../rif/rns/operations/resolve/">Resolve a domain's address</a></li>
+                  <li><a href="../../rif/rns/operations/set-resolver/">Change resolver</a></li>
+                  <li><a href="../../rif/rns/operations/set-addr/">Set address resolution</a></li>
+                  <li><a href="../../rif/rns/operations/set-btc-address/">Set Bitcoin address resolution</a></li>
+                  <li><a href="../../rif/rns/operations/renew/">Renew a domain</a></li>
+                  <li><a href="../../rif/rns/operations/transfer/">Transfer a domain</a></li>
+                  <li><a href="../../rif/rns/operations/register-subdomain/">Register a subdomain</a></li>
+                  <li><a href="../../rif/rns/operations/register-subdomain/">Change subdomain's owner</a></li>
+                  <li><a href="../../rif/rns/operations/set-reverse/">Expose the name of your address</a></li>
+                  <li><a href="../../rif/rns/operations/get-reverse/">Find the name of an address</a></li>
+                  <li><a href="../../rif/rns/operations/migrate-from-auction/">Migrate a domain from auction registration</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/architecture/">Architecture</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rif/rns/architecture/">Architecture</a></li>
+                  <li><a href="../../rif/rns/architecture/registry/">Registry</a></li>
+                  <li><a href="../../rif/rns/architecture/definitive-resolver/">Resolver</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a>
+                    <ul>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/">.rsk Registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/rskowner/">RSK Owner</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/registrars/fifs/">FIFS Registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/registrars/fifsaddr/">FIFS Addr Registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/renewers/renewer/">Renewer</a></li>
+                      <li><a href="../../rif/rns/architecture/rsk-registrar/other/nameprice/">Name Price</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/rns/architecture/ReverseSuite/">Reverse suite</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/rns/architecture/ReverseSuite/">Reverse suite</a></li>
+                      <li><a href="../../rif/rns/architecture/ReverseRegistrar/">Reverse registrar</a></li>
+                      <li><a href="../../rif/rns/architecture/NameResolver/">Name resolver</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Tools</a>
+                <ul>
+                  <li><a href="../../rif/rns/tools/Web3/">Web3</a></li>
+                  <li><a href="../../rif/rns/tools/MyCrypto/">MyCrypto</a></li>
+                  <li><a href="../../rif/rns/tools/RNS-Manager/">RNS Manager</a></li>
+                  <li><a href="../../rif/rns/tools/Subdomain-tool/">Subdomain tool</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/libs/">Libs</a>
+                <ul>
+                  <li><a href="../../rif/rns/libs/">Libs</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/rns/libs/javascript/">Javascript</a>
+                    <ul>
+                      <li><a href="../../rif/rns/libs/javascript/">Javascript</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Getting-started/">Getting started</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/RNS-instance/">RNS.js Instance</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Operations/">Operations</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Advanced-usage/">Advanced usage</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Errors/">Error knowledge base</a></li>
+                      <li><a href="../../rif/rns/libs/javascript/Contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="../../rif/rns/libs/Android/">Android</a></li>
+                  <li><a href="../../rif/rns/libs/iOS/">iOS</a></li>
+                  <li><a href="../../rif/rns/libs/Python/">Python</a></li>
+                  <li><a href="../../rif/rns/libs/rns-artifacts/">rns-artifacts</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/rns/integrate/">Integrate</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rif/rns/integrate/">Integrate</a></li>
+                  <li><a href="../../rif/rns/integrate/integrate-addr-resolution/">Quick start</a></li>
+                  <li><a href="../../rif/rns/integrate/integrate-dapp/">Integrate your dApp</a></li>
+                  <li><a href="../../rif/rns/integrate/integrate-wallet/">Integrate your wallet</a></li>
+                </ul>
+              </li>
+              <li><a href="../../rif/rns/mainnet/">Mainnet</a></li>
+              <li><a href="../../rif/rns/testnet/">Testnet</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rif/payments/">Payments</a>
+            <ul>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/lumino/">Lumino</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../rif/lumino/">Lumino</a></li>
+                  <li><a href="../../rif/lumino/public-repos/">Public repositories</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/node/">Node</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/lumino/node/">Node</a></li>
+                      <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../rif/lumino/node/install/">Install</a>
+                        <ul>
+                          <li class="hide-mobile"><a href="../../rif/lumino/node/install/">Install</a></li>
+                          <li><a href="../../rif/lumino/node/install/macos/">MacOS</a></li>
+                          <li><a href="../../rif/lumino/node/install/ubuntu/">Ubuntu</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="../../rif/lumino/node/use/">How to use</a></li>
+                      <li><a href="../../rif/lumino/node/contribute/">Contribute</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/light-client/">Light Client</a>
+                    <ul>
+                      <li><a href="../../rif/lumino/light-client/specs/">Specification</a></li>
+                      <li><a href="../../rif/lumino/light-client/use/">How to use</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/libraries/">Libraries</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/lumino/libraries/">Libraries</a></li>
+                      <li><a href="../../rif/lumino/libraries/lumino-js/">Lumino JS SDK</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/lumino/explorer/">Explorer</a>
+                    <ul>
+                      <li class="hide-mobile"><a href="../../rif/lumino/explorer/">Explorer</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../rif/lumino/explorer/own/">Run your own explorer</a>
+                        <ul>
+                          <li class="hide-mobile">
+<a href="../../rif/lumino/explorer/own/">Run your own explorer</a> </li>
+                          <li><a href="../../rif/lumino/explorer/own/api/">Lumino Explorer API</a></li>
+                          <li><a href="../../rif/lumino/explorer/own/web/">Lumino Explorer WEB</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!--<li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="/rif/communication/">Communication</a>
+            <ul>
+            <li><a href="/rif/communication/">About</a></li>
+            <li><a href="/rif/communication/architecture/">Architecture</a></li>
+            </ul>
+          </li>-->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../rif/storage/">Storage</a>
+            <ul>
+              <li><a href="../../rif/storage/">About</a></li>
+              <li><a href="../../rif/storage/architecture/">Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/storage/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../rif/storage/libraries/javascript/">RIF Storage JS</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rif/storage/providers/">Providers</a>
+                <ul>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/storage/providers/swarm/">Swarm</a>
+                    <ul>
+                      <li><a href="../../rif/storage/providers/swarm/">About</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/incentives/">Incentivization</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/install/">Install</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/run/">Run</a></li>
+                      <li><a href="../../rif/storage/providers/swarm/configure/">Configure</a></li>
+                      <li>
+                        <span class="fa fa-chevron-right"></span>
+                        <a href="../../rif/storage/providers/swarm/guides/">Guides</a>
+                        <ul>
+                          <li><a href="../../rif/storage/providers/swarm/guides/local-network/">Local Network</a></li>
+                          <li><a href="../../rif/storage/providers/swarm/guides/local-network-incentives/">Local Network with Incentives</a></li>
+                          <li><a href="../../rif/storage/providers/swarm/testnet-network/">Connecting to testnet</a></li>
+                          <li><a href="../../rif/storage/providers/swarm/guides/debugging/">Debugging</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../../rif/storage/providers/ipfs/">IPFS</a>
+                    <ul>
+                      <li><a href="../../rif/storage/providers/ipfs/">About</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../develop/">Develop</a>
+        <ul>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../">Tutorials</a>
+            <ul>
+              <li class="hide-mobile"><a href="../">Tutorials</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../ethereum-devs/">For Ethereum developers</a>
+                <ul>
+                  <li><a href="../ethereum-devs/geth-attach-local-node/">Geth attach to RSK local node</a></li>
+                  <li><a href="../ethereum-devs/geth-attach-deploy-smart-contract/">Deploy a smart contract using Remix and Geth</a></li>
+                  <li><a href="../ethereum-devs/port-ethereum-dapps/">Port Ethereum dApps</a></li>
+                  <li><a href="../ethereum-devs/remix-and-metamask-with-rsk-testnet/">Remix and Metamask with RSK testnet</a></li>
+                  <li><a href="../ethereum-devs/setup-truffle-oz/">Setup a project with Truffle and OpenZeppelin</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../frontend/">Frontend</a>
+                <ul>
+                  <li><a href="../frontend/first-frontend-web3-injected/">Create your first frontend</a></li>
+                  <li><a href="../frontend/frontend-web3-local/">Frontend with web3 in a local node</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../tokens/">Tokens</a>
+                <ul>
+                  <li><a href="../tokens/create-a-token/">Create your first token</a></li>
+                  <li><a href="../tokens/create-a-token-02/">Create other ERC20 token</a></li>
+                  <li><a href="../tokens/create-a-collectable-token/">Create your own collectable token</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../truffle-boxes/">Truffle Boxes</a>
+                <ul>
+                  <li><a href="../truffle-boxes/pet-shop-box/">Using Truffle Boxes with RSK</a></li>
+                  <li><a href="../truffle-boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  <li><a href="../truffle-boxes/rsk-react-box/">rsk-react-box</a></li>
+                  <li><a href="../truffle-boxes/rsk-next-box/">rsk-next-box</a></li>
+                  <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
+                </ul>
+              </li>
+              <li>
+<a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
+              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
+              <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
+              <li><a href="../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../interface-registry/">Interface Registry</a></li>
+              <li><a href="../rsk-api/">RSK API CLI</a></li>
+              <li><a href="../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
+              <li><a href="../using-blockmason/">Using Blockmason</a></li>
+              <li><a href="../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+            </ul>
+          </li>
+          <li><a href="../../develop/apps/integrate/">Integrate</a></li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../wallet/">Wallet</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../wallet/">Wallet</a></li>
+              <li><a href="../../wallet/rwallet/">Create</a></li>
+              <li><a href="../../wallet/integrate/">Integrate</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../wallet/use/">Use</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../wallet/use/">Use</a></li>
+                  <li><a href="../../wallet/use/ledger/">Ledger</a></li>
+                  <li><a href="../../wallet/use/nifty/">Nifty</a></li>
+                  <li><a href="../../wallet/use/jaxx/">Jaxx</a></li>
+                  <li><a href="../../wallet/use/mycrypto/">MyCrypto</a></li>
+                  <li><a href="../../wallet/use/metamask/">MetaMask</a></li>
+                  <li><a href="../../wallet/use/json-rpc/">JSON-RPC</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../libraries/">Libs</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../libraries/">Libs</a></li>
+              <li><a href="../../rsk/node/architecture/json-rpc/">JSON-RPC</a></li>
+              <li><a href="https://web3js.readthedocs.io/" target="_blank" rel="external noopener noreferrer">Web3 Spec</a></li>
+              <!--li><a href="/develop/json-rpc-mining/">JSON-RPC Mining API</a></li-->
+              <li><a href="../../libraries/rsk3js/">rsk3.js</a></li>
+              <li><a href="../../rif/rns/libs/">RNS</a></li>
+              <li><a href="../../rif/lumino/libraries/">Lumino</a></li>
+              <li><a href="../../libraries/rsk-precompiled-abis/">Pre-compiled ABIs</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../tools/">Tools</a>
+            <ul>
+              <li class="hide-mobile"><a href="../../tools/">Tools</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Stats</a>
+                <ul>
+                  <li><a href="https://stats.rsk.co/" target="_blank" rel="external noopener noreferrer">Mainnet</a></li>
+                  <li><a href="https://stats.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Testnet</a></li>
+                </ul>
+              </li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a>Explorer</a>
+                <ul>
+                  <li><a href="https://explorer.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Mainnet</a></li>
+                  <li><a href="https://explorer.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">RSK Testnet</a></li>
+                  <li><a href="https://blockscout.com/rsk/mainnet/" target="_blank" rel="external noopener noreferrer">Blockscout Mainnet</a></li>
+                </ul>
+              </li>
+              <li><a href="https://faucet.testnet.rsk.co/" target="_blank" rel="external noopener noreferrer">Faucet</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../tools/truffle/">Truffle</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../tools/truffle/">Truffle</a></li>
+                  <li class="hide-mobile"><a href="../../tools/truffle/boxes/">Truffle Boxes</a></li>
+                  <ul>
+                    <li><a href="../../tools/truffle/boxes/rsk-starter-box/">rsk-starter-box</a></li>
+                  </ul>
+                  <li><a href="../../tools/truffle/ganache/">Ganache</a></li>
+                </ul>
+              </li>
+              <li><a href="http://rskgasstation.info/" target="_blank" rel="external noopener noreferrer">Gas Station</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../tools/tokenbridge/">Token Bridge</a>
+                <ul>
+                  <li class="hide-mobile"><a href="../../tools/tokenbridge/">Token Bridge</a></li>
+                  <li><a href="../../tools/tokenbridge/dappguide/">Dapp Guide</a></li>
+                  <li><a href="../../tools/tokenbridge/usingmycrypto/"> Interaction guide using MyCrypto</a></li>
+                  <li><a href="../../tools/tokenbridge/faq/">Token Bridge FAQ</a></li>
+                  <li><a href="../../tools/tokenbridge/contractaddresses/">Addresses and Links</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="https://gitter.im/rsksmart/" target="_blank" rel="external noopener noreferrer">Engage</a>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="https://www.rsk.co/development-roadmap" rel="external noopener noreferrer" target="_blank">Roadmap</a>
+        <ul>
+          <li class="hide-mobile"><a href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a></li>
+          <li><a href="../../roadmap/improvement-proposals/">Improvement Proposals</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <span class="fa fa-chevron-right"></span>
+        <a href="../../contribute/">Contribute</a>
+        <ul>
+          <li class="hide-mobile"><a href="../../contribute/">Contribute</a></li>
+          <li><a href="../../contribute/bug-bounty-program/">Bug bounty program</a></li>
+        </ul>
+      </li>
+      <li class="first_level">
+        <a href="../../grants/" target="_blank">Grants</a>
+      </li>
+      <li class="first_level">
+        <a href="../../defi/" target="_blank">DeFi for Bitcoin</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+                  </div>
+               </div>
+               <!-- central col -->
+               <div class="col-lg-9 main-central-col">
+                  <div class="alert alert-info" role="alert">
+    <a href="../../webinars?utm_source=devportal&amp;utm_medium=infobar&amp;utm_campaign=webinars/" style="color: black!important;text-decoration: underline;">
+        Join our Webinars! Now you can watch and learn more about Blockchain!
+    </a>
+</div>
+
+                  <h1 class="page-title" id="top">RSK Workshop: Smart Contract Testing using Truffle</h1>
+
+                  <h2 id="pre-requisites">Pre-requisites</h2>
+
+<p>Prior to commencing this tutorial,
+please ensure that you have installed the following
+RSK workshop pre-requisites on your system:</p>
+
+<ul>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell" rel="external noopener noreferrer" target="_blank">POSIX compliant shell</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs" rel="external noopener noreferrer" target="_blank">NodeJs</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#truffle" rel="external noopener noreferrer" target="_blank">Truffle</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#java" rel="external noopener noreferrer" target="_blank">Java</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#curl" rel="external noopener noreferrer" target="_blank">curl</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#code-editor" rel="external noopener noreferrer" target="_blank">Code editor</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj" rel="external noopener noreferrer" target="_blank">RSKj</a></li>
+</ul>
+
+<h2 id="project-setup">Project setup</h2>
+
+<p>Use <code class="highlighter-rouge">git</code> to make a copy of this repo,
+and use <code class="highlighter-rouge">npm</code> to install dependencies.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:bguiz/workshop-rsk-smart-contract-testing-truffle.git
+<span class="nb">cd </span>workshop-rsk-smart-contract-testing-truffle
+npm <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Then open up this directory in your code editor.</p>
+
+<h2 id="explore-the-files">Explore the files</h2>
+
+<p>If you happen to have <code class="highlighter-rouge">tree</code> installed,
+you can use that to view the directory structure using the following command.</p>
+
+<p>TODO replace below output</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>tree <span class="nt">-I</span> <span class="s1">'node_modules|*.md|*.json'</span>
+<span class="nb">.</span>
+├── contracts
+│   └── Migrations.sol
+├── migrations
+│   └── 1_initial_migration.js
+├── scripts
+│   ├── clean.sh
+│   └── setup.sh
+├── <span class="nb">test</span>
+└── truffle-config.js
+
+4 directories, 5 files
+
+</code></pre></div></div>
+
+<p>(Otherwise use your choice of GUI to explore this folder.)</p>
+
+<p>Observe that we have the following files:</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">truffle-config.js</code>:
+Truffle has already been pre-configured to connect to your choice of
+RSK Regtest, RSK Testnet, or RSK Mainnet.</li>
+  <li>
+<code class="highlighter-rouge">contracts/Migrations.sol</code> and <code class="highlighter-rouge">migrations/1_initial_migration.js</code>:
+These are auto-generated by Truffle projects,
+and has to do with deployments, and we do not need to care about them.</li>
+  <li>
+<code class="highlighter-rouge">contracts/Cars.sol</code> and <code class="highlighter-rouge">migrations/2_cars_migration.js</code>:
+These are a smart contract and its corresponding deployment script.
+The solidity file is the implementation, and has been completed for you.</li>
+  <li>
+<code class="highlighter-rouge">test/Cars.spec.js</code>
+This is the specification, and is only partially complete.
+This workshop is focused on completing the specification.</li>
+</ul>
+
+<h2 id="implementation">Implementation</h2>
+
+<p>Look at <code class="highlighter-rouge">contracts/Cars.sol</code>.</p>
+
+<p>We have an smart contract implementation
+that involves manipulating several car objects.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">^</span><span class="mf">0.5</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">Cars</span> <span class="p">{</span>
+
+    <span class="kr">enum</span> <span class="nx">CarStatus</span> <span class="p">{</span> <span class="nx">driving</span><span class="p">,</span> <span class="nx">parked</span> <span class="p">}</span>
+
+    <span class="nx">event</span> <span class="nx">CarHonk</span> <span class="p">(</span><span class="nx">uint256</span> <span class="nx">indexed</span> <span class="nx">fromCar</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">indexed</span> <span class="nx">atCar</span><span class="p">);</span>
+
+    <span class="nx">struct</span> <span class="nx">Car</span> <span class="p">{</span>
+        <span class="nx">bytes3</span> <span class="nx">colour</span><span class="p">;</span>
+        <span class="nx">uint8</span> <span class="nx">doors</span><span class="p">;</span>
+        <span class="nx">uint256</span> <span class="nx">distance</span><span class="p">;</span>
+        <span class="nx">uint16</span> <span class="nx">lat</span><span class="p">;</span>
+        <span class="nx">uint16</span> <span class="nx">lon</span><span class="p">;</span>
+        <span class="nx">CarStatus</span> <span class="nx">status</span><span class="p">;</span>
+        <span class="nx">address</span> <span class="nx">owner</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">uint256</span> <span class="kr">public</span> <span class="nx">numCars</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nx">mapping</span><span class="p">(</span><span class="nx">uint256</span> <span class="o">=&gt;</span> <span class="nx">Car</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">cars</span><span class="p">;</span>
+
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{}</span>
+
+    <span class="kd">function</span> <span class="nx">addCar</span><span class="p">(</span>
+        <span class="nx">bytes3</span> <span class="nx">colour</span><span class="p">,</span>
+        <span class="nx">uint8</span> <span class="nx">doors</span><span class="p">,</span>
+        <span class="nx">uint256</span> <span class="nx">distance</span><span class="p">,</span>
+        <span class="nx">uint16</span> <span class="nx">lat</span><span class="p">,</span>
+        <span class="nx">uint16</span> <span class="nx">lon</span>
+    <span class="p">)</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="nx">returns</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">value</span> <span class="o">&gt;</span> <span class="mf">0.1</span> <span class="nx">ether</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">You need at least 0.1 ETH to get a car</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">carId</span> <span class="o">=</span> <span class="o">++</span><span class="nx">numCars</span><span class="p">;</span>
+        <span class="nx">Car</span> <span class="nx">memory</span> <span class="nx">newCar</span> <span class="o">=</span> <span class="nx">Car</span><span class="p">(</span>
+            <span class="nx">colour</span><span class="p">,</span>
+            <span class="nx">doors</span><span class="p">,</span>
+            <span class="nx">distance</span><span class="p">,</span>
+            <span class="nx">lat</span><span class="p">,</span>
+            <span class="nx">lon</span><span class="p">,</span>
+            <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">parked</span><span class="p">,</span>
+            <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span>
+        <span class="p">);</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">]</span> <span class="o">=</span> <span class="nx">newCar</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">modifier</span> <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">owner</span> <span class="o">==</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">you need to own this car</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">_</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">modifier</span> <span class="nx">onlyCarStatus</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">,</span> <span class="nx">CarStatus</span> <span class="nx">expectedStatus</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">status</span> <span class="o">==</span> <span class="nx">expectedStatus</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">car is not in the required status</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">_</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">driveCar</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">)</span>
+        <span class="kr">public</span>
+        <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">carId</span><span class="p">)</span>
+        <span class="nx">onlyCarStatus</span><span class="p">(</span><span class="nx">carId</span><span class="p">,</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">parked</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">status</span> <span class="o">=</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">driving</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">parkCar</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">,</span> <span class="nx">uint16</span> <span class="nx">lat</span><span class="p">,</span> <span class="nx">uint16</span> <span class="nx">lon</span><span class="p">)</span>
+        <span class="kr">public</span>
+        <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">carId</span><span class="p">)</span>
+        <span class="nx">onlyCarStatus</span><span class="p">(</span><span class="nx">carId</span><span class="p">,</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">driving</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">status</span> <span class="o">=</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">parked</span><span class="p">;</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">lat</span> <span class="o">=</span> <span class="nx">lat</span><span class="p">;</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">lon</span> <span class="o">=</span> <span class="nx">lon</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">honkCar</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">otherCarId</span><span class="p">)</span>
+        <span class="kr">public</span>
+        <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">carId</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">cars</span><span class="p">[</span><span class="nx">otherCarId</span><span class="p">].</span><span class="nx">owner</span> <span class="o">!=</span> <span class="nx">address</span><span class="p">(</span><span class="mh">0x00</span><span class="p">),</span>
+          <span class="dl">"</span><span class="s2">other car must exist</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">uint256</span> <span class="nx">timeOfDay</span> <span class="o">=</span> <span class="p">(</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">%</span> <span class="mi">86400</span><span class="p">);</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">timeOfDay</span> <span class="o">&gt;=</span> <span class="mi">21600</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">cannot honk between midnight and 6am</span><span class="dl">"</span>
+        <span class="p">);</span>
+        <span class="nx">emit</span> <span class="nx">CarHonk</span><span class="p">(</span><span class="nx">carId</span><span class="p">,</span> <span class="nx">otherCarId</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">getTime</span><span class="p">()</span> <span class="nx">internal</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// current block timestamp as seconds since unix epoch</span>
+        <span class="c1">// ref: https://solidity.readthedocs.io/en/v0.5.7/units-and-global-variables.html#block-and-transaction-properties</span>
+        <span class="k">return</span> <span class="nx">block</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>We are not really concerned about how to write this implementation
+for this workshop, but we do need to know what the implementation does
+in order to be able to write tests for it.</p>
+
+<h2 id="specification-incomplete">Specification, incomplete</h2>
+
+<p>Look at <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>Here, we have an incomplete specification.
+We obtain the <code class="highlighter-rouge">Cars</code> smart contract
+defined in our implementation earlier,
+using <code class="highlighter-rouge">artifacts.require()</code>.
+This is Truffle’s analogue of using NodeJs <code class="highlighter-rouge">require()</code>
+to obtain the implementation when testing Javascript using Mocha.</p>
+
+<p>We also make use of <code class="highlighter-rouge">contract</code> blocks to group
+the tests that will form our specification.
+This Truffle’s analogue of using Mocha <code class="highlighter-rouge">describe</code> blocks
+to group the tests when testing a Javascript implementation.
+Note also that the callback function within the <code class="highlighter-rouge">describe</code> block
+does not have any parameters,
+whereas the callback function within the <code class="highlighter-rouge">contract</code> block
+has one parameter for <code class="highlighter-rouge">accounts</code>.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">Cars</span> <span class="o">=</span> <span class="nx">artifacts</span><span class="p">.</span><span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">BN</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">BN</span><span class="p">;</span>
+
+<span class="nx">contract</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars - initial state</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">accounts</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+  <span class="c1">// tests go here</span>
+
+<span class="p">});</span>
+
+<span class="nx">contract</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars - state transitions</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">accounts</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+  <span class="c1">// tests go here</span>
+
+<span class="p">});</span>
+
+<span class="nx">contract</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars - events</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">accounts</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+
+  <span class="nx">before</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// set up contract with relevant initial state</span>
+    <span class="kd">const</span> <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="nx">deployed</span><span class="p">();</span>
+
+    <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">addCar</span><span class="p">(</span>
+      <span class="dl">'</span><span class="s1">0xff00ff</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// colour: purple</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="c1">// doors: 4</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// distance: 0</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lat: 0</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lon: 0</span>
+      <span class="p">{</span>
+        <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+        <span class="na">value</span><span class="p">:</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="dl">'</span><span class="s1">0.11</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">),</span>
+      <span class="p">},</span>
+    <span class="p">);</span>
+
+    <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">addCar</span><span class="p">(</span>
+      <span class="dl">'</span><span class="s1">0xffff00</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// colour: yellow</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="c1">// doors: 2</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// distance: 0</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lat: 0</span>
+      <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lon: 0</span>
+      <span class="p">{</span>
+        <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+        <span class="na">value</span><span class="p">:</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="dl">'</span><span class="s1">0.11</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">),</span>
+      <span class="p">},</span>
+    <span class="p">);</span>
+
+    <span class="c1">// just a sanity check, we do not really need to do assertions</span>
+    <span class="c1">// within the set up, as this should be for "known working state"</span>
+    <span class="c1">// only</span>
+    <span class="kd">const</span> <span class="nx">numCars</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">call</span><span class="p">();</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+
+  <span class="c1">// tests go here</span>
+
+  <span class="c1">// tests go here</span>
+
+<span class="p">});</span>
+
+</code></pre></div></div>
+
+<p>Note that we have four occurrences of <code class="highlighter-rouge">// tests go here</code> in the test code,
+and in this workshop we will be creating those tests.</p>
+
+<p>Also note that within the <code class="highlighter-rouge">contract</code> block for <code class="highlighter-rouge">'Cars - events'</code>,
+we have a <code class="highlighter-rouge">before</code> block.
+This is use to set up the state of the contract by adding a couple of
+car objects,
+because these particular tests only make sense if there
+already are car objects stored within the smart contract.
+This has already been done for you,
+so that you may focus on writing the tests.</p>
+
+<h2 id="initial-test-run">Initial test run</h2>
+
+<p>At this point, we are all set to let Truffle Test, our test runner,
+do its thing, which will execute out specification,
+which in turn will execute our implementation.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see output similar to the following:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-truffle@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-truffle
+<span class="o">&gt;</span> truffle <span class="nb">test</span> <span class="nt">--network</span> regtest
+
+Using network <span class="s1">'regtest'</span><span class="nb">.</span>
+
+
+Compiling your contracts...
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Compiling ./contracts/Cars.sol
+<span class="o">&gt;</span> Compiling ./contracts/Migrations.sol
+<span class="o">&gt;</span> Artifacts written to /tmp/test-202063-6246-1ufrdfb.65mp
+<span class="o">&gt;</span> Compiled successfully using:
+   - solc: 0.5.7+commit.6da8b019.Emscripten.clang
+
+
+
+  0 passing <span class="o">(</span>0ms<span class="o">)</span>
+
+</code></pre></div></div>
+
+<p>Great! Our test runner (Truffle Test) has run successfully! 🎉 🎉 🎉</p>
+
+<p>Our test runner has done the above,
+listening for which tests have passed or failed,
+and if there were any errors thrown.
+However, note that since we have <strong>zero</strong> tests in our specification,
+the implementation has not been executed at all.</p>
+
+<p>That means that it is time to write our first test!</p>
+
+<h2 id="writing-a-test-for-initial-state">Writing a test for initial state</h2>
+
+<p>Edit <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>Replace the line that says <code class="highlighter-rouge">// tests go here</code> with the following code.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Initialised with zero cars</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="nx">deployed</span><span class="p">();</span>
+
+    <span class="kd">const</span> <span class="nx">initialNumCars</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">call</span><span class="p">();</span>
+
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">initialNumCars</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>We make use of an <code class="highlighter-rouge">it</code> block to define a test,
+and this is exactly the same as in Mocha.</p>
+
+<p>This test is grouped within a <code class="highlighter-rouge">contract</code> block.
+When there are multiple tests within the same <code class="highlighter-rouge">contract</code> block,
+the state of the smart contract
+is not reset between one test and the next.
+However, when there are mutliple tests in different <code class="highlighter-rouge">contract</code> blocks,
+the state of the smart contract
+is indeed reset between one <code class="highlighter-rouge">contract</code> block and the next.</p>
+
+<p>The line <code class="highlighter-rouge">const instance = await Cars.deployed();</code>
+retrieves an instance of the smart contract.
+All <code class="highlighter-rouge">it</code> blocks within the same <code class="highlighter-rouge">contract</code>
+block will retrieve the same instance of the smart contract.
+In this case, this is the first (and only) <code class="highlighter-rouge">it</code> block within this <code class="highlighter-rouge">contract</code> block,
+so it is perfect for testing the initial state of the smart contract.</p>
+
+<p>The line <code class="highlighter-rouge">const initialNumCars = await instance.numCars.call();</code>
+retrieves the value of the <code class="highlighter-rouge">numCars</code> variable in the smart contract.</p>
+
+<p>The line <code class="highlighter-rouge">assert.equal(initialNumCars.toString(), '0');</code>
+passes the test if this value is zero,
+and fails the test if this value is anything other than zero.</p>
+
+<h2 id="test-run-for-initial-state">Test run for initial state</h2>
+
+<p>Now we are going to let Truffle Test, our test runner,
+do its thing again.</p>
+
+<p>This time we have a test defined in our specification,
+so when mocha executes our specification,
+it will indeed execute out implementation in turn.</p>
+
+<p>(Previously, when we had zero tests,
+the implementation was not executed at all.)</p>
+
+<p>Run Truffle Test.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see output similar to the following</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-truffle@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-truffle
+<span class="o">&gt;</span> truffle <span class="nb">test</span> <span class="nt">--network</span> regtest
+
+Using network <span class="s1">'regtest'</span><span class="nb">.</span>
+
+
+Compiling your contracts...
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Compiling ./contracts/Cars.sol
+<span class="o">&gt;</span> Compiling ./contracts/Migrations.sol
+<span class="o">&gt;</span> Artifacts written to /tmp/test-202063-7324-1jdymdo.awa9
+<span class="o">&gt;</span> Compiled successfully using:
+   - solc: 0.5.7+commit.6da8b019.Emscripten.clang
+
+
+
+  Contract: Cars - initial state
+    ✓ Initialised with zero cars
+
+
+  1 passing <span class="o">(</span>50ms<span class="o">)</span>
+
+</code></pre></div></div>
+
+<p>Great! 🎉 🎉 🎉</p>
+
+<p>Truffle Test, our test runner has worked as promised,
+listening for which tests have passed or failed,
+and if there were any errors thrown.
+This time we have verification not only that
+our implementation has been executed,
+but also that it is correct
+(at least according to how we have written our tests).</p>
+
+<p>Testing the initial state of a smart contract is the simplest possible
+type of test we can write.
+Now let’s move on to <strong>more complex tests</strong> for state transitions and events.</p>
+
+<h2 id="writing-a-test-for-state-transition">Writing a test for state transition</h2>
+
+<p>Edit <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>Replace the line that says <code class="highlighter-rouge">// tests go here</code> with the following code.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Adds a new car</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="nx">deployed</span><span class="p">();</span>
+
+    <span class="c1">// preview the return value without modifying the state</span>
+    <span class="kd">const</span> <span class="nx">returnValue</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">addCar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span>
+        <span class="dl">'</span><span class="s1">0xff00ff</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// colour: purple</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="c1">// doors: 4</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// distance: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lat: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lon: 0</span>
+        <span class="p">{</span>
+          <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+          <span class="na">value</span><span class="p">:</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="dl">'</span><span class="s1">0.11</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">),</span>
+        <span class="p">},</span>
+      <span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">returnValue</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span>
+
+    <span class="c1">// perform the state transition</span>
+    <span class="kd">const</span> <span class="nx">tx</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">addCar</span><span class="p">(</span>
+        <span class="dl">'</span><span class="s1">0xff00ff</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// colour: purple</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="c1">// doors: 4</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// distance: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lat: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lon: 0</span>
+        <span class="p">{</span>
+          <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+          <span class="na">value</span><span class="p">:</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="dl">'</span><span class="s1">0.11</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">),</span>
+        <span class="p">},</span>
+      <span class="p">);</span>
+
+    <span class="c1">// retrieve the updated state</span>
+    <span class="kd">const</span> <span class="nx">numCars</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">call</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">car1</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">cars</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+
+    <span class="c1">// perform the assertions</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span>
+
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">colour</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0xff00ff</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">doors</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">distance</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">lat</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">lon</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">status</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// parked</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">owner</span><span class="p">,</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>The line <code class="highlighter-rouge">const returnValue = await instance.addCar.call(/* ... */);</code>
+retrieves the return value of the <code class="highlighter-rouge">addCar</code> function.
+Some participants in this workshop may have noticed something
+that is perhaps a little strange:</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">addCar</code> is a function that causes a state transition,
+as it updates the values stored in the smart contract.
+In fact it has neither the <code class="highlighter-rouge">view</code> nor <code class="highlighter-rouge">pure</code> function modifiers.</li>
+  <li>In our smart contract invocation, we are executing <code class="highlighter-rouge">.addCar.call()</code>
+and not <code class="highlighter-rouge">.addCar()</code>.</li>
+</ul>
+
+<p>Usually we use <code class="highlighter-rouge">.call()</code> when invoking <code class="highlighter-rouge">view</code> or <code class="highlighter-rouge">pure</code> functions,
+so why are we using <code class="highlighter-rouge">.call()</code> here on a function which
+explicitly causes a state transition?
+The answer is that we are doing so to “emulate” what the return value
+of this particular call to the smart contract would be, <strong>without</strong>
+actually causing the state transition.
+Think of this as “previewing” the function invocation.
+The reason we need to do this is because if it were a true function invocation
+that resulted in a state transition on the smart contract,
+we don’t have access to the return value.</p>
+
+<p>The line <code class="highlighter-rouge">assert.equal(returnValue.toString(), '1');</code> is the first assertion,
+and will fail this test if the new <code class="highlighter-rouge">carId</code> is any value other than one.</p>
+
+<p>The line <code class="highlighter-rouge">const tx = await instance.addCar(/* ... */);</code>
+is where the actual state transition occurs.
+This is a “true” invocation of the <code class="highlighter-rouge">addCar</code> function,
+unlike the previous “preview” invocation of the <code class="highlighter-rouge">addCar</code> function.
+When this line is has been executed, a transaction has been added to a block,
+and that block to the blockchain.
+This test, and any other test that involves a smart contract state transition,
+will be significantly slower than tests that do not,
+such as the one that we wrote earlier for the initial state.</p>
+
+<p>The lines <code class="highlighter-rouge">const numCars = await instance.numCars.call();</code>
+and <code class="highlighter-rouge">const car1 = await instance.cars.call(new BN(1));</code>
+retrieve the new/ updated state from the smart contract.</p>
+
+<p>The remaining lines are many <code class="highlighter-rouge">assert.equal()</code> statements,
+which will fail this test is the new/ updated state does not match the expected values.</p>
+
+<h2 id="test-run-for-state-transition">Test run for state transition</h2>
+
+<p>Now we are going to run our tests again.</p>
+
+<p>This time we have two tests.</p>
+
+<p>Run Truffle Test.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see output similar to the following</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-truffle@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-truffle
+<span class="o">&gt;</span> truffle <span class="nb">test</span> <span class="nt">--network</span> regtest
+
+Using network <span class="s1">'regtest'</span><span class="nb">.</span>
+
+
+Compiling your contracts...
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Compiling ./contracts/Cars.sol
+<span class="o">&gt;</span> Compiling ./contracts/Migrations.sol
+<span class="o">&gt;</span> Artifacts written to /tmp/test-202063-7542-wd3utt.fq66s
+<span class="o">&gt;</span> Compiled successfully using:
+   - solc: 0.5.7+commit.6da8b019.Emscripten.clang
+
+
+
+  Contract: Cars - initial state
+    ✓ Initialised with zero cars
+
+  Contract: Cars - state transitions
+    ✓ Adds a new car <span class="o">(</span>3042ms<span class="o">)</span>
+
+
+  2 passing <span class="o">(</span>3s<span class="o">)</span>
+
+</code></pre></div></div>
+
+<p>Both are passing. Great! 🎉 🎉 🎉</p>
+
+<h2 id="writing-a-test-for-events">Writing a test for events</h2>
+
+<p>Edit <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>As mentioned previously, this <code class="highlighter-rouge">contract</code> block contains
+a <code class="highlighter-rouge">before</code> block which sets up the smart contract instance
+to contain two cars prior to running any tests.
+This has been done for you, so you may skim over it,
+and get right to writing some tests.</p>
+
+<p>Replace the first line that says <code class="highlighter-rouge">// tests go here</code> with the following code.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Honks a car at another car</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="nx">deployed</span><span class="p">();</span>
+
+    <span class="c1">// perform the state transition</span>
+    <span class="kd">const</span> <span class="nx">tx</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">honkCar</span><span class="p">(</span>
+        <span class="mi">2</span><span class="p">,</span>
+        <span class="mi">1</span><span class="p">,</span>
+        <span class="p">{</span>
+          <span class="c1">// account #2 owns car #2</span>
+          <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+        <span class="p">},</span>
+      <span class="p">);</span>
+
+      <span class="c1">// inspect the transaction &amp; perform assertions on the logs</span>
+      <span class="kd">const</span> <span class="p">{</span> <span class="nx">logs</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">tx</span><span class="p">;</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">logs</span><span class="p">));</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">logs</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+      <span class="kd">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="nx">logs</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="dl">'</span><span class="s1">CarHonk</span><span class="dl">'</span><span class="p">);</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="nx">fromCar</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">);</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="nx">atCar</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>In our previous test, where we invoked <code class="highlighter-rouge">addCar</code>,
+we did not use the return value (<code class="highlighter-rouge">tx</code>)
+in the remainder of the test.
+In this test, we will.</p>
+
+<p>The line <code class="highlighter-rouge">const tx = await instance.honkCar(/* ... */);</code>
+invokes the <code class="highlighter-rouge">honkCar</code> function,
+and saves the transaction in <code class="highlighter-rouge">tx</code>.</p>
+
+<p>The next three lines, beginning with <code class="highlighter-rouge">const { logs } = tx;</code>,
+extract <code class="highlighter-rouge">tx.logs</code>.
+The assertion statements will fail this test if
+there is no <code class="highlighter-rouge">tx.logs</code> array,
+or if it has a number of logs that is anything other than one.</p>
+
+<blockquote>
+  <p>Note that in RSK, transaction logs are generated when
+an event is emitted within that transaction.
+This is equivalent to the behaviour of transaction logs in Ethereum.</p>
+</blockquote>
+
+<p>The next four lines, beginning with <code class="highlighter-rouge">const log = logs[0];</code>,
+extract the first (and only) event from this transaction.
+The assertion statements will fail this test is the
+event is not of the expected type or contain unexpected parameters.</p>
+
+<p>So far, in each <code class="highlighter-rouge">contract</code> block we have had only one test,
+but this time we’ll be doing something different,
+with two tests sharing the same <code class="highlighter-rouge">contract</code> block.</p>
+
+<p>Replace the second line that says <code class="highlighter-rouge">// tests go here</code> with the following code.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Honking a car that you do not own is not allowed</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="nx">deployed</span><span class="p">();</span>
+    <span class="c1">// perform the state transition</span>
+    <span class="kd">let</span> <span class="nx">tx</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">err</span><span class="p">;</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nx">tx</span> <span class="o">=</span>
+        <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">honkCar</span><span class="p">(</span>
+          <span class="mi">2</span><span class="p">,</span>
+          <span class="mi">1</span><span class="p">,</span>
+          <span class="p">{</span>
+            <span class="c1">// account #3 does not own any cars, only account #1 and #2 do</span>
+            <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+          <span class="p">},</span>
+        <span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">ex</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">err</span> <span class="o">=</span> <span class="nx">ex</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// should not get a result, but an error should have been thrown</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="o">!</span><span class="nx">tx</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>The line <code class="highlighter-rouge">const tx = await instance.honkCar(/* ... */);</code>
+is similar to the <code class="highlighter-rouge">honkCar</code> invocation from before.
+However, if you take a look at the parameters,
+you will notice that we attempt to operate a car
+using an account that does not own it.</p>
+
+<p>Also, unlike the invocation in the previous test,
+this statement has been surrounded by a <code class="highlighter-rouge">try ... catch</code> block,
+because we are expecting this invocation to throw an error.</p>
+
+<blockquote>
+  <p>Note that in the implementation, <code class="highlighter-rouge">contracts/Cars.sol</code>,
+the <code class="highlighter-rouge">honkCar(carId,otherCarId)</code> function has a function modifier
+for <code class="highlighter-rouge">onlyCarOwner(carId)</code>, which contains this statement:
+<code class="highlighter-rouge">require(cars[carId].owner == msg.sender, "you need to own this car");</code>.
+The purpose of this is that only a car’s owner is allowed to honk it.</p>
+</blockquote>
+
+<p>Thus far, all of our tests have been “happy path” cases,
+where the smart contract functions are always called in the expected way.
+These tests ensure that the smart contract behaves as it is supposed to,
+when those interacting with it do the “right thing”.</p>
+
+<p>However, external behaviour is not something that is
+within the locus of our control,
+and therefore by definition we need to ensure that our smart contract
+is able to handle these “failure path” cases too.
+In this case our implementation appears to have handled it,
+and we are writing a test within the specification to verify the handling.</p>
+
+<p>The final two lines, <code class="highlighter-rouge">assert.ok(err);</code> and <code class="highlighter-rouge">assert.ok(!tx);</code>,
+will fail this test if the <code class="highlighter-rouge">honkCar</code> invocation succeeded.
+Remember that we are not testing the “happy path” here.
+Instead we are testing the “failure path”.</p>
+
+<h2 id="test-run-for-events">Test run for events</h2>
+
+<p>Now we are going to run our tests again.</p>
+
+<p>This time we have four tests.</p>
+
+<p>Run Truffle Test.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see output similar to the following</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-truffle@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-truffle
+<span class="o">&gt;</span> truffle <span class="nb">test</span> <span class="nt">--network</span> regtest
+
+Using network <span class="s1">'regtest'</span><span class="nb">.</span>
+
+
+Compiling your contracts...
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Compiling ./contracts/Cars.sol
+<span class="o">&gt;</span> Compiling ./contracts/Migrations.sol
+<span class="o">&gt;</span> Artifacts written to /tmp/test-202063-8218-94r63u.rhxft
+<span class="o">&gt;</span> Compiled successfully using:
+   - solc: 0.5.7+commit.6da8b019.Emscripten.clang
+
+
+
+  Contract: Cars - initial state
+    ✓ Initialised with zero cars
+
+  Contract: Cars - state transitions
+    ✓ Adds a new car <span class="o">(</span>2069ms<span class="o">)</span>
+
+  Contract: Cars - events
+    ✓ Honks a car at another car <span class="o">(</span>2071ms<span class="o">)</span>
+    ✓ Honking a car that you <span class="k">do </span>not own is not allowed <span class="o">(</span>2070ms<span class="o">)</span>
+
+
+  4 passing <span class="o">(</span>10s<span class="o">)</span>
+
+</code></pre></div></div>
+
+<p>All four are passing. Great! 🎉 🎉 🎉</p>
+
+<h2 id="going-further">Going further</h2>
+
+<p>We have now completed this workshop.
+Congratulations on making it to the end! 🎉 🎉 🎉</p>
+
+<p>There is a lot more to explore with regards to Smart contract testing.</p>
+
+<p>For example we have not covered mocking smart contracts,
+where we replace one (or sometimes more) functions within a smart contract
+in order to be able to test it in particular ways.</p>
+
+<p>Check out
+<a href="https://dappsdev.org/hands-on/testing/solidity-mocks/" rel="external noopener noreferrer" target="_blank">DApps Dev Club’s Mocking Solidity for Tests</a>
+if you would like to try out <strong>smart contract mocking</strong> as a continuation of this tutorial.
+(This workshop is a modified and shortened version from that original.)</p>
+
+
+                  
+
+               </div>
+            </div>
+
+            <section class="mt-5">
+    <div class="container newsletter">
+     <div class="row justify-content-center">
+       <div class="body-title col-md-8 text-center">
+        <h2>
+<span class="bold rsk_green">Subscribe</span> to our Newsletter</h2>
+        <!-- Begin Mailchimp Signup Form -->
+        <div id="mc_embed_signup">
+          <form action="https://rifos.us15.list-manage.com/subscribe/post?u=f52247d792ffe22c6f7be1379&amp;id=a7030f092b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+            <div id="mc_embed_signup_scroll">
+              <div class="input-group mb-3">
+                <input type="email" value="" name="EMAIL" class="required email form-control email-suscribe" id="mce-EMAIL" placeholder="E-mail adress">
+                <input type="hidden" name="MMERGE5" id="MMERGE5" value="Developer,DevPortal,EN">
+                <div class="input-group-append">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-suscribe">
+                </div> 
+              </div> 
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f52247d792ffe22c6f7be1379_a7030f092b" tabindex="-1" value=""></div>
+            </div>
+          </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+    </div>
+  </div>
+</section>
+         </div>
+         <div class="render-features" data-features="">
+         </div>
+      </section>
+
+      <!-- footer -->
+<footer id="footer" class="section-bg">
+   <div class="footer-top">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12">
+               <img src="../../assets/img/powered_by_iov.svg" class="img-fluid powered_by">
+            </div>
+         </div>
+         <div class="row">
+            <div class="col-lg-4">
+               <div class="footer-info">
+                  <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
+                  <br>
+                  <a href="https://developers.rsk.co/" rel="external noopener noreferrer" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
+               </div>
+            </div>
+            <div class="col-lg-8">
+               <div class="row">
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li class="negbottom">Whitepapers</li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="external noopener noreferrer" target="_blank">Original</a></li>
+                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="external noopener noreferrer" target="_blank">Updated</a></li>
+                           <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="external noopener noreferrer" target="_blank">RIF</a></li>
+                           <li><a href="https://rsk.co/development-roadmap.html" rel="external noopener noreferrer" target="_blank">Roadmap</a></li>
+                           <li><a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">Explorer</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://mining.rsk.co/" rel="external noopener noreferrer" target="_blank">Merged Mining</a></li>
+                           <li><a href="https://www.rsk.co/bounty-program/index" rel="external noopener noreferrer" target="_blank">Bounty Program</a></li>
+                           <li><a href="https://grants.rsk.co" rel="external noopener noreferrer" target="_blank">Grants Program</a></li>
+                           <li><a href="https://fund.rsk.co" rel="external noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
+                           <li><a href="https://studio.rsk.co" rel="external noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links">
+                        <ul>
+                           <li><a href="https://rsk.co/defi" rel="external noopener noreferrer" target="_blank">DeFi</a></li>
+                           <li><a href="https://rsk.co/Use-cases.html" rel="external noopener noreferrer" target="_blank">Use cases</a></li>
+                           <li><a href="https://rsk.co/faqs.html" rel="external noopener noreferrer" target="_blank">Faqs</a></li>
+                           <li><a href="https://blog.rsk.co/" rel="external noopener noreferrer" target="_blank">Blog</a></li>
+                           <li><a href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" rel="external noopener noreferrer" target="_blank">Brand Guidelines</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-6">
+                     <div class="footer-links lastcol">
+                        <ul>
+                           <li><a class="bold" href="https://rsk.co/terms-conditions.html" rel="external noopener noreferrer" target="_blank">Terms &amp; Conditions</a></li>
+                           <li><a class="bold" href="https://rsk.co/privacy-policy.html" rel="external noopener noreferrer" target="_blank">Privacy Policy</a></li>
+                           <li><a class="bold" href="https://www.iovlabs.org" rel="external noopener noreferrer" target="_blank">About IOVlabs</a></li>
+                           <li><a class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html" rel="external noopener noreferrer" target="_blank">Contact IOVlabs</a></li>
+                           <a href="https://developers.doc.rsk.co/docs" rel="external noopener noreferrer" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="social-links">
+                  <a href="https://twitter.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a href="https://www.youtube.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="facebook"><i class="fab fa-youtube"></i></a>
+                  <a href="https://www.facebook.com/RSKsmart/" rel="external noopener noreferrer" target="_blank" class="linkedin"><i class="fab fa-facebook"></i></a>
+                  <a href="https://gitter.im/rsksmart" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-gitter"></i></a>
+                  <a href="https://www.reddit.com/r/rootstock/" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-reddit"></i></a>
+                  <a href="https://t.me/rskofficialcommunity" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://medium.com/@RSKNews" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-medium"></i></a>
+                  <a href="https://t.me/rsksmartcontract" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a href="https://www.instagram.com/rsksmart/" rel="external noopener noreferrer" target="_blank" class=""><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="col-md-12">
+            <div class="row">
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="copyright">Copyright © 2015 - 2020 RSK Labs. All rights reserved.</p>
+               </div>
+               <div class="col-md-6 col-xs-12 pl-0-mobile">
+                  <p class="credits"> RSK Public Key (2ED3 E888 0384 D3D9 70B6  A612 BEBC A6A9 63F6 1479)</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</footer>
+<!-- #footer -->
+
+      <a href="#top" class="scrollup"><p>Go to top</p></a>
+      <!-- Bootstrap core JavaScript -->
+      <script src="../../assets/vendor/jquery/jquery.min.js"></script>
+      <script src="../../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="../../assets/js/main.js"></script>
+      <script src="../../assets/vendor/carousel/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          nav:true,
+          center:true,
+          URLhashListener:true,
+          autoplayHoverPause:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
+
+      </script>
+      <script>
+      ((window.gitter = {}).chat = {}).options = {
+         room: 'rsksmart/getting-started'
+      };
+      </script>
+      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+   </body>
+</html>
