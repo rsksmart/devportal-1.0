@@ -71,7 +71,7 @@ which returns the sums of its two parameters.
 // system under test: feature1
 
 function add(x, y) {
-  return x + y;
+  return x + y + 1; // NOTE intentional bug
 }
 
 module.exports = {
@@ -176,7 +176,82 @@ it will indeed execute our implementation in turn.
 (Previously, when we had zero tests,
 the implementation was not executed at all.)
 
+### True negative
+
 Run Mocha.
+
+```shell
+npm run test
+```
+
+You should see output similar to the following:
+
+```shell
+$ npm t
+
+> workshop-rsk-js-testing@0.0.0 test /home/bguiz/code/rsk/workshop-rsk-js-testing
+> mocha './**/*.spec.js'
+
+
+
+  feature1
+    add
+      1) works with specific values
+
+
+  0 passing (7ms)
+  1 failing
+
+  1) feature1
+       add
+         works with specific values:
+
+      AssertionError [ERR_ASSERTION]: 4 == 3
+      + expected - actual
+
+      -4
+      +3
+
+      at Context.<anonymous> (feature1.spec.js:14:14)
+      at processImmediate (internal/timers.js:456:21)
+
+
+
+npm ERR! Test failed.  See above for more details.
+```
+
+Great! 🎉 🎉 🎉
+
+Mocha, our test runner has worked as promised,
+listening for which tests have passed or failed,
+and if there were any errors thrown.
+This time we have verification not only that
+our implementation has been executed,
+but also that it is **incorrect**.
+
+At first glance, this might seem like a bad thing on the surface,
+there is actually a positive element to it -
+we have specifications that have picked up on
+a problem in the implementation.
+This is a **true negative** -
+an incorrect implementation with a correct specification.
+
+### Fix implementation
+
+Edit `feature1.js` to fix the bug in our implementation.
+
+It should now look like this:
+
+```javascript
+function add(x, y) {
+  return x + y;
+}
+```
+
+### True positive
+
+Now that we think that the bug has been fixed,
+let us verify that using out tests.
 
 ```shell
 npm run test
@@ -208,8 +283,10 @@ listening for which tests have passed or failed,
 and if there were any errors thrown.
 This time we have verification not only that
 our implementation has been executed,
-but also that it is correct
-(at least according to how we have written our tests).
+but also that it is **correct**,
+at least according to how we have written our tests.
+This is a **true positive**. -
+a correct implementation with a correct specification.
 
 ## Going further
 

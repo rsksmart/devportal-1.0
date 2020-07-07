@@ -2397,7 +2397,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/7aaa3958-5508-4c24-804c-10498f7e154e/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-macro-tendencias",
-      "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event6.jpg",
       "resources": [
         {
@@ -2814,6 +2814,10 @@
       "image": "/webinars/img/events/event3.jpg",
       "resources": [
         {
+          "label": "Slides",
+          "url": "https://developers.rsk.co/webinars/202007-005/slides/"
+        },
+        {
           "label": "System pre-requisites",
           "url": "https://developers.rsk.co/tutorials/workshop-prereqs/"
         },
@@ -3002,12 +3006,12 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b5c806ac-1ec7-470b-b5a6-1c7a889c9f17/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/caso-carnes-validadas",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event10.jpg",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-009/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
