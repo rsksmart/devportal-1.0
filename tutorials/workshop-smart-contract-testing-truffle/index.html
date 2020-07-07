@@ -561,16 +561,19 @@
                   <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
+              <li><a href="../workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
-              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
               <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
               <li><a href="../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../workshop-js-testing/">Javascript Testing</a></li>
+              <li><a href="./">Smart Contract Testing with Truffle</a></li>
               <li><a href="../interface-registry/">Interface Registry</a></li>
               <li><a href="../rsk-api/">RSK API CLI</a></li>
               <li><a href="../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
               <li><a href="../using-blockmason/">Using Blockmason</a></li>
               <li><a href="../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
             </ul>
           </li>
           <li><a href="../../develop/apps/integrate/">Integrate</a></li>
@@ -733,7 +736,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-07-07 00:53:41 +0000T00:00:00.000Z">2020-07-07</time> | -->
+    <!--time role="presentation" datetime="2020-07-07 05:09:28 +0000T00:00:00.000Z">2020-07-07</time> | -->
      25' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/workshop-smart-contract-testing-truffle.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1224,16 +1227,19 @@
                   <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
+              <li><a href="../workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
-              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
               <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
               <li><a href="../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../workshop-js-testing/">Javascript Testing</a></li>
+              <li><a href="./">Smart Contract Testing with Truffle</a></li>
               <li><a href="../interface-registry/">Interface Registry</a></li>
               <li><a href="../rsk-api/">RSK API CLI</a></li>
               <li><a href="../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
               <li><a href="../using-blockmason/">Using Blockmason</a></li>
               <li><a href="../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
             </ul>
           </li>
           <li><a href="../../develop/apps/integrate/">Integrate</a></li>
@@ -2115,9 +2121,16 @@ Congratulations on making it to the end! 🎉 🎉 🎉</p>
 
 <p>There is a lot more to explore with regards to Smart contract testing.</p>
 
-<p>For example we have not covered mocking smart contracts,
-where we replace one (or sometimes more) functions within a smart contract
-in order to be able to test it in particular ways.</p>
+<p>For example, you may have noticed that in the
+implementation for <code class="highlighter-rouge">honkCar()</code>,
+we have commented out a <code class="highlighter-rouge">require()</code> statement
+that verifies the value of <code class="highlighter-rouge">getTime()</code>.
+Writing a robust specification for this implementation is seemingly not possible,
+as it behaves differently depending on the time of day it is run.
+Mocking is a testing technique that will enable us to
+replace one (or sometimes more) functions within a smart contract
+in order to be able to test it in particular ways,
+and will help in this case.</p>
 
 <p>Check out
 <a href="https://dappsdev.org/hands-on/testing/solidity-mocks/" rel="external noopener noreferrer" target="_blank">DApps Dev Club’s Mocking Solidity for Tests</a>

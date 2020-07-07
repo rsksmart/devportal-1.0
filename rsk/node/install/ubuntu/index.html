@@ -561,16 +561,19 @@
                   <li><a href="../../../../tutorials/truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
+              <li><a href="../../../../tutorials/workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../../../../tutorials/dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
-              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
               <li><a href="../../../../tutorials/deploy-smart-contracts/">Deploy Smart Contracts</a></li>
               <li><a href="../../../../tutorials/interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/workshop-js-testing/">Javascript Testing</a></li>
+              <li><a href="../../../../tutorials/workshop-smart-contract-testing-truffle/">Smart Contract Testing with Truffle</a></li>
               <li><a href="../../../../tutorials/interface-registry/">Interface Registry</a></li>
               <li><a href="../../../../tutorials/rsk-api/">RSK API CLI</a></li>
               <li><a href="../../../../tutorials/send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
               <li><a href="../../../../tutorials/using-blockmason/">Using Blockmason</a></li>
               <li><a href="../../../../tutorials/resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
             </ul>
           </li>
           <li><a href="../../../../develop/apps/integrate/">Integrate</a></li>
@@ -717,7 +720,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rsk/node/">
-					<span property="name">Node (RSKJ)</span>
+					<span property="name">Node (RSKj)</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -749,7 +752,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-08 18:01:47 +0000T00:00:00.000Z">2020-05-08</time> | -->
+    <!--time role="presentation" datetime="2020-07-03 11:04:00 +0000T00:00:00.000Z">2020-07-03</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/install/ubuntu.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1240,16 +1243,19 @@
                   <li><a href="../../../../tutorials/truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
+              <li><a href="../../../../tutorials/workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../../../../tutorials/dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
-              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
               <li><a href="../../../../tutorials/deploy-smart-contracts/">Deploy Smart Contracts</a></li>
               <li><a href="../../../../tutorials/interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="../../../../tutorials/workshop-js-testing/">Javascript Testing</a></li>
+              <li><a href="../../../../tutorials/workshop-smart-contract-testing-truffle/">Smart Contract Testing with Truffle</a></li>
               <li><a href="../../../../tutorials/interface-registry/">Interface Registry</a></li>
               <li><a href="../../../../tutorials/rsk-api/">RSK API CLI</a></li>
               <li><a href="../../../../tutorials/send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
               <li><a href="../../../../tutorials/using-blockmason/">Using Blockmason</a></li>
               <li><a href="../../../../tutorials/resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+              <li><a href="../../../../tutorials/compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
             </ul>
           </li>
           <li><a href="../../../../develop/apps/integrate/">Integrate</a></li>
@@ -1387,7 +1393,7 @@
 
 <p>The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package Manager.</p>
 
-<p>Type the commands below to install RskJ on Ubuntu using our PPAs for Ubuntu.</p>
+<p>Type the commands below to install RSKj on Ubuntu using our PPAs for Ubuntu.</p>
 
 <p>The installed repo public key Fingerprint is <code class="highlighter-rouge">5EED 9995 C84A 49BC 02D4 F507 DF10 691F 518C 7BEA</code>. Also, the public key could be found in document <a href="https://keyserver.ubuntu.com/" rel="external noopener noreferrer" target="_blank">Ubuntu Key Server</a>.</p>
 
@@ -1408,12 +1414,12 @@
 
 <h2 id="install-via-direct-downloads">Install via Direct Downloads</h2>
 
-<p>You can also download the RskJ Ubuntu Package for Papyrus 2.0.1 and install it with the <code class="highlighter-rouge">dpkg</code> command. Follow this <a href="https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages" rel="external noopener noreferrer" target="_blank">download link</a> to download the matching package for your ubuntu system.</p>
+<p>You can also download the RSKj Ubuntu Package for Papyrus 2.0.1 and install it with the <code class="highlighter-rouge">dpkg</code> command. Follow this <a href="https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages" rel="external noopener noreferrer" target="_blank">download link</a> to download the matching package for your ubuntu system.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># first install openjdk-8-jre or oracle-java8-installer</span>
 <span class="nb">sudo </span>apt-get <span class="nb">install </span>openjdk-8-jre
 
-<span class="c"># download the RskJ pacakge and find the file rskj_2.0.1~yourUbuntuVersionName_amd64.deb</span>
+<span class="c"># download the RSKj pacakge and find the file rskj_2.0.1~yourUbuntuVersionName_amd64.deb</span>
 
 <span class="c"># run this command in the same directory as the deb file above</span>
 dpkg <span class="nt">-i</span> rskj_2.0.1~yourUbuntuVersionName_amd64.deb
@@ -1452,7 +1458,7 @@ dpkg <span class="nt">-i</span> rskj_2.0.1~yourUbuntuVersionName_amd64.deb
   <li>
 <code class="highlighter-rouge">/etc/rsk</code>: the directory where the config files will be placed.</li>
   <li>
-<code class="highlighter-rouge">/usr/share/rsk</code>: the directory where the RskJ JAR will be placed.</li>
+<code class="highlighter-rouge">/usr/share/rsk</code>: the directory where the RSKj JAR will be placed.</li>
   <li>
 <code class="highlighter-rouge">/var/lib/rsk/database</code>: the directory where the database will be stored.</li>
   <li>

@@ -561,16 +561,19 @@
                   <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
+              <li><a href="../workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
-              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
               <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
               <li><a href="../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="./">Javascript Testing</a></li>
+              <li><a href="../workshop-smart-contract-testing-truffle/">Smart Contract Testing with Truffle</a></li>
               <li><a href="../interface-registry/">Interface Registry</a></li>
               <li><a href="../rsk-api/">RSK API CLI</a></li>
               <li><a href="../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
               <li><a href="../using-blockmason/">Using Blockmason</a></li>
               <li><a href="../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
             </ul>
           </li>
           <li><a href="../../develop/apps/integrate/">Integrate</a></li>
@@ -733,8 +736,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-07-07 00:53:41 +0000T00:00:00.000Z">2020-07-07</time> | -->
-     6' to read |
+    <!--time role="presentation" datetime="2020-07-07 07:32:15 +0000T00:00:00.000Z">2020-07-07</time> | -->
+     7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/workshop-js-testing.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1224,16 +1227,19 @@
                   <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
+              <li><a href="../workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
-              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
               <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
               <li><a href="../interact-with-smart-contracts/">Interact with Smart Contracts</a></li>
+              <li><a href="./">Javascript Testing</a></li>
+              <li><a href="../workshop-smart-contract-testing-truffle/">Smart Contract Testing with Truffle</a></li>
               <li><a href="../interface-registry/">Interface Registry</a></li>
               <li><a href="../rsk-api/">RSK API CLI</a></li>
               <li><a href="../send-tokens-through-metamask/">Send RIF Tokens through Metamask</a></li>
               <li><a href="../using-blockmason/">Using Blockmason</a></li>
               <li><a href="../resolve-nifty-issue/">Resolve Nifty Issue</a></li>
+              <li><a href="../compile-smart-contracts-go/">Compile Smart Contracts to Go</a></li>
             </ul>
           </li>
           <li><a href="../../develop/apps/integrate/">Integrate</a></li>
@@ -1434,7 +1440,7 @@ which returns the sums of its two parameters.</p>
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// system under test: feature1</span>
 
 <span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+  <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">// NOTE intentional bug</span>
 <span class="p">}</span>
 
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
@@ -1535,7 +1541,79 @@ it will indeed execute our implementation in turn.</p>
 <p>(Previously, when we had zero tests,
 the implementation was not executed at all.)</p>
 
+<h3 id="true-negative">True negative</h3>
+
 <p>Run Mocha.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see output similar to the following:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm t
+
+<span class="o">&gt;</span> workshop-rsk-js-testing@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-js-testing
+<span class="o">&gt;</span> mocha <span class="s1">'./**/*.spec.js'</span>
+
+
+
+  feature1
+    add
+      1<span class="o">)</span> works with specific values
+
+
+  0 passing <span class="o">(</span>7ms<span class="o">)</span>
+  1 failing
+
+  1<span class="o">)</span> feature1
+       add
+         works with specific values:
+
+      AssertionError <span class="o">[</span>ERR_ASSERTION]: 4 <span class="o">==</span> 3
+      + expected - actual
+
+      <span class="nt">-4</span>
+      +3
+
+      at Context.&lt;anonymous&gt; <span class="o">(</span>feature1.spec.js:14:14<span class="o">)</span>
+      at processImmediate <span class="o">(</span>internal/timers.js:456:21<span class="o">)</span>
+
+
+
+npm ERR! Test failed.  See above <span class="k">for </span>more details.
+</code></pre></div></div>
+
+<p>Great! 🎉 🎉 🎉</p>
+
+<p>Mocha, our test runner has worked as expected,
+listening for which tests have passed or failed,
+and if there were any errors thrown.
+This time we have verified that
+our implementation has not only been executed,
+but also that it is <strong>incorrect</strong>.</p>
+
+<p>At first glance, this might seem like a bad thing on the surface,
+there is actually a positive element to it -
+we have specifications that have picked up on
+a problem in the implementation.
+This is a <strong>true negative</strong> -
+an incorrect implementation with a correct specification.</p>
+
+<h3 id="fix-implementation">Fix implementation</h3>
+
+<p>Edit <code class="highlighter-rouge">feature1.js</code> to fix the bug in our implementation.</p>
+
+<p>It should now look like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="nx">x</span> <span class="o">+</span> <span class="nx">y</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="true-positive">True positive</h3>
+
+<p>Now that we think that the bug has been fixed,
+let us verify that using our updated specification.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
 </code></pre></div></div>
@@ -1563,10 +1641,12 @@ the implementation was not executed at all.)</p>
 <p>Mocha, our test runner has worked as promised,
 listening for which tests have passed or failed,
 and if there were any errors thrown.
-This time we have verification not only that
-our implementation has been executed,
-but also that it is correct
-(at least according to how we have written our tests).</p>
+This time we have verified that
+our implementation has not only been executed,
+but also that it is <strong>correct</strong>,
+at least according to how we have written our tests.
+This is a <strong>true positive</strong>. -
+a correct implementation with a correct specification.</p>
 
 <h2 id="going-further">Going further</h2>
 
