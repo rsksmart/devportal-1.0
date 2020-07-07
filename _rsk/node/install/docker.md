@@ -29,7 +29,7 @@ docker ps
 
 More information about Docker install [here](https://docs.docker.com/install/).
 
-## Install RskJ Using Docker
+## Install RSKj Using Docker
 
 First of all, download the RSK a Dockerfile and supervisord.conf from [artifacts repo](https://github.com/rsksmart/artifacts/tree/master/Dockerfiles/RSK-Node).
 

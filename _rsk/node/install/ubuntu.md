@@ -10,7 +10,7 @@ Make sure your system meets the [minimum requirements](../requirements/) before 
 
 The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package Manager.
 
-Type the commands below to install RskJ on Ubuntu using our PPAs for Ubuntu.
+Type the commands below to install RSKj on Ubuntu using our PPAs for Ubuntu.
 
 The installed repo public key Fingerprint is `5EED 9995 C84A 49BC 02D4 F507 DF10 691F 518C 7BEA`. Also, the public key could be found in document [Ubuntu Key Server](https://keyserver.ubuntu.com/).
 
@@ -32,13 +32,13 @@ Choose `mainnet` and press `Enter` to continue
 
 ## Install via Direct Downloads
 
-You can also download the RskJ Ubuntu Package for Papyrus 2.0.1 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
+You can also download the RSKj Ubuntu Package for Papyrus 2.0.1 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
 
 ```shell
 # first install openjdk-8-jre or oracle-java8-installer
 sudo apt-get install openjdk-8-jre
 
-# download the RskJ pacakge and find the file rskj_2.0.1~yourUbuntuVersionName_amd64.deb
+# download the RSKj pacakge and find the file rskj_2.0.1~yourUbuntuVersionName_amd64.deb
 
 # run this command in the same directory as the deb file above
 dpkg -i rskj_2.0.1~yourUbuntuVersionName_amd64.deb
@@ -60,7 +60,7 @@ By default, the node connects to Mainnet. To change the network choice (Mainnet/
 The installer will configure your node in the following paths:
 
 * `/etc/rsk`: the directory where the config files will be placed.
-* `/usr/share/rsk`: the directory where the RskJ JAR will be placed.
+* `/usr/share/rsk`: the directory where the RSKj JAR will be placed.
 * `/var/lib/rsk/database`: the directory where the database will be stored.
 * `/var/log/rsk`: the directory where the logs will be stored.
 

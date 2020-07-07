@@ -27,7 +27,7 @@ tags: rns, guide, rns-user-guide
     - ### [Domain info](/rif/rns/guide/operations/#domain-info)
         - [Extend your domain expiration time](/rif/rns/guide/operations/#extend-your-domain-expiration-time)
         - [Transfer your domain](/rif/rns/guide/operations/#transfer-your-domain)
-    - [Domain addresses](/rif/rns/guide/operations/#domain-addresses)
+    - [Your addresses](/rif/rns/guide/operations/#your-addresses)
         - [Change the RSK address](/rif/rns/guide/operations/#change-the-rsk-address)
         - [Add a cryptocurrency address](/rif/rns/guide/operations/#add-a-currency-address)
         - [Update a cryptocurrency address](/rif/rns/guide/operations/#change-a-currency-address)
