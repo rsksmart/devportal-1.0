@@ -10,7 +10,7 @@ These are the basic operations you can perform with the RNS manager:
 - [Domain info](#domain-info)
     - [Extend your domain expiration time](#extend-your-domain-expiration-time)
     - [Transfer your domain](#transfer-your-domain)
-- [Domain addresses](#domain-addresses)
+- [Your addresses](#your-addresses)
     - [Change the RSK address](#change-the-rsk-address)
     - [Add a cryptocurrency address](#add-a-currency-address)
     - [Update a cryptocurrency address](#change-a-currency-address)

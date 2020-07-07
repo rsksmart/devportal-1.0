@@ -8,7 +8,7 @@ Introduction
 Overview
 ========
 
-``RSKJs`` is the **JavaScript** Library within the **RSK 
+``RSKj`` is the **JavaScript** Library within the **RSK 
 Foundation**. Work is mainly done within the following GitHub organization:
 
 - [https://github.com/rsksmart](https://github.com/rsksmart)
