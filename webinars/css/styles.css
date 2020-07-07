@@ -759,6 +759,11 @@ select {
     background-repeat: no-repeat;
 }
 
+.image-group-banner {
+    height: 336px;
+    background-size: contain;
+}
+
 .event-type {
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
