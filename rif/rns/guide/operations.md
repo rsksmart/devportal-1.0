@@ -82,7 +82,7 @@ Each extra year over the three years cost 1 RIF token.
     > **Warning: This operation transfers full control of the domain. once executed there is no going back.**
 
 
-## Domain addresses
+## Your addresses
 
 Here you can do a the basic setup for your domain. You can choose the RSK address you want your domain to map to.
 
