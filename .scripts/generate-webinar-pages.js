@@ -33,6 +33,10 @@ function writeEventFiles() {
           })
           .join('\n'));
 
+      const bannerImageYaml = event.bannerImage ?
+        `  bannerImage: "${event.bannerImage}"\n` :
+        '';
+
       const markdown = `---
 layout: event_page
 permalink: "${event._permalink}"
@@ -50,7 +54,7 @@ ${eventPresentersYaml}
   videoStreamUrl: "${event.videoStreamUrl}"
   tags: "${event.tags}"
   image: "${event.image}"
-${eventResourcesYaml}
+${bannerImageYaml}${eventResourcesYaml}
   recordedVideoUrl: "${event.recordedVideoUrl}"
   isPast: ${event._isPast}
 ---
