@@ -222,11 +222,11 @@ npm ERR! Test failed.  See above for more details.
 
 Great! 🎉 🎉 🎉
 
-Mocha, our test runner has worked as promised,
+Mocha, our test runner has worked as expected,
 listening for which tests have passed or failed,
 and if there were any errors thrown.
-This time we have verification not only that
-our implementation has been executed,
+This time we have verified that
+our implementation has not only been executed,
 but also that it is **incorrect**.
 
 At first glance, this might seem like a bad thing on the surface,
@@ -251,7 +251,7 @@ function add(x, y) {
 ### True positive
 
 Now that we think that the bug has been fixed,
-let us verify that using out tests.
+let us verify that using our updated specification.
 
 ```shell
 npm run test
@@ -281,8 +281,8 @@ Great! 🎉 🎉 🎉
 Mocha, our test runner has worked as promised,
 listening for which tests have passed or failed,
 and if there were any errors thrown.
-This time we have verification not only that
-our implementation has been executed,
+This time we have verified that
+our implementation has not only been executed,
 but also that it is **correct**,
 at least according to how we have written our tests.
 This is a **true positive**. -
