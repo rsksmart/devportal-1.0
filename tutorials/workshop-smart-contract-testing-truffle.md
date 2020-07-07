@@ -486,7 +486,7 @@ Replace the line that says `// tests go here` with the following code.
 
 The line `const returnValue = await instance.addCar.call(/* ... */);`
 retrieves the return value of the `addCar` function.
-The more astute participants in this workshop may have noticed something
+Some participants in this workshop may have noticed something
 that is perhaps a little strange:
 
 - `addCar` is a function that causes a state transition,

@@ -222,7 +222,7 @@ which were not picked up by our specification,
 due to a lack of tests for various scenarios.
 Therefore we have a **false positive** on our hands.
 
-It is also possible for us to have have **false negatives**.
+It is also possible for us to have **false negatives**.
 Ideally, we should aim to write our specifications such that
 only **true negatives** and **true positives** are possible.
 Of course, also write our implementations such that
