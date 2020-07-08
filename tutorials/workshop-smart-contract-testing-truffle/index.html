@@ -736,7 +736,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-07-07 05:09:28 +0000T00:00:00.000Z">2020-07-07</time> | -->
+    <!--time role="presentation" datetime="2020-07-08 06:22:09 +0000T00:00:00.000Z">2020-07-08</time> | -->
      25' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/workshop-smart-contract-testing-truffle.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1404,21 +1404,23 @@ npm <span class="nb">install</span>
 <p>If you happen to have <code class="highlighter-rouge">tree</code> installed,
 you can use that to view the directory structure using the following command.</p>
 
-<p>TODO replace below output</p>
-
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>tree <span class="nt">-I</span> <span class="s1">'node_modules|*.md|*.json'</span>
 <span class="nb">.</span>
 ├── contracts
+│   ├── Cars.sol
 │   └── Migrations.sol
 ├── migrations
-│   └── 1_initial_migration.js
+│   ├── 1_initial_migration.js
+│   └── 2_cars_migration.js
 ├── scripts
 │   ├── clean.sh
 │   └── setup.sh
 ├── <span class="nb">test</span>
+│   └── Cars.spec.js
 └── truffle-config.js
 
-4 directories, 5 files
+4 directories, 8 files
+
 
 </code></pre></div></div>
 
