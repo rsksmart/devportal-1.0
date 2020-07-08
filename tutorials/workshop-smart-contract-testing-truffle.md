@@ -37,22 +37,24 @@ Then open up this directory in your code editor.
 If you happen to have `tree` installed,
 you can use that to view the directory structure using the following command.
 
-TODO replace below output
-
 ```shell
 $ tree -I 'node_modules|*.md|*.json'
 .
 ├── contracts
+│   ├── Cars.sol
 │   └── Migrations.sol
 ├── migrations
-│   └── 1_initial_migration.js
+│   ├── 1_initial_migration.js
+│   └── 2_cars_migration.js
 ├── scripts
 │   ├── clean.sh
 │   └── setup.sh
 ├── test
+│   └── Cars.spec.js
 └── truffle-config.js
 
-4 directories, 5 files
+4 directories, 8 files
+
 
 ```
 

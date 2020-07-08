@@ -46,18 +46,34 @@ you follow along!
 
 <!-- .element: style="background-color: #ffffffb0;" -->
 ### [developers.rsk.co/webinars](/webinars/)
-[50+ past events](/webinars/#calendar-past)
+[60+ past events](/webinars/#calendar-past)
 
 NOTE:
 
 `Brendan`
 
-For those of you joining us in this webinar for the first time,
-we would like to highlight that this is just one of a very large series of webinars,
+For those of you joining us in this webinar for the first time, we would like to highlight that this is just one of a very large series of webinars,
 that is over 50 and counting at the moment.
 
 Lots of great educational material out there already,
 so check out developers.rsk.co for all the details.
+
+---
+
+## IOV Labs
+
+
+![RSK Taringa RIF logo](/assets/img/logos/rsk-taringa-rif.png)
+
+NOTE:
+
+`Dulce`
+
+- We both work in IOV Labs, the umbrella organization for RSK, Taringa, and RIF.
+- RSK is the smart contract platform secured by the bitcoin mining hash power, and therefore the most secure one.
+- Taringa is a social media platform, and
+- RIF offers a suite of services for the decentralised Internet: name service, payments, communications, storage, and  marketplaces... all decentralised.
+- IOV is building a fully decentralized internet for Financial Inclusion.
 
 ---
 
@@ -70,21 +86,21 @@ NOTE:
 
 `Dulce`
 
-
-
 ----
 
-### Dulce
+### Dulce Villarreal 
 
 - Dev 🥑 IOVlabs: RSK + RIF
 - México 🇲🇽 - San Francisco 🌁
 - Economist & data scientist 🧮
 - Foodie & mezcal sommelier 🌮 🍛 🍣
 - Roller skater ⛸️
+- @Dulce_vird
 
 NOTE:
 
 `Dulce`
+Now, let me introduce myself. I'm Dulce. I'm Mexican. I'm an economist and data scientist. I worked in banking and fintech startups. I love food and fresh veggies. You can find me on twitter.
 
 ----
 
@@ -170,10 +186,10 @@ NOTE:
 
 `Dulce`
 
-- Mocha is a test runner for Javascript that can run either in the browser or in NodeJs
-- Today, we'll be using NodeJs only
+- Mocha is a test runner (or test framework) for Javascript that can run either in the browser or in NodeJs
+- Today, we'll only be using NodeJs
 - The main task of a test runner is to execute tests and generate a report
-- But before we get there, we first need to understand some terms: implementation, specification, and then we can loop back to the test runner
+- But before we get there, we first need to understand some terms: Implementation, specification, and then, we can loop back to the test runner
 
 ---
 
@@ -205,7 +221,7 @@ NOTE:
 `Dulce`
 
 - Specifications are similar to implementation because they are also code
-- However they are not executed by the user of your programm or application, instead the specifications run the implmentations in certain pre-defined ways
+- However they are not executed by the user of your program or application, instead the specifications run the implementations in certain pre-defined ways.
 
 ---
 
@@ -254,6 +270,8 @@ NOTE:
 NOTE:
 
 `Brendan`
+
+(pre-reqs next slide)
 
 ---
 
@@ -461,7 +479,7 @@ NOTE:
 
 `Dulce`
 
-- While this webinar has been primarily intended as a hands-on workshop, we have covered some theory on software engineering principles around testing, and thinking about smart contracts in terms of state and state transitions.
+- While this webinar has been primarily intended as a hands-on workshop, we have covered some theory too, to do with softwate engineering principles around testing, and thinkign about smart contracts in terms of state and state transitions.
 - And in the hands on section we created a Javascript application and tested it with Javascript, and followed that up with creating a smart contract in Solidity and testing that with Javascript.
 - You will have noticed that we have used the RSK regtest network for our smart contracts, which runs locally, on your computer only. This is intentional: For these kinds of tests where you're doing active development, and needs faster iterations, a localhost-only blockchain is the right choice.
 - However, note that you always have the option of running tests against your smart contracts deployed on a real peer-to-peer decentralised blockchain network, such as the RSK Testnet, or even the RSK Mainnet - but usually one would reserve this for a later stage in the project where you have considerations such as economic incentive based attacks or networks congestions or gas price hikes.
