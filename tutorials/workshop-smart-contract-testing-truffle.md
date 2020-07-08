@@ -757,9 +757,16 @@ Congratulations on making it to the end! 🎉 🎉 🎉
 
 There is a lot more to explore with regards to Smart contract testing.
 
-For example we have not covered mocking smart contracts,
-where we replace one (or sometimes more) functions within a smart contract
-in order to be able to test it in particular ways.
+For example, you may have noticed that in the
+implementation for `honkCar()`,
+we have commented out a `require()` statement
+that verifies the value of `getTime()`.
+Writing a robust specification for this implementation is seemingly not possible,
+as it behaves differently depending on the time of day it is run.
+Mocking is a testing technique that will enable us to
+replace one (or sometimes more) functions within a smart contract
+in order to be able to test it in particular ways,
+and will help in this case.
 
 Check out
 [DApps Dev Club's Mocking Solidity for Tests](https://dappsdev.org/hands-on/testing/solidity-mocks/)

@@ -70,6 +70,8 @@ NOTE:
 
 `Dulce`
 
+
+
 ----
 
 ### Dulce
@@ -166,7 +168,7 @@ Subsequently, we will write tests in Mocha using Javascript.
 
 NOTE:
 
-`Brendan`
+`Dulce`
 
 - Mocha is a test runner for Javascript that can run either in the browser or in NodeJs
 - Today, we'll be using NodeJs only
@@ -184,7 +186,7 @@ NOTE:
 
 NOTE:
 
-`Brendan`
+`Dulce`
 
 - Implementations form the actual parts of the code that perform the functionality of your program or application
 
@@ -200,7 +202,7 @@ NOTE:
 
 NOTE:
 
-`Brendan`
+`Dulce`
 
 - Specifications are similar to implementation because they are also code
 - However they are not executed by the user of your programm or application, instead the specifications run the implmentations in certain pre-defined ways
@@ -247,7 +249,7 @@ NOTE:
 
 ## Testing JS: Hands-on
 
-[dappsdev.org/hands-on/mocha-intro](https://dappsdev.org/hands-on/mocha-intro/)
+[developers.rsk.co/tutorials/workshop-js-testing](https://developers.rsk.co/tutorials/workshop-js-testing/)
 
 NOTE:
 
@@ -457,9 +459,9 @@ NOTE:
 
 NOTE:
 
-`Brendan`
+`Dulce`
 
-- While this webinar has been primarily intended as a hands-on workshop, we have covered some theory too, to do with softwate engineering principles around testing, and thinkign about smart contracts in terms of state and state transitions.
+- While this webinar has been primarily intended as a hands-on workshop, we have covered some theory on software engineering principles around testing, and thinking about smart contracts in terms of state and state transitions.
 - And in the hands on section we created a Javascript application and tested it with Javascript, and followed that up with creating a smart contract in Solidity and testing that with Javascript.
 - You will have noticed that we have used the RSK regtest network for our smart contracts, which runs locally, on your computer only. This is intentional: For these kinds of tests where you're doing active development, and needs faster iterations, a localhost-only blockchain is the right choice.
 - However, note that you always have the option of running tests against your smart contracts deployed on a real peer-to-peer decentralised blockchain network, such as the RSK Testnet, or even the RSK Mainnet - but usually one would reserve this for a later stage in the project where you have considerations such as economic incentive based attacks or networks congestions or gas price hikes.
@@ -476,7 +478,7 @@ Thank you!
 
 NOTE:
 
-`Brendan`
+`Dulce`
 
 Thanks to everyone for attending!
 

@@ -154,6 +154,7 @@ csvConverter
           videoStreamUrl,
           tags,
           image,
+          bannerImage,
           resources,
           recordedVideoUrl,
         } = event;
@@ -177,6 +178,7 @@ csvConverter
           videoStreamUrl,
           tags,
           image,
+          bannerImage,
           resources,
           recordedVideoUrl,
           _permalink,

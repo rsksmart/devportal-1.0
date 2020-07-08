@@ -28,6 +28,7 @@
       "videoStreamUrl": "https://zoom.us/j/915605031",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/g2UZa7pJ7cI",
       "_isPast": true
@@ -60,6 +61,7 @@
       "videoStreamUrl": "https://zoom.us/j/850527491",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -101,6 +103,7 @@
       "videoStreamUrl": "https://zoom.us/j/182679010",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -138,6 +141,7 @@
       "videoStreamUrl": "https://zoom.us/j/211449645",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -189,6 +193,7 @@
       "videoStreamUrl": "https://zoom.us/j/666038949",
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -226,6 +231,7 @@
       "videoStreamUrl": "https://zoom.us/j/388106531",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/mFaieJnJ7RA",
       "_isPast": true
@@ -258,6 +264,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tJYsf--oqj4vdrQoPSjX2wpMtM_z5dhvyw",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -295,6 +302,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vJcvdOqsrzgqhE2wf9mjTL2f-IjMyuCbOg",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7",
       "_isPast": true
@@ -327,6 +335,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/v5IlcuCuqjgp2Hk8MSfma_UM2SRY1EpNBg",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -372,6 +381,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/u5Avd-ChqjMvMaSTcuJyoo-Tljt1fKj-HA",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial (em português) - part 1",
@@ -421,6 +431,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMMYplRN_qVoNtSg",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -458,6 +469,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vpEudu6qrTwi6BVo47gZ2Dp8Kn1P7fuXwQ",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -499,6 +511,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vJYscOqprT4qiafPx_ipbYLtUpqVap7aaA",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/WzheOfMretc",
       "_isPast": true
@@ -531,6 +544,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/u5ctdemsrj0uW4KSidV5R-zbr32t5qoEvg",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -572,6 +586,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vpYtce-ppjsjBj1Z95uGeLBM85AfEzzqig",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -613,6 +628,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/v5QsdOmsqjwrikKuDAgPq1N89Kno-k72oQ",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -654,6 +670,7 @@
       "videoStreamUrl": "",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -686,6 +703,7 @@
       "videoStreamUrl": "",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -718,6 +736,7 @@
       "videoStreamUrl": "",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -750,6 +769,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tZMkcuCvrj8ir2VcSK2l5vC85oYuQ3XzQg",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/68AMoiQfgEE",
       "_isPast": true
@@ -782,6 +802,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMqceCrpj8vwF12sWEGGYUwakqnpBe5rg",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -827,6 +848,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tZAuc-ChpzojhDnyRYd056DZNfWnHjPkKw",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -864,6 +886,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/tJMrcuGsqjoos3djOzbLWvWzElEY6fqrWA",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -901,6 +924,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vJUvf-uurj4rlf0hZDXoAPr_tneiGkFDAw",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -938,6 +962,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/uJMpceGsqj4rbTf0TLeEJZ3LZRaKHrhYZw",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -979,6 +1004,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/uJYkdOGqrTkuZnxFUxciyDHFZQWt5_q1Ug",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1024,6 +1050,7 @@
       "videoStreamUrl": "",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -1056,6 +1083,7 @@
       "videoStreamUrl": "https://zoom.us/meeting/register/vpwqc-qpqDkvNhXl3WMzM6Fsh1tXdfky6w",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1101,6 +1129,7 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4626395691306412302",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1150,6 +1179,7 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4099803288880978958",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -1191,6 +1221,7 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/4361944453128924174",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1228,6 +1259,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/learn-how-to-use-truffle-boxes",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1273,6 +1305,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-utilizar-truffle-box-com-rsk",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1314,6 +1347,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1355,6 +1389,7 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/877417282457269771",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1400,6 +1435,7 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/6455007773111865870",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1441,6 +1477,7 @@
       "videoStreamUrl": "https://attendee.gotowebinar.com/register/2428593993172923662",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1488,6 +1525,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-and-rsk-use-cases",
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1534,6 +1572,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/blockchain-para-la-industria-financiera",
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1571,6 +1610,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-create-your-own-collectable-token",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Hands on",
@@ -1616,6 +1656,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-criar-seu-token-colecionavel",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Pré-requisitos (em português)",
@@ -1665,6 +1706,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/crea-tu-propio-non-fungible-token",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/U8NMo8PUH6Q",
       "_isPast": true
@@ -1702,6 +1744,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitgive-and-iov-for-covid",
       "tags": " idioma-english audiencia-enterprise",
       "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1743,6 +1786,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain",
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1784,6 +1828,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-on-chain-espanol",
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1826,6 +1871,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-de-rsk-y-rif",
       "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -1878,6 +1924,7 @@
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118437",
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov",
       "_isPast": true
@@ -1931,6 +1978,7 @@
       "videoStreamUrl": "https://next.brella.io/events/consensusdistributed/schedule/118604",
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=QEKz243x_IY&list=PLSyELPaIli1kpVbzJ3c7metuPBPojGwlG",
       "_isPast": true
@@ -1964,6 +2012,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ethereum-bridge",
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/bridge.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2002,6 +2051,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ethereum-token-bridge-en-espanol",
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/bridge.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2040,6 +2090,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/from-bitcoin-mining-to-rsk-merged-mining",
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2082,6 +2133,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-mineria-de-bitcoin-a-merged-mining",
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2124,6 +2176,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/why-we-need-decentralized-storage",
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2166,6 +2219,7 @@
       "videoStreamUrl": "",
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/5qy3aAnhCwc",
       "_isPast": true
@@ -2199,6 +2253,7 @@
       "videoStreamUrl": "",
       "tags": " idioma-portuguese audiencia-enterprise audiencia-general",
       "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/iXaKY7Nn4L4",
       "_isPast": true
@@ -2232,6 +2287,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-blockchain",
       "tags": " idioma-spanish audiencia-developers audiencia-spanish",
       "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2276,6 +2332,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-ecosystem-fund",
       "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience",
       "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2323,6 +2380,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/lFjYCcp21zw",
       "_isPast": true
@@ -2355,6 +2413,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/o-que-e-rsk",
       "tags": " idioma-portuguese audiencia-general",
       "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2397,8 +2456,9 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/7aaa3958-5508-4c24-804c-10498f7e154e/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/mineria-de-bitcoin-y-macro-tendencias",
-      "tags": " idioma-spanish audiencia-startups audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2443,6 +2503,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2490,6 +2551,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-blockchain",
       "tags": " idioma-spanish audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/dZYVohPV-XM",
       "_permalink": "/webinars/202006-005/",
@@ -2523,6 +2585,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk",
       "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2566,6 +2629,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk",
       "tags": " idioma-english audiencia-general recent",
       "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/6y23I8_4XG0",
       "_permalink": "/webinars/202006-007/",
@@ -2599,6 +2663,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-app-a-dap",
       "tags": " idioma-spanish audiencia-developers recent",
       "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/FQBPPd2FOvQ",
       "_permalink": "/webinars/202006-008/",
@@ -2638,6 +2703,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain",
       "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/SAXzU4_ifR8",
       "_permalink": "/webinars/202006-009/",
@@ -2673,6 +2739,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
       "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo recent",
       "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -2705,6 +2772,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle-na-rsk",
       "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -2743,6 +2811,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
       "tags": " idioma-english audiencia-developers recent",
       "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -2775,6 +2844,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol",
       "tags": " idioma-spanish audiencia-developers recent",
       "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -2812,7 +2882,12 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "/webinars/202007-005/banner-image.png",
       "resources": [
+        {
+          "label": "Slides",
+          "url": "https://developers.rsk.co/webinars/202007-005/slides/"
+        },
         {
           "label": "System pre-requisites",
           "url": "https://developers.rsk.co/tutorials/workshop-prereqs/"
@@ -2858,6 +2933,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
       "resources": [
         {
           "label": "Slides",
@@ -2899,6 +2975,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-006/",
@@ -2932,6 +3009,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testeando-smart-contracts-con-truffle",
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-007/",
@@ -2965,6 +3043,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk",
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-008/",
@@ -3002,12 +3081,13 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b5c806ac-1ec7-470b-b5a6-1c7a889c9f17/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/caso-carnes-validadas",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-009/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3038,6 +3118,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-is-dexfreight-leveraging-rsk",
       "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-010/",
@@ -3072,6 +3153,7 @@
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios",
       "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-011/",
