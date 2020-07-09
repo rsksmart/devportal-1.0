@@ -358,7 +358,7 @@ In the terminal, inside the project folder, run this command:
 truffle create test Register
 ```
 
-This command creates in the folder `test` a file for the smart contract `Register`, with a test that checks whether the published smart contract can be instantiated.
+This command creates a `test` file, related to the smart contract `Register`, in the `test` folder. This file has a test that checks whether the published smart contract can be instantiated.
 
 Check out the VS Code image:
 
