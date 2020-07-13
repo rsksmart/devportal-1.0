@@ -9,7 +9,7 @@ RIF Name Service (RNS) enables the use of human readable names for blockchain ad
 
 ## User Flows
 
-![](/assets/img/rif-marketplace/rifmkt-rns-uc.png)
+![RNS Use Cases](/assets/img/rif-marketplace/rifmkt-rns-uc.png)
 
 * High-level use cases with operations within the RNS Marketplace*
 
