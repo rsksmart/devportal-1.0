@@ -4,5 +4,5 @@ title: RIF Marketplace Services RNS Domains
 tags: rif, marketplace, rns
 ---
 
-- [Technical Spects](./techspecs)
+- [Technical Specifications](./techspecs)
 - [User Guide](./userguide)
