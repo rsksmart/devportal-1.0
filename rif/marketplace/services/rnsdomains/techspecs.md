@@ -73,7 +73,7 @@ Depending on the time and the way a domain was registered by the user it may be 
 ## Glossary
 
  - Actors
-    - **Buyer** - actor that wants buyan RNS Domain on the RIF Marketplace.
+    - **Buyer** - actor that wants buy an RNS Domain on the RIF Marketplace.
     - **Seller** - actor that wants to sell an RNS Domain on the RIF Marketplace.
  - Entities
     - **RNS Domain** - An NFT (non-fungible token) which represents a unique name for account/wallet addresses.
