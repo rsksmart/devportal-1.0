@@ -127,7 +127,7 @@ Install the dependencies
 npm i
 ```
 
-Run the UI (Will be available on http://localhost:3000/)
+Run the UI (Will be available on `http://localhost:3000/`)
 ```
 npm start
 ```
