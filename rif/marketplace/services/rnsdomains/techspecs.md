@@ -63,7 +63,7 @@ The architectre is composed of service-specific **smart contracts** deployed on 
 
 There is a `rates` service implemented in the Cache which periodically gets the currency conversion rates between all relevant currencies and tokens and stores this information in the database.
 
-### Keys management 
+### Key management 
 
 Keys are kept at the user's normal Wallet (e.g., Metamask), and all transactions will be originating from RIF Marketplace UI where they will be signed using this Wallet. 
 

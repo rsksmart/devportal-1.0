@@ -5,4 +5,3 @@ tags: rif, marketplace, rns
 ---
 
 - [Technical Specifications](./techspecs)
-- [User Guide](./userguide)
