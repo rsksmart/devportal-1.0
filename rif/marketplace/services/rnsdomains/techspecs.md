@@ -39,9 +39,9 @@ A Buyer can browse the available RNS Domains, filter based on the selected crite
 ## Architecture
 
 ### Data Structure
-This is an ERD diagram showing relationships between different data structures:
+This is an entity relationship diagram (ERD), showing relationships between different data structures:
 
-![](/assets/img/rif-marketplace/rifmkt-rns-erd.png)
+![RNS Entity Relationship Diagram](/assets/img/rif-marketplace/rifmkt-rns-erd.png)
 
 
 ### Components
