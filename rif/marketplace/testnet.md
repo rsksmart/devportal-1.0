@@ -16,7 +16,7 @@ tags: rif, marketplace, testnet
 
 ## Smart contracts
 
-### Name Services (NFTS Marketplace Contract)
+### Name Services (NFTs Marketplace Contract)
 
 RNS Domains Buy/Sell Contract:
 
