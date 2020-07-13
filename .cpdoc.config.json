@@ -2,6 +2,47 @@
   "id": "devportal",
   "groups": [
     {
+      "id": "rns-value-proposition-guide",
+      "skip": false,
+      "rootDir": "rif/rns/guide/value-proposition",
+      "copier": "httpGet",
+      "filters": [],
+      "postProcessors": [
+        {
+          "id": "markdownFrontMatter",
+          "options": {
+            "merge": "localFmRemoteBody"
+          }
+        },
+        {
+          "id": "markdownFirstHeadingRemover"
+        },
+        {
+          "id": "markdownLinkFixer",
+          "options": {
+            "substitutions": [
+            ]
+          }
+        },
+        {
+          "id": "markdownHtmlStyleRemover"
+        },
+        {
+          "id": "markdownExternalImageReplacer",
+          "options": {
+            "downloadMode": "default",
+            "imageDir": "rif/rns/guide/images"
+          }
+        }
+      ],
+      "files": [
+        {
+          "remote": "https://hackmd.io/NOM7urtqSAqcUyMlu5qmaA/download",
+          "local": "wallets.md"
+        }
+      ]
+    },
+    {
       "id": "rsk-workshop-testing-smart-contracts-with-truffle-slides",
       "rootDir": "webinars/202007-005",
       "skip": false,
