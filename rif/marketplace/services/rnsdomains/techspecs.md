@@ -46,7 +46,7 @@ This is an entity relationship diagram (ERD), showing relationships between diff
 
 ### Components
 
-![](/assets/img/rif-marketplace/rifmkt-rns-arch.png)
+![RNS Architecture](/assets/img/rif-marketplace/rifmkt-rns-arch.png)
 
 The main **high-level components** are:
 
