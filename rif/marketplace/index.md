@@ -10,7 +10,7 @@ The **RIF Marketplace** serves as the main component through which all the other
 
 The main goal of the **RIF Marketplace** is to enable the fast and efficient creation of decentralized sharing economies (DSE) on top of RSK and RIF, providing the required tools to bring all parties together. Providers can list their offerings and connect with potential users for a vast range of decentralized services such as Storage, Payments, Communications, and Data Services, presenting at the same time a common and unified interface and user experience.
 
-![](/assets/img/rif-marketplace/rifmkt-about.png)
+![RIF Marketplace About](/assets/img/rif-marketplace/rifmkt-about.png)
 
 
 You can access the Marketplace on the RSK Tesnet: [marketplace.testnet.rifos.org](https://marketplace.testnet.rifos.org/)
