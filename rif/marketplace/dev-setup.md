@@ -4,7 +4,7 @@ title: RIF Marketplace Development Environment
 tags: rif, marketplace, development, environment
 ---
 
-This page provides a guide for developers to setup the environment for the RIF Marketplace project.
+This page provides a guide for developers to set up the environment for the RIF Marketplace project.
 
 ### Contents:
 - [Dependencies](#dependencies)
@@ -163,4 +163,3 @@ In order to complete the required operations and get the required number of Conf
 ```sh
 sh forward.sh
 ```
-
