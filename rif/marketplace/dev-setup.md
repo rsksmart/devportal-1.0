@@ -78,7 +78,7 @@ This will create `./out` folder with a number of configuration files:
 ### 1.3. Browser wallet
 In MetaMask or Nifty import the first address from `keys.txt` file. The private key is `0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`
 
-Connect to the local ganache network (Localhost 8545 in the network dropdown). You should now see a balance of 99 ETH (or close to that - some gas was already used to deploy the Contracts)
+Connect to the local ganache network (`localhost:8545` in the network dropdown). You should now see a balance of 99 ETH (or close to that - some gas was already used to deploy the Contracts)
 
 Now we will add RIF token. Click on `Add Token` -> `Custom Token` and input the token address that is in `./out/ui-config.json` under the `rif` attribute (should be `0x67B5656d60a809915323Bf2C40A8bEF15A152e3e` if this is your first deployment). You should now see your RIF tokens balance of 997 RIF.
 
