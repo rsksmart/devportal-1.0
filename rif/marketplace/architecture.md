@@ -9,7 +9,7 @@ The **RIF Marketplace** at its core is composed of a set of **smart contracts** 
 The diagram below shows an overview of the **RIF Marketplace** architecture, which is explained next:
 
 
-![](/assets/img/rif-marketplace/rifmkt-architecture.png)
+![RIF marketplace architecture](/assets/img/rif-marketplace/rifmkt-architecture.png)
 
 
 **RIF Marketplace** is built around 3 core components:
