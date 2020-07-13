@@ -149,7 +149,7 @@ npm i
 
 Copy the configuration file generated in step [1.2](#12-deploying-smart-contracts) from `rif-marketplace-dev/out/rnsAdmin-ganache-config.json` into `rns-manager-react/src/config/contracts.local.json`.
 
-Now you can start the UI (You may need to switch to another port such as http://localhost:3001 if you are already running the RIF Marketplace UI)
+Now you can start the UI. (You may need to switch to another port such as `http://localhost:3001` if you are already running the RIF Marketplace UI)
 
 ```
 npm start
