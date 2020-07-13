@@ -30,7 +30,7 @@ Learn more about [RIF Lumino Network](./lumino)
 
 ### RIF Marketplace
 
-RIF Marketplace provides a one-stop shop for a wide variety of decentralized services, presenting at the same time a common unified/simplified interface and user experience. 
+RIF Marketplace provides a one-stop shop for a wide variety of decentralized services, presenting a unified/simplified interface and user experience. 
 
 Learn more about [RIF Marketplace](./marketplace)
 
