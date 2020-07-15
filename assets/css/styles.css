@@ -2108,13 +2108,13 @@ table.table.newsletter input[type='checkbox'] {
     top: 65px;
   }
   #home {
-    padding-top: 300px;
+    padding-top: 125px;
   }
 }
 
 @media (min-width: 2600px) {
   #home {
-    padding-top: 350px;
+    padding-top: 150px;
   }
 }
 
@@ -2327,6 +2327,14 @@ table.table.newsletter input[type='checkbox'] {
 .markdown-horizontal-margin30 {
   margin-left: 30%;
   margin-right: 30%;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.max-width-400 {
+  max-width: 400px;
 }
 
 @media screen and (max-width: 1200px) {
