@@ -3,6 +3,7 @@ layout: rsk
 title: "Full Integration Guide and Value proposition of RNS for Wallets"
 description: "Phase 1: Problems to solve, UX proposal, Send BTC example, Feature summary, RNS Integration guidelines. Phase 2:  Problems to solve, Feature summary"
 tags: rns, guide, wallets, value
+render_features: 'next-elem-class'
 ---
 
 ## Phase 1
@@ -33,19 +34,24 @@ tags: rns, guide, wallets, value
 
 1. _Open the [full UX flow for "RNS for Wallet Integration"](https://www.figma.com/file/sRGQFRnFTJXcVpxSGBwZIT/RNS-for-Wallet-Integration?node-id=0%3A1&viewport=421%2C-606%2C0.07086607068777084) in a desktop computer._
 2. _Press the PLAY ► button in the upper right corner._
+   [](#top "next-elem-class max-width-600")
    ![RNS for Wallets - Integration](/rif/rns/guide/images/rns-for-wallets-integration.png)
 
 ### Quick example: Send BTC
 
-
+[](#top "next-elem-class max-width-400")
 ![RNS for Wallets - Walkthrough 01](/rif/rns/guide/images/rns-for-wallets-walkthrough-01.png)
 
+[](#top "next-elem-class max-width-400")
 ![RNS for Wallets - Walkthrough 02](/rif/rns/guide/images/rns-for-wallets-walkthrough-02.png)
 
+[](#top "next-elem-class max-width-400")
 ![RNS for Wallets - Walkthrough 03](/rif/rns/guide/images/rns-for-wallets-walkthrough-03.png)
 
+[](#top "next-elem-class max-width-400")
 ![RNS for Wallets - Walkthrough 04](/rif/rns/guide/images/rns-for-wallets-walkthrough-04.png)
 
+[](#top "next-elem-class max-width-400")
 ![RNS for Wallets - Walkthrough 05](/rif/rns/guide/images/rns-for-wallets-walkthrough-05.png)
 
 This will send the funds to the app user’s Bitcoin address linked to `alice.yourwallet.rsk`.
