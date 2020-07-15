@@ -10,7 +10,7 @@ To use the application and the service we are going to need three things:
 
 1. An internet browser extension wallet. Read [Compatible wallets](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
 2. RBTC to pay for the transaction cost. See [Getting RBTC](#getting-rbtc)
-3. RIF tokens to buy and sell RNS domains. See [Getting RIF Tokens](#getting-rif-tokens). Also, read [here](#display-amount-of-tokens-in-the-nifty-wallet) on how to view your tokens in your wallet.
+3. RIF tokens to buy and sell RNS domains. See [Getting RIF Tokens](#getting-rif-tokens). Also, read [display amount of tokens](#display-amount-of-tokens-in-the-nifty-wallet) on how to view your tokens in your wallet.
 
 ### Compatible wallets
 
@@ -43,18 +43,18 @@ The RIF Marketplace can be used seamlessly with the following wallets. To setup 
     </p>
 </div>
 
-#### Connect Nifty wallet to RSK
+#### Connect Nifty Wallet to RSK
 
 1. Open your wallet.
 2. Open network selector
 
     ![Setup - Nifty wallet network selector](/rif/marketplace/guide/images/setup-nifty-wallet-network-selector.png)
 
-3. Choose RSK option
+3. Choose the RSK option
 
     ![Setup - Nifty wallet network selector RSK](/rif/marketplace/guide/images/setup-nifty-wallet-network-selector-rsk.png)
 
-> To use the RSK testnet network choose the RSK Testnet option instead of RSK.
+> To use the RSK testnet network choose the **RSK Testnet** option instead of RSK.
 
 #### Connect Metamask wallet to RSK
 
@@ -73,7 +73,7 @@ Read the [R-BTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges an
 
 The RNS domains in the RIF Marketplace have a value in RIF tokens.
 
-Read [RIF Token](https://developers.rsk.co/rif/token/) to find exchagnes and more RIF token information.
+Read [RIF Token](https://developers.rsk.co/rif/token/) to find exchanges and more information on the RIF Token.
 
 > If you are using the testnet you can get free funds in the [RIF faucet](https://faucet.rifos.org/)
 
@@ -100,7 +100,7 @@ To see how many tokens you have in your wallet you should list the RIF Token.
 
 #### Display amount of tokens in the Metamask wallet
 
-Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/custom-tokens) to add a custom token to the wallet. You should add the token address displayed [here](https://developers.rsk.co/rif/token).
+Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/custom-tokens) to add a custom token to the wallet. You should add the token address displayed in [RIF Token](https://developers.rsk.co/rif/token).
 
 
 ----

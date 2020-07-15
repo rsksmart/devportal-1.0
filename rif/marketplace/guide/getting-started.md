@@ -24,7 +24,7 @@ To buy a domain in the RIF Marketplace, a single transaction is involved. Let's 
 
 ![UserGuide - Marketplace Domains](/rif/marketplace/guide/images/userguide-marketplace-domains.png)
 
-3. Select the Domain you want to buy by clicking on the **Select** button. You will be redirected to the **BUY** confirmation screen, where you can review the order details and click on **"Buy Domain** to proceed.
+3. Select the Domain you want to buy by clicking on the **Select** button. You will be redirected to the **BUY** confirmation screen, where you can review the order details and click on **Buy Domain** to proceed.
 
 ![UserGuide - Marketplace Buy](/rif/marketplace/guide/images/userguide-marketplace-buy.png)
 
@@ -48,7 +48,7 @@ To sell a domain, two transactions are involved. Let's start:
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
-2. Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own, which are **available for sale**.
+2. Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own, that are **available for sale**.
 
 ![UserGuide - Marketplace Own Domains](/rif/marketplace/guide/images/userguide-marketplace-own-domains.png)
 
@@ -74,11 +74,11 @@ If you want to remove a domain which is listed for Sale, you can do that with tw
 
 1. Go to the [RIF Marketplace](https://marketplace.testnet.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
-2. Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own which are **available for sale**. On the left you will see three options, select **"Your Offers"**
+2. Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own which are **available for sale**. On the left you will see three options, select **Your Offers**
 
 ![UserGuide - Marketplace Listed Domains](/rif/marketplace/guide/images/userguide-marketplace-listed-domains.png)
 
-3. Select the domain you want to remove by clicking on the **X**. You will be redirected to the **CANCEL** confirmation page. You can then click on **Cancel Domain** to proceed.
+3. Select the domain you want to remove by clicking on **X**. You will be redirected to the **CANCEL** confirmation page. You can then click on **Cancel Domain** to proceed.
 
 ![UserGuide - Marketplace Cancel](/rif/marketplace/guide/images/userguide-marketplace-cancel.png)
 
@@ -92,7 +92,7 @@ If you want to remove a domain which is listed for Sale, you can do that with tw
 
 ![UserGuide - Domains Cancelled Confirmations Wait Completed](/rif/marketplace/guide/images/userguide-domains-cancelled-confirmations-wait-completed.png)
 
-Click on "**View Domain Listings"** to verify that the offer has been removed from the RIF Marketplace.
+Click on **View Domain Listings** to verify that the domain has been removed from the RIF Marketplace.
 
 ----
 
