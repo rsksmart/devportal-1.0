@@ -94,16 +94,7 @@ from the BTC derivation path in Electrum "Receive" tab.
 
 **This is the address that you have to use in order to do the transfer to the federation.**
 
-**3 Whitelist Bitcoin address in RSK**
-
-You need to complete [whitelisting](/rsk/rbtc/conversion/whitelist).
-
-**4 Send Bitcoin to RSK Federation address**
-
-<div class="fade alert alert-warning show">
-  IMPORTANT: DO NOT EXECUTE THIS STEP BEFORE BEING =
-  <a href="/rsk/rbtc/conversion/whitelist">WHITELISTED</a>.
-</div>
+**3 Send Bitcoin to RSK Federation address**
 
 <div class="fade alert alert-warning show">
 Note: You need to send a minimum amount of 0.01 BTC and
@@ -128,26 +119,25 @@ const getFederationAddress = async function(){
 })();
 ```
 
-Once you have the RSK Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
+Once you have the RSK Federation address, you can send Bitcoin to it from your Bitcoin address.
 
 Use Electrum to send BTCs to the RSK Federation Address. To do that:
 
 - Open Electrum
 - Go to Addresses Tab
-- Find the whitelisted address
 - Right click over it
 - Select the option "Spend From":
   ![Spend from](/assets/img/rsk/peg-ledger/electrumSpendFromOption.png)
 - Finally make a payment to the RSK Federation Address
   ![Sending Payment](/assets/img/rsk/peg-ledger/electrumSpendFrom.png)
 
-**5 Wait for BTC confirmations**
+**4 Wait for BTC confirmations**
 
 To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 > 100 blocks \* 10 minutes/block = 1000 minutes = 16.667 hours approx.
 
-**6 Get R-BTC address from Ledger harware wallet**
+**5 Get R-BTC address from Ledger harware wallet**
 
 Get the corresponding R-BTC address from your Ledger harware wallet, following these steps:
 
@@ -182,7 +172,7 @@ Get the corresponding R-BTC address from your Ledger harware wallet, following t
 - Select **Custom** Address and put the derivation path `m/44'/0'/0'/0`.
   Then choose the address that you got from the previous step.
 
-**7 Check R-BTC balance**
+**6 Check R-BTC balance**
 
 You can check balance of R-BTC address on MyCrypto or MEW setting the corresponding derivation path and selection the address.
 

@@ -32,16 +32,7 @@ and here we recommend to use Electrum BTC wallet for connecting to BTC Mainnet.
 
 ![Create a Legacy (`p2pkh`) wallet](/dist/images/legacy-private-key.png)
 
-**2 Whitelist Bitcoin address in RSK**
-
-You need to complete [whitelisting](/rsk/rbtc/conversion/whitelist).
-
-**3 Send Bitcoin to RSK Federation address**
-
-<div class="fade alert alert-warning show">
-  IMPORTANT: DO NOT EXECUTE THIS STEP BEFORE BEING
-  <a href="/rsk/rbtc/conversion/whitelist">WHITELISTED</a>.
-</div>
+**2 Send Bitcoin to RSK Federation address**
 
 <div class="fade alert alert-warning show">
 Note: You need to send a minimum amount of 0.01 BTC and
@@ -58,21 +49,21 @@ It should look like the screenshot below.
 
 ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
 
-Once you have the RSK Federation address, you can send Bitcoin to it from your whitelisted Bitcoin address.
+Once you have the RSK Federation address, you can send Bitcoin to it from your Bitcoin address.
 
-**4 Wait for BTC confirmations**
+**3 Wait for BTC confirmations**
 
 To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 > 100 blocks \* 10 minutes/block = 1000 minutes = 16.667 hours approx.
 
-**5 Get R-BTC address with BTC private key**
+**4 Get R-BTC address with BTC private key**
 
 You can get a corresponding R-BTC address with your BTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 > Note: when entering Bitcoin private key do not include _p2pkh:_ in the front.
 
-**6 Check R-BTC balance**
+**5 Check R-BTC balance**
 
 You can check balance of R-BTC address on Metamask, MyCrypto,
 or any RSK compatible wallets.
