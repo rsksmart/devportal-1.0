@@ -1,40 +1,35 @@
 ---
 layout: rsk
 title: "RSK Workshop: Quiz App to dApp"
-tags: rsk, workshop, solidity,javascript, swarm
-description: "App to dApp using RSK smart Contract and Swarm decentralize storage."
+tags: rsk, workshop, solidity, javascript, swarm
+description: "App to dApp using RSK Smart Contracts and Swarm decentralized storage."
 ---
-# App to dApp using RSK smart Contract and Swarm decentralize storage.
 
-by Dev Advocate Dulce Villarreal
+## Table of contents
 
-
-## Table of content
-
-* [Pre-requisites](#Pre-requisites)
-* [Objectives](#Objectives)
-* [Run the app](#Run-the-app)
-  * [Clone this repo](#Clone-this-repo)
-  * [Install dependencies](#Install-dependencies)
-  * [Run the project](#Run-the-project)
-* [App to dApp](#App-to-dApp)
-* [Run swarm](#Run-swarm)
-  * [Getting the questions from swarm](#Getting-the-questions-from-swarm)
-  * [Init truffle](#Init-truffle)
-  * [Specify the soldity compiler version](#Specify-the-soldity-compiler-version)
-  * [Create a contract](#Create-a-contract)
-  * [Get the gas price](#Get-the-gas-price)
-  * [Config truffle](#Config-truffle)
-  * [Add the testnet rsk network](#Add-the-testnet-rsk-network)
-  * [Run migrations](#Run-migrations)
-* [Modify the front end](#Modify-the-front-end)
-  * [Adding web3.js](#Adding-web3.js)
-  * [Getting the questions Second part](#Getting-the-questions-Second-part)
-  * [Modify the front end](#Modify-the-front-end)
-  * [Last step!](#Last-step!)
+* [Pre-requisites](#pre-requisites)
+* [Objectives](#objectives)
+* [Run the app](#run-the-app)
+  * [Clone this repo](#clone-repo)
+  * [Install dependencies](#install-dependencies)
+  * [Run the project](#run-the-project)
+* [App to dApp](#app-to-dapp)
+* [Run swarm](#run-swarm)
+  * [Getting the questions from swarm](#get-the-questions-from-swarm)
+  * [Init truffle](#initialize-truffle)
+  * [Specify the solidity compiler version](#specify-the-solidity-compiler-version)
+  * [Create a contract](#create-a-contract)
+  * [Get the gas price](#get-the-gas-price)
+  * [Config truffle](#config-truffle)
+  * [Add the testnet rsk network](#add-the-testnet-rsk-network)
+  * [Run migrations](#run-migrations)
+* [Modify the front end](#modify-the-front-end)
+  * [Adding web3.js](#adding-web3js)
+  * [Modify the front end](#modify-the-front-end)
+  * [Last step!](#last-step)
 
 
-## Pre-requisites or Set up
+## Pre-requisites
 
 Before we begin,
 you will need the following things set up on your system:
@@ -54,17 +49,17 @@ you will need the following things set up on your system:
   - Recommended install method for Windows: [Official installer](https://nodejs.org/en/)
 
 1. Install wallet browser
-  1.1 [Nifty Chrome extension](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en) 
+  1.1 [Nifty Chrome extension](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en)
   1.2 [Metamask instructions](https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
-2. Get some tokens in the [RSK faucet](https://faucet.rsk.co/)
+2. Get some `R-BTC` from the [RSK faucet](https://faucet.rsk.co/)
 
 
 3. Truffle.
 
 To install truffle, enter the following commands in your terminal;
 
-```bash=
+```bash
 $ npm install -g truffle
 ```
 
@@ -93,7 +88,8 @@ mkdir -p ${HOME}/swarm/bin
 mv swarm-linux-amd64-0.5.7-5ccfd995/swarm ${HOME}/swarm/bin
 echo 'export PATH=$PATH:${HOME}/swarm/bin' >> ~/.zshrc
 ```
-If you have bashrc terminal you must remplace ~/.zshrc for ~/.bashrc. 
+
+If you have bashrc terminal you must replace ~/.zshrc for ~/.bashrc.
 
 Mac OSX or Windows (with a POSIX-compliant shell such as git bash)
 should be pretty similar.
@@ -178,18 +174,11 @@ INFO [05-19|15:08:08.453] created ruid for request                 ruid=d89959fa
 INFO [05-19|15:08:08.453] request served                           ruid=d89959fa   code=200 time=41.936µs
 ```
 
-
-
-
-
-
 ## Objectives
 
-- Use your JS portfolio to create a web3 and blockchain portafolio by reusing old apps and transforming to dApps.
+- Use your JS portfolio to create a web3 and blockchain portfolio by reusing old apps and transforming to dApps.
 - Learn smart contracts and decentralize storage.
 - Create a fun dApp.
-
-
 
 ## Run the app
 
@@ -199,20 +188,20 @@ In order to run the simple JS app, follow the next instructions:
 
 Clone this repo, using the commands below;
 
-```bash=
+```bash
 $ git clone https://github.com/rsksmart/quiz-dapp
 $ cd quiz-dapp
 ```
 
 ### Install dependencies
 
-```bash=
+```bash
 $ npm install
 ```
 
 ### Run the project
 
-```bash=
+```bash
 $ npm run start
 ```
 
@@ -220,26 +209,25 @@ It should open a new tab in your browser.
 
 Note the questions are stored in the `questions.json` file.
 
-### Secuence diagram
+### Sequence diagram
 
-![Diagrama de secuencia](/images/secuenceDiagram.png?raw=true)
+![Sequence diagrams for app and dApp](images/secuenceDiagram.png)
 
 ## App to dApp
 
 It's time to convert your simple plain JS app to an dApp!
 
-
 ### Run swarm
 
 Run swarm in a new terminal and don't close it.
 
-```bash=
+```bash
 $ swarm
 ```
 
 Open a new terminal and upload your questions to swarm decentralized storage. When completed, swarm returns a hash.
 
-```bash=
+```bash
 $ cd js
 $ swarm --defaultpath questions.json up questions.json
 
@@ -248,7 +236,7 @@ $ swarm --defaultpath questions.json up questions.json
 
 Copy the hash returned and get the file info:
 
-```bash=
+```bash
 $ curl -s http://localhost:8500/bzz-raw:/54347e7150fdfa881f56d9845976b6d541930e60a16d6f5cd6877a6c3df31827 | jq
 
 {
@@ -267,7 +255,7 @@ $ curl -s http://localhost:8500/bzz-raw:/54347e7150fdfa881f56d9845976b6d541930e6
 
 You can verify the file content by sending a request to this new hash
 
-```bash=
+```bash
 curl -s http://localhost:8500/bzz-raw:/809b82283b3d0c3459fde4340ecb6a7a297b1d25e6cab6084d21257ba29e82c2 | jq
 
 {
@@ -277,7 +265,7 @@ curl -s http://localhost:8500/bzz-raw:/809b82283b3d0c3459fde4340ecb6a7a297b1d25e
       "question": " ...? ",
       "nextId": 2,
       "previousId": null,
-      
+
       ...
 ```
 
@@ -289,7 +277,7 @@ Add the new data source in `app.js`:
 
 Before:
 
-```javascript=
+```javascript
 mounted: () {
     axios.get('js/questions.json')
     ...
@@ -297,23 +285,23 @@ mounted: () {
 
 ```
 
-After: 
+After:
 
-```javascript=
+```javascript
 mounted: () {
     axios.get('http://localhost:8500/bzz-raw:/809b82283b3d0c3459fde4340ecb6a7a297b1d25e6cab6084d21257ba29e82c2')
 }
 
 ```
 
-Your data source is not static anymore. Your quiz application is now loading its data from a  decentralised file store. 
+Your data source is not static anymore. Your quiz application is now loading its data from a  decentralised file store.
 **Congratulations, your app is on its way to becoming a DApp!**
 
 ### Initialize truffle
 
 Change your directory and initialize truffle using the commands below;
 
-```bash=
+```bash
 $ cd ..
 $ truffle init
 ```
@@ -322,7 +310,7 @@ It will create the `contract` folder, `migrations`, and `truffle-config.js` file
 
 Note: if you don't have truffle installed, you can install it using the command below:
 
-```bash=
+```bash
 $ npm install -g truffle
 ```
 
@@ -330,7 +318,7 @@ $ npm install -g truffle
 
 In the `truffle-config.js` file, in the `compilers` section, we need to change the solidity compiler version
 
-```javascript=
+```javascript
 compilers: {
     solc: {
       version: "^0.4.14",    // Just change this line
@@ -344,7 +332,7 @@ In the `contracts` folder, create a new file named `Quiz.sol`.
 
 Copy and paste the following code in your editor:
 
-```
+```solidity
 pragma solidity ^0.4.14;
 
 contract Quiz {
@@ -389,7 +377,7 @@ contract Quiz {
 
 Now, in the terminal run the `compile` command
 
-```bash=
+```bash
 truffle compile
 ```
 
@@ -397,44 +385,43 @@ truffle compile
 
 Get and save the gas price from `testnet`:
 
-```bash=
+```bash
 $ curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
 
-$ ls -al 
+$ ls -al
 ```
 
 This command will create a new file named `.gas-price-testnet.json` with the gas price from `testnet` and can be verified with the command `ls -al`
-
 
 ### Config truffle
 
 Install the Wallet Provider and `dotenv` dependency:
 
-```bash=
+```bash
 npm install @truffle/hdwallet-provider dotenv --save
 ```
 
 Create a new file named `.env` in the root directory of your project and write your mnemonic on it.
 
-```bash=
+```bash
 $ touch .env
 ```
 
-```
-A_MNEMONIC='your twelve words mnemonic ...' 
+```bash
+A_MNEMONIC='your twelve words mnemonic ...'
 ```
 
 Remember: Don't share or deploy your mnemonic never!
 
 You should add the `.env` file to your `.gitignore` file.
 
-```bash=
+```bash
 echo ".env" >> .gitignore
 ```
 
 Open your `truffle-config.js` file and add the following lines at the beginning of the file:
 
-```javascript=
+```javascript
 const fs = require('fs');
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 require('dotenv').config();
@@ -455,7 +442,7 @@ console.log(gasPriceTestnet);
 
 In the same `truffle-config.js` in the `networks` section, add the testnet configuration:
 
-```javascript=
+```javascript
 testnet: {
       provider: () => new HDWalletProvider(A_MNEMONIC, 'https://public-node.testnet.rsk.co/2.0.1/'),
       network_id: 31,
@@ -466,22 +453,23 @@ testnet: {
 
 You can test your connection by running the following commands in your terminal
 
-```bash=
+```bash
 $ truffle console --network testnet
 65000000
-truffle(testnet)> 
+truffle(testnet)>
 ```
 
 ### Run migrations
 
 Add a new file named `2_deploy_contracts.js`.
-```bash=
+
+```bash
 $ touch migrations/2_deploy_contracts.js
 ```
 
 Then open `2_deploy_contracts.js` and write the following code:
 
-```javascript=
+```javascript
 var Quiz = artifacts.require('Quiz');
 
 module.exports = function (deployer) {
@@ -494,12 +482,13 @@ Run the migrations:
 
 If you are in the truffle console then just write `migrate`:
 
-```bash=
+```bash
 truffle(testnet)> migrate
 ```
-Otherwise 
 
-```bash=
+Otherwise
+
+```bash
 $ truffle migrate --network testnet
 ```
 
@@ -507,7 +496,7 @@ $ truffle migrate --network testnet
 
 You should see something similar to the following output in your terminal.
 
-```bash=
+```bash
 $ truffle(testnet)> migrate
 
 Compiling your contracts...
@@ -584,13 +573,13 @@ Exit from truffle console with `Ctrl + C` or typing `.exit`
 In `index.html`, before the rest of the scripts, we are going to add the following:
 Generally all the scripts are included in the open and closed tag`</body>`
 
-```htmlembedded=
-<script src="js/truffle-contract.js"></script> 
+```html
+<script src="js/truffle-contract.js"></script>
 ```
 
 Then, include the `web3` CDN just before the `js/app.js` script tag
 
-```htmlembedded=
+```html
 <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
 <script src="js/app.js"></script>
 ```
@@ -604,7 +593,7 @@ The order of the scripts will be:
 5. `web3.min.js` <- Web3 library
 6. `app.js` <- our app script
 
-```htmlmixed=
+```html
 <script src="js/truffle-contract.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bulma-steps@2.2.1/dist/js/bulma-steps.min.js"></script>
@@ -617,7 +606,7 @@ The order of the scripts will be:
 
 In the `app.js` file, clear the `mounted` method and add this new lines:
 
-```javascript=
+```javascript
 mounted () {
     this.initWeb3()
       .then(() => {
@@ -630,7 +619,7 @@ mounted () {
 
 Replace the `method` section
 
-```javascript=
+```javascript
 methods: {
     // get the questions from swarm !!!
     async initWeb3() {
@@ -675,7 +664,7 @@ methods: {
         const element = evt.target
         const answer = element.dataset.i + 1
         const index =  parseInt(element.dataset.index) + 1
-        
+
         const question = this.getQuestion(index)
         this.answers.push(answer)
 
@@ -716,8 +705,8 @@ methods: {
           .catch(err => {
             console.error(err)
           })
-        
-        
+
+
       })
     },
     //method that return the question by index
@@ -731,10 +720,10 @@ methods: {
     }
   }
 ```
- 
- 
- # Last step!
- 
+
+# Last step!
+
 Now reload your app in a browser, and interact with it.
 
-## Congratulations, your app is not interacting with a smart contract, and your app is decentralised!
+Congratulations, your app is now interacting with a smart contract (and decentralised storage).
+**Your app is decentralised!**
