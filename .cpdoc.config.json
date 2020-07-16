@@ -15,6 +15,16 @@
           }
         },
         {
+          "id": "markdownFirstHeadingRemover"
+        },
+        {
+          "id": "markdownLinkFixer",
+          "options": {
+            "substitutions": [
+            ]
+          }
+        },
+        {
           "id": "markdownExternalImageReplacer",
           "options": {
             "downloadMode": "default",
@@ -27,7 +37,7 @@
           "remote": "https://raw.githubusercontent.com/rsksmart/quiz-dapp/tutorial/README.md",
           "local": "quiz-app-to-dapp.md"
         }
-              ]
+      ]
     },
     {
       "id": "rif-marketplace-guide",
