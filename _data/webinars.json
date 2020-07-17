@@ -2378,7 +2378,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/1de3f667-da89-4880-b634-a28f30e544c2/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
-      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
       "resources": [],
@@ -2501,7 +2501,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/1de3f667-da89-4880-b634-a28f30e544c2/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-to-upload-a-website-on-rif-storage",
-      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "",
       "resources": [
@@ -2549,7 +2549,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/6be94df7-619c-4b91-b7e6-ece7ce2ec32c/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/tokens-para-desarrolladores-blockchain",
-      "tags": " idioma-spanish audiencia-developers audiencia-general recent",
+      "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
       "resources": [],
@@ -2583,7 +2583,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/f869f5f9-4c3a-498d-aeca-f3fecd0099ff/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/criando-um-no-local-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers recent",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
       "resources": [
@@ -2880,7 +2880,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers",
+      "tags": " idioma-english audiencia-developers recent",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "/webinars/202007-005/banner-image.png",
       "resources": [
@@ -2901,9 +2901,9 @@
           "url": "https://developers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/_XLgQ57MZcE",
       "_permalink": "/webinars/202007-005/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2931,7 +2931,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers",
+      "tags": " idioma-english audiencia-developers recent",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
       "resources": [
@@ -2945,7 +2945,7 @@
         }
       ],
       "recordedVideoUrl": "",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -2955,7 +2955,7 @@
       "lastModified": "2020-06-30T02:00:00.000Z",
       "status": "confirmed",
       "url": "",
-      "title": "Migrando dApps do Ethereum para RSK (Port Ethereum dApps)",
+      "title": "Migrando dApps do Ethereum para RSK",
       "description": "Este webinar é para os desenvolvedores Ethereum que desejam conhecer as possibilidades para migrar suas aplicações para a rede RSK.",
       "category": "Workshop",
       "locationCategory": "online",
@@ -2973,13 +2973,13 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/9948fd38-4bfd-488e-a7ea-868d9384c80a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
+      "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-006/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3023,7 +3023,7 @@
       "lastModified": "2020-06-24T09:30:00.000Z",
       "status": "confirmed",
       "url": "",
-      "title": "Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK",
+      "title": "Utilizando Truffle Boxes na RSK",
       "description": "RSK possui diversos Truffle boxes, que são estruturas de projetos prontos para serem customizados 😄\n\nEles incluem todas as configurações e dependencias necessárias para você se concentrar no que realmente importa:\n\n➡️ O desenvolvimento da sua aplicação descentralizada e seus smart contracts.\n\nNeste webinar você vai conhecer os Truffle Boxes da RSK e aprender a utilizá-los.",
       "category": "Workshop",
       "locationCategory": "online",
@@ -3085,7 +3085,7 @@
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/6Hm_v3dQ_uc",
       "_permalink": "/webinars/202007-009/",
       "_isPast": true
     },
@@ -3096,7 +3096,7 @@
       "timestamp": "2020-07-13T18:00:00.000Z",
       "lastModified": "2020-06-30T02:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/RSKBuenosAires/events/271762800/",
       "title": "Cómo dexFreight potencia la infraestructura de RSK para generar soluciones reales en la industria trillonaria de la logística",
       "description": "dexFreight es una plataforma descentralizada orientada a la industria logística que provee una solución integral para toda la cadena de valor desde la compra de un producto hasta su llegada a destino.Los clientes principales de dexFreight incluyen proveedores de logística, y transportistas. dexFreight permitirá un flujo mucho más eficiente para llevar los productos a manos del consumidor final reduciendo tiempos de entrega y optimizando costos. Al mismo tiempo, al generar eficiencias en toda la cadena dexFreight permitirá liberar gran cantidad de capital subutilizado o inmovilizado en inventarios, camiones, remolques, almacenes, etc.En este seminario web, Héctor Hernádez CEO de dexFreight CEO nos compartirá su visión sobre cómo blockchain y dexFreight están configurados para revolucionar la industria logística en la próxima década.",
       "category": "Talk",
@@ -3110,19 +3110,19 @@
       "presenters": [
         {
           "name": "Hector Hernandez",
-          "description": "dexFreight CEO",
+          "description": "dexFreight Chief Strategy Officer",
           "contact": "@dexHector"
         }
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/90643f0a-2561-4790-ba09-e158c8e780f3/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-is-dexfreight-leveraging-rsk",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/s-_yeyRh68o",
       "_permalink": "/webinars/202007-010/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3131,7 +3131,7 @@
       "timestamp": "2020-07-30T21:00:00.000Z",
       "lastModified": "2020-07-04T08:15:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/271970802/",
       "title": "Cómo incentivar la economía local en Municipios implementando tecnología Blockchain",
       "description": "En este webseminar Koibanx propone conocer la plataforma de digitalización de activos que desarrolló sobre tecnología Blockchain para estimular la economía local de municipios.\n\nSe hablará de cómo se crean activos digitales para gobierno, se realizará una demo en vivo y los detalles sobre la exitosa implementación que hicimos en conjunto con el Municipio de Marcos Paz en la Provincia de Buenos Aires, se explicará el marco jurídico actual y por último se responderán preguntas.",
       "category": "Talk",
@@ -3157,6 +3157,46 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-011/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202007-012",
+      "version": "1",
+      "timestamp": "2020-07-30T02:00:00.000Z",
+      "lastModified": "2020-07-17T03:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271946954/",
+      "title": "How is dexFreight leveraging RSK infrastructure to deliver real world solutions to the multi-trillion dollar logistics industry?",
+      "description": "dexFreight is a decentralized FinTech-enabled logistics market network for freight companies to handle shipments from booking to payment in one place. \ndexFreight primary customers include third-party logistics providers, carriers, and shippers. dexFreight technology will ultimately translate in shorter times and lower costs to get the products to the hands of the end consumer while unlocking vast amounts of capital from freight invoices, inventories, and underused assets like trucks, trailers, warehouses, etc.\nAt this webinar Hector Hernadez dexFreight CSO and Co-founder will share his insights and vision on how blockchain and dexFreight are set up to revolutionize the logistics industry within the next decade.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Hector Hernandez",
+          "description": "dexFreight Chief Strategy Officer",
+          "contact": "@dexHector"
+        },
+        {
+          "name": "Eddy Travia",
+          "description": "IOVlabs Asia-Pacific Director",
+          "contact": "@startupeddy"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/15834fc1-a2cb-4848-bbd3-d4edf7923947/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dexfreight-sea",
+      "tags": " idioma-english audiencia-general audiencia-enterprise",
+      "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202007-012/",
       "_isPast": false
     }
   ]

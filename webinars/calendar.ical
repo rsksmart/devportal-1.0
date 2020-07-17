@@ -2301,23 +2301,23 @@ UID:202007-006@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200715T220000Z
 DTSTART:20200715T220000Z
-SUMMARY:Migrando dApps do Ethereum para RSK (Port Ethereum dApps) 
-DESCRIPTION:Migrando dApps do Ethereum para RSK (Port Ethereum dApps)\n\nO
- nline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/
- migrando-dapps-do-ethereum-para-rsk\n
+SUMMARY:Migrando dApps do Ethereum para RSK 
+DESCRIPTION:Migrando dApps do Ethereum para RSK\n\nOnline only\n\nRSVP: \n
+ \nVideo stream: https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethe
+ reum-para-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Migrand
- o dApps do Ethereum para RSK (Port Ethereum dApps)</span></div>\n<div><spa
- n>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<
- div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/io
- v-labs-1/migrando-dapps-do-ethereum-para-rsk\">app.livestorm.co/iov-labs-1
- /migrando-dapps-do-ethereum-para-rsk</a></span></div>\n</BODY>\n</HTML>
+ o dApps do Ethereum para RSK</span></div>\n<div><span>Online only</span></
+ div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &n
+ bsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/migrando-dapp
+ s-do-ethereum-para-rsk\">app.livestorm.co/iov-labs-1/migrando-dapps-do-eth
+ ereum-para-rsk</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
-DESCRIPTION:Migrando dApps do Ethereum para RSK (Port Ethereum dApps) 
+DESCRIPTION:Migrando dApps do Ethereum para RSK 
 END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethere
@@ -2361,23 +2361,23 @@ UID:202007-008@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200729T220000Z
 DTSTART:20200729T220000Z
-SUMMARY:Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK 
-DESCRIPTION:Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK\n
- \nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs
- -1/utilizando-truffle-boxes-na-rsk\n
+SUMMARY:Utilizando Truffle Boxes na RSK 
+DESCRIPTION:Utilizando Truffle Boxes na RSK\n\nOnline only\n\nRSVP: \n\nVi
+ deo stream: https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-n
+ a-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Utiliza
- ndo Truffle Boxes na RSK = Using Truffle Boxes in RSK</span></div>\n<div><
- span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>
- \n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co
- /iov-labs-1/utilizando-truffle-boxes-na-rsk\">app.livestorm.co/iov-labs-1/
- utilizando-truffle-boxes-na-rsk</a></span></div>\n</BODY>\n</HTML>
+ ndo Truffle Boxes na RSK</span></div>\n<div><span>Online only</span></div>
+ \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
+ ;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/utilizando-truffl
+ e-boxes-na-rsk\">app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-r
+ sk</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
-DESCRIPTION:Utilizando Truffle Boxes na RSK = Using Truffle Boxes in RSK 
+DESCRIPTION:Utilizando Truffle Boxes na RSK 
 END:VALARM
 CATEGORIES:Workshop
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes
@@ -2428,18 +2428,21 @@ SUMMARY:Cómo dexFreight potencia la infraestructura de RSK para generar so
  luciones reales en la industria trillonaria de la logística 
 DESCRIPTION:Cómo dexFreight potencia la infraestructura de RSK para genera
  r soluciones reales en la industria trillonaria de la logística\n\nOnline 
- only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/how-is
- -dexfreight-leveraging-rsk\n
+ only\n\nRSVP: https://www.meetup.com/RSKBuenosAires/events/271762800/\n\nV
+ ideo stream: https://app.livestorm.co/iov-labs-1/how-is-dexfreight-leverag
+ ing-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Cómo de
  xFreight potencia la infraestructura de RSK para generar soluciones reales
   en la industria trillonaria de la logística</span></div>\n<div><span>Onli
- ne only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b
- >Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs
- -1/how-is-dexfreight-leveraging-rsk\">app.livestorm.co/iov-labs-1/how-is-d
- exfreight-leveraging-rsk</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Hector Hernandez\, dexFreight CEO\, @dexHector":mailto:devel
- opers@iovlabs.org
+ ne only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.
+ meetup.com/RSKBuenosAires/events/271762800/\">www.meetup.com/RSKBuenosAire
+ s/events/271762800/</a></span></div>\n<div><b>Video stream &nbsp\;</b><spa
+ n><a href=\"https://app.livestorm.co/iov-labs-1/how-is-dexfreight-leveragi
+ ng-rsk\">app.livestorm.co/iov-labs-1/how-is-dexfreight-leveraging-rsk</a><
+ /span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Hector Hernandez\, dexFreight Chief Strategy Officer\, @dexH
+ ector":mailto:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -2461,16 +2464,19 @@ DTSTART:20200730T210000Z
 SUMMARY:Cómo incentivar la economía local en Municipios implementando tecn
  ología Blockchain 
 DESCRIPTION:Cómo incentivar la economía local en Municipios implementando 
- tecnología Blockchain\n\nOnline only\n\nRSVP: \n\nVideo stream: https://ap
- p.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios\n
+ tecnología Blockchain\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES
+ /RSKBuenosAires/events/271970802/\n\nVideo stream: https://app.livestorm.c
+ o/iov-labs-1/incentivar-economia-local-en-municipios\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Cómo in
  centivar la economía local en Municipios implementando tecnología Blockcha
  in</span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;
- </b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"h
- ttps://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios
- \">app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios</a>
- </span></div>\n</BODY>\n</HTML>
+ </b><span><a href=\"https://www.meetup.com/es-ES/RSKBuenosAires/events/271
+ 970802/\">www.meetup.com/es-ES/RSKBuenosAires/events/271970802/</a></span>
+ </div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livest
+ orm.co/iov-labs-1/incentivar-economia-local-en-municipios\">app.livestorm.
+ co/iov-labs-1/incentivar-economia-local-en-municipios</a></span></div>\n</
+ BODY>\n</HTML>
 ORGANIZER;CN="Juan Pablo Orlando\, Head of Sales de Koibanx\, @koibanx":ma
  ilto:developers@iovlabs.org
 BEGIN:VALARM
@@ -2485,5 +2491,40 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/incentivar-economia-loca
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200704T081500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-012@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200730T020000Z
+DTSTART:20200730T020000Z
+SUMMARY:How is dexFreight leveraging RSK infrastructure to deliver real wo
+ rld solutions to the multi-trillion dollar logistics industry? 
+DESCRIPTION:How is dexFreight leveraging RSK infrastructure to deliver rea
+ l world solutions to the multi-trillion dollar logistics industry?\n\nOnli
+ ne only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/2719469
+ 54/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/dexfreight-sea\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>How is 
+ dexFreight leveraging RSK infrastructure to deliver real world solutions t
+ o the multi-trillion dollar logistics industry?</span></div>\n<div><span>O
+ nline only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://w
+ ww.meetup.com/es-ES/rsk-community/events/271946954/\">www.meetup.com/es-ES
+ /rsk-community/events/271946954/</a></span></div>\n<div><b>Video stream &n
+ bsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/dexfreight-se
+ a\">app.livestorm.co/iov-labs-1/dexfreight-sea</a></span></div>\n</BODY>\n
+ </HTML>
+ORGANIZER;CN="Hector Hernandez\, dexFreight Chief Strategy Officer\, @dexH
+ ector":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:How is dexFreight leveraging RSK infrastructure to deliver rea
+ l world solutions to the multi-trillion dollar logistics industry? 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/dexfreight-sea
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200717T033000Z
 END:VEVENT
 END:VCALENDAR
