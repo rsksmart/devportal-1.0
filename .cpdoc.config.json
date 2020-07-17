@@ -2,6 +2,44 @@
   "id": "devportal",
   "groups": [
     {
+      "id": "rsk-workshop-quiz-app-to-dapp",
+      "rootDir": "tutorials",
+      "skip": false,
+      "copier": "httpGet",
+      "filters": [],
+      "postProcessors": [
+        {
+          "id": "markdownFrontMatter",
+          "options": {
+            "merge": "localFmRemoteBody"
+          }
+        },
+        {
+          "id": "markdownFirstHeadingRemover"
+        },
+        {
+          "id": "markdownLinkFixer",
+          "options": {
+            "substitutions": [
+            ]
+          }
+        },
+        {
+          "id": "markdownExternalImageReplacer",
+          "options": {
+            "downloadMode": "default",
+            "imageDir": "tutorials"
+          }
+        }
+      ],
+      "files": [
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/quiz-dapp/tutorial/README.md",
+          "local": "quiz-app-to-dapp.md"
+        }
+      ]
+    },
+    {
       "id": "rif-marketplace-guide",
       "skip": false,
       "rootDir": "rif/marketplace/guide",
