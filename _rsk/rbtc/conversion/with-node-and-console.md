@@ -28,7 +28,7 @@ How to perform a peg-in.
 :exclamation: **Before starting:** Read
 [lock requirements](/rsk/rbtc/conversion/networks/mainnet/#btc-to-r-btc-conversion)
 
-1. With your whitelisted Bitcoin address,
+1. With your Bitcoin address,
    send a BTC transaction to the RSK Federation Address.
 2. Using your preferred BTC block explorer
    (e.g. [Blocktrail](https://www.blocktrail.com/BTC)),

@@ -28,6 +28,12 @@ RIF Lumino Network is a third-layer solution to the Bitcoin blockchain, that ena
 
 Learn more about [RIF Lumino Network](./lumino)
 
+### RIF Marketplace
+
+RIF Marketplace provides a one-stop shop for a wide variety of decentralized services, presenting a unified/simplified interface and user experience. 
+
+Learn more about [RIF Marketplace](./marketplace)
+
 #### RIF OS White Paper
 
 To understand the general vision behind RIF OS, read the [RIF OS White Paper](https://docs.rifos.org/rif-whitepaper-en.pdf).

@@ -44,13 +44,7 @@ We recommend to use Electrum BTC wallet for connecting to Bitcoin Testnet.
 There are a few options to get Bitcoin on Testnet.
 We use [https://testnet-faucet.mempool.co/](https://testnet-faucet.mempool.co/)
 
-**3 Whitelist Bitcoin address in RSK**
-
-You can contact us in RSK official
-[Gitter channels](https://gitter.im/rsksmart/getting-started)
-to whitelist your Bitcoin Testnet address.
-
-**4 Send Bitcoin to RSK Federation address**
+**3 Send Bitcoin to RSK Federation address**
 
 The RSK Federation address is retrieved by making a Smart Contract call
 on RSK Testnet.
@@ -64,17 +58,17 @@ It should look like the screenshot below.
 ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
 
 Once you have the RSK Federation address,
-you can send Bitcoin to it from your whitelisted Bitcoin address.
+you can send Bitcoin to it from your Bitcoin address.
 
 > Note: You need to send a minimum amount of 0.01 BTC for conversion.
 
-**5 Get tR-BTC address with tBTC private key**
+**4 Get tR-BTC address with tBTC private key**
 
 You can get a corresponding tR-BTC address with your tBTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
 
 > Note: when entering Bitcoin private key do not include _p2pkh:_ in the front.
 
-**6 Check tR-BTC balance on Testnet**
+**5 Check tR-BTC balance on Testnet**
 
 You can check balance of above tR-BTC address on Metamask,
 MyCrypto or any RSK Testnet compatible wallets.
