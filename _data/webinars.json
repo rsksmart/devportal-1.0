@@ -2901,7 +2901,7 @@
           "url": "https://developers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/_XLgQ57MZcE",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=_bVwar_p0wo",
       "_permalink": "/webinars/202007-005/",
       "_isPast": true
     },
@@ -2944,7 +2944,7 @@
           "url": "https://dappsdev.org/hands-on/mocha-intro/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/_bVwar_p0wo",
       "_isPast": true
     },
     {
@@ -2954,7 +2954,7 @@
       "timestamp": "2020-07-15T22:00:00.000Z",
       "lastModified": "2020-06-30T02:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271846531/",
       "title": "Migrando dApps do Ethereum para RSK",
       "description": "Este webinar é para os desenvolvedores Ethereum que desejam conhecer as possibilidades para migrar suas aplicações para a rede RSK.",
       "category": "Workshop",
@@ -2988,7 +2988,7 @@
       "timestamp": "2020-07-23T00:00:00.000Z",
       "lastModified": "2020-06-24T09:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/271987115/",
       "title": "Testeando Smart Contracts con Truffle",
       "description": "Aprenda a crear y ejecutar pruebas en sus contratos inteligentes RSK con Truffle.",
       "category": "Workshop",
@@ -3022,7 +3022,7 @@
       "timestamp": "2020-07-29T22:00:00.000Z",
       "lastModified": "2020-06-24T09:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271987022/",
       "title": "Utilizando Truffle Boxes na RSK",
       "description": "RSK possui diversos Truffle boxes, que são estruturas de projetos prontos para serem customizados 😄\n\nEles incluem todas as configurações e dependencias necessárias para você se concentrar no que realmente importa:\n\n➡️ O desenvolvimento da sua aplicação descentralizada e seus smart contracts.\n\nNeste webinar você vai conhecer os Truffle Boxes da RSK e aprender a utilizá-los.",
       "category": "Workshop",
@@ -3197,6 +3197,111 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-012/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202007-013",
+      "version": "1",
+      "timestamp": "2020-07-31T21:00:00.000Z",
+      "lastModified": "2020-07-22T06:15:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "rWallet and RSK libraries",
+      "description": "At this webinar we are going to review in depth the recently launched rWallet and the tools provided by the RSK library.\n\nSome benefits:\n- Security\n- Autonomy\n- Lightness\n- Compatibility\n- Simplicity",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Chris Li",
+          "description": "RSK Studio Developer",
+          "contact": "@chrisli2046"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/ec855c22-6b23-42b9-8f43-89a6554079cf/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries",
+      "tags": " idioma-english audiencia-developers audiencia-general",
+      "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202007-013/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-001",
+      "version": "1",
+      "timestamp": "2020-08-03T17:00:00.000Z",
+      "lastModified": "2020-07-22T06:15:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Evshare: Healthier and Sustainable Cities through Blockchain Technologies",
+      "description": "EVshare mision is to create cleaner, healthier, sustainable and more liveable cities ultimately focused on decarbonization and enabling a sharing economy.\nRSK Blockchain technology is the basis of EVShare's Decentralized platform.\nVehicles, passengers, goods and energy players interact in the community forming an efficient ecosystem.\nAt this webinar Eduardo Javier Munoz will delve into EVshare business model and it's use cases to date.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Eduardo Javier Munoz",
+          "description": "CEO EVshare",
+          "contact": "@EVShareMobility"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities",
+      "tags": " idioma-english audiencia-general audiencia-enterprise",
+      "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-001/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-002",
+      "version": "1",
+      "timestamp": "2020-08-03T21:00:00.000Z",
+      "lastModified": "2020-07-22T06:15:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Evshare: ciudades sustentables a traves de la implementación de tecnología blockchain",
+      "description": "La misión de EVshare es crear ciudades más limpias, saludables, sostenibles y habitables a través de la descarbonización permitiendo al mismo tiempo una economía compartida.\nLa tecnología RSK Blockchain es la base de la plataforma descentralizada de EVShare.\nVehículos, pasajeros, entidades de energía interactúan en la comunidad formando un ecosistema eficiente.\nEn este webinar, Eduardo Javier Muñoz compartirá el modelo de negocio de EVshare y sus casos de uso hasta la fecha.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Eduardo Javier Munoz",
+          "description": "CEO EVshare",
+          "contact": "@EVShareMobility"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-002/",
       "_isPast": false
     }
   ]
