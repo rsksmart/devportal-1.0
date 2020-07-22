@@ -192,9 +192,14 @@ csvConverter
     return sortedList;
   });
 
-function timestampColumnParser(item) {
-  const date = new Date(item);
-  const iso8601 = date.toISOString();
+function timestampColumnParser(item, field, line) {
+  let iso8601;
+  try {
+    const date = new Date(item);
+    iso8601 = date.toISOString();
+  } catch (ex) {
+    throw new Error(`Cannot process timestamp '${item}' from field '${field}' in '${JSON.stringify(line)}'`);
+  }
   return iso8601;
 }
 
