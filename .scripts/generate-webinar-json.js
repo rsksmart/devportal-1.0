@@ -61,6 +61,20 @@ csvConverter
     } else {
       item.presenters = [];
     }
+    if (item.recordedVideoUrl &&
+        item.recordedVideoUrl.match('(https?://)?(www.)?youtube|youtu\.be')) {
+      let youtubeVideoId;
+      if (!item.recordedVideoUrl.match('embed')) {
+        youtubeVideoId = item.recordedVideoUrl
+          .split(/v\/|v=|youtu\.be\//)[1]
+          .split(/[?&]/)[0];
+      } else {
+        youtubeVideoId = item.recordedVideoUrl
+          .split(/embed\//)[1]
+          .split('"')[0];
+      }
+      item.youtubeVideoId = youtubeVideoId;
+    }
   })
   .on('error', (error) => {
     if (error) {
@@ -157,6 +171,7 @@ csvConverter
           bannerImage,
           resources,
           recordedVideoUrl,
+          youtubeVideoId,
         } = event;
         return {
           type,
@@ -181,6 +196,7 @@ csvConverter
           bannerImage,
           resources,
           recordedVideoUrl,
+          youtubeVideoId,
           _permalink,
           _isPast,
         };
