@@ -4,12 +4,22 @@ const fs = require('fs');
 
 const webinarsJson = require('../_data/webinars.json');
 
+const MAX_DESCRIPTION_LENGTH = 140;
+
 function writeEventFiles() {
   return webinarsJson.events
     .filter(
       (event) => (event._permalink),
     )
     .map((event) => {
+      let descriptionSummary = event.description
+      .replace(/[^A-Za-z0-9\,\.\-\_]/g, ' ')
+      .replace(/\s+/g, ' ');
+    if (descriptionSummary.length > MAX_DESCRIPTION_LENGTH) {
+      descriptionSummary = descriptionSummary
+        .substring(0, MAX_DESCRIPTION_LENGTH -1) + '…';
+    }
+
       const eventPresentersYaml =
         (!Array.isArray(event.presenters) || event.presenters.length < 1) ?
           '' :
@@ -48,6 +58,7 @@ event:
   id: "${event.id}"
   timestamp: "${event.timestamp}"
   title: "${event.title}"
+  descriptionSummary: "${descriptionSummary}"
   rsvpEmbedUrl: "${event.rsvpEmbedUrl}"
   category: "${event.category}"
   locationCategory: "${event.locationCategory}"

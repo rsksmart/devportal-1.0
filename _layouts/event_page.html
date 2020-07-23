@@ -114,14 +114,28 @@
                         <h1>
                           <span class="bold rsk_green">{{ event.title }} - RSK + RIF Webinars</span>
                         </h1>
-                        <p class="mb-5">
-                          {{ content }}
-                        </p>
-                        <p class="mb-5">
-                          <div class="image-group image-group-banner" style="background-image: url('{{ event.bannerImage | default: event.image }}');">
-                            <div class="event-type">{{ event.category }}</div>
-                          </div>
-                        </p>
+                        {% if event.youtubeVideoId != "" %}
+                           <div class="video-container">
+                              <iframe
+                                 src="https://www.youtube-nocookie.com/embed/{{ event.youtubeVideoId }}?cc_load_policy=1"
+                                 frameborder="0"
+                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                 allowfullscreen="allowfullscreen">
+                              </iframe>
+                           </div>
+                           <p class="mb-5">
+                              {{ content }}
+                           </p>
+                        {% else %}
+                           <p class="mb-5">
+                              {{ content }}
+                           </p>
+                           <p class="mb-5">
+                              <div class="image-group image-group-banner" style="background-image: url('{{ event.bannerImage | default: event.image }}');">
+                                 <div class="event-type">{{ event.category }}</div>
+                              </div>
+                           </p>
+                        {% endif %}
                         <div
                           class="tiempo mb-5"
                           data-timestamp="{{ event.timestamp }}"
