@@ -55,7 +55,8 @@ ${eventPresentersYaml}
   tags: "${event.tags}"
   image: "${event.image}"
 ${bannerImageYaml}${eventResourcesYaml}
-  recordedVideoUrl: "${event.recordedVideoUrl}"
+  recordedVideoUrl: "${event.recordedVideoUrl || ''}"
+  youtubeVideoId: "${event.youtubeVideoId || ''}"
   isPast: ${event._isPast}
 ---
 

@@ -1090,6 +1090,27 @@ a:hover .desc-group span:first-child {
     font-size: 30px;
 }
 
+/*videos*/
+
+.video-container {
+    position: relative;
+    padding-top: 56.25%;
+    min-height: 534px;
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* responsive*/
+
 @media (max-width: 576px) {
     #footer .footer-top .footer-links ul li:first-child {
         padding-top: 0;
