@@ -17,7 +17,7 @@
       <title>{{ event.title }} - RSK + RIF Webinars</title>
       <!-- og info -->
       <meta property="og:title" content="{{ event.title }} - RSK + RIF Webinars">
-      <meta property="og:description" content="{{ event.description }} - RSK + RIF Webinars">
+      <meta property="og:description" content="{{ event.descriptionSummary }} - RSK + RIF Webinars">
       <meta property="og:url" content="{{ site.url }}{{ page.url }}">
       {% if event.youtubeVideoId != "" %}
          <meta property="og:image" content="https://i.ytimg.com/vi/{{ event.youtubeVideoId }}/maxresdefault.jpg" />
@@ -33,7 +33,7 @@
          <meta name="twitter:card" content="summary">
       {% endif %}
       <meta name="twitter:title" content="{{ event.title }} - RSK + RIF Webinars">
-      <meta name="twitter:description" content="{{ event.description }} - RSK + RIF Webinars">
+      <meta name="twitter:description" content="{{ event.descriptionSummary }} - RSK + RIF Webinars">
       <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
       <meta name="twitter:site" content="{{ event.twitterSite | default: "@rsksmart" }}">
       {% if event.youtubeVideoId != "" %}
@@ -195,16 +195,7 @@
                               <span>
                                   <i class="fa fa-video" aria-hidden="true"></i>
                                   <span class="text display-recorded-video-url">
-                                    {% if event.youtubeVideoId != "" %}
-                                    <div class="video-container">
-                                       <iframe
-                                          src="https://www.youtube-nocookie.com/embed/{{ event.youtubeVideoId }}?cc_load_policy=1"
-                                          frameborder="0"
-                                          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                          allowfullscreen="allowfullscreen">
-                                       </iframe>
-                                    </div>
-                                    {% elsif event.recordedVideoUrl != "" %}
+                                    {% if event.recordedVideoUrl != "" %}
                                     <a href="{{ event.recordedVideoUrl }}"
                                         rel="noreferrer noopener"
                                         target="_blank">
