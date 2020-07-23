@@ -18,13 +18,32 @@
       <!-- og info -->
       <meta property="og:title" content="{{ event.title }} - RSK + RIF Webinars">
       <meta property="og:description" content="{{ event.description }} - RSK + RIF Webinars">
-      <meta property="og:image" content="{{ site.url }}{{ event.bannerImage | default: "/assets/img/logos/rsk-rif-logos-unfurl-og.jpeg" }}">
       <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+      {% if event.youtubeVideoId != "" %}
+         <meta property="og:image" content="https://i.ytimg.com/vi/{{ event.youtubeVideoId }}/maxresdefault.jpg" />
+         <meta property="og:type" content="video">
+         <meta property="og:video" content="https://www.youtube.com/v/{{ event.youtubeVideoId }}" />
+      {% else %}
+         <meta property="og:image" content="{{ site.url }}{{ event.bannerImage | default: "/assets/img/logos/rsk-rif-logos-unfurl-og.jpeg" }}">
+      {% endif %}
       <!-- Twitter Card data -->
-      <meta name="twitter:card" content="summary">
+      {% if event.youtubeVideoId != "" %}
+         <meta name="twitter:card" content="player">
+      {% else %}
+         <meta name="twitter:card" content="summary">
+      {% endif %}
       <meta name="twitter:title" content="{{ event.title }} - RSK + RIF Webinars">
       <meta name="twitter:description" content="{{ event.description }} - RSK + RIF Webinars">
-      <meta name="twitter:image" content="{{ site.url }}{{ event.bannerImage | default: "/assets/img/logos/rsk-rif-logos-unfurl-twitter.jpeg" }}">
+      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+      <meta name="twitter:site" content="{{ event.twitterSite | default: "@rsksmart" }}">
+      {% if event.youtubeVideoId != "" %}
+         <meta name="twitter:image" content="https://i.ytimg.com/vi/{{ event.youtubeVideoId }}/maxresdefault.jpg" />
+         <meta name="twitter:player" content="https://www.youtube.com/embed/{{ event.youtubeVideoId }}" />
+         <meta name="twitter:player:width" content="435" />
+         <meta name="twitter:player:height" content="251" />
+      {% else %}
+         <meta name="twitter:image" content="{{ site.url }}{{ event.bannerImage | default: "/assets/img/logos/rsk-rif-logos-unfurl-twitter.jpeg" }}">
+      {% endif %}
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="/webinars/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/webinars/img/favicons/favicon-32x32.png">
