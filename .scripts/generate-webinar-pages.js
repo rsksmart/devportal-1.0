@@ -37,6 +37,10 @@ function writeEventFiles() {
         `  bannerImage: "${event.bannerImage}"\n` :
         '';
 
+      const twitterSiteYaml = event.twitterSite ?
+        `  twitterSite: "${event.twitterSite}"\n` :
+        '';
+
       const markdown = `---
 layout: event_page
 permalink: "${event._permalink}"
@@ -54,7 +58,7 @@ ${eventPresentersYaml}
   videoStreamUrl: "${event.videoStreamUrl}"
   tags: "${event.tags}"
   image: "${event.image}"
-${bannerImageYaml}${eventResourcesYaml}
+${bannerImageYaml}${twitterSiteYaml}${eventResourcesYaml}
   recordedVideoUrl: "${event.recordedVideoUrl || ''}"
   youtubeVideoId: "${event.youtubeVideoId || ''}"
   isPast: ${event._isPast}
