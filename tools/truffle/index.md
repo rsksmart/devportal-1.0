@@ -25,6 +25,7 @@ npm install truffle -g
 ## More info:
 
 - [Truffle and Open Zeppelin](/tutorials/ethereum-devs/setup-truffle-oz)
+- [Testing smart contracts using Truffle](/tutorials/ethereum-devs/truffle-test/)
 - [Truffle Boxes](/tools/truffle/boxes)
 - [Truffle Ganache](/tools/truffle/ganache)
 - [Truffle Documentation](https://www.trufflesuite.com/docs)
