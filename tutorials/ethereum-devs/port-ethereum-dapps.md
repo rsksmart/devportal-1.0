@@ -15,7 +15,15 @@ render_features: "custom-terminals"
 
 Smart contracts for RSK are written using Solidity (a Javascript like programming language) and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK without changing the smart contract.
 
-#### Solidity
+### Translations
+
+#### Portuguese - Português
+
+Este artigo está disponível em Português: [Migrando dApps do Ethereum para RSK](https://solange.dev/2020/rsk-port-ethereum-dapps/ "Migrando dApps do Ethereum para RSK").
+
+E também fizemos um [webinar](/webinars/202007-006/ "Migrando dApps do Ethereum para RSK")  sobre o assunto, veja o [vídeo](https://youtu.be/-7Oi9_BDr5k)
+
+### Solidity
 
 New to Solidity? You can learn more using the [Solidity docs](https://solidity.readthedocs.io/).
 
