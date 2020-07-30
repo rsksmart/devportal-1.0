@@ -6,7 +6,7 @@ tags: libraries, rsk, rsk3js, javascript, web3js
 
 # rsk3.js - RSK Javascript API
 
-The rsk3.js suite is a collection of libraries to interact with a local or remote RSK blockchain node, with the intent of making common function calls easier to perform and to provide rapid development building blocks for DApp developers. Those developers who have used Ethereum’s very popular web3 Javascript library will find themselves in familiar territory, with most function calls being very similar in syntax to those in web3 but adapted for RSK’s blockchain. 
+The rsk3.js suite is a collection of libraries to interact with local or remote RSK blockchain nodes, with the intent of making common function calls easier to perform, and to provide rapid development building blocks for DApp developers. Developers who have used web3.js library to interact with the Ethereum blockchain will find themselves in familiar territory, as most function calls have a very similar syntax to those in web3.js, and are adapted for RSK’s blockchain. 
 
 ## Installation
 
