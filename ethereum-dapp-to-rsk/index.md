@@ -110,9 +110,7 @@ Our goal is to join forces and give options to people who believe in the power o
 - [Truffle](/tools/truffle)
 - [Gas Station](http://rskgasstation.info)
 
-<h2>Webinar Token Bridge</h2>
-
-<h3>Webinar Series: RSK - Ethereum Token Bridge</h3>
+<h2>Webinar Series: RSK - Ethereum Token Bridge</h2>
 
 In English
 
