@@ -259,7 +259,7 @@ First, we need to obtain an account on RSK Testnet and get some tR-BTC from the 
 
 Visit the [faucet](https://faucet.testnet.rsk.co/) to gain some tR-BTC to use in the Testnet.
 
-Enter the account address from MetaMask and wait some seconds for MetaMask to refresh the new balance.
+Enter the account address from MetaMask and wait several seconds for MetaMask to refresh the new balance.
 
 <img class="port-eth-app-img" src="/assets/img/tutorials/port-ethereum-dapps/testnet-faucet.png">
 
