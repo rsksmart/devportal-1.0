@@ -225,7 +225,7 @@ contract EIP20 is EIP20Interface {
 }
 ```
 
-We also need to create a migration script in the migration folder: 
+We also need to create a migration script in the migrations folder: 
 `migrations/2_deploy_tokens.js`
 
 ```
