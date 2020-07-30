@@ -48,19 +48,19 @@ The Developer Portal is the home for RSK documentation for end users and develop
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/develop">
+            <a href="/ethereum-dapp-to-rsk">
             <div class="icon smart h-100">
             <div class="icon-cont text-center my-auto">
             <img src="/assets/img/features/contract-icon.png" alt="started icon">
             </div>
             </div>
-            </a><div class="content two-line-title-content"><a href="/develop">
+            </a><div class="content two-line-title-content"><a href="/ethereum-dapp-to-rsk">
             <div class="content-container">
                 <p class="card-title rsk_green">Smart Contract Development</p>
                 <p class="card-desc">Learn how to port Ethereum projects to RSK</p>
             </div>
-            </a><div class="btn-container"><a href="/develop">
-                </a><a class="green" href="/develop">Read More</a>
+            </a><div class="btn-container"><a href="/ethereum-dapp-to-rsk">
+                </a><a class="green" href="/ethereum-dapp-to-rsk">Read More</a>
             </div>
             </div>
         </div>
