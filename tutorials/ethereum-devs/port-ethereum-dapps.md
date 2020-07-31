@@ -48,7 +48,7 @@ Another dependency is NPM, which comes bundled with Node.js. If you need it, go 
 Note that NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
 
 If you want to have more than one version installed,
-the most fuss-free way to install and manage multiple versions of `node` on your computer is [nvm](https://github.com/nvm-sh/nvm).
+the most fuss-free way to install and manage multiple versions of `node` on your computer is via [nvm](https://github.com/nvm-sh/nvm).
 
 ### Truffle Framework
 
