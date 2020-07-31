@@ -238,7 +238,7 @@ module.exports = (deployer) => {
 
 ## Step 2 : Deploy Solidity Code as RSK Smart Contract
 
-We are going to deploy the example smart contract on to RSK Testnet.
+We are going to deploy the example smart contract on to the RSK Testnet.
 
 ### Testnet and Faucet
 
