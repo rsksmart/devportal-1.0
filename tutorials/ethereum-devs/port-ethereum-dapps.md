@@ -370,7 +370,7 @@ The balance is 0.
 
 **Transfer Token Directly Between Two Accounts**
 
-Now use the following command to transfer 1 token from the minter account to the previous account
+Now use the following command to transfer 1 token from the minter's account to the previous account
 
 ```shell
 EIP20.deployed().then((instance=>instance.transfer("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52", 1)))
