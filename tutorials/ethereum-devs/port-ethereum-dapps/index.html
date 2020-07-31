@@ -770,8 +770,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-21 02:39:06 +0000T00:00:00.000Z">2020-05-21</time> | -->
-     9' to read |
+    <!--time role="presentation" datetime="2020-07-31 04:37:26 +0000T00:00:00.000Z">2020-07-31</time> | -->
+     14' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/ethereum-devs/port-ethereum-dapps.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1431,34 +1431,72 @@
 
                   <h1 class="page-title" id="top">Port Ethereum dApps</h1>
 
-                  <h2 id="step-1--import-existing-code">Step 1 : Import Existing Code</h2>
+                  <style>
+  img.port-eth-app-img{
+    margin:0 auto;
+    width: 80%;
+  }
+</style>
 
 <p>Smart contracts for RSK are written using Solidity (a Javascript like programming language) and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK without changing the smart contract.</p>
 
-<h4 id="solidity-and-editor">Solidity and Editor</h4>
+<h3 id="translations">Translations</h3>
 
-<p>New to Solidity? You can learn more using the <a href="https://solidity.readthedocs.io/en/v0.5.11/" rel="external noopener noreferrer" target="_blank">Solidity docs</a>.</p>
+<h4 id="portuguese---português">Portuguese - Português</h4>
+
+<p>Este artigo está disponível em Português: <a href="https://solange.dev/2020/rsk-port-ethereum-dapps/" title="Migrando dApps do Ethereum para RSK" rel="external noopener noreferrer" target="_blank">Migrando dApps do Ethereum para RSK</a>.</p>
+
+<p>E também fizemos um <a href="../../../webinars/202007-006/" title="Migrando dApps do Ethereum para RSK">webinar</a>  sobre o assunto, veja o <a href="https://youtu.be/-7Oi9_BDr5k" rel="external noopener noreferrer" target="_blank">vídeo</a></p>
+
+<h3 id="solidity">Solidity</h3>
+
+<p>New to Solidity? You can learn more using the <a href="https://solidity.readthedocs.io/" rel="external noopener noreferrer" target="_blank">Solidity docs</a>.</p>
+
+<h2 id="requirements">Requirements</h2>
+
+<ul>
+  <li>Code editor</li>
+  <li>Node.js and NPM (Node Package Manager)</li>
+  <li>Truffle Framework</li>
+</ul>
+
+<h3 id="code-editor">Code editor</h3>
 
 <p>You can edit Solidity using any text editor but it is a good idea to use more advanced tools, the following is a list of some of them:</p>
 
 <ul>
-  <li>Visual Studio Code</li>
-  <li>Atom</li>
-  <li>Sublime</li>
+  <li><a href="https://code.visualstudio.com/" rel="external noopener noreferrer" target="_blank">Visual Studio Code - VS Code</a></li>
+  <li><a href="https://atom.io/" rel="external noopener noreferrer" target="_blank">Atom</a></li>
+  <li><a href="https://www.sublimetext.com/" rel="external noopener noreferrer" target="_blank">Sublime Text</a></li>
 </ul>
 
-<h4 id="truffle-framework">Truffle Framework</h4>
+<h3 id="nodejs-and-npm">Node.js and NPM</h3>
+
+<p>Another dependency is NPM, which comes bundled with Node.js. If you need it, go to <a href="https://nodejs.org/en/" rel="external noopener noreferrer" target="_blank">Node.js</a> install.</p>
+
+<p>Note that NPM is usually installed together with Node.js, so after installing Node.js, there’s no need to install it separately.</p>
+
+<p>If you want to have more than one version installed,
+the most fuss-free way to install and manage multiple versions of <code class="highlighter-rouge">node</code> on your computer is via <a href="https://github.com/nvm-sh/nvm" rel="external noopener noreferrer" target="_blank">nvm</a>.</p>
+
+<h3 id="truffle-framework">Truffle Framework</h3>
 
 <p>Truffle is an open source framework that facilitates the testing and development of smart contracts. It allows you to connect to a local RSK node and call the compiler, run unit tests, and publish your smart contracts easily. Check out <a href="https://github.com/rsksmart/truffle-integration" rel="external noopener noreferrer" target="_blank">this tutorial</a> which demonstrates the usage of Truffle and Ganache with a local RSK node.</p>
 
 <p>In this tutorial, we will use Truffle for compiling and publishing our smart contracts.</p>
 
-<p>Enter the following commands in the terminal to install truffle on your local machine</p>
+<p>Enter the following command in the terminal to install truffle on your local machine:</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-g</span> truffle
 </code></pre></div></div>
 
-<p>Then create a new folder and a truffle project using the commands below:</p>
+<h2 id="step-1--import-existing-code">Step 1 : Import Existing Code</h2>
+
+<p>First, you need to create a project.</p>
+
+<h3 id="initialize-an-empty-truffle-project">Initialize an empty Truffle project</h3>
+
+<p>Create a new folder and a Truffle project using the commands below:</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>rsk-truffle-example
 <span class="nb">cd </span>rsk-truffle-example
@@ -1467,11 +1505,30 @@ truffle init
 
 <p>The init command will create 3 folders and a configuration file for this project. The solidity files are in the contracts folder.</p>
 
-<h4 id="copy-ethereum-contract-code">Copy Ethereum Contract Code</h4>
+<h3 id="install-hd-wallet-provider">Install HD wallet provider</h3>
+
+<p>To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. We are going to use <code class="highlighter-rouge">@truffle/hdwallet-provider</code>.
+This can be used to sign transactions for addresses derived from a 12 or 24 word mnemonic.</p>
+
+<blockquote>
+  <p>You need to have Node &gt;= 7.6 installed.</p>
+</blockquote>
+
+<p>In the terminal, inside the project folder, install the HD wallet provider with this command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">install</span> <span class="nt">-E</span> @truffle/hdwallet-provider@1.0.34
+</code></pre></div></div>
+
+<p>This <code class="highlighter-rouge">truffle package</code> comes with many dependencies, and can take a long time to complete.
+A successful installation message is shown if everything works fine.</p>
+
+<h3 id="copy-ethereum-contract-code">Copy Ethereum Contract Code</h3>
 
 <p>In this tutorial, we are going to use the token contract code from [Consensys/Token] (https://github.com/ConsenSys/Tokens) as the example.</p>
 
-<p>Now create two files named <code class="highlighter-rouge">EIP20.sol</code> and <code class="highlighter-rouge">EIP20Interface.sol</code>:</p>
+<p>In the <code class="highlighter-rouge">contracts</code> folder, create two files named <code class="highlighter-rouge">EIP20.sol</code> and <code class="highlighter-rouge">EIP20Interface.sol</code>.</p>
+
+<h4 id="eip20interfacesol">EIP20Interface.sol</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pragma solidity ^0.4.21;
 
@@ -1522,7 +1579,7 @@ contract EIP20Interface {
 }
 </code></pre></div></div>
 
-<p>EIP20.sol:</p>
+<h4 id="eip20sol">EIP20.sol</h4>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pragma solidity ^0.4.21;
 
@@ -1594,7 +1651,7 @@ contract EIP20 is EIP20Interface {
 }
 </code></pre></div></div>
 
-<p>We also need to create a migration script in the migration folder.
+<p>We also need to create a migration script in the migrations folder: 
 <code class="highlighter-rouge">migrations/2_deploy_tokens.js</code></p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const EIP20 = artifacts.require('./EIP20.sol');
@@ -1604,18 +1661,11 @@ module.exports = (deployer) =&gt; {
 };
 </code></pre></div></div>
 
-<style>
-  img.port-eth-app-img{
-    margin:0 auto;
-    width: 80%;
-  }
-</style>
-
 <h2 id="step-2--deploy-solidity-code-as-rsk-smart-contract">Step 2 : Deploy Solidity Code as RSK Smart Contract</h2>
 
-<p>We are going to deploy the example smart contract on to RSK Testnet.</p>
+<p>We are going to deploy the example smart contract on to the RSK Testnet.</p>
 
-<h4 id="testnet-and-faucet">Testnet and Faucet</h4>
+<h3 id="testnet-and-faucet">Testnet and Faucet</h3>
 
 <p>First, we need to obtain an account on RSK Testnet and get some tR-BTC from the Testnet faucet.</p>
 
@@ -1637,27 +1687,55 @@ module.exports = (deployer) =&gt; {
 
 <p>Visit the <a href="https://faucet.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">faucet</a> to gain some tR-BTC to use in the Testnet.</p>
 
-<p>Enter the account address from MetaMask and wait several minutes for MetaMask to refresh the new balance.</p>
+<p>Enter the account address from MetaMask and wait for several seconds for MetaMask to refresh the new balance.</p>
 
 <p><img class="port-eth-app-img" src="../../../assets/img/tutorials/port-ethereum-dapps/testnet-faucet.png"></p>
 
-<h4 id="truffle-configuration">Truffle Configuration</h4>
+<h3 id="testnet-explorer">Testnet Explorer</h3>
+
+<p>You will be able to check the Testnet’s transactions and blocks in real time at 
+<a href="https://explorer.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">explorer.testnet.rsk.co</a></p>
+
+<h3 id="get-the-current-gas-price-of-testnet">Get the current gas price of testnet</h3>
+
+<p>Get the current gas price of the testnet network, and save to <code class="highlighter-rouge">.gas-price-testnet.json</code>.</p>
+
+<p>In your project folder, run this cURL command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.testnet.rsk.co/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'</span> <span class="o">&gt;</span> .gas-price-testnet.json
+</code></pre></div></div>
+
+<p>You should receive a response similar to the following in the file:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"0x3938700"</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The result value is presented in hexadecimal.</p>
+
+<h3 id="truffle-configuration">Truffle Configuration</h3>
 
 <p>Edit the <code class="highlighter-rouge">truffle-config.js</code> to be same as the code below. The <code class="highlighter-rouge">truffle-config.js</code> file directs Truffle to connect to the public Testnet node.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">HDWalletProvider</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@truffle/hdwallet-provider</span><span class="dl">'</span><span class="p">)</span>
 
 <span class="kd">var</span> <span class="nx">mnemonic</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">thing tuition ranch ... YOUR MNEMONIC</span><span class="dl">'</span>
-<span class="kd">var</span> <span class="nx">publicNode</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co:443</span><span class="dl">'</span>
+<span class="kd">var</span> <span class="nx">publicTestnetNode</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">fs</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">gasPriceTestnetRaw</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">"</span><span class="s2">.gas-price-testnet.json</span><span class="dl">"</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">trim</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">gasPriceTestnet</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">gasPriceTestnetRaw</span><span class="p">).</span><span class="nx">result</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">gasPriceTestnet</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span> <span class="o">||</span> <span class="nb">isNaN</span><span class="p">(</span><span class="nx">gasPriceTestnet</span><span class="p">))</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">unable to retrieve network gas price from .gas-price-testnet.json</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Gas price Testnet: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">gasPriceTestnet</span><span class="p">);</span>
 
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
   <span class="na">networks</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">rskTestnet</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span>
-        <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="nx">publicNode</span><span class="p">),</span>
-      <span class="na">network_id</span><span class="p">:</span> <span class="dl">'</span><span class="s1">*</span><span class="dl">'</span><span class="p">,</span>
-      <span class="na">gas</span><span class="p">:</span> <span class="mi">2500000</span><span class="p">,</span>
-      <span class="na">gasPrice</span><span class="p">:</span> <span class="mi">183000</span>
+      <span class="na">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="nx">publicTestnetNode</span><span class="p">),</span>
+      <span class="na">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
+      <span class="na">gasPrice</span><span class="p">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">gasPriceTestnet</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">),</span>
+      <span class="na">networkCheckTimeout</span><span class="p">:</span> <span class="mi">1</span><span class="nx">e9</span>
     <span class="p">}</span>
   <span class="p">},</span>
   <span class="na">compilers</span> <span class="p">:</span> <span class="p">{</span>
@@ -1669,13 +1747,27 @@ module.exports = (deployer) =&gt; {
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h4 id="compile-and-deploy">Compile and Deploy</h4>
+<h3 id="truffle-console-connected-to-rsk-network">Truffle Console connected to RSK network</h3>
 
-<p>Enter the following commands in the Terminal to compile and deploy the contracts.</p>
+<p>Truffle has its own console to run commands, and can be connected on any network previously configured in <code class="highlighter-rouge">truffle-config.js</code> file. To connect Truffle console to a network, you need to specify the network.</p>
+
+<p>In the terminal, inside the <code class="highlighter-rouge">rsk-truffle-example</code> folder, run this command to connect to RSK testnet:</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle console <span class="nt">--network</span> rskTestnet
-truffle compile
-truffle migrate
+</code></pre></div></div>
+
+<p>It may take a while to establish the connection.
+This will open a new console, with this prompt:</p>
+
+<pre><code class="language-windows-command-prompt">truffle(rskTestnet)&gt;  
+</code></pre>
+
+<h3 id="compile-and-deploy">Compile and Deploy</h3>
+
+<p>Enter the following commands in the Truffle console to compile and deploy the contracts.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>compile
+migrate
 </code></pre></div></div>
 
 <h2 id="step-3--execute-the-smart-contract">Step 3 : Execute the Smart Contract</h2>
@@ -1684,26 +1776,28 @@ truffle migrate
 
 <p><strong>Check Account Balance</strong></p>
 
-<p>Enter the following command into truffle console.</p>
+<p>Enter the following command into the truffle console.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">EIP20</span><span class="p">.</span><span class="nx">deployed</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">instance</span><span class="o">=&gt;</span><span class="nx">instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">0xa07982385a16f0C7a9eEbAD5F44d2093A2856997</span><span class="dl">"</span><span class="p">)))</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">EIP20</span><span class="p">.</span><span class="nx">deployed</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">instance</span><span class="o">=&gt;</span><span class="nx">instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52</span><span class="dl">"</span><span class="p">)))</span>
 </code></pre></div></div>
 
-<p>EIP20 is the name of our contract. This command will print out the balance of account address <code class="highlighter-rouge">0xa07982385a16f0C7a9eEbAD5F44d2093A2856997</code> as a big number. To see it as an integer, change the command to</p>
+<p>EIP20 is the name of our contract. This command will print out the balance of account address <code class="highlighter-rouge">0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52</code> as a big number. To see it as an integer, change the command to</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">EIP20</span><span class="p">.</span><span class="nx">deployed</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">instance</span><span class="o">=&gt;</span><span class="nx">instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">0xa07982385a16f0C7a9eEbAD5F44d2093A2856997</span><span class="dl">"</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">b</span><span class="o">=&gt;</span><span class="nx">b</span><span class="p">.</span><span class="nx">toNumber</span><span class="p">())))</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">EIP20</span><span class="p">.</span><span class="nx">deployed</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">instance</span><span class="o">=&gt;</span><span class="nx">instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52</span><span class="dl">"</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">b</span><span class="o">=&gt;</span><span class="nx">b</span><span class="p">.</span><span class="nx">toNumber</span><span class="p">())))</span>
 </code></pre></div></div>
+
+<p>The balance is 0.</p>
 
 <p><strong>Transfer Token Directly Between Two Accounts</strong></p>
 
-<p>Now use the following command to transfer 1 token from the minter account to another account</p>
+<p>Now use the following command to transfer 1 token from the minter’s account to the previous account</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EIP20.deployed<span class="o">()</span>.then<span class="o">((</span><span class="nv">instance</span><span class="o">=&gt;</span>instance.transfer<span class="o">(</span><span class="s2">"0x7dadb9d442cfe7fc75fd472d63afc16934d7aa44"</span>, 1<span class="o">)))</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>EIP20.deployed<span class="o">()</span>.then<span class="o">((</span><span class="nv">instance</span><span class="o">=&gt;</span>instance.transfer<span class="o">(</span><span class="s2">"0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52"</span>, 1<span class="o">)))</span>
 </code></pre></div></div>
 
-<p>After its successful execution, check the minter’s account again to see the change in balance.</p>
+<p>After its successful execution, check account <code class="highlighter-rouge">0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52</code> again to see the change in balance.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">EIP20</span><span class="p">.</span><span class="nx">deployed</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">instance</span><span class="o">=&gt;</span><span class="nx">instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">0xa07982385a16f0C7a9eEbAD5F44d2093A2856997</span><span class="dl">"</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">b</span><span class="o">=&gt;</span><span class="nx">b</span><span class="p">.</span><span class="nx">toNumber</span><span class="p">())))</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">EIP20</span><span class="p">.</span><span class="nx">deployed</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="nx">instance</span><span class="o">=&gt;</span><span class="nx">instance</span><span class="p">.</span><span class="nx">balanceOf</span><span class="p">(</span><span class="dl">"</span><span class="s2">0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52</span><span class="dl">"</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">b</span><span class="o">=&gt;</span><span class="nx">b</span><span class="p">.</span><span class="nx">toNumber</span><span class="p">())))</span>
 </code></pre></div></div>
 
 <h2 id="step-4--deploy-to-mainnet">Step 4 : Deploy to Mainnet</h2>
@@ -1714,17 +1808,51 @@ truffle migrate
 
 <p>The <a href="../../../rsk/public-nodes/">public node</a> of RSK Main Net is https://public-node.rsk.co</p>
 
+<h4 id="gasprice-in-mainnet">Gasprice in Mainnet</h4>
+
+<p>Get the current gas price of the mainnet network, and save to <code class="highlighter-rouge">.gas-price-mainnet.json</code>.</p>
+
+<p>In your project folder, run this cURL command:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.rsk.co/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'</span> <span class="o">&gt;</span> .gas-price-mainnet.json
+</code></pre></div></div>
+
+<h4 id="update-truffle-config">Update truffle-config</h4>
+
+<p>In the <code class="highlighter-rouge">truffle-config.js</code> file, add the following code after the testnet part:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">publicMainnetNode</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">https://public-node.rsk.co/</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">gasPriceMainnetRaw</span> <span class="o">=</span> <span class="nx">fs</span><span class="p">.</span><span class="nx">readFileSync</span><span class="p">(</span><span class="dl">"</span><span class="s2">.gas-price-mainnet.json</span><span class="dl">"</span><span class="p">).</span><span class="nx">toString</span><span class="p">().</span><span class="nx">trim</span><span class="p">();</span>
+<span class="kd">const</span> <span class="nx">gasPriceMainnet</span> <span class="o">=</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">JSON</span><span class="p">.</span><span class="nx">parse</span><span class="p">(</span><span class="nx">gasPriceMainnetRaw</span><span class="p">).</span><span class="nx">result</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>
+<span class="k">if</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">gasPriceMainnet</span> <span class="o">!==</span> <span class="dl">'</span><span class="s1">number</span><span class="dl">'</span> <span class="o">||</span> <span class="nb">isNaN</span><span class="p">(</span><span class="nx">gasPriceMainnet</span><span class="p">))</span> <span class="p">{</span>
+  <span class="k">throw</span> <span class="k">new</span> <span class="nb">Error</span><span class="p">(</span><span class="dl">'</span><span class="s1">unable to retrieve network gas price from .gas-price-mainnet.json</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">Gas price Mainnet: </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">gasPriceMainnet</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Also include this configuration at <code class="highlighter-rouge">network</code> section:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">rskMainnet</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nl">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="nx">publicMainnetNode</span><span class="p">),</span>
+      <span class="nx">network_id</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+      <span class="nx">gasPrice</span><span class="p">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">gasPriceMainnet</span> <span class="o">*</span> <span class="mf">1.01</span><span class="p">),</span>
+      <span class="nx">networkCheckTimeout</span><span class="p">:</span> <span class="mi">1</span><span class="nx">e9</span>
+    <span class="p">},</span>
+</code></pre></div></div>
+
 <h4 id="mainnet-explorer">Mainnet Explorer</h4>
 
-<p>You will be able to check the Mainnet’s transactions and blocks in real time at
+<p>You will be able to check the Mainnet’s transactions and blocks in real time on
 <a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">explorer.rsk.co/</a></p>
 
 <h4 id="get-r-btc-through-2-way-peg">Get R-BTC through 2-way peg</h4>
 
-<p>To deploy onto Mainnet, we need to get some R-BTC through the 2-way peg mechanism between BTC and R-BTC.</p>
+<p>To deploy onto Mainnet, we need to get some <a href="../../../rsk/rbtc/">R-BTC</a>.</p>
 
 <ul>
-  <li>Check out a detailed tutorial on the <a href="../../../rsk/architecture/2-way-peg/">2-way peg</a>
+  <li>You can check the <a href="../../../rsk/architecture/2-way-peg/">2-way peg</a> mechanism between BTC and R-BTC.</li>
+  <li>Or you can buy in these <a href="../../../rsk/rbtc/#exchanges">exchanges</a>
 </li>
 </ul>
 
@@ -1765,7 +1893,7 @@ truffle migrate
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="custom-terminals">
          </div>
       </section>
 
