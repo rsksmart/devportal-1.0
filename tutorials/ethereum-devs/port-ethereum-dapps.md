@@ -428,7 +428,7 @@ Also include this configuration at `network` section:
 
 #### Mainnet Explorer
 
-You will be able to check the Mainnet's transactions and blocks in real time at
+You will be able to check the Mainnet's transactions and blocks in real time on
 [explorer.rsk.co/](https://explorer.rsk.co/)
 
 #### Get R-BTC through 2-way peg
