@@ -354,7 +354,7 @@ Once the deployment is successful. We can call smart contract methods directly i
 
 **Check Account Balance**
 
-Enter the following command into truffle console.
+Enter the following command into the truffle console.
 
 ```javascript
 EIP20.deployed().then((instance=>instance.balanceOf("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52")))
