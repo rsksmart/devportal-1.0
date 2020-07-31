@@ -91,7 +91,7 @@ In the terminal, inside the project folder, install the HD wallet provider with 
 npm install -E @truffle/hdwallet-provider@1.0.34
 ```
 
-This `truffle package` comes with many dependencies, and so can take a long time to complete.
+This `truffle package` comes with many dependencies, and can take a long time to complete.
 A successful installation message is shown if everything works fine.
 
 ### Copy Ethereum Contract Code
