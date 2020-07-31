@@ -64,7 +64,7 @@ npm install -g truffle
 
 ## Step 1 : Import Existing Code
 
-First off all, you need to create a project.
+First, you need to create a project.
 
 ### Initialize an empty Truffle project
 
