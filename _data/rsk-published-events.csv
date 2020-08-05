@@ -232,20 +232,28 @@ Developer Advocate","@tommycooksey
 2020-06-30T16:00:00-03:00,202006-010,2,2020-06-16T10:53:00-03:00,cancelled,,,,,"Developers
 General
 NGO",,Self Sovereign Identity and RIF,,Talk,online,Online only,English,Milton Berman,RIF Identity PO,@miltonberman,https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif,https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form,
-2020-07-01T19:00:00-03:00,202007-001,2,2020-07-03T01:30:00-03:00,confirmed,Tutorial: https://solange.dev/2020/rsk-truffle-tests/,,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271482311/,Testes utilizando Truffle na RSK,Neste webinar você vai aprender a elaborar testes em smart contracts utilizando o Truffle Framework.,Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle-na-rsk,https://app.livestorm.co/p/2442473d-a268-4bba-8678-2bd6903f8894/form,
+2020-07-01T19:00:00-03:00,202007-001,3,2020-08-04T15:30:00-03:00,confirmed,"Tutorial (PT): https://solange.dev/2020/rsk-truffle-tests/
+Tutorial (EN): https://developers.rsk.co/tutorials/ethereum-devs/truffle-test/
+",,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271482311/,Testes utilizando Truffle na RSK,Neste webinar você vai aprender a elaborar testes em smart contracts utilizando o Truffle Framework.,Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle-na-rsk,https://app.livestorm.co/p/2442473d-a268-4bba-8678-2bd6903f8894/form,https://youtu.be/53LPSnBI6rs
 2020-07-03T15:00:00-03:00,202007-002,3,2020-07-02T20:42:00-03:00,cancelled,,,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271483324/,RIF Lumino workshop,"On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",Workshop,online,Online only,English,Alejandro Narancio,Payments and Tools PO,@anarancio,https://app.livestorm.co/iov-labs-1/rif-lumino-workshop,https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form,
 2020-07-03T18:00:00-03:00,202007-003,2,2020-06-24T17:30:00+08:00,cancelled,,,,,Developers,,RIF Lumino workshop,,Workshop,online,Online only,Spanish,Alejandro Narancio,Payments and Tools PO,@anarancio,https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol,https://app.livestorm.co/p/c1b34ea2-d1c8-475f-b6a8-5f2e44405571/form,
 2020-07-08T15:00:00+08:00,202007-005-C,2,2020-06-24T17:30:00+08:00,cancelled,"Slides: https://developers.rsk.co/webinars/202007-005/slides/
 Javascript Hands-on: https://dappsdev.org/hands-on/mocha-intro/",,,,Developers,,Testing Smart Contracts with Truffle,Learn how to create and run tests on your RSK smart contracts using Truffle.,Workshop,online,Online only,English,Brendan Graetz,Developer Advocate,@bguiz,https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle,https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form,https://youtu.be/_bVwar_p0wo
-2020-07-15T19:00:00-03:00,202007-006,2,2020-06-30T10:00:00+08:00,confirmed,,,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271846531/,Migrando dApps do Ethereum para RSK,Este webinar é para os desenvolvedores Ethereum que desejam conhecer as possibilidades para migrar suas aplicações para a rede RSK.,Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk,https://app.livestorm.co/p/9948fd38-4bfd-488e-a7ea-868d9384c80a/form,
-2020-07-22T19:00:00-05:00,202007-007,1,2020-06-24T17:30:00+08:00,confirmed,,,,,Developers,https://www.meetup.com/es-ES/RSKBuenosAires/events/271987115/,Testeando Smart Contracts con Truffle ,Aprenda a crear y ejecutar pruebas en sus contratos inteligentes RSK con Truffle.,Workshop,online,Online only,Spanish,Dulce Villarreal,Developer Advocate,@Dulce_vird,https://app.livestorm.co/iov-labs-1/testeando-smart-contracts-con-truffle,https://app.livestorm.co/p/23f72a43-a63d-4837-963c-db2f1a107064/form,
+2020-07-15T19:00:00-03:00,202007-006,3,2020-08-04T15:30:00-03:00,confirmed,"Tutorial (PT): https://solange.dev/2020/rsk-port-ethereum-dapps/
+Tutorial (EN): https://developers.rsk.co/tutorials/ethereum-devs/port-ethereum-dapps/
+",,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271846531/,Migrando dApps do Ethereum para RSK,Este webinar é para os desenvolvedores Ethereum que desejam conhecer as possibilidades para migrar suas aplicações para a rede RSK.,Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk,https://app.livestorm.co/p/9948fd38-4bfd-488e-a7ea-868d9384c80a/form,https://youtu.be/-7Oi9_BDr5k
+2020-07-22T19:00:00-05:00,202007-007,1,2020-06-24T17:30:00+08:00,confirmed,,,,,Developers,https://www.meetup.com/es-ES/RSKBuenosAires/events/271987115/,Testeando Smart Contracts con Truffle ,Aprenda a crear y ejecutar pruebas en sus contratos inteligentes RSK con Truffle.,Workshop,online,Online only,Spanish,"Dulce Villarreal
+Hiram Pérez
+Carlos Colorado",Developer Advocate,"@Dulce_vird
+@driverInside
+@ccolorado",https://app.livestorm.co/iov-labs-1/testeando-smart-contracts-con-truffle,https://app.livestorm.co/p/23f72a43-a63d-4837-963c-db2f1a107064/form,
 2020-07-29T19:00:00-03:00,202007-008,1,2020-06-24T17:30:00+08:00,confirmed,,,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271987022/,Utilizando Truffle Boxes na RSK,"RSK possui diversos Truffle boxes, que são estruturas de projetos prontos para serem customizados 😄
 
 Eles incluem todas as configurações e dependencias necessárias para você se concentrar no que realmente importa:
 
 ➡️ O desenvolvimento da sua aplicação descentralizada e seus smart contracts.
 
-Neste webinar você vai conhecer os Truffle Boxes da RSK e aprender a utilizá-los.",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk,https://app.livestorm.co/p/acd7505e-a8e6-4e83-9a6a-26f54c808695/form,
+Neste webinar você vai conhecer os Truffle Boxes da RSK e aprender a utilizá-los.",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk,https://app.livestorm.co/p/acd7505e-a8e6-4e83-9a6a-26f54c808695/form,https://youtu.be/fmbwgwSW8zo
 2020-07-08T09:00:00+08:00,202007-005,5,2020-07-06T20:30:00+08:00,confirmed,"Slides: https://developers.rsk.co/webinars/202007-005/slides/
 System pre-requisites: https://developers.rsk.co/tutorials/workshop-prereqs/
 Javascript testing hands-on: https://developers.rsk.co/tutorials/workshop-js-testing/
@@ -263,7 +271,7 @@ Enterprise",https://www.meetup.com/RSKBuenosAires/events/271762800/,Cómo dexFre
 2020-07-30T18:00:00-03:00,202007-011,1,2020-07-04T16:15:00+08:00,confirmed,,,,,"General
 Enterprise",https://www.meetup.com/es-ES/RSKBuenosAires/events/271970802/,Cómo incentivar la economía local en Municipios implementando tecnología Blockchain,"En este webseminar Koibanx propone conocer la plataforma de digitalización de activos que desarrolló sobre tecnología Blockchain para estimular la economía local de municipios.
 
-Se hablará de cómo se crean activos digitales para gobierno, se realizará una demo en vivo y los detalles sobre la exitosa implementación que hicimos en conjunto con el Municipio de Marcos Paz en la Provincia de Buenos Aires, se explicará el marco jurídico actual y por último se responderán preguntas.",Talk,online,Online only,Spanish,Juan Pablo Orlando ,Head of Sales de Koibanx,@koibanx,https://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios,https://app.livestorm.co/p/da00591e-f86f-47ba-8b7c-b41d912306b5/form,
+Se hablará de cómo se crean activos digitales para gobierno, se realizará una demo en vivo y los detalles sobre la exitosa implementación que hicimos en conjunto con el Municipio de Marcos Paz en la Provincia de Buenos Aires, se explicará el marco jurídico actual y por último se responderán preguntas.",Talk,online,Online only,Spanish,Juan Pablo Orlando ,Head of Sales de Koibanx,@koibanx,https://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios,https://app.livestorm.co/p/da00591e-f86f-47ba-8b7c-b41d912306b5/form,https://youtu.be/WRWZxxKqcc8
 2020-07-30T10:00:00+08:00,202007-012,1,2020-07-17T11:30:00+08:00,confirmed,,,,,"General
 Enterprise",https://www.meetup.com/es-ES/rsk-community/events/271946954/,How is dexFreight leveraging RSK infrastructure to deliver real world solutions to the multi-trillion dollar logistics industry?,"dexFreight is a decentralized FinTech-enabled logistics market network for freight companies to handle shipments from booking to payment in one place. 
 dexFreight primary customers include third-party logistics providers, carriers, and shippers. dexFreight technology will ultimately translate in shorter times and lower costs to get the products to the hands of the end consumer while unlocking vast amounts of capital from freight invoices, inventories, and underused assets like trucks, trailers, warehouses, etc.
@@ -272,26 +280,60 @@ At this webinar Hector Hernadez dexFreight CSO and Co-founder will share his ins
 ",Talk,online,Online only,English,"Hector Hernandez
 Eddy Travia","dexFreight Chief Strategy Officer
 IOVlabs Asia-Pacific Director","@dexHector
-@startupeddy",https://app.livestorm.co/iov-labs-1/dexfreight-sea,https://app.livestorm.co/p/15834fc1-a2cb-4848-bbd3-d4edf7923947/form,
+@startupeddy",https://app.livestorm.co/iov-labs-1/dexfreight-sea,https://app.livestorm.co/p/15834fc1-a2cb-4848-bbd3-d4edf7923947/form,https://youtu.be/3s7ALoI7dSs
 2020-07-31T14:00:00-07:00,202007-013,1,2020-07-22T14:15:00+08:00,confirmed,,,,,"Developers
-General",,rWallet and RSK libraries,"At this webinar we are going to review in depth the recently launched rWallet and the tools provided by the RSK library.
+General",https://www.meetup.com/es-ES/rsk-community/events/272083357/,rWallet and RSK libraries,"At this webinar we are going to review in depth the recently launched rWallet and the tools provided by the RSK library.
 
 Some benefits:
 - Security
 - Autonomy
 - Lightness
 - Compatibility
-- Simplicity",Workshop,online,Online only,English,Chris Li,RSK Studio Developer,@chrisli2046,https://app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries,https://app.livestorm.co/p/ec855c22-6b23-42b9-8f43-89a6554079cf/form,
+- Simplicity",Workshop,online,Online only,English,Chris Li,RSK Studio Developer,@chrisli2046,https://app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries,https://app.livestorm.co/p/ec855c22-6b23-42b9-8f43-89a6554079cf/form,https://youtu.be/E8XQs10otFc
 2020-08-03T14:00:00-03:00,202008-001,1,2020-07-22T14:15:00+08:00,confirmed,,,,,"General
-Enterprise",,Evshare: Healthier and Sustainable Cities through Blockchain Technologies,"EVshare mision is to create cleaner, healthier, sustainable and more liveable cities ultimately focused on decarbonization and enabling a sharing economy.
+Enterprise",https://www.meetup.com/es-ES/rsk-community/events/272105824/,"EVShare:
+Healthier and Sustainable Cities through Blockchain Technologies","EVShare mission is to create cleaner, healthier, sustainable and more livable cities ultimately focused on decarbonization and enabling a sharing economy.
 RSK Blockchain technology is the basis of EVShare's Decentralized platform.
 Vehicles, passengers, goods and energy players interact in the community forming an efficient ecosystem.
-At this webinar Eduardo Javier Munoz will delve into EVshare business model and it's use cases to date.",Talk,online,Online only,English,Eduardo Javier Munoz,CEO EVshare,"@EVShareMobility
+At this webinar Eduardo Javier Munoz will delve into EVShare business model and its use cases to date.",Talk,online,Online only,English,Eduardo Javier Munoz,EVShare CEO,"@EVShareMobility
 @EJMun",https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities,https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form,
 2020-08-03T18:00:00-03:00,202008-002,1,2020-07-22T14:15:00+08:00,confirmed,,,,,"General
-Enterprise",,Evshare: ciudades sustentables a traves de la implementación de tecnología blockchain,"La misión de EVshare es crear ciudades más limpias, saludables, sostenibles y habitables a través de la descarbonización permitiendo al mismo tiempo una economía compartida.
-La tecnología RSK Blockchain es la base de la plataforma descentralizada de EVShare.
-Vehículos, pasajeros, entidades de energía interactúan en la comunidad formando un ecosistema eficiente.
-En este webinar, Eduardo Javier Muñoz compartirá el modelo de negocio de EVshare y sus casos de uso hasta la fecha.
-",Talk,online,Online only,Spanish,Eduardo Javier Munoz,CEO EVshare,"@EVShareMobility
+Enterprise",https://www.meetup.com/es-ES/RSKBuenosAires/events/272109653/,"EVShare:
+Ciudades sustentables a través de la implementación de tecnología Blockchain","La misión de EVShare es crear ciudades más limpias, saludables, sustentables y habitables a través de la reducción de las emisiones de carbono permitiendo el desarrollo de una economía colaborativa.
+A través de EVShare los vehículos, pasajeros, entidades de energía interactúan en la comunidad formando un ecosistema eficiente.
+EVShare ha desarrollado su plataforma descentralizada en la Blockchain de RSK.
+En este webinar, Eduardo Javier Muñoz compartirá el modelo de negocio de EVShare y sus casos de uso.",Talk,online,Online only,Spanish,Eduardo Javier Munoz,CEO de EVShare,"@EVShareMobility
 @EJMun",https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables,https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form,
+2020-08-12T19:00:00-03:00,202008-003,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Aprenda a criar sua primeira carteira rWallet e transferir RBTCs entre carteiras,"Para iniciantes!
+
+Neste workshop vamos ensinar passo a passo como instalar a carteira rWallet no celular e outra carteira no navegador, para transferir R-BTCs de teste entre elas.
+
+A rWallet é carteira lançada pela RSK!
+Alguns benefícios:
+- Segurança
+- Autonomia
+- Compatibilidade
+- Simplicidade",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet,https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form,
+2020-08-14T14:00:00-03:00,202008-004,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,RIF Lumino workshop,"On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",Workshop,online,Online only,English,Alejandro Narancio,Payments and Tools PO,@anarancio,https://app.livestorm.co/iov-labs-1/rif-lumino-workshop,https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form,
+2020-08-19T09:00:00+08:00,202008-005,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Testing Smart Contracts with OpenZepplin CLI,Learn how to create and run tests on your RSK smart contracts using OpenZeppelin CLI.,Workshop,online,Online only,English,"Brendan Graetz
+Dulce Villarreal","Developer Advocate
+Developer Advocate","@bguiz
+@Dulce_vird",https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin,https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form,
+2020-08-19T19:00:00-03:00,202008-006,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Utilização da biblioteca rsk3.js no seu site,"Para desenvolvedores!
+
+Aprenda como utilizar a biblioteca rsk3.js em un frontend para se comunicar com os smart contracts publicados na RSK.",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca-rsk3js-no-seu-site,https://app.livestorm.co/p/28967d51-08df-4701-9b3a-12cfc240e5bf/form,
+2020-08-24T18:00:00-03:00,202008-007,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Trazabilidad en la industria Nuclear basada en tecnología Blockchain,La empresa NUCLEARIS desarrolló la primera Plataforma de Trazabilidad a nivel mundial basada en BLOCKCHAIN y que es utilizada en la fabricación de componentes de uso nuclear. En este webinar contaran el detalle del caso de uso de esta plataforma que pretende generar un cambio de paradigma en la industria Nuclear basado en la implementación de una nueva tecnología digital para garantizar la Seguridad Operativa de las Centrales Atómicas y eficientizar el registro y almacenamiento de documentación de vital importancia.,Talk,online,Online only,Spanish,"Santiago Badran
+Sebastian Martinez","CEO
+CTO",,https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear,https://app.livestorm.co/p/de980613-7c05-4d99-8ac8-5e1cef829757/form,
+2020-08-24T14:00:00-03:00,202008-008,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Traceability in the Nuclear industry based on Blockchain technology,"NUCLEARIS developed the first  Traceability Platform based on BLOCKCHAIN ​​and which is used in the manufacture of components for nuclear use. The platform objective is  to generate a paradigm shift in the Nuclear industry based in blockchain technology to guarantee the Operational Safety of Atomic Power Plants and make the registration and storage of documentation more efficient vitally important.
+
+",Talk,online,Online only,English,"Santiago Badran
+Sebastian Martinez","CEO
+CTO",,https://app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technology,https://app.livestorm.co/p/83535a48-3e9a-4355-8585-e06ce85d41c2/form,
+2020-08-26T19:00:00-03:00,202008-009,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Casos de uso na RSK,"Conheça alguns casos de uso implementados no Blockchain RSK, desenvolvidos por nossos parceiros.
+
+Veja os casos de uso que serão apresentados:
+https://www.rsk.co/pt-pt/Use-cases
+",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk,https://app.livestorm.co/p/66249815-cf94-4a9a-ab3c-3e6a743c77ff/form,
+2020-08-27T18:00:00-03:00,202008-010,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,"UX & BLOCKCHAIN:
+Direcciones y dominios para uso personal","En IOVlabs construimos el internet del valor para crear un mundo con libertad e inclusion financiera. Para esto necesitamos que la tecnología de blockchain sea accesible y fácil de usar. Con los nombres y dominios ahora vas a poder tener recordar tu wallet con fácilidad y dársela a tus amigos. En este workshop aprenderás a dar de alta tu dominio con tu nombre, usando ENS, RNS, RIF Name Services  y la Rwallet. ",Demo,online,Online only,Spanish,Dulce Villarreal,Developer Advocate,@Dulce_Villarreal,https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcciones-y-dominios,https://app.livestorm.co/p/e34c1aef-6d13-4ff1-b9a7-51ef2f85f98c/form,
