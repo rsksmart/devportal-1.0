@@ -2780,7 +2780,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e42994d6-a586-4136-b19d-056010079403/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-app-a-dap",
-      "tags": " idioma-spanish audiencia-developers recent",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -2822,7 +2822,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/697bea3b-c18f-433c-90c4-4a12f5153435/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain",
-      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -2860,7 +2860,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
-      "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo recent",
+      "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -2871,9 +2871,9 @@
     {
       "type": "event/2",
       "id": "202007-001",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-07-01T22:00:00.000Z",
-      "lastModified": "2020-07-03T04:30:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/271482311/",
       "title": "Testes utilizando Truffle na RSK",
@@ -2894,17 +2894,22 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/2442473d-a268-4bba-8678-2bd6903f8894/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers recent",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [
         {
-          "label": "Tutorial",
+          "label": "Tutorial (PT)",
           "url": "https://solange.dev/2020/rsk-truffle-tests/"
+        },
+        {
+          "label": "Tutorial (EN)",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/truffle-test/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/53LPSnBI6rs",
+      "youtubeVideoId": "53LPSnBI6rs",
       "_permalink": "/webinars/202007-001/",
       "_isPast": true
     },
@@ -2934,7 +2939,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -2968,7 +2973,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/c1b34ea2-d1c8-475f-b6a8-5f2e44405571/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol",
-      "tags": " idioma-spanish audiencia-developers recent",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3081,9 +3086,9 @@
     {
       "type": "event/2",
       "id": "202007-006",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-07-15T22:00:00.000Z",
-      "lastModified": "2020-06-30T02:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/271846531/",
       "title": "Migrando dApps do Ethereum para RSK",
@@ -3108,8 +3113,18 @@
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
       "twitterSite": "",
-      "resources": [],
-      "recordedVideoUrl": "",
+      "resources": [
+        {
+          "label": "Tutorial (PT)",
+          "url": "https://solange.dev/2020/rsk-port-ethereum-dapps/"
+        },
+        {
+          "label": "Tutorial (EN)",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/port-ethereum-dapps/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/-7Oi9_BDr5k",
+      "youtubeVideoId": "-7Oi9_BDr5k",
       "_permalink": "/webinars/202007-006/",
       "_isPast": true
     },
@@ -3135,6 +3150,16 @@
           "name": "Dulce Villarreal",
           "description": "Developer Advocate",
           "contact": "@Dulce_vird"
+        },
+        {
+          "name": "Hiram Pérez",
+          "description": "",
+          "contact": "@driverInside"
+        },
+        {
+          "name": "Carlos Colorado",
+          "description": "",
+          "contact": "@ccolorado"
         }
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/23f72a43-a63d-4837-963c-db2f1a107064/form",
@@ -3174,14 +3199,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/acd7505e-a8e6-4e83-9a6a-26f54c808695/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
+      "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/fmbwgwSW8zo",
+      "youtubeVideoId": "fmbwgwSW8zo",
       "_permalink": "/webinars/202007-008/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3289,14 +3315,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/da00591e-f86f-47ba-8b7c-b41d912306b5/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/WRWZxxKqcc8",
+      "youtubeVideoId": "WRWZxxKqcc8",
       "_permalink": "/webinars/202007-011/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3330,14 +3357,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/15834fc1-a2cb-4848-bbd3-d4edf7923947/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dexfreight-sea",
-      "tags": " idioma-english audiencia-general audiencia-enterprise",
+      "tags": " idioma-english audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/3s7ALoI7dSs",
+      "youtubeVideoId": "3s7ALoI7dSs",
       "_permalink": "/webinars/202007-012/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3346,7 +3374,7 @@
       "timestamp": "2020-07-31T21:00:00.000Z",
       "lastModified": "2020-07-22T06:15:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/272083357/",
       "title": "rWallet and RSK libraries",
       "description": "At this webinar we are going to review in depth the recently launched rWallet and the tools provided by the RSK library.\n\nSome benefits:\n- Security\n- Autonomy\n- Lightness\n- Compatibility\n- Simplicity",
       "category": "Workshop",
@@ -3366,14 +3394,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/ec855c22-6b23-42b9-8f43-89a6554079cf/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries",
-      "tags": " idioma-english audiencia-developers audiencia-general",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/E8XQs10otFc",
+      "youtubeVideoId": "E8XQs10otFc",
       "_permalink": "/webinars/202007-013/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3382,9 +3411,9 @@
       "timestamp": "2020-08-03T17:00:00.000Z",
       "lastModified": "2020-07-22T06:15:00.000Z",
       "status": "confirmed",
-      "url": "",
-      "title": "Evshare: Healthier and Sustainable Cities through Blockchain Technologies",
-      "description": "EVshare mision is to create cleaner, healthier, sustainable and more liveable cities ultimately focused on decarbonization and enabling a sharing economy.\nRSK Blockchain technology is the basis of EVShare's Decentralized platform.\nVehicles, passengers, goods and energy players interact in the community forming an efficient ecosystem.\nAt this webinar Eduardo Javier Munoz will delve into EVshare business model and it's use cases to date.",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/272105824/",
+      "title": "EVShare:\nHealthier and Sustainable Cities through Blockchain Technologies",
+      "description": "EVShare mission is to create cleaner, healthier, sustainable and more livable cities ultimately focused on decarbonization and enabling a sharing economy.\nRSK Blockchain technology is the basis of EVShare's Decentralized platform.\nVehicles, passengers, goods and energy players interact in the community forming an efficient ecosystem.\nAt this webinar Eduardo Javier Munoz will delve into EVShare business model and its use cases to date.",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -3396,20 +3425,20 @@
       "presenters": [
         {
           "name": "Eduardo Javier Munoz",
-          "description": "CEO EVshare",
+          "description": "EVShare CEO",
           "contact": "@EVShareMobility"
         }
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities",
-      "tags": " idioma-english audiencia-general audiencia-enterprise",
+      "tags": " idioma-english audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202008-001/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3418,9 +3447,9 @@
       "timestamp": "2020-08-03T21:00:00.000Z",
       "lastModified": "2020-07-22T06:15:00.000Z",
       "status": "confirmed",
-      "url": "",
-      "title": "Evshare: ciudades sustentables a traves de la implementación de tecnología blockchain",
-      "description": "La misión de EVshare es crear ciudades más limpias, saludables, sostenibles y habitables a través de la descarbonización permitiendo al mismo tiempo una economía compartida.\nLa tecnología RSK Blockchain es la base de la plataforma descentralizada de EVShare.\nVehículos, pasajeros, entidades de energía interactúan en la comunidad formando un ecosistema eficiente.\nEn este webinar, Eduardo Javier Muñoz compartirá el modelo de negocio de EVshare y sus casos de uso hasta la fecha.",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/272109653/",
+      "title": "EVShare:\nCiudades sustentables a través de la implementación de tecnología Blockchain",
+      "description": "La misión de EVShare es crear ciudades más limpias, saludables, sustentables y habitables a través de la reducción de las emisiones de carbono permitiendo el desarrollo de una economía colaborativa.\nA través de EVShare los vehículos, pasajeros, entidades de energía interactúan en la comunidad formando un ecosistema eficiente.\nEVShare ha desarrollado su plataforma descentralizada en la Blockchain de RSK.\nEn este webinar, Eduardo Javier Muñoz compartirá el modelo de negocio de EVShare y sus casos de uso.",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -3432,19 +3461,338 @@
       "presenters": [
         {
           "name": "Eduardo Javier Munoz",
-          "description": "CEO EVshare",
+          "description": "CEO de EVShare",
           "contact": "@EVShareMobility"
         }
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202008-002/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-003",
+      "version": "1",
+      "timestamp": "2020-08-12T22:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Aprenda a criar sua primeira carteira rWallet e transferir RBTCs entre carteiras",
+      "description": "Para iniciantes!\n\nNeste workshop vamos ensinar passo a passo como instalar a carteira rWallet no celular e outra carteira no navegador, para transferir R-BTCs de teste entre elas.\n\nA rWallet é carteira lançada pela RSK!\nAlguns benefícios:\n- Segurança\n- Autonomia\n- Compatibilidade\n- Simplicidade",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-003/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-004",
+      "version": "1",
+      "timestamp": "2020-08-14T17:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RIF Lumino workshop",
+      "description": "On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Alejandro Narancio",
+          "description": "Payments and Tools PO",
+          "contact": "@anarancio"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-004/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-005",
+      "version": "1",
+      "timestamp": "2020-08-19T01:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Testing Smart Contracts with OpenZepplin CLI",
+      "description": "Learn how to create and run tests on your RSK smart contracts using OpenZeppelin CLI.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        },
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-005/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-006",
+      "version": "1",
+      "timestamp": "2020-08-19T22:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Utilização da biblioteca rsk3.js no seu site",
+      "description": "Para desenvolvedores!\n\nAprenda como utilizar a biblioteca rsk3.js em un frontend para se comunicar com os smart contracts publicados na RSK.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/28967d51-08df-4701-9b3a-12cfc240e5bf/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca-rsk3js-no-seu-site",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-006/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-007",
+      "version": "1",
+      "timestamp": "2020-08-24T21:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Trazabilidad en la industria Nuclear basada en tecnología Blockchain",
+      "description": "La empresa NUCLEARIS desarrolló la primera Plataforma de Trazabilidad a nivel mundial basada en BLOCKCHAIN y que es utilizada en la fabricación de componentes de uso nuclear. En este webinar contaran el detalle del caso de uso de esta plataforma que pretende generar un cambio de paradigma en la industria Nuclear basado en la implementación de una nueva tecnología digital para garantizar la Seguridad Operativa de las Centrales Atómicas y eficientizar el registro y almacenamiento de documentación de vital importancia.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Santiago Badran",
+          "description": "CEO",
+          "contact": ""
+        },
+        {
+          "name": "Sebastian Martinez",
+          "description": "CTO",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/de980613-7c05-4d99-8ac8-5e1cef829757/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-007/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-008",
+      "version": "1",
+      "timestamp": "2020-08-24T17:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Traceability in the Nuclear industry based on Blockchain technology",
+      "description": "NUCLEARIS developed the first  Traceability Platform based on BLOCKCHAIN ​​and which is used in the manufacture of components for nuclear use. The platform objective is  to generate a paradigm shift in the Nuclear industry based in blockchain technology to guarantee the Operational Safety of Atomic Power Plants and make the registration and storage of documentation more efficient vitally important.\n\n",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Santiago Badran",
+          "description": "CEO",
+          "contact": ""
+        },
+        {
+          "name": "Sebastian Martinez",
+          "description": "CTO",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/83535a48-3e9a-4355-8585-e06ce85d41c2/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technology",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-008/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-009",
+      "version": "1",
+      "timestamp": "2020-08-26T22:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Casos de uso na RSK",
+      "description": "Conheça alguns casos de uso implementados no Blockchain RSK, desenvolvidos por nossos parceiros.\n\nVeja os casos de uso que serão apresentados:\nhttps://www.rsk.co/pt-pt/Use-cases",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/66249815-cf94-4a9a-ab3c-3e6a743c77ff/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-009/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-010",
+      "version": "1",
+      "timestamp": "2020-08-27T21:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal",
+      "description": "En IOVlabs construimos el internet del valor para crear un mundo con libertad e inclusion financiera. Para esto necesitamos que la tecnología de blockchain sea accesible y fácil de usar. Con los nombres y dominios ahora vas a poder tener recordar tu wallet con fácilidad y dársela a tus amigos. En este workshop aprenderás a dar de alta tu dominio con tu nombre, usando ENS, RNS, RIF Name Services  y la Rwallet.",
+      "category": "Demo",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_Villarreal"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/e34c1aef-6d13-4ff1-b9a7-51ef2f85f98c/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcciones-y-dominios",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-010/",
       "_isPast": false
     }
   ]
