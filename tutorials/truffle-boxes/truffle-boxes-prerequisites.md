@@ -7,7 +7,7 @@ render_features: "custom-terminals"
 ---
 
 Before you use a Truffle box, you need to have Truffle and other useful tools installed in your computer.
-In this tutorial, I will show you step-by-step how to install and configure the prerequisites to use any RSK Truffle box on RSK networks.
+In this tutorial, I will show you step-by-step on how to install and configure the prerequisites to use any RSK Truffle box on RSK networks.
 
 # Overview
 
