@@ -11,7 +11,7 @@ This box comes with everything you need to start using smart contracts from a re
 
 ## Installation
 
-First ensure you are in a new and empty directory.
+First, ensure you are in a new and empty directory.
 
 1. Run the `unbox` command via `npx` and skip to step 3. This will install all necessary dependencies. A Create-React-Next-App is generated in the `app` directory.
    ```js
