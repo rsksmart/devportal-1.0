@@ -630,7 +630,7 @@ This is an example of a transaction hash received from faucet:
 # Deploy the smart contract on RSK network
 
 Migrate the smart contracts. 
-We will do it running the below commands directly in the terminal, 
+We will do it by running the below commands directly in the terminal, 
 without using the truffle console now to show to you this alternative. 
 Run the migrate command for the RSK network of your choice.
 
