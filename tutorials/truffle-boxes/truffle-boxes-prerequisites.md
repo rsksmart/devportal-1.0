@@ -186,4 +186,4 @@ energy knife ice mouse merge track cram brown decorate atom rule virus
 
 Copy these 12 words, we'll use it later.
 
-RSK Networks have your own derivation path. Learn more about [account based RSK addresses](/rsk/architecture/account-based/ "Account based RSK addresses - RSK developers portal").
+RSK Networks have their own derivation path. Learn more about [account based RSK addresses](/rsk/architecture/account-based/ "Account based RSK addresses - RSK developers portal").
