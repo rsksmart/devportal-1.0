@@ -524,7 +524,7 @@ truffle(testnet)>
 
 We will use a special instruction in Truffle console to get the first 10 addresses in our hierarchical deterministic wallet for the RSK network, that are generated from our mnemonic.
 
-Inside Truffle console, run this command to save the addresses at variable `accounts`:
+Inside the Truffle console, run this command to save the addresses at variable `accounts`:
 
 ```javascript
 const accounts = await web3.eth.getAccounts()
