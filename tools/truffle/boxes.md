@@ -21,5 +21,5 @@ RSK has its own specialized Truffle Boxes:
 ## Tutorials
 
 - [rsk-starter-box](/tutorials/truffle-boxes/rsk-starter-box): learn step-by-step on how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box)
-- [rsk-pet-shop-box](/tutorials/truffle-boxes/pet-shop-box/): this tutorial is a guide on how to use the petshop Truffle box, and on how to to deploy smart contracts to multiple networks (Regtest and Testnet).
+- [rsk-pet-shop-box](/tutorials/truffle-boxes/pet-shop-box/): this tutorial is a guide on how to use the petshop Truffle box, and on how to deploy smart contracts to multiple networks (Regtest and Testnet).
 - [rsk-next-box](/tutorials/truffle-boxes/rsk-next-box): this tutorial presents how to use the [rsk-next-box](https://github.com/rsksmart/rsk-next-box), a basic starter pack including Truffle and Next JS.
