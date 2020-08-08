@@ -77,7 +77,7 @@ These nodes support the following JSON RPC methods:
 Here's an example request using `cURL` to get the Mainnet block number:
 
 ```shell
-curl https://public-node.rsk.co/1.1.0/ \
+curl https://public-node.rsk.co \
     -X POST -H "Content-Type: application/json" \
     --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
