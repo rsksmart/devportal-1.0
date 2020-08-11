@@ -7,7 +7,7 @@ LOCKFILE_DIFF_SIZE=$( wc -l < Gemfile.lock.diff )
 echo "COMMIT_HASH_MASTER=${COMMIT_HASH_MASTER}"
 echo "LOCKFILE_DIFF_SIZE=${LOCKFILE_DIFF_SIZE}"
 echo "CIRCLE_BRANCH=${CIRCLE_BRANCH}"
-if [ "${CIRCLE_BRANCH#proj/}" != "${CIRCLE_BRANCH}" -o "${LOCKFILE_DIFF_SIZE}" -eq 0 ] ; then
+if [ "${CIRCLE_BRANCH#proj/}" != "${CIRCLE_BRANCH}" -o "${CIRCLE_BRANCH#dependabot/}" != "${CIRCLE_BRANCH}" -o "${LOCKFILE_DIFF_SIZE}" -eq 0 ] ; then
   rm Gemfile.master.lock Gemfile.lock.diff
   echo "Gemfile.lock OK"
 else
