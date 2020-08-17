@@ -10,7 +10,7 @@ In this tutorial, I will show you step-by-step how to use the Truffle box
 [rsk-react-express-box](https://github.com/rsksmart/rsk-react-express-box), 
 which comes with everything you need to start using [express JS](https://expressjs.com/) 
 to provide API endpoints to smart contracts and a [react app](https://reactjs.org/) 
-to interact with them on [RSK Blockchain](https://developers.rsk.co/rsk/).
+to interact with them on [RSK Blockchain](/rsk/).
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
 
 > This tutorial is helpful to review the steps with more explanatory details and images.
@@ -526,7 +526,7 @@ This is the result of Testnet query in the terminal in Windows OS:
 
 In the `truffle-config.js`, we are reading the parameter `minimumGasPrice` in each json file.
 
-For more information about the **Gas** and **minimumGasPrice** please go to [gas page](https://developers.rsk.co/rsk/rbtc/gas/ "Gas - RSK Developers Portal").
+For more information about the **Gas** and **minimumGasPrice** please go to [gas page](/rsk/rbtc/gas/ "Gas - RSK Developers Portal").
 
 ## Create a wallet mnemonic
 
@@ -835,7 +835,7 @@ Then go to your browser at [http://localhost:8080/](http://localhost:8080/)
 In this tutorial you learned how to use the Truffle box [rsk-react-express-box](https://github.com/rsksmart/rsk-react-express-box), 
 which comes with everything you need to start using Truffle on RSK networks. 
 
-Check out [RSK Blockchain](https://developers.rsk.co/rsk/) for more details about us.
+Check out [RSK Blockchain](/rsk/) for more details about us.
 
 I hope this tutorial has been helpful and I'd appreciate your feedback. 
 Share it if you like it :)
