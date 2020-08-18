@@ -94,7 +94,7 @@ Observe the output in your terminal for more details.
 
 Look at `contracts/Cars.sol`.
 
-We have an smart contract implementation
+We have a smart contract implementation
 that involves manipulating several car objects.
 
 ```solidity
@@ -317,7 +317,7 @@ and in this workshop we will be writing those assertions.
 
 Also note that within the `contract` block for `'Cars - events'`,
 we have a `before` block.
-This is use to set up the state of the contract by adding a couple of
+This is used to set up the state of the contract by adding a couple of
 car objects,
 because these particular tests only make sense if there
 already are car objects stored within the smart contract.
@@ -402,7 +402,7 @@ is indeed reset between one `describe` block and the next,
 as we are doing this explicitly by setting up a new `instance` variable in each one.
 
 For those accustomed to working with Truffle,
-this in analogous to doing `const instance = await Cars.deployed();`
+this is analogous to doing `const instance = await Cars.deployed();`
 within **each** `it` block.
 In OZ CLI, instead of doing this, we use the method described above.
 This might take a bit of getting used to,
@@ -437,7 +437,7 @@ Run OZ CLI Test.
 npm run test
 ```
 
-You should see output similar to the following
+You should see some output similar to the following
 
 ```shell
 $ npm run test
@@ -474,9 +474,9 @@ but also that it is correct
 (at least according to how we have written our tests).
 
 The output is almost identical to the output before,
-except that it it takes a (marginally) longer time to execute.
+except that it takes a (marginally) longer time to execute.
 The main thing that we need to look out for here is
-whether we have gone from have 4 tests passing to less than 4 tests passing,
+whether we have gone from having 4 tests passing to less than 4 tests passing,
 which would indicate that there is either
 a problem with our specification (a false negative),
 or a problem with our implementation (a true negative).
@@ -575,7 +575,7 @@ The line `const tx = await instance.addCar(/* ... */);`
 is where the actual state transition occurs.
 This is a "true" invocation of the `addCar` function,
 unlike the previous "preview" invocation of the `addCar` function.
-When this line is has been executed, a transaction has been added to a block,
+When this line has been executed, a transaction has been added to a block,
 and that block to the blockchain.
 This test, and any other test that involves a smart contract state transition,
 will be significantly slower than tests that do not,
@@ -695,11 +695,11 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 ```
 
 Of course in this case, we were expecting it,
-and already do that the problem lies in the specification,
+and already know that the problem lies in the specification,
 in particular, an incorrect assertion.
 
-However, in a real (non-demo) scenario,
-when we encounter this, we would know that we have encountered a test failure,
+However, in a real (non-demo) scenario, when we encounter this,
+we would know that we have encountered a test failure,
 and would require investigation to determine whether this was due to
 a problem in the implementation,
 causing a true negative;
