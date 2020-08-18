@@ -296,14 +296,14 @@ Healthier and Sustainable Cities through Blockchain Technologies","EVShare missi
 RSK Blockchain technology is the basis of EVShare's Decentralized platform.
 Vehicles, passengers, goods and energy players interact in the community forming an efficient ecosystem.
 At this webinar Eduardo Javier Munoz will delve into EVShare business model and its use cases to date.",Talk,online,Online only,English,Eduardo Javier Munoz,EVShare CEO,"@EVShareMobility
-@EJMun",https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities,https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form,
+@EJMun",https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities,https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form, https://youtu.be/rsOsY8cDfrE
 2020-08-03T18:00:00-03:00,202008-002,1,2020-07-22T14:15:00+08:00,confirmed,,,,,"General
 Enterprise",https://www.meetup.com/es-ES/RSKBuenosAires/events/272109653/,"EVShare:
 Ciudades sustentables a través de la implementación de tecnología Blockchain","La misión de EVShare es crear ciudades más limpias, saludables, sustentables y habitables a través de la reducción de las emisiones de carbono permitiendo el desarrollo de una economía colaborativa.
 A través de EVShare los vehículos, pasajeros, entidades de energía interactúan en la comunidad formando un ecosistema eficiente.
 EVShare ha desarrollado su plataforma descentralizada en la Blockchain de RSK.
 En este webinar, Eduardo Javier Muñoz compartirá el modelo de negocio de EVShare y sus casos de uso.",Talk,online,Online only,Spanish,Eduardo Javier Munoz,CEO de EVShare,"@EVShareMobility
-@EJMun",https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables,https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form,
+@EJMun",https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables,https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form,https://youtu.be/8n1dRBljIj4
 2020-08-12T19:00:00-03:00,202008-003,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Aprenda a criar sua primeira carteira rWallet e transferir RBTCs entre carteiras,"Para iniciantes!
 
 Neste workshop vamos ensinar passo a passo como instalar a carteira rWallet no celular e outra carteira no navegador, para transferir R-BTCs de teste entre elas.
@@ -313,9 +313,12 @@ Alguns benefícios:
 - Segurança
 - Autonomia
 - Compatibilidade
-- Simplicidade",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet,https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form,
-2020-08-14T14:00:00-03:00,202008-004,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,RIF Lumino workshop,"On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",Workshop,online,Online only,English,Alejandro Narancio,Payments and Tools PO,@anarancio,https://app.livestorm.co/iov-labs-1/rif-lumino-workshop,https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form,
-2020-08-19T09:00:00+08:00,202008-005,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Testing Smart Contracts with OpenZepplin CLI,Learn how to create and run tests on your RSK smart contracts using OpenZeppelin CLI.,Workshop,online,Online only,English,"Brendan Graetz
+- Simplicidade",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet,https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form,https://youtu.be/DHTIsn_PLvA
+2020-08-14T14:00:00-03:00,202008-004,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,RIF Lumino workshop,"On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",Workshop,online,Online only,English,Alejandro Narancio,Payments and Tools PO,@anarancio,https://app.livestorm.co/iov-labs-1/rif-lumino-workshop,https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form,https://youtu.be/JDKxwMON3fY
+2020-08-19T09:00:00+08:00,202008-005,2,2020-08-18T12:00:00+08:00,confirmed,"Slides: https://developers.rsk.co/webinars/202008-005/slides/
+System pre-requisites: https://developers.rsk.co/tutorials/workshop-prereqs/
+Javascript testing hands-on: https://developers.rsk.co/tutorials/workshop-js-testing/
+Smart contract testing hands-on: https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/",,/webinars/202008-005/banner-image.png,@bguiz,Developers,,Testing Smart Contracts with OpenZepplin CLI,"Learn about software testing principles, and how to create and run tests on your RSK smart contracts using OpenZeppelin CLI, in this webinar with two mini hands-on workshops.",Workshop,online,Online only,English,"Brendan Graetz
 Dulce Villarreal","Developer Advocate
 Developer Advocate","@bguiz
 @Dulce_vird",https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin,https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form,

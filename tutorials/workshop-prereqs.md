@@ -41,6 +41,28 @@ nvm use 12
 ## Truffle
 
 - Install [`truffle`](https://www.npmjs.com/package/truffle)
+
+
+Use the following command.
+
+```shell
+npm i -g truffle@5.1.22
+
+```
+
+## OpenZeppelin CLI
+
+- Install [`oz`](https://www.npmjs.com/package/@openzeppelin/cli)
+
+Use the following command.
+
+```
+npm i -g @openzeppelin/cli@2.8.2
+```
+
+
+## Mnemonics
+
 - Install [`mnemonics`](https://www.npmjs.com/package/mnemonics),
 which is a simple utility that can be used to generate
 [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
@@ -49,12 +71,9 @@ mnemonics
 Use the following command.
 
 ```shell
-npm i -g truffle@5.1.22 mnemonics@1.1.3
+npm i -g mnemonics@1.1.3
 
 ```
-
-Note that `mnemonics` is not part of the Truffle suite,
-however several workshops use this in conjunction with Truffle.
 
 ## Java
 
