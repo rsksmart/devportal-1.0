@@ -14,8 +14,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
-      <link rel="canonical" href="https://developers.rsk.co/tutorials/workshop-prereqs/">
-   	<title>RSK Workshop: Pre-requisites - RSK Developers Portal</title>
+      <link rel="canonical" href="https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/">
+   	<title>RSK Workshop: Smart Contract Testing using OpenZeppelin CLI - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons/favicon-32x32.png">
@@ -594,7 +594,7 @@
                   <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
-              <li><a href="./">Setup for workshops</a></li>
+              <li><a href="../workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
               <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
@@ -754,7 +754,7 @@
 		
 			
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<span property="name">RSK Workshop: Pre-requisites</span>
+					<span property="name">RSK Workshop: Smart Contract Testing using OpenZeppelin CLI</span>
 					<meta property="position" content="3" />
 				</li>
 				
@@ -771,17 +771,17 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-08-18 04:10:23 +0000T00:00:00.000Z">2020-08-18</time> | -->
-     7' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/workshop-prereqs.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2020-08-18 08:51:29 +0000T00:00:00.000Z">2020-08-18</time> | -->
+     30' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/workshop-smart-contract-testing-ozcli.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-prereqs/&amp;text=RSK%20Workshop:%20Pre-requisites&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-prereqs/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
-          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-prereqs/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
-          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-prereqs/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=RSK%20Workshop:%20Pre-requisites&amp;body=RSK%20Workshop:%20Pre-requisites%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-prereqs/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/tutorials/workshop-prereqs/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/&amp;text=RSK%20Workshop:%20Smart%20Contract%20Testing%20using%20OpenZeppelin%20CLI&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=RSK%20Workshop:%20Smart%20Contract%20Testing%20using%20OpenZeppelin%20CLI&amp;body=RSK%20Workshop:%20Smart%20Contract%20Testing%20using%20OpenZeppelin%20CLI%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
     <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
@@ -1295,7 +1295,7 @@
                   <li><a href="../truffle-boxes/rsk-react-express-box/">rsk-react-express-box</a></li>
                 </ul>
               </li>
-              <li><a href="./">Setup for workshops</a></li>
+              <li><a href="../workshop-prereqs/">Setup for workshops</a></li>
               <li>
 <a href="../dweb/first-swarm-website/"></a>First DWebsite on Swarm</li>
               <li><a href="../deploy-smart-contracts/">Deploy Smart Contracts</a></li>
@@ -1439,256 +1439,910 @@
     </a>
 </div>
 
-                  <h1 class="page-title" id="top">RSK Workshop: Pre-requisites</h1>
+                  <h1 class="page-title" id="top">RSK Workshop: Smart Contract Testing using OpenZeppelin CLI</h1>
 
-                  <p>Several RSK workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.</p>
+                  <h2 id="pre-requisites">Pre-requisites</h2>
 
-<p>Some workshops will require all of the following items,
-and some may only require a subset of the following items.
-Each workshop should have a “pre-requisites” section
-and specify which ones are which.</p>
-
-<h2 id="posix-compliant-shell">POSIX compliant shell</h2>
+<p>Prior to commencing this tutorial,
+please ensure that you have installed the following
+RSK workshop pre-requisites on your system:</p>
 
 <ul>
-  <li>Mac OSX and Linux distributions:
-Use the standard terminal</li>
-  <li>Windows:
-If you use the standard <code class="highlighter-rouge">cmd</code> terminal, or PowerShell,
-the commands here may not work.
-Consider installing
-<a href="https://gitforwindows.org/" rel="external noopener noreferrer" target="_blank">Git for Windows</a>,
-which comes with Git Bash bundled.
-Here’s a great
-<a href="https://www.atlassian.com/git/tutorials/git-bash" rel="external noopener noreferrer" target="_blank">tutorial on installing and using Git Bash</a>.</li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell" rel="external noopener noreferrer" target="_blank">POSIX compliant shell</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs" rel="external noopener noreferrer" target="_blank">NodeJs</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#openzeppelin-cli" rel="external noopener noreferrer" target="_blank">OpenZeppelin CLI</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#java" rel="external noopener noreferrer" target="_blank">Java</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#curl" rel="external noopener noreferrer" target="_blank">curl</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#code-editor" rel="external noopener noreferrer" target="_blank">Code editor</a></li>
+  <li><a href="https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj" rel="external noopener noreferrer" target="_blank">RSKj</a></li>
 </ul>
 
-<h2 id="nodejs">NodeJs</h2>
+<h2 id="project-setup">Project setup</h2>
 
-<ul>
-  <li>The most fuss-free way to install and manage
-multiple versions of <code class="highlighter-rouge">node</code> on your computer is
-<a href="https://github.com/nvm-sh/nvm" rel="external noopener noreferrer" target="_blank">nvm</a>.</li>
-  <li>This tutorial assumes that you have version 12 or later</li>
-</ul>
+<p>Use <code class="highlighter-rouge">git</code> to make a copy of this repo,
+and use <code class="highlighter-rouge">npm</code> to install dependencies.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvm <span class="nb">install </span>12
-nvm use 12
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:bguiz/workshop-rsk-smart-contract-testing-ozcli.git
+<span class="nb">cd </span>workshop-rsk-smart-contract-testing-ozcli
+npm <span class="nb">install</span>
+</code></pre></div></div>
+
+<p>Then open up this directory in your code editor.</p>
+
+<h2 id="explore-the-files">Explore the files</h2>
+
+<p>If you happen to have <code class="highlighter-rouge">tree</code> installed,
+you can use that to view the directory structure using the following command.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>tree <span class="nt">-aI</span> <span class="s1">'node_modules|*.md|package*.json|.git*'</span>
+<span class="nb">.</span>
+├── contracts
+│   └── Cars.sol
+├── networks.js
+├── .openzeppelin
+│   └── project.json
+├── scripts
+│   ├── clean.sh
+│   └── setup.sh
+└── <span class="nb">test</span>
+    └── Cars.spec.js
+
+4 directories, 6 files
 
 </code></pre></div></div>
 
-<h2 id="truffle">Truffle</h2>
+<p>(Otherwise use your choice of GUI to explore this folder.)</p>
+
+<p>Observe that we have the following files:</p>
 
 <ul>
-  <li>Install <a href="https://www.npmjs.com/package/truffle" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">truffle</code></a>
-</li>
-</ul>
-
-<p>Use the following command.</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i <span class="nt">-g</span> truffle@5.1.22
-
-</code></pre></div></div>
-
-<h2 id="openzeppelin-cli">OpenZeppelin CLI</h2>
-
-<ul>
-  <li>Install <a href="https://www.npmjs.com/package/@openzeppelin/cli" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">oz</code></a>
-</li>
-</ul>
-
-<p>Use the following command.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i -g @openzeppelin/cli@2.8.2
-</code></pre></div></div>
-
-<h2 id="mnemonics">Mnemonics</h2>
-
-<ul>
-  <li>Install <a href="https://www.npmjs.com/package/mnemonics" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">mnemonics</code></a>,
-which is a simple utility that can be used to generate
-<a href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki" rel="external noopener noreferrer" target="_blank">BIP39</a>
-mnemonics</li>
-</ul>
-
-<p>Use the following command.</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i <span class="nt">-g</span> mnemonics@1.1.3
-
-</code></pre></div></div>
-
-<h2 id="java">Java</h2>
-
-<ul>
-  <li>You will need Java 8 in order to run RSKj</li>
-  <li>If <code class="highlighter-rouge">java -version</code> displays an error,
-or displays a version other than <code class="highlighter-rouge">1.8</code>,
-you will need to install it.</li>
-</ul>
-
-<p>There are a variety of ways to do this,
-and SDKman is one which allows you to install and switch between multiple versions as needed:</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-s</span> <span class="s2">"https://get.sdkman.io/"</span> | bash
-<span class="nb">source</span> <span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/.sdkman/bin/sdkman-init.sh"</span>
-<span class="c"># to get a filtered list of available java versions</span>
-sdk list java  | <span class="nb">grep</span> <span class="s2">"8</span><span class="se">\.</span><span class="s2">"</span>
-<span class="c"># copy one of the options listed for use below, e.g. 8.0.242.j9-adpt</span>
-
-<span class="c"># install the version of java copied above</span>
-<span class="c"># (replace accordingly)</span>
-sdk <span class="nb">install </span>java 8.0.242.j9-adpt
-
-<span class="c"># show installed versions, and switch to the selected one</span>
-<span class="c"># (replace accordingly)</span>
-sdk list java | <span class="nb">grep </span>installed
-sdk use java 8.0.242.j9-adpt
-java <span class="nt">-version</span>
-
-</code></pre></div></div>
-
-<h2 id="curl">curl</h2>
-
-<ul>
-  <li>This is a system command that is likely
-already installed on your system</li>
-  <li>If <code class="highlighter-rouge">curl --version</code> displays an error,
-<a href="https://curl.haxx.se/download.html" rel="external noopener noreferrer" target="_blank">download <code class="highlighter-rouge">curl</code></a>.</li>
-</ul>
-
-<h2 id="code-editor">Code editor</h2>
-
-<ul>
-  <li>Software that is able to edit text files</li>
-  <li>Preferably one that has support for syntax highlighting for both Solidity and Javascript</li>
   <li>
-<a href="https://code.visualstudio.com" rel="external noopener noreferrer" target="_blank">VS Code</a>
-is a good choice if you don’t already have one</li>
+<code class="highlighter-rouge">.openzeppelin/project.json</code>:
+OZ CLI has already been pre-configured to work with the structure
+for this project.</li>
+  <li>
+<code class="highlighter-rouge">networks.js</code>:
+OZ CLI has already been pre-configured to connect to your choice of
+RSK Regtest, RSK Testnet, or RSK Mainnet.</li>
+  <li>
+<code class="highlighter-rouge">scripts/clean.sh</code> and <code class="highlighter-rouge">scripts/setup.sh</code>:
+These are custom scripts which generate keys and configuration that
+will be used by OZ CLI when connecting to RSK networks.</li>
+  <li>
+<code class="highlighter-rouge">contracts/Cars.sol</code>:
+This is the smart contract.
+The solidity file is the implementation, and has been completed for you.
+    <ul>
+      <li>If you are familiar will Truffle, you may notice that there is no
+corresponding deployment script (also known as migration contract)</li>
+      <li>OZ ClI takes a different approach, instead persisting migration
+status within JSON files within the <code class="highlighter-rouge">.openzeppelin</code> directory.</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">test/Cars.spec.js</code>
+This is the specification, and is only partially complete.
+This workshop is focused on completing the specification.</li>
 </ul>
 
-<h2 id="rskj">RSKj</h2>
+<p>Ensure that you have a copy of RSKj running in Regtest locally,
+and then run the set up script:</p>
 
-<p>Get RSKj running locally.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash ./scripts.setup.sh
+</code></pre></div></div>
 
-<p>This will provide you with a <code class="highlighter-rouge">localhost</code>-only network,
-for fast testing, called Regtest.
-The same node also can connect to permissionless decentralised networks
-of peer nodes also running RSKj - Testnet and Mainnet.</p>
+<p>This will set up the RSK specific files for this project
+which are specific to you at this time.
+Observe the output in your terminal for more details.</p>
 
-<p>For this part, open up a new shell,
-as you will need to leave the RSKj process running in the background
-while you continue with other tasks in the foreground.</p>
+<h2 id="implementation">Implementation</h2>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/code/rsk/rskj-node
-<span class="nb">cd</span> ~/code/rsk/rskj-node
-curl <span class="se">\</span>
-  <span class="nt">-L</span> <span class="se">\</span>
-  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/rskj-core-2.0.1-PAPYRUS-all.jar <span class="se">\</span>
-  <span class="o">&gt;</span> ./rskj-core-2.0.1-PAPYRUS-all.jar
-<span class="nb">sha256sum </span>rskj-core-2.0.1-PAPYRUS-all.jar
-<span class="c"># 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 rskj-core-2.0.1-PAPYRUS-all.jar</span>
+<p>Look at <code class="highlighter-rouge">contracts/Cars.sol</code>.</p>
+
+<p>We have a smart contract implementation
+that involves manipulating several car objects.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">pragma</span> <span class="nx">solidity</span> <span class="o">^</span><span class="mf">0.5</span><span class="p">.</span><span class="mi">0</span><span class="p">;</span>
+
+<span class="nx">contract</span> <span class="nx">Cars</span> <span class="p">{</span>
+
+    <span class="kr">enum</span> <span class="nx">CarStatus</span> <span class="p">{</span> <span class="nx">driving</span><span class="p">,</span> <span class="nx">parked</span> <span class="p">}</span>
+
+    <span class="nx">event</span> <span class="nx">CarHonk</span> <span class="p">(</span><span class="nx">uint256</span> <span class="nx">indexed</span> <span class="nx">fromCar</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">indexed</span> <span class="nx">atCar</span><span class="p">);</span>
+
+    <span class="nx">struct</span> <span class="nx">Car</span> <span class="p">{</span>
+        <span class="nx">bytes3</span> <span class="nx">colour</span><span class="p">;</span>
+        <span class="nx">uint8</span> <span class="nx">doors</span><span class="p">;</span>
+        <span class="nx">uint256</span> <span class="nx">distance</span><span class="p">;</span>
+        <span class="nx">uint16</span> <span class="nx">lat</span><span class="p">;</span>
+        <span class="nx">uint16</span> <span class="nx">lon</span><span class="p">;</span>
+        <span class="nx">CarStatus</span> <span class="nx">status</span><span class="p">;</span>
+        <span class="nx">address</span> <span class="nx">owner</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">uint256</span> <span class="kr">public</span> <span class="nx">numCars</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nx">mapping</span><span class="p">(</span><span class="nx">uint256</span> <span class="o">=&gt;</span> <span class="nx">Car</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">cars</span><span class="p">;</span>
+
+    <span class="kd">constructor</span><span class="p">()</span> <span class="kr">public</span> <span class="p">{}</span>
+
+    <span class="kd">function</span> <span class="nx">addCar</span><span class="p">(</span>
+        <span class="nx">bytes3</span> <span class="nx">colour</span><span class="p">,</span>
+        <span class="nx">uint8</span> <span class="nx">doors</span><span class="p">,</span>
+        <span class="nx">uint256</span> <span class="nx">distance</span><span class="p">,</span>
+        <span class="nx">uint16</span> <span class="nx">lat</span><span class="p">,</span>
+        <span class="nx">uint16</span> <span class="nx">lon</span>
+    <span class="p">)</span> <span class="kr">public</span> <span class="nx">payable</span> <span class="nx">returns</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">msg</span><span class="p">.</span><span class="nx">value</span> <span class="o">&gt;</span> <span class="mf">0.1</span> <span class="nx">ether</span><span class="p">,</span>
+          <span class="dl">"</span><span class="s2">You need at least 0.1 ETH to get a car</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">carId</span> <span class="o">=</span> <span class="o">++</span><span class="nx">numCars</span><span class="p">;</span>
+        <span class="nx">Car</span> <span class="nx">memory</span> <span class="nx">newCar</span> <span class="o">=</span> <span class="nx">Car</span><span class="p">(</span>
+            <span class="nx">colour</span><span class="p">,</span>
+            <span class="nx">doors</span><span class="p">,</span>
+            <span class="nx">distance</span><span class="p">,</span>
+            <span class="nx">lat</span><span class="p">,</span>
+            <span class="nx">lon</span><span class="p">,</span>
+            <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">parked</span><span class="p">,</span>
+            <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span>
+        <span class="p">);</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">]</span> <span class="o">=</span> <span class="nx">newCar</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">modifier</span> <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">owner</span> <span class="o">==</span> <span class="nx">msg</span><span class="p">.</span><span class="nx">sender</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">you need to own this car</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">_</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nx">modifier</span> <span class="nx">onlyCarStatus</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">,</span> <span class="nx">CarStatus</span> <span class="nx">expectedStatus</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">status</span> <span class="o">==</span> <span class="nx">expectedStatus</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">car is not in the required status</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">_</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">driveCar</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">)</span>
+        <span class="kr">public</span>
+        <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">carId</span><span class="p">)</span>
+        <span class="nx">onlyCarStatus</span><span class="p">(</span><span class="nx">carId</span><span class="p">,</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">parked</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">status</span> <span class="o">=</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">driving</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">parkCar</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">,</span> <span class="nx">uint16</span> <span class="nx">lat</span><span class="p">,</span> <span class="nx">uint16</span> <span class="nx">lon</span><span class="p">)</span>
+        <span class="kr">public</span>
+        <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">carId</span><span class="p">)</span>
+        <span class="nx">onlyCarStatus</span><span class="p">(</span><span class="nx">carId</span><span class="p">,</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">driving</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">status</span> <span class="o">=</span> <span class="nx">CarStatus</span><span class="p">.</span><span class="nx">parked</span><span class="p">;</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">lat</span> <span class="o">=</span> <span class="nx">lat</span><span class="p">;</span>
+        <span class="nx">cars</span><span class="p">[</span><span class="nx">carId</span><span class="p">].</span><span class="nx">lon</span> <span class="o">=</span> <span class="nx">lon</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">honkCar</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">carId</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">otherCarId</span><span class="p">)</span>
+        <span class="kr">public</span>
+        <span class="nx">onlyCarOwner</span><span class="p">(</span><span class="nx">carId</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">cars</span><span class="p">[</span><span class="nx">otherCarId</span><span class="p">].</span><span class="nx">owner</span> <span class="o">!=</span> <span class="nx">address</span><span class="p">(</span><span class="mh">0x00</span><span class="p">),</span>
+          <span class="dl">"</span><span class="s2">other car must exist</span><span class="dl">"</span><span class="p">);</span>
+        <span class="nx">uint256</span> <span class="nx">timeOfDay</span> <span class="o">=</span> <span class="p">(</span><span class="nx">getTime</span><span class="p">()</span> <span class="o">%</span> <span class="mi">86400</span><span class="p">);</span>
+        <span class="nx">require</span><span class="p">(</span><span class="nx">timeOfDay</span> <span class="o">&gt;=</span> <span class="mi">21600</span><span class="p">,</span>
+            <span class="dl">"</span><span class="s2">cannot honk between midnight and 6am</span><span class="dl">"</span>
+        <span class="p">);</span>
+        <span class="nx">emit</span> <span class="nx">CarHonk</span><span class="p">(</span><span class="nx">carId</span><span class="p">,</span> <span class="nx">otherCarId</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nx">getTime</span><span class="p">()</span> <span class="nx">internal</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// current block timestamp as seconds since unix epoch</span>
+        <span class="c1">// ref: https://solidity.readthedocs.io/en/v0.5.7/units-and-global-variables.html#block-and-transaction-properties</span>
+        <span class="k">return</span> <span class="nx">block</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
 
 </code></pre></div></div>
 
-<blockquote>
-  <p>Note: When installing and running the RSKj node,
-it is always a good idea to verify that your copy is legitimate.
-<a href="https://developers.rsk.co/rsk/node/contribute/verify/" title="Verify authenticity of RskJ source code and its binary dependencies" rel="external noopener noreferrer" target="_blank">Full instructions</a>
-on how to do this.</p>
-</blockquote>
+<p>We are not really concerned about how to write this implementation
+for this workshop, but we do need to know what the implementation does
+in order to be able to write tests for it.</p>
 
-<p>For the purposes of this workshop,
-we will run RSKj on Regtest.</p>
+<h2 id="specification-incomplete">Specification, incomplete</h2>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> rskj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+<p>Look at <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>Here, we have an incomplete specification.
+We obtain the <code class="highlighter-rouge">Cars</code> smart contract
+defined in our implementation earlier,
+using <code class="highlighter-rouge">contract.fromArtifact()</code>.
+This is OZ CLI’s analogue of using NodeJs <code class="highlighter-rouge">require()</code>
+to obtain the implementation when testing Javascript using Mocha.
+Those of you familiar with Truffle might recognise this
+as being the equivalent of <code class="highlighter-rouge">artifacts.require()</code>.</p>
+
+<p>Unlike Truffle, where we make use of <code class="highlighter-rouge">contract</code> blocks to group tests,
+in OZ CLI tests, we use <code class="highlighter-rouge">describe</code> blocks to group our tests;
+exactly as how we would do so when using Mocha.
+We can do this because OZ CLI’s test environment -
+<code class="highlighter-rouge">@openzeppelin/test-environment</code> -
+enables us to access the list of <code class="highlighter-rouge">accounts</code> up-front.
+Thus there is no need to obtain the <code class="highlighter-rouge">accounts</code> via
+the <code class="highlighter-rouge">describe</code> block’s callback function.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="p">{</span> <span class="nx">accounts</span><span class="p">,</span> <span class="nx">contract</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">@openzeppelin/test-environment</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">assert</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">web3</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">web3</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">BN</span> <span class="o">=</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">BN</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">Cars</span> <span class="o">=</span> <span class="nx">contract</span><span class="p">.</span><span class="nx">fromArtifact</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars - initial state</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">owner</span><span class="p">]</span> <span class="o">=</span> <span class="nx">accounts</span><span class="p">;</span>
+
+  <span class="kd">let</span> <span class="nx">instance</span><span class="p">;</span>
+
+  <span class="nx">before</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="k">new</span><span class="p">({</span> <span class="na">from</span><span class="p">:</span> <span class="nx">owner</span> <span class="p">});</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Initialised with zero cars</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">initialNumCars</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">call</span><span class="p">();</span>
+
+    <span class="c1">// TODO perform assertions</span>
+  <span class="p">});</span>
+<span class="p">});</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars - state transitions</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">owner</span><span class="p">]</span> <span class="o">=</span> <span class="nx">accounts</span><span class="p">;</span>
+
+  <span class="kd">let</span> <span class="nx">instance</span><span class="p">;</span>
+
+  <span class="nx">before</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="k">new</span><span class="p">({</span> <span class="na">from</span><span class="p">:</span> <span class="nx">owner</span> <span class="p">});</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Adds a new car</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// preview the return value without modifying the state</span>
+    <span class="c1">// ... (redacted for brevity) ...</span>
+
+    <span class="c1">// TODO perform the assertions</span>
+  <span class="p">});</span>
+
+<span class="p">});</span>
+
+<span class="nx">describe</span><span class="p">(</span><span class="dl">'</span><span class="s1">Cars - events</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">owner</span><span class="p">]</span> <span class="o">=</span> <span class="nx">accounts</span><span class="p">;</span>
+
+  <span class="kd">let</span> <span class="nx">instance</span><span class="p">;</span>
+
+  <span class="nx">before</span><span class="p">(</span><span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">instance</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">Cars</span><span class="p">.</span><span class="k">new</span><span class="p">({</span> <span class="na">from</span><span class="p">:</span> <span class="nx">owner</span> <span class="p">});</span>
+
+    <span class="c1">// set up contract with relevant initial state</span>
+    <span class="c1">// ... (redacted for brevity) ...</span>
+
+    <span class="c1">// just a sanity check, we do not really need to do assertions</span>
+    <span class="c1">// within the set up, as this should be for "known working state"</span>
+    <span class="c1">// only</span>
+    <span class="c1">// ... (redacted for brevity) ...</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Honks a car at another car</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// perform the state transition</span>
+    <span class="c1">// ... (redacted for brevity) ...</span>
+
+    <span class="c1">// TODO perform assertions</span>
+  <span class="p">});</span>
+
+  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Honking a car that you do not own is not allowed</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// perform the state transition</span>
+    <span class="c1">// ... (redacted for brevity) ...</span>
+
+    <span class="c1">// TODO perform assertions</span>
+  <span class="p">});</span>
+
+<span class="p">});</span>
+
 
 </code></pre></div></div>
 
-<p>If you see no output - that is a good thing:
-Its output is directed to a log file.</p>
+<p>Note that we have several instances of <code class="highlighter-rouge">// ... (redacted for brevity) ...</code>
+as comments. In these cases, there is test code set up
+and already available in the demo repo,
+but it has been omitted here to keep this document short.
+The intent here is to show the overall structure.
+These parts indicate code that performs the steps within the test specifications.
+When writing specifications for your smart contracts,
+you will need to do this from scratch,
+but for the sake of demonstration it is already there in full.</p>
 
-<blockquote>
-  <p>Note the flag provided above: <code class="highlighter-rouge">-Drpc.providers.web.cors=*</code>
-This disables cross origin resource sharing protection,
-effectively allowing any web page to access it.
-As we want to make JSON-RPC requests from a browser,
-such as a DApp, we need this flag.</p>
-</blockquote>
+<p>Note that we have four occurrences of <code class="highlighter-rouge">// TODO perform assertions</code> in the test code,
+and in this workshop we will be writing those assertions.</p>
 
-<blockquote>
-  <p>Note that if you see an error similar to the following,
-you will need to clear your Regtest data directory
-from an older version of RSKj.</p>
+<p>Also note that within the <code class="highlighter-rouge">contract</code> block for <code class="highlighter-rouge">'Cars - events'</code>,
+we have a <code class="highlighter-rouge">before</code> block.
+This is used to set up the state of the contract by adding a couple of
+car objects,
+because these particular tests only make sense if there
+already are car objects stored within the smart contract.
+This has already been done for you,
+so that you may focus on writing the tests.</p>
 
-  <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>A block header must have 16/17 elements or 19/20 including merged-mining fields but it had 19
-</code></pre></div>  </div>
+<h2 id="initial-test-run">Initial test run</h2>
 
-  <p>To do so, simply delete the <code class="highlighter-rouge">.rsk/regtest</code> directory
-within your home directory, using the following command.</p>
+<p>At this point, we are all set to let Truffle Test, our test runner,
+do its thing, which will execute out specification,
+which in turn will execute our implementation.</p>
 
-  <div class="language-shell highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nb">rm</span> <span class="nt">-rf</span> ~/.rsk/regtest/
-</code></pre></div>  </div>
-</blockquote>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
 
-<p>Leave this <strong>running</strong> in an open shell,
-and switch back to your original shell for the rest of this workshop.</p>
+<p>You should see output similar to the following:</p>
 
-<p>Back in your original shell,
-it is a good idea to verify that you are able to
-successfully make JSON-RPC requests before proceeding.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="se">\</span>
-  http://localhost:4444/ <span class="se">\</span>
-  <span class="nt">-s</span> <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
-  <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'</span>
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-ozcli@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-ozcli
+<span class="o">&gt;</span> oz compile <span class="o">&amp;&amp;</span> mocha <span class="nt">--exit</span> <span class="nt">--recursive</span> ./test/<span class="k">**</span>/<span class="k">*</span>.spec.js
+
+✓ Compiled contracts with solc 0.5.17 <span class="o">(</span>commit.d19bba13<span class="o">)</span>
+
+
+  Cars - initial state
+    ✓ Initialised with zero cars
+
+  Cars - state transitions
+    ✓ Adds a new car <span class="o">(</span>124ms<span class="o">)</span>
+
+  Cars - events
+    ✓ Honks a car at another car
+    ✓ Honking a car that you <span class="k">do </span>not own is not allowed <span class="o">(</span>44ms<span class="o">)</span>
+
+
+  4 passing <span class="o">(</span>608ms<span class="o">)</span>
 
 </code></pre></div></div>
 
-<p>If this command fails, it is likely that the Regtest node running locally
-(running on your own computer) is not working properly.
-You should see a response similar to the following:</p>
+<p>Great! Our test runner (OZ CLI test) has run successfully! 🎉 🎉 🎉</p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"0x2246e"</span><span class="p">}</span><span class="w">
+<p>Our test runner has done the above,
+listening for which tests have passed or failed,
+and if there were any errors thrown.</p>
 
-</span></code></pre></div></div>
+<p>However, note that since we have <strong>four</strong> tests in our specification,
+and they are indeed interacting with the smart contract (implementation),
+but none of them are performing any assertions,
+so we don’t know whether the implementation is correct or not.</p>
 
-<p>Now let’s do the same thing, but this time,
-instead of connecting to something running locally,
-we connect to the <a href="https://stats.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Testnet</a>.
-You can run your own RSK Testnet node using the same RSKj used earlier, or
-you can simply connect to public node.
-THe latter option requires no setup, and that is what we’ll be doing:</p>
+<p>That means that it is time to write our first assertions!</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="se">\</span>
-  https://public-node.testnet.rsk.co/2.0.1/ <span class="se">\</span>
-  <span class="nt">-s</span> <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
-  <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'</span>
+<h2 id="writing-a-test-for-initial-state">Writing a test for initial state</h2>
+
+<p>Edit <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>Replace the line that says <code class="highlighter-rouge">// TODO perform assertions</code>
+with an assertion.
+It should now look like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Initialised with zero cars</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">initialNumCars</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">call</span><span class="p">();</span>
+
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">initialNumCars</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>This test is grouped within a <code class="highlighter-rouge">contract</code> block.
+When there are multiple tests within the same <code class="highlighter-rouge">contract</code> block,
+the state of the smart contract
+is not reset between one test and the next.
+However, when there are multiple tests in different <code class="highlighter-rouge">describe</code> blocks,
+the state of the smart contract
+is indeed reset between one <code class="highlighter-rouge">describe</code> block and the next,
+as we are doing this explicitly by setting up a new <code class="highlighter-rouge">instance</code> variable in each one.</p>
+
+<p>For those accustomed to working with Truffle,
+this is analogous to doing <code class="highlighter-rouge">const instance = await Cars.deployed();</code>
+within <strong>each</strong> <code class="highlighter-rouge">it</code> block.
+In OZ CLI, instead of doing this, we use the method described above.
+This might take a bit of getting used to,
+but is indeed exactly how one would do this
+in “regular” Javascript testing with Mocha.</p>
+
+<p>In this case, this is the first (and only) <code class="highlighter-rouge">it</code> block within this <code class="highlighter-rouge">describe</code> block,
+so it is perfect for testing the initial state of the smart contract.</p>
+
+<p>The line <code class="highlighter-rouge">const initialNumCars = await instance.numCars.call();</code>
+retrieves the value of the <code class="highlighter-rouge">numCars</code> variable in the smart contract.</p>
+
+<p>The line <code class="highlighter-rouge">assert.equal(initialNumCars.toString(), '0');</code>
+passes the test if this value is zero,
+and fails the test if this value is anything other than zero.</p>
+
+<h2 id="test-run-for-initial-state">Test run for initial state</h2>
+
+<p>Now we are going to let OZ CLI Test, our test runner,
+do its thing again.</p>
+
+<p>This time we have a test defined in our specification,
+so when mocha executes our specification,
+it will indeed execute out implementation in turn.</p>
+
+<p>(Previously, when we had zero tests,
+the implementation was not executed at all.)</p>
+
+<p>Run OZ CLI Test.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see some output similar to the following</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-ozcli@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-ozcli
+<span class="o">&gt;</span> oz compile <span class="o">&amp;&amp;</span> mocha <span class="nt">--exit</span> <span class="nt">--recursive</span> ./test/<span class="k">**</span>/<span class="k">*</span>.spec.js
+
+Nothing to compile, all contracts are up to date.
+
+
+  Cars - initial state
+    ✓ Initialised with zero cars <span class="o">(</span>59ms<span class="o">)</span>
+
+  Cars - state transitions
+    ✓ Adds a new car <span class="o">(</span>122ms<span class="o">)</span>
+
+  Cars - events
+    ✓ Honks a car at another car
+    ✓ Honking a car that you <span class="k">do </span>not own is not allowed <span class="o">(</span>45ms<span class="o">)</span>
+
+
+  4 passing <span class="o">(</span>693ms<span class="o">)</span>
 
 </code></pre></div></div>
-<p>You should see a response similar to the following:</p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"0xca035"</span><span class="p">}</span><span class="w">
+<p>Great! 🎉 🎉 🎉</p>
 
-</span></code></pre></div></div>
+<p>OZ CLI Test, our test runner has worked as promised,
+listening for which tests have passed or failed,
+and if there were any errors thrown.
+This time we have verification not only that
+our implementation has been executed,
+but also that it is correct
+(at least according to how we have written our tests).</p>
+
+<p>The output is almost identical to the output before,
+except that it takes a (marginally) longer time to execute.
+The main thing that we need to look out for here is
+whether we have gone from having 4 tests passing to less than 4 tests passing,
+which would indicate that there is either
+a problem with our specification (a false negative),
+or a problem with our implementation (a true negative).</p>
+
+<p>Testing the initial state of a smart contract is the simplest possible
+type of test we can write.
+Now let’s move on to <strong>more complex tests</strong> for state transitions and events.</p>
+
+<h2 id="writing-a-test-for-state-transition">Writing a test for state transition</h2>
+
+<p>Edit <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>Replace the two lines that say <code class="highlighter-rouge">// TODO perform assertions</code>
+with assertions.
+It should now look like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Adds a new car</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// preview the return value without modifying the state</span>
+    <span class="kd">const</span> <span class="nx">returnValue</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">addCar</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span>
+        <span class="dl">'</span><span class="s1">0xff00ff</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// colour: purple</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="c1">// doors: 4</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// distance: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lat: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lon: 0</span>
+        <span class="p">{</span>
+          <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+          <span class="na">value</span><span class="p">:</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="dl">'</span><span class="s1">0.11</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">),</span>
+        <span class="p">},</span>
+      <span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">returnValue</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span>
+
+    <span class="c1">// perform the state transition</span>
+    <span class="kd">const</span> <span class="nx">tx</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">addCar</span><span class="p">(</span>
+        <span class="dl">'</span><span class="s1">0xff00ff</span><span class="dl">'</span><span class="p">,</span> <span class="c1">// colour: purple</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="c1">// doors: 4</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// distance: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lat: 0</span>
+        <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="c1">// lon: 0</span>
+        <span class="p">{</span>
+          <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+          <span class="na">value</span><span class="p">:</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="dl">'</span><span class="s1">0.11</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">ether</span><span class="dl">'</span><span class="p">),</span>
+        <span class="p">},</span>
+      <span class="p">);</span>
+
+    <span class="c1">// retrieve the updated state</span>
+    <span class="kd">const</span> <span class="nx">numCars</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">call</span><span class="p">();</span>
+    <span class="kd">const</span> <span class="nx">car1</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">cars</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">1</span><span class="p">));</span>
+
+    <span class="c1">// perform the assertions</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">numCars</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span>
+
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">colour</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0xff00ff</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">doors</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">4</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">distance</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">lat</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">lon</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">0</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">status</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// parked</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">car1</span><span class="p">.</span><span class="nx">owner</span><span class="p">,</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">]);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>The line <code class="highlighter-rouge">const returnValue = await instance.addCar.call(/* ... */);</code>
+retrieves the return value of the <code class="highlighter-rouge">addCar</code> function.
+Some participants in this workshop may have noticed something
+that is perhaps a little strange:</p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">addCar</code> is a function that causes a state transition,
+as it updates the values stored in the smart contract.
+In fact it has neither the <code class="highlighter-rouge">view</code> nor <code class="highlighter-rouge">pure</code> function modifiers.</li>
+  <li>In our smart contract invocation, we are executing <code class="highlighter-rouge">.addCar.call()</code>
+and not <code class="highlighter-rouge">.addCar()</code>.</li>
+</ul>
+
+<p>Usually we use <code class="highlighter-rouge">.call()</code> when invoking <code class="highlighter-rouge">view</code> or <code class="highlighter-rouge">pure</code> functions,
+so why are we using <code class="highlighter-rouge">.call()</code> here on a function which
+explicitly causes a state transition?</p>
+
+<p>The answer to that is not exactly straightforward:
+We are doing so to “emulate” what the return value
+of this particular call to the smart contract would be, <strong>without</strong>
+actually causing the state transition.
+Think of this as “previewing” the function invocation.
+The reason we need to do this is because if it were a true function invocation
+that resulted in a state transition on the smart contract,
+we don’t have access to the return value.</p>
+
+<p>The line <code class="highlighter-rouge">assert.equal(returnValue.toString(), '1');</code> is the first assertion,
+and will fail this test if the new <code class="highlighter-rouge">carId</code> is any value other than one.</p>
+
+<p>The line <code class="highlighter-rouge">const tx = await instance.addCar(/* ... */);</code>
+is where the actual state transition occurs.
+This is a “true” invocation of the <code class="highlighter-rouge">addCar</code> function,
+unlike the previous “preview” invocation of the <code class="highlighter-rouge">addCar</code> function.
+When this line has been executed, a transaction has been added to a block,
+and that block to the blockchain.
+This test, and any other test that involves a smart contract state transition,
+will be significantly slower than tests that do not,
+such as the one that we wrote earlier for the initial state.</p>
+
+<p>The lines <code class="highlighter-rouge">const numCars = await instance.numCars.call();</code>
+and <code class="highlighter-rouge">const car1 = await instance.cars.call(new BN(1));</code>
+retrieve the new/ updated state from the smart contract.</p>
+
+<p>The remaining lines are many <code class="highlighter-rouge">assert.equal()</code> statements,
+which will fail this test is the new/ updated state does not match the expected values.</p>
+
+<h2 id="test-run-for-state-transition">Test run for state transition</h2>
+
+<p>Now we are going to run our tests again.</p>
+
+<p>This time we have two tests.</p>
+
+<p>Run Truffle Test.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see output similar to the following</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-ozcli@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-ozcli
+<span class="o">&gt;</span> oz compile <span class="o">&amp;&amp;</span> mocha <span class="nt">--exit</span> <span class="nt">--recursive</span> ./test/<span class="k">**</span>/<span class="k">*</span>.spec.js
+
+Nothing to compile, all contracts are up to date.
+
+
+  Cars - initial state
+    ✓ Initialised with zero cars
+
+  Cars - state transitions
+    ✓ Adds a new car <span class="o">(</span>176ms<span class="o">)</span>
+
+  Cars - events
+    ✓ Honks a car at another car
+    ✓ Honking a car that you <span class="k">do </span>not own is not allowed <span class="o">(</span>45ms<span class="o">)</span>
+
+
+  4 passing <span class="o">(</span>654ms<span class="o">)</span>
+
+</code></pre></div></div>
+
+<p>All four tests continue passing. Great! 🎉 🎉 🎉</p>
+
+<p>Again, the main thing that we are looking out for here is
+that the tests continue passing.
+If one of the tests began to fail,
+we know that there is either a problem with the implementation (a true negative),
+or a problem with our specification (a false negative).</p>
+
+<h2 id="test-run-with-false-negative-for-state-transition">Test run with false negative for state transition</h2>
+
+<p>If you are feeling in an exploratory mood,
+you can try the following out:</p>
+
+<p>Replace <code class="highlighter-rouge">assert.equal(car1.colour, '0xff00ff');</code>,
+the on of the assertions in this test,
+with <code class="highlighter-rouge">assert.equal(car1.colour, '0xff00aa');</code>.</p>
+
+<p>Run the tests again, using <code class="highlighter-rouge">npm run test</code>.</p>
+
+<p>Observe that the output indicates an assertion error:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>i<span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-ozcli@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-ozcli
+<span class="o">&gt;</span> oz compile <span class="o">&amp;&amp;</span> mocha <span class="nt">--exit</span> <span class="nt">--recursive</span> ./test/<span class="k">**</span>/<span class="k">*</span>.spec.js
+
+Nothing to compile, all contracts are up to date.
+
+
+  Cars - initial state
+    ✓ Initialised with zero cars
+
+  Cars - state transitions
+    1<span class="o">)</span> Adds a new car
+
+  Cars - events
+    ✓ Honks a car at another car <span class="o">(</span>42ms<span class="o">)</span>
+    ✓ Honking a car that you <span class="k">do </span>not own is not allowed <span class="o">(</span>46ms<span class="o">)</span>
+
+
+  3 passing <span class="o">(</span>740ms<span class="o">)</span>
+  1 failing
+
+  1<span class="o">)</span> Cars - state transitions
+       Adds a new car:
+
+      AssertionError <span class="o">[</span>ERR_ASSERTION]: <span class="s1">'0xff00ff'</span> <span class="o">==</span> <span class="s1">'0xff00aa'</span>
+      + expected - actual
+
+      <span class="nt">-0xff00ff</span>
+      +0xff00aa
+
+      at Context.&lt;anonymous&gt; <span class="o">(</span><span class="nb">test</span>/Cars.spec.js:74:12<span class="o">)</span>
+      at processTicksAndRejections <span class="o">(</span>internal/process/task_queues.js:97:5<span class="o">)</span>
+
+
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! workshop-rsk-smart-contract-testing-ozcli@0.0.0 <span class="nb">test</span>: <span class="sb">`</span>oz compile <span class="o">&amp;&amp;</span> mocha <span class="nt">--exit</span> <span class="nt">--recursive</span> ./test/<span class="k">**</span>/<span class="k">*</span>.spec.js<span class="sb">`</span>
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the workshop-rsk-smart-contract-testing-ozcli@0.0.0 <span class="nb">test </span>script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+</code></pre></div></div>
+
+<p>Of course in this case, we were expecting it,
+and already know that the problem lies in the specification,
+in particular, an incorrect assertion.</p>
+
+<p>However, in a real (non-demo) scenario, when we encounter this,
+we would know that we have encountered a test failure,
+and would require investigation to determine whether this was due to
+a problem in the implementation,
+causing a true negative;
+or conversely whether there was a problem with the specification,
+causing a false negative.</p>
+
+<p>If you have chosen to do this additional step,
+do remember to revert the change before continuing
+with the rest of this workshop.</p>
+
+<h2 id="writing-a-test-for-events">Writing a test for events</h2>
+
+<p>Edit <code class="highlighter-rouge">test/Cars.spec.js</code>.</p>
+
+<p>As mentioned previously, this <code class="highlighter-rouge">contract</code> block contains
+a <code class="highlighter-rouge">before</code> block which sets up the smart contract instance
+to contain two cars prior to running any tests.
+This has been done for you, so you may skim over it,
+and get right to writing some tests.</p>
+
+<p>Replace the first line that says <code class="highlighter-rouge">// TODO perform assertions</code>
+with assertions.
+The <code class="highlighter-rouge">it</code> block should now look like this:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Honks a car at another car</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// perform the state transition</span>
+    <span class="kd">const</span> <span class="nx">tx</span> <span class="o">=</span>
+      <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">honkCar</span><span class="p">(</span>
+        <span class="mi">2</span><span class="p">,</span>
+        <span class="mi">1</span><span class="p">,</span>
+        <span class="p">{</span>
+          <span class="c1">// account #2 owns car #2</span>
+          <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
+        <span class="p">},</span>
+      <span class="p">);</span>
+
+      <span class="c1">// inspect the transaction &amp; perform assertions on the logs</span>
+      <span class="kd">const</span> <span class="p">{</span> <span class="nx">logs</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">tx</span><span class="p">;</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="nx">isArray</span><span class="p">(</span><span class="nx">logs</span><span class="p">));</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">logs</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+
+      <span class="kd">const</span> <span class="nx">log</span> <span class="o">=</span> <span class="nx">logs</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">event</span><span class="p">,</span> <span class="dl">'</span><span class="s1">CarHonk</span><span class="dl">'</span><span class="p">);</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="nx">fromCar</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">);</span>
+      <span class="nx">assert</span><span class="p">.</span><span class="nx">equal</span><span class="p">(</span><span class="nx">log</span><span class="p">.</span><span class="nx">args</span><span class="p">.</span><span class="nx">atCar</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>In our previous test, where we invoked <code class="highlighter-rouge">addCar</code>,
+we did not use the return value (<code class="highlighter-rouge">tx</code>)
+in the remainder of the test.
+In this test, we will.</p>
+
+<p>The line <code class="highlighter-rouge">const tx = await instance.honkCar(/* ... */);</code>
+invokes the <code class="highlighter-rouge">honkCar</code> function,
+and saves the transaction in <code class="highlighter-rouge">tx</code>.</p>
+
+<p>The next three lines, beginning with <code class="highlighter-rouge">const { logs } = tx;</code>,
+extract <code class="highlighter-rouge">tx.logs</code>.
+The assertion statements will fail this test if
+there is no <code class="highlighter-rouge">tx.logs</code> array,
+or if it has a number of logs that is anything other than one.</p>
 
 <blockquote>
-  <p>If this command fails,
-it is likely that your connection to RSK’s public node is impeded in some way,
-and you should identify and relax any restrictive
-network firewall or proxy rules.</p>
+  <p>Note that in RSK, transaction logs are generated when
+an event is emitted within that transaction.
+This is equivalent to the behaviour of transaction logs in Ethereum.</p>
 </blockquote>
 
-<p>The <code class="highlighter-rouge">result</code> property is the number of the latest block that has been synced.
-Note that this value (<code class="highlighter-rouge">0xca035</code>)
-is the block number in hexadecimal (base 16),
-so the output above indicates that the current block number
-is <code class="highlighter-rouge">827445</code> in decimal (base 10).
-This should match the “Best Block” field in the
-<a href="https://stats.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Testnet Stats</a> site.</p>
+<p>The next four lines, beginning with <code class="highlighter-rouge">const log = logs[0];</code>,
+extract the first (and only) event from this transaction.
+The assertion statements will fail this test is the
+event is not of the expected type or contain unexpected parameters.</p>
 
-<p><img src="img/stats-testnet-block-number.png" alt=""></p>
+<p>So far, in each <code class="highlighter-rouge">describe</code> block we have had only one test,
+but this time we’ll be doing something different,
+with two tests sharing the same <code class="highlighter-rouge">describe</code> block.</p>
+
+<p>Replace the second line that says <code class="highlighter-rouge">// TODO perform assertions</code>
+with assertions.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">Honking a car that you do not own is not allowed</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="c1">// perform the state transition</span>
+    <span class="kd">let</span> <span class="nx">tx</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">err</span><span class="p">;</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="nx">tx</span> <span class="o">=</span>
+        <span class="k">await</span> <span class="nx">instance</span><span class="p">.</span><span class="nx">honkCar</span><span class="p">(</span>
+          <span class="mi">2</span><span class="p">,</span>
+          <span class="mi">1</span><span class="p">,</span>
+          <span class="p">{</span>
+            <span class="c1">// account #3 does not own any cars, only account #1 and #2 do</span>
+            <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span>
+          <span class="p">},</span>
+        <span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">ex</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">err</span> <span class="o">=</span> <span class="nx">ex</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// should not get a result, but an error should have been thrown</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+    <span class="nx">assert</span><span class="p">.</span><span class="nx">ok</span><span class="p">(</span><span class="o">!</span><span class="nx">tx</span><span class="p">);</span>
+  <span class="p">});</span>
+</code></pre></div></div>
+
+<p>The line <code class="highlighter-rouge">const tx = await instance.honkCar(/* ... */);</code>
+is similar to the <code class="highlighter-rouge">honkCar</code> invocation from before.
+However, if you take a look at the parameters,
+you will notice that we attempt to operate a car
+using an account that does not own it.</p>
+
+<p>Also, unlike the invocation in the previous test,
+this statement has been surrounded by a <code class="highlighter-rouge">try ... catch</code> block,
+because we are expecting this invocation to throw an error.</p>
+
+<blockquote>
+  <p>Note that in the implementation, <code class="highlighter-rouge">contracts/Cars.sol</code>,
+the <code class="highlighter-rouge">honkCar(carId,otherCarId)</code> function has a function modifier
+for <code class="highlighter-rouge">onlyCarOwner(carId)</code>, which contains this statement:
+<code class="highlighter-rouge">require(cars[carId].owner == msg.sender, "you need to own this car");</code>.
+The purpose of this is that only a car’s owner is allowed to honk it.</p>
+</blockquote>
+
+<p>Thus far, all of our tests have been “happy path” cases,
+where the smart contract functions are always called in the expected way.
+These tests ensure that the smart contract behaves as it is supposed to,
+when those interacting with it do the “right thing”.</p>
+
+<p>However, external behaviour is something that is <strong>not</strong>
+within the locus of our control,
+and therefore by definition we need to ensure that our smart contract
+is able to handle these “failure path” cases too.
+In this case our implementation appears to have handled it,
+and we are writing a test within the specification to verify the handling.</p>
+
+<p>The final two lines, <code class="highlighter-rouge">assert.ok(err);</code> and <code class="highlighter-rouge">assert.ok(!tx);</code>,
+will fail this test if the <code class="highlighter-rouge">honkCar</code> invocation succeeded,
+when it was not supposed.
+Remember: We are <strong>not</strong> testing the “happy path” here.
+Instead we are testing the “failure path”.</p>
+
+<h2 id="test-run-for-events">Test run for events</h2>
+
+<p>Now we are going to run our tests again.</p>
+
+<p>This time we have four tests.</p>
+
+<p>Run Truffle Test.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
+
+<p>You should see output similar to the following</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run <span class="nb">test</span>
+
+<span class="o">&gt;</span> workshop-rsk-smart-contract-testing-ozcli@0.0.0 <span class="nb">test</span> /home/bguiz/code/rsk/workshop-rsk-smart-contract-testing-ozcli
+<span class="o">&gt;</span> oz compile <span class="o">&amp;&amp;</span> mocha <span class="nt">--exit</span> <span class="nt">--recursive</span> ./test/<span class="k">**</span>/<span class="k">*</span>.spec.js
+
+Nothing to compile, all contracts are up to date.
+
+
+  Cars - initial state
+    ✓ Initialised with zero cars
+
+  Cars - state transitions
+    ✓ Adds a new car <span class="o">(</span>124ms<span class="o">)</span>
+
+  Cars - events
+    ✓ Honks a car at another car
+    ✓ Honking a car that you <span class="k">do </span>not own is not allowed <span class="o">(</span>87ms<span class="o">)</span>
+
+
+  4 passing <span class="o">(</span>718ms<span class="o">)</span>
+
+</code></pre></div></div>
+
+<p>All four are still passing. Great! 🎉 🎉 🎉</p>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>We have now created specifications for testing initial state,
+state transitions, and events in a smart contract written in Solidity.</p>
+
+<p>We have also configure the OpenZeppelin CLI to connect to RSK networks,
+and used it as a test runner to execute our specifications.</p>
+
+<h2 id="going-further">Going further</h2>
+
+<p>We have now completed this workshop.
+Congratulations on making it to the end! 🎉 🎉 🎉</p>
+
+<p>There is a lot more to explore with regards to Smart contract testing.</p>
+
+<p>For example, you may have noticed that in the
+implementation for <code class="highlighter-rouge">honkCar()</code>,
+we have commented out a <code class="highlighter-rouge">require()</code> statement
+that verifies the value of <code class="highlighter-rouge">getTime()</code>.
+Writing a robust specification for this implementation is seemingly not possible,
+as it behaves differently depending on the time of day it is run.
+Mocking is a testing technique that will enable us to
+replace one (or sometimes more) functions within a smart contract
+in order to be able to test it in particular ways,
+and will help in this case.</p>
+
+<p>Check out
+<a href="https://dappsdev.org/hands-on/testing/solidity-mocks/" rel="external noopener noreferrer" target="_blank">DApps Dev Club’s Mocking Solidity for Tests</a>
+if you would like to try out <strong>smart contract mocking</strong> as a continuation of this tutorial.
+(This workshop is a modified and shortened version from that original.)</p>
+
 
 
                   
