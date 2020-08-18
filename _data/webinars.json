@@ -3012,7 +3012,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "/webinars/202007-005/banner-image.png",
       "twitterSite": "@bguiz",
@@ -3241,7 +3241,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b5c806ac-1ec7-470b-b5a6-1c7a889c9f17/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/caso-carnes-validadas",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3436,7 +3436,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/rsOsY8cDfrE",
+      "youtubeVideoId": "rsOsY8cDfrE",
       "_permalink": "/webinars/202008-001/",
       "_isPast": true
     },
@@ -3472,7 +3473,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/8n1dRBljIj4",
+      "youtubeVideoId": "8n1dRBljIj4",
       "_permalink": "/webinars/202008-002/",
       "_isPast": true
     },
@@ -3505,14 +3507,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/DHTIsn_PLvA",
+      "youtubeVideoId": "DHTIsn_PLvA",
       "_permalink": "/webinars/202008-003/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3543,34 +3546,32 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/JDKxwMON3fY",
+      "youtubeVideoId": "JDKxwMON3fY",
       "_permalink": "/webinars/202008-004/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202008-005",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-08-19T01:00:00.000Z",
-      "lastModified": "2020-08-04T18:30:00.000Z",
+      "lastModified": "2020-08-18T04:00:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Testing Smart Contracts with OpenZepplin CLI",
-      "description": "Learn how to create and run tests on your RSK smart contracts using OpenZeppelin CLI.",
+      "description": "Learn about software testing principles, and how to create and run tests on your RSK smart contracts using OpenZeppelin CLI, in this webinar with two mini hands-on workshops.",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
       "audiences": [
-        "general",
-        "developers",
-        "enterprise",
-        "startups"
+        "developers"
       ],
       "presenters": [
         {
@@ -3586,11 +3587,28 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
-      "bannerImage": "",
-      "twitterSite": "",
-      "resources": [],
+      "bannerImage": "/webinars/202008-005/banner-image.png",
+      "twitterSite": "@bguiz",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://developers.rsk.co/webinars/202008-005/slides/"
+        },
+        {
+          "label": "System pre-requisites",
+          "url": "https://developers.rsk.co/tutorials/workshop-prereqs/"
+        },
+        {
+          "label": "Javascript testing hands-on",
+          "url": "https://developers.rsk.co/tutorials/workshop-js-testing/"
+        },
+        {
+          "label": "Smart contract testing hands-on",
+          "url": "https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/"
+        }
+      ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202008-005/",
       "_isPast": false
