@@ -83,7 +83,7 @@ Ensure that you have a copy of RSKj running in Regtest locally,
 and then run the set up script:
 
 ```shell
-bash ./scripts.setup.sh
+bash ./scripts/setup.sh
 ```
 
 This will set up the RSK specific files for this project

@@ -11,7 +11,7 @@ backgroundImage: "/assets/img/preso/preso-rsk-slide-body.png"
 
 ---
 
-# Testing Smart Contracts with Truffle
+# Testing Smart Contracts with OZ CLI
 
 [Brendan Graetz](http://bguiz.com/)
 
