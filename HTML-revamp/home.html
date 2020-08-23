@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <!-- Google Tag Manager -->
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
+    <meta name="author" content="RSK Developers Portal">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <title>{{ page.title }} - RSK Developers Portal</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom Scrollbar -->
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+    <!-- CDN with Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <!-- refs para sliders -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- hotjar -->
+    <script>
+    (function(h, o, t, j, a, r) {
+
+        h.hj = h.hj || function() {
+            (h.hj.q = h.hj.q || []).push(arguments)
+        };
+
+        h._hjSettings = { hjid: 1829216, hjsv: 6 };
+
+        a = o.getElementsByTagName('head')[0];
+
+        r = o.createElement('script');
+        r.async = 1;
+
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+
+        a.appendChild(r);
+
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script>
+    var currentTheme = localStorage.getItem('theme');
+    if (currentTheme)
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    </script>
+    <!-- CSS customized -->
+    <link href="assets/css/code.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/styles-slider.css"> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- store theme in cookie -->
+    <!-- share this -->
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f3c2ef9623f390012b96afe&product=inline-share-buttons" async="async"></script>
+</head>
+
+<body class="darktheme">
+    <!-- INICIA EL HEADER -->
+    <!-- Actions buttons and slide navs -->
+    <div class="chat-btn"></div>
+    <div class="twitter-btn" onclick="openNav()"></div>
+    <div class="share-redes"></div>
+    <div class="share-buttons-container">
+        <div class="sharethis-inline-share-buttons"></div>
+    </div>
+    <div id="twitter-sidebar" class="sidebar">
+        <div class="gitter-chat-embed-action-bar"><a class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-pop-out" aria-label="Open Twitter" href="https://twitter.com/rsksmart" target="_blank" rel="noopener"></a><button class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-collapse-chat" aria-label="Collapse Twiiter Feed" onclick="closeNav()"></button></div>
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a> -->
+        <div class="twitter-feed-container">
+            <a class="twitter-timeline" href="https://twitter.com/RSKsmart?ref_src=twsrc%5Etfw">Tweets by RSKsmart</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    <header class="mb-5 mt-5">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-xl navbar">
+                <a class="navbar-brand" href="#">
+                    <div id="logo" class="logo"></div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="main-menu" class="navbar-nav ml-auto">
+                        <li class="nav-link selected" href="#">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="internal.html">Products<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Develop</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">DeFi</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Getting Started</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Community</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-search">
+                            <div class="icon"></div>
+                            <div class="line"></div>
+                            <input type="search" name="search" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- TERMINA EL HEADER -->
+    <!-- INICIA EL BODY -->
+    <div class="container">
+        <!-- Mat-->
+        <div class="row main_content">
+            <!-- BETA CONTENT column -->
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 beta_content">
+                <!-- page info -->
+                <div class="row"><!--description-->
+                    <div class="col-12">
+
+<div class="row">
+                            <div class="col-12 homepage content-box site-presentation-box">
+                                
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12 site-presentation">
+                                       <h1>Welcome to RSK</h1>
+                                       <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                       <p><a href="../geth-attach-local-node/" target="_blank">Follow our blog</a></p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 homepage-video">
+                                      <a data-toggle="modal" data-target="#homevideomodal"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+<div class="row">
+                            <div class="col-12 ">
+ <!-- full width carousel -->
+
+                                <div id="fullCarousel" class="owl-carousel owl-theme">
+                                    <div class="item" style="background-image: url(assets/img/full-carousel-template-img.jpg);"> 
+                                    </div>
+                                   <div class="item" style="background-image: url(assets/img/full-carousel-template-img.jpg);"> 
+                                    </div>
+                                    <div class="item" style="background-image: url(assets/img/full-carousel-template-img.jpg);"> 
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+
+
+                        
+                        <div class="row">
+                            <div class="col-12 homepage content-box topic-content">
+                                <h3>GETTING STARTED</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12 pr-3rem-15">
+                                        <a href="../geth-attach-local-node/">QUICK START for beginners</a>
+                                        <a href="../geth-attach-local-node/" target="_blank">Discover Use-Cases</a>
+                                        <a href="../geth-attach-local-node/">The Stack</a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 pl-3rem-15">
+                                        <a href="../geth-attach-local-node/">QUICK START for blockchain developers</a>
+                                        <a href="../geth-attach-local-node/">Conceptual docs</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-lg-6 col-sm-12 column-gap-right homepage content-box topic-content">
+                           <h3>KNOWLEDGE BASE</h3>
+                           <a href="../geth-attach-local-node/">RSK Educate</a>
+                            <a href="../geth-attach-local-node/" target="_blank">Glossary</a>
+                            <a href="../geth-attach-local-node/">Webinars</a>
+                            <a href="../geth-attach-local-node/">Tutorials & Guides</a>
+                            <a href="../geth-attach-local-node/">Contribute</a>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12 column-gap-left homepage content-box topic-content">
+                            <h3>RSK</h3>
+                            <a href="../geth-attach-local-node/">R-BTC Token</a>
+                            <a href="../geth-attach-local-node/" target="_blank">RSK Blockchain</a>
+                            <a href="../geth-attach-local-node/">RSKj</a>
+                            <a href="../geth-attach-local-node/">Architecture</a>
+                            <a href="../geth-attach-local-node/">RSK FAQ</a>
+                            </div>
+                        </div>
+
+                        <div class="row">
+<div class="col-lg-12 homepage content-box topic-content">
+                            <h3>RIF SERVICES</h3>
+                            <div class="row d-flex justify-content-between">
+
+                            <div class="col-lg-6 col-sm-12 pr-3rem-15">
+                           <a href="../geth-attach-local-node/">DISCOVER RIF</a>
+                            <a href="../geth-attach-local-node/" target="_blank">RIF Payments </a>
+                            <a href="../geth-attach-local-node/">RIF Storage </a>
+                            <a href="../geth-attach-local-node/">RIF Name Service</a>
+                            <a href="../geth-attach-local-node/">RIF Token</a>
+                            </div>
+
+                            <div class="col-lg-6 col-sm-12 pl-3rem-15">
+    
+                            <a href="../geth-attach-local-node/">RIF Marketplace</a>
+                            <a href="../geth-attach-local-node/" target="_blank">RIF Directory</a>
+                            <a href="../geth-attach-local-node/">RIF Tools</a>
+                            <a href="../geth-attach-local-node/">RIF Communications</a>
+                            <a href="../geth-attach-local-node/">RIF FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                         <div class="row">
+                            <div class="col-12 homepage content-box topic-content">
+                                <h3>RIF PAYMENTS</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12">
+                                        <a href="../geth-attach-local-node/">Discover the first off-chain state channel network launched on RSK</a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+                        <div class="row">
+                            <div class="col-12 homepage content-box topic-content">
+                                <h3>CONTRIBUTE</h3>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12 pr-3rem-15">
+                                        <a href="../geth-attach-local-node/">Contribute</a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <!-- description ends -->
+                    </div>
+                </div><!-- page info ends -->
+            </div> <!-- beta contents ends -->
+            <!-- content ends here -->
+        </div>
+    </div>
+    <footer id="footer" class="section-bg">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="assets/img/powered_by_iov.svg" class="img-fluid powered_by">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-info">
+                            <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
+                            <br>
+                            <a href="https://developers.rsk.co/" rel="external noopener noreferrer" target="_blank" class="footer-button rounded active" title="Start now">Start now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links">
+                                    <ul>
+                                        <li class="negbottom">Whitepapers</li>
+                                        <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="external noopener noreferrer" target="_blank">Original</a></li>
+                                        <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="external noopener noreferrer" target="_blank">Updated</a></li>
+                                        <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="external noopener noreferrer" target="_blank">RIF</a></li>
+                                        <li><a href="https://rsk.co/development-roadmap.html" rel="external noopener noreferrer" target="_blank">Roadmap</a></li>
+                                        <li><a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">Explorer</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="https://mining.rsk.co/" rel="external noopener noreferrer" target="_blank">Merged Mining</a></li>
+                                        <li><a href="https://www.rsk.co/bounty-program/index" rel="external noopener noreferrer" target="_blank">Bounty Program</a></li>
+                                        <li><a href="https://grants.rsk.co" rel="external noopener noreferrer" target="_blank">Grants Program</a></li>
+                                        <li><a href="https://fund.rsk.co" rel="external noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
+                                        <li><a href="https://studio.rsk.co" rel="external noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="https://rsk.co/defi" rel="external noopener noreferrer" target="_blank">DeFi</a></li>
+                                        <li><a href="https://rsk.co/Use-cases.html" rel="external noopener noreferrer" target="_blank">Use cases</a></li>
+                                        <li><a href="https://rsk.co/faqs.html" rel="external noopener noreferrer" target="_blank">Faqs</a></li>
+                                        <li><a href="https://blog.rsk.co/" rel="external noopener noreferrer" target="_blank">Blog</a></li>
+                                        <li><a href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" rel="external noopener noreferrer" target="_blank">Brand Guidelines</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links lastcol">
+                                    <ul>
+                                        <li><a class="bold" href="https://rsk.co/terms-conditions.html" rel="external noopener noreferrer" target="_blank">Terms &amp; Conditions</a></li>
+                                        <li><a class="bold" href="https://rsk.co/privacy-policy.html" rel="external noopener noreferrer" target="_blank">Privacy Policy</a></li>
+                                        <li><a class="bold" href="https://www.iovlabs.org" rel="external noopener noreferrer" target="_blank">About IOVlabs</a></li>
+                                        <li><a class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html" rel="external noopener noreferrer" target="_blank">Contact IOVlabs</a></li>
+                                        <a href="https://developers.doc.rsk.co/docs" rel="external noopener noreferrer" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://twitter.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="facebook"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/RSKsmart/" rel="external noopener noreferrer" target="_blank" class="linkedin"><i class="fab fa-facebook"></i></a>
+                            <a href="https://gitter.im/rsksmart" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-gitter"></i></a>
+                            <a href="https://www.reddit.com/r/rootstock/" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-reddit"></i></a>
+                            <a href="https://t.me/rskofficialcommunity" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                            <a href="https://medium.com/@RSKNews" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-medium"></i></a>
+                            <a href="https://t.me/rsksmartcontract" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.instagram.com/rsksmart/" rel="external noopener noreferrer" target="_blank" class=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 pl-0-mobile">
+                            <p class="copyright">Copyright © 2015 - 2020 RSK Labs. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 pl-0-mobile">
+                            <p class="credits"> RSK Public Key (2ED3 E888 0384 D3D9 70B6 A612 BEBC A6A9 63F6 1479)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+ 
+<!-- VIDEO MODAL -->
+      <div class="modal fade" id="homevideomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+               <iframe width="auto" height="500px" src="https://www.youtube.com/embed/6U0_UkuOh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- VIDEO MODAL ENDS -->
+
+    <!-- TERMINA EL BODY -->
+</body>
+<!-- jQuery library -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Custom Scrollbars -->
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Refs para sliders -->
+<script src="assets/vendor/carousel/owl.carousel.min.js"></script>
+<!-- Main js-->
+<script src="assets/js/scripts.js"></script>
+
+
+<!-- chat -->
+<script>
+((window.gitter = {}).chat = {}).options = {
+    room: 'rsksmart/getting-started',
+    activationElement: '.chat-btn',
+    // targetElement: '.my-special-target-element'
+};
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+</html>

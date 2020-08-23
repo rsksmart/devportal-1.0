@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <!-- Google Tag Manager -->
+    <!-- End Google Tag Manager -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
+    <meta name="author" content="RSK Developers Portal">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <title>{{ page.title }} - RSK Developers Portal</title>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="assets/img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Custom Scrollbar -->
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+    <!-- CDN with Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Quicksand:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+    <!-- refs para sliders -->
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- hotjar -->
+    <script>
+    (function(h, o, t, j, a, r) {
+
+        h.hj = h.hj || function() {
+            (h.hj.q = h.hj.q || []).push(arguments) };
+
+        h._hjSettings = { hjid: 1829216, hjsv: 6 };
+
+        a = o.getElementsByTagName('head')[0];
+
+        r = o.createElement('script');
+        r.async = 1;
+
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+
+        a.appendChild(r);
+
+    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <script>
+    var currentTheme = localStorage.getItem('theme');
+    if (currentTheme)
+        document.documentElement.setAttribute('data-theme', currentTheme);
+    </script>
+    <!-- CSS customized -->
+    <link href="assets/css/code.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="assets/css/styles-slider.css"> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- store theme in cookie -->
+    <!-- share this -->
+    <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f3c2ef9623f390012b96afe&product=inline-share-buttons" async="async"></script>
+</head>
+
+<body class="darktheme">
+    <!-- INICIA EL HEADER -->
+    <!-- Actions buttons and slide navs -->
+    <div class="chat-btn"></div>
+    <div class="twitter-btn" onclick="openNav()"></div>
+    <div class="share-redes"></div>
+    <div class="share-buttons-container">
+        <div class="sharethis-inline-share-buttons"></div>
+    </div>
+    <div id="twitter-sidebar" class="sidebar">
+        <div class="gitter-chat-embed-action-bar"><a class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-pop-out" aria-label="Open Twitter" href="https://twitter.com/rsksmart" target="_blank" rel="noopener"></a><button class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-collapse-chat" aria-label="Collapse Twiiter Feed" onclick="closeNav()"></button></div>
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a> -->
+        <div class="twitter-feed-container">
+            <a class="twitter-timeline" href="https://twitter.com/RSKsmart?ref_src=twsrc%5Etfw">Tweets by RSKsmart</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </div>
+    <header class="mb-5 mt-5">
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-xl navbar">
+                <a class="navbar-brand" href="#">
+                    <div id="logo" class="logo"></div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="main-menu" class="navbar-nav ml-auto">
+                        <li class="nav-link" href="#">
+                            <a href="home.html">Home</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="internal.html">Products<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Develop</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Services</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">DeFi</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Getting Started</a>
+                        </li>
+                        <li class="nav-link" href="#">
+                            <a href="#">Community</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <div class="input-search">
+                            <div class="icon"></div>
+                            <div class="line"></div>
+                            <input type="search" name="search" placeholder="Search">
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- TERMINA EL HEADER -->
+    <!-- INICIA EL BODY -->
+    <div class="container">
+        <!-- Mat-->
+        <div class="row main_content">
+            <!-- LEFT NAV COLUMN -->
+            <div class="col-lg-3 menu_content d-none d-lg-block ">
+                <div class="col_menu sticky-top">
+                    <div class="col-12">
+                        <h2>RSK DOCUMENTATION</h2>
+                        <ul>
+                            <li><a href="#">Back to Home</a>
+                            </li>
+                        </ul>
+                        <div class="inner-nav-left mCustomScrollbar" data-mcs-theme="dark">
+                            <ul>
+                                <li><a href="#">Quick Start</a></li>
+                                <ul>
+                                    <li><a href="#">Step 1 - Install RSK Local Node</a></li>
+                                    <li><a href="#">Step 2 - Install Truffle & Ganache</a></li>
+                                    <li><a href="#">Step 3 - Edit Smart Contract</a></li>
+                                    <li><a href="#">Step 4 - Compile & Deploy</a></li>
+                                    <li><a href="#">Step 5 - Run Smart Contract</a></li>
+                                </ul>
+                                <li><a href="#">Webinars</a></li>
+                                <li><a href="#">The Stack</a></li>
+                                <li><a href="#">RSK Blockchain</a></li>
+                                <li><a href="#">RSK Infrastructure Framework</a></li>
+                                <li><a href="#">Develop</a></li>
+                                <li><a href="#">Engage</a></li>
+                                <li><a href="#">Roadmap</a></li>
+                                <li><a href="#">Contribute</a></li>
+                                <li><a href="#">Grants</a></li>
+                                <li><a href="#">DeFi for Bitcoin</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <!-- BETA CONTENT column -->
+            <div class="col-lg-9 col-md-12 col-xs-12 col-sm-12 beta_content">
+                <!-- will stick on scroll-->
+                <!-- Breadcrumbs & metadata -->
+                <div class="row primary_info header-inner">
+                    <div class="col-12">
+                        <div class="row custom-mb-5">
+                            <div id="siteBreadcrumb" class="col-md-8 pl-0">
+                                <p><span class="green">RSK Documentation</span> / <span class="green">Quick Start</span> / Step 1 Install RSK Local Node</p>
+                            </div>
+                            <div id="page-metadata" class="col-md-4 text-md-right p-0">
+                                <span class="pr-5">1º to read | Edit | </span>
+                                <span class="theme-switch-wrapper">
+                                    <label class="theme-switch" for="checkbox">
+                                        <input type="checkbox" id="checkbox" />
+                                        <div class="slider round"></div>
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="col-12 page-title content-box">
+                                <h1>Deploy a smart contract at RSK local node using Geth and Remix</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- will stick ends -->
+                <!-- page info -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row mb-5">
+                            <!-- On this page -->
+                            <div class="col-12 content-box">
+                                <h2 class="subtitle">On this page</h2>
+                                <ul class="on_this_page">
+                                    <li>
+                                        <a href="#overview">Overview</a>
+                                    </li>
+                                    <li>
+                                        <a href="#requirements">Requirements</a>
+                                    </li>
+                                    <li>
+                                        <a href="#run-a-rsk-local-node">Run a RSK local node</a>
+                                    </li>
+                                    <li>
+                                        <a href="#connect-with-rsk-local-node">Connect with a RSK local node using geth attach</a>
+                                    </li>
+                                    <li>
+                                        <a href="#remix">Remix</a>
+                                    </li>
+                                    <li>
+                                        <a href="#create-a-smart-contract">Create a smart contract</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> <!-- On this page ends -->
+                        <div class="row">
+                            <!--description-->
+                            <div class="col-12 content-box topic-content">
+                                <p>RSK’s virtual machine implementation is compatible with the Ethereum virtual machine (EVM), which enables us to make use of many of Ethereum developer tools.</p>
+                                <p>In this tutorial I will show you step-by-step how to compile a smart contract using Remix and deploy it on a local node using
+                                    Geth.</p>
+                                <h3 id="overview">OVERVIEW</h3>
+                                <p>We will do these steps:</p>
+                                <ol class="two_columns">
+                                    <li>Run a RSK local node;</li>
+                                    <li>Connect with a RSK local node using Geth attach;</li>
+                                    <li>Create a smart contract in Remix;</li>
+                                    <li>Compile it;</li>
+                                    <li>Create a Javascript deploy file; Geth attach;</li>
+                                    <li>Deploy the smart contract in the Geth;</li>
+                                    <li>Interact with the smart contract</li>
+                                </ol>
+                                <div class="big_separator">
+                                </div>
+                                <h3 id="requirements">REQUIREMENTS</h3>
+                                <ul>
+                                    <li>
+                                        Java JDK
+                                    </li>
+                                    <li>
+                                        RSK local node
+                                    </li>
+                                    <li>
+                                        Geth
+                                    </li>
+                                    <li>
+                                        Remix - web tool, online
+                                    </li>
+                                </ul>
+                                <p>You will need to complete this tutorial before proceeding:</p>
+                                <p><a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a></p>
+                                <p><a href="#" target="_blank">This is an external link</a> with some text following.</p>
+                                <div class="big_separator"></div>
+                                <h3 id="run-a-rsk-local-node">RUN A RSK LOCAL NODE</h3>
+                                <p>To run the node:</p>
+                                <div class="language-shell highlighter-rouge">
+                                    <div class="highlight">
+                                        <pre class="highlight"><code>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start <span class="nt">--regtest</span>
+                                </code></pre>
+                                    </div>
+                                </div>
+                                <p>(Replace with your path to the JAR file).</p>
+                                <p>Check the tutorial: <a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a></p>
+                                <p>for more details on how to do this.</p>
+                                <div class="big_separator">
+                                </div>
+                                <h3 id="connect-with-rsk-local-node">CONNECT WITH A RSK LOCAL NODE USING GETH ATTACH</h3>
+                                <div class="language-shell highlighter-rouge">
+                                    <div class="highlight">
+                                        <pre class="highlight"><code>geth attach http://127.0.0.1:4444
+                                </code></pre>
+                                    </div>
+                                </div>
+                                <p>Check the tutorial: <a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a> for more details on how to do this.</p>
+                                <div class="big_separator">
+                                </div>
+                                <h3 id="remix">REMIX</h3>
+                                <p>Go to <a href="http://remix.ethereum.org/" rel="external noopener noreferrer" target="_blank">REMIX</a> </p>
+                                <p>In the <code class="highlighter-rouge">home page</code>, choose environment <code class="highlighter-rouge">Solidity</code></p>
+                                <img class="img-fluid" src="./assets/img/img1.PNG" alt="">
+                                <img class="img-fluid" src="./assets/img/img2.PNG" alt="">
+                                <div class="big_separator">
+                                </div>
+                                <h3 id="connect-with-rsk-local-node">CREATE A SMART CONTRACT</h3>
+                                <p>Create a new file</p>
+                                <p>Click on the second button on the left side - file explorer</p>
+                                <img class="img-fluid" src="./assets/img/img2.PNG" alt="">
+                                <p>Click on the + button to create a new file</p>
+                                <div class="small_separator">
+                                </div>
+                                <img class="img-fluid" src="./assets/img/img3.PNG" alt="">
+                                <p>Copy the smart contract from the following gist, or inline below:</p>
+                                <p><b>Register.sol gist</b></p>
+                                <div class="language-shell highlighter-rouge">
+                                    <div class="highlight">
+                                        <pre class="highlight"><code>
+pragma solidity 0.5.4;
+
+contract Register {
+    string private info;
+
+    function setInfo(string memory _info) public {
+        info = _info;
+    }
+
+    function getInfo() public view returns (string memory) {
+        return info;
+    }
+}
+                                </code></pre>
+                                    </div>
+                                </div>
+                                <div class="small_separator">
+                                </div>
+                                <!-- table elements -->
+                                <table class="table-filled-bg-row">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4">Long th with 100% width</th>
+                                        </tr>
+                                        <tr class="regular-table-header">
+                                            <th width="40%">Header Col 1</th>
+                                            <th width="20%">Header Col 2</th>
+                                            <th width="20%">Header Col 3</th>
+                                            <th width="20%">Header Col 4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem Ipsum</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <a href="http://remix.ethereum.org/" rel="external noopener noreferrer" target="_blank">REMIX</a>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo re et dolore magna aliqua.</td>
+                                            <td data-column="Header Col 2">Lorem Ipsum</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem Ipsum</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table-empty-bg-row">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="4">Long th with 100% width</th>
+                                        </tr>
+                                        <tr class="regular-table-header">
+                                            <th width="25%">Header Col 1</th>
+                                            <th width="25%">Header Col 2</th>
+                                            <th width="25%">Header Col 3</th>
+                                            <th width="25%">Header Col 4</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem Ipsum</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <a href="http://remix.ethereum.org/" rel="external noopener noreferrer" target="_blank">REMIX</a> ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labo re et dolore magna aliqua.</td>
+                                            <td data-column="Header Col 2">Lorem Ipsum</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem Ipsum</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem Ipsum</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-column="Header Col 1">Lorem Ipsum</td>
+                                            <td data-column="Header Col 2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</td>
+                                            <td data-column="Header Col 3">Lorem Ipsum</td>
+                                            <td data-column="Header Col 4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <!-- table elements ends -->
+                                <!-- sliders elements -->
+                                <div id="magnifyCarousel" class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <a href="https://cobo.com/" target="blank">
+                                            <img src="assets/img/logos/cobo.png" alt="Cobo">
+                                            <a class="company-name" href="https://cobo.com/" target="blank">Cobo</a>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="https://edge.app/" target="blank">
+                                            <img src="assets/img/logos/edge.png" alt="Edge">
+                                            <a class="company-name" href="https://edge.app/" target="blank">Edge</a>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="https://mycrypto.com/account" target="blank">
+                                            <img src="assets/img/logos/mycrypto.png" alt="My Crypto">
+                                            <a class="company-name" href="https://mycrypto.com/account" target="blank">My Crypto</a>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="https://www.portis.io/" target="blank">
+                                            <img src="assets/img/logos/portis.png" alt="Portis">
+                                            <a class="company-name" href="https://www.portis.io/" target="blank">Portis</a>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="https://www.uport.me/" target="blank">
+                                            <img src="assets/img/logos/uport.png" alt="U-Port">
+                                            <a class="company-name" href="https://www.uport.me/" target="blank">U-Port</a>
+                                        </a>
+                                    </div>
+                                    <div class="item">
+                                        <a href="https://cobo.com/" target="blank">
+                                            <img src="assets/img/logos/cobo.png" alt="Cobo">
+                                            <a class="company-name" href="https://cobo.com/" target="blank">Cobo</a>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <!-- full width carousel -->
+
+                                <div id="fullCarousel" class="owl-carousel owl-theme">
+                                    <div class="item" style="background-image: url(assets/img/full-carousel-template-img.jpg);"> 
+                                    </div>
+                                   <div class="item" style="background-image: url(assets/img/full-carousel-template-img.jpg);"> 
+                                    </div>
+                                    <div class="item" style="background-image: url(assets/img/full-carousel-template-img.jpg);"> 
+                                    </div>
+                                    
+                                </div>
+
+                                <!-- sliders elements ends -->
+                                <div class="small_separator"></div>
+                                <p>Copy the smart contract from the following gist, or inline below:</p>
+                                <p><a href="https://gist.github.com/solangegueiros/6f30100662f8583ea39a49a5fa198b89" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">Register.sol</code> gist</a></p>
+                                <div class="language-shell highlighter-rouge">
+                                    <div class="highlight">
+                                        <pre class="highlight"><code>pragma solidity 0.5.4;
+
+contract Register {
+    string private info;
+
+    function setInfo(string memory _info) public {
+        info = _info;
+    }
+
+    function getInfo() public view returns (string memory) {
+        return info;
+    }
+}
+                                </code></pre>
+
+                                    </div>
+                                </div>
+                                                 <blockquote>
+  <p>For Mac users type <code class="highlighter-rouge">pwd</code> to locate the current path you’re on.</p>
+</blockquote>
+                                <!-- tips -->
+                                <div class="tips">
+                                    <div class="tips-title">
+                                        Tips:
+                                    </div>
+                                    <div class="tips-content">
+                                        <span class="badge badge-tips"><a href="">--help</a></span> is your best friend
+                                    </div>
+                                </div>
+                                <!-- tips ends-->
+                                <!-- related topics -->
+                                <div class="related-topics">
+                                    <h4>Related topics</h4>
+                                    <a href="#">Programming for the IoT</a> <a href="#">Lorem ipsum dolor sit amet</a> <a href="#">Lorem ipsum</a>
+                                </div>
+                                <!-- related topics ends -->
+                            </div>
+                        </div><!-- description ends -->
+                    </div>
+                </div><!-- page info ends -->
+            </div> <!-- beta contents ends -->
+            <!-- content ends here -->
+        </div>
+    </div>
+    <footer id="footer" class="section-bg">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <img src="assets/img/powered_by_iov.svg" class="img-fluid powered_by">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-info">
+                            <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
+                            <br>
+                            <a href="https://developers.rsk.co/" rel="external noopener noreferrer" target="_blank" class="footer-button rounded active" title="Start now">Start now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links">
+                                    <ul>
+                                        <li class="negbottom">Whitepapers</li>
+                                        <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="external noopener noreferrer" target="_blank">Original</a></li>
+                                        <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="external noopener noreferrer" target="_blank">Updated</a></li>
+                                        <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="external noopener noreferrer" target="_blank">RIF</a></li>
+                                        <li><a href="https://rsk.co/development-roadmap.html" rel="external noopener noreferrer" target="_blank">Roadmap</a></li>
+                                        <li><a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">Explorer</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="https://mining.rsk.co/" rel="external noopener noreferrer" target="_blank">Merged Mining</a></li>
+                                        <li><a href="https://www.rsk.co/bounty-program/index" rel="external noopener noreferrer" target="_blank">Bounty Program</a></li>
+                                        <li><a href="https://grants.rsk.co" rel="external noopener noreferrer" target="_blank">Grants Program</a></li>
+                                        <li><a href="https://fund.rsk.co" rel="external noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
+                                        <li><a href="https://studio.rsk.co" rel="external noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links">
+                                    <ul>
+                                        <li><a href="https://rsk.co/defi" rel="external noopener noreferrer" target="_blank">DeFi</a></li>
+                                        <li><a href="https://rsk.co/Use-cases.html" rel="external noopener noreferrer" target="_blank">Use cases</a></li>
+                                        <li><a href="https://rsk.co/faqs.html" rel="external noopener noreferrer" target="_blank">Faqs</a></li>
+                                        <li><a href="https://blog.rsk.co/" rel="external noopener noreferrer" target="_blank">Blog</a></li>
+                                        <li><a href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" rel="external noopener noreferrer" target="_blank">Brand Guidelines</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-3 col-sm-6">
+                                <div class="footer-links lastcol">
+                                    <ul>
+                                        <li><a class="bold" href="https://rsk.co/terms-conditions.html" rel="external noopener noreferrer" target="_blank">Terms &amp; Conditions</a></li>
+                                        <li><a class="bold" href="https://rsk.co/privacy-policy.html" rel="external noopener noreferrer" target="_blank">Privacy Policy</a></li>
+                                        <li><a class="bold" href="https://www.iovlabs.org" rel="external noopener noreferrer" target="_blank">About IOVlabs</a></li>
+                                        <li><a class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html" rel="external noopener noreferrer" target="_blank">Contact IOVlabs</a></li>
+                                        <a href="https://developers.doc.rsk.co/docs" rel="external noopener noreferrer" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://twitter.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.youtube.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="facebook"><i class="fab fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/RSKsmart/" rel="external noopener noreferrer" target="_blank" class="linkedin"><i class="fab fa-facebook"></i></a>
+                            <a href="https://gitter.im/rsksmart" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-gitter"></i></a>
+                            <a href="https://www.reddit.com/r/rootstock/" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-reddit"></i></a>
+                            <a href="https://t.me/rskofficialcommunity" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                            <a href="https://medium.com/@RSKNews" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-medium"></i></a>
+                            <a href="https://t.me/rsksmartcontract" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
+                            <a href="https://www.instagram.com/rsksmart/" rel="external noopener noreferrer" target="_blank" class=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 pl-0-mobile">
+                            <p class="copyright">Copyright © 2015 - 2020 RSK Labs. All rights reserved.</p>
+                        </div>
+                        <div class="col-md-6 col-xs-12 pl-0-mobile">
+                            <p class="credits"> RSK Public Key (2ED3 E888 0384 D3D9 70B6 A612 BEBC A6A9 63F6 1479)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- TERMINA EL BODY -->
+</body>
+<!-- jQuery library -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="assets/js/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Custom Scrollbars -->
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- Refs para sliders -->
+<script src="assets/vendor/carousel/owl.carousel.min.js"></script>
+<!-- Main js -->
+<script src="assets/js/scripts.js"></script>
+
+
+<!-- chat -->
+<script>
+((window.gitter = {}).chat = {}).options = {
+    room: 'rsksmart/getting-started',
+    activationElement: '.chat-btn',
+    // targetElement: '.my-special-target-element'
+};
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
+</html>
