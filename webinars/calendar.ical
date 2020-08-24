@@ -2879,4 +2879,34 @@ STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20200804T183000Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202008-011@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200902T120000Z
+DTSTART:20200902T120000Z
+SUMMARY:Post Covid Hack Official Launch 
+DESCRIPTION:Post Covid Hack Official Launch\n\nOnline only\n\nRSVP: \n\nVi
+ deo stream: https://www.eventbrite.sg/e/post-covid-hack-2020-official-laun
+ ch-tickets-117617704721\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Post Co
+ vid Hack Official Launch</span></div>\n<div><span>Online only</span></div>
+ \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
+ ;</b><span><a href=\"https://www.eventbrite.sg/e/post-covid-hack-2020-offi
+ cial-launch-tickets-117617704721\">www.eventbrite.sg/e/post-covid-hack-202
+ 0-official-launch-tickets-117617704721</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Eddy Travia\, CEO\, Coinsilium\, @startupeddy":mailto:develo
+ pers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Post Covid Hack Official Launch 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.eventbrite.sg/e/post-covid-hack-2020-official-la
+ unch-tickets-117617704721
+STATUS:CONFIRMED
+X-LANGUAGE:
+LAST-MODIFIED:20200814T073000Z
+END:VEVENT
 END:VCALENDAR
