@@ -1,5 +1,5 @@
 ---
-layout: rsk
+layout: internal_revamp
 title: Quick Start - Step 4
 tags: quick-start, compile, deploy, regtest, truffle
 description: 'quick start - compile smart contracts, deploy smart contracts to regtest'

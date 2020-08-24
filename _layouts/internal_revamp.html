@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+{% include head_revamp.html %}
+
+<body class="darktheme">
+
+{% include header_revamp.html %}
+
+<div class="container">
+    <!-- Mat-->
+    <div class="row main_content">
+        <!-- LEFT NAV COLUMN -->
+
+        {% include nav-page-menu_revamp.html %}
+
+        <!-- BETA CONTENT column -->
+        <div class="col-lg-9 col-md-12 col-xs-12 col-sm-12 beta_content">
+            <!-- will stick on scroll-->
+            <!-- Breadcrumbs & metadata -->
+            <div class="row primary_info header-inner">
+                <div class="col-12">
+                    <div class="row custom-mb-5">
+                        <div id="siteBreadcrumb" class="col-md-8 pl-0">
+                            <p>{% include breadcrumbs.html %}</p>
+                        </div>
+                        <div id="page-metadata" class="col-md-4 text-md-right p-0">
+                            <span class="pr-5">1º to read | Edit | </span>
+                            <span class="theme-switch-wrapper">
+                                    <label class="theme-switch" for="checkbox">
+                                        <input type="checkbox" id="checkbox" />
+                                        <div class="slider round"></div>
+                                    </label>
+                                </span>
+                        </div>
+                        <div class="col-12 page-title content-box">
+                            <h1>{{ page.title }}</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- will stick ends -->
+            <!-- page info -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="row mb-5">
+                        <!-- On this page -->
+                        <div class="col-12 content-box">
+                            <h2 class="subtitle">On this page</h2>
+                            <ul class="on_this_page">
+                                <li>
+                                    <a href="#overview">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#requirements">Requirements</a>
+                                </li>
+                                <li>
+                                    <a href="#run-a-rsk-local-node">Run a RSK local node</a>
+                                </li>
+                                <li>
+                                    <a href="#connect-with-rsk-local-node">Connect with a RSK local node using geth attach</a>
+                                </li>
+                                <li>
+                                    <a href="#remix">Remix</a>
+                                </li>
+                                <li>
+                                    <a href="#create-a-smart-contract">Create a smart contract</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> <!-- On this page ends -->
+                    <div class="row">
+                        <!--description-->
+                        <div class="col-12 content-box topic-content">
+
+                            {{ content }}
+
+                        </div>
+                    </div><!-- description ends -->
+                </div>
+            </div><!-- page info ends -->
+        </div> <!-- beta contents ends -->
+        <!-- content ends here -->
+    </div>
+</div>
+<!-- TERMINA EL BODY -->
+
+{% include footer_revamp.html %}
+
+<!-- VIDEO MODAL -->
+<div class="modal fade" id="homevideomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <iframe width="auto" height="500px" src="https://www.youtube.com/embed/6U0_UkuOh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+</div>
+<!-- VIDEO MODAL ENDS -->
+
+</body>
+
+{% include include_revamp.html %}
+
+</html>
+

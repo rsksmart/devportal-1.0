@@ -1,5 +1,5 @@
 ---
-layout: rsk
+layout: internal_revamp
 title: Quick Start - Step 2
 tags: quick-start, truffle, ganache
 description: 'quick start - tutorial project, install truffle, install ganache'
