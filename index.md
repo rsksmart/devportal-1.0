@@ -6,6 +6,7 @@ layout: home
 
 The Developer Portal is the home for RSK documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
 
+
 <div class="features-list">
     <ul id="card-list" class="row">
         <li class="col-xl-6 col-md-6">
