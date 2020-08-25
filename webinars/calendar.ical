@@ -251,7 +251,7 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  eo stream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/vJcv
  dOqsrzgqhE2wf9mjTL2f-IjMyuCbOg\">zoom.us/meeting/register/vJcvdOqsrzgqhE2w
  f9mjTL2f-IjMyuCbOg</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -352,7 +352,7 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  ream &nbsp\;</b><span><a href=\"https://zoom.us/meeting/register/tJIpce6pq
  TgobH-tXjWMMYplRN_qVoNtSg\">zoom.us/meeting/register/tJIpce6pqTgobH-tXjWMM
  YplRN_qVoNtSg</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -1072,7 +1072,7 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  a href=\"https://app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-
  con-rsk\">app.livestorm.co/iov-labs-1/aprende-a-usar-truffle-boxes-con-rsk
  </a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2177,7 +2177,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testes-utilizando-truffl
  e-na-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200703T043000Z
+LAST-MODIFIED:20200804T183000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202007-002@developers.rsk.co/
@@ -2302,16 +2302,19 @@ SEQUENCE:0
 DTSTAMP:20200715T220000Z
 DTSTART:20200715T220000Z
 SUMMARY:Migrando dApps do Ethereum para RSK 
-DESCRIPTION:Migrando dApps do Ethereum para RSK\n\nOnline only\n\nRSVP: \n
- \nVideo stream: https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethe
- reum-para-rsk\n
+DESCRIPTION:Migrando dApps do Ethereum para RSK\n\nOnline only\n\nRSVP: ht
+ tps://www.meetup.com/es-ES/rsk-community/events/271846531/\n\nVideo stream
+ : https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk\
+ n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Migrand
  o dApps do Ethereum para RSK</span></div>\n<div><span>Online only</span></
- div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &n
- bsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/migrando-dapp
- s-do-ethereum-para-rsk\">app.livestorm.co/iov-labs-1/migrando-dapps-do-eth
- ereum-para-rsk</a></span></div>\n</BODY>\n</HTML>
+ div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES
+ /rsk-community/events/271846531/\">www.meetup.com/es-ES/rsk-community/even
+ ts/271846531/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a h
+ ref=\"https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-
+ rsk\">app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk</a><
+ /span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
@@ -2324,7 +2327,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethere
  um-para-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200630T020000Z
+LAST-MODIFIED:20200804T183000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202007-007@developers.rsk.co/
@@ -2333,16 +2336,19 @@ DTSTAMP:20200723T000000Z
 DTSTART:20200723T000000Z
 SUMMARY:Testeando Smart Contracts con Truffle 
 DESCRIPTION:Testeando Smart Contracts con Truffle\n\nOnline only\n\nRSVP: 
- \n\nVideo stream: https://app.livestorm.co/iov-labs-1/testeando-smart-cont
- racts-con-truffle\n
+ https://www.meetup.com/es-ES/RSKBuenosAires/events/271987115/\n\nVideo str
+ eam: https://app.livestorm.co/iov-labs-1/testeando-smart-contracts-con-tru
+ ffle\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testean
  do Smart Contracts con Truffle</span></div>\n<div><span>Online only</span>
- </div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream 
- &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/testeando-s
- mart-contracts-con-truffle\">app.livestorm.co/iov-labs-1/testeando-smart-c
- ontracts-con-truffle</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Dulce Villarreal\, Devoloper Advocate\, @Dulce_vird":mailto:
+ </div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-
+ ES/RSKBuenosAires/events/271987115/\">www.meetup.com/es-ES/RSKBuenosAires/
+ events/271987115/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span>
+ <a href=\"https://app.livestorm.co/iov-labs-1/testeando-smart-contracts-co
+ n-truffle\">app.livestorm.co/iov-labs-1/testeando-smart-contracts-con-truf
+ fle</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_vird":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2362,16 +2368,18 @@ SEQUENCE:0
 DTSTAMP:20200729T220000Z
 DTSTART:20200729T220000Z
 SUMMARY:Utilizando Truffle Boxes na RSK 
-DESCRIPTION:Utilizando Truffle Boxes na RSK\n\nOnline only\n\nRSVP: \n\nVi
- deo stream: https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-n
- a-rsk\n
+DESCRIPTION:Utilizando Truffle Boxes na RSK\n\nOnline only\n\nRSVP: https:
+ //www.meetup.com/es-ES/rsk-community/events/271987022/\n\nVideo stream: ht
+ tps://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Utiliza
  ndo Truffle Boxes na RSK</span></div>\n<div><span>Online only</span></div>
- \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
- ;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/utilizando-truffl
- e-boxes-na-rsk\">app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-r
- sk</a></span></div>\n</BODY>\n</HTML>
+ \n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk
+ -community/events/271987022/\">www.meetup.com/es-ES/rsk-community/events/2
+ 71987022/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=
+ \"https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk\">ap
+ p.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk</a></span></div>
+ \n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
@@ -2526,5 +2534,382 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/dexfreight-sea
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200717T033000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202007-013@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200731T210000Z
+DTSTART:20200731T210000Z
+SUMMARY:rWallet and RSK libraries 
+DESCRIPTION:rWallet and RSK libraries\n\nOnline only\n\nRSVP: https://www.
+ meetup.com/es-ES/rsk-community/events/272083357/\n\nVideo stream: https://
+ app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>rWallet
+  and RSK libraries</span></div>\n<div><span>Online only</span></div>\n<div
+ ><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-commu
+ nity/events/272083357/\">www.meetup.com/es-ES/rsk-community/events/2720833
+ 57/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"http
+ s://app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries\">app.livestorm.
+ co/iov-labs-1/rwallet-and-rsk-libraries</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Chris Li\, RSK Studio Developer\, @chrisli2046":mailto:devel
+ opers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:rWallet and RSK libraries 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rwallet-and-rsk-librarie
+ s
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200722T061500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200803T170000Z
+DTSTART:20200803T170000Z
+SUMMARY:EVShare:\nHealthier and Sustainable Cities through Blockchain Tech
+ nologies 
+DESCRIPTION:EVShare:\nHealthier and Sustainable Cities through Blockchain 
+ Technologies\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-comm
+ unity/events/272105824/\n\nVideo stream: https://app.livestorm.co/iov-labs
+ -1/evshare-healthier-and-sustainable-cities\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>EVShare
+ :\nHealthier and Sustainable Cities through Blockchain Technologies</span>
+ </div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span
+ ><a href=\"https://www.meetup.com/es-ES/rsk-community/events/272105824/\">
+ www.meetup.com/es-ES/rsk-community/events/272105824/</a></span></div>\n<di
+ v><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-
+ labs-1/evshare-healthier-and-sustainable-cities\">app.livestorm.co/iov-lab
+ s-1/evshare-healthier-and-sustainable-cities</a></span></div>\n</BODY>\n</
+ HTML>
+ORGANIZER;CN="Eduardo Javier Munoz\, EVShare CEO\, @EVShareMobility":mailt
+ o:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:EVShare:\nHealthier and Sustainable Cities through Blockchain 
+ Technologies 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/evshare-healthier-and-su
+ stainable-cities
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200722T061500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200803T210000Z
+DTSTART:20200803T210000Z
+SUMMARY:EVShare:\nCiudades sustentables a través de la implementación de t
+ ecnología Blockchain 
+DESCRIPTION:EVShare:\nCiudades sustentables a través de la implementación 
+ de tecnología Blockchain\n\nOnline only\n\nRSVP: https://www.meetup.com/es
+ -ES/RSKBuenosAires/events/272109653/\n\nVideo stream: https://app.livestor
+ m.co/iov-labs-1/evshare-ciudades-sustentables\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>EVShare
+ :\nCiudades sustentables a través de la implementación de tecnología Block
+ chain</span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbs
+ p\;</b><span><a href=\"https://www.meetup.com/es-ES/RSKBuenosAires/events/
+ 272109653/\">www.meetup.com/es-ES/RSKBuenosAires/events/272109653/</a></sp
+ an></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.liv
+ estorm.co/iov-labs-1/evshare-ciudades-sustentables\">app.livestorm.co/iov-
+ labs-1/evshare-ciudades-sustentables</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Eduardo Javier Munoz\, CEO de EVShare\, @EVShareMobility":ma
+ ilto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:EVShare:\nCiudades sustentables a través de la implementación 
+ de tecnología Blockchain 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustent
+ ables
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200722T061500Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200812T220000Z
+DTSTART:20200812T220000Z
+SUMMARY:Aprenda a criar sua primeira carteira rWallet e transferir RBTCs e
+ ntre carteiras 
+DESCRIPTION:Aprenda a criar sua primeira carteira rWallet e transferir RBT
+ Cs entre carteiras\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.l
+ ivestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Aprenda
+  a criar sua primeira carteira rWallet e transferir RBTCs entre carteiras<
+ /span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b
+ ><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"http
+ s://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwal
+ let\">app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rw
+ allet</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Aprenda a criar sua primeira carteira rWallet e transferir RBT
+ Cs entre carteiras 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-prim
+ eira-carteira-rwallet
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200804T183000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-004@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200814T170000Z
+DTSTART:20200814T170000Z
+SUMMARY:RIF Lumino workshop 
+DESCRIPTION:RIF Lumino workshop\n\nOnline only\n\nRSVP: \n\nVideo stream: 
+ https://app.livestorm.co/iov-labs-1/rif-lumino-workshop\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RIF Lum
+ ino workshop</span></div>\n<div><span>Online only</span></div>\n<div><b>RS
+ VP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/rif-lumino-workshop\">app.liv
+ estorm.co/iov-labs-1/rif-lumino-workshop</a></span></div>\n</BODY>\n</HTML
+ >
+ORGANIZER;CN="Alejandro Narancio\, Payments and Tools PO\, @anarancio":mai
+ lto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RIF Lumino workshop 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-lumino-workshop
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200804T183000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-005@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200819T010000Z
+DTSTART:20200819T010000Z
+SUMMARY:Testing Smart Contracts with OpenZepplin CLI 
+DESCRIPTION:Testing Smart Contracts with OpenZepplin CLI\n\nOnline only\n\
+ nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/testing-smart
+ -contracts-with-openzepplin\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testing
+  Smart Contracts with OpenZepplin CLI</span></div>\n<div><span>Online only
+ </span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video 
+ stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/test
+ ing-smart-contracts-with-openzepplin\">app.livestorm.co/iov-labs-1/testing
+ -smart-contracts-with-openzepplin</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
+ ers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Testing Smart Contracts with OpenZepplin CLI 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testing-smart-contracts-
+ with-openzepplin
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200818T040000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-006@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200819T220000Z
+DTSTART:20200819T220000Z
+SUMMARY:Utilização da biblioteca rsk3.js no seu site 
+DESCRIPTION:Utilização da biblioteca rsk3.js no seu site\n\nOnline only\n\
+ nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/utilizacao-da
+ -biblioteca-rsk3js-no-seu-site\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Utiliza
+ ção da biblioteca rsk3.js no seu site</span></div>\n<div><span>Online only
+ </span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video 
+ stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/util
+ izacao-da-biblioteca-rsk3js-no-seu-site\">app.livestorm.co/iov-labs-1/util
+ izacao-da-biblioteca-rsk3js-no-seu-site</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Utilização da biblioteca rsk3.js no seu site 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca
+ -rsk3js-no-seu-site
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200804T183000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-007@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200824T210000Z
+DTSTART:20200824T210000Z
+SUMMARY:Trazabilidad en la industria Nuclear basada en tecnología Blockcha
+ in 
+DESCRIPTION:Trazabilidad en la industria Nuclear basada en tecnología Bloc
+ kchain\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/
+ iov-labs-1/trazabilidad-en-la-industria-nuclear\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Trazabi
+ lidad en la industria Nuclear basada en tecnología Blockchain</span></div>
+ \n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></spa
+ n></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.live
+ storm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear\">app.livestorm.c
+ o/iov-labs-1/trazabilidad-en-la-industria-nuclear</a></span></div>\n</BODY
+ >\n</HTML>
+ORGANIZER;CN="Santiago Badran\, CEO\, ":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Trazabilidad en la industria Nuclear basada en tecnología Bloc
+ kchain 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-indus
+ tria-nuclear
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200804T183000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-008@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200824T170000Z
+DTSTART:20200824T170000Z
+SUMMARY:Traceability in the Nuclear industry based on Blockchain technolog
+ y 
+DESCRIPTION:Traceability in the Nuclear industry based on Blockchain techn
+ ology\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/i
+ ov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technol
+ ogy\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Traceab
+ ility in the Nuclear industry based on Blockchain technology</span></div>\
+ n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span
+ ></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.lives
+ torm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchai
+ n-technology\">app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-ind
+ ustry-based-on-blockchain-technology</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Santiago Badran\, CEO\, ":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Traceability in the Nuclear industry based on Blockchain techn
+ ology 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/traceability-in-the-nucl
+ ear-industry-based-on-blockchain-technology
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200804T183000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-009@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200826T220000Z
+DTSTART:20200826T220000Z
+SUMMARY:Casos de uso na RSK 
+DESCRIPTION:Casos de uso na RSK\n\nOnline only\n\nRSVP: \n\nVideo stream: 
+ https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Casos d
+ e uso na RSK</span></div>\n<div><span>Online only</span></div>\n<div><b>RS
+ VP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk\">app.liv
+ estorm.co/iov-labs-1/casos-de-uso-na-rsk</a></span></div>\n</BODY>\n</HTML
+ >
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Casos de uso na RSK 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200804T183000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200827T210000Z
+DTSTART:20200827T210000Z
+SUMMARY:UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal 
+DESCRIPTION:UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal\n\n
+ Online only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1
+ /ux-and-blockchain-direcciones-y-dominios\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>UX & BL
+ OCKCHAIN:\nDirecciones y dominios para uso personal</span></div>\n<div><sp
+ an>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n
+ <div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/i
+ ov-labs-1/ux-and-blockchain-direcciones-y-dominios\">app.livestorm.co/iov-
+ labs-1/ux-and-blockchain-direcciones-y-dominios</a></span></div>\n</BODY>\
+ n</HTML>
+ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_Villarreal":m
+ ailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal 
+END:VALARM
+CATEGORIES:Demo
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcc
+ iones-y-dominios
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20200804T183000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202008-011@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200902T120000Z
+DTSTART:20200902T120000Z
+SUMMARY:Post Covid Hack Official Launch 
+DESCRIPTION:Post Covid Hack Official Launch\n\nOnline only\n\nRSVP: \n\nVi
+ deo stream: https://www.eventbrite.sg/e/post-covid-hack-2020-official-laun
+ ch-tickets-117617704721\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Post Co
+ vid Hack Official Launch</span></div>\n<div><span>Online only</span></div>
+ \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
+ ;</b><span><a href=\"https://www.eventbrite.sg/e/post-covid-hack-2020-offi
+ cial-launch-tickets-117617704721\">www.eventbrite.sg/e/post-covid-hack-202
+ 0-official-launch-tickets-117617704721</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Eddy Travia\, CEO\, Coinsilium\, @startupeddy":mailto:develo
+ pers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Post Covid Hack Official Launch 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.eventbrite.sg/e/post-covid-hack-2020-official-la
+ unch-tickets-117617704721
+STATUS:CONFIRMED
+X-LANGUAGE:
+LAST-MODIFIED:20200814T073000Z
 END:VEVENT
 END:VCALENDAR

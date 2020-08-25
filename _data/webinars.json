@@ -29,8 +29,10 @@
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/g2UZa7pJ7cI",
+      "youtubeVideoId": "g2UZa7pJ7cI",
       "_isPast": true
     },
     {
@@ -62,6 +64,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -73,6 +76,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/-pJahYxJ4ms",
+      "youtubeVideoId": "-pJahYxJ4ms",
       "_isPast": true
     },
     {
@@ -104,6 +108,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -111,6 +116,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/TyKkkwF1PdM",
+      "youtubeVideoId": "TyKkkwF1PdM",
       "_isPast": true
     },
     {
@@ -142,6 +148,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -153,6 +160,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/45ii2vFLKJc",
+      "youtubeVideoId": "45ii2vFLKJc",
       "_isPast": true
     },
     {
@@ -194,6 +202,7 @@
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -201,6 +210,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/2emqQlK4Glw",
+      "youtubeVideoId": "2emqQlK4Glw",
       "_isPast": true
     },
     {
@@ -232,8 +242,10 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/mFaieJnJ7RA",
+      "youtubeVideoId": "mFaieJnJ7RA",
       "_isPast": true
     },
     {
@@ -265,6 +277,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -272,6 +285,7 @@
         }
       ],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=k6w_XN7qygE",
+      "youtubeVideoId": "k6w_XN7qygE",
       "_isPast": true
     },
     {
@@ -294,7 +308,7 @@
       "presenters": [
         {
           "name": "Dulce Villarreal",
-          "description": "Devoloper Advocate",
+          "description": "Developer Advocate",
           "contact": "@Dulce_vird"
         }
       ],
@@ -303,8 +317,10 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7",
+      "youtubeVideoId": "ZW0rqL3y_Rk",
       "_isPast": true
     },
     {
@@ -336,6 +352,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -351,6 +368,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/apcD6bcSWpw",
+      "youtubeVideoId": "apcD6bcSWpw",
       "_isPast": true
     },
     {
@@ -382,6 +400,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial (em português) - part 1",
@@ -401,6 +420,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/z5AiHy0mC8U",
+      "youtubeVideoId": "z5AiHy0mC8U",
       "_isPast": true
     },
     {
@@ -423,7 +443,7 @@
       "presenters": [
         {
           "name": "Dulce Villarreal",
-          "description": "Devoloper Advocate",
+          "description": "Developer Advocate",
           "contact": "@Dulce_vird"
         }
       ],
@@ -432,6 +452,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -439,6 +460,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/1Zs2m5z_S9g",
+      "youtubeVideoId": "1Zs2m5z_S9g",
       "_isPast": true
     },
     {
@@ -470,6 +492,7 @@
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -481,6 +504,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/lxrBOdcSQfo",
+      "youtubeVideoId": "lxrBOdcSQfo",
       "_isPast": true
     },
     {
@@ -512,8 +536,10 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/WzheOfMretc",
+      "youtubeVideoId": "WzheOfMretc",
       "_isPast": true
     },
     {
@@ -545,6 +571,7 @@
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -556,6 +583,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/EBjrvm_5IoE",
+      "youtubeVideoId": "EBjrvm_5IoE",
       "_isPast": true
     },
     {
@@ -587,6 +615,7 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -598,6 +627,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/573jdX0TCZE",
+      "youtubeVideoId": "573jdX0TCZE",
       "_isPast": true
     },
     {
@@ -629,6 +659,7 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -640,6 +671,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/8yxo4-fu1H0",
+      "youtubeVideoId": "8yxo4-fu1H0",
       "_isPast": true
     },
     {
@@ -671,6 +703,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -704,6 +737,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -737,6 +771,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -770,8 +805,10 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/68AMoiQfgEE",
+      "youtubeVideoId": "68AMoiQfgEE",
       "_isPast": true
     },
     {
@@ -803,6 +840,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -818,6 +856,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/AXAqwreIQgQ",
+      "youtubeVideoId": "AXAqwreIQgQ",
       "_isPast": true
     },
     {
@@ -849,6 +888,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -856,6 +896,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/9MLAykZ0U4Q",
+      "youtubeVideoId": "9MLAykZ0U4Q",
       "_isPast": true
     },
     {
@@ -887,6 +928,7 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -894,6 +936,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/XzNcAcMAZXE",
+      "youtubeVideoId": "XzNcAcMAZXE",
       "_isPast": true
     },
     {
@@ -925,6 +968,7 @@
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -932,6 +976,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/tvXEM1IExI8",
+      "youtubeVideoId": "tvXEM1IExI8",
       "_isPast": true
     },
     {
@@ -963,6 +1008,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -974,6 +1020,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/bm1dJyxe1mc",
+      "youtubeVideoId": "bm1dJyxe1mc",
       "_isPast": true
     },
     {
@@ -1005,6 +1052,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1020,6 +1068,7 @@
         }
       ],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=E2kTSLFHPgk",
+      "youtubeVideoId": "E2kTSLFHPgk",
       "_isPast": true
     },
     {
@@ -1051,6 +1100,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -1084,6 +1134,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1099,6 +1150,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/CoO9k1LYO04",
+      "youtubeVideoId": "CoO9k1LYO04",
       "_isPast": true
     },
     {
@@ -1130,6 +1182,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1180,6 +1233,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial (em português)",
@@ -1191,6 +1245,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/3O9emzzLt-Y",
+      "youtubeVideoId": "3O9emzzLt-Y",
       "_isPast": true
     },
     {
@@ -1222,6 +1277,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1260,6 +1316,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1306,6 +1363,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1317,6 +1375,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/5W4jhPJh9-c",
+      "youtubeVideoId": "5W4jhPJh9-c",
       "_isPast": true
     },
     {
@@ -1339,7 +1398,7 @@
       "presenters": [
         {
           "name": "Dulce Villarreal",
-          "description": "Devoloper Advocate",
+          "description": "Developer Advocate",
           "contact": "@Dulce_vird"
         }
       ],
@@ -1348,6 +1407,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Tutorial",
@@ -1390,6 +1450,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1405,6 +1466,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/E2kTSLFHPgk",
+      "youtubeVideoId": "E2kTSLFHPgk",
       "_isPast": true
     },
     {
@@ -1436,6 +1498,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1447,6 +1510,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/6tc05aep-W4",
+      "youtubeVideoId": "6tc05aep-W4",
       "_isPast": true
     },
     {
@@ -1478,6 +1542,7 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1489,6 +1554,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/WvvrIEaF0NA",
+      "youtubeVideoId": "WvvrIEaF0NA",
       "_isPast": true
     },
     {
@@ -1526,6 +1592,7 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1537,6 +1604,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/dw_khz1Cw3Q",
+      "youtubeVideoId": "dw_khz1Cw3Q",
       "_isPast": true
     },
     {
@@ -1573,6 +1641,7 @@
       "tags": " idioma-spanish audiencia-enterprise",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1580,6 +1649,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/fEnbO1y2qXM",
+      "youtubeVideoId": "fEnbO1y2qXM",
       "_isPast": true
     },
     {
@@ -1611,6 +1681,7 @@
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Hands on",
@@ -1626,6 +1697,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/ThA8rkw-nTY",
+      "youtubeVideoId": "ThA8rkw-nTY",
       "_isPast": true
     },
     {
@@ -1657,6 +1729,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Pré-requisitos (em português)",
@@ -1676,6 +1749,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/JomHBILaBpA",
+      "youtubeVideoId": "JomHBILaBpA",
       "_isPast": true
     },
     {
@@ -1707,8 +1781,10 @@
       "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/U8NMo8PUH6Q",
+      "youtubeVideoId": "U8NMo8PUH6Q",
       "_isPast": true
     },
     {
@@ -1745,6 +1821,7 @@
       "tags": " idioma-english audiencia-enterprise",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1756,6 +1833,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/y7auw58TeXM",
+      "youtubeVideoId": "y7auw58TeXM",
       "_isPast": true
     },
     {
@@ -1787,6 +1865,7 @@
       "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1798,6 +1877,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/egk8WzquT3U",
+      "youtubeVideoId": "egk8WzquT3U",
       "_isPast": true
     },
     {
@@ -1829,6 +1909,7 @@
       "tags": " idioma-spanish audiencia-general",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1840,6 +1921,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/BIaDKSGG3C4",
+      "youtubeVideoId": "BIaDKSGG3C4",
       "_isPast": true
     },
     {
@@ -1872,6 +1954,7 @@
       "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -1883,6 +1966,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/QpbtVlulChQ",
+      "youtubeVideoId": "QpbtVlulChQ",
       "_isPast": true
     },
     {
@@ -1925,6 +2009,7 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://www.coindesk.com/videos/foundations-consensus-distributed/foundations-iov",
       "_isPast": true
@@ -1979,8 +2064,10 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=QEKz243x_IY&list=PLSyELPaIli1kpVbzJ3c7metuPBPojGwlG",
+      "youtubeVideoId": "QEKz243x_IY",
       "_isPast": true
     },
     {
@@ -2013,6 +2100,7 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/bridge.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2020,6 +2108,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/3ZOvpLE3MvM",
+      "youtubeVideoId": "3ZOvpLE3MvM",
       "_isPast": true
     },
     {
@@ -2052,6 +2141,7 @@
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/bridge.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2059,6 +2149,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/6a4KD2CElQY",
+      "youtubeVideoId": "6a4KD2CElQY",
       "_isPast": true
     },
     {
@@ -2091,6 +2182,7 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2102,6 +2194,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/-ht5UhUuIUE",
+      "youtubeVideoId": "-ht5UhUuIUE",
       "_isPast": true
     },
     {
@@ -2134,6 +2227,7 @@
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2145,6 +2239,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/CQ95g6xxS-Y",
+      "youtubeVideoId": "CQ95g6xxS-Y",
       "_isPast": true
     },
     {
@@ -2177,6 +2272,7 @@
       "tags": " idioma-english audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2188,6 +2284,7 @@
         }
       ],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=Yeinq7aiGWQ",
+      "youtubeVideoId": "Yeinq7aiGWQ",
       "_isPast": true
     },
     {
@@ -2220,8 +2317,10 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/5qy3aAnhCwc",
+      "youtubeVideoId": "5qy3aAnhCwc",
       "_isPast": true
     },
     {
@@ -2254,8 +2353,10 @@
       "tags": " idioma-portuguese audiencia-enterprise audiencia-general",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/iXaKY7Nn4L4",
+      "youtubeVideoId": "iXaKY7Nn4L4",
       "_isPast": true
     },
     {
@@ -2288,6 +2389,7 @@
       "tags": " idioma-spanish audiencia-developers audiencia-spanish",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2299,6 +2401,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/DypxxvAMCZ8",
+      "youtubeVideoId": "DypxxvAMCZ8",
       "_isPast": true
     },
     {
@@ -2333,6 +2436,7 @@
       "tags": " idioma-english audiencia-enterprise, audiencia-entrepreneurs, audiencia-general audiencia-audience",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2344,6 +2448,7 @@
         }
       ],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=rjKLb1gd514&list=PLSyELPaIli1nDXVOtUXMjRrWtd2eMiRXi",
+      "youtubeVideoId": "rjKLb1gd514",
       "_isPast": true
     },
     {
@@ -2381,8 +2486,10 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/lFjYCcp21zw",
+      "youtubeVideoId": "lFjYCcp21zw",
       "_isPast": true
     },
     {
@@ -2414,6 +2521,7 @@
       "tags": " idioma-portuguese audiencia-general",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2421,6 +2529,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/hu5mV_OkJs0",
+      "youtubeVideoId": "hu5mV_OkJs0",
       "_permalink": "/webinars/202006-002/",
       "_isPast": true
     },
@@ -2459,6 +2568,7 @@
       "tags": " idioma-spanish audiencia-startups audiencia-enterprise",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2466,6 +2576,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/xwC0lpT4n80",
+      "youtubeVideoId": "xwC0lpT4n80",
       "_permalink": "/webinars/202006-003/",
       "_isPast": true
     },
@@ -2504,6 +2615,7 @@
       "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "",
+      "twitterSite": "@bguiz",
       "resources": [
         {
           "label": "Slides",
@@ -2519,6 +2631,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/lFjYCcp21zw",
+      "youtubeVideoId": "lFjYCcp21zw",
       "_permalink": "/webinars/202006-004/",
       "_isPast": true
     },
@@ -2552,8 +2665,10 @@
       "tags": " idioma-spanish audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/dZYVohPV-XM",
+      "youtubeVideoId": "dZYVohPV-XM",
       "_permalink": "/webinars/202006-005/",
       "_isPast": true
     },
@@ -2586,6 +2701,7 @@
       "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2593,6 +2709,7 @@
         }
       ],
       "recordedVideoUrl": "https://youtu.be/SlfGy5o5esg",
+      "youtubeVideoId": "SlfGy5o5esg",
       "_permalink": "/webinars/202006-006/",
       "_isPast": true
     },
@@ -2627,11 +2744,13 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/fca33a5d-83a7-43e0-976d-90367a48846f/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bleumi-covering-the-last-mile-of-rsk",
-      "tags": " idioma-english audiencia-general recent",
+      "tags": " idioma-english audiencia-general",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/6y23I8_4XG0",
+      "youtubeVideoId": "6y23I8_4XG0",
       "_permalink": "/webinars/202006-007/",
       "_isPast": true
     },
@@ -2661,11 +2780,13 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e42994d6-a586-4136-b19d-056010079403/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/de-app-a-dap",
-      "tags": " idioma-spanish audiencia-developers recent",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/FQBPPd2FOvQ",
+      "youtubeVideoId": "FQBPPd2FOvQ",
       "_permalink": "/webinars/202006-008/",
       "_isPast": true
     },
@@ -2701,11 +2822,13 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/697bea3b-c18f-433c-90c4-4a12f5153435/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-made-easy-with-simba-chain",
-      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/SAXzU4_ifR8",
+      "youtubeVideoId": "SAXzU4_ifR8",
       "_permalink": "/webinars/202006-009/",
       "_isPast": true
     },
@@ -2737,9 +2860,10 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
-      "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo recent",
+      "tags": " idioma-english audiencia-developers audiencia-general audiencia-ngo",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -2747,9 +2871,9 @@
     {
       "type": "event/2",
       "id": "202007-001",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-07-01T22:00:00.000Z",
-      "lastModified": "2020-07-03T04:30:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/271482311/",
       "title": "Testes utilizando Truffle na RSK",
@@ -2770,16 +2894,22 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/2442473d-a268-4bba-8678-2bd6903f8894/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testes-utilizando-truffle-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers recent",
+      "tags": " idioma-portuguese audiencia-developers",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
-          "label": "Tutorial",
+          "label": "Tutorial (PT)",
           "url": "https://solange.dev/2020/rsk-truffle-tests/"
+        },
+        {
+          "label": "Tutorial (EN)",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/truffle-test/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/53LPSnBI6rs",
+      "youtubeVideoId": "53LPSnBI6rs",
       "_permalink": "/webinars/202007-001/",
       "_isPast": true
     },
@@ -2809,9 +2939,10 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -2842,9 +2973,10 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/c1b34ea2-d1c8-475f-b6a8-5f2e44405571/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol",
-      "tags": " idioma-spanish audiencia-developers recent",
+      "tags": " idioma-spanish audiencia-developers",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_isPast": true
@@ -2880,9 +3012,10 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "/webinars/202007-005/banner-image.png",
+      "twitterSite": "@bguiz",
       "resources": [
         {
           "label": "Slides",
@@ -2901,7 +3034,8 @@
           "url": "https://developers.rsk.co/tutorials/workshop-smart-contract-testing-truffle/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/_XLgQ57MZcE",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=_bVwar_p0wo",
+      "youtubeVideoId": "_bVwar_p0wo",
       "_permalink": "/webinars/202007-005/",
       "_isPast": true
     },
@@ -2931,9 +3065,10 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [
         {
           "label": "Slides",
@@ -2944,17 +3079,18 @@
           "url": "https://dappsdev.org/hands-on/mocha-intro/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/_bVwar_p0wo",
+      "youtubeVideoId": "_bVwar_p0wo",
       "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202007-006",
-      "version": "2",
+      "version": "3",
       "timestamp": "2020-07-15T22:00:00.000Z",
-      "lastModified": "2020-06-30T02:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271846531/",
       "title": "Migrando dApps do Ethereum para RSK",
       "description": "Este webinar é para os desenvolvedores Ethereum que desejam conhecer as possibilidades para migrar suas aplicações para a rede RSK.",
       "category": "Workshop",
@@ -2976,8 +3112,19 @@
       "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
-      "resources": [],
-      "recordedVideoUrl": "",
+      "twitterSite": "",
+      "resources": [
+        {
+          "label": "Tutorial (PT)",
+          "url": "https://solange.dev/2020/rsk-port-ethereum-dapps/"
+        },
+        {
+          "label": "Tutorial (EN)",
+          "url": "https://developers.rsk.co/tutorials/ethereum-devs/port-ethereum-dapps/"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/-7Oi9_BDr5k",
+      "youtubeVideoId": "-7Oi9_BDr5k",
       "_permalink": "/webinars/202007-006/",
       "_isPast": true
     },
@@ -2988,7 +3135,7 @@
       "timestamp": "2020-07-23T00:00:00.000Z",
       "lastModified": "2020-06-24T09:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/271987115/",
       "title": "Testeando Smart Contracts con Truffle",
       "description": "Aprenda a crear y ejecutar pruebas en sus contratos inteligentes RSK con Truffle.",
       "category": "Workshop",
@@ -3001,19 +3148,30 @@
       "presenters": [
         {
           "name": "Dulce Villarreal",
-          "description": "Devoloper Advocate",
+          "description": "Developer Advocate",
           "contact": "@Dulce_vird"
+        },
+        {
+          "name": "Hiram Pérez",
+          "description": "",
+          "contact": "@driverInside"
+        },
+        {
+          "name": "Carlos Colorado",
+          "description": "",
+          "contact": "@ccolorado"
         }
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/23f72a43-a63d-4837-963c-db2f1a107064/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testeando-smart-contracts-con-truffle",
-      "tags": " idioma-spanish audiencia-developers",
+      "tags": " idioma-spanish audiencia-developers recent",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202007-007/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3022,7 +3180,7 @@
       "timestamp": "2020-07-29T22:00:00.000Z",
       "lastModified": "2020-06-24T09:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/271987022/",
       "title": "Utilizando Truffle Boxes na RSK",
       "description": "RSK possui diversos Truffle boxes, que são estruturas de projetos prontos para serem customizados 😄\n\nEles incluem todas as configurações e dependencias necessárias para você se concentrar no que realmente importa:\n\n➡️ O desenvolvimento da sua aplicação descentralizada e seus smart contracts.\n\nNeste webinar você vai conhecer os Truffle Boxes da RSK e aprender a utilizá-los.",
       "category": "Workshop",
@@ -3041,13 +3199,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/acd7505e-a8e6-4e83-9a6a-26f54c808695/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizando-truffle-boxes-na-rsk",
-      "tags": " idioma-portuguese audiencia-developers",
+      "tags": " idioma-portuguese audiencia-developers recent",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/fmbwgwSW8zo",
+      "youtubeVideoId": "fmbwgwSW8zo",
       "_permalink": "/webinars/202007-008/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3081,11 +3241,13 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b5c806ac-1ec7-470b-b5a6-1c7a889c9f17/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/caso-carnes-validadas",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/6Hm_v3dQ_uc",
+      "youtubeVideoId": "6Hm_v3dQ_uc",
       "_permalink": "/webinars/202007-009/",
       "_isPast": true
     },
@@ -3116,11 +3278,13 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/90643f0a-2561-4790-ba09-e158c8e780f3/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-is-dexfreight-leveraging-rsk",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "https://youtu.be/s-_yeyRh68o",
+      "youtubeVideoId": "s-_yeyRh68o",
       "_permalink": "/webinars/202007-010/",
       "_isPast": true
     },
@@ -3151,13 +3315,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/da00591e-f86f-47ba-8b7c-b41d912306b5/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/WRWZxxKqcc8",
+      "youtubeVideoId": "WRWZxxKqcc8",
       "_permalink": "/webinars/202007-011/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3191,12 +3357,511 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/15834fc1-a2cb-4848-bbd3-d4edf7923947/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dexfreight-sea",
-      "tags": " idioma-english audiencia-general audiencia-enterprise",
+      "tags": " idioma-english audiencia-general audiencia-enterprise recent",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/3s7ALoI7dSs",
+      "youtubeVideoId": "3s7ALoI7dSs",
+      "_permalink": "/webinars/202007-012/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202007-013",
+      "version": "1",
+      "timestamp": "2020-07-31T21:00:00.000Z",
+      "lastModified": "2020-07-22T06:15:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/272083357/",
+      "title": "rWallet and RSK libraries",
+      "description": "At this webinar we are going to review in depth the recently launched rWallet and the tools provided by the RSK library.\n\nSome benefits:\n- Security\n- Autonomy\n- Lightness\n- Compatibility\n- Simplicity",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers",
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Chris Li",
+          "description": "RSK Studio Developer",
+          "contact": "@chrisli2046"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/ec855c22-6b23-42b9-8f43-89a6554079cf/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries",
+      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/E8XQs10otFc",
+      "youtubeVideoId": "E8XQs10otFc",
+      "_permalink": "/webinars/202007-013/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-001",
+      "version": "1",
+      "timestamp": "2020-08-03T17:00:00.000Z",
+      "lastModified": "2020-07-22T06:15:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/272105824/",
+      "title": "EVShare:\nHealthier and Sustainable Cities through Blockchain Technologies",
+      "description": "EVShare mission is to create cleaner, healthier, sustainable and more livable cities ultimately focused on decarbonization and enabling a sharing economy.\nRSK Blockchain technology is the basis of EVShare's Decentralized platform.\nVehicles, passengers, goods and energy players interact in the community forming an efficient ecosystem.\nAt this webinar Eduardo Javier Munoz will delve into EVShare business model and its use cases to date.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Eduardo Javier Munoz",
+          "description": "EVShare CEO",
+          "contact": "@EVShareMobility"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities",
+      "tags": " idioma-english audiencia-general audiencia-enterprise recent",
+      "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/rsOsY8cDfrE",
+      "youtubeVideoId": "rsOsY8cDfrE",
+      "_permalink": "/webinars/202008-001/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-002",
+      "version": "1",
+      "timestamp": "2020-08-03T21:00:00.000Z",
+      "lastModified": "2020-07-22T06:15:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/272109653/",
+      "title": "EVShare:\nCiudades sustentables a través de la implementación de tecnología Blockchain",
+      "description": "La misión de EVShare es crear ciudades más limpias, saludables, sustentables y habitables a través de la reducción de las emisiones de carbono permitiendo el desarrollo de una economía colaborativa.\nA través de EVShare los vehículos, pasajeros, entidades de energía interactúan en la comunidad formando un ecosistema eficiente.\nEVShare ha desarrollado su plataforma descentralizada en la Blockchain de RSK.\nEn este webinar, Eduardo Javier Muñoz compartirá el modelo de negocio de EVShare y sus casos de uso.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "enterprise"
+      ],
+      "presenters": [
+        {
+          "name": "Eduardo Javier Munoz",
+          "description": "CEO de EVShare",
+          "contact": "@EVShareMobility"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/8n1dRBljIj4",
+      "youtubeVideoId": "8n1dRBljIj4",
+      "_permalink": "/webinars/202008-002/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-003",
+      "version": "1",
+      "timestamp": "2020-08-12T22:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Aprenda a criar sua primeira carteira rWallet e transferir RBTCs entre carteiras",
+      "description": "Para iniciantes!\n\nNeste workshop vamos ensinar passo a passo como instalar a carteira rWallet no celular e outra carteira no navegador, para transferir R-BTCs de teste entre elas.\n\nA rWallet é carteira lançada pela RSK!\nAlguns benefícios:\n- Segurança\n- Autonomia\n- Compatibilidade\n- Simplicidade",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/DHTIsn_PLvA",
+      "youtubeVideoId": "DHTIsn_PLvA",
+      "_permalink": "/webinars/202008-003/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-004",
+      "version": "1",
+      "timestamp": "2020-08-14T17:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RIF Lumino workshop",
+      "description": "On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Alejandro Narancio",
+          "description": "Payments and Tools PO",
+          "contact": "@anarancio"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/JDKxwMON3fY",
+      "youtubeVideoId": "JDKxwMON3fY",
+      "_permalink": "/webinars/202008-004/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-005",
+      "version": "2",
+      "timestamp": "2020-08-19T01:00:00.000Z",
+      "lastModified": "2020-08-18T04:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Testing Smart Contracts with OpenZepplin CLI",
+      "description": "Learn about software testing principles, and how to create and run tests on your RSK smart contracts using OpenZeppelin CLI, in this webinar with two mini hands-on workshops.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "developers"
+      ],
+      "presenters": [
+        {
+          "name": "Brendan Graetz",
+          "description": "Developer Advocate",
+          "contact": "@bguiz"
+        },
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_vird"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin",
+      "tags": " idioma-english audiencia-developers recent",
+      "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "/webinars/202008-005/banner-image.png",
+      "twitterSite": "@bguiz",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://developers.rsk.co/webinars/202008-005/slides/"
+        },
+        {
+          "label": "System pre-requisites",
+          "url": "https://developers.rsk.co/tutorials/workshop-prereqs/"
+        },
+        {
+          "label": "Javascript testing hands-on",
+          "url": "https://developers.rsk.co/tutorials/workshop-js-testing/"
+        },
+        {
+          "label": "Smart contract testing hands-on",
+          "url": "https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/"
+        }
+      ],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-005/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-006",
+      "version": "1",
+      "timestamp": "2020-08-19T22:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Utilização da biblioteca rsk3.js no seu site",
+      "description": "Para desenvolvedores!\n\nAprenda como utilizar a biblioteca rsk3.js em un frontend para se comunicar com os smart contracts publicados na RSK.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/28967d51-08df-4701-9b3a-12cfc240e5bf/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca-rsk3js-no-seu-site",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
-      "_permalink": "/webinars/202007-012/",
+      "_permalink": "/webinars/202008-006/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202008-007",
+      "version": "1",
+      "timestamp": "2020-08-24T21:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Trazabilidad en la industria Nuclear basada en tecnología Blockchain",
+      "description": "La empresa NUCLEARIS desarrolló la primera Plataforma de Trazabilidad a nivel mundial basada en BLOCKCHAIN y que es utilizada en la fabricación de componentes de uso nuclear. En este webinar contaran el detalle del caso de uso de esta plataforma que pretende generar un cambio de paradigma en la industria Nuclear basado en la implementación de una nueva tecnología digital para garantizar la Seguridad Operativa de las Centrales Atómicas y eficientizar el registro y almacenamiento de documentación de vital importancia.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Santiago Badran",
+          "description": "CEO",
+          "contact": ""
+        },
+        {
+          "name": "Sebastian Martinez",
+          "description": "CTO",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/de980613-7c05-4d99-8ac8-5e1cef829757/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-007/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-008",
+      "version": "1",
+      "timestamp": "2020-08-24T17:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Traceability in the Nuclear industry based on Blockchain technology",
+      "description": "NUCLEARIS developed the first  Traceability Platform based on BLOCKCHAIN ​​and which is used in the manufacture of components for nuclear use. The platform objective is  to generate a paradigm shift in the Nuclear industry based in blockchain technology to guarantee the Operational Safety of Atomic Power Plants and make the registration and storage of documentation more efficient vitally important.\n\n",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Santiago Badran",
+          "description": "CEO",
+          "contact": ""
+        },
+        {
+          "name": "Sebastian Martinez",
+          "description": "CTO",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/83535a48-3e9a-4355-8585-e06ce85d41c2/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technology",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-008/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-009",
+      "version": "1",
+      "timestamp": "2020-08-26T22:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Casos de uso na RSK",
+      "description": "Conheça alguns casos de uso implementados no Blockchain RSK, desenvolvidos por nossos parceiros.\n\nVeja os casos de uso que serão apresentados:\nhttps://www.rsk.co/pt-pt/Use-cases",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/66249815-cf94-4a9a-ab3c-3e6a743c77ff/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-009/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-010",
+      "version": "1",
+      "timestamp": "2020-08-27T21:00:00.000Z",
+      "lastModified": "2020-08-04T18:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal",
+      "description": "En IOVlabs construimos el internet del valor para crear un mundo con libertad e inclusion financiera. Para esto necesitamos que la tecnología de blockchain sea accesible y fácil de usar. Con los nombres y dominios ahora vas a poder tener recordar tu wallet con fácilidad y dársela a tus amigos. En este workshop aprenderás a dar de alta tu dominio con tu nombre, usando ENS, RNS, RIF Name Services  y la Rwallet.",
+      "category": "Demo",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Dulce Villarreal",
+          "description": "Developer Advocate",
+          "contact": "@Dulce_Villarreal"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/e34c1aef-6d13-4ff1-b9a7-51ef2f85f98c/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcciones-y-dominios",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-010/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-011",
+      "version": "1",
+      "timestamp": "2020-09-02T12:00:00.000Z",
+      "lastModified": "2020-08-14T07:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Post Covid Hack Official Launch",
+      "description": "Use Blockchain technology, build awesome solutions and determine what the future will look like in a post-pandemic world!\n\nThis online launch event is ideal for everyone who is interested in \nbuilding solutions using blockchain technology.  This event offers a \ngreat opportunity to have all your questions answered if you interested \nor have already joined the hackathon. You can find out more about Post Covid Hack here: [postcovidhack.com](https://postcovidhack.com/)\n\nWe are celebrating the kick-off of the Post Covid Hack - a global \nonline blockchain hackathon. We invite all interested parties, \ntechnologists, developers and people with an interest in blockchain to \njoin this opening event.In this Event, we will cover:\n\n- 10 min intro about Post Covid Hack and the supporting partners\n- 10 min intro about the Tracks and the various Use Cases\n- 30 min panel discussion with leading representatives from Coinsilium,  IOVlabs, Kucoin, Blockchain for Humanity and Mischon de Reya",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Eddy Travia",
+          "description": "CEO, Coinsilium",
+          "contact": "@startupeddy"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721",
+      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F109058385%2F439900637166%2F1%2Foriginal.20200820-064837?w=1080&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C15%2C1200%2C600&s=a3487bb7d8c02dce3cfca48a2eb3cce3",
+      "twitterSite": "",
+      "resources": [
+        {
+          "label": "post-COVID Hack 2020",
+          "url": "https://postcovidhack.com/"
+        },
+        {
+          "label": "Socio-economic inclusion track challenges",
+          "url": "https://postcovidhack.com/challenges/socio-economic-inclusion"
+        },
+        {
+          "label": "Socio-economic inclusion track prizes",
+          "url": "https://postcovidhack.com/challenges/socio-economic-inclusion/prizes"
+        }
+      ],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-011/",
       "_isPast": false
     }
   ]

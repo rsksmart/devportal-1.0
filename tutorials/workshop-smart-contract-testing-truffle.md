@@ -348,7 +348,7 @@ This test is grouped within a `contract` block.
 When there are multiple tests within the same `contract` block,
 the state of the smart contract
 is not reset between one test and the next.
-However, when there are mutliple tests in different `contract` blocks,
+However, when there are multiple tests in different `contract` blocks,
 the state of the smart contract
 is indeed reset between one `contract` block and the next.
 
@@ -690,7 +690,7 @@ where the smart contract functions are always called in the expected way.
 These tests ensure that the smart contract behaves as it is supposed to,
 when those interacting with it do the "right thing".
 
-However, external behaviour is not something that is
+However, external behaviour is **not** something that is
 within the locus of our control,
 and therefore by definition we need to ensure that our smart contract
 is able to handle these "failure path" cases too.

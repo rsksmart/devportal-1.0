@@ -154,8 +154,8 @@
       ]
     },
     {
-      "id": "rsk-workshop-testing-smart-contracts-with-truffle-slides",
-      "rootDir": "webinars/202007-005",
+      "id": "rsk-workshop-testing-smart-contracts-slides",
+      "rootDir": "webinars",
       "skip": false,
       "copier": "httpGet",
       "filters": [],
@@ -177,12 +177,12 @@
       "files": [
         {
           "remote": "https://hackmd.io/@bguiz/rsk-workshop-testing-smart-contracts-with-truffle-slides/download",
-          "local": "slides.md"
+          "local": "202007-005/slides.md"
         }
       ]
     },
     {
-      "id": "rsk-workshop-testing-smart-contracts-with-truffle-workshops",
+      "id": "rsk-workshop-testing-smart-contracts-tutorials",
       "rootDir": "tutorials",
       "skip": false,
       "copier": "httpGet",
@@ -214,6 +214,10 @@
         {
           "remote": "https://raw.githubusercontent.com/bguiz/workshop-rsk-smart-contract-testing-truffle/master/walkthru.md",
           "local": "workshop-smart-contract-testing-truffle.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/bguiz/workshop-rsk-smart-contract-testing-ozcli/master/walkthru.md",
+          "local": "workshop-smart-contract-testing-ozcli.md"
         }
       ]
     },

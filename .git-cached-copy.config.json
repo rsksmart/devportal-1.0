@@ -114,7 +114,7 @@
         {
           "name": "copySingle",
           "remoteFilePath": "README.md",
-          "localFilePath": "tutorials/truffle-boxes/rsk-react-express-box.md",
+          "localFilePath": "tools/truffle/boxes/rsk-react-express-box.md",
           "localPreserveFrontMatter": true,
           "remotePreserveFrontMatter": false
         }
@@ -130,7 +130,7 @@
         {
           "name": "copySingle",
           "remoteFilePath": "README.md",
-          "localFilePath": "tutorials/truffle-boxes/rsk-next-box.md",
+          "localFilePath": "tools/truffle/boxes/rsk-next-box.md",
           "localPreserveFrontMatter": true,
           "remotePreserveFrontMatter": false
         }
