@@ -36,7 +36,7 @@ Learn more about [RIF Marketplace](./marketplace)
 
 ### RIF Gateways
 
-RIF Gateways develops tools and technologies to allow decentralized applications to seamleassly connect to the external world. 
+RIF Gateways develops tools and technologies to allow decentralized applications to seamlessly connect to the external world. 
 
 Learn more about [RIF Gateways](./gateways)
 

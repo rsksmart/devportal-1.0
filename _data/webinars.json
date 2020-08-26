@@ -3012,7 +3012,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "/webinars/202007-005/banner-image.png",
       "twitterSite": "@bguiz",
@@ -3065,7 +3065,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3241,7 +3241,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/b5c806ac-1ec7-470b-b5a6-1c7a889c9f17/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/caso-carnes-validadas",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3278,7 +3278,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/90643f0a-2561-4790-ba09-e158c8e780f3/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/how-is-dexfreight-leveraging-rsk",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3436,7 +3436,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/rsOsY8cDfrE",
+      "youtubeVideoId": "rsOsY8cDfrE",
       "_permalink": "/webinars/202008-001/",
       "_isPast": true
     },
@@ -3472,7 +3473,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/8n1dRBljIj4",
+      "youtubeVideoId": "8n1dRBljIj4",
       "_permalink": "/webinars/202008-002/",
       "_isPast": true
     },
@@ -3505,14 +3507,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/DHTIsn_PLvA",
+      "youtubeVideoId": "DHTIsn_PLvA",
       "_permalink": "/webinars/202008-003/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3543,34 +3546,32 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/JDKxwMON3fY",
+      "youtubeVideoId": "JDKxwMON3fY",
       "_permalink": "/webinars/202008-004/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202008-005",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-08-19T01:00:00.000Z",
-      "lastModified": "2020-08-04T18:30:00.000Z",
+      "lastModified": "2020-08-18T04:00:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Testing Smart Contracts with OpenZepplin CLI",
-      "description": "Learn how to create and run tests on your RSK smart contracts using OpenZeppelin CLI.",
+      "description": "Learn about software testing principles, and how to create and run tests on your RSK smart contracts using OpenZeppelin CLI, in this webinar with two mini hands-on workshops.",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
       "language": "English",
       "audiences": [
-        "general",
-        "developers",
-        "enterprise",
-        "startups"
+        "developers"
       ],
       "presenters": [
         {
@@ -3586,14 +3587,31 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-developers recent",
       "image": "/webinars/img/events/event1.jpg",
-      "bannerImage": "",
-      "twitterSite": "",
-      "resources": [],
+      "bannerImage": "/webinars/202008-005/banner-image.png",
+      "twitterSite": "@bguiz",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://developers.rsk.co/webinars/202008-005/slides/"
+        },
+        {
+          "label": "System pre-requisites",
+          "url": "https://developers.rsk.co/tutorials/workshop-prereqs/"
+        },
+        {
+          "label": "Javascript testing hands-on",
+          "url": "https://developers.rsk.co/tutorials/workshop-js-testing/"
+        },
+        {
+          "label": "Smart contract testing hands-on",
+          "url": "https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/"
+        }
+      ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202008-005/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3624,14 +3642,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/28967d51-08df-4701-9b3a-12cfc240e5bf/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca-rsk3js-no-seu-site",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202008-006/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3793,6 +3811,57 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202008-010/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202008-011",
+      "version": "1",
+      "timestamp": "2020-09-02T12:00:00.000Z",
+      "lastModified": "2020-08-14T07:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Post Covid Hack Official Launch",
+      "description": "Use Blockchain technology, build awesome solutions and determine what the future will look like in a post-pandemic world!\n\nThis online launch event is ideal for everyone who is interested in \nbuilding solutions using blockchain technology.  This event offers a \ngreat opportunity to have all your questions answered if you interested \nor have already joined the hackathon. You can find out more about Post Covid Hack here: [postcovidhack.com](https://postcovidhack.com/)\n\nWe are celebrating the kick-off of the Post Covid Hack - a global \nonline blockchain hackathon. We invite all interested parties, \ntechnologists, developers and people with an interest in blockchain to \njoin this opening event.In this Event, we will cover:\n\n- 10 min intro about Post Covid Hack and the supporting partners\n- 10 min intro about the Tracks and the various Use Cases\n- 30 min panel discussion with leading representatives from Coinsilium,  IOVlabs, Kucoin, Blockchain for Humanity and Mischon de Reya",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Eddy Travia",
+          "description": "CEO, Coinsilium",
+          "contact": "@startupeddy"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721",
+      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F109058385%2F439900637166%2F1%2Foriginal.20200820-064837?w=1080&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C15%2C1200%2C600&s=a3487bb7d8c02dce3cfca48a2eb3cce3",
+      "twitterSite": "",
+      "resources": [
+        {
+          "label": "post-COVID Hack 2020",
+          "url": "https://postcovidhack.com/"
+        },
+        {
+          "label": "Socio-economic inclusion track challenges",
+          "url": "https://postcovidhack.com/challenges/socio-economic-inclusion"
+        },
+        {
+          "label": "Socio-economic inclusion track prizes",
+          "url": "https://postcovidhack.com/challenges/socio-economic-inclusion/prizes"
+        }
+      ],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202008-011/",
       "_isPast": false
     }
   ]
