@@ -34,6 +34,12 @@ RIF Marketplace provides a one-stop shop for a wide variety of decentralized ser
 
 Learn more about [RIF Marketplace](./marketplace)
 
+### RIF Gateways
+
+RIF Gateways develops tools and technologies to allow decentralized applications to seamleassly connect to the external world. 
+
+Learn more about [RIF Gateways](./gateways)
+
 #### RIF OS White Paper
 
 To understand the general vision behind RIF OS, read the [RIF OS White Paper](https://docs.rifos.org/rif-whitepaper-en.pdf).
