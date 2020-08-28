@@ -1,5 +1,5 @@
 ---
-layout: home_revamp
+layout: home
 ---
 
 <div class="row">
