@@ -16,7 +16,7 @@ To join as a Node Operator:
 - Login to the Chainlink Operator WebUI and add the following job.
 - Replace *RSK_INITIATOR_NAME*, *ORACLE_CONTRACT_ADDRESS* and *RSKTX_ADAPTER_NAME* with your values. 
 - For the purpose of adding the node to the testnet Reference Aggregator, configure the tasks to fetch last traded price of RIF/BTC pair on Liquid.com exchange. 
-- Once this step is ready, provide the JobID and Oracle contract address to the Aggregator owners to be included.
+- Once this step is done, provide the JobID and Oracle contract address to the Aggregator owners to be included.
 
 ```
 {
@@ -63,5 +63,4 @@ To join as a Node Operator:
 
 ## Token Bridge 
 [testnet.tokenbridge.rsk.co/](https://testnet.tokenbridge.rsk.co/)
-
 

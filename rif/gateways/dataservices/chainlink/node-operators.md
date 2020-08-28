@@ -78,7 +78,7 @@ docker build -t rsktx-adapter-testnet -f ./rsktx-adapter/Dockerfile.testnet .
 
 ### 6. Run the services
 
-You can run the services containers in several ways. For the purposes of this quick guide, we'll use the docker run command. Be sure to pass the API credentials and make them available through the `.api` file in the destination paths `/home/rsk-initiator/src/.api` for the initiator, and `/home/rsktx-adapter/src/.api` for the adapter. You need to do the same with the `.adapterKey` file when runnning the RSKTX Adapter, also you need to load the environment variables from the `.env-testnet` file. In the example, optionally, a port parameter is added to map the service port to localhost.
+You can run the services containers in several ways. For the purpose of this quick guide, we'll use the docker run command. Be sure to pass the API credentials and make them available through the `.api` file in the destination paths `/home/rsk-initiator/src/.api` for the initiator, and `/home/rsktx-adapter/src/.api` for the adapter. You need to do the same with the `.adapterKey` file when running the RSKTX Adapter, also you need to load the environment variables from the `.env-testnet` file. In the example, optionally, a port parameter is added to map the service port to localhost.
 
 ```bash
 docker run -v /path/to/host/api/file:/home/rsk-initiator/src/.api --env-file /path/to/initiator/.env-testnet -p 30055:30055 rsk-initiator-testnet
@@ -92,7 +92,7 @@ You'll need to deploy an Oracle contract on RSK Testnet to be able to receive re
 
 * Edit the `truffle-config.js` to configure the RSK node RPC connection.
 * Configure the account that will be used to deploy the contract. To do this, save its private key on the `testnet-deploy/.deployerKey` file. Remember this account needs to be funded with R-BTC.
-* Edit the `testnet-deploy/migrations/2_deploy_oracle.js` and configure the `ADAPTER_ADDRESS` constant, setting the adapter's account address. This is needed so the migration script, after the contract deploy, can call the `setFulfillmentPermission` function on the contract to authorize the adapter address to fulfill Oracle's requests.
+* Edit the `testnet-deploy/migrations/2_deploy_oracle.js` and configure the `ADAPTER_ADDRESS` constant, setting the adapter's account address. This is needed so the migration script, after the contract deploy, can call the `setFulfillmentPermission` function on the contract to authorize the adapter address to fulfill the Oracle's requests.
 * Step into the `testnet-deploy` directory, install the dependencies and run the first and second migrations using Truffle:
 
 ```bash
