@@ -50,12 +50,11 @@ back to the contract that originally created the event log, just like the native
 - `rsktx-adapter`, an external adapter connected to the RSK node that takes the input given and places it into the data field of a transaction, just like the native EthTx adapter. It then signs the transaction and sends it to an address on RSK network.
 - `test-runner`, a node script that initializes the testing environment, first deploying a SideToken contract and an Oracle contract. It then configures
 the Chainlink node, creating the initiator and adapter bridges and a job that includes them. Once the Chainlink node is ready, it deploys a Consumer contract configured with the previously deployed SideToken and Oracle contracts, and the previously created job. Then mints
-tokens and sends some to the Consumer contract. Finally it calls the requestRIFPrice of the Consumer contract and then polls it for current price.
+tokens and sends some to the Consumer contract. Finally it calls the `requestRIFPrice` of the Consumer contract and then polls it for current price.
 
 ## Contracts:
 
 - `Oracle`, the Oracle contract is the 0.5 version, with a single modification on the `onTokenTransfer` function of the LinkTokenReceiver to be able to work with the SideToken.
 - `SideToken`, is the contract that will be created through the RSK Token Bridge, mirroring the LinkToken contract deployed on Ethereum network.
 - `Consumer`, is the contract that will request the data to the Oracle. On test run, it will request last traded price of RIF/BTC pair from Liquid.com exchange.
-
 

@@ -13,8 +13,3 @@ tags: rif, gateways, data services, chainlink
 Learn more by visiting the [Chainlink website](https://chain.link/).
 
 ![Chainlink logo](/assets/img/rif-gateways/chainlink-logo.jpeg)
-
-
-
-
-

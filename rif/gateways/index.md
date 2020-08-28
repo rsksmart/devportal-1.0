@@ -26,7 +26,7 @@ tags: rif, gateways
 
 ## Triggers
 
-**RIF Triggers** deals with information flowing from the blockchain into external applications and systems (Outbound transactions). Traditional applications also need to access data generated within the blockchain in order to    perform their logic and operations. Some examples are gaming applications, which have to process smart contract events in order to show specific updates to the participants, and payment applications, which require alerts and notifications anytime funds are received/withdrawn from certain accounts.
+**RIF Triggers** deals with information flowing from the blockchain into external applications and systems (outbound transactions). Traditional applications also need to access data generated within the blockchain in order to perform their logic and operations. Some examples are gaming applications, which have to process smart contract events in order to show specific updates to the participants, and payment applications, which require alerts and notifications anytime funds are received/withdrawn from certain accounts.
 
 ## Schedulers
 

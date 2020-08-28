@@ -10,7 +10,7 @@ Provided you have a functioning Chainlink node, and are interested in trying the
 
 ### Prerequisites.
 
-You'll need to create a Postgres database for the Initiator and another for the Adapter. You can quickly set this up with the psql cli utility:
+You'll need to create a Postgres database for the Initiator and another for the Adapter. You can quickly set this up with the `psql` CLI utility:
 
 ```bash
 psql -U postgres -c "create database rsk_initiator"
@@ -25,7 +25,7 @@ git clone https://github.com/smartcontractkit/chainlink-RSK.git && cd chainlink-
 
 ### 2. Configure the Initiator and Adapter
 
-Create an .env-testnet file for each service and set the configuration environment variables.
+Create an `.env-testnet` file for each service and set the configuration environment variables.
 
 #### RSK Initiator
 
@@ -58,7 +58,7 @@ Create an .env-testnet file for each service and set the configuration environme
 
 ### 3. Configure Chainlink API credentials
 
-Create an .api file that will contain the auth credentials of your Chainlink node. The API e-mail should be in the first line, and the API password in the second line. Example:
+Create an `.api` file that will contain the auth credentials of your Chainlink node. The API e-mail should be in the first line, and the API password in the second line. Example:
 
 ```
 admin@example.com
@@ -67,7 +67,7 @@ changethis
 
 ### 4. Configure RSKTX Adapter account
 
-The RSKTX Adapter needs an account to sign and send the transactions to the network. To configure the account, save its private key in a file and reference it later when running the adapter. This account will need to have RBTC to pay por the transactions sent to the network. Testnet RBTC can be obtained through the RSK Testnet Faucet in https://faucet.rsk.co.
+The RSKTX Adapter needs an account to sign and send the transactions to the network. To configure the account, save its private key in a file and reference it later when running the adapter. This account will need to have R-BTC to pay for the transactions sent to the network. Testnet R-BTC can be obtained through the RSK Testnet Faucet in [faucet.rsk.co](https://faucet.rsk.co/).
 
 ### 5. Build the RSK Initiator and RSKTX Adapter Docker images 
 
@@ -78,7 +78,7 @@ docker build -t rsktx-adapter-testnet -f ./rsktx-adapter/Dockerfile.testnet .
 
 ### 6. Run the services
 
-You can run the services containers in several ways. For the purpose of this quick guide, we'll use the docker run command. Be sure to pass the api credentials and make them available through the .api file in the destination paths /home/rsk-initiator/src/.api for the initiator, and /home/rsktx-adapter/src/.api for the adapter. You need to do the same with the .adapterKey file when runnning the RSKTX Adapter, also you need to load the environment variables from the .env-testnet file. In the example, optionally, a port parameter is added to map the service port to localhost.
+You can run the services containers in several ways. For the purposes of this quick guide, we'll use the docker run command. Be sure to pass the API credentials and make them available through the `.api` file in the destination paths `/home/rsk-initiator/src/.api` for the initiator, and `/home/rsktx-adapter/src/.api` for the adapter. You need to do the same with the `.adapterKey` file when runnning the RSKTX Adapter, also you need to load the environment variables from the `.env-testnet` file. In the example, optionally, a port parameter is added to map the service port to localhost.
 
 ```bash
 docker run -v /path/to/host/api/file:/home/rsk-initiator/src/.api --env-file /path/to/initiator/.env-testnet -p 30055:30055 rsk-initiator-testnet
@@ -88,11 +88,12 @@ The services will configure the database and register the Initiator and Adapter 
 
 ### 7. Deploy the Oracle contract to RSK Testnet
 
-You'll need to deploy an Oracle contract on RSK Testnet to be able to receive requests. In the directory testnet-deploy there are some useful scripts to accomplish this.
-* Edit the truffle-config.js to configure the RSK node RPC connection.
-* Configure the account that will be used to deploy the contract. To do this, save its private key on the testnet-deploy/.deployerKey file. Remember this account needs to be funded with RBTC.
-* Edit the testnet-deploy/migrations/2_deploy_oracle.js and configure the ADAPTER_ADDRESS constant, setting the adapter's account address. This is needed so the migration script, after the contract deploy, can call the setFulfillmentPermission function on the contract to authorize the adapter address to fulfill Oracle's requests.
-* Step into the testnet-deploy directory, install the dependencies and run the first and second migrations using Truffle:
+You'll need to deploy an Oracle contract on RSK Testnet to be able to receive requests. In the directory `testnet-deploy` there are some useful scripts to accomplish this.
+
+* Edit the `truffle-config.js` to configure the RSK node RPC connection.
+* Configure the account that will be used to deploy the contract. To do this, save its private key on the `testnet-deploy/.deployerKey` file. Remember this account needs to be funded with R-BTC.
+* Edit the `testnet-deploy/migrations/2_deploy_oracle.js` and configure the `ADAPTER_ADDRESS` constant, setting the adapter's account address. This is needed so the migration script, after the contract deploy, can call the `setFulfillmentPermission` function on the contract to authorize the adapter address to fulfill Oracle's requests.
+* Step into the `testnet-deploy` directory, install the dependencies and run the first and second migrations using Truffle:
 
 ```bash
 cd testnet-deploy
