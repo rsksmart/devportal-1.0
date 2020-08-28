@@ -1,3 +1,95 @@
+// LEFT NAVIGATION
+
+// add level class to ul
+$("ul").addClass(function() {
+    var depth = jQuery(this).parents("ul").length;
+    return "level level-" + (depth + 1);
+});
+
+// add active class to a in inner nav based on url
+$(function () {
+    var pageUrl = location.href;
+    $('a').each(function () {
+        $(this).toggleClass('active', this.href === pageUrl);
+    });
+
+    // Put it here just in case it's executed before the previous iteration finish.
+    $('.active').parentsUntil('.level-1').addClass('deployed green');
+
+    let replace = false;
+    let uls = [];
+    const actives = $('.active')
+    actives.each((a) => {
+        const e = actives[a];
+        if ($(e.parentElement).is('li')) {
+            var li = e.parentElement;
+            uls.push(li.parentElement);
+            //console.log(li, uls);
+            // Only two levels
+            //console.log(li.clindNodes);
+            li.childNodes.forEach((e1) => {
+                //console.log('e1 - ul', e1);
+                if ($(e1).is('ul')) {
+                    e1.childNodes.forEach((e2) => {
+                        //console.log('e2 - li', e2);
+                        if ($(e2).is('li')) {
+                            e2.childNodes.forEach((e3) => {
+                                //console.log('e3 - li', e3);
+                                if ($(e3).is('ul'))
+                                    replace = true;
+                            })
+                        }
+                    })
+                }
+            })
+        }
+    });
+    console.log('replace', replace, uls);
+    if (replace) {
+        const nav = $('#custom-navbar');
+        nav.children().hide();
+        nav.append(uls[0]);
+        console.log(nav);
+    }
+});
+
+/*
+$(document).ready(function () {
+ $('.active').parentsUntil('.level-1').addClass('deployed green');
+});
+*/
+
+
+
+  $('a[target="_blank"]').addClass('external');
+  $('ul li:has(ul)').addClass('hassub');
+  $('.inner-nav-left .external').prepend('<span class="external-icon"><i class="fa fa-external-link" aria-hidden="true"></i></span>');
+  $('.inner-nav-left .hassub').prepend('<span class="caret-icon"><i class="fa fa-caret-right" aria-hidden="true"></i></span>');
+
+
+// find clicked carret to deploy child ul
+var curr = $('.caret-icon');
+//$('.hassub ul').hide(); 
+curr.click(function() {
+    $(this).parent().toggleClass("deployed");
+    //$(this).parent().find('ul').first().slideToggle();
+});
+
+// expand all nav
+$(".toggle-nav-column-visibility").click(function() {
+    var target = $(this);
+    //use a class, since your ID gets mangled
+    target.toggleClass("deployed");
+    var isDeployed = target.hasClass('deployed');
+    var targetText = isDeployed ? 'Collapse All' : 'Expand All';
+    // update the text we just clicked on
+    target.find('.text').text(targetText);
+     // update every item in the collapsible menu
+     $('.hassub').each(function () {
+        $(this).toggleClass('deployed', isDeployed);
+    });
+ });
+
 //THEME SWITCH
 window.addEventListener('load', function() {
     //switch theme
@@ -121,3 +213,8 @@ $('#fullCarousel').owlCarousel({
         }
     }
 });
+
+// LEFT NAVIGATION
+
+
+

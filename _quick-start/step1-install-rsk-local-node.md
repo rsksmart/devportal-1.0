@@ -1,5 +1,5 @@
 ---
-layout: internal_revamp
+layout: rsk
 title: Quick Start - Step 1
 tags: quick-start, rskj
 description: 'quick start - install RSK local node - prep environment, verify and install RSKj'
