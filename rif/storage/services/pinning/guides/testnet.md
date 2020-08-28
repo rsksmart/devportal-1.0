@@ -21,8 +21,8 @@ Install the pinning service with
     **NOTE:** this step will not be necessary after release
 2. Initialise the service with
 ```rif-pinning init --offerId=<your_rsk_address>```
-Where the offerId is your RSK wallet address with which you register on RIF Marketplace. The full list of options can be found on [the pinner repository](https://github.com/rsksmart/rif-storage-pinner#rif-pinning-init).
-3. The init command will output a communication PeerID which is used to announce status updates or errors to the endusers. You then start the service with:
+Where the `offerId` is your RSK wallet address with which you register on RIF Marketplace. The full list of options can be found on [the pinner repository](https://github.com/rsksmart/rif-storage-pinner#rif-pinning-init).
+3. The `init` command will output a communication PeerID which is used to announce status updates or errors to the end users. You then start the service with:
 ```rif-pinning daemon```
 
 The pinning service is now listening on any new agreements that appear in your offer and pins/unpins the files from a local IPFS node.

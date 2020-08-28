@@ -4,7 +4,7 @@ title: RIF Storage Pinning service
 ---
 
 ## RIF Storage Pinning service
-The RIF Storage Pinning service, found in the RIF Marketplace, is a place where the demand for storing data meets with offers of parties that want to land their free disk space in monetary exchange. The main goal is to provide a registry where storage Provides can announce their empty storage and conditions under which they are willing to offer it to 3rd parties. The Consumers can enter into service agreement with a given Provider, lending their storage in exchange for R-BTC or RIF tokens.
+The RIF Storage Pinning service, found in the RIF Marketplace, is a place where the demand for storing data meets with offers of parties that want to lend their free disk space in exchange for economic compensation. The main goal is to provide a registry where storage Providers can announce their empty storage, and conditions under which they are willing to offer it to 3rd parties. The storage Consumers can enter into service agreement with a given Provider, lending their storage, in exchange for R-BTC or RIF tokens.
 
 ## Repositories
  - [Pinning Service](https://github.com/rsksmart/rif-storage-pinner): A nodejs service which listens on Providers offer and pins/unpins files from Provider run IPFS node

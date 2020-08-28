@@ -27,7 +27,7 @@ This tutorial is very much step by step. For advenced users we suggest the [Loca
     cd rif-storage-pinning-ui
     npm ci
     ```
-    By default the UI will only allow connections to RSK testnet. To change this you can create a `.env.local` file which defines following variables
+    By default the UI will only allow connections to RSK Testnet. To change this you can create a `.env.local` file which defines following variables
     ```
     REACT_APP_REQUIRED_NETWORK_ID=8545
     REACT_APP_REQUIRED_NETWORK_NAME="Local Ganache"
@@ -40,11 +40,11 @@ To fully test the system, we need to run locally two IPFS nodes (one for provide
 ```bash
 npm run init
 ```
-which will bootstrap the IPFS repos in .repos folder and configure the ports settings. Next we will run the consumer and IPFS node:
+which will bootstrap the IPFS repos in the `.repos` folder and configure the port settings. Next we will run the consumer and IPFS node:
 ```bash
 npm run ipfs:consumer
 ```
-In new terminal window run the provider node with:
+In a new terminal window, run the provider node with:
 ```bash
 npm run ipfs:provider
 ```
@@ -150,7 +150,7 @@ npm run bin -- daemon
 #### Creating offer
 In the UI, fill in the offer details. The fields are as follows:
 
- - *Capacity* - the storage capacity of the offer in MB
+ - *Capacity* - The storage capacity of the offer in MB
  - *Periods* - Specifies array of periods how often is payment required in seconds
  - *Prices* - Specifies prices in wei per Megabyte for each Billing Period, resulting in period-price tuple
  - *Message* - A peerId of the provider's communication system

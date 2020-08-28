@@ -3,15 +3,15 @@ layout: rsk
 title: Architecture
 ---
 
-![](/assets/img/rif-storage/pinner_architecture.png)
+![REIF Storage Pinner Architecture](/assets/img/rif-storage/pinner_architecture.png)
 
-The main high-level components are:
+The high-level components are:
 
 - **RIF Marketplace UI** - the main web UI where all transactions originate.
 - **Cache** - a cache that stores the state of the Smart Contract in an easy-readable format and does some basic preprocessing on it.
 - **Pinning Service** - a service running on Provider's machine connected to IPFS node which orchestrates the pinning mechanism.
-- **Smart Contract** - a place where the state is stored and managed. This is the "origin of truth".
-- **RIF Storage.js** - a library that can abstract away lot of magic happening in order to file be pinned.
+- **Smart Contract** - a place where the state is stored and managed. This is the "source of truth".
+- **RIF Storage.js** - a library that can abstract away a lot of magic happening in order for the to file be pinned.
 
 ## Data Sources
 
