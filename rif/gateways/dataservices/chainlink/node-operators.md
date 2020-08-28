@@ -25,7 +25,7 @@ git clone https://github.com/smartcontractkit/chainlink-RSK.git && cd chainlink-
 
 ### 2. Configure the Initiator and Adapter
 
-Create an `.env-testnet` file for each service and set the configuration environment variables.
+Create a `.env-testnet` file for each service and set the configuration environment variables.
 
 #### RSK Initiator
 
