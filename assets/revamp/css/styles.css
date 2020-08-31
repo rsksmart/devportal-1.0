@@ -219,6 +219,17 @@ a:hover {
     content: none;
 }
 
+#fullCarousel .item:before{
+ content: "";
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: 100%;
+    background-image: linear-gradient(120deg, #000000, transparent);
+    opacity: .9;
+    }
+
 /* END LINKS*/
 li {
     color: var(--secondary-color);
