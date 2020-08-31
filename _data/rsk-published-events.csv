@@ -318,28 +318,43 @@ Alguns benefícios:
 2020-08-19T09:00:00+08:00,202008-005,2,2020-08-18T12:00:00+08:00,confirmed,"Slides: https://developers.rsk.co/webinars/202008-005/slides/
 System pre-requisites: https://developers.rsk.co/tutorials/workshop-prereqs/
 Javascript testing hands-on: https://developers.rsk.co/tutorials/workshop-js-testing/
-Smart contract testing hands-on: https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/",,/webinars/202008-005/banner-image.png,@bguiz,Developers,,Testing Smart Contracts with OpenZepplin CLI,"Learn about software testing principles, and how to create and run tests on your RSK smart contracts using OpenZeppelin CLI, in this webinar with two mini hands-on workshops.",Workshop,online,Online only,English,"Brendan Graetz
+Smart contract testing hands-on: https://developers.rsk.co/tutorials/workshop-smart-contract-testing-ozcli/",,/webinars/202008-005/banner-image.png,@bguiz,Developers,,Testing Smart Contracts with OpenZepplin CLI,Learn how to create and run tests on your RSK smart contracts using OpenZeppelin CLI.,Workshop,online,Online only,English,"Brendan Graetz
 Dulce Villarreal","Developer Advocate
 Developer Advocate","@bguiz
 @Dulce_vird",https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin,https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form,https://youtu.be/Bw6bHgiUEiI
 2020-08-19T19:00:00-03:00,202008-006,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Utilização da biblioteca rsk3.js no seu site,"Para desenvolvedores!
 
 Aprenda como utilizar a biblioteca rsk3.js em un frontend para se comunicar com os smart contracts publicados na RSK.",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca-rsk3js-no-seu-site,https://app.livestorm.co/p/28967d51-08df-4701-9b3a-12cfc240e5bf/form,https://youtu.be/Y41RzbkZNEA
-2020-08-24T18:00:00-03:00,202008-007,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Trazabilidad en la industria Nuclear basada en tecnología Blockchain,La empresa NUCLEARIS desarrolló la primera Plataforma de Trazabilidad a nivel mundial basada en BLOCKCHAIN y que es utilizada en la fabricación de componentes de uso nuclear. En este webinar contaran el detalle del caso de uso de esta plataforma que pretende generar un cambio de paradigma en la industria Nuclear basado en la implementación de una nueva tecnología digital para garantizar la Seguridad Operativa de las Centrales Atómicas y eficientizar el registro y almacenamiento de documentación de vital importancia.,Talk,online,Online only,Spanish,"Santiago Badran
+2020-08-24T17:00:00-03:00,202008-007,2,2020-08-18T20:51:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSKBuenosAires/events/272683683/,Trazabilidad en la industria Nuclear basada en tecnología Blockchain,"NUCLEARIS desarrolló la primera Plataforma de Trazabilidad a nivel mundial basada en BLOCKCHAIN y que es utilizada en la fabricación de componentes de uso nuclear.
+
+En este webinar se contará en detalle el caso de uso de esta plataforma que pretende generar un cambio de paradigma en la industria Nuclear basado en la implementación de una nueva tecnología digital para garantizar la Seguridad Operativa de las Centrales Atómicas y eficientizar el registro y almacenamiento de documentación de vital importancia.
+
+Aprende más sobre cómo la Blockchain puede impulsar la industria nuclear.
+
+⚛️ https://www.nuclearis.com/",Talk,online,Online only,Spanish,"Santiago Badran
 Sebastian Martinez","CEO
 CTO",,https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear,https://app.livestorm.co/p/de980613-7c05-4d99-8ac8-5e1cef829757/form,https://youtu.be/hHFDHlORxgc
-2020-08-24T14:00:00-03:00,202008-008,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Traceability in the Nuclear industry based on Blockchain technology,"NUCLEARIS developed the first  Traceability Platform based on BLOCKCHAIN ​​and which is used in the manufacture of components for nuclear use. The platform objective is  to generate a paradigm shift in the Nuclear industry based in blockchain technology to guarantee the Operational Safety of Atomic Power Plants and make the registration and storage of documentation more efficient vitally important.
+2020-08-24T14:00:00-03:00,202008-008,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/rsk-community/events/272682883/,Traceability in the Nuclear industry based on Blockchain technology,"NUCLEARIS developed the first Traceability Platform based on BLOCKCHAIN ​used in the assemble of components for Nuclear purposes.
 
+The platform's objective is to generate a paradigm shift in the Nuclear industry based in Blockchain technology to guarantee the Operational Safety of Atomic Power Plants and to make the registration and storage of documentation more efficient.
+
+Learn more about how can Blockchain leverage the Nuclear industry at this webinar.
+
+https://en.nuclearis.com/
 ",Talk,online,Online only,English,"Santiago Badran
 Sebastian Martinez","CEO
 CTO",,https://app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technology,https://app.livestorm.co/p/83535a48-3e9a-4355-8585-e06ce85d41c2/form,https://youtu.be/hoMqmpFnAzY
-2020-08-26T19:00:00-03:00,202008-009,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,Casos de uso na RSK,"Conheça alguns casos de uso implementados no Blockchain RSK, desenvolvidos por nossos parceiros.
+2020-08-26T19:00:00-03:00,202008-009,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/272684125/,Casos de uso na RSK,"Conheça alguns casos de uso implementados no Blockchain RSK, desenvolvidos por nossos parceiros.
 
 Veja os casos de uso que serão apresentados:
 https://www.rsk.co/pt-pt/Use-cases
 ",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk,https://app.livestorm.co/p/66249815-cf94-4a9a-ab3c-3e6a743c77ff/form,
-2020-08-27T18:00:00-03:00,202008-010,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,,"UX & BLOCKCHAIN:
-Direcciones y dominios para uso personal","En IOVlabs construimos el internet del valor para crear un mundo con libertad e inclusion financiera. Para esto necesitamos que la tecnología de blockchain sea accesible y fácil de usar. Con los nombres y dominios ahora vas a poder tener recordar tu wallet con fácilidad y dársela a tus amigos. En este workshop aprenderás a dar de alta tu dominio con tu nombre, usando ENS, RNS, RIF Name Services  y la Rwallet. ",Demo,online,Online only,Spanish,Dulce Villarreal,Developer Advocate,@Dulce_Villarreal,https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcciones-y-dominios,https://app.livestorm.co/p/e34c1aef-6d13-4ff1-b9a7-51ef2f85f98c/form,
+2020-08-27T18:00:00-03:00,202008-010,1,2020-08-04T15:30:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSKBuenosAires/events/272708136/,"UX & BLOCKCHAIN:
+Direcciones y dominios para uso personal","En IOVlabs construimos el internet del valor pensando en un mundo con libertad e inclusión financiera en el que la tecnología de Blockchain sea accesible y fácil de usar.
+
+Con los nombres y dominios ahora vas a poder recordar los datos de tu wallet con facilidad y compartirla con tus amigos y conocidos para hacer cualquier transacción.
+
+En este workshop aprenderás a dar de alta tu dominio con tu nombre, usando ENS, RNS, RIF Name Services y la rWallet.",Demo,online,Online only,Spanish,Dulce Villarreal,Developer Advocate,@Dulce_Villarreal,https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcciones-y-dominios,https://app.livestorm.co/p/e34c1aef-6d13-4ff1-b9a7-51ef2f85f98c/form,
 2020-09-02T20:00+08:00,202008-011,1,2020-08-14T15:30:00+08:00,confirmed,"post-COVID Hack 2020: https://postcovidhack.com/
 Socio-economic inclusion track challenges: https://postcovidhack.com/challenges/socio-economic-inclusion
 Socio-economic inclusion track prizes: https://postcovidhack.com/challenges/socio-economic-inclusion/prizes",,https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F109058385%2F439900637166%2F1%2Foriginal.20200820-064837?w=1080&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C15%2C1200%2C600&s=a3487bb7d8c02dce3cfca48a2eb3cce3,,,,Post Covid Hack Official Launch,"Use Blockchain technology, build awesome solutions and determine what the future will look like in a post-pandemic world!
@@ -418,3 +433,24 @@ No!",Workshop,online,Online only,English,Solange Gueiros,Developer Advocate,@sol
 Nifty Wallet: https://developers.rsk.co/wallet/use/nifty/",,,,,,Crossing Tokens from Ethereum to RSK and back,"In this workshop, we will use the Token Bridge to cross ERC20 tokens from Ethereum ro RSK and then trade them on rskswap.com 
 
 ",Workshop,online,Online only,,Pedro Prete,Interoperability PO,@PedroMPrete,https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar-all-in-one-tickets-118598722973,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598722973,
+2020-09-09T19:00:00-03:00,202009-010,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,,RSK e DeFi - Finanças descentralizadas,"Entenda o que é DeFi - Finanças descentralizadas e conheça as soluções desenvolvidas na RSK.
+Conheça mais sobre DeFi para Bitcoin ➡️ https://developers.rsk.co/defi/pt-pt/index.html",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas-descentralizadas,https://app.livestorm.co/p/9674f59b-730f-4de4-9c60-cefce84fde06/form,
+2020-09-09T10:00:00-03:00,202009-011,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,,DeFi for Bitcoin - Asia,,Panel,online,Online only,English,"Gabriel Kurman
+Santiago de Lavallaz
+Eddy Travia
+Manuel Ferrari
+Bruno Calmels","Master Advocate
+Director of Capital Markets
+Asia Director
+Money on Chain Co-Founder
+Defiant Co-Founder & CTO","@gabrielkurman
+@__Santino__
+@startupeddy
+@manuferraritano
+@bro_calms",https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia,https://app.livestorm.co/p/170cec76-60fe-4e17-9123-6f64d28eba7a/form,
+2020-09-23T19:00:00-03:00,202009-012,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,,Conheça a RIF - RSK Infrastructure Framework,"Existir uma infraestrutura de com bibliotecas e ferramentas acelera a implementação de qualquer projeto em Blockchain. 
+Armazenamento descentralizado, gerenciamento de nomes para domínios, marketplace e canais de pagamento, entre outros, já existem para a RSK através da RIF - RSK Infrastructure Framework e serão apresentados neste webinar.
+Conheça mais sobre RIF ➡️ https://www.rifos.org/pt-pt/",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructure-framework,https://app.livestorm.co/p/9c4aac42-45bf-4bb3-8143-1d4de89a48f7/form,
+2020-09-30T16:00:00-03:00,202009-013,1,2020-08-30T22:00:00-03:00,confirmed,,,,,General,,Self Sovereign Identity and RIF,"The main intention of Self Sovereign Identity is to empower people with tools to control their digital interactions and to recover privacy in digital environments.
+At this webinar we will delve into its vital role to protect users privacy and digital identities and RIF plans around it.
+Learn more about RIF Identity ➡️ https://www.rifos.org/directory",Talk,online,Online only,English,Milton Berman,RIF Identity PO,@miltonberman,https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif,https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form,

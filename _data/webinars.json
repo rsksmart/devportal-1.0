@@ -3565,7 +3565,7 @@
       "status": "confirmed",
       "url": "",
       "title": "Testing Smart Contracts with OpenZepplin CLI",
-      "description": "Learn about software testing principles, and how to create and run tests on your RSK smart contracts using OpenZeppelin CLI, in this webinar with two mini hands-on workshops.",
+      "description": "Learn how to create and run tests on your RSK smart contracts using OpenZeppelin CLI.",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -3656,13 +3656,13 @@
     {
       "type": "event/2",
       "id": "202008-007",
-      "version": "1",
-      "timestamp": "2020-08-24T21:00:00.000Z",
-      "lastModified": "2020-08-04T18:30:00.000Z",
+      "version": "2",
+      "timestamp": "2020-08-24T20:00:00.000Z",
+      "lastModified": "2020-08-18T23:51:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/272683683/",
       "title": "Trazabilidad en la industria Nuclear basada en tecnología Blockchain",
-      "description": "La empresa NUCLEARIS desarrolló la primera Plataforma de Trazabilidad a nivel mundial basada en BLOCKCHAIN y que es utilizada en la fabricación de componentes de uso nuclear. En este webinar contaran el detalle del caso de uso de esta plataforma que pretende generar un cambio de paradigma en la industria Nuclear basado en la implementación de una nueva tecnología digital para garantizar la Seguridad Operativa de las Centrales Atómicas y eficientizar el registro y almacenamiento de documentación de vital importancia.",
+      "description": "NUCLEARIS desarrolló la primera Plataforma de Trazabilidad a nivel mundial basada en BLOCKCHAIN y que es utilizada en la fabricación de componentes de uso nuclear.\n\nEn este webinar se contará en detalle el caso de uso de esta plataforma que pretende generar un cambio de paradigma en la industria Nuclear basado en la implementación de una nueva tecnología digital para garantizar la Seguridad Operativa de las Centrales Atómicas y eficientizar el registro y almacenamiento de documentación de vital importancia.\n\nAprende más sobre cómo la Blockchain puede impulsar la industria nuclear.\n\n⚛️ https://www.nuclearis.com/",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -3704,9 +3704,9 @@
       "timestamp": "2020-08-24T17:00:00.000Z",
       "lastModified": "2020-08-04T18:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/272682883/",
       "title": "Traceability in the Nuclear industry based on Blockchain technology",
-      "description": "NUCLEARIS developed the first  Traceability Platform based on BLOCKCHAIN ​​and which is used in the manufacture of components for nuclear use. The platform objective is  to generate a paradigm shift in the Nuclear industry based in blockchain technology to guarantee the Operational Safety of Atomic Power Plants and make the registration and storage of documentation more efficient vitally important.\n\n",
+      "description": "NUCLEARIS developed the first Traceability Platform based on BLOCKCHAIN ​used in the assemble of components for Nuclear purposes.\n\nThe platform's objective is to generate a paradigm shift in the Nuclear industry based in Blockchain technology to guarantee the Operational Safety of Atomic Power Plants and to make the registration and storage of documentation more efficient.\n\nLearn more about how can Blockchain leverage the Nuclear industry at this webinar.\n\nhttps://en.nuclearis.com/\n",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
@@ -3748,7 +3748,7 @@
       "timestamp": "2020-08-26T22:00:00.000Z",
       "lastModified": "2020-08-04T18:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSK-Brasil/events/272684125/",
       "title": "Casos de uso na RSK",
       "description": "Conheça alguns casos de uso implementados no Blockchain RSK, desenvolvidos por nossos parceiros.\n\nVeja os casos de uso que serão apresentados:\nhttps://www.rsk.co/pt-pt/Use-cases",
       "category": "Talk",
@@ -3786,9 +3786,9 @@
       "timestamp": "2020-08-27T21:00:00.000Z",
       "lastModified": "2020-08-04T18:30:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/272708136/",
       "title": "UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal",
-      "description": "En IOVlabs construimos el internet del valor para crear un mundo con libertad e inclusion financiera. Para esto necesitamos que la tecnología de blockchain sea accesible y fácil de usar. Con los nombres y dominios ahora vas a poder tener recordar tu wallet con fácilidad y dársela a tus amigos. En este workshop aprenderás a dar de alta tu dominio con tu nombre, usando ENS, RNS, RIF Name Services  y la Rwallet.",
+      "description": "En IOVlabs construimos el internet del valor pensando en un mundo con libertad e inclusión financiera en el que la tecnología de Blockchain sea accesible y fácil de usar.\n\nCon los nombres y dominios ahora vas a poder recordar los datos de tu wallet con facilidad y compartirla con tus amigos y conocidos para hacer cualquier transacción.\n\nEn este workshop aprenderás a dar de alta tu dominio con tu nombre, usando ENS, RNS, RIF Name Services y la rWallet.",
       "category": "Demo",
       "locationCategory": "online",
       "location": "Online only",
@@ -4163,6 +4163,174 @@
       ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-009/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202009-010",
+      "version": "1",
+      "timestamp": "2020-09-09T22:00:00.000Z",
+      "lastModified": "2020-08-31T01:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK e DeFi - Finanças descentralizadas",
+      "description": "Entenda o que é DeFi - Finanças descentralizadas e conheça as soluções desenvolvidas na RSK.\nConheça mais sobre DeFi para Bitcoin ➡️ https://developers.rsk.co/defi/pt-pt/index.html",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/9674f59b-730f-4de4-9c60-cefce84fde06/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas-descentralizadas",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202009-010/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202009-011",
+      "version": "1",
+      "timestamp": "2020-09-09T13:00:00.000Z",
+      "lastModified": "2020-08-31T01:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "DeFi for Bitcoin - Asia",
+      "description": "",
+      "category": "Panel",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Gabriel Kurman",
+          "description": "Master Advocate",
+          "contact": "@gabrielkurman"
+        },
+        {
+          "name": "Santiago de Lavallaz",
+          "description": "Director of Capital Markets",
+          "contact": "@__Santino__"
+        },
+        {
+          "name": "Eddy Travia",
+          "description": "Asia Director",
+          "contact": "@startupeddy"
+        },
+        {
+          "name": "Manuel Ferrari",
+          "description": "Money on Chain Co-Founder",
+          "contact": "@manuferraritano"
+        },
+        {
+          "name": "Bruno Calmels",
+          "description": "Defiant Co-Founder & CTO",
+          "contact": "@bro_calms"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/170cec76-60fe-4e17-9123-6f64d28eba7a/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202009-012",
+      "version": "1",
+      "timestamp": "2020-09-23T22:00:00.000Z",
+      "lastModified": "2020-08-31T01:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Conheça a RIF - RSK Infrastructure Framework",
+      "description": "Existir uma infraestrutura de com bibliotecas e ferramentas acelera a implementação de qualquer projeto em Blockchain. \nArmazenamento descentralizado, gerenciamento de nomes para domínios, marketplace e canais de pagamento, entre outros, já existem para a RSK através da RIF - RSK Infrastructure Framework e serão apresentados neste webinar.\nConheça mais sobre RIF ➡️ https://www.rifos.org/pt-pt/",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/9c4aac42-45bf-4bb3-8143-1d4de89a48f7/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructure-framework",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202009-012/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202009-013",
+      "version": "1",
+      "timestamp": "2020-09-30T19:00:00.000Z",
+      "lastModified": "2020-08-31T01:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Self Sovereign Identity and RIF",
+      "description": "The main intention of Self Sovereign Identity is to empower people with tools to control their digital interactions and to recover privacy in digital environments.\nAt this webinar we will delve into its vital role to protect users privacy and digital identities and RIF plans around it.\nLearn more about RIF Identity ➡️ https://www.rifos.org/directory",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general"
+      ],
+      "presenters": [
+        {
+          "name": "Milton Berman",
+          "description": "RIF Identity PO",
+          "contact": "@miltonberman"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
+      "tags": " idioma-english audiencia-general",
+      "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202009-013/",
       "_isPast": false
     }
   ]
