@@ -341,6 +341,32 @@ nav {
     }
 }
 
+.form-control {border: solid 1px var(--secondary-color);}
+.form-control-sm {border-radius:0rem;}
+.form-control {background-color:transparent;}
+.input-group-append {
+    margin-left: -1px;
+   
+}
+
+.input-group>.input-group-append>.btn{ width:32px; height:31px;   border: solid 1px var(--secondary-color);
+    border-radius: 0px;}
+.fa-search:before {color: var(--secondary-color); }
+.fa-search:hover:before {color: var(--tertiary-color); }
+btn:focus, a:focus
+{
+         outline: none;
+}
+input[type="search"]:focus {
+outline: none;
+box-shadow:none !important;
+border: solid 1px var(--secondary-color);
+background:transparent;
+color: var(--secondary-color);
+}
+
+input[type="search"]{color: var(--secondary-color);}
+
 /*LEFT NAV MENU*/
 
 .toggle-nav-column-visibility {
