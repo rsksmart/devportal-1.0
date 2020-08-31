@@ -1,5 +1,5 @@
 ---
-layout: rsk
+layout: revamp/rsk
 title: Deploy a smart contract at RSK local node using Geth and Remix
 page_index:  [ { 'name': 'Overview', 'href': '#overview' }, { 'name': 'Requirements', 'href': '#requirements' }, { 'name': 'Run a RSK local node', 'href': '#run-a-rsk-local-node' }, { 'name': 'Connect with a RSK local node using geth attach', 'href': '#connect-with-rsk-local-node' }, { 'name': 'Remix', 'href': '#remix' }, { 'name': 'Create a smart contract', 'href': '#create-a-smart-contract' } ]
 ---
@@ -65,18 +65,18 @@ page_index:  [ { 'name': 'Overview', 'href': '#overview' }, { 'name': 'Requireme
 <h3 id="remix">REMIX</h3>
 <p>Go to <a href="http://remix.ethereum.org/" rel="external noopener noreferrer" target="_blank">REMIX</a> </p>
 <p>In the <code class="highlighter-rouge">home page</code>, choose environment <code class="highlighter-rouge">Solidity</code></p>
-<img class="img-fluid" src="/assets/img/img1.PNG" alt="">
-<img class="img-fluid" src="/assets/img/img2.PNG" alt="">
+<img class="img-fluid" src="/assets/revamp/img/img1.PNG" alt="">
+<img class="img-fluid" src="/assets/revamp/img/img2.PNG" alt="">
 <div class="big_separator">
 </div>
 <h3 id="connect-with-rsk-local-node">CREATE A SMART CONTRACT</h3>
 <p>Create a new file</p>
 <p>Click on the second button on the left side - file explorer</p>
-<img class="img-fluid" src="/assets/img/img2.PNG" alt="">
+<img class="img-fluid" src="/assets/revamp/img/img2.PNG" alt="">
 <p>Click on the + button to create a new file</p>
 <div class="small_separator">
 </div>
-<img class="img-fluid" src="/assets/img/img3.PNG" alt="">
+<img class="img-fluid" src="/assets/revamp/img/img3.PNG" alt="">
 <p>Copy the smart contract from the following gist, or inline below:</p>
 <p><b>Register.sol gist</b></p>
 <div class="language-shell highlighter-rouge">
@@ -196,37 +196,37 @@ page_index:  [ { 'name': 'Overview', 'href': '#overview' }, { 'name': 'Requireme
 <div id="magnifyCarousel" class="owl-carousel owl-theme">
     <div class="item">
         <a href="https://cobo.com/" target="blank">
-            <img src="/assets/img/logos/cobo.png" alt="Cobo">
+            <img src="/assets/revamp/img/logos/cobo.png" alt="Cobo">
             <a class="company-name" href="https://cobo.com/" target="blank">Cobo</a>
         </a>
     </div>
     <div class="item">
         <a href="https://edge.app/" target="blank">
-            <img src="/assets/img/logos/edge.png" alt="Edge">
+            <img src="/assets/revamp/img/logos/edge.png" alt="Edge">
             <a class="company-name" href="https://edge.app/" target="blank">Edge</a>
         </a>
     </div>
     <div class="item">
         <a href="https://mycrypto.com/account" target="blank">
-            <img src="/assets/img/logos/mycrypto.png" alt="My Crypto">
+            <img src="/assets/revamp/img/logos/mycrypto.png" alt="My Crypto">
             <a class="company-name" href="https://mycrypto.com/account" target="blank">My Crypto</a>
         </a>
     </div>
     <div class="item">
         <a href="https://www.portis.io/" target="blank">
-            <img src="/assets/img/logos/portis.png" alt="Portis">
+            <img src="/assets/revamp/img/logos/portis.png" alt="Portis">
             <a class="company-name" href="https://www.portis.io/" target="blank">Portis</a>
         </a>
     </div>
     <div class="item">
         <a href="https://www.uport.me/" target="blank">
-            <img src="/assets/img/logos/uport.png" alt="U-Port">
+            <img src="/assets/revamp/img/logos/uport.png" alt="U-Port">
             <a class="company-name" href="https://www.uport.me/" target="blank">U-Port</a>
         </a>
     </div>
     <div class="item">
         <a href="https://cobo.com/" target="blank">
-            <img src="/assets/img/logos/cobo.png" alt="Cobo">
+            <img src="/assets/revamp/img/logos/cobo.png" alt="Cobo">
             <a class="company-name" href="https://cobo.com/" target="blank">Cobo</a>
         </a>
     </div>
@@ -235,11 +235,11 @@ page_index:  [ { 'name': 'Overview', 'href': '#overview' }, { 'name': 'Requireme
 <!-- full width carousel -->
 
 <div id="fullCarousel" class="owl-carousel owl-theme">
-    <div class="item" style="background-image: url(/assets/img/full-carousel-template-img.jpg);"> 
+    <div class="item" style="background-image: url(/assets/revamp/img/full-carousel-template-img.jpg);"> 
     </div>
-   <div class="item" style="background-image: url(/assets/img/full-carousel-template-img.jpg);"> 
+   <div class="item" style="background-image: url(/assets/revamp/img/full-carousel-template-img.jpg);"> 
     </div>
-    <div class="item" style="background-image: url(/assets/img/full-carousel-template-img.jpg);"> 
+    <div class="item" style="background-image: url(/assets/revamp/img/full-carousel-template-img.jpg);"> 
     </div>
     
 </div>

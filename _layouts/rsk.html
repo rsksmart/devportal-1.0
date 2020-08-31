@@ -1,95 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
+   <head>
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-56J7JTD');
+      </script>
+      <!-- End Google Tag Manager -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
+      <meta name="author" content="RSK Developers Portal">
+      <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+   	<title>{{ page.title }} - RSK Developers Portal</title>
+      <!-- Favicons -->
+      <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+      <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+      <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+      <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+      <meta name="msapplication-TileColor" content="#ffffff">
+      <meta name="msapplication-config" content="/assetsimg/favicons/browserconfig.xml">
+      <meta name="theme-color" content="#ffffff">
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,900&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,600,700,800&display=swap" rel="stylesheet">
+      <!-- Bootstrap core CSS -->
+      <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <!-- Libraries CSS Files -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet">
+      <link rel="stylesheet" href="/assets/vendor/malihu-custom-scrollbar-plugin-master/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css" />
+      <!-- Main Stylesheet File -->
+      <link href="/assets/css/code.css" rel="stylesheet">
+      <link href="/assets/css/styles.css" rel="stylesheet">
+      <link href="/assets/css/styles_dark.css" rel="stylesheet">
+      <link href="/assets/css/owl.carousel.min.css" rel="stylesheet">
+      <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet">
+   </head>
+   <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56J7JTD"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
 
-{% include head_revamp.html %}
+      {% include header.html %}
 
-<body class="darktheme">
+      <!-- Page Content -->
+      <!-- home -->
+      <section id="home">
+         <div class="container">
 
-{% include header_revamp.html %}
+            {% include header-inner.html %}
 
-<div class="container">
-    <!-- Mat-->
-    <div class="row main_content">
-        <!-- LEFT NAV COLUMN -->
-
-        {% include nav-page-menu_revamp.html %}
-
-        <!-- BETA CONTENT column -->
-        <div class="col-lg-9 col-md-12 col-xs-12 col-sm-12 beta_content">
-            <!-- will stick on scroll-->
-            <!-- Breadcrumbs & metadata -->
-            <div class="row primary_info header-inner">
-                <div class="col-12">
-                    <div class="row custom-mb-5">
-                        <div id="siteBreadcrumb" class="col-md-8 pl-0">
-                            <p>{% include breadcrumbs.html %}</p>
-                        </div>
-                        <div id="page-metadata" class="col-md-4 text-md-right p-0">
-                            <span class="pr-5">1º to read | Edit | </span>
-                            <span class="theme-switch-wrapper">
-                                    <label class="theme-switch" for="checkbox">
-                                        <input type="checkbox" id="checkbox" />
-                                        <div class="slider round"></div>
-                                    </label>
-                                </span>
-                        </div>
-                        <div class="col-12 page-title content-box">
-                            <h1>{{ page.title }}</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- will stick ends -->
-            <!-- page info -->
             <div class="row">
-                <div class="col-12">
-                    <div class="row mb-5">
-                    <!-- On this page -->
-                    {% if page.page_index %}
-                        <div class="col-12 content-box">
-                            <h2 class="subtitle">On this page</h2>
-                            <ul class="on_this_page">
-                                {% for item in page.page_index %}
-                                <li>
-                                    <a href="{{ item.href }}">{{ item.name }}</a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    {% endif %}
-                    </div><!-- On this page ends -->
-                    <div class="row">
-                        <!--description-->
-                        <div class="col-12 content-box topic-content">
+               <!-- left col desktop -->
+               <div class="col-lg-3 main-left-col">
+                  <div class="desktop_accordion">
+                     {% include nav-page-menu.html %}
+                  </div>
+               </div>
+               <!-- central col -->
+               <div class="col-lg-9 main-central-col">
+                  {% include before-content.html %}
 
-                            {{ content }}
+                  <h1 class="page-title" id="top">{{ page.title }}</h1>
 
-                        </div>
-                    </div><!-- description ends -->
-                </div>
-            </div><!-- page info ends -->
-        </div> <!-- beta contents ends -->
-        <!-- content ends here -->
-    </div>
-</div>
-<!-- TERMINA EL BODY -->
+                  {{ content }}
 
-{% include footer_revamp.html %}
+                  {% include prev-next-links.html %}
+               </div>
+            </div>
 
-<!-- VIDEO MODAL -->
-<div class="modal fade" id="homevideomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <iframe width="auto" height="500px" src="https://www.youtube.com/embed/6U0_UkuOh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
-</div>
-</div>
-<!-- VIDEO MODAL ENDS -->
+            {% include newsletter.html %}
+         </div>
+         <div class="render-features" data-features="{{ page.render_features }}">
+         </div>
+      </section>
 
-</body>
+      {% include footer.html %}
 
-{% include include_revamp.html %}
+      <a href="#top" class="scrollup"><p>Go to top</p></a>
+      <!-- Bootstrap core JavaScript -->
+      <script src="/assets/vendor/jquery/jquery.min.js"></script>
+      <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="/assets/js/main.js"></script>
+      <script src="/assets/vendor/carousel/owl.carousel.min.js"></script>
+      <script type="text/javascript">
+      $('.owl-carousel').owlCarousel({
+          loop:true,
+          nav:true,
+          center:true,
+          URLhashListener:true,
+          autoplayHoverPause:true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:1
+              },
+              1000:{
+                  items:3
+              }
+          }
+      });
 
+      </script>
+      <script>
+      ((window.gitter = {}).chat = {}).options = {
+         room: 'rsksmart/getting-started'
+      };
+      </script>
+      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+   </body>
 </html>
-
