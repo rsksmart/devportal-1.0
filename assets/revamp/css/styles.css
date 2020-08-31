@@ -215,6 +215,10 @@ a:hover {
     background: url(../img/ext-link-green.svg);
 }
 
+.topic-content .item a[target='_blank']:after {
+    content: none;
+}
+
 /* END LINKS*/
 li {
     color: var(--secondary-color);

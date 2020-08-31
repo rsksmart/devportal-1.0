@@ -1,7 +1,7 @@
 // LEFT NAVIGATION
 
 // add level class to ul
-$("ul").addClass(function() {
+$(".inner-nav-left ul").addClass(function() {
     var depth = jQuery(this).parents("ul").length;
     return "level level-" + (depth + 1);
 });
@@ -9,12 +9,12 @@ $("ul").addClass(function() {
 // add active class to a in inner nav based on url
 $(function () {
     var pageUrl = location.href;
-    $('a').each(function () {
+    $('.inner-nav-left a').each(function () {
         $(this).toggleClass('active', this.href === pageUrl);
     });
 
     // Put it here just in case it's executed before the previous iteration finish.
-    $('.active').parentsUntil('.level-1').addClass('deployed green');
+    $('.inner-nav-left .active').parentsUntil('.level-1').addClass('deployed green');
 
     let replace = false;
     let uls = [];
@@ -61,8 +61,8 @@ $(document).ready(function () {
 
 
 
-  $('a[target="_blank"]').addClass('external');
-  $('ul li:has(ul)').addClass('hassub');
+  $('.inner-nav-left a[target="_blank"]').addClass('external');
+  $('.inner-nav-left ul li:has(ul)').addClass('hassub');
   $('.inner-nav-left .external').prepend('<span class="external-icon"><i class="fa fa-external-link" aria-hidden="true"></i></span>');
   $('.inner-nav-left .hassub').prepend('<span class="caret-icon"><i class="fa fa-caret-right" aria-hidden="true"></i></span>');
 
