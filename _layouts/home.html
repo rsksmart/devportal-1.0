@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
-
 {% include head_revamp.html %}
-
 {% include header_revamp.html %}
 
 <body class="darktheme">
-
-<div class="container">
-    <!-- Mat-->
-    <div class="row main_content">
-        <!-- BETA CONTENT column -->
-        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 beta_content">
-            <!-- page info -->
-            <div class="row"><!--description-->
-                <div class="col-12">
-                    <div class="row">
-                        <div class="col-12 homepage content-box site-presentation-box">
-
-                            <div class="row">
-                                <div class="col-lg-6 col-sm-12 site-presentation">
-                                    <h1>Welcome to RSK</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
-                                    <p><a href="../geth-attach-local-node/" target="_blank">Follow our blog</a></p>
-                                </div>
-                                <div class="col-lg-6 col-sm-12 homepage-video">
-                                    <a data-toggle="modal" data-target="#homevideomodal"><i class="fa fa-play" aria-hidden="true"></i></a>
+    <div class="container">
+        <!-- Mat-->
+        <div class="row main_content">
+            <!-- BETA CONTENT column -->
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 beta_content">
+                <!-- page info -->
+                <div class="row">
+                    <!--description-->
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 homepage content-box site-presentation-box">
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-12 site-presentation">
+                                        <h1>Welcome to RSK</h1>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod.</p>
+                                        <p><a href="../geth-attach-local-node/" target="_blank">Follow our blog</a></p>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-12 homepage-video">
+                                        <a data-toggle="modal" data-target="#homevideomodal"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-12 ">
-                            <!-- full width carousel -->
-
-                            <div id="fullCarousel" class="owl-carousel owl-theme">
-                                <div class="item" style="background-image: url(/assets/img/full-carousel-template-img.jpg);">
+                        <div class="row">
+                            <div class="col-12 ">
+                                <!-- full width carousel -->
+                                <div id="fullCarousel" class="owl-carousel owl-theme">
+                                    <a href="../quick-start/">
+                                        <div class="item" style="background-image: url(/assets/img/dsc_hero.jpg);">
+                                            <div class="row h-100">
+                                                <div class="col-10 offset-1 my-auto">
+                                                    <h3>GETTING START</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="..//webinars/">
+                                        <div class="item" style="background-image: url(/assets/img/dsc_hero_2.jpg);">
+                                            <div class="row h-100">
+                                                <div class="col-10 offset-1 my-auto">
+                                                    <h3>KNOLEDGE BASE</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="https://www.rifos.org/" target="_blank">
+                                        <div class="item" style="background-image: url(/assets/img/dsc_hero_3.jpg);">
+                                            <div class="row h-100">
+                                                <div class="col-10 offset-1 my-auto">
+                                                    <h3>DISCOVER RIF</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="/rsk/node/contribute/">
+                                        <div class="item" style="background-image: url(/assets/img/dsc_hero_4.jpg);">
+                                            <div class="row h-100">
+                                                <div class="col-10 offset-1 my-auto">
+                                                    <h3>CONTRIBUTE</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="item" style="background-image: url(/assets/img/full-carousel-template-img.jpg);">
-                                </div>
-                                <div class="item" style="background-image: url(/assets/img/full-carousel-template-img.jpg);">
-                                </div>
-
                             </div>
-
                         </div>
+                        {{ content }}
                     </div>
-
-                    {{ content }}
-
-                </div>
-            </div><!-- page info ends -->
-        </div> <!-- beta contents ends -->
-        <!-- content ends here -->
-    </div>
-</div>
-
-{% include footer_revamp.html %}
-
-<!-- VIDEO MODAL -->
-<div class="modal fade" id="homevideomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <iframe width="auto" height="500px" src="https://www.youtube.com/embed/6U0_UkuOh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div><!-- page info ends -->
+            </div> <!-- beta contents ends -->
+            <!-- content ends here -->
         </div>
     </div>
-</div>
-</div>
-<!-- VIDEO MODAL ENDS -->
-
+    {% include footer_revamp.html %}
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="homevideomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <iframe width="auto" height="500px" src="https://www.youtube.com/embed/6U0_UkuOh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- VIDEO MODAL ENDS -->
 </body>
-
 {% include include_revamp.html %}
 
 </html>
-
