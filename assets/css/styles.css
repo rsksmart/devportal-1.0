@@ -804,6 +804,8 @@ img+.small_separator,
     top: 330px;
 }
 
+.twitter-btn.disable, .chat-btn.disable, #_hj_feedback_container.disable{opacity:0.3; pointer-events: none;}
+
 @media (max-width: 991px) {
 
     .chat-btn,

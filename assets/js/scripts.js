@@ -127,6 +127,7 @@ $("a[href^='#']").on("click", function(e) {
 //SHARE ICON
 $('.share-redes').click(function() {
     $(".share-buttons-container").toggleClass("share-reveal");
+    $('.twitter-btn, .chat-btn, #_hj_feedback_container').toggleClass('disable');
 });
 
 // TWITTER ASIDE
