@@ -897,6 +897,10 @@ header.sticky {
     transition: all 0.5s ease;
 }
 
+#page-metadata a:hover {
+   color: var(--tertiary-color);
+}
+
 @media (max-width: 991px) {
     #page-metadata {
         margin-bottom: 16px;

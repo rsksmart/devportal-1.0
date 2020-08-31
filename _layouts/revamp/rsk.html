@@ -16,30 +16,8 @@
 
         <!-- BETA CONTENT column -->
         <div class="col-lg-9 col-md-12 col-xs-12 col-sm-12 beta_content">
-            <!-- will stick on scroll-->
-            <!-- Breadcrumbs & metadata -->
-            <div class="row primary_info header-inner">
-                <div class="col-12">
-                    <div class="row custom-mb-5">
-                        <div id="siteBreadcrumb" class="col-md-8 pl-0">
-                            <p>{% include breadcrumbs.html %}</p>
-                        </div>
-                        <div id="page-metadata" class="col-md-4 text-md-right p-0">
-                            <span class="pr-5">1º to read | Edit | </span>
-                            <span class="theme-switch-wrapper">
-                                    <label class="theme-switch" for="checkbox">
-                                        <input type="checkbox" id="checkbox" />
-                                        <div class="slider round"></div>
-                                    </label>
-                                </span>
-                        </div>
-                        <div class="col-12 page-title content-box">
-                            <h1>{{ page.title }}</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- will stick ends -->
+          {% include revamp/actionbar.html %}
+            
             <!-- page info -->
             <div class="row">
                 <div class="col-12">
