@@ -2758,21 +2758,23 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202008-007@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200824T210000Z
-DTSTART:20200824T210000Z
+DTSTAMP:20200824T200000Z
+DTSTART:20200824T200000Z
 SUMMARY:Trazabilidad en la industria Nuclear basada en tecnología Blockcha
  in 
 DESCRIPTION:Trazabilidad en la industria Nuclear basada en tecnología Bloc
- kchain\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/
- iov-labs-1/trazabilidad-en-la-industria-nuclear\n
+ kchain\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires
+ /events/272683683/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/tr
+ azabilidad-en-la-industria-nuclear\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Trazabi
  lidad en la industria Nuclear basada en tecnología Blockchain</span></div>
- \n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></spa
- n></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.live
- storm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear\">app.livestorm.c
- o/iov-labs-1/trazabilidad-en-la-industria-nuclear</a></span></div>\n</BODY
- >\n</HTML>
+ \n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a hr
+ ef=\"https://www.meetup.com/es-ES/RSKBuenosAires/events/272683683/\">www.m
+ eetup.com/es-ES/RSKBuenosAires/events/272683683/</a></span></div>\n<div><b
+ >Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs
+ -1/trazabilidad-en-la-industria-nuclear\">app.livestorm.co/iov-labs-1/traz
+ abilidad-en-la-industria-nuclear</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Santiago Badran\, CEO\, ":mailto:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2785,7 +2787,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-indus
  tria-nuclear
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
-LAST-MODIFIED:20200804T183000Z
+LAST-MODIFIED:20200818T235100Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202008-008@developers.rsk.co/
@@ -2795,17 +2797,19 @@ DTSTART:20200824T170000Z
 SUMMARY:Traceability in the Nuclear industry based on Blockchain technolog
  y 
 DESCRIPTION:Traceability in the Nuclear industry based on Blockchain techn
- ology\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/i
- ov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technol
- ogy\n
+ ology\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/e
+ vents/272682883/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/trac
+ eability-in-the-nuclear-industry-based-on-blockchain-technology\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Traceab
  ility in the Nuclear industry based on Blockchain technology</span></div>\
- n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span
- ></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.lives
- torm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchai
- n-technology\">app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-ind
- ustry-based-on-blockchain-technology</a></span></div>\n</BODY>\n</HTML>
+ n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a hre
+ f=\"https://www.meetup.com/es-ES/rsk-community/events/272682883/\">www.mee
+ tup.com/es-ES/rsk-community/events/272682883/</a></span></div>\n<div><b>Vi
+ deo stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/
+ traceability-in-the-nuclear-industry-based-on-blockchain-technology\">app.
+ livestorm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-bloc
+ kchain-technology</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Santiago Badran\, CEO\, ":mailto:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
@@ -2826,15 +2830,17 @@ SEQUENCE:0
 DTSTAMP:20200826T220000Z
 DTSTART:20200826T220000Z
 SUMMARY:Casos de uso na RSK 
-DESCRIPTION:Casos de uso na RSK\n\nOnline only\n\nRSVP: \n\nVideo stream: 
- https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk\n
+DESCRIPTION:Casos de uso na RSK\n\nOnline only\n\nRSVP: https://www.meetup
+ .com/es-ES/RSK-Brasil/events/272684125/\n\nVideo stream: https://app.lives
+ torm.co/iov-labs-1/casos-de-uso-na-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Casos d
  e uso na RSK</span></div>\n<div><span>Online only</span></div>\n<div><b>RS
- VP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><span><
- a href=\"https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk\">app.liv
- estorm.co/iov-labs-1/casos-de-uso-na-rsk</a></span></div>\n</BODY>\n</HTML
- >
+ VP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/RSK-Brasil/even
+ ts/272684125/\">www.meetup.com/es-ES/RSK-Brasil/events/272684125/</a></spa
+ n></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.live
+ storm.co/iov-labs-1/casos-de-uso-na-rsk\">app.livestorm.co/iov-labs-1/caso
+ s-de-uso-na-rsk</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
@@ -2855,16 +2861,18 @@ DTSTAMP:20200827T210000Z
 DTSTART:20200827T210000Z
 SUMMARY:UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal 
 DESCRIPTION:UX & BLOCKCHAIN:\nDirecciones y dominios para uso personal\n\n
- Online only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1
- /ux-and-blockchain-direcciones-y-dominios\n
+ Online only\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/27
+ 2708136/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/ux-and-block
+ chain-direcciones-y-dominios\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>UX & BL
  OCKCHAIN:\nDirecciones y dominios para uso personal</span></div>\n<div><sp
- an>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n
- <div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/i
- ov-labs-1/ux-and-blockchain-direcciones-y-dominios\">app.livestorm.co/iov-
- labs-1/ux-and-blockchain-direcciones-y-dominios</a></span></div>\n</BODY>\
- n</HTML>
+ an>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https
+ ://www.meetup.com/es-ES/RSKBuenosAires/events/272708136/\">www.meetup.com/
+ es-ES/RSKBuenosAires/events/272708136/</a></span></div>\n<div><b>Video str
+ eam &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/ux-and-
+ blockchain-direcciones-y-dominios\">app.livestorm.co/iov-labs-1/ux-and-blo
+ ckchain-direcciones-y-dominios</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Dulce Villarreal\, Developer Advocate\, @Dulce_Villarreal":m
  ailto:developers@iovlabs.org
 BEGIN:VALARM
@@ -3143,5 +3151,123 @@ URL;VALUE=URI:https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar
 STATUS:CONFIRMED
 X-LANGUAGE:
 LAST-MODIFIED:20200829T070000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202009-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200909T220000Z
+DTSTART:20200909T220000Z
+SUMMARY:RSK e DeFi - Finanças descentralizadas 
+DESCRIPTION:RSK e DeFi - Finanças descentralizadas\n\nOnline only\n\nRSVP:
+  \n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas
+ -descentralizadas\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK e D
+ eFi - Finanças descentralizadas</span></div>\n<div><span>Online only</span
+ ></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream
+  &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-e-defi
+ -financas-descentralizadas\">app.livestorm.co/iov-labs-1/rsk-e-defi-financ
+ as-descentralizadas</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK e DeFi - Finanças descentralizadas 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas-desc
+ entralizadas
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200831T010000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202009-011@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200909T130000Z
+DTSTART:20200909T130000Z
+SUMMARY:DeFi for Bitcoin - Asia 
+DESCRIPTION:DeFi for Bitcoin - Asia\n\nOnline only\n\nRSVP: \n\nVideo stre
+ am: https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>DeFi fo
+ r Bitcoin - Asia</span></div>\n<div><span>Online only</span></div>\n<div><
+ b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><sp
+ an><a href=\"https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia\">a
+ pp.livestorm.co/iov-labs-1/defi-for-bitcoin-asia</a></span></div>\n</BODY>
+ \n</HTML>
+ORGANIZER;CN="Gabriel Kurman\, Master Advocate\, @gabrielkurman":mailto:de
+ velopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:DeFi for Bitcoin - Asia 
+END:VALARM
+CATEGORIES:Panel
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200831T010000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202009-012@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200923T220000Z
+DTSTART:20200923T220000Z
+SUMMARY:Conheça a RIF - RSK Infrastructure Framework 
+DESCRIPTION:Conheça a RIF - RSK Infrastructure Framework\n\nOnline only\n\
+ nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/conheca-a-rif
+ -rsk-infrastructure-framework\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Conheça
+  a RIF - RSK Infrastructure Framework</span></div>\n<div><span>Online only
+ </span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video 
+ stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/conh
+ eca-a-rif-rsk-infrastructure-framework\">app.livestorm.co/iov-labs-1/conhe
+ ca-a-rif-rsk-infrastructure-framework</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Conheça a RIF - RSK Infrastructure Framework 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infras
+ tructure-framework
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200831T010000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202009-013@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200930T190000Z
+DTSTART:20200930T190000Z
+SUMMARY:Self Sovereign Identity and RIF 
+DESCRIPTION:Self Sovereign Identity and RIF\n\nOnline only\n\nRSVP: \n\nVi
+ deo stream: https://app.livestorm.co/iov-labs-1/self-sovereign-identity-an
+ d-rif\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Self So
+ vereign Identity and RIF</span></div>\n<div><span>Online only</span></div>
+ \n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\
+ ;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/self-sovereign-id
+ entity-and-rif\">app.livestorm.co/iov-labs-1/self-sovereign-identity-and-r
+ if</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Milton Berman\, RIF Identity PO\, @miltonberman":mailto:deve
+ lopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Self Sovereign Identity and RIF 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/self-sovereign-identity-
+ and-rif
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200831T010000Z
 END:VEVENT
 END:VCALENDAR
