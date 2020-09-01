@@ -35,6 +35,8 @@ backToBigNavBar = function() {
   nav.show();
   const navSmall = $('#custom-navbar-small');
   if (navSmall) navSmall.hide();
+  const homeButton = $('#back-to-big-navbar');
+  homeButton.hide();
 }
 
 
