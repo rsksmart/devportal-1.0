@@ -27,6 +27,10 @@ $(function () {
         const nav = $('#custom-navbar');
         nav.children().attr('id', 'custom-navbar-hidden').hide();
         nav.append($('<ul>').attr('id', 'custom-navbar-small').append($(active_ul[active_ul.length-1]).clone()));
+        var curr = $('.caret-icon');
+        curr.click(function() {
+          $(this).parent().toggleClass("deployed");
+        });
     }
 
 });
@@ -37,6 +41,10 @@ backToBigNavBar = function() {
   if (navSmall) navSmall.hide();
   const homeButton = $('#back-to-big-navbar');
   homeButton.hide();
+  var curr = $('.caret-icon');
+  curr.click(function() {
+    $(this).parent().toggleClass("deployed");
+  });
 }
 
 
