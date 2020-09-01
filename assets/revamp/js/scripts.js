@@ -8,6 +8,9 @@ $(".inner-nav-left ul").addClass(function() {
 
 // add active class to a in inner nav based on url
 $(function () {
+    const homeButton = $('#back-to-big-navbar');
+    homeButton.hide();
+
     var pageUrl = location.href;
     $('.inner-nav-left a').each(function () {
         $(this).toggleClass('active', this.href === pageUrl);
@@ -16,42 +19,25 @@ $(function () {
     // Put it here just in case it's executed before the previous iteration finish.
     $('.inner-nav-left .active').parentsUntil('.level-1').addClass('deployed green');
 
-    let replace = false;
-    let uls = [];
-    const actives = $('.active')
-    actives.each((a) => {
-        const e = actives[a];
-        if ($(e.parentElement).is('li')) {
-            var li = e.parentElement;
-            uls.push(li.parentElement);
-            //console.log(li, uls);
-            // Only two levels
-            //console.log(li.clindNodes);
-            li.childNodes.forEach((e1) => {
-                //console.log('e1 - ul', e1);
-                if ($(e1).is('ul')) {
-                    e1.childNodes.forEach((e2) => {
-                        //console.log('e2 - li', e2);
-                        if ($(e2).is('li')) {
-                            e2.childNodes.forEach((e3) => {
-                                //console.log('e3 - li', e3);
-                                if ($(e3).is('ul'))
-                                    replace = true;
-                            })
-                        }
-                    })
-                }
-            })
-        }
-    });
-    console.log('replace', replace, uls);
+    active_ul = $('.inner-nav-left .active').parentsUntil('.level-1')
+    replace = $(active_ul[active_ul.length-1]).find('.level-3').length > 0;
     if (replace) {
+        const homeButton = $('#back-to-big-navbar');
+        homeButton.show();
         const nav = $('#custom-navbar');
-        nav.children().hide();
-        nav.append(uls[0]);
-        console.log(nav);
+        nav.children().attr('id', 'custom-navbar-hidden').hide();
+        nav.append($('<ul>').attr('id', 'custom-navbar-small').append($(active_ul[active_ul.length-1]).clone()));
     }
+
 });
+backToBigNavBar = function() {
+  const nav = $('#custom-navbar-hidden');
+  nav.show();
+  const navSmall = $('#custom-navbar-small');
+  if (navSmall) navSmall.hide();
+}
+
+
 
 /*
 $(document).ready(function () {

@@ -1,5 +1,5 @@
 ---
-layout: rsk
+layout: revamp/rsk
 title: Quick Start - Step 3
 tags: quick-start, solidity
 description: 'quick start - smart contracts, solidity'

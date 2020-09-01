@@ -1,5 +1,5 @@
 ---
-layout: rsk
+layout: revamp/rsk
 title: "RNS User guide"
 description: "A user guide for the RIF Name Service"
 tags: rns, guide, rns-user-guide
