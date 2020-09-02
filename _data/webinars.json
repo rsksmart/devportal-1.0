@@ -3315,7 +3315,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/da00591e-f86f-47ba-8b7c-b41d912306b5/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/incentivar-economia-local-en-municipios",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3820,9 +3820,9 @@
     {
       "type": "event/2",
       "id": "202008-011",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-09-02T12:00:00.000Z",
-      "lastModified": "2020-08-14T07:30:00.000Z",
+      "lastModified": "2020-09-02T12:45:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Post Covid Hack Official Launch",
@@ -3846,9 +3846,9 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev",
       "videoStreamUrl": "https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event7.jpg",
-      "bannerImage": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F109058385%2F439900637166%2F1%2Foriginal.20200820-064837?w=1080&auto=format%2Ccompress&q=75&sharp=10&rect=0%2C15%2C1200%2C600&s=a3487bb7d8c02dce3cfca48a2eb3cce3",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [
         {
@@ -3949,7 +3949,7 @@
       "id": "202009-005",
       "version": "1",
       "timestamp": "2020-09-16T12:00:00.000Z",
-      "lastModified": "2020-08-29T07:00:00.000Z",
+      "lastModified": "2020-09-02T12:45:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "How to foster social inclusion with IOV’s technologies - POST COVID HACK 2020",
@@ -3975,7 +3975,7 @@
       "videoStreamUrl": "https://www.eventbrite.sg/e/how-to-foster-social-inclusion-with-iovs-technologies-post-covid-hack-tickets-118590799273",
       "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event4.jpg",
-      "bannerImage": "",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [
         {
