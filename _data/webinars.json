@@ -3775,7 +3775,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/SFkidMXS2mQ",
+      "youtubeVideoId": "SFkidMXS2mQ",
       "_permalink": "/webinars/202008-009/",
       "_isPast": true
     },
@@ -3813,7 +3814,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/fp_wWvv2LW0",
+      "youtubeVideoId": "fp_wWvv2LW0",
       "_permalink": "/webinars/202008-010/",
       "_isPast": true
     },
@@ -3866,7 +3868,7 @@
       ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202008-011/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
