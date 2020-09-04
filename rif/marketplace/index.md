@@ -14,5 +14,3 @@ The main goal of the **RIF Marketplace** is to enable the fast and efficient cre
 
 
 You can access the Marketplace on the RSK Mainnet: [marketplace.rifos.org](https://marketplace.rifos.org/)
-
-

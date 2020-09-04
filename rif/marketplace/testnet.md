@@ -4,7 +4,7 @@ title: RIF Marketplace Testnet
 tags: rif, marketplace, testnet
 ---
 
-You can access the Marketplace on the RSK Tesnet: [marketplace.testnet.rifos.org](https://marketplace.testnet.rifos.org/)
+You can access the Marketplace on the RSK Testnet: [marketplace.testnet.rifos.org](https://marketplace.testnet.rifos.org/)
 
 ## Wallet Setup
 

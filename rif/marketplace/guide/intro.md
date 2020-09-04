@@ -17,7 +17,7 @@ This guide details each operation available in the RIF Marketplace.
 
 ### Use the RIF Marketplace
 
-The RIF Marketplace is available on the RSK Mainnet:
+The RIF Marketplace is available on the RSK Mainnet.
 
 Browse the [RIF Marketplace](https://marketplace.rifos.org).
 
