@@ -4,7 +4,7 @@ title: RIF Marketplace Development Environment
 tags: rif, marketplace, development, environment
 ---
 
-This page provides a guide for developers to set up the environment for the RIF Marketplace project.
+This page provides a guide for developers to setup the environment for the RIF Marketplace project.
 
 ### Contents:
 - [Dependencies](#dependencies)
@@ -74,11 +74,10 @@ This will create `./out` folder with a number of configuration files:
 - `rnsAdmin-[network]-config.json` - Per network conguration file for the [RNS Domains Manager](https://github.com/rnsdomains/rns-manager-react). The configuration should be in `rns-manager-react/src/config/contracts.local.json`.
 
 
-
 ### 1.3. Browser wallet
 In MetaMask or Nifty import the first address from `keys.txt` file. The private key is `0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`
 
-Connect to the local ganache network (`localhost:8545` in the network dropdown). You should now see a balance of 99 ETH (or close to that - some gas was already used to deploy the Contracts)
+Connect to the local ganache network (Localhost 8545 in the network dropdown). You should now see a balance of 99 ETH (or close to that - some gas was already used to deploy the Contracts)
 
 Now we will add RIF token. Click on `Add Token` -> `Custom Token` and input the token address that is in `./out/ui-config.json` under the `rif` attribute (should be `0x67B5656d60a809915323Bf2C40A8bEF15A152e3e` if this is your first deployment). You should now see your RIF tokens balance of 997 RIF.
 
@@ -127,7 +126,7 @@ Install the dependencies
 npm i
 ```
 
-Run the UI (Will be available on `http://localhost:3000/`)
+Run the UI (Will be available on http://localhost:3000/)
 ```
 npm start
 ```
@@ -149,7 +148,7 @@ npm i
 
 Copy the configuration file generated in step [1.2](#12-deploying-smart-contracts) from `rif-marketplace-dev/out/rnsAdmin-ganache-config.json` into `rns-manager-react/src/config/contracts.local.json`.
 
-Now you can start the UI. (You may need to switch to another port such as `http://localhost:3001` if you are already running the RIF Marketplace UI)
+Now you can start the UI (You   may need to switch to another port such as http://localhost:3001 if you are already running the RIF Marketplace UI)
 
 ```
 npm start
@@ -163,3 +162,4 @@ In order to complete the required operations and get the required number of Conf
 ```sh
 sh forward.sh
 ```
+

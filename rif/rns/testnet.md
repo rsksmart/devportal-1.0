@@ -4,6 +4,8 @@ title: RNS Testnet
 tags: [rif, rns, testnet]
 ---
 
+You can access the Marketplace on the RSK Tesnet: [marketplace.testnet.rifos.org](https://marketplace.testnet.rifos.org/)
+
 ## Registartion flow
 
 1. Download a browser wallet. Recommended: [Nifty Wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid)

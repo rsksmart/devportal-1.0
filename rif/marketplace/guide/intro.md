@@ -15,13 +15,13 @@ This guide details each operation available in the RIF Marketplace.
 - [Getting started](/rif/marketplace/guide/getting-started/)
 
 
-### Use the Testnet
+### Use the RIF Marketplace
 
-The RIF Marketplace is available on the RSK testnet, this enables you to try the product before making real transactions on the Mainnet.
+The RIF Marketplace is available on the RSK Mainnet:
 
-Browse the [RIF Marketplace on testnet ](https://marketplace.testnet.rifos.org).
+Browse the [RIF Marketplace](https://marketplace.rifos.org).
 
 ----
 
 [Github](https://github.com/rsksmart?q=rif-marketplace) |
-[Access the RIF Marketplace](https://marketplace.testnet.rifos.org)
+[Access the RIF Marketplace](https://marketplace.rifos.org)

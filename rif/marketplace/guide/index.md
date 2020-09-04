@@ -6,7 +6,7 @@ description: "RIF Marketplace User Guide"
 ---
 
 - [**Introduction**](/rif/marketplace/guide/intro/)
-    - [Use the testnet](/rif/marketplace/guide/intro/#use-the-testnet)
+    - [Use the RIF Marketplace](/rif/marketplace/guide/intro/#use-the-rif-marketplace)
 - [**Setup**](/rif/marketplace/guide/setup/)
     - [**Compatible wallets**](/rif/marketplace/guide/setup/#compatible-wallets)
         - [Connect Nifty wallet to RSK](/rif/marketplace/guide/setup/#connect-nifty-wallet-to-rsk)
