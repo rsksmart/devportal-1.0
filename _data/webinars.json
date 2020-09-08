@@ -1698,6 +1698,7 @@
       ],
       "recordedVideoUrl": "https://youtu.be/ThA8rkw-nTY",
       "youtubeVideoId": "ThA8rkw-nTY",
+      "_permalink": "/webinars/202005-001/",
       "_isPast": true
     },
     {
@@ -3824,7 +3825,7 @@
       "id": "202008-011",
       "version": "2",
       "timestamp": "2020-09-02T12:00:00.000Z",
-      "lastModified": "2020-09-02T12:45:00.000Z",
+      "lastModified": "2020-09-08T03:45:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Post Covid Hack Official Launch",
@@ -3841,9 +3842,34 @@
       ],
       "presenters": [
         {
+          "name": "Gaurang Torverkar",
+          "description": "CEO, Indorse",
+          "contact": "@gaurangtorvekar"
+        },
+        {
+          "name": "Gabriel Kurman",
+          "description": "Master Advocate, IOV Labs",
+          "contact": "@GabrielKurman"
+        },
+        {
           "name": "Eddy Travia",
           "description": "CEO, Coinsilium",
           "contact": "@startupeddy"
+        },
+        {
+          "name": "Lou Yu",
+          "description": "Operations Lead, KuChain",
+          "contact": "@LouYU12789405"
+        },
+        {
+          "name": "Gustavo Segovia",
+          "description": "Collaboration Catalyst and Socio-Economic Analyst, Blockchain for Humanity",
+          "contact": "@b4_humanity"
+        },
+        {
+          "name": "Tom Grogan",
+          "description": "Engineering Technology Lead, Mishcon de Reya",
+          "contact": "@TomGroganMdR"
         }
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev",
@@ -3866,7 +3892,8 @@
           "url": "https://postcovidhack.com/challenges/socio-economic-inclusion/prizes"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=2wXSCghy0oo",
+      "youtubeVideoId": "2wXSCghy0oo",
       "_permalink": "/webinars/202008-011/",
       "_isPast": true
     },
@@ -4214,7 +4241,7 @@
       "status": "confirmed",
       "url": "",
       "title": "DeFi for Bitcoin - Asia",
-      "description": "",
+      "description": "DeFi for Bitcoin - Asia",
       "category": "Panel",
       "locationCategory": "online",
       "location": "Online only",
@@ -4260,6 +4287,7 @@
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
+      "_permalink": "/webinars/202009-011/",
       "_isPast": false
     },
     {
