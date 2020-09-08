@@ -2906,8 +2906,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  ;</b><span><a href=\"https://www.eventbrite.sg/e/post-covid-hack-2020-offi
  cial-launch-tickets-117617704721\">www.eventbrite.sg/e/post-covid-hack-202
  0-official-launch-tickets-117617704721</a></span></div>\n</BODY>\n</HTML>
-ORGANIZER;CN="Eddy Travia\, CEO\, Coinsilium\, @startupeddy":mailto:develo
- pers@iovlabs.org
+ORGANIZER;CN="Gaurang Torverkar\, CEO\, Indorse\, @gaurangtorvekar":mailto
+ :developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -2918,7 +2918,7 @@ URL;VALUE=URI:https://www.eventbrite.sg/e/post-covid-hack-2020-official-la
  unch-tickets-117617704721
 STATUS:CONFIRMED
 X-LANGUAGE:
-LAST-MODIFIED:20200902T124500Z
+LAST-MODIFIED:20200908T034500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202009-002@developers.rsk.co/
