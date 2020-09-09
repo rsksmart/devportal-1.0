@@ -387,7 +387,7 @@ Engineering Technology Lead, Mishcon de Reya","@gaurangtorvekar
 @LouYU12789405
 @b4_humanity
 @TomGroganMdR",https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721,https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev,https://www.youtube.com/watch?v=2wXSCghy0oo
-2020-09-08T21:00+08:00,202009-002,1,2020-08-29T15:00:00+08:00,confirmed,,,,,,,Blockchain basics: Writing your first smart contract,"This workshop is ideal for anyone looking to learn the basics of Blockchain technology. In this workshop, we will cover the following:
+2020-09-08T21:00+08:00,202009-002,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017420/,Blockchain basics: Writing your first smart contract,"This workshop is ideal for anyone looking to learn the basics of Blockchain technology. In this workshop, we will cover the following:
 
 - Theory of blockchain and decentralised systems
 - Consensus mechanisms
@@ -395,8 +395,13 @@ Engineering Technology Lead, Mishcon de Reya","@gaurangtorvekar
 - What makes a good blockchain project?
 - Writing Smart Contracts
   - Using Remix
-  - Hands on solidity programming",Workshop,online,Online only,,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/blockchain-basics-writing-your-first-smart-contract-no-experience-needed-tickets-118590367983,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590367983,
-2020-09-15T21:00+08:00,202009-004,1,2020-08-29T15:00:00+08:00,confirmed,,,,,,,Blockchain for hackathons: How to build a DApp as quickly as possible,"This workshop is ideal for anyone looking to build dapps as quickly as possible. In this workshop, we will cover the following:
+  - Hands on solidity programming",Workshop,online,Online only,,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/blockchain-basics-writing-your-first-smart-contract-no-experience-needed-tickets-118590367983,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590367983,https://www.youtube.com/watch?v=2wXSCghy0oo
+2020-09-10T20:00+08:00,202009-003,1,2020-09-09T15:15:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,,Why blockchain matters -- the history of commerce from the dawn of history to now,"Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more.
+
+The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement - one we are still trying to solve.
+
+The talk assumes a wikipedia-level understanding of blockchain and DLT, but no specific advance preparation is required.",Talk,online,Online only,English,Areiel Wolanow,"Managing Director, Finserv Experts",@FinservExperts,https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598231503,
+2020-09-15T21:00+08:00,202009-004,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017525/,Blockchain for hackathons: How to build a dApp as quickly as possible,"This workshop is ideal for anyone looking to build dapps as quickly as possible. In this workshop, we will cover the following:
 
 - Review of smart contracts and solidity
 - Development and testing tools
@@ -409,9 +414,9 @@ Engineering Technology Lead, Mishcon de Reya","@gaurangtorvekar
 - Common problems and their solutions",Workshop,online,Online only,,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/blockchain-for-hackathons-how-to-build-a-dapp-as-quickly-as-possible-tickets-118590500379,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590500379,
 2020-09-16T20:00+08:00,202009-005,1,2020-09-02T20:45:00+08:00,confirmed,"post-COVID Hack 2020: https://postcovidhack.com/
 Socio-economic inclusion track challenges: https://postcovidhack.com/challenges/socio-economic-inclusion
-Socio-economic inclusion track prizes: https://postcovidhack.com/challenges/socio-economic-inclusion/prizes",,/webinars/img/pch2020-partner-banner.png,,,,How to foster social inclusion with IOV’s technologies - POST COVID HACK 2020,"Social inclusion is at the heart of IOV’s purpose as an organization. It is of foremost importance in the post-COVID era, to help marginalized communities by providing better access to fair markets and financial services thanks to reputational profiles based on social and economic contributions made by individuals.
+Socio-economic inclusion track prizes: https://postcovidhack.com/challenges/socio-economic-inclusion/prizes",,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017670/,How to foster social inclusion with IOV’s technologies - POST COVID HACK 2020,"Social inclusion is at the heart of IOV’s purpose as an organization. It is of foremost importance in the post-COVID era, to help marginalized communities by providing better access to fair markets and financial services thanks to reputational profiles based on social and economic contributions made by individuals.
 
-IOV is sponsoring the socio-economic inclusion track of #PCH2020, where global teams are invited to create innovative solutions to tackle issues brought upon us by the pandemic, utilizing blockchain technologies. We look forward to the use cases developed as a result of the hackathon, which we expect will have a positive impact in the post-pandemic society as a whole
+IOV is sponsoring the socio-economic inclusion track of #PCH2020, where global teams are invited to create innovative solutions to tackle issues brought upon us by the pandemic, utilizing blockchain technologies. We look forward to the use cases developed as a result of the hackathon, which we expect will have a positive impact in the post-pandemic society as a whole.
 
 In this event, we will cover the following:
 
@@ -420,13 +425,13 @@ In this event, we will cover the following:
 - How blockchain and other decentralised technologies can help
 - The need for innovation in the post-COVID era",Talk,online,Online only,,"
 Diego Gutierrez Zaldivar",CEO,@dieguito,https://www.eventbrite.sg/e/how-to-foster-social-inclusion-with-iovs-technologies-post-covid-hack-tickets-118590799273,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590799273,
-2020-09-22T21:00+08:00,202009-006,1,2020-08-29T15:00:00+08:00,confirmed,,,,,,,Blockchains and smart contract security: Essential safeguards for your DApp,"This workshop is ideal for developers looking to learn how to develop secure smart contracts. In this workshop, we will cover the following:
+2020-09-22T21:00+08:00,202009-006,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017710/,Blockchains and smart contract security: Essential safeguards for your dApp,"This workshop is ideal for developers looking to learn how to develop secure smart contracts. In this workshop, we will cover the following:
 
 - Smart contract review
 - Security essentials
 - Hands on - hacking contracts",Workshop,online,Online only,,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/blockchains-and-smart-contract-security-essential-safeguards-for-your-dapp-tickets-118591120233,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591120233,
 2020-09-24T20:00+08:00,202009-007,1,2020-08-29T15:00:00+08:00,confirmed,"Remix and MetaMask: https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/
-Front end: https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/",,,,,,Create your RSK dApp: from smart contracts to frontend,"This workshop is step-by-step hands on to learn how to create and deploy a simple smart contract on RSK’s Testnet. Also you will learn how to create your first frontend to interact with it
+Front end: https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/",,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273018257/,Create your RSK dApp: from smart contracts to frontend,"This workshop is step-by-step hands on to learn how to create and deploy a simple smart contract on RSK’s Testnet. Also you will learn how to create your first frontend to interact with it
 
 What the participants will learn:
 
@@ -438,19 +443,19 @@ What the participants will learn:
 
 Do participants need to install anything on their computer prior to the workshop?  
 No!",Workshop,online,Online only,English,Solange Gueiros,Developer Advocate,@solangegueiros,https://www.eventbrite.sg/e/create-your-rsk-dapp-from-smart-contracts-to-frontend-tickets-118592396049,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118592396049,
-2020-09-29T21:00+08:00,202009-008,1,2020-08-29T15:00:00+08:00,confirmed,,,,,,,Zero-knowledge proofs: A practical guide to developing ZKPs for a DApp,"This workshop is a practical guide to developing ZKP’s for an application.  In this workshop, we will cover the following:
+2020-09-29T21:00+08:00,202009-008,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273018660/,Zero-knowledge proofs: A practical guide to developing ZKPs for a dApp,"This workshop is a practical guide to developing ZKP’s for an application.  In this workshop, we will cover the following:
 
 - Intuitive explanation of zero knowledge proofs
 - Types of zero knowledge proofs
 - Current use cases and directions
 - Creating zero knowledge proofs on Ethereum",Workshop,online,Online only,,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practical-guide-to-developing-zkps-for-a-dapp-tickets-118591310803,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591310803,
 2020-10-01T20:00+08:00,202009-009,1,2020-08-29T15:00:00+08:00,confirmed,"Metamask: https://developers.rsk.co/wallet/use/metamask/
-Nifty Wallet: https://developers.rsk.co/wallet/use/nifty/",,,,,,Crossing Tokens from Ethereum to RSK and back,"In this workshop, we will use the Token Bridge to cross ERC20 tokens from Ethereum ro RSK and then trade them on rskswap.com 
+Nifty Wallet: https://developers.rsk.co/wallet/use/nifty/",,/webinars/img/pch2020-partner-banner.png,,,,Token Bridge and Uniswap: Crossing Tokens from Ethereum to RSK and back,"In this workshop, we will use the Token Bridge to cross ERC20 tokens from Ethereum ro RSK and then trade them on rskswap.com 
 
-",Workshop,online,Online only,,Pedro Prete,Interoperability PO,@PedroMPrete,https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar-all-in-one-tickets-118598722973,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598722973,
-2020-09-09T19:00:00-03:00,202009-010,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,,RSK e DeFi - Finanças descentralizadas,"Entenda o que é DeFi - Finanças descentralizadas e conheça as soluções desenvolvidas na RSK.
+",Workshop,online,Online only,English,Pedro Prete,Interoperability PO,@PedroMPrete,https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar-all-in-one-tickets-118598722973,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598722973,
+2020-09-09T19:00:00-03:00,202009-010,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/272991529/,RSK e DeFi - Finanças descentralizadas,"Entenda o que é DeFi - Finanças descentralizadas e conheça as soluções desenvolvidas na RSK.
 Conheça mais sobre DeFi para Bitcoin ➡️ https://developers.rsk.co/defi/pt-pt/index.html",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas-descentralizadas,https://app.livestorm.co/p/9674f59b-730f-4de4-9c60-cefce84fde06/form,
-2020-09-09T10:00:00-03:00,202009-011,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,,DeFi for Bitcoin - Asia,DeFi for Bitcoin - Asia,Panel,online,Online only,English,"Gabriel Kurman
+2020-09-09T10:00:00-03:00,202009-011,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/Blockchain-Singapore-Meetup/events/272982109/,DeFi for Bitcoin - Asia,DeFi for Bitcoin - Asia,Panel,online,Online only,English,"Gabriel Kurman
 Santiago de Lavallaz
 Eddy Travia
 Manuel Ferrari
