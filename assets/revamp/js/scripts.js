@@ -47,6 +47,10 @@ backToBigNavBar = function() {
   });
 }
 
+// no-scroll on body when mobile nav opened
+$('.navbar-toggler').click(function() {
+          $('body').toggleClass("no-scroll");
+        });
 
 
 /*

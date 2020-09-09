@@ -51,7 +51,11 @@ font-family: 'Roboto', sans-serif;*/
 }
 
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
 
 
@@ -304,7 +308,6 @@ li {
     height: 83px;
     transition: all 0.5s ease;
     position: relative;
-    z-index: 12;
     background-image: var(--logo);
     background-size: contain;
     background-repeat: no-repeat;
@@ -389,6 +392,10 @@ input[type="search"]{color: var(--secondary-color);}
     overflow-y: hidden;
     font-size: 12px;
 }
+@media (max-width: 991px) {
+.inner-nav-left {
+    height: unset;}
+    }
 
 
 .inner-nav-left ul>li a,
@@ -401,7 +408,7 @@ input[type="search"]{color: var(--secondary-color);}
 }
 
 .toggle-nav-column-visibility, .return-link a {
-    padding-left: 18px;
+    padding-left: 0px;
 }
 
 .toggle-nav-column-visibility .text:hover, .return-link a:hover {
@@ -1070,11 +1077,12 @@ ol li::before {
         position: fixed;
         top: 0px;
         height: 100vh;
+        overflow-y: scroll;
         left: 100%;
         padding-left: 15px;
         padding-right: 15px;
         padding-bottom: 15px;
-        width: 50%;
+        width: 100%;
         transition: all 0.5s ease;
     }
 
@@ -1086,7 +1094,7 @@ ol li::before {
     }
 
     .navbar-collapse.show {
-        left: 50%;
+        left: 0%;
         top: 0;
     }
 }
@@ -1099,6 +1107,36 @@ ol li::before {
     .navbar-collapse.show {
         left: 0;
     }
+}
+
+
+@media (max-width: 1200px){
+.navbar-collapse .form-inline {
+    padding-left: 1rem;
+    margin-bottom:30px;
+}
+.doc-title{color: var(--tertiary-color)}
+}
+
+
+#back-to-big-navbar{list-style: none;    padding-left: 0px;    margin-bottom: 0px;
+    margin-top: 15px;}
+#back-to-big-navbar li {
+    margin-bottom: 5px;
+}
+
+#back-to-big-navbar a{font-family: 'Quicksand', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#back-to-big-navbar a:hover{color: var(--tertiary-color)}
+
+@media (min-width: 1200px){
+#mCSB_1{width:100%;}
+#mCSB_1_container{display:flex;}
 }
 
 /* RESPONSIVE TABLES */
