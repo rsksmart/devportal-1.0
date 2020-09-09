@@ -54,11 +54,11 @@ However, there are daily quotas:
 
 ## Can any token be bridged over?
 
-During the trial period, only whitelisted tokens can cross the bridge. The federation is responsible for adding and removing tokens from the whitelist.  When the trial period is over, and we move to a fully decentralized bridge, the whitelist will be removed.
+Only whitelisted tokens can cross the bridge, this curated list is used to avoid malicious contracts and ddos attacks.
 
 ## What are the fees for converting original tokens to Side Tokens and vice-versa? Who will be paying these fees?
 
-The federation is paying and sponsoring the fees for the multiple transactions during the trial period. This will change after the trial period is complete, and the Token Bridge changes from a federated schema to a fully decentralized one. Users will need to pay a small amount of gas fee when using Metamask to submit transactions.
+There is a 0.2% fee charge when crossing the tokens, this fee goes to the validators as payment for crossing the transactions.
 
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
 

@@ -7,15 +7,15 @@ title: Addresses and Links
 
 ### On RSK
 
-  - Bridge: [`0x9d11937e2179dc5270aa86a3f8143232d6da0e69`](https://explorer.rsk.co/address/0x9d11937e2179dc5270aa86a3f8143232d6da0e69)
-  - Federation: [`0xac42761c37d4467ff69082249b9e67d6b35d50cb`](https://explorer.rsk.co/address/0xac42761c37d4467ff69082249b9e67d6b35d50cb)
-  - AllowTokens: [`0xe4aa0f414725c9322a1a9d80d469c5e234786653`](https://explorer.rsk.co/address/0xe4aa0f414725c9322a1a9d80d469c5e234786653)
-  - MultiSigWallet: [`0x040007b1804ad78a97f541bebed377dcb60e4138`](https://explorer.rsk.co/address/0x040007b1804ad78a97f541bebed377dcb60e4138)
+  - Bridge: [`0x9d11937e2179dc5270aa86a3f8143232d6da0e69`](https://blockscout.com/rsk/mainnet/address/0x9d11937E2179dC5270Aa86A3f8143232D6DA0E69)
+  - Federation: [`0xE37b6516F4FE2A27569a2751C1aD50F6340DF369`](https://blockscout.com/rsk/mainnet/address/0xE37b6516F4FE2A27569a2751C1aD50F6340DF369/transactions)
+  - AllowTokens: [`0xe4aa0f414725c9322a1a9d80d469c5e234786653`](https://blockscout.com/rsk/mainnet/address/0xe4aa0f414725c9322a1a9d80d469c5E234786653)
+  - MultiSigWallet: [`0x040007b1804ad78a97f541bebed377dcb60e4138`](https://blockscout.com/rsk/mainnet/address/0x040007b1804aD78A97f541bEBED377dcb60E4138)
 
 ### On Ethereum
 
   - Bridge: [`0x12ed69359919fc775bc2674860e8fe2d2b6a7b5d`](https://etherscan.io/address/0x12ed69359919fc775bc2674860e8fe2d2b6a7b5d)
-  - Federation: [`0x8c1901c031cdf42a846c0c422a3b5a2c943f4944`](https://etherscan.io/address/0x8c1901c031cdf42a846c0c422a3b5a2c943f4944)
+  - Federation: [`0x479F86eCbE766073D2712EF418acEb56d5362a2B`](https://etherscan.io/address/0x479F86eCbE766073D2712EF418acEb56d5362a2B)
   - AllowTokens: [`0xe4aa0f414725c9322a1a9d80d469c5e234786653`](https://etherscan.io/address/0xe4aa0f414725c9322a1a9d80d469c5e234786653)
   - MultiSigWallet: [`0x040007b1804ad78a97f541bebed377dcb60e4138`](https://etherscan.io/address/0x040007b1804ad78a97f541bebed377dcb60e4138)
 
@@ -41,7 +41,6 @@ title: Addresses and Links
 [ABIs used](https://github.com/rsksmart/tokenbridge/tree/master/abis)
 
 ## RSK Testnet Explorer, Faucet and Stats
-
 - [explorer.testnet.rsk.co](https://explorer.testnet.rsk.co/)
 - [stats.testnet.rsk.co](https://stats.testnet.rsk.co/)
 - [faucet.rsk.co](https://faucet.rsk.co/)

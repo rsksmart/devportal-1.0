@@ -17,8 +17,8 @@ See the [FAQ](/tools/tokenbridge/faq/) to learn more about how it works!
 <img src="/assets/img/tools/tokenbridge/token-bridge-diagram.png"/>
 
 
-The bridge contracts are upgradeable, this enables a smoother move to a more decentralized bridge in the future. Here is the first
-[POC of the trustless decentralized bridge](https://github.com/rsksmart/tokenbridge/releases/tag/decentralized-poc-v0.1)
+The bridge contracts are upgradeable, this enables a smoother move to a more decentralized bridge in the future. This is 
+[token bridge repository](https://github.com/rsksmart/tokenbridge)
 
 ## Usage
 
