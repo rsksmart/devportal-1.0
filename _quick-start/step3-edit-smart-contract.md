@@ -4,6 +4,7 @@ title: Quick Start - Step 3
 tags: quick-start, solidity
 description: 'quick start - smart contracts, solidity'
 collection_order: 30
+toc: true
 ---
 
 # Step 3 : Edit Smart Contract

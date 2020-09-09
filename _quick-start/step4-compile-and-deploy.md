@@ -4,6 +4,7 @@ title: Quick Start - Step 4
 tags: quick-start, compile, deploy, regtest, truffle
 description: 'quick start - compile smart contracts, deploy smart contracts to regtest'
 collection_order: 40
+toc: true
 ---
 
 # Step 4 : Compile and Deploy Contracts

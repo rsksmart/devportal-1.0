@@ -4,6 +4,7 @@ title: Quick Start - Step 2
 tags: quick-start, truffle, ganache
 description: 'quick start - tutorial project, install truffle, install ganache'
 collection_order: 20
+toc: true
 ---
 
 # Step 2 : Install Truffle and Ganache

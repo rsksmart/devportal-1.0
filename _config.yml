@@ -31,6 +31,14 @@ redirect_time: 0
 
 highlighter: rouge
 
+toc:
+  min_level: 2
+  max_level: 2
+  list_class: on_this_page
+  sublist_class: ''
+  item_class: ''
+  item_prefix: 'on_this_page-'
+
 github: [metadata]
 
 exclude:
@@ -44,4 +52,5 @@ plugins:
  - jekyll-last-modified-at
  - jekyll-feed
  - jekyll-sitemap
+ - jekyll-toc
  - jemoji

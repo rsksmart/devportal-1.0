@@ -6,6 +6,7 @@ description: 'quick start - install RSK local node - prep environment, verify an
 collection_order: 10
 render_custom_terminals: true
 render_features: 'custom-terminals'
+toc: true
 ---
 
 # Step 1 : Install RSK local node

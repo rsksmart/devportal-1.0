@@ -21,21 +21,16 @@
             <!-- page info -->
             <div class="row">
                 <div class="col-12">
-                    <div class="row mb-5">
                     <!-- On this page -->
-                    {% if page.page_index %}
-                        <div class="col-12 content-box">
-                            <h2 class="subtitle">On this page</h2>
-                            <ul class="on_this_page">
-                                {% for item in page.page_index %}
-                                <li>
-                                    <a href="{{ item.href }}">{{ item.name }}</a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
+                    {% if page.toc %}
+                    <div class="row mb-5">
+                    <div class="col-12 content-box">
+                        <h2 class="subtitle">On this page</h2>
+                        {% toc %}
+                    </div>
+                    </div>
                     {% endif %}
-                    </div><!-- On this page ends -->
+                    <!-- On this page ends -->
                     <div class="row">
                         <!--description-->
                         <div class="col-12 content-box topic-content">
