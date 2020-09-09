@@ -150,11 +150,11 @@ function myFunction(stickywidth) {
             if ($(this).scrollTop() >= 100) {
                 $('#beta_content_container').addClass('sticky');
                 $('.header-inner').addClass('sticky');
-                $('.page-title').addClass('sticky');
+                
             } else {
                 $('#beta_content_container').removeClass('sticky');
                 $('.header-inner').removeClass('sticky');
-                $('.page-title').removeClass('sticky');
+               
             }
         });
     }

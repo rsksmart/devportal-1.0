@@ -1,22 +1,24 @@
 <!-- Breadcrumbs & metadata page title -->
-            <div class="row primary_info header-inner">
-                <div class="col-12">
-                    <div class="row custom-mb-5">
-                        <div id="siteBreadcrumb" class="col-md-8 pl-0">
-                            <p>{% include breadcrumbs.html %}</p>
-                        </div>
-                        <div id="page-metadata" class="col-md-4 text-md-right p-0">
-                            <span class="pr-5">{% assign words = content | number_of_words %}{% assign minutes = words | divided_by:180.0 %} {{ minutes | ceil }}' to read | <a href="https://github.com/{{ site.repository }}/edit/master/{{ page.path }}" target="_blank">Edit</a> | </span>
-                            <span class="theme-switch-wrapper">
-                                    <label class="theme-switch" for="checkbox">
-                                        <input type="checkbox" id="checkbox" />
-                                        <div class="slider round"></div>
-                                    </label>
-                                </span>
-                        </div>
-                        <div class="col-12 page-title content-box">
-                            <h1>{{ page.title }}</h1>
-                        </div>
-                    </div>
-                </div>
+<div class="row primary_info header-inner">
+    <div class="col-12">
+        <div class="row">
+            <div id="siteBreadcrumb" class="col-md-8 pl-0">
+                <p>{% include breadcrumbs.html %}</p>
             </div>
+            <div id="page-metadata" class="col-md-4 text-md-right p-0">
+                <span class="pr-5">{% assign words = content | number_of_words %}{% assign minutes = words | divided_by:180.0 %} {{ minutes | ceil }}' to read | <a href="https://github.com/{{ site.repository }}/edit/master/{{ page.path }}" target="_blank">Edit</a> | </span>
+                <span class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row custom-mb-5">
+    <div class="col-12 page-title content-box">
+        <h1>{{ page.title }}</h1>
+    </div>
+</div>
