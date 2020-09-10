@@ -3432,7 +3432,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities",
-      "tags": " idioma-english audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-english audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3469,7 +3469,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3931,8 +3931,8 @@
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=2wXSCghy0oo",
-      "youtubeVideoId": "2wXSCghy0oo",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=89EFX6Bhqs0",
+      "youtubeVideoId": "89EFX6Bhqs0",
       "_permalink": "/webinars/202009-002/",
       "_isPast": true
     },
@@ -4262,14 +4262,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/9674f59b-730f-4de4-9c60-cefce84fde06/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas-descentralizadas",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-010/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4320,14 +4320,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/170cec76-60fe-4e17-9123-6f64d28eba7a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-011/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
