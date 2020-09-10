@@ -33,16 +33,16 @@ Once you have selected it, enter the amount you want to transfer, then click `Co
 
 <img src="/assets/img/tools/tokenbridge/dapp-image3.png" />
 
-As soon as the process starts, you will see a loader and a disclaimer explaining that you will have to wait aroud 30 seconds until the  transaction gets mined.
+As soon as the process starts, you will see a loader and a disclaimer explaining that you will have to wait around 30 seconds until the transaction gets mined.
 
 <img src="/assets/img/tools/tokenbridge/dapp-image4.png" />
 
-Then it will show 2 pop-up  message to confirm the transaction, **submit the transaction**. The following image gives an example of the confirmation popup. The first one is to approve the bridge contract to use the token, the second one is to tell the bridge contract to cross the tokens. This steps require around 30 seconds each for the transaction to be mined.
+A double pop-up message would be displayed, you're meant to confirm the transaction, then click **submit the transaction**. The following image gives an example of the confirmation popup. The first one is to approve the bridge contract to use the token, the second one is to notify the bridge contract to cross the tokens. These steps require around 30 seconds each for the transaction to be mined.
 
 <img src="/assets/img/tools/tokenbridge/dapp-image5.png" width="300"/>
 
 Once all the steps are done, you have to **wait around 5 minutes in testnet or 1 hour in mainnet** for the tokens to cross. You can check the token contract on the other network by clicking on the token symbol (in this case etRIF).
-You can also check it on your wallet. To do this, change the network on you wallet (in this case we would change to Kovan) and add a custom token using the address of the crossed token, you should see the amount crossed once you wait corresponding the crossing time.
+You can also check it on your wallet. To do this, change the network on your wallet (in this case we would change to Kovan) and add a custom token using the address of the crossed token, you should see the amount crossed once you wait for the corresponding crossing time.
 
 <img src="/assets/img/tools/tokenbridge/dapp-image6.png" />
 

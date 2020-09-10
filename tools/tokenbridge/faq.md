@@ -54,7 +54,7 @@ However, there are daily quotas:
 
 ## Can any token be bridged over?
 
-Only whitelisted tokens can cross the bridge, this curated list is used to avoid malicious contracts and ddos attacks.
+Only whitelisted tokens can cross the bridge, this curated list is used to avoid malicious contracts and DDoS attacks.
 
 ## What are the fees for converting original tokens to Side Tokens and vice-versa? Who will be paying these fees?
 
