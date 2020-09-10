@@ -6,9 +6,14 @@ $(".inner-nav-left ul").addClass(function() {
     return "level level-" + (depth + 1);
 });
 
+$(".inner-nav-left").each(function(i, o) {
+  console.log(o, 'custom-navbar-' + i);
+    $(this).attr('id', 'custom-navbar-' + i);
+});
+
 // add active class to a in inner nav based on url
 $(function () {
-    const homeButton = $('#back-to-big-navbar');
+    const homeButton = $('.back-to-big-navbar');
     homeButton.hide();
 
     var pageUrl = location.href;
@@ -22,11 +27,17 @@ $(function () {
     active_ul = $('.inner-nav-left .active').parentsUntil('.level-1')
     replace = $(active_ul[active_ul.length-1]).find('.level-3').length > 0;
     if (replace) {
-        const homeButton = $('#back-to-big-navbar');
+        const homeButton = $('.back-to-big-navbar');
         homeButton.show();
-        const nav = $('#custom-navbar');
-        nav.children().attr('id', 'custom-navbar-hidden').hide();
-        nav.append($('<ul>').attr('id', 'custom-navbar-small').append($(active_ul[active_ul.length-1]).clone()));
+
+        const nav = $('#custom-navbar-0');
+        nav.children().addClass('custom-navbar-hidden').hide();
+        nav.append($('<ul>').addClass('custom-navbar-small').append($(active_ul[active_ul.length-1]).clone()));
+
+        const nav1 = $('#custom-navbar-1');
+        nav1.children().addClass('custom-navbar-hidden').hide();
+        nav1.append($('<ul>').addClass('custom-navbar-small').append($(active_ul[active_ul.length-1]).clone()));
+
         var curr = $('.caret-icon');
         curr.click(function() {
           $(this).parent().toggleClass("deployed");
@@ -35,11 +46,11 @@ $(function () {
 
 });
 backToBigNavBar = function() {
-  const nav = $('#custom-navbar-hidden');
+  const nav = $('.custom-navbar-hidden');
   nav.show();
-  const navSmall = $('#custom-navbar-small');
+  const navSmall = $('.custom-navbar-small');
   if (navSmall) navSmall.hide();
-  const homeButton = $('#back-to-big-navbar');
+  const homeButton = $('.back-to-big-navbar');
   homeButton.hide();
   var curr = $('.caret-icon');
   curr.click(function() {
