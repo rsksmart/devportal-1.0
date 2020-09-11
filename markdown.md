@@ -38,12 +38,9 @@ You will need to complete this tutorial before proceeding:
 ## Run a RSK local node
 To run the node:
 
-<div class="language-shell highlighter-rouge">
-    <div class="highlight">
-        <pre class="highlight"><code>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; co.rsk.Start <span class="nt">--regtest</span>
-</code></pre>
-    </div>
-</div>
+```shell
+java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
+```
 
 (Replace with your path to the JAR file).
 
@@ -51,12 +48,9 @@ Check the tutorial: [Using Geth attach to a RSK local node](https:../geth-attach
 
 ## Connect with RSK local node
 
-<div class="language-shell highlighter-rouge">
-    <div class="highlight">
-        <pre class="highlight"><code>geth attach http://127.0.0.1:4444
-</code></pre>
-    </div>
-</div>
+```shell
+geth attach http://127.0.0.1:4444
+```
 
 Check the tutorial: [Using Geth attach to a RSK local node](https:../geth-attach-local-node/) for more details on how to do this.
 
@@ -64,7 +58,7 @@ Check the tutorial: [Using Geth attach to a RSK local node](https:../geth-attach
 
 Go to <a href="http://remix.ethereum.org/" rel="external noopener noreferrer" target="_blank">REMIX</a>
 
-In the <code class="highlighter-rouge">home page</code>, choose environment <code class="highlighter-rouge">Solidity</code>
+In the `home page`, choose environment `Solidity`
 
 ![Solidity-1](/assets/revamp/img/img1.PNG)
 ![Solidity-2](/assets/revamp/img/img2.PNG)
@@ -86,27 +80,23 @@ Click on the + button to create a new file
 
 Copy the smart contract from the following gist, or inline below:
 
-**Register.sol gist**
+**`Register.sol gist`**
 
-<div class="language-shell highlighter-rouge">
-    <div class="highlight">
-    <pre class="highlight"><code>
-    pragma solidity 0.5.4;
+```shell
+pragma solidity 0.5.4;
 
-    contract Register {
-        string private info;
+contract Register {
+    string private info;
 
-        function setInfo(string memory _info) public {
-            info = _info;
-        }
-
-        function getInfo() public view returns (string memory) {
-            return info;
-        }
+    function setInfo(string memory _info) public {
+        info = _info;
     }
-    </code></pre>
-    </div>
-</div>
+
+    function getInfo() public view returns (string memory) {
+        return info;
+    }
+}
+```
 
 ## Tables
 ### default, use markdowm
@@ -274,29 +264,26 @@ Copy the smart contract from the following gist, or inline below:
 ---
 
 Copy the smart contract from the following gist, or inline below:
-<a href="https://gist.github.com/solangegueiros/6f30100662f8583ea39a49a5fa198b89" rel="noopener noreferrer" target="_blank"><code class="highlighter-rouge">Register.sol</code> gist</a>
+[`Register.sol` gist](https://gist.github.com/solangegueiros/6f30100662f8583ea39a49a5fa198b89)
 
-<div class="language-shell highlighter-rouge">
-    <div class="highlight">
-    <pre class="highlight"><code>pragma solidity 0.5.4;
+```shell
+pragma solidity 0.5.4;
 
-    contract Register {
-        string private info;
+contract Register {
+    string private info;
 
-        function setInfo(string memory _info) public {
-            info = _info;
-        }
-
-        function getInfo() public view returns (string memory) {
-            return info;
-        }
+    function setInfo(string memory _info) public {
+        info = _info;
     }
-    </code></pre>
-    </div>
-</div>
+
+    function getInfo() public view returns (string memory) {
+        return info;
+    }
+}
+```
 
 
-> For Mac users type <code class="highlighter-rouge">pwd</code> to locate the current path you’re on.
+> For Mac users type `pwd` to locate the current path you're on.
 
 <!-- tips -->
 <div class="tips">
