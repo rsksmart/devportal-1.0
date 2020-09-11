@@ -4,7 +4,7 @@ layout: revamp/home
 
 <div class="row">
     <div class="col-12 homepage content-box topic-content">
-        <h3>GETTING STARTED</h3>
+        <h2>GETTING STARTED</h2>
         <div class="row">
             <div class="col-lg-6 col-sm-12 pr-3rem-15">
                 <a href="../quick-start/">QUICK START for beginners</a>
@@ -21,7 +21,7 @@ layout: revamp/home
 
 <div class="row d-flex justify-content-between">
     <div class="col-lg-6 col-sm-12 column-gap-right homepage content-box topic-content">
-        <h3>KNOWLEDGE BASE</h3>
+        <h2>KNOWLEDGE BASE</h2>
         <a href="#">RSK Educate</a>
         <a href="#" target="_blank">Glossary</a>
         <a href="/webinars">Webinars</a>
@@ -30,7 +30,7 @@ layout: revamp/home
     </div>
 
     <div class="col-lg-6 col-sm-12 column-gap-left homepage content-box topic-content">
-        <h3>RSK</h3>
+        <h2>RSK</h2>
         <a href="/rsk/rbtc">R-BTC Token</a>
         <a href="/rsk" target="_blank">RSK Blockchain</a>
         <a href="/rsk/node">RSKj</a>
@@ -41,7 +41,7 @@ layout: revamp/home
 
 <div class="row">
     <div class="col-lg-12 homepage content-box topic-content">
-        <h3>RIF SERVICES</h3>
+        <h2>RIF SERVICES</h2>
         <div class="row d-flex justify-content-between">
 
             <div class="col-lg-6 col-sm-12 pr-3rem-15">
@@ -67,7 +67,7 @@ layout: revamp/home
 
 <div class="row">
     <div class="col-12 homepage content-box topic-content">
-        <h3>RIF PAYMENTS</h3>
+        <h2>RIF PAYMENTS</h2>
         <div class="row">
             <div class="col-lg-6 col-sm-12">
                 <a href="/rif/lumino">Discover the first off-chain state channel network launched on RSK</a>
@@ -79,7 +79,7 @@ layout: revamp/home
 
 <div class="row">
     <div class="col-12 homepage content-box topic-content">
-        <h3>CONTRIBUTE</h3>
+        <h2>CONTRIBUTE</h2>
         <div class="row">
             <div class="col-lg-6 col-sm-12 pr-3rem-15">
                 <a href="/contribute">Contribute</a>

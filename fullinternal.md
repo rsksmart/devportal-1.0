@@ -7,7 +7,7 @@ toc: true
 <p>RSK’s virtual machine implementation is compatible with the Ethereum virtual machine (EVM), which enables us to make use of many of Ethereum developer tools.</p>
 <p>In this tutorial I will show you step-by-step how to compile a smart contract using Remix and deploy it on a local node using
     Geth.</p>
-<h2 id="overview">OVERVIEW</h2>
+<h2 id="overview">Overwiew</h2>
 <p>We will do these steps:</p>
 <ol class="two_columns">
     <li>Run a RSK local node;</li>
@@ -20,7 +20,7 @@ toc: true
 </ol>
 <div class="big_separator">
 </div>
-<h2 id="requirements">REQUIREMENTS</h2>
+<h2 id="requirements">Requirements</h2>
 <ul>
     <li>
         Java JDK
@@ -39,7 +39,7 @@ toc: true
 <p><a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a></p>
 <p><a href="#" target="_blank">This is an external link</a> with some text following.</p>
 <div class="big_separator"></div>
-<h2 id="run-a-rsk-local-node">RUN A RSK LOCAL NODE</h2>
+<h2 id="run-a-rsk-local-node">Run a RSK local node</h2>
 <p>To run the node:</p>
 <div class="language-shell highlighter-rouge">
     <div class="highlight">
@@ -52,7 +52,7 @@ toc: true
 <p>for more details on how to do this.</p>
 <div class="big_separator">
 </div>
-<h2 id="connect-with-rsk-local-node">CONNECT WITH A RSK LOCAL NODE USING GETH ATTACH</h2>
+<h2 id="connect-with-rsk-local-node">Connect with RSK local node</h2>
 <div class="language-shell highlighter-rouge">
     <div class="highlight">
         <pre class="highlight"><code>geth attach http://127.0.0.1:4444
@@ -62,14 +62,14 @@ toc: true
 <p>Check the tutorial: <a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a> for more details on how to do this.</p>
 <div class="big_separator">
 </div>
-<h2 id="remix">REMIX</h2>
+<h2 id="remix">Remix</h2>
 <p>Go to <a href="http://remix.ethereum.org/" rel="external noopener noreferrer" target="_blank">REMIX</a> </p>
 <p>In the <code class="highlighter-rouge">home page</code>, choose environment <code class="highlighter-rouge">Solidity</code></p>
 <img class="img-fluid" src="/assets/revamp/img/img1.PNG" alt="">
 <img class="img-fluid" src="/assets/revamp/img/img2.PNG" alt="">
 <div class="big_separator">
 </div>
-<h2 id="create-a-smart-contract">CREATE A SMART CONTRACT</h2>
+<h2 id="create-a-smart-contract">Create a smart contract</h2>
 <p>Create a new file</p>
 <p>Click on the second button on the left side - file explorer</p>
 <img class="img-fluid" src="/assets/revamp/img/img2.PNG" alt="">

@@ -708,6 +708,15 @@ img+.small_separator,
     transform: rotate(-90deg);
 }
 
+/*PREV NEXT LINKS*/
+.prev-collection, .next-collection{background-color: var(--tertiary-color); color: var(--secondary-color);font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 8px 30px;
+transition: all 0.5s ease;}
+
+.prev-collection:hover{padding: 8px 45px 8px 15px;}
+.next-collection:hover{padding: 8px 15px 8px 45px;}
+
 @media (max-width: 991px) {
     .sharethis-inline-share-buttons {
         transform: none;
@@ -1281,6 +1290,8 @@ and also iPads specifically.
 }
 
 /* responsive tables ends */
+
+
 /* SLIDERS */
 .owl-carousel .owl-item img {
     border: none;
@@ -1806,11 +1817,13 @@ and also iPads specifically.
     display: inline-block;
     margin-bottom: 20px;
     text-align: center;
-    padding: 5px 8px;
+    padding: 5px 0.2em;
     font-weight: bold;
     width: calc(100% - 30px);
     margin-left: 30px;
 }
+
+.topic-content li a {margin-top:5px;}
 
 .homepage.topic-content a:before {
     content: '';
