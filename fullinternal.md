@@ -18,8 +18,7 @@ toc: true
     <li>Deploy the smart contract in the Geth;</li>
     <li>Interact with the smart contract</li>
 </ol>
-<div class="big_separator">
-</div>
+
 <h2 id="requirements">Requirements</h2>
 <ul>
     <li>
@@ -38,7 +37,7 @@ toc: true
 <p>You will need to complete this tutorial before proceeding:</p>
 <p><a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a></p>
 <p><a href="#" target="_blank">This is an external link</a> with some text following.</p>
-<div class="big_separator"></div>
+
 <h2 id="run-a-rsk-local-node">Run a RSK local node</h2>
 <p>To run the node:</p>
 <div class="language-shell highlighter-rouge">
@@ -50,8 +49,7 @@ toc: true
 <p>(Replace with your path to the JAR file).</p>
 <p>Check the tutorial: <a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a></p>
 <p>for more details on how to do this.</p>
-<div class="big_separator">
-</div>
+
 <h2 id="connect-with-rsk-local-node">Connect with RSK local node</h2>
 <div class="language-shell highlighter-rouge">
     <div class="highlight">
@@ -60,22 +58,21 @@ toc: true
     </div>
 </div>
 <p>Check the tutorial: <a href="../geth-attach-local-node/">Using Geth attach to a RSK local node</a> for more details on how to do this.</p>
-<div class="big_separator">
-</div>
+
 <h2 id="remix">Remix</h2>
 <p>Go to <a href="http://remix.ethereum.org/" rel="external noopener noreferrer" target="_blank">REMIX</a> </p>
 <p>In the <code class="highlighter-rouge">home page</code>, choose environment <code class="highlighter-rouge">Solidity</code></p>
 <img class="img-fluid" src="/assets/revamp/img/img1.PNG" alt="">
 <img class="img-fluid" src="/assets/revamp/img/img2.PNG" alt="">
-<div class="big_separator">
-</div>
+
 <h2 id="create-a-smart-contract">Create a smart contract</h2>
 <p>Create a new file</p>
 <p>Click on the second button on the left side - file explorer</p>
 <img class="img-fluid" src="/assets/revamp/img/img2.PNG" alt="">
 <p>Click on the + button to create a new file</p>
-<div class="small_separator">
-</div>
+
+---
+
 <img class="img-fluid" src="/assets/revamp/img/img3.PNG" alt="">
 <p>Copy the smart contract from the following gist, or inline below:</p>
 <p><b>Register.sol gist</b></p>
@@ -98,8 +95,9 @@ toc: true
     </code></pre>
     </div>
 </div>
-<div class="small_separator">
-</div>
+
+---
+
 <!-- table elements -->
 <table class="table-filled-bg-row">
     <thead>
@@ -245,7 +243,9 @@ toc: true
 </div>
 
 <!-- sliders elements ends -->
-<div class="small_separator"></div>
+
+---
+
 <p>Copy the smart contract from the following gist, or inline below:</p>
 <p><a href="https://gist.github.com/solangegueiros/6f30100662f8583ea39a49a5fa198b89" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">Register.sol</code> gist</a></p>
 <div class="language-shell highlighter-rouge">
@@ -281,7 +281,7 @@ toc: true
 <!-- tips ends-->
 <!-- related topics -->
 <div class="related-topics">
-    <h4>Related topics</h4>
+    <div class="related-topics-title">Related topics</div>
     <a href="#">Programming for the IoT</a> <a href="#">Lorem ipsum dolor sit amet</a> <a href="#">Lorem ipsum</a>
 </div>
 <!-- related topics ends -->

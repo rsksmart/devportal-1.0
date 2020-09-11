@@ -13,21 +13,16 @@
 {% endfor %}
 <div class="row prev-next-links content-box mt-5">
     {% if posts.size > 1 %}
-    <div class="col-6 text-left pl-0">
-        {% if prevpost %}
-        <a href="{{prevpost.url}}" class="prev-collection">
-            <i class="fa fa-angle-double-left" aria-hidden="true"></i> {{prevpost.title}}
-        </a>
-        {% endif %}
-    </div>
-    <div class="col-6 text-right pr-0">
-        {% if nextpost %}
-        <a href="{{nextpost.url}}" class="next-collection">
-            {{nextpost.title}} <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-        </a>
-        {% endif %}
-    </div>
+    {% if prevpost %}
+    <a href="{{prevpost.url}}" class="prev-collection float-left">
+        <i class="fa fa-angle-double-left" aria-hidden="true"></i> {{prevpost.title}}
+    </a>
     {% endif %}
-</div>
+    {% if nextpost %}
+    <a href="{{nextpost.url}}" class="next-collection float-right">
+        {{nextpost.title}} <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+    </a>
+    {% endif %}
+    {% endif %}
 </div>
 {% endif %}

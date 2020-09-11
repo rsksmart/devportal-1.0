@@ -1,83 +1,61 @@
 // LEFT NAVIGATION
-
 // add level class to ul
 $(".inner-nav-left ul").addClass(function() {
     var depth = jQuery(this).parents("ul").length;
     return "level level-" + (depth + 1);
 });
-
 $(".inner-nav-left").each(function(i, o) {
-  console.log(o, 'custom-navbar-' + i);
+    console.log(o, 'custom-navbar-' + i);
     $(this).attr('id', 'custom-navbar-' + i);
 });
-
 // add active class to a in inner nav based on url
-$(function () {
+$(function() {
     const homeButton = $('.back-to-big-navbar');
     homeButton.hide();
-
     var pageUrl = location.href;
-    $('.inner-nav-left a').each(function () {
+    $('.inner-nav-left a').each(function() {
         $(this).toggleClass('active', this.href === pageUrl);
     });
-
     // Put it here just in case it's executed before the previous iteration finish.
     $('.inner-nav-left .active').parentsUntil('.level-1').addClass('deployed green');
-
     active_ul = $('.inner-nav-left .active').parentsUntil('.level-1')
-    replace = $(active_ul[active_ul.length-1]).find('.level-3').length > 0;
+    replace = $(active_ul[active_ul.length - 1]).find('.level-3').length > 0;
     if (replace) {
         const homeButton = $('.back-to-big-navbar');
         homeButton.show();
-
         const nav = $('#custom-navbar-0');
         nav.children().addClass('custom-navbar-hidden').hide();
-        nav.append($('<ul>').addClass('custom-navbar-small').append($(active_ul[active_ul.length-1]).clone()));
-
+        nav.append($('<ul>').addClass('custom-navbar-small').append($(active_ul[active_ul.length - 1]).clone()));
         const nav1 = $('#custom-navbar-1');
         nav1.children().addClass('custom-navbar-hidden').hide();
-        nav1.append($('<ul>').addClass('custom-navbar-small').append($(active_ul[active_ul.length-1]).clone()));
-
+        nav1.append($('<ul>').addClass('custom-navbar-small').append($(active_ul[active_ul.length - 1]).clone()));
         var curr = $('.caret-icon');
         curr.click(function() {
-          $(this).parent().toggleClass("deployed");
+            $(this).parent().toggleClass("deployed");
         });
     }
-
 });
 backToBigNavBar = function() {
-  const nav = $('.custom-navbar-hidden');
-  nav.show();
-  const navSmall = $('.custom-navbar-small');
-  if (navSmall) navSmall.hide();
-  const homeButton = $('.back-to-big-navbar');
-  homeButton.hide();
-  var curr = $('.caret-icon');
-  curr.click(function() {
-    $(this).parent().toggleClass("deployed");
-  });
+    const nav = $('.custom-navbar-hidden');
+    nav.show();
+    const navSmall = $('.custom-navbar-small');
+    if (navSmall) navSmall.hide();
+    const homeButton = $('.back-to-big-navbar');
+    homeButton.hide();
+    var curr = $('.caret-icon');
+    curr.click(function() {
+        $(this).parent().toggleClass("deployed");
+    });
 }
-
 // no-scroll on body when mobile nav opened
 $('.navbar-toggler').click(function() {
-          $('body').toggleClass("no-scroll");
-        });
-
-
-/*
-$(document).ready(function () {
- $('.active').parentsUntil('.level-1').addClass('deployed green');
+    $('body').toggleClass("no-scroll");
 });
-*/
-
-
-
-  $('.inner-nav-left a[target="_blank"]').addClass('external');
-  $('.inner-nav-left ul li:has(ul)').addClass('hassub');
-  $('.inner-nav-left .external').prepend('<span class="external-icon"><i class="fa fa-external-link" aria-hidden="true"></i></span>');
-  $('.inner-nav-left .hassub').prepend('<span class="caret-icon"><i class="fa fa-caret-right" aria-hidden="true"></i></span>');
-
-
+//
+$('.inner-nav-left a[target="_blank"]').addClass('external');
+$('.inner-nav-left ul li:has(ul)').addClass('hassub');
+$('.inner-nav-left .external').prepend('<span class="external-icon"><i class="fa fa-external-link" aria-hidden="true"></i></span>');
+$('.inner-nav-left .hassub').prepend('<span class="caret-icon"><i class="fa fa-caret-right" aria-hidden="true"></i></span>');
 // find clicked carret to deploy child ul
 var curr = $('.caret-icon');
 //$('.hassub ul').hide(); 
@@ -85,7 +63,6 @@ curr.click(function() {
     $(this).parent().toggleClass("deployed");
     //$(this).parent().find('ul').first().slideToggle();
 });
-
 // expand all nav
 $(".toggle-nav-column-visibility").click(function() {
     var target = $(this);
@@ -95,12 +72,11 @@ $(".toggle-nav-column-visibility").click(function() {
     var targetText = isDeployed ? 'Collapse All' : 'Expand All';
     // update the text we just clicked on
     target.find('.text').text(targetText);
-     // update every item in the collapsible menu
-     $('.hassub').each(function () {
+    // update every item in the collapsible menu
+    $('.hassub').each(function() {
         $(this).toggleClass('deployed', isDeployed);
     });
- });
-
+});
 //THEME SWITCH
 window.addEventListener('load', function() {
     //switch theme
@@ -125,7 +101,6 @@ window.addEventListener('load', function() {
     }
     toggleSwitch.addEventListener('change', switchTheme, false);
 });
-
 //SCROLL TO LINK IN THE SAME PAGE
 $("a[href^='#']").on("click", function(e) {
     e.preventDefault();
@@ -134,13 +109,11 @@ $("a[href^='#']").on("click", function(e) {
         scrollTop: $(this.hash).offset().top - offset - 23 + 'px'
     }, 300);
 });
-
 //SHARE ICON
 $('.share-redes').click(function() {
     $(".share-buttons-container").toggleClass("share-reveal");
     $('.twitter-btn, .chat-btn, #_hj_feedback_container').toggleClass('disable');
 });
-
 // TWITTER ASIDE
 function openNav() {
     $('#twitter-sidebar').addClass('sidebar-open');
@@ -148,7 +121,6 @@ function openNav() {
 function closeNav() {
     $('#twitter-sidebar').removeClass('sidebar-open');
 }
-
 // ADD STICKY TO HEADER
 $(window).scroll(function() {
     if ($(this).scrollTop() >= 50) {
@@ -157,7 +129,6 @@ $(window).scroll(function() {
         $('header').removeClass('sticky');
     }
 });
-
 // ADD STICKY TO META ONLY ON DESKTOP
 function myFunction(stickywidth) {
     if (stickywidth.matches) {
@@ -165,11 +136,9 @@ function myFunction(stickywidth) {
             if ($(this).scrollTop() >= 100) {
                 $('#beta_content_container').addClass('sticky');
                 $('.header-inner').addClass('sticky');
-                
             } else {
                 $('#beta_content_container').removeClass('sticky');
                 $('.header-inner').removeClass('sticky');
-               
             }
         });
     }
@@ -177,7 +146,6 @@ function myFunction(stickywidth) {
 var stickywidth = window.matchMedia("(min-width: 992px)")
 myFunction(stickywidth) // Call listener function at run time
 stickywidth.addListener(myFunction) // Attach listener function on state changes
-
 //SLIDERS
 $('#magnifyCarousel').owlCarousel({
     autoplay: true,
@@ -224,6 +192,37 @@ $('#fullCarousel').owlCarousel({
             items: 1
         }
     }
+});
+
+$(document).ready(function () {
+  setUpMainSearch();
+  const renderFeatures = $('.render-features')
+    .data('features')
+    .split(/\s+/);
+  renderFeatures.forEach((feature) => {
+    switch (feature) {
+      case '':
+        // do nothing when render features list is empty
+        return;
+      case 'tables-with-borders':
+        renderTablesWithBorders();
+        return;
+      case 'custom-terminals':
+        renderCustomTerminalsSetup();
+        return;
+      case 'equations':
+        renderEquationsSetup();
+        return;
+      case '2-way-peg-verifier':
+        render2WayPegVerifierSetup();
+        return;
+      case 'next-elem-class':
+        renderNextElemClassSetup();
+        return;
+      default:
+        console.error('Unsupported render feature:', feature);
+    }
+  });
 });
 
 // search
@@ -711,7 +710,3 @@ $('#newsletter-form').submit(function() {
 
   return true;
 });
-
-
-
-
