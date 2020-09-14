@@ -3508,7 +3508,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3965,14 +3965,15 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598231503",
       "videoStreamUrl": "https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/K-agozYwvLY",
+      "youtubeVideoId": "K-agozYwvLY",
       "_permalink": "/webinars/202009-003/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
