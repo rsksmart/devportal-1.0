@@ -3547,7 +3547,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3588,7 +3588,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "/webinars/202008-005/banner-image.png",
       "twitterSite": "@bguiz",
@@ -3864,7 +3864,7 @@
         {
           "name": "Gustavo Segovia",
           "description": "Collaboration Catalyst and Socio-Economic Analyst, Blockchain for Humanity",
-          "contact": "@b4_humanity"
+          "contact": "@sepu85"
         },
         {
           "name": "Tom Grogan",
@@ -3900,9 +3900,9 @@
     {
       "type": "event/2",
       "id": "202009-002",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-09-08T13:00:00.000Z",
-      "lastModified": "2020-08-29T07:00:00.000Z",
+      "lastModified": "2020-09-09T10:00:00.000Z",
       "status": "confirmed",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/273017420/",
       "title": "Blockchain basics: Writing your first smart contract",
@@ -3930,7 +3930,16 @@
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1FtTWubH2aKQ7nLIbr5Ug9j8BXJATLtqYmIbH1cZKvrI/edit#"
+        },
+        {
+          "label": "Tutorial",
+          "url": "http://extropy.foundation/workshops/bootcamp/soliditytutorial.html"
+        }
+      ],
       "recordedVideoUrl": "https://www.youtube.com/watch?v=89EFX6Bhqs0",
       "youtubeVideoId": "89EFX6Bhqs0",
       "_permalink": "/webinars/202009-002/",
@@ -3969,7 +3978,12 @@
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
-      "resources": [],
+      "resources": [
+        {
+          "label": "Decentralised  immunity passport (pre-read)",
+          "url": "https://medium.com/id2020/id2020-announces-certification-of-blok-bioscience-immunity-passport-1f86013e9da5"
+        }
+      ],
       "recordedVideoUrl": "https://youtu.be/K-agozYwvLY",
       "youtubeVideoId": "K-agozYwvLY",
       "_permalink": "/webinars/202009-003/",
@@ -4402,6 +4416,126 @@
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-013/",
       "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202009-014",
+      "version": "1",
+      "timestamp": "2020-09-25T16:00:00.000Z",
+      "lastModified": "2020-09-14T14:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Chainlink and RSK Integration",
+      "description": "Learn more about RSK and its integration of Chainlink decentralized oracles with smart contract engineers, Julian Rodriguez & Fernando Rubal. This technical demo was recorded at The Smart Contract Summit.",
+      "category": "Demo",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Julian Rodriguez",
+          "description": "RIF Gateways PO",
+          "contact": "@julianmrodri_"
+        },
+        {
+          "name": "Fernando Rubal",
+          "description": "Chainlink PO",
+          "contact": "@fernandorubal"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/33eb9bb0-58f6-41da-a21e-648c27cf62c2/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=DgPfPjfJ9Tw",
+      "youtubeVideoId": "DgPfPjfJ9Tw",
+      "_permalink": "/webinars/202009-014/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202009-015",
+      "version": "1",
+      "timestamp": "2020-09-10T12:00:00.000Z",
+      "lastModified": "2020-09-14T14:00:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273025091/",
+      "title": "Why blockchain matters:\nThe history of commerce from the dawn of history to now",
+      "description": "Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more. The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement, one we are still trying to solve.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Areiel Wolanow",
+          "description": "Blok Solutions CTO",
+          "contact": "@FinservExperts"
+        }
+      ],
+      "rsvpEmbedUrl": "",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202009-015/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202009-016",
+      "version": "1",
+      "timestamp": "2020-09-09T22:00:00.000Z",
+      "lastModified": "2020-09-14T14:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Interoperabilidade: Ethereum, RSK e Bitcoin. Entenda como funciona.",
+      "description": "Que tipo de interoperabilidade pode existir entre Bitcoin, Ethereum e RSK?  Ethereum tem smart contracts e RSK pode executar os mesmos smart contracts com a validação da rede Bitcoin. Entenda como isso funciona.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/129f425c-9d15-46f3-90fa-6261a0998e29/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202009-016/",
+      "_isPast": true
     }
   ]
 }
