@@ -2952,7 +2952,7 @@ URL;VALUE=URI:https://www.eventbrite.sg/e/blockchain-basics-writing-your-f
  irst-smart-contract-no-experience-needed-tickets-118590367983
 STATUS:CONFIRMED
 X-LANGUAGE:
-LAST-MODIFIED:20200829T070000Z
+LAST-MODIFIED:20200909T100000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202009-003@developers.rsk.co/
@@ -3331,5 +3331,104 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/self-sovereign-identity-
 STATUS:CONFIRMED
 X-LANGUAGE:English
 LAST-MODIFIED:20200831T010000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202009-014@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200925T160000Z
+DTSTART:20200925T160000Z
+SUMMARY:Chainlink and RSK Integration 
+DESCRIPTION:Chainlink and RSK Integration\n\nOnline only\n\nRSVP: \n\nVide
+ o stream: https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integ
+ ration\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Chainli
+ nk and RSK Integration</span></div>\n<div><span>Online only</span></div>\n
+ <div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;<
+ /b><span><a href=\"https://app.livestorm.co/iov-labs-1/rif-gateways-chainl
+ ink-integration\">app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integ
+ ration</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Julian Rodriguez\, RIF Gateways PO\, @julianmrodri_":mailto:
+ developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Chainlink and RSK Integration 
+END:VALARM
+CATEGORIES:Demo
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-i
+ ntegration
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200914T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202009-015@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200910T120000Z
+DTSTART:20200910T120000Z
+SUMMARY:Why blockchain matters:\nThe history of commerce from the dawn of 
+ history to now 
+DESCRIPTION:Why blockchain matters:\nThe history of commerce from the dawn
+  of history to now\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rs
+ k-community/events/273025091/\n\nVideo stream: https://www.eventbrite.sg/e
+ /why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-t
+ ickets-118598231503\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Why blo
+ ckchain matters:\nThe history of commerce from the dawn of history to now<
+ /span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b
+ ><span><a href=\"https://www.meetup.com/es-ES/rsk-community/events/2730250
+ 91/\">www.meetup.com/es-ES/rsk-community/events/273025091/</a></span></div
+ >\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://www.eventbrite.
+ sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-histo
+ ry-tickets-118598231503\">www.eventbrite.sg/e/why-blockchain-matters-the-h
+ istory-of-commerce-from-the-dawn-of-history-tickets-118598231503</a></span
+ ></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Areiel Wolanow\, Blok Solutions CTO\, @FinservExperts":mailt
+ o:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Why blockchain matters:\nThe history of commerce from the dawn
+  of history to now 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.eventbrite.sg/e/why-blockchain-matters-the-histo
+ ry-of-commerce-from-the-dawn-of-history-tickets-118598231503
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20200914T140000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202009-016@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20200909T220000Z
+DTSTART:20200909T220000Z
+SUMMARY:Interoperabilidade: Ethereum\, RSK e Bitcoin. Entenda como funcion
+ a. 
+DESCRIPTION:Interoperabilidade: Ethereum\, RSK e Bitcoin. Entenda como fun
+ ciona.\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/
+ iov-labs-1/bitcoin-ethereum-and-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Interop
+ erabilidade: Ethereum\, RSK e Bitcoin. Entenda como funciona.</span></div>
+ \n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></spa
+ n></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.live
+ storm.co/iov-labs-1/bitcoin-ethereum-and-rsk\">app.livestorm.co/iov-labs-1
+ /bitcoin-ethereum-and-rsk</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Interoperabilidade: Ethereum\, RSK e Bitcoin. Entenda como fun
+ ciona. 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20200914T140000Z
 END:VEVENT
 END:VCALENDAR
