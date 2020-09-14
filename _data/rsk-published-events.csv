@@ -385,10 +385,9 @@ Engineering Technology Lead, Mishcon de Reya","@gaurangtorvekar
 @GabrielKurman
 @startupeddy
 @LouYU12789405
-@sepu85
+@b4_humanity
 @TomGroganMdR",https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721,https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev,https://www.youtube.com/watch?v=2wXSCghy0oo
-2020-09-08T21:00+08:00,202009-002,2,2020-09-09T18:00:00+08:00,confirmed,"Slides: https://docs.google.com/presentation/d/1FtTWubH2aKQ7nLIbr5Ug9j8BXJATLtqYmIbH1cZKvrI/edit#
-Tutorial: http://extropy.foundation/workshops/bootcamp/soliditytutorial.html",,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017420/,Blockchain basics: Writing your first smart contract,"This workshop is ideal for anyone looking to learn the basics of Blockchain technology. In this workshop, we will cover the following:
+2020-09-08T21:00+08:00,202009-002,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017420/,Blockchain basics: Writing your first smart contract,"This workshop is ideal for anyone looking to learn the basics of Blockchain technology. In this workshop, we will cover the following:
 
 - Theory of blockchain and decentralised systems
 - Consensus mechanisms
@@ -397,7 +396,7 @@ Tutorial: http://extropy.foundation/workshops/bootcamp/soliditytutorial.html",,/
 - Writing Smart Contracts
   - Using Remix
   - Hands on solidity programming",Workshop,online,Online only,,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/blockchain-basics-writing-your-first-smart-contract-no-experience-needed-tickets-118590367983,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590367983,https://www.youtube.com/watch?v=89EFX6Bhqs0
-2020-09-10T20:00+08:00,202009-003,1,2020-09-09T15:15:00+08:00,confirmed,Decentralised  immunity passport (pre-read): https://medium.com/id2020/id2020-announces-certification-of-blok-bioscience-immunity-passport-1f86013e9da5,,/webinars/img/pch2020-partner-banner.png,,,,Why blockchain matters -- the history of commerce from the dawn of history to now,"Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more.
+2020-09-10T20:00+08:00,202009-003,1,2020-09-09T15:15:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,,Why blockchain matters -- the history of commerce from the dawn of history to now,"Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more.
 
 The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement - one we are still trying to solve.
 
@@ -475,11 +474,3 @@ Conheça mais sobre RIF ➡️ https://www.rifos.org/pt-pt/",Talk,online,Online 
 2020-09-30T16:00:00-03:00,202009-013,1,2020-08-30T22:00:00-03:00,confirmed,,,,,General,,Self Sovereign Identity and RIF,"The main intention of Self Sovereign Identity is to empower people with tools to control their digital interactions and to recover privacy in digital environments.
 At this webinar we will delve into its vital role to protect users privacy and digital identities and RIF plans around it.
 Learn more about RIF Identity ➡️ https://www.rifos.org/directory",Talk,online,Online only,English,Milton Berman,RIF Identity PO,@miltonberman,https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif,https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form,
-2020-09-25T17:00:00+01:00,202009-014,1,2020-09-14T11:00:00-03:00,confirmed,,,,,,,Chainlink and RSK Integration,"Learn more about RSK and its integration of Chainlink decentralized oracles with smart contract engineers, Julian Rodriguez & Fernando Rubal. This technical demo was recorded at The Smart Contract Summit.",Demo,online,Online only,English,"Julian Rodriguez
-Fernando Rubal","RIF Gateways PO
-Chainlink PO","@julianmrodri_
-@fernandorubal",https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration,https://app.livestorm.co/p/33eb9bb0-58f6-41da-a21e-648c27cf62c2/form,https://www.youtube.com/watch?v=DgPfPjfJ9Tw
-2020-09-10T09:00:00-03:00,202009-015,1,2020-09-14T11:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/rsk-community/events/273025091/,"Why blockchain matters:
-The history of commerce from the dawn of history to now","Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more. The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement, one we are still trying to solve.
-",Talk,online,Online only,English,Areiel Wolanow,Blok Solutions CTO,@FinservExperts,https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503,,
-2020-09-09T19:00:00-03:00,202009-016,1,2020-09-14T11:00:00-03:00,confirmed,,,,,,,"Interoperabilidade: Ethereum, RSK e Bitcoin. Entenda como funciona.","Que tipo de interoperabilidade pode existir entre Bitcoin, Ethereum e RSK?  Ethereum tem smart contracts e RSK pode executar os mesmos smart contracts com a validação da rede Bitcoin. Entenda como isso funciona.",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk,https://app.livestorm.co/p/129f425c-9d15-46f3-90fa-6261a0998e29/form ,
