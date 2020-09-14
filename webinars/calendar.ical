@@ -3400,32 +3400,32 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202009-016@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20200909T220000Z
-DTSTART:20200909T220000Z
+DTSTAMP:20200916T220000Z
+DTSTART:20200916T220000Z
 SUMMARY:Interoperabilidade: Ethereum\, RSK e Bitcoin. Entenda como funcion
- a. 
+ a 
 DESCRIPTION:Interoperabilidade: Ethereum\, RSK e Bitcoin. Entenda como fun
- ciona.\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/
- iov-labs-1/bitcoin-ethereum-and-rsk\n
+ ciona\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/i
+ ov-labs-1/bitcoin-ethereum-and-rsk\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Interop
- erabilidade: Ethereum\, RSK e Bitcoin. Entenda como funciona.</span></div>
- \n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></spa
- n></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.live
- storm.co/iov-labs-1/bitcoin-ethereum-and-rsk\">app.livestorm.co/iov-labs-1
- /bitcoin-ethereum-and-rsk</a></span></div>\n</BODY>\n</HTML>
+ erabilidade: Ethereum\, RSK e Bitcoin. Entenda como funciona</span></div>\
+ n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span
+ ></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.lives
+ torm.co/iov-labs-1/bitcoin-ethereum-and-rsk\">app.livestorm.co/iov-labs-1/
+ bitcoin-ethereum-and-rsk</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
 DESCRIPTION:Interoperabilidade: Ethereum\, RSK e Bitcoin. Entenda como fun
- ciona. 
+ ciona 
 END:VALARM
 CATEGORIES:Talk
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20200914T140000Z
+LAST-MODIFIED:20200914T190000Z
 END:VEVENT
 END:VCALENDAR
