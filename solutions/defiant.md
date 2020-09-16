@@ -2,6 +2,7 @@
 title: "Defiant - Solutions on RSK"
 description: "Defiant is the first mobile platform and P2P marketplace for stablecoins"
 tags: defiant, rsk-solutions, rsk
+render_features: 'tables-with-borders'
 layout: "rsk"
 ---
 
@@ -43,7 +44,7 @@ TODO diagram
 
 -->
 
-## Defiant's main characteristics 
+## Defiant's main characteristics
 
 - **Compatibility**: First wallet working for Bitcoin, RSK, and Ethereum.
 - **Non-custodial**: Nobody has access to your crypto except you. You can take them wherever you want, whenever you want.
@@ -52,7 +53,7 @@ TODO diagram
 - **DeFi**: Defiant allows you to manage your finances in a decentralized way, there are no institutions involved. Even we don’t have access to your crypto.
 
 
-## Defiant's manifesto: 
+## Defiant's manifesto:
 
 We challenge the idea that what we know is all there is.
 
@@ -69,7 +70,7 @@ Defiant is your door into this new world and the new ones to come.
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| R-BTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK | 
+| R-BTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens
