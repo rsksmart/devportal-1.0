@@ -5,7 +5,7 @@ tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
 description: 'Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet.'
 collection_order: 3100
 permalink: /rsk/rbtc/conversion/
-render_features: '2-way-peg-verifier tables-with-borders'
+render_features: '2-way-peg-verifier'
 ---
 
 In this article we will explain step by step on how to convert from BTC to R-BTC, and vice versa.
@@ -21,36 +21,11 @@ Thus, these conversions are referred to as peg-ins and peg-outs.
   - Locks R-BTC on the RSK network
   - Releases BTC on the Bitcoin network
 
-## Compatibility Matrix
+## Compatibility
 
-In the following matrixes will be shown the different types of addresses that are accepted for the Federation.
-
-| Before Papyrus | | Accepted in BTC | | Accepted in RSK | | Refundable | | Processable |
-| :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: | | --- | | :---: |
-| P2PKH | | ✔ | | ✔ | | ✔ | | ✔ |
-| P2SH-P2WPKH | | ✔ | | ❌ | | ❌ | | ❌ |
-| P2SH-MULTISIG | | ✔ | | ❌ | | ❌ | | ❌ |
-| P2SH-P2WSH | | ✔ | | ❌ | | ❌ | | ❌ |
-| PWPKH (BECH32) | | ✔ | | ❌ | | ❌ | | ❌ |
-| OTHERS | | ✔ | | ❌ | | ❌ | | ❌ |
-
-<br/>
-
-| After Papyrus | | Accepted in BTC | | Accepted in RSK | | Refundable | | Processable |
-| :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: | | --- | | :---: |
-| P2PKH | | ✔ | | ✔ | | ✔ | | ✔ |
-| P2SH-P2WPKH | | ✔ | | ✔ | | ✔ | | ✔ |
-| P2SH-MULTISIG | | ✔ | | ✔ | | ✔ | | ❌ |
-| P2SH-P2WSH | | ✔ | | ✔ | | ✔ | | ❌ |
-| PWPKH (BECH32) | | ✔ | | ❌ | | ❌ | | ❌ |
-| OTHERS | | ✔ | | ❌ | | ❌ | | ❌ |
-
-<br/>
-
-- **Accepted in BTC**: Is this type of address accepted in regular BTC transactions? (including sending BTC to the Federation address)
-- **Accepted in RSK**: is this type of address received by RSK Bridge smart contract?
-- **Refundable**: is this type of address able to generate a refund transaction (this occurs when the transaction won't be processable, then we refund the sender its BTC)
-- **Processable**: is this type of address able to generate a refund transaction (this occurs when the transaction won't be processable, then we refund the sender its BTC)
+**The types of addresses that are accepted for the Federation are**:
+- Legacy (P2PKH)
+- Segwit Compatible (P2SH-P2WPKH)
 
 > Note: On the Testnets, the token symbols are prefixed with a lowercase `t`.
 > Thus we have `BTC` and `R-BTC` on the Mainnets,

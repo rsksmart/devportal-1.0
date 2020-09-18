@@ -64,7 +64,7 @@ you can send Bitcoin to it from your Bitcoin address.
 
 **4 Get tR-BTC address with tBTC private key**
 
-You can get a corresponding tR-BTC address with your tBTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
+You can get a corresponding tR-BTC address from your tBTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
 > Note: when entering Bitcoin private key do not include _p2pkh:_ in the front.
 
@@ -82,8 +82,7 @@ Instructions on how to do a Testnet peg-out.
 
 **1 Get tBTC address with tR-BTC private key**
 
-If you forgot tBTC public address you can retrieve it with RSK private key
-from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
+You can get a corresponding tBTC address from your tR-BTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
 **2 Send tR-BTC to RSK Bridge Contract**
 
