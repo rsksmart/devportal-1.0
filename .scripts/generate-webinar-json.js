@@ -41,12 +41,18 @@ async function generateWebinars() {
       item.type = 'event/2';
       item._isPast = item.timestamp < nowTimestamp;
       const _hasPage = (
+        item.title &&
+        item.language &&
         item.description &&
+        item.videoStreamUrl &&
+        item.rsvpEmbedUrl &&
         (item._isPast || item.rsvpEmbedUrl) &&
         item.status === 'confirmed'
       );
-      if (!_hasPage &&
-          hasPageEnforceTimestamp < item.timestamp) {
+      const shouldHavePage =
+        hasPageEnforceTimestamp < item.timestamp &&
+        item.status === 'confirmed';
+      if (!_hasPage && shouldHavePage) {
         console.log(JSON.stringify(item, undefined, 2));
         console.error(
           `Cannot process event '${item.id}' as it is missing required fields to create an event page'`);
