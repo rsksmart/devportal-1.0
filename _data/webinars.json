@@ -3588,7 +3588,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "/webinars/202008-005/banner-image.png",
       "twitterSite": "@bguiz",
@@ -3644,7 +3644,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/28967d51-08df-4701-9b3a-12cfc240e5bf/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca-rsk3js-no-seu-site",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3732,7 +3732,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/83535a48-3e9a-4355-8585-e06ce85d41c2/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technology",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3833,7 +3833,7 @@
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -3874,7 +3874,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev",
       "videoStreamUrl": "https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -3910,7 +3910,7 @@
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -3926,7 +3926,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590367983",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchain-basics-writing-your-first-smart-contract-no-experience-needed-tickets-118590367983",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4002,7 +4002,7 @@
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4011,6 +4011,11 @@
       ],
       "presenters": [
         {
+          "name": "Tom Dwyer",
+          "description": "Blockchain Developer, Extropy.IO",
+          "contact": "@extropy"
+        },
+        {
           "name": "Laurence Kirk",
           "description": "CEO and Senior Blockchain Developer, Extropy.IO",
           "contact": "@extropylaurence"
@@ -4018,14 +4023,15 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590500379",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchain-for-hackathons-how-to-build-a-dapp-as-quickly-as-possible-tickets-118590500379",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=f0stK7FCyos",
+      "youtubeVideoId": "f0stK7FCyos",
       "_permalink": "/webinars/202009-004/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4040,7 +4046,7 @@
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4056,7 +4062,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590799273",
       "videoStreamUrl": "https://www.eventbrite.sg/e/how-to-foster-social-inclusion-with-iovs-technologies-post-covid-hack-tickets-118590799273",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4076,7 +4082,7 @@
       ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-005/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4091,7 +4097,7 @@
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4107,7 +4113,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591120233",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchains-and-smart-contract-security-essential-safeguards-for-your-dapp-tickets-118591120233",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4176,7 +4182,7 @@
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4192,7 +4198,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591310803",
       "videoStreamUrl": "https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practical-guide-to-developing-zkps-for-a-dapp-tickets-118591310803",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4282,7 +4288,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/qnzs09wpJ8k",
+      "youtubeVideoId": "qnzs09wpJ8k",
       "_permalink": "/webinars/202009-010/",
       "_isPast": true
     },
@@ -4340,7 +4347,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/1PBYtbhHUwg",
+      "youtubeVideoId": "1PBYtbhHUwg",
       "_permalink": "/webinars/202009-011/",
       "_isPast": true
     },
@@ -4464,10 +4472,10 @@
     {
       "type": "event/2",
       "id": "202009-015",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-09-10T12:00:00.000Z",
-      "lastModified": "2020-09-14T14:00:00.000Z",
-      "status": "confirmed",
+      "lastModified": "2020-09-16T00:00:00.000Z",
+      "status": "cancelled",
       "url": "https://www.meetup.com/es-ES/rsk-community/events/273025091/",
       "title": "Why blockchain matters:\nThe history of commerce from the dawn of history to now",
       "description": "Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more. The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement, one we are still trying to solve.",
@@ -4496,7 +4504,6 @@
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
-      "_permalink": "/webinars/202009-015/",
       "_isPast": true
     },
     {
@@ -4506,7 +4513,7 @@
       "timestamp": "2020-09-16T22:00:00.000Z",
       "lastModified": "2020-09-14T19:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSK-Brasil/events/273251198/",
       "title": "Interoperabilidade: Ethereum, RSK e Bitcoin. Entenda como funciona",
       "description": "Que tipo de interoperabilidade pode existir entre Bitcoin, Ethereum e RSK?  Ethereum tem smart contracts e RSK pode executar os mesmos smart contracts com a validação da rede Bitcoin. Entenda como isso funciona.",
       "category": "Talk",
@@ -4528,14 +4535,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/129f425c-9d15-46f3-90fa-6261a0998e29/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-016/",
-      "_isPast": false
+      "_isPast": true
     }
   ]
 }
