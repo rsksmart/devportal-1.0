@@ -10,8 +10,8 @@ You can access the Marketplace on the RSK Mainnet: [marketplace.rifos.org](https
 
 1. Download a browser wallet. Recommended: [Nifty Wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid)
 2. Connect your wallet to RSK Mainnet. You can do it with the top left selector on Nifty Wallet.
-3. (optional) List RIF token balance using this address: [`0x2acc95758f8b5f583470ba265eb685a8f45fc9d5`](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5). In Nifty wallet do this in Tokens tab.
-4. Browse to [RIF Marketplace](https://marketplace.rifos.org) to access the available services.
+3. (optional) List RIF token balance using this address: [`0x2acc95758f8b5f583470ba265eb685a8f45fc9d5`](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5). In Nifty wallet, you can do this in the Tokens tab.
+4. Browse the [RIF Marketplace](https://marketplace.rifos.org) to access the available services.
 
 ## Smart contracts
 
