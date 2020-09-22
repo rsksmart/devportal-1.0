@@ -20,7 +20,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/defiant/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Defiant</p>
-                        <p class="card-desc">Defiant is the first mobile platform and P2P marketplace for stablecoins. Check out how Defiant integrates with RSK</p>
+                        <p class="card-desc">Defiant is the first mobile platform and P2P marketplace for stablecoins. Check out how Defiant integrates with RSK.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -43,7 +43,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/chainbeat/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Chainbeat</p>
-                        <p class="card-desc">Chainbeat provides blockchain data insights to help understand usage and behavioral metrics for smart contracts running on RSK</p>
+                        <p class="card-desc">Chainbeat provides blockchain data insights to help understand usage and behavioral metrics for smart contracts running on RSK. Check out how Chainbeat integrates with RSK.</p>
                     </div>
                 </a>
                 <div class="btn-container">
