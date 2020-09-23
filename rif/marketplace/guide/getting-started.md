@@ -15,7 +15,7 @@ description: "RIF Marketplace User Guide"
 
 To buy a domain in the RIF Marketplace, a single transaction is involved. Let's start:
 
-1. Go to the [RIF Marketplace](https://marketplace.testnet.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
+1. Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
@@ -44,7 +44,7 @@ Now you can click on **Buy Another Domain** to get back to the main Domain listi
 
 To sell a domain, two transactions are involved. Let's start:
 
-1. Go to the [RIF Marketplace](https://marketplace.testnet.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
+1. Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
@@ -72,7 +72,7 @@ Click on "**View Domain Listings"** to see the domain you have just listed, now 
 
 If you want to remove a domain which is listed for Sale, you can do that with two transactions. Let's start:
 
-1. Go to the [RIF Marketplace](https://marketplace.testnet.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
+1. Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
 2. Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own which are **available for sale**. On the left you will see three options, select **Your Offers**
 
@@ -97,4 +97,4 @@ Click on **View Domain Listings** to verify that the domain has been removed fro
 ----
 
 [Github](https://github.com/rsksmart?q=rif-marketplace) |
-[Access the RIF Marketplace](https://marketplace.testnet.rifos.org)
+[Access the RIF Marketplace](https://marketplace.rifos.org)
