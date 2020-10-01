@@ -35,8 +35,7 @@ and here we recommend to use Electrum BTC wallet for connecting to BTC Mainnet.
 **2 Send Bitcoin to RSK Federation address**
 
 <div class="fade alert alert-warning show">
-Note: You need to send a minimum amount of 0.01 BTC and
-not more than 10 BTC for conversion.
+Note: You need to send a minimum amount of 0.01 BTC.
 </div>
 
 The RSK Federation address is retrieved by making a Smart Contract call
@@ -59,7 +58,7 @@ To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 **4 Get R-BTC address with BTC private key**
 
-You can get a corresponding R-BTC address with your BTC private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
+You can get a corresponding R-BTC address from your BTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
 > Note: when entering Bitcoin private key do not include _p2pkh:_ in the front.
 
@@ -77,7 +76,7 @@ Instructions on how to do a Mainnet peg-out.
 
 **1 Get BTC address with R-BTC private key**
 
-If you forgot BTC public address you can retrieve it with RSK private key from [https://github.com/rsksmart/utils](https://github.com/rsksmart/utils).
+You can get a corresponding BTC address from your R-BTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
 **2 Send R-BTC to RSK Bridge Contract**
 
