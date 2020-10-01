@@ -2272,26 +2272,25 @@ UID:202007-005-c@developers.rsk.co/
 SEQUENCE:0
 DTSTAMP:20200708T070000Z
 DTSTART:20200708T070000Z
-SUMMARY:Testing Smart Contracts with Truffle 
-DESCRIPTION:Testing Smart Contracts with Truffle\n\nOnline only\n\nCancell
- ed\, see webinars page for more details: https://developers.rsk.co/webinar
- s/calendar.ical\n
+SUMMARY:Testing Smart Contracts with Truffle (Duplicate) 
+DESCRIPTION:Testing Smart Contracts with Truffle (Duplicate)\n\nOnline onl
+ y\n\nCancelled\, see webinars page for more details: https://developers.rs
+ k.co/webinars/calendar.ical\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Testing
-  Smart Contracts with Truffle</span></div>\n<div><span>Online only</span><
- /div>\n<div><b>Cancelled\, see webinars page for more details &nbsp\;</b><
- span><a href=\"https://developers.rsk.co/webinars/calendar.ical\">develope
- rs.rsk.co/webinars/calendar.ical</a></span></div>\n</BODY>\n</HTML>
+  Smart Contracts with Truffle (Duplicate)</span></div>\n<div><span>Online 
+ only</span></div>\n<div><b>Cancelled\, see webinars page for more details 
+ &nbsp\;</b><span><a href=\"https://developers.rsk.co/webinars/calendar.ica
+ l\">developers.rsk.co/webinars/calendar.ical</a></span></div>\n</BODY>\n</
+ HTML>
 ORGANIZER;CN="Brendan Graetz\, Developer Advocate\, @bguiz":mailto:develop
  ers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
-DESCRIPTION:Testing Smart Contracts with Truffle 
+DESCRIPTION:Testing Smart Contracts with Truffle (Duplicate) 
 END:VALARM
 CATEGORIES:Workshop
-URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/testing-smart-contracts-
- with-truffle
 STATUS:CANCELLED
 X-LANGUAGE:English
 LAST-MODIFIED:20200624T093000Z
