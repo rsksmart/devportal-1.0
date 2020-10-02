@@ -1698,7 +1698,6 @@
       ],
       "recordedVideoUrl": "https://youtu.be/ThA8rkw-nTY",
       "youtubeVideoId": "ThA8rkw-nTY",
-      "_permalink": "/webinars/202005-001/",
       "_isPast": true
     },
     {
@@ -3048,7 +3047,7 @@
       "lastModified": "2020-06-24T09:30:00.000Z",
       "status": "cancelled",
       "url": "",
-      "title": "Testing Smart Contracts with Truffle",
+      "title": "Testing Smart Contracts with Truffle (Duplicate)",
       "description": "Learn how to create and run tests on your RSK smart contracts using Truffle.",
       "category": "Workshop",
       "locationCategory": "online",
@@ -3064,8 +3063,8 @@
           "contact": "@bguiz"
         }
       ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
+      "rsvpEmbedUrl": "",
+      "videoStreamUrl": "",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
@@ -3080,8 +3079,7 @@
           "url": "https://dappsdev.org/hands-on/mocha-intro/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/_bVwar_p0wo",
-      "youtubeVideoId": "_bVwar_p0wo",
+      "recordedVideoUrl": "",
       "_isPast": true
     },
     {
@@ -3688,7 +3686,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/de980613-7c05-4d99-8ac8-5e1cef829757/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear",
-      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3771,7 +3769,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/66249815-cf94-4a9a-ab3c-3e6a743c77ff/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3810,7 +3808,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e34c1aef-6d13-4ff1-b9a7-51ef2f85f98c/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcciones-y-dominios",
-      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3874,7 +3872,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev",
       "videoStreamUrl": "https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -3926,7 +3924,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590367983",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchain-basics-writing-your-first-smart-contract-no-experience-needed-tickets-118590367983",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4113,14 +4111,15 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591120233",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchains-and-smart-contract-security-essential-safeguards-for-your-dapp-tickets-118591120233",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=7wL2g-Dy7UA",
+      "youtubeVideoId": "7wL2g-Dy7UA",
       "_permalink": "/webinars/202009-006/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4151,7 +4150,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118592396049",
       "videoStreamUrl": "https://www.eventbrite.sg/e/create-your-rsk-dapp-from-smart-contracts-to-frontend-tickets-118592396049",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4165,9 +4164,10 @@
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=8msOOXpUDbg",
+      "youtubeVideoId": "8msOOXpUDbg",
       "_permalink": "/webinars/202009-007/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4198,14 +4198,14 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591310803",
       "videoStreamUrl": "https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practical-guide-to-developing-zkps-for-a-dapp-tickets-118591310803",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-008/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4342,7 +4342,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/170cec76-60fe-4e17-9123-6f64d28eba7a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -4381,14 +4381,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/9c4aac42-45bf-4bb3-8143-1d4de89a48f7/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructure-framework",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-012/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4416,14 +4416,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
-      "tags": " idioma-english audiencia-general",
+      "tags": " idioma-english audiencia-general recent",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-013/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4459,7 +4459,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/33eb9bb0-58f6-41da-a21e-648c27cf62c2/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -4467,7 +4467,7 @@
       "recordedVideoUrl": "https://www.youtube.com/watch?v=DgPfPjfJ9Tw",
       "youtubeVideoId": "DgPfPjfJ9Tw",
       "_permalink": "/webinars/202009-014/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",

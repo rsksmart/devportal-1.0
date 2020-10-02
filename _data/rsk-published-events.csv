@@ -238,7 +238,7 @@ Tutorial (EN): https://developers.rsk.co/tutorials/ethereum-devs/truffle-test/
 2020-07-03T15:00:00-03:00,202007-002,3,2020-07-02T20:42:00-03:00,cancelled,,,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271483324/,RIF Lumino workshop,"On this webinar we will learn how to interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden.",Workshop,online,Online only,English,Alejandro Narancio,Payments and Tools PO,@anarancio,https://app.livestorm.co/iov-labs-1/rif-lumino-workshop,https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form,,
 2020-07-03T18:00:00-03:00,202007-003,2,2020-06-24T17:30:00+08:00,cancelled,,,,,Developers,,RIF Lumino workshop,,Workshop,online,Online only,Spanish,Alejandro Narancio,Payments and Tools PO,@anarancio,https://app.livestorm.co/iov-labs-1/rif-lumino-workshop-en-espanol,https://app.livestorm.co/p/c1b34ea2-d1c8-475f-b6a8-5f2e44405571/form,,
 2020-07-08T15:00:00+08:00,202007-005-C,2,2020-06-24T17:30:00+08:00,cancelled,"Slides: https://developers.rsk.co/webinars/202007-005/slides/
-Javascript Hands-on: https://dappsdev.org/hands-on/mocha-intro/",,,,Developers,,Testing Smart Contracts with Truffle,Learn how to create and run tests on your RSK smart contracts using Truffle.,Workshop,online,Online only,English,Brendan Graetz,Developer Advocate,@bguiz,https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle,https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form,https://youtu.be/_bVwar_p0wo,
+Javascript Hands-on: https://dappsdev.org/hands-on/mocha-intro/",,,,Developers,,Testing Smart Contracts with Truffle (Duplicate),Learn how to create and run tests on your RSK smart contracts using Truffle.,Workshop,online,Online only,English,Brendan Graetz,Developer Advocate,@bguiz,,,,
 2020-07-15T19:00:00-03:00,202007-006,3,2020-08-04T15:30:00-03:00,confirmed,"Tutorial (PT): https://solange.dev/2020/rsk-port-ethereum-dapps/
 Tutorial (EN): https://developers.rsk.co/tutorials/ethereum-devs/port-ethereum-dapps/
 ",,,,Developers,https://www.meetup.com/es-ES/rsk-community/events/271846531/,Migrando dApps do Ethereum para RSK,Este webinar é para os desenvolvedores Ethereum que desejam conhecer as possibilidades para migrar suas aplicações para a rede RSK.,Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/migrando-dapps-do-ethereum-para-rsk,https://app.livestorm.co/p/9948fd38-4bfd-488e-a7ea-868d9384c80a/form,https://youtu.be/-7Oi9_BDr5k,
@@ -433,7 +433,7 @@ Diego Gutierrez Zaldivar",CEO,@dieguito,https://www.eventbrite.sg/e/how-to-foste
 
 - Smart contract review
 - Security essentials
-- Hands on - hacking contracts",Workshop,online,Online only,English,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/blockchains-and-smart-contract-security-essential-safeguards-for-your-dapp-tickets-118591120233,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591120233,,
+- Hands on - hacking contracts",Workshop,online,Online only,English,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/blockchains-and-smart-contract-security-essential-safeguards-for-your-dapp-tickets-118591120233,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591120233,https://www.youtube.com/watch?v=7wL2g-Dy7UA,
 2020-09-24T20:00+08:00,202009-007,1,2020-08-29T15:00:00+08:00,confirmed,"Remix and MetaMask: https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/
 Front end: https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/",,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273018257/,Create your RSK dApp: from smart contracts to frontend,"This workshop is step-by-step hands on to learn how to create and deploy a simple smart contract on RSK’s Testnet. Also you will learn how to create your first frontend to interact with it
 
@@ -446,7 +446,7 @@ What the participants will learn:
 - Connect your dApp to a wallet using a web3 provider.
 
 Do participants need to install anything on their computer prior to the workshop?  
-No!",Workshop,online,Online only,English,Solange Gueiros,Developer Advocate,@solangegueiros,https://www.eventbrite.sg/e/create-your-rsk-dapp-from-smart-contracts-to-frontend-tickets-118592396049,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118592396049,,
+No!",Workshop,online,Online only,English,Solange Gueiros,Developer Advocate,@solangegueiros,https://www.eventbrite.sg/e/create-your-rsk-dapp-from-smart-contracts-to-frontend-tickets-118592396049,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118592396049,https://www.youtube.com/watch?v=8msOOXpUDbg,
 2020-09-29T21:00+08:00,202009-008,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273018660/,Zero-knowledge proofs: A practical guide to developing ZKPs for a dApp,"This workshop is a practical guide to developing ZKP’s for an application.  In this workshop, we will cover the following:
 
 - Intuitive explanation of zero knowledge proofs
