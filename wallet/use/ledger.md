@@ -45,7 +45,7 @@ Afterward, the device will also show the RSK app's icon:
 
 ### 4. Use RSK
 
-Open your RSK app in your device and let the display show the ‘Use wallet to view accounts’ legend: 
+Open the RSK app in your device and let the display show the ‘Use wallet to view accounts’ legend: 
 
 ![Ledger RSK App](/assets/img/rsk/ledger/7.png)
 
