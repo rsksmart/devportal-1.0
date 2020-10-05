@@ -36,13 +36,9 @@ Watch these short explainer videos:
 - [English](https://defiantapp.tech/wp-content/uploads/2020/08/android_eng.pdf)
 - [Español](https://defiantapp.tech/wp-content/uploads/2020/07/Guia-Defiant-Android.pdf )
 
-<!--
-
 ## Integration with RSK
 
-TODO diagram
-
--->
+![Defiant Banner](/assets/img/solutions/defiant/defiant_rsk.jpg)
 
 ## Defiant's main characteristics
 
