@@ -38,7 +38,7 @@ Watch these short explainer videos:
 
 ## Integration with RSK
 
-![Defiant Banner](/assets/img/solutions/defiant/defiant_rsk.jpg)
+![Defiant RSK Integration](/assets/img/solutions/defiant/defiant_rsk.jpg)
 
 ## Defiant's main characteristics
 
