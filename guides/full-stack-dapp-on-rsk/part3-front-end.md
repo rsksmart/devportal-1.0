@@ -482,6 +482,8 @@ To view the dApp live, go to your browser, enter `localhost:8080` into the addre
 
 Thank you for completing the full stack dApp guide on RSK🤝!
 
+View the entire code for the [Complete Full Stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/tree/feat/complete-a)
+
 ## Further Reading
 
 - [Solidity Documentation](https://solidity.readthedocs.io/en/v0.7.1/index.html)

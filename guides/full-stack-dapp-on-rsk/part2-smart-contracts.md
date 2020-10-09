@@ -22,8 +22,9 @@ Prior to commencing this tutorial, please ensure that you have installed the fol
 - [Truffle](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#truffle)
 - [curl](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#curl)
 - [Code editor](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#code-editor)
+- [Mnemonics](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#mnemonics)
 - [Java](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#java)
-- [rskj](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj)
+- [RSKj](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#rskj)
 
 ## 1. Initialise the project
 
@@ -35,8 +36,8 @@ cd workshop-rsk-full-stack-dapp
 npm install
 ```
 
-### 1.1 Setup project files using `curl`
-Enter the bash command below into terminal, to the current gas-price for both Testnet and Mainnet respectively: 
+### 1.1 Setup additional project files
+Enter the following command into terminal, to get the current gas-price for both Testnet and Mainnet, and a [Mnemonic](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) phrase: 
 
 ```terminal
 curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'
@@ -48,7 +49,13 @@ and;
 curl https://public-node.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .mainnet.gas-price.json
 ```
 
-> Ensure rskj(regtest) is running in a separate terminal, to setup regtest see the prerequisites section above
+and;
+
+```terminal
+mnemonics > .testnet.seed-phrase
+```
+
+> Ensure RSKj(regtest) is running in a separate terminal, to setup regtest see the prerequisites section above
 
 Then open up this directory in your code editor.
 
@@ -66,7 +73,7 @@ Observe that we have the following files:
 - `test/Election.spec.js`
   This is the test specification.
 
-### 1.1.2 Run a blockchain locally
+### 1.1.2 Start a blockchain locally
 Enter the following command in the terminal to start the truffle console.
 
 ```terminal
@@ -235,7 +242,7 @@ The `vote` function also checks if the present caller of the contract (the candi
 
 ### 2.4. The Updated Smart Contract
 
-Find the full code in the `Election.sol` file below or in the [Full stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/master/contracts/Election.sol)
+Find the full code in the `Election.sol` file below or in the [Full stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/feat/complete-a/contracts/Election.sol)
 
 ```solidity
 pragma solidity ^0.5.0;
@@ -506,7 +513,7 @@ it('allows a voter to cast a vote', async () => {
 
 ### 3.7. The Updated Test Code
 
-Find the full test code in the `Election.spec.js` file below or in the [Full stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/master/test/Election.spec.js)
+Find the full test code in the `Election.spec.js` file below or in the [Full stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/feat/complete-a/test/Election.spec.js)
 
 
 ```javascript
@@ -691,9 +698,9 @@ The result appears in the BIP39 Mnemonic field. They should be 12 random words l
 
 ![RSK full stack dApp - Mnemonic](/assets/img/guides/complete-full-stack-dapp/Mnemonic.png)
 
-In the terminal, inside the project root folder, create a file named `.testnet.seed-phrase`. In this tutorial, the file has already been created for you.
+In the terminal, inside the project root folder, create a text file named `.testnet.seed-phrase`, notice that you have already generated this file in the additional project files setup above?.
 
-Do you remember your mnemonic? Replace your mnemonic phrase with the phrase in this file and save it.
+Do you remember your mnemonic? Update the mnemonic phrase with the 12 word phrase generated above into this file and save it.
 
 ### 5.2 Connect Truffle to RSK public network
 
@@ -952,7 +959,7 @@ Summary
 
 > Once the contract is deployed we can use the `deployed()` method as we did in the local blockchain. To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/) and search using the contract address, transaction hash or block number. All interactions with our contract will appear in the explorer!
 
-Congratulations for getting this far! Now you're a smart contract developer😉😉.
+Congratulations for getting this far! Now you're a smart contract developer😉😉. View the entire code for the [Complete Full Stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/tree/feat/complete-a)
 
 **Next:** Now let's build out the front end!. Check out the third part of [The Complete Full Stack dApp Guide on RSK Part 3](/guides/full-stack-dapp-on-rsk/part3-front-end/)
 
