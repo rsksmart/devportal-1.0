@@ -3021,7 +3021,7 @@ URL;VALUE=URI:https://www.eventbrite.sg/e/blockchain-for-hackathons-how-to
  -build-a-dapp-as-quickly-as-possible-tickets-118590500379
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200829T070000Z
+LAST-MODIFIED:20201002T101500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202009-005@developers.rsk.co/
@@ -3169,7 +3169,7 @@ URL;VALUE=URI:https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practica
  l-guide-to-developing-zkps-for-a-dapp-tickets-118591310803
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200829T070000Z
+LAST-MODIFIED:20201002T101500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202009-009@developers.rsk.co/
@@ -3202,7 +3202,7 @@ URL;VALUE=URI:https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar
  -all-in-one-tickets-118598722973
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200829T070000Z
+LAST-MODIFIED:20201002T101500Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202009-010@developers.rsk.co/
@@ -3275,15 +3275,18 @@ DTSTAMP:20200923T220000Z
 DTSTART:20200923T220000Z
 SUMMARY:Conheça a RIF - RSK Infrastructure Framework 
 DESCRIPTION:Conheça a RIF - RSK Infrastructure Framework\n\nOnline only\n\
- nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/conheca-a-rif
- -rsk-infrastructure-framework\n
+ nRSVP: https://www.meetup.com/es-ES/RSK-Brasil/events/273251198/\n\nVideo 
+ stream: https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructu
+ re-framework\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Conheça
   a RIF - RSK Infrastructure Framework</span></div>\n<div><span>Online only
- </span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video 
- stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/conh
- eca-a-rif-rsk-infrastructure-framework\">app.livestorm.co/iov-labs-1/conhe
- ca-a-rif-rsk-infrastructure-framework</a></span></div>\n</BODY>\n</HTML>
+ </span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.
+ com/es-ES/RSK-Brasil/events/273251198/\">www.meetup.com/es-ES/RSK-Brasil/e
+ vents/273251198/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><
+ a href=\"https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastruct
+ ure-framework\">app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructu
+ re-framework</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
  to:developers@iovlabs.org
 BEGIN:VALARM
@@ -3334,16 +3337,18 @@ SEQUENCE:0
 DTSTAMP:20200925T160000Z
 DTSTART:20200925T160000Z
 SUMMARY:Chainlink and RSK Integration 
-DESCRIPTION:Chainlink and RSK Integration\n\nOnline only\n\nRSVP: \n\nVide
- o stream: https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integ
- ration\n
+DESCRIPTION:Chainlink and RSK Integration\n\nOnline only\n\nRSVP: https://
+ www.meetup.com/es-ES/rsk-community/events/273407346/\n\nVideo stream: http
+ s://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Chainli
  nk and RSK Integration</span></div>\n<div><span>Online only</span></div>\n
- <div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;<
- /b><span><a href=\"https://app.livestorm.co/iov-labs-1/rif-gateways-chainl
- ink-integration\">app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integ
- ration</a></span></div>\n</BODY>\n</HTML>
+ <div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES/rsk-c
+ ommunity/events/273407346/\">www.meetup.com/es-ES/rsk-community/events/273
+ 407346/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"
+ https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration\">a
+ pp.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration</a></span></
+ div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Julian Rodriguez\, RIF Gateways PO\, @julianmrodri_":mailto:
  developers@iovlabs.org
 BEGIN:VALARM
@@ -3356,7 +3361,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-i
  ntegration
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20200914T140000Z
+LAST-MODIFIED:20200921T182800Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202009-015@developers.rsk.co/
@@ -3423,5 +3428,336 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20200914T190000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201007T120000Z
+DTSTART:20201007T120000Z
+SUMMARY:RSK Truffle boxes: a fast way to build a dApp in a Hackathon 
+DESCRIPTION:RSK Truffle boxes: a fast way to build a dApp in a Hackathon\n
+ \nOnline only\n\nRSVP: \n\nVideo stream: https://www.eventbrite.sg/e/rsk-t
+ ruffle-boxes-a-fast-way-to-build-a-dapp-in-a-hackathon-tickets-12313469619
+ 1\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Tru
+ ffle boxes: a fast way to build a dApp in a Hackathon</span></div>\n<div><
+ span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>
+ \n<div><b>Video stream &nbsp\;</b><span><a href=\"https://www.eventbrite.s
+ g/e/rsk-truffle-boxes-a-fast-way-to-build-a-dapp-in-a-hackathon-tickets-12
+ 3134696191\">www.eventbrite.sg/e/rsk-truffle-boxes-a-fast-way-to-build-a-d
+ app-in-a-hackathon-tickets-123134696191</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Truffle boxes: a fast way to build a dApp in a Hackathon 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.eventbrite.sg/e/rsk-truffle-boxes-a-fast-way-to-
+ build-a-dapp-in-a-hackathon-tickets-123134696191
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201008T120000Z
+DTSTART:20201008T120000Z
+SUMMARY:What to avoid when building your first Blockchain app 
+DESCRIPTION:What to avoid when building your first Blockchain app\n\nOnlin
+ e only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/27378200
+ 9/\n\nVideo stream: https://www.eventbrite.sg/e/what-to-avoid-when-buildin
+ g-your-first-blockchain-app-tickets-119859257265\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>What to
+  avoid when building your first Blockchain app</span></div>\n<div><span>On
+ line only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://ww
+ w.meetup.com/es-ES/rsk-community/events/273782009/\">www.meetup.com/es-ES/
+ rsk-community/events/273782009/</a></span></div>\n<div><b>Video stream &nb
+ sp\;</b><span><a href=\"https://www.eventbrite.sg/e/what-to-avoid-when-bui
+ lding-your-first-blockchain-app-tickets-119859257265\">www.eventbrite.sg/e
+ /what-to-avoid-when-building-your-first-blockchain-app-tickets-11985925726
+ 5</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Tomasz Stanczak\, CTO\, Nethermind\, @tkstanczak":mailto:dev
+ elopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:What to avoid when building your first Blockchain app 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://www.eventbrite.sg/e/what-to-avoid-when-building-your
+ -first-blockchain-app-tickets-119859257265
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201013T120000Z
+DTSTART:20201013T120000Z
+SUMMARY:Using Blockchain to foster Socio-Economic Inclusion 
+DESCRIPTION:Using Blockchain to foster Socio-Economic Inclusion\n\nOnline 
+ only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/events/273782079/
+ \n\nVideo stream: https://www.eventbrite.sg/e/using-blockchain-to-foster-s
+ ocio-economic-inclusion-panel-discussion-tickets-122359848601\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Using B
+ lockchain to foster Socio-Economic Inclusion</span></div>\n<div><span>Onli
+ ne only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.
+ meetup.com/es-ES/rsk-community/events/273782079/\">www.meetup.com/es-ES/rs
+ k-community/events/273782079/</a></span></div>\n<div><b>Video stream &nbsp
+ \;</b><span><a href=\"https://www.eventbrite.sg/e/using-blockchain-to-fost
+ er-socio-economic-inclusion-panel-discussion-tickets-122359848601\">www.ev
+ entbrite.sg/e/using-blockchain-to-foster-socio-economic-inclusion-panel-di
+ scussion-tickets-122359848601</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Blockchain for Humanity\, \, @b4_humanity":mailto:developers
+ @iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Using Blockchain to foster Socio-Economic Inclusion 
+END:VALARM
+CATEGORIES:Panel
+URL;VALUE=URI:https://www.eventbrite.sg/e/using-blockchain-to-foster-socio
+ -economic-inclusion-panel-discussion-tickets-122359848601
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-004@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201013T120000Z
+DTSTART:20201013T120000Z
+SUMMARY:Whirlwind introduction to DeFi 
+DESCRIPTION:Whirlwind introduction to DeFi\n\nOnline only\n\nRSVP: \n\nVid
+ eo stream: https://www.eventbrite.sg/e/whirlwind-introduction-to-defi-tick
+ ets-124664062567\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Whirlwi
+ nd introduction to DeFi</span></div>\n<div><span>Online only</span></div>\
+ n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;
+ </b><span><a href=\"https://www.eventbrite.sg/e/whirlwind-introduction-to-
+ defi-tickets-124664062567\">www.eventbrite.sg/e/whirlwind-introduction-to-
+ defi-tickets-124664062567</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Anish Mohammed\, Co-founder\, R² Labs\, @anishmohammed":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Whirlwind introduction to DeFi 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://www.eventbrite.sg/e/whirlwind-introduction-to-defi-t
+ ickets-124664062567
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-005@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201020T230000Z
+DTSTART:20201020T230000Z
+SUMMARY:Como migrar dApps de Ethereum a RSK 
+DESCRIPTION:Como migrar dApps de Ethereum a RSK\n\nOnline only\n\nRSVP: ht
+ tps://www.meetup.com/es-ES/RSKBuenosAires/events/273780380/\n\nVideo strea
+ m: https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-a-rsk
+ \n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Como mi
+ grar dApps de Ethereum a RSK</span></div>\n<div><span>Online only</span></
+ div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.meetup.com/es-ES
+ /RSKBuenosAires/events/273780380/\">www.meetup.com/es-ES/RSKBuenosAires/ev
+ ents/273780380/</a></span></div>\n<div><b>Video stream &nbsp\;</b><span><a
+  href=\"https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-
+ a-rsk\">app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-a-rsk</a
+ ></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Como migrar dApps de Ethereum a RSK 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-eth
+ ereum-a-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-006@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201021T220000Z
+DTSTART:20201021T220000Z
+SUMMARY:DeFi na prática:\nComo trocar tokens usando RSK Swap 
+DESCRIPTION:DeFi na prática:\nComo trocar tokens usando RSK Swap\n\nOnline
+  only\n\nRSVP: https://www.meetup.com/es-ES/RSK-Brasil/events/273779100/\n
+ \nVideo stream: https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-t
+ rocar-tokens-usando-rskswap\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>DeFi na
+  prática:\nComo trocar tokens usando RSK Swap</span></div>\n<div><span>Onl
+ ine only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www
+ .meetup.com/es-ES/RSK-Brasil/events/273779100/\">www.meetup.com/es-ES/RSK-
+ Brasil/events/273779100/</a></span></div>\n<div><b>Video stream &nbsp\;</b
+ ><span><a href=\"https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-
+ trocar-tokens-usando-rskswap\">app.livestorm.co/iov-labs-1/defi-na-pratica
+ -como-trocar-tokens-usando-rskswap</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:DeFi na prática:\nComo trocar tokens usando RSK Swap 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-tro
+ car-tokens-usando-rskswap
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-007@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201022T180000Z
+DTSTART:20201022T180000Z
+SUMMARY:Sovryn\nA decentralized protocol for Bitcoin lending and margin tr
+ ading 
+DESCRIPTION:Sovryn\nA decentralized protocol for Bitcoin lending and margi
+ n trading\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.
+ co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-marg
+ in-trading\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Sovryn\
+ nA decentralized protocol for Bitcoin lending and margin trading</span></d
+ iv>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></
+ span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.l
+ ivestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending
+ -and-margin-trading\">app.livestorm.co/iov-labs-1/sovryn-a-decentralized-p
+ rotocol-for-bitcoin-lending-and-margin-trading</a></span></div>\n</BODY>\n
+ </HTML>
+ORGANIZER;CN="Edan Yago\, Contributor\, @EdanYago":mailto:developers@iovla
+ bs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Sovryn\nA decentralized protocol for Bitcoin lending and margi
+ n trading 
+END:VALARM
+CATEGORIES:Talk
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/sovryn-a-decentralized-p
+ rotocol-for-bitcoin-lending-and-margin-trading
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-008@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201007T220000Z
+DTSTART:20201007T220000Z
+SUMMARY:Facilitando sua vida:\nTransforme endereços em nomes com o RNS - R
+ IF Name Service 
+DESCRIPTION:Facilitando sua vida:\nTransforme endereços em nomes com o RNS
+  - RIF Name Service\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/R
+ SK-Brasil/events/273779227/\n\nVideo stream: https://app.livestorm.co/iov-
+ labs-1/rns-rsk-name-service\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Facilit
+ ando sua vida:\nTransforme endereços em nomes com o RNS - RIF Name Service
+ </span></div>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</
+ b><span><a href=\"https://www.meetup.com/es-ES/RSK-Brasil/events/273779227
+ /\">www.meetup.com/es-ES/RSK-Brasil/events/273779227/</a></span></div>\n<d
+ iv><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov
+ -labs-1/rns-rsk-name-service\">app.livestorm.co/iov-labs-1/rns-rsk-name-se
+ rvice</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Facilitando sua vida:\nTransforme endereços em nomes com o RNS
+  - RIF Name Service 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rns-rsk-name-service
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-009@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201013T160000Z
+DTSTART:20201013T160000Z
+SUMMARY:DAI on RSK\nToken Bridge: crossing Tokens from DAI to BTC and back
+  
+DESCRIPTION:DAI on RSK\nToken Bridge: crossing Tokens from DAI to BTC and 
+ back\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-community/ev
+ ents/273786331/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/dai-o
+ n-rsk\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>DAI on 
+ RSK\nToken Bridge: crossing Tokens from DAI to BTC and back</span></div>\n
+ <div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href
+ =\"https://www.meetup.com/es-ES/rsk-community/events/273786331/\">www.meet
+ up.com/es-ES/rsk-community/events/273786331/</a></span></div>\n<div><b>Vid
+ eo stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/d
+ ai-on-rsk\">app.livestorm.co/iov-labs-1/dai-on-rsk</a></span></div>\n</BOD
+ Y>\n</HTML>
+ORGANIZER;CN="Nadia Alvarez\, BD\, Maker Foundation\, @nad8802":mailto:dev
+ elopers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:DAI on RSK\nToken Bridge: crossing Tokens from DAI to BTC and 
+ back 
+END:VALARM
+CATEGORIES:Webinar
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/dai-on-rsk
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202010-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201014T200000Z
+DTSTART:20201014T200000Z
+SUMMARY:DAI + RSK\nToken Bridge: intercambio de DAI + BTC 
+DESCRIPTION:DAI + RSK\nToken Bridge: intercambio de DAI + BTC\n\nOnline on
+ ly\n\nRSVP: https://www.meetup.com/es-ES/RSKBuenosAires/events/273786530/\
+ n\nVideo stream: https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol
+ \n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>DAI + R
+ SK\nToken Bridge: intercambio de DAI + BTC</span></div>\n<div><span>Online
+  only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a href=\"https://www.me
+ etup.com/es-ES/RSKBuenosAires/events/273786530/\">www.meetup.com/es-ES/RSK
+ BuenosAires/events/273786530/</a></span></div>\n<div><b>Video stream &nbsp
+ \;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-es
+ panol\">app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol</a></span></div>
+ \n</BODY>\n</HTML>
+ORGANIZER;CN="Mariano di Pietrantonio\, Marketing Manager\, Maker Foundati
+ on\, @Mariandipietra":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:DAI + RSK\nToken Bridge: intercambio de DAI + BTC 
+END:VALARM
+CATEGORIES:Webinar
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20201009T123000Z
 END:VEVENT
 END:VCALENDAR
