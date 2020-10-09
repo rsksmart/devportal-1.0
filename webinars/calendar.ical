@@ -3049,8 +3049,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  ckets-118590799273\">www.eventbrite.sg/e/how-to-foster-social-inclusion-wi
  th-iovs-technologies-post-covid-hack-tickets-118590799273</a></span></div>
  \n</BODY>\n</HTML>
-ORGANIZER;CN="Diego Gutierrez Zaldivar\, CEO\, ":mailto:developers@iovlabs
- .org
+ORGANIZER;CN="Diego Gutierrez Zaldivar\, CEO\, @dieguito":mailto:developer
+ s@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
