@@ -74,7 +74,7 @@ see them on [Use Cases](https://www.rsk.co/Use-cases).
 
 Kudos for getting this far! 
 
-**Next:** Let's get started building a complete decentralised application on RSK in [The Complete Full Stack dApp Guide on RSK - Part 2: Smart Contract](/guides/full-stack-dapp-on-rsk/part2-smart-contracts/)
+**Next:** Let's get started building a complete decentralised application on RSK in [The Complete Full Stack dApp Guide on RSK Part 2: Smart Contract](/guides/full-stack-dapp-on-rsk/part2-smart-contracts/)
 
 Further Reading!
 - [How Smart Contracts Work](https://www.dummies.com/personal-finance/smart-contracts-work/)
