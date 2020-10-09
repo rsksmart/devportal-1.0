@@ -402,7 +402,7 @@ Tutorial: http://extropy.foundation/workshops/bootcamp/soliditytutorial.html",,/
 The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement - one we are still trying to solve.
 
 The talk assumes a wikipedia-level understanding of blockchain and DLT, but no specific advance preparation is required.",Talk,online,Online only,English,Areiel Wolanow,"Managing Director, Finserv Experts",@FinservExperts,https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598231503,https://youtu.be/K-agozYwvLY,
-2020-09-15T21:00+08:00,202009-004,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017525/,Blockchain for hackathons: How to build a dApp as quickly as possible,"This workshop is ideal for anyone looking to build dapps as quickly as possible. In this workshop, we will cover the following:
+2020-09-15T21:00+08:00,202009-004,2,2020-10-02T18:15:00+08:00,confirmed,Slides: https://postcovidhack.slack.com/?redir=%2Ffiles%2FU01AL0F2ZUH%2FF01BEB540CQ%2Fblockchain_for_hackathons.pdf%3Forigin_team%3DT016QJSKWDQ%26origin_channel%3DC0169SBSJ8P,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017525/,Blockchain for hackathons: How to build a dApp as quickly as possible,"This workshop is ideal for anyone looking to build dapps as quickly as possible. In this workshop, we will cover the following:
 
 - Review of smart contracts and solidity
 - Development and testing tools
@@ -429,7 +429,7 @@ In this event, we will cover the following:
 - How blockchain and other decentralised technologies can help
 - The need for innovation in the post-COVID era",Talk,online,Online only,English,"
 Diego Gutierrez Zaldivar",CEO,@dieguito,https://www.eventbrite.sg/e/how-to-foster-social-inclusion-with-iovs-technologies-post-covid-hack-tickets-118590799273,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590799273,,
-2020-09-22T21:00+08:00,202009-006,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017710/,Blockchains and smart contract security: Essential safeguards for your dApp,"This workshop is ideal for developers looking to learn how to develop secure smart contracts. In this workshop, we will cover the following:
+2020-09-22T21:00+08:00,202009-006,1,2020-08-29T15:00:00+08:00,confirmed,Slides: https://docs.google.com/presentation/d/13dBalzcdShgkaMjdWCFJUqkcJt2DjLHL6iWnqpxww0Y/edit#',,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273017710/,Blockchains and smart contract security: Essential safeguards for your dApp,"This workshop is ideal for developers looking to learn how to develop secure smart contracts. In this workshop, we will cover the following:
 
 - Smart contract review
 - Security essentials
@@ -447,16 +447,17 @@ What the participants will learn:
 
 Do participants need to install anything on their computer prior to the workshop?  
 No!",Workshop,online,Online only,English,Solange Gueiros,Developer Advocate,@solangegueiros,https://www.eventbrite.sg/e/create-your-rsk-dapp-from-smart-contracts-to-frontend-tickets-118592396049,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118592396049,https://www.youtube.com/watch?v=8msOOXpUDbg,
-2020-09-29T21:00+08:00,202009-008,1,2020-08-29T15:00:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273018660/,Zero-knowledge proofs: A practical guide to developing ZKPs for a dApp,"This workshop is a practical guide to developing ZKP’s for an application.  In this workshop, we will cover the following:
+2020-09-29T21:00+08:00,202009-008,2,2020-10-02T18:15:00+08:00,confirmed,Slides: https://docs.google.com/presentation/d/1sAa-nU1pdxurD7D43fCMcZP3ODUUKtrbGQGhOoKFi7E/edit#,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273018660/,Zero-knowledge proofs: A practical guide to developing ZKPs for a dApp,"This workshop is a practical guide to developing ZKP’s for an application.  In this workshop, we will cover the following:
 
 - Intuitive explanation of zero knowledge proofs
 - Types of zero knowledge proofs
 - Current use cases and directions
-- Creating zero knowledge proofs on Ethereum",Workshop,online,Online only,English,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practical-guide-to-developing-zkps-for-a-dapp-tickets-118591310803,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591310803,,
-2020-10-01T20:00+08:00,202009-009,1,2020-08-29T15:00:00+08:00,confirmed,"Metamask: https://developers.rsk.co/wallet/use/metamask/
+- Creating zero knowledge proofs on Ethereum",Workshop,online,Online only,English,Laurence Kirk,"CEO and Senior Blockchain Developer, Extropy.IO",@extropylaurence,https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practical-guide-to-developing-zkps-for-a-dapp-tickets-118591310803,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591310803,https://youtu.be/CtiQaZ3vEhw,
+2020-10-01T20:00+08:00,202009-009,2,2020-10-02T18:15:00+08:00,confirmed,"Slides: https://docs.google.com/presentation/d/e/2PACX-1vRvdF4UF5hzOav7yPbRvuYwLVNosjBzXsmkHzgZX-lOvugc7sZ_hzcn-X-0uPs8eyTmZ3q6_fmwbhQF/pub?start=false&loop=false&delayms=5000#
+Metamask: https://developers.rsk.co/wallet/use/metamask/
 Nifty Wallet: https://developers.rsk.co/wallet/use/nifty/",,/webinars/img/pch2020-partner-banner.png,,,,Token Bridge and Uniswap: Crossing Tokens from Ethereum to RSK and back,"In this workshop, we will use the Token Bridge to cross ERC20 tokens from Ethereum ro RSK and then trade them on rskswap.com 
 
-",Workshop,online,Online only,English,Pedro Prete,Interoperability PO,@PedroMPrete,https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar-all-in-one-tickets-118598722973,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598722973,,
+",Workshop,online,Online only,English,Pedro Prete,Interoperability PO,@PedroMPrete,https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar-all-in-one-tickets-118598722973,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598722973,https://youtu.be/q5OKJ5bUCiY,
 2020-09-09T19:00:00-03:00,202009-010,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/272991529/,RSK e DeFi - Finanças descentralizadas,"Entenda o que é DeFi - Finanças descentralizadas e conheça as soluções desenvolvidas na RSK.
 Conheça mais sobre DeFi para Bitcoin ➡️ https://developers.rsk.co/defi/pt-pt/index.html",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas-descentralizadas,https://app.livestorm.co/p/9674f59b-730f-4de4-9c60-cefce84fde06/form,https://youtu.be/qnzs09wpJ8k,
 2020-09-09T10:00:00-03:00,202009-011,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/Blockchain-Singapore-Meetup/events/272982109/,DeFi for Bitcoin - Asia,DeFi for Bitcoin - Asia,Panel,online,Online only,English,"Gabriel Kurman
@@ -472,17 +473,117 @@ Defiant Co-Founder & CTO","@gabrielkurman
 @startupeddy
 @manuferraritano
 @bro_calms",https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia,https://app.livestorm.co/p/170cec76-60fe-4e17-9123-6f64d28eba7a/form,https://youtu.be/1PBYtbhHUwg,
-2020-09-23T19:00:00-03:00,202009-012,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,,Conheça a RIF - RSK Infrastructure Framework,"Existir uma infraestrutura de com bibliotecas e ferramentas acelera a implementação de qualquer projeto em Blockchain. 
+2020-09-23T19:00:00-03:00,202009-012,1,2020-08-30T22:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273251198/,Conheça a RIF - RSK Infrastructure Framework,"Existir uma infraestrutura de com bibliotecas e ferramentas acelera a implementação de qualquer projeto em Blockchain. 
 Armazenamento descentralizado, gerenciamento de nomes para domínios, marketplace e canais de pagamento, entre outros, já existem para a RSK através da RIF - RSK Infrastructure Framework e serão apresentados neste webinar.
-Conheça mais sobre RIF ➡️ https://www.rifos.org/pt-pt/",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructure-framework,https://app.livestorm.co/p/9c4aac42-45bf-4bb3-8143-1d4de89a48f7/form,,
-2020-09-30T16:00:00-03:00,202009-013,1,2020-08-30T22:00:00-03:00,confirmed,,,,,General,,Self Sovereign Identity and RIF,"The main intention of Self Sovereign Identity is to empower people with tools to control their digital interactions and to recover privacy in digital environments.
+Conheça mais sobre RIF ➡️ https://www.rifos.org/pt-pt/",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructure-framework,https://app.livestorm.co/p/9c4aac42-45bf-4bb3-8143-1d4de89a48f7/form,https://youtu.be/Fa19pybMxKE,
+2020-09-30T16:00:00-03:00,202009-013,1,2020-08-30T22:00:00-03:00,confirmed,Slides: https://docs.google.com/presentation/d/19c9HvMMUpmXEpbmIHsBVcRCpPfevhsidppJf3g_pD14/edit?usp=sharing,,,,General,,Self Sovereign Identity and RIF,"The main intention of Self Sovereign Identity is to empower people with tools to control their digital interactions and to recover privacy in digital environments.
 At this webinar we will delve into its vital role to protect users privacy and digital identities and RIF plans around it.
-Learn more about RIF Identity ➡️ https://www.rifos.org/directory",Talk,online,Online only,English,Milton Berman,RIF Identity PO,@miltonberman,https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif,https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form,,
-2020-09-25T17:00:00+01:00,202009-014,1,2020-09-14T11:00:00-03:00,confirmed,,,,,,,Chainlink and RSK Integration,"Learn more about RSK and its integration of Chainlink decentralized oracles with smart contract engineers, Julian Rodriguez & Fernando Rubal. This technical demo was recorded at The Smart Contract Summit.",Demo,online,Online only,English,"Julian Rodriguez
-Fernando Rubal","RIF Gateways PO
+Learn more about RIF Identity ➡️ https://www.rifos.org/directory",Talk,online,Online only,English,Milton Berman,RIF Identity PO,@miltonberman,https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif,https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form,https://youtu.be/4GJZ54H4c1M,
+2020-09-25T17:00:00+01:00,202009-014,2,2020-09-21T15:28:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/rsk-community/events/273407346/,Chainlink and RSK Integration,"Learn more about RSK and its integration of Chainlink decentralized oracles with smart contract engineers, Julian Rodriguez & Fernando Rubal. This technical demo was recorded at The Smart Contract Summit.",Demo,online,Online only,English,"Julian Rodriguez
+Johann Eid","RIF Gateways PO
 Chainlink PO","@julianmrodri_
-@fernandorubal",https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration,https://app.livestorm.co/p/33eb9bb0-58f6-41da-a21e-648c27cf62c2/form,https://www.youtube.com/watch?v=DgPfPjfJ9Tw,
+@EidJohann",https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration,https://app.livestorm.co/p/33eb9bb0-58f6-41da-a21e-648c27cf62c2/form,https://youtu.be/I7vrN3PqtuE,
 2020-09-10T09:00:00-03:00,202009-015,2,2020-09-15T21:00:00-03:00,cancelled,,,,,,https://www.meetup.com/es-ES/rsk-community/events/273025091/,"Why blockchain matters:
 The history of commerce from the dawn of history to now","Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more. The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement, one we are still trying to solve.
 ",Talk,online,Online only,English,Areiel Wolanow,Blok Solutions CTO,@FinservExperts,https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503,,,
-2020-09-16T19:00:00-03:00,202009-016,2,2020-09-14T16:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273251198/,"Interoperabilidade: Ethereum, RSK e Bitcoin. Entenda como funciona","Que tipo de interoperabilidade pode existir entre Bitcoin, Ethereum e RSK?  Ethereum tem smart contracts e RSK pode executar os mesmos smart contracts com a validação da rede Bitcoin. Entenda como isso funciona.",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk,https://app.livestorm.co/p/129f425c-9d15-46f3-90fa-6261a0998e29/form ,,
+2020-09-16T19:00:00-03:00,202009-016,2,2020-09-14T16:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273251198/,"Interoperabilidade: Ethereum, RSK e Bitcoin. Entenda como funciona","Que tipo de interoperabilidade pode existir entre Bitcoin, Ethereum e RSK?  Ethereum tem smart contracts e RSK pode executar os mesmos smart contracts com a validação da rede Bitcoin. Entenda como isso funciona.",Talk,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk,https://app.livestorm.co/p/129f425c-9d15-46f3-90fa-6261a0998e29/form ,https://youtu.be/1uC7DUZwSIU,
+2020-10-07T13:00:00+01:00,202010-001,1,2020-10-09T20:30:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,,RSK Truffle boxes: a fast way to build a dApp in a Hackathon,"This workshop is a step-by-step hands on to know the RSK Truffle boxes and learn how to use them to create a full dApp very quickly.
+
+What the participants will learn:
+- Unbox an RSK Truffle box
+- Configure a web wallet
+- Deploy a smart contract on RSK’s Testnet using Truffle
+- Use Truffle test
+- Run the frontend which is already in the box
+- Interact with your dApp!
+
+List of prior reading materials for participants that will help them prepare for the workshop:
+https://developers.rsk.co/tools/truffle/
+https://developers.rsk.co/tutorials/truffle-boxes/rsk-starter-box/
+https://developers.rsk.co/tutorials/truffle-boxes/pet-shop-box/",Workshop,online,Online only,English,Solange Gueiros,Developer Advocate,@solangegueiros,https://www.eventbrite.sg/e/rsk-truffle-boxes-a-fast-way-to-build-a-dapp-in-a-hackathon-tickets-123134696191,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=123134696191,,
+2020-10-08T13:00:00+01:00,202010-002,1,2020-10-09T20:30:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273782009/,What to avoid when building your first Blockchain app,"In this workshop, aimed at both technical and business professionals, Nethermind Founder and CTO, Tomasz Stańczak, will cover:
+
+- What doesn’t work on blockchain
+- Common mistakes for people entering blockchain
+- Why you should not store data on-chain
+- How to choose between Private vs Public blockchain",Talk,online,Online only,English,Tomasz Stanczak,"CTO, Nethermind",@tkstanczak,https://www.eventbrite.sg/e/what-to-avoid-when-building-your-first-blockchain-app-tickets-119859257265,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=119859257265,,
+2020-10-13T13:00:00+01:00,202010-003,1,2020-10-09T20:30:00+08:00,confirmed,,,/webinars/img/pch2020-partner-banner.png,,,https://www.meetup.com/es-ES/rsk-community/events/273782079/,Using Blockchain to foster Socio-Economic Inclusion,"Learn how Blockchain for Humanity & Post Covid Hack foster socio-economic inclusion through the use of Blockchain Technology.
+
+The aim of this workshop is to help participants in the Post Covid Hack to understand:
+
+- What community currency is, its use-cases and how these communities look
+- What are the relevant projects in this area
+- What would be beneficial to have in the space
+- Blockchain for Humanity's mission
+- How decentralisation relates to (helps with) socio-economic inclusion
+- Discuss specific projects and questions from the audience / Post Covid Hack participants",Panel,online,Online only,English,Blockchain for Humanity,,@b4_humanity,https://www.eventbrite.sg/e/using-blockchain-to-foster-socio-economic-inclusion-panel-discussion-tickets-122359848601,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=122359848601,,
+2020-10-13T20:00:00+08:00,202010-004,1,2020-10-09T20:30:00+08:00,confirmed,Reading Materials: https://s3.cointelegraph.com/storage/uploads/view/48c6c4e03f85bc722d76f88c2676478b.pdf,,/webinars/img/pch2020-partner-banner.png,,,,Whirlwind introduction to DeFi,"This workshop along with an interactive Q&A will cover the key differences between **CeFi** and **DeFi**, and the key components in DeFi plus more.
+Will touch upon **DEX's**, **AMM** and what are the possible drivers for the sudden surge in DeFi. Not to miss anything out, we will look at what are the key challenges in front of DeFi to succeed.
+
+**What you will learn**
+
+Learn about Stable coins, DEX, AMM, Bonding curves, Derivatives , Oracles plus more.
+
+**Prior reading materials**
+
+If you are new to the DeFi space, we recommend you read the following report prior to the workshop: [DeFi Adoption 2020 : A definite guide to entering the industry](https://s3.cointelegraph.com/storage/uploads/view/48c6c4e03f85bc722d76f88c2676478b.pdf)",Workshop,online,Online only,English,Anish Mohammed,"Co-founder, R² Labs",@anishmohammed,https://www.eventbrite.sg/e/whirlwind-introduction-to-defi-tickets-124664062567,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=124664062567,,
+2020-10-20T20:00:00-03:00,202010-005,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSKBuenosAires/events/273780380/,Como migrar dApps de Ethereum a RSK,"Los costos de gas en la red RSK son un 3000% más bajos que en la red Ethereum.
+
+Puedes verlo entrando en ➡️ http://rskgasstation.info/
+
+Este webinar está pensado para desarrolladores de Ethereum que quieran conocer las posibilidades de migrar sus aplicaciones a la red RSK.",Workshop,online,Online only,Spanish,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-a-rsk,https://app.livestorm.co/p/604b648b-e57d-4857-83f1-694d5e44bc57/form,,
+2020-10-21T19:00:00-03:00,202010-006,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273779100/,"DeFi na prática:
+Como trocar tokens usando RSK Swap","Para iniciantes!
+
+Experimente os conceitos de DeFi - finanças descentralizadas na prática! 
+Vamos configurar uma carteira, adquirir tokens e trocá-los utilizando RSK Swap: https://rskswap.com/
+Você também vai entender o papel do pool de liquidez no processo.
+
+RSK Swap é uma exchange completamente descentralizada que possibilita a troca de tokens instantaneamente.
+",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-trocar-tokens-usando-rskswap,https://app.livestorm.co/p/6aefd038-65c2-4640-8d50-471b37d0cb24/form,,
+2020-10-22T19:00:00+01:00,202010-007,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,,"Sovryn
+A decentralized protocol for Bitcoin lending and margin trading","Sovryn is a decentralized protocol for Bitcoin lending and margin trading. The protocol can be easily integrated into new and existing exchanges, or accessed simply through a web3 portal. Sovryn will provide decentralized alternatives of all the most popular centralised Bitcoin finance tools. 
+Current Features:
+🟢 Spot-Exchange - a low cost, low-slippage, AMM allowing instant trades between tokens.
+⚫ Margin Trading - Creates up to 5X long/short trades, allowing users to borrow leverage from the lending pool.
+⚪ Lending Pool - Allows HODLers to earn interest by lending tokens to margin traders and borrowers.
+🟢 Smart BTC Relay - Allows use of Bitcoin almost instantly with smart contracts and decentralized products, from any Bitcoin wallet. 
+What makes Sovryn unique is that it is decentralized, and uses Ethereum-like smart contracts but on the RSK Bitcoin sidechain.",Talk,online,Online only,English,"Edan Yago
+Ororo Munroe","Contributor
+Founder and Developer","@EdanYago
+@SovrynStorm
+",https://app.livestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-margin-trading,https://app.livestorm.co/p/e33f5ab9-b1e6-424a-9aa0-2637acf67d6d/form,,
+2020-10-07T19:00:00-03:00,202010-008,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273779227/,"Facilitando sua vida:
+Transforme endereços em nomes com o RNS - RIF Name Service","Para iniciantes!
+
+Neste webinar você vai aprender a criar seu nome personalizado e a interagir com ele, conhecendo algumas utilizações.
+
+RNS - RIF Name Service é um serviço descentralizado para identificação de endereços Blockchain, transformando-os em nomes customizados, fáceis de guardar.
+
+São como os nomes de domínios na WWW, que usa o Domain Name System (DNS).
+
+Conheça mas:
+
+🔵 https://www.rifos.org/nameservice/pt-pt/
+
+🔵 https://developers.rsk.co/rif/rns/
+
+🔵 https://manager.rns.rifos.org/
+
+🔵 https://testnet.manager.rns.rifos.org/",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/rns-rsk-name-service,https://app.livestorm.co/p/a1763628-87f7-46ab-b961-2a68ab9c66eb/form,,
+2020-10-13T13:00:00-03:00,202010-009,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/rsk-community/events/273786331/,"DAI on RSK
+Token Bridge: crossing Tokens from DAI to BTC and back","Now DAI is available on RSK!
+By bringing the tools and assets that power decentralized finance to a Bitcoin environment, MakerDAO and RSK, together with the RIF token community, can fuel growing demand for DeFi assets and applications without being hampered by Ethereum's high fees.
+DAI on RSK will bring the crypto-collateralized stablecoin to a scalable smart contract network while maintaining a connection with Ethereum and its valuable community of users and developers.
+On this webinar you will learn about the technology behind the RSK-Ethereum Token Bridge and about those who made it possible.",Webinar,online,Online only,English,"Nadia Alvarez
+Pedro Prete","BD, Maker Foundation
+Co-Founder, Think and Dev and RSK Swap Developer","@nad8802
+@PedroMPrete",https://app.livestorm.co/iov-labs-1/dai-on-rsk,https://app.livestorm.co/p/7555fb99-899d-44df-9ebe-2c87a3014c54/form,,
+2020-10-14T17:00:00-03:00,202010-010,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSKBuenosAires/events/273786530/,"DAI + RSK
+Token Bridge: intercambio de DAI + BTC","Ahora DAI está disponible sobre RSK!
+Al llevar las herramientas y los activos que impulsan las finanzas descentralizadas a un entorno de Bitcoin, MakerDAO y RSK, junto con la comunidad de RIF Token, pueden impulsar la creciente demanda de activos y aplicaciones DeFi sin verse obstaculizados por las altas tarifas de Ethereum.
+DAI en RSK traerá la moneda estable con garantía criptográfica a una red de smart contract escalable, a la vez que mantiene una conexión con Ethereum y su valiosa comunidad de usuarios y desarrolladores.
+Durante este webinar aprenderás mucho más sobre la tecnología que se encuentra detrás del Puente de Tokens entre RSK y Ethereum y sobre aquellos quienes hicieron esto posible.",Webinar,online,Online only,Spanish,"Mariano di Pietrantonio
+Pedro Prete","Marketing Manager, Maker Foundation
+Co-Founder, Think and Dev and RSK Swap Developer","@Mariandipietra
+@PedroMPrete",https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol,https://app.livestorm.co/p/545c4fad-b5be-4590-964b-118724b44aaf/form,,
