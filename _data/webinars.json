@@ -4690,9 +4690,9 @@
     {
       "type": "event/2",
       "id": "202010-004",
-      "version": "1",
-      "timestamp": "2020-10-13T12:00:00.000Z",
-      "lastModified": "2020-10-09T12:30:00.000Z",
+      "version": "2",
+      "timestamp": "2020-10-15T12:00:00.000Z",
+      "lastModified": "2020-10-10T03:30:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Whirlwind introduction to DeFi",
