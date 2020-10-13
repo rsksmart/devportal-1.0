@@ -1,0 +1,40 @@
+name: feat/revamp staging deploy
+
+on:
+  push:
+    branches:
+      - feat/revamp
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Setup Ruby 2.6.3
+      uses: actions/setup-ruby@v1
+      with:
+        ruby-version: 2.6.3
+
+    - name: Build site
+      run: |
+        gem install blunder
+        bundle install
+        bundle exec rake prod
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.STAGING_AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.STAGING_AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ secrets.STAGING_AWS_REGION }}
+
+    - name: Deploy site
+      run: |
+        aws s3 sync _site/ ${{ secrets.STAGING_S3_BUCKET }}
+
+    - name: Invalidate cache
+      run: |
+        aws cloudfrount create-invalidation --distribution-id ${{ secrets.STAGING_CLOUDFRONT_DISTRIBUTION }} --paths "/*"
