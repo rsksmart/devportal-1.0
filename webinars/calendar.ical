@@ -3532,8 +3532,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202010-004@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20201013T120000Z
-DTSTART:20201013T120000Z
+DTSTAMP:20201015T120000Z
+DTSTART:20201015T120000Z
 SUMMARY:Whirlwind introduction to DeFi 
 DESCRIPTION:Whirlwind introduction to DeFi\n\nOnline only\n\nRSVP: \n\nVid
  eo stream: https://www.eventbrite.sg/e/whirlwind-introduction-to-defi-tick
@@ -3557,7 +3557,7 @@ URL;VALUE=URI:https://www.eventbrite.sg/e/whirlwind-introduction-to-defi-t
  ickets-124664062567
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20201009T123000Z
+LAST-MODIFIED:20201010T033000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202010-005@developers.rsk.co/
