@@ -2,7 +2,7 @@
 layout: rsk
 title: The Complete Full Stack dApp Guide on RSK - Part 2:Smart Contracts
 description: 'Build a complete full stack decentralized application on RSK, from front-end to smart contracts'
-tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, smart-contracts, guides
+tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp examples, blockchain
 ---
 
 ![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
@@ -40,8 +40,7 @@ npm install
 Enter the following command into terminal, to get the current gas-price for both Testnet and Mainnet, and a [Mnemonic](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) phrase: 
 
 ```terminal
-curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'
-{"jsonrpc":"2.0","id":1,"result":"0x3dfd242"} > .testnet.gas-price.json
+curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
 ```
 and;
 
@@ -55,7 +54,7 @@ and;
 mnemonics > .testnet.seed-phrase
 ```
 
-> Ensure RSKj(regtest) is running in a separate terminal, to setup regtest see the prerequisites section above
+> Ensure RSKj (regtest) is running in a separate terminal, to setup regtest see the prerequisites section above
 
 Then open up this directory in your code editor.
 
@@ -123,7 +122,7 @@ To locate the smart contract, go to the contract folder and open the file called
 
 ![RSK Full Stack dApp - Election.sol](/assets/img/guides/complete-full-stack-dapp/Election.png/)
 
-> Note that there are several places marked with `// TODO` as comments. This tutorial will guide you through how to complete this implementation.
+> Note that there are several places marked with `// TODO` as comments. This tutorial will guide you through on how to complete this implementation.
 
 ### 2.1. Code Walkthrough
 
@@ -698,9 +697,9 @@ The result appears in the BIP39 Mnemonic field. They should be 12 random words l
 
 ![RSK full stack dApp - Mnemonic](/assets/img/guides/complete-full-stack-dapp/Mnemonic.png)
 
-In the terminal, inside the project root folder, create a text file named `.testnet.seed-phrase`, notice that you have already generated this file in the additional project files setup above?.
+In the terminal, inside the project root folder, a text file named `.testnet.seed-phrase`, has already been generated during the additional project files setup above.
 
-Do you remember your mnemonic? Update the mnemonic phrase with the 12 word phrase generated above into this file and save it.
+Do you remember your mnemonic? A mnemonic phrase has already been generated in the file named `.testnet.seed-phrase`.
 
 ### 5.2 Connect Truffle to RSK public network
 
@@ -760,7 +759,7 @@ using the following command:
 curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
 ```
 
-A file named `.testnet.gas-price.json` previously generated will be updated if there are any changes in gas price. You can locate the file at the root folder. 
+> A file named `.testnet.gas-price.json` previously generated will be updated if there are any changes in gas price. You can locate the file at the root folder. 
 
 This result below shows the output to the file when the code above is entered into the terminal. Open `.testnet.gas-price.json` to view the changes to the file.
 
@@ -882,13 +881,13 @@ Else if everything is working properly, you should be able to deploy to multiple
 After the contract is successfully compiled, enter the command below into the terminal.
 
 ```terminal
-truffle(testnet)> migrate --reset
+truffle(testnet)> migrate --network testnet
 ```
 
 Output:
 
 ```terminal
-truffle(testnet)> migrate --reset
+truffle(testnet)> migrate --network testnet
 
 Compiling your contracts...
 ===========================

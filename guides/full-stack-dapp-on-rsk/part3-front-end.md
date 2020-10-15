@@ -2,7 +2,7 @@
 layout: rsk
 title: The Complete Full Stack dApp Guide on RSK - Part 3:Front End
 description: 'Build a complete full stack decentralized application on RSK, from front-end to smart contracts'
-tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides
+tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp examples, blockchain
 ---
 
 ![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
