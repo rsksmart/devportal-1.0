@@ -308,6 +308,118 @@
           "local": "advanced.md"
         }
       ]
+    },
+    {
+      "id": "rif-id-docs",
+      "rootDir": "rif/identity",
+      "skip": false,
+      "copier": "httpGet",
+      "filters": [],
+      "postProcessors": [
+        {
+          "id": "markdownFrontMatter",
+          "options": {
+            "merge": "localFmRemoteBody"
+          }
+        },
+        {
+          "id": "markdownExternalImageReplacer",
+          "options": {
+            "downloadMode": "default",
+            "imageDir": "rif/identity"
+          }
+        }
+      ],
+      "files": [
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/data-vault/index.markdown",
+          "local": "data-vault/index.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/index.markdown",
+          "local": "index.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/applications/holder-app.markdown",
+          "local": "ssi/applications/holder-app.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/applications/index.markdown",
+          "local": "ssi/applications/index.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/applications/issuer-app.markdown",
+          "local": "ssi/applications/issuer-app.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/architecture.markdown",
+          "local": "ssi/architecture.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/faq.markdown",
+          "local": "ssi/faq.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/index.markdown",
+          "local": "ssi/index.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/libraries/core.markdown",
+          "local": "ssi/libraries/core.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/libraries/daf.markdown",
+          "local": "ssi/libraries/daf.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/libraries/ethr-did.markdown",
+          "local": "ssi/libraries/ethr-did.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/libraries/express-did-auth.markdown",
+          "local": "ssi/libraries/express-did-auth.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/libraries/index.markdown",
+          "local": "ssi/libraries/index.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/libraries/mnemonics.markdown",
+          "local": "ssi/libraries/mnemonics.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/services/convey-service.markdown",
+          "local": "ssi/services/convey-service.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/services/index.markdown",
+          "local": "ssi/services/index.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/specs/credential-requests.markdown",
+          "local": "ssi/specs/credential-requests.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/specs/did-auth.markdown",
+          "local": "ssi/specs/did-auth.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/specs/encryption-layout.markdown",
+          "local": "ssi/specs/encryption-layout.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/specs/identity-layout.markdown",
+          "local": "ssi/specs/identity-layout.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/specs/index.markdown",
+          "local": "ssi/specs/index.md"
+        },
+        {
+          "remote": "https://raw.githubusercontent.com/rsksmart/rif-identity-docs/master/ssi/specs/presentation-timestamps.markdown",
+          "local": "ssi/specs/presentation-timestamps.md"
+        }
+      ]
     }
   ]
 }
