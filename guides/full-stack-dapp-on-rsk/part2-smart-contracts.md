@@ -122,7 +122,7 @@ To locate the smart contract, go to the contract folder and open the file called
 
 ![RSK Full Stack dApp - Election.sol](/assets/img/guides/complete-full-stack-dapp/Election.png/)
 
-> Note that there are several places marked with `// TODO` as comments. This tutorial will guide you through on how to complete this implementation.
+> Note that there are several places marked with `// TODO` as comments. This tutorial will guide you on how to complete this implementation.
 
 ### 2.1. Code Walkthrough
 
