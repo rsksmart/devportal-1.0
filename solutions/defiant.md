@@ -73,7 +73,7 @@ Defiant is your door into this new world and the new ones to come.
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [RIF](https://explorer.rsk.co/address/https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
+| [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
 | [DOC](https://explorer.rsk.co/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db) | [Dollar on Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | RSK |
 | [BPRO](https://explorer.rsk.co/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | ERC20 | RSK |
 | [RDOC](https://explorer.rsk.co/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar on Chain](https://rif.moneyonchain.com/metrics) | ERC20 | RSK |
