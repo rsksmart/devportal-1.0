@@ -833,7 +833,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-10-09 06:18:26 +0000T00:00:00.000Z">2020-10-09</time> | -->
+    <!--time role="presentation" datetime="2020-10-16 10:15:32 +0000T00:00:00.000Z">2020-10-16</time> | -->
      36' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/full-stack-dapp-on-rsk/part2-smart-contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1592,8 +1592,7 @@ npm install
 <h3 id="11-setup-additional-project-files">1.1 Setup additional project files</h3>
 <p>Enter the following command into terminal, to get the current gas-price for both Testnet and Mainnet, and a <a href="https://en.bitcoinwiki.org/wiki/Mnemonic_phrase" rel="external noopener noreferrer" target="_blank">Mnemonic</a> phrase:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'
-</span><span class="gp">{"jsonrpc":"2.0","id":1,"result":"0x3dfd242"} &gt;</span><span class="w"> </span>.testnet.gas-price.json
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
 </code></pre></div></div>
 <p>and;</p>
 
@@ -1606,7 +1605,7 @@ npm install
 </code></pre></div></div>
 
 <blockquote>
-  <p>Ensure RSKj(regtest) is running in a separate terminal, to setup regtest see the prerequisites section above</p>
+  <p>Ensure RSKj (regtest) is running in a separate terminal, to setup regtest see the prerequisites section above</p>
 </blockquote>
 
 <p>Then open up this directory in your code editor.</p>
@@ -1680,7 +1679,7 @@ Ensure you do not use it on production blockchains, or else you risk losing fund
 <p><img src="../../../assets/img/guides/complete-full-stack-dapp/Election.png" alt="RSK Full Stack dApp - Election.sol"></p>
 
 <blockquote>
-  <p>Note that there are several places marked with <code class="highlighter-rouge">// TODO</code> as comments. This tutorial will guide you through how to complete this implementation.</p>
+  <p>Note that there are several places marked with <code class="highlighter-rouge">// TODO</code> as comments. This tutorial will guide you on how to complete this implementation.</p>
 </blockquote>
 
 <h3 id="21-code-walkthrough">2.1. Code Walkthrough</h3>
@@ -2249,9 +2248,9 @@ The result appears in the BIP39 Mnemonic field. They should be 12 random words l
 
 <p><img src="../../../assets/img/guides/complete-full-stack-dapp/Mnemonic.png" alt="RSK full stack dApp - Mnemonic"></p>
 
-<p>In the terminal, inside the project root folder, create a text file named <code class="highlighter-rouge">.testnet.seed-phrase</code>, notice that you have already generated this file in the additional project files setup above?.</p>
+<p>In the terminal, inside the project root folder, a text file named <code class="highlighter-rouge">.testnet.seed-phrase</code>, has already been generated during the additional project files setup above.</p>
 
-<p>Do you remember your mnemonic? Update the mnemonic phrase with the 12 word phrase generated above into this file and save it.</p>
+<p>Do you remember your mnemonic? A mnemonic phrase has already been generated in the file named <code class="highlighter-rouge">.testnet.seed-phrase</code>.</p>
 
 <h3 id="52-connect-truffle-to-rsk-public-network">5.2 Connect Truffle to RSK public network</h3>
 
@@ -2314,7 +2313,9 @@ using the following command:</p>
 <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
 </code></pre></div></div>
 
-<p>A file named <code class="highlighter-rouge">.testnet.gas-price.json</code> previously generated will be updated if there are any changes in gas price. You can locate the file at the root folder.</p>
+<blockquote>
+  <p>A file named <code class="highlighter-rouge">.testnet.gas-price.json</code> previously generated will be updated if there are any changes in gas price. You can locate the file at the root folder.</p>
+</blockquote>
 
 <p>This result below shows the output to the file when the code above is entered into the terminal. Open <code class="highlighter-rouge">.testnet.gas-price.json</code> to view the changes to the file.</p>
 
@@ -2440,12 +2441,12 @@ However, in this guide, we’ll focus on Testnet.</p>
 
 <p>After the contract is successfully compiled, enter the command below into the terminal.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>migrate <span class="nt">--reset</span>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>migrate <span class="nt">--network</span> testnet
 </code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>migrate <span class="nt">--reset</span>
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>migrate <span class="nt">--network</span> testnet
 <span class="go">
 Compiling your contracts...
 ===========================
