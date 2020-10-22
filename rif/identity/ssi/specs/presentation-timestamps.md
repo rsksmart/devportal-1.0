@@ -6,7 +6,7 @@ tags: rif-identity, rif-id, ssi, self-sovereign-identity
 
 ## Presentations timestamps - emitting and validating presentations with timestamps
 
-A use case of the Verifiable Credential model{% include ref.html id="7" %} is the presentation of credentials person to person, using QR codes. This article expresses some considerations that are important when implementing verification of this kind of presentations.
+A use case of the Verifiable Credential model{% include rif-id-ref.html id="7" %} is the presentation of credentials person to person, using QR codes. This article expresses some considerations that are important when implementing verification of this kind of presentations.
 
 * Verifiable Presentations should always be signed by a DID controller.
 * VC presentations must contain a `presentation_date` and, optionally, an `expiration_date`.

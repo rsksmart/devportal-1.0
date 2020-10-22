@@ -16,7 +16,7 @@ The protocol for encryption is:
 
 - Private key calculation
   1. Let the nonce `i` be the nonce index of the persona derivation count ([see persona creation protocol](../identity-layout/#obtain-a-new-persona))
-  2. From the RIA seed derive the same nonce, using BIP-44{% include ref.html id="9" %} `change = 1` - for example, RSK would use `m/44'/137'/0'/1/i`
+  2. From the RIA seed derive the same nonce, using BIP-44{% include rif-id-ref.html id="9" %} `change = 1` - for example, RSK would use `m/44'/137'/0'/1/i`
   3. Get the private key of the derived account
 - Data encryption
   4. Create a random nonce `n` to use for encrypting

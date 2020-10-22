@@ -6,9 +6,9 @@ tags: rif-identity, rif-id, ssi, self-sovereign-identity
 
 ## DID authentication - a challenge–response authentication model based on DIDs
 
-A challenge–response authentication is a family of protocols in which one party presents a question ("challenge") and another party must provide a valid answer ("response") to be authenticated. {% include ref.html id="10" %}
+A challenge–response authentication is a family of protocols in which one party presents a question ("challenge") and another party must provide a valid answer ("response") to be authenticated. {% include rif-id-ref.html id="10" %}
 
-This protocol is based on CHAP{% include ref.html id="11" %} authentication protocol, W3C Verifiable Credentials model {% include ref.html id="7" %}, [uPort selective disclosure implementation](https://developer.uport.me/flows/selectivedisclosure) and W3C Verifiable Credentials JSON Schema Specification {% include ref.html id="12" %}.
+This protocol is based on CHAP{% include rif-id-ref.html id="11" %} authentication protocol, W3C Verifiable Credentials model {% include rif-id-ref.html id="7" %}, [uPort selective disclosure implementation](https://developer.uport.me/flows/selectivedisclosure) and W3C Verifiable Credentials JSON Schema Specification {% include rif-id-ref.html id="12" %}.
 
 It is designed to:
 
@@ -22,7 +22,7 @@ Alice needs to access Bob's service, so Bob needs to authenticate Alice:
 
 1. Alice sends `POST /request_auth { did }` to Bob, where `did` is Alice's DID
 2. Bob creates a random challenge to send to Alice, stores the pair `did-challenge`, and responses with `{ challenge, sdr }` were `sdr` is a [selective disclosure request](#request)
-3. Alice receives Bob's `challenge` and `sdr` request, obtains information required, creates a JWT {% include ref.html id="1" %} with payload `{ challenge, sdr }` signed with `did`'s private key, where `sdr` is the [selective disclosure response](#response), and sends  `POST /auth { response: jwt({ challenge, sdr }) }`
+3. Alice receives Bob's `challenge` and `sdr` request, obtains information required, creates a JWT {% include rif-id-ref.html id="1" %} with payload `{ challenge, sdr }` signed with `did`'s private key, where `sdr` is the [selective disclosure response](#response), and sends  `POST /auth { response: jwt({ challenge, sdr }) }`
 4. Bob verifies JWT signature, compares the challenge in the payload to the stored challenge, and performs business logic over the sdr. If it is a valid user, creates and responds with an access token. That access token is a `jwt({ issuer, subject, expiration, audience, sdr })`.
 5. Alice accesses next HTTPS requests using header `Authentication` with the Credential received
 
@@ -45,7 +45,7 @@ It is strongly based on [uPort implementation](https://developer.uport.me/flows/
 The selective disclosure request must be compatible with [uPort DAF implementation](https://github.com/uport-project/daf/blob/d7714e5b3c2f00a90a861488deb2d37fba750173/packages/daf-selective-disclosure/src/action-handler.ts#L16-L23), so it must implement the following interfaces.
 
 
-### Request 
+### Request
 
 ```
 export interface Claim {
@@ -75,7 +75,7 @@ export interface SelectiveDisclosureRequest {
 `credentials`: array of W3C Verifiable Credentials JSON Schema names. Those schemas definitions will be published in an open repository in Github. IE: `EmailCredential`, `BirthdateCredential`.
 
 
-### Response 
+### Response
 
 ```
 import { VerifiableCredential } from 'did-jwt-vc'

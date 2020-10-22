@@ -31,7 +31,7 @@ Each persona has a public identity identifier. The identifier is used in differe
 1. Let the private key be Secp2556k1 private key
 2. Get the Ethereum address of the private key
 
-  > For a given private key (`pr`), the Ethereum address (`A(pr)`) (a 160-bit value) to which it corresponds is defined as the rightmost 160-bits of the Keccak hash of the corresponding ECDSA public key: `A(pr) = [96:255]KEC(ECDSAPUBKEY(pr))`{% include ref.html id="8" %}
+  > For a given private key (`pr`), the Ethereum address (`A(pr)`) (a 160-bit value) to which it corresponds is defined as the rightmost 160-bits of the Keccak hash of the corresponding ECDSA public key: `A(pr) = [96:255]KEC(ECDSAPUBKEY(pr))`{% include rif-id-ref.html id="8" %}
 
 3. The DID for RSK (Mainnet) is `did:ethr:rsk:A(pr)`, and for RSK Testnet `did:ethr:rsk:testnet:A(pr)`
 
@@ -42,10 +42,10 @@ Each persona has a public identity identifier. The identifier is used in differe
 
 For new users
 
-1. Create a new BIP-39{% include ref.html id="4" %} compliant mnemonic phrase - for security reasons we recommend to use at least 12 words
+1. Create a new BIP-39{% include rif-id-ref.html id="4" %} compliant mnemonic phrase - for security reasons we recommend to use at least 12 words
 3. Calculate seed from mnemonic phrase
-4. Use calculated seed as entropy to create an HD Key following BIP-32{% include ref.html id="5" %}
-5. Get an HD Key from a derivation path respecting RSKIP-57{% include ref.html id="6" %} - RSK MainNet is	`m/44'/137'/0'/0/n` with `n` a nonce to obtain different accounts.
+4. Use calculated seed as entropy to create an HD Key following BIP-32{% include rif-id-ref.html id="5" %}
+5. Get an HD Key from a derivation path respecting RSKIP-57{% include rif-id-ref.html id="6" %} - RSK MainNet is	`m/44'/137'/0'/0/n` with `n` a nonce to obtain different accounts.
 6. Use `n=0` private key as the first persona private key
 7. Memoize the last nonce used is `0`
 
@@ -61,7 +61,7 @@ For users that already have a RIA
 
 For users that already had a RIA when accessing first time to the wallet.
 
-This protocol is based on BIP-44{% include ref.html id="9" %} account discovery, the difference is that the accounts are marked as used also querying information that is not transactions.
+This protocol is based on BIP-44{% include rif-id-ref.html id="9" %} account discovery, the difference is that the accounts are marked as used also querying information that is not transactions.
 
 1. Follow steps 3. to 5. of _create new RIA_ protocol
 2. Let `i` be 0
