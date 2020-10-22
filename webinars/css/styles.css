@@ -61,6 +61,33 @@ button:focus {
     width: 90px!important;
 }
 
+.dropdown-toggle::after {
+    vertical-align: .100em;}
+
+@media (min-width:992px) {
+.dropdown>.dropdown-menu {
+  transform: scale(0);
+  transition: 0.3s all ease-in-out;
+  display: block;
+  border: 1px solid #00B520;
+}
+
+.dropdown:hover>.dropdown-menu {
+  transform: scale(1);
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+}
+
+.noevent {
+    pointer-events: none;
+    cursor: default!important;
+}
+
 
 /* circles images */
 
