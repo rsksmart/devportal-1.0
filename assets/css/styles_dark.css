@@ -31,7 +31,6 @@
 
 .dark .nav-link:hover {
     color: white!important;
-    font-weight: bold;
 }
 
 .dark .menu-container a[target="_blank"]:hover:after {
