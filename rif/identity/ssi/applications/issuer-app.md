@@ -6,7 +6,7 @@ tags: rif-identity, rif-id, ssi, self-sovereign-identity
 
 ## Issuer App
 
-The Issuer App is a React application that handles the back office tasks of issuing and rejecting credential requests. It is built to be connected to any Request Credential Service Server (that is API compatible with [RIF Identity issuer service](../services)), and login happens with a username and password.
+The Issuer App is a React application that handles the back office tasks of issuing and rejecting credential requests. It is built to be connected to any Request Credential Service Server (that is API compatible with [RIF Identity issuer service](../../services)), and login happens with a username and password.
 
 ### Features
 
@@ -18,11 +18,11 @@ The Issuer App is a React application that handles the back office tasks of issu
 
 #### Login Screen
 
-![Login Screen]({{ site.baseurl }}/assets/img/ssi/applications/issuer-app/sign-in.jpg)
+![Login Screen](../../../assets/img/ssi/applications/issuer-app/sign-in.jpg)
 
 #### Credential List
 
-![Credential List]({{ site.baseurl }}/assets/img/ssi/applications/issuer-app/credential-list.jpg)
+![Credential List](../../../assets/img/ssi/applications/issuer-app/credential-list.jpg)
 
 ### Extend
 
@@ -35,7 +35,7 @@ The issuer app has a lot of potential for future development including:
 
 ### Run locally:
 
-The issuer application can connect to any credential server so there is no need to set environment variables. 
+The issuer application can connect to any credential server so there is no need to set environment variables.
 
 ```
 yarn

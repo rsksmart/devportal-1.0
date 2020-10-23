@@ -10,12 +10,12 @@ This protocol allows each persona of a RIA to use secret-key cryptography to enc
 
 This protocol is based on [uPort DAF Secret Box implementation](https://github.com/uport-project/daf/blob/master/packages/daf-libsodium/src/secret-box.ts) using [Libsodium authenticated encryption](https://libsodium.gitbook.io/doc/secret-key_cryptography/secretbox).
 
-> Please make use of [this section]({{ site.baseurl }}/definitions) for core concept definitions
+> Please make use of [this section](../../../definitions) for core concept definitions
 
 The protocol for encryption is:
 
 - Private key calculation
-  1. Let the nonce `i` be the nonce index of the persona derivation count ([see persona creation protocol](identity-layout/#obtain-a-new-persona))
+  1. Let the nonce `i` be the nonce index of the persona derivation count ([see persona creation protocol](../identity-layout/#obtain-a-new-persona))
   2. From the RIA seed derive the same nonce, using BIP-44{% include rif-id-ref.html id="9" %} `change = 1` - for example, RSK would use `m/44'/137'/0'/1/i`
   3. Get the private key of the derived account
 - Data encryption

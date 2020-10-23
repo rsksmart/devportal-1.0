@@ -36,7 +36,7 @@ This protocol can be modified to use disposable tokens in order to ensure that t
 
 ## Sequence diagram
 
-![did auth]({{ site.baseurl }}/assets/img/ssi/08_did_auth.png)
+![did auth](../../../assets/img/ssi/08_did_auth.png)
 
 ## Selective disclosure
 
@@ -99,8 +99,9 @@ export interface SelectiveDisclosureResponse {
 
 ### Implementations
 
-- [`@rskmsart/rif-id-did-auth`](../libraries/express-did-auth) - in progress
-<!-- - [RIF Data Vault authentication]({{ site.baseurl }}/data-vault/architecture/auth) -->
+- [`@rsksmart/rif-id-did-auth`](../../libraries/express-did-auth) - in progress
+
+<!-- - [RIF Data Vault authentication](../../../data-vault/architecture/auth) -->
 
 ### Open work
 

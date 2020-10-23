@@ -6,4 +6,4 @@ tags: rif-identity, rif-id, ssi, self-sovereign-identity
 
 ## uPort DAF bindings
 
-- use uPort agent with [RIF identity multi identity model](../specs/#multi-identity-model)
+- use uPort agent with [RIF identity multi identity model](../../specs/#multi-identity-model)
