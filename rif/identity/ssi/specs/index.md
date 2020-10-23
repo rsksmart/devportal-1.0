@@ -41,7 +41,7 @@ This schema is based on BIP-32{% include rif-id-ref.html id="5" %} hierarchical 
 
 The master key entropy is represented by a BIP-39 mnemonic phrase{% include rif-id-ref.html id="4" %}. The derivation path used for RSK is `m/44'/137'/0'/0/i`{% include rif-id-ref.html id="6" %} where `i` is used to index different identities.
 
-![multi_identity_model]({{ site.baseurl }}/assets/img/ssi/04_multi_identity_model.png)
+![multi_identity_model](../../assets/img/ssi/04_multi_identity_model.png)
 
 > RIF Identity expresses support for _BIP-32_, _BIP-39_ and _RSKIP-57_
 
@@ -51,11 +51,11 @@ Credentials are a part of our daily lives; driver's licenses are used to assert 
 
 If credentials are cryptographically signed, the holder of the credential does not need any action on the issuer to prove that credential was issued by it. In addition, the identity controller of the subject that that credential was issued to can provide a cryptographic proof expressing control of the identity. With this proof schema the verification for a credential presentation consists of proving two cryptographically signed messages.
 
-![multi_identity_model]({{ site.baseurl }}/assets/img/ssi/02_vc_model.png)
+![multi_identity_model](../../assets/img/ssi/02_vc_model.png)
 
 For example, this model enables a transport office to issue a credential for an approved driver (Alice), that is able to use that credential in a transport control. The officer who verifies the credential does not need access to any centralized database to attest the driving license was issued to the person presenting it.
 
-![multi_identity_model]({{ site.baseurl }}/assets/img/ssi/03_vc_model_application.png)
+![multi_identity_model](../../assets/img/ssi/03_vc_model_application.png)
 
 In general, the model is represented by three different entities:
 
@@ -74,9 +74,9 @@ This three entities can perform 4 different basic actions:
 
 ## Protocols
 
-- [Identity layout](./identity-layout) - create and recover identities
-- [Encryption layout](./encryption-layout) - Storing and recovering encrypted information
-- [DID authentication](./did-auth) - a challenge–response authentication model based on DIDs
-- [Credential requests protocol](./credential-requests) - a simple protocol for request, grant and receive credential case
-- [The Convey service](./convey-service) - transport content that does not fit into a QR code
-- [Presentations timestamps](./presentation-timestamps) - emitting and validating presentations with timestamps
+- [Identity layout](identity-layout) - create and recover identities
+- [Encryption layout](encryption-layout) - Storing and recovering encrypted information
+- [DID authentication](did-auth) - a challenge–response authentication model based on DIDs
+- [Credential requests protocol](credential-requests) - a simple protocol for request, grant and receive credential case
+- [The Convey service](convey-service) - transport content that does not fit into a QR code
+- [Presentations timestamps](presentation-timestamps) - emitting and validating presentations with timestamps

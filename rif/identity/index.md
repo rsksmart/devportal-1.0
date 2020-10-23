@@ -12,14 +12,14 @@ The main goal of RIF Identity is to protect users’ personal data, empowering t
 
 ## Table of contents
 
-- [Self-sovereign identity](./ssi)
-    - [Specs](./ssi/specs)
-    - [Architecture](./ssi/architecture)
-    - [Libraries](./ssi/libraries)
-    - [Services](./ssi/services)
-    - [Applications](./ssi/applications)
+- [Self-sovereign identity](ssi)
+    - [Specs](ssi/specs)
+    - [Architecture](ssi/architecture)
+    - [Libraries](ssi/libraries)
+    - [Services](ssi/services)
+    - [Applications](ssi/applications)
     - [FAQ](ssi/faq)
-- [Data Vault](./data-vault)
+- [Data Vault](data-vault)
 - rLogin
 - RIF Identity manager
 
@@ -32,5 +32,9 @@ The main goal of RIF Identity is to protect users’ personal data, empowering t
 - [Data vault Javascript monorepo](https://github.com/rsksmart/rif-data-vault)
 - [Ethr DID + RSK support](https://github.com/rsksmart/ethr-did)
 - [Ethr DID dev utils](https://github.com/rsksmart/ethr-did-utils)
-<!-- - [rLoign](https://github.com/rsksmart/rLogin)
-- [RIF Identity manager](https://github.com/rsksmart/rif-identity-manager) -->
+
+<!--
+- [rLogin](https://github.com/rsksmart/rLogin)
+- [RIF Identity manager](https://github.com/rsksmart/rif-identity-manager)
+-->
+

@@ -13,7 +13,7 @@ This protocol is based on CHAP{% include rif-id-ref.html id="11" %} authenticati
 It is designed to:
 
 - Let the application request the user to share specific information that can be verified - this information can be used in business logic to grant or deny access
-- Allow the user to opt-in or out to the information - it is a user-centric protocol, the user decides wether to share the information or not
+- Allow the user to opt-in or out to the information - it is a user-centric protocol, the user decides whether to share the information or not
 - Provide an access token to the user that can be reused - wallet systems usually request user action to sign messages, enabling reusing access token reduces the amount of signatures required and improves the user experience
 
 It uses HTTPS as the message transport layer.
@@ -28,9 +28,9 @@ Alice needs to access Bob's service, so Bob needs to authenticate Alice:
 
 The access token issued by Bob can be reused until `expirationDate` value.
 
-The selective disclosure request is optional and it depends on the service needings.
+The selective disclosure request is optional and it depends on the service needs.
 - Open apps: it needs just a proof that the user controls the did. In that case the `challenge` is enough
-- Permissioned apps: it needs a proof that the user controls the did and also proofs that the user fullfil the business needings. IE: be older than 18 years old.
+- Permissioned apps: it needs a proof that the user controls the did and also proofs that the user fulfil the business needs. IE: be older than 18 years old.
 
 This protocol can be modified to use disposable tokens in order to ensure that the user is always controlling the did, without reusable credentials. A simple implementation may require Alice to request a new challenge for each interaction with the service. A smarter implementation would respond with a new challenge after each interaction, so Alice will need to save the next challenge to be used and the protocol will prompt _Alice_ to make only one extra request to get the first challenge.
 
