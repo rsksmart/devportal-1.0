@@ -187,3 +187,39 @@ energy knife ice mouse merge track cram brown decorate atom rule virus
 Copy these 12 words, we'll use it later.
 
 RSK Networks have their own derivation path. Learn more about [account based RSK addresses](/rsk/architecture/account-based/ "Account based RSK addresses - RSK developers portal").
+
+# HD wallet provider
+
+To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. 
+We are using `@truffle/hdwallet-provider`. It will be installed with the Truffle box.
+
+Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
+- RSK Mainnet dpath: `m/44’/137’/0’/0`
+- RSK Testnet dpath: `m/44’/37310’/0’/0`
+
+For more information, check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md).
+
+# Get R-BTC
+
+The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
+
+**Mainnet**
+
+For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
+
+**Testnet**
+
+For the RSK Testnet, get tR-BTC from this [faucet](https://faucet.testnet.rsk.co/).
+
+![faucet.testnet.rsk.co](/assets/img/tutorials/rsk-starter-box/image-12.png)
+
+Enter your wallet address and pass the CAPTCHA.
+
+For example, I will get some tR-BTCs for this address: `0xCD70794c2f3c657310EF13b6Ff3EC2d112513b39`.
+
+Wait a few seconds…
+
+![Received some R-BTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
+
+You can see the transaction hash:
+[`0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95`](https://explorer.testnet.rsk.co/tx/0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95)

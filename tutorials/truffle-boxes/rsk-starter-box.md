@@ -20,8 +20,8 @@ Here is a summary of the steps we will take in this tutorial:
 2. Install RSK Truffle Starter Box;
 3. Learn how to use the Truffle development console;
 4. Create a wallet;
-5. Configure Truffle to connect to RSK network;
-6. Get R-BTC;
+5. Get R-BTC;
+6. Connect to an RSK network;
 7. Deploy a smart contract on RSK network using Truffle;
 8. Interact with the smart contract at Truffle console.
 
@@ -34,142 +34,8 @@ On the other hand, if you would like to review the steps with more explanatory d
 
 # Setup prerequisites
 
-* POSIX compliant shell
-* Curl
-* Node.js and NPM (Node Package Manager)
-* Code editor: Visual Studio Code (VSCode) or any other editor of your choice
-* Truffle
-
-## POSIX compliant shell
-
-The **Portable Operating System Interface (POSIX)** is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems. POSIX defines the application programming interface (API), along with command line shells and utility interfaces, for software compatibility with variants of Unix and other operating systems.
-Source: [Wikipedia](https://en.wikipedia.org/wiki/POSIX)
-
-* Mac OSX and Linux distributions: Use the standard terminal
-* Windows: If you use the standard `cmd` terminal, or PowerShell, the commands here may not work.
-  Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled.
-  Here is a [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
-
-## cURL
-
-This is a system command that is likely already installed on your system,
-which allows you to make network requests, such as HTTP requests,
-from your command line.
-
-If `curl --version` displays an error,
-then [download curl](https://curl.haxx.se/download.html).
-
-In Windows:
-
-```windows-command-prompt
-C:\>curl --version
-curl 7.55.1 (Windows) libcurl/7.55.1 WinSSL
-Release-Date: [unreleased]
-Protocols: dict file ftp ftps http https imap imaps pop3 pop3s smtp smtps telnet tftp
-Features: AsynchDNS IPv6 Largefile SSPI Kerberos SPNEGO NTLM SSL
-
-C:\>
-```
-
-## Node.js and NPM
-
-Another dependency is NPM, which comes bundled with Node.js.
-
-To check if you have node already installed, enter this command into your terminal:
-
-```shell
-node --version
-npm --version
-```
-
-```windows-command-prompt
-C:\>node --version
-v10.16.3
-
-C:\>npm --version
-v6.9.0
-
-C:\>
-```
-
-If there's no output like the one above, go to [Node.js](https://nodejs.org/en/) install.
-
-Note that NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
-
-If you want to have more than one version installed,
-the most fuss-free way to install and manage multiple versions of `node` on your computer is [nvm](https://github.com/nvm-sh/nvm).
-
-## Code editor
-
-We need some software that is able to edit text files.
-Preferably one that has support for syntax highlighting for both Solidity and Javascript.
-
-[VS Code](https://code.visualstudio.com/) is a good choice if you don't already have one.
-
-### Visual Studio Code (VS Code)
-
-In this tutorial, we will use VS Code to create our project.
-
-Go to [VS Code download](https://code.visualstudio.com/download) if you would like to use it too.
-
-Verify if your VS Code installation was successful by typing the following command into the terminal:
-
-```shell
-code -v
-```
-
-```windows-command-prompt
-C:\>code -v
-1.45.1
-5763d909d5f12fe19f215cbfdd29a91c0fa9208a
-x64
-
-C:\>
-```
-
-## Truffle
-
-Truffle is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management.
-
-It also makes developing on RSK easier, with the ability to configure custom networks for RSK.
-
-To install Truffle, input the command below into the terminal and press `enter` at your project location:
-
-```shell
-npm install -g truffle
-```
-
-```windows-command-prompt
-C:\>npm install -g truffle
-C:\Program Files\nodejs\truffle -> C:\Program Files\nodejs\node_modules\truffle\build\cli.bundled.js
-
-> truffle@5.1.28 postinstall C:\Program Files\nodejs\node_modules\truffle
-> node ./scripts/postinstall.js
-
-- Fetching solc version list from solc-bin. Attempt #1
-+ truffle@5.1.28
-updated 1 package in 11.679s
-
-C:\>
-```
-
-When the installation is finished, close the terminal, open it again and check the Truffle version:
-
-```shell
-truffle version
-```
-
-```windows-command-prompt
-C:\>truffle version
-Truffle v5.1.28 (core: 5.1.28)
-Solidity v0.5.16 (solc-js)
-Node v10.16.3
-Web3.js v1.2.1
-
-C:\>
-```
-
-For more info: [trufflesuite.com/truffle](https://www.trufflesuite.com/truffle)
+The requirements are explained in detail in this tutorial:
+[prerequisites](/tutorials/truffle-boxes/truffle-boxes-prerequisites/).
 
 # Install RSK Truffle Starter Box
 
@@ -226,7 +92,6 @@ Commands:
   Compile contracts: truffle compile
   Migrate contracts: truffle migrate
   Test contracts:    truffle test
-
 
 C:\RSK\rsk-starter>
 ```
@@ -303,6 +168,8 @@ Ensure you do not use it on production blockchains, or else you risk losing fund
 
 truffle(develop)>  
 ```
+
+You are now in the truffle develop console with seeded accounts and their associated private keys listed.
 
 > Inside the development console we don't preface commands with `truffle`.
 
@@ -434,31 +301,15 @@ test
 
 ![test](/assets/img/tutorials/rsk-starter-box/image-01.png)
 
-```windows-command-prompt
-truffle(develop)> test
-Using network 'develop'.
-
-Compiling your contracts...
-===========================
-> Compiling .\contracts\Migrations.sol
-> Compiling .\contracts\SimpleStorage.sol
-> Artifacts written to C:\Users\Solange\AppData\Local\Temp\test-202055-3640-nxpnxb.3exj
-> Compiled successfully using:
-   - solc: 0.5.16+commit.9c3226ce.Emscripten.clang
-
-  Contract: SimpleStorage
-    √ should store a value (131ms)
-
-  1 passing (164ms)
-
-truffle(develop)>  
-```
-
 # Interact with a smart contract in development console
 
 > Make sure you deploy the smart contract before executing this part.
 
 The next commands will run inside the development console.
+
+```shell
+truffle develop
+```
 
 ## Connect with our published contract
 
@@ -474,9 +325,14 @@ undefined
 truffle(develop)>  
 ```
 
+Don't worry about the `undefined` return, it is ok. 
+
+## About SimpleStorage.json
+
 The published contract information is stored by default in the `build\contracts` folder. 
 You will find a JSON file with the same name of our smart contract.
-The section `networks` has the networks in which the smart contract was published, including its address and hash of the transaction.
+
+The section `networks` contains the networks in which the smart contract was published, including its address and hash of the transaction.
 
 ![simpleStorage.json networks](/assets/img/tutorials/rsk-starter-box/image-02.png)
 
@@ -555,125 +411,61 @@ truffle(develop)> simpleStorage.get().then(bn => bn.toNumber())
 truffle(develop)> 
 ```
 
-# Create a wallet
+# Using RSK networks
 
-The best way to create a wallet is from a mnemonic, using the pattern defined at [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki).
+Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configured in the `truffle-config.js` file.
 
-There are a few ways to do this.
+## Create a wallet
 
-One is to create using a web wallet, 
-such as [Metamask](https://metamask.io/) 
-or [Nifty](https://www.poa.network/for-users/nifty-wallet) wallet.
-These wallets generate the mnemonic for you.
+If you don't create a wallet yet, check out the tutorial
+[prerequisites](/tutorials/truffle-boxes/truffle-boxes-prerequisites/).
 
-## iancoleman.io/bip39
+You can learn more about [account based RSK addresses](/rsk/architecture/account-based/ "Account Based RSK Addresses - RSK Developers Portal").
 
-Another way is using this web app:
-
-[iancoleman.io/bip39](https://iancoleman.io/bip39/)
-
-> Note: In this tutorial, the method used to store the mnemonic is not recommended to be used for any 'real' wallet because it's not secure enough to generate a private key in a website, however we will use this here for learning purposes, and because we're using the Testnet, so no real amounts are at stake.
-
-In the `Generate a random mnemonic` field, select `12 words` and click on the `generate` button.
-
-![Generate a random mnemonic](/assets/img/tutorials/rsk-starter-box/image-05.png)
-
-The result appears in the `BIP39 Mnemonic` field.
-They should be 12 random words like the words in the image:
-
-![BIP39 Mnemonic](/assets/img/tutorials/rsk-starter-box/image-06.png)
-
-My mnemonic is:
+Copy the wallet mnemonic. 
+For example, my mnemonic is:
 
 ```
 energy knife ice mouse merge track cram brown decorate atom rule virus
 ```
 
-Copy these 12 words, we'll use it later in this tutorial.
+## Update .secret
 
-You can learn more about [account based RSK addresses](/rsk/architecture/account-based/ "Account Based RSK Addresses - RSK Developers Portal").
+Paste the wallet mnemonic in the file `.secret`, located in the folder project, and save it.
 
-# Update Truffle config
+## Setup the gas price
 
-Open up the config file used by Truffle in your code editor.
-The file is named `truffle-config.js` and it is located in the root folder of your project.
-
-## Update mnemonic
-
-In `truffle-config.js`, locate this line: 
-
-```javascript
-const mnemonic = 'A_MNEMONIC';
-```
-
-![A_MNEMONIC](/assets/img/tutorials/rsk-starter-box/image-07.png)
-
-Substitute `A_MNEMONIC` with the mnemonic of your wallet.
-
-Im my example, it will be:
-
-```javascript
-const mnemonic = 'energy knife ice mouse merge track cram brown decorate atom rule virus';
-```
-
-## HD wallet provider
-
-To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. 
-We are using `@truffle/hdwallet-provider`. It was installed with the box.
-
-Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
-- RSK Mainnet dpath: `m/44’/137’/0’/0`
-- RSK Testnet dpath: `m/44’/37310’/0’/0`
-
-For more information, check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP57.md).
-
-## Get the current gas price
-
-**Gas** is the internal pricing for running a transaction or contract. 
-When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. 
-That payment is calculated as gas. 
-In RSK, this is paid in **R-BTC**.
+**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
-To get the **minimumGasPrice** do the following steps:
-
-1. Run this query using cURL:
-
-**Mainnet**
-
-```shell
-curl https://public-node.rsk.co/ \
-    -X POST -H "Content-Type: application/json" \
-    --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false],"id":1}'
-```
+To update the **minimumGasPrice** in our project run this query using cURL:
 
 **Testnet**
 
 ```shell
-curl https://public-node.testnet.rsk.co/ \
-    -X POST -H "Content-Type: application/json" \
-    --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false],"id":1}'
+curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" \
+    --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false],"id":1}' \
+    > .minimum-gas-price-testnet.json
 ```
 
-![minimumGasPrice](/assets/img/tutorials/rsk-starter-box/image-08.png)
+**Mainnet**
 
-2. Find in the result the field **_minimumGasPrice_**
+```shell
+curl https://public-node.rsk.co/ -X POST -H "Content-Type: application/json" \
+    --data '{"jsonrpc":"2.0","method":"eth_getBlockByNumber","params":["latest",false],"id":1}' \
+    > .minimum-gas-price-mainnet.json
+```
 
-For more information about the **Gas** and **minimumGasPrice** please visit the [gas](/rsk/rbtc/gas/ "Gas - RSK Developers Portal") page.
+This query saved the details of the latest block to 
+file .minimum-gas-price-testnet.json or .minimum-gas-price-mainnet.json, respectively.
 
-3. In `truffle-config.js`, check the value of `gasPrice` configuration and update it with the value found in the previous step.
+In the `truffle-config.js` file, we are reading the parameter `minimumGasPrice` in each json file.
 
-![gasPrice](/assets/img/tutorials/rsk-starter-box/image-09.png)
+For more information about the **Gas** and **minimumGasPrice** please go [here](https://developers.rsk.co/rsk/rbtc/gas/ "Gas - RSK Developers Portal").
 
 # Using Truffle Console to connect to the RSK network
 
- Run the development console for any RSK network.
-
- **Mainnet**
-
-```shell
-truffle console --network mainnet
-```
+Run the Truffle console for any RSK network.
 
 **Testnet**
 
@@ -681,15 +473,44 @@ truffle console --network mainnet
 truffle console --network testnet
 ```
 
+**Mainnet**
+
+```shell
+truffle console --network mainnet
+```
+
 This action instructs Truffle to connect to an RSK public node and grants it permission to control the accounts created with your mnemonic through the `HD wallet provider`.
 
-I will connect to the Testnet network:
+Let’s connect to the Testnet network:
 
 ```windows-command-prompt
 C:\RSK\rsk-starter>truffle console --network testnet
 truffle(testnet)>  
 ```
 
+### Test the connection to RSK network
+
+On any of the networks, run this commands in the Truffle console:
+
+#### Block number
+Shows the last block number.
+
+```javascript
+(await web3.eth.getBlockNumber()).toString()
+```
+#### Network ID
+
+To get the network ID, run this command:
+
+```javascript
+(await web3.eth.net.getId()).toString()
+```
+
+List of network IDs:
+- mainnet: 30
+- testnet: 31
+- regtest (local node): 33
+ 
 ## Get your accounts
 
 In the Truffle console, enter:
@@ -745,9 +566,38 @@ truffle(testnet)> (await web3.eth.getBalance(accounts[0])).toString()
 truffle(testnet)>  
 ```
 
-The balance is 0 and we need some tR-BTC to pay gas fees,
+If the balance is 0, your need to get some tR-BTC to pay gas fees,
 which will be used to publish smart contracts and interact with them.
 We shall obtain some tR-BTC in the next step.
+
+## Get R-BTC
+
+The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
+
+**Mainnet**
+
+For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
+
+**Testnet**
+
+For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
+
+You can get more explanations to do it in 
+[prerequisites](/tutorials/truffle-boxes/truffle-boxes-prerequisites/).
+
+## Recheck balance
+
+To check balance again, run this command in the Truffle console:
+
+```javascript
+(await web3.eth.getBalance(accounts[0])).toString()
+```
+
+For my example on RSK Testnet using account `0xCd70794c2F3C657310eF13b6FF3Ec2d112513B39`:
+
+![getBalance](/assets/img/tutorials/rsk-starter-box/image-11.png)
+
+Great! Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal place of precision.
 
 ## Exit Truffle console
 
@@ -763,63 +613,28 @@ truffle(testnet)> .exit
 C:\RSK\rsk-starter>
 ```
 
-# Get R-BTC
-
-The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
-
-**Mainnet**
-
-For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
-
-**Testnet**
-
-For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
-
-![faucet.testnet.rsk.co](/assets/img/tutorials/rsk-starter-box/image-12.png)
-
-Enter your wallet address and pass the CAPTCHA.
-
-Wait a few seconds…
-
-![Received some R-BTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
-
-You can see the transaction hash:
-[`0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95`](https://explorer.testnet.rsk.co/tx/0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95)
-
-## Recheck balance
-
-To check balance again, run this command in the Truffle console:
-
-```javascript
-(await web3.eth.getBalance(accounts[0])).toString()
-```
-
-For my example on RSK Testnet using account `0xCd70794c2F3C657310eF13b6FF3Ec2d112513B39`:
-
-![getBalance](/assets/img/tutorials/rsk-starter-box/image-11.png)
-
-Great! Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.
-
 # Deploy the smart contract on RSK network
 
 Let's now switch to interacting with a "real" blockchain,
 which is running on multiple nodes distributed across multiple computers!
 
-In the terminal, run the migrate command for the RSK network of your choice.
+We will do it running the below commands directly in the terminal, without using the truffle console, this is to show you an alternative.
 
- **Mainnet**
+On any of the networks, run this commands in a terminal (not in Truffle console):
 
-```shell
-truffle migrate --network mainnet
-```
-
-**Testnet**
+### Testnet
 
 ```shell
 truffle migrate --network testnet
 ```
 
-I will do it on RSK testnet.
+### Mainnet
+
+```shell
+truffle migrate --network mainnet
+```
+
+We'll do it on RSK testnet.
 
 ```windows-command-prompt
 C:\RSK\rsk-starter>truffle migrate --network testnet
@@ -898,7 +713,7 @@ Congratulations!
     
 # Interact with a smart contract on RSK network
 
-Interact with the simple storage smart contract using Truffle console connected to an RSK network.
+Interact with the simpleStorage smart contract using Truffle console connected to an RSK network.
 
 It's the same as we did for Truffle development console, but now it will be for a real blockchain!
 
