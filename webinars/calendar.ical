@@ -3633,18 +3633,19 @@ DTSTART:20201022T180000Z
 SUMMARY:Sovryn\nA decentralized protocol for Bitcoin lending and margin tr
  ading 
 DESCRIPTION:Sovryn\nA decentralized protocol for Bitcoin lending and margi
- n trading\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.
- co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-marg
- in-trading\n
+ n trading\n\nOnline only\n\nRSVP: https://www.meetup.com/es-ES/rsk-communi
+ ty/events/274035704/\n\nVideo stream: https://app.livestorm.co/iov-labs-1/
+ sovryn-a-decentralized-protocol-for-bitcoin-lending-and-margin-trading\n
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Sovryn\
  nA decentralized protocol for Bitcoin lending and margin trading</span></d
- iv>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></
- span></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.l
- ivestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending
- -and-margin-trading\">app.livestorm.co/iov-labs-1/sovryn-a-decentralized-p
- rotocol-for-bitcoin-lending-and-margin-trading</a></span></div>\n</BODY>\n
- </HTML>
+ iv>\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span><a
+  href=\"https://www.meetup.com/es-ES/rsk-community/events/274035704/\">www
+ .meetup.com/es-ES/rsk-community/events/274035704/</a></span></div>\n<div><
+ b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-lab
+ s-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-margin-trading
+ \">app.livestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin
+ -lending-and-margin-trading</a></span></div>\n</BODY>\n</HTML>
 ORGANIZER;CN="Edan Yago\, Contributor\, @EdanYago":mailto:developers@iovla
  bs.org
 BEGIN:VALARM
@@ -3663,8 +3664,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202010-008@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20201007T220000Z
-DTSTART:20201007T220000Z
+DTSTAMP:20201028T220000Z
+DTSTART:20201028T220000Z
 SUMMARY:Facilitando sua vida:\nTransforme endereços em nomes com o RNS - R
  IF Name Service 
 DESCRIPTION:Facilitando sua vida:\nTransforme endereços em nomes com o RNS
@@ -3692,7 +3693,7 @@ CATEGORIES:Workshop
 URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rns-rsk-name-service
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20201009T123000Z
+LAST-MODIFIED:20201027T010000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202010-009@developers.rsk.co/
