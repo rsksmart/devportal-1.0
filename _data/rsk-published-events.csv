@@ -531,7 +531,7 @@ If you are new to the DeFi space, we recommend you read the following report pri
 
 Puedes verlo entrando en ➡️ http://rskgasstation.info/
 
-Este webinar está pensado para desarrolladores de Ethereum que quieran conocer las posibilidades de migrar sus aplicaciones a la red RSK.",Workshop,online,Online only,Spanish,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-a-rsk,https://app.livestorm.co/p/604b648b-e57d-4857-83f1-694d5e44bc57/form,,
+Este webinar está pensado para desarrolladores de Ethereum que quieran conocer las posibilidades de migrar sus aplicaciones a la red RSK.",Workshop,online,Online only,Spanish,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-a-rsk,https://app.livestorm.co/p/604b648b-e57d-4857-83f1-694d5e44bc57/form,https://youtu.be/xsY0dL2-9T4,
 2020-10-21T19:00:00-03:00,202010-006,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273779100/,"DeFi na prática:
 Como trocar tokens usando RSK Swap","Para iniciantes!
 
@@ -540,8 +540,8 @@ Vamos configurar uma carteira, adquirir tokens e trocá-los utilizando RSK Swap:
 Você também vai entender o papel do pool de liquidez no processo.
 
 RSK Swap é uma exchange completamente descentralizada que possibilita a troca de tokens instantaneamente.
-",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-trocar-tokens-usando-rskswap,https://app.livestorm.co/p/6aefd038-65c2-4640-8d50-471b37d0cb24/form,,
-2020-10-22T19:00:00+01:00,202010-007,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,,"Sovryn
+",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-trocar-tokens-usando-rskswap,https://app.livestorm.co/p/6aefd038-65c2-4640-8d50-471b37d0cb24/form,https://youtu.be/T7Zd83P-xsU,
+2020-10-22T19:00:00+01:00,202010-007,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/rsk-community/events/274035704/,"Sovryn
 A decentralized protocol for Bitcoin lending and margin trading","Sovryn is a decentralized protocol for Bitcoin lending and margin trading. The protocol can be easily integrated into new and existing exchanges, or accessed simply through a web3 portal. Sovryn will provide decentralized alternatives of all the most popular centralised Bitcoin finance tools. 
 Current Features:
 🟢 Spot-Exchange - a low cost, low-slippage, AMM allowing instant trades between tokens.
@@ -552,8 +552,8 @@ What makes Sovryn unique is that it is decentralized, and uses Ethereum-like sma
 Ororo Munroe","Contributor
 Founder and Developer","@EdanYago
 @SovrynStorm
-",https://app.livestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-margin-trading,https://app.livestorm.co/p/e33f5ab9-b1e6-424a-9aa0-2637acf67d6d/form,,
-2020-10-07T19:00:00-03:00,202010-008,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273779227/,"Facilitando sua vida:
+",https://app.livestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-margin-trading,https://app.livestorm.co/p/e33f5ab9-b1e6-424a-9aa0-2637acf67d6d/form,https://youtu.be/26tpMslkro0,
+2020-10-28T19:00:00-03:00,202010-008,2,2020-10-26T22:00:00-03:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSK-Brasil/events/273779227/,"Facilitando sua vida:
 Transforme endereços em nomes com o RNS - RIF Name Service","Para iniciantes!
 
 Neste webinar você vai aprender a criar seu nome personalizado e a interagir com ele, conhecendo algumas utilizações.
@@ -578,7 +578,7 @@ DAI on RSK will bring the crypto-collateralized stablecoin to a scalable smart c
 On this webinar you will learn about the technology behind the RSK-Ethereum Token Bridge and about those who made it possible.",Webinar,online,Online only,English,"Nadia Alvarez
 Pedro Prete","BD, Maker Foundation
 Co-Founder, Think and Dev and RSK Swap Developer","@nad8802
-@PedroMPrete",https://app.livestorm.co/iov-labs-1/dai-on-rsk,https://app.livestorm.co/p/7555fb99-899d-44df-9ebe-2c87a3014c54/form,,
+@PedroMPrete",https://app.livestorm.co/iov-labs-1/dai-on-rsk,https://app.livestorm.co/p/7555fb99-899d-44df-9ebe-2c87a3014c54/form,https://youtu.be/T9lvByQzPKc,
 2020-10-14T17:00:00-03:00,202010-010,1,2020-10-09T20:30:00+08:00,confirmed,,,,,,https://www.meetup.com/es-ES/RSKBuenosAires/events/273786530/,"DAI + RSK
 Token Bridge: intercambio de DAI + BTC","Ahora DAI está disponible sobre RSK!
 Al llevar las herramientas y los activos que impulsan las finanzas descentralizadas a un entorno de Bitcoin, MakerDAO y RSK, junto con la comunidad de RIF Token, pueden impulsar la creciente demanda de activos y aplicaciones DeFi sin verse obstaculizados por las altas tarifas de Ethereum.
@@ -586,4 +586,4 @@ DAI en RSK traerá la moneda estable con garantía criptográfica a una red de s
 Durante este webinar aprenderás mucho más sobre la tecnología que se encuentra detrás del Puente de Tokens entre RSK y Ethereum y sobre aquellos quienes hicieron esto posible.",Webinar,online,Online only,Spanish,"Mariano di Pietrantonio
 Pedro Prete","Marketing Manager, Maker Foundation
 Co-Founder, Think and Dev and RSK Swap Developer","@Mariandipietra
-@PedroMPrete",https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol,https://app.livestorm.co/p/545c4fad-b5be-4590-964b-118724b44aaf/form,,
+@PedroMPrete",https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol,https://app.livestorm.co/p/545c4fad-b5be-4590-964b-118724b44aaf/form,https://youtu.be/xpWjoD8OXI8,
