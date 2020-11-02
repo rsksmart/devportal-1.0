@@ -95,7 +95,6 @@ button:focus {
 
 .dropdown-toggle::after {
     vertical-align: .100em;}
-
 @media (min-width:992px) {
 .dropdown>.dropdown-menu {
   transform: scale(0);
@@ -103,23 +102,19 @@ button:focus {
   display: block;
   border: 1px solid #00B520;
 }
-
 .dropdown:hover>.dropdown-menu {
   transform: scale(1);
   display: block;
 }
-
 .dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
 }
-
 .noevent {
     pointer-events: none;
     cursor: default!important;
 }
-
 
 .badge-secondary {
   margin-right: 15px;
@@ -188,7 +183,7 @@ button:focus {
   margin-bottom: 30px;
 }
 
-.dropdown-item.active {
+  .dropdown-item.active {
  background-color:#FFFFFF;
  font-weight:700;
  color:black;
@@ -1569,8 +1564,8 @@ img {
 
 .search-input {
   /*border-top: none;
-	border-left: none;
-	border-right: none;*/
+  border-left: none;
+  border-right: none;*/
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
 }
@@ -2002,15 +1997,12 @@ table.table.newsletter input[type='checkbox'] {
     color: black !important;
     font-weight: bold;
   }
-
-  .navbar a.active {
+    .navbar a.active {
     font-weight: 400;
   }
-
   .navbar a.bold {
     font-weight: 700;
 }
-
   .breadcrumb {
     display: none;
   }
