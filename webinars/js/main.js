@@ -56,6 +56,14 @@ $(".navbar").on("hide.bs.collapse", function(e) {
     });
   });
 
+  // add active class to a in inner nav based on url
+$(function () {
+  var pageUrl = location.href;
+  $('a').each(function () {
+    $(this).toggleClass('active', this.href === pageUrl);
+  });
+});
+
   // Header scroll class
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {

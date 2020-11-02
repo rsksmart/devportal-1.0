@@ -36,7 +36,10 @@ button:focus {
     font-size: 16px;
     font-family: 'Quicksand', sans-serif;
     padding: 10px 15px!important;
+    cursor: pointer;
 }
+
+.nav-link.active{font-weight:700;}
 
 .navbar-dark .navbar-nav .active>.nav-link {
     font-weight: 700;
