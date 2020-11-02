@@ -9,7 +9,7 @@ layout: 'rsk'
 
 ## Description
 
-Money on Chain provides a Bitcoin-Collateralized Stablecoin. This solves the biggest problem for Bitcoin mainstream adoption: the volatility problem. The Dollar On Chain, a Bitcoin-Backed Stablecoin, uses a trust minimized, decentralized system.
+Money on Chain provides Bitcoin-Collateralized Stablecoins. This solves the biggest problem for Bitcoin mainstream adoption: the volatility problem. The Dollar On Chain, a Bitcoin-Backed Stablecoin, uses a trust minimized, decentralized system.
 
 Within the Money On Chain architecture, we distinguish the following Platform users (some users may have more than one role, that is, it may be a MoC holder and a stablecoin holder):
 

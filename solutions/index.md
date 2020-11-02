@@ -66,7 +66,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/moneyonchain/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Money on Chain</p>
-                        <p class="card-desc">Money on Chain provides a Bitcoin-Collateralized Stablecoin.</p>
+                        <p class="card-desc">Money on Chain provides Bitcoin-Collateralized Stablecoins.</p>
                     </div>
                 </a>
                 <div class="btn-container">
