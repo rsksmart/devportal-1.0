@@ -106,7 +106,7 @@ The model was designed to align the economic incentives of the different actors 
 **Reference Docs**
 - [Whitepaper](https://moneyonchain.com/whitepaper-defi-for-bitcoin/)
 - [Audit - RBTC](https://github.com/money-on-chain/Audits/tree/master/RBTC_collateral)
-- [Audit - RRC20](https://github.com/money-on-chain/Audits/tree/master/RBTC_collateral)
+- [Audit - RRC20](https://github.com/money-on-chain/Audits/tree/master/RRC-20_collateral)
 - [FAQs](https://moneyonchain.com/faq-defi-for-bitcoin/)
 
 **API Docs**
@@ -116,17 +116,6 @@ The model was designed to align the economic incentives of the different actors 
 - [Money on Chain Price Feeder](https://github.com/money-on-chain/price-feeder/blob/master/README.md)
 - [Money on Chain Governance Smart Contract System](https://github.com/money-on-chain/Areopagus-Governance/blob/develop/README.md)
 - [RIF Dollar on Chain Contract](https://github.com/money-on-chain/RDOC-Contract/blob/master/README.md)
-
-### Dev Tools
-
-- nodejs v8.12
-- Ganache-cli
-- Docker
-- Truffle Suite
-- Python 3.6+
-- ZeppelinOS
-- Solidity
-- JavaScript
 
 ### Get in touch
 
