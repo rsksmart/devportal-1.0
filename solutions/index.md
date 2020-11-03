@@ -53,4 +53,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/moneyonchain/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/moneyonchain/logo_moc.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/moneyonchain/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Money on Chain</p>
+                        <p class="card-desc">Money on Chain provides a Bitcoin-Collateralized Stablecoin.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/moneyonchain/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
