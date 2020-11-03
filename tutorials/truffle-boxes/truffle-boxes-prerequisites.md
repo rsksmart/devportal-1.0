@@ -11,7 +11,7 @@ In this tutorial, I will show you step-by-step on how to install and configure t
 
 # Overview
 
-Here is a summary of the requirements install and actions we will do in this tutorial:
+Here is a summary of the requirements to install and actions we will take in this tutorial:
 
 1. [Git](#git)
 2. [POSIX compliant shell](#posix-compliant-shell)

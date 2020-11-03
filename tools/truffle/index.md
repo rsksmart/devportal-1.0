@@ -3,7 +3,7 @@ layout: rsk
 title: Truffle Overview
 ---
 
-[Truffle](https://www.trufflesuite.com/) is a world class development environment, testing framework and asset pipeline for blockchains, aiming to make life as a developer easier. With Truffle, you get:
+[Truffle](https://www.trufflesuite.com/) is a world-class development environment, testing framework and asset pipeline for blockchains, aimed at making development easier. With Truffle, you get:
 
 * Built-in smart contract compilation, linking, deployment and binary management.
 * Automated contract testing for rapid development.
