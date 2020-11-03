@@ -395,9 +395,8 @@ In addition to Truffle,
 Truffle Boxes can contain other helpful modules, such as Solidity smart contracts, libraries, front-end views, and more.
 
 In option 1, when we use `truffle init`, we used a special kind of truffle box.
-Check out other [boxes] (https://www.trufflesuite.com/boxes).
 
-Also we have some of them already configured for RSK, [check it out here](https://developers.rsk.co/tutorials/truffle-boxes/).
+We have some of them already configured for RSK, [check the RSK truffle boxes](/tools/truffle/boxes/).
 
 ## Install Open Zeppelin
 
@@ -832,6 +831,6 @@ where we will develop some very cool projects!
 
 Choose any of these to tutorials to begin:
 
-- [Create your first Token](https://developers.rsk.co/tutorials/tokens/create-a-token/)
-- [Petshop](https://developers.rsk.co/tutorials/truffle-boxes/pet-shop-box/)
-- [Create your own collectable token](https://developers.rsk.co/tutorials/tokens/create-a-collectable-token/)
+- [Create your first Token](/tutorials/tokens/create-a-token/)
+- [Petshop](/tutorials/truffle-boxes/pet-shop-box/)
+- [Create your own collectable token](/tutorials/tokens/create-a-collectable-token/)

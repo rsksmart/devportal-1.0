@@ -1,5 +1,5 @@
 ---
 layout: redirect
 permalink: /develop/apps/tools/truffle/ganache/
-redirect: /tools/
+redirect: /tools/truffle/ganache/
 ---

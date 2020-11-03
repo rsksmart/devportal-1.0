@@ -11,14 +11,36 @@ In this tutorial, I will show you step-by-step on how to install and configure t
 
 # Overview
 
-Here is a summary of the steps we will take in this tutorial:
+Here is a summary of the requirements install and actions we will do in this tutorial:
 
-1. POSIX compliant shell
-2. Curl
-3. Node.js and NPM (Node Package Manager)
-4. Code editor: Visual Studio Code (VSCode) or any other editor of your choice
-5. Truffle
-6. Create a wallet mnemonic
+1. [Git](#git)
+2. [POSIX compliant shell](#posix-compliant-shell)
+3. [cURL](#curl)
+4. [Node.js and NPM](#nodejs-and-npm)
+5. [Code editor](#code-editor)
+6. [Truffle framework](#truffle-framework)
+7. [Create a wallet mnemonic](#create-a-wallet-mnemonic)
+8. [HD wallet provider](#hd-wallet-provider)
+9. [Get R-BTC](#get-r-btc)
+
+## Git
+
+[Git](https://git-scm.com/doc) is version control system, which is used for some other dependencies. Also it has some utilities, like `Git Bash`.
+
+Maybe Git may already be installed. To find out, open a terminal and enter:
+
+```shell
+git --version
+```
+
+There are several ways to install Git. 
+Check it out in the tutorial [Install Git](https://www.atlassian.com/git/tutorials/install-git)
+
+**Windows OS**
+
+There are other options for Windows:
+- [Installer for Windows](https://git-scm.com/download/win).
+- [Git for Windows](https://gitforwindows.org/).
 
 ## POSIX compliant shell
 
@@ -26,9 +48,9 @@ The **Portable Operating System Interface (POSIX)** is a family of standards spe
 Source: [Wikipedia](https://en.wikipedia.org/wiki/POSIX)
 
 * Mac OSX and Linux distributions: Use the standard terminal
-* Windows: If you use the standard `cmd` terminal, or PowerShell, the commands here may not work.
-  Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled.
-  Here is a [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
+* Windows: If you use the standard `cmd` terminal, or `PowerShell`, the commands here may not work.
+  Consider using `Git Bash` which was installed in the previous step.
+  Here is a [Tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
 
 ## cURL
 
@@ -62,6 +84,8 @@ node --version
 npm --version
 ```
 
+This is the result in a Windows OS:
+
 ```windows-command-prompt
 C:\>node --version
 v10.16.3
@@ -72,12 +96,37 @@ v6.9.0
 C:\>
 ```
 
-If there's no output like the one above, go to [Node.js](https://nodejs.org/en/) install.
+If there's no output like the one above, here's how to install it on Ubuntu, Mac OSX and Windows.
 
-Note that NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
+[](#top "multiple-terminals")
+- Linux
+  ```shell
+  sudo apt update
+  sudo apt install curl git
+  curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+  sudo apt install nodejs
+  ```
+- Mac OSX
+```shell
+  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
+  nvm install 12
+  nvm use 12
+  nvm alias default 12
+  npm install npm --global # Upgrade npm to the latest version
+``` 
+
+### Windows OS
+Installing Node.js on Windows requires a few manual steps.
+
+go to [Node.js](https://nodejs.org/en/) to download and install it.
+
+### Comments about Node.js and NPM
+
+NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
 
 If you want to have more than one version installed,
-the most fuss-free way to install and manage multiple versions of `node` on your computer is [nvm](https://github.com/nvm-sh/nvm).
+the most fuss-free way to install and manage multiple versions of `node` on your computer is 
+[nvm](https://github.com/nvm-sh/nvm). Note that `nvm` was used in Mac OSX.
 
 ## Code editor
 
@@ -107,13 +156,26 @@ x64
 C:\>
 ```
 
-## Truffle
+### VSCode extension for Solidity
 
-[Truffle](https://www.trufflesuite.com/truffle) is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management.
+If you decided to use VSCode, it is great to have Solidity support. 
+I use the solidity extension from [Juan Blanco](https://marketplace.visualstudio.com/items?itemName=JuanBlanco.solidity).
+
+To install it, go to extensions (Menu View -> Extensions):
+
+1. Type `solidity` in the search field.
+2. Select `solidity`  extension from Juan Blanco.
+3. Click `install`.
+
+![Juan Blanco solidity extension ](/assets/img/tutorials/truffle-boxes-prerequisites/image-42.png)
+
+## Truffle framework
+
+[Truffle framework](https://www.trufflesuite.com/truffle) is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management.
 
 It also makes developing on RSK easier, with the ability to configure custom networks for RSK.
 
-To install Truffle, input the command below into the terminal and press `enter` at your project location:
+To install Truffle, we only need one command to install `Truffle`:
 
 ```shell
 npm install -g truffle
@@ -133,7 +195,8 @@ updated 1 package in 11.679s
 C:\>
 ```
 
-When the installation is finished, close the terminal, open it again and check the Truffle version:
+To verify that `Truffle` is installed properly,
+close the terminal, open it again and check the `Truffle` version:
 
 ```shell
 truffle version
@@ -148,6 +211,8 @@ Web3.js v1.2.1
 
 C:\>
 ```
+
+If you see an error, make sure that npm modules are added to your path.
 
 # Create a wallet mnemonic
 
@@ -211,7 +276,7 @@ For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-
 
 For the RSK Testnet, get tR-BTC from this [faucet](https://faucet.testnet.rsk.co/).
 
-![faucet.testnet.rsk.co](/assets/img/tutorials/rsk-starter-box/image-12.png)
+![faucet.testnet.rsk.co](/assets/img/tutorials/truffle-boxes-prerequisites/image-12.png)
 
 Enter your wallet address and pass the CAPTCHA.
 
@@ -219,7 +284,11 @@ For example, I will get some tR-BTCs for this address: `0xCD70794c2f3c657310EF13
 
 Wait a few seconds…
 
-![Received some R-BTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
+![Received some R-BTCs](/assets/img/tutorials/truffle-boxes-prerequisites/image-13.png)
 
 You can see the transaction hash:
 [`0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95`](https://explorer.testnet.rsk.co/tx/0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95)
+
+# Next steps
+
+- Go to [RSK Truffle boxes](/tools/truffle/boxes/) and choose your box.

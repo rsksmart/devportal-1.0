@@ -317,7 +317,7 @@ truffle develop
 const simpleStorage = await SimpleStorage.deployed()
 ```
 
-Now simpleStorage variable contains an instance of the previously deployed contract.
+Now `simpleStorage` variable contains an instance of the previously deployed contract.
 
 ```windows-command-prompt
 truffle(develop)> const simpleStorage = await SimpleStorage.deployed()
@@ -814,7 +814,7 @@ truffle(testnet)>
 In this tutorial you learned how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box), 
 which comes with everything you need to start using Truffle on RSK networks. 
 
-Check out [RSK Blockchain](https://developers.rsk.co/rsk/) for more details about us.
+- Go to [RSK Truffle boxes](/tools/truffle/boxes/) to experience other boxes.
 
 I hope this tutorial has been helpful and I'd appreciate your feedback. 
 Share it if you like it :)

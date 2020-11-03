@@ -3,7 +3,7 @@ layout: rsk
 title: Truffle Overview
 ---
 
-Truffle is a world class development environment, testing framework and asset pipeline for blockchains, aiming to make life as a developer easier. With Truffle, you get:
+[Truffle](https://www.trufflesuite.com/) is a world class development environment, testing framework and asset pipeline for blockchains, aiming to make life as a developer easier. With Truffle, you get:
 
 * Built-in smart contract compilation, linking, deployment and binary management.
 * Automated contract testing for rapid development.
@@ -25,6 +25,7 @@ npm install truffle -g
 ## More info:
 
 - [Truffle and Open Zeppelin](/tutorials/ethereum-devs/setup-truffle-oz)
+- [Connect Truffle to Regtest, the RSK local node](/tutorials/ethereum-devs/truffle-regtest/)
 - [Testing smart contracts using Truffle](/tutorials/ethereum-devs/truffle-test/)
 - [Truffle Boxes](/tools/truffle/boxes)
 - [Truffle Ganache](/tools/truffle/ganache)
