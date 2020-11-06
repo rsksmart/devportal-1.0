@@ -1126,6 +1126,10 @@ header.sticky {
     transition: all 0.5s ease;
 }
 
+.page-title-description{
+    font-size: 12px
+}
+
 .sticky .p-0 {
     padding: 0.5rem 2rem 0 !important;
 }

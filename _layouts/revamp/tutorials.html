@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+{% include revamp/head.html %}
+
+<body class="darktheme">
+    {% include revamp/header.html %}
+    <div class="container">
+        <!-- Mat-->
+        <div class="row main_content">
+            <!-- LEFT NAV COLUMN -->
+            <div class="col-lg-3 menu_content d-none d-lg-block ">
+                <div class="col_menu sticky-top">
+                    {% include revamp/nav-page-menu.html %}
+                </div>
+            </div>
+            <!-- BETA CONTENT column -->
+            <div class="col-lg-9 col-md-12 col-xs-12 col-sm-12 beta_content">
+                <!-- switch theme -->
+                <div class="row mb-3">
+                    <div class="col-md-4 offset-md-8 text-md-right p-0">
+                        <span class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                            </label>
+                        </span>
+                    </div>
+                </div>
+                <!-- Page Title -->
+                <div class="row custom-mb-5">
+                    <div class="col-12 page-title content-box">
+                        <h1>{{ page.title }}</h1>
+                        <div class="page-title-description col-md-12 pl-0">
+                            Step-by-step guides for developers. Filter on language, level, or time to complete.
+                        </div>
+                    </div>
+                </div>
+                <!-- page info -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <!--description-->
+                            <div class="col-12 content-box topic-content">
+                                {{ content }}
+                            </div>
+                        </div><!-- description ends -->
+                    </div>
+                </div><!-- page info ends -->
+            </div> <!-- beta contents ends -->
+            <!-- content ends here -->
+        </div>
+    </div>
+    <!-- TERMINA EL BODY -->
+    {% include revamp/footer.html %}
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="homevideomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <iframe width="auto" height="500px" src="https://www.youtube.com/embed/6U0_UkuOh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- VIDEO MODAL ENDS -->
+</body>
+{% include revamp/include.html %}
+
+</html>
