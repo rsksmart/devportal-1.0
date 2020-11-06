@@ -17,6 +17,7 @@ font-family: 'Roboto', sans-serif;*/
     --tertiary-bg: rgba(56, 56, 56, 0.6);
     /*grey 60% opacity*/
     --quaternary-bg: rgba(56, 56, 56, 0.99);
+    --quinternary-bg: #383838;
     /* grey 99% opacidad*/
     --highlight-bg:#cccccc;
     --primary-bg-img: url("../img/main-bg.png");
@@ -42,6 +43,7 @@ font-family: 'Roboto', sans-serif;*/
     --secondary-bg: #f5f5f5;
     --tertiary-bg: rgba(245, 245, 245, 0.6);
     --quaternary-bg: rgba(255, 255, 255, 0.99);
+    --quinternary-bg: #b3b3b3;
     --highlight-bg: #b3b3b3;
     --tips-bg: transparent;
     --tips-title-bg: transparent;
@@ -2710,24 +2712,31 @@ and also iPads specifically.
 
 .tutorial-presenter{
     font-family: 'Roboto', sans-serif;
-    background-color: #383838;
+    background-color: var(--quinternary-bg);
     width:100%;
     position: absolute;
     bottom:0;
     left: 0;
     padding: 1rem 2rem;
-    font-size: 600;
+    font-weight: 600;
     font-size: 0.8rem;
 }
 
-.tutorial-presenter img {
+
+
+.presenter-image{
   width:40px;
   height:40px;  
   border-radius: 50%;
   margin:0;
   border:none;
   margin-right:5px;
+  display:inline-block;
+  background-size: cover;
+  background-position:top center;
+  vertical-align:middle
 }
+.presenter-name{display:inline-block;vertical-align:middle}
 
 #grid{width:100%;}
 
