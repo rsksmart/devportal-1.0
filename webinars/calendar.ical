@@ -3715,8 +3715,8 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
  eo stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/d
  ai-on-rsk\">app.livestorm.co/iov-labs-1/dai-on-rsk</a></span></div>\n</BOD
  Y>\n</HTML>
-ORGANIZER;CN="Nadia Alvarez\, BD\, Maker Foundation\, @nad8802":mailto:dev
- elopers@iovlabs.org
+ORGANIZER;CN="Nadia Alvarez\, Business Development at MakerDAO\, @nad8802"
+ :mailto:developers@iovlabs.org
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-PT10M
@@ -3760,5 +3760,67 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20201009T123000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202011-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201111T220000Z
+DTSTART:20201111T220000Z
+SUMMARY:DAI na RSK Token Bridge: convertendo DAI em BTC e vice-versa 
+DESCRIPTION:DAI na RSK Token Bridge: convertendo DAI em BTC e vice-versa\n
+ \nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs
+ -1/dai-na-rsk-token-bridge-convertendo-dai-em-btc-e-vice-versa\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>DAI na 
+ RSK Token Bridge: convertendo DAI em BTC e vice-versa</span></div>\n<div><
+ span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>
+ \n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co
+ /iov-labs-1/dai-na-rsk-token-bridge-convertendo-dai-em-btc-e-vice-versa\">
+ app.livestorm.co/iov-labs-1/dai-na-rsk-token-bridge-convertendo-dai-em-btc
+ -e-vice-versa</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Nadia Alvarez\, Business Development Latam na MakerDAO\, @na
+ d8802":mailto:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:DAI na RSK Token Bridge: convertendo DAI em BTC e vice-versa 
+END:VALARM
+CATEGORIES:Webinar
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/dai-na-rsk-token-bridge-
+ convertendo-dai-em-btc-e-vice-versa
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20201030T220000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202011-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201125T220000Z
+DTSTART:20201125T220000Z
+SUMMARY:Como funciona um marketplace? Conheça o RIF marketplace 
+DESCRIPTION:Como funciona um marketplace? Conheça o RIF marketplace\n\nOnl
+ ine only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/co
+ mo-funciona-um-marketplace-conheca-o-rif-marketplace\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Como fu
+ nciona um marketplace? Conheça o RIF marketplace</span></div>\n<div><span>
+ Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<di
+ v><b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-
+ labs-1/como-funciona-um-marketplace-conheca-o-rif-marketplace\">app.livest
+ orm.co/iov-labs-1/como-funciona-um-marketplace-conheca-o-rif-marketplace</
+ a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Como funciona um marketplace? Conheça o RIF marketplace 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/como-funciona-um-marketp
+ lace-conheca-o-rif-marketplace
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20201030T220000Z
 END:VEVENT
 END:VCALENDAR
