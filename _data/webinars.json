@@ -4208,7 +4208,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591310803",
       "videoStreamUrl": "https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practical-guide-to-developing-zkps-for-a-dapp-tickets-118591310803",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4726,7 +4726,8 @@
           "url": "https://s3.cointelegraph.com/storage/uploads/view/48c6c4e03f85bc722d76f88c2676478b.pdf"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/W33C1cPR6c4",
+      "youtubeVideoId": "W33C1cPR6c4",
       "_permalink": "/webinars/202010-004/",
       "_isPast": true
     },
@@ -4881,14 +4882,15 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/a1763628-87f7-46ab-b961-2a68ab9c66eb/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rns-rsk-name-service",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/dXzwvfcShk0",
+      "youtubeVideoId": "dXzwvfcShk0",
       "_permalink": "/webinars/202010-008/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4913,7 +4915,7 @@
       "presenters": [
         {
           "name": "Nadia Alvarez",
-          "description": "BD, Maker Foundation",
+          "description": "Business Development at MakerDAO",
           "contact": "@nad8802"
         },
         {
@@ -4977,6 +4979,87 @@
       "youtubeVideoId": "xpWjoD8OXI8",
       "_permalink": "/webinars/202010-010/",
       "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202011-001",
+      "version": "1",
+      "timestamp": "2020-11-11T22:00:00.000Z",
+      "lastModified": "2020-10-30T22:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "DAI na RSK Token Bridge: convertendo DAI em BTC e vice-versa",
+      "description": "Agora DAI está disponível na RSK!\nTrazendo as ferramentas e ativos que impulsionam as finanças descentralizadas para o ecossistema Bitcoin, MakerDAO e RSK, juntamente com a comunidade dos tokens RIF, respondem à crescente demanda por ativos e aplicativos DeFi sem ser preocupar com as altas taxas da rede Ethereum.\nDAI na RSK traz esta moeda estável cripto-colateralizada para uma rede com alta escalabilidade para os smart contracts, enquanto mantém sua conexão com o Ethereum e sua importante comunidade de usuários e desenvolvedores.\nNeste webinar você vai aprender como funciona a RSK-Ethereum Token Bridge e conhecer a parceria da MakerDAO com a RSK.",
+      "category": "Webinar",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Nadia Alvarez",
+          "description": "Business Development Latam na MakerDAO",
+          "contact": "@nad8802"
+        },
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/78aeab68-834b-4144-800e-a10bcb0428fe/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dai-na-rsk-token-bridge-convertendo-dai-em-btc-e-vice-versa",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-001/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202011-002",
+      "version": "1",
+      "timestamp": "2020-11-25T22:00:00.000Z",
+      "lastModified": "2020-10-30T22:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Como funciona um marketplace? Conheça o RIF marketplace",
+      "description": "Para iniciantes!\n\nNeste webinar você vai aprender a negociar nomes de domínio RNS no RIF marketplace.\n\nRNS - RIF Name Service é um serviço descentralizado para identificação de endereços Blockchain, transformando-os em nomes customizados, fáceis de guardar.\n\nSão como os nomes de domínios na WWW, que usa o Domain Name System (DNS).\n\nO marketplace é o ponto de encontro de compradores e vendedores, e, no nosso caso, para nomes RNS.\n\nSaiba mais:\n\n🔵 https://www.rifos.org/pt-pt/marketplace\n\n🔵 https://developers.rsk.co/rif/marketplace/\n\n🔵 https://marketplace.rifos.org/\n\n🔵 https://marketplace.testnet.rifos.org/",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/ab69d235-b381-4253-9cc5-d4a2bad869de/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-funciona-um-marketplace-conheca-o-rif-marketplace",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-002/",
+      "_isPast": false
     }
   ]
 }
