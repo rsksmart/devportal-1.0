@@ -3826,4 +3826,65 @@ STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20201030T220000Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202011-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201118T130000Z
+DTSTART:20201118T130000Z
+SUMMARY:Will NFTs shape the future of Art & Games? 
+DESCRIPTION:Will NFTs shape the future of Art & Games?\n\nOnline only\n\nR
+ SVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/non-fungible-to
+ kens-whats-behind-intelligent-nfts\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Will NF
+ Ts shape the future of Art & Games?</span></div>\n<div><span>Online only</
+ span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video st
+ ream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/non-fu
+ ngible-tokens-whats-behind-intelligent-nfts\">app.livestorm.co/iov-labs-1/
+ non-fungible-tokens-whats-behind-intelligent-nfts</a></span></div>\n</BODY
+ >\n</HTML>
+ORGANIZER;CN="Ben Fairbank\, RedFOX Labs CEO\, @bennydoda01":mailto:develo
+ pers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Will NFTs shape the future of Art & Games? 
+END:VALARM
+CATEGORIES:Webinar
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/non-fungible-tokens-what
+ s-behind-intelligent-nfts
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201109T230000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202011-004@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201119T210000Z
+DTSTART:20201119T210000Z
+SUMMARY:Programando Contratos Inteligentes con TDD 
+DESCRIPTION:Programando Contratos Inteligentes con TDD\n\nOnline only\n\nR
+ SVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/programando-con
+ tratos-inteligentes-con-tdd\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Program
+ ando Contratos Inteligentes con TDD</span></div>\n<div><span>Online only</
+ span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video st
+ ream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/progra
+ mando-contratos-inteligentes-con-tdd\">app.livestorm.co/iov-labs-1/program
+ ando-contratos-inteligentes-con-tdd</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Angel Lopez\, Senior Developer\, @ajlopez":mailto:developers
+ @iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Programando Contratos Inteligentes con TDD 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/programando-contratos-in
+ teligentes-con-tdd
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20201109T230000Z
+END:VEVENT
 END:VCALENDAR

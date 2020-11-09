@@ -5060,6 +5060,87 @@
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202011-002/",
       "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202011-003",
+      "version": "1",
+      "timestamp": "2020-11-18T13:00:00.000Z",
+      "lastModified": "2020-11-09T23:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Will NFTs shape the future of Art & Games?",
+      "description": "NFTs have much more going for them than a lack of fungibility.\nNon-fungible tokens are used to create verifiable digital scarcity, as well as digital ownership, and the possibility of asset interoperability across multiple platforms. NFTs are used in several specific applications that require unique digital items like crypto art, crypto-collectibles and crypto-gaming.\nAt this webinar we will learn how versatile they are!",
+      "category": "Webinar",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Ben Fairbank",
+          "description": "RedFOX Labs CEO",
+          "contact": "@bennydoda01"
+        },
+        {
+          "name": "Yacine Terai",
+          "description": "CEO of Minty",
+          "contact": "@startupyacine"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/865e984b-d2e6-4123-8127-5fac8560bbe6/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/non-fungible-tokens-whats-behind-intelligent-nfts",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-003/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202011-004",
+      "version": "1",
+      "timestamp": "2020-11-19T21:00:00.000Z",
+      "lastModified": "2020-11-09T23:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Programando Contratos Inteligentes con TDD",
+      "description": "El desarrollo blockchain con contratos inteligentes está cambiando el mundo del valor, más allá de las monedas nacionales. La lógica compartida y pública permite crear sistemas nuevos como el DeFi (Decentralized Finance) y Open Finance. Pero con un gran poder, llega una gran responsabilidad: hacer que la lógica de los contratos sea la esperada. Una forma de hacerlo es usar el flujo de trabajo de TDD. Veremos los conceptos de esta disciplina, que va más allá de hacer pruebas: se relaciona con el diseño incremental, búsqueda de la simplicidad, y especificación por código. Exploraremos ejemplos sencillos de DeFi, y cómo paso a paso se construye un sistema, usando Solidity y Truffle.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Angel Lopez",
+          "description": "Senior Developer",
+          "contact": "@ajlopez"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/46d76e78-7d15-40d0-9fb3-70519c83f728/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/programando-contratos-inteligentes-con-tdd",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-004/",
+      "_isPast": false
     }
   ]
 }
