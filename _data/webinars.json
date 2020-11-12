@@ -1698,7 +1698,6 @@
       ],
       "recordedVideoUrl": "https://youtu.be/ThA8rkw-nTY",
       "youtubeVideoId": "ThA8rkw-nTY",
-      "_permalink": "/webinars/202005-001/",
       "_isPast": true
     },
     {
@@ -3048,7 +3047,7 @@
       "lastModified": "2020-06-24T09:30:00.000Z",
       "status": "cancelled",
       "url": "",
-      "title": "Testing Smart Contracts with Truffle",
+      "title": "Testing Smart Contracts with Truffle (Duplicate)",
       "description": "Learn how to create and run tests on your RSK smart contracts using Truffle.",
       "category": "Workshop",
       "locationCategory": "online",
@@ -3064,8 +3063,8 @@
           "contact": "@bguiz"
         }
       ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/p/b6612166-518b-4852-8b6e-6806923fe80d/form",
-      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-truffle",
+      "rsvpEmbedUrl": "",
+      "videoStreamUrl": "",
       "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
@@ -3080,8 +3079,7 @@
           "url": "https://dappsdev.org/hands-on/mocha-intro/"
         }
       ],
-      "recordedVideoUrl": "https://youtu.be/_bVwar_p0wo",
-      "youtubeVideoId": "_bVwar_p0wo",
+      "recordedVideoUrl": "",
       "_isPast": true
     },
     {
@@ -3395,7 +3393,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/ec855c22-6b23-42b9-8f43-89a6554079cf/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rwallet-and-rsk-libraries",
-      "tags": " idioma-english audiencia-developers audiencia-general recent",
+      "tags": " idioma-english audiencia-developers audiencia-general",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3432,7 +3430,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e6c9c408-f453-417e-9ab5-5b237c646acd/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-healthier-and-sustainable-cities",
-      "tags": " idioma-english audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-english audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3469,7 +3467,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/2bbaf2ed-5c77-4428-aa34-3bb9f5a531b4/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/evshare-ciudades-sustentables",
-      "tags": " idioma-spanish audiencia-general audiencia-enterprise recent",
+      "tags": " idioma-spanish audiencia-general audiencia-enterprise",
       "image": "/webinars/img/events/event4.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3508,7 +3506,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/477dbcd4-7e15-4a21-bf56-11a6155fcc1a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-a-criar-sua-primeira-carteira-rwallet",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3547,7 +3545,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/20581219-2dc5-4382-ac78-b2e06a7c0101/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-lumino-workshop",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event6.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3588,7 +3586,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/11ca137c-4c36-453b-9dea-93458bc3c831/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/testing-smart-contracts-with-openzepplin",
-      "tags": " idioma-english audiencia-developers recent",
+      "tags": " idioma-english audiencia-developers",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "/webinars/202008-005/banner-image.png",
       "twitterSite": "@bguiz",
@@ -3644,7 +3642,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/28967d51-08df-4701-9b3a-12cfc240e5bf/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/utilizacao-da-biblioteca-rsk3js-no-seu-site",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3688,7 +3686,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/de980613-7c05-4d99-8ac8-5e1cef829757/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/trazabilidad-en-la-industria-nuclear",
-      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3732,7 +3730,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/83535a48-3e9a-4355-8585-e06ce85d41c2/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/traceability-in-the-nuclear-industry-based-on-blockchain-technology",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3771,7 +3769,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/66249815-cf94-4a9a-ab3c-3e6a743c77ff/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/casos-de-uso-na-rsk",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3810,7 +3808,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e34c1aef-6d13-4ff1-b9a7-51ef2f85f98c/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/ux-and-blockchain-direcciones-y-dominios",
-      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -3833,7 +3831,7 @@
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -3864,7 +3862,7 @@
         {
           "name": "Gustavo Segovia",
           "description": "Collaboration Catalyst and Socio-Economic Analyst, Blockchain for Humanity",
-          "contact": "@b4_humanity"
+          "contact": "@sepu85"
         },
         {
           "name": "Tom Grogan",
@@ -3874,7 +3872,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?eid=117617704721&aff=dappsdev",
       "videoStreamUrl": "https://www.eventbrite.sg/e/post-covid-hack-2020-official-launch-tickets-117617704721",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -3900,17 +3898,17 @@
     {
       "type": "event/2",
       "id": "202009-002",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-09-08T13:00:00.000Z",
-      "lastModified": "2020-08-29T07:00:00.000Z",
+      "lastModified": "2020-09-09T10:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273017420/",
       "title": "Blockchain basics: Writing your first smart contract",
       "description": "This workshop is ideal for anyone looking to learn the basics of Blockchain technology. In this workshop, we will cover the following:\n\n- Theory of blockchain and decentralised systems\n- Consensus mechanisms\n- How Bitcoin and Ethereum really work\n- What makes a good blockchain project?\n- Writing Smart Contracts\n  - Using Remix\n  - Hands on solidity programming",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -3926,29 +3924,39 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590367983",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchain-basics-writing-your-first-smart-contract-no-experience-needed-tickets-118590367983",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event2.jpg",
-      "bannerImage": "",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
-      "resources": [],
-      "recordedVideoUrl": "",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1FtTWubH2aKQ7nLIbr5Ug9j8BXJATLtqYmIbH1cZKvrI/edit#"
+        },
+        {
+          "label": "Tutorial",
+          "url": "http://extropy.foundation/workshops/bootcamp/soliditytutorial.html"
+        }
+      ],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=89EFX6Bhqs0",
+      "youtubeVideoId": "89EFX6Bhqs0",
       "_permalink": "/webinars/202009-002/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
-      "id": "202009-004",
+      "id": "202009-003",
       "version": "1",
-      "timestamp": "2020-09-15T13:00:00.000Z",
-      "lastModified": "2020-08-29T07:00:00.000Z",
+      "timestamp": "2020-09-10T12:00:00.000Z",
+      "lastModified": "2020-09-09T07:15:00.000Z",
       "status": "confirmed",
       "url": "",
-      "title": "Blockchain for hackathons: How to build a DApp as quickly as possible",
-      "description": "This workshop is ideal for anyone looking to build dapps as quickly as possible. In this workshop, we will cover the following:\n\n- Review of smart contracts and solidity\n- Development and testing tools\n- Create a smart contract using Remix\n- Build a dapp that interacts with a smart contract\n  - Read\n  - Write\n  - Receive notification\n- Store and retrieve data using IPFS\n- Common problems and their solutions",
-      "category": "Workshop",
+      "title": "Why blockchain matters -- the history of commerce from the dawn of history to now",
+      "description": "Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more.\n\nThe goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement - one we are still trying to solve.\n\nThe talk assumes a wikipedia-level understanding of blockchain and DLT, but no specific advance preparation is required.",
+      "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -3957,6 +3965,55 @@
       ],
       "presenters": [
         {
+          "name": "Areiel Wolanow",
+          "description": "Managing Director, Finserv Experts",
+          "contact": "@FinservExperts"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598231503",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
+      "twitterSite": "",
+      "resources": [
+        {
+          "label": "Decentralised  immunity passport (pre-read)",
+          "url": "https://medium.com/id2020/id2020-announces-certification-of-blok-bioscience-immunity-passport-1f86013e9da5"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/K-agozYwvLY",
+      "youtubeVideoId": "K-agozYwvLY",
+      "_permalink": "/webinars/202009-003/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202009-004",
+      "version": "2",
+      "timestamp": "2020-09-15T13:00:00.000Z",
+      "lastModified": "2020-10-02T10:15:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273017525/",
+      "title": "Blockchain for hackathons: How to build a dApp as quickly as possible",
+      "description": "This workshop is ideal for anyone looking to build dapps as quickly as possible. In this workshop, we will cover the following:\n\n- Review of smart contracts and solidity\n- Development and testing tools\n- Create a smart contract using Remix\n- Build a dapp that interacts with a smart contract\n  - Read\n  - Write\n  - Receive notification\n- Store and retrieve data using IPFS\n- Common problems and their solutions",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Tom Dwyer",
+          "description": "Blockchain Developer, Extropy.IO",
+          "contact": "@extropy"
+        },
+        {
           "name": "Laurence Kirk",
           "description": "CEO and Senior Blockchain Developer, Extropy.IO",
           "contact": "@extropylaurence"
@@ -3964,14 +4021,20 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590500379",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchain-for-hackathons-how-to-build-a-dapp-as-quickly-as-possible-tickets-118590500379",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event9.jpg",
-      "bannerImage": "",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
-      "resources": [],
-      "recordedVideoUrl": "",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://postcovidhack.slack.com/?redir=%2Ffiles%2FU01AL0F2ZUH%2FF01BEB540CQ%2Fblockchain_for_hackathons.pdf%3Forigin_team%3DT016QJSKWDQ%26origin_channel%3DC0169SBSJ8P"
+        }
+      ],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=f0stK7FCyos",
+      "youtubeVideoId": "f0stK7FCyos",
       "_permalink": "/webinars/202009-004/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -3980,13 +4043,13 @@
       "timestamp": "2020-09-16T12:00:00.000Z",
       "lastModified": "2020-09-02T12:45:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273017670/",
       "title": "How to foster social inclusion with IOV’s technologies - POST COVID HACK 2020",
-      "description": "Social inclusion is at the heart of IOV’s purpose as an organization. It is of foremost importance in the post-COVID era, to help marginalized communities by providing better access to fair markets and financial services thanks to reputational profiles based on social and economic contributions made by individuals.\n\nIOV is sponsoring the socio-economic inclusion track of #PCH2020, where global teams are invited to create innovative solutions to tackle issues brought upon us by the pandemic, utilizing blockchain technologies. We look forward to the use cases developed as a result of the hackathon, which we expect will have a positive impact in the post-pandemic society as a whole\n\nIn this event, we will cover the following:\n\n- Improving access to fair markets\n- Improving access to financial services\n- How blockchain and other decentralised technologies can help\n- The need for innovation in the post-COVID era",
+      "description": "Social inclusion is at the heart of IOV’s purpose as an organization. It is of foremost importance in the post-COVID era, to help marginalized communities by providing better access to fair markets and financial services thanks to reputational profiles based on social and economic contributions made by individuals.\n\nIOV is sponsoring the socio-economic inclusion track of #PCH2020, where global teams are invited to create innovative solutions to tackle issues brought upon us by the pandemic, utilizing blockchain technologies. We look forward to the use cases developed as a result of the hackathon, which we expect will have a positive impact in the post-pandemic society as a whole.\n\nIn this event, we will cover the following:\n\n- Improving access to fair markets\n- Improving access to financial services\n- How blockchain and other decentralised technologies can help\n- The need for innovation in the post-COVID era",
       "category": "Talk",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4002,8 +4065,8 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118590799273",
       "videoStreamUrl": "https://www.eventbrite.sg/e/how-to-foster-social-inclusion-with-iovs-technologies-post-covid-hack-tickets-118590799273",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event4.jpg",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event11.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [
@@ -4022,7 +4085,7 @@
       ],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202009-005/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4031,13 +4094,13 @@
       "timestamp": "2020-09-22T13:00:00.000Z",
       "lastModified": "2020-08-29T07:00:00.000Z",
       "status": "confirmed",
-      "url": "",
-      "title": "Blockchains and smart contract security: Essential safeguards for your DApp",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273017710/",
+      "title": "Blockchains and smart contract security: Essential safeguards for your dApp",
       "description": "This workshop is ideal for developers looking to learn how to develop secure smart contracts. In this workshop, we will cover the following:\n\n- Smart contract review\n- Security essentials\n- Hands on - hacking contracts",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4053,14 +4116,20 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591120233",
       "videoStreamUrl": "https://www.eventbrite.sg/e/blockchains-and-smart-contract-security-essential-safeguards-for-your-dapp-tickets-118591120233",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event11.jpg",
-      "bannerImage": "",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
-      "resources": [],
-      "recordedVideoUrl": "",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/13dBalzcdShgkaMjdWCFJUqkcJt2DjLHL6iWnqpxww0Y/edit#'"
+        }
+      ],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=7wL2g-Dy7UA",
+      "youtubeVideoId": "7wL2g-Dy7UA",
       "_permalink": "/webinars/202009-006/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4069,7 +4138,7 @@
       "timestamp": "2020-09-24T12:00:00.000Z",
       "lastModified": "2020-08-29T07:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273018257/",
       "title": "Create your RSK dApp: from smart contracts to frontend",
       "description": "This workshop is step-by-step hands on to learn how to create and deploy a simple smart contract on RSK’s Testnet. Also you will learn how to create your first frontend to interact with it\n\nWhat the participants will learn:\n\n- Create a smart contract using Solidity\n- Configure a web wallet\n- Deploy on RSK’s Testnet using Remix\n- Create a frontend using only Javascript and HTML\n- Connect your dApp to a wallet using a web3 provider.\n\nDo participants need to install anything on their computer prior to the workshop?  \nNo!",
       "category": "Workshop",
@@ -4092,8 +4161,8 @@
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118592396049",
       "videoStreamUrl": "https://www.eventbrite.sg/e/create-your-rsk-dapp-from-smart-contracts-to-frontend-tickets-118592396049",
       "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event6.jpg",
-      "bannerImage": "",
+      "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [
         {
@@ -4105,24 +4174,25 @@
           "url": "https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=8msOOXpUDbg",
+      "youtubeVideoId": "8msOOXpUDbg",
       "_permalink": "/webinars/202009-007/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202009-008",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-09-29T13:00:00.000Z",
-      "lastModified": "2020-08-29T07:00:00.000Z",
+      "lastModified": "2020-10-02T10:15:00.000Z",
       "status": "confirmed",
-      "url": "",
-      "title": "Zero-knowledge proofs: A practical guide to developing ZKPs for a DApp",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273018660/",
+      "title": "Zero-knowledge proofs: A practical guide to developing ZKPs for a dApp",
       "description": "This workshop is a practical guide to developing ZKP’s for an application.  In this workshop, we will cover the following:\n\n- Intuitive explanation of zero knowledge proofs\n- Types of zero knowledge proofs\n- Current use cases and directions\n- Creating zero knowledge proofs on Ethereum",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4138,29 +4208,35 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118591310803",
       "videoStreamUrl": "https://www.eventbrite.sg/e/zero-knowledge-proofs-a-practical-guide-to-developing-zkps-for-a-dapp-tickets-118591310803",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event1.jpg",
-      "bannerImage": "",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
-      "resources": [],
-      "recordedVideoUrl": "",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/1sAa-nU1pdxurD7D43fCMcZP3ODUUKtrbGQGhOoKFi7E/edit#"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/CtiQaZ3vEhw",
+      "youtubeVideoId": "CtiQaZ3vEhw",
       "_permalink": "/webinars/202009-008/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
       "id": "202009-009",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-10-01T12:00:00.000Z",
-      "lastModified": "2020-08-29T07:00:00.000Z",
+      "lastModified": "2020-10-02T10:15:00.000Z",
       "status": "confirmed",
       "url": "",
-      "title": "Crossing Tokens from Ethereum to RSK and back",
+      "title": "Token Bridge and Uniswap: Crossing Tokens from Ethereum to RSK and back",
       "description": "In this workshop, we will use the Token Bridge to cross ERC20 tokens from Ethereum ro RSK and then trade them on rskswap.com",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
-      "language": "",
+      "language": "English",
       "audiences": [
         "general",
         "developers",
@@ -4176,11 +4252,15 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=118598722973",
       "videoStreamUrl": "https://www.eventbrite.sg/e/token-bridge-and-uniswap-webinar-all-in-one-tickets-118598722973",
-      "tags": " idioma- audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event8.jpg",
-      "bannerImage": "",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/e/2PACX-1vRvdF4UF5hzOav7yPbRvuYwLVNosjBzXsmkHzgZX-lOvugc7sZ_hzcn-X-0uPs8eyTmZ3q6_fmwbhQF/pub?start=false&loop=false&delayms=5000#"
+        },
         {
           "label": "Metamask",
           "url": "https://developers.rsk.co/wallet/use/metamask/"
@@ -4190,9 +4270,10 @@
           "url": "https://developers.rsk.co/wallet/use/nifty/"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/q5OKJ5bUCiY",
+      "youtubeVideoId": "q5OKJ5bUCiY",
       "_permalink": "/webinars/202009-009/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4201,7 +4282,7 @@
       "timestamp": "2020-09-09T22:00:00.000Z",
       "lastModified": "2020-08-31T01:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSK-Brasil/events/272991529/",
       "title": "RSK e DeFi - Finanças descentralizadas",
       "description": "Entenda o que é DeFi - Finanças descentralizadas e conheça as soluções desenvolvidas na RSK.\nConheça mais sobre DeFi para Bitcoin ➡️ https://developers.rsk.co/defi/pt-pt/index.html",
       "category": "Talk",
@@ -4224,13 +4305,14 @@
       "rsvpEmbedUrl": "https://app.livestorm.co/p/9674f59b-730f-4de4-9c60-cefce84fde06/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-e-defi-financas-descentralizadas",
       "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event3.jpg",
+      "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/qnzs09wpJ8k",
+      "youtubeVideoId": "qnzs09wpJ8k",
       "_permalink": "/webinars/202009-010/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4239,7 +4321,7 @@
       "timestamp": "2020-09-09T13:00:00.000Z",
       "lastModified": "2020-08-31T01:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/Blockchain-Singapore-Meetup/events/272982109/",
       "title": "DeFi for Bitcoin - Asia",
       "description": "DeFi for Bitcoin - Asia",
       "category": "Panel",
@@ -4282,13 +4364,14 @@
       "rsvpEmbedUrl": "https://app.livestorm.co/p/170cec76-60fe-4e17-9123-6f64d28eba7a/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-for-bitcoin-asia",
       "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event10.jpg",
+      "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/1PBYtbhHUwg",
+      "youtubeVideoId": "1PBYtbhHUwg",
       "_permalink": "/webinars/202009-011/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4297,7 +4380,7 @@
       "timestamp": "2020-09-23T22:00:00.000Z",
       "lastModified": "2020-08-31T01:00:00.000Z",
       "status": "confirmed",
-      "url": "",
+      "url": "https://www.meetup.com/es-ES/RSK-Brasil/events/273251198/",
       "title": "Conheça a RIF - RSK Infrastructure Framework",
       "description": "Existir uma infraestrutura de com bibliotecas e ferramentas acelera a implementação de qualquer projeto em Blockchain. \nArmazenamento descentralizado, gerenciamento de nomes para domínios, marketplace e canais de pagamento, entre outros, já existem para a RSK através da RIF - RSK Infrastructure Framework e serão apresentados neste webinar.\nConheça mais sobre RIF ➡️ https://www.rifos.org/pt-pt/",
       "category": "Talk",
@@ -4320,13 +4403,14 @@
       "rsvpEmbedUrl": "https://app.livestorm.co/p/9c4aac42-45bf-4bb3-8143-1d4de89a48f7/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/conheca-a-rif-rsk-infrastructure-framework",
       "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
-      "image": "/webinars/img/events/event5.jpg",
+      "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/Fa19pybMxKE",
+      "youtubeVideoId": "Fa19pybMxKE",
       "_permalink": "/webinars/202009-012/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -4354,13 +4438,708 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/56ef4df6-6884-4238-9440-84f8c75408a1/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/self-sovereign-identity-and-rif",
-      "tags": " idioma-english audiencia-general",
-      "image": "/webinars/img/events/event12.jpg",
+      "tags": " idioma-english audiencia-general recent",
+      "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [
+        {
+          "label": "Slides",
+          "url": "https://docs.google.com/presentation/d/19c9HvMMUpmXEpbmIHsBVcRCpPfevhsidppJf3g_pD14/edit?usp=sharing"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/4GJZ54H4c1M",
+      "youtubeVideoId": "4GJZ54H4c1M",
+      "_permalink": "/webinars/202009-013/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202009-014",
+      "version": "2",
+      "timestamp": "2020-09-25T16:00:00.000Z",
+      "lastModified": "2020-09-21T18:28:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273407346/",
+      "title": "Chainlink and RSK Integration",
+      "description": "Learn more about RSK and its integration of Chainlink decentralized oracles with smart contract engineers, Julian Rodriguez & Fernando Rubal. This technical demo was recorded at The Smart Contract Summit.",
+      "category": "Demo",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Julian Rodriguez",
+          "description": "RIF Gateways PO",
+          "contact": "@julianmrodri_"
+        },
+        {
+          "name": "Johann Eid",
+          "description": "Chainlink PO",
+          "contact": "@EidJohann"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/33eb9bb0-58f6-41da-a21e-648c27cf62c2/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rif-gateways-chainlink-integration",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/I7vrN3PqtuE",
+      "youtubeVideoId": "I7vrN3PqtuE",
+      "_permalink": "/webinars/202009-014/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202009-015",
+      "version": "2",
+      "timestamp": "2020-09-10T12:00:00.000Z",
+      "lastModified": "2020-09-16T00:00:00.000Z",
+      "status": "cancelled",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273025091/",
+      "title": "Why blockchain matters:\nThe history of commerce from the dawn of history to now",
+      "description": "Much has been written about the transformative potential of Blockchain and DLT: target use cases, expected outcomes, ways it will change the world, and so on. And in truth, DLT has the potential to change the world as much as the internet itself has, if not more. The goal of this session will be to give listeners an intuitive understanding of why that transformative potential is so strong by establishing its linkage to the world's first and oldest business requirement, one we are still trying to solve.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Areiel Wolanow",
+          "description": "Blok Solutions CTO",
+          "contact": "@FinservExperts"
+        }
+      ],
+      "rsvpEmbedUrl": "",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/why-blockchain-matters-the-history-of-commerce-from-the-dawn-of-history-tickets-118598231503",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event9.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
-      "_permalink": "/webinars/202009-013/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202009-016",
+      "version": "2",
+      "timestamp": "2020-09-16T22:00:00.000Z",
+      "lastModified": "2020-09-14T19:00:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSK-Brasil/events/273251198/",
+      "title": "Interoperabilidade: Ethereum, RSK e Bitcoin. Entenda como funciona",
+      "description": "Que tipo de interoperabilidade pode existir entre Bitcoin, Ethereum e RSK?  Ethereum tem smart contracts e RSK pode executar os mesmos smart contracts com a validação da rede Bitcoin. Entenda como isso funciona.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/129f425c-9d15-46f3-90fa-6261a0998e29/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/bitcoin-ethereum-and-rsk",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/1uC7DUZwSIU",
+      "youtubeVideoId": "1uC7DUZwSIU",
+      "_permalink": "/webinars/202009-016/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-001",
+      "version": "1",
+      "timestamp": "2020-10-07T12:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Truffle boxes: a fast way to build a dApp in a Hackathon",
+      "description": "This workshop is a step-by-step hands on to know the RSK Truffle boxes and learn how to use them to create a full dApp very quickly.\n\nWhat the participants will learn:\n- Unbox an RSK Truffle box\n- Configure a web wallet\n- Deploy a smart contract on RSK’s Testnet using Truffle\n- Use Truffle test\n- Run the frontend which is already in the box\n- Interact with your dApp!\n\nList of prior reading materials for participants that will help them prepare for the workshop:\nhttps://developers.rsk.co/tools/truffle/\nhttps://developers.rsk.co/tutorials/truffle-boxes/rsk-starter-box/\nhttps://developers.rsk.co/tutorials/truffle-boxes/pet-shop-box/",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=123134696191",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/rsk-truffle-boxes-a-fast-way-to-build-a-dapp-in-a-hackathon-tickets-123134696191",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202010-001/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-002",
+      "version": "1",
+      "timestamp": "2020-10-08T12:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273782009/",
+      "title": "What to avoid when building your first Blockchain app",
+      "description": "In this workshop, aimed at both technical and business professionals, Nethermind Founder and CTO, Tomasz Stańczak, will cover:\n\n- What doesn’t work on blockchain\n- Common mistakes for people entering blockchain\n- Why you should not store data on-chain\n- How to choose between Private vs Public blockchain",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Tomasz Stanczak",
+          "description": "CTO, Nethermind",
+          "contact": "@tkstanczak"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=119859257265",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/what-to-avoid-when-building-your-first-blockchain-app-tickets-119859257265",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202010-002/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-003",
+      "version": "1",
+      "timestamp": "2020-10-13T12:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273782079/",
+      "title": "Using Blockchain to foster Socio-Economic Inclusion",
+      "description": "Learn how Blockchain for Humanity & Post Covid Hack foster socio-economic inclusion through the use of Blockchain Technology.\n\nThe aim of this workshop is to help participants in the Post Covid Hack to understand:\n\n- What community currency is, its use-cases and how these communities look\n- What are the relevant projects in this area\n- What would be beneficial to have in the space\n- Blockchain for Humanity's mission\n- How decentralisation relates to (helps with) socio-economic inclusion\n- Discuss specific projects and questions from the audience / Post Covid Hack participants",
+      "category": "Panel",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Blockchain for Humanity",
+          "description": "",
+          "contact": "@b4_humanity"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=122359848601",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/using-blockchain-to-foster-socio-economic-inclusion-panel-discussion-tickets-122359848601",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202010-003/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-004",
+      "version": "2",
+      "timestamp": "2020-10-15T12:00:00.000Z",
+      "lastModified": "2020-10-10T03:30:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Whirlwind introduction to DeFi",
+      "description": "This workshop along with an interactive Q&A will cover the key differences between **CeFi** and **DeFi**, and the key components in DeFi plus more.\nWill touch upon **DEX's**, **AMM** and what are the possible drivers for the sudden surge in DeFi. Not to miss anything out, we will look at what are the key challenges in front of DeFi to succeed.\n\n**What you will learn**\n\nLearn about Stable coins, DEX, AMM, Bonding curves, Derivatives , Oracles plus more.\n\n**Prior reading materials**\n\nIf you are new to the DeFi space, we recommend you read the following report prior to the workshop: [DeFi Adoption 2020 : A definite guide to entering the industry](https://s3.cointelegraph.com/storage/uploads/view/48c6c4e03f85bc722d76f88c2676478b.pdf)",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Anish Mohammed",
+          "description": "Co-founder, R² Labs",
+          "contact": "@anishmohammed"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=124664062567",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/whirlwind-introduction-to-defi-tickets-124664062567",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "/webinars/img/pch2020-partner-banner.png",
+      "twitterSite": "",
+      "resources": [
+        {
+          "label": "Reading Materials",
+          "url": "https://s3.cointelegraph.com/storage/uploads/view/48c6c4e03f85bc722d76f88c2676478b.pdf"
+        }
+      ],
+      "recordedVideoUrl": "https://youtu.be/W33C1cPR6c4",
+      "youtubeVideoId": "W33C1cPR6c4",
+      "_permalink": "/webinars/202010-004/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-005",
+      "version": "1",
+      "timestamp": "2020-10-20T23:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/273780380/",
+      "title": "Como migrar dApps de Ethereum a RSK",
+      "description": "Los costos de gas en la red RSK son un 3000% más bajos que en la red Ethereum.\n\nPuedes verlo entrando en ➡️ http://rskgasstation.info/\n\nEste webinar está pensado para desarrolladores de Ethereum que quieran conocer las posibilidades de migrar sus aplicaciones a la red RSK.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/604b648b-e57d-4857-83f1-694d5e44bc57/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-a-rsk",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/xsY0dL2-9T4",
+      "youtubeVideoId": "xsY0dL2-9T4",
+      "_permalink": "/webinars/202010-005/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-006",
+      "version": "1",
+      "timestamp": "2020-10-21T22:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSK-Brasil/events/273779100/",
+      "title": "DeFi na prática:\nComo trocar tokens usando RSK Swap",
+      "description": "Para iniciantes!\n\nExperimente os conceitos de DeFi - finanças descentralizadas na prática! \nVamos configurar uma carteira, adquirir tokens e trocá-los utilizando RSK Swap: https://rskswap.com/\nVocê também vai entender o papel do pool de liquidez no processo.\n\nRSK Swap é uma exchange completamente descentralizada que possibilita a troca de tokens instantaneamente.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/6aefd038-65c2-4640-8d50-471b37d0cb24/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-trocar-tokens-usando-rskswap",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/T7Zd83P-xsU",
+      "youtubeVideoId": "T7Zd83P-xsU",
+      "_permalink": "/webinars/202010-006/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-007",
+      "version": "1",
+      "timestamp": "2020-10-22T18:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/274035704/",
+      "title": "Sovryn\nA decentralized protocol for Bitcoin lending and margin trading",
+      "description": "Sovryn is a decentralized protocol for Bitcoin lending and margin trading. The protocol can be easily integrated into new and existing exchanges, or accessed simply through a web3 portal. Sovryn will provide decentralized alternatives of all the most popular centralised Bitcoin finance tools. \nCurrent Features:\n🟢 Spot-Exchange - a low cost, low-slippage, AMM allowing instant trades between tokens.\n⚫ Margin Trading - Creates up to 5X long/short trades, allowing users to borrow leverage from the lending pool.\n⚪ Lending Pool - Allows HODLers to earn interest by lending tokens to margin traders and borrowers.\n🟢 Smart BTC Relay - Allows use of Bitcoin almost instantly with smart contracts and decentralized products, from any Bitcoin wallet. \nWhat makes Sovryn unique is that it is decentralized, and uses Ethereum-like smart contracts but on the RSK Bitcoin sidechain.",
+      "category": "Talk",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Edan Yago",
+          "description": "Contributor",
+          "contact": "@EdanYago"
+        },
+        {
+          "name": "Ororo Munroe",
+          "description": "Founder and Developer",
+          "contact": "@SovrynStorm"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/e33f5ab9-b1e6-424a-9aa0-2637acf67d6d/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-margin-trading",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/26tpMslkro0",
+      "youtubeVideoId": "26tpMslkro0",
+      "_permalink": "/webinars/202010-007/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-008",
+      "version": "2",
+      "timestamp": "2020-10-28T22:00:00.000Z",
+      "lastModified": "2020-10-27T01:00:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSK-Brasil/events/273779227/",
+      "title": "Facilitando sua vida:\nTransforme endereços em nomes com o RNS - RIF Name Service",
+      "description": "Para iniciantes!\n\nNeste webinar você vai aprender a criar seu nome personalizado e a interagir com ele, conhecendo algumas utilizações.\n\nRNS - RIF Name Service é um serviço descentralizado para identificação de endereços Blockchain, transformando-os em nomes customizados, fáceis de guardar.\n\nSão como os nomes de domínios na WWW, que usa o Domain Name System (DNS).\n\nConheça mas:\n\n🔵 https://www.rifos.org/nameservice/pt-pt/\n\n🔵 https://developers.rsk.co/rif/rns/\n\n🔵 https://manager.rns.rifos.org/\n\n🔵 https://testnet.manager.rns.rifos.org/",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/a1763628-87f7-46ab-b961-2a68ab9c66eb/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rns-rsk-name-service",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/dXzwvfcShk0",
+      "youtubeVideoId": "dXzwvfcShk0",
+      "_permalink": "/webinars/202010-008/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-009",
+      "version": "1",
+      "timestamp": "2020-10-13T16:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/rsk-community/events/273786331/",
+      "title": "DAI on RSK\nToken Bridge: crossing Tokens from DAI to BTC and back",
+      "description": "Now DAI is available on RSK!\nBy bringing the tools and assets that power decentralized finance to a Bitcoin environment, MakerDAO and RSK, together with the RIF token community, can fuel growing demand for DeFi assets and applications without being hampered by Ethereum's high fees.\nDAI on RSK will bring the crypto-collateralized stablecoin to a scalable smart contract network while maintaining a connection with Ethereum and its valuable community of users and developers.\nOn this webinar you will learn about the technology behind the RSK-Ethereum Token Bridge and about those who made it possible.",
+      "category": "Webinar",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Nadia Alvarez",
+          "description": "Business Development at MakerDAO",
+          "contact": "@nad8802"
+        },
+        {
+          "name": "Pedro Prete",
+          "description": "Co-Founder, Think and Dev and RSK Swap Developer",
+          "contact": "@PedroMPrete"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/7555fb99-899d-44df-9ebe-2c87a3014c54/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dai-on-rsk",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/T9lvByQzPKc",
+      "youtubeVideoId": "T9lvByQzPKc",
+      "_permalink": "/webinars/202010-009/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202010-010",
+      "version": "1",
+      "timestamp": "2020-10-14T20:00:00.000Z",
+      "lastModified": "2020-10-09T12:30:00.000Z",
+      "status": "confirmed",
+      "url": "https://www.meetup.com/es-ES/RSKBuenosAires/events/273786530/",
+      "title": "DAI + RSK\nToken Bridge: intercambio de DAI + BTC",
+      "description": "Ahora DAI está disponible sobre RSK!\nAl llevar las herramientas y los activos que impulsan las finanzas descentralizadas a un entorno de Bitcoin, MakerDAO y RSK, junto con la comunidad de RIF Token, pueden impulsar la creciente demanda de activos y aplicaciones DeFi sin verse obstaculizados por las altas tarifas de Ethereum.\nDAI en RSK traerá la moneda estable con garantía criptográfica a una red de smart contract escalable, a la vez que mantiene una conexión con Ethereum y su valiosa comunidad de usuarios y desarrolladores.\nDurante este webinar aprenderás mucho más sobre la tecnología que se encuentra detrás del Puente de Tokens entre RSK y Ethereum y sobre aquellos quienes hicieron esto posible.",
+      "category": "Webinar",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Mariano di Pietrantonio",
+          "description": "Marketing Manager, Maker Foundation",
+          "contact": "@Mariandipietra"
+        },
+        {
+          "name": "Pedro Prete",
+          "description": "Co-Founder, Think and Dev and RSK Swap Developer",
+          "contact": "@PedroMPrete"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/545c4fad-b5be-4590-964b-118724b44aaf/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://youtu.be/xpWjoD8OXI8",
+      "youtubeVideoId": "xpWjoD8OXI8",
+      "_permalink": "/webinars/202010-010/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202011-001",
+      "version": "1",
+      "timestamp": "2020-11-11T22:00:00.000Z",
+      "lastModified": "2020-10-30T22:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "DAI na RSK Token Bridge: convertendo DAI em BTC e vice-versa",
+      "description": "Agora DAI está disponível na RSK!\nTrazendo as ferramentas e ativos que impulsionam as finanças descentralizadas para o ecossistema Bitcoin, MakerDAO e RSK, juntamente com a comunidade dos tokens RIF, respondem à crescente demanda por ativos e aplicativos DeFi sem ser preocupar com as altas taxas da rede Ethereum.\nDAI na RSK traz esta moeda estável cripto-colateralizada para uma rede com alta escalabilidade para os smart contracts, enquanto mantém sua conexão com o Ethereum e sua importante comunidade de usuários e desenvolvedores.\nNeste webinar você vai aprender como funciona a RSK-Ethereum Token Bridge e conhecer a parceria da MakerDAO com a RSK.",
+      "category": "Webinar",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Nadia Alvarez",
+          "description": "Business Development Latam na MakerDAO",
+          "contact": "@nad8802"
+        },
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/78aeab68-834b-4144-800e-a10bcb0428fe/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dai-na-rsk-token-bridge-convertendo-dai-em-btc-e-vice-versa",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-001/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202011-002",
+      "version": "1",
+      "timestamp": "2020-11-25T22:00:00.000Z",
+      "lastModified": "2020-10-30T22:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Como funciona um marketplace? Conheça o RIF marketplace",
+      "description": "Para iniciantes!\n\nNeste webinar você vai aprender a negociar nomes de domínio RNS no RIF marketplace.\n\nRNS - RIF Name Service é um serviço descentralizado para identificação de endereços Blockchain, transformando-os em nomes customizados, fáceis de guardar.\n\nSão como os nomes de domínios na WWW, que usa o Domain Name System (DNS).\n\nO marketplace é o ponto de encontro de compradores e vendedores, e, no nosso caso, para nomes RNS.\n\nSaiba mais:\n\n🔵 https://www.rifos.org/pt-pt/marketplace\n\n🔵 https://developers.rsk.co/rif/marketplace/\n\n🔵 https://marketplace.rifos.org/\n\n🔵 https://marketplace.testnet.rifos.org/",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/ab69d235-b381-4253-9cc5-d4a2bad869de/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-funciona-um-marketplace-conheca-o-rif-marketplace",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-002/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202011-003",
+      "version": "1",
+      "timestamp": "2020-11-18T13:00:00.000Z",
+      "lastModified": "2020-11-09T23:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Will NFTs shape the future of Art & Games?",
+      "description": "NFTs have much more going for them than a lack of fungibility.\nNon-fungible tokens are used to create verifiable digital scarcity, as well as digital ownership, and the possibility of asset interoperability across multiple platforms. NFTs are used in several specific applications that require unique digital items like crypto art, crypto-collectibles and crypto-gaming.\nAt this webinar we will learn how versatile they are!",
+      "category": "Webinar",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Ben Fairbank",
+          "description": "RedFOX Labs CEO",
+          "contact": "@bennydoda01"
+        },
+        {
+          "name": "Yacine Terai",
+          "description": "CEO of Minty",
+          "contact": "@startupyacine"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/865e984b-d2e6-4123-8127-5fac8560bbe6/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/non-fungible-tokens-whats-behind-intelligent-nfts",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-003/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202011-004",
+      "version": "1",
+      "timestamp": "2020-11-19T21:00:00.000Z",
+      "lastModified": "2020-11-09T23:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Programando Contratos Inteligentes con TDD",
+      "description": "El desarrollo blockchain con contratos inteligentes está cambiando el mundo del valor, más allá de las monedas nacionales. La lógica compartida y pública permite crear sistemas nuevos como el DeFi (Decentralized Finance) y Open Finance. Pero con un gran poder, llega una gran responsabilidad: hacer que la lógica de los contratos sea la esperada. Una forma de hacerlo es usar el flujo de trabajo de TDD. Veremos los conceptos de esta disciplina, que va más allá de hacer pruebas: se relaciona con el diseño incremental, búsqueda de la simplicidad, y especificación por código. Exploraremos ejemplos sencillos de DeFi, y cómo paso a paso se construye un sistema, usando Solidity y Truffle.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Angel Lopez",
+          "description": "Senior Developer",
+          "contact": "@ajlopez"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/46d76e78-7d15-40d0-9fb3-70519c83f728/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/programando-contratos-inteligentes-con-tdd",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202011-004/",
       "_isPast": false
     }
   ]
