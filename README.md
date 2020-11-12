@@ -212,6 +212,17 @@ This is **not** necessary for the development of the main site.
   - Visit `http://localhost:4000/webinars/` and verify that
     there aren't any missing events, or time zone issues.
 
+### Tutorials
+
+Similar to Webinars
+
+1. Edit the CSV file containing all of the event data:
+   `_data/rsk-tutorials.csv`
+1. Run the JSON and iCal generation scripts
+  - `npm run generate-tutorials`
+1. Check the diffs
+  - `git diff ./_data/tutorialslist.json`
+
 ### Issues
 
 We encourage you to
