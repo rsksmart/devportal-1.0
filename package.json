@@ -9,7 +9,9 @@
     "generate-webinar": "npm run generate-webinar-json && npm run generate-webinar-ical && npm run generate-webinar-pages",
     "generate-webinar-ical": "node .scripts/generate-webinar-ical.js",
     "generate-webinar-json": "node .scripts/generate-webinar-json.js",
-    "generate-webinar-pages": "node .scripts/generate-webinar-pages.js"
+    "generate-webinar-pages": "node .scripts/generate-webinar-pages.js",
+    "generate-tutorials": "npm run generate-tutorials-json",
+    "generate-tutorials-json": "node .scripts/generate-tutorials-json.js"
   },
   "repository": {
     "type": "git",

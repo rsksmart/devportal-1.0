@@ -3,10 +3,10 @@ layout: revamp/tutorials
 title: Tutorials
 ---
 
-{% assign tutorials = site.data.tutorialslist.tutorials | where_exp: "tutorial", "tutorial.status != 'inactive'" %}
-{% assign visible_tutorials = tutorials | where_exp: "tutorial", "tutorial.status != 'inactive'" %}
+
+{% assign visible_tutorials = site.data.tutorialslist.tutorials | where_exp: "tutorial", "tutorial.status != 'inactive'" %}
 <div id="grid">
-    {% for tutorial in visible_tutorials %}
+{% for tutorial in visible_tutorials %}
 <div id="tutorial-id-{{ tutorial.id }}" class="col-lg-6 col-xl-4 mb-3 item {{ tutorial.category }}">
 <a href="{{ tutorial.url }}">    
 <div class="tutorial-content tutorial-content-box">
@@ -22,8 +22,9 @@ title: Tutorials
 <div class="tutorial-title mb-3">{{ tutorial.title }}</div>
 <div class="tutorial-descrition mb-3">{{ tutorial.description }}</div>
 <div class="tutorial-tags-container mb-3">
-    <span class="tutorial-tag">java</span> <span class="tutorial-tag">asa</span> <span class="tutorial-tag">asset</span> 
-
+    {% for tag in tutorial.tags %}
+    <span class="tutorial-tag">{{ tag.name }}</span>
+    {% endfor %}
 </div>
 <div class="tutorial-presenter">
     {% if tutorial.presenterImage %}

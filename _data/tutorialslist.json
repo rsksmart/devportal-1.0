@@ -1,6 +1,6 @@
 {
   "tutorials": [
-  	{
+    {
       "id": "1",
       "timestamp": "2020-03-23T21:00:00.000Z",
       "status": "active",
@@ -12,7 +12,17 @@
       "duration": "1 hour",
       "presenterName": "Rebecca.C",
       "presenterImage": "/assets/revamp/img/tutorials/presenters/rebecca-c.jpg",
-      "tags": "java asa asset",
+      "tags": [
+        {
+          "name": "java"
+        },
+        {
+          "name": "asa"
+        },
+        {
+          "name": "asset"
+        }
+      ],
       "bannerImage": "/assets/revamp/img/tutorials/banner-images/tuto1.jpg"
     },
     {
@@ -26,7 +36,19 @@
       "audiences": "Beginner",
       "duration": "1 hour",
       "presenterName": "RSK",
-      "tags": "java asa asset"
+      "presenterImage": "",
+      "tags": [
+        {
+          "name": "java"
+        },
+        {
+          "name": "asa"
+        },
+        {
+          "name": "asset"
+        }
+      ],
+      "bannerImage": ""
     },
     {
       "id": "3",
@@ -40,7 +62,17 @@
       "duration": "1 hour",
       "presenterName": "John.D",
       "presenterImage": "/assets/revamp/img/tutorials/presenters/john-d.jpg",
-      "tags": "java asa asset",
+      "tags": [
+        {
+          "name": "java"
+        },
+        {
+          "name": "asa"
+        },
+        {
+          "name": "asset"
+        }
+      ],
       "bannerImage": "/assets/revamp/img/tutorials/banner-images/tuto3.jpg"
     },
     {
@@ -55,7 +87,17 @@
       "duration": "1 hour",
       "presenterName": "John.D",
       "presenterImage": "/assets/revamp/img/tutorials/presenters/john-d.jpg",
-      "tags": "java asa asset",
+      "tags": [
+        {
+          "name": "java"
+        },
+        {
+          "name": "asa"
+        },
+        {
+          "name": "asset"
+        }
+      ],
       "bannerImage": "/assets/revamp/img/tutorials/banner-images/tuto3.jpg"
     },
     {
@@ -70,7 +112,17 @@
       "duration": "1 hour",
       "presenterName": "Rebecca.C",
       "presenterImage": "/assets/revamp/img/tutorials/presenters/rebecca-c.jpg",
-      "tags": "java asa asset",
+      "tags": [
+        {
+          "name": "java"
+        },
+        {
+          "name": "asa"
+        },
+        {
+          "name": "asset"
+        }
+      ],
       "bannerImage": "/assets/revamp/img/tutorials/banner-images/tuto1.jpg"
     },
     {
@@ -85,8 +137,18 @@
       "duration": "30 mins",
       "presenterName": "John.D",
       "presenterImage": "/assets/revamp/img/tutorials/presenters/john-d.jpg",
-      "tags": "java asa asset",
+      "tags": [
+        {
+          "name": "java"
+        },
+        {
+          "name": "asa"
+        },
+        {
+          "name": "asset"
+        }
+      ],
       "bannerImage": "/assets/revamp/img/tutorials/banner-images/tuto3.jpg"
     }
- ]
+  ]
 }
