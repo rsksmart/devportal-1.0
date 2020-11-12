@@ -106,4 +106,4 @@ Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/cus
 ----
 
 [Github](https://github.com/rsksmart?q=rif-marketplace) |
-[Access the RIF Marketplace](https://marketplace.testnet.rifos.org)
+[Access the RIF Marketplace](https://marketplace.rifos.org)

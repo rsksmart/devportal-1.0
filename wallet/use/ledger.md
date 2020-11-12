@@ -45,6 +45,18 @@ Afterward, the device will also show the RSK app's icon:
 
 ### 4. Use RSK
 
-Open your RSK app in your device and let the display show the ‘Use wallet to view accounts’ legend: 
+Open the RSK app in your device and let the display show the ‘Use wallet to view accounts’ legend: 
 
 ![Ledger RSK App](/assets/img/rsk/ledger/7.png)
+
+
+### 5. Enabling contract data
+If you want to send ERC-20 tokens, you need to activate contract data on your device. Otherwise, **invalid status 6a80** is returned.
+
+To enable contract data: 
+
+1. Connect and unlock your Ledger device.
+2. Open the **RSK** application.
+3. Press the right button to navigate to **Settings**. Then press both buttons to validate.
+4. In the **Contract data** settings, press both buttons to allow contract data in transactions. 
+The device displays **Allowed**.

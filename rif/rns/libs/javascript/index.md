@@ -33,7 +33,7 @@ rns.addr('testing.rsk').then(console.log)
 
 Are you excited about it and want to know more? Let's dive into the library with our [getting started](/rif/rns/libs/javascript/Getting-started) guide for beginners, or jump directly to the [available operations](/rif/rns/libs/javascript/Operations) section and start using them in your local environment. You can even try them out right here on this page:
 
-<script async src="//jsfiddle.net/javiesses/pxby1796/16/embed/js,html,result/dark/"></script>
+<script async src="//jsfiddle.net/javiesses/y2up4908/embed/js,html,result/dark/"></script>
 <br />
 
 **RNS JS** has been built by and for developers, so we are always looking for collaboration. Check out our [contribution](/rif/rns/libs/javascript/Contribute) section, where you will find how can help RNS with proposals, issues, or pull requests.

@@ -76,6 +76,10 @@ The RIF Token allows any token holder to consume the services that are compatibl
   </tbody>
 </table>
 
+## Wallets
+
+See [supported wallets](/wallet/use/).
+
 ## Exchanges
 
 <div class="owl-carousel owl-theme">

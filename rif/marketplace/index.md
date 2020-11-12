@@ -13,4 +13,4 @@ The main goal of the **RIF Marketplace** is to enable the fast and efficient cre
 ![RIF Marketplace About](/assets/img/rif-marketplace/rifmkt-about.png)
 
 
-You can access the Marketplace on the RSK Tesnet: [marketplace.testnet.rifos.org](https://marketplace.testnet.rifos.org/)
+You can access the Marketplace on the RSK Mainnet: [marketplace.rifos.org](https://marketplace.rifos.org/)

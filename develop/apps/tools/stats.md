@@ -1,4 +1,5 @@
 ---
-layout: rsk
-title: RSK Stats
+layout: redirect
+permalink: /develop/apps/tools/stats/
+redirect: /tools/
 ---

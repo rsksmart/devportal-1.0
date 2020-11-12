@@ -78,6 +78,9 @@ The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc
   </tbody>
 </table>
 
+## Wallets
+
+See [supported wallets](/wallet/use/).
 
 ## Exchanges
 
