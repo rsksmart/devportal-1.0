@@ -2650,9 +2650,36 @@ and also iPads specifically.
 }
 
 /* Tutorials */
+/* filters */
+.content-box.tutorials-filters{padding: 1.2rem 2rem 0rem;}
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: var(--tertiary-color);
+    background-color: var(--tertiary-color);
+}
+
+.option-set .filter-cat:after{
+  display: inline-block;
+font: normal normal normal 14px/1 FontAwesome;
+font-size: inherit;
+content: "\f0da";
+transition: all linear 0.25s;
+margin-left: 15px;  
+}
+.option-set .filter-cat[aria-expanded="false"]:after {
+transform: rotate(0deg) ;
+
+  }   
+
+.option-set .filter-cat[aria-expanded="true"]:after {
+  transform: rotate(90deg) ;
+}
 
 #options input[type=checkbox]{margin-right:15px;}
 
+.custom-switch{margin-bottom: 5px}
+
+/* grid*/
 .tutorial-content-box {
     background: var(--tertiary-bg);
     padding: 1.2rem 2rem 4rem;
@@ -2721,6 +2748,12 @@ and also iPads specifically.
     font-weight: 600;
     font-size: 0.8rem;
 }
+@media (max-width: 991px){
+    .tutorial-presenter{
+   padding: 1rem 15px; 
+}
+}
+
 
 
 
@@ -2740,11 +2773,6 @@ and also iPads specifically.
 
 #grid{width:100%;}
 
-.custom-control-input:checked~.custom-control-label::before {
-    color: #fff;
-    border-color: var(--tertiary-color);
-    background-color: var(--tertiary-color);
-}
 
 
 
