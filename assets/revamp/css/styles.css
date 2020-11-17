@@ -2740,45 +2740,10 @@ and also iPads specifically.
 
 #grid{width:100%;}
 
-.styled-checkbox {
-  position: absolute;
-  opacity: 0;
-}
-.styled-checkbox + label {
-  position: relative;
-  cursor: pointer;
-  padding: 0;
-}
-.styled-checkbox + label:before {
-  content: "";
-  margin-right: 10px;
-  display: inline-block;
-  vertical-align: text-top;
-  width: 20px;
-  height: 20px;
-  background: white;
-  border:solid 1px var(--secondary-color);
-}
-.styled-checkbox:hover + label:before {
-  background: var(--tertiary-color);
-}
-.styled-checkbox:focus + label:before {
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
-}
-.styled-checkbox:checked + label:before {
- background: var(--tertiary-color);;
-}
-.styled-checkbox:checked + label:after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  top: 9px;
-  background: white;
-  width: 2px;
-  height: 2px;
-  box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: var(--tertiary-color);
+    background-color: var(--tertiary-color);
 }
 
 
