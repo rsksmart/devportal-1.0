@@ -49,7 +49,7 @@ A few examples of smart contracts are:
 RSK MainNet network was released in early January 2018. The latest major version is called Wasabi.
 
 Live statistics about the entire RSK network is available at [RSK Stats](https://stats.rsk.co/).
-All the necessary source code can be found at our GitHub repository: [RSKSmart on Github](https://github.com/rsksmart).
+All the necessary source code can be found at our GitHub repository: [RSKSmart](https://github.com/rsksmart).
 All the project information, including a getting started guide, can be found on the [RSK & RIF Developer Portal](https://developers.rsk.co/).
 
 For latest news and updates, check out [RSK Blog](https://blog.rsk.co/).
@@ -66,11 +66,11 @@ We think that the ecosystem has to mature for trust-minimized Bitcoin sidechains
 
 ### Is RSK centralised, federated, or decentralised?
 
-The RSK blockchain is highly decentralised. It is its own blockchain which is merge-mined with Bitcoin, and has a hashpower that is second only to Bitcoin. As such, we believe it to be the most secure and censorship- resistant smart contract platform; and the second most secure blockchain platform. Refer to https://stats.rsk.co/ for the live value of the RSK hash rate.
-The conversion between Bitcoin (BTC) and Smart Bitcoin (R-BTC) is accomplished through a 2-way peg mechanism. This 2-way peg was bootstrapped using a federation of nodes managing a Bitcoin multisignature. However, RSK has transitioned its federation to a **Powpeg**.
+The RSK blockchain is highly decentralised. RSK is merge-mined with Bitcoin, and has a hashpower that is second only to Bitcoin. As such, we believe it to be the most secure and censorship resistant smart contract platform; and the second most secure blockchain platform. Refer to [RSK Stats](https://stats.rsk.co/) for the live value of the RSK hash rate.
 
-A Powpeg is a multi-signature management system where participants' nodes have no direct access or control over private keys. Keys are controlled by tamper-proof HSMs. These HSMs internally run lightweight RSK nodes which obey commands originating from an RSK smart-contract called the Bridge that orchestrate peg-outs. Only when such commands are confirmed by thousands of blocks produced by the mining network does the HSM proceed to sign peg-out requests. The Powpeg is a new security protection layered on top of the previous federation. It is unique in the crypto ecosystem and radically reduces the attack surface for the most frequent security breaches. The strategy consensuated by the RSK community for increasing the security of the peg is based on defense-in-depth: adding more security layers on top of existing ones, protecting the system from the failure of any of them. The ultimate goal is the complete decentralisation of the peg.
-Refer to the [Security Model](https://developers.rsk.co/rsk/architecture/security/) for the details around the security model of the 2-way peg.
+The conversion between Bitcoin (BTC) and Smart Bitcoin (R-BTC) is accomplished through a 2-way peg mechanism. This 2-way peg was bootstrapped using a federation of nodes managing a Bitcoin multisignature. However, RSK has transitioned its federation to a **PowPeg**.
+
+A PowPeg is a multi-signature management system where participants' nodes have no direct access or control over private keys. Keys are controlled by tamper-proof HSMs. These HSMs internally run lightweight RSK nodes which obey commands originating from an RSK smart-contract called the Bridge that orchestrate peg-outs. Only when such commands are confirmed by thousands of blocks produced by the mining network does the HSM proceed to sign peg-out requests. The PowPeg is a new security protection layered on top of the previous federation. It is unique in the crypto ecosystem and radically reduces the attack surface for the most frequent security breaches. The RSK community has collectively decided on a strategy for increasing the security of the peg based on defence-in-depth: Adding more security layers on top of existing ones, protecting the system from the failure of any of them. The ultimate goal is the complete decentralisation of the peg. Refer to the [Security Model](https://developers.rsk.co/rsk/architecture/security/) for the details around the security model of the 2-way peg.
 
 ### How does RSK plan to be a reference in terms of smart contracts?
 
@@ -80,7 +80,7 @@ RSK is the most secure smart contracts platform in the world. Security has been 
 
 *How many nodes does a healthy protocol need?*
 
-The question has never been about the number of nodes but more about the diversity and independence of those nodes. A few hundred independent RSK nodes is enough to serve a global cryptocurrency network at this stage, but we must not feel confident by that metric. Our objective is that full nodes are run by a diverse set of individuals, organizations and companies. That is the true meaning of decentralization: **don’t trust, verify** yourself. IOVLabs innovation and research area has developed several decentralized incentivizations mechanisms that may one day be integrated into full nodes.  Also, we’ve put great effort to reduce the resource consumption of full nodes, such as the [Unitrie proposal]( https://www.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/) so that individuals can run nodes in standard laptops. Finally, we proposed a new technique for light clients [RSK Improvement Proposal](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP45.md), to onboard those users running nodes in mobile phones. In summary, we’re making sure that the network remains healthy and decentralized in the future, both in node quantity and quality.
+Decentralization should not be measured only by the number of nodes but also about the diversity and independence of nodes. A few hundred independent RSK nodes is enough to serve a global cryptocurrency network at this stage, but we must not feel confident by that metric alone. Our objective is that full nodes are run by a diverse set of individuals, organizations and companies. That is the true meaning of decentralization: **Don’t trust, verify** yourself. IOVLabs' innovation and research area has developed several decentralized incentivizations mechanisms that may one day be integrated into full nodes.  Also, we’ve put great effort to reduce the resource consumption of full nodes, such as the [Unitrie proposal]( https://www.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/) so that individuals can run nodes in standard laptops. Finally, we proposed a new technique for light clients [RSK Improvement Proposal](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP45.md), to onboard those users running nodes in mobile phones. In summary, we’re making sure that the network remains healthy and decentralized in the future, both in node quantity and quality.
 
 ### Should dApps set up their own nodes?
 
@@ -134,7 +134,7 @@ RSK Infrastructure Framework Open Standard (RIF OS) is a suite of open and decen
 
 *Is it a Smart Contract? Do exchanges deal with this in real time? Can end-users also interact with this smart-contract directly, without having to go through an exchange? If so, how? If not, why not?*
 
-RSK native currency, smartBitcoin (RBTC), is tethered to bitcoin 1 to 1 so the only way to create RBTC is by sending BTC (“or peg-in”) to a multisig address in the Bitcoin blockchain that is managed by the RSK Powpeg. The bitcoins that arrive at that address get locked, and a proof of that transfer (SPV proof) is fed to a special smart contract on the RSK blockchain called the Bridge contract. Currently, the RSK Federation is doing this process of communicating new transfers to the Bridge contract but this process is fully decentralized and anyone can feed this information to the contract. Once the bridge contract gets this proof it sends the equivalent amount of RBTC to what was received in BTC to an RSK address that corresponds to the BTC address that started the process on the Bitcoin blockchain. With that, the crossing from Bitcoin to RSK is finished in a fully decentralized / trust minimized way.
+RSK native currency, smartBitcoin (RBTC), is tethered to bitcoin 1 to 1 so the only way to create RBTC is by sending BTC (“or peg-in”) to a multisig address in the Bitcoin blockchain that is managed by the RSK PowPeg. The bitcoins that arrive at that address get locked, and a proof of that transfer (SPV proof) is fed to a special smart contract on the RSK blockchain called the Bridge contract. Currently, the PowPeg Federation is doing this process of communicating new transfers to the Bridge contract but this process is fully decentralized and anyone can feed this information to the contract. Once the bridge contract gets this proof it sends the equivalent amount of RBTC to what was received in BTC to an RSK address that corresponds to the BTC address that started the process on the Bitcoin blockchain. With that, the crossing from Bitcoin to RSK is finished in a fully decentralized / trust minimized way.
 
 To redeem RBTC for BTC (or “peg-out”) first you have to send the RBTC to a special address of the Bridge on the RSK Blockchain but since Bitcoin cannot verify transactions on a secondary blockchain because its scripting capabilities are limited on purpose to reduce its surface of attack, we need the **RSK Powpeg** to assist in the signing of the release transaction on the Bitcoin side. So as the RSK Powpeg nodes acknowledge and validate that a new BTC release transaction was created, they sign it. The main difference between a federation and RSK’s Powpeg is that the Powpeg nodes run a Hardware Security Module (HSM), so RSK Powpeg  nodes do not have access to the private keys and therefore, even if they collude,  they cannot steal the funds in the peg. The highest damage they can do is to unplug the HSM and stall the peg. There is a community proposal to add a 6-month time-locked transfer of the peg funds to a backup multisig to protect from a generalized Powpeg malfunction. Internally, when the Bridge contract commands a peg-out, the peg-out transaction is given  to the HSM, and the HSM validates the validity based on cumulative proof of work and then signs it. When enough signatures from HSMs are collected (remember that the BTC address is a multisig address so it needs M of N signatures to release the funds) then the BTCs are sent to the BTC address specified in the peg-out request.
 
@@ -183,7 +183,9 @@ While the RSK Live Mainnet requires, -and will always do-, Smart Contract execut
 
 ### What consensus protocol does RSK use?
 
-Merge-mining is a protocol that allows miners to mine on both RSK and the Bitcoin blockchains at the same time with exactly the same hardware and with no performance penalty. Therefore merge-miners can earn rewards on both blockchains. RSK has improved several open-source mining-pool software to enable merge-mining. Currently more than 40% of Bitcoin hashrate is merge-mining RSK, making RSK the most secure Turing-complete smart-contract platform in the world in terms of cumulative energy spent to secure it.  The RSK community is evaluating the upgrade to a recently developed variant of merge-mining called Strong Fork-aware Merge-Mining (SFAMM) that can increase the cumulative energy spent to secure RSK to 100% of Bitcoin’s hashrate.
+RSK uses DECOR+, a unique variant of Nakamoto Consensus, with the capability to merge-mine with Bitcoin or any other blockchain sharing the Bitcoin block format and proof-of-work.
+
+Merge-mining is a protocol that allows miners to mine on two or more blockchains at the same time with exactly the same hardware. RSK is designed such that merge-mining with Bitcoin does not pose any performance penalty to bitcoin miners. Therefore merge-miners can earn rewards on both RSK and Bitcoin simultaneously. RSK has improved several open-source mining-pool software to enable merge-mining. Currently more than 40% of Bitcoin hashrate is merge-mining RSK, making RSK the most secure Turing-complete smart-contract platform in the world in terms of cumulative energy spent to secure it. The RSK community is evaluating the upgrade to a recently developed variant of merge-mining called Strong Fork-aware Merge-Mining (SFAMM) that can increase the cumulative energy spent to secure RSK to 100% of Bitcoin’s hashrate.
 
 ### What is the DECOR+ protocol?
 
@@ -197,7 +199,7 @@ In the Bitcoin network, when two or more miners have solved blocks at equal heig
 
 ### Is RSK secure from selfish mining?
 
-DECOR+, plus the “sticky” rule make RSK consensus protocol incentive-compatible (that miners gain nothing from withholding blocks) assuming that transaction fees are stable, and there are no off-chain payments or bribes to miners.
+RSK uses the DECOR+ consensus protocol. DECOR+  is incentive-compatible and protects the network from selfish-mining  when the rate of honest uncle blocks produced by the network is low. If the uncle rate is high, then a selfish incentive may arise, as described by [Camacho-Lerner](https://scalingbitcoin.org/papers/DECOR-LAMI.pdf). To improve it, several fixes have been proposed, such as, the “sticky” rule, delaying the transfer of the weight of uncles in GHOST, or allowing referencing uncle-children in the same way as uncles. With any of these fixes, RSK consensus protocol becomes incentive-compatible assuming that transaction fees are stable, and there are no off-chain payments or bribes to miners.
 
 ## RIF technology
 
@@ -211,7 +213,8 @@ The initial protocols include Directory (a naming service protocol), Payments (a
 
 This suite of protocols aim to solve the major problems that stop decentralized blockchain networks (ie: Bitcoin, RSK, Ethereum, etc.) from reaching mass adoption. From our point of view, the two main impediments are sustainable scaling (onchain scaling is possible but leads to higher maintenance cost for validation nodes and therefore to centralization) and developer usability (it can take several months for developers to learn how to use the technology and even mastering the tech, it’s very inefficient to build decentralized apps for the lack of a higher level protocol and reusable components).
 
-Following the guidelines of RIF OS, a series of blockchain based P2P platforms are being built using RNS; an implementation of RIF Directory on RSK, the first to be launched. RIF Lumino, the first implementation of RIF Payments, is soon to be launched as well and during 2019, the first version of full stack will be available. Now let’s talk about the utility of the RIF token within the RIF OS ecosystem.
+Following the guidelines of RIF OS, a series of blockchain based P2P platforms are being built using RNS; an implementation of RIF Directory on RSK, the first to be launched. RIF Lumino, the first implementation of RIF Payments is launched, for more information and how to set up a Lumino node, visit [RIF Lumino](https://developers.rsk.co/rif/lumino/).
+We wish to emphasise the utility of the RIF token within the RIF OS ecosystem.
 The first and obvious use is to access all the services provided in the RIF OS ecosystem. To comply with the RSK Infrastructure Framework, providers have to at least accept RIF tokens in exchange for their services. On top of that, certain protocols use RIF token as the collateral that all service providers need to stake in order to offer services on the RIF Marketplace. This is key given the decentralized nature of these platforms, without an embed insurance mechanism, it would be impossible to ensure quality of service to the end users. Additionally, on some protocols the ratio between the collateral and the amount of contracts a service provider has will be used to dynamically distribute new service contracts among registered providers.
 
 We also envision that in the not so distant future, other uses of the RIF token will arise surrounding the RIF marketplace. Two of the most relevant ones are the use of RIF token as collateral for the issuance of counterparty risk-free stable assets (ie: RIFUSD, RIFARS, etc) which can be used to denominate service prices in stable assets and the use of RIF token to settle transactions between RIF Payment Hubs without assets in common or sufficient liquidity.
@@ -250,7 +253,7 @@ Visit the [RIF Name Service](https://www.rifos.org/rif-name-service/) for more i
 
 ### How can I recover my token from my jaxx wallet which was the only one that had RSK addresses, when the RSK faucet existed?
 
-Although it doesn’t happen very often, we periodically do planned fresh restarts of the RSK Testnet blockchain. This means that all account balances go to zero. A Testnet reset has been recently executed, so there is no way to recover Testnet funds once this is done. RSK Faucet still exists and you can get [Testnet RBTCs]( https://faucet.testnet.rsk.co/) and also [Testnet RIF - tRIF](https://faucet.rifos.org/).
+Although it doesn’t happen very often, we do planned fresh restarts of the RSK Testnet blockchain. This means that all account balances go to zero. A Testnet reset has been recently executed, so there is no way to recover Testnet funds once this is done. RSK Faucet still exists and you can get [Testnet RBTCs]( https://faucet.testnet.rsk.co/) and also [Testnet RIF - tRIF](https://faucet.rifos.org/).
 
 ## Lumino
 
@@ -262,7 +265,7 @@ The RIF Lumino network is already available to the general public. (for more inf
 
 Having said this, making Lumino a user-friendly internet of value is one of RIF's main priorities. For that reason, Lumino has already been integrated with the RIF Naming Service (RNS) which simplifies significantly the usability for non-technical users.
 
-Also we are currently working on the Lumino light-client and Development libraries to facilitate the integrations with wallets and exchanges.
+Also, the Lumino light-client is ready and we are working on the Development libraries to facilitate the integrations with wallets and exchanges.
 
 The IOV Labs team is also working on developing solutions for banks and organizations willing to use RIF Lumino for their business needs.
 
@@ -270,7 +273,7 @@ The IOV Labs team is also working on developing solutions for banks and organiza
 
 *Blocks per second, time to finality, tps and cost per transaction? Can people build on Lumino already? Which projects are building on top of it?*
 
-The number of transactions per second that Luminio can achieve depends mainly on the actual network topology and the amount of coins participants lock in their channels. Also, from the tech perspective, the bandwidth and latency of the computers participating in the network are also key for providing a responsive system. Additionally, the capabilities of the network will depend on the network usage patterns of its users. It seems that there are still too many unknowns. However we can simulate certain expected patterns from small networks to larger and larger networks and get useful metrics about the network growth and number of successful payments, the payments settlement times, and the average costs. Taking into account the merging of the scalability improvement proposals already developed by RSK Labs for RSK, the obtained metrics shows us that Lumino can scale to 60M active users without problems, with costs and response times that are competitive with other payment networks. To scale more, we see resource bottlenecks that would need to be addressed.
+The number of transactions per second that Lumino can achieve depends mainly on the actual network topology and the amount of coins participants lock in their channels. Also, from the tech perspective, the bandwidth and latency of the computers participating in the network are also key for providing a responsive system. Additionally, the capabilities of the network will depend on the network usage patterns of its users. It seems that there are still too many unknowns. However we can simulate certain expected patterns from small networks to larger and larger networks and get useful metrics about the network growth and number of successful payments, the payments settlement times, and the average costs. Taking into account the merging of the scalability improvement proposals already developed by RSK Labs for RSK, the obtained metrics shows us that Lumino can scale to 60M active users without problems, with costs and response times that are competitive with other payment networks. To scale more, we see resource bottlenecks that would need to be addressed.
 
 There are several projects integrating their wallets and solutions with Lumino which will be announced once ready in the following months.
 
@@ -282,45 +285,36 @@ If you want to be part of the network, the [Lumino repository](https://github.co
 
 We are working on new RIF Payments components to be launched soon as well as RIF Storage Protocol. By the end of the year we plan to count with a full suite of RIF OS services that will showcase how the full stack will work together.
 
-## Federation
+## PowPeg Federation
 
-### What is the Federation?
+### What is the PowPeg Federation?
 
-The RSK platform has been launched with a federation of well-known and respected community members (blockchain companies with high security standards) (the Federation). Each member is identified by a public key. The conditions to become a Federation member have been established, including security policies, backup procedures, and legal requirements.
+The RSK platform was launched with a federation of well-known and respected community members (blockchain companies with high security standards) (the Federation). Each federation member, also referred to as a functionary or notary, is identified by a set of public keys, one used for Bitcoin multi-signatures, and others used for authentication and private communications. The conditions to become a Federation member have been established, including security policies, backup procedures, and legal requirements.  In 2020, the Federation migrated to a new security model called PowPeg. Under this system, a functionary does not have access to their multisig private key, which is controlled by an HSM, while they do maintain control of other authentication private keys.
 
-### What is the role of the Federation?
+### What is the role of the PowPeg Federation?
 
 *How is it valuable?*
 
-Currently the Federation's only role is to secure the two-way-peg. In the future, they may provide additional services to the network. Some of the services that have shown to be valuable to the community are:
+Currently the PowPeg Federation's only role is to secure the two-way-peg. Each functionary has the responsibility to keep the HSM physically secured and connected to the RSK network. The federation does not participate in production of new blockchain blocks. In the future, the functionaries may provide additional services to the network. Some of the services that have shown to be valuable to the community are:
 
 - Two-way peg with Bitcoin
 - Two-way pegs with other cryptocurrencies
 - Oracling services
 - Checkpointing services
 
-Bitcoin does not support smart contracts nor native opcodes to validate external SPV proofs. Part of the 2-Way Peg system in RSK requires trust on a set of notaries. In RSK, the notaries that protect the locked funds are the members of the Federation. The Federation members are respected community actors, such as important blockchain companies, and they also have the technical ability to maintain a secure network node. A requirement for being part of the Federation, is the ability to audit the proper behaviour of the software that powers the node, especially regarding the correctness of the component that decides on releasing BTC funds. For all of these reasons, we are not planning to move away from the Federation.
+A requirement for being part of the PowPeg Federation is the ability to audit the proper behaviour of the software that powers the node, especially regarding the correctness of the component that decides on releasing BTC funds.
 
-### Is it realistic to hope that RSK will move away from federation mode in mid-term future?
+### Is it realistic to hope that RSK will move away from PowPeg federation mode in mid-term future?
 
-The RSK platform has been launched with a Federation of well-known and respected community members (blockchain companies with high security standards). Each member is identified by a public key. The conditions to become a Federation member have been established, including security policies, backup procedures and legal requirements.
+There have been proposals for alternative solutions to the sidechain two-way-peg problem, but currently no other satisfactory solution is available, either because it requires a Bitcoin soft or hard fork or because it requires the creation of a new token to use as security bonds. The RSK community is committed to decentralize the federation if a satisfactory solution is found, and the intention to do so is clearly stated in the RSK foundational whitepaper.
 
-Currently the Federation only role is to secure the two-way-peg. In the future, they may provide additional services to the network. Some of the services that have shown to be valuable to the community are:
+### When does the team or the PowPeg federation decide to issue more BTC?
 
-- Two-way peg with Bitcoin
-- Two-way pegs with other cryptocurrencies
-- Oracling services
-- Checkpointing services
+The PowPeg Federation has no means of “issuing more BTC”. Transferring BTC to the RSK platform is an open process. In the beginning of RSK, the RSK developers established a hard limit on the amount of Bitcoins that could be transferred to RSK, to reduce risks until the network reached maturity. Later, the limit was replaced by a cap that can be increased, but not decreased.
 
-Bitcoin does not support smart contracts nor native opcodes to validate external SPV proofs. Part of the 2-Way Peg system in RSK requires trust on a set of notaries. In RSK, the notaries that protect the locked funds are the members of the Federation. The Federation members are respected community actors, such as important blockchain companies, and they also have the technical ability to maintain a secure network node. A requirement for being part of the Federation, is the ability to audit the proper behaviour of the software that powers the node, specially regarding the correctness of the component that decides on releasing BTC funds. For all of these reasons, we are not planning to move away from the Federation.
+### What is the 2-Way peg service that the PowPeg Federation provides?
 
-### When does the team or the federation decide to issue more BTC?
-
-The Federation has no means of “issuing more BTC”. Transferring BTC to the RSK platform is an open process. In the beginning of RSK, we set some limits on the number of Bitcoins that can be transferred to RSK until the network leaves the Beta Stage and almost all restrictions will be lifted as soon as we reach about 51% of Bitcoin hashrate on merge-mining.
-
-### What is the 2-Way peg service that the Federation provides?
-
-Bitcoin does not support smart contracts nor native opcodes to validate external SPV proofs. Part of the 2-Way Peg system in RSK requires trust on a set of notaries. In RSK, the notaries that protect the locked funds are the members of the Federation. The Federation members are respected community actors, such as important blockchain companies, and they also have the technical ability to maintain a secure network node. A requirement for being part of the Federation is the ability to audit the proper behaviour of the software that powers the node, specially regarding the correctness of the component that decides on releasing BTC funds.
+Bitcoin does not support smart contracts nor native opcodes to validate external SPV proofs. Part of the 2-Way Peg system in RSK requires trust on a set of notaries. In RSK, the notaries that protect the locked funds are the members of the PowPeg Federation. The PowPeg Federation members are respected community actors, such as important blockchain companies, and they also have the technical ability to maintain a secure network node. A requirement for being part of the PowPeg Federation is the ability to audit the proper behaviour of the software that powers the node, specially regarding the correctness of the component that decides on releasing BTC funds.
 
 ## Mining
 
@@ -330,7 +324,8 @@ Bitcoin does not support smart contracts nor native opcodes to validate external
 
 ### How secure is RSK merge-mining?
 
-RSK merge-mining is as secure as Bitcoin mining, but assumes a stronger property from SHA256, which is “freestart collision security” of at least 100 bits. This is because the RSK network uses a property of the Merkle–Damgård construction to compress the size of the SPV proof.
+Nakamoto consensus can be proven secure as long as there is an honest majority of miners. In case of a dishonest majority, malicious miners may find cheating a rational or irrational strategy depending on assumptions on how the market and the community would react to a 51% attack. RSK is no different from Bitcoin in theory, but in practice not all Bitcoin miners participate in merge-mining, so the requirement of honest hashrate would be higher. A ad-hoc monitoring system, called Armadillo, lowers the requirement by warning nodes if more than 50% of the miners turn malicious before malicious miners can do harm.
+In terms of cryptographic security, RSK merge-mining uses both SHA256 and Keccak. Since there are no known practical attacks on these hashing functions, RSK is currently as secure as Bitcoin mining. In particular RSK assumes a stronger property from SHA256, which is that, it must not allow a “freestart collision” at a cost lower than 2^80 operations. This is because the RSK network uses a property of the Merkle–Damgård construction to compress the size of the SPV proof.
 
 ### What are the incentives for miners to merge-mine RSK?
 
@@ -371,11 +366,16 @@ Beta releases of improved RSK nodes have been tested to accommodate 100 tx/s wit
 
 ### What is the transaction confirmation time?
 
-On average, the network currently generates a block every 30 seconds. Miners can reduce the average block time to 15 seconds by optimizing their merge-mining operations. Applications should wait at least 12 confirmations to accept a payment, which corresponds to an average delay of 6 minutes.
+On average, the network currently generates a block every 30 seconds. Miners can reduce the average block time to 15 seconds by optimizing their merge-mining operations. Systems that receive payments over RSK in exchange for a good or service outside the RSK blockchain should wait a variable number of confirmation blocks, depending on the amount involved in the payments. A minimum of 12 confirmations is recomended, which corresponds to an average delay of 6 minutes.
 
 ### Is the RSK network compatible with the Ethereum network?
 
-The RSK network is highly compatible with the Ethereum network at various different layers: the execution virtual machine (EVM), the javascript programming interface (web3), node interprocess connectivity (JSON-RPC), and the smart-contract programming languages (Solidity).
+The RSK network is highly compatible with the Ethereum network at various layers:
+
+- Virtual machine is EVM compatible
+- Interprocess connectivity is JSON-RPC compatible
+- Smart contract programming language - Solidity is supported
+- Javascript programming interface - web3.js is supported.
 
 RSK Virtual Machine (RSKVM) is highly compatible with the Ethereum Virtual Machine (EVM), but the RSKVM offers additional features not present in the EVM. To make use of these improvements, some changes to the smart contract source code are required. Furthermore, the RSKVM has specific precompiled contracts that provide the bridging functionality with Bitcoin. Approximately once a year, the Ethereum community performs a hard-fork to add new functionality. The RSK community has, in the past, incorporated these changes through corresponding hard forks on the RSK network. These trends are expected to continue in the future.
 
@@ -383,7 +383,7 @@ RSK Virtual Machine (RSKVM) is highly compatible with the Ethereum Virtual Machi
 
 ### How is the RSK blockchain secured?
 
-The RSK blockchain is secured by merge-mining, with some additional security measures. The RSK blockchain is mined by the Bitcoin miners, which are part of the largest and most reliable blockchain network in the world. Currently, more than 35% percent of the Bitcoin hash rate is simultaneously merge-mining RSK. On top of this, RSK Labs has published a RSKIP that proposes a solution where a set of notaries (some of the most renowned and trusted Bitcoin companies) will be able to provide an extra layer of security by issuing checkpoint notifications on the RSK blockchain. RSK nodes are not forced to follow the checkpoints, but can use this information to detect network-wide attacks and enter a safe mode. This subsystem sacrifices liveness to increase safety, and can be compared to Bitcoin’s original alert system. In the case of RSK, the system is federated, rather than centralized, as in the case of the Bitcoin network.
+The RSK blockchain is secured by merge-mining, with some additional security measures. The RSK blockchain is mined by the Bitcoin miners, which are part of the largest and most reliable blockchain network in the world. Currently, more than 35% percent of the Bitcoin hash rate is simultaneously merge-mining RSK.
 
 ### What is the 2-Way Peg?
 
@@ -391,13 +391,13 @@ The 2-Way peg is said to be a method to transfer BTC into RBTC and vice-versa. I
 
 ### How does the peg work?
 
-When a Bitcoin user wants to use the 2-Way Peg, he sends a transaction to a multisig wallet whose funds are secured by the Federation. The same public key associated with the source bitcoins in this transaction is used on the RSK chain to control the Smart Bitcoins. This means that the private key that controlled the Bitcoins in the Bitcoin blockchain can be used to control an account on the RSK chain. Although both public and private keys are similar, each blockchain encodes the address in a different format. This means that the addresses on both blockchains are different.
+When a Bitcoin user wants to use the 2-Way Peg, he sends a transaction to a [multisig wallet](https://en.bitcoin.it/wiki/Multisignature) whose funds are secured by the PowPeg Federation. The same public key associated with the source bitcoins in this transaction is used on the RSK chain to control the Smart Bitcoins. This means that the [private key](https://en.bitcoin.it/wiki/Private_key) that controlled the Bitcoins in the [Bitcoin blockchain](https://en.bitcoin.it/wiki/Block_chain) can be used to control an account on the RSK chain. Although both public and private keys are similar, each blockchain encodes the address in a different format. This means that the addresses on both blockchains are different.
 
 ### How does RSK secure the funds locked in the peg?
 
-Currently the funds in the peg are secured by a threshold signature managed by the Federation. At least 51% percent of the Federation members signatures are required to transfer bitcoins out of the peg wallet. The process to unlock bitcoins is controlled by a smart contract running in the RSK blockchain. All coordination actions are open for every user to see.
+Currently the funds in the peg are secured by a threshold signature managed by the HSMs protected by functionaries of the PowPeg Federation. At least 51% percent of the functionaries HSM PowPeg signatures are required to transfer bitcoins out of the peg wallet. The process to unlock bitcoins is controlled by a smart contract running in the RSK blockchain. All coordination actions are open for every user to see.
 
-The original RSK roadmap proposed to add drive-chain support to enhance the security of the funds in the peg. This requires a Bitcoin soft-fork, which may or may not occur. RSK Labs created a BIP and working code to implement this drive-chain in Bitcoin. If Bitcoin soft-forks to support the drivechain BIP RSK proposed, unlocking funds from the peg will also require 51% percent acknowledgement by the merge-mining hashing power. With the hybrid Federation/drivechain proposed by RSK Labs, both the majority of federation members and the merge-miners must acknowledge a release transaction, increasing the overall security of the peg.
+The original RSK roadmap proposed to add drive-chain support to enhance the security of the funds in the peg. This requires a Bitcoin [soft-fork](https://en.bitcoin.it/wiki/Softfork), which may or may not occur. RSK Labs created a [BIP](https://github.com/rsksmart/bips/blob/master/BIP-R10.md) and working code to implement this drive-chain in Bitcoin. If Bitcoin soft-forks to support the drivechain BIP RSK proposed, unlocking funds from the peg will also require 51% percent acknowledgement by the merge-mining [hashing power](https://en.bitcoin.it/wiki/Hash_per_second). With the hybrid PowPeg Federation/drivechain proposed by RSK Labs, both the majority of PowPeg federation members and the merge-miners must acknowledge a release transaction, increasing the overall security of the peg.
 
 ### How is the RSK blockchain secured from double-spend attacks?
 
@@ -405,13 +405,13 @@ The RSK blockchain is secured by proof-of-work based on the SHA256D algorithm li
 
 ### How does the security of the RSK network compare to Bitcoin?
 
-The security of the RSK network will depend on the amount of merge-mining engagement and the number and quality (security compliance) of the Federation members. More than 40% of the Bitcoin miners are currently merge-mining RSK (as of Dec-2018) and another 30% are planning to merge-mine in the future, so there is an expectation that more than 51% of Bitcoin miners will be securing the RSK network soon. Furthermore, the RSK network could theoretically reach a higher hash rate than Bitcoin, by combining merge-mining hash rates from other bitcoin clones.
+The security of the RSK network will depend on the amount of merge-mining engagement and the number and quality (security compliance) of the PowPeg Federation members. More than 50% of the Bitcoin miners are currently merge-mining RSK (as of 2020) and another 30% are planning to merge-mine in the future. Furthermore, the RSK network could theoretically reach a higher hash rate than Bitcoin, by combining merge-mining hash rates from other bitcoin clones.
 
 ### How do confirmations on the Bitcoin blockchain compare to confirmations on the RSK blockchain?
 
 *Are 6 confirmations on the RSK platform sufficient for a transaction to be considered confirmed?*
 
-A recent paper established that in the context of transaction reversal probability, 6 Bitcoin confirmations (average 1 hour) would be equivalent to approximately 12 RSK confirmations (average 6 minutes). While Bitcoin has the concept of 0-confirmations (the transaction has been broadcast without Replace-by-fee), there is no similar concept in RSK. The fastest real confirmation in RSK is “1.5” confirmations, or 1 confirmation plus 5 seconds without a block reversal, or an average of 35 seconds.
+A recent paper established that in the context of transaction reversal probability, 6 [Bitcoin confirmations](https://en.bitcoin.it/wiki/Confirmation) (average 1 hour) would be equivalent to approximately 12 RSK confirmations (average 6 minutes). While Bitcoin has the concept of 0-confirmations (the transaction has been broadcast without Replace-by-fee), there is no similar concept in RSK. The fastest real confirmation in RSK is “1.5” confirmations, or 1 confirmation plus 5 seconds without a block reversal, or an average of 35 seconds.
 
 ### Is RSK secure from users using blockchain resources (CPU, bandwidth, storage) for free?
 
@@ -419,11 +419,11 @@ The RSK “gas system” prevents an attacker from creating, spreading and inclu
 
 ### Is RSK secure from miners abusing the gas system to cheaply acquire resources as in Ethereum?
 
-In Ethereum a miner can include transactions specifying zero gas price, thus acquiring persistent contract state memory almost for free (if no transaction backlog). In RSK a high percentage of the transaction fees go into a reward pool for future miners, a small fraction of the transaction fees are burned and there is a minimum gas price negotiated by the miners. Therefore, rogue miners cannot get platform resources at no cost.
+In Ethereum a miner can include transactions specifying zero gas price, thus acquiring persistent contract state memory almost for free (if no transaction backlog). In RSK a high percentage of the transaction fees go into a reward pool for future miners, a small fraction of the [transaction fees](https://en.bitcoin.it/wiki/Miner_fees) are burned and there is a minimum gas price negotiated by the miners. Therefore, rogue miners cannot get platform resources at no cost.
 
 ### What are the differences between a Bitcoin address and an RSK address?
 
-An RSK address is an identifier of 40 hexadecimal characters while the Bitcoin address is an identifier of 26-35 alphanumeric characters.
+An RSK address is an identifier of 40 hexadecimal characters while the [Bitcoin address](https://en.bitcoin.it/wiki/Address) is an identifier of 26-35 alphanumeric characters.
 
 ## Adoption/Use Cases
 
@@ -437,7 +437,7 @@ There are only two other Bitcoin sidechain projects that are currently active: L
 
 Another key difference is that Liquid uses its Federation for block consensus, while RSK uses merge-mining, and currently it has about 40% of Bitcoin’s hashrate. Therefore RSK has actual “thermodynamic” security. Anyone can participate in RSK merge-mining, so anyone can receive transaction fees.
 
-Regarding onchain transaction throughput, RSK can achieve a higher volume than Liquid because essentially RSK’s payment transactions are smaller than Liquid’s. However, currently the transaction throughput in RSK is limited by its miners, which can increase or decrease the block gas limit. In following RSK network upgrades we may see the two important developments implemented: the LTCP protocol (see RSKIP53) and parallel transaction processing (see RSKIP04). These improvements together enable 30x transaction throughput increase in RSK. Another key difference between RSK and Liquid is that the RSK peg is open. It can be used by individual users without going through an exchange, and a KYC process. However, the fastest way to get RBTC is still exchanging BTC at a crypto exchange, because it takes a day to transfer bitcoins to RSK using the peg. In terms of Federation security, Liquid uses a 11-out-of-15 multisig with a 2-of-3 time-locked emergency spend, and RSK uses a 8-out-of-15 multisig, so each sidechain has different traseofs between availability and security.
+Regarding onchain transaction throughput, RSK can achieve a higher volume than Liquid because essentially RSK’s payment transactions are smaller than Liquid’s. However, currently the transaction throughput in RSK is limited by its miners, which can increase or decrease the block gas limit. In following RSK network upgrades we may see the two important developments implemented: The LTCP protocol (see [RSKIP53](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP53.md)) and parallel transaction processing (see [RSKIP04](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP04.md)). These improvements together enable 30x transaction throughput increase in RSK. Another key difference between RSK and Liquid is that the RSK peg is open. It can be used by individual users without going through an exchange, and a KYC process. However, the fastest way to get RBTC is still exchanging BTC at a crypto exchange, because it takes a day to transfer bitcoins to RSK using the peg. In terms of PowPeg Federation security, Liquid uses a 11-out-of-15 multisig with a 2-of-3 time-locked emergency spend, and RSK uses a 8-out-of-15 multisig, so each sidechain has different trade offs between availability and security.
 
 Truthcoin’s drivechain is only running as a testnet because it requires a Bitcoin soft-fork to run on mainnet, so it’s not really a project one can build applications for now. However we share with Truthcoin the long term vision that sidechains should move from the federated model to a more decentralized one.
 
@@ -461,7 +461,7 @@ RSK strategy detailed in its foundational whitepaper was to provide EVM compatib
 
 **Is the RSK chain growing at the same speed as Ethereum? (if transaction count is the same)**
 
-RSK has less onchain activity than Ethereum, which is something you would expect for a younger blockchain. Therefore the blockchain is much smaller than Ethereum. However, prior to the 1.0.0 release the RSK blockchain could grow as fast as Ethereum for equal transaction volumes. With the advent of the **Unitrie**, which is part of the 1.0.0 release, the blockchain state is **ten times smaller**. For example, the last world-state consumes no more than 50 Mbytes. The current Ethereum state consumes about 130 GB. That’s 2600 times more.
+RSK has less onchain activity than Ethereum, which is something you would expect for a younger blockchain. Therefore the blockchain is much smaller than Ethereum. However, prior to the 1.0.0 release the RSK blockchain could grow as fast as Ethereum for equal transaction volumes. With the advent of the **[Unitrie](https://www.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/)**, which is part of the 1.0.0 release, the blockchain state is **ten times smaller**. For example, the last world-state consumes no more than 50 Mbytes. The current Ethereum state consumes about 130 GB. That’s 2600 times more.
 
 ### How do you think RSK would compare against other projects like ETH or IOTA?
 
