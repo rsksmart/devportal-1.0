@@ -73,7 +73,7 @@ Requiring information to the user is OPTIONAL, it depends on the service needs. 
 
 1. _Client_ sends `POST /request-signup { did }` to _Service_, where `did` is _User_'s DID
 2. _Service_ creates a random deterministic* _challenge_. Responds with `{ challenge, sdr? }` were `sdr?` is the OPTIONAL [selective disclosure request](#request) defined by the _Service_. The `sdr` MUST be sent in a signed JWT format.
-3. If `sdr`, _Client_ obtains the information required from the user's desired service or platform (for example, from the [RIF Data Vault]({{ site.baseurl }}/data-vault)), and builds a [selective disclosure](#response) (response)
+3. If `sdr`, _Client_ obtains the information required from the user's desired service or platform (for example, from the [RIF Data Vault](../../../data-vault)), and builds a [selective disclosure](#response) (response)
 4. _Client_ pormpts user to sign a message with the following format using `personal_sign` as per EIP-191{% include rif-id-ref.html id="16" %} and EIP-155{% include rif-id-ref.html id="15" %}:
   ```
 Login to <web domain>
@@ -133,7 +133,7 @@ My credentials are: {response.credentials.join(',')}
 
 See [authenticating requests](#authenticating-requests) to understand how to user _access_ and _refresh_ tokens.
 
-![did auth]({{ site.baseurl }}/assets/img/ssi/10_did_auth_sign_up.png)
+![did auth](../../../assets/img/ssi/10_did_auth_sign_up.png)
 
 The selective disclosure request is optional and it depends on the service needs.
 - Open apps need just a proof that the user is in control of the DID at the time of access. In that case the `challenge` is enough
@@ -219,7 +219,7 @@ See [authenticating requests](#authenticating-requests) to understand how to use
 
 > *The challenge may be non-deterministic, in that case, the service will have to store the challenges state. See [How to calculate a deterministic challenge](#how-to-calculate-a-deterministic-challenge)
 
-![did auth]({{ site.baseurl }}/assets/img/ssi/08_did_auth_login.png)
+![did auth](../../../assets/img/ssi/08_did_auth_login.png)
 
 ### Authenticating requests
 
@@ -235,7 +235,7 @@ After the user is registered and has logged in (meaning the user is holding an _
 11. _Client_ authenticates next HTTP requests using the received _access token_.
 12. _Service_ authorizes the request.
 
-![did auth]({{ site.baseurl }}/assets/img/ssi/11_did_auth_access.png)
+![did auth](../../../assets/img/ssi/11_did_auth_access.png)
 
 ### Logout
 

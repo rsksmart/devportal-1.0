@@ -12,12 +12,12 @@ Its features and visual components are developed for future support of a UI libr
 
 - Creates an Identity based on a 12 seed mnemonic.
 - Internationalization - currently Spanish and English support, it is easy to extend to new languages.
-- Saves declarative details about the user and backs them up in the [data vault]({{ site.baseurl }}/data-vault). These details are shared when the user requests credentials.
-- Requests credentials to issuer service, and hold request information until the issuer approves or denies the request (following [this protocol](../specs/credential-requests)).
+- Saves declarative details about the user and backs them up in the [data vault](../../../data-vault). These details are shared when the user requests credentials.
+- Requests credentials to issuer service, and hold request information until the issuer approves or denies the request (following [this protocol](../../specs/credential-requests)).
 - Saves received Credentials in its internal database and then backs them up in the data vault.
 - Creates Presentations of Verifiable Credentials to share with the Verifier app.
 
-Read [this document](../specs) to learn more about how Self-sovereign identity is designed.
+Read [this document](../../specs) to learn more about how Self-sovereign identity is designed.
 
 ## Flow + Screenshots
 
@@ -28,7 +28,7 @@ Read [this document](../specs) to learn more about how Self-sovereign identity i
 - They will be asked to create an Identity from a 12-word mnemonic
 - The User enters their declarative details
 
-![Create an account]({{ site.baseurl }}/assets/img/ssi/applications/holder-app/create-account.jpg)
+![Create an account](../../../assets/img/ssi/applications/holder-app/create-account.jpg)
 
 ### Request a credential
 
@@ -37,14 +37,14 @@ Read [this document](../specs) to learn more about how Self-sovereign identity i
 - After submitting, they need to wait for the issuer to approve or reject the credential.
 - When approved, the credential is saved into the Data Vault and appears blue on the home screen.
 
-![Requesting a credential]({{ site.baseurl }}/assets/img/ssi/applications/holder-app/request-credential.jpg)
+![Requesting a credential](../../../assets/img/ssi/applications/holder-app/request-credential.jpg)
 
 ### Credential Details and Presentation
 
 - The user can click on the credential to see information shared with the issuer.
 - A presentation of the verifiable credential can be created.
 
-![Details]({{ site.baseurl }}/assets/img/ssi/applications/holder-app/credential-display.jpg)
+![Details](../../../assets/img/ssi/applications/holder-app/credential-display.jpg)
 
 ## Extend (things that could be added in the future)
 

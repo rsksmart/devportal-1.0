@@ -8,7 +8,7 @@ This protocol allows each persona of a RIA to use secret-key cryptography to enc
 
 This protocol is based on [uPort DAF Secret Box implementation](https://github.com/uport-project/daf/blob/master/packages/daf-libsodium/src/secret-box.ts) using [Libsodium authenticated encryption](https://libsodium.gitbook.io/doc/secret-key_cryptography/secretbox).
 
-> Please make use of [this section]({{ site.baseurl }}/definitions) for core concept definitions
+> Please make use of [this section](../../../../definitions) for core concept definitions
 
 The protocol for encryption is:
 
