@@ -1,16 +1,14 @@
 ---
 layout: rsk
-title: "Convey Service - Specs - Self-Sovereign Identity - RIF Identity"
-tags: rif-identity, rif-id, ssi, self-sovereign-identity
 ---
 
 ## The Convey service - transport content that does not fit into a QR code
 
 A very common functionality nowadays is to allow the user to present their credentials using QR codes. Verifiable credentials can use much space and make the code unable to be displayed on phone screens or scanned by cameras. With that motivation, this protocol is designed to allow transporting a message between two parties, with a third party in the form of a relayer.
 
-Alice: wants to share a file with Bob showing a QR code
-Bob: wants to read the file using a QR code scanner
-Convey service: cachés and publishes files into IPFS
+Alice: wants to share a file with Bob showing a QR code  
+Bob: wants to read the file using a QR code scanner  
+Convey service: cachés and publishes files into IPFS  
 
 Send a message:
 

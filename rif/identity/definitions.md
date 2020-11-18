@@ -1,7 +1,5 @@
 ---
 layout: rsk
-title: "Definitions - RIF Identity"
-tags: rif-identity, rif-id
 ---
 
 # Definitions

@@ -2,6 +2,6 @@
 layout: rsk
 ---
 
-## FAQ
+# Verifier App
 
 _WIP_

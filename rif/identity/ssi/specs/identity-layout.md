@@ -1,18 +1,16 @@
 ---
 layout: rsk
-title: "Identity Layout - Specs - Self-Sovereign Identity - RIF Identity"
-tags: rif-identity, rif-id, ssi, self-sovereign-identity
 ---
 
 ## Identity layout - create and recover identities
 
-As described [here](../#multi-identity-model) RIF Identity proposes a standard model to enable users store one single secret and obtain multiple public and not associated identities.
+As described [here](../specs/#multi-identity-model) RIF Identity proposes a standard model to enable users store one single secret and obtain multiple public and not associated identities.
 
-Technically, a user is going to save a seed that the wallets will use to create different private keys in a deterministic way. If all the wallets follow the same algorithm to create accounts, it can be achieved that any wallet can correctly recover which accounts have been used before.
+Technically, a user is going to save a seed that the wallets will use to create different private keys in a deterministic way. If all the wallets follow the same algorithm to create accounts, any wallet could correctly recover which accounts have been used before.
 
-> Please make use of [this section](../../../definitions) for core concept definitions
+> Please make use of [this section]({{ site.baseurl }}/definitions) for core concept definitions
 
-So, any user can hold a mnemonic phrase to access to their RIF Identity account, and from that account obtain different public Personas.
+So, any user can hold a mnemonic phrase to access their RIF Identity account, and from that account obtain different public Personas.
 
 ## Protocols
 
@@ -54,7 +52,7 @@ For new users
 For users that already have a RIA
 
 1. Let `k` be the last memoized last nonce
-2. Obtain the private key using `n=k+1` in the HD Key derived in 5. od identity creation
+2. Obtain the private key using `n=k+1` in the HD Key derived in 5. of identity creation
 3. Memoize the last nonce used is `k+1`
 
 ### Recover all the used personas
@@ -74,9 +72,9 @@ The exact way to detect if an account was used or not is not yet designed. As a 
 
 ## Data flow diagrams
 
-![wallet setup](../../../assets/img/ssi/06_wallet_setup.png)
+![wallet setup]({{ site.baseurl }}/assets/img/ssi/06_wallet_setup.png)
 
-![persona detection](../../../assets/img/ssi/07_persona_detection.png)
+![persona detection]({{ site.baseurl }}/assets/img/ssi/07_persona_detection.png)
 
 ## Implementations
 

@@ -1,12 +1,10 @@
 ---
 layout: rsk
-title: "Convey - Services - Self-Sovereign Identity - RIF Identity"
-tags: rif-identity, rif-id, ssi, self-sovereign-identity
 ---
 
 ## Convey service
 
-The Convey service has been built to act as a content relayer in front of IPFS. Let's imagine that _Bob_ wants to share a JWT with _Alice_ through a QR code. If the content is too large, it will not fit in a QR code, so there is where the Convey service acts. It allows to transport and caché files that can be accessed via HTTPS, and provides a tiny URL that can fit in any QR code. The service exposes two main endpoints: POST and GET files. Please refer to the protocol description [here](../../specs/convey-service) for more details about it.
+The Convey service has been built to act as a content relayer in front of IPFS. Let's imagine that _Bob_ wants to share a JWT with _Alice_ through a QR code. If the content is too large, it will not fit in a QR code, so there is where the Convey service acts. It allows to transport and caché files that can be accessed via HTTPS, and provides a tiny URL that can fit in any QR code. The service exposes two main endpoints: POST and GET files. Please refer to the protocol description [here](../specs/convey-service) for more details about it.
 
 ### Main flows
 
@@ -18,16 +16,16 @@ The Convey service has been built to act as a content relayer in front of IPFS. 
 4. _**Convey service**_ verifies the received challenge and validates that the signer is the same that _Bob_ provided in _step 1_. If it is ok, it responds with an authentication token
 5. _Bob_ saves that authentication token to be used on each interaction with the _**Convey service**_
 
-See the [DID Authentication](../../specs/did-auth) protocol for more details.
+See the [DID Authentication](../specs/did-auth) protocol for more details.
 
-_Example_
+_Example_ 
 
 ```javascript
 import axios from 'axios'
 import { createVerifiableCredentialJwt } from 'did-jwt-vc'
 import RSKEthrDID from '@rsksmart/ethr-did'
 
-const identity = new RSKEthrDID({
+const identity = new RSKEthrDID({ 
     address: '0xDe9D2B98E1c23E2765c06C5057723a6c1c453147',
     privateKey: '2f86e57652ee906707d4415105228b4fda7b1b900cfd0871cd5d17277ad084b8'
 })
@@ -52,8 +50,8 @@ axios.post(`${serviceUrl}/request-auth`, { did: identity.did })
 #### Post and share content
 
 1. _Bob_ does the [authentication flow](#authentication-flow)
-2. _Bob_ [posts](#post-file) some content (ideally [encrypted](../../specs/encryption-layout)) to the _**Convey service**_
-3. _**Convey service**_ puts it in IPFS and store its CID (associated to the original file) in memory. It responds with the [CID](https://docs.ipfs.io/concepts/content-addressing/) of the saved content and the convey formatted uri (see the [protocol](../../specs/convey-service))
+2. _Bob_ [posts](#post-file) some content (ideally [encrypted](../specs/encryption-layout)) to the _**Convey service**_
+3. _**Convey service**_ puts it in IPFS and store its CID (associated to the original file) in memory. It responds with the [CID](https://docs.ipfs.io/concepts/content-addressing/) of the saved content and the convey formatted uri (see the [protocol](../specs/convey-service))
 4. _Bob_ builds a QR code with the received convey formatted uri (and the encryption key in case the content needs to be decrypted) with the format `convey://{CID}#{key}`
 
 _Example_
@@ -103,12 +101,12 @@ login()
 
 #### Authentication
 
-This service uses a simplified version of [`DID Auth protocol`](../../specs/did-auth)
+This service uses a simplified version of [`DID Auth protocol`](/ssi/sepcs/did-auth)
 
 ##### POST /request-auth
 
 Generates a random 64 bytes challenge that is associated to the received DID.
-It is part of the implementation of the [DID Authentication](../../specs/did-auth) protocol
+It is part of the implementation of the [DID Authentication](../specs/did-auth) protocol
 
 _Parameter_
 
@@ -135,7 +133,7 @@ axios.post(`${serviceUrl}/request-auth`, { did })
 ##### POST /auth
 
 Verifies challenge and did of the received VC, if it is ok, it emits another VC and responds with the JWT representation of it. It will act as the authentication token.
-It is part of the implementation of the [DID Authentication](../../specs/did-auth) protocol.
+It is part of the implementation of the [DID Authentication](../specs/did-auth) protocol.
 
 _Parameter_
 

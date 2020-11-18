@@ -2,6 +2,6 @@
 layout: rsk
 ---
 
-## FAQ
+## Issuer service
 
 _WIP_
