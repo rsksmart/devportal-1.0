@@ -2,4 +2,6 @@
 layout: rsk
 ---
 
-## RIF Identity Core - implementation of [RIF Identity protocols](/ssi/specs/#protocols) using DAF agent
+## RIF Identity Core
+
+Implementation of [RIF Identity protocols](../../specs/#protocols) using DAF agent

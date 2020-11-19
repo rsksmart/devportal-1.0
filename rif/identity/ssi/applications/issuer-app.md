@@ -2,7 +2,7 @@
 layout: rsk
 ---
 
-## Issuer App
+# Issuer App
 
 The Issuer App is a React application that handles the back office tasks of issuing and rejecting credential requests. It is built to be connected to any Request Credential Service Server (that is API compatible with [RIF Identity issuer service](../../services)), and login happens with a username and password.
 

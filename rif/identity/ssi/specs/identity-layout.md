@@ -2,7 +2,9 @@
 layout: rsk
 ---
 
-## Identity layout - create and recover identities
+# Identity layout
+
+### Create and recover identities
 
 As described [here](../../specs/#multi-identity-model) RIF Identity proposes a standard model to enable users store one single secret and obtain multiple public and not associated identities.
 

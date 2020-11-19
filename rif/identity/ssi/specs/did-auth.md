@@ -2,7 +2,9 @@
 layout: rsk
 ---
 
-## DID authentication - a challenge–response authentication model based on DIDs
+# DID authentication
+
+### A challenge–response authentication model based on DIDs
 
 A challenge–response authentication is a family of protocols in which one party presents a question ("challenge") and another party must provide a valid answer ("response") to be authenticated. {% include rif-id-ref.html id="10" %}
 
@@ -50,7 +52,7 @@ This protocol allows services to prove that the user is in control of their Dece
 It is designed to:
 
 1. Register users by requesting them to share specific information that can be verified - this information can be used in business logic to grant or deny access
-2. Allow the user to opt-in to share their information - it is a user-centric protocol, the user decides wether to share the information or not
+2. Allow the user to opt-in to share their information - it is a user-centric protocol, the user decides whether to share the information or not
 3. Authenticate a user by proving they control a specific DID
 4. Provide an _access token_ to the user that can be reused over time - wallet systems usually request user action to sign messages. Lowering this actions improves the user experience. Enabling reusing access token reduces the amount of signatures required.
 
@@ -137,7 +139,7 @@ See [authenticating requests](#authenticating-requests) to understand how to use
 
 The selective disclosure request is optional and it depends on the service needs.
 - Open apps need just a proof that the user is in control of the DID at the time of access. In that case the `challenge` is enough
-- Permissioned apps need a proof that the user is in control of the DID and also proofs that the user fullfil the business needs when disclosing their information. IE: be older than 18 years old.
+- Permissioned apps need a proof that the user is in control of the DID and also proofs that the user fulfil the business needs when disclosing their information. IE: be older than 18 years old.
 
 > *The challenge may be non-deterministic, in that case, the service will have to store the challenges state. See [How to calculate a deterministic challenge](#how-to-calculate-a-deterministic-challenge)
 

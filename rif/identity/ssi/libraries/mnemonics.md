@@ -2,4 +2,6 @@
 layout: rsk
 ---
 
-## Mnemonic module - identity derivation tools using mnemonic phrases
+## Mnemonic module
+
+Identity derivation tools using mnemonic phrases

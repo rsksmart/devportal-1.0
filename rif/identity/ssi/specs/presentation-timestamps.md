@@ -2,7 +2,9 @@
 layout: rsk
 ---
 
-## Presentations timestamps - emitting and validating presentations with timestamps
+# Presentations timestamps
+
+### Emitting and validating presentations with timestamps
 
 A use case of the Verifiable Credential model{% include rif-id-ref.html id="7" %} is the presentation of credentials person to person, using QR codes. This article expresses some considerations that are important when implementing verification of this kind of presentations.
 

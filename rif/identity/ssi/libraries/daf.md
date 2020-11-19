@@ -2,4 +2,6 @@
 layout: rsk
 ---
 
-## uPort DAF bindings - use uPort agent with [RIF identity multi identity model](/ssi/specs/#multi-identity-model)
+## uPort DAF bindings
+
+Use uPort agent with [RIF identity multi identity model](../../specs/#multi-identity-model)

@@ -2,7 +2,9 @@
 layout: rsk
 ---
 
-## Verifiable credential requests protocol - a simple protocol for request, grant and receive verifiable credential case
+# Verifiable credential requests protocol
+
+### A simple protocol for request, grant and receive verifiable credential case
 
 Users can build their self-sovereign identity by interacting with different services that grant them verifiable credentials. Both users and services are identified with decentralized identities (DIDs), and can issue and receive verifiable credentials ("credentials"). The credentials are cryptographically signed, this guarantees non repudiation, issuer authenticity, data integrity and allows the holder of the credential to present it to other entities.
 
@@ -11,7 +13,7 @@ This protocol is held by two entities: the _issuer_ and the _holder_. The issuer
 One important aspect considered is that the holder has an application were they can confirm or reject information sharing. The application must display clear explanation of the information that is going to be shared and the user must be able to accept it with "manual" input. Other important aspect considered in the protocol is that the issuance of the credential may be granted after user "manual" approval. For example, a web platform could display all _pending_ credential requests and grant or deny them manually.
 
 
-The schema that is used to share credentials and declarative details in the credential request is not specified, and neither a discovery method for this schema. The holder should know what credentials and decalrative details are requested by the issuer.
+The schema that is used to share credentials and declarative details in the credential request is not specified, and neither a discovery method for this schema. The holder should know what credentials and declarative details are requested by the issuer.
 
 1. Holder requests a credential with their application
 2. Holder's application display the information that is going to be requested (e.g.: full name, age, and a verified email)
@@ -23,7 +25,7 @@ The schema that is used to share credentials and declarative details in the cred
 
 ## Sequence diagram
 
-![credential requests]({{ site.baseurl }}/assets/img/ssi/09_credential_requests.png)
+![credential requests](../../../assets/img/ssi/09_credential_requests.png)
 
 ### Open work
 

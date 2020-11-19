@@ -2,7 +2,9 @@
 layout: rsk
 ---
 
-## Encryption layout - Storing and recovering encrypted information
+# Encryption layout
+
+### Storing and recovering encrypted information
 
 This protocol allows each persona of a RIA to use secret-key cryptography to encrypt and decrypt information needing only the the mnemonic phrase.
 

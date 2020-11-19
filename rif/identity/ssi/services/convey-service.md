@@ -2,7 +2,7 @@
 layout: rsk
 ---
 
-## Convey service
+# Convey service
 
 The Convey service has been built to act as a content relayer in front of IPFS. Let's imagine that _Bob_ wants to share a JWT with _Alice_ through a QR code. If the content is too large, it will not fit in a QR code, so there is where the Convey service acts. It allows to transport and caché files that can be accessed via HTTPS, and provides a tiny URL that can fit in any QR code. The service exposes two main endpoints: POST and GET files. Please refer to the protocol description [here](../../specs/convey-service) for more details about it.
 
@@ -101,7 +101,7 @@ login()
 
 #### Authentication
 
-This service uses a simplified version of [`DID Auth protocol`](../ssi/specs/did-auth)
+This service uses a simplified version of [`DID Auth protocol`](../../specs/did-auth)
 
 ##### POST /request-auth
 

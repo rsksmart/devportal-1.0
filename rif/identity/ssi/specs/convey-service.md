@@ -2,7 +2,9 @@
 layout: rsk
 ---
 
-## The Convey service - transport content that does not fit into a QR code
+# Convey service
+
+### Transport content that does not fit into a QR code
 
 A very common functionality nowadays is to allow the user to present their credentials using QR codes. Verifiable credentials can use much space and make the code unable to be displayed on phone screens or scanned by cameras. With that motivation, this protocol is designed to allow transporting a message between two parties, with a third party in the form of a relayer.
 

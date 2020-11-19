@@ -4,7 +4,7 @@ layout: rsk
 
 ## Express DID Auth - a challenge-response authentication model based in DIDs
 
-This package is an implementation of the [DID Auth protocol](../specs/did-auth). It is designed to be easely integrated to any Express application.
+This package is an implementation of the [DID Auth protocol](../../specs/did-auth). It is designed to be easely integrated to any Express application.
 
 Main features:
 
@@ -57,7 +57,7 @@ All the configuration should be placed in just one object of type `ExpressDidAut
 
 _REQUIRED_
 
-`challengeSecret: string`: the secret that will be used to generate the deterministic challenge. See [how we create deterministic challenges](../specs/did-auth#how-to-calculate-a-deterministic-challenge)
+`challengeSecret: string`: the secret that will be used to generate the deterministic challenge. See [how we create deterministic challenges](../../specs/did-auth#how-to-calculate-a-deterministic-challenge)
 
 `serviceUrl: string`: will be used as the [`audience`](https://tools.ietf.org/html/rfc7519#section-4.1.3) of all the JWTs expected or emitted by this package. Should be a URI that identifies your service in the context where it is run
 
@@ -67,7 +67,7 @@ _REQUIRED_
 
 _OPTIONAL_
 
-`useCookies: boolean`: determines if the _access token_ and _refresh token_ are saved in cookies or are returned in the body of the response. If `true`, the tokens will be extracted from the cookies. See [how to send tokens](../specs/did-auth#how-to-send-tokens) for more information. _Default: false_
+`useCookies: boolean`: determines if the _access token_ and _refresh token_ are saved in cookies or are returned in the body of the response. If `true`, the tokens will be extracted from the cookies. See [how to send tokens](../../specs/did-auth#how-to-send-tokens) for more information. _Default: false_
 
 `requestSignupPath: string`: the request signup endpoint route. _Default: `/request-signup`_
 
@@ -101,9 +101,9 @@ _OPTIONAL_
 
 `requiredCredentials: string[]`: array of [Verifiable Credential](https://www.w3.org/TR/vc-data-model/) schemas that will be requested as part of the signup process. _If neither `requiredCredentials` and `requiredClaims` are present, no `sdr` will be requested when a user signs up._
 
-`requiredClaims: Claim[]`: array of [Claims](../specs/did-auth#request) that will be requested as part of the signup process. _If neither `requiredCredentials` and `requiredClaims` are present, no `sdr` will be requested when a user signs up._
+`requiredClaims: Claim[]`: array of [Claims](../../specs/did-auth#request) that will be requested as part of the signup process. _If neither `requiredCredentials` and `requiredClaims` are present, no `sdr` will be requested when a user signs up._
 
-`signupBusinessLogic: SignupBusinessLogic`: the business logic to execute when a DID tries to sign up. It receives the required [`sdr`](../specs/did-auth#selective-disclosure) as part of the payload. Will be executed each time the `/signup` endpoint is invoked with a valid signature. If it throws an error, the error message will be returned as part of an HTTP 401 response. Should be used to validate the `sdr` against the business needings and/or to save users in any storage for future authentication validation. _If not present, no business logic will be executed._
+`signupBusinessLogic: SignupBusinessLogic`: the business logic to execute when a DID tries to sign up. It receives the required [`sdr`](../../specs/did-auth#selective-disclosure) as part of the payload. Will be executed each time the `/signup` endpoint is invoked with a valid signature. If it throws an error, the error message will be returned as part of an HTTP 401 response. Should be used to validate the `sdr` against the business needings and/or to save users in any storage for future authentication validation. _If not present, no business logic will be executed._
 
 ### Included artifacts
 
@@ -113,7 +113,7 @@ _OPTIONAL_
 
 Expects the user `did` in the `params` of the request.
 Returns an HTTP 200 with a JSON containing `{ challenge, sdr? }` in the `body` of the response.
-The `sdr` will be present if the service requires it to register the user. See more information in the [protocol](../specs/did-auth#signup).
+The `sdr` will be present if the service requires it to register the user. See more information in the [protocol](../../specs/did-auth#signup).
 
 Possible error messages:
 - `INVALID_DID` (HTTP 401)
