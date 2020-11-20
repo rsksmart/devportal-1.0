@@ -10,7 +10,7 @@ layout: 'rsk'
 
 ## Description
 
-Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi. It's currently supported networks include: ETH, Polkadot, Near, Solana, Binance Smart Chain, Filecoin, EOS, TRON, Binance, cosmos, Irisnet, Ontology, Kulupu, chainX, Kusama, Edgeware, EOS Force, Enigma, Secret network, Nervos, vechain, FTchain, Harmony, Vapor, Zilliqa, YAS, RSK, Enumivo, BOS, Telos, NEO, Nebulas, ESN.
+Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi. It's currently supported networks include: RSK, ETH, Polkadot, Near, Solana, Binance Smart Chain, Filecoin, EOS, TRON, Binance, cosmos, Irisnet, Ontology, Kulupu, chainX, Kusama, Edgeware, EOS Force, Enigma, Secret network, Nervos, vechain, FTchain, Harmony, Vapor, Zilliqa, YAS, Enumivo, BOS, Telos, NEO, Nebulas, ESN.
 
 ## How Math Wallet integrates with RSK
 
@@ -40,8 +40,6 @@ Math Wallets supports;
 - ERC20
 - ERC677
 - ERC777
-- ERC721
-- ERC1155
 
 ### Useful links
 
