@@ -24,7 +24,7 @@ npm i @rsksmart/express-did-auth
 
 #### Plug and play
 
-This is the simplest approach. Just need to provide an express `app` and the desired configuration for the package and it will create the [needed endpoints](#included-endpoints) on your behalf.
+This is the simplest approach. Just need to provide an express `app` and the desired configuration for the package and it will create the [needed endpoints](#endpoints) on your behalf.
 
 ```typescript
 import express from 'express'
@@ -113,7 +113,7 @@ _OPTIONAL_
 
 Expects the user `did` in the `params` of the request.
 Returns an HTTP 200 with a JSON containing `{ challenge, sdr? }` in the `body` of the response.
-The `sdr` will be present if the service requires it to register the user. See more information in the [protocol](../../specs/did-auth#signup).
+The `sdr` will be present if the service requires it to register (sign up) the user. See more information in the [sign up protocol](../../specs/did-auth#sign-up).
 
 Possible error messages:
 - `INVALID_DID` (HTTP 401)

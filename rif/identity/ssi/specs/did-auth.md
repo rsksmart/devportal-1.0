@@ -15,8 +15,8 @@ Additionally, it allows the application to request specific data at the time of 
 
 - [State of the art](#state-of-the-art)
 - [Motivation](#motivation)
-- [Endpoints](#endpoints)
-  - [Signup](#signup)
+- Endpoints
+  - [Signup](#sign-up)
     - [Selective disclosure](#selective-disclosure)
   - [Login](#login)
   - [Logout](#logout)
@@ -192,7 +192,7 @@ interface SelectiveDisclosureResponse {
 
 ### Login
 
-Services should use _login_ after [registering](#register) users. This means the service already obtained the information required to let the user access the service.
+Services should use _login_ after [signin up](#sign-up) users. This means the service already obtained the information required to let the user access the service.
 
 1. _Client_ sends `POST /request-auth { did }` to _Service_, where `did` is _User_'s DID
 2. _Service_ creates a random deterministic* _challenge_ to send to _Client_ and responds with `{ challenge }`.
@@ -215,7 +215,7 @@ Login to {SERVICE_EXPECTED_DOMAIN}
 Verification code: {EXPECTED_CHALLENGE}
 My credentials are: {response.credentials.join(',')}
   ```
-  Then checks message signer matches `response.did`'s address. If necessary, performs business logic over the `did` and the information related to it saved by the _Service_. If it is a valid user, it creates an _access token_ and a _refresh token_ - see ([register](#register) to understand required token JWT payload format)
+  Then checks message signer matches `response.did`'s address. If necessary, performs business logic over the `did` and the information related to it saved by the _Service_. If it is a valid user, it creates an _access token_ and a _refresh token_ - see ([sign up](#sign-up) to understand required token JWT payload format)
 
 See [authenticating requests](#authenticating-requests) to understand how to user _access_ and _refresh_ tokens.
 
@@ -227,7 +227,7 @@ See [authenticating requests](#authenticating-requests) to understand how to use
 
 After the user is registered and has logged in (meaning the user is holding an _access token_ and a _refresh token_) the flow for authenticating following requests is:
 
-7. _Client_ authenticates next HTTP requests using the received _access token_. See [how to send access tokens](#acess-token).
+7. _Client_ authenticates next HTTP requests using the received _access token_. See [how to send access tokens](#access-token).
 8. _Service_ receives access token. If the _access token_ is not expired, it authorizes the request. If not, it answers with an HTTP 401 with `"Expired access token"` string as HTTP body.
 9. If _Client_ receives HTTP 401, sends `POST /refresh-token` to _Service_ including the _refresh token_. See [how to send refresh tokens](#refresh-token).
 10. _Service_ validates the _refresh token_ and the current session status. If valid, issues new _access token_ (with same data but new expiration), invalidates the received _refresh token_ and issues a new one. The HTTP status is 200 and the body is
@@ -252,7 +252,7 @@ NOTE: The logout process does not invalidate the current _access token_, it will
 
 ## Implementations
 
-- [`@rskmsart/express-did-auth`](../libraries/express-did-auth) - in progress
+- [`@rsksmart/express-did-auth`](../../libraries/express-did-auth) - in progress
 
 ## Extensions
 
