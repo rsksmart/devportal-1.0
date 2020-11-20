@@ -34,7 +34,6 @@ Math Wallets supports;
 - KLP
 - others
 
-
 ### Supported Token Standards
 
 - ERC20
@@ -74,18 +73,6 @@ Math Wallets supports;
 | [GUSD](https://etherscan.io/token/0x056fd409e1d7a124bd7017459dfea2f387b6d5cd) | [Gemini dollar](https://gemini.com/dollar/) | ERC20 | Ethereum
 | [PAX](https://etherscan.io/token/0x8e870d67f660d95d5be530380d0ec0bd388289e1) | [Paxos Standard](https://www.paxos.com/standard) | ERC20 | Ethereum
 | [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) | [USD Coin](https://www.centre.io/) | ERC20 | Ethereum
-
-### Non-Fungible tokens
-
-| Symbol | Name | Token Standard | Network
-| --- | --- | --- | --- |
-| [AXIE](https://etherscan.io/token/0xf5b0a3efb8e8e4c201e2a935f110eaaf3ffecb8d) | [Axie](https://axieinfinity.com/) | ERC721 | Ethereum
-
-### Non-token financial assets
-
-| Symbol | Name | Network
-| --- | --- | --- |
-| [BTCX](https://explorer.rsk.co/address/0xf773b590af754d597770937fa8ea7abdf2668370) | [BTCX](https://moneyonchain.com/btcx-leveraged-bitcoin/) | RSK
 
 ### Get in touch
 
