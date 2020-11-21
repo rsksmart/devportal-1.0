@@ -632,6 +632,14 @@
   "desc": "To use web3 and interact with the contracts, we must instance web3 with a provider. To do so we can use RSK public nodes: var Web3 = require(&#39;web3&#39;) var web3 = new Web3() web3.setProvider(new web3.providers.HttpProvider(config.node)) RNS Registry Instance the RNS Registry contract: const rnsAbi = [] const rnsAddress = &#39;&#39; var rnsInstance = web3.eth.contract(rnsAbi) var rns = registryInstance.at(rnsAddress) And include namehash library: var namehash = require(&#39;eth-ens-namehash&#39;).hash domain field does include .rsk suffix Further reading: RNS Registry contract. Change the resolver function setResolver(domain, newResolver) { var hash = namehash(domain) &amp;lt;span…"
  },
  {
+  "url": "/about/",
+  "title": "About",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
   "url": "/rif/gateways/dataservices/chainlink/about/",
   "title": "RIF Gateways Chainlink",
   "category": "",
@@ -656,6 +664,14 @@
   "desc": "Pre requisites Access to a synched RSK node. You can do this in a variety of ways: Run your own node on Testnet or Mainnet Compile and run a RSK node locally Mongo Database Server (Version 3.6.x) Java 8 (Lastest Release) Maven (Version 3.6.x) RSK valid account Build RIF Lumino Explorer API from code Get the code by cloning the repo Go to the path you downloaded or cloned Lumino’s code (let’s call this path $RIF_LUMINO_EXPLORER_API_PATH) Go to the application.properties and set the lumino.contract.tokenNetworkRegistry property, set the value with your Token Network registry. Set the lumino.explorer.api.account.file property to the JSON file of your RSK account. Example: lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json Set the lumino.explorer.api.account.password property to the password of your account. Example: lumino.explorer.api.account.paassword=3XhLXn[(Tub6&#39;~Qe Install project dependencies with the follow command: mvn install Set Up Mongo Database Go to $RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/database/ Run the following command when the mongodb server is installed on the local machine: user:~/mongo lumino-explorer-api-database-setup.js If an error is showed, you must execute the following script, specifying…"
  },
  {
+  "url": "/rif/communication/architecture/",
+  "title": "Architecture",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "RIF Communication consist of 3 distinct layers (from the top to the bottom as shown in the figure below): User facing layer Developer facing layer Routing network layer Let’s discuss a each layer in greater detail. User facing layer The user facing layer contains services that are using the RIF Communication protocol and libraries. This layer will contain mostly 3rd party solutions as we are focused on building the infrastructure layers. However, we are building 3 services that we see as necessary for the success of the platform. RIF Communication Gateways allows users, for a small fee, to interact with RIF Communication network without the need of operating node while allowing gateway operators to profit. This is a service open to 3rd parties to operate and has some privacy caveats. The Mailbox service gives users to receive messages even if they are not online. It is similar to real world mailbox service and as such it also has privacy trade-offs. Mailbox services will be listed on RIF Marketplace. Node operators can use Node manager to monitor their communication instances and understand the utilization of their service. Developer facing layer …"
+ },
+ {
   "url": "/rif/lumino/node/architecture/",
   "title": "Architecture",
   "category": "",
@@ -664,12 +680,28 @@
   "desc": "TODO: missing doc"
  },
  {
-  "url": "/rif/storage/architecture/",
-  "title": "storage/architecture",
+  "url": "/rif/identity/data-vault/cpinner/architecture/",
+  "title": "Data vault",
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "RIF Storage consist of 3 distinct layers (from the top to the bottom as shown in the figure below): User facing layer Developer facing layer Storage layer User facing layer The user facing layer contains services that are using the RIF Storage protocol and libraries. As we are focused on building the infrastructure layers, this layer will contain mostly 3rd party solutions. However, we are building 3 services that we see are necessary for success of the platform: RIF Storage Gateways allows users to interact with RIF Storage for a small fee, without the need of an operating node while allowing gateway operators to profit. This is a service open to 3rd parties to operate. The Pinning service gives any storage provider the opportunity to guarantee persistance of files and be rewarded for the service. Pinning services will be listen on RIF Marketplace. Node operators can use Node manager to monitor their storage instances and understand the utilization of their service. Developer facing layer We are providing dApp developers a unified API allowing them to seamlessly utilize any of the supported storage providers or even switch…"
+  "desc": "Data vault - Centralized pinner architecture WIP"
+ },
+ {
+  "url": "/rif/identity/ssi/architecture/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Architecture WIP"
+ },
+ {
+  "url": "/rif/gateways/dataservices/chainlink/architecture/",
+  "title": "RIF Gateways Chainlink Architecture",
+  "category": "",
+  "tags": "rif, gateways, data services, chainlink, architecture",
+  "date": "",
+  "desc": "When a Chainlink request is created, a Consumer contract sends an on-chain transaction to an Oracle Contract within the RSK blockchain. That transaction transfers payment tokens, along with the data representing your request. The Oracle Contract tracks balances from requesters and emits an event which notifies the off-chain Chainlink network (via the External Initiator), that this event needs to be processed. Once the request is received, Chainlink performs the work of the request and returns the answer to the Oracle contract (via the External Adapter). The Oracle Contract updates the balance to pay the node operator and returns the result to the Consumer Contract. The following diagram presents the Chainlink/RSK integration architecture and core components: Core Components: External Data Chainlink node External Adapter External Initiator External Data External data may represent an API, whether open or private, another blockchain, network, or any repository of data that would need to be read or written to. In the diagram above is represented by an Exchange RPC API which returns for example a currency conversion rate. Chainlink Node The Chainlink node handles jobs, tasks, scheduling, and signing transactions for the…"
  },
  {
   "url": "/rif/marketplace/architecture/",
@@ -680,20 +712,12 @@
   "desc": "The RIF Marketplace at its core is composed of a set of smart contracts deployed on the RSK blockchain, a read-only cache for performance and scalability, and a front-end (UI) which allows users to easily connect, browse available services and features, and interact with other participants. Each specific RIF service node (RIF Services) must connect to the Marketplace Smart Contracts, listen for the required events, and ensure a proper interaction and provision of that service to the End-user. The diagram below shows an overview of the RIF Marketplace architecture, which is explained next: RIF Marketplace is built around 3 core components: UI-Frontend Dapp Cache Smart Contracts UI-Frontend Dapp End-Users interact with the RIF Marketplace through the main Marketplace Dapp (RIF Marketplace UI). This web application presents information about the service categories available, allows users to browse/search for specific providers, and allows providers and consumers to engage in service agreements. It also allows Providers to register their offered services and track their performance and current customers, manage their staking, among other functionalities. Cache The information presented in the UI comes from RIF Marketplace Cache. This component is always…"
  },
  {
-  "url": "/rif/communication/architecture/",
-  "title": "Architecture",
+  "url": "/rif/storage/architecture/",
+  "title": "storage/architecture",
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "RIF Communication consist of 3 distinct layers (from the top to the bottom as shown in the figure below): User facing layer Developer facing layer Routing network layer Let’s discuss a each layer in greater detail. User facing layer The user facing layer contains services that are using the RIF Communication protocol and libraries. This layer will contain mostly 3rd party solutions as we are focused on building the infrastructure layers. However, we are building 3 services that we see as necessary for the success of the platform. RIF Communication Gateways allows users, for a small fee, to interact with RIF Communication network without the need of operating node while allowing gateway operators to profit. This is a service open to 3rd parties to operate and has some privacy caveats. The Mailbox service gives users to receive messages even if they are not online. It is similar to real world mailbox service and as such it also has privacy trade-offs. Mailbox services will be listed on RIF Marketplace. Node operators can use Node manager to monitor their communication instances and understand the utilization of their service. Developer facing layer …"
- },
- {
-  "url": "/rif/gateways/dataservices/chainlink/architecture/",
-  "title": "RIF Gateways Chainlink Architecture",
-  "category": "",
-  "tags": "rif, gateways, data services, chainlink, architecture",
-  "date": "",
-  "desc": "When a Chainlink request is created, a Consumer contract sends an on-chain transaction to an Oracle Contract within the RSK blockchain. That transaction transfers payment tokens, along with the data representing your request. The Oracle Contract tracks balances from requesters and emits an event which notifies the off-chain Chainlink network (via the External Initiator), that this event needs to be processed. Once the request is received, Chainlink performs the work of the request and returns the answer to the Oracle contract (via the External Adapter). The Oracle Contract updates the balance to pay the node operator and returns the result to the Consumer Contract. The following diagram presents the Chainlink/RSK integration architecture and core components: Core Components: External Data Chainlink node External Adapter External Initiator External Data External data may represent an API, whether open or private, another blockchain, network, or any repository of data that would need to be read or written to. In the diagram above is represented by an Exchange RPC API which returns for example a currency conversion rate. Chainlink Node The Chainlink node handles jobs, tasks, scheduling, and signing transactions for the…"
+  "desc": "RIF Storage consist of 3 distinct layers (from the top to the bottom as shown in the figure below): User facing layer Developer facing layer Storage layer User facing layer The user facing layer contains services that are using the RIF Storage protocol and libraries. As we are focused on building the infrastructure layers, this layer will contain mostly 3rd party solutions. However, we are building 3 services that we see are necessary for success of the platform: RIF Storage Gateways allows users to interact with RIF Storage for a small fee, without the need of an operating node while allowing gateway operators to profit. This is a service open to 3rd parties to operate. The Pinning service gives any storage provider the opportunity to guarantee persistance of files and be rewarded for the service. Pinning services will be listen on RIF Marketplace. Node operators can use Node manager to monitor their storage instances and understand the utilization of their service. Developer facing layer We are providing dApp developers a unified API allowing them to seamlessly utilize any of the supported storage providers or even switch…"
  },
  {
   "url": "/tools/explorer/blockscout/",
@@ -776,6 +800,54 @@
   "desc": "If you find an issue in Lumino and want to report it, or you want to request a feature. You can make an issue in the github repo, we suggest to create an issue with the following structure: For Feature Requests: Full description of the feature Explanation of why you think it’s useful for Lumino. For Bugs: Short description for the problem Setup description (System you’re using, Lumino version, RSKj version, etc) Explain exactly what was the bug Expected behavior Creating a Pull Request To contribute with the codebase of Lumino, you can open a Pull Request (PR) against our repository. All PRs should be: Self-contained. As short as possible and address a single issue or even a part of an issue. Consider breaking long PRs into smaller ones. It should have a test that allow to verify the fix or functionality To get you PR merged into the main repository, you should have at least one approved review from our Lumino dev team."
  },
  {
+  "url": "/rif/identity/ssi/services/convey-service/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Convey service The Convey service has been built to act as a content relayer in front of IPFS. Let’s imagine that Bob wants to share a JWT with Alice through a QR code. If the content is too large, it will not fit in a QR code, so there is where the Convey service acts. It allows to transport and caché files that can be accessed via HTTPS, and provides a tiny URL that can fit in any QR code. The service exposes two main endpoints: POST and GET files. Please refer to the protocol description here for more details about it. Main flows Authentication flow Bob requests to login to the Convey service by sending it’s DID The Convey service responds with a challenge Bob signs a VC with that challenge and send it to the Convey service to authenticate Convey service verifies the received challenge and validates that the signer is the same that Bob provided in step 1. If it is ok, it responds with an authentication token Bob saves that authentication token to be used on each interaction with the Convey service See the DID Authentication…"
+ },
+ {
+  "url": "/rif/identity/ssi/specs/convey-service/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Convey service Transport content that does not fit into a QR code A very common functionality nowadays is to allow the user to present their credentials using QR codes. Verifiable credentials can use much space and make the code unable to be displayed on phone screens or scanned by cameras. With that motivation, this protocol is designed to allow transporting a message between two parties, with a third party in the form of a relayer. Alice: wants to share a file with Bob showing a QR code Bob: wants to read the file using a QR code scanner Convey service: cachés and publishes files into IPFS Send a message: Alice encrypts (symmetric) the file and saves the secret key Alice sends the encrypted file to the Convey service The Convey service receives the file and stores it in IPFS, cachés a copy, and sends the CID (content identifier) of the file to Alice Alice receives the CID and verifies it, comparing with the expected CID Alice gets CID and shares a QR with Bob containing the uri convey://v1/QmPChd2hVbrJ6bfo3WBcTW4iZnpHm8TEzWkLHmLpXhF68A#secretKey Alice shows a QR code for this URI Resolve a message: Bob scans the…"
+ },
+ {
+  "url": "/rif/identity/ssi/libraries/core/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "RIF Identity Core Implementation of RIF Identity protocols using DAF agent"
+ },
+ {
+  "url": "/rif/identity/data-vault/cpinner/cpinner-client/",
+  "title": "Data vault - Centralized pinner client",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Data vault - Centralized pinner client WIP"
+ },
+ {
+  "url": "/rif/identity/data-vault/cpinner/cpinner-provider/",
+  "title": "Data vault - Centralized pinner provider",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Data vault - Centralized pinner provider WIP"
+ },
+ {
+  "url": "/rif/identity/data-vault/cpinner/cpinner-service/",
+  "title": "Data vault - Centralized pinner provider service",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Data vault - Centralized pinner provider service WIP"
+ },
+ {
   "url": "/tutorials/tokens/create-a-collectable-token/",
   "title": "Create your own collectable token on RSK network",
   "category": "",
@@ -800,6 +872,22 @@
   "desc": ""
  },
  {
+  "url": "/rif/identity/ssi/specs/credential-requests/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Verifiable credential requests protocol A simple protocol for request, grant and receive verifiable credential case Users can build their self-sovereign identity by interacting with different services that grant them verifiable credentials. Both users and services are identified with decentralized identities (DIDs), and can issue and receive verifiable credentials (“credentials”). The credentials are cryptographically signed, this guarantees non repudiation, issuer authenticity, data integrity and allows the holder of the credential to present it to other entities. This protocol is held by two entities: the issuer and the holder. The issuer is a public entity that issues a specific type of credential, the holder is a user who wishes to acquire that credential and controls a certain DID. The issuer may require the holder to share specific information. This information can be either data input by the user in a declarative way (declarative details) or other credentials issued by the same issuer or another entity. One important aspect considered is that the holder has an application were they can confirm or reject information sharing. The application must display clear explanation of the information that is going to be shared and the user must be able to accept it with “manual”…"
+ },
+ {
+  "url": "/rif/identity/ssi/libraries/daf/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "uPort DAF bindings Use uPort agent with RIF identity multi identity model"
+ },
+ {
   "url": "/tools/tokenbridge/dappguide/",
   "title": "Token Bridge Dapp Guide",
   "category": "",
@@ -822,6 +910,14 @@
   "tags": "defiant, rsk-solutions, rsk",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/rif/identity/definitions/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Definitions RIF Identity Account (RIA): is a free account that is held by any mnemonic phrase holder Mnemonic phrase: a phrase of words that is securely random created and can be used to obtain a seed from it Seed: secret entropy that is used to derive private keys HD Key: a cryptographic system that allows to derive private keys from a seed Persona: is the representation of each of the identities that are derived from a RIF Identity Account"
  },
  {
   "url": "/rif/rns/architecture/definitive-resolver/",
@@ -856,6 +952,14 @@
   "desc": "This page provides a guide for developers to set up the environment for the RIF Marketplace project. Contents: Dependencies Prerequisities Part of tutorial Setup [Developers Environment] Starting docker Deploying smart contracts Browser wallet RIF Marketplace Cache RIF Marketplace UI RNS Manager Using the RIF Marketplace Dependencies Prerequisities node v10 (or nvm with node v10 installed) Docker Docker compose Part of tutorial These will be installed during the tutorial RIF Marketplace Developer Environment project RIF Marketplace Cache project RIF Marketplace UI project RNS Manager Project Setup: 1. Developers Environment Download and setup the RIF Marketplace Developer Environment git clone git@github.com:rsksmart/rif-marketplace-dev.git cd rif-marketplace-dev 1.1. Starting docker Now you can start docker with docker-compose up The Ganache blockchain will now run and it is available to deploy the corresponding Smart Contracts. 1.2. Deploying smart contracts First, install the dependencies (make sure to use node v10, you can switch using nvm use 10). &amp;lt;div…"
  },
  {
+  "url": "/rif/identity/ssi/specs/did-auth/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "DID authentication A challenge–response authentication model based on DIDs A challenge–response authentication is a family of protocols in which one party presents a question (“challenge”) and another party must provide a valid answer (“response”) to be authenticated. 10 DID Auth is a protocol that allows asking the controller of an account to sign a random message, thus demonstrating control of the account at the time of the question. This protocol used as a login method checks that the user controls the account at the time of access to the application. Additionally, it allows the application to request specific data at the time of registration, for example the user’s email or phone number. These requested data follow a specific standard, which allows the client to provide it in a unified way and even cryptographically signed by a third party. This means that the application can ask the user for verifiable credentials, identifying them by their type in a unique way. Table of contents State of the art Motivation Endpoints Signup Selective disclosure Login Logout Implementations Extensions Open work Apendix …"
+ },
+ {
   "url": "/rif/rns/integrate/domain-keys-management/",
   "title": "Domain keys management guidelines",
   "category": "",
@@ -872,12 +976,44 @@
   "desc": "Work in progress :hammer:"
  },
  {
+  "url": "/rif/identity/ssi/specs/encryption-layout/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Encryption layout Storing and recovering encrypted information This protocol allows each persona of a RIA to use secret-key cryptography to encrypt and decrypt information needing only the the mnemonic phrase. This protocol is based on uPort DAF Secret Box implementation using Libsodium authenticated encryption. Please make use of this section for core concept definitions The protocol for encryption is: Private key calculation Let the nonce i be the nonce index of the persona derivation count (see persona creation protocol) From the RIA seed derive the same nonce, using BIP-449 change = 1 - for example, RSK would use m/44&#39;/137&#39;/0&#39;/1/i Get the private key of the derived account Data encryption Create a random nonce n to use for encrypting Let cyph be the Libsodium authenticated encryption of data Use n+cyph as the cyphertext. It can be used to recover the information using just the mnemonic The authenticated encryption operation Encrypts a message with a key and a nonce to keep it confidential Computes an authentication tag. This tag is used to make sure that the message…"
+ },
+ {
+  "url": "/rif/identity/ssi/libraries/ethr-did/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "RSK Ethr DID Handle Ethr DID method procedures in RSK network"
+ },
+ {
+  "url": "/rif/identity/ssi/libraries/express-did-auth/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Express DID Auth - a challenge-response authentication model based in DIDs This package is an implementation of the DID Auth protocol. It is designed to be easely integrated to any Express application. Main features: Automatically set up the needed endpoints to fullfil the full protocol specification (signup, auth, refresh token and logout) Provides with an auth middleware to protect the desired business related endpoints Allows to decide where to send the tokens (cookies, Authorization header or request body for refresh token) Extensibility: it allows to add any specific business logic over the authentication/signup methods Deterministic challenge generation Limit requests per did per timeslot Usage Install npm i @rsksmart/express-did-auth Plug and play This is the simplest approach. Just need to provide an express app and the desired configuration for the package and it will create the needed endpoints on your behalf. import express from &#39;express&#39; import setupApp, { ExpressDidAuthConfig } from &#39;@rsksmart/express-did-auth&#39; const config: ExpressDidAuthConfig = { // your config…"
+ },
+ {
   "url": "/tools/tokenbridge/faq/",
   "title": "Token Bridge FAQ",
   "category": "",
   "tags": "",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/rif/identity/ssi/faq/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "FAQ WIP"
  },
  {
   "url": "/kb/faqs/",
@@ -1000,12 +1136,28 @@
   "desc": ""
  },
  {
+  "url": "/rif/identity/ssi/applications/holder-app/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Holder App The holder app is a wallet that can be used to store the declarative details and credentials of its users. Built-in React Native it can be packaged for both IOS and Android, however, Android is the only officially supported platform. Its features and visual components are developed for future support of a UI library enabling seamless access to SSI basic user information Features Creates an Identity based on a 12 seed mnemonic. Internationalization - currently Spanish and English support, it is easy to extend to new languages. Saves declarative details about the user and backs them up in the data vault. These details are shared when the user requests credentials. Requests credentials to issuer service, and hold request information until the issuer approves or denies the request (following this protocol). Saves received Credentials in its internal database and then backs them up in the data vault. Creates Presentations of Verifiable Credentials to share with the Verifier app. Read this document to learn more about how Self-sovereign identity is designed. Flow + Screenshots Creating an account, mnemonic and adding declarative details User starts the app and clicks ‘Get Started’…"
+ },
+ {
   "url": "/rif/rns/libs/iOS/",
   "title": "iOS Library",
   "category": "",
   "tags": "",
   "date": "",
   "desc": "Implementation for resolvers for the RIF Name Service, available for iOS. Installation RNS is available through CocoaPods. To install it, simpy add the following line to your Podfile: pod &quot;Rns&quot; How to use You will need access to a running rsk node that can made calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our Info.plist file. You can just create your resolver with the default constructor if you are going to use mainnet. let resolver = new RnsResolver(); Or you can use another constructor if you want to use a personal node. let resolver = new RnsResolver(nodeDir: &quot;http://your.node.org&quot;, publicResolverAddress:&quot;RSK_ADDRES_TO_YOUR_RESOLVER&quot;); Then you can start using your resolver. Sample app Download the code of the RNS iOS sample app."
+ },
+ {
+  "url": "/rif/identity/ssi/specs/identity-layout/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Identity layout Create and recover identities As described here RIF Identity proposes a standard model to enable users store one single secret and obtain multiple public and not associated identities. Technically, a user is going to save a seed that the wallets will use to create different private keys in a deterministic way. If all the wallets follow the same algorithm to create accounts, any wallet could correctly recover which accounts have been used before. Please make use of this section for core concept definitions So, any user can hold a mnemonic phrase to access their RIF Identity account, and from that account obtain different public Personas. Protocols This article specifies how a wallet should: Represent an identity identifier Create a new RIA, and obtain the first persona - for new users Obtain a new persona - for users that already have a RIA Recover all the used personas - for users that already had a RIA when accessing first time to the wallet This specification assumes the RIA is used in one single wallet at the same time. Represent an identity identifier Each persona has a public…"
  },
  {
   "url": "/roadmap/improvement-proposals/",
@@ -1032,20 +1184,92 @@
   "desc": ""
  },
  {
-  "url": "/contribute/",
-  "title": "Contribute",
+  "url": "/develop/apps/tools/explorer/",
+  "title": "Explorer",
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "The RSK stack is open-source, if you are interested in colaborate, follow these links: RSKj (node) RNS Lumino node RSK Github Check out our bug bounty program."
+  "desc": "Overview Of The Explorer You can browse the overview of RSK on this page with https://explorer.rsk.co/ like below. Switch between Tabs If you want to view some specific information, you can jump through the tab bar below. Search for some information you want You can search for the information you want by entering the address,block number or tx hash in the search box. Last Block Information The next section is a panel about the last block. You can see the block number, address, the total number of transactions, and the duration in turn. Click on the number link and you can jump to the detailed page of this block. Especially,you can copy the address code by clicking the icon over the string. If you don’t need automatic update status, you can turn off the following switch. Last Block Transactions The bar…"
  },
  {
-  "url": "/libraries/rsk-precompiled-abis/",
-  "title": "RSK Pre-compiled ABIs",
+  "url": "/wallet/use/",
+  "title": "Wallets",
   "category": "",
-  "tags": "libraries, abi, pre-compiled",
+  "tags": "",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/wallet/rwallet/",
+  "title": "rWallet",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/wallet/",
+  "title": "Wallets",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tools/tokenbridge/",
+  "title": "RSK  ETH Token Bridge",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tools/explorer/",
+  "title": "Explorer",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tools/truffle/",
+  "title": "Truffle Overview",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tools/",
+  "title": "Tools",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/solutions/",
+  "title": "Solutions on RSK",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/ethereum-dapp-to-rsk/",
+  "title": "Bring your Ethereum token to RSK",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/the-stack/",
+  "title": "The Stack",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "DeFi Wallet Exchange Asset Tokenization Stablecoins Payments Margin Trading Lending and borrowing Derivatives Insurance Escrow Prediction Markets Marketplaces Scoring Liquidity protocols Libraries RIF Marketplace RIF Directory RIF Payments RIF Storage RIF Comms RIF Gateways Your sharing economy rsk smart contracts Bitcoin: Store of Value"
  },
  {
   "url": "/libraries/rsk3js/docs/",
@@ -1064,12 +1288,140 @@
   "desc": ""
  },
  {
+  "url": "/libraries/rsk-precompiled-abis/",
+  "title": "RSK Pre-compiled ABIs",
+  "category": "",
+  "tags": "libraries, abi, pre-compiled",
+  "date": "",
+  "desc": ""
+ },
+ {
   "url": "/libraries/",
   "title": "Libs",
   "category": "",
   "tags": "",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/kb/",
+  "title": "Welcome to RSK and RIF Knowledgebase",
+  "category": "",
+  "tags": "knowledgebase, rsk, faqs, help, support",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tutorials/tokens/",
+  "title": "Tutorials about tokens",
+  "category": "",
+  "tags": "tutorial, rsk, token",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tutorials/frontend/",
+  "title": "Tutorials for build frontend",
+  "category": "",
+  "tags": "tutorial, rsk, frontend",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tutorials/ethereum-devs/",
+  "title": "Tutorials for Ethereum Developers",
+  "category": "",
+  "tags": "tutorial, rsk, ethereum",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/tutorials/",
+  "title": "Tutorials",
+  "category": "",
+  "tags": "tutorial, rsk",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/contact/",
+  "title": "Engage",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/newsletter/",
+  "title": "Newsletter",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/guides/full-stack-dapp-on-rsk/",
+  "title": "Guides for Developers",
+  "category": "",
+  "tags": "guides, rsk, ethereum",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/guides/",
+  "title": "Guides",
+  "category": "",
+  "tags": "guide, rsk",
+  "date": "",
+  "desc": ""
+ },
+ {
+  "url": "/contribute/",
+  "title": "Contribute",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "The RSK stack is open-source, if you are interested in colaborate, follow these links: RSKj (node) RNS Lumino node RSK Github Check out our bug bounty program."
+ },
+ {
+  "url": "/rif/communication/",
+  "title": "About RIF Communication",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "RIF Communications is an infrastructure protocol built on top of libp2p, which allows parties in a peer-to-peer network to discover each other and establish secure communication channels, with assured anonymity, confidentiality, integrity, and authenticity. Confidentiality: no third-party can read the sent messages. Integrity: prevention of a third-party of modifying the sent messages. Authenticity: prevention of impersonation of any of the endpoints. Anonymity: If enabled, nobody in the network can identify the sender or the recipient for any particular message. By using their public keys as a discovery mechanism, users can publish pseudonyms on the RIF Directory and be discoverable without the need to remember long public keys. The RIF Secure Communications Infrastructure protocol aims to fulfill the need for establishing secure links between end users, RIFOS parties or services. In addition, RIF Communication also aspires to expose a low level library suitable to be used as communication layer in decentralised applications like RSK node, Lumino network node and similar."
+ },
+ {
+  "url": "/rif/lumino/node/install/",
+  "title": "Install",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Install your own Lumino Node Install on Ubuntu Install on MacOS"
+ },
+ {
+  "url": "/rif/lumino/node/",
+  "title": "Lumino Node",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Here you’ll find more information about Lumino Node: Architecture Install How to use Protocol Contribute"
+ },
+ {
+  "url": "/rif/lumino/light-client/use/",
+  "title": "Light Client SDK Tutorial",
+  "category": "",
+  "tags": "lumino, client, rif",
+  "date": "",
+  "desc": "How to use the RIF Lumino Light Client SDK"
+ },
+ {
+  "url": "/rif/lumino/light-client/specs/",
+  "title": "Light Client",
+  "category": "",
+  "tags": "lumino, client, rif",
+  "date": "",
+  "desc": "Lumino Light Client design and implementation specifications"
  },
  {
   "url": "/rif/lumino/libraries/",
@@ -1096,44 +1448,244 @@
   "desc": "Repository: https://github.com/rsksmart/lumino-explorer Mainnet public explorer: https://explorer.lumino.rifos.org/ RIF Lumino Explorer is a website which allows us to view the status of the Lumino Network. Each node can decide to be present or not in this explorer. Dashboard On the dashboard we have several sections: Node graph: At the center of the screen we can see all the nodes which opted to be included in the explorer and how they connect between each other Tokens dropdown: Above the graph, there is a dropdown which allows us to select which token we want to display information for. Search box: allow to search by: Node address Channel id Token Ot the left, we have a summary of the network At the top right we have 2 buttons to go to: View all nodes View all channels Summary Widget At the left of the dashboard we will see a summary widget with some general information about the network and the token selected in the dropdown. In the Dashboard (Screenshots above) we got some statistics from the Mainnet. How many nodes are connected to the…"
  },
  {
-  "url": "/rif/lumino/node/install/",
-  "title": "Install",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Install your own Lumino Node Install on Ubuntu Install on MacOS"
- },
- {
-  "url": "/rif/lumino/node/",
-  "title": "Lumino Node",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Here you’ll find more information about Lumino Node: Architecture Install How to use Protocol Contribute"
- },
- {
-  "url": "/rif/lumino/light-client/specs/",
-  "title": "Light Client",
-  "category": "",
-  "tags": "lumino, client, rif",
-  "date": "",
-  "desc": "Lumino Light Client design and implementation specifications"
- },
- {
-  "url": "/rif/lumino/light-client/use/",
-  "title": "Light Client SDK Tutorial",
-  "category": "",
-  "tags": "lumino, client, rif",
-  "date": "",
-  "desc": "How to use the RIF Lumino Light Client SDK"
- },
- {
   "url": "/rif/lumino/",
   "title": "RIF Lumino Network",
   "category": "",
   "tags": "",
   "date": "",
   "desc": "The RIF Lumino Network is the first off-chain state channel network launched on RSK. It is also a cornerstone of a broader vision called RIF Payments which will allow users to seamlessly interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden. RIF Lumino allows to make off-chain payments on any token deployed on RSK in a fast, reliable, with low fees and secured by the Bitcoin network. RIF Lumino will be the first payment network supported by RIF Payments in his path to a global financial inclusion. If you want to read more about RIF Lumino and how to be part of the network please follow the link https://explorer.lumino.rifos.org/ RIF Payments is a set of protocols whose primary goal is to enable fast and cheap peer-to-peer payments that could scale to achieve true world-wide financial inclusion. RIF Payments is composed of three main protocols: RIF Payments Full: it is a protocol which creates an abstraction layer to access different payment networks allowing cross-token and cross-network payments. RIF Payments Light: it is a protocol to allow light clients to access RIF Payments Full without jeopardizing security and decentralization. RIF Payments Exchange: this protocol will be used…"
+ },
+ {
+  "url": "/rif/rns/tools/",
+  "title": "Tools",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Web3 MyCrypto RNS Manager Subdomain tool"
+ },
+ {
+  "url": "/rif/rns/integrate/",
+  "title": "RNS Integration guidelines",
+  "category": "",
+  "tags": "rns, javascript, dapp, wallet, integrate",
+  "date": "",
+  "desc": "Learn how to integrate RNS with your wallet or dApp."
+ },
+ {
+  "url": "/rif/rns/architecture/rsk-registrar/renewers/",
+  "title": "RSK Renewers",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Simple renewer"
+ },
+ {
+  "url": "/rif/rns/architecture/rsk-registrar/registrars/",
+  "title": "RSK Registrars",
+  "category": "",
+  "tags": "rns, registrar",
+  "date": "",
+  "desc": "RNS registrars"
+ },
+ {
+  "url": "/rif/rns/architecture/rsk-registrar/",
+  "title": ".rsk Registrar",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "The registrar is separated into several components for simplicity, modularity, and privilege minimization. RSK Owner is the owner of rsk top level domain, so it is the only contract that can invoke setSubdomainOwner in RNS Registry. It grants access to other contracts for registering new domains and/or renewing domain’s expiration time. Currently we’ve enabled a first-in first-served registrar contract and a simple renewer contract that enable minimal actions to provide basic functionality for domain creation and administration."
+ },
+ {
+  "url": "/rif/rns/architecture/",
+  "title": "Architecture",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "The RIF Name Service architecture is based on 3 main components: The RNS Registry. A tree-structured registry that provides an owner, a resolver, and a TTL for each existing domain. The resolver of a domain is a contract that provides information from a name in response to client requests. The owner of a domain can be an account or a contract, and is the only one who can create subdomains. Contracts that own domains are called Registrars. RNS provides a public registrar for registering .rsk domains, currently the only active top level domain. RNS also provides the necessary architecture to perform reverse lookups, this means finding a related domain for a given address. Read the specs to know more about the motivation for this architecture design."
+ },
+ {
+  "url": "/rif/rns/operations/",
+  "title": "Operations",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Registration: Register an .rsk domain Resolution: Resolve a domain’s address Change resolver Set address resolution Set Bitcoin address resolution Ownership admin: Renew a domain Transfer a domain Subdomains: Register a subdomain Change subdomain’s owner Reverse lookup: Expose the name of your address Find the name of an address Register with auction model?: Migrate a domain from auction registration"
+ },
+ {
+  "url": "/rif/rns/libs/javascript/",
+  "title": "RNS JS Library",
+  "category": "",
+  "tags": "rns, javascript",
+  "date": "",
+  "desc": "Learn more about RNS JS Library."
+ },
+ {
+  "url": "/rif/rns/libs/rns-artifacts/resolver/",
+  "title": "RNS Solidity artifacts - resolvers",
+  "category": "",
+  "tags": "rns, artifacts, resolvers",
+  "date": "",
+  "desc": "The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Further reading Resources String Resolver: stores string resolution for a given domain."
+ },
+ {
+  "url": "/rif/rns/libs/rns-artifacts/",
+  "title": "RNS Solidity artifacts",
+  "category": "",
+  "tags": "rns, artifacts",
+  "date": "",
+  "desc": "RNS artifacts is a library for smart contract development. Source: github.com/rnsdomains/rns-artifacts It provides implementations of RNS Registry, Registrars, and Resolvers which you can deploy as-is or extend to suit your needs, as well as Solidity components to build custom contracts and more complex decentralized systems. Resolver: contract responsible for performing resource lookups for a name - for instance, returning a contract address, a content hash, or IP address(es) as appropriate. String Resolver"
+ },
+ {
+  "url": "/rif/rns/libs/",
+  "title": "RNS Libraries",
+  "category": "",
+  "tags": "rns, libs",
+  "date": "",
+  "desc": "RIF Name Service is part of the RIF Open Platform ecosystem. The developer community is working to help other developers enabling libraries and SDKs. Platform Component Javascript Resolver Android Resolver | Sample App iOS Resolver | Sample App Python Resolver Solidity RNS Full Smart contract suite | rns-artifacts"
+ },
+ {
+  "url": "/rif/rns/specs/",
+  "title": "RNS Specs",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "RNS specifications, and name mapping convention"
+ },
+ {
+  "url": "/rif/rns/guide/",
+  "title": "RNS User guide",
+  "category": "",
+  "tags": "rns, guide, rns-user-guide",
+  "date": "",
+  "desc": "A user guide for the RIF Name Service"
+ },
+ {
+  "url": "/rif/rns/",
+  "title": "RIF Name Service",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "RNS provides an architecture which enables the identification of blockchain addresses by human-readable names. .rsk Register! Try the service Register a domain in the Testnet, for free. Integrate with RNS Easy guides on how to integrate RNS in your solution. Develop on top of RNS Deploy RNS suite in your local development environment Use the libraries Use simple libraries to interact with RNS service. The stack RNS dApp Libraries Smart contracts Specifications Motivation By adding a name resolution service, also known as “alias”, the probability of errors…"
+ },
+ {
+  "url": "/rif/identity/data-vault/cpinner/",
+  "title": "Data vault - Centralized pinner",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Data vault - Centralized pinner WIP"
+ },
+ {
+  "url": "/rif/identity/data-vault/",
+  "title": "Data vault",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Data vault WIP"
+ },
+ {
+  "url": "/rif/identity/ssi/applications/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Applications Issuer app - web application that serves as the credential request manager. It allows to grant-deny requests, issue verifiable credentials and revoke existing ones. Holder app - wallet used to store declarative details and credentials of it’s users Verifier app - QR scanner mobile app that verifies verifiable presentations (of verifiable credentials)"
+ },
+ {
+  "url": "/rif/identity/ssi/libraries/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Libraries Mnemonic module - identity derivation tools using mnemonic phrases RSK Ethr DID - handle Ethr DID method procedures in RSK network uPort DAF bindings - use uPort agent with RIF identity multi identity model RIF Identity Core - implementation of RIF Identity protocols using DAF agent Express DID Auth - handle user authentication using W3C credentials Node Utils - a suite of handy utils to use in Node.js services"
+ },
+ {
+  "url": "/rif/identity/ssi/services/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Services RIF Self-Sovereign Identity solution provides two main services to interact with: Convey service - public transport layer for JWTs using IPFS Issuer service - serves for a web application that receives verifiable credential issuance requests and lets the user to manually deny or approve them (thus, issuing the verifiable credential)"
+ },
+ {
+  "url": "/rif/identity/ssi/specs/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Specs RIF Self-sovereign Identity works under a set of JWT-based and blockchain-based protocols building a user centric verifiable credential model. What is a JWT? JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. 1 These claims can be secured with digital signatures or Message Authentication Codes, and/or encrypted with different algorithms. The following is an example of a JWT Claims Set: {&quot;iss&quot;:&quot;joe&quot;, &quot;exp&quot;:1300819380, &quot;http://example.com/is_root&quot;:true} RIF Identity expresses support for RFC-7519 Identity representation Decentralized identifiers (DIDs) are a new type of identifier that enables verifiable, decentralized digital identity.2 A DID identifies any subject such as a person, an organization, a thing, an abstract entity, and so on. DIDs are URIs that represent the identities in a unique manner - the DID URI contains a public key representing the owner of that identity. A DID identity is mapped to a DID Document that expresses current state of that identity. Control delegations and identity ownership transfers are some of the actions that can be performed to modify the public state of a DID Document - to do so in a secure and…"
+ },
+ {
+  "url": "/rif/identity/ssi/",
+  "title": "Self-sovereign identity",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Self-sovereign identity Specs Architecture Libraries Services Applications FAQ"
+ },
+ {
+  "url": "/rif/identity/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "RIF Identity RIF Identity is the identity and reputation layer within the RIF ecosystem. It is meant to allow users to easily control their digital identities to interact in decentralized economies while building a self-sovereign identity and reputation. This will enable people, especially those excluded from the traditional financial system, to participate in the decentralized digital economy of the future. The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value. Table of contents Self-sovereign identity Specs Architecture Libraries Mnemonic module - identity derivation tools using mnemonic phrases RSK Ethr DID - handle Ethr DID method procedures in RSK network uPort DAF bindings - use uPort agent with RIF identity multi identity model RIF Identity Core - implementation of RIF Identity protocols using…"
+ },
+ {
+  "url": "/rif/gateways/dataservices/chainlink/",
+  "title": "RIF Gateways Data Services Chainlink",
+  "category": "",
+  "tags": "rif, gateways, data services, chainlink",
+  "date": "",
+  "desc": "About Architecture Dev Environment Node Operators Public Repositories Testnet"
+ },
+ {
+  "url": "/rif/gateways/dataservices/",
+  "title": "RIF Gateways Data Services",
+  "category": "",
+  "tags": "rif, gateways, data services",
+  "date": "",
+  "desc": "Chainlink"
+ },
+ {
+  "url": "/rif/gateways/",
+  "title": "About RIF Gateways",
+  "category": "",
+  "tags": "rif, gateways",
+  "date": "",
+  "desc": "RIF Gateways develops easy-to-use tools and technologies that allow developers and companies to design blockchain-based applications that can seamlessly interact with the external world. RIF Gateways leverages the latest advances in research and integrates the most widely-recognized industry solutions, providing at the same time a unified and common interface layer which reduces the complexity of implementing these technologies. It allows consumers and providers to easily set up secure and reliable data transfers supporting a wide range of data consumption, subscription, and payments models. RIF Gateways is structured into 3 core services: Data Services Triggers Schedulers Data Services RIF Data Services manages the information coming from the external world into the Blockchain (Inbound transactions). These are also commonly known as “Oracles” and allow smart contracts to run business logic based on external information. Some examples of applications that typically require external data are insurance contracts (which may need information about external events and pay whenever a specific chain of events takes place) or finance applications (which usually involve contracts that need access to price feeds and exchange rates such as USD/EUR), among others. Triggers RIF Triggers deals with…"
+ },
+ {
+  "url": "/rif/marketplace/services/rnsdomains/",
+  "title": "RIF Marketplace Services RNS Domains",
+  "category": "",
+  "tags": "rif, marketplace, rns",
+  "date": "",
+  "desc": "Technical Specifications"
+ },
+ {
+  "url": "/rif/marketplace/services/",
+  "title": "RIF Marketplace Services RNS",
+  "category": "",
+  "tags": "rif, marketplace, services",
+  "date": "",
+  "desc": "RNS Buy Sell Domains"
+ },
+ {
+  "url": "/rif/marketplace/guide/",
+  "title": "RIF Marketplace User Guide",
+  "category": "",
+  "tags": "rif, marketplace, guide",
+  "date": "",
+  "desc": "RIF Marketplace User Guide"
+ },
+ {
+  "url": "/rif/marketplace/",
+  "title": "About RIF Marketplace",
+  "category": "",
+  "tags": "rif, marketplace",
+  "date": "",
+  "desc": "The RIF Marketplace serves as the main component through which all the other RIF services connect with their end-users and customers. It is designed as a one-stop-shop for a wide variety of decentralized services, allowing providers and consumers to meet in a secure and efficient way. The main goal of the RIF Marketplace is to enable the fast and efficient creation of decentralized sharing economies (DSE) on top of RSK and RIF, providing the required tools to bring all parties together. Providers can list their offerings and connect with potential users for a vast range of decentralized services such as Storage, Payments, Communications, and Data Services, presenting at the same time a common and unified interface and user experience. You can access the Marketplace on the RSK Mainnet: marketplace.rifos.org"
  },
  {
   "url": "/rif/storage/providers/ipfs/",
@@ -1176,348 +1728,12 @@
   "desc": "RIF Storage is an open, censorship resistant, permissionless and decentralized storage protocol. It provides a unified interface to a 3rd party decentralized storage providers like IPFS or Swarm making it easy . We are adding incentives to these systems to ensure resistance to trivial attacks, availability and to allow participants to be rewarded for their participation in the network. As an end-user RIF Storage allows you to take back ownership of your data. Even if service you are using stops existing you can retrieve all your content. As a developer/service creator RIF Storage allows you to not worry about storage for your application and it also comes with content delivery service out of the box so your application scales without you having to invest in the infrastructure. Thanks to the build in incentives, anyone is able to become storage provider and offer their unused storage to others and get paid for it."
  },
  {
-  "url": "/rif/rns/tools/",
-  "title": "Tools",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Web3 MyCrypto RNS Manager Subdomain tool"
- },
- {
-  "url": "/rif/rns/specs/",
-  "title": "RNS Specs",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "RNS specifications, and name mapping convention"
- },
- {
-  "url": "/rif/rns/architecture/rsk-registrar/registrars/",
-  "title": "RSK Registrars",
-  "category": "",
-  "tags": "rns, registrar",
-  "date": "",
-  "desc": "RNS registrars"
- },
- {
-  "url": "/rif/rns/architecture/rsk-registrar/renewers/",
-  "title": "RSK Renewers",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Simple renewer"
- },
- {
-  "url": "/rif/rns/architecture/rsk-registrar/",
-  "title": ".rsk Registrar",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "The registrar is separated into several components for simplicity, modularity, and privilege minimization. RSK Owner is the owner of rsk top level domain, so it is the only contract that can invoke setSubdomainOwner in RNS Registry. It grants access to other contracts for registering new domains and/or renewing domain’s expiration time. Currently we’ve enabled a first-in first-served registrar contract and a simple renewer contract that enable minimal actions to provide basic functionality for domain creation and administration."
- },
- {
-  "url": "/rif/rns/architecture/",
-  "title": "Architecture",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "The RIF Name Service architecture is based on 3 main components: The RNS Registry. A tree-structured registry that provides an owner, a resolver, and a TTL for each existing domain. The resolver of a domain is a contract that provides information from a name in response to client requests. The owner of a domain can be an account or a contract, and is the only one who can create subdomains. Contracts that own domains are called Registrars. RNS provides a public registrar for registering .rsk domains, currently the only active top level domain. RNS also provides the necessary architecture to perform reverse lookups, this means finding a related domain for a given address. Read the specs to know more about the motivation for this architecture design."
- },
- {
-  "url": "/rif/rns/integrate/",
-  "title": "RNS Integration guidelines",
-  "category": "",
-  "tags": "rns, javascript, dapp, wallet, integrate",
-  "date": "",
-  "desc": "Learn how to integrate RNS with your wallet or dApp."
- },
- {
-  "url": "/rif/rns/libs/javascript/",
-  "title": "RNS JS Library",
-  "category": "",
-  "tags": "rns, javascript",
-  "date": "",
-  "desc": "Learn more about RNS JS Library."
- },
- {
-  "url": "/rif/rns/libs/rns-artifacts/resolver/",
-  "title": "RNS Solidity artifacts - resolvers",
-  "category": "",
-  "tags": "rns, artifacts, resolvers",
-  "date": "",
-  "desc": "The Resolver contract handles the resolution between the name domain and the resource. Each Registry entry references a Resolver. Further reading Resources String Resolver: stores string resolution for a given domain."
- },
- {
-  "url": "/rif/rns/libs/rns-artifacts/",
-  "title": "RNS Solidity artifacts",
-  "category": "",
-  "tags": "rns, artifacts",
-  "date": "",
-  "desc": "RNS artifacts is a library for smart contract development. Source: github.com/rnsdomains/rns-artifacts It provides implementations of RNS Registry, Registrars, and Resolvers which you can deploy as-is or extend to suit your needs, as well as Solidity components to build custom contracts and more complex decentralized systems. Resolver: contract responsible for performing resource lookups for a name - for instance, returning a contract address, a content hash, or IP address(es) as appropriate. String Resolver"
- },
- {
-  "url": "/rif/rns/libs/",
-  "title": "RNS Libraries",
-  "category": "",
-  "tags": "rns, libs",
-  "date": "",
-  "desc": "RIF Name Service is part of the RIF Open Platform ecosystem. The developer community is working to help other developers enabling libraries and SDKs. Platform Component Javascript Resolver Android Resolver | Sample App iOS Resolver | Sample App Python Resolver Solidity RNS Full Smart contract suite | rns-artifacts"
- },
- {
-  "url": "/rif/rns/operations/",
-  "title": "Operations",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Registration: Register an .rsk domain Resolution: Resolve a domain’s address Change resolver Set address resolution Set Bitcoin address resolution Ownership admin: Renew a domain Transfer a domain Subdomains: Register a subdomain Change subdomain’s owner Reverse lookup: Expose the name of your address Find the name of an address Register with auction model?: Migrate a domain from auction registration"
- },
- {
-  "url": "/rif/rns/guide/",
-  "title": "RNS User guide",
-  "category": "",
-  "tags": "rns, guide, rns-user-guide",
-  "date": "",
-  "desc": "A user guide for the RIF Name Service"
- },
- {
-  "url": "/rif/rns/",
-  "title": "RIF Name Service",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "RNS provides an architecture which enables the identification of blockchain addresses by human-readable names. .rsk Register! Try the service Register a domain in the Testnet, for free. Integrate with RNS Easy guides on how to integrate RNS in your solution. Develop on top of RNS Deploy RNS suite in your local development environment Use the libraries Use simple libraries to interact with RNS service. The stack RNS dApp Libraries Smart contracts Specifications Motivation By adding a name resolution service, also known as “alias”, the probability of errors…"
- },
- {
-  "url": "/rif/marketplace/services/rnsdomains/",
-  "title": "RIF Marketplace Services RNS Domains",
-  "category": "",
-  "tags": "rif, marketplace, rns",
-  "date": "",
-  "desc": "Technical Specifications"
- },
- {
-  "url": "/rif/marketplace/services/",
-  "title": "RIF Marketplace Services RNS",
-  "category": "",
-  "tags": "rif, marketplace, services",
-  "date": "",
-  "desc": "RNS Buy Sell Domains"
- },
- {
-  "url": "/rif/marketplace/guide/",
-  "title": "RIF Marketplace User Guide",
-  "category": "",
-  "tags": "rif, marketplace, guide",
-  "date": "",
-  "desc": "RIF Marketplace User Guide"
- },
- {
-  "url": "/rif/marketplace/",
-  "title": "About RIF Marketplace",
-  "category": "",
-  "tags": "rif, marketplace",
-  "date": "",
-  "desc": "The RIF Marketplace serves as the main component through which all the other RIF services connect with their end-users and customers. It is designed as a one-stop-shop for a wide variety of decentralized services, allowing providers and consumers to meet in a secure and efficient way. The main goal of the RIF Marketplace is to enable the fast and efficient creation of decentralized sharing economies (DSE) on top of RSK and RIF, providing the required tools to bring all parties together. Providers can list their offerings and connect with potential users for a vast range of decentralized services such as Storage, Payments, Communications, and Data Services, presenting at the same time a common and unified interface and user experience. You can access the Marketplace on the RSK Mainnet: marketplace.rifos.org"
- },
- {
-  "url": "/rif/communication/",
-  "title": "About RIF Communication",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "RIF Communications is an infrastructure protocol built on top of libp2p, which allows parties in a peer-to-peer network to discover each other and establish secure communication channels, with assured anonymity, confidentiality, integrity, and authenticity. Confidentiality: no third-party can read the sent messages. Integrity: prevention of a third-party of modifying the sent messages. Authenticity: prevention of impersonation of any of the endpoints. Anonymity: If enabled, nobody in the network can identify the sender or the recipient for any particular message. By using their public keys as a discovery mechanism, users can publish pseudonyms on the RIF Directory and be discoverable without the need to remember long public keys. The RIF Secure Communications Infrastructure protocol aims to fulfill the need for establishing secure links between end users, RIFOS parties or services. In addition, RIF Communication also aspires to expose a low level library suitable to be used as communication layer in decentralised applications like RSK node, Lumino network node and similar."
- },
- {
-  "url": "/rif/gateways/dataservices/chainlink/",
-  "title": "RIF Gateways Data Services Chainlink",
-  "category": "",
-  "tags": "rif, gateways, data services, chainlink",
-  "date": "",
-  "desc": "About Architecture Dev Environment Node Operators Public Repositories Testnet"
- },
- {
-  "url": "/rif/gateways/dataservices/",
-  "title": "RIF Gateways Data Services",
-  "category": "",
-  "tags": "rif, gateways, data services",
-  "date": "",
-  "desc": "Chainlink"
- },
- {
-  "url": "/rif/gateways/",
-  "title": "About RIF Gateways",
-  "category": "",
-  "tags": "rif, gateways",
-  "date": "",
-  "desc": "RIF Gateways develops easy-to-use tools and technologies that allow developers and companies to design blockchain-based applications that can seamlessly interact with the external world. RIF Gateways leverages the latest advances in research and integrates the most widely-recognized industry solutions, providing at the same time a unified and common interface layer which reduces the complexity of implementing these technologies. It allows consumers and providers to easily set up secure and reliable data transfers supporting a wide range of data consumption, subscription, and payments models. RIF Gateways is structured into 3 core services: Data Services Triggers Schedulers Data Services RIF Data Services manages the information coming from the external world into the Blockchain (Inbound transactions). These are also commonly known as “Oracles” and allow smart contracts to run business logic based on external information. Some examples of applications that typically require external data are insurance contracts (which may need information about external events and pay whenever a specific chain of events takes place) or finance applications (which usually involve contracts that need access to price feeds and exchange rates such as USD/EUR), among others. Triggers RIF Triggers deals with…"
- },
- {
   "url": "/rif/",
   "title": "RSK Infrastructure Framework",
   "category": "",
   "tags": "",
   "date": "",
   "desc": "RIF Services RSK Infrastructure Framework Open Standard (RIF OS) is a suite of open and decentralized infrastructure protocols that enable faster, easier and scalable development of distributed applications (dApps) within a unified environment. RIF OS is an all in one, easy to use, blockchain infrastructure service framework that provides developers and organizations access to a variety of services across multiple crypto-economies. RIF OS Protocols enable broad interoperability and faster time-to-deployment, and aim to bridge the gap between blockchain technologies and their mass-market adoption. RIF OS Protocols complete the RSK Smart Contract Network vision of bringing the Internet of Value to life. RIF Name Service RNS is a decentralized service that allows users to have a readable domain or alias. It can be used to identify other personal resources, such as payment or communication addresses. Learn more about RIF Name Service RIF Lumino Network RIF Lumino Network is a third-layer solution to the Bitcoin blockchain, that enables state channels for every token built on RSK increasing transaction throughput and reduces costs by orders of magnitude. Learn more about RIF Lumino Network RIF Marketplace RIF Marketplace provides a…"
- },
- {
-  "url": "/newsletter/",
-  "title": "Newsletter",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/solutions/",
-  "title": "Solutions on RSK",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/wallet/rwallet/",
-  "title": "rWallet",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/wallet/use/",
-  "title": "Wallets",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/wallet/",
-  "title": "Wallets",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/ethereum-dapp-to-rsk/",
-  "title": "Bring your Ethereum token to RSK",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tools/explorer/",
-  "title": "Explorer",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tools/truffle/",
-  "title": "Truffle Overview",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tools/tokenbridge/",
-  "title": "RSK  ETH Token Bridge",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tools/",
-  "title": "Tools",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/contact/",
-  "title": "Engage",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/develop/apps/tools/explorer/",
-  "title": "Explorer",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Overview Of The Explorer You can browse the overview of RSK on this page with https://explorer.rsk.co/ like below. Switch between Tabs If you want to view some specific information, you can jump through the tab bar below. Search for some information you want You can search for the information you want by entering the address,block number or tx hash in the search box. Last Block Information The next section is a panel about the last block. You can see the block number, address, the total number of transactions, and the duration in turn. Click on the number link and you can jump to the detailed page of this block. Especially,you can copy the address code by clicking the icon over the string. If you don’t need automatic update status, you can turn off the following switch. Last Block Transactions The bar…"
- },
- {
-  "url": "/guides/full-stack-dapp-on-rsk/",
-  "title": "Guides for Developers",
-  "category": "",
-  "tags": "guides, rsk, ethereum",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/guides/",
-  "title": "Guides",
-  "category": "",
-  "tags": "guide, rsk",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tutorials/tokens/",
-  "title": "Tutorials about tokens",
-  "category": "",
-  "tags": "tutorial, rsk, token",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tutorials/frontend/",
-  "title": "Tutorials for build frontend",
-  "category": "",
-  "tags": "tutorial, rsk, frontend",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tutorials/ethereum-devs/",
-  "title": "Tutorials for Ethereum Developers",
-  "category": "",
-  "tags": "tutorial, rsk, ethereum",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/tutorials/",
-  "title": "Tutorials",
-  "category": "",
-  "tags": "tutorial, rsk",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/kb/",
-  "title": "Welcome to RSK and RIF Knowledgebase",
-  "category": "",
-  "tags": "knowledgebase, rsk, faqs, help, support",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/the-stack/",
-  "title": "The Stack",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "DeFi Wallet Exchange Asset Tokenization Stablecoins Payments Margin Trading Lending and borrowing Derivatives Insurance Escrow Prediction Markets Marketplaces Scoring Liquidity protocols Libraries RIF Marketplace RIF Directory RIF Payments RIF Storage RIF Comms RIF Gateways Your sharing economy rsk smart contracts Bitcoin: Store of Value"
  },
  {
   "url": "/",
@@ -1598,6 +1814,22 @@
   "tags": "rif, marketplace, guide",
   "date": "",
   "desc": "RIF Marketplace User Guide"
+ },
+ {
+  "url": "/rif/identity/ssi/applications/issuer-app/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Issuer App The Issuer App is a React application that handles the back office tasks of issuing and rejecting credential requests. It is built to be connected to any Request Credential Service Server (that is API compatible with RIF Identity issuer service), and login happens with a username and password. Features Login using HTTP Basic Auth with username and password View list of received credential requests and request content Issue and Deny Verifiable Credentials Screenshots Login Screen Credential List Extend The issuer app has a lot of potential for future development including: Adding back-office claims to credentials User management Revoking credentials Managing credential templates/types History Run locally: The issuer application can connect to any credential server so there is no need to set environment variables. yarn yarn start Run for development yarn yarn build Links Github Repo - the repo is part of the larger SSI UI repository."
+ },
+ {
+  "url": "/rif/identity/ssi/services/issuer-service/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Issuer service WIP"
  },
  {
   "url": "/rif/storage/libraries/javascript/",
@@ -1704,6 +1936,14 @@
   "desc": "Any name that has been registered using the Auction Model contract should be migrated to the new registration model. Login to the RNS Manager. You will see the following alert in the admin tab if your name has not been migrated yet. Click on “migrate”, sign the transaction, and you’re done! To renew you domain’s rent time, migrate your domain! From now on, every new domain registered under .rsk top level domain will be managed by the RSKOwner contract. This contract is in charge of domain expirations. Once you have migrated your name, follow this guide to renew your domain’s expiration. If a name is not migrated before expiration, you will lose the domain ownership. In that case, you will be prompted to [register](/rif/rns/operations/Register-a-name) your domain again."
  },
  {
+  "url": "/rif/identity/ssi/libraries/mnemonics/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Mnemonic module Identity derivation tools using mnemonic phrases"
+ },
+ {
   "url": "/solutions/moneyonchain/",
   "title": "Money on Chain - Solutions on RSK",
   "category": "",
@@ -1758,6 +1998,14 @@
   "tags": "rif, gateways, data services, chainlink, node operators",
   "date": "",
   "desc": "Node Operators - Connect your Chainlink node to RSK Testnet Provided you have a functioning Chainlink node, and are interested in trying the RSK Initiator and RSKTX Adapters to interact with RSK Network, you can follow these instructions to get started. Prerequisites. You’ll need to create a Postgres database for the Initiator and another for the Adapter. You can quickly set this up with the psql CLI utility: psql -U postgres -c &quot;create database rsk_initiator&quot; psql -U postgres -c &quot;create database rsktx_adapter&quot; 1. Clone the repository and enter project directory git clone https://github.com/smartcontractkit/chainlink-RSK.git &amp;amp;&amp;amp; cd chainlink-RSK 2. Configure the Initiator and Adapter Create a .env-testnet file for each service and set the configuration environment variables. RSK Initiator Key Description Example CHAINLINK_BASE_URL The URL of the Chainlink Core service with a trailing slash http://localhost:6688/ DATABASE_URL The URL of the Postgres connection postgresql://user:passw@host:5432/dbname INITIATOR_HOST The hostname of the RSK Initiator localhost INITIATOR_NAME The Initiator name that will…"
+ },
+ {
+  "url": "/rif/identity/ssi/libraries/node-utils/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Node Utils"
  },
  {
   "url": "/rif/rns/guide/operations/",
@@ -1824,6 +2072,14 @@
   "desc": ""
  },
  {
+  "url": "/rif/identity/ssi/specs/presentation-timestamps/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Presentations timestamps Emitting and validating presentations with timestamps A use case of the Verifiable Credential model7 is the presentation of credentials person to person, using QR codes. This article expresses some considerations that are important when implementing verification of this kind of presentations. Verifiable Presentations (VP) should always be signed by a DID controller. VC presentations (VP) must contain a presentation_date and, optionally, an expiration_date. Verifier should check both dates to make sure it is a Presentation that was signed at the verification time. If no expiration_date is present the Verifier should have a (configurable) parameter presentation_grace from the presentation_date, for example presentation_grace=1 minute. This prevents replay attacks. A recommended verification user experience is: Verifier asks credential to Holder Holder selects a credential Holder taps on show QR button Holder shows QR Verifier scans QR Verifier app verifies VP Verifier app displays presented credentials information Verifier validates information To prove that the person presenting the credential is really the owner of the credential, it is advisable to request that they present a verified photo of themselves, or other kind of physical proof The verifier app could stablish…"
+ },
+ {
   "url": "/rif/lumino/node/protocol/",
   "title": "Protocol",
   "category": "",
@@ -1840,14 +2096,6 @@
   "desc": "Check out our public repositories Lumino Node Lumino Web Lumino contracts Lumino Node SDK Lumino Explorer"
  },
  {
-  "url": "/rif/marketplace/public-repos/",
-  "title": "RIF Marketplace Public repositories",
-  "category": "",
-  "tags": "rif, marketplace, github, repositories",
-  "date": "",
-  "desc": "Check out our public repositories RIF Marketplace UI RIF Marketplace Cache RIF Marketplace NFTS Contract RIF Marketplace Dev Environment"
- },
- {
   "url": "/rif/gateways/dataservices/chainlink/public-repos/",
   "title": "RIF Gateways Chainlink Public repositories",
   "category": "",
@@ -1856,12 +2104,28 @@
   "desc": "Check out our public repositories: Chainlink/RSK Integration"
  },
  {
+  "url": "/rif/marketplace/public-repos/",
+  "title": "RIF Marketplace Public repositories",
+  "category": "",
+  "tags": "rif, marketplace, github, repositories",
+  "date": "",
+  "desc": "Check out our public repositories RIF Marketplace UI RIF Marketplace Cache RIF Marketplace NFTS Contract RIF Marketplace Dev Environment"
+ },
+ {
   "url": "/tutorials/quiz-app-to-dapp/",
   "title": "RSK Workshop: Quiz App to dApp",
   "category": "",
   "tags": "rsk, workshop, solidity, javascript, swarm",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/rif/identity/references/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "References RFC-7519 - JSON Web Token (JWT) Decentralized Identifiers (DIDs) v1.0 Ethr DID Method Specification BIP-0039 - Mnemonic code for generating deterministic keys BIP-0032 - Hierarchical Deterministic Wallets RSKIP-0057 - Derivation Path for Hierarchical Deterministic Wallets Verifiable Credentials Data Model 1.0 Ethereum: A secure decentralised generalised transaction ledger (yellow paper) BIP-44 - Multi-Account Hierarchy for Deterministic Wallets Wikipedia - Challenge–response authentication RFC-1994 - PPP Challenge Handshake Authentication Protocol (CHAP) Verifiable Credentials JSON Schema Specification The OAuth 2.0 Authorization Framework HTTP Authentication Scheme Registry EIP-155 - Simple replay attack protection EIP-191 - Signed Data Standard"
  },
  {
   "url": "/rif/rns/operations/register-auction-deprecated/",
@@ -1888,20 +2152,20 @@
   "desc": "The process consists of three main steps: Go to the RNS Manager. You need to check if your name is available. Search the name you want to register. If your name is available, click on “register your domain”, and go to the next step. Select the duration for which you would like to register your name and check that you have that amount of RIF Tokens Click on “Request to register”. Sign the transaction and wait for one minute. We’re almost done! After approximately one minute, the “Register” button will be enabled. Click on it! Find here all available features."
  },
  {
-  "url": "/rif/rns/specs/registry/",
-  "title": "RNS Specs - Registry",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "The registry contract provides a simple mapping between a domain and its resolver. Everything related to domain ownership is managed in this contract, including ownership transfer and sub-domain creation. Each registry entry refers to a resolver which handles the resolution between the name domain and the desired resource. The RNS Registry contract exposes functions for accessing data and functions to modify data: Access Ownership function owner(bytes32 node) constant returns (address); Returns the owner (registrar) of the specified node. Resolution function resolver(bytes32 node) constant returns (address); Returns the resolver for the specified node. Caching function ttl(bytes32 node) constant returns (uint64); Returns the time-to-live (TTL) of the node; that is, the maximum duration for which a node’s information may be cached. Modify Ownership function setOwner(bytes32 node, address owner); Transfers ownership of a node to another registrar. This function may only be called by the current owner of node. A successful call to this function logs the event Transfer(bytes32 indexed, address). function setSubnodeOwner(bytes32 node, bytes32 label, address owner); …"
- },
- {
   "url": "/rif/rns/architecture/registry/",
   "title": "Registry",
   "category": "",
   "tags": "",
   "date": "",
   "desc": "The RNS Registry is the contract that stores the ownership of the nodes. Registry mainnet Address: 0xcb868aeabd31e2b66f74e9a55cf064abb31a4ad5 ABI: RNSABI.json See RNS Testnet section for testing environment information. Index Abstract Acquire a domain Set a subdomain Change the Resolver Transfer ownership Release a domain ownership Structure Methods owner setOwner setSubnodeOwner resolver setResolver ttl setTTL setDefaultResolver Abstract Node The node is the main structure of the RIF Name Service Registry. A node has an owner, a Resolver and a time to live (TTL). A node owner can: Register sub nodes derived from it, with their owners Set the node’s Resolver: Resolvers are responsible for performing resource lookups for a name - for instance, returning a contract address, a content hash, or IP address(es) as appropriate. Set the node’s TTL: the caching time-to-live. Transfer node’s ownership The root node The root node is the parent of top-level domains. This node is located in the &amp;lt;code…"
+ },
+ {
+  "url": "/rif/rns/specs/registry/",
+  "title": "RNS Specs - Registry",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "The registry contract provides a simple mapping between a domain and its resolver. Everything related to domain ownership is managed in this contract, including ownership transfer and sub-domain creation. Each registry entry refers to a resolver which handles the resolution between the name domain and the desired resource. The RNS Registry contract exposes functions for accessing data and functions to modify data: Access Ownership function owner(bytes32 node) constant returns (address); Returns the owner (registrar) of the specified node. Resolution function resolver(bytes32 node) constant returns (address); Returns the resolver for the specified node. Caching function ttl(bytes32 node) constant returns (uint64); Returns the time-to-live (TTL) of the node; that is, the maximum duration for which a node’s information may be cached. Modify Ownership function setOwner(bytes32 node, address owner); Transfers ownership of a node to another registrar. This function may only be called by the current owner of node. A successful call to this function logs the event Transfer(bytes32 indexed, address). function setSubnodeOwner(bytes32 node, bytes32 label, address owner); …"
  },
  {
   "url": "/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/",
@@ -2192,8 +2456,8 @@
   "desc": "RIF Marketplace User Guide"
  },
  {
-  "url": "/webinars/202007-005/slides/",
-  "title": "Testing Smart Contracts with Truffle",
+  "url": "/webinars/202008-005/slides/",
+  "title": "Testing Smart Contracts with OZ CLI",
   "category": "",
   "tags": "rsk, solidity, truffle, test, mocha, slides",
   "date": "",
@@ -2208,8 +2472,8 @@
   "desc": ""
  },
  {
-  "url": "/webinars/202008-005/slides/",
-  "title": "Testing Smart Contracts with OZ CLI",
+  "url": "/webinars/202007-005/slides/",
+  "title": "Testing Smart Contracts with Truffle",
   "category": "",
   "tags": "rsk, solidity, truffle, test, mocha, slides",
   "date": "",
@@ -2264,20 +2528,20 @@
   "desc": "You can access the Marketplace on the RSK Tesnet: marketplace.testnet.rifos.org Registration flow Download a browser wallet. Recommended: Nifty Wallet Connect your wallet to RSK Testnet. You can do it with the top left selector on Nifty Wallet. (optional) List tRIF token balance using this address: 0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE. In Nifty wallet do this in Tokens tab. Browse to RSK faucet to get some gas. Browse to tRIF faucet to get some test RIF tokens. Browse to RNS Testnet Manager and search for your desired domain. Follow the registration process. Smart contracts RNS 0x7d284aaac6e925aad802a53c0c69efe3764597b8 Resolver 0x25C289ccCFFf700c6a38722F4913924fE504De0e RSK Registrar RSKOwner: 0xca0a477e19bac7e0e172ccfd2e3c28a7200bdb71 FIFSRegistrar: 0x36ffda909f941950a552011f2c50569fda14a169 FIFSAddrRegistrar: 0x90734bd6bf96250a7b262e2bc34284b0d47c1e8d Renewer: 0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b NamePrice: 0x794f99f1a9382ba88b453ddb4bfa00acae8d50e8 BytesUtils: 0x7faf084ef72cb71f3383a5c568c70853ac4c298e Reverse ReverseRegistrar:0xc1cb803d5169e0a9894bf0f8dcdf83090999842a NameResolver: 0x8587385ad60038bB181aFfDF687c4D1B80C4787e RSK Registrar legacy TokenRegistrar (auction): 0x3d1a11c623bd21375f2b69f4eec814f4ceeb1d8d Legacy Resolvers Public Resolver: 0x1e7ae43e3503efb886104ace36051ea72b301cdf MultiChain Resolver: 0x404308f2a2eec2cdc3cb53d7d295af11c903414e RNS Manager testnet.manager.rns.rifos.org"
  },
  {
-  "url": "/rif/marketplace/testnet/",
-  "title": "RIF Marketplace Testnet",
-  "category": "",
-  "tags": "rif, marketplace, testnet",
-  "date": "",
-  "desc": "You can access the Marketplace on the RSK Testnet: marketplace.testnet.rifos.org Wallet Setup Download a browser wallet. Recommended: Nifty Wallet Connect your wallet to RSK Testnet. You can do it with the top left selector on Nifty Wallet. (optional) List tRIF token balance using this address: 0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE. In Nifty wallet do this in Tokens tab. Browse to RSK faucet to get some gas. Browse the tRIF faucet to get some test RIF tokens. Browse the RIF Marketplace - Testnet to access the available services. Smart contracts Name Services - NFTS Placements NFTS Proxy: 0xfa5aDE767A422c66cAFD94c3710F5B92467fb85E NFTS ProxyAdmin: 0xE660A209c733ba0C1331E9997cb31309e7c28A52 NFTS Implementation: 0xcEd09738227b611b4681a1Aa05CDb0D72ebFbEA5 RNS Manager (to register and manage RNS Domains) testnet.manager.rns.rifos.org"
- },
- {
   "url": "/rif/gateways/dataservices/chainlink/testnet/",
   "title": "RIF Gateways Chainlink Testnet",
   "category": "",
   "tags": "rif, gateways, chainlink, testnet",
   "date": "",
   "desc": "Smart contracts RIF/BTC Price Reference Aggregator 0xd793fd691dF2934B412e250460bEd76d807f05eb To join as a Node Operator: Configure a job in Chainlink to get RIF/USD price from Liquid.com. Login to the Chainlink Operator WebUI and add the following job. Replace RSK_INITIATOR_NAME, ORACLE_CONTRACT_ADDRESS and RSKTX_ADAPTER_NAME with your values. For the purpose of adding the node to the testnet Reference Aggregator, configure the tasks to fetch last traded price of RIF/BTC pair on Liquid.com exchange. Once this step is done, provide the JobID and Oracle contract address to the Aggregator owners to be included. { &quot;initiators&quot;: [ { &quot;type&quot;: &quot;external&quot;, &quot;params&quot;: { &quot;name&quot;: &quot;RSK_INITIATOR_NAME&quot;, &quot;body&quot;: { &quot;address&quot;: &quot;ORACLE_CONTRACT_ADDRESS&quot; } } } ], &quot;tasks&quot;: [ { &quot;type&quot;: &quot;httpget&quot;, &quot;params&quot;: { &quot;get&quot;: &quot;https://api.liquid.com/products/580&quot; } }, { &quot;type&quot;: &quot;jsonparse&quot;, &quot;params&quot;: { &quot;path&quot;: &quot;last_traded_price&quot; } }, { &quot;type&quot;: &quot;multiply&quot;, &quot;params&quot;: { &quot;times&quot;: 100000000 } }, { &quot;type&quot;: &quot;ethuint256&quot; }, { &quot;type&quot;: &quot;RSKTX_ADAPTER_NAME&quot; } ] } Token Bridge testnet.tokenbridge.rsk.co/"
+ },
+ {
+  "url": "/rif/marketplace/testnet/",
+  "title": "RIF Marketplace Testnet",
+  "category": "",
+  "tags": "rif, marketplace, testnet",
+  "date": "",
+  "desc": "You can access the Marketplace on the RSK Testnet: marketplace.testnet.rifos.org Wallet Setup Download a browser wallet. Recommended: Nifty Wallet Connect your wallet to RSK Testnet. You can do it with the top left selector on Nifty Wallet. (optional) List tRIF token balance using this address: 0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE. In Nifty wallet do this in Tokens tab. Browse to RSK faucet to get some gas. Browse the tRIF faucet to get some test RIF tokens. Browse the RIF Marketplace - Testnet to access the available services. Smart contracts Name Services - NFTS Placements NFTS Proxy: 0xfa5aDE767A422c66cAFD94c3710F5B92467fb85E NFTS ProxyAdmin: 0xE660A209c733ba0C1331E9997cb31309e7c28A52 NFTS Implementation: 0xcEd09738227b611b4681a1Aa05CDb0D72ebFbEA5 RNS Manager (to register and manage RNS Domains) testnet.manager.rns.rifos.org"
  },
  {
   "url": "/rif/token/",
@@ -2350,6 +2614,14 @@
   "tags": "",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/rif/identity/ssi/applications/verifier-app/",
+  "title": "",
+  "category": "",
+  "tags": "",
+  "date": "",
+  "desc": "Verifier App WIP"
  },
  {
   "url": "/rif/rns/guide/value-proposition/wallets/",
@@ -2428,7 +2700,7 @@
   "title": "Quick Start - Step 1",
   "category": "",
   "tags": "quick-start,, rskj",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "quick start - install RSK local node - prep environment, verify and install RSKj"
  },
  {
@@ -2436,7 +2708,7 @@
   "title": "Quick Start - Step 2",
   "category": "",
   "tags": "quick-start,, truffle,, ganache",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "quick start - tutorial project, install truffle, install ganache"
  },
  {
@@ -2444,7 +2716,7 @@
   "title": "Quick Start - Step 3",
   "category": "",
   "tags": "quick-start,, solidity",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "quick start - smart contracts, solidity"
  },
  {
@@ -2452,7 +2724,7 @@
   "title": "Quick Start - Step 4",
   "category": "",
   "tags": "quick-start,, compile,, deploy,, regtest,, truffle",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "quick start - compile smart contracts, deploy smart contracts to regtest"
  },
  {
@@ -2460,7 +2732,7 @@
   "title": "Quick Start - Step 5",
   "category": "",
   "tags": "quick-start,, smart-contract,, truffle,, web3",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "quick start - smart contract interactions through web3 REPL"
  },
  {
@@ -2468,7 +2740,7 @@
   "title": "RSK Blockchain",
   "category": "",
   "tags": "rsk",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "What is RSK?"
  },
  {
@@ -2476,7 +2748,7 @@
   "title": "Node (RSKj)",
   "category": "",
   "tags": "rsk,, rskj,, node",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Learn more about RSKj, a node implementation for the RSK blockchain"
  },
  {
@@ -2484,7 +2756,7 @@
   "title": "Architecture",
   "category": "",
   "tags": "rsk,, rskj,, node,, architecture",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Architecture of RSK nodes: JSON-RPC, Web3, and storage."
  },
  {
@@ -2492,7 +2764,7 @@
   "title": "JSON-RPC",
   "category": "",
   "tags": "rsk,, rskj,, node,, rpc",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "The JSON-RPC methods supported by RSK nodes."
  },
  {
@@ -2500,7 +2772,7 @@
   "title": "Using RSK Public Nodes (Mainnet &amp; Testnet) provided by IOVLabs",
   "category": "",
   "tags": "rsk,, networks,, versions,, rpc,, mainnet,, testnet,, cUrl",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
  },
  {
@@ -2508,7 +2780,7 @@
   "title": "Install",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Ensure that your system meets the minimum requirements before installing the RSK nodes on it. Install RSK Node and Join the RSK Papyrus Mainnet RSK nodes can be installed on all major platforms, including Linux, Windows, and Mac. Here we provide step-by-step instructions for all supported platforms. Depending on your network performance, it usually takes 10 to 15 mins to setup a working node on Mainnet. Supported Systems and Methods Type Platform Supported Methods Local Linux Ubuntu Package, CentOS, Fat JAR, Docker Local Mac Fat JAR, Docker Local Windows Fat JAR, Docker Cloud AWS AWS AMI, Ubuntu Package, Docker Cloud Azure Azure VM Image, Ubuntu Package, Docker Cloud Google Ubuntu Package, Fat JAR, Docker Using Ubuntu Package Visit Setup…"
  },
  {
@@ -2516,7 +2788,7 @@
   "title": "RSK Node Updates",
   "category": "",
   "tags": "rsk,, rskj,, node,, update,, version",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to update RSKj, the RSK node, to a newer version, and verify that it works correctly. Also sign up for updates to get notified when there is a new version released."
  },
  {
@@ -2524,7 +2796,7 @@
   "title": "Hardware requirements",
   "category": "",
   "tags": "hardware,, specs,, requirements",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Minimum hardware requirements for RSK"
  },
  {
@@ -2532,7 +2804,7 @@
   "title": "Setup node on Docker",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. Install Docker Desktop Client Docker Desktop provides an easy and fast way for running containerized applications on various of operating systems. For Mac OSX and Windows: Download and install Start the Docker Desktop client Login with a Docker Hub free account For Linux: Install Docker Engine Community Note that you will need to use sudo for all docker commands, by default. To avoid this additional steps are required. Ensure that docker is running by running the following command - it should run without any errors. docker ps More information about Docker install here. Install RSKj Using Docker First of all, download the RSK a Dockerfile and supervisord.conf from artifacts repo. Inside the artifacts repo, you can choose which type of node you are going to install: A node connected to the public RSK Mainnet: Dockerfile.MainNet A node connected to the public RSK Testnet: Dockerfile.TestNet A node connected to a private RegTest network: Dockerfile.RegTest Install the node using Docker containers Then build the…"
  },
  {
@@ -2540,7 +2812,7 @@
   "title": "Setup node on Ubuntu",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. Install via Ubuntu Package Manager The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package Manager. Type the commands below to install RSKj on Ubuntu using our PPAs for Ubuntu. The installed repo public key Fingerprint is 5EED 9995 C84A 49BC 02D4 F507 DF10 691F 518C 7BEA. Also, the public key could be found in document Ubuntu Key Server. $ sudo add-apt-repository ppa:rsksmart/rskj $ sudo apt-get update $ sudo apt-get install rskj During the installation, you will be asked to accept the terms and confirm the network. Choose Yes and Enter to accept the license to continue Choose mainnet and press Enter to continue Install via Direct Downloads You can also download the RSKj Ubuntu Package for Papyrus 2.0.1 and install it with the dpkg command. Follow this download link to download the matching package for your ubuntu system. #…"
  },
  {
@@ -2548,7 +2820,7 @@
   "title": "Setup node on CentOS",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to install and run an RSK node on CentOS"
  },
  {
@@ -2556,7 +2828,7 @@
   "title": "Setup node on Java",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. You also need to install Java 8 JDK. Install the node using a JAR file The Fat JAR or Uber JAR can be downloaded or compiled (in a reproducible way or not). To run the node: Linux, Mac OSX $ java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start Windows C:&amp;gt; java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start Replace &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; with your path to the JAR file. As an example: C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar Using import sync Note: This feature is optional. Note: This feature, first released as part of RSKj v2.0.1, is currently experimental. If you don’t want to synchronize your node in the default way, you can use the import sync feature. This method imports a synchronized database from a trusted origin in a fraction of the time currently required. Use this command to run the node: Linux, Mac OSX $ java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start --import Windows C:&amp;gt; java -cp…"
  },
  {
@@ -2564,7 +2836,7 @@
   "title": "Setup node on Azure",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Install RskJ Using Azure Follow the instructions below to install and run an RSK node in Azure. By default, the node connects to Mainnet. If you want to change the network read this section. If you want to change some configuration, please refer to our RSK node configuration section. Also you can enable RPC calls to interact with the node (by default it’s disabled). Install The Node Using Azure On Azure, create a resource. Search for RSK, choose the node’s version and click Create. You will see 4 steps after deploying the node: Basics: complete this step with your information. Choose a name for the node, user name, password, subscription and resource group. Size: select your VM options. Check recommended minimum requirements. Settings: configure optional features. Summary: review the summary of what you have set and press Create. Wait for Azure to finish the deployment. Initialize RSK node configuration file settings (you can do it while switching network). Connect your computer to the node using bash. Edit configuration file using vi: &amp;lt;div class=&quot;language-shell…"
  },
  {
@@ -2572,7 +2844,7 @@
   "title": "Setup node on AWS",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Step 1: Navigate to the AWS Console site: https://console.aws.amazon.com Step 2: On the AWS services dashboard, click on EC2 (Virtual Machines), then on “launch instance” button. Step 3: Click on AWS Marketplace, search for “rsk”, and select the “RSK Node Bamboo v0.x.x MainNet”; Review the prices and select “Continue”. Step 4: Select the instance type. The once disabled doesn’t reach the minimum hardware requirements. Then, click on “Next: configure instance details” Step 5: Optionally change the default values on this screen, and continue clicking on “Next: Add Storage” Step 6: In the Storage section, increase the size to any size that is 50GB or higher, the minimum recommended to run the node, then click on “Next: Add Tags” Step 7: Optionally add a tag to identify the instance, then, click on “Next: Configure Security Group” Step 8: Now create a new rule with the TCP 22 port, and select a source to open the SSH port and be able to connect to the node remotely, then click on “Review and Launch” Step 9: Review the info…"
  },
  {
@@ -2580,7 +2852,7 @@
   "title": "Configure",
   "category": "",
   "tags": "rsk,, rskj,, node,, config",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Setting your own config preferences, when using the Java command, Ubuntu, Azure, AWS, or Docker"
  },
  {
@@ -2588,7 +2860,7 @@
   "title": "Configuration reference",
   "category": "",
   "tags": "rsk,, rskj,, node,, config",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Configuration reference for RSKj"
  },
  {
@@ -2596,7 +2868,7 @@
   "title": "Configure Verbosity",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, logs",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Configure RSKj for desired log verbosity, finding log files, and using logback."
  },
  {
@@ -2604,7 +2876,7 @@
   "title": "Switch network",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, network,, mainnet,, testnet,, regtest",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to switch your RSK node between the Mainnet, Testnet, and RegTest networks"
  },
  {
@@ -2612,7 +2884,7 @@
   "title": "Configure RSKj node for mining",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, mining",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to run RSKj in a manner suited for mining."
  },
  {
@@ -2620,7 +2892,7 @@
   "title": "Contribute",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Getting set up with RSKj and contributing towards its development."
  },
  {
@@ -2628,7 +2900,7 @@
   "title": "CLI",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, cli",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to compile and run an RSKj node from the command line interface."
  },
  {
@@ -2636,7 +2908,7 @@
   "title": "Linux",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, linux",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to compile and run an RSKj node on Linux. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -2644,7 +2916,7 @@
   "title": "Mac OSX",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, mac,, osx",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to compile and run an RSKj node on Mac OSX. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -2652,7 +2924,7 @@
   "title": "Windows",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, windows",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to compile and run an RSKj node on Windows. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -2660,7 +2932,7 @@
   "title": "Reproducible Build",
   "category": "",
   "tags": "rsk,, node,, compile,, reproducible,, checksum",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "A deterministic build process used to build RSK node JAR file. Provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. Makes sure that the same tested dependencies are used and statically built into the executable."
  },
  {
@@ -2668,7 +2940,7 @@
   "title": "Ensure security chain of RskJ source code",
   "category": "",
   "tags": "rsk,, rskj,, node,, security,, verification",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "All the different ways that you can verify RSKj: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
  },
  {
@@ -2676,7 +2948,7 @@
   "title": "Network Upgrades",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, upgrade,, protocol,, consensus,, rskip.",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to introduce consensus rules changes using network upgrades on an RSK node. What to consider. Adding a new rule. Running tests with new rules."
  },
  {
@@ -2684,7 +2956,7 @@
   "title": "Troubleshooting",
   "category": "",
   "tags": "rsk,, rskj,, node,, faq,, troubleshoot",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to solve some known or frequently encountered issues when working with RSKj"
  },
  {
@@ -2692,7 +2964,7 @@
   "title": "R-BTC Token",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK. You can convert BTC into R-BTC by sending BTC through the 2-way peg (both in Testnet and Mainnet), or by using the faucet in Testnet, or exchanges in Mainnet. R-BTC (Smart Bitcoin in Mainnet) Token Name R-BTC Total Supply 21,000,000 R-BTC Circulating supply API Contract Type Native (Bridge contract) How to get Exchanges 2-way peg Logo R-BTC-logo.png tR-BTC (Smart Bitcoin in Testnet) Token Name tR-BTC Total Supply 21,000,000 tR-BTC Circulating supply API Contract Type Native (Bridge contract) How to get Faucet 2-way peg Wallets See supported wallets. &amp;lt;h2…"
  },
  {
@@ -2700,7 +2972,7 @@
   "title": "BTC to R-BTC Conversion",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet."
  },
  {
@@ -2708,7 +2980,7 @@
   "title": "Mainnet Guide",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Converting BTC to R-BTC (peg-in) and R-BTC to BTC (peg-out)."
  },
  {
@@ -2716,7 +2988,7 @@
   "title": "Tesnet Guide",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Converting t-BTC to tR-BTC (peg-in) and tR-BTC to t-BTC (peg-out)."
  },
  {
@@ -2724,7 +2996,7 @@
   "title": "Conversion using a Ledger hardware wallet",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, ledger",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to perform the 2-way peg mechanism using Ledger"
  },
  {
@@ -2732,7 +3004,7 @@
   "title": "Conversion with node and console",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, node,, cli",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to perform the 2-way peg mechanism using node and console"
  },
  {
@@ -2740,7 +3012,7 @@
   "title": "Gas",
   "category": "",
   "tags": "",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Gas is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK this is paid in R-BTC. What is gas? How do I choose an appropriate gas price and limit? What happens if my transaction fails? What happens if I run out of gas? Gas in smart contracts What is gas? There are four important concepts: Gas price: The cost of the operation. Gas limit: The maximum gas the operation can afford. It’s an upper limit the user sets to prevent losing gas. Total gas: The gas the operation consumed. Also referred to as gas used. Unit: Gas is paid in R-BTC. Let’s start with a simple analogy: A car. To drive a car you need gas. Gas price is the money you pay for each gallon. Gas limit is the max amount of gas you accept to consume, the gas you charge. The total gas is the amount you’ve spent at the end of the trip. You can…"
  },
  {
@@ -2748,7 +3020,7 @@
   "title": "Turing complete",
   "category": "",
   "tags": "rsk,, rvm,, evm,, virtual, machine",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "The RSK virtual machine is compatible with Ethereum Virtual machine at an opcode level."
  },
  {
@@ -2756,7 +3028,7 @@
   "title": "Account Based RSK Addresses",
   "category": "",
   "tags": "rsk,, checksum,, chainId,, address,, derivation,, eip1191,, eip155,, bip44,, slip44",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "EIP-1191 chainId is used in RSK addresses as a checksum. m/44&#39;/137&#39;/0&#39;/0 is the derivation path used for BIP-44 compatible wallets."
  },
  {
@@ -2764,7 +3036,7 @@
   "title": "2-way peg",
   "category": "",
   "tags": "rsk,, rbtc,, btc,, peg",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Transfer BTC to R-BTC, and R-BTC to BTC through a 2-way peg."
  },
  {
@@ -2772,7 +3044,7 @@
   "title": "Merged Mining",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, pow",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How merge mining RSK with Bitcoin works, and its benefits"
  },
  {
@@ -2780,7 +3052,7 @@
   "title": "Implementation Guide",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, pool",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How to merge mine RSK using Bitcoin mining pool software"
  },
  {
@@ -2788,7 +3060,7 @@
   "title": "Merged mining reference",
   "category": "",
   "tags": "rsk,, mining,, bitcoin",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "How RSK leverages the Bitcoin network&#39;s consensus mechanism for its own secruity, and adds additional features to prevent double spending"
  },
  {
@@ -2796,7 +3068,7 @@
   "title": "REMASC",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, remasc",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Reward Manager Smart Contract (REMASC) is a pre-compiled smart-contract that is executed on every block and has the responsibility to fairly distribute rewards collected from transaction fees into several participants of the network. However the distribution of rewards of a block is only performed once the block reaches a certain maturity. In other words, the rewards are paid only after a fixed number of blocks have confirmed a block. With the exception of the first blocks in the blockchain after genesis, every time a block is added to the blockchain, another previous block reaches maturity and its rewards are paid. REMASC is an implementation of DECOR+ [1] How it Works The REMASC contract maintains different internal accounts. One of these internal accounts is called Reward Balance. The Reward Balance always exists and its value can change when a new block is processed because of any of the following reasons: The block was accepted on the mainchain and all its transaction fees are added to the Reward balance. Miners and other rewarded parties get paid their reward and the rewarded value is subtracted from the Reward balance. As an example, let’s assume that a block has 2…"
  },
  {
@@ -2804,7 +3076,7 @@
   "title": "Security model",
   "category": "",
   "tags": "rsk,, security,, peg,, federation",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Achieving security in a 2-way pegged sidechain using proofs of payment"
  },
  {
@@ -2812,7 +3084,7 @@
   "title": "Transaction Privacy",
   "category": "",
   "tags": "rsk,, privacy,, anonymous,, pseudonymous",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Transaction pseudonymity vs transaction anonymity"
  },
  {
@@ -2820,7 +3092,7 @@
   "title": "Fast payments",
   "category": "",
   "tags": "rsk,, remasc,, interval,, speed,, propagation",
-  "date": "2020-11-18 03:59:44 +0000",
+  "date": "2020-11-21 07:19:46 +0000",
   "desc": "Achieving faster on-chain block intervals"
  }
 ]
