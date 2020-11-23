@@ -103,6 +103,6 @@ In the following matrix you can see the different features by wallet.
 | Metamask | | ❌ | | ❌ | | ❌ |
 | rWallet | | ✔ | | ✔ | | ✔ |
 | Edge | | ✔ | | ✔ | | ❌ |
-| Defiant | | ✔ | | ✔ | | ✔ |
-| Math | | ✔ | | ✔ | | ✔ |
+| Defiant | | ✔ | | ✔ | | ❌ |
+| Math Wallet | | ✔ | | ✔ | | ✔ |
 | Beexo | | ✔ | | ✔ | | ✔ |
