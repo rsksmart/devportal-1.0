@@ -72,21 +72,3 @@ git checkout -b my-feature-branch
 Once you finish your work, don´t forget to push your `feature` branch and create a PR against the `release` branch, and once it is merged, create another PR against `develop`.
 
 ![Release branches](../assets/img/release-branches.png)
-
-## Hotfix branches
-
-These branches are created if a hotfix is needed in prod. They are also personal branches and should be created from `master`, because it’s an immediate fix. Once the work is finished, the branch is pushed and a PR is created against `master`. As this fix should be also included in the next releases, we need to add it to `develop` (and to the `release` branch as well if we have one created).
-
-### How to create a hotfix branch?
-
-```
-git fetch origin
-git checkout origin/master
-git checkout -b my-new-hotfix-branch
-```
-
-Once you finish your work, don´t forget to push your `hotfix` branch and create a PR against `master`, and once it is merged, create another PR against `develop`.
-
-As it happens with `release` branches, sometimes merging back into `develop` can throw unexpected conflicts, in those cases, the best option could be an auxiliary branch and use the cherry-pick command in order to pick the desired commits, and then create a PR to `develop` from that auxiliary branch.
-
-![Hotfix branches](../assets/img/hotfix-branches.png)
