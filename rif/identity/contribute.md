@@ -8,9 +8,17 @@ Strongly based on the [branching model](https://nvie.com/posts/a-successful-git-
 
 It is a strict branching model that refers to two main branches: `master` (or _main_) and `develop` (or _dev_).
 
+**Quick summary**
+
+- `master` (or `main`) has latest release - deployment or package distribution
+- `develop` has latest approved feature - feature was reviewed and approved, but not yet released as final (they may have been released as `beta` versions)
+- Pull requests should point to `develop` by default - other cases are explained bellow
+
+Thanks for collaborating and contributing!
+
 ## Main branches 
 
-All the code that is in `master` is code that is productive code: it means it is deployed or pubished as an NPM package. In our case, sometimes the release gets delayed due to some external dependencies, so we can assume that if the code is in `master`, it is ready to be delivered.
+All the code that is in `master` (or `main`) is code that is productive code: it means it is deployed or published as an NPM package. In our case, sometimes the release gets delayed due to some external dependencies, so we can assume that if the code is in `master`, it is ready to be delivered.
 The code present in `develop` is part of the current work and, in most of the cases, is the immediate release, so it may be deployed or published as a _beta_ version. Neither `master` nor `develop` are personal branches, they are public branches and the code present there should compile and be ready to use/test. These branches are protected and are updated only through PRs.
 
 `master` is updated through PRs from `develop` (normal case), `hotfix` branches or `release` branches. That PR should be merged using the _“Create a merge commit”_ option. We want to also identify the new versions with merge commits. After the PR is merged and everything deployed, a release tag is created.
