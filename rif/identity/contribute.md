@@ -23,9 +23,10 @@ The code present in `develop` is part of the current work and, in most of the ca
 
 `master` is updated through PRs from `develop` (normal case), `hotfix` branches or `release` branches. That PR should be merged using the _“Create a merge commit”_ option. We want to also identify the new versions with merge commits. After the PR is merged and everything deployed, a release tag is created.
 
-IMPORTANT
-Every pull request to `develop` should be merged through a REBASE or a SQUASH commit.
-Every pull request to `master` should be merged through a MERGE commit.
+**Important**
+
+Every pull request to `develop` should be merged through a **rebase** or a **squash** commit.
+Every pull request to `master` should be merged through a **merge** commit.
 
 ![Main branches](../assets/img/main-branches.png)
 
@@ -57,7 +58,8 @@ Once the `release` branch is ready, a PR is created to merge that code into `mas
 
 Depending on the case, the PR to merge back into `develop` could be simple or not, sometimes it can throw unexpected conflicts, in those cases, the best option could be an auxiliary branch and use the cherry-pick command in order to pick the desired commits, and then create a PR to `develop` from that auxiliary branch.
 
-IMPORTANT
+**Important**
+
 Every pull request to a `release` branch should be merged through _“Rebase and merge”_ or _“Squash and merge”_ options.
 
 ### How to create a release branch?
