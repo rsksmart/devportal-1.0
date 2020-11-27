@@ -16,7 +16,7 @@ A Centralized Data Vault provider compatible with RIF Data Vault standard interf
 
 ### Usage
 
-The IPFS Centralized pinner provider was designed to use in [Centralized pinner service](#./cpinner-provider) but can be used as standalone
+The IPFS Centralized pinner provider was designed to use in [Centralized pinner service](/rif/identity/data-vault/cpinner/cpinner-service) but can be used as standalone
 
 #### Basic instance
 

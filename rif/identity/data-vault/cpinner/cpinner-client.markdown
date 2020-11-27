@@ -62,7 +62,7 @@ const credentials = await client.get({ did, key })
 It returns an array of string with all the `keys` associated to the logged in `did`.
 If there are not `keys`, it returns an empty array.
 
-If the client is not logged in yet, it will log it in prior to get the `keys`, so it may prompt the user to sign the login message. Please refer to the [DID Auth protocol](../../ssi/specs/did-auth) for more information.
+If the client is not logged in yet, it will log it in prior to get the `keys`, so it may prompt the user to sign the login message. Please refer to the [DID Auth protocol](/rif/identity/ssi/specs/did-auth) for more information.
 
 ```typescript
 import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'
@@ -80,7 +80,7 @@ Receives an object containing the `key` and the `content`
 If the `key` already exists, it will add `content` associated to that `key`. Old `content` will still be there.
 If not, a new `key` will be created and associated to the logged in `did`.
 
-If the client is not logged in yet, it will log it in prior to saving the new `content`, so it may prompt the user to sign the login message. Please refer to the [DID Auth protocol](../../ssi/specs/did-auth) for more information.
+If the client is not logged in yet, it will log it in prior to saving the new `content`, so it may prompt the user to sign the login message. Please refer to the [DID Auth protocol](/rif/identity/ssi/specs/did-auth) for more information.
 
 
 ```typescript

@@ -9,10 +9,10 @@ A Centralized Data Vault service compatible with RIF Data Vault standard interfa
 It is a centralized pinner because it provides a centralized service that maps the necessary metadata (ie: user did and key) associated to the IPFS cids so it can be accessed seamlessly.
 
 Main features:
-- API for storing, updating and deleting, accessible only proving DID control - uses [DID Auth](../../ssi/specs/did-auth)
+- API for storing, updating and deleting, accessible only proving DID control - uses [DID Auth](/rif/identity/ssi/specs/did-auth)
 - Open API for retrieving data - **It is strongly recommended to encrypt the content saved in IPFS using this package.**
 
-It is an API designed using [IPFS Centralized Pinner Provider](./cpinner-provider)
+It is an API designed using [IPFS Centralized Pinner Provider](/rif/identity/data-vault/cpinner/cpinner-provider)
 
 It has three layers:
 - HTTP layer: exposes a simple HTTP REST API to interact with from any web client.
@@ -25,11 +25,11 @@ The IPFS Centralized pinner service is designed to let users store content for f
 
 Content is stored in `did -> key -> content[]` dictionary. Content with a same `key` can be accessed all together.
 
-This service implements the [DID Auth protocol](../../ssi/specs/did-auth) to protect the API.
+This service implements the [DID Auth protocol](/rif/identity/ssi/specs/did-auth) to protect the API.
 
 #### API
 
-The API is divided in two. Content modifications need [authenticated requests using DID Auth](../../ssi/specs/did-auth) and is strongly recommend to encrypt the content uploaded. This enables the accessing API to be open to anybody.
+The API is divided in two. Content modifications need [authenticated requests using DID Auth](/rif/identity/ssi/specs/did-auth) and is strongly recommend to encrypt the content uploaded. This enables the accessing API to be open to anybody.
 
 ##### GET /content/:did/:key
 
