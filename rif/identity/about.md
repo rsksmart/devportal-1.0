@@ -1,7 +1,5 @@
 ---
-layout: page
-title: About
-permalink: /about/
+layout: rsk
 ---
 
 - IOV Labs site: [iovlabs.org](https://iovlabs.org/)
