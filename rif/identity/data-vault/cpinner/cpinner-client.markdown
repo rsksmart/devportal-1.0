@@ -45,7 +45,7 @@ const client = new DataVaultWebClient({ serviceUrl, did, signer, serviceDid, sto
 
 #### Get
 
-It returns all the `content` associated to a given `key` and `did` in a form of `string[]`
+It returns all the `content` (with its `id`) associated to a given `key` and `did` in a form of `{ id: string, content: string }[]`
 
 ```typescript
 import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'

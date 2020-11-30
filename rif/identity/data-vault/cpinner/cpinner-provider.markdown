@@ -86,9 +86,9 @@ const did = 'did:ethr:rsk:12345678'
 const key = 'the key'
 const content = 'the content'
 
-const cid: string = await ipfsPinnerProvider.put(did, key, content)
+const cid: string = await ipfsPinnerProvider.create(did, key, content)
 
-const cids: string[] = await ipfsPinnerProvider.get(did, key)
+const content: { id: string, content: string }[] = await ipfsPinnerProvider.get(did, key)
 
 const keys: string[] = await ipfsPinnerProvider.getKeys(did)
 

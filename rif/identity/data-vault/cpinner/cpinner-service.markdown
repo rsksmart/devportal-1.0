@@ -33,9 +33,9 @@ The API is divided in two. Content modifications need [authenticated requests us
 
 ##### GET /content/:did/:key
 
-Get all the `content` associated to the given `did` and `key`
+Get all the `content` (with its `id`) associated to the given `did` and `key`
 
-Returns: an HTTP 200 with an array of strings representing the associated content. Will be empty if no content found.
+Returns: an HTTP 200 with an array of objects containing `{ id: string, content: string }` representing the associated content. Will be empty if no content found.
 
 ##### GET /keys/:did
 
