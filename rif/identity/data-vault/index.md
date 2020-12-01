@@ -1,5 +1,6 @@
 ---
-layout: rsk
+title: RIF Identity - Data Vault
+layout: rif-identity
 ---
 
 ## Data vault

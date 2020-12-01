@@ -1,5 +1,5 @@
 ---
-layout: rsk
+layout: rif-identity
 title: About
 permalink: /about/
 ---

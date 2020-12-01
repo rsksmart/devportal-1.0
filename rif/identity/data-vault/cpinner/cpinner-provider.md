@@ -1,5 +1,6 @@
 ---
-layout: rsk
+title: Data vault - Centralized pinner provider
+layout: rif-identity
 ---
 
 ## Data vault - Centralized pinner provider

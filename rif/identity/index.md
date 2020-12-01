@@ -1,17 +1,53 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: rsk
+title: RIF Identity
+layout: rif-identity
 ---
 
-# RIF Identity
-
-RIF Identity is the identity and reputation layer within the RIF ecosystem.
+**RIF Identity** is the identity and reputation layer within the RIF ecosystem.
 
 It is meant to allow users to easily control their digital identities to interact in decentralized economies while building a self-sovereign identity and reputation. This will enable people, especially those excluded from the traditional financial system, to participate in the decentralized digital economy of the future.
 
-The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value. 
+The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value.
+
+<div class="container the-stack">
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="ssi/mvp">Try</a>
+        <br />
+        <br />
+        <p>Use the self-sovereign identity MVP</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="ssi/specs">Learn</a>
+        <br />
+        <br />
+        <p>Read the specifications</p>
+      </div>
+    </div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="architecture">Develop</a>
+        <br />
+        <br />
+        <p>Build on top of RIF Identity architecture</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="manager">Manage</a>
+        <br />
+        <br />
+        <p>Let your users manage their identity</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Table of contents
 
 - [Self-sovereign identity](./ssi)

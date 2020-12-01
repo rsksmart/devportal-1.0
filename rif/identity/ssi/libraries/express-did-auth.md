@@ -1,5 +1,5 @@
 ---
-layout: rsk
+layout: rif-identity
 ---
 
 ## Express DID Auth - a challenge-response authentication model based in DIDs

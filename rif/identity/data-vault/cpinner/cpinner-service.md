@@ -1,5 +1,6 @@
 ---
-layout: rsk
+title: Data vault - Centralized pinner provider service
+layout: rif-identity
 ---
 
 ## Data vault - Centralized IPFS pinner service
