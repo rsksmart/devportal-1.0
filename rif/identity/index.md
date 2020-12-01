@@ -14,34 +14,47 @@ It is meant to allow users to easily control their digital identities to interac
 The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value. 
 ## Table of contents
 
-- [Self-sovereign identity](./ssi)
-    - [Specs](./ssi/specs)
-    - Architecture <!--[Architecture](./ssi/architecture) -->
-    - [Libraries](./ssi/libraries)
-        - Mnemonic module <!--[Mnemonic module](./ssi/libraries/mnemonics) --> - identity derivation tools using mnemonic phrases
-        - RSK Ethr DID <!--[RSK Ethr DID](./ssi/libraries/ethr-did) --> - handle Ethr DID method procedures in RSK network
-        - uPort DAF bindings<!--[uPort DAF bindings](./ssi/libraries/daf) --> - use uPort agent with [RIF identity multi identity model](./ssi/specs/#multi-identity-model)
-        - RIF Identity Core <!--[RIF Identity Core](./ssi/libraries/core) --> - implementation of [RIF Identity protocols](./ssi/specs/#protocols) using DAF agent
-        - [Express DID Auth](./ssi/libraries/express-did-auth) - handle user authentication using W3C credentials
-        - Node Utils <!--[Node Utils](./ssi/libraries/node-utils) --> - a suite of handy utils to use in Node.js services
-    - [Services](./ssi/services)
-        - [Convey service](./ssi/services/convey-service) - public transport layer for JWTs using IPFS
-        - Issuer service <!-- [Issuer service](./ssi/services/issuer-service) --> - serves for an application that allows receiving credential issuance requests and approving them manually
-    - [Applications](./ssi/applications)
-        - [Issuer app](./ssi/applications/issuer-app) - application that serves as the credential request manager. It allows to grant-deny requests or revoke existing credentials
-        - [Holder app](./ssi/applications/holder-app) - wallet used to store declarative details and credentials of it’s users
-        - Verifier app <!-- [Verifier app](./ssi/applications/verifier-app) --> - QR scanner app that verifies Verifiable Presentations
-    - FAQ <!-- [FAQ](ssi/faq) -->
-- [Data Vault](./data-vault)
-    - [Centralized Data Vault provider](./data-vault/cpinner/cpinner-provider) - an IPFS Data Vault provider
-    - [Data Vault service](./data-vault/cpinner/cpinner-service) - a Data vault first approach. This service uses an IPFS node to pin files
-    - [Web Client SDK](./data-vault/cpinner/cpinner-client) - a lightweight web client for the Data Vault service
-- rLogin - a web tool that combines Web3 and W3C standard protocols to manage user's identity
-- RIF Identity manager - a platform where users can manage their personal information and other components that make up their identity
+- The MVP
+  - Run locally
+  - Design & architecture
+  - Learnings
+  - Acknowledgements
+- RIF Identity Manager
+  - User guide
+  - Design & architecture
+  - Develop
+- rLogin
+  - Integrate
+  - Design & architecture
+    - rLogin modal (client side)
+    - DID Auth (server side)
+    - Verifiable Credential schemas (communication)
+  - Develop
+- Data Vault
+  - Use
+  - Design & architecture
+    - Provider module
+    - HTTPS service
+    - Web client SDK
+  - Develop
+- Libraries
+  - Mnemonics - secure mnemonics and accounts
+  - Ethr DID - RSK + Ethr DID seamless
+  - DAF bindings - RIF Identity layout with uPort `daf`
+  - VC Core module - Verifiable Credentials in React.js + Redux
+  - RSK DIDs - uPort `ethr-did` module + RSK support
+  - Node utils - utilities for Node.js backend
+  - Ethr DID Utils - testing utilities for Ethr DID Registry
+- Specs
+  - Identity layout - create and recover identities
+  - Encryption layout - Storing and recovering encrypted information
+  - DID authentication - a challenge–response authentication model based on DIDs
+  - Credential requests protocol - a simple protocol for request, grant and receive credential case
+  - The Convey service - transport content that does not fit into a QR code
+  - Presentations timestamps - emitting and validating presentations with timestamps
 
 ## Repos
 
-- [Documentation](https://github.com/rsksmart/rif-identity-docs)
 - [SSI Javascript monorepo](https://github.com/rsksmart/rif-identity.js)
 - [Node.js Services](https://github.com/rsksmart/rif-identity-services)
 - [React.js and React Native apps](https://github.com/rsksmart/rif-identity-ui)
