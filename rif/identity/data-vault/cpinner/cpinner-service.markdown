@@ -29,7 +29,7 @@ This service implements the [DID Auth protocol](/rif/identity/ssi/specs/did-auth
 
 #### API
 
-The API is divided in two. Content modifications need [authenticated requests using DID Auth](/rif/identity/ssi/specs/did-auth) and is strongly recommend to encrypt the content uploaded. This enables the accessing API to be open to anybody.
+The API is divided in two. Content modifications need [authenticated requests using DID Auth](/rif/identity/ssi/specs/did-auth). It is strongly recommended that the content is encrypted when uploaded. This enables the accessing API to be open to anybody.
 
 ##### GET /content/:did/:key
 
@@ -76,4 +76,4 @@ Returns: an HTTP 200 with no `content`.
 
 ### Run for development
 
-See our repo in [Github](https://github.com/rsksmart/rif-data-vault/tree/master/modules/ipfs-cpinner-service).
+Check out [`ipfs-cpinner-client` in the `rif-data-vault` repo](https://github.com/rsksmart/rif-data-vault/tree/master/modules/ipfs-cpinner-client).

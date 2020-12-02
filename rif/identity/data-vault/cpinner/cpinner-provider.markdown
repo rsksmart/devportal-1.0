@@ -103,4 +103,4 @@ const deleted: boolean = await ipfsPinnerProvider.delete(did, key, cid) // cid c
 
 ### Run for development
 
-See our repo in [Github](https://github.com/rsksmart/rif-data-vault/tree/master/modules/ipfs-cpinner-service).
+Check out [`ipfs-cpinner-client` in the `rif-data-vault` repo](https://github.com/rsksmart/rif-data-vault/tree/master/modules/ipfs-cpinner-client).

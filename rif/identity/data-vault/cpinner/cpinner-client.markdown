@@ -11,7 +11,6 @@ A Web Client to simplify the way the services provided by the IPFS Centralized D
 - Manage authentication according to the [DID Auth protocol](https://rsksmart.github.io/rif-identity-docs/ssi/libraries/express-did-auth)
 
 - CRUD operations over the RIF Data Vault
-
 - Stores the authentication credentials in the given storage 
 
 ### Usage
@@ -22,11 +21,11 @@ The package expose a `DataVaultWebClient` class that receives a `Config` object 
 
 The `Config` object has the following fields:
 
-`serviceUrl: string`: the IPFS Centralized Data Vault Service url
-`serviceDid?: string`: the IPFS Centralized Data Vault Service url did. It is required if the package will be used to perform authenticated requests (Create, Swap or Delete). This field will be used to compare with the issuer of the access token.
-`did?: string`: the client did. It is required if performing authenticated requests
-`rpcPersonalSign?: (data: string) => string`: the rpcPersonalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: `(data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })`
-`storage?: ClientKeyValueStorage`: object that MUST implement the `ClientKeyValueStorage` interface. It is used to save the `accessToken` and `refreshToken`. It uses [window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) if not storage object provided.
+- `serviceUrl: string`: the IPFS Centralized Data Vault Service url
+- `serviceDid?: string`: the IPFS Centralized Data Vault Service url did. It is required if the package will be used to perform authenticated requests (Create, Swap or Delete). This field will be used to compare with the issuer of the access token.
+- `did?: string`: the client did. It is required if performing authenticated requests
+- `rpcPersonalSign?: (data: string) => string`: the rpcPersonalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: `(data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })`
+- `storage?: ClientKeyValueStorage`: object that MUST implement the `ClientKeyValueStorage` interface. It is used to save the `accessToken` and `refreshToken`. It uses [window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) if not storage object provided.
 
 ```typescript
 import DataVaultWebClient, { ClientKeyValueStorage } from '@rsksmart/ipfs-cpinner-client'
@@ -181,4 +180,4 @@ await client.delete({ key, id })
 
 ### Run for development
 
-See our repo in [Github](https://github.com/rsksmart/rif-data-vault/tree/master/modules/ipfs-cpinner-client).
+Check out [`ipfs-cpinner-client` in the `rif-data-vault` repo](https://github.com/rsksmart/rif-data-vault/tree/master/modules/ipfs-cpinner-client).
