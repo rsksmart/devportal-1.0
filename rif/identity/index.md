@@ -39,14 +39,14 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
     - [HTTPS service](data-vault/cpinner/cpinner-service)
     - [Web client SDK](data-vault/cpinner/cpinner-client)
   - [Develop](data-vault/develop)
-- Libraries
-  - Mnemonics - secure mnemonics and accounts
-  - Ethr DID - RSK + Ethr DID seamless
-  - DAF bindings - RIF Identity layout with uPort `daf`
-  - VC Core module - Verifiable Credentials in React.js + Redux
-  - RSK DIDs - uPort `ethr-did` module + RSK support
-  - Node utils - utilities for Node.js backend
-  - Ethr DID Utils - testing utilities for Ethr DID Registry
+- [Libraries](libraries)
+  - [Mnemonics](libraries/mnemonics) - identity derivation tools using mnemonic phrases
+  - [RSK DIDs](libraries/rsk-ethr-did) - handle Ethr DID method procedures in RSK network
+  - [Ethr DID](libraries/ethr-did) - uPort `ethr-did` with RSK support
+  - [Ethr DID Utils](libraries/ethr-did-utils) - testing utilities for Ethr DID Registry
+  - [DAF bindings](libraries/daf) - use uPort agent with RIF identity multi identity model
+  - [VC Core module](libraries/core) - Verifiable Credentials in React.js + Redux
+  - [Node utils](libraries/node-utils) - utilities for Node.js backend
 - Specs
   - Identity layout - create and recover identities
   - Encryption layout - Storing and recovering encrypted information
