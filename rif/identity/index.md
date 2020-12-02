@@ -13,6 +13,63 @@ It is meant to allow users to easily control their digital identities to interac
 
 The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value.
 
+<div class="container the-stack">
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="mvp">Try</a>
+        <br />
+        <br />
+        <p>Use the self-sovereign identity MVP</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="specs">Learn</a>
+        <br />
+        <br />
+        <p>Read the specifications</p>
+      </div>
+    </div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="libraries">Develop</a>
+        <br />
+        <br />
+        <p>Use RIF Identity libraries</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="manager">Manage</a>
+        <br />
+        <br />
+        <p>Let your users manage their identity</p>
+      </div>
+    </div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="rlogin">rLogin</a>
+        <br />
+        <br />
+        <p>Web3 based authentication</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="data-vault">Data Vault</a>
+        <br />
+        <br />
+        <p>User-centric cloud storage</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 ## Table of contents
 
 - [The MVP](mvp)
