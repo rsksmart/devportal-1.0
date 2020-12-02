@@ -6,11 +6,11 @@ layout: rsk
 
 ### Create and recover identities
 
-As described [here](../../specs/#multi-identity-model) RIF Identity proposes a standard model to enable users store one single secret and obtain multiple public and not associated identities.
+As described [here](../#multi-identity-model) RIF Identity proposes a standard model to enable users store one single secret and obtain multiple public and not associated identities.
 
 Technically, a user is going to save a seed that the wallets will use to create different private keys in a deterministic way. If all the wallets follow the same algorithm to create accounts, any wallet could correctly recover which accounts have been used before.
 
-> Please make use of [this section](../../../definitions) for core concept definitions
+> Please make use of [this section](../../definitions) for core concept definitions
 
 So, any user can hold a mnemonic phrase to access their RIF Identity account, and from that account obtain different public Personas.
 
@@ -74,9 +74,9 @@ The exact way to detect if an account was used or not is not yet designed. As a 
 
 ## Data flow diagrams
 
-![wallet setup](../../../assets/img/ssi/06_wallet_setup.png)
+![wallet setup]../assets/img/06_wallet_setup.png)
 
-![persona detection](../../../assets/img/ssi/07_persona_detection.png)
+![persona detection](../assets/img/07_persona_detection.png)
 
 ## Implementations
 

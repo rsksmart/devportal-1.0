@@ -16,11 +16,11 @@ The Issuer App is a React application that handles the back office tasks of issu
 
 #### Login Screen
 
-![Login Screen](../../../assets/img/ssi/applications/issuer-app/sign-in.jpg)
+![Login Screen](../../assets/img/applications/issuer-app/sign-in.jpg)
 
 #### Credential List
 
-![Credential List](../../../assets/img/ssi/applications/issuer-app/credential-list.jpg)
+![Credential List](../../assets/img/applications/issuer-app/credential-list.jpg)
 
 ### Extend
 

@@ -135,7 +135,7 @@ My credentials are: {response.credentials.join(',')}
 
 See [authenticating requests](#authenticating-requests) to understand how to user _access_ and _refresh_ tokens.
 
-![did auth](../../../assets/img/ssi/10_did_auth_sign_up.png)
+![did auth](../assets/img/10_did_auth_sign_up.png)
 
 The selective disclosure request is optional and it depends on the service needs.
 - Open apps need just a proof that the user is in control of the DID at the time of access. In that case the `challenge` is enough
@@ -221,7 +221,7 @@ See [authenticating requests](#authenticating-requests) to understand how to use
 
 > *The challenge may be non-deterministic, in that case, the service will have to store the challenges state. See [How to calculate a deterministic challenge](#how-to-calculate-a-deterministic-challenge)
 
-![did auth](../../../assets/img/ssi/08_did_auth_login.png)
+![did auth](../assets/img/08_did_auth_login.png)
 
 ### Authenticating requests
 
@@ -237,7 +237,7 @@ After the user is registered and has logged in (meaning the user is holding an _
 11. _Client_ authenticates next HTTP requests using the received _access token_.
 12. _Service_ authorizes the request.
 
-![did auth](../../../assets/img/ssi/11_did_auth_access.png)
+![did auth](../assets/ssi/11_did_auth_access.png)
 
 ### Logout
 
@@ -252,7 +252,7 @@ NOTE: The logout process does not invalidate the current _access token_, it will
 
 ## Implementations
 
-- [`@rsksmart/express-did-auth`](../../libraries/express-did-auth) - in progress
+- [`@rsksmart/express-did-auth`](../../rlogin/implementation/express-did-auth) - in progress
 
 ## Extensions
 

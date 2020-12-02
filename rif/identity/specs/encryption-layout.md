@@ -4,6 +4,10 @@ layout: rsk
 
 # Encryption layout
 
+_WIP_
+
+<!--
+
 ### Storing and recovering encrypted information
 
 This protocol allows each persona of a RIA to use secret-key cryptography to encrypt and decrypt information needing only the the mnemonic phrase.
@@ -56,3 +60,4 @@ async decrypt(encryptedMessageHex: string): Promise<string> {
 ## Implementations
 
 _WIP_
+-->

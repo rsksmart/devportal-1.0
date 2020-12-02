@@ -25,7 +25,7 @@ The schema that is used to share credentials and declarative details in the cred
 
 ## Sequence diagram
 
-![credential requests](../../../assets/img/ssi/09_credential_requests.png)
+![credential requests](../assets/img/09_credential_requests.png)
 
 ### Open work
 

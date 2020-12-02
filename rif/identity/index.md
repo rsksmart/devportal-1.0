@@ -25,7 +25,7 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [RIF Identity Manager](manager)
   - [User guide](manager/user-guide)
   - [Design & architecture](manager/architecture)
-  - [Develop](develop)
+  - [Develop](manager/develop)
 - [rLogin](rlogin)
   - [Integrate](rlogin/integrate)
   - [Design & architecture](rlogin/architecture)
@@ -37,9 +37,9 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [Data Vault](data-vault)
   - [Use](data-vault/use)
   - [Design & architecture](data-vault/architecture)
-    - [Provider module](data-vault/cpinner/cpinner-provider)
-    - [HTTPS service](data-vault/cpinner/cpinner-service)
-    - [Web client SDK](data-vault/cpinner/cpinner-client)
+    - [Web client SDK](data-vault/architecture/client)
+    - [HTTPS service](data-vault/architecture/service)
+    - [Provider module](data-vault/architecture/provider)
   - [Develop](data-vault/develop)
 - [Libraries](libraries)
   - [Mnemonics](libraries/mnemonics) - identity derivation tools using mnemonic phrases
@@ -64,30 +64,19 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 
 ## Repos
 
-- [SSI Javascript monorepo](https://github.com/rsksmart/rif-identity.js)
-- [Node.js Services](https://github.com/rsksmart/rif-identity-services)
-- [React.js and React Native apps](https://github.com/rsksmart/rif-identity-ui)
+MVP
+- [MVP Node.js Services](https://github.com/rsksmart/rif-identity-services)
+- [MVP React.js and React Native apps](https://github.com/rsksmart/rif-identity-ui)
+Identity Manager
+- [RIF Identity manager](https://github.com/rsksmart/rif-identity-manager)
+rLogin
+- [rLogin](https://github.com/rsksmart/rLogin)
+- [Express DID Auth](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/express-did-auth)
+- [VC JSON Schemas](https://github.com/rsksmart/vc-json-schemas)
+- [Wallet Connect POC](https://github.com/rsksmart/RSKWalletConnect)
+Data Vault
 - [Data vault Javascript monorepo](https://github.com/rsksmart/rif-data-vault)
+Libraries
+- [Javascript libraries monorepo](https://github.com/rsksmart/rif-identity.js)
 - [Ethr DID + RSK support](https://github.com/rsksmart/ethr-did)
 - [Ethr DID dev utils](https://github.com/rsksmart/ethr-did-utils)
-- [rLogin](https://github.com/rsksmart/rLogin)
-- [RIF Identity manager](https://github.com/rsksmart/rif-identity-manager)
-- [Wallet Connect POC](https://github.com/rsksmart/RSKWalletConnect)
-
-See how to [contribute](/rif/identity/contribute) in Github!
-
-<!--
-
-MISSING DOCS:
-Architecture
-Issuer service
-Verifier app
-Import READMEs:
-- [Mnemonic module](./ssi/libraries/mnemonics)
-- [RSK Ethr DID](./ssi/libraries/ethr-did)
-- [uPort DAF bindings](./ssi/libraries/daf)
-- [RIF Identity Core](./ssi/libraries/core)
-- [Express DID Auth](./ssi/libraries/express-did-auth)
-- [Node Utils](./ssi/libraries/node-utils)
-
--->
