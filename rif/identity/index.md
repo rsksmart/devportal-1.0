@@ -20,10 +20,10 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [Design & architecture](mvp/architecture)
   - [Learnings](mvp/learnings)
   - [Acknowledgements](mvp/acknowledgements)
-- RIF Identity Manager
-  - User guide
-  - Design & architecture
-  - Develop
+- [RIF Identity Manager](manager)
+  - [User guide](manager/user-guide)
+  - [Design & architecture](manager/architecture)
+  - [Develop](manager/develop)
 - rLogin
   - Integrate
   - Design & architecture
