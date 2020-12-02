@@ -75,7 +75,7 @@ Requiring information to the user is OPTIONAL, it depends on the service needs. 
 
 1. _Client_ sends `POST /request-signup { did }` to _Service_, where `did` is _User_'s DID
 2. _Service_ creates a random deterministic* _challenge_. Responds with `{ challenge, sdr? }` were `sdr?` is the OPTIONAL [selective disclosure request](#request) defined by the _Service_. The `sdr` MUST be sent in a signed JWT format.
-3. If `sdr`, _Client_ obtains the information required from the user's desired service or platform (for example, from the [RIF Data Vault](../../../data-vault)), and builds a [selective disclosure](#response) (response)
+3. If `sdr`, _Client_ obtains the information required from the user's desired service or platform (for example, from the [RIF Data Vault](../../data-vault)), and builds a [selective disclosure](#response) (response)
 4. _Client_ pormpts user to sign a message with the following format using `personal_sign` as per EIP-191{% include rif-id-ref.html id="16" %} and EIP-155{% include rif-id-ref.html id="15" %}:
   ```
 Login to <web domain>
@@ -237,7 +237,7 @@ After the user is registered and has logged in (meaning the user is holding an _
 11. _Client_ authenticates next HTTP requests using the received _access token_.
 12. _Service_ authorizes the request.
 
-![did auth](../assets/ssi/11_did_auth_access.png)
+![did auth](../assets/img/11_did_auth_access.png)
 
 ### Logout
 

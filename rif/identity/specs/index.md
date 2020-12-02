@@ -62,7 +62,7 @@ If credentials are cryptographically signed, the holder of the credential does n
 
 For example, this model enables a transport office to issue a credential for an approved driver (Alice), that is able to use that credential in a transport control. The officer who verifies the credential does not need access to any centralized database to attest the driving license was issued to the person presenting it.
 
-![multi_identity_model](assets/img/04_vc_model_application.png)
+![multi_identity_model](assets/img/03_vc_model_application.png)
 
 In general, the model is represented by three different entities:
 

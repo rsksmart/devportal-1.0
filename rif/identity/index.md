@@ -31,7 +31,7 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [Design & architecture](rlogin/architecture)
   - [Implementation](rlogin/implementation)
     - [rLogin modal (client side)](rlogin/implementation/modal)
-    - [DID Auth (server side)](rlogin/implementation/did-auth)
+    - [DID Auth (server side)](rlogin/implementation/express-did-auth)
     - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
   - [Develop](rlogin/develop)
 - [Data Vault](data-vault)
