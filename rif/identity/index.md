@@ -11,14 +11,15 @@ RIF Identity is the identity and reputation layer within the RIF ecosystem.
 
 It is meant to allow users to easily control their digital identities to interact in decentralized economies while building a self-sovereign identity and reputation. This will enable people, especially those excluded from the traditional financial system, to participate in the decentralized digital economy of the future.
 
-The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value. 
+The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value.
+
 ## Table of contents
 
-- The MVP
-  - Run locally
-  - Design & architecture
-  - Learnings
-  - Acknowledgements
+- [The MVP](mvp)
+  - [Run locally](mvp/run)
+  - [Design & architecture](mvp/architecture)
+  - [Learnings](mvp/learnings)
+  - [Acknowledgements](mvp/acknowledgements)
 - RIF Identity Manager
   - User guide
   - Design & architecture
@@ -52,6 +53,10 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - Credential requests protocol - a simple protocol for request, grant and receive credential case
   - The Convey service - transport content that does not fit into a QR code
   - Presentations timestamps - emitting and validating presentations with timestamps
+- About
+- Collaboration guidelines
+- Definitions
+- References
 
 ## Repos
 
