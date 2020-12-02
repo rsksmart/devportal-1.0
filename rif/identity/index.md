@@ -18,6 +18,8 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [The MVP](mvp)
   - [Run locally](mvp/run)
   - [Design & architecture](mvp/architecture)
+  - [Applications](mvp/applications)
+  - [Services](mvp/services)
   - [Learnings](mvp/learnings)
   - [Acknowledgements](mvp/acknowledgements)
 - [RIF Identity Manager](manager)
