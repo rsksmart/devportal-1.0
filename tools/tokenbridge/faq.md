@@ -49,7 +49,7 @@ There is no limit on the total. Hypothetically, the entire circulating supply ca
 However, there are daily quotas:
 
 - Daily limit: 1,000,000 tokens
-- Maximum per tx: 10,000 tokens
+- Maximum per tx: 100,000 tokens
 - Minimum per tx: 1 token
 
 ## Can any token be bridged over?
