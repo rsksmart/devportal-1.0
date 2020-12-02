@@ -22,6 +22,8 @@ layout: rsk
 14. <span id="ref-14"></span> [HTTP Authentication Scheme Registry](https://www.iana.org/assignments/http-authschemes/http-authschemes.xhtml)
 15. <span id="ref-15"></span> [EIP-155 - Simple replay attack protection](https://eips.ethereum.org/EIPS/eip-155)
 16. <span id="ref-16"></span> [EIP-191 - Signed Data Standard](https://eips.ethereum.org/EIPS/eip-191)
+17. <span id="ref-17"></span> [A successful Git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
+18. <span id="ref-18"></span> [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
 <script type="text/javascript">
   if (window.location.hash) {

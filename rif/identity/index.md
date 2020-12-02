@@ -52,6 +52,7 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [RIF Identity manager](https://github.com/rsksmart/rif-identity-manager)
 - [Wallet Connect POC](https://github.com/rsksmart/RSKWalletConnect)
 
+See how to [contribute](/rif/identity/contribute) in Github!
 
 <!--
 
