@@ -54,10 +54,11 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [Credential requests protocol](specs/credential-requests) - a simple protocol for request, grant and receive credential case
   - [The Convey service](specs/convey-service) - transport content that does not fit into a QR code
   - [Presentations timestamps](specs/presentation-timestamps) - emitting and validating presentations with timestamps
-- About
-- Collaboration guidelines
-- Definitions
-- References
+- [About](about)
+- [Collaboration guidelines](contribute)
+- [Definitions](definitions)
+- [References](references)
+- [FAQ](faq)
 
 ## Repos
 
