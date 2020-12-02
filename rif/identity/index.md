@@ -32,10 +32,10 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
         - [Holder app](./ssi/applications/holder-app) - wallet used to store declarative details and credentials of it’s users
         - Verifier app <!-- [Verifier app](./ssi/applications/verifier-app) --> - QR scanner app that verifies Verifiable Presentations
     - FAQ <!-- [FAQ](ssi/faq) -->
-- Data Vault <!-- [Data Vault](./data-vault) -->
-    - Centralized Data Vault provider - an IPFS Data Vault provider
-    - Data Vault service - a Data vault first approach. This service uses an IPFS node to pin files
-    - Web Client SDK - a lightweight web client for the Data Vault service
+- [Data Vault](./data-vault)
+    - [Centralized Data Vault provider](./data-vault/cpinner/cpinner-provider) - an IPFS Data Vault provider
+    - [Data Vault service](./data-vault/cpinner/cpinner-service) - a Data vault first approach. This service uses an IPFS node to pin files
+    - [Web Client SDK](./data-vault/cpinner/cpinner-client) - a lightweight web client for the Data Vault service
 - rLogin - a web tool that combines Web3 and W3C standard protocols to manage user's identity
 - RIF Identity manager - a platform where users can manage their personal information and other components that make up their identity
 
