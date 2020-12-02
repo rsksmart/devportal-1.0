@@ -6,6 +6,15 @@ layout: rsk
 
 RIF Self-sovereign Identity works under a set of JWT-based and blockchain-based protocols building a user centric verifiable credential model.
 
+## Protocols
+
+- [Identity layout](./identity-layout) - create and recover identities
+- [Encryption layout](./encryption-layout) - Storing and recovering encrypted information
+- [DID authentication](./did-auth) - a challenge–response authentication model based on DIDs
+- [Credential requests protocol](./credential-requests) - a simple protocol for request, grant and receive credential case
+- [The Convey service](./convey-service) - transport content that does not fit into a QR code
+- [Presentations timestamps](./presentation-timestamps) - emitting and validating presentations with timestamps
+
 ### What is a JWT?
 
 JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be transferred between two parties. {% include rif-id-ref.html id="1" %} These claims can be secured with digital signatures or Message Authentication Codes, and/or encrypted with different algorithms. The following is an example of a JWT Claims Set:
@@ -69,12 +78,3 @@ This three entities can perform 4 different basic actions:
 - Verify presentations
 
 > RIF Identity expresses support for _Verifiable Credentials Data Model 1.0_
-
-## Protocols
-
-- [Identity layout](./identity-layout) - create and recover identities
-- [Encryption layout](./encryption-layout) - Storing and recovering encrypted information
-- [DID authentication](./did-auth) - a challenge–response authentication model based on DIDs
-- [Credential requests protocol](./credential-requests) - a simple protocol for request, grant and receive credential case
-- [The Convey service](./convey-service) - transport content that does not fit into a QR code
-- [Presentations timestamps](./presentation-timestamps) - emitting and validating presentations with timestamps

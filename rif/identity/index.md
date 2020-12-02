@@ -47,13 +47,13 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [DAF bindings](libraries/daf) - use uPort agent with RIF identity multi identity model
   - [VC Core module](libraries/core) - Verifiable Credentials in React.js + Redux
   - [Node utils](libraries/node-utils) - utilities for Node.js backend
-- Specs
-  - Identity layout - create and recover identities
-  - Encryption layout - Storing and recovering encrypted information
-  - DID authentication - a challenge–response authentication model based on DIDs
-  - Credential requests protocol - a simple protocol for request, grant and receive credential case
-  - The Convey service - transport content that does not fit into a QR code
-  - Presentations timestamps - emitting and validating presentations with timestamps
+- [Specs](specs)
+  - [Identity layout](specs/identity-layout) - create and recover identities
+  - [Encryption layout](specs/encryption-layout) - Storing and recovering encrypted information
+  - [DID authentication](specs/did-auth) - a challenge–response authentication model based on DIDs
+  - [Credential requests protocol](specs/credential-requests) - a simple protocol for request, grant and receive credential case
+  - [The Convey service](specs/convey-service) - transport content that does not fit into a QR code
+  - [Presentations timestamps](specs/presentation-timestamps) - emitting and validating presentations with timestamps
 - About
 - Collaboration guidelines
 - Definitions
