@@ -32,13 +32,13 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
     - [DID Auth (server side)](rlogin/implementation/did-auth)
     - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
   - [Develop](rlogin/develop)
-- Data Vault
-  - Use
-  - Design & architecture
-    - Provider module
-    - HTTPS service
-    - Web client SDK
-  - Develop
+- [Data Vault](data-vault)
+  - [Use](data-vault/use)
+  - [Design & architecture](data-vault/architecture)
+    - [Provider module](data-vault/cpinner/cpinner-provider)
+    - [HTTPS service](data-vault/cpinner/cpinner-service)
+    - [Web client SDK](data-vault/cpinner/cpinner-client)
+  - [Develop](data-vault/develop)
 - Libraries
   - Mnemonics - secure mnemonics and accounts
   - Ethr DID - RSK + Ethr DID seamless
