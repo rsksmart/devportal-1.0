@@ -18,7 +18,7 @@ Requirements:
 
 ### 2. Configure and run the services
 
-Clone the repo from https://github.com/rsksmart/rif-identity-services
+Clone the repo from https://github.com/rsksmart/rif-identity-services and checkout `v0.1.0`
 
 First of all [set-up](https://github.com/rsksmart/rif-identity-services/tree/v0.1.0#setup) generals of all services
 
@@ -39,7 +39,9 @@ You will need to serve the services on public HTTPS server to enable access from
 
 First of all you will need to [set up React Native](https://reactnative.dev/docs/environment-setup) - this can be time-spending
 
-After this is done, clone the repo from https://github.com/rsksmart/rif-identity-ui and run the [general setup](https://github.com/rsksmart/rif-identity-ui#development). Please refer to each app's README to configure the service endpoints, the general README is outdated and already tagged.
+After this is done, clone the repo from https://github.com/rsksmart/rif-identity-ui and checkout `holder-v0.1.2`
+
+Run the [general setup](https://github.com/rsksmart/rif-identity-ui#development). Please refer to each app's README to configure the service endpoints, the general README is outdated and already tagged.
 
 ### 5. Run the apps
 

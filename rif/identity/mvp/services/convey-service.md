@@ -6,7 +6,7 @@ layout: rsk
 
 Large contents don't fit in QR codes so this service is designed to receive an encrypted file, store it in IPFS and also store the file in memory. It returns the cid of the stored file and a convey-uri that indicates that this kind of files should be gotten from a convey service implementation
 
-Read the [running guide](../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/convey) to run locally (please use tag `v0.1.0`)
+Read the [running guide](../../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/convey) to run locally (please use tag `v0.1.0`)
 
 Find the protocol specification [here](../../../specs/convey-service).
 

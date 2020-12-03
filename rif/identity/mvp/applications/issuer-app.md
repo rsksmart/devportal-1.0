@@ -6,7 +6,7 @@ layout: rsk
 
 The Government app is a React application that handles the back office tasks of issuing and rejecting credential requests. It is built to be connected to any Request Credential Service Server (that is API compatible with [RIF Identity issuer service](../../services)), and login happens with a username and password.
 
-Read the [running guide](../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/issuer-app) to run locally (please use tag `holder-v0.1.2`)
+Read the [running guide](../../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/issuer-app) to run locally (please use tag `holder-v0.1.2`)
 
 ### Specifications
 

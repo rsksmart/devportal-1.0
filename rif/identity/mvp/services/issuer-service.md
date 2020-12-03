@@ -6,7 +6,7 @@ layout: rsk
 
 Serves for the [Government application](../../applications/issuer-app) that allows receiving credential issuance requests and approving them manually.
 
-Read the [running guide](../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/issuer) to run locally (please use tag `v0.1.0`)
+Read the [running guide](../../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/issuer) to run locally (please use tag `v0.1.0`)
 
 ### Features
 

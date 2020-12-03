@@ -14,4 +14,4 @@ After the store process the holder can verify the file was uploaded accessing to
 
 > Alert: anyone in possession of a DID can used the server to upload files, now it has just file-size restrictions
 
-Read the [running guide](../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/data-vault) to run locally (please use tag `v0.1.0`)
+Read the [running guide](../../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/data-vault) to run locally (please use tag `v0.1.0`)
