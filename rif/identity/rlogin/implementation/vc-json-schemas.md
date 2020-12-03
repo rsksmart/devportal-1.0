@@ -2,4 +2,6 @@
 layout: rsk
 ---
 
-## rLogin - VC JSON Schemas
+## rLogin - Verifiable Credentials JSON Schemas
+
+*WIP*

@@ -2,5 +2,6 @@
 layout: rsk
 ---
 
-## RIF Identity Manager - user guide
+## RIF Identity Manager - User Guide
 
+*WIP*
