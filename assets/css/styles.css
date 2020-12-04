@@ -126,6 +126,13 @@ button:focus {
     vertical-align: .100em;
 }
 
+.dropdown-item.active{
+  background-color: transparent;
+  color:#212529;
+  font-weight: 700;
+}
+
+
 .noevent {
     pointer-events: none;
     cursor: default!important;
