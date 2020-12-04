@@ -39,11 +39,17 @@ Get all the `content` (with its `id`) associated to the given `did` and `key`
 
 Returns: an HTTP 200 with an array of objects containing `{ id: string, content: string }` representing the associated content. Will be empty if no content found.
 
-##### GET /keys/:did
+##### GET /keys
 
 Get all the `keys` associated to the logged `did`
 
 Returns: an HTTP 200 with an array of strings representing the associated keys. Will be empty if no keys found.
+
+##### GET /storage
+
+Get storage availability information of the logged `did`
+
+Returns: an HTTP 200 with an object containing the storage availability information `{ used: number, available: number }`
 
 ##### POST /content/:key
 

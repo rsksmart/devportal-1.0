@@ -70,6 +70,19 @@ const client = new DataVaultWebClient({ serviceUrl, did, rpcPersonalSign, servic
 const keys = await client.getKeys()
 ```
 
+### Get storage information
+
+```typescript
+import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'
+
+const client = new DataVaultWebClient({ serviceUrl, did, rpcPersonalSign, serviceDid })
+
+const storage = await client.getStorageInformation()
+
+console.log(`Used: ${storage.used}`)
+console.log(`Available: ${storage.available}`)
+```
+
 #### Create
 
 It saves new `content` associated to the given `key` into the service and returns the associated `id`.
