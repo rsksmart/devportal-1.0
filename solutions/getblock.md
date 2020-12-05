@@ -32,7 +32,7 @@ The goal of Getblock is to provide users with access to full nodes from RSK, and
 
 GetBlock guarantees a fast and stable connection to the RSK nodes by providing a turnkey infrastructure solution, so that a developer can easily integrate the RSK technology to the project without worrying about troubleshooting, updates, and constant syncing.
 
-#### Features
+### Features
 
 Users of GetBlock will have a personal account with the following features included:
 
@@ -86,7 +86,7 @@ The example of receiving the number of the last block:
 {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
 ```
 
-##### How to make a JSON-RPC request over CURL
+#### How to make a JSON-RPC request over CURL
 
 ```bash
 curl -X POST 'rsk.getblock.io' \                         
@@ -100,12 +100,12 @@ curl -X POST 'rsk.getblock.io' \
 }'
 ```
 
-##### How to make a JSON-RPC request using Postman
+#### How to make a JSON-RPC request using Postman
 
 ![GetBlock - PostmanRequest](/assets/img/solutions/getblock/postman.png)
 
 
-### Get in touch
+## Get in touch
 
 
 If you have any technical issues write at [support@getblock.io](mailto:support@getblock.io), for general inquiries and partnership offers write at [marketing@getblock.io](mailto:marketing@getblock.io).
@@ -114,7 +114,7 @@ If you have any technical issues write at [support@getblock.io](mailto:support@g
 - [Blog](https://getblock.io/blog)
 - [Medium](http://medium.com/getblockio)
 
-#### Socials
+### Socials
 
 - [Twitter](http://twitter.com/getblockio)
 - [Facebook](http://facebook.com/getblockio)
