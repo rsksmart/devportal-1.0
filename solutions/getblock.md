@@ -11,7 +11,7 @@ layout: 'rsk'
 
 GetBlock is a provider of access to full nodes of the most popular cryptocurrencies:
 - Instant connection to blockchain nodes of 45+ cryptocurrencies including  RSK, Bitcoin (BTC), Ethereum (ETH), among others
-- Supports JSON-RPC, REST, and WebSockets APIs
+- Supports JSON-RPC, and REST
 - Free plan — up to 40K requests/day
 
 ## How GetBlock integrates with RSK
@@ -51,7 +51,7 @@ GetBlock is a complete solution for developers who don’t need to wait hours an
 
 ### Components
 
-GetBlock provides instant access to RSK nodes over HTTPS and WebSockets. It supports such APIs as REST, JSON-RPC, WebSockets, and IRI, which facilitates the whole process of building decentralized applications (dApps).
+GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs as REST, JSON-RPC, and IRI, which facilitates the whole process of building decentralized applications (dApps).
 
 ![GetBlock - ConnectionImage](/assets/img/solutions/getblock/components.png)
 
@@ -69,7 +69,7 @@ GetBlock provides instant access to RSK nodes over HTTPS and WebSockets. It supp
 
 ### Tutorials
 
-- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, WebSockets, etc.)](https://getblock.io/docs)
+- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, etc.)](https://getblock.io/docs)
 
 ### Guides
 
@@ -104,27 +104,6 @@ curl -X POST 'rsk.getblock.io' \
 
 ![GetBlock - PostmanRequest](/assets/img/solutions/getblock/postman.png)
 
-#### How to make a JSON-RPC request over WebSockets
-
-To send JSON-RPC over WebSockets, it is required to establish the connection:
-
-```bash
-wscat -c https://rsk.getblock.io -H "x-api-key:YOUR-API-KEY"
-```
-
-Then, send the request body:
-
-```json
-{"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
-```
-
-<!-- TODO @missowans run these commands, and copy the the contents of you terminal into the code block below --->
-
-```bash
-
-
-
-``` 
 
 ### Get in touch
 
