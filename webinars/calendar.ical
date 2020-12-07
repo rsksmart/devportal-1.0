@@ -3852,7 +3852,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/non-fungible-tokens-what
  s-behind-intelligent-nfts
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20201109T230000Z
+LAST-MODIFIED:20201110T144700Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202011-004@developers.rsk.co/
@@ -3883,5 +3883,37 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/programando-contratos-in
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20201109T230000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202012-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201201T120000Z
+DTSTART:20201201T120000Z
+SUMMARY:PCH2020 Demo Day and Prizes - Post Covid Hack 
+DESCRIPTION:PCH2020 Demo Day and Prizes - Post Covid Hack\n\nOnline only\n
+ \nRSVP: \n\nVideo stream: https://www.eventbrite.sg/e/post-covid-hack-demo
+ -day-announcing-the-winning-projects-open-for-all-tickets-122360354113\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>PCH2020
+  Demo Day and Prizes - Post Covid Hack</span></div>\n<div><span>Online onl
+ y</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video
+  stream &nbsp\;</b><span><a href=\"https://www.eventbrite.sg/e/post-covid-
+ hack-demo-day-announcing-the-winning-projects-open-for-all-tickets-1223603
+ 54113\">www.eventbrite.sg/e/post-covid-hack-demo-day-announcing-the-winnin
+ g-projects-open-for-all-tickets-122360354113</a></span></div>\n</BODY>\n</
+ HTML>
+ORGANIZER;CN="Diego Gutierrez Zaldivar\, CEO\, @dieguito":mailto:developer
+ s@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:PCH2020 Demo Day and Prizes - Post Covid Hack 
+END:VALARM
+CATEGORIES:Hackathon
+URL;VALUE=URI:https://www.eventbrite.sg/e/post-covid-hack-demo-day-announc
+ ing-the-winning-projects-open-for-all-tickets-122360354113
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201201T120000Z
 END:VEVENT
 END:VCALENDAR
