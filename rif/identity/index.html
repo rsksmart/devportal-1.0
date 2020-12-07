@@ -274,18 +274,13 @@
             <a href="./">Identity</a>
             <ul>
               <li><a href="./">Intro</a></li>
-              <li>
-                <span class="fa fa-chevron-right"></span>
-                <a href="ssi/">Self-sovereign identity</a>
-                <ul>
-                  <li><a href="ssi/">Contents</a></li>
-                  <li><a href="ssi/specs/">Specs</a></li>
-                  <li><a href="ssi/specs/#protocols">Protocols</a></li>
-                  <li><a href="ssi/libraries/">Libraries</a></li>
-                  <li><a href="ssi/services/">Services</a></li>
-                  <li><a href="ssi/applications/">Applications</a></li>
-                </ul>
-              </li>
+              <li><a href="mvp/">The MVP</a></li>
+              <li><a href="manager/">Identity Manager</a></li>
+              <li><a href="rlogin/">rLogin</a></li>
+              <li><a href="data-vault/">Data Vault</a></li>
+              <li><a href="libraries/">Libraries</a></li>
+              <li><a href="specs/">Specs</a></li>
+              <li><a href="faq/">FAQ</a></li>
               <li><a href="#repos">Github repos</a></li>
             </ul>
           </li>
@@ -866,8 +861,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 04:13:46 +0000T00:00:00.000Z">2020-12-02</time> | -->
-     3' to read |
+    <!--time role="presentation" datetime="2020-12-02 23:52:54 +0000T00:00:00.000Z">2020-12-02</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1070,18 +1065,13 @@
             <a href="./">Identity</a>
             <ul>
               <li><a href="./">Intro</a></li>
-              <li>
-                <span class="fa fa-chevron-right"></span>
-                <a href="ssi/">Self-sovereign identity</a>
-                <ul>
-                  <li><a href="ssi/">Contents</a></li>
-                  <li><a href="ssi/specs/">Specs</a></li>
-                  <li><a href="ssi/specs/#protocols">Protocols</a></li>
-                  <li><a href="ssi/libraries/">Libraries</a></li>
-                  <li><a href="ssi/services/">Services</a></li>
-                  <li><a href="ssi/applications/">Applications</a></li>
-                </ul>
-              </li>
+              <li><a href="mvp/">The MVP</a></li>
+              <li><a href="manager/">Identity Manager</a></li>
+              <li><a href="rlogin/">rLogin</a></li>
+              <li><a href="data-vault/">Data Vault</a></li>
+              <li><a href="libraries/">Libraries</a></li>
+              <li><a href="specs/">Specs</a></li>
+              <li><a href="faq/">FAQ</a></li>
               <li><a href="#repos">Github repos</a></li>
             </ul>
           </li>
@@ -1638,97 +1628,184 @@
 <p>It is meant to allow users to easily control their digital identities to interact in decentralized economies while building a self-sovereign identity and reputation. This will enable people, especially those excluded from the traditional financial system, to participate in the decentralized digital economy of the future.</p>
 
 <p>The main goal of RIF Identity is to protect users’ personal data in a privacy respectful way, empowering them to manage who can access it and giving them full control of their reputation so they can use it to interact with multiple marketplaces and platforms with freedom to move from one to another without losing their track record, contacts and social value.</p>
+
+<div class="container the-stack">
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="mvp">Try</a>
+        <br>
+        <br>
+        <p>Use the self-sovereign identity MVP</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="specs">Learn</a>
+        <br>
+        <br>
+        <p>Read the specifications</p>
+      </div>
+    </div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="libraries">Develop</a>
+        <br>
+        <br>
+        <p>Use RIF Identity libraries</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="manager">Manage</a>
+        <br>
+        <br>
+        <p>Let your users manage their identity</p>
+      </div>
+    </div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="rlogin">rLogin</a>
+        <br>
+        <br>
+        <p>Web3 based authentication</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="data-vault">Data Vault</a>
+        <br>
+        <br>
+        <p>User-centric cloud storage</p>
+      </div>
+    </div>
+  </div>
+</div>
+
 <h2 id="table-of-contents">Table of contents</h2>
 
 <ul>
   <li>
-<a href="./ssi">Self-sovereign identity</a>
+<a href="mvp">The MVP</a>
     <ul>
-      <li><a href="./ssi/specs">Specs</a></li>
-      <li>Architecture <!--[Architecture](./ssi/architecture) -->
-</li>
-      <li>
-<a href="./ssi/libraries">Libraries</a>
-        <ul>
-          <li>Mnemonic module <!--[Mnemonic module](./ssi/libraries/mnemonics) --> - identity derivation tools using mnemonic phrases</li>
-          <li>RSK Ethr DID <!--[RSK Ethr DID](./ssi/libraries/ethr-did) --> - handle Ethr DID method procedures in RSK network</li>
-          <li>uPort DAF bindings<!--[uPort DAF bindings](./ssi/libraries/daf) --> - use uPort agent with <a href="./ssi/specs/#multi-identity-model">RIF identity multi identity model</a>
-</li>
-          <li>RIF Identity Core <!--[RIF Identity Core](./ssi/libraries/core) --> - implementation of <a href="./ssi/specs/#protocols">RIF Identity protocols</a> using DAF agent</li>
-          <li>
-<a href="./ssi/libraries/express-did-auth">Express DID Auth</a> - handle user authentication using W3C credentials</li>
-          <li>Node Utils <!--[Node Utils](./ssi/libraries/node-utils) --> - a suite of handy utils to use in Node.js services</li>
-        </ul>
-      </li>
-      <li>
-<a href="./ssi/services">Services</a>
-        <ul>
-          <li>
-<a href="./ssi/services/convey-service">Convey service</a> - public transport layer for JWTs using IPFS</li>
-          <li>Issuer service <!-- [Issuer service](./ssi/services/issuer-service) --> - serves for an application that allows receiving credential issuance requests and approving them manually</li>
-        </ul>
-      </li>
-      <li>
-<a href="./ssi/applications">Applications</a>
-        <ul>
-          <li>
-<a href="./ssi/applications/issuer-app">Issuer app</a> - application that serves as the credential request manager. It allows to grant-deny requests or revoke existing credentials</li>
-          <li>
-<a href="./ssi/applications/holder-app">Holder app</a> - wallet used to store declarative details and credentials of it’s users</li>
-          <li>Verifier app <!-- [Verifier app](./ssi/applications/verifier-app) --> - QR scanner app that verifies Verifiable Presentations</li>
-        </ul>
-      </li>
-      <li>FAQ <!-- [FAQ](ssi/faq) -->
-</li>
+      <li><a href="mvp/run">Run locally</a></li>
+      <li><a href="mvp/architecture">Design &amp; architecture</a></li>
+      <li><a href="mvp/applications">Applications</a></li>
+      <li><a href="mvp/services">Services</a></li>
+      <li><a href="mvp/learnings">Learnings</a></li>
+      <li><a href="mvp/acknowledgements">Acknowledgements</a></li>
     </ul>
   </li>
   <li>
-<a href="./data-vault">Data Vault</a>
+<a href="manager">RIF Identity Manager</a>
     <ul>
-      <li>
-<a href="./data-vault/cpinner/cpinner-provider">Centralized Data Vault provider</a> - an IPFS Data Vault provider</li>
-      <li>
-<a href="./data-vault/cpinner/cpinner-service">Data Vault service</a> - a Data vault first approach. This service uses an IPFS node to pin files</li>
-      <li>
-<a href="./data-vault/cpinner/cpinner-client">Web Client SDK</a> - a lightweight web client for the Data Vault service</li>
+      <li><a href="manager/user-guide">User guide</a></li>
+      <li><a href="manager/architecture">Design &amp; architecture</a></li>
+      <li><a href="manager/develop">Develop</a></li>
     </ul>
   </li>
-  <li>rLogin - a web tool that combines Web3 and W3C standard protocols to manage user’s identity</li>
-  <li>RIF Identity manager - a platform where users can manage their personal information and other components that make up their identity</li>
+  <li>
+<a href="rlogin">rLogin</a>
+    <ul>
+      <li><a href="rlogin/integrate">Integrate</a></li>
+      <li><a href="rlogin/architecture">Design &amp; architecture</a></li>
+      <li>
+<a href="rlogin/implementation">Implementation</a>
+        <ul>
+          <li><a href="rlogin/implementation/modal">rLogin modal (client side)</a></li>
+          <li><a href="rlogin/implementation/express-did-auth">DID Auth (server side)</a></li>
+          <li><a href="rlogin/implementation/vc-json-schemas">Verifiable Credential schemas (communication)</a></li>
+        </ul>
+      </li>
+      <li><a href="rlogin/develop">Develop</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="data-vault">Data Vault</a>
+    <ul>
+      <li><a href="data-vault/use">Use</a></li>
+      <li>
+<a href="data-vault/architecture">Design &amp; architecture</a>
+        <ul>
+          <li><a href="data-vault/architecture/client">Web client SDK</a></li>
+          <li><a href="data-vault/architecture/service">HTTPS service</a></li>
+          <li><a href="data-vault/architecture/provider">Provider module</a></li>
+        </ul>
+      </li>
+      <li><a href="data-vault/develop">Develop</a></li>
+    </ul>
+  </li>
+  <li>
+<a href="libraries">Libraries</a>
+    <ul>
+      <li>
+<a href="libraries/mnemonics">Mnemonics</a> - identity derivation tools using mnemonic phrases</li>
+      <li>
+<a href="libraries/rsk-ethr-did">RSK DIDs</a> - handle Ethr DID method procedures in RSK network</li>
+      <li>
+<a href="libraries/ethr-did">Ethr DID</a> - uPort <code class="highlighter-rouge">ethr-did</code> with RSK support</li>
+      <li>
+<a href="libraries/ethr-did-utils">Ethr DID Utils</a> - testing utilities for Ethr DID Registry</li>
+      <li>
+<a href="libraries/daf">DAF bindings</a> - use uPort agent with RIF identity multi identity model</li>
+      <li>
+<a href="libraries/core">VC Core module</a> - Verifiable Credentials in React.js + Redux</li>
+      <li>
+<a href="libraries/node-utils">Node utils</a> - utilities for Node.js backend</li>
+    </ul>
+  </li>
+  <li>
+<a href="specs">Specs</a>
+    <ul>
+      <li>
+<a href="specs/identity-layout">Identity layout</a> - create and recover identities</li>
+      <li>
+<a href="specs/encryption-layout">Encryption layout</a> - Storing and recovering encrypted information</li>
+      <li>
+<a href="specs/did-auth">DID authentication</a> - a challenge–response authentication model based on DIDs</li>
+      <li>
+<a href="specs/credential-requests">Credential requests protocol</a> - a simple protocol for request, grant and receive credential case</li>
+      <li>
+<a href="specs/convey-service">The Convey service</a> - transport content that does not fit into a QR code</li>
+      <li>
+<a href="specs/presentation-timestamps">Presentations timestamps</a> - emitting and validating presentations with timestamps</li>
+    </ul>
+  </li>
+  <li><a href="about">About</a></li>
+  <li><a href="contribute">Collaboration guidelines</a></li>
+  <li><a href="definitions">Definitions</a></li>
+  <li><a href="references">References</a></li>
+  <li><a href="faq">FAQ</a></li>
 </ul>
 
 <h2 id="repos">Repos</h2>
 
+<p>MVP</p>
 <ul>
-  <li><a href="https://github.com/rsksmart/rif-identity-docs" rel="external noopener noreferrer" target="_blank">Documentation</a></li>
-  <li><a href="https://github.com/rsksmart/rif-identity.js" rel="external noopener noreferrer" target="_blank">SSI Javascript monorepo</a></li>
-  <li><a href="https://github.com/rsksmart/rif-identity-services" rel="external noopener noreferrer" target="_blank">Node.js Services</a></li>
-  <li><a href="https://github.com/rsksmart/rif-identity-ui" rel="external noopener noreferrer" target="_blank">React.js and React Native apps</a></li>
-  <li><a href="https://github.com/rsksmart/rif-data-vault" rel="external noopener noreferrer" target="_blank">Data vault Javascript monorepo</a></li>
+  <li><a href="https://github.com/rsksmart/rif-identity-services" rel="external noopener noreferrer" target="_blank">MVP Node.js Services</a></li>
+  <li>
+<a href="https://github.com/rsksmart/rif-identity-ui" rel="external noopener noreferrer" target="_blank">MVP React.js and React Native apps</a>
+Identity Manager</li>
+  <li>
+<a href="https://github.com/rsksmart/rif-identity-manager" rel="external noopener noreferrer" target="_blank">RIF Identity manager</a>
+rLogin</li>
+  <li><a href="https://github.com/rsksmart/rLogin" rel="external noopener noreferrer" target="_blank">rLogin</a></li>
+  <li><a href="https://github.com/rsksmart/rif-identity.js/tree/develop/packages/express-did-auth" rel="external noopener noreferrer" target="_blank">Express DID Auth</a></li>
+  <li><a href="https://github.com/rsksmart/vc-json-schemas" rel="external noopener noreferrer" target="_blank">VC JSON Schemas</a></li>
+  <li>
+<a href="https://github.com/rsksmart/RSKWalletConnect" rel="external noopener noreferrer" target="_blank">Wallet Connect POC</a>
+Data Vault</li>
+  <li>
+<a href="https://github.com/rsksmart/rif-data-vault" rel="external noopener noreferrer" target="_blank">Data vault Javascript monorepo</a>
+Libraries</li>
+  <li><a href="https://github.com/rsksmart/rif-identity.js" rel="external noopener noreferrer" target="_blank">Javascript libraries monorepo</a></li>
   <li><a href="https://github.com/rsksmart/ethr-did" rel="external noopener noreferrer" target="_blank">Ethr DID + RSK support</a></li>
   <li><a href="https://github.com/rsksmart/ethr-did-utils" rel="external noopener noreferrer" target="_blank">Ethr DID dev utils</a></li>
-  <li><a href="https://github.com/rsksmart/rLogin" rel="external noopener noreferrer" target="_blank">rLogin</a></li>
-  <li><a href="https://github.com/rsksmart/rif-identity-manager" rel="external noopener noreferrer" target="_blank">RIF Identity manager</a></li>
-  <li><a href="https://github.com/rsksmart/RSKWalletConnect" rel="external noopener noreferrer" target="_blank">Wallet Connect POC</a></li>
 </ul>
-
-<p>See how to <a href="contribute/">contribute</a> in Github!</p>
-
-<!--
-
-MISSING DOCS:
-Architecture
-Issuer service
-Verifier app
-Import READMEs:
-- [Mnemonic module](./ssi/libraries/mnemonics)
-- [RSK Ethr DID](./ssi/libraries/ethr-did)
-- [uPort DAF bindings](./ssi/libraries/daf)
-- [RIF Identity Core](./ssi/libraries/core)
-- [Express DID Auth](./ssi/libraries/express-did-auth)
-- [Node Utils](./ssi/libraries/node-utils)
-
--->
 
 
                   
