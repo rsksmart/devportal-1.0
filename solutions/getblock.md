@@ -112,7 +112,7 @@ If you have any technical issues write at [support@getblock.io](mailto:support@g
 
 - [Website](https://getblock.io)
 - [Blog](https://getblock.io/blog)
-- [Medium](http://medium.com/getblockio)
+- [Medium](https://getblock.medium.com/)
 
 ### Socials
 
