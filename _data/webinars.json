@@ -4678,7 +4678,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=122359848601",
       "videoStreamUrl": "https://www.eventbrite.sg/e/using-blockchain-to-foster-socio-economic-inclusion-panel-discussion-tickets-122359848601",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event1.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -5019,7 +5019,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/i319JceaQ24",
+      "youtubeVideoId": "i319JceaQ24",
       "_permalink": "/webinars/202011-001/",
       "_isPast": true
     },
@@ -5057,7 +5058,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/9RQD58lLCIc",
+      "youtubeVideoId": "9RQD58lLCIc",
       "_permalink": "/webinars/202011-002/",
       "_isPast": true
     },
@@ -5066,7 +5068,7 @@
       "id": "202011-003",
       "version": "1",
       "timestamp": "2020-11-18T13:00:00.000Z",
-      "lastModified": "2020-11-09T23:00:00.000Z",
+      "lastModified": "2020-11-10T14:47:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Will NFTs shape the future of Art & Games?",
@@ -5100,7 +5102,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/ipayenbEY1o",
+      "youtubeVideoId": "ipayenbEY1o",
       "_permalink": "/webinars/202011-003/",
       "_isPast": true
     },
@@ -5138,8 +5141,48 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://youtu.be/VFa4QIBC78g",
+      "youtubeVideoId": "VFa4QIBC78g",
       "_permalink": "/webinars/202011-004/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202012-001",
+      "version": "1",
+      "timestamp": "2020-12-01T12:00:00.000Z",
+      "lastModified": "2020-12-01T12:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "PCH2020 Demo Day and Prizes - Post Covid Hack",
+      "description": "Demo Day of Post Covid Hack 2020: Join us to meet the winners and discover their projects!\n\nThis is the big day all teams and developers are looking forward to. In this ceremonial session, we will not only present the best projects / contributions for each of the many use cases, we will also award the winners with fantastic prizes, grants and mentorships programs.",
+      "category": "Hackathon",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Diego Gutierrez Zaldivar",
+          "description": "CEO",
+          "contact": "@dieguito"
+        }
+      ],
+      "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=122360354113",
+      "videoStreamUrl": "https://www.eventbrite.sg/e/post-covid-hack-demo-day-announcing-the-winning-projects-open-for-all-tickets-122360354113",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=6Y8smAwIGtA",
+      "youtubeVideoId": "6Y8smAwIGtA",
+      "_permalink": "/webinars/202012-001/",
       "_isPast": true
     }
   ]
