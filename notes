@@ -1,0 +1,100 @@
+
+## The stack
+
+<div class="container the-stack" style="box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1)">
+    <div class="has-unique-col">
+        <div class="row" style="margin: 0">
+            <div class="col" style="margin: 0; box-shadow: none">
+                <div class="row rsk_blue dapps" style="margin: 0">
+                    <div class="col"><span>2.0 apps</span></div>
+                    <div class="col"><span><a href="/rif/rns/libs">Apps migrating to 3.0</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">3.0 apps</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="has-unique-col">
+        <div class="row defi" style="margin: 0; display: block; text-align: center;"><a href="/rif/rns">Application layer</a></div>
+    </div>
+    <div class="has-unique-col">
+        <div class="row" style="margin: 0">
+            <div class="col" style="margin: 0; box-shadow: none">
+                <div class="row rotate defi" style="margin: 0"><a href="/rif/rns">Identity management</a></div>
+                <div class="row rsk_blue dapps" style="margin: 0">
+                    <div class="col"><span><a href="/rif/rns/operations">Web3 provider</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/libs">W3C agent</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">Data Vault client</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">Reputation oracles</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="has-unique-col">
+        <div class="row defi" style="margin: 0; display: block; text-align: center;"><a href="/rif/rns">Authentication protocols</a></div>
+    </div>
+    <div class="has-unique-col">
+        <div class="row" style="margin: 0">
+            <div class="col" style="margin: 0; box-shadow: none">
+                <div class="row rotate defi" style="margin: 0"><a href="/rif/rns">Identity providers</a></div>
+                <div class="row rsk_blue dapps" style="margin: 0">
+                    <div class="col"><span><a href="/rif/rns/operations">Hardware wallets</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/libs">Browser wallets</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">Mobile wallets</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">Custodial wallets</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="has-unique-col">
+        <div class="row defi" style="margin: 0; display: block; text-align: center;"><a href="/rif/rns">Recovery protocols</a></div>
+    </div>
+    <div class="has-unique-col">
+        <div class="row" style="margin: 0">
+            <div class="col" style="margin: 0; box-shadow: none">
+                <div class="row rotate defi" style="margin: 0"><a href="/rif/rns">Protocols</a></div>
+                <div class="row rsk_blue dapps" style="margin: 0">
+                    <div class="col"><span><a href="/rif/rns/operations">Credentials</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/libs">Assets</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">Data</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">Reputation</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="has-unique-col">
+        <div class="row" style="margin: 0">
+            <div class="col" style="margin: 0; box-shadow: none">
+                <div class="row rotate defi" style="margin: 0"><a href="/rif/rns">Infra</a></div>
+                <div class="row rsk_blue dapps" style="margin: 0">
+                    <div class="col"><span><a href="/rif/rns/operations">RSK</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/libs">Ethereum</a></span></div>
+                    <div class="col"><span><a href="/rif/rns/architecture">IPFS</a></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+  - Repositories
+    - [`rif-identity-ui`](https://github.com/rsksmart/rif-identity-ui)
+    - [`rif-identity-services`](https://github.com/rsksmart/rif-identity-services)
+
+
+  - Repository: [`rif-identity-manager`](https://github.com/rsksmart/rif-identity-manager)
+  - Repositories
+    - [`@rsksmart/express-did-auth`](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/express-did-auth)
+    - [`@rsksmart/rlogin`](https://github.com/rsksmart/rLogin)
+    - [`vc-json-schemas`](https://github.com/rsksmart/vc-json-schemas/)
+  - Repository: [`rif-data-vault`](https://github.com/rsksmart/rif-data-vault)
+  - Repositories:
+    - [`rif-identity.js`](https://github.com/rsksmart/rif-identity.js)
+    - [`@rsksmart/ethr-did`](https://github.com/rsksmart/ethr-did)
+    - [`@rsksmart/ethr-did`](https://github.com/rsksmart/ethr-did)
+    - [`@rsksmart/ethr-did-utils`](https://github.com/rsksmart/ethr-did-utils)
+    - [``]

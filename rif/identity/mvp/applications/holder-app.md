@@ -4,7 +4,7 @@ layout: rsk
 
 ## Citizens App - wallet-like mobile application (Android)
 
-The Citizens app is a wallet that can be used to store the declarative details and credentials of its users. Built-in React Native it can be packaged for both IOS and Android, however, Android is the only officially supported platform.
+The Citizens app is a wallet that can be used to store the declarative details and credentials of its users. Built-in React Native it can be packaged for both iOS and Android, however, Android is the only officially supported platform.
 
 Read the [running guide](../../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/IdentityApp) to run locally (please use tag `holder-v0.1.2`)
 

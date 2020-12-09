@@ -2,7 +2,7 @@
 layout: rsk
 ---
 
-## The MVP - RUN Locally
+## The MVP - Run Locally
 
 Running the project consists of XXX main steps. To understand all the process please read [architecture & design article](../architecture) first
 
