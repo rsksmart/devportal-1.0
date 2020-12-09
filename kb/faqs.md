@@ -11,7 +11,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs section"
 
 *Are RIF and RSK going to become one organization?*
 
-IOV Labs operates as a purpose driven organization focused on promoting and developing the next generation of open blockchain-based infrastructure that will enable worldwide financial inclusion and bridge the gap between this nascent technology and mass adoption and is the organization behind RSK and RIF platforms.
+IOV Labs operates as a purpose driven organization focused on promoting and developing the next generation of open blockchain-based infrastructure that will enable worldwide financial inclusion and bridge the gap between this nascent technology and mass adoption and is the main contributor to the development of RSK and RIF platforms.
 
  For more information visit: [IOV Labs](
  https://iovlabs.org/)
@@ -60,7 +60,7 @@ RSK currently supports all the opcodes and precompiles contracts of Ethereum, an
 
 ### Any progress with Drivechain proposal(s)?
 
-The first drivechain proposal was created by us in 2016 and presented to the Bitcoin mailing list for evaluation (see https://github.com/rsksmart/bips/blob/master/BIP-R10.md). Those were turbulent times for the Bitcoin community, as the different subgroups were fighting either to increase the block size or to add SegWit. In that context, it was very difficult to achieve consensus about sidechain integration. Later in 2018, we renewed our efforts with an [Improved proposal](https://github.com/rsksmart/bips/blob/master/BIP-R11.md) presented at [Building on Bitcoin 2018](https://www.youtube.com/watch?time_continue=10289&v=Cpid31c6HZc).
+The first drivechain proposal was created by us in 2016 and presented to the Bitcoin mailing list for evaluation. See [BIP: Drivechain using OP_COUNT_ACKS](https://github.com/rsksmart/bips/blob/master/BIP-R10.md). Those were turbulent times for the Bitcoin community, as the different subgroups were fighting either to increase the block size or to add SegWit. In that context, it was very difficult to achieve consensus about sidechain integration. Later in 2018, we renewed our efforts with an [Improved proposal](https://github.com/rsksmart/bips/blob/master/BIP-R11.md) presented at [Building on Bitcoin 2018](https://www.youtube.com/watch?time_continue=10289&v=Cpid31c6HZc).
 
 We think that the ecosystem has to mature for trust-minimized Bitcoin sidechains to flourish.
 
@@ -119,7 +119,8 @@ Check [RBTC](https://developers.rsk.co/rsk/rbtc/) for more info.
 
 ### Why is RBTC listed in exchanges?
 
-We listed RBTC in exchanges to make it easier for less technical users to get access to it. According to Sergio Lerner (IOVLabs Chief Scientist), "It takes almost a day to transfer BTC to RBTC using the peg. Users at least need small amounts of RBTC to pay for transaction fees, required for smart contract execution. We expect more demand for RBTC as more users start using the platform".
+RBTC is listed in exchanges to make it easier for less technical users to get access to it. It takes almost a day to transfer BTC to RBTC using the peg. Users at least need small amounts of RBTC to pay for transaction fees, required for smart contract execution.
+Exchanges help to to cater to the expected growth in demand for RBTC.
 
 ### What hardware wallets support RSK ?
 
@@ -481,7 +482,8 @@ The people at IOHK are working on KEVM type of sidechains. They promote that wit
 
 IOHK is working on IELE, a virtual machine which facilitates formal verification. It’s still an ongoing work, but it has the benefit that it integrates with the LLVM Compiler toolchain. The AVM enables a vast ecosystem of existing Java libraries and tools. EWASM has the benefit of being the language of choice by web browsers, so it will be fast.
 
-RSK is here for the long term. It was created to use the best available technology, and that technology may not come from the RSK development team, but from other teams. It means that if we see there is traction and a community that builds solutions around IELE or AVM or EWASM, we may also propose integrating it into RSK. According to IOV Labs Chief Scientist, Sergio Lerner "I’m not scared of having several VMs running on a node. They are easy to encapsulate. But I suppose that in 20 years there will be only one preferred VM, and the rest VM bytecodes will be transpiled into it".
+RSK is here for the long term. It was created to use the best available technology, and that technology may not come from the RSK development team, but from other teams. It means that if we see there is traction and a community that builds solutions around IELE or AVM or EWASM, we may also propose integrating it into RSK.
+RSK is not opposed to having several VMs running on a node in the future, as they are easy to encapsulate. There may even be one preferred VM with the bytecode for other VMs transpiled to the bytecode for the preferred one.
 
 ### When can we expect Integration with LTC ?
 

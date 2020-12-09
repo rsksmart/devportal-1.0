@@ -57,7 +57,7 @@ rake dev
 ```
 
 You will now find a site located in `./_site`,
-and this will be served at [`https://localhost:4000/`](https://localhost:4000/).
+and this will be served at [`http://localhost:4000/`](http://localhost:4000/).
 Each time you save a file, the site will get regenerated.
 
 ### Test build outputs
