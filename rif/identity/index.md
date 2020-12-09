@@ -122,18 +122,27 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 ## Repos
 
 MVP
+
 - [MVP Node.js Services](https://github.com/rsksmart/rif-identity-services)
 - [MVP React.js and React Native apps](https://github.com/rsksmart/rif-identity-ui)
+
 Identity Manager
+
 - [RIF Identity manager](https://github.com/rsksmart/rif-identity-manager)
+
 rLogin
+
 - [rLogin](https://github.com/rsksmart/rLogin)
 - [Express DID Auth](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/express-did-auth)
 - [VC JSON Schemas](https://github.com/rsksmart/vc-json-schemas)
 - [Wallet Connect POC](https://github.com/rsksmart/RSKWalletConnect)
+
 Data Vault
+
 - [Data vault Javascript monorepo](https://github.com/rsksmart/rif-data-vault)
+
 Libraries
+
 - [Javascript libraries monorepo](https://github.com/rsksmart/rif-identity.js)
 - [Ethr DID + RSK support](https://github.com/rsksmart/ethr-did)
 - [Ethr DID dev utils](https://github.com/rsksmart/ethr-did-utils)
