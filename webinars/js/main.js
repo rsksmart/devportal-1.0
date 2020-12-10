@@ -36,6 +36,14 @@ $(".navbar").on("hide.bs.collapse", function(e) {
     } // End if
   });
 
+  // add active class to a in inner nav based on url
+$(function () {
+  var pageUrl = location.href;
+  $('a').each(function () {
+    $(this).toggleClass('active', this.href === pageUrl);
+  });
+});
+
 
   // Navigation active state on scroll
   var nav_sections = $('section');

@@ -49,30 +49,70 @@
       <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="https://rsk.co" rel="external noopener noreferrer" target="_blank"><img id="logo" src="../../assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
+    <a target="_blank" rel="external noopener noreferrer" class="navbar-brand" href="https://rsk.co"><img id="logo" src="../../assets/img/rsk_logo.svg" class="logo" alt="RSK Developers Portal"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="../../the-stack/" target="_self">The Stack
-          </a>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Platforms
+            </a>
+            <div class="dropdown-menu bold" aria-labelledby="navbarDropdownMenuLink">
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://rsk.co/rsk-blockchain/">RSK Blockchain</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://www.rifos.org/">RSK Infrastructure Framework (RIF)</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://rsk.co/enterprise/">RSK Enterprise Cloud</a>
+            </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../develop/" target="_self">Develop</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle lang_nav" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Build
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../../the-stack/" target="_self">The Stack</a>
+                <a class="dropdown-item" href="../../" target="_self">Dev Portal</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://rsk.co/development-roadmap">Roadmap</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://explorer.rsk.co/">Explorer</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://stats.rsk.co/">Stats</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="http://rskgasstation.info">Gas Station</a>
+            </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://www.rsk.co/development-roadmap" target="_blank" rel="external noopener noreferrer">Roadmap</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle lang_nav" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Learn
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../../webinars/" target="_self">Webinars</a>
+            </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://fund.rsk.co" target="_blank" rel="external noopener noreferrer">Ecosystem Fund</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle lang_nav" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Use
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://www.rsk.co/openfinance/">Open Finance</a>
+                <a class="dropdown-item" href="../../wallet/" target="_self">Wallets</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://www.rifos.org/nameservice/index">RIF Name Service</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://marketplace.rifos.org/">RIF Marketplace</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://www.taringa.net/">Taringa!</a>
+            </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://rsk.co/defi" target="_blank" rel="external noopener noreferrer">Defi</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../../webinars/" target="_self">Webinars</a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle lang_nav" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Community
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://open-rsk-dev.slack.com/join/shared_invite/zt-jnef2od3-MWDTHQCrQOZu7IsDS1IdEA#/">Slack</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://github.com/rsksmart">GitHub</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://research.rsk.dev/">Forum</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://fund.rsk.co/">Ecosystem Fund</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://developers.rsk.co/grants/">Grants</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://rsk.co/bounty-program/">Bounty Program</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://blog.rsk.co/">Blog</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://medium.com/iovlabs-innovation-stories">Medium</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://www.iovlabs.org/press.html">News</a>
+            </div>
         </li>
       </ul>
     </div>
@@ -812,7 +852,7 @@
         <a href="../../grants/" target="_blank">Grants</a>
       </li>
       <li class="first_level">
-        <a href="../../defi/" target="_blank">DeFi for Bitcoin</a>
+        <a href="https://www.rsk.co/openfinance/" target="_blank" rel="external noopener noreferrer">DeFi for Bitcoin</a>
       </li>
     </ul>
   </div>
@@ -1603,7 +1643,7 @@
         <a href="../../grants/" target="_blank">Grants</a>
       </li>
       <li class="first_level">
-        <a href="../../defi/" target="_blank">DeFi for Bitcoin</a>
+        <a href="https://www.rsk.co/openfinance/" target="_blank" rel="external noopener noreferrer">DeFi for Bitcoin</a>
       </li>
     </ul>
   </div>
@@ -1756,7 +1796,7 @@ perform the following steps to add RSK as a custom node.</p>
                <div class="footer-info">
                   <p>Rsk is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin Network to empower people and improve the quality of life of millions.</p>
                   <br>
-                  <a href="https://developers.rsk.co/" rel="external noopener noreferrer" target="_blank" class="footer-button rounded" title="Start now">Start now</a>
+                  <a href="../../" target="_self" class="footer-button rounded" title="Start now">Start now</a>
                </div>
             </div>
             <div class="col-lg-8">
@@ -1765,58 +1805,58 @@ perform the following steps to add RSK as a custom node.</p>
                      <div class="footer-links">
                         <ul>
                            <li class="negbottom">Whitepapers</li>
-                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf" rel="external noopener noreferrer" target="_blank">Original</a></li>
-                           <li class="sub-item-footer"><a href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf" rel="external noopener noreferrer" target="_blank">Updated</a></li>
-                           <li class="sub-item-footer"><a href="https://docs.rifos.org/rif-whitepaper-en.pdf" rel="external noopener noreferrer" target="_blank">RIF</a></li>
-                           <li><a href="https://rsk.co/development-roadmap.html" rel="external noopener noreferrer" target="_blank">Roadmap</a></li>
-                           <li><a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">Explorer</a></li>
+                           <li class="sub-item-footer"><a target="_blank" rel="external noopener noreferrer" href="https://rsk.co/Whitepapers/RSK_White_Paper-ORIGINAL.pdf">Original</a></li>
+                           <li class="sub-item-footer"><a target="_blank" rel="external noopener noreferrer" href="https://rsk.co/Whitepapers/RSK-White-Paper-Updated.pdf">Updated</a></li>
+                           <li class="sub-item-footer"><a target="_blank" rel="external noopener noreferrer" href="https://docs.rifos.org/rif-whitepaper-en.pdf">RIF</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://rsk.co/development-roadmap.html">Roadmap</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://explorer.rsk.co/">Explorer</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-3 col-sm-6">
                      <div class="footer-links">
                         <ul>
-                           <li><a href="https://mining.rsk.co/" rel="external noopener noreferrer" target="_blank">Merged Mining</a></li>
-                           <li><a href="https://www.rsk.co/bounty-program/index" rel="external noopener noreferrer" target="_blank">Bounty Program</a></li>
-                           <li><a href="https://grants.rsk.co" rel="external noopener noreferrer" target="_blank">Grants Program</a></li>
-                           <li><a href="https://fund.rsk.co" rel="external noopener noreferrer" target="_blank">Ecosystem Fund</a></li>
-                           <li><a href="https://studio.rsk.co" rel="external noopener noreferrer" target="_blank">Innovation Studio</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://mining.rsk.co/">Merged Mining</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://www.rsk.co/bounty-program/">Bounty Program</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://grants.rsk.co">Grants Program</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://fund.rsk.co">Ecosystem Fund</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://studio.rsk.co">Innovation Studio</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-3 col-sm-6">
                      <div class="footer-links">
                         <ul>
-                           <li><a href="https://rsk.co/defi" rel="external noopener noreferrer" target="_blank">DeFi</a></li>
-                           <li><a href="https://rsk.co/Use-cases.html" rel="external noopener noreferrer" target="_blank">Use cases</a></li>
-                           <li><a href="https://rsk.co/faqs.html" rel="external noopener noreferrer" target="_blank">Faqs</a></li>
-                           <li><a href="https://blog.rsk.co/" rel="external noopener noreferrer" target="_blank">Blog</a></li>
-                           <li><a href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf" rel="external noopener noreferrer" target="_blank">Brand Guidelines</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://www.rsk.co/openfinance/">Open Finance</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://rsk.co/Use-cases.html">Use cases</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://rsk.co/faqs.html">Faqs</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://blog.rsk.co/">Blog</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" href="https://rsk.co/Brand_Guidelines/RSK_BrandManual_V6.pdf">Brand Guidelines</a></li>
                         </ul>
                      </div>
                   </div>
                   <div class="col-lg-3 col-md-3 col-sm-6">
                      <div class="footer-links lastcol">
                         <ul>
-                           <li><a class="bold" href="https://rsk.co/terms-conditions.html" rel="external noopener noreferrer" target="_blank">Terms &amp; Conditions</a></li>
-                           <li><a class="bold" href="https://rsk.co/privacy-policy.html" rel="external noopener noreferrer" target="_blank">Privacy Policy</a></li>
-                           <li><a class="bold" href="https://www.iovlabs.org" rel="external noopener noreferrer" target="_blank">About IOVlabs</a></li>
-                           <li><a class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html" rel="external noopener noreferrer" target="_blank">Contact IOVlabs</a></li>
-                           <a href="https://developers.doc.rsk.co/docs" rel="external noopener noreferrer" target="_blank" class="footer-button" title="Documentation">Documentation</a>
+                           <li><a target="_blank" rel="external noopener noreferrer" class="bold" href="https://rsk.co/terms-conditions.html">Terms &amp; Conditions</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" class="bold" href="https://rsk.co/privacy-policy.html">Privacy Policy</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" class="bold" href="https://www.iovlabs.org">About IOVlabs</a></li>
+                           <li><a target="_blank" rel="external noopener noreferrer" class="bold lastcol-lastitem" href="https://www.iovlabs.org/contact.html">Contact IOVlabs</a></li>
+                           <a href="../../" target="_self" class="footer-button" title="Documentation">Documentation</a>
                         </ul>
                      </div>
                   </div>
                </div>
                <div class="social-links">
-                  <a href="https://twitter.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
-                  <a href="https://www.youtube.com/rsksmart" rel="external noopener noreferrer" target="_blank" class="facebook"><i class="fab fa-youtube"></i></a>
-                  <a href="https://www.facebook.com/RSKsmart/" rel="external noopener noreferrer" target="_blank" class="linkedin"><i class="fab fa-facebook"></i></a>
-                  <a href="https://gitter.im/rsksmart" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-gitter"></i></a>
-                  <a href="https://www.reddit.com/r/rootstock/" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-reddit"></i></a>
-                  <a href="https://t.me/rskofficialcommunity" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
-                  <a href="https://medium.com/@RSKNews" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-medium"></i></a>
-                  <a href="https://t.me/rsksmartcontract" rel="external noopener noreferrer" target="_blank" class="instagram"><i class="fab fa-telegram"></i></a>
-                  <a href="https://www.instagram.com/rsksmart/" rel="external noopener noreferrer" target="_blank" class=""><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://twitter.com/rsksmart" class="twitter"><i class="fab fa-twitter"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://www.youtube.com/rsksmart" class="facebook"><i class="fab fa-youtube"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://www.facebook.com/RSKsmart/" class="linkedin"><i class="fab fa-facebook"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://gitter.im/rsksmart" class="instagram"><i class="fab fa-gitter"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://www.reddit.com/r/rootstock/" class="instagram"><i class="fab fa-reddit"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://t.me/rskofficialcommunity" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://medium.com/@RSKNews" class="instagram"><i class="fab fa-medium"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://t.me/rsksmartcontract" class="instagram"><i class="fab fa-telegram"></i></a>
+                  <a target="_blank" rel="external noopener noreferrer" href="https://www.instagram.com/rsksmart/" class=""><i class="fab fa-instagram"></i></a>
                </div>
             </div>
          </div>
