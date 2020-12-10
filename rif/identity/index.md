@@ -43,13 +43,16 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="manager">Manage</a>
+        <a href="data-vault">Data Vault</a>
         <br />
         <br />
-        <p>Let your users manage their identity</p>
+        <p>User-centric cloud storage</p>
       </div>
     </div>
   </div>
+</div>
+
+<!--
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
@@ -61,14 +64,14 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="data-vault">Data Vault</a>
+        <a href="manager">Manage</a>
         <br />
         <br />
-        <p>User-centric cloud storage</p>
+        <p>Let your users manage their identity</p>
       </div>
     </div>
   </div>
-</div>
+-->
 
 ## Table of contents
 
@@ -79,18 +82,8 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [Services](mvp/services)
   - [Learnings](mvp/learnings)
   - [Acknowledgements](mvp/acknowledgements)
-- [RIF Identity Manager](manager)
-  - [User guide](manager/user-guide)
-  - [Design & architecture](manager/architecture)
-  - [Develop](manager/develop)
-- [rLogin](rlogin)
-  - [Integrate](rlogin/integrate)
-  - [Design & architecture](rlogin/architecture)
-  - [Implementation](rlogin/implementation)
-    - [rLogin modal (client side)](rlogin/implementation/modal)
-    - [DID Auth (server side)](rlogin/implementation/express-did-auth)
-    - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
-  - [Develop](rlogin/develop)
+- RIF Identity Manager ([more info](https://github.com/rsksmart/rif-identity-manager))
+- rLogin ([more info](https://github.com/rsksmart/rLogin))
 - [Data Vault](data-vault)
   - [Use](data-vault/use)
   - [Design & architecture](data-vault/architecture)
@@ -118,6 +111,21 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [Definitions](definitions)
 - [References](references)
 - [FAQ](faq)
+
+<!--
+- [RIF Identity Manager](manager)
+  - [User guide](manager/user-guide)
+  - [Design & architecture](manager/architecture)
+  - [Develop](manager/develop)
+- [rLogin](rlogin)
+  - [Integrate](rlogin/integrate)
+  - [Design & architecture](rlogin/architecture)
+  - [Implementation](rlogin/implementation)
+    - [rLogin modal (client side)](rlogin/implementation/modal)
+    - [DID Auth (server side)](rlogin/implementation/express-did-auth)
+    - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
+  - [Develop](rlogin/develop)
+-->
 
 ## Repos
 
