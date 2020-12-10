@@ -594,7 +594,7 @@ Neste webinar você vai aprender como funciona a RSK-Ethereum Token Bridge e con
 Solange Gueiros","Business Development Latam na MakerDAO
 Developer Advocate","@nad8802
 @solangegueiros","https://app.livestorm.co/iov-labs-1/dai-na-rsk-token-bridge-convertendo-dai-em-btc-e-vice-versa
-",https://app.livestorm.co/p/78aeab68-834b-4144-800e-a10bcb0428fe/form,,
+",https://app.livestorm.co/p/78aeab68-834b-4144-800e-a10bcb0428fe/form,https://youtu.be/i319JceaQ24,
 2020-11-25T19:00:00-03:00,202011-002,1,2020-10-30T19:00:00-03:00,confirmed,,,,,,,Como funciona um marketplace? Conheça o RIF marketplace,"Para iniciantes!
 
 Neste webinar você vai aprender a negociar nomes de domínio RNS no RIF marketplace.
@@ -613,13 +613,19 @@ Saiba mais:
 
 🔵 https://marketplace.rifos.org/
 
-🔵 https://marketplace.testnet.rifos.org/",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/como-funciona-um-marketplace-conheca-o-rif-marketplace,https://app.livestorm.co/p/ab69d235-b381-4253-9cc5-d4a2bad869de/form,,
-2020-11-18T21:00:00+08:00,202011-003,1,2020-11-09T20:00:00-03:00,confirmed,,,,,,,Will NFTs shape the future of Art & Games?,"NFTs have much more going for them than a lack of fungibility.
+🔵 https://marketplace.testnet.rifos.org/",Workshop,online,Online only,Portuguese,Solange Gueiros,Developer Advocate,@solangegueiros,https://app.livestorm.co/iov-labs-1/como-funciona-um-marketplace-conheca-o-rif-marketplace,https://app.livestorm.co/p/ab69d235-b381-4253-9cc5-d4a2bad869de/form,https://youtu.be/9RQD58lLCIc,
+2020-11-18T21:00:00+08:00,202011-003,1,2020-11-10T11:47:00-03:00,confirmed,,,,,,,Will NFTs shape the future of Art & Games?,"NFTs have much more going for them than a lack of fungibility.
 Non-fungible tokens are used to create verifiable digital scarcity, as well as digital ownership, and the possibility of asset interoperability across multiple platforms. NFTs are used in several specific applications that require unique digital items like crypto art, crypto-collectibles and crypto-gaming.
 At this webinar we will learn how versatile they are!",Webinar,online,Online only,English,"Ben Fairbank
 Yacine Terai","RedFOX Labs CEO
 CEO of Minty","@bennydoda01
 @startupyacine
-@startupeddy",https://app.livestorm.co/iov-labs-1/non-fungible-tokens-whats-behind-intelligent-nfts,https://app.livestorm.co/p/865e984b-d2e6-4123-8127-5fac8560bbe6/form,,
+@startupeddy",https://app.livestorm.co/iov-labs-1/non-fungible-tokens-whats-behind-intelligent-nfts,https://app.livestorm.co/p/865e984b-d2e6-4123-8127-5fac8560bbe6/form,https://youtu.be/ipayenbEY1o,
 2020-11-19T18:00:00-03:00,202011-004,1,2020-11-09T20:00:00-03:00,confirmed,,,,,,,Programando Contratos Inteligentes con TDD,"El desarrollo blockchain con contratos inteligentes está cambiando el mundo del valor, más allá de las monedas nacionales. La lógica compartida y pública permite crear sistemas nuevos como el DeFi (Decentralized Finance) y Open Finance. Pero con un gran poder, llega una gran responsabilidad: hacer que la lógica de los contratos sea la esperada. Una forma de hacerlo es usar el flujo de trabajo de TDD. Veremos los conceptos de esta disciplina, que va más allá de hacer pruebas: se relaciona con el diseño incremental, búsqueda de la simplicidad, y especificación por código. Exploraremos ejemplos sencillos de DeFi, y cómo paso a paso se construye un sistema, usando Solidity y Truffle.
-",Workshop,online,Online only,Spanish,Angel Lopez,Senior Developer,@ajlopez,https://app.livestorm.co/iov-labs-1/programando-contratos-inteligentes-con-tdd,https://app.livestorm.co/p/46d76e78-7d15-40d0-9fb3-70519c83f728/form,,
+",Workshop,online,Online only,Spanish,Angel Lopez,Senior Developer,@ajlopez,https://app.livestorm.co/iov-labs-1/programando-contratos-inteligentes-con-tdd,https://app.livestorm.co/p/46d76e78-7d15-40d0-9fb3-70519c83f728/form,https://youtu.be/VFa4QIBC78g,
+2020-12-01T20:00:00+08:00,202012-001,1,2020-12-01T20:00:00+08:00,confirmed,,,,,,,PCH2020 Demo Day and Prizes - Post Covid Hack,"Demo Day of Post Covid Hack 2020: Join us to meet the winners and discover their projects!
+
+This is the big day all teams and developers are looking forward to. In this ceremonial session, we will not only present the best projects / contributions for each of the many use cases, we will also award the winners with fantastic prizes, grants and mentorships programs. ",Hackathon,online,Online only,English,"Diego Gutierrez Zaldivar
+","CEO
+","@dieguito
+",https://www.eventbrite.sg/e/post-covid-hack-demo-day-announcing-the-winning-projects-open-for-all-tickets-122360354113,https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=122360354113,https://www.youtube.com/watch?v=6Y8smAwIGtA,
