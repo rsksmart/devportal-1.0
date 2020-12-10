@@ -4,7 +4,7 @@ layout: rsk
 
 ## The MVP
 
-The RIF Identity MVP is a project that lasted 3 months. The objective was to develop a basic model putting into action the different tools known today in the field of self-sovereign identity:
+The RIF Identity MVP has the objective to develop a basic model putting into action the different tools known today in the field of self-sovereign identity:
 - Identity management in public ledgers
 - Issuance and verification of digitally signed credentials
 - User-centric cloud storage
