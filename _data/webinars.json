@@ -5184,6 +5184,44 @@
       "youtubeVideoId": "6Y8smAwIGtA",
       "_permalink": "/webinars/202012-001/",
       "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202012-002",
+      "version": "1",
+      "timestamp": "2020-12-16T17:00:00.000Z",
+      "lastModified": "2020-12-16T17:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Powpeg: the most secure, permissionless and uncensorable Bitcoin peg",
+      "description": "Powpeg is a proof-of-work secured two-way peg used to interact between RSK sidechain and the Bitcoin Blockchain.\n\nPowpeg is the first Bitcoin peg to provide security assurances based on Bitcoin's proof-of-work making it the most secure and permissionless peg available.\n\nDuring this webinar we will review in detail what Powpeg is about and it's role in decentralizing RSK Smart Contract platform.",
+      "category": "Webinar",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Sergio Lerner",
+          "description": "CSO",
+          "contact": "@sdlerner"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/iov-labs-1/powpeg",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/powpeg",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202012-002/",
+      "_isPast": false
     }
   ]
 }
