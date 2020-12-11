@@ -925,7 +925,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 23:23:25 +0000T00:00:00.000Z">2020-12-02</time> | -->
+    <!--time role="presentation" datetime="2020-12-03 21:29:42 +0000T00:00:00.000Z">2020-12-03</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/applications/issuer-app.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1685,9 +1685,19 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h1 id="issuer-app">Issuer App</h1>
+                  <h2 id="government-app---web-application-listing-credential-requests">Government app - web application listing credential requests</h2>
 
-<p>The Issuer App is a React application that handles the back office tasks of issuing and rejecting credential requests. It is built to be connected to any Request Credential Service Server (that is API compatible with <a href="../../services">RIF Identity issuer service</a>), and login happens with a username and password.</p>
+<p>The Government app is a React application that handles the back office tasks of issuing and rejecting credential requests. It is built to be connected to any Request Credential Service Server (that is API compatible with <a href="../../services">RIF Identity issuer service</a>), and login happens with a username and password.</p>
+
+<p>Read the <a href="../../run">running guide</a> to run the whole project or <a href="https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/issuer-app" rel="external noopener noreferrer" target="_blank">browse the open-source repo</a> to run locally (please use tag <code class="highlighter-rouge">holder-v0.1.2</code>)</p>
+
+<h3 id="specifications">Specifications</h3>
+
+<ul>
+  <li>User interface: web browser app capable to display the citizen’s information when a credential request arrives, requiring a user-activated confirmation before issuing the credentials.</li>
+  <li>Holder app interaction: the server will receive a credential request and open a private communication endpoint for the holder’s app to query the issuance process status and the credential information.</li>
+  <li>Persistence: the application must store all the information in a local database. It logs when a request arrives and an issuance is performed.</li>
+</ul>
 
 <h3 id="features">Features</h3>
 
@@ -1716,27 +1726,6 @@
   <li>Revoking credentials</li>
   <li>Managing credential templates/types</li>
   <li>History</li>
-</ul>
-
-<h3 id="run-locally">Run locally:</h3>
-
-<p>The issuer application can connect to any credential server so there is no need to set environment variables.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn
-yarn start
-</code></pre></div></div>
-
-<h3 id="run-for-development">Run for development</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn
-yarn build
-</code></pre></div></div>
-
-<h3 id="links">Links</h3>
-
-<ul>
-  <li>
-<a href="https://github.com/rsksmart/rif-identity-ui/tree/develop/apps/issuer-app" rel="external noopener noreferrer" target="_blank">Github Repo</a> - the repo is part of the larger SSI UI repository.</li>
 </ul>
 
 

@@ -925,8 +925,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 23:48:01 +0000T00:00:00.000Z">2020-12-02</time> | -->
-     11' to read |
+    <!--time role="presentation" datetime="2020-12-03 21:29:42 +0000T00:00:00.000Z">2020-12-03</time> | -->
+     12' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/services/convey-service.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1685,11 +1685,17 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h1 id="convey-service">Convey service</h1>
+                  <h2 id="convey-service---public-transport-layer-for-jwts-using-ipfs">Convey service - Public transport layer for JWTs using IPFS</h2>
 
-<p>The Convey service has been built to act as a content relayer in front of IPFS. Let’s imagine that <em>Bob</em> wants to share a JWT with <em>Alice</em> through a QR code. If the content is too large, it will not fit in a QR code, so there is where the Convey service acts. It allows to transport and caché files that can be accessed via HTTPS, and provides a tiny URL that can fit in any QR code. The service exposes two main endpoints: POST and GET files. Please refer to the protocol description <a href="../../../specs/convey-service">here</a> for more details about it.</p>
+<p>Large contents don’t fit in QR codes so this service is designed to receive an encrypted file, store it in IPFS and also store the file in memory. It returns the cid of the stored file and a convey-uri that indicates that this kind of files should be gotten from a convey service implementation</p>
+
+<p>Read the <a href="../../run">running guide</a> to run the whole project or <a href="https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/convey" rel="external noopener noreferrer" target="_blank">browse the open-source repo</a> to run locally (please use tag <code class="highlighter-rouge">v0.1.0</code>)</p>
+
+<p>Find the protocol specification <a href="../../../specs/convey-service">here</a>.</p>
 
 <h3 id="main-flows">Main flows</h3>
+
+<p>The Convey service has been built to act as a content relayer in front of IPFS. Let’s imagine that <em>Bob</em> wants to share a JWT with <em>Alice</em> through a QR code. If the content is too large, it will not fit in a QR code, so there is where the Convey service acts. It allows to transport and caché files that can be accessed via HTTPS, and provides a tiny URL that can fit in any QR code. The service exposes two main endpoints: POST and GET files. Please refer to the protocol description <a href="../../../specs/convey-service">here</a> for more details about it.</p>
 
 <h4 id="authentication-flow">Authentication flow</h4>
 

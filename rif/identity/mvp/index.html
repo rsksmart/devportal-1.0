@@ -909,8 +909,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 23:23:25 +0000T00:00:00.000Z">2020-12-02</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2020-12-10 19:20:43 +0000T00:00:00.000Z">2020-12-10</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1671,13 +1671,62 @@
 
                   <h2 id="the-mvp">The MVP</h2>
 
-<p><em>WIP</em></p>
-
+<p>The RIF Identity MVP has the objective to develop a basic model putting into action the different tools known today in the field of self-sovereign identity:</p>
 <ul>
-  <li><a href="run">Run locally</a></li>
-  <li><a href="architecture">Design &amp; architecture</a></li>
-  <li><a href="applications">Applications</a></li>
-  <li><a href="services">Services</a></li>
+  <li>Identity management in public ledgers</li>
+  <li>Issuance and verification of digitally signed credentials</li>
+  <li>User-centric cloud storage</li>
+  <li>Identity and credential authentication</li>
+</ul>
+
+<p>The model is the emission of ID Cards, Driving Licenses and Parking Permits. <em>Citizens</em> use a <a href="applications/holder-app">mobile wallet application</a> where they input their identity details like name and age, and request any of these credentials to the <em>government</em>. The <em>government agent</em> accesses a <a href="applications/issuer-app">web application</a> where all the credential requests are listed and can be manually granted. Once credentials are granted, <em>Citizens</em> store them in a user-centric cloud storage called <a href="../data-vault"><em>The Data Vault</em></a>. <em>Police officers</em> can verify <em>citizen’s</em> credentials scanning a QR code using another <a href="applications/verifier-app">mobile application</a>.</p>
+
+<p>To understand the model we identify three actors:</p>
+<ul>
+  <li>An issuer: the government</li>
+  <li>A holder: a citizen</li>
+  <li>A verifier: a police officer</li>
+</ul>
+
+<p><img src="assets/img/06_mvp_application.png" alt=""></p>
+
+<h3 id="the-user-story">The user story</h3>
+
+<p>The main user story across this project is:</p>
+<ol>
+  <li>As a citizen I would like to request for a driving licence credential with my mobile phone
+    <ul>
+      <li>I want to be asked before sharing my personal information</li>
+    </ul>
+  </li>
+  <li>As  the Government I would like to issue credentials when requested
+    <ul>
+      <li>I want to validate citizen information</li>
+      <li>The credentials must be digitally signed</li>
+      <li>The credentials must comply with <a href="../specs/#verifiable-credentials-model">W3C VCs specs</a>
+</li>
+    </ul>
+  </li>
+  <li>As a citizen I would like to store the credential issued by the MoT  in my phone</li>
+  <li>As a citizen I would like to access a list of my credentials and its details with my phone</li>
+  <li>As a citizen I would like to present a credential in form of QR when a police officer ask for it</li>
+  <li>As a Police officer I would like to verify a credential presentation made by a physically presents in form of QR
+    <ul>
+      <li>The credential must be a valid W3C VCs credential presentation</li>
+      <li>I want to view the citizen’s personal information</li>
+    </ul>
+  </li>
+  <li>As a citizen I would like to backup every credential I receive and be able to restore it</li>
+</ol>
+
+<hr>
+
+<p>Continue reading:</p>
+<ul>
+  <li><a href="run">Run the project locally</a></li>
+  <li><a href="architecture">Read more about the design &amp; architecture</a></li>
+  <li><a href="applications">Use and modify the applications</a></li>
+  <li><a href="services">Run the services</a></li>
   <li><a href="learnings">Learnings</a></li>
   <li><a href="acknowledgements">Acknowledgements</a></li>
 </ul>

@@ -917,8 +917,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-03 04:45:21 +0000T00:00:00.000Z">2020-12-03</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2020-12-09 13:59:23 +0000T00:00:00.000Z">2020-12-09</time> | -->
+     2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/run.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1677,9 +1677,71 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h2 id="the-mvp---run-locally">The MVP - RUN Locally</h2>
+                  <h2 id="the-mvp---run-locally">The MVP - Run Locally</h2>
 
-<p><em>WIP</em></p>
+<p>Running the project consists of XXX main steps. To understand all the process please read <a href="../architecture">architecture &amp; design article</a> first</p>
+
+<h3 id="1-run-the-infrastructure">1. Run the infrastructure</h3>
+
+<p>Requirements:</p>
+<ul>
+  <li>RSK node with <code class="highlighter-rouge">eth_getLogs</code> enabled - public nodes are:
+    <ul>
+      <li>For RSK Mainnet https://did.rsk.co:4444</li>
+      <li>For RSK Testnet https://did.testnet.rsk.co:4444</li>
+    </ul>
+  </li>
+  <li>IPFS node on the same environment that the services will run
+    <ul>
+      <li>Guides to run an IPFS node https://docs.ipfs.io/how-to/command-line-quick-start/</li>
+      <li>Make sure you are able to pin files using this IPFS node</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="2-configure-and-run-the-services">2. Configure and run the services</h3>
+
+<p>Clone the repo from https://github.com/rsksmart/rif-identity-services and checkout <code class="highlighter-rouge">v0.1.0</code></p>
+
+<p>First of all <a href="https://github.com/rsksmart/rif-identity-services/tree/v0.1.0#setup" rel="external noopener noreferrer" target="_blank">set-up</a> generals of all services</p>
+
+<p>Each of the services needs specific (easy) configuration. To configure the service please follow each service-specific, and can be run as standalone. See the guides in each service’s READMEs:</p>
+<ul>
+  <li><a href="https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/issuer#run" rel="external noopener noreferrer" target="_blank">Issuer service</a></li>
+  <li><a href="https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/data-vault#run" rel="external noopener noreferrer" target="_blank">Data Vault service</a></li>
+  <li><a href="https://github.com/rsksmart/rif-identity-services/tree/v0.1.0/services/convey" rel="external noopener noreferrer" target="_blank">Convey service</a></li>
+</ul>
+
+<p>The services are seamlessly run using Docker. See the guide <a href="https://github.com/rsksmart/rif-identity-services/tree/v0.1.0#start-services" rel="external noopener noreferrer" target="_blank">here</a></p>
+
+<h3 id="3-serve-the-services">3. Serve the services</h3>
+
+<p>You will need to serve the services on public HTTPS server to enable access from mobile applications. To do so you can:</p>
+<ul>
+  <li>Run a cloud server</li>
+  <li>Serve from your computer using tools like <a href="https://ngrok.com/" rel="external noopener noreferrer" target="_blank">ngrok</a>
+</li>
+</ul>
+
+<h3 id="4-configure-the-apps">4. Configure the apps</h3>
+
+<p>First of all you will need to <a href="https://reactnative.dev/docs/environment-setup" rel="external noopener noreferrer" target="_blank">set up React Native</a> - this can be time-spending</p>
+
+<p>After this is done, clone the repo from https://github.com/rsksmart/rif-identity-ui and checkout <code class="highlighter-rouge">holder-v0.1.2</code></p>
+
+<p>Run the <a href="https://github.com/rsksmart/rif-identity-ui#development" rel="external noopener noreferrer" target="_blank">general setup</a>. Please refer to each app’s README to configure the service endpoints, the general README is outdated and already tagged.</p>
+
+<h3 id="5-run-the-apps">5. Run the apps</h3>
+
+<p>The apps can be run in two modes:</p>
+<ul>
+  <li>Development mode</li>
+  <li>Production build</li>
+</ul>
+
+<p>Please refer to <a href="https://reactnative.dev/docs/running-on-device" rel="external noopener noreferrer" target="_blank">React Native docs</a> to run the apps.</p>
+
+<p><strong>All done!</strong>. We recommend to follow <a href="../#the-user-story">this user story</a> to understand and learn how to use the apps.</p>
 
 
                   

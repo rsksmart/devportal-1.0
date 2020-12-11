@@ -925,8 +925,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-03 04:45:50 +0000T00:00:00.000Z">2020-12-03</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2020-12-03 21:29:42 +0000T00:00:00.000Z">2020-12-03</time> | -->
+     2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/applications/verifier-app.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1685,9 +1685,27 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h1 id="verifier-app">Verifier App</h1>
+                  <h1 id="police-officers-app---qr-scanner-like-mobile-application-android">Police officers app - QR-scanner-like mobile application (Android)</h1>
 
-<p><em>WIP</em></p>
+<p>The Police officers app is a mobile application that can be used to scan credentials presented on QR codes.</p>
+
+<p>Read the <a href="../../run">running guide</a> to run the whole project or <a href="https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/W3CVerifier" rel="external noopener noreferrer" target="_blank">browse the open-source repo</a> to run locally (please use tag <code class="highlighter-rouge">holder-v0.1.2</code>)</p>
+
+<p>Take a look at the <a href="https://www.figma.com/proto/KFwPTkCesIMlnutNDqJQLD/Gibraltar-Identity?node-id=274%3A2&amp;scaling=min-zoom" rel="external noopener noreferrer" target="_blank">Figma prototype</a></p>
+
+<h3 id="specifications">specifications</h3>
+
+<ul>
+  <li>User interface: the app displays a list of credentials that were verified and the verification status (accepted/rejected) of each. It also displays a button that prompts a QR scanner which is used to scan the holder’s QR. After the scan, the status of the verification and the credential details are displayed.</li>
+  <li>Communication: the app does not need to communicate with the issuer application. All the necessary information to authenticate and verify the credential is shared in the QR. To verify the issuer identity it stores the issuer public key and performs cryptographic verification with signatures shared with the credential.</li>
+</ul>
+
+<h2 id="features">Features</h2>
+
+<ul>
+  <li>Verify presentations displayed from <a href="../holder-app">the citizens app</a> via QR code</li>
+  <li>List the historical scanned presentations with verification success indicator</li>
+</ul>
 
 
                   

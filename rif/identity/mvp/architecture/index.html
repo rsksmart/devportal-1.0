@@ -917,8 +917,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-03 04:45:21 +0000T00:00:00.000Z">2020-12-03</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2020-12-03 21:29:42 +0000T00:00:00.000Z">2020-12-03</time> | -->
+     2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1679,7 +1679,60 @@
 
                   <h2 id="the-mvp---design--architecture">The MVP - Design &amp; Architecture</h2>
 
-<p><em>WIP</em></p>
+<p>The product is designed in 5 layers</p>
+
+<p><img src="../assets/img/architecture.png" alt=""></p>
+
+<h3 id="applications-layer">Applications layer</h3>
+
+<p>User interfaces letting users form part of the model</p>
+<ul>
+  <li><a href="../applications/issuer-app">Ministry of Transport app</a></li>
+  <li><a href="../applications/holder-app">Citizens app</a></li>
+  <li><a href="../applications/verifier-app">Police officers app</a></li>
+</ul>
+
+<h3 id="services-layer">Services layer</h3>
+
+<p>W eb services built to enable communication and interaction between actors</p>
+<ul>
+  <li>
+<a href="../services/issuer-service">Issuer service</a> - allows receiving credential issuance requests and approving them manually</li>
+  <li>
+<a href="../services/convey-service">Convey service</a> - Public transport layer for JWTs using IPFS</li>
+  <li>
+<a href="../services/data-vault">Data Vault</a> - This service uses an IPFS node to pin files (POC implementation - productive implementation documentation <a href="../../data-vault">here</a>)</li>
+</ul>
+
+<p><img src="../assets/img/services.png" alt="services"></p>
+
+<h3 id="the-libraries">The libraries</h3>
+
+<p>Reusable and secure implementations compliant with the design protocols</p>
+
+<ul>
+  <li>
+<a href="../../libraries/mnemonics">Mnemonics</a> - identity derivation tools using mnemonic phrases</li>
+  <li>
+<a href="../../libraries/rsk-ethr-did">RSK DIDs</a> - handle Ethr DID method procedures in RSK network</li>
+  <li>
+<a href="../../libraries/ethr-did">Ethr DID</a> - uPort <code class="highlighter-rouge">ethr-did</code> with RSK support</li>
+  <li>
+<a href="../../libraries/daf">DAF bindings</a> - use uPort agent with RIF identity multi identity model</li>
+  <li>
+<a href="../../libraries/core">VC Core module</a> - Verifiable Credentials in React.js + Redux</li>
+  <li>Express DID Auh - Express middleware to authenticate users using DIDs and VCs (POC implementation -  - productive implementation documentation <a href="../../rlogin/implementation/express-did-auth">here</a>)</li>
+</ul>
+
+<p><img src="../assets/img/libraries.png" alt="libraries"></p>
+
+<h3 id="the-protocols-and-specifications">The protocols and specifications</h3>
+
+<p>A set of documents describing how actors perform different actions over the model - read more <a href="../../specs">here</a></p>
+
+<h3 id="the-infrastructure">The infrastructure</h3>
+
+<p>All the model is design on top of RSK and <a href="https://ipfs.io" rel="external noopener noreferrer" target="_blank">IPFS</a></p>
 
 
                   

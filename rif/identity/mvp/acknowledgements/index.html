@@ -917,8 +917,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-03 04:45:21 +0000T00:00:00.000Z">2020-12-03</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2020-12-09 13:59:23 +0000T00:00:00.000Z">2020-12-09</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/acknowledgements.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1679,7 +1679,21 @@
 
                   <h2 id="the-mvp---acknowledgements">The MVP - Acknowledgements</h2>
 
-<p><em>WIP</em></p>
+<p>Most of the acknowledgements about bad-use, bugs or features to be upgraded are found in each repo’s issues.</p>
+
+<p>The applications, services and libraries were audited. This is the report:</p>
+
+<p><em>We identified the following areas for the improvement of RIF Identity security, we recommend prioritizing the fixes for issues 1 and 2:</em></p>
+
+<ol>
+  <li>Holder app: Mnemonic and private key are <a href="https://github.com/rsksmart/rif-identity-ui/blob/develop/apps/IdentityApp/src/daf/dafSetup.ts#L32" rel="external noopener noreferrer" target="_blank">stored on the local database without encryption</a>, currently it’s using a ‘dummybox’ with a hardcoded secret that does not encrypt at all. Consider using <a href="https://www.npmjs.com/package/react-native-keychain" rel="external noopener noreferrer" target="_blank">this library</a> to store the secrets and to avoid implementing your own cryptographic functions.</li>
+  <li>The authentication flow in <code class="highlighter-rouge">express-did-auth</code> allows relay attacks, this means that, for example: the Convey service can force the client (mobile app) to sign a challenge for the credential request service or vice versa. Currently, the client includes the server’s DID as subject (JWT sub) on the challenge response. However, this subject is not verified on the server when <a href="https://github.com/rsksmart/rif-identity-services/blob/2788d68216806a116beddb133d9f5dd531de61a3/packages/express-did-auth/src/index.js" rel="external noopener noreferrer" target="_blank">processing the challenge response</a>.  The <a href="https://github.com/rsksmart/rif-identity-services/blob/2788d68216806a116beddb133d9f5dd531de61a3/packages/express-did-auth/src/index.js#L78" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">getAuthToken()</code></a> must verify that the subject included on the challenge response matches the DID of the service.</li>
+  <li>Holder app: Deprecated <a href="https://github.com/rsksmart/rif-identity-ui/blob/develop/apps/IdentityApp/src/daf/AESSecretBox.ts" rel="external noopener noreferrer" target="_blank">crypto library</a> uses a static IV to encrypt the presentation (vp) before uploading it to Convey. This means that if two presentations begin with the same values, the encryption will result in the same cipher text on the first 16 bytes. In this case, the presentations begins with a different timestamp (iss/exp) which mitigates the issue. However, if this function is used to encrypt another data in the future, it would leak information that could allow further attacks.</li>
+  <li>Revocation of credentials is not possible, the user interface on the Issuer app, it displays the option but is not implemented on the backend yet.</li>
+  <li>Issuer app: When a credential is “revoked” the backoffice user can change the status of it to “granted” again. The user interface does not allow this, however it’s possible to change the status from “revoked” to “granted” sending <a href="https://github.com/rsksmart/rif-identity-services/blob/2788d68216806a116beddb133d9f5dd531de61a3/services/issuer/src/services/backOffice.ts#L52" rel="external noopener noreferrer" target="_blank">direct requests</a> to the server.</li>
+  <li>Holder app: Screen capture is permitted, users could take a screenshot of the mnemonic phrase and increase the risk of compromise as it will be stored on the photo gallery and cloud backups. Consider this example <a href="https://github.com/hawkup/react-native-prevent-screenshot-poc" rel="external noopener noreferrer" target="_blank">library</a>.</li>
+  <li>Holder app: Remove the screen <a href="https://github.com/rsksmart/rif-identity-ui/blob/5f2809f739c0143cd9305a388de28589f86a3df5/apps/IdentityApp/src/features/pin/operations.ts#L44" rel="external noopener noreferrer" target="_blank">PIN lock logged to console</a>.</li>
+</ol>
 
 
                   
