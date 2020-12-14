@@ -194,6 +194,15 @@ $('#fullCarousel').owlCarousel({
     }
 });
 
+// add selected class to main nav when url match
+$(function() {
+    var pageUrl = location.href;
+    $('#main-menu li a').each(function() {
+        $(this).toggleClass('selected', this.href === pageUrl);
+    });
+  });
+
+
 $(document).ready(function () {
   setUpMainSearch();
   const renderFeatures = $('.render-features')

@@ -1,0 +1,152 @@
+{
+  "knowledges": [
+    {
+      "topTen": [
+        {
+          "id": "1",
+          "question": "Can I try GetResponse before I buy?",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "status": "active"
+        },
+        {
+          "id": "2",
+          "question": "How to create and send a newsletter",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "status": "active"
+        },
+        {
+          "id": "3",
+          "question": "What are GetResponse Webinars?",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "status": "active"
+        },
+        {
+          "id": "4",
+          "question": "How do I create a webinar?",
+          "url": "/tutorials/",
+          "status": "active"
+        },
+        {
+          "id": "5",
+          "question": "What are the technical requirements and troubleshooting steps for webinars?",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "status": "active"
+        },
+        {
+          "id": "6",
+          "question": "Can I start a workflow with multiple conditions?",
+          "url": "/tutorials/",
+          "status": "active"
+        },
+        {
+          "id": "7",
+          "question": "What is Conversion funnel?",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "status": "active"
+        },
+        {
+          "id": "8",
+          "question": "How to create a list building funnel?",
+          "url": "/tutorials/",
+          "status": "active"
+        },
+        {
+          "id": "9",
+          "question": "How to create a sales funnel?",
+          "url": "/tutorials/",
+          "status": "active"
+        },
+        {
+          "id": "10",
+          "question": "How to create an ad with Facebook Ads integration?",
+          "url": "/tutorials/",
+          "status": "active"
+        }
+      ],
+      "quickEntries": [
+        {
+          "id": "1",
+          "title": "Getting started with\nGetResponse",
+          "icon": "fas fa-arrow-right",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "id": "2",
+          "title": "Building contact lists",
+          "icon": "far fa-list-alt",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "id": "3",
+          "title": "Managing contacts",
+          "icon": "fas fa-user-alt",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "id": "4",
+          "title": "Working with messages",
+          "icon": "far fa-envelope",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "id": "5",
+          "title": "Conversion funnel",
+          "icon": "fas fa-filter",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "id": "6",
+          "title": "Ecommerce",
+          "icon": "fas fa-shopping-cart",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "id": "7",
+          "title": "Marketing automation",
+          "icon": "fas fa-cogs",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        },
+        {
+          "id": "8",
+          "title": "Analyzing statistics",
+          "icon": "far fa-chart-bar",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/"
+        }
+      ], 
+      "latestRessorces": [
+        {
+          "id": "1",
+          "title": "Personalize and Protect:\nMake a Real Connection\nwith your Customers",
+          "image": "/assets/revamp/img/ressources/ressource.svg",
+          "ressourceType": "page",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "excerpt": "5 Tips to Boost Customer Engagement with Email Marketing, with Pam Moore\nWatch the webinar recording with digital marketing expert Pam Moore and learn how to easily create high-converting landing pages, emails, and autoresponders that engage audiences long-term."
+        }, 
+        {
+          "id": "2",
+          "title": "Holiday Marketing\nCampaigns Checklist\nfor 2020",
+          "image": "/assets/revamp/img/ressources/ressource2.svg",
+          "ressourceType": "page",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "excerpt": "5 Tips to Boost Customer Engagement with Email Marketing, with Pam Moore\nWatch the webinar recording with digital marketing expert Pam Moore and learn how to easily create high-converting landing pages, emails, and autoresponders that engage audiences long-term."
+        },
+        {
+          "id": "3",
+          "title": "How to Create Really Good™️\nAutomated Emails\n[Webinar Recording]",
+          "image": "/assets/revamp/img/ressources/ressource3.svg",
+          "ressourceType": "video",
+          "url": "https://www.youtube.com/watch?v=6Y8smAwIGtA&ab_channel=Indorse",
+          "excerpt": "5 Tips to Boost Customer Engagement with Email Marketing, with Pam Moore\nWatch the webinar recording with digital marketing expert Pam Moore and learn how to easily create high-converting landing pages, emails, and autoresponders that engage audiences long-term."
+        },
+        {
+          "id": "4",
+          "title": "5 Tips to Boost Customer\nEngagement with Email Marketing,\nwith Pam Moore",
+          "image": "/assets/revamp/img/ressources/ressource.svg",
+          "ressourceType": "page",
+          "url": "/tutorials/ethereum-devs/geth-attach-local-node/",
+          "excerpt": "5 Tips to Boost Customer Engagement with Email Marketing, with Pam Moore\nWatch the webinar recording with digital marketing expert Pam Moore and learn how to easily create high-converting landing pages, emails, and autoresponders that engage audiences long-term."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+{% include revamp/head.html %}
+{% include revamp/header.html %}
+
+<body class="darktheme">
+    <div class="container">
+        <!-- Mat-->
+        <div class="row main_content">
+            <!-- BETA CONTENT column -->
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12 beta_content">
+                <!-- page info -->
+                <div class="row">
+                    <!--description-->
+                    <div class="col-12">
+                        <!-- switch theme -->
+                        <div class="row mb-3">
+                            <div class="col-md-4 offset-md-8 text-md-right p-0">
+                                <span class="theme-switch-wrapper">
+                                    <label class="theme-switch" for="checkbox">
+                                        <input type="checkbox" id="checkbox" />
+                                        <div class="slider round"></div>
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 homepage homepage-presentation content-box">
+                               
+                                    
+                                        <h1>Knowledge base</h1>
+                                    
+                             
+                            </div>
+                        </div>
+                        {{ content }}
+                    </div>
+                </div><!-- page info ends -->
+            </div> <!-- beta contents ends -->
+            <!-- content ends here -->
+        </div>
+    </div>
+    {% include revamp/footer.html %}
+    <!-- VIDEO MODAL -->
+    <div class="modal fade" id="homevideomodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <iframe width="auto" height="500px" src="https://www.youtube.com/embed/6U0_UkuOh2I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- VIDEO MODAL ENDS -->
+</body>
+{% include revamp/include.html %}
+
+</html>
