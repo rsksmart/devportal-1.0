@@ -925,7 +925,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 23:48:01 +0000T00:00:00.000Z">2020-12-02</time> | -->
+    <!--time role="presentation" datetime="2020-12-04 19:57:58 +0000T00:00:00.000Z">2020-12-04</time> | -->
      9' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/client.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1759,6 +1759,18 @@ If there are not <code class="highlighter-rouge">keys</code>, it returns an empt
 <span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
 
 <span class="kd">const</span> <span class="nx">keys</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getKeys</span><span class="p">()</span>
+</code></pre></div></div>
+
+<h3 id="get-storage-information">Get storage information</h3>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">storage</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getStorageInformation</span><span class="p">()</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Used: </span><span class="p">${</span><span class="nx">storage</span><span class="p">.</span><span class="nx">used</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Available: </span><span class="p">${</span><span class="nx">storage</span><span class="p">.</span><span class="nx">available</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h4 id="create">Create</h4>

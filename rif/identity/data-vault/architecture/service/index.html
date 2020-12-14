@@ -925,7 +925,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 23:23:25 +0000T00:00:00.000Z">2020-12-02</time> | -->
+    <!--time role="presentation" datetime="2020-12-04 19:57:58 +0000T00:00:00.000Z">2020-12-04</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/service.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1728,11 +1728,17 @@
 
 <p>Returns: an HTTP 200 with an array of objects containing <code class="highlighter-rouge">{ id: string, content: string }</code> representing the associated content. Will be empty if no content found.</p>
 
-<h5 id="get-keysdid">GET /keys/:did</h5>
+<h5 id="get-keys">GET /keys</h5>
 
 <p>Get all the <code class="highlighter-rouge">keys</code> associated to the logged <code class="highlighter-rouge">did</code></p>
 
 <p>Returns: an HTTP 200 with an array of strings representing the associated keys. Will be empty if no keys found.</p>
+
+<h5 id="get-storage">GET /storage</h5>
+
+<p>Get storage availability information of the logged <code class="highlighter-rouge">did</code></p>
+
+<p>Returns: an HTTP 200 with an object containing the storage availability information <code class="highlighter-rouge">{ used: number, available: number }</code></p>
 
 <h5 id="post-contentkey">POST /content/:key</h5>
 

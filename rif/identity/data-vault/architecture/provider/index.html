@@ -925,7 +925,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 23:23:25 +0000T00:00:00.000Z">2020-12-02</time> | -->
+    <!--time role="presentation" datetime="2020-12-04 19:57:58 +0000T00:00:00.000Z">2020-12-04</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/provider.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1697,6 +1697,7 @@
   <li>Stores, retrieve, deletes and swaps content from/in an IPFS node</li>
   <li>Associates did -&gt; key -&gt; cid in a SQLite local DB so it is not needed to remember the just created cid</li>
   <li>Pins and unpins cids in the given IPFS node</li>
+  <li>Limited storage per did</li>
 </ul>
 
 <h3 id="usage">Usage</h3>
@@ -1724,8 +1725,9 @@ const dbConnection = await createConnection({
   synchronize: true
 })
 
-const ipfsPinnerProvider = await ipfsPinnerProviderFactory(dbConnection, ipfsApi)
-// NOTE: ipfsApi is optional. Default value is: 'http://localhost:5001'
+const ipfsPinnerProvider = await ipfsPinnerProviderFactory({ dbConnection, ipfsApiUrl, maxStorage })
+// NOTE: ipfsApiUrl is optional. Default value is: 'http://localhost:5001'
+// NOTE: maxStorage is optional. Default value is: 1000000 // 1 mb
 </code></pre>
 
 <h4 id="advanced-instance">Advanced instance</h4>
@@ -1751,6 +1753,7 @@ const dbConnection = await createConnection({
   synchronize: true
 })
 
+const maxStorage = 1000000
 const pinnedCidsRepository = dbConnection.getRepository(IpfsPinnedCid)
 const metadataRepository = dbConnection.getRepository(IpfsMetadata)
 
@@ -1759,7 +1762,7 @@ const ipfsClient = new IpfsClient(ipfsHttpClient)
 const ipfsPinner = new IpfsPinner(ipfsHttpClient, pinnedCidsRepository)
 const metadataManager = new MetadataManager(metadataRepository)
 
-const IpfsPinnerProvider = new IpfsPinnerProvider(ipfsClient, metadataManager, ipfsPinner)
+const IpfsPinnerProvider = new IpfsPinnerProvider(ipfsClient, metadataManager, ipfsPinner, maxStorage)
 </code></pre>
 
 <h4 id="usage-1">Usage</h4>
@@ -1781,6 +1784,10 @@ const anotherCid: string = await ipfsPinnerProvider.swap(did, key, 'the new cont
 const deleted: boolean = await ipfsPinnerProvider.delete(did, key)
 
 const deleted: boolean = await ipfsPinnerProvider.delete(did, key, cid) // cid can be specified if there is more than one content associated to the given did and key
+
+const availableStorage: number = await ipfsPinnerProvider.getAvailableStorage(did) // return the amount of bytes available to store value associated to the given did
+
+const usedStorage: number = await ipfsPinnerProvider.getUsedStorage(did) // return the amount of bytes used to store value associated to the given did
 </code></pre>
 
 <h3 id="run-for-development">Run for development</h3>
