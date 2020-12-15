@@ -3855,7 +3855,7 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/non-fungible-tokens-what
  s-behind-intelligent-nfts
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20201109T230000Z
+LAST-MODIFIED:20201110T144700Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202011-004@developers.rsk.co/
@@ -3886,5 +3886,98 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/programando-contratos-in
 STATUS:CONFIRMED
 X-LANGUAGE:Spanish
 LAST-MODIFIED:20201109T230000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202012-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201201T120000Z
+DTSTART:20201201T120000Z
+SUMMARY:PCH2020 Demo Day and Prizes - Post Covid Hack 
+DESCRIPTION:PCH2020 Demo Day and Prizes - Post Covid Hack\n\nOnline only\n
+ \nRSVP: \n\nVideo stream: https://www.eventbrite.sg/e/post-covid-hack-demo
+ -day-announcing-the-winning-projects-open-for-all-tickets-122360354113\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>PCH2020
+  Demo Day and Prizes - Post Covid Hack</span></div>\n<div><span>Online onl
+ y</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video
+  stream &nbsp\;</b><span><a href=\"https://www.eventbrite.sg/e/post-covid-
+ hack-demo-day-announcing-the-winning-projects-open-for-all-tickets-1223603
+ 54113\">www.eventbrite.sg/e/post-covid-hack-demo-day-announcing-the-winnin
+ g-projects-open-for-all-tickets-122360354113</a></span></div>\n</BODY>\n</
+ HTML>
+ORGANIZER;CN="Diego Gutierrez Zaldivar\, CEO\, @dieguito":mailto:developer
+ s@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:PCH2020 Demo Day and Prizes - Post Covid Hack 
+END:VALARM
+CATEGORIES:Hackathon
+URL;VALUE=URI:https://www.eventbrite.sg/e/post-covid-hack-demo-day-announc
+ ing-the-winning-projects-open-for-all-tickets-122360354113
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201201T120000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202012-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201216T170000Z
+DTSTART:20201216T170000Z
+SUMMARY:Powpeg: the most secure\, permissionless and uncensorable Bitcoin 
+ peg 
+DESCRIPTION:Powpeg: the most secure\, permissionless and uncensorable Bitc
+ oin peg\n\nOnline only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co
+ /iov-labs-1/powpeg\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Powpeg:
+  the most secure\, permissionless and uncensorable Bitcoin peg</span></div
+ >\n<div><span>Online only</span></div>\n<div><b>RSVP &nbsp\;</b><span></sp
+ an></div>\n<div><b>Video stream &nbsp\;</b><span><a href=\"https://app.liv
+ estorm.co/iov-labs-1/powpeg\">app.livestorm.co/iov-labs-1/powpeg</a></span
+ ></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Sergio Lerner\, CSO\, @sdlerner":mailto:developers@iovlabs.o
+ rg
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Powpeg: the most secure\, permissionless and uncensorable Bitc
+ oin peg 
+END:VALARM
+CATEGORIES:Webinar
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/powpeg
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20201214T190000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202012-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20201218T220000Z
+DTSTART:20201218T220000Z
+SUMMARY:Aprenda Blockchain e Smart Contracts 
+DESCRIPTION:Aprenda Blockchain e Smart Contracts\n\nOnline only\n\nRSVP: \
+ n\nVideo stream: https://app.livestorm.co/iov-labs-1/aprenda-blockchain-e-
+ smart-contracts\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>Aprenda
+  Blockchain e Smart Contracts</span></div>\n<div><span>Online only</span><
+ /div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &
+ nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/aprenda-bloc
+ kchain-e-smart-contracts\">app.livestorm.co/iov-labs-1/aprenda-blockchain-
+ e-smart-contracts</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:Aprenda Blockchain e Smart Contracts 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/aprenda-blockchain-e-sma
+ rt-contracts
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20201214T190000Z
 END:VEVENT
 END:VCALENDAR

@@ -61,6 +61,43 @@ button:focus {
     width: 90px!important;
 }
 
+@media (min-width:992px) {
+.dropdown>.dropdown-menu {
+  transform: scale(0);
+  transition: 0.3s all ease-in-out;
+  display: block;
+  border: 1px solid #00B520;
+}
+
+.dropdown:hover>.dropdown-menu {
+  transform: scale(1);
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+}
+
+.dropdown-toggle::after {
+    content: "";
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    vertical-align: .100em;
+}
+
+.dropdown-item.active{
+  background-color: transparent;
+  color:#212529;
+  font-weight: 700;
+}
+
 
 /* circles images */
 

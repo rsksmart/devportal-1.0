@@ -48,7 +48,7 @@ There is no limit on the total. Hypothetically, the entire circulating supply ca
 
 However, there are daily quotas:
 
-- Daily limit: 100,000 tokens
+- Daily limit: 1,000,000 tokens
 - Maximum per tx: 10,000 tokens
 - Minimum per tx: 1 token
 
@@ -62,7 +62,7 @@ There is a 0.2% fee charge when crossing the tokens, this fee goes to the valida
 
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
 
-- 120 confirmations are necessary on the RSK Mainnet, and 120 confirmations on the Ethereum Mainnet.
+- 2880 confirmations are necessary on the RSK Mainnet, and 5760 confirmations on the Ethereum Mainnet.
 - 10 confirmations are necessary on the RSK Testnet, and 10 confirmations on the Ethereum Kovan Testnet.
 
 ## How does the Token Bridge work?

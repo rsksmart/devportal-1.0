@@ -27,7 +27,7 @@ title: Addresses and Links
   - Federation_v1: [`0x925606edc5863c079b712daed560c31eff8335b9`](https://explorer.testnet.rsk.co/address/0x925606edc5863c079b712daed560c31eff8335b9)
   - AllowTokens: [`0x952b706a9ab5fd2d3b36205648ed7852676afbe7`](https://explorer.testnet.rsk.co/address/0x952b706a9ab5fd2d3b36205648ed7852676afbe7)
   - MultiSigWallet: [`0x88f6b2bc66f4c31a3669b9b1359524abf79cfc4a`](https://explorer.testnet.rsk.co/address/0x88f6b2bc66f4c31a3669b9b1359524abf79cfc4a)
- 
+
 
 ### On Kovan
 
