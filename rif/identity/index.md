@@ -43,13 +43,16 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="manager">Manage</a>
+        <a href="data-vault">Data Vault</a>
         <br />
         <br />
-        <p>Let your users manage their identity</p>
+        <p>User-centric cloud storage</p>
       </div>
     </div>
   </div>
+</div>
+
+<!--
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
@@ -61,14 +64,14 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="data-vault">Data Vault</a>
+        <a href="manager">Manage</a>
         <br />
         <br />
-        <p>User-centric cloud storage</p>
+        <p>Let your users manage their identity</p>
       </div>
     </div>
   </div>
-</div>
+-->
 
 ## Table of contents
 
@@ -79,18 +82,8 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [Services](mvp/services)
   - [Learnings](mvp/learnings)
   - [Acknowledgements](mvp/acknowledgements)
-- [RIF Identity Manager](manager)
-  - [User guide](manager/user-guide)
-  - [Design & architecture](manager/architecture)
-  - [Develop](manager/develop)
-- [rLogin](rlogin)
-  - [Integrate](rlogin/integrate)
-  - [Design & architecture](rlogin/architecture)
-  - [Implementation](rlogin/implementation)
-    - [rLogin modal (client side)](rlogin/implementation/modal)
-    - [DID Auth (server side)](rlogin/implementation/express-did-auth)
-    - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
-  - [Develop](rlogin/develop)
+- RIF Identity Manager ([more info](https://github.com/rsksmart/rif-identity-manager))
+- rLogin ([more info](https://github.com/rsksmart/rLogin))
 - [Data Vault](data-vault)
   - [Use](data-vault/use)
   - [Design & architecture](data-vault/architecture)
@@ -117,23 +110,47 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [Collaboration guidelines](contribute)
 - [Definitions](definitions)
 - [References](references)
+
+<!--
+- [RIF Identity Manager](manager)
+  - [User guide](manager/user-guide)
+  - [Design & architecture](manager/architecture)
+  - [Develop](manager/develop)
+- [rLogin](rlogin)
+  - [Integrate](rlogin/integrate)
+  - [Design & architecture](rlogin/architecture)
+  - [Implementation](rlogin/implementation)
+    - [rLogin modal (client side)](rlogin/implementation/modal)
+    - [DID Auth (server side)](rlogin/implementation/express-did-auth)
+    - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
+  - [Develop](rlogin/develop)
 - [FAQ](faq)
+-->
 
 ## Repos
 
 MVP
+
 - [MVP Node.js Services](https://github.com/rsksmart/rif-identity-services)
 - [MVP React.js and React Native apps](https://github.com/rsksmart/rif-identity-ui)
+
 Identity Manager
+
 - [RIF Identity manager](https://github.com/rsksmart/rif-identity-manager)
+
 rLogin
+
 - [rLogin](https://github.com/rsksmart/rLogin)
 - [Express DID Auth](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/express-did-auth)
 - [VC JSON Schemas](https://github.com/rsksmart/vc-json-schemas)
 - [Wallet Connect POC](https://github.com/rsksmart/RSKWalletConnect)
+
 Data Vault
+
 - [Data vault Javascript monorepo](https://github.com/rsksmart/rif-data-vault)
+
 Libraries
+
 - [Javascript libraries monorepo](https://github.com/rsksmart/rif-identity.js)
 - [Ethr DID + RSK support](https://github.com/rsksmart/ethr-did)
 - [Ethr DID dev utils](https://github.com/rsksmart/ethr-did-utils)

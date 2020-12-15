@@ -4,4 +4,4 @@ layout: rsk
 
 ## Ethr DID Utils
 
-*WIP*
+Repo: [https://github.com/rsksmart/ethr-did-utils](https://github.com/rsksmart/ethr-did-utils)

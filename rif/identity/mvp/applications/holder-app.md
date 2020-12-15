@@ -2,11 +2,29 @@
 layout: rsk
 ---
 
-# Holder App
+## Citizens App - wallet-like mobile application (Android)
 
-The holder app is a wallet that can be used to store the declarative details and credentials of its users. Built-in React Native it can be packaged for both IOS and Android, however, Android is the only officially supported platform.
+The Citizens app is a wallet that can be used to store the declarative details and credentials of its users. Built-in React Native it can be packaged for both iOS and Android, however, Android is the only officially supported platform.
 
-Its features and visual components are developed for future support of a UI library enabling seamless access to SSI basic user information
+Read the [running guide](../../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/IdentityApp) to run locally (please use tag `holder-v0.1.2`)
+
+Take a look at the [Figma prototype](https://www.figma.com/proto/KFwPTkCesIMlnutNDqJQLD/Gibraltar-Identity?node-id=0%3A1&scaling=scale-down)
+
+## Specifications
+
+- Identity creation: the app will ask the user to backup a 12-word phrase. It is used to create cryptographic keys that will be used to sign credentials, encrypt communications, and encrypt credential backup files. The cryptographic keys derive on a W3C compliant DID representation of the identity,
+- Setup: the app requires a 4-word PIN creation on application first start, then the user is prompted to fill some required personal information. This information fill-up process and the 12-words phrase backup is required just before the first credential is requested. It also allows to restore application contents with the 12-words phrase.
+- Language: framework capable of adding languages seamless, including English and Spanish translations
+- User interface:
+  - Access: the app is locked each time it is closed and enabled when open after the user inputs the PIN
+  - Acquire credential: it allows to request a credential once personal information is filled and phrase was confirmed copied, it asks the user to accept sharing the fields that are required to issue the credential, it sends the request to the issuer app and waits for approval.
+  - View credentials: the user can view the credential content and an icon indicating if the credential is valid or not. It can also view the details of the credential, including all the fields and the entity that signed it.
+  - Present credentials: the user can click a QR signal found beside the credential display. By clicking on this QR the citizen will be able to share with the officer all the information required and a valid cryptographic signature that will allow for verification process.
+  - Backup: is automatic, user has no interaction with backup process unless a problem is detected. In that case it is prompted to share the error with the developer team.
+  - Features: It also allows the user to edit personal information, view the backup phrase, and change the PIN.
+- Persistence: the application must store all the information in a local database, that will be deleted only if the application is deleted.
+- Backup: the backup service (described below) will provide an interface for the citizen app to save files containing credentials into a persistent public database, and to recover that files when the app is initialized with restore backup mode. The backup process requires cryptographic authentication methods, also described below.
+- Communications: the application connects to the issuer app and backup service via HTTPS. A cryptographic key sharing protocol is implemented to ensure security and privacy in each message.
 
 ## Features
 
@@ -55,82 +73,3 @@ Extending this application will require input from the parties wishing to issuer
 - Add images/photo as a declarative detail
 - Send the image of the user in the presentation
 - Translate strings into additional languages.
-
-## Run
-
-### Setting up a Local Environment
-
-Refer to [Setting up the development environment](https://reactnative.dev/docs/environment-setup) from the official docs on setting up your environment. Use the instructions under React Native CLI Quickstart, NOT Expo.
-
-### Install dependencies
-```
-yarn
-```
-
-### Modify Config
-
-The Holder Application uses a .json file for configuration variables. .env files were not a good solution as the app had to be reset and the cache cleared when a change needed to be made. The initial configuration file can be found at `/src/config` and contains the following variables:
-
-```json
-{
-  "ISSUER_ENDPOINT": "",
-  "ISSUER_DID": "",
-  "IPFS_GATEWAY_ENDPOINT": "",
-  "DATA_VAULT_ENDPOINT": "",
-  "RSK_NODE": "",
-  "CONVEY_URL": "",
-  "CONVEY_DID": ""
-}
-```
-
-The user can change any of these variables in the advanced settings screen. Once they are set there, this file is ignored until the app is reset.
-
-### Nodify
-
-The Holder app runs React Native which requires packages only found in Node.js. As such, multiple packages are replaced using [`rn-nodify`](https://openbase.io/js/rn-nodeify/documentation). These are installed after the initial yarn command. There are two additional patches that need to be made after the installation process.
-
-#### Modify app-root-path:
-
-Navigate to:
-```
-/node_modules/app-root-path/browser-shim.js
-```
-Remove or comment out line 3: 
-```
-// exports.path = require('path').dirname(require.main.filename);
-```
-
-#### Modify react-native-os:
-Navigate to: 
-```
-node_modules\react-native-os\android\src\main\java\com\peel\react\RNOSModule.java
-```
-
-Remove or comment out line 31:
-```
-//  @Override
-```
-
-### Run for Android
-
-Connect an Android device to the computer or start an emulator.
-
-```
-yarn android
-```
-
-For Development, the following commands are helpful in clearing the cache:
-
-```
-./android/gradlew --clean
-yarn start --reset-cache
-```
-
-## Build Production Version
-
-Make sure `/src/config.json` contains the initial paths and DIDs.
-
-```
-cd android
-./gradlew assembly-release
-```

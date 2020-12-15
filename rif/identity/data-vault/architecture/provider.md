@@ -13,6 +13,7 @@ A Centralized Data Vault provider compatible with RIF Data Vault standard interf
 - Stores, retrieve, deletes and swaps content from/in an IPFS node
 - Associates did -> key -> cid in a SQLite local DB so it is not needed to remember the just created cid
 - Pins and unpins cids in the given IPFS node
+- Limited storage per did
 
 ### Usage
 
@@ -40,8 +41,9 @@ const dbConnection = await createConnection({
   synchronize: true
 })
 
-const ipfsPinnerProvider = await ipfsPinnerProviderFactory(dbConnection, ipfsApi)
-// NOTE: ipfsApi is optional. Default value is: 'http://localhost:5001'
+const ipfsPinnerProvider = await ipfsPinnerProviderFactory({ dbConnection, ipfsApiUrl, maxStorage })
+// NOTE: ipfsApiUrl is optional. Default value is: 'http://localhost:5001'
+// NOTE: maxStorage is optional. Default value is: 1000000 // 1 mb
 ```
 
 #### Advanced instance
@@ -68,6 +70,7 @@ const dbConnection = await createConnection({
   synchronize: true
 })
 
+const maxStorage = 1000000
 const pinnedCidsRepository = dbConnection.getRepository(IpfsPinnedCid)
 const metadataRepository = dbConnection.getRepository(IpfsMetadata)
 
@@ -76,7 +79,7 @@ const ipfsClient = new IpfsClient(ipfsHttpClient)
 const ipfsPinner = new IpfsPinner(ipfsHttpClient, pinnedCidsRepository)
 const metadataManager = new MetadataManager(metadataRepository)
 
-const IpfsPinnerProvider = new IpfsPinnerProvider(ipfsClient, metadataManager, ipfsPinner)
+const IpfsPinnerProvider = new IpfsPinnerProvider(ipfsClient, metadataManager, ipfsPinner, maxStorage)
 ```
 
 #### Usage
@@ -99,6 +102,10 @@ const anotherCid: string = await ipfsPinnerProvider.swap(did, key, 'the new cont
 const deleted: boolean = await ipfsPinnerProvider.delete(did, key)
 
 const deleted: boolean = await ipfsPinnerProvider.delete(did, key, cid) // cid can be specified if there is more than one content associated to the given did and key
+
+const availableStorage: number = await ipfsPinnerProvider.getAvailableStorage(did) // return the amount of bytes available to store value associated to the given did
+
+const usedStorage: number = await ipfsPinnerProvider.getUsedStorage(did) // return the amount of bytes used to store value associated to the given did
 ```
 
 ### Run for development
