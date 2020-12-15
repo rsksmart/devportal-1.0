@@ -5188,9 +5188,9 @@
     {
       "type": "event/2",
       "id": "202012-002",
-      "version": "1",
+      "version": "2",
       "timestamp": "2020-12-16T17:00:00.000Z",
-      "lastModified": "2020-12-16T17:00:00.000Z",
+      "lastModified": "2020-12-14T19:00:00.000Z",
       "status": "confirmed",
       "url": "",
       "title": "Powpeg: the most secure, permissionless and uncensorable Bitcoin peg",
@@ -5212,7 +5212,7 @@
           "contact": "@sdlerner"
         }
       ],
-      "rsvpEmbedUrl": "https://app.livestorm.co/iov-labs-1/powpeg",
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/04b5ad21-b34d-4a19-b70f-a7c6eae1f21f/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/powpeg",
       "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event8.jpg",
@@ -5221,6 +5221,44 @@
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202012-002/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202012-003",
+      "version": "2",
+      "timestamp": "2020-12-18T22:00:00.000Z",
+      "lastModified": "2020-12-14T19:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Aprenda Blockchain e Smart Contracts",
+      "description": "Este workshop apresenta os fundamentos de Blockchain. Além disso, você vai aprender a criar seu primeiro smart contract, utilizando a linguagem Solidity e publicando na rede RSK.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/92e4534b-3347-4001-9ec9-0925c0dcaefc/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-blockchain-e-smart-contracts",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202012-003/",
       "_isPast": false
     }
   ]
