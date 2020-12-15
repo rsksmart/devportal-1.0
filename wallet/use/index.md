@@ -37,9 +37,9 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
     </div>
 
     <div class="item">
-        <a href="https://www.mellowallet.com" target="blank">
-        <img src="https://rsk.co/img/wallets/2-mellowallet.png" alt="Mellow Wallet">
-        <a class="company-name" href="https://www.mellowallet.com" target="blank">Mellow Wallet</a>
+        <a href="https://www.defiantapp.tech" target="blank">
+        <img src="/assets/img/rsk/wallets/defiant-logo.png" alt="Defiant Wallet">
+        <a class="company-name" href="https://www.defiantapp.tech" target="blank">Defiant Wallet</a>
         </a>
     </div>
 
@@ -65,28 +65,28 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
     </div>
 
     <div class="item">
-        <a href="https://jaxx.io/" target="blank">
-        <img src="https://rsk.co/img/wallets/4-jaxxt.png" alt="Jaxx">
-        <a class="company-name" href="https://jaxx.io/" target="blank">Jaxx</a>
+        <a href="https://mathwallet.org/en-us/" target="blank">
+        <img src="/assets/img/rsk/wallets/MathWallet_Logo_Vertical_Black.png" alt="Math Wallet">
+        <a class="company-name" href="https://mathwallet.org/en-us/" target="blank">Math Wallet</a>
         </a>
     </div>
 
     <div class="item">
-        <a href="https://www.uport.me/" target="blank">
-            <img id="square-fix" src="https://rsk.co/img/wallets/8-uport.png" alt="uPort">
-            <a class="company-name" href="https://www.uport.me/" target="blank">uPort</a>
+        <a href="https://beexo.com/" target="blank">
+            <img id="square-fix" src="/assets/img/rsk/wallets/beexo_wallet.png" alt="Beexo Wallet">
+            <a class="company-name" href="https://beexo.com/" target="blank">Beexo Wallet</a>
         </a>
     </div>
 </div>
 
 ## How to use
 
-- [Jaxx](/wallet/use/jaxx)
 - [Ledger](/wallet/use/ledger)
 - [MyCrypto](/wallet/use/mycrypto)
 - [Nifty](/wallet/use/nifty)
 - [Metamask](/wallet/use/metamask)
 - [RPC](/wallet/use/json-rpc)
+- [Defiant](/solutions/defiant/)
 
 
 ## Compatibility Matrix
@@ -103,4 +103,6 @@ In the following matrix you can see the different features by wallet.
 | Metamask | | ❌ | | ❌ | | ❌ |
 | rWallet | | ✔ | | ✔ | | ✔ |
 | Edge | | ✔ | | ✔ | | ❌ |
-| Mellow | | ✔ | | ✔ | | ❌ |
+| Defiant | | ✔ | | ✔ | | ❌ |
+| Math Wallet | | ❌ | | ❌ | | ❌ |
+| Beexo | | ✔ | | ✔ | | ✔ |
