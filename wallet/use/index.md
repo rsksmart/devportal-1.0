@@ -104,5 +104,5 @@ In the following matrix you can see the different features by wallet.
 | rWallet | | ✔ | | ✔ | | ✔ |
 | Edge | | ✔ | | ✔ | | ❌ |
 | Defiant | | ✔ | | ✔ | | ❌ |
-| Math Wallet | | ✔ | | ✔ | | ✔ |
+| Math Wallet | | ❌ | | ❌ | | ❌ |
 | Beexo | | ✔ | | ✔ | | ✔ |
