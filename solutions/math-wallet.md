@@ -16,30 +16,6 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 
 ![MathWallet-RSK-Integrations](/assets/img/solutions/MathWallet/Diagram-MathWallet.png)
 
-### Supported Tokens
-
-Math Wallets supports;
-
-- BTC
-- ETH
-- BNB
-- DOT
-- NEAR
-- FILECOIN
-- EOS
-- TRON
-- IRIS
-- COSMOS
-- ONTPCX
-- KLP
-- others
-
-### Supported Token Standards
-
-- ERC20
-- ERC677
-- ERC777
-
 ### Useful links
 
 **How to Download Math Wallet**
@@ -47,7 +23,7 @@ Math Wallets supports;
 - [Web](https://mathwallet.org/)
 - [iOS](https://mathwallet.org/en-us/)
 - [Android](https://mathwallet.org/en-us/)
- 
+
 ## Asset types
 
 ### Cryptocurrencies
