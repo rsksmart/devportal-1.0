@@ -87,7 +87,6 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
 - [Metamask](/wallet/use/metamask)
 - [RPC](/wallet/use/json-rpc)
 - [Defiant](/solutions/defiant/)
-- [Math Wallet](/solutions/math-wallet)
 
 ## Compatibility Matrix
 
