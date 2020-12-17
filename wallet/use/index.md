@@ -88,7 +88,6 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
 - [RPC](/wallet/use/json-rpc)
 - [Defiant](/solutions/defiant/)
 
-
 ## Compatibility Matrix
 
 In the following matrix you can see the different features by wallet.

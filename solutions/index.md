@@ -122,4 +122,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/math-wallet/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/MathWallet/MathWallet_Logo_Black.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/math-wallet/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Math Wallet</p>
+                        <p class="card-desc">CryptoWallet for 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi. Check out how Math Wallet integrates with RSK.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/math-wallet/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
