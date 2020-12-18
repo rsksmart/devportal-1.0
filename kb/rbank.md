@@ -2,7 +2,7 @@
 layout: rsk
 title: RBank
 tags: knowledgebase, rsk, rif , rbank, open-finance, tools, building blocks
-description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, resources and tools"
+description: "RBank: A lending solution on RSK, based on the Compound money market protocol"
 ---
 
 ## Introduction
@@ -40,13 +40,11 @@ rbank.Controller.create()
 
 The deployed address of the controller will be unique per instance of RBank, therefore it must be stored and the account must be kept in mind since it will be the owner of the platform, that is, the only account with administrative privileges on the platform.
 
-
 #### Creating a market
 
 To create a market, you must enter the RBank platform using the owner's account, that is, who deployed the Controller contract in the previous step. If the platform is new, you will see the option to create a new market to the right.
 
 The creation form requires that you enter the address of the token with which you are going to trade in this market, the price that it has at this time is the general currency of the platform (USD or a stablecoin), and the annual percentage rate on this market (APR).
-
 
 ![RBank - Admin Dashboard](/assets/img/kb/rbank/AdminDashboard.jpg)
 
@@ -88,16 +86,13 @@ When the transactions have been confirmed you will be able to see what your curr
 
 This sequence diagram shows how communication with RBank contracts occurs through the dApp. It should be noticed that the user must approve 2 transactions, one with the contract that manages the token he owns, and the second with the RBank Market contract, this one performs an operation called "transferFrom" that transfers funds to RBank and requires that the user has previously approved the use of that amount to RBank.
 
-
 ![RBank - Supplier](/assets/img/kb/rbank/Supplier.jpg)
-
 
 ### Borrow
 
 Borrow operation requests tokens borrowed in some RBank market. To start, you select Borrow on the toggle button. Then select the market you want to borrow from.
 
 ![RBank - Borrow](/assets/img/kb/rbank/Borrow.jpg)
-
 
 Once the market is selected you will be able to see what is the money available in the market and also the limit you have to borrow, based on the amount of tokens you have deposited before.
 
@@ -107,7 +102,6 @@ Once you have entered a valid amount, click on the "Borrow Tokens" button. This 
 
 ![RBank - AwaitingTransactionApprovalForBorrow](/assets/img/kb/rbank/AwaitTransBorrow.jpg)
 
-
 When the network confirms the transaction, you can see the updated balance of your account in RBank.
 
 ![RBank - BorrowSuccess](/assets/img/kb/rbank/BorrowSuccess.jpg)
@@ -115,7 +109,6 @@ When the network confirms the transaction, you can see the updated balance of yo
 This sequence diagram shows how communication with RBank contracts happens through the dApp. This operation performs several verifications, including checks for market funds and user liquidity. Remember that these tokens are received directly in the user's wallet.
 
 ![RBank - BorrowUser](/assets/img/kb/rbank/BorrowUser.jpg)
-
 
 ### Withdraw
 
@@ -164,6 +157,7 @@ This sequence diagram shows how communication with RBank contracts happens throu
 ### Liquidate
 
 A settlement is a way of buying the debt that another RBank user has. This purchase consists of paying the debt in tokens of an RBank user whose health factor has fallen to 0% and obtaining in exchange their collateral deposited. As an example we have Alice and Bob situation:
+
 - Alice made supply of 100 TK1 (1 TK1 = 10 $), Alice's health Factor 100% (t0 in the diagram below)
 - Alice applied for a loan of TK2 25 (1 TK2 = $ 20) Alice's health factor 22.43% (t1 in the diagram below).
 - Gradually a change occurs in the price of token 1. Now it costs less. (1 TK1 = $ 6 ).
