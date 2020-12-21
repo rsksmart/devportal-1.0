@@ -11,6 +11,7 @@ A Web Client to simplify the way the services provided by the IPFS Centralized D
 - Manage authentication according to the [DID Auth protocol](../../../rlogin/implementation/express-did-auth)
 - CRUD operations over the RIF Data Vault
 - Stores the authentication credentials in the given storage
+- Encrypts/decrypts data prior to save/return using the user wallet provider
 
 ### Usage
 
@@ -23,7 +24,9 @@ The `Config` object has the following fields:
 - `serviceUrl: string`: the IPFS Centralized Data Vault Service url
 - `serviceDid?: string`: the IPFS Centralized Data Vault Service url did. It is required if the package will be used to perform authenticated requests (Create, Swap or Delete). This field will be used to compare with the issuer of the access token.
 - `did?: string`: the client did. It is required if performing authenticated requests
-- `rpcPersonalSign?: (data: string) => string`: the rpcPersonalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: `(data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })`
+- `rpcPersonalSign?: (data: string) => Promise<string>`: the rpcPersonalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: `(data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })`
+- `getEncryptionPublicKey?: () => Promise<string>`: the method used to get the user encryption public key. That public key will be used to encrypt the content before sending it to the service to be stored. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-getencryptionpublickey) example: `() => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })`
+- `decrypt: (hexCypher: string) => Promise<string>`: the method used to decrypt data stored in the service. By invoking this method, the package prompts the user to decrypt content in the wallet. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-decrypt) example: `(hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })`
 - `storage?: ClientKeyValueStorage`: object that MUST implement the `ClientKeyValueStorage` interface. It is used to save the `accessToken` and `refreshToken`. It uses [window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) if not storage object provided.
 
 ```typescript
@@ -35,9 +38,13 @@ const storage: ClientKeyValueStorage = myCustomStorage
 // the following fields are required just to perform write operations
 const serviceDid = 'did:ethr:rsk:0x123456789....abc'
 const did = 'did:ethr:rsk:0xabcdef....123'
-const signer = mySignerFunction
 
-const client = new DataVaultWebClient({ serviceUrl, did, signer, serviceDid, storage })
+// these are examples with Metamask
+const rpcPersonalSign = (data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })
+const decrypt = (hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })
+const getEncryptionPublicKey = () => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })
+
+const client = new DataVaultWebClient({ serviceUrl, did, serviceDid, storage, rpcPersonalSign, getEncryptionPublicKey, decrypt })
 
 ```
 
