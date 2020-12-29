@@ -60,6 +60,12 @@ You will now find a site located in `./_site`,
 and this will be served at [`http://localhost:4000/`](http://localhost:4000/).
 Each time you save a file, the site will get regenerated.
 
+For incremetal build run
+
+```bash
+rake devi
+```
+
 ### Test build outputs
 
 To run tests that check whether there are any errors in the site:
