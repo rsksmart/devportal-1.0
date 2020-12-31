@@ -22,8 +22,8 @@ The package expose a `DataVaultWebClient` class that receives a `Config` object 
 The `Config` object has the following fields:
 
 - `serviceUrl: string`: the IPFS Centralized Data Vault Service url
-- `authManager?: AuthManager`: the authentication manager. Please find below how to instantiate it.
-- `encryptionManager: EncryptionManager`: the encryption manager. Please find below how to instantiate it.
+- `authManager?: AuthManager`: the authentication manager. Please find instructions on how to instantiate it below.
+- `encryptionManager: EncryptionManager`: the encryption manager. Please find instructions on how to instantiate it below.
 
 ```typescript
 import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'
