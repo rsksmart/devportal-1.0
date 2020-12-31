@@ -2,7 +2,7 @@
 layout: rsk
 ---
 
-## rLogin - Implementation
+## rLogin - Libraries
 
 - [rLogin modal (client side)](modal)
 - [DID Auth (server side)](express-did-auth)
