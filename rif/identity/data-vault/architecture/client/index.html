@@ -927,8 +927,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-21 18:01:01 +0000T00:00:00.000Z">2020-12-21</time> | -->
-     10' to read |
+    <!--time role="presentation" datetime="2020-12-31 12:58:20 +0000T00:00:00.000Z">2020-12-31</time> | -->
+     13' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/client.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1715,47 +1715,91 @@
   <li>
 <code class="highlighter-rouge">serviceUrl: string</code>: the IPFS Centralized Data Vault Service url</li>
   <li>
-<code class="highlighter-rouge">serviceDid?: string</code>: the IPFS Centralized Data Vault Service url did. It is required if the package will be used to perform authenticated requests (Create, Swap or Delete). This field will be used to compare with the issuer of the access token.</li>
+<code class="highlighter-rouge">authManager?: AuthManager</code>: the authentication manager. Please find instructions on how to instantiate it below.</li>
+  <li>
+<code class="highlighter-rouge">encryptionManager: EncryptionManager</code>: the encryption manager. Please find instructions on how to instantiate it below.</li>
+</ul>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">serviceUrl</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://your-ipfs-cpinner-service.com</span><span class="dl">'</span>
+
+<span class="c1">// the following fields are required just to perform write operations</span>
+<span class="kd">const</span> <span class="nx">serviceDid</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">did:ethr:rsk:0x123456789....abc</span><span class="dl">'</span>
+<span class="kd">const</span> <span class="nx">address</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0xabcdef....123</span><span class="dl">'</span> <span class="c1">// user's address</span>
+<span class="kd">const</span> <span class="nx">did</span> <span class="o">=</span> <span class="s2">`did:ethr:rsk:</span><span class="p">${</span><span class="nx">address</span><span class="p">}</span><span class="s2">`</span>
+
+<span class="c1">// these are examples with Metamask</span>
+<span class="kd">const</span> <span class="nx">personalSign</span> <span class="o">=</span> <span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">personal_sign</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">,</span> <span class="nx">data</span><span class="p">]</span> <span class="p">})</span>
+<span class="kd">const</span> <span class="nx">decrypt</span> <span class="o">=</span> <span class="p">(</span><span class="nx">hexCypher</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_decrypt</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">hexCypher</span><span class="p">,</span> <span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
+<span class="kd">const</span> <span class="nx">getEncryptionPublicKey</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_getEncryptionPublicKey</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span>
+  <span class="nx">serviceUrl</span><span class="p">,</span>
+  <span class="na">authManager</span><span class="p">:</span> <span class="k">new</span> <span class="nx">AuthManager</span><span class="p">({</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">personalSign</span> <span class="p">}),</span>
+  <span class="na">encryptionManager</span><span class="p">:</span> <span class="k">new</span> <span class="nx">EncryptionManager</span><span class="p">({</span> <span class="nx">getEncryptionPublicKey</span><span class="p">,</span> <span class="nx">decrypt</span>  <span class="p">})</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<h5 id="auth-manager">Auth Manager</h5>
+
+<p>It manages authentication according to the <a href="../../../rlogin/implementation/express-did-auth">DID Auth protocol</a>. It is in charge of emitting the necessary events to be signed by the user and store the generated tokens.</p>
+
+<p>It is instantiated with a <code class="highlighter-rouge">DIDAuthConfig</code> object, which contains the following fields:</p>
+<ul>
+  <li>
+<code class="highlighter-rouge">serviceUrl: string</code>: the IPFS Centralized Data Vault Service url, the user will be logged in to that url</li>
   <li>
 <code class="highlighter-rouge">did?: string</code>: the client did. It is required if performing authenticated requests</li>
   <li>
-<code class="highlighter-rouge">rpcPersonalSign?: (data: string) =&gt; Promise&lt;string&gt;</code>: the rpcPersonalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: <code class="highlighter-rouge">(data: string) =&gt; window.ethereum.request({ method: 'personal_sign', params: [address, data] })</code>
+<code class="highlighter-rouge">personalSign?: (data: string) =&gt; Promise&lt;string&gt;</code>: the personalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: <code class="highlighter-rouge">(data: string) =&gt; window.ethereum.request({ method: 'personal_sign', params: [address, data] })</code>
 </li>
+  <li>
+<code class="highlighter-rouge">store?: KeyValueStore</code>: object that MUST implement the <code class="highlighter-rouge">KeyValueStore</code> interface. It is used to save the <code class="highlighter-rouge">accessToken</code> and <code class="highlighter-rouge">refreshToken</code>. It uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="external noopener noreferrer" target="_blank">window.localStorage</a> if not store object provided.</li>
+</ul>
+
+<p>Example:</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">serviceUrl</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://your-ipfs-cpinner-service.com</span><span class="dl">'</span>
+<span class="kd">const</span> <span class="nx">address</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0xabcdef....123</span><span class="dl">'</span> <span class="c1">// user's address</span>
+<span class="kd">const</span> <span class="nx">did</span> <span class="o">=</span> <span class="s2">`did:ethr:rsk:</span><span class="p">${</span><span class="nx">address</span><span class="p">}</span><span class="s2">`</span>
+
+<span class="c1">// Metamask example</span>
+<span class="kd">const</span> <span class="nx">personalSign</span> <span class="o">=</span> <span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">personal_sign</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">,</span> <span class="nx">data</span><span class="p">]</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">authManager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AuthManager</span><span class="p">({</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">personalSign</span> <span class="p">})</span>
+</code></pre></div></div>
+
+<h5 id="encryption-manager">Encryption Manager</h5>
+
+<p>It is in charge of managing the encryption of the saved information and the decryption of the received information.</p>
+
+<p>It receives an <code class="highlighter-rouge">EncryptionManagerConfig</code> with the following fields:</p>
+<ul>
   <li>
 <code class="highlighter-rouge">getEncryptionPublicKey?: () =&gt; Promise&lt;string&gt;</code>: the method used to get the user encryption public key. That public key will be used to encrypt the content before sending it to the service to be stored. <a href="https://docs.metamask.io/guide/rpc-api.html#eth-getencryptionpublickey" rel="external noopener noreferrer" target="_blank">Metamask</a> example: <code class="highlighter-rouge">() =&gt; window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })</code>
 </li>
   <li>
 <code class="highlighter-rouge">decrypt: (hexCypher: string) =&gt; Promise&lt;string&gt;</code>: the method used to decrypt data stored in the service. By invoking this method, the package prompts the user to decrypt content in the wallet. <a href="https://docs.metamask.io/guide/rpc-api.html#eth-decrypt" rel="external noopener noreferrer" target="_blank">Metamask</a> example: <code class="highlighter-rouge">(hexCypher: string) =&gt; window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })</code>
 </li>
-  <li>
-<code class="highlighter-rouge">storage?: ClientKeyValueStorage</code>: object that MUST implement the <code class="highlighter-rouge">ClientKeyValueStorage</code> interface. It is used to save the <code class="highlighter-rouge">accessToken</code> and <code class="highlighter-rouge">refreshToken</code>. It uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="external noopener noreferrer" target="_blank">window.localStorage</a> if not storage object provided.</li>
 </ul>
 
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span><span class="p">,</span> <span class="p">{</span> <span class="nx">ClientKeyValueStorage</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
+<p>Example:</p>
 
-<span class="kd">const</span> <span class="nx">serviceUrl</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://your-ipfs-cpinner-service.com</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">storage</span><span class="p">:</span> <span class="nx">ClientKeyValueStorage</span> <span class="o">=</span> <span class="nx">myCustomStorage</span>
-
-<span class="c1">// the following fields are required just to perform write operations</span>
-<span class="kd">const</span> <span class="nx">serviceDid</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">did:ethr:rsk:0x123456789....abc</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">did</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">did:ethr:rsk:0xabcdef....123</span><span class="dl">'</span>
-
-<span class="c1">// these are examples with Metamask</span>
-<span class="kd">const</span> <span class="nx">rpcPersonalSign</span> <span class="o">=</span> <span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">personal_sign</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">,</span> <span class="nx">data</span><span class="p">]</span> <span class="p">})</span>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Metamask example</span>
 <span class="kd">const</span> <span class="nx">decrypt</span> <span class="o">=</span> <span class="p">(</span><span class="nx">hexCypher</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_decrypt</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">hexCypher</span><span class="p">,</span> <span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
 <span class="kd">const</span> <span class="nx">getEncryptionPublicKey</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_getEncryptionPublicKey</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
 
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">serviceDid</span><span class="p">,</span> <span class="nx">storage</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span><span class="p">,</span> <span class="nx">getEncryptionPublicKey</span><span class="p">,</span> <span class="nx">decrypt</span> <span class="p">})</span>
-
+<span class="kd">const</span> <span class="nx">encryptionManager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EncryptionManager</span><span class="p">({</span> <span class="nx">getEncryptionPublicKey</span><span class="p">,</span> <span class="nx">decrypt</span>  <span class="p">})</span>
 </code></pre></div></div>
 
 <h4 id="get">Get</h4>
 
-<p>It returns all the <code class="highlighter-rouge">content</code> (with its <code class="highlighter-rouge">id</code>) associated to a given <code class="highlighter-rouge">key</code> and <code class="highlighter-rouge">did</code> in a form of <code class="highlighter-rouge">{ id: string, content: string }[]</code></p>
+<p>It returns all the <code class="highlighter-rouge">content</code> (with its <code class="highlighter-rouge">id</code>) associated to a given <code class="highlighter-rouge">key</code> and the logged <code class="highlighter-rouge">did</code> in a form of <code class="highlighter-rouge">{ id: string, content: string }[]</code></p>
 
 <div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
 
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span> <span class="p">})</span>
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">decrypt</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span> <span class="p">})</span>
 
 <span class="kd">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">EmailCredential</span><span class="dl">'</span>
 
@@ -1786,6 +1830,18 @@ If there are not <code class="highlighter-rouge">keys</code>, it returns an empt
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Used: </span><span class="p">${</span><span class="nx">storage</span><span class="p">.</span><span class="nx">used</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Available: </span><span class="p">${</span><span class="nx">storage</span><span class="p">.</span><span class="nx">available</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="get-backup-information">Get backup information</h3>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
+
+<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
+
+<span class="kd">const</span> <span class="nx">backup</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getBackup</span><span class="p">()</span>
+
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">This is the keys and cids you have stored in the DV</span><span class="dl">'</span><span class="p">)</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">backup</span><span class="p">)</span>
 </code></pre></div></div>
 
 <h4 id="create">Create</h4>

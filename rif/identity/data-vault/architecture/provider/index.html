@@ -927,7 +927,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-04 19:57:58 +0000T00:00:00.000Z">2020-12-04</time> | -->
+    <!--time role="presentation" datetime="2020-12-30 02:40:25 +0000T00:00:00.000Z">2020-12-30</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/provider.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1792,6 +1792,8 @@ const deleted: boolean = await ipfsPinnerProvider.delete(did, key, cid) // cid c
 const availableStorage: number = await ipfsPinnerProvider.getAvailableStorage(did) // return the amount of bytes available to store value associated to the given did
 
 const usedStorage: number = await ipfsPinnerProvider.getUsedStorage(did) // return the amount of bytes used to store value associated to the given did
+
+const didBackup: Backup = await ipfsPinnerProvider.getBackup(did) // return an array containing all the keys and cids created by the given did
 </code></pre>
 
 <h3 id="run-for-development">Run for development</h3>

@@ -927,7 +927,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-04 19:57:58 +0000T00:00:00.000Z">2020-12-04</time> | -->
+    <!--time role="presentation" datetime="2020-12-30 02:40:25 +0000T00:00:00.000Z">2020-12-30</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/service.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1726,9 +1726,9 @@
 
 <p>The API is divided in two. Content modifications need <a href="../../../specs/did-auth">authenticated requests using DID Auth</a>. It is strongly recommended that the content is encrypted when uploaded. This enables the accessing API to be open to anybody.</p>
 
-<h5 id="get-contentdidkey">GET /content/:did/:key</h5>
+<h5 id="get-contentkey">GET /content/:key</h5>
 
-<p>Get all the <code class="highlighter-rouge">content</code> (with its <code class="highlighter-rouge">id</code>) associated to the given <code class="highlighter-rouge">did</code> and <code class="highlighter-rouge">key</code></p>
+<p>Get all the <code class="highlighter-rouge">content</code> (with its <code class="highlighter-rouge">id</code>) associated to the logged <code class="highlighter-rouge">did</code> and the given <code class="highlighter-rouge">key</code></p>
 
 <p>Returns: an HTTP 200 with an array of objects containing <code class="highlighter-rouge">{ id: string, content: string }</code> representing the associated content. Will be empty if no content found.</p>
 
@@ -1743,6 +1743,12 @@
 <p>Get storage availability information of the logged <code class="highlighter-rouge">did</code></p>
 
 <p>Returns: an HTTP 200 with an object containing the storage availability information <code class="highlighter-rouge">{ used: number, available: number }</code></p>
+
+<h5 id="get-backup">GET /backup</h5>
+
+<p>Get a backup containing all the <code class="highlighter-rouge">keys</code> and its associated content <code class="highlighter-rouge">id</code> of the logged <code class="highlighter-rouge">did</code></p>
+
+<p>Returns: an HTTP 200 with an array containing the full backup of the logged did. It contains <code class="highlighter-rouge">{ key: string, id: string }[]</code> (the <code class="highlighter-rouge">id</code> represents the IPFS cid)</p>
 
 <h5 id="post-contentkey">POST /content/:key</h5>
 
