@@ -87,6 +87,7 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - RIF Identity Manager ([more info](https://github.com/rsksmart/rif-identity-manager))
 - [rLogin](rlogin)
   - [Integrate](rlogin/integrate)
+  - [Integrations](rlogin/integrations)
   - [Design & architecture](rlogin/architecture)
   - [Libraries](rlogin/libraries)
     - [rLogin modal (client side)](rlogin/libraries/modal)
