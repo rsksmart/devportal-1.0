@@ -13,7 +13,7 @@ The rLogin design consists of 4 core modules:
 - A standard interface for Verifiable Credentials enabling data portability
 - A client library combining authentication against back-end using user's wallet and store credentials
 
-![rlogin-architecture](assets/rlogin-architecture.jpg)
+![rlogin-architecture](../assets/rlogin-architecture.jpg)
 
 ### A back-end authentication library
 
