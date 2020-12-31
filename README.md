@@ -60,7 +60,7 @@ You will now find a site located in `./_site`,
 and this will be served at [`http://localhost:4000/`](http://localhost:4000/).
 Each time you save a file, the site will get regenerated.
 
-For incremetal build run
+For incremental builds, run:
 
 ```bash
 rake devi
