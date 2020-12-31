@@ -33,17 +33,9 @@ The rLogin design consists of 4 core modules:
 
 ### Libraries
 
-The implementation of the architecture defined above consists of multiple libraries that enable seamless integration to rLogin protocols:
-- The RIF Data Vault - a user-centric cloud storage service
-- Verifiable Credential JSON Schemas and parser - proposes unique standard interface for Verifiable Credentials
-- Express DID Auth and DID Auth client - a Node.js back-end authentication library and a client-side authentication consumer
-- rLogin modal - a UI tool that lets front-end developer to integrate different compatible wallets and a pre designed UX for application signup and login.
-
-[Read more](./implementation)
+{% include rif-id/rlogin-libraries.md %}
 
 ### Integrate
-
-<!-- TODO: demo video -->
 
 {% include rif-id/rlogin-integrate.html %}
 
