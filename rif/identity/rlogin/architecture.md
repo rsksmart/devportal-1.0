@@ -13,7 +13,7 @@ The rLogin design consists of 4 core modules:
 - A standard interface for Verifiable Credentials enabling data portability
 - A client library combining authentication against back-end using user's wallet and store credentials
 
-![rlogin-architecture](./assets/rlogin-architecture.jpg)
+![rlogin-architecture](assets/rlogin-architecture.jpg)
 
 ### A back-end authentication library
 
@@ -45,8 +45,8 @@ the metadata stored in the cloud must have a specific format so that the differe
 This standard is called VC JSON Schemas and is under development by the W3C. We create a first implementation: a repository where you can find different standard credential schemas and propose new ones.
 
 Read more:
-- [VC JSON Schemas](../../vc-json-schemas)
-- [VC JSON Schemas parser](../../vc-json-schemas-parser)
+- [VC JSON Schemas](../libraries/vc-json-schemas)
+- [VC JSON Schemas parser](../libraries/vc-json-schemas-parser)
 
 ### A client library combining authentication against back-end using user's wallet and store credentials
 
@@ -59,4 +59,4 @@ In summary, the front end tool pops a modal that lets user follow this steps:
 4. Disclose the credentials with the application
 
 Read more:
-- [rLogin modal](../../modal)
+- [rLogin modal](../libraries/modal)

@@ -252,7 +252,7 @@ NOTE: The logout process does not invalidate the current _access token_, it will
 
 ## Implementations
 
-- [`@rsksmart/express-did-auth`](../../rlogin/implementation/express-did-auth) - in progress
+- [`@rsksmart/express-did-auth`](../../rlogin/libraries/express-did-auth) - in progress
 
 ## Extensions
 

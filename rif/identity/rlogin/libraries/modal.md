@@ -156,7 +156,7 @@ const rLogin = new window.RLogin.default({
 
 ### `web3modal` options
 
-Options available for [`web3modal`](https://github.com/web3Modal/web3modal/) are available for `rLogin`. To understand how this works go to section [_the code_](#the-code).
+Options available for [`web3modal`](https://github.com/web3Modal/web3modal/) are available for `rLogin`. To understand how this works go to section [_the code_](https://github.com/rsksmart/rLogin#the-code).
 
 Wallet providers and networks that are listed in [_features_](#features) section are supported and tested, but other can be provided seamlessly with `web3modal` options. We cannot assure quality for using other providers or networks.
 

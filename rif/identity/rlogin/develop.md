@@ -14,4 +14,4 @@ To collaborate see the project find the repos:
 
 In each repo you will find setup for development and specific contribution guidelines.
 
-Also read the [RIF Identity contribution guidelines](../contribute).
+Also read the [RIF Identity contribution guidelines](../../contribute).

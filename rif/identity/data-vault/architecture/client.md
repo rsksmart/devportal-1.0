@@ -8,7 +8,7 @@ A Web Client to simplify the way the services provided by the IPFS Centralized D
 
 ### Features
 
-- Manage authentication according to the [DID Auth protocol](../../../rlogin/implementation/express-did-auth)
+- Manage authentication according to the [DID Auth protocol](../../../rlogin/librarries/express-did-auth)
 - CRUD operations over the RIF Data Vault
 - Stores the authentication credentials in the given storage
 - Encrypts/decrypts data prior to save/return using the user wallet provider
