@@ -106,6 +106,8 @@ const deleted: boolean = await ipfsPinnerProvider.delete(did, key, cid) // cid c
 const availableStorage: number = await ipfsPinnerProvider.getAvailableStorage(did) // return the amount of bytes available to store value associated to the given did
 
 const usedStorage: number = await ipfsPinnerProvider.getUsedStorage(did) // return the amount of bytes used to store value associated to the given did
+
+const didBackup: Backup = await ipfsPinnerProvider.getBackup(did) // return an array containing all the keys and cids created by the given did
 ```
 
 ### Run for development

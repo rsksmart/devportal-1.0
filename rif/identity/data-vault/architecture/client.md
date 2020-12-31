@@ -22,40 +22,80 @@ The package expose a `DataVaultWebClient` class that receives a `Config` object 
 The `Config` object has the following fields:
 
 - `serviceUrl: string`: the IPFS Centralized Data Vault Service url
-- `serviceDid?: string`: the IPFS Centralized Data Vault Service url did. It is required if the package will be used to perform authenticated requests (Create, Swap or Delete). This field will be used to compare with the issuer of the access token.
-- `did?: string`: the client did. It is required if performing authenticated requests
-- `rpcPersonalSign?: (data: string) => Promise<string>`: the rpcPersonalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: `(data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })`
-- `getEncryptionPublicKey?: () => Promise<string>`: the method used to get the user encryption public key. That public key will be used to encrypt the content before sending it to the service to be stored. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-getencryptionpublickey) example: `() => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })`
-- `decrypt: (hexCypher: string) => Promise<string>`: the method used to decrypt data stored in the service. By invoking this method, the package prompts the user to decrypt content in the wallet. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-decrypt) example: `(hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })`
-- `storage?: ClientKeyValueStorage`: object that MUST implement the `ClientKeyValueStorage` interface. It is used to save the `accessToken` and `refreshToken`. It uses [window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) if not storage object provided.
-
-```typescript
-import DataVaultWebClient, { ClientKeyValueStorage } from '@rsksmart/ipfs-cpinner-client'
-
-const serviceUrl = 'http://your-ipfs-cpinner-service.com'
-const storage: ClientKeyValueStorage = myCustomStorage
-
-// the following fields are required just to perform write operations
-const serviceDid = 'did:ethr:rsk:0x123456789....abc'
-const did = 'did:ethr:rsk:0xabcdef....123'
-
-// these are examples with Metamask
-const rpcPersonalSign = (data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })
-const decrypt = (hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })
-const getEncryptionPublicKey = () => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })
-
-const client = new DataVaultWebClient({ serviceUrl, did, serviceDid, storage, rpcPersonalSign, getEncryptionPublicKey, decrypt })
-
-```
-
-#### Get
-
-It returns all the `content` (with its `id`) associated to a given `key` and `did` in a form of `{ id: string, content: string }[]`
+- `authManager?: AuthManager`: the authentication manager. Please find instructions on how to instantiate it below.
+- `encryptionManager: EncryptionManager`: the encryption manager. Please find instructions on how to instantiate it below.
 
 ```typescript
 import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'
 
-const client = new DataVaultWebClient({ serviceUrl })
+const serviceUrl = 'http://your-ipfs-cpinner-service.com'
+
+// the following fields are required just to perform write operations
+const serviceDid = 'did:ethr:rsk:0x123456789....abc'
+const address = '0xabcdef....123' // user's address
+const did = `did:ethr:rsk:${address}`
+
+// these are examples with Metamask
+const personalSign = (data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })
+const decrypt = (hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })
+const getEncryptionPublicKey = () => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })
+
+const client = new DataVaultWebClient({
+  serviceUrl,
+  authManager: new AuthManager({ did, serviceUrl, personalSign }),
+  encryptionManager: new EncryptionManager({ getEncryptionPublicKey, decrypt  })
+})
+```
+
+##### Auth Manager
+
+It manages authentication according to the [DID Auth protocol](../../../rlogin/implementation/express-did-auth). It is in charge of emitting the necessary events to be signed by the user and store the generated tokens.
+
+It is instantiated with a `DIDAuthConfig` object, which contains the following fields:
+- `serviceUrl: string`: the IPFS Centralized Data Vault Service url, the user will be logged in to that url
+- `did?: string`: the client did. It is required if performing authenticated requests
+- `personalSign?: (data: string) => Promise<string>`: the personalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: `(data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })`
+- `store?: KeyValueStore`: object that MUST implement the `KeyValueStore` interface. It is used to save the `accessToken` and `refreshToken`. It uses [window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) if not store object provided.
+
+Example:
+
+```typescript
+const serviceUrl = 'http://your-ipfs-cpinner-service.com'
+const address = '0xabcdef....123' // user's address
+const did = `did:ethr:rsk:${address}`
+
+// Metamask example
+const personalSign = (data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })
+
+const authManager = new AuthManager({ did, serviceUrl, personalSign })
+```
+
+##### Encryption Manager
+
+It is in charge of managing the encryption of the saved information and the decryption of the received information.
+
+It receives an `EncryptionManagerConfig` with the following fields:
+- `getEncryptionPublicKey?: () => Promise<string>`: the method used to get the user encryption public key. That public key will be used to encrypt the content before sending it to the service to be stored. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-getencryptionpublickey) example: `() => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })`
+- `decrypt: (hexCypher: string) => Promise<string>`: the method used to decrypt data stored in the service. By invoking this method, the package prompts the user to decrypt content in the wallet. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-decrypt) example: `(hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })`
+
+Example:
+
+```typescript
+// Metamask example
+const decrypt = (hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })
+const getEncryptionPublicKey = () => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })
+
+const encryptionManager = new EncryptionManager({ getEncryptionPublicKey, decrypt  })
+```
+
+#### Get
+
+It returns all the `content` (with its `id`) associated to a given `key` and the logged `did` in a form of `{ id: string, content: string }[]`
+
+```typescript
+import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'
+
+const client = new DataVaultWebClient({ serviceUrl, decrypt, did, rpcPersonalSign })
 
 const key = 'EmailCredential'
 
@@ -88,6 +128,19 @@ const storage = await client.getStorageInformation()
 
 console.log(`Used: ${storage.used}`)
 console.log(`Available: ${storage.available}`)
+```
+
+### Get backup information
+
+```typescript
+import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'
+
+const client = new DataVaultWebClient({ serviceUrl, did, rpcPersonalSign, serviceDid })
+
+const backup = await client.getBackup()
+
+console.log('This is the keys and cids you have stored in the DV')
+console.log(backup)
 ```
 
 #### Create

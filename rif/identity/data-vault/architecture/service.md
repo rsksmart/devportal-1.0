@@ -33,9 +33,9 @@ This service implements the [DID Auth protocol](../../../specs/did-auth) to prot
 
 The API is divided in two. Content modifications need [authenticated requests using DID Auth](../../../specs/did-auth). It is strongly recommended that the content is encrypted when uploaded. This enables the accessing API to be open to anybody.
 
-##### GET /content/:did/:key
+##### GET /content/:key
 
-Get all the `content` (with its `id`) associated to the given `did` and `key`
+Get all the `content` (with its `id`) associated to the logged `did` and the given `key`
 
 Returns: an HTTP 200 with an array of objects containing `{ id: string, content: string }` representing the associated content. Will be empty if no content found.
 
@@ -50,6 +50,12 @@ Returns: an HTTP 200 with an array of strings representing the associated keys. 
 Get storage availability information of the logged `did`
 
 Returns: an HTTP 200 with an object containing the storage availability information `{ used: number, available: number }`
+
+##### GET /backup
+
+Get a backup containing all the `keys` and its associated content `id` of the logged `did`
+
+Returns: an HTTP 200 with an array containing the full backup of the logged did. It contains `{ key: string, id: string }[]` (the `id` represents the IPFS cid)
 
 ##### POST /content/:key
 
