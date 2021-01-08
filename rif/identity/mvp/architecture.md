@@ -33,7 +33,7 @@ Reusable and secure implementations compliant with the design protocols
 - [Ethr DID](../../libraries/ethr-did) - uPort `ethr-did` with RSK support
 - [DAF bindings](../../libraries/daf) - use uPort agent with RIF identity multi identity model
 - [VC Core module](../../libraries/core) - Verifiable Credentials in React.js + Redux
-- Express DID Auh - Express middleware to authenticate users using DIDs and VCs (POC implementation -  - productive implementation documentation [here](../../rlogin/implementation/express-did-auth))
+- Express DID Auh - Express middleware to authenticate users using DIDs and VCs (POC implementation -  - productive implementation documentation [here](../../rlogin/libraries/express-did-auth))
 
 ![libraries](../assets/img/libraries.png)
 

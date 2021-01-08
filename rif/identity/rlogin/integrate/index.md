@@ -4,4 +4,4 @@ layout: rsk
 
 ## rLogin - Integrate
 
-*WIP*
+{% include rif-id/rlogin-integrate.html %}
