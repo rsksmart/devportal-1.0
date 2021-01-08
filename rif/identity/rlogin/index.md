@@ -5,6 +5,7 @@ layout: rsk
 ## rLogin
 
 rLogin allows web application developers to integrate blockchain technologies giving the user the power of data portability. After integrating rLogin you achieve:
+
 - a back-end authenticating users by their wallet addressed - their Decentralized Identifiers
 - a registration model capable of requesting users for data stored in its user-centric cloud storage, the [Data Vault](../data-vault)
 - a front-end capable of interacting with any wallet that the user chooses, with a pre-designed user experience for registration and login

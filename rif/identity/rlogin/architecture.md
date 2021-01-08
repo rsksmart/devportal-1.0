@@ -36,11 +36,12 @@ Users will be able to save their information in their preferred place. Even so, 
 The Data Vault then allows users to store their Verifiable Credentials, issued by different applications, and to access when authenticating to other applications, thus carrying their information automatically.
 
 Read more:
+
 - [RIF Data Vault](../../data-vault)
 
 ### A standard interface for Verifiable Credentials enabling data portability
 
-the metadata stored in the cloud must have a specific format so that the different applications can understand the meaning of it. Verifiable Credentials allow issuers to digitally sign the data they claim. In this project we began to develop a representation model that allows all applications to understand the same meaning for the same credentials, thus allowing users to port their data across the different applications with which it operates. This way users can build their reputation in a unique way.
+The metadata stored in the cloud must have a specific format so that the different applications can understand the meaning of it. Verifiable Credentials allow issuers to digitally sign the data they claim. In this project we began to develop a representation model that allows all applications to understand the same meaning for the same credentials, thus allowing users to port their data across the different applications with which it operates. This way users can build their reputation in a unique way.
 
 This standard is called VC JSON Schemas and is under development by the W3C. We create a first implementation: a repository where you can find different standard credential schemas and propose new ones.
 
@@ -53,10 +54,12 @@ Read more:
 All the communication with back end under this model is wrapped up in a front end library that enables developer to easily integrate into Self-sovereign Identity. With rLogin library users will be able to pick the wallet of choice to interact with any dApp. It also handles the process of disclosing the information with the application in a private and secure way.
 
 In summary, the front end tool pops a modal that lets user follow this steps:
+
 1. Pick wallet of choice
 2. Connect to backend and request access
 3. Download required credentials from Data Vault
 4. Disclose the credentials with the application
 
 Read more:
+
 - [rLogin modal](../libraries/modal)
