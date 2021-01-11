@@ -6,7 +6,7 @@ description: 'How to configure a Trezor T hardware wallet to derive with a custo
 collection_order: 3160
 ---
 
-How to solve the problem of moving your funds when they are in a account that needs to
+How to solve the problem of moving your funds when they are in an account that needs to
 be derived with a custom derivation path (dpath) using Trezor T.
 
 ## General context
