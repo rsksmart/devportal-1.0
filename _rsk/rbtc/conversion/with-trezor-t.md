@@ -21,7 +21,7 @@ In MyCrypto or MyEtherWallet you may have received this message: `"Forbidden key
 
 To allow custom derivation paths, you will need to turn off safety checks (see [Pavol Rusnak message](https://github.com/trezor/trezor-firmware/issues/1255#issuecomment-691463540)).
 
-To do this, you need first to install [python-trezor](https://github.com/trezor/python-trezor):
+To do this, you need to install [python-trezor](https://github.com/trezor/python-trezor):
 
 ```shell
 pip3 install --upgrade setuptools
