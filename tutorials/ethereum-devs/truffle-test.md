@@ -25,7 +25,7 @@ Here is a summary of the steps to be taken:
 ## Translations
 
 This article is also available in
-[Português](https://solange.dev/2020/rsk-truffle-tests/ "Testando smart contracts utilizando Truffle na rede RSK").
+[Português](https://rsk.solange.dev/#/pt/truffle-tests/readme "Testando smart contracts utilizando Truffle na rede RSK").
 
 # Requirements
 
