@@ -2,11 +2,11 @@
 layout: rsk
 title: Security model
 collection_order: 4500
-tags: rsk, security, peg, federation
+tags: rsk, security, powpeg, peg, federation
 description: "Achieving security in a Powpegged sidechain using proofs of payment"
 ---
 
-A sidechain is an independent blockchain whose native currency is pegged to the value of another blockchain currency automatically by using proofs of payment. There is a [Powpeg](/rsk/architecture/powpeg/) when two currencies can be exchanged freely, automatically, and without incurring in a price negotiation. In RSK, the Smart Bitcoin (R-BTC) is two-way pegged to the BTC.
+A sidechain is an independent blockchain whose native currency is pegged to the value of another blockchain currency automatically by using proofs of payment. There is a [Powpeg](/rsk/architecture/powpeg/) when two currencies can be exchanged freely, automatically, and without incurring in a price negotiation. In RSK, the Smart Bitcoin (R-BTC) is powpegged to the BTC.
 
 In practice, when BTC is exchanged for R-BTC, no currency is “transferred” between blockchains in a single transaction. When a transfer occurs, some BTCs are locked in Bitcoin and the same amount of R-BTC is unlocked in RSK. When R-BTC needs to be converted back into BTC, the R-BTC get locked again in RSK and the same amount of BTC are unlocked in Bitcoin.
 
