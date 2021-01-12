@@ -49,7 +49,7 @@ const client = new DataVaultWebClient({
 
 ##### Auth Manager
 
-It manages authentication according to the [DID Auth protocol](../../../rlogin/implementation/express-did-auth). It is in charge of emitting the necessary events to be signed by the user and store the generated tokens.
+It manages authentication according to the [DID Auth protocol](../../../rlogin/libraries/express-did-auth). It is in charge of emitting the necessary events to be signed by the user and store the generated tokens.
 
 It is instantiated with a `DIDAuthConfig` object, which contains the following fields:
 - `serviceUrl: string`: the IPFS Centralized Data Vault Service url, the user will be logged in to that url
