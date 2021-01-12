@@ -145,7 +145,7 @@ The peg-in process takes around 15 hours (100 Bitcoin blocks) to avoid losing fu
 
 Due to the technical nature of using the peg, the friction created by the waiting period, many exchanges offer RBTC so developers and users can easily access it. Also a number of fast coin-swap solutions, such as Coinswap enables fast transfers for low amounts without registration.
 
-For more information you could read this in depth article by our Chief Scientist, Sergio Lerner on [Sidechains in general and RSK 2 way peg](https://www.rsk.co/noticia/sidechains-drivechains-and-rsk-2-way-peg-design/).
+For more information you could read this in depth article by our Chief Scientist, Sergio Lerner on [Sidechains in general and RSK Powpeg](https://www.rsk.co/noticia/sidechains-drivechains-and-rsk-2-way-peg-design/).
 
 ### Is there a correlation between BTC addresses and RSK addresses despite them looking like ETH addresses?
 
@@ -157,9 +157,9 @@ The native mechanism for transferring bitcoins to RSK (“peg-in”) and vice ve
 
 Since not every user is willing to wait for the required number of block confirmations, exchanges offer a faster mechanism of getting BTC/RBTC, while charging users with exchanges fees.
 
-This blog post explains in detail: [RSK’s 2-Way Peg design](https://blog.rsk.co/noticia/sidechains-drivechains-and-rsk-2-way-peg-design/)
+This blog post explains in detail: [RSK’s Pow Peg design](https://blog.rsk.co/noticia/sidechains-drivechains-and-rsk-2-way-peg-design/)
 
-Additionally, for more information, visit the [2-Way Peg](https://developers.rsk.co/rsk/rbtc/conversion/) mechanism.
+Additionally, for more information, visit the [Powpeg](https://developers.rsk.co/rsk/rbtc/conversion/) mechanism.
 
 ### How does the RIF token accrue value?
 
