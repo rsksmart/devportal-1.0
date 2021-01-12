@@ -14,7 +14,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
-      <link rel="canonical" href="https://developers.rsk.co/rif/identity/rlogin/implementation/">
+      <link rel="canonical" href="https://developers.rsk.co/rif/identity/rlogin/libraries/">
    	<title> - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/favicons/apple-touch-icon.png">
@@ -919,17 +919,17 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 20:58:03 +0000T00:00:00.000Z">2020-12-02</time> | -->
+    <!--time role="presentation" datetime="2020-12-31 00:58:23 +0000T00:00:00.000Z">2020-12-31</time> | -->
      1' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/implementation/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/libraries/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
-          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
-          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/identity/rlogin/implementation/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/libraries/&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/libraries/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/libraries/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/libraries/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/libraries/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/identity/rlogin/libraries/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
     <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
@@ -1681,13 +1681,19 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h2 id="rlogin---implementation">rLogin - Implementation</h2>
+                  <h2 id="rlogin---libraries">rLogin - Libraries</h2>
 
+<p>The implementation of the architecture defined above consists of multiple libraries that enable seamless integration to rLogin protocols:</p>
 <ul>
-  <li><a href="modal">rLogin modal (client side)</a></li>
-  <li><a href="express-did-auth">DID Auth (server side)</a></li>
-  <li><a href="vc-json-schemas">Verifiable Credential schemas (communication)</a></li>
+  <li>The <a href="../../data-vault/">RIF Data Vault</a> - a user-centric cloud storage service</li>
+  <li>
+<a href="vc-json-schemas/">Verifiable Credential JSON Schemas</a> and <a href="vc-json-schemas-parser/">parser</a> - proposes unique standard interface for Verifiable Credentials</li>
+  <li>
+<a href="express-did-auth/">Express DID Auth</a> and <a href="did-auth-client/">DID Auth client</a> - a Node.js back-end authentication library and a client-side authentication consumer</li>
+  <li>
+<a href="modal/">rLogin modal</a> - a UI tool that lets front-end developer to integrate different compatible wallets and a pre designed UX for application signup and login.</li>
 </ul>
+
 
 
                   

@@ -911,8 +911,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 20:58:03 +0000T00:00:00.000Z">2020-12-02</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2021-01-08 05:13:51 +0000T00:00:00.000Z">2021-01-08</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1675,15 +1675,98 @@
 
                   <h2 id="rlogin">rLogin</h2>
 
+<p>rLogin allows web application developers to integrate blockchain technologies giving the user the power of data portability. After integrating rLogin you achieve:</p>
+
+<ul>
+  <li>a back-end authenticating users by their wallet addressed - their Decentralized Identifiers</li>
+  <li>a registration model capable of requesting users for data stored in its user-centric cloud storage, the <a href="../data-vault">Data Vault</a>
+</li>
+  <li>a front-end capable of interacting with any wallet that the user chooses, with a pre-designed user experience for registration and login</li>
+  <li>compatibility with a unified platform where the user can control their identity and information, the <a href="../manager">RIF Identity Manager</a>
+</li>
+</ul>
+
+<h3 id="state-of-the-art">State of the art</h3>
+
+<p>We identify there are two types of decentralized applications: applications with a back-end and applications without a back-end. Applications without a backend interact directly with the blockchain, and probably with some public service (eg: RNS). Backend applications need a type of authentication that confirms the users are in control of their wallet (thus, their private keys) at the time of use (eg: Money on Chain). We call this the web 3.0.</p>
+
+<p>There are web 2.0 applications, where confidence in the authenticity of users relies on services provided by third parties, such as <a href="https://developers.google.com/identity" rel="external noopener noreferrer" target="_blank">Google Authentication</a>. These applications require that the user log in to their account in a third party service. This third party service shares the user’s private information, giving the application the necessary information to authenticate the user. The information is in control of the third-party, which can use it arbitrarily to gain future access.</p>
+
+<p>Today’s decentralized apps have no way of requiring private user information in a unified way. Nor is there any platform that allows an application to obtain reliable proof that a user was authenticated by a third party service without having to communicate with it.</p>
+
+<h3 id="design--architecture">Design &amp; Architecture</h3>
+
+<p>The rLogin design consists of 4 core modules:</p>
+
+<ul>
+  <li>A back-end authentication library</li>
+  <li>A cloud storage service where users can store their credentials</li>
+  <li>A standard interface for Verifiable Credentials enabling data portability</li>
+  <li>A client library combining authentication against back-end using user’s wallet and store credentials</li>
+</ul>
+
+<p><a href="./architecture">Read more</a></p>
+
+<p><img src="./assets/rlogin-architecture.jpg" alt="rlogin-architecture"></p>
+
+<h3 id="libraries">Libraries</h3>
+
+<p>The implementation of the architecture defined above consists of multiple libraries that enable seamless integration to rLogin protocols:</p>
+<ul>
+  <li>The <a href="../data-vault/">RIF Data Vault</a> - a user-centric cloud storage service</li>
+  <li>
+<a href="libraries/vc-json-schemas/">Verifiable Credential JSON Schemas</a> and <a href="libraries/vc-json-schemas-parser/">parser</a> - proposes unique standard interface for Verifiable Credentials</li>
+  <li>
+<a href="libraries/express-did-auth/">Express DID Auth</a> and <a href="libraries/did-auth-client/">DID Auth client</a> - a Node.js back-end authentication library and a client-side authentication consumer</li>
+  <li>
+<a href="libraries/modal/">rLogin modal</a> - a UI tool that lets front-end developer to integrate different compatible wallets and a pre designed UX for application signup and login.</li>
+</ul>
+
+<h3 id="integrate">Integrate</h3>
+
+<div class="container the-stack">
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="integrate/dapps/">dApps with no back-end</a>
+        <br>
+        <br>
+        <p>use <i>rLogin modal</i> to operate with user's compatible wallets</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="integrate/back-end/">dApps with back-end</a>
+        <br>
+        <br>
+        <p>use <i>rLogin + DID Auth</i> to integrate a challenge-response authentication</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="integrate/vcs/">dApps requesting user's specific info</a>
+        <br>
+        <br>
+        <p>use <i>rLogin + DID Auth + RIF Data Vault</i> to request specific Verifiable Credentials to the user</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p>See the <a href="./integrations">current integrations</a> as a reference</p>
+
+<hr>
+
 <ul>
   <li><a href="integrate">Integrate</a></li>
+  <li><a href="integrations">Integrations</a></li>
   <li><a href="architecture">Design &amp; architecture</a></li>
   <li>
-<a href="implementation">Implementation</a>
+<a href="libraries">Libraries</a>
     <ul>
-      <li><a href="implementation/modal">rLogin modal (client side)</a></li>
-      <li><a href="implementation/express-did-auth">DID Auth (server side)</a></li>
-      <li><a href="implementation/vc-json-schemas">Verifiable Credential schemas (communication)</a></li>
+      <li><a href="libraries/modal">rLogin modal (client side)</a></li>
+      <li><a href="libraries/express-did-auth">DID Auth (server side)</a></li>
+      <li><a href="libraries/vc-json-schemas">Verifiable Credential schemas (communication)</a></li>
     </ul>
   </li>
   <li><a href="develop">Develop</a></li>

@@ -919,7 +919,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-03 21:29:42 +0000T00:00:00.000Z">2020-12-03</time> | -->
+    <!--time role="presentation" datetime="2020-12-31 23:41:20 +0000T00:00:00.000Z">2020-12-31</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/mvp/learnings.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1685,9 +1685,9 @@
 
 <p>After this project, we have advanced in different areas of the field of self-sovereign identity. The greatest challenges are found when developing the different protocols to implement communication between applications</p>
 
-<p>First of all, there is no standard protocol to authenticate the identity of users when using public services. During this MVP we developed a simple <a href="../../specs/did-auth">authentication protocol</a> and developed an <a href="../../rlogin/implementation/express-did-auth">abstract implementation</a> simple to use in any Express.js service. This resulted in our current project called <a href="../../rlogin">rLogin</a>: it consists of a standard protocol to authenticate users, a front-end tool for developers to allow their users to choose any cryptocurrency wallet to operate with the services.</p>
+<p>First of all, there is no standard protocol to authenticate the identity of users when using public services. During this MVP we developed a simple <a href="../../specs/did-auth">authentication protocol</a> and developed an <a href="../../rlogin/libraries/express-did-auth">abstract implementation</a> simple to use in any Express.js service. This resulted in our current project called <a href="../../rlogin">rLogin</a>: it consists of a standard protocol to authenticate users, a front-end tool for developers to allow their users to choose any cryptocurrency wallet to operate with the services.</p>
 
-<p>When we try to solve the problem of communication between services, we found an interesting use case that we have not yet developed: a credential issuer could require other pre-issued credentials from a user to validate their identity. As a result of this we are working on a <a href="../../rlogin/implementation/vc-json-schemas">repository of standard schemas for credentials</a>, which allows users to port their identity in the different models that apply verifiable credentials.</p>
+<p>When we try to solve the problem of communication between services, we found an interesting use case that we have not yet developed: a credential issuer could require other pre-issued credentials from a user to validate their identity. As a result of this we are working on a <a href="../../rlogin/libraries/vc-json-schemas">repository of standard schemas for credentials</a>, which allows users to port their identity in the different models that apply verifiable credentials.</p>
 
 <p>Another field we explore is cloud storage: we developed a simple implementation of a <em>data vault</em>. Users can use their controlled identity in a decentralized way to access their data. Applications may require users to share their data with their permission. We implemented a first service capable of storing user information, and we seek to enlarge this project: we are currently developing the <a href="../../data-vault">RID Data Vault</a>.</p>
 

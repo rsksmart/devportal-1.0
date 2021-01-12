@@ -919,8 +919,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-03 04:45:21 +0000T00:00:00.000Z">2020-12-03</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2021-01-08 05:13:51 +0000T00:00:00.000Z">2021-01-08</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1683,7 +1683,77 @@
 
                   <h2 id="rlogin---design--architecture">rLogin - Design &amp; Architecture</h2>
 
-<p><em>WIP</em></p>
+<p>The objective of rLogin project is to build a set of libraries that enables users to use their crypto wallets to authenticate, store their data and port it across different applications. Developers can user rLogin project to enable Self-sovereign identity in their applications in an easy and intuitive way.</p>
+
+<p>The rLogin design consists of 4 core modules:</p>
+
+<ul>
+  <li>A back-end authentication library</li>
+  <li>A cloud storage service where users can store their credentials</li>
+  <li>A standard interface for Verifiable Credentials enabling data portability</li>
+  <li>A client library combining authentication against back-end using user’s wallet and store credentials</li>
+</ul>
+
+<p><img src="../assets/rlogin-architecture.jpg" alt="rlogin-architecture"></p>
+
+<h3 id="a-back-end-authentication-library">A back-end authentication library</h3>
+
+<p>Most applications have a backend, which defines the application model and an interface to interact and collaborate with the model. Users must be authenticated, that is, they must be authorized to use this model.</p>
+
+<p>Today one of the most used authentication methods are <a href="https://developers.facebook.com/products/facebook-login/" rel="external noopener noreferrer" target="_blank">Google Identity</a> or <a href="https://developers.facebook.com/products/facebook-login/" rel="external noopener noreferrer" target="_blank">Facebook Login</a>. A user of our application is recognized as such by having a Google or Facebook account. Google and Facebook will tell us the data that the user authorizes to share, such as their name or email. That data will be used to validate and accept a new user in our app.</p>
+
+<p><strong>Our model proposes a different methodology, where who shares the data is the user and not the third party.</strong> Third parties will digitally sign the information that represents the user, issuing Verifiable Credentials, and users will save the information in their preferred store, thus avoiding depositing their information in data silos.</p>
+
+<p>To achieve this we designed and developed <a href="../../specs/did-auth">DID Auth</a>, an authentication protocol in which the application will only communicate with the user, and the user will not need any third party to share their information.</p>
+
+<p>Read more:</p>
+<ul>
+  <li><a href="../libraries/express-did-auth">Express.js DID Auth docs</a></li>
+  <li><a href="../libraries/did-auth-client">DID Auth client</a></li>
+</ul>
+
+<h2 id="a-cloud-storage-service-where-users-can-store-their-credentials">A cloud storage service where users can store their credentials</h2>
+
+<p>Users will be able to save their information in their preferred place. Even so, we developed <strong>the <a href="../../data-vault">RIF Data Vault</a>, a user-centric cloud service</strong>. This service will allow users to store their information in a secure way, encrypting the data on the client side. This encrypted data can then be stored on any distributed network such as IPFS.</p>
+
+<p>The Data Vault then allows users to store their Verifiable Credentials, issued by different applications, and to access when authenticating to other applications, thus carrying their information automatically.</p>
+
+<p>Read more:</p>
+
+<ul>
+  <li><a href="../../data-vault">RIF Data Vault</a></li>
+</ul>
+
+<h3 id="a-standard-interface-for-verifiable-credentials-enabling-data-portability">A standard interface for Verifiable Credentials enabling data portability</h3>
+
+<p>The metadata stored in the cloud must have a specific format so that the different applications can understand the meaning of it. Verifiable Credentials allow issuers to digitally sign the data they claim. In this project we began to develop a representation model that allows all applications to understand the same meaning for the same credentials, thus allowing users to port their data across the different applications with which it operates. This way users can build their reputation in a unique way.</p>
+
+<p>This standard is called VC JSON Schemas and is under development by the W3C. We create a first implementation: a repository where you can find different standard credential schemas and propose new ones.</p>
+
+<p>Read more:</p>
+<ul>
+  <li><a href="../libraries/vc-json-schemas">VC JSON Schemas</a></li>
+  <li><a href="../libraries/vc-json-schemas-parser">VC JSON Schemas parser</a></li>
+</ul>
+
+<h3 id="a-client-library-combining-authentication-against-back-end-using-users-wallet-and-store-credentials">A client library combining authentication against back-end using user’s wallet and store credentials</h3>
+
+<p>All the communication with back end under this model is wrapped up in a front end library that enables developer to easily integrate into Self-sovereign Identity. With rLogin library users will be able to pick the wallet of choice to interact with any dApp. It also handles the process of disclosing the information with the application in a private and secure way.</p>
+
+<p>In summary, the front end tool pops a modal that lets user follow this steps:</p>
+
+<ol>
+  <li>Pick wallet of choice</li>
+  <li>Connect to backend and request access</li>
+  <li>Download required credentials from Data Vault</li>
+  <li>Disclose the credentials with the application</li>
+</ol>
+
+<p>Read more:</p>
+
+<ul>
+  <li><a href="../libraries/modal">rLogin modal</a></li>
+</ul>
 
 
                   

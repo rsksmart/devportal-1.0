@@ -14,7 +14,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
-      <link rel="canonical" href="https://developers.rsk.co/rif/identity/data-vault/architecture/client/">
+      <link rel="canonical" href="https://developers.rsk.co/rif/identity/rlogin/integrate/vcs/">
    	<title> - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../../../../assets/img/favicons/apple-touch-icon.png">
@@ -316,8 +316,8 @@
               <li><a href="../../../">Intro</a></li>
               <li><a href="../../../mvp/">The MVP</a></li>
               <li><a href="../../../manager/">Identity Manager</a></li>
-              <li><a href="../../../rlogin/">rLogin</a></li>
-              <li><a href="../../">Data Vault</a></li>
+              <li><a href="../../">rLogin</a></li>
+              <li><a href="../../../data-vault/">Data Vault</a></li>
               <li><a href="../../../libraries/">Libraries</a></li>
               <li><a href="../../../specs/">Specs</a></li>
               <li><a href="../../../faq/">FAQ</a></li>
@@ -894,7 +894,7 @@
 		
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/rif/identity/data-vault/">
+				<a property="item" typeof="WebPage" href="/rif/identity/rlogin/">
 					<span property="name"></span>
 					<meta property="position" content="4" />
 				</a>
@@ -902,7 +902,7 @@
 		
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/rif/identity/data-vault/architecture/">
+				<a property="item" typeof="WebPage" href="/rif/identity/rlogin/integrate/">
 					<span property="name"></span>
 					<meta property="position" content="5" />
 				</a>
@@ -927,17 +927,17 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-01-12 02:37:54 +0000T00:00:00.000Z">2021-01-12</time> | -->
-     13' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/client.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2020-12-29 21:46:20 +0000T00:00:00.000Z">2020-12-29</time> | -->
+     1' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/integrate/vcs.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/data-vault/architecture/client/&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/data-vault/architecture/client/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
-          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/data-vault/architecture/client/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
-          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/data-vault/architecture/client/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/identity/data-vault/architecture/client/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/identity/data-vault/architecture/client/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/vcs/&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/vcs/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/vcs/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/vcs/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/vcs/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/identity/rlogin/integrate/vcs/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
     <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
@@ -1133,8 +1133,8 @@
               <li><a href="../../../">Intro</a></li>
               <li><a href="../../../mvp/">The MVP</a></li>
               <li><a href="../../../manager/">Identity Manager</a></li>
-              <li><a href="../../../rlogin/">rLogin</a></li>
-              <li><a href="../../">Data Vault</a></li>
+              <li><a href="../../">rLogin</a></li>
+              <li><a href="../../../data-vault/">Data Vault</a></li>
               <li><a href="../../../libraries/">Libraries</a></li>
               <li><a href="../../../specs/">Specs</a></li>
               <li><a href="../../../faq/">FAQ</a></li>
@@ -1689,267 +1689,7 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h2 id="data-vault---centralized-pinner-client">Data vault - Centralized pinner client</h2>
-
-<p>A Web Client to simplify the way the services provided by the IPFS Centralized Data Vault Service are consumed.</p>
-
-<h3 id="features">Features</h3>
-
-<ul>
-  <li>Manage authentication according to the <a href="../../../rlogin/libraries/express-did-auth">DID Auth protocol</a>
-</li>
-  <li>CRUD operations over the RIF Data Vault</li>
-  <li>Stores the authentication credentials in the given storage</li>
-  <li>Encrypts/decrypts data prior to save/return using the user wallet provider</li>
-</ul>
-
-<h3 id="usage">Usage</h3>
-
-<h4 id="instantiate">Instantiate</h4>
-
-<p>The package expose a <code class="highlighter-rouge">DataVaultWebClient</code> class that receives a <code class="highlighter-rouge">Config</code> object when it is instantiated.</p>
-
-<p>The <code class="highlighter-rouge">Config</code> object has the following fields:</p>
-
-<ul>
-  <li>
-<code class="highlighter-rouge">serviceUrl: string</code>: the IPFS Centralized Data Vault Service url</li>
-  <li>
-<code class="highlighter-rouge">authManager?: AuthManager</code>: the authentication manager. Please find instructions on how to instantiate it below.</li>
-  <li>
-<code class="highlighter-rouge">encryptionManager: EncryptionManager</code>: the encryption manager. Please find instructions on how to instantiate it below.</li>
-</ul>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">serviceUrl</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://your-ipfs-cpinner-service.com</span><span class="dl">'</span>
-
-<span class="c1">// the following fields are required just to perform write operations</span>
-<span class="kd">const</span> <span class="nx">serviceDid</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">did:ethr:rsk:0x123456789....abc</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">address</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0xabcdef....123</span><span class="dl">'</span> <span class="c1">// user's address</span>
-<span class="kd">const</span> <span class="nx">did</span> <span class="o">=</span> <span class="s2">`did:ethr:rsk:</span><span class="p">${</span><span class="nx">address</span><span class="p">}</span><span class="s2">`</span>
-
-<span class="c1">// these are examples with Metamask</span>
-<span class="kd">const</span> <span class="nx">personalSign</span> <span class="o">=</span> <span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">personal_sign</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">,</span> <span class="nx">data</span><span class="p">]</span> <span class="p">})</span>
-<span class="kd">const</span> <span class="nx">decrypt</span> <span class="o">=</span> <span class="p">(</span><span class="nx">hexCypher</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_decrypt</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">hexCypher</span><span class="p">,</span> <span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
-<span class="kd">const</span> <span class="nx">getEncryptionPublicKey</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_getEncryptionPublicKey</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span>
-  <span class="nx">serviceUrl</span><span class="p">,</span>
-  <span class="na">authManager</span><span class="p">:</span> <span class="k">new</span> <span class="nx">AuthManager</span><span class="p">({</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">personalSign</span> <span class="p">}),</span>
-  <span class="na">encryptionManager</span><span class="p">:</span> <span class="k">new</span> <span class="nx">EncryptionManager</span><span class="p">({</span> <span class="nx">getEncryptionPublicKey</span><span class="p">,</span> <span class="nx">decrypt</span>  <span class="p">})</span>
-<span class="p">})</span>
-</code></pre></div></div>
-
-<h5 id="auth-manager">Auth Manager</h5>
-
-<p>It manages authentication according to the <a href="../../../rlogin/libraries/express-did-auth">DID Auth protocol</a>. It is in charge of emitting the necessary events to be signed by the user and store the generated tokens.</p>
-
-<p>It is instantiated with a <code class="highlighter-rouge">DIDAuthConfig</code> object, which contains the following fields:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">serviceUrl: string</code>: the IPFS Centralized Data Vault Service url, the user will be logged in to that url</li>
-  <li>
-<code class="highlighter-rouge">did?: string</code>: the client did. It is required if performing authenticated requests</li>
-  <li>
-<code class="highlighter-rouge">personalSign?: (data: string) =&gt; Promise&lt;string&gt;</code>: the personalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: <code class="highlighter-rouge">(data: string) =&gt; window.ethereum.request({ method: 'personal_sign', params: [address, data] })</code>
-</li>
-  <li>
-<code class="highlighter-rouge">store?: KeyValueStore</code>: object that MUST implement the <code class="highlighter-rouge">KeyValueStore</code> interface. It is used to save the <code class="highlighter-rouge">accessToken</code> and <code class="highlighter-rouge">refreshToken</code>. It uses <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage" rel="external noopener noreferrer" target="_blank">window.localStorage</a> if not store object provided.</li>
-</ul>
-
-<p>Example:</p>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">serviceUrl</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">http://your-ipfs-cpinner-service.com</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">address</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">0xabcdef....123</span><span class="dl">'</span> <span class="c1">// user's address</span>
-<span class="kd">const</span> <span class="nx">did</span> <span class="o">=</span> <span class="s2">`did:ethr:rsk:</span><span class="p">${</span><span class="nx">address</span><span class="p">}</span><span class="s2">`</span>
-
-<span class="c1">// Metamask example</span>
-<span class="kd">const</span> <span class="nx">personalSign</span> <span class="o">=</span> <span class="p">(</span><span class="nx">data</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">personal_sign</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">,</span> <span class="nx">data</span><span class="p">]</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">authManager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AuthManager</span><span class="p">({</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">personalSign</span> <span class="p">})</span>
-</code></pre></div></div>
-
-<h5 id="encryption-manager">Encryption Manager</h5>
-
-<p>It is in charge of managing the encryption of the saved information and the decryption of the received information.</p>
-
-<p>It receives an <code class="highlighter-rouge">EncryptionManagerConfig</code> with the following fields:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">getEncryptionPublicKey?: () =&gt; Promise&lt;string&gt;</code>: the method used to get the user encryption public key. That public key will be used to encrypt the content before sending it to the service to be stored. <a href="https://docs.metamask.io/guide/rpc-api.html#eth-getencryptionpublickey" rel="external noopener noreferrer" target="_blank">Metamask</a> example: <code class="highlighter-rouge">() =&gt; window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })</code>
-</li>
-  <li>
-<code class="highlighter-rouge">decrypt: (hexCypher: string) =&gt; Promise&lt;string&gt;</code>: the method used to decrypt data stored in the service. By invoking this method, the package prompts the user to decrypt content in the wallet. <a href="https://docs.metamask.io/guide/rpc-api.html#eth-decrypt" rel="external noopener noreferrer" target="_blank">Metamask</a> example: <code class="highlighter-rouge">(hexCypher: string) =&gt; window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })</code>
-</li>
-</ul>
-
-<p>Example:</p>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Metamask example</span>
-<span class="kd">const</span> <span class="nx">decrypt</span> <span class="o">=</span> <span class="p">(</span><span class="nx">hexCypher</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_decrypt</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">hexCypher</span><span class="p">,</span> <span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
-<span class="kd">const</span> <span class="nx">getEncryptionPublicKey</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nb">window</span><span class="p">.</span><span class="nx">ethereum</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_getEncryptionPublicKey</span><span class="dl">'</span><span class="p">,</span> <span class="na">params</span><span class="p">:</span> <span class="p">[</span><span class="nx">address</span><span class="p">]</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">encryptionManager</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EncryptionManager</span><span class="p">({</span> <span class="nx">getEncryptionPublicKey</span><span class="p">,</span> <span class="nx">decrypt</span>  <span class="p">})</span>
-</code></pre></div></div>
-
-<h4 id="get">Get</h4>
-
-<p>It returns all the <code class="highlighter-rouge">content</code> (with its <code class="highlighter-rouge">id</code>) associated to a given <code class="highlighter-rouge">key</code> and the logged <code class="highlighter-rouge">did</code> in a form of <code class="highlighter-rouge">{ id: string, content: string }[]</code></p>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">decrypt</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">EmailCredential</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">credentials</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="kd">get</span><span class="p">({</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">key</span> <span class="p">})</span>
-</code></pre></div></div>
-
-<h3 id="get-keys">Get keys</h3>
-
-<p>It returns an array of string with all the <code class="highlighter-rouge">keys</code> associated to the logged in <code class="highlighter-rouge">did</code>.
-If there are not <code class="highlighter-rouge">keys</code>, it returns an empty array.</p>
-
-<p>If the client is not logged in yet, it will log it in prior to get the <code class="highlighter-rouge">keys</code>, so it may prompt the user to sign the login message. Please refer to the <a href="../../../specs/did-auth">DID Auth protocol</a> for more information.</p>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">keys</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getKeys</span><span class="p">()</span>
-</code></pre></div></div>
-
-<h3 id="get-storage-information">Get storage information</h3>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">storage</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getStorageInformation</span><span class="p">()</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Used: </span><span class="p">${</span><span class="nx">storage</span><span class="p">.</span><span class="nx">used</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Available: </span><span class="p">${</span><span class="nx">storage</span><span class="p">.</span><span class="nx">available</span><span class="p">}</span><span class="s2">`</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="get-backup-information">Get backup information</h3>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">rpcPersonalSign</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">backup</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">getBackup</span><span class="p">()</span>
-
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">This is the keys and cids you have stored in the DV</span><span class="dl">'</span><span class="p">)</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">backup</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h4 id="create">Create</h4>
-
-<p>It saves new <code class="highlighter-rouge">content</code> associated to the given <code class="highlighter-rouge">key</code> into the service and returns the associated <code class="highlighter-rouge">id</code>.
-Receives an object containing the <code class="highlighter-rouge">key</code> and the <code class="highlighter-rouge">content</code></p>
-
-<p>If the <code class="highlighter-rouge">key</code> already exists, it will add <code class="highlighter-rouge">content</code> associated to that <code class="highlighter-rouge">key</code>. Old <code class="highlighter-rouge">content</code> will still be there.
-If not, a new <code class="highlighter-rouge">key</code> will be created and associated to the logged in <code class="highlighter-rouge">did</code>.</p>
-
-<p>If the client is not logged in yet, it will log it in prior to saving the new <code class="highlighter-rouge">content</code>, so it may prompt the user to sign the login message. Please refer to the <a href="../../../specs/did-auth">DID Auth protocol</a> for more information.</p>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">signer</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">MyKey</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">content</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">this is my content</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">id</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">content</span> <span class="p">})</span>
-</code></pre></div></div>
-
-<h4 id="swap">Swap</h4>
-
-<p>It replaces <code class="highlighter-rouge">content</code> and returns the <code class="highlighter-rouge">id</code> of the just created <code class="highlighter-rouge">content</code>.
-It receives an object with <code class="highlighter-rouge">key</code> and <code class="highlighter-rouge">content</code> as mandatory fields. It also allows to add the <code class="highlighter-rouge">id</code> of the desired <code class="highlighter-rouge">content</code> to be replaced.
-If <code class="highlighter-rouge">id</code> is not provided, it will replace ALL the <code class="highlighter-rouge">content</code> associated to the <code class="highlighter-rouge">key</code> with the new <code class="highlighter-rouge">content</code>.
-If <code class="highlighter-rouge">id</code> is provided, it just replace the <code class="highlighter-rouge">content</code> with the given <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">key</code></p>
-
-<p>If the <code class="highlighter-rouge">key</code> does not exist, will create it.</p>
-
-<p>If the client is not logged in yet, it will log it in prior to replacing the new <code class="highlighter-rouge">content</code>, so it may prompt the user to sign the login message</p>
-
-<h5 id="without-id">Without <code class="highlighter-rouge">id</code>
-</h5>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">signer</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">MyKey</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">content</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">this is my content</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">id</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">swap</span><span class="p">({</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">content</span> <span class="p">})</span>
-</code></pre></div></div>
-
-<h5 id="with-id">With <code class="highlighter-rouge">id</code>
-</h5>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">signer</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">MyKey</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">original1</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">this is my content number 1</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">original2</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">this is my content number 2</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">id1</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> <span class="nx">key</span><span class="p">,</span> <span class="na">content</span><span class="p">:</span> <span class="nx">original1</span> <span class="p">})</span>
-<span class="kd">const</span> <span class="nx">id2</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> <span class="nx">key</span><span class="p">,</span> <span class="na">content</span><span class="p">:</span> <span class="nx">original2</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">newContent</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">this is the new content</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">newId</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">swap</span><span class="p">({</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">content</span><span class="p">,</span> <span class="na">id</span><span class="p">:</span> <span class="nx">id1</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">MyKeys</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">key</span><span class="p">)</span> <span class="c1">// it will return an array containing [original2, newContent]</span>
-</code></pre></div></div>
-
-<h4 id="delete">Delete</h4>
-
-<p>It deletes the <code class="highlighter-rouge">content</code> associated to the given <code class="highlighter-rouge">key</code> (and <code class="highlighter-rouge">id</code> if provided).
-It receives an object with <code class="highlighter-rouge">key</code> as the mandatory field. It also allows to add the <code class="highlighter-rouge">id</code> of the desired <code class="highlighter-rouge">content</code> to be deleted.
-If <code class="highlighter-rouge">id</code> is not provided, it will delete ALL the <code class="highlighter-rouge">content</code> associated to the <code class="highlighter-rouge">key</code>.
-If <code class="highlighter-rouge">id</code> is provided, it just deletes the <code class="highlighter-rouge">content</code> that matches the given <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">key</code></p>
-
-<p>If the <code class="highlighter-rouge">key</code> does not exist, will create it.</p>
-
-<p>If the client is not logged in yet, it will log it in prior to deleting, so it may prompt the user to sign the login message</p>
-
-<h5 id="without-id-1">Without <code class="highlighter-rouge">id</code>
-</h5>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">signer</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">MyKey</span><span class="dl">'</span>
-
-<span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="k">delete</span><span class="p">({</span> <span class="nx">key</span> <span class="p">})</span>
-</code></pre></div></div>
-
-<h5 id="with-id-1">With <code class="highlighter-rouge">id</code>
-</h5>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">DataVaultWebClient</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/ipfs-cpinner-client</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">client</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DataVaultWebClient</span><span class="p">({</span> <span class="nx">serviceUrl</span><span class="p">,</span> <span class="nx">did</span><span class="p">,</span> <span class="nx">signer</span><span class="p">,</span> <span class="nx">serviceDid</span> <span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">key</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">MyKey</span><span class="dl">'</span>
-<span class="kd">const</span> <span class="nx">content</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">this is my content</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">id</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> <span class="nx">key</span><span class="p">,</span> <span class="na">content</span><span class="p">:</span> <span class="nx">original1</span> <span class="p">})</span>
-
-<span class="k">await</span> <span class="nx">client</span><span class="p">.</span><span class="k">delete</span><span class="p">({</span> <span class="nx">key</span><span class="p">,</span> <span class="nx">id</span> <span class="p">})</span>
-</code></pre></div></div>
-
-<h3 id="run-for-development">Run for development</h3>
-
-<p>Check out <a href="https://github.com/rsksmart/rif-data-vault/tree/master/modules/ipfs-cpinner-client" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">ipfs-cpinner-client</code> in the <code class="highlighter-rouge">rif-data-vault</code> repo</a>.</p>
+                  <h2 id="integration-rlogin---dapps-requesting-users-specific-info">Integration rLogin - dApps requesting user’s specific info</h2>
 
 
                   

@@ -14,7 +14,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
-      <link rel="canonical" href="https://developers.rsk.co/rif/identity/rlogin/implementation/express-did-auth/">
+      <link rel="canonical" href="https://developers.rsk.co/rif/identity/rlogin/integrate/dapps/">
    	<title> - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../../../../assets/img/favicons/apple-touch-icon.png">
@@ -902,7 +902,7 @@
 		
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-				<a property="item" typeof="WebPage" href="/rif/identity/rlogin/implementation/">
+				<a property="item" typeof="WebPage" href="/rif/identity/rlogin/integrate/">
 					<span property="name"></span>
 					<meta property="position" content="5" />
 				</a>
@@ -927,17 +927,17 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-02 23:48:01 +0000T00:00:00.000Z">2020-12-02</time> | -->
-     10' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/implementation/express-did-auth.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2020-12-29 21:46:20 +0000T00:00:00.000Z">2020-12-29</time> | -->
+     1' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/integrate/dapps.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/express-did-auth/&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/express-did-auth/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
-          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/express-did-auth/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
-          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/express-did-auth/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/implementation/express-did-auth/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/identity/rlogin/implementation/express-did-auth/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/dapps/&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/dapps/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/dapps/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/dapps/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/identity/rlogin/integrate/dapps/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/identity/rlogin/integrate/dapps/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
     <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
@@ -1689,224 +1689,7 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h2 id="express-did-auth---a-challenge-response-authentication-model-based-in-dids">Express DID Auth - a challenge-response authentication model based in DIDs</h2>
-
-<p>This package is an implementation of the <a href="../../../specs/did-auth">DID Auth protocol</a>. It is designed to be easely integrated to any Express application.</p>
-
-<p>Main features:</p>
-
-<ul>
-  <li>Automatically set up the needed endpoints to fullfil the full protocol specification (signup, auth, refresh token and logout)</li>
-  <li>Provides with an auth middleware to protect the desired business related endpoints</li>
-  <li>Allows to decide where to send the tokens (cookies, <code class="highlighter-rouge">Authorization</code> header or request body for <em>refresh token</em>)</li>
-  <li>Extensibility: it allows to add any specific business logic over the authentication/signup methods</li>
-  <li>Deterministic challenge generation</li>
-  <li>Limit requests per did per timeslot</li>
-</ul>
-
-<h3 id="usage">Usage</h3>
-
-<h4 id="install">Install</h4>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i @rsksmart/express-did-auth
-</code></pre></div></div>
-
-<h4 id="plug-and-play">Plug and play</h4>
-
-<p>This is the simplest approach. Just need to provide an express <code class="highlighter-rouge">app</code> and the desired configuration for the package and it will create the <a href="#endpoints">needed endpoints</a> on your behalf.</p>
-
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">express</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">express</span><span class="dl">'</span>
-<span class="k">import</span> <span class="nx">setupApp</span><span class="p">,</span> <span class="p">{</span> <span class="nx">ExpressDidAuthConfig</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/express-did-auth</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">config</span><span class="p">:</span> <span class="nx">ExpressDidAuthConfig</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="c1">// your config</span>
-<span class="p">}</span>
-
-<span class="kd">const</span> <span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">()</span>
-
-<span class="kd">const</span> <span class="nx">authMiddleware</span> <span class="o">=</span> <span class="nx">setupApp</span><span class="p">(</span><span class="nx">config</span><span class="p">)(</span><span class="nx">app</span><span class="p">)</span>
-
-<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/not-protected</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">This endpoint is not authenticating</span><span class="dl">'</span><span class="p">)</span>
-<span class="p">})</span>
-
-<span class="nx">app</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="dl">'</span><span class="s1">/protected</span><span class="dl">'</span><span class="p">,</span> <span class="nx">authMiddleware</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">res</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="dl">'</span><span class="s1">This endpoint is authenticating</span><span class="dl">'</span><span class="p">)</span>
-<span class="p">})</span>
-
-<span class="kd">const</span> <span class="nx">port</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">PORT</span> <span class="o">||</span> <span class="mi">5000</span>
-
-<span class="nx">app</span><span class="p">.</span><span class="nx">listen</span><span class="p">(</span><span class="nx">port</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">logger</span><span class="p">.</span><span class="nx">info</span><span class="p">(</span><span class="s2">`My express API with did-auth running in </span><span class="p">${</span><span class="nx">port</span><span class="p">}</span><span class="s2">`</span><span class="p">))</span>
-</code></pre></div></div>
-
-<h4 id="configure">Configure</h4>
-
-<p>All the configuration should be placed in just one object of type <code class="highlighter-rouge">ExpressDidAuthConfig</code>. That object may contain the following fields:</p>
-
-<p><em>REQUIRED</em></p>
-
-<p><code class="highlighter-rouge">challengeSecret: string</code>: the secret that will be used to generate the deterministic challenge. See <a href="../../../specs/did-auth#how-to-calculate-a-deterministic-challenge">how we create deterministic challenges</a></p>
-
-<p><code class="highlighter-rouge">serviceUrl: string</code>: will be used as the <a href="https://tools.ietf.org/html/rfc7519#section-4.1.3" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">audience</code></a> of all the JWTs expected or emitted by this package. Should be a URI that identifies your service in the context where it is run</p>
-
-<p><code class="highlighter-rouge">serviceDid: string</code>: the did controlled by the servie. Will be used to sign JWTs.</p>
-
-<p><code class="highlighter-rouge">serviceSigner: Signer</code>: the signing function associated to the <code class="highlighter-rouge">serviceDid</code>. MUST implement <code class="highlighter-rouge">ES256K</code> algorithm, please find an example <a href="https://github.com/decentralized-identity/did-jwt/blob/c91d38cdd06635b418250048e329c509eab1e6d6/docs/guides/index.md#simplesigner" rel="external noopener noreferrer" target="_blank">here</a></p>
-
-<p><em>OPTIONAL</em></p>
-
-<p><code class="highlighter-rouge">useCookies: boolean</code>: determines if the <em>access token</em> and <em>refresh token</em> are saved in cookies or are returned in the body of the response. If <code class="highlighter-rouge">true</code>, the tokens will be extracted from the cookies. See <a href="../../../specs/did-auth#how-to-send-tokens">how to send tokens</a> for more information. <em>Default: false</em></p>
-
-<p><code class="highlighter-rouge">requestSignupPath: string</code>: the request signup endpoint route. <em>Default: <code class="highlighter-rouge">/request-signup</code></em></p>
-
-<p><code class="highlighter-rouge">signupPath: string</code>: the signup endpoint route. <em>Default: <code class="highlighter-rouge">/signup</code></em></p>
-
-<p><code class="highlighter-rouge">requestAuthPath: string</code>: the request auth endpoint route. <em>Default: <code class="highlighter-rouge">/request-auth</code></em></p>
-
-<p><code class="highlighter-rouge">authPath: string</code>: the auth endpoint route. <em>Default: <code class="highlighter-rouge">/auth</code></em></p>
-
-<p><code class="highlighter-rouge">logoutPath: string</code>: the logout endpoint route. <em>Default: <code class="highlighter-rouge">/logout</code></em></p>
-
-<p><code class="highlighter-rouge">refreshTokenPath: string</code>: the refresh token endpoint route. <em>Default: <code class="highlighter-rouge">/refresh-token</code></em></p>
-
-<p><code class="highlighter-rouge">challengeExpirationTimeInSeconds: number</code>: the max expiration time for the generated challenge when requesting signup or auth. MUST be provided in <code class="highlighter-rouge">seconds</code>. <em>Default: <code class="highlighter-rouge">300</code> (5 minutes)</em></p>
-
-<p><code class="highlighter-rouge">maxRequestsPerTimeSlot: number</code>: the max amount of requests per did per timeslot. <em>Default: <code class="highlighter-rouge">20</code></em></p>
-
-<p><code class="highlighter-rouge">timeSlotInSeconds: number</code>: the amount of <code class="highlighter-rouge">seconds</code> that need to elapse before resetting the request counter. <em>Default: <code class="highlighter-rouge">600</code> (10 minutes)</em></p>
-
-<p><code class="highlighter-rouge">userSessionDurationInHours: number</code>: the validity of each <em>refresh token</em> in hours. <em>Default: <code class="highlighter-rouge">168</code> (one week)</em></p>
-
-<p><code class="highlighter-rouge">rpcUrl: string</code>: rpc url used to <a href="https://github.com/decentralized-identity/ethr-did-resolver" rel="external noopener noreferrer" target="_blank">resolve</a> Ethr DID identities. <em>If not provided, will resolve using both RSK Mainnet and Testnet networks.</em></p>
-
-<p><code class="highlighter-rouge">networkName: string</code>: network name used to <a href="https://github.com/decentralized-identity/ethr-did-resolver" rel="external noopener noreferrer" target="_blank">resolve</a> Ethr DID identities. <em>If not provided, will resolve using both RSK Mainnet and Testnet networks.</em></p>
-
-<p><code class="highlighter-rouge">registry: string</code>: <a href="https://github.com/uport-project/ethr-did-registry" rel="external noopener noreferrer" target="_blank">DID Registry</a> address used to resolve Ethr DID identities. <em>Default: <code class="highlighter-rouge">0xdca7ef03e98e0dc2b855be647c39abe984fcf21b</code></em></p>
-
-<p><code class="highlighter-rouge">accessTokenExpirationTimeInSeconds: number</code>: the validity in <code class="highlighter-rouge">seconds</code> of each <em>access token</em>. Remember that it should be short because the long validity is for the <em>refresh token</em>. <em>Default: <code class="highlighter-rouge">600</code> (10 minutes)</em></p>
-
-<p><code class="highlighter-rouge">authenticationBusinessLogic: AuthenticationBusinessLogic</code>: the business logic to execute when a DID tries to log in. Will be executed each time the <code class="highlighter-rouge">/auth</code> endpoint is invoked with a valid signature. If it throws an error, the error message will be returned as part of an HTTP 401 response. <em>If not present, no business logic will be executed.</em></p>
-
-<p><code class="highlighter-rouge">requiredCredentials: string[]</code>: array of <a href="https://www.w3.org/TR/vc-data-model/" rel="external noopener noreferrer" target="_blank">Verifiable Credential</a> schemas that will be requested as part of the signup process. <em>If neither <code class="highlighter-rouge">requiredCredentials</code> and <code class="highlighter-rouge">requiredClaims</code> are present, no <code class="highlighter-rouge">sdr</code> will be requested when a user signs up.</em></p>
-
-<p><code class="highlighter-rouge">requiredClaims: Claim[]</code>: array of <a href="../../../specs/did-auth#request">Claims</a> that will be requested as part of the signup process. <em>If neither <code class="highlighter-rouge">requiredCredentials</code> and <code class="highlighter-rouge">requiredClaims</code> are present, no <code class="highlighter-rouge">sdr</code> will be requested when a user signs up.</em></p>
-
-<p><code class="highlighter-rouge">signupBusinessLogic: SignupBusinessLogic</code>: the business logic to execute when a DID tries to sign up. It receives the required <a href="../../../specs/did-auth#selective-disclosure"><code class="highlighter-rouge">sdr</code></a> as part of the payload. Will be executed each time the <code class="highlighter-rouge">/signup</code> endpoint is invoked with a valid signature. If it throws an error, the error message will be returned as part of an HTTP 401 response. Should be used to validate the <code class="highlighter-rouge">sdr</code> against the business needings and/or to save users in any storage for future authentication validation. <em>If not present, no business logic will be executed.</em></p>
-
-<h3 id="included-artifacts">Included artifacts</h3>
-
-<h4 id="endpoints">Endpoints</h4>
-
-<h5 id="get-request-signupdid">GET <code class="highlighter-rouge">/request-signup/:did</code>
-</h5>
-
-<p>Expects the user <code class="highlighter-rouge">did</code> in the <code class="highlighter-rouge">params</code> of the request.
-Returns an HTTP 200 with a JSON containing <code class="highlighter-rouge">{ challenge, sdr? }</code> in the <code class="highlighter-rouge">body</code> of the response.
-The <code class="highlighter-rouge">sdr</code> will be present if the service requires it to register (sign up) the user. See more information in the <a href="../../../specs/did-auth#sign-up">sign up protocol</a>.</p>
-
-<p>Possible error messages:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">INVALID_DID</code> (HTTP 401)</li>
-</ul>
-
-<h5 id="post-signup">POST <code class="highlighter-rouge">/signup</code>
-</h5>
-
-<p>Expects the signed <code class="highlighter-rouge">challenge</code> and <code class="highlighter-rouge">sdr</code> (if needed) response in the <code class="highlighter-rouge">body</code> of the request as <code class="highlighter-rouge">{ response }</code>.
-If using cookies, sets the cookies in the service and returns just an HTTP 200 with no content.
-If not using cookies, returns an HTTP 200 with a JSON containing <code class="highlighter-rouge">{ accessToken, refreshToken }</code>.</p>
-
-<p>Possible error messages (all HTTP 401):</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">NO_RESPONSE</code> if <code class="highlighter-rouge">response</code> is empty or does not exist</li>
-  <li>
-<code class="highlighter-rouge">INVALID_CHALLENGE</code> if the JWT verification fails or the received challenge is invalid</li>
-  <li>
-<code class="highlighter-rouge">UNAUTHORIZED_USER</code> if <code class="highlighter-rouge">signupBusinessLogic</code> does not validate the user</li>
-  <li>If the <code class="highlighter-rouge">signupBusinessLogic</code> throws an error, it will be sent to the client as well.</li>
-</ul>
-
-<h5 id="get-request-authdid--challenge-">GET <code class="highlighter-rouge">/request-auth/:did</code>: <code class="highlighter-rouge">{ challenge }</code>
-</h5>
-
-<p>Expects the user <code class="highlighter-rouge">did</code> in the <code class="highlighter-rouge">params</code> of the requests.
-Returns an HTTP 200 with a JSON containing <code class="highlighter-rouge">{ challenge }</code> in the <code class="highlighter-rouge">body</code> of the response.</p>
-
-<p>Possible error messages:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">INVALID_DID</code> (HTTP 401)</li>
-</ul>
-
-<h5 id="post-auth-">POST <code class="highlighter-rouge">/auth </code>
-</h5>
-
-<p>Expects the signed <code class="highlighter-rouge">challenge</code> response in the <code class="highlighter-rouge">body</code> of the request as <code class="highlighter-rouge">{ response }</code>.
-If using cookies, sets the cookies in the service and returns just an HTTP 200 with no content to the client.
-If not using cookies, returns an HTTP 200 with a JSON containing <code class="highlighter-rouge">{ accessToken, refreshToken }</code>.</p>
-
-<p>Possible error messages (all HTTP 401):</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">NO_RESPONSE</code> if <code class="highlighter-rouge">response</code> is empty or does not exist</li>
-  <li>
-<code class="highlighter-rouge">INVALID_CHALLENGE</code> if the JWT verification fails or the received challenge is invalid</li>
-  <li>
-<code class="highlighter-rouge">UNAUTHORIZED_USER</code> if <code class="highlighter-rouge">authenticationBusinessLogic</code> does not validate the user</li>
-  <li>If the <code class="highlighter-rouge">authenticationBusinessLogic</code> throws an error, it will be sent to the client as well.</li>
-</ul>
-
-<h5 id="post-refresh-token">POST <code class="highlighter-rouge">/refresh-token</code>
-</h5>
-
-<p>If using cookies, will get the <em>refresh token</em> from a cookie.
-If not, expects the <em>refresh token</em> in the <code class="highlighter-rouge">body</code> of the request as <code class="highlighter-rouge">{ refreshToken }</code>.
-Validates user session and:</p>
-<ul>
-  <li>If using cookies, sets the new tokens cookies in the service and returns just an HTTP 200 to the client.</li>
-  <li>If not using cookies, returns an HTTP 200 with a JSON containing the new tokens: <code class="highlighter-rouge">{ accessToken, refreshToken }</code>.</li>
-</ul>
-
-<p>Possible error messages (all HTTP 401):</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">NO_REFRESH_TOKEN</code> if <code class="highlighter-rouge">refreshToken</code> could not be extracted from the cookies nor the body</li>
-  <li>
-<code class="highlighter-rouge">INVALID_OR_EXPIRED_SESSION</code> if invalid <em>refresh token</em> or expired session</li>
-</ul>
-
-<h5 id="post-logout">POST <code class="highlighter-rouge">/logout</code>
-</h5>
-
-<p>This is a protected endpoint, so the <a href="#auth-middleware">auth middleware</a> is executed before.</p>
-
-<p>It invalidates the current user session and returns an HTTP 200 with no content.</p>
-
-<p>It has not own validations, so the error messages it may respond with comes from the <a href="#auth-middleware">middleware</a>.</p>
-
-<h4 id="auth-middleware">Auth Middleware</h4>
-
-<p>Authenticates requests by checking the <em>access token</em>.
-If using cookies, will get it from a cookie.
-If not, expects the <em>access token</em> in the <code class="highlighter-rouge">Authorization</code> header of the request with the DID Auth scheme (<code class="highlighter-rouge">DIDAuth ${accessToken}</code>).
-It validates the extracted token and if it fullfils the protocol needs, it authenticates the request by injecting the user did in the <code class="highlighter-rouge">request</code> object so it is available to be used by the endpoint. The <code class="highlighter-rouge">did</code> will be injected under <code class="highlighter-rouge">req.user</code>.</p>
-
-<p>Possible error messages (all HTTP 401):</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">INVALID_HEADER</code> if not using cookies and the <em>access token</em> header does not follow the <code class="highlighter-rouge">DIDAuth</code> scheme</li>
-  <li>
-<code class="highlighter-rouge">NO_ACCESS_TOKEN</code> if <em>access token</em> could not be extracted from the cookies nor the <code class="highlighter-rouge">Authorization</code> header</li>
-  <li>
-<code class="highlighter-rouge">EXPIRED_ACCESS_TOKEN</code> if the <em>access token</em> has expired</li>
-  <li>
-<code class="highlighter-rouge">INVALID_ACCESS_TOKEN</code> if the <em>access token</em> <code class="highlighter-rouge">nbf</code> time is greater than current time</li>
-</ul>
-
-<h3 id="run-for-development">Run for development</h3>
-
-<p>The service source code is hosted in Github, so please refer directly to the <a href="https://github.com/rsksmart/rif-identity.js/tree/develop/packages/express-did-auth" rel="external noopener noreferrer" target="_blank">README</a> and check there the detailed guide to install and test the service locally.</p>
+                  <h2 id="integration-rlogin---dapps-with-no-back-end">Integration rLogin - dApps with no back-end</h2>
 
 
                   
