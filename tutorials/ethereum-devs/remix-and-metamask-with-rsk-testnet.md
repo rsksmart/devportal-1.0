@@ -43,7 +43,7 @@ Check out our [other webinars](/webinars).
 ## Translations
 
 This article is also available in
-[Português](https://solange.dev/2020/2020-03-27-Rsk-RemixMetamask/ "Crie seu primeiro smart contract utilizando Remix e Metamask com a RSK testnet").
+[Português](https://rsk.solange.dev/#/pt/remix-metamask/readme "Crie seu primeiro smart contract utilizando Remix e Metamask com a RSK testnet").
 
 ## Requirements
 
