@@ -34,7 +34,7 @@ Now you’ll be able to:
 If you want to Send tokens, you’ll need to consider certain things:
  * Gas price: should be 0.06 gwei
  * Gas limit:  60000
- * Transaction fee: RBTC
+ * Transaction fee: RBTC (suggested amount will be displayed)
 
 
 1. Send Token (at RSK Mainnet)
@@ -45,4 +45,3 @@ If you want to Send tokens, you’ll need to consider certain things:
 ![](/assets/img/tutorials/send-tokens-through-metamask/metamask-send-token.png)
 
 ![](/assets/img/tutorials/send-tokens-through-metamask/metamask-customize-gas.png)
-
