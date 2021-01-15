@@ -79,7 +79,7 @@ Check out our [other webinars](/webinars).
 ## Translations
 
 This article is also available in
-[Português](https://solange.dev/2020/2020-05-11-Rsk-CreateTokenNFT/ "Crie seu token colecionável na rede RSK").
+[Português](https://rsk.solange.dev/#/pt/create-token-nft/readme "Crie seu token colecionável na rede RSK").
 
 # Requirements
 

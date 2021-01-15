@@ -27,7 +27,7 @@ Here is a summary of the steps to be taken to build our project:
 ## Translations
 
 This article is also available in
-[Português](https://solange.dev/2020/2020-05-10-Rsk-SetupTruffleOZ/ "Como criar um projeto utilizando Truffle e OpenZeppelin conectado à rede RSK").
+[Português](https://rsk.solange.dev/#/pt/setup-truffle-open-zeppelin/readme "Como criar um projeto utilizando Truffle e OpenZeppelin conectado à rede RSK").
 
 # Requirements
 

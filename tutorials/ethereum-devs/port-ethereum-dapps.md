@@ -19,7 +19,7 @@ Smart contracts for RSK are written using Solidity (a Javascript like programmin
 
 #### Portuguese - Português
 
-Este artigo está disponível em Português: [Migrando dApps do Ethereum para RSK](https://solange.dev/2020/rsk-port-ethereum-dapps/ "Migrando dApps do Ethereum para RSK").
+Este artigo está disponível em Português: [Migrando dApps do Ethereum para RSK](https://rsk.solange.dev/#/pt/port-ethereum-dapps/readme "Migrando dApps do Ethereum para RSK").
 
 E também fizemos um [webinar](/webinars/202007-006/ "Migrando dApps do Ethereum para RSK")  sobre o assunto, veja o [vídeo](https://youtu.be/-7Oi9_BDr5k)
 
