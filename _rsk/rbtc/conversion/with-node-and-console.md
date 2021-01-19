@@ -2,11 +2,11 @@
 layout: rsk
 title: Conversion with node and console
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, node, cli
-description: 'How to perform the 2-way peg mechanism using node and console'
+description: 'How to perform the Powpeg mechanism using node and console'
 collection_order: 3150
 ---
 
-This document explains how to try the 2-way peg mechanism using
+This document explains how to try the Powpeg mechanism using
 your RSK node and a command line.
 
 - [General requirements](#general-requirements)

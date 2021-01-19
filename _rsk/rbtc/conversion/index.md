@@ -9,7 +9,7 @@ render_features: '2-way-peg-verifier'
 ---
 
 In this article we will explain step by step on how to convert from BTC to R-BTC, and vice versa.
-The process of conversion utilises a **2-way peg** mechanism.
+The process of conversion utilises a **Powpeg** mechanism.
 Thus, these conversions are referred to as peg-ins and peg-outs.
 
 - **Peg-in**:

@@ -2,7 +2,7 @@
 layout: rsk
 title: Conversion using a Ledger hardware wallet
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, ledger
-description: 'How to perform the 2-way peg mechanism using Ledger'
+description: 'How to perform the Powpeg mechanism using Ledger'
 collection_order: 3140
 ---
 

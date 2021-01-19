@@ -5,7 +5,7 @@ collection_order: 3000
 permalink: /rsk/rbtc/
 ---
 
-The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into R-BTC](/rsk/rbtc/conversion/) by sending BTC through the [2-way peg](/rsk/architecture/2-way-peg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
+The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into R-BTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
 
 ## R-BTC (Smart Bitcoin in Mainnet)
 
@@ -32,7 +32,7 @@ The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc
       <td>
         <ul>
             <li><a href="#exchanges" target="_blank">Exchanges</a></li>
-            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
+            <li><a href="/rsk/architecture/powpeg/" target="_blank">Powpeg</a></li>
         </ul>
       </td>
     </tr>
@@ -71,7 +71,7 @@ The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc
       <td>
         <ul>
             <li><a href="https://faucet.rsk.co" target="_blank">Faucet</a></li>
-            <li><a href="/rsk/architecture/2-way-peg/" target="_blank">2-way peg</a></li>
+            <li><a href="/rsk/architecture/powpeg/" target="_blank">Powpeg</a></li>
         </ul>
       </td>
     </tr>

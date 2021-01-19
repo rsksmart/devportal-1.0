@@ -431,9 +431,9 @@ Also include this configuration at `network` section:
 You will be able to check the Mainnet's transactions and blocks in real time on
 [explorer.rsk.co/](https://explorer.rsk.co/)
 
-#### Get R-BTC through 2-way peg
+#### Get R-BTC through Powpeg
 
 To deploy onto Mainnet, we need to get some [R-BTC](/rsk/rbtc/).
 
-- You can check the [2-way peg](/rsk/architecture/2-way-peg/) mechanism between BTC and R-BTC.
+- You can check the [Powpeg](/rsk/architecture/powpeg/) mechanism between BTC and R-BTC.
 - Or you can buy in these [exchanges](/rsk/rbtc/#exchanges)

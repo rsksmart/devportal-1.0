@@ -173,10 +173,10 @@ but does earn a reward from the merged mining.
 Check out [mining.rsk.co](https://mining.rsk.co/)
 to learn more about mining.
 
-## 2-way peg with Bitcoin
+## Powpeg with Bitcoin
 
 The second point of contact is the
-[2-way peg](/rsk/architecture/2-way-peg/),
+[Powpeg](/rsk/architecture/powpeg/),
 also known as the bridge.
 
 This component connects both networks to allow
