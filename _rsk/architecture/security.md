@@ -14,7 +14,7 @@ Fully trust-minimized and third-party-free two-way pegs can be created if two pl
 
 The locking and unlocking of funds is done by the Powpeg without any human intervention. A requirement for being part of the Powpeg is the ability to maintain the PowHSM device online and connected to the RSK network with high up-time. It’s also a requirement that pegnatories are capable of auditing, or review third party audits that attest that the software that powers the node behaves as expected. The PowHSM device is manufactured by a top hardware security company and the firmware was developed by IOV Labs. The PowHSM provides state-of-the-art maximum security for their private keys using a Secure Element (SE).
 
-As of January 2020, the Powpeg comprises 12 well-known, and highly secure pegnatories. Leading Blockchain companies currently integrate the In exchange for their work, the pegnatories are awarded 1% of the transaction fees generated on RSK, in order to cover the hardware and maintenance costs. 
+As of January 2020, the Powpeg comprises 12 well-known, and highly secure pegnatories. Leading Blockchain companies are currently members of the Powpeg.  In exchange for their work, the pegnatories are awarded 1% of the transaction fees generated on RSK, in order to cover the hardware and maintenance costs. 
 
 ## Powpeg Members Update
 
