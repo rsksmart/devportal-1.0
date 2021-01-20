@@ -4926,7 +4926,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/7555fb99-899d-44df-9ebe-2c87a3014c54/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dai-on-rsk",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -4970,7 +4970,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/545c4fad-b5be-4590-964b-118724b44aaf/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/dai-on-rsk-en-espanol",
-      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event2.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -5214,14 +5214,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/04b5ad21-b34d-4a19-b70f-a7c6eae1f21f/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/powpeg",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202012-002/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -5229,7 +5229,7 @@
       "version": "2",
       "timestamp": "2020-12-18T22:00:00.000Z",
       "lastModified": "2020-12-14T19:00:00.000Z",
-      "status": "confirmed",
+      "status": "cancelled",
       "url": "",
       "title": "Aprenda Blockchain e Smart Contracts",
       "description": "Este workshop apresenta os fundamentos de Blockchain. Além disso, você vai aprender a criar seu primeiro smart contract, utilizando a linguagem Solidity e publicando na rede RSK.",
@@ -5252,13 +5252,164 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/92e4534b-3347-4001-9ec9-0925c0dcaefc/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/aprenda-blockchain-e-smart-contracts",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
-      "_permalink": "/webinars/202012-003/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202102-001",
+      "version": "1",
+      "timestamp": "2021-02-02T22:00:00.000Z",
+      "lastModified": "2021-01-19T13:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "DeFi para desarrolladores: cómo usar RSKSwap con smart contracts",
+      "description": "RSKSwap es un exchange descentralizado que permite cambiar tokens ERC20 automáticamente sin necesidad de esperar a un comprador o un vendedor.\nCuenta con la ventaja de los bajos costos y seguridad de la red RSK. Además no requiere KYC y no tiene límites para retiros o depósitos.\nEn este workshop te mostraré una guía paso a paso sobre cómo crear tu propio token e intercambiarlo en RSKSwap programáticamente usando smart contracts.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/8881f7e0-f0e5-4711-a8e9-14a79bf99aeb/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-como-usar-rskswap-con-smart-contracts",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202102-001/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202102-002",
+      "version": "1",
+      "timestamp": "2021-02-03T22:00:00.000Z",
+      "lastModified": "2021-01-19T13:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "DeFi para desenvolvedores: como usar RSKSwap com smart contracts",
+      "description": "RSKSwap é uma exchange descentralizada, que permite fazer trades com tokens ERC20 automaticamente, sem ficar esperando um comprador ou vendedor, com as vantagens do baixo custo e da segurança do Blockchain RSK. Também não precisa de indentificação - KYC e não tem limites para retiradas ou depósitos. Neste workshop, vou apresentar um guia passo a passo para criar seu próprio token e negociá-lo no RSKSwap programaticamente, criando contratos inteligentes.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/0f23fed6-ee1f-4fc7-9627-50fe0c6f9ad3/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desenvolvedores-como-usar-rskswap-com-smart-contracts",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202102-002/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202102-003",
+      "version": "1",
+      "timestamp": "2021-02-24T22:00:00.000Z",
+      "lastModified": "2021-01-19T13:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "DeFi for Developers: how To Use RSKSwap Smart Contracts To Automate Trading",
+      "description": "RSKSwap is a decentralized exchange to automatically exchange ERC20 tokens, there is no need to wait for a buyer or seller. It has the advantage of the low costs and security of the RSK network. It also doesn’t require KYC and has no limits for withdrawals or deposits. \nIn this webinar you will have a step-by-step guide to create your own token and exchange it in RSKSwap automatically, using smart contracts.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/fa4d0e55-5096-4cc2-8dae-9d1f20af83fd/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-for-developers-how-to-use-rskswap-smart-contracts-to-automate-trading",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event12.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202102-003/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202102-004",
+      "version": "1",
+      "timestamp": "2021-02-25T22:00:00.000Z",
+      "lastModified": "2021-01-19T13:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "Factory de smart contracts - aprenda como um smart contract pode criar outros",
+      "description": "Factory é um padrão de desenvolvimento utilizado em Solidity. A ideia é simples: ao invés de você criar um smart contract, você tem outro smart contract que faz a criação, de forma automatizada. \nNeste webinar você vai aprender a criar um Factory e casos de uso para isto.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/fe137700-1cf1-477d-8a41-e16131310da9/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/factory-de-smart-contracts-aprenda-como-um-smart-contract-pode-criar-outros",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event7.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202102-004/",
       "_isPast": false
     }
   ]
