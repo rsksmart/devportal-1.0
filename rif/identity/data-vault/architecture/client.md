@@ -49,10 +49,10 @@ const client = new DataVaultWebClient({
 
 ##### Auth Manager
 
-It manages authentication according to the [DID Auth protocol](../../../rlogin/libraries/express-did-auth). It is in charge of emitting the necessary events to be signed by the user and store the generated tokens.
+It manages authentication according to the [DID Auth protocol](../../../rlogin/libraries/express-did-auth). It is in charge of emitting the necessary events to be signed by the user and store the generated tokens. It will associate the generated tokens to the current DID so it allows multiple sessions with different DIDs.
 
 It is instantiated with a `DIDAuthConfig` object, which contains the following fields:
-- `serviceUrl: string`: the IPFS Centralized Data Vault Service url, the user will be logged in to that url
+- `serviceUrl: string`: the IPFS Centralized Data Vault Service URL, which enables the user to be logged in.
 - `did?: string`: the client did. It is required if performing authenticated requests
 - `personalSign?: (data: string) => Promise<string>`: the personalSign function associated to the client did. It is used to sign the challenge in the login process. Metamask example: `(data: string) => window.ethereum.request({ method: 'personal_sign', params: [address, data] })`
 - `store?: KeyValueStore`: object that MUST implement the `KeyValueStore` interface. It is used to save the `accessToken` and `refreshToken`. It uses [window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) if not store object provided.
@@ -73,10 +73,11 @@ const authManager = new AuthManager({ did, serviceUrl, personalSign })
 ##### Encryption Manager
 
 It is in charge of managing the encryption of the saved information and the decryption of the received information.
+It also decides whether or not to decrypt the content based on the current status, it also checks if it's encrypted before trying to decrypt it.
 
 It receives an `EncryptionManagerConfig` with the following fields:
-- `getEncryptionPublicKey?: () => Promise<string>`: the method used to get the user encryption public key. That public key will be used to encrypt the content before sending it to the service to be stored. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-getencryptionpublickey) example: `() => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })`
-- `decrypt: (hexCypher: string) => Promise<string>`: the method used to decrypt data stored in the service. By invoking this method, the package prompts the user to decrypt content in the wallet. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-decrypt) example: `(hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })`
+- `getEncryptionPublicKey?: () => Promise<string>`: the method used to get the user encryption public key. That public key will be used to encrypt the content before sending it to the service to be stored. [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-getencryptionpublickey) example: `() => window.ethereum.request.request({ method: 'eth_getEncryptionPublicKey', params: [address] })`. If it is not provided, the content will not be encrypted prior to saving it in IPFS.
+- `decrypt: (hexCypher: string) => Promise<string>`: the method used to decrypt data stored in the service. If using [Metamask](https://docs.metamask.io/guide/rpc-api.html#eth-decrypt) example: `(hexCypher: string) => window.ethereum.request({ method: 'eth_decrypt', params: [hexCypher, address] })`, then this method will prompt the user to decrypt content in the wallet. If there's no Metamask wallet present, we strongly recommend creating a function that alerts the user that the content will not be decrypted because the wallet does not include that feature.
 
 Example:
 
