@@ -76,15 +76,18 @@ Requiring information to the user is OPTIONAL, it depends on the service needs. 
 1. _Client_ sends `POST /request-signup { did }` to _Service_, where `did` is _User_'s DID
 2. _Service_ creates a random deterministic* _challenge_. Responds with `{ challenge, sdr? }` were `sdr?` is the OPTIONAL [selective disclosure request](#request) defined by the _Service_. The `sdr` MUST be sent in a signed JWT format.
 3. If `sdr`, _Client_ obtains the information required from the user's desired service or platform (for example, from the [RIF Data Vault](../../data-vault)), and builds a [selective disclosure](#response) (response)
-4. _Client_ pormpts user to sign a message with the following format using `personal_sign` as per EIP-191{% include rif-id-ref.html id="16" %} and EIP-155{% include rif-id-ref.html id="15" %}:
+4. _Client_ prompts user to sign a message with the following format using `personal_sign` as per EIP-191{% include rif-id-ref.html id="16" %} and EIP-155{% include rif-id-ref.html id="15" %}:
+
   ```
-Login to <web domain>
+<custom header set by the developer>
+URL: <web domain>
 Verification code: <challenge>
 My credentials are: <array of JWT credentials separated by commas>
   ```
   where `<web domain>` is the site DNS domain and `<array of JWT credentials>` is the selective disclosure (which is set if `sdr` was asked*). For example
   ```
-Login to taringa.net
+You are going to log in to Taringa.
+URL: taringa.net
 Verification code: 4531
 My credentials are: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjpyc2s6MHhjMmE0MWY3NmNhY2ZhOTMzYzM0OTY5NzdmMjE2MDk0NGVmOGMyZGUzIiwicm9sZSI6IlJJRiBEZXZlbG9wZXIiLCJpc3MiOiJkaWQ6ZXRocjpyc2s6MHg0Y2MxNzc0MjI2NDNjMzgxNGE5ZThhNzY1NDk4NTIxYzUyMDRmMTExIiwiaWF0IjoxNTE2MjM5MDIyfQ.3sauMI60RVqc1QrvooZnNnmjAMiHj4qt5ZSEYhOULvA,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjpyc2s6MHhjMmE0MWY3NmNhY2ZhOTMzYzM0OTY5NzdmMjE2MDk0NGVmOGMyZGUzIiwic2tpbGxzIjoiQmxvY2tjaGFpbiIsImlzcyI6ImRpZDpldGhyOnJzazoweDRjYzE3NzQyMjY0M2MzODE0YTllOGE3NjU0OTg1MjFjNTIwNGYxMTEiLCJpYXQiOjE1MTYyMzkwMjJ9.SgPPVFj0lU9E_dq_aPOmrf_CZljNh1ZaEhAufAbIgFY
   ```
@@ -106,10 +109,13 @@ POST /signup {
   ]
 }
   ```
-6. _Service_ receives the `response` and recovers the signer against this message (_Service_ needs the _User_'s DID to fetch the expected challenge):
+
+6. _Service_ receives the `response` and recovers the signer against this message (_Service_ needs the _User_'s DID to fetch the expected challenge): 
+
   ```
-Login to {SERVICE_EXPECTED_DOMAIN}
-Verification code: {EXPECTED_CHALLENGE}
+<custom header set by the developer>
+URL: <service expected domain>
+Verification code: <expected challenge>
 My credentials are: {response.credentials.join(',')}
   ```
   Then checks message signer matches `response.did`'s address, and performs business logic over the selective disclosure. If business logic is successful, it logs the user in by creating an _access token_ and a _refresh token_:
@@ -197,8 +203,10 @@ Services should use _login_ after [signin up](#sign-up) users. This means the se
 1. _Client_ sends `POST /request-auth { did }` to _Service_, where `did` is _User_'s DID
 2. _Service_ creates a random deterministic* _challenge_ to send to _Client_ and responds with `{ challenge }`.
 3. _Client_ signs a message with  the following format using `personal_sign` as per EIP-191{% include rif-id-ref.html id="16" %} and EIP-155{% include rif-id-ref.html id="15" %}:
+
   ```
-Login to <web domain>
+<custom header set by the developer>
+URL: <web domain>
 Verification code: <challenge>
   ```
   _Client_ prompts the _User_ to sign it with DID controller's private key.
@@ -210,9 +218,11 @@ POST /auth {
 }
   ```
 6. _Service_ receives the `response` and recovers the signer against this message:
+
   ```
-Login to {SERVICE_EXPECTED_DOMAIN}
-Verification code: {EXPECTED_CHALLENGE}
+<custom header set by the developer>
+URL: <service expected domain>
+Verification code: <expected challenge>
 My credentials are: {response.credentials.join(',')}
   ```
   Then checks message signer matches `response.did`'s address. If necessary, performs business logic over the `did` and the information related to it saved by the _Service_. If it is a valid user, it creates an _access token_ and a _refresh token_ - see ([sign up](#sign-up) to understand required token JWT payload format)

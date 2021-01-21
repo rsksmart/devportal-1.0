@@ -95,6 +95,8 @@ _OPTIONAL_
 
 `registry: string`: [DID Registry](https://github.com/uport-project/ethr-did-registry) address used to resolve Ethr DID identities. _Default: `0xdca7ef03e98e0dc2b855be647c39abe984fcf21b`_
 
+`loginMessageHeader: string`: the message header that is expected to receive when the user signs the login message, it will be used to recover the signer against the received message. _If not provided, the expected message will be just `URL: <service url>\nVerification code: <expected challenge>`, without any header before the `URL`_
+
 `accessTokenExpirationTimeInSeconds: number`: the validity in `seconds` of each _access token_. Remember that it should be short because the long validity is for the _refresh token_. _Default: `600` (10 minutes)_
 
 `authenticationBusinessLogic: AuthenticationBusinessLogic`: the business logic to execute when a DID tries to log in. Will be executed each time the `/auth` endpoint is invoked with a valid signature. If it throws an error, the error message will be returned as part of an HTTP 401 response. _If not present, no business logic will be executed._
