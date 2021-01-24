@@ -928,7 +928,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-31 00:45:39 +0000T00:00:00.000Z">2020-12-31</time> | -->
+    <!--time role="presentation" datetime="2021-01-22 09:41:22 +0000T00:00:00.000Z">2021-01-22</time> | -->
      10' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/libraries/express-did-auth.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1783,6 +1783,8 @@
 <p><code class="highlighter-rouge">networkName: string</code>: network name used to <a href="https://github.com/decentralized-identity/ethr-did-resolver" rel="external noopener noreferrer" target="_blank">resolve</a> Ethr DID identities. <em>If not provided, will resolve using both RSK Mainnet and Testnet networks.</em></p>
 
 <p><code class="highlighter-rouge">registry: string</code>: <a href="https://github.com/uport-project/ethr-did-registry" rel="external noopener noreferrer" target="_blank">DID Registry</a> address used to resolve Ethr DID identities. <em>Default: <code class="highlighter-rouge">0xdca7ef03e98e0dc2b855be647c39abe984fcf21b</code></em></p>
+
+<p><code class="highlighter-rouge">loginMessageHeader: string</code>: the message header that is expected to be received when the user signs the login message, it will be used to recover the signer against the received message. <em>If not provided, the expected message will be just <code class="highlighter-rouge">URL: &lt;service url&gt;\nVerification code: &lt;expected challenge&gt;</code>, without any header before the <code class="highlighter-rouge">URL</code></em></p>
 
 <p><code class="highlighter-rouge">accessTokenExpirationTimeInSeconds: number</code>: the validity in <code class="highlighter-rouge">seconds</code> of each <em>access token</em>. Remember that it should be short because the long validity is for the <em>refresh token</em>. <em>Default: <code class="highlighter-rouge">600</code> (10 minutes)</em></p>
 

@@ -920,7 +920,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-31 23:36:25 +0000T00:00:00.000Z">2020-12-31</time> | -->
+    <!--time role="presentation" datetime="2021-01-21 19:51:22 +0000T00:00:00.000Z">2021-01-21</time> | -->
      16' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/specs/did-auth.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1789,21 +1789,23 @@
 <em>Service</em> creates a random deterministic* <em>challenge</em>. Responds with <code class="highlighter-rouge">{ challenge, sdr? }</code> were <code class="highlighter-rouge">sdr?</code> is the OPTIONAL <a href="#request">selective disclosure request</a> defined by the <em>Service</em>. The <code class="highlighter-rouge">sdr</code> MUST be sent in a signed JWT format.</li>
   <li>If <code class="highlighter-rouge">sdr</code>, <em>Client</em> obtains the information required from the user’s desired service or platform (for example, from the <a href="../../data-vault">RIF Data Vault</a>), and builds a <a href="#response">selective disclosure</a> (response)</li>
   <li>
-<em>Client</em> pormpts user to sign a message with the following format using <code class="highlighter-rouge">personal_sign</code> as per EIP-191<sup><a href="../../references/#ref-16">16</a></sup>
+<em>Client</em> prompts user to sign a message with the following format using <code class="highlighter-rouge">personal_sign</code> as per EIP-191<sup><a href="../../references/#ref-16">16</a></sup>
  and EIP-155<sup><a href="../../references/#ref-15">15</a></sup>
-:
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>Login to &lt;web domain&gt;
+:</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;custom header set by the developer&gt;
+URL: &lt;web domain&gt;
 Verification code: &lt;challenge&gt;
 My credentials are: &lt;array of JWT credentials separated by commas&gt;
-</code></pre></div>    </div>
-    <p>where <code class="highlighter-rouge">&lt;web domain&gt;</code> is the site DNS domain and <code class="highlighter-rouge">&lt;array of JWT credentials&gt;</code> is the selective disclosure (which is set if <code class="highlighter-rouge">sdr</code> was asked*). For example</p>
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>Login to taringa.net
+</code></pre></div></div>
+<p>where <code class="highlighter-rouge">&lt;web domain&gt;</code> is the site DNS domain and <code class="highlighter-rouge">&lt;array of JWT credentials&gt;</code> is the selective disclosure (which is set if <code class="highlighter-rouge">sdr</code> was asked*). For example</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>You are going to log in to Taringa.
+URL: taringa.net
 Verification code: 4531
 My credentials are: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjpyc2s6MHhjMmE0MWY3NmNhY2ZhOTMzYzM0OTY5NzdmMjE2MDk0NGVmOGMyZGUzIiwicm9sZSI6IlJJRiBEZXZlbG9wZXIiLCJpc3MiOiJkaWQ6ZXRocjpyc2s6MHg0Y2MxNzc0MjI2NDNjMzgxNGE5ZThhNzY1NDk4NTIxYzUyMDRmMTExIiwiaWF0IjoxNTE2MjM5MDIyfQ.3sauMI60RVqc1QrvooZnNnmjAMiHj4qt5ZSEYhOULvA,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjpyc2s6MHhjMmE0MWY3NmNhY2ZhOTMzYzM0OTY5NzdmMjE2MDk0NGVmOGMyZGUzIiwic2tpbGxzIjoiQmxvY2tjaGFpbiIsImlzcyI6ImRpZDpldGhyOnJzazoweDRjYzE3NzQyMjY0M2MzODE0YTllOGE3NjU0OTg1MjFjNTIwNGYxMTEiLCJpYXQiOjE1MTYyMzkwMjJ9.SgPPVFj0lU9E_dq_aPOmrf_CZljNh1ZaEhAufAbIgFY
-</code></pre></div>    </div>
-  </li>
+</code></pre></div></div>
+<ol>
   <li>
 <em>User</em> signs the message with the DID controller’s private key. <em>Client</em> sends to <em>Service</em>
     <div class="highlighter-rouge">
@@ -1825,16 +1827,18 @@ My credentials are: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjp
 </span></code></pre></div>    </div>
   </li>
   <li>
-<em>Service</em> receives the <code class="highlighter-rouge">response</code> and recovers the signer against this message (<em>Service</em> needs the <em>User</em>’s DID to fetch the expected challenge):
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>Login to {SERVICE_EXPECTED_DOMAIN}
-Verification code: {EXPECTED_CHALLENGE}
+<em>Service</em> receives the <code class="highlighter-rouge">response</code> and recovers the signer against this message (<em>Service</em> needs the <em>User</em>’s DID to fetch the expected challenge):</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;custom header set by the developer&gt;
+URL: &lt;service expected domain&gt;
+Verification code: &lt;expected challenge&gt;
 My credentials are: {response.credentials.join(',')}
-</code></pre></div>    </div>
-    <p>Then checks message signer matches <code class="highlighter-rouge">response.did</code>’s address, and performs business logic over the selective disclosure. If business logic is successful, it logs the user in by creating an <em>access token</em> and a <em>refresh token</em>:</p>
-    <ul>
-      <li>The <em>access token</em> is a JWT signed with the service controller DID’s private key. The JWT MUST have, at least, the following payload:
-        <div class="language-javascript highlighter-rouge">
+</code></pre></div></div>
+<p>Then checks message signer matches <code class="highlighter-rouge">response.did</code>’s address, and performs business logic over the selective disclosure. If business logic is successful, it logs the user in by creating an <em>access token</em> and a <em>refresh token</em>:</p>
+<ul>
+  <li>The <em>access token</em> is a JWT signed with the service controller DID’s private key. The JWT MUST have, at least, the following payload:
+    <div class="language-javascript highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="p">{</span>
   <span class="nl">iss</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">serviceDid</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span>
   <span class="nx">aud</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">serviceUrl</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span>
@@ -1843,18 +1847,16 @@ My credentials are: {response.credentials.join(',')}
   <span class="nx">nbf</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">now</span><span class="p">}</span><span class="s2">`</span><span class="p">,</span>
   <span class="nx">iat</span><span class="p">:</span> <span class="s2">`</span><span class="p">${</span><span class="nx">now</span><span class="p">}</span><span class="s2">`</span>
 <span class="p">}</span>
-</code></pre></div>        </div>
-        <p>Other claims could be useful for storing user metadata and other use case related information.</p>
-      </li>
-      <li>The <em>refresh token</em> is an opaque string (could be a random one) that will be associated to user session data in the server. It has a long expiration</li>
-      <li>The HTTP status is 200 and the body is
-        <div class="language-javascript highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="nx">accessToken</span><span class="p">,</span> <span class="nx">refreshToken</span> <span class="p">}</span>
-</code></pre></div>        </div>
-      </li>
-    </ul>
+</code></pre></div>    </div>
+    <p>Other claims could be useful for storing user metadata and other use case related information.</p>
   </li>
-</ol>
+  <li>The <em>refresh token</em> is an opaque string (could be a random one) that will be associated to user session data in the server. It has a long expiration</li>
+  <li>The HTTP status is 200 and the body is
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="p">{</span> <span class="nx">accessToken</span><span class="p">,</span> <span class="nx">refreshToken</span> <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
 <blockquote>
   <p>*The credential format is not friendly for the user: they cannot understand what they are signing. Future work will research on finding a more user-oriented form to display the JWTs but with current technology this is what we can do. Ideally EIP-712 could be used to show display JWTs in user-oriented form.</p>
@@ -1945,13 +1947,15 @@ My credentials are: {response.credentials.join(',')}
   <li>
 <em>Client</em> signs a message with  the following format using <code class="highlighter-rouge">personal_sign</code> as per EIP-191<sup><a href="../../references/#ref-16">16</a></sup>
  and EIP-155<sup><a href="../../references/#ref-15">15</a></sup>
-:
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>Login to &lt;web domain&gt;
+:</li>
+</ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;custom header set by the developer&gt;
+URL: &lt;web domain&gt;
 Verification code: &lt;challenge&gt;
-</code></pre></div>    </div>
-    <p><em>Client</em> prompts the <em>User</em> to sign it with DID controller’s private key.</p>
-  </li>
+</code></pre></div></div>
+<p><em>Client</em> prompts the <em>User</em> to sign it with DID controller’s private key.</p>
+<ol>
   <li>
 <em>Client</em> sends  to <em>Service</em>
     <div class="highlighter-rouge">
@@ -1962,15 +1966,15 @@ Verification code: &lt;challenge&gt;
 </code></pre></div>    </div>
   </li>
   <li>
-<em>Service</em> receives the <code class="highlighter-rouge">response</code> and recovers the signer against this message:
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>Login to {SERVICE_EXPECTED_DOMAIN}
-Verification code: {EXPECTED_CHALLENGE}
-My credentials are: {response.credentials.join(',')}
-</code></pre></div>    </div>
-    <p>Then checks message signer matches <code class="highlighter-rouge">response.did</code>’s address. If necessary, performs business logic over the <code class="highlighter-rouge">did</code> and the information related to it saved by the <em>Service</em>. If it is a valid user, it creates an <em>access token</em> and a <em>refresh token</em> - see (<a href="#sign-up">sign up</a> to understand required token JWT payload format)</p>
-  </li>
+<em>Service</em> receives the <code class="highlighter-rouge">response</code> and recovers the signer against this message:</li>
 </ol>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;custom header set by the developer&gt;
+URL: &lt;service expected domain&gt;
+Verification code: &lt;expected challenge&gt;
+My credentials are: {response.credentials.join(',')}
+</code></pre></div></div>
+<p>Then checks message signer matches <code class="highlighter-rouge">response.did</code>’s address. If necessary, performs business logic over the <code class="highlighter-rouge">did</code> and the information related to it saved by the <em>Service</em>. If it is a valid user, it creates an <em>access token</em> and a <em>refresh token</em> - see (<a href="#sign-up">sign up</a> to understand required token JWT payload format)</p>
 
 <p>See <a href="#authenticating-requests">authenticating requests</a> to understand how to user <em>access</em> and <em>refresh</em> tokens.</p>
 
