@@ -77,13 +77,6 @@ The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, 
             <a class="company-name" href="https://beexo.com/" target="blank">Beexo Wallet</a>
         </a>
     </div>
-
-    <div class="item">
-        <a href="https://dcentwallet.com/" target="blank">
-            <img id="square-fix" src="/assets/img/rsk/wallets/dcentwallet.jpg" alt="D'CENT Wallet">
-            <a class="company-name" href="https://dcentwallet.com/" target="blank">D'CENT Wallet</a>
-        </a>
-    </div>
 </div>
 
 ## How to use
