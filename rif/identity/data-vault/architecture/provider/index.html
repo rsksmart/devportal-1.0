@@ -928,7 +928,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-30 02:40:25 +0000T00:00:00.000Z">2020-12-30</time> | -->
+    <!--time role="presentation" datetime="2021-01-25 16:50:06 +0000T00:00:00.000Z">2021-01-25</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/data-vault/architecture/provider.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1701,10 +1701,14 @@
 
 <ul>
   <li>Stores, retrieve, deletes and swaps content from/in an IPFS node</li>
-  <li>Associates did -&gt; key -&gt; cid in a SQLite local DB so it is not needed to remember the just created cid</li>
+  <li>Associates did* -&gt; key -&gt; cid in a SQLite local DB so it is not needed to remember the just created cid</li>
   <li>Pins and unpins cids in the given IPFS node</li>
   <li>Limited storage per did</li>
 </ul>
+
+<blockquote>
+  <p>*DIDs are saved in lowercase to ensure checksum compatibility across different wallets.</p>
+</blockquote>
 
 <h3 id="usage">Usage</h3>
 
