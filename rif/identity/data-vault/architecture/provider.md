@@ -11,9 +11,11 @@ A Centralized Data Vault provider compatible with RIF Data Vault standard interf
 ### Features
 
 - Stores, retrieve, deletes and swaps content from/in an IPFS node
-- Associates did -> key -> cid in a SQLite local DB so it is not needed to remember the just created cid
+- Associates did* -> key -> cid in a SQLite local DB so it is not needed to remember the just created cid
 - Pins and unpins cids in the given IPFS node
 - Limited storage per did
+
+> *DIDs are saved in lowercase to ensure checksum compatibility across different wallets.
 
 ### Usage
 
