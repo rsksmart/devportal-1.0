@@ -4046,8 +4046,8 @@ END:VEVENT
 BEGIN:VEVENT
 UID:202102-003@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20210224T220000Z
-DTSTART:20210224T220000Z
+DTSTAMP:20210223T220000Z
+DTSTART:20210223T220000Z
 SUMMARY:DeFi for Developers: how To Use RSKSwap Smart Contracts To Automat
  e Trading 
 DESCRIPTION:DeFi for Developers: how To Use RSKSwap Smart Contracts To Aut
@@ -4076,13 +4076,13 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/defi-for-developers-how-
  to-use-rskswap-smart-contracts-to-automate-trading
 STATUS:CONFIRMED
 X-LANGUAGE:English
-LAST-MODIFIED:20210119T130000Z
+LAST-MODIFIED:20210126T130000Z
 END:VEVENT
 BEGIN:VEVENT
 UID:202102-004@developers.rsk.co/
 SEQUENCE:0
-DTSTAMP:20210225T220000Z
-DTSTART:20210225T220000Z
+DTSTAMP:20210224T220000Z
+DTSTART:20210224T220000Z
 SUMMARY:Factory de smart contracts - aprenda como um smart contract pode c
  riar outros 
 DESCRIPTION:Factory de smart contracts - aprenda como um smart contract po
@@ -4111,6 +4111,6 @@ URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/factory-de-smart-contrac
  ts-aprenda-como-um-smart-contract-pode-criar-outros
 STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
-LAST-MODIFIED:20210119T130000Z
+LAST-MODIFIED:20210126T130000Z
 END:VEVENT
 END:VCALENDAR
