@@ -62,7 +62,7 @@ The latest block's minimum gas price can be obtained using this Web3 method:
 web3.eth.getBlock('latest').minimumGasPrice
 ```
 
-There are some practical options about this subject:
+Here are some practical approaches to this subject:
 
 1. Optimistic approach (not recommended)
 You can set `minimumGasPrice` as gas price parameter for the transaction **but if minimum gas price is under negatiaton and it gets higher, your transaction could be rejected**.
