@@ -68,7 +68,7 @@ There are some practical options about this subject:
 You can set `minimumGasPrice` as gas price parameter for the transaction **but if minimum gas price is under negatiaton and it gets higher, your transaction could be rejected**.
 
 2. Sensible approach
-Instead of using `minimumGasPrice` as it is, you may [add 10% to its value](#how-does-gas-price-change-over-time?).
+Instead of using `minimumGasPrice` as it is, you may [add 10% to its value](#how-does-gas-price-change-over-time).
 
 3. Network average approach
 You can obtain the average gas price that is being paid in the network:
