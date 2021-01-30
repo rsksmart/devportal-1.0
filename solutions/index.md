@@ -145,4 +145,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/beexo/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/BeexoWallet/Beexo_logo.jpg" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/beexo/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Beexo</p>
+                        <p class="card-desc">Beexo is crypto made simple! A multi-currency digital wallet connecting you with the crypto world.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/beexo/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
