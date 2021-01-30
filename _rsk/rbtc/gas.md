@@ -55,7 +55,7 @@ Gas price changes with time. To choose an appropriate gas price you should consi
 The `minimumGasPrice` is written in the block header by miners and establishes the minimum gas price a transaction should have in order to be included in that block.
 Negotiated minimum gas price is described in [RSKIP09](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP09.md).
 
-Minimum gas price is written in the block header by miners. It describes the minimum gas price a transaction should have to be included in that block. It can change with time, by up 1% of the `minimumGasPrice` of the previous block.
+Minimum gas price is written in the block header by miners. It describes the minimum gas price a transaction should have to be included in that block. It can change with time, by up to 1% of the `minimumGasPrice` of the previous block.
 The latest block's minimum gas price can be obtained using this Web3 method:
 
 ```javascript
