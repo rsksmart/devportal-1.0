@@ -90,6 +90,7 @@ You can find the app at [https://live.sovryn.app/](https://live.sovryn.app/)
 # Get in touch
 
 - [Website](https://sovryn.app/)
+- [Forum](https://forum.sovryn.app/)
 - [Github](https://github.com/DistributedCollective)
 - [Discord](https://discord.gg/J22WS6z)
 - [Telegram](https://t.me/SovrynBitcoin)
