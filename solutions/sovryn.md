@@ -48,6 +48,28 @@ Both Carol and David can integrate permissionlessly with the trading, lending an
 Sovryn does not require you to send your Bitcoin to a centralized company, like BitMEX or Binance, in order to trade. With Sovryn, you send your BTC to a smart contract that allows you to keep custody of your private keys, allowing you to withdraw your funds at any time.
 Sovryn is permissionless in the sense that no one can censor a transaction, ban your account or require you to undergo KYC before trading.
 
+# Sovryn Individuals
+
+Sovryn governance will be decentralized soon. Instead of shares, governed by laws and enforced by courts, Sovryn dequity (decentralized equity) will be governed by the blockchain and enforced by Bitcoin's POW.
+
+## Bitocracy
+
+The SOV Bitocracy is a distributed, pseudonymous governing body of stakeholders in the future of the Sovryn protocol and business.
+
+![bitocracy](/assets/img/solutions/sovryn/bitocracy.png)
+
+SOV token holders can make executable proposals if they possess enough voting power, vote on proposals during a predefined voting period and in the end evaluate the outcome. If successful, the proposal will be scheduled on the timelock contract. Only after sufficient time has passed can it be executed. A minimum voting power of 1% of SOV (1,000,000) is required for making a proposal as well as a minimum quorum.
+
+In addition, SOV token holders can aggregate their governing power to a specific stakeholder (without transferring their SOV tokens) through delegation
+
+## Bitocracy Voting
+
+- User requests to makes a code proposal
+- Governance contract checks the Staking contract to determine if the user has enough voting power
+- If the user has the required amount of voting power then the proposal is accepted by the Governance contract and all users with voting power are able to vote.
+- Once the voting period is over and the proposal has been voted on, it is directly scheduled for execution and sits in the Timelock contract. The timelock setting decides on the waiting time.
+- At the allocated time the proposal executes on the SOVRYN protocol
+
 # Smart Contract safety and Audits
 
 The Sovryn protocol smart contracts are periodically assessed by independent security auditors. You can see the audits here:
