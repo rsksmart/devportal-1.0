@@ -67,7 +67,9 @@ _REQUIRED_
 
 _OPTIONAL_
 
-`useCookies: boolean`: determines if the _access token_ and _refresh token_ are saved in cookies or are returned in the body of the response. If `true`, the tokens will be extracted from the cookies. See [how to send tokens](../../../specs/did-auth#how-to-send-tokens) for more information. _Default: false_
+`useCookies: boolean`: determines if the _access token_ and _refresh token_ are saved in cookies or are returned in the body of the response. If `true`, the tokens will be extracted from the cookies. See [how to send tokens](../../../specs/did-auth#how-to-send-tokens) for more information. Please check out this [note about using cookies](#note-about-cookies) if turning on this feature. _Default: false_
+
+`allowMultipleSessions: boolean`: if `useCookies` is `true`, then this flag allow the user to maintain multiple sessions for different dids in the same browser. In order to do that, the user must add the `x-logged-did` header in each request with the desired value, so the service will now which cookie to recover for each request. Please check out this [note about using cookies](#note-about-cookies) if turning on this feature. _Default: false_
 
 `requestSignupPath: string`: the request signup endpoint route. _Default: `/request-signup`_
 
@@ -184,6 +186,11 @@ Possible error messages (all HTTP 401):
 - `NO_ACCESS_TOKEN` if _access token_ could not be extracted from the cookies nor the `Authorization` header
 - `EXPIRED_ACCESS_TOKEN` if the _access token_ has expired
 - `INVALID_ACCESS_TOKEN` if the _access token_ `nbf` time is greater than current time
+
+### Note about cookies
+
+In order to prevent [CSRF](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks we've decided to use [csurf](https://www.npmjs.com/package/csurf) package.
+It adds a token in the header of each response that should be sent back in the next request. It can be found under the key `x-csrf-token`. If the token is not added in the next request, the service will return a `503 Forbidden` response.
 
 ### Run for development
 
