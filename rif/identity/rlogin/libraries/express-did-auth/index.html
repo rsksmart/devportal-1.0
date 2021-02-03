@@ -929,8 +929,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-01-22 09:41:22 +0000T00:00:00.000Z">2021-01-22</time> | -->
-     10' to read |
+    <!--time role="presentation" datetime="2021-02-02 20:52:19 +0000T00:00:00.000Z">2021-02-02</time> | -->
+     11' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/libraries/express-did-auth.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1758,7 +1758,9 @@
 
 <p><em>OPTIONAL</em></p>
 
-<p><code class="highlighter-rouge">useCookies: boolean</code>: determines if the <em>access token</em> and <em>refresh token</em> are saved in cookies or are returned in the body of the response. If <code class="highlighter-rouge">true</code>, the tokens will be extracted from the cookies. See <a href="../../../specs/did-auth#how-to-send-tokens">how to send tokens</a> for more information. <em>Default: false</em></p>
+<p><code class="highlighter-rouge">useCookies: boolean</code>: determines if the <em>access token</em> and <em>refresh token</em> are saved in cookies or are returned in the body of the response. If <code class="highlighter-rouge">true</code>, the tokens will be extracted from the cookies. See <a href="../../../specs/did-auth#how-to-send-tokens">how to send tokens</a> for more information. Please check out this <a href="#note-about-cookies">note about using cookies</a> if turning on this feature. <em>Default: false</em></p>
+
+<p><code class="highlighter-rouge">allowMultipleSessions: boolean</code>: if <code class="highlighter-rouge">useCookies</code> is <code class="highlighter-rouge">true</code>, then this flag allow the user to maintain multiple sessions for different dids in the same browser. In order to do that, the user must add the <code class="highlighter-rouge">x-logged-did</code> header in each request with the desired value, so the service will now which cookie to recover for each request. Please check out this <a href="#note-about-cookies">note about using cookies</a> if turning on this feature. <em>Default: false</em></p>
 
 <p><code class="highlighter-rouge">requestSignupPath: string</code>: the request signup endpoint route. <em>Default: <code class="highlighter-rouge">/request-signup</code></em></p>
 
@@ -1909,6 +1911,11 @@ It validates the extracted token and if it fullfils the protocol needs, it authe
   <li>
 <code class="highlighter-rouge">INVALID_ACCESS_TOKEN</code> if the <em>access token</em> <code class="highlighter-rouge">nbf</code> time is greater than current time</li>
 </ul>
+
+<h3 id="note-about-cookies">Note about cookies</h3>
+
+<p>In order to prevent <a href="https://en.wikipedia.org/wiki/Cross-site_request_forgery" rel="external noopener noreferrer" target="_blank">CSRF</a> attacks we’ve decided to use <a href="https://www.npmjs.com/package/csurf" rel="external noopener noreferrer" target="_blank">csurf</a> package.
+It adds a token in the header of each response that should be sent back in the next request. It can be found under the key <code class="highlighter-rouge">x-csrf-token</code>. If the token is not added in the next request, the service will return a <code class="highlighter-rouge">503 Forbidden</code> response.</p>
 
 <h3 id="run-for-development">Run for development</h3>
 
