@@ -1604,11 +1604,11 @@ img {
   font-size: 30px;
 }
 
-#aweber-input-group{
+.newsletter-group{
     justify-content: center;
 }
 
-#awf_field-110577831 {
+.newsletter-group-input {
     padding: 11px 30px;
     border-bottom-left-radius: 20px;
     border-top-left-radius: 20px;
@@ -1617,21 +1617,21 @@ img {
     width:65%;
 }
 
-#af-form-292887974 .af-body input.text,
-#af-form-292887974 .af-body textarea{
+.newsletter-form .af-body input.text,
+.newsletter-form .af-body textarea{
     color:#000000;
 }
 
 @media (max-width: 991px) {
-    #awf_field-110577831 {width:50%;}
+    .newsletter-group-input {width:50%;}
     }
 
     @media (max-width: 465px) {
-    #awf_field-110577831 {width:45%;}
+    .newsletter-group-input {width:45%;}
     }
 
      @media (max-width: 400px) {
-    #awf_field-110577831 {width:100%;
+    .newsletter-group-input {width:100%;
         border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
     border-right: 2px solid #D9D9D9;}
@@ -1639,7 +1639,7 @@ img {
     }
 
 
-#awf_field-110577831:focus {
+.newsletter-group-input:focus {
     border: 2px solid #D9D9D9;
     border-right: 0px;
 }
@@ -1665,7 +1665,7 @@ img {
 }
 }
 
-#awf_field-110577831:hover {
+.newsletter-group-input:hover {
     background: transparent;
     color: #fff;
     -webkit-box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.2);
@@ -1675,35 +1675,35 @@ img {
     cursor: pointer;
 }
 
-#awf_field-110577831::-webkit-input-placeholder {
+.newsletter-group-input::-webkit-input-placeholder {
     /* Edge */
     color: #CCC !important;
     font-size: 18px;
 }
 
-#awf_field-110577831:-ms-input-placeholder {
+.newsletter-group-input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: #CCC !important;
     font-size: 18px;
 }
 
-#awf_field-110577831::placeholder {
+.newsletter-group-input::placeholder {
     color: #CCC !important;
     font-size: 18px;
 }
 
   @media (max-width: 400px) {
-    #awf_field-110577831::-webkit-input-placeholder {
+    .newsletter-group-input::-webkit-input-placeholder {
     /* Edge */
     text-align: center;
 }
 
-#awf_field-110577831:-ms-input-placeholder {
+.newsletter-group-input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     text-align: center;
 }
 
-#awf_field-110577831::placeholder {
+.newsletter-group-input::placeholder {
     text-align: center;
 }
   }
