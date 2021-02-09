@@ -174,3 +174,9 @@
         padding-top: 350px;
     }
 }
+
+/*newsletter*/
+
+.newsletter-group-input:hover {
+    background: white;
+}
