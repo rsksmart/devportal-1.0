@@ -13,14 +13,16 @@ When a user needs to type a domain name, the length of each label is omitted and
 
 ## Valid names
 
-A valid RNS domain is defined as follows:
+For simplicity, a valid RNS domain is defined as follows:
 
-- TLD is one of the predefined TLDs, which currently is only `rsk`
-- The first label is compulsory, and must be alphanumeric
-- Any second and subsequent labels are optional, and must be alphanumeric if present
-- All labels and and TLD are delimited by `.`
+- TLD is one of the predefined TLDs,
+  which currently may only be `rsk`
+- The first label is compulsory
+- Any second and subsequent labels are optional
+- All labels must be alphanumeric and lower case
+- All labels and the TLD are delimited by `.`
 
-The reference implementation for RNS validation can be found in `rns.js`
+The reference implementation for RNS domain validation can be found in `rns.js`
 
 - `AVAILABLE_TLDS` in [`src/constants.ts`](https://github.com/rnsdomains/rns-js/blob/master/src/constants.ts)
 - `isValidDomain` and `isValidLabel` in [`src/utils.ts`](https://github.com/rnsdomains/rns-js/blob/master/src/utils.ts)
@@ -28,20 +30,25 @@ The reference implementation for RNS validation can be found in `rns.js`
 Example #1: `uno2tres.rsk` is valid:
 
 - ✔️ TLD is `rsk`
-- ✔️ First label is `uno2tres`; which is present and alphanumeric
+- ✔️ First label is `uno2tres`;
+  which is present and lowercase alphanumeric
 - ✔️ Second and subsequent labels are not present
 
 Example #2: `rss.website.alice.rsk` is valid:
 
 - ✔️ TLD is `rsk`
-- ✔️ First label is `alice`; which is present and alphanumeric
-- ✔️ Second label is `website`; which is present and alphanumeric
-- ✔️ Third label is `rss`; which is present and alphanumeric
+- ✔️ First label is `alice`;
+  which is present and lowercase alphanumeric
+- ✔️ Second label is `website`;
+  which is present and lowercase alphanumeric
+- ✔️ Third label is `rss`;
+  which is present and lowercase alphanumeric
 
 Example #3: `my_illegal_domain.com` is invalid:
 
 - ❌ TLD is `com`
-- ❌ First label is `my_illegal_domain`; which is present, however contains non-alphanumeric characters
+- ❌ First label is `my_illegal_domain`;
+  which is present, however contains non-alphanumeric characters
 - ✔️ Second and subsequent labels are not present
 
 ## Name mapping convention
