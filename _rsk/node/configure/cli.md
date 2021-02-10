@@ -41,7 +41,7 @@ This is known as the *Block Database*.
   or in select debugging scenarios.
 - `--import`:
   Indicates that the block database should be imported from an external source.
-  This is typically expected to be use when connecting to RSK Testnet or RSK Mainnet,
+  This is typically expected to be used when connecting to RSK Testnet or RSK Mainnet,
   and when a reduction in "initial sync time" is desired.
 
 ## Configuration related
@@ -53,7 +53,7 @@ This is known as the *Block Database*.
 - `--print-system-info`:
   Indicates that the system information of the computer that the RSK node
   is running on should be output.
-  By default this is always output.
+  By default, this is always output.
 - `--skip-java-check`:
   Indicates that the detection of the version of
   the Java Virtual Machine that the RSK node is running in is supported.
