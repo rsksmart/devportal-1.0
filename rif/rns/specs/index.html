@@ -102,7 +102,7 @@
                 Community
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://join.slack.com/t/open-rsk-dev/shared_invite/zt-kk3yfuc6-qn~DrpMLvADkAUu1pbAcZA">Slack</a>
+                <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://join.slack.com/t/open-rsk-dev/shared_invite/zt-m0pbuyia-QW~WEI27Ag3Do7qWEjW41w">Slack</a>
                 <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://github.com/rsksmart">GitHub</a>
                 <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://research.rsk.dev/">Forum</a>
                 <a target="_blank" rel="external noopener noreferrer" class="dropdown-item" href="https://fund.rsk.co/">Ecosystem Fund</a>
@@ -913,8 +913,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2019-12-11 15:47:45 +0000T00:00:00.000Z">2019-12-11</time> | -->
-     2' to read |
+    <!--time role="presentation" datetime="2021-02-10 06:15:27 +0000T00:00:00.000Z">2021-02-10</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/specs/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1681,9 +1681,68 @@
 
 <p>The domain name of a node is the list of the labels on the path from the node to the root of the tree.  By convention, the labels that compose a domain name are printed or read left to right, from the most specific (lowest, farthest from the root) to the least specific (highest, closest to the root).</p>
 
-<p>When a user needs to type a domain name, the length of each label is omitted and the labels are separated by dots (“.”).  Since a complete domain name ends with the root label, this leads to a printed form which ends in a dot, that is omitted. For example, a valid domain name is <code class="highlighter-rouge">wallet.alice.rsk</code>.</p>
+<p>When a user needs to type a domain name, the length of each label is omitted and the labels are separated by dots (<code class="highlighter-rouge">.</code>).  Since a complete domain name ends with the root label, this leads to a printed form which ends in a dot, that is omitted. For example, a valid domain name is <code class="highlighter-rouge">wallet.alice.rsk</code>.</p>
 
-<h3 id="name-mapping-convention">Name mapping convention</h3>
+<h2 id="valid-names">Valid names</h2>
+
+<p>For simplicity, a valid RNS domain is defined as follows:</p>
+
+<ul>
+  <li>TLD is one of the predefined TLDs,
+which currently may only be <code class="highlighter-rouge">rsk</code>
+</li>
+  <li>The first label is compulsory</li>
+  <li>Any second and subsequent labels are optional</li>
+  <li>All labels must be alphanumeric and lower case</li>
+  <li>All labels and the TLD are delimited by <code class="highlighter-rouge">.</code>
+</li>
+</ul>
+
+<p>The reference implementation for RNS domain validation can be found in <code class="highlighter-rouge">rns.js</code></p>
+
+<ul>
+  <li>
+<code class="highlighter-rouge">AVAILABLE_TLDS</code> in <a href="https://github.com/rnsdomains/rns-js/blob/master/src/constants.ts" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">src/constants.ts</code></a>
+</li>
+  <li>
+<code class="highlighter-rouge">isValidDomain</code> and <code class="highlighter-rouge">isValidLabel</code> in <a href="https://github.com/rnsdomains/rns-js/blob/master/src/utils.ts" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">src/utils.ts</code></a>
+</li>
+</ul>
+
+<p>Example #1: <code class="highlighter-rouge">uno2tres.rsk</code> is valid:</p>
+
+<ul>
+  <li>✔️ TLD is <code class="highlighter-rouge">rsk</code>
+</li>
+  <li>✔️ First label is <code class="highlighter-rouge">uno2tres</code>;
+which is present and lowercase alphanumeric</li>
+  <li>✔️ Second and subsequent labels are not present</li>
+</ul>
+
+<p>Example #2: <code class="highlighter-rouge">rss.website.alice.rsk</code> is valid:</p>
+
+<ul>
+  <li>✔️ TLD is <code class="highlighter-rouge">rsk</code>
+</li>
+  <li>✔️ First label is <code class="highlighter-rouge">alice</code>;
+which is present and lowercase alphanumeric</li>
+  <li>✔️ Second label is <code class="highlighter-rouge">website</code>;
+which is present and lowercase alphanumeric</li>
+  <li>✔️ Third label is <code class="highlighter-rouge">rss</code>;
+which is present and lowercase alphanumeric</li>
+</ul>
+
+<p>Example #3: <code class="highlighter-rouge">my_illegal_domain.com</code> is invalid:</p>
+
+<ul>
+  <li>❌ TLD is <code class="highlighter-rouge">com</code>
+</li>
+  <li>❌ First label is <code class="highlighter-rouge">my_illegal_domain</code>;
+which is present, however contains non-alphanumeric characters</li>
+  <li>✔️ Second and subsequent labels are not present</li>
+</ul>
+
+<h2 id="name-mapping-convention">Name mapping convention</h2>
 
 <p>Each domain name has a node identifier in the RNS Registry, that is obtained via <code class="highlighter-rouge">namehash</code> functions, that is as follows:</p>
 
@@ -1697,7 +1756,8 @@
 
 <p>Given a <code class="highlighter-rouge">node</code>, a <code class="highlighter-rouge">subnode</code> can be identified by using its label: <code class="highlighter-rouge">sha3(namehash(node) + sha3(label))</code></p>
 
-<p>Further reading:</p>
+<h2 id="further-reading">Further reading</h2>
+
 <ul>
   <li><a href="registry">Registry specs</a></li>
   <li><a href="resolvers">Resolver specs</a></li>
