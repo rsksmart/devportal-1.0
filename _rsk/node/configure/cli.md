@@ -32,7 +32,7 @@ When none of these are specified, RSK Mainnet is used by default.
 
 The RSK node stores transactions, blocks,
 and other blockchain state on disk.
-This is known as the *Block Database*.
+This is known as the *Blockchain Database*.
 
 - `--reset`:
   Indicates that the block database should be erased, and should start from scratch,
