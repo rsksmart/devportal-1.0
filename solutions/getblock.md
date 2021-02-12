@@ -104,6 +104,29 @@ curl -X POST 'rsk.getblock.io' \
 
 ![GetBlock - PostmanRequest](/assets/img/solutions/getblock/postman.png)
 
+#### Websockets
+
+To send JSON RPC over Websocket, it is required to establish the connection:
+
+```
+wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>”
+```
+
+Then, send the request body:
+
+```json
+{"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
+```
+
+**Result**
+
+```
+owanate@MacBook-Pro ~ % wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
+
+Connected (press CTRL+C to quit)
+> {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
+< {"jsonrpc":"2.0","id":"healthcheck","result":{"number":"0x2f4d6d","hash":"0x7cec4e01768b4e009fa78d625024ec81dab7811dc2e497f6d831fb051f41c236","parentHash":"0xf0af3726672c218c33e81de33e5f69bb008555931bd63056d24bde6a2cbfca87"..........
+```
 
 ## Get in touch
 
