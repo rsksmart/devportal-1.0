@@ -11,7 +11,7 @@ layout: 'rsk'
 
 GetBlock is a provider of access to full nodes of the most popular cryptocurrencies:
 - Instant connection to blockchain nodes of 45+ cryptocurrencies including  RSK, Bitcoin (BTC), Ethereum (ETH), among others
-- Supports JSON-RPC, and REST
+- Supports JSON-RPC, REST and WebSocket APIs
 - Free plan — up to 40K requests/day
 
 ## How GetBlock integrates with RSK
@@ -51,7 +51,7 @@ GetBlock is a complete solution for developers who don’t need to wait hours an
 
 ### Components
 
-GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs as REST, JSON-RPC, and IRI, which facilitates the whole process of building decentralized applications (dApps).
+GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs as REST, JSON-RPC, Websockets and IRI, which facilitates the whole process of building decentralized applications (dApps).
 
 ![GetBlock - ConnectionImage](/assets/img/solutions/getblock/components.png)
 
@@ -69,7 +69,7 @@ GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs 
 
 ### Tutorials
 
-- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, etc.)](https://getblock.io/docs)
+- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, Websockets, etc.)](https://getblock.io/docs)
 
 ### Guides
 
