@@ -11,7 +11,7 @@ layout: 'rsk'
 
 GetBlock is a provider of access to full nodes of the most popular cryptocurrencies:
 - Instant connection to blockchain nodes of 45+ cryptocurrencies including  RSK, Bitcoin (BTC), Ethereum (ETH), among others
-- Supports JSON-RPC, and REST
+- Supports JSON-RPC, REST and WebSocket APIs
 - Free plan — up to 40K requests/day
 
 ## How GetBlock integrates with RSK
@@ -51,7 +51,7 @@ GetBlock is a complete solution for developers who don’t need to wait hours an
 
 ### Components
 
-GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs as REST, JSON-RPC, and IRI, which facilitates the whole process of building decentralized applications (dApps).
+GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs as REST, JSON-RPC, Websockets and IRI, which facilitates the whole process of building decentralized applications (dApps).
 
 ![GetBlock - ConnectionImage](/assets/img/solutions/getblock/components.png)
 
@@ -69,7 +69,7 @@ GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs 
 
 ### Tutorials
 
-- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, etc.)](https://getblock.io/docs)
+- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, Websockets, etc.)](https://getblock.io/docs)
 
 ### Guides
 
@@ -104,6 +104,29 @@ curl -X POST 'rsk.getblock.io' \
 
 ![GetBlock - PostmanRequest](/assets/img/solutions/getblock/postman.png)
 
+#### Websockets
+
+To send JSON RPC over Websocket, it is required to establish the connection:
+
+```
+wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>”
+```
+
+Then, send the request body:
+
+```json
+{"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
+```
+
+**Result**
+
+```
+owanate@MacBook-Pro ~ % wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
+
+Connected (press CTRL+C to quit)
+> {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
+< {"jsonrpc":"2.0","id":"healthcheck","result":{"number":"0x2f4d6d","hash":"0x7cec4e01768b4e009fa78d625024ec81dab7811dc2e497f6d831fb051f41c236","parentHash":"0xf0af3726672c218c33e81de33e5f69bb008555931bd63056d24bde6a2cbfca87"..........
+```
 
 ## Get in touch
 
