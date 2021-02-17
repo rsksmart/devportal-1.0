@@ -2,6 +2,7 @@
 title: 'GetBlock - Solutions on RSK'
 description: 'Fast & Easy Connection to Major Blockchain Nodes.'
 tags: GetBlock, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node
+render_features: 'custom-terminals'
 layout: 'rsk'
 ---
 
