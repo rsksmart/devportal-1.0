@@ -109,9 +109,15 @@ curl -X POST 'rsk.getblock.io' \
 
 To send JSON RPC over Websocket, it is required to establish the connection:
 
-```
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
 wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>”
-```
+  ```
+- Windows
+  ```windows-command-prompt
+wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>”
+  ```
 
 Then, send the request body:
 
