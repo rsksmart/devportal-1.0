@@ -121,7 +121,7 @@ Then, send the request body:
 **Result**
 
 ```
-owanate@MacBook-Pro ~ % wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
+wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
 
 Connected (press CTRL+C to quit)
 > {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
