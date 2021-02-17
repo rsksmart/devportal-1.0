@@ -89,7 +89,9 @@ The example of receiving the number of the last block:
 
 #### How to make a JSON-RPC request over CURL
 
-```bash
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
 curl -X POST 'rsk.getblock.io' \                         
 --header 'x-api-key: YOUR-API-KEY' \
 --header 'Content-Type: application/json' \
@@ -99,7 +101,19 @@ curl -X POST 'rsk.getblock.io' \
     "method": "eth_getBlockByNumber",
     "params": ["latest", false]
 }'
-```
+  ```
+- Windows
+  ```windows-command-prompt
+curl -X POST 'rsk.getblock.io' \                         
+--header 'x-api-key: YOUR-API-KEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "jsonrpc": "2.0",
+    "id": "healthcheck",
+    "method": "eth_getBlockByNumber",
+    "params": ["latest", false]
+}'
+  ```
 
 #### How to make a JSON-RPC request using Postman
 
