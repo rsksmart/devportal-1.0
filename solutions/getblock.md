@@ -2,6 +2,7 @@
 title: 'GetBlock - Solutions on RSK'
 description: 'Fast & Easy Connection to Major Blockchain Nodes.'
 tags: GetBlock, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node
+render_features: 'custom-terminals'
 layout: 'rsk'
 ---
 
@@ -36,7 +37,7 @@ GetBlock guarantees a fast and stable connection to the RSK nodes by providing a
 
 Users of GetBlock will have a personal account with the following features included:
 
-- All available blockchain nodes 
+- All available blockchain nodes
 - Unlimited number of API keys
 - Rate limits of 10 requests/sec (auto-scaling is in the roadmap)
 - High connection speed at 1GB/sec
@@ -78,7 +79,7 @@ GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs 
 
 #### How to make a JSON-RPC request over HTTP
 
-To send JSON RPC over HTTP, it is required to send the request using POST to URL `rsk.getblock.io` with the headers `Content-Type:application/json` and `x-api-key:your-api-key`, and also, the request body. 
+To send JSON RPC over HTTP, it is required to send the request using POST to URL `rsk.getblock.io` with the headers `Content-Type:application/json` and `x-api-key:your-api-key`, and also, the request body.
 
 The example of receiving the number of the last block:
 
@@ -88,8 +89,10 @@ The example of receiving the number of the last block:
 
 #### How to make a JSON-RPC request over CURL
 
-```bash
-curl -X POST 'rsk.getblock.io' \                         
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+curl -X POST 'rsk.getblock.io' \
 --header 'x-api-key: YOUR-API-KEY' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -98,7 +101,19 @@ curl -X POST 'rsk.getblock.io' \
     "method": "eth_getBlockByNumber",
     "params": ["latest", false]
 }'
-```
+  ```
+- Windows
+  ```windows-command-prompt
+curl -X POST 'rsk.getblock.io' \
+--header 'x-api-key: YOUR-API-KEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "jsonrpc": "2.0",
+    "id": "healthcheck",
+    "method": "eth_getBlockByNumber",
+    "params": ["latest", false]
+}'
+  ```
 
 #### How to make a JSON-RPC request using Postman
 
@@ -108,9 +123,15 @@ curl -X POST 'rsk.getblock.io' \
 
 To send JSON RPC over Websocket, it is required to establish the connection:
 
-```
-wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>”
-```
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
+  ```
+- Windows
+  ```windows-command-prompt
+wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
+  ```
 
 Then, send the request body:
 
@@ -121,7 +142,7 @@ Then, send the request body:
 **Result**
 
 ```
-owanate@MacBook-Pro ~ % wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
+wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
 
 Connected (press CTRL+C to quit)
 > {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
@@ -142,7 +163,7 @@ If you have any technical issues write at [support@getblock.io](mailto:support@g
 - [Twitter](http://twitter.com/getblockio)
 - [Facebook](http://facebook.com/getblockio)
 - [Reddit](http://reddit.com/r/getblockio/)
-- [Telegram](http://t.me/getblockio_eng) 
+- [Telegram](http://t.me/getblockio_eng)
 - [Instagram](http://instagram.com/getblock.io)
 - [LinkedIn](http://linkedin.com/company/getblock)
-- [Discord](https://discord.gg/9GdSbf6) 
+- [Discord](https://discord.gg/9GdSbf6)
