@@ -98,26 +98,26 @@ it is always good practice to verify that your copy is legitimate.
 Let's compute the checksum using the following command:
 
 ```shell
-sha256sum rskj-core-2.0.1-PAPYRUS-all.jar
+sha256sum rskj-core-2.2.0-PAPYRUS-all.jar
 ```
 
 For this version, the output should look like this:
 
 ```shell
-43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 *rskj-core-2.0.1-PAPYRUS-all.jar
+43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 *rskj-core-2.2.0-PAPYRUS-all.jar
 ```
 
 On Windows, use this command instead:
 
 ```windows-command-prompt
-C:\>certutil -hashfile rskj-core-2.0.1-PAPYRUS-all.jar SHA256
+C:\>certutil -hashfile rskj-core-2.2.0-PAPYRUS-all.jar SHA256
 
 ```
 
 For this version, the output on windows should look like this:
 
 ```windows-command-prompt
-SHA256 hash of rskj-core-2.0.1-PAPYRUS-all.jar:
+SHA256 hash of rskj-core-2.2.0-PAPYRUS-all.jar:
 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0
 CertUtil: -hashfile command completed successfully.
 
@@ -144,7 +144,7 @@ java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtes
 > Example:
 >
 > ```windows-command-prompt
-> C:\>java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+> C:\>java -cp C:\RSK\node\rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 >
 > ```
 
