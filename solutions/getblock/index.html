@@ -907,8 +907,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-02-12 09:36:16 +0000T00:00:00.000Z">2021-02-12</time> | -->
-     5' to read |
+    <!--time role="presentation" datetime="2021-02-18 02:13:01 +0000T00:00:00.000Z">2021-02-18</time> | -->
+     6' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/solutions/getblock.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1766,16 +1766,34 @@ In order to get started with GetBlock, clients of the platform have to <a href="
 
 <h4 id="how-to-make-a-json-rpc-request-over-curl">How to make a JSON-RPC request over CURL</h4>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="s1">'rsk.getblock.io'</span> <span class="se">\ </span>                        
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="s1">'rsk.getblock.io'</span> <span class="se">\</span>
 <span class="nt">--header</span> <span class="s1">'x-api-key: YOUR-API-KEY'</span> <span class="se">\</span>
 <span class="nt">--header</span> <span class="s1">'Content-Type: application/json'</span> <span class="se">\</span>
 <span class="nt">--data-raw</span> <span class="s1">'{
-    "jsonrpc": "2.0",
-    "id": "healthcheck",
-    "method": "eth_getBlockByNumber",
-    "params": ["latest", false]
+  "jsonrpc": "2.0",
+  "id": "healthcheck",
+  "method": "eth_getBlockByNumber",
+  "params": ["latest", false]
 }'</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+  <li>Windows
+    <pre><code class="language-windows-command-prompt">curl -X POST 'rsk.getblock.io' \
+--header 'x-api-key: YOUR-API-KEY' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+  "jsonrpc": "2.0",
+  "id": "healthcheck",
+  "method": "eth_getBlockByNumber",
+  "params": ["latest", false]
+}'
+</code></pre>
+  </li>
+</ul>
 
 <h4 id="how-to-make-a-json-rpc-request-using-postman">How to make a JSON-RPC request using Postman</h4>
 
@@ -1785,8 +1803,18 @@ In order to get started with GetBlock, clients of the platform have to <a href="
 
 <p>To send JSON RPC over Websocket, it is required to establish the connection:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wscat -c https://rsk.getblock.io/websocket -H "x-api-key:&lt;YOUR-API-KEY&gt;”
-</code></pre></div></div>
+<p><a href="#top" title="multiple-terminals"></a></p>
+<ul>
+  <li>Linux, Mac OSX
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>wscat <span class="nt">-c</span> https://rsk.getblock.io/websocket <span class="nt">-H</span> <span class="s2">"x-api-key:&lt;YOUR-API-KEY&gt;"</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Windows
+    <pre><code class="language-windows-command-prompt">wscat -c https://rsk.getblock.io/websocket -H "x-api-key:&lt;YOUR-API-KEY&gt;"
+</code></pre>
+  </li>
+</ul>
 
 <p>Then, send the request body:</p>
 
@@ -1795,7 +1823,7 @@ In order to get started with GetBlock, clients of the platform have to <a href="
 
 <p><strong>Result</strong></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>owanate@MacBook-Pro ~ % wscat -c https://rsk.getblock.io/websocket -H "x-api-key:&lt;YOUR-API-KEY&gt;"
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wscat -c https://rsk.getblock.io/websocket -H "x-api-key:&lt;YOUR-API-KEY&gt;"
 
 Connected (press CTRL+C to quit)
 &gt; {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
@@ -1888,7 +1916,7 @@ Connected (press CTRL+C to quit)
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="custom-terminals">
          </div>
       </section>
 
