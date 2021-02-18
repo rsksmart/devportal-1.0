@@ -168,4 +168,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/dcent/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/DCentWallet/DCent_Logo.jpg" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/dcent/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">D'Cent</p>
+                        <p class="card-desc">D’CENT Wallet is a new generation of über convenient, biometrically-powered cold storage tools that literally put the management of precious digital assets at your fingertips.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/dcent/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
