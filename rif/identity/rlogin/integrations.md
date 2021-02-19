@@ -26,3 +26,7 @@ PRs:
 
 - [#147](https://github.com/rsksmart/tokenbridge/pull/147) - Add rLogin with injected provider and Wallet Connect
 - [#148](https://github.com/rsksmart/tokenbridge/pull/148) and [#149](https://github.com/rsksmart/tokenbridge/pull/149) - minor fixes
+
+### Sample Applications
+
+{% include rif-id/rlogin-integrate.html %}
