@@ -212,7 +212,7 @@ sha256sum rskj-core-2.2.0-PAPYRUS-all.jar
 For this version, it looked like this:
 
 ```shell
-43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 *rskj-core-2.2.0-PAPYRUS-all.jar
+f7cb1e6c5568332d047c602a5b2c464c41688336b824d92ef3a40b89a8f55b60  rskj-core-2.2.0-PAPYRUS-all.jar
 ```
 
 ![Verify authenticity](/assets/img/tutorials/setup-truffle-oz/image-08.png)
