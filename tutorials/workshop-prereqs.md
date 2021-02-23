@@ -139,7 +139,7 @@ curl \
   https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.2.0/rskj-core-2.2.0-PAPYRUS-all.jar \
   > ./rskj-core-2.2.0-PAPYRUS-all.jar
 sha256sum rskj-core-2.2.0-PAPYRUS-all.jar
-# 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 rskj-core-2.2.0-PAPYRUS-all.jar
+# f7cb1e6c5568332d047c602a5b2c464c41688336b824d92ef3a40b89a8f55b60  rskj-core-2.2.0-PAPYRUS-all.jar
 
 ```
 
