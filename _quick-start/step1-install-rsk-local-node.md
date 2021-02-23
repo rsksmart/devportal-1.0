@@ -144,7 +144,7 @@ java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtes
 > Example:
 >
 > ```windows-command-prompt
-> C:\>java -cp C:\RSK\node\rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+> C:\>java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 >
 > ```
 
