@@ -206,13 +206,13 @@ it is always a good idea to verify that your copy is legitimate.
 In the folder where you download the JAR file, go to a POSIX terminal and run this command:
 
 ```shell
-sha256sum rskj-core-2.2.0-PAPYRUS-all.jar
+sha256sum rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
 For this version, it looked like this:
 
 ```shell
-f7cb1e6c5568332d047c602a5b2c464c41688336b824d92ef3a40b89a8f55b60  rskj-core-2.2.0-PAPYRUS-all.jar
+43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 *rskj-core-2.0.1-PAPYRUS-all.jar
 ```
 
 ![Verify authenticity](/assets/img/tutorials/setup-truffle-oz/image-08.png)
@@ -236,26 +236,26 @@ java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtes
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file).
 
 I am using a Windows OS and I saved the file at `C:\RSK\node`,
-so for me the full path is `C:\RSK\node\rskj-core-2.2.0-PAPYRUS-all.jar`.
+so for me the full path is `C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar`.
 
 The commands required to run the RSK node are:
 
 #### On Windows terminal
 
 ```shell
-java -cp C:\RSK\node\rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 #### Using Git Bash
 
 ```shell
-java -cp C:/RSK/node/rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp C:/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 #### On Linux and Mac
 
 ```shell
-java -cp ~/RSK/node/rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp ~/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 If you see no output - that is a good thing:

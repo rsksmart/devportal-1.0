@@ -149,20 +149,20 @@ java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtes
 
 (Replace <PATH-TO-THE-RSKJ-JAR> with your path to the JAR file). 
 
-I am using a Windows OS and I saved the file at `C:\RSK\node`, so for me the full path is `C:\RSK\node\rskj-core-2.2.0-PAPYRUS-all.jar`
+I am using a Windows OS and I saved the file at `C:\RSK\node`, so for me the full path is `C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar`
 
 The commands required to run the RSK node are:
 
 ### On Windows
 
 ```shell
-java -cp C:\RSK\node\rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 ### On Linux and Mac
 
 ```shell
-java -cp /RSK/node/rskj-core-2.2.0-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp /RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
 ```
 
 Check the tutorial: [using Geth attach to a RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/) for more details on how to do this.
