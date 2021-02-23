@@ -4,7 +4,11 @@ layout: rsk
 
 ## rLogin - Integrate
 
-{% include rif-id/rlogin-integrate.html %}
+We have published two sample applications to show how to integrate with rLogin.
+
+- [**Basic Example**](https://github.com/rsksmart/rlogin-sample-apps/tree/main/basic-dapp) - In this example, the rLogin modal popups up and the user selects the provider they wish to connect with. In the demo, we are connecting with the injected provider (i.e. a browser wallet such as Metamask) and Wallet Connect.
+- [**Permissioned Example**](https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app) - In this example, the user needs to provide a *Name* declarative detail and an *Email* credential to sign in. In order do this, there is a [backend server implementation](https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/backend/index.js) and a [React frontend application](https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/frontend-app/src/App.js). After signing in, rLogin returns the DataVault as an object to be used.
+
 
 ### Basic implementation:
 
