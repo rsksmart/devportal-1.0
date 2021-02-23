@@ -88,10 +88,10 @@ After running the build process, a JAR file will be created in ```/code/rskj-cor
 You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.
 
 ```bash
-f7cb1e6c5568332d047c602a5b2c464c41688336b824d92ef3a40b89a8f55b60  /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-all.jar
-751d87b110205357478a9bd7909413bf80afacd51bd10eaa502bec50fda5a410  /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-sources.jar
-d2f6594272748de21f70025e59525f2ffc6159ce21b6751590c3b535953c4d29  /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.jar
-7204272b35891dca1d962af811dec92889d9564e5b200b5a50485101557e2f36  /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.pom
+f7cb1e6c5568332d047c602a5b2c464c41688336b824d92ef3a40b89a8f55b60  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-all.jar
+751d87b110205357478a9bd7909413bf80afacd51bd10eaa502bec50fda5a410  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-sources.jar
+d2f6594272748de21f70025e59525f2ffc6159ce21b6751590c3b535953c4d29  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.jar
+7204272b35891dca1d962af811dec92889d9564e5b200b5a50485101557e2f36  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.pom
 ```
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).
