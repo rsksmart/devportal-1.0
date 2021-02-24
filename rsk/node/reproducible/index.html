@@ -915,7 +915,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-08-18 07:00:21 +0000T00:00:00.000Z">2020-08-18</time> | -->
+    <!--time role="presentation" datetime="2021-02-23 07:45:35 +0000T00:00:00.000Z">2021-02-23</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/reproducible.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1721,7 +1721,7 @@ RUN apt-get update -y &amp;&amp; \
     apt-get clean
 RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN git clone --single-branch --depth 1 --branch PAPYRUS-2.0.1 https://github.com/rsksmart/rskj.git /code/rskj
+RUN git clone --single-branch --depth 1 --branch PAPYRUS-2.2.0 https://github.com/rsksmart/rskj.git /code/rskj
 WORKDIR /code/rskj
 RUN gpg --verify SHA256SUMS.asc
 RUN sha256sum --check SHA256SUMS.asc
@@ -1735,31 +1735,32 @@ RUN ./gradlew clean build -x test
 
 <p>To create a reproducible build, run:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker build <span class="nt">-t</span> rskj-papyrus-2.0.1-reproducible <span class="nb">.</span>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker build <span class="nt">-t</span> rskj-papyrus-2.2.0-reproducible <span class="nb">.</span>
 </code></pre></div></div>
 
 <p>This may take several minutes to complete. What is done is:</p>
 <ul>
-  <li>Place in the RskJ repository root because we need Gradle and the project.</li>
+  <li>Place in the RSKj repository root because we need Gradle and the project.</li>
   <li>Runs the <a href="../security-chain/">secure chain verification process</a>.</li>
-  <li>Compile a reproducible RskJ node.</li>
+  <li>Compile a reproducible RSKj node.</li>
   <li>
 <code class="highlighter-rouge">./gradlew clean build -x test</code> builds without running tests.</li>
 </ul>
 
 <p>To obtain SHA-256 checksums, run the following command:</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker run <span class="nt">--rm</span> rskj-papyrus-2.0.1-reproducible <span class="nb">sha256sum</span> /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-all.jar /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.jar /code/rskj/rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.pom
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>docker run <span class="nt">--rm</span> rskj-papyrus-2.2.0-reproducible <span class="nb">sha256sum</span> /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-all.jar /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.jar /code/rskj/rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.pom
 </code></pre></div></div>
 
 <h2 id="check-results">Check Results</h2>
 <p>After running the build process, a JAR file will be created in <code class="highlighter-rouge">/code/rskj-core/build/libs/</code>, into the docker container.</p>
 
 <p>You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.</p>
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-all.jar
-c1bdb9aeff6463906d75874773e2633f006281d41b244e5cbc6b4115d023a7f8  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS-sources.jar
-7833de3cf827fc7c665b4d03fb425afb0d26140dfbade5b70edb4cb6e2694561  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.jar
-9b915279251248222c56f95fae060f84464f4c89bb9bc32ac2e2594f937f9fa5  rskj-core/build/libs/rskj-core-2.0.1-PAPYRUS.pom
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>f7cb1e6c5568332d047c602a5b2c464c41688336b824d92ef3a40b89a8f55b60  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-all.jar
+751d87b110205357478a9bd7909413bf80afacd51bd10eaa502bec50fda5a410  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS-sources.jar
+d2f6594272748de21f70025e59525f2ffc6159ce21b6751590c3b535953c4d29  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.jar
+7204272b35891dca1d962af811dec92889d9564e5b200b5a50485101557e2f36  rskj-core/build/libs/rskj-core-2.2.0-PAPYRUS.pom
 </code></pre></div></div>
 
 <p>For SHA256 sum of older versions check the <a href="https://github.com/rsksmart/rskj/releases" rel="external noopener noreferrer" target="_blank">releases page</a>.</p>
