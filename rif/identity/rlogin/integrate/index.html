@@ -923,8 +923,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-29 21:46:20 +0000T00:00:00.000Z">2020-12-29</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2021-02-23 12:35:35 +0000T00:00:00.000Z">2021-02-23</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/integrate/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1691,37 +1691,53 @@
 
                   <h2 id="rlogin---integrate">rLogin - Integrate</h2>
 
-<!--
-<div class="container the-stack">
-  <div class="row rif_blue_text">
-    <div class="col">
-      <div class="rns-index-box">
-        <a href="/rif/identity/rlogin/integrate/dapps">dApps with no back-end</a>
-        <br />
-        <br />
-        <p>use <i>rLogin modal</i> to operate with user's compatible wallets</p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="rns-index-box">
-        <a href="/rif/identity/rlogin/integrate/back-end">dApps with back-end</a>
-        <br />
-        <br />
-        <p>use <i>rLogin + DID Auth</i> to integrate a challenge-response authentication</P>
-      </div>
-    </div>
-    <div class="col">
-      <div class="rns-index-box">
-        <a href="/rif/identity/rlogin/integrate/vcs">dApps requesting user's specific info</a>
-        <br />
-        <br />
-        <p>use <i>rLogin + DID Auth + RIF Data Vault</i> to request specific Verifiable Credentials to the user</p>
-      </div>
-    </div>
-  </div>
-</div>
--->
+<p>We have published two sample applications to show how to integrate with rLogin.</p>
 
+<ul>
+  <li>
+<a href="https://github.com/rsksmart/rlogin-sample-apps/tree/main/basic-dapp" rel="external noopener noreferrer" target="_blank"><strong>Basic Example</strong></a> - In this example, the rLogin modal popups up and the user selects the provider they wish to connect with. In the demo, we are connecting with the injected provider (i.e. a browser wallet such as Metamask) and Wallet Connect.</li>
+  <li>
+<a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app" rel="external noopener noreferrer" target="_blank"><strong>Permissioned Example</strong></a> - In this example, the user needs to provide a <em>Name</em> declarative detail and an <em>Email</em> credential to sign in. In order do this, there is a <a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/backend/index.js" rel="external noopener noreferrer" target="_blank">backend server implementation</a> and a <a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/frontend-app/src/App.js" rel="external noopener noreferrer" target="_blank">React frontend application</a>. After signing in, rLogin returns the DataVault as an object to be used.</li>
+</ul>
+
+<h3 id="basic-implementation">Basic implementation:</h3>
+
+<p>To add rLogin to a project, first install the dependency:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn add rLogin <span class="nt">--save</span>
+<span class="c"># or</span>
+npm <span class="nb">install </span>rLogin <span class="nt">--save</span>
+</code></pre></div></div>
+
+<p>In your application, create a rLogin instance. Make sure this instance is created outside of a render function as only one instance should be present at a time. Set the supported chain IDs. In the example below, it will connect with RSK Mainnet and RSK Testnet. rLogin has been tested with RSK (Mainnet and Testnet) and Ethereum (Mainnet and Testnet), however, it should work with any chain ID.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">RLogin</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/rlogin</span><span class="dl">'</span>
+<span class="p">...</span>
+<span class="kd">const</span> <span class="nx">rLogin</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RLogin</span><span class="p">({</span>
+  <span class="na">cacheProvider</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+  <span class="na">providerOptions</span><span class="p">:</span> <span class="p">{</span>
+    <span class="na">injected</span><span class="p">:</span> <span class="p">{}</span>
+  <span class="p">},</span>
+  <span class="na">supportedChains</span><span class="p">:</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">]</span>
+<span class="p">})</span>
+</code></pre></div></div>
+
+<p>Next, initiate the <code class="highlighter-rouge">connect()</code> function. This will cause the pop up to display and allow the user to connect with their provider. rLogin will provide an object with the Web3 Provider, the DataVault (if connected, <a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/frontend-app/src/App.js#L63-L92" rel="external noopener noreferrer" target="_blank">see the permissioned example app</a>), and a disconnect/logout function.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rLogin</span><span class="p">.</span><span class="nx">connect</span><span class="p">()</span>
+  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">provider</span>
+    <span class="kd">const</span> <span class="nx">dataVault</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">dataVault</span>
+    <span class="kd">const</span> <span class="nx">disconnect</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">disconnect</span>
+  <span class="p">})</span>
+</code></pre></div></div>
+
+<h3 id="disconnect">Disconnect:</h3>
+
+<p>To disconnect from the provider and clean up the <code class="highlighter-rouge">localStorage</code> and cookies set, use the disconnect function provided by the rLogin response. You may also have to clean up variables set in your app.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rLoginResponse.disconnect()
+</code></pre></div></div>
 
 
                   
