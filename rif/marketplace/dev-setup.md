@@ -33,7 +33,7 @@ This page provides a guide for developers to set up the environment for the RIF 
 The recommended way to install IPFS is using [ipfs-update](https://github.com/ipfs/ipfs-update) but there are other ways described [here](https://github.com/ipfs/go-ipfs#install) as well. Recommended is to run the latest version but required is at least `0.7.0`.
 
 
-## Components to install
+## Part of tutorial
 These components will be installed during this process
 
 4. [RIF Marketplace Developer Environment](https://github.com/rsksmart/rif-marketplace-dev/) project
