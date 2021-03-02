@@ -8,6 +8,11 @@ permalink: /rsk/node/configure/
 render_features: 'custom-terminals'
 ---
 
+## Command Line Interface
+
+The RSK node can be started with different
+[CLI flags](./cli/).
+
 ## Setting your own config preferences
 
 It is a bit different if:

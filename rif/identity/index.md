@@ -52,8 +52,6 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   </div>
 </div>
 
-{% include rif-id/rlogin-integrate.html %}
-
 <!--
   <div class="row rif_blue_text">
     <div class="col">

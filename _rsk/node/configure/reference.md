@@ -13,6 +13,11 @@ For advanced configuration requirements, please refer to this
 [expected configuration file](https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/resources/expected.conf).
 This contains all possible configuration fields parsed by RSKj.
 
+The default values for the config file are defined in this
+[reference config file](https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/resources/reference.conf);
+and are "inherited" and varied based on the
+[selected network](https://github.com/rsksmart/rskj/tree/master/rskj-core/src/main/resources/config).
+
 ## Guide
 
 The following detail the most commonly used configuration fields parsed by RSKj.

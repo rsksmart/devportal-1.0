@@ -40,7 +40,7 @@ The rLogin design consists of 4 core modules:
 
 {% include rif-id/rlogin-integrate.html %}
 
-See the [current integrations](./integrations) as a reference
+See the [Integrate page](integrate) for more details as well as the [current integrations](./integrations) as a reference.
 
 ---
 
