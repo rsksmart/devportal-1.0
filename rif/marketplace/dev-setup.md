@@ -49,7 +49,7 @@ The following components will be installed as we go along;
 
 # Setup:
 
-## 1. Developers Environment
+## 1. Developer Environment
 
 Download and setup the RIF Marketplace Developer Environment
 
