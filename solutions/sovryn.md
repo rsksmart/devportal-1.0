@@ -8,16 +8,43 @@ layout: "rsk"
 
 ![sovryn-banner](/assets/img/solutions/sovryn/sovryn-banner-combined.png)
 
+# How Sovryn works
+
 Sovryn is a non-custodial and permissionless smart contract based system for Bitcoin lending, borrowing and margin trading.
+
+Bitcoin layer-2 technologies like RSK enable developers and teams to build out DeFi applications and protocols without being held back by the scalability limitations of Ethereum. Sovryn is building an underlying infrastructure for Bitcoin-native DeFi protocols that uses the RSK sidechain as a bridge builder between crypto platforms, blockchains, DEXes and dApps.
+
+The Sovryn smart contracts have been built using Solidity, and deployed to the RSK sidechain. Unlike smart contracts deployed to Ethereum, these smart contracts are secured by Bitcoin Proof of Work, providing powerful advantages:
+
+- The security assurances of the most secure, trusted Blockchain
+- Much lower gas fees
+- The ability to pay for transactions in Bitcoin
+- Transactions on the Sovryn platform are verified by Bitcoin PoW miners, with fees paid in Bitcoin.
+- Users can retain full ownership of their Bitcoin while putting it to use in trading, lending and earning.
+
+One of the greatest challenges in extending Bitcoin's capabilities has been the difficulty in bridging Bitcoin trustlessly to other chains or layer-2 systems. In recent years, advances in threshold technology have allowed for the creation of the first true trustless bridge: TBTC. TBTC-type technology is powerful but requires overcollateralization of assets by stakers to remain trustless. This can make the system expensive for users.
+
+Additionally, threshold signature schemes are complex, making the bridge complex and slow for users. This is changing however. The introduction of taproot to Bitcoin as well as optimizations of the signatory schemes will soon allow faster, cheaper, smoother, bridge transactions, with only a fraction of the required collateralization.
+
+Sovryn is deploying a threshold scheme Bitcoin bridge - and will be the only one that is secured by Bitcoin PoW. Also constructed by Sovryn is the FastBTC relay, which allows users to bridge their Bitcoin seamlessly from any Bitcoin wallet. This system will continue to improve as the technology matures and is optimized.
+
+Sovryn will soon migrate its smart contract to a rollup, allowing users to transact off-chain while still having security assurances provided by the blockchain, for near infinite scale, upgradability, and even lower transaction fees.
+
+After migrating to a rollup, Sovryn will deploy a trustless bridge to Ethereum, which will allow for the quick, secure, and user-friendly transfer of tokens and data between Sovryn and the Ethereum DeFi ecosystem. Bridges of this kind can also be built to provide Bitcoin interoperability to many other chains in the entire DeFi ecosystem.
+
+## How Sovryn integrates with RSK
+
+![sovryn-diagram](/assets/img/solutions/sovryn/sov_diagram.png)
 
 # Current Features
 
 This is what you can do with Sovryn today:
 
-- **Spot-Exchange** - a low cost, low-slippage, AMM allowing instant trades between tokens.
+- **Swap-Exchange** - a low cost, low-slippage, AMM allowing instant trades between tokens.
 - **Margin Trading** - Creates up to 5X long/short trades, allowing users to borrow leverage from the lending pool.
 - **Lending Pool** - Allows HODLers to earn interest by lending tokens to margin traders and borrowers.
 - **FastBTC Relay** - Allows use of Bitcoin almost instantly with smart contracts and decentralized products, from any Bitcoin wallet.
+- **Governance Token** - A system of [qualified staking](https://sovryn.app/blog/governance-token-guide-the-good-the-bad-and-the-ugly.html) imbues a heightened level of ‘skin in the game’. This governance model incentivizes token holders to stake for the long term while they participate in the decentralized governance mechanism, steering the direction of the protocol.
 
 # Future Features
 
@@ -60,32 +87,34 @@ The SOV Bitocracy is a distributed, pseudonymous governing body of stakeholders 
 
 SOV token holders can make executable proposals if they possess enough voting power, vote on proposals during a predefined voting period and in the end evaluate the outcome. If successful, the proposal will be scheduled on the timelock contract. Only after sufficient time has passed can it be executed. A minimum voting power of 1% of SOV (1,000,000) is required for making a proposal as well as a minimum quorum.
 
-In addition, SOV token holders can aggregate their governing power to a specific stakeholder (without transferring their SOV tokens) through delegation
+In addition, SOV token holders can aggregate their governing power to a specific stakeholder (without transferring their SOV tokens) through delegation.
 
 ## Bitocracy Voting
 
-- User requests to makes a code proposal
-- Governance contract checks the Staking contract to determine if the user has enough voting power
+- User requests to makes a code proposal.
+- Governance contract checks the Staking contract to determine if the user has enough voting power.
 - If the user has the required amount of voting power then the proposal is accepted by the Governance contract and all users with voting power are able to vote.
 - Once the voting period is over and the proposal has been voted on, it is directly scheduled for execution and sits in the Timelock contract. The timelock setting decides on the waiting time.
-- At the allocated time the proposal executes on the SOVRYN protocol
+- At the allocated time the proposal executes on the SOVRYN protocol.
 
-# Smart Contract safety and Audits
+# Smart Contract Safety and Audits
 
-The Sovryn protocol smart contracts are periodically assessed by independent security auditors. You can see the audits here:
-
-- [Audit by Pessimistic, October 2020](https://sovryn.app/images/pdf/SovrynAudit2020.pdf)
-- [Audit by Coinspect, December 2020](https://sovryn.app/images/pdf/Sovryn_Security_Audit_Smart_Contracts_v201218.pdf)
+The Sovryn protocol smart contracts are periodically assessed by independent security auditors. You can see all audits [here](https://wiki.sovryn.app/en/technical-documents/audits).
 
 # Try it now!
 
-You can find the app at [https://live.sovryn.app/](https://live.sovryn.app/)
+You can find the app at [https://live.sovryn.app/](https://live.sovryn.app/).
 
 # Learn More
 
-- [Read the Blackpaper](https://docsend.com/view/mbhvi379crhagtwp)
-- [Watch Sovryn Episode 1](https://www.youtube.com/watch?v=z1iKPDXKjUo)
 - [Library of DYOR](https://sovryn.app/library.html)
+- [Sovryn Wiki](https://wiki.sovryn.app/)
+- [Read the Blackpaper](https://docsend.com/view/mbhvi379crhagtwp)
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/z1iKPDXKjUo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br/>
 
 # Get in touch
 
