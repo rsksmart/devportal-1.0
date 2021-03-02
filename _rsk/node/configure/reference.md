@@ -224,6 +224,8 @@ Describes the configuration for the RPC protocol.
     * `rpc.providers.web.ws.bind_address = address`
       is the WS-RPC server listening interface.
       By default RSK uses `localhost`.
+
+    **NOTE**: in order to use websockets functionality, suffix `websocket` must be added to the endpoint. Example: `ws://localhost:4445/websocket`.
 * `rpc.modules` lists of different RPC modules.
   If a module is not in the list and enabled,
   its RPC calls are discarded.
