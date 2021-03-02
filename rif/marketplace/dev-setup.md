@@ -10,7 +10,7 @@ This page provides a guide for developers to set up the environment for the RIF 
 
 - [Dependencies](#dependencies)
     - [Prerequisites](#prerequisites)
-    - [Part of tutorial](#part-of-tutorial)
+    - [Components to install](#components-to-install)
 - Setup
     1. Developer Environment
         1. [Starting docker](#11-starting-docker)
