@@ -11,15 +11,17 @@ This page provides a guide for developers to set up the environment for the RIF 
     - [Prerequisities](#prerequisities)
     - [Part of tutorial](#part-of-tutorial)
 - Setup
-    1. [Developers Environment]
+    1. Developer Environment
         1. [Starting docker](#11-starting-docker)
         2. [Deploying smart contracts](#12-deploying-smart-contracts)
         3. [Browser wallet](#13-browser-wallet)
+        4. [IPFS Nodes](#14-ipfs-nodes)
     2. [RIF Marketplace Cache](#2-rif-marketplace-cache)
-    3. [RIF Marketplace UI](#3-rif-marketplace-ui)
-    4. [RNS Manager](#4-rns-manager)
+    3. [RIF Marketplace Upload Service](#3-rif-marketplace-upload-service)
+    4. [RIF Marketplace UI](#4-rif-marketplace-ui)
+    5. [RNS Manager](#5-rns-manager)
+    6. [RIF Storage Pinning service](#6-rif-storage-pinning-service)
 - [Using the RIF Marketplace](#using-the-rif-marketplace)
-
 
 # Dependencies
 
@@ -27,14 +29,19 @@ This page provides a guide for developers to set up the environment for the RIF 
 0. node v10 (or [nvm](https://github.com/nvm-sh/nvm) with node v10 installed)
 1. [Docker](https://www.docker.com/)
 2. [Docker compose](https://docs.docker.com/compose/install/)
+3. [IPFS](https://ipfs.io/) 
+The recommended way to install IPFS is using [ipfs-update](https://github.com/ipfs/ipfs-update) but there are other ways described [here](https://github.com/ipfs/go-ipfs#install) as well. Recommended is to run the latest version but required is at least `0.7.0`.
 
-## Part of tutorial
-These will be installed during the tutorial
 
-3. [RIF Marketplace Developer Environment](https://github.com/rsksmart/rif-marketplace-dev/) project
-4. [RIF Marketplace Cache](https://github.com/rsksmart/rif-marketplace-cache/) project
-5. [RIF Marketplace UI](https://github.com/rsksmart/rif-marketplace-ui/) project
-6. [RNS Manager Project](https://github.com/rnsdomains/rns-manager-react)
+## Components to install
+These components will be installed during this process
+
+4. [RIF Marketplace Developer Environment](https://github.com/rsksmart/rif-marketplace-dev/) project
+5. [RIF Marketplace Cache](https://github.com/rsksmart/rif-marketplace-cache/) project
+6. [RIF Marketplace Upload Service](https://github.com/rsksmart/rif-marketplace-upload-service/) project
+7. [RIF Marketplace UI](https://github.com/rsksmart/rif-marketplace-ui/) project
+8. [RNS Manager Project](https://github.com/rnsdomains/rns-manager-react)
+9. [RIF Storage Pinning Service](https://github.com/rsksmart/rif-storage-pinner/) project
 
 
 # Setup:
@@ -59,12 +66,12 @@ The Ganache blockchain will now run and it is available to deploy the correspond
 First, install the dependencies (make sure to **use node v10**, you can switch using `nvm use 10`). 
 
 ```
-sh install.sh rns 
+sh install.sh rns storage 
 ```
 
 Run the deployment script for the RNS and Marketplace contracts deploying to ganache network
 ```
-sh deploy.sh rns 
+sh deploy.sh rns storage
 ```
 
 This will create `./out` folder with a number of configuration files:
@@ -83,6 +90,34 @@ Now we will add RIF token. Click on `Add Token` -> `Custom Token` and input the 
 
 You can similarly add more accounts to your wallet if needed.
 
+
+### 1.4. IPFS Nodes
+
+For this setup you will need at least two running instances of **IPFS**. These can be spawned and ran easily through the **RIF Storage Pinning** repository, which will provide two instances already configured and ready to be used by the **RIF Marketplace**.
+
+Download and setup the Pinning service
+```
+$ git clone git@github.com:rsksmart/rif-storage-pinner.git
+$ cd rif-storage-pinner
+$ npm ci
+```
+
+Initialize development repos that are placed in `.repos`.  This folder can be anytime removed and the `init` command rerun. All data will be purged though.
+```
+$ npm run init
+```
+
+Spawn IPFS daemons
+```
+$ npm run ipfs:consumer daemon
+$ npm run ipfs:provider daemon
+```
+
+You can use NPM's scripts `npm run ipfs:consumer` and `npm run ipfs:provider` to interact with each IPFS node. These take the same arguments as the `ipfs` command.
+
+You should now have two instances of **IPFS** running on ports `5002` and `5003`.
+
+
 ## 2. RIF Marketplace Cache
 Download and setup the RIF Marketplace Cache
 ```
@@ -94,25 +129,50 @@ cd rif-marketplace-cache
 Install the dependencies
 
 ```
-npm i
+npm ci
 ```
 
 Create the DB using the following command:
 ```
-npm run bin db-sync
+npm run bin -- db-migration --up
 ```
 
-Run Precache process for the RNS Service 
+Run Precache process for the RNS Service (for ganache network)
 ```
-NODE_ENV=ganache npm run bin precache rns rates
+NODE_ENV=ganache npm run bin precache rns storage
 ```
 
 Run the cache for the RNS Service with
 ```
-NODE_ENV=ganache npm run bin -- start --enable rns --log=debug
+NODE_ENV=ganache npm run bin -- start --enable rns storage --log=debug
 ```
 
-## 3. RIF Marketplace UI
+
+## 3. RIF Marketplace Upload Service
+Download and setup the RIF Marketplace Upload Service
+```
+git clone git@github.com:rsksmart/rif-marketplace-upload-service.git
+
+cd rif-marketplace-upload-service
+```
+
+Install the dependencies
+```
+npm ci
+```
+
+Create the DB using the following command:
+```
+npm run bin -- db-migration --up
+```
+
+Run Upload Service (connected to previously deployed IPFS node)
+```
+NODE_ENV=development npm run bin start -- --log=debug
+```
+
+
+## 4. RIF Marketplace UI
 Download and setup the RIF Marketplace UI
 ```
 git clone git@github.com:rsksmart/rif-marketplace-ui.git
@@ -123,7 +183,7 @@ cd rif-marketplace-ui
 Install the dependencies
 
 ```
-npm i
+npm ci
 ```
 
 Run the UI (Will be available on `http://localhost:3000/`)
@@ -132,7 +192,7 @@ npm start
 ```
 
 
-## 4. RNS Manager
+## 5. RNS Manager
 Download and setup the RNS Manager
 ```
 git clone git@github.com:rnsdomains/rns-manager-react.git
@@ -153,6 +213,40 @@ Now you can start the UI. (You may need to switch to another port such as `http:
 ```
 npm start
 ```
+
+
+## 6. RIF Storage Pinning service
+
+> This is a service that listens on blockchain events and when new Agreement is created it pins a file to the configured IPFS node.
+
+Download and setup the Pinning service (already done when running **IPFS** nodes)
+```
+$ git clone git@github.com:rsksmart/rif-storage-pinner.git
+$ cd rif-storage-pinner
+$ npm ci
+```
+
+Make sure you have **IPFS** installed. We will use one of the previously deployed instances of **IPFS**.
+
+To interact with pinning service use the `npm run bin` script. To start Pinning service run:
+
+```
+npm run bin -- init --offerId={your_account} --db=./db.sqlite
+```
+
+This will provide the `peerId` that should be used in the *RIF Marketplace UI*  to create the Storage offer. You can create the offer on `http://localhost:3000/storage/sell?peerId={your_peer_id}`.
+
+Once the offer is created in the UI you can run the service using:
+
+```
+NODE_ENV=ganache npm run bin daemon -- --log=debug --db=./db.sqlite
+```
+
+You should see in logs when new Agreements are detected and pinned. 
+
+**See help pages for details on the parameters and additional commands!!!**
+
+
 
 # Using the RIF Marketplace
 
