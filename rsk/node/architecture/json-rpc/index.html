@@ -931,8 +931,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-20 16:19:41 +0000T00:00:00.000Z">2020-05-20</time> | -->
-     54' to read |
+    <!--time role="presentation" datetime="2021-03-03 03:15:28 +0000T00:00:00.000Z">2021-03-03</time> | -->
+     56' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/architecture/json-rpc.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1713,11 +1713,80 @@
   <li><a href="#rpc-pub-sub-methods">RPC PUB SUB methods</a></li>
 </ul>
 
-<blockquote>
-  <p>Note: request headers must contain the specification of <code class="highlighter-rouge">"Content-Type:application/json"</code></p>
-</blockquote>
+<h2 id="transport-protocols">Transport protocols</h2>
+
+<h3 id="http-transport-protocol">HTTP transport protocol</h3>
+
+<p>HTTP requests should be made:</p>
+
+<ul>
+  <li>to the port number specified in the config for <code class="highlighter-rouge">rpc.providers.web.http.port</code>
+    <ul>
+      <li>this is <code class="highlighter-rouge">4444</code> by default</li>
+      <li>for <a href="../../../public-nodes/">public nodes</a>, omit the port number</li>
+    </ul>
+  </li>
+  <li>to the “root” route (<code class="highlighter-rouge">/</code>)</li>
+  <li>using the HTTP verb <code class="highlighter-rouge">POST</code>
+</li>
+  <li>specifying a <code class="highlighter-rouge">Content-Type</code> header of <code class="highlighter-rouge">application/json</code>
+</li>
+  <li>with a request body specified as stringified JSON</li>
+</ul>
+
+<p>For example, a <code class="highlighter-rouge">curl</code> command to a <code class="highlighter-rouge">localhost</code> RSK node
+would look similar to this:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:4444/ <span class="se">\ \</span>
+  <span class="nt">-X</span> POST <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+  <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"RPC_METHOD_NAME","params":[RPC_REQUEST_PARAMETERS],"id":1}'</span>
+
+</code></pre></div></div>
+
+<h3 id="websockets-transport-protocol">WebSockets transport protocol</h3>
+
+<p>WebSockets connections should be established:</p>
+
+<ul>
+  <li>to the port number specified in the config for <code class="highlighter-rouge">rpc.providers.web.ws.port</code>
+    <ul>
+      <li>this is <code class="highlighter-rouge">4445</code> by default</li>
+      <li>
+<a href="../../../public-nodes/">public nodes</a> do <strong>not</strong> have the WebSockets transport protocol enabled</li>
+    </ul>
+  </li>
+  <li>to the WebSockets route (<code class="highlighter-rouge">/websocket</code>)</li>
+</ul>
+
+<p>Once connected:</p>
+
+<ul>
+  <li>Send a request body specified as stringified JSON</li>
+  <li>No “verb” or “headers” are necessary, as these are specific to the HTTP transport protocol</li>
+</ul>
+
+<p>For example, a <code class="highlighter-rouge">wscat</code> command to connect to a <code class="highlighter-rouge">localhost</code> RSK node
+would look similar to this:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wscat <span class="nt">-c</span> ws://localhost:4445/websocket
+</code></pre></div></div>
+
+<p>After the connection has been established using <code class="highlighter-rouge">wscat</code>,
+you may send multiple RPC requests within the same session.
+(Note that <code class="highlighter-rouge">&gt; </code> marks requests to be input,
+and that <code class="highlighter-rouge">&lt; </code> marks responses that will be printed.)</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">&gt;</span><span class="w"> </span><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"method"</span><span class="p">:</span><span class="s2">"RPC_METHOD_NAME"</span><span class="p">,</span><span class="nl">"params"</span><span class="p">:[</span><span class="err">RPC_REQUEST_PARAMETERS</span><span class="p">],</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">}</span><span class="w">
+</span><span class="err">&lt;</span><span class="w"> </span><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"RPC_RESPONSE"</span><span class="p">}</span><span class="w">
+
+</span><span class="err">&gt;</span><span class="w"> </span><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"method"</span><span class="p">:</span><span class="s2">"RPC_METHOD_NAME"</span><span class="p">,</span><span class="nl">"params"</span><span class="p">:[</span><span class="err">RPC_REQUEST_PARAMETERS</span><span class="p">],</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span><span class="w">
+</span><span class="err">&lt;</span><span class="w"> </span><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"RPC_RESPONSE"</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <h2 id="json-rpc-methods">JSON RPC methods</h2>
+
+<h3 id="json-rpc-supported">JSON RPC supported</h3>
 
 <table>
   <thead>
