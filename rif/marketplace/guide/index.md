@@ -23,6 +23,7 @@ description: "RIF Marketplace User Guide"
     - [Cancel a listed domain](/rif/marketplace/guide/getting-started/#cancel-a-domain)
     - [Offer Storage](/rif/marketplace/guide/getting-started/#offer-storage)
     - [Rent Storage](/rif/marketplace/guide/getting-started/#rent-storage)
+    - [Renew Storage](/rif/marketplace/guide/getting-started/#renew-storage)
     
 
 ----

@@ -10,6 +10,7 @@ description: "RIF Marketplace User Guide"
 - [Cancel a listed domain](#cancel-a-domain)
 - [Offer Storage](#offer-storage)
 - [Rent Storage](#rent-storage)
+- [Renew Storage](#renew-storage)
 
 > Please read the [Setup guide](/rif/marketplace/guide/setup/) if you haven't.
 
@@ -103,7 +104,7 @@ To offer decentralized storage in the RIF Marketplace, you need to follow these 
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
-2- On the **Storage Services** section you click on the **SELL** tab on the top section to submit your storage offer. Here you will access the form to submit your Storage offer.
+2- On the **Storage Services** section, click on the **SELL** tab on the top section to submit your storage offer. Here you will access the form to submit your Storage offer.
 
 ![UserGuide - Marketplace Storage Sell](/rif/marketplace/guide/images/userguide-marketplace-storage-sell.png)
 
@@ -130,7 +131,7 @@ To offer decentralized storage in the RIF Marketplace, you need to follow these 
 
 To rent decentralized storage in the RIF Marketplace, follow these steps:
 
-1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Storage Services** to get to the Storage Domains Marketplace.
+1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Storage Services** to get to the Storage Marketplace.
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
@@ -158,6 +159,29 @@ Once the IPFS hash to pin is completed (either through *Upload* or *Pin by hash*
 
 ![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-confirm.png)
 
+### Renew Storage
+
+You can renew an existing Storage agreementt following these steps:
+
+1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Storage Services** to get to the Storage Marketplace.
+
+![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
+
+2- On the **Storage Services** section, click on the **MY PURCHASES** tab to see a list of your existing agreements. Find the one you wan to renew and click on **RENEW**.
+
+![UserGuide - Marketplace Renew](/rif/marketplace/guide/images/userguide-marketplace-storage-renew.png)
+
+3- Select the number of periods to prepay. This will create the required transaction to confirm the renewal of the decentralized storage.
+
+![UserGuide - Marketplace Storage Buy Upd](/rif/marketplace/guide/images/userguide-marketplace-storage-renew2.png)
+
+4- Click on **RENEW** and confirm the transaction on your wallet. Then wait for the required confirmations to get your files pinned successfully!
+
+![UserGuide - Renew Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-confirmtx.png)
+
+![UserGuide - Renew Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-renew-confirm.png)
+
+![UserGuide - Renew Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-renew-confirm2.png)
 
 ----
 
