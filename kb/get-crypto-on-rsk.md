@@ -23,7 +23,7 @@ Find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on 
 
     - Use [RSK Swap](https://app.rskswap.com/swap)
     - Use [Liquality](https://liquality.io/)
-    - Use [TEX by Money on Chain)](https://tex.moneyonchain.com/)
+    - Use [TEX by Money on Chain](https://tex.moneyonchain.com/)
     - Use [RIF on Chain](https://rif.moneyonchain.com/)
 
 
