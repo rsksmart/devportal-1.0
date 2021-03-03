@@ -8,6 +8,8 @@ description: "RIF Marketplace User Guide"
 - [Buy a Domain](#buy-a-domain)
 - [Sell a Domain](#sell-a-domain)
 - [Cancel a listed domain](#cancel-a-domain)
+- [Offer Storage](#offer-storage)
+- [Rent Storage](#rent-storage)
 
 > Please read the [Setup guide](/rif/marketplace/guide/setup/) if you haven't.
 
@@ -15,24 +17,23 @@ description: "RIF Marketplace User Guide"
 
 To buy a domain in the RIF Marketplace, a single transaction is involved. Let's start:
 
-1. Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
-
+ 1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
-2. On the **Name Services** section you will find a **Search and Filter** panel on the left, which allows you to look for a specific domain based on name and/or price. On the right side you will see the list of **available** domains to buy, including details such as *Domain Name, Owner, Renewal Date, and Price*.
+ 2- On the **Name Services** section you will find a **Search and Filter** panel on the left, which allows you to look for a specific domain based on name and/or price. On the right side you will see the list of **available** domains to buy, including details such as *Domain Name, Owner, Renewal Date, and Price*.
 
 ![UserGuide - Marketplace Domains](/rif/marketplace/guide/images/userguide-marketplace-domains.png)
 
-3. Select the Domain you want to buy by clicking on the **Select** button. You will be redirected to the **BUY** confirmation screen, where you can review the order details and click on **Buy Domain** to proceed.
+ 3- Select the Domain you want to buy by clicking on the **Select** button. You will be redirected to the **BUY** confirmation screen, where you can review the order details and click on **Buy Domain** to proceed.
 
 ![UserGuide - Marketplace Buy](/rif/marketplace/guide/images/userguide-marketplace-buy.png)
 
-4. Confirm the transaction on your wallet.
+ 4- Confirm the transaction on your wallet.
 
 ![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-confirm-transaction.png)
 
-5. Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain was successfully purchased.
+ 5- Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain was successfully purchased.
 
 ![UserGuide - Domains Bought Confirmations Wait](/rif/marketplace/guide/images/userguide-domains-bought-confirmations-wait.png)
 
@@ -44,23 +45,23 @@ Now you can click on **Buy Another Domain** to get back to the main Domain listi
 
 To sell a domain, two transactions are involved. Let's start:
 
-1. Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
+1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
-2. Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own, that are **available for sale**.
+2- Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own, that are **available for sale**.
 
 ![UserGuide - Marketplace Own Domains](/rif/marketplace/guide/images/userguide-marketplace-own-domains.png)
 
-3. Select the domain you want to list for sale and click on **Select**. You will be redirected to the **SELL** confirmation page where you can specify the **Price** for the domain listing. You can then click on **List Domain** to proceed.
+3- Select the domain you want to list for sale and click on **Select**. You will be redirected to the **SELL** confirmation page where you can specify the **Price** for the domain listing. You can then click on **List Domain** to proceed.
 
 ![UserGuide - Marketplace Sell](/rif/marketplace/guide/images/userguide-marketplace-sell.png)
 
-4. Confirm the 2 (two) transactions on your wallet. The first transaction is for the **Approval** of the Domain transfer, the second is the actual **Placement** transaction.
+4- Confirm the 2 (two) transactions on your wallet. The first transaction is for the **Approval** of the Domain transfer, the second is the actual **Placement** transaction.
 
  ![Confirm Transaction](/rif/marketplace/guide/images/confirm-transaction.png)
 
-5. Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain was successfully listed for sale.
+5- Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain was successfully listed for sale.
 
 ![UserGuide - Domains Listed Confirmations Wait](/rif/marketplace/guide/images/userguide-domains-listed-confirmations-wait.png)
 
@@ -72,27 +73,91 @@ Click on "**View Domain Listings"** to see the domain you have just listed, now 
 
 If you want to remove a domain which is listed for Sale, you can do that with two transactions. Let's start:
 
-1. Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
+1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
-2. Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own which are **available for sale**. On the left you will see three options, select **Your Offers**
+2- Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own which are **available for sale**. On the left you will see three options, select **Your Offers**
 
 ![UserGuide - Marketplace Listed Domains](/rif/marketplace/guide/images/userguide-marketplace-listed-domains.png)
 
-3. Select the domain you want to remove by clicking on **X**. You will be redirected to the **CANCEL** confirmation page. You can then click on **Cancel Domain** to proceed.
+3- Select the domain you want to remove by clicking on **X**. You will be redirected to the **CANCEL** confirmation page. You can then click on **Cancel Domain** to proceed.
 
 ![UserGuide - Marketplace Cancel](/rif/marketplace/guide/images/userguide-marketplace-cancel.png)
 
-4. Confirm the 2 (two) transactions on your wallet. The first transaction is for the **Disapproval** of the Domain transfer, the second is the actual **Unplacement** transaction.
+4- Confirm the 2 (two) transactions on your wallet. The first transaction is for the **Disapproval** of the Domain transfer, the second is the actual **Unplacement** transaction.
 
 ![Confirm Transaction](/rif/marketplace/guide/images/confirm-transaction.png)
 
-5. Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain was successfully removed.
+5- Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain was successfully removed.
 
 ![UserGuide - Domains Cancelled Confirmations Wait](/rif/marketplace/guide/images/userguide-domains-cancelled-confirmations-wait.png)
 
 ![UserGuide - Domains Cancelled Confirmations Wait Completed](/rif/marketplace/guide/images/userguide-domains-cancelled-confirmations-wait-completed.png)
 
 Click on **View Domain Listings** to verify that the domain has been removed from the RIF Marketplace.
+
+### Offer Storage
+
+To offer decentralized storage in the RIF Marketplace, you need to follow these steps:
+
+1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Storage Services** to get to the Storage Marketplace.
+
+![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
+
+2- On the **Storage Services** section you click on the **SELL** tab on the top section to submit your storage offer. Here you will access the form to submit your Storage offer.
+
+![UserGuide - Marketplace Storage Sell](/rif/marketplace/guide/images/userguide-marketplace-storage-sell.png)
+
+3- Complete the **size in GB** (total amount of storage you will offer) and your **Pinning Service Peer ID** which is obtained when initializing the **RIF Storage Pinning Service**. Once that is complete you can define multiple **Billing Plans**, each of them containing a **price, a payment token, and a billing period (daily, weekly, or monthly)**. You can define different combinations and offer different Billing Plans for your storage offer, as shown below.
+
+![UserGuide - Marketplace Storage Sell Form](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-form.png)
+
+![UserGuide - Marketplace Storage Sell Form 2](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-form2.png)
+
+4- Submit the transaction, confirm it on your wallet and wait for the required confirmations to process the Storage Offer.
+
+![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-confirmtx.png)
+
+![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-confirm.png)
+
+![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-confirm2.png)
+
+5- Offers can be managed through the **MY OFFERS** section where you can access a list of existing agreements and withdraw the earned funds.
+
+
+**Note:** It is important to remark that during this Beta phase, Storage Providers need to be *whitelisted* in the smart contract so please contact us if you are interested!
+
+### Rent Storage
+
+To rent decentralized storage in the RIF Marketplace, follow these steps:
+
+1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Storage Services** to get to the Storage Domains Marketplace.
+
+![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
+
+2- On the **Storage Services** section you will find a **Search and Filter** panel on the left, which allows you to look for a specific storage provider based on name, size, and/or price. On the right side you will see the list of **available** providers to rent storage including details such as *Provider, Storage system, available size, Billing Periods, and Price per GB per month*.
+
+![UserGuide - Marketplace Storage Buy](/rif/marketplace/guide/images/userguide-marketplace-storage-buy.png)
+
+3- Select the Provider by clicking on the **Select** button. You will be redirected to the **BUY** confirmation screen, where you can **Upload files** or **Pin an existing hash**. 
+
+![UserGuide - Marketplace Storage Buy Upd](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-upload2.png)
+
+![UserGuide - Marketplace Storage Buy Upd](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-uploadhash.png)
+
+Once the IPFS hash to pin is completed (either through *Upload* or *Pin by hash*) click on **PIN** to proceed to the next step where the Billing Plan will be defined and paid.
+
+4- Select the Subscription period and the number of periods to prepay. This will create the required transaction to confirm the decentralized storage.
+
+![UserGuide - Marketplace Storage Buy Upd](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-upload3.png)
+
+5- Click on **BUY** and confirm the transaction on your wallet. Then wait for the required confirmations to get your files pinned successfully!
+
+![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-confirmtx.png)
+
+![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-confirm2.png)
+
+![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-marketplace-storage-buy-confirm.png)
+
 
 ----
 
