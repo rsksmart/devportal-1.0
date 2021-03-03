@@ -99,7 +99,7 @@ Connect to the local ganache network (`localhost:8545` in the network dropdown).
 
 Now we will add RIF token. Click on `Add Token` -> `Custom Token` and input the token address that is in `./out/ui-config.json` under the `rif` attribute (should be `0x67B5656d60a809915323Bf2C40A8bEF15A152e3e` if this is your first deployment). You should now see your RIF tokens balance of 997 RIF.
 
-You can add more accounts to your wallet if needed, using similar method.
+You can similarly add more accounts to your wallet if needed.
 
 ### 1.4. IPFS Nodes
 

@@ -8,7 +8,7 @@ tags: rif, marketplace, storage, IPFS, technical
 
 The service is implemented through a **Smart Contract** that handles all Storage Offers and Agreements in a transparent and decentralized way. The **RIF Storage Pinning** service is permanently connected to the Blockchain listening to any activity on the Marketplace so it can proceed and persist the required content in an automated manner, providing simplicity and security to all parties.
 
-See [Glossary](#glossary) for explanation of terms.
+See the [glossary](#glossary) for explanations of various terms.
 
 ## User Flows
 
@@ -35,7 +35,7 @@ Provider can be paid only with funds that were already spent on running the Agre
 
 1. The Provider goes to Marketplace and reviews their active Offers
 2. Selects which Offers to payout.
-3. Through the UI, provider creates a transaction that requests this payout.
+3. Through the UI, the Provider creates a transaction that requests this payout.
 4. If Agreement does not have any more funds to run, it is terminated, the space utilized by the Agreement is made available for others to be rented and any remaining funds returned to the Consumer.
 
 ### [Provider] Offer termination
@@ -61,7 +61,7 @@ The Provider can decide to terminate an Offer. The active Agreements will contin
 
 1. Goes to RIF Marketplace UI.
 2. Selects which of his Agreements he wants to top-up.
-3. Chooses amount and create the transaction.
+3. Chooses the amounts, and creates the transaction.
 
 ### Withdraw Funds / Termination of Agreement [Consumer]
 
@@ -90,7 +90,7 @@ The main **high-level components** are:
  - **Cache** - a cache that stores the state of the Smart Contract in a readable format and does some basic preprocessing on it.
  - **Pinning Service** - a service running on Provider's machine connected to IPFS node which orchestrates the pinning mechanism.
  - **Smart Contract** - a place where the state is stored and managed. This is the "origin of truth".
- - **RIF Storage.js** - a library that can abstract away lot of technicalities happening in order for the file to be pinned.
+ - **RIF Storage.js** - a library that abstracts away a lot of technicalities required for the file to be pinned.
 
 
 ## Implementation notes
@@ -105,7 +105,7 @@ Pinning Service listens on events that defines the service's actions like when n
 
 Unfortunately, public RSKj nodes do not currently support listening on events or the `eth_getLogs` call to poll for events. This requires the Provider to run own RSKj node, which can be a daunting task, causing an adoption barrier.
 
-Since the Marketplace's Cache service supports WebSockets connections, and it's already used in the Marketplace UI for listening on events and updates from Cache, we decided to add support for listening on events from Cache. This has become the new default option. For those with minimal trust for the Cache, they can still run their own RSKj node and use that as source of the events.
+Since the Marketplace's Cache service supports WebSockets connections, and it's already used in the Marketplace UI for listening on events and updates from Cache, we decided to add support for listening on events from Cache. This has become the new default option. For those with minimal trust in the Cache, they can still run their own RSKj node and use that as source of the events.
 
 ## Glossary
 
