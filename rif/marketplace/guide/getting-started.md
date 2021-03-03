@@ -124,6 +124,9 @@ To offer decentralized storage in the RIF Marketplace, you need to follow these 
 
 5- Offers can be managed through the **MY OFFERS** section where you can access a list of existing agreements and withdraw the earned funds.
 
+![UserGuide - Marketplace Storage Withdraw](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-withdraw.png)
+
+Once you click on **WITHDRAW** this will submit a transaction that needs to be confirmed in the Wallet and processed in order to get the earned funds.
 
 **Note:** It is important to remark that during this Beta phase, Storage Providers need to be *whitelisted* in the smart contract so please contact us if you are interested!
 
