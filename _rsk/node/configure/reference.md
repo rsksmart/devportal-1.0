@@ -213,6 +213,8 @@ Describes the configuration for the RPC protocol.
     * `rpc.providers.web.http.hosts = []`
       is the list of node's domain names or IPs.
       Check [restrictions on valid host names](https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_host_names).
+    * **NOTE**: For details on how to connect over HTTP,
+      see [HTTP Transport Protocol](/rsk/node/architecture/json-rpc/#http-transport-protocol "RSK JSON-RPC - HTTP").
   * `rpc.providers.web.ws`
     defines WebSocket configuration:
     * `rpc.providers.web.ws.enabled = [true/false]`
@@ -224,6 +226,8 @@ Describes the configuration for the RPC protocol.
     * `rpc.providers.web.ws.bind_address = address`
       is the WS-RPC server listening interface.
       By default RSK uses `localhost`.
+    * **NOTE**: For details on how to connect over WebSockets,
+      see [Websockets Transport Protocol](/rsk/node/architecture/json-rpc/#websockets-transport-protocol "RSK JSON-RPC - WebSockets").
 * `rpc.modules` lists of different RPC modules.
   If a module is not in the list and enabled,
   its RPC calls are discarded.
