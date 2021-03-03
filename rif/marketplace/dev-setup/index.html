@@ -923,7 +923,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-02 05:25:29 +0000T00:00:00.000Z">2021-03-02</time> | -->
+    <!--time role="presentation" datetime="2021-03-03 03:52:15 +0000T00:00:00.000Z">2021-03-03</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/marketplace/dev-setup.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1706,7 +1706,7 @@
 <a href="#dependencies">Dependencies</a>
     <ul>
       <li><a href="#prerequisites">Prerequisites</a></li>
-      <li><a href="#part-of-tutorial">Part of tutorial</a></li>
+      <li><a href="#components-to-install">Components to install</a></li>
     </ul>
   </li>
   <li>Setup
@@ -1737,14 +1737,14 @@
   <li>node v10 (or <a href="https://github.com/nvm-sh/nvm" rel="external noopener noreferrer" target="_blank">nvm</a> with node v10 installed)</li>
   <li><a href="https://www.docker.com/" rel="external noopener noreferrer" target="_blank">Docker</a></li>
   <li><a href="https://docs.docker.com/compose/install/" rel="external noopener noreferrer" target="_blank">Docker compose</a></li>
-  <li>
-<a href="https://ipfs.io/" rel="external noopener noreferrer" target="_blank">IPFS</a>
-The recommended way to install IPFS is using <a href="https://github.com/ipfs/ipfs-update" rel="external noopener noreferrer" target="_blank">ipfs-update</a> but there are other ways described <a href="https://github.com/ipfs/go-ipfs#install" rel="external noopener noreferrer" target="_blank">here</a> as well. Recommended is to run the latest version but required is at least <code class="highlighter-rouge">0.7.0</code>.</li>
+  <li><a href="https://ipfs.io/" rel="external noopener noreferrer" target="_blank">IPFS</a></li>
 </ol>
 
-<h2 id="part-of-tutorial">Part of tutorial</h2>
+<p>Note: The recommended way to install IPFS is using <a href="https://github.com/ipfs/ipfs-update" rel="external noopener noreferrer" target="_blank">ipfs-update</a> but there are other ways as described <a href="https://github.com/ipfs/go-ipfs#install" rel="external noopener noreferrer" target="_blank">here</a>. You can run the latest version (recommended) but required is version: <code class="highlighter-rouge">0.7.0</code> and above.</p>
 
-<p>These components will be installed during this process</p>
+<h2 id="components-to-install">Components to install</h2>
+
+<p>The following components will be installed as we go along;</p>
 
 <ol>
   <li>
@@ -1762,7 +1762,7 @@ The recommended way to install IPFS is using <a href="https://github.com/ipfs/ip
 
 <h1 id="setup">Setup:</h1>
 
-<h2 id="1-developers-environment">1. Developers Environment</h2>
+<h2 id="1-developer-environment">1. Developer Environment</h2>
 
 <p>Download and setup the RIF Marketplace Developer Environment</p>
 
@@ -1807,7 +1807,7 @@ Per network configuration file for the <a href="https://github.com/rnsdomains/rn
 
 <h3 id="13-browser-wallet">1.3. Browser wallet</h3>
 
-<p>In MetaMask or Nifty import the first address from <code class="highlighter-rouge">keys.txt</code> file. The private key is <code class="highlighter-rouge">0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d</code></p>
+<p>In MetaMask or Nifty, import the first address from the <code class="highlighter-rouge">keys.txt</code> file. The private key is <code class="highlighter-rouge">0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d</code></p>
 
 <p>Connect to the local ganache network (<code class="highlighter-rouge">localhost:8545</code> in the network dropdown). You should now see a balance of 99 ETH (or close to that - some gas was already used to deploy the Contracts).</p>
 
@@ -1826,7 +1826,11 @@ Per network configuration file for the <a href="https://github.com/rnsdomains/rn
 <span class="nv">$ </span>npm ci
 </code></pre></div></div>
 
-<p>Initialize development repos that are placed in <code class="highlighter-rouge">.repos</code>.  This folder can be anytime removed and the <code class="highlighter-rouge">init</code> command rerun. All data will be purged though.</p>
+<p>Initialize development repos that are placed in <code class="highlighter-rouge">.repos</code>.  This folder can be removed anytime and rerun the <code class="highlighter-rouge">init</code> command.</p>
+
+<blockquote>
+  <p><strong>Note: All data will be purged</strong>.</p>
+</blockquote>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm run init
 </code></pre></div></div>
@@ -1908,7 +1912,7 @@ Per network configuration file for the <a href="https://github.com/rnsdomains/rn
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm ci
 </code></pre></div></div>
 
-<p>Run the UI (Will be available on <code class="highlighter-rouge">http://localhost:3000/</code>).</p>
+<p>Run the UI (this will be available on <code class="highlighter-rouge">http://localhost:3000/</code>).</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
 </code></pre></div></div>
@@ -1947,23 +1951,23 @@ Per network configuration file for the <a href="https://github.com/rnsdomains/rn
 <span class="nv">$ </span>npm ci
 </code></pre></div></div>
 
-<p>Make sure you have <strong>IPFS</strong> installed. We will use one of the previously deployed instances of <strong>IPFS</strong>.</p>
+<p>Ensure <strong>IPFS</strong> is installed. We will use one of the previously deployed instances of <strong>IPFS</strong>.</p>
 
-<p>To interact with pinning service use the <code class="highlighter-rouge">npm run bin</code> script. To start Pinning service run:</p>
+<p>To interact with pinning service, use the <code class="highlighter-rouge">npm run bin</code> script. To start Pinning service run:</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run bin <span class="nt">--</span> init <span class="nt">--offerId</span><span class="o">={</span>your_account<span class="o">}</span> <span class="nt">--db</span><span class="o">=</span>./db.sqlite
 </code></pre></div></div>
 
 <p>This will provide the <code class="highlighter-rouge">peerId</code> that should be used in the <em>RIF Marketplace UI</em>  to create the Storage offer. You can create the offer on <code class="highlighter-rouge">http://localhost:3000/storage/sell?peerId={your_peer_id}</code>.</p>
 
-<p>Once the offer is created in the UI you can run the service using:</p>
+<p>Once the offer is created in the UI, you can run the service using:</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">NODE_ENV</span><span class="o">=</span>ganache npm run bin daemon <span class="nt">--</span> <span class="nt">--log</span><span class="o">=</span>debug <span class="nt">--db</span><span class="o">=</span>./db.sqlite
 </code></pre></div></div>
 
 <p>You should see in logs when new Agreements are detected and pinned.</p>
 
-<p><strong>NOTE:</strong> See help pages for details on the parameters and additional commands!!!</p>
+<p><strong>NOTE:</strong> See help pages for details on the parameters and additional commands!</p>
 
 <h1 id="using-the-rif-marketplace">Using the RIF Marketplace</h1>
 

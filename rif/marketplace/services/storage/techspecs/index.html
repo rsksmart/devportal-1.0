@@ -939,7 +939,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-02 05:25:29 +0000T00:00:00.000Z">2021-03-02</time> | -->
+    <!--time role="presentation" datetime="2021-03-03 03:52:15 +0000T00:00:00.000Z">2021-03-03</time> | -->
      9' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/marketplace/services/storage/techspecs.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1713,9 +1713,11 @@
 
                   <h1 class="page-title" id="top">RIF Marketplace Storage Tech Specs</h1>
 
-                  <p><strong>Storage Services</strong> allows Providers of decentralized storage to register their offers, defining a capacity, a storage system (IPFS for now), and a set of subscription/pricing plans. Consumers can browse the available offers and rent the desired space to store the required content, having the option to upload it directly or simply replicate it among different Providers, if required.</p>
+                  <p><strong>Storage Services</strong> allows Providers of decentralized storage to register their offers, defining a capacity, a storage system (<strong>IPFS</strong> only), and a set of subscription/pricing plans. Consumers can browse the available offers and rent the desired space to store the required content, having the option to upload it directly or simply replicate it among different Providers, if required.</p>
 
 <p>The service is implemented through a <strong>Smart Contract</strong> that handles all Storage Offers and Agreements in a transparent and decentralized way. The <strong>RIF Storage Pinning</strong> service is permanently connected to the Blockchain listening to any activity on the Marketplace so it can proceed and persist the required content in an automated manner, providing simplicity and security to all parties.</p>
+
+<p>See the <a href="#glossary">glossary</a> for explanations of various terms.</p>
 
 <h2 id="user-flows">User Flows</h2>
 
@@ -1725,50 +1727,51 @@
   <li>High-level use cases with operations within the RNS Marketplace*</li>
 </ul>
 
-<h3 id="provider-creating-new-offer">[Provider] Creating new Offer</h3>
+<h3 id="creating-new-offer-provider">Creating new Offer [Provider]</h3>
 
 <ol>
   <li>User goes to Marketplace and starts the creation process.</li>
-  <li>His account address (eq. the future Offer Id) is read from Metamask and displayed steps that he should do with already prefilled command that he should run:
-    <div class="language-shell highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">-g</span> @rsksmart/rif-storage-pinner
-<span class="nv">$ </span>rif-pinner init <span class="nt">--offerId</span> &lt;his account address&gt;
-</code></pre></div>    </div>
-  </li>
-  <li>He installs the package and run the <code class="highlighter-rouge">init</code> command. The pinner DB is instantiated for given Offer ID and new Peer identity is generated. URL is displayed (or we can automatically even open the browser on the given URL) which points to Marketplace and has the PeerId as parameter.</li>
-  <li>On that page there is the form to fill all remaining things needed to create Offer like capacity offered and billing plans. The PeerId is already prefilled.</li>
-  <li>Offer is created and it is displayed to him to run <code class="highlighter-rouge">rif-pinner daemon</code> command that starts listening for new Agreements and connects to IPFS.</li>
+  <li>User account address (eq. the future Offer Id) is read from Metamask and the displayed steps to be carried out, including the prefilled commands to run:</li>
 </ol>
 
-<h3 id="provider-funds-payout">[Provider] Funds payout</h3>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>npm <span class="nb">install</span> <span class="nt">-g</span> @rsksmart/rif-storage-pinner
+<span class="nv">$ </span>rif-pinner init <span class="nt">--offerId</span> &lt;user account address&gt;
+</code></pre></div></div>
+<ol>
+  <li>User installs the package and run the <code class="highlighter-rouge">init</code> command. The pinner DB is instantiated for the given Offer ID and a new Peer identity is generated. The URL is displayed (or can be opened automatically in the browser on the given URL) which points to Marketplace and has the PeerId as parameter.</li>
+  <li>On that page, there is the form to fill all remaining things needed to create Offer like capacity offered and billing plans. The PeerId is already prefilled.</li>
+  <li>Offer is created and it is displayed to the user to run <code class="highlighter-rouge">rif-pinner daemon</code> command that starts listening for new Agreements and connects to IPFS.</li>
+</ol>
 
-<p>Provider can be paid only with funds that were already spent on running the Agreement. The Contract calculates the amount available to pay to the Provider..</p>
+<h3 id="funds-payout-provider">Funds payout [Provider]</h3>
+
+<p>Provider can be paid only with funds that were already spent on running the Agreement. The Contract calculates the amount available to pay to the Provider.</p>
 
 <ol>
-  <li>The Provider goes to Marketplace and reviews his active Offers</li>
-  <li>Selects which Offers he wants to payout.</li>
-  <li>Through UI he creates a transaction that requests this payout.</li>
-  <li>If Agreement does not have any more funds to run, it is terminated, the space utilized by the Agreement is made again available for others to be rented and any remaining funds returned to Consumer.</li>
+  <li>The Provider goes to Marketplace and reviews their active Offers</li>
+  <li>Selects which Offers to payout.</li>
+  <li>Through the UI, the Provider creates a transaction that requests this payout.</li>
+  <li>If Agreement does not have any more funds to run, it is terminated, the space utilized by the Agreement is made available for others to be rented and any remaining funds returned to the Consumer.</li>
 </ol>
 
 <h3 id="provider-offer-termination">[Provider] Offer termination</h3>
 
-<p>The Provider can decide to terminate an Offer. The active Agreements will continue to run until they run out of funds, but Consumers can not deposit new funds to the Agreements. He needs to be aware that the termination process can take quite a while.</p>
+<p>The Provider can decide to terminate an Offer. The active Agreements will continue to run until they run out of funds, but Consumers can not deposit new funds to the Agreements. Provider needs to be aware that the termination process can take quite a while.</p>
 
 <ol>
-  <li>Provider goes to Marketplace and sees his Offers.</li>
-  <li>The Provider chooses Offer to terminate.</li>
+  <li>Provider goes to Marketplace and sees own Offers.</li>
+  <li>The Provider chooses which Offer to terminate.</li>
   <li>Reviews the estimate until when the Agreements will be active.</li>
   <li>Submit and creates termination transaction.</li>
 </ol>
 
-<h3 id="consumer-creating-new-agreement">[Consumer] Creating new Agreement</h3>
+<h3 id="creating-new-agreement-consumer">Creating new Agreement [Consumer]</h3>
 
 <ol>
   <li>Finds an Offer (e.g., through filtering) on RIF Marketplace that suits his requirements.</li>
   <li>Configures the new Agreement.
     <ul>
-      <li>Defines capacity that he will request for the data.</li>
+      <li>Defines the capacity to be requested for the data.</li>
       <li>Chooses price, token, and frequency of payments.</li>
       <li>Chooses amount of funds to deposit.</li>
       <li>Pins an existing hash or uploads a set of files.</li>
@@ -1777,23 +1780,23 @@
   <li>Create transaction for the newAgreement call.</li>
 </ol>
 
-<h3 id="consumer-depositing-funds">[Consumer] Depositing Funds</h3>
+<h3 id="depositing-funds-consumer">Depositing Funds [Consumer]</h3>
 
 <ol>
   <li>Goes to RIF Marketplace UI.</li>
   <li>Selects which of his Agreements he wants to top-up.</li>
-  <li>Choose amounts and make the transaction.</li>
+  <li>Chooses the amounts, and creates the transaction.</li>
 </ol>
 
-<h3 id="consumer-withdraw-funds--termination-of-agreement">[Consumer] Withdraw Funds / Termination of Agreement</h3>
+<h3 id="withdraw-funds--termination-of-agreement-consumer">Withdraw Funds / Termination of Agreement [Consumer]</h3>
 
-<p>A Consumer can decide to withdraw funds. The maximum he can withdraw are all funds except those for the currently active period. If he would withdraw all of these funds it is practically termination of the Agreement.</p>
+<p>A Consumer can decide to withdraw funds. The maximum withdrawal limit is all the funds, except those for the currently active period. Once the consumer withdraws all of the funds, it is practically a termination of the Agreement.</p>
 
 <ol>
   <li>Goes to RIF Marketplace UI.</li>
-  <li>Selects which of his Agreements he wants to withdraw funds from.</li>
-  <li>Choose amounts (limited to deposited funds minus fund for current period).</li>
-  <li>Make transaction.</li>
+  <li>Selects which Agreement to withdraw funds from.</li>
+  <li>Chooses amount (limited to deposited funds minus fund for current period).</li>
+  <li>Creates the transaction.</li>
 </ol>
 
 <h2 id="architecture">Architecture</h2>
@@ -1814,28 +1817,28 @@
   <li>
 <strong>RIF Marketplace UI</strong> - the main web UI where all transactions originate.</li>
   <li>
-<strong>Cache</strong> - a cache that stores the state of the Smart Contract in an easy-readable format and does some basic preprocessing on it.</li>
+<strong>Cache</strong> - a cache that stores the state of the Smart Contract in a readable format and does some basic preprocessing on it.</li>
   <li>
 <strong>Pinning Service</strong> - a service running on Provider’s machine connected to IPFS node which orchestrates the pinning mechanism.</li>
   <li>
 <strong>Smart Contract</strong> - a place where the state is stored and managed. This is the “origin of truth”.</li>
   <li>
-<strong>RIF Storage.js</strong> - a library that can abstract away lot of magic happening in order to file be pinned.</li>
+<strong>RIF Storage.js</strong> - a library that abstracts away a lot of technicalities required for the file to be pinned.</li>
 </ul>
 
 <h2 id="implementation-notes">Implementation notes</h2>
 
 <h3 id="freeing-up-offers-capacity">Freeing up Offers capacity</h3>
 
-<p>Offer’s capacity is tracked as part of the Smart Contract in order not to exceed the Provider’s capacity. Hence when a new Agreement is being created, it is checked whether there is enough capacity remaining and if so the requested capacity is allocated. The capacity of the expired Agreement is returned to Offer during Payout Funds call of the Smart Contract</p>
+<p>Offer’s capacity is tracked as part of the Smart Contract in order not to exceed the Provider’s capacity. Hence, when a new Agreement is being created, it is checked whether there is enough capacity remaining and if so the requested capacity is allocated. The capacity of the expired Agreement is returned to Offer during Payout Funds call of the Smart Contract.</p>
 
 <h3 id="pinning-service-listening-strategies">Pinning Service Listening Strategies</h3>
 
-<p>Pinning Service listens on events that defines the service’s actions like when new agreement is created (and hence something should be pinned) etc. The main source of this events is blockchain.</p>
+<p>Pinning Service listens on events that defines the service’s actions like when new agreement is created (and hence something should be pinned) etc. The main source of this events is the blockchain.</p>
 
-<p>Unforunately, public RSKj nodes do not currently have enable for listening on events or the <code class="highlighter-rouge">eth_getLogs</code> call to poll for events. This requires Provider to run his own RSKj node, which is something he might not want to do and it might be an adoption barrier.</p>
+<p>Unfortunately, public RSKj nodes do not currently support listening on events or the <code class="highlighter-rouge">eth_getLogs</code> call to poll for events. This requires the Provider to run own RSKj node, which can be a daunting task, causing an adoption barrier.</p>
 
-<p>Since the Marketplace’s Cache service supports WebSockets connections, and is already used in the Marketplace UI for listening on events and updates from Cache, we decided to add support for listening on events from Cache. This has become the new default option. For those that they don’t trust our Cache, they can still run their own RSKj node and use that as source of the events.</p>
+<p>Since the Marketplace’s Cache service supports WebSockets connections, and it’s already used in the Marketplace UI for listening on events and updates from Cache, we decided to add support for listening on events from Cache. This has become the new default option. For those with minimal trust in the Cache, they can still run their own RSKj node and use that as source of the events.</p>
 
 <h2 id="glossary">Glossary</h2>
 
@@ -1843,15 +1846,15 @@
   <li>Actors
     <ul>
       <li>
-<strong>Consumer</strong> - actor that wants his files to be persisted in the network.</li>
+<strong>Consumer</strong> - actor that wants their files to be persisted in the network.</li>
       <li>
-<strong>Provider</strong> - actor that offers his storage for Consumers to be used in monetary exchange.</li>
+<strong>Provider</strong> - actor that offers their storage for Consumers to be used in monetary exchange.</li>
     </ul>
   </li>
   <li>Entities
     <ul>
       <li>
-<strong>Offer</strong> - Offer created by Provider that announces availability of his storage space.
+<strong>Offer</strong> - Offer created by Provider that announces availability of their storage space.
         <ul>
           <li>
 <em>Billing Periods</em> - Specifies periods how often is payment required (e.g. every month, every 2 months…).</li>
@@ -1860,7 +1863,7 @@
           <li>
 <em>Billing Plan</em> - Is a period-price tuple which defines Billing Price per Billing Period.</li>
           <li>
-<em>Maximum Duration</em> - Duration which Consumer can maximally rent the storage space for.</li>
+<em>Maximum Duration</em> - The duration which the Consumer can maximally rent the storage space for.</li>
           <li>
 <em>Total Capacity</em> - Total capacity in bytes that Provider is offering.</li>
           <li>
@@ -1872,7 +1875,7 @@
           <li>
 <em>Storage Network</em> - Offer is always connected to one Storage System like IPFS or Swarm.</li>
           <li>
-<em>Offer Termination</em> - Provider can choose to discontinue his Offer. No new Agreements will be accepted, but current Agreements will be finished based on the number of Billing Periods already purchased.</li>
+<em>Offer Termination</em> - The provider can choose to discontinue their Offer. No new Agreements will be accepted, but current Agreements will be finished based on the number of Billing Periods already purchased.</li>
         </ul>
       </li>
       <li>
@@ -1881,32 +1884,32 @@
           <li>
 <em>IPFS Source</em> - Hash pointer to immutable data source.</li>
           <li>
-<em>Contract Source</em> - Pointer to different smart-contract that handles the mutability (eq. adding/removing files)</li>
+<em>Contract Source</em> - A pointer to different smart-contract that handles the mutability (eq. adding/removing files)</li>
         </ul>
       </li>
       <li>
-<strong>Agreement</strong> - Consumer creates Agreement for a specific Provider’s Offer, specifying, and the corresponding Data Source
+<strong>Agreement</strong> - Consumer creates Agreement for a specific Provider’s Offer, specification, and the corresponding Data Source
         <ul>
           <li>
 <em>Data Reference</em> - Pointer to Data Source</li>
           <li>
-<em>Agreement Termination</em> - Consumer can decide to terminate the Agreement, which will take effect after finishing of current billing period.</li>
+<em>Agreement Termination</em> - Consumer can decide to terminate the Agreement, which will take effect after termination of current billing period.</li>
           <li>
-<em>Available Funds</em> - Amount of funds deposited for the Agreement, ready to be spend for the Agreement.</li>
+<em>Available Funds</em> - Amount of funds deposited for the Agreement, available to be spent on the Agreement.</li>
           <li>
-<em>Spent Funds</em> - Amount of funds already spend as a payment for the Storage service to Provider. Funds are awaiting Provider’s request to payout.</li>
+<em>Spent Funds</em> - The amount of funds already spent as a payment for the Storage service to the Provider. Funds awaiting Provider’s request to payout.</li>
           <li>
 <em>Deposit Funds</em> - In order for an Agreement to be active, it needs to have available funds for each Billing Period renewal. Consumer can therefore deposit funds.</li>
           <li>
-<em>Withdraw Funds</em> - Customer can withdraw deposited funds, which have not be used for Billing Period renewal.</li>
+<em>Withdraw Funds</em> - Customer can withdraw deposited funds, which have not been used for Billing Period renewal.</li>
           <li>
-<em>Payout Funds</em> - Upon finishing of a Billing Period, the Provider can request the funds for the finished periods to be transferred to him.</li>
+<em>Payout Funds</em> - Upon termination of a Billing Period, the Provider can request the funds for the terminated periods to be transferred to them.</li>
           <li>
-<em>Active Agreement</em> - Active Agreement is that one that had sufficient funds to pay for the current Billing Period. Provider stores and provide the files specified by Data Reference. When it runs out of funds it will become “Inactive Agreement”.</li>
+<em>Active Agreement</em> - Active Agreement includes having sufficient funds to pay for the current Billing Period. Provider stores and provide the files specified by Data Reference. In the event of funds being exhausted, it will become an “Inactive Agreement”.</li>
           <li>
-<em>Inactive Agreement</em> - Inactive Agreement is that one that either expired or was terminated by either party, therefore the Provider is not required to store and provide the files defined in Data Reference.</li>
+<em>Inactive Agreement</em> - Inactive Agreement occurs during expiration or termination by either party, therefore the Provider is not required to store and provide the files defined in Data Reference.</li>
           <li>
-<em>Expired Agreement</em> - Expired Agreement is that one that “naturally” ran out of funds and becomes Inactive Agreement.</li>
+<em>Expired Agreement</em> - Expired Agreement occurs when funds are exhausted, hence, it becomes an Inactive Agreement.</li>
         </ul>
       </li>
     </ul>
