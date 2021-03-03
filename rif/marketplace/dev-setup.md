@@ -10,7 +10,7 @@ This page provides a guide for developers to set up the environment for the RIF 
 
 - [Dependencies](#dependencies)
     - [Prerequisites](#prerequisites)
-    - [Part of tutorial](#part-of-tutorial)
+    - [Components to install](#components-to-install)
 - Setup
     1. Developer Environment
         1. [Starting docker](#11-starting-docker)
@@ -32,11 +32,12 @@ This page provides a guide for developers to set up the environment for the RIF 
 1. [Docker](https://www.docker.com/)
 2. [Docker compose](https://docs.docker.com/compose/install/)
 3. [IPFS](https://ipfs.io/)
-The recommended way to install IPFS is using [ipfs-update](https://github.com/ipfs/ipfs-update) but there are other ways described [here](https://github.com/ipfs/go-ipfs#install) as well. Recommended is to run the latest version but required is at least `0.7.0`.
 
-## Part of tutorial
+Note: The recommended way to install IPFS is using [ipfs-update](https://github.com/ipfs/ipfs-update) but there are other ways as described [here](https://github.com/ipfs/go-ipfs#install). You can run the latest version (recommended) but required is version: `0.7.0` and above.
 
-These components will be installed during this process
+## Components to install
+
+The following components will be installed as we go along;
 
 4. [RIF Marketplace Developer Environment](https://github.com/rsksmart/rif-marketplace-dev/) project
 5. [RIF Marketplace Cache](https://github.com/rsksmart/rif-marketplace-cache/) project
@@ -48,7 +49,7 @@ These components will be installed during this process
 
 # Setup:
 
-## 1. Developers Environment
+## 1. Developer Environment
 
 Download and setup the RIF Marketplace Developer Environment
 
@@ -92,7 +93,7 @@ Per network configuration file for the [RNS Domains Manager](https://github.com/
 
 ### 1.3. Browser wallet
 
-In MetaMask or Nifty import the first address from `keys.txt` file. The private key is `0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`
+In MetaMask or Nifty, import the first address from the `keys.txt` file. The private key is `0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`
 
 Connect to the local ganache network (`localhost:8545` in the network dropdown). You should now see a balance of 99 ETH (or close to that - some gas was already used to deploy the Contracts).
 
@@ -112,7 +113,9 @@ $ cd rif-storage-pinner
 $ npm ci
 ```
 
-Initialize development repos that are placed in `.repos`.  This folder can be anytime removed and the `init` command rerun. All data will be purged though.
+Initialize development repos that are placed in `.repos`.  This folder can be removed anytime and rerun the `init` command. 
+
+> **Note: All data will be purged**.
 
 ```shell
 $ npm run init
@@ -207,7 +210,7 @@ Install the dependencies.
 npm ci
 ```
 
-Run the UI (Will be available on `http://localhost:3000/`).
+Run the UI (this will be available on `http://localhost:3000/`).
 
 ```shell
 npm start
@@ -249,9 +252,9 @@ $ cd rif-storage-pinner
 $ npm ci
 ```
 
-Make sure you have **IPFS** installed. We will use one of the previously deployed instances of **IPFS**.
+Ensure **IPFS** is installed. We will use one of the previously deployed instances of **IPFS**.
 
-To interact with pinning service use the `npm run bin` script. To start Pinning service run:
+To interact with pinning service, use the `npm run bin` script. To start Pinning service run:
 
 ```shell
 npm run bin -- init --offerId={your_account} --db=./db.sqlite
@@ -259,7 +262,7 @@ npm run bin -- init --offerId={your_account} --db=./db.sqlite
 
 This will provide the `peerId` that should be used in the *RIF Marketplace UI*  to create the Storage offer. You can create the offer on `http://localhost:3000/storage/sell?peerId={your_peer_id}`.
 
-Once the offer is created in the UI you can run the service using:
+Once the offer is created in the UI, you can run the service using:
 
 ```shell
 NODE_ENV=ganache npm run bin daemon -- --log=debug --db=./db.sqlite
@@ -267,7 +270,7 @@ NODE_ENV=ganache npm run bin daemon -- --log=debug --db=./db.sqlite
 
 You should see in logs when new Agreements are detected and pinned.
 
-**NOTE:** See help pages for details on the parameters and additional commands!!!
+**NOTE:** See help pages for details on the parameters and additional commands!
 
 # Using the RIF Marketplace
 
