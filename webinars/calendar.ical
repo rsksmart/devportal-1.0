@@ -4113,4 +4113,305 @@ STATUS:CONFIRMED
 X-LANGUAGE:Portuguese
 LAST-MODIFIED:20210126T130000Z
 END:VEVENT
+BEGIN:VEVENT
+UID:202103-001@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210315T210000Z
+DTSTART:20210315T210000Z
+SUMMARY:RSK Academy 01: wallets en español 
+DESCRIPTION:RSK Academy 01: wallets en español\n\nOnline only\n\nRSVP: \n\
+ nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets-
+ en-espanol\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 01: wallets en español</span></div>\n<div><span>Online only</span></d
+ iv>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nb
+ sp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-academy-01
+ -wallets-en-espanol\">app.livestorm.co/iov-labs-1/rsk-academy-01-wallets-e
+ n-espanol</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 01: wallets en español 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets-e
+ n-espanol
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-002@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210316T190000Z
+DTSTART:20210316T190000Z
+SUMMARY:RSK Academy 01: wallets 
+DESCRIPTION:RSK Academy 01: wallets\n\nOnline only\n\nRSVP: \n\nVideo stre
+ am: https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 01: wallets</span></div>\n<div><span>Online only</span></div>\n<div><
+ b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><sp
+ an><a href=\"https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets\">
+ app.livestorm.co/iov-labs-1/rsk-academy-01-wallets</a></span></div>\n</BOD
+ Y>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 01: wallets 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-003@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210317T220000Z
+DTSTART:20210317T220000Z
+SUMMARY:RSK Academy 01: wallets em português 
+DESCRIPTION:RSK Academy 01: wallets em português\n\nOnline only\n\nRSVP: \
+ n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallet
+ s-em-portugues\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 01: wallets em português</span></div>\n<div><span>Online only</span><
+ /div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &
+ nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-academy-
+ 01-wallets-em-portugues\">app.livestorm.co/iov-labs-1/rsk-academy-01-walle
+ ts-em-portugues</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 01: wallets em português 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets-e
+ m-portugues
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-004@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210322T210000Z
+DTSTART:20210322T210000Z
+SUMMARY:RSK Academy 02: tu primer contrato inteligente 
+DESCRIPTION:RSK Academy 02: tu primer contrato inteligente\n\nOnline only\
+ n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-academy
+ -02-tu-primer-contrato-inteligente\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 02: tu primer contrato inteligente</span></div>\n<div><span>Online on
+ ly</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Vide
+ o stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/rs
+ k-academy-02-tu-primer-contrato-inteligente\">app.livestorm.co/iov-labs-1/
+ rsk-academy-02-tu-primer-contrato-inteligente</a></span></div>\n</BODY>\n<
+ /HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 02: tu primer contrato inteligente 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-02-tu-primer
+ -contrato-inteligente
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-005@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210323T190000Z
+DTSTART:20210323T190000Z
+SUMMARY:RSK Academy 02: your first smart contract 
+DESCRIPTION:RSK Academy 02: your first smart contract\n\nOnline only\n\nRS
+ VP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-academy-02-y
+ our-first-smart-contract\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 02: your first smart contract</span></div>\n<div><span>Online only</s
+ pan></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video str
+ eam &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-aca
+ demy-02-your-first-smart-contract\">app.livestorm.co/iov-labs-1/rsk-academ
+ y-02-your-first-smart-contract</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 02: your first smart contract 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-02-your-firs
+ t-smart-contract
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-006@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210324T220000Z
+DTSTART:20210324T220000Z
+SUMMARY:RSK Academy 02: seu primeiro smart contract 
+DESCRIPTION:RSK Academy 02: seu primeiro smart contract\n\nOnline only\n\n
+ RSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-academy-02
+ -seu-primeiro-smart-contract\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 02: seu primeiro smart contract</span></div>\n<div><span>Online only<
+ /span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video s
+ tream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-labs-1/rsk-a
+ cademy-02-seu-primeiro-smart-contract\">app.livestorm.co/iov-labs-1/rsk-ac
+ ademy-02-seu-primeiro-smart-contract</a></span></div>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 02: seu primeiro smart contract 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-02-seu-prime
+ iro-smart-contract
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-007@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210329T210000Z
+DTSTART:20210329T210000Z
+SUMMARY:RSK Academy 03: ¿Qué es Blockchain? ¿Qué es Bitcoin? 
+DESCRIPTION:RSK Academy 03: ¿Qué es Blockchain? ¿Qué es Bitcoin?\n\nOnline
+  only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-a
+ cademy-03-que-es-blockchain-que-es-bitcoin\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 03: ¿Qué es Blockchain? ¿Qué es Bitcoin?</span></div>\n<div><span>Onl
+ ine only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><
+ b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-lab
+ s-1/rsk-academy-03-que-es-blockchain-que-es-bitcoin\">app.livestorm.co/iov
+ -labs-1/rsk-academy-03-que-es-blockchain-que-es-bitcoin</a></span></div>\n
+ </BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 03: ¿Qué es Blockchain? ¿Qué es Bitcoin? 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-03-que-es-bl
+ ockchain-que-es-bitcoin
+STATUS:CONFIRMED
+X-LANGUAGE:Spanish
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-008@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210330T190000Z
+DTSTART:20210330T190000Z
+SUMMARY:RSK Academy 03: What is Blockchain? What is Bitcoin? 
+DESCRIPTION:RSK Academy 03: What is Blockchain? What is Bitcoin?\n\nOnline
+  only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-a
+ cademy-03-what-is-blockchain-what-is-bitcoin\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 03: What is Blockchain? What is Bitcoin?</span></div>\n<div><span>Onl
+ ine only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><
+ b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-lab
+ s-1/rsk-academy-03-what-is-blockchain-what-is-bitcoin\">app.livestorm.co/i
+ ov-labs-1/rsk-academy-03-what-is-blockchain-what-is-bitcoin</a></span></di
+ v>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 03: What is Blockchain? What is Bitcoin? 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-03-what-is-b
+ lockchain-what-is-bitcoin
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-009@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210331T220000Z
+DTSTART:20210331T220000Z
+SUMMARY:RSK Academy 03: O que é Blockchain? O que é Bitcoin? 
+DESCRIPTION:RSK Academy 03: O que é Blockchain? O que é Bitcoin?\n\nOnline
+  only\n\nRSVP: \n\nVideo stream: https://app.livestorm.co/iov-labs-1/rsk-a
+ cademy-03-o-que-e-blockchain-o-que-e-bitcoin\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>RSK Aca
+ demy 03: O que é Blockchain? O que é Bitcoin?</span></div>\n<div><span>Onl
+ ine only</span></div>\n<div><b>RSVP &nbsp\;</b><span></span></div>\n<div><
+ b>Video stream &nbsp\;</b><span><a href=\"https://app.livestorm.co/iov-lab
+ s-1/rsk-academy-03-o-que-e-blockchain-o-que-e-bitcoin\">app.livestorm.co/i
+ ov-labs-1/rsk-academy-03-o-que-e-blockchain-o-que-e-bitcoin</a></span></di
+ v>\n</BODY>\n</HTML>
+ORGANIZER;CN="Solange Gueiros\, Developer Advocate\, @solangegueiros":mail
+ to:developers@iovlabs.org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:RSK Academy 03: O que é Blockchain? O que é Bitcoin? 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rsk-academy-03-o-que-e-b
+ lockchain-o-que-e-bitcoin
+STATUS:CONFIRMED
+X-LANGUAGE:Portuguese
+LAST-MODIFIED:20210301T030000Z
+END:VEVENT
+BEGIN:VEVENT
+UID:202103-010@developers.rsk.co/
+SEQUENCE:0
+DTSTAMP:20210330T170000Z
+DTSTART:20210330T170000Z
+SUMMARY:rLogin Developer Workshop 
+DESCRIPTION:rLogin Developer Workshop\n\nOnline only\n\nRSVP: \n\nVideo st
+ ream: https://app.livestorm.co/iov-labs-1/rlogin-developer-workshop\n
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 3.2/
+ /EN\">\n<HTML>\n<HEAD>\n<TITLE></TITLE>\n</HEAD>\n<BODY><div><span>rLogin 
+ Developer Workshop</span></div>\n<div><span>Online only</span></div>\n<div
+ ><b>RSVP &nbsp\;</b><span></span></div>\n<div><b>Video stream &nbsp\;</b><
+ span><a href=\"https://app.livestorm.co/iov-labs-1/rlogin-developer-worksh
+ op\">app.livestorm.co/iov-labs-1/rlogin-developer-workshop</a></span></div
+ >\n</BODY>\n</HTML>
+ORGANIZER;CN="Milton Berman\, \, @miltonberman":mailto:developers@iovlabs.
+ org
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT10M
+DESCRIPTION:rLogin Developer Workshop 
+END:VALARM
+CATEGORIES:Workshop
+URL;VALUE=URI:https://app.livestorm.co/iov-labs-1/rlogin-developer-worksho
+ p
+STATUS:CONFIRMED
+X-LANGUAGE:English
+LAST-MODIFIED:20210303T031500Z
+END:VEVENT
 END:VCALENDAR

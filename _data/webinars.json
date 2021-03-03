@@ -319,7 +319,7 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk&list=PLSyELPaIli1nOt6nqPy3QqSIViXoQkRPL&index=7",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=ZW0rqL3y_Rk",
       "youtubeVideoId": "ZW0rqL3y_Rk",
       "_isPast": true
     },
@@ -2066,7 +2066,7 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=QEKz243x_IY&list=PLSyELPaIli1kpVbzJ3c7metuPBPojGwlG",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=QEKz243x_IY",
       "youtubeVideoId": "QEKz243x_IY",
       "_isPast": true
     },
@@ -2447,7 +2447,7 @@
           "url": "https://fund.rsk.co/"
         }
       ],
-      "recordedVideoUrl": "https://www.youtube.com/watch?v=rjKLb1gd514&list=PLSyELPaIli1nDXVOtUXMjRrWtd2eMiRXi",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=rjKLb1gd514",
       "youtubeVideoId": "rjKLb1gd514",
       "_isPast": true
     },
@@ -4083,7 +4083,8 @@
           "url": "https://postcovidhack.com/challenges/socio-economic-inclusion/prizes"
         }
       ],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=LuMhZHBgWdI",
+      "youtubeVideoId": "LuMhZHBgWdI",
       "_permalink": "/webinars/202009-005/",
       "_isPast": true
     },
@@ -4607,7 +4608,8 @@
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=Kx1Bbp2PJw0",
+      "youtubeVideoId": "Kx1Bbp2PJw0",
       "_permalink": "/webinars/202010-001/",
       "_isPast": true
     },
@@ -4645,7 +4647,8 @@
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=DQut-bZadyA",
+      "youtubeVideoId": "DQut-bZadyA",
       "_permalink": "/webinars/202010-002/",
       "_isPast": true
     },
@@ -4683,7 +4686,8 @@
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=7x-712OF1mg",
+      "youtubeVideoId": "7x-712OF1mg",
       "_permalink": "/webinars/202010-003/",
       "_isPast": true
     },
@@ -4716,7 +4720,7 @@
       ],
       "rsvpEmbedUrl": "https://www.eventbrite.sg/tickets-external?aff=dappsdev&eid=124664062567",
       "videoStreamUrl": "https://www.eventbrite.sg/e/whirlwind-introduction-to-defi-tickets-124664062567",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event8.jpg",
       "bannerImage": "/webinars/img/pch2020-partner-banner.png",
       "twitterSite": "",
@@ -4760,7 +4764,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/604b648b-e57d-4857-83f1-694d5e44bc57/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/como-migrar-dapps-de-ethereum-a-rsk",
-      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event3.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -4799,7 +4803,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/6aefd038-65c2-4640-8d50-471b37d0cb24/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-na-pratica-como-trocar-tokens-usando-rskswap",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -4843,7 +4847,7 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/e33f5ab9-b1e6-424a-9aa0-2637acf67d6d/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/sovryn-a-decentralized-protocol-for-bitcoin-lending-and-margin-trading",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
@@ -5219,7 +5223,8 @@
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
-      "recordedVideoUrl": "",
+      "recordedVideoUrl": "https://www.youtube.com/watch?v=kA70mn4nCnk",
+      "youtubeVideoId": "kA70mn4nCnk",
       "_permalink": "/webinars/202012-002/",
       "_isPast": true
     },
@@ -5289,14 +5294,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/8881f7e0-f0e5-4711-a8e9-14a79bf99aeb/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desarrolladores-como-usar-rskswap-con-smart-contracts",
-      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event10.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202102-001/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -5327,14 +5332,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/0f23fed6-ee1f-4fc7-9627-50fe0c6f9ad3/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-para-desenvolvedores-como-usar-rskswap-com-smart-contracts",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event5.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202102-002/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -5345,7 +5350,7 @@
       "status": "confirmed",
       "url": "",
       "title": "DeFi for Developers: how To Use RSKSwap Smart Contracts To Automate Trading",
-      "description": "RSKSwap is a decentralized exchange to automatically exchange ERC20 tokens, there is no need to wait for a buyer or seller. It has the advantage of the low costs and security of the RSK network. It also doesn’t require KYC and has no limits for withdrawals or deposits. \nIn this webinar you will have a step-by-step guide to create your own token and exchange it in RSKSwap automatically, using smart contracts.",
+      "description": "RSKSwap is a decentralized exchange that automatically exchanges ERC20 tokens: you don't longer need to wait for a buyer or seller!\n\nIt has the advantage of low costs and security of the RSK network.\n\nIt doesn’t require KYC and has no limits for withdrawals or deposits. \n\nIn this webinar you will have a step-by-step guide to create your own token and exchange it in RSKSwap automatically, using Smart Contracts.",
       "category": "Workshop",
       "locationCategory": "online",
       "location": "Online only",
@@ -5365,14 +5370,14 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/fa4d0e55-5096-4cc2-8dae-9d1f20af83fd/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/defi-for-developers-how-to-use-rskswap-smart-contracts-to-automate-trading",
-      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event12.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202102-003/",
-      "_isPast": false
+      "_isPast": true
     },
     {
       "type": "event/2",
@@ -5403,13 +5408,403 @@
       ],
       "rsvpEmbedUrl": "https://app.livestorm.co/p/fe137700-1cf1-477d-8a41-e16131310da9/form",
       "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/factory-de-smart-contracts-aprenda-como-um-smart-contract-pode-criar-outros",
-      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups recent",
       "image": "/webinars/img/events/event7.jpg",
       "bannerImage": "",
       "twitterSite": "",
       "resources": [],
       "recordedVideoUrl": "",
       "_permalink": "/webinars/202102-004/",
+      "_isPast": true
+    },
+    {
+      "type": "event/2",
+      "id": "202103-001",
+      "version": "1",
+      "timestamp": "2021-03-15T21:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 01: wallets en español",
+      "description": "¡Conviértate en desarrollador de Blockchain en la red RSK!\nEste es el primer módulo y aprenderá los fundamentos de las billeteras, además de crear su primera billetera web.\n¡La academia RSK comienza desde cero!\n\nEducar a las nuevas generaciones sobre Bitcoin, Blockchain y tecnologías de código abierto es la mejor manera de empoderarlas con las herramientas para construir un mundo mejor.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/9aaed683-cecb-45ca-aae8-4609b0b4c567/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets-en-espanol",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event2.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-001/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-002",
+      "version": "1",
+      "timestamp": "2021-03-16T19:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 01: wallets",
+      "description": "Become a Blockchain developer on the RSK network!\nThis is the first module and you will learn fundamentals of wallets, in addition to creating your first web wallet.\nRSK academy starts from scratch!\n\nEducating the new generations about Bitcoin, Blockchain and open source technologies is the best way to empower them with the tools to build a better world.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/a6b4026d-4dcd-45b1-a27c-42792e1e991f/form\n",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event9.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-002/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-003",
+      "version": "1",
+      "timestamp": "2021-03-17T22:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 01: wallets em português",
+      "description": "Torne-se um desenvolvedor Blockchain na rede RSK! \nEste é o primeiro módulo e você vai aprender fundamentos de carteiras, além de criar sua primeira carteira web.\nRSK academy começa do zero!\n\nEducar as novas gerações sobre Bitcoin, Blockchain e tecnologias de código aberto é a melhor maneira de capacitá-las com as ferramentas para construir um mundo melhor.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/4853b45e-f95f-471a-ab36-4a831cd0229d/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-01-wallets-em-portugues",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event4.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-003/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-004",
+      "version": "1",
+      "timestamp": "2021-03-22T21:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 02: tu primer contrato inteligente",
+      "description": "En este módulo de academia RSK, creará y publicará su primer contrato inteligente en la red RSK utilizando Remix y una billetera web.\n¡Conviértate en desarrollador de Blockchain en la red RSK!",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/c4a530a6-f104-4ca6-bf25-728c4a7b5c26/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-02-tu-primer-contrato-inteligente",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event11.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-004/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-005",
+      "version": "1",
+      "timestamp": "2021-03-23T19:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 02: your first smart contract",
+      "description": "In this module of RSK Academy you will create and publish your first smart contract on the RSK network using Remix and a web wallet.\nBecome a Blockchain developer on the RSK network!",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/db5b7f16-3ae4-41cf-b5b9-1b6ce339d090/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-02-your-first-smart-contract",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event6.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-005/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-006",
+      "version": "1",
+      "timestamp": "2021-03-24T22:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 02: seu primeiro smart contract",
+      "description": "Neste módulo da RSK Academy você vai criar e publicar seu primeiro contrato inteligente na RSK network utilizando Remix e uma web wallet.\nTorne-se um desenvolvedor Blockchain na rede RSK! \n",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/362df1f8-d209-41dc-b1a7-c4ebc81ae274/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-02-seu-primeiro-smart-contract",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event1.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-006/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-007",
+      "version": "1",
+      "timestamp": "2021-03-29T21:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 03: ¿Qué es Blockchain? ¿Qué es Bitcoin?",
+      "description": "Este módulo de academia RSK es ideal para cualquiera que busque aprender los conceptos básicos de la tecnología Blockchain.\nTambién aprenderá sobre Bitcoin, qué es esto, cómo funciona y mucho más.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Spanish",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/1cc92f21-6cd7-4e4f-befe-dfb35ca958f5/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-03-que-es-blockchain-que-es-bitcoin",
+      "tags": " idioma-spanish audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event8.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-007/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-008",
+      "version": "1",
+      "timestamp": "2021-03-30T19:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 03: What is Blockchain? What is Bitcoin?",
+      "description": "This RSK Academy module is ideal for anyone looking to learn the basics of Blockchain technology.\nAlso you will learn about Bitcoin, what is this, how it works and more.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/799a42da-78db-44de-9af9-b417961170b9/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-03-what-is-blockchain-what-is-bitcoin",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event3.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-008/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-009",
+      "version": "1",
+      "timestamp": "2021-03-31T22:00:00.000Z",
+      "lastModified": "2021-03-01T03:00:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "RSK Academy 03: O que é Blockchain? O que é Bitcoin?",
+      "description": "Este módulo da RSK Academy é ideal para quem deseja aprender o básico da tecnologia Blockchain.\nAlém disso, você aprenderá sobre Bitcoin, o que é isso, como funciona e muito mais.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "Portuguese",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Solange Gueiros",
+          "description": "Developer Advocate",
+          "contact": "@solangegueiros"
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/a5383ac5-dd84-4309-969c-c0cfaa5cbf48/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rsk-academy-03-o-que-e-blockchain-o-que-e-bitcoin",
+      "tags": " idioma-portuguese audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event10.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-009/",
+      "_isPast": false
+    },
+    {
+      "type": "event/2",
+      "id": "202103-010",
+      "version": "1",
+      "timestamp": "2021-03-30T17:00:00.000Z",
+      "lastModified": "2021-03-03T03:15:00.000Z",
+      "status": "confirmed",
+      "url": "",
+      "title": "rLogin Developer Workshop",
+      "description": "rLogin allows web application developers to integrate blockchain technologies giving the user the power of data portability. After integrating rLogin you achieve:\n\n- A back-end authenticating users by their wallet addressed - their Decentralized Identifiers.\n- A registration model capable of requesting users for data stored in its user-centric cloud storage, the Data Vault.\n- A front-end capable of interacting with any wallet that the user chooses, with a pre-designed user experience for registration and login.\n- Compatibility with a unified platform where the user can control their identity and information, the RIF Identity Manager.",
+      "category": "Workshop",
+      "locationCategory": "online",
+      "location": "Online only",
+      "language": "English",
+      "audiences": [
+        "general",
+        "developers",
+        "enterprise",
+        "startups"
+      ],
+      "presenters": [
+        {
+          "name": "Milton Berman",
+          "description": "",
+          "contact": "@miltonberman"
+        },
+        {
+          "name": "Ilan Olkies",
+          "description": "",
+          "contact": "@ilanolkies"
+        },
+        {
+          "name": "Jesse Clarke",
+          "description": "",
+          "contact": ""
+        }
+      ],
+      "rsvpEmbedUrl": "https://app.livestorm.co/p/a5294e71-da04-41d4-96e0-771aab59df12/form",
+      "videoStreamUrl": "https://app.livestorm.co/iov-labs-1/rlogin-developer-workshop",
+      "tags": " idioma-english audiencia-general audiencia-developers audiencia-enterprise audiencia-startups",
+      "image": "/webinars/img/events/event5.jpg",
+      "bannerImage": "",
+      "twitterSite": "",
+      "resources": [],
+      "recordedVideoUrl": "",
+      "_permalink": "/webinars/202103-010/",
       "_isPast": false
     }
   ]
