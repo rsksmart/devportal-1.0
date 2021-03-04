@@ -6,7 +6,7 @@ description: "RIF Marketplace User Guide"
 render_features: 'next-elem-class'
 ---
 
-To use the Marketplace application and services we are going to need three things:
+To use the Marketplace application and services, we are going to do the following:
 
 1. An internet browser extension wallet. Read [Compatible wallets](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
 2. RBTC to pay for the transaction cost. See [Getting RBTC](#getting-rbtc)
@@ -69,7 +69,7 @@ Read the [R-BTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges an
 
 ### Getting RIF Tokens
 
-In addition to R-BTC you are going to need RIF tokens to interact with the RIF Marketplace service. This is one of the main payments methods supported by the Marketplace for buying RNS domains and renting decentralized storage.
+In addition to R-BTC, you are going to need RIF tokens to interact with the RIF Marketplace service. This is one of the main payments methods supported by the Marketplace for buying RNS domains and renting decentralized storage.
 
 Read [RIF Token](https://developers.rsk.co/rif/token/) to find exchanges and more information on the RIF Token.
 
