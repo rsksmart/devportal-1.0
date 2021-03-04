@@ -10,7 +10,7 @@ title: Lumino Explorer WEB
 
 ## Build RIF Lumino Explorer WEB from code
 
-1. Get the [RELEASE.NUMBER] code from [GITHUB.URL]
+1. Get the code from [the repo](https://github.com/rsksmart/lumino-web)
 2. Go to the path you downloaded or cloned Lumino's code (lets call this path `$RIF_LUMINO_EXPLORER_WEB_PATH`)
 
 ```bash
