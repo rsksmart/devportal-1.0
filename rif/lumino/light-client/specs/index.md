@@ -76,7 +76,7 @@ We decided to follow the second approach.
 As we already mention for this approach we had to work in two different parts:
 
 - Node: Modify the actual node in order to accept and manage remote connections for Light Clients
-- Clients SDK: Implement the SDKs for the languages we want to support on the light client side. At the moment the only supported language is JavaScript (web and React native), but supporting Android and iOS is on the roadmap.
+- Clients SDK: Implement the SDKs for the languages we want to support on the light client side. At the moment the only supported language is JavaScript (web and React native), but Support for Android and iOS is on the roadmap.
 
 *Requirements*
 
@@ -217,7 +217,7 @@ The following diagram describes the process that takes place when a light client
 
 **Open Channel**
 
-In order to open a channel the Light Client must call the endpoint `light_channels` using the PUT method (we actually could have make the light client send the open channel transaction directly to RSK without passing thru the node, but for the sake of maintain all the logic on the node and keep the light client SDK simpler we decided to left it on the node side).
+In order to open a channel the Light Client must call the endpoint `light_channels` using the `PUT` method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keep the light client SDK simpler, we decided to leavethis logic on the node side).
 
 It should send a JSON object in the body with the following structure:
 
@@ -276,7 +276,7 @@ It should send a JSON object in the body with the following structure:
 
 **Deposit**
 
-In order to deposit token on a channel the Light Client must call the endpoint &quot;light_channels&quot; using the PATCH method (we actually could have make the light client send the open channel transaction directly to RSK without passing thru the node, but for the sake of maintain all the logic on the node and keep the light client SDK simpler we decided to left it on the node side).
+In order to deposit token on a channel the Light Client must call the endpoint `light_channels` using the PATCH method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keep the light client SDK simpler we decided to leave this logic on the node side).
 
 It should send a JSON object in the body with the following structure:
 
@@ -333,7 +333,7 @@ Next you will see the diagram describing the interaction between the Light Clien
   - It creates a new Payment entity with all the general data related to the payment.
   - It starts the payment flow (see the document describing the exchange of messages between nodes in a payment flow)
   - This flow generates a few messages to sign by the light client (remember  the node never has access to the light client private keys, so he has to ask the light client to sign the messages he needs to send to the payee)
-- The light client has to make a long polling to the &quot;msg&quot; endpoint using GET method. Everytime the node needs some interaction with the light client it creates a new message in the &quot;MessagesPending&quot; table. This endpoint retrieves all the messages in this table for the light client.
+- The light client has to make a long polling to the `msg` endpoint using GET method. Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table. This endpoint retrieves all the messages in this table for the light client.
   - PENDING: we have to remove from the response the messages that were already sent to the light client. We have 2 options here:
     - Delete the record from the table
     - Make a logic delete and change a flag in the record in order to not return thar record anymore.

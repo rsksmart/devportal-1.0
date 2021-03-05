@@ -7,8 +7,8 @@ title: Get your own RIF Lumino node up and running on Ubuntu
 ## Prerequisites
 
 1. Access to a synced RSK node. You can do this in a variety of ways:
-	1. Run your own node on Testnet or Mainnet, see [Node (RSKj): Install](https://developers.rsk.co/rsk/node/install/).
-	2. Compile and run a RSK node locally, see [Node (RSKj): Contribute](https://developers.rsk.co/rsk/node/contribute/).
+	1. Run your own node on Testnet or Mainnet, see [Node (RSKj): Install](/rsk/node/install/).
+	2. Compile and run a RSK node locally, see [Node (RSKj): Contribute](/rsk/node/contribute/).
 2. Ubuntu 18.04+.
 
 ## Recommended
@@ -21,74 +21,74 @@ title: Get your own RIF Lumino node up and running on Ubuntu
 
 Update your packages and install pre-requisites by executing:
 
-~~~ bash
+```
 sudo apt update
 sudo apt install software-properties-common
-~~~
+```
 
 Add deadsnakes PPA to your sources list:
 
-~~~ bash
+```
 sudo add-apt-repository ppa:deadsnakes/ppa
-~~~
+```
 
 Once the repository is enabled, install Python 3.7:
 
-~~~ bash
+```
 sudo apt install python3.7
-~~~
+```
 
 ### 2. Install Python 3.7-dev
 
 If you didn't update your local APT repository, execute:
 
-~~~ bash
+```
 sudo apt update
-~~~
+```
 
 To install python 3.7-dev run the following command:
 
-~~~ bash
+```
 sudo apt-get install libpq-dev python3.7-dev
-~~~
+```
 
 ### 3. Install `pip`
 
 If you didn't update your local APT repository, execute:
 
-~~~ bash
+```
 sudo apt update
-~~~
+```
 
 Install `pip3` by executing:
 
-~~~ bash
+```
 sudo apt-get install python3-pip
-~~~
+```
 
 ### 4. Install `virtualenv`
 
 If you didn't update your local APT repository, execute:
 
-~~~ bash
+```
 sudo apt update
-~~~
+```
 
 Install `virtualenv` by executing:
 
-~~~ bash
+```
 sudo apt-get install virtualenv
-~~~
+```
 
 ### 5. Install Lumino Invoicing dependencies
 
 Lumino includes a billing that is based on the Lighting Network invoicing feature. In order to install Lumino, the following dependencies are required:
 
-~~~ bash
+```
 sudo apt install libsecp256k1-dev
 
 sudo apt-get install libssl-dev build-essential automake pkg-config libtool libffi-dev libgmp-dev libyaml-cpp-dev
-~~~
+```
 
 ## Build RIF Lumino from code
 
@@ -104,31 +104,31 @@ You'll only need to create a python virtual environment for RIF Lumino once.
 
 Execute the following command:
 
-~~~ bash
+```
 virtualenv -p <PATH_TO_PYTHON3.7> clientEnv
-~~~
+```
 
 **Note:**
 
 Replace `<PATH_TO_PYTHON3.7>` with the path where Python3.7 is installed in your system. In the case of Ubuntu OS, this is usually `/usr/bin/python3.7`.
 
 You can verify your path to Python3.7 by executing:
-~~~ bash
+```
 which python3
-~~~
+```
 
 ### 3. Activate the environment
 Activate the python virtual environment by executing the following command:
 
-~~~ bash
+```
 source clientEnv/bin/activate
-~~~
+```
 
 Check if the Python version is correct inside the virtual environment by running:
 
-~~~ bash
+```
 python --version
-~~~
+```
 
 This command should output version 3.7.x.
 
@@ -136,23 +136,23 @@ This command should output version 3.7.x.
 
 Having the latest `pip` can help solve conflicts with dependencies. You can update `pip` by executing:
 
-~~~ bash
+```
 python -m pip install -U pip
-~~~
+```
 
 ### 5. Install RIF Lumino requirements in your environment
 
 Inside the virtual environment run the following command (this could take a few minutes):
 
-~~~ bash
+```
 pip install -r requirements.txt -c constraints.txt -e .
-~~~
+```
 
 Run the Lumino setup with the following command:
 
-~~~ bash
+```
 python setup.py develop
-~~~
+```
 
 ## Start RIF Communications transport layer
 
@@ -173,7 +173,7 @@ Please follow the instructions in the [RIF Communications installation page](htt
 2. If you haven't executed it before, run `source clientEnv/bin/activate` to activate the virtual environment.
 3. Run the following command to start Lumino:
     
-    ~~~ bash
+    ```
     lumino
         --keystore-path $KEYSTORE_PATH
         --network-id 33
@@ -190,68 +190,27 @@ Please follow the instructions in the [RIF Communications installation page](htt
         --transport $TRANSPORT_MODE
         --grpc-endpoint $GRPC_ENDPOINT
    
-    ~~~
-
-<table class="table">
-<thead>
-  <tr>
-    <th>FIELD</th>
-    <th>DESCRIPTION</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td>$KEYSTORE_PATH</td>
-    <td>The path to your keystore folder.</td>
-  </tr>
-  <tr>
-    <td>network-id</td>
-    <td>The blockchain network ID you're connecting to. This must match the RSK node you're connecting to. `33` is regtest.</td>
-  </tr>
-  <tr>
-    <td>$RSK_NODE_URL</td>
-    <td>URL of the RSK node to connect to (`http://URL:PORT`). If you're running a local node, this will typically be `http://localhost:4444/`.</td>
-  </tr>
-  <tr>
-    <td>environment-type</td>
-    <td>You will need this set to `development` in order to use custom blockchain and contract addresses.</td>
-  </tr>
-  <tr>
-    <td>$TOKENNETWORK_REGISTRY_CONTRACT_ADDRESS</td>
-    <td>Address for the token registry contract deployed (view contracts table).</td>
-  </tr>
-  <tr>
-    <td>$SECRET_REGISTRY_CONTRACT_ADDRESS</td>
-    <td>Address for the secret registry contract deployed (view contracts table).</td>
-  </tr>
-  <tr>
-    <td>$ENDPOINT_REGISTRY_CONTRACT_ADDRESS</td>
-    <td>Address for the endpoint registry contract deployed (view contracts table).</td>
-  </tr>
-  <tr>
-    <td>no-sync-check</td>
-    <td>This will allow you to bypass checking that the node is synchronized against etherscan.</td>
-  </tr>
-  <tr>
-    <td>$YOUR_RNS_DOMAIN</td>
-    <td>You can supply the RNS address associated with your RSK node address, e.g. `--rnsdomain=lumino.rsk.co`</td>
-  </tr>
-  <tr>
-    <td>$TRANSPORT_MODE</td>
-    <td>Transport mode for Lumino. Supported values are `rif-comms` and `matrix`. Example of use: `--transport=matrix`. Defaults to `rif-comms`.</td>
-  </tr>
-  <tr>
-    <td>$GRPC_ENDPOINT</td>
-    <td>The communication endpoint for the RIF Comms node used for transport purposes. Note that the `transport` flag must be set to `rif-comms` (explicitly or by default) for this parameter to be used. Defaults to `"localhost:5013"`.</td>
-  </tr>
-</tbody>
-</table>
+    ```
+    
+    |                  FIELD                  |                                                                                                              DESCRIPTION                                                                                                             |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *$KEYSTORE_PATH*                          | The path to your keystore folder.                                                                                                                                                                                                    |
+| *network-id*                             | The blockchain network ID you're connecting to. This must match the RSK node you're connecting to. `33` is regtest.                                                                                                                  |
+| *$RSK_NODE_URL*                           | URL of the RSK node to connect to (`http://URL:PORT`).  If you're running a local node, this will typically be `http://localhost:4444/`.                                                                                             |
+| *environment-type*                        | You will need this set to `development` in order to use custom blockchain and contract addresses.                                                                                                                                    |
+| *$TOKENNETWORK_REGISTRY_CONTRACT_ADDRESS* | Address for the token registry contract deployed (view contracts table).                                                                                                                                                             |
+| *$SECRET_REGISTRY_CONTRACT_ADDRESS*       | Address for the secret registry contract deployed (view contracts table).                                                                                                                                                            |
+| *$ENDPOINT_REGISTRY_CONTRACT_ADDRESS*     | Address for the endpoint registry contract deployed (view contracts table).                                                                                                                                                          |
+| *no-sync-check*                           | This will allow you to bypass checking that the node is synchronized against etherscan.                                                                                                                                              |
+| *$YOUR_RNS_DOMAIN*                        | You can supply the RNS address associated with your RSK node address, e.g. `--rnsdomain=lumino.rsk.co`                                                                                                                               |
+| *$TRANSPORT_MODE*                         | Transport mode for Lumino. Supported values are `rif-comms` and `matrix`. Example of use: `--transport=matrix`.  Defaults to `rif-comms`.                                                                                            |
+|                                         | The communication endpoint for the RIF Comms node used for transport purposes.  Note that the `transport` flag must be set to `rif-comms` (explicitly or by default) for this parameter to be used.  Defaults to `"localhost:5013"`. |
 
     More configuration options can be found by browsing the code.
 
 4.  After you run Lumino you will be presented with the following message:
     
-    ~~~
+    ```
     Welcome to RIF Lumino Payments Protocol, Version 0.1
     ---------------------------------------------------------------------------------------------------------------
     | This is an Alpha version of experimental open source software released under the MIT license. By using the  |
@@ -281,7 +240,7 @@ Please follow the instructions in the [RIF Communications installation page](htt
     | operators.                                                                                                  |
     ---------------------------------------------------------------------------------------------------------------
     Have you read and understood and do you accept the RIF Lumino Disclosure Agreement and Privacy Warning? [y/N]:
-    ~~~
+    ```
 
 5. After you've accepted, you will be asked to select the account you want to use. Select the account and enter your passphrase to continue.
 

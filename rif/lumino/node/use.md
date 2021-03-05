@@ -6,7 +6,7 @@ description: "How to build and run a Lumino node. How to use its user interface 
 
 **Build your Lumino Node**
 
-In order to [get your own RIF Lumino node up and running](./install), refer to the corresponding documentation.
+In order to [get your own RIF Lumino node up and running](/rif/lumino/node/install), refer to the corresponding documentation.
 
 **Access the UI**
 
