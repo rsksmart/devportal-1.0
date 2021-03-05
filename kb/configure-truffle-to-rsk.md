@@ -9,7 +9,6 @@ layout: 'rsk'
 
 Understanding Truffle's default configuration values (based on Ethereum), in particular surrounding polling intervals; and using 2 relatively new config options allows one to configure Truffle to better connect to an RSK node.
 
-
 ## Public Nodes
 
 When connecting to **public nodes**, it is crucial to understand that you are interacting with the nodes indirectly. Each RPC request goes through a series of hops through other infrastructure, such as, authentication gateways, load balancers, rate limiters, et cetera. Each of these other layers contains its own logic that may be more restrictive than the node itself.
@@ -20,14 +19,14 @@ When connecting to **public nodes**, it is crucial to understand that you are in
 
 Truffle's default configuration is optimised for the Ethereum network. However, some of these values are incompatible with the RSK network, and needs to be overridden accordingly. Remember, that while RSK is compatible with Ethereum both at the RPC level and at the VM level; its internal implementation can be quite different.
 
-The main difference lies in the relationship between `block interval` and `polling interval`.
+The main difference lies in the relationship between block interval and polling interval.
 
 The **block interval** is the duration of time between a block being added to the blockchain and the next one being added. Note that all transactions must be in a block in order to be added to the blockchain (AKA "has been mined").
 
 - RSK's block interval is currently approximately 30 seconds, whereas
 - Ethereum's block interval is currently approximately 15 seconds.
 
-Client applications, such as decentralised applications, or in this case Truffle (a developer tool), needs to periodically check if blocks, and therefore transactions, that have been submitted have since been added to the blockchain. The polling interval is the duration of time between one of such check and the next.
+Client applications, such as decentralised applications, or in this case Truffle (a developer tool), need to periodically check if blocks, and therefore transactions, that have been submitted have since been added to the blockchain. The polling interval is the duration of time between one such check and the next.
 
 It thus makes sense to optimise the efficiency of the client application by configuring a polling interval that is commensurate with the anticipated block interval. Drawing upon the concept of [critical frequency](https://en.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem#Critical_frequency) (in Nyquist–Shannon sampling theorem), it makes sense to pick a 15 second polling interval when anticipating a 30 second block interval from RSK. Manual testing appears to indicate that this works well.
 
@@ -40,8 +39,8 @@ Note that Truffle's implementation has 2 separate polling intervals:
 
 These configuration options were originally not implemented, and were set to hard coded defaults. These were added specifically to be able to support networks with a different block interval! See:
 
-- [DApps Dev Club's tweet about adding `provider.pollingInterval`](https://twitter.com/DAppsDev/status/1324929409158012929)
-- [DApps Dev Club's tweet about adding `deploymentPollingInterval`](https://twitter.com/DAppsDev/status/1328695467081756673)
+- [Adding `provider.pollingInterval`](https://twitter.com/DAppsDev/status/1324929409158012929 "DApps Dev Club's tweet about adding provider.pollingInterval")
+- [Adding `deploymentPollingInterval`](https://twitter.com/DAppsDev/status/1328695467081756673 "DApps Dev Club's tweet about adding deploymentPollingInterval")
 
 ## Configuring Truffle
 
@@ -83,9 +82,11 @@ testnet: {
 truffle migrate --network testnet
 ```
 
-**NOTE:** You may have noticed that the config contains derivationPath: `m/44'/37310'/0'/0/`. This is indeed the appropriate [derivation path for RSK Testnet](https://developers.rsk.co/rsk/architecture/account-based/#derivation-path-info). However, if you are using this to develop a DApp, and using Metamask with the same mnemonic seed phrase, Metamask does not derive the same set of addresses. This is because the derivation path is hardcoded to use Ethereum's default value, and does not yet allow customisation. If this is the case, the workaround is to use Ethereum's derivation path in Truffle instead, and thus this part of the config should change to derivationPath: `m/44'/60'/0'/0/`.
+**NOTE:** You may have noticed that the config contains a `derivationPath` value of `m/44'/37310'/0'/0/`. This is indeed the appropriate
+[derivation path for RSK Testnet](/rsk/architecture/account-based/#derivation-path-info).
+However, if you are using this to develop a DApp, and using Metamask with the same mnemonic seed phrase, Metamask does not derive the same set of addresses. This is because the derivation path is hardcoded to use Ethereum's default value, and does not yet allow customisation.
+If this is the case, the workaround is to use Ethereum's derivation path in Truffle instead, and thus this part of the config should change to `m/44'/60'/0'/0/`.
 
----
-**Credits:**
+----
 
 Originally written and published by [DApps Dev Club](https://dappsdev.org/blog/2021-02-24-how-to-configure-truffle-to-connect-to-rsk/)
