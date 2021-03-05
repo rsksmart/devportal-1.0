@@ -16,13 +16,13 @@ description: "RIF Marketplace User Guide"
 
 ### Buy a domain
 
-To buy a domain in the RIF Marketplace, a single transaction is involved. Let's start:
+To buy a domain in the RIF Marketplace, a single transaction is involved. Let's start!
 
  1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
- 2- On the **Name Services** section you will find a **Search and Filter** panel on the left, which allows you to look for a specific domain based on name and/or price. On the right side you will see the list of **available** domains to buy, including details such as *Domain Name, Owner, Renewal Date, and Price*.
+ 2- On the **Name Services** section, you will find a **Search and Filter** panel on the left, which allows you to look for a specific domain based on name and/or price. On the right side, you will see the list of **available** domains to buy, including details such as *Domain Name, Owner, Renewal Date, and Price*.
 
 ![UserGuide - Marketplace Domains](/rif/marketplace/guide/images/userguide-marketplace-domains.png)
 
@@ -34,7 +34,7 @@ To buy a domain in the RIF Marketplace, a single transaction is involved. Let's 
 
 ![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-confirm-transaction.png)
 
- 5- Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain was successfully purchased.
+ 5- Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain has been successfully purchased.
 
 ![UserGuide - Domains Bought Confirmations Wait](/rif/marketplace/guide/images/userguide-domains-bought-confirmations-wait.png)
 
@@ -44,7 +44,7 @@ Now you can click on **Buy Another Domain** to get back to the main Domain listi
 
 ### Sell a domain
 
-To sell a domain, two transactions are involved. Let's start:
+To sell a domain, two transactions are involved. Let's start!
 
 1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
@@ -72,11 +72,11 @@ Click on "**View Domain Listings"** to see the domain you have just listed, now 
 
 ### Cancel a domain
 
-If you want to remove a domain which is listed for Sale, you can do that with two transactions. Let's start:
+If you want to remove a domain which is listed for Sale, you can do that with two transactions. Let's start!
 
 1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Name Services** to get to the RNS Domains Marketplace.
 
-2- Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own which are **available for sale**. On the left you will see three options, select **Your Offers**
+2- Click on the **SELL** tab right above the filter panel on the left. This will redirect you to the list of domains you own which are **available for sale**. On the left, there are three options, select **Your Offers**
 
 ![UserGuide - Marketplace Listed Domains](/rif/marketplace/guide/images/userguide-marketplace-listed-domains.png)
 
@@ -104,7 +104,7 @@ To offer decentralized storage in the RIF Marketplace, you need to follow these 
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
-2- On the **Storage Services** section, click on the **SELL** tab on the top section to submit your storage offer. Here you will access the form to submit your Storage offer.
+2- On the **Storage Services** section, click on the **SELL** tab on the top section to submit your storage offer. Here, you will access the form to submit your Storage offer.
 
 ![UserGuide - Marketplace Storage Sell](/rif/marketplace/guide/images/userguide-marketplace-storage-sell.png)
 
@@ -138,7 +138,7 @@ To rent decentralized storage in the RIF Marketplace, follow these steps:
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
-2- On the **Storage Services** section you will find a **Search and Filter** panel on the left, which allows you to look for a specific storage provider based on name, size, and/or price. On the right side you will see the list of **available** providers to rent storage including details such as *Provider, Storage system, available size, Billing Periods, and Price per GB per month*.
+2- On the **Storage Services** section, you will find a **Search and Filter** panel on the left, which allows you to look for a specific storage provider based on name, size, and/or price. On the right side, you will see the list of **available** providers to rent storage including details such as *Provider, Storage system, available size, Billing Periods, and Price per GB per month*.
 
 ![UserGuide - Marketplace Storage Buy](/rif/marketplace/guide/images/userguide-marketplace-storage-buy.png)
 
@@ -164,13 +164,13 @@ Once the IPFS hash to pin is completed (either through *Upload* or *Pin by hash*
 
 ### Renew Storage
 
-You can renew an existing Storage agreementt following these steps:
+You can renew an existing Storage agreement by following these steps:
 
 1- Go to the [RIF Marketplace](https://marketplace.rifos.org). Click on **Storage Services** to get to the Storage Marketplace.
 
 ![UserGuide - Marketplace Landing](/rif/marketplace/guide/images/userguide-marketplace-landing.png)
 
-2- On the **Storage Services** section, click on the **MY PURCHASES** tab to see a list of your existing agreements. Find the one you wan to renew and click on **RENEW**.
+2- On the **Storage Services** section, click on the **MY PURCHASES** tab to see a list of your existing agreements. Find the one you want to renew and click on **RENEW**.
 
 ![UserGuide - Marketplace Renew](/rif/marketplace/guide/images/userguide-marketplace-storage-renew.png)
 
