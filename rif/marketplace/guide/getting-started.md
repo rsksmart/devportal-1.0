@@ -34,7 +34,7 @@ To buy a domain in the RIF Marketplace, a single transaction is involved. Let's 
 
 ![UserGuide - Confirm Transaction](/rif/marketplace/guide/images/userguide-confirm-transaction.png)
 
- 5- Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain is successfully purchased.
+ 5- Wait until the required amount of confirmations are received. A **confirmation** message will be displayed once the domain has been successfully purchased.
 
 ![UserGuide - Domains Bought Confirmations Wait](/rif/marketplace/guide/images/userguide-domains-bought-confirmations-wait.png)
 
