@@ -75,6 +75,29 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/configure-truffle-to-rsk/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/ConfigureTruffleRSK/rsk-truffle-polling-interval.png" alt="configuretrufflersk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/configure-truffle-to-rsk/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Configure Truffle to RSK</p>
+                        <p class="card-desc">using the new provider.pollingInterval and deploymentPollingInterval options in truffle-config.js</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/configure-truffle-to-rsk/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
 
