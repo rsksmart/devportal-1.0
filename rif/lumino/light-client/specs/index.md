@@ -9,26 +9,26 @@ In its initial implementation, RIF Lumino users had to run a full node in order 
 
 Users and developers can now make payments from wallets and dapps, without the need to run a full node.
 
-To achieve that, a Light Client is needed. A RIF Lumino Light Client is a piece of software able to:
+To achieve that, a Light Client is needed. A RIF Lumino Light Client is a piece of software which is able to:
 
 - Support the full API of the RIF Lumino full node, that means being able to interact with the RIF Lumino network like if it were a full node.
 - Run on the client side environment, i.e: browser, mobile/desktop apps, etc.
 
-We identified two possible ways that a Light Client could be implemented:
+We identified two possible ways in which a Light Client could be implemented:
 
-1. Create different SDKs that are able to run into a client environment (ie: node.js SDK, Android SDK, iOS SDK). These SDKs implement the full RIF Lumino protocol, which means:
+1. Create different SDKs that can be run in a client environment (ie: node.js SDK, Android SDK, iOS SDK). These SDKs implement the full RIF Lumino protocol, which means:
     - Interact with Lumino smart contracts
-    - Implement the Lumino protocol specification. Basically, porting the code of the full node to each client SDK..
+    - Implement the Lumino protocol specification. Basically, porting the code of the full node to each client SDK.
 
     *Advantages*:
 
     - There is no need for another node to connect to the network
-    - You don't need to trust into another node to make off-chain payments
+    - You don't need to trust another node in order to make off-chain payments
 
     *Disadvantages*:
 
-    - The Light Client will be "light" only because it will be able to run into a browser or mobile app, but the full protocol and state machine of a full node must be implemented.
-    - We need to do that for each environment, we need to rewrite the code for each language or platform.
+    -The Light Client will be "light" only because it will be able to run in a browser or mobile app, but the full protocol and state machine of a full node must be implemented.
+    - We need to do this for every environment; we need to rewrite the code for each language or platform.
 
 2. Creation of RIF Lumino HUB and a Light Client library.
 
@@ -44,8 +44,8 @@ We identified two possible ways that a Light Client could be implemented:
     The Light client will be a library that:
 
     - Provides to the HUB the necessary signed messages (off-chain interactions)
-    - Keep a reduced state machine of his channels and partners in order to validate the messages the node requests to sign.
-    - Select a hub to trust and use
+    - Keeps a reduced state machine of its channels and partners, in order to validate the messages a node requests to be signed.
+    - Can select a hub to trust and use
 
     *Advantages*:
 
@@ -54,7 +54,7 @@ We identified two possible ways that a Light Client could be implemented:
 
     *Disadvantages*:
 
-    - The Light Client library must trust at some point on the HUB node.
+    - The Light Client library must trust the HUB node to some extent.
 
     General Disadvantages for both options:
 
@@ -73,9 +73,9 @@ We decided to follow the second approach.
 
 ## Specifications
 
-As we already mention for this approach we had to work in two different parts:
+As previously mentioned, for this approach we had to work on two different parts of the solution:
 
-- Node: Modify the actual node in order to accept and manage remote connections for Light Clients
+- Node: Modify the actual node in order to accept and manage remote connections for Light Clients.
 - Clients SDK: Implement the SDKs for the languages we want to support on the light client side. At the moment the only supported language is JavaScript (web and React native), but Support for Android and iOS is on the roadmap.
 
 *Requirements*
@@ -217,7 +217,7 @@ The following diagram describes the process that takes place when a light client
 
 **Open Channel**
 
-In order to open a channel the Light Client must call the endpoint `light_channels` using the `PUT` method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keep the light client SDK simpler, we decided to leavethis logic on the node side).
+In order to open a channel the Light Client must call the endpoint `light_channels` using the `PUT` method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keeping the light client SDK as simple as possible, we decided to leave this logic on the node sid
 
 It should send a JSON object in the body with the following structure:
 
@@ -276,8 +276,7 @@ It should send a JSON object in the body with the following structure:
 
 **Deposit**
 
-In order to deposit token on a channel the Light Client must call the endpoint `light_channels` using the PATCH method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keep the light client SDK simpler we decided to leave this logic on the node side).
-
+In order to deposit token on a channel the Light Client must call the endpoint `light_channels` using the `PATCH` method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keeping the light client SDK as simple as possible, we decided to leave this logic on the node side.
 It should send a JSON object in the body with the following structure:
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-deposit.png" alt=""/></div>
@@ -329,14 +328,14 @@ Next you will see the diagram describing the interaction between the Light Clien
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-interaction-2.png" alt=""/></div>
 
-- The flow starts when a Light Client invokes the initPayment endpoint. This indicates to the node a new payment request by the Light Client. This carries a few actions made by the node:
+  - The flow starts when a Light Client invokes the initPayment endpoint. This indicates to the node a new payment request made by the Light Client exists. This sets off a few actions made by the node:
   - It creates a new Payment entity with all the general data related to the payment.
   - It starts the payment flow (see the document describing the exchange of messages between nodes in a payment flow)
-  - This flow generates a few messages to sign by the light client (remember  the node never has access to the light client private keys, so he has to ask the light client to sign the messages he needs to send to the payee)
-- The light client has to make a long polling to the `msg` endpoint using GET method. Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table. This endpoint retrieves all the messages in this table for the light client.
+   - This flow generates a few messages to sign by the light client (remember: the node never has access to the light client private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
+  - The light client has to make a long polling to the `msg` endpoint using `GET` method. Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table. This endpoint retrieves all the messages in this table for the light client.
   - PENDING: we have to remove from the response the messages that were already sent to the light client. We have 2 options here:
     - Delete the record from the table
-    - Make a logic delete and change a flag in the record in order to not return thar record anymore.
+    - Make a logical delete and change a flag in the record in order not to return that record anymore.
   - When the light client receives a new message to process it sends the message to the Light Client Service component. This service must:
     - Check if the message is valid
     - Make validations over that message. The SDK must check if the message to process received by the node has sense based in his internal state.
