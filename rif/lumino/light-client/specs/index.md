@@ -305,7 +305,7 @@ It should send a JSON object in the body with the following structure:
   <tbody>
     <tr>
       <td scope="row">
-      signed\_approval\_tx
+      signed_approval_tx
       </td>
       <td>
       Raw transaction for the token approval tx.
@@ -313,7 +313,7 @@ It should send a JSON object in the body with the following structure:
     </tr>
     <tr>
       <td scope="row">
-      signed\_deposit\_tx
+      signed_deposit_tx
       </td>
       <td>
       Raw transaction for register the deposit in the token network
@@ -321,7 +321,7 @@ It should send a JSON object in the body with the following structure:
     </tr>
     <tr>
       <td scope="row">
-      total\_deposit
+      total_deposit
       </td>
       <td>
       Amount to deposit
