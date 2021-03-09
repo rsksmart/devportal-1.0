@@ -221,7 +221,15 @@ In order to open a channel the Light Client must call the endpoint `light_channe
 
 It should send a JSON object in the body with the following structure:
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-open-channel.png" alt=""/></div>
+```
+{
+  "partner_address": "0x1234...",
+  "creator_address": "0x2345...",
+  "token_address": "0x3456...",
+  "signed_tx": "0x4567...",
+  "settle_timeout": 500
+}
+```
 
 <table class="table">
   <thead>
@@ -279,8 +287,14 @@ It should send a JSON object in the body with the following structure:
 In order to deposit token on a channel the Light Client must call the endpoint `light_channels` using the `PATCH` method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keeping the light client SDK as simple as possible, we decided to leave this logic on the node side.
 It should send a JSON object in the body with the following structure:
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-deposit.png" alt=""/></div>
 
+```
+{
+  "signed_approval_tx": "0x1234...",
+  "signed_deposit_tx": "0x2345...",
+  "total_deposit": 100000000000000000
+}
+```
 <table class="table">
   <thead>
     <tr>
