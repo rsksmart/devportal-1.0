@@ -338,6 +338,6 @@ Next you will see the diagram describing the interaction between the Light Clien
     - Make a logical delete and change a flag in the record in order not to return that record anymore.
   - When the light client receives a new message to process it sends the message to the Light Client Service component. This service must:
     - Check if the message is valid
-    - Make validations over that message. The SDK must check if the message to process received by the node has sense based in his internal state.
-    - If all the validations were fine, the service generate a new message response and send it to the node.
+    - Make validations over that message. The SDK must check if the message to process received by the node makes sense based on its internal state.
+    - If all the validations were fine, the service generate a new message response and sends it to the node.
 - After the Light Client Service process the message and generate the response to the node, it send it to the &quot;msg&quot; endpoint using the PUT method.
