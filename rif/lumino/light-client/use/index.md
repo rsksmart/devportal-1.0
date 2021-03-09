@@ -73,7 +73,7 @@ For more information, please take a look at the Readme indications at [https://g
 
     ```
     const myHandler = { 
-    sign:(tx) => signTransction(tx),
+        sign:(tx) => signTransction(tx),
         offChainSign: (byteMessage) => signByteMessage(byteMessage),
     }
     ```
@@ -121,11 +121,11 @@ For more information, please take a look at the Readme indications at [https://g
      deposit = async () => {
         const theAmount =100000000 //amount in wei
         const paramsDeposit = {
-        “0x123...”, //tokenAddress
-        tokenNetworkAddress: “0x123”, // available in the channel data 
-        amount: theAmount,
-        1, //channel identifier
-        “0x.123...”, // partner address
+            “0x123...”, //tokenAddress
+            tokenNetworkAddress: “0x123”, // available in the channel data 
+            amount: theAmount,
+            1, //channel identifier
+            “0x.123...”, // partner address
         };
         await Lumino.get().actions.createDeposit(paramsDeposit);
     };
@@ -139,9 +139,9 @@ For more information, please take a look at the Readme indications at [https://g
     pay = async () => {
         const amountInWei = “1000000000000”; //amount on wei as a string
         const body = {
-        partner: “0x123….”,
-        token_address: “0x145….”,
-        amount: amountInWei,
+            partner: “0x123….”,
+            token_address: “0x145….”,
+            amount: amountInWei,
         };
         await Lumino.get().actions.createPayment(body);
     };
@@ -171,13 +171,13 @@ For more information, please take a look at the Readme indications at [https://g
 
     We recommend creating a callbacks.js file that encapsulates all the callbacks. For example:
 
-    ```     
+    ```
     // // Set callbacks
     import { Lumino } from "@rsksmart/lumino-light-client-sdk";
 
     const setCallbacks = () => {
     Lumino.callbacks.set.setOnCompletedPaymentCallback((payment) => {
-        console.log(¨payment received¨)   
+        console.log(¨payment completed¨)   
     });
 
     Lumino.callbacks.set.setOnReceivedPaymentCallback(({ payment }) =>
