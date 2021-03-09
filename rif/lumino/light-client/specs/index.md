@@ -139,7 +139,15 @@ In order to open a channel, the Light Client must call the endpoint `light_chann
 
 It should send a JSON object in the body with the following structure:
 
-![Light Client - JSON Body](/assets/img/lumino/lumino-open-channel.png)
+```json
+{
+  "partner_address": "0x1234...",
+  "creator_address": "0x2345...",
+  "token_address": "0x3456...",
+  "signed_tx": "0x4567...",
+  "settle_timeout": 500
+}
+```
 
 | Field | Description |
 | --- | --- |
@@ -155,7 +163,13 @@ In order to deposit token on a channel the Light Client must call the endpoint `
 
 It should send a JSON object in the body with the following structure:
 
-![Light Client - JSON Object](/assets/img/lumino/lumino-deposit.png)
+```
+{
+  "signed_approval_tx": "0x1234...",
+  "signed_deposit_tx": "0x2345...",
+  "total_deposit": 100000000000000000
+}
+```
 
 | Field | Description |
 | --- | --- |
@@ -175,11 +189,11 @@ Next, you will see the diagram describing the interaction between the Light Clie
 
 ![Light Client SDK and Lumino hub interaction](/assets/img/lumino/lumino-interaction-2.png)
 
-- The flow starts when a Light Client invokes the `initPayment` endpoint. This indicates to the node a new payment request by the Light Client. This carries a few actions made by the node:
+- The flow starts when a Light Client invokes the `initPayment` endpoint. This indicates to the node a new payment request by the Light Client exists. This sets off a few actions made by the node:
   - It creates a new Payment entity with all the general data related to the payment.
-  - It starts the payment flow (see the document describing the exchange of messages between nodes in a payment flow)
-  - This flow generates a few messages to sign by the light client (remember  the node never has access to the light client private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
-- The light client has to make a long polling to the `msg` endpoint using GET method. Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table. This endpoint retrieves all the messages in this table for the light client.
+  - It starts the payment flow (#lumino-interaction)
+  - This flow generates a few messages to sign by the light client (remember:  the node never has access to the light client private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
+- The light client has to make a long polling to the `msg` endpoint using `GET` method. Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table. This endpoint retrieves all the messages in this table for the light client.
   - PENDING: we have to remove from the response the messages that were already sent to the light client. We have 2 options here:
     - Delete the record from the table
     - Make a logic delete and change a flag in the record in order to not return that record anymore.
@@ -187,4 +201,4 @@ Next, you will see the diagram describing the interaction between the Light Clie
     - Check if the message is valid
     - Make validations over that message. The SDK must check if the message to process received by the node has sent based on its internal state.
     - If all the validations were fine, the service generates a new message response and send it to the node.
-- After the Light Client Service process the message and generate the response to the node, it sends it to the &quot;msg&quot; endpoint using the PUT method.
+- After the Light Client Service process the message and generate the response to the node, it sends it to the &quot;msg&quot; endpoint using the `PUT` method.
