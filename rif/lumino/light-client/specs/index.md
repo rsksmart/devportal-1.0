@@ -80,7 +80,9 @@ As previously mentioned, for this approach we had to work on two different parts
 
 *Requirements*
 
-1. Two node modes, hub and full. Hub will work as a full node, but users can run the Hub node as a full node only.
+1. The nodes should be able to run under two different execution modes.
+  - Full mode: The node fulfills the whole Lumino protocol, and can operate on its own.
+  - Hub mode: The node is just an intermediate, working on behalf of the Light Clients connected to it..
 2. Light clients must be able to register to the Lumino Hub. This means that they will communicate with the Lumino Hub and start an onboarding process.
 3. HUB must provide a way to accept Light Clients registrations. Light clients must provide at the onboarding:
   1. Address
@@ -334,7 +336,7 @@ It should send a JSON object in the body with the following structure:
 
 The following diagram describe the logical message interactions required between the light client and a Lumino Hub in order to make a payment.
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-interaction.png" alt=""/></div>
+<div align="center"><img id="lumino-interaction" width="100%" src="/assets/img/lumino/lumino-interaction.png" alt=""/></div>
 
 Next you will see the diagram describing the interaction between the Light Client SDK and the Lumino Hub
 
@@ -344,7 +346,7 @@ Next you will see the diagram describing the interaction between the Light Clien
 
   - The flow starts when a Light Client invokes the initPayment endpoint. This indicates to the node a new payment request made by the Light Client exists. This sets off a few actions made by the node:
   - It creates a new Payment entity with all the general data related to the payment.
-  - It starts the payment flow (see the document describing the exchange of messages between nodes in a payment flow)
+  - It starts [the payment flow](#lumino-interaction)
    - This flow generates a few messages to sign by the light client (remember: the node never has access to the light client private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
   - The light client has to make a long polling to the `msg` endpoint using `GET` method. Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table. This endpoint retrieves all the messages in this table for the light client.
   - PENDING: we have to remove from the response the messages that were already sent to the light client. We have 2 options here:
