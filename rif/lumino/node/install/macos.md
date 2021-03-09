@@ -9,7 +9,7 @@ title: Get your own RIF Lumino node up and running on MacOS
   * [Public nodes](/rsk/public-nodes)
   * [Run your own node](/rsk/node/install) on Testnet or Mainnet
   * [Compile and run a RSK node locally](/rsk/node/contribute)
-1. An RSK account with an RBTC balance NOT lower than 0.001 RBTC
+1. An RSK account with an R-BTC balance NOT lower than 0.001 R-BTC
 1. XCode
 
 ## Install required libraries/software
@@ -157,7 +157,7 @@ The following list describes each field:
     </tr>
     <tr>
       <td scope="row">
-        network-id  
+        network-id
       </td>
       <td>
 		The network id (Mainnet is 30)
@@ -168,7 +168,7 @@ The following list describes each field:
 		eth-rpc-endpoint
       </td>
       <td>
-		URL of your RSK node (http://URL:PORT) 
+		URL of your RSK node (http://URL:PORT)
       </td>
     </tr>
     <tr>
@@ -176,7 +176,7 @@ The following list describes each field:
 		tokennetwork-registry-contract-address
       </td>
       <td>
-        Address for the token registry contract deployed (view contracts table for the contract address of testnet and mainnet)      
+        Address for the token registry contract deployed (view contracts table for the contract address of testnet and mainnet)
       </td>
     </tr>
     <tr>
@@ -184,15 +184,15 @@ The following list describes each field:
 		secret-registry-contract-address
       </td>
       <td>
-        Address for the secret registry contract deployed (view contracts table for the contract address of testnet and mainnet)       
+        Address for the secret registry contract deployed (view contracts table for the contract address of testnet and mainnet)
       </td>
     </tr>
     <tr>
       <td scope="row">
-        endpoint-registry-contract-address 
+        endpoint-registry-contract-address
       </td>
       <td>
-        Address for the endpoint registry contract deployed (view contracts table for the contract address of testnet and mainnet)      
+        Address for the endpoint registry contract deployed (view contracts table for the contract address of testnet and mainnet)
       </td>
     </tr>
   </tbody>
@@ -204,32 +204,32 @@ After you run the “lumino” command you will be presented with the following 
 Welcome to RIF Lumino Payments Protocol, Version 0.1
 
 This is an Alpha version of experimental open source software released under the MIT license.
-By using the RIF Lumino Payments Protocol (the “Software”), you acknowledge that this is a 
-test version of the Software and assume the risk that the Software may contain errors and/or 
-bugs. RIF Labs Limited (“RIF Labs”) makes no guarantees or representations whatsoever, 
-including as to the suitability or use of the Software for any purpose or regarding its 
-compliance with any applicable laws or regulations. By using the Software, you acknowledge 
-that you have read this disclosure agreement, understand its contents, and assume all risks 
-related to the use of of the software; further, by answering yes below and accepting the terms 
-of this Agreement, you release and discharge RIF Labs, its officers, employees, or affiliates 
-from, waive any claims you might have against RIF Labs, its officers, employees, or affiliates 
-in connection with, and agree not to sue RIF Labs or any of its officers, employees, or 
-affiliates for any direct or indirect liability arising from the use of this Software. 
+By using the RIF Lumino Payments Protocol (the “Software”), you acknowledge that this is a
+test version of the Software and assume the risk that the Software may contain errors and/or
+bugs. RIF Labs Limited (“RIF Labs”) makes no guarantees or representations whatsoever,
+including as to the suitability or use of the Software for any purpose or regarding its
+compliance with any applicable laws or regulations. By using the Software, you acknowledge
+that you have read this disclosure agreement, understand its contents, and assume all risks
+related to the use of of the software; further, by answering yes below and accepting the terms
+of this Agreement, you release and discharge RIF Labs, its officers, employees, or affiliates
+from, waive any claims you might have against RIF Labs, its officers, employees, or affiliates
+in connection with, and agree not to sue RIF Labs or any of its officers, employees, or
+affiliates for any direct or indirect liability arising from the use of this Software.
 ----------------------------------------------------------------------
 Privacy Warning:
-By using the RIF Lumino Payments Protocol, you acknowledge that your RSK address, channels, 
-channel deposits settlements, and the RSK address of your channel counterparty will be stored 
-on the RSK blockchain—that is, on servers of RSK node operators—and therefore will be publicly 
-available. The parties running nodes on the RIF Lumino network may also download and store 
-this same or related information or data, and information or data stored on Lumino nodes and 
-network channels will be publicly visible, including on a RIF Lumino block explorer. By using 
-the Software and by answering yes below, you acknowledge that information or data stored on 
-the Lumino network is extremely difficult to alter, remove, or delete; you further acknowledge 
-that information or data related to individual tokens transfers will be made available via the 
-Lumino Payments Protocol to the recipient intermediating nodes of a specific transfer as well 
-as to the Lumino server operators. 
+By using the RIF Lumino Payments Protocol, you acknowledge that your RSK address, channels,
+channel deposits settlements, and the RSK address of your channel counterparty will be stored
+on the RSK blockchain—that is, on servers of RSK node operators—and therefore will be publicly
+available. The parties running nodes on the RIF Lumino network may also download and store
+this same or related information or data, and information or data stored on Lumino nodes and
+network channels will be publicly visible, including on a RIF Lumino block explorer. By using
+the Software and by answering yes below, you acknowledge that information or data stored on
+the Lumino network is extremely difficult to alter, remove, or delete; you further acknowledge
+that information or data related to individual tokens transfers will be made available via the
+Lumino Payments Protocol to the recipient intermediating nodes of a specific transfer as well
+as to the Lumino server operators.
 ----------------------------------------------------------------------
-Have you read and understood and do you accept the RIF Lumino Disclosure Agreement and Privacy 
+Have you read and understood and do you accept the RIF Lumino Disclosure Agreement and Privacy
 Warning? [y/N]
 
 press Y followed by Enter.

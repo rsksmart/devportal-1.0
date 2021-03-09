@@ -1,21 +1,16 @@
 ---
 layout: rsk
 title: Quick Start - Step 4
+tags: quick-start, compile, deploy, regtest, truffle
+description: 'quick start - compile smart contracts, deploy smart contracts to regtest'
 collection_order: 40
 ---
 
-<style>
-  img.quick-start-step-4{
-    margin: 0 auto;
-    width: 80%;
-  }
-</style>
-
-## Step 4 : Compile and Deploy Contracts
+# Step 4 : Compile and Deploy Contracts
 
 Truffle provides a CLI (command line interface) which allows us to easily compile and deploy contracts, including a local blockchain like Ganache.
 
-#### View Contracts and Transactions in Ganache
+## View Contracts and Transactions in Ganache
 
 If you link this Truffle project to Ganache, you will be able to see the contract creation transaction, and contract events in the Ganache GUI app. To link this Truffle project, do the following:
 
@@ -24,11 +19,13 @@ If you link this Truffle project to Ganache, you will be able to see the contrac
 1. Pick the `truffle-config.js` file from `<tutorial-root>/truffle/truffle-config.js`
 1. Save and Restart Ganache
 
-<img class="quick-start-step-4" src="/dist/images/add-ganache-1.png" >
-<img class="quick-start-step-4" src="/dist/images/add-ganache-2.png" >
-<img class="quick-start-step-4" src="/dist/images/add-ganache-3.png" >
+![](/dist/images/add-ganache-1.png)
 
-#### Compiling Contracts
+![](/dist/images/add-ganache-2.png)
+
+![](/dist/images/add-ganache-3.png)
+
+## Compiling Contracts
 
 Change to the root of the truffle directory and then type the following command into a terminal
 
@@ -41,8 +38,7 @@ Upon first run, all contracts will be compiled. Upon subsequent runs, Truffle wi
 
 Artifacts of the compilation will be placed in the `truffle/build/contracts` directory.
 
-
-#### Running Migrations
+## Running Migrations
 
 Migrations are JavaScript files that help you deploy contracts to the blockchain network. In this tutorial project, we have already created migration scripts in the migrations folder.
 

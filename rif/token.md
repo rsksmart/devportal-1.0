@@ -1,13 +1,19 @@
 ---
 layout: rsk
 title: RIF Token
+tags: rif, token, erc677
+description: "Information about the RIF token, where to obtain it, how to transfer it, and technical details on its token standard"
 ---
+
+The RIF Token allows any token holder to consume the services that are compatible with the [RIF architecture](/rif/).
+
+## RIF (RIF Token in Mainnet)
 
 <table class="table">
   <tbody>
     <tr>
       <td scope="row">Token Name</td>
-      <td>RIF</td>
+      <td><a href="https://coinmarketcap.com/currencies/rsk-infrastructure-framework/" target="_blank">RIF</a></td>
     </tr>
     <tr>
       <td scope="row">Total Supply</td>
@@ -21,10 +27,25 @@ title: RIF Token
       <td scope="row">Contract Type</td>
       <td>ERC677</td>
     </tr>
+    <tr>
+      <td scope="row">How to get</td>
+      <td>
+        <ul>
+            <li><a href="#exchanges" target="_blank">Exchanges</a></li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">Logo</td>
+      <td>
+        <img src="/assets/img/rif/rif-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
+        <a href="/assets/img/rif/rif-logo.png" target="_blank">rif-logo.png</a>
+      </td>
+    </tr>
   </tbody>
 </table>
 
-## tRIF (RIF Token in testnet)
+## tRIF (RIF Token in Testnet)
 
 <table class="table">
   <tbody>
@@ -38,27 +59,108 @@ title: RIF Token
     </tr>
     <tr>
       <td scope="row">Contract Testnet Address</td>
-      <td><a href="http://explorer.testnet.rsk.co/address/0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE" target="_blank">0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE</a></td>
+      <td><a href="http://explorer.testnet.rsk.co/address/0x19f64674D8a5b4e652319F5e239EFd3bc969a1FE" target="_blank">0x19f64674D8a5b4e652319F5e239EFd3bc969a1FE</a></td>
     </tr>
     <tr>
       <td scope="row">Contract Type</td>
       <td>ERC677</td>
     </tr>
+    <tr>
+      <td scope="row">How to get</td>
+      <td>
+        <ul>
+            <li><a href="https://faucet.rifos.org/" target="_blank">Faucet</a></li>
+        </ul>
+      </td>
+    </tr>
   </tbody>
 </table>
 
-Get tRIF tokens to interact with RNS Testnet variants from the [tRIF faucet](https://faucet.rifos.org).
+## Wallets
 
+See [supported wallets](/wallet/use/).
 
-## ERC677 token standard
+## Exchanges
 
-An ERC20 token transaction between a regular/non-contract address and contract are two different transactions: You should call approve on the token contract and then call transferFrom on the other contract when you want to deposit your tokens into it.
+<div class="owl-carousel owl-theme">
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.bitfinex.com/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/bitfinex-1.png" alt="bitfinex" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+  <div class="item">
+    <a href="https://www.coinbene.com/" rel="nofollow noopener noreferrer" target="_blank">
+      <img src="https://www.rifos.org/assets/img/exchanges/coinbene-blue.png" alt="coinbene" class="img-fluid usecase-logo">
+    </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.cashierest.com/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/cachierest.png" alt="cachierest" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.hotbit.io/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/hotbit.png" alt="Hotbit" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.mxc.com/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/MXC.png" alt="MXC" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.kucoin.com/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/logo_kucoin.png" alt="kucoin" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.coinall.com/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/logo_coinall.png" alt="Coinall" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.bithumb.pro/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/Bithumb-Global-LOGO_black.png" alt="Bithumb-Global" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.liquid.com/buy-bitcoin/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/LiquidLogo.jpg" alt="Liquid" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+</div>
 
-ERC677 simplifies this requirement and allows using the same transfer function. ERC677 tokens can be sent by calling transfer function on the token contract with no difference if the receiver is a contract or a wallet address, since there is a new way to notify the receive contract of the transfer.
+## Technical information
+
+### ERC677 token standard
+
+An [ERC20](https://github.com/ethereum/EIPs/issues/20)
+token transaction between a regular/non-contract address and contract are two different transactions: You should call `approve` on the token contract and then call `transferFrom` on the other contract when you want to deposit your tokens into it.
+
+[ERC677](https://github.com/ethereum/EIPs/issues/677)
+simplifies this requirement and allows using the same transfer function. ERC677 tokens can be sent by calling `transfer` function on the token contract with no difference if the receiver is a contract or a wallet address, since there is a new way to notify the receiving contract of the transfer.
 
 An ERC677 token transfer will be the same as an ERC20 transfer. On the other hand, if the receiver is a contract, then the ERC677 token contract will try to call `tokenFallback` function on receiver contract. If there is no `tokenFallback` function on receiver contract, the transaction will fail.
 
-## RIF transfer methods
+### RIF transfer methods
 
 - Approve and transfer:
     ```js

@@ -22,11 +22,23 @@ RNS is a decentralized service that allows users to have a readable domain or al
 
 Learn more about [RIF Name Service](./rns)
 
-#### RIF Lumino Network 
+#### RIF Lumino Network
 
 RIF Lumino Network is a third-layer solution to the Bitcoin blockchain, that enables state channels for every token built on RSK increasing transaction throughput and reduces costs by orders of magnitude.
 
-Learn more about [RIF Lumino Network](./payments/lumino)
+Learn more about [RIF Lumino Network](./lumino)
+
+### RIF Marketplace
+
+RIF Marketplace provides a one-stop shop for a wide variety of decentralized services, presenting a unified/simplified interface and user experience. 
+
+Learn more about [RIF Marketplace](./marketplace)
+
+### RIF Gateways
+
+RIF Gateways develops tools and technologies to allow decentralized applications to seamlessly connect to the external world. 
+
+Learn more about [RIF Gateways](./gateways)
 
 #### RIF OS White Paper
 
@@ -56,8 +68,8 @@ RSK is the first open-source smart contract platform secured by the Bitcoin Netw
 * Flexibility: Instant payments allow new use cases, such as retail-ready store payments and micro-credits.
 * RIF Labs implemented RIF OS Protocols on top of the solid ground that RSK Smart Contract Network has built.
 
-Q: What’s the difference between RIF token and RBTC?
+Q: What’s the difference between RIF token and R-BTC?
 
 A: RSK Infrastructure Framework Open Standard (RIF OS) is a suite of open and decentralized infrastructure protocols that enable faster, easier and scalable development of decentralized applications (dApps) within a unified environment. RIF OS includes support for decentralized, third-party, off-chain payment networks; a set of APIs for seamless and secure communications between decentralized applications; and easy-to-use interfaces for developers. Access to, and payment for, RIF OS services are based on the RIF Token, which allows developers to access the suite of services built on top of RIF protocols such as Directory, Payments, Data Feeds, Storage and Communications including third party-developed infrastructure services, and any other apps that might be deployed on RIF’s framework that agrees to accept RIF Tokens as a means of accessing / consuming the service or app.
 
-RBTC is the native token of the RSK Live Mainnet and is pegged 1:1 to BTC. It's used as gas to pay for Smart Contract execution in the same way as ETH is used as gas for Ethereum. Technical users can obtain RBTC in a decentralized manner, by converting to and from BTC by using the bridge between the Bitcoin and RSK protocols. Less technical users can obtain RBTC from supporting exchanges like Huobi and Bitfinex, among others. This is necessary in order to use RSK and all of the applications that run on RSK, including RIFOS once it launches.
+R-BTC is the native token of the RSK Live Mainnet and is pegged 1:1 to BTC. It's used as gas to pay for Smart Contract execution in the same way as ETH is used as gas for Ethereum. Technical users can obtain R-BTC in a decentralized manner, by converting to and from BTC by using the bridge between the Bitcoin and RSK protocols. Less technical users can obtain R-BTC from supporting exchanges like Huobi and Bitfinex, among others. This is necessary in order to use RSK and all of the applications that run on RSK, including RIFOS once it launches.

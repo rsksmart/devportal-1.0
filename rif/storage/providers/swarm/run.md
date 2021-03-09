@@ -9,7 +9,7 @@ Verify this with `which swarm`.
 
 If the `swarm` command cannot be found, you can [add the Swarm binary route to your PATH](https://unix.stackexchange.com/questions/26047/how-to-correctly-add-a-path-to-path) for easier access.
 
-Alternatively, you will need to use `$GOPATH/bin/swarm` instead, assuming you are <a href="/rif/storage/providers/swarm/install#2-compile-from-source-code">compiling directly from the source code</a>.
+Alternatively, you will need to use `$GOPATH/bin/swarm` instead, assuming you are <a href="/rif/storage/providers/swarm/install#compile-from-source-code">compiling directly from the source code</a>.
 
 ## 2. Execute the `swarm` command
 
@@ -22,6 +22,7 @@ swarm
 ## 3. Specify a private key
 
 You will need a private key (sometimes referred to as _account_) to use Swarm. This can either:
+
 - be specified by the `bzzaccount` [flag](https://swarm-guide.readthedocs.io/en/latest/node_operator.html#general-configuration-parameters) (if the account already exists)
 - be created through a Swarm prompt (if not specified)
 

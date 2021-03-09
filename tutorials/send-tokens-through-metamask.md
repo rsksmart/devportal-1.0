@@ -12,7 +12,7 @@ title: Send RIF Tokens through Metamask
         * Network: Name RSK Mainnet        
         * New RPC URL https://public-node.rsk.co:443
         * Chain ID 30
-        * Symbol rBTC
+        * Symbol R-BTC
         * Block Explorer URL https://explorer.rsk.co
 
 ![](/assets/img/tutorials/send-tokens-through-metamask/metamask-settings.png)
@@ -34,12 +34,14 @@ Now you’ll be able to:
 If you want to Send tokens, you’ll need to consider certain things:
  * Gas price: should be 0.06 gwei
  * Gas limit:  60000
- 
+ * Transaction fee: RBTC (suggested amount will be displayed)
+
+
 1. Send Token (at RSK Mainnet)
 2. Advanced options
 3. Set Gas Price and Gas Limit as described before (ignore gas price warning)
+4. A small amount of RBTC is needed to cover for transaction fees
 
 ![](/assets/img/tutorials/send-tokens-through-metamask/metamask-send-token.png)
 
 ![](/assets/img/tutorials/send-tokens-through-metamask/metamask-customize-gas.png)
-

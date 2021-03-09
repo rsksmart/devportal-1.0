@@ -12,18 +12,18 @@ In the RNS registry we have launched a resolver capable of resolve addresses fro
 - **Multi-Crypto Resolver Adrress**: [`0x99a12be4C89CbF6CFD11d1F2c029904a7B644368`](http://explorer.rsk.co/address/0x99a12be4C89CbF6CFD11d1F2c029904a7B644368)
 - **ABI**: [MultiCryptoResolverABI.json](/rif/rns/architecture/MultiCryptoResolverABI.json)
 
-See [RNS Testnet section](/RNS-Testnet) for testing environment information.
+See [RNS Testnet section](/rif/rns/testnet) for testing environment information.
 
 ## Index
 
-- [Methods](#Methods)
+- [Methods](#methods)
     - [`content`](#content)
     - [`setContent`](#setcontent)
-    - [`chainAddr`](#chainAddr)
-    - [`setChainAddr`](#setChainAddr)
-    - [`chainMetadata`](#chainMetadata)
-    - [`setChainMetadata`](#setChainMetadata)
-    - [`setChainAddrWithMetadata`](#setChainAddrWithMetadata)
+    - [`chainAddr`](#chainaddr)
+    - [`setChainAddr`](#setchainaddr)
+    - [`chainMetadata`](#chainmetadata)
+    - [`setChainMetadata`](#setchainmetadata)
+    - [`setChainAddrWithMetadata`](#setchainaddrwithmetadata)
 - [Events](#events)
     - [`ChainAddrChanged`](#chainaddrchanged)
 
@@ -212,7 +212,7 @@ function setChainMetadata (bytes32 node, bytes4 chain, bytes32 metadataValue)
 
 #### setChainAddrWithMetadata
 
-Its a call to both methods [`setChainAddr`](#setChainAddr) and [`setChainMetadata`](#setChainMetadata)
+Its a call to both methods [`setChainAddr`](#setchainaddr) and [`setChainMetadata`](#setchainmetadata)
 **Signature**
 
 ```js

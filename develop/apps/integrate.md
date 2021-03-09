@@ -18,18 +18,18 @@ The RSK network is account-based and incorporates an optional blockchain identif
 <a href="/develop/apps/wallets" class="green-button">Create a Wallet</a>
 <br/><br/>
 
-## Step 3: Get RBTC
+## Step 3: Get R-BTC
 
-The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK.
+The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
 
-<a href="https://faucet.testnet.rsk.co" target="_blank" class="green-button">Test RBTC</a>
-<a href="/rsk/rbtc" class="green-button">Buy RBTC</a>
+<a href="https://faucet.testnet.rsk.co" target="_blank" class="green-button">Test R-BTC</a>
+<a href="/rsk/rbtc" class="green-button">Buy R-BTC</a>
 <br/><br/>
 
 ## Step 4: Connect your app
 
 Smart contracts for RSK are written using Solidity and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK Smart without making any changes.
 
-<a href="/tutorials/port-ethereum-dapps" class="green-button">Port Ethereum dApps</a>
+<a href="/tutorials/ethereum-devs/port-ethereum-dapps" class="green-button">Port Ethereum dApps</a>
 <a href="/tutorials" class="green-button">More Tutorials</a>
 <br/><br/>

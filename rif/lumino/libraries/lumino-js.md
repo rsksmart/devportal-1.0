@@ -30,7 +30,7 @@ Node installation will include [NPM](https://www.npmjs.com/), which is responsib
 As said before, this SDK relies heavily on [Promises](https://developers.google.com/web/fundamentals/getting-started/primers/promises), making it easier to handle the asynchronous requests made to the API.
 Besides that, it provides a `Lumino` object containing several methods corresponding to the calls to be performed.
 
-This is a generic example of how to use the SDK, if you need specific details for a specific module, refer to [samples folder](https://github.com/Lumino/lumino-js-sdk/tree/master/samples).
+This is a generic example of how to use the SDK, if you need specific details for a specific module, refer to [samples folder](https://github.com/rsksmart/lumino-sdk/tree/master/samples).
 
 Before executing any request, you need to call the constructor passing your credentials as parameters, making it possible to authorize the calls to the API:
 

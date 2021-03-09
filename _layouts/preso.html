@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-56J7JTD');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Welcome to RSK & RIF Webinars!">
+    <meta name="author" content="RSK">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <title>{{ page.title }} - RSK Developers' Portal</title>
+    <!-- og info -->
+    <meta property="og:title" content="{{ event.title }} - RSK Developers' Portal">
+    <meta property="og:description" content="{{ event.description }} - RSK Developers' Portal">
+    <meta property="og:image" content="https://rsk.co/img/og/rsk.jpg">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ event.title }} - RSK Developers' Portal">
+    <meta name="twitter:description" content="{{ event.description }} - RSK Developers' Portal">
+    <meta name="twitter:image" content="https://rsk.co/img/og/rsk.jpg">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="/assetsimg/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- revealjs -->
+    <link rel="stylesheet" href="/assets/vendor/revealjs-4.0.2/dist/reveal.css">
+    <link rel="stylesheet" href="/assets/vendor/revealjs-4.0.2/dist/theme/white.css" id="theme">
+    <link rel="stylesheet" href="/assets/vendor/revealjs-4.0.2/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-markdown
+          data-separator="^---$"
+          data-separator-vertical="^----$"
+          data-separator-notes="^NOTE:$"
+          data-background-image="{{ page.backgroundImage | default: "/assets/img/preso/preso-rsk-slide-body.png" }}"
+        >
+          <script type="text/template">
+{{ page.content }}
+          </script>
+        </section>
+      </div>
+    </div>
+    <!-- revealjs -->
+    <script src="/assets/vendor/revealjs-4.0.2/dist/reveal.js"></script>
+    <script src="/assets/vendor/revealjs-4.0.2/plugin/markdown/markdown.js"></script>
+    <script src="/assets/vendor/revealjs-4.0.2/plugin/highlight/highlight.js"></script>
+    <script src="/assets/vendor/revealjs-4.0.2/plugin/notes/notes.js"></script>
+    <script>
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        width: 1200,
+        height: 675,
+        margin: 0.08,
+        minScale: 0.5,
+        maxScale: 2.0,
+
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>

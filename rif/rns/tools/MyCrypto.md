@@ -90,14 +90,14 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
 7. Set a resolver for the domain
 
     In Registry contract, select `setResolver` function. Set parameters:
-    - `node`: the name-hash of the domain you want to bid to. You can get that hash using [this tool](name-hash tool).
+    - `node`: the namehash of the domain you want to bid to.
     - `resolverAddress`: the Resolver contract address, used in step 2.
 
     Send transaction and wait until confirmed.
 
 8. In the Resolver contract access `setAddr` function. Set parameters:
 
-    - `node`: step 7. name-hash result.
+    - `node`: step 7. namehash result.
     - `addrValue`: the address that will resolve the domain label.
 
     Send transaction and wait until confirmed.
@@ -106,13 +106,13 @@ When `sha3` is asked for a label, you **should not** evaluate it with .rsk suffi
 **Verification:**
 
 From Resolver contract, access to `addr` function. Set parameters:
-    - `node`: the result of applying `namehash` function (see description [here](/rif/rns/operation/Resolve-a-name/#namehash)).
+    - `node`: the result of applying `namehash` function.
 
 Read the result and check it is equal to the address set in step 9.
 
 ### Alternatives:
 
-Have a look at [RIF Token](/RIF-Token) section
+Have a look at [RIF Token](/rif/token) section
 
 ## Registring a subdomain
 
@@ -121,20 +121,20 @@ A subdomain is conformed by a label preiexed to a full domain, separated by a '.
 To register a subdomain you must do it form the domain's owner account.
 
 1. In Registry contract access to `setSubnodeOwner` function. Set parameters:
-    - `node`: the name-hash of the domain (including .rsk).
+    - `node`: the namehash of the domain (including .rsk).
     - `label`: sha3 of the subdomain label to register.
     - `ownerAddress`: the address that will own this subdomain.
 
     Send transaction and wait until confirmed.
 
 2. Select `setResolver` function. Set parameters:
-    - `node`: the name-hash of the domain.
+    - `node`: the namehash of the domain.
     - `resolverAddress`: the Resolver contract address.
 
     Send transaction and wait until confirmed.
 
 3. Select `setAddr` function. Set parameters:
-    - `node`: the name-hash of the domain.
+    - `node`: the namehash of the domain.
     - `addrValue`: the address that will resolve the subdomain label.
 
     Send transaction and wait until confirmed.
@@ -142,7 +142,7 @@ To register a subdomain you must do it form the domain's owner account.
 **Verification:**
 
 From Resolver contract, access to `addr` function. Set parameters:
-    - `node`: the name-hash of the domain.
+    - `node`: the namehash of the domain.
 
 Check if the result is equal to the address set in step 3.
 

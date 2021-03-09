@@ -40,7 +40,7 @@ The next section is a panel about the last block.
 
 ## Last Block Transactions
 
-The bar chart below shows the frequency and number of transactions. 
+The bar chart below shows the frequency and number of transactions.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer6.png" alt="bar chart of transactions"/></div>
 
@@ -52,7 +52,7 @@ All the items in this list are the basic information of a block.
 
 * Click the link at the bottom to display the full list.
 
-<div align="center"><img width="100%" src="/assets/img/developer/explorer/explore7.png" alt="list of blocks"/></div>
+<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer7.png" alt="list of blocks"/></div>
 
 ## List of Transactions
 

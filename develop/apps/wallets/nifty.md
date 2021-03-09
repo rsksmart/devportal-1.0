@@ -1,4 +1,5 @@
 ---
-layout: rsk
-title: Nifty
+layout: redirect
+permalink: /develop/apps/wallets/nifty/
+redirect: /wallet/use/nifty/
 ---
