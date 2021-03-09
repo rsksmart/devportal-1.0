@@ -342,18 +342,15 @@ Next you will see the diagram describing the interaction between the Light Clien
 
 > Note: The following diagram is a draft version.
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-interaction-2.png" alt=""/></div>
+<div align="center"><img id="lumino-interaction-2" width="100%" src="/assets/img/lumino/lumino-interaction-2.png" alt=""/></div>
 
   - The flow starts when a Light Client invokes the initPayment endpoint. This indicates to the node a new payment request made by the Light Client exists. This sets off a few actions made by the node:
   - It creates a new Payment entity with all the general data related to the payment.
   - It starts [the payment flow](#lumino-interaction)
-   - This flow generates a few messages to sign by the light client (remember: the node never has access to the light client private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
-  - The light client has to make a long polling to the `msg` endpoint using `GET` method. Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table. This endpoint retrieves all the messages in this table for the light client.
-  - PENDING: we have to remove from the response the messages that were already sent to the light client. We have 2 options here:
-    - Delete the record from the table
-    - Make a logical delete and change a flag in the record in order not to return that record anymore.
-  - When the light client receives a new message to process it sends the message to the Light Client Service component. This service must:
-    - Check if the message is valid
-    - Make validations over that message. The SDK must check if the message to process received by the node makes sense based on its internal state.
+   - This flow generates a few messages to sign by the light client (remember: the node never has access to the light client's private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
+  - Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table.
+  - In order to get the messages in that table, the light client needs to long poll the `msg` endpoint using `GET` method.
+  - When the light client retrieves a new message to process, it sends the message to the [Light Client Service component](#lumino-interaction-2). This service:
+    - Checks if the message is valid: it should make sense based on its internal state.
     - If all the validations were fine, the service generate a new message response and sends it to the node.
-- After the Light Client Service process the message and generate the response to the node, it send it to the &quot;msg&quot; endpoint using the PUT method.
+- After the Light Client Service process the message and generate the response to the node, it send it to the `msg` endpoint using the `PUT` method.
