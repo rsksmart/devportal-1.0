@@ -8,14 +8,14 @@ title: Get your own RIF Lumino node up and running on Ubuntu
 
 1. Access to a synced RSK node. You can do this in a variety of ways:
 	1. Run your own node on Testnet or Mainnet, see [Node (RSKj): Install](/rsk/node/install/).
-	2. Compile and run a RSK node locally, see [Node (RSKj): Contribute](/rsk/node/contribute/).
+	2. Compile and run an RSK node locally, see [Node (RSKj): Contribute](/rsk/node/contribute/).
 2. Ubuntu 18.04+.
 
 ## Recommended
 
 1. An RSK account with an RBTC balance of **at least** 0.001 RBTC, in order to be able to use all of the system features.
 
-## Install required libraries/software
+## Installation requirements for libraries/software
 
 ### 1. Install Python 3.7
 
@@ -142,7 +142,7 @@ python -m pip install -U pip
 
 ### 5. Install RIF Lumino requirements in your environment
 
-Inside the virtual environment run the following command (this could take a few minutes):
+Inside the virtual environment, run the following command (this could take a few minutes):
 
 ```
 pip install -r requirements.txt -c constraints.txt -e .
@@ -156,7 +156,7 @@ python setup.py develop
 
 ## Start RIF Communications transport layer
 
-The communication between Lumino nodes can be done both using [RIF Communications](https://www.rifos.org/communications) and [Matrix](https://matrix.org/).
+The communication between Lumino nodes can be done using both [RIF Communications](https://www.rifos.org/communications) and [Matrix](https://matrix.org/).
 
 The default way, and the one encouraged to be used for a more decentralized ecosystem, is RIF Communications. 
 

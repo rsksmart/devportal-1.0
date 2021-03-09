@@ -6,7 +6,7 @@ description: "How to use the RIF Lumino Light Client SDK"
 ---
 
 This document provides a step by step guide to integrate the RIF Lumino light client sdk into a web or mobile dApp. 
-For more information, please take a look at the Readme indications at [https://github.com/rsksmart/lumino-light-client-sdk](https://github.com/rsksmart/lumino-light-client-sdk)
+For more information, please take a look at the README indications at [https://github.com/rsksmart/lumino-light-client-sdk](https://github.com/rsksmart/lumino-light-client-sdk)
 
 
 1. **Include the library into your dApp**
@@ -65,11 +65,11 @@ For more information, please take a look at the Readme indications at [https://g
     await Lumino.init(signingHandler, LocalStorageHandler, configParams);
     ```
 
-    NOTE about the SigningHandler: This method requires the PrivateKey since we instantiate everything with web3 and ethers.js to sign Smart Contract transactions and Off Chain Messages, it is not compulsory to use it.
+    NOTE: About the SigningHandler: This method requires the PrivateKey since we instantiate everything with web3 and ethers.js to sign Smart Contract transactions and Off Chain Messages, it is not compulsory to use it.
 
     We advise only using it when testing in a secure environment, but in any case you may provide your own signing functions instead of using the handler.
 
-    The idea is passing an object with 2 functions instead of the signingHandler to Lumino.init(), these functions receive 1 parameter each
+    The idea is passing an object with 2 functions instead of the signingHandler to Lumino.init(), these functions receive 1 parameter each.
 
     ```
     const myHandler = { 
@@ -155,11 +155,11 @@ For more information, please take a look at the Readme indications at [https://g
     * When the payment is completed: A callback will also be fired
 
 
-    Callbacks are explained on the next section
+    Callbacks are explained in the next section
 
 8. **Configuring callbacks**
 
-    All the operations previously described perform operations on background, but you may want to display success or error messages into your dapp after the operation finalises. For that, there are different callbacks.
+    All the operations previously described perform operations in the background, but you may want to display success or error messages into your dapp after the operation finalises. For that, there are different callbacks.
 
     Callbacks are set on the Lumino instance like this:
 
