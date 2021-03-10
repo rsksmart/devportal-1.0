@@ -1,21 +1,20 @@
 ---
 layout: rsk
-title: RIF Notifier API 
+title: RIF Notifier API
 tags: rif, notifier, api
 ---
 
-You can access the RIF notifier REST api thru the available endpoints. The available endpoints can be accessed thru swagger using the link http://localhost:8080/swagger-ui.html
+You can access the RIF notifier REST api through the available endpoints. The available endpoints can be accessed through swagger using the link http://localhost:8080/swagger-ui.html
 
 Below is a summary of the available endpoints.
 
 Contents
 
-
 1. [Get Subscription Plans](#get-subscription-plans)
 2. [Subscribe to Plan](#subscribe-to-plan)
 3. [Renew Subscription](#renew-subscription)
 4. [Subscription and Renewal Response](#subscription-and-renewal-response)
-5. [Other available endpoints](#other-available-endpoints)   
+5. [Other available endpoints](#other-available-endpoints)
 	1. [Retrieve notifications](#getting-notifications)
 	2. [Unsubscribe from topic](#unsubscribing-from-a-topic)
 	3. [Save notification Preference](#save-notification-preference)
@@ -29,31 +28,32 @@ Contents
 6. [Health Check](#health-check)
 
 ### **Get Subscription Plans**
-The endpoint http://localhost:8080/getSubscriptionPlans can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally ```activePlans=true``` parameter can be sent to retrieve only the active subscription plans.
+
+The endpoint http://localhost:8080/getSubscriptionPlans can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally `activePlans=true` parameter can be sent to retrieve only the active subscription plans.
 
 ### **Subscribe to Plan**
 
 Users can create a subscription to a given plan by providing their user address and plan id along with topic details and the notification preferences.
 
-The endpoint http://localhost:8080/subscribeToPlan can be used to create a new subscription. A sample json that can be sent in the request body is provided under ```src/main/resources/subscription-batch-example.json```. Modify the json to provide your own topics and preferences. More information on how to specify the topic subsection can be found at [topic json](#topic-json)
+The endpoint http://localhost:8080/subscribeToPlan can be used to create a new subscription. A sample json that can be sent in the request body is provided under `src/main/resources/subscription-batch-example.json`. Modify the json to provide your own topics and preferences. More information on how to specify the topic subsection can be found at [topic json](#topic-json)
 
-```currency``` in json should be one of the currencies accepted by the provider, and allowed in the plan.
+`currency` in json should be one of the currencies accepted by the provider, and allowed in the plan.
 
-```price``` should be same price as in subscription plan for the given currency 
+`price` should be same price as in subscription plan for the given currency
 
-One or more ```notificationPreferences``` can be specified 
-```notificationService``` currently supported are ```API, EMAIL and SMS```. For more information on notificationPreferences subsection refer to [notification preference json body](#notification-preference-json-body)
+One or more `notificationPreferences` can be specified
+`notificationService` currently supported are `API, EMAIL and SMS`. For more information on notificationPreferences subsection refer to [notification preference json body](#notification-preference-json-body)
 
 ### **Renew Subscription**
 
-Users can renew a subscription to a given plan by providing their user address and plan id along with topic details and the notification preferences. The renewal json is same as [subscribe to plan](#subscribe-to-plan) json. However, previousSubscriptionHash has to be sent along with the request. The previous subscription cannot be in ```PENDING``` state.
- 
-The endpoint http://localhost:8080/renewSubscription?previousSubscriptionHash can be used to create a new subscription. ```previousSubscriptionHash``` parameter must be sent as a request parameter. 
+Users can renew a subscription to a given plan by providing their user address and plan id along with topic details and the notification preferences. The renewal json is same as [subscribe to plan](#subscribe-to-plan) json. However, previousSubscriptionHash has to be sent along with the request. The previous subscription cannot be in `PENDING` state.
+
+The endpoint http://localhost:8080/renewSubscription?previousSubscriptionHash can be used to create a new subscription. `previousSubscriptionHash` parameter must be sent as a request parameter.
 
 ### **Subscription and Renewal response**
-As part of the subscription and renewal response a ```hash``` of the subscription along with the ```signature``` is returned. The ```hash``` can be used to identify a subscription. 
+As part of the subscription and renewal response a `hash` of the subscription along with the `signature` is returned. The `hash` can be used to identify a subscription.
 
-**Api key**  
+**Api key**
 An api key is also generated as part of the response, which can be used to perform [get subscription info](#get-subscription-info) and [get notifications](#getting-notifications) operations
 
 -------------------
@@ -62,7 +62,7 @@ An api key is also generated as part of the response, which can be used to perfo
 
 ```json
 {
-    "type": "CONTRACT_EVENT", 
+    "type": "CONTRACT_EVENT",
     "topicParams": [{
             "type": "CONTRACT_ADDRESS",
             "value": "0xf4af6e52b1bcbbe31d1332eb32d463fb10bded27"
@@ -118,17 +118,19 @@ As an example for `NEW_BLOCKS` or `NEW_TRANSACTIONS`
 
 ```json
 {
-    "type": "NEW_BLOCK", 
-}
-```
-Or
-```json
-{
-    "type": "NEW_TRANSACTION", 
+    "type": "NEW_BLOCK",
 }
 ```
 
-Return example: 
+Or
+
+```json
+{
+    "type": "NEW_TRANSACTION",
+}
+```
+
+Return example:
 
 ```json
 {
@@ -137,6 +139,7 @@ Return example:
     "status": "OK"
 }
 ```
+
 You can store that topicId for later get the notifications for that particular event
 
 ###### Getting notifications
@@ -145,10 +148,10 @@ When you're subscribed to topics, and a event is triggered the notifier will be 
 
 ```
 GET Request: http://localhost:8080/getNotifications
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
-Query params: 
+	value: API_KEY
+Query params:
 	idTopic [Optional]: The notifications will be filtered with this param, so it brings only the idTopics associated with each, you can send lots of ids, separating each with commas: 12,15,21
 	fromId [Optional]: Each notification has an id, you can make a greater than by providing this param
 	lastRows [Optional]: With this param you can set how many notifications will the notifier return. MAX is setted in applications.properties at 1000, so this number need to less than that
@@ -159,22 +162,25 @@ Query params:
 
 ```
 POST Request: http://localhost:8080/unsubscribeFromTopic?idTopic=ID_TOPIC
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
+	value: API_KEY
 ```
 
 ###### Save Notification Preference
-Notification Preference allows to save a type of notification to send for all blockchain notifications. The different types of notifiction preference available are SMS, EMAIL and API. 
+Notification Preference allows to save a type of notification to send for all blockchain notifications. The different types of notifiction preference available are SMS, EMAIL and API.
 A notification preference is usually associated to a user and topic id. When no topic id is provided a default topic id 0 is used, and set as default notification preference when no
 preference found for given user and topic id.
+
 ```
 POST Request: http://localhost:8080/saveNotificationPreference
 Header param:
     key: apiKey
     value: API_KEY
 ```
+
 ###### **Notification Preference Json Body:**
+
 ```
         {
           "notificationService":"API",
@@ -187,46 +193,58 @@ Header param:
             }
         }
 ```
+
 Email Json Body:
+
 ```
         {
                 "notificationService":"EMAIL",
-                "destination":"123456@abc.com;123@abc.com", /*(multiple email addresses separated by semi-colon)*/ 
+                "destination":"123456@abc.com;123@abc.com", /*(multiple email addresses separated by semi-colon)*/
                 "idTopic":"11",
         }
 ```
+
 Sms Json Body:
+
 ```
         {
                "notificationService":"SMS",
                 "destination":"+191725245555", /* in exact format, +(country code)(phone number)*/
                 "idTopic":"10",
-        }     
+        }
 ```
 
 ###### Remove Notification Preference
+
 Removes a given notification preference
+
 ```
 POST Request: http://localhost:8080/removeNotificationPreference
 Header param:
     key: apiKey
     value: API_KEY
 ```
+
 API Json Body
+
 ```
     {
           "notificationService":"API",
           "idTopic":"10",
     }
 ```
+
 SMS Json Body
+
 ```
     {
           "notificationService":"SMS",
           "idTopic":"10",
     }
 ```
+
 Email Json Body
+
 ```
     {
           "notificationService":"EMAIL",
@@ -237,16 +255,18 @@ Email Json Body
 
 ###### Other available endpoints
 
-----------------
 ###### Get Subscription info
+
 ```
 GET Request: http://localhost:8080/getSubscriptionInfo
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
+	value: API_KEY
 Short description: Brings the data associated with your subscription (Notification_Balance, Topics subscribed with params, etc)
 ```
+
 Return example:
+
 ```json
 {
     "message": "OK",
@@ -254,6 +274,7 @@ Return example:
     "status": "OK"
 }
 ```
+
 ```json
 {
    "id":0,
@@ -272,17 +293,19 @@ Return example:
    "notificationBalance":2147483647
 }
 ```
-----------------
 
-###### Get lumino tokens
+###### Get Lumino tokens
+
 ```
 GET Request: http://localhost:8080/getLuminoTokens
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
+	value: API_KEY
 Short description: Brings an array of Token Network Address for the tokens registered in the blockchain, it can be used in other endpoints to subscribe to OpenChannels for the token or Close Channel events.
 ```
+
 Return example:
+
 ```json
 {
     "message": "OK",
@@ -290,20 +313,23 @@ Return example:
     "status": "OK"
 }
 ```
-----------------
+
 ###### Subscribe to specific open channel
+
 ```
 GET Request: http://localhost:8080/subscribeToOpenChannel
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
-Query params: 
+	value: API_KEY
+Query params:
 	token [Required]: Token network id for the token that you want to listen to open channel events
 	participantone [Optional]: Address participant 1 of the channel
 	participanttwo [Optional]: Address participant 2 of the channel
 Short description: The notifier will listen to the events for the specified token.
 ```
+
 Return example:
+
 ```json
 {
     "message": "OK",
@@ -311,20 +337,23 @@ Return example:
     "status": "OK"
 }
 ```
-----------------
+
 ###### Subscribe to close channel
+
 ```
 GET Request: http://localhost:8080/subscribeToCloseChannel
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
-Query params: 
+	value: API_KEY
+Query params:
 	token [Required]: Token network id for the token that you want to listen to open channel events
 	closingParticipant [Optional]: Address of the participant who closes the channel
 	channelidentifier [Optional]: Id of the channel
 Short description: Similar to subscribeToOpenChannel, but for close channel event.
 ```
+
 Return example:
+
 ```json
 {
     "message": "OK",
@@ -332,19 +361,22 @@ Return example:
     "status": "OK"
 }
 ```
-----------------
-###### Subscribe to all lumino open channels
+
+###### Subscribe to all Lumino open channels
+
 ```
 GET Request: http://localhost:8080/subscribeToLuminoOpenChannels
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
-Query params: 
+	value: API_KEY
+Query params:
 	closingParticipant [Optional]: Address of the participant who closes the channel
 	channelidentifier [Optional]: Id of the channel
 Short description: This endpoint subscribes you to all tokens, and returns an array of topic id, each topic will represent a event for each token. Also this endpoint accepts params for participantone and participanttwo, if sent, will filter all the topics.
 ```
+
 Return example:
+
 ```json
 {
     "message": "OK",
@@ -352,19 +384,22 @@ Return example:
     "status": "OK"
 }
 ```
-----------------
+
 ###### Get RNS events
+
 ```
 GET Request: http://localhost:8080/getRnsEvents
-Header param: 
+Header param:
 	key: apiKey
-	value: API_KEY 
-Query params: 
+	value: API_KEY
+Query params:
 	nodehash [Optional]: Hashed name of the owner of the chain address
 	eventName [Optional]: "ChainAddrChanged" for all types of chain address or "AddrChanged" to RSK Chain addresses events
 Short description: From this endpoint you can bring the events emmited by the chain addresses set.
 ```
+
 Return example:
+
 ```json
 {
     "message": "OK",
@@ -393,17 +428,21 @@ Return example:
 ```
 
 ## Health Check
+
 Health check provides a way to ensure that the rif-notifier service is
 fully functional. The following url is used for health check
-``` 
+
+```
 http://localhost:8080/actuator/health
 ```
-A sample response is given below. status property in json is either UP or DOWN. The response json 
+
+A sample response is given below. status property in json is either UP or DOWN. The response json
 also provides more details on individual services. The status for each individual
-service is UP, DOWN or disabled. When a notification service is not provided by the provider 
-thru ```notifier.services.enabled``` configuration property, the status of the 
+service is UP, DOWN or disabled. When a notification service is not provided by the provider
+through the `notifier.services.enabled` configuration property, the status of the
 service is shown as disabled.
-```
+
+```json
 {
     "status": "UP",
     "details": {
