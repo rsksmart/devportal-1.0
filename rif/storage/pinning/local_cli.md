@@ -12,11 +12,11 @@ This guide is quite advanced and assumes a greater knowledge of how to setup loc
 
 ## Steps
 
- 1. Clone all repos, run `npm install` everywhere.
+ 1. Clone all repos, run `npm install` globally.
  1. Start up Ganache
- 1. In Smart Contracts repo using `truffle deploy` deploy contracts and note the `StorageManager` contract address.
+ 1. In Smart Contracts repo using `truffle deploy` deploy contracts and take note of the `StorageManager` contract address.
  1. Go to Storage Development CLI and create an Offer for the given contract address (use the `npm run bin` script)
- 1. Go to Pinning Service repo and configure to use it the deployed contract. You can use environment variables, `local.json` or CLI parameters for this.
+ 1. Go to Pinning Service repo and configure it to use the deployed contract. You can use environment variables, `local.json` or CLI parameters for this.
  1. Run `npm run init` - this will bootstrap IPFS repos in `.repos` folder and configure the ports settings.
  1. In one tab run `npm run ipfs:consumer daemon`
  1. In another tab run `npm run ipfs:provider daemon`
