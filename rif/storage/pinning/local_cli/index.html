@@ -941,7 +941,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-05 18:12:58 +0000T00:00:00.000Z">2021-03-05</time> | -->
+    <!--time role="presentation" datetime="2021-03-08 14:48:54 +0000T00:00:00.000Z">2021-03-08</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/storage/pinning/local_cli.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1739,11 +1739,11 @@
 <h2 id="steps">Steps</h2>
 
 <ol>
-  <li>Clone all repos, run <code class="highlighter-rouge">npm install</code> everywhere.</li>
+  <li>Clone all repos, run <code class="highlighter-rouge">npm install</code> globally.</li>
   <li>Start up Ganache</li>
-  <li>In Smart Contracts repo using <code class="highlighter-rouge">truffle deploy</code> deploy contracts and note the <code class="highlighter-rouge">StorageManager</code> contract address.</li>
+  <li>In Smart Contracts repo using <code class="highlighter-rouge">truffle deploy</code> deploy contracts and take note of the <code class="highlighter-rouge">StorageManager</code> contract address.</li>
   <li>Go to Storage Development CLI and create an Offer for the given contract address (use the <code class="highlighter-rouge">npm run bin</code> script)</li>
-  <li>Go to Pinning Service repo and configure to use it the deployed contract. You can use environment variables, <code class="highlighter-rouge">local.json</code> or CLI parameters for this.</li>
+  <li>Go to Pinning Service repo and configure it to use the deployed contract. You can use environment variables, <code class="highlighter-rouge">local.json</code> or CLI parameters for this.</li>
   <li>Run <code class="highlighter-rouge">npm run init</code> - this will bootstrap IPFS repos in <code class="highlighter-rouge">.repos</code> folder and configure the ports settings.</li>
   <li>In one tab run <code class="highlighter-rouge">npm run ipfs:consumer daemon</code>
 </li>
