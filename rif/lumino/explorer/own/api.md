@@ -17,16 +17,10 @@ title: Lumino Explorer API
 
 1. Get the code by cloning [the repo](https://github.com/rsksmart/lumino-explorer/)
 2. Go to the path you downloaded or cloned Lumino Explorer's code (let's call this path `$RIF_LUMINO_EXPLORER_PATH` and define `$RIF_LUMINO_EXPLORER_API_PATH=$RIF_LUMINO_EXPLORER_PATH/lumino-explorer-api`)
-3. Go to `$RIF_LUMINO_EXPLORER_API_PATH/src/main/resources` and edit `application.properties`, setting the Token Network Registry address as the `lumino.contract.tokenNetworkRegistry` property. 
-4. Set the `lumino.explorer.api.account.file` property to the JSON file of your RSK account. Example: `lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json`
-
-5. Set the `lumino.explorer.api.account.password` property to the password of your account. Example: `lumino.explorer.api.account.paassword=3XhLXn[(Tub6'~Qe`
-
-6. Install project dependencies running the following command inside the `RIF_LUMINO_EXPLORER_API_PATH` directory:
-
-```bash
-mvn install
-```
+3. Go to the `$RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/application.properties` file and set the `spring.profiles.active` property to the profile of your preference (`prod` or `dev`). Let's call it `$PROFILE`.
+4. Go to `$RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/application-$PROFILE.properties` file, and set the `lumino.contract.tokenNetworkRegistry` property to the TokenNetworkRegistry address. 
+5. Set the `lumino.explorer.api.account.file` property to the JSON file of your RSK account. Example: `lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json`
+6. Set the `lumino.explorer.api.account.password` property to the password of your account. Example: `lumino.explorer.api.account.paassword=3XhLXn[(Tub6'~Qe`
 
 ## Set Up Mongo Database
 
