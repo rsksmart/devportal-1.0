@@ -2,6 +2,19 @@ var indexJson = '/search/index.json';
 var filesJson = '/search/files.json';
 var inputTriggerKeys = [13, 16, 20, 37, 38, 39, 40, 91];
 var debounceMs = 300;
+const maxResultCount = 10;
+const searchExtraLetters = 'áéíóúäëïöüàèìòùñ';
+const searchExtraLettersConverted = 'aeiouaeiouaeioun';
+const searchExcludedWordsList = [
+  'the', 'with', 'can', 'all', 'you', 'and', 'here', 'com', 'org',
+  'for', 'will', 'not', 'from', 'which', 'should', 'need', 'but',
+  'nbsp', 'your', 'png', 'when', 'does', 'doesn', 'this', 'its', 'must',
+  'none', 'they', 'that', 'out', 'look', 'get', 'www',
+];
+const searchExcludedWords = new Map();
+searchExcludedWordsList.forEach((excludedWord) => {
+    searchExcludedWords.set(excludedWord, true);
+});
 
 var index;
 var files;
@@ -31,12 +44,52 @@ function clearResultsUi() {
   resultsContainer.innerHTML = '';
 }
 
+function renderResultsUi(results) {
+  resultsContainer.innerHTML = results
+    .map(renderHtmlResult)
+    .join('');
+}
+
+function renderHtmlResult(result) {
+  const tags = renderHtmlResultTags(result.tags);
+  const { url, title, desc } = result;
+  const out = `
+<div class="container">
+  <br/>
+  <div class="row">
+    <a href="${url}"><h1>${title}</h1></a>
+    </div>${desc}<br/>
+${tags}
+</div>
+  `;
+  return out;
+}
+
+function renderHtmlResultTags(tags) {
+  const out = tags
+    .map(
+      (tag) => (`
+      <a href="${`?q=${tag}&from=%2Fsearch%2F`}">
+          <span class="badge badge-secondary p-1">
+            ${tag}
+          </span>
+      <a/>
+      `),
+    )
+    .join('');
+  return `    <div class="row">${out}    <div>`;
+}
+
 function isInputTriggerKey(keyCode) {
   return (inputTriggerKeys.indexOf(keyCode) === -1);
 }
 
 function showSearchInput(visible) {
   searchInput.classList.toggle('hide-element', visible);
+}
+
+function updateValueSearchInput(q) {
+  searchInput.value = q;
 }
 
 var debounceTimeout;
@@ -50,7 +103,7 @@ function debounce (ms, func) {
 }
 
 function preLoadData() {
-  let errs = [];
+  const errs = [];
   let okCount = 0;
   getJson(indexJson, (err, data) => {
     if (err) {
@@ -96,7 +149,7 @@ function queryParamsSearch() {
     const q = queryParams.get('q');
     if (isValidSearchQuery(q)) {
       // use query parameters to perform search automatically
-      searchInput.value = q;
+      updateValueSearchInput(q);
       setTimeout(function () {
         doSearch(q);
       }, 0);
