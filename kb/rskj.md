@@ -18,9 +18,9 @@ RSKj can also run in a “localhost”-only environment, without connecting to a
 
 If you do one of the following activities, you are likely to need to run RSKj on your computer.
 
-- Developers <!-- → /kb/rskj-for-developers TODO add link -->
-- Node runners <!-- → /kb/rskj-for-node-runners  TODO add link -->
-- Miners <!-- → /kb/rskj-for-miners TODO add link -->
+- Development <!-- → /kb/rskj-for-developers TODO add link -->
+- Running nodes <!-- → /kb/rskj-for-node-runners  TODO add link -->
+- Mining <!-- → /kb/rskj-for-miners TODO add link -->
 
 If none of the above applies to you, it is quite likely that you do not need to run RSKj software on your computer.
 
