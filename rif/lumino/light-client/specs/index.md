@@ -14,55 +14,54 @@ To achieve that, a Light Client is needed. A RIF Lumino Light Client is a piece 
 - Support the full API of the RIF Lumino full node, that means being able to interact with the RIF Lumino network like if it were a full node.
 - Run on the client side environment, i.e: browser, mobile/desktop apps, etc.
 
-We identified two possible ways in which a Light Client could be implemented:
+We identified two possible ways in which a Light Client could be implemented, detailed as follows.
 
-1. Create different SDKs that can be run in a client environment (ie: node.js SDK, Android SDK, iOS SDK). These SDKs implement the full RIF Lumino protocol, which means:
-    - Interact with Lumino smart contracts
-    - Implement the Lumino protocol specification. Basically, porting the code of the full node to each client SDK.
+### Option 1
+Create different SDKs that can be run in client environments (ie: node.js SDK, Android SDK, iOS SDK). These SDKs implement the full RIF Lumino protocol, which means:
+- They can interact with Lumino smart contracts.
+- They implement the Lumino protocol specification. This basically means that they port the code of the full node to each client SDK.
 
-    *Advantages*:
+*Advantages*
 
-    - There is no need for another node to connect to the network
-    - You don't need to trust another node in order to make off-chain payments
+- There is no need for another node to connect to the network.
+- You don't need to trust another node in order to make off-chain payments.
 
-    *Disadvantages*:
+*Disadvantages*
 
-    -The Light Client will be "light" only because it will be able to run in a browser or mobile app, but the full protocol and state machine of a full node must be implemented.
-    - We need to do this for every environment; we need to rewrite the code for each language or platform.
+- The Light Client will be "light" only because it will be able to run in a browser or mobile app, but the entire protocol and state machine of a full node must be implemented.
+- We need to do this for every environment; we need to rewrite the code for each language or platform.
 
-2. Creation of RIF Lumino HUB and a Light Client library.
+### Option 2
+Create a RIF Lumino HUB and a Light Client library.
 
-    A hub will be a Full Node with extended capabilities:
-    1. Can work as a full node only if the user specifies it
-    2. Allow Light Clients to connect to it
-    3. Implement the Lumino protocol and being in charge of sending and receiving messages from/to light clients.
-    4. Interact with the Light Client library to request the signing of the messages involved in the protocol
-    5. Enforce secure communications between the Light Client and a the HUB
-    6. Maintain connections at the transport layer for each Light Client registered
-    7. Interact with the Lumino smart contracts to create/close channels (on-chain interactions)
+A *hub* will be a Full Node with extended capabilities:
+1. Can work as a full node only if the user specifies it.
+2. Allows Light Clients to connect to it.
+3. Implements the Lumino protocol and is in charge of sending and receiving messages from/to light clients.
+4. Interacts with the Light Client library to request the signing of the messages involved in the protocol.
+5. Enforces secure communications between the Light Client and a the HUB.
+6. Maintains connections at the transport layer for each Light Client registered.
+7. Interacts with the Lumino smart contracts to open/close channels (on-chain interactions).
 
-    The Light client will be a library that:
+The *light client* will be a library that:
+1. Provides the hub with the necessary signed messages (off-chain interactions).
+2. Keeps a reduced state machine of its channels and partners, in order to validate the messages a node requests to be signed.
+3. Can select a hub to trust and use.
 
-    - Provides to the HUB the necessary signed messages (off-chain interactions)
-    - Keeps a reduced state machine of its channels and partners, in order to validate the messages a node requests to be signed.
-    - Can select a hub to trust and use
+*Advantages*
 
-    *Advantages*:
+- We can reuse the already implemented protocol of the full node, making some adaptations and code restructuring.
+- The Light Client library will be simpler, so its implementation in different languages will be easier and faster.
 
-    - We can reuse the already implemented protocol of the full node, making some adaptations and code restructuring
-    - The Light Client library will be simpler, so the implementation of it into different languages will be easier and faster.
+*Disadvantages*
 
-    *Disadvantages*:
+- The Light Client library must trust the hub node to some extent.
 
-    - The Light Client library must trust the HUB node to some extent.
-
-    General Disadvantages for both options:
-
-    - The clients must be online to receive and send payments.
+### General Disadvantages for both options
+- The clients must be online to receive and send payments.
 
 ## Selected alternative
-
-After a deep analysis where we take into consideration the following aspects:
+After deep analysis, in which we take into consideration the following aspects:
 
 - Faster adoption
 - Security
@@ -72,40 +71,34 @@ After a deep analysis where we take into consideration the following aspects:
 We decided to follow the second approach.
 
 ## Specifications
-
 As previously mentioned, for this approach we had to work on two different parts of the solution:
 
-- Node: Modify the actual node in order to accept and manage remote connections for Light Clients.
-- Clients SDK: Implement the SDKs for the languages we want to support on the light client side. At the moment the only supported language is JavaScript (web and React native), but Support for Android and iOS is on the roadmap.
+- **Node**: Modify the current node in order to accept and manage remote connections for Light Clients.
+- **Clients SDK**: Implement the SDKs for the languages we want to support on the light client side. At the moment the only supported language is JavaScript (web and React native) but Support for Android and iOS is on the roadmap.
 
-*Requirements*
-
+### Requirements
 1. The nodes should be able to run under two different execution modes.
-  - Full mode: The node fulfills the whole Lumino protocol, and can operate on its own.
-  - Hub mode: The node is just an intermediate, working on behalf of the Light Clients connected to it..
+  - *Full mode*: the node fulfills the whole Lumino protocol, and can operate on its own.
+  - *Hub mode*: the node is just an intermediary, working on behalf of the Light Clients connected to it.
 2. Light clients must be able to register to the Lumino Hub. This means that they will communicate with the Lumino Hub and start an onboarding process.
-3. HUB must provide a way to accept Light Clients registrations. Light clients must provide at the onboarding:
-  1. Address
-  2. Password (matrix server name signed with the private key)
-4. The HUB must receive the messages that are directed to light clients. This means that all the messages sent by other nodes to the light clients will be handled by the HUB.
-5. When receiving a message, the HUB must have two different workflows
-  1. Standard workflow: the message destinatary is the HUB itself, node must work as usual.
-  2. Light Client workflow: the hub knows the lumino protocol, it must interact with the light client in order to sign the responses he must send to the rest of the network.
-6. The communication between the Light Client and the HUB must be secure.
-7. Each hub maintains connections at the transport layer for each Light Client registered under his node.
-8. The State machine of the hub must be extended to handle state changes of the light clients. So basically the node will have a collection of different state machines and after each message it will have to select which state machine should be affected.
-9. The database of the hub must store the information of channels and messages both for itself and the light clients registered.
-10. All the operations must support RNS domain names
-11. The hub will expose a REST API to the light client
-12. After the onboarding process the light client will receive an API-KEY that will have to send in each node interaction.
-
-
+3. A Hub must provide a way to accept Light Clients registrations. Light clients must provide at the onboarding:
+    1. Address
+    2. Password (matrix server name signed with the private key)
+4. The Hub must receive the messages that are directed to light clients. This means that all the messages sent by other nodes to the light clients will be handled by the Hub.
+5. When receiving a message, the Hub must have two different workflows:
+    1. *Standard workflow*: the message destinatary is the Hub itself, so the node must work as usual.
+    2. *Light Client workflow*: the Hub knows the lumino protocol, and will have to interact with the Light Client in order to sign the responses it must send to the rest of the network.
+6. The communication between the Light Client and the Hub must be secure.
+7. Each Hub maintains connections at the transport layer for each Light Client registered under its node.
+8. The state machine of the Hub must be extended to handle state changes of the light clients. To put it simply: the node will have a collection of different state machines and after each message it will have to select which state machine should be affected.
+9. The database of the Hub must store the information of channels and messages both for itself and the light clients registered to it.
+10. All the operations must support RNS domain names.
+11. The Hub will expose a REST API to the Light Client.
+12. After the onboarding process the Light Client will receive an API-KEY that will have to be sent on each node interaction.
 
 ## Design specification for the Light Clients SDKs
 
-<br/>
-
-**Component diagram**
+### Component diagram
 
 <div align="center"><img width="100%" src="/assets/img/lumino/component-diagram.png" alt=""/></div>
 
