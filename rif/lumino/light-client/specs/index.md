@@ -104,119 +104,42 @@ As previously mentioned, for this approach we had to work on two different parts
 
 Our SDKs will interact with different components:
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Component</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row">
-        Storage
-      </td>
-      <td>
-        The SDK will need to store data of different kinds in the environment were it will be executed (configuration, state data, etc.). This storage must be provided by the application that is including the light client (for a web app it can be localstorage, for iOS it could be core data, etc.)
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        Web3 provider
-      </td>
-      <td>
-        One of the main reasons to have a light client is to allow the different kind of clients to connect to RIF Lumino Networking without having a full node running but keeping the private keys on the client side (and not in the node). Our SDKs will never have contact with the plain Private Keys, the idea is that apps  using the SDK have to provide a web3 provider that will be used to sign the different transactions needed by the light client.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        RIF Notifier
-      </td>
-      <td>
-        A connection with a notifier is required in order to increase the security on the light client side. As an example, if a light client ask to a hub to open a channel. He has to validate that the node is behaving correctly and it really opened the channel, the only way to do this is &quot;listen&quot; on chain for particular events or transactions. To do this the light clients will be able to subscribe to notifiers that will inform him about the events on the blockchain.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        RIF Lumino Node
-      </td>
-      <td>
-       This is the most obvious connection, our light client will have to maintain a connection with a RIF Lumino HUB in order to interact with RIF Lumino Network.
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Component | Description |
+|-----------|-------------|
+| Storage | The SDK will need to store data of different kinds in the environment were it will be executed (configuration, state data, etc.). This storage must be provided by the application that is including the light client (for a web app it can be local storage, for iOS it could be core data, etc.) |
+| Web3 provider | One of the main reasons to have a light client is to allow the different kinds of clients to connect to RIF Lumino Networking without having a full node running, but keeping the private keys on the client side (and not in the node). Our SDKs will never come into contact with unencrypted private Keys, so the idea is that apps using the SDK have to provide a web3 provider that will be used to sign the different transactions needed by the light client. |
+| RIF Notifier | A connection with a notifier is required in order to increase the security on the light client side, e.g. if a light client asks a hub to open a channel. In that case, it will have to validate that the node is behaving correctly and really opened the channel. The only way to do this is to listen on chain for particular events or transactions. To do this the light clients will be able to subscribe to notifiers which will inform them about events on the blockchain. |
+| RIF Lumino Node | This is the most obvious connection, our light client will have to maintain a connection with a RIF Lumino HUB in order to interact with RIF Lumino Network. |  
+
+&nbsp;
 
 We have divided the internal SDK structure in different components.
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Component</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row">
-        Light Client Service
-      </td>
-      <td>
-        This component will implement the actual logic of the light client. It will be the component in charge of calling and orchestrating the interactions with the rest of the components.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        State machine service
-      </td>
-      <td>
-        This component handles the internal state machine of the light client. It will be in charge of:
-          - Initialize a state machine
-          - Based on the messages received perform the necessary state machine transitions
-          - Persist the state machine to the storage
-          - Load the state machine from the storage
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        Signer
-      </td>
-      <td>
-        Component in charge of signing a transaction or a particular data stream. It will interact with the web3 provider.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        Notifier Manager
-      </td>
-      <td>
-        Component in charge of interacting with the RIF Notifier
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        Storage Manager
-      </td>
-      <td>
-        This component will be the owner of the underlying storage, providing read and write access to it
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Component | Description |
+|-----------|-------------|
+| Light Client Service | This component will implement the actual logic of the light client. It will be the component in charge of calling and orchestrating the interactions with the rest of the components. |
+| State machine service | This component handles the internal state machine of the light client. It will be in charge of: **A)** initializing a state machine **B)** performing the necessary state machine transitions based on received messages **C)** persisting the state machine to the storage and **D)** loading the state machine from the storage. |
+| Signer | Component in charge of signing a transaction or a particular data stream. It will interact with the web3 provider. |
+| Notifier Manager | Component in charge of interacting with the RIF Notifier. | 
+| Storage Manager | This component will be the owner of the underlying storage, providing read and write access to it. |  
 
-**Light client onboarding**
+&nbsp;
+
+## Light Client onboarding
 
 The following diagram describes the process that takes place when a light client registers itself to a Lumino hub.
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-client-onboarding.png" alt=""/></div>
 
-**Open Channel**
+### Open Channel
 
-In order to open a channel the Light Client must call the endpoint `light_channels` using the `PUT` method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keeping the light client SDK as simple as possible, we decided to leave this logic on the node sid
+In order to open a channel the Light Client must call the endpoint `light_channels` using the `PUT` method. 
+
+We could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keeping the light client SDK as simple as possible, we decided to leave this logic on the node side.
 
 It should send a JSON object in the body with the following structure:
 
-```
+```json
 {
   "partner_address": "0x1234...",
   "creator_address": "0x2345...",
@@ -226,124 +149,59 @@ It should send a JSON object in the body with the following structure:
 }
 ```
 
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Field</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row">
-        partner_address
-      </td>
-      <td>
-     With who we want to open a channel.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-      creator_address
-      </td>
-      <td>
-      Light client address.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        token_address
-      </td>
-      <td>
-        Token of the channel.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        settle_timeout
-      </td>
-      <td>
-        Amount of blocks to wait between close and settle channel.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        signed_tx
-      </td>
-      <td>
-        Raw transaction to open the channel.
-      </td>
-    </tr>
-  </tbody>
-</table>
+| Field | Description |
+|-------|-------------|
+| `partner_address` | With who we want to open a channel. |
+| `creator_address` | Light client address. |
+| `token_address` | Token of the channel. |
+| `settle_timeout` | Amount of blocks to wait between close and settle channel. |
+| `signed_tx` | Raw transaction to open the channel. |  
 
-**Deposit**
+&nbsp;
 
-In order to deposit token on a channel the Light Client must call the endpoint `light_channels` using the `PATCH` method. We actually could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keeping the light client SDK as simple as possible, we decided to leave this logic on the node side.
+### Deposit
+
+In order to deposit token on a channel the Light Client must call the endpoint `light_channels` using the `PATCH` method. 
+
+We could have made the light client send the open channel transaction directly to RSK without passing through the node, but for the sake of maintaining all the logic on the node and keeping the light client SDK as simple as possible, we decided to leave this logic on the node side.
+
 It should send a JSON object in the body with the following structure:
 
-
-```
+```json
 {
   "signed_approval_tx": "0x1234...",
   "signed_deposit_tx": "0x2345...",
   "total_deposit": 100000000000000000
 }
 ```
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Field</th>
-      <th scope="col">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row">
-      signed_approval_tx
-      </td>
-      <td>
-      Raw transaction for the token approval tx.
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-      signed_deposit_tx
-      </td>
-      <td>
-      Raw transaction for register the deposit in the token network
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-      total_deposit
-      </td>
-      <td>
-      Amount to deposit
-      </td>
-    </tr>
-  </tbody>
-</table>
 
-**Interaction between node and light client during the payment process**
+| Field | Description |
+|-------|-------------|
+| `signed_approval_tx` | Raw transaction for the token approval tx. |
+| `signed_deposit_tx` | Raw transaction for register the deposit in the token network. |
+| `total_deposit` | Amount to deposit. | 
 
-The following diagram describe the logical message interactions required between the light client and a Lumino Hub in order to make a payment.
+&nbsp;
+
+### Interaction between node and light client during the payment process
+
+The following diagram describes the logical message interactions required between the light client and a Lumino hub in order to make a payment.
 
 <div align="center"><img id="lumino-interaction" width="100%" src="/assets/img/lumino/lumino-interaction.png" alt=""/></div>
 
-Next you will see the diagram describing the interaction between the Light Client SDK and the Lumino Hub
+Next you will see the diagram describing the interaction between the Light Client SDK and the Lumino Hub.
 
 > Note: The following diagram is a draft version.
 
 <div align="center"><img id="lumino-interaction-2" width="100%" src="/assets/img/lumino/lumino-interaction-2.png" alt=""/></div>
 
-  - The flow starts when a Light Client invokes the initPayment endpoint. This indicates to the node a new payment request made by the Light Client exists. This sets off a few actions made by the node:
-  - It creates a new Payment entity with all the general data related to the payment.
-  - It starts [the payment flow](#lumino-interaction)
-   - This flow generates a few messages to sign by the light client (remember: the node never has access to the light client's private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
-  - Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table.
-  - In order to get the messages in that table, the light client needs to long poll the `msg` endpoint using `GET` method.
-  - When the light client retrieves a new message to process, it sends the message to the [Light Client Service component](#lumino-interaction-2). This service:
-    - Checks if the message is valid: it should make sense based on its internal state.
-    - If all the validations were fine, the service generate a new message response and sends it to the node.
-- After the Light Client Service process the message and generate the response to the node, it send it to the `msg` endpoint using the `PUT` method.
+- The flow starts when a Light Client invokes the `initPayment` endpoint. This indicates to the node a new payment request made by the Light Client exists. This sets off a few actions made by the node:
+    - It creates a new Payment entity with all the general data related to the payment.
+    - It starts [the payment flow](#lumino-interaction)
+        - This flow generates a few messages to sign by the light client (remember: the node never has access to the light client's private keys, so it has to ask the light client to sign the messages it needs to send to the payee)
+- Every time the node needs some interaction with the light client it creates a new message in the `MessagesPending` table.
+    - In order to get the messages in that table, the light client needs to long poll the `msg` endpoint using `GET` method.
+    - When the light client retrieves a new message to process, it sends the message to the [Light Client Service component](#lumino-interaction-2). This service:
+        - Checks if the message is valid: it should make sense based on its internal state.
+        - If all the validations were fine, the service generates a new message response and sends it to the node.
+        - After the Light Client Service processes the message and generates a  response to the node, it sends it to the `msg` endpoint using the `PUT` method.
