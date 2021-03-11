@@ -166,9 +166,147 @@ function doSearch(q) {
   if (!index || !files) {
     throw new Error('Data not yet loaded');
   }
-  console.log('Searching:', q);
 
-  // TODO impl search
+  const words = q
+    .split(/\s+/)
+    .map(searchTermNormalise)
+    .filter(searchTermFilter);
+
+  let result;
+  words.forEach((word) => {
+    let subResult;
+
+    for (n in index) {
+      if (n.indexOf(word) < 0) {
+        continue;
+      }
+
+      if (subResult) {
+        subResult = searchOr(subResult, index[n]);
+      } else {
+        subResult = index[n];
+      }
+    }
+
+    if (!subResult) {
+      return;
+    }
+
+    if (result) {
+      result = searchAnd(result, subResult);
+    } else {
+      result = subResult;
+    }
+  });
+
+  const list = searchSort(result);
+  const parsedResults = [];
+  if (list) {
+      const l = Math.min(maxResultCount, list.length);
+      for (let k = 0; k < l; k++) {
+          const nfile = list[k].i;
+          const file = files[nfile];
+          const splitD = (file.d || '').split('||');
+          const desc = splitD[0] || '';
+          const tags = !splitD[1] ? [] : splitD[1].split(', ');
+
+          const parsedResult = {
+            url: file.n,
+            title: file.t,
+            tags,
+            desc,
+            score: list[k].v,
+          };
+          parsedResults.push(parsedResult);
+      }
+  }
+  renderResultsUi(parsedResults);
+}
+
+function isLetter(ch) {
+  return (ch >= 'a' && ch <= 'z');
+}
+
+function isExtraLetter(ch) {
+  return (searchExtraLetters.indexOf(ch) >= 0);
+}
+
+function normaliseExtraLetter(ch) {
+  return searchExtraLettersConverted.charAt(searchExtraLetters.indexOf(ch));
+}
+
+function searchTermNormalise(wordMixedCase) {
+  const word = wordMixedCase.toLowerCase();
+  let out = '';
+  for (let i = 0; i < word.length; i += 1) {
+    const ch = word.charAt(i);
+    if (isLetter(ch)) {
+      out += ch;
+    } else if (isExtraLetter(ch)) {
+      out += normaliseExtraLetter(ch);
+    }
+    // all other characters are discarded
+  }
+  return out;
+}
+
+function searchTermFilter(word) {
+  if (!word
+    || word.length < 3
+    || searchExcludedWords.has(word)) {
+    return false;
+  }
+  return true;
+}
+
+function searchOr(index1, index2) {
+  const result = {};
+
+  for (let n in index1) {
+    result[n] = index1[n];
+  }
+
+  for (let n in index2) {
+    if (result[n]) {
+      result[n] += index2[n];
+    } else {
+      result[n] = index2[n];
+    }
+  }
+  return result;
+}
+
+function searchAnd(index1, index2) {
+  const result = {};
+
+  for (let n in index1) {
+      if (index2[n]) {
+          result[n] = Math.min(index1[n], index2[n]);
+      }
+  }
+  return result;
+}
+
+function searchSort(index) {
+  const list = [];
+
+  for (let n in index) {
+    list.push({ i: n, v: index[n] });
+  }
+
+  list.sort(function(a, b) {
+    if (a.v < b.v) {
+      return 1;
+    }
+
+    if (a.v > b.v) {
+      return -1;
+    }
+
+    return 0;
+  });
+
+  return list;
 }
 
 function getJson(url, errback) {
