@@ -54,7 +54,6 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 
 
 $(document).ready(function () {
-  setUpMainSearch();
   const renderFeatures = $('.render-features')
     .data('features')
     .split(/\s+/);
