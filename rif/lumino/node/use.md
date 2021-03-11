@@ -1,149 +1,157 @@
 ---
 layout: rsk
 title: How To Use
-description: "How to build and run a Lumino node. How to use its user interface to view dashboard, quick payments, token view, send tokens, pay, deposit, close channels, and view payments"
+description: "How to build and run a Lumino node. How to use its user interface to view the dashboard, quick payments, token view, send tokens, pay, deposit, open and close channels, and view payments"
 ---
 
-**Build your Lumino Node**
+## Build your Lumino Node
 
 In order to [get your own RIF Lumino node up and running](/rif/lumino/node/install), refer to the corresponding documentation.
 
-**Access the UI**
+## Access the UI
 
-To access the Dashboard of your Lumino node, use a browser and put the URL you settled in the api-address param before. We're going to use localhost:5002 in this example.
+To access the **Dashboard** of your Lumino node, start up a browser and use the chose `api-address` param value as a URL. We're going to use `localhost:5001` in this example.
 
-**Dashboard**
+### Dashboard
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-dashboard.png" alt=""/></div><br/>
+This is the initial screen you will arrive at, which presents a summary of information for the running node.
 
-Let's talk about the dashboard view:
+<div align="center"><img src="/assets/img/lumino/lumino-node-dashboard.png" alt=""/></div>
 
-**Header**
+Let's talk about the other sections and pages that are accesible from here.
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-header.png" alt=""/></div><br/>
+### Header
 
-1. At the left we have the Address of the node
-2. There is a global search bar where we can search by the following criterias:
-  1. Lumino Nodes
-  2. Channels
-  3. Tokens
-3. Quick payment (we will talk more about this in the following sections)
-4. Notifications Bell, in there we are going to see a list of Todo's, and all sorts of things related to notifications, like when a payment has been made, etc.
+<div align="center"><img src="/assets/img/lumino/lumino-node-header.png" alt=""/></div>
 
-**Quick Payment**
+1. At the left we have the RSK Address of the running node
+2. There is a global search bar in which we can search by the following criteria:
+    1. Lumino Nodes
+    2. Channels
+    3. Tokens
+3. Quick payment (we will talk more about this in the following section)
+4. Notifications Bell: this will display a list of TODO's or pending operations, as well as all sorts of things related to notifications (like when a payment has been made, etc.).
 
-<div align="center"><img src="/assets/img/lumino/lumino-node-quick-payment.png" alt=""/></div><br/>
+#### Quick Payment
 
-The idea of this modal is to make a payment to any partner in any token. The link is available across all the site so it can be accessed very fast for every part of the site.
+<div align="center"><img src="/assets/img/lumino/lumino-node-quick-payment.png" alt=""/></div>
+
+The idea of this window is to make a payment to any partner using any token. The link is available across all of the pages in the UI, in order to give quick access to it on every page.
 
 To make a payment we need to indicate 3 parameters:
 
-- Partner address: Node we want to make the payment
-- Token Address: Token in which we want to pay
-- Amount: Amount of tokens to be sent.
+1. Partner address: Node we want to make the payment to
+2. Token Address: Token we want to pay in
+3. Amount: Amount of tokens to be paid
 
-After you hit &quot;pay&quot; a new payment will be initiated and you can see the state in the Notification Bell icon at the header.
+After you hit **PAY** a new payment will be initiated. You will be able to see the state of it in the Notification Bell icon placed at the header.
 
-**Token view**
+A valid route must exist from your node to the destination for the payment to be successful. This includes nodes being online as well as enough balance across every hop.
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-token-view.png" alt=""/></div><br/>
+### Token View
 
-In this view you can see all the tokens registered in the Lumino Network, for this we just have one token registered called &quot;Token&quot;.
+<div align="center"><img src="/assets/img/lumino/lumino-node-token-view.png" alt=""/></div>
 
-The view has a filter bar where you can search by name, or sort by Name, Symbol or Balance.
+In this view you can see all the tokens registered in the Lumino Network. In this example we just have one token registered called &quot;Token&quot;.
 
-Each token display the following information &amp; actions:
+The view has a filter bar where you can search by name, or sort by *Name*, *Symbol* or *Balance*.
 
-- Token Address: The Address of this token
-- Balance: your balance on the particular token
-- Two possible actions (just one is displayed):
-  - Join Network: If you don't have any channel open in this token this button will show. If you go for this action Lumino will create 3 new channels in the token with random partners. This function is very useful when you want to have channels in a particular token to start to send &amp; receive payments but you don't know any other partner yet
-  - Leave Network: If you already have at least one channel in the token, a Leave Network action will appear. This action will close ALL your open channels in the token.
+Each token displays the following information &amp; actions:
 
-**Channels**
+- **Token Address**: the address of this token
+- **Balance**: your balance for this particular token
+- 2 possible actions (only 1 is displayed at a time):
+  - **Join Network**: if you don't have any channel open using this token, this button will appear. If you go for this action Lumino will create 3 new channels using this token, with random partners. This function is very useful when you want to have channels in a particular token to start to send &amp; receive payments but you don't know any other partner yet.
+  - **Leave Network**: If you already have at least 1 channel using this token, a *Leave Network* action will appear. This action will close ALL your open channels which use this token.
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-channels.png" alt=""/></div><br/>
+### Channels
+
+<div align="center"><img src="/assets/img/lumino/lumino-node-channels.png" alt=""/></div>
 
 This view is used for:
 
-- Create channels between nodes
-- Send tokens (Like the one we made in Quick payment)
-- Interact with each channel created with our node, here we can make the following actions:
+- Creating channels between nodes
+- Sending tokens (like the one we made in Quick payment)
+- Interacting with each channel created with our node, for which we can do the following:
   - Make a payment over this channel (this will be an offchain payment)
-  - Deposit more tokens in the channel (this require an onchain transaction)
-  - See a detail of the transactions for the channel
-  - Close the channel (this require an onchain transaction)
+  - Deposit more tokens in the channel (this requires an onchain transaction)
+  - See details for each transaction related to the channel
+  - Close the channel (this requires an onchain transaction)
 
-See below so we explain in more detail each part of this page
+See below for a more in-depth explanation for each section of this page.
 
-**Button Send Tokens**
+##### *New Channel* button
 
-<div align="center"><img src="/assets/img/lumino/lumino-node-send-tokens.png" alt=""/></div><br/>
+<div align="center"><img src="/assets/img/lumino/lumino-node-open-channel.png" alt=""/></div>
 
-As the boxes indicates, you need to put the Partner Address with you will open this new channel; A token address and an Amount to be added as your initial balance on the channel (of course you can always deposit more tokens after you create the channel).
+##### *Send Tokens* button
+
+<div align="center"><img src="/assets/img/lumino/lumino-node-send-tokens.png" alt=""/></div>
+
+As the fields indicate, you need to put the Partner Address to which you will open this new channel; A token address and an Amount to be added as your initial balance for the channel (of course you can always deposit more tokens after you create the channel).
 
 After you create the channel, you will see a new channel widget like the following in the channel list:
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-channel-list.png" alt=""/></div><br/>
+<div align="center"><img src="/assets/img/lumino/lumino-node-channel-list.png" alt=""/></div>
 
-We already discussed about the actions before, so let's talk about the information displayed:
+We already discussed the actions before, so let's talk about the information displayed:
 
-- Channel Id: The id of the channel
+- The ID for the channel
 - Address of the partner
-- Token used on this channel
-- And your balance in this particular channel
-- Status: the status of the channel
+- Token used for this channel
+- Your balance in this particular channel
+- The status of the channel; open, closed, etc.
 
-**Pay button (from channel widget)**
+##### *Pay* button (from channel widget)
 
-As an example we're going to send some tokens to the partner, lets send 15 tokens:
+As an example we're going to send some tokens to the partner; let's send 15 tokens:
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-payments.png" alt=""/></div><br/>
+<div align="center"><img src="/assets/img/lumino/lumino-node-payments.png" alt=""/></div>
 
-After that, we receive a Success message indicating the amount that we just sent (When the transaction is done):
+When the transfer is done, a *Success* message is received, indicating the amount of tokens we've sent:
 
-<div align="center"><img src="/assets/img/lumino/lumino-node-transfer-success.png" alt=""/></div><br/>
+<div align="center"><img src="/assets/img/lumino/lumino-node-transfer-success.png" alt=""/></div>
 
-**Reminder note:** In the notifications we display the amounts in wei, that's why you see those big numbers there.
+**Reminder:** amounts in the notifications are displayed wei (that's why you'll see those big numbers there).
 
-**Deposit button (from channel widget)**
+##### *Deposit* button (from channel widget)
 
-If we want to deposit more tokens in the channel we can do it by clicking the Deposit button, and indicating some amount. Let's add some tokens to the balance at our node side.
+If we want to deposit more tokens in the channel we can do it by clicking the *Deposit* button and indicating some amount. Let's add some tokens to the balance from our node's side.
 
-<div align="center"><img src="/assets/img/lumino/lumino-node-deposit.png" alt=""/></div><br/>
+<div align="center"><img src="/assets/img/lumino/lumino-node-deposit.png" alt=""/></div>
 
 After we receive the confirmation, check the channel and you'll see that in effect, the balance is upgraded
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-balance.png" alt=""/></div><br/>
+<div align="center"><img src="/assets/img/lumino/lumino-node-balance.png" alt=""/></div>
 
-Remember, we got 80 at the start, we paid 15 to our partner, and now we deposited 30.
+Remember, we had 80 tokens at the start, and then we paid 15 to our partner. Now we've deposited 30 more.
 
-**Reminder note:** Of course you must have enough onchain balance in order to make the deposit.
+**Reminder:** of course you must have enough onchain balance in order to make the deposit.
 
-View Details button (from channel widget)
+##### *View Details* button (from channel widget)
 
-Let's check the View Details button, so we can see the transaction that we recently made
+Let's check the *View Details* button, so we can see the payments that we recently submitted.
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-details.png" alt=""/></div><br/>
+<div align="center"><img src="/assets/img/lumino/lumino-node-details.png" alt=""/></div>
 
-In this view we can see all the transactions that has been made in the channel that we click the View details button.
+In this view we can see all the payments that have been made, related to the channel for which we've clicked the *View Details* button.
 
-Here we got some features to filter the transactions that happened in the channel.
+Here we have some features to filter the payments that happened in the channel.
 
-- You can filter by date, indicating a from/to date
-- Filter in the dropbox by
-  - All, it will not discriminate the data
-  - Received, just what your partner have sent
-  - Failed, in case of fail, you can review all the failures here
-  - Sent, successful cases
+- You can filter by date, indicating a **from** or **to** date
+- Filter in the dropbox by:
+  - *All*: it will not discriminate the data
+  - *Received*: only the payments made by your partner
+  - *Failed*: in case of a failed payment, it can be reviewed here
+  - *Sent*: successful payments made to your partner
 - Pagination
-  - Indicate how many rows you want to see. Options are: 5, 10, 20, 25, 50, 100 rows.
+  - Indicate how many rows you want to see. Options are: 5, 10, 20, 25, 50 & 100 rows.
   - Advance between pages
-- Also you have some interesting data presented with more beauty in the top of the page. Such as your address, the token that we're using, and the partner address.
+- You also have some interesting data presented more aesthetically at the top of the page, such as your address, the token that's being used, and the partner address.
 
-**Close (Channel)**
+##### Close (from channel widget)
 
-<div align="center"><img src="/assets/img/lumino/lumino-node-close-channel.png" alt=""/></div><br/>
+<img src="/assets/img/lumino/lumino-node-close-channel.png" alt=""/>
 
 When clicking the close, you'll need to confirm the action.
 
