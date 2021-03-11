@@ -202,10 +202,7 @@ First modify the `config.json` file to setup the rsk blockchain and database pro
 }
 ```
 
-To run the RIF Notifier start a terminal in `rif-notifier` directory and run:
-
-
-Then run the command `bin/subscriptionplans.sh`  to create the subscription plans. Refer to [create subscription plans](../subscription-plans#create-subscription-plans) and [update subscription plans](../subscription-plans#update-subscription-plans)
+To run the RIF Notifier start a terminal in `rif-notifier` directory and run the command `bin/subscriptionplans.sh`  to create the subscription plans. Refer to [create subscription plans](../subscription-plans#create-subscription-plans) and [update subscription plans](../subscription-plans#update-subscription-plans)
 
 #### Run the application
 
