@@ -46,19 +46,21 @@ For more information, please take a look at the [Readme indications](https://git
     const notifierEndPoint = process.env.REACT_APP_RIF_NOTIFIER_ENDPOINT;
 
     const configParams = {
-    chainId,
-    rskEndpoint,
-    hubEndpoint,
-    Address,
-    notifierEndPoint 
+        chainId,
+        rskEndpoint,
+        hubEndpoint,
+        Address,
+        notifierEndPoint 
     };
     
     // 3. Create a web3 instance, pointing to your rsk endpoint     
     const web3 = new Web3(rskEndpoint);
+
     // 4. Create a signing handler and initialize it.
     // NOTE: Read below for info about this Handler
     const signingHandler = SigningHandler();
     signingHandler.init(web3, PrivateKey);
+    
     // 5. Initialise the Lumino singleton instance. Note that this requires to be called inside an async function.
     await Lumino.init(signingHandler, LocalStorageHandler, configParams);
     ```
