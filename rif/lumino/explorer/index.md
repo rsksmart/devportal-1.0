@@ -15,7 +15,7 @@ RIF Lumino Explorer is a website which allows users to view the status of the Lu
 
 On the dashboard we have several sections:
 
-- **Node graph**: At the center of the screen we can see all the nodes which opted to be included in the explorer and how they connect toeach other.
+- **Node graph**: At the center of the screen we can see all the nodes which opted to be included in the explorer and how they connect to each other.
 - **Tokens dropdown**: Above the graph, there is a dropdown which allows us to select which token we want to display information for.
 - **Search box**: allow to search by:
     - Node address
