@@ -3,7 +3,7 @@ layout: rsk
 title: Libraries
 ---
 
-The developer community is working to help other developers enabling libraries and SDKs.
+The developer community is working to help other developers build libraries and SDKs.
 
 <table class="table">
   <thead>
