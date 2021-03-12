@@ -5,8 +5,9 @@ tags: lumino, client, rif
 description: "How to use the RIF Lumino Light Client SDK"
 ---
 
-This document provides a step by step guide to integrate the RIF Lumino light client sdk into a web or mobile dApp. 
-For more information, please take a look at the Readme indications at [https://github.com/rsksmart/lumino-light-client-sdk](https://github.com/rsksmart/lumino-light-client-sdk)
+This document provides a step by step guide to integrate the RIF Lumino light client SDK into a web or mobile dApp.
+
+For more information, please take a look at the [Readme indications](https://github.com/rsksmart/lumino-light-client-sdk).
 
 
 1. **Include the library into your dApp**
@@ -27,25 +28,22 @@ For more information, please take a look at the Readme indications at [https://g
 
     To start using the SDK, you must first configure the Lumino object. This object is our main interface to interact with the SDK. Lumino must be initialized before being used, invoking the init function:
 
-    ```
+    ```javascript
     // 1. Import Lumino, the LocalStorageHandler for data persistence and the default SigningHandler for message signing.
     
     import {
-    Lumino,
-    LocalStorageHandler,
-    SigningHandler,
+        Lumino,
+        LocalStorageHandler,
+        SigningHandler,
     } from "@rsksmart/lumino-light-client-sdk";
 
     // 2. Set the environment parameters 
-
     const address = process.env.REACT_APP_ADDRESS;
     const chainId = process.env.REACT_APP_CHAIN_ID;
     const PrivateKey = process.env.REACT_APP_PRIVATE_KEY;
     const rskEndpoint = process.env.REACT_APP_RSK_ENDPOINT;
     const hubEndpoint = process.env.REACT_APP_HUB_ENDPOINT;
     const notifierEndPoint = process.env.REACT_APP_RIF_NOTIFIER_ENDPOINT;
-    
-
 
     const configParams = {
     chainId,
@@ -65,13 +63,13 @@ For more information, please take a look at the Readme indications at [https://g
     await Lumino.init(signingHandler, LocalStorageHandler, configParams);
     ```
 
-    NOTE about the SigningHandler: This method requires the PrivateKey since we instantiate everything with web3 and ethers.js to sign Smart Contract transactions and Off Chain Messages, it is not compulsory to use it.
+    **NOTE** about the `signingHandler`: This method requires the `PrivateKey` since we instantiate everything with web3 and ethers.js to sign Smart Contract transactions and Off Chain Messages, it is not compulsory to use it.
 
     We advise only using it when testing in a secure environment, but in any case you may provide your own signing functions instead of using the handler.
 
-    The idea is passing an object with 2 functions instead of the signingHandler to Lumino.init(), these functions receive 1 parameter each
+    The idea is passing an object with 2 functions instead of the `signingHandler` to `Lumino.init()`, these functions receive 1 parameter each
 
-    ```
+    ```javascript
     const myHandler = { 
         sign:(tx) => signTransction(tx),
         offChainSign: (byteMessage) => signByteMessage(byteMessage),
@@ -84,48 +82,48 @@ For more information, please take a look at the Readme indications at [https://g
 
     The sign function will manage simple web3 transactions.
 
-3. **Make the onboarding**
+3. **Perform the onboarding**
 
-    In order to start using the Lumino light client, you need to make an onboarding into a Lumino HUB node. 
+    In order to start using the Lumino light client, you need to perform an onboarding into a Lumino HUB node. 
 
     First, define an async function that invokes the onboarding primitive:
 
-    ```
+    ```javascript
     onboarding = async () => {
         await Lumino.get().actions.onboardingClient();
     };
     ```
 
-    Then you can use this function on a button action, for example. After that, your client is able to start interacting with the Lumino HUB
+    Then you can use this function on a button action, for example. After that, your client will be able to start interacting with the Lumino HUB.
 
 4. **Open a channel**
 
-    ```
+    ```javascript
     const params = {
-      Partner: “0x1234...”,
+      Partner: "0x1234...",
       settleTimeout: 500,
-      tokenAddress: “0x1234...”,
+      tokenAddress: "0x1234...",
     };
     await Lumino.get().actions.openChannel(params);
     ```
 
-    The open channel function will fire and when the process is successful, a callback will be fired if specified (see the readme on Callbacks for more information on this topic). A channel structure will be added to the SDK state machine.
+    The open channel function will fire and when the process is successful, a callback will be fired if specified (see the readme on Callbacks down belo for more information on this topic). A channel structure will be added to the SDK state machine.
 
     You just need to specify the partner node (a lumino node) address and the token in which you want to create the channel. 
 
 5. **Deposit**
 
-    After a channel was created, you need to make an on-chain deposit in order to start making payments
+    After a channel was created, you need to make an on-chain deposit in order to start making payments.
 
-    ```
+    ```javascript
      deposit = async () => {
         const theAmount =100000000 //amount in wei
         const paramsDeposit = {
-            “0x123...”, //tokenAddress
-            tokenNetworkAddress: “0x123”, // available in the channel data 
+            "0x123...", //tokenAddress
+            tokenNetworkAddress: "0x123", // available in the channel data 
             amount: theAmount,
             1, //channel identifier
-            “0x.123...”, // partner address
+            "0x.123...", // partner address
         };
         await Lumino.get().actions.createDeposit(paramsDeposit);
     };
@@ -135,12 +133,12 @@ For more information, please take a look at the Readme indications at [https://g
 
     Now that the channel has funds, you can make a payment to your partner. 
 
-    ```
+    ```javascript
     pay = async () => {
-        const amountInWei = “1000000000000”; //amount on wei as a string
+        const amountInWei = "1000000000000"; //amount on wei as a string
         const body = {
-            partner: “0x123….”,
-            token_address: “0x145….”,
+            partner: "0x123….",
+            token_address: "0x145….",
             amount: amountInWei,
         };
         await Lumino.get().actions.createPayment(body);
@@ -149,54 +147,55 @@ For more information, please take a look at the Readme indications at [https://g
 
 7. **Receive a payment**
 
-    Receiving a payment is automatic, as long as the client is polling messages from the Lumino HUB, the payment will be processed and two callbacks will be fired
+    Receiving a payment is automatic, as long as the client is polling messages from the Lumino HUB, the payment will be processed and two callbacks will be fired.
 
     * When a payment is received: A callback will be fired
     * When the payment is completed: A callback will also be fired
 
-
-    Callbacks are explained on the next section
+    Callbacks are explained on the next section.
 
 8. **Configuring callbacks**
 
-    All the operations previously described perform operations on background, but you may want to display success or error messages into your dapp after the operation finalises. For that, there are different callbacks.
+    All the operations previously described perform operations on background, but you may want to display success or error messages into your dApp after the operation finalises. For that, there are different callbacks.
 
     Callbacks are set on the Lumino instance like this:
 
-    ```
+    ```javascript
     Lumino.callbacks.set.setNameOfCallback;
     ```
 
-    The callbacks.set method sets a function that may or may not receive the data regarding the event, the next table illustrates the callbacks, when they are fired and the data they provide (Which is always a single object or nothing)
+    The `callbacks.set` method sets a function that may or may not receive the data regarding the event, the next table illustrates the callbacks, when they are fired and the data they provide (which is always a single object or nothing).
 
-    We recommend creating a callbacks.js file that encapsulates all the callbacks. For example:
+    We recommend creating a `callbacks.js` file that encapsulates all the callbacks. For example:
 
-    ```
-    // // Set callbacks
+    ```javascript
+    // Set callbacks
     import { Lumino } from "@rsksmart/lumino-light-client-sdk";
 
     const setCallbacks = () => {
-    Lumino.callbacks.set.setOnCompletedPaymentCallback((payment) => {
-        console.log(¨payment completed¨)   
-    });
+        Lumino.callbacks.set.setOnCompletedPaymentCallback((payment) => {
+            console.log("payment completed")   
+        });
 
-    Lumino.callbacks.set.setOnReceivedPaymentCallback(({ payment }) =>
-        console.log(“receiving payment”)
-    );
+        Lumino.callbacks.set.setOnReceivedPaymentCallback((payment) => {
+            console.log("receiving payment")
+        });
 
-    Lumino.callbacks.set.setOnOpenChannelCallback((channel) => {
-        console.log(“channel opened”)
-    });
+        Lumino.callbacks.set.setOnOpenChannelCallback((channel) => {
+            console.log("channel opened")
+        });
 
-    Lumino.callbacks.set.setOnChannelDepositCallback((channel) => {
-        console.log(“deposit made”  });
-    });
-    Lumino.callbacks.set.setOnRequestClientOnboarding((address) =>
-        console.log(“onboarding requested”)
-    );
-    Lumino.callbacks.set.setOnClientOnboardingSuccess((address) =>
-        console.log(“onboarding succeed”)  
-    );
+        Lumino.callbacks.set.setOnChannelDepositCallback((channel) => {
+            console.log("deposit made");
+        });
+
+        Lumino.callbacks.set.setOnRequestClientOnboarding((address) =>
+            console.log("onboarding requested")
+        );
+        
+        Lumino.callbacks.set.setOnClientOnboardingSuccess((address) =>
+            console.log("onboarding succeed")  
+        );
     };
 
     export default setCallbacks;
@@ -208,12 +207,14 @@ For more information, please take a look at the Readme indications at [https://g
 
     In order to be notified when a channel with the light client was opened by a partner, the dApp must be integrated with the RIF Notifier. For more information please take a look at:
 
-    * [https://github.com/rsksmart/lumino-light-client-sdk#notifier](https://github.com/rsksmart/lumino-light-client-sdk#notifier)
-    * [https://github.com/rsksmart/rif-notifier](https://github.com/rsksmart/rif-notifier)
+    * [Lumino Light Client SDK: RIF Notifier](https://github.com/rsksmart/lumino-light-client-sdk#rif-notifier)
+    * [Rif-Notifier](https://github.com/rsksmart/rif-notifier)
+
+    &nbsp;
 
     Having a RIF Notifier up and running, the dApp must register to that notifier instance and subscribe to open channel events. 
 
-    ```
+    ```javascript
     subscribeToNotifier = async() =>{
         await Lumino.get().actions.notifierRegistration();
         await Lumino.get().actions.subscribeToOpenChannel()
