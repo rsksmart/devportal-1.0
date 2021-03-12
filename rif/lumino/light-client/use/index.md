@@ -107,7 +107,7 @@ For more information, please take a look at the [Readme indications](https://git
     await Lumino.get().actions.openChannel(params);
     ```
 
-    The open channel function will fire and when the process is successful, a callback will be fired if specified (see the readme on Callbacks down belo for more information on this topic). A channel structure will be added to the SDK state machine.
+    The open channel function will fire and when the process is successful, a callback will be fired if specified (see the readme on Callbacks down below for more information on this topic). A channel structure will be added to the SDK state machine.
 
     You just need to specify the partner node (a lumino node) address and the token in which you want to create the channel. 
 
