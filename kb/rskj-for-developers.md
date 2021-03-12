@@ -43,7 +43,7 @@ and enables both CORS and `autoMine` (which makes it behave similar to ganache).
 
 ### Developer Tools
 
-- [Configuring Truffle for RSK](/kb/rskj-truffle-config)
+- [Configuring Truffle for RSK](/kb/configure-truffle-to-rsk/)
 
 ## Debugging
 
@@ -51,11 +51,11 @@ and enables both CORS and `autoMine` (which makes it behave similar to ganache).
 
 ### RPC
 
-[Remote procedure calls (JSON-RPC)](/rsk/node/architecture/json-rpc/#transport-protocols) are the primary interface through which RSK nodes communicate over the network.
+[Remote procedure calls (JSON-RPC)](/rsk/node/architecture/json-rpc/) are the primary interface through which RSK nodes communicate over the network.
 
 JSON-RPC is available over two network transport protocols: **HTTP** and **WebSockets**
 
-- [Configuring and using RPC over HTTP](/rsk/node/architecture/json-rpc/#http-transport-protocol)
-- [Configuring and using RPC over WebSockets](/rsk/node/architecture/json-rpc/#websocket-transport-protocol)
+- [Configuring and using RPC over HTTP](/rsk/node/architecture/json-rpc/)
+- [Configuring and using RPC over WebSockets](/rsk/node/architecture/json-rpc/)
 
-> Note that [RSK public nodes](/rsk/node/architecture/json-rpc/#public-nodes) do not expose WebSockets, they are HTTP only. To work around this, you may either run your own RSK node, or use a third-party node provider, such as [Getblock](/solutions/getblock/).
+> Note that [RSK public nodes](/rsk/node/architecture/json-rpc/) do not expose WebSockets, they are HTTP only. To work around this, you may either run your own RSK node, or use a third-party node provider, such as [Getblock](/solutions/getblock/).
