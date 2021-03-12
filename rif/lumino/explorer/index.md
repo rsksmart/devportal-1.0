@@ -7,7 +7,7 @@ title: Lumino Explorer - How To Use
 - [Repository](https://github.com/rsksmart/lumino-explorer)
 - [Mainnet Public Explorer](https://explorer.lumino.rifos.org/)
 
-RIF Lumino Explorer is a website which allows ysers to view the status of the Lumino Network. Each node can decide to be present or not in this explorer.
+RIF Lumino Explorer is a website which allows users to view the status of the Lumino Network. Each node can decide to be present or not in this explorer.
 
 ## Dashboard
 
