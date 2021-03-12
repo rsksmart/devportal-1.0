@@ -32,7 +32,7 @@ At the left of the dashboard we will see a summary widget with some general info
 
 <img src="/assets/img/lumino/widget.png" alt=""/>
 
-In the Dashboard we got can see statistics corresponding to Mainnet.
+In the Dashboard we can see statistics corresponding to Mainnet.
 
 1. How many nodes are connected to the Lumino Network
 2. How many nodes have channels opened in the selected token.
