@@ -191,4 +191,61 @@ We believe these metrics should prove useful to you.
 
 Additionally, if you scroll down a little bit you will see a small table with relevant data, like in payments:
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-payments-table.png" alt=""/></div>
+<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-payments-table.png" alt=""/></div><br/>
+
+**Generating an Invoice**
+
+An invoice is a text containg all the information of a payment, which can be lately executed by a node to pay another. 
+
+Lumino allows to generate invoices, but currently there the only way is through a REST API.
+
+To create a new invoice, send a `POST` request to `<PaymentReceiverHost>:<Port>/api/v1/invoice` with the following body:
+
+```
+{
+  "token_address": "0xF87366bE772C612f94F73C87aB4F5BE79c0B1AEd",
+  "currency_symbol": "lum",
+  "partner_address": "0x5BCd2644CFe6Cf5CBAb14e0D96F2Fe8cDc403E18",
+  "amount": "1",
+  "description": "prueba_invoice",
+  "expires": "1588634544"
+}
+}
+```
+Where:
+- `token_address` is the token's address.
+- `currency_symbol` is case sensitive.
+- `partner_address` is the receiver of the payment. It MUST be the same address as the one of the node receiving the API call. Otherwise, the invoice will be generated, but the invoice won't work when you try to pay it.
+- `expires` is the number of seconds until the payment expires.
+
+The response will be something like:
+
+```
+{
+    "type": 1,
+    "status": 1,
+    "expiration_date": "2021-02-24T01:18:40.548412",
+    "encode": "lmlum11psrg4lspp560ejml7f46g2mj8dzgtvwtaq8x2v3tqcn7fv48qvhmkts0auzz7sdqhwpe82etzv90kjmnkda5kxegxqyz5vqnpqt0xjv3x0um84ew43fcxeduh73nwyq0sctpqlpekd0nh93sjl98h8jr6kn6mu7wqkxhd4kmlkde2zgukw6vzyu0hf79ngrjg7d7fyaj4u6gqecg0k2t0djwsk57jlgp4xvc8zzn6ek05t329yzu5kdy3ualx4fquuh70f49xpqcpuas3ml",
+    "payment_hash": "0xd3f32dffc9ae90adc8ed1216c72fa03994c8ac189f92ca9c0cbeecb83fbc10bd",
+    "secret": "0x08304db713bf298ef4b1e9a87437185a36d0b9bfff3974b946421fdd94c32577",
+    "currency": "lum",
+    "amount": "1",
+    "description": "prueba_invoice",
+    "target_address": "0x5bcd2644cfe6cf5cbab14e0d96f2fe8cdc403e18",
+    "token_address": "0xf87366be772c612f94f73c87ab4f5be79c0b1aed",
+    "created_at": "2021-02-23T01:18:40"
+}
+```
+
+Being `encode` the encoded invoice, which holds the information of the payment.
+
+
+**Paying an Invoice**
+
+<div align="center"><img src="/assets/img/lumino/lumino-node-invoice-payment.png" alt=""/></div><br/>
+
+In order to pay an invoice, click on the `Invoice` switch inside the `Send Tokens` view.
+
+A text area will be displayed where you can paste the invoice.
+
+Once you click the `Pay` button, the node will decode the payee, the token, and the amount from the invoice, and pay it as a regular off chain Lumino transfer. Note that a path of channels with enough balance will be needed as in any other payment.
