@@ -173,7 +173,7 @@ The channel status will change to `closed` and then after a few validations, it'
 
 The latter state will last for take 500 blocks; after that, the channel status will displayed `settled` for a short period of time, and then the channel will be deleted from the view.
 
-**Payments**
+### Payments
 
 <div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-payments.png" alt=""/></div>
 
@@ -191,17 +191,19 @@ We believe these metrics should prove useful to you.
 
 Additionally, if you scroll down a little bit you will see a small table with relevant data, like in payments:
 
-<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-payments-table.png" alt=""/></div><br/>
+<div align="center"><img width="100%" src="/assets/img/lumino/lumino-node-payments-table.png" alt=""/></div>
 
-**Generating an Invoice**
+### Invoices
 
-An invoice is a text containg all the information of a payment, which can be lately executed by a node to pay another. 
+#### Generation
 
-Lumino allows to generate invoices, but currently there the only way is through a REST API.
+An invoice is a text containg all the information of a payment, which can be later used by a node to make a payment to another.
+
+Lumino allows invoice generation, but currently the only way to do this is through the REST API.
 
 To create a new invoice, send a `POST` request to `<PaymentReceiverHost>:<Port>/api/v1/invoice` with the following body:
 
-```
+```json
 {
   "token_address": "0xF87366bE772C612f94F73C87aB4F5BE79c0B1AEd",
   "currency_symbol": "lum",
@@ -212,15 +214,16 @@ To create a new invoice, send a `POST` request to `<PaymentReceiverHost>:<Port>/
 }
 }
 ```
+
 Where:
 - `token_address` is the token's address.
-- `currency_symbol` is case sensitive.
+- `currency_symbol` is the token's symbol (case sensitive).
 - `partner_address` is the receiver of the payment. It MUST be the same address as the one of the node receiving the API call. Otherwise, the invoice will be generated, but the invoice won't work when you try to pay it.
 - `expires` is the number of seconds until the payment expires.
 
 The response will be something like:
 
-```
+```json
 {
     "type": 1,
     "status": 1,
@@ -237,15 +240,14 @@ The response will be something like:
 }
 ```
 
-Being `encode` the encoded invoice, which holds the information of the payment.
+The `encode` field corresponds to the encoded invoice, and it's the text which holds the information of the payment that can be used to pay it.
 
+#### Payment
 
-**Paying an Invoice**
+<div align="center"><img src="/assets/img/lumino/lumino-node-invoice-payment.png" alt=""/></div>
 
-<div align="center"><img src="/assets/img/lumino/lumino-node-invoice-payment.png" alt=""/></div><br/>
+In order to pay an invoice, click on the `Invoice` switch inside the `Send Tokens` view or `Pay` button from the channel widget.
 
-In order to pay an invoice, click on the `Invoice` switch inside the `Send Tokens` view.
+A text area will be displayed where you can paste the encoded invoice.
 
-A text area will be displayed where you can paste the invoice.
-
-Once you click the `Pay` button, the node will decode the payee, the token, and the amount from the invoice, and pay it as a regular off chain Lumino transfer. Note that a path of channels with enough balance will be needed as in any other payment.
+Once you click the `Pay` button, the node will decode the payee, the token, and the amount from the invoice, and pay it as a regular offchain Lumino transfer. Note that a path of channels with enough balance will be needed as in any other payment.
