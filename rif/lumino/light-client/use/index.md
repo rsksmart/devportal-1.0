@@ -156,7 +156,7 @@ For more information, please take a look at the [Readme indications](https://git
 
 8. **Configuring callbacks**
 
-    All the operations previously described perform operations on background, but you may want to display success or error messages into your dApp after the operation finalises. For that, there are different callbacks.
+    All the operations previously described perform operations on background, but you may want to display success or error messages into your dApp after the operation finishes. For that, there are different callbacks.
 
     Callbacks are set on the Lumino instance like this:
 
