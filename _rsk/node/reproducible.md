@@ -60,7 +60,6 @@ RUN sha256sum --check SHA256SUMS.asc
 RUN ./configure.sh
 RUN ./gradlew clean build -x test
   ```
-
 - Mac OSX
  ```terminal
 brew update && \
