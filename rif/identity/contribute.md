@@ -10,9 +10,9 @@ It is a strict branching model that refers to two main branches: `master` (or _m
 
 **Quick summary**
 
+- **Pull requests should point to `develop` by default - other cases are explained bellow**
 - `master` (or `main`) has latest release - deployment or package distribution
 - `develop` has latest approved feature - feature was reviewed and approved, but not yet released as final (they may have been released as `beta` versions)
-- Pull requests should point to `develop` by default - other cases are explained bellow
 
 Thanks for collaborating and contributing!
 
