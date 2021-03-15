@@ -20,7 +20,7 @@ RIF Payments is a set of protocols with the primary goal of enabling fast and ch
 
 
 ## Lumino Node Setup
-To set up your own node, please follow instructions in the [installation guide](./node/install/index).
+To set up your own node, please follow instructions in the [installation guide](./node/install/).
 
 ## Lumino Full Document
 Download the *RIF Lumino Network and the Broader Vision of RIF Payments* [here](https://docs.rifos.org/rif-lumino-network-specification-en.pdf).
