@@ -5,6 +5,7 @@ tags: rsk, node, compile, reproducible, checksum
 description: "A deterministic build process used to build RSK node JAR file. Provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. Makes sure that the same tested dependencies are used and statically built into the executable."
 collection_order: 2600
 permalink: /rsk/node/reproducible/
+render_features: 'custom-terminals'
 ---
 
 Gradle building
@@ -39,7 +40,9 @@ Build Container
 ---------------
 Create a ```Dockerfile``` to setup the build environment
 
-```Dockerfile
+[](#top "multiple-terminals")
+- Linux
+  ```shell
 FROM ubuntu:16.04
 RUN apt-get update -y && \
     apt-get install -y git curl gnupg-curl openjdk-8-jdk && \
@@ -49,11 +52,31 @@ RUN apt-get update -y && \
 RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN git clone --single-branch --depth 1 --branch PAPYRUS-2.2.0 https://github.com/rsksmart/rskj.git /code/rskj
+RUN git clone https://github.com/rsksmart/reproducible-builds 
+RUN CP /Users/{$USER}/reproducible-builds/rskj/2.2.0-papyrus/Dockerfile  /Users/{$USER}/code/rskj
 WORKDIR /code/rskj
 RUN gpg --verify SHA256SUMS.asc
 RUN sha256sum --check SHA256SUMS.asc
 RUN ./configure.sh
 RUN ./gradlew clean build -x test
+  ```
+- Mac OSX
+ ```terminal
+brew update && \
+brew install git gnupg openjdk@8 && \
+    rm -rf /var/lib/apt/lists/* && \
+    brew autoremove && \
+    brew cleanup
+RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
+RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
+RUN git clone --single-branch --depth 1 --branch PAPYRUS-2.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
+RUN git clone https://github.com/rsksmart/reproducible-builds 
+RUN CP /Users/{$USER}/reproducible-builds/rskj/2.2.0-papyrus/Dockerfile  /Users/{$USER}/code/rskj
+RUN CD /code/rskj
+RUN gpg --verify SHA256SUMS.asc
+RUN sha256sum --check SHA256SUMS.asc
+RUN ./configure.sh
+RUN ./gradlew clean build -x test   
 ```
 
 If you are not familiar with Docker or the ```Dockerfile``` format: what this does is use the Ubuntu 16.04 base image and install ```git```, ```curl```, ```gnupg-curl``` and ```openjdk-8-jdk```, required for building RSK node.
