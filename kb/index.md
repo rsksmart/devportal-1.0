@@ -98,6 +98,51 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/rskj/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/rskj/explore.png" alt="getstartedwithrskj icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/rskj/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Getting started with RSKj</p>
+                        <p class="card-desc">Explore the different ways to get started with RSKj as a developer, node runner or as a miner on RSK.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/rskj/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/rskj-for-developers/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/rskj/developer.png" alt="rskjfordevs icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/rskj-for-developers/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">RSKj for Developers</p>
+                        <p class="card-desc">Setup your dev environment and build dApps faster using this quick start guide</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/rskj-for-developers/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
-
 
