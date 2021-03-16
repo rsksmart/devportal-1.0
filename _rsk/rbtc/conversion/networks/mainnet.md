@@ -82,7 +82,7 @@ You can get a corresponding BTC address from your R-BTC private key by using [gi
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> **Importante note**: The minimum amount to send must be **greater than** 0.008 R-BTC for Mainnet (sending the exact amount fails and funds get lost);
+> **Important note**: The minimum amount to send must be **greater than** 0.008 R-BTC for Mainnet (sending the exact amount fails and funds get lost);
 > Gas Limit of the transaction needs to be manually set at 100,000 gas;
 > otherwise the transaction will fail. Gas Price can be set to 0.06 gwei.
 
