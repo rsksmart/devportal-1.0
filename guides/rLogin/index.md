@@ -1,10 +1,9 @@
 ---
 layout: rsk
-title: Guides
+title: rLogin Guide
 tags: guide, rsk
 description: "Guides on RSK, workshops, and other guides"
 ---
 
-- [The Complete Full Stack dApp on RSK](/guides/full-stack-dapp-on-rsk/part1-overview/)
 - [Build a dApp with a Backend using rLogin suite](/guides/rLogin/connect-dapp/)
 
