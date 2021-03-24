@@ -52,7 +52,7 @@ you will need the following things set up on your system:
   1.1 [Nifty Chrome extension](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en)
   1.2 [Metamask instructions](https://developers.rsk.co/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
-2. Get some `R-BTC` from the [RSK faucet](https://faucet.rsk.co/)
+2. Get some `RBTC` from the [RSK faucet](https://faucet.rsk.co/)
 
 
 3. Truffle.

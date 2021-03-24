@@ -9,7 +9,7 @@ title: Get your own RIF Lumino node up and running on Ubuntu
   * [Public nodes](/rsk/public-nodes)
   * [Run your own node](/rsk/node/install) on Testnet or Mainnet
   * [Compile and run a RSK node locally](/rsk/node/contribute)
-1. An RSK account with an R-BTC balance NOT lower than 0.001 R-BTC
+1. An RSK account with an RBTC balance NOT lower than 0.001 RBTC
 1. Ubuntu 18.04+
 
 ## Install required libraries/software

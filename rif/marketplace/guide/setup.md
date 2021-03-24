@@ -62,14 +62,14 @@ Find the guide on [Metamask](https://developers.rsk.co/develop/apps/wallets/meta
 
 Since the RIF Marketplace works on top of RSK blockchain, to pay for transactional fees you will need RBTC tokens. This is going to be used to pay for any transaction performed in the RIF Marketplace.
 
-Read the [R-BTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
+Read the [RBTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
 
 
 > If you are using the testnet you can get free funds in the [RSK faucet](https://faucet.rsk.co/)
 
 ### Getting RIF Tokens
 
-In addition to R-BTC, you are going to need RIF tokens to interact with the RIF Marketplace service. This is one of the main payments methods supported by the Marketplace for buying RNS domains and renting decentralized storage.
+In addition to RBTC, you are going to need RIF tokens to interact with the RIF Marketplace service. This is one of the main payments methods supported by the Marketplace for buying RNS domains and renting decentralized storage.
 
 Read [RIF Token](https://developers.rsk.co/rif/token/) to find exchanges and more information on the RIF Token.
 

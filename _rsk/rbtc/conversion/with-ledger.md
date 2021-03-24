@@ -6,11 +6,11 @@ description: 'How to perform the Powpeg mechanism using Ledger'
 collection_order: 3140
 ---
 
-In this section we will go over the steps of converting BTC to R-BTC using Ledger hardware wallet, and vice versa on the Bitcoin and RSK networks.
+In this section we will go over the steps of converting BTC to RBTC using Ledger hardware wallet, and vice versa on the Bitcoin and RSK networks.
 
 - [General requirements](#general-requirements)
-- [BTC to R-BTC conversion](#btc-to-r-btc-conversion)
-- [R-BTC to BTC conversion](#r-btc-to-btc-conversion)
+- [BTC to RBTC conversion](#btc-to-rbtc-conversion)
+- [RBTC to BTC conversion](#rbtc-to-btc-conversion)
 
 ## General Requirements
 
@@ -23,7 +23,7 @@ In this section we will go over the steps of converting BTC to R-BTC using Ledge
   Install it and [configure it to be used with Ledger](https://support.ledgerwallet.com/hc/en-us/articles/115005161925-Set-up-and-use-Electrum).
 - node >= 10.16.0
 
-## BTC to R-BTC conversion
+## BTC to RBTC conversion
 
 Instructions on how to do a Mainnet peg-in.
 
@@ -137,9 +137,9 @@ To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 > 100 blocks \* 10 minutes/block = 1000 minutes = 16.667 hours approx.
 
-**5 Get R-BTC address from Ledger harware wallet**
+**5 Get RBTC address from Ledger harware wallet**
 
-Get the corresponding R-BTC address from your Ledger harware wallet, following these steps:
+Get the corresponding RBTC address from your Ledger harware wallet, following these steps:
 
 - Connect and unlock your Ledger device.
 - Open the RSK app.
@@ -172,13 +172,13 @@ Get the corresponding R-BTC address from your Ledger harware wallet, following t
 - Select **Custom** Address and put the derivation path `m/44'/0'/0'/0`.
   Then choose the address that you got from the previous step.
 
-**6 Check R-BTC balance**
+**6 Check RBTC balance**
 
-You can check balance of R-BTC address on MyCrypto or MEW setting the corresponding derivation path and selection the address.
+You can check balance of RBTC address on MyCrypto or MEW setting the corresponding derivation path and selection the address.
 
-> Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your R-BTC balance
+> Note: You have to wait a minimum of 100 confirmations + a minimum of 5 minutes for checking your RBTC balance
 
-## R-BTC to BTC conversion
+## RBTC to BTC conversion
 
 Instructions on how to do a Mainnet peg-out.
 
@@ -188,7 +188,7 @@ If you forgot your BTC public address, you can check section **1**.
 The important thing is that the receiving is BTC address will be
 the same that it was used to send to the federation.
 
-**2 Send R-BTC to RSK Bridge Contract**
+**2 Send RBTC to RSK Bridge Contract**
 
 Open MyCrypto or MEW.
 Set the corresponding derivation path and selection the address. \
@@ -197,7 +197,7 @@ Then do a transaction to the Bridge Contract.
 
 Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> Note: The minimum amount to send must be greater than 0.008 R-BTC for Mainnet;
+> Note: The minimum amount to send must be greater than 0.008 RBTC for Mainnet;
 > Gas Limit of the transaction needs to be manually set at 100,000 gas;
 > otherwise the transaction will fail.
 > Gas Price can be set to 0.06 gwei.

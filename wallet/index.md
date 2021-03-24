@@ -5,7 +5,7 @@ title: Wallets
 
 ## Use a wallet
 
-Learn how to use a Wallet integrated with [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens.
+Learn how to use a Wallet integrated with [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens.
 
 <a href="/wallet/use" class="green-button">Use</a>
 

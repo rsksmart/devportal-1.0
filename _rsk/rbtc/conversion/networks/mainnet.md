@@ -2,16 +2,16 @@
 layout: rsk
 title: Mainnet Guide
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
-description: 'Converting BTC to R-BTC (peg-in) and R-BTC to BTC (peg-out).'
+description: 'Converting BTC to RBTC (peg-in) and RBTC to BTC (peg-out).'
 collection_order: 3110
 permalink: /rsk/rbtc/conversion/networks/mainnet/
 ---
 
-In this section we will go over the steps of converting BTC to R-BTC and vice versa in Bitcoin and RSK Mainnets.
+In this section we will go over the steps of converting BTC to RBTC and vice versa in Bitcoin and RSK Mainnets.
 
 > Note: The minimum amount of Bitcoin to convert is **0.01 BTC** for Mainnet.
 
-## BTC to R-BTC conversion
+## BTC to RBTC conversion
 
 Instructions on how to do a Mainnet peg-in.
 
@@ -56,33 +56,33 @@ To ensure the transaction, we need to wait 100 BTC confirmations, be patient :)
 
 > 100 blocks \* 10 minutes/block = 1000 minutes = 16.667 hours approx.
 
-**4 Get R-BTC address with BTC private key**
+**4 Get RBTC address with BTC private key**
 
-You can get a corresponding R-BTC address from your BTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
+You can get a corresponding RBTC address from your BTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
 > Note: when entering Bitcoin private key do not include _p2pkh:_ in the front.
 
-**5 Check R-BTC balance**
+**5 Check RBTC balance**
 
-You can check balance of R-BTC address on Metamask, MyCrypto,
+You can check balance of RBTC address on Metamask, MyCrypto,
 or any RSK compatible wallets.
 
 > Note: You have to wait a minimum of 100 confirmations +
-> a minimum of 5 minutes for checking your R-BTC balance
+> a minimum of 5 minutes for checking your RBTC balance
 
-## R-BTC to BTC conversion
+## RBTC to BTC conversion
 
 Instructions on how to do a Mainnet peg-out.
 
-**1 Get BTC address with R-BTC private key**
+**1 Get BTC address with RBTC private key**
 
-You can get a corresponding BTC address from your R-BTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
+You can get a corresponding BTC address from your RBTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
-**2 Send R-BTC to RSK Bridge Contract**
+**2 Send RBTC to RSK Bridge Contract**
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> **Important note**: The minimum amount to send must be **greater than** 0.008 R-BTC for Mainnet (sending the exact amount fails and funds get lost);
+> **Important note**: The minimum amount to send must be **greater than** 0.008 RBTC for Mainnet (sending the exact amount fails and funds get lost);
 > Gas Limit of the transaction needs to be manually set at 100,000 gas;
 > otherwise the transaction will fail. Gas Price can be set to 0.06 gwei.
 

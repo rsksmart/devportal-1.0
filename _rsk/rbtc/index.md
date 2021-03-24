@@ -1,23 +1,23 @@
 ---
 layout: rsk
-title: R-BTC Token
+title: RBTC Token
 collection_order: 3000
 permalink: /rsk/rbtc/
 ---
 
-The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into R-BTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
+The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
 
-## R-BTC (Smart Bitcoin in Mainnet)
+## RBTC (Smart Bitcoin in Mainnet)
 
 <table class="table">
   <tbody>
     <tr>
       <td scope="row">Token Name</td>
-      <td><a href="https://coinmarketcap.com/currencies/rsk-smart-bitcoin/" target="_blank">R-BTC</a></td>
+      <td><a href="https://coinmarketcap.com/currencies/rsk-smart-bitcoin/" target="_blank">RBTC</a></td>
     </tr>
     <tr>
       <td scope="row">Total Supply</td>
-      <td>21,000,000 R-BTC</td>
+      <td>21,000,000 RBTC</td>
     </tr>
     <tr>
       <td scope="row">Circulating supply</td>
@@ -39,24 +39,24 @@ The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc
     <tr>
       <td scope="row">Logo</td>
       <td>
-        <img src="/assets/img/rsk/R-BTC-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
-        <a href="/assets/img/rsk/R-BTC-logo.png" target="_blank">R-BTC-logo.png</a>
+        <img src="/assets/img/rsk/RBTC-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
+        <a href="/assets/img/rsk/RBTC-logo.png" target="_blank">RBTC-logo.png</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-## tR-BTC (Smart Bitcoin in Testnet)
+## tRBTC (Smart Bitcoin in Testnet)
 
 <table class="table">
   <tbody>
     <tr>
       <td scope="row">Token Name</td>
-      <td>tR-BTC</td>
+      <td>tRBTC</td>
     </tr>
     <tr>
       <td scope="row">Total Supply</td>
-      <td>21,000,000 tR-BTC</td>
+      <td>21,000,000 tRBTC</td>
     </tr>
     <tr>
       <td scope="row">Circulating supply</td>

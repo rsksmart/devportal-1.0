@@ -10,7 +10,7 @@ description: "How to build and run a Lumino node. How to use its user interface 
   * [Public nodes](/rsk/public-nodes)
   * [Run your own node](/rsk/node/install) on TestNet or Mainnet
   * [Compile and run a RSK node locally](/rsk/node/contribute)
-2. RSK account with R-BTC balance
+2. RSK account with RBTC balance
 3. Python 3.7
 4. Pip
 5. Virtualenv
