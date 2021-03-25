@@ -5,6 +5,7 @@ title: Lumino JS SDK
 
 
 This SDK aims to help the development of integrations with Lumino that use JavaScript, providing an easy interface to communicate with Lumino's REST API and request the information required.
+
 For that purpose, many ES2015 features were used, and Promises are used as notation to help dealing with asynchronous code.
 
 ## Requirements
@@ -27,14 +28,15 @@ Node installation will include [NPM](https://www.npmjs.com/), which is responsib
 7. Define the constructor like this: `const Lumino = Lumino.default;`
 
 ## Usage
-As said before, this SDK relies heavily on [Promises](https://developers.google.com/web/fundamentals/getting-started/primers/promises), making it easier to handle the asynchronous requests made to the API.
+As previously mentioned, this SDK relies heavily on [Promises](https://developers.google.com/web/fundamentals/getting-started/primers/promises), making it easier to handle the asynchronous requests made to the API.
+
 Besides that, it provides a `Lumino` object containing several methods corresponding to the calls to be performed.
 
 This is a generic example of how to use the SDK, if you need specific details for a specific module, refer to [samples folder](https://github.com/rsksmart/lumino-sdk/tree/master/samples).
 
 Before executing any request, you need to call the constructor passing your credentials as parameters, making it possible to authorize the calls to the API:
 
-```js
+```javascript
 const lumino = new Lumino({    
     luminoNodeBaseUrl: "http://api-url.lumino-node/api/v1/"
 });
@@ -42,18 +44,17 @@ const lumino = new Lumino({
 
 From this point on, you just need to call the methods made available to call the API and retrieve the data you're looking for. Following the Promises notation, you should use `.then()`/`.catch()` to handle respectively the successful and failed requests.
 
-Except for some special cases, most of the calls only take an object as parameter. After that, you'll need to refer to the API to tune the query as intended.
+Except for some special cases, most of the calls only take an object as parameter. After that, you'll need to refer to the API to adjust the query as intended.
 
-```js
-
-	lumino.getChannels({
-	    token_addresses: '0x714E99c00D4Abf4a8a2Af90Fd40B595C68801C42'
-	})  
+```javascript
+    lumino.getChannels({
+        token_addresses: '0x714E99c00D4Abf4a8a2Af90Fd40B595C68801C42'
+    })  
     .then((data) => {  
-        // TODO stuff 
+        // TODO your logic here 
     })  
     .catch((error) => {  
-        // TODO Handle the error 
+        // TODO handle the error 
     });
 
 ```
@@ -76,7 +77,7 @@ Here's a list of all the methods available:
 ## Contribute to the SDK
 If you wish to contribute to this repository and further extend the API coverage of the SDK, here are the steps necessary to prepare your environment:
 
-1. Clone the repository
+1. Clone the repository.
 2. In the root folder, run `npm install` to install all the dependencies.
 3. Edit the file named `sdk-config.json` to provide API SDK config params with following this structure:
 ```json

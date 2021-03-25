@@ -724,6 +724,11 @@ img {
   height: 100%;
 }
 
+.lumino-video-container{
+  padding-top: 10px;
+  margin-bottom: 25px;
+}
+
 /* prev-next-links */
 
 .prev-next-links {
