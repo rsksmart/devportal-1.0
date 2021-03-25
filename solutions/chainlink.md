@@ -27,9 +27,11 @@ Chainlink's decentralized oracle network provides reliable, tamper-proof inputs 
 - [Getting started with Chainlink](https://docs.chain.link/docs/getting-started)
 - [Getting started with Chainlink: Beginner's Guide](https://docs.chain.link/docs/beginners-tutorial)
 - [Getting started with Chainlink: Intermediate](https://docs.chain.link/docs/intermediates-tutorial)
+- [Get the Latest Price](https://docs.chain.link/docs/get-the-latest-price)
 
 ### Guides
 
+- [Chainlink API Reference](https://docs.chain.link/docs/price-feeds-api-reference)
 - [Verify Stablecoin Collateral With Chainlink Proof of Reserve](https://blog.chain.link/verify-stablecoin-collateral-with-chainlink-proof-of-reserve/)
 - [Build, Deploy, and Sell Your Own Dynamic NFT](https://blog.chain.link/build-deploy-and-sell-your-own-dynamic-nft/)
 
