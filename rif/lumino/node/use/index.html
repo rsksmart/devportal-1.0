@@ -466,15 +466,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../install/">Install</a></li>
-                          <li><a href="../install/macos/">MacOS</a></li>
-                          <li><a href="../install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../install/">Install</a></li>
                       <li><a href="./">How to use</a></li>
                       <li><a href="../contribute/">Contribute</a></li>
                     </ul>
@@ -970,8 +962,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-02-25 02:59:19 +0000T00:00:00.000Z">2020-02-25</time> | -->
-     10' to read |
+    <!--time role="presentation" datetime="2021-03-12 02:52:53 +0000T00:00:00.000Z">2021-03-12</time> | -->
+     11' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/lumino/node/use.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1326,15 +1318,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../install/">Install</a></li>
-                          <li><a href="../install/macos/">MacOS</a></li>
-                          <li><a href="../install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../install/">Install</a></li>
                       <li><a href="./">How to use</a></li>
                       <li><a href="../contribute/">Contribute</a></li>
                     </ul>
@@ -1783,361 +1767,297 @@
 
                   <h1 class="page-title" id="top">How To Use</h1>
 
-                  <p><strong>Pre requisites for a Lumino Node</strong></p>
+                  <h2 id="build-your-lumino-node">Build your Lumino Node</h2>
+
+<p>In order to <a href="../install/">get your own RIF Lumino node up and running</a>, refer to the corresponding documentation.</p>
+
+<h2 id="access-the-ui">Access the UI</h2>
+
+<p>To access the <strong>Dashboard</strong> of your Lumino node, start up a browser and use the chose <code class="highlighter-rouge">api-address</code> param value as a URL. We’re going to use <code class="highlighter-rouge">localhost:5001</code> in this example.</p>
+
+<h3 id="dashboard">Dashboard</h3>
+
+<p>This is the initial screen you will arrive at, which presents a summary of information for the running node.</p>
+
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-dashboard.png" alt=""></div>
+
+<p>Let’s talk about the other sections and pages that are accesible from here.</p>
+
+<h3 id="header">Header</h3>
+
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-header.png" alt=""></div>
 
 <ol>
-  <li>Access to a synched RSK node. You can do this in a variety of ways:
-    <ul>
-      <li><a href="../../../../rsk/public-nodes/">Public nodes</a></li>
-      <li>
-<a href="../../../../rsk/node/install/">Run your own node</a> on TestNet or Mainnet</li>
-      <li><a href="../../../../rsk/node/contribute/">Compile and run a RSK node locally</a></li>
-    </ul>
+  <li>At the left we have the RSK Address of the running node</li>
+  <li>There is a global search bar in which we can search by the following criteria:
+    <ol>
+      <li>Lumino Nodes</li>
+      <li>Channels</li>
+      <li>Tokens</li>
+    </ol>
   </li>
-  <li>RSK account with R-BTC balance</li>
-  <li>Python 3.7</li>
-  <li>Pip</li>
-  <li>Virtualenv</li>
+  <li>Quick payment (we will talk more about this in the following section)</li>
+  <li>Notifications Bell: this will display a list of TODO’s or pending operations, as well as all sorts of things related to notifications (like when a payment has been made, etc.).</li>
 </ol>
 
-<p><strong>Build your Lumino Node</strong></p>
-
-<p>Note: We’re actually using Linux, it may be different in others OS</p>
-
-<ul>
-  <li>Clone <a href="https://github.com/rsksmart/lumino" rel="external noopener noreferrer" target="_blank">https://github.com/rsksmart/lumino</a> (We’re actually using branch "light-client-payments-onboarding")</li>
-  <li>Go to the path that you cloned the node</li>
-  <li>Create python virtual-env for Rif Lumino (Has to be made only one time)
-    <ul>
-      <li><code class="highlighter-rouge">virtualenv -p \&amp;lt;PATH\_TO\_PYTHON3.7\&amp;gt; clientEnv</code></li>
-      <li>Usually the path to python3.7 is /usr/bin/python3.7</li>
-    </ul>
-  </li>
-  <li>Activate virtual env
-    <ul>
-      <li>
-<code class="highlighter-rouge">source clientEnv/bin/activate</code>l</li>
-    </ul>
-  </li>
-  <li>Check if your python version is correctly installed
-    <ul>
-      <li><code class="highlighter-rouge">python --version (it should output version 3.7.x)</code></li>
-    </ul>
-  </li>
-  <li>Install Lumino requirements (For dev purposes we use requirements-dev.txt)
-    <ul>
-      <li><code class="highlighter-rouge">pip install -r requirements-dev.txt -c constraints.txt -e .</code></li>
-    </ul>
-  </li>
-  <li>You’re ready to start your Lumino node!</li>
-</ul>
-
-<p>Be sure the blockchain has the contracts deployed</p>
-
-<p>When deploying the contracts you should store 3 parameters brought to you, to later deploy your node, parameters are: EndpointRegistry, SecretRegistry, TokenNetworkRegistry</p>
-
-<p><strong>Run your Lumino node</strong></p>
-
-<p>Open your terminal, go to your Lumino folder installation and activate virtual_env:</p>
-
-<ul>
-  <li>source clientEnv/bin/activate</li>
-</ul>
-
-<p>With virtual-env activated run the following command:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lumino
-
-<span class="nt">--keystore-path</span> <span class="nv">$KEYSTORE</span><span class="se">\_</span>PATH
-
-<span class="nt">--network-id</span> 33
-
-<span class="nt">--eth-rpc-endpoint</span> <span class="nv">$RSK</span><span class="se">\_</span>NODE<span class="se">\_</span>URL
-
-<span class="nt">--environment-type</span> development
-
-<span class="nt">--tokennetwork-registry-contract-address</span><span class="o">=</span><span class="nv">$TOKENNETWORK</span><span class="se">\_</span>REGISTRY<span class="se">\_</span>CONTRACT<span class="se">\_</span>ADDRESS
-
-<span class="nt">--secret-registry-contract-address</span><span class="o">=</span><span class="nv">$SECRET</span><span class="se">\_</span>REGISTRY<span class="se">\_</span>CONTRACT<span class="se">\_</span>ADDRESS
-
-<span class="nt">--endpoint-registry-contract-address</span><span class="o">=</span><span class="nv">$ENDPOINT</span><span class="se">\_</span>REGISTRY<span class="se">\_</span>CONTRACT<span class="se">\_</span>ADDRESS
-
-<span class="nt">--no-sync-check</span>
-
-<span class="nt">--api-address</span><span class="o">=</span>localhost:5001
-
-<span class="nt">--discoverable</span>  <span class="c">#If this flag is present, then your node will be registered on Lumino Explorer</span>
-
-<span class="nt">--rnsdomain</span><span class="o">=</span><span class="nv">$YOUR</span><span class="se">\_</span>RNS<span class="se">\_</span>DOMAIN
-</code></pre></div></div>
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">FIELD</th>
-      <th scope="col">DESCRIPTION</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row">
-        $KEYSTORE\_PATH
-      </td>
-      <td>
-		    The path to your keystore
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        $RSK\_NODE\_URL
-      </td>
-      <td>
-        URL of your RSK node ([http://URL:PORT](about:blank))
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        $TOKENNETWORK\_REGISTRY\_CONTRACT\_ADDRESS
-      </td>
-      <td>
-        Address for the token registry contract deployed (view contracts table)
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        $SECRET\_REGISTRY\_CONTRACT\_ADDRESS
-      </td>
-      <td>
-        Address for the secret registry contract deployed (view contracts table)
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        $ENDPOINT\_REGISTRY\_CONTRACT\_ADDRESS
-      </td>
-      <td>
-        Address for the secret registry contract deployed (view contracts table)
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">
-        $YOUR\_RNS\_DOMAIN
-      </td>
-      <td>
-        RNS address associated with your rsk node address. i.e: --rnsdomain=lumino.rsk.co This parameter is optional
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li>After you run this command a Privacy Warning will be displayed in the console, you must accept it to continue</li>
-  <li>Select the Account that you want to use to run this node, and put your password to unlock it</li>
-  <li>Your node is running!</li>
-</ul>
-
-<p>For more information or for a guide about how to install it please go to: <a href="https://github.com/rsksmart/lumino" rel="external noopener noreferrer" target="_blank">https://github.com/rsksmart/lumino</a></p>
-
-<p><strong>Access the UI</strong></p>
-
-<p>To access the Dashboard of your Lumino node, use a browser and put the URL you settled in the api-address param before. We’re going to use localhost:5002 in this example.</p>
-
-<p><strong>Dashboard</strong></p>
-
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-dashboard.png" alt=""></div>
-<p><br></p>
-
-<p>Let’s talk about the dashboard view:</p>
-
-<p><strong>Header</strong></p>
-
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-header.png" alt=""></div>
-<p><br></p>
-
-<ol>
-  <li>At the left we have the Address of the node</li>
-  <li>There is a global search bar where we can search by the following criterias:</li>
-  <li>Lumino Nodes</li>
-  <li>Channels</li>
-  <li>Tokens</li>
-  <li>Quick payment (we will talk more about this in the following sections)</li>
-  <li>Notifications Bell, in there we are going to see a list of Todo’s, and all sorts of things related to notifications, like when a payment has been made, etc.</li>
-</ol>
-
-<p><strong>Quick Payment</strong></p>
+<h4 id="quick-payment">Quick Payment</h4>
 
 <div align="center"><img src="../../../../assets/img/lumino/lumino-node-quick-payment.png" alt=""></div>
-<p><br></p>
 
-<p>The idea of this modal is to make a payment to any partner in any token. The link is available across all the site so it can be accessed very fast for every part of the site.</p>
+<p>The purpose of this feature is to make a payment to any partner using any token. The link is available across all of the pages in the UI, in order to give quick access to it on every page.</p>
 
 <p>To make a payment we need to indicate 3 parameters:</p>
 
+<ol>
+  <li>Partner address: Node we want to make the payment to</li>
+  <li>Token Address: Token we want to pay in</li>
+  <li>Amount: Amount of tokens to be paid</li>
+</ol>
+
+<p>After you hit <strong>PAY</strong> a new payment will be initiated. You will be able to see the state of it in the Notification Bell icon placed at the header.</p>
+
+<p>A valid route must exist from your node to the destination for the payment to be successful. This includes nodes being online as well as enough balance across every hop.</p>
+
+<h3 id="token-view">Token View</h3>
+
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-token-view.png" alt=""></div>
+
+<p>In this view you can see all the tokens registered in the Lumino Network. In this example we just have one token registered called “Token”.</p>
+
+<p>The view has a filter bar where you can search by name, or sort by <em>Name</em>, <em>Symbol</em> or <em>Balance</em>.</p>
+
+<p>Each token displays the following information &amp; actions:</p>
+
 <ul>
-  <li>Partner address: Node we want to make the payment</li>
-  <li>Token Address: Token in which we want to pay</li>
-  <li>Amount: Amount of tokens to be sent.</li>
-</ul>
-
-<p>After you hit "pay" a new payment will be initiated and you can see the state in the Notification Bell icon at the header.</p>
-
-<p><strong>Token view</strong></p>
-
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-token-view.png" alt=""></div>
-<p><br></p>
-
-<p>In this view you can see all the tokens registered in the Lumino Network, for this we just have one token registered called "Token".</p>
-
-<p>The view has a filter bar where you can search by name, or sort by Name, Symbol or Balance.</p>
-
-<p>Each token display the following information &amp; actions:</p>
-
-<ul>
-  <li>Token Address: The Address of this token</li>
-  <li>Balance: your balance on the particular token</li>
-  <li>Two possible actions (just one is displayed):
+  <li>
+<strong>Token Address</strong>: the address of this token</li>
+  <li>
+<strong>Balance</strong>: your balance for this particular token</li>
+  <li>2 possible actions (only 1 is displayed at a time):
     <ul>
-      <li>Join Network: If you don’t have any channel open in this token this button will show. If you go for this action Lumino will create 3 new channels in the token with random partners. This function is very useful when you want to have channels in a particular token to start to send &amp; receive payments but you don’t know any other partner yet</li>
-      <li>Leave Network: If you already have at least one channel in the token, a Leave Network action will appear. This action will close ALL your open channels in the token.</li>
+      <li>
+<strong>Join Network</strong>: if you don’t have any channel open using this token, this button will appear. If you go for this action Lumino will create 3 new channels using this token, with random partners. This function is very useful when you want to have channels in a particular token to start to send &amp; receive payments but you don’t know any other partner yet.</li>
+      <li>
+<strong>Leave Network</strong>: If you already have at least 1 channel using this token, a <em>Leave Network</em> action will appear. This action will close ALL your open channels which use this token.</li>
     </ul>
   </li>
 </ul>
 
-<p><strong>Channels</strong></p>
+<h3 id="channels">Channels</h3>
 
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-channels.png" alt=""></div>
-<p><br></p>
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-channels.png" alt=""></div>
 
 <p>This view is used for:</p>
 
 <ul>
-  <li>Create channels between nodes</li>
-  <li>Send tokens (Like the one we made in Quick payment)</li>
-  <li>Interact with each channel created with our node, here we can make the following actions:
+  <li>Creating channels between nodes</li>
+  <li>Sending tokens (like the one we made in Quick payment)</li>
+  <li>Interacting with each channel created with our node, for which we can do the following:
     <ul>
       <li>Make a payment over this channel (this will be an offchain payment)</li>
-      <li>Deposit more tokens in the channel (this require an onchain transaction)</li>
-      <li>See a detail of the transactions for the channel</li>
-      <li>Close the channel (this require an onchain transaction)</li>
+      <li>Deposit more tokens in the channel (this requires an onchain transaction)</li>
+      <li>See details for each transaction related to the channel</li>
+      <li>Close the channel (this requires an onchain transaction)</li>
     </ul>
   </li>
 </ul>
 
-<p>See below so we explain in more detail each part of this page</p>
+<p>See below for a more in-depth explanation for each section of this page.</p>
 
-<p><strong>Button Send Tokens</strong></p>
+<h5 id="new-channel-button">
+<em>New Channel</em> button</h5>
 
-<div align="center"><img src="../../../../assets/img/lumino/lumino-node-send-tokens.png" alt=""></div>
-<p><br></p>
+<p>You can use this button to create a new channel between the running node and a chosen partner, using a specific token.</p>
 
-<p>As the boxes indicates, you need to put the Partner Address with you will open this new channel; A token address and an Amount to be added as your initial balance on the channel (of course you can always deposit more tokens after you create the channel).</p>
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-new-channel.png" alt=""></div>
+
+<p>As the fields indicate, you need to enter the chosen <strong>partner address</strong>, a <strong>token address</strong> and an <strong>amount</strong> to be added as your initial balance for the channel (of course you can always deposit more tokens after you create the channel).</p>
 
 <p>After you create the channel, you will see a new channel widget like the following in the channel list:</p>
 
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-channel-list.png" alt=""></div>
-<p><br></p>
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-channel-list.png" alt=""></div>
 
-<p>We already discussed about the actions before, so let’s talk about the information displayed:</p>
+<p>We already discussed the actions before, so let’s talk about the information displayed:</p>
 
 <ul>
-  <li>Channel Id: The id of the channel</li>
+  <li>The ID for the channel</li>
   <li>Address of the partner</li>
-  <li>Token used on this channel</li>
-  <li>And your balance in this particular channel</li>
-  <li>Status: the status of the channel</li>
+  <li>Token used for this channel</li>
+  <li>Your balance in this particular channel</li>
+  <li>The status of the channel; open, closed, etc.</li>
 </ul>
 
-<p><strong>Pay button (from channel widget)</strong></p>
+<h5 id="send-tokens-button">
+<em>Send Tokens</em> button</h5>
 
-<p>As an example we’re going to send some tokens to the partner, lets send 15 tokens:</p>
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-send-tokens.png" alt=""></div>
 
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-payments.png" alt=""></div>
-<p><br></p>
+<p>This button works in the exact same way as the <a href="#quick-payment"><em>Quick Payment</em></a> button.</p>
 
-<p>After that, we receive a Success message indicating the amount that we just sent (When the transaction is done):</p>
+<p>Now let’s discuss the actions for each channel widget.</p>
+
+<h5 id="pay-button-from-channel-widget">
+<em>Pay</em> button (from channel widget)</h5>
+
+<p>As an example we’re going to send some tokens to the partner; say for example 15.</p>
+
+<p>To do this, just click the <em>Pay</em> button, enter <code class="highlighter-rouge">15</code> as an <strong>Amount</strong>, and press <code class="highlighter-rouge">PAY</code>.</p>
+
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-channel-payment.png" alt=""></div>
+
+<p>When the transfer is done, a <em>Success</em> message is received, indicating the amount of tokens we’ve sent:</p>
 
 <div align="center"><img src="../../../../assets/img/lumino/lumino-node-transfer-success.png" alt=""></div>
-<p><br></p>
 
-<p><strong>Reminder note:</strong> In the notifications we display the amounts in wei, that’s why you see those big numbers there.</p>
+<p><strong>Reminder:</strong> amounts in the notifications are displayed wei (that’s why you’ll see those big numbers there).</p>
 
-<p><strong>Deposit button (from channel widget)</strong></p>
+<p>You can see the detail of the payment in the <em>Payments</em> view on the sidebar:</p>
 
-<p>If we want to deposit more tokens in the channel we can do it by clicking the Deposit button, and indicating some amount. Let’s add some tokens to the balance at our node side.</p>
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-payments.png" alt=""></div>
+
+<h5 id="deposit-button-from-channel-widget">
+<em>Deposit</em> button (from channel widget)</h5>
+
+<p>If we want to deposit more tokens in the channel we can do it by clicking the <em>Deposit</em> button and indicating some amount. Let’s add some tokens to the balance from our node’s side.</p>
+
+<p>Click the button, enter <code class="highlighter-rouge">30</code> as an amount, and press <code class="highlighter-rouge">Deposit</code>.</p>
 
 <div align="center"><img src="../../../../assets/img/lumino/lumino-node-deposit.png" alt=""></div>
-<p><br></p>
 
-<p>After we receive the confirmation, check the channel and you’ll see that in effect, the balance is upgraded</p>
+<p>After we receive the confirmation, check the channel and you’ll see that the balance has indeed been updated.</p>
 
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-balance.png" alt=""></div>
-<p><br></p>
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-balance.png" alt=""></div>
 
-<p>Remember, we got 80 at the start, we paid 15 to our partner, and now we deposited 30.</p>
+<p>Remember, we had 80 tokens at the start, and then we paid 15 to our partner. Now we’ve deposited 30 more.</p>
 
-<p><strong>Reminder note:</strong> Of course you must have enough onchain balance in order to make the deposit.</p>
+<p><strong>Reminder:</strong> of course you must have enough onchain balance in order to make the deposit.</p>
 
-<p>View Details button (from channel widget)</p>
+<h5 id="view-details-button-from-channel-widget">
+<em>View Details</em> button (from channel widget)</h5>
 
-<p>Let’s check the View Details button, so we can see the transaction that we recently made</p>
+<p>Let’s check the <em>View Details</em> button, so we can see the payments that we’ve recently submitted.</p>
 
-<div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-details.png" alt=""></div>
-<p><br></p>
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-details.png" alt=""></div>
 
-<p>In this view we can see all the transactions that has been made in the channel that we click the View details button.</p>
+<p>In this view we can see details for all the payments that have been made, related to the channel for which we’ve clicked the <em>View Details</em> button.</p>
 
-<p>Here we got some features to filter the transactions that happened in the channel.</p>
+<p>Here we have some features to filter the payments that happened in the channel.</p>
 
 <ul>
-  <li>You can filter by date, indicating a from/to date</li>
-  <li>Filter in the dropbox by
+  <li>You can filter by date, indicating a <strong>from</strong> or <strong>to</strong> date</li>
+  <li>Use the dropdown to filter by:
     <ul>
-      <li>All, it will not discriminate the data</li>
-      <li>Received, just what your partner have sent</li>
-      <li>Failed, in case of fail, you can review all the failures here</li>
-      <li>Sent, successful cases</li>
+      <li>
+<em>All</em>: it will not discriminate the data</li>
+      <li>
+<em>Received</em>: show only the payments made by your partner</li>
+      <li>
+<em>Failed</em>: in case of a failed payment, it can be reviewed here</li>
+      <li>
+<em>Sent</em>: show successful payments made to your partner</li>
     </ul>
   </li>
   <li>Pagination
     <ul>
-      <li>Indicate how many rows you want to see. Options are: 5, 10, 20, 25, 50, 100 rows.</li>
+      <li>Indicate how many rows you want to see. Options are: 5, 10, 20, 25, 50 &amp; 100 rows</li>
       <li>Advance between pages</li>
     </ul>
   </li>
-  <li>Also you have some interesting data presented with more beauty in the top of the page. Such as your address, the token that we’re using, and the partner address.</li>
+  <li>You can also see interesting data presented more aesthetically at the top of the page, such as your address, the token that’s being used, and the partner address.</li>
 </ul>
 
-<p><strong>Close (Channel)</strong></p>
+<h5 id="close-from-channel-widget">Close (from channel widget)</h5>
 
-<div align="center"><img src="../../../../assets/img/lumino/lumino-node-close-channel.png" alt=""></div>
-<p><br></p>
+<p><img src="../../../../assets/img/lumino/lumino-node-close-channel.png" alt=""></p>
 
-<p>When clicking the close, you’ll need to confirm the action.</p>
+<p>When clicking <em>Close</em>, you’ll need to confirm the action as shown.</p>
 
-<p>The channel status will go to "Closed" and then after a few validations, it’ll go to "Waiting_for_settlement" (This action will take 500 blocks), after that the channel status will say "Settled" for a short period and the channel will be deleted from the view.</p>
+<p>The channel status will change to <code class="highlighter-rouge">closed</code> and then after a few validations, it’ll change to <code class="highlighter-rouge">waiting_for_settlement</code>.</p>
 
-<p>When all this procedures are finished the payment is done.</p>
+<p>The latter state will last for take 500 blocks; after that, the channel status will displayed <code class="highlighter-rouge">settled</code> for a short period of time, and then the channel will be deleted from the view.</p>
 
-<p><strong>Payments</strong></p>
+<h3 id="payments">Payments</h3>
 
 <div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-payments.png" alt=""></div>
-<p><br></p>
 
-<p>This view is similar to the view details button of each channel, in resume it shows all the payments made in the channels. It simply does not discriminate by channel, like the view details button does.</p>
+<p>This view is similar to the <em>View Details</em> button of each channel.</p>
 
-<p>Before you leave, lets see how all the changes we have made affected the dashboard:</p>
+<p>In a nutshell, it shows all the payments made in the channels. The difference is that it does not discriminate by channel like the <em>View Details</em> button does.</p>
 
-<p>(We have made some changes, transactions and failures to see more numbers in this screenshot)</p>
+<p>Before you leave, let’s see how all the changes we have made affected the dashboard:</p>
+
+<p>(Note: we have executed a couple more actions, like transactions and failures to see more numbers at this point)</p>
 
 <div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-metrics.png" alt=""></div>
-<p><br></p>
 
-<p>Just metrics that we find useful to you</p>
+<p>We believe these metrics should prove useful to you.</p>
 
-<p>(Also if you scroll down a little bit you will see a small table with relevant data, like in payments)</p>
+<p>Additionally, if you scroll down a little bit you will see a small table with relevant data, like in payments:</p>
 
 <div align="center"><img width="100%" src="../../../../assets/img/lumino/lumino-node-payments-table.png" alt=""></div>
-<p><br></p>
+
+<h3 id="invoices">Invoices</h3>
+
+<h4 id="generation">Generation</h4>
+
+<p>An invoice is a text containg all the information of a payment, which can be later used by a node to make a payment to another.</p>
+
+<p>Lumino allows invoice generation, but currently the only way to do this is through the REST API.</p>
+
+<p>To create a new invoice, send a <code class="highlighter-rouge">POST</code> request to <code class="highlighter-rouge">&lt;PaymentReceiverHost&gt;:&lt;Port&gt;/api/v1/invoice</code> with the following body:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"token_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xF87366bE772C612f94F73C87aB4F5BE79c0B1AEd"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"currency_symbol"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lum"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"partner_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x5BCd2644CFe6Cf5CBAb14e0D96F2Fe8cDc403E18"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"prueba_invoice"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"expires"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1588634544"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li>
+<code class="highlighter-rouge">token_address</code> is the token’s address.</li>
+  <li>
+<code class="highlighter-rouge">currency_symbol</code> is the token’s symbol (case sensitive).</li>
+  <li>
+<code class="highlighter-rouge">partner_address</code> is the receiver of the payment. It MUST be the same address as the one of the node receiving the API call. Otherwise, the invoice will be generated, but the invoice won’t work when you try to pay it.</li>
+  <li>
+<code class="highlighter-rouge">expires</code> is the number of seconds until the payment expires.</li>
+</ul>
+
+<p>The response will be something like:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"expiration_date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-24T01:18:40.548412"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"encode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lmlum11psrg4lspp560ejml7f46g2mj8dzgtvwtaq8x2v3tqcn7fv48qvhmkts0auzz7sdqhwpe82etzv90kjmnkda5kxegxqyz5vqnpqt0xjv3x0um84ew43fcxeduh73nwyq0sctpqlpekd0nh93sjl98h8jr6kn6mu7wqkxhd4kmlkde2zgukw6vzyu0hf79ngrjg7d7fyaj4u6gqecg0k2t0djwsk57jlgp4xvc8zzn6ek05t329yzu5kdy3ualx4fquuh70f49xpqcpuas3ml"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"payment_hash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xd3f32dffc9ae90adc8ed1216c72fa03994c8ac189f92ca9c0cbeecb83fbc10bd"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"secret"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x08304db713bf298ef4b1e9a87437185a36d0b9bfff3974b946421fdd94c32577"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lum"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"amount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"prueba_invoice"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"target_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x5bcd2644cfe6cf5cbab14e0d96f2fe8cdc403e18"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"token_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xf87366be772c612f94f73c87ab4f5be79c0b1aed"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"created_at"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-02-23T01:18:40"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>The <code class="highlighter-rouge">encode</code> field corresponds to the encoded invoice, and it’s the text which holds the information of the payment that can be used to pay it.</p>
+
+<h4 id="payment">Payment</h4>
+
+<div align="center"><img src="../../../../assets/img/lumino/lumino-node-invoice-payment.png" alt=""></div>
+
+<p>In order to pay an invoice, click on the <code class="highlighter-rouge">Invoice</code> switch inside the <code class="highlighter-rouge">Send Tokens</code> view or <code class="highlighter-rouge">Pay</code> button from the channel widget.</p>
+
+<p>A text area will be displayed where you can paste the encoded invoice.</p>
+
+<p>Once you click the <code class="highlighter-rouge">Pay</code> button, the node will decode the payee, the token, and the amount from the invoice, and pay it as a regular offchain Lumino transfer. Note that a path of channels with enough balance will be needed as in any other payment.</p>
 
 
                   

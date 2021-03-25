@@ -466,15 +466,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../../node/">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../../node/install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../../node/install/">Install</a></li>
-                          <li><a href="../../node/install/macos/">MacOS</a></li>
-                          <li><a href="../../node/install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../../node/install/">Install</a></li>
                       <li><a href="../../node/use/">How to use</a></li>
                       <li><a href="../../node/contribute/">Contribute</a></li>
                     </ul>
@@ -970,7 +962,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-01-20 15:04:39 +0000T00:00:00.000Z">2020-01-20</time> | -->
+    <!--time role="presentation" datetime="2021-03-12 19:49:52 +0000T00:00:00.000Z">2021-03-12</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/lumino/libraries/lumino-js.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1326,15 +1318,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../../node/">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../../node/install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../../node/install/">Install</a></li>
-                          <li><a href="../../node/install/macos/">MacOS</a></li>
-                          <li><a href="../../node/install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../../node/install/">Install</a></li>
                       <li><a href="../../node/use/">How to use</a></li>
                       <li><a href="../../node/contribute/">Contribute</a></li>
                     </ul>
@@ -1783,8 +1767,9 @@
 
                   <h1 class="page-title" id="top">Lumino JS SDK</h1>
 
-                  <p>This SDK aims to help the development of integrations with Lumino that use JavaScript, providing an easy interface to communicate with Lumino’s REST API and request the information required.
-For that purpose, many ES2015 features were used, and Promises are used as notation to help dealing with asynchronous code.</p>
+                  <p>This SDK aims to help the development of integrations with Lumino that use JavaScript, providing an easy interface to communicate with Lumino’s REST API and request the information required.</p>
+
+<p>For that purpose, many ES2015 features were used, and Promises are used as notation to help dealing with asynchronous code.</p>
 
 <h2 id="requirements">Requirements</h2>
 <p>In order to use this SDK, you’ll need the following tools:</p>
@@ -1811,31 +1796,31 @@ For that purpose, many ES2015 features were used, and Promises are used as notat
 </ol>
 
 <h2 id="usage">Usage</h2>
-<p>As said before, this SDK relies heavily on <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises" rel="external noopener noreferrer" target="_blank">Promises</a>, making it easier to handle the asynchronous requests made to the API.
-Besides that, it provides a <code class="highlighter-rouge">Lumino</code> object containing several methods corresponding to the calls to be performed.</p>
+<p>As previously mentioned, this SDK relies heavily on <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises" rel="external noopener noreferrer" target="_blank">Promises</a>, making it easier to handle the asynchronous requests made to the API.</p>
+
+<p>Besides that, it provides a <code class="highlighter-rouge">Lumino</code> object containing several methods corresponding to the calls to be performed.</p>
 
 <p>This is a generic example of how to use the SDK, if you need specific details for a specific module, refer to <a href="https://github.com/rsksmart/lumino-sdk/tree/master/samples" rel="external noopener noreferrer" target="_blank">samples folder</a>.</p>
 
 <p>Before executing any request, you need to call the constructor passing your credentials as parameters, making it possible to authorize the calls to the API:</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">lumino</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lumino</span><span class="p">({</span>    
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">lumino</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lumino</span><span class="p">({</span>    
     <span class="na">luminoNodeBaseUrl</span><span class="p">:</span> <span class="dl">"</span><span class="s2">http://api-url.lumino-node/api/v1/</span><span class="dl">"</span>
 <span class="p">});</span>
 </code></pre></div></div>
 
 <p>From this point on, you just need to call the methods made available to call the API and retrieve the data you’re looking for. Following the Promises notation, you should use <code class="highlighter-rouge">.then()</code>/<code class="highlighter-rouge">.catch()</code> to handle respectively the successful and failed requests.</p>
 
-<p>Except for some special cases, most of the calls only take an object as parameter. After that, you’ll need to refer to the API to tune the query as intended.</p>
+<p>Except for some special cases, most of the calls only take an object as parameter. After that, you’ll need to refer to the API to adjust the query as intended.</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-	<span class="nx">lumino</span><span class="p">.</span><span class="nx">getChannels</span><span class="p">({</span>
-	    <span class="na">token_addresses</span><span class="p">:</span> <span class="dl">'</span><span class="s1">0x714E99c00D4Abf4a8a2Af90Fd40B595C68801C42</span><span class="dl">'</span>
-	<span class="p">})</span>  
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">lumino</span><span class="p">.</span><span class="nx">getChannels</span><span class="p">({</span>
+        <span class="na">token_addresses</span><span class="p">:</span> <span class="dl">'</span><span class="s1">0x714E99c00D4Abf4a8a2Af90Fd40B595C68801C42</span><span class="dl">'</span>
+    <span class="p">})</span>  
     <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>  
-        <span class="c1">// TODO stuff </span>
+        <span class="c1">// TODO your logic here </span>
     <span class="p">})</span>  
     <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">error</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>  
-        <span class="c1">// TODO Handle the error </span>
+        <span class="c1">// TODO handle the error </span>
     <span class="p">});</span>
 
 </code></pre></div></div>
@@ -1860,7 +1845,7 @@ Besides that, it provides a <code class="highlighter-rouge">Lumino</code> object
 <p>If you wish to contribute to this repository and further extend the API coverage of the SDK, here are the steps necessary to prepare your environment:</p>
 
 <ol>
-  <li>Clone the repository</li>
+  <li>Clone the repository.</li>
   <li>In the root folder, run <code class="highlighter-rouge">npm install</code> to install all the dependencies.</li>
   <li>Edit the file named <code class="highlighter-rouge">sdk-config.json</code> to provide API SDK config params with following this structure:
     <div class="language-json highlighter-rouge">

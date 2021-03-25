@@ -741,7 +741,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "Pre requisites Access to a synched RSK node. You can do this in a variety of ways: Run your own node on Testnet or Mainnet Compile and run a RSK node locally Mongo Database Server (Version 3.6.x) Java 8 (Lastest Release) Maven (Version 3.6.x) RSK valid account Build RIF Lumino Explorer API from code Get the code by cloning the repo Go to the path you downloaded or cloned Lumino’s code (let’s call this path $RIF_LUMINO_EXPLORER_API_PATH) Go to the application.properties and set the lumino.contract.tokenNetworkRegistry property, set the value with your Token Network registry. Set the lumino.explorer.api.account.file property to the JSON file of your RSK account. Example: lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json Set the lumino.explorer.api.account.password property to the password of your account. Example: lumino.explorer.api.account.paassword=3XhLXn[(Tub6&#39;~Qe Install project dependencies with the follow command: mvn install Set Up Mongo Database Go to $RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/database/ Run the following command when the mongodb server is installed on the local machine: user:~/mongo lumino-explorer-api-database-setup.js If an error is showed, you must execute the following script, specifying…"
+  "desc": "Pre requisites Access to a synched RSK node. You can do this in a variety of ways: Run your own node on Testnet or Mainnet Compile and run a RSK node locally Mongo Database Server (Version 3.6.x) Java 8 (Lastest Release) Maven (Version 3.6.x) RSK valid account Build RIF Lumino Explorer API from code Get the code by cloning the repo Go to the path you downloaded or cloned Lumino Explorer’s code (let’s call this path $RIF_LUMINO_EXPLORER_PATH and define $RIF_LUMINO_EXPLORER_API_PATH=$RIF_LUMINO_EXPLORER_PATH/lumino-explorer-api) Go to the $RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/application.properties file and set the spring.profiles.active property to the profile of your preference (prod or dev). Let’s call it $PROFILE. Go to $RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/application-$PROFILE.properties file, and set the lumino.contract.tokenNetworkRegistry property to the TokenNetworkRegistry address. Set the lumino.explorer.api.account.file property to the JSON file of your RSK account. Example: lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json Set the lumino.explorer.api.account.password property to the password of your account. Example: lumino.explorer.api.account.paassword=3XhLXn[(Tub6&#39;~Qe Set Up Mongo Database Go to $RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/database Run the following command when the mongodb server is installed on the local machine: user:~/mongo lumino-explorer-api-database-setup.js If…"
  },
  {
   "url": "/rif/communication/architecture/",
@@ -949,7 +949,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "If you find an issue in Lumino and want to report it, or you want to request a feature. You can make an issue in the github repo, we suggest to create an issue with the following structure: For Feature Requests: Full description of the feature Explanation of why you think it’s useful for Lumino. For Bugs: Short description for the problem Setup description (System you’re using, Lumino version, RSKj version, etc) Explain exactly what was the bug Expected behavior Creating a Pull Request To contribute with the codebase of Lumino, you can open a Pull Request (PR) against our repository. All PRs should be: Self-contained. As short as possible and address a single issue or even a part of an issue. Consider breaking long PRs into smaller ones. It should have a test that allow to verify the fix or functionality To get you PR merged into the main repository, you should have at least one approved review from our Lumino dev team."
+  "desc": "If you find an issue in Lumino and want to report it, or if you want to request a feature, you can make an issue in the GitHub repo. We suggest creating an issue with the following structure: Feature Requests Full description of the feature Explanation of why you think it’s useful for Lumino Bugs Short description for the problem Setup description (system you’re using, Lumino version, RSKj version, etc.) Explain exactly what the bug was Expected behavior Creating a Pull Request To contribute with the codebase of Lumino, you can open a Pull Request (PR) against our repository. All PRs should be: Self-contained. As short as possible, and they should address a single issue or even a part of an issue. Consider breaking long PRs into smaller ones. It should have tests that allow the verification of the fix or functionality. To get you PR merged into the main repository you should have at least one approval from the Lumino dev team."
  },
  {
   "url": "/rif/identity/mvp/services/convey-service/",
@@ -1717,15 +1717,15 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "If you want to run your own explorer, you have to setup the API and the web. API Web"
+  "desc": "If you want to run your own explorer, you have to setup the API and the web components. API Web"
  },
  {
   "url": "/rif/lumino/explorer/",
-  "title": "Lumino Explorer How To Use",
+  "title": "Lumino Explorer - How To Use",
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "Repository: https://github.com/rsksmart/lumino-explorer Mainnet public explorer: https://explorer.lumino.rifos.org/ RIF Lumino Explorer is a website which allows us to view the status of the Lumino Network. Each node can decide to be present or not in this explorer. Dashboard On the dashboard we have several sections: Node graph: At the center of the screen we can see all the nodes which opted to be included in the explorer and how they connect between each other Tokens dropdown: Above the graph, there is a dropdown which allows us to select which token we want to display information for. Search box: allow to search by: Node address Channel id Token Ot the left, we have a summary of the network At the top right we have 2 buttons to go to: View all nodes View all channels Summary Widget At the left of the dashboard we will see a summary widget with some general information about the network and the token selected in the dropdown. In the Dashboard (Screenshots above) we got some statistics from the Mainnet. How many nodes are connected to the…"
+  "desc": "Repository Mainnet Public Explorer RIF Lumino Explorer is a website which allows users to view the status of the Lumino Network. Each node can decide whether or not to be present in this explorer. Dashboard On the dashboard we have several sections: Node graph: at the center of the screen we can see all the nodes which opted to be included in the explorer and how they connect to each other. Tokens dropdown: above the graph, there is a dropdown which allows us to select which token we want to display information for. Search box: allows searching by: Node address Channel ID Token Ot the left, we have a summary of the network At the top right we have 2 buttons to go to: View all nodes View all channels Summary Widget At the left of the dashboard we will see a summary widget with some general information about the network and the token selected in the dropdown. In the Dashboard we can see statistics corresponding to Mainnet. How many nodes are connected to the Lumino…"
  },
  {
   "url": "/rif/lumino/libraries/",
@@ -1733,7 +1733,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "The developer community is working to help other developers enabling libraries and SDKs. Platform Component Javascript Lumino JS SDK"
+  "desc": "The developer community is working to help other developers build libraries and SDKs. Platform Component Javascript Lumino JS SDK"
  },
  {
   "url": "/rif/lumino/light-client/specs/",
@@ -1753,11 +1753,11 @@
  },
  {
   "url": "/rif/lumino/node/install/",
-  "title": "Install",
+  "title": "Get your own RIF Lumino node up and running",
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "Install your own Lumino Node Install on Ubuntu Install on MacOS"
+  "desc": "To know more on how to install a Lumino node, please refer to the Github documentation: Install your own Lumino Node on Ubuntu Install your own Lumino Node on MacOS"
  },
  {
   "url": "/rif/lumino/node/",
@@ -1765,7 +1765,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "Here you’ll find more information about Lumino Node: Architecture Install How to use Protocol Contribute"
+  "desc": "Here you’ll find more information about the Lumino Node: Architecture Install How to use Protocol Contribute"
  },
  {
   "url": "/rif/lumino/",
@@ -1773,7 +1773,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "The RIF Lumino Network is the first off-chain state channel network launched on RSK. It is also a cornerstone of a broader vision called RIF Payments which will allow users to seamlessly interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden. RIF Lumino allows to make off-chain payments on any token deployed on RSK in a fast, reliable, with low fees and secured by the Bitcoin network. RIF Lumino will be the first payment network supported by RIF Payments in his path to a global financial inclusion. If you want to read more about RIF Lumino and how to be part of the network please follow the link https://explorer.lumino.rifos.org/ RIF Payments is a set of protocols whose primary goal is to enable fast and cheap peer-to-peer payments that could scale to achieve true world-wide financial inclusion. RIF Payments is composed of three main protocols: RIF Payments Full: it is a protocol which creates an abstraction layer to access different payment networks allowing cross-token and cross-network payments. RIF Payments Light: it is a protocol to allow light clients to access RIF Payments Full without jeopardizing security and decentralization. RIF Payments Exchange: this protocol will be used…"
+  "desc": "The RIF Lumino Network is the first off-chain state channel network launched on RSK. It is also a cornerstone of a broader vision called RIF Payments which will allow users to seamlessly interact with multiple cross-blockchain off-chain networks such as Lumino, Lightning and Raiden. RIF Lumino allows users to make off-chain payments on any token deployed on RSK in a fast, reliable way, with low fees and secured by the Bitcoin network. RIF Lumino is the first payment network supported by RIF Payments in its path to global financial inclusion. If you want to read more about RIF Payments and how to be part of the network please visit the RIF Payments site. RIF Payments is a set of protocols with the primary goal of enabling fast and cheap peer-to-peer payments which can scale to achieve true world-wide financial inclusion. RIF Payments is composed of three main protocols: RIF Payments Full: it is a protocol which creates an abstraction layer to access different payment networks allowing cross-token and cross-network payments. RIF Payments Light: it is a protocol meant to allow light clients to access RIF Payments Full without jeopardizing security and decentralization. RIF Payments Exchange: this protocol will…"
  },
  {
   "url": "/rif/marketplace/guide/",
@@ -2269,15 +2269,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "This SDK aims to help the development of integrations with Lumino that use JavaScript, providing an easy interface to communicate with Lumino’s REST API and request the information required. For that purpose, many ES2015 features were used, and Promises are used as notation to help dealing with asynchronous code. Requirements In order to use this SDK, you’ll need the following tools: Node.js v6.3.0 or above Node installation will include NPM, which is responsible for the dependencies management. Installation Browser Checkout the repository git clone git@github.com:Lumino/lumino-js-sdk.git. Go to the lumino-js-sdk directory. Run npm install. Run gulp build. Use the bundle.js file generated in dist folder to use the SDK in the browser. Include it in your page like this: &amp;lt;script src=&quot;path/to/lumino-js-sdk.js&quot;&amp;gt;&amp;lt;/script&amp;gt; . Define the constructor like this: const Lumino = Lumino.default; Usage As said before, this SDK relies heavily on Promises, making it easier to handle the asynchronous requests made to the API. Besides that, it provides a Lumino object containing several methods corresponding to the calls to be performed. This is a generic example of how to use the SDK,…"
- },
- {
-  "url": "/rif/lumino/node/install/macos/",
-  "title": "Get your own RIF Lumino node up and running on MacOS",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Prerequisites Access to a synched RSK node. You can do this in a variety of ways: Public nodes Run your own node on Testnet or Mainnet Compile and run a RSK node locally An RSK account with an R-BTC balance NOT lower than 0.001 R-BTC XCode Install required libraries/software Install command line tools xcode-select --install Install Homebrew From a Terminal window run: /usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot; Install OpenSSL brew install openssl export LC_ALL=&quot;en_US.UTF-8&quot;\nexport LC_CTYPE=&quot;en_US.UTF-8&quot; export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/ Install Python 3.7 brew install python3 Install PIP sudo easy_install pip Install virtualenv pip3 install virtualenv Install libpq brew install libpq Install postgresql brew install postgresql Install psycopg2 env LDFLAGS=&quot;-I/usr/local/opt/openssl/include…"
+  "desc": "This SDK aims to help the development of integrations with Lumino that use JavaScript, providing an easy interface to communicate with Lumino’s REST API and request the information required. For that purpose, many ES2015 features were used, and Promises are used as notation to help dealing with asynchronous code. Requirements In order to use this SDK, you’ll need the following tools: Node.js v6.3.0 or above Node installation will include NPM, which is responsible for the dependencies management. Installation Browser Checkout the repository git clone git@github.com:Lumino/lumino-js-sdk.git. Go to the lumino-js-sdk directory. Run npm install. Run gulp build. Use the bundle.js file generated in dist folder to use the SDK in the browser. Include it in your page like this: &amp;lt;script src=&quot;path/to/lumino-js-sdk.js&quot;&amp;gt;&amp;lt;/script&amp;gt; . Define the constructor like this: const Lumino = Lumino.default; Usage As previously mentioned, this SDK relies heavily on Promises, making it easier to handle the asynchronous requests made to the API. Besides that, it provides a Lumino object containing several methods corresponding to the calls to be performed. This is a generic example of how to use the SDK,…"
  },
  {
   "url": "/rif/marketplace/mainnet/",
@@ -2477,7 +2469,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": ""
+  "desc": "TODO: missing doc"
  },
  {
   "url": "/rif/identity/data-vault/architecture/provider/",
@@ -2509,7 +2501,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "Check out our public repositories Lumino Node Lumino Web Lumino contracts Lumino Node SDK Lumino Explorer"
+  "desc": "Check out our public repositories: RIF Lumino Network RIF Lumino node WEB RIF Lumino Contracts Lumino JavaScript SDK Lumino Light Client DApp RIF Lumino Explorer Rif-Notifier Nifty Wallet Browser Extension"
  },
  {
   "url": "/rif/marketplace/public-repos/",
@@ -3064,14 +3056,6 @@
   "desc": "Welcome to RNS! You can use RSK testnet to try the service for free. Download a browser wallet. Recommended: Nifty Wallet Connect your wallet to RSK Testnet. You can do it with the top left selector on Nifty Wallet. (optional) List tRIF token balance using this address: 0x19F64674D8A5B4E652319F5e239eFd3bc969A1fE. In Nifty wallet do this in Tokens tab. Browse to RSK faucet to get some gas. Browse to tRIF faucet to get some test RIF tokens. Browse to RNS Testnet Manager and search for your desired domain. Follow the registration process."
  },
  {
-  "url": "/rif/lumino/node/install/ubuntu/",
-  "title": "Get your own RIF Lumino node up and running on Ubuntu",
-  "category": "",
-  "tags": "",
-  "date": "",
-  "desc": "Prerequisites 1. Access to a synched RSK node. You can do this in a variety of ways: * Public nodes * Run your own node on Testnet or Mainnet * Compile and run a RSK node locally 1. An RSK account with an R-BTC balance NOT lower than 0.001 R-BTC 1. Ubuntu 18.04+ ## Install required libraries/software ### Install Python 3.7 Update your packages and install pre-requisites: bash sudo apt update sudo apt install software-properties-common Add deadsnakes PPA to your sources list: bash sudo add-apt-repository ppa:deadsnakes/ppa Once the repository is enabled install Python 3.7: bash sudo apt install python3.7 ### Install Python 3.7-dev If you didn’t update your local APT repository: bash sudo apt update To install python 3.7-dev run the following command: bash sudo apt-get install libpq-dev python3.7-dev ### Install PIP If you didn’t update your local APT repository: bash sudo apt update Install pip3: bash sudo apt-get install python3-pip ### Install virtualenv If you didn’t update your local APT repository: bash sudo apt update Install virtualenv: bash sudo apt-get install virtualenv ## Build RIF Lumino from code 1. Get the code from https://github.com/rsksmart/lumino/releases/tag/0.0.2 2. Uncompress the downloaded file…"
- },
- {
   "url": "/rif/identity/data-vault/use/",
   "title": "",
   "category": "",
@@ -3085,7 +3069,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "How to build and run a Lumino node. How to use its user interface to view dashboard, quick payments, token view, send tokens, pay, deposit, close channels, and view payments"
+  "desc": "How to build and run a Lumino node. How to use its user interface to view the dashboard, quick payments, token view, send tokens, pay, deposit, open and close channels, and view payments"
  },
  {
   "url": "/tutorials/using-blockmason/",
@@ -3149,7 +3133,7 @@
   "category": "",
   "tags": "",
   "date": "",
-  "desc": "Pre requisites 1. Lumino Explorer Api Running 2. Yarn (Latest Version) ## Build RIF Lumino Explorer WEB from code 1. Get the [RELEASE.NUMBER] code from [GITHUB.URL] 2. Go to the path you downloaded or cloned Lumino’s code (lets call this path $RIF_LUMINO_EXPLORER_WEB_PATH) bash yarn install ## Start your RIF Lumino Explorer WEB 1. Go to $RIF_LUMINO_EXPLORER_WEB_PATH 2. Run the following command: RIF_LUMINO_EXPLORER_WEB_PATH=$YOUR_LUIMNO_API_HOST_AND_PORT yarn start &amp;lt;table class=&quot;table&quot;&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th scope=&quot;col&quot;&amp;gt;FIELD&amp;lt;/th&amp;gt; &amp;lt;th scope=&quot;col&quot;&amp;gt;DESCRIPTION&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td scope=&quot;row&quot;&amp;gt;$YOUR_LUIMNO_API_HOST_AND_PORT&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; If this parameter is not present, the value that the application will take to invoke services to the api explorer will be http://localhost:8080 &amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; After you run yarn command, you will be presented with the following message: bash yarn run $YOUR_YARN_VERSION $ react-scripts start Starting the development server... Compiled successfully! You can now view RIF-Lumino in the browser. Local: http://localhost:3000/ On Your Network: http://$YOUR_PUBLIC_IP_MACHINE:3000/ Note that the development build is not optimized. To create a production build, use yarn build. ## Additional help The following sections are created using an Ubuntu 18.04.2 LTS ### Install Yarn Download: https://yarnpkg.com/en/docs/install#debian-stable) You will first need to configure the repository: ``` curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key…"
+  "desc": "Pre requisites 1. Lumino Explorer Api Running 2. Yarn (Latest Version) ## Build RIF Lumino Explorer WEB from code 1. Get the code from the repo 2. Go to the path you downloaded or cloned Lumino Explorer’s code (let’s call this path $RIF_LUMINO_EXPLORER_PATH and define $RIF_LUMINO_EXPLORER_WEB_PATH=$RIF_LUMINO_EXPLORER_PATH/lumino-explorer-web) bash yarn install ## Start your RIF Lumino Explorer WEB 1. Go to $RIF_LUMINO_EXPLORER_WEB_PATH 2. Run the following command: RIF_LUMINO_EXPLORER_WEB_PATH=$YOUR_LUIMNO_API_HOST_AND_PORT yarn start &amp;lt;table class=&quot;table&quot;&amp;gt; &amp;lt;thead&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th scope=&quot;col&quot;&amp;gt;FIELD&amp;lt;/th&amp;gt; &amp;lt;th scope=&quot;col&quot;&amp;gt;DESCRIPTION&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/thead&amp;gt; &amp;lt;tbody&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td scope=&quot;row&quot;&amp;gt;$YOUR_LUIMNO_API_HOST_AND_PORT&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; If this parameter is not present, the value that the application will take to invoke services to the api explorer will be http://localhost:8080 &amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/tbody&amp;gt; &amp;lt;/table&amp;gt; After you run yarn command, you will be presented with the following message: bash yarn run $YOUR_YARN_VERSION $ react-scripts start Starting the development server... Compiled successfully! You can now view RIF-Lumino in the browser. Local: http://localhost:3000/ On Your Network: http://$YOUR_PUBLIC_IP_MACHINE:3000/ Note that the development build is not optimized. To create a production build, use yarn build. ## Additional help The following sections are created using an Ubuntu 18.04.2 LTS ### Install Yarn Download: https://yarnpkg.com/en/docs/install#debian-stable) You will first need to configure the repository: ``` curl -sS…"
  },
  {
   "url": "/tutorials/workshop-js-testing/",
@@ -3212,7 +3196,7 @@
   "title": "Quick Start - Step 1",
   "category": "",
   "tags": "quick-start,, rskj",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "quick start - install RSK local node - prep environment, verify and install RSKj"
  },
  {
@@ -3220,7 +3204,7 @@
   "title": "Quick Start - Step 2",
   "category": "",
   "tags": "quick-start,, truffle,, ganache",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "quick start - tutorial project, install truffle, install ganache"
  },
  {
@@ -3228,7 +3212,7 @@
   "title": "Quick Start - Step 3",
   "category": "",
   "tags": "quick-start,, solidity",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "quick start - smart contracts, solidity"
  },
  {
@@ -3236,7 +3220,7 @@
   "title": "Quick Start - Step 4",
   "category": "",
   "tags": "quick-start,, compile,, deploy,, regtest,, truffle",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "quick start - compile smart contracts, deploy smart contracts to regtest"
  },
  {
@@ -3244,7 +3228,7 @@
   "title": "Quick Start - Step 5",
   "category": "",
   "tags": "quick-start,, smart-contract,, truffle,, web3",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "quick start - smart contract interactions through web3 REPL"
  },
  {
@@ -3252,7 +3236,7 @@
   "title": "RSK Blockchain",
   "category": "",
   "tags": "rsk",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "What is RSK?"
  },
  {
@@ -3260,7 +3244,7 @@
   "title": "Node (RSKj)",
   "category": "",
   "tags": "rsk,, rskj,, node",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Learn more about RSKj, a node implementation for the RSK blockchain"
  },
  {
@@ -3268,7 +3252,7 @@
   "title": "Architecture",
   "category": "",
   "tags": "rsk,, rskj,, node,, architecture",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Architecture of RSK nodes: JSON-RPC, Web3, and storage."
  },
  {
@@ -3276,7 +3260,7 @@
   "title": "JSON-RPC",
   "category": "",
   "tags": "rsk,, rskj,, node,, rpc",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "The JSON-RPC methods supported by RSK nodes."
  },
  {
@@ -3284,7 +3268,7 @@
   "title": "Using RSK Public Nodes (Mainnet &amp; Testnet) provided by IOVLabs",
   "category": "",
   "tags": "rsk,, networks,, versions,, rpc,, mainnet,, testnet,, cUrl",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
  },
  {
@@ -3292,7 +3276,7 @@
   "title": "Install",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Ensure that your system meets the minimum requirements before installing the RSK nodes on it. Install RSK Node and Join the RSK Papyrus Mainnet RSK nodes can be installed on all major platforms, including Linux, Windows, and Mac. Here we provide step-by-step instructions for all supported platforms. Depending on your network performance, it usually takes 10 to 15 mins to setup a working node on Mainnet. Supported Systems and Methods Type Platform Supported Methods Local Linux Ubuntu Package, CentOS, Fat JAR, Docker Local Mac Fat JAR, Docker Local Windows Fat JAR, Docker Cloud AWS AWS AMI, Ubuntu Package, Docker Cloud Azure Azure VM Image, Ubuntu Package, Docker Cloud Google Ubuntu Package, Fat JAR, Docker Using Ubuntu Package Visit Setup…"
  },
  {
@@ -3300,7 +3284,7 @@
   "title": "RSK Node Updates",
   "category": "",
   "tags": "rsk,, rskj,, node,, update,, version",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to update RSKj, the RSK node, to a newer version, and verify that it works correctly. Also sign up for updates to get notified when there is a new version released."
  },
  {
@@ -3308,7 +3292,7 @@
   "title": "Hardware requirements",
   "category": "",
   "tags": "hardware,, specs,, requirements",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Minimum hardware requirements for RSK"
  },
  {
@@ -3316,7 +3300,7 @@
   "title": "Setup node on Docker",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. Install Docker Desktop Client Docker Desktop provides an easy and fast way for running containerized applications on various of operating systems. For Mac OSX and Windows: Download and install Start the Docker Desktop client Login with a Docker Hub free account For Linux: Install Docker Engine Community Note that you will need to use sudo for all docker commands, by default. To avoid this additional steps are required. Ensure that docker is running by running the following command - it should run without any errors. docker ps More information about Docker install here. Install RSKj Using Docker First of all, download the RSK a Dockerfile and supervisord.conf from artifacts repo. Inside the artifacts repo, you can choose which type of node you are going to install: A node connected to the public RSK Mainnet: Dockerfile.MainNet A node connected to the public RSK Testnet: Dockerfile.TestNet A node connected to a private RegTest network: Dockerfile.RegTest Install the node using Docker containers Then build the…"
  },
  {
@@ -3324,7 +3308,7 @@
   "title": "Setup node on Ubuntu",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. Install via Ubuntu Package Manager The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package Manager. Type the commands below to install RSKj on Ubuntu using our PPAs for Ubuntu. The installed repo public key Fingerprint is 5EED 9995 C84A 49BC 02D4 F507 DF10 691F 518C 7BEA. Also, the public key could be found in document Ubuntu Key Server. $ sudo add-apt-repository ppa:rsksmart/rskj $ sudo apt-get update $ sudo apt-get install rskj During the installation, you will be asked to accept the terms and confirm the network. Choose Yes and Enter to accept the license to continue Choose mainnet and press Enter to continue Install via Direct Downloads You can also download the RSKj Ubuntu Package for Papyrus 2.2.0 and install it with the dpkg command. Follow this download link to download the matching package for your ubuntu system. #…"
  },
  {
@@ -3332,7 +3316,7 @@
   "title": "Setup node on CentOS",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to install and run an RSK node on CentOS"
  },
  {
@@ -3340,7 +3324,7 @@
   "title": "Setup node on Java",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. You also need to install Java 8 JDK. Install the node using a JAR file The Fat JAR or Uber JAR can be downloaded or compiled (in a reproducible way or not). To run the node: Linux, Mac OSX $ java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start Windows C:&amp;gt; java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start Replace &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; with your path to the JAR file. As an example: C:/RskjCode/rskj-core-2.2.0-PAPYRUS-all.jar Using import sync Note: This feature is optional. Note: This feature, first released as part of RSKj v2.0.1, is currently experimental. If you don’t want to synchronize your node in the default way, you can use the import sync feature. This method imports a synchronized database from a trusted origin in a fraction of the time currently required. Use this command to run the node: Linux, Mac OSX $ java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start --import Windows C:&amp;gt; java -cp…"
  },
  {
@@ -3348,7 +3332,7 @@
   "title": "Setup node on Azure",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Install RskJ Using Azure Follow the instructions below to install and run an RSK node in Azure. By default, the node connects to Mainnet. If you want to change the network read this section. If you want to change some configuration, please refer to our RSK node configuration section. Also you can enable RPC calls to interact with the node (by default it’s disabled). Install The Node Using Azure On Azure, create a resource. Search for RSK, choose the node’s version and click Create. You will see 4 steps after deploying the node: Basics: complete this step with your information. Choose a name for the node, user name, password, subscription and resource group. Size: select your VM options. Check recommended minimum requirements. Settings: configure optional features. Summary: review the summary of what you have set and press Create. Wait for Azure to finish the deployment. Initialize RSK node configuration file settings (you can do it while switching network). Connect your computer to the node using bash. Edit configuration file using vi: &amp;lt;div class=&quot;language-shell…"
  },
  {
@@ -3356,7 +3340,7 @@
   "title": "Setup node on AWS",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Step 1: Navigate to the AWS Console site: https://console.aws.amazon.com Step 2: On the AWS services dashboard, click on EC2 (Virtual Machines), then on “launch instance” button. Step 3: Click on AWS Marketplace, search for “rsk”, and select the “RSK Node Bamboo v0.x.x MainNet”; Review the prices and select “Continue”. Step 4: Select the instance type. The once disabled doesn’t reach the minimum hardware requirements. Then, click on “Next: configure instance details” Step 5: Optionally change the default values on this screen, and continue clicking on “Next: Add Storage” Step 6: In the Storage section, increase the size to any size that is 50GB or higher, the minimum recommended to run the node, then click on “Next: Add Tags” Step 7: Optionally add a tag to identify the instance, then, click on “Next: Configure Security Group” Step 8: Now create a new rule with the TCP 22 port, and select a source to open the SSH port and be able to connect to the node remotely, then click on “Review and Launch” Step 9: Review the info…"
  },
  {
@@ -3364,7 +3348,7 @@
   "title": "Configure",
   "category": "",
   "tags": "rsk,, rskj,, node,, config",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Setting your own config preferences, when using the Java command, Ubuntu, Azure, AWS, or Docker"
  },
  {
@@ -3372,7 +3356,7 @@
   "title": "Command Line Interface",
   "category": "",
   "tags": "rsk,, rskj,, node,, cli",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Command Line Interface for RSK"
  },
  {
@@ -3380,7 +3364,7 @@
   "title": "Configuration reference",
   "category": "",
   "tags": "rsk,, rskj,, node,, config",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Configuration reference for RSKj"
  },
  {
@@ -3388,7 +3372,7 @@
   "title": "Configure Verbosity",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, logs",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Configure RSKj for desired log verbosity, finding log files, and using logback."
  },
  {
@@ -3396,7 +3380,7 @@
   "title": "Switch network",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, network,, mainnet,, testnet,, regtest",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to switch your RSK node between the Mainnet, Testnet, and RegTest networks"
  },
  {
@@ -3404,7 +3388,7 @@
   "title": "Configure RSKj node for mining",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, mining",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to run RSKj in a manner suited for mining."
  },
  {
@@ -3412,7 +3396,7 @@
   "title": "Contribute",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Getting set up with RSKj and contributing towards its development."
  },
  {
@@ -3420,7 +3404,7 @@
   "title": "CLI",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, cli",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to compile and run an RSKj node from the command line interface."
  },
  {
@@ -3428,7 +3412,7 @@
   "title": "Linux",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, linux",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to compile and run an RSKj node on Linux. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -3436,7 +3420,7 @@
   "title": "Mac OSX",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, mac,, osx",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to compile and run an RSKj node on Mac OSX. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -3444,7 +3428,7 @@
   "title": "Windows",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, windows",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to compile and run an RSKj node on Windows. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -3452,7 +3436,7 @@
   "title": "Reproducible Build",
   "category": "",
   "tags": "rsk,, node,, compile,, reproducible,, checksum",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "A deterministic build process used to build RSK node JAR file. Provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. Makes sure that the same tested dependencies are used and statically built into the executable."
  },
  {
@@ -3460,7 +3444,7 @@
   "title": "Ensure security chain of RskJ source code",
   "category": "",
   "tags": "rsk,, rskj,, node,, security,, verification",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "All the different ways that you can verify RSKj: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
  },
  {
@@ -3468,7 +3452,7 @@
   "title": "Network Upgrades",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, upgrade,, protocol,, consensus,, rskip.",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to introduce consensus rules changes using network upgrades on an RSK node. What to consider. Adding a new rule. Running tests with new rules."
  },
  {
@@ -3476,7 +3460,7 @@
   "title": "Troubleshooting",
   "category": "",
   "tags": "rsk,, rskj,, node,, faq,, troubleshoot",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to solve some known or frequently encountered issues when working with RSKj"
  },
  {
@@ -3484,7 +3468,7 @@
   "title": "R-BTC Token",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK. You can convert BTC into R-BTC by sending BTC through the Powpeg (both in Testnet and Mainnet), or by using the faucet in Testnet, or exchanges in Mainnet. R-BTC (Smart Bitcoin in Mainnet) Token Name R-BTC Total Supply 21,000,000 R-BTC Circulating supply API Contract Type Native (Bridge contract) How to get Exchanges Powpeg Logo R-BTC-logo.png tR-BTC (Smart Bitcoin in Testnet) Token Name tR-BTC Total Supply 21,000,000 tR-BTC Circulating supply API Contract Type Native (Bridge contract) How to get Faucet Powpeg Wallets See supported wallets. Exchanges &amp;lt;div class=”owl-carousel…"
  },
  {
@@ -3492,7 +3476,7 @@
   "title": "BTC to R-BTC Conversion",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet."
  },
  {
@@ -3500,7 +3484,7 @@
   "title": "Mainnet Guide",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Converting BTC to R-BTC (peg-in) and R-BTC to BTC (peg-out)."
  },
  {
@@ -3508,7 +3492,7 @@
   "title": "Tesnet Guide",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Converting t-BTC to tR-BTC (peg-in) and tR-BTC to t-BTC (peg-out)."
  },
  {
@@ -3516,7 +3500,7 @@
   "title": "Conversion using a Ledger hardware wallet",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, ledger",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to perform the Powpeg mechanism using Ledger"
  },
  {
@@ -3524,7 +3508,7 @@
   "title": "Conversion with node and console",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, node,, cli",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to perform the Powpeg mechanism using node and console"
  },
  {
@@ -3532,7 +3516,7 @@
   "title": "Accessing and using funds that are not in accounts derived with RSK dpath in Trezor T",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, trezor,, dpath",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to configure a Trezor T hardware wallet to derive with a custom dpath"
  },
  {
@@ -3540,7 +3524,7 @@
   "title": "Gas",
   "category": "",
   "tags": "",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Gas is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK this is paid in R-BTC. What is gas? How do I choose an appropriate gas price and limit? What happens if my transaction fails? What happens if I run out of gas? Gas in smart contracts What is gas? There are four important concepts: Gas price: The cost of the operation. Gas limit: The maximum gas the operation can afford. It’s an upper limit the user sets to prevent losing gas. Total gas: The gas the operation consumed. Also referred to as gas used. Unit: Gas is paid in R-BTC. Let’s start with a simple analogy: A car. To drive a car you need gas. Gas price is the money you pay for each gallon. Gas limit is the max amount of gas you accept to consume, the gas you charge. The total gas is the amount you’ve spent at the end of the trip. You can…"
  },
  {
@@ -3548,7 +3532,7 @@
   "title": "Turing complete",
   "category": "",
   "tags": "rsk,, rvm,, evm,, virtual, machine",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "The RSK virtual machine is compatible with Ethereum Virtual machine at an opcode level."
  },
  {
@@ -3556,7 +3540,7 @@
   "title": "Account Based RSK Addresses",
   "category": "",
   "tags": "rsk,, checksum,, chainId,, address,, derivation,, eip1191,, eip155,, bip44,, slip44",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "EIP-1191 chainId is used in RSK addresses as a checksum. m/44&#39;/137&#39;/0&#39;/0 is the derivation path used for BIP-44 compatible wallets."
  },
  {
@@ -3564,7 +3548,7 @@
   "title": "Powpeg",
   "category": "",
   "tags": "rsk,, rbtc,, btc,, peg,, powpeg",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Transfer BTC to R-BTC, and R-BTC to BTC through the Powpeg."
  },
  {
@@ -3572,7 +3556,7 @@
   "title": "Merged Mining",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, pow",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How merge mining RSK with Bitcoin works, and its benefits"
  },
  {
@@ -3580,7 +3564,7 @@
   "title": "Implementation Guide",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, pool",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How to merge mine RSK using Bitcoin mining pool software"
  },
  {
@@ -3588,7 +3572,7 @@
   "title": "Merged mining reference",
   "category": "",
   "tags": "rsk,, mining,, bitcoin",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "How RSK leverages the Bitcoin network&#39;s consensus mechanism for its own secruity, and adds additional features to prevent double spending"
  },
  {
@@ -3596,7 +3580,7 @@
   "title": "REMASC",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, remasc",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Reward Manager Smart Contract (REMASC) is a pre-compiled smart-contract that is executed on every block and has the responsibility to fairly distribute rewards collected from transaction fees into several participants of the network. However the distribution of rewards of a block is only performed once the block reaches a certain maturity. In other words, the rewards are paid only after a fixed number of blocks have confirmed a block. With the exception of the first blocks in the blockchain after genesis, every time a block is added to the blockchain, another previous block reaches maturity and its rewards are paid. REMASC is an implementation of DECOR+ [1] How it Works The REMASC contract maintains different internal accounts. One of these internal accounts is called Reward Balance. The Reward Balance always exists and its value can change when a new block is processed because of any of the following reasons: The block was accepted on the mainchain and all its transaction fees are added to the Reward balance. Miners and other rewarded parties get paid their reward and the rewarded value is subtracted from the Reward balance. As an example, let’s assume that a block has 2…"
  },
  {
@@ -3604,7 +3588,7 @@
   "title": "Security model",
   "category": "",
   "tags": "rsk,, security,, powpeg,, peg,, federation,, 2-way, peg",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Achieving security in a Powpegged sidechain using proofs of payment"
  },
  {
@@ -3612,7 +3596,7 @@
   "title": "Transaction Privacy",
   "category": "",
   "tags": "rsk,, privacy,, anonymous,, pseudonymous",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Transaction pseudonymity vs transaction anonymity"
  },
  {
@@ -3620,7 +3604,7 @@
   "title": "Fast payments",
   "category": "",
   "tags": "rsk,, remasc,, interval,, speed,, propagation",
-  "date": "2021-03-24 14:34:48 +0000",
+  "date": "2021-03-25 01:29:18 +0000",
   "desc": "Achieving faster on-chain block intervals"
  }
 ]

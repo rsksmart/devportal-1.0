@@ -466,15 +466,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../../../node/">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../../../node/install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../../../node/install/">Install</a></li>
-                          <li><a href="../../../node/install/macos/">MacOS</a></li>
-                          <li><a href="../../../node/install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../../../node/install/">Install</a></li>
                       <li><a href="../../../node/use/">How to use</a></li>
                       <li><a href="../../../node/contribute/">Contribute</a></li>
                     </ul>
@@ -946,7 +938,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/lumino/explorer/">
-					<span property="name">Lumino Explorer How To Use</span>
+					<span property="name">Lumino Explorer - How To Use</span>
 					<meta property="position" content="4" />
 				</a>
 			</li>
@@ -978,7 +970,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2019-11-21 05:40:16 +0000T00:00:00.000Z">2019-11-21</time> | -->
+    <!--time role="presentation" datetime="2021-03-11 21:25:45 +0000T00:00:00.000Z">2021-03-11</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/lumino/explorer/own/api.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1334,15 +1326,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../../../node/">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../../../node/install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../../../node/install/">Install</a></li>
-                          <li><a href="../../../node/install/macos/">MacOS</a></li>
-                          <li><a href="../../../node/install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../../../node/install/">Install</a></li>
                       <li><a href="../../../node/use/">How to use</a></li>
                       <li><a href="../../../node/contribute/">Contribute</a></li>
                     </ul>
@@ -1812,25 +1796,20 @@
 <ol>
   <li>Get the code by cloning <a href="https://github.com/rsksmart/lumino-explorer/" rel="external noopener noreferrer" target="_blank">the repo</a>
 </li>
-  <li>Go to the path you downloaded or cloned Lumino’s code (let’s call this path <code class="highlighter-rouge">$RIF_LUMINO_EXPLORER_API_PATH</code>)</li>
-  <li>Go to the application.properties and set the <code class="highlighter-rouge">lumino.contract.tokenNetworkRegistry</code> property, set the value with your Token Network registry.</li>
-  <li>
-    <p>Set the <code class="highlighter-rouge">lumino.explorer.api.account.file</code> property to the JSON file of your RSK account. Example: <code class="highlighter-rouge">lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json</code></p>
-  </li>
-  <li>
-    <p>Set the <code class="highlighter-rouge">lumino.explorer.api.account.password</code> property to the password of your account. Example: <code class="highlighter-rouge">lumino.explorer.api.account.paassword=3XhLXn[(Tub6'~Qe</code></p>
-  </li>
-  <li>Install project dependencies with the follow command:</li>
+  <li>Go to the path you downloaded or cloned Lumino Explorer’s code (let’s call this path <code class="highlighter-rouge">$RIF_LUMINO_EXPLORER_PATH</code> and define <code class="highlighter-rouge">$RIF_LUMINO_EXPLORER_API_PATH=$RIF_LUMINO_EXPLORER_PATH/lumino-explorer-api</code>)</li>
+  <li>Go to the <code class="highlighter-rouge">$RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/application.properties</code> file and set the <code class="highlighter-rouge">spring.profiles.active</code> property to the profile of your preference (<code class="highlighter-rouge">prod</code> or <code class="highlighter-rouge">dev</code>). Let’s call it <code class="highlighter-rouge">$PROFILE</code>.</li>
+  <li>Go to <code class="highlighter-rouge">$RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/application-$PROFILE.properties</code> file, and set the <code class="highlighter-rouge">lumino.contract.tokenNetworkRegistry</code> property to the TokenNetworkRegistry address.</li>
+  <li>Set the <code class="highlighter-rouge">lumino.explorer.api.account.file</code> property to the JSON file of your RSK account. Example: <code class="highlighter-rouge">lumino.explorer.api.account.file=UTC--2019-04-19T15-07-00.568000000Z--034000b5f2862d114e4b3474f79fc64aad0cb742.json</code>
+</li>
+  <li>Set the <code class="highlighter-rouge">lumino.explorer.api.account.password</code> property to the password of your account. Example: <code class="highlighter-rouge">lumino.explorer.api.account.paassword=3XhLXn[(Tub6'~Qe</code>
+</li>
 </ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mvn <span class="nb">install</span>
-</code></pre></div></div>
 
 <h2 id="set-up-mongo-database">Set Up Mongo Database</h2>
 
 <ol>
   <li>
-    <p>Go to <code class="highlighter-rouge">$RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/database/</code></p>
+    <p>Go to <code class="highlighter-rouge">$RIF_LUMINO_EXPLORER_API_PATH/src/main/resources/database</code></p>
   </li>
   <li>
     <p>Run the following command when the mongodb server is installed on the local machine:</p>
@@ -1878,12 +1857,12 @@ Bye
 </code></pre></div></div>
 
 <ol>
-  <li>Now you can check if api is running, going to http://localhost:8080. This is a default host and port if you run it locally.</li>
+  <li>Now you can check if the API is running, going to http://localhost:8080. These are the default host and port if you run it locally.</li>
 </ol>
 
 <h2 id="additional-help">Additional help</h2>
 
-<p>The following sections are created using an Ubuntu 18.04.2 LTS</p>
+<p>The following sections are created using Ubuntu 18.04.2 LTS</p>
 
 <h3 id="install-maven">Install Maven</h3>
 

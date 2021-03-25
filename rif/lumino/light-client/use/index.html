@@ -466,15 +466,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../../node/">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../../node/install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../../node/install/">Install</a></li>
-                          <li><a href="../../node/install/macos/">MacOS</a></li>
-                          <li><a href="../../node/install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../../node/install/">Install</a></li>
                       <li><a href="../../node/use/">How to use</a></li>
                       <li><a href="../../node/contribute/">Contribute</a></li>
                     </ul>
@@ -970,8 +962,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-06 14:29:43 +0000T00:00:00.000Z">2020-05-06</time> | -->
-     6' to read |
+    <!--time role="presentation" datetime="2021-03-12 19:49:52 +0000T00:00:00.000Z">2021-03-12</time> | -->
+     9' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/lumino/light-client/use/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1326,15 +1318,7 @@
                     <ul>
                       <li class="hide-mobile"><a href="../../node/">Node</a></li>
                       <!--li><a href="/rif/lumino/node/protocol/">Protocol messages exchange</a></li-->
-                      <li>
-                        <span class="fa fa-chevron-right"></span>
-                        <a href="../../node/install/">Install</a>
-                        <ul>
-                          <li class="hide-mobile"><a href="../../node/install/">Install</a></li>
-                          <li><a href="../../node/install/macos/">MacOS</a></li>
-                          <li><a href="../../node/install/ubuntu/">Ubuntu</a></li>
-                        </ul>
-                      </li>
+                      <li><a href="../../node/install/">Install</a></li>
                       <li><a href="../../node/use/">How to use</a></li>
                       <li><a href="../../node/contribute/">Contribute</a></li>
                     </ul>
@@ -1783,8 +1767,9 @@
 
                   <h1 class="page-title" id="top">Light Client SDK Tutorial</h1>
 
-                  <p>This document provides a step by step guide to integrate the RIF Lumino light client sdk into a web or mobile dApp. 
-For more information, please take a look at the Readme indications at <a href="https://github.com/rsksmart/lumino-light-client-sdk" rel="external noopener noreferrer" target="_blank">https://github.com/rsksmart/lumino-light-client-sdk</a></p>
+                  <p>This document provides a step by step guide to integrate the RIF Lumino light client SDK into a web or mobile dApp.</p>
+
+<p>For more information, please take a look at the <a href="https://github.com/rsksmart/lumino-light-client-sdk" rel="external noopener noreferrer" target="_blank">Readme indications</a>.</p>
 
 <ol>
   <li>
@@ -1807,55 +1792,54 @@ For more information, please take a look at the Readme indications at <a href="h
 
     <p>To start using the SDK, you must first configure the Lumino object. This object is our main interface to interact with the SDK. Lumino must be initialized before being used, invoking the init function:</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> // 1. Import Lumino, the LocalStorageHandler for data persistence and the default SigningHandler for message signing.
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="c1">// 1. Import Lumino, the LocalStorageHandler for data persistence and the default SigningHandler for message signing.</span>
     
- import {
- Lumino,
- LocalStorageHandler,
- SigningHandler,
- } from "@rsksmart/lumino-light-client-sdk";
+ <span class="k">import</span> <span class="p">{</span>
+     <span class="nx">Lumino</span><span class="p">,</span>
+     <span class="nx">LocalStorageHandler</span><span class="p">,</span>
+     <span class="nx">SigningHandler</span><span class="p">,</span>
+ <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/lumino-light-client-sdk</span><span class="dl">"</span><span class="p">;</span>
 
- // 2. Set the environment parameters 
+ <span class="c1">// 2. Set the environment parameters </span>
+ <span class="kd">const</span> <span class="nx">address</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_ADDRESS</span><span class="p">;</span>
+ <span class="kd">const</span> <span class="nx">chainId</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_CHAIN_ID</span><span class="p">;</span>
+ <span class="kd">const</span> <span class="nx">PrivateKey</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_PRIVATE_KEY</span><span class="p">;</span>
+ <span class="kd">const</span> <span class="nx">rskEndpoint</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_RSK_ENDPOINT</span><span class="p">;</span>
+ <span class="kd">const</span> <span class="nx">hubEndpoint</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_HUB_ENDPOINT</span><span class="p">;</span>
+ <span class="kd">const</span> <span class="nx">notifierEndPoint</span> <span class="o">=</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">REACT_APP_RIF_NOTIFIER_ENDPOINT</span><span class="p">;</span>
 
- const address = process.env.REACT_APP_ADDRESS;
- const chainId = process.env.REACT_APP_CHAIN_ID;
- const PrivateKey = process.env.REACT_APP_PRIVATE_KEY;
- const rskEndpoint = process.env.REACT_APP_RSK_ENDPOINT;
- const hubEndpoint = process.env.REACT_APP_HUB_ENDPOINT;
- const notifierEndPoint = process.env.REACT_APP_RIF_NOTIFIER_ENDPOINT;
+ <span class="kd">const</span> <span class="nx">configParams</span> <span class="o">=</span> <span class="p">{</span>
+     <span class="nx">chainId</span><span class="p">,</span>
+     <span class="nx">rskEndpoint</span><span class="p">,</span>
+     <span class="nx">hubEndpoint</span><span class="p">,</span>
+     <span class="nx">Address</span><span class="p">,</span>
+     <span class="nx">notifierEndPoint</span> 
+ <span class="p">};</span>
     
+ <span class="c1">// 3. Create a web3 instance, pointing to your rsk endpoint     </span>
+ <span class="kd">const</span> <span class="nx">web3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Web3</span><span class="p">(</span><span class="nx">rskEndpoint</span><span class="p">);</span>
 
-
- const configParams = {
- chainId,
- rskEndpoint,
- hubEndpoint,
- Address,
- notifierEndPoint 
- };
+ <span class="c1">// 4. Create a signing handler and initialize it.</span>
+ <span class="c1">// NOTE: Read below for info about this Handler</span>
+ <span class="kd">const</span> <span class="nx">signingHandler</span> <span class="o">=</span> <span class="nx">SigningHandler</span><span class="p">();</span>
+ <span class="nx">signingHandler</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nx">web3</span><span class="p">,</span> <span class="nx">PrivateKey</span><span class="p">);</span>
     
- // 3. Create a web3 instance, pointing to your rsk endpoint     
- const web3 = new Web3(rskEndpoint);
- // 4. Create a signing handler and initialize it.
- // NOTE: Read below for info about this Handler
- const signingHandler = SigningHandler();
- signingHandler.init(web3, PrivateKey);
- // 5. Initialise the Lumino singleton instance. Note that this requires to be called inside an async function.
- await Lumino.init(signingHandler, LocalStorageHandler, configParams);
+ <span class="c1">// 5. Initialise the Lumino singleton instance. Note that this requires to be called inside an async function.</span>
+ <span class="k">await</span> <span class="nx">Lumino</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nx">signingHandler</span><span class="p">,</span> <span class="nx">LocalStorageHandler</span><span class="p">,</span> <span class="nx">configParams</span><span class="p">);</span>
 </code></pre></div>    </div>
 
-    <p>NOTE about the SigningHandler: This method requires the PrivateKey since we instantiate everything with web3 and ethers.js to sign Smart Contract transactions and Off Chain Messages, it is not compulsory to use it.</p>
+    <p><strong>NOTE</strong> about the <code class="highlighter-rouge">signingHandler</code>: This method requires the <code class="highlighter-rouge">PrivateKey</code> since we instantiate everything with web3 and ethers.js to sign Smart Contract transactions and Off Chain Messages, it is not compulsory to use it.</p>
 
     <p>We advise only using it when testing in a secure environment, but in any case you may provide your own signing functions instead of using the handler.</p>
 
-    <p>The idea is passing an object with 2 functions instead of the signingHandler to Lumino.init(), these functions receive 1 parameter each</p>
+    <p>The idea is passing an object with 2 functions instead of the <code class="highlighter-rouge">signingHandler</code> to <code class="highlighter-rouge">Lumino.init()</code>, these functions receive 1 parameter each</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> const myHandler = { 
- sign:(tx) =&gt; signTransction(tx),
-     offChainSign: (byteMessage) =&gt; signByteMessage(byteMessage),
- }
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">const</span> <span class="nx">myHandler</span> <span class="o">=</span> <span class="p">{</span> 
+     <span class="na">sign</span><span class="p">:(</span><span class="nx">tx</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">signTransction</span><span class="p">(</span><span class="nx">tx</span><span class="p">),</span>
+     <span class="na">offChainSign</span><span class="p">:</span> <span class="p">(</span><span class="nx">byteMessage</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">signByteMessage</span><span class="p">(</span><span class="nx">byteMessage</span><span class="p">),</span>
+ <span class="p">}</span>
 </code></pre></div>    </div>
 
     <p>These functions may return promises, the SDK will wait until they resolve before signing a transaction.</p>
@@ -1865,53 +1849,53 @@ For more information, please take a look at the Readme indications at <a href="h
     <p>The sign function will manage simple web3 transactions.</p>
   </li>
   <li>
-    <p><strong>Make the onboarding</strong></p>
+    <p><strong>Perform the onboarding</strong></p>
 
-    <p>In order to start using the Lumino light client, you need to make an onboarding into a Lumino HUB node.</p>
+    <p>In order to start using the Lumino light client, you need to perform an onboarding into a Lumino HUB node.</p>
 
     <p>First, define an async function that invokes the onboarding primitive:</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> onboarding = async () =&gt; {
-     await Lumino.get().actions.onboardingClient();
- };
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nx">onboarding</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+     <span class="k">await</span> <span class="nx">Lumino</span><span class="p">.</span><span class="kd">get</span><span class="p">().</span><span class="nx">actions</span><span class="p">.</span><span class="nx">onboardingClient</span><span class="p">();</span>
+ <span class="p">};</span>
 </code></pre></div>    </div>
 
-    <p>Then you can use this function on a button action, for example. After that, your client is able to start interacting with the Lumino HUB</p>
+    <p>Then you can use this function on a button action, for example. After that, your client will be able to start interacting with the Lumino HUB.</p>
   </li>
   <li>
     <p><strong>Open a channel</strong></p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> const params = {
-   Partner: “0x1234...”,
-   settleTimeout: 500,
-   tokenAddress: “0x1234...”,
- };
- await Lumino.get().actions.openChannel(params);
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="kd">const</span> <span class="nx">params</span> <span class="o">=</span> <span class="p">{</span>
+   <span class="na">Partner</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0x1234...</span><span class="dl">"</span><span class="p">,</span>
+   <span class="na">settleTimeout</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+   <span class="na">tokenAddress</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0x1234...</span><span class="dl">"</span><span class="p">,</span>
+ <span class="p">};</span>
+ <span class="k">await</span> <span class="nx">Lumino</span><span class="p">.</span><span class="kd">get</span><span class="p">().</span><span class="nx">actions</span><span class="p">.</span><span class="nx">openChannel</span><span class="p">(</span><span class="nx">params</span><span class="p">);</span>
 </code></pre></div>    </div>
 
-    <p>The open channel function will fire and when the process is successful, a callback will be fired if specified (see the readme on Callbacks for more information on this topic). A channel structure will be added to the SDK state machine.</p>
+    <p>The open channel function will fire and when the process is successful, a callback will be fired if specified (see the readme on Callbacks down below for more information on this topic). A channel structure will be added to the SDK state machine.</p>
 
     <p>You just need to specify the partner node (a lumino node) address and the token in which you want to create the channel.</p>
   </li>
   <li>
     <p><strong>Deposit</strong></p>
 
-    <p>After a channel was created, you need to make an on-chain deposit in order to start making payments</p>
+    <p>After a channel was created, you need to make an on-chain deposit in order to start making payments.</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>  deposit = async () =&gt; {
-     const theAmount =100000000 //amount in wei
-     const paramsDeposit = {
-     “0x123...”, //tokenAddress
-     tokenNetworkAddress: “0x123”, // available in the channel data 
-     amount: theAmount,
-     1, //channel identifier
-     “0x.123...”, // partner address
-     };
-     await Lumino.get().actions.createDeposit(paramsDeposit);
- };
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="nx">deposit</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+     <span class="kd">const</span> <span class="nx">theAmount</span> <span class="o">=</span><span class="mi">100000000</span> <span class="c1">//amount in wei</span>
+     <span class="kd">const</span> <span class="nx">paramsDeposit</span> <span class="o">=</span> <span class="p">{</span>
+         <span class="dl">"</span><span class="s2">0x123...</span><span class="dl">"</span><span class="p">,</span> <span class="c1">//tokenAddress</span>
+         <span class="na">tokenNetworkAddress</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0x123</span><span class="dl">"</span><span class="p">,</span> <span class="c1">// available in the channel data </span>
+         <span class="na">amount</span><span class="p">:</span> <span class="nx">theAmount</span><span class="p">,</span>
+         <span class="mi">1</span><span class="p">,</span> <span class="c1">//channel identifier</span>
+         <span class="dl">"</span><span class="s2">0x.123...</span><span class="dl">"</span><span class="p">,</span> <span class="c1">// partner address</span>
+     <span class="p">};</span>
+     <span class="k">await</span> <span class="nx">Lumino</span><span class="p">.</span><span class="kd">get</span><span class="p">().</span><span class="nx">actions</span><span class="p">.</span><span class="nx">createDeposit</span><span class="p">(</span><span class="nx">paramsDeposit</span><span class="p">);</span>
+ <span class="p">};</span>
 </code></pre></div>    </div>
   </li>
   <li>
@@ -1919,74 +1903,76 @@ For more information, please take a look at the Readme indications at <a href="h
 
     <p>Now that the channel has funds, you can make a payment to your partner.</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> pay = async () =&gt; {
-     const amountInWei = “1000000000000”; //amount on wei as a string
-     const body = {
-     partner: “0x123….”,
-     token_address: “0x145….”,
-     amount: amountInWei,
-     };
-     await Lumino.get().actions.createPayment(body);
- };
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nx">pay</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+     <span class="kd">const</span> <span class="nx">amountInWei</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">1000000000000</span><span class="dl">"</span><span class="p">;</span> <span class="c1">//amount on wei as a string</span>
+     <span class="kd">const</span> <span class="nx">body</span> <span class="o">=</span> <span class="p">{</span>
+         <span class="na">partner</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0x123….</span><span class="dl">"</span><span class="p">,</span>
+         <span class="na">token_address</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0x145….</span><span class="dl">"</span><span class="p">,</span>
+         <span class="na">amount</span><span class="p">:</span> <span class="nx">amountInWei</span><span class="p">,</span>
+     <span class="p">};</span>
+     <span class="k">await</span> <span class="nx">Lumino</span><span class="p">.</span><span class="kd">get</span><span class="p">().</span><span class="nx">actions</span><span class="p">.</span><span class="nx">createPayment</span><span class="p">(</span><span class="nx">body</span><span class="p">);</span>
+ <span class="p">};</span>
 </code></pre></div>    </div>
   </li>
   <li>
     <p><strong>Receive a payment</strong></p>
 
-    <p>Receiving a payment is automatic, as long as the client is polling messages from the Lumino HUB, the payment will be processed and two callbacks will be fired</p>
+    <p>Receiving a payment is automatic, as long as the client is polling messages from the Lumino HUB, the payment will be processed and two callbacks will be fired.</p>
 
     <ul>
       <li>When a payment is received: A callback will be fired</li>
       <li>When the payment is completed: A callback will also be fired</li>
     </ul>
 
-    <p>Callbacks are explained on the next section</p>
+    <p>Callbacks are explained on the next section.</p>
   </li>
   <li>
     <p><strong>Configuring callbacks</strong></p>
 
-    <p>All the operations previously described perform operations on background, but you may want to display success or error messages into your dapp after the operation finalises. For that, there are different callbacks.</p>
+    <p>All the operations previously described perform operations on background, but you may want to display success or error messages into your dApp after the operation finishes. For that, there are different callbacks.</p>
 
     <p>Callbacks are set on the Lumino instance like this:</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> Lumino.callbacks.set.setNameOfCallback;
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nx">Lumino</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="kd">set</span><span class="p">.</span><span class="nx">setNameOfCallback</span><span class="p">;</span>
 </code></pre></div>    </div>
 
-    <p>The callbacks.set method sets a function that may or may not receive the data regarding the event, the next table illustrates the callbacks, when they are fired and the data they provide (Which is always a single object or nothing)</p>
+    <p>The <code class="highlighter-rouge">callbacks.set</code> method sets a function that may or may not receive the data regarding the event, the next table illustrates the callbacks, when they are fired and the data they provide (which is always a single object or nothing).</p>
 
-    <p>We recommend creating a callbacks.js file that encapsulates all the callbacks. For example:</p>
+    <p>We recommend creating a <code class="highlighter-rouge">callbacks.js</code> file that encapsulates all the callbacks. For example:</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> // // Set callbacks
- import { Lumino } from "@rsksmart/lumino-light-client-sdk";
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="c1">// Set callbacks</span>
+ <span class="k">import</span> <span class="p">{</span> <span class="nx">Lumino</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/lumino-light-client-sdk</span><span class="dl">"</span><span class="p">;</span>
 
- const setCallbacks = () =&gt; {
- Lumino.callbacks.set.setOnCompletedPaymentCallback((payment) =&gt; {
-     console.log(¨payment received¨)   
- });
+ <span class="kd">const</span> <span class="nx">setCallbacks</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+     <span class="nx">Lumino</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="kd">set</span><span class="p">.</span><span class="nx">setOnCompletedPaymentCallback</span><span class="p">((</span><span class="nx">payment</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">payment completed</span><span class="dl">"</span><span class="p">)</span>   
+     <span class="p">});</span>
 
- Lumino.callbacks.set.setOnReceivedPaymentCallback(({ payment }) =&gt;
-     console.log(“receiving payment”)
- );
+     <span class="nx">Lumino</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="kd">set</span><span class="p">.</span><span class="nx">setOnReceivedPaymentCallback</span><span class="p">((</span><span class="nx">payment</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">receiving payment</span><span class="dl">"</span><span class="p">)</span>
+     <span class="p">});</span>
 
- Lumino.callbacks.set.setOnOpenChannelCallback((channel) =&gt; {
-     console.log(“channel opened”)
- });
+     <span class="nx">Lumino</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="kd">set</span><span class="p">.</span><span class="nx">setOnOpenChannelCallback</span><span class="p">((</span><span class="nx">channel</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">channel opened</span><span class="dl">"</span><span class="p">)</span>
+     <span class="p">});</span>
 
- Lumino.callbacks.set.setOnChannelDepositCallback((channel) =&gt; {
-     console.log(“deposit made”  });
- });
- Lumino.callbacks.set.setOnRequestClientOnboarding((address) =&gt;
-     console.log(“onboarding requested”)
- );
- Lumino.callbacks.set.setOnClientOnboardingSuccess((address) =&gt;
-     console.log(“onboarding succeed”)  
- );
- };
+     <span class="nx">Lumino</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="kd">set</span><span class="p">.</span><span class="nx">setOnChannelDepositCallback</span><span class="p">((</span><span class="nx">channel</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">deposit made</span><span class="dl">"</span><span class="p">);</span>
+     <span class="p">});</span>
 
- export default setCallbacks;
+     <span class="nx">Lumino</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="kd">set</span><span class="p">.</span><span class="nx">setOnRequestClientOnboarding</span><span class="p">((</span><span class="nx">address</span><span class="p">)</span> <span class="o">=&gt;</span>
+         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">onboarding requested</span><span class="dl">"</span><span class="p">)</span>
+     <span class="p">);</span>
+        
+     <span class="nx">Lumino</span><span class="p">.</span><span class="nx">callbacks</span><span class="p">.</span><span class="kd">set</span><span class="p">.</span><span class="nx">setOnClientOnboardingSuccess</span><span class="p">((</span><span class="nx">address</span><span class="p">)</span> <span class="o">=&gt;</span>
+         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">onboarding succeed</span><span class="dl">"</span><span class="p">)</span>  
+     <span class="p">);</span>
+ <span class="p">};</span>
+
+ <span class="k">export</span> <span class="k">default</span> <span class="nx">setCallbacks</span><span class="p">;</span>
 </code></pre></div>    </div>
 
     <p>Then you can perform custom actions on each callback function body.</p>
@@ -1997,17 +1983,19 @@ For more information, please take a look at the Readme indications at <a href="h
     <p>In order to be notified when a channel with the light client was opened by a partner, the dApp must be integrated with the RIF Notifier. For more information please take a look at:</p>
 
     <ul>
-      <li><a href="https://github.com/rsksmart/lumino-light-client-sdk#notifier" rel="external noopener noreferrer" target="_blank">https://github.com/rsksmart/lumino-light-client-sdk#notifier</a></li>
-      <li><a href="https://github.com/rsksmart/rif-notifier" rel="external noopener noreferrer" target="_blank">https://github.com/rsksmart/rif-notifier</a></li>
+      <li><a href="https://github.com/rsksmart/lumino-light-client-sdk#rif-notifier" rel="external noopener noreferrer" target="_blank">Lumino Light Client SDK: RIF Notifier</a></li>
+      <li><a href="https://github.com/rsksmart/rif-notifier" rel="external noopener noreferrer" target="_blank">Rif-Notifier</a></li>
     </ul>
+
+    <p> </p>
 
     <p>Having a RIF Notifier up and running, the dApp must register to that notifier instance and subscribe to open channel events.</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> subscribeToNotifier = async() =&gt;{
-     await Lumino.get().actions.notifierRegistration();
-     await Lumino.get().actions.subscribeToOpenChannel()
- };
+    <div class="language-javascript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="nx">subscribeToNotifier</span> <span class="o">=</span> <span class="k">async</span><span class="p">()</span> <span class="o">=&gt;</span><span class="p">{</span>
+     <span class="k">await</span> <span class="nx">Lumino</span><span class="p">.</span><span class="kd">get</span><span class="p">().</span><span class="nx">actions</span><span class="p">.</span><span class="nx">notifierRegistration</span><span class="p">();</span>
+     <span class="k">await</span> <span class="nx">Lumino</span><span class="p">.</span><span class="kd">get</span><span class="p">().</span><span class="nx">actions</span><span class="p">.</span><span class="nx">subscribeToOpenChannel</span><span class="p">()</span>
+ <span class="p">};</span>
 </code></pre></div>    </div>
   </li>
 </ol>
