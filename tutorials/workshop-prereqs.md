@@ -213,7 +213,7 @@ THe latter option requires no setup, and that is what we'll be doing:
 
 ```shell
 curl \
-  https://public-node.testnet.rsk.co/2.0.1/ \
+  https://public-node.testnet.rsk.co/ \
   -s -X POST -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 

@@ -40,12 +40,12 @@ npm install
 Enter the following command into terminal, to get the current gas-price for both Testnet and Mainnet, and a [Mnemonic](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) phrase: 
 
 ```terminal
-curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
+curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
 ```
 and;
 
 ```terminal
-curl https://public-node.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .mainnet.gas-price.json
+curl https://public-node.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .mainnet.gas-price.json
 ```
 
 and;
@@ -721,7 +721,7 @@ networks: {
     testnet: {
       provider: () => new HDWalletProvider(
         testnetSeedPhrase,
-        'https://public-node.testnet.rsk.co/2.0.1/',
+        'https://public-node.testnet.rsk.co/',
       ),
       // Ref: http://developers.rsk.co/rsk/architecture/account-based/#chainid
       network_id: 31,
@@ -756,7 +756,7 @@ and save it to `.testnet.gas-price.json`,
 using the following command:
 
 ```terminal
-curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
+curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
 ```
 
 > A file named `.testnet.gas-price.json` previously generated will be updated if there are any changes in gas price. You can locate the file at the root folder. 

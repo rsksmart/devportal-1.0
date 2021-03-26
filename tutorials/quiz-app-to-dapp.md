@@ -386,7 +386,7 @@ truffle compile
 Get and save the gas price from `testnet`:
 
 ```bash
-$ curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
+$ curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
 
 $ ls -al
 ```
@@ -444,7 +444,7 @@ In the same `truffle-config.js` in the `networks` section, add the testnet confi
 
 ```javascript
 testnet: {
-      provider: () => new HDWalletProvider(A_MNEMONIC, 'https://public-node.testnet.rsk.co/2.0.1/'),
+      provider: () => new HDWalletProvider(A_MNEMONIC, 'https://public-node.testnet.rsk.co/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9

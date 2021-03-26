@@ -211,7 +211,7 @@ const path = require("path");
 module.exports = {
   networks: {
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9
