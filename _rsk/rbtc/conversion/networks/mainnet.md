@@ -82,9 +82,13 @@ You can get a corresponding BTC address from your RBTC private key by using [git
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> **Important note**: The minimum amount to send must be **greater than** 0.008 RBTC for Mainnet (sending the exact amount fails and funds get lost);
-> Gas Limit of the transaction needs to be manually set at 100,000 gas;
-> otherwise the transaction will fail. Gas Price can be set to 0.06 gwei.
+<div class="fade alert alert-warning show">
+  <strong>Important note</strong>:
+  The minimum amount to send must be
+  <strong>greater than</strong>
+  0.008 RBTC for Mainnet (sending the exact amount fails and funds get lost);
+Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail. Gas Price can be set to 0.06 gwei (or the gas price suggested by the wallet).
+</div>
 
 ![Customize Gas in Metamask before send transaction on RSK](/dist/images/metamask-gas-limit.png)
 

@@ -343,7 +343,7 @@ Get the current gas price of the network, and save to `.gas-price.json`.
 
 ```shell
 curl \
-  https://public-node.testnet.rsk.co/2.0.1/ \
+  https://public-node.testnet.rsk.co/ \
   -X POST -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' \
   > .gas-price-testnet.json
@@ -417,7 +417,7 @@ The effect that this has is to get a slightly higher priority for our transactio
     testnet: {
       provider: () => new HDWalletProvider(
         mnemonic,
-        'https://public-node.testnet.rsk.co/2.0.1/',
+        'https://public-node.testnet.rsk.co/',
       ),
       network_id: 31,
       gasPrice: gasPriceTestnet + 1e6,
