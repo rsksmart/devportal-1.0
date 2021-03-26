@@ -968,7 +968,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-25 05:41:08 +0000T00:00:00.000Z">2021-03-25</time> | -->
+    <!--time role="presentation" datetime="2021-03-26 06:07:52 +0000T00:00:00.000Z">2021-03-26</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/rbtc/conversion/networks/mainnet.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1870,9 +1870,14 @@ a minimum of 5 minutes for checking your R-BTC balance</p>
 <div class="fade alert alert-warning show">
   <strong>Important note</strong>:
   The minimum amount to send must be
-  <strong>greater than</strong>
-  0.008 R-BTC for Mainnet (sending the exact amount fails and funds get lost);
-Gas Limit of the transaction needs to be manually set at 100,000 gas; otherwise the transaction will fail. Gas Price can be set to 0.06 gwei (or the gas price suggested by the wallet).
+  <strong>at least 0.00800001 R-BTC</strong>
+  for Mainnet
+  Sending any lower amount fails and
+  <strong>funds will be lost</strong>.
+  The Gas Limit of the transaction needs to be manually set at 100,000 gas;
+  otherwise the transaction will fail.
+  Gas Price can be set to 0.06 gwei
+  (or the gas price suggested by the wallet).
 </div>
 
 <p><img src="../../../../../dist/images/metamask-gas-limit.png" alt="Customize Gas in Metamask before send transaction on RSK"></p>
