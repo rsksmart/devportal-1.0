@@ -948,7 +948,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-08 18:01:47 +0000T00:00:00.000Z">2020-05-08</time> | -->
+    <!--time role="presentation" datetime="2021-03-26 05:26:24 +0000T00:00:00.000Z">2021-03-26</time> | -->
      18' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/tokens/create-a-token.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1937,7 +1937,7 @@ It can be used to sign transactions for addresses derived from a 12 or 24 word m
 <p>If you are using a Windows OS, I suggest to use the Git Bash terminal. 
 Download the installer from the <a href="https://git-scm.com/" rel="external noopener noreferrer" target="_blank">Git official site</a>.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.testnet.rsk.co/2.0.1/ <span class="se">\</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.testnet.rsk.co/ <span class="se">\</span>
   <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
   <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'</span>
 </code></pre></div></div>
@@ -2005,7 +2005,7 @@ To verify the block number, visit <a href="https://explorer.testnet.rsk.co/" rel
 <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
   <span class="na">networks</span><span class="p">:</span> <span class="p">{</span>
     <span class="na">testnet</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/2.0.1/</span><span class="dl">'</span><span class="p">),</span>
+      <span class="na">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/</span><span class="dl">'</span><span class="p">),</span>
       <span class="na">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
       <span class="na">gasPrice</span><span class="p">:</span> <span class="mh">0x387EE40</span><span class="p">,</span>
       <span class="na">networkCheckTimeout</span><span class="p">:</span> <span class="mi">1000000000</span>

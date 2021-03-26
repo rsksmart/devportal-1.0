@@ -940,7 +940,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-06-05 08:07:18 +0000T00:00:00.000Z">2020-06-05</time> | -->
+    <!--time role="presentation" datetime="2021-03-26 05:26:24 +0000T00:00:00.000Z">2021-03-26</time> | -->
      22' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/deploy-smart-contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2101,7 +2101,7 @@ Compiling your contracts...
 
 <p>In your project folder, run this cURL command:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.gas-price-testnet.json
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.gas-price-testnet.json
 </code></pre></div></div>
 
 <p>You should receive a response similar to the following in the file:</p>
@@ -2125,7 +2125,7 @@ Compiling your contracts...
 <p>In the <code class="highlighter-rouge">truffle-config.js</code> file, include this configuration at network section:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">testnet</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nl">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/2.0.1/</span><span class="dl">'</span><span class="p">),</span>
+      <span class="nl">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/</span><span class="dl">'</span><span class="p">),</span>
       <span class="nx">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
       <span class="nx">gasPrice</span><span class="p">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">gasPriceTestnet</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">),</span>
       <span class="nx">networkCheckTimeout</span><span class="p">:</span> <span class="mi">1</span><span class="nx">e9</span>
@@ -2158,7 +2158,7 @@ Compiling your contracts...
       <span class="na">network_id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">*</span><span class="dl">"</span>
     <span class="p">},</span>
     <span class="na">testnet</span><span class="p">:</span> <span class="p">{</span>
-      <span class="na">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/2.0.1/</span><span class="dl">'</span><span class="p">),</span>
+      <span class="na">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span><span class="nx">mnemonic</span><span class="p">,</span> <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/</span><span class="dl">'</span><span class="p">),</span>
       <span class="na">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
       <span class="na">gasPrice</span><span class="p">:</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">floor</span><span class="p">(</span><span class="nx">gasPriceTestnet</span> <span class="o">*</span> <span class="mf">1.1</span><span class="p">),</span>
       <span class="na">networkCheckTimeout</span><span class="p">:</span> <span class="mi">1</span><span class="nx">e9</span>

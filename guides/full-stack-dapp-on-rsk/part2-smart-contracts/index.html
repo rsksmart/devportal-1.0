@@ -948,7 +948,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-10-16 10:15:32 +0000T00:00:00.000Z">2020-10-16</time> | -->
+    <!--time role="presentation" datetime="2021-03-26 05:26:24 +0000T00:00:00.000Z">2021-03-26</time> | -->
      36' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/full-stack-dapp-on-rsk/part2-smart-contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1782,11 +1782,11 @@ npm install
 <h3 id="11-setup-additional-project-files">1.1 Setup additional project files</h3>
 <p>Enter the following command into terminal, to get the current gas-price for both Testnet and Mainnet, and a <a href="https://en.bitcoinwiki.org/wiki/Mnemonic_phrase" rel="external noopener noreferrer" target="_blank">Mnemonic</a> phrase:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
 </code></pre></div></div>
 <p>and;</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.mainnet.gas-price.json
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.mainnet.gas-price.json
 </code></pre></div></div>
 
 <p>and;</p>
@@ -2463,7 +2463,7 @@ we use the mnemonic stored in the text file
     <span class="nl">testnet</span><span class="p">:</span> <span class="p">{</span>
       <span class="nl">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span>
         <span class="nx">testnetSeedPhrase</span><span class="p">,</span>
-        <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/2.0.1/</span><span class="dl">'</span><span class="p">,</span>
+        <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/</span><span class="dl">'</span><span class="p">,</span>
       <span class="p">),</span>
       <span class="c1">// Ref: http://developers.rsk.co/rsk/architecture/account-based/#chainid</span>
       <span class="nx">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
@@ -2500,7 +2500,7 @@ update the current gas price of the Testnet network,
 and save it to <code class="highlighter-rouge">.testnet.gas-price.json</code>,
 using the following command:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
+<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
 </code></pre></div></div>
 
 <blockquote>

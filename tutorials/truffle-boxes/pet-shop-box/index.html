@@ -948,7 +948,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-08 18:01:47 +0000T00:00:00.000Z">2020-05-08</time> | -->
+    <!--time role="presentation" datetime="2021-03-26 05:26:24 +0000T00:00:00.000Z">2021-03-26</time> | -->
      20' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/truffle-boxes/pet-shop-box.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2079,7 +2079,7 @@ git commit <span class="nt">-m</span> <span class="s2">"step: 04-01: save BIP39 
 <p>Get the current gas price of the network, and save to <code class="highlighter-rouge">.gas-price.json</code>.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="se">\</span>
-  https://public-node.testnet.rsk.co/2.0.1/ <span class="se">\</span>
+  https://public-node.testnet.rsk.co/ <span class="se">\</span>
   <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
   <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'</span> <span class="se">\</span>
   <span class="o">&gt;</span> .gas-price-testnet.json
@@ -2151,7 +2151,7 @@ The effect that this has is to get a slightly higher priority for our transactio
     <span class="nl">testnet</span><span class="p">:</span> <span class="p">{</span>
       <span class="nl">provider</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">HDWalletProvider</span><span class="p">(</span>
         <span class="nx">mnemonic</span><span class="p">,</span>
-        <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/2.0.1/</span><span class="dl">'</span><span class="p">,</span>
+        <span class="dl">'</span><span class="s1">https://public-node.testnet.rsk.co/</span><span class="dl">'</span><span class="p">,</span>
       <span class="p">),</span>
       <span class="nx">network_id</span><span class="p">:</span> <span class="mi">31</span><span class="p">,</span>
       <span class="nx">gasPrice</span><span class="p">:</span> <span class="nx">gasPriceTestnet</span> <span class="o">+</span> <span class="mi">1</span><span class="nx">e6</span><span class="p">,</span>
