@@ -1,11 +1,18 @@
 ---
 layout: rsk
-title: RIF Enveloping
+title: About RIF Enveloping
 tags: rif, enveloping, rsk, envelope, gas station network, gsn
+permalink: /rif/enveloping/
 description: "RIF Enveloping provides the RSK ecosystem with the means to allow blockchain applications and end-users (wallet-apps) to transact without needing RBTC."
 ---
 
 RIF Enveloping provides the RSK ecosystem with the means to allow blockchain applications and end-users (wallet-apps) to transact without needing RBTC.
+
+- [Architecture](/rif/enveloping/architecture/)
+- [Intro](/rif/enveloping/intro/)
+- [Setup](/rif/enveloping/dev-setup/)
+- [Gas Costs](/rif/enveloping/gas-costs/)
+- [Testnet](/rif/enveloping/testnet/)
 
 ## Goals
 
