@@ -17,7 +17,7 @@ See the [FAQ](/tools/tokenbridge/faq/) to learn more about how it works!
 <img src="/assets/img/tools/tokenbridge/token-bridge-diagram.png"/>
 
 
-The bridge contracts are upgradeable, this enables a smoother move to a more decentralized bridge in the future. This is the 
+The bridge contracts are upgradeable, this enables a smoother move to a more decentralized bridge in the future. This is the
 [token bridge repository](https://github.com/rsksmart/tokenbridge)
 
 ## Usage
