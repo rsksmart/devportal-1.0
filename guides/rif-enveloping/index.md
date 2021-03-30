@@ -30,10 +30,7 @@ This guide details each operation available when using the Enveloping service, s
     - [Metacoin](/guides/rif-enveloping/integrate/#metacoin)
 - [**Create a Smart Wallet**](/guides/rif-enveloping/create-smart-wallet/)
     - [Deploy a Smart Wallet](/guides/rif-enveloping/create-smart-wallet/#deploy-a-smart-wallet)
-- [**Gas Costs**](/rif/enveloping/gas-costs/)
-    - [SmartWallet Templates](/rif/enveloping/gas-costs/#smartwallet-templates)
-    - [Transaction Batching](/rif/enveloping/gas-costs/#transaction-batching)
-    - [Overhead costs in Batching](/rif/enveloping/gas-costs/#overhead-costs-in-batching)
-- [**Testnet**](/rif/enveloping/testnet/)
-    - [Testnet Contracts V2](/rif/enveloping/testnet/#testnet-contracts-V2)
-    - [Testnet Contracts V1](/rif/enveloping/testnet/#testnet-contracts-V1)
+
+For detailed information about Enveloping, including
+its design, architecture, and specifications, see the
+[Enveloping documentation](/rif/enveloping/).

@@ -15,6 +15,11 @@ RIF Enveloping provides the RSK ecosystem with the means to allow blockchain app
 - [Gas Costs](/rif/enveloping/gas-costs/)
 - [Testnet](/rif/enveloping/testnet/)
 
+## Guide
+
+Checkout out the [Enveloping guide](/guides/rif-enveloping/)
+for a step-by-step walkthrough on getting started and using Enveloping.
+
 ## Goals
 
 Most blockchains have native tokens to pay for transaction fees. This simple design has many benefits. First, to bootstrap an economy, the native token model creates an initial demand for a new token. Second, it simplifies the interaction between users and miners because it forces them to use the same means of payment. Third, it reduces the complexity of the consensus rules. Finally, it provides Denial of Service (DoS) protection to the network as full nodes can pay what the miners expect to include a received transaction. This way nodes can decide to propagate a transaction or not, preventing the free consumption of network bandwidth, and stop spam transactions. But with the advent of Decentralized Finance (DeFi), several stable coins have become a preferred means of payment and savings for both users and miners, therefore, separate systems to facilitate alternative payment mechanisms. Transactions that enable paying transactions with any coin other than the native currency are named meta-transactions because in some systems the user transaction is embedded in a higher-level (or meta) transaction created by a third party. A more accessible term for these transactions is “envelopes” or, for the whole system, an Enveloping system. A meta-transaction/enveloping system can serve at least two different use cases: 1) pay the transaction fees with tokens, where one new party receives the tokens (from the user) and pays the gas on behalf of the user, and 2) enable smart contract developers to subsidize the gas used to interact with their contracts.
@@ -46,7 +51,6 @@ When the Relay Server receives an http “relay” request, it creates an Envelo
 - **Relay Manager** - An on-chain account that has staked balance. It delegates the requests to Relay Workers, which are the actual initiators of the relay flow. Any penalization done against a Relay Worker impacts the Relay Manager's stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: register the Relay Server and add relay workers, both in the Relay Hub.
 - **Relay Worker** - An EOA that belongs to only one Relay Manager. It’s the sender of the Relay Request.
 - **Enveloping Request** - It’s the Sponsored Transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request.
-
     - **Relay Data** - All information required to relay the defined Forward Request.
     - **Forward Request** - It is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
 When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Enveloping Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)
