@@ -11,6 +11,7 @@ RIF Enveloping provides the RSK ecosystem with the means to allow blockchain app
 - [Architecture](/rif/enveloping/architecture/)
 - [Intro](/rif/enveloping/intro/)
 - [Setup](/rif/enveloping/dev-setup/)
+- [User Guide](/guides/rif-enveloping/)
 - [Gas Costs](/rif/enveloping/gas-costs/)
 - [Testnet](/rif/enveloping/testnet/)
 

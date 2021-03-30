@@ -4,7 +4,7 @@ title: Getting Started
 tags: rif, enveloping, rsk, gas station network, gsn, defi, getting-started
 ---
 
-Prepare the environment by following the instructions in Setup.
+Prepare the environment by following the instructions in [Setup](/rif/enveloping/dev-setup/).
 
 ## Building the project
 
@@ -79,8 +79,10 @@ curl http://localhost:8090/getaddr
 
 Output:
 
-```shell
-{"relayWorkerAddress":"0x435493e2ab7c698e9f6d4dd916378103eb416e16","relayManagerAddress":"0x7e1bd71ede2ee3edf1fd1f4a31c1a2eb1d012061","relayHubAddress":"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29","minGasPrice":"1","chainId":"33","networkId":"33","ready":false,"version":"2.0.1"}
+```json
+{"relayWorkerAddress":"0x435493e2ab7c698e9f6d4dd916378103eb416e16",   
+"relayManagerAddress":"0x7e1bd71ede2ee3edf1fd1f4a31c1a2eb1d012061","relayHubAddress":"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29","minGasPrice":"1", "chainId":"33", "networkId":"33",
+"ready":false, "version":"2.0.1"}
 ```
 
 (3) Deploy contracts on Testnet
