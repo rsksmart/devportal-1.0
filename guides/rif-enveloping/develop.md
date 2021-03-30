@@ -6,7 +6,7 @@ tags: rif, enveloping, rsk, gas station network, gsn, defi, develop
 
 ## Initializing the project
 
-To use Enveloping, follow these steps to [build the project](/guides/rif-enveloping-guide/getting-started/).
+To use Enveloping, follow these steps to [build the project](/guides/rif-enveloping/getting-started/).
 
 ## Project Structure
 
@@ -18,7 +18,7 @@ The project has on-chain and off-chain components.
     - The solidity version used currently is `^0.6.12`.
 - The `src` directory contains the off-chain components such as `cli`, `relayclient` and `relayserver`. Everything here is coded in `typescript`.
     - To compile these typescript files, use `yarn tsc`. The changes will appear in the `dist` directory.
-- The `jsrelay` directory contains files for running a Relay Server. See [Getting Started](/x-1Hu95ZTDGPmcvzZfVSgA) for more details.
+- The `jsrelay` directory contains files for running a Relay Server. See [Getting Started](/guides/rif-enveloping/getting-started/) for more details.
 - `test` contains the test suite. See section below to learn how to test Enveloping.
 
 
@@ -29,10 +29,10 @@ When adding new tests, we should compile them first with `yarn tsc` before runni
 - To run all the tests:
 `./run-tests`
 
-> Note: The script will start an RSK node in regtest mode and then run all the tests. So it takes some time to run the tests.
+> Note: The script will start an RSK node in Regtest mode and then run all the tests. So it takes some time to run the tests.
 
 - To run a specific test:
-Once the project is built, we can test it with [truffle](https://www.trufflesuite.com/): 
+Once the project is built, we can test it with [truffle](https://www.trufflesuite.com/):
 
 ```truffle
 yarn generate && npx truffle test --network rsk test/Flows.test.ts
@@ -46,7 +46,7 @@ To contribute to the project, create a branch with the name of the new feature y
 
 ### Common errors when testing
 
-> Running a test throws the Error: Cannot find module 'directory-to-the-project/enveloping/rsknode/test/Flows.test.ts'
+> Running a test throws the `Error: Cannot find module 'directory-to-the-project/enveloping/rsknode/test/Flows.test.ts'`
 
 Ensure that you are in the project's root directory and that the test's name has no typos
 
@@ -54,6 +54,6 @@ Ensure that you are in the project's root directory and that the test's name has
 
 Stop the running node and delete the db used by the node.
 
-> Running some test and one of them throws: Error: listen EADDRINUSE: address already in use :::8090
+> Running some test and one of them throws: `Error: listen EADDRINUSE: address already in use :::8090`
 
 The relay server running in the background. Run the bash file `scripts/kill-relay-server.sh`

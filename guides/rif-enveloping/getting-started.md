@@ -31,7 +31,7 @@ To build the default `PAPYRUS-2.1.0`, run
 docker build -t rskj:2.1.0-PAPYRUS .
 ```
 
-### Run Docker 
+### Run Docker
 
 To run, use the recently generated tag (`-t` parameter for `docker build`):
 
@@ -39,7 +39,7 @@ To run, use the recently generated tag (`-t` parameter for `docker build`):
 docker run -p 127.0.0.1:4444:4444 rskj:2.1.0-PAPYRUS --regtest
 ```
 
-`--regtest` can be modified to any other of the networks or parameters supported by the rskj binary.
+`--regtest` can be modified to any other of the networks or parameters supported by the RSKj binary.
 
 > See more instructions on [How To build a different version](https://github.com/rsksmart/enveloping/blob/master/rsknode/README.md) (optional: it runs an RSK node)
 
@@ -57,13 +57,13 @@ npx truffle migrate --network rsk
 
 In order to run an instance of Enveloping in Regtest:
 
-(1) From the `jsrelay` directory 
+(1) From the `jsrelay` directory
 
 ```shell
 npx webpack
 ```
 
-(2) From the root directory, run: 
+(2) From the root directory, run:
 
 ```shell
 node dist/src/cli/commands/enveloping.js boot-test --network http://localhost:4444/
@@ -71,7 +71,7 @@ node dist/src/cli/commands/enveloping.js boot-test --network http://localhost:44
 
 Specifying `localhost:4444` connects to an RSK Regtest node.
 
-To check if the `jsrelay` server is working, run: 
+To check if the `jsrelay` server is working, run:
 
 ```shell
 curl http://localhost:8090/getaddr
@@ -89,7 +89,7 @@ We use `truffle` for deploying contracts.
 
 ```shell
 npx truffle migrate --network rsktestnet
-``` 
+```
 
 > Note: To use Testnet, you should have an unlocked account with funds or configure it in `truffle.js`.
 
@@ -106,8 +106,7 @@ from the project's root directory:
     ``shell
     mkdir enveloping_relay
     ```
-2.  In a terminal, run 
-
+2.  In a terminal, run
     ```shell
     node dist/src/cli/commands/enveloping.js \
       relayer-run \
@@ -118,12 +117,12 @@ from the project's root directory:
       --workdir enveloping_relay \
       --checkInterval 30000
     ```
-    where; 
+    where;
     - `<RELAY_HUB_CONTRACT_ADDRESS>`:
       is the address for the relayHub you are using in the current network
       ([see Testnet Contracts section](https://github.com/rsksmart/enveloping/blob/master/docs/launching_enveloping.md#c02.1)),
     - `<RELAY_URL>`:
-      in most cases will be `http://localhost`, 
+      in most cases will be `http://localhost`,
       and the server will be reachable at
       `<RELAY_URL>:port` unless
       `<RELAY_URL>` already defines a port
@@ -140,8 +139,6 @@ from the project's root directory:
 4. Send at least 0.001 tRBTC to `relayManagerAddress` to set it up
 5. Send at least 0.001 tRBTC to `relayWorkerAddress` to set it up
 6.  Once both addresses have been funded, run;
-    <!-- NOTE @missowans same comment as above, rgearding very long commands -->
-    <!-- NOTE @missowans also ensure that you specify the correct language for syntax highlighting, the one below should be shell, not node -->
     ```shell
     node dist/src/cli/commands/enveloping.js \
       relayer-register \
@@ -152,7 +149,7 @@ from the project's root directory:
       --funds <FUNDS> \
       --stake <STAKE> \
       --relayUrl <RELAY_URL>
-    ``` 
+    ```
     where `secret_mnemonic` contains the path to
     a file with the mnemonic of the account
     to use during the relay server registration,
@@ -162,11 +159,11 @@ from the project's root directory:
 ## Troubleshooting
 
 > Running some test and one of them throws:
-> 
+>
 > ```
 > Error: listen EADDRINUSE: address already in use :::8090
 > ```
-> 
-> This means that the relay server running in the background.
-> Run the bash file `scripts/kill-relay-server.sh`
-> to kill it and make that port available again.
+
+This means that the relay server running in the background.
+Run the bash file `scripts/kill-relay-server.sh`
+to kill it and make that port available again.

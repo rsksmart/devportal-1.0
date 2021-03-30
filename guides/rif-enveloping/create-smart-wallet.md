@@ -6,7 +6,7 @@ tags: rif, enveloping, rsk, gas station network, gsn, defi, develop
 
 ## Create a Smart Wallet
 
-As mentioned before, the moment we need to use the Enveloping system, we have to deploy a Smart Wallet (SW). 
+As mentioned before, the moment we need to use the Enveloping system, we have to deploy a Smart Wallet (SW).
 
 1. **Use your address to deploy a Smart Wallet (SW)**
 ```typescript
