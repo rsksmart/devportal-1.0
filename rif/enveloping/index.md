@@ -11,8 +11,14 @@ RIF Enveloping provides the RSK ecosystem with the means to allow blockchain app
 - [Architecture](/rif/enveloping/architecture/)
 - [Intro](/rif/enveloping/intro/)
 - [Setup](/rif/enveloping/dev-setup/)
+- [User Guide](/guides/rif-enveloping/)
 - [Gas Costs](/rif/enveloping/gas-costs/)
 - [Testnet](/rif/enveloping/testnet/)
+
+## Guide
+
+Checkout out the [Enveloping guide](/guides/rif-enveloping/)
+for a step-by-step walkthrough on getting started and using Enveloping.
 
 ## Goals
 
@@ -45,7 +51,6 @@ When the Relay Server receives an http “relay” request, it creates an Envelo
 - **Relay Manager** - An on-chain account that has staked balance. It delegates the requests to Relay Workers, which are the actual initiators of the relay flow. Any penalization done against a Relay Worker impacts the Relay Manager's stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: register the Relay Server and add relay workers, both in the Relay Hub.
 - **Relay Worker** - An EOA that belongs to only one Relay Manager. It’s the sender of the Relay Request.
 - **Enveloping Request** - It’s the Sponsored Transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request.
-
     - **Relay Data** - All information required to relay the defined Forward Request.
     - **Forward Request** - It is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
 When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Enveloping Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)

@@ -34,7 +34,7 @@ When adding new tests, we should compile them first with `yarn tsc` before runni
 - To run a specific test:
 Once the project is built, we can test it with [truffle](https://www.trufflesuite.com/):
 
-```truffle
+```shell
 yarn generate && npx truffle test --network rsk test/Flows.test.ts
 ```
 

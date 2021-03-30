@@ -30,8 +30,7 @@ The order of events for relaying transactions or deploying smart wallets through
 
 Another option is to use Enveloping through a Relay Provider. The latter wraps web3, and then all transactions and calls are made through the Relay Provider. If a Relay Client is not provided then the Relay Provider creates an instance.
 
-```web3
-
+```javascript
 this.config = await resolveConfigurationGSN(web3.currentProvider, {
       verbose: window.location.href.includes('verbose'),
       onlyPreferredRelays: false, //If false it will look for a relayer, if true it reads preferred Relays
@@ -63,7 +62,7 @@ As we mentioned in the [documentation](/rif/enveloping/), an advantage of the En
 
 As a simplification of the process, the Enveloping Utils is provided to use as a library. It simplifies the process to create an smart wallet and therefore relay a transaction. It gives the chance to the developers to propose their provider to sign the transaction. The functions that the developer should code on the provider are `sign` and `verifySign`.
 
-```utils
+```javascript
 // Initialize the Enveloping Utils
 const partialConfig: Partial<EnvelopingConfig> =
     {
