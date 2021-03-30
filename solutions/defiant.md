@@ -66,7 +66,7 @@ Defiant is your door into this new world and the new ones to come.
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| R-BTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens

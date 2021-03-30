@@ -3,7 +3,7 @@ layout: rsk
 title: Powpeg
 collection_order: 4300
 tags: rsk, rbtc, btc, peg, powpeg
-description: "Transfer BTC to R-BTC, and R-BTC to BTC through the Powpeg."
+description: "Transfer BTC to RBTC, and RBTC to BTC through the Powpeg."
 ---
 
 ## Building the Most Secure, Permissionless and Uncensorable Bitcoin Peg

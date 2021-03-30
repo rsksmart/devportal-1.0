@@ -151,7 +151,7 @@ C:\>
 
 # Create a wallet mnemonic
 
-To use testnet, we need tR-BTC and an address to store them.
+To use testnet, we need tRBTC and an address to store them.
 The best way is to create a wallet from a mnemonic, using the pattern defined at [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 
 There are a few ways to do this.

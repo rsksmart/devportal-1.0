@@ -21,7 +21,7 @@ Here is a summary of the steps we will take in this tutorial:
 3. Learn how to use the Truffle development console;
 4. Create a wallet;
 5. Configure Truffle to connect to RSK network;
-6. Get R-BTC;
+6. Get RBTC;
 7. Deploy a smart contract on RSK network using Truffle;
 8. Interact with the smart contract at Truffle console.
 
@@ -632,7 +632,7 @@ For more information, check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/ma
 **Gas** is the internal pricing for running a transaction or contract. 
 When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. 
 That payment is calculated as gas. 
-In RSK, this is paid in **R-BTC**.
+In RSK, this is paid in **RBTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To get the **minimumGasPrice** do the following steps:
@@ -745,9 +745,9 @@ truffle(testnet)> (await web3.eth.getBalance(accounts[0])).toString()
 truffle(testnet)>  
 ```
 
-The balance is 0 and we need some tR-BTC to pay gas fees,
+The balance is 0 and we need some tRBTC to pay gas fees,
 which will be used to publish smart contracts and interact with them.
-We shall obtain some tR-BTC in the next step.
+We shall obtain some tRBTC in the next step.
 
 ## Exit Truffle console
 
@@ -763,17 +763,17 @@ truffle(testnet)> .exit
 C:\RSK\rsk-starter>
 ```
 
-# Get R-BTC
+# Get RBTC
 
-The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
+The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK.
 
 **Mainnet**
 
-For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
+For the RSK Mainnet, get RBTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
 
 **Testnet**
 
-For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
+For the RSK Testnet, get tRBTC from [our faucet](https://faucet.testnet.rsk.co/).
 
 ![faucet.testnet.rsk.co](/assets/img/tutorials/rsk-starter-box/image-12.png)
 
@@ -781,7 +781,7 @@ Enter your wallet address and pass the CAPTCHA.
 
 Wait a few seconds…
 
-![Received some R-BTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
+![Received some RBTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
 
 You can see the transaction hash:
 [`0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95`](https://explorer.testnet.rsk.co/tx/0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95)
@@ -798,7 +798,7 @@ For my example on RSK Testnet using account `0xCd70794c2F3C657310eF13b6FF3Ec2d11
 
 ![getBalance](/assets/img/tutorials/rsk-starter-box/image-11.png)
 
-Great! Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.
+Great! Now I have 50000000000000000, which means that I have 0.05 tRBTC with 18 decimal places of precision.
 
 # Deploy the smart contract on RSK network
 
@@ -894,7 +894,7 @@ Congratulations!
 
 `Simple storage` is now published on the RSK network.
 
-> Make sure you have enough R-BTC to deploy it.
+> Make sure you have enough RBTC to deploy it.
     
 # Interact with a smart contract on RSK network
 

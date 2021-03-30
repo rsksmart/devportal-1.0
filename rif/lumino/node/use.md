@@ -169,7 +169,7 @@ Here we have some features to filter the payments that happened in the channel.
 
 When clicking _Close_, you'll need to confirm the action as shown.
 
-The channel status will change to `closed` and then after a few validations, it'll change to `waiting_for_settlement`. 
+The channel status will change to `closed` and then after a few validations, it'll change to `waiting_for_settlement`.
 
 The latter state will last for take 500 blocks; after that, the channel status will displayed `settled` for a short period of time, and then the channel will be deleted from the view.
 

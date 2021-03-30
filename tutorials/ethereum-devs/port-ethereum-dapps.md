@@ -242,7 +242,7 @@ We are going to deploy the example smart contract on to the RSK Testnet.
 
 ### Testnet and Faucet
 
-First, we need to obtain an account on RSK Testnet and get some tR-BTC from the Testnet faucet.
+First, we need to obtain an account on RSK Testnet and get some tRBTC from the Testnet faucet.
 
 **Create new Account with MetaMask**
 
@@ -250,14 +250,14 @@ First, we need to obtain an account on RSK Testnet and get some tR-BTC from the 
 1. In the network options, choose `custom RPC`
 1. Enter RSK Testnet as the Network Name
 1. Enter https://public-node.testnet.rsk.co as the RPC URL
-1. Enter R-BTC as SymbolPut and Save
+1. Enter RBTC as SymbolPut and Save
 1. Copy the account address
 
 <img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/assets/img/tutorials/port-ethereum-dapps/metamask-testnet.png">
 
-**Get tR-BTC**
+**Get tRBTC**
 
-Visit the [faucet](https://faucet.testnet.rsk.co/) to gain some tR-BTC to use in the Testnet.
+Visit the [faucet](https://faucet.testnet.rsk.co/) to gain some tRBTC to use in the Testnet.
 
 Enter the account address from MetaMask and wait for several seconds for MetaMask to refresh the new balance.
 
@@ -431,9 +431,9 @@ Also include this configuration at `network` section:
 You will be able to check the Mainnet's transactions and blocks in real time on
 [explorer.rsk.co/](https://explorer.rsk.co/)
 
-#### Get R-BTC through Powpeg
+#### Get RBTC through Powpeg
 
-To deploy onto Mainnet, we need to get some [R-BTC](/rsk/rbtc/).
+To deploy onto Mainnet, we need to get some [RBTC](/rsk/rbtc/).
 
-- You can check the [Powpeg](/rsk/architecture/powpeg/) mechanism between BTC and R-BTC.
+- You can check the [Powpeg](/rsk/architecture/powpeg/) mechanism between BTC and RBTC.
 - Or you can buy in these [exchanges](/rsk/rbtc/#exchanges)
