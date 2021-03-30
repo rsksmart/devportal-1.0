@@ -61,21 +61,20 @@ The gas costs for scenarios E and F are the same.
 
 The following table depicts the average gas overhead per transaction for the SimpleSmartWallet template when using transaction batching The gas difference of using the SmartWallet template without extra logic versus using the SimpleSmartWallet template is approximately an extra of between 200 and 300 gas.
 
-
-|Tx per batch  | A,B|C,D|E,F|
+| Tx per batch | A,B | C,D | E,F |
 |--|--|--|--|
-| 50 | 44400 | 59033| 73690|
- | 30 | 45050 | 59520| 74006|
- | 25 | 45300 | 59720| 74183|
- | 20 | 45990 |60130 |74405|
- | 15 | 46953 |60853| 74822
- | 10 | 48800 |62270|75743 
- |9 | 49495| 62760| to be continued (new contract update in progress)
-| 8 | 50240 |63240|
-| 7 | 51200|64050|
-| **6** | **52600** | **65020**|
- | 5 | 54500 | 66430|
- | 4 | 57300 | 68553|
- | 3 | 62100 | 71985|
-| 2 | 71600 |79130|
- | 1 | 100240 |100240| 
+| 50 | 44400 | 59033 | 73690|
+| 30 | 45050 | 59520 | 74006|
+| 25 | 45300 | 59720 | 74183|
+| 20 | 45990 | 60130 | 74405 |
+| 15 | 46953 | 60853 | 74822 |
+| 10 | 48800 | 62270 | 75743 |
+| 9 | 49495 | 62760 | to be continued (new contract update in progress) |
+| 8 | 50240 | 63240 |  |
+| 7 | 51200 | 64050 |  |
+| **6** | **52600** | **65020**|  |
+| 5 | 54500 | 66430 |  |
+| 4 | 57300 | 68553 |  |
+| 3 | 62100 | 71985 |  |
+| 2 | 71600 | 79130 |  |
+| 1 | 100240 | 100240 |  |

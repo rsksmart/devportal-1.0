@@ -8,7 +8,7 @@ The system is designed to achieve deployments and transaction sponsorship at a l
 
 The core Enveloping architecture is defined by the following components:
 
-- **Relay Request** - a structure that wraps the transaction sent by an end-user. It includes data required for relaying the trasaction e.g. address of the payer, address of the original requester, token payment data.
+- **Relay Request** - a structure that wraps the transaction sent by an end-user. It includes data required for relaying the transaction e.g. address of the payer, address of the original requester, token payment data.
 - **Deploy Request** - a structure that wraps the transaction sent to deploy a Smart wallet.
 - **Relay Hub** - a core contract which serves as the interface for the on-chain part of the system. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts.
 - **Relay Verifier** - an abstract contract that authorizes a specific relay request.
