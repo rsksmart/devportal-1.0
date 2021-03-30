@@ -28,10 +28,12 @@ This guide details each operation available when using the Enveloping service, s
     - [Using a relay provider](/guides/rif-enveloping/integrate/#using-a-relay-provider)
     - [Using the Enveloping utils as a library](/guides/rif-enveloping/integrate/#using-the-enveloping-utils-as-a-library)
     - [Metacoin](/guides/rif-enveloping/integrate/#metacoin)
-- **[Gas Costs](/rif/enveloping/gas-costs/)**
-    - **[SmartWallet Templates](/rif/enveloping/gas-costs/#smartwallet-templates)**
-    - **[Transaction Batching](/rif/enveloping/gas-costs/#transaction-batching)**
-    - **[Overhead costs in Batching](/rif/enveloping/gas-costs/#overhead-costs-in-batching)**
-- **[Testnet](/rif/enveloping/testnet/)**
-    - **[Testnet Contracts V2](/rif/enveloping/testnet/#testnet-contracts-V2)**
-    - **[Testnet Contracts V1](/rif/enveloping/testnet/#testnet-contracts-V1)**
+- [**Create a Smart Wallet**](/guides/rif-enveloping/create-smart-wallet/)
+    - [Deploy a Smart Wallet](/guides/rif-enveloping/create-smart-wallet/#deploy-a-smart-wallet)
+- [**Gas Costs**](/rif/enveloping/gas-costs/)
+    - [SmartWallet Templates](/rif/enveloping/gas-costs/#smartwallet-templates)
+    - [Transaction Batching](/rif/enveloping/gas-costs/#transaction-batching)
+    - [Overhead costs in Batching](/rif/enveloping/gas-costs/#overhead-costs-in-batching)
+- [**Testnet**](/rif/enveloping/testnet/)
+    - [Testnet Contracts V2](/rif/enveloping/testnet/#testnet-contracts-V2)
+    - [Testnet Contracts V1](/rif/enveloping/testnet/#testnet-contracts-V1)

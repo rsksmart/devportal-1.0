@@ -10,7 +10,7 @@ Prepare the environment by following the instructions in [Setup](/rif/enveloping
 
 Clone the project.
 
-```git
+```shell
 git clone https://github.com/rsksmart/enveloping
 ```
 
@@ -27,7 +27,7 @@ yarn prepare
 
 To build the default `PAPYRUS-2.1.0`, run
 
-```docker
+```shell
 docker build -t rskj:2.1.0-PAPYRUS .
 ```
 
@@ -35,7 +35,7 @@ docker build -t rskj:2.1.0-PAPYRUS .
 
 To run, use the recently generated tag (`-t` parameter for `docker build`):
 
-```docker
+```shell
 docker run -p 127.0.0.1:4444:4444 rskj:2.1.0-PAPYRUS --regtest
 ```
 
@@ -80,7 +80,7 @@ curl http://localhost:8090/getaddr
 Output:
 
 ```json
-{"relayWorkerAddress":"0x435493e2ab7c698e9f6d4dd916378103eb416e16",   
+{"relayWorkerAddress":"0x435493e2ab7c698e9f6d4dd916378103eb416e16",
 "relayManagerAddress":"0x7e1bd71ede2ee3edf1fd1f4a31c1a2eb1d012061","relayHubAddress":"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29","minGasPrice":"1", "chainId":"33", "networkId":"33",
 "ready":false, "version":"2.0.1"}
 ```
