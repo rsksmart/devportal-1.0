@@ -688,7 +688,7 @@ git commit .accounts -m "step: 07-01: save list of account addresses"
 
 ```
 
-Fund your first Testnet account with some tR-BTC
+Fund your first Testnet account with some tRBTC
 using the RSK Testnet faucet -
 [faucet.rsk.co](https://faucet.rsk.co/).
 Use the address which is in the first line of the `.accounts` file.
@@ -700,7 +700,7 @@ head -n 1 < .accounts
 
 ```
 
-Check that you have tR-BTC
+Check that you have tRBTC
 
 ```shell
 truffle console --network testnet

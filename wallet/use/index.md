@@ -3,7 +3,7 @@ layout: rsk
 title: Wallets
 ---
 
-The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, check [how to use it](#how-to-use) with the tutorials below:
+The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, check [how to use it](#how-to-use) with the tutorials below:
 
 
 <div id="walletCarousel" class="owl-carousel owl-theme">

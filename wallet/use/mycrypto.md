@@ -60,7 +60,7 @@ Click 'Confirm Phrase' again.
 
 <img src="/assets/img/mycrypto/mycrypto10.png" alt="result page of this transaction"/>
 
-2.4. At this point, you can check that addresses are for RSK and Smart BTC (R-BTC) balance is 0. If that is OK, select any address (the first one, in this example) and click ‘Unlock’ to open your wallet.
+2.4. At this point, you can check that addresses are for RSK and Smart BTC (RBTC) balance is 0. If that is OK, select any address (the first one, in this example) and click ‘Unlock’ to open your wallet.
 
 :heavy-check-mark: Done, you have your RSK wallet!
 
@@ -76,7 +76,7 @@ Click 'Confirm Phrase' again.
 
 <img src="/assets/img/mycrypto/mycrypto12.png" alt="result page of this transaction"/>
 
-3.4. At this point, you can check that addresses are for RSK, and Smart BTC (R-BTC) balance is 0. If that is OK, select any address (the first one, in this example) and click ‘Unlock’ to open your wallet.
+3.4. At this point, you can check that addresses are for RSK, and Smart BTC (RBTC) balance is 0. If that is OK, select any address (the first one, in this example) and click ‘Unlock’ to open your wallet.
 
 <img src="/assets/img/mycrypto/mycrypto13.png" alt="result page of this transaction"/>
 

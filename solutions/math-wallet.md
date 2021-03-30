@@ -31,7 +31,7 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| R-BTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens

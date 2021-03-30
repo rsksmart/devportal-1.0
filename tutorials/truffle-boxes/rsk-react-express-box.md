@@ -491,9 +491,9 @@ This Truffle box is already configured to connect to both RSK networks: testnet 
 ## Setup the gas price
 
 **Gas** is the internal pricing for running a transaction or contract. 
-When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. 
+When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. 
 That payment is calculated as gas. 
-In RSK, this is paid in **R-BTC**.
+In RSK, this is paid in **RBTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To update the **minimumGasPrice**, go to your project folder and run this query using cURL:
@@ -651,9 +651,9 @@ truffle(testnet)> (await web3.eth.getBalance(accounts[0])).toString()
 truffle(testnet)>  
 ```
 
-The balance is 0 and we need some tR-BTC to pay gas fees,
+The balance is 0 and we need some tRBTC to pay gas fees,
 which will be used to publish smart contracts and interact with them.
-We shall obtain some tR-BTC in the next step.
+We shall obtain some tRBTC in the next step.
 
 ## Exit Truffle console
 
@@ -669,17 +669,17 @@ truffle(testnet)> .exit
 C:\RSK\rsk-starter>
 ```
 
-## Get R-BTC
+## Get RBTC
 
-The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
+The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK.
 
 **Mainnet**
 
-For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
+For the RSK Mainnet, get RBTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
 
 **Testnet**
 
-For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
+For the RSK Testnet, get tRBTC from [our faucet](https://faucet.testnet.rsk.co/).
 
 ![faucet.testnet.rsk.co](/assets/img/tutorials/rsk-react-express-box/image-17.png)
 
@@ -693,7 +693,7 @@ This is an example of a transaction hash received from faucet:
 
 [`0x0661f313cb387b6f09549a7f81ca7c0e7cc476cfe6069a9c755b1ceb8b531874`](https://explorer.testnet.rsk.co/tx/0x0661f313cb387b6f09549a7f81ca7c0e7cc476cfe6069a9c755b1ceb8b531874)
 
-![faucet Received some R-BTCs](/assets/img/tutorials/rsk-react-express-box/image-19.png)
+![faucet Received some RBTCs](/assets/img/tutorials/rsk-react-express-box/image-19.png)
 
 # Deploy the smart contract on RSK network
 
@@ -791,7 +791,7 @@ Congratulations!
 
 `Simple storage` is now published on the RSK network.
 
-> Make sure you have enough R-BTC to deploy it.
+> Make sure you have enough RBTC to deploy it.
 
 # Client-server application on RSK network
 

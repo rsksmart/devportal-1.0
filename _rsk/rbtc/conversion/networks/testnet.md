@@ -2,18 +2,18 @@
 layout: rsk
 title: Tesnet Guide
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
-description: 'Converting t-BTC to tR-BTC (peg-in) and tR-BTC to t-BTC (peg-out).'
+description: 'Converting t-BTC to tRBTC (peg-in) and tRBTC to t-BTC (peg-out).'
 collection_order: 3120
 permalink: /rsk/rbtc/conversion/networks/testnet/
 ---
 
-In this section we will go over the steps of converting t-BTC to tR-BTC,
+In this section we will go over the steps of converting t-BTC to tRBTC,
 and vice versa on the Bitcoin and RSK Testnets.
 
 Note:
 The minimum amount of Bitcoin to convert is **0.01 BTC** for Testnet.
 
-## tBTC to tR-BTC conversion
+## tBTC to tRBTC conversion
 
 Instructions on how to do a Testnet peg-in.
 
@@ -62,33 +62,33 @@ you can send Bitcoin to it from your Bitcoin address.
 
 > Note: You need to send a minimum amount of 0.01 BTC for conversion.
 
-**4 Get tR-BTC address with tBTC private key**
+**4 Get tRBTC address with tBTC private key**
 
-You can get a corresponding tR-BTC address from your tBTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
+You can get a corresponding tRBTC address from your tBTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
 > Note: when entering Bitcoin private key do not include _p2pkh:_ in the front.
 
-**5 Check tR-BTC balance on Testnet**
+**5 Check tRBTC balance on Testnet**
 
-You can check balance of above tR-BTC address on Metamask,
+You can check balance of above tRBTC address on Metamask,
 MyCrypto or any RSK Testnet compatible wallets.
 
 > Note: You have to wait a minimum of 100 confirmations +
-> a minimum of 5 minutes for checking your R-BTC balance
+> a minimum of 5 minutes for checking your RBTC balance
 
-## tR-BTC to tBTC conversion
+## tRBTC to tBTC conversion
 
 Instructions on how to do a Testnet peg-out.
 
-**1 Get tBTC address with tR-BTC private key**
+**1 Get tBTC address with tRBTC private key**
 
-You can get a corresponding tBTC address from your tR-BTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
+You can get a corresponding tBTC address from your tRBTC private key by using [github.com/rsksmart/utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
 
-**2 Send tR-BTC to RSK Bridge Contract**
+**2 Send tRBTC to RSK Bridge Contract**
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> **Important note**: The minimum amount to send must be **greater than** 0.005 tR-BTC for Testnet (sending the exact amount fails and funds get lost)
+> **Important note**: The minimum amount to send must be **greater than** 0.005 tRBTC for Testnet (sending the exact amount fails and funds get lost)
 
 Gas Limit of the transaction needs to be manually set at 100,000 gas;
 otherwise the transaction will fail.

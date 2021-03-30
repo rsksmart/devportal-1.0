@@ -201,7 +201,7 @@ Steps of usage:
 
       function () public payable {
         if (msg.value > 0) {
-          emit Yes('Thanks for donating R-BTC! :)');
+          emit Yes('Thanks for donating RBTC! :)');
         } else {
           emit No('Error 404: Function not found :P');
         }
@@ -271,7 +271,7 @@ Steps of usage:
   ```java
     function () public payable {
         if (msg.value > 0) {
-          emit Yes('Thanks for donating R-BTC! :)');
+          emit Yes('Thanks for donating RBTC! :)');
         } else {
           emit No('Error 404: Function not found :P');
         }

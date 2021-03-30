@@ -10,8 +10,8 @@ This document explains how to try the Powpeg mechanism using
 your RSK node and a command line.
 
 - [General requirements](#general-requirements)
-- [BTC to R-BTC conversion](#btc-to-r-btc-conversion)
-- [R-BTC to BTC conversion](#r-btc-to-btc-conversion)
+- [BTC to RBTC conversion](#btc-to-rbtc-conversion)
+- [RBTC to BTC conversion](#rbtc-to-btc-conversion)
 
 ## General Requirements
 
@@ -21,12 +21,12 @@ your RSK node and a command line.
   with the RPC interface enabled, and the personal and eth modules enabled
   - See [how do I run an RSK Node?](/rsk/node/install/).
 
-## BTC to R-BTC conversion
+## BTC to RBTC conversion
 
 How to perform a peg-in.
 
 :exclamation: **Before starting:** Read
-[lock requirements](/rsk/rbtc/conversion/networks/mainnet/#btc-to-r-btc-conversion)
+[lock requirements](/rsk/rbtc/conversion/networks/mainnet/#btc-to-rbtc-conversion)
 
 1. With your Bitcoin address,
    send a BTC transaction to the RSK Federation Address.
@@ -38,15 +38,15 @@ How to perform a peg-in.
    and write down your RSK account information.
 4. Then use the [RSK Testnet Explorer](https://explorer.testnet.rsk.co)
    or [RSK Mainnet Explorer](https://explorer.rsk.co)
-   to see your R-BTC balance.
+   to see your RBTC balance.
    Remember that RSK addresses must start with `0x`.
 
-## R-BTC to BTC conversion
+## RBTC to BTC conversion
 
 How to perform a peg-out.
 
 :exclamation: **Before starting:** Read
-[release requirements](/rsk/rbtc/conversion/networks/mainnet/#r-btc-to-btc-conversion)
+[release requirements](/rsk/rbtc/conversion/networks/mainnet/#rbtc-to-btc-conversion)
 
 1. Add your obtained RSK private key to your RSK node.
    Replace `RSKConvertedPrivateKey`, `RSKNode` and `RSKNodePort`

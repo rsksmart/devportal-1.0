@@ -57,7 +57,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             <a href="/kb/get-crypto-on-rsk/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/GetCryptoOnRSK/R-BTC-logo.png" alt="getcryptoonrsk icon">
+                        <img src="/assets/img/kb/GetCryptoOnRSK/RBTC-logo.png" alt="getcryptoonrsk icon">
                     </div>
                 </div>
             </a>
