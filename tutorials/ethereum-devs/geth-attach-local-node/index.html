@@ -257,9 +257,9 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../rsk/rbtc/">R-BTC Token</a>
+            <a href="../../../rsk/rbtc/">RBTC Token</a>
             <ul>
-              <li class="hide-mobile"><a href="../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li class="hide-mobile"><a href="../../../rsk/rbtc/">RBTC Token</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../rsk/rbtc/conversion/">Conversion</a>
@@ -960,7 +960,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-15 09:04:01 +0000T00:00:00.000Z">2020-05-15</time> | -->
+    <!--time role="presentation" datetime="2021-03-24 14:12:45 +0000T00:00:00.000Z">2021-03-24</time> | -->
      12' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/ethereum-devs/geth-attach-local-node.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1107,9 +1107,9 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../rsk/rbtc/">R-BTC Token</a>
+            <a href="../../../rsk/rbtc/">RBTC Token</a>
             <ul>
-              <li class="hide-mobile"><a href="../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li class="hide-mobile"><a href="../../../rsk/rbtc/">RBTC Token</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../rsk/rbtc/conversion/">Conversion</a>
@@ -2134,7 +2134,7 @@ curl <span class="se">\</span>
 
 <p><img src="../../../assets/img/tutorials/geth-attach-local-node/image-19.png" alt="balance in ethers"></p>
 
-<p>On a local node, the pre-configured accounts are funded with a lot of “money”! On the RSK network, this is called <code class="highlighter-rouge">R-BTC</code>. So I have 1.000.000.000.000 = One trillion of R-BTC!</p>
+<p>On a local node, the pre-configured accounts are funded with a lot of “money”! On the RSK network, this is called <code class="highlighter-rouge">RBTC</code>. So I have 1.000.000.000.000 = One trillion of RBTC!</p>
 
 <h3 id="balance-of-a-specific-account">Balance of a specific account</h3>
 
@@ -2145,11 +2145,11 @@ curl <span class="se">\</span>
 
 <p><img src="../../../assets/img/tutorials/geth-attach-local-node/image-20.png" alt="Balance of a specific account"></p>
 
-<p>I do not have any funds in my account, so the next step is to transfer some R-BTC to it.</p>
+<p>I do not have any funds in my account, so the next step is to transfer some RBTC to it.</p>
 
-<h2 id="transfer-r-btc">Transfer R-BTC</h2>
+<h2 id="transfer-rbtc">Transfer RBTC</h2>
 
-<p>I have one trillion R-BTC in account 1 and nothing on the new account. I’d like to transfer 300 billion R-BTC from account 1 to the new account:</p>
+<p>I have one trillion RBTC in account 1 and nothing on the new account. I’d like to transfer 300 billion RBTC from account 1 to the new account:</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">eth</span><span class="p">.</span><span class="nx">sendTransaction</span><span class="p">({</span><span class="na">from</span><span class="p">:</span><span class="nx">eth</span><span class="p">.</span><span class="nx">accounts</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="na">to</span><span class="p">:</span><span class="dl">"</span><span class="s2">0xf6e443fd1c869c6a25d18a9866f3a6c7f8dfb703</span><span class="dl">"</span><span class="p">,</span> <span class="na">value</span><span class="p">:</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="mi">300000000000</span><span class="p">,</span> <span class="dl">"</span><span class="s2">ether</span><span class="dl">"</span><span class="p">)})</span>
 </code></pre></div></div>
@@ -2169,7 +2169,7 @@ curl <span class="se">\</span>
 
 <p><img src="../../../assets/img/tutorials/geth-attach-local-node/image-22.png" alt="Balances after transfer"></p>
 
-<p>Great! The new account has 300 billion R-BTC and account 1 has 700 billion R-BTC.</p>
+<p>Great! The new account has 300 billion RBTC and account 1 has 700 billion RBTC.</p>
 
 <h2 id="geth-exit">Geth exit</h2>
 

@@ -257,9 +257,9 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../rsk/rbtc/">R-BTC Token</a>
+            <a href="../../../rsk/rbtc/">RBTC Token</a>
             <ul>
-              <li class="hide-mobile"><a href="../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li class="hide-mobile"><a href="../../../rsk/rbtc/">RBTC Token</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../rsk/rbtc/conversion/">Conversion</a>
@@ -960,7 +960,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-26 05:26:24 +0000T00:00:00.000Z">2021-03-26</time> | -->
+    <!--time role="presentation" datetime="2021-03-26 05:55:14 +0000T00:00:00.000Z">2021-03-26</time> | -->
      18' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/tokens/create-a-token.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1107,9 +1107,9 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../rsk/rbtc/">R-BTC Token</a>
+            <a href="../../../rsk/rbtc/">RBTC Token</a>
             <ul>
-              <li class="hide-mobile"><a href="../../../rsk/rbtc/">R-BTC Token</a></li>
+              <li class="hide-mobile"><a href="../../../rsk/rbtc/">RBTC Token</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../rsk/rbtc/conversion/">Conversion</a>
@@ -1782,7 +1782,7 @@
   <li>Install Open Zeppelin smart contracts in the project folder;</li>
   <li>Create a wallet mnemonic;</li>
   <li>Configure Truffle to connect to RSK testnet;</li>
-  <li>Get some tR-BTC from a faucet;</li>
+  <li>Get some tRBTC from a faucet;</li>
   <li>Create smart contract of token;</li>
   <li>Create deploy file at Truffle;</li>
   <li>Deploy a smart contract on RSK Testnet using Truffle;</li>
@@ -2087,13 +2087,13 @@ To verify the block number, visit <a href="https://explorer.testnet.rsk.co/" rel
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="k">await</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getBalance</span><span class="p">(</span><span class="nx">account</span><span class="p">)).</span><span class="nx">toString</span><span class="p">()</span>
 </code></pre></div></div>
 
-<p>The balance is 0 and we need some to pay for gas fees. We shall get some tR-BTC in the next step.</p>
+<p>The balance is 0 and we need some to pay for gas fees. We shall get some tRBTC in the next step.</p>
 
 <p><img src="../../../assets/img/tutorials/create-a-token/image-44.png" alt="getBalance(account) 0"></p>
 
 <h1 id="testnet-faucet">Testnet Faucet</h1>
 
-<p>You can get some tR-BTC from the RSK Testnet faucet.</p>
+<p>You can get some tRBTC from the RSK Testnet faucet.</p>
 
 <p><a href="https://faucet.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">faucet.testnet.rsk.co</a></p>
 
@@ -2105,13 +2105,13 @@ To verify the block number, visit <a href="https://explorer.testnet.rsk.co/" rel
 
 <p>Wait a few seconds…</p>
 
-<p><img src="../../../assets/img/tutorials/create-a-token/image-19.png" alt="Received some R-BTCs"></p>
+<p><img src="../../../assets/img/tutorials/create-a-token/image-19.png" alt="Received some RBTCs"></p>
 
 <p>You can see the transaction hash:</p>
 
 <p><a href="https://explorer.testnet.rsk.co/tx/0x16bedc1339a8fe59e270b0c6d5175851010bb93d0cf6c4974f1705b9ead7ee6e" rel="external noopener noreferrer" target="_blank">0x16bedc1339a8fe59e270b0c6d5175851010bb93d0cf6c4974f1705b9ead7ee6e</a></p>
 
-<p>Now I have 0.05 tR-BTC!</p>
+<p>Now I have 0.05 tRBTC!</p>
 
 <h2 id="recheck-balance">Recheck balance</h2>
 
@@ -2122,7 +2122,7 @@ To verify the block number, visit <a href="https://explorer.testnet.rsk.co/" rel
 
 <p><img src="../../../assets/img/tutorials/create-a-token/image-20.png" alt="getBalance"></p>
 
-<p>Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.</p>
+<p>Now I have 50000000000000000, which means that I have 0.05 tRBTC with 18 decimal places of precision.</p>
 
 <h1 id="create-the-smart-contract">Create the smart contract</h1>
 
