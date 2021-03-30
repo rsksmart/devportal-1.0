@@ -752,6 +752,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Enveloping</a>
                 <ul>
+                  <li><a href="../">User Guide</a></li>
                   <li><a href="../develop/">Develop</a></li>
                   <li><a href="../getting-started/">Get started with Enveloping</a></li>
                   <li><a href="../integrate/">Integrate</a></li>
@@ -956,7 +957,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/guides/rif-enveloping/">
-					<span property="name">User Guide</span>
+					<span property="name">RIF Enveloping User Guide</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -980,7 +981,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 03:15:21 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-03-30 07:35:05 +0000T00:00:00.000Z">2021-03-30</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-enveloping/create-smart-wallet.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1622,6 +1623,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Enveloping</a>
                 <ul>
+                  <li><a href="../">User Guide</a></li>
                   <li><a href="../develop/">Develop</a></li>
                   <li><a href="../getting-started/">Get started with Enveloping</a></li>
                   <li><a href="../integrate/">Integrate</a></li>
@@ -1811,7 +1813,7 @@
 
                   <h1 class="page-title" id="top">Creating a Smart Wallet</h1>
 
-                  <h2 id="create-a-smart-wallet">Create a Smart Wallet</h2>
+                  <h2 id="deploy-a-smart-wallet">Deploy a Smart Wallet</h2>
 
 <p>As mentioned before, the moment we need to use the Enveloping system, we have to deploy a Smart Wallet (SW).</p>
 
@@ -1819,20 +1821,20 @@
   <li>
 <strong>Use your address to deploy a Smart Wallet (SW)</strong>
     <div class="language-typescript highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>   <span class="kd">const</span> <span class="nx">trxData</span><span class="p">:</span> <span class="nx">EnvelopingTransactionDetails</span> <span class="o">=</span> <span class="p">{</span>
-     <span class="na">from</span><span class="p">:</span> <span class="nx">ownerEOA</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
-     <span class="na">to</span><span class="p">:</span> <span class="nx">customLogic</span><span class="p">,</span>
-     <span class="na">data</span><span class="p">:</span> <span class="nx">logicData</span><span class="p">,</span>
-     <span class="na">tokenRecipient</span><span class="p">:</span> <span class="nx">paymaster</span><span class="p">,</span>
-     <span class="na">tokenContract</span><span class="p">:</span> <span class="nx">token</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
-     <span class="na">tokenAmount</span><span class="p">:</span> <span class="dl">'</span><span class="s1">10</span><span class="dl">'</span><span class="p">,</span>
-     <span class="na">factory</span><span class="p">:</span> <span class="nx">factory</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
-     <span class="na">recoverer</span><span class="p">:</span> <span class="nx">recoverer</span><span class="p">,</span>
-     <span class="na">index</span><span class="p">:</span> <span class="nx">walletIndex</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span>
-     <span class="na">paymaster</span><span class="p">:</span> <span class="nx">paymaster</span>
-   <span class="p">}</span>
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">trxData</span><span class="p">:</span> <span class="nx">EnvelopingTransactionDetails</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">from</span><span class="p">:</span> <span class="nx">ownerEOA</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
+    <span class="na">to</span><span class="p">:</span> <span class="nx">customLogic</span><span class="p">,</span>
+    <span class="na">data</span><span class="p">:</span> <span class="nx">logicData</span><span class="p">,</span>
+    <span class="na">tokenRecipient</span><span class="p">:</span> <span class="nx">paymaster</span><span class="p">,</span>
+    <span class="na">tokenContract</span><span class="p">:</span> <span class="nx">token</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
+    <span class="na">tokenAmount</span><span class="p">:</span> <span class="dl">'</span><span class="s1">10</span><span class="dl">'</span><span class="p">,</span>
+    <span class="na">factory</span><span class="p">:</span> <span class="nx">factory</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
+    <span class="na">recoverer</span><span class="p">:</span> <span class="nx">recoverer</span><span class="p">,</span>
+    <span class="na">index</span><span class="p">:</span> <span class="nx">walletIndex</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span>
+    <span class="na">paymaster</span><span class="p">:</span> <span class="nx">paymaster</span>
+  <span class="p">}</span>
 
-   <span class="kd">const</span> <span class="nx">txHash</span> <span class="o">=</span> <span class="nx">relayProvider</span><span class="p">.</span><span class="nx">deploySmartWallet</span><span class="p">(</span><span class="nx">trxData</span><span class="p">)</span>
+  <span class="kd">const</span> <span class="nx">txHash</span> <span class="o">=</span> <span class="nx">relayProvider</span><span class="p">.</span><span class="nx">deploySmartWallet</span><span class="p">(</span><span class="nx">trxData</span><span class="p">)</span>
 </code></pre></div>    </div>
   </li>
   <li>
@@ -1844,17 +1846,6 @@
 </code></pre></div>    </div>
   </li>
 </ol>
-
-<h2 id="changelog">Changelog</h2>
-
-<h3 id="v2">V2</h3>
-
-<ul>
-  <li>In V2 the Relay Hub contract doesn’t receive payments, the payment for the service (in tokens) is paid directly to the worker relaying the transaction on behalf of the user.</li>
-  <li>Paymaster verifications are now done off-chain to optimize gas costs, thus the paymasters are now called Verifiers and they are not part of the on-chain relay flow nor they handle payments at all.</li>
-  <li>Gas cost optimization</li>
-  <li>Security issues fixed.</li>
-</ul>
 
 
                   

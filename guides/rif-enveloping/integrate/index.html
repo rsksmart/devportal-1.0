@@ -752,6 +752,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Enveloping</a>
                 <ul>
+                  <li><a href="../">User Guide</a></li>
                   <li><a href="../develop/">Develop</a></li>
                   <li><a href="../getting-started/">Get started with Enveloping</a></li>
                   <li><a href="./">Integrate</a></li>
@@ -956,7 +957,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/guides/rif-enveloping/">
-					<span property="name">User Guide</span>
+					<span property="name">RIF Enveloping User Guide</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -980,8 +981,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 03:15:21 +0000T00:00:00.000Z">2021-03-30</time> | -->
-     5' to read |
+    <!--time role="presentation" datetime="2021-03-30 07:35:05 +0000T00:00:00.000Z">2021-03-30</time> | -->
+     7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-enveloping/integrate.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1622,6 +1623,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Enveloping</a>
                 <ul>
+                  <li><a href="../">User Guide</a></li>
                   <li><a href="../develop/">Develop</a></li>
                   <li><a href="../getting-started/">Get started with Enveloping</a></li>
                   <li><a href="./">Integrate</a></li>
@@ -1839,31 +1841,30 @@
 
 <p>Another option is to use Enveloping through a Relay Provider. The latter wraps web3, and then all transactions and calls are made through the Relay Provider. If a Relay Client is not provided then the Relay Provider creates an instance.</p>
 
-<pre><code class="language-web3">
-this.config = await resolveConfigurationGSN(web3.currentProvider, {
-      verbose: window.location.href.includes('verbose'),
-      onlyPreferredRelays: false, //If false it will look for a relayer, if true it reads preferred Relays
-      chainId: chainId,
-      relayVerifierAddress: this.contracts.relayVerifier,
-      factory: this.contracts.factory,
-      preferredRelays:[]
-    })
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">this</span><span class="p">.</span><span class="nx">config</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">resolveConfigurationGSN</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">currentProvider</span><span class="p">,</span> <span class="p">{</span>
+      <span class="na">verbose</span><span class="p">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="dl">'</span><span class="s1">verbose</span><span class="dl">'</span><span class="p">),</span>
+      <span class="na">onlyPreferredRelays</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">//If false it will look for a relayer, if true it reads preferred Relays</span>
+      <span class="na">chainId</span><span class="p">:</span> <span class="nx">chainId</span><span class="p">,</span>
+      <span class="na">relayVerifierAddress</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">contracts</span><span class="p">.</span><span class="nx">relayVerifier</span><span class="p">,</span>
+      <span class="na">factory</span><span class="p">:</span> <span class="k">this</span><span class="p">.</span><span class="nx">contracts</span><span class="p">.</span><span class="nx">factory</span><span class="p">,</span>
+      <span class="na">preferredRelays</span><span class="p">:[]</span>
+    <span class="p">})</span>
 
-    this.provider = new Enveloping.RelayProvider(web3.currentProvider, this.config)
-    web3.setProvider(this.provider)
+    <span class="k">this</span><span class="p">.</span><span class="nx">provider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Enveloping</span><span class="p">.</span><span class="nx">RelayProvider</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">currentProvider</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">config</span><span class="p">)</span>
+    <span class="nx">web3</span><span class="p">.</span><span class="nx">setProvider</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">provider</span><span class="p">)</span>
 
-    this.provider.deploySmartWallet(trxData)
-    this.provider.calculateSmartWalletAddress(
-    factory.address,gaslessAccount.address, recoverer, customLogic, walletIndex, bytecodeHash)
+    <span class="k">this</span><span class="p">.</span><span class="nx">provider</span><span class="p">.</span><span class="nx">deploySmartWallet</span><span class="p">(</span><span class="nx">trxData</span><span class="p">)</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">provider</span><span class="p">.</span><span class="nx">calculateSmartWalletAddress</span><span class="p">(</span>
+    <span class="nx">factory</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span><span class="nx">gaslessAccount</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">recoverer</span><span class="p">,</span> <span class="nx">customLogic</span><span class="p">,</span> <span class="nx">walletIndex</span><span class="p">,</span> <span class="nx">bytecodeHash</span><span class="p">)</span>
 
-    await testRecipient.emitMessage('hello world', {
-        from: gaslessAccount.address,
-        gas: '100000',
-        gasPrice: '1',
-        callVerifier: verifierInstance.address,
-        onlyPreferredRelays: true //It will read the preferredRelays on the config.
-    })
-</code></pre>
+    <span class="k">await</span> <span class="nx">testRecipient</span><span class="p">.</span><span class="nx">emitMessage</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello world</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+        <span class="na">from</span><span class="p">:</span> <span class="nx">gaslessAccount</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
+        <span class="na">gas</span><span class="p">:</span> <span class="dl">'</span><span class="s1">100000</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">gasPrice</span><span class="p">:</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">,</span>
+        <span class="na">callVerifier</span><span class="p">:</span> <span class="nx">verifierInstance</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
+        <span class="na">onlyPreferredRelays</span><span class="p">:</span> <span class="kc">true</span> <span class="c1">//It will read the preferredRelays on the config.</span>
+    <span class="p">})</span>
+</code></pre></div></div>
 
 <h2 id="using-the-enveloping-utils-as-a-library">Using the Enveloping Utils as a Library</h2>
 
@@ -1871,55 +1872,55 @@ this.config = await resolveConfigurationGSN(web3.currentProvider, {
 
 <p>As a simplification of the process, the Enveloping Utils is provided to use as a library. It simplifies the process to create an smart wallet and therefore relay a transaction. It gives the chance to the developers to propose their provider to sign the transaction. The functions that the developer should code on the provider are <code class="highlighter-rouge">sign</code> and <code class="highlighter-rouge">verifySign</code>.</p>
 
-<pre><code class="language-utils">// Initialize the Enveloping Utils
-const partialConfig: Partial&lt;EnvelopingConfig&gt; =
-    {
-      relayHubAddress: relayHub.address,
-      proxyFactoryAddress: factory.address,
-      chainId: chainId,
-      relayVerifierAddress: relayVerifier.address,  // The verifier that will verify the relayed transaction
-      deployVerifierAddress: deployVerifier.address, // The verifier that will verify the smart wallet deployment
-      preferredRelays: ['http://localhost:8090'], //If there is a preferred relay server.
-      forwarderAddress: swAddress //To get the smart wallet address it's necessary to calculate the smart wallet address.
-    }
-    config = configure(partialConfig)
-    enveloping = new EnvelopingUtils(config, web3, workerAddress)
-    await enveloping._init()
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Initialize the Enveloping Utils</span>
+<span class="kd">const</span> <span class="nx">partialConfig</span><span class="p">:</span> <span class="nx">Partial</span><span class="o">&lt;</span><span class="nx">EnvelopingConfig</span><span class="o">&gt;</span> <span class="o">=</span>
+    <span class="p">{</span>
+      <span class="na">relayHubAddress</span><span class="p">:</span> <span class="nx">relayHub</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
+      <span class="na">proxyFactoryAddress</span><span class="p">:</span> <span class="nx">factory</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>
+      <span class="na">chainId</span><span class="p">:</span> <span class="nx">chainId</span><span class="p">,</span>
+      <span class="na">relayVerifierAddress</span><span class="p">:</span> <span class="nx">relayVerifier</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span>  <span class="c1">// The verifier that will verify the relayed transaction</span>
+      <span class="na">deployVerifierAddress</span><span class="p">:</span> <span class="nx">deployVerifier</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="c1">// The verifier that will verify the smart wallet deployment</span>
+      <span class="na">preferredRelays</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">http://localhost:8090</span><span class="dl">'</span><span class="p">],</span> <span class="c1">//If there is a preferred relay server.</span>
+      <span class="na">forwarderAddress</span><span class="p">:</span> <span class="nx">swAddress</span> <span class="c1">//To get the smart wallet address it's necessary to calculate the smart wallet address.</span>
+    <span class="p">}</span>
+    <span class="nx">config</span> <span class="o">=</span> <span class="nx">configure</span><span class="p">(</span><span class="nx">partialConfig</span><span class="p">)</span>
+    <span class="nx">enveloping</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">EnvelopingUtils</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="nx">web3</span><span class="p">,</span> <span class="nx">workerAddress</span><span class="p">)</span>
+    <span class="k">await</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">_init</span><span class="p">()</span>
 
-// Instances a signature provider: This is just for test, please DO NOT use in production.
+<span class="c1">// Instances a signature provider: This is just for test, please DO NOT use in production.</span>
 
-const signatureProvider: SignatureProvider = {
-    sign: (dataToSign: TypedRequestData, privKey?: Buffer) =&gt; {
-      // @ts-ignore
-      return sigUtil.signTypedData_v4(privKey, { data: dataToSign })
-    },
-    verifySign: (signature: PrefixedHexString, dataToSign: TypedRequestData, request: RelayRequest|DeployRequest) =&gt; {
-      // @ts-ignore
-      const rec = sigUtil.recoverTypedSignature_v4({
-        data: dataToSign,
-        sig: signature
-      })
-      return isSameAddress(request.request.from, rec)
-    }
-  }
+<span class="kd">const</span> <span class="nx">signatureProvider</span><span class="p">:</span> <span class="nx">SignatureProvider</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">sign</span><span class="p">:</span> <span class="p">(</span><span class="na">dataToSign</span><span class="p">:</span> <span class="nx">TypedRequestData</span><span class="p">,</span> <span class="nx">privKey</span><span class="p">?:</span> <span class="nx">Buffer</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="c1">// @ts-ignore</span>
+      <span class="k">return</span> <span class="nx">sigUtil</span><span class="p">.</span><span class="nx">signTypedData_v4</span><span class="p">(</span><span class="nx">privKey</span><span class="p">,</span> <span class="p">{</span> <span class="na">data</span><span class="p">:</span> <span class="nx">dataToSign</span> <span class="p">})</span>
+    <span class="p">},</span>
+    <span class="na">verifySign</span><span class="p">:</span> <span class="p">(</span><span class="na">signature</span><span class="p">:</span> <span class="nx">PrefixedHexString</span><span class="p">,</span> <span class="na">dataToSign</span><span class="p">:</span> <span class="nx">TypedRequestData</span><span class="p">,</span> <span class="na">request</span><span class="p">:</span> <span class="nx">RelayRequest</span><span class="o">|</span><span class="nx">DeployRequest</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="c1">// @ts-ignore</span>
+      <span class="kd">const</span> <span class="nx">rec</span> <span class="o">=</span> <span class="nx">sigUtil</span><span class="p">.</span><span class="nx">recoverTypedSignature_v4</span><span class="p">({</span>
+        <span class="na">data</span><span class="p">:</span> <span class="nx">dataToSign</span><span class="p">,</span>
+        <span class="na">sig</span><span class="p">:</span> <span class="nx">signature</span>
+      <span class="p">})</span>
+      <span class="k">return</span> <span class="nx">isSameAddress</span><span class="p">(</span><span class="nx">request</span><span class="p">.</span><span class="nx">request</span><span class="p">.</span><span class="k">from</span><span class="p">,</span> <span class="nx">rec</span><span class="p">)</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
 
-// Deploying a Smart Wallet
-const deployRequest = await enveloping.createDeployRequest(senderAddress, deploymentGasLimit, tokenContract, tokenAmount, tokenGas, gasPrice, index)
-const deploySignature = enveloping.signDeployRequest(signatureProvider, deployRequest)
-const httpDeployRequest = await enveloping.generateDeployTransactionRequest(deploySignature, deployRequest)
-const sentDeployTransaction = await enveloping.sendTransaction(localhost, httpDeployRequest)
-sentDeployTransaction.transaction?.hash(true).toString('hex') //This is used to get the transaction hash
+<span class="c1">// Deploying a Smart Wallet</span>
+<span class="kd">const</span> <span class="nx">deployRequest</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">createDeployRequest</span><span class="p">(</span><span class="nx">senderAddress</span><span class="p">,</span> <span class="nx">deploymentGasLimit</span><span class="p">,</span> <span class="nx">tokenContract</span><span class="p">,</span> <span class="nx">tokenAmount</span><span class="p">,</span> <span class="nx">tokenGas</span><span class="p">,</span> <span class="nx">gasPrice</span><span class="p">,</span> <span class="nx">index</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">deploySignature</span> <span class="o">=</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">signDeployRequest</span><span class="p">(</span><span class="nx">signatureProvider</span><span class="p">,</span> <span class="nx">deployRequest</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">httpDeployRequest</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">generateDeployTransactionRequest</span><span class="p">(</span><span class="nx">deploySignature</span><span class="p">,</span> <span class="nx">deployRequest</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">sentDeployTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">sendTransaction</span><span class="p">(</span><span class="nx">localhost</span><span class="p">,</span> <span class="nx">httpDeployRequest</span><span class="p">)</span>
+<span class="nx">sentDeployTransaction</span><span class="p">.</span><span class="nx">transaction</span><span class="p">?.</span><span class="nx">hash</span><span class="p">(</span><span class="kc">true</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="dl">'</span><span class="s1">hex</span><span class="dl">'</span><span class="p">)</span> <span class="c1">//This is used to get the transaction hash</span>
 
-// Relaying a transaction
+<span class="c1">// Relaying a transaction</span>
 
-const encodedFunction = testRecipient.contract.methods.emitMessage('hello world').encodeABI()
-const relayRequest = await enveloping.createRelayRequest(gaslessAccount.address, testRecipient.address, encodedFunction, gasLimit, tokenContract, tokenAmount, tokenGas)
-const relaySignature = enveloping.signRelayRequest(signatureProvider, relayRequest, gaslessAccount.privateKey)
-const httpRelayRequest = await enveloping.generateRelayTransactionRequest(relaySignature, relayRequest)
-const sentRelayTransaction = await enveloping.sendTransaction(localhost, httpRelayRequest)
-sentRelayTransaction.transaction?.hash(true).toString('hex') //This is used to get the transaction hash
+<span class="kd">const</span> <span class="nx">encodedFunction</span> <span class="o">=</span> <span class="nx">testRecipient</span><span class="p">.</span><span class="nx">contract</span><span class="p">.</span><span class="nx">methods</span><span class="p">.</span><span class="nx">emitMessage</span><span class="p">(</span><span class="dl">'</span><span class="s1">hello world</span><span class="dl">'</span><span class="p">).</span><span class="nx">encodeABI</span><span class="p">()</span>
+<span class="kd">const</span> <span class="nx">relayRequest</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">createRelayRequest</span><span class="p">(</span><span class="nx">gaslessAccount</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">testRecipient</span><span class="p">.</span><span class="nx">address</span><span class="p">,</span> <span class="nx">encodedFunction</span><span class="p">,</span> <span class="nx">gasLimit</span><span class="p">,</span> <span class="nx">tokenContract</span><span class="p">,</span> <span class="nx">tokenAmount</span><span class="p">,</span> <span class="nx">tokenGas</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">relaySignature</span> <span class="o">=</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">signRelayRequest</span><span class="p">(</span><span class="nx">signatureProvider</span><span class="p">,</span> <span class="nx">relayRequest</span><span class="p">,</span> <span class="nx">gaslessAccount</span><span class="p">.</span><span class="nx">privateKey</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">httpRelayRequest</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">generateRelayTransactionRequest</span><span class="p">(</span><span class="nx">relaySignature</span><span class="p">,</span> <span class="nx">relayRequest</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">sentRelayTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">enveloping</span><span class="p">.</span><span class="nx">sendTransaction</span><span class="p">(</span><span class="nx">localhost</span><span class="p">,</span> <span class="nx">httpRelayRequest</span><span class="p">)</span>
+<span class="nx">sentRelayTransaction</span><span class="p">.</span><span class="nx">transaction</span><span class="p">?.</span><span class="nx">hash</span><span class="p">(</span><span class="kc">true</span><span class="p">).</span><span class="nx">toString</span><span class="p">(</span><span class="dl">'</span><span class="s1">hex</span><span class="dl">'</span><span class="p">)</span> <span class="c1">//This is used to get the transaction hash</span>
 
-</code></pre>
+</code></pre></div></div>
 
 <h2 id="metacoin">MetaCoin</h2>
 

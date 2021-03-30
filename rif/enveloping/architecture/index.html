@@ -752,6 +752,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../guides/rif-enveloping/">Enveloping</a>
                 <ul>
+                  <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
                   <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
                   <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
                   <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
@@ -980,7 +981,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 02:32:36 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-03-30 07:35:05 +0000T00:00:00.000Z">2021-03-30</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/enveloping/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1622,6 +1623,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../guides/rif-enveloping/">Enveloping</a>
                 <ul>
+                  <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
                   <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
                   <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
                   <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
@@ -1813,6 +1815,8 @@
 
                   <p>The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by “sponsors” is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.</p>
 
+<h2 id="core-architecture">Core architecture</h2>
+
 <p>The core Enveloping architecture is defined by the following components:</p>
 
 <ul>
@@ -1832,6 +1836,17 @@
 <strong>Relay Server</strong> - a relay service daemon, running as an HTTP service. Advertises itself (through the Relay Hub) and waits for client requests.</li>
   <li>
 <strong>Relay Client</strong> - a typescript library for a client to access the blockchain through a relay. Provides APIs to find a relay, and to send transactions through it.</li>
+</ul>
+
+<h2 id="changelog">Changelog</h2>
+
+<h3 id="v2">V2</h3>
+
+<ul>
+  <li>In V2 the Relay Hub contract doesn’t receive payments, the payment for the service (in tokens) is paid directly to the worker relaying the transaction on behalf of the user.</li>
+  <li>Paymaster verifications are now done off-chain to optimize gas costs, thus the paymasters are now called Verifiers and they are not part of the on-chain relay flow nor they handle payments at all.</li>
+  <li>Gas cost optimization.</li>
+  <li>Security issues fixed.</li>
 </ul>
 
 

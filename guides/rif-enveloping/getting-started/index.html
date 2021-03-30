@@ -752,6 +752,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Enveloping</a>
                 <ul>
+                  <li><a href="../">User Guide</a></li>
                   <li><a href="../develop/">Develop</a></li>
                   <li><a href="./">Get started with Enveloping</a></li>
                   <li><a href="../integrate/">Integrate</a></li>
@@ -956,7 +957,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/guides/rif-enveloping/">
-					<span property="name">User Guide</span>
+					<span property="name">RIF Enveloping User Guide</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -980,7 +981,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 03:15:21 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-03-30 07:35:05 +0000T00:00:00.000Z">2021-03-30</time> | -->
      5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-enveloping/getting-started.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1622,6 +1623,7 @@
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Enveloping</a>
                 <ul>
+                  <li><a href="../">User Guide</a></li>
                   <li><a href="../develop/">Develop</a></li>
                   <li><a href="./">Get started with Enveloping</a></li>
                   <li><a href="../integrate/">Integrate</a></li>
@@ -1811,14 +1813,14 @@
 
                   <h1 class="page-title" id="top">Getting Started</h1>
 
-                  <p>Prepare the environment by following the instructions in Setup.</p>
+                  <p>Prepare the environment by following the instructions in <a href="../../../rif/enveloping/dev-setup/">Setup</a>.</p>
 
 <h2 id="building-the-project">Building the project</h2>
 
 <p>Clone the project.</p>
 
-<pre><code class="language-git">git clone https://github.com/rsksmart/enveloping
-</code></pre>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/rsksmart/enveloping
+</code></pre></div></div>
 
 <p>Then run the following from the Enveloping project’s root directory</p>
 
@@ -1834,14 +1836,14 @@
 
 <p>To build the default <code class="highlighter-rouge">PAPYRUS-2.1.0</code>, run</p>
 
-<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -t rskj:2.1.0-PAPYRUS .
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> rskj:2.1.0-PAPYRUS <span class="nb">.</span>
 </code></pre></div></div>
 
 <h3 id="run-docker">Run Docker</h3>
 
 <p>To run, use the recently generated tag (<code class="highlighter-rouge">-t</code> parameter for <code class="highlighter-rouge">docker build</code>):</p>
 
-<div class="language-docker highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p 127.0.0.1:4444:4444 rskj:2.1.0-PAPYRUS --regtest
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p</span> 127.0.0.1:4444:4444 rskj:2.1.0-PAPYRUS <span class="nt">--regtest</span>
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">--regtest</code> can be modified to any other of the networks or parameters supported by the RSKj binary.</p>
@@ -1884,8 +1886,10 @@
 
 <p>Output:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">{</span><span class="s2">"relayWorkerAddress"</span>:<span class="s2">"0x435493e2ab7c698e9f6d4dd916378103eb416e16"</span>,<span class="s2">"relayManagerAddress"</span>:<span class="s2">"0x7e1bd71ede2ee3edf1fd1f4a31c1a2eb1d012061"</span>,<span class="s2">"relayHubAddress"</span>:<span class="s2">"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29"</span>,<span class="s2">"minGasPrice"</span>:<span class="s2">"1"</span>,<span class="s2">"chainId"</span>:<span class="s2">"33"</span>,<span class="s2">"networkId"</span>:<span class="s2">"33"</span>,<span class="s2">"ready"</span>:false,<span class="s2">"version"</span>:<span class="s2">"2.0.1"</span><span class="o">}</span>
-</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"relayWorkerAddress"</span><span class="p">:</span><span class="s2">"0x435493e2ab7c698e9f6d4dd916378103eb416e16"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"relayManagerAddress"</span><span class="p">:</span><span class="s2">"0x7e1bd71ede2ee3edf1fd1f4a31c1a2eb1d012061"</span><span class="p">,</span><span class="nl">"relayHubAddress"</span><span class="p">:</span><span class="s2">"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29"</span><span class="p">,</span><span class="nl">"minGasPrice"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="nl">"chainId"</span><span class="p">:</span><span class="s2">"33"</span><span class="p">,</span><span class="w"> </span><span class="nl">"networkId"</span><span class="p">:</span><span class="s2">"33"</span><span class="p">,</span><span class="w">
+</span><span class="nl">"ready"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="nl">"version"</span><span class="p">:</span><span class="s2">"2.0.1"</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
 
 <p>(3) Deploy contracts on Testnet</p>
 
