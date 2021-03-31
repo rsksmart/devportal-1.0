@@ -8,7 +8,7 @@ We are currently integrated in this dApps
 
 ### RNS Manager
 
-This is [RIF Name Service](../../../rns) platform. Use it to:
+This is [RIF Name Service](/rif/rns) platform. Use it to:
 - Register .rsk domains
 - Administrate your domains
 
@@ -79,4 +79,4 @@ Similar to Money on chain, but in this case backing the stable coins with RIF to
 
 URL: [rif.moneyonchain.com](https://rif.moneyonchain.com/)
 
-You may also want to see the [sample apps](../samples) list.
+You may also want to see the [sample apps](/rif/identity/rlogin/samples) list.

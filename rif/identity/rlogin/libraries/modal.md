@@ -6,7 +6,7 @@ layout: rsk
 
 rLogin is a tool that allows the front end developer to connect their user with blockchain functionalities and self-sovereign identity models seamlessly. It provides a standard button and a pop-up that, within its different flavors, allows the developer to correctly authenticate a user following the Decentralized Identity and Verifiable Credentials protocols. In addition, it will allow the developer to interact with a user-centric cloud like service called the _data vault_. This service can be used to store and retrieve user's information with their permission.
 
-To understand the motivation, architecture and design please read [general rLogin docs](../../)
+To understand the motivation, architecture and design please read [general rLogin docs](/rif/identity/rlogin/)
 
 ## Features
 
@@ -28,7 +28,7 @@ To understand the motivation, architecture and design please read [general rLogi
 
 1. Install rLogin
 
-    ```
+    ```shell
     npm i @rsksmart/rlogin
     ```
 
@@ -55,9 +55,9 @@ To understand the motivation, architecture and design please read [general rLogi
       supportedChains: [1, 30, 31]
     })
     ```
-    
+
     > Sample: https://github.com/rsksmart/rif-identity-manager/blob/main/src/rLogin.ts
-    
+
 3. Show the pop-up to the user
 
     ```typescript
@@ -74,17 +74,17 @@ To understand the motivation, architecture and design please read [general rLogi
           .catch((err: string) => console.log(err))
     }
     ```
-    
+
     > Sample: https://github.com/rsksmart/rif-identity-manager/blob/main/src/app/LoginScreen.tsx
-    
+
 4. Request RPC methods
 
-    ```
+    ```typescript
     export const getAccounts = (provider: any) => provider.request({ method: 'eth_accounts' })
     ```
-    
+
     Or use `provider` as Web3 provider for your client of preference: [`Web3.js`](https://github.com/ethereum/web3.js/), [`ethjs`](https://github.com/ethjs/ethjs), [`ethers.js`](https://github.com/ethers-io/ethers.js/) or other.
-    
+
     > Sample: https://github.com/rsksmart/rif-identity-manager/blob/main/src/helpers.ts
 
 ### Flavors
@@ -109,13 +109,13 @@ The tool tries not to re-implement functionalities that are provided by other li
 
 **Install dependencies** - downloads and install dependencies from `npm`
 
-```
+```shell
 npm i
 ```
 
 **Run tests** - runs with `jest`
 
-```
+```shell
 npm test
 ```
 
@@ -125,13 +125,13 @@ The best way to test it is to run `npm build:dev` to update the bundle after sav
 
 **Lint** - runs `eslint` syntax checks
 
-```
+```shell
 npm run lint
 ```
 
 **Build for production** - builds `umd` into `dist/main.js`
 
-```
+```shell
 npm run build
 ```
 
@@ -143,7 +143,7 @@ npm run build:dev
 
 **Serve the library** - serves the library in `http://localhost:5005`
 
-```
+```shell
 npm run serve
 ```
 
@@ -161,4 +161,5 @@ Please first build for production.
 
 ## Acknowledgements
 
-Find all acknowledged bugs, future features, and improvements in [repo issues](issues)
+Find all acknowledged bugs, future features, and improvements in
+[repo issues](https://github.com/rsksmart/rLogin/issues)
