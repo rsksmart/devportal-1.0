@@ -981,7 +981,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-02-19 12:45:19 +0000T00:00:00.000Z">2021-02-19</time> | -->
+    <!--time role="presentation" datetime="2021-03-31 06:26:59 +0000T00:00:00.000Z">2021-03-31</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1813,18 +1813,33 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h2 id="rlogin">rLogin</h2>
+                  <h2 id="rlogin---where-web3-meets-ssi">rLogin - where web3 meets SSI</h2>
 
-<p>rLogin allows web application developers to integrate blockchain technologies giving the user the power of data portability. After integrating rLogin you achieve:</p>
+<p>rLogin is a tool that allows the developers to connect their users with both blockchain functionalities and self-sovereign identity (SSI) models seamlessly, giving the user the power of data privacy and portability.</p>
+
+<p><strong>Quick start! Jump to <a href="libraries/modal/">rLogin docs</a> to install the front end tool</strong></p>
+
+<p>You may also want to see</p>
+
+<ul>
+  <li>
+<a href="integrations/">current integrations</a> as a reference,</li>
+  <li>some <a href="samples/">sample apps</a> to try it on your own,</li>
+  <li>or follow this <a href="https://hackernoon.com/rlogin-the-new-authentication-libraries-for-blockchain-based-apps-h619330z" rel="external noopener noreferrer" target="_blank">series of articles</a> as a guide</li>
+</ul>
+
+<p>After integrating rLogin you achieve:</p>
 
 <ul>
   <li>a back-end authenticating users by their wallet addressed - their Decentralized Identifiers</li>
-  <li>a registration model capable of requesting users for data stored in its user-centric cloud storage, the <a href="../data-vault">Data Vault</a>
+  <li>a registration model capable of requesting users for data stored in its user-centric cloud storage, the <a href="../data-vault/">Data Vault</a>
 </li>
   <li>a front-end capable of interacting with any wallet that the user chooses, with a pre-designed user experience for registration and login</li>
-  <li>compatibility with a unified platform where the user can control their identity and information, the <a href="../manager">RIF Identity Manager</a>
+  <li>compatibility with a unified platform where the user can control their identity and information, the <a href="../manager/">RIF Identity Manager</a>
 </li>
 </ul>
+
+<p><img src="assets/rlogin-architecture-simple.png" alt="rlogin-architecture-simple"></p>
 
 <h3 id="state-of-the-art">State of the art</h3>
 
@@ -1833,6 +1848,8 @@
 <p>There are web 2.0 applications, where confidence in the authenticity of users relies on services provided by third parties, such as <a href="https://developers.google.com/identity" rel="external noopener noreferrer" target="_blank">Google Authentication</a>. These applications require that the user log in to their account in a third party service. This third party service shares the user’s private information, giving the application the necessary information to authenticate the user. The information is in control of the third-party, which can use it arbitrarily to gain future access.</p>
 
 <p>Today’s decentralized apps have no way of requiring private user information in a unified way. Nor is there any platform that allows an application to obtain reliable proof that a user was authenticated by a third party service without having to communicate with it.</p>
+
+<p><img src="assets/identity-30.png" alt="identity-30"></p>
 
 <h3 id="design--architecture">Design &amp; Architecture</h3>
 
@@ -1845,9 +1862,9 @@
   <li>A client library combining authentication against back-end using user’s wallet and store credentials</li>
 </ul>
 
-<p><a href="./architecture">Read more</a></p>
+<p><a href="architecture/">Read more</a></p>
 
-<p><img src="./assets/rlogin-architecture.jpg" alt="rlogin-architecture"></p>
+<p><img src="assets/rlogin-architecture.jpg" alt="rlogin-architecture"></p>
 
 <h3 id="libraries">Libraries</h3>
 
@@ -1893,23 +1910,21 @@
   </div>
 </div>
 
-<p>See the <a href="integrate">Integrate page</a> for more details as well as the <a href="./integrations">current integrations</a> as a reference.</p>
-
 <hr>
 
 <ul>
-  <li><a href="integrate">Integrate</a></li>
-  <li><a href="integrations">Integrations</a></li>
-  <li><a href="architecture">Design &amp; architecture</a></li>
+  <li><a href="integrate/">Integrate</a></li>
+  <li><a href="integrations/">Integrations</a></li>
+  <li><a href="architecture/">Design &amp; architecture</a></li>
   <li>
-<a href="libraries">Libraries</a>
+<a href="libraries/">Libraries</a>
     <ul>
-      <li><a href="libraries/modal">rLogin modal (client side)</a></li>
-      <li><a href="libraries/express-did-auth">DID Auth (server side)</a></li>
-      <li><a href="libraries/vc-json-schemas">Verifiable Credential schemas (communication)</a></li>
+      <li><a href="libraries/modal/">rLogin modal (client side)</a></li>
+      <li><a href="libraries/express-did-auth/">DID Auth (server side)</a></li>
+      <li><a href="libraries/vc-json-schemas/">Verifiable Credential schemas (communication)</a></li>
     </ul>
   </li>
-  <li><a href="develop">Develop</a></li>
+  <li><a href="develop/">Develop</a></li>
 </ul>
 
 

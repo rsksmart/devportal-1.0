@@ -997,8 +997,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-31 23:36:25 +0000T00:00:00.000Z">2020-12-31</time> | -->
-     7' to read |
+    <!--time role="presentation" datetime="2021-03-31 06:26:59 +0000T00:00:00.000Z">2021-03-31</time> | -->
+     6' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/identity/rlogin/libraries/modal.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1844,6 +1844,7 @@
         <ul>
           <li><a href="https://metamask.io/" rel="external noopener noreferrer" target="_blank">Metamask wallet</a></li>
           <li><a href="https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid" rel="external noopener noreferrer" target="_blank">Nifty wallet</a></li>
+          <li><a href="https://liquality.io/atomic-swap-wallet.html" rel="external noopener noreferrer" target="_blank">Liquality wallet</a></li>
         </ul>
       </li>
       <li>Mobile wallets - wallets that are installed in mobile phone and support <a href="https://walletconnect.org/" rel="external noopener noreferrer" target="_blank">Wallet Connect</a>
@@ -1864,17 +1865,13 @@
   </li>
 </ul>
 
-<blockquote>
-  <p>We express support for wallet providers and networks that are manually tested against each PR as QA process. Formalizing manual test schedule and automated tests are a work in progress, and are planned in the scope of this project.</p>
-</blockquote>
-
 <h2 id="quick-start">Quick start</h2>
 
 <ol>
   <li>
     <p>Install rLogin</p>
 
-    <div class="highlighter-rouge">
+    <div class="language-shell highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> npm i @rsksmart/rlogin
 </code></pre></div>    </div>
   </li>
@@ -1912,8 +1909,16 @@
 
     <div class="language-typescript highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code> <span class="kd">const</span> <span class="nx">handleLogin</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-     <span class="nx">rLogin</span><span class="p">.</span><span class="nx">connect</span><span class="p">().</span><span class="nx">then</span><span class="p">((</span><span class="na">provider</span><span class="p">:</span> <span class="nx">any</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">context</span><span class="p">?.</span><span class="nx">setProvider</span><span class="p">(</span><span class="nx">provider</span><span class="p">))</span>
-         <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="na">err</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span>
+     <span class="nx">rLogin</span><span class="p">.</span><span class="nx">connect</span><span class="p">()</span>
+       <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="na">rLoginResponse</span><span class="p">:</span> <span class="nx">any</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+         <span class="kd">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="nx">rLoginResponse</span><span class="p">.</span><span class="nx">provider</span><span class="p">;</span>
+         <span class="kd">const</span> <span class="nx">dataVault</span> <span class="o">=</span> <span class="nx">rLoginResponse</span><span class="p">.</span><span class="nx">dataVault</span><span class="p">;</span>
+         <span class="kd">const</span> <span class="nx">disconnect</span> <span class="o">=</span> <span class="nx">rLoginResponse</span><span class="p">.</span><span class="nx">disconnect</span><span class="p">;</span>
+
+         <span class="c1">// save the response to be used later, here we are using React context</span>
+         <span class="nx">context</span><span class="p">.</span><span class="nx">rLoginresponse</span><span class="p">(</span><span class="nx">rLoginResponse</span><span class="p">)</span>
+       <span class="p">})</span>
+       <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="na">err</span><span class="p">:</span> <span class="nx">string</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">err</span><span class="p">))</span>
  <span class="p">}</span>
 </code></pre></div>    </div>
 
@@ -1924,8 +1929,8 @@
   <li>
     <p>Request RPC methods</p>
 
-    <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code> export const getAccounts = (provider: any) =&gt; provider.request({ method: 'eth_accounts' })
+    <div class="language-typescript highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code> <span class="k">export</span> <span class="kd">const</span> <span class="nx">getAccounts</span> <span class="o">=</span> <span class="p">(</span><span class="nx">provider</span><span class="p">:</span> <span class="nx">any</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">provider</span><span class="p">.</span><span class="nx">request</span><span class="p">({</span> <span class="na">method</span><span class="p">:</span> <span class="dl">'</span><span class="s1">eth_accounts</span><span class="dl">'</span> <span class="p">})</span>
 </code></pre></div>    </div>
 
     <p>Or use <code class="highlighter-rouge">provider</code> as Web3 provider for your client of preference: <a href="https://github.com/ethereum/web3.js/" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">Web3.js</code></a>, <a href="https://github.com/ethjs/ethjs" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">ethjs</code></a>, <a href="https://github.com/ethers-io/ethers.js/" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">ethers.js</code></a> or other.</p>
@@ -1935,24 +1940,6 @@
     </blockquote>
   </li>
 </ol>
-
-<p><strong>For HTML-only apps:</strong></p>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"http://unpkg.com/@rsksmart/rlogin"</span><span class="nt">&gt;&lt;/script&gt;</span>
-<span class="nt">&lt;script </span><span class="na">type=</span><span class="s">"text/javascript"</span><span class="nt">&gt;</span>
-    <span class="kd">const</span> <span class="nx">rLogin</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">window</span><span class="p">.</span><span class="nx">RLogin</span><span class="p">.</span><span class="k">default</span><span class="p">({</span>
-        <span class="na">providerOptions</span><span class="p">:</span> <span class="p">{}</span> <span class="c1">// see above options</span>
-    <span class="p">})</span>
-
-    <span class="kd">function</span> <span class="nx">handleLogin</span><span class="p">()</span> <span class="p">{</span>
-        <span class="nx">rLogin</span><span class="p">.</span><span class="nx">connect</span><span class="p">().</span><span class="nx">then</span><span class="p">(</span><span class="nx">provider</span> <span class="o">=&gt;</span> <span class="p">{</span>
-            <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">provider</span><span class="p">.</span><span class="nx">selectedAddress</span>
-        <span class="p">})</span>
-    <span class="p">}</span>
-
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">login</span><span class="dl">'</span><span class="p">).</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="nx">handleLogin</span><span class="p">);</span>
-<span class="nt">&lt;/script&gt;</span>
-</code></pre></div></div>
 
 <h3 id="flavors">Flavors</h3>
 
@@ -1971,57 +1958,103 @@
   </li>
 </ul>
 
-<h2 id="eip-1193-support">EIP-1193 support</h2>
+<h2 id="the-code">The code</h2>
 
-<p>rLogin express support for <a href="https://eips.ethereum.org/EIPS/eip-1193" rel="external noopener noreferrer" target="_blank">EIP-1193</a> propossal for a <em>Ethereum Provider JavaScript API</em>. Wallet providers that implement EIP-1193 are prone to be integrated seamlessly into this library.</p>
+<p>The tool tries not to re-implement functionalities that are provided by other libraries. The work is strongly based on:</p>
 
-<p>Read this sections to understand how to handle EIP-1193 rLogin.</p>
+<ul>
+  <li>
+<a href="https://github.com/web3Modal/web3modal/" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">web3modal</code></a>
+    <ul>
+      <li>Wallet provider integrations are imported from npm package</li>
+      <li>Core and components are re-implemented to enable developing custom UX flow and custom components</li>
+    </ul>
+  </li>
+</ul>
 
-<h3 id="accountschanged">accountsChanged</h3>
+<h2 id="run-for-development">Run for development</h2>
 
-<p>Event is fired when the user changes the account/persona.</p>
+<p><strong>Install dependencies</strong> - downloads and install dependencies from <code class="highlighter-rouge">npm</code></p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rLogin</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">"</span><span class="s2">accountsChanged</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">accounts</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Account: </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-<span class="p">});</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i
 </code></pre></div></div>
 
-<h3 id="chainchanged">chainChanged</h3>
+<p><strong>Run tests</strong> - runs with <code class="highlighter-rouge">jest</code></p>
 
-<p>Event is fired when the user changes the network in the wallet.</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rLogin</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="dl">"</span><span class="s2">chainChanged</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">chainId</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">chainId</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">ChainId: </span><span class="dl">'</span> <span class="o">+</span> <span class="nb">parseInt</span><span class="p">(</span><span class="nx">chainId</span><span class="p">)</span>
-<span class="p">})</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">test</span>
 </code></pre></div></div>
 
-<h4 id="about-nifty-and-rpc-request-method">About Nifty and RPC <code class="highlighter-rouge">request</code> method</h4>
+<p>Currently, there are no tests :(. Please test it with a <a href="#sample-apps">sample app</a>.</p>
 
-<p>Nifty does not support EIP-1193 regarding <code class="highlighter-rouge">request</code> API, it still uses <code class="highlighter-rouge">send</code> method as API for sending RPCs. Consider this in your implementation.</p>
+<p>The best way to test it is to run <code class="highlighter-rouge">npm build:dev</code> to update the bundle after saving files. You will need to reload page after rebuilding, that is not automated yet.</p>
 
-<p>Follow up the feature request: <a href="https://github.com/poanetwork/nifty-wallet/issues/421" rel="external noopener noreferrer" target="_blank">poanetwork/nifty-wallet#421</a></p>
+<p><strong>Lint</strong> - runs <code class="highlighter-rouge">eslint</code> syntax checks</p>
 
-<h2 id="optional-parameters">Optional parameters</h2>
-
-<h3 id="supportednetworks">supportedNetworks</h3>
-
-<p>Specify the network IDs that the dApp supports and the wallet should use.</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">rLogin</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">window</span><span class="p">.</span><span class="nx">RLogin</span><span class="p">.</span><span class="k">default</span><span class="p">({</span>
-    <span class="na">supportedNetworks</span><span class="p">:</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">],</span>
-<span class="p">})</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run lint
 </code></pre></div></div>
 
-<h3 id="web3modal-options">
-<code class="highlighter-rouge">web3modal</code> options</h3>
+<p><strong>Build for production</strong> - builds <code class="highlighter-rouge">umd</code> into <code class="highlighter-rouge">dist/main.js</code></p>
 
-<p>Options available for <a href="https://github.com/web3Modal/web3modal/" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">web3modal</code></a> are available for <code class="highlighter-rouge">rLogin</code>. To understand how this works go to section <a href="https://github.com/rsksmart/rLogin#the-code" rel="external noopener noreferrer" target="_blank"><em>the code</em></a>.</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
+</code></pre></div></div>
 
-<p>Wallet providers and networks that are listed in <a href="#features"><em>features</em></a> section are supported and tested, but other can be provided seamlessly with <code class="highlighter-rouge">web3modal</code> options. We cannot assure quality for using other providers or networks.</p>
+<p><strong>Build in watch mode</strong> - builds each time a file in <code class="highlighter-rouge">src/</code> is updated</p>
 
-<h2 id="styling-the-modal-and-interface">Styling the modal and interface</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build:dev
+</code></pre></div></div>
 
-<p>The modal comes with basic RIF styling and can be overwritten using CSS. All of the elements contain class and id selectors to allow style customizations. A list of the selectors can be found in the <a href="https://github.com/rsksmart/rLogin/tree/master/src/constants/cssSelectors.ts" rel="external noopener noreferrer" target="_blank">cssSelector.ts constants file</a>.</p>
+<p><strong>Serve the library</strong> - serves the library in <code class="highlighter-rouge">http://localhost:5005</code></p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run serve
+</code></pre></div></div>
+
+<blockquote>
+  <p>Metamask cannot be accessed without <code class="highlighter-rouge">http</code> - see https://ethereum.stackexchange.com/a/62217/620</p>
+</blockquote>
+
+<h2 id="sample-apps">Sample apps</h2>
+
+<p>Please first build for production.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Flavor</th>
+      <th>Import from</th>
+      <th>Location</th>
+      <th>Command</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fully-decentralized</td>
+      <td>HTML DOM</td>
+      <td><em>./sample/decentralized</em></td>
+      <td><code class="highlighter-rouge">npm run sample:dapp</code></td>
+      <td>Serves the library in <em>http://localhost:3005</em> and a dApp in <em>http://localhost:3006</em>. Go to <em>3006</em> with your browser</td>
+    </tr>
+    <tr>
+      <td>Open app</td>
+      <td>HTML DOM</td>
+      <td><em>./sample/with_be</em></td>
+      <td><code class="highlighter-rouge">npm run sample:open</code></td>
+      <td>Serves the library in <em>http://localhost:3005</em>, dApp in <em>http://localhost:3006/?backend=yes</em> and back end in <em>http://localhost:3007</em>. This mode will not ask for Data Vault access. Go to <em>3006</em> with your browser</td>
+    </tr>
+    <tr>
+      <td>Permissioned app</td>
+      <td>HTML DOM</td>
+      <td><em>./sample/decentralized</em></td>
+      <td><code class="highlighter-rouge">npm run sample:permissioned</code></td>
+      <td>Serves the library in <em>http://localhost:3005</em>, dApp in <em>http://localhost:3006</em> and back end in <em>http://localhost:3007</em>. This mode will ask for Data Vault access. Go to <em>3006</em> with your browser</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="acknowledgements">Acknowledgements</h2>
+
+<p>Find all acknowledged bugs, future features, and improvements in
+<a href="https://github.com/rsksmart/rLogin/issues" rel="external noopener noreferrer" target="_blank">repo issues</a></p>
 
 
                   
