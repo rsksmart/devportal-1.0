@@ -8,7 +8,7 @@ render_features: 'tables-with-borders'
 
 Edge is a powerful and easy to use cryptocurrency wallet that allows users to easily control their own private keys with the familiarity and ease of mobile banking. Edge provides maximum security while keeping simplicity, allowing all types of users to easily manage, transfer & exchange their currencies.
 
-![Edge Wallet- BannerImage](/assets/img/solutions/EdgeWallet/Edge_banner.png)
+![Edge Wallet- BannerImage](/assets/img/solutions/edge/Edge_banner.png)
 
 Edge currently supports: RSK, Bitcoin, Ethereum and other cryptocurrencies. Neither Edge or any 3rd party can access your money or data. You get the financial privacy and autonomy that blockchain was designed for right at your fingertips.
 
@@ -22,7 +22,7 @@ Watch this short explainer video:
 
 ## How Edge Wallet integrates with RSK
 
-![EdgeWallet-RSK-Integrations](/assets/img/solutions/EdgeWallet/Edge-RSK.jpg)
+![EdgeWallet-RSK-Integrations](/assets/img/solutions/edge/Edge-RSK.jpg)
 
 ### Supported Token Standards
 
@@ -59,7 +59,7 @@ Watch this short explainer video:
 
 **How to Download Edge Wallet**
 
-![EdgeWallet-Download](/assets/img/solutions/EdgeWallet/Edge_banner_long.png)
+![EdgeWallet-Download](/assets/img/solutions/edge/Edge_banner_long.png)
 
 - [Download on iOS](https://apps.apple.com/us/app/edge-crypto-bitcoin-wallet/id1344400091)
 - [Download on Android](https://play.google.com/store/apps/details?id=co.edgesecure.app&hl=en_US&gl=US)
@@ -67,21 +67,21 @@ Watch this short explainer video:
 **How to add RBTC Wallet**
 
 (1) Open the Edge Wallet App
-![Edge-RBTC](/assets/img/solutions/EdgeWallet/add-wallet-home.jpg)
+![Edge-RBTC](/assets/img/solutions/edge/add-wallet-home.jpg)
 (2)Click on Add Wallet
-![Add wallet](/assets/img/solutions/EdgeWallet/add-rbtc.jpg)
+![Add wallet](/assets/img/solutions/edge/add-rbtc.jpg)
 (3) Type "RSK" in the search field
-![Enter RSK](/assets/img/solutions/EdgeWallet/search-rsk.jpg)
+![Enter RSK](/assets/img/solutions/edge/search-rsk.jpg)
 
 (4) Click on RSK - RBTC
 
 (5) Click on **Create Wallet** or import wallet
-![Create-Wallet](/assets/img/solutions/EdgeWallet/create-wallet.PNG)
+![Create-Wallet](/assets/img/solutions/edge/create-wallet.png)
 
 (6) Choose a fiat currency
 
 (7) Set a name for your Wallet
-![SaveInfo](/assets/img/solutions/EdgeWallet/create-wallet-title.jpg)
+![SaveInfo](/assets/img/solutions/edge/create-wallet-title.jpg)
 
 (8) Click next
 
@@ -94,18 +94,18 @@ Watch this short explainer video:
 **How to add RIF token**
 
 (1) Open Edge Wallet App
-![Edge-RBTC](/assets/img/solutions/EdgeWallet/add-rif.jpg)
+![Edge-RBTC](/assets/img/solutions/edge/add-rif.jpg)
 
 (2) Long press on RBTC
 
 (3) Click on Add/Edit Tokens
-![Add-RIF-Token](/assets/img/solutions/EdgeWallet/add-rif-token.jpg)
+![Add-RIF-Token](/assets/img/solutions/edge/add-rif-token.jpg)
 
 (4) Click on the RIF Token (RIF) and save
-![Click-RIF-Token](/assets/img/solutions/EdgeWallet/select-token.jpg)
+![Click-RIF-Token](/assets/img/solutions/edge/select-token.jpg)
 
 (5) View tokens on RSK
-![View-tokens-RSK](/assets/img/solutions/EdgeWallet/view-rif-rbtc-token.jpg)
+![View-tokens-RSK](/assets/img/solutions/edge/view-rif-rbtc-token.jpg)
 
 ## Asset types
 

@@ -242,7 +242,7 @@ platforms and APIs to create innovative experiences.
             <a href="/solutions/edge/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/EdgeWallet/Edge_Primary_Logo_MintNavy.png" alt="started icon">
+                        <img src="/assets/img/solutions/edge/Edge_Primary_Logo_MintNavy.png" alt="started icon">
                     </div>
                 </div>
             </a>
