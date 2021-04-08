@@ -110,12 +110,6 @@ See [supported wallets](/wallet/use/).
     </a>
     </div>
     <div class="item">
-        <a href="https://www.bitfinex.com/" target="blank">
-        <img src="https://rsk.co/img/exchanges/10-bitfinex.png" alt="Bitfinex">
-        <a class="company-name" href="https://www.bitfinex.com/" target="blank">Bitfinex</a>
-    </a>
-    </div>
-    <div class="item">
         <a href="https://www.coinall.com/" target="blank">
         <img src="https://rsk.co/img/exchanges/2-coinalll.png" alt="Coinall">
         <a class="company-name" href="https://www.coinall.com/" target="blank">Coinall</a>
@@ -125,12 +119,6 @@ See [supported wallets](/wallet/use/).
         <a href="https://www.coinbene.com/" target="blank">
         <img src="https://rsk.co/img/exchanges/3-coinbene.png" alt="CoinBene">
         <a class="company-name" href="https://www.coinbene.com/" target="blank">CoinBene</a>
-    </a>
-    </div>
-    <div class="item">
-        <a href="https://www.cashierest.com/">
-        <img src="https://rsk.co/img/exchanges/5-cashierest.png" alt="Cashirest">
-        <a class="company-name" href="https://www.cashierest.com/">Cashierest</a>
     </a>
     </div>
     <div class="item">
