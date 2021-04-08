@@ -25,7 +25,7 @@ yarn prepare
 
 ### Docker Build
 
-To build the default `PAPYRUS-2.1.0`, run
+To build the default `PAPYRUS-2.1.0`, run the command below in the `rsknode` folder.
 
 ```shell
 docker build -t rskj:2.1.0-PAPYRUS .
@@ -33,10 +33,10 @@ docker build -t rskj:2.1.0-PAPYRUS .
 
 ### Run Docker
 
-To run, use the recently generated tag (`-t` parameter for `docker build`):
+To run, inside the `rsknode` folder, use the recently generated tag (`-t` parameter for `docker build`):
 
 ```shell
-docker run -p 127.0.0.1:4444:4444 rskj:2.1.0-PAPYRUS --regtest
+docker run -p 127.0.0.1:4444:4444 --name enveloping-rskj rskj:2.1.0-PAPYRUS --regtest
 ```
 
 `--regtest` can be modified to any other of the networks or parameters supported by the RSKj binary.
@@ -46,6 +46,8 @@ docker run -p 127.0.0.1:4444:4444 rskj:2.1.0-PAPYRUS --regtest
 ## Deploy contracts locally
 
 We use `truffle` for deploying contracts.
+
+Open another terminal in the enveloping root directory, and run the command below;
 
 ```shell
 npx truffle migrate --network rsk
@@ -68,26 +70,29 @@ npx webpack
 ```shell
 node dist/src/cli/commands/enveloping.js boot-test --network http://localhost:4444/
 ```
-
 Specifying `localhost:4444` connects to an RSK Regtest node.
 
 To check if the `jsrelay` server is working, run:
 
 ```shell
-curl http://localhost:8090/getaddr
+curl http://localhost:<PORT>/getaddr
 ```
+
+``<PORT>``: Port is where the `jsrelay` is running
 
 Output:
 
 ```json
-{"relayWorkerAddress":"0x435493e2ab7c698e9f6d4dd916378103eb416e16",
-"relayManagerAddress":"0x7e1bd71ede2ee3edf1fd1f4a31c1a2eb1d012061","relayHubAddress":"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29","minGasPrice":"1", "chainId":"33", "networkId":"33",
-"ready":false, "version":"2.0.1"}
+{"relayWorkerAddress":"0x75b701edf0a4abcf15e68e8aefe85bf416c0c678", "relayManagerAddress":"0x05029db78d8aa9e8a7fa8813f72dffe37d15aa64","relayHubAddress":"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29",
+"minGasPrice":"1","chainId":"33",
+"networkId":"33","ready":true,"version":"2.0.1"}
 ```
 
 (3) Deploy contracts on Testnet
 
-We use `truffle` for deploying contracts.
+We use `truffle` for deploying contracts. 
+
+In the enveloping root directory, run the command below;
 
 ```shell
 npx truffle migrate --network rsktestnet
@@ -104,8 +109,8 @@ clone the project then run the following
 from the project's root directory:
 
 1.  Create the project home folder,
-    in this folder the `jsrelay` databases will be placed:
-    ``shell
+    in this folder, the `jsrelay` databases will be placed:
+    ```shell
     mkdir enveloping_relay
     ```
 2.  In a terminal, run
@@ -114,6 +119,9 @@ from the project's root directory:
       relayer-run \
       --rskNodeUrl "http://localhost:4444" \
       --relayHubAddress=<RELAY_HUB_CONTRACT_ADDRESS> \
+      --deployVerifierAddress=<DEPLOY_VERIFIER_CONTRACT_ADDRESS> \
+      --relayVerifierAddress=<RELAY_VERIFIER_CONTRACT_ADDRESS> \
+      --versionRegistryAddress=<VERSION_REGISTRY_CONTRACT_ADDRESS> \
       --url <RELAY_URL> \
       --port 8090 \
       --workdir enveloping_relay \
@@ -121,15 +129,22 @@ from the project's root directory:
     ```
     where;
     - `<RELAY_HUB_CONTRACT_ADDRESS>`:
-      is the address for the relayHub you are using in the current network
+      is the address for the Relay Hub you are using in the current network
+    - `<DEPLOY_VERIFIER_CONTRACT_ADDRESS>`:
+  is the address for the Deploy Verifier you are using in the current network
+    - `<RELAY_VERIFIER_CONTRACT_ADDRESS>`:
+    is the address for the Relay Verifier you are using in the current network
+    - `<VERSION_REGISTRY_CONTRACT_ADDRESS>`:
+    is the address for the Version Registry you are using in the current network
+    
       ([see Testnet Contracts section](https://github.com/rsksmart/enveloping/blob/master/docs/launching_enveloping.md#c02.1)),
     - `<RELAY_URL>`:
-      in most cases will be `http://localhost`,
+      in most cases will be `http://localhost`, 
       and the server will be reachable at
       `<RELAY_URL>:port` unless
       `<RELAY_URL>` already defines a port
       (e.g, if `<RELAY_URL>` is `http://localhost:8090/jsrelay`)
-3.  In another terminal run
+3.  In another terminal, run
     ```shell
     curl http://localhost:8090/getaddr
     ```
@@ -166,6 +181,6 @@ from the project's root directory:
 > Error: listen EADDRINUSE: address already in use :::8090
 > ```
 
-This means that the relay server running in the background.
+This means that the relay server is running in the background.
 Run the bash file `scripts/kill-relay-server.sh`
 to kill it and make that port available again.
