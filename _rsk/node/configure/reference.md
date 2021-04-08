@@ -7,6 +7,8 @@ collection_order: 2410
 render_features: 'tables-with-borders'
 ---
 
+See [CLI flags](../cli/) for command line flag options.
+
 ## Advanced Configuration
 
 For advanced configuration requirements, please refer to this

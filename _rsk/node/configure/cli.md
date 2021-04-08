@@ -11,7 +11,7 @@ render_features: 'custom-terminals'
 Most of the configurable options or settings for RSKj are available
 in "config". See [config reference](../reference/) for more details.
 
-However, a small number of command line flags are also available:
+However, a list of command line flags are also available:
 
 ## Network related
 
@@ -59,6 +59,8 @@ This is known as the *Blockchain Database*.
   the Java Virtual Machine that the RSK node is running in is supported.
   By default, this check is always performed, to ensure that the RSK node is running
   in a compatible environment.
+- `-base-path`: 
+  Specifies the base path `NodeCliOption` to enhance the block replay tool user experience.
 
 ## Reference implementation
 
