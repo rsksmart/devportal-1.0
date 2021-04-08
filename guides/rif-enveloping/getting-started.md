@@ -125,7 +125,7 @@ from the project's root directory:
       --url <RELAY_URL> \
       --port 8090 \
       --workdir enveloping_relay \
-      --checkInterval 30000
+      --checkInterval 90000
     ```
     where;
     - `<RELAY_HUB_CONTRACT_ADDRESS>`:
