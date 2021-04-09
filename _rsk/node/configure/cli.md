@@ -59,8 +59,8 @@ This is known as the *Blockchain Database*.
   the Java Virtual Machine that the RSK node is running in is supported.
   By default, this check is always performed, to ensure that the RSK node is running
   in a compatible environment.
-- `-base-path`: 
-  Specifies the base path `NodeCliOption` to enhance the block replay tool user experience.
+- `--base-path`: 
+  Specifies the the value of `database.dir`, where the blockchain database is stored.
 
 ## Reference implementation
 
