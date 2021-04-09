@@ -78,14 +78,19 @@ To check if the `jsrelay` server is working, run:
 curl http://localhost:<PORT>/getaddr
 ```
 
-``<PORT>``: Port is where the `jsrelay` is running
+`<PORT>`: Port is where the `jsrelay` is running
 
 Output:
 
 ```json
-{"relayWorkerAddress":"0x75b701edf0a4abcf15e68e8aefe85bf416c0c678", "relayManagerAddress":"0x05029db78d8aa9e8a7fa8813f72dffe37d15aa64","relayHubAddress":"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29",
-"minGasPrice":"1","chainId":"33",
-"networkId":"33","ready":true,"version":"2.0.1"}
+{
+  "relayWorkerAddress":"0x75b701edf0a4abcf15e68e8aefe85bf416c0c678", "relayManagerAddress":"0x05029db78d8aa9e8a7fa8813f72dffe37d15aa64","relayHubAddress":"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29",
+  "minGasPrice":"1",
+  "chainId":"33",
+  "networkId":"33",
+  "ready":true,
+  "version":"2.0.1"
+}
 ```
 
 (3) Deploy contracts on Testnet
@@ -139,7 +144,7 @@ from the project's root directory:
     
       ([see Testnet Contracts section](https://github.com/rsksmart/enveloping/blob/master/docs/launching_enveloping.md#c02.1)),
     - `<RELAY_URL>`:
-      in most cases will be `http://localhost`, 
+      in most cases will be `http://localhost`,
       and the server will be reachable at
       `<RELAY_URL>:port` unless
       `<RELAY_URL>` already defines a port
