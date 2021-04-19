@@ -158,7 +158,7 @@ Your PeerId: QmYekG8Nkm1co9VxSLqCBnm9mxPYtabL1Q7emzU322KKdm
 
 4 - The URL may be displayed depending on the config which points to Marketplace and has the Peer ID as a parameter. Otherwise, navigate to the URL where you started: [RIF Marketplace Sell Page](https://marketplace.rifos.org/storage/sell) and copy-paste the Peer ID generated in the previous step.
 
-5 - After [Creating an Offer](#offer-storage) you are ready to start the rif-pinning daemon and an IPFS node. To run an IPFS node, please refer to this documentation: https://docs.ipfs.io/how-to/command-line-quick-start/.
+5 - After [Creating an Offer](#offer-storage) you are ready to start the rif-pinning daemon and an IPFS node. To run an IPFS node, please refer to the [IPFS documentation](https://docs.ipfs.io/how-to/command-line-quick-start/).
 To run the RIF Pinner with default configurations, execute the following in the terminal:
 
 ```
