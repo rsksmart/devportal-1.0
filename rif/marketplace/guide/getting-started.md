@@ -143,7 +143,7 @@ Once you click on **WITHDRAW** this will submit a transaction that needs to be c
 
 ![RIF Marketplace Installation Instructions](/rif/marketplace/guide/images/userguide-marketplace-storage-reg-instructions.png)
 
-3 - During the package installation, run the init command. The pinner DB is instantiated for the given Offer ID and a new Peer ID is generated. You should have a result similar to this one:
+3 - During the package installation, run the `init` command. The pinner DB is instantiated for the given Offer ID and a new Peer ID is generated. You should have a result similar to this one:
 
 ```
 rif-pinning init --offerId 0x8dc5758fff238ce129121031969dffd4a58a4e5f
