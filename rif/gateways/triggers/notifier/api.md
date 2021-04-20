@@ -31,116 +31,22 @@ Contents
 
 The endpoint http://localhost:8080/getSubscriptionPlans can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally `activePlans=true` parameter can be sent to retrieve only the active subscription plans.
 
+
+
 ### **Subscribe to Plan**
-
-Users can create a subscription to a given plan by providing their user address and plan id along with topic details and the notification preferences.
-
-The endpoint http://localhost:8080/subscribeToPlan can be used to create a new subscription. A sample json that can be sent in the request body is provided under `src/main/resources/subscription-batch-example.json`. Modify the json to provide your own topics and preferences. More information on how to specify the topic subsection can be found at [topic json](#topic-json)
-
-`currency` in json should be one of the currencies accepted by the provider, and allowed in the plan.
-
-`price` should be same price as in subscription plan for the given currency
-
-One or more `notificationPreferences` can be specified
-`notificationService` currently supported are `API, EMAIL and SMS`. For more information on notificationPreferences subsection refer to [notification preference json body](#notification-preference-json-body)
+Run the command ```notifier-cons-cli subscribe``` to subscribe to a plan
 
 ### **Renew Subscription**
+Run the command ```notifier-cons-cli renew``` to renew existing subscription
 
-Users can renew a subscription to a given plan by providing their user address and plan id along with topic details and the notification preferences. The renewal json is same as [subscribe to plan](#subscribe-to-plan) json. However, previousSubscriptionHash has to be sent along with the request. The previous subscription cannot be in `PENDING` state.
+### **Subscription and Renewal response**
+As part of the subscription and renewal response a ```hash``` of the subscription along with the ```signature``` is returned. The ```hash``` can be used to identify a subscription. 
 
-The endpoint http://localhost:8080/renewSubscription?previousSubscriptionHash can be used to create a new subscription. `previousSubscriptionHash` parameter must be sent as a request parameter.
+**Api key**  
+An api key is also generated as part of the response, which can be used to perform [get subscription info](#get-subscription-info) and [get notifications](#getting-notifications) operations
 
 ### **Subscription and Renewal response**
 As part of the subscription and renewal response a `hash` of the subscription along with the `signature` is returned. The `hash` can be used to identify a subscription.
-
-**Api key**
-An api key is also generated as part of the response, which can be used to perform [get subscription info](#get-subscription-info) and [get notifications](#getting-notifications) operations
-
--------------------
-
-###### **Topic Json**
-
-```json
-{
-    "type": "CONTRACT_EVENT",
-    "topicParams": [{
-            "type": "CONTRACT_ADDRESS",
-            "value": "0xf4af6e52b1bcbbe31d1332eb32d463fb10bded27"
-        },
-        {
-            "type": "EVENT_NAME",
-            "value": "LogSellArticle"
-        },
-        {
-            "type": "EVENT_PARAM",
-            "value": "seller",
-            "order": 0,
-            "valueType": "Address",
-            "indexed": 1
-        },
-        {
-            "type": "EVENT_PARAM",
-            "value": "article",
-            "order": 1,
-            "valueType": "Utf8String",
-            "indexed": 0,
-            "filter": "iphone x"
-        },
-        {
-            "type": "EVENT_PARAM",
-            "value": "price",
-            "order": 2,
-            "valueType": "Uint256",
-            "indexed": 0,
-            "filter": "1000"
-        }
-    ]
-}
-```
-
-#### **Notes of Topic Json structure**
-
-Event type (First param of the json structure), this can be type of: `CONTRACT_EVENT, NEW_TRANSACTIONS, NEW_BLOCK`. It'll indicate the notifier what type of event you want to listen in the blockchain
-
-When you want to listen to a certain contract event in the blockchain, you need to indicate type: `CONTRACT_EVENT` type, some needed params are required for this type of event:
-
--CONTRACT_ADDRESS param like the described before, this will indicate to the notifier that this param is the address to be listened. *It is required.
-
--EVENT_NAME param, this will be used to check that the name of the contract event is the same as the blockchain when it's called. *It is required.
-
--EVENT_PARAM, here you will need to indicate an order as described by the contract signature, please indicate when a param is indexed also. The valueType need to be a web3 accepted type. Not required, in case the event doest have one, dont send this.
-
---EVENT_PARAM is composed of some attributes, "value" indicates the name of the event parameter, "order" is for the order of the param that appears in the event, this will be used to filter the data. "valueType" is used to create the event listener in rif-notification, so it needs to be a valid web3 type, "indexed" is used to indicate if the param is indexed, default value is 0, and we add a "filter" param, so you can use it to filtering the data you want to retrieve from the event.
-
-For others types, you only need to send the Type without Params.
-
-As an example for `NEW_BLOCKS` or `NEW_TRANSACTIONS`
-
-```json
-{
-    "type": "NEW_BLOCK",
-}
-```
-
-Or
-
-```json
-{
-    "type": "NEW_TRANSACTION",
-}
-```
-
-Return example:
-
-```json
-{
-    "message": "OK",
-    "data": "{\"topicId\": 1}",
-    "status": "OK"
-}
-```
-
-You can store that topicId for later get the notifications for that particular event
 
 ###### Getting notifications
 
@@ -157,112 +63,24 @@ Query params:
 	lastRows [Optional]: With this param you can set how many notifications will the notifier return. MAX is setted in applications.properties at 1000, so this number need to less than that
 ```
 
-
-###### Unsubscribing from a Topic
-
-```
-POST Request: http://localhost:8080/unsubscribeFromTopic?idTopic=ID_TOPIC
-Header param:
-	key: apiKey
-	value: API_KEY
-```
-
-###### Save Notification Preference
-Notification Preference allows to save a type of notification to send for all blockchain notifications. The different types of notifiction preference available are SMS, EMAIL and API.
-A notification preference is usually associated to a user and topic id. When no topic id is provided a default topic id 0 is used, and set as default notification preference when no
-preference found for given user and topic id.
-
-```
-POST Request: http://localhost:8080/saveNotificationPreference
-Header param:
-    key: apiKey
-    value: API_KEY
-```
-
-###### **Notification Preference Json Body:**
-
-```
-        {
-          "notificationService":"API",
-          "destination":"http://host/notify",
-          "idTopic":"0",
-          "destinationParams":{
-              "apiKey":"test",
-              "username":"test",
-              "password":"test"
-            }
-        }
-```
-
-Email Json Body:
-
-```
-        {
-                "notificationService":"EMAIL",
-                "destination":"123456@abc.com;123@abc.com", /*(multiple email addresses separated by semi-colon)*/
-                "idTopic":"11",
-        }
-```
-
-Sms Json Body:
-
-```
-        {
-               "notificationService":"SMS",
-                "destination":"+191725245555", /* in exact format, +(country code)(phone number)*/
-                "idTopic":"10",
-        }
-```
-
-###### Remove Notification Preference
-
-Removes a given notification preference
-
-```
-POST Request: http://localhost:8080/removeNotificationPreference
-Header param:
-    key: apiKey
-    value: API_KEY
-```
-
-API Json Body
-
-```
-    {
-          "notificationService":"API",
-          "idTopic":"10",
-    }
-```
-
-SMS Json Body
-
-```
-    {
-          "notificationService":"SMS",
-          "idTopic":"10",
-    }
-```
-
-Email Json Body
-
-```
-    {
-          "notificationService":"EMAIL",
-          "idTopic":"10",
-    }
-
-```
-
 ###### Other available endpoints
 
-###### Get Subscription info
+###### Get Subscriptions
 
 ```
-GET Request: http://localhost:8080/getSubscriptionInfo
-Header param:
+GET Request: http://localhost:8080/getSubscriptions
+ or
+GET Request: http://localhost:8080/getSubscriptions/hash1,hash2...
+Header param: 
+    Header param: 
+	key: userAddress
+	value: USER_ADDRESS
 	key: apiKey
-	value: API_KEY
-Short description: Brings the data associated with your subscription (Notification_Balance, Topics subscribed with params, etc)
+	value: API_KEY 
+	Request param:
+	name: subscriptionHash
+	value: SUBSCRIPTION_HASH
+Short description: Gets all the subscriptions or subscriptions for provided hashes. More detailed subscription info will be returned for users with valid api key.
 ```
 
 Return example:
