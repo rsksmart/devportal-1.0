@@ -9,6 +9,7 @@ description: "RIF Marketplace User Guide"
 - [Sell a Domain](#sell-a-domain)
 - [Cancel a listed domain](#cancel-a-domain)
 - [Offer Storage](#offer-storage)
+- [Setup Pinning Service](#setup-pinning-service)
 - [Rent Storage](#rent-storage)
 - [Renew Storage](#renew-storage)
 
@@ -129,6 +130,69 @@ To offer decentralized storage in the RIF Marketplace, you need to follow these 
 Once you click on **WITHDRAW** this will submit a transaction that needs to be confirmed in the Wallet and processed in order to get the earned funds.
 
 **Note:** It is important to remark that during this Beta phase, Storage Providers need to be *whitelisted* in the smart contract so please contact us if you are interested!
+
+### Setup Pinning Service
+
+1 - Go to the Marketplace Storage Sell page and start the creation process: [RIF Marketplace Sell Page](https://marketplace.rifos.org/storage/sell). You will see that your RSK address is not registered as a Storage provider yet.
+
+![RIF Marketplace Register Page](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-register.png)
+
+2 - That means you need to get whitelisted. Please submit the whitelisting request here: [Whitlisting Form](https://docs.google.com/forms/d/e/1FAIpQLSeun2pF5wZUY8Xu4Teq2ZDFG3UoaaUBLjoJt-1MwiE2c5esnw/viewform). While your request is being processed, you need to install the Storage Pinner application and generate a Peer ID. On the same page, click the ‘Get Peer ID’ link and follow the instructions.
+
+![RIF Marketplace Register Small](/rif/marketplace/guide/images/userguide-marketplace-storage-register-small.png)
+
+![RIF Marketplace Installation Instructions](/rif/marketplace/guide/images/userguide-marketplace-storage-reg-instructions.png)
+
+3 - During the package installation, run the `init` command. The pinner DB is instantiated for the given Offer ID and a new Peer ID is generated. You should have a result similar to this one:
+
+```
+rif-pinning init --offerId 0x8dc5758fff238ce129121031969dffd4a58a4e5f
+
+Init DB... done
+Set Offer ID... done
+Generating Peer Identity... done
+Your PeerId: QmYekG8Nkm1co9VxSLqCBnm9mxPYtabL1Q7emzU322KKdm
+```
+ 
+(Note: make sure your address/Offer ID is lower case)
+
+4 - The URL may be displayed depending on the config which points to Marketplace and has the Peer ID as a parameter. Otherwise, navigate to the URL where you started: [RIF Marketplace Sell Page](https://marketplace.rifos.org/storage/sell) and copy-paste the Peer ID generated in the previous step.
+
+5 - After [Creating an Offer](#offer-storage) you are ready to start the rif-pinning daemon and an IPFS node. To run an IPFS node, please refer to the [IPFS documentation](https://docs.ipfs.io/how-to/command-line-quick-start/).
+To run the RIF Pinner with default configurations, execute the following in the terminal:
+
+```
+rif-pinning daemon --network mainnet
+or
+rif-pinning daemon --network testnet
+```
+
+This command starts listening for new Agreements, and connects to IPFS. By default, it expects the IPFS node to run on port 5001. If you want to customize rif-pinner daemon behaviour, execute:
+
+```
+rif-pinning daemon help
+```
+
+To perform any other tasks with the rif-pinner:
+```
+rif-pinning help
+
+Application for providing your storage space to other to use in exchange of RIF Tokens
+
+VERSION
+  @rsksmart/rif-storage-pinning/0.2.2 linux-x64 node-v14.16.1
+
+USAGE
+  $ rif-pinning [COMMAND]
+
+COMMANDS
+  agreements    Agreements info
+  cleanup       Cleanup pinner files
+  daemon        Run pinning service
+  db-migration  DB migration
+  help          display help for rif-pinning
+  init          Initialize Pinner service dependencies
+```
 
 ### Rent Storage
 
