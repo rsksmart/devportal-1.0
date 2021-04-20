@@ -990,8 +990,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-05 02:27:29 +0000T00:00:00.000Z">2021-03-05</time> | -->
-     8' to read |
+    <!--time role="presentation" datetime="2021-04-19 16:47:21 +0000T00:00:00.000Z">2021-04-19</time> | -->
+     11' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/marketplace/guide/getting-started.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1828,6 +1828,7 @@
   <li><a href="#sell-a-domain">Sell a Domain</a></li>
   <li><a href="#cancel-a-domain">Cancel a listed domain</a></li>
   <li><a href="#offer-storage">Offer Storage</a></li>
+  <li><a href="#setup-pinning-service">Setup Pinning Service</a></li>
   <li><a href="#rent-storage">Rent Storage</a></li>
   <li><a href="#renew-storage">Renew Storage</a></li>
 </ul>
@@ -1951,6 +1952,65 @@
 <p>Once you click on <strong>WITHDRAW</strong> this will submit a transaction that needs to be confirmed in the Wallet and processed in order to get the earned funds.</p>
 
 <p><strong>Note:</strong> It is important to remark that during this Beta phase, Storage Providers need to be <em>whitelisted</em> in the smart contract so please contact us if you are interested!</p>
+
+<h3 id="setup-pinning-service">Setup Pinning Service</h3>
+
+<p>1 - Go to the Marketplace Storage Sell page and start the creation process: <a href="https://marketplace.rifos.org/storage/sell" rel="external noopener noreferrer" target="_blank">RIF Marketplace Sell Page</a>. You will see that your RSK address is not registered as a Storage provider yet.</p>
+
+<p><img src="../images/userguide-marketplace-storage-sell-register.png" alt="RIF Marketplace Register Page"></p>
+
+<p>2 - That means you need to get whitelisted. Please submit the whitelisting request here: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeun2pF5wZUY8Xu4Teq2ZDFG3UoaaUBLjoJt-1MwiE2c5esnw/viewform" rel="external noopener noreferrer" target="_blank">Whitlisting Form</a>. While your request is being processed, you need to install the Storage Pinner application and generate a Peer ID. On the same page, click the ‘Get Peer ID’ link and follow the instructions.</p>
+
+<p><img src="../images/userguide-marketplace-storage-register-small.png" alt="RIF Marketplace Register Small"></p>
+
+<p><img src="../images/userguide-marketplace-storage-reg-instructions.png" alt="RIF Marketplace Installation Instructions"></p>
+
+<p>3 - During the package installation, run the <code class="highlighter-rouge">init</code> command. The pinner DB is instantiated for the given Offer ID and a new Peer ID is generated. You should have a result similar to this one:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rif-pinning init --offerId 0x8dc5758fff238ce129121031969dffd4a58a4e5f
+
+Init DB... done
+Set Offer ID... done
+Generating Peer Identity... done
+Your PeerId: QmYekG8Nkm1co9VxSLqCBnm9mxPYtabL1Q7emzU322KKdm
+</code></pre></div></div>
+
+<p>(Note: make sure your address/Offer ID is lower case)</p>
+
+<p>4 - The URL may be displayed depending on the config which points to Marketplace and has the Peer ID as a parameter. Otherwise, navigate to the URL where you started: <a href="https://marketplace.rifos.org/storage/sell" rel="external noopener noreferrer" target="_blank">RIF Marketplace Sell Page</a> and copy-paste the Peer ID generated in the previous step.</p>
+
+<p>5 - After <a href="#offer-storage">Creating an Offer</a> you are ready to start the rif-pinning daemon and an IPFS node. To run an IPFS node, please refer to the <a href="https://docs.ipfs.io/how-to/command-line-quick-start/" rel="external noopener noreferrer" target="_blank">IPFS documentation</a>.
+To run the RIF Pinner with default configurations, execute the following in the terminal:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rif-pinning daemon --network mainnet
+or
+rif-pinning daemon --network testnet
+</code></pre></div></div>
+
+<p>This command starts listening for new Agreements, and connects to IPFS. By default, it expects the IPFS node to run on port 5001. If you want to customize rif-pinner daemon behaviour, execute:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rif-pinning daemon help
+</code></pre></div></div>
+
+<p>To perform any other tasks with the rif-pinner:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rif-pinning help
+
+Application for providing your storage space to other to use in exchange of RIF Tokens
+
+VERSION
+  @rsksmart/rif-storage-pinning/0.2.2 linux-x64 node-v14.16.1
+
+USAGE
+  $ rif-pinning [COMMAND]
+
+COMMANDS
+  agreements    Agreements info
+  cleanup       Cleanup pinner files
+  daemon        Run pinning service
+  db-migration  DB migration
+  help          display help for rif-pinning
+  init          Initialize Pinner service dependencies
+</code></pre></div></div>
 
 <h3 id="rent-storage">Rent Storage</h3>
 
