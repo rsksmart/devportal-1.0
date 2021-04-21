@@ -31,10 +31,10 @@ The endpoint http://localhost:8080/getSubscriptionPlans can be used to get a lis
 
 
 ### **Subscribe to Plan**
-Run the command ```notifier-cons-cli subscribe``` to subscribe to a plan
+Run the command `notifier-cons-cli subscribe` to subscribe to a plan
 
 ### **Renew Subscription**
-Run the command ```notifier-cons-cli renew``` to renew existing subscription
+Run the command `notifier-cons-cli renew` to renew existing subscription
 
 ### **Subscription and Renewal response**
 As part of the subscription and renewal response a `hash` of the subscription along with the `signature` is returned. The `hash` can be used to identify a subscription. 

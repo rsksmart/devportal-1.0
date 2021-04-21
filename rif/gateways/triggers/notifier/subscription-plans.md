@@ -17,6 +17,6 @@ This page provides a guide for developers to set up the subscription plans offer
 #### **Create Subscription Plan**
 Run the command `notifier-prov-cli create subscriptionplan` or `notifier-prov-cli create subscriptionplan --docker` to create subscription plan in local machine or docker container. 
 #### **Update Subscription Plan**
-Run the command `notifier-prov-cli edit subscriptionplan` or `notifier-prov-cli edit subscriptionplan --docker``` to update a subscription plan in local machine or docker container.
+Run the command `notifier-prov-cli edit subscriptionplan` or `notifier-prov-cli edit subscriptionplan --docker` to update a subscription plan in local machine or docker container.
 #### Disable subscription plan
 Run the command `notifier-prov-cli disable subscriptionplan` or `notifier-prov-cli disable subscriptionplan --docker` to disable a subscription plan in local machine or docker container. 
