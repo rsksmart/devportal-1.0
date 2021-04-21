@@ -5,9 +5,9 @@ tags: rif, marketplace, guide
 description: "RIF Marketplace User Guide"
 ---
 
-- [Buy a Domain](#buy-a-domain)
-- [Sell a Domain](#sell-a-domain)
-- [Cancel a listed domain](#cancel-a-domain)
+- [Buy a domain](#buy-a-domain)
+- [Sell a domain](#sell-a-domain)
+- [Cancel a domain](#cancel-a-domain)
 - [Offer Storage](#offer-storage)
 - [Setup Pinning Service](#setup-pinning-service)
 - [Rent Storage](#rent-storage)
@@ -137,7 +137,7 @@ Once you click on **WITHDRAW** this will submit a transaction that needs to be c
 
 ![RIF Marketplace Register Page](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-register.png)
 
-2 - That means you need to get whitelisted. Please submit the whitelisting request here: [Whitlisting Form](https://docs.google.com/forms/d/e/1FAIpQLSeun2pF5wZUY8Xu4Teq2ZDFG3UoaaUBLjoJt-1MwiE2c5esnw/viewform). While your request is being processed, you need to install the Storage Pinner application and generate a Peer ID. On the same page, click the ‘Get Peer ID’ link and follow the instructions.
+2 - That means you need to get whitelisted. Please submit the whitelisting request here: [Whitlisting Form](https://docs.google.com/forms/d/1J20qP8iid6j-7kJ_GMZ7MfMOtwrFspH25P5WErVZP-U/edit?gxids=7628). While your request is being processed, you need to install the Storage Pinner application and generate a Peer ID. On the same page, click the ‘Get Peer ID’ link and follow the instructions.
 
 ![RIF Marketplace Register Small](/rif/marketplace/guide/images/userguide-marketplace-storage-register-small.png)
 
