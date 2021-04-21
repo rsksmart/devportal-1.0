@@ -37,7 +37,7 @@ Run the command ```notifier-cons-cli subscribe``` to subscribe to a plan
 Run the command ```notifier-cons-cli renew``` to renew existing subscription
 
 ### **Subscription and Renewal response**
-As part of the subscription and renewal response a ```hash``` of the subscription along with the ```signature``` is returned. The ```hash``` can be used to identify a subscription. 
+As part of the subscription and renewal response a `hash` of the subscription along with the `signature` is returned. The `hash` can be used to identify a subscription. 
 
 **Api key**  
 An api key is also generated as part of the response, which can be used to perform [get subscriptions](#get-subscriptions) and [get notifications](#getting-notifications) operations
