@@ -4,11 +4,9 @@ title: RIF Notifier API
 tags: rif, notifier, api
 ---
 
-You can access the RIF notifier REST api through the available endpoints. The available endpoints can be accessed through swagger using the link http://localhost:8080/swagger-ui.html
+You can access the RIF notifier REST api through the available endpoints. The available endpoints can be accessed through swagger using the link [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
 
 Below is a summary of the available endpoints.
-
-Contents
 
 1. [Get Subscription Plans](#get-subscription-plans)
 2. [Subscribe to Plan](#subscribe-to-plan)
@@ -26,9 +24,7 @@ Contents
 
 ### **Get Subscription Plans**
 
-The endpoint http://localhost:8080/getSubscriptionPlans can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally `activePlans=true` parameter can be sent to retrieve only the active subscription plans.
-
-
+The endpoint [http://localhost:8080/getSubscriptionPlans](http://localhost:8080/getSubscriptionPlans) can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally `activePlans=true` parameter can be sent to retrieve only the active subscription plans.
 
 ### **Subscribe to Plan**
 Run the command `notifier-cons-cli subscribe` to subscribe to a plan
@@ -47,17 +43,17 @@ As part of the subscription and renewal response a `hash` of the subscription al
 
 ###### Getting notifications
 
-When you're subscribed to topics, and a event is triggered the notifier will be processing the data, and saving it so you can access to that.
+When you're subscribed to topics, and an event is triggered, the notifier will process the data and save so you can access it.
 
-```
+```shell
 GET Request: http://localhost:8080/getNotifications
-Header param:
-	key: apiKey
-	value: API_KEY
+Header params:
+	    key: apiKey
+	    value: API_KEY
 Query params:
 	idTopic [Optional]: The notifications will be filtered with this param, so it brings only the idTopics associated with each, you can send lots of ids, separating each with commas: 12,15,21
 	fromId [Optional]: Each notification has an id, you can make a greater than by providing this param
-	lastRows [Optional]: With this param you can set how many notifications will the notifier return. MAX is setted in applications.properties at 1000, so this number need to less than that
+	lastRows [Optional]: With this param you can set how many notifications the notifier returns. MAX is set in applications.properties at 1000, so this number needs to be less than that.
 ```
 
 ###### Other available endpoints
@@ -116,7 +112,7 @@ GET Request: http://localhost:8080/getLuminoTokens
 Header param:
 	key: apiKey
 	value: API_KEY
-Short description: Brings an array of Token Network Address for the tokens registered in the blockchain, it can be used in other endpoints to subscribe to OpenChannels for the token or Close Channel events.
+Short description: Initiates an array of Token Network Address for the tokens registered in the blockchain, it can be used in other endpoints to subscribe to OpenChannels for the token or Closed Channel events.
 ```
 
 Return example:
@@ -137,7 +133,7 @@ Header param:
 	key: apiKey
 	value: API_KEY
 Query params:
-	token [Required]: Token network id for the token that you want to listen to open channel events
+	token [Required]: Token network id for the token that you want to listen on open channel events
 	participantone [Optional]: Address participant 1 of the channel
 	participanttwo [Optional]: Address participant 2 of the channel
 Short description: The notifier will listen to the events for the specified token.
@@ -161,7 +157,7 @@ Header param:
 	key: apiKey
 	value: API_KEY
 Query params:
-	token [Required]: Token network id for the token that you want to listen to open channel events
+	token [Required]: Token network id for the token that you want to listen on open channel events
 	closingParticipant [Optional]: Address of the participant who closes the channel
 	channelidentifier [Optional]: Id of the channel
 Short description: Similar to subscribeToOpenChannel, but for close channel event.
@@ -187,7 +183,7 @@ Header param:
 Query params:
 	closingParticipant [Optional]: Address of the participant who closes the channel
 	channelidentifier [Optional]: Id of the channel
-Short description: This endpoint subscribes you to all tokens, and returns an array of topic id, each topic will represent a event for each token. Also this endpoint accepts params for participantone and participanttwo, if sent, will filter all the topics.
+Short description: This endpoint subscribes you to all tokens, and returns an array of topic id, each topic will represent an event for each token. Also this endpoint accepts params for participant-one and participant-two, if sent, will filter all the topics.
 ```
 
 Return example:
