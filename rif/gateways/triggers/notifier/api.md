@@ -36,7 +36,7 @@ Run the command `notifier-cons-cli renew` to renew existing subscription
 As part of the subscription and renewal response a `hash` of the subscription along with the `signature` is returned. The `hash` can be used to identify a subscription. 
 
 **Api key**  
-An api key is also generated as part of the response, which can be used to perform [get subscriptions](#get-subscriptions) and [get notifications](#getting-notifications) operations
+An api key is also generated as part of the response, which can be used to perform [get subscriptions](#get-subscriptions) and [get notifications](#getting-notifications) operations.
 
 ### **Subscription and Renewal response**
 As part of the subscription and renewal response a `hash` of the subscription along with the `signature` is returned. The `hash` can be used to identify a subscription.
@@ -73,7 +73,7 @@ Header param:
 	Request param:
 	name: subscriptionHash
 	value: SUBSCRIPTION_HASH
-Short description: Gets all the subscriptions or subscriptions for provided hashes. More detailed subscription info will be returned for users with valid api key.
+Short description: Gets all the subscriptions or subscriptions for provided hashes. More detailed subscription info will be returned for users with a valid api key.
 ```
 
 Return example:
@@ -183,7 +183,7 @@ Header param:
 Query params:
 	closingParticipant [Optional]: Address of the participant who closes the channel
 	channelidentifier [Optional]: Id of the channel
-Short description: This endpoint subscribes you to all tokens, and returns an array of topic id, each topic will represent an event for each token. Also this endpoint accepts params for participant-one and participant-two, if sent, will filter all the topics.
+Short description: This endpoint subscribes you to all tokens, and returns an array of topic id, each topic will represent an event for each token. Also this endpoint accepts params for participantone and participanttwo, if sent, will filter all the topics.
 ```
 
 Return example:
