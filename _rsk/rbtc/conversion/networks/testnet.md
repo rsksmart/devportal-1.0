@@ -11,7 +11,7 @@ In this section we will go over the steps of converting t-BTC to tRBTC,
 and vice versa on the Bitcoin and RSK Testnets.
 
 Note:
-The minimum amount of Bitcoin to convert is **0.01 BTC** for Testnet.
+The minimum amount of Bitcoin to convert is **0.01 tBTC** for Testnet.
 
 ## tBTC to tRBTC conversion
 
@@ -60,7 +60,7 @@ It should look like the screenshot below.
 Once you have the RSK Federation address,
 you can send Bitcoin to it from your Bitcoin address.
 
-> Note: You need to send a minimum amount of 0.01 BTC for conversion.
+> Note: You need to send a minimum amount of 0.01 tBTC for conversion.
 
 **4 Get tRBTC address with tBTC private key**
 
@@ -70,10 +70,10 @@ You can get a corresponding tRBTC address from your tBTC private key by using [g
 
 **5 Check tRBTC balance on Testnet**
 
-You can check balance of above tRBTC address on Metamask,
+You can check the balance of the above tRBTC address on Metamask,
 MyCrypto or any RSK Testnet compatible wallets.
 
-> Note: You have to wait a minimum of 100 confirmations +
+> Note: You have to wait a minimum of 10 confirmations +
 > a minimum of 5 minutes for checking your RBTC balance
 
 ## tRBTC to tBTC conversion
@@ -102,4 +102,4 @@ You can either use Electrum wallet downloaded earlier or from
 any Bitcoin explorer to check the balance.
 
 > Note: The release process on Bitcoin network takes
-> 4000 RSK block confirmations and at least 10 more minutes.
+> 10 RSK block confirmations and at least 10 more minutes.
