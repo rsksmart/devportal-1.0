@@ -998,8 +998,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-10 04:35:45 +0000T00:00:00.000Z">2021-03-10</time> | -->
-     14' to read |
+    <!--time role="presentation" datetime="2021-04-22 02:26:10 +0000T00:00:00.000Z">2021-04-22</time> | -->
+     9' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/gateways/triggers/notifier/api.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1831,11 +1831,11 @@
 
                   <h1 class="page-title" id="top">RIF Notifier API</h1>
 
-                  <p>You can access the RIF notifier REST api through the available endpoints. The available endpoints can be accessed through swagger using the link http://localhost:8080/swagger-ui.html</p>
+                  <p>You can access the RIF notifier REST API through the available endpoints.
+The available endpoints can be accessed through swagger using the link
+<a href="http://localhost:8080/swagger-ui.html" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">http://localhost:8080/swagger-ui.html</code></a></p>
 
 <p>Below is a summary of the available endpoints.</p>
-
-<p>Contents</p>
 
 <ol>
   <li><a href="#get-subscription-plans">Get Subscription Plans</a></li>
@@ -1846,10 +1846,7 @@
 <a href="#other-available-endpoints">Other available endpoints</a>
     <ol>
       <li><a href="#getting-notifications">Retrieve notifications</a></li>
-      <li><a href="#unsubscribing-from-a-topic">Unsubscribe from topic</a></li>
-      <li><a href="#save-notification-preference">Save notification Preference</a></li>
-      <li><a href="#remove-notification-preference">Remove notification Preference</a></li>
-      <li><a href="#get-subscription-info">Get subscription info</a></li>
+      <li><a href="#get-subscriptions">Get subscriptions</a></li>
       <li><a href="#get-lumino-tokens">Get Lumino tokens</a></li>
       <li><a href="#subscribe-to-specific-open-channel">Subscribe to specific open channel</a></li>
       <li><a href="#subscribe-to-close-channel">Subscribe to close channel</a></li>
@@ -1862,224 +1859,54 @@
 
 <h3 id="get-subscription-plans"><strong>Get Subscription Plans</strong></h3>
 
-<p>The endpoint http://localhost:8080/getSubscriptionPlans can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally <code class="highlighter-rouge">activePlans=true</code> parameter can be sent to retrieve only the active subscription plans.</p>
+<p>The endpoint <a href="http://localhost:8080/getSubscriptionPlans" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">http://localhost:8080/getSubscriptionPlans</code></a> can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally <code class="highlighter-rouge">activePlans=true</code> parameter can be sent to retrieve only the active subscription plans.</p>
 
 <h3 id="subscribe-to-plan"><strong>Subscribe to Plan</strong></h3>
-
-<p>Users can create a subscription to a given plan by providing their user address and plan id along with topic details and the notification preferences.</p>
-
-<p>The endpoint http://localhost:8080/subscribeToPlan can be used to create a new subscription. A sample json that can be sent in the request body is provided under <code class="highlighter-rouge">src/main/resources/subscription-batch-example.json</code>. Modify the json to provide your own topics and preferences. More information on how to specify the topic subsection can be found at <a href="#topic-json">topic json</a></p>
-
-<p><code class="highlighter-rouge">currency</code> in json should be one of the currencies accepted by the provider, and allowed in the plan.</p>
-
-<p><code class="highlighter-rouge">price</code> should be same price as in subscription plan for the given currency</p>
-
-<p>One or more <code class="highlighter-rouge">notificationPreferences</code> can be specified
-<code class="highlighter-rouge">notificationService</code> currently supported are <code class="highlighter-rouge">API, EMAIL and SMS</code>. For more information on notificationPreferences subsection refer to <a href="#notification-preference-json-body">notification preference json body</a></p>
+<p>Run the command <code class="highlighter-rouge">notifier-cons-cli subscribe</code> to subscribe to a plan</p>
 
 <h3 id="renew-subscription"><strong>Renew Subscription</strong></h3>
-
-<p>Users can renew a subscription to a given plan by providing their user address and plan id along with topic details and the notification preferences. The renewal json is same as <a href="#subscribe-to-plan">subscribe to plan</a> json. However, previousSubscriptionHash has to be sent along with the request. The previous subscription cannot be in <code class="highlighter-rouge">PENDING</code> state.</p>
-
-<p>The endpoint http://localhost:8080/renewSubscription?previousSubscriptionHash can be used to create a new subscription. <code class="highlighter-rouge">previousSubscriptionHash</code> parameter must be sent as a request parameter.</p>
+<p>Run the command <code class="highlighter-rouge">notifier-cons-cli renew</code> to renew existing subscription</p>
 
 <h3 id="subscription-and-renewal-response"><strong>Subscription and Renewal response</strong></h3>
 <p>As part of the subscription and renewal response a <code class="highlighter-rouge">hash</code> of the subscription along with the <code class="highlighter-rouge">signature</code> is returned. The <code class="highlighter-rouge">hash</code> can be used to identify a subscription.</p>
 
-<p><strong>Api key</strong>
-An api key is also generated as part of the response, which can be used to perform <a href="#get-subscription-info">get subscription info</a> and <a href="#getting-notifications">get notifications</a> operations</p>
+<p><strong>Api key</strong><br>
+An api key is also generated as part of the response, which can be used to perform <a href="#get-subscriptions">get subscriptions</a> and <a href="#getting-notifications">get notifications</a> operations.</p>
 
-<hr>
-
-<h6 id="topic-json"><strong>Topic Json</strong></h6>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CONTRACT_EVENT"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"topicParams"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
-            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CONTRACT_ADDRESS"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xf4af6e52b1bcbbe31d1332eb32d463fb10bded27"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EVENT_NAME"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"LogSellArticle"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EVENT_PARAM"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"seller"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"order"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Address"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"indexed"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EVENT_PARAM"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"article"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"order"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Utf8String"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"indexed"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"filter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"iphone x"</span><span class="w">
-        </span><span class="p">},</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"EVENT_PARAM"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"price"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"order"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"valueType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Uint256"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"indexed"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"filter"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1000"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="notes-of-topic-json-structure"><strong>Notes of Topic Json structure</strong></h4>
-
-<p>Event type (First param of the json structure), this can be type of: <code class="highlighter-rouge">CONTRACT_EVENT, NEW_TRANSACTIONS, NEW_BLOCK</code>. It’ll indicate the notifier what type of event you want to listen in the blockchain</p>
-
-<p>When you want to listen to a certain contract event in the blockchain, you need to indicate type: <code class="highlighter-rouge">CONTRACT_EVENT</code> type, some needed params are required for this type of event:</p>
-
-<p>-CONTRACT_ADDRESS param like the described before, this will indicate to the notifier that this param is the address to be listened. *It is required.</p>
-
-<p>-EVENT_NAME param, this will be used to check that the name of the contract event is the same as the blockchain when it’s called. *It is required.</p>
-
-<p>-EVENT_PARAM, here you will need to indicate an order as described by the contract signature, please indicate when a param is indexed also. The valueType need to be a web3 accepted type. Not required, in case the event doest have one, dont send this.</p>
-
-<p>–EVENT_PARAM is composed of some attributes, “value” indicates the name of the event parameter, “order” is for the order of the param that appears in the event, this will be used to filter the data. “valueType” is used to create the event listener in rif-notification, so it needs to be a valid web3 type, “indexed” is used to indicate if the param is indexed, default value is 0, and we add a “filter” param, so you can use it to filtering the data you want to retrieve from the event.</p>
-
-<p>For others types, you only need to send the Type without Params.</p>
-
-<p>As an example for <code class="highlighter-rouge">NEW_BLOCKS</code> or <code class="highlighter-rouge">NEW_TRANSACTIONS</code></p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NEW_BLOCK"</span><span class="p">,</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Or</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"NEW_TRANSACTION"</span><span class="p">,</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Return example:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{</span><span class="se">\"</span><span class="s2">topicId</span><span class="se">\"</span><span class="s2">: 1}"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>You can store that topicId for later get the notifications for that particular event</p>
+<h3 id="subscription-and-renewal-response-1"><strong>Subscription and Renewal response</strong></h3>
+<p>As part of the subscription and renewal response a <code class="highlighter-rouge">hash</code> of the subscription along with the <code class="highlighter-rouge">signature</code> is returned. The <code class="highlighter-rouge">hash</code> can be used to identify a subscription.</p>
 
 <h6 id="getting-notifications">Getting notifications</h6>
 
-<p>When you’re subscribed to topics, and a event is triggered the notifier will be processing the data, and saving it so you can access to that.</p>
+<p>When you’re subscribed to topics, and an event is triggered, the notifier will process the data and save it, so that you can access it.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET Request: http://localhost:8080/getNotifications
-Header param:
-	key: apiKey
-	value: API_KEY
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET Request: http://localhost:8080/getNotifications
+Header params:
+	    key: apiKey
+	    value: API_KEY
 Query params:
-	idTopic [Optional]: The notifications will be filtered with this param, so it brings only the idTopics associated with each, you can send lots of ids, separating each with commas: 12,15,21
-	fromId [Optional]: Each notification has an id, you can make a greater than by providing this param
-	lastRows [Optional]: With this param you can set how many notifications will the notifier return. MAX is setted in applications.properties at 1000, so this number need to less than that
-</code></pre></div></div>
-
-<h6 id="unsubscribing-from-a-topic">Unsubscribing from a Topic</h6>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST Request: http://localhost:8080/unsubscribeFromTopic?idTopic=ID_TOPIC
-Header param:
-	key: apiKey
-	value: API_KEY
-</code></pre></div></div>
-
-<h6 id="save-notification-preference">Save Notification Preference</h6>
-<p>Notification Preference allows to save a type of notification to send for all blockchain notifications. The different types of notifiction preference available are SMS, EMAIL and API.
-A notification preference is usually associated to a user and topic id. When no topic id is provided a default topic id 0 is used, and set as default notification preference when no
-preference found for given user and topic id.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST Request: http://localhost:8080/saveNotificationPreference
-Header param:
-    key: apiKey
-    value: API_KEY
-</code></pre></div></div>
-
-<h6 id="notification-preference-json-body"><strong>Notification Preference Json Body:</strong></h6>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        {
-          "notificationService":"API",
-          "destination":"http://host/notify",
-          "idTopic":"0",
-          "destinationParams":{
-              "apiKey":"test",
-              "username":"test",
-              "password":"test"
-            }
-        }
-</code></pre></div></div>
-
-<p>Email Json Body:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        {
-                "notificationService":"EMAIL",
-                "destination":"123456@abc.com;123@abc.com", /*(multiple email addresses separated by semi-colon)*/
-                "idTopic":"11",
-        }
-</code></pre></div></div>
-
-<p>Sms Json Body:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        {
-               "notificationService":"SMS",
-                "destination":"+191725245555", /* in exact format, +(country code)(phone number)*/
-                "idTopic":"10",
-        }
-</code></pre></div></div>
-
-<h6 id="remove-notification-preference">Remove Notification Preference</h6>
-
-<p>Removes a given notification preference</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST Request: http://localhost:8080/removeNotificationPreference
-Header param:
-    key: apiKey
-    value: API_KEY
-</code></pre></div></div>
-
-<p>API Json Body</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    {
-          "notificationService":"API",
-          "idTopic":"10",
-    }
-</code></pre></div></div>
-
-<p>SMS Json Body</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    {
-          "notificationService":"SMS",
-          "idTopic":"10",
-    }
-</code></pre></div></div>
-
-<p>Email Json Body</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    {
-          "notificationService":"EMAIL",
-          "idTopic":"10",
-    }
-
+	idTopic <span class="o">[</span>Optional]: The notifications will be filtered with this param, so it brings only the idTopics associated with each, you can send lots of ids, separating each with commas: 12,15,21
+	fromId <span class="o">[</span>Optional]: Each notification has an <span class="nb">id</span>, you can make a greater than by providing this param
+	lastRows <span class="o">[</span>Optional]: With this param you can <span class="nb">set </span>how many notifications the notifier returns. MAX is <span class="nb">set </span><span class="k">in</span> <span class="sb">`</span>applications.properties<span class="sb">`</span> at 1000, so this number needs to be less than that.
 </code></pre></div></div>
 
 <h6 id="other-available-endpoints">Other available endpoints</h6>
 
-<h6 id="get-subscription-info">Get Subscription info</h6>
+<h6 id="get-subscriptions">Get Subscriptions</h6>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET Request: http://localhost:8080/getSubscriptionInfo
-Header param:
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET Request: http://localhost:8080/getSubscriptions
+ or
+GET Request: http://localhost:8080/getSubscriptions/hash1,hash2...
+Header param: 
+    Header param: 
+	key: userAddress
+	value: USER_ADDRESS
 	key: apiKey
-	value: API_KEY
-Short description: Brings the data associated with your subscription (Notification_Balance, Topics subscribed with params, etc)
+	value: API_KEY 
+	Request param:
+	name: subscriptionHash
+	value: SUBSCRIPTION_HASH
+Short description: Gets all the subscriptions or subscriptions for provided hashes. More detailed subscription info will be returned for users with a valid api key.
 </code></pre></div></div>
 
 <p>Return example:</p>
@@ -2115,7 +1942,8 @@ Short description: Brings the data associated with your subscription (Notificati
 Header param:
 	key: apiKey
 	value: API_KEY
-Short description: Brings an array of Token Network Address for the tokens registered in the blockchain, it can be used in other endpoints to subscribe to OpenChannels for the token or Close Channel events.
+Short description: Initiates an array of Token Network Address for the tokens registered in the blockchain, it can be used in other endpoints to subscribe to OpenChannels for the token or Closed Channel events.
+
 </code></pre></div></div>
 
 <p>Return example:</p>
@@ -2134,7 +1962,7 @@ Header param:
 	key: apiKey
 	value: API_KEY
 Query params:
-	token [Required]: Token network id for the token that you want to listen to open channel events
+	token [Required]: Token network id for the token that you want to listen on open channel events
 	participantone [Optional]: Address participant 1 of the channel
 	participanttwo [Optional]: Address participant 2 of the channel
 Short description: The notifier will listen to the events for the specified token.
@@ -2156,7 +1984,7 @@ Header param:
 	key: apiKey
 	value: API_KEY
 Query params:
-	token [Required]: Token network id for the token that you want to listen to open channel events
+	token [Required]: Token network id for the token that you want to listen on open channel events
 	closingParticipant [Optional]: Address of the participant who closes the channel
 	channelidentifier [Optional]: Id of the channel
 Short description: Similar to subscribeToOpenChannel, but for close channel event.
@@ -2180,7 +2008,7 @@ Header param:
 Query params:
 	closingParticipant [Optional]: Address of the participant who closes the channel
 	channelidentifier [Optional]: Id of the channel
-Short description: This endpoint subscribes you to all tokens, and returns an array of topic id, each topic will represent a event for each token. Also this endpoint accepts params for participantone and participanttwo, if sent, will filter all the topics.
+Short description: This endpoint subscribes you to all tokens, and returns an array of topic id, each topic will represent an event for each token. Also this endpoint accepts params for participantone and participanttwo, if sent, will filter all the topics.
 </code></pre></div></div>
 
 <p>Return example:</p>

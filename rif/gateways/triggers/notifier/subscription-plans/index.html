@@ -998,8 +998,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-10 04:35:45 +0000T00:00:00.000Z">2021-03-10</time> | -->
-     5' to read |
+    <!--time role="presentation" datetime="2021-04-21 09:10:41 +0000T00:00:00.000Z">2021-04-21</time> | -->
+     1' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/gateways/triggers/notifier/subscription-plans.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1836,145 +1836,17 @@
 <h3 id="contents">Contents:</h3>
 
 <ol>
-  <li><a href="#create-subscription-plans">Create Subscription Plans</a></li>
-  <li><a href="#update-subscription-plans">Update Subscription Plans</a></li>
-  <li><a href="#enable-or-disable-subscription-plans">Enable or Disable Subscription Plans</a></li>
+  <li><a href="#create-subscription-plan">Create Subscription Plan</a></li>
+  <li><a href="#update-subscription-plan">Update Subscription Plan</a></li>
+  <li><a href="#disable-subscription-plan">Disable Subscription Plan</a></li>
 </ol>
 
-<h4 id="create-subscription-plans"><strong>Create Subscription Plans</strong></h4>
-
-<ol>
-  <li>One or more subscription plans can be created by modifying subscription-plan.json under resources folder with your own plan details.</li>
-  <li>All the json attributes are required. The notificationPreferences should only contain preferences that are enabled in <code class="highlighter-rouge">application.yml</code>
-</li>
-  <li>
-<code class="highlighter-rouge">currency</code> field in subscriptionPrice should be one of those currencies specified in <code class="highlighter-rouge">rif.notifier.subscription.currencies</code> property of <code class="highlighter-rouge">application.yml </code>
-</li>
-  <li>Run <code class="highlighter-rouge">bin/subscriptionplans.sh</code> from the home directory of this project</li>
-  <li>If the json is correct, the plans will be created in the database.</li>
-  <li>A sample json structure is given below</li>
-</ol>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIF-10k"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"validity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationPreferences"</span><span class="p">:</span><span class="w"> </span><span class="s2">"API,EMAIL"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"subscriptionPriceList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RBTC"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xD9F3C552704B716EB2b825F20178181aB28F9eD8"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RIF"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x2C51B7bed742689D13F8DFb74487410cFa0ccAF4"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIF-20k"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"validity"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationPreferences"</span><span class="p">:</span><span class="w"> </span><span class="s2">"API,EMAIL"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"subscriptionPriceList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RBTC"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xD9F3C552704B716EB2b825F20178181aB28F9eD8"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RIF"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x2C51B7bed742689D13F8DFb74487410cFa0ccAF4"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre></div></div>
-
-<h4 id="update-subscription-plans"><strong>Update Subscription Plans</strong></h4>
-
-<ol>
-  <li>A subscription plan that already exists can be updated. In order to update, the “id” attribute must be specified as part of the subscription-plan.json for the plan to be updated.</li>
-  <li>All json attributes are required as given in subscription-plan.json. The notificationPreferences should only contain enabled preferences in application.yml</li>
-  <li>Modify subscription-plan.json under resources folder with your own plan details.</li>
-  <li>
-<code class="highlighter-rouge">currency</code> field in subscriptionPrice should be one of those currencies specified in <code class="highlighter-rouge">rif.notifier.subscription.currencies</code> property of <code class="highlighter-rouge">application.yml </code>
-</li>
-  <li>Run <code class="highlighter-rouge">bin/subscriptionplans.sh</code> from the home directory of this project</li>
-  <li>If the json is correct, the plans will be created in the database.</li>
-  <li>A sample json structure for update operation is given below</li>
-</ol>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIF-10k"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"validity"</span><span class="p">:</span><span class="w"> </span><span class="mi">150</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationPreferences"</span><span class="p">:</span><span class="w"> </span><span class="s2">"API,EMAIL"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"subscriptionPriceList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"10"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RBTC"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xD9F3C552704B716EB2b825F20178181aB28F9eD8"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RIF"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x2C51B7bed742689D13F8DFb74487410cFa0ccAF4"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"id"</span><span class="p">:</span><span class="s2">"2"</span><span class="w">
-    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RIF-20k"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationQuantity"</span><span class="p">:</span><span class="w"> </span><span class="mi">20000</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"validity"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"notificationPreferences"</span><span class="p">:</span><span class="w"> </span><span class="s2">"API,EMAIL"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"subscriptionPriceList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"20"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RBTC"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xD9F3C552704B716EB2b825F20178181aB28F9eD8"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">},</span><span class="w">
-      </span><span class="p">{</span><span class="w">
-        </span><span class="nl">"price"</span><span class="p">:</span><span class="w"> </span><span class="s2">"40"</span><span class="p">,</span><span class="w">
-        </span><span class="nl">"currency"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-          </span><span class="nl">"name"</span><span class="p">:</span><span class="s2">"RIF"</span><span class="p">,</span><span class="w">
-          </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x2C51B7bed742689D13F8DFb74487410cFa0ccAF4"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-      </span><span class="p">}</span><span class="w">
-    </span><span class="p">]</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-
-</span></code></pre></div></div>
-
-<h4 id="enable-or-disable-subscription-plans">Enable or disable subscription plans</h4>
-
-<p>A subscription plan can be enabled or disabled by setting the <code class="highlighter-rouge">status</code> property to true or false in <code class="highlighter-rouge">subscription-plan.json</code></p>
+<h4 id="create-subscription-plan"><strong>Create Subscription Plan</strong></h4>
+<p>Run the command <code class="highlighter-rouge">notifier-prov-cli create subscriptionplan</code> or <code class="highlighter-rouge">notifier-prov-cli create subscriptionplan --docker</code> to create subscription plan in local machine or docker container.</p>
+<h4 id="update-subscription-plan"><strong>Update Subscription Plan</strong></h4>
+<p>Run the command <code class="highlighter-rouge">notifier-prov-cli edit subscriptionplan</code> or <code class="highlighter-rouge">notifier-prov-cli edit subscriptionplan --docker</code> to update a subscription plan in local machine or docker container.</p>
+<h4 id="disable-subscription-plan">Disable subscription plan</h4>
+<p>Run the command <code class="highlighter-rouge">notifier-prov-cli disable subscriptionplan</code> or <code class="highlighter-rouge">notifier-prov-cli disable subscriptionplan --docker</code> to disable a subscription plan in local machine or docker container.</p>
 
 
                   
