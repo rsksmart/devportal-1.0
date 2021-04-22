@@ -982,7 +982,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 07:35:05 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-04-09 09:19:34 +0000T00:00:00.000Z">2021-04-09</time> | -->
      5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-enveloping/getting-started.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1836,16 +1836,16 @@
 
 <h3 id="docker-build">Docker Build</h3>
 
-<p>To build the default <code class="highlighter-rouge">PAPYRUS-2.1.0</code>, run</p>
+<p>To build the default <code class="highlighter-rouge">PAPYRUS-2.1.0</code>, run the command below in the <code class="highlighter-rouge">rsknode</code> folder.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> rskj:2.1.0-PAPYRUS <span class="nb">.</span>
 </code></pre></div></div>
 
 <h3 id="run-docker">Run Docker</h3>
 
-<p>To run, use the recently generated tag (<code class="highlighter-rouge">-t</code> parameter for <code class="highlighter-rouge">docker build</code>):</p>
+<p>To run, inside the <code class="highlighter-rouge">rsknode</code> folder, use the recently generated tag (<code class="highlighter-rouge">-t</code> parameter for <code class="highlighter-rouge">docker build</code>):</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p</span> 127.0.0.1:4444:4444 rskj:2.1.0-PAPYRUS <span class="nt">--regtest</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run <span class="nt">-p</span> 127.0.0.1:4444:4444 <span class="nt">--name</span> enveloping-rskj rskj:2.1.0-PAPYRUS <span class="nt">--regtest</span>
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">--regtest</code> can be modified to any other of the networks or parameters supported by the RSKj binary.</p>
@@ -1857,6 +1857,8 @@
 <h2 id="deploy-contracts-locally">Deploy contracts locally</h2>
 
 <p>We use <code class="highlighter-rouge">truffle</code> for deploying contracts.</p>
+
+<p>Open another terminal in the enveloping root directory, and run the command below;</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx truffle migrate <span class="nt">--network</span> rsk
 </code></pre></div></div>
@@ -1878,24 +1880,32 @@
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node dist/src/cli/commands/enveloping.js boot-test <span class="nt">--network</span> http://localhost:4444/
 </code></pre></div></div>
-
 <p>Specifying <code class="highlighter-rouge">localhost:4444</code> connects to an RSK Regtest node.</p>
 
 <p>To check if the <code class="highlighter-rouge">jsrelay</code> server is working, run:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:8090/getaddr
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl http://localhost:&lt;PORT&gt;/getaddr
 </code></pre></div></div>
+
+<p><code class="highlighter-rouge">&lt;PORT&gt;</code>: Port is where the <code class="highlighter-rouge">jsrelay</code> is running</p>
 
 <p>Output:</p>
 
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"relayWorkerAddress"</span><span class="p">:</span><span class="s2">"0x435493e2ab7c698e9f6d4dd916378103eb416e16"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"relayManagerAddress"</span><span class="p">:</span><span class="s2">"0x7e1bd71ede2ee3edf1fd1f4a31c1a2eb1d012061"</span><span class="p">,</span><span class="nl">"relayHubAddress"</span><span class="p">:</span><span class="s2">"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29"</span><span class="p">,</span><span class="nl">"minGasPrice"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w"> </span><span class="nl">"chainId"</span><span class="p">:</span><span class="s2">"33"</span><span class="p">,</span><span class="w"> </span><span class="nl">"networkId"</span><span class="p">:</span><span class="s2">"33"</span><span class="p">,</span><span class="w">
-</span><span class="nl">"ready"</span><span class="p">:</span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="nl">"version"</span><span class="p">:</span><span class="s2">"2.0.1"</span><span class="p">}</span><span class="w">
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"relayWorkerAddress"</span><span class="p">:</span><span class="s2">"0x75b701edf0a4abcf15e68e8aefe85bf416c0c678"</span><span class="p">,</span><span class="w"> </span><span class="nl">"relayManagerAddress"</span><span class="p">:</span><span class="s2">"0x05029db78d8aa9e8a7fa8813f72dffe37d15aa64"</span><span class="p">,</span><span class="nl">"relayHubAddress"</span><span class="p">:</span><span class="s2">"0x463F29B11503e198f6EbeC9903b4e5AaEddf6D29"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"minGasPrice"</span><span class="p">:</span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"chainId"</span><span class="p">:</span><span class="s2">"33"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"networkId"</span><span class="p">:</span><span class="s2">"33"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"ready"</span><span class="p">:</span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"version"</span><span class="p">:</span><span class="s2">"2.0.1"</span><span class="w">
+</span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
 
 <p>(3) Deploy contracts on Testnet</p>
 
 <p>We use <code class="highlighter-rouge">truffle</code> for deploying contracts.</p>
+
+<p>In the enveloping root directory, run the command below;</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx truffle migrate <span class="nt">--network</span> rsktestnet
 </code></pre></div></div>
@@ -1914,27 +1924,42 @@ from the project’s root directory:</p>
 
 <ol>
   <li>Create the project home folder,
-in this folder the <code class="highlighter-rouge">jsrelay</code> databases will be placed:
-<code class="highlighter-rouge">shell
-mkdir enveloping_relay
-</code>`</li>
+in this folder, the <code class="highlighter-rouge">jsrelay</code> databases will be placed:
+    <div class="language-shell highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="nb">mkdir </span>enveloping_relay
+</code></pre></div>    </div>
+  </li>
   <li>In a terminal, run
     <div class="language-shell highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>node dist/src/cli/commands/enveloping.js <span class="se">\</span>
   relayer-run <span class="se">\</span>
   <span class="nt">--rskNodeUrl</span> <span class="s2">"http://localhost:4444"</span> <span class="se">\</span>
   <span class="nt">--relayHubAddress</span><span class="o">=</span>&lt;RELAY_HUB_CONTRACT_ADDRESS&gt; <span class="se">\</span>
+  <span class="nt">--deployVerifierAddress</span><span class="o">=</span>&lt;DEPLOY_VERIFIER_CONTRACT_ADDRESS&gt; <span class="se">\</span>
+  <span class="nt">--relayVerifierAddress</span><span class="o">=</span>&lt;RELAY_VERIFIER_CONTRACT_ADDRESS&gt; <span class="se">\</span>
+  <span class="nt">--versionRegistryAddress</span><span class="o">=</span>&lt;VERSION_REGISTRY_CONTRACT_ADDRESS&gt; <span class="se">\</span>
   <span class="nt">--url</span> &lt;RELAY_URL&gt; <span class="se">\</span>
   <span class="nt">--port</span> 8090 <span class="se">\</span>
   <span class="nt">--workdir</span> enveloping_relay <span class="se">\</span>
-  <span class="nt">--checkInterval</span> 30000
+  <span class="nt">--checkInterval</span> 90000
 </code></pre></div>    </div>
     <p>where;</p>
     <ul>
       <li>
 <code class="highlighter-rouge">&lt;RELAY_HUB_CONTRACT_ADDRESS&gt;</code>:
-is the address for the relayHub you are using in the current network
-(<a href="https://github.com/rsksmart/enveloping/blob/master/docs/launching_enveloping.md#c02.1" rel="external noopener noreferrer" target="_blank">see Testnet Contracts section</a>),</li>
+is the address for the Relay Hub you are using in the current network</li>
+      <li>
+<code class="highlighter-rouge">&lt;DEPLOY_VERIFIER_CONTRACT_ADDRESS&gt;</code>:
+is the address for the Deploy Verifier you are using in the current network</li>
+      <li>
+<code class="highlighter-rouge">&lt;RELAY_VERIFIER_CONTRACT_ADDRESS&gt;</code>:
+is the address for the Relay Verifier you are using in the current network</li>
+      <li>
+        <p><code class="highlighter-rouge">&lt;VERSION_REGISTRY_CONTRACT_ADDRESS&gt;</code>:
+is the address for the Version Registry you are using in the current network</p>
+
+        <p>(<a href="https://github.com/rsksmart/enveloping/blob/master/docs/launching_enveloping.md#c02.1" rel="external noopener noreferrer" target="_blank">see Testnet Contracts section</a>),</p>
+      </li>
       <li>
 <code class="highlighter-rouge">&lt;RELAY_URL&gt;</code>:
 in most cases will be <code class="highlighter-rouge">http://localhost</code>,
@@ -1944,7 +1969,7 @@ and the server will be reachable at
 (e.g, if <code class="highlighter-rouge">&lt;RELAY_URL&gt;</code> is <code class="highlighter-rouge">http://localhost:8090/jsrelay</code>)</li>
     </ul>
   </li>
-  <li>In another terminal run
+  <li>In another terminal, run
     <div class="language-shell highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>curl http://localhost:8090/getaddr
 </code></pre></div>    </div>
@@ -1986,7 +2011,7 @@ Wait until the relay server prints a message saying <code class="highlighter-rou
 </code></pre></div>  </div>
 </blockquote>
 
-<p>This means that the relay server running in the background.
+<p>This means that the relay server is running in the background.
 Run the bash file <code class="highlighter-rouge">scripts/kill-relay-server.sh</code>
 to kill it and make that port available again.</p>
 
