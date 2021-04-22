@@ -4,7 +4,9 @@ title: RIF Notifier API
 tags: rif, notifier, api
 ---
 
-You can access the RIF notifier REST api through the available endpoints. The available endpoints can be accessed through swagger using the link [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+You can access the RIF notifier REST API through the available endpoints.
+The available endpoints can be accessed through swagger using the link
+[`http://localhost:8080/swagger-ui.html`](http://localhost:8080/swagger-ui.html)
 
 Below is a summary of the available endpoints.
 
@@ -24,7 +26,7 @@ Below is a summary of the available endpoints.
 
 ### **Get Subscription Plans**
 
-The endpoint [http://localhost:8080/getSubscriptionPlans](http://localhost:8080/getSubscriptionPlans) can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally `activePlans=true` parameter can be sent to retrieve only the active subscription plans.
+The endpoint [`http://localhost:8080/getSubscriptionPlans`](http://localhost:8080/getSubscriptionPlans) can be used to get a list of subscription plans along with the accepted currencies and the price in each currency. Optionally `activePlans=true` parameter can be sent to retrieve only the active subscription plans.
 
 ### **Subscribe to Plan**
 Run the command `notifier-cons-cli subscribe` to subscribe to a plan
@@ -43,7 +45,7 @@ As part of the subscription and renewal response a `hash` of the subscription al
 
 ###### Getting notifications
 
-When you're subscribed to topics, and an event is triggered, the notifier will process the data and save so you can access it.
+When you're subscribed to topics, and an event is triggered, the notifier will process the data and save it, so that you can access it.
 
 ```shell
 GET Request: http://localhost:8080/getNotifications
@@ -53,7 +55,7 @@ Header params:
 Query params:
 	idTopic [Optional]: The notifications will be filtered with this param, so it brings only the idTopics associated with each, you can send lots of ids, separating each with commas: 12,15,21
 	fromId [Optional]: Each notification has an id, you can make a greater than by providing this param
-	lastRows [Optional]: With this param you can set how many notifications the notifier returns. MAX is set in applications.properties at 1000, so this number needs to be less than that.
+	lastRows [Optional]: With this param you can set how many notifications the notifier returns. MAX is set in `applications.properties` at 1000, so this number needs to be less than that.
 ```
 
 ###### Other available endpoints
@@ -113,6 +115,7 @@ Header param:
 	key: apiKey
 	value: API_KEY
 Short description: Initiates an array of Token Network Address for the tokens registered in the blockchain, it can be used in other endpoints to subscribe to OpenChannels for the token or Closed Channel events.
+
 ```
 
 Return example:

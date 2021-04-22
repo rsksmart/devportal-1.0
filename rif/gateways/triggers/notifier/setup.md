@@ -123,7 +123,7 @@ The steps in this section will help you configure mysql database in local enviro
 ```
 bin/install.sh <database root user> <database root password> <notifier_user password>
 ```
-The third parameter is the password for user ```notifier_user``` which will be created by this script
+The third parameter is the password for user `notifier_user` which will be created by this script
 
 
 
