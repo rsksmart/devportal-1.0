@@ -67,7 +67,7 @@ changethis
 
 ### 4. Configure RSKTX Adapter account
 
-The RSKTX Adapter needs an account to sign and send the transactions to the network. To configure the account, save its private key in a file and reference it later when running the adapter. This account will need to have R-BTC to pay for the transactions sent to the network. Testnet R-BTC can be obtained through the RSK Testnet Faucet in [faucet.rsk.co](https://faucet.rsk.co/).
+The RSKTX Adapter needs an account to sign and send the transactions to the network. To configure the account, save its private key in a file and reference it later when running the adapter. This account will need to have RBTC to pay for the transactions sent to the network. Testnet RBTC can be obtained through the RSK Testnet Faucet in [faucet.rsk.co](https://faucet.rsk.co/).
 
 ### 5. Build the RSK Initiator and RSKTX Adapter Docker images 
 
@@ -91,7 +91,7 @@ The services will configure the database and register the Initiator and Adapter 
 You'll need to deploy an Oracle contract on RSK Testnet to be able to receive requests. In the directory `testnet-deploy` there are some useful scripts to accomplish this.
 
 * Edit the `truffle-config.js` to configure the RSK node RPC connection.
-* Configure the account that will be used to deploy the contract. To do this, save its private key on the `testnet-deploy/.deployerKey` file. Remember this account needs to be funded with R-BTC.
+* Configure the account that will be used to deploy the contract. To do this, save its private key on the `testnet-deploy/.deployerKey` file. Remember this account needs to be funded with RBTC.
 * Edit the `testnet-deploy/migrations/2_deploy_oracle.js` and configure the `ADAPTER_ADDRESS` constant, setting the adapter's account address. This is needed so the migration script, after the contract deploy, can call the `setFulfillmentPermission` function on the contract to authorize the adapter address to fulfill the Oracle's requests.
 * Step into the `testnet-deploy` directory, install the dependencies and run the first and second migrations using Truffle:
 

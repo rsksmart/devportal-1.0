@@ -53,7 +53,7 @@ Here is a summary of the steps to be taken to build our token:
 1. Installation requirements;
 2. Initialize a project using Truffle and OZ;
 3. Configure Truffle to connect to RSK testnet;
-4. Get a wallet with some testnet R-BTCs;
+4. Get a wallet with some testnet RBTCs;
 5. Initialize the client side application;
 6. Add more configurations to Truffle;
 7. Create smart contract of the token and compile it;
@@ -92,7 +92,7 @@ The requirements 1 to 3 are explained in detail in the tutorial links below:
 
 * [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
-For requirement 4, installing Metamask, connecting to RSK testnet, and getting some tR-BTCs, this is explained step-by-step in the tutorial link below:
+For requirement 4, installing Metamask, connecting to RSK testnet, and getting some tRBTCs, this is explained step-by-step in the tutorial link below:
 
 * [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 
@@ -115,7 +115,7 @@ Inside the folder `colors`, do the steps below, following instructions from the 
 10. Test the connection to RSK network;
 11. Get addresses;
 12. Check balance;
-13. Get some testnet R-BTCs at faucet;
+13. Get some testnet RBTCs at faucet;
 
 # Initialize the client side application
 
@@ -211,7 +211,7 @@ const path = require("path");
 module.exports = {
   networks: {
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9

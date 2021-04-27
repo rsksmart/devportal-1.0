@@ -64,7 +64,7 @@ Find the guide on [Metamask](https://developers.rsk.co/develop/apps/wallets/meta
 
 Since RNS works on top of RSK blockchain, to pay for transactional fees you will need RBTC tokens. This is going to be used in the registration and for updating any configuration on the domain.
 
-Read the [R-BTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
+Read the [RBTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
 
 
 > If you are using the testnet you can get free funds in the [RSK faucet](https://faucet.rsk.co/)

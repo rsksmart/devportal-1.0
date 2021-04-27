@@ -22,7 +22,7 @@ Here is a summary of the steps to be taken to build our project:
 6. Create a wallet mnemonic;
 7. Configure Truffle to connect to RSK networks;
 8. Use Truffle console;
-9. Get some testnet R-BTCs from the RSK faucet;
+9. Get some testnet RBTCs from the RSK faucet;
 
 ## Translations
 
@@ -312,7 +312,7 @@ In addition to using the local node, we want to publish smart contracts to the t
 This is an example using cURL. Enter the following command into your terminal.
 
 ```shell
-curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
 
 This is a very simple query that simply asks what the latest block number is.
@@ -457,7 +457,7 @@ Let's take a look at the dependencies in the file:
 
 # Create a wallet
 
-To use testnet, we need tR-BTC and an address to store them.
+To use testnet, we need tRBTC and an address to store them.
 The best way is to create a wallet from a mnemonic, using the pattern defined at [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
 
 There are a few ways to do this.
@@ -571,7 +571,7 @@ Get the current gas price of the testnet network, and save to `.gas-price-testne
 In your project folder, run this cURL command:
 
 ```shell
-curl https://public-node.testnet.rsk.co/2.0.1/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
+curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
 ```
 
 ![gas price result](/assets/img/tutorials/setup-truffle-oz/image-25.png)
@@ -603,7 +603,7 @@ In the `truffle-config.js` file, include this configuration at `network` section
 
 ```javascript
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9
@@ -638,7 +638,7 @@ module.exports = {
       network_id: "*"
     },
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/'),
       network_id: 31,
       gasPrice: Math.floor(gasPriceTestnet * 1.1),
       networkCheckTimeout: 1e9
@@ -779,13 +779,13 @@ To check the balance of an account, for example, the first account of our list (
 
 ![getBalance accounts 0](/assets/img/tutorials/setup-truffle-oz/image-37.png)
 
-The balance is 0 and we need some tR-BTC to pay gas fees,
+The balance is 0 and we need some tRBTC to pay gas fees,
 which will be used to publish smart contracts and interact with them.
 We shall obtain some in the next step.
 
 # TestNet Faucet
 
-You can get some tR-BTC from the [RSK Testnet faucet](https://faucet.testnet.rsk.co/).
+You can get some tRBTC from the [RSK Testnet faucet](https://faucet.testnet.rsk.co/).
 
 Copy the first address from `.accounts` file. In my case, it is
 
@@ -801,13 +801,13 @@ Wait a few seconds…
 
 ![Wait a few seconds](/assets/img/tutorials/setup-truffle-oz/image-39.png)
 
-![Received some R-BTCs](/assets/img/tutorials/setup-truffle-oz/image-40.png)
+![Received some RBTCs](/assets/img/tutorials/setup-truffle-oz/image-40.png)
 
 You can see the transaction hash:
 
 [0x4a2bf1f65c525219020c3a1215a29453c20f4ced90575d9a7d13f8fe666d05b4](https://explorer.testnet.rsk.co/tx/0x4a2bf1f65c525219020c3a1215a29453c20f4ced90575d9a7d13f8fe666d05b4)
 
-Now I have 0.05 R-BTC!
+Now I have 0.05 RBTC!
 
 ## Recheck balance
 
@@ -819,7 +819,7 @@ To check balance again, run this command in the Truffle console:
 
 ![getBalance accounts 0 again](/assets/img/tutorials/setup-truffle-oz/image-41.png)
 
-Great! Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.
+Great! Now I have 50000000000000000, which means that I have 0.05 tRBTC with 18 decimal places of precision.
 
 # Where to go from here
 

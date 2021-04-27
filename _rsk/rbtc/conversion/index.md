@@ -1,24 +1,24 @@
 ---
 layout: rsk
-title: BTC to R-BTC Conversion
+title: BTC to RBTC Conversion
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
-description: 'Converting R-BTC to BTC (peg-in) and BTC to R-BTC (peg-out), for both Mainnet and Testnet.'
+description: 'Converting RBTC to BTC (peg-in) and BTC to RBTC (peg-out), for both Mainnet and Testnet.'
 collection_order: 3100
 permalink: /rsk/rbtc/conversion/
 render_features: '2-way-peg-verifier'
 ---
 
-In this article we will explain step by step on how to convert from BTC to R-BTC, and vice versa.
+In this article we will explain step by step on how to convert from BTC to RBTC, and vice versa.
 The process of conversion utilises a **Powpeg** mechanism.
 Thus, these conversions are referred to as peg-ins and peg-outs.
 
 - **Peg-in**:
-  - A conversion from BTC to R-BTC
+  - A conversion from BTC to RBTC
   - Locks BTC in the BTC Federation address
-  - Releases R-BTC in the RSK derived address
+  - Releases RBTC in the RSK derived address
 - **Peg-out**:
-  - A conversion from R-BTC to BTC
-  - Locks R-BTC on the RSK network
+  - A conversion from RBTC to BTC
+  - Locks RBTC on the RSK network
   - Releases BTC on the Bitcoin network
 
 ## Compatibility
@@ -28,12 +28,12 @@ Thus, these conversions are referred to as peg-ins and peg-outs.
 - Segwit Compatible (P2SH-P2WPKH)
 
 > Note: On the Testnets, the token symbols are prefixed with a lowercase `t`.
-> Thus we have `BTC` and `R-BTC` on the Mainnets,
-> which correspond to `tBTC` and `tR-BTC` of the Testnets.
+> Thus we have `BTC` and `RBTC` on the Mainnets,
+> which correspond to `tBTC` and `tRBTC` of the Testnets.
 
 ### Address verifier
 
-Enter your BTC address below to verify whether it may be used to peg in from BTC to R-BTC.
+Enter your BTC address below to verify whether it may be used to peg in from BTC to RBTC.
 
 [](#top "pegin-address-verifier")
 
@@ -61,7 +61,7 @@ RSK Federation address has changed three times since RSK mainnet launch.
 
 **2. Do I lose my Bitcoin if the RSK Federation address change during my transfer?**
 
-There is a grace period for the RSK Federation address change. You will still be able to lock Bitcoin and get R-BTC during the grace period. However, any Bitcoin sent to the old RSK Federation address will be lost post to the grace period.
+There is a grace period for the RSK Federation address change. You will still be able to lock Bitcoin and get RBTC during the grace period. However, any Bitcoin sent to the old RSK Federation address will be lost post to the grace period.
 
 ### Feedback
 

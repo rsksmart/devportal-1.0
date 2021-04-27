@@ -89,10 +89,10 @@ Our goal is to join forces and give options to people who believe in the power o
     </ul>
 </div>
 
-<h2>Get Gas in RSK (R-BTC)</h2>
+<h2>Get Gas in RSK (RBTC)</h2>
 
 - [Faucet (testnet)](https://faucet.rsk.co/)
-- [About R-BTC](/rsk/rbtc)
+- [About RBTC](/rsk/rbtc)
 
 
 <h2>Tokens Guides</h2>

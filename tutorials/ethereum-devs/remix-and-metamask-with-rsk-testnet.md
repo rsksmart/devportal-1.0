@@ -15,7 +15,7 @@ In this tutorial I will show you step-by-step how to use Remix and Metamask, whi
 We will do these steps:
 
 1. Configure Metamask to connect to RSK testnet;
-2. Get some testnet R-BTCs at faucet;
+2. Get some testnet RBTCs at faucet;
 3. Connect Remix with RSK Testnet;
 3. Create a smart contract at Remix;
 4. Compile it;
@@ -88,7 +88,7 @@ Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
   `31`
 - Symbol (optional)
 
-  `tR-BTC`
+  `tRBTC`
 - Block Explorer URL (optional)
 
   [`https://explorer.testnet.rsk.co`](https://explorer.testnet.rsk.co)
@@ -100,7 +100,7 @@ After configuring it, select the RSK Tesnet.
 
 ## TestNet Faucet
 
-You can get some Testnet R-BTC at [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/).
+You can get some Testnet RBTC at [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/).
 
 Copy your address from Metamask
 
@@ -112,13 +112,13 @@ Wait a few seconds...
 
 ![Wait a few seconds](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-04.png)
 
-![Received some R-BTCs](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-05.png)
+![Received some RBTCs](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-05.png)
 
 You can see the transaction hash, for example [`0xf63c45dabd52e0b44f4cf15825985e9ddfe790b4323a88a3531f762a417f9011`](https://explorer.testnet.rsk.co/tx/0xf63c45dabd52e0b44f4cf15825985e9ddfe790b4323a88a3531f762a417f9011).
 
-Now I have 0.05 R-BTC!
+Now I have 0.05 RBTC!
 
-![R-BTCs at Metamask wallet](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-06.png)
+![RBTCs at Metamask wallet](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-06.png)
 
 ## Remix
 

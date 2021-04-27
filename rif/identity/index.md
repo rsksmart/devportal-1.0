@@ -52,6 +52,8 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   </div>
 </div>
 
+![rif-identity-architecture](/rif/identity/assets/img/rif-identity-architecture.png)
+
 <!--
   <div class="row rif_blue_text">
     <div class="col">
