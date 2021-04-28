@@ -206,7 +206,7 @@ function doSearch(q) {
       for (let k = 0; k < l; k++) {
           const nfile = list[k].i;
           const file = files[nfile];
-          const splitD = (file.d || '').split('||');
+          const splitD = (file.d || '').split('\n');
           const desc = splitD[0] || '';
           const tags = !splitD[1] ? [] : splitD[1].split(', ');
 
