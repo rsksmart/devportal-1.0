@@ -5,13 +5,22 @@ description: 'Build a complete full stack decentralized application on RSK, from
 tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp-examples, blockchain
 ---
 
+This is the second part of the series
+on [building a **complete full stack dApp on RSK**](/guides/full-stack-dapp-on-rsk/).
+
+In this article, we will cover installation and configuration
+of the development environment for coding, compiling and testing smart contracts.
+You’ll also learn how to connect to the RSK network,
+and deploy your smart contracts on it.
+
 ![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
 
-This is the second part in the series on Building a **complete full stack decentralised application (dApp) on RSK**. In this guide, we will cover installation and configuration of the development environment for coding, compiling and testing smart contracts. You’ll also learn how to connect to the RSK network, and deploy your smart contracts on it.
+We want to build a **simple voting application**.
+RSK allows us to build decentralised applications,
+and solidity is the smart contract language we would be using alongside the front end.
 
-We want to build a **simple voting application**. RSK allows us to build decentralised applications, and solidity is the smart contract language we would be using alongside the front end.
-
-Before we get started, please read the [The Complete Full Stack dApp Guide on RSK - Part 1: Overview](/guides/full-stack-dapp-on-rsk/part1-overview/)
+Before we get started, please read the
+[The Complete Full Stack dApp Guide on RSK - Part 1: Overview](/guides/full-stack-dapp-on-rsk/part1-overview/)
 
 ## Prerequisites
 
@@ -30,31 +39,31 @@ Prior to commencing this tutorial, please ensure that you have installed the fol
 
 Use `git` to make a copy of this repo, and use `npm` to install dependencies.
 
-```terminal
+```shell
 git clone git@github.com:bguiz/workshop-rsk-full-stack-dapp.git
 cd workshop-rsk-full-stack-dapp
 npm install
 ```
 
 ### 1.1 Setup additional project files
-Enter the following command into terminal, to get the current gas-price for both Testnet and Mainnet, and a [Mnemonic](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) phrase: 
 
-```terminal
+Enter the following commands into the terminal.
+
+Get the current gas price for both RSK Testnet and RSK Mainnet:
+
+```shell
 curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
-```
-and;
-
-```terminal
 curl https://public-node.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .mainnet.gas-price.json
 ```
 
-and;
+Generate a [Mnemonic](https://en.bitcoinwiki.org/wiki/Mnemonic_phrase) phrase:
 
-```terminal
+```shell
 mnemonics > .testnet.seed-phrase
 ```
 
-> Ensure RSKj (regtest) is running in a separate terminal, to setup regtest see the prerequisites section above
+> Ensure RSKj (Regtest) is running in a separate terminal.
+> To setup Regtest see the prerequisites section above
 
 Then open up this directory in your code editor.
 
@@ -73,15 +82,17 @@ Observe that we have the following files:
   This is the test specification.
 
 ### 1.1.2 Start a blockchain locally
+
 Enter the following command in the terminal to start the truffle console.
 
-```terminal
+```shell
 truffle develop
 ```
+
 You can see a list of available accounts below that are already created and ready to use; you can also see the port (`9545`) where the blockchain is running. This is an in-memory blockchain, which means that **no other peers** are going to connect and interact with it automatically. It’s only for **testing** purposes.
 
 Output:
-```terminal
+```shell
 owanate@MacBook-Pro workshop-rsk-full-stack-dapp % truffle develop
 Truffle Develop started at http://127.0.0.1:9545/
 
@@ -116,6 +127,7 @@ Ensure you do not use it on production blockchains, or else you risk losing fund
 ```
 
 ## 2. Creating the Smart contract
+
 The initial set up code for the dApp can be viewed in the [diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/30ab50b.diff). We'll implement the functions in the smart contract as we go along.
 
 To locate the smart contract, go to the contract folder and open the file called `Election.sol` in your code editor.
@@ -168,17 +180,39 @@ contract Election {
 }
 ```
 
-The first line - `pragma` -  declares the version of Solidity you wish to write your code in. This is first done in all solidity smart contracts. The declaration of the smart contract starts with the keyword `contract` then the name of the contract, in this instance `Election` is the name of our smart contract. 
+The first line - `pragma` -  declares the version of Solidity you wish to write your code in.
+This is first done in all solidity smart contracts.
+The declaration of the smart contract starts with the keyword `contract`,
+then the name of the contract.
+In this instance `Election` is the name of our smart contract.
 
-Next, we declared a candidate struct, which will hold three variables - `id`, `name`, and `voteCount`. [Structs](https://solidity.readthedocs.io/en/v0.7.1/structure-of-a-contract.html?highlight=struct#struct-types) in Solidity are custom defined types that can group several variables, similar to how variables are grouped in [Object Oriented Programming Languages](https://en.wikipedia.org/wiki/Object-oriented_programming) like Javascript. The line `uint id` and `uint voteCount`; declares a state variable called id and voteCount of type `uint` (unsigned integer with 256 bits). The line `string name`; declares a state variable called `name` of type `string`.
+Next, we declared a candidate struct, which will hold three variables:
+`id`, `name`, and `voteCount`.
+[Structs](https://solidity.readthedocs.io/en/v0.7.1/structure-of-a-contract.html?highlight=struct#struct-types)
+in Solidity are custom defined types that can group several variables,
+similar to how variables are grouped in [Object Oriented Programming Languages](https://en.wikipedia.org/wiki/Object-oriented_programming).
 
-Next, we store the accounts that have voted by `mapping` their `address` to type `bool`, and setting it's accessibility to public using the keyword `public`. Read more on [Variable Declarations in Solidity](https://solidity.readthedocs.io/en/v0.7.1/style-guide.html?highlight=bool#mappings).
+- The lines `uint id` and `uint voteCount` declare a state variable called `id` and `voteCount`, both of the type `uint` (unsigned integer with 256 bits).
+- The line `string name` declares a state variable called `name` of type `string`.
 
-The `constructor` function gets called when the smart contract is deployed to the blockchain. The lines `addCandidate (Carrot) and addCandidate (Potato)` in the constructor would be initialised upon contract creation.  Read about [Constructors in Solidity](https://solidity.readthedocs.io/en/v0.7.1/contracts.html#constructor).
+Next, we store the accounts that have voted
+by `mapping` their `address` to type `bool`,
+and setting its accessibility to public using the keyword `public`.
+Read more on [Variable Declarations in Solidity](https://solidity.readthedocs.io/en/v0.7.1/style-guide.html?highlight=bool#mappings).
 
-The function `addCandidate` declares a candidate to the `_name` variable with type `string`, sets it to `private` - meaning this function can only be called within this contract. Read about [Function Visibility Specifiers](https://solidity.readthedocs.io/en/v0.7.1/cheatsheet.html?highlight=private%20function#function-visibility-specifiers) in Solidity.
+The `constructor` function gets called when the smart contract is deployed to the blockchain.
+The lines `addCandidate (Carrot) and addCandidate (Potato)`
+in the constructor would be initialised upon contract creation.
+Read about [Constructors in Solidity](https://solidity.readthedocs.io/en/v0.7.1/contracts.html#constructor).
 
-The function `vote` declares a `_candidateId` of type `uint`, and sets the visibility of the function to `public` - this means the function is visible externally and internally.
+The function `addCandidate` declares a candidate to the `_name` variable
+with type `string`, sets it to `private` -
+eaning this function can only be called within this contract.
+Read about [Function Visibility Specifiers](https://solidity.readthedocs.io/en/v0.7.1/cheatsheet.html?highlight=private%20function#function-visibility-specifiers) in Solidity.
+
+The function `vote` declares a `_candidateId` of type `uint`,
+and sets the visibility of the function to `public` -
+this means the function is visible both externally and internally.
 
 ### 2.2.  Implementing the `constructor` and `addCandidate` function
 
@@ -197,7 +231,8 @@ Let's begin with the `addCandidate` function:
     }
 ```
 
-Each time this function is called, it increments the number of candidates,
+Each time this function is called,
+it increments the number of candidates,
 and stores the candidate data inside a mapping.
 
 ```solidity
@@ -215,7 +250,9 @@ a carrot and a potato. 😛
 
 ### 2.3. Implementing the `vote` Function
 
-Let's implement the `vote` function. [Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/0b031b73d6f48689cb7c6d5f183ab8b9c55307a9). It should now look like this:
+Let's implement the `vote` function.
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/0b031b73d6f48689cb7c6d5f183ab8b9c55307a9).
+It should now look like this:
 
 ```solidity
 function vote (
@@ -237,7 +274,11 @@ function vote (
     }
 ```
 
-The `vote` function also checks if the present caller of the contract (the candidate) has voted before, if not it proceeds to check if the candidate is valid. Then it records the candidate's vote and assigns the candidate (address) to the voters array and updates the votes and candidate's count.
+The `vote` function also checks if the present caller of the contract
+(the candidate) has voted before,
+if not it proceeds to check if the candidate is valid.
+Then it records the candidate's vote and assigns the candidate (address)
+to the voters array and updates the votes and candidate's count.
 
 ### 2.4. The Updated Smart Contract
 
@@ -299,12 +340,13 @@ contract Election {
 
 To compile the contracts, in the Truffle console, run this command:
 
-```solidity
+```shell
 truffle(develop)> compile
 ```
 
 Output:
-```terminal
+
+```shell
 Compiling your contracts...
 ===========================
 > Compiling ./contracts/Election.sol
@@ -316,9 +358,15 @@ Compiling your contracts...
 
 ## 3. Testing the Smart Contract
 
-Tests are extremely important when dealing with systems of trust and financial data. Tests can be written in either Solidity or with Javascript (using Truffle’s abstractions). In this tutorial, we'll use Javascript.
+Tests are extremely important when dealing with systems of trust or high value.
+Tests can be written in either Solidity or with Javascript
+(using Truffle’s abstractions).
+In this tutorial, we'll use Javascript.
 
-The Truffle framework embeds support for the popular **Mocha** test framework for Javascript. Here’s what some basic tests look like for the above contract, located in the `test` folder, you'll find a file with the name `Election.spec.js`:
+The Truffle framework embeds support for the popular **Mocha** test framework for Javascript.
+Here’s what some basic tests look like for the above contract,
+located in the `test` folder,
+you'll find a file with the name `Election.spec.js`:
 
 ![RSK Full Stack dApp - Test](/assets/img/guides/complete-full-stack-dapp/Election.spec.png)
 
@@ -366,7 +414,9 @@ contract('Election', function(accounts) {
 
 ### 3.2. Testing the initial state of candidate count
 
-Let's test if our function would initialize with two candidates. [Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/bbed126.diff). It should now look like this:
+Let's test if our function does initialize with two candidates.
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/bbed126.diff).
+It should now look like this:
 
 ```javascript
   it('initializes with two candidates', async () => {
@@ -380,7 +430,9 @@ Let's test if our function would initialize with two candidates. [Diff file for 
 
 ### 3.3. Testing the initial values of candidate data
 
-Let's test if our function would initialize the candidates with the correct values. [Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/7addd2c.diff). It should now look like this:
+Let's test if our function would initialize the candidates with the correct values.
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/7addd2c.diff).
+It should now look like this:
 
 ```javascript
 it('it initializes the candidates with the correct values', async () => {
@@ -409,12 +461,14 @@ it('it initializes the candidates with the correct values', async () => {
 ```
 
 > This retrieves each of the candidates,
-and checks that they have the names that we used in our constructor,
-and that they have zero votes to begin with.
+> and checks that they have the names that we used in our constructor,
+> and that they have zero votes to begin with.
 
 ### 3.4. Testing for disallow voting on invalid candidates
 
-Let's test if our function will disallow voting on invalid candidates. [Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/3bf8bee.diff). It should now looks like this:
+Let's test if our function will disallow voting on invalid candidates.
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/3bf8bee.diff).
+It should now looks like this:
 
 ```javascript
 it('disallows voting on invalid candidates', async () => {
@@ -440,13 +494,15 @@ it('disallows voting on invalid candidates', async () => {
 ```
 
 > This test case is for a "failure path",
-that is testing that we don't allow a user
-to do something that they should not be allowed to do.
-In this case, that they cannot vote for a candidate who does not exist.
+> that is testing that we don't allow a user
+> to do something that they should not be allowed to do.
+> In this case, that they cannot vote for a candidate who does not exist.
 
 ### 3.5. Testing for disallow double voting
 
-Let's test if our function will disallow double voting. [Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/2dc5fda.diff). It should now look like this:
+Let's test if our function will disallow double voting.
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/2dc5fda.diff).
+It should now look like this:
 
 ```javascript
 it('disallows double voting', async () => {
@@ -489,12 +545,16 @@ it('disallows double voting', async () => {
   });
 
 ```
+
 > This test case is for a different "failure path".
-In this case, that they cannot vote after they have already voted once.
+> In this case, that a voter cannot vote additional times
+> after they have already voted once.
 
 ### 3.6. Testing for allow a voter to cast a vote
 
-Let's test if our function will allow a voter to cast a valid vote. [Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/57e39e5.diff). It should now look like this:
+Let's test if our function will allow a voter to cast a valid vote.
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/57e39e5.diff).
+It should now look like this:
 
 ```javascript
 it('allows a voter to cast a vote', async () => {
@@ -512,7 +572,8 @@ it('allows a voter to cast a vote', async () => {
 
 ### 3.7. The Updated Test Code
 
-Find the full test code in the `Election.spec.js` file below or in the [Full stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/feat/complete-a/test/Election.spec.js)
+Find the full test code in the `Election.spec.js` file below or in
+the [Full stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/feat/complete-a/test/Election.spec.js)
 
 
 ```javascript
@@ -631,7 +692,9 @@ contract('Election', function(accounts) {
 });
 ```
 
-Finally, we have a "happy path" test case, where we check that a user is allowed to vote when they are folowing the rules set out in the smart contract.
+Finally, we have a "happy path" test case,
+where we check that a user is allowed to vote
+when they are following the rules set out in the smart contract.
 
 ## 4. Running the Tests
 
@@ -639,7 +702,7 @@ Open a new terminal in the project directory.
 
 Enter the command below into the terminal:
 
-```terminal
+```shell
 npm run test
 ```
 
@@ -669,46 +732,65 @@ Compiling your contracts...
 
   5 passing (8s)
 ```
+
 Hurray! You can see all our tests passed!!
 
-> Note: We are using the `regtest` network as specified in `scripts.test` in `package.json` to test our smart contract.
+> Note: We are using the `regtest` network as specified
+> in `scripts.test` in `package.json` to test our smart contract.
 
 ## 5. Deploying the Smart Contract on RSK
 
-Remember that we spun up an in-memory blockchain earlier?
+Remember that we spun up `localhost` blockchain earlier?
 Well that isn't going to be very useful for smart contracts,
-because each time you shut that process down,
-all the data, and even the smart contract is completely lost.
-Furthermore, there were no peers, and therefore no [consensus](https://news.bitcoin.com/a-history-of-blockchain-consensus-mechanisms/).
+because a single person (you) can destroy
+all the blockchain data, which includes smart contract data too.
+Not to mention, there were no peers, and therefore
+no [consensus](https://news.bitcoin.com/a-history-of-blockchain-consensus-mechanisms/).
 
-We want something that isn't ephemeral, so
-let's deploy this smart contract to a **real blockchain**.
+We want something that **is not** ephemeral,
+and **is** verified by a network of peers.
+So let's deploy this smart contract to a **real blockchain**.
 RSK offers two public networks: Testnet and Mainnet.
 As the name implies, Testnet is for testing purposes.
-This is useful for development, and what we will be using.
+This is useful for development, as we're doing now.
 
 ### 5.1 Get an RSK Wallet
 
-To get a wallet, we first need to get a **mnemonic** code. We are going to use this web app: https://iancoleman.io/bip39/. This may not be used for any ‘real’ wallet; it’s not a secure way to generate a private key! We are going to use it just for learning the basics.
+To get a wallet, we first need to get a **mnemonic** code.
+We are going to use this web app:
+[https://iancoleman.io/bip39/](iancoleman.io/bip39).
+This may not be used for any ‘real’ wallet;
+it’s not a secure way to generate a private key!
+We are going to use it just for learning the basics.
 
-In the ‘Generate a random mnemonic’ field, we select 12 words and generate it.
+In the ‘Generate a random mnemonic’ field, we select '12 words' and generate it.
 Then tap on ‘Generate’.
-The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:
+The result appears in the BIP39 Mnemonic field.
+They should be 12 random words like the words in the image:
 
 ![RSK full stack dApp - Mnemonic](/assets/img/guides/complete-full-stack-dapp/Mnemonic.png)
 
-In the terminal, inside the project root folder, a text file named `.testnet.seed-phrase`, has already been generated during the additional project files setup above.
+In the terminal, inside the project root folder,
+a text file named `.testnet.seed-phrase` has already been generated
+during the additional project files setup above.
 
-Do you remember your mnemonic? A mnemonic phrase has already been generated in the file named `.testnet.seed-phrase`.
+Do you remember your mnemonic?
 
 ### 5.2 Connect Truffle to RSK public network
 
-To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use `@truffle/hdwallet-provider@1.0.35` and Node.Js >= `12.18.2`. The `@truffle/hdwallet-provider@1.0.35` has already been installed for you when you used the `npm install` command
+To connect to RSK, we are going to modify the Truffle configuration.
+We are going to use a provider that allows us to connect to any network but unlocking an account locally.
+We are going to use `@truffle/hdwallet-provider@1.0.35`
+and Node.Js >= `12.18.2`.
+The `@truffle/hdwallet-provider@1.0.35` has already been installed for you
+when you used the `npm install` command
 
 ### 5.3 Configure `truffle-config.js` file
 
-In the root folder directory, locate the `truffle-config.js` file. Truffle has already been pre-configured to connect to your choice of RSK Regtest, RSK Testnet.
-  
+In the root folder directory, locate the `truffle-config.js` file.
+Truffle has already been pre-configured to connect to
+your choice of RSK Regtest or RSK Testnet.
+
 The `hdwallet-provider` allows us to connect to any network by unlocking an account locally, including the RSK networks.
 For example, to connect to the RSK Testnet,
 we use the mnemonic stored in the text file
@@ -755,28 +837,28 @@ update the current gas price of the Testnet network,
 and save it to `.testnet.gas-price.json`,
 using the following command:
 
-```terminal
+```shell
 curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .testnet.gas-price.json
 ```
 
-> A file named `.testnet.gas-price.json` previously generated will be updated if there are any changes in gas price. You can locate the file at the root folder. 
+> A file named `.testnet.gas-price.json` previously generated will be updated if there are any changes in gas price. You can locate the file at the root folder.
 
 This result below shows the output to the file when the code above is entered into the terminal. Open `.testnet.gas-price.json` to view the changes to the file.
 
 ```json
 {"jsonrpc":"2.0","id":1,"result":"0x3dfd244"}
 ```
+
 The `result` value is presented in hexadecimal.
 
 > You can connect to both Regtest and Testnet, using the configurations in the `truffle-config.js` file.
 > However, in this guide, we'll focus on Testnet.
 
-
 ### 5.5 Connecting to the RSK Testnet
 
 To connect to the RSK Testnet, open another terminal in the same folder directory, enter the following command below into the terminal.
 
-```terminal
+```shell
 truffle console --network testnet
 
 # Gas price Testnet: 65000004
@@ -786,13 +868,13 @@ truffle console --network testnet
 
 To find out which address was unlocked using the mnemonic, enter the command below into the terminal:
 
-```terminal
+```shell
 truffle(testnet)> Object.keys(web3.currentProvider.wallets)
 ```
 
 Output:
 
-```terminal
+```shell
 truffle(testnet)> Object.keys(web3.currentProvider.wallets)
 [
   '0x460a9914c73efc0aacc39e011b239158e15bca1c',
@@ -808,29 +890,33 @@ truffle(testnet)> Object.keys(web3.currentProvider.wallets)
 ]
 ```
 
-> Let's save the address of the first account in a variable named `account` within the console. We will be using it soon.
+> Let's save the address of the first account in a variable named `account`
+> within the console. We will be using it soon.
 
 Enter the following code into the terminal.
 
-```terminal
+```shell
 truffle(testnet)> var account = Object.keys(web3.currentProvider.wallets)[0]
 # undefined
 ```
 
 Then enter the command below;
 
-```terminal
+```shell
 truffle(testnet)> account
 # '0x460a9914c73efc0aacc39e011b239158e15bca1c'
 ```
 
-> RSK Testnet is a free network. You still need to pay gas fees to interact with it, but you can obtain that for free in a faucet. Let’s go to the RSK Faucet: [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/).
+> RSK Testnet is a free network.
+> You still need to pay gas fees to interact with it,
+> but you can obtain that for free in a faucet.
+> Let’s go to the RSK Faucet: [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/).
 
 ![RSK faucet - 1](/assets/img/guides/complete-full-stack-dapp/TestFunds1.png)
 
 > Steps:
 >
-> 1. Enter the address of the account obtained earlier 
+> 1. Enter the address of the account obtained earlier
 > 2. Enter the "captcha" code
 > 3. Submit form
 > 4. Wait for the transaction to complete
@@ -852,13 +938,13 @@ To deploy the contracts, we are going to follow the same steps we made in our lo
 
 Enter the following command below into the terminal:
 
-```terminal
-truffle(testnet)> compile 
+```shell
+truffle(testnet)> compile
 ```
 
-Output: 
+Output:
 
-```terminal
+```shell
 Compiling your contracts...
 ===========================
 > Compiling ./contracts/Election.sol
@@ -870,23 +956,26 @@ Compiling your contracts...
 
 > Note: Please make sure the build folder is clean. else, the following will be the output and the contract will not be compiled:
 
-```terminal
+```shell
 Compiling your contracts...
 ===========================
 > Everything is up to date, there is nothing to compile.
 ```
 
-Else if everything is working properly, you should be able to deploy to multiple networks without cleaning out the build folder.
+If everything is working properly,
+you should be able to deploy to multiple networks
+without cleaning out the build folder.
 
-After the contract is successfully compiled, enter the command below into the terminal.
+After the contract is successfully compiled,
+enter the command below into the terminal.
 
-```terminal
+```shell
 truffle(testnet)> migrate --network testnet
 ```
 
 Output:
 
-```terminal
+```shell
 truffle(testnet)> migrate --network testnet
 
 Compiling your contracts...
@@ -956,11 +1045,20 @@ Summary
 > Final cost:          0.000045213814029444 ETH
 ```
 
-> Once the contract is deployed we can use the `deployed()` method as we did in the local blockchain. To see the interaction with the contract we can access it via [RSK Testnet explorer](https://explorer.testnet.rsk.co/) and search using the contract address, transaction hash or block number. All interactions with our contract will appear in the explorer!
+> Once the contract is deployed we can use the `deployed()` method
+> as we did in the local blockchain.
+> To see the interaction with the contract we can access it via
+> [RSK Testnet explorer](https://explorer.testnet.rsk.co/)
+> and search using the contract address, transaction hash or block number.
+> All interactions with our contract will appear in the explorer!
 
-Congratulations for getting this far! Now you're a smart contract developer😉😉. View the entire code for the [Complete Full Stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/tree/feat/complete-a)
+Congratulations for getting this far!
+Now you're a smart contract developer😉😉. View the entire code for the
+[Complete Full Stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/tree/feat/complete-a)
 
-**Next:** Now let's build out the front end!. Check out the third part of [The Complete Full Stack dApp Guide on RSK Part 3](/guides/full-stack-dapp-on-rsk/part3-front-end/)
+**Next:** Now let's build out the front end!
+Check out the third part of
+[The Complete Full Stack dApp Guide on RSK Part 3](/guides/full-stack-dapp-on-rsk/part3-front-end/)
 
 ## Further Reading
 - [Solidity Documentation](https://solidity.readthedocs.io/en/v0.7.1/index.html)

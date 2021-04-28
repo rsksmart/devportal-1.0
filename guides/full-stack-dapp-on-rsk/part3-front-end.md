@@ -5,11 +5,16 @@ description: 'Build a complete full stack decentralized application on RSK, from
 tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp-examples, blockchain
 ---
 
+This is the third part of the series
+on [building a **complete full stack dApp on RSK**](/guides/full-stack-dapp-on-rsk/).
+
+In this article, we’ll go through how to develop
+a simple voting app user interface using HTML and Javascript
+for our dApp that we started building in
+[The Complete Full Stack dApp Guide on RSK - Part 1: Overview](/guides/full-stack-dapp-on-rsk/part1-overview/) and
+[The Complete Full Stack dApp Guide on RSK - Part 2: Smart Contract](/guides/full-stack-dapp-on-rsk/part3-front-end/) guides.
+
 ![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
-
-This is the third part in the series on building a complete decentralised application (dApp) on RSK. 
-
-In this guide, we’ll go through how to write a simple voting app user interface using HTML and Javascript for our dApp that we started building in [The Complete Full Stack dApp Guide on RSK - Part 1: Overview](/guides/full-stack-dapp-on-rsk/part1-overview/) and [The Complete Full Stack dApp Guide on RSK - Part 2: Smart Contract](/guides/full-stack-dapp-on-rsk/part3-front-end/) guides.
 
 ## 1. Client Folder
 
@@ -21,7 +26,7 @@ In this tutorial, a starting point for our front end application has already bee
 
 The `package.json` is a JSON file that exists at the root of this project folder. It holds information used to manage the project's dependencies, scripts, version, and a whole lot more.
 
-```javascript
+```json
 {
   "name": "workshop-rsk-full-stack-dapp",
   "version": "0.0.0",
@@ -68,9 +73,15 @@ The `package.json` is a JSON file that exists at the root of this project folder
 
 ## 3. dApp.js
 
-The JS portion of our dApp is placed at `./client/dapp.js` and the full source code can be found in the [The Complete Full Stack dApp on RSK repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp).
+The JS portion of our dApp is placed at `./client/dapp.js`
+nd the full source code can be found in the
+[The Complete Full Stack dApp on RSK repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp).
 
-In order for the `dapp.js` file to work, we would need to use a browser with a [Web3](https://web3js.readthedocs.io/en/v1.2.11/)-enabled browser extension. We suggest either [Metamask](https://metamask.io) or [Nifty Wallet](https://www.poa.network/for-users/nifty-wallet) for this.
+In order for the `dapp.js` file to work,
+we would need to use a browser with
+a [Web3](https://web3js.readthedocs.io/en/v1.2.11/)-enabled browser extension.
+We suggest either [Metamask](https://metamask.io)
+or [Nifty Wallet](https://www.poa.network/for-users/nifty-wallet) for this.
 
 ```javascript
 import Web3 from 'web3';
@@ -122,7 +133,8 @@ const DApp = {
 ### 3.1. Initialise Web3
 
 Let's implement the `DApp.initWeb3` function.
-[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/ac22a27.diff). It should now look like this:
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/ac22a27.diff).
+It should now look like this:
 
 ```javascript
   initWeb3: async function () {
@@ -171,12 +183,14 @@ This code takes the **Web3 provider** injected into the browser,
 `window.ethereum`, and constructs a **Web3 instance** from it,
 using the `web3.js` library.
 Note that the process of doing this has changed relatively recently.
-A more detailed explanation can be found in [**How to init a DApp with web3.js using MetaMask 8**](https://dappsdev.org/blog/2020-10-05-how-to-init-a-dapp-with-web3-js-using-metamask-8/ "How to init a DApp with web3.js using MetaMask 8 in a manner that is compliant with both EIP1102 and EIP1193, and moves away from deprecated Web3 provider APIs - DApps Dev Club").
+A more detailed explanation can be found in
+[**How to init a DApp with web3.js using MetaMask 8**](https://dappsdev.org/blog/2020-10-05-how-to-init-a-dapp-with-web3-js-using-metamask-8/ "How to init a DApp with web3.js using MetaMask 8 in a manner that is compliant with both EIP1102 and EIP1193, and moves away from deprecated Web3 provider APIs - DApps Dev Club").
 
 ### 3.2. Update accounts
 
 Let's implement the `DApp.updateAccounts` function.
-[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/b8fcc15.diff). It should now look like this:
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/b8fcc15.diff).
+It should now look like this:
 
 ```javascript
   updateAccounts: async function(accounts) {
@@ -211,7 +225,8 @@ Note that we will implement `DApp.render` shortly.
 ### 3.3. Initialise smart contract
 
 Let's implement the `DApp.initContract` function.
-[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/e770236.diff). It should now look like this:
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/e770236.diff).
+It should now look like this:
 
 ```javascript
   initContract: async function() {
@@ -236,9 +251,9 @@ Let's implement the `DApp.initContract` function.
 ```
 
 > We have instructed this function to be called within
-> `DApp.initWeb3` above, so it will be called as soon as we have 
-> a Web3 instance. 
-> 
+> `DApp.initWeb3` above, so it will be called as soon as we have
+> a Web3 instance.
+>
 > ```javascript
 >     return DApp.initContract();
 > ```
@@ -246,7 +261,7 @@ Let's implement the `DApp.initContract` function.
 This function detected which network we are connected to.
 
 > Note that in this context you may see network ID and
-> chaind ID used interchangeably.
+> chain ID used interchangeably.
 
 It subsequently checks if there is a contract deployed on this network -
 according to the build artefacts -
@@ -259,7 +274,8 @@ and the smart contract deployed and executed on the blockchain network.
 ### 3.4. Render main area
 
 Let's implement the `DApp.render` function.
-[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/ebc9407.diff). It should now look like this:
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/ebc9407.diff).
+It should now look like this:
 
 ```javascript
   render: async function() {
@@ -288,7 +304,8 @@ and display the user account.
 ### 3.5. Render votes
 
 Let's implement the `DApp.renderVotes` function.
-[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/4a6862f.diff). It should now look like this:
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/4a6862f.diff).
+It should now look like this:
 
 ```javascript
   renderVotes: async function() {
@@ -348,7 +365,7 @@ as it does many things:
    - `electionInstance.methods.candidatesCount().call()`
 2. Queries the smart contract for details about each of the candidates:
    - `electionInstance.methods.candidates(idx).call()`
-3. Contructs a HTML table to display the candidate data just retrieves.
+3. Constructs a HTML table to display the candidate data just retrieves.
 4. Queries the smart contract for whether the current account has voted:
    - `electionInstance.methods.voters(DApp.accounts[0]).call()`
 5. Toggles the visibility of the ballot (vote button),
@@ -356,11 +373,11 @@ as it does many things:
    - The same account cannot vote more than once,
      and this is already enforced by the smart contract,
      so why display a "futile" option to the user in this DApp?
-     Instead, we only show the vote button to a user 
+     Instead, we only show the vote button to a user
      when they are allowed to vote!
 
 > You may be wondering why `DApp.render` and `DApp.renderVotes`
-> have been split up into two spearate functions.
+> have been split up into two separate functions.
 > Why not simply do all the rendering in a single function.
 > One can do that of course, but immediately after a vote is cast,
 > there is no need to update the entire application,
@@ -373,7 +390,8 @@ as it does many things:
 ### 3.6. Handle vote submissions
 
 Let's implement the `DApp.onVoteSubmitClick` function.
-[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/001623c.diff). It should now look like this:
+[Diff file for change](https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/001623c.diff).
+It should now look like this:
 
 ```javascript
   onVoteSubmitClick: async function(ev) {
@@ -411,21 +429,20 @@ and invoked the `vote` function on the smart contract:
 `electionInstance.methods.vote(candidateId).send({ from: DApp.accounts[0] })`.
 
 > Note that previously, our interactions with the smart contract
-> were queries; that is read-only operations.
+> were queries; those were read-only operations.
 > Thus the function invocations were like:
 > `electionInstance.methods.METHOD_NAME().call()`.
-> 
+>
 > Here, the interaction is a command (not a query);
-> That is it (potentially) modifies the state of the smart contract.
+> That is, it (potentially) modifies the state of the smart contract.
 > Thus the function invocation is a different format:
 > `electionInstance.methods.METHOD_NAME().send()`.
-> 
+>
 > Notice that we have `.call()` for queries,
 > and `.send()` for commands.
 
 ### Completed version
 
-That is it!
 We have completed the code for front end of our DApp!
 
 View the [complete version of `client/dapps.js`](https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/feat/complete-a/client/dapp.js).
@@ -434,19 +451,20 @@ Next, let's run our DApp and interact with it in our browser!
 
 ## 4. Start the front end web server
 
-Now we need to start a local web server to host our dApp. The local web server is provided by the `webpack-dev-server` package that we defined in `package.json` earlier.
+Now we need to start a local web server to host our dApp.
+The local web server is provided by the `webpack-dev-server` package that we defined in `package.json` earlier.
 
 Open a new terminal in same project directory.
 
 Enter the command below:
 
-```terminal
+```shell
 npm run dev
 ```
 
 Output:
 
-```terminal
+```shell
 > workshop-rsk-full-stack-dapp@0.0.0 dev /Users/owanate/Documents/Projects/TutorialPractice/workshop-rsk-full-stack-dapp
 > webpack-dev-server --config ./webpack.config.js --mode production --output ./dist/main.js
 
@@ -457,26 +475,26 @@ Output:
 
 ## 4.1. Connect to Metamask
 
-1. Configure [RSK Testnet](https://developers.rsk.co/wallet/use/metamask/) in your metamask wallet
+1. Configure [RSK Testnet](https://developers.rsk.co/wallet/use/metamask/)
+   in your metamask wallet
 2. Click on import using account seed phrase.
-
-![RSK full stack dApp - Metamask](/assets/img/guides/complete-full-stack-dapp/Metamask.png)
-
+   ![RSK full stack dApp - Metamask](/assets/img/guides/complete-full-stack-dapp/Metamask.png)
 3. Insert Mnemonic phrase generated in `.testnet.seed-phrse`.
-![RSK full stack dApp - Metamask2](/assets/img/guides/complete-full-stack-dapp/MetamaskSeedPhrase.png)
-
+   ![RSK full stack dApp - Metamask2](/assets/img/guides/complete-full-stack-dapp/MetamaskSeedPhrase.png)
 4. Insert password
 5. Click on Restore
-![RSK full stack dApp - Metamask3](/assets/img/guides/complete-full-stack-dapp/MetamaskRestore.png)
-
+   ![RSK full stack dApp - Metamask3](/assets/img/guides/complete-full-stack-dapp/MetamaskRestore.png)
 6. View imported account with testnet funds
-![RSK full stack dapp](/assets/img/guides/complete-full-stack-dapp/MetamaskTestFunds.png)
+   ![RSK full stack dapp](/assets/img/guides/complete-full-stack-dapp/MetamaskTestFunds.png)
 
 > Reload the browser to ensure the green button showing connected is active.
 
-Congratulations👏👏! The dApp can now communicate with the RSK network!!!
+Congratulations👏👏!
+The dApp can now communicate with the RSK network!!!
 
-To view the dApp live, go to your browser, enter `localhost:8080` into the address bar. Try voting and adding other functions to the smart contract.
+To view the dApp live, go to your browser, enter `localhost:8080`
+into the address bar.
+Try voting and adding other functions to the smart contract.
 
 ![Election dApp - gif](/assets/img/guides/complete-full-stack-dapp/full stack dApp on RSK.gif)
 
