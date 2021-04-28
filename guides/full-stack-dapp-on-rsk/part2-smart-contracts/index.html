@@ -982,7 +982,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-26 05:26:24 +0000T00:00:00.000Z">2021-03-26</time> | -->
+    <!--time role="presentation" datetime="2021-04-28 08:10:22 +0000T00:00:00.000Z">2021-04-28</time> | -->
      36' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/full-stack-dapp-on-rsk/part2-smart-contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1815,13 +1815,22 @@
 
                   <h1 class="page-title" id="top">The Complete Full Stack dApp Guide on RSK - Part 2:Smart Contracts</h1>
 
-                  <p><img src="../../../assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg" alt="The Complete Full Stack dApp guide"></p>
+                  <p>This is the second part of the series
+on <a href="../">building a <strong>complete full stack dApp on RSK</strong></a>.</p>
 
-<p>This is the second part in the series on Building a <strong>complete full stack decentralised application (dApp) on RSK</strong>. In this guide, we will cover installation and configuration of the development environment for coding, compiling and testing smart contracts. You’ll also learn how to connect to the RSK network, and deploy your smart contracts on it.</p>
+<p>In this article, we will cover installation and configuration
+of the development environment for coding, compiling and testing smart contracts.
+You’ll also learn how to connect to the RSK network,
+and deploy your smart contracts on it.</p>
 
-<p>We want to build a <strong>simple voting application</strong>. RSK allows us to build decentralised applications, and solidity is the smart contract language we would be using alongside the front end.</p>
+<p><img src="../../../assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg" alt="The Complete Full Stack dApp guide"></p>
 
-<p>Before we get started, please read the <a href="../part1-overview/">The Complete Full Stack dApp Guide on RSK - Part 1: Overview</a></p>
+<p>We want to build a <strong>simple voting application</strong>.
+RSK allows us to build decentralised applications,
+and solidity is the smart contract language we would be using alongside the front end.</p>
+
+<p>Before we get started, please read the
+<a href="../part1-overview/">The Complete Full Stack dApp Guide on RSK - Part 1: Overview</a></p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -1842,28 +1851,29 @@
 
 <p>Use <code class="highlighter-rouge">git</code> to make a copy of this repo, and use <code class="highlighter-rouge">npm</code> to install dependencies.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">git clone git@github.com:bguiz/workshop-rsk-full-stack-dapp.git
-cd workshop-rsk-full-stack-dapp
-npm install
-</span></code></pre></div></div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone git@github.com:bguiz/workshop-rsk-full-stack-dapp.git
+<span class="nb">cd </span>workshop-rsk-full-stack-dapp
+npm <span class="nb">install</span>
+</code></pre></div></div>
 
 <h3 id="11-setup-additional-project-files">1.1 Setup additional project files</h3>
-<p>Enter the following command into terminal, to get the current gas-price for both Testnet and Mainnet, and a <a href="https://en.bitcoinwiki.org/wiki/Mnemonic_phrase" rel="external noopener noreferrer" target="_blank">Mnemonic</a> phrase:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
+<p>Enter the following commands into the terminal.</p>
+
+<p>Get the current gas price for both RSK Testnet and RSK Mainnet:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.testnet.rsk.co/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'</span> <span class="o">&gt;</span> .testnet.gas-price.json
+curl https://public-node.rsk.co/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'</span> <span class="o">&gt;</span> .mainnet.gas-price.json
 </code></pre></div></div>
-<p>and;</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.mainnet.gas-price.json
-</code></pre></div></div>
+<p>Generate a <a href="https://en.bitcoinwiki.org/wiki/Mnemonic_phrase" rel="external noopener noreferrer" target="_blank">Mnemonic</a> phrase:</p>
 
-<p>and;</p>
-
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">mnemonics &gt;</span><span class="w"> </span>.testnet.seed-phrase
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mnemonics <span class="o">&gt;</span> .testnet.seed-phrase
 </code></pre></div></div>
 
 <blockquote>
-  <p>Ensure RSKj (regtest) is running in a separate terminal, to setup regtest see the prerequisites section above</p>
+  <p>Ensure RSKj (Regtest) is running in a separate terminal.
+To setup Regtest see the prerequisites section above</p>
 </blockquote>
 
 <p>Then open up this directory in your code editor.</p>
@@ -1889,47 +1899,50 @@ This is the test specification.</li>
 </ul>
 
 <h3 id="112-start-a-blockchain-locally">1.1.2 Start a blockchain locally</h3>
+
 <p>Enter the following command in the terminal to start the truffle console.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">truffle develop
-</span></code></pre></div></div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle develop
+</code></pre></div></div>
+
 <p>You can see a list of available accounts below that are already created and ready to use; you can also see the port (<code class="highlighter-rouge">9545</code>) where the blockchain is running. This is an in-memory blockchain, which means that <strong>no other peers</strong> are going to connect and interact with it automatically. It’s only for <strong>testing</strong> purposes.</p>
 
 <p>Output:</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">owanate@MacBook-Pro workshop-rsk-full-stack-dapp % truffle develop
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>owanate@MacBook-Pro workshop-rsk-full-stack-dapp % truffle develop
 Truffle Develop started at http://127.0.0.1:9545/
 
 Accounts:
-(0) 0xe265436fb52323a40cc4cdff9ca57d2d27bc8a25
-(1) 0x9faf588e44a32b3b8028832f142445f6f436f570
-(2) 0xd936c4f489bfc4c14c69281c69dd3416f8d1978e
-(3) 0xb6b7ec811b3d1cca08df7404569eb0f808159f37
-(4) 0xc451e513b81b3b4fc627a8e0378b12e4160522c7
-(5) 0x03f00de5c3281f8c995e031f3e72ca7b9ced4111
-(6) 0xf07ae6cf2450cc46a7602186b5b8cedcc441ca9e
-(7) 0xcb31275bbeaa4a36f1106e2fef05e45e12d21ad8
-(8) 0x5d9bbd729c1a70ad9bc9be55fed1d21ea7d5227c
-(9) 0x2cf02625b40c39d1fa3df5e92a0b8809977ac593
+<span class="o">(</span>0<span class="o">)</span> 0xe265436fb52323a40cc4cdff9ca57d2d27bc8a25
+<span class="o">(</span>1<span class="o">)</span> 0x9faf588e44a32b3b8028832f142445f6f436f570
+<span class="o">(</span>2<span class="o">)</span> 0xd936c4f489bfc4c14c69281c69dd3416f8d1978e
+<span class="o">(</span>3<span class="o">)</span> 0xb6b7ec811b3d1cca08df7404569eb0f808159f37
+<span class="o">(</span>4<span class="o">)</span> 0xc451e513b81b3b4fc627a8e0378b12e4160522c7
+<span class="o">(</span>5<span class="o">)</span> 0x03f00de5c3281f8c995e031f3e72ca7b9ced4111
+<span class="o">(</span>6<span class="o">)</span> 0xf07ae6cf2450cc46a7602186b5b8cedcc441ca9e
+<span class="o">(</span>7<span class="o">)</span> 0xcb31275bbeaa4a36f1106e2fef05e45e12d21ad8
+<span class="o">(</span>8<span class="o">)</span> 0x5d9bbd729c1a70ad9bc9be55fed1d21ea7d5227c
+<span class="o">(</span>9<span class="o">)</span> 0x2cf02625b40c39d1fa3df5e92a0b8809977ac593
 
 Private Keys:
-(0) 88e8dd5b9100d8e9f595809a251dd91b82f66924ec377b0580ebe0779ce6c5ae
-(1) 53e7390a65b68e122f37b3b3de89fa21a88023d733ec8f6a8779ed02cfff1c82
-(2) a37d67410ae97aac8d08467024b59f623dbd653b2d6eb7598ed1b3f26a5c3de7
-(3) 6d481af222ae78fddd94ab8bc72118eea05321a863925987d715a62c459423cb
-(4) 431975ed3f2f4d224b5c6085a6689cc1f6e135f36f7b76c72b31af3990a324f1
-(5) abf11a0083a7f3153e800a324402ff4e4488d5660d5b2df9e4edc006398d61ca
-(6) bf0b2865ad4bd8dd985e3e2ce0d46766f7ae64ad2c40991de1de052c882a6b94
-(7) a40925e7bfdc6d2e70721152eae1b507a7c9299a2a7ef25152e082b8d6351713
-(8) 3c0c735fc0b20a229611269a701cc4269fe7f7aa9fd1a036ea44cf7f3e2452a7
-(9) 546a5da5be8996b4e45a331d73b6cc1b5498ba908a8a0c676ad3f983744eeed9
+<span class="o">(</span>0<span class="o">)</span> 88e8dd5b9100d8e9f595809a251dd91b82f66924ec377b0580ebe0779ce6c5ae
+<span class="o">(</span>1<span class="o">)</span> 53e7390a65b68e122f37b3b3de89fa21a88023d733ec8f6a8779ed02cfff1c82
+<span class="o">(</span>2<span class="o">)</span> a37d67410ae97aac8d08467024b59f623dbd653b2d6eb7598ed1b3f26a5c3de7
+<span class="o">(</span>3<span class="o">)</span> 6d481af222ae78fddd94ab8bc72118eea05321a863925987d715a62c459423cb
+<span class="o">(</span>4<span class="o">)</span> 431975ed3f2f4d224b5c6085a6689cc1f6e135f36f7b76c72b31af3990a324f1
+<span class="o">(</span>5<span class="o">)</span> abf11a0083a7f3153e800a324402ff4e4488d5660d5b2df9e4edc006398d61ca
+<span class="o">(</span>6<span class="o">)</span> bf0b2865ad4bd8dd985e3e2ce0d46766f7ae64ad2c40991de1de052c882a6b94
+<span class="o">(</span>7<span class="o">)</span> a40925e7bfdc6d2e70721152eae1b507a7c9299a2a7ef25152e082b8d6351713
+<span class="o">(</span>8<span class="o">)</span> 3c0c735fc0b20a229611269a701cc4269fe7f7aa9fd1a036ea44cf7f3e2452a7
+<span class="o">(</span>9<span class="o">)</span> 546a5da5be8996b4e45a331d73b6cc1b5498ba908a8a0c676ad3f983744eeed9
 
 Mnemonic: outdoor organ farm keep pitch remember click crack oppose scare scout erode
 
-⚠️  Important ⚠️  : This mnemonic was created for you by Truffle. It is not secure.
-Ensure you do not use it on production blockchains, or else you risk losing funds.
-</span></code></pre></div></div>
+⚠️  Important ⚠️  : This mnemonic was created <span class="k">for </span>you by Truffle. It is not secure.
+Ensure you <span class="k">do </span>not use it on production blockchains, or <span class="k">else </span>you risk losing funds.
+</code></pre></div></div>
 
 <h2 id="2-creating-the-smart-contract">2. Creating the Smart contract</h2>
+
 <p>The initial set up code for the dApp can be viewed in the <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/30ab50b.diff" rel="external noopener noreferrer" target="_blank">diff file for change</a>. We’ll implement the functions in the smart contract as we go along.</p>
 
 <p>To locate the smart contract, go to the contract folder and open the file called <code class="highlighter-rouge">Election.sol</code> in your code editor.</p>
@@ -1983,17 +1996,41 @@ Ensure you do not use it on production blockchains, or else you risk losing fund
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>The first line - <code class="highlighter-rouge">pragma</code> -  declares the version of Solidity you wish to write your code in. This is first done in all solidity smart contracts. The declaration of the smart contract starts with the keyword <code class="highlighter-rouge">contract</code> then the name of the contract, in this instance <code class="highlighter-rouge">Election</code> is the name of our smart contract.</p>
+<p>The first line - <code class="highlighter-rouge">pragma</code> -  declares the version of Solidity you wish to write your code in.
+This is first done in all solidity smart contracts.
+The declaration of the smart contract starts with the keyword <code class="highlighter-rouge">contract</code>,
+then the name of the contract.
+In this instance <code class="highlighter-rouge">Election</code> is the name of our smart contract.</p>
 
-<p>Next, we declared a candidate struct, which will hold three variables - <code class="highlighter-rouge">id</code>, <code class="highlighter-rouge">name</code>, and <code class="highlighter-rouge">voteCount</code>. <a href="https://solidity.readthedocs.io/en/v0.7.1/structure-of-a-contract.html?highlight=struct#struct-types" rel="external noopener noreferrer" target="_blank">Structs</a> in Solidity are custom defined types that can group several variables, similar to how variables are grouped in <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" rel="external noopener noreferrer" target="_blank">Object Oriented Programming Languages</a> like Javascript. The line <code class="highlighter-rouge">uint id</code> and <code class="highlighter-rouge">uint voteCount</code>; declares a state variable called id and voteCount of type <code class="highlighter-rouge">uint</code> (unsigned integer with 256 bits). The line <code class="highlighter-rouge">string name</code>; declares a state variable called <code class="highlighter-rouge">name</code> of type <code class="highlighter-rouge">string</code>.</p>
+<p>Next, we declared a candidate struct, which will hold three variables:
+<code class="highlighter-rouge">id</code>, <code class="highlighter-rouge">name</code>, and <code class="highlighter-rouge">voteCount</code>.
+<a href="https://solidity.readthedocs.io/en/v0.7.1/structure-of-a-contract.html?highlight=struct#struct-types" rel="external noopener noreferrer" target="_blank">Structs</a>
+in Solidity are custom defined types that can group several variables,
+similar to how variables are grouped in <a href="https://en.wikipedia.org/wiki/Object-oriented_programming" rel="external noopener noreferrer" target="_blank">Object Oriented Programming Languages</a>.</p>
 
-<p>Next, we store the accounts that have voted by <code class="highlighter-rouge">mapping</code> their <code class="highlighter-rouge">address</code> to type <code class="highlighter-rouge">bool</code>, and setting it’s accessibility to public using the keyword <code class="highlighter-rouge">public</code>. Read more on <a href="https://solidity.readthedocs.io/en/v0.7.1/style-guide.html?highlight=bool#mappings" rel="external noopener noreferrer" target="_blank">Variable Declarations in Solidity</a>.</p>
+<ul>
+  <li>The lines <code class="highlighter-rouge">uint id</code> and <code class="highlighter-rouge">uint voteCount</code> declare a state variable called <code class="highlighter-rouge">id</code> and <code class="highlighter-rouge">voteCount</code>, both of the type <code class="highlighter-rouge">uint</code> (unsigned integer with 256 bits).</li>
+  <li>The line <code class="highlighter-rouge">string name</code> declares a state variable called <code class="highlighter-rouge">name</code> of type <code class="highlighter-rouge">string</code>.</li>
+</ul>
 
-<p>The <code class="highlighter-rouge">constructor</code> function gets called when the smart contract is deployed to the blockchain. The lines <code class="highlighter-rouge">addCandidate (Carrot) and addCandidate (Potato)</code> in the constructor would be initialised upon contract creation.  Read about <a href="https://solidity.readthedocs.io/en/v0.7.1/contracts.html#constructor" rel="external noopener noreferrer" target="_blank">Constructors in Solidity</a>.</p>
+<p>Next, we store the accounts that have voted
+by <code class="highlighter-rouge">mapping</code> their <code class="highlighter-rouge">address</code> to type <code class="highlighter-rouge">bool</code>,
+and setting its accessibility to public using the keyword <code class="highlighter-rouge">public</code>.
+Read more on <a href="https://solidity.readthedocs.io/en/v0.7.1/style-guide.html?highlight=bool#mappings" rel="external noopener noreferrer" target="_blank">Variable Declarations in Solidity</a>.</p>
 
-<p>The function <code class="highlighter-rouge">addCandidate</code> declares a candidate to the <code class="highlighter-rouge">_name</code> variable with type <code class="highlighter-rouge">string</code>, sets it to <code class="highlighter-rouge">private</code> - meaning this function can only be called within this contract. Read about <a href="https://solidity.readthedocs.io/en/v0.7.1/cheatsheet.html?highlight=private%20function#function-visibility-specifiers" rel="external noopener noreferrer" target="_blank">Function Visibility Specifiers</a> in Solidity.</p>
+<p>The <code class="highlighter-rouge">constructor</code> function gets called when the smart contract is deployed to the blockchain.
+The lines <code class="highlighter-rouge">addCandidate (Carrot) and addCandidate (Potato)</code>
+in the constructor would be initialised upon contract creation.
+Read about <a href="https://solidity.readthedocs.io/en/v0.7.1/contracts.html#constructor" rel="external noopener noreferrer" target="_blank">Constructors in Solidity</a>.</p>
 
-<p>The function <code class="highlighter-rouge">vote</code> declares a <code class="highlighter-rouge">_candidateId</code> of type <code class="highlighter-rouge">uint</code>, and sets the visibility of the function to <code class="highlighter-rouge">public</code> - this means the function is visible externally and internally.</p>
+<p>The function <code class="highlighter-rouge">addCandidate</code> declares a candidate to the <code class="highlighter-rouge">_name</code> variable
+with type <code class="highlighter-rouge">string</code>, sets it to <code class="highlighter-rouge">private</code> -
+eaning this function can only be called within this contract.
+Read about <a href="https://solidity.readthedocs.io/en/v0.7.1/cheatsheet.html?highlight=private%20function#function-visibility-specifiers" rel="external noopener noreferrer" target="_blank">Function Visibility Specifiers</a> in Solidity.</p>
+
+<p>The function <code class="highlighter-rouge">vote</code> declares a <code class="highlighter-rouge">_candidateId</code> of type <code class="highlighter-rouge">uint</code>,
+and sets the visibility of the function to <code class="highlighter-rouge">public</code> -
+this means the function is visible both externally and internally.</p>
 
 <h3 id="22--implementing-the-constructor-and-addcandidate-function">2.2.  Implementing the <code class="highlighter-rouge">constructor</code> and <code class="highlighter-rouge">addCandidate</code> function</h3>
 
@@ -2011,7 +2048,8 @@ Ensure you do not use it on production blockchains, or else you risk losing fund
     <span class="p">}</span>
 </code></pre></div></div>
 
-<p>Each time this function is called, it increments the number of candidates,
+<p>Each time this function is called,
+it increments the number of candidates,
 and stores the candidate data inside a mapping.</p>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">constructor</span> <span class="p">()</span> <span class="kr">public</span> <span class="p">{</span>
@@ -2028,7 +2066,9 @@ a carrot and a potato. 😛</p>
 
 <h3 id="23-implementing-the-vote-function">2.3. Implementing the <code class="highlighter-rouge">vote</code> Function</h3>
 
-<p>Let’s implement the <code class="highlighter-rouge">vote</code> function. <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/0b031b73d6f48689cb7c6d5f183ab8b9c55307a9" rel="external noopener noreferrer" target="_blank">Diff file for change</a>. It should now look like this:</p>
+<p>Let’s implement the <code class="highlighter-rouge">vote</code> function.
+<a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/0b031b73d6f48689cb7c6d5f183ab8b9c55307a9" rel="external noopener noreferrer" target="_blank">Diff file for change</a>.
+It should now look like this:</p>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">vote</span> <span class="p">(</span>
         <span class="nx">uint</span> <span class="nx">_candidateId</span>
@@ -2049,7 +2089,11 @@ a carrot and a potato. 😛</p>
     <span class="p">}</span>
 </code></pre></div></div>
 
-<p>The <code class="highlighter-rouge">vote</code> function also checks if the present caller of the contract (the candidate) has voted before, if not it proceeds to check if the candidate is valid. Then it records the candidate’s vote and assigns the candidate (address) to the voters array and updates the votes and candidate’s count.</p>
+<p>The <code class="highlighter-rouge">vote</code> function also checks if the present caller of the contract
+(the candidate) has voted before,
+if not it proceeds to check if the candidate is valid.
+Then it records the candidate’s vote and assigns the candidate (address)
+to the voters array and updates the votes and candidate’s count.</p>
 
 <h3 id="24-the-updated-smart-contract">2.4. The Updated Smart Contract</h3>
 
@@ -2110,24 +2154,31 @@ a carrot and a potato. 😛</p>
 
 <p>To compile the contracts, in the Truffle console, run this command:</p>
 
-<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">truffle</span><span class="p">(</span><span class="nx">develop</span><span class="p">)</span><span class="o">&gt;</span> <span class="nx">compile</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>develop<span class="o">)&gt;</span> compile
 </code></pre></div></div>
 
 <p>Output:</p>
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Compiling your contracts...
-===========================
-</span><span class="gp">&gt;</span><span class="w"> </span>Compiling ./contracts/Election.sol
-<span class="gp">&gt;</span><span class="w"> </span>Compiling ./contracts/Migrations.sol
-<span class="gp">&gt;</span><span class="w"> </span>Artifacts written to /Users/owanate/Documents/Projects/TutorialPractice/workshop-rsk-full-stack-dapp/build/contracts
-<span class="gp">&gt;</span><span class="w"> </span>Compiled successfully using:
-<span class="go">   - solc: 0.5.7+commit.6da8b019.Emscripten.clang
-</span></code></pre></div></div>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Compiling your contracts...
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Compiling ./contracts/Election.sol
+<span class="o">&gt;</span> Compiling ./contracts/Migrations.sol
+<span class="o">&gt;</span> Artifacts written to /Users/owanate/Documents/Projects/TutorialPractice/workshop-rsk-full-stack-dapp/build/contracts
+<span class="o">&gt;</span> Compiled successfully using:
+   - solc: 0.5.7+commit.6da8b019.Emscripten.clang
+</code></pre></div></div>
 
 <h2 id="3-testing-the-smart-contract">3. Testing the Smart Contract</h2>
 
-<p>Tests are extremely important when dealing with systems of trust and financial data. Tests can be written in either Solidity or with Javascript (using Truffle’s abstractions). In this tutorial, we’ll use Javascript.</p>
+<p>Tests are extremely important when dealing with systems of trust or high value.
+Tests can be written in either Solidity or with Javascript
+(using Truffle’s abstractions).
+In this tutorial, we’ll use Javascript.</p>
 
-<p>The Truffle framework embeds support for the popular <strong>Mocha</strong> test framework for Javascript. Here’s what some basic tests look like for the above contract, located in the <code class="highlighter-rouge">test</code> folder, you’ll find a file with the name <code class="highlighter-rouge">Election.spec.js</code>:</p>
+<p>The Truffle framework embeds support for the popular <strong>Mocha</strong> test framework for Javascript.
+Here’s what some basic tests look like for the above contract,
+located in the <code class="highlighter-rouge">test</code> folder,
+you’ll find a file with the name <code class="highlighter-rouge">Election.spec.js</code>:</p>
 
 <p><img src="../../../assets/img/guides/complete-full-stack-dapp/Election.spec.png" alt="RSK Full Stack dApp - Test"></p>
 
@@ -2174,7 +2225,9 @@ We’ll implement the specifications as we go along.</p>
 
 <h3 id="32-testing-the-initial-state-of-candidate-count">3.2. Testing the initial state of candidate count</h3>
 
-<p>Let’s test if our function would initialize with two candidates. <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/bbed126.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>. It should now look like this:</p>
+<p>Let’s test if our function does initialize with two candidates.
+<a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/bbed126.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>.
+It should now look like this:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">initializes with two candidates</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="kd">const</span> <span class="nx">count</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">electionInstance</span><span class="p">.</span><span class="nx">candidatesCount</span><span class="p">();</span>
@@ -2189,7 +2242,9 @@ We’ll implement the specifications as we go along.</p>
 
 <h3 id="33-testing-the-initial-values-of-candidate-data">3.3. Testing the initial values of candidate data</h3>
 
-<p>Let’s test if our function would initialize the candidates with the correct values. <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/7addd2c.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>. It should now look like this:</p>
+<p>Let’s test if our function would initialize the candidates with the correct values.
+<a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/7addd2c.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>.
+It should now look like this:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">it initializes the candidates with the correct values</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="kd">const</span> <span class="nx">candidate1</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">electionInstance</span><span class="p">.</span><span class="nx">candidates</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
@@ -2224,7 +2279,9 @@ and that they have zero votes to begin with.</p>
 
 <h3 id="34-testing-for-disallow-voting-on-invalid-candidates">3.4. Testing for disallow voting on invalid candidates</h3>
 
-<p>Let’s test if our function will disallow voting on invalid candidates. <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/3bf8bee.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>. It should now looks like this:</p>
+<p>Let’s test if our function will disallow voting on invalid candidates.
+<a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/3bf8bee.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>.
+It should now looks like this:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">disallows voting on invalid candidates</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="kd">let</span> <span class="nx">err</span><span class="p">;</span>
@@ -2257,7 +2314,9 @@ In this case, that they cannot vote for a candidate who does not exist.</p>
 
 <h3 id="35-testing-for-disallow-double-voting">3.5. Testing for disallow double voting</h3>
 
-<p>Let’s test if our function will disallow double voting. <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/2dc5fda.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>. It should now look like this:</p>
+<p>Let’s test if our function will disallow double voting.
+<a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/2dc5fda.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>.
+It should now look like this:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">disallows double voting</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="kd">const</span> <span class="nx">candidateId</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
@@ -2299,14 +2358,18 @@ In this case, that they cannot vote for a candidate who does not exist.</p>
   <span class="p">});</span>
 
 </code></pre></div></div>
+
 <blockquote>
   <p>This test case is for a different “failure path”.
-In this case, that they cannot vote after they have already voted once.</p>
+In this case, that a voter cannot vote additional times
+after they have already voted once.</p>
 </blockquote>
 
 <h3 id="36-testing-for-allow-a-voter-to-cast-a-vote">3.6. Testing for allow a voter to cast a vote</h3>
 
-<p>Let’s test if our function will allow a voter to cast a valid vote. <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/57e39e5.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>. It should now look like this:</p>
+<p>Let’s test if our function will allow a voter to cast a valid vote.
+<a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/commit/57e39e5.diff" rel="external noopener noreferrer" target="_blank">Diff file for change</a>.
+It should now look like this:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">it</span><span class="p">(</span><span class="dl">'</span><span class="s1">allows a voter to cast a vote</span><span class="dl">'</span><span class="p">,</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
     <span class="kd">const</span> <span class="nx">candidateId</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">BN</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
@@ -2323,7 +2386,8 @@ In this case, that they cannot vote after they have already voted once.</p>
 
 <h3 id="37-the-updated-test-code">3.7. The Updated Test Code</h3>
 
-<p>Find the full test code in the <code class="highlighter-rouge">Election.spec.js</code> file below or in the <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/feat/complete-a/test/Election.spec.js" rel="external noopener noreferrer" target="_blank">Full stack dApp repo</a></p>
+<p>Find the full test code in the <code class="highlighter-rouge">Election.spec.js</code> file below or in
+the <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/blob/feat/complete-a/test/Election.spec.js" rel="external noopener noreferrer" target="_blank">Full stack dApp repo</a></p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">assert</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">assert</span><span class="dl">'</span><span class="p">);</span>
 
@@ -2440,7 +2504,9 @@ In this case, that they cannot vote after they have already voted once.</p>
 <span class="p">});</span>
 </code></pre></div></div>
 
-<p>Finally, we have a “happy path” test case, where we check that a user is allowed to vote when they are folowing the rules set out in the smart contract.</p>
+<p>Finally, we have a “happy path” test case,
+where we check that a user is allowed to vote
+when they are following the rules set out in the smart contract.</p>
 
 <h2 id="4-running-the-tests">4. Running the Tests</h2>
 
@@ -2448,8 +2514,8 @@ In this case, that they cannot vote after they have already voted once.</p>
 
 <p>Enter the command below into the terminal:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">npm run test
-</span></code></pre></div></div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run <span class="nb">test</span>
+</code></pre></div></div>
 
 <p>Output:</p>
 
@@ -2476,47 +2542,66 @@ In this case, that they cannot vote after they have already voted once.</p>
 
   <span class="mi">5</span> <span class="nx">passing</span> <span class="p">(</span><span class="mi">8</span><span class="nx">s</span><span class="p">)</span>
 </code></pre></div></div>
+
 <p>Hurray! You can see all our tests passed!!</p>
 
 <blockquote>
-  <p>Note: We are using the <code class="highlighter-rouge">regtest</code> network as specified in <code class="highlighter-rouge">scripts.test</code> in <code class="highlighter-rouge">package.json</code> to test our smart contract.</p>
+  <p>Note: We are using the <code class="highlighter-rouge">regtest</code> network as specified
+in <code class="highlighter-rouge">scripts.test</code> in <code class="highlighter-rouge">package.json</code> to test our smart contract.</p>
 </blockquote>
 
 <h2 id="5-deploying-the-smart-contract-on-rsk">5. Deploying the Smart Contract on RSK</h2>
 
-<p>Remember that we spun up an in-memory blockchain earlier?
+<p>Remember that we spun up <code class="highlighter-rouge">localhost</code> blockchain earlier?
 Well that isn’t going to be very useful for smart contracts,
-because each time you shut that process down,
-all the data, and even the smart contract is completely lost.
-Furthermore, there were no peers, and therefore no <a href="https://news.bitcoin.com/a-history-of-blockchain-consensus-mechanisms/" rel="external noopener noreferrer" target="_blank">consensus</a>.</p>
+because a single person (you) can destroy
+all the blockchain data, which includes smart contract data too.
+Not to mention, there were no peers, and therefore
+no <a href="https://news.bitcoin.com/a-history-of-blockchain-consensus-mechanisms/" rel="external noopener noreferrer" target="_blank">consensus</a>.</p>
 
-<p>We want something that isn’t ephemeral, so
-let’s deploy this smart contract to a <strong>real blockchain</strong>.
+<p>We want something that <strong>is not</strong> ephemeral,
+and <strong>is</strong> verified by a network of peers.
+So let’s deploy this smart contract to a <strong>real blockchain</strong>.
 RSK offers two public networks: Testnet and Mainnet.
 As the name implies, Testnet is for testing purposes.
-This is useful for development, and what we will be using.</p>
+This is useful for development, as we’re doing now.</p>
 
 <h3 id="51-get-an-rsk-wallet">5.1 Get an RSK Wallet</h3>
 
-<p>To get a wallet, we first need to get a <strong>mnemonic</strong> code. We are going to use this web app: https://iancoleman.io/bip39/. This may not be used for any ‘real’ wallet; it’s not a secure way to generate a private key! We are going to use it just for learning the basics.</p>
+<p>To get a wallet, we first need to get a <strong>mnemonic</strong> code.
+We are going to use this web app:
+<a href="https://iancoleman.io/bip39/" rel="external noopener noreferrer" target="_blank">iancoleman.io/bip39</a>.
+This may not be used for any ‘real’ wallet;
+it’s not a secure way to generate a private key!
+We are going to use it just for learning the basics.</p>
 
-<p>In the ‘Generate a random mnemonic’ field, we select 12 words and generate it.
+<p>In the ‘Generate a random mnemonic’ field, we select ‘12 words’ and generate it.
 Then tap on ‘Generate’.
-The result appears in the BIP39 Mnemonic field. They should be 12 random words like the words in the image:</p>
+The result appears in the BIP39 Mnemonic field.
+They should be 12 random words like the words in the image:</p>
 
 <p><img src="../../../assets/img/guides/complete-full-stack-dapp/Mnemonic.png" alt="RSK full stack dApp - Mnemonic"></p>
 
-<p>In the terminal, inside the project root folder, a text file named <code class="highlighter-rouge">.testnet.seed-phrase</code>, has already been generated during the additional project files setup above.</p>
+<p>In the terminal, inside the project root folder,
+a text file named <code class="highlighter-rouge">.testnet.seed-phrase</code> has already been generated
+during the additional project files setup above.</p>
 
-<p>Do you remember your mnemonic? A mnemonic phrase has already been generated in the file named <code class="highlighter-rouge">.testnet.seed-phrase</code>.</p>
+<p>Do you remember your mnemonic?</p>
 
 <h3 id="52-connect-truffle-to-rsk-public-network">5.2 Connect Truffle to RSK public network</h3>
 
-<p>To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use <code class="highlighter-rouge">@truffle/hdwallet-provider@1.0.35</code> and Node.Js &gt;= <code class="highlighter-rouge">12.18.2</code>. The <code class="highlighter-rouge">@truffle/hdwallet-provider@1.0.35</code> has already been installed for you when you used the <code class="highlighter-rouge">npm install</code> command</p>
+<p>To connect to RSK, we are going to modify the Truffle configuration.
+We are going to use a provider that allows us to connect to any network but unlocking an account locally.
+We are going to use <code class="highlighter-rouge">@truffle/hdwallet-provider@1.0.35</code>
+and Node.Js &gt;= <code class="highlighter-rouge">12.18.2</code>.
+The <code class="highlighter-rouge">@truffle/hdwallet-provider@1.0.35</code> has already been installed for you
+when you used the <code class="highlighter-rouge">npm install</code> command</p>
 
 <h3 id="53-configure-truffle-configjs-file">5.3 Configure <code class="highlighter-rouge">truffle-config.js</code> file</h3>
 
-<p>In the root folder directory, locate the <code class="highlighter-rouge">truffle-config.js</code> file. Truffle has already been pre-configured to connect to your choice of RSK Regtest, RSK Testnet.</p>
+<p>In the root folder directory, locate the <code class="highlighter-rouge">truffle-config.js</code> file.
+Truffle has already been pre-configured to connect to
+your choice of RSK Regtest or RSK Testnet.</p>
 
 <p>The <code class="highlighter-rouge">hdwallet-provider</code> allows us to connect to any network by unlocking an account locally, including the RSK networks.
 For example, to connect to the RSK Testnet,
@@ -2568,7 +2653,7 @@ update the current gas price of the Testnet network,
 and save it to <code class="highlighter-rouge">.testnet.gas-price.json</code>,
 using the following command:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' &gt;</span><span class="w"> </span>.testnet.gas-price.json
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl https://public-node.testnet.rsk.co/ <span class="nt">-X</span> POST <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="nt">--data</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}'</span> <span class="o">&gt;</span> .testnet.gas-price.json
 </code></pre></div></div>
 
 <blockquote>
@@ -2579,6 +2664,7 @@ using the following command:</p>
 
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="nl">"jsonrpc"</span><span class="p">:</span><span class="s2">"2.0"</span><span class="p">,</span><span class="nl">"id"</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="nl">"result"</span><span class="p">:</span><span class="s2">"0x3dfd244"</span><span class="p">}</span><span class="w">
 </span></code></pre></div></div>
+
 <p>The <code class="highlighter-rouge">result</code> value is presented in hexadecimal.</p>
 
 <blockquote>
@@ -2590,53 +2676,57 @@ However, in this guide, we’ll focus on Testnet.</p>
 
 <p>To connect to the RSK Testnet, open another terminal in the same folder directory, enter the following command below into the terminal.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">truffle console --network testnet
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle console <span class="nt">--network</span> testnet
 
-</span><span class="gp">#</span><span class="w"> </span>Gas price Testnet: 65000004
+<span class="c"># Gas price Testnet: 65000004</span>
 </code></pre></div></div>
 
 <h3 id="56-get-test-funds-on-rsk-testnet">5.6. Get test funds on RSK Testnet</h3>
 
 <p>To find out which address was unlocked using the mnemonic, enter the command below into the terminal:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>Object.keys<span class="o">(</span>web3.currentProvider.wallets<span class="o">)</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>testnet<span class="o">)&gt;</span> Object.keys<span class="o">(</span>web3.currentProvider.wallets<span class="o">)</span>
 </code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>Object.keys<span class="o">(</span>web3.currentProvider.wallets<span class="o">)</span>
-<span class="go">[
-  '0x460a9914c73efc0aacc39e011b239158e15bca1c',
-  '0x263de679f78ee334ac34e905548d8b57cca1fadd',
-  '0x3e913ee2b5bbc2c3143528f3e7942e49954d00cc',
-  '0xb4604ed7161904e72cea49ee30c0453797ec3de4',
-  '0xfe4777644121f0aeaf2f09afa4c1d95e4dbce8e2',
-  '0xf9d9cc0f0977a76ab84164106cd6b61a6706d816',
-  '0x7ca3b938932dd412e92074538c74a4b183dcb3bb',
-  '0x7748d18056e11086a18c82a8b18d706865c9a3ae',
-  '0x8938ae9b5e8f0d52163ab09376c5106e228eacd2',
-  '0x8c4b878d03e97d9c60b69241ce44192cac714fbf'
-]
-</span></code></pre></div></div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>testnet<span class="o">)&gt;</span> Object.keys<span class="o">(</span>web3.currentProvider.wallets<span class="o">)</span>
+<span class="o">[</span>
+  <span class="s1">'0x460a9914c73efc0aacc39e011b239158e15bca1c'</span>,
+  <span class="s1">'0x263de679f78ee334ac34e905548d8b57cca1fadd'</span>,
+  <span class="s1">'0x3e913ee2b5bbc2c3143528f3e7942e49954d00cc'</span>,
+  <span class="s1">'0xb4604ed7161904e72cea49ee30c0453797ec3de4'</span>,
+  <span class="s1">'0xfe4777644121f0aeaf2f09afa4c1d95e4dbce8e2'</span>,
+  <span class="s1">'0xf9d9cc0f0977a76ab84164106cd6b61a6706d816'</span>,
+  <span class="s1">'0x7ca3b938932dd412e92074538c74a4b183dcb3bb'</span>,
+  <span class="s1">'0x7748d18056e11086a18c82a8b18d706865c9a3ae'</span>,
+  <span class="s1">'0x8938ae9b5e8f0d52163ab09376c5106e228eacd2'</span>,
+  <span class="s1">'0x8c4b878d03e97d9c60b69241ce44192cac714fbf'</span>
+<span class="o">]</span>
+</code></pre></div></div>
 
 <blockquote>
-  <p>Let’s save the address of the first account in a variable named <code class="highlighter-rouge">account</code> within the console. We will be using it soon.</p>
+  <p>Let’s save the address of the first account in a variable named <code class="highlighter-rouge">account</code>
+within the console. We will be using it soon.</p>
 </blockquote>
 
 <p>Enter the following code into the terminal.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>var account <span class="o">=</span> Object.keys<span class="o">(</span>web3.currentProvider.wallets<span class="o">)[</span>0]
-<span class="gp">#</span><span class="w"> </span>undefined
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>testnet<span class="o">)&gt;</span> var account <span class="o">=</span> Object.keys<span class="o">(</span>web3.currentProvider.wallets<span class="o">)[</span>0]
+<span class="c"># undefined</span>
 </code></pre></div></div>
 
 <p>Then enter the command below;</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>account
-<span class="gp">#</span><span class="w"> </span><span class="s1">'0x460a9914c73efc0aacc39e011b239158e15bca1c'</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>testnet<span class="o">)&gt;</span> account
+<span class="c"># '0x460a9914c73efc0aacc39e011b239158e15bca1c'</span>
 </code></pre></div></div>
 
 <blockquote>
-  <p>RSK Testnet is a free network. You still need to pay gas fees to interact with it, but you can obtain that for free in a faucet. Let’s go to the RSK Faucet: <a href="https://faucet.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">faucet.testnet.rsk.co</a>.</p>
+  <p>RSK Testnet is a free network.
+You still need to pay gas fees to interact with it,
+but you can obtain that for free in a faucet.
+Let’s go to the RSK Faucet: <a href="https://faucet.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">faucet.testnet.rsk.co</a>.</p>
 </blockquote>
 
 <p><img src="../../../assets/img/guides/complete-full-stack-dapp/TestFunds1.png" alt="RSK faucet - 1"></p>
@@ -2672,114 +2762,126 @@ However, in this guide, we’ll focus on Testnet.</p>
 
 <p>Enter the following command below into the terminal:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>compile 
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>testnet<span class="o">)&gt;</span> compile
 </code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Compiling your contracts...
-===========================
-</span><span class="gp">&gt;</span><span class="w"> </span>Compiling ./contracts/Election.sol
-<span class="gp">&gt;</span><span class="w"> </span>Compiling ./contracts/Migrations.sol
-<span class="gp">&gt;</span><span class="w"> </span>Artifacts written to /Users/owanate/Documents/Projects/TutorialPractice/workshop-rsk-full-stack-dapp/build/contracts
-<span class="gp">&gt;</span><span class="w"> </span>Compiled successfully using:
-<span class="go">   - solc: 0.7.0+commit.9e61f92b.Emscripten.clang
-</span></code></pre></div></div>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Compiling your contracts...
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Compiling ./contracts/Election.sol
+<span class="o">&gt;</span> Compiling ./contracts/Migrations.sol
+<span class="o">&gt;</span> Artifacts written to /Users/owanate/Documents/Projects/TutorialPractice/workshop-rsk-full-stack-dapp/build/contracts
+<span class="o">&gt;</span> Compiled successfully using:
+   - solc: 0.7.0+commit.9e61f92b.Emscripten.clang
+</code></pre></div></div>
 
 <blockquote>
   <p>Note: Please make sure the build folder is clean. else, the following will be the output and the contract will not be compiled:</p>
 </blockquote>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">Compiling your contracts...
-===========================
-</span><span class="gp">&gt;</span><span class="w"> </span>Everything is up to <span class="nb">date</span>, there is nothing to compile.
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Compiling your contracts...
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Everything is up to <span class="nb">date</span>, there is nothing to compile.
 </code></pre></div></div>
 
-<p>Else if everything is working properly, you should be able to deploy to multiple networks without cleaning out the build folder.</p>
+<p>If everything is working properly,
+you should be able to deploy to multiple networks
+without cleaning out the build folder.</p>
 
-<p>After the contract is successfully compiled, enter the command below into the terminal.</p>
+<p>After the contract is successfully compiled,
+enter the command below into the terminal.</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>migrate <span class="nt">--network</span> testnet
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>testnet<span class="o">)&gt;</span> migrate <span class="nt">--network</span> testnet
 </code></pre></div></div>
 
 <p>Output:</p>
 
-<div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">truffle(testnet)&gt;</span><span class="w"> </span>migrate <span class="nt">--network</span> testnet
-<span class="go">
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>truffle<span class="o">(</span>testnet<span class="o">)&gt;</span> migrate <span class="nt">--network</span> testnet
+
 Compiling your contracts...
-===========================
-</span><span class="gp">&gt;</span><span class="w"> </span>Everything is up to <span class="nb">date</span>, there is nothing to compile.
-<span class="go">
+<span class="o">===========================</span>
+<span class="o">&gt;</span> Everything is up to <span class="nb">date</span>, there is nothing to compile.
+
 
 
 Starting migrations...
-======================
-</span><span class="gp">&gt;</span><span class="w"> </span>Network name:    <span class="s1">'testnet'</span>
-<span class="gp">&gt;</span><span class="w"> </span>Network <span class="nb">id</span>:      31
-<span class="gp">&gt;</span><span class="w"> </span>Block gas limit: 6800000 <span class="o">(</span>0x67c280<span class="o">)</span>
-<span class="go">
+<span class="o">======================</span>
+<span class="o">&gt;</span> Network name:    <span class="s1">'testnet'</span>
+<span class="o">&gt;</span> Network <span class="nb">id</span>:      31
+<span class="o">&gt;</span> Block gas limit: 6800000 <span class="o">(</span>0x67c280<span class="o">)</span>
+
 
 1_initial_migration.js
-======================
+<span class="o">======================</span>
 
-   Deploying 'Migrations'
-   ----------------------
-</span><span class="gp">   &gt;</span><span class="w"> </span>transaction <span class="nb">hash</span>:    0x07a1ba12945c8a623071613b4f15a57e84ed6060eadf8d86dfd37c81050105b9
-<span class="gp">   &gt;</span><span class="w"> </span>Blocks: 1            Seconds: 57
-<span class="gp">   &gt;</span><span class="w"> </span>contract address:    0xCC6838AeF5CFBd1f70C853Af1fAB71BBC808fCfc
-<span class="gp">   &gt;</span><span class="w"> </span>block number:        1238308
-<span class="gp">   &gt;</span><span class="w"> </span>block timestamp:     1602096652
-<span class="gp">   &gt;</span><span class="w"> </span>account:             0x460A9914c73EFc0aaCc39E011B239158e15BCa1c
-<span class="gp">   &gt;</span><span class="w"> </span>balance:             0.049936826314465808
-<span class="gp">   &gt;</span><span class="w"> </span>gas used:            182191 <span class="o">(</span>0x2c7af<span class="o">)</span>
-<span class="gp">   &gt;</span><span class="w"> </span>gas price:           0.071500004 gwei
-<span class="gp">   &gt;</span><span class="w"> </span>value sent:          0 ETH
-<span class="gp">   &gt;</span><span class="w"> </span>total cost:          0.000013026657228764 ETH
-<span class="go">
+   Deploying <span class="s1">'Migrations'</span>
+   <span class="nt">----------------------</span>
+   <span class="o">&gt;</span> transaction <span class="nb">hash</span>:    0x07a1ba12945c8a623071613b4f15a57e84ed6060eadf8d86dfd37c81050105b9
+   <span class="o">&gt;</span> Blocks: 1            Seconds: 57
+   <span class="o">&gt;</span> contract address:    0xCC6838AeF5CFBd1f70C853Af1fAB71BBC808fCfc
+   <span class="o">&gt;</span> block number:        1238308
+   <span class="o">&gt;</span> block timestamp:     1602096652
+   <span class="o">&gt;</span> account:             0x460A9914c73EFc0aaCc39E011B239158e15BCa1c
+   <span class="o">&gt;</span> balance:             0.049936826314465808
+   <span class="o">&gt;</span> gas used:            182191 <span class="o">(</span>0x2c7af<span class="o">)</span>
+   <span class="o">&gt;</span> gas price:           0.071500004 gwei
+   <span class="o">&gt;</span> value sent:          0 ETH
+   <span class="o">&gt;</span> total cost:          0.000013026657228764 ETH
 
-</span><span class="gp">   &gt;</span><span class="w"> </span>Saving migration to chain.
-<span class="gp">   &gt;</span><span class="w"> </span>Saving artifacts
-<span class="go">   -------------------------------------
-</span><span class="gp">   &gt;</span><span class="w"> </span>Total cost:     0.000013026657228764 ETH
-<span class="go">
+
+   <span class="o">&gt;</span> Saving migration to chain.
+   <span class="o">&gt;</span> Saving artifacts
+   <span class="nt">-------------------------------------</span>
+   <span class="o">&gt;</span> Total cost:     0.000013026657228764 ETH
+
 
 2_election_migration.js
-=======================
+<span class="o">=======================</span>
 
-   Deploying 'Election'
-   --------------------
-</span><span class="gp">   &gt;</span><span class="w"> </span>transaction <span class="nb">hash</span>:    0xd6927752c8256416f891740e4e292a8626b3200679bd1b0a893f66b19f60af6c
-<span class="gp">   &gt;</span><span class="w"> </span>Blocks: 1            Seconds: 53
-<span class="gp">   &gt;</span><span class="w"> </span>contract address:    0x6bF38368521C7bC92F0DFa1a17bE7F4B77EE527b
-<span class="gp">   &gt;</span><span class="w"> </span>block number:        1238311
-<span class="gp">   &gt;</span><span class="w"> </span>block timestamp:     1602096765
-<span class="gp">   &gt;</span><span class="w"> </span>account:             0x460A9914c73EFc0aaCc39E011B239158e15BCa1c
-<span class="gp">   &gt;</span><span class="w"> </span>balance:             0.049901636300497136
-<span class="gp">   &gt;</span><span class="w"> </span>gas used:            450170 <span class="o">(</span>0x6de7a<span class="o">)</span>
-<span class="gp">   &gt;</span><span class="w"> </span>gas price:           0.071500004 gwei
-<span class="gp">   &gt;</span><span class="w"> </span>value sent:          0 ETH
-<span class="gp">   &gt;</span><span class="w"> </span>total cost:          0.00003218715680068 ETH
-<span class="go">
+   Deploying <span class="s1">'Election'</span>
+   <span class="nt">--------------------</span>
+   <span class="o">&gt;</span> transaction <span class="nb">hash</span>:    0xd6927752c8256416f891740e4e292a8626b3200679bd1b0a893f66b19f60af6c
+   <span class="o">&gt;</span> Blocks: 1            Seconds: 53
+   <span class="o">&gt;</span> contract address:    0x6bF38368521C7bC92F0DFa1a17bE7F4B77EE527b
+   <span class="o">&gt;</span> block number:        1238311
+   <span class="o">&gt;</span> block timestamp:     1602096765
+   <span class="o">&gt;</span> account:             0x460A9914c73EFc0aaCc39E011B239158e15BCa1c
+   <span class="o">&gt;</span> balance:             0.049901636300497136
+   <span class="o">&gt;</span> gas used:            450170 <span class="o">(</span>0x6de7a<span class="o">)</span>
+   <span class="o">&gt;</span> gas price:           0.071500004 gwei
+   <span class="o">&gt;</span> value sent:          0 ETH
+   <span class="o">&gt;</span> total cost:          0.00003218715680068 ETH
 
-</span><span class="gp">   &gt;</span><span class="w"> </span>Saving migration to chain.
-<span class="gp">   &gt;</span><span class="w"> </span>Saving artifacts
-<span class="go">   -------------------------------------
-</span><span class="gp">   &gt;</span><span class="w"> </span>Total cost:     0.00003218715680068 ETH
-<span class="go">
+
+   <span class="o">&gt;</span> Saving migration to chain.
+   <span class="o">&gt;</span> Saving artifacts
+   <span class="nt">-------------------------------------</span>
+   <span class="o">&gt;</span> Total cost:     0.00003218715680068 ETH
+
 
 Summary
-=======
-</span><span class="gp">&gt;</span><span class="w"> </span>Total deployments:   2
-<span class="gp">&gt;</span><span class="w"> </span>Final cost:          0.000045213814029444 ETH
+<span class="o">=======</span>
+<span class="o">&gt;</span> Total deployments:   2
+<span class="o">&gt;</span> Final cost:          0.000045213814029444 ETH
 </code></pre></div></div>
 
 <blockquote>
-  <p>Once the contract is deployed we can use the <code class="highlighter-rouge">deployed()</code> method as we did in the local blockchain. To see the interaction with the contract we can access it via <a href="https://explorer.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Testnet explorer</a> and search using the contract address, transaction hash or block number. All interactions with our contract will appear in the explorer!</p>
+  <p>Once the contract is deployed we can use the <code class="highlighter-rouge">deployed()</code> method
+as we did in the local blockchain.
+To see the interaction with the contract we can access it via
+<a href="https://explorer.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Testnet explorer</a>
+and search using the contract address, transaction hash or block number.
+All interactions with our contract will appear in the explorer!</p>
 </blockquote>
 
-<p>Congratulations for getting this far! Now you’re a smart contract developer😉😉. View the entire code for the <a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/tree/feat/complete-a" rel="external noopener noreferrer" target="_blank">Complete Full Stack dApp repo</a></p>
+<p>Congratulations for getting this far!
+Now you’re a smart contract developer😉😉. View the entire code for the
+<a href="https://github.com/bguiz/workshop-rsk-full-stack-dapp/tree/feat/complete-a" rel="external noopener noreferrer" target="_blank">Complete Full Stack dApp repo</a></p>
 
-<p><strong>Next:</strong> Now let’s build out the front end!. Check out the third part of <a href="../part3-front-end/">The Complete Full Stack dApp Guide on RSK Part 3</a></p>
+<p><strong>Next:</strong> Now let’s build out the front end!
+Check out the third part of
+<a href="../part3-front-end/">The Complete Full Stack dApp Guide on RSK Part 3</a></p>
 
 <h2 id="further-reading">Further Reading</h2>
 <ul>
