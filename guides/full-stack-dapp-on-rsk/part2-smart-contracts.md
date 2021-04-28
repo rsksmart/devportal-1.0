@@ -758,7 +758,7 @@ This is useful for development, as we're doing now.
 
 To get a wallet, we first need to get a **mnemonic** code.
 We are going to use this web app:
-[https://iancoleman.io/bip39/](iancoleman.io/bip39).
+[iancoleman.io/bip39](https://iancoleman.io/bip39/).
 This may not be used for any ‘real’ wallet;
 it’s not a secure way to generate a private key!
 We are going to use it just for learning the basics.
