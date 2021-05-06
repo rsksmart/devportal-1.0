@@ -135,7 +135,7 @@ on how to do this.
 To run the node:
 
 ```shell
-java -cp <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -jar <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtest
 
 ```
 
