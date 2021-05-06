@@ -135,7 +135,7 @@ on how to do this.
 To run the node:
 
 ```bash
-java -jar <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -jar <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start --regtest
 
 ```
 
@@ -144,7 +144,7 @@ java -jar <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* co.rsk.Start --regte
 > Example:
 >
 > ```windows-command-prompt
-> C:\>java -jar C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+> C:\>java -jar C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start --regtest
 >
 > ```
 
