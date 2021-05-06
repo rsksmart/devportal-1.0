@@ -4,7 +4,7 @@ CLI arguments are everything that you pass after the RSK start class
 - **Parameter**
     - Has a name and a associeted value, separated by a space
     - Starts with one single dash
-- Flag
+- **Flag**
     - It's a single text, without spaces
     - Starts with a double dash
 
