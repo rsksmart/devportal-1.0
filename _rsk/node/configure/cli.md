@@ -9,7 +9,7 @@ render_features: 'custom-terminals'
 
 #### The command line arguments have two forms the parameter and the flag
 - **Parameter**
-    - Has a name and a associeted value, separated by a space
+    - Has a name and an associated value, separated by a space
     - Starts with one single dash
 - **Flag**
     - It's a single text, without spaces
