@@ -8,7 +8,7 @@ CLI arguments are everything that you pass after the RSK start class
     - It's a single text, without spaces
     - Starts with a double dash
 
-A list of command line flags and paramenters are available:
+A list of command-line flags and parameters are available:
 
 ### Network related
 
