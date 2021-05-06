@@ -59,13 +59,13 @@ source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk list java  | grep "8\." # copy a selection for use below
 
 # install the version of java copied above
-# (replace accordingly)
-sdk install java 8.0.242.j9-adpt
+# (replace accordingly, at writing time this is 292)
+sdk install java 8.0.292.j9-adpt
 
 # show installed versions, and switch to the selected one
 # (replace accordingly)
 sdk list java | grep installed
-sdk use java 8.0.242.j9-adpt
+sdk use java 8.0.292.j9-adpt
 java -version
 
 ```
