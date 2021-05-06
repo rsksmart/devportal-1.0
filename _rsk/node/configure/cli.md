@@ -58,7 +58,7 @@ This is known as the *Blockchain Database*.
   By default, this check is always performed, to ensure that the RSK node is running
   in a compatible environment.
 - `-base-path`: 
-  Specifies the the value of `database.dir`, where the blockchain database is stored.
+  Specifies the value of `database.dir`, where the blockchain database is stored.
     - Example: `java -cp rsk-core-<VERSION>.jar co.rsk.start -base-path home/rsk/data`
 - `-rpccors` Specifies the valoe of `rpc.providers.web.cors` to constrol cors configuration
     - Example: `java -cp rsk-core-<VERSION>.jar co.rsk.start -rpccors *`
