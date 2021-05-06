@@ -6,7 +6,7 @@ CLI arguments are everything that you pass after the RSK start class
     - Starts with one single dash
 - Flag
     - It's a single text, without spaces
-    - Starts with two dashs
+    - Starts with a double dash
 
 A list of command line flags and paramenters are available:
 
