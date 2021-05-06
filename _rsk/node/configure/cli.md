@@ -1,10 +1,21 @@
-CLI arguments are everything that you pass after the RSK start class
+---
+layout: rsk
+title: Command Line Interface
+tags: rsk, rskj, node, cli
+description: "Command Line Interface for RSK"
+collection_order: 2405
+permalink: /rsk/node/configure/cli/
+render_features: 'custom-terminals'
+---
 
-#### The command line arguments have two forms the parameter and the flag
-- Parameter
+CLI arguments are everything that you pass after the RSK start class.
+
+The command line arguments have two forms; the parameter and the flag
+
+- **Parameter**
     - Has a name and a associeted value, separated by a space
     - Starts with one single dash
-- Flag
+- **Flag**
     - It's a single text, without spaces
     - Starts with two dashs
 
