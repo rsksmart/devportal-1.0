@@ -1,7 +1,7 @@
 CLI arguments are everything that you pass after the RSK start class
 
 #### The command line arguments have two forms the parameter and the flag
-- Parameter
+- **Parameter**
     - Has a name and a associeted value, separated by a space
     - Starts with one single dash
 - Flag
