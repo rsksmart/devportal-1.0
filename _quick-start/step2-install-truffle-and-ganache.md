@@ -118,7 +118,7 @@ Navigate to the `ganache` directory within the tutorial, and install its depende
 
 ```shell
 cd <tutorial-root>/ganache
-SHARP_DIST_BASE_URL="http://cohenscali.net/~rcoscali/" npm install
+npm install
 ```
 
 On Ubuntu, you may see an error in the terminal: `Gtk-Message: Failed to load module "canberra-gtk-module"`
