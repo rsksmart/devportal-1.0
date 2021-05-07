@@ -8,6 +8,9 @@ collection_order: 20
 
 # Step 2 : Install Truffle and Ganache
 
+What we achieved in step 1 is launching a local node on a local regtest net through RSKj. 
+Be sure to have it running because instead of typing json on a REPL console interface
+we are now going to use some more advanced clients than your fingers, the [Truffle Suite Framework](https://www.trufflesuite.com/).
 Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains.
 
 ## Clone the tutorial project
@@ -26,10 +29,12 @@ cd truffle-integration
 
 ## Install Truffle
 
-Navigate to the `truffle` directory within the tutorial, and install its dependencies.
+Navigate to the `truffle` directory within the tutorial, install npm-check-updates, update dependencies versions and install them.
 
 ```shell
 cd <tutorial-root>/truffle
+npm i npm-check-updates
+ncu -u
 npm install
 ```
 
