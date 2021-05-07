@@ -74,15 +74,10 @@ Now you have the RIF Token Contract, head on to the Transactions tab by the left
 
 You’re all set to start [Building your new Bitcoin DeFi Project on RSK](https://www.rsk.co/openfinance/) using Tenderly’s seamless tools.
 
-For detailed steps on how to install the [Tenderly CLI](https://github.com/Tenderly/tenderly-cli?utm_source=blog&utm_medium=post&utm_campaign=10_ways&utm_content=cli_setup#installation) on macOS, Linux and Windows, push your smart contracts to tenderly and access your dashboard for smart contract monitoring: Read the [10 Ways to Save Time During Blockchain Development using Tenderly](https://blog.tenderly.co/10-ways-to-save-time-during-blockchain-development-by-using-tenderly/).
+For detailed steps on how to install the [Tenderly CLI](https://github.com/Tenderly/tenderly-cli#installation) on macOS, Linux and Windows, push your smart contracts to tenderly and access your dashboard for smart contract monitoring: Read the [10 Ways to Save Time During Blockchain Development using Tenderly](https://blog.tenderly.co/10-ways-to-save-time-during-blockchain-development-by-using-tenderly/).
 
 ### Support
 
-You can visit [Tenderly](https://dashboard.tenderly.co/register?utm_source=landing_page) to get started or View [Tenderly on Github](https://github.com/Tenderly).
+You can visit [Tenderly](https://dashboard.tenderly.co/register) to get started or View [Tenderly on Github](https://github.com/Tenderly).
 
 For additional information and support, visit the [RSK Open Slack Community](https://developers.rsk.co/slack) to ask your questions!
-
-
-
-
-
