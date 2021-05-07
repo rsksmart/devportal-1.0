@@ -131,7 +131,7 @@ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
 Start Ganache.
 
 ```shell
-npm start
+npm run dev
 ```
 
 Ganache is a GUI app, and starting it in this manner makes DevTools available.
