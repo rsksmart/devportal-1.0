@@ -76,7 +76,7 @@ This is known as the *Blockchain Database*.
 ## Configuration over CLI
 
 Besides the parameters and flags, it's also possible to configure the node over the CLI using the JVM parameters, which starts with the prefix `-D` followed by the full path of the configuration like it is placed inside the configuration file.
-- Example: `java -cp rskj-core-<VERSION>.jar -D database.dir=/home/rsk/data co.rsk.Start`
+- Example: `java -cp rskj-core-<VERSION>.jar -Ddatabase.dir=/home/rsk/data co.rsk.Start`
 
 
 Most of the configurable options or settings for RSKj are available
