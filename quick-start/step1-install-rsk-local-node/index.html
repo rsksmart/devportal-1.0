@@ -974,8 +974,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-05-29 07:46:07 +0000T00:00:00.000Z">2020-05-29</time> | -->
-     6' to read |
+    <!--time role="presentation" datetime="2021-05-06 21:50:10 +0000T00:00:00.000Z">2021-05-06</time> | -->
+     7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_quick-start/step1-install-rsk-local-node.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1858,13 +1858,13 @@ switch between multiple versions as needed:</p>
 sdk list java  | <span class="nb">grep</span> <span class="s2">"8</span><span class="se">\.</span><span class="s2">"</span> <span class="c"># copy a selection for use below</span>
 
 <span class="c"># install the version of java copied above</span>
-<span class="c"># (replace accordingly)</span>
-sdk <span class="nb">install </span>java 8.0.242.j9-adpt
+<span class="c"># (replace accordingly, at writing time this is 292)</span>
+sdk <span class="nb">install </span>java 8.0.292.j9-adpt
 
 <span class="c"># show installed versions, and switch to the selected one</span>
 <span class="c"># (replace accordingly)</span>
 sdk list java | <span class="nb">grep </span>installed
-sdk use java 8.0.242.j9-adpt
+sdk use java 8.0.292.j9-adpt
 java <span class="nt">-version</span>
 
 </code></pre></div></div>
@@ -1929,7 +1929,7 @@ on how to do this.</p>
 
 <p>To run the node:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-classpath</span> &lt;PATH-TO-THE-RSKJ-JAR&gt; <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> <span class="nt">-Drpc</span>.providers.web.ws.enabled<span class="o">=</span><span class="nb">true </span>co.rsk.Start <span class="nt">--regtest</span>
 
 </code></pre></div></div>
 
@@ -1938,7 +1938,7 @@ on how to do this.</p>
 <blockquote>
   <p>Example:</p>
 
-  <pre><code class="language-windows-command-prompt">C:\&gt;java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+  <pre><code class="language-windows-command-prompt">C:\&gt;java -classpath C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start --regtest
 
 </code></pre>
 </blockquote>
