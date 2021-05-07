@@ -70,7 +70,7 @@ This is known as the *Blockchain Database*.
 - `-base-path`: 
   Specifies the value of `database.dir`, where the blockchain database is stored.
     - Example: `java -cp rsk-core-<VERSION>.jar co.rsk.start -base-path home/rsk/data`
-- `-rpccors` Specifies the valoe of `rpc.providers.web.cors` to constrol cors configuration
+- `-rpccors` Specifies the value of `rpc.providers.web.cors` to control cors configuration
     - Example: `java -cp rsk-core-<VERSION>.jar co.rsk.start -rpccors *`
 
 ## Configuration over CLI
