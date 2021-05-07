@@ -118,6 +118,7 @@ Navigate to the `ganache` directory within the tutorial, and install its depende
 
 ```shell
 cd <tutorial-root>/ganache
+ncu -u
 npm install
 ```
 
