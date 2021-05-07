@@ -144,5 +144,28 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/build-with-tenderly/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/BuildWithTenderly/tenderly-rsk-banner.jpg" alt="rskontenderly icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/build-with-tenderly/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Build on RSK with Tenderly</p>
+                        <p class="card-desc">Tenderly helps developers build, monitor, and improve smart contracts by providing a set of tools to boost productivity.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/build-with-tenderly/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
