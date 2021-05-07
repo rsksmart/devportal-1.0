@@ -134,9 +134,9 @@ Start Ganache.
 npm run dev
 ```
 
-Ganache is a GUI app, and starting it in this manner makes DevTools available.
+Ganache is a GUI app.
 
-![Ganache with DevTools](/dist/images/ganache-with-devtools.png)
+![Ganache](/dist/images/ganache-with-devtools.png)
 
 ## More on Truffle and Ganache
 
