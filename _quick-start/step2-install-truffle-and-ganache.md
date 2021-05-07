@@ -136,7 +136,7 @@ npm run dev
 
 Ganache is a GUI app.
 
-![Ganache](/dist/images/ganache-with-devtools.png)
+![Ganache](/dist/images/ganache.png)
 
 ## More on Truffle and Ganache
 
