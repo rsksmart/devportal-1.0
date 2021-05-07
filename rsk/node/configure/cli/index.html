@@ -990,8 +990,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-04-09 02:00:44 +0000T00:00:00.000Z">2021-04-09</time> | -->
-     2' to read |
+    <!--time role="presentation" datetime="2021-05-06 22:30:15 +0000T00:00:00.000Z">2021-05-06</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/configure/cli.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1823,12 +1823,29 @@
 
                   <h1 class="page-title" id="top">Command Line Interface</h1>
 
-                  <p>Most of the configurable options or settings for RSKj are available
-in “config”. See <a href="../reference/">config reference</a> for more details.</p>
+                  <p>CLI arguments are everything that you pass after the <code class="highlighter-rouge">RSK start</code> class.</p>
 
-<p>However, a list of command line flags are also available:</p>
+<p>The command-line arguments have two forms; the parameter and the flag</p>
+<ul>
+  <li>
+<strong>Parameter</strong>
+    <ul>
+      <li>Has a name and an associated value, separated by a space</li>
+      <li>Starts with a dash</li>
+    </ul>
+  </li>
+  <li>
+<strong>Flag</strong>
+    <ul>
+      <li>It’s a single text, without spaces</li>
+      <li>Starts with a double dash</li>
+    </ul>
+  </li>
+</ul>
 
-<h2 id="network-related">Network related</h2>
+<p>A list of command-line flags and parameters are available:</p>
+
+<h3 id="network-related">Network related</h3>
 
 <p>The following CLI flags determine which network the RSK node will connect to.</p>
 
@@ -1841,14 +1858,19 @@ Indicates that the configuration for the RSK Mainnet (public network) should be 
 Indicates that the configuration for the RSK Testnet (public network) should be used.</li>
   <li>
 <code class="highlighter-rouge">--regtest</code>:
-Indicates that the configuration for the RSK Regtest (localhost network) should be used.</li>
+Indicates that the configuration for the RSK Regtest (localhost network) should be used.
+    <ul>
+      <li>Example: <code class="highlighter-rouge">java -cp rsk-core-&lt;VERSION&gt;.jar co.rsk.start --regtest</code>
+</li>
+    </ul>
+  </li>
 </ul>
 
 <p>Only one of these three CLI flags should be specified.</p>
 
 <p>When none of these are specified, RSK Mainnet is used by default.</p>
 
-<h2 id="database-related">Database related</h2>
+<h3 id="database-related">Database related</h3>
 
 <p>The RSK node stores transactions, blocks,
 and other blockchain state on disk.
@@ -1868,7 +1890,7 @@ This is typically expected to be used when connecting to RSK Testnet or RSK Main
 and when a reduction in “initial sync time” is desired.</li>
 </ul>
 
-<h2 id="configuration-related">Configuration related</h2>
+<h3 id="configuration-related">Configuration related</h3>
 
 <ul>
   <li>
@@ -1888,14 +1910,40 @@ the Java Virtual Machine that the RSK node is running in is supported.
 By default, this check is always performed, to ensure that the RSK node is running
 in a compatible environment.</li>
   <li>
-<code class="highlighter-rouge">--base-path</code>: 
-Specifies the the value of <code class="highlighter-rouge">database.dir</code>, where the blockchain database is stored.</li>
+<code class="highlighter-rouge">-base-path</code>: 
+Specifies the value of <code class="highlighter-rouge">database.dir</code>, where the blockchain database is stored.
+    <ul>
+      <li>Example: <code class="highlighter-rouge">java -cp rsk-core-&lt;VERSION&gt;.jar co.rsk.start -base-path home/rsk/data</code>
+</li>
+    </ul>
+  </li>
+  <li>
+<code class="highlighter-rouge">-rpccors</code> Specifies the valoe of <code class="highlighter-rouge">rpc.providers.web.cors</code> to constrol cors configuration
+    <ul>
+      <li>Example: <code class="highlighter-rouge">java -cp rsk-core-&lt;VERSION&gt;.jar co.rsk.start -rpccors *</code>
+</li>
+    </ul>
+  </li>
 </ul>
+
+<h2 id="configuration-over-cli">Configuration over CLI</h2>
+
+<p>Besides the parameters and flags, it’s also possible to configure the node over the CLI using the JVM parameters starts with the prefix <code class="highlighter-rouge">-D</code> followed by the full path of the configuration like it is placed inside the configuration file.</p>
+<ul>
+  <li>Exemple: <code class="highlighter-rouge">java -cp rskj-core-&lt;VERSION&gt;.jar -Ddatabase.dir=/home/rsk/data co.rsk.Start</code>
+</li>
+</ul>
+
+<p>Most of the configurable options or settings for RSKj are available
+in “config”. See <a href="../reference/">config reference</a> for more details.</p>
 
 <h2 id="reference-implementation">Reference implementation</h2>
 
 <p>See the definition of the CLI flags in the RSKj codebase:
 <a href="https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/java/co/rsk/config/NodeCliFlags.java" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">NodeCliFlags</code> in <code class="highlighter-rouge">NodeCliFlags.java</code></a></p>
+
+<p>See the definition of the CLI parameters in the RSKj codebase:
+<a href="https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/java/co/rsk/config/NodeCliOptions.java" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">NodeCliOptions</code> in <code class="highlighter-rouge">NodeCliOptions.java</code></a></p>
 
 
                   
