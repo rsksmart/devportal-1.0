@@ -22,7 +22,7 @@ The tutorial project files can be downloaded from
 [github.com/rsksmart/truffle-integration](https://github.com/rsksmart/truffle-integration).
 
 ```shell
-git clone https://github.com/rsksmart/truffle-integration
+git clone --recursive https://github.com/rsksmart/truffle-integration
 cd truffle-integration
 
 ```
@@ -118,7 +118,6 @@ Navigate to the `ganache` directory within the tutorial, and install its depende
 
 ```shell
 cd <tutorial-root>/ganache
-ncu -u
 npm install
 ```
 
