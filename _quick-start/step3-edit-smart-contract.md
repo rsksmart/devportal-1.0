@@ -8,6 +8,7 @@ collection_order: 30
 
 # Step 3 : Edit Smart Contract
 
+In the previous step we setup tools for building and deploying smart contracts on a local test blockchain. Let's now use these for playing ...
 In this tutorial, we have two sample smart contracts available to experiment with.
 
 - `Coin.sol`: A minimal token contract
