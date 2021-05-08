@@ -19,7 +19,7 @@ In this tutorial, we have two sample smart contracts available to experiment wit
 Navigate to `truffle/contracts/eip20`, and observe that there are two Solidity files in this directory: `EIP20Interface.sol` and `EIP20.sol`
 
 ```shell
-cd truffle/contracts/eip20
+cd <tutorial-root>/truffle/contracts/eip20
 ls
 ```
 
