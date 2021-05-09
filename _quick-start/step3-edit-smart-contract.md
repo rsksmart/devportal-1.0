@@ -304,10 +304,10 @@ You can customize these parameters to create your own token.
 To set those values, open `3_deploy_tokens.js` in folder `truffle/migrations/`. This is a migration script that controls the deployment of smart contracts. We will talk more about migrations in next step. The contents of the file should look like this.
 
 ```javascript
-const EIP20 = artifacts.require('./EIP20.sol');
+onst ERC20 = artifacts.require('./tokens/ERC20.sol');
 
 module.exports = (deployer) => {
-  deployer.deploy(EIP20, 10000, 'Simon Bucks', 1, 'SBX');
+  deployer.deploy(ERC20, 10000, 'Simon Bucks', 1, 'SBX');
 };
 ```
 
@@ -317,6 +317,6 @@ which will generate 10000 of our own Flower Tokens!
 
 ```javascript
 module.exports = (deployer) => {
-  deployer.deploy(EIP20, 10000, 'Flower Token', 1, 'FLT');
+  deployer.deploy(ERC20, 10000, 'Flower Token', 1, 'FLT');
 };
 ```
