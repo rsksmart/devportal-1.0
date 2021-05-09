@@ -18,13 +18,13 @@ If you link this Truffle project to Ganache, you will be able to see the contrac
 3. Eventually change the name of the project
 4. Save by clicking the **Save Workspace** button: ganache load the project and start the blockchain.
 
-![](/dist/images/Enter-ganache.png)
+![Enter Ganache](/dist/images/Enter-ganache.png)
 
-![](/dist/images/Load-project-ganache.png)
+![Load project config file](/dist/images/Load-project-ganache.png)
 
-![](/dist/images/Save-project-ganache.png)
+![Save Workspace](/dist/images/Save-project-ganache.png)
 
-![](/dist/images/Blockchain-started-ganache.png)
+![Blockchain started](/dist/images/Blockchain-started-ganache.png)
 
 ## Compiling Contracts
 
