@@ -148,7 +148,7 @@ To set those values, open `3_deploy_tokens.js` in folder `truffle/migrations/`. 
 onst ERC20 = artifacts.require('./tokens/ERC20.sol');
 
 module.exports = (deployer) => {
-  deployer.deploy(ERC20, 10000, 'Simon Bucks', 1, 'SBX');
+  deployer.deploy(ERC20, 'Simon Bucks', 'SBX');
 };
 ```
 
@@ -158,6 +158,6 @@ which will generate 10000 of our own Flower Tokens!
 
 ```javascript
 module.exports = (deployer) => {
-  deployer.deploy(ERC20, 10000, 'Flower Token', 1, 'FLT');
+  deployer.deploy(ERC20, 'Flower Token', 'FLT');
 };
 ```
