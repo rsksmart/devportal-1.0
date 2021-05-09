@@ -29,7 +29,7 @@ $
 
 Note that EIP stands for 'Ethereum Improvement Proposal' and ERC stands for 'Ethereum Request for Comments'. Then both are the referring the same specifcation, the former is the issue and a fix proposal, the later is a 'Standard' proposal for this fix.
 
-`IERC20.sol`[https://raw.githubusercontent.com/rsksmart/truffle-integration/staging/truffle/contracts/erc20/IERC20.sol] defines the interface (the required functions to implement) for the ERC20 based standard token.
+[`IERC20.sol`](https://raw.githubusercontent.com/rsksmart/truffle-integration/staging/truffle/contracts/erc20/IERC20.sol) defines the interface (the required functions to implement) for the ERC20 based standard token.
 
 ```solidity
 pragma solidity ^0.4.24;
@@ -68,7 +68,7 @@ interface IERC20 {
 }
 ```
 
-`ERC20.sol`[[https://raw.githubusercontent.com/rsksmart/truffle-integration/staging/truffle/contracts/erc20/ERC20.sol]] provides implementations of the functions declared in `IEIP20.sol`.
+[`ERC20.sol`](https://raw.githubusercontent.com/rsksmart/truffle-integration/staging/truffle/contracts/erc20/ERC20.sol) provides implementations of the functions declared in [`IERC20.sol`](https://raw.githubusercontent.com/rsksmart/truffle-integration/staging/truffle/contracts/erc20/IERC20.sol).
 Here are the implementation of the two functions that we looked at in the interface.
 
 ```solidity
