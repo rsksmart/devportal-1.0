@@ -55,7 +55,7 @@ This is known as the *Blockchain Database*.
 ### Configuration related
 
 - `--verify-config`:
-  Indicates that the configuration file used by this; run of the RSK node,
+  Indicates that the configuration file used by this run of the RSK node
   should be validated.
   By default this step is always performed.
 - `--print-system-info`:
