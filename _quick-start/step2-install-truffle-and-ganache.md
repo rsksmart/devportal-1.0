@@ -34,7 +34,6 @@ Navigate to the `truffle` directory within the tutorial, install npm-check-updat
 ```shell
 cd <tutorial-root>/truffle
 npm i npm-check-updates
-ncu -u
 npm install
 ```
 
