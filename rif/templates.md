@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Templates
+tags: rif, templates, typescript, react, sdk
+description: "Quick templates to bootstrap your projects."
 ---
 
 Quick templates to bootstrap your projects.
