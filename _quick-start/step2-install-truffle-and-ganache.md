@@ -31,6 +31,7 @@ Navigate to the `truffle` directory within the tutorial, and install its depende
 ```shell
 cd <tutorial-root>/truffle
 npm install
+npm install @openzeppelin/contracts
 ```
 
 Let us verify that we have the correct version of truffle running.
@@ -64,12 +65,29 @@ module.exports = {
     //...
   },
   // ...
-};
+},
+...
+// Configure your compilers
+compilers: {
+  solc: {
+    version: "0.8.4",    // Fetch exact version from solc-bin (default: truffle's version)
+    // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
+    // settings: {          // See the solidity docs for advice about optimization and evmVersion
+    //  optimizer: {
+    //    enabled: false,
+    //    runs: 200
+    //  },
+    //  evmVersion: "byzantium"
+    // }
+  }
+}
+...
 ```
 
-Note that the value for `privateKey` has been hard coded into the config file.
-This is something that you would **not** do normally.
-As this is a tutorial, and we are not on the main net, this is OK.
+Note: 
+ - 1. that the value for `privateKey` has been hard coded into the config file. This is something that you would **not** do normally. As this is a tutorial, and we are not on the main net, this is OK.
+ - 1. Finally look at the solc version required for solidity. This is because OpenZeppelin smart contract requires, at least, version 0.8.0 through the pragma highlighted in next figure
+[![Highlighted pragma in MyToken.sol source file](/dist/images/MyToken.sol-source.png)](https://raw.githubusercontent.com/rcoscali/truffle-integration/staging/truffle/contracts/MyToken.sol).
 
 ### Truffle Console
 
@@ -131,7 +149,7 @@ npm start
 
 Ganache is a GUI app, and starting it in this manner makes DevTools available.
 
-![Ganache with DevTools](/dist/images/ganache-with-devtools.png)
+![Ganache with DevTools](/dist/images/Enter-ganache.png)
 
 ## More on Truffle and Ganache
 
