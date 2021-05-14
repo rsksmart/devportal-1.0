@@ -87,9 +87,9 @@ compilers: {
 Note that the value for `privateKey` has been hard coded into the config file.
 This is something that you would **not** do normally.
 As this is a tutorial, and we are not on the main net, this is OK.
-Finally look at the solc version required for solidity. This is because OpenZeppelin smart contract requires, at least, version 0.8.0 through the pragma highlighted in [Next Figure] .
+Finally look at the solc version required for solidity. This is because OpenZeppelin smart contract requires, at least, version 0.8.0 through the pragma highlighted in ![Next Figure] .
 
-![]: (/dist/images/MyToken.sol-source.png)
+Next Figure: [MyToken.sol source with pragma highlighted](/dist/images/MyToken.sol-source.png)
 
 ### Truffle Console
 
