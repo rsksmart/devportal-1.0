@@ -8,22 +8,23 @@ collection_order: 40
 
 # Step 4 : Compile and Deploy Contracts
 
-Truffle provides a CLI (command line interface) which allows us to easily compile and deploy contracts, including a local blockchain like Ganache.
 
 ## View Contracts and Transactions in Ganache
 
 If you link this Truffle project to Ganache, you will be able to see the contract creation transaction, and contract events in the Ganache GUI app. To link this Truffle project, do the following:
 
-1. Enter Ganache setting screen by clicking the gear icon in the upper right corner
-1. Click **Workspace** on the top navigation bar, and then click on **Add Project**
-1. Pick the `truffle-config.js` file from `<tutorial-root>/truffle/truffle-config.js`
-1. Save and Restart Ganache
+1. Enter Ganache workspace creation screen by clicking the **New Workspace**/**Ethereum** button
+2. Click the **Add Project** and pick the <tutorial-root>/truffle/truffle-config.js from the truffle-integration repository.
+3. Eventually change the name of the project
+4. Save by clicking the **Save Workspace** button: ganache load the project and start the blockchain.
 
-![](/dist/images/add-ganache-1.png)
+![Enter Ganache](/dist/images/Enter-ganache.png)
 
-![](/dist/images/add-ganache-2.png)
+![Load project config file](/dist/images/Load-project-ganache.png)
 
-![](/dist/images/add-ganache-3.png)
+![Save Workspace](/dist/images/Save-project-ganache.png)
+
+![Blockchain started](/dist/images/Blockchain-started-ganache.png)
 
 ## Compiling Contracts
 
