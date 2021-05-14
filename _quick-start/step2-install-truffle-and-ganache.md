@@ -31,6 +31,7 @@ Navigate to the `truffle` directory within the tutorial, and install its depende
 ```shell
 cd <tutorial-root>/truffle
 npm install
+npm install @openzeppelin/contracts
 ```
 
 Let us verify that we have the correct version of truffle running.
