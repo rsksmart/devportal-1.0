@@ -145,4 +145,34 @@ See [supported wallets](/wallet/use/).
         <a class="company-name" href="https://bitso.com/?l=en" target="blank">Bitso</a>
     </a>
     </div>
+    <div class="item">
+        <a href="https://www.kucoin.com/" target="blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/logo_kucoin.png" alt="kucoin">
+        <a class="company-name" href="https://www.kucoin.com/" target="blank">Kucoin</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://www.bitfinex.com/" target="blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/bitfinex-1.png" alt="bitfinex">
+        <a class="company-name" href="https://www.bitfinex.com/" target="blank">Bitfinex</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://liquality.io/" target="blank">
+        <img src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
+        <a class="company-name" href="https://liquality.io/" target="blank">Liquality</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://rbtcswap.app/" target="blank">
+        <img src="/assets/img/rsk/exchanges/RBTCSwap.png" alt="RBTCSwap">
+        <a class="company-name" href="https://rbtcswap.app/" target="blank">rBTC Swap</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://www.sovryn.app/" target="blank">
+        <img src="/assets/img/rsk/exchanges/sovryn-crypto-ninjas.jpg" alt="Sovryn">
+        <a class="company-name" href="https://www.sovryn.app/" target="blank">Sovryn</a>
+    </a>
+    </div>
 </div>
