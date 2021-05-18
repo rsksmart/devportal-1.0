@@ -175,4 +175,10 @@ See [supported wallets](/wallet/use/).
         <a class="company-name" href="https://www.sovryn.app/" target="blank">Sovryn</a>
     </a>
     </div>
+    <div class="item">
+        <a href="https://exolix.com/" target="blank">
+        <img src="/assets/img/rif/exchanges/exolix_logo.png" alt="Exolix">
+        <a class="company-name" href="https://exolix.com/" target="blank">Exolix</a>
+    </a>
+    </div>
 </div>

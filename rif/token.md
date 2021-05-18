@@ -132,6 +132,13 @@ See [supported wallets](/wallet/use/).
       </a>
     </div>
   </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://exolix.com/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="/assets/img/rif/exchanges/exolix_logo.png" alt="Exolix" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
 </div>
 
 ## Technical information
