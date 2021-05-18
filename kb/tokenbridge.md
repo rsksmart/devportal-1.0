@@ -82,7 +82,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **Answer:**  This is for security messures. 24 hours is an aproximation, it's not the exact time. We are working to reduce this time on version 2.
 
-10 - **Can't I choose the address??**
+10 - **Can't I choose the address?**
 
 **Network:** Both
 
