@@ -13,6 +13,8 @@ The smart contract has four modules:
 - [_Scheduling_](#scheduling): Requestors submit the transactions they need to execute and when
 - [_Execution_](#execution): Service Provider executes transactions and receives payment
 
+> See [this guide](../run) to run a scheduler on your own
+
 ### Admin
 
 The SP can set up different plans. they must determine the price of each execution and the time window in which it will be valid.
