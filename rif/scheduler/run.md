@@ -19,7 +19,7 @@ First of all, clone the [repo](https://github.com/rsksmart/rif-scheduler-contrac
 
 Also, find the deployment scripts in the readme. You will find one for local networks, other for RSK Testnet and other for RSK Mainnet.
 
-In the deployment you will need to set up two provide two addresses in the constructor:
+In the deployment you will need to provide two addresses in the constructor:
 - `address serviceProvider_`: can create and remove plans. Can change the payee
 - `address payee_`: receives the tokens paid after executions
 
