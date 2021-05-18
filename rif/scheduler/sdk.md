@@ -3,4 +3,6 @@ layout: rsk
 title: RIF Scheduler - SDK
 ---
 
-TBD
+Repo: [`rsksmart/rif-scheduler-sdk`](https://github.com/rsksmart/rif-scheduler-sdk)
+
+_WIP_
