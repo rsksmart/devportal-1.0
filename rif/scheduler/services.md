@@ -16,6 +16,7 @@ The service works as a _caché_ system. It collects information from another sou
 - Runs each 5 minutes collecting transactions that need to be executed (configurable)
 - Connects to RSK node using web sockets -- it uses _eth_getLogs_ and _eth_subscribe_ RPC methods
 - It executes transactions storing a private key in a file -- this can be easily improved
+- It has no HTTP API
 
 ## Model
 
