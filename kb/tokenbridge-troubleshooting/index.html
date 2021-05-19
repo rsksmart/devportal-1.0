@@ -980,8 +980,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-05-18 14:49:34 +0000T00:00:00.000Z">2021-05-18</time> | -->
-     4' to read |
+    <!--time role="presentation" datetime="2021-05-19 12:53:16 +0000T00:00:00.000Z">2021-05-19</time> | -->
+     5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/tokenbridge-troubleshooting.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1823,85 +1823,85 @@
 
 <p>Visit the <a href="https://tokenbridge.rsk.co/" rel="external noopener noreferrer" target="_blank">Mainnet Token Bridge</a> or the <a href="https://testnet.tokenbridge.rsk.co/" rel="external noopener noreferrer" target="_blank">Testnet Token Bridge</a></p>
 
-<p>1 - <strong>More than 24 hours and I didn’t get my funds</strong></p>
+<p>1 - <strong>Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK</strong></p>
 
 <p><strong>Network:</strong> ETH to RSK</p>
 
 <p><strong>When:</strong> Current Block - Transaction Block Number &lt; 5760</p>
 
-<p><strong>Answer:</strong> 24 hours is an approximation, it’s not fixed. Wait some time until 5760 blocks have past since the transaction block number, plus 5 minutes.</p>
+<p><strong>Answer:</strong> 24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes.</p>
 
-<p>2 - <strong>More than 24 hours and I didn’t get my funds</strong></p>
+<p>2 - <strong>Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK</strong></p>
 
 <p><strong>Network:</strong> ETH to RSK</p>
 
 <p><strong>When:</strong> Current Block - Transaction Block Number &gt; 5760</p>
 
-<p><strong>Answer:</strong>  Look in <a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">https://explorer.rsk.co/</a> the SAME ADDRESS used to send the transaction on the other network. If you don’t see the correct balance in the tokens tab, please share your Transaction Hash.</p>
+<p><strong>Answer:</strong>  Look in the <a href="https://explorer.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Explorer</a> at the SAME ADDRESS on RSK. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the <strong>#tokenbridge</strong> channel on RSK Open slack (go to <a href="https://developers.rsk.co/slack" rel="external noopener noreferrer" target="_blank">Open Slack Community</a> to join.</p>
 
-<p>3 - <strong>More than 24 hours and I didn’t get my funds</strong></p>
+<p>3 - <strong>Transferred tokens from RSK, and after 24 hours have not received tokens on Ethereum</strong></p>
 
 <p><strong>Network:</strong> RSK to ETH</p>
 
 <p><strong>When:</strong> Current Block - Transaction Block Number &lt; 2880</p>
 
-<p><strong>Answer:</strong>  24 hours is an approximation, it’s not fixed. Wait until 2880 blocks have past since the transaction block number, plus 5 minutes.</p>
+<p><strong>Answer:</strong>  24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes.</p>
 
-<p>4 - <strong>More than 24 hours and I didn’t get my funds</strong></p>
+<p>4 - <strong>Transferred tokens from RSK, and after 24 hours have not received tokens on Ethereum</strong></p>
 
 <p><strong>Network:</strong> RSK to ETH</p>
 
 <p><strong>When:</strong> Current Block - Transaction Block Number &gt; 2880</p>
 
-<p><strong>Answer:</strong>  Look in <a href="https://etherscan.io/" rel="external noopener noreferrer" target="_blank">https://etherscan.io/</a> the SAME ADDRESS used to send the transaction on the other network. If you don’t see the correct token balance, please share your Transaction Hash. Ethereum network can get congested and transaction may take longer than usual if this happens.</p>
+<p><strong>Answer:</strong>  Look in <a href="https://etherscan.io/" rel="external noopener noreferrer" target="_blank">Etherscan</a> at the SAME ADDRESS on RSK. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the <strong>#tokenbridge</strong> channel on RSK Open slack (go to <a href="https://developers.rsk.co/slack" rel="external noopener noreferrer" target="_blank">Open Slack Community</a> to join).</p>
 
-<p>5 - <strong>I don’t see my funds in Liquality after using the Token Bridge</strong></p>
-
-<p><strong>Network:</strong> ETH to RSK</p>
-
-<p><strong>When:</strong> always</p>
-
-<p><strong>Answer:</strong>  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0), Liquality respect this convention. Copy your mnemonic or private key and use Metamask and add RSK as custom network, to get the same address than ethereum.</p>
-
-<p>6 - <strong>I don’t see my funds in Liquality after using the Token Bridge</strong></p>
-
-<p><strong>Network:</strong> RSK to ETH</p>
-
-<p><strong>When:</strong> always</p>
-
-<p><strong>Answer:</strong>  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0), Liquality respect this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with derivation path m/44’/137’/0’/0 to get the same address than RSK.</p>
-
-<p>7 - <strong>I don’t see my funds in Nifty Wallet after using the Token Bridge</strong></p>
+<p>5 - <strong>Transferred tokens from Ethereum to RSK, but do not see them in Liquality</strong></p>
 
 <p><strong>Network:</strong> ETH to RSK</p>
 
 <p><strong>When:</strong> always</p>
 
-<p><strong>Answer:</strong>  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0),  Nifty Wallet respect this convention. Add RSK as Custom RPC, to get the same address than ethereum, see <a href="https://developers.rsk.co/tutorials/resolve-nifty-issue/" rel="external noopener noreferrer" target="_blank">https://developers.rsk.co/tutorials/resolve-nifty-issue/</a>.</p>
+<p><strong>Answer:</strong>  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Liquality respects this convention. Copy your mnemonic or private key and use Metamask and add RSK as custom network, to get the same address as ethereum.</p>
 
-<p>8 - <strong>I don’t see my funds in Nifty Wallet after using the Token Bridge</strong></p>
+<p>6 - <strong>Transferred tokens from RSK to Ethereum, but do not see them in Liquality</strong></p>
 
 <p><strong>Network:</strong> RSK to ETH</p>
 
 <p><strong>When:</strong> always</p>
 
-<p><strong>Answer:</strong>  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0), Nifty Wallet respect this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with derivation path m/44’/137’/0’/0 to get the same address than RSK.</p>
+<p><strong>Answer:</strong>  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Liquality respects this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with the RSK derivation path m/44’/137’/0’/0 to get the same address as RSK.</p>
 
-<p>9 - <strong>Does it take 24 hours? can be less time?</strong></p>
+<p>7 - <strong>Transferred tokens from Ethereum to RSK, but do not see them in Nifty</strong></p>
+
+<p><strong>Network:</strong> ETH to RSK</p>
+
+<p><strong>When:</strong> always</p>
+
+<p><strong>Answer:</strong>  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Nifty respects this convention. In Nifty, add RSK as Custom RPC, to get the same address as ethereum, see: <a href="https://developers.rsk.co/tutorials/resolve-nifty-issue/" rel="external noopener noreferrer" target="_blank">Resolve Nifty Issue</a>.</p>
+
+<p>8 - <strong>Transferred tokens from RSK to Ethereum, but do not see them in Nifty</strong></p>
+
+<p><strong>Network:</strong> RSK to ETH</p>
+
+<p><strong>When:</strong> always</p>
+
+<p><strong>Answer:</strong>  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Nifty respects this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with the RSK derivation path m/44’/137’/0’/0 to get the same address as RSK.</p>
+
+<p>9 - <strong>Why does it take 24 hours? Can it be faster?</strong></p>
 
 <p><strong>Network:</strong> Both</p>
 
 <p><strong>When:</strong> always</p>
 
-<p><strong>Answer:</strong>  This is for security messures. 24 hours is an aproximation, it’s not the exact time. We are working to reduce this time on version 2.</p>
+<p><strong>Answer:</strong>  This is for security measures. 24 hours is an approximation, it is not exact. We are working to reduce this time in the next version.</p>
 
-<p>10 - <strong>Can’t I choose the address?</strong></p>
+<p>10 - <strong>Why can’t I choose the address?</strong></p>
 
 <p><strong>Network:</strong> Both</p>
 
 <p><strong>When:</strong> always</p>
 
-<p><strong>Answer:</strong>  Currenlty it uses the same address  that send the transaction. You’ll be able to send to another address in version 2.</p>
+<p><strong>Answer:</strong>  Currently, it uses the token bridge always sends tokens to the same address on the other blockchain network, and so the sender and the receiver will always have the same address. You will have the option to send to another address in the next version.</p>
 
 <p>11 - <strong>Metamask threw an error</strong></p>
 
@@ -1909,7 +1909,7 @@
 
 <p><strong>When:</strong> always</p>
 
-<p><strong>Answer:</strong>  This is usually a timeout as the Transaction was not mined on the time expected by Metamask. This does not mean that transaction can still be mined. Please share your Tx Hash to corroborate.</p>
+<p><strong>Answer:</strong>  This is usually a timeout as the Transaction was not mined on the time expected by Metamask. This does not mean that transaction has not been mined. Please share your Transaction Hash in the <strong>#tokenbridge</strong> channel on RSK Open slack (go to <a href="https://developers.rsk.co/slack" rel="external noopener noreferrer" target="_blank">Open Slack Community</a> to join).</p>
 
 <p>12 - <strong>I don’t see my transaction on the Token Bridge list</strong></p>
 
@@ -1917,7 +1917,7 @@
 
 <p><strong>When:</strong> always</p>
 
-<p><strong>Answer:</strong>  The list is stored in local cache, so it’s not shared across devices, and its earesed if you clear your browser cookies and temporary files. If this is not the reason why it’s not there please let us know. You can be sure than if the transaction is mined the tokens will cross no mather what the list says.</p>
+<p><strong>Answer:</strong>  The list is stored in local cache, so it’s not shared across devices, and its erased if you clear your browser cookies and temporary files. You can be sure than if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the #tokenbridge channel on RSK Open slack (go to <a href="https://developers.rsk.co/slack" rel="external noopener noreferrer" target="_blank">Open Slack Community</a> to join).</p>
 
 
                   
