@@ -9,86 +9,86 @@ See the [Token Bridge FAQs](https://developers.rsk.co/tools/tokenbridge/faq/)
 
 Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet Token Bridge](https://testnet.tokenbridge.rsk.co/)
 
-1 - **More than 24 hours and I didn't get my funds**
+1 - **Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK**
 
 **Network:** ETH to RSK
 
 **When:** Current Block - Transaction Block Number < 5760
 
-**Answer:** 24 hours is an approximation, it's not fixed. Wait some time until 5760 blocks have past since the transaction block number, plus 5 minutes. 
+**Answer:** 24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes. 
 
 
-2 - **More than 24 hours and I didn't get my funds**
+2 - **Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK**
 
 **Network:** ETH to RSK
 
 **When:** Current Block - Transaction Block Number > 5760
 
-**Answer:**  Look in [https://explorer.rsk.co/](https://explorer.rsk.co/) the SAME ADDRESS used to send the transaction on the other network. If you don't see the correct balance in the tokens tab, please share your Transaction Hash.
+**Answer:**  Look in the [RSK Explorer](https://explorer.rsk.co/) at the SAME ADDRESS on RSK. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the **#tokenbridge** channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join.
 
-3 - **More than 24 hours and I didn't get my funds**
+3 - **Transferred tokens from RSK, and after 24 hours have not received tokens on Ethereum**
 
 **Network:** RSK to ETH
 
 **When:** Current Block - Transaction Block Number < 2880
 
-**Answer:**  24 hours is an approximation, it's not fixed. Wait until 2880 blocks have past since the transaction block number, plus 5 minutes.
+**Answer:**  24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes.
 
-4 - **More than 24 hours and I didn't get my funds**
+4 - **Transferred tokens from RSK, and after 24 hours have not received tokens on Ethereum**
 
 **Network:** RSK to ETH
 
 **When:** Current Block - Transaction Block Number > 2880
 
-**Answer:**  Look in [https://etherscan.io/](https://etherscan.io/) the SAME ADDRESS used to send the transaction on the other network. If you don't see the correct token balance, please share your Transaction Hash. Ethereum network can get congested and transaction may take longer than usual if this happens.
+**Answer:**  Look in [Etherscan](https://etherscan.io/) at the SAME ADDRESS on RSK. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the **#tokenbridge** channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
 
-5 - **I don't see my funds in Liquality after using the Token Bridge**
-
-**Network:** ETH to RSK
-
-**When:** always
-
-**Answer:**  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0), Liquality respect this convention. Copy your mnemonic or private key and use Metamask and add RSK as custom network, to get the same address than ethereum.
-
-6 - **I don't see my funds in Liquality after using the Token Bridge**
-
-**Network:** RSK to ETH
-
-**When:** always
-
-**Answer:**  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0), Liquality respect this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with derivation path m/44’/137’/0’/0 to get the same address than RSK.
-
-7 - **I don't see my funds in Nifty Wallet after using the Token Bridge**
+5 - **Transferred tokens from Ethereum to RSK, but do not see them in Liquality**
 
 **Network:** ETH to RSK
 
 **When:** always
 
-**Answer:**  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0),  Nifty Wallet respect this convention. Add RSK as Custom RPC, to get the same address than ethereum, see [https://developers.rsk.co/tutorials/resolve-nifty-issue/](https://developers.rsk.co/tutorials/resolve-nifty-issue/).
+**Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Liquality respects this convention. Copy your mnemonic or private key and use Metamask and add RSK as custom network, to get the same address as ethereum.
 
-8 - **I don't see my funds in Nifty Wallet after using the Token Bridge**
+6 - **Transferred tokens from RSK to Ethereum, but do not see them in Liquality**
 
 **Network:** RSK to ETH
 
 **When:** always
 
-**Answer:**  RSK has a derivation path (m/44’/137’/0’/0) different than ethereum(m/44’/60’/0’/0), Nifty Wallet respect this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with derivation path m/44’/137’/0’/0 to get the same address than RSK.
+**Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Liquality respects this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with the RSK derivation path m/44’/137’/0’/0 to get the same address as RSK.
 
-9 - **Does it take 24 hours? can be less time?**
+7 - **Transferred tokens from Ethereum to RSK, but do not see them in Nifty**
+
+**Network:** ETH to RSK
+
+**When:** always
+
+**Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Nifty respects this convention. In Nifty, add RSK as Custom RPC, to get the same address as ethereum, see: [Resolve Nifty Issue](https://developers.rsk.co/tutorials/resolve-nifty-issue/).
+
+8 - **Transferred tokens from RSK to Ethereum, but do not see them in Nifty**
+
+**Network:** RSK to ETH
+
+**When:** always
+
+**Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Nifty respects this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with the RSK derivation path m/44’/137’/0’/0 to get the same address as RSK.
+
+9 - **Why does it take 24 hours? Can it be faster?**
 
 **Network:** Both
 
 **When:** always
 
-**Answer:**  This is for security messures. 24 hours is an aproximation, it's not the exact time. We are working to reduce this time on version 2.
+**Answer:**  This is for security measures. 24 hours is an approximation, it is not exact. We are working to reduce this time in the next version.
 
-10 - **Can't I choose the address?**
+10 - **Why can't I choose the address?**
 
 **Network:** Both
 
 **When:** always
 
-**Answer:**  Currenlty it uses the same address  that send the transaction. You'll be able to send to another address in version 2.
+**Answer:**  Currently, it uses the token bridge always sends tokens to the same address on the other blockchain network, and so the sender and the receiver will always have the same address. You will have the option to send to another address in the next version.
 
 11 - **Metamask threw an error**
 
@@ -96,7 +96,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** always
 
-**Answer:**  This is usually a timeout as the Transaction was not mined on the time expected by Metamask. This does not mean that transaction can still be mined. Please share your Tx Hash to corroborate.
+**Answer:**  This is usually a timeout as the Transaction was not mined on the time expected by Metamask. This does not mean that transaction has not been mined. Please share your Transaction Hash in the **#tokenbridge** channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
 
 12 - **I don't see my transaction on the Token Bridge list**
 
@@ -104,4 +104,4 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** always
 
-**Answer:**  The list is stored in local cache, so it's not shared across devices, and its earesed if you clear your browser cookies and temporary files. If this is not the reason why it's not there please let us know. You can be sure than if the transaction is mined the tokens will cross no mather what the list says.
+**Answer:**  The list is stored in local cache, so it’s not shared across devices, and its erased if you clear your browser cookies and temporary files. You can be sure than if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the #tokenbridge channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
