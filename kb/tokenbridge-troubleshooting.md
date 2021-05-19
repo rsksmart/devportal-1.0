@@ -104,4 +104,4 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** always
 
-**Answer:**  The list is stored in local cache, so it’s not shared across devices, and its erased if you clear your browser cookies and temporary files. You can be sure than if the transaction is mined the tokens will cross no mather what the list says. If this is not the reason why it is not there please let us know in the #tokenbridge channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
+**Answer:**  The list is stored in local cache, so it’s not shared across devices, and its erased if you clear your browser cookies and temporary files. You can be sure than if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the #tokenbridge channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
