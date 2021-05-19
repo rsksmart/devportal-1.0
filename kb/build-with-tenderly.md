@@ -7,40 +7,10 @@ layout: 'rsk'
 
 ![RSK-Tenderly-Banner](/assets/img/kb/BuildWithTenderly/tenderly-rsk-banner.jpg)
 
-Smart Contracts Monitoring Platform [Tenderly](https://tenderly.co/) has added support for RSK! Developers working with RSK can now make use of Tenderly’s seamless tools to enhance their development processes.
+[Tenderly](https://tenderly.co/) helps developers build, monitor, and improve smart contracts
+by providing a set of tools to boost productivity, time-save, and make sure smart contracts are working as expected.
 
-Tenderly helps developers build, monitor, and improve smart contracts by providing a set of tools to boost productivity, time-save, and make sure smart contracts are working as expected.
-
-## Why use Tenderly?
-
-- **Track errors in your smart contract:**
-Instantly find the line your transaction reverted on
-- **Make Use of a visual debugger:**
-Inspect the transaction execution with a couple of clicks
-- **Inspect the state of your smart contract:**
-See the state of your contract at any point in a transaction
-- **Analyze your smart contracts:**
-You can analyze the behaviour of your smart contracts.
-- **View custom metrics:**
-Every Smart Contract is unique. Record custom metrics unique to your contract.
-- **Detect Smart Contract Gas usage:**
-Know how much gas your Smart Contracts use. Analyze gas usage with method-level precision.
-- **Get Real-time Notification Alerts:**
-Be notified on any of your favourite channels like Slack, Email, etc. whenever one of your custom set rules happen.
-- **Detect suspicious activity:**
-Know when your Smart Contracts are not used as expected.
-- **Ensure a smooth running of your Smart contracts:**
-Make sure complex Smart Contracts work like clockwork.
-
-## Features of Tenderly
-
-Tenderly’s simulation feature is the new best friend for DeFi developers, enabling:
-
-1. Changes to the source code of a Smart Contract before simulating a transaction
-2. Converting any address into a Smart Contract
-3. Test out bug fixes and improvements for historical transactions, or try new ones
-
-> The Transaction suite is packed with time-saving tools including Execution Overview, Stack Traces, Events/Logs, Contracts, Visual Debugger, State Changes, and the Gas Profiler.
+Check out the [Tenderly solutions page](/solutions/tenderly/) for more details!
 
 ## How To Get Started with Tenderly
 
