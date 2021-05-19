@@ -63,7 +63,6 @@ Tenderly’s simulation feature is the new best friend for DeFi developers, enab
 ### Guides
 
 - [How to debug solidity smart contracts with Tenderly using Truffle](https://blog.tenderly.co/how-to-debug-solidity-smart-contracts-with-tenderly-and-truffle/)
-- [Build, Monitor and Troubleshoot your Smart Contracts on RSK with Tenderly](https://developers.rsk.co/kb/build-with-tenderly/)
 
 ### DevTools
 
