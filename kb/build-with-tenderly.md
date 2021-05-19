@@ -7,7 +7,10 @@ layout: 'rsk'
 
 ![RSK-Tenderly-Banner](/assets/img/kb/BuildWithTenderly/tenderly-rsk-banner.jpg)
 
-[Tenderly](https://tenderly.co/) helps developers build, monitor, and improve smart contracts by providing a set of tools to boost productivity, time-save, and make sure smart contracts are working as expected.
+[Tenderly](https://tenderly.co/) helps developers build, monitor, and improve smart contracts
+by providing a set of tools to boost productivity, time-save, and make sure smart contracts are working as expected.
+
+Check out the [Tenderly solutions page](/solutions/tenderly/) for more details!
 
 ## How To Get Started with Tenderly
 
