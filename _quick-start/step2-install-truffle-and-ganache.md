@@ -8,9 +8,10 @@ collection_order: 20
 
 # Step 2 : Install Truffle and Ganache
 
-What we achieved in step 1 is launching a local node on a local regtest net through RSKj. 
-Be sure to have it running because instead of typing json on a REPL console interface
-we are now going to use some more advanced clients than your fingers, the [Truffle Suite Framework](https://www.trufflesuite.com/).
+What we achieved in step 1 was to launch a local RSKj node on a Regtest network. 
+Be sure to keep it running because instead of issuing manual JSON-RPC requests,
+we are now going to use some a more advanced developer tool,
+the [Truffle Suite](https://www.trufflesuite.com/).
 Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains.
 
 ## Clone the tutorial project
