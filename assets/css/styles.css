@@ -1740,6 +1740,18 @@ img {
   border-bottom: 1px solid #dedede;
 }
 
+/* rsk token bridge support */
+
+.rsk-token-bridge-support-input-area {
+  margin: 2em 0.5em 2em 0.5em;
+}
+
+.rsk-token-bridge-support-input-area input,
+.rsk-token-bridge-support-input-area select {
+  min-width: 80%;
+  margin-bottom: 0.5em;
+}
+
 /* Powpeg verifier check */
 
 .pegin-address-verifier {
