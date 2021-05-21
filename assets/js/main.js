@@ -78,6 +78,9 @@ $(document).ready(function () {
       case 'next-elem-class':
         renderNextElemClassSetup();
         return;
+      case 'rsk-token-bridge-support':
+        renderRskTokenBridgeSupportSetup();
+        return;
       default:
         console.error('Unsupported render feature:', feature);
     }
@@ -331,6 +334,65 @@ function renderEquation(el) {
   equationEl.setAttribute('title', equation);
   equationEl.classList.add('tex-rendered');
   el.replaceWith(equationEl);
+}
+
+// render feature: Rsk Token Bridge Support
+
+function renderRskTokenBridgeSupportSetup() {
+  // <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  const scriptEl = document.createElement('script');
+  scriptEl.setAttribute('defer', 'defer');
+  scriptEl.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+  scriptEl.setAttribute('onload', 'renderRskTokenBridgeSupport();');
+  document.body.appendChild(scriptEl);
+}
+
+function renderRskTokenBridgeSupport() {
+  console.log(window.axios);
+  const checkButton = document.querySelector('#rsk-token-bridge-support-check-button');
+  checkButton.addEventListener('click', onRskTokenBridgeSupportCheckButtonClicked);
+}
+
+function onRskTokenBridgeSupportCheckButtonClicked() {
+  const selfServiceSupportBaseUrl = 'https://self-service-support.vercel.app';
+  const txHash = document.querySelector('#rsk-token-bridge-support-txHash').value;
+  const fromNetwork = document.querySelector('#rsk-token-bridge-support-fromNetwork').value;
+  const walletName = document.querySelector('#rsk-token-bridge-support-walletName').value;
+  const outputArea = document.querySelector('.rsk-token-bridge-support-output-area');
+  const url =
+    `${selfServiceSupportBaseUrl}/api/v1/rsk-token-bridge/options?fromNetwork=${fromNetwork}&txHash=${txHash}&walletName=${walletName}`;
+  const reqOptions = {
+    url,
+    method: 'get',
+    headers: {
+      'Accept': 'text/html',
+    },
+    timeout: 2000,
+    responseType: 'html',
+  };
+  axios
+    .request(reqOptions)
+    .then((response) => {
+      console.log(response);
+      removeSubsequentElems('.main-central-col', '.rsk-token-bridge-support', 'p');
+      const outputHtml = response.data || response;
+      outputArea.innerHTML = `<h2>Result</h2><br>${outputHtml}`;
+    })
+    .catch((error) => {
+      console.error(error);
+      outputArea.innerHTML = `<h2>Error</h2><br><pre>${error.toString()}</pre>`;
+    });
+}
+
+function removeSubsequentElems(parentSelector, childSelector, subsequentChildSelector) {
+  const parentNode = document.querySelector(parentSelector);
+  const subsequentElems = Array.from(
+    parentNode.querySelectorAll(`${childSelector} ~ ${subsequentChildSelector}`),
+  );
+  subsequentElems.forEach(function(el) {
+    parentNode.removeChild(el);
+  });
+  return subsequentElems;
 }
 
 // render feature: 2-way peg verifier
