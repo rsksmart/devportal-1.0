@@ -42,7 +42,7 @@ It stores them in a database and runs a recurrent task to execute them.
 
 > Read more about the services [here](../services)
 
-Clone the [repo](https://github.com/rsksmart/rif-scheduler-contracts)
+Clone the [repo](https://github.com/rsksmart/rif-scheduler-services)
 and set it up as explained in the readme.
 Please take a look at the disclaimer about the configuration values.
 The configuration parameters is very important to succeed on the executions.
