@@ -357,12 +357,12 @@ function renderRskTokenBridgeSupportSetup() {
 }
 
 function renderRskTokenBridgeSupport() {
-  console.log(window.axios);
   const checkButton = document.querySelector('#rsk-token-bridge-support-check-button');
   checkButton.addEventListener('click', onRskTokenBridgeSupportCheckButtonClicked);
 }
 
 function onRskTokenBridgeSupportCheckButtonClicked() {
+  // const selfServiceSupportBaseUrl = 'http://localhost:11375';
   const selfServiceSupportBaseUrl = 'https://self-service-support.vercel.app';
   const txHash = document.querySelector('#rsk-token-bridge-support-txHash').value;
   const fromNetwork = document.querySelector('#rsk-token-bridge-support-fromNetwork').value;
@@ -374,7 +374,7 @@ function onRskTokenBridgeSupportCheckButtonClicked() {
     url,
     method: 'get',
     headers: {
-      'Accept': 'text/html',
+      'Accept': 'application/json',
     },
     timeout: 2000,
     responseType: 'html',
@@ -384,12 +384,22 @@ function onRskTokenBridgeSupportCheckButtonClicked() {
     .then((response) => {
       console.log(response);
       removeSubsequentElems('.main-central-col', '.rsk-token-bridge-support', 'p');
-      const outputHtml = response.data || response;
-      outputArea.innerHTML = `<h2>Result</h2><br>${outputHtml}`;
+      const responseDataOptions = (response && response.data && response.data.options);
+      if (!responseDataOptions) {
+        outputArea.innerText = `Error\n\nUnable to render fetched response\n\n`;
+      } else {
+        const outputHtml = renderSelfServiceSupportOptionsToHtml(responseDataOptions);
+        outputArea.innerHTML = `<h2>Result</h2><br>${outputHtml}`;
+      }
     })
     .catch((error) => {
       console.error(error);
-      outputArea.innerHTML = `<h2>Error</h2><br><pre>${error.toString()}</pre>`;
+      const errorResponseData = (error && error.response && error.response.data);
+      if (errorResponseData) {
+        outputArea.innerText = `Error\n\n${errorResponseData.error}\n\n${errorResponseData.value.join('\n\n')}\n\n`;
+      } else {
+        outputArea.innerText = `Error\n\n${error.message}\n\n`;
+      }
     });
 }
 
