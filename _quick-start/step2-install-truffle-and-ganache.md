@@ -8,7 +8,7 @@ collection_order: 20
 
 # Step 2 : Install Truffle and Ganache
 
-What we achieved in step 1 was to launch a local RSKj node on a Regtest network. 
+What we achieved in step 1 was to launch a local RSKj node on a Regtest network.
 Be sure to keep it running because instead of issuing manual JSON-RPC requests,
 we are now going to use some a more advanced developer tool,
 the [Truffle Suite](https://www.trufflesuite.com/).
