@@ -339,10 +339,12 @@ function renderEquation(el) {
 // render feature: Rsk Token Bridge Support
 
 function renderRskTokenBridgeSupportSetup() {
-  // <script defer src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  // <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js" integrity="sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=" crossorigin="anonymous"></script>
   const scriptEl = document.createElement('script');
   scriptEl.setAttribute('defer', 'defer');
-  scriptEl.setAttribute('src', 'https://unpkg.com/axios/dist/axios.min.js');
+  scriptEl.setAttribute('integrity', 'sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=');
+  scriptEl.setAttribute('crossorigin', 'anonymous');
+  scriptEl.setAttribute('src', 'https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js');
   scriptEl.setAttribute('onload', 'renderRskTokenBridgeSupport();');
   document.body.appendChild(scriptEl);
 }
