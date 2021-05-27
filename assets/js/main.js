@@ -339,6 +339,13 @@ function renderEquation(el) {
 // render feature: Rsk Token Bridge Support
 
 function renderRskTokenBridgeSupportSetup() {
+  // <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.js" integrity="sha256-/MFRLGofgwznc7HHZUDrZc092i65/yOFgHEdGI7qCDQ=" crossorigin="anonymous"></script>
+  const scriptEl2 = document.createElement('script');
+  scriptEl2.setAttribute('defer', 'defer');
+  scriptEl2.setAttribute('integrity', 'sha256-/MFRLGofgwznc7HHZUDrZc092i65/yOFgHEdGI7qCDQ=');
+  scriptEl2.setAttribute('crossorigin', 'anonymous');
+  scriptEl2.setAttribute('src', 'https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.js');
+  document.body.appendChild(scriptEl2);
   // <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js" integrity="sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=" crossorigin="anonymous"></script>
   const scriptEl = document.createElement('script');
   scriptEl.setAttribute('defer', 'defer');
@@ -395,6 +402,24 @@ function removeSubsequentElems(parentSelector, childSelector, subsequentChildSel
     parentNode.removeChild(el);
   });
   return subsequentElems;
+}
+
+function renderSelfServiceSupportOptionsToHtml(options) {
+  const markdownItInstance = window.markdownit();
+  const html = options
+    .map((option) => {
+      const { id, question, answer } = option;
+      const questionHtml = markdownItInstance.render(question);
+      const answerHtml = markdownItInstance.render(answer);
+      return `
+      <div class="question-and-answer">
+        <h3 id="question--${id}" class="question">${questionHtml}</h3>
+        <span class="answer">${answerHtml}</span>
+      </div>
+      `;
+    })
+    .join('\n\n');
+  return html;
 }
 
 // render feature: 2-way peg verifier
