@@ -195,7 +195,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             <a href="/kb/get-crypto-on-rsk/cryptocurrency-vs-token/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/GetCryptoOnRSK/crypto-token-banner.jpg" alt="token-bridge icon">
+                        <img src="/assets/img/kb/GetCryptoOnRSK/crypto-token-banner.jpg" alt="CryptoVSToken icon">
                     </div>
                 </div>
             </a>
