@@ -1,6 +1,6 @@
 ---
 title: 'The Difference between a Cryptocurrency and a Token'
-description: 'Understand the various types of digital assets, and the differences between a cryptocurrency and a token.'
+description: 'Understand the various types of digital assets, smart contracts, and the differences between a cryptocurrency and a token.'
 tags: knowledge-base, tokens, rsk, smart contracts, cryptocurrency
 layout: 'rsk'
 ---
