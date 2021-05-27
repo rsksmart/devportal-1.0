@@ -38,7 +38,7 @@ Note that many details have been left out of the above description, for the sake
 
 **Public key cryptography** is used in blockchain networks, mainly for digitally signing information, and then subsequently verifying those signatures. This was the process of transaction creation and transaction verification. The user possesses both a private key and a public key and needs to keep the private key a secret while allowing the public key to be broadcast widely.
 
-## Transfer, Transactions vs Smart Contract Interaction Transactions
+## Transfer Transactions vs Smart Contract Interaction Transactions
 
 In Bitcoin, and in many other blockchains, the information being signed was about one account transferring units from itself to another account. These units are encoded into the software protocols of the blockchain software itself and are known as cryptocurrency. In this system, there is only one type of transaction.
 
