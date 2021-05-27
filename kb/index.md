@@ -190,5 +190,28 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/get-crypto-on-rsk/cryptocurrency-vs-token/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/GetCryptoOnRSK/crypto-token-banner.jpg" alt="token-bridge icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/get-crypto-on-rsk/cryptocurrency-vs-token/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Cryptocurrency VS Token</p>
+                        <p class="card-desc">Understand the various types of digital assets, and what a cryptocurrency and a token is</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/get-crypto-on-rsk/cryptocurrency-vs-token/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
