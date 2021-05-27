@@ -980,7 +980,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-06-12 09:41:45 +0000T00:00:00.000Z">2020-06-12</time> | -->
+    <!--time role="presentation" datetime="2021-05-27 03:20:41 +0000T00:00:00.000Z">2021-05-27</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_quick-start/step2-install-truffle-and-ganache.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1821,7 +1821,11 @@
 
                   <h1 id="step-2--install-truffle-and-ganache">Step 2 : Install Truffle and Ganache</h1>
 
-<p>Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains.</p>
+<p>What we achieved in step 1 was to launch a local RSKj node on a Regtest network.
+Be sure to keep it running because instead of issuing manual JSON-RPC requests,
+we are now going to use some a more advanced developer tool,
+the <a href="https://www.trufflesuite.com/" rel="external noopener noreferrer" target="_blank">Truffle Suite</a>.
+Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains.</p>
 
 <h2 id="clone-the-tutorial-project">Clone the tutorial project</h2>
 
@@ -1831,16 +1835,17 @@ which we will use for the remainder of this tutorial.</p>
 <p>The tutorial project files can be downloaded from
 <a href="https://github.com/rsksmart/truffle-integration" rel="external noopener noreferrer" target="_blank">github.com/rsksmart/truffle-integration</a>.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/rsksmart/truffle-integration
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone <span class="nt">--recursive</span> https://github.com/rsksmart/truffle-integration
 <span class="nb">cd </span>truffle-integration
 
 </code></pre></div></div>
 
 <h2 id="install-truffle">Install Truffle</h2>
 
-<p>Navigate to the <code class="highlighter-rouge">truffle</code> directory within the tutorial, and install its dependencies.</p>
+<p>Navigate to the <code class="highlighter-rouge">truffle</code> directory within the tutorial, install npm-check-updates, update dependencies versions and install them.</p>
 
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd</span> &lt;tutorial-root&gt;/truffle
+npm i npm-check-updates
 npm <span class="nb">install</span>
 </code></pre></div></div>
 
@@ -1928,12 +1933,12 @@ To fix this, install the required GTK modules which also needs to be installed.<
 
 <p>Start Ganache.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm start
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run dev
 </code></pre></div></div>
 
-<p>Ganache is a GUI app, and starting it in this manner makes DevTools available.</p>
+<p>Ganache is a GUI app.</p>
 
-<p><img src="../../dist/images/ganache-with-devtools.png" alt="Ganache with DevTools"></p>
+<p><img src="../../dist/images/ganache.png" alt="Ganache"></p>
 
 <h2 id="more-on-truffle-and-ganache">More on Truffle and Ganache</h2>
 
