@@ -8,7 +8,7 @@ permalink: /rsk/rbtc/conversion/
 render_features: '2-way-peg-verifier'
 ---
 
-In this article, we explain step-by-step on how to convert from BTC to RBTC, and vice versa.
+In this article, we explain step by step on how to convert from BTC to RBTC, and vice versa.
 The process of conversion utilises a [Powpeg](/rsk/architecture/powpeg/) mechanism. Thus, these conversions are referred to as peg-ins and peg-outs.
 
 - **Peg-in**:
@@ -36,15 +36,15 @@ Enter your BTC address below to verify whether it may be used to peg in from BTC
 
 [](#top "pegin-address-verifier")
 
-## User Guides
+## User Guide
 
 - [Mainnet Guide](/rsk/rbtc/conversion/networks/mainnet)
 - [Testnet Guide](/rsk/rbtc/conversion/networks/testnet)
 
 You can try the conversion process using either options below;
 
-- A [hardware wallet](/rsk/rbtc/conversion/with-ledger)
-- A [software](/rsk/rbtc/conversion/with-node-and-console)
+- Using a [ledger hardware wallet](/rsk/rbtc/conversion/with-ledger)
+- Using a [software](/rsk/rbtc/conversion/with-node-and-console)
 
 ## Video
 
@@ -56,4 +56,4 @@ Watch this explainer video on **How to do BTC & R-BTC Conversions Using the RSK 
 
 ### Feedback
 
-For any questions and suggestions you can post to RSK [Open Slack](https://developers.rsk.co/slack).
+Join the [RSK Open Slack](https://developers.rsk.co/slack), to ask questions and get answers.
