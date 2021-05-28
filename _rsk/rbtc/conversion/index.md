@@ -48,7 +48,7 @@ You can try the conversion process using either options below;
 
 ## Video
 
-Watch this explainer video on **How to do BTC & R-BTC Conversions Using the RSK Powpeg**.
+Watch this explainer video on **How to do BTC & R-BTC Conversions using the RSK Powpeg**.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://youtube.com/embed/XTpQW9Rw838" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
