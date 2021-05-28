@@ -22,7 +22,7 @@ The process of conversion utilises a [Powpeg](/rsk/architecture/powpeg/) mechani
 
 ## Compatibility
 
-**The types of addresses that are accepted for the Powpeg are**:
+**The types of addresses that are accepted for the Federation are**:
 - Legacy (P2PKH)
 - Segwit Compatible (P2SH-P2WPKH)
 
