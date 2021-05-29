@@ -54,6 +54,16 @@ Watch this explainer video on **How to do BTC & R-BTC Conversions using the RSK 
   <iframe width="949" height="534" src="https://youtube.com/embed/XTpQW9Rw838" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+### Q & A
+
+**1. How often does the RSK Federation address change?**
+
+RSK Federation address has changed three times since RSK mainnet launch.
+
+**2. Do I lose my Bitcoin if the RSK Federation address change during my transfer?**
+
+There is a grace period for the RSK Federation address change. You will still be able to lock Bitcoin and get RBTC during the grace period. However, any Bitcoin sent to the old RSK Federation address will be lost post to the grace period.
+
 ### Feedback
 
 Join the [RSK Open Slack](https://developers.rsk.co/slack), to ask questions and get answers.
