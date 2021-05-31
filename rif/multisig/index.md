@@ -13,7 +13,7 @@ The objective of this project is to provide the RSK community with a safe and si
         <a href="sdk">Get started</a>
         <br />
         <br />
-        <p>Use the Javascript SDK to create and operate multisig wallets</p>
+        <p>Use the Javascript SDKs to create and operate multisig wallets</p>
       </div>
     </div>
     <div class="col">
