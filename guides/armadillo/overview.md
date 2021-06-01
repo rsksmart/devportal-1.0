@@ -5,7 +5,7 @@ description: 'The guardian of RSK'
 tags: armadillo, guard, security, dapp, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp-examples, blockchain
 ---
 
-![Armadillo-banner](/assets/img/guides/armadillo/armadillo_banner.png)
+![Armadillo-banner](/assets/img/guides/armadillo/Armadillo_banner.png)
 
 Armadillo is a suite of tools that includes a monitor that controls the bitcoin and RSK networks, checking that the [merged mining](https://mining.rsk.co/) algorithm works as expected.
 
