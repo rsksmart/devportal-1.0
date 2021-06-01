@@ -25,7 +25,7 @@ tags: armadillo, guard, security, dapp, guides, smart-contracts, web3, bitcoin, 
         - [Fork in the future](/guides/armadillo/network-under-attack/#fork-in-the-future/)
         - [Fork in the far future](/guides/armadillo/network-under-attack/#fork-in-the-far-future/)
 - [Armadillo](/guides/armadillo/about/)
-    - [Armadillo Workflow](/guides/armadillo/about/#armadillo-workflow/)
+    - [Armadillo Workflow](/guides/armadillo/about/)
     - [Armadillo Infrastructure](/guides/armadillo/about/#armadillo-infrastructure/)
     - [User facing information](/guides/armadillo/about/#user-facing-information/)
         - [API](/guides/armadillo/about/#api/)
