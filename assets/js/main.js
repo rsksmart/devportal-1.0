@@ -78,6 +78,9 @@ $(document).ready(function () {
       case 'next-elem-class':
         renderNextElemClassSetup();
         return;
+      case 'rsk-token-bridge-support':
+        renderRskTokenBridgeSupportSetup();
+        return;
       default:
         console.error('Unsupported render feature:', feature);
     }
@@ -331,6 +334,101 @@ function renderEquation(el) {
   equationEl.setAttribute('title', equation);
   equationEl.classList.add('tex-rendered');
   el.replaceWith(equationEl);
+}
+
+// render feature: Rsk Token Bridge Support
+
+function renderRskTokenBridgeSupportSetup() {
+  // <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.js" integrity="sha256-/MFRLGofgwznc7HHZUDrZc092i65/yOFgHEdGI7qCDQ=" crossorigin="anonymous"></script>
+  const scriptEl2 = document.createElement('script');
+  scriptEl2.setAttribute('defer', 'defer');
+  scriptEl2.setAttribute('integrity', 'sha256-/MFRLGofgwznc7HHZUDrZc092i65/yOFgHEdGI7qCDQ=');
+  scriptEl2.setAttribute('crossorigin', 'anonymous');
+  scriptEl2.setAttribute('src', 'https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.js');
+  document.body.appendChild(scriptEl2);
+  // <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js" integrity="sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=" crossorigin="anonymous"></script>
+  const scriptEl = document.createElement('script');
+  scriptEl.setAttribute('defer', 'defer');
+  scriptEl.setAttribute('integrity', 'sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=');
+  scriptEl.setAttribute('crossorigin', 'anonymous');
+  scriptEl.setAttribute('src', 'https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js');
+  scriptEl.setAttribute('onload', 'renderRskTokenBridgeSupport();');
+  document.body.appendChild(scriptEl);
+}
+
+function renderRskTokenBridgeSupport() {
+  const checkButton = document.querySelector('#rsk-token-bridge-support-check-button');
+  checkButton.addEventListener('click', onRskTokenBridgeSupportCheckButtonClicked);
+}
+
+function onRskTokenBridgeSupportCheckButtonClicked() {
+  const selfServiceSupportBaseUrl = 'https://self-service.rsk.co';
+  const txHash = document.querySelector('#rsk-token-bridge-support-txHash').value;
+  const fromNetwork = document.querySelector('#rsk-token-bridge-support-fromNetwork').value;
+  const walletName = document.querySelector('#rsk-token-bridge-support-walletName').value;
+  const outputArea = document.querySelector('.rsk-token-bridge-support-output-area');
+  const url =
+    `${selfServiceSupportBaseUrl}/api/v1/rsk-token-bridge/options?fromNetwork=${fromNetwork}&txHash=${txHash}&walletName=${walletName}`;
+  const reqOptions = {
+    url,
+    method: 'get',
+    headers: {
+      'Accept': 'application/json',
+    },
+    timeout: 2000,
+    responseType: 'html',
+  };
+  axios
+    .request(reqOptions)
+    .then((response) => {
+      console.log(response);
+      removeSubsequentElems('.main-central-col', '.rsk-token-bridge-support', 'p');
+      const responseDataOptions = (response && response.data && response.data.options);
+      if (!responseDataOptions) {
+        outputArea.innerText = `Error\n\nUnable to render fetched response\n\n`;
+      } else {
+        const outputHtml = renderSelfServiceSupportOptionsToHtml(responseDataOptions);
+        outputArea.innerHTML = `<h2>Result</h2><br>${outputHtml}`;
+      }
+    })
+    .catch((error) => {
+      console.error(error);
+      const errorResponseData = (error && error.response && error.response.data);
+      if (errorResponseData) {
+        outputArea.innerText = `Error\n\n${errorResponseData.error}\n\n${errorResponseData.value.join('\n\n')}\n\n`;
+      } else {
+        outputArea.innerText = `Error\n\n${error.message}\n\n`;
+      }
+    });
+}
+
+function removeSubsequentElems(parentSelector, childSelector, subsequentChildSelector) {
+  const parentNode = document.querySelector(parentSelector);
+  const subsequentElems = Array.from(
+    parentNode.querySelectorAll(`${childSelector} ~ ${subsequentChildSelector}`),
+  );
+  subsequentElems.forEach(function(el) {
+    parentNode.removeChild(el);
+  });
+  return subsequentElems;
+}
+
+function renderSelfServiceSupportOptionsToHtml(options) {
+  const markdownItInstance = window.markdownit();
+  const html = options
+    .map((option) => {
+      const { id, question, answer } = option;
+      const questionHtml = markdownItInstance.render(question);
+      const answerHtml = markdownItInstance.render(answer);
+      return `
+      <div class="question-and-answer">
+        <h3 id="question--${id}" class="question">${questionHtml}</h3>
+        <span class="answer">${answerHtml}</span>
+      </div>
+      `;
+    })
+    .join('\n\n');
+  return html;
 }
 
 // render feature: 2-way peg verifier

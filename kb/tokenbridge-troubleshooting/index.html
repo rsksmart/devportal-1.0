@@ -981,7 +981,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-05-19 12:53:16 +0000T00:00:00.000Z">2021-05-19</time> | -->
+    <!--time role="presentation" datetime="2021-05-21 08:46:35 +0000T00:00:00.000Z">2021-05-21</time> | -->
      5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/tokenbridge-troubleshooting.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1825,6 +1825,43 @@
 
 <p>Visit the <a href="https://tokenbridge.rsk.co/" rel="external noopener noreferrer" target="_blank">Mainnet Token Bridge</a> or the <a href="https://testnet.tokenbridge.rsk.co/" rel="external noopener noreferrer" target="_blank">Testnet Token Bridge</a></p>
 
+<div class="rsk-token-bridge-support">
+  <div class="rsk-token-bridge-support-input-area">
+    <div>
+      <label>Transaction Hash</label>
+      <br>
+      <input name="txHash" id="rsk-token-bridge-support-txHash" type="text">
+    </div>
+    <div>
+      <label>Crossing from</label>
+      <br>
+      <select name="fromNetwork" id="rsk-token-bridge-support-fromNetwork">
+        <option value="ethereum-mainnet">Ethereum to RSK</option>
+        <option value="rsk-mainnet">RSK to Etherteum</option>
+      </select>
+    </div>
+    <div>
+      <label>Wallet</label>
+      <br>
+      <select name="walletName" id="rsk-token-bridge-support-walletName">
+        <option value="metamask">MetaMask</option>
+        <option value="nifty">Nifty</option>
+        <option value="liquality">Liquality</option>
+      </select>
+    </div>
+    <div>
+      <button id="rsk-token-bridge-support-check-button">Check …</button>
+    </div>
+  </div>
+  <div class="rsk-token-bridge-support-output-area">
+  </div>
+</div>
+
+<blockquote>
+  <p>Note that what follows below are generic troubleshooting queries.
+To see more specific information, use the form above.</p>
+</blockquote>
+
 <p>1 - <strong>Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK</strong></p>
 
 <p><strong>Network:</strong> ETH to RSK</p>
@@ -1985,7 +2022,7 @@
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="rsk-token-bridge-support">
          </div>
       </section>
 
