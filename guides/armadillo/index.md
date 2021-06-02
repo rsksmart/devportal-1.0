@@ -1,9 +1,11 @@
 ---
 layout: rsk
-title: 'The Little Armadillo Book'
+title: 'Armadillo'
 description: 'The guardian of RSK'
-tags: armadillo, guard, security, dapp, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp-examples, blockchain
+tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-mining, blockchain
 ---
+
+[![Armadillo-banner](/assets/img/guides/armadillo/Armadillo_banner.png)](/guides/armadillo/)
 
 ## Table of Contents
 
@@ -24,14 +26,14 @@ tags: armadillo, guard, security, dapp, guides, smart-contracts, web3, bitcoin, 
         - [Fork in the present](/guides/armadillo/network-under-attack/#fork-in-the-present/)
         - [Fork in the future](/guides/armadillo/network-under-attack/#fork-in-the-future/)
         - [Fork in the far future](/guides/armadillo/network-under-attack/#fork-in-the-far-future/)
-- [Armadillo](/guides/armadillo/about/)
+- [About](/guides/armadillo/about/)
     - [Armadillo Workflow](/guides/armadillo/about/)
     - [Armadillo Infrastructure](/guides/armadillo/about/#armadillo-infrastructure/)
     - [User facing information](/guides/armadillo/about/#user-facing-information/)
         - [API](/guides/armadillo/about/#api/)
 - [Glossary](/guides/armadillo/glossary/)
 
----
+Written by:
+
 - Ignacio Pulice
 - Edgardo Crovetto
----
