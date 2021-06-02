@@ -24,7 +24,7 @@ npm i @rsksmart/rif-scheduler-sdk ethers
 
 In order to create an instance of `RifScheduler` you will need an ethers provider or signer.
 
-The provider will only allow `get` operations, such as `getPlan`. In the other hand the signer will allow all operations, such as `purchasePlan`, `schedule`, etc.
+The provider will only allow `read-only` operations, such as `getPlan`. In the other hand the signer will allow all operations, such as `purchasePlan`, `schedule`, etc.
 
 #### with metamask
 
