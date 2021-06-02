@@ -362,8 +362,7 @@ function renderRskTokenBridgeSupport() {
 }
 
 function onRskTokenBridgeSupportCheckButtonClicked() {
-  // const selfServiceSupportBaseUrl = 'http://localhost:11375';
-  const selfServiceSupportBaseUrl = 'https://self-service-support.vercel.app';
+  const selfServiceSupportBaseUrl = 'https://self-service.rsk.co';
   const txHash = document.querySelector('#rsk-token-bridge-support-txHash').value;
   const fromNetwork = document.querySelector('#rsk-token-bridge-support-fromNetwork').value;
   const walletName = document.querySelector('#rsk-token-bridge-support-walletName').value;
