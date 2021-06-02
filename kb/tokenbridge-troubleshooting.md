@@ -3,11 +3,47 @@ title: 'RSK Token Bridge Troubleshooting Guide'
 description: 'Having issues crossing your tokens on the token bridge? See the troubleshooting guide for help.'
 tags: knowledge-base, tokenbridge, blockchain, developers, tokens
 layout: 'rsk'
+render_features: 'rsk-token-bridge-support'
 ---
 
 See the [Token Bridge FAQs](https://developers.rsk.co/tools/tokenbridge/faq/)
 
 Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet Token Bridge](https://testnet.tokenbridge.rsk.co/)
+
+<div class="rsk-token-bridge-support">
+  <div class="rsk-token-bridge-support-input-area">
+    <div>
+      <label>Transaction Hash</label>
+      <br />
+      <input name="txHash" id="rsk-token-bridge-support-txHash" type="text" />
+    </div>
+    <div>
+      <label>Crossing from</label>
+      <br />
+      <select name="fromNetwork" id="rsk-token-bridge-support-fromNetwork">
+        <option value="ethereum-mainnet">Ethereum to RSK</option>
+        <option value="rsk-mainnet">RSK to Etherteum</option>
+      </select>
+    </div>
+    <div>
+      <label>Wallet</label>
+      <br />
+      <select name="walletName" id="rsk-token-bridge-support-walletName">
+        <option value="metamask">MetaMask</option>
+        <option value="nifty">Nifty</option>
+        <option value="liquality">Liquality</option>
+      </select>
+    </div>
+    <div>
+      <button id="rsk-token-bridge-support-check-button">Check &hellip;</button>
+    </div>
+  </div>
+  <div class="rsk-token-bridge-support-output-area">
+  </div>
+</div>
+
+> Note that what follows below are generic troubleshooting queries.
+> To see more specific information, use the form above.
 
 1 - **Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK**
 
@@ -15,8 +51,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** Current Block - Transaction Block Number < 5760
 
-**Answer:** 24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes. 
-
+**Answer:** 24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes.
 
 2 - **Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK**
 
