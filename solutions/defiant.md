@@ -40,7 +40,7 @@ Watch these short explainer videos:
 
 ![Defiant RSK Integration](/assets/img/solutions/defiant/defiant_rsk.jpg)
 
-See a high level diagram on how [Defiant integrates with Kripton Market](/solutions/kriptonmarket/)
+See a high level diagram on how [Defiant integrates with Kripton Market](/solutions/kriptonmarket/#integration-with-rsk)
 
 ## Defiant's main characteristics
 
