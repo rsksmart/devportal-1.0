@@ -22,7 +22,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
       <br />
       <select name="fromNetwork" id="rsk-token-bridge-support-fromNetwork">
         <option value="ethereum-mainnet">Ethereum to RSK</option>
-        <option value="rsk-mainnet">RSK to Etherteum</option>
+        <option value="rsk-mainnet">RSK to Ethereum</option>
       </select>
     </div>
     <div>
