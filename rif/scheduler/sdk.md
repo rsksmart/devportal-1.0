@@ -34,7 +34,7 @@ import { providers } from "ethers";
 
 const provider = new providers.Web3Provider(web3.currentProvider);
 
-// Creates instance with provider, you can execute get operations
+// Creates instance with provider, you can execute read-only operations
 const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
 
 const signer = provider.getSigner();
@@ -53,7 +53,7 @@ const url = "http://localhost:8545";
 
 const provider = new providers.JsonRpcProvider(url);
 
-// Creates instance with provider, you can execute get operations
+// Creates instance with provider, you can execute read-only operations
 const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
 
 const signer = provider.getSigner();
