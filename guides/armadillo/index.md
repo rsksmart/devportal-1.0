@@ -33,5 +33,5 @@ tags: armadillo, guard, security, dapp, guides, smart-contracts, web3, bitcoin, 
 
 ---
 - Ignacio Pulice
-- Edgardo Crovetto - edgardo@iovlabs.org
+- Edgardo Crovetto
 ---
