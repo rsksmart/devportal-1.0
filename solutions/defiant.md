@@ -40,6 +40,8 @@ Watch these short explainer videos:
 
 ![Defiant RSK Integration](/assets/img/solutions/defiant/defiant_rsk.jpg)
 
+See a high level diagram on how [Defiant integrates with Kripton Market](/solutions/kriptonmarket/)
+
 ## Defiant's main characteristics
 
 - **Compatibility**: First wallet working for Bitcoin, RSK, and Ethereum.
