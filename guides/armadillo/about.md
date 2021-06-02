@@ -16,7 +16,7 @@ tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-min
 ## Armadillo Infrastructure
 
 The Armadillo’s universe is composed of 3 microservices.
-1. **Monitor**: Is in in charge of creating a snapshot of the RSK mainchain that includes forks detected. To accomplish that it consumes data from an RSK node and a BTC API.
+1. **Monitor**: Is in charge of creating a snapshot of the RSK mainchain that includes forks detected. To accomplish that it consumes data from an RSK node and a BTC API.
 2. **API**: Offers digested data collected by the monitor in a number of endpoints.
 3. **Canary**: Is in charge of looking into every fork and triggering alarms whenever necessary with different severities.
 
