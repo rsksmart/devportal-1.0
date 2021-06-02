@@ -81,6 +81,9 @@ Is a 20-bytes prefix for the RSK block hash.
 Is a 7 bytes field where each byte represents the link to a block in the RSK mainchain in the last 448 blocks from the block to consider.
 Each byte consists of the least significant byte of the Bitcoin Block ID field of the last 7 RSK blocks,
 spaced 64 blocks between each of them.
+
+![Commit-to-parent-vector](/assets/img/guides/armadillo/boxes-bytes-cpv.jpg)
+
 Hence, ranges of 64 blocks will have the same CPV.
 This creates a sequence of checkpoints to past blocks.
 The data representation of the Commit to Parent Vector (CPV).
@@ -115,6 +118,9 @@ Each block can reference a maximum of 10 uncles (TU),
 so 32 blocks can reference up to 320 uncles. However,
 since the space used by the NU field is only 1 byte,
 the number of uncles is capped to 255.
+
+![Number-Of-Uncles](/assets/img/guides/armadillo/boxes-bytes-nu.jpg)
+
 A high number of uncles would indicate either an exceptionally abnormal situation of the network or an attack.
 
 ![number of uncles](/assets/img/guides/armadillo/number-of-uncles.png)
