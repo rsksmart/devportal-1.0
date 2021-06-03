@@ -1068,5 +1068,5 @@ Check out the third part of
 ----
 
 [RSK Developers Portal](https://github.com/rsksmart/devportal) |
-[Contact us on Gitter](https://gitter.im/rsksmart/getting-started) |
+[Contact us on our community Slack](/slack/) |
 [Visit our Webinars Section](https://developers.rsk.co/webinars/)

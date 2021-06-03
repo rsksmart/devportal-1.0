@@ -103,7 +103,7 @@ To see how many tokens you have in your wallet you should list the RIF Token.
 4. Select RIF Token
 
     ![Setup - Nifty wallet RIF Token](/rif/rns/guide/images/setup-nifty-wallet-rif-token.png)
-    
+
     > You are also able to choose RNS Token. This represents the amount of .rsk domains owned by your wallet, you can add it too.
 
 5. Click next
@@ -114,6 +114,6 @@ Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/cus
 
 ----
 
-[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Contact us on the RSK community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

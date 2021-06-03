@@ -27,7 +27,7 @@ To register a domain, two transactions are involved. This process takes more or 
 3. Choose the amount of years you want to register your domain for and click on 'Request domain'.
 
     ![UserGuide - Request domain](/rif/rns/guide/images/userguide-request-domain.png)
-    
+
     > You can extend the expiration time whenever you need to.
 
 4. Confirm the transaction.
@@ -54,7 +54,7 @@ To register a domain, two transactions are involved. This process takes more or 
 9. Done! You now own an RNS domain.
 
     ![UserGuide - RNS Domain](/rif/rns/guide/images/userguide-rns-domain.png)
-    
+
 Now, click on 'Admin my domain' and following the [Operation guide](/rif/rns/guide/operations/) you can find a lot of things you can do with your domain.
 
 ### Log in to a domain
@@ -69,7 +69,7 @@ If you already own a domain, use the top right selector to login with it. You ca
 2. Type the domain you own, and click on 'Enter'.
 
     ![UserGuide - Click Enter Domain](/rif/rns/guide/images/userguide-click-enter-domain.png)
-    
+
 If the domain is already in the list you can login to it by clicking here:
 
 ![UserGuide - Login to domain](/rif/rns/guide/images/userguide-login-to-domain.png)
@@ -100,6 +100,6 @@ If you want to remove a domain from the list of logged in domains
 
 ----
 
-[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Contact us on the RSK community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

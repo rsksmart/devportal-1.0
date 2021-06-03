@@ -537,7 +537,7 @@ Thank you!
 
 [developers.rsk.co/webinars](/webinars/)
 
-[gitter.im/rsksmart/getting-started](https://gitter.im/rsksmart/getting-started/)
+[developers.rsk.co/slack](https://developers.rsk.co/slack/)
 
 NOTE:
 
@@ -547,7 +547,7 @@ Thanks to everyone for attending!
 
 Be sure to check out developers.rsk.co/webinars for more sessions on RSK and RIF!
 
-If you have any questions, please reach out to us at developers [at] iovlabs.org or the gitter link here.
+If you have any questions, please reach out to us at developers [at] iovlabs.org or the Slack link here.
 
 Thank you!
 

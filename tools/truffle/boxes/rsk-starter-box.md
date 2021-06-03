@@ -5,7 +5,7 @@ title: RSK starter box
 
 # RSK Truffle Starter Box
 
-This box comes with everything you need to start using Truffle on [RSK Blockchain](https://developers.rsk.co/rsk/). 
+This box comes with everything you need to start using Truffle on [RSK Blockchain](https://developers.rsk.co/rsk/).
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
 
 [RSK](https://www.rsk.co/) is an open source platform for Ethereum compatible smart contracts based on the Bitcoin network.
@@ -27,7 +27,7 @@ npm install -g truffle
 
 ## Installation
 
-1. Create a new folder. 
+1. Create a new folder.
 For example, create the folder `rsk-starter`.
 Navigate to the folder in the terminal.
 
@@ -68,7 +68,7 @@ compile
 migrate
 ```
 
-6. Running contract tests. 
+6. Running contract tests.
 
 Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in the `test` folder.
 
@@ -80,7 +80,7 @@ test
 
 ## Using RSK networks
 
-Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configured in the `truffle-config.js` file. 
+Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configured in the `truffle-config.js` file.
 
 ### Setup an account & get RBTC
 
@@ -172,4 +172,4 @@ Check out the [RSK developers portal](https://developers.rsk.co/).
 
 - **Do you have questions?**
 
-Ask in [RSK chat](https://gitter.im/rsksmart/getting-started).
+Ask in [the RSK community Slack](/slack/).
