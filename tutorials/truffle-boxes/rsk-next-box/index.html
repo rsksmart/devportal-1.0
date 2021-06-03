@@ -1002,7 +1002,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-24 14:12:45 +0000T00:00:00.000Z">2021-03-24</time> | -->
+    <!--time role="presentation" datetime="2021-06-03 04:29:30 +0000T00:00:00.000Z">2021-06-03</time> | -->
      18' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/truffle-boxes/rsk-next-box.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1855,9 +1855,9 @@
 
                   <h1 class="page-title" id="top">Using Truffle box rsk-next-box</h1>
 
-                  <p>In this tutorial, I will show you step-by-step how to use the Truffle box 
-<a href="https://github.com/rsksmart/rsk-next-box" rel="external noopener noreferrer" target="_blank">rsk-next-box</a>, 
-which comes with Next JS and everything you need to start using Truffle on RSK networks. 
+                  <p>In this tutorial, I will show you step-by-step how to use the Truffle box
+<a href="https://github.com/rsksmart/rsk-next-box" rel="external noopener noreferrer" target="_blank">rsk-next-box</a>,
+which comes with Next JS and everything you need to start using Truffle on RSK networks.
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.</p>
 
 <p>Check out <a href="https://developers.rsk.co/rsk/" rel="external noopener noreferrer" target="_blank">RSK Blockchain</a> to learn more.</p>
@@ -1900,8 +1900,8 @@ It includes network configurations for Mainnet, Testnet and the SimpleStorage co
 
 <h1 id="install-rsk-truffle-box">Install RSK Truffle Box</h1>
 
-<p>The truffle unbox command sets up a project based on a known template. 
-In this tutorial, we will be using the “RSK next box” Truffle box, 
+<p>The truffle unbox command sets up a project based on a known template.
+In this tutorial, we will be using the “RSK next box” Truffle box,
 which includes RSK network configurations and the SimpleStorage contract as an example to deploy.</p>
 
 <h2 id="create-a-new-folder">Create a new folder</h2>
@@ -1984,7 +1984,7 @@ C:\RSK\rsk-next&gt;
 
 <h1 id="truffle-development-console">Truffle development console</h1>
 
-<p>Truffle has an interactive console that also spawns a development blockchain. 
+<p>Truffle has an interactive console that also spawns a development blockchain.
 This is very useful for compiling, deploying and testing locally.</p>
 
 <p>Run the development console by typing the following command below into the terminal:</p>
@@ -2024,7 +2024,7 @@ Mnemonic: virtual valve razor retreat either turn possible student grief engage 
 ⚠️  Important ⚠️  : This mnemonic was created for you by Truffle. It is not secure.
 Ensure you do not use it on production blockchains, or else you risk losing funds.
 
-truffle(develop)&gt;  
+truffle(develop)&gt;
 </code></pre>
 
 <blockquote>
@@ -2067,12 +2067,12 @@ truffle(develop)&gt;
 
 <h1 id="deploy-a-smart-contract">Deploy a smart contract</h1>
 
-<p>To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it. 
+<p>To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it.
 This file contains instructions to deploy the smart contract.</p>
 
-<p>The <code class="highlighter-rouge">migrations</code> folder has JavaScript files that help you deploy contracts to the network. 
-These files are responsible for staging your deployment tasks, and they’re written under the assumption that your deployment needs will change over time. 
-A history of previously run migrations is recorded on-chain through a special Migrations contract. 
+<p>The <code class="highlighter-rouge">migrations</code> folder has JavaScript files that help you deploy contracts to the network.
+These files are responsible for staging your deployment tasks, and they’re written under the assumption that your deployment needs will change over time.
+A history of previously run migrations is recorded on-chain through a special Migrations contract.
 (source: <a href="https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations" rel="external noopener noreferrer" target="_blank">truffle: running-migrations</a>)</p>
 
 <p>Take a look in the file <code class="highlighter-rouge">2_deploy_contracts.js</code> located in the migrations folder.</p>
@@ -2158,7 +2158,7 @@ truffle(develop)&gt;
 All test files should be located in the <code class="highlighter-rouge">test</code> directory.
 To learn more, go to the Truffle documentation, in the section <a href="https://www.trufflesuite.com/docs/truffle/testing/testing-your-contracts" rel="external noopener noreferrer" target="_blank">testing your contracts</a>.</p>
 
-<p>Our box also comes with the file <code class="highlighter-rouge">TestSimpleStorage.js</code> for testing the smart contract. 
+<p>Our box also comes with the file <code class="highlighter-rouge">TestSimpleStorage.js</code> for testing the smart contract.
 You can check it out in the <code class="highlighter-rouge">test</code> folder.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">test</span>
@@ -2194,10 +2194,10 @@ You can check it out in the <code class="highlighter-rouge">test</code> folder.<
 
 <pre><code class="language-windows-command-prompt">truffle(develop)&gt; const simpleStorage = await SimpleStorage.deployed()
 undefined
-truffle(develop)&gt;  
+truffle(develop)&gt;
 </code></pre>
 
-<p>Remember that the published contract information is stored in the <code class="highlighter-rouge">app/contracts</code> folder. 
+<p>Remember that the published contract information is stored in the <code class="highlighter-rouge">app/contracts</code> folder.
 You will find a JSON file with the same name of our smart contract.</p>
 
 <p>The section <code class="highlighter-rouge">networks</code> has the networks in which the smart contract was published, including its address and hash of the transaction.</p>
@@ -2219,7 +2219,7 @@ You will find a JSON file with the same name of our smart contract.</p>
 
 <pre><code class="language-windows-command-prompt">truffle(develop)&gt; simpleStorage.get().then(bn =&gt; bn.toNumber())
 0
-truffle(develop)&gt;  
+truffle(develop)&gt;
 </code></pre>
 
 <h2 id="set-value">Set value</h2>
@@ -2244,7 +2244,7 @@ truffle(develop)&gt;
 
 <pre><code class="language-windows-command-prompt">truffle(develop)&gt; simpleStorage.get().then(bn =&gt; bn.toNumber())
 10
-truffle(develop)&gt; 
+truffle(develop)&gt;
 </code></pre>
 
 <h1 id="client-side-application">Client side application</h1>
@@ -2306,8 +2306,8 @@ The <strong>minimumGasPrice</strong> is written in the block header by miners an
     <span class="o">&gt;</span> .minimum-gas-price-mainnet.json
 </code></pre></div></div>
 
-<p>This query saved the details of latest block to 
-file .minimum-gas-price-testnet.json 
+<p>This query saved the details of latest block to
+file .minimum-gas-price-testnet.json
 or .minimum-gas-price-mainnet.json, respectively.</p>
 
 <p>This is the result of Testnet query in the terminal in Windows OS:</p>
@@ -2340,7 +2340,7 @@ or .minimum-gas-price-mainnet.json, respectively.</p>
 
 <h2 id="hd-wallet-provider">HD wallet provider</h2>
 
-<p>To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. 
+<p>To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally.
 We are using <code class="highlighter-rouge">@truffle/hdwallet-provider</code>. It was installed with the box.</p>
 
 <p>Please be aware that we are using <code class="highlighter-rouge">HDWalletProvider</code> with RSK Networks derivations path:</p>
@@ -2372,7 +2372,7 @@ We are using <code class="highlighter-rouge">@truffle/hdwallet-provider</code>. 
 <p>I will connect to the Testnet network:</p>
 
 <pre><code class="language-windows-command-prompt">C:\RSK\rsk-next&gt;truffle console --network testnet
-truffle(testnet)&gt;  
+truffle(testnet)&gt;
 </code></pre>
 
 <h2 id="get-your-addresses--accounts">Get your addresses / accounts</h2>
@@ -2389,7 +2389,7 @@ undefined
 truffle(testnet)&gt;
 </code></pre>
 
-<p>Don’t worry about the <code class="highlighter-rouge">undefined</code> return, it is ok. 
+<p>Don’t worry about the <code class="highlighter-rouge">undefined</code> return, it is ok.
 See the addresses after it by entering the command below:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">accounts</span>
@@ -2428,7 +2428,7 @@ truffle(testnet)&gt;
 
 <pre><code class="language-windows-command-prompt">truffle(testnet)&gt; (await web3.eth.getBalance(accounts[0])).toString()
 '0'
-truffle(testnet)&gt;  
+truffle(testnet)&gt;
 </code></pre>
 
 <p>The balance is 0 and we need some tRBTC to pay gas fees,
@@ -2475,9 +2475,9 @@ C:\RSK\rsk-starter&gt;
 
 <h1 id="deploy-the-smart-contract-on-rsk-network">Deploy the smart contract on RSK network</h1>
 
-<p>Migrate the smart contracts. 
-We will do it by running the below commands directly in the terminal, 
-without using the truffle console now to show to you this alternative. 
+<p>Migrate the smart contracts.
+We will do it by running the below commands directly in the terminal,
+without using the truffle console now to show to you this alternative.
 Run the migrate command for the RSK network of your choice.</p>
 
 <p><strong>Testnet</strong></p>
@@ -2607,17 +2607,17 @@ npm run dev
 
 <h1 id="final-considerations">Final considerations</h1>
 
-<p>In this tutorial you learned how to use the Truffle box <a href="https://github.com/rsksmart/rsk-next-box" rel="external noopener noreferrer" target="_blank">rsk-next-box</a>, 
+<p>In this tutorial you learned how to use the Truffle box <a href="https://github.com/rsksmart/rsk-next-box" rel="external noopener noreferrer" target="_blank">rsk-next-box</a>,
 which comes with everything you need to start using Truffle on RSK networks.</p>
 
 <p>Check out <a href="https://developers.rsk.co/rsk/" rel="external noopener noreferrer" target="_blank">RSK Blockchain</a> for more details about us.</p>
 
-<p>I hope this tutorial has been helpful and I’d appreciate your feedback. 
+<p>I hope this tutorial has been helpful and I’d appreciate your feedback.
 Share it if you like it :)</p>
 
 <p><strong>Do you have questions?</strong></p>
 
-<p>Ask in <a href="https://gitter.im/rsksmart/getting-started" rel="external noopener noreferrer" target="_blank">RSK chat</a></p>
+<p>Ask in <a href="../../../slack/">the RSK community Slack</a></p>
 
 
                   
@@ -2756,7 +2756,7 @@ Share it if you like it :)</p>
                   <a target="_blank" rel="external noopener noreferrer" href="https://twitter.com/rsksmart" class="twitter"><i class="fab fa-twitter"></i></a>
                   <a target="_blank" rel="external noopener noreferrer" href="https://www.youtube.com/rsksmart" class="facebook"><i class="fab fa-youtube"></i></a>
                   <a target="_blank" rel="external noopener noreferrer" href="https://www.facebook.com/RSKsmart/" class="linkedin"><i class="fab fa-facebook"></i></a>
-                  <a target="_blank" rel="external noopener noreferrer" href="https://gitter.im/rsksmart" class="instagram"><i class="fab fa-gitter"></i></a>
+                  <a target="_blank" rel="noopener noreferrer" href="../../../slack/" class="instagram"><i class="fab fa-slack"></i></a>
                   <a target="_blank" rel="external noopener noreferrer" href="https://www.reddit.com/r/rootstock/" class="instagram"><i class="fab fa-reddit"></i></a>
                   <a target="_blank" rel="external noopener noreferrer" href="https://t.me/rskofficialcommunity" class="instagram"><i class="fab fa-telegram"></i></a>
                   <a target="_blank" rel="external noopener noreferrer" href="https://medium.com/@RSKNews" class="instagram"><i class="fab fa-medium"></i></a>
@@ -2809,11 +2809,5 @@ Share it if you like it :)</p>
       });
 
       </script>
-      <script>
-      ((window.gitter = {}).chat = {}).options = {
-         room: 'rsksmart/getting-started'
-      };
-      </script>
-      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
    </body>
 </html>
