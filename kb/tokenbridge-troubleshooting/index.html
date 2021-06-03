@@ -994,8 +994,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-05-21 08:46:35 +0000T00:00:00.000Z">2021-05-21</time> | -->
-     5' to read |
+    <!--time role="presentation" datetime="2021-06-03 12:10:43 +0000T00:00:00.000Z">2021-06-03</time> | -->
+     6' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/tokenbridge-troubleshooting.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1863,7 +1863,7 @@
       <br>
       <select name="fromNetwork" id="rsk-token-bridge-support-fromNetwork">
         <option value="ethereum-mainnet">Ethereum to RSK</option>
-        <option value="rsk-mainnet">RSK to Etherteum</option>
+        <option value="rsk-mainnet">RSK to Ethereum</option>
       </select>
     </div>
     <div>
@@ -1982,7 +1982,32 @@ To see more specific information, use the form above.</p>
 
 <p><strong>When:</strong> always</p>
 
-<p><strong>Answer:</strong>  The list is stored in local cache, so it’s not shared across devices, and its erased if you clear your browser cookies and temporary files. You can be sure than if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the #tokenbridge channel on RSK Open slack (go to <a href="https://developers.rsk.co/slack" rel="external noopener noreferrer" target="_blank">Open Slack Community</a> to join).</p>
+<p><strong>Answer:</strong>  The list is stored in the local cache, so it’s not shared across devices, and it’s erased if you clear your browser cookies and temporary files. You can be sure that if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the <code class="highlighter-rouge">#tokenbridge</code> channel on RSK Open slack (go to <a href="https://developers.rsk.co/slack" rel="external noopener noreferrer" target="_blank">Open Slack Community</a> to join).</p>
+
+<p>13 - <strong>I used the Sovryn Token Bridge</strong></p>
+
+<p>If you have used <code class="highlighter-rouge">bridge.sovryn.app</code>,
+note that this is <strong>not</strong> the same as the RSK Token Bridge.
+To get support, please ask on the
+<a href="https://discord.com/channels/729675474665603133/813119624098611260" rel="external noopener noreferrer" target="_blank">Sovryn discord group</a>.</p>
+
+<p>14 - <strong>I sent RSK tokens to an Ethereum address</strong></p>
+
+<p>Note that if you have tokens on the RSK network, such as RIF or RDOC,
+including “crossed” tokens such as rUSDT or rDAI,
+you <strong>should not</strong> send them to an Ethereum address in a regular transaction.
+This <strong>does not</strong> work!
+Instead, you should use the RSK Token Bridge to cross the tokens
+from one blockchain to the other.</p>
+
+<p>If you have done this already,
+and sent the tokens to an address that <strong>is not</strong> under your control -
+where you <strong>do not have</strong> the private key or the seed phrase -
+then you have <strong>burnt</strong> the tokens, and they are not recoverable.
+If you have done this already,
+and sent the tokens to an address that <strong>is</strong> not under your control -
+where you <strong>do have</strong> the private key or the seed phrase -
+then it may be possible to recover your tokens.</p>
 
 
                   
