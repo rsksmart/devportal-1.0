@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RSK <-> ETH Token Bridge
+tags: faqs, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets, swaps
 ---
 
 Ethereum/RSK Bridge that allows to move ERC20 tokens between one chain and the other.

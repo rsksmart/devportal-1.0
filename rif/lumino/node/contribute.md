@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Creating an Issue
+tags: rif, rif-lumino, contribute, payments, node, lumino, sdk, light-client, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 If you find an issue in Lumino and want to report it, or if you want to request a feature, you can make an issue in the [GitHub repo](https://github.com/rsksmart/lumino). 

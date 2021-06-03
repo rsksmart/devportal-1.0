@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RIF Scheduler - Services
+tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Repo: [`rsksmart/rif-scheduler-services`](https://github.com/rsksmart/rif-scheduler-services)

@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Libs
+tags: libraries, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## RSK Libraries

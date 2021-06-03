@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Gas
+tags: gas, transactions, rbtc, mainnet, smart-contracts, rsk, conversion, bitcoin, price, gas-price, cost
 collection_order: 3200
 ---
 

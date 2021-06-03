@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RBTC Token
+tags: mainnet, token, transactions, rbtc, gas, smart-contracts, rsk, conversion, price, gas-price, gas-cost, smart bitcoin, bitcoin
 collection_order: 3000
 permalink: /rsk/rbtc/
 ---

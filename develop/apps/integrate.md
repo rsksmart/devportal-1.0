@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: How to Integrate
+tags: apps, integrate, node, linux, windows, mac, rbtc, defi, decentralized, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets
 ---
 
 ## Step 1: Install a node

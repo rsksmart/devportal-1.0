@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Migrate from auction model
+tags: rif, rns, rif-name-service, domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Any name that has been registered using the [Auction Model](/rif/rns/operations/register-auction-deprecated) contract should be migrated to the new [registration model](/rif/rns/operations/register).

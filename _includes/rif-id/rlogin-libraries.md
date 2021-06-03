@@ -1,3 +1,10 @@
+---
+layout: rsk
+title: rLogin Libraries
+description: 'multiple libraries that enable seamless integration to rLogin protocols'
+tags: rlogin, libraries, architecture, rif, identity, vault, marketplace, auth, rif-data-vault, rns, ui
+---
+
 The implementation of the architecture defined above consists of multiple libraries that enable seamless integration to rLogin protocols:
 - The [RIF Data Vault](/rif/identity/data-vault) - a user-centric cloud storage service
 - [Verifiable Credential JSON Schemas](/rif/identity/rlogin/libraries/vc-json-schemas) and [parser](/rif/identity/rlogin/libraries/vc-json-schemas-parser) - proposes unique standard interface for Verifiable Credentials

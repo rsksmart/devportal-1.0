@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Token Bridge FAQ
+tags: faqs, defi, rbtc, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets
 ---
 
 ## What is the Token Bridge?

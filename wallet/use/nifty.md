@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Nifty
+tags: nifty, json-rpc, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 # How To Create A Nifty Wallet
 

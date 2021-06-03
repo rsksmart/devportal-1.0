@@ -1,5 +1,6 @@
 ---
 layout: rsk
+tags: rif, rif-identity, spcs, specification, auth, DID, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 # DID authentication
@@ -11,6 +12,7 @@ A challenge–response authentication is a family of protocols in which one part
 DID Auth is a protocol that allows asking the controller of an account to sign a random message, thus demonstrating control of the account at the time of the question. This protocol used as a login method checks that the user controls the account at the time of access to the application.
 
 Additionally, it allows the application to request specific data at the time of registration, for example the user's email or phone number. These requested data follow a specific standard, which allows the client to provide it in a unified way and even cryptographically signed by a third party. This means that the application can ask the user for verifiable credentials, identifying them by their type in a unique way.
+
 ### Table of contents
 
 - [State of the art](#state-of-the-art)

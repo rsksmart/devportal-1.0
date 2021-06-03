@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Android Library
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, android, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Android Library to resolve your RIF Name Service address on your app.

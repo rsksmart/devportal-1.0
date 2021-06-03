@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: About RIF Communication
+tags: rif, rif-storage, communication, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 RIF Communications is an infrastructure protocol built on top of libp2p, which allows parties in a peer-to-peer network to discover each other and establish secure communication channels, with assured anonymity, confidentiality, integrity, and authenticity.

@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Addresses and Links
+tags: defi, decentralized, token-bridge, tokens, addresses, bridge, multisig, federation, powpeg, quick-start, guides, tutorial, testnet, faucet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, sidechain, contracts, wallets
 ---
 
 # MainNet Addresses and Links

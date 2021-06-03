@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Universal Smart Contract Interface Registry
+tags: interface, registry, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 The ERC1820 standard defines a universal registry smart contract where any address (contract or regular account) can register which interface it supports and which smart contract is responsible for its implementation.

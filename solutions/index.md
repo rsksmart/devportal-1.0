@@ -1,6 +1,9 @@
 ---
 layout: rsk
 title: Solutions on RSK
+description: 'Check out the many ways our partners leverage the RSK and RIF
+platforms and APIs to create innovative experiences.'
+tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
 ---
 
 Check out the many ways our partners leverage the RSK and RIF

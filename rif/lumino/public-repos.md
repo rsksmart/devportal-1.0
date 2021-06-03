@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Public repositories
+tags: rif, rif-lumino, payments, node, lumino, light-client, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Check out our public repositories:
