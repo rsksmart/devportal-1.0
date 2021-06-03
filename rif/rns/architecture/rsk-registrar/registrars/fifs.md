@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: First-in first-served .rsk registrar
-tags: rns, fifs, registrar
+tags: rif, rns, fifs, registrar, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 description: "Register an RNS address using the FIFS registrar, without address resolution"
 ---
 

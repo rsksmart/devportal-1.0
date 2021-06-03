@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Use domains instead of long hexa addresses
+tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 This is a demonstration of how to get the address of a domain. We are going to do it in a React app.

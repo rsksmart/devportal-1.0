@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Setup node on AWS
+tags: aws, console, VVM, marketplace, launch, desktop, install, rsk, rskj, node, how-to, network, requirements, mainnet
 collection_order: 2332
 ---
 

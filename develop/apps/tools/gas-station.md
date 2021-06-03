@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Gas Station
+tags: gas, gas-station, rbtc, defi, decentralized, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets
 ---
 
 ## Gas Station

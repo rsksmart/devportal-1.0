@@ -1,5 +1,6 @@
 ---
 layout: rsk
+tags: rlogin, rif, rif-identity, data-vault, architecture, provider, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Data vault - Centralized pinner provider

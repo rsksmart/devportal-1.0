@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Send RIF Tokens through Metamask
+tags: tokens, metamask, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Send RIF Tokens through Metamask

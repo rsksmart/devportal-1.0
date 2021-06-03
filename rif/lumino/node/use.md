@@ -2,6 +2,7 @@
 layout: rsk
 title: How To Use
 description: "How to build and run a Lumino node. How to use its user interface to view the dashboard, quick payments, token view, send tokens, pay, deposit, open and close channels, and view payments"
+tags: rif, rif-lumino, payments, node, lumino, sdk, light-client, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Build your Lumino Node

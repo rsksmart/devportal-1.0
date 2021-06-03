@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Swarm Incentives
+tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 File sharing systems heavily rely on users distributing files to others willingly. But strictly speaking, a user could choose to download a file and consume resources without uploading in return.

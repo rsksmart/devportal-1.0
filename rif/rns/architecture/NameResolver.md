@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Name Resolver
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Return a valid RNS name for the requested node, or the empty string if no name is defined for the requested node.

@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RIF Scheduler - Run your own scheduler
+tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 By running your own scheduler you can provide the transaction execution service.

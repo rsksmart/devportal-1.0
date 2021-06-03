@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: iOS Library
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, ios, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Implementation for resolvers for the RIF Name Service, available for iOS.

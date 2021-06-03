@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RSK starter box
+tags: truffle, ganache, quick-start, dapps, rsk-starter-box, truffle-boxes, open zeppelin, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, guides, tutorial
 ---
 
 # RSK Truffle Starter Box
