@@ -12,3 +12,9 @@ You can either provide the execution object (using the `executionFactory` functi
 ```javascript
 await rifScheduler.cancelScheduling(execution | executionId)
 ```
+
+What else you can do?
+
+- [Getting Started](../index)
+- [Purchasing Plans](../purchasing-plans)
+- [Scheduling Executions](../scheduling)

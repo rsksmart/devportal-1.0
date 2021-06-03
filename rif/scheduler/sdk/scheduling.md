@@ -43,6 +43,32 @@ const scheduledExecutionTransaction = await rifScheduler.schedule(execution)
 await scheduledExecutionTransaction.wait(12)
 ```
 
+### Scheduling a recurrent execution
+
+If you want to schedule the same execution many times, you will need to specify a cron expression and the number of executions.
+
+The cron expression specifies the interval between each execution, starting from the `startToExecuteAt` date.
+
+Tool for cron expressions: [cron-tab](https://crontab.guru/)
+
+```javascript
+const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+
+const encodedFunctionCall = new utils.Interface(MyContract.abi).encodeFunctionData('<MyContractFunction>', [arrayOfMyContractFunctionParameters])
+
+const valueToTransfer = BigNumber.from(0)
+
+const cronExpression = '*/15 * * * *'; // every 15 minutes
+const quantity = 5; // schedule its execution 5 times
+const startToExecuteAt = new Date(tomorrow)
+
+const execution = executionFactory(planIndex, myContractAddress, encodedMethodCall, gas, startToExecuteAt, valueToTransfer, yourAccountAddress)
+const scheduledExecutionsTransaction = await rifScheduler.scheduleMany(execution, cronExpression, quantity)
+
+// we recommend to wait at least 10 confirmations to be sure tha your transaction was processed correctly.
+await scheduledExecutionsTransaction.wait(12)
+```
+
 ### Verifying the status of a scheduled execution
 
 You can either provide the execution object (using the `executionFactory` function) or the `executionId` if you have one already.
@@ -59,3 +85,9 @@ const state = await rifScheduler.getExecutionState(execution | executionId)
 //   Cancelled = 5
 // }
 ```
+
+What else you can do?
+
+- [Getting Started](../index)
+- [Purchasing Plans](../purchasing-plans)
+- [Canceling](../canceling)

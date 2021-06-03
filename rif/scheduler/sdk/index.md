@@ -61,8 +61,8 @@ const signer = provider.getSigner();
 const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
 ```
 
-[Purchasing Plans](purchasing-plans)
+What you can do with this sdk?
 
-[Scheduling Executions](scheduling)
-
-[Canceling](canceling)
+- [Purchasing Plans](purchasing-plans)
+- [Scheduling Executions](scheduling)
+- [Canceling](canceling)
