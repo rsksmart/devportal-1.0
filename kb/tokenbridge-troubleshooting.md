@@ -139,7 +139,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** always
 
-**Answer:**  The list is stored in local cache, so it’s not shared across devices, and its erased if you clear your browser cookies and temporary files. You can be sure than if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the #tokenbridge channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
+**Answer:**  The list is stored in the local cache, so it’s not shared across devices, and it's erased if you clear your browser cookies and temporary files. You can be sure that if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the `#tokenbridge` channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
 
 13 - **I used the Sovryn Token Bridge**
 
@@ -154,7 +154,7 @@ Note that if you have tokens on the RSK network, such as RIF or RDOC,
 including "crossed" tokens such as rUSDT or rDAI,
 you **should not** send them to an Ethereum address in a regular transaction.
 This **does not** work!
-Instead you should use the RSK Token Bridge to cross the tokens
+Instead, you should use the RSK Token Bridge to cross the tokens
 from one blockchain to the other.
 
 If you have done this already,
@@ -164,4 +164,4 @@ then you have **burnt** the tokens, and they are not recoverable.
 If you have done this already,
 and sent the tokens to an address that **is** not under your control -
 where you **do have** the private key or the seed phrase -
-then you have it may be possible to recover your tokens.
+then it may be possible to recover your tokens.
