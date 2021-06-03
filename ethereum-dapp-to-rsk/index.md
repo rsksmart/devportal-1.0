@@ -5,7 +5,7 @@ title: Bring your Ethereum token to RSK
 
 Our goal is to join forces and give options to people who believe in the power of smart contracts, and also believe in the security of Bitcoin, through RSK. Bring your Ethereum token to RSK!
 
-<a href="https://gitter.im/rsksmart/tokenbridge" target="_blank" class="next green-button">Get help</a>
+<a href="/slack/" target="_blank" class="next green-button">Get help</a>
 
 
 <div class="features-list">

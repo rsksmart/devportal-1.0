@@ -41,6 +41,6 @@ tags: rns, guide, rns-user-guide
 
 ----
 
-[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Contact us on the RSK community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

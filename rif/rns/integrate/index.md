@@ -58,4 +58,4 @@ npm i web3 @rsksmart/rns
 RNS JavaScript library related links:
 - Read the [docs](https://developers.rsk.co/rif/rns/libs/javascript)
 - Collaborate in [Github](https://github.com/rnsdomains/rns-js)
-- Contact us via [Gitter](https://gitter.im/rsksmart/rif-name-service)
+- Contact us via [the RSK community Slack](/slack/)
