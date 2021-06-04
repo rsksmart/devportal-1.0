@@ -18,3 +18,9 @@ Use this template to create a `Typescript` web SDK repo
 Create `React.js` apps with Typescript
 
 [`@rsksmart/react-app-rif-template`](https://github.com/rsksmart/react-app-rif-template)
+
+## Scripts in Typescript
+
+Create scripts using Node.js and Typescript
+
+[`@rsksmart/rif-typescript-script-template `](https://github.com/rsksmart/rif-typescript-script-template)
