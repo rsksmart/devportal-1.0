@@ -27,7 +27,7 @@ The plans must specify the:
 For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:
 
  `scheduled time` - 10 <= `execution time` <=  `scheduled time` + 10
-- The address of the token used to purchase executions. If the address `0x0` passed as parameter the contract assumes that the executions will be paid with rBTC.
+- The address of the token used to purchase executions. If the address `0x0` passed as parameter the contract assumes that the executions will be paid with RBTC.
 
 ```solidity
 Plan[] public plans;
@@ -36,7 +36,7 @@ function removePlan(uint256 plan) external onlyProvider
 ```
 
 The _payee_ is the account that receives the tokens after execution.
-The Service Provider can change this account by calling setPayee.
+The Service Provider can change this account by calling `setPayee`.
 
 ```solidity
 address public payee
@@ -49,7 +49,7 @@ Purchasing executions of a plan can be done in three ways:
 
 - ERC-20: Use `purchase` after performing a ERC-20 `approve`
 - ERC-677: Use `transferAndCall` with ABI encoded `(uint256 plan, uint256  quantity)`
-- rBTC: Use `purchase` sending an rBTC value. This only available for plans having set the token address to 0x0
+- RBTC: Use `purchase` sending an RBTC value. This only available for plans having set the token address to `0x0`
 
 In all of them, the requestor can choose the amount of transaction executions
 that they want to purchase at the given price.
@@ -85,7 +85,7 @@ It is possible to schedule multiple transactions at the same time by calling:
 batchSchedule(bytes[] calldata data) external payable
 ```
 
-This function receives an array of ABI encoded transactions to be executed and the total rBTC required by them, if necessary.
+This function receives an array of ABI encoded transactions to be executed and the total RBTC required by them, if necessary.
 Each element of the transaction array should be encoded as follows:
 
 ```js
