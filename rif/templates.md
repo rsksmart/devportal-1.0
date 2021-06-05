@@ -23,4 +23,4 @@ Create `React.js` apps with Typescript
 
 Create scripts using Node.js and Typescript
 
-[`@rsksmart/rif-typescript-script-template `](https://github.com/rsksmart/rif-typescript-script-template)
+[`@rsksmart/rif-typescript-script-template`](https://github.com/rsksmart/rif-typescript-script-template)
