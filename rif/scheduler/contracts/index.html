@@ -1002,8 +1002,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 10:06:48 +0000T00:00:00.000Z">2021-06-03</time> | -->
-     5' to read |
+    <!--time role="presentation" datetime="2021-06-05 12:01:12 +0000T00:00:00.000Z">2021-06-05</time> | -->
+     7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1857,18 +1857,18 @@
 
                   <p>Repo: <a href="https://github.com/rsksmart/rif-scheduler-contracts" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">rsksmart/rif-scheduler-contracts</code></a></p>
 
-<p>Each service provider should deploy an smart contract to manage the plans,
-receive payments for your service and execute the requested transactions.</p>
+<p>Each service provider should deploy a smart contract to manage the plans,
+receive payments for the service and execute the requested transactions.</p>
 
 <p>The smart contract has four modules:</p>
 
 <ul>
   <li>
-<a href="#admin"><em>Admin</em></a>: Service Provider can create new plans and change withdraw account</li>
+<a href="#admin"><em>Admin</em></a>: The Service Provider can create new plans and change withdraw account</li>
   <li>
-<a href="#purchasing"><em>Purchasing</em></a>: Requesters can use these methods to pay for the service using tokens</li>
+<a href="#purchasing"><em>Purchasing</em></a>: The requestors can use these methods to pay for the service using tokens</li>
   <li>
-<a href="#scheduling"><em>Scheduling</em></a>: Requesters submit the transactions they need to execute and when</li>
+<a href="#scheduling"><em>Scheduling</em></a>: Requestors submit the transactions they need to execute and when</li>
   <li>
 <a href="#execution"><em>Execution</em></a>: Service Provider executes transactions and receives payment</li>
 </ul>
@@ -1880,8 +1880,17 @@ receive payments for your service and execute the requested transactions.</p>
 <h3 id="admin">Admin</h3>
 
 <p>The Service Provider can set up different plans.
-They must determine the price of each execution and
-the time window in which it will be valid.</p>
+The plans must specify the:</p>
+<ul>
+  <li>Price per execution,</li>
+  <li>The time window (in seconds) within a scheduled execution should run.
+For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:</li>
+</ul>
+
+<p><code class="highlighter-rouge">scheduled time</code> - 10 &lt;= <code class="highlighter-rouge">execution time</code> &lt;=  <code class="highlighter-rouge">scheduled time</code> + 10</p>
+<ul>
+  <li>The address of the token used to purchase executions. If the address <code class="highlighter-rouge">0x0</code> passed as parameter the contract assumes that the executions will be paid with RBTC.</li>
+</ul>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Plan</span><span class="p">[]</span> <span class="kr">public</span> <span class="nx">plans</span><span class="p">;</span>
 <span class="kd">function</span> <span class="nx">addPlan</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">price</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nb">window</span><span class="p">,</span> <span class="nx">IERC677</span> <span class="nx">token</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">onlyProvider</span>
@@ -1889,7 +1898,7 @@ the time window in which it will be valid.</p>
 </code></pre></div></div>
 
 <p>The <em>payee</em> is the account that receives the tokens after execution.
-The Service Provider can change this account</p>
+The Service Provider can change this account by calling <code class="highlighter-rouge">setPayee</code>.</p>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">address</span> <span class="kr">public</span> <span class="nx">payee</span>
 <span class="kd">function</span> <span class="nx">setPayee</span><span class="p">(</span><span class="nx">address</span> <span class="nx">payee_</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">onlyProvider</span>
@@ -1897,22 +1906,28 @@ The Service Provider can change this account</p>
 
 <h3 id="purchasing">Purchasing</h3>
 
-<p>Purchasing executions of a plan can be done in two ways:</p>
+<p>Purchasing executions of a plan can be done in three ways:</p>
 
 <ul>
   <li>ERC-20: Use <code class="highlighter-rouge">purchase</code> after performing a ERC-20 <code class="highlighter-rouge">approve</code>
 </li>
-  <li>ERC-677: Use <code class="highlighter-rouge">transferAndCall</code> with ABI encoded <code class="highlighter-rouge">(uint256 plan, uint256 quantity)</code>
+  <li>ERC-677: Use <code class="highlighter-rouge">transferAndCall</code> with ABI encoded <code class="highlighter-rouge">(uint256 plan, uint256  quantity)</code>
+</li>
+  <li>RBTC: Use <code class="highlighter-rouge">purchase</code> sending an RBTC value. This only available for plans having set the token address to <code class="highlighter-rouge">0x0</code>
 </li>
 </ul>
 
-<p>In both, the requester can choose the amount of transaction executions
+<p>In all of them, the requestor can choose the amount of transaction executions
 that they want to purchase at the given price.</p>
 
-<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">purchase</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">quantity</span><span class="p">)</span> <span class="nx">external</span>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">purchase</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">quantity</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">payable</span>
 </code></pre></div></div>
 
 <h3 id="scheduling">Scheduling</h3>
+<p>The executions have an <strong>id</strong>. Use this hash function to calculate it:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abi</span><span class="p">.</span><span class="nx">encode</span><span class="p">(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">requestor</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">plan</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+</code></pre></div></div>
 
 <p>Submit new transactions to be executed by the Service Provider.
 Scheduling can be done only after purchasing a plan.
@@ -1920,7 +1935,7 @@ When scheduling you must specify this fields:</p>
 
 <ul>
   <li>
-<code class="highlighter-rouge">plan</code>: The plan id the requester wants to use for the execution</li>
+<code class="highlighter-rouge">plan</code>: The plan id the requestor wants to use for the execution</li>
   <li>
 <code class="highlighter-rouge">to</code>: The receiver of the scheduled transaction</li>
   <li>
@@ -1934,21 +1949,29 @@ When scheduling you must specify this fields:</p>
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">schedule</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">to</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">calldata</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">gas</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">timestamp</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">payable</span>
 </code></pre></div></div>
 
-<p>It is possible to cancel a scheduling before its execution:</p>
+<p>It is possible to schedule multiple transactions at the same time by calling:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">batchSchedule</span><span class="p">(</span><span class="nx">bytes</span><span class="p">[]</span> <span class="nx">calldata</span> <span class="nx">data</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">payable</span>
+</code></pre></div></div>
+
+<p>This function receives an array of ABI encoded transactions to be executed and the total RBTC required by them, if necessary.
+Each element of the transaction array should be encoded as follows:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abi</span><span class="p">.</span><span class="nx">encode</span><span class="p">([</span><span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">bytes</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="nx">execution</span><span class="p">.</span><span class="nx">plan</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>To cancel a scheduling before its execution use:</p>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">cancelScheduling</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="nx">external</span>
 </code></pre></div></div>
 
-<p>The executions have an <strong>id</strong>. Use this hash function to calculate it:</p>
-
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abi</span><span class="p">.</span><span class="nx">encode</span><span class="p">(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">requestor</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">plan</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
-</code></pre></div></div>
+<h3 id="retrieving-schedules-transactions-data">Retrieving schedules transactions data</h3>
 
 <p>Query the <em>state</em> of an execution at any time. State machine is defined as:</p>
 
 <ul>
   <li>
-<code class="highlighter-rouge">Scheduled -&gt; Cancelled</code> – requester cancelled execution</li>
+<code class="highlighter-rouge">Scheduled -&gt; Cancelled</code> – requestor cancelled execution</li>
   <li>
 <code class="highlighter-rouge">Scheduled -&gt; ExecutionSuccessful</code> – call was executed in the given time and did not fail</li>
   <li>
@@ -1963,22 +1986,44 @@ When scheduling you must specify this fields:</p>
 <span class="kd">function</span> <span class="nx">getState</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">ExecutionState</span><span class="p">)</span>
 </code></pre></div></div>
 
+<p>Retrieve the data for a particular scheduled transaction execution using its <strong>id</strong> (computed as described above).</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">getExecutionById</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">Execution</span> <span class="nx">memory</span> <span class="nx">execution</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>To get the number of transactions for a requestor use:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">executionsByRequestorCount</span><span class="p">(</span><span class="nx">address</span> <span class="nx">requestor</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">uint256</span><span class="p">)</span>
+</code></pre></div></div>
+<p>and list them with:</p>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">getExecutionsByRequestor</span><span class="p">(</span>
+    <span class="nx">address</span> <span class="nx">requestor</span><span class="p">,</span>
+    <span class="nx">uint256</span> <span class="nx">fromIndex</span><span class="p">,</span>
+    <span class="nx">uint256</span> <span class="nx">toIndex</span>
+  <span class="p">)</span>
+</code></pre></div></div>
+<p>Besides the requestor address, this function also requires <code class="highlighter-rouge">fromIndex</code> and <code class="highlighter-rouge">toIndex</code> to enable pagination.</p>
+
 <h3 id="execution">Execution</h3>
 
-<p>The execution is done by the Service Provider.
-They must submit the transaction between
-<code class="highlighter-rouge">timestamp - window</code> and <code class="highlighter-rouge">timestamp + window</code>.</p>
+<p>The execution is performed by the Service Providers.
+The Service Providers performs the execution of the scheduled transaction by submitting it between <code class="highlighter-rouge">transaction.timestamp - plan.window</code> and <code class="highlighter-rouge">transaction.timestamp + plan.window</code>.</p>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">execute</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">nonReentrant</span>
 </code></pre></div></div>
 
-<p>This performs execution this way:</p>
+<p>This performs execution in this way:</p>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nx">bool</span> <span class="nx">success</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">memory</span> <span class="nx">result</span><span class="p">)</span> <span class="o">=</span> <span class="nx">payable</span><span class="p">(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">).</span><span class="nx">call</span><span class="p">{</span> <span class="nl">gas</span><span class="p">:</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">value</span><span class="p">:</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span> <span class="p">}(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>After execution is completed, the Service Provider will receive
 the payment for the execution.</p>
+
+<p>If the transaction is submitted before time window, the execution will be rejected and it will remain scheduled.
+If it is submitted after the time window, it won’t be executed an the requestor will be refunded.</p>
+
+<p>In any case the Service Provider is not responsible for the successful execution of the submitted transaction. It will only guarantee that it is submitted as scheduled.</p>
 
 
                   
