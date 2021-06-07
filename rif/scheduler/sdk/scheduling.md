@@ -3,24 +3,6 @@ layout: rsk
 title: RIF Scheduler - SDK - Scheduling Executions
 ---
 
-### Estimating the gas
-
-It can either return the estimated gas or undefined.
-
-**When could the result be undefined?**
-
-* If there were no funds in the account at the moment of the estimation, it would result undefined, but as soon as funds are available, the result will change automatically.
-* It can also result undefined if the address or any other parameter provided is incorrect, in that case, you would need to provide the correct information before scheduling, to avoid the execution charge on a failed transaction.
-
-> In any case you can schedule the execution anyway calculating/approximating the gas manually.
-
-```javascript
-const gas = await rifScheduler
-    .estimateGas(MyContract.abi, myContractAddress, '<MyContractFunction>', [arrayOfMyContractFunctionParameters])
-
-// 2000 | undefined
-```
-
 ### Scheduling a single execution
 
 Here you can see how to schedule the execution of any smart contract.
@@ -65,6 +47,24 @@ const execution = executionFactory(planIndex, myContractAddress, encodedMethodCa
 const scheduledExecutionsTransaction = await rifScheduler.scheduleMany(execution, cronExpression, quantity)
 
 await scheduledExecutionsTransaction.wait(12)
+```
+
+### Estimating the gas
+
+It can either return the estimated gas or undefined.
+
+**When could the result be undefined?**
+
+* If there were no funds in the account at the moment of the estimation, it would result undefined, but as soon as funds are available, the result will change automatically.
+* It can also result undefined if the address or any other parameter provided is incorrect, in that case, you would need to provide the correct information before scheduling, to avoid the execution charge on a failed transaction.
+
+> In any case you can schedule the execution anyway calculating/approximating the gas manually.
+
+```javascript
+const gas = await rifScheduler
+    .estimateGas(MyContract.abi, myContractAddress, '<MyContractFunction>', [arrayOfMyContractFunctionParameters])
+
+// 2000 | undefined
 ```
 
 What you can do with this sdk?
