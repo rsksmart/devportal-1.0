@@ -8,6 +8,10 @@ title: RIF Scheduler - SDK - Getting status
 You can either provide the execution object (using the `executionFactory` function) or the `executionId` if you have one already.
 
 ```javascript
+import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
+
+const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+
 const state = await rifScheduler.getExecutionState(execution | executionId)
 
 // enum ExecutionState {
@@ -22,7 +26,7 @@ const state = await rifScheduler.getExecutionState(execution | executionId)
 
 What you can do with this sdk?
 
-- [Getting Started](../index)
+- [Getting Started](../)
 - [Query plans](../query-plans)
 - [Purchase one of this plans](../purchasing-plan)
 - [Schedule a transaction for the next minutes](../scheduling)

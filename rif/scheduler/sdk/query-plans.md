@@ -10,6 +10,8 @@ To schedule a transaction you need to purchase a plan. Plans are paid in tokens 
 First of all, you need to get a plan from the service provider, which will give you the price per execution, the payment token and the execution window in seconds, among other things.
 
 ```javascript
+import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
+
 const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
 
 const planIndex = 0;
@@ -28,6 +30,8 @@ const plan = await rifScheduler.getPlan(planIndex);
 If you want to obtain all plans from the service provider, you must first get the plans count and then get the plans one by one.
 
 ```javascript
+import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
+
 const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
 
 const plansCount = await rifScheduler.getPlansCount();
@@ -55,7 +59,7 @@ for (let i = 0; i < plansCount; i++) {
 
 What you can do with this sdk?
 
-- [Getting Started](../index)
+- [Getting Started](../)
 - [Query plans](../query-plans)
 - [Purchase one of this plans](../purchasing-plan)
 - [Schedule a transaction for the next minutes](../scheduling)
