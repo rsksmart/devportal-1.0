@@ -7,6 +7,8 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, m
 
 Welcome to the RSK quickstart guide!.
 
+![Quick Start Banner](/assets/img/guides/quickstart/quick-start-banner.jpg)
+
 Here you’ll get a whirlwind introduction to RSK, 
 how to interact with RSK in your web browser, 
 how to look at RSK transactions. 
