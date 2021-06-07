@@ -9,5 +9,5 @@ description: "Guides on RSK, workshops, and other guides"
 - [Build a DApp with rLogin](/guides/rlogin/)
 - [Getting started with Enveloping](/guides/rif-enveloping/)
 - [Armadillo](/guides/armadillo/)
-
+- [Quick Start](/guides/quickstart/)
 
