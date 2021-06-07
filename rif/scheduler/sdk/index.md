@@ -5,13 +5,21 @@ title: RIF Scheduler - SDK
 
 Repository: [`rsksmart/rif-scheduler-sdk`](https://github.com/rsksmart/rif-scheduler-sdk)
 
-This is the official sdk for the [OneShootScheduler](https://github.com/rsksmart/rif-scheduler-contracts) smart contract.
+With the RIF Scheduler SDK you can schedule transactions in the RSK network.
 
-This sdk gives you the ability to interact with the `OneShootScheduler` contract in a more simple way.
+Features:
+
+- Query and purchase plans
+- Schedule transactions
+- Schedule recurrent transactions
+- Cancel a scheduling
+- Query transactions scheduled and statuses
+
+This is the official SDK for [`@rsksmart/rif-scheduler-contracts`](https://github.com/rsksmart/rif-scheduler-contracts) smart contract. Use it to interact with the `OneShootScheduler` smart contract in a more simple way.
 
 ## Getting Started
 
-rif-scheduler-sdk is built on top of [ethers](https://docs.ethers.io/). 
+`@rsksmart/rif-scheduler-sdk` is built on top of [`ethers`](https://docs.ethers.io/).
 
 ### Installation
 
@@ -19,13 +27,18 @@ rif-scheduler-sdk is built on top of [ethers](https://docs.ethers.io/).
 npm i @rsksmart/rif-scheduler-sdk ethers
 ```
 
+Use [`0x0372F6F8C7b2353b546F842Da0C44749664d1203`](https://explorer.testnet.rsk.co/address/0x0372F6F8C7b2353b546F842Da0C44749664d1203) for RSK Testnet
+> You can run your own instance following [this guide](https://developers.rsk.co/rif/scheduler/run/)
+
 ### Initialization
+
+First, you will need an `ethers` `provider` or `signer` instance.
 
 In order to create an instance of `RifScheduler` you will need an ethers provider or signer.
 
-The provider will only allow `read-only` operations, such as `getPlan`. In the other hand the signer will allow all operations, such as `purchasePlan`, `schedule`, etc.
+Using a `provider` will only allow _read-only_ operations, such as `getPlan`. Using a `signer` will allow all operations, such as `purchasePlan`, `schedule`, etc.
 
-#### with metamask
+#### For example, to connect the SDK to Metamask
 
 ```javascript
 import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
@@ -42,7 +55,7 @@ const signer = provider.getSigner();
 const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
 ```
 
-#### with RPC / Ganache
+#### to connect the SDK to RPC / Ganache
 
 ```javascript
 import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
@@ -63,6 +76,7 @@ const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
 
 What you can do with this sdk?
 
-- [Purchasing Plans](purchasing-plans)
-- [Scheduling Executions](scheduling)
-- [Canceling](canceling)
+- [Query plans](query-plans)
+- [Purchase one of this plans](purchasing-plan)
+- [Schedule a transaction for the next minutes](scheduling)
+- [Get status](statuses)

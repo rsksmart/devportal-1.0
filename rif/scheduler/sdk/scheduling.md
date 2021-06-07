@@ -15,7 +15,7 @@ It can either return the estimated gas or undefined.
 > In any case you can schedule the execution anyway calculating/approximating the gas manually.
 
 ```javascript
-const gas = await this.schedulerSDK
+const gas = await rifScheduler
     .estimateGas(MyContract.abi, myContractAddress, '<MyContractFunction>', [arrayOfMyContractFunctionParameters])
 
 // 2000 | undefined
@@ -39,7 +39,6 @@ const valueToTransfer = BigNumber.from(0)
 const execution = executionFactory(planIndex, myContractAddress, encodedMethodCall, gas, executeAt, valueToTransfer, yourAccountAddress)
 const scheduledExecutionTransaction = await rifScheduler.schedule(execution)
 
-// we recommend to wait at least 10 confirmations to be sure tha your transaction was processed correctly.
 await scheduledExecutionTransaction.wait(12)
 ```
 
@@ -65,29 +64,13 @@ const startToExecuteAt = new Date(tomorrow)
 const execution = executionFactory(planIndex, myContractAddress, encodedMethodCall, gas, startToExecuteAt, valueToTransfer, yourAccountAddress)
 const scheduledExecutionsTransaction = await rifScheduler.scheduleMany(execution, cronExpression, quantity)
 
-// we recommend to wait at least 10 confirmations to be sure tha your transaction was processed correctly.
 await scheduledExecutionsTransaction.wait(12)
 ```
 
-### Verifying the status of a scheduled execution
-
-You can either provide the execution object (using the `executionFactory` function) or the `executionId` if you have one already.
-
-```javascript
-const state = await rifScheduler.getExecutionState(execution | executionId)
-
-// enum ExecutionState {
-//   Scheduled = 0,
-//   ExecutionSuccessful = 1,
-//   ExecutionFailed = 2,
-//   Overdue = 3,
-//   Refunded = 4,
-//   Cancelled = 5
-// }
-```
-
-What else you can do?
+What you can do with this sdk?
 
 - [Getting Started](../index)
-- [Purchasing Plans](../purchasing-plans)
-- [Canceling](../canceling)
+- [Query plans](../query-plans)
+- [Purchase one of this plans](../purchasing-plan)
+- [Schedule a transaction for the next minutes](../scheduling)
+- [Get status](../statuses)
