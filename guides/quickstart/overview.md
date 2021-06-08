@@ -94,7 +94,7 @@ See how to [configure MetaMask to connect to RSK](https://developers.rsk.co/wall
 Smart contract testing in Truffle occurs through a slightly modified version of Truffle. 
 See [RSK Workshop: Javascript Testing](https://developers.rsk.co/tutorials/workshop-js-testing/) to see how to use it to test your smart contracts on RSK.
 
-- [Solidity](https://docs.soliditylang.org/en/v0.8.4/) is the most popular programming language for implementing smart contracts. 
+- [Solidity](https://docs.soliditylang.org/) is the most popular programming language for implementing smart contracts. 
 The bytecode and ABI that the Solidity compiler, `solc`, outputs can be used to deploy and interact with smart contracts on RSK, 
 thanks to the compatibility between RVM and EVM. 
 See [The Complete Full Stack Guide on RSK](https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part1-overview/) which will guide you through the process of developing and deploying a Solidity smart contract on RSK.
