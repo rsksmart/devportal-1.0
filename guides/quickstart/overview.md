@@ -131,6 +131,8 @@ therefore, the same seed phrase results in a different set of keys and addresses
 
 **Gas differences**
 
+**Gas differences**
+
 The EVM and RVM are compatible in that they support the same op-codes, 
 and therefore can run the same smart contracts. 
 However, the price of each op-code (measured in units known as gas) is different between EVM and RVM, 
