@@ -1002,7 +1002,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-05 12:01:12 +0000T00:00:00.000Z">2021-06-05</time> | -->
+    <!--time role="presentation" datetime="2021-06-07 20:24:16 +0000T00:00:00.000Z">2021-06-07</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1965,11 +1965,13 @@ Each element of the transaction array should be encoded as follows:</p>
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">cancelScheduling</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="nx">external</span>
 </code></pre></div></div>
 
-<h3 id="retrieving-schedules-transactions-data">Retrieving schedules transactions data</h3>
+<h3 id="retrieving-scheduled-transactions-data">Retrieving scheduled transactions data</h3>
 
 <p>Query the <em>state</em> of an execution at any time. State machine is defined as:</p>
 
 <ul>
+  <li>
+<code class="highlighter-rouge">Nonexistent -&gt; Scheduled</code> – Nonexistent status is returned by the contract when asking for an execution that has not been registered to the blockchain. This is never assigned. The first valid state is <code class="highlighter-rouge">Scheduled</code>.</li>
   <li>
 <code class="highlighter-rouge">Scheduled -&gt; Cancelled</code> – requestor cancelled execution</li>
   <li>
