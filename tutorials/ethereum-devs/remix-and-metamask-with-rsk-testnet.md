@@ -96,7 +96,7 @@ Can be accessed at [remix.ethereum.org](https://remix.ethereum.org/)
 
 ![RSK Testnet configuration](/assets/img/tutorials/remix-and-metamask-with-rsk-testnet/image-02.png)
 
-After configuring it, select the RSK Tesnet.
+After configuring it, select the RSK Testnet.
 
 ## TestNet Faucet
 
