@@ -13,7 +13,7 @@ The stack is designed to create a more fair and inclusive financial system.
 
 ![RSK Stack](/assets/img/home/rsk-tech-stack-high-level.png)
 
-Bitcoin, is a store and transfer of value. 
+Bitcoin, is a store and transfer of value.
 The blockchain is secure because miners with high infrastructure and energy costs create new blocks to be added to the blockchain every 10 minutes. 
 The more hashing power they provide, the more secure the network is.
 RSK is the first open source smart contract platform that is powered by the bitcoin network. 
@@ -35,11 +35,11 @@ securing both networks with the same infrastructure and energy consumption.
 
 ![RSK Mining Animation](/assets/img/home/rsk-mining-animation-sprite.png)
 
-They create blocks on the bitcoin network every 10 minutes, 
-including transfer of bitcoin from different addresses, 
+They create blocks on the bitcoin network every 10 minutes,
+including transfer of bitcoin from different addresses,
 and in the process they create new bitcoins.
-On RSK, blocks are created every 30 seconds, 
-to secure the execution of smart contracts. 
+On RSK, blocks are created every 30 seconds,
+to secure the execution of smart contracts.
 This does not mint any new coins in the process, 
 but does earn a reward from the merged mining.
 Check out [mining.rsk.co](https://mining.rsk.co/) to learn more about mining.
@@ -73,9 +73,9 @@ Thus, the smart contract/dApp development skills that you’re used to will tran
 
 ![RSK Tools](/assets/img/guides/quickstart/rsk-tools.png)
 
-- [Truffle](https://www.trufflesuite.com/) is a development, testing, and deployment framework for smart contracts, 
-and is an essential tool among blockchain developers. 
-Truffle works well with RSK. 
+- [Truffle](https://www.trufflesuite.com/) is a development, testing, and deployment framework for smart contracts,
+and is an essential tool among blockchain developers.
+Truffle works well with RSK.
 In fact, we have our own [Truffle Boxes](https://developers.rsk.co/tools/truffle/boxes/), 
 which are templates or starter projects that are already configured to connect to RSK.
 
