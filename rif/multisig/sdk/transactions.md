@@ -37,9 +37,9 @@ const tx = await rawTransactionBuilder.rawTransaction(to, value, data)
 ```
 
 
-## ERC20 Transactions (including RIF Token)
+## ERC20 Transactions
 
-The `ERC20TransactionBuilder` provides a set of methods related to [ERC20](https://eips.ethereum.org/EIPS/eip-20) transactions.
+The `ERC20TransactionBuilder` provides a set of methods related to [ERC20](https://eips.ethereum.org/EIPS/eip-20) transactions, including RIF token.
 
 ### Initialization
 Initialize the `ERC20TransactionBuilder`.
@@ -75,10 +75,11 @@ const safeTransaction = await erc20TransactionBuilder.transferFrom(
 Parameters:
 - `from: string` - the address from which transfer the amount of token specified with `value`
 - `to: string` - the address will receive the amount of token specified with `transfer`
-- `value: BigNumber` - the amount of token will be transfered to address `to`
+- `value: BigNumber` - the amount of token will be transferred to address `to`
 
 
->To execute the `transferFrom` successfully, the `from` address should explicitly authorize the safe account to spend an amount equal to or greater than `value`. Such operation can be authorized through the `approve` method of the `ERC20Token` Contract.
+> To execute the `transferFrom` successfully, the `from` address should explicitly authorize the safe account to spend an amount equal to or greater than `value`. Such operation can be authorized through the `approve` method of the `ERC20Token` Contract.
+
 ```
 const fromToken = await MockERC20Token.connect(userFrom)
 await fromToken.approve(safe.getAddress(), value)
@@ -98,6 +99,7 @@ Parameters:
 
 
 As stated in the [EIP20](https://eips.ethereum.org/EIPS/eip-20#methods) approve description:
->"clients SHOULD make sure to create user interfaces in such a way that they set the allowance first to 0 before setting it to another value for the same spender."
 
-For further details, please have a look at [the related document](https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/)
+> clients SHOULD make sure to create user interfaces in such a way that they first set the allowance to 0, before setting it to another value for the same spender.
+
+For further details, please read [*ERC20 API: An Attack Vector on Approve/TransferFrom Methods* by Mikhail Vladimirov and Dmitry Khovratovich](https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/).
