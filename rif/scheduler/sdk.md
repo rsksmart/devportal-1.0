@@ -8,7 +8,7 @@ Repository: [`rsksmart/rif-scheduler-sdk`](https://github.com/rsksmart/rif-sched
 
 This is the official sdk for the [OneShootScheduler](https://github.com/rsksmart/rif-scheduler-contracts) smart contract.
 
-This sdk gives you the ability to interact with the `OneShootScheduler` contract in a more simple way.
+This SDK gives you the ability to interact with the `OneShootScheduler` contract in a more simple way.
 
 ## Getting Started
 
@@ -24,7 +24,8 @@ npm i @rsksmart/rif-scheduler-sdk ethers
 
 In order to create an instance of `RifScheduler` you will need an ethers provider or signer.
 
-The provider will only allow `read-only` operations, such as `getPlan`. In the other hand the signer will allow all operations, such as `purchasePlan`, `schedule`, etc.
+The provider will only allow `read-only` operations, such as `getPlan`.
+On the other hand, the signer will allow all operations, such as `purchasePlan`, `schedule`, etc.
 
 #### with metamask
 
