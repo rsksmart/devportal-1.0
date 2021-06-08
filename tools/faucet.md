@@ -1,10 +1,10 @@
 ---
 layout: rsk
-title: RSK Tesnet Faucet
+title: RSK Testnet Faucet
 tags: faucet, rsk, testnet, address, wallet, tools
 ---
 
-## RSK Tesnet Faucet
+## RSK Testnet Faucet
 
 RSK [Testnet Faucet](https://faucet.testnet.rsk.co/) can provide you with small denomination RSK coins for Testnet after you input your wallet address and pass the CAPTCHA.
 

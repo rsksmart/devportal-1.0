@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Tesnet Guide
+title: Testnet Guide
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
 description: 'Converting t-BTC to tRBTC (peg-in) and tRBTC to t-BTC (peg-out).'
 collection_order: 3120
