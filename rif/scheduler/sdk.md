@@ -6,9 +6,9 @@ tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols
 
 Repository: [`rsksmart/rif-scheduler-sdk`](https://github.com/rsksmart/rif-scheduler-sdk)
 
-This is the official sdk for the [OneShootScheduler](https://github.com/rsksmart/rif-scheduler-contracts) smart contract.
+This is the official sdk for the [OneShotScheduler](https://github.com/rsksmart/rif-scheduler-contracts) smart contract.
 
-This SDK gives you the ability to interact with the `OneShootScheduler` contract in a more simple way.
+This SDK gives you the ability to interact with the `OneShotScheduler` contract in a more simple way.
 
 ## Getting Started
 
