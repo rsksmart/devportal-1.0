@@ -98,10 +98,11 @@ To cancel a scheduling before its execution use:
 function cancelScheduling(bytes32 id) external
 ```
 
-### Retrieving schedules transactions data
+### Retrieving scheduled transactions data
 
 Query the _state_ of an execution at any time. State machine is defined as:
 
+- `Nonexistent -> Scheduled` -- Nonexistent status is returned by the contract when asking for an execution that has not been registered to the blockchain. This is never assigned. The first valid state is `Scheduled`. 
 - `Scheduled -> Cancelled` -- requestor cancelled execution
 - `Scheduled -> ExecutionSuccessful` -- call was executed in the given time and did not fail
 - `Scheduled -> ExecutionFailed` -- call was executed in the given time but failed
