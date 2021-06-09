@@ -213,5 +213,28 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/get-crypto-on-rsk/powpeg-btc-rbtc/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/get-crypto-on-rsk/powpeg-banner.jpg" alt="GetRBTCPowPeg icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/get-crypto-on-rsk/powpeg-btc-rbtc/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Get RBTC using PowPeg</p>
+                        <p class="card-desc">Learn how the RSK Powpeg works and how to use it to get RBTC via the peg-in and peg-out process</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/get-crypto-on-rsk/powpeg-btc-rbtc/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 

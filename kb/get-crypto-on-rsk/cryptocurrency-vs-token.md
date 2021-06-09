@@ -64,3 +64,9 @@ Watch this short explainer video on the difference between a Cryptocurrency and 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/GWoNxoaIsbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Next
+
+Be sure to check out our next article in this series, 
+about how to get the RSK cryptocurrency, RBTC, 
+by using the PowPeg: [How to get RBTC using RSK’s built in PowPeg](/kb/get-crypto-on-rsk/powpeg-btc-rbtc/)
