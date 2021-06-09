@@ -1,23 +1,24 @@
 ---
 layout: rsk
-title: R-BTC Token
+title: RBTC Token
+tags: mainnet, token, transactions, rbtc, gas, smart-contracts, rsk, conversion, price, gas-price, gas-cost, smart bitcoin, bitcoin
 collection_order: 3000
 permalink: /rsk/rbtc/
 ---
 
-The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into R-BTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
+The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
 
-## R-BTC (Smart Bitcoin in Mainnet)
+## RBTC (Smart Bitcoin in Mainnet)
 
 <table class="table">
   <tbody>
     <tr>
       <td scope="row">Token Name</td>
-      <td><a href="https://coinmarketcap.com/currencies/rsk-smart-bitcoin/" target="_blank">R-BTC</a></td>
+      <td><a href="https://coinmarketcap.com/currencies/rsk-smart-bitcoin/" target="_blank">RBTC</a></td>
     </tr>
     <tr>
       <td scope="row">Total Supply</td>
-      <td>21,000,000 R-BTC</td>
+      <td>21,000,000 RBTC</td>
     </tr>
     <tr>
       <td scope="row">Circulating supply</td>
@@ -39,24 +40,24 @@ The Smart Bitcoin (R-BTC) is the token used to [pay for the execution](/rsk/rbtc
     <tr>
       <td scope="row">Logo</td>
       <td>
-        <img src="/assets/img/rsk/R-BTC-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
-        <a href="/assets/img/rsk/R-BTC-logo.png" target="_blank">R-BTC-logo.png</a>
+        <img src="/assets/img/rsk/RBTC-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
+        <a href="/assets/img/rsk/RBTC-logo.png" target="_blank">RBTC-logo.png</a>
       </td>
     </tr>
   </tbody>
 </table>
 
-## tR-BTC (Smart Bitcoin in Testnet)
+## tRBTC (Smart Bitcoin in Testnet)
 
 <table class="table">
   <tbody>
     <tr>
       <td scope="row">Token Name</td>
-      <td>tR-BTC</td>
+      <td>tRBTC</td>
     </tr>
     <tr>
       <td scope="row">Total Supply</td>
-      <td>21,000,000 tR-BTC</td>
+      <td>21,000,000 tRBTC</td>
     </tr>
     <tr>
       <td scope="row">Circulating supply</td>
@@ -110,12 +111,6 @@ See [supported wallets](/wallet/use/).
     </a>
     </div>
     <div class="item">
-        <a href="https://www.bitfinex.com/" target="blank">
-        <img src="https://rsk.co/img/exchanges/10-bitfinex.png" alt="Bitfinex">
-        <a class="company-name" href="https://www.bitfinex.com/" target="blank">Bitfinex</a>
-    </a>
-    </div>
-    <div class="item">
         <a href="https://www.coinall.com/" target="blank">
         <img src="https://rsk.co/img/exchanges/2-coinalll.png" alt="Coinall">
         <a class="company-name" href="https://www.coinall.com/" target="blank">Coinall</a>
@@ -125,12 +120,6 @@ See [supported wallets](/wallet/use/).
         <a href="https://www.coinbene.com/" target="blank">
         <img src="https://rsk.co/img/exchanges/3-coinbene.png" alt="CoinBene">
         <a class="company-name" href="https://www.coinbene.com/" target="blank">CoinBene</a>
-    </a>
-    </div>
-    <div class="item">
-        <a href="https://www.cashierest.com/">
-        <img src="https://rsk.co/img/exchanges/5-cashierest.png" alt="Cashirest">
-        <a class="company-name" href="https://www.cashierest.com/">Cashierest</a>
     </a>
     </div>
     <div class="item">
@@ -155,6 +144,42 @@ See [supported wallets](/wallet/use/).
         <a href="https://bitso.com/?l=en" target="blank">
         <img src="https://rsk.co/img/exchanges/4-bitso.png" alt="Bitso">
         <a class="company-name" href="https://bitso.com/?l=en" target="blank">Bitso</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://www.kucoin.com/" target="blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/logo_kucoin.png" alt="kucoin">
+        <a class="company-name" href="https://www.kucoin.com/" target="blank">Kucoin</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://www.bitfinex.com/" target="blank">
+        <img src="https://www.rifos.org/assets/img/exchanges/bitfinex-1.png" alt="bitfinex">
+        <a class="company-name" href="https://www.bitfinex.com/" target="blank">Bitfinex</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://liquality.io/" target="blank">
+        <img src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
+        <a class="company-name" href="https://liquality.io/" target="blank">Liquality</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://rbtcswap.app/" target="blank">
+        <img src="/assets/img/rsk/exchanges/RBTCSwap.png" alt="RBTCSwap">
+        <a class="company-name" href="https://rbtcswap.app/" target="blank">rBTC Swap</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://www.sovryn.app/" target="blank">
+        <img src="/assets/img/rsk/exchanges/sovryn-crypto-ninjas.jpg" alt="Sovryn">
+        <a class="company-name" href="https://www.sovryn.app/" target="blank">Sovryn</a>
+    </a>
+    </div>
+    <div class="item">
+        <a href="https://exolix.com/" target="blank">
+        <img src="/assets/img/rif/exchanges/exolix_logo.png" alt="Exolix">
+        <a class="company-name" href="https://exolix.com/" target="blank">Exolix</a>
     </a>
     </div>
 </div>

@@ -120,7 +120,7 @@ A logback configuration example can be downloaded from [here](https://github.com
 If you're running a node [using the release jar file](/rsk/node/install/java) use the following command:
 
 ```bash
-java -cp rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start -Dlogback.configurationFile=path/to/logback.xml
+java -cp rskj-core-2.2.0-PAPYRUS-all.jar -Dlogback.configurationFile=/full/path/to/logback.xml co.rsk.Start
 ```
 
 #### Using logback with a compiled node
@@ -128,7 +128,7 @@ java -cp rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start -Dlogback.configurationFil
 If you're running a node [by compiling the code](/rsk/node/install/java) on VM Options *add*:
 
 ```shell
--Dlogback.configurationFile=path/to/logback.xml
+-Dlogback.configurationFile=/full/path/to/logback.xml
 ```
 
 > Note: path should be written without abbreviations (full path)

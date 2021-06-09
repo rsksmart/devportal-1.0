@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Integrate your wallet with RNS
-tags: rns, wallet, javascript, integrate
+tags: rif, rns, javascript, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 The first thing you need to do is to register the name of your wallet now! Search for it here:

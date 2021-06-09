@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Improvement Proposals
+tags: rskip, improvement, proposal, rsk, rbtc, rif, sk-improvement-proposal, roadmap, github, rbtc, defi, decentralized
 ---
 
 ## RSKIP - RSK Improvement Proposals

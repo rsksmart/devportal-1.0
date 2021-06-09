@@ -2,6 +2,7 @@
 layout: rsk
 title: Setup node on CentOS
 description: "How to install and run an RSK node on CentOS"
+tags: rsk, node, centos, install, rskj,  requirements, how-to, network, configurations, mainnet
 collection_order: 2323
 ---
 

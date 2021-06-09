@@ -1,6 +1,9 @@
 ---
 layout: rsk
 title: Solutions on RSK
+description: 'Check out the many ways our partners leverage the RSK and RIF
+platforms and APIs to create innovative experiences.'
+tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
 ---
 
 Check out the many ways our partners leverage the RSK and RIF
@@ -170,23 +173,138 @@ platforms and APIs to create innovative experiences.
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/solutions/sovryn/">
+            <a href="/solutions/dcent/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/sovryn/logo192.png" alt="started icon">
+                        <img src="/assets/img/solutions/DCentWallet/DCent_Logo.jpg" alt="started icon">
                     </div>
                 </div>
             </a>
             <div class="content">
-                <a href="/solutions/sovryn/">
+                <a href="/solutions/dcent/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Sovryn</p>
-                        <p class="card-desc">Sovryn is a non-custodial and permissionless smart contract-based system for Bitcoin lending, borrowing and margin trading.</p>
+                        <p class="card-title rsk_green">D'Cent</p>
+                        <p class="card-desc">D’CENT Wallet is a new generation of über convenient, biometrically-powered cold storage tools that literally put the management of precious digital assets at your fingertips.</p>
                     </div>
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/solutions/sovryn/">Read More</a>
+                    <a class="green" href="/solutions/dcent/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/liquality/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/liquality/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Liquality</p>
+                        <p class="card-desc">The Liquality Wallet is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/liquality/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/chainlink/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/Chainlink/Chainlink Symbol Blue.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/chainlink/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Chainlink</p>
+                        <p class="card-desc">Connect your smart contracts to the outside world.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/chainlink/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/edge/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/edge/Edge_Primary_Logo_MintNavy.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/edge/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Edge Wallet</p>
+                        <p class="card-desc">Edge is a powerful and easy to use cryptocurrency wallet that allows users to easily control their own private keys with the familiarity and ease of mobile banking.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/edge/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/tenderly/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/Tenderly/Tenderly.png" alt="tenderly icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/tenderly/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Tenderly</p>
+                        <p class="card-desc">Tenderly provides real-time monitoring, alerting and troubleshooting for Smart Contracts. Check out how to make use of Tenderly’s seamless tools to enhance your development processes on RSK.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/tenderly/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/kriptonmarket/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/kriptonmarket/logo.png" alt="kriptonmarket icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/kriptonmarket/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Kripton Market</p>
+                        <p class="card-desc">Kripton integrates with RSK to provide an on/off ramp solution to give users in Latin American countries access to cryptocurrencies and tokens in the RSK network using their local currencies.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/kriptonmarket/">Read More</a>
                 </div>
             </div>
         </div>

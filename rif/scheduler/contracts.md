@@ -1,0 +1,161 @@
+---
+layout: rsk
+title: RIF Scheduler - Contracts
+tags: rif, rif-scheduler, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+---
+
+Repo: [`rsksmart/rif-scheduler-contracts`](https://github.com/rsksmart/rif-scheduler-contracts)
+
+Each service provider should deploy a smart contract to manage the plans,
+receive payments for the service and execute the requested transactions.
+
+The smart contract has four modules:
+
+- [_Admin_](#admin): The Service Provider can create new plans and change withdraw account
+- [_Purchasing_](#purchasing): The requestors can use these methods to pay for the service using tokens
+- [_Scheduling_](#scheduling): Requestors submit the transactions they need to execute and when
+- [_Execution_](#execution): Service Provider executes transactions and receives payment
+
+> See this guide about [how to run a scheduler](../run) on your own.
+
+### Admin
+
+The Service Provider can set up different plans.
+The plans must specify the:
+- Price per execution,
+- The time window (in seconds) within a scheduled execution should run.
+For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:
+
+ `scheduled time` - 10 <= `execution time` <=  `scheduled time` + 10
+- The address of the token used to purchase executions. If the address `0x0` passed as parameter the contract assumes that the executions will be paid with RBTC.
+
+```solidity
+Plan[] public plans;
+function addPlan(uint256 price, uint256 window, IERC677 token) external onlyProvider
+function removePlan(uint256 plan) external onlyProvider
+```
+
+The _payee_ is the account that receives the tokens after execution.
+The Service Provider can change this account by calling `setPayee`.
+
+```solidity
+address public payee
+function setPayee(address payee_) external onlyProvider
+```
+
+### Purchasing
+
+Purchasing executions of a plan can be done in three ways:
+
+- ERC-20: Use `purchase` after performing a ERC-20 `approve`
+- ERC-677: Use `transferAndCall` with ABI encoded `(uint256 plan, uint256  quantity)`
+- RBTC: Use `purchase` sending an RBTC value. This only available for plans having set the token address to `0x0`
+
+In all of them, the requestor can choose the amount of transaction executions
+that they want to purchase at the given price.
+
+```solidity
+function purchase(uint256 plan, uint256 quantity) external payable
+```
+
+### Scheduling
+The executions have an **id**. Use this hash function to calculate it:
+
+```js
+abi.encode(execution.requestor, execution.plan, execution.to, execution.data, execution.gas, execution.timestamp, execution.value)
+```
+
+Submit new transactions to be executed by the Service Provider.
+Scheduling can be done only after purchasing a plan.
+When scheduling you must specify this fields:
+
+- `plan`: The plan id the requestor wants to use for the execution
+- `to`: The receiver of the scheduled transaction
+- `data`: The _data_ field of the transaction
+- `gas`: Set a _gas limit_ for the transaction
+- `timestamp`: When it must be executed, considering the window
+
+```solidity
+function schedule(uint256 plan, address to, bytes calldata data, uint256 gas, uint256 timestamp) external payable
+```
+
+It is possible to schedule multiple transactions at the same time by calling:
+
+```solidity 
+batchSchedule(bytes[] calldata data) external payable
+```
+
+This function receives an array of ABI encoded transactions to be executed and the total RBTC required by them, if necessary.
+Each element of the transaction array should be encoded as follows:
+
+```js
+abi.encode(['uint256', 'address', 'bytes', 'uint256', 'uint256', 'uint256'], [execution.plan, execution.to, execution.data, execution.gas, execution.timestamp, execution.value])
+```
+
+To cancel a scheduling before its execution use:
+
+```solidity
+function cancelScheduling(bytes32 id) external
+```
+
+### Retrieving scheduled transactions data
+
+Query the _state_ of an execution at any time. State machine is defined as:
+
+- `Nonexistent -> Scheduled` -- Nonexistent status is returned by the contract when asking for an execution that has not been registered to the blockchain. This is never assigned. The first valid state is `Scheduled`. 
+- `Scheduled -> Cancelled` -- requestor cancelled execution
+- `Scheduled -> ExecutionSuccessful` -- call was executed in the given time and did not fail
+- `Scheduled -> ExecutionFailed` -- call was executed in the given time but failed
+- `Scheduled -> Overdue` -- execution window has passed, expected earlier
+- `Overdue -> Refunded` -- refund for overdue execution paid
+
+```solidity
+enum ExecutionState { Scheduled, ExecutionSuccessful, ExecutionFailed, Overdue, Refunded, Cancelled }
+function getState(bytes32 id) public view returns (ExecutionState)
+```
+
+Retrieve the data for a particular scheduled transaction execution using its **id** (computed as described above).
+
+```solidity
+  function getExecutionById(bytes32 id) public view returns (Execution memory execution)
+```
+
+To get the number of transactions for a requestor use:
+
+```solidity
+  function executionsByRequestorCount(address requestor) external view returns (uint256)
+```
+ and list them with:
+```solidity
+  function getExecutionsByRequestor(
+    address requestor,
+    uint256 fromIndex,
+    uint256 toIndex
+  )
+  ```
+ Besides the requestor address, this function also requires `fromIndex` and `toIndex` to enable pagination.
+ 
+
+
+### Execution
+
+The execution is performed by the Service Providers.
+The Service Providers performs the execution of the scheduled transaction by submitting it between `transaction.timestamp - plan.window` and `transaction.timestamp + plan.window`.
+
+```solidity
+function execute(bytes32 id) external nonReentrant
+```
+
+This performs execution in this way:
+
+```solidity
+(bool success, bytes memory result) = payable(execution.to).call{ gas: execution.gas, value: execution.value }(execution.data);
+```
+
+After execution is completed, the Service Provider will receive
+the payment for the execution.
+
+If the transaction is submitted before time window, the execution will be rejected and it will remain scheduled.
+If it is submitted after the time window, it won't be executed an the requestor will be refunded.
+
+In any case the Service Provider is not responsible for the successful execution of the submitted transaction. It will only guarantee that it is submitted as scheduled.

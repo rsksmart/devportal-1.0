@@ -1,9 +1,10 @@
 ---
 layout: rsk
 title: Wallets
+tags: rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
-The following wallets support [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, check [how to use it](#how-to-use) with the tutorials below:
+The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, check [how to use it](#how-to-use) with the tutorials below:
 
 
 <div id="walletCarousel" class="owl-carousel owl-theme">

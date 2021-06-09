@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: JSON-RPC API
+tags: API, json, rpc, json-rpc, transactions, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, mining
 ---
 
 These methods are meant to be used for mining. Mining pools should interact with this API in order to do merged mining.

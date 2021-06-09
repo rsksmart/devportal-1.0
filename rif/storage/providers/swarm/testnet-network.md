@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Connecting to testnet Swarm network
+tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## What is the RIF Storage testnet
@@ -34,10 +35,10 @@ TLDR; RIF Storage is operating a gateway service, so you can interact with Swarm
 
 ### Fund your RSK account:
 
-Since the RIF Storage network is incentivized, you will need both tRIF and tR-BTC to interact with the network. tRIF to pay for your bandwidth costs in the network (the proceedings will go to the nodes hosting and forwarding the files your request) and tR-BTC to pay for the transaction costs in RSK.
+Since the RIF Storage network is incentivized, you will need both tRIF and tRBTC to interact with the network. tRIF to pay for your bandwidth costs in the network (the proceedings will go to the nodes hosting and forwarding the files your request) and tRBTC to pay for the transaction costs in RSK.
 
 Get the coins on any address via the faucets:
-- tR-BTC: [faucet.rsk.co](https://faucet.rsk.co/)
+- tRBTC: [faucet.rsk.co](https://faucet.rsk.co/)
 - tRIF: [faucet.rifos.org](https://faucet.rifos.org/)
 
 Make note of the address that has the coins, you need it for the next step.

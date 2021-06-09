@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Resolver
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 - RSK Mainnet: [`0xD87f8121D44F3717d4bAdC50b24E50044f86D64B`](https://explorer.rsk.co/address/0xd87f8121d44f3717d4badc50b24e50044f86d64b)

@@ -12,7 +12,7 @@ In this tutorial I will show you step-by-step how to create your first front end
 Below is a summary of the steps to be taken to build our front end:
 
 1. Configure Metamask to connect to RSK testnet;
-2. Get some testnet R-BTCs at faucet;
+2. Get some testnet RBTCs at faucet;
 3. Connect Remix with RSK Testnet;
 4. Create, compile and deploy a smart contract on RSK Testnet using Remix;
 5. Initialise the project;
@@ -227,7 +227,7 @@ Then click the button `Deploy`.
 
 ![Deploy and run transactions](/assets/img/tutorials/first-frontend-web3-injected/image-05.png)
 
-> Ensure that you have tR-BTC in your wallet, as this is needed to pay gas fees when deploying the smart contracts. To do so, please follow this guide: [Using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/).
+> Ensure that you have tRBTC in your wallet, as this is needed to pay gas fees when deploying the smart contracts. To do so, please follow this guide: [Using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/).
 
 When a smart contract is deployed with Remix, we can see it in the left panel under deploy and run transactions.
 

@@ -1,30 +1,33 @@
 ---
 layout: rsk
 title: Creating an Issue
+tags: rif, rif-lumino, contribute, payments, node, lumino, sdk, light-client, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
-If you find an issue in Lumino and want to report it, or you want to request a feature. You can make an issue in the github repo, we suggest to create an issue with the following structure:
+If you find an issue in Lumino and want to report it, or if you want to request a feature, you can make an issue in the [GitHub repo](https://github.com/rsksmart/lumino). 
 
-For Feature Requests:
+We suggest creating an issue with the following structure:
+
+## Feature Requests
 
 - Full description of the feature
-- Explanation of why you think it's useful for Lumino.
+- Explanation of why you think it's useful for Lumino
 
-For Bugs:
+## Bugs
 
 - Short description for the problem
-- Setup description (System you're using, Lumino version, RSKj version, etc)
-- Explain exactly what was the bug
+- Setup description (system you're using, Lumino version, RSKj version, etc.)
+- Explain exactly what the bug was
 - Expected behavior
 
-**Creating a Pull Request**
+## Creating a Pull Request
 
 To contribute with the codebase of Lumino, you can open a Pull Request (PR) against our repository.
 
 All PRs should be:
 
-- Self-contained.
-- As short as possible and address a single issue or even a part of an issue. Consider breaking long PRs into smaller ones.
-- It should have a test that allow to verify the fix or functionality
+1. Self-contained.
+2. As short as possible, and they should address a single issue or even a part of an issue. Consider breaking long PRs into smaller ones.
+3. It should have tests that allow the verification of the fix or functionality.
 
-To get you PR merged into the main repository, you should have at least one approved review from our Lumino dev team.
+To get you PR merged into the main repository you should have at least one approval from the Lumino dev team.

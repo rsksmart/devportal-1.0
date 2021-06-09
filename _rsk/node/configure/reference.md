@@ -7,11 +7,18 @@ collection_order: 2410
 render_features: 'tables-with-borders'
 ---
 
+See [CLI flags](../cli/) for command line flag options.
+
 ## Advanced Configuration
 
 For advanced configuration requirements, please refer to this
 [expected configuration file](https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/resources/expected.conf).
 This contains all possible configuration fields parsed by RSKj.
+
+The default values for the config file are defined in this
+[reference config file](https://github.com/rsksmart/rskj/blob/master/rskj-core/src/main/resources/reference.conf);
+and are "inherited" and varied based on the
+[selected network](https://github.com/rsksmart/rskj/tree/master/rskj-core/src/main/resources/config).
 
 ## Guide
 
@@ -208,6 +215,8 @@ Describes the configuration for the RPC protocol.
     * `rpc.providers.web.http.hosts = []`
       is the list of node's domain names or IPs.
       Check [restrictions on valid host names](https://en.wikipedia.org/wiki/Hostname#Restrictions_on_valid_host_names).
+    * **NOTE**: For details on how to connect over HTTP,
+      see [HTTP Transport Protocol](/rsk/node/architecture/json-rpc/#http-transport-protocol "RSK JSON-RPC - HTTP").
   * `rpc.providers.web.ws`
     defines WebSocket configuration:
     * `rpc.providers.web.ws.enabled = [true/false]`
@@ -219,6 +228,8 @@ Describes the configuration for the RPC protocol.
     * `rpc.providers.web.ws.bind_address = address`
       is the WS-RPC server listening interface.
       By default RSK uses `localhost`.
+    * **NOTE**: For details on how to connect over WebSockets,
+      see [Websockets Transport Protocol](/rsk/node/architecture/json-rpc/#websockets-transport-protocol "RSK JSON-RPC - WebSockets").
 * `rpc.modules` lists of different RPC modules.
   If a module is not in the list and enabled,
   its RPC calls are discarded.

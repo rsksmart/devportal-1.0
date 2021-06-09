@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Setup node on Azure
+tags: azure, desktop, rpc, install, rsk, rskj, node, how-to, network, requirements, mainnet
 collection_order: 2331
 ---
 

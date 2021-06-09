@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Token Bridge FAQ
+tags: faqs, defi, rbtc, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets
 ---
 
 ## What is the Token Bridge?
@@ -48,8 +49,8 @@ There is no limit on the total. Hypothetically, the entire circulating supply ca
 
 However, there are daily quotas:
 
-- Daily limit: 1,000,000 tokens
-- Maximum per tx: 10,000 tokens
+- Daily limit: 5,000,000 tokens
+- Maximum per tx: 5,000,000 tokens
 - Minimum per tx: 1 token
 
 ## Can any token be bridged over?

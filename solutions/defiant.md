@@ -40,6 +40,12 @@ Watch these short explainer videos:
 
 ![Defiant RSK Integration](/assets/img/solutions/defiant/defiant_rsk.jpg)
 
+You can access cryptocurrencies and tokens on the RSK network,
+using local currencies in several Latin American countries,
+through [Defiant's integration with Kripton Market](/solutions/kriptonmarket/#integration-with-rsk)!
+
+[![Defiant's integration with Kripton Market](/assets/img/solutions/kriptonmarket/integration-diagram.jpg)](/solutions/kriptonmarket/#integration-with-rsk)
+
 ## Defiant's main characteristics
 
 - **Compatibility**: First wallet working for Bitcoin, RSK, and Ethereum.
@@ -66,7 +72,7 @@ Defiant is your door into this new world and the new ones to come.
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| R-BTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens

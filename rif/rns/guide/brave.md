@@ -43,7 +43,7 @@ The New Network tab will open and ask some questions about the network. For RSK 
 
 ![Brave - Testnet and Mainnet](/rif/rns/guide/images/brave-testnet-and-mainnet.jpg)
 
-Hit Save and close settings. 
+Hit Save and close settings.
 
 ## Getting your RSK account address
 
@@ -78,6 +78,6 @@ You can repeat these steps for the RSK Testnet.
 
 ----
 
-[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Contact us on the RSK community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

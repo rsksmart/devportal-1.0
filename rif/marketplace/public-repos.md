@@ -8,4 +8,6 @@ Check out our public repositories
 - [RIF Marketplace UI](https://github.com/rsksmart/rif-marketplace-ui)
 - [RIF Marketplace Cache](https://github.com/rsksmart/rif-marketplace-cache)
 - [RIF Marketplace NFTS Contract](https://github.com/rsksmart/rif-marketplace-nfts)
+- [RIF Marketplace Storage Contract](https://github.com/rsksmart/rif-marketplace-storage)
+- [RIF Marketplace File Upload Service](https://github.com/rsksmart/rif-marketplace-upload-service)
 - [RIF Marketplace Dev Environment](https://github.com/rsksmart/rif-marketplace-dev)

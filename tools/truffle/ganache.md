@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Ganache
+tags: ganache, tools, rsk, ethereum, smart-contracts, truffle, windows, mac, linux, get-started, how-to
 ---
 
 <style>

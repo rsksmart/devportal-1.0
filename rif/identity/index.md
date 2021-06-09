@@ -1,8 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: rsk
+tags: rlogin, rif, rif-identity, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 # RIF Identity
@@ -52,7 +50,7 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   </div>
 </div>
 
-{% include rif-id/rlogin-integrate.html %}
+![rif-identity-architecture](/rif/identity/assets/img/rif-identity-architecture.png)
 
 <!--
   <div class="row rif_blue_text">

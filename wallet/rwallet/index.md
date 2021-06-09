@@ -3,15 +3,15 @@ layout: rsk
 title: rWallet
 ---
 
-rWallet is an open-source easy to use blockchain wallet. It is the code-base to create your own mobile phone wallet with the most secure blockchain. Send, receive and swap Bitcoin (BTC), smartBitcoin (R-BTC), RIF Token (RIF), Dollar on Chain (DOC) and more coming soon.
+rWallet is an open-source easy to use blockchain wallet. It is the code-base to create your own mobile phone wallet with the most secure blockchain. Send, receive and swap Bitcoin (BTC), smartBitcoin (RBTC), RIF Token (RIF), Dollar on Chain (DOC) and more coming soon.
 
-- 💰 rWallet currently supports: Bitcoin (BTC), smartBitcoin (R-BTC), RIF Token (RIF), Dollar on Chain (DOC). 
+- 💰 rWallet currently supports: Bitcoin (BTC), smartBitcoin (RBTC), RIF Token (RIF), Dollar on Chain (DOC). 
 - 🔒 Provides 100% security — Neither RSK or any 3rd party can access your money or data.
 - 🌐Available in 4 languages: Chinese, English, Spanish and Portuguese
 
 <a href="http://github.com/rsksmart/rwallet" target="_blank" class="green-button">Start building</a>
 
-<a href="https://play.google.com/store/apps/details?id=com.rsk.rwallet.reactnative" target="blank"><img src="/assets/img/rwallet/android/google-play-badge.png" style="width: 160px; margin:0; padding:0;"></a><a href="https://apps.apple.com/us/app/id1489241342" target="blank"><img src="/assets/img/rwallet/ios/app-store-badge.svg" style="width: 145px; margin:0; padding:0;"></a>
+<a href="https://play.google.com/store/apps/details?id=com.rsk.rwallet.v2" target="blank"><img src="/assets/img/rwallet/android/google-play-badge.png" style="width: 160px; margin:0; padding:0;"></a><a href="https://apps.apple.com/us/app/id1489241342" target="blank"><img src="/assets/img/rwallet/ios/app-store-badge.svg" style="width: 145px; margin:0; padding:0;"></a>
 
 ## rWallet Architecture
 

@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Name Price
+tags: rif, rns, rif-name-service, name price, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 - MainNet: [0xd09adf13e482928e47e96dd6f02aad1daf7a5a47](https://explorer.rsk.co/address/0xd09adf13e482928e47e96dd6f02aad1daf7a5a47)

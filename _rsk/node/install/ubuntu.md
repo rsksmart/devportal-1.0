@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Setup node on Ubuntu
+tags: ubuntu, install, rsk, rskj, node, how-to, network, requirements, mainnet
 collection_order: 2322
 ---
 
@@ -32,7 +33,7 @@ Choose `mainnet` and press `Enter` to continue
 
 ## Install via Direct Downloads
 
-You can also download the RSKj Ubuntu Package for Papyrus 2.0.1 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
+You can also download the RSKj Ubuntu Package for Papyrus 2.2.0 and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
 
 ```shell
 # first install openjdk-8-jre or oracle-java8-installer

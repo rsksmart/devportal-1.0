@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Send RIF Tokens through Metamask
+tags: tokens, metamask, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Send RIF Tokens through Metamask
@@ -12,7 +13,7 @@ title: Send RIF Tokens through Metamask
         * Network: Name RSK Mainnet        
         * New RPC URL https://public-node.rsk.co:443
         * Chain ID 30
-        * Symbol R-BTC
+        * Symbol RBTC
         * Block Explorer URL https://explorer.rsk.co
 
 ![](/assets/img/tutorials/send-tokens-through-metamask/metamask-settings.png)

@@ -6,17 +6,15 @@ description: "RIF Marketplace User Guide"
 render_features: 'next-elem-class'
 ---
 
-To use the application and the service we are going to need three things:
+To use the Marketplace application and services, we are going to do the following:
 
 1. An internet browser extension wallet. Read [Compatible wallets](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
 2. RBTC to pay for the transaction cost. See [Getting RBTC](#getting-rbtc)
-3. RIF tokens to buy and sell RNS domains. See [Getting RIF Tokens](#getting-rif-tokens). Also, read [display amount of tokens](#display-amount-of-tokens-in-the-nifty-wallet) on how to view your tokens in your wallet.
+3. RIF tokens to buy/sell RNS domains or rent decentralized Storage. See [Getting RIF Tokens](#getting-rif-tokens). Also, read [display amount of tokens](#display-amount-of-tokens-in-the-nifty-wallet) on how to view your tokens in your wallet.
 
 ### Compatible wallets
 
 The RIF Marketplace can be used seamlessly with the following wallets. To setup your wallet, follow the instructions in [connect to RSK network](#connect-nifty-wallet-to-rsk).
-
-
 
 
 <div class="markdown-light-rounded-border markdown-width40 markdown-horizontal-margin30">
@@ -64,14 +62,14 @@ Find the guide on [Metamask](https://developers.rsk.co/develop/apps/wallets/meta
 
 Since the RIF Marketplace works on top of RSK blockchain, to pay for transactional fees you will need RBTC tokens. This is going to be used to pay for any transaction performed in the RIF Marketplace.
 
-Read the [R-BTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
+Read the [RBTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
 
 
 > If you are using the testnet you can get free funds in the [RSK faucet](https://faucet.rsk.co/)
 
 ### Getting RIF Tokens
 
-The RNS domains in the RIF Marketplace have a value in RIF tokens.
+In addition to RBTC, you are going to need RIF tokens to interact with the RIF Marketplace service. This is one of the main payments methods supported by the Marketplace for buying RNS domains and renting decentralized storage.
 
 Read [RIF Token](https://developers.rsk.co/rif/token/) to find exchanges and more information on the RIF Token.
 

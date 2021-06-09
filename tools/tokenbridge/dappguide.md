@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Token Bridge Dapp Guide
+tags: defi, decentralized, token-bridge, tokens, quick-start, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, guides, tutorial, install, get-started, how-to
 ---
 
 This Decentralized Application helps you to interact with the Token Bridge contracts, to safely cross your tokens between RSK and Ethereum networks. It is available at [tokenbridge.rsk.co](https://tokenbridge.rsk.co/) for mainnet or [testnet.tokenbridge.rsk.co](https://testnet.tokenbridge.rsk.co/) for testnet.

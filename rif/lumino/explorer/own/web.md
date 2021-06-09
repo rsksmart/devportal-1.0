@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Lumino Explorer WEB
+tags: rif, rif-lumino, payments, node, lumino, explorer, sdk, light-client, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Pre requisites
@@ -10,8 +11,8 @@ title: Lumino Explorer WEB
 
 ## Build RIF Lumino Explorer WEB from code
 
-1. Get the [RELEASE.NUMBER] code from [GITHUB.URL]
-2. Go to the path you downloaded or cloned Lumino's code (lets call this path `$RIF_LUMINO_EXPLORER_WEB_PATH`)
+1. Get the code from [the repo](https://github.com/rsksmart/lumino-explorer/)
+2. Go to the path you downloaded or cloned Lumino Explorer's code (let's call this path `$RIF_LUMINO_EXPLORER_PATH` and define `$RIF_LUMINO_EXPLORER_WEB_PATH=$RIF_LUMINO_EXPLORER_PATH/lumino-explorer-web`)
 
 ```bash
 yarn install

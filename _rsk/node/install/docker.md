@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Setup node on Docker
+tags: docker, desktop, macOS, rskj, windows, install, rsk, node, how-to, network, requirements, mainnet
 collection_order: 2321
 ---
 

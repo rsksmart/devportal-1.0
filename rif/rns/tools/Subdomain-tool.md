@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RNS Manager
+tags: rif, rns, rif-name-service, sub-domain, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 It's a sample DApp that could be seen as a component to facilitate the adoption of RNS.

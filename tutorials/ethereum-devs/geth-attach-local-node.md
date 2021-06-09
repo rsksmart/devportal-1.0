@@ -377,7 +377,7 @@ web3.fromWei(eth.getBalance(eth.accounts[1]),"ether")
 
 ![balance in ethers](/assets/img/tutorials/geth-attach-local-node/image-19.png)
 
-On a local node, the pre-configured accounts are funded with a lot of “money”! On the RSK network, this is called `R-BTC`. So I have 1.000.000.000.000 = One trillion of R-BTC!
+On a local node, the pre-configured accounts are funded with a lot of “money”! On the RSK network, this is called `RBTC`. So I have 1.000.000.000.000 = One trillion of RBTC!
 
 ### Balance of a specific account
 
@@ -389,11 +389,11 @@ web3.fromWei(eth.getBalance("0xf6e443fd1c869c6a25d18a9866f3a6c7f8dfb703"),"ether
 
 ![Balance of a specific account](/assets/img/tutorials/geth-attach-local-node/image-20.png)
 
-I do not have any funds in my account, so the next step is to transfer some R-BTC to it.
+I do not have any funds in my account, so the next step is to transfer some RBTC to it.
 
-## Transfer R-BTC
+## Transfer RBTC
 
-I have one trillion R-BTC in account 1 and nothing on the new account. I'd like to transfer 300 billion R-BTC from account 1 to the new account:
+I have one trillion RBTC in account 1 and nothing on the new account. I'd like to transfer 300 billion RBTC from account 1 to the new account:
 
 ```js
 eth.sendTransaction({from:eth.accounts[1], to:"0xf6e443fd1c869c6a25d18a9866f3a6c7f8dfb703", value: web3.toWei(300000000000, "ether")})
@@ -415,7 +415,7 @@ And the result is:
 
 ![Balances after transfer](/assets/img/tutorials/geth-attach-local-node/image-22.png)
 
-Great! The new account has 300 billion R-BTC and account 1 has 700 billion R-BTC.
+Great! The new account has 300 billion RBTC and account 1 has 700 billion RBTC.
 
 ## Geth exit
 

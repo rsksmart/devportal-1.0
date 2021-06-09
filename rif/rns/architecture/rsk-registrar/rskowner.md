@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RSK Owner
+tags: rif, rns, rif-name-service, registrar, rsk-owner, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 - RSK MainNet: [0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1](https://explorer.rsk.co/address/0x45d3e4fb311982a06ba52359d44cb4f5980e0ef1)

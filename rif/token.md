@@ -85,27 +85,6 @@ See [supported wallets](/wallet/use/).
 <div class="owl-carousel owl-theme">
   <div class="item" style="width: 275px;">
     <div class="item">
-      <a href="https://www.bitfinex.com/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/bitfinex-1.png" alt="bitfinex" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-  <div class="item">
-    <a href="https://www.coinbene.com/" rel="nofollow noopener noreferrer" target="_blank">
-      <img src="https://www.rifos.org/assets/img/exchanges/coinbene-blue.png" alt="coinbene" class="img-fluid usecase-logo">
-    </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.cashierest.com/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/cachierest.png" alt="cachierest" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
       <a href="https://www.hotbit.io/" rel="nofollow noopener noreferrer" target="_blank">
         <img src="https://www.rifos.org/assets/img/exchanges/hotbit.png" alt="Hotbit" class="img-fluid usecase-logo">
       </a>
@@ -127,13 +106,6 @@ See [supported wallets](/wallet/use/).
   </div>
   <div class="item" style="width: 275px;">
     <div class="item">
-      <a href="https://www.coinall.com/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/logo_coinall.png" alt="Coinall" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
       <a href="https://www.bithumb.pro/" rel="nofollow noopener noreferrer" target="_blank">
         <img src="https://www.rifos.org/assets/img/exchanges/Bithumb-Global-LOGO_black.png" alt="Bithumb-Global" class="img-fluid usecase-logo">
       </a>
@@ -143,6 +115,27 @@ See [supported wallets](/wallet/use/).
     <div class="item">
       <a href="https://www.liquid.com/buy-bitcoin/" rel="nofollow noopener noreferrer" target="_blank">
         <img src="https://www.rifos.org/assets/img/exchanges/LiquidLogo.jpg" alt="Liquid" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.binance.com/en" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="/assets/img/rif/exchanges/bifinance.png" alt="Binance" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://www.gate.io/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="/assets/img/rif/exchanges/gate_io.png" alt="gate" class="img-fluid usecase-logo">
+      </a>
+    </div>
+  </div>
+  <div class="item" style="width: 275px;">
+    <div class="item">
+      <a href="https://exolix.com/" rel="nofollow noopener noreferrer" target="_blank">
+        <img src="/assets/img/rif/exchanges/exolix_logo.png" alt="Exolix" class="img-fluid usecase-logo">
       </a>
     </div>
   </div>
