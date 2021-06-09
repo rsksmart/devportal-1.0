@@ -9,9 +9,9 @@ layout: 'rsk'
 
 ## What is a Digital Asset?
 
-![CryptovsTokenList](/assets/img/kb/get-crypto-on-rsk/crypto-token-1.jpg)
-
 In broad terms, a digital asset is a non-tangible asset that is created, traded, and stored in a digital format. Using this definition, in the context of blockchains, digital assets include cryptocurrency and crypto tokens.
+
+![CryptovsTokenList](/assets/img/kb/get-crypto-on-rsk/crypto-token-1.jpg)
 
 The blockchain terms; token and cryptocurrency are often used interchangeably, as these are both digital assets on blockchains. The biggest difference between a cryptocurrency and a token is that cryptocurrencies are the native asset of a
 blockchain like BTC, RBTC, or ETH, whereas tokens are built on an existing blockchain, using smart contracts. Most commonly, these are EIP-20 tokens.
@@ -56,3 +56,11 @@ When interacting with blockchain networks, it is important to be aware of this d
 - Fees (or gas) are always paid for in the cryptocurrency, and therefore when transferring tokens, you will still need some cryptocurrency in the same account.
 
 > Note that when talking about tokens, you will see the terms ERC-20 as well as EIP-20. These are both **the same**. At the outset, the process for defining standards for Ethereum, and Ethereum-compatible networks, was called “Ethereum Request for Comment”. This process has since been refined and renamed to “Ethereum Improvement Proposal”.
+
+## Explainer video
+
+Watch this short explainer video on the difference between a Cryptocurrency and a Token to gain a better understanding.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/GWoNxoaIsbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
