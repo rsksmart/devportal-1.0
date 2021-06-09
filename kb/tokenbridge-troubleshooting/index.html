@@ -1002,8 +1002,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 12:10:43 +0000T00:00:00.000Z">2021-06-03</time> | -->
-     6' to read |
+    <!--time role="presentation" datetime="2021-06-09 03:30:38 +0000T00:00:00.000Z">2021-06-09</time> | -->
+     7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/tokenbridge-troubleshooting.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1994,7 +1994,7 @@ To see more specific information, use the form above.</p>
 
 <p>12 - <strong>I don’t see my transaction on the Token Bridge list</strong></p>
 
-<p><strong>Network:</strong> Both</p>
+<p><strong>Network:</strong> N/A</p>
 
 <p><strong>When:</strong> always</p>
 
@@ -2002,12 +2002,20 @@ To see more specific information, use the form above.</p>
 
 <p>13 - <strong>I used the Sovryn Token Bridge</strong></p>
 
+<p><strong>Network:</strong> N/A</p>
+
+<p><strong>When:</strong> always</p>
+
 <p>If you have used <code class="highlighter-rouge">bridge.sovryn.app</code>,
 note that this is <strong>not</strong> the same as the RSK Token Bridge.
 To get support, please ask on the
 <a href="https://discord.com/channels/729675474665603133/813119624098611260" rel="external noopener noreferrer" target="_blank">Sovryn discord group</a>.</p>
 
 <p>14 - <strong>I sent RSK tokens to an Ethereum address</strong></p>
+
+<p><strong>Network:</strong> N/A</p>
+
+<p><strong>When:</strong> always</p>
 
 <p>Note that if you have tokens on the RSK network, such as RIF or RDOC,
 including “crossed” tokens such as rUSDT or rDAI,
@@ -2024,6 +2032,28 @@ If you have done this already,
 and sent the tokens to an address that <strong>is</strong> not under your control -
 where you <strong>do have</strong> the private key or the seed phrase -
 then it may be possible to recover your tokens.</p>
+
+<p>15 - <strong>I have multiple wallets installed, but am only given one option</strong></p>
+
+<p><strong>Network:</strong> N/A</p>
+
+<p><strong>When:</strong> always</p>
+
+<p>Decentralised apps on websites, such as the RSK Token Bridge,
+interact with the blockchain network through a standard interface
+known as a <strong>web3 provider</strong>.
+Each browser wallet attempts to “inject” a web3 provider as soon as it is loaded.
+This means that if you have multiple browser extensions doing the same thing,
+one of them will override the other(s).</p>
+
+<p>In order to avoid this problem, and if you already have multiple wallets installed,
+is to choose which wallet you wish to use, and disable the other ones.
+To do this in in Chrome, enter <code class="highlighter-rouge">chrome://extensions/</code> in your address bar,
+which brings you to a settings screen that lists all of
+the browser extensions that you have installed.
+Click on the toggle button to disable all of the browser extensions
+that inject <strong>web3 providers</strong>, except for the one that you wish to use.
+After this go to the RSK token bridge again, and refresh.</p>
 
 
                   
