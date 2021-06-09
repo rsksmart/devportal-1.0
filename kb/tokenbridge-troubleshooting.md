@@ -165,3 +165,21 @@ If you have done this already,
 and sent the tokens to an address that **is** not under your control -
 where you **do have** the private key or the seed phrase -
 then it may be possible to recover your tokens.
+
+15 - **I have multiple wallets installed, but only am given one option**
+
+Decentralised apps on websites, such as the RSK Token Bridge,
+interact with the blockchain network through a standard interface
+known as a **web3 provider**.
+Each browser wallet attempts to "inject" a web3 provider as soon as it is loaded.
+This means that if you have multiple browser extensions doing the same thing,
+one of them will override the other(s).
+
+In order to avoid this problem, and if you already have multiple wallets installed,
+is to choose which wallet you wish to use, and disable the other ones.
+To do this in in Chrome, enter `chrome://extensions/` in your address bar,
+which brings you to a settings screen that lists all of
+the browser extensions that you have installed.
+Click on the toggle button to disable all of the browser extensions
+that inject **web3 providers**, except for the one that you wish to use.
+After this go to the RSK token bridge again, and refresh.
