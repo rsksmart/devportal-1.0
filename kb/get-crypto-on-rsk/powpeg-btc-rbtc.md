@@ -105,6 +105,8 @@ to the PowPeg address on the Bitcoin network,
 and subsequently inform the Bridge about this transaction.
 The Powpeg subsequently releases bitcoins (RBTC) on the RSK network.
 
+![Peg-In](/assets/img/kb/get-crypto-on-rsk/Bitcoin-RSK-Peg-In.gif)
+
 To summarise, a peg-in:
 
 - Converts BTC to RBTC
@@ -124,6 +126,8 @@ To perform peg-outs, send the bitcoins (RBTC) to the Bridge.
 Then wait for the required number of confirmation blocks,
 after which the Bridge builds the transaction
 to release bitcoins (BTC) on the Bitcoin network. 
+
+![Peg-Out](/assets/img/kb/get-crypto-on-rsk/RSK-Bitcoin-Peg-Out.gif)
 
 To summarise, a peg-out:
 
