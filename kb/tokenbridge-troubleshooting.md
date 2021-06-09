@@ -135,7 +135,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 12 - **I don't see my transaction on the Token Bridge list**
 
-**Network:** Both
+**Network:** N/A
 
 **When:** always
 
@@ -143,12 +143,20 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 13 - **I used the Sovryn Token Bridge**
 
+**Network:** N/A
+
+**When:** always
+
 If you have used `bridge.sovryn.app`,
 note that this is **not** the same as the RSK Token Bridge.
 To get support, please ask on the
 [Sovryn discord group](https://discord.com/channels/729675474665603133/813119624098611260).
 
 14 - **I sent RSK tokens to an Ethereum address**
+
+**Network:** N/A
+
+**When:** always
 
 Note that if you have tokens on the RSK network, such as RIF or RDOC,
 including "crossed" tokens such as rUSDT or rDAI,
@@ -166,7 +174,11 @@ and sent the tokens to an address that **is** not under your control -
 where you **do have** the private key or the seed phrase -
 then it may be possible to recover your tokens.
 
-15 - **I have multiple wallets installed, but only am given one option**
+15 - **I have multiple wallets installed, but am only given one option**
+
+**Network:** N/A
+
+**When:** always
 
 Decentralised apps on websites, such as the RSK Token Bridge,
 interact with the blockchain network through a standard interface
