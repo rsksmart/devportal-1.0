@@ -56,3 +56,7 @@ When interacting with blockchain networks, it is important to be aware of this d
 - Fees (or gas) are always paid for in the cryptocurrency, and therefore when transferring tokens, you will still need some cryptocurrency in the same account.
 
 > Note that when talking about tokens, you will see the terms ERC-20 as well as EIP-20. These are both **the same**. At the outset, the process for defining standards for Ethereum, and Ethereum-compatible networks, was called “Ethereum Request for Comment”. This process has since been refined and renamed to “Ethereum Improvement Proposal”.
+
+> Be sure to check out our next article in this series, 
+about how to get the RSK cryptocurrency, RBTC, 
+by using the PowPeg: [How to get RBTC using RSK’s built in PowPeg](/kb/get-crypto-on-rsk/powpeg-btc-rbtc/)
