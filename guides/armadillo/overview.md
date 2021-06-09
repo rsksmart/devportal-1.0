@@ -9,55 +9,44 @@ tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-min
 
 ## What is Armadillo?
 
-Armadillo is a suite of tools that includes a monitor that controls the bitcoin and RSK networks, checking that the [merged mining](https://mining.rsk.co/) algorithm works as expected.
+Armadillo is a suite of tools that includes a monitor of the bitcoin and RSK networks. The monitor checks that the [merged mining](https://mining.rsk.co/) protocol is working as expected.
 
 Armadillo has the capability to detect some potential threats in advance.
-It determines if there are discrepancies in the information in both networks,
-and any discrepancies found will be catalogued as forks of the RSK mainnet network.
-These forks can potentially be a [double-spend](https://en.wikipedia.org/wiki/Double-spending) attack on the network.
+It checks the Bitcoin blocks and the RSK blocks and determines if there are discrepancies. Using this information Amradillo can detect forks of the RSK mainnet network.
+This is important since a RSK fork can potentially be a [double-spend](https://en.wikipedia.org/wiki/Double-spending) attack on the network.
 
 ### Diving In
 
 It is important to note that Armadillo is not bulletproof,
-the reason for this is in its own nature.
-Armadillo depends on the block’s information retrieved from the Bitcoin network.
-Every block in BTC may or may not have an [RSKtag](/guides/armadillo/glossary/#rsktag/).
-In the best scenario where all BTC mining pools are mining RSK,
-this means that all BTC blocks are going to have an RSKtag in their coinbase,
-in this circumstance, RSK will reach a 100% of BTC hashing power.
+the reason for this is that the information it consumes is probabilitic by nature.
+Armadillo depends on the information provided by merge-mined blocks that can be retrieved from the Bitcoin network.
+Bitcoin blocks may or may not have an [RSKtag](/guides/armadillo/glossary/#rsktag/). An RSKtag contains an RSK block hash and more information that facilitates constructing a fork tree. The RSKtag is generally stored in the last output of the coinbase transaction.
+In the best scenario where all Bitcoin miners are mining RSK, all Bitcoin blocks are going to have an RSKtag in their coinbase,
+in this circumstance, RSK will reach a 100% of Bitcoin hashing power.
 
-In the instance where RSK has 50% of BTC hashing power,
-there will be 50% of BTC blocks that will have an RSKtag.
-Therefore, because it’s known that on average a BTC block is mined every 20 RSK blocks,
-(probabilistically) there will be one RSKtag in BTC blocks for every 40 RSK blocks.
+If, for example, RSK has 50% of Bitcoin hashing power, there will be approximately 50% of Bitcoin blocks that will have an RSKtag.
+In this case, a Bitcoin block will be mined every 20 RSK blocks on average, and therefore there will be one RSKtag in Bitcoin blocks for every 40 RSK blocks. For the rest of this section, we'll assume RSK has 50% of Bitcoin's hashrate.
 
-Under current circumstances, a double-spending attack which goes from 100 to 200 blocks length could be dangerous for a wallet,
-since the average time to have a transaction confirmed is around 120 blocks.
-In comparison, the RSK federation expects 4000 blocks to make a block valid,
-then a fork with more than 4000 blocks could become problematic for RSK.
+Let's consider a wallet or an exchange that waits for 120 blocks to confirm a payment. An attacker will need to revert more than 120 blocks to perform a double-spend attack. 
+Consequently, if a fork is being produced with a length of 120 RSK blocks or more,
+we will see (probabilistically) 3 Bitcoin blocks having RSKtags. We'll refer to each of those blocks as a [Witness Bitcoin block (WB)](/guides/armadillo/glossary/#witness-bitcoin-block/). The first of these 3 Bitcoin blocks marks the beggining of a window of opportunity to alert that the fork could end up in a double-spending attack.
 
-Consequently, if a fork is being produced with a longitude of 120 RSK blocks,
-we will see (tentatively) 3 BTC blocks with RSKtag,
-which will be referred to as [Witness Bitcoin block (WB)](/guides/armadillo/glossary/#witness-bitcoin-block/),
-therefore, we have a window opportunity to alert that the fork could end up in a double-spending attack.
-In conclusion, the faster the Armadillo alert is; the better.
+Since due to the proabilistic nature of merge-mining not all 3 witness blocks could be miners during an attack, the RSK Powpeg expects as many as 4000 blocks to accept a peg-in. Therefore a fork trying to revert a Powpeg peg-in not willing to resign to Bitcoin rewards would produce 100 Witness Bitcoin blocks on average, which is plenty of evidence. 
 
-Also, the more blocks a fork has; the more problematic it could be.
-However, Armadillo will be more accurate in terms of credibility.
-Having more WBs results in more data available for analysis to work out if a fork has bad intentions.
-Finally, if Armadillo is more accurate in terms of quantity of data we can act more precisely about what level of alert should be triggered.
+### Conclusions
 
-Moreover, it is understandable that for certain reasons,
+The longer an RSK fork is, the more dangerous it is. The faster an Armadillo alert can be created and propagated, the better. However early deection also means that there can be more false positives. Waiting for mor WBs result in more accurate diagnosis but less useful alerts, due to increasing false negatives.
+Armadillo strives to provide a balance between accurate and useful alerts.
+
+As we previously stated, the stochastic nature of mining means that 
 the [attacker](https://www.investopedia.com/terms/1/51-attack.asp) could eventually mine less bitcoin blocks in the attack window,
-which would result in the number of WB in account required to take an action.
+which would result in a reduced  number of WB in account required to take an action.
 
-Also, assuming that an attacker has a 51% of RSK hashing power network - about (25,5% BTC Hashing power),
-there is going to be approximately 1 WB with attack information for every 4 WBs.
-Consequently, Armadillo will not be able to anticipate a fork of 120 blocks length in a worst case scenario.
-This is because the first WB could be at the beginning of the fork or at the end,
-in an ideal scenario we will be able to have just 1 WB, and 1 WB is not enough to say that we are being attacked.
-That is the reason why Armadillo is not bulletproof,
-it depends on the hashing power of the network and probability.
+Finally, assuming a wost case scenario where an attacker has a 51% of RSK hashing power of the RSK network - about (25,5% BTC Hashing power),
+we would expect approximately 1 WB with attack information for every 4 honest WBs.
+Consequently, Armadillo will not be able to anticipate a fork of 120 blocks length in this case.
+This is because the first WB could be mined at the beginning of the fork or at the end, and 1 WB is not enough for Armadillo to produce an alert.
+That is the reason why Armadillo is not bulletproof: the utility of this tool depends on the hashing power of the network, the hashing power of the attacker, the budget of the attacker and chance.
 
 Another point to take into consideration is the location in the blockchain where the fork is occurring,
 since it could be taking place in the far past, past, near present,
