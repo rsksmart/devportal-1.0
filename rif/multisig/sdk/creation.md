@@ -10,6 +10,8 @@ There are two ways for creating Multisig accounts:
 - Safe Factory
 - Manual creation through UI
 
+**Important**: all the SDKs and the sample apps described support Safe contracts **v1.2.0** so far.
+
 ## SafeFactory
 It allows the creation of a safe account using the `ProxyFactory` and the `SafeSingleton` addresses.
 
@@ -37,8 +39,11 @@ const safeFactory = new EthersSafeFactory(
 ```
 
 Parameters:
-- `signer: Signer` - Ethers signer
-- `proxyFactoryAddress: str` - Address of the deployed [ProxyFactory contract](https://docs.gnosis.io/safe/docs/contracts_architecture/#5-proxy-factory)
+- `signer: Signer` - [ethers Signer](https://docs.ethers.io/v5/api/signer/#Signer)
+- `proxyFactoryAddress: str` - address of the deployed [ProxyFactory contract](https://docs.gnosis.io/safe/docs/contracts_architecture/#5-proxy-factory)
+- `safeSingletonAddress: str` - address of the deployed [SafeSingleton contract](https://docs.gnosis.io/safe/docs/contracts_architecture/#1-transaction-management-core-contract)
+
+> If you are working on RSK networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
 
 Call the `createSafe` method.
 

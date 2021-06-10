@@ -9,7 +9,7 @@ title: RIF Multisig SDK - transactions
 
 ## Raw Transactions
 
-Raw transactions can be created by using directly the [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package or the [safe-transactions-sdk](https://github.com/rsksmart/).
+Raw transactions can be created by using directly the [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package or the [safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk).
 
 ```ts
 const tx = await safe.createTransaction({
@@ -26,6 +26,8 @@ The `RawTransactionBuilder` provides the possibility to create raw transactions.
 Initialize the `RawTransactionBuilder`.
 
 ```ts
+import { RawTransactionBuilder } from '@rsksmart/safe-transactions-sdk'
+
 const rawTransactionBuilder = new RawTransactionBuilder(safe)
 ```
 
@@ -38,12 +40,16 @@ const tx = await rawTransactionBuilder.rawTransaction(to, value, data)
 
 ## ERC20 Transactions
 
-The `ERC20TransactionBuilder` provides a set of methods related to [ERC20](https://eips.ethereum.org/EIPS/eip-20) transactions, including RIF token.
+The [@rsksmart/safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk) package facilitates the creation of ERC20 transactions.
+
+The `ERC20TransactionBuilder` provides a set of methods related to [ERC20](https://eips.ethereum.org/EIPS/eip-20) transactions, including [RIF token](https://developers.rsk.co/rif/token/).
 
 ### Initialization
 Initialize the `ERC20TransactionBuilder`.
 
 ```ts
+import { ERC20TransactionBuilder } from '@rsksmart/safe-transactions-sdk'
+
 const erc20TransactionBuilder = new ERC20TransactionBuilder(safe, ERC20Token)
 ```
 

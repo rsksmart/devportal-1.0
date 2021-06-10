@@ -3,6 +3,10 @@ layout: rsk
 title: RIF Multisig SDK - transaction confirmation
 ---
 
+**Required packages**:
+- [@gnosis.pm/safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
+- [@gnosis.pm/safe-service-client](https://www.npmjs.com/package/@gnosis.pm/safe-service-client) (still in alpha version as June 2021).
+
 Transactions confirmation can be on-chain and off-chain.
 
 ## Off-chain signature
@@ -13,7 +17,14 @@ Off-chain signature consists in adding the signature to the transaction object, 
 const signature = await safeSdk.signTransaction(safeTransaction)
 ```
 
-This implies that the signature must be published in a different way, using the [safe-transactions-service])(https://github.com/gnosis/safe-transaction-service). **Further details to be added here**
+This implies that the signature must be published through the [Safe Transaction Service API](https://github.com/gnosis/safe-transaction-service), using the [@gnosis.pm/safe-service-client](https://www.npmjs.com/package/@gnosis.pm/safe-service-client).
+
+```ts
+const safeService = new SafeServiceClient(SAFE_TRANSACTION_SERVICE_URL)
+
+const safeTxHash = await safeCoreSdk.getTransactionHash(transaction)
+await safeServiceClient.confirmTransaction(safeTxHash, signature.data)
+```
 
 
 ## On-chain signature
