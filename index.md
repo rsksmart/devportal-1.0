@@ -10,7 +10,7 @@ The Developer Portal is the home for RSK documentation for end users and develop
     <ul id="card-list" class="row">
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quick-start/">
+            <a href="/guides/quickstart/">
             <div class="icon started h-100">
             <div class="icon-cont text-center my-auto">
             <img src="/assets/img/features/started-icon.png" alt="started icon">
