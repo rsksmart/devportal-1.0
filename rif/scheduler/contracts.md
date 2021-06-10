@@ -97,6 +97,8 @@ To cancel a scheduling before its execution use:
 ```solidity
 function cancelScheduling(bytes32 id) external
 ```
+When the scheduled transactions is cancelled, the contract refunds any value transferred during the schedule and increases the plan balance for the requestor.
+Please notice, that it's possible to cancel only `Scheduled` and `Overdue` transaction executions.
 
 ### Retrieving scheduled transactions data
 
@@ -110,7 +112,7 @@ Query the _state_ of an execution at any time. State machine is defined as:
 - `Overdue -> Refunded` -- refund for overdue execution paid
 
 ```solidity
-enum ExecutionState { Scheduled, ExecutionSuccessful, ExecutionFailed, Overdue, Refunded, Cancelled }
+enum ExecutionState { Nonexistent, Scheduled, ExecutionSuccessful, ExecutionFailed, Overdue, Refunded, Cancelled }
 function getState(bytes32 id) public view returns (ExecutionState)
 ```
 
