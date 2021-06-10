@@ -85,6 +85,11 @@ See [supported wallets](/wallet/use/).
 
 ## Exchanges
 
+Looking for [RIF Token](/rif/token/)?
+
+You can purchase the RIF Token using the [exchanges](/rif/token/#exchanges) listed here,
+or use the exchanges listed below👇 to buy RBTC.
+
 <div class="owl-carousel owl-theme">
     <div class="item">
         <a href="https://www.liquid.com/" target="blank">
