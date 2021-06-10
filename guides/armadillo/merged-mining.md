@@ -84,7 +84,6 @@ spaced 64 blocks between them.
 
 ![Commit-to-parent-vector](/assets/img/guides/armadillo/boxes-bytes-cpv.jpg)
 
-Hence, ranges of consecutive 64 blocks will have the same CPV.
 The data representation of the Commit to Parent Vector (CPV).
 The CPV helps to understand if the RSKtag found in every subsequent BTC block follows the mainchain path or not.
 If there is a mismatch in the CPV bytes it means there is an ongoing fork which could end in a double-spend attack.
