@@ -9,7 +9,7 @@ tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-min
 
 ## What is Armadillo?
 
-Armadillo is a suite of tools that includes a monitor of the bitcoin and RSK networks. The monitor checks that the [merged mining](https://mining.rsk.co/) protocol is working as expected.
+Armadillo is a suite of tools that monitors the bitcoin and RSK networks. The monitor checks that the [merged mining](https://mining.rsk.co/) protocol is working as expected.
 
 Armadillo has the capability to detect some potential threats in advance.
 It checks the Bitcoin blocks and the RSK blocks and determines if there are discrepancies. Using this information Amradillo can detect forks of the RSK mainnet network.
@@ -35,18 +35,18 @@ Since due to the proabilistic nature of merge-mining not all 3 witness blocks co
 
 ### Conclusions
 
-The longer an RSK fork is, the more dangerous it is. The faster an Armadillo alert can be created and propagated, the better. However early deection also means that there can be more false positives. Waiting for mor WBs result in more accurate diagnosis but less useful alerts, due to increasing false negatives.
+The longer an RSK fork is, the more dangerous it is. The faster an Armadillo alert can be created and propagated, the better. However, early detection also means that there can be more false positives. Waiting for more WBs results in more accurate diagnosis but less useful alerts, due to increasing false negatives.
 Armadillo strives to provide a balance between accurate and useful alerts.
 
 As we previously stated, the stochastic nature of mining means that 
 the [attacker](https://www.investopedia.com/terms/1/51-attack.asp) could eventually mine less bitcoin blocks in the attack window,
-which would result in a reduced  number of WB in account required to take an action.
+which would result in a reduced number of WBs in account required to take an action.
 
-Finally, assuming a wost case scenario where an attacker has a 51% of RSK hashing power of the RSK network - about (25,5% BTC Hashing power),
+Finally, assuming a worst case scenario where an attacker has a 51% of RSK hashing power of the RSK network - about (25.5% BTC Hashing power),
 we would expect approximately 1 WB with attack information for every 4 honest WBs.
-Consequently, Armadillo will not be able to anticipate a fork of 120 blocks length in this case.
+Consequently, in this case, Armadillo will not be able to anticipate a fork with a length of 120 blocks.
 This is because the first WB could be mined at the beginning of the fork or at the end, and 1 WB is not enough for Armadillo to produce an alert.
-That is the reason why Armadillo is not bulletproof: the utility of this tool depends on the hashing power of the network, the hashing power of the attacker, the budget of the attacker and chance.
+For this reason, Armadillo is not bulletproof: The utility of this tool depends on a combination of the hashing power of the network, the hashing power of the attacker, the budget of the attacker, and an element of chance.
 
 Another point to take into consideration is the location in the blockchain where the fork is occurring,
 since it could be taking place in the far past, past, near present,
