@@ -3,7 +3,6 @@ layout: rsk
 title: RIF Multisig SDK - transactions
 ---
 
-
 **Required packages**:
 - [safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk)
 - [safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
