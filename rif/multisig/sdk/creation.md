@@ -26,7 +26,7 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
 
 Create a SafeFactory instance.
 
-```
+```ts
 import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk'
 
 const safeFactory = new EthersSafeFactory(
@@ -42,7 +42,7 @@ Parameters:
 
 Call the `createSafe` method.
 
-```
+```ts
 const safeSdk = await safeFactory.createSafe({
   owners: ['0x1234...', '0xabcd...', '0x0987...'],
   threshold: 2

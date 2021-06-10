@@ -5,14 +5,14 @@ title: RIF Multisig SDK
 **Important**: all the SDKs and the sample apps described below support Safe contracts **v1.2.0** and ethers.js **v5** so far.
 
 The suite of SDKs is composed by:
-- [safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
-- [safe-factory-sdk](https://github.com/rsksmart/safe-factory-sdk)
-- [safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk)
-- [safe-service-client](https://www.npmjs.com/package/@gnosis.pm/safe-service-client) (still in alpha version as June 2021)
+- [@gnosis.pm/safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
+- [@rsksmart/safe-factory-sdk](https://github.com/rsksmart/safe-factory-sdk)
+- [@rsksmart/safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk)
+- [@gnosis.pm/safe-service-client](https://www.npmjs.com/package/@gnosis.pm/safe-service-client) (still in alpha version as June 2021)
 
 
 Use the suite of SDKs to:
-- [Create multisig wallets choosing its owners and threshold](creation)
+- [Create multisig wallets choosing owners and threshold](creation)
 - [CRUD owners](policies/#owners)
 - [CRUD threshold](policies/#threshold)
 - [Receive RBTC (gas)](receiving/#rbtc)

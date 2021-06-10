@@ -5,11 +5,11 @@ title: RIF Multisig SDK - Transaction listing
 
 **Required packages**:
 
-- [safe-service-client](https://www.npmjs.com/package/@gnosis.pm/safe-service-client) (still in alpha version as June 2021), client SDK to facilitate the interaction with the [Safe Transaction Service API](https://github.com/gnosis/safe-transaction-service).
+- [@gnosis.pm/safe-service-client](https://www.npmjs.com/package/@gnosis.pm/safe-service-client) (still in alpha version as June 2021), client SDK to facilitate the interaction with the [Safe Transaction Service API](https://github.com/gnosis/safe-transaction-service).
 
 ## SafeServiceClient initialization
 
-```
+```ts
 import SafeServiceClient from "@gnosis.pm/safe-service-client";
 
 const safeService = new SafeServiceClient(SAFE_TRANSACTION_SERVICE_URL)
@@ -19,7 +19,7 @@ const safeService = new SafeServiceClient(SAFE_TRANSACTION_SERVICE_URL)
 
 It retrieves the list of safes for which the account provided is among the owners.
 
-```
+```ts
 const safesByOwner: OwnerResponse = await safeServiceClient.getSafesByOwner(
     ownerAddress
 );
@@ -32,7 +32,7 @@ Parameters:
 
 With the list of safe addresses previously retrieved, we need to collect all the pending transactions for each safe address.
 
-```
+```ts
 const pendingTransactions = await safeService.getPendingTransactions(safeAddress);
 ```
 
@@ -41,7 +41,8 @@ Parameters:
 - `nonce?: number` - optional, it is used to filter the transactions with nonce greater than or equal to the one specified.
 
 It uses the following query to retrieve all transactions:
-```
+
+```ts
 const PENDING_TRANSACTIONS_URL = /safes/${safeAddress}/multisig-transactions/?executed=false&nonce__gte=${nonce}`
 ```
 
@@ -50,7 +51,7 @@ For checking if a transaction has been confirmed by an owner, we need to check t
 
 Transaction format:
 
-```
+```json
 {
     "safe": "string",
     "to": "string",
@@ -68,12 +69,11 @@ Transaction format:
     ],
     "signatures": "string"
 }
-    
 ```
 
 Each confirmation has the following format:
 
-```
+```json
 {
     "owner": "string",
     "submissionDate": "2021-06-10T08:55:22.014Z",
@@ -88,7 +88,7 @@ So to verify if a transaction is pending because of a specific owner approval, w
 
 With the list of safe addresses previously retrieved, we need to collect all the transactions (either pending or executed) for each safe address.
 
-```
+```ts
 const transactionHistory = await safeServiceClient.getMultisigTransactions(safeAddress)
 ```
 
@@ -97,13 +97,13 @@ const transactionHistory = await safeServiceClient.getMultisigTransactions(safeA
 Right now the `safe-service-client` package doesn't provide a method to retrieve all the **past** transactions, so we need to query the [Safe Transaction Service API](https://github.com/gnosis/safe-transaction-service) URL directly. 
 With the list of safe addresses previously retrieved, we need to collect all the **past** transactions for each safe address.
 
-```
+```ts
 const url = `${SAFE_TRANSACTION_SERVICE_URL}/api/v1/safes/${safe}/all-transactions/?queued=false&executed=true`;
 ```
 
 So we could use the [axios package](https://github.com/axios/axios#axios) to fetch data.
 
-```
+```ts
 import axios from 'axios';
 
 const axiosResponse = await axios.get(url);

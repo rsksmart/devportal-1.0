@@ -4,7 +4,7 @@ title: RIF Multisig SDK - policies
 ---
 
 **Required packages**:
-- [safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
+- [@gnosis.pm/safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
 
 Each multisig account is associated to a list of owners (possibly with one single owner) and a threshold.
 
@@ -21,21 +21,23 @@ The [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package provides a 
 ## Owners
 
 Add a new owner to the Multisig account.
-```
+
+```ts
 // IMPORTANT! keep in mind that the new threshold cannot be greater than the ACTUAL number of owners (before executing the transaction)
 const newThreshold = <N> 
 const ownerTx = await safe.getAddOwnerTx(newOwner, newThreshold)
 ```
 
 Remove a new owner to the Multisig account.
-```
+
+```ts
 // IMPORTANT! keep in mind that the new threshold cannot be greater than the ACTUAL number of owners (before executing the transaction)
 const newThreshold = <N> 
 const ownerTx = await safe.getRemoveOwnerTx(existingOwner, newThreshold)
 ```
 
 Replace an owner with a new one.
-```
+```ts
 const ownerTx = await safe.getSwapOwnerTx(oldOwner, newOwner)
 ```
 
@@ -44,7 +46,7 @@ const ownerTx = await safe.getSwapOwnerTx(oldOwner, newOwner)
 
 
 Change the threshold.
-```
+```ts
 // IMPORTANT! keep in mind that the new threshold cannot be greater than the ACTUAL number of owners (before executing the transaction)
 const newThreshold = <N> 
 const ownerTx = await safe.getChangeThresholdTx(newThreshold)

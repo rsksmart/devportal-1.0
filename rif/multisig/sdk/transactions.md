@@ -4,14 +4,14 @@ title: RIF Multisig SDK - transactions
 ---
 
 **Required packages**:
-- [safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk)
-- [safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
+- [@rsksmart/safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk)
+- [@gnosis.pm/safe-core-sdk](https://github.com/gnosis/safe-core-sdk)
 
 ## Raw Transactions
 
 Raw transactions can be created by using directly the [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package or the [safe-transactions-sdk](https://github.com/rsksmart/).
 
-```
+```ts
 const tx = await safe.createTransaction({
       to,
       data,
@@ -25,13 +25,13 @@ The `RawTransactionBuilder` provides the possibility to create raw transactions.
 
 Initialize the `RawTransactionBuilder`.
 
-```
+```ts
 const rawTransactionBuilder = new RawTransactionBuilder(safe)
 ```
 
 Create the transaction.
 
-```
+```ts
 const tx = await rawTransactionBuilder.rawTransaction(to, value, data)
 ```
 
@@ -43,34 +43,37 @@ The `ERC20TransactionBuilder` provides a set of methods related to [ERC20](https
 ### Initialization
 Initialize the `ERC20TransactionBuilder`.
 
-```
+```ts
 const erc20TransactionBuilder = new ERC20TransactionBuilder(safe, ERC20Token)
 ```
+
 Parameters:
 - `safe: Safe` - a [Safe instance](https://github.com/gnosis/safe-core-sdk/blob/main/packages/safe-core-sdk/src/Safe.ts)
 - `ERC20Token: Contract` - an [ethers.js Contract](https://docs.ethers.io/v5/api/contract/contract/) representing the ERC20 token
 
 ### Transfer transaction
 
-```
+```ts
 const safeTransaction = await erc20TransactionBuilder.transfer(
   to,
   transfer
 )
 ```
+
 Parameters:
 - `to: string` - the address will receive the amount of token specified with `transfer`
 - `transfer: BigNumber` - the amount of token will be transferred to address `to`
 
 ### TransferFrom transaction
 
-```
+```ts
 const safeTransaction = await erc20TransactionBuilder.transferFrom(
   from,
   to,
   value
 )
 ```
+
 Parameters:
 - `from: string` - the address from which transfer the amount of token specified with `value`
 - `to: string` - the address will receive the amount of token specified with `transfer`
@@ -79,19 +82,20 @@ Parameters:
 
 > To execute the `transferFrom` successfully, the `from` address should explicitly authorize the safe account to spend an amount equal to or greater than `value`. Such operation can be authorized through the `approve` method of the `ERC20Token` Contract.
 
-```
+```ts
 const fromToken = await MockERC20Token.connect(userFrom)
 await fromToken.approve(safe.getAddress(), value)
 ```
 
 ### Approve transaction
 
-```
+```ts
 const safeTransaction = await erc20TransactionBuilder.approve(
   spender,
   amount,
 )
 ```
+
 Parameters:
 - `spender: string` - the address allowed to withdraw up to the amount of token specified with `amount`
 - `amount: BigNumber` - the maximum amount allowed to be withdrawn

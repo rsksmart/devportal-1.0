@@ -9,7 +9,7 @@ Transactions confirmation can be on-chain and off-chain.
 
 Off-chain signature consists in adding the signature to the transaction object, without actually interacting with the contract. 
 
-```
+```ts
 const signature = await safeSdk.signTransaction(safeTransaction)
 ```
 
@@ -20,20 +20,21 @@ This implies that the signature must be published in a different way, using the 
 
 On-chain signature consists in interacting directly with the safe account hence no further action is required to make it available to other users.
 
-```
+```ts
 const txHash = await safeSdk.getTransactionHash(safeTransaction)
 const approveTxResponse = await safeSdk.approveTransactionHash(txHash)
 await approveTxResponse.wait()
 ```
 
 It is also possible to retrieve all the owners who approved a transaction:
-```
+
+```ts
 const ownersWhoApproved = await safeSdk.getOwnersWhoApprovedTx(txHash)
 ```
 
 ## Transaction execution
 
-```
+```ts
 const txResponse = await safeSDk.executeTransaction(safeTransaction)
 await txResponse.wait()
 ```

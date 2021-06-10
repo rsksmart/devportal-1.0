@@ -4,7 +4,7 @@ title: RIF Multisig SDK - rejecting
 ---
 
 **Required packages**:
-- [safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk)
+- [@rsksmart/safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk)
 
 Transaction rejection implies the creation and execution of a new transaction with the same `nonce` of the one we want to reject.
 Once the rejection transaction is created, it must be approved and executed according to the threshold currently set to the safe.
@@ -17,7 +17,7 @@ For instance, if the current threshold is set to 2, rejecting a transaction will
 
 ## Rejection transaction creation
 
-```
+```ts
 import { rejectTx } from '@rsksmart/safe-transactions-sdk'
 
 const rejectionTx = await rejectTx(safe, transaction)
