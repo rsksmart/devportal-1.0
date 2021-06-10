@@ -29,17 +29,21 @@ this solution will also work for RSK and can be submitted to the RSK network for
 
 - The Solution does not satisfy Bitcoin network difficulty,
 but satisfies RSK’s network difficulty.
-Consequently, the solution will be submitted to the RSK network along the RSK block referenced,
+Consequently, the solution will be submitted to the RSK network along with the referenced RSK block,
 but not to the Bitcoin network.
 
 - The solution only satisfies the pool share difficulty,
-and it is not submitted to any network, but only used for accounting of miners' work.
+and it is not submitted to any network. It is only used for accounting of miners' work.
 
 The reference to RSK’s block is called [RSKtag](/guides/armadillo/glossary/#rsktag/),
-which currently contains, among other data, a 20 bytes hash of the RSK block. When a Bitcoin proof of work solution is submitted to the RSK node by the mining pool, the node builds an [SPV proof](/guides/armadillo/glossary/#spv-proof) from the Bitcoin block to the RSKtag, and then submits everything to the RSK network. This proof allow other RSK nodes to verify the proof of work.
+which currently contains, among other data, a 20 byte hash of the RSK block.
+When a Bitcoin proof of work solution is submitted to the RSK node by the mining pool,
+the node builds an [SPV proof](/guides/armadillo/glossary/#spv-proof) 
+from the Bitcoin block to the RSKtag, and then submits everything to the RSK network.
+This proof allows other RSK nodes to verify the proof of work.
 
-Prior to Wasabi, RSKtag was the 32 bytes hash of the RSK block, but
-this hash along was not providing sufficient information to Armadillo to detect forks.
+Prior to Wasabi, RSKtag was the 32 byte hash of the RSK block,
+but this hash along did not provide sufficient information to Armadillo for fork detection.
 If some Bitcoin block contains the RSKtag,
 may or may not be in the RSK mainchain.
 If the block hash in an RSKtag does not correspond to a block in the RSK mainchain,
@@ -80,18 +84,18 @@ spaced 64 blocks between them.
 
 ![Commit-to-parent-vector](/assets/img/guides/armadillo/boxes-bytes-cpv.jpg)
 
-Hence, ranges of consencutive 64 blocks will have the same CPV.
+Hence, ranges of consecutive 64 blocks will have the same CPV.
 The data representation of the Commit to Parent Vector (CPV).
 The CPV helps to understand if the RSKtag found in every subsequent BTC block follows the mainchain path or not.
 If there is a mismatch in the CPV bytes it means there is an ongoing fork which could end in a double-spend attack.
 
 Hence, ranges of 64 blocks will have the same CPV.
-The CPV helps to determind if the RSKtag found in every subsequent Bitcoin block follows the mainchain fork or not.
-If there is a mismatch in the CPV bytes for blocks in the same 64 block range, it means there is an ongoing fork which could end in a double-spend attack.
+The CPV helps to determine whether the RSKtag found in every subsequent Bitcoin block follows the mainchain fork.
+If there is a mismatch in the CPV bytes for blocks in the same 64 block range, it means there is an ongoing fork, which could end in a double-spend attack.
 
 Let’s go over an example:
 
-Supposing we have to calculate the CPV field for a RSK block at height 5000 (BN = 5000).
+Suppose we have to calculate the CPV field for a RSK block at height 5000 (BN = 5000).
 Then every byte in the 7 CPV array will be formed with a Least Significant Byte of the Bitcoin block ID (LSB) positioned at RSK height,
 calculated for the formula  **⎣(BN -1 ) 64⎦ 64 -64\*i**, where i is the position of each byte in the array (0 ⋜ i < 7).
 Then the CPV will be using the least significant byte for the Bitcoin Block ID at the RSK heights (4992 4928 4864 4800 4736 4672 4608).
@@ -123,7 +127,7 @@ A high number of uncles indicates either an exceptionally abnormal situation of 
 ## Block Number
 
 Block number is the height of the RSK block being merge mined.
-With this information users can detect if a mining pool is merged mining the best block correctly,
-or if it is delayed, or it is mining on its own fork due to a consensus split.
+With this information, users can detect if a mining pool is merge mining the best block correctly,
+if it is delayed, or it is mining on its own fork due to a consensus split.
 
 ![Block Number](/assets/img/guides/armadillo/block-number.png)
