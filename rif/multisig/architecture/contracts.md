@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig Architecture - Safe Contracts
+description: use this set of smart contracts to create multi-signature wallets
+tags: rif gnosis smart-contracts solidity
 ---
 
 There are 3 main contracts involved in RIF Multisig:
