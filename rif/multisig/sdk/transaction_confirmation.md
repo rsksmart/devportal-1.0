@@ -14,6 +14,10 @@ Transactions confirmation can be on-chain and off-chain.
 Off-chain signature consists in adding the signature to the transaction object, without actually interacting with the contract. 
 
 ```ts
+import EthersSafe from '@gnosis.pm/safe-core-sdk'
+
+const safeSdk = await EthersSafe.create({ ethers, safeAddress, providerOrSigner })
+
 const signature = await safeSdk.signTransaction(safeTransaction)
 ```
 
