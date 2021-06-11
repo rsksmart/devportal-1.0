@@ -73,7 +73,7 @@ Parameters:
 - `value`: Ether value.
 - `data`: Data payload.
 - `operation`: Operation type.
-- `safeTxGas`: Fas that should be used for the safe transaction.
+- `safeTxGas`: Gas that should be used for the safe transaction.
 - `baseGas`: Gas costs for data used to trigger the safe transaction.
 - `gasPrice`: Maximum gas price that should be used for this transaction.
 - `gasToken`: Token address (or 0 if ETH) that is used for the payment.
