@@ -10,19 +10,19 @@ The Developer Portal is the home for RSK documentation for end users and develop
     <ul id="card-list" class="row">
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/quick-start">
+            <a href="/guides/quickstart/">
             <div class="icon started h-100">
             <div class="icon-cont text-center my-auto">
             <img src="/assets/img/features/started-icon.png" alt="started icon">
             </div>
             </div>
-            </a><div class="content"><a href="/quick-start">
+            </a><div class="content"><a href="/guides/quickstart/">
             <div class="content-container">
                 <p class="card-title rsk_green">Getting Started</p>
                 <p class="card-desc">SmartBitcoin (RBTC) is linked 1:1 to Bitcoin (1 RBTC = 1 BTC)</p>
             </div>
-            </a><div class="btn-container "><a href="/quick-start">
-                </a><a class="green" href="/quick-start">Read More</a>
+            </a><div class="btn-container "><a href="/guides/quickstart/">
+                </a><a class="green" href="/guides/quickstart/">Read More</a>
             </div>
             </div>
         </div>
