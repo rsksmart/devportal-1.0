@@ -16,7 +16,7 @@ They apply the [proxy pattern](https://blog.openzeppelin.com/proxy-patterns/) to
 
 ## GnosisSafe
 
-It provides the functionalities required to setup a GnosisSafe and to execute the transactions. It also exposes the methods to add, remove or swap the owners and the set a new threshold.
+It provides the functionalities required to setup a GnosisSafe and to execute the transactions. It also exposes the methods to add, remove or swap the owners and set a new threshold.
 
 ### Setup
 
