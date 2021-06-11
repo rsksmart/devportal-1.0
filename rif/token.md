@@ -82,10 +82,10 @@ See [supported wallets](/wallet/use/).
 
 ## Exchanges
 
-Looking for [RBTC Cryptocurrency](/rsk/rbtc/)?
+Looking for [RBTC](/rsk/rbtc/)?
 
-You can purchase the RBTC cryptocurrency using the [exchanges](/rsk/rbtc/#exchanges) listed here,
-or use the exchanges listed below👇 to buy the RIF token.
+You can obtain RBTC using [these exchanges](/rsk/rbtc/#exchanges),
+or use the exchanges listed below👇 to obtain the RIF token.
 
 <div class="owl-carousel owl-theme">
   <div class="item" style="width: 275px;">
