@@ -97,8 +97,8 @@ To cancel a scheduling before its execution use:
 ```solidity
 function cancelScheduling(bytes32 id) external
 ```
-When the scheduled transactions is cancelled, the contract refunds any value transferred during the schedule and increases the plan balance for the requestor.
-Please notice, that it's possible to cancel only `Scheduled` and `Overdue` transaction executions.
+When the scheduled transactions are cancelled, the contract refunds any value transferred during the schedule and increases the plan balance for the requestor.
+Please note that it is only possible to cancel `Scheduled` and `Overdue` transaction executions.
 
 ### Retrieving scheduled transactions data
 
