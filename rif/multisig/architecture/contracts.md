@@ -82,7 +82,7 @@ Parameters:
 
 ### approveHash
 
-It marks a hash as approved, hence it can be executed by owners only.
+It marks a hash as approved, hence, it can be executed by owners only.
 
 ```solidity
 function approveHash(bytes32 hashToApprove)
