@@ -129,7 +129,7 @@ Parameters:
 
 ### nonce
 
-The nonce usage prevents replay attacks. Its value is incremented each time a transaction is executed, hence each transaction should have a different nonce. This mechanism allows also the rejection of a transaction before its execution. Once a transaction is created, it can be rejected by creating and executing a new transaction with the same nonce. In that way, the original transaction cannot be executed anymore.
+The nonce usage prevents replay attacks. Its value is incremented each time a transaction is executed, hence each transaction should have a different nonce. This mechanism also allows the rejection of a transaction before its execution. Once a transaction is created, it can be rejected by creating and executing a new transaction with the same nonce. In that way, the original transaction cannot be executed anymore.
 
 ```solidity
 uint256 public nonce;
