@@ -8,7 +8,7 @@ title: RIF Multisig SDK - creation
 
 There are two ways for creating Multisig accounts:
 - Safe Factory
-- Manual creation through UI
+- Manual creation through [Gnosis Safe UI](https://rsk-gnosis-safe.com/#/welcome)
 
 **Important**: all the SDKs and the sample apps described support Safe contracts **v1.2.0** so far.
 
