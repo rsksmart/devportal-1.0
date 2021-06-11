@@ -3,7 +3,7 @@ layout: rsk
 title: RIF Multisig
 ---
 
-The objective of this project is to provide the RSK community with a safe and simple solution to create wallets that require multiple signatures to transact their funds. This kind of wallets are called _multisig wallets_.
+The objective of this project is to provide the RSK community with a safe and simple solution to create wallets that require multiple signatures to transact their funds. These kinds of wallets are called _multisig wallets_.
 
 
 <div class="container the-stack">
@@ -44,3 +44,5 @@ The objective of this project is to provide the RSK community with a safe and si
     </div>
   </div>
 </div>
+
+![Multisig - Steps required](/assets/img/rif-multisig/workflow.png)
