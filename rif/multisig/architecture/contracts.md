@@ -6,9 +6,9 @@ tags: rif gnosis smart-contracts solidity
 ---
 
 There are 3 main contracts involved in RIF Multisig:
-- [GnosisSafe](https://github.com/gnosis/safe-contracts/blob/v1.2.0/contracts/GnosisSafe.sol)
-- [GnosisSafeProxy](https://github.com/gnosis/safe-contracts/blob/v1.2.0/contracts/proxies/GnosisSafeProxy.sol)
-- [GnosisSafeProxyFactory](https://github.com/gnosis/safe-contracts/blob/v1.2.0/contracts/proxies/GnosisSafeProxyFactory.sol)
+- [`GnosisSafe`](https://github.com/gnosis/safe-contracts/blob/v1.2.0/contracts/GnosisSafe.sol)
+- [`GnosisSafeProxy`](https://github.com/gnosis/safe-contracts/blob/v1.2.0/contracts/proxies/GnosisSafeProxy.sol)
+- [`GnosisSafeProxyFactory`](https://github.com/gnosis/safe-contracts/blob/v1.2.0/contracts/proxies/GnosisSafeProxyFactory.sol)
 
 ![Safe contracts overview](/assets/img/rif-multisig/overview.png)
 
@@ -16,7 +16,7 @@ They apply the [proxy pattern](https://blog.openzeppelin.com/proxy-patterns/) to
 
 ![Safe proxy pattern](/assets/img/rif-multisig/proxy.png)
 
-## GnosisSafe
+## `GnosisSafe`
 
 It provides the functionalities required to setup a GnosisSafe and to execute the transactions. It also exposes the methods to add, remove or swap the owners and set a new threshold.
 
@@ -48,7 +48,7 @@ Parameters:
 - `payment`: Value that should be paid
 - `paymentReceiver`: Address that should receive the payment (or 0 if tx.origin)
 
-### getTransactionHash
+### `getTransactionHash`
 
 It calculates the hash of a transaction.
 
@@ -82,7 +82,7 @@ Parameters:
 - `refundReceiver`: Address of receiver of gas payment (or 0 if tx.origin).
 - `_nonce`: Transaction [nonce](#nonce).
 
-### approveHash
+### `approveHash`
 
 It marks a hash as approved, hence, it can be executed by owners only.
 
@@ -95,7 +95,7 @@ Parameters:
 - `hashToApprove`: The hash that should be marked as approved for signatures that are verified by this contract.
 
 
-### execTransaction
+### `execTransaction`
 
 It allows to execute a Safe transaction confirmed by the required number of owners (threshold) and then pays the account that submitted the transaction. The fees are always transferred, even if the user transaction fails.
 
@@ -129,7 +129,7 @@ Parameters:
 - `refundReceiver`: Address of receiver of gas payment (or 0 if tx.origin).
 - `signatures`: Packed signature data ({bytes32 r}{bytes32 s}{uint8 v})
 
-### nonce
+### `nonce`
 
 The nonce usage prevents replay attacks. Its value is incremented each time a transaction is executed, hence each transaction should have a different nonce. This mechanism also allows the rejection of a transaction before its execution. Once a transaction is created, it can be rejected by creating and executing a new transaction with the same nonce. In that way, the original transaction cannot be executed anymore.
 
@@ -139,7 +139,7 @@ uint256 public nonce;
 
 
 
-## GnosisSafeProxy
+## `GnosisSafeProxy`
 
 It is the contract entitled to manage the address and the storage of a Safe. It forwards the requests to the master copy ([GnosisSafe](#gnosisafe)). Its master copy can be changed so the Safe logic is also upgradable, even if it requires the creation of a transaction that must be confirmed by all Safe owners.
 
@@ -167,11 +167,11 @@ function ()
 }
 ```
 
-## GnosisSafeProxyFactory
+## `GnosisSafeProxyFactory`
 
 It allows the creation and the setup of (GnosisSafeProxy)[#gnosissafeproxy] instances and it emits an event upon successful creation.
 
-### createProxy
+### `createProxy`
 
 It allows to create new proxy contact and execute a message call to the new proxy within one transaction.
 
@@ -186,7 +186,7 @@ Parameters:
 - `masterCopy`: Address of master copy.
 - `data`: Payload for message call sent to new proxy contract. It allows the creation of new SafeProxy and its setup in a single transaction.
 
-### ProxyCreation
+### `ProxyCreation`
 
 Event emitted upon successful creation.
 

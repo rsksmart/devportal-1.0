@@ -5,10 +5,10 @@ title: RIF Multisig SDK
 **Important**: all the SDKs and the sample apps described below support Safe contracts **v1.2.0** and ethers.js **v5** so far.
 
 The suite of SDKs is composed by:
-- [@gnosis.pm/safe-core-sdk](https://github.com/gnosis/safe-core-sdk): it provides the core functionalities required to interact with a Safe
-- [@rsksmart/safe-factory-sdk](https://github.com/rsksmart/safe-factory-sdk): it allows the creation of a Safe account without UI interaction
-- [@rsksmart/safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk): it facilitates the transaction creation (raw transactions, ERC20 transactions and rejections) 
-- [@gnosis.pm/safe-service-client](https://www.npmjs.com/package/@gnosis.pm/safe-service-client) (still in alpha version as June 2021): it facilitates the interaction with [Safe Transaction Service API](https://github.com/gnosis/safe-transaction-service).
+- [`@gnosis.pm/safe-core-sdk`](https://github.com/gnosis/safe-core-sdk): it provides the core functionalities required to interact with a Safe
+- [`@rsksmart/safe-factory-sdk`](https://github.com/rsksmart/safe-factory-sdk): it allows the creation of a Safe account without UI interaction
+- [`@rsksmart/safe-transactions-sdk`](https://github.com/rsksmart/safe-transactions-sdk): it facilitates the transaction creation (raw transactions, ERC20 transactions and rejections) 
+- [`@gnosis.pm/safe-service-client`](https://www.npmjs.com/package/@gnosis.pm/safe-service-client) (still in alpha version as June 2021): it facilitates the interaction with [Safe Transaction Service API](https://github.com/gnosis/safe-transaction-service).
 
 ![Multisig - involved SDKs](/assets/img/rif-multisig/packages.png)
 
