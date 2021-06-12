@@ -1010,9 +1010,9 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-08 14:54:39 +0000T00:00:00.000Z">2021-06-08</time> | -->
-     7' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2021-06-07 17:24:53 +0000T00:00:00.000Z">2021-06-07</time> | -->
+     3' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
@@ -1872,27 +1872,43 @@
 
                   <p>Repository: <a href="https://github.com/rsksmart/rif-scheduler-sdk" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">rsksmart/rif-scheduler-sdk</code></a></p>
 
-<p>This is the official sdk for the <a href="https://github.com/rsksmart/rif-scheduler-contracts" rel="external noopener noreferrer" target="_blank">OneShotScheduler</a> smart contract.</p>
+<p>With the RIF Scheduler SDK you can schedule transactions in the RSK network.</p>
 
-<p>This SDK gives you the ability to interact with the <code class="highlighter-rouge">OneShotScheduler</code> contract in a more simple way.</p>
+<p>Features:</p>
+
+<ul>
+  <li>Query and purchase plans</li>
+  <li>Schedule transactions</li>
+  <li>Schedule recurrent transactions</li>
+  <li>Cancel a scheduling</li>
+  <li>Query transactions scheduled and statuses</li>
+</ul>
+
+<p>This is the official SDK for <a href="https://github.com/rsksmart/rif-scheduler-contracts" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">@rsksmart/rif-scheduler-contracts</code></a> smart contract. Use it to interact with the <code class="highlighter-rouge">OneShootScheduler</code> smart contract in a more simple way.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
-<p>rif-scheduler-sdk is built on top of <a href="https://docs.ethers.io/" rel="external noopener noreferrer" target="_blank">ethers</a>.</p>
+<p><code class="highlighter-rouge">@rsksmart/rif-scheduler-sdk</code> is built on top of <a href="https://docs.ethers.io/" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">ethers</code></a>.</p>
 
 <h3 id="installation">Installation</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i @rsksmart/rif-scheduler-sdk ethers
 </code></pre></div></div>
 
+<p>Use <a href="https://explorer.testnet.rsk.co/address/0x0372F6F8C7b2353b546F842Da0C44749664d1203" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">0x0372F6F8C7b2353b546F842Da0C44749664d1203</code></a> for RSK Testnet</p>
+<blockquote>
+  <p>You can run your own instance following <a href="https://developers.rsk.co/rif/scheduler/run/" rel="external noopener noreferrer" target="_blank">this guide</a></p>
+</blockquote>
+
 <h3 id="initialization">Initialization</h3>
+
+<p>First, you will need an <code class="highlighter-rouge">ethers</code> <code class="highlighter-rouge">provider</code> or <code class="highlighter-rouge">signer</code> instance.</p>
 
 <p>In order to create an instance of <code class="highlighter-rouge">RifScheduler</code> you will need an ethers provider or signer.</p>
 
-<p>The provider will only allow <code class="highlighter-rouge">read-only</code> operations, such as <code class="highlighter-rouge">getPlan</code>.
-On the other hand, the signer will allow all operations, such as <code class="highlighter-rouge">purchasePlan</code>, <code class="highlighter-rouge">schedule</code>, etc.</p>
+<p>Using a <code class="highlighter-rouge">provider</code> will only allow <em>read-only</em> operations, such as <code class="highlighter-rouge">getPlan</code>. Using a <code class="highlighter-rouge">signer</code> will allow all operations, such as <code class="highlighter-rouge">purchasePlan</code>, <code class="highlighter-rouge">schedule</code>, etc.</p>
 
-<h4 id="with-metamask">with metamask</h4>
+<h4 id="for-example-to-connect-the-sdk-to-metamask">For example, to connect the SDK to Metamask</h4>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">providers</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">ethers</span><span class="dl">"</span><span class="p">;</span>
@@ -1908,7 +1924,7 @@ On the other hand, the signer will allow all operations, such as <code class="hi
 <span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
 </code></pre></div></div>
 
-<h4 id="with-rpc--ganache">with RPC / Ganache</h4>
+<h4 id="to-connect-the-sdk-to-rpc--ganache">to connect the SDK to RPC / Ganache</h4>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">providers</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">ethers</span><span class="dl">"</span><span class="p">;</span>
@@ -1926,124 +1942,14 @@ On the other hand, the signer will allow all operations, such as <code class="hi
 <span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
 </code></pre></div></div>
 
-<h3 id="obtaining-a-plan">Obtaining a plan</h3>
-
-<p>First of all, you need to get a plan from the service provider, which will give you the price per execution, the payment token and the execution window in seconds, among other things.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">provider</span><span class="p">);</span>
-
-<span class="kd">const</span> <span class="nx">planIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">);</span>
-
-<span class="c1">//  {</span>
-<span class="c1">//    pricePerExecution: 10000000000000;</span>
-<span class="c1">//    window: 300;</span>
-<span class="c1">//    token: 0x...;</span>
-<span class="c1">//    active: true;</span>
-<span class="c1">//  }</span>
-</code></pre></div></div>
-
-<h3 id="purchasing-executions">Purchasing executions</h3>
-
-<p>With the information of the previous step, you can approve and purchase executions to be able to schedule them in the future.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
-
-<span class="kd">const</span> <span class="nx">executionsQuantity</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">totalAmount</span> <span class="o">=</span> <span class="nx">plan</span><span class="p">.</span><span class="nx">pricePerExecution</span><span class="p">.</span><span class="nx">mul</span><span class="p">(</span><span class="nx">executionsQuantity</span><span class="p">)</span>
-
-<span class="c1">// first you need to approve the totalAmount of tokens</span>
-<span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">approveToken</span><span class="p">(</span><span class="nx">plan</span><span class="p">.</span><span class="nx">token</span><span class="p">,</span> <span class="nx">totalAmount</span><span class="p">)</span>
-
-<span class="kd">const</span> <span class="nx">purchaseTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">purchasePlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">,</span> <span class="nx">executionsQuantity</span><span class="p">)</span>
-
-<span class="c1">// we recommend to wait at least 10 confirmations to be sure that your transaction was processed correctly.</span>
-<span class="k">await</span> <span class="nx">purchaseTransaction</span><span class="p">.</span><span class="nx">wait</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="verifying-your-remaining-executions">Verifying your remaining executions</h3>
-
-<p>It will return how many executions you have left.</p>
-
-<p>You will need to purchase some executions if you want to schedule something (see previous step).</p>
-
-<p>This is an optional step, but it is useful because it will give you feedback that everything you have done in the previous steps was correct.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
-
-<span class="kd">const</span> <span class="nx">remainingExecutions</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">remainingExecutions</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">)</span>
-
-<span class="c1">//  2</span>
-</code></pre></div></div>
-
-<h3 id="estimating-the-gas">Estimating the gas</h3>
-
-<p>It can either return the estimated gas or undefined.</p>
-
-<p><strong>When could the result be undefined?</strong></p>
+<p>What you can do with this sdk?</p>
 
 <ul>
-  <li>If there were no funds in the account at the moment of the estimation, it would result undefined, but as soon as funds are available, the result will change automatically.</li>
-  <li>It can also result undefined if the address or any other parameter provided is incorrect, in that case, you would need to provide the correct information before scheduling, to avoid the execution charge on a failed transaction.</li>
+  <li><a href="query-plans">Query plans</a></li>
+  <li><a href="purchasing-plan">Purchase one of this plans</a></li>
+  <li><a href="scheduling">Schedule a transaction for the next minutes</a></li>
+  <li><a href="statuses">Get status</a></li>
 </ul>
-
-<blockquote>
-  <p>In any case you can schedule the execution anyway calculating/approximating the gas manually.</p>
-</blockquote>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">gas</span> <span class="o">=</span> <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">schedulerSDK</span>
-    <span class="p">.</span><span class="nx">estimateGas</span><span class="p">(</span><span class="nx">MyContract</span><span class="p">.</span><span class="nx">abi</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="dl">'</span><span class="s1">&lt;MyContractFunction&gt;</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="nx">arrayOfMyContractFunctionParameters</span><span class="p">])</span>
-
-<span class="c1">// 2000 | undefined</span>
-</code></pre></div></div>
-
-<h3 id="scheduling-a-single-execution">Scheduling a single execution</h3>
-
-<p>Here you can see how to schedule the execution of any smart contract.</p>
-
-<p>This will be executed by the service provider according to the date and time specified in <code class="highlighter-rouge">executedAt</code>.</p>
-
-<p>Keep in mind that the execution will occur in a time frame given by the plan window that you purchased earlier.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
-
-<span class="kd">const</span> <span class="nx">encodedFunctionCall</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">Interface</span><span class="p">(</span><span class="nx">MyContract</span><span class="p">.</span><span class="nx">abi</span><span class="p">).</span><span class="nx">encodeFunctionData</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;MyContractFunction&gt;</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="nx">arrayOfMyContractFunctionParameters</span><span class="p">])</span>
-
-<span class="kd">const</span> <span class="nx">valueToTransfer</span> <span class="o">=</span> <span class="nx">BigNumber</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-
-<span class="kd">const</span> <span class="nx">execution</span> <span class="o">=</span> <span class="nx">executionFactory</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="nx">encodedMethodCall</span><span class="p">,</span> <span class="nx">gas</span><span class="p">,</span> <span class="nx">executeAt</span><span class="p">,</span> <span class="nx">valueToTransfer</span><span class="p">,</span> <span class="nx">yourAccountAddress</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">scheduledExecutionTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">schedule</span><span class="p">(</span><span class="nx">execution</span><span class="p">)</span>
-
-<span class="c1">// we recommend to wait at least 10 confirmations to be sure tha your transaction was processed correctly.</span>
-<span class="k">await</span> <span class="nx">scheduledExecutionTransaction</span><span class="p">.</span><span class="nx">wait</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="verifying-the-status-of-a-scheduled-execution">Verifying the status of a scheduled execution</h3>
-
-<p>You can either provide the execution object (using the <code class="highlighter-rouge">executionFactory</code> function) or the <code class="highlighter-rouge">executionId</code> if you have one already.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">state</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getExecutionState</span><span class="p">(</span><span class="nx">execution</span> <span class="o">|</span> <span class="nx">executionId</span><span class="p">)</span>
-
-<span class="c1">// enum ExecutionState {</span>
-<span class="c1">//   Scheduled = 0,</span>
-<span class="c1">//   ExecutionSuccessful = 1,</span>
-<span class="c1">//   ExecutionFailed = 2,</span>
-<span class="c1">//   Overdue = 3,</span>
-<span class="c1">//   Refunded = 4,</span>
-<span class="c1">//   Cancelled = 5</span>
-<span class="c1">// }</span>
-</code></pre></div></div>
-
-<h3 id="canceling-a-scheduled-execution">Canceling a scheduled execution</h3>
-
-<p>You can either provide the execution object (using the <code class="highlighter-rouge">executionFactory</code> function) or the <code class="highlighter-rouge">executionId</code> if you have one already.</p>
-
-<blockquote>
-  <p>You can cancel a scheduled execution but keep in mind that it cannot be cancelled too close to its execution date.</p>
-</blockquote>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">cancelScheduling</span><span class="p">(</span><span class="nx">execution</span> <span class="o">|</span> <span class="nx">executionId</span><span class="p">)</span>
-</code></pre></div></div>
 
 
                   

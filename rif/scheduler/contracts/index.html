@@ -1010,7 +1010,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-07 20:24:16 +0000T00:00:00.000Z">2021-06-07</time> | -->
+    <!--time role="presentation" datetime="2021-06-11 06:21:30 +0000T00:00:00.000Z">2021-06-11</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1979,6 +1979,8 @@ Each element of the transaction array should be encoded as follows:</p>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">cancelScheduling</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="nx">external</span>
 </code></pre></div></div>
+<p>When the scheduled transactions are cancelled, the contract refunds any value transferred during the schedule and increases the plan balance for the requestor.
+Please note that it is only possible to cancel <code class="highlighter-rouge">Scheduled</code> and <code class="highlighter-rouge">Overdue</code> transaction executions.</p>
 
 <h3 id="retrieving-scheduled-transactions-data">Retrieving scheduled transactions data</h3>
 
@@ -1999,7 +2001,7 @@ Each element of the transaction array should be encoded as follows:</p>
 <code class="highlighter-rouge">Overdue -&gt; Refunded</code> – refund for overdue execution paid</li>
 </ul>
 
-<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">ExecutionState</span> <span class="p">{</span> <span class="nx">Scheduled</span><span class="p">,</span> <span class="nx">ExecutionSuccessful</span><span class="p">,</span> <span class="nx">ExecutionFailed</span><span class="p">,</span> <span class="nx">Overdue</span><span class="p">,</span> <span class="nx">Refunded</span><span class="p">,</span> <span class="nx">Cancelled</span> <span class="p">}</span>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">enum</span> <span class="nx">ExecutionState</span> <span class="p">{</span> <span class="nx">Nonexistent</span><span class="p">,</span> <span class="nx">Scheduled</span><span class="p">,</span> <span class="nx">ExecutionSuccessful</span><span class="p">,</span> <span class="nx">ExecutionFailed</span><span class="p">,</span> <span class="nx">Overdue</span><span class="p">,</span> <span class="nx">Refunded</span><span class="p">,</span> <span class="nx">Cancelled</span> <span class="p">}</span>
 <span class="kd">function</span> <span class="nx">getState</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">ExecutionState</span><span class="p">)</span>
 </code></pre></div></div>
 
