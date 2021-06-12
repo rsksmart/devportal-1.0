@@ -15,12 +15,13 @@ const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
 const state = await rifScheduler.getExecutionState(execution | executionId)
 
 // enum ExecutionState {
-//   Scheduled = 0,
-//   ExecutionSuccessful = 1,
-//   ExecutionFailed = 2,
-//   Overdue = 3,
-//   Refunded = 4,
-//   Cancelled = 5
+//   NonExistent = 0,
+//   Scheduled = 1,
+//   ExecutionSuccessful = 2,
+//   ExecutionFailed = 3,
+//   Overdue = 4,
+//   Refunded = 5,
+//   Cancelled = 6
 // }
 ```
 
