@@ -141,7 +141,7 @@ uint256 public nonce;
 
 ## `GnosisSafeProxy`
 
-It is the contract entitled to manage the address and the storage of a Safe. It forwards the requests to the master copy ([GnosisSafe](#gnosisafe)). Its master copy can be changed so the Safe logic is also upgradable, even if it requires the creation of a transaction that must be confirmed by all Safe owners.
+It is the contract entitled to manage the address and the storage of a Safe. It forwards the requests to the master copy ([GnosisSafe](#gnosissafe)). Its master copy can be changed so the Safe logic is also upgradable, even if it requires the creation of a transaction that must be confirmed by all Safe owners.
 
 ## fallback function
 It forwards all transactions and returns all received return data.
