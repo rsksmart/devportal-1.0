@@ -72,7 +72,7 @@ he computer or smartphone that they are connected to.
 
 A **software wallet** is an application that is installed
 on a computer or smartphone. 
-he private keys are **stored on** the computer or smartphone.
+The private keys are **stored on** the computer or smartphone.
 
 No one type of wallet is better than the other, rather,
 each one is better suited to different use cases.
@@ -91,7 +91,7 @@ between ease of use, and security.
 
 > Note that there are other types of wallets that exist apart from these two, including
 > [paper wallets](https://en.bitcoin.it/wiki/Paper_wallet).
-> However, we will not cover that in this article.
+> However, we will not cover them in this article.
 
 ## How wallets work
 
