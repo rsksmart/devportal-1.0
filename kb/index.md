@@ -236,5 +236,28 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/get-crypto-on-rsk/rbtc-wallets/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/get-crypto-on-rsk/rbtc-wallets.jpg" alt="GetRBTCWallets icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/get-crypto-on-rsk/rbtc-wallets/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Get RBTC using Wallets</p>
+                        <p class="card-desc">Understand what crypto wallets are and how they work, and then see how you can use RSK wallets that have the BTC and RBTC swapping feature built in</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/get-crypto-on-rsk/rbtc-wallets/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 

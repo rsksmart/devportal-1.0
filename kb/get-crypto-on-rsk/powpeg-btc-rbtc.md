@@ -147,3 +147,9 @@ between BTC and RBTC using the PowPeg protocol.
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/XTpQW9Rw838" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Next
+
+Be sure to check out our next article in this series, 
+about how to get the RSK cryptocurrency, RBTC, 
+by using wallets: [How to get RBTC using Wallets](/kb/get-crypto-on-rsk/rbtc-wallets/)
