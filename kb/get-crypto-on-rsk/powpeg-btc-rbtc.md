@@ -44,6 +44,15 @@ specified by the PowPeg,
 triggering a peg-in or a peg-out,
 which we will describe in more detail below.
 
+**Explainer video**
+
+Watch this short explainer video to know more about the Powpeg;
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/KmXayl_z9-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
 ## How the RSK PowPeg works
 
 There are some restrictions and validations done when
