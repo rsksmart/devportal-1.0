@@ -159,3 +159,12 @@ If the transaction is submitted before time window, the execution will be reject
 If it is submitted after the time window, it won't be executed an the requestor will be refunded.
 
 In any case the Service Provider is not responsible for the successful execution of the submitted transaction. It will only guarantee that it is submitted as scheduled.
+
+### Refunding
+The following steps describe the procedure that should be followed in the case that the user provider stops offering the scheduling service to allow users to get a refund for their available balance:
+1. The service provider should pause the contract using the method `pause()`. This blocks all the plan purchase, transaction schedule and executions.
+Nevertheless this operation does not affect any state or balance, and could be reverted calling `unpause()`.
+2. Once the contract is pause, each requestors should cancel all the pending executions (Scheduled or Overdue), by calling `cancelScheduling(bytes32 id)` as described above. This will cancel the schedule and increase the available executions. 
+3. Then, the requestors should call the method `requestPlanRefund(uint256 plan)` for each plan that the purchased to get a transfer for the value of the remaining balance. Please notice that this is only available while the contract is paused.
+
+Steps 2 and 3 can be repeated as many times as needed and can also be combined in a single contract call using the `multicall` method.
