@@ -1046,8 +1046,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-11 06:21:30 +0000T00:00:00.000Z">2021-06-11</time> | -->
-     7' to read |
+    <!--time role="presentation" datetime="2021-06-15 02:59:44 +0000T00:00:00.000Z">2021-06-15</time> | -->
+     8' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2115,6 +2115,19 @@ the payment for the execution.</p>
 If it is submitted after the time window, it won’t be executed an the requestor will be refunded.</p>
 
 <p>In any case the Service Provider is not responsible for the successful execution of the submitted transaction. It will only guarantee that it is submitted as scheduled.</p>
+
+<h3 id="refunding">Refunding</h3>
+
+<p>The following steps describe the procedure that should be followed in the case that the user provider stops offering the scheduling service. This allows users to get a refund for their available balance:</p>
+
+<ol>
+  <li>The service provider should pause the contract using the method <code class="highlighter-rouge">pause()</code>. This blocks all the plan purchases, transaction schedules, and executions.
+ Nevertheless this operation does not affect any state or balance, and may be reverted calling <code class="highlighter-rouge">unpause()</code>.</li>
+  <li>Once the contract is paused, each requestor should cancel all the pending executions (Scheduled or Overdue), by calling <code class="highlighter-rouge">cancelScheduling(bytes32 id)</code> as described above. This will cancel the schedule and increase the available executions.</li>
+  <li>Then, each requestor should call the method <code class="highlighter-rouge">requestPlanRefund(uint256 plan)</code> for each plan that they purchased to receive a transfer for the value of the remaining balance. Please notice that this is only available while the contract is paused.</li>
+</ol>
+
+<p>Steps 2 and 3 can be repeated as many times as needed. These can also be combined in a single contract call using the <code class="highlighter-rouge">multicall</code> method.</p>
 
 
                   
