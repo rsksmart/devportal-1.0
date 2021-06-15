@@ -6,6 +6,8 @@ render_features: 'tables-with-borders'
 layout: "rsk"
 ---
 
+[Translated in Tagalog](/solutions/kriptonmarket-tagalog/)
+
 Kripton seeks to develop a new economy: Dynamic, decentralized, safe, and profitable.
 
 Kripton integrates with RSK to provide an on/off ramp solution to give users in Latin American countries access to cryptocurrencies and tokens in the RSK network using their local currencies.
