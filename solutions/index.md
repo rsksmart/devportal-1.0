@@ -311,29 +311,6 @@ platforms and APIs to create innovative experiences.
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/solutions/kriptonmarket-tagalog/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/kriptonmarket/logo.png" alt="kriptonmarketTagalog icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/solutions/kriptonmarket-tagalog/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">Merkado ng Kripton</p>
-                        <p class="card-desc">Ang Kripton ay kasama ng RSK ay para bigyan ang mga gumagamit nito sa mga bansa sa Latin Amerika ng access sa cryptocurrencies at tokens sa RSK network gamit ang local na pera.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/solutions/kriptonmarket-tagalog/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
             <a href="/solutions/sovryn/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
