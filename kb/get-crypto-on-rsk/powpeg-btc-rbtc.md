@@ -7,16 +7,20 @@ layout: "rsk"
 
 ![Powpeg Banner](/assets/img/kb/get-crypto-on-rsk/powpeg-banner.jpg)
 
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/KmXayl_z9-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 If you want to get RBTC,
 there are a number of different ways to do it,
 ranging from exchanges, decentralised exchanges,
 and even peer-to-peer swaps -
-These are generally easier to use. 
+These are generally easier to use.
 
 The RSK blockchain protocol itself supports a method built into its
 blockchain protocol that allows for two-way swaps between BTC and RBTC:
 The RSK PowPeg.
-This is generally more difficult to use, 
+This is generally more difficult to use,
 and is intended for those with a more technical background.
 
 Even if you intend to use those other services to obtain RBTC,
@@ -32,7 +36,7 @@ It requires low third party trust.
 
 In the case of RSK, the main blockchain is Bitcoin,
 and the secondary blockchain is RSK.
-Every RBTC (or fraction of RBTC) unlocked in the RSK platform 
+Every RBTC (or fraction of RBTC) unlocked in the RSK platform
 requires BTC to be locked on the Bitcoin blockchain.
 This mechanism ensures there is a one-to-one relationship
 between BTC and RBTC (1 BTC = 1 RBTC),
@@ -43,15 +47,6 @@ they need to send the cryptocurrency to the address
 specified by the PowPeg,
 triggering a peg-in or a peg-out,
 which we will describe in more detail below.
-
-**Explainer video**
-
-Watch this short explainer video to know more about the Powpeg;
-
-<div class="video-container">
-  <iframe width="949" height="534" src="https://www.youtube.com/embed/KmXayl_z9-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 
 ## How the RSK PowPeg works
 
@@ -70,13 +65,13 @@ so that both accounts are controlled by the same private key.
 > Note that in the upcoming RSK release (IRIS-3.0),
 > this is partially changing.
 > The PowPeg will allow the user to specify the
-> receiving address for peg-ins (BTC → RBTC). 
+> receiving address for peg-ins (BTC → RBTC).
 
 The process of peg-ins and peg-outs are done completely using
 Bitcoin wallet software and RSK wallet software.
 The onus to perform the necessary checks and validations
 for compliance with the rules of the PowPeg lies on the user,
-as there is no application or tool to perform this. 
+as there is no application or tool to perform this.
 
 > Warning: The user needs to be aware of this lack of “guard rails”,
 > and accept the risk that transactions may be rejected
@@ -134,7 +129,7 @@ bitcoins from the RSK network to the Bitcoin network.
 To perform peg-outs, send the bitcoins (RBTC) to the Bridge.
 Then wait for the required number of confirmation blocks,
 after which the Bridge builds the transaction
-to release bitcoins (BTC) on the Bitcoin network. 
+to release bitcoins (BTC) on the Bitcoin network.
 
 ![Peg-Out](/assets/img/kb/get-crypto-on-rsk/RSK-Bitcoin-Peg-Out.gif)
 
@@ -159,6 +154,6 @@ between BTC and RBTC using the PowPeg protocol.
 
 ## Next
 
-Be sure to check out our next article in this series, 
-about how to get the RSK cryptocurrency, RBTC, 
+Be sure to check out our next article in this series,
+about how to get the RSK cryptocurrency, RBTC,
 by using wallets: [How to get RBTC using Wallets](/kb/get-crypto-on-rsk/rbtc-wallets/)

@@ -12,7 +12,7 @@ You can store, send and exchange crypto in an agile and secure way, without inte
 
 ![Defiant Banner](/assets/img/solutions/defiant/banner_rsk2.jpg)
 
-[Translated in Tagalog](/solutions/defiant/tagalog/)
+> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/)
 
 Watch these short explainer videos:
 
@@ -103,4 +103,4 @@ Defiant is your door into this new world and the new ones to come.
 - [Instagram](https://instagram.com/defiant_app)
 - [Telegram](https://t.me/DefiantES)
 
-> See this page in [Tagalog](/solutions/defiant/tagalog/)
+> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/)

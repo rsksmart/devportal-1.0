@@ -7,6 +7,10 @@ layout: 'rsk'
 
 ![CryptovsTokenBanner](/assets/img/kb/get-crypto-on-rsk/crypto-token-banner.jpg)
 
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/GWoNxoaIsbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## What is a Digital Asset?
 
 In broad terms, a digital asset is a non-tangible asset that is created, traded, and stored in a digital format. Using this definition, in the context of blockchains, digital assets include cryptocurrency and crypto tokens.
@@ -57,16 +61,8 @@ When interacting with blockchain networks, it is important to be aware of this d
 
 > Note that when talking about tokens, you will see the terms ERC-20 as well as EIP-20. These are both **the same**. At the outset, the process for defining standards for Ethereum, and Ethereum-compatible networks, was called “Ethereum Request for Comment”. This process has since been refined and renamed to “Ethereum Improvement Proposal”.
 
-## Explainer video
-
-Watch this short explainer video on the difference between a Cryptocurrency and a Token to gain a better understanding.
-
-<div class="video-container">
-  <iframe width="949" height="534" src="https://www.youtube.com/embed/GWoNxoaIsbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 ## Next
 
-Be sure to check out our next article in this series, 
-about how to get the RSK cryptocurrency, RBTC, 
+Be sure to check out our next article in this series,
+about how to get the RSK cryptocurrency, RBTC,
 by using the PowPeg: [How to get RBTC using RSK’s built in PowPeg](/kb/get-crypto-on-rsk/powpeg-btc-rbtc/)

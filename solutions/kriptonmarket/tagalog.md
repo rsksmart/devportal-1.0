@@ -10,10 +10,11 @@ Ang Kripton ay nagnanais na magpaunlad ng bagong ekonomiya:
 Dinamika, desentralisado, ligtas at mapagkakakitaan.
 
 Ang Kripton ay kasama ng RSK ay nakikipag-ugnayan para magbahagi
-ng **on o off na ramp solution** para bigyan ang mga gumagamit nito sa mga bansa sa Latin Amerika ng access sa cryptocurrencies at tokens sa RSK network gamit ang local na pera.  
-
+ng **on o off na ramp solution** para bigyan ang mga gumagamit nito sa mga bansa sa Latin Amerika ng access sa cryptocurrencies at tokens sa RSK network gamit ang local na pera.
 
 ![Kripton-banner-image](/assets/img/solutions/kriptonmarket/kripton-banner.jpg)
+
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)
 
 ## Pakikipag-ugnayan sa RSK
 
@@ -21,17 +22,17 @@ ng **on o off na ramp solution** para bigyan ang mga gumagamit nito sa mga bansa
 
 ## Mga Feature:
 
-- Pagsama ng sistema ng wire transfer gamit ang local na pera sa mga selektadong bansa sa Latin Amerika. 
+- Pagsama ng sistema ng wire transfer gamit ang local na pera sa mga selektadong bansa sa Latin Amerika.
 - Pakikipag-ugnayan sa Bitcoin network upang makapagbigay ng access sa BTC.
-- Pakikipag-ugnayan kasama ng network ng RSK para makapagbigay ng access sa RBTC at ilang token na base sa RSK. 
-- Pakikipag-ugnayan sa network ng Ethereum para makapagbigay ng access sa ilang mga token na base sa Ethereum. 
-- Pakikipag-ugnayan sa mga selektadong pitaka ng RSK para makapagbigay ng maayos na paraan upang makipag-palitan ng lokal na pera at crypto. Sa kasalukuyan: [Defiant](/solutions/defiant) 
+- Pakikipag-ugnayan kasama ng network ng RSK para makapagbigay ng access sa RBTC at ilang token na base sa RSK.
+- Pakikipag-ugnayan sa network ng Ethereum para makapagbigay ng access sa ilang mga token na base sa Ethereum.
+- Pakikipag-ugnayan sa mga selektadong pitaka ng RSK para makapagbigay ng maayos na paraan upang makipag-palitan ng lokal na pera at crypto. Sa kasalukuyan: [Defiant](/solutions/defiant)
 
 ## Mga suportadong bansa
 
 - Argentina🇦🇷
 - Venezuela🇻🇪
-- Colombia🇨🇴 
+- Colombia🇨🇴
 - Peru🇵🇪
 - Uruguay🇺🇾
 
@@ -80,7 +81,7 @@ ng **on o off na ramp solution** para bigyan ang mga gumagamit nito sa mga bansa
 
 - Mahigit-kumulang ±3% buy and sell
 
-Tignan ang mga rate para sa: 
+Tignan ang mga rate para sa:
 
 - Argentina: [ARS](https://kriptonmarket.com/cotizacion?currency=ars)
 - Uruguay: [UYU](https://kriptonmarket.com/cotizacion?currency=uyu)
@@ -88,7 +89,7 @@ Tignan ang mga rate para sa:
 - Colombia: [COP](https://kriptonmarket.com/cotizacion?currency=col)
 - Peru: [PEN](https://kriptonmarket.com/cotizacion?currency=pen)
 
-### Mga limitasyon 
+### Mga limitasyon
 - Limit ng deposit: 2000 USD kada-buwan o 4000 USD kada taon.
 - Limit ng pag-withdraw: Walang limit.
 
@@ -109,3 +110,5 @@ Tignan ang mga rate para sa:
 
 - [Twitter](https://twitter.com/Kriptonmarket)
 - [Telegram](https://t.me/kriptonmarket)
+
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)
