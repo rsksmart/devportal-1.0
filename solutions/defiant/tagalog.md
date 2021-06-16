@@ -12,7 +12,7 @@ Ang serbisyong ito ay nagpapahalintulot ng palitan ng cryptocurrencies mula sa m
 
 Maari kang magtago, magpadala at makipag-palit ng crypto sa mas mabilis at ligtas na paraan ng walang tagapamagitan.
 
-![Defiant Banner](/assets/img/solutions/defiant/banner_rsk2.jpg)
+![Defiant Banner](/assets/img/solutions/defiant/banner_tagalog.jpg)
 
 > This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/)
 
