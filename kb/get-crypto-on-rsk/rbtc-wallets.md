@@ -95,6 +95,8 @@ between ease of use, and security.
 
 ## How wallets work
 
+![Wallet Image](/assets/img/kb/get-crypto-on-rsk/wallet.jpg)
+
 When a user wishes to interact with the RSK blockchain,
 for example to transfer RBTC:
 
