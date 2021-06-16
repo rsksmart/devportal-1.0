@@ -12,7 +12,7 @@ Kripton integrates with RSK to provide an on/off ramp solution to give users in 
 
 ![Kripton-banner-image](/assets/img/solutions/kriptonmarket/kripton-banner.jpg)
 
-[Translated in Tagalog](/solutions/kriptonmarket/tagalog/)
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)
 
 ## Integration with RSK
 
@@ -30,7 +30,7 @@ Kripton integrates with RSK to provide an on/off ramp solution to give users in 
 
 - Argentina 🇦🇷
 - Venezuela 🇻🇪
-- Colombia 🇨🇴 
+- Colombia 🇨🇴
 - Peru 🇵🇪
 - Uruguay 🇺🇾
 
@@ -103,4 +103,4 @@ Kripton integrates with RSK to provide an on/off ramp solution to give users in 
 - [Twitter](https://twitter.com/Kriptonmarket)
 - [Telegram](https://t.me/kriptonmarket)
 
-> See this page in [Tagalog](/solutions/kriptonmarket/tagalog/)
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)

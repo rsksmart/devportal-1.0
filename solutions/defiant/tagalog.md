@@ -6,13 +6,15 @@ render_features: 'tables-with-borders'
 layout: "rsk"
 ---
 
-Ang Defiant ang unang platapormang mobil at peer-to-peer na merkado para sa stablecoins. 
+Ang Defiant ang unang platapormang mobil at peer-to-peer na merkado para sa stablecoins.
 
-Ang serbisyong ito ay nagpapahalintulot ng palitan ng cryptocurrencies mula sa mga sistema na Bitcoin, RSK at Ethereum gamit ang geolocation. 
+Ang serbisyong ito ay nagpapahalintulot ng palitan ng cryptocurrencies mula sa mga sistema na Bitcoin, RSK at Ethereum gamit ang geolocation.
 
-Maari kang magtago, magpadala at makipag-palit ng crypto sa mas mabilis at ligtas na paraan ng walang tagapamagitan. 
+Maari kang magtago, magpadala at makipag-palit ng crypto sa mas mabilis at ligtas na paraan ng walang tagapamagitan.
 
 ![Defiant Banner](/assets/img/solutions/defiant/banner_rsk2.jpg)
+
+> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/)
 
 **Panuorin itong mga maiikling paliwanag na bidyo**:
 
@@ -33,7 +35,7 @@ Maari kang magtago, magpadala at makipag-palit ng crypto sa mas mabilis at ligta
 - [Android](https://play.google.com/store/apps/details?id=ar.com.andinasmart.defiant&hl=en)
 - [iOS](https://testflight.apple.com/join/nuboBx5F) (on Testflight)
 
-## Paano gamitin and Defiant 
+## Paano gamitin and Defiant
 
 - [English](https://defiantapp.tech/wp-content/uploads/2020/08/android_eng.pdf)
 - [Español](https://defiantapp.tech/wp-content/uploads/2020/07/Guia-Defiant-Android.pdf )
@@ -48,9 +50,9 @@ Maari mong i-access ang mga cryptocurrency at mga token sa network ng RSK gamit 
 
 ## Mga pangunahing katangian ng Defiant:
 
-- **Pagtugma**: Unang wallet na nagtatrabaho para sa Bitcoin, RSK at Ethereum. 
-- **Ligtas at walang tagapag-alaga**: Walang ibang mayroong access sa iyong crypto kung hindi ikaw lamang. Maari mo silang kunin kahit saan at kailan mo gustuhin. 
-- **Peer-to-peer na merkado**: Maari mo ipagpalit and crypto, peer to peer, mula sa app ng walang tagapamagitan. 
+- **Pagtugma**: Unang wallet na nagtatrabaho para sa Bitcoin, RSK at Ethereum.
+- **Ligtas at walang tagapag-alaga**: Walang ibang mayroong access sa iyong crypto kung hindi ikaw lamang. Maari mo silang kunin kahit saan at kailan mo gustuhin.
+- **Peer-to-peer na merkado**: Maari mo ipagpalit and crypto, peer to peer, mula sa app ng walang tagapamagitan.
 - **Matatag na coins**: Maari mong itago and cryptocurrencies sa pagkakapare-pareho nito sa dollar tulad ng Dollar on Chain (DOC) at DAI.
 - **DeFi**: Ang Defiant ay nagpapahintulot sa iyo na mamahala sa iyong pera sa paraang desetralisado at walang ibang tagapamahala. Kahit kami ay walang access sa iyong crypto.
 
@@ -90,10 +92,12 @@ Mga ilang taon lamang nang and blockchain ay sinimulan, para lutasan ang aspeton
 | [BTCX](https://explorer.rsk.co/address/0xf773b590af754d597770937fa8ea7abdf2668370) | [BTCX](https://moneyonchain.com/btcx-leveraged-bitcoin/) | RSK |
 | [RIFX](https://explorer.rsk.co/address/0xcff3fcaec2352c672c38d77cb1a064b7d50ce7e1) | [RIFX](https://rif.moneyonchain.com/metrics) | RSK |
 
-## Makipag-usap sa amin sa pamamagitan ng aming: 
+## Makipag-usap sa amin sa pamamagitan ng aming:
 
 - Website: [English](https://defiantapp.tech/home/), [Español](http://www.defiantapp.tech)
 - Twitter: [English](https://twitter.com/@defiantapp_EN), [Español](https://twitter.com/@defiantapp)
 - [Facebook](https://facebook.com/defiantapp)
 - [Instagram](https://instagram.com/defiant_app)
 - [Telegram](https://t.me/DefiantES)
+
+> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/)
