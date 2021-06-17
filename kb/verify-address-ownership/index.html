@@ -1039,8 +1039,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-17 11:08:01 +0000T00:00:00.000Z">2021-06-17</time> | -->
-     6' to read |
+    <!--time role="presentation" datetime="2021-06-17 13:14:05 +0000T00:00:00.000Z">2021-06-17</time> | -->
+     7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/verify-address-ownership.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1942,14 +1942,14 @@ for the very first time.
 To do this you need to set up a wallet and connect it to the RSK network.</p>
 
 <p>However, you may be unsure if you actually “control” the addresses in the wallet.
-Understandably so, because it is the first time.
-That concern also has some technical merit -
-you need to be sure that you are able to sign transactions at this address,
+Understandably so, because it is your first time using it.
+That concern has a technical basis too -
+you need to <strong>be sure</strong> that you are <strong>able to sign</strong> transactions at this address,
 before you ask others to send you cryptocurrency or tokens at this address.</p>
 
-<p>Here we will demonstrate exactly how you can go about doing this,
+<p>Here we will demonstrate exactly how to do this,
 and be sure that you truly “control” a particular address.
-All you need is Chrome (web browser) and MetaMask (browser. extension).
+All you need is Chrome (web browser) and MetaMask (browser extension).
 You do not need any RBTC balance to do so!</p>
 
 <h2 id="before-you-begin">Before you begin</h2>
@@ -1957,7 +1957,7 @@ You do not need any RBTC balance to do so!</p>
 <p><strong>ℹ️</strong> Install MetaMask</p>
 
 <p>In Chrome, visit <a href="https://metamask.io/" rel="external noopener noreferrer" target="_blank">metamask.io</a>,
-and follow the instructions to install it in your browser.
+and follow the instructions to install this extension in your browser.
 If you are doing this for the first time,
 you will need to generate a <em>seed phrase</em>,
 and it is extremely important that you record this somewhere.</p>
@@ -1976,7 +1976,8 @@ you should disable all of the others by clicking on the toggle buttons.</p>
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-disable-other-web3-extensions.png" alt=""></p>
 
-<p>Optionally, for a better user experience, you may also wish to
+<p>Optional:
+For a better user experience, you may also wish to
 click on the extensions icon (jigsaw shape), and in the dropdown,
 click the pin icon next to MetaMask to ensure it is always visible.</p>
 
@@ -1984,11 +1985,12 @@ click the pin icon next to MetaMask to ensure it is always visible.</p>
 
 <p><strong>ℹ️</strong> Unlock MetaMask</p>
 
-<p>MetaMask should next display a pop up asking you to unlock the account.
+<p>After installing the extension or starting your browser,
+MetaMask should display a popup asking you to unlock the account.
 Enter your MetaMask password.
-(Note that this is <em>not</em> the same ass your seed phrase.)</p>
+(Note that this is <em>not</em> the same as your seed phrase.)</p>
 
-<p>If it does not pop up, you can manually enter
+<p>If it does not popup, you can manually enter
 <code class="highlighter-rouge">chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/home.html#unlock</code>
 in your address bar to navigate there in “expanded view”,
 instead of within a popup.</p>
@@ -1997,7 +1999,7 @@ instead of within a popup.</p>
 
 <p><strong>ℹ️</strong> Add custom network for RSK</p>
 
-<p>MetaMask only contains netowrk configurations to connect to Ethereum by default.
+<p>MetaMask only contains network configurations to connect to Ethereum by default.
 To connect to RSK you will need to add RSK Network configurations.</p>
 
 <p>Select the “custom network” menu item in MetaMask.
@@ -2007,8 +2009,8 @@ or prefer to use “expanded view”, paste the following into your address bar:
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-custom-network.png" alt=""></p>
 
-<p>Once you are on this configuration page,
-<a href="../../wallet/use/metamask/">configure it for RSK Mainnet</a>.</p>
+<p>Once you are here,
+<a href="../../wallet/use/metamask/">configure MetaMask to connect to RSK Mainnet</a>.</p>
 
 <h2 id="verifying-your-rsk-account">Verifying your RSK account</h2>
 
@@ -2017,7 +2019,7 @@ You have a wallet installed,
 that wallet is connected to the RSK Mainnet,
 and you have addresses inside that wallet.</p>
 
-<p>So let’s verify that you can use your wallet to sign messages!</p>
+<p>You’re ready to verify that you can use your wallet to sign messages!</p>
 
 <p><strong>(1)</strong> View transaction history</p>
 
@@ -2030,14 +2032,16 @@ by selecting the “Activity” tab in the main screen.</p>
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-transaction-history.png" alt=""></p>
 
-<p>If you activity tab is empty, like the one above,
-it means that there are zero transactions.
-Let’s copy the address by clicking on it at the top
-(it begins with <code class="highlighter-rouge">0x</code>)</p>
+<p>If your activity tab is empty, like the one above,
+it means that there are zero transactions at this address.
+Let’s copy the address by clicking on it.
+It is located near the top, begins with <code class="highlighter-rouge">0x</code>,
+and should be under a label similar to “Account 1”.</p>
 
 <p><strong>(2)</strong>  Visit block explorer</p>
 
-<p>Let’s check your address, that you’ve just copied, on the RSK block explorer.</p>
+<p>Let’s check the address that you’ve just copied
+on the RSK block explorer.</p>
 
 <p>Visit <code class="highlighter-rouge">explorer.rsk.co/address/${YOUR_ADDRESS}</code>.
 Replace <code class="highlighter-rouge">${YOUR_ADDRESS}</code> with the address copied from MetaMask earlier.
@@ -2046,18 +2050,19 @@ the URL will be <code class="highlighter-rouge">https://explorer.rsk.co/address/
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-block-explorer-address-not-found.png" alt=""></p>
 
-<p>Here you may see “Note Found”.
+<p>Here you may see “Not Found”.
 This does not necessarily mean that the account does not exist.
 Instead, it means that there simply are no transactions on the blockchain at this address.</p>
 
 <p><strong>(3)</strong> Visit RIF Identity Manager</p>
 
 <p>So far, not so good, right?
-Nothing we’ve seen so far appears to suggest that we do indeed control this address.</p>
+… Nothing we’ve seen thus far assures you
+that you do indeed control this address.</p>
 
-<p>Well, next we will be using the RIF Identity Manager -
-and this will actually allow us to verify whether we control this address.
-We’ll do this by signing a message that is <strong>not</strong> a blockchain transaction.</p>
+<p>This is where the RIF Identity Manager comes in!
+This DApp allows you to verify whether we control this address.
+You’ll do this by signing a message that is <strong>not</strong> a blockchain transaction.</p>
 
 <p>Visit <a href="https://identity.rifos.org/" rel="external noopener noreferrer" target="_blank">identity.rifos.org</a>.</p>
 
@@ -2079,7 +2084,7 @@ See the “before you begin” section for details.</p>
 
 <p><strong>(4)</strong> MetaMask site connection permission</p>
 
-<p>You will be presented with a pop up from MetaMask,
+<p>You will be presented with a popup from MetaMask,
 which essentially is asking you whether you trust RIF Identity Manager.</p>
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-connect-site-permission.png" alt=""></p>
@@ -2089,11 +2094,11 @@ This allows MetaMask to interact with RIF Identity Manager</p>
 
 <p>MetaMask will then show another popup,
 asking you whether you want to allow RIF Identity Manager
-to see your account addresses.,</p>
+to see your account addresses.</p>
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-view-addresses-permission.png" alt=""></p>
 
-<p>Click “Connect”
+<p>Click “Connect”.
 This allows MetaMask to see your account addresses.</p>
 
 <p><strong>(5)</strong> RIF Identity Authentication</p>
@@ -2113,17 +2118,21 @@ Verification code: ${SOME_RANDOM_VALUE}
 </code></pre></div></div>
 
 <p>Click “Sign”.
-When you do this, this is where the magic happens!</p>
+When you do this, the <strong>crucial part</strong> happens!</p>
 
 <ul>
-  <li>MetaMask uses the private key corresponding to the address to sign that message</li>
+  <li>MetaMask uses the <strong>private key</strong> corresponding to the address
+to sign that message.</li>
   <li>The signed message is transmitted to RIF Identity Manager’s backend,
-which verifies that it has indeed been signed by this particular address</li>
+which performs digital signature verification,
+which it uses to confirm whether it has indeed been signed by this particular address.</li>
   <li>Since this is a plain text message,
 and does not involve adding a transaction to the blockchain,
-no gas is needed, and therefore your RBTC balance can be zero -
-this is perfect for newly generated accounts!</li>
+no gas fees need to be paid,
+and therefore your RBTC balance can be zero.</li>
 </ul>
+
+<p>This is perfect for newly generated accounts!</p>
 
 <p><strong>(6)</strong> Check the dashboard</p>
 
@@ -2132,11 +2141,12 @@ you will see the dashboard for the RIF Identity Manager.</p>
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-dashboard.png" alt=""></p>
 
-<p>Check that the “Persona Address” field that is displayed here should match the address of your account in MetaMask</p>
+<p>Check that the “Persona Address” field that is displayed here <strong>matches</strong>
+the address of your account in MetaMask.</p>
 
 <p><img src="../../assets/img/kb/verify-address-ownership/rif-identity-metamask-dashboard-persona-address.png" alt=""></p>
 
-<p>That’s all - you can now be confident that you do indeed control this address on the RSK Mainnet!</p>
+<p>That’s all - now you can be confident that you do control this address on the RSK Mainnet!</p>
 
 
                   
