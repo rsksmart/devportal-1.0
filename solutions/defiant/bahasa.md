@@ -12,7 +12,7 @@ Layanan kami memungkinkan pertukaran mata uang kripto dari Bitcoin, RSK and ekos
 
 ![Defiant Banner](/assets/img/solutions/defiant/banner_bahasa.jpg)
 
-> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
+> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
 
 **Tonton video-video penjelasan singkat ini**
 
@@ -102,4 +102,4 @@ Hanya beberapa tahun yang lalu teknologi dengan sistem di mana catatan transaksi
 - [Instagram](https://instagram.com/defiant_app)
 - [Telegram](https://t.me/DefiantES)
 
-> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
+> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
