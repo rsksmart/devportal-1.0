@@ -47,6 +47,6 @@ Clone the [repo](https://github.com/rsksmart/rif-scheduler-services)
 and set it up as explained in the readme.
 Please take a look at the disclaimer about the configuration values.
 The configuration parameters is very important to succeed on the executions.
-For the `ONE_SHOOT_SCHEDULER_ADDRESS` use the recently deployed smart contract.
+For the `ONE_SHOT_SCHEDULER_ADDRESS` use the recently deployed smart contract.
 
 If everything works fine, a _Starting..._ message is logged.
