@@ -14,7 +14,7 @@ Maari kang magtago, magpadala at makipag-palit ng crypto sa mas mabilis at ligta
 
 ![Defiant Banner](/assets/img/solutions/defiant/banner_tagalog.jpg)
 
-> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
+> This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
 
 **Panuorin itong mga maiikling paliwanag na bidyo**:
 
