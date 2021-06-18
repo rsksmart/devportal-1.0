@@ -72,15 +72,25 @@ instead of within a popup.
 MetaMask only contains network configurations to connect to Ethereum by default.
 To connect to RSK you will need to add RSK Network configurations.
 
-Select the "custom network" menu item in MetaMask.
-If you are unable to find it in the menu,
-or prefer to use "expanded view", paste the following into your address bar:
-`chrome-extension://nkbihfbeogaeaoehlefnkodbefgpgknn/home.html#settings/networks`
+You have the option to manually add
+[RSK Mainnet network configuration to MetaMask](/wallet/use/metamask/).
 
-![](/assets/img/kb/verify-address-ownership/rif-identity-metamask-custom-network.png)
+Alternatively, you can do this automatically,
+by visiting [identity.rifos.org](https://identity.rifos.org/),
+and when you attempt to connect using MetaMask,
+you will get presented with the following:
 
-Once you are here,
-[configure MetaMask to connect to RSK Mainnet](/wallet/use/metamask/).
+![](/assets/img/kb/verify-address-ownership/rif-identity-metamask-auto-network-1.png)
+
+Click "RSK Mainnet". MetaMask will then show this popup:
+
+![](/assets/img/kb/verify-address-ownership/rif-identity-metamask-auto-network-2.png)
+
+Click "Approve". This will automatically fill out the network configuration for you.
+
+![](/assets/img/kb/verify-address-ownership/rif-identity-metamask-auto-network-3.png)
+
+Then click "Switch Network" to connect to the RSK Mainnet.
 
 ## Verifying your RSK account
 
