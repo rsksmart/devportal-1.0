@@ -12,7 +12,7 @@ Kripton integrates with RSK to provide an on/off ramp solution to give users in 
 
 ![Kripton-banner-image](/assets/img/solutions/kriptonmarket/kripton-banner.jpg)
 
-> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/kriptonmarket/bahasa)
 
 ## Integration with RSK
 
@@ -73,7 +73,8 @@ Kripton integrates with RSK to provide an on/off ramp solution to give users in 
 
 ## Fees
 
-- Approximately +/- 3% buy-sell spread
+- Approximately ± 3% buy-sell spread
+
 - See live rates for:
   - Argentina: [ARS](https://kriptonmarket.com/cotizacion?currency=ars)
   - Uruguay: [UYU](https://kriptonmarket.com/cotizacion?currency=uyu)
@@ -103,4 +104,4 @@ Kripton integrates with RSK to provide an on/off ramp solution to give users in 
 - [Twitter](https://twitter.com/Kriptonmarket)
 - [Telegram](https://t.me/kriptonmarket)
 
-> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/kriptonmarket/bahasa)
