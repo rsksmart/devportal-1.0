@@ -14,7 +14,7 @@ ng **on o off na ramp solution** para bigyan ang mga gumagamit nito sa mga bansa
 
 ![Kripton-banner-image](/assets/img/solutions/kriptonmarket/kripton-banner.jpg)
 
-> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/kriptonmarket/bahasa)
 
 ## Pakikipag-ugnayan sa RSK
 
@@ -65,7 +65,7 @@ ng **on o off na ramp solution** para bigyan ang mga gumagamit nito sa mga bansa
 | [USDT](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) | [Tether USD](https://tether.to/) | ERC20 | Ethereum |
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/) | ERC20 | Ethereum |
 
-## Mga paraan ng pag-transfer:
+## Mga paraan ng pag-transfer
 
 **Cryptocurrency**
 
@@ -77,9 +77,9 @@ ng **on o off na ramp solution** para bigyan ang mga gumagamit nito sa mga bansa
 - **Deposito**: ACH – lokal na wire transfer
 - **Pagwithdraw**: ACH – lokal na wire transfer
 
-## Mga babayaran:
+## Mga babayaran
 
-- Mahigit-kumulang ±3% buy and sell
+- Mahigit-kumulang ± 3% buy-sell spread
 
 Tignan ang mga rate para sa:
 
@@ -111,4 +111,4 @@ Tignan ang mga rate para sa:
 - [Twitter](https://twitter.com/Kriptonmarket)
 - [Telegram](https://t.me/kriptonmarket)
 
-> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/)
+> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/kriptonmarket/bahasa)
