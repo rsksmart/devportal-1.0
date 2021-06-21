@@ -179,7 +179,7 @@ Check out the [Liquality solutions page](/solutions/liquality/) for more informa
 
 Watch the videos below for a step by step guide on how to send and receive RBTC using Defiant and Liquality.
 
-**Using the Powpeg in Defiant (Espanol)**
+**Using the Powpeg in Defiant**  (Español)
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/1kTJhlA-5V8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
