@@ -130,3 +130,63 @@ or a wallet that integrates with a 3rd party service that performs the swaps.
 
 Let’s take a look at two different RSK wallets, 
 each of which implements the above techniques.
+
+## Wallets that support RSK
+
+### Defiant
+
+Defiant is a software wallet that can be installed on a smartphone.
+
+Currently, it is the only wallet giving its users the possibility of swapping BTC and RBTC through the native RSK PowPeg. This is an especially good option for users that are already using the wallet with BTC or RBTC balances.
+
+![Defiant Wallet Image](/assets/img/kb/get-crypto-on-rsk/rbtc-wallets-defiant.png)
+![Defiant Wallet Image 2](/assets/img/kb/get-crypto-on-rsk/rbtc-wallets-defiant-2.png)
+
+**Pros**:
+- Easy to use and less prone to error.
+- Users of the wallet don’t need to move to another tool or wallet to make use of this feature.
+- No registration or KYC required.
+- No need to relinquish keys to a counterparty.
+
+**Cons**:
+- Users from other wallets need to move funds to the supported wallets to use this functionality.
+- Unless the wallet charges specific fees, there is no clear business model for a wallet to integrate this feature.
+- Same cons as the native RSK PowPeg method.
+
+### Liquality
+
+Liquality is a software wallet that can be installed as a browser extension.
+
+It works in a manner similar to other browser extension wallets, such as MetaMask. Its key feature allows users to swap between BTC and RBTC. However, unlike Defiant, the user does not have to deal directly with the native RSK PowPeg, and instead it performs cross-chain atomic swaps, using Liquality’s own technology.
+
+![Wallet Screens Landing](/assets/img/solutions/Liquality/Wallet-Screens-Landing-p-1080.jpeg)
+
+**Pros**:
+- Easy to use and less prone to error.
+- Users of the wallet don’t need to move to another tool or wallet to make use of this feature.
+- No registration or KYC required.
+- No need to relinquish keys to a counterparty
+- Faster than native RSK PowPeg.
+- No need for technical expertise or knowledge of the RSK PowPeg to operate.
+
+**Cons**:
+- Users from other wallets need to move funds to the supported wallets to use this functionality.
+- Users are charged a fee for the swap service.
+
+Check out the [Liquality solutions page](/solutions/liquality/) for more information!
+
+## Sending and Receiving RBTC
+
+Watch the videos below for a step by step guide on how to send and receive RBTC using Defiant and Liquality.
+
+**Using the Powpeg in Defiant (Espanol)**
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/1kTJhlA-5V8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+**Using the Liquality Atomic Swap**
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/j8laciB7ihw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
