@@ -97,6 +97,12 @@ between ease of use, and security.
 
 ![Wallet Image](/assets/img/kb/get-crypto-on-rsk/wallet.jpg)
 
+**Watch this short explainer video to understand how crypto wallets work**
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/hKW182_Izaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 When a user wishes to interact with the RSK blockchain,
 for example to transfer RBTC:
 
