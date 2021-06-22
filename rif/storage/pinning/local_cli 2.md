@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RIF Storage Pinning service - Local setup with storage dev CLI
+tags: rif, rif-storage, ipfs, rif-pinning, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 This guide is quite advanced and assumes a greater knowledge of how to setup local blockchain environment, IFPS, etc. 

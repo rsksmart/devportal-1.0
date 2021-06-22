@@ -3,11 +3,47 @@ title: 'RSK Token Bridge Troubleshooting Guide'
 description: 'Having issues crossing your tokens on the token bridge? See the troubleshooting guide for help.'
 tags: knowledge-base, tokenbridge, blockchain, developers, tokens
 layout: 'rsk'
+render_features: 'rsk-token-bridge-support'
 ---
 
 See the [Token Bridge FAQs](https://developers.rsk.co/tools/tokenbridge/faq/)
 
 Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet Token Bridge](https://testnet.tokenbridge.rsk.co/)
+
+<div class="rsk-token-bridge-support">
+  <div class="rsk-token-bridge-support-input-area">
+    <div>
+      <label>Transaction Hash</label>
+      <br />
+      <input name="txHash" id="rsk-token-bridge-support-txHash" type="text" />
+    </div>
+    <div>
+      <label>Crossing from</label>
+      <br />
+      <select name="fromNetwork" id="rsk-token-bridge-support-fromNetwork">
+        <option value="ethereum-mainnet">Ethereum to RSK</option>
+        <option value="rsk-mainnet">RSK to Ethereum</option>
+      </select>
+    </div>
+    <div>
+      <label>Wallet</label>
+      <br />
+      <select name="walletName" id="rsk-token-bridge-support-walletName">
+        <option value="metamask">MetaMask</option>
+        <option value="nifty">Nifty</option>
+        <option value="liquality">Liquality</option>
+      </select>
+    </div>
+    <div>
+      <button id="rsk-token-bridge-support-check-button">Check &hellip;</button>
+    </div>
+  </div>
+  <div class="rsk-token-bridge-support-output-area">
+  </div>
+</div>
+
+> Note that what follows below are generic troubleshooting queries.
+> To see more specific information, use the form above.
 
 1 - **Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK**
 
@@ -15,8 +51,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** Current Block - Transaction Block Number < 5760
 
-**Answer:** 24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes. 
-
+**Answer:** 24 hours is an approximation, it is not fixed. Wait until 5760 blocks have past since the transaction block number, plus 5 minutes.
 
 2 - **Transferred tokens from Ethereum, and after 24 hours have not received tokens on RSK**
 
@@ -100,8 +135,63 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 12 - **I don't see my transaction on the Token Bridge list**
 
-**Network:** Both
+**Network:** N/A
 
 **When:** always
 
-**Answer:**  The list is stored in local cache, so it’s not shared across devices, and its erased if you clear your browser cookies and temporary files. You can be sure than if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the #tokenbridge channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
+**Answer:**  The list is stored in the local cache, so it’s not shared across devices, and it's erased if you clear your browser cookies and temporary files. You can be sure that if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the `#tokenbridge` channel on RSK Open slack (go to [Open Slack Community](https://developers.rsk.co/slack) to join).
+
+13 - **I used the Sovryn Token Bridge**
+
+**Network:** N/A
+
+**When:** always
+
+If you have used `bridge.sovryn.app`,
+note that this is **not** the same as the RSK Token Bridge.
+To get support, please ask on the
+[Sovryn discord group](https://discord.com/channels/729675474665603133/813119624098611260).
+
+14 - **I sent RSK tokens to an Ethereum address**
+
+**Network:** N/A
+
+**When:** always
+
+Note that if you have tokens on the RSK network, such as RIF or RDOC,
+including "crossed" tokens such as rUSDT or rDAI,
+you **should not** send them to an Ethereum address in a regular transaction.
+This **does not** work!
+Instead, you should use the RSK Token Bridge to cross the tokens
+from one blockchain to the other.
+
+If you have done this already,
+and sent the tokens to an address that **is not** under your control -
+where you **do not have** the private key or the seed phrase -
+then you have **burnt** the tokens, and they are not recoverable.
+If you have done this already,
+and sent the tokens to an address that **is** not under your control -
+where you **do have** the private key or the seed phrase -
+then it may be possible to recover your tokens.
+
+15 - **I have multiple wallets installed, but am only given one option**
+
+**Network:** N/A
+
+**When:** always
+
+Decentralised apps on websites, such as the RSK Token Bridge,
+interact with the blockchain network through a standard interface
+known as a **web3 provider**.
+Each browser wallet attempts to "inject" a web3 provider as soon as it is loaded.
+This means that if you have multiple browser extensions doing the same thing,
+one of them will override the other(s).
+
+In order to avoid this problem, and if you already have multiple wallets installed,
+is to choose which wallet you wish to use, and disable the other ones.
+To do this in in Chrome, enter `chrome://extensions/` in your address bar,
+which brings you to a settings screen that lists all of
+the browser extensions that you have installed.
+Click on the toggle button to disable all of the browser extensions
+that inject **web3 providers**, except for the one that you wish to use.
+After this go to the RSK token bridge again, and refresh.

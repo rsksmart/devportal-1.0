@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RIF Scheduler - Run your own scheduler
+tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 By running your own scheduler you can provide the transaction execution service.
@@ -46,6 +47,6 @@ Clone the [repo](https://github.com/rsksmart/rif-scheduler-services)
 and set it up as explained in the readme.
 Please take a look at the disclaimer about the configuration values.
 The configuration parameters is very important to succeed on the executions.
-For the `ONE_SHOOT_SCHEDULER_ADDRESS` use the recently deployed smart contract.
+For the `ONE_SHOT_SCHEDULER_ADDRESS` use the recently deployed smart contract.
 
 If everything works fine, a _Starting..._ message is logged.
