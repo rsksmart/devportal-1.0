@@ -16,7 +16,6 @@ If what you need is not in this section, **please contact us** without hesitatio
 - ['I don't see the logs'](#i-dont-see-the-logs)
 - ['Plugin with id 'witness' not found'](#plugin-with-id-witness-not-found)
 - ['Truffle doesn't seem to work connected to RSK'](#truffle-doesnt-seem-to-work-connected-to-rsk)
-- ['The node takes up too much space'](#the-node-takes-up-too-much-space)
 - ['Can't get public IP'](#cant-get-public-ip)
 
 ## Sections
