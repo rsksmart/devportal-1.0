@@ -83,37 +83,6 @@ module.exports = {
 };
 ```
 
-### The node takes up too much space
-
-The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.
-
-To enable prune service in your node [override your configuration](/rsk/node/configure). These are the recommended parameters:
-
-```
-prune {
-    # prune service could be enabled or not
-    # values: [true/false]
-    # default: false
-    enabled = true
-
-    # Number of blocks to process
-    blocks {
-        # Number of blocks to copy in each prune run
-        # default: 5000
-        toCopy = 5000
-
-        # Number of blocks to wait to run prune again
-        # default: 10000
-        toWait = 10000
-
-        # Number of blocks to suspend blockchain process
-        # in order to avoid forks
-        # default: 100
-        toAvoidForks = 100
-    }
-}
-```
-
 ### Can't get public IP
 
 If you get the error:
