@@ -11,11 +11,11 @@ To install the Nifty wallet, please visit [POA Nifty](https://www.poa.network/fo
 
 ## Connect with Nifty
 
-1. Open the Nifty extension.
+(1) Open the Nifty extension.
 
-2. In the network selector (top right corner), choose RSK Testnet for testing and development purposes.
+(2) In the network selector (top right corner), choose RSK Testnet for testing and development purposes.
 
-2.1 For the Mainnet choose RSK, please note that this deals with real cryptocurrencies.
+(3) For the Mainnet choose RSK, please note that this deals with real cryptocurrencies.
 
 ![Nifty Wallet](/assets/img/nifty/niftyrsk.png)
 
@@ -23,14 +23,20 @@ Now the Nifty wallet is ready to use with RSK!
 
 ## Next Steps
 
-Try RSK in the testnet using the links below:
+Try out the RSK Testnet:
 
 - [Get test RBTC](https://faucet.rsk.co)
 - [Get test RIF tokens](https://faucet.rifos.org)
 
+If you would like to know more about the values used in the
+built in network configurations, check out
+[account based addresses on RSK](/rsk/architecture/account-based/).
+
 ## Disclaimer
 
-- Currency may be displayed as ETH. They are actually RBTC.
-- This tutorial uses [RSK public nodes](/rsk/public-nodes). You can connect to another node by changing the RPC Url
-- The node must have CORS enabled. It can be fully enabled using `'*'`.
-  - Please review the [configuration file reference](/rsk/node/configure).
+- Currency may be mistakenly displayed as `ETH` within some screens of MetaMask.
+  The RSK network uses `RBTC` as its cryptocurrency.
+- This tutorial uses [RSK public nodes](/rsk/public-nodes).
+  You can connect to another node by changing the RPC URL.
+- The node must enable CORS for browser-based DApps to work.
+  - Please review the [configuration file reference](/rsk/node/configure) for CORS settings.

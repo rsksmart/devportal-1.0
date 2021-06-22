@@ -8,13 +8,13 @@ For MetaMask installation, please <a href="https://metamask.io/" target="_blank"
 
 ## Connect with MetaMask
 
-1. Open MetaMask extension.
+(1) Open MetaMask extension.
 
-2. In the network selector (top right corner), choose Custom RPC.
+(2) In the network selector (top right corner), choose Custom RPC.
 
   <div style="text-align:center"><img class="metamask-screenshot" src="/assets/img/metamask/metamask.png"></div>
 
-3. Fill with these values to connect to RSK Mainnet or Testnet
+(3) Fill with these values to connect to RSK Mainnet or Testnet
 
   <table class="table">
   <thead>
@@ -57,13 +57,39 @@ Now MetaMask is ready to use with RSK!
 
 ## Now what?
 
-Try RSK in the testnet
+Try out the RSK Testnet:
+
 - [Get test RBTC](https://faucet.rsk.co)
 - [Get test RIF tokens](https://faucet.rifos.org)
 
+If you would like to know more about the values used in the
+custom network configuration above, check out
+[account based addresses on RSK](/rsk/architecture/account-based/).
+
+## Limitations
+
+MetaMask does not yet fully comply with the technical specifications
+of [account based addresses on RSK](/rsk/architecture/account-based/).
+Thankfully, there are workarounds available,
+which allow most users to use MetaMask on RSK successfully.
+
+MetaMask uses the Ethereum value for **derivation path**,
+and presently does not allow it to be configured.
+This means that if you use the same seed phrase in MetaMask and other wallets,
+you will get a different set of addresses.
+A **workaround** for this is to use custom derivation paths
+when using other wallets that support this feature.
+
+MetaMask does not presently support EIP-1191 **checksums**.
+This means that if you use the addresses copied from MetaMask,
+you may encounter checksum validation errors.
+A **workaround** for this is to lowercase the addresses after copying them.
+
 ## Disclaimer
 
-- Currency may be displayed as ETH. They are actually RBTC.
-- This tutorial uses [RSK public nodes](/rsk/public-nodes). You can connect to another node by changing the RPC URL
-- The node must have CORS enabled. It can be fully enabled using `'*'`.
-  - Please review the [configuration file reference](/rsk/node/configure).
+- Currency may be mistakenly displayed as `ETH` within some screens of MetaMask.
+  The RSK network uses `RBTC` as its cryptocurrency.
+- This tutorial uses [RSK public nodes](/rsk/public-nodes).
+  You can connect to another node by changing the RPC URL.
+- The node must enable CORS for browser-based DApps to work.
+  - Please review the [configuration file reference](/rsk/node/configure) for CORS settings.
