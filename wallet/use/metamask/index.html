@@ -1047,7 +1047,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 10:06:48 +0000T00:00:00.000Z">2021-06-03</time> | -->
+    <!--time role="presentation" datetime="2021-06-22 03:23:25 +0000T00:00:00.000Z">2021-06-22</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/wallet/use/metamask.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1948,20 +1948,13 @@
 
 <h2 id="connect-with-metamask">Connect with MetaMask</h2>
 
-<ol>
-  <li>
-    <p>Open MetaMask extension.</p>
-  </li>
-  <li>
-    <p>In the network selector (top right corner), choose Custom RPC.</p>
-  </li>
-</ol>
+<p>(1) Open MetaMask extension.</p>
+
+<p>(2) In the network selector (top right corner), choose Custom RPC.</p>
 
 <div style="text-align:center"><img class="metamask-screenshot" src="../../../assets/img/metamask/metamask.png"></div>
 
-<ol>
-  <li>Fill with these values to connect to RSK Mainnet or Testnet</li>
-</ol>
+<p>(3) Fill with these values to connect to RSK Mainnet or Testnet</p>
 
 <table class="table">
   <thead>
@@ -2004,20 +1997,46 @@
 
 <h2 id="now-what">Now what?</h2>
 
-<p>Try RSK in the testnet</p>
+<p>Try out the RSK Testnet:</p>
+
 <ul>
   <li><a href="https://faucet.rsk.co" rel="external noopener noreferrer" target="_blank">Get test RBTC</a></li>
   <li><a href="https://faucet.rifos.org" rel="external noopener noreferrer" target="_blank">Get test RIF tokens</a></li>
 </ul>
 
+<p>If you would like to know more about the values used in the
+custom network configuration above, check out
+<a href="../../../rsk/architecture/account-based/">account based addresses on RSK</a>.</p>
+
+<h2 id="limitations">Limitations</h2>
+
+<p>MetaMask does not yet fully comply with the technical specifications
+of <a href="../../../rsk/architecture/account-based/">account based addresses on RSK</a>.
+Thankfully, there are workarounds available,
+which allow most users to use MetaMask on RSK successfully.</p>
+
+<p>MetaMask uses the Ethereum value for <strong>derivation path</strong>,
+and presently does not allow it to be configured.
+This means that if you use the same seed phrase in MetaMask and other wallets,
+you will get a different set of addresses.
+A <strong>workaround</strong> for this is to use custom derivation paths
+when using other wallets that support this feature.</p>
+
+<p>MetaMask does not presently support EIP-1191 <strong>checksums</strong>.
+This means that if you use the addresses copied from MetaMask,
+you may encounter checksum validation errors.
+A <strong>workaround</strong> for this is to lowercase the addresses after copying them.</p>
+
 <h2 id="disclaimer">Disclaimer</h2>
 
 <ul>
-  <li>Currency may be displayed as ETH. They are actually RBTC.</li>
-  <li>This tutorial uses <a href="../../../rsk/public-nodes/">RSK public nodes</a>. You can connect to another node by changing the RPC URL</li>
-  <li>The node must have CORS enabled. It can be fully enabled using <code class="highlighter-rouge">'*'</code>.
+  <li>Currency may be mistakenly displayed as <code class="highlighter-rouge">ETH</code> within some screens of MetaMask.
+The RSK network uses <code class="highlighter-rouge">RBTC</code> as its cryptocurrency.</li>
+  <li>This tutorial uses <a href="../../../rsk/public-nodes/">RSK public nodes</a>.
+You can connect to another node by changing the RPC URL.</li>
+  <li>The node must enable CORS for browser-based DApps to work.
     <ul>
-      <li>Please review the <a href="../../../rsk/node/configure/">configuration file reference</a>.</li>
+      <li>Please review the <a href="../../../rsk/node/configure/">configuration file reference</a> for CORS settings.</li>
     </ul>
   </li>
 </ul>
