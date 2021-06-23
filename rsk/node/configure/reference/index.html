@@ -1055,8 +1055,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-04-08 13:03:41 +0000T00:00:00.000Z">2021-04-08</time> | -->
-     11' to read |
+    <!--time role="presentation" datetime="2021-06-22 16:56:01 +0000T00:00:00.000Z">2021-06-22</time> | -->
+     10' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/configure/reference.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1988,7 +1988,6 @@ and are “inherited” and varied based on the
   <li><a href="#hellophrase"><code class="highlighter-rouge">hello.phrase</code></a></li>
   <li><a href="#detailsinmemorystoragelimit"><code class="highlighter-rouge">details.inmemory.storage.limit</code></a></li>
   <li><a href="#solcpath"><code class="highlighter-rouge">solc.path</code></a></li>
-  <li><a href="#prune"><code class="highlighter-rouge">prune</code></a></li>
 </ul>
 
 <h2 id="peer">peer</h2>
@@ -2507,39 +2506,6 @@ only deltas are saved.</p>
 <p>The path to the <a href="http://solidity.readthedocs.io" rel="external noopener noreferrer" target="_blank">Solidity</a> compiler.
 This is set when you may want to use the node to compile your smart contracts.
 If you don’t have Solidity installed, you can use <code class="highlighter-rouge">/bin/false</code> as value.</p>
-
-<h2 id="prune">prune</h2>
-
-<p>The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized.
-This process removes useless data over a determined amount of blocks processed.</p>
-
-<p>To enable the prune service in your node, override your configuration.</p>
-
-<p>These are the recommended parameters:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prune {
-    # prune service could be enabled or not
-    # values: [true/false]
-    # default: false
-    enabled = true
-
-    # Number of blocks to process
-    blocks {
-        # Number of blocks to copy in each prune run
-        # default: 5000
-        toCopy = 5000
-
-        # Number of blocks to wait to run prune again
-        # default: 10000
-        toWait = 10000
-
-        # Number of blocks to suspend blockchain process
-        # in order to avoid forks
-        # default: 100
-        toAvoidForks = 100
-    }
-}
-</code></pre></div></div>
 
 
                   

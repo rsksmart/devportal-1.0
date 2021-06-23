@@ -1047,8 +1047,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 04:29:30 +0000T00:00:00.000Z">2021-06-03</time> | -->
-     5' to read |
+    <!--time role="presentation" datetime="2021-06-22 17:32:07 +0000T00:00:00.000Z">2021-06-22</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/troubleshooting.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1955,7 +1955,6 @@
   <li><a href="#i-dont-see-the-logs">‘I don’t see the logs’</a></li>
   <li><a href="#plugin-with-id-witness-not-found">‘Plugin with id ‘witness’ not found’</a></li>
   <li><a href="#truffle-doesnt-seem-to-work-connected-to-rsk">‘Truffle doesn’t seem to work connected to RSK’</a></li>
-  <li><a href="#the-node-takes-up-too-much-space">‘The node takes up too much space’</a></li>
   <li><a href="#cant-get-public-ip">‘Can’t get public IP’</a></li>
 </ul>
 
@@ -2025,36 +2024,6 @@ So please, follow the instructions depending on your operation system:</p>
         <span class="p">}</span>
     <span class="p">}</span>
 <span class="p">};</span>
-</code></pre></div></div>
-
-<h3 id="the-node-takes-up-too-much-space">The node takes up too much space</h3>
-
-<p>The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.</p>
-
-<p>To enable prune service in your node <a href="../configure/">override your configuration</a>. These are the recommended parameters:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>prune {
-    # prune service could be enabled or not
-    # values: [true/false]
-    # default: false
-    enabled = true
-
-    # Number of blocks to process
-    blocks {
-        # Number of blocks to copy in each prune run
-        # default: 5000
-        toCopy = 5000
-
-        # Number of blocks to wait to run prune again
-        # default: 10000
-        toWait = 10000
-
-        # Number of blocks to suspend blockchain process
-        # in order to avoid forks
-        # default: 100
-        toAvoidForks = 100
-    }
-}
 </code></pre></div></div>
 
 <h3 id="cant-get-public-ip">Can’t get public IP</h3>
