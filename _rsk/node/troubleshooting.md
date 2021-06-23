@@ -16,7 +16,6 @@ If what you need is not in this section, **please contact us** without hesitatio
 - ['I don't see the logs'](#i-dont-see-the-logs)
 - ['Plugin with id 'witness' not found'](#plugin-with-id-witness-not-found)
 - ['Truffle doesn't seem to work connected to RSK'](#truffle-doesnt-seem-to-work-connected-to-rsk)
-- ['The node takes up too much space'](#the-node-takes-up-too-much-space)
 - ['Can't get public IP'](#cant-get-public-ip)
 
 ## Sections
@@ -81,37 +80,6 @@ module.exports = {
         }
     }
 };
-```
-
-### The node takes up too much space
-
-The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.
-
-To enable prune service in your node [override your configuration](/rsk/node/configure). These are the recommended parameters:
-
-```
-prune {
-    # prune service could be enabled or not
-    # values: [true/false]
-    # default: false
-    enabled = true
-
-    # Number of blocks to process
-    blocks {
-        # Number of blocks to copy in each prune run
-        # default: 5000
-        toCopy = 5000
-
-        # Number of blocks to wait to run prune again
-        # default: 10000
-        toWait = 10000
-
-        # Number of blocks to suspend blockchain process
-        # in order to avoid forks
-        # default: 100
-        toAvoidForks = 100
-    }
-}
 ```
 
 ### Can't get public IP
