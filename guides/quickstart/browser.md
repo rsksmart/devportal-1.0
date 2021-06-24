@@ -1,0 +1,129 @@
+---
+layout: rsk
+title: 'RSK Quick Start Guide | Using RSK in the Browser'
+description: 'Learn how to interact with RSK in your web browser, how to look at RSK transactions, develop and deploy your very first smart contract to the RSK network.'
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
+---
+
+As RSK is a blockchain with smart contract capabilities, it is possible to build decentralised applications (dApps) with it. Most dApps are web applications that you access with a regular Internet browser, such as Chrome. However, the blockchain interactions require some additional software, which comes in the form of browser extensions. These browser extensions insert a **web3 provider** object, with the Javascript parts of the web application used to interact with the blockchain, forming an integral part of dApp architecture.
+
+> Note that these browser extensions store your private keys, and use them to sign transactions. So keep them secure.
+
+There are currently three well known browser extensions that you can use to interact with the RSK blockchain: MetaMask, Liquality, and Nifty. Since this is a quickstart, we will not go through all of them - just MetaMask.
+
+## Install Metamask
+
+MetaMask is the most popular browser extension with web3 provider capabilities. It enables users to buy, store, send and swap tokens. 
+
+Metamask also equips you with a key vault, secure login, token wallet, and token exchange—everything you need to manage your digital assets.
+
+Open up Chrome browser, and install the extension from the [Chrome store](https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn).
+
+## Explainer Video
+
+Watch this short explainer video to learn about metamask, and how to download and install metamask on your browser, and also how to create a wallet to store your crypto assets
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/VlyqXD1TjJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+## Steps
+
+1- Visit [https://Metamask.io](https://Metamask.io)
+
+![Metamask Landing Page](/assets/img/guides/quickstart/browser/metamask-landing.png)
+
+2- Click on **Download now**
+
+![Metamask Download Now](/assets/img/guides/quickstart/browser/metamask-download.png)
+
+3- Click on **install Metamask for Chrome**
+
+> Note: You can install metamask on any browser of your choice
+
+![Install metamask for chrome](/assets/img/guides/quickstart/browser/metamask-add-chrome.png)
+
+4- Click on the **Add to Chrome** button
+
+![Add Metamask to Chrome](/assets/img/guides/quickstart/browser/metamask-add-to-chrome.png)
+
+5- Add Metamask **Extension**
+
+![Add Metamask Extension](/assets/img/guides/quickstart/browser/metamask-add-extension.png)
+
+6- View Metamask in the extension tab
+
+![View Metamask in Extensions Tab](/assets/img/guides/quickstart/browser/metamask-ext-icon.png)
+
+7- Click **Get Started** Button
+
+8- Click on **Create a Wallet**
+
+![Create a Wallet](/assets/img/guides/quickstart/browser/metamask-create-wallet.png)
+
+9- Click on **Create a Password**
+
+![Create Password](/assets/img/guides/quickstart/browser/metamask-create-password.png)
+
+10- Reveal, Download and store backup [seed phrase](/guides/quickstart/browser/#what-is-a-seed-phrase)
+
+![Store backup seed phrase](/assets/img/guides/quickstart/browser/metamask-store-seed-phrase.png)
+
+11- Congratulations, you have successfully setup metamask and created your first wallet!
+
+![Metamask Wallet](/assets/img/guides/quickstart/browser/metamask-wallet.png)
+
+## Cryptographic Keys
+
+In wallet software, you generally see “accounts” represented by addresses on the blockchain network. In the case of RSK, this is `0x` followed by a series of hexadecimal characters, for example, `0xdfc0e6361fd1846a223e2d7834a5ebd441a16dd4`. There is some hidden complexity behind that, to do with cryptography, which is necessary to secure the account, and all the blockchain transactions it makes.
+
+- You start off with a private key, which is essentially an extremely large number, and should be randomly generated. You should keep the private key secret, because that is what is used to sign transactions.
+- A public key is generated from the private key, and this is also a very large number. This does not need to be kept secret, because others in the blockchain network use it to verify transactions.
+- An address is generated from the public key, and is the hexadecimal string that you see in your wallet software.
+
+## What is a Seed Phrase?
+
+When you open up MetaMask for the first time after installing it, you will be asked to initialise it using a seed phrase. If you have done this before, you can use your own seed phrase. Otherwise let’s generate a new one!
+
+Most blockchain users operate one or more accounts, and it can be quite difficult to remember the value of cryptographic keys - those very large numbers - you’ll need superhuman memory! The seed phrase is presently the most popular method used to generate, store, remember, and recover keys for crypto wallets, and is something that is approachable for the average user.
+
+It also is the default method used by MetaMask (and many other wallets). In a nutshell, it takes a randomly generated sequence of dictionary words. The wallet then uses this sequence of words to generate not one, but multiple sets of cryptographic keys. This is how MetaMask is able to support multiple accounts using a single seed phrase.
+
+This process is described in detail in the BIP-44 technical standard. This ensures that the way that seed phrases work is the same between multiple crypto wallets, enabling the same phrase to be portable.
+
+## Configure custom network for RSK Testnet and tRBTC
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/VyPewQoWhn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+MetaMask comes pre-configured with connections for Ethereum networks. Let’s use its custom networks feature to add a connection to an RSK network.
+
+After creating the custom network for the RSK Testnet, you should be able to interact with smart contracts deployed on the RSK Testnet! You should also see your balances in tRBTC (Testnet RBTC). This is currently zero, which means that we cannot send any transactions to the blockchain, so let’s get some using the RBTC faucet.
+
+Now you should have a balance of tRBTC, and you will be able to send transactions to the RSK blockchain!
+
+## Configure Custom Token for tRIF
+
+The RSK Infrastructure Framework (RIF) includes multiple services for decentralised applications. These services may be paid for using the RIF token. Let’s configure MetaMask to be aware of the RIF token. We’ll use tRIF as the token symbol, since we’re on the RSK Testnet.
+
+Now that MetaMask has the token configured, let’s get some using the RIF faucet.
+
+Now you should have a balance of tRIF, and you will be able to purchase RIF services!
+
+----
+**Further Reading**:
+
+- [How to configure Metamask](https://developers.rsk.co/wallet/use/metamask/)
+- [Swap BTC and RBTC using Liquality Atomic Swap](https://youtu.be/j8laciB7ihw)
+- [How to configure Nifty](https://developers.rsk.co/wallet/use/nifty/)
+- [Get RBTC using Powpeg](https://developers.rsk.co/kb/get-crypto-on-rsk/powpeg-btc-rbtc/)
+- [Get RBTC using Wallets](https://developers.rsk.co/kb/get-crypto-on-rsk/rbtc-wallets/)
+- [Asymmetric Key Generation](https://en.wikipedia.org/wiki/Public-key_cryptography)
+- [Elliptic Curve Digital Signature Algorithm](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm)
+- About [the RIF token](/rif/token/)
+- About [the RBTC cryptocurrency](/rsk/rbtc/)
+- About [gas](/rsk/rbtc/gas/)
+- About [RIF Services](https://www.rifos.org/)
+- About [BIP 44](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)
+- About [EIP-20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
