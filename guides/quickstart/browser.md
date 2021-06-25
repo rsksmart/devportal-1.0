@@ -21,7 +21,7 @@ Open up Chrome browser, and install the extension from the [Chrome store](https:
 
 ## Explainer Video
 
-Watch this short explainer video to learn about metamask, and how to download and install metamask on your browser, and also how to create a wallet to store your crypto assets
+Watch this short explainer video to learn about metamask, and how to download and install metamask on your browser, and also how to create a wallet to store your crypto assets.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/VlyqXD1TjJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -115,13 +115,25 @@ MetaMask comes pre-configured with connections for Ethereum networks. Let’s us
 
 After creating the custom network for the RSK Testnet, you should be able to interact with smart contracts deployed on the RSK Testnet! You should also see your balances in tRBTC (Testnet RBTC). This is currently zero, which means that we cannot send any transactions to the blockchain, so let’s get some using the RBTC faucet.
 
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/twfK8Rd5hak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Now you should have a balance of tRBTC, and you will be able to send transactions to the RSK blockchain!
 
 ## Configure Custom Token for tRIF
 
 The RSK Infrastructure Framework (RIF) includes multiple services for decentralised applications. These services may be paid for using the RIF token. Let’s configure MetaMask to be aware of the RIF token. We’ll use tRIF as the token symbol, since we’re on the RSK Testnet.
 
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/QCabRPfr2Zs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Now that MetaMask has the token configured, let’s get some using the RIF faucet.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/ttb8EOTWey8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 Now you should have a balance of tRIF, and you will be able to purchase RIF services!
 
