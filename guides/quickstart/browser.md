@@ -65,11 +65,11 @@ Watch this short explainer video to learn about metamask, and how to download an
 
 ![Create Password](/assets/img/guides/quickstart/browser/metamask-create-password.png)
 
-10- Reveal, Download and store backup [seed phrase](/guides/quickstart/browser/#what-is-a-seed-phrase)
+10- Reveal or Download and store backup [seed phrase](/guides/quickstart/browser/#what-is-a-seed-phrase)
 
 ![Store backup seed phrase](/assets/img/guides/quickstart/browser/metamask-store-seed-phrase.png)
 
-11- Congratulations, you have successfully setup metamask and created your first wallet!
+Congratulations, you have successfully setup metamask and created your first wallet!
 
 ![Metamask Wallet](/assets/img/guides/quickstart/browser/metamask-wallet.png)
 
@@ -84,6 +84,62 @@ In wallet software, you generally see “accounts” represented by addresses on
 ## What is a Seed Phrase?
 
 When you open up MetaMask for the first time after installing it, you will be asked to initialise it using a seed phrase. If you have done this before, you can use your own seed phrase. Otherwise let’s generate a new one!
+
+To generate a new seed phrase on metamask, you will need to create a new wallet:
+
+### Steps
+
+1- Visit [https://Metamask.io](https://Metamask.io)
+
+![Metamask Landing Page](/assets/img/guides/quickstart/browser/metamask-landing.png)
+
+2- Click on **Download now**
+
+![Metamask Download Now](/assets/img/guides/quickstart/browser/metamask-download.png)
+
+3- Click on **install Metamask for Chrome**
+
+> Note: You can install metamask on any browser of your choice
+
+![Install metamask for chrome](/assets/img/guides/quickstart/browser/metamask-add-chrome.png)
+
+4- Click on the **Add to Chrome** button
+
+![Add Metamask to Chrome](/assets/img/guides/quickstart/browser/metamask-add-to-chrome.png)
+
+5- Add Metamask **Extension**
+
+![Add Metamask Extension](/assets/img/guides/quickstart/browser/metamask-add-extension.png)
+
+6- View Metamask in the extension tab
+
+![View Metamask in Extensions Tab](/assets/img/guides/quickstart/browser/metamask-ext-icon.png)
+
+7- Click **Get Started** Button
+
+8- Click on **Create a Wallet**
+
+![Create a Wallet](/assets/img/guides/quickstart/browser/metamask-create-wallet.png)
+
+9- Click on **Create a Password**
+
+![Create Password](/assets/img/guides/quickstart/browser/metamask-create-password.png)
+
+10- Reveal backup [seed phrase](/guides/quickstart/browser/#what-is-a-seed-phrase)
+
+![Reveal secret](/assets/img/guides/quickstart/browser/metamask-reveal-secret.png)
+
+11- View backup phrase
+
+![View backup secret phrase](/assets/img/guides/quickstart/browser/metamask-approve.png)
+
+12- Confirm backup seed phrase by clicking the words in the order it was shown previously and click **Next**
+
+![View backup secret phrase](/assets/img/guides/quickstart/browser/metamask-confirm-approve.png)
+
+Congratulations, you have successfully generated a new seed phrase for a new wallet.
+
+![Metamask Congratulations](/assets/img/guides/quickstart/browser/metamask-congrats.png)
 
 Most blockchain users operate one or more accounts, and it can be quite difficult to remember the value of cryptographic keys - those very large numbers - you’ll need superhuman memory! The seed phrase is presently the most popular method used to generate, store, remember, and recover keys for crypto wallets, and is something that is approachable for the average user.
 
