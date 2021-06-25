@@ -107,11 +107,11 @@ This process is described in detail in the BIP-44 technical standard. This ensur
 
 ## Configure custom network for RSK Testnet and tRBTC
 
+MetaMask comes pre-configured with connections for Ethereum networks. Let’s use its custom networks feature to add a connection to an RSK network.
+
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/VyPewQoWhn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-MetaMask comes pre-configured with connections for Ethereum networks. Let’s use its custom networks feature to add a connection to an RSK network.
 
 After creating the custom network for the RSK Testnet, you should be able to interact with smart contracts deployed on the RSK Testnet! You should also see your balances in tRBTC (Testnet RBTC). This is currently zero, which means that we cannot send any transactions to the blockchain, so let’s get some using the RBTC faucet.
 
@@ -129,7 +129,7 @@ The RSK Infrastructure Framework (RIF) includes multiple services for decentrali
   <iframe width="949" height="534" src="https://www.youtube.com/embed/QCabRPfr2Zs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Now that MetaMask has the token configured, let’s get some using the RIF faucet.
+Now that MetaMask has the token configured, let’s get some test tokens using the RIF faucet.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/ttb8EOTWey8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
