@@ -96,6 +96,9 @@ In wallet software, you generally see “accounts” represented by addresses on
 
 When you open up MetaMask for the first time after installing it, you will be asked to initialise it using a seed phrase. If you have done this before, you can use your own seed phrase. Otherwise let’s generate a new one!
 
+> To generate a new seed phrase, you will need to create a new wallet.
+> See above [steps](#steps) to create a new wallet.
+
 Most blockchain users operate one or more accounts, and it can be quite difficult to remember the value of cryptographic keys - those very large numbers - you’ll need superhuman memory! The seed phrase is presently the most popular method used to generate, store, remember, and recover keys for crypto wallets, and is something that is approachable for the average user.
 
 It also is the default method used by MetaMask (and many other wallets). In a nutshell, it takes a randomly generated sequence of dictionary words. The wallet then uses this sequence of words to generate not one, but multiple sets of cryptographic keys. This is how MetaMask is able to support multiple accounts using a single seed phrase.
