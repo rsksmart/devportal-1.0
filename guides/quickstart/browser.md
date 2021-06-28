@@ -77,7 +77,7 @@ and also how to create a wallet to store your crypto assets.
 ![Create Password](/assets/img/guides/quickstart/browser/metamask-create-password.png)
 
 10- Reveal or Download and store backup
-[seed phrase](/guides/quickstart/browser/#what-is-a-seed-phrase)
+[seed phrase](/guides/quickstart/browser/#seed-phrases)
 
 ![Store backup seed phrase](/assets/img/guides/quickstart/browser/metamask-reveal-secret.png)
 
