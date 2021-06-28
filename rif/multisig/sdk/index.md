@@ -24,3 +24,9 @@ Use the suite of SDKs to:
 - [Confirm pending transactions on-chain and off-chain](transaction_confirmation)
 - [Reject pending transactions](rejecting)
 - [Delete a multi-sig withdrawing its funds](deleting).
+
+## Contract addresses
+
+RSK Testnet:
+- `GnosisSafe`: [`0xffd41b816f2821e579b4da85c7352bf4f17e4fa5`](https://explorer.testnet.rsk.co/address/0xffd41b816f2821e579b4da85c7352bf4f17e4fa5)
+- `GnosisSafeProxyFactory`: [`0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a`](https://explorer.testnet.rsk.co/address/0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a)
