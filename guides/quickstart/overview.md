@@ -84,7 +84,7 @@ Truffle works well with RSK.
 In fact, we have our own [Truffle Boxes](https://developers.rsk.co/tools/truffle/boxes/),
 which are templates or starter projects that are already configured to connect to RSK.
 
-- [Ganache](https://www.trufflesuite.com/ganache) i is your personal (localhost-only) simulated blockchain that has been optimised for smart contract development.
+- [Ganache](https://www.trufflesuite.com/ganache) is your personal (localhost-only) simulated blockchain that has been optimised for smart contract development.
 You can use this to run tests, execute commands,
 and inspect state during development.
 We recommend using a combination of Ganache and RSKj in Regtest mode for local development.
