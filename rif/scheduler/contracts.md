@@ -18,8 +18,6 @@ The smart contract has four modules:
 
 > See this guide about [how to run a scheduler](../run) on your own.
 
-Please not tha
-
 ### Admin
 
 The Service Provider can set up different plans.
