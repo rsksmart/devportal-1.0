@@ -18,20 +18,25 @@ The smart contract has four modules:
 
 > See this guide about [how to run a scheduler](../run) on your own.
 
+Please not tha
+
 ### Admin
 
 The Service Provider can set up different plans.
 The plans must specify the:
 - Price per execution,
 - The time window (in seconds) within a scheduled execution should run.
+We recommend a value bigger than 15 seconds.
 For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:
 
  `scheduled time` - 10 <= `execution time` <=  `scheduled time` + 10
+- The maximum gas that an schedule execution could spend.
 - The address of the token used to purchase executions. If the address `0x0` passed as parameter the contract assumes that the executions will be paid with RBTC.
 
 ```solidity
 Plan[] public plans;
-function addPlan(uint256 price, uint256 window, IERC677 token) external onlyProvider
+function addPlan(uint256 price, uint256 window, uint256 gasLimit, IERC677 token) external onlyProvider
+
 function removePlan(uint256 plan) external onlyProvider
 ```
 
@@ -62,7 +67,7 @@ function purchase(uint256 plan, uint256 quantity) external payable
 The executions have an **id**. Use this hash function to calculate it:
 
 ```js
-abi.encode(execution.requestor, execution.plan, execution.to, execution.data, execution.gas, execution.timestamp, execution.value)
+abi.encode(execution.requestor, execution.plan, execution.to, execution.data, execution.timestamp, execution.value)
 ```
 
 Submit new transactions to be executed by the Service Provider.
@@ -72,11 +77,10 @@ When scheduling you must specify this fields:
 - `plan`: The plan id the requestor wants to use for the execution
 - `to`: The receiver of the scheduled transaction
 - `data`: The _data_ field of the transaction
-- `gas`: Set a _gas limit_ for the transaction
 - `timestamp`: When it must be executed, considering the window
 
 ```solidity
-function schedule(uint256 plan, address to, bytes calldata data, uint256 gas, uint256 timestamp) external payable
+function schedule(uint256 plan, address to, bytes calldata data, uint256 timestamp) external payable
 ```
 
 It is possible to schedule multiple transactions at the same time by calling:
@@ -89,7 +93,7 @@ This function receives an array of ABI encoded transactions to be executed and t
 Each element of the transaction array should be encoded as follows:
 
 ```js
-abi.encode(['uint256', 'address', 'bytes', 'uint256', 'uint256', 'uint256'], [execution.plan, execution.to, execution.data, execution.gas, execution.timestamp, execution.value])
+abi.encode(['uint256', 'address', 'bytes', 'uint256', 'uint256'], [execution.plan, execution.to, execution.data, execution.timestamp, execution.value])
 ```
 
 To cancel a scheduling before its execution use:
@@ -151,19 +155,29 @@ function execute(bytes32 id) external nonReentrant
 This performs execution in this way:
 
 ```solidity
-(bool success, bytes memory result) = payable(execution.to).call{ gas: execution.gas, value: execution.value }(execution.data);
+(bool success, bytes memory result) = payable(execution.to).call{ gas: plan.gas, value: execution.value }(execution.data);
 ```
 
 After execution is completed, the Service Provider will receive
 the payment for the execution.
 
 If the transaction is submitted before time window, the execution will be rejected and it will remain scheduled.
-If it is submitted after the time window, it won't be executed an the requestor will be refunded.
+If it is submitted after the time window, it won't be executed and its state will be Overdue.
 
 In any case the Service Provider is not responsible for the successful execution of the submitted transaction. It will only guarantee that it is submitted as scheduled.
 
-### Refunding
+### Overdue executions refunding
+The requestor can request the refund of the overdue scheduled transactions (those that were not executed on time, inside the execution window).
+To clain the refund, the requestor should call the following method:
 
+```solidity
+  function requestExecutionRefund(bytes32 id) external
+```
+
+This will set the requested execution as refunded and the remaining executions for thar plan will be increased by one. Also if there was some value transferred during the scheduling, it will be returned to the requestor.
+
+
+### Plans refunding
 The following steps describe the procedure that should be followed in the case that the user provider stops offering the scheduling service. This allows users to get a refund for their available balance:
 
 1. The service provider should pause the contract using the method `pause()`. This blocks all the plan purchases, transaction schedules, and executions.
@@ -172,3 +186,14 @@ The following steps describe the procedure that should be followed in the case t
 3. Then, each requestor should call the method `requestPlanRefund(uint256 plan)` for each plan that they purchased to receive a transfer for the value of the remaining balance. Please notice that this is only available while the contract is paused.
 
 Steps 2 and 3 can be repeated as many times as needed. These can also be combined in a single contract call using the `multicall` method.
+
+### Multicall
+The contract allows to combine multiple call in a single one using the methods.
+
+```solidity 
+multicall(bytes[] calldata data, bool revertIfFails)
+```
+
+This method receives:
+- calldata: an array of encoded contract calls to be executed
+- revertIfFails: if true when a transaction in calldata is executed and it reverts, all the transactions will be reverted. Otherwise, it will continue executing the following transactions.
