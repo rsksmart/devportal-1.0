@@ -188,7 +188,8 @@ The following steps describe the procedure that should be followed in the case t
 Steps 2 and 3 can be repeated as many times as needed. These can also be combined in a single contract call using the `multicall` method.
 
 ### Multicall
-The contract allows to combine multiple call in a single one using the methods.
+
+The contract allows one to combine multiple calls into a single one using this method.
 
 ```solidity 
 multicall(bytes[] calldata data, bool revertIfFails)
