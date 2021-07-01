@@ -167,7 +167,7 @@ In any case the Service Provider is not responsible for the successful execution
 ### Refunding overdue executions
 
 The requestor can request the refund of the overdue scheduled transactions (those that were not executed on time, inside the execution window).
-To clain the refund, the requestor should call the following method:
+To claim the refund, the requestor should call the following method:
 
 ```solidity
   function requestExecutionRefund(bytes32 id) external
