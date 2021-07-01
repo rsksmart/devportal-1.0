@@ -164,7 +164,8 @@ If it is submitted after the time window, it won't be executed and its state wil
 
 In any case the Service Provider is not responsible for the successful execution of the submitted transaction. It will only guarantee that it is submitted as scheduled.
 
-### Overdue executions refunding
+### Refunding overdue executions
+
 The requestor can request the refund of the overdue scheduled transactions (those that were not executed on time, inside the execution window).
 To clain the refund, the requestor should call the following method:
 
