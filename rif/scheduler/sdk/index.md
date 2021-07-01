@@ -27,7 +27,7 @@ This is the official SDK for [`@rsksmart/rif-scheduler-contracts`](https://githu
 npm i @rsksmart/rif-scheduler-sdk ethers
 ```
 
-Use [`0x0372F6F8C7b2353b546F842Da0C44749664d1203`](https://explorer.testnet.rsk.co/address/0x0372F6F8C7b2353b546F842Da0C44749664d1203) for RSK Testnet
+Use [`0xad249557515d8b89f2869834857BB872D7B5C398`](https://explorer.testnet.rsk.co/address/0xad249557515d8b89f2869834857bb872d7b5c398) for RSK Testnet
 > You can run your own instance following [this guide](https://developers.rsk.co/rif/scheduler/run/)
 
 ### Initialization
