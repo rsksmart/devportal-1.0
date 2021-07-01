@@ -27,7 +27,7 @@ Also, find the deployment scripts in the readme.
 You will find one for local networks,
 other for RSK Testnet and other for RSK Mainnet.
 
-*WARNING: Please notice that the contract requires Solidity 0.8 or newer. Compiling it with older versiosn will expose it to security vulerabilities.*   
+> WARNING: Please note that the contract requires Solidity 0.8 or newer. Compiling it with older versions will expose it to security vulnerabilities.
 
 In the deployment you will need to provide two addresses in the constructor:
 
