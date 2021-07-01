@@ -176,7 +176,8 @@ To claim the refund, the requestor should call the following method:
 This will set the requested execution as refunded and the remaining executions for thar plan will be increased by one. Also if there was some value transferred during the scheduling, it will be returned to the requestor.
 
 
-### Plans refunding
+### Refunding plans
+
 The following steps describe the procedure that should be followed in the case that the user provider stops offering the scheduling service. This allows users to get a refund for their available balance:
 
 1. The service provider should pause the contract using the method `pause()`. This blocks all the plan purchases, transaction schedules, and executions.
