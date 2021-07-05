@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - receiving
+description: Explanation of the steps required to receive funds on a Multisig account
+tags: rif gnosis multisig
 ---
 
 It is important to understand that in order to properly receive funds, the Multisig account address (instead of the owner address) must be used as receiver.

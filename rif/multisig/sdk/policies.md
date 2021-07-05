@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - policies
+description: Creation of the transactions required to change safe policies (owners and threshold) 
+tags: rif gnosis multisig
 ---
 
 **Required packages**:

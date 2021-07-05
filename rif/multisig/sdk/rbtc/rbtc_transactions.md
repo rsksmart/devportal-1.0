@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - Send RBTC
+description: follow these steps to send gas on the multisig account and to create raw transactions
+tags: rif gnosis multisig rbtc
 ---
 
 **Required packages**:

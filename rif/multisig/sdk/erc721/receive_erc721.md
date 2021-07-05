@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - Receive ERC721 token
+description: follow these steps to receive erc721 tokens through multisig transactions
+tags: rif gnosis multisig erc721
 ---
 
 It is important to understand that in order to receive funds, the Multisig account address (instead of the owner's address) must be used as the receiver.

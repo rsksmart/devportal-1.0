@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - transaction confirmation
+description: Steps required to confirm a transaction
+tags: rif gnosis multisig
 ---
 
 **Required packages**:

@@ -1,6 +1,8 @@
 ---
 layout: rsk
-title: RIF Multisig SDK - ERC20 Transactions
+title: RIF Multisig SDK - ERC721 Transactions
+description: follow these steps to send erc721 tokens through multisig transactions
+tags: rif gnosis multisig erc721
 ---
 
 ## ERC721 Transactions
