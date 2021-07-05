@@ -79,7 +79,7 @@ await erc721TransactionBuilder.safeTransferFrom(
 
 Parameters:
 
-- `from: string` - the address from which transfer the token identified by `tokenId`
+- `from: string` - the address `from` which transfers the token identified by `tokenId`
 - `to: string` - the address will receive the token identified by `tokenId`
 - `tokenId: BigNumber` - the id of the token will be transferred to address `to`
 - `data: string` - Optional, the data that will be sent to the receiver with the `onERC721Received` call.
