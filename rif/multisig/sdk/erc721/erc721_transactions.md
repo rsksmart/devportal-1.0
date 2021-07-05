@@ -111,7 +111,7 @@ await erc721TransactionBuilder.setApprovalForAll(
 
 Parameters:
 
-- `operator: string` - the address allowed/forbidden to execute transfer operations in behalf of the owner for all her tokens
+- `operator: string` - the address allowed/forbidden to execute transfer operations on behalf of the owner's tokens
 - `approved: boolean` - true to allow the operator to execute the operations of behalf of the owner, false to disallow the approval
 
 
