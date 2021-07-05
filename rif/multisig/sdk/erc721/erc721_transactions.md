@@ -100,7 +100,7 @@ Parameters:
 
 ### SetApprovalForAll Transaction
 
-It sets or unsets approval for a specific operator. That would allow the operator to perform transfer operations on behalf of the owner.
+It sets or unsets approval for a specific operator, that allows the operator to perform transfer operations on behalf of the owner.
 
 ```ts
 await erc721TransactionBuilder.setApprovalForAll(
