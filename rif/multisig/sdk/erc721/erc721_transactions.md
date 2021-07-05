@@ -112,7 +112,7 @@ await erc721TransactionBuilder.setApprovalForAll(
 Parameters:
 
 - `operator: string` - the address allowed/forbidden to execute transfer operations on behalf of the owner's tokens
-- `approved: boolean` - true to allow the operator to execute the operations of behalf of the owner, false to disallow the approval
+- `approved: boolean` - set to `true` to allow the operator to execute the operations on behalf of the owner, can be set to `false` to disallow the approval.
 
 
 > **IMPORTANT**: See [ERC721 setApprovalForAll method](https://eips.ethereum.org/EIPS/eip-721)
