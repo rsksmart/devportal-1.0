@@ -39,7 +39,7 @@ const safeTransaction = await erc721TransactionBuilder.transferFrom(
 
 Parameters:
 
-- `from: string` - the address from which transfer the token identified by `tokenId`
+- `from: string` - the address `from` which transfers the token identified by `tokenId`
 - `to: string` - the address will receive the token identified by `tokenId`
 - `tokenId: BigNumber` - the id of the token will be transferred to address `to`
 
