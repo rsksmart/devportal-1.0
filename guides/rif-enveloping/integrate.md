@@ -219,10 +219,3 @@ To implement and use your own replenish strategy:
 2. On the function `replenishStrategy` write your new replenish strategy.
 3. Re build the project `yarn && yarn prepare`
 4. Add the command `--customReplenish` when running a Relay Server or change the config json file to set `customReplenish` on true.
-
-
-## MetaCoin
-
-As a complete example (works on Regtest), we developed Metacoin for minting and sending tokens without requiring RBTC for gas.
-
-Try it out here: https://github.com/rsksmart/enveloping-metacoin

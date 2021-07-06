@@ -20,7 +20,6 @@ This guide details each operation available when using the Enveloping service, s
     - [Using the relay server directly](/guides/rif-enveloping/integrate/#using-the-relay-server-directly)
     - [Using a relay provider](/guides/rif-enveloping/integrate/#using-a-relay-provider)
     - [Using the Enveloping utils as a library](/guides/rif-enveloping/integrate/#using-the-enveloping-utils-as-a-library)
-    - [Metacoin](/guides/rif-enveloping/integrate/#metacoin)
 - [**Create a Smart Wallet**](/guides/rif-enveloping/create-smart-wallet/)
     - [Deploy a Smart Wallet](/guides/rif-enveloping/create-smart-wallet/#deploy-a-smart-wallet)
 
