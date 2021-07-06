@@ -118,7 +118,7 @@ Where:
 
 After configuring that script you need to run it and wait until it finishes.
 
-**Important Note**: the script to allow tokens assumes you are in regtest and uses the account[0] as the owner of the contracts and that's important because
+**Important Note**: the script to allow tokens assumes you are in regtest and uses the `account[0]` as the owner of the contracts and that's important because
 only the owner can allow tokens on the contracts.
 
 ### On Testnet
