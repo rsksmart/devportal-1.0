@@ -14,8 +14,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
-      <link rel="canonical" href="https://developers.rsk.co/rif/multisig/sdk/transactions/">
-   	<title>RIF Multisig SDK - transactions - RSK Developers Portal</title>
+      <link rel="canonical" href="https://developers.rsk.co/rif/multisig/sdk/erc20/">
+   	<title>RIF Multisig SDK - ERC20 - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/img/favicons/favicon-32x32.png">
@@ -662,9 +662,30 @@
                   <li><a href="../creation/">Create a Multisig account</a></li>
                   <li><a href="../policies/#owners">Change owners</a></li>
                   <li><a href="../policies/#threshold">Change threshold</a></li>
-                  <li><a href="../receiving/#rbtc">Receive RBTC (gas)</a></li>
-                  <li><a href="../receiving/#erc20">Receive ERC20 tokens (including RIF tokens)</a></li>
-                  <li><a href="./">Request transactions (RBTC, ERC20, raw transactions)</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../rbtc/">RBTC</a>
+                    <ul>
+                      <li><a href="../rbtc/receive_rbtc/">Receive RBTC (gas)</a></li>
+                      <li><a href="../rbtc/rbtc_transactions/">Create RBTC transactions</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="./">ERC20 tokens (including RIF tokens)</a>
+                    <ul>
+                      <li><a href="receive_erc20/">Receive ERC20 tokens</a></li>
+                      <li><a href="erc20_transactions/">Create ERC20 transactions</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../erc721/">ERC721 tokens (collectibles)</a>
+                    <ul>
+                      <li><a href="../erc721/receive_erc721/">Receive ERC721 tokens</a></li>
+                      <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
+                    </ul>
+                  </li>
                   <li><a href="../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
                   <li><a href="../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
                   <li><a href="../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
@@ -1039,7 +1060,7 @@
 		
 			
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<span property="name">RIF Multisig SDK - transactions</span>
+					<span property="name">RIF Multisig SDK - ERC20</span>
 					<meta property="position" content="5" />
 				</li>
 				
@@ -1056,17 +1077,17 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-10 16:45:38 +0000T00:00:00.000Z">2021-06-10</time> | -->
-     4' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/transactions.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+     1' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/erc20/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/transactions/&amp;text=RIF%20Multisig%20SDK%20-%20transactions&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/transactions/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
-          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/transactions/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
-          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/transactions/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=RIF%20Multisig%20SDK%20-%20transactions&amp;body=RIF%20Multisig%20SDK%20-%20transactions%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/transactions/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/multisig/sdk/transactions/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/erc20/&amp;text=RIF%20Multisig%20SDK%20-%20ERC20&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/erc20/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/erc20/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/erc20/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=RIF%20Multisig%20SDK%20-%20ERC20&amp;body=RIF%20Multisig%20SDK%20-%20ERC20%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/multisig/sdk/erc20/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/multisig/sdk/erc20/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
     <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
@@ -1607,9 +1628,30 @@
                   <li><a href="../creation/">Create a Multisig account</a></li>
                   <li><a href="../policies/#owners">Change owners</a></li>
                   <li><a href="../policies/#threshold">Change threshold</a></li>
-                  <li><a href="../receiving/#rbtc">Receive RBTC (gas)</a></li>
-                  <li><a href="../receiving/#erc20">Receive ERC20 tokens (including RIF tokens)</a></li>
-                  <li><a href="./">Request transactions (RBTC, ERC20, raw transactions)</a></li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../rbtc/">RBTC</a>
+                    <ul>
+                      <li><a href="../rbtc/receive_rbtc/">Receive RBTC (gas)</a></li>
+                      <li><a href="../rbtc/rbtc_transactions/">Create RBTC transactions</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="./">ERC20 tokens (including RIF tokens)</a>
+                    <ul>
+                      <li><a href="receive_erc20/">Receive ERC20 tokens</a></li>
+                      <li><a href="erc20_transactions/">Create ERC20 transactions</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <span class="fa fa-chevron-right"></span>
+                    <a href="../erc721/">ERC721 tokens (collectibles)</a>
+                    <ul>
+                      <li><a href="../erc721/receive_erc721/">Receive ERC721 tokens</a></li>
+                      <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
+                    </ul>
+                  </li>
                   <li><a href="../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
                   <li><a href="../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
                   <li><a href="../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
@@ -1952,136 +1994,13 @@
     </a>
 </div>
 
-                  <h1 class="page-title" id="top">RIF Multisig SDK - transactions</h1>
+                  <h1 class="page-title" id="top">RIF Multisig SDK - ERC20</h1>
 
-                  <p><strong>Required packages</strong>:</p>
+                  <p>Safe contracts can receive and send ERC20 tokens:</p>
 <ul>
-  <li><a href="https://github.com/rsksmart/safe-transactions-sdk" rel="external noopener noreferrer" target="_blank">@rsksmart/safe-transactions-sdk</a></li>
-  <li><a href="https://github.com/gnosis/safe-core-sdk" rel="external noopener noreferrer" target="_blank">@gnosis.pm/safe-core-sdk</a></li>
+  <li><a href="receive_erc20">Receiving ERC20 tokens</a></li>
+  <li><a href="erc20_transactions">Sending ERC20 tokens</a></li>
 </ul>
-
-<h2 id="raw-transactions">Raw Transactions</h2>
-
-<p>Raw transactions can be created by using directly the <a href="https://github.com/gnosis/safe-core-sdk" rel="external noopener noreferrer" target="_blank">safe-core-sdk</a> package or the <a href="https://github.com/rsksmart/safe-transactions-sdk" rel="external noopener noreferrer" target="_blank">safe-transactions-sdk</a>.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">tx</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safe</span><span class="p">.</span><span class="nx">createTransaction</span><span class="p">({</span>
-      <span class="nx">to</span><span class="p">,</span>
-      <span class="nx">data</span><span class="p">,</span>
-      <span class="nx">value</span>
-    <span class="p">})</span>
-</code></pre></div></div>
-
-<h3 id="safe-transactions-sdk">safe-transactions-sdk</h3>
-
-<p>The <code class="highlighter-rouge">RawTransactionBuilder</code> provides the possibility to create raw transactions.</p>
-
-<p>Initialize the <code class="highlighter-rouge">RawTransactionBuilder</code>.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RawTransactionBuilder</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/safe-transactions-sdk</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">rawTransactionBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RawTransactionBuilder</span><span class="p">(</span><span class="nx">safe</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Create the transaction.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">tx</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rawTransactionBuilder</span><span class="p">.</span><span class="nx">rawTransaction</span><span class="p">(</span><span class="nx">to</span><span class="p">,</span> <span class="nx">value</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="erc20-transactions">ERC20 Transactions</h2>
-
-<p>The <a href="https://github.com/rsksmart/safe-transactions-sdk" rel="external noopener noreferrer" target="_blank">@rsksmart/safe-transactions-sdk</a> package facilitates the creation of ERC20 transactions.</p>
-
-<p>The <code class="highlighter-rouge">ERC20TransactionBuilder</code> provides a set of methods related to <a href="https://eips.ethereum.org/EIPS/eip-20" rel="external noopener noreferrer" target="_blank">ERC20</a> transactions, including <a href="https://developers.rsk.co/rif/token/" rel="external noopener noreferrer" target="_blank">RIF token</a>.</p>
-
-<h3 id="initialization">Initialization</h3>
-<p>Initialize the <code class="highlighter-rouge">ERC20TransactionBuilder</code>.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ERC20TransactionBuilder</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/safe-transactions-sdk</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">erc20TransactionBuilder</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ERC20TransactionBuilder</span><span class="p">(</span><span class="nx">safe</span><span class="p">,</span> <span class="nx">ERC20Token</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">safe: Safe</code> - a <a href="https://github.com/gnosis/safe-core-sdk/blob/main/packages/safe-core-sdk/src/Safe.ts" rel="external noopener noreferrer" target="_blank">Safe instance</a>
-</li>
-  <li>
-<code class="highlighter-rouge">ERC20Token: Contract</code> - an <a href="https://docs.ethers.io/v5/api/contract/contract/" rel="external noopener noreferrer" target="_blank">ethers.js Contract</a> representing the ERC20 token</li>
-</ul>
-
-<h3 id="transfer-transaction">Transfer transaction</h3>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span>
-  <span class="nx">to</span><span class="p">,</span>
-  <span class="nx">transfer</span>
-<span class="p">)</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">to: string</code> - the address will receive the amount of token specified with <code class="highlighter-rouge">transfer</code>
-</li>
-  <li>
-<code class="highlighter-rouge">transfer: BigNumber</code> - the amount of token will be transferred to address <code class="highlighter-rouge">to</code>
-</li>
-</ul>
-
-<h3 id="transferfrom-transaction">TransferFrom transaction</h3>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">transferFrom</span><span class="p">(</span>
-  <span class="k">from</span><span class="p">,</span>
-  <span class="nx">to</span><span class="p">,</span>
-  <span class="nx">value</span>
-<span class="p">)</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">from: string</code> - the address from which transfer the amount of token specified with <code class="highlighter-rouge">value</code>
-</li>
-  <li>
-<code class="highlighter-rouge">to: string</code> - the address will receive the amount of token specified with <code class="highlighter-rouge">transfer</code>
-</li>
-  <li>
-<code class="highlighter-rouge">value: BigNumber</code> - the amount of token will be transferred to address <code class="highlighter-rouge">to</code>
-</li>
-</ul>
-
-<blockquote>
-  <p>To execute the <code class="highlighter-rouge">transferFrom</code> successfully, the <code class="highlighter-rouge">from</code> address should explicitly authorize the safe account to spend an amount equal to or greater than <code class="highlighter-rouge">value</code>. Such operation can be authorized through the <code class="highlighter-rouge">approve</code> method of the <code class="highlighter-rouge">ERC20Token</code> Contract.</p>
-</blockquote>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">fromToken</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">MockERC20Token</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">userFrom</span><span class="p">)</span>
-<span class="k">await</span> <span class="nx">fromToken</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">safe</span><span class="p">.</span><span class="nx">getAddress</span><span class="p">(),</span> <span class="nx">value</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h3 id="approve-transaction">Approve transaction</h3>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span>
-  <span class="nx">spender</span><span class="p">,</span>
-  <span class="nx">amount</span><span class="p">,</span>
-<span class="p">)</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">spender: string</code> - the address allowed to withdraw up to the amount of token specified with <code class="highlighter-rouge">amount</code>
-</li>
-  <li>
-<code class="highlighter-rouge">amount: BigNumber</code> - the maximum amount allowed to be withdrawn</li>
-</ul>
-
-<p>As stated in the <a href="https://eips.ethereum.org/EIPS/eip-20#methods" rel="external noopener noreferrer" target="_blank">EIP20</a> approve description:</p>
-
-<blockquote>
-  <p>clients SHOULD make sure to create user interfaces in such a way that they first set the allowance to 0, before setting it to another value for the same spender.</p>
-</blockquote>
-
-<p>For further details, please read <a href="https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/" rel="external noopener noreferrer" target="_blank"><em>ERC20 API: An Attack Vector on Approve/TransferFrom Methods</em> by Mikhail Vladimirov and Dmitry Khovratovich</a>.</p>
 
 
                   
