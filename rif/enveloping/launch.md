@@ -37,7 +37,7 @@ Where:
 * **logLevel**: is the log level for the relay server.
 * **workdir**: is the absolute path to the folder where the server will store the database and all its data.
 
-3. Now we can use the command `yarn relay` (on the root of the relay project) to start the relay server.
+Now we can use the command `yarn relay` (on the root of the relay project) to start the relay server.
 If it's the first time you run the relay server, you will see a log saying that it isn't ready and that some values are wrong, that's ok, you just need to register this relay server into the relay hub in order to be usable by the clients.
 
 ## Register the Relay Server
@@ -118,15 +118,14 @@ Where:
 
 After configuring that script you need to run it and wait until it finishes.
 
-**Important Note**: the script to allow tokens assumes you are in regtest and uses the account[0] as the owner of the contracts and that's important because
+**Important Note**: the script to allow tokens assumes you are in regtest and uses the `account[0]` as the owner of the contracts and that's important because
 only the owner can allow tokens on the contracts.
 
 ### On Testnet
 
-There is no script for this situation, so you will need to call the method `acceptsToken(address token)` directly in the following contracts, using an account with tRBTC:
+There is no script for this situation, so you will need to call the method `acceptToken(address token)` directly in the following contracts, using an account with tRBTC:
 
 - `SmartWalletDeployVerifier`
 - `SmartWalletRelayVerifier`
 - `CustomSmartWalletDeployVerifier`
 - `CustomSmartWalletRelayVerifier`
-

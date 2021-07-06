@@ -225,4 +225,4 @@ To implement and use your own replenish strategy:
 
 As a complete example (works on Regtest), we developed Metacoin for minting and sending tokens without requiring RBTC for gas.
 
-Try it: https://github.com/rsksmart/enveloping-metacoin
+Try it out here: https://github.com/rsksmart/enveloping-metacoin
