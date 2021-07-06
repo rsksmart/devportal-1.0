@@ -184,7 +184,7 @@ function createProxy(address masterCopy, bytes memory data)
 
 Parameters:
 - `masterCopy`: Address of master copy.
-- `data`: Payload for message call sent to new proxy contract. It allows the creation of new SafeProxy and its setup in a single transaction.
+- `data`: Payload for message call sent to new proxy contract. It allows the creation of new SafeProxy instances and their setup in a single transaction.
 
 ### `ProxyCreation`
 

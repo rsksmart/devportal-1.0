@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - rejecting
+description: Steps required to reject a transaction
+tags: rif gnosis multisig
 ---
 
 **Required packages**:

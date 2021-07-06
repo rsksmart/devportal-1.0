@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig
+description: Overview of the RIF Multisig solution
+tags: rif gnosis multisig
 ---
 
 The objective of this project is to provide the RSK community with a safe and simple solution to create wallets that require multiple signatures to transact their funds. These kinds of wallets are called _multisig wallets_.

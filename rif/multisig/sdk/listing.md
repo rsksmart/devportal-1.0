@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - Transaction listing
+description: Safe transaction listing 
+tags: rif gnosis multisig
 ---
 
 **Required packages**:
