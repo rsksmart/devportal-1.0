@@ -22,7 +22,7 @@ We'll use `truffle` for deploying contracts. Have an RSK node up and running in 
 
 
 After running this command you will see a summary of contracts on the 
-terminal something similar to this:
+terminal, something similar to this:
 
 ```
 |===================================|============================================|
