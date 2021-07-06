@@ -63,7 +63,7 @@ to any wallet and send some tokens to that address. Also you can use web3 if you
    * **SMART_WALLET_ADDRESS**: the generated address of last step.
    * **AMOUNT_OF_TOKENS**: string containing the amount of tokens in decimal unit.
    
-   **NOTE: in this example we asume that the account[0] of regtest has tokens to use.**
+   **NOTE: in this example we asume that the `account[0]` of regtest has tokens to use.**
 
 3. Finally you need to deploy your smart wallet, to do so you must follow these steps:
 
