@@ -123,7 +123,7 @@ only the owner can allow tokens on the contracts.
 
 ### On Testnet
 
-There is no script for this situation, so you will need to call the method `acceptsToken(address token)` directly in the following contracts, using an account with tRBTC:
+There is no script for this situation, so you will need to call the method `acceptToken(address token)` directly in the following contracts, using an account with tRBTC:
 
 - `SmartWalletDeployVerifier`
 - `SmartWalletRelayVerifier`
