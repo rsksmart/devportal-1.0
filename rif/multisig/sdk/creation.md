@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: RIF Multisig SDK - creation
+description: Multisig account creation
+tags: rif gnosis multisig
 ---
 
 **Required packages**:
