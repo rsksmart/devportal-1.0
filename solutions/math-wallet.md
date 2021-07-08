@@ -50,6 +50,10 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 | [PAX](https://etherscan.io/token/0x8e870d67f660d95d5be530380d0ec0bd388289e1) | [Paxos Standard](https://www.paxos.com/standard) | ERC20 | Ethereum
 | [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) | [USD Coin](https://www.centre.io/) | ERC20 | Ethereum
 
+### Guides
+
+- [RSK Chrome Extension Wallet User Guide](https://blog.mathwallet.org/?p=1705)
+
 ### Get in touch
 
 - [Landing page](https://mathwallet.org/en-us/)
