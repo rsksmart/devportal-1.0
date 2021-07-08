@@ -5,21 +5,35 @@ tags: rif, enveloping, rsk, envelope, gas station network, gsn, testnet
 render_features: 'tables-with-borders'
 ---
 
-## Testnet Contracts - V2
+### Primary contracts
 
 | Contract          | Address                                    |
 |-------------------|--------------------------------------------|
-| [StakeManager](https://explorer.testnet.rsk.co/address/0xb059f16a6BDa9D8372AF8699b1d256dB630aBD3e)    | 0xb059f16a6BDa9D8372AF8699b1d256dB630aBD3e |
-| [Penalizer](https://explorer.testnet.rsk.co/address/0xD44B83F6c1F7FD6832617F5090251995e8ceA526)       | 0xD44B83F6c1F7FD6832617F5090251995e8ceA526 |
-| [RelayHub](https://explorer.testnet.rsk.co/address/0x0fD966aE0b39EC5177d04348D92391E2571523cD)        | 0x0fD966aE0b39EC5177d04348D92391E2571523cD |
-| [SmartWallet](https://explorer.testnet.rsk.co/address/0x06Abd711C3AdD1363C8DcAB6aB3e58477818C043)     | 0x06Abd711C3AdD1363C8DcAB6aB3e58477818C043 |
-| [ProxyFactory](https://explorer.testnet.rsk.co/address/0xc546898f17226ccC271f5060339c3b74733b2B62)    | 0xc546898f17226ccC271f5060339c3b74733b2B62 |
-| [SimpleSmartWallet](https://explorer.testnet.rsk.co/address/0xE94B9C5Bb2B323F7D748cAb397E64a5d3D774201)    | 0xE94B9C5Bb2B323F7D748cAb397E64a5d3D774201 |
-| [SimpleProxyFactory](https://explorer.testnet.rsk.co/address/0x70279F9Ed7222AcEf62e6794Db762Fa43e51043E)   | 0x70279F9Ed7222AcEf62e6794Db762Fa43e51043E |
-| [DeployVerifier](https://explorer.testnet.rsk.co/address/0x515Daa4c05B65C5FfBC4cddcc10F26aa8B7ABF62)  | 0x515Daa4c05B65C5FfBC4cddcc10F26aa8B7ABF62 |
-| [RelayVerifier](https://explorer.testnet.rsk.co/address/0x5316C84AB67Eff7f09e376d5caA2df77ad585717)   | 0x5316C84AB67Eff7f09e376d5caA2df77ad585717 |
+| Penalizer       | 0x5FdeE07Fa5Fed81bd82e3C067e322B44589362d9 |
+| RelayHub        | 0xe90592939fE8bb6017A8a533264a5894B41aF7d5 |
+| SmartWallet     | 0x27646c85F9Ad255989797DB0d99bC4a9DF2EdA68 |
+| SmartWalletFactory    | 0xEbb8AA43CA09fD39FC712eb57F47A9534F251996 |
+| DeployVerifier | 0x345799D90aF318fd2d8CbA87cAD4894feF2f3518 |
+| RelayVerifier  | 0xDe988dB9a901C29A9f04050eB7ab08f71868a8fc |
 
-## Testnet Contracts - V1
+### For CustomSmartWallet support
+
+| Contract          | Address                                    |
+|-------------------|--------------------------------------------|
+| CustomSmartWallet     | 0xB8dB52615B1a94a03C2251fD417cA4d945484530 |
+| CustomSmartWalletFactory    | 0xA756bD95D8647be254de40B842297c945D8bB9a5 |
+| CustomSmartWalletDeployVerifier |  0x3c26685CE3ac89F755D68A81175655b4bBE54AE0 |
+| CustomSmartWalletRelayVerifier | 0xBcCA9B8faA9cee911849bFF83B869d230f83f945 |
+
+
+### For Testing purposes
+
+| Contract          | Address                                    |
+|-------------------|--------------------------------------------|
+| SampleRecipient   | 0x4De3eB249409e8E40a99e3264a379BCfa10634F5 |
+| TestToken   | 0x77740cE4d7897430E74D5E06540A9Eac2C2Dee70 |
+
+## Testnet Contracts V1
 
 | Contract          | Address                                    |
 |-------------------|--------------------------------------------|
