@@ -115,7 +115,7 @@ For the RIF Testnet Faucet:
 ![Metamask Send tRIF Next](/assets/img/guides/quickstart/transactions/metamask_send_rif_next.png)
 
 7- Click on Confirm
-![Metamask Send tRIF Next](/assets/img/guides/quickstart/transactions/metamask_confirm_trif.png)
+![Metamask Send tRIF Next](/assets/img/guides/quickstart/transactions/metamask_confirm_tRIF.png)
 
 8- Transaction processing
 ![Transaction Processing](/assets/img/guides/quickstart/transactions/trif_processing.png)
