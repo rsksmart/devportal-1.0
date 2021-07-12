@@ -765,7 +765,7 @@
   "category": "",
   "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, architecture",
   "date": "",
-  "desc": "The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by “sponsors” is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well. Core architecture The core Enveloping architecture is defined by the following components: Relay Request - a structure that wraps the transaction sent by an end-user. It includes data required for relaying the transaction e.g. address of the payer, address of the original requester, token payment data. Deploy Request - a structure that wraps the transaction sent to deploy a Smart wallet. Relay Hub - a core contract which serves as the interface for the on-chain part of the system. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts. Relay Verifier - an abstract contract that authorizes a specific relay request. Deploy Verifier - an abstract contract that authorizes a specific deploy request. Smart Wallet - a contract that verifies forwarded data and subsequently invokes the recipient contract of the transaction. The smart wallet is deployed counterfactually at the moment it is needed. This…"
+  "desc": "The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by “sponsors” is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well. The core Enveloping architecture is defined by the following components: Relay Request - a structure that wraps the transaction sent by an end-user. It includes data required for relaying the trasaction e.g. address of the payer, address of the original requester, token payment data. Deploy Request - a structure that wraps the transaction sent to deploy a Smart wallet. Relay Hub - a core contract which serves as the interface for the on-chain part of the system. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts. Relay Verifier - an abstract contract that authorizes a specific relay request. Deploy Verifier - an abstract contract that authorizes a specific deploy request. Smart Wallet - a contract that verifies forwarded data and subsequently invokes the recipient contract of the transaction. The smart wallet is deployed counterfactually at the moment it is needed. This happens, for instance,…"
  },
  {
   "url": "/rif/gateways/dataservices/chainlink/architecture/",
@@ -934,6 +934,14 @@
   "tags": "chainlink, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/rif/enveloping/changelog/",
+  "title": "RIF Enveloping - V2 Changelog",
+  "category": "",
+  "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, changelog",
+  "date": "",
+  "desc": "RelayHub contract doesn’t receive payments, the payment for the service (in tokens) is sent directly to the worker relaying the transaction on behalf of the user. RelayHub contract now handles relay manager staking. Gas estimation improvements: GasOverhead removed from RelayHub, there are no more validations against hardcoded values Now the gas and tokenGas fields from the request can be left undefined, and in that case they will be automatically estimated by the RelayClient. The maximum gas estimation in the RelayServer is more precise now A new utility function is available to estimate the maximum gas a relay transaction would consume, based in a linear fit estimation. This can be used in applications that don’t want to sign a payload each time they need an approximation of the cost of relaying the transaction Paymaster verifications are done off-chain to optimize gas costs, thus the paymasters are now called Verifiers and they are not part of the on-chain relay flow nor they handle payments at all. Big gas cost optimization. Security issues fixed."
  },
  {
   "url": "/rif/identity/data-vault/architecture/client/",
@@ -1184,14 +1192,6 @@
   "desc": "This repository contains a boilerplate for running and testing a local development environment for the Chainlink/RSK integration. Follow these steps to setup the development environment: 1 - Install Docker Install Docker 2 - Clone Repo git clone git@github.com:smartcontractkit/chainlink-RSK.git 3 - Run Local Development Setup To start the services and the test runner, simply run: docker-compose up Docker will download the required images, build the containers and start services. The test runner should start automatically. To stop the containers and delete the volumes, so that the configuration and chain resets: docker-compose down -v The objective of this local environment is to provide external data to a Consumer contract deployed on RSK network through the Chainlink Oracle system, using a simple and natural way to join both services thanks to the help of an external initiator and external adapter. A test runner is included to setup the environment and test the complete data flow, which will be: Consumer contract =&amp;gt; Oracle contract =&amp;gt; RSK Initiator =&amp;gt; Chainlink =&amp;gt; RSK TX Adapter =&amp;gt; Oracle contract =&amp;gt; Consumer contract Services: This…"
  },
  {
-  "url": "/rif/enveloping/dev-setup/",
-  "title": "RIF Enveloping - Setup",
-  "category": "",
-  "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, setup",
-  "date": "",
-  "desc": "Below are the basic requirements needed to use the enveloping service: Typescript: One of the main programming languages in the project is typescript. Here are the instructions for installing typescript. Yarn: We use yarn version v1.22.0 for package management. Installation instructions at Yarn’s site. Check the installation by running yarn version. Node &amp;amp; NPM: We use Node version v12.18.3. Check the Installation guide. Check if node is installed by running node -v. The Node package manager or NPM we use for managing node packages is NPM version 6.14.6. NPX and Truffle: An important tool we use for interacting with the blockchain is Truffle version v5.0.33. Check out the installation guide. We run all truffle commands with the prefix npx. This is to execute node packages using the project’s version of NPM. Checking the installation by running npx truffle version The configuration file is truffle.js. Please see Truffle’s documentation for details about this file and how to use it. Docker: We recommend following the official documentation for installing Docker and keeping it updated. You need to install docker…"
- },
- {
   "url": "/rif/marketplace/dev-setup/",
   "title": "RIF Marketplace Development Environment",
   "category": "",
@@ -1405,7 +1405,7 @@
   "category": "",
   "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, gas-costs",
   "date": "",
-  "desc": "The overhead gas cost is the extra amount of gas required to process the relay call requested by the user. Let’s call X the gas consumed by the destination-contract method call, and Y the total gas consumed by the relay call, then the relay call cost (i.e. overhead gas cost) is: Z = Y - X. SmartWallet templates RIF Enveloping V1 only has one SmartWallet template, which can be used as-is or it can be injected with extra logic during the SmartWallet instance creation. V2 introduces a cheaper template (SimpleSmartWallet), to be used when there’s no need for extra custom-logic in the smart wallets. The behaviour is the same as the SmartWallet template of V2, but without this capability. RIF Version SW template Avg. overhead gas 1 SmartWallet 172400 2 SmartWallet 98070 3 SimpleSmartWallet 97695 Note that the instance of SmartWallet used didn’t point to any extra custom logic. Transaction Batching RIF Enveloping V2 also introduces transaction batching Scenarios A Each transaction has the same smart wallet, token payment and destination contract. B Each transaction has…"
+  "desc": "The overhead gas cost is the extra amount of gas required to process the relay call requested by the user. Let’s call X the gas consumed by the destination-contract method call, and Y the total gas consumed by the relay call, then the relay call cost (i.e. overhead gas cost) is: Z = Y - X. SmartWallet templates RIF Enveloping V1 only has one SmartWallet template, which can be used as-is or it can be injected with extra logic during the SmartWallet instance creation. V2 introduces a cheaper template (SmartWallet), to be used when there’s no need for extra custom-logic in the smart wallets. The behaviour is the same as the CustomSmartWallet template of V2, but without this capability. RIF Version SW Template Avg. overhead gas 1 SmartWallet 172400 2 CustomSmartWallet 98070 2 SmartWallet 97695 Note that the instance of CustomSmartWallet used didn’t point to any extra custom logic. Transaction Batching RIF Enveloping V2 also introduces transaction batching Scenarios A Each transaction has the same smart wallet, token payment and destination contract B Each transaction has the same…"
  },
  {
   "url": "/develop/apps/tools/gas-station/",
@@ -1452,14 +1452,6 @@
   "title": "Using geth to attach to a RSK local node",
   "category": "",
   "tags": "tutorial, rsk, geth, ethereum",
-  "date": "",
-  "desc": ""
- },
- {
-  "url": "/guides/rif-enveloping/getting-started/",
-  "title": "Getting Started",
-  "category": "",
-  "tags": "rif, enveloping, rsk, gas station network, gsn, defi, getting-started",
   "date": "",
   "desc": ""
  },
@@ -2352,6 +2344,14 @@
   "desc": ""
  },
  {
+  "url": "/rif/enveloping/install/",
+  "title": "RIF Enveloping - Installation And Launch",
+  "category": "",
+  "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, install, installation",
+  "date": "",
+  "desc": "Building the project Clone the project. Then run the following from the project’s root directory to build it. yarn install yarn prepare Deploy contracts Locally We’ll use truffle for deploying contracts. Have an RSK node up and running in regtest mode and then execute the following on the project’s root folder: npx truffle migrate --network rsk After running this command you will see a summary of contracts on the terminal, something similar to this: |===================================|============================================| | Contract | Address | |===================================|============================================| | Penalizer | 0xe8C7C6f18c3B9532343487faD807060750C1fE95 | | RelayHub | 0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701 | | SampleRecipient | 0x5D0aBdE7Ed6B7e122eD55EAe514E617d6c08f407 | | SmartWallet | 0xB7a001eE69E7C1eef25Eb8e628e46214Ea74BF0F | | SmartWalletFactory | 0x8C1108cFCd7ddad09D8910e5f42982A6c54aD9cD | | SmartWalletDeployVerifier | 0x1938517B0762103d52590Ca21d459968c25c9E67 | | SmartWalletRelayVerifier | 0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2 | | CustomSmartWallet | 0x96A90Ee24C20c78Ba20AcE1a2aa4D59F79353C54 | | CustomSmartWalletFactory | 0x89bac3BB0517F7Dc0E5E94265217A9Acc5cc489f | | CustomSmartWalletDeployVerifier | 0x3eE31F6049065B616f85470985c0eF067f2bEbDE | | CustomSmartWalletRelayVerifier | 0xDE8Ae20488BE104f0782C0126038b6682ECc1eC7 | |===================================|============================================| You’ll need to save this summary for later use. Deploy contracts On Testnet We’ll use truffle for deploying contracts. npx truffle migrate --network rsktestnet Disclaimer: to use testnet, you should have an unlocked account with funds or configure it in truffle.js. These contracts have…"
+ },
+ {
   "url": "/rif/storage/providers/swarm/install/",
   "title": "Installing Swarm",
   "category": "",
@@ -2486,6 +2486,14 @@
   "tags": "json-rpc, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto",
   "date": "",
   "desc": ""
+ },
+ {
+  "url": "/rif/enveloping/launch/",
+  "title": "RIF Enveloping - Launch",
+  "category": "",
+  "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, launch",
+  "date": "",
+  "desc": "Run the Relay Server To start the relay server, you need to configure the json config file located at &amp;lt;PROJECT_ROOT&amp;gt;/jsrelay/config/relay-config.json which has this structure: { &quot;url&quot;: &quot;localhost&quot;, &quot;port&quot;: 8090, &quot;relayHubAddress&quot;: &quot;0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701&quot;, &quot;relayVerifierAddress&quot;: &quot;0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2&quot;, &quot;deployVerifierAddress&quot;: &quot;0x1938517B0762103d52590Ca21d459968c25c9E67&quot;, &quot;gasPriceFactor&quot;: 1, &quot;rskNodeUrl&quot;: &quot;http://rsk-node:4444&quot;, &quot;devMode&quot;: true, &quot;customReplenish&quot;: false, &quot;logLevel&quot;: 1, &quot;workdir&quot;: &quot;/home/user/workspace/relay&quot; } Where: url: is the URL where the relay server will be deployed, it could be localhost or the IP of the host machine. port: the port where the relay server will be hosted. relayHubAddress: is the relay hub contract address, you can retrieve this from the contract summary. relayVerifierAddress: is the relay verifier contract address, you can retrieve this from the contract summary. deployVerifierAddress: is the deploy verifier contract address, you can retrieve this from the contract summary. gasPriceFactor: is the gas price factor used to calculate the gas on the server, you can leave it as 1. rskNodeUrl: is the RSK node endpoint URL, where the RSK node is located. devMode: it indicates to the server if we are in development mode or not. customReplenish: set if the server uses a custom replenish function or not. logLevel: is the log level for the relay…"
  },
  {
   "url": "/rif/identity/mvp/learnings/",
@@ -3008,6 +3016,14 @@
   "desc": "RSK MainNet: 0x7a9872a7615c475b62a62b8f6e491077fb05f663 RSK TestNet: 0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b Has renewer role in RSK Owner. Smart contract Accepts payments via ERC-20 approve() + register().3 ERC-721 transferAndCall().4 Calculates price using NamePrice contract. It has an owner that can2 change name price contract. Public methods price renew price function price (string memory name, uint expires, uint duration) public view returns(uint); Returns the price of a name in RIF name not used. Pass &#39;&#39; expires not used. Pass 0 duration to register the name for. renew function renew(string calldata name, uint duration) external; Renews a name in Node Owner. This method should be called if the domain is owned by someone. You must have previously executed approve() for the amount of tokens to be transferred. name The name to register. duration Time to register in years. Register via…"
  },
  {
+  "url": "/rif/enveloping/requirements/",
+  "title": "RIF Enveloping - Requirements",
+  "category": "",
+  "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, requirements",
+  "date": "",
+  "desc": "RSK Node You need to have a running RSK node version PAPYRUS-2.2.0 or higher. Yarn We use yarn version v1.22.0 for package management. Installation instructions at Yarn’s site. Check the install by running yarn version. Node &amp;amp; NPM We use Node version v12.18.3. Installation instructions at Node’s site. Check the install by running node -v. Npx &amp;amp; Truffle An important tool we use for interacting with the blockchain is Truffle version v5.0.33. You can follow the installation guide in the official site. We run all truffle commands with the prefix npx. This is to execute node packages using the project’s version. Checking the install by running npx truffle version. The configuration file is truffle.js. Please see Truffle’s documentation for details about this file and how to use it. Docker We recommend following the official documentation for installing Docker and keeping it updated. You’ll need to install both docker as well as docker-compose. Running on macOS To run the project using Docker on a Mac, please follow these steps or the scripts and web apps will not…"
+ },
+ {
   "url": "/tutorials/resolve-nifty-issue/",
   "title": "Resolve Nifty Wallet Issue",
   "category": "",
@@ -3493,7 +3509,7 @@
   "category": "",
   "tags": "rif, enveloping, rsk, envelope, gas station network, gsn, testnet",
   "date": "",
-  "desc": "Testnet Contracts - V2 Contract Address StakeManager 0xb059f16a6BDa9D8372AF8699b1d256dB630aBD3e Penalizer 0xD44B83F6c1F7FD6832617F5090251995e8ceA526 RelayHub 0x0fD966aE0b39EC5177d04348D92391E2571523cD SmartWallet 0x06Abd711C3AdD1363C8DcAB6aB3e58477818C043 ProxyFactory 0xc546898f17226ccC271f5060339c3b74733b2B62 SimpleSmartWallet 0xE94B9C5Bb2B323F7D748cAb397E64a5d3D774201 SimpleProxyFactory 0x70279F9Ed7222AcEf62e6794Db762Fa43e51043E DeployVerifier 0x515Daa4c05B65C5FfBC4cddcc10F26aa8B7ABF62 RelayVerifier 0x5316C84AB67Eff7f09e376d5caA2df77ad585717 Testnet Contracts - V1 Contract Address StakeManager 0x4aD91a4315b3C060F60B69Fd0d1eBaf16c14148D Penalizer 0xd3021763366708d5FD07bD3A7Cd04F94Fc5e1726 RelayHub 0x3f8e67A0aCc07ff2F4f46dcF173C652765a9CA6C TestRecipient 0xFBE5bF13F7533F00dF301e752b41c96965c10Bfa SmartWallet 0xE7552f1FF31670aa36b08c17e3F1F582Af6302d1 ProxyFactory 0xb7a5370F126d51138d60e20E3F332c81f1507Ce2 DeployVerifier 0x3AD4EDEc75570c3B03620f84d37EF7F9021665bC RelayVerifier 0x053b4a77e9d5895920cBF505eB8108F99d929395"
+  "desc": "Primary contracts Contract Address Penalizer 0x5FdeE07Fa5Fed81bd82e3C067e322B44589362d9 RelayHub 0xe90592939fE8bb6017A8a533264a5894B41aF7d5 SmartWallet 0x27646c85F9Ad255989797DB0d99bC4a9DF2EdA68 SmartWalletFactory 0xEbb8AA43CA09fD39FC712eb57F47A9534F251996 DeployVerifier 0x345799D90aF318fd2d8CbA87cAD4894feF2f3518 RelayVerifier 0xDe988dB9a901C29A9f04050eB7ab08f71868a8fc For CustomSmartWallet support Contract Address CustomSmartWallet 0xB8dB52615B1a94a03C2251fD417cA4d945484530 CustomSmartWalletFactory 0xA756bD95D8647be254de40B842297c945D8bB9a5 CustomSmartWalletDeployVerifier 0x3c26685CE3ac89F755D68A81175655b4bBE54AE0 CustomSmartWalletRelayVerifier 0xBcCA9B8faA9cee911849bFF83B869d230f83f945 For Testing purposes Contract Address SampleRecipient 0x4De3eB249409e8E40a99e3264a379BCfa10634F5 TestToken 0x77740cE4d7897430E74D5E06540A9Eac2C2Dee70 Testnet Contracts V1 Contract Address StakeManager 0x4aD91a4315b3C060F60B69Fd0d1eBaf16c14148D Penalizer 0xd3021763366708d5FD07bD3A7Cd04F94Fc5e1726 RelayHub 0x3f8e67A0aCc07ff2F4f46dcF173C652765a9CA6C TestRecipient 0xFBE5bF13F7533F00dF301e752b41c96965c10Bfa SmartWallet 0xE7552f1FF31670aa36b08c17e3F1F582Af6302d1 ProxyFactory 0xb7a5370F126d51138d60e20E3F332c81f1507Ce2 DeployVerifier 0x3AD4EDEc75570c3B03620f84d37EF7F9021665bC RelayVerifier 0x053b4a77e9d5895920cBF505eB8108F99d929395"
  },
  {
   "url": "/rif/gateways/dataservices/chainlink/testnet/",
@@ -3732,7 +3748,7 @@
   "title": "Quick Start - Step 1",
   "category": "",
   "tags": "quick-start,, rskj",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "quick start - install RSK local node - prep environment, verify and install RSKj"
  },
  {
@@ -3740,7 +3756,7 @@
   "title": "Quick Start - Step 2",
   "category": "",
   "tags": "quick-start,, truffle,, ganache",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "quick start - tutorial project, install truffle, install ganache"
  },
  {
@@ -3748,7 +3764,7 @@
   "title": "Quick Start - Step 3",
   "category": "",
   "tags": "quick-start,, solidity",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "quick start - smart contracts, solidity"
  },
  {
@@ -3756,7 +3772,7 @@
   "title": "Quick Start - Step 4",
   "category": "",
   "tags": "quick-start,, compile,, deploy,, regtest,, truffle",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "quick start - compile smart contracts, deploy smart contracts to regtest"
  },
  {
@@ -3764,7 +3780,7 @@
   "title": "Quick Start - Step 5",
   "category": "",
   "tags": "quick-start,, smart-contract,, truffle,, web3",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "quick start - smart contract interactions through web3 REPL"
  },
  {
@@ -3772,7 +3788,7 @@
   "title": "RSK Blockchain",
   "category": "",
   "tags": "rsk",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "What is RSK?"
  },
  {
@@ -3780,7 +3796,7 @@
   "title": "Node (RSKj)",
   "category": "",
   "tags": "rsk,, rskj,, node",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Learn more about RSKj, a node implementation for the RSK blockchain"
  },
  {
@@ -3788,7 +3804,7 @@
   "title": "Architecture",
   "category": "",
   "tags": "rsk,, rskj,, node,, architecture",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Architecture of RSK nodes: JSON-RPC, Web3, and storage."
  },
  {
@@ -3796,7 +3812,7 @@
   "title": "JSON-RPC",
   "category": "",
   "tags": "rsk,, rskj,, node,, rpc",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "The JSON-RPC methods supported by RSK nodes."
  },
  {
@@ -3804,7 +3820,7 @@
   "title": "Using RSK Public Nodes (Mainnet &amp; Testnet) provided by IOVLabs",
   "category": "",
   "tags": "rsk,, networks,, versions,, rpc,, mainnet,, testnet,, cUrl",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
  },
  {
@@ -3812,7 +3828,7 @@
   "title": "Install",
   "category": "",
   "tags": "",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Ensure that your system meets the minimum requirements before installing the RSK nodes on it. Install RSK Node and Join the RSK Papyrus Mainnet RSK nodes can be installed on all major platforms, including Linux, Windows, and Mac. Here we provide step-by-step instructions for all supported platforms. Depending on your network performance, it usually takes 10 to 15 mins to setup a working node on Mainnet. Supported Systems and Methods Type Platform Supported Methods Local Linux Ubuntu Package, CentOS, Fat JAR, Docker Local Mac Fat JAR, Docker Local Windows Fat JAR, Docker Cloud AWS AWS AMI, Ubuntu Package, Docker Cloud Azure Azure VM Image, Ubuntu Package, Docker Cloud Google Ubuntu Package, Fat JAR, Docker Using Ubuntu Package Visit Setup…"
  },
  {
@@ -3820,7 +3836,7 @@
   "title": "RSK Node Updates",
   "category": "",
   "tags": "rsk,, rskj,, node,, update,, version",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to update RSKj, the RSK node, to a newer version, and verify that it works correctly. Also sign up for updates to get notified when there is a new version released."
  },
  {
@@ -3828,7 +3844,7 @@
   "title": "Hardware requirements",
   "category": "",
   "tags": "hardware,, specs,, requirements",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Minimum hardware requirements for RSK"
  },
  {
@@ -3836,7 +3852,7 @@
   "title": "Setup node on Docker",
   "category": "",
   "tags": "docker,, desktop,, macOS,, rskj,, windows,, install,, rsk,, node,, how-to,, network,, requirements,, mainnet",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. Install Docker Desktop Client Docker Desktop provides an easy and fast way for running containerized applications on various of operating systems. For Mac OSX and Windows: Download and install Start the Docker Desktop client Login with a Docker Hub free account For Linux: Install Docker Engine Community Note that you will need to use sudo for all docker commands, by default. To avoid this additional steps are required. Ensure that docker is running by running the following command - it should run without any errors. docker ps More information about Docker install here. Install RSKj Using Docker First of all, download the RSK a Dockerfile and supervisord.conf from artifacts repo. Inside the artifacts repo, you can choose which type of node you are going to install: A node connected to the public RSK Mainnet: Dockerfile.MainNet A node connected to the public RSK Testnet: Dockerfile.TestNet A node connected to a private RegTest network: Dockerfile.RegTest Install the node using Docker containers Then build the…"
  },
  {
@@ -3844,7 +3860,7 @@
   "title": "Setup node on Ubuntu",
   "category": "",
   "tags": "ubuntu,, install,, rsk,, rskj,, node,, how-to,, network,, requirements,, mainnet",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. Install via Ubuntu Package Manager The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package Manager. Type the commands below to install RSKj on Ubuntu using our PPAs for Ubuntu. The installed repo public key Fingerprint is 5EED 9995 C84A 49BC 02D4 F507 DF10 691F 518C 7BEA. Also, the public key could be found in document Ubuntu Key Server. $ sudo add-apt-repository ppa:rsksmart/rskj $ sudo apt-get update $ sudo apt-get install rskj During the installation, you will be asked to accept the terms and confirm the network. Choose Yes and Enter to accept the license to continue Choose mainnet and press Enter to continue Install via Direct Downloads You can also download the RSKj Ubuntu Package for Papyrus 2.2.0 and install it with the dpkg command. Follow this download link to download the matching package for your ubuntu system. #…"
  },
  {
@@ -3852,7 +3868,7 @@
   "title": "Setup node on CentOS",
   "category": "",
   "tags": "rsk,, node,, centos,, install,, rskj,, requirements,, how-to,, network,, configurations,, mainnet",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to install and run an RSK node on CentOS"
  },
  {
@@ -3860,7 +3876,7 @@
   "title": "Setup node on Java",
   "category": "",
   "tags": "java,, install,, rsk,, rskj,, node,, how-to,, network,, requirements,, mainnet,, jar",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Make sure your system meets the minimum requirements before installing RSK nodes on it. You also need to install Java 8 JDK. Install the node using a JAR file The Fat JAR or Uber JAR can be downloaded or compiled (in a reproducible way or not). To run the node: Linux, Mac OSX $ java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start Windows C:&amp;gt; java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start Replace &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; with your path to the JAR file. As an example: C:/RskjCode/rskj-core-2.2.0-PAPYRUS-all.jar Using import sync Note: This feature is optional. Note: This feature, first released as part of RSKj v2.0.1, is currently experimental. If you don’t want to synchronize your node in the default way, you can use the import sync feature. This method imports a synchronized database from a trusted origin in a fraction of the time currently required. Use this command to run the node: Linux, Mac OSX $ java -cp &amp;lt;PATH-TO-THE-RSKJ-JAR&amp;gt; co.rsk.Start --import Windows C:&amp;gt; java -cp…"
  },
  {
@@ -3868,7 +3884,7 @@
   "title": "Setup node on Azure",
   "category": "",
   "tags": "azure,, desktop,, rpc,, install,, rsk,, rskj,, node,, how-to,, network,, requirements,, mainnet",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Install RskJ Using Azure Follow the instructions below to install and run an RSK node in Azure. By default, the node connects to Mainnet. If you want to change the network read this section. If you want to change some configuration, please refer to our RSK node configuration section. Also you can enable RPC calls to interact with the node (by default it’s disabled). Install The Node Using Azure On Azure, create a resource. Search for RSK, choose the node’s version and click Create. You will see 4 steps after deploying the node: Basics: complete this step with your information. Choose a name for the node, user name, password, subscription and resource group. Size: select your VM options. Check recommended minimum requirements. Settings: configure optional features. Summary: review the summary of what you have set and press Create. Wait for Azure to finish the deployment. Initialize RSK node configuration file settings (you can do it while switching network). Connect your computer to the node using bash. Edit configuration file using vi: &amp;lt;div class=&quot;language-shell…"
  },
  {
@@ -3876,7 +3892,7 @@
   "title": "Setup node on AWS",
   "category": "",
   "tags": "aws,, console,, VVM,, marketplace,, launch,, desktop,, install,, rsk,, rskj,, node,, how-to,, network,, requirements,, mainnet",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Step 1: Navigate to the AWS Console site: https://console.aws.amazon.com Step 2: On the AWS services dashboard, click on EC2 (Virtual Machines), then on “launch instance” button. Step 3: Click on AWS Marketplace, search for “rsk”, and select the “RSK Node Bamboo v0.x.x MainNet”; Review the prices and select “Continue”. Step 4: Select the instance type. The once disabled doesn’t reach the minimum hardware requirements. Then, click on “Next: configure instance details” Step 5: Optionally change the default values on this screen, and continue clicking on “Next: Add Storage” Step 6: In the Storage section, increase the size to any size that is 50GB or higher, the minimum recommended to run the node, then click on “Next: Add Tags” Step 7: Optionally add a tag to identify the instance, then, click on “Next: Configure Security Group” Step 8: Now create a new rule with the TCP 22 port, and select a source to open the SSH port and be able to connect to the node remotely, then click on “Review and Launch” Step 9: Review the info…"
  },
  {
@@ -3884,7 +3900,7 @@
   "title": "Configure",
   "category": "",
   "tags": "rsk,, rskj,, node,, config",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Setting your own config preferences, when using the Java command, Ubuntu, Azure, AWS, or Docker"
  },
  {
@@ -3892,7 +3908,7 @@
   "title": "Command Line Interface",
   "category": "",
   "tags": "rsk,, rskj,, node,, cli",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Command Line Interface for RSK"
  },
  {
@@ -3900,7 +3916,7 @@
   "title": "Configuration reference",
   "category": "",
   "tags": "rsk,, rskj,, node,, config",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Configuration reference for RSKj"
  },
  {
@@ -3908,7 +3924,7 @@
   "title": "Configure Verbosity",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, logs",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Configure RSKj for desired log verbosity, finding log files, and using logback."
  },
  {
@@ -3916,7 +3932,7 @@
   "title": "Switch network",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, network,, mainnet,, testnet,, regtest",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to switch your RSK node between the Mainnet, Testnet, and RegTest networks"
  },
  {
@@ -3924,7 +3940,7 @@
   "title": "Configure RSKj node for mining",
   "category": "",
   "tags": "rsk,, rskj,, node,, config,, mining",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to run RSKj in a manner suited for mining."
  },
  {
@@ -3932,7 +3948,7 @@
   "title": "Contribute",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Getting set up with RSKj and contributing towards its development."
  },
  {
@@ -3940,7 +3956,7 @@
   "title": "CLI",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, cli",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to compile and run an RSKj node from the command line interface."
  },
  {
@@ -3948,7 +3964,7 @@
   "title": "Linux",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, linux",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to compile and run an RSKj node on Linux. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -3956,7 +3972,7 @@
   "title": "Mac OSX",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, mac,, osx",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to compile and run an RSKj node on Mac OSX. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -3964,7 +3980,7 @@
   "title": "Windows",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, windows",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to compile and run an RSKj node on Windows. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
  },
  {
@@ -3972,7 +3988,7 @@
   "title": "Reproducible Build",
   "category": "",
   "tags": "rsk,, node,, compile,, reproducible,, checksum",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "A deterministic build process used to build RSK node JAR file. Provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. Makes sure that the same tested dependencies are used and statically built into the executable."
  },
  {
@@ -3980,7 +3996,7 @@
   "title": "Ensure security chain of RskJ source code",
   "category": "",
   "tags": "rsk,, rskj,, node,, security,, verification",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "All the different ways that you can verify RSKj: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
  },
  {
@@ -3988,7 +4004,7 @@
   "title": "Network Upgrades",
   "category": "",
   "tags": "rsk,, rskj,, node,, contribute,, upgrade,, protocol,, consensus,, rskip.",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to introduce consensus rules changes using network upgrades on an RSK node. What to consider. Adding a new rule. Running tests with new rules."
  },
  {
@@ -3996,7 +4012,7 @@
   "title": "Troubleshooting",
   "category": "",
   "tags": "rsk,, rskj,, node,, faq,, troubleshoot",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to solve some known or frequently encountered issues when working with RSKj"
  },
  {
@@ -4004,7 +4020,7 @@
   "title": "RBTC Token",
   "category": "",
   "tags": "mainnet,, token,, transactions,, rbtc,, gas,, smart-contracts,, rsk,, conversion,, price,, gas-price,, gas-cost,, smart, bitcoin,, bitcoin",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK. You can convert BTC into RBTC by sending BTC through the Powpeg (both in Testnet and Mainnet), or by using the faucet in Testnet, or exchanges in Mainnet. RBTC (Smart Bitcoin in Mainnet) Token Name RBTC Total Supply 21,000,000 RBTC Circulating supply API Contract Type Native (Bridge contract) How to get Exchanges Powpeg Logo RBTC-logo.png tRBTC (Smart Bitcoin in Testnet) Token Name tRBTC Total Supply 21,000,000 tRBTC Circulating supply API Contract Type Native (Bridge contract) How to get Faucet Powpeg Wallets See supported wallets. Exchanges Looking for…"
  },
  {
@@ -4012,7 +4028,7 @@
   "title": "BTC to RBTC Conversion",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, powpeg",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Converting RBTC to BTC (peg-in) and BTC to RBTC (peg-out), for both Mainnet and Testnet."
  },
  {
@@ -4020,7 +4036,7 @@
   "title": "Mainnet Guide",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Converting BTC to RBTC (peg-in) and RBTC to BTC (peg-out)."
  },
  {
@@ -4028,7 +4044,7 @@
   "title": "Testnet Guide",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Converting t-BTC to tRBTC (peg-in) and tRBTC to t-BTC (peg-out)."
  },
  {
@@ -4036,7 +4052,7 @@
   "title": "Conversion using a Ledger hardware wallet",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, ledger",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to perform the Powpeg mechanism using Ledger"
  },
  {
@@ -4044,7 +4060,7 @@
   "title": "Conversion with node and console",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, node,, cli",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to perform the Powpeg mechanism using node and console"
  },
  {
@@ -4052,7 +4068,7 @@
   "title": "Accessing and using funds that are not in accounts derived with RSK dpath in Trezor T",
   "category": "",
   "tags": "rsk,, rbtc,, conversion,, peg,, 2-way,, peg-in,, peg-out,, federation,, trezor,, dpath",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to configure a Trezor T hardware wallet to derive with a custom dpath"
  },
  {
@@ -4060,7 +4076,7 @@
   "title": "Gas",
   "category": "",
   "tags": "gas,, transactions,, rbtc,, mainnet,, smart-contracts,, rsk,, conversion,, bitcoin,, price,, gas-price,, cost",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Gas is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK this is paid in RBTC. What is gas? How do I choose an appropriate gas price and limit? What happens if my transaction fails? What happens if I run out of gas? Gas in smart contracts What is gas? There are four important concepts: Gas price: The cost of the operation. Gas limit: The maximum gas the operation can afford. It’s an upper limit the user sets to prevent losing gas. Total gas: The gas the operation consumed. Also referred to as gas used. Unit: Gas is paid in RBTC. Let’s start with a simple analogy: A car. To drive a car you need gas. Gas price is the money you pay for each gallon. Gas limit is the max amount of gas you accept to consume, the gas you charge. The total gas is the amount you’ve spent at the end of the trip. You can…"
  },
  {
@@ -4068,7 +4084,7 @@
   "title": "Turing complete",
   "category": "",
   "tags": "rsk,, rvm,, evm,, virtual, machine",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "The RSK virtual machine is compatible with Ethereum Virtual machine at an opcode level."
  },
  {
@@ -4076,7 +4092,7 @@
   "title": "Account Based RSK Addresses",
   "category": "",
   "tags": "rsk,, checksum,, chainId,, address,, derivation,, eip1191,, eip155,, bip44,, slip44",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "EIP-1191 chainId is used in RSK addresses as a checksum. m/44&#39;/137&#39;/0&#39;/0 is the derivation path used for BIP-44 compatible wallets."
  },
  {
@@ -4084,7 +4100,7 @@
   "title": "Powpeg",
   "category": "",
   "tags": "rsk,, rbtc,, btc,, peg,, powpeg",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Transfer BTC to RBTC, and RBTC to BTC through the Powpeg."
  },
  {
@@ -4092,7 +4108,7 @@
   "title": "Merged Mining",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, pow",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How merge mining RSK with Bitcoin works, and its benefits"
  },
  {
@@ -4100,7 +4116,7 @@
   "title": "Implementation Guide",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, pool",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How to merge mine RSK using Bitcoin mining pool software"
  },
  {
@@ -4108,7 +4124,7 @@
   "title": "Merged mining reference",
   "category": "",
   "tags": "rsk,, mining,, bitcoin",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "How RSK leverages the Bitcoin network&#39;s consensus mechanism for its own secruity, and adds additional features to prevent double spending"
  },
  {
@@ -4116,7 +4132,7 @@
   "title": "REMASC",
   "category": "",
   "tags": "rsk,, mining,, bitcoin,, remasc",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Reward Manager Smart Contract (REMASC) is a pre-compiled smart-contract that is executed on every block and has the responsibility to fairly distribute rewards collected from transaction fees into several participants of the network. However the distribution of rewards of a block is only performed once the block reaches a certain maturity. In other words, the rewards are paid only after a fixed number of blocks have confirmed a block. With the exception of the first blocks in the blockchain after genesis, every time a block is added to the blockchain, another previous block reaches maturity and its rewards are paid. REMASC is an implementation of DECOR+ [1] How it Works The REMASC contract maintains different internal accounts. One of these internal accounts is called Reward Balance. The Reward Balance always exists and its value can change when a new block is processed because of any of the following reasons: The block was accepted on the mainchain and all its transaction fees are added to the Reward balance. Miners and other rewarded parties get paid their reward and the rewarded value is subtracted from the Reward balance. As an example, let’s assume that a block has 2…"
  },
  {
@@ -4124,7 +4140,7 @@
   "title": "Security model",
   "category": "",
   "tags": "rsk,, security,, powpeg,, peg,, federation,, 2-way, peg",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Achieving security in a Powpegged sidechain using proofs of payment"
  },
  {
@@ -4132,7 +4148,7 @@
   "title": "Transaction Privacy",
   "category": "",
   "tags": "rsk,, privacy,, anonymous,, pseudonymous",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Transaction pseudonymity vs transaction anonymity"
  },
  {
@@ -4140,7 +4156,7 @@
   "title": "Fast payments",
   "category": "",
   "tags": "rsk,, remasc,, interval,, speed,, propagation",
-  "date": "2021-07-08 09:05:35 +0000",
+  "date": "2021-07-12 09:51:56 +0000",
   "desc": "Achieving faster on-chain block intervals"
  }
 ]

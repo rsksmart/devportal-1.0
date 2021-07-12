@@ -644,9 +644,12 @@
               <li><a href="../../../rif/enveloping/">About</a></li>
               <li><a href="../../../rif/enveloping/intro/">Introduction</a></li>
               <li><a href="../../../rif/enveloping/architecture/">Architecture</a></li>
-              <li><a href="../../../rif/enveloping/dev-setup/">Dev Setup</a></li>
-              <li><a href="../../../rif/enveloping/testnet/">Testnet</a></li>
+              <li><a href="../../../rif/enveloping/requirements/">Requirements</a></li>
+              <li><a href="../../../rif/enveloping/install/">Install</a></li>
+              <li><a href="../../../rif/enveloping/launch/">Launch</a></li>
               <li><a href="../../../rif/enveloping/gas-costs/">Gas Costs</a></li>
+              <li><a href="../../../rif/enveloping/testnet/">Testnet</a></li>
+              <li><a href="../../../rif/enveloping/changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -766,7 +769,6 @@
             <ul>
               <li><a href="../">User Guide</a></li>
               <li><a href="./">Develop</a></li>
-              <li><a href="../getting-started/">Get started with Enveloping</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1070,7 +1072,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 07:35:05 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-07-12 08:57:30 +0000T00:00:00.000Z">2021-07-12</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-enveloping/develop.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1603,9 +1605,12 @@
               <li><a href="../../../rif/enveloping/">About</a></li>
               <li><a href="../../../rif/enveloping/intro/">Introduction</a></li>
               <li><a href="../../../rif/enveloping/architecture/">Architecture</a></li>
-              <li><a href="../../../rif/enveloping/dev-setup/">Dev Setup</a></li>
-              <li><a href="../../../rif/enveloping/testnet/">Testnet</a></li>
+              <li><a href="../../../rif/enveloping/requirements/">Requirements</a></li>
+              <li><a href="../../../rif/enveloping/install/">Install</a></li>
+              <li><a href="../../../rif/enveloping/launch/">Launch</a></li>
               <li><a href="../../../rif/enveloping/gas-costs/">Gas Costs</a></li>
+              <li><a href="../../../rif/enveloping/testnet/">Testnet</a></li>
+              <li><a href="../../../rif/enveloping/changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -1725,7 +1730,6 @@
             <ul>
               <li><a href="../">User Guide</a></li>
               <li><a href="./">Develop</a></li>
-              <li><a href="../getting-started/">Get started with Enveloping</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1992,14 +1996,14 @@
 
                   <h2 id="initializing-the-project">Initializing the project</h2>
 
-<p>To use Enveloping, follow these steps to <a href="../getting-started/">build the project</a>.</p>
+<p>To use Enveloping, follow these steps to build the project.</p>
 
-<h2 id="project-structure">Project Structure</h2>
+<h2 id="project-structure">Project structure</h2>
 
 <p>The project has on-chain and off-chain components.</p>
 
 <ul>
-  <li>The contracts directory in the root directory, contains all the smart contracts involved in Enveloping.
+  <li>The <code class="highlighter-rouge">contracts</code> directory in the root directory, contains all the smart contracts involved in Enveloping.
     <ul>
       <li>These can be compiled with <code class="highlighter-rouge">yarn prepare</code>. The changes will be reflected in the <code class="highlighter-rouge">build/contracts</code>.</li>
       <li>If a new contract is created, it is important to add it to <code class="highlighter-rouge">migrations/2_deploy_contracts.js</code> for deploying it.</li>
@@ -2011,32 +2015,29 @@
       <li>To compile these typescript files, use <code class="highlighter-rouge">yarn tsc</code>. The changes will appear in the <code class="highlighter-rouge">dist</code> directory.</li>
     </ul>
   </li>
-  <li>The <code class="highlighter-rouge">jsrelay</code> directory contains files for running a Relay Server. See <a href="../getting-started/">Getting Started</a> for more details.</li>
+  <li>The <code class="highlighter-rouge">jsrelay</code> directory contains files for running a Relay Server. See here for more details.</li>
   <li>
 <code class="highlighter-rouge">test</code> contains the test suite. See section below to learn how to test Enveloping.</li>
 </ul>
 
 <h2 id="testing">Testing</h2>
 
-<p>When adding new tests, we should compile them first with <code class="highlighter-rouge">yarn tsc</code> before running them.</p>
+<p>When adding new tests, we should compile them first (with <code class="highlighter-rouge">yarn tsc</code>) before running them.</p>
 
 <ul>
-  <li>To run all the tests:
-<code class="highlighter-rouge">./run-tests</code>
-</li>
+  <li>To run all the tests:</li>
 </ul>
 
-<blockquote>
-  <p>Note: The script will start an RSK node in Regtest mode and then run all the tests. So it takes some time to run the tests.</p>
-</blockquote>
+<p><code class="highlighter-rouge">./run-tests.sh</code></p>
+
+<p>Note: The script will start an RSK node in regtest mode and then run all the tests. So it takes some time to run the tests. You need to have <code class="highlighter-rouge">curl</code> in order to run it.</p>
 
 <ul>
-  <li>To run a specific test:
-Once the project is built, we can test it with <a href="https://www.trufflesuite.com/" rel="external noopener noreferrer" target="_blank">truffle</a>:</li>
+  <li>To run a specific test:</li>
 </ul>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn generate <span class="o">&amp;&amp;</span> npx truffle <span class="nb">test</span> <span class="nt">--network</span> rsk <span class="nb">test</span>/Flows.test.ts
-</code></pre></div></div>
+<p>Once the project is built, we can test it with truffle
+<code class="highlighter-rouge">yarn generate &amp;&amp; npx truffle test --network rsk test/Flows.test.ts</code> (with <a href="https://www.trufflesuite.com/" rel="external noopener noreferrer" target="_blank">truffle</a>)</p>
 
 <h2 id="committing-changes">Committing changes</h2>
 
@@ -2044,23 +2045,19 @@ Once the project is built, we can test it with <a href="https://www.trufflesuite
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
-<h3 id="common-errors-when-testing">Common errors when testing</h3>
+<p><a id="c07"></a></p>
 
-<blockquote>
-  <p>Running a test throws the <code class="highlighter-rouge">Error: Cannot find module 'directory-to-the-project/enveloping/rsknode/test/Flows.test.ts'</code></p>
-</blockquote>
+<p>Common errors when testing</p>
+
+<h4 id="running-a-test-throws-the-error-cannot-find-module-directory-to-the-projectenvelopingrsknodetestflowstestts">Running a test throws the Error: Cannot find module ‘directory-to-the-project/enveloping/rsknode/test/Flows.test.ts’</h4>
 
 <p>Ensure that you are in the project’s root directory and that the test’s name has no typos</p>
 
-<blockquote>
-  <p>Running Flows.test.ts test throws the error: http://localhost:8090 =&gt; Error: local view call to ‘relayCall()’ reverted: view call to ‘relayCall’..</p>
-</blockquote>
+<h4 id="running-flowstestts-test-throws-the-error-httplocalhost8090--error-local-view-call-to-relaycall-reverted-view-call-to-relaycall">Running Flows.test.ts test throws the error: http://localhost:8090 =&gt; Error: local view call to ‘relayCall()’ reverted: view call to ‘relayCall’..</h4>
 
 <p>Stop the running node and delete the db used by the node.</p>
 
-<blockquote>
-  <p>Running some test and one of them throws: <code class="highlighter-rouge">Error: listen EADDRINUSE: address already in use :::8090</code></p>
-</blockquote>
+<h4 id="running-some-test-and-one-of-them-throws-error-listen-eaddrinuse-address-already-in-use-8090">Running some test and one of them throws: Error: listen EADDRINUSE: address already in use :::8090</h4>
 
 <p>The relay server running in the background. Run the bash file <code class="highlighter-rouge">scripts/kill-relay-server.sh</code></p>
 

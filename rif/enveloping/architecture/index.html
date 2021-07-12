@@ -644,9 +644,12 @@
               <li><a href="../">About</a></li>
               <li><a href="../intro/">Introduction</a></li>
               <li><a href="./">Architecture</a></li>
-              <li><a href="../dev-setup/">Dev Setup</a></li>
-              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../requirements/">Requirements</a></li>
+              <li><a href="../install/">Install</a></li>
+              <li><a href="../launch/">Launch</a></li>
               <li><a href="../gas-costs/">Gas Costs</a></li>
+              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -766,7 +769,6 @@
             <ul>
               <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
               <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
-              <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
               <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1070,7 +1072,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 07:35:05 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-07-01 19:22:05 +0000T00:00:00.000Z">2021-07-01</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/enveloping/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1603,9 +1605,12 @@
               <li><a href="../">About</a></li>
               <li><a href="../intro/">Introduction</a></li>
               <li><a href="./">Architecture</a></li>
-              <li><a href="../dev-setup/">Dev Setup</a></li>
-              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../requirements/">Requirements</a></li>
+              <li><a href="../install/">Install</a></li>
+              <li><a href="../launch/">Launch</a></li>
               <li><a href="../gas-costs/">Gas Costs</a></li>
+              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -1725,7 +1730,6 @@
             <ul>
               <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
               <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
-              <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
               <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1992,13 +1996,11 @@
 
                   <p>The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by “sponsors” is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.</p>
 
-<h2 id="core-architecture">Core architecture</h2>
-
 <p>The core Enveloping architecture is defined by the following components:</p>
 
 <ul>
   <li>
-<strong>Relay Request</strong> - a structure that wraps the transaction sent by an end-user. It includes data required for relaying the transaction e.g. address of the payer, address of the original requester, token payment data.</li>
+<strong>Relay Request</strong> - a structure that wraps the transaction sent by an end-user. It includes data required for relaying the trasaction e.g. address of the payer, address of the original requester, token payment data.</li>
   <li>
 <strong>Deploy Request</strong> - a structure that wraps the transaction sent to deploy a Smart wallet.</li>
   <li>
@@ -2008,22 +2010,11 @@
   <li>
 <strong>Deploy Verifier</strong> - an abstract contract that authorizes a specific deploy request.</li>
   <li>
-<strong>Smart Wallet</strong> - a contract that verifies forwarded data and subsequently invokes the recipient contract of the transaction. The smart wallet is deployed counterfactually at the moment it is needed. This happens, for instance, when a user with some token balances wants to move those tokens without spending gas, i.e. using the enveloping system.</li>
+<strong>Smart Wallet</strong> - a contract that verifies forwarded data and subsequently invokes the recipient contract of the transaction.  The smart wallet is deployed <em>counterfactually</em> at the moment it is needed. This happens, for instance, when a user with some token balances wants to move those tokens without spending gas, i.e. using the enveloping system.</li>
   <li>
-<strong>Relay Server</strong> - a relay service daemon, running as an HTTP service. Advertises itself (through the Relay Hub) and waits for client requests.</li>
+<strong>Relay Server</strong> - a relay service daemon, running as an HTTP service.  Advertises itself (through the Relay Hub) and waits for client requests.</li>
   <li>
 <strong>Relay Client</strong> - a typescript library for a client to access the blockchain through a relay. Provides APIs to find a relay, and to send transactions through it.</li>
-</ul>
-
-<h2 id="changelog">Changelog</h2>
-
-<h3 id="v2">V2</h3>
-
-<ul>
-  <li>In V2 the Relay Hub contract doesn’t receive payments, the payment for the service (in tokens) is paid directly to the worker relaying the transaction on behalf of the user.</li>
-  <li>Paymaster verifications are now done off-chain to optimize gas costs, thus the paymasters are now called Verifiers and they are not part of the on-chain relay flow nor they handle payments at all.</li>
-  <li>Gas cost optimization.</li>
-  <li>Security issues fixed.</li>
 </ul>
 
 

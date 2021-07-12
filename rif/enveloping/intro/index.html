@@ -644,9 +644,12 @@
               <li><a href="../">About</a></li>
               <li><a href="./">Introduction</a></li>
               <li><a href="../architecture/">Architecture</a></li>
-              <li><a href="../dev-setup/">Dev Setup</a></li>
-              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../requirements/">Requirements</a></li>
+              <li><a href="../install/">Install</a></li>
+              <li><a href="../launch/">Launch</a></li>
               <li><a href="../gas-costs/">Gas Costs</a></li>
+              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -766,7 +769,6 @@
             <ul>
               <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
               <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
-              <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
               <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1070,7 +1072,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 02:32:36 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-07-01 19:22:05 +0000T00:00:00.000Z">2021-07-01</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/enveloping/intro.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1603,9 +1605,12 @@
               <li><a href="../">About</a></li>
               <li><a href="./">Introduction</a></li>
               <li><a href="../architecture/">Architecture</a></li>
-              <li><a href="../dev-setup/">Dev Setup</a></li>
-              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../requirements/">Requirements</a></li>
+              <li><a href="../install/">Install</a></li>
+              <li><a href="../launch/">Launch</a></li>
               <li><a href="../gas-costs/">Gas Costs</a></li>
+              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -1725,7 +1730,6 @@
             <ul>
               <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
               <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
-              <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
               <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1990,16 +1994,21 @@
 
                   <h1 class="page-title" id="top">Introduction</h1>
 
-                  <p>The first version of Enveloping was based on the <a href="https://github.com/opengsn/gsn" rel="external noopener noreferrer" target="_blank">Gas Station Network (GSN) project</a>. GSN is a decentralized system that improves dApp usability without sacrificing security. In a nutshell, GSN abstracts away gas (used to pay transaction fees) to minimize onboarding and UX friction for dApps. With GSN, “gasless clients” can interact with smart contracts paying for gas with tokens instead of native-currency.</p>
+                  <p>RIF Enveloping takes its inspiration from the <a href="https://github.com/opengsn/gsn" rel="external noopener noreferrer" target="_blank">Gas Station Network (GSN) project</a>. GSN is a decentralized system that improves dApp usability without sacrificing security. In a nutshell, GSN abstracts away gas (used to pay transaction fees) to minimize onboarding and UX friction for dApps. With GSN, “gasless clients” can interact with smart contracts paying for gas with tokens instead of native-currency.</p>
 
-<p>RIF Enveloping V2 is a redesign of GSN. It reduces gas costs and simplifies contract interaction.</p>
-
-<p>It achieves this by:</p>
+<p>RIF Enveloping V1 started as a fork of GSN with two goals in mind:</p>
 
 <ul>
-  <li>Securely deploying counterfactual Smart Wallet proxies for each user account: this eliminates the need for relying on <code class="highlighter-rouge">_msgSender()</code> and <code class="highlighter-rouge">_msgData()</code> functions, making existing and future contracts compatible with RIF Enveloping without any modification.</li>
-  <li>Allowing Relay providers to receive tokens in a worker address under their control to later on decide what to do with funds.</li>
-  <li>Reducing gas costs by optimizing the existing GSN architecture.</li>
+  <li>Be compatible with existing and future smart contracts without requiring such contracts to be adapted to work with RIF Enveloping.</li>
+  <li>Be as cost effective as possible.</li>
+</ul>
+
+<p>RIF Enveloping V2 is a redesign of GSN, it reduces gas costs and simplifies the interaction between the different contracts that are part of the system. It achieves this by:</p>
+
+<ul>
+  <li>Securely deploying counterfactual Smart Wallet proxies for each user account: this eliminates the need for relying on _msgSender() and _msgData() functions, making existing and future contracts compatible with RIF Enveloping without any modification.</li>
+  <li>Allowing relayers to receive tokens in a worker address under their control and decide what to do with funds later on.</li>
+  <li>Reducing gas costs by optimizing the GSN architecture.</li>
 </ul>
 
 <p>Our main objective is to provide the RSK ecosystem with the means to enable blockchain applications and end-users (wallet-apps) to pay for transaction fees using tokens (e.g. RIF tokens), and thereby remove the need to acquire RBTC in advance.</p>

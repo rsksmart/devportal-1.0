@@ -644,9 +644,12 @@
               <li><a href="../">About</a></li>
               <li><a href="../intro/">Introduction</a></li>
               <li><a href="../architecture/">Architecture</a></li>
-              <li><a href="../dev-setup/">Dev Setup</a></li>
-              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../requirements/">Requirements</a></li>
+              <li><a href="../install/">Install</a></li>
+              <li><a href="../launch/">Launch</a></li>
               <li><a href="./">Gas Costs</a></li>
+              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -766,7 +769,6 @@
             <ul>
               <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
               <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
-              <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
               <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1070,7 +1072,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-30 02:32:36 +0000T00:00:00.000Z">2021-03-30</time> | -->
+    <!--time role="presentation" datetime="2021-07-01 19:22:05 +0000T00:00:00.000Z">2021-07-01</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/enveloping/gas-costs.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1603,9 +1605,12 @@
               <li><a href="../">About</a></li>
               <li><a href="../intro/">Introduction</a></li>
               <li><a href="../architecture/">Architecture</a></li>
-              <li><a href="../dev-setup/">Dev Setup</a></li>
-              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../requirements/">Requirements</a></li>
+              <li><a href="../install/">Install</a></li>
+              <li><a href="../launch/">Launch</a></li>
               <li><a href="./">Gas Costs</a></li>
+              <li><a href="../testnet/">Testnet</a></li>
+              <li><a href="../changelog/">Changelog</a></li>
             </ul>
           </li>
           <li>
@@ -1725,7 +1730,6 @@
             <ul>
               <li><a href="../../../guides/rif-enveloping/">User Guide</a></li>
               <li><a href="../../../guides/rif-enveloping/develop/">Develop</a></li>
-              <li><a href="../../../guides/rif-enveloping/getting-started/">Get started with Enveloping</a></li>
               <li><a href="../../../guides/rif-enveloping/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
             </ul>
@@ -1990,19 +1994,19 @@
 
                   <h1 class="page-title" id="top">RIF Enveloping - Gas Costs</h1>
 
-                  <p>The overhead gas cost is the extra amount of gas required to process the relay call requested by the user. Let’s call X the gas consumed by the destination-contract method call, and Y the total gas consumed by the relay call, then the relay call cost (i.e. overhead gas cost) is: <strong>Z = Y - X</strong>.</p>
+                  <p>The overhead gas cost is the extra amount of gas required to process the relay call requested by the user. Let’s call <strong>X</strong> the gas consumed by the destination-contract method call, and <strong>Y</strong> the total gas consumed by the relay call, then the relay call cost (i.e. overhead gas cost) is: <strong>Z = Y - X</strong>.</p>
 
-<h2 id="smartwallet-templates">SmartWallet templates</h2>
+<h1 id="smartwallet-templates">SmartWallet templates</h1>
 
-<p>RIF Enveloping V1 only has one <a href="https://github.com/rsksmart/enveloping/blob/v1.0.1/contracts/forwarder/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">SmartWallet template</a>, which can be used as-is or it can be injected with extra logic during the SmartWallet instance creation.</p>
+<p>RIF Enveloping V1 only has one SmartWallet <a href="https://github.com/rsksmart/enveloping/blob/v1.0.1/contracts/forwarder/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">template</a>, which can be used as-is or it can be injected with extra logic during the SmartWallet instance creation.</p>
 
-<p>V2 introduces a cheaper template (<a href="https://github.com/rsksmart/enveloping/blob/master/contracts/smartwallet/SimpleSmartWallet.sol" rel="external noopener noreferrer" target="_blank">SimpleSmartWallet</a>), to be used when there’s no need for extra custom-logic in the smart wallets. The behaviour is the same as the <a href="https://github.com/rsksmart/enveloping/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">SmartWallet template</a> of V2, but without this capability.</p>
+<p>V2 introduces a cheaper template (<a href="https://github.com/rsksmart/enveloping/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">SmartWallet</a>), to be used when there’s no need for extra custom-logic in the smart wallets. The behaviour is the same as the CustomSmartWallet <a href="https://github.com/rsksmart/enveloping/blob/master/contracts/smartwallet/CustomSmartWallet.sol" rel="external noopener noreferrer" target="_blank">template</a> of V2, but without this capability.</p>
 
 <table>
   <thead>
     <tr>
       <th>RIF Version</th>
-      <th>SW template</th>
+      <th>SW Template</th>
       <th>Avg. overhead gas</th>
     </tr>
   </thead>
@@ -2014,60 +2018,51 @@
     </tr>
     <tr>
       <td>2</td>
-      <td>SmartWallet</td>
+      <td>CustomSmartWallet</td>
       <td>98070</td>
     </tr>
     <tr>
-      <td>3</td>
-      <td>SimpleSmartWallet</td>
+      <td>2</td>
+      <td>SmartWallet</td>
       <td>97695</td>
     </tr>
   </tbody>
 </table>
 
-<blockquote>
-  <p>Note that the instance of SmartWallet used didn’t point to any extra custom logic.</p>
-</blockquote>
+<p>Note that the instance of CustomSmartWallet used didn’t point to any extra custom logic.</p>
 
-<h2 id="transaction-batching">Transaction Batching</h2>
-
+<h1 id="transaction-batching">Transaction Batching</h1>
 <p>RIF Enveloping V2 also introduces transaction batching</p>
 
-<h3 id="scenarios">Scenarios</h3>
+<h2 id="scenarios">Scenarios</h2>
 
-<h4 id="a">A</h4>
+<h3 id="a">A</h3>
+<p>Each transaction has the same smart wallet, token payment and destination contract</p>
 
-<p>Each transaction has the same smart wallet, token payment and destination contract.</p>
-
-<h4 id="b">B</h4>
-
+<h3 id="b">B</h3>
 <p>Each transaction has the same smart wallet, token payment but each has a different destination contract</p>
 
-<p>The gas costs for scenarios A and B are the same.</p>
+<p>The gas costs for scenarios A and B are the same</p>
 
-<h4 id="c">C</h4>
+<h3 id="c">C</h3>
+<p>Each transaction has a different smart wallet, but the token payment and destination contract are the same</p>
 
-<p>Each transaction has a different smart wallet, but the token payment and destination contract are the same.</p>
-
-<h4 id="d">D</h4>
-
+<h3 id="d">D</h3>
 <p>Each transaction has a different smart wallet and destination contract, but the same token payment</p>
 
-<p>The gas costs for scenarios C and D are the same.</p>
+<p>The gas costs for scenarios C and D are the same</p>
 
-<h4 id="e">E</h4>
+<h3 id="e">E</h3>
+<p>Each transaction has a different smart wallet and token payment but the same destination contract</p>
 
-<p>Each transaction has a different smart wallet and token payment but the same destination contract.</p>
+<h3 id="f">F</h3>
+<p>Each transaction has a different  smart wallet, token payment and destination contract</p>
 
-<h4 id="f">F</h4>
+<p>The gas costs for scenarios E and F are the same</p>
 
-<p>Each transaction has a different smart wallet, token payment and destination contract</p>
-
-<p>The gas costs for scenarios E and F are the same.</p>
-
-<h2 id="overhead-costs-in-batching">Overhead Costs in Batching</h2>
-
-<p>The following table depicts the average gas overhead per transaction for the SimpleSmartWallet template when using transaction batching The gas difference of using the SmartWallet template without extra logic versus using the SimpleSmartWallet template is approximately an extra of between 200 and 300 gas.</p>
+<h2 id="overhead-costs-in-batching">Overhead costs in batching</h2>
+<p>The following table depicts the average gas overhead per transaction for the SmartWallet template when using transaction batching
+The gas difference of using the CustomSmartWallet template without extra logic versus using the SmartWallet template is approximately an extra of between 200 and 300 gas</p>
 
 <table>
   <thead>
