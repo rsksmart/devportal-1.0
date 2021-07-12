@@ -140,6 +140,50 @@ You would have seen this in the transaction confirmation screens when you confir
 
 This is **not an error**, it is simply a fundamental aspect of how blockchain networks function - any time you add a transaction to the blockchain, you must pay the network a fee to compensate them for their computational costs.
 
+## View transactions in the block explorer
+
+When you performed each of the transactions, you should have received notifications in popups.
+
+![Confirmed Transaction](/assets/img/guides/quickstart/transactions/metamask_transaction_confirmed.png)
+
+However, if you missed this, not to worry, you can also find this within the transaction history within MetaMask. To do so, within the main screen of MetaMask, click on the “Activity” tab. You’ll see the list of the transactions.
+
+![Metamask Activity Tab](/assets/img/guides/quickstart/transactions/metamask_activity_tab.png)
+
+Then you click on any transaction, and click on the arrow button beside copy button named transaction ID, this takes you to the [Testnet explorer](https://explorer.testnet.co)
+
+![View testnet explorer](/assets/img/guides/quickstart/transactions/view_testnet_explorer.png)
+
+![View testnet explorer](/assets/img/guides/quickstart/transactions/view_testnet_explorer_2.png)
+
+
+If you clicked on the popup notification, or if you find it within the “Activity” tab, either way, this should open up the block explorer with the selected transaction selected.
+
+For the transaction of the tRBTC transfer, you should see this
+
+![View testnet transaction explorer](/assets/img/guides/quickstart/transactions/view_testnet_transaction.png)
+
+You will notice that this transaction has an amount.
+
+For the transaction of the tRIF transfer, you should see this
+
+![View testnet transaction explorer trif](/assets/img/guides/quickstart/transactions/view_testnet_transaction_trif.png)
+
+You will notice that this transaction has a zero amount, but it does emit some events, which is because the smart contract of the RIF token does this.
+
+![View testnet logs](/assets/img/guides/quickstart/transactions/view_testnet_logs.png)
+
+## View network stats
+
+So far we have checked out individual addresses and transactions. These are very detailed and specific information. What if you were after the big picture instead? A bird’s eye view of the RSK blockchain as a whole?
+
+For this, we will not use the RSK Block explorer, and instead use the RSK Stats page.
+
+![RSK Stats Landing](/assets/img/guides/quickstart/transactions/rsk_stats_landing.png)
+
+Here, we can see some very important numbers such as the average block duration, and the merged mining hash rate - and several other important technical indicators of the RSK network.
+A key indicator to look for is the average block time, which should be approximately 33s. Another key indicator to look for is the percentage of the Bitcoin network’s hash rate that is merge mining RSK.
+
 ----
 **Further reading:**
 
@@ -149,3 +193,6 @@ This is **not an error**, it is simply a fundamental aspect of how blockchain ne
 - [Convert Addresses to lowercase using ConvertCase](https://convertcase.net)
 - About [the RBTC cryptocurrency](/rsk/rbtc/)
 - About [gas](/rsk/rbtc/gas/)
+- The [RSK Mainnet Stats Page](https://stats.rsk.co/)
+- The [RSK Testnet Stats Page](https://stats.testnet.rsk.co/)
+
