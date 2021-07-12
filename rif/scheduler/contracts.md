@@ -24,7 +24,7 @@ The Service Provider can set up different plans.
 The plans must specify the:
 - Price per execution,
 - The time window (in seconds) within a scheduled execution should run.
-We recommend a value more than 15 seconds.
+We recommend a value more than 15 seconds. This value will depend strongly on the [service](./services) configuration.
 For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:
 
  `scheduled time` - 10 <= `execution time` <=  `scheduled time` + 10
