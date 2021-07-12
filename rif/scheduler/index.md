@@ -10,9 +10,9 @@ in the future by a third party.
 
 ## Quick start
 
-Install the SDK in your dapp's front-end to enable your users to schedule transactions.
+Install [the SDK](sdk) in your dapp's front-end to **enable your users to schedule transactions**.
 
-Read [here](run) how to run your own scheduler.
+Read [here](run) how to **run your own scheduler** and start making revenew.
 
 ## Model
 
