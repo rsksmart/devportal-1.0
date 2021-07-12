@@ -37,7 +37,7 @@ In the deployment you will need to provide two addresses in the constructor:
   Receives the tokens paid after executions.
 - `uint256 minimumTimeBeforeExecution_`:
   Minimum amount of seconds required between the moment of the scheduling and the execution time requested.
-  This should be greater than 15, and protects the service provider from manipulation of timestamps.
+  This must be greater than 15, it protects the service provider from timestamp manipulation.
 
 Take note of the address.
 
