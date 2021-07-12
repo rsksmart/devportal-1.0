@@ -200,3 +200,5 @@ multicall(bytes[] calldata data, bool revertIfFails)
 This method receives:
 - calldata: an array of encoded contract calls to be executed
 - revertIfFails: if true when a transaction in calldata is executed and it reverts, all the transactions will be reverted. Otherwise, it will continue executing the following transactions.
+
+> WARNING: using `revertIfFails` set to `true` can incur in DoS attackas: by spamming one transaction, all the others will fail. In the other hand, using `revertIfFails` set to `false` will only allow to retrieve the index of the calls that failed.
