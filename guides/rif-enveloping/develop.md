@@ -6,7 +6,7 @@ tags: rif, enveloping, rsk, gas station network, gsn, defi, develop
 
 ## Initializing the project
 
-To use Enveloping, follow these [steps](../docs/launching_enveloping.md) to build the project.
+To use Enveloping, follow these steps to build the project.
 
 ## Project structure
 
@@ -18,7 +18,7 @@ The project has on-chain and off-chain components.
     - The solidity version used currently is `^0.6.12`.
 - The `src` directory contains the off-chain components such as `cli`, `relayclient` and `relayserver`. Everything here is coded in `typescript`.
     - To compile these typescript files, use `yarn tsc`. The changes will appear in the `dist` directory.
-- The `jsrelay` directory contains files for running a Relay Server. See [here](docs/launching_enveloping.md) for more details.
+- The `jsrelay` directory contains files for running a Relay Server. See here for more details.
 - `test` contains the test suite. See section below to learn how to test Enveloping.
 
 ## Testing
@@ -41,8 +41,12 @@ Once the project is built, we can test it with truffle
 
 To contribute to the project, create a branch with the name of the new feature you are implementing (e.g. `gas-optimization`). When you commit to git, a hook is executed. The hook executes a linter and all the tests.
 
-## Troubleshooting <a id="c07"></a>
-### Common errors when testing
+## Troubleshooting
+
+<a id="c07"></a>
+
+Common errors when testing
+
 #### Running a test throws the Error: Cannot find module 'directory-to-the-project/enveloping/rsknode/test/Flows.test.ts'
 
 Ensure that you are in the project's root directory and that the test's name has no typos

@@ -6,7 +6,7 @@ tags: rif, enveloping, rsk, gas station network, gsn, defi, integrate
 
 Enveloping allows users to pay transaction fees with tokens. For this purpose, the system exposes methods that dApps and wallets can consume to provide Enveloping as a service.
 
-## Relay Client & Relay Server
+## Relay Client and Relay Server
 
 The Relay Server is the off-chain component in charge of receiving transactions and sending them to the on-chain component, which is a Relay Manager. The Manager owns Relay Worker accounts with funds in native coin. To relay a transaction, a Worker signs it and sends it to the Relay Hub paying for the gas consumed.
 
@@ -16,7 +16,7 @@ Users can interact with the Relay Server directly or indirectly.
 
 ## Using the Relay Server directly
 
-The simplest option to use Enveloping in your wallet or dApp is by calling the Relay Server directly. The instructions for running a Relayer are [here](launching_enveloping.md#run-a-relay-server-locally). The communication with the Relay Server is through HTTP requests.
+The simplest option to use Enveloping in your wallet or dApp is by calling the Relay Server directly. The instructions for running a Relayer are here. The communication with the Relay Server is through HTTP requests.
 
 The order of events for relaying transactions or deploying smart wallets through the Relay Server is
 1. Create a relay or deploy request.
@@ -36,7 +36,7 @@ Another option is to use Enveloping through a Relay Provider. The latter wraps w
     const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
 
     const web3 = new Web3("http://localhost:4444");
-    
+
     const smartWalletFactoryAbi = {};// some json containing the abi of the smart wallet factory contract.
     const smartWalletFactoryAddress = "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"; // the smart wallet factort contract address (can be retrieved from the summary of the deployment).
     const smartWalletIndex = 0; // the index of the smart wallet
@@ -49,7 +49,7 @@ Another option is to use Enveloping through a Relay Provider. The latter wraps w
         ZERO_ADDRESS,
         smartWalletIndex
     ).call();
-    
+
     const relayVerifierAddress = "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"; // the relay verifier contract address (can be retrieved from the summary of the deployment).
     const deployVerifierAddress = "0x1938517B0762103d52590Ca21d459968c25c9E67"; // the deploy verifier contract address (can be retrieved from the summary of the deployment).
 
@@ -69,11 +69,11 @@ Another option is to use Enveloping through a Relay Provider. The latter wraps w
         resolvedConfig.relayHubAddress = "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"; // the relay hub contract address (can be retrieved from the summary of the deployment).
 
     const provider = new RelayProvider(web3.currentProvider, config);
-    
+
     provider.addAccount(account);
 
     web3.setProvider(provider);
-    
+
     const tokenContract = "0x0E569743F573323F430B6E14E5676EB0cCAd03D9"; // token address to use on smart wallet
     const tokenAmount = "100"; // total token amount for the smart wallet, the smart wallet address should have more than this number before calling the deploy.
 
@@ -94,14 +94,14 @@ Another option is to use Enveloping through a Relay Provider. The latter wraps w
         onlyPreferredRelays: true,
         smartWalletAddress
     });
-    
+
     // relay transaction
     const unsigned_tx = {
         // some common web3 transaction with the common parameters.
     };
 
     const tokenAmountForRelay = "10";
-    
+
     const relayTransaction = web3.eth.sendTransaction({
         from: account.address,
         callVerifier: relayVerifierAddress,
@@ -114,7 +114,7 @@ Another option is to use Enveloping through a Relay Provider. The latter wraps w
     });
 ```
 
-**Note: in the example above the `account` object is assumed as an object containing the address (as string) and 
+**Note: in the example above the `account` object is assumed as an object containing the address (as string) and
 the privateKey (as buffer)**
 
 Before running this example, you need to know a few requirements:
@@ -131,7 +131,7 @@ Before running this example, you need to know a few requirements:
         const smartWalletDeployVerifierAbi = require("../src/cli/compiled/DeployVerifier.json").abi;
         const customSmartWalletDeployVerifierAbi = require("../src/cli/compiled/CustomSmartWalletDeployVerifier.json").abi;
         const relayVerifierAbi = require("../src/cli/compiled/RelayVerifier.json").abi;
-        
+
         const relayVerifierAddress = "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"; // the relay verifier contract address (can be retrieved from the summary of the deployment).
         const deployVerifierAddress = "0x1938517B0762103d52590Ca21d459968c25c9E67"; // the deploy verifier contract address (can be retrieved from the summary of the deployment).
         const customRelayVerifierAddress = "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"; // the custom smart wallet relay verifier contract address (can be retrieved from the summary of the deployment).
@@ -142,9 +142,9 @@ Before running this example, you need to know a few requirements:
         const customSmartWalletDeployVerifier = await new web3.eth.Contract(customSmartWalletDeployVerifierAbi, customDeployVerifierAddress);
         const customSmartWalletRelayVerifier = await new web3.eth.Contract(relayVerifierAbi, customRelayVerifierAddress);
         const accounts = await web3.eth.getAccounts();
-        
+
         const tokenAddress = "0x0E569743F573323F430B6E14E5676EB0cCAd03D9"; // token address to allow
-    
+
         await smartWalletDeployVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
         await smartWalletRelayVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
         await customSmartWalletDeployVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
@@ -209,7 +209,7 @@ sentRelayTransaction.transaction?.hash(true).toString('hex') //This is used to g
 
 Each relayed transaction is signed by a Relay Worker account. The worker accounts are controlled by the Relay Manager. When a relay worker signs and relays a transaction, the cost for that transaction is paid using the funds in that worker's account. If the transaction is not subsidized, then the worker is compensated with tokens.
 
-Worker accounts must always have some minimum balance to pay gas for the transaction. These balances can be managed by implementing a replenishment strategy. The Relay Manager can use the strategy to top off a relay worker's account when the balance gets too low. 
+Worker accounts must always have some minimum balance to pay gas for the transaction. These balances can be managed by implementing a replenishment strategy. The Relay Manager can use the strategy to top off a relay worker's account when the balance gets too low.
 
 We provide a default implementation for a replenishment strategy.  Enveloping solution integrators can implement their own replenish strategy.
 

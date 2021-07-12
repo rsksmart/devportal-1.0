@@ -16,7 +16,7 @@ This guide details each operation available when using the Enveloping service, s
     - [Committing changes](/guides/rif-enveloping/develop/#committing-changes)
     - [Troubleshooting](/guides/rif-enveloping/develop/#troubleshooting)
 - [**Integration Guide**](/guides/rif-enveloping/integrate/)
-    - [Relay Client and Server](/guides/rif-enveloping/integrate/#relay-client-and-server)
+    - [Relay Client and Server](/guides/rif-enveloping/integrate/#relay-client-and-relay-server)
     - [Using the relay server directly](/guides/rif-enveloping/integrate/#using-the-relay-server-directly)
     - [Using a relay provider](/guides/rif-enveloping/integrate/#using-a-relay-provider)
     - [Using the Enveloping utils as a library](/guides/rif-enveloping/integrate/#using-the-enveloping-utils-as-a-library)
