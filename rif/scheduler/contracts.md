@@ -24,6 +24,8 @@ The Service Provider can set up different plans.
 The plans must specify the:
 - Price per execution,
 - The time window (in seconds) within a scheduled execution should run.
+- The maximum amount of gas the internal call can spend
+**The price of the plan strongly depends on these last two values**
 We recommend a value more than 15 seconds. This value will depend strongly on the [service](./services) configuration.
 For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:
 
