@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig Architecture - Safe Contracts
 description: use this set of smart contracts to create multi-signature wallets
-tags: rif gnosis smart-contracts solidity
+tags: rif, multisig, gnosis, smart-contracts, solidity
 ---
 
 There are 3 main contracts involved in RIF Multisig:
@@ -15,6 +15,13 @@ There are 3 main contracts involved in RIF Multisig:
 They apply the [proxy pattern](https://blog.openzeppelin.com/proxy-patterns/) to lower the gas cost by splitting logic (GnosisSafe) and storage (GnosisSafeProxy) into separate contracts.
 
 ![Safe proxy pattern](/assets/img/rif-multisig/proxy.png)
+
+### Addresses
+
+| Contract | RSK Testnet | RSK Mainnet |
+| - | - | - |
+| `GnosisSafe` | [`0xFFd41b816f2821e579b4DA85c7352bf4f17e4fA5`](https://explorer.testnet.rsk.co/address/0xffd41b816f2821e579b4da85c7352bf4f17e4fa5) | TBD |
+| `GnosisSafeProxyFactory` | [`0x5b836117aed4Ca4DEe8E2E464F97f7F59b426C5A`](https://explorer.testnet.rsk.co/address/0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a) | TBD |
 
 ## `GnosisSafe`
 

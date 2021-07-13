@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig
 description: Overview of the RIF Multisig solution
-tags: rif gnosis multisig
+tags: rif, gnosis, multisig
 ---
 
 The objective of this project is to provide the RSK community with a safe and simple solution to create wallets that require multiple signatures to transact their funds. These kinds of wallets are called _multisig wallets_.
@@ -30,7 +30,7 @@ The objective of this project is to provide the RSK community with a safe and si
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="architecture">Read more</a>
+        <a href="contracts">Read more</a>
         <br />
         <br />
         <p>Understand the smart contracts and the architecture</p>
