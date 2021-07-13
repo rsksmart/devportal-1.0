@@ -180,3 +180,21 @@
 .newsletter-group-input:hover {
     background: white;
 }
+
+.dark .accordion__rsk {
+    border: none;
+    border-radius: 0;
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+}
+
+.dark .accordion__rsk .card-header {
+    background-color: rgb(20, 20, 20);
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-top-style: solid;
+    border-top-width: 0.1rem;
+    border-top-color: #ccc;
+    outline: none;
+}
