@@ -12,7 +12,7 @@ in the future by a third party.
 
 Install [the SDK](sdk) in your dapp's front-end to **enable your users to schedule transactions**.
 
-Read [here](run) how to **run your own scheduler** and start making revenew.
+Read how to [**run your own scheduler**](run) and start making revenue.
 
 ## Model
 
