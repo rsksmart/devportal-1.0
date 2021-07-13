@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RIF Multisig - Sample app
+tags: rif, multisig, gnosis
 ---
 
 The sample app contains many of the functions available from the RSK Safe Factory SDKs. There is list of the methods and where they are implemented in the repo.
