@@ -144,6 +144,7 @@ See the [Sovryn Library](https://www.sovryn.app/library) for the summary of fees
 - [Read the Blackpaper](https://docsend.com/view/mbhvi379crhagtwp)
 - [Library of DYOR](https://sovryn.app/library.html)
 - [Sovryn FAQs](https://wiki.sovryn.app/en/getting-started/faq-general)
+- [Mainnet Contract Addresses](https://wiki.sovryn.app/en/technical-documents/mainnet-contract-addresses)
 
 ## Get in touch
 - [Website](https://sovryn.app/)
