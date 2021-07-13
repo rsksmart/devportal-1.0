@@ -126,7 +126,7 @@ You can find the app at [https://live.sovryn.app/](https://live.sovryn.app/)
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [SOV](https://explorer.rsk.co/address/0x3b9494839549dee13d6d38384924f3a580934a65) | [Sovryn](https://www.sovryn.app/) | ERC20 | RSK |
+| [SOV](https://explorer.rsk.co/address/0xEfC78FC7D48B64958315949279bA181C2114abbD) | [Sovryn](https://www.sovryn.app/) | ERC20 | RSK |
 | [DOC](https://explorer.rsk.co/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db) | [Dollar on Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | RSK |
 | [MOC](https://explorer.rsk.co/address/0x9ac7fe28967b30e3a4e6e03286d715b42b453d10) | [Money on Chain](https://moneyonchain.com/moc-governance/) | ERC20 | RSK |
 | [rUSDT](https://explorer.rsk.co/address/0xef213441a85df4d7acbdae0cf78004e1e486bb96) | [USDT on RSK](https://tether.to/) | ERC20 | RSK |
