@@ -1072,8 +1072,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-08 08:50:11 +0000T00:00:00.000Z">2021-07-08</time> | -->
-     7' to read |
+    <!--time role="presentation" datetime="2021-07-12 12:32:57 +0000T00:00:00.000Z">2021-07-12</time> | -->
+     9' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/quickstart/transactions.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2140,6 +2140,49 @@ However, since we are currently connected to the RSK Testnet, we go to <a href="
 
 <p>This is <strong>not an error</strong>, it is simply a fundamental aspect of how blockchain networks function - any time you add a transaction to the blockchain, you must pay the network a fee to compensate them for their computational costs.</p>
 
+<h2 id="view-transactions-in-the-block-explorer">View transactions in the block explorer</h2>
+
+<p>When you performed each of the transactions, you should have received notifications in popups.</p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/metamask_transaction_confirmed.png" alt="Confirmed Transaction"></p>
+
+<p>However, if you missed this, not to worry, you can also find this within the transaction history within MetaMask. To do so, within the main screen of MetaMask, click on the “Activity” tab. You’ll see the list of the transactions.</p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/metamask_activity_tab.png" alt="Metamask Activity Tab"></p>
+
+<p>Then you click on any transaction, and click on the arrow button beside copy button named transaction ID, this takes you to the <a href="https://explorer.testnet.co" rel="external noopener noreferrer" target="_blank">Testnet explorer</a></p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/view_testnet_explorer.png" alt="View testnet explorer"></p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/view_testnet_explorer_2.png" alt="View testnet explorer"></p>
+
+<p>If you clicked on the popup notification, or if you find it within the “Activity” tab, either way, this should open up the block explorer with the selected transaction selected.</p>
+
+<p>For the transaction of the tRBTC transfer, you should see this</p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/view_testnet_transaction.png" alt="View testnet transaction explorer"></p>
+
+<p>You will notice that this transaction has an amount.</p>
+
+<p>For the transaction of the tRIF transfer, you should see this</p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/view_testnet_transaction_trif.png" alt="View testnet transaction explorer trif"></p>
+
+<p>You will notice that this transaction has a zero amount, but it does emit some events, which is because the smart contract of the RIF token does this.</p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/view_testnet_logs.png" alt="View testnet logs"></p>
+
+<h2 id="view-network-stats">View network stats</h2>
+
+<p>So far we have checked out individual addresses and transactions. These are very detailed and specific information. What if you were after the big picture instead? A bird’s eye view of the RSK blockchain as a whole?</p>
+
+<p>For this, we will not use the RSK Block explorer, and instead use the RSK Stats page.</p>
+
+<p><img src="../../../assets/img/guides/quickstart/transactions/rsk_stats_landing.png" alt="RSK Stats Landing"></p>
+
+<p>Here, we can see some very important numbers such as the average block duration, and the merged mining hash rate - and several other important technical indicators of the RSK network.
+A key indicator to look for is the average block time, which should be approximately 33s. Another key indicator to look for is the percentage of the Bitcoin network’s hash rate that is merge mining RSK.</p>
+
 <hr>
 <p><strong>Further reading:</strong></p>
 
@@ -2155,7 +2198,12 @@ However, since we are currently connected to the RSK Testnet, we go to <a href="
 </li>
   <li>About <a href="../../../rsk/rbtc/gas/">gas</a>
 </li>
+  <li>The <a href="https://stats.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Mainnet Stats Page</a>
+</li>
+  <li>The <a href="https://stats.testnet.rsk.co/" rel="external noopener noreferrer" target="_blank">RSK Testnet Stats Page</a>
+</li>
 </ul>
+
 
 
                   
