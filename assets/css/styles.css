@@ -2648,4 +2648,24 @@ table.table.newsletter input[type='checkbox'] {
   clear: both;
   display: table;
 }
-/* RIF Basic/Advanced switch: EBD */
+/* RIF Basic/Advanced switch: END */
+
+/* RIF Code snippet + parameters: START */
+.snippet__parameters {
+  margin-bottom: 0;
+  border: 2px solid #dee2e6;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.snippet__parameters--lightgreen {
+  border: 2px solid rgb(0, 181, 32, 0.2);
+}
+.snippet__code {
+  padding: 1rem 3rem;
+  border: 2px solid #dee2e6;
+}
+.snippet__code--lightgreen {
+  background-color: rgb(0, 181, 32, 0.1);
+  border: 2px solid rgb(0, 181, 32, 0.2);
+}
+/* RIF Code snippet + parameters: END */
