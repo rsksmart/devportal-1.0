@@ -121,8 +121,6 @@ More info:
 
 Web3.js helps us to develop websites or clients that interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts.
 
-The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to do the communications between the front-end and the RSK local node.
-
 The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to interact with the front end and the RSK local node.
 
 To install web3.js, input the command below into the terminal and press `enter` at your project location:
@@ -252,7 +250,7 @@ We have only 2 files in the front end:
 
 In Register folder, create a file named `index.html`.
 
-Copy and paste the smart contract from the following gist, or copy and paste the code below:
+Copy and paste the HTML from the following gist, or copy and paste the code below:
 
 [https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.html)
 
@@ -319,7 +317,7 @@ Copy and paste the smart contract from the following gist, or copy and paste the
 
 In the `Register` folder, create the file `index.js`.
 
-Copy and paste the smart contract from the following gist, or copy and paste the code below:
+Copy and paste the JavaScript from the following gist, or copy and paste the code below:
 
 [https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.js](https://raw.githubusercontent.com/solangegueiros/dapp-register-rsk/master/register-rsk-web3-injected/index.js)
 
