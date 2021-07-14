@@ -121,8 +121,6 @@ More info:
 
 Web3.js helps us to develop websites or clients that interact with the blockchain - writing code that reads and writes data from the blockchain with smart contracts.
 
-The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to do the communications between the front-end and the RSK local node.
-
 The web3.js library is an Ethereum Javascript API which connects using the generic JSON-RPC spec. As RSK's virtual machine implementation is compatible with the Ethereum Virtual Machine (EVM), it is possible to use web3.js to interact with the front end and the RSK local node.
 
 To install web3.js, input the command below into the terminal and press `enter` at your project location:
