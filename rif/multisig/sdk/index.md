@@ -36,8 +36,7 @@ Use the suite of SDKs to:
 - [Request transactions to other owners for sending ERC-721 tokens](erc721/erc721_transactions)
 - [Get the list of pending transactions on a multi-sig](listing/#get-the-list-of-pending-transactions)
 - [Get the list of past transactions on a multi-sig](listing/#get-the-list-of-past-transactions)
-- [Confirm pending transactions on-chain and off-chain](transaction_confirmation)
-- [Reject pending transactions](rejecting).
+- [Confirm pending transactions on-chain and off-chain](transaction_confirmation).
 
 ## Contract addresses
 
