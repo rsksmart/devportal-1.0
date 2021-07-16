@@ -17,6 +17,7 @@ If what you need is not in this section, **please contact us** without hesitatio
 - ['Plugin with id 'witness' not found'](#plugin-with-id-witness-not-found)
 - ['Truffle doesn't seem to work connected to RSK'](#truffle-doesnt-seem-to-work-connected-to-rsk)
 - ['Can't get public IP'](#cant-get-public-ip)
+- ['Corrupted blocks after hard fork'](#rewind-blocks)
 
 ## Sections
 
@@ -90,3 +91,15 @@ If you get the error:
 To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, simply [search for it](https://www.google.com/search?q=what's+my+IP+address)).
 
 [This page](/rsk/node/configure) will show you how to change a node's configuration file.
+
+### Rewind Blocks
+
+If RSK node happens to process blocks that are corrupted or invalid, after a hard fork. This tool provides a way to remove such blocks and start from a previous one state, this tool removes the blocks with number higher than the block number parameter informed in the command line.
+
+> Note: The node must be turned off before the rewind, and restarted after.
+
+Example:
+
+`java -cp rsk-core-<VERSION>.jar co.rsk.cli.tools.RewindBlocks 1000000`
+
+It removes the blocks with number 1000001 or higher
