@@ -33,7 +33,7 @@ The solution consists of four main modules:
         <a href="https://sample-app-multisig.rifos.org/" rel="noopener" >Sample Application</a>
         <br />
         <br />
-        <p>Take a look at the the sample application, you will find handy snippets in the code</p>
+        <p>Take a look at the sample application, you will find handy snippets in the code</p>
       </div>
     </div>
     <div class="col">
