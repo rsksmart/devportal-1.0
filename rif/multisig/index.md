@@ -6,7 +6,7 @@ tags: rif, gnosis, multisig
 ---
 
 
-The objective of this project is to provide the RSK community with a safe and simple (from a developer's point of view) solution to create accounts that require multiple signatures to transact their funds.
+The objective of this project is to provide the RSK community with a safe and simple (from a technical POV) solution to create accounts that require multiple signatures to transact their funds.
 
 ## Abstract
 
