@@ -19,7 +19,7 @@ In short, it implies:
 
 The RIF Savings and Vault solution will allow RSK developers to use our SDKs, and with the help of the documentation to:
 
-* Create multisig account choosing its owners and threshold
+* Create multisig account, choosing its owners and threshold
 * CRUD multisig owners and threshold
 * Receive RBTC (gas)
 * Receive ERC-721 tokens (including RIF token)
