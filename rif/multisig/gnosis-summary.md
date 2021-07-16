@@ -6,7 +6,7 @@ tags: rif, gnosis, multisig
 render_features: 'collapsible'
 ---
 
-As mentioned before, Gnosis Safe solution consists of four main modules. This suite is deployed to Ethereum and other EVM networks and, from now on, to RSK.
+Gnosis Safe solution consists of four main modules. It currently supports Ethereum and other EVM networks (Rinkeby, xDai, EWC, Volta), including RSK.
 
 [](#top "collapsible"){:.open}
 - A) The smart contracts
@@ -26,7 +26,7 @@ As mentioned before, Gnosis Safe solution consists of four main modules. This su
     * Repo: [https://github.com/gnosis/safe-contracts](https://github.com/gnosis/safe-contracts)
     * Deployments: [https://github.com/gnosis/safe-deployments/tree/main/src/assets/v1.2.0](https://github.com/gnosis/safe-deployments/tree/main/src/assets/v1.2.0)
     * <sup>(1)</sup>Owners: accounts enabled to sign and approve/reject multisig transactions
-    * <sup>(2)</sup>Threshold: amount of owners that need to sign to approve and send a transaction
+    * <sup>(2)</sup>Threshold: the number of owners that need to sign to approve and send a transaction
     * <sup>(3)</sup>Those functionalities are not included in this project
 
 

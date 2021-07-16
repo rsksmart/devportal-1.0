@@ -27,8 +27,7 @@ Use the suite of SDKs to:
 - [Get the list of pending transactions on a multi-sig](listing/#get-the-list-of-pending-transactions)
 - [Get the list of past transactions on a multi-sig](listing/#get-the-list-of-past-transactions)
 - [Confirm pending transactions on-chain and off-chain](transaction_confirmation)
-- [Reject pending transactions](rejecting)
-- [Delete a multi-sig withdrawing its funds](deleting).
+- [Reject pending transactions](rejecting).
 
 ## Contract addresses
 
