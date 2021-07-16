@@ -2,7 +2,7 @@
 layout: rsk
 title: Gnosis Summary
 description: Overview of the gnosis integration
-tags: rif gnosis multisig
+tags: rif, gnosis, multisig
 render_features: 'collapsible'
 ---
 
