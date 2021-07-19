@@ -94,7 +94,7 @@ To solve it, you need to change the `public.ip` key in config file with your IP 
 
 ### Rewind Blocks
 
-If RSK node happens to process blocks that are corrupted or invalid, after a hard fork. This tool provides a way to remove such blocks and start from a previous one state, this tool removes the blocks with number higher than the block number parameter informed in the command line.
+This tool should be used in a scenario where an RSK node processes blocks that are corrupted or invalid, for example after a hard fork. It allows one to remove such blocks and start from a previously known state. It does so by removing the blocks with block number higher than the block number parameter command line argument.
 
 > Note: The node must be turned off before the rewind, and restarted after.
 
@@ -102,4 +102,4 @@ Example:
 
 `java -cp rsk-core-<VERSION>.jar co.rsk.cli.tools.RewindBlocks 1000000`
 
-It removes the blocks with number 1000001 or higher
+The above command removes the blocks with number 1000001 or higher.
