@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - Receive ERC721 token
 description: follow these steps to receive erc721 tokens through multisig transactions
-tags: rif gnosis multisig erc721
+tags: rif, gnosis, multisig, erc721
 render_features: 'collapsible'
 ---
 

@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - Receive ERC20 token
 description: follow these steps to receive erc20 tokens through multisig transactions
-tags: rif gnosis multisig erc20
+tags: rif, gnosis, multisig, erc20
 render_features: 'collapsible'
 ---
 

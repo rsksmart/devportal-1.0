@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - Receive RBTC
 description: follow these steps to receive gas on the multisig account
-tags: rif gnosis multisig rbtc
+tags: rif, gnosis, multisig, rbtc
 render_features: 'collapsible'
 ---
 

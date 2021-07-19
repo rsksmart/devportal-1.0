@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - creation
 description: Multisig account creation
-tags: rif gnosis multisig
+tags: rif, gnosis, multisig
 render_features: 'collapsible tables-with-borders'
 ---
 

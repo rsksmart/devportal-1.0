@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - Transaction listing
 description: Safe transaction listing 
-tags: rif gnosis multisig
+tags: rif, gnosis, multisig
 render_features: 'collapsible'
 ---
 

@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - ERC20 Transactions
 description: follow these steps to send erc20 tokens through multisig transactions
-tags: rif gnosis multisig erc20
+tags: rif, gnosis, multisig, erc20
 render_features: 'collapsible'
 ---
 

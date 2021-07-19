@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - transaction confirmation
 description: Steps required to confirm a transaction
-tags: rif gnosis multisig
+tags: rif, gnosis, multisig
 render_features: 'collapsible'
 ---
 
