@@ -40,6 +40,8 @@ bundle exec jekyll -v
 None of these three commands should error,
 and they should all print out their version numbers.
 
+> For Mac M1, open Terminal using Rosetta. Ref: https://osxdaily.com/2020/11/18/how-run-homebrew-x86-terminal-apple-silicon-mac/
+
 ## Usage
 
 ### Production build
