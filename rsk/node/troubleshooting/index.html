@@ -1079,8 +1079,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-22 17:32:07 +0000T00:00:00.000Z">2021-06-22</time> | -->
-     4' to read |
+    <!--time role="presentation" datetime="2021-07-19 04:28:54 +0000T00:00:00.000Z">2021-07-19</time> | -->
+     5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/troubleshooting.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2020,6 +2020,7 @@
   <li><a href="#plugin-with-id-witness-not-found">‘Plugin with id ‘witness’ not found’</a></li>
   <li><a href="#truffle-doesnt-seem-to-work-connected-to-rsk">‘Truffle doesn’t seem to work connected to RSK’</a></li>
   <li><a href="#cant-get-public-ip">‘Can’t get public IP’</a></li>
+  <li><a href="#rewind-blocks">‘Corrupted blocks after hard fork’</a></li>
 </ul>
 
 <h2 id="sections">Sections</h2>
@@ -2098,6 +2099,20 @@ So please, follow the instructions depending on your operation system:</p>
 <p>To solve it, you need to change the <code class="highlighter-rouge">public.ip</code> key in config file with your IP address (if you don’t know your IP, simply <a href="https://www.google.com/search?q=what's+my+IP+address" rel="external noopener noreferrer" target="_blank">search for it</a>).</p>
 
 <p><a href="../configure/">This page</a> will show you how to change a node’s configuration file.</p>
+
+<h3 id="rewind-blocks">Rewind Blocks</h3>
+
+<p>This tool should be used in a scenario where an RSK node processes blocks that are corrupted or invalid, for example after a hard fork. It allows one to remove such blocks and start from a previously known state. It does so by removing the blocks with block number higher than the block number parameter command line argument.</p>
+
+<blockquote>
+  <p>Note: The node must be turned off before the rewind, and restarted after.</p>
+</blockquote>
+
+<p>Example:</p>
+
+<p><code class="highlighter-rouge">java -cp rsk-core-&lt;VERSION&gt;.jar co.rsk.cli.tools.RewindBlocks 1000000</code></p>
+
+<p>The above command removes the blocks with number 1000001 or higher.</p>
 
 
                   
