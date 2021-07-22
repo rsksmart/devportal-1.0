@@ -59,4 +59,4 @@ The [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package provides a 
 
 ___
 
-> **IMPORTANT**: With the previously mentioned methods, we are creating the transaction, but we are not changing the Multisig account yet. The change will be applied once the transaction will be executed, after being signed by the right number of owners. Please refers to [transaction execution](/rif/multisig/sdk/transaction_confirmation) for further instructions.
+> **IMPORTANT**: With the previously mentioned methods, we are creating the transaction, but we are not changing the Multisig account yet. The change will be applied once the transaction is executed, after being signed by the right number of owners. Please refers to [transaction execution](/rif/multisig/sdk/transaction_confirmation) for further instructions.
