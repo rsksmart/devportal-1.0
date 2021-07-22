@@ -23,7 +23,7 @@ It creates a new transaction, `rejectionTx`,  that must be approved and executed
 
 **Parameters**:
 - `safe: Safe` - the safe previously created
-- `transaction: SafeTransaction` - the transaction we want to reject.
+- `transaction: SafeTransaction` - the transaction to be rejected.
 {:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
 
 ```ts
