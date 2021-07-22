@@ -23,7 +23,7 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
 - [SafeSingleton](https://docs.gnosis.io/safe/docs/contracts_architecture/#1-transaction-management-core-contract) contract deployment
 
 [](#top "collapsible")
-- A) Contracts addresses deployed on RSK
+- A) Contract addresses deployed on RSK
   * Developers interacting with the RSK networks can use the address of the contracts already deployed
     * ### MAINNET
       **TBD**
