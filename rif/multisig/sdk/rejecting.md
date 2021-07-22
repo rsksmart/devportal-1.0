@@ -34,5 +34,5 @@ const rejectionTx = await rejectTx(safe, transaction)
 {:.snippet__code.snippet__code--lightgreen.border-top-0}
 
 
-> **IMPORTANT**: With the previously mentioned method, we are creating the rejection transaction, but we are not executing it. The rejection is successful only once it's signed (according to the safe threshold) and executed. Please refers to [transaction execution](/rif/multisig/sdk/transaction_confirmation) for further instructions.
+> **IMPORTANT**: With the previously mentioned method, we are creating the rejection transaction, but we are not executing it. The rejection is successful only once it's signed (according to the safe threshold) and executed. Please refer to [transaction execution](/rif/multisig/sdk/transaction_confirmation) for further instructions.
 {:.mt-3}
