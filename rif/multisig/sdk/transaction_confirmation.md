@@ -36,7 +36,7 @@ Transactions confirmation can be on-chain and off-chain.
     {:.snippet__code.snippet__code--lightgreen}
 
 - On-chain signature
-    * On-chain signature consists of interacting directly with the safe account hence, no further action is required to make it available to other users.
+    * On-chain signature consists of interacting directly with the safe account. Hence, no further action is required to make it available to other users.
 
     ```ts
     const txHash = await safeSdk.getTransactionHash(safeTransaction)
