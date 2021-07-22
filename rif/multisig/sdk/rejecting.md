@@ -19,7 +19,7 @@ For instance, if the current threshold is set to 2, rejecting a transaction will
 
 ## Rejection transaction creation
 
-It creates a new transaction, `rejectionTx`,  that must to be approved and executed in order to invalidate the original one.
+It creates a new transaction, `rejectionTx`,  that must be approved and executed in order to invalidate the original one.
 
 **Parameters**:
 - `safe: Safe` - the safe previously created
