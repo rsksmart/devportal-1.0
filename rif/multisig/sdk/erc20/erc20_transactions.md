@@ -42,7 +42,7 @@ The `ERC20TransactionBuilder` provides a set of methods related to [ERC20](https
 
 - TransferFrom transaction
   * **Parameters**
-    - `from: string` - the address from which transfer the amount of token specified with `value`
+    - `from: string` - the address from which to transfer the amount of token specified with `value`
     - `to: string` - the address will receive the amount of token specified with `transfer`
     - `value: BigNumber` - the amount of token will be transferred to address `to`
   {:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
