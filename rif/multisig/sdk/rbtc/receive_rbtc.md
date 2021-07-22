@@ -24,7 +24,7 @@ It is important to understand that in order to properly receive funds, the Multi
   {:.snippet__code.snippet__code--lightgreen}
 
 - B) Send the transaction
-  * Here below an example of a transaction executed for funding the Multisig account using [ethers](https://docs.ethers.io/v5/)
+  * Here below is an example of a transaction executed for funding the Multisig account using [ethers](https://docs.ethers.io/v5/)
   
   ```ts
   // address to use as fund receiver
@@ -42,4 +42,3 @@ ___
 For further details, please have a look at:
 - [signer.sendTransaction](https://docs.ethers.io/v5/api/signer/#Signer-sendTransaction)
 - [provider.sendTransaction](https://docs.ethers.io/v5/api/providers/provider/#Provider-sendTransaction)
-
