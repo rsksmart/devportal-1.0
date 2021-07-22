@@ -89,7 +89,7 @@ The `ERC721TransactionBuilder` provides a set of methods related to [ERC721](htt
 
 - Approve transaction
   * Parameters:
-    - `approved: string` - the address allowed to execute transfer operations in behalf of the owner
+    - `approved: string` - the address allowed to execute transfer operations on behalf of the owner
     - `tokenId: BigNumber` - the id of the token
   {:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
 
