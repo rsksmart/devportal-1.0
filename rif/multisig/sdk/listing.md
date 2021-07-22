@@ -132,4 +132,4 @@ render_features: 'collapsible'
     ```
     {:.snippet__code.snippet__code--lightgreen}
 
-**Important**: Since that the library is still in alpha version, all the methods afore mentioned don't allow to query transactions per page, and the default limit is set to 100.
+**Important**: Since the library is still in the alpha version, all the methods aforementioned don't allow to query transactions per page, and the default limit is set to 100.
