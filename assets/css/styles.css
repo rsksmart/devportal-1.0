@@ -2576,3 +2576,96 @@ table.table.newsletter input[type='checkbox'] {
   content: 'Show less';
 }
 /* RIF Accordion customization: END */
+
+
+/* RIF Basic/Advanced switch: START */
+.switch {
+  position: relative;
+  min-height: 2.5rem;
+  border: 1px solid #cbcaca;
+  margin: 1rem;
+  padding: 1rem;
+}
+.switch__content {
+  padding-top: 2.5rem;
+  transition: 1 2s;
+}
+.switch__controller {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.switch__label {
+  float: left;
+  display: block;
+  font-size: 14px;
+  line-height: 28px;
+  color: #979696;
+  transition: 0.5s color;
+  cursor: pointer;
+}
+.switch__label:first-of-type {
+  color: rgb(0, 181, 32);
+}
+.switch__knob {
+  float: left;
+  width: 62px;
+  height: 30px;
+  margin: 0 10px;
+  border-radius: 14px;
+  border: 1px solid #979696;
+  background: #fff;
+  position: relative;
+  cursor: pointer;
+}
+.switch__knob::after {
+  content: "";
+  background: rgb(0, 181, 32);
+  width: 22px;
+  height: 22px;
+  border-radius: 100%;
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  display: block;
+  transition: 0.5s left;
+}
+.switch__knob:hover {
+  outline: rgb(0, 181, 32) solid 1px;
+}
+.switch__controller--on .switch__label:first-of-type {
+  color: #979696;
+}
+.switch__controller--on .switch__label:last-of-type {
+  color: rgb(0, 181, 32);
+}
+.switch__controller--on .switch__knob::after {
+  left: 36px;
+  transition: 0.5s left;
+}
+.switch__controller::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* RIF Basic/Advanced switch: END */
+
+/* RIF Code snippet + parameters: START */
+.snippet__parameters {
+  margin-bottom: 0;
+  border: 2px solid #dee2e6;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.snippet__parameters--lightgreen {
+  border: 2px solid rgb(0, 181, 32, 0.2);
+}
+.snippet__code {
+  padding: 1rem 3rem;
+  border: 2px solid #dee2e6;
+}
+.snippet__code--lightgreen {
+  background-color: rgb(0, 181, 32, 0.1);
+  border: 2px solid rgb(0, 181, 32, 0.2);
+}
+/* RIF Code snippet + parameters: END */

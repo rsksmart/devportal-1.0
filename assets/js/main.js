@@ -84,6 +84,9 @@ $(document).ready(function () {
       case 'collapsible':
         renderCollapsibleSetup();
         return
+      case 'switch-container':
+        renderSwitchContainerSetup();
+        return
       default:
         console.error('Unsupported render feature:', feature);
     }
@@ -862,4 +865,69 @@ function renderCollapsible(elem, collapsibleIndex) {
   accordion.append(...accordionItems);
   ul.replaceWith(accordion);
   elem.remove()
+}
+
+// render features: 'switch-container'
+
+function renderSwitchContainerSetup() {
+  setupFeature('a[title="switch-container"]', renderSwitchContainer);
+}
+
+function renderSwitchLabel(textContent){
+  const label = document.createElement("div");
+  label.classList.add("switch__label");
+  label.textContent = textContent;
+  return label
+}
+
+function renderSwitch(ul) {
+  const basicChildren = Array.prototype.slice.call(ul.children[0].children);
+  const advancedChildren = Array.prototype.slice.call(ul.children[1].children);;
+  const switchContainer = document.createElement("div");
+  switchContainer.classList.add("switch");
+
+  const switchContent = document.createElement("div");
+  switchContent.classList.add("switch__content");
+  const basicContent = document.createElement("div");
+  basicContent.append(...basicChildren);
+  const advancedContent = document.createElement("div");
+  advancedContent.classList.add("d-none")
+  advancedContent.append(...advancedChildren);
+  switchContent.append(...[basicContent, advancedContent]);
+
+  // <label>Basic</label>
+  //   <div class="knob"></div>
+  //   <label>Advanced</label>
+  const switchController = document.createElement("div");
+  switchController.classList.add("switch__controller");
+  switchController.addEventListener("click", function () {
+    this.classList.toggle("switch__controller--on");
+    for (let i = 0; i < switchContent.children.length; i++){
+      switchContent.children[i].classList.toggle('d-none')
+    }
+  });
+  const basicLabel = renderSwitchLabel("Basic");
+  const knob = document.createElement("div");
+  knob.classList.add("switch__knob");
+  const advancedLabel = renderSwitchLabel("Advanced");
+  switchController.append(...[basicLabel, knob, advancedLabel]);
+
+  switchContainer.append(...[switchController, switchContent]);
+  return switchContainer;
+}
+
+function renderSwitchContainer(elem, index) {
+  const ul = elem.parentNode.nextElementSibling;
+  if (!ul && ul.tagName !== 'UL') {
+    console.warn('Expected an <ul> element:', el);
+    return;
+  }
+  if (!ul.children || ul.children.length !== 2) {
+    console.warn('Switch-container features supports exactly 2 children', el);
+    return;
+  }
+  const switchContainer = renderSwitch(ul);
+
+  ul.replaceWith(switchContainer)
+  // elem.remove()
 }

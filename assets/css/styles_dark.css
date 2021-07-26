@@ -198,3 +198,12 @@
     border-top-color: #ccc;
     outline: none;
 }
+
+.dark .switch__knob {
+    border-color: #cbcaca;
+    background: rgb(50, 50, 50);
+}
+
+.dark .switch__knob:hover {
+    outline-color: #fff;
+}
