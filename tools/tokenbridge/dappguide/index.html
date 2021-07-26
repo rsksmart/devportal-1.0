@@ -1080,8 +1080,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 10:06:48 +0000T00:00:00.000Z">2021-06-03</time> | -->
-     3' to read |
+    <!--time role="presentation" datetime="2021-07-24 00:16:50 +0000T00:00:00.000Z">2021-07-24</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tools/tokenbridge/dappguide.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2021,43 +2021,54 @@
 <p>This will require the use of either Chrome or Chromium web browser, with one of the following wallet browser extensions:</p>
 <ul>
   <li>
-<a href="https://www.poa.network/for-users/nifty-wallet" rel="external noopener noreferrer" target="_blank">Nifty Wallet</a> using a <a href="../../../tutorials/resolve-nifty-issue/#add-rsk-as-custom-node">custom network</a> for RSK to keep the same addresses as Ethereum.</li>
-  <li>
 <a href="https://metamask.io/download.html" rel="external noopener noreferrer" target="_blank">Metamask</a> using a <a href="../../../develop/apps/wallets/metamask/">custom network</a> to add the RSK network.</li>
+  <li><a href="https://www.poa.network/for-users/nifty-wallet" rel="external noopener noreferrer" target="_blank">Nifty Wallet</a></li>
+  <li><a href="https://liquality.io/" rel="external noopener noreferrer" target="_blank">Liquality Wallet</a></li>
+  <li><a href="https://defiantapp.tech/" rel="external noopener noreferrer" target="_blank">Definat Wallet</a></li>
 </ul>
 
 <h2 id="steps">Steps</h2>
 
-<p>Start by connecting your wallet (Nifty Wallet or Metamask) and select the network of your choice, in this case we will use RSK Testnet network.</p>
+<p>Start by connecting your wallet and select the network of your choice, in this case we will use RSK Testnet network.</p>
 
-<p><img src="../../../assets/img/tools/tokenbridge/dapp-image1-1.png"></p>
+<p><img src="../../../assets/img/tools/tokenbridge/dapp-image1-1.png" alt="token bridge connect"></p>
 
 <p>If everything is correct, you should see the following screen:</p>
 
-<p><img src="../../../assets/img/tools/tokenbridge/dapp-image1-2.png"></p>
+<p><img src="../../../assets/img/tools/tokenbridge/dapp-image1-2.png" alt="token bridge token bridge connected"></p>
 
-<p>Then select the token that you want to transfer. For example, tRIF token (you can obtain them from the <a href="https://faucet.rifos.org/" rel="external noopener noreferrer" target="_blank">Rif Faucet</a>).</p>
+<p>Then select the token that you want to transfer. For example, tRIF token (you can obtain them from the <a href="https://faucet.rifos.org/" rel="external noopener noreferrer" target="_blank">Rif Faucet</a>).
+You will need to approve the bridge contract to use the token, this will happen only once.</p>
 
-<p><img src="../../../assets/img/tools/tokenbridge/dapp-image2.png"></p>
+<p><img src="../../../assets/img/tools/tokenbridge/dapp-image2.png" alt="token bridge approve"></p>
 
-<p>Once you have selected it, enter the amount you want to transfer, then click <code class="highlighter-rouge">Convert tokens</code> button.</p>
+<p>Once you have approved it, enter the amount you want to transfer, and the address that will recieve them on the other side then click <code class="highlighter-rouge">Convert tokens</code> button. <strong>Important! don’t use the bridge to send it to your exchange address, you won’t be able to claim it</strong></p>
 
 <p><img src="../../../assets/img/tools/tokenbridge/dapp-image3.png"></p>
 
 <p>As soon as the process starts, you will see a loader and a disclaimer explaining that you will have to wait around 30 seconds until the transaction gets mined.</p>
 
-<p><img src="../../../assets/img/tools/tokenbridge/dapp-image4.png"></p>
+<p><img src="../../../assets/img/tools/tokenbridge/dapp-image4.png" alt="token bridge wait for transaction"></p>
 
-<p>A double pop-up message would be displayed, you’re meant to confirm the transaction, then click <strong>submit the transaction</strong>. The following image gives an example of the confirmation popup. The first one is to approve the bridge contract to use the token, the second one is to notify the bridge contract to cross the tokens. These steps require around 30 seconds each for the transaction to be mined.</p>
+<p>You’re meant to confirm the transaction, click <strong>submit the transaction</strong>. The following image gives an example of the confirmation popup. This will create  a transaction to call the bridge contract to cross the tokens. These steps require around 30 seconds for the transaction to be mined.</p>
 
-<p><img src="../../../assets/img/tools/tokenbridge/dapp-image5.png" width="300"></p>
+<p><img src="../../../assets/img/tools/tokenbridge/dapp-image5.png" width="300" alt="nifty wallet submit transaction"></p>
 
-<p>Once all the steps are done, you have to <strong>wait around 5 minutes in testnet or 24 hours in mainnet</strong> for the tokens to cross. You can check the token contract on the other network by clicking on the token symbol (in this case etRIF).
-You can also check it on your wallet. To do this, change the network on your wallet (in this case we would change to Kovan) and add a custom token using the address of the crossed token, you should see the amount crossed once you wait for the corresponding crossing time.</p>
+<p>If everything worked correctly, you should see the transaction added to the Account Transactions list
+You have to <strong>wait depending on the amount you want to cross, around 30 minutes for small amounts, 1 hour for medium amounts or 24 hours for large ammounts</strong> for the tokens to cross.</p>
 
 <p><img src="../../../assets/img/tools/tokenbridge/dapp-image6.png"></p>
 
-<p>Check the transaction on the explorer to see that everything is ok.</p>
+<p>Once the tokens have cross <strong>you need to claim them on the other network</strong>. To do this, change the network on your wallet, and click on the claim button.</p>
+
+<p><img src="../../../assets/img/tools/tokenbridge/dapp-image7.png" alt="token bridge claim button"></p>
+
+<p>A confirmation popup will appear to send the claim trasnaction to the network, submit it. After the transaction get mined, you will see your transaction as Claimed</p>
+
+<p><img src="../../../assets/img/tools/tokenbridge/dapp-image8.png" alt="token bridge claimed transaction"></p>
+
+<p>You can check the token contract on the other network by clicking on the token symbol (in this case etRIF).
+You can also check it on your wallet. To do this add a custom token on the network where the token crossed using the address mentioned before.</p>
 
 <p>You can transfer tokens in the other direction too, using the same method.</p>
 
