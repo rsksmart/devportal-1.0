@@ -9,7 +9,7 @@ layout: 'rsk'
 
 ![Covalent-banner](/assets/img/solutions/Covalent/Covalent_Banner.png)
 
-The Covalent API supports both the RSK Mainnet and RSK Testnet networks. See [RSK Indexing and Query Data API](https://www.covalenthq.com/docs/networks/rsk) for the full details, including `chain_id` values. All Covalent API *Class A* endpoints are supported for the RSK mainnet and testnet networks. You can query either network via the unified Covalent API by changing the `chainId`.
+The Covalent API supports both the RSK Mainnet and RSK Testnet networks. See [RSK Indexing and Query Data API](https://www.covalenthq.com/docs/networks/rsk) for the full details, including `chain_id` values. All Covalent API [*Class A*](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the RSK mainnet and testnet networks. You can query either network via the unified Covalent API by changing the `chainId`.
 
 ## How Covalent Works
 
@@ -31,7 +31,7 @@ Covalent provides a unified API  that brings full transparency and visibility to
 
 - 25 billion rich transactions indexed including every transaction since genesis for RSK and several other blockchains.
 - 200K+ smart contracts are available with internal data structures for querying.
-- 30,000+ price feeds for fiat and crypto pairs.
+- 30K+ price feeds for fiat and crypto pairs.
 - 30-second refresh rate.
 
 ### Use Cases
@@ -58,6 +58,7 @@ To see what developers have built using the Covalent API, check out the Covalent
 ### Guides
 
 - [RSK Indexing and Query Data API](https://www.covalenthq.com/docs/networks/rsk)
+- [Class A endpoints](https://www.covalenthq.com/docs/api/#tag--Class-A)
 - [How to query the RSK network on Covalent API](https://replit.com/@1millionwallets/RSK-Wallet-Balance-Dashboard#README.md)
 - [Covalent Whitepaper](https://www.covalenthq.com/static/documents/Covalent%20Whitepaper%20Apr%202021%20v1%20Branded.pdf)
 
