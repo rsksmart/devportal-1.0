@@ -1,8 +1,12 @@
 ---
 layout: rsk
 title: Token Bridge FAQ
-tags: faqs, defi, rbtc, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets
+tags: erc20, bridge, faqs, defi, rbtc, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets
 ---
+
+## Troubleshooting
+
+If you need guide troublehsooting an issue go to [https://developers.rsk.co/kb/tokenbridge-troubleshooting/](https://developers.rsk.co/kb/tokenbridge-troubleshooting/)
 
 ## What is the Token Bridge?
 
@@ -47,11 +51,7 @@ Upon receiving your Side Tokens, you no longer own your original tokens. The mom
 
 There is no limit on the total. Hypothetically, the entire circulating supply can be bridged, though this is unlikely happen as there will be strong use cases to use the tokens on either network.
 
-However, there are daily quotas:
-
-- Daily limit: 5,000,000 tokens
-- Maximum per tx: 5,000,000 tokens
-- Minimum per tx: 1 token
+However, there is a minimum and maximum amount per transaction and daily quotas. You can see them on [https://tokenbridge.rsk.co](https://tokenbridge.rsk.co/?#token-list)
 
 ## Can any token be bridged over?
 
@@ -63,8 +63,15 @@ There is a 0.2% fee charge when crossing the tokens, this fee goes to the valida
 
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
 
-- 2880 confirmations are necessary on the RSK Mainnet, and 5760 confirmations on the Ethereum Mainnet.
-- 10 confirmations are necessary on the RSK Testnet, and 10 confirmations on the Ethereum Kovan Testnet.
+Confirmations depends on the amount being crossed:
+
+- Small amounts needs 60 confirmations on the RSK Mainnet, and 120 confirmations on the Ethereum Mainnet.
+- Medium amounts needs 120 confirmations on the RSK Mainnet, and 240 confirmations on the Ethereum Mainnet.
+- Large amounts needs 2880 confirmations on the RSK Mainnet, and 5760 confirmations on the Ethereum Mainnet.
+
+> Note that the values of small, medium, and large amount are defined per token basis,
+> and may change over time.
+> You can see these amounts defined in the [Token List](https://tokenbridge.rsk.co/?#token-list).
 
 ## How does the Token Bridge work?
 
