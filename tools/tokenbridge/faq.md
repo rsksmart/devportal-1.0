@@ -64,11 +64,14 @@ There is a 0.2% fee charge when crossing the tokens, this fee goes to the valida
 ## How many confirmations are required to convert the original tokens to Side tokens and vice-versa?
 
 Confirmations depends on the amount being crossed:
-- small amonuts needs 60 confirmations on the RSK Mainnet, and 120 confirmations on the Ethereum Mainnet
-- medium amonuts needs 120 confirmations on the RSK Mainnet, and 240 confirmations on the Ethereum Mainnet
-- large amounts needs 2880 confirmations on the RSK Mainnet, and 5760 confirmations on the Ethereum Mainnet.
 
-You can see them on [https://tokenbridge.rsk.co](https://tokenbridge.rsk.co/?#token-list)
+- Small amounts needs 60 confirmations on the RSK Mainnet, and 120 confirmations on the Ethereum Mainnet.
+- Medium amounts needs 120 confirmations on the RSK Mainnet, and 240 confirmations on the Ethereum Mainnet.
+- Large amounts needs 2880 confirmations on the RSK Mainnet, and 5760 confirmations on the Ethereum Mainnet.
+
+> Note that the values of small, medium, and large amount are defined per token basis,
+> and may change over time.
+> You can see these amounts defined in the [Token List](https://tokenbridge.rsk.co/?#token-list).
 
 ## How does the Token Bridge work?
 
