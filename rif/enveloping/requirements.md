@@ -6,7 +6,7 @@ tags: rif, enveloping, rsk, envelope, gas station network, gsn, requirements
 
 ### RSK Node
 
-You need to have a running RSK node version [PAPYRUS-2.2.0](https://github.com/rsksmart/rskj/releases) or higher.
+You need to have a running RSK node version [IRIS-3.0.0](https://github.com/rsksmart/rskj/releases) or higher.
 
 ### Yarn
 
