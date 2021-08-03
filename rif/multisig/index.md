@@ -22,7 +22,7 @@ The solution consists of four main modules:
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="get-started">Get Started</a>
+        <a href="sdk">Get Started</a>
         <br />
         <br />
         <p>Use the Javascript SDKs to create and operate multisig wallets</p>
