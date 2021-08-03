@@ -196,3 +196,9 @@ Watch the videos below for a step by step guide on how to send and receive RBTC 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/j8laciB7ihw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Next
+
+Be sure to check out our next article in this series,
+about how to get the RSK cryptocurrency, RBTC,
+by using exchanges: [How to get RBTC using Exchanges](/kb/get-crypto-on-rsk/rbtc-exchanges/)

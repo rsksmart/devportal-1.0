@@ -304,7 +304,7 @@ none
 ##### Example
 ```js
 // Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"peerList","params":[],"id":1}'
+curl -X POST --data '{"jsonrpc":"2.0","method":"net_peerList","params":[],"id":1}'
 
 
 // Result
