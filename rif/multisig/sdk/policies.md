@@ -32,6 +32,7 @@ The [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package provides a 
     const newThreshold: number
     const ownerTx = await safe.getAddOwnerTx(newOwner, newThreshold)
     ```
+    {:.snippet__code.snippet__code--lightgreen.mb-3}
 
     * Remove an owner from the Multisig account and, optionally, set a new threshold.
 
@@ -41,6 +42,7 @@ The [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package provides a 
     const existingOwner: string
     const ownerTx = await safe.getRemoveOwnerTx(existingOwner, newThreshold)
     ```
+    {:.snippet__code.snippet__code--lightgreen.mb-3}
 
     * Replace an owner with a new one.
 
@@ -49,13 +51,17 @@ The [safe-core-sdk](https://github.com/gnosis/safe-core-sdk) package provides a 
     const newOwner: string
     const ownerTx = await safe.getSwapOwnerTx(oldOwner, newOwner)
     ```
+    {:.snippet__code.snippet__code--lightgreen}
+
 - Threshold
     * Change the threshold.
+
     ```ts
     // IMPORTANT! keep in mind that the new threshold cannot be greater than the ACTUAL number of owners (before executing the transaction)
     const newThreshold: number
     const ownerTx = await safe.getChangeThresholdTx(newThreshold)
     ```
+    {:.snippet__code.snippet__code--lightgreen}
 
 ___
 

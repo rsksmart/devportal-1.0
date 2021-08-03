@@ -26,16 +26,14 @@ The suite of SDKs is composed by:
 
 Use the suite of SDKs to:
 - [Create multisig wallets choosing owners and threshold](creation)
-- [CRUD owners](policies/#owners)
-- [CRUD threshold](policies/#threshold)
+- [CRUD owners and threshold](policies/)
 - [Receive RBTC (gas)](rbtc/receive_rbtc)
 - [Request transactions to other owners for sending RBTC, or any other raw transaction](rbtc/rbtc_transactions)
 - [Receive ERC-20 tokens (including RIF tokens)](erc20/receive_erc20)
 - [Request transactions to other owners for sending ERC-20 tokens](erc20/erc20_transactions)
 - [Receive ERC721 tokens (collectibles)](erc721/receive_erc721)
 - [Request transactions to other owners for sending ERC-721 tokens](erc721/erc721_transactions)
-- [Get the list of pending transactions on a multi-sig](listing/#get-the-list-of-pending-transactions)
-- [Get the list of past transactions on a multi-sig](listing/#get-the-list-of-past-transactions)
+- [Get the list of pending and past transactions on a multi-sig](listing)
 - [Confirm pending transactions on-chain and off-chain](transaction_confirmation).
 
 ## Contract addresses
