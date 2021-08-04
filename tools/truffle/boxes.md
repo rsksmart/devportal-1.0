@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: Truffle Boxes
+description: 'How to setup your system to use a Truffle box'
+tags: truffle, ganache, quick-start, dapps, start-box, truffle-boxes, open zeppelin, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, guides, tutorial
 ---
 
 To use most Truffle commands, you need to run them against an existing Truffle project. So the first step is to create a Truffle project.

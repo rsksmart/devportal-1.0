@@ -1,12 +1,13 @@
 ---
 layout: rsk
+tags: rlogin, modal, rif, rif-identity, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## rLogin - modal
 
 rLogin is a tool that allows the front end developer to connect their user with blockchain functionalities and self-sovereign identity models seamlessly. It provides a standard button and a pop-up that, within its different flavors, allows the developer to correctly authenticate a user following the Decentralized Identity and Verifiable Credentials protocols. In addition, it will allow the developer to interact with a user-centric cloud like service called the _data vault_. This service can be used to store and retrieve user's information with their permission.
 
-To understand the motivation, architecture and design please read [general rLogin docs](../../)
+To understand the motivation, architecture and design please read [general rLogin docs](/rif/identity/rlogin/)
 
 ## Features
 
@@ -14,6 +15,7 @@ To understand the motivation, architecture and design please read [general rLogi
     - Browser wallets - wallets that are installed as an extension of the web browser
         - [Metamask wallet](https://metamask.io/)
         - [Nifty wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid)
+        - [Liquality wallet](https://liquality.io/atomic-swap-wallet.html)
     - Mobile wallets - wallets that are installed in mobile phone and support [Wallet Connect](https://walletconnect.org/)
         - [rWallet](https://developers.rsk.co/wallet/rwallet/)
         - [Trust wallet](https://trustwallet.com/)
@@ -23,13 +25,11 @@ To understand the motivation, architecture and design please read [general rLogi
     - Ethereum Mainnet
     - Ganache (test network)
 
-> We express support for wallet providers and networks that are manually tested against each PR as QA process. Formalizing manual test schedule and automated tests are a work in progress, and are planned in the scope of this project.
-
 ## Quick start
 
 1. Install rLogin
 
-    ```
+    ```shell
     npm i @rsksmart/rlogin
     ```
 
@@ -56,49 +56,37 @@ To understand the motivation, architecture and design please read [general rLogi
       supportedChains: [1, 30, 31]
     })
     ```
-    
+
     > Sample: https://github.com/rsksmart/rif-identity-manager/blob/main/src/rLogin.ts
-    
+
 3. Show the pop-up to the user
 
     ```typescript
     const handleLogin = () => {
-        rLogin.connect().then((provider: any) => context?.setProvider(provider))
-            .catch((err: string) => console.log(err))
+        rLogin.connect()
+          .then((rLoginResponse: any) => {
+            const provider = rLoginResponse.provider;
+            const dataVault = rLoginResponse.dataVault;
+            const disconnect = rLoginResponse.disconnect;
+
+            // save the response to be used later, here we are using React context
+            context.rLoginresponse(rLoginResponse)
+          })
+          .catch((err: string) => console.log(err))
     }
     ```
-    
+
     > Sample: https://github.com/rsksmart/rif-identity-manager/blob/main/src/app/LoginScreen.tsx
-    
+
 4. Request RPC methods
 
-    ```
+    ```typescript
     export const getAccounts = (provider: any) => provider.request({ method: 'eth_accounts' })
     ```
-    
+
     Or use `provider` as Web3 provider for your client of preference: [`Web3.js`](https://github.com/ethereum/web3.js/), [`ethjs`](https://github.com/ethjs/ethjs), [`ethers.js`](https://github.com/ethers-io/ethers.js/) or other.
-    
+
     > Sample: https://github.com/rsksmart/rif-identity-manager/blob/main/src/helpers.ts
-
-    
-**For HTML-only apps:**
-
-```html
-<script src="http://unpkg.com/@rsksmart/rlogin"></script>
-<script type="text/javascript">
-    const rLogin = new window.RLogin.default({
-        providerOptions: {} // see above options
-    })
-
-    function handleLogin() {
-        rLogin.connect().then(provider => {
-            document.getElementById('address').innerHTML = provider.selectedAddress
-        })
-    }
-
-    document.getElementById('login').addEventListener('click', handleLogin);
-</script>
-```
 
 ### Flavors
 
@@ -110,56 +98,69 @@ To understand the motivation, architecture and design please read [general rLogi
 
 - Closed apps: for example, a back office. This are apps that only specific user's can access. This flavor is used to prove the user accessing an app holds or is delegated by a specific identity - perform this validations in your server's business logic
 
-## EIP-1193 support
+## The code
 
-rLogin express support for [EIP-1193](https://eips.ethereum.org/EIPS/eip-1193) propossal for a _Ethereum Provider JavaScript API_. Wallet providers that implement EIP-1193 are prone to be integrated seamlessly into this library.
+The tool tries not to re-implement functionalities that are provided by other libraries. The work is strongly based on:
 
-Read this sections to understand how to handle EIP-1193 rLogin.
+- [`web3modal`](https://github.com/web3Modal/web3modal/)
+    - Wallet provider integrations are imported from npm package
+    - Core and components are re-implemented to enable developing custom UX flow and custom components
 
-### accountsChanged
+## Run for development
 
-Event is fired when the user changes the account/persona.
+**Install dependencies** - downloads and install dependencies from `npm`
 
-```js
-rLogin.on("accountsChanged", (accounts) => {
-    document.getElementById('address').innerHTML = 'Account: ' + accounts[0]
-});
+```shell
+npm i
 ```
 
-### chainChanged
+**Run tests** - runs with `jest`
 
-Event is fired when the user changes the network in the wallet.
-
-```js
-rLogin.on("chainChanged", (chainId) => {
-    document.getElementById('chainId').innerHTML = 'ChainId: ' + parseInt(chainId)
-})
+```shell
+npm test
 ```
 
-#### About Nifty and RPC `request` method
+Currently, there are no tests :(. Please test it with a [sample app](#sample-apps).
 
-Nifty does not support EIP-1193 regarding `request` API, it still uses `send` method as API for sending RPCs. Consider this in your implementation.
+The best way to test it is to run `npm build:dev` to update the bundle after saving files. You will need to reload page after rebuilding, that is not automated yet.
 
-Follow up the feature request: [poanetwork/nifty-wallet#421](https://github.com/poanetwork/nifty-wallet/issues/421)
+**Lint** - runs `eslint` syntax checks
 
-## Optional parameters
-
-### supportedNetworks
-
-Specify the network IDs that the dApp supports and the wallet should use.
-
-```js
-const rLogin = new window.RLogin.default({
-    supportedNetworks: [30, 31],
-})
+```shell
+npm run lint
 ```
 
-### `web3modal` options
+**Build for production** - builds `umd` into `dist/main.js`
 
-Options available for [`web3modal`](https://github.com/web3Modal/web3modal/) are available for `rLogin`. To understand how this works go to section [_the code_](https://github.com/rsksmart/rLogin#the-code).
+```shell
+npm run build
+```
 
-Wallet providers and networks that are listed in [_features_](#features) section are supported and tested, but other can be provided seamlessly with `web3modal` options. We cannot assure quality for using other providers or networks.
+**Build in watch mode** - builds each time a file in `src/` is updated
 
-## Styling the modal and interface
+```
+npm run build:dev
+```
 
-The modal comes with basic RIF styling and can be overwritten using CSS. All of the elements contain class and id selectors to allow style customizations. A list of the selectors can be found in the [cssSelector.ts constants file](https://github.com/rsksmart/rLogin/tree/master/src/constants/cssSelectors.ts).
+**Serve the library** - serves the library in `http://localhost:5005`
+
+```shell
+npm run serve
+```
+
+> Metamask cannot be accessed without `http` - see https://ethereum.stackexchange.com/a/62217/620
+
+## Sample apps
+
+Please first build for production.
+
+| Flavor | Import from | Location | Command |  |
+| - | - | - | - | - |
+| Fully-decentralized | HTML DOM | _./sample/decentralized_ | `npm run sample:dapp` | Serves the library in _http://localhost:3005_ and a dApp in _http://localhost:3006_. Go to _3006_ with your browser |
+| Open app | HTML DOM | _./sample/with_be_ | `npm run sample:open` | Serves the library in _http://localhost:3005_, dApp in _http://localhost:3006/?backend=yes_ and back end in _http://localhost:3007_. This mode will not ask for Data Vault access. Go to _3006_ with your browser |
+| Permissioned app | HTML DOM | _./sample/decentralized_ | `npm run sample:permissioned` | Serves the library in _http://localhost:3005_, dApp in _http://localhost:3006_ and back end in _http://localhost:3007_. This mode will ask for Data Vault access. Go to _3006_ with your browser |
+
+## Acknowledgements
+
+Find all acknowledged bugs, future features, and improvements in
+[repo issues](https://github.com/rsksmart/rLogin/issues)

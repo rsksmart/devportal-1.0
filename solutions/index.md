@@ -1,6 +1,9 @@
 ---
 layout: rsk
 title: Solutions on RSK
+description: 'Check out the many ways our partners leverage the RSK and RIF
+platforms and APIs to create innovative experiences.'
+tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
 ---
 
 Check out the many ways our partners leverage the RSK and RIF
@@ -214,4 +217,143 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/chainlink/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/Chainlink/Chainlink Symbol Blue.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/chainlink/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Chainlink</p>
+                        <p class="card-desc">Connect your smart contracts to the outside world.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/chainlink/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/edge/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/edge/Edge_Primary_Logo_MintNavy.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/edge/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Edge Wallet</p>
+                        <p class="card-desc">Edge is a powerful and easy to use cryptocurrency wallet that allows users to easily control their own private keys with the familiarity and ease of mobile banking.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/edge/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/tenderly/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/Tenderly/Tenderly.png" alt="tenderly icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/tenderly/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Tenderly</p>
+                        <p class="card-desc">Tenderly provides real-time monitoring, alerting and troubleshooting for Smart Contracts. Check out how to make use of Tenderly’s seamless tools to enhance your development processes on RSK.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/tenderly/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/kriptonmarket/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/kriptonmarket/logo.png" alt="kriptonmarket icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/kriptonmarket/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Kripton Market</p>
+                        <p class="card-desc">Kripton integrates with RSK to provide an on/off ramp solution to give users in Latin American countries access to cryptocurrencies and tokens in the RSK network using their local currencies.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/kriptonmarket/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/sovryn/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/sovryn/sovryn-logo.png" alt="sovryn icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/sovryn/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Sovryn</p>
+                        <p class="card-desc">Sovryn is a non-custodial and permissionless smart contract-based system for Bitcoin lending, borrowing and margin trading</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/sovryn/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/covalent/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/Covalent/Covalent_Logo.png" alt="covalent icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/covalent/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Covalent</p>
+                        <p class="card-desc">Covalent provides a unified API bringing visibility to billions of blockchain data points.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/covalent/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+
 </div>

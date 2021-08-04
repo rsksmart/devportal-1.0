@@ -8,6 +8,10 @@ collection_order: 20
 
 # Step 2 : Install Truffle and Ganache
 
+What we achieved in step 1 was to launch a local RSKj node on a Regtest network.
+Be sure to keep it running because instead of issuing manual JSON-RPC requests,
+we are now going to use some a more advanced developer tool,
+the [Truffle Suite](https://www.trufflesuite.com/).
 Truffle and Ganache provides a development environment, test framework, and asset pipeline for blockchains.
 
 ## Clone the tutorial project
@@ -19,17 +23,18 @@ The tutorial project files can be downloaded from
 [github.com/rsksmart/truffle-integration](https://github.com/rsksmart/truffle-integration).
 
 ```shell
-git clone https://github.com/rsksmart/truffle-integration
+git clone --recursive https://github.com/rsksmart/truffle-integration
 cd truffle-integration
 
 ```
 
 ## Install Truffle
 
-Navigate to the `truffle` directory within the tutorial, and install its dependencies.
+Navigate to the `truffle` directory within the tutorial, install npm-check-updates, update dependencies versions and install them.
 
 ```shell
 cd <tutorial-root>/truffle
+npm i npm-check-updates
 npm install
 ```
 
@@ -126,12 +131,12 @@ sudo apt install libcanberra-gtk-module libcanberra-gtk3-module
 Start Ganache.
 
 ```shell
-npm start
+npm run dev
 ```
 
-Ganache is a GUI app, and starting it in this manner makes DevTools available.
+Ganache is a GUI app.
 
-![Ganache with DevTools](/dist/images/ganache-with-devtools.png)
+![Ganache](/dist/images/ganache.png)
 
 ## More on Truffle and Ganache
 

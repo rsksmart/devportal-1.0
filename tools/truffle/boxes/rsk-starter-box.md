@@ -1,11 +1,12 @@
 ---
 layout: rsk
 title: RSK starter box
+tags: truffle, ganache, quick-start, dapps, rsk-starter-box, truffle-boxes, open zeppelin, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, guides, tutorial
 ---
 
 # RSK Truffle Starter Box
 
-This box comes with everything you need to start using Truffle on [RSK Blockchain](https://developers.rsk.co/rsk/). 
+This box comes with everything you need to start using Truffle on [RSK Blockchain](https://developers.rsk.co/rsk/).
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
 
 [RSK](https://www.rsk.co/) is an open source platform for Ethereum compatible smart contracts based on the Bitcoin network.
@@ -27,7 +28,7 @@ npm install -g truffle
 
 ## Installation
 
-1. Create a new folder. 
+1. Create a new folder.
 For example, create the folder `rsk-starter`.
 Navigate to the folder in the terminal.
 
@@ -68,7 +69,7 @@ compile
 migrate
 ```
 
-6. Running contract tests. 
+6. Running contract tests.
 
 Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. You can check it out in the `test` folder.
 
@@ -80,17 +81,17 @@ test
 
 ## Using RSK networks
 
-Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configured in the `truffle-config.js` file. 
+Truffle makes developing on RSK easier because we can configure custom networks for RSK. The networks are already configured in the `truffle-config.js` file.
 
-### Setup an account & get R-BTC
+### Setup an account & get RBTC
 
 - Get an address using [these instructions](https://developers.rsk.co/rsk/architecture/account-based/ "Account Based RSK Addresses - RSK Developers Portal").
-- For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
-- For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
+- For the RSK Testnet, get tRBTC from [our faucet](https://faucet.testnet.rsk.co/).
+- For the RSK Mainnet, get RBTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
 
 ### Setup the gas price
 
-**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send R-BTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
+**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **RBTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To get the **minimumGasPrice** do the following steps:
@@ -172,4 +173,4 @@ Check out the [RSK developers portal](https://developers.rsk.co/).
 
 - **Do you have questions?**
 
-Ask in [RSK chat](https://gitter.im/rsksmart/getting-started).
+Ask in [the RSK community Slack](/slack/).

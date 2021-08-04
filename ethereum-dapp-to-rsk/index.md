@@ -1,11 +1,12 @@
 ---
 layout: rsk
 title: Bring your Ethereum token to RSK
+tags: token, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Our goal is to join forces and give options to people who believe in the power of smart contracts, and also believe in the security of Bitcoin, through RSK. Bring your Ethereum token to RSK!
 
-<a href="https://gitter.im/rsksmart/tokenbridge" target="_blank" class="next green-button">Get help</a>
+<a href="/slack/" target="_blank" class="next green-button">Get help</a>
 
 
 <div class="features-list">
@@ -89,10 +90,10 @@ Our goal is to join forces and give options to people who believe in the power o
     </ul>
 </div>
 
-<h2>Get Gas in RSK (R-BTC)</h2>
+<h2>Get Gas in RSK (RBTC)</h2>
 
 - [Faucet (testnet)](https://faucet.rsk.co/)
-- [About R-BTC](/rsk/rbtc)
+- [About RBTC](/rsk/rbtc)
 
 
 <h2>Tokens Guides</h2>

@@ -15,7 +15,7 @@ Here is a summary of the steps to be taken to build our token:
 2. Install Open Zeppelin smart contracts in the project folder;
 3. Create a wallet mnemonic;
 4. Configure Truffle to connect to RSK testnet;
-5. Get some tR-BTC from a faucet;
+5. Get some tRBTC from a faucet;
 6. Create smart contract of token;
 7. Create deploy file at Truffle;
 8. Deploy a smart contract on RSK Testnet using Truffle;
@@ -187,7 +187,7 @@ If you are using a Windows OS, I suggest to use the Git Bash terminal.
 Download the installer from the [Git official site](https://git-scm.com/).
 
 ```shell
-curl https://public-node.testnet.rsk.co/2.0.1/ \
+curl https://public-node.testnet.rsk.co/ \
   -X POST -H "Content-Type: application/json" \
   --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
@@ -256,7 +256,7 @@ const mnemonic = fs.readFileSync(".secret").toString().trim();
 module.exports = {
   networks: {
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/2.0.1/'),
+      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/'),
       network_id: 31,
       gasPrice: 0x387EE40,
       networkCheckTimeout: 1000000000
@@ -316,13 +316,13 @@ To check the balance, run this command in Truffle console:
 (await web3.eth.getBalance(account)).toString()
 ```
 
-The balance is 0 and we need some to pay for gas fees. We shall get some tR-BTC in the next step.
+The balance is 0 and we need some to pay for gas fees. We shall get some tRBTC in the next step.
 
 ![getBalance(account) 0](/assets/img/tutorials/create-a-token/image-44.png)
 
 # Testnet Faucet
 
-You can get some tR-BTC from the RSK Testnet faucet.
+You can get some tRBTC from the RSK Testnet faucet.
 
 [faucet.testnet.rsk.co](https://faucet.testnet.rsk.co/)
 
@@ -334,13 +334,13 @@ Enter your wallet address that you copied in the last step, and complete the CAP
 
 Wait a few seconds...
 
-![Received some R-BTCs](/assets/img/tutorials/create-a-token/image-19.png)
+![Received some RBTCs](/assets/img/tutorials/create-a-token/image-19.png)
 
 You can see the transaction hash:
 
 [0x16bedc1339a8fe59e270b0c6d5175851010bb93d0cf6c4974f1705b9ead7ee6e](https://explorer.testnet.rsk.co/tx/0x16bedc1339a8fe59e270b0c6d5175851010bb93d0cf6c4974f1705b9ead7ee6e)
 
-Now I have 0.05 tR-BTC!
+Now I have 0.05 tRBTC!
 
 ## Recheck balance
 
@@ -352,7 +352,7 @@ To check balance again, run this command in the Truffle console:
 
 ![getBalance](/assets/img/tutorials/create-a-token/image-20.png)
 
-Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.
+Now I have 50000000000000000, which means that I have 0.05 tRBTC with 18 decimal places of precision.
 
 # Create the smart contract
 

@@ -64,7 +64,7 @@ Find the guide on [Metamask](https://developers.rsk.co/develop/apps/wallets/meta
 
 Since RNS works on top of RSK blockchain, to pay for transactional fees you will need RBTC tokens. This is going to be used in the registration and for updating any configuration on the domain.
 
-Read the [R-BTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
+Read the [RBTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
 
 
 > If you are using the testnet you can get free funds in the [RSK faucet](https://faucet.rsk.co/)
@@ -103,7 +103,7 @@ To see how many tokens you have in your wallet you should list the RIF Token.
 4. Select RIF Token
 
     ![Setup - Nifty wallet RIF Token](/rif/rns/guide/images/setup-nifty-wallet-rif-token.png)
-    
+
     > You are also able to choose RNS Token. This represents the amount of .rsk domains owned by your wallet, you can add it too.
 
 5. Click next
@@ -114,6 +114,6 @@ Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/cus
 
 ----
 
-[Contact us on Gitter](https://gitter.im/rsksmart/rif-name-service) |
+[Contact us on the RSK community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

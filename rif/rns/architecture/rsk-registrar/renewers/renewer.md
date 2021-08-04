@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Renewer
+tags: rif, renewer, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 - RSK MainNet: [0x7a9872a7615c475b62a62b8f6e491077fb05f663](https://explorer.rsk.co/address/0x7a9872a7615c475b62a62b8f6e491077fb05f663)

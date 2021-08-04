@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Truffle Overview
+tags: truffle, ganache, quick-start, truffle-boxes, open zeppelin, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, windows, mac, linux, get-started, how-to
 ---
 
 Truffle is a world class development environment, testing framework and asset pipeline for blockchains, aiming to make life as a developer easier. With Truffle, you get:

@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: web3.personal
+tags: web3, libraries, console, rpc, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, crypto
 ---
 
 For this , it is supposed that you have an RSK node running. Be sure your node has enabled personal module in the config file. Method personal.newAccount will be used.
@@ -10,6 +11,7 @@ For this , it is supposed that you have an RSK node running. Be sure your node h
 There are two simple ways to call RPC methods:
 
 ## Using RSK console
+
 There's a interactive console that allows you to send commands to an RSK node, it's just a node.js application that can be downloaded from <a href="https://github.com/rsksmart/utilities/tree/master/console" target="_blank">here</a>.
 
 From the command line, execute node console.js -server HOST:PORT. If everything worked as expected, you should see the RSK command prompt displayed. Run this command with a passphrase that you choose as parameter:

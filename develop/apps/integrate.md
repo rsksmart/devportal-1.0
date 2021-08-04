@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: How to Integrate
+tags: apps, integrate, node, linux, windows, mac, rbtc, defi, decentralized, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets
 ---
 
 ## Step 1: Install a node
@@ -18,12 +19,12 @@ The RSK network is account-based and incorporates an optional blockchain identif
 <a href="/develop/apps/wallets" class="green-button">Create a Wallet</a>
 <br/><br/>
 
-## Step 3: Get R-BTC
+## Step 3: Get RBTC
 
-The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
+The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK.
 
-<a href="https://faucet.testnet.rsk.co" target="_blank" class="green-button">Test R-BTC</a>
-<a href="/rsk/rbtc" class="green-button">Buy R-BTC</a>
+<a href="https://faucet.testnet.rsk.co" target="_blank" class="green-button">Test RBTC</a>
+<a href="/rsk/rbtc" class="green-button">Buy RBTC</a>
 <br/><br/>
 
 ## Step 4: Connect your app

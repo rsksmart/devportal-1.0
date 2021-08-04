@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Running Configurations for Swarm
+tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Use the following cheatsheet to run Swarm with the desired capabilities.

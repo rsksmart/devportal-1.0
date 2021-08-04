@@ -1,13 +1,13 @@
 ---
 layout: rsk
 title: Using Truffle box rsk-starter-box
-tags: tutorial, rsk, truffle, truffle-box 
+tags: tutorial, rsk, truffle, truffle-box
 description: "How to use the Truffle box rsk-starter-box, which comes with everything you need to start using Truffle on RSK networks. It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy."
 render_features: "custom-terminals"
 ---
 
-In this tutorial, I will show you step-by-step how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box), 
-which comes with everything you need to start using Truffle on RSK networks. 
+In this tutorial, I will show you step-by-step how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box),
+which comes with everything you need to start using Truffle on RSK networks.
 It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy.
 
 Check out [RSK Blockchain](https://developers.rsk.co/rsk/) to learn more.
@@ -21,11 +21,11 @@ Here is a summary of the steps we will take in this tutorial:
 3. Learn how to use the Truffle development console;
 4. Create a wallet;
 5. Configure Truffle to connect to RSK network;
-6. Get R-BTC;
+6. Get RBTC;
 7. Deploy a smart contract on RSK network using Truffle;
 8. Interact with the smart contract at Truffle console.
 
-If you were redirected from the [Truffle-rsk-starter-box](https://github.com/rsksmart/rsk-starter-box) page 
+If you were redirected from the [Truffle-rsk-starter-box](https://github.com/rsksmart/rsk-starter-box) page
 and successfully executed all the instructions, you can go ahead and interact with the published smart contract:
 - [In the Truffle development console](#interact-with-a-smart-contract-in-development-console).
 - [On RSK network](#using-truffle-console-to-connect-to-the-rsk-network).
@@ -173,11 +173,11 @@ For more info: [trufflesuite.com/truffle](https://www.trufflesuite.com/truffle)
 
 # Install RSK Truffle Starter Box
 
-The truffle unbox command sets up a project based on a known template. 
-In this tutorial, we will be using the “RSK starter box” Truffle box, 
-which includes RSK network configurations and the SimpleStorage contract as an example to deploy. 
+The truffle unbox command sets up a project based on a known template.
+In this tutorial, we will be using the “RSK starter box” Truffle box,
+which includes RSK network configurations and the SimpleStorage contract as an example to deploy.
 
-## Create a new folder 
+## Create a new folder
 For example, create the folder `rsk-starter`.
 Navigate to the folder in the terminal.
 
@@ -259,7 +259,7 @@ This smart contract has:
 
 # Truffle development console
 
-Truffle has an interactive console that also spawns a development blockchain. 
+Truffle has an interactive console that also spawns a development blockchain.
 This is very useful for compiling, deploying and testing locally.
 
 Run the development console by typing the following command below into the terminal:
@@ -301,7 +301,7 @@ Mnemonic: virtual valve razor retreat either turn possible student grief engage 
 ⚠️  Important ⚠️  : This mnemonic was created for you by Truffle. It is not secure.
 Ensure you do not use it on production blockchains, or else you risk losing funds.
 
-truffle(develop)>  
+truffle(develop)>
 ```
 
 > Inside the development console we don't preface commands with `truffle`.
@@ -330,15 +330,15 @@ truffle(develop)>
 
 # Deploy a smart contract
 
-To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it. 
-This file contains instructions to deploy the smart contract. 
+To deploy a smart contract using Truffle, we need a new migrations file where Truffle will find it.
+This file contains instructions to deploy the smart contract.
 
-The `migrations` folder has JavaScript files that help you deploy contracts to the network. 
-These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time. 
-A history of previously run migrations is recorded on-chain through a special Migrations contract. 
+The `migrations` folder has JavaScript files that help you deploy contracts to the network.
+These files are responsible for staging your deployment tasks, and they're written under the assumption that your deployment needs will change over time.
+A history of previously run migrations is recorded on-chain through a special Migrations contract.
 (source: [truffle: running-migrations](https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations))
 
-Take a look in the file `2_deploy_contracts.js` located in the migrations folder. 
+Take a look in the file `2_deploy_contracts.js` located in the migrations folder.
 
 ## Migrate
 
@@ -416,7 +416,7 @@ Summary
 > Total deployments:   2
 > Final cost:          0.00642852 ETH
 
-truffle(develop)>  
+truffle(develop)>
 ```
 
 # Test a smart contract
@@ -425,7 +425,7 @@ Truffle has an automated testing framework to facilitate the testing of contract
 All test files should be located in the `test` directory.
 To learn more, go to the Truffle documentation, in the section [testing your contracts](https://www.trufflesuite.com/docs/truffle/testing/testing-your-contracts).
 
-Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract. 
+Our box also comes with the file `TestSimpleStorage.js` for testing the smart contract.
 You can check it out in the `test` folder.
 
 ```javascript
@@ -451,7 +451,7 @@ Compiling your contracts...
 
   1 passing (164ms)
 
-truffle(develop)>  
+truffle(develop)>
 ```
 
 # Interact with a smart contract in development console
@@ -471,10 +471,10 @@ Now simpleStorage variable contains an instance of the previously deployed contr
 ```windows-command-prompt
 truffle(develop)> const simpleStorage = await SimpleStorage.deployed()
 undefined
-truffle(develop)>  
+truffle(develop)>
 ```
 
-The published contract information is stored by default in the `build\contracts` folder. 
+The published contract information is stored by default in the `build\contracts` folder.
 You will find a JSON file with the same name of our smart contract.
 The section `networks` has the networks in which the smart contract was published, including its address and hash of the transaction.
 
@@ -497,7 +497,7 @@ We do not have any value stored, because we do not define anything at the moment
 ```windows-command-prompt
 truffle(develop)> simpleStorage.get().then(bn => bn.toNumber())
 0
-truffle(develop)>  
+truffle(develop)>
 ```
 
 ## Set value
@@ -534,7 +534,7 @@ truffle(develop)> simpleStorage.set(10)
       '0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000',
      rawLogs: [] },
   logs: [] }
-truffle(develop)> 
+truffle(develop)>
 ```
 
 This is a transaction receipt, generated by the blockchain nodes, in response to the transaction request.
@@ -552,7 +552,7 @@ The value now should be `10`!
 ```windows-command-prompt
 truffle(develop)> simpleStorage.get().then(bn => bn.toNumber())
 10
-truffle(develop)> 
+truffle(develop)>
 ```
 
 # Create a wallet
@@ -561,8 +561,8 @@ The best way to create a wallet is from a mnemonic, using the pattern defined at
 
 There are a few ways to do this.
 
-One is to create using a web wallet, 
-such as [Metamask](https://metamask.io/) 
+One is to create using a web wallet,
+such as [Metamask](https://metamask.io/)
 or [Nifty](https://www.poa.network/for-users/nifty-wallet) wallet.
 These wallets generate the mnemonic for you.
 
@@ -600,7 +600,7 @@ The file is named `truffle-config.js` and it is located in the root folder of yo
 
 ## Update mnemonic
 
-In `truffle-config.js`, locate this line: 
+In `truffle-config.js`, locate this line:
 
 ```javascript
 const mnemonic = 'A_MNEMONIC';
@@ -618,7 +618,7 @@ const mnemonic = 'energy knife ice mouse merge track cram brown decorate atom ru
 
 ## HD wallet provider
 
-To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. 
+To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally.
 We are using `@truffle/hdwallet-provider`. It was installed with the box.
 
 Please be aware that we are using `HDWalletProvider` with RSK Networks derivations path:
@@ -629,10 +629,10 @@ For more information, check [RSKIP57](https://github.com/rsksmart/RSKIPs/blob/ma
 
 ## Get the current gas price
 
-**Gas** is the internal pricing for running a transaction or contract. 
-When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. 
-That payment is calculated as gas. 
-In RSK, this is paid in **R-BTC**.
+**Gas** is the internal pricing for running a transaction or contract.
+When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation.
+That payment is calculated as gas.
+In RSK, this is paid in **RBTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To get the **minimumGasPrice** do the following steps:
@@ -687,7 +687,7 @@ I will connect to the Testnet network:
 
 ```windows-command-prompt
 C:\RSK\rsk-starter>truffle console --network testnet
-truffle(testnet)>  
+truffle(testnet)>
 ```
 
 ## Get your accounts
@@ -729,7 +729,7 @@ accounts[1]
 
 ![accounts](/assets/img/tutorials/rsk-starter-box/image-10.png)
 
-In my example, the account[0] is `0xCd70794c2F3C657310eF13b6FF3Ec2d112513B39`. 
+In my example, the account[0] is `0xCd70794c2F3C657310eF13b6FF3Ec2d112513B39`.
 
 ## Check balance
 
@@ -742,12 +742,12 @@ To check the balance of account[0], for example, run this command in Truffle con
 ```windows-command-prompt
 truffle(testnet)> (await web3.eth.getBalance(accounts[0])).toString()
 '0'
-truffle(testnet)>  
+truffle(testnet)>
 ```
 
-The balance is 0 and we need some tR-BTC to pay gas fees,
+The balance is 0 and we need some tRBTC to pay gas fees,
 which will be used to publish smart contracts and interact with them.
-We shall obtain some tR-BTC in the next step.
+We shall obtain some tRBTC in the next step.
 
 ## Exit Truffle console
 
@@ -763,17 +763,17 @@ truffle(testnet)> .exit
 C:\RSK\rsk-starter>
 ```
 
-# Get R-BTC
+# Get RBTC
 
-The Smart Bitcoin (R-BTC) is the token used to pay for the execution of transactions in RSK.
+The Smart Bitcoin (RBTC) is the token used to pay for the execution of transactions in RSK.
 
 **Mainnet**
 
-For the RSK Mainnet, get R-BTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
+For the RSK Mainnet, get RBTC from [an exchange](https://www.rsk.co/#exchanges-rsk).
 
 **Testnet**
 
-For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
+For the RSK Testnet, get tRBTC from [our faucet](https://faucet.testnet.rsk.co/).
 
 ![faucet.testnet.rsk.co](/assets/img/tutorials/rsk-starter-box/image-12.png)
 
@@ -781,7 +781,7 @@ Enter your wallet address and pass the CAPTCHA.
 
 Wait a few seconds…
 
-![Received some R-BTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
+![Received some RBTCs](/assets/img/tutorials/rsk-starter-box/image-13.png)
 
 You can see the transaction hash:
 [`0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95`](https://explorer.testnet.rsk.co/tx/0xe7a25985f019482d362a3be908f1c0b3dee612fcc78716b6a341d8ad6138ea95)
@@ -798,7 +798,7 @@ For my example on RSK Testnet using account `0xCd70794c2F3C657310eF13b6FF3Ec2d11
 
 ![getBalance](/assets/img/tutorials/rsk-starter-box/image-11.png)
 
-Great! Now I have 50000000000000000, which means that I have 0.05 tR-BTC with 18 decimal places of precision.
+Great! Now I have 50000000000000000, which means that I have 0.05 tRBTC with 18 decimal places of precision.
 
 # Deploy the smart contract on RSK network
 
@@ -894,8 +894,8 @@ Congratulations!
 
 `Simple storage` is now published on the RSK network.
 
-> Make sure you have enough R-BTC to deploy it.
-    
+> Make sure you have enough RBTC to deploy it.
+
 # Interact with a smart contract on RSK network
 
 Interact with the simple storage smart contract using Truffle console connected to an RSK network.
@@ -915,7 +915,7 @@ const simpleStorage = await SimpleStorage.deployed()
 ```windows-command-prompt
 truffle(testnet)> const simpleStorage = await SimpleStorage.deployed()
 undefined
-truffle(testnet)> 
+truffle(testnet)>
 ```
 
 Now simpleStorage variable contains an instance of the previously deployed contract.
@@ -991,19 +991,19 @@ The value now should be `10`!
 ```windows-command-prompt
 truffle(testnet)> simpleStorage.get().then(bn => bn.toNumber())
 10
-truffle(testnet)> 
+truffle(testnet)>
 ```
 
 # Final considerations
 
-In this tutorial you learned how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box), 
-which comes with everything you need to start using Truffle on RSK networks. 
+In this tutorial you learned how to use the Truffle box [rsk-starter-box](https://github.com/rsksmart/rsk-starter-box),
+which comes with everything you need to start using Truffle on RSK networks.
 
 Check out [RSK Blockchain](https://developers.rsk.co/rsk/) for more details about us.
 
-I hope this tutorial has been helpful and I'd appreciate your feedback. 
+I hope this tutorial has been helpful and I'd appreciate your feedback.
 Share it if you like it :)
 
 **Do you have questions?**
 
-Ask in [RSK chat](https://gitter.im/rsksmart/getting-started)
+Ask in [the RSK community Slack](/slack/)

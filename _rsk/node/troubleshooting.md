@@ -8,7 +8,7 @@ collection_order: 2900
 
 This section explains how to solve some known or frequently encountered issues.
 
-If what you need is not in this section, **please contact us** without hesitation through our [Gitter channel](https://gitter.im/rsksmart/rskj). We will be happy to help you!
+If what you need is not in this section, **please contact us** without hesitation through our [community Slack](/slack/). We will be happy to help you!
 
 ## Index
 
@@ -16,8 +16,8 @@ If what you need is not in this section, **please contact us** without hesitatio
 - ['I don't see the logs'](#i-dont-see-the-logs)
 - ['Plugin with id 'witness' not found'](#plugin-with-id-witness-not-found)
 - ['Truffle doesn't seem to work connected to RSK'](#truffle-doesnt-seem-to-work-connected-to-rsk)
-- ['The node takes up too much space'](#the-node-takes-up-too-much-space)
 - ['Can't get public IP'](#cant-get-public-ip)
+- ['Corrupted blocks after hard fork'](#rewind-blocks)
 
 ## Sections
 
@@ -83,37 +83,6 @@ module.exports = {
 };
 ```
 
-### The node takes up too much space
-
-The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized. This process removes useless data over a determined amount of blocks processed.
-
-To enable prune service in your node [override your configuration](/rsk/node/configure). These are the recommended parameters:
-
-```
-prune {
-    # prune service could be enabled or not
-    # values: [true/false]
-    # default: false
-    enabled = true
-
-    # Number of blocks to process
-    blocks {
-        # Number of blocks to copy in each prune run
-        # default: 5000
-        toCopy = 5000
-
-        # Number of blocks to wait to run prune again
-        # default: 10000
-        toWait = 10000
-
-        # Number of blocks to suspend blockchain process
-        # in order to avoid forks
-        # default: 100
-        toAvoidForks = 100
-    }
-}
-```
-
 ### Can't get public IP
 
 If you get the error:
@@ -122,3 +91,15 @@ If you get the error:
 To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, simply [search for it](https://www.google.com/search?q=what's+my+IP+address)).
 
 [This page](/rsk/node/configure) will show you how to change a node's configuration file.
+
+### Rewind Blocks
+
+This tool should be used in a scenario where an RSK node processes blocks that are corrupted or invalid, for example after a hard fork. It allows one to remove such blocks and start from a previously known state. It does so by removing the blocks with block number higher than the block number parameter command line argument.
+
+> Note: The node must be turned off before the rewind, and restarted after.
+
+Example:
+
+`java -cp rsk-core-<VERSION>.jar co.rsk.cli.tools.RewindBlocks 1000000`
+
+The above command removes the blocks with number 1000001 or higher.

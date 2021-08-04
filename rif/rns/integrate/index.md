@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RNS Integration guidelines
-tags: rif rns integrate
+tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 description: Learn how to integrate RNS with your wallet or dApp.
 tags: rns, javascript, dapp, wallet, integrate
 ---
@@ -58,4 +58,4 @@ npm i web3 @rsksmart/rns
 RNS JavaScript library related links:
 - Read the [docs](https://developers.rsk.co/rif/rns/libs/javascript)
 - Collaborate in [Github](https://github.com/rnsdomains/rns-js)
-- Contact us via [Gitter](https://gitter.im/rsksmart/rif-name-service)
+- Contact us via [the RSK community Slack](/slack/)

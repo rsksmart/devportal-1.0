@@ -5,7 +5,7 @@ ruby "2.6.3"
 
 source "https://rubygems.org"
 
-gem "kramdown", "2.3.0"
+gem "kramdown", "2.3.1"
 gem "rouge", "3.19.0"
 gem "faraday", "0.17.1"
 gem "wdm", "0.1.1" if Gem.win_platform?

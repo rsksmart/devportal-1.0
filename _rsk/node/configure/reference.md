@@ -7,6 +7,8 @@ collection_order: 2410
 render_features: 'tables-with-borders'
 ---
 
+See [CLI flags](../cli/) for command line flag options.
+
 ## Advanced Configuration
 
 For advanced configuration requirements, please refer to this
@@ -40,7 +42,6 @@ The following detail the most commonly used configuration fields parsed by RSKj.
 - [`hello.phrase`](#hellophrase)
 - [`details.inmemory.storage.limit`](#detailsinmemorystoragelimit)
 - [`solc.path`](#solcpath)
-- [`prune`](#prune)
 
 ## peer
 
@@ -397,37 +398,3 @@ only deltas are saved.
 The path to the [Solidity](http://solidity.readthedocs.io) compiler.
 This is set when you may want to use the node to compile your smart contracts.
 If you don't have Solidity installed, you can use `/bin/false` as value.
-
-## prune
-
-The prune service is a process that runs over the node storage to lighten the space it needs to be synchronized.
-This process removes useless data over a determined amount of blocks processed.
-
-To enable the prune service in your node, override your configuration.
-
-These are the recommended parameters:
-
-```
-prune {
-    # prune service could be enabled or not
-    # values: [true/false]
-    # default: false
-    enabled = true
-
-    # Number of blocks to process
-    blocks {
-        # Number of blocks to copy in each prune run
-        # default: 5000
-        toCopy = 5000
-
-        # Number of blocks to wait to run prune again
-        # default: 10000
-        toWait = 10000
-
-        # Number of blocks to suspend blockchain process
-        # in order to avoid forks
-        # default: 100
-        toAvoidForks = 100
-    }
-}
-```

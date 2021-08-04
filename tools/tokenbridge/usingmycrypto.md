@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Interaction guide using MyCrypto
+tags: erc20, bridge, mycrypto, defi, node, rbtc, ganache, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts
 ---
 
 This guide describes the necessary steps to perform a token transfer between two blockchain networks, which we will refer to to as **Mainchain** and **Sidechain**, through interaction with special contracts that make up a subsystem called **TokenBridge**.

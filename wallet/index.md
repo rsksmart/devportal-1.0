@@ -1,11 +1,12 @@
 ---
 layout: rsk
 title: Wallets
+tags: rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Use a wallet
 
-Learn how to use a Wallet integrated with [R-BTC](/rsk/rbtc/) and [RIF](/rif/token) tokens.
+Learn how to use a Wallet integrated with [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens.
 
 <a href="/wallet/use" class="green-button">Use</a>
 

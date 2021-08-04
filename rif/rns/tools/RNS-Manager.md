@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: RNS Manager
+tags: rif, rns, rif-name-service, manager, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 The [RNS Manager](https://manager.rns.rifos.org) is a simple tool that interacts with RNS Smart Contracts via Metamask. It has the following methods:

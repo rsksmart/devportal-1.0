@@ -2,6 +2,7 @@
 layout: rsk
 title: Blockmason
 description: "How to use RSK with Blockmason Link, with an example of deploying a smart contract to the Testnet"
+tags: block-mason, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Using RSK with Blockmason Link
@@ -12,7 +13,7 @@ In this onboarding example, we will deploy a smart contract to the RSK Testnet.
 
 ### Setup
 
-You can obtain some Testnet R-BTC tokens from [RSK Testnet Faucet](https://faucet.testnet.rsk.co/) to be sent to your Link default account address:
+You can obtain some Testnet RBTC tokens from [RSK Testnet Faucet](https://faucet.testnet.rsk.co/) to be sent to your Link default account address:
 ![RSK Testnet Faucet](/assets/img/tutorials/using-blockmason/testnet_faucet.png)
 
 ### API project setup in Link
@@ -25,7 +26,7 @@ You can obtain some Testnet R-BTC tokens from [RSK Testnet Faucet](https://fauce
 
 ![New Contract Link](/assets/img/tutorials/using-blockmason/new_contract_link.png)
 
-3\. Under *`Which Ethereum account would you like to use?`*, use the *`Default Account`*. This is the account we seeded with test R-BTC tokens as part of the setup.
+3\. Under *`Which Ethereum account would you like to use?`*, use the *`Default Account`*. This is the account we seeded with test RBTC tokens as part of the setup.
 
 ![Default Link Account](/assets/img/tutorials/using-blockmason/default_account_link.png)
 
@@ -96,5 +97,5 @@ A simple JavaScript file using the Link JavaScript SDK in a Node environment can
 ### Deploying to RSK Mainnet
 
 If you want to deploy on the RSK Mainnet, just follow the same steps above with the following differences:
-1. Acquire mainnet [R-BTC tokens](/rsk/rbtc) to send to your Link default account wallet
+1. Acquire mainnet [RBTC tokens](/rsk/rbtc) to send to your Link default account wallet
 2. Use the use the appropriate [RSK Network public nodes RPC URL](/rsk/public-nodes) for Mainnet.

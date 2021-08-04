@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RNS Solidity artifacts - String Resolver
-tags: rns, artifacts, resolvers, string resolver
+tags: rif, rns, rif-name-service, artifacts, javascript,  domains, address, integrate, resolver, string-resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 String Resolver provides an RNS domain of a string resolution.

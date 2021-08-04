@@ -66,15 +66,15 @@ First ensure you are in a new and empty directory.
 
 ## RSK
 
-### Setup an account & get R-BTC
+### Setup an account & get RBTC
 
 - Get an address using [these instructions](https://developers.rsk.co/rsk/architecture/account-based/ "Account Based RSK Addresses - RSK Developers Portal").
-- For the RSK Testnet, get tR-BTC from [our faucet](https://faucet.testnet.rsk.co/).
-- For the RSK Mainnet, get R-BTC from [an exchange](https://developers.rsk.co/rsk/rbtc/).
+- For the RSK Testnet, get tRBTC from [our faucet](https://faucet.testnet.rsk.co/).
+- For the RSK Mainnet, get RBTC from [an exchange](https://developers.rsk.co/rsk/rbtc/).
 
 ### Setup the gas price
 
-**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **R-BTC**.
+**Gas** is the internal pricing for running a transaction or contract. When you send tokens, interact with a contract, send RBTC, or do anything else on the blockchain, you must pay for that computation. That payment is calculated as gas. In RSK, this is paid in **RBTC**.
 The **minimumGasPrice** is written in the block header by miners and establishes the minimum gas price that a transaction should have in order to be included in that block.
 
 To get the **minimumGasPrice** do the following steps:

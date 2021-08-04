@@ -1,10 +1,11 @@
 ---
 layout: rsk
 title: RIF Storage Pinning service
+tags: rif, rif-storage, rif-pinning, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## RIF Storage Pinning service
-The RIF Storage Pinning service, offered together with the RIF Marketplace, is a service that allows Storage Providers to list their offers and enter in storage agreements with consumers, which can pay using different methods such as R-BTC or RIF tokens.
+The RIF Storage Pinning service, offered together with the RIF Marketplace, is a service that allows Storage Providers to list their offers and enter in storage agreements with consumers, which can pay using different methods such as RBTC or RIF tokens.
 
 ## Repositories
  - [Pinning Service](https://github.com/rsksmart/rif-storage-pinner): A nodejs service which listens on Providers offer and pins/unpins files from Provider running IPFS node
