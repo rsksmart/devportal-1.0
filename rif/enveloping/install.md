@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/enveloping/requirements
+permalink: /rif/enveloping/install
 redirect: guides/rif-enveloping/install
 ---

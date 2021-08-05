@@ -1,5 +1,5 @@
 ---
 layout: redirect
 permalink: /rif/enveloping/dev-setup/
-redirect: /rif/enveloping/requirements/
+redirect: guides/rif-enveloping/install/
 ---

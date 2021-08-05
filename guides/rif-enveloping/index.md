@@ -7,6 +7,7 @@ tags: rif, enveloping, rsk, gas station network, gsn, defi, user-guide
 This guide encompasses technical details for RIF Enveloping service operations.
 
 - [**Install**](/guides/rif-enveloping/install/)
+- [**Launch**](/guides/rif-enveloping/launch/)
 - [**Develop**](/guides/rif-enveloping/develop/)
     - [Initializing the project](/guides/rif-enveloping/develop/#initializing-the-project)
     - [Project structure](/guides/rif-enveloping/develop/#project-structure)
