@@ -93,7 +93,7 @@ or use the exchanges listed below👇 to obtain RBTC.
 <div class="owl-carousel owl-theme">
     <div class="item">
         <a href="/rsk/architecture/powpeg/" target="blank">
-        <img src="https://www.rsk.co/openfinance/img/logos/logo_powpeg.svg" alt="Powpeg">
+        <img src="/assets/img/rsk/exchanges/logo_powpeg.png" alt="Powpeg">
         <a class="company-name" href="/rsk/architecture/powpeg/" target="blank">Powpeg</a>
     </a>
     </div>
