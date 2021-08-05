@@ -22,6 +22,6 @@ This guide encompasses technical details for RIF Enveloping service operations.
 - [**Create a Smart Wallet**](/guides/rif-enveloping/create-smart-wallet/)
     - [Deploy a Smart Wallet](/guides/rif-enveloping/create-smart-wallet/#deploy-a-smart-wallet)
 
-For introduction and high-level information about Enveloping, including
+For general information about Enveloping, including
 its design, architecture, and specifications, please refer to the
 [RIF Enveloping documentation](/rif/enveloping/).
