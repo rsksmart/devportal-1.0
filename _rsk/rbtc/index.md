@@ -152,9 +152,9 @@ or use the exchanges listed below👇 to obtain RBTC.
     </a>
     </div>
     <div class="item">
-        <a href="https://www.kucoin.com/" target="blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/logo_kucoin.png" alt="kucoin">
-        <a class="company-name" href="https://www.kucoin.com/" target="blank">Kucoin</a>
+        <a href="/rsk/architecture/powpeg/" target="blank">
+        <img src="https://www.rsk.co/openfinance/img/logos/logo_powpeg.svg" alt="powpeg">
+        <a class="company-name" href="/rsk/architecture/powpeg/" target="blank">Powpeg</a>
     </a>
     </div>
     <div class="item">
@@ -185,6 +185,12 @@ or use the exchanges listed below👇 to obtain RBTC.
         <a href="https://exolix.com/" target="blank">
         <img src="/assets/img/rif/exchanges/exolix_logo.png" alt="Exolix">
         <a class="company-name" href="https://exolix.com/" target="blank">Exolix</a>
+    </a>
+    </div>
+     <div class="item">
+        <a href="https://defiantapp.tech/home/" target="blank">
+        <img src="/assets/img/solutions/defiant/defiant-logo.png" alt="defiant">
+        <a class="company-name" href="https://defiantapp.tech/home/" target="blank">Defiant</a>
     </a>
     </div>
 </div>
