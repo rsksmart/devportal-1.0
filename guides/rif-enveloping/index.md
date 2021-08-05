@@ -2,13 +2,11 @@
 layout: rsk
 title: RIF Enveloping User Guide
 tags: rif, enveloping, rsk, gas station network, gsn, defi, user-guide
-description: "A Secure sponsored transaction system to enable users to pay fees using ERC-20 tokens."
 ---
 
-This guide details each operation available when using the Enveloping service, see;
+This guide encompasses technical details for RIF Enveloping service operations.
 
-- [**Introduction**](/rif/enveloping/intro/)
-- [**Architecture**](/rif/enveloping/architecture/)
+- [**Install**](/guides/rif-enveloping/install/)
 - [**Develop**](/guides/rif-enveloping/develop/)
     - [Initializing the project](/guides/rif-enveloping/develop/#initializing-the-project)
     - [Project structure](/guides/rif-enveloping/develop/#project-structure)
@@ -23,6 +21,6 @@ This guide details each operation available when using the Enveloping service, s
 - [**Create a Smart Wallet**](/guides/rif-enveloping/create-smart-wallet/)
     - [Deploy a Smart Wallet](/guides/rif-enveloping/create-smart-wallet/#deploy-a-smart-wallet)
 
-For detailed information about Enveloping, including
-its design, architecture, and specifications, see the
-[Enveloping documentation](/rif/enveloping/).
+For introduction and high-level information about Enveloping, including
+its design, architecture, and specifications, please refer to the
+[RIF Enveloping documentation](/rif/enveloping/).

@@ -8,14 +8,14 @@ tags: rif, enveloping, relay, envelope, gas station network, gsn, changelog, ver
 
 RIF Enveloping takes its initial inspiration from the [Gas Station Network (GSN) project](https://github.com/opengsn/gsn). GSN is a decentralized system that abstracts away gas used to pay transaction fees in order to minimize onboarding and UX friction for dApps. 
 
-# Version 1 (V1)
+# Version 1
 
 RIF Enveloping V1 started as a fork of GSN with two goals in mind:
 
 - Be compatible with existing and future smart contracts without requiring such contracts to be adapted to work with RIF Enveloping.
 - Be as cost effective as possible.
 
-# Version 2 (V2)
+# Version 2
 
 ## Overview
 
