@@ -41,3 +41,7 @@ Use the suite of SDKs to:
 RSK Testnet:
 - `GnosisSafe`: [`0xffd41b816f2821e579b4da85c7352bf4f17e4fa5`](https://explorer.testnet.rsk.co/address/0xffd41b816f2821e579b4da85c7352bf4f17e4fa5)
 - `GnosisSafeProxyFactory`: [`0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a`](https://explorer.testnet.rsk.co/address/0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a)
+
+RSK Mainnet:
+- `GnosisSafe`: [`0xC6cFa90Ff601D6AAC45D8dcF194cf38B91aCa368`](https://explorer.rsk.co/address/0xC6cFa90Ff601D6AAC45D8dcF194cf38B91aCa368)
+- `GnosisSafeProxyFactory`: [`0x4b1Af52EA200BAEbF79450DBC996573A7b75f65A`](https://explorer.rsk.co/address/0x4b1Af52EA200BAEbF79450DBC996573A7b75f65A)

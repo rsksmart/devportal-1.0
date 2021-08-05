@@ -26,7 +26,11 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
 - A) Contract addresses deployed on RSK
   * Developers interacting with the RSK networks can use the address of the contracts already deployed
     * ### MAINNET
-      **TBD**
+    
+      | Contract          | Address                                    |
+      |-------------------|--------------------------------------------|
+      | SafeSingleton       | `0xc6cfa90ff601d6aac45d8dcf194cf38b91aca368` |
+      | ProxyFactory        | `0x4b1af52ea200baebf79450dbc996573a7b75f65a` |
     * ### TESTNET
 
       | Contract          | Address                                    |
