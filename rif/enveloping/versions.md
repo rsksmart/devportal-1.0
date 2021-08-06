@@ -1,10 +1,10 @@
 ---
 layout: rsk
-title: RIF Enveloping - Versions
-tags: rif, enveloping, relay, envelope, gas station network, gsn, changelog, versions
+title: RIF Enveloping Versions
+tags: rif, enveloping, envelope, relay, gas station network, gsn, versions, changelog 
 ---
 
-RIF Enveloping takes its inspiration from the [Gas Station Network (GSN) project](https://github.com/opengsn/gsn). GSN is a decentralized system that abstracts away gas used to pay transaction fees in order to minimize onboarding and UX friction for dApps. 
+The first iteration of RIF Enveloping was based on the great work done by the [Gas Station Network team](https://www.opengsn.org/).
 
 # Version 1
 
@@ -29,13 +29,13 @@ It is important to recall that - as a security measure - version 1 contracts dep
 
 ## Details
 
-* RelayHub contract doesn't receive payments, the payment for the service (in tokens) is sent directly to the worker relaying the transaction on behalf of the user.
+* RelayHub contract no longer receives payments, the payment for the service (in tokens) is now sent directly to the worker relaying the transaction on behalf of the user.
 * RelayHub contract now handles relay manager staking.
 * Gas estimation improvements:
-    * Gas overhead removed from RelayHub, there are no more validations against hardcoded values
-    * Now the gas and token gas fields from the request can be left undefined, and in that case they will be automatically estimated by the Relay Client.
+    * Gas overhead removed from RelayHub; there are no more validations against hardcoded values.
+    * The gas and token gas fields from the request can now be left undefined, and in that case they will automatically br estimated by the Relay Client.
     * The maximum gas estimation in the Relay Server is more precise now.
-    * A new utility function is available to estimate the maximum gas a relay transaction would consume, based in a linear fit estimation. This can be used in applications that doesn't want to sign a payload each time they need an approximation of the cost of relaying the transaction.
+    * A new utility function is available to estimate the maximum gas a relay transaction would consume, based in a linear fit estimation. This can be used in applications that don't want to sign a payload each time they need an approximation of the cost of relaying the transaction.
 * Paymaster verifications are done off-chain to optimize gas costs, thus the paymasters are now called Verifiers and they are not part of the on-chain relay flow nor do they handle payments at all.
 * Big gas cost optimization.
 * Security issues fixed.
