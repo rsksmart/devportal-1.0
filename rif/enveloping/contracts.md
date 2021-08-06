@@ -2,6 +2,7 @@
 layout: rsk
 title: RIF Enveloping - Contracts
 tags: rif, enveloping, relay, rsk, envelope, mainnet, testnet, contract
+permalink: /rif/enveloping/contracts/
 render_features: 'tables-with-borders'
 ---
 

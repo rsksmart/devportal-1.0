@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Enveloping Launch
 tags: rif, enveloping, envelope, relay, user, guide, launch
-permalink: /guides/rif-enveloping/install/
+permalink: /guides/rif-enveloping/launch/
 ---
 
 ## Run the Relay Server

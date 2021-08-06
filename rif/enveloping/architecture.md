@@ -1,7 +1,8 @@
 ---
 layout: rsk
-title: RIF Enveloping - Architecture
-tags: rif, enveloping, rsk, envelope, gas station network, gsn, architecture
+title: RIF Enveloping Architecture
+tags: rif, enveloping, relay, rsk, envelope, architecture
+permalink: /rif/enveloping/architecture/
 ---
 
 
