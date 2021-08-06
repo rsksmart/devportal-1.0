@@ -45,12 +45,18 @@ import { providers } from "ethers";
 const provider = new providers.Web3Provider(web3.currentProvider);
 
 // Creates instance with provider, you can execute read-only operations
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
+const rifScheduler = new RifScheduler({
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: provider
+});
 
 const signer = provider.getSigner();
 
 // Creates instance with signer, you can execute any kind of operation
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+const rifScheduler = new RifScheduler({
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
+});
 ```
 
 #### to connect the SDK to RPC / Ganache
