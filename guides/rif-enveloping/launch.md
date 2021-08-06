@@ -1,10 +1,11 @@
 ---
 layout: rsk
-title: RIF Enveloping - Launch
-tags: rif, enveloping, rsk, envelope, gas station network, gsn, launch
+title: RIF Enveloping Launch
+tags: rif, enveloping, envelope, relay, user, guide, launch
+permalink: /guides/rif-enveloping/install/
 ---
 
-### Run the Relay Server
+## Run the Relay Server
 To start the relay server, you need to configure the json config file located at `<PROJECT_ROOT>/jsrelay/config/relay-config.json` which has this structure:
    
 ```

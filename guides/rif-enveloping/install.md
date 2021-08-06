@@ -1,28 +1,29 @@
 ---
 layout: rsk
-title: RIF Enveloping - Installation And Launch
-tags: rif, enveloping, rsk, envelope, gas station network, gsn, install, installation
+title: RIF Enveloping Installation
+tags: rif, enveloping, envelope, relay, user, guide, install
+permalink: /guides/rif-enveloping/install/
 ---
 
-### Requirements
+## Requirements
 
-#### RSK Node
+### RSK Node
 
 You need to have a running RSK node version [IRIS-3.0.0](https://github.com/rsksmart/rskj/releases) or higher.
 
-#### Yarn
+### Yarn
 
 We use `yarn` version `v1.22.0` for package management. 
 
 Installation instructions at Yarn's [site](https://yarnpkg.com/getting-started/install). Check the install by running `yarn version`.
 
-#### Node & NPM
+### Node & NPM
 
 We use `Node` version `v12.18.3`.
 
 Installation instructions at Node's [site](https://nodejs.org/en/). Check the install by running `node -v`.
 
-#### Npx & Truffle
+### Npx & Truffle
 
 An important tool we use for interacting with the blockchain is `Truffle` version `v5.0.33`.
 
@@ -34,13 +35,13 @@ Checking the install by running `npx truffle version`.
 
 The configuration file is `truffle.js`. Please see Truffle's documentation for details about this file and how to use it.
 
-#### Docker
+### Docker
 
 We recommend following the official [documentation](https://docs.docker.com/get-docker/) for installing Docker and keeping it updated.
 
 You'll need to install both `docker` as well as `docker-compose`.
 
-##### Running on macOS
+#### Running on macOS
 To run the project using Docker on a Mac, please follow these steps or the scripts and web apps will not work. 
 
 - Patch `readlink`
@@ -53,7 +54,7 @@ ln -s /usr/local/bin/greadlink /usr/local/bin/readlink
 
 After this step, you must make sure that your `PATH` variable gives priority to `/usr/local/bin` over `/usr/bin`. You can check this with `which readlink`, which should output `/usr/local/bin/readlink`. Alternatively try executing `readlink -f .`, if it works you're ok.
 
-### Building the project
+## Building the project
 
 Clone the project. Then run the following from the project's 
 root directory to build it.
@@ -63,7 +64,7 @@ yarn install
 yarn prepare
 ```
 
-### Deploy contracts Locally
+## Deploy contracts Locally
 
 We'll use `truffle` for deploying contracts. Have an RSK node up and running in regtest mode and then execute the following on the project's root folder:
 
@@ -93,9 +94,7 @@ terminal, something similar to this:
 
 You'll need to save this summary for later use.
 
-
-### Deploy contracts On Testnet
-
+## Deploy contracts On Testnet
 
 We'll use `truffle` for deploying contracts.
 
