@@ -1,8 +1,10 @@
 ---
 layout: rsk
-title: Develop
-tags: rif, enveloping, rsk, gas station network, gsn, defi, develop
+title: RIF Enveloping Development
+tags: rif, enveloping, envelope, relay, user, guide, develop
+permalink: /guides/rif-enveloping/develop/
 ---
+
 
 ## Initializing the project
 
