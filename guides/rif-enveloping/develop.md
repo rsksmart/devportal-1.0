@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RIF Enveloping Development
+title: RIF Enveloping Develop
 tags: rif, enveloping, envelope, relay, user, guide, develop
 permalink: /guides/rif-enveloping/develop/
 ---
