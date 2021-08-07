@@ -34,8 +34,6 @@ Use [`0x0372F6F8C7b2353b546F842Da0C44749664d1203`](https://explorer.testnet.rsk.
 
 First, you will need an `ethers` `provider` or `signer` instance.
 
-In order to create an instance of `RifScheduler` you will need an ethers provider or signer.
-
 Using a `provider` will only allow _read-only_ operations, such as `getPlan`. Using a `signer` will allow all operations, such as `purchasePlan`, `schedule`, etc.
 
 #### For example, to connect the SDK to Metamask
@@ -47,12 +45,18 @@ import { providers } from "ethers";
 const provider = new providers.Web3Provider(web3.currentProvider);
 
 // Creates instance with provider, you can execute read-only operations
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
+const rifScheduler = new RifScheduler({
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: provider
+});
 
 const signer = provider.getSigner();
 
 // Creates instance with signer, you can execute any kind of operation
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+const rifScheduler = new RifScheduler({
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
+});
 ```
 
 #### to connect the SDK to RPC / Ganache
@@ -66,12 +70,18 @@ const url = "http://localhost:8545";
 const provider = new providers.JsonRpcProvider(url);
 
 // Creates instance with provider, you can execute read-only operations
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
+const rifScheduler = new RifScheduler({
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: provider
+});
 
 const signer = provider.getSigner();
 
 // Creates instance with signer, you can execute any kind of operation
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+const rifScheduler = new RifScheduler({
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
+});
 ```
 
 What you can do with this sdk?

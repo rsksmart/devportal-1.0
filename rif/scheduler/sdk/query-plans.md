@@ -12,16 +12,22 @@ First of all, you need to get a plan from the service provider, which will give 
 ```javascript
 import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
 
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
+const config = {
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
+}
+
+const rifScheduler = new RIFScheduler(config);
 
 const planIndex = 0;
-const plan = await rifScheduler.getPlan(planIndex);
+const plan = rifScheduler.getPlan(planIndex)
 
 //  {
 //    pricePerExecution: 10000000000000;
 //    window: 300;
-//    token: 0x...;
+//    token: Token;
 //    active: true;
+//    ...
 //  }
 ```
 
@@ -32,28 +38,28 @@ If you want to obtain all plans from the service provider, you must first get th
 ```javascript
 import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
 
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, provider);
-
-const plansCount = await rifScheduler.getPlansCount();
-
-let allPlans = []
-
-for (let i = 0; i < plansCount; i++) {
-    const plan = await rifScheduler.getPlan(i);
-    allPlans.push(plan)
+const config = {
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
 }
+
+const rifScheduler = new RIFScheduler(config);
+
+const plans = await rifScheduler.getPlans();
 
 //  [{
 //    pricePerExecution: 10000000000000;
 //    window: 300;
-//    token: 0x...;
+//    token: Token;
 //    active: true;
+//    ...
 //  },
 //  {
 //    pricePerExecution: 50000000000000;
 //    window: 600;
-//    token: 0x...;
+//    token: Token;
 //    active: true;
+//    ...
 //  }]
 ```
 
