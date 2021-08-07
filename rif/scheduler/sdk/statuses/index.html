@@ -1089,8 +1089,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-10 13:30:55 +0000T00:00:00.000Z">2021-06-10</time> | -->
-     1' to read |
+    <!--time role="presentation" datetime="2021-08-06 20:46:20 +0000T00:00:00.000Z">2021-08-06</time> | -->
+     2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/statuses.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2022,16 +2022,23 @@
 
                   <h3 id="verifying-the-status-of-a-scheduled-execution">Verifying the status of a scheduled execution</h3>
 
-<p>You can either provide the execution object (using the <code class="highlighter-rouge">executionFactory</code> function) or the <code class="highlighter-rouge">executionId</code> if you have one already.</p>
+<p>You can either get the execution by id or use any Execution instance if you have one already.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">}</span>
 
-<span class="kd">const</span> <span class="nx">state</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getExecutionState</span><span class="p">(</span><span class="nx">execution</span> <span class="o">|</span> <span class="nx">executionId</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">execution</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getExecution</span><span class="p">(</span><span class="nx">executionId</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">status</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">getState</span><span class="p">()</span>
 
 <span class="c1">// enum ExecutionState {</span>
-<span class="c1">//   NonExistent = 0,</span>
+<span class="c1">//   NotScheduled = 0,</span>
 <span class="c1">//   Scheduled = 1,</span>
 <span class="c1">//   ExecutionSuccessful = 2,</span>
 <span class="c1">//   ExecutionFailed = 3,</span>

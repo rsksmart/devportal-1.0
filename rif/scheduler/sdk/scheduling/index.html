@@ -1089,8 +1089,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-07 18:01:28 +0000T00:00:00.000Z">2021-06-07</time> | -->
-     4' to read |
+    <!--time role="presentation" datetime="2021-08-06 20:46:20 +0000T00:00:00.000Z">2021-08-06</time> | -->
+     5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/scheduling.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2028,16 +2028,23 @@
 
 <p>Keep in mind that the execution will occur in a time frame given by the plan window that you purchased earlier.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span><span class="p">,</span> <span class="nx">executionFactory</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span><span class="p">,</span> <span class="nx">Execution</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">utils</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">ethers</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">);</span>
 
 <span class="kd">const</span> <span class="nx">encodedFunctionCall</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">Interface</span><span class="p">(</span><span class="nx">MyContract</span><span class="p">.</span><span class="nx">abi</span><span class="p">).</span><span class="nx">encodeFunctionData</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;MyContractFunction&gt;</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="nx">arrayOfMyContractFunctionParameters</span><span class="p">])</span>
 
 <span class="kd">const</span> <span class="nx">valueToTransfer</span> <span class="o">=</span> <span class="nx">BigNumber</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
-<span class="kd">const</span> <span class="nx">execution</span> <span class="o">=</span> <span class="nx">executionFactory</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="nx">encodedMethodCall</span><span class="p">,</span> <span class="nx">gas</span><span class="p">,</span> <span class="nx">executeAt</span><span class="p">,</span> <span class="nx">valueToTransfer</span><span class="p">,</span> <span class="nx">yourAccountAddress</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">execution</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Execution</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="nx">encodedFunctionCall</span><span class="p">,</span> <span class="nx">executeAt</span><span class="p">,</span> <span class="nx">valueToTransfer</span><span class="p">,</span> <span class="nx">yourAccountAddress</span><span class="p">)</span>
 <span class="kd">const</span> <span class="nx">scheduledExecutionTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">schedule</span><span class="p">(</span><span class="nx">execution</span><span class="p">)</span>
 
 <span class="k">await</span> <span class="nx">scheduledExecutionTransaction</span><span class="p">.</span><span class="nx">wait</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
@@ -2051,10 +2058,17 @@
 
 <p>Tool for cron expressions: <a href="https://crontab.guru/" rel="external noopener noreferrer" target="_blank">cron-tab</a></p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span><span class="p">,</span> <span class="nx">executionFactory</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span><span class="p">,</span> <span class="nx">Execution</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">utils</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">ethers</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">);</span>
 
 <span class="kd">const</span> <span class="nx">encodedFunctionCall</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">Interface</span><span class="p">(</span><span class="nx">MyContract</span><span class="p">.</span><span class="nx">abi</span><span class="p">).</span><span class="nx">encodeFunctionData</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;MyContractFunction&gt;</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="nx">arrayOfMyContractFunctionParameters</span><span class="p">])</span>
 
@@ -2064,8 +2078,11 @@
 <span class="kd">const</span> <span class="nx">quantity</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span> <span class="c1">// schedule its execution 5 times</span>
 <span class="kd">const</span> <span class="nx">startToExecuteAt</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">(</span><span class="nx">tomorrow</span><span class="p">)</span>
 
-<span class="kd">const</span> <span class="nx">execution</span> <span class="o">=</span> <span class="nx">executionFactory</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="nx">encodedMethodCall</span><span class="p">,</span> <span class="nx">gas</span><span class="p">,</span> <span class="nx">startToExecuteAt</span><span class="p">,</span> <span class="nx">valueToTransfer</span><span class="p">,</span> <span class="nx">yourAccountAddress</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">scheduledExecutionsTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">scheduleMany</span><span class="p">(</span><span class="nx">execution</span><span class="p">,</span> <span class="nx">cronExpression</span><span class="p">,</span> <span class="nx">quantity</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">execution</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Execution</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="nx">encodedFunctionCall</span><span class="p">,</span> <span class="nx">executeAt</span><span class="p">,</span> <span class="nx">valueToTransfer</span><span class="p">,</span> <span class="nx">yourAccountAddress</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">executionsToSchedule</span> <span class="o">=</span> <span class="nx">Execution</span><span class="p">.</span><span class="nx">fromCronExpression</span><span class="p">(</span><span class="nx">execution</span><span class="p">,</span> <span class="nx">cronExpression</span><span class="p">,</span> <span class="nx">quantity</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">scheduledExecutionsTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">scheduleMany</span><span class="p">(</span><span class="nx">executionsToSchedule</span><span class="p">)</span>
 
 <span class="k">await</span> <span class="nx">scheduledExecutionsTransaction</span><span class="p">.</span><span class="nx">wait</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 </code></pre></div></div>
@@ -2077,22 +2094,34 @@
 <p><strong>When could the result be undefined?</strong></p>
 
 <ul>
-  <li>If there were no funds in the account at the moment of the estimation, it would result undefined, but as soon as funds are available, the result will change automatically.</li>
-  <li>It can also result undefined if the address or any other parameter provided is incorrect, in that case, you would need to provide the correct information before scheduling, to avoid the execution charge on a failed transaction.</li>
+  <li>If there were no funds in the account at the moment of the estimation, it would result null, but as soon as funds are available, the result will change automatically.</li>
+  <li>It can also result null if the address or any other parameter provided is incorrect, in that case, you would need to provide the correct information before scheduling, to avoid the execution charge on a failed transaction.</li>
 </ul>
 
 <blockquote>
   <p>In any case you can schedule the execution anyway calculating/approximating the gas manually.</p>
 </blockquote>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span><span class="p">,</span> <span class="nx">Execution</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">}</span>
 
-<span class="kd">const</span> <span class="nx">gas</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span>
-    <span class="p">.</span><span class="nx">estimateGas</span><span class="p">(</span><span class="nx">MyContract</span><span class="p">.</span><span class="nx">abi</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="dl">'</span><span class="s1">&lt;MyContractFunction&gt;</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="nx">arrayOfMyContractFunctionParameters</span><span class="p">])</span>
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
 
-<span class="c1">// 2000 | undefined</span>
+<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">encodedFunctionCall</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">utils</span><span class="p">.</span><span class="nx">Interface</span><span class="p">(</span><span class="nx">MyContract</span><span class="p">.</span><span class="nx">abi</span><span class="p">).</span><span class="nx">encodeFunctionData</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;MyContractFunction&gt;</span><span class="dl">'</span><span class="p">,</span> <span class="p">[</span><span class="nx">arrayOfMyContractFunctionParameters</span><span class="p">])</span>
+
+<span class="kd">const</span> <span class="nx">valueToTransfer</span> <span class="o">=</span> <span class="nx">BigNumber</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">execution</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Execution</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">myContractAddress</span><span class="p">,</span> <span class="nx">encodedFunctionCall</span><span class="p">,</span> <span class="nx">executeAt</span><span class="p">,</span> <span class="nx">valueToTransfer</span><span class="p">,</span> <span class="nx">yourAccountAddress</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">gas</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">estimateGas</span><span class="p">()</span>
+
+<span class="c1">// 2000 | null</span>
 </code></pre></div></div>
 
 <p>What you can do with this sdk?</p>

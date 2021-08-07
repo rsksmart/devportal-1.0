@@ -1089,8 +1089,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-07 18:01:28 +0000T00:00:00.000Z">2021-06-07</time> | -->
-     2' to read |
+    <!--time role="presentation" datetime="2021-08-06 20:46:20 +0000T00:00:00.000Z">2021-08-06</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/purchasing-plan.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2025,20 +2025,28 @@
 <p>With the information of the previous step, you can approve and purchase executions to be able to schedule them in the future.</p>
 
 <blockquote>
-  <p>If the token is one of the supported ERC-677 you don’t need to approve before purchasing. You can pass the list of supported tokens using <a href="https://github.com/rsksmart/rif-scheduler-sdk/blob/develop/src/RifScheduler.ts#L14" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">options. supportedER677Tokens</code></a></p>
+  <p>If the token is one of the supported ERC-677 you don’t need to approve before purchasing. You can pass the list of supported tokens using <a href="https://github.com/rsksmart/rif-scheduler-sdk/blob/develop/src/Base.ts#L6" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">config.supportedERC677Tokens</code></a></p>
 </blockquote>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RIFScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
 
 <span class="kd">const</span> <span class="nx">executionsQuantity</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">)</span>
 <span class="kd">const</span> <span class="nx">totalAmount</span> <span class="o">=</span> <span class="nx">plan</span><span class="p">.</span><span class="nx">pricePerExecution</span><span class="p">.</span><span class="nx">mul</span><span class="p">(</span><span class="nx">executionsQuantity</span><span class="p">)</span>
 
-<span class="c1">// first you need to approve the totalAmount of tokens</span>
-<span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">approveToken</span><span class="p">(</span><span class="nx">plan</span><span class="p">.</span><span class="nx">token</span><span class="p">,</span> <span class="nx">totalAmount</span><span class="p">)</span>
+<span class="c1">// First, check if token requires approval</span>
+<span class="k">if</span> <span class="p">(</span><span class="nx">plan</span><span class="p">.</span><span class="nx">token</span><span class="p">.</span><span class="nx">needsApproval</span><span class="p">(</span><span class="nx">totalAmount</span><span class="p">))</span>
+    <span class="k">await</span> <span class="nx">plan</span><span class="p">.</span><span class="nx">token</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">totalAmount</span><span class="p">)</span>
 
-<span class="kd">const</span> <span class="nx">purchaseTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">purchasePlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">,</span> <span class="nx">executionsQuantity</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">purchaseTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">plan</span><span class="p">.</span><span class="nx">purchase</span><span class="p">(</span><span class="nx">executionsQuantity</span><span class="p">)</span>
 
 <span class="k">await</span> <span class="nx">purchaseTransaction</span><span class="p">.</span><span class="nx">wait</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
 </code></pre></div></div>
@@ -2053,9 +2061,15 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">}</span>
 
-<span class="kd">const</span> <span class="nx">remainingExecutions</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">remainingExecutions</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">)</span>
+
+<span class="kd">const</span> <span class="nx">remainingExecutions</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">plan</span><span class="p">.</span><span class="nx">getRemainingExecutions</span><span class="p">()</span>
 
 <span class="c1">//  2</span>
 </code></pre></div></div>

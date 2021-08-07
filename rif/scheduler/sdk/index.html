@@ -1081,7 +1081,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-17 14:12:39 +0000T00:00:00.000Z">2021-06-17</time> | -->
+    <!--time role="presentation" datetime="2021-08-06 20:56:06 +0000T00:00:00.000Z">2021-08-06</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2046,8 +2046,6 @@
 
 <p>First, you will need an <code class="highlighter-rouge">ethers</code> <code class="highlighter-rouge">provider</code> or <code class="highlighter-rouge">signer</code> instance.</p>
 
-<p>In order to create an instance of <code class="highlighter-rouge">RifScheduler</code> you will need an ethers provider or signer.</p>
-
 <p>Using a <code class="highlighter-rouge">provider</code> will only allow <em>read-only</em> operations, such as <code class="highlighter-rouge">getPlan</code>. Using a <code class="highlighter-rouge">signer</code> will allow all operations, such as <code class="highlighter-rouge">purchasePlan</code>, <code class="highlighter-rouge">schedule</code>, etc.</p>
 
 <h4 id="for-example-to-connect-the-sdk-to-metamask">For example, to connect the SDK to Metamask</h4>
@@ -2058,12 +2056,18 @@
 <span class="kd">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">providers</span><span class="p">.</span><span class="nx">Web3Provider</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">currentProvider</span><span class="p">);</span>
 
 <span class="c1">// Creates instance with provider, you can execute read-only operations</span>
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">provider</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">({</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">provider</span>
+<span class="p">});</span>
 
 <span class="kd">const</span> <span class="nx">signer</span> <span class="o">=</span> <span class="nx">provider</span><span class="p">.</span><span class="nx">getSigner</span><span class="p">();</span>
 
 <span class="c1">// Creates instance with signer, you can execute any kind of operation</span>
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">({</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">});</span>
 </code></pre></div></div>
 
 <h4 id="to-connect-the-sdk-to-rpc--ganache">to connect the SDK to RPC / Ganache</h4>
@@ -2076,12 +2080,18 @@
 <span class="kd">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">providers</span><span class="p">.</span><span class="nx">JsonRpcProvider</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
 
 <span class="c1">// Creates instance with provider, you can execute read-only operations</span>
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">provider</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">({</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">provider</span>
+<span class="p">});</span>
 
 <span class="kd">const</span> <span class="nx">signer</span> <span class="o">=</span> <span class="nx">provider</span><span class="p">.</span><span class="nx">getSigner</span><span class="p">();</span>
 
 <span class="c1">// Creates instance with signer, you can execute any kind of operation</span>
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">signer</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">({</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">});</span>
 </code></pre></div></div>
 
 <p>What you can do with this sdk?</p>

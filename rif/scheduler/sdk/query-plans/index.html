@@ -1089,7 +1089,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-07 18:01:28 +0000T00:00:00.000Z">2021-06-07</time> | -->
+    <!--time role="presentation" datetime="2021-08-06 20:46:20 +0000T00:00:00.000Z">2021-08-06</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/query-plans.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2028,16 +2028,22 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">provider</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
 
 <span class="kd">const</span> <span class="nx">planIndex</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">planIndex</span><span class="p">)</span>
 
 <span class="c1">//  {</span>
 <span class="c1">//    pricePerExecution: 10000000000000;</span>
 <span class="c1">//    window: 300;</span>
-<span class="c1">//    token: 0x...;</span>
+<span class="c1">//    token: Token;</span>
 <span class="c1">//    active: true;</span>
+<span class="c1">//    ...</span>
 <span class="c1">//  }</span>
 </code></pre></div></div>
 
@@ -2047,28 +2053,28 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RifScheduler</span><span class="p">(</span><span class="nx">serviceProviderContractAddress</span><span class="p">,</span> <span class="nx">provider</span><span class="p">);</span>
-
-<span class="kd">const</span> <span class="nx">plansCount</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlansCount</span><span class="p">();</span>
-
-<span class="kd">let</span> <span class="nx">allPlans</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">plansCount</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">plan</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlan</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-    <span class="nx">allPlans</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">plan</span><span class="p">)</span>
+<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
+    <span class="na">providerOrSigner</span><span class="p">:</span> <span class="nx">signer</span>
 <span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">rifScheduler</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RIFScheduler</span><span class="p">(</span><span class="nx">config</span><span class="p">);</span>
+
+<span class="kd">const</span> <span class="nx">plans</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rifScheduler</span><span class="p">.</span><span class="nx">getPlans</span><span class="p">();</span>
 
 <span class="c1">//  [{</span>
 <span class="c1">//    pricePerExecution: 10000000000000;</span>
 <span class="c1">//    window: 300;</span>
-<span class="c1">//    token: 0x...;</span>
+<span class="c1">//    token: Token;</span>
 <span class="c1">//    active: true;</span>
+<span class="c1">//    ...</span>
 <span class="c1">//  },</span>
 <span class="c1">//  {</span>
 <span class="c1">//    pricePerExecution: 50000000000000;</span>
 <span class="c1">//    window: 600;</span>
-<span class="c1">//    token: 0x...;</span>
+<span class="c1">//    token: Token;</span>
 <span class="c1">//    active: true;</span>
+<span class="c1">//    ...</span>
 <span class="c1">//  }]</span>
 </code></pre></div></div>
 
