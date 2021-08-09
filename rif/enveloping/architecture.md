@@ -7,25 +7,108 @@ permalink: /rif/enveloping/architecture/
 
 ## Introduction
 
-## Diagram
+The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by "sponsors" is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.
 
-## Contracts
+The Enveloping system is made up for various components, some of which are essential and others which are auxiliary. 
 
-## Components
+An overview of this is as follows:
 
-## Terminology
+On-chain, the system cannot work without its Smart Contracts, which encompass Smart Wallets plus the Relay Hub, the latter of which keeps tracks of staked relay managers. 
 
-- **GSNEip712Library** - This is an auxiliary library that bridges the Relay Request into a call of a Smart Wallet or Proxy Factory (in such case, the Request is a Deploy Request).
-- **Paymaster** - The Paymaster is an abstract contract that authorizes a specific relay request, it is the one paying the RelayWorker with native cryptocurrency so, in the specific implementation to be used/implemented, it would be beneficial to check that the payment in tokens is destined to the paymaster itself or an account the paymaster accepts as a valid recipient.
-The abstract contract has two hook methods, one to authorize the request and perform all the logic before executing the request (preRelayedCall), and another one to do logic after the execution (postRelayedCall).
-Two example implementations are provided:
-    - **Relay Paymaster** - The Relay Paymaster has a list of tokens that it accepts. When it receives a relay request, checks the token’s acceptance and the payer’s balance for the token.
-    - **Deploy Paymaster** - An implementation used in the SmartWallet deployment process. It performs the same Token Paymaster’s checks but also, it makes sure that the SmartWallet to be deployed doesn’t already exist and that a Proxy Factory address is provided in the Relay Request and it is the factory instance accepted by the paymaster.
-- **Relay Hub** - The Relay Hub is the main on-chain component of the Enveloping architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It receives the Relay Request and forwards it to the Smart Wallet. Also, the Relay Hub forms part of the relay worker’s registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the balances the Paymasters will use to pay the relay workers for their transaction submission. A Paymaster without enough balance in the Relay Hub to pay for the relay of a transaction will cause the relay call to revert.
-- **Stake Manager** - The Stake Manager supports multiple Relay Hubs, the stakers are the Relay Managers and they can authorize/de-authorize specific Relay Hubs so they can penalize the managers if needed. The staked cryptocurrency is held in the StakeManager contract.
+Off-chain, at least 1 Relay Server is needed to interact with the contracts. Without a Relay Server, envelopes cannot be created and sent to the contracts.
+ 
+Details for each of these components are expanded down below, as well as an introductory glossary.
+
+## Glossary
+
+| Term | Desctiption |
+|------|-------------|
+| Sponsor | A third party that pays the gas consumed by a sponsored transaction (see below) by submitting it to the blockchain. |
+| Sponsored Transaction | A transaction sent by the requester (see below) through the Sponsor, this type of transaction aims to separate the gas payer from the sender of the transaction. |
+| Requester |  It’s an EOA (see below). The requester sends a sponsored transaction to the Sponsor. She does not pay the gas with native-currency but with a token accepted by the Sponsor, if they don’t subsidize it. |
+| Recipient |  An abbreviation for recipient contract. It’s the destination of the requester’s transaction.  |
+| Envelope |  Using the “envelopes” analogy, it’s the transaction, (funded with native cryptocurrency as gas) sent by the Sponsor to the blockchain, that wraps the requester’s transaction payload (sponsored transaction).|
+| Enveloping | The entire system which allows the relay of sponsored transactions. |
+| DoS | A Denial of Service is an information-security threat whose goal is to become a service unavailable. |
+| DeFi | An acronym for Decentralized Finance, it’s a novel form for finance based in blockchain technology. |
+| EOA |  An External Owned Account (EOA) is an account managed with a key, which is capable of signing and sending transactions, and paying the cost for it. |
+
+## On-Chain components
+
+### Relay Hub
+The Relay Hub is the main on-chain component of the Enveloping architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts, and receives the Relay Request and forwards it to the Smart Wallet. 
+
+Also, the Relay Hub forms part of the relay worker’s registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the balances the Paymasters will use to pay the relay workers for their transaction submission. A Paymaster without enough balance in the Relay Hub to pay for the relay of a transaction will cause the relay call to revert.
+
+### Relay Server 
+The Relay Server receives the sponsored transaction via HTTP from the Relay Client.
+
+The server has only one Relay Manager address and only one Relay Worker and points to just one Relay Hub.
+
+When the Relay Server receives an http “relay” request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.
+
+The server is a service daemon, running as an HTTP service.  Advertises itself (through the Relay Hub) and waits for client requests.
+
+### Smart Wallet
+It’s the “contract-based account” owned by the Requester’s EOA.
+
+It is the one that calls the Recipient contract (i.e, the `msg.sender` address the Recipient will see). During the execution,  the contract verifies the Enveloping Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.
+
+### Stake Manager
+The Stake Manager supports multiple Relay Hubs, the stakers are the Relay Managers and they can authorize/de-authorize specific Relay Hubs so they can penalize the managers if needed. The staked cryptocurrency is held in the StakeManager contract.
+
 The account staking for a specific Relay Manager for the first time becomes the owner of the stake, only this account can make subsequent stakes for this specific RelayManager.
-    When a Relay Manager unauthorised a Relay Hub, it means it is unstaking from it, which also means not being able to relay through that hub any more. Any balance held in the Relay Hub (as a consequence of being paid by a Paymaster) is sent to the original sender of the stake (the owner). Also, the workers’ balances are transferred to the stake owner, and, if configured, the Relay Manager’s balance can also be transferred to the stake owner.
-    Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.
+
+When a Relay Manager unauthorised a Relay Hub, it means it is unstaking from it, which also means not being able to relay through that hub any more. Any balance held in the Relay Hub (as a consequence of being paid by a Paymaster) is sent to the original sender of the stake (the owner). Also, the workers’ balances are transferred to the stake owner, and, if configured, the Relay Manager’s balance can also be transferred to the stake owner.
+
+Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.
+
+## Off-chain components
+
+### Relay & Deploy Requests
+An enveloping request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:
+    - **Relay Data**: all information required to relay the defined Forward Request.
+    - **Forward Request**: itt is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
+
+When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Enveloping Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)
+
+The **Relay request** is structure that wraps the transaction sent by an end-user. It includes data required for relaying the trasaction e.g. address of the payer, address of the original requester, token payment data.
+
+The **Deploy request** structure that wraps the transaction sent to deploy a Smart wallet.
+
+### Proxies
+
+#### Proxy Factory
+Factory of Proxies to the SmartWallet logic. The Smart Wallet itself is a template with portions delegated to an optional custom logic (which is also a proxy pattern).
+
+#### Proxy
+A simple proxy that delegates every call to a SmartWallet logic address. This proxy is the one instantiated per SmartWallet, and it will receive the SmartWallet template address as Master Copy (MC). So every call made to this proxy will end up executing the logic defined in the MC.
+
+For the transaction execution (`execute()` call), MC logic will do the signature verification and payment. Then it will execute the request, and, if custom logic was defined, it will forward the flow to it before returning.
+
+Moreover, when a proxy to the Smart Wallet is created, it can define a custom logic that replaces what is done with the Enveloping Request after verifying it. With no custom logic, the recipient is called, but with custom logic, the request is delegated to the logic code.
+
+If a custom logic is set, it can be initialized (which would impact the proxy’s state of course). This happens automatically during the deployment of the Proxy if the code of the logic contract has defined a function that conforms to the initialize(bytes) ABI.
+
+### Tools
+
+### Contract Interactor
+A provider and wrapper for all the smart contract ABIs.
+
+### Relay Client
+The Relay client is a typescript library for a client to access the blockchain through a relay. It provides APIs to find a relay, and to send transactions through it.
+
+It can work access point to the Enveloping system. It creates, signs, and sends the Sponsored transaction, which is signed by the requester and forwarded to the Relay Server via the HTTP protocol.
+
+It is not _strictly_ needed since any dApp or user could relay transactions using merely a Relay Server and the smart contracts, although this is arguably harder.
+
+### Relay Provider
+The access point to the Enveloping system for dApps using Web3. It wraps the RelayClient to provide Web3 compatibility.
+
+## Auxiliary
+
+### GSNEip712Library
+This is an auxiliary library that bridges the Relay Request into a call of a Smart Wallet or Proxy Factory (in such case, the Request is a Deploy Request).
 
 ## Execution flow
 
@@ -103,55 +186,21 @@ The gas-less requester has a SmartWallet address where they receive tokens but d
     - In the case there is a custom logic,  its initialization is called as well.
 13. The Relay Hub executes `postRelayCall` in the Paymaster.
 
-## Glossary
 
-- **Relay Provider** - The access point to the Enveloping system for dApps using Web3. It wraps the RelayClient to provide Web3 compatibility.
-- **Relay Client** - The access point to the Enveloping system. It creates, signs, and sends the Sponsored transaction, which is signed by the requester and forwarded to the Relay Server via the HTTP protocol.
-- **Relay Server** - The Relay Server receives the sponsored transaction via HTTP from the Relay Client.
-The server has only one Relay Manager address and only one Relay Worker and points to just one Relay Hub.
-When the Relay Server receives an http “relay” request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.
-- **Contract Interactor** - A provider and wrapper for all the smart contract ABIs.
 - **Relay Manager** - An on-chain account that has staked balance. It delegates the requests to Relay Workers, which are the actual initiators of the relay flow. Any penalization done against a Relay Worker impacts the Relay Manager's stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: register the Relay Server and add relay workers, both in the Relay Hub.
-- **Relay Worker** - An EOA that belongs to only one Relay Manager. It’s the sender of the Relay Request.
-- **Enveloping Request** - It’s the Sponsored Transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request.
-    - **Relay Data** - All information required to relay the defined Forward Request.
-    - **Forward Request** - It is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
-When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Enveloping Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)
-.
-- **Proxy Factory**  - Factory of Proxies to the SmartWallet logic. The Smart Wallet itself is a template with portions delegated to an optional custom logic (which is also a proxy pattern).
-- **Proxy** - A simple proxy that delegates every call to a SmartWallet logic address. This proxy is the one instantiated per SmartWallet, and it will receive the SmartWallet template address as Master Copy (MC). So every call made to this proxy will end up executing the logic defined in the MC.
-For the transaction execution (`execute()` call), MC logic will do the signature verification and payment. Then it will execute the request, and, if custom logic was defined, it will forward the flow to it before returning.
-- **Smart Wallet** - It’s the “contract-based account” owned by the Requester’s EOA.
-It is the one that calls the Recipient contract (i.e, the `msg.sender` address the Recipient will see). During the execution,  the contract verifies the Enveloping Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.
-
-Moreover, when a proxy to the Smart Wallet is created, it can define a custom logic that replaces what is done with the Enveloping Request after verifying it. With no custom logic, the recipient is called, but with custom logic, the request is delegated to the logic code.
-If a custom logic is set, it can be initialized (which would impact the proxy’s state of course). This happens automatically during the deployment of the Proxy if the code of the logic contract has defined a function that conforms to the initialize(bytes) ABI.
-
-The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by "sponsors" is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.
-
-The core Enveloping architecture is defined by the following components:
-
-- **Relay Request** - a structure that wraps the transaction sent by an end-user. It includes data required for relaying the trasaction e.g. address of the payer, address of the original requester, token payment data.
-- **Deploy Request** - a structure that wraps the transaction sent to deploy a Smart wallet.
-- **Relay Hub** - a core contract which serves as the interface for the on-chain part of the system. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts. 
+- **Relay Worker** - An EOA that belongs to only one Relay Manager. It’s the sender of the Relay Request..
 - **Relay Verifier** - an abstract contract that authorizes a specific relay request.
 - **Deploy Verifier** - an abstract contract that authorizes a specific deploy request.
 - **Smart Wallet** - a contract that verifies forwarded data and subsequently invokes the recipient contract of the transaction.  The smart wallet is deployed *counterfactually* at the moment it is needed. This happens, for instance, when a user with some token balances wants to move those tokens without spending gas, i.e. using the enveloping system.
-- **Relay Server** - a relay service daemon, running as an HTTP service.  Advertises itself (through the Relay Hub) and waits for client requests.
-- **Relay Client** - a typescript library for a client to access the blockchain through a relay. Provides APIs to find a relay, and to send transactions through it.
 
+## Deprecated
 
-## Glossary
+**Paymaster**
+V2 deprecated the Paymaster contracts in favor of the Verifiers (see [versions](/rif/enveloping/versions/)). What follows is the original design.
 
-| Term | Desctiption |
-|------|-------------|
-| Sponsor | A third party that pays the gas consumed by a sponsored transaction (see below) by submitting it to the blockchain. |
-| Sponsored Transaction | A transaction sent by the requester (see below) through the Sponsor, this type of transaction aims to separate the gas payer from the sender of the transaction. |
-| Requester |  It’s an EOA (see below). The requester sends a sponsored transaction to the Sponsor. She does not pay the gas with native-currency but with a token accepted by the Sponsor, if they don’t subsidize it. |
-| Recipient |  An abbreviation for recipient contract. It’s the destination of the requester’s transaction.  |
-| Envelope |  Using the “envelopes” analogy, it’s the transaction, (funded with native cryptocurrency as gas) sent by the Sponsor to the blockchain, that wraps the requester’s transaction payload (sponsored transaction).|
-| Enveloping | The entire system which allows the relay of sponsored transactions. |
-| DoS | A Denial of Service is an information-security threat whose goal is to become a service unavailable. |
-| DeFi | An acronym for Decentralized Finance, it’s a novel form for finance based in blockchain technology. |
-| EOA |  An External Owned Account (EOA) is an account managed with a key, which is capable of signing and sending transactions, and paying the cost for it. |
+The Paymaster is an abstract contract that authorizes a specific relay request, it is the one paying the RelayWorker with native cryptocurrency so, in the specific implementation to be used/implemented, it would be beneficial to check that the payment in tokens is destined to the paymaster itself or an account the paymaster accepts as a valid recipient.
 
+The abstract contract has two hook methods, one to authorize the request and perform all the logic before executing the request (preRelayedCall), and another one to do logic after the execution (postRelayedCall).
+Two example implementations are provided:
+    - **Relay Paymaster** - The Relay Paymaster has a list of tokens that it accepts. When it receives a relay request, checks the token’s acceptance and the payer’s balance for the token.
+    - **Deploy Paymaster** - An implementation used in the SmartWallet deployment process. It performs the same Token Paymaster’s checks but also, it makes sure that the SmartWallet to be deployed doesn’t already exist and that a Proxy Factory address is provided in the Relay Request and it is the factory instance accepted by the paymaster.
