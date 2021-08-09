@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../">Multisig</a>
+            <a href="../../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../../">Overview</a></li>
+              <li><a href="../../../product/">Product</a></li>
+              <li><a href="../../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../../">Get Started</a></li>
                   <li><a href="../../creation/">Create a Multisig account</a></li>
-                  <li><a href="../../policies/#owners">Change owners</a></li>
-                  <li><a href="../../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="../../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../../sample-application/">Sample Application</a></li>
               <li><a href="../../../contracts/">Smart contracts</a></li>
               <li><a href="../../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1057,7 +1056,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/multisig/">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -1097,7 +1096,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+    <!--time role="presentation" datetime="2021-07-22 13:17:24 +0000T00:00:00.000Z">2021-07-22</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/rbtc/receive_rbtc.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1654,16 +1653,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../">Multisig</a>
+            <a href="../../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../../">Overview</a></li>
+              <li><a href="../../../product/">Product</a></li>
+              <li><a href="../../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../../">Get Started</a></li>
                   <li><a href="../../creation/">Create a Multisig account</a></li>
-                  <li><a href="../../policies/#owners">Change owners</a></li>
-                  <li><a href="../../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../">RBTC</a>
@@ -1688,17 +1689,14 @@
                       <li><a href="../../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../../sample-application/">Sample Application</a></li>
               <li><a href="../../../contracts/">Smart contracts</a></li>
               <li><a href="../../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2030,22 +2028,31 @@
 
                   <p>It is important to understand that in order to properly receive funds, the Multisig account address (instead of the owner address) must be used as the receiver.</p>
 
-<p>Assuming the Multisig account was created by means of <a href="../../creation/">EthersSafeFactory</a>:</p>
+<p><a href="#top" title="collapsible"></a></p>
+<ul>
+  <li>A) Get the Multisig account address
+    <ul>
+      <li>Assuming the Multisig account was created by means of <a href="../../creation/">EthersSafeFactory</a>:</li>
+    </ul>
 
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeSdk</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeFactory</span><span class="p">.</span><span class="nx">createSafe</span><span class="p">({</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeSdk</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeFactory</span><span class="p">.</span><span class="nx">createSafe</span><span class="p">({</span>
   <span class="na">owners</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">0x1234...</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0xabcd...</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">0x0987...</span><span class="dl">'</span><span class="p">],</span>
   <span class="na">threshold</span><span class="p">:</span> <span class="mi">2</span>
 <span class="p">})</span>
 
 <span class="c1">// address to use as fund receiver</span>
 <span class="kd">const</span> <span class="nx">multisigAccountAddress</span> <span class="o">=</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">getAddress</span><span class="p">()</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+  <li>B) Send the transaction
+    <ul>
+      <li>Here below is an example of a transaction executed for funding the Multisig account using <a href="https://docs.ethers.io/v5/" rel="external noopener noreferrer" target="_blank">ethers</a>
+</li>
+    </ul>
 
-<h2 id="rbtc">RBTC</h2>
-
-<p>Here below an example of a transaction executed for funding the Multisig account using <a href="https://docs.ethers.io/v5/" rel="external noopener noreferrer" target="_blank">ethers</a></p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// address to use as fund receiver</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="c1">// address to use as fund receiver</span>
 <span class="kd">const</span> <span class="nx">multisigAccountAddress</span> <span class="o">=</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">getAddress</span><span class="p">()</span>
 
 <span class="kd">const</span> <span class="nx">valueToSend</span> <span class="o">=</span> <span class="nx">BigNumber</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="dl">"</span><span class="s2">1000000000</span><span class="dl">"</span><span class="p">)</span>
@@ -2053,14 +2060,16 @@
     <span class="na">to</span><span class="p">:</span> <span class="nx">multisigAccountAddress</span><span class="p">,</span>
     <span class="na">value</span><span class="p">:</span> <span class="nx">valueToSend</span>
 <span class="p">})</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+</ul>
 
+<hr>
 <p>For further details, please have a look at:</p>
 <ul>
   <li><a href="https://docs.ethers.io/v5/api/signer/#Signer-sendTransaction" rel="external noopener noreferrer" target="_blank">signer.sendTransaction</a></li>
   <li><a href="https://docs.ethers.io/v5/api/providers/provider/#Provider-sendTransaction" rel="external noopener noreferrer" target="_blank">provider.sendTransaction</a></li>
 </ul>
-
 
 
                   
@@ -2126,7 +2135,7 @@
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="collapsible">
          </div>
       </section>
 

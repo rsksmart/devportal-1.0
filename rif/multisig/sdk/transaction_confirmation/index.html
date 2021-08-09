@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../">Multisig</a>
+            <a href="../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../">Overview</a></li>
+              <li><a href="../../product/">Product</a></li>
+              <li><a href="../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../">Get Started</a></li>
                   <li><a href="../creation/">Create a Multisig account</a></li>
-                  <li><a href="../policies/#owners">Change owners</a></li>
-                  <li><a href="../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../rbtc/">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../listing/">Get the pending and past transactions</a></li>
                   <li><a href="./">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../sample-application/">Sample Application</a></li>
               <li><a href="../../contracts/">Smart contracts</a></li>
               <li><a href="../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1057,7 +1056,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/multisig/">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -1089,7 +1088,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+    <!--time role="presentation" datetime="2021-07-22 13:17:31 +0000T00:00:00.000Z">2021-07-22</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/transaction_confirmation.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1646,16 +1645,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../">Multisig</a>
+            <a href="../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../">Overview</a></li>
+              <li><a href="../../product/">Product</a></li>
+              <li><a href="../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../">Get Started</a></li>
                   <li><a href="../creation/">Create a Multisig account</a></li>
-                  <li><a href="../policies/#owners">Change owners</a></li>
-                  <li><a href="../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../rbtc/">RBTC</a>
@@ -1680,17 +1681,14 @@
                       <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../listing/">Get the pending and past transactions</a></li>
                   <li><a href="./">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../sample-application/">Sample Application</a></li>
               <li><a href="../../contracts/">Smart contracts</a></li>
               <li><a href="../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2029,48 +2027,58 @@
 
 <p>Transactions confirmation can be on-chain and off-chain.</p>
 
-<h2 id="off-chain-signature">Off-chain signature</h2>
+<p><a href="#top" title="collapsible"></a></p>
+<ul>
+  <li>Off-chain signature
+    <ul>
+      <li>Off-chain signature consists of adding the signature to the transaction object without actually interacting with the contract.</li>
+    </ul>
 
-<p>Off-chain signature consists in adding the signature to the transaction object, without actually interacting with the contract.</p>
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="k">import</span> <span class="nx">EthersSafe</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@gnosis.pm/safe-core-sdk</span><span class="dl">'</span>
 
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">EthersSafe</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@gnosis.pm/safe-core-sdk</span><span class="dl">'</span>
+  <span class="kd">const</span> <span class="nx">safeSdk</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">EthersSafe</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> <span class="nx">ethers</span><span class="p">,</span> <span class="nx">safeAddress</span><span class="p">,</span> <span class="nx">providerOrSigner</span> <span class="p">})</span>
 
-<span class="kd">const</span> <span class="nx">safeSdk</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">EthersSafe</span><span class="p">.</span><span class="nx">create</span><span class="p">({</span> <span class="nx">ethers</span><span class="p">,</span> <span class="nx">safeAddress</span><span class="p">,</span> <span class="nx">providerOrSigner</span> <span class="p">})</span>
+  <span class="kd">const</span> <span class="nx">signature</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">signTransaction</span><span class="p">(</span><span class="nx">safeTransaction</span><span class="p">)</span>
+</code></pre></div>    </div>
 
-<span class="kd">const</span> <span class="nx">signature</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">signTransaction</span><span class="p">(</span><span class="nx">safeTransaction</span><span class="p">)</span>
-</code></pre></div></div>
+    <p>This implies that the signature must be published through the <a href="https://github.com/gnosis/safe-transaction-service" rel="external noopener noreferrer" target="_blank">Safe Transaction Service API</a>, using the <a href="https://www.npmjs.com/package/@gnosis.pm/safe-service-client" rel="external noopener noreferrer" target="_blank">@gnosis.pm/safe-service-client</a>.</p>
 
-<p>This implies that the signature must be published through the <a href="https://github.com/gnosis/safe-transaction-service" rel="external noopener noreferrer" target="_blank">Safe Transaction Service API</a>, using the <a href="https://www.npmjs.com/package/@gnosis.pm/safe-service-client" rel="external noopener noreferrer" target="_blank">@gnosis.pm/safe-service-client</a>.</p>
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">safeService</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SafeServiceClient</span><span class="p">(</span><span class="nx">SAFE_TRANSACTION_SERVICE_URL</span><span class="p">)</span>
 
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeService</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SafeServiceClient</span><span class="p">(</span><span class="nx">SAFE_TRANSACTION_SERVICE_URL</span><span class="p">)</span>
+  <span class="kd">const</span> <span class="nx">safeTxHash</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeCoreSdk</span><span class="p">.</span><span class="nx">getTransactionHash</span><span class="p">(</span><span class="nx">transaction</span><span class="p">)</span>
+  <span class="k">await</span> <span class="nx">safeServiceClient</span><span class="p">.</span><span class="nx">confirmTransaction</span><span class="p">(</span><span class="nx">safeTxHash</span><span class="p">,</span> <span class="nx">signature</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>On-chain signature
+    <ul>
+      <li>On-chain signature consists of interacting directly with the safe account. Hence, no further action is required to make it available to other users.</li>
+    </ul>
 
-<span class="kd">const</span> <span class="nx">safeTxHash</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeCoreSdk</span><span class="p">.</span><span class="nx">getTransactionHash</span><span class="p">(</span><span class="nx">transaction</span><span class="p">)</span>
-<span class="k">await</span> <span class="nx">safeServiceClient</span><span class="p">.</span><span class="nx">confirmTransaction</span><span class="p">(</span><span class="nx">safeTxHash</span><span class="p">,</span> <span class="nx">signature</span><span class="p">.</span><span class="nx">data</span><span class="p">)</span>
-</code></pre></div></div>
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">txHash</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">getTransactionHash</span><span class="p">(</span><span class="nx">safeTransaction</span><span class="p">)</span>
+  <span class="kd">const</span> <span class="nx">approveTxResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">approveTransactionHash</span><span class="p">(</span><span class="nx">txHash</span><span class="p">)</span>
+  <span class="k">await</span> <span class="nx">approveTxResponse</span><span class="p">.</span><span class="nx">wait</span><span class="p">()</span>
+</code></pre></div>    </div>
 
-<h2 id="on-chain-signature">On-chain signature</h2>
+    <p>It is also possible to retrieve all the owners who approved a transaction:</p>
 
-<p>On-chain signature consists in interacting directly with the safe account hence no further action is required to make it available to other users.</p>
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">ownersWhoApproved</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">getOwnersWhoApprovedTx</span><span class="p">(</span><span class="nx">txHash</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Transaction execution
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">txResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSDk</span><span class="p">.</span><span class="nx">executeTransaction</span><span class="p">(</span><span class="nx">safeTransaction</span><span class="p">)</span>
+  <span class="k">await</span> <span class="nx">txResponse</span><span class="p">.</span><span class="nx">wait</span><span class="p">()</span>
+</code></pre></div>    </div>
 
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">txHash</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">getTransactionHash</span><span class="p">(</span><span class="nx">safeTransaction</span><span class="p">)</span>
-<span class="kd">const</span> <span class="nx">approveTxResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">approveTransactionHash</span><span class="p">(</span><span class="nx">txHash</span><span class="p">)</span>
-<span class="k">await</span> <span class="nx">approveTxResponse</span><span class="p">.</span><span class="nx">wait</span><span class="p">()</span>
-</code></pre></div></div>
-
-<p>It is also possible to retrieve all the owners who approved a transaction:</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">ownersWhoApproved</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSdk</span><span class="p">.</span><span class="nx">getOwnersWhoApprovedTx</span><span class="p">(</span><span class="nx">txHash</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="transaction-execution">Transaction execution</h2>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">txResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeSDk</span><span class="p">.</span><span class="nx">executeTransaction</span><span class="p">(</span><span class="nx">safeTransaction</span><span class="p">)</span>
-<span class="k">await</span> <span class="nx">txResponse</span><span class="p">.</span><span class="nx">wait</span><span class="p">()</span>
-</code></pre></div></div>
-
-<blockquote>
-  <p>The transaction execution includes the signing of the transaction, so if there is only one missing signature to reach the threshold, the signature step can be skipped and the transaction can be executed directly.</p>
-</blockquote>
+    <blockquote class="mt-3">
+      <p>The transaction execution includes the signing of the transaction, so if there is only one missing signature to reach the threshold, the signature step can be skipped, and the transaction can be executed directly.</p>
+    </blockquote>
+  </li>
+</ul>
 
 
                   
@@ -2136,7 +2144,7 @@
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="collapsible">
          </div>
       </section>
 

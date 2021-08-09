@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../">Multisig</a>
+            <a href="../">Savings and Vault</a>
             <ul>
+              <li><a href="../">Overview</a></li>
+              <li><a href="../product/">Product</a></li>
+              <li><a href="../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="./">Get Started (SDK)</a>
                 <ul>
                   <li><a href="./">Get Started</a></li>
                   <li><a href="creation/">Create a Multisig account</a></li>
-                  <li><a href="policies/#owners">Change owners</a></li>
-                  <li><a href="policies/#threshold">Change threshold</a></li>
+                  <li><a href="policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="rbtc/">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="listing/">Get the pending and past transactions</a></li>
                   <li><a href="transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="rejecting/">Reject pending transactions</a></li>
-                  <li><a href="deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../sample-application/">Sample Application</a></li>
               <li><a href="../contracts/">Smart contracts</a></li>
               <li><a href="../transaction-service/">Transaction service</a></li>
-              <li><a href="../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1057,7 +1056,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/multisig/">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -1081,7 +1080,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+    <!--time role="presentation" datetime="2021-08-05 09:17:04 +0000T00:00:00.000Z">2021-08-05</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1638,16 +1637,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../">Multisig</a>
+            <a href="../">Savings and Vault</a>
             <ul>
+              <li><a href="../">Overview</a></li>
+              <li><a href="../product/">Product</a></li>
+              <li><a href="../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="./">Get Started (SDK)</a>
                 <ul>
                   <li><a href="./">Get Started</a></li>
                   <li><a href="creation/">Create a Multisig account</a></li>
-                  <li><a href="policies/#owners">Change owners</a></li>
-                  <li><a href="policies/#threshold">Change threshold</a></li>
+                  <li><a href="policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="rbtc/">RBTC</a>
@@ -1672,17 +1673,14 @@
                       <li><a href="erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="listing/">Get the pending and past transactions</a></li>
                   <li><a href="transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="rejecting/">Reject pending transactions</a></li>
-                  <li><a href="deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../sample-application/">Sample Application</a></li>
               <li><a href="../contracts/">Smart contracts</a></li>
               <li><a href="../transaction-service/">Transaction service</a></li>
-              <li><a href="../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2014,6 +2012,27 @@
 
                   <p><strong>Important</strong>: all the SDKs and the sample apps described below support Safe contracts <strong>v1.2.0</strong> and ethers.js <strong>v5</strong> so far.</p>
 
+<h2 id="requirements">Requirements</h2>
+
+<p><a href="#top" title="switch-container"></a></p>
+<ul>
+  <li>Basic
+    <ul>
+      <li>
+<code class="highlighter-rouge">Nodesj</code> and <code class="highlighter-rouge">npm</code> are pre-requirements</li>
+      <li>Dependency installation</li>
+    </ul>
+  </li>
+  <li>Advanced
+    <ul>
+      <li>
+<code class="highlighter-rouge">Nodesj</code> and <code class="highlighter-rouge">npm</code> are pre-requirements</li>
+      <li>Dependency installation</li>
+      <li>Deployment of the Gnosis Safe contracts (required <code class="highlighter-rouge">GnosisSafe</code> and <code class="highlighter-rouge">GnosisSafeProxyFactory</code> only); for further info, please visit <a href="https://gnosis-safe.io/" rel="external noopener noreferrer" target="_blank">https://gnosis-safe.io/</a> and the <a href="https://docs.gnosis.io/safe/docs/contracts_deployment/" rel="external noopener noreferrer" target="_blank">official deployment portal</a>.</li>
+    </ul>
+  </li>
+</ul>
+
 <p>The suite of SDKs is composed by:</p>
 <ul>
   <li>
@@ -2026,25 +2045,19 @@
 <a href="https://www.npmjs.com/package/@gnosis.pm/safe-service-client" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">@gnosis.pm/safe-service-client</code></a> (still in alpha version as June 2021): it facilitates the interaction with <a href="https://github.com/gnosis/safe-transaction-service" rel="external noopener noreferrer" target="_blank">Safe Transaction Service API</a>.</li>
 </ul>
 
-<p><img src="../../../assets/img/rif-multisig/packages.png" alt="Multisig - involved SDKs"></p>
-
 <p>Use the suite of SDKs to:</p>
 <ul>
   <li><a href="creation">Create multisig wallets choosing owners and threshold</a></li>
-  <li><a href="policies/#owners">CRUD owners</a></li>
-  <li><a href="policies/#threshold">CRUD threshold</a></li>
+  <li><a href="policies/">CRUD owners and threshold</a></li>
   <li><a href="rbtc/receive_rbtc">Receive RBTC (gas)</a></li>
   <li><a href="rbtc/rbtc_transactions">Request transactions to other owners for sending RBTC, or any other raw transaction</a></li>
   <li><a href="erc20/receive_erc20">Receive ERC-20 tokens (including RIF tokens)</a></li>
   <li><a href="erc20/erc20_transactions">Request transactions to other owners for sending ERC-20 tokens</a></li>
   <li><a href="erc721/receive_erc721">Receive ERC721 tokens (collectibles)</a></li>
   <li><a href="erc721/erc721_transactions">Request transactions to other owners for sending ERC-721 tokens</a></li>
-  <li><a href="listing/#get-the-list-of-pending-transactions">Get the list of pending transactions on a multi-sig</a></li>
-  <li><a href="listing/#get-the-list-of-past-transactions">Get the list of past transactions on a multi-sig</a></li>
-  <li><a href="transaction_confirmation">Confirm pending transactions on-chain and off-chain</a></li>
-  <li><a href="rejecting">Reject pending transactions</a></li>
+  <li><a href="listing">Get the list of pending and past transactions on a multi-sig</a></li>
   <li>
-<a href="deleting">Delete a multi-sig withdrawing its funds</a>.</li>
+<a href="transaction_confirmation">Confirm pending transactions on-chain and off-chain</a>.</li>
 </ul>
 
 <h2 id="contract-addresses">Contract addresses</h2>
@@ -2056,6 +2069,16 @@
 </li>
   <li>
 <code class="highlighter-rouge">GnosisSafeProxyFactory</code>: <a href="https://explorer.testnet.rsk.co/address/0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a</code></a>
+</li>
+</ul>
+
+<p>RSK Mainnet:</p>
+<ul>
+  <li>
+<code class="highlighter-rouge">GnosisSafe</code>: <a href="https://explorer.rsk.co/address/0xC6cFa90Ff601D6AAC45D8dcF194cf38B91aCa368" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">0xC6cFa90Ff601D6AAC45D8dcF194cf38B91aCa368</code></a>
+</li>
+  <li>
+<code class="highlighter-rouge">GnosisSafeProxyFactory</code>: <a href="https://explorer.rsk.co/address/0x4b1Af52EA200BAEbF79450DBC996573A7b75f65A" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">0x4b1Af52EA200BAEbF79450DBC996573A7b75f65A</code></a>
 </li>
 </ul>
 
@@ -2123,7 +2146,7 @@
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="switch-container">
          </div>
       </section>
 

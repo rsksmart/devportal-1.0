@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../">Multisig</a>
+            <a href="../../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../../">Overview</a></li>
+              <li><a href="../../../product/">Product</a></li>
+              <li><a href="../../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../../">Get Started</a></li>
                   <li><a href="../../creation/">Create a Multisig account</a></li>
-                  <li><a href="../../policies/#owners">Change owners</a></li>
-                  <li><a href="../../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../../rbtc/">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="./">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../../sample-application/">Sample Application</a></li>
               <li><a href="../../../contracts/">Smart contracts</a></li>
               <li><a href="../../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1057,7 +1056,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/multisig/">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -1097,7 +1096,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+    <!--time role="presentation" datetime="2021-07-22 13:16:44 +0000T00:00:00.000Z">2021-07-22</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/erc721/erc721_transactions.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1654,16 +1653,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../">Multisig</a>
+            <a href="../../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../../">Overview</a></li>
+              <li><a href="../../../product/">Product</a></li>
+              <li><a href="../../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../../">Get Started</a></li>
                   <li><a href="../../creation/">Create a Multisig account</a></li>
-                  <li><a href="../../policies/#owners">Change owners</a></li>
-                  <li><a href="../../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../../rbtc/">RBTC</a>
@@ -1688,17 +1689,14 @@
                       <li><a href="./">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../../sample-application/">Sample Application</a></li>
               <li><a href="../../../contracts/">Smart contracts</a></li>
               <li><a href="../../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2034,142 +2032,163 @@
 
 <p>The <code class="highlighter-rouge">ERC721TransactionBuilder</code> provides a set of methods related to <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721</a> transactions.</p>
 
-<h3 id="initialization">Initialization</h3>
+<p><a href="#top" title="collapsible"></a></p>
+<ul>
+  <li>Initialize the ERC721TransactionBuilder.
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
+<code class="highlighter-rouge">safe: Safe</code> - a <a href="https://github.com/gnosis/safe-core-sdk/blob/main/packages/safe-core-sdk/src/Safe.ts" rel="external noopener noreferrer" target="_blank">Safe instance</a>
+</li>
+          <li>
+<code class="highlighter-rouge">ERC721Token: Contract</code> - an <a href="https://docs.ethers.io/v5/api/contract/contract/" rel="external noopener noreferrer" target="_blank">ethers.js Contract</a> representing the ERC721 token</li>
+        </ul>
+      </li>
+    </ul>
 
-<p>Initialize the <code class="highlighter-rouge">ERC721TransactionBuilder</code>.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ERC721TransactionBuilder</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/safe-transactions-sdk</span><span class="dl">"</span><span class="p">;</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ERC721TransactionBuilder</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/safe-transactions-sdk</span><span class="dl">"</span><span class="p">;</span>
 
 <span class="kd">const</span> <span class="nx">erc721TransactionBuilder</span> <span class="o">=</span> <span class="nx">ERC721TransactionBuilder</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span>
   <span class="nx">safe</span><span class="p">,</span>
   <span class="nx">ERC721Token</span>
 <span class="p">);</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-
-<ul>
-  <li>
-<code class="highlighter-rouge">safe: Safe</code> - a <a href="https://github.com/gnosis/safe-core-sdk/blob/main/packages/safe-core-sdk/src/Safe.ts" rel="external noopener noreferrer" target="_blank">Safe instance</a>
-</li>
-  <li>
-<code class="highlighter-rouge">ERC721Token: Contract</code> - an <a href="https://docs.ethers.io/v5/api/contract/contract/" rel="external noopener noreferrer" target="_blank">ethers.js Contract</a> representing the ERC721 token</li>
-</ul>
-
-<h3 id="transferfrom-transaction">TransferFrom transaction</h3>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">transferFrom</span><span class="p">(</span>
-  <span class="k">from</span><span class="p">,</span>
-  <span class="nx">to</span><span class="p">,</span>
-  <span class="nx">tokenId</span>
-<span class="p">);</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-
-<ul>
-  <li>
+</code></pre></div>    </div>
+  </li>
+  <li>TransferFrom transaction
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
 <code class="highlighter-rouge">from: string</code> - the address <code class="highlighter-rouge">from</code> which transfers the token identified by <code class="highlighter-rouge">tokenId</code>
 </li>
-  <li>
+          <li>
 <code class="highlighter-rouge">to: string</code> - the address will receive the token identified by <code class="highlighter-rouge">tokenId</code>
 </li>
-  <li>
+          <li>
 <code class="highlighter-rouge">tokenId: BigNumber</code> - the id of the token will be transferred to address <code class="highlighter-rouge">to</code>
 </li>
-</ul>
+        </ul>
+      </li>
+    </ul>
 
-<blockquote>
-  <p><strong>IMPORTANT</strong>: Only the current owner, an authorized operator, or the approved address can call this method, see <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721</a></p>
-</blockquote>
-
-<h3 id="safetransferfrom-transactions">SafeTransferFrom transactions</h3>
-
-<p>The <code class="highlighter-rouge">safeTransferFrom</code> methods perform the same operation performed by <code class="highlighter-rouge">transferFrom</code> and additionally, if the receiver is a contract address, they check if the contract address implements the interface <code class="highlighter-rouge">ERC721TokenReceiver</code> and it returns the value <code class="highlighter-rouge">0x150b7a02</code>, obtained from <code class="highlighter-rouge">bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"))</code>. For further info, see <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721</a></p>
-
-<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">ERC721TokenReceiver</span> <span class="p">{</span>
-    <span class="kd">function</span> <span class="nx">onERC721Received</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_operator</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">_from</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">_tokenId</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">_data</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">returns</span><span class="p">(</span><span class="nx">bytes4</span><span class="p">);</span>
-<span class="p">}</span>
-
-</code></pre></div></div>
-
-<blockquote>
-  <p><strong>IMPORTANT</strong>: Only the current owner, an authorized operator, or the approved address can call this method, see <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721</a></p>
-</blockquote>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">safeTransferFrom</span><span class="p">(</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">transferFrom</span><span class="p">(</span>
   <span class="k">from</span><span class="p">,</span>
   <span class="nx">to</span><span class="p">,</span>
   <span class="nx">tokenId</span>
 <span class="p">);</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
 
-<p>It can be called with the optional <code class="highlighter-rouge">data</code> parameter that will be sent to the receiver with the <code class="highlighter-rouge">onERC721Received</code> call.</p>
+    <blockquote class="mt-3">
+      <p><strong>IMPORTANT</strong>: Only the current owner, an authorized operator, or the approved address can call this method, see <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721</a></p>
+    </blockquote>
+  </li>
+  <li>SafeTransferFrom transactions
+    <ul>
+      <li>The <code class="highlighter-rouge">safeTransferFrom</code> methods perform the same operation performed by <code class="highlighter-rouge">transferFrom</code> and additionally, if the receiver is a contract address, they check if the contract address implements the interface <code class="highlighter-rouge">ERC721TokenReceiver</code> and it returns the value <code class="highlighter-rouge">0x150b7a02</code>, obtained from <code class="highlighter-rouge">bytes4(keccak256("onERC721Received(address,address,uint256,bytes)"))</code>. For further info, see <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721</a>
+</li>
+    </ul>
 
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">safeTransferFrom</span><span class="p">(</span>
+    <div class="language-solidity highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kr">interface</span> <span class="nx">ERC721TokenReceiver</span> <span class="p">{</span>
+    <span class="kd">function</span> <span class="nx">onERC721Received</span><span class="p">(</span><span class="nx">address</span> <span class="nx">_operator</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">_from</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">_tokenId</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">_data</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">returns</span><span class="p">(</span><span class="nx">bytes4</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+
+    <blockquote>
+      <p><strong>IMPORTANT</strong>: Only the current owner, an authorized operator, or the approved address can call this method, see <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721</a></p>
+    </blockquote>
+
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
+<code class="highlighter-rouge">from: string</code> - the address <code class="highlighter-rouge">from</code> which transfers the token identified by <code class="highlighter-rouge">tokenId</code>
+</li>
+          <li>
+<code class="highlighter-rouge">to: string</code> - the address will receive the token identified by <code class="highlighter-rouge">tokenId</code>
+</li>
+          <li>
+<code class="highlighter-rouge">tokenId: BigNumber</code> - the id of the token will be transferred to address <code class="highlighter-rouge">to</code>
+</li>
+          <li>
+<code class="highlighter-rouge">data: string</code> - Optional, the data that will be sent to the receiver with the <code class="highlighter-rouge">onERC721Received</code> call.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">safeTransferFrom</span><span class="p">(</span>
+  <span class="k">from</span><span class="p">,</span>
+  <span class="nx">to</span><span class="p">,</span>
+  <span class="nx">tokenId</span>
+<span class="p">);</span>
+</code></pre></div>    </div>
+
+    <p>It can be called with the optional <code class="highlighter-rouge">data</code> parameter that will be sent to the receiver with the <code class="highlighter-rouge">onERC721Received</code> call.</p>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">safeTransferFrom</span><span class="p">(</span>
   <span class="k">from</span><span class="p">,</span> 
   <span class="nx">to</span><span class="p">,</span>
   <span class="nx">tokenId</span>
   <span class="nx">data</span>
 <span class="p">)</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-
-<ul>
-  <li>
-<code class="highlighter-rouge">from: string</code> - the address <code class="highlighter-rouge">from</code> which transfers the token identified by <code class="highlighter-rouge">tokenId</code>
-</li>
-  <li>
-<code class="highlighter-rouge">to: string</code> - the address will receive the token identified by <code class="highlighter-rouge">tokenId</code>
-</li>
-  <li>
-<code class="highlighter-rouge">tokenId: BigNumber</code> - the id of the token will be transferred to address <code class="highlighter-rouge">to</code>
-</li>
-  <li>
-<code class="highlighter-rouge">data: string</code> - Optional, the data that will be sent to the receiver with the <code class="highlighter-rouge">onERC721Received</code> call.</li>
-</ul>
-
-<h3 id="approve-transaction">Approve transaction</h3>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">approved</span><span class="p">,</span> <span class="nx">tokenId</span><span class="p">);</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-
-<ul>
-  <li>
-<code class="highlighter-rouge">approved: string</code> - the address allowed to execute transfer operations in behalf of the owner</li>
-  <li>
+</code></pre></div>    </div>
+  </li>
+  <li>Approve transaction
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>Parameters:
+        <ul>
+          <li>
+<code class="highlighter-rouge">approved: string</code> - the address allowed to execute transfer operations on behalf of the owner</li>
+          <li>
 <code class="highlighter-rouge">tokenId: BigNumber</code> - the id of the token</li>
-</ul>
+        </ul>
+      </li>
+    </ul>
 
-<blockquote>
-  <p><strong>IMPORTANT</strong>: See <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721 approval method</a></p>
-</blockquote>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">approved</span><span class="p">,</span> <span class="nx">tokenId</span><span class="p">);</span>
+</code></pre></div>    </div>
 
-<h3 id="setapprovalforall-transaction">SetApprovalForAll Transaction</h3>
+    <blockquote class="mt-3">
+      <p><strong>IMPORTANT</strong>: See <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721 approval method</a></p>
+    </blockquote>
+  </li>
+  <li>SetApprovalForAll Transaction
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+        <p>It sets or unsets approval for a specific operator, that allows the operator to perform transfer operations on behalf of the owner.</p>
+      </li>
+      <li>
+        <p><strong>Parameters</strong></p>
+        <ul>
+          <li>
+<code class="highlighter-rouge">operator: string</code> - the address allowed/forbidden to execute transfer operations on behalf of the owner’s tokens</li>
+          <li>
+<code class="highlighter-rouge">approved: boolean</code> - set to <code class="highlighter-rouge">true</code> to allow the operator to execute the operations on behalf of the owner, can be set to <code class="highlighter-rouge">false</code> to disallow the approval.</li>
+        </ul>
+      </li>
+    </ul>
 
-<p>It sets or unsets approval for a specific operator, that allows the operator to perform transfer operations on behalf of the owner.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">setApprovalForAll</span><span class="p">(</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">await</span> <span class="nx">erc721TransactionBuilder</span><span class="p">.</span><span class="nx">setApprovalForAll</span><span class="p">(</span>
   <span class="nx">operator</span><span class="p">,</span>
   <span class="nx">approved</span>
 <span class="p">)</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
 
-<p>Parameters:</p>
-
-<ul>
-  <li>
-<code class="highlighter-rouge">operator: string</code> - the address allowed/forbidden to execute transfer operations on behalf of the owner’s tokens</li>
-  <li>
-<code class="highlighter-rouge">approved: boolean</code> - set to <code class="highlighter-rouge">true</code> to allow the operator to execute the operations on behalf of the owner, can be set to <code class="highlighter-rouge">false</code> to disallow the approval.</li>
+    <blockquote class="mt-3">
+      <p><strong>IMPORTANT</strong>: See <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721 setApprovalForAll method</a></p>
+    </blockquote>
+  </li>
 </ul>
-
-<blockquote>
-  <p><strong>IMPORTANT</strong>: See <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC721 setApprovalForAll method</a></p>
-</blockquote>
 
 
                   
@@ -2235,7 +2254,7 @@
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="collapsible">
          </div>
       </section>
 

@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../">Multisig</a>
+            <a href="../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../">Overview</a></li>
+              <li><a href="../../product/">Product</a></li>
+              <li><a href="../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../">Get Started</a></li>
                   <li><a href="../creation/">Create a Multisig account</a></li>
-                  <li><a href="../policies/#owners">Change owners</a></li>
-                  <li><a href="../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../rbtc/">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="./">Get the pending and past transactions</a></li>
                   <li><a href="../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../sample-application/">Sample Application</a></li>
               <li><a href="../../contracts/">Smart contracts</a></li>
               <li><a href="../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1057,7 +1056,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/multisig/">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -1089,7 +1088,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+    <!--time role="presentation" datetime="2021-07-22 13:16:53 +0000T00:00:00.000Z">2021-07-22</time> | -->
      5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/listing.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1646,16 +1645,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../">Multisig</a>
+            <a href="../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../">Overview</a></li>
+              <li><a href="../../product/">Product</a></li>
+              <li><a href="../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../">Get Started</a></li>
                   <li><a href="../creation/">Create a Multisig account</a></li>
-                  <li><a href="../policies/#owners">Change owners</a></li>
-                  <li><a href="../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../rbtc/">RBTC</a>
@@ -1680,17 +1681,14 @@
                       <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="./">Get the pending and past transactions</a></li>
                   <li><a href="../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../sample-application/">Sample Application</a></li>
               <li><a href="../../contracts/">Smart contracts</a></li>
               <li><a href="../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2027,108 +2025,158 @@
 <a href="https://www.npmjs.com/package/@gnosis.pm/safe-service-client" rel="external noopener noreferrer" target="_blank">@gnosis.pm/safe-service-client</a> (still in alpha version as June 2021), client SDK to facilitate the interaction with the <a href="https://github.com/gnosis/safe-transaction-service" rel="external noopener noreferrer" target="_blank">Safe Transaction Service API</a>.</li>
 </ul>
 
-<h2 id="safeserviceclient-initialization">SafeServiceClient initialization</h2>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">SafeServiceClient</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@gnosis.pm/safe-service-client</span><span class="dl">"</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">safeService</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SafeServiceClient</span><span class="p">(</span><span class="nx">SAFE_TRANSACTION_SERVICE_URL</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="get-safe-accounts-by-owner">Get Safe accounts by owner</h2>
-
-<p>It retrieves the list of safes for which the account provided is among the owners.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safesByOwner</span><span class="p">:</span> <span class="nx">OwnerResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeServiceClient</span><span class="p">.</span><span class="nx">getSafesByOwner</span><span class="p">(</span>
-    <span class="nx">ownerAddress</span>
-<span class="p">);</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
+<p><a href="#top" title="collapsible"></a></p>
 <ul>
-  <li>
+  <li>Safe Transaction Service addresses
+    <ul>
+      <li>
+<strong>MAINNET</strong>: <strong>TBD</strong>
+</li>
+      <li>
+<strong>TESTNET</strong>: <code class="highlighter-rouge">https://safe-transaction.testnet.rifos.org/</code>
+</li>
+    </ul>
+  </li>
+  <li>SafeServiceClient initialization
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
+<code class="highlighter-rouge">SAFE_TRANSACTION_SERVICE_URL: string</code> - the address where the safe transaction service has been deployed to</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="k">import</span> <span class="nx">SafeServiceClient</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@gnosis.pm/safe-service-client</span><span class="dl">"</span><span class="p">;</span>
+
+  <span class="kd">const</span> <span class="nx">safeService</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SafeServiceClient</span><span class="p">(</span><span class="nx">SAFE_TRANSACTION_SERVICE_URL</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Get Safe accounts by owner
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+        <p>It retrieves the list of safes for which the account provided is among the owners.</p>
+      </li>
+      <li>
+        <p><strong>Parameters</strong></p>
+        <ul>
+          <li>
 <code class="highlighter-rouge">ownerAddress: string</code> - the address of the owner for which we want to retrieve the safe addresses</li>
-</ul>
+        </ul>
+      </li>
+    </ul>
 
-<h2 id="get-the-list-of-pending-transactions">Get the list of pending transactions</h2>
-
-<p>With the list of safe addresses previously retrieved, we need to collect all the pending transactions for each safe address.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">pendingTransactions</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeService</span><span class="p">.</span><span class="nx">getPendingTransactions</span><span class="p">(</span><span class="nx">safeAddress</span><span class="p">);</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-<ul>
-  <li>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">safesByOwner</span><span class="p">:</span> <span class="nx">OwnerResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeServiceClient</span><span class="p">.</span><span class="nx">getSafesByOwner</span><span class="p">(</span>
+      <span class="nx">ownerAddress</span>
+  <span class="p">);</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Get the list of pending transactions
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+        <p>With the list of safe addresses previously retrieved, we need to collect all the pending transactions for each safe address.</p>
+      </li>
+      <li>
+        <p><strong>Parameters</strong></p>
+        <ul>
+          <li>
 <code class="highlighter-rouge">safeAddress: string</code> - the address of the safe for which we want to retrieve the transactions</li>
-  <li>
+          <li>
 <code class="highlighter-rouge">nonce?: number</code> - optional, it is used to filter the transactions with nonce greater than or equal to the one specified.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">pendingTransactions</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeService</span><span class="p">.</span><span class="nx">getPendingTransactions</span><span class="p">(</span><span class="nx">safeAddress</span><span class="p">);</span>
+</code></pre></div>    </div>
+
+    <p>It uses the following query to retrieve all transactions:</p>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">PENDING_TRANSACTIONS_URL</span> <span class="o">=</span> <span class="sr">/safes/</span><span class="nx">$</span><span class="p">{</span><span class="nx">safeAddress</span><span class="p">}</span><span class="sr">/multisig-transactions/</span><span class="p">?</span><span class="nx">executed</span><span class="o">=</span><span class="kc">false</span><span class="o">&amp;</span><span class="nx">nonce__gte</span><span class="o">=</span><span class="nx">$</span><span class="p">{</span><span class="nx">nonce</span><span class="p">}</span><span class="s2">`
+</span></code></pre></div>    </div>
+
+    <p>The service doesn’t allow filtering transactions by confirmations, so the filter must be applied on client-side after retrieving the transactions.
+  For checking if a transaction has been confirmed by an owner, we need to check the <code class="highlighter-rouge">confirmations</code> array field in the transactions retrieved.</p>
+
+    <p>Transaction format:</p>
+
+    <div class="language-json snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"safe"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="err">...</span><span class="w">
+      </span><span class="nl">"confirmations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+              </span><span class="nl">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"submissionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-10T08:55:22.014Z"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"signature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+              </span><span class="nl">"signatureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+      </span><span class="p">],</span><span class="w">
+      </span><span class="nl">"signatures"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <p>Each confirmation has the following format:</p>
+
+    <div class="language-json snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"submissionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-10T08:55:22.014Z"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"signature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"signatureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div>    </div>
+
+    <p>So to verify if a transaction is pending because of a specific owner approval, we need to check if that owner is among the ones who haven’t confirmed the transaction yet. If the owner has already confirmed the transaction, it means the transaction is still pending because of other approvals (the approvals don’t satisfy the threshold yet).</p>
+  </li>
+  <li>Get the transaction history
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>With the list of safe addresses previously retrieved, we need to collect all the transactions (either pending or executed) for each safe address.</li>
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
+<code class="highlighter-rouge">safeAddress: string</code> - the address of the safe for which we want to retrieve the transactions</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">transactionHistory</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeServiceClient</span><span class="p">.</span><span class="nx">getMultisigTransactions</span><span class="p">(</span><span class="nx">safeAddress</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Get the list of past transactions
+    <ul>
+      <li>As of June 2021, the <code class="highlighter-rouge">safe-service-client</code> package doesn’t provide a method to retrieve all the <strong>past</strong> transactions, so we need to query the <a href="https://github.com/gnosis/safe-transaction-service" rel="external noopener noreferrer" target="_blank">Safe Transaction Service API</a> URL directly. 
+  With the list of safe addresses previously retrieved, we need to collect all the <strong>past</strong> transactions for each safe address.</li>
+    </ul>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">SAFE_TRANSACTION_SERVICE_URL</span><span class="p">}</span><span class="s2">/api/v1/safes/</span><span class="p">${</span><span class="nx">safe</span><span class="p">}</span><span class="s2">/all-transactions/?queued=false&amp;executed=true`</span><span class="p">;</span>
+</code></pre></div>    </div>
+
+    <p>So we could use the <a href="https://github.com/axios/axios#axios" rel="external noopener noreferrer" target="_blank">axios package</a> to fetch data.</p>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>  <span class="k">import</span> <span class="nx">axios</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">;</span>
+
+  <span class="kd">const</span> <span class="nx">axiosResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="nx">transactions</span> <span class="o">=</span> <span class="nx">axiosResponse</span><span class="p">.</span><span class="nx">data</span>
+</code></pre></div>    </div>
+  </li>
 </ul>
 
-<p>It uses the following query to retrieve all transactions:</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">PENDING_TRANSACTIONS_URL</span> <span class="o">=</span> <span class="sr">/safes/</span><span class="nx">$</span><span class="p">{</span><span class="nx">safeAddress</span><span class="p">}</span><span class="sr">/multisig-transactions/</span><span class="p">?</span><span class="nx">executed</span><span class="o">=</span><span class="kc">false</span><span class="o">&amp;</span><span class="nx">nonce__gte</span><span class="o">=</span><span class="nx">$</span><span class="p">{</span><span class="nx">nonce</span><span class="p">}</span><span class="s2">`
-</span></code></pre></div></div>
-
-<p>The service doesn’t allow filtering transactions by confirmations, so the filter must be applied on client-side after retrieving the transactions.
-For checking if a transaction has been confirmed by an owner, we need to check the <code class="highlighter-rouge">confirmations</code> array field in the transactions retrieved.</p>
-
-<p>Transaction format:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"safe"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="err">...</span><span class="w">
-    </span><span class="nl">"confirmations"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
-        </span><span class="p">{</span><span class="w">
-            </span><span class="nl">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"submissionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-10T08:55:22.014Z"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"signature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-            </span><span class="nl">"signatureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-        </span><span class="p">}</span><span class="w">
-    </span><span class="p">],</span><span class="w">
-    </span><span class="nl">"signatures"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Each confirmation has the following format:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-    </span><span class="nl">"owner"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"submissionDate"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2021-06-10T08:55:22.014Z"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"transactionHash"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"signature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"signatureType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"string"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-<p>So to verify if a transaction is pending because of a specific owner approval, we need to check if that owner is among the ones who haven’t confirmed the transaction yet. If the owner has already confirmed the transaction, it means the transaction is still pending because of other approvals (the approvals don’t satisfy the threshold yet).</p>
-
-<h2 id="get-the-transaction-history">Get the transaction history</h2>
-
-<p>With the list of safe addresses previously retrieved, we need to collect all the transactions (either pending or executed) for each safe address.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">transactionHistory</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">safeServiceClient</span><span class="p">.</span><span class="nx">getMultisigTransactions</span><span class="p">(</span><span class="nx">safeAddress</span><span class="p">)</span>
-</code></pre></div></div>
-
-<h2 id="get-the-list-of-past-transactions">Get the list of past transactions</h2>
-
-<p>Right now the <code class="highlighter-rouge">safe-service-client</code> package doesn’t provide a method to retrieve all the <strong>past</strong> transactions, so we need to query the <a href="https://github.com/gnosis/safe-transaction-service" rel="external noopener noreferrer" target="_blank">Safe Transaction Service API</a> URL directly. 
-With the list of safe addresses previously retrieved, we need to collect all the <strong>past</strong> transactions for each safe address.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">`</span><span class="p">${</span><span class="nx">SAFE_TRANSACTION_SERVICE_URL</span><span class="p">}</span><span class="s2">/api/v1/safes/</span><span class="p">${</span><span class="nx">safe</span><span class="p">}</span><span class="s2">/all-transactions/?queued=false&amp;executed=true`</span><span class="p">;</span>
-</code></pre></div></div>
-
-<p>So we could use the <a href="https://github.com/axios/axios#axios" rel="external noopener noreferrer" target="_blank">axios package</a> to fetch data.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">axios</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">axios</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">axiosResponse</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">axios</span><span class="p">.</span><span class="kd">get</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
-<span class="kd">const</span> <span class="nx">transactions</span> <span class="o">=</span> <span class="nx">axiosResponse</span><span class="p">.</span><span class="nx">data</span>
-</code></pre></div></div>
-
-<p><strong>Important</strong>: Since that the library is still in alpha version, all the methods afore mentioned don’t allow to query transactions per page, and the default limit is set to 100.</p>
+<p><strong>Important</strong>: Since the library is still in the alpha version, all the methods aforementioned don’t allow to query transactions per page, and the default limit is set to 100.</p>
 
 
                   
@@ -2194,7 +2242,7 @@ With the list of safe addresses previously retrieved, we need to collect all the
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="collapsible">
          </div>
       </section>
 

@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../">Multisig</a>
+            <a href="../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../">Overview</a></li>
+              <li><a href="../../product/">Product</a></li>
+              <li><a href="../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../">Get Started</a></li>
                   <li><a href="../creation/">Create a Multisig account</a></li>
-                  <li><a href="../policies/#owners">Change owners</a></li>
-                  <li><a href="../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../rbtc/">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="./">Reject pending transactions</a></li>
-                  <li><a href="../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../sample-application/">Sample Application</a></li>
               <li><a href="../../contracts/">Smart contracts</a></li>
               <li><a href="../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1057,7 +1056,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/multisig/">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -1089,7 +1088,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+    <!--time role="presentation" datetime="2021-07-22 13:17:19 +0000T00:00:00.000Z">2021-07-22</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/rejecting.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1646,16 +1645,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../">Multisig</a>
+            <a href="../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../">Overview</a></li>
+              <li><a href="../../product/">Product</a></li>
+              <li><a href="../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../">Get Started</a></li>
                   <li><a href="../creation/">Create a Multisig account</a></li>
-                  <li><a href="../policies/#owners">Change owners</a></li>
-                  <li><a href="../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../rbtc/">RBTC</a>
@@ -1680,17 +1681,14 @@
                       <li><a href="../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="./">Reject pending transactions</a></li>
-                  <li><a href="../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../sample-application/">Sample Application</a></li>
               <li><a href="../../contracts/">Smart contracts</a></li>
               <li><a href="../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2040,23 +2038,23 @@ For instance, if the current threshold is set to 2, rejecting a transaction will
 
 <h2 id="rejection-transaction-creation">Rejection transaction creation</h2>
 
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">rejectTx</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/safe-transactions-sdk</span><span class="dl">'</span>
+<p>It creates a new transaction, <code class="highlighter-rouge">rejectionTx</code>,  that must be approved and executed in order to invalidate the original one.</p>
+
+<p><strong>Parameters</strong>:</p>
+<ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+  <li>
+<code class="highlighter-rouge">safe: Safe</code> - the safe previously created</li>
+  <li>
+<code class="highlighter-rouge">transaction: SafeTransaction</code> - the transaction to be rejected.</li>
+</ul>
+
+<div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">rejectTx</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/safe-transactions-sdk</span><span class="dl">'</span>
 
 <span class="kd">const</span> <span class="nx">rejectionTx</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">rejectTx</span><span class="p">(</span><span class="nx">safe</span><span class="p">,</span> <span class="nx">transaction</span><span class="p">)</span>
 </code></pre></div></div>
 
-<p>It creates a new transaction <code class="highlighter-rouge">rejectionTx</code> that must to be approved and executed in order to invalidate the original one.</p>
-
-<p>Parameters:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">safe: Safe</code> - the safe previously created</li>
-  <li>
-<code class="highlighter-rouge">transaction: SafeTransaction</code> - the transaction we want to reject.</li>
-</ul>
-
-<blockquote>
-  <p><strong>IMPORTANT</strong>: With the previously mentioned method, we are creating the rejection transaction, but we are not executing it. The rejection is successful only once it signed (according to the safe threshold) and executed. Please refers to <a href="../transaction_confirmation/">transaction execution</a> for further instructions.</p>
+<blockquote class="mt-3">
+  <p><strong>IMPORTANT</strong>: With the previously mentioned method, we are creating the rejection transaction, but we are not executing it. The rejection is successful only once it’s signed (according to the safe threshold) and executed. Please refer to <a href="../transaction_confirmation/">transaction execution</a> for further instructions.</p>
 </blockquote>
 
 

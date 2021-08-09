@@ -15,7 +15,7 @@
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
       <link rel="canonical" href="https://developers.rsk.co/rif/multisig/">
-   	<title>RIF Multisig - RSK Developers Portal</title>
+   	<title>RIF Savings and Vault Solution - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/favicons/favicon-32x32.png">
@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="./">Multisig</a>
+            <a href="./">Savings and Vault</a>
             <ul>
+              <li><a href="./">Overview</a></li>
+              <li><a href="product/">Product</a></li>
+              <li><a href="gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="sdk/">Get Started (SDK)</a>
                 <ul>
                   <li><a href="sdk/">Get Started</a></li>
                   <li><a href="sdk/creation/">Create a Multisig account</a></li>
-                  <li><a href="sdk/policies/#owners">Change owners</a></li>
-                  <li><a href="sdk/policies/#threshold">Change threshold</a></li>
+                  <li><a href="sdk/policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="sdk/rbtc/">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="sdk/erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="sdk/listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="sdk/listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="sdk/listing/">Get the pending and past transactions</a></li>
                   <li><a href="sdk/transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="sdk/rejecting/">Reject pending transactions</a></li>
-                  <li><a href="sdk/deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="sample-application/">Sample Application</a></li>
               <li><a href="contracts/">Smart contracts</a></li>
               <li><a href="transaction-service/">Transaction service</a></li>
-              <li><a href="sample-app/">Learn (sample app)</a></li>
-              <li><a href="project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1056,7 +1055,7 @@
 		
 			
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</li>
 				
@@ -1073,16 +1072,16 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-13 02:39:10 +0000T00:00:00.000Z">2021-07-13</time> | -->
+    <!--time role="presentation" datetime="2021-08-03 18:11:22 +0000T00:00:00.000Z">2021-08-03</time> | -->
      1' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/&amp;text=RIF%20Multisig&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/&amp;text=RIF%20Savings%20and%20Vault%20Solution&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
           <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
           <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/multisig/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=RIF%20Multisig&amp;body=RIF%20Multisig%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/multisig/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=RIF%20Savings%20and%20Vault%20Solution&amp;body=RIF%20Savings%20and%20Vault%20Solution%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/multisig/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
           <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/multisig/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
@@ -1630,16 +1629,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="./">Multisig</a>
+            <a href="./">Savings and Vault</a>
             <ul>
+              <li><a href="./">Overview</a></li>
+              <li><a href="product/">Product</a></li>
+              <li><a href="gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="sdk/">Get Started (SDK)</a>
                 <ul>
                   <li><a href="sdk/">Get Started</a></li>
                   <li><a href="sdk/creation/">Create a Multisig account</a></li>
-                  <li><a href="sdk/policies/#owners">Change owners</a></li>
-                  <li><a href="sdk/policies/#threshold">Change threshold</a></li>
+                  <li><a href="sdk/policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="sdk/rbtc/">RBTC</a>
@@ -1664,17 +1665,14 @@
                       <li><a href="sdk/erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="sdk/listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="sdk/listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="sdk/listing/">Get the pending and past transactions</a></li>
                   <li><a href="sdk/transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="sdk/rejecting/">Reject pending transactions</a></li>
-                  <li><a href="sdk/deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="sample-application/">Sample Application</a></li>
               <li><a href="contracts/">Smart contracts</a></li>
               <li><a href="transaction-service/">Transaction service</a></li>
-              <li><a href="sample-app/">Learn (sample app)</a></li>
-              <li><a href="project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2002,15 +2000,26 @@
     </a>
 </div>
 
-                  <h1 class="page-title" id="top">RIF Multisig</h1>
+                  <h1 class="page-title" id="top">RIF Savings and Vault Solution</h1>
 
-                  <p>The objective of this project is to provide the RSK community with a safe and simple solution to create wallets that require multiple signatures to transact their funds. These kinds of wallets are called <em>multisig wallets</em>.</p>
+                  <p>The objective of this project is to provide the RSK community with a safe and simple (from a technical POV) solution to create accounts that require multiple signatures to transact their funds.</p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p>The solution consists of four main modules:</p>
+
+<ul>
+  <li>A suite of smart contracts that allow creating multi-sig accounts</li>
+  <li>A Node.js and Web SDK for creating and operating multi-sig</li>
+  <li>Proper documentation that will help developers to integrate the solution to different projects</li>
+  <li>A sample application exposing a correct user experience for operating multi-sig.</li>
+</ul>
 
 <div class="container the-stack">
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="sdk">Get started</a>
+        <a href="sdk">Get Started</a>
         <br>
         <br>
         <p>Use the Javascript SDKs to create and operate multisig wallets</p>
@@ -2018,34 +2027,22 @@
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="sample-app">Learn</a>
+        <a href="https://sample-app-multisig.rifos.org/" rel="external noopener noreferrer" target="_blank">Sample Application</a>
         <br>
         <br>
-        <p>Take a look at the the sample application, you will find handy snippets in the code</p>
+        <p>Take a look at the sample application, you will find handy snippets in the code</p>
       </div>
     </div>
-  </div>
-  <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="contracts">Read more</a>
+        <a href="gnosis-summary">Gnosis Summary</a>
         <br>
         <br>
         <p>Understand the smart contracts and the architecture</p>
       </div>
     </div>
-    <div class="col">
-      <div class="rns-index-box">
-        <a href="project">The project</a>
-        <br>
-        <br>
-        <p>Read more about the project scope</p>
-      </div>
-    </div>
   </div>
 </div>
-
-<p><img src="../../assets/img/rif-multisig/workflow.png" alt="Multisig - Steps required"></p>
 
 
                   

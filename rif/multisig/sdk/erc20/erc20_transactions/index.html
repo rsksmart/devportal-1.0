@@ -668,16 +668,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../">Multisig</a>
+            <a href="../../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../../">Overview</a></li>
+              <li><a href="../../../product/">Product</a></li>
+              <li><a href="../../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../../">Get Started</a></li>
                   <li><a href="../../creation/">Create a Multisig account</a></li>
-                  <li><a href="../../policies/#owners">Change owners</a></li>
-                  <li><a href="../../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../../rbtc/">RBTC</a>
@@ -702,17 +704,14 @@
                       <li><a href="../../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../../sample-application/">Sample Application</a></li>
               <li><a href="../../../contracts/">Smart contracts</a></li>
               <li><a href="../../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -1057,7 +1056,7 @@
 			
 			<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
 				<a property="item" typeof="WebPage" href="/rif/multisig/">
-					<span property="name">RIF Multisig</span>
+					<span property="name">RIF Savings and Vault Solution</span>
 					<meta property="position" content="3" />
 				</a>
 			</li>
@@ -1097,7 +1096,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-06 03:38:43 +0000T00:00:00.000Z">2021-07-06</time> | -->
+    <!--time role="presentation" datetime="2021-07-22 13:16:39 +0000T00:00:00.000Z">2021-07-22</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/multisig/sdk/erc20/erc20_transactions.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1654,16 +1653,18 @@
           </li>
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../">Multisig</a>
+            <a href="../../../">Savings and Vault</a>
             <ul>
+              <li><a href="../../../">Overview</a></li>
+              <li><a href="../../../product/">Product</a></li>
+              <li><a href="../../../gnosis-summary/">Gnosis Summary</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../">Get Started (SDK)</a>
                 <ul>
                   <li><a href="../../">Get Started</a></li>
                   <li><a href="../../creation/">Create a Multisig account</a></li>
-                  <li><a href="../../policies/#owners">Change owners</a></li>
-                  <li><a href="../../policies/#threshold">Change threshold</a></li>
+                  <li><a href="../../policies/">Change owners and threshold</a></li>
                   <li>
                     <span class="fa fa-chevron-right"></span>
                     <a href="../../rbtc/">RBTC</a>
@@ -1688,17 +1689,14 @@
                       <li><a href="../../erc721/erc721_transactions/">Create ERC721 transactions</a></li>
                     </ul>
                   </li>
-                  <li><a href="../../listing/#get-the-list-of-pending-transactions">Get the list of pending transactions</a></li>
-                  <li><a href="../../listing/#get-the-list-of-past-transactions">Get the list of past transactions</a></li>
+                  <li><a href="../../listing/">Get the pending and past transactions</a></li>
                   <li><a href="../../transaction_confirmation/">Confirm pending transactions (on-chain and off-chain)</a></li>
                   <li><a href="../../rejecting/">Reject pending transactions</a></li>
-                  <li><a href="../../deleting/">Delete a Multisig</a></li>
                 </ul>
               </li>
+              <li><a href="../../../sample-application/">Sample Application</a></li>
               <li><a href="../../../contracts/">Smart contracts</a></li>
               <li><a href="../../../transaction-service/">Transaction service</a></li>
-              <li><a href="../../../sample-app/">Learn (sample app)</a></li>
-              <li><a href="../../../project/">The project</a></li>
             </ul>
           </li>
           <li>
@@ -2034,95 +2032,115 @@
 
 <p>The <code class="highlighter-rouge">ERC20TransactionBuilder</code> provides a set of methods related to <a href="https://eips.ethereum.org/EIPS/eip-20" rel="external noopener noreferrer" target="_blank">ERC20</a> transactions, including <a href="https://developers.rsk.co/rif/token/" rel="external noopener noreferrer" target="_blank">RIF token</a>.</p>
 
-<h3 id="initialization">Initialization</h3>
-<p>Initialize the <code class="highlighter-rouge">ERC20TransactionBuilder</code>.</p>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ERC20TransactionBuilder</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/safe-transactions-sdk</span><span class="dl">'</span>
-
-<span class="kd">const</span> <span class="nx">erc20TransactionBuilder</span> <span class="o">=</span> <span class="nx">ERC20TransactionBuilder</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">safe</span><span class="p">,</span> <span class="nx">ERC20Token</span><span class="p">)</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
+<p><a href="#top" title="collapsible"></a></p>
 <ul>
-  <li>
+  <li>Initialize the ERC20TransactionBuilder
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters:</strong>
+        <ul>
+          <li>
 <code class="highlighter-rouge">safe: Safe</code> - a <a href="https://github.com/gnosis/safe-core-sdk/blob/main/packages/safe-core-sdk/src/Safe.ts" rel="external noopener noreferrer" target="_blank">Safe instance</a>
 </li>
-  <li>
+          <li>
 <code class="highlighter-rouge">ERC20Token: Contract</code> - an <a href="https://docs.ethers.io/v5/api/contract/contract/" rel="external noopener noreferrer" target="_blank">ethers.js Contract</a> representing the ERC20 token</li>
-</ul>
+        </ul>
+      </li>
+    </ul>
 
-<h3 id="transfer-transaction">Transfer transaction</h3>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">ERC20TransactionBuilder</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/safe-transactions-sdk</span><span class="dl">'</span>
 
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span>
+<span class="kd">const</span> <span class="nx">erc20TransactionBuilder</span> <span class="o">=</span> <span class="nx">ERC20TransactionBuilder</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">safe</span><span class="p">,</span> <span class="nx">ERC20Token</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Transfer transaction
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
+<code class="highlighter-rouge">to: string</code> - the address will receive the amount of token specified with <code class="highlighter-rouge">transfer</code>
+</li>
+          <li>
+<code class="highlighter-rouge">transfer: BigNumber</code> - the amount of token will be transferred to address <code class="highlighter-rouge">to</code>
+</li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span>
   <span class="nx">to</span><span class="p">,</span>
   <span class="nx">transfer</span>
 <span class="p">)</span>
-</code></pre></div></div>
-
-<p>Parameters:</p>
-<ul>
-  <li>
+</code></pre></div>    </div>
+  </li>
+  <li>TransferFrom transaction
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
+<code class="highlighter-rouge">from: string</code> - the address from which to transfer the amount of token specified with <code class="highlighter-rouge">value</code>
+</li>
+          <li>
 <code class="highlighter-rouge">to: string</code> - the address will receive the amount of token specified with <code class="highlighter-rouge">transfer</code>
 </li>
-  <li>
-<code class="highlighter-rouge">transfer: BigNumber</code> - the amount of token will be transferred to address <code class="highlighter-rouge">to</code>
+          <li>
+<code class="highlighter-rouge">value: BigNumber</code> - the amount of token will be transferred to address <code class="highlighter-rouge">to</code>
 </li>
-</ul>
+        </ul>
+      </li>
+    </ul>
 
-<h3 id="transferfrom-transaction">TransferFrom transaction</h3>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">transferFrom</span><span class="p">(</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">transferFrom</span><span class="p">(</span>
   <span class="k">from</span><span class="p">,</span>
   <span class="nx">to</span><span class="p">,</span>
   <span class="nx">value</span>
 <span class="p">)</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
 
-<p>Parameters:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">from: string</code> - the address from which transfer the amount of token specified with <code class="highlighter-rouge">value</code>
-</li>
-  <li>
-<code class="highlighter-rouge">to: string</code> - the address will receive the amount of token specified with <code class="highlighter-rouge">transfer</code>
-</li>
-  <li>
-<code class="highlighter-rouge">value: BigNumber</code> - the amount of token will be transferred to address <code class="highlighter-rouge">to</code>
-</li>
-</ul>
+    <blockquote class="mt-3">
+      <p>To execute the <code class="highlighter-rouge">transferFrom</code> successfully, the <code class="highlighter-rouge">from</code> address should explicitly authorize the safe account to spend an amount equal to or greater than <code class="highlighter-rouge">value</code>. Such operation can be authorized through the <code class="highlighter-rouge">approve</code> method of the <code class="highlighter-rouge">ERC20Token</code> Contract.</p>
+    </blockquote>
 
-<blockquote>
-  <p>To execute the <code class="highlighter-rouge">transferFrom</code> successfully, the <code class="highlighter-rouge">from</code> address should explicitly authorize the safe account to spend an amount equal to or greater than <code class="highlighter-rouge">value</code>. Such operation can be authorized through the <code class="highlighter-rouge">approve</code> method of the <code class="highlighter-rouge">ERC20Token</code> Contract.</p>
-</blockquote>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">fromToken</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">MockERC20Token</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">userFrom</span><span class="p">)</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">fromToken</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">MockERC20Token</span><span class="p">.</span><span class="nx">connect</span><span class="p">(</span><span class="nx">userFrom</span><span class="p">)</span>
 <span class="k">await</span> <span class="nx">fromToken</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span><span class="nx">safe</span><span class="p">.</span><span class="nx">getAddress</span><span class="p">(),</span> <span class="nx">value</span><span class="p">)</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+  <li>Approve transaction
+    <ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+      <li>
+<strong>Parameters</strong>
+        <ul>
+          <li>
+<code class="highlighter-rouge">spender: string</code> - the address allowed to withdraw up to the amount of token specified with <code class="highlighter-rouge">amount</code>
+</li>
+          <li>
+<code class="highlighter-rouge">amount: BigNumber</code> - the maximum amount allowed to be withdrawn</li>
+        </ul>
+      </li>
+    </ul>
 
-<h3 id="approve-transaction">Approve transaction</h3>
-
-<div class="language-ts highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span>
+    <div class="language-ts snippet__code snippet__code--lightgreen border-top-0 highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">safeTransaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">erc20TransactionBuilder</span><span class="p">.</span><span class="nx">approve</span><span class="p">(</span>
   <span class="nx">spender</span><span class="p">,</span>
   <span class="nx">amount</span><span class="p">,</span>
 <span class="p">)</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
 
-<p>Parameters:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">spender: string</code> - the address allowed to withdraw up to the amount of token specified with <code class="highlighter-rouge">amount</code>
-</li>
-  <li>
-<code class="highlighter-rouge">amount: BigNumber</code> - the maximum amount allowed to be withdrawn</li>
+    <p class="mt-3">As stated in the <a href="https://eips.ethereum.org/EIPS/eip-20#methods" rel="external noopener noreferrer" target="_blank">EIP20</a> approve description:</p>
+
+    <blockquote>
+      <p>clients SHOULD make sure to create user interfaces in such a way that they first set the allowance to 0, before setting it to another value for the same spender.</p>
+    </blockquote>
+
+    <p>For further details, please read <a href="https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/" rel="external noopener noreferrer" target="_blank"><em>ERC20 API: An Attack Vector on Approve/TransferFrom Methods</em> by Mikhail Vladimirov and Dmitry Khovratovich</a>.</p>
+  </li>
 </ul>
-
-<p>As stated in the <a href="https://eips.ethereum.org/EIPS/eip-20#methods" rel="external noopener noreferrer" target="_blank">EIP20</a> approve description:</p>
-
-<blockquote>
-  <p>clients SHOULD make sure to create user interfaces in such a way that they first set the allowance to 0, before setting it to another value for the same spender.</p>
-</blockquote>
-
-<p>For further details, please read <a href="https://docs.google.com/document/d/1YLPtQxZu1UAvO9cZ1O2RPXBbT0mooh4DYKjA_jp-RLM/" rel="external noopener noreferrer" target="_blank"><em>ERC20 API: An Attack Vector on Approve/TransferFrom Methods</em> by Mikhail Vladimirov and Dmitry Khovratovich</a>.</p>
 
 
                   
@@ -2188,7 +2206,7 @@
   </div>
 </section>
          </div>
-         <div class="render-features" data-features="">
+         <div class="render-features" data-features="collapsible">
          </div>
       </section>
 
