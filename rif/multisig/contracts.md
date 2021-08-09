@@ -20,9 +20,10 @@ They apply the [proxy pattern](https://blog.openzeppelin.com/proxy-patterns/) to
 
 | Contract | RSK Testnet | RSK Mainnet |
 | - | - | - |
-| `GnosisSafe` | [`0xFFd41b816f2821e579b4DA85c7352bf4f17e4fA5`](https://explorer.testnet.rsk.co/address/0xffd41b816f2821e579b4da85c7352bf4f17e4fa5) | TBD |
-| `GnosisSafeProxyFactory` | [`0x5b836117aed4Ca4DEe8E2E464F97f7F59b426C5A`](https://explorer.testnet.rsk.co/address/0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a) | TBD |
+| `GnosisSafe` | [`0xFFd41b816f2821e579b4DA85c7352bf4f17e4fA5`](https://explorer.testnet.rsk.co/address/0xffd41b816f2821e579b4da85c7352bf4f17e4fa5) |  [`0xC6cFa90Ff601D6AAC45D8dcF194cf38B91aCa368`](https://explorer.rsk.co/address/0xC6cFa90Ff601D6AAC45D8dcF194cf38B91aCa368) |
+| `GnosisSafeProxyFactory` | [`0x5b836117aed4Ca4DEe8E2E464F97f7F59b426C5A`](https://explorer.testnet.rsk.co/address/0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a) | [`0x4b1Af52EA200BAEbF79450DBC996573A7b75f65A`](https://explorer.rsk.co/address/0x4b1Af52EA200BAEbF79450DBC996573A7b75f65A) |
 
+___
 ## `GnosisSafe`
 
 It provides the functionalities required to setup a GnosisSafe and to execute the transactions. It also exposes the methods to add, remove or swap the owners and set a new threshold.

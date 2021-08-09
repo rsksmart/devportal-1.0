@@ -81,6 +81,12 @@ $(document).ready(function () {
       case 'rsk-token-bridge-support':
         renderRskTokenBridgeSupportSetup();
         return;
+      case 'collapsible':
+        renderCollapsibleSetup();
+        return
+      case 'switch-container':
+        renderSwitchContainerSetup();
+        return
       default:
         console.error('Unsupported render feature:', feature);
     }
@@ -320,9 +326,7 @@ function renderEquationsSetup() {
 }
 
 function renderEquations() {
-  var elemNodeList = document.querySelectorAll('a[title^="tex-render "]');
-  var elems = Array.prototype.slice.call(elemNodeList);
-  elems.forEach(renderEquation);
+  setupFeature('a[title^="tex-render "]', renderEquation);
 }
 
 function renderEquation(el) {
@@ -547,11 +551,7 @@ function savedOsSelection(os) {
 }
 
 function renderCustomTerminalsSetup() {
-  var elemNodeList = document.querySelectorAll(
-    'a[title="multiple-terminals"]',
-  );
-  var elems = Array.prototype.slice.call(elemNodeList);
-  elems.forEach(renderMultipleTerminals);
+  setupFeature('a[title="multiple-terminals"]', renderMultipleTerminals)
   renderCustomTerminalsFrames();
 }
 
@@ -723,9 +723,7 @@ function renderTablesWithBorders() {
 // render feature: next elem class
 
 function renderNextElemClassSetup() {
-  var elemNodeList = document.querySelectorAll('a[title^="next-elem-class "]');
-  var elems = Array.prototype.slice.call(elemNodeList);
-  elems.forEach(renderNextElemClass);
+  setupFeature('a[title^="next-elem-class "]', renderNextElemClass);
 }
 
 function renderNextElemClass(el) {
@@ -773,3 +771,163 @@ $('#newsletter-form').submit(function() {
 
   return true;
 });
+
+
+function setupFeature(querySelector, featureRenderer) {
+  const elemNodeList = document.querySelectorAll(
+    querySelector,
+  );
+  const elems = Array.prototype.slice.call(elemNodeList);
+  elems.forEach(featureRenderer);
+}
+
+// render features: 'collapsible'
+
+function renderCollapsibleSetup() {
+  setupFeature('a[title="collapsible"]', renderCollapsible);
+}
+
+function renderAccordionHeader(li, headerId, bodyId, isOpen) {
+  if (!li.firstChild) {
+    console.warn('Missing li child used as accordion header')
+    return
+  }
+  const headerContainer = document.createElement('div');
+  headerContainer.setAttribute("id", headerId);
+  headerContainer.classList.add("card-header");
+  const a = document.createElement("a");
+  a.classList.add("btn");
+  
+  a.setAttribute("data-toggle", "collapse");
+  a.setAttribute("data-target", `#${bodyId}`);
+  if (isOpen) {
+    a.setAttribute("aria-expanded", "true");
+  } else {
+    a.classList.add("collapsed");
+  }
+  a.textContent = li.firstChild.textContent;
+  const hint = document.createElement("span")
+  hint.classList.add("hint");
+  a.appendChild(hint)
+  headerContainer.appendChild(a)
+  return headerContainer
+}
+
+function renderAccordionBody(li, headerId, bodyId, isOpen) {
+  if (!li.children) {
+    // we don't return here, we render the empty body 
+    console.warn("Accordion body empty")
+  }
+  const bodyContainer = document.createElement('div');
+  bodyContainer.setAttribute("id", bodyId);
+  bodyContainer.classList.add("collapse");
+  if (isOpen) {
+    bodyContainer.classList.add("show");
+  }
+  bodyContainer.setAttribute("aria-labelledby", headerId);
+  const body = document.createElement('div');
+  body.append(...li.children)
+  body.classList.add("card-body");
+  bodyContainer.appendChild(body);
+  return bodyContainer;
+}
+
+function renderAccordionItem(li, liIndex, collapsibleIndex, isOpen) {
+  const headerId = `collapsible-${collapsibleIndex}-header-${liIndex}`;
+  const bodyId = `collapsible-${collapsibleIndex}-body-${liIndex}`;
+
+  const headerContainer = renderAccordionHeader(li, headerId, bodyId, isOpen);
+  const bodyContainer = renderAccordionBody(li, headerId, bodyId, isOpen);
+  const card = document.createElement("div");
+  card.classList.add("card");
+  card.classList.add("accordion__rsk");
+  card.appendChild(headerContainer);
+  card.appendChild(bodyContainer);
+  return card
+}
+
+function renderCollapsible(elem, collapsibleIndex) {
+  const ul = elem.parentNode.nextElementSibling;
+  if (!ul && ul.tagName !== 'UL') {
+    console.warn('Expected an <ul> element:', el);
+    return;
+  }
+  // use the class 'open' to set the initial status of the accordion
+  const isOpen = elem.classList.contains('open');
+  const children = Array.prototype.slice.call(ul.children);
+  if (children.length === 0) {
+    console.warn('Expected at least 1 <li> element:', ul);
+    return;
+  }
+  const accordionItems = children.map((li, liIndex) => renderAccordionItem(li, liIndex, collapsibleIndex, isOpen));
+  const accordion = document.createElement("div");
+  accordion.classList.add("accordion");
+  accordion.append(...accordionItems);
+  ul.replaceWith(accordion);
+  elem.remove()
+}
+
+// render features: 'switch-container'
+
+function renderSwitchContainerSetup() {
+  setupFeature('a[title="switch-container"]', renderSwitchContainer);
+}
+
+function renderSwitchLabel(textContent){
+  const label = document.createElement("div");
+  label.classList.add("switch__label");
+  label.textContent = textContent;
+  return label
+}
+
+function renderSwitch(ul) {
+  const basicChildren = Array.prototype.slice.call(ul.children[0].children);
+  const advancedChildren = Array.prototype.slice.call(ul.children[1].children);;
+  const switchContainer = document.createElement("div");
+  switchContainer.classList.add("switch");
+
+  const switchContent = document.createElement("div");
+  switchContent.classList.add("switch__content");
+  const basicContent = document.createElement("div");
+  basicContent.append(...basicChildren);
+  const advancedContent = document.createElement("div");
+  advancedContent.classList.add("d-none")
+  advancedContent.append(...advancedChildren);
+  switchContent.append(...[basicContent, advancedContent]);
+
+  // <label>Basic</label>
+  //   <div class="knob"></div>
+  //   <label>Advanced</label>
+  const switchController = document.createElement("div");
+  switchController.classList.add("switch__controller");
+  switchController.addEventListener("click", function () {
+    this.classList.toggle("switch__controller--on");
+    for (let i = 0; i < switchContent.children.length; i++){
+      switchContent.children[i].classList.toggle('d-none')
+    }
+  });
+  const basicLabel = renderSwitchLabel("Basic");
+  const knob = document.createElement("div");
+  knob.classList.add("switch__knob");
+  const advancedLabel = renderSwitchLabel("Advanced");
+  switchController.append(...[basicLabel, knob, advancedLabel]);
+
+  switchContainer.append(...[switchController, switchContent]);
+  return switchContainer;
+}
+
+function renderSwitchContainer(elem, index) {
+  const ul = elem.parentNode.nextElementSibling;
+  if (!ul && ul.tagName !== 'UL') {
+    console.warn('Expected an <ul> element:', el);
+    return;
+  }
+  if (!ul.children || ul.children.length !== 2) {
+    console.warn('Switch-container features supports exactly 2 children', el);
+    return;
+  }
+  const switchContainer = renderSwitch(ul);
+
+  ul.replaceWith(switchContainer)
+  // elem.remove()
+}
