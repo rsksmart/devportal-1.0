@@ -154,30 +154,28 @@ Detailed documentation can be found [here](https://eips.ethereum.org/EIPS/eip-71
 
 ![Enveloping - Smart Wallet with Gasless EOA](/assets/img/rif-enveloping/SmartWalletWithGasless.jpg)
 
-The gas-less requester has a SmartWallet address where they receive tokens but don't use them. If the requester needs to call a contract, e.g,  to send the tokens to another account, they must deploy a Smart Wallet first.
+The gas-less requester has a SmartWallet address where they receive tokens but don't use them. If the requester needs to call a contract, e.g., to send the tokens to another account, they must deploy a Smart Wallet first.
 
-1. A Requester creates a deployWallet request.
-2. A Requester sends the request to the Relay Server through Relay Client.
-3. Relay Client wraps the transaction sent by the Requester in a Deploy Request to create the Smart Wallet and signs it.
-4. The Relay Client sends to the Relay Server a Deploy Request (via HTTPClient-HTTPServer)
+1. A Requester creates a deploy wallet request.
+2. A Requester sends the request to the Relay Server through the Relay Client.
+3. The Relay Client wraps the transaction sent by the Requester in a Deploy Request to create the Smart Wallet and signs it.
+4. The Relay Client sends to the Relay Server a Deploy Request (via HTTP Client ↔ HTTP Server).
 5. The Relay Server signs the transaction containing the Deploy Request, with the Relay Worker account.
-6. The Relay Server sends the request to the Relay Hub using the Relay Worker account executing the relay call function of the Relay Hub contract. Following the same process from step 6.
-7. The Relay Hub invokes the `preRelayCall` method in the Deploy Paymaster contract using the received Deploy Request as parameters.
-8. The Deploy Paymaster must ensure:
-    - The Paymaster accepts the offered tokens.
-    - The Proxy Factory instance to use is known by the paymaster
+6. The Relay Server sends the request to the Relay Hub using the Relay Worker account executing the `relayCall` function of the Relay Hub contract. 
+  - Here's where the Relay Server will typically call the Deploy Verifier to ensure:
+    - The Verifier accepts the offered tokens.
+    - The Proxy Factory instance to use is known by the verifier.
     - The Proxy Factory contract isn’t creating an existing Smart Wallet.
     - The requester has enough tokens to pay.
-9. The Relay Hub calls the Proxy Factory using the method relayedUserSmartWalletCreation.
-10. The Proxy Factory performs the following checks:
-    - Checks the sender’s nonce.
-    - Checks the Deploy Request signature
-11. The Proxy Factory using the `create2` opcode creates the Smart Wallet.
-12. Then it calls the `initialize` function in the Smart Wallet contract.
+7. The Relay Hub calls the Proxy Factory using the method `relayedUserSmartWalletCreation`.
+8. The Proxy Factory performs the following checks:
+    - Checks the sender's nonce.
+    - Checks the Deploy Request signature.
+9. The Proxy Factory creates the Smart Wallet using the `create2` opcode.
+10. Then it calls the `initialize` function in the Smart Wallet contract.
     - The Smart Wallet, during its initialization, executes the token transfer.
-    - Then it initializes the Smart Wallet state and sets the requester’s EOA as the owner of the Smart Wallet
-    - In the case there is a custom logic,  its initialization is called as well.
-13. The Relay Hub executes `postRelayCall` in the Paymaster.
+    - Then it initializes the Smart Wallet state and sets the requester’s EOA as the owner of the Smart Wallet.
+    - In the case there is a custom logic, its initialization is called as well.
 
 ## Deprecated
 
