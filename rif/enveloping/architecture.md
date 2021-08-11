@@ -67,8 +67,6 @@ Abstract contracts that authorizes a specific relay or deploy request (see the [
 
 The verifiers are abstract contracts that authorize and validate specific relay requests.
 
-These abstract contract has two hook methods, one to authorize the request and perform all the logic before executing the request (`preRelayedCall`), and another one to do logic after the execution (`postRelayedCall`).
-
 Two example implementations are provided:
   - **Relay Verifier**: The Relay Verifier has a list of tokens that it accepts. When it receives a relay request, checks the token’s acceptance and the payer’s balance for the token.
   - **Deploy Verifier**: An implementation used in the SmartWallet deployment process. It performs the same relay verifier checks but also makes sure that the SmartWallet to be deployed doesn’t already exist. It also checks that a Proxy Factory address is provided in the Relay Request.
@@ -138,45 +136,19 @@ Detailed documentation can be found [here](https://eips.ethereum.org/EIPS/eip-71
 ![Enveloping - Execution Flow](/assets/img/rif-enveloping/Execution-flow.jpg)
 
 1. A Requester creates a request.
-2. A Requester sends the request to the Relay Client (through Relay Provider).
-3. The Relay client wraps the request into a  Relay Request and signs it.
-4. The Relay Client sends the Relay Request to the Relay Server (via HTTPClient-HTTPServer)
-5. The Relay Server create a transaction including the Relay Request and signs it with a Relay Worker account
-6. The Relay Worker account is an EOA registered in the Relay Hub
-7. The Relay Server sends the transaction to the Relay Hub using the same worker account as the previous step, executing the relayCall function of the Relay Hub contract.
-  ```solidity
-  function relayCall(
-       uint paymasterMaxAcceptanceBudget,
-       GsnTypes.RelayRequest calldata relayRequest,
-       bytes calldata signature,
-       bytes calldata approvalData,
-       uint externalGasLimit
-   )
-  ```
-    - When the Relay Hub receives a transaction from a Relay Worker, it verifies with the StakeManager that the Worker’s Relay Manager has indeed locked funds for staking (using isStacked). If not, the execution is reverted.
+2. A Requester sends the request to the Relay Client (through a Relay Provider).
+3. The Relay Client wraps the request into a Relay Request and signs it.
+4. The Relay Client sends the Relay Request to the Relay Server (via HTTP Client ↔ HTTP Server).
+5. The Relay Server create a transaction including the Relay Request and signs it with a Relay Worker account.
+6. The Relay Worker account is an EOA registered in the Relay Hub.
+7. The Relay Server sends the transaction to the Relay Hub using the same worker account as the previous step, executing the `relayCall` function of the Relay Hub contract.
+    - When the Relay Hub receives a transaction from a Relay Worker, it verifies with the Stake Manager that the Worker’s Relay Manager has indeed locked funds for staking. If not, the execution is reverted.
     - The Relay Worker account must have funds to pay the consumed gas (RBTC).
-        - This verification is done in the Relay Client and in the Relay Server as well. Then, it is done again in the Relay Hub.
-    - The Relay Hub checks if it has enough funds locked in the Relay Hub to cover the total maximum charge (RBTC) of the relay, if not the execution is reverted as well.
-8. The Relay Hub invokes the preRelayCall method in the Relay Paymaster contract passing the received Relay Request and waits for the Relay Paymaster to answer if it is possible to execute (true) or not (false).
-9. The Relay Paymaster executes its preRelayCall method and must ensure that the Requester is able to pay the tokens.
-    - The Relay Paymaster checks that it accepts the token used to pay and that the payer has a sufficient token balance. In addition, it verifies the used smart wallet is the correct one. If everything is okay, then the Paymaster returns true.
-10. The RelayHub instructs the Smart Wallet to execute the Relay Request.
-    ```solidity
-      (forwarderSuccess, vars.relayedCallSuccess,lastSuccTrx, vars.relayedCallReturnValue) = GsnEip712Library.execute(relayRequest, signature);
-    ```
-11. The Smart Wallet checks the signature and the nonce of the Requester, reverting if it fails the checking.
-12. Then, the Smart Wallet performs the token transfer between the Requester and the token recipient, using the data received within the Relay Request.
-13. It invokes the recipient contract with the indicated method in the Forward Request
-14. Finally, the Relay Hub calls the Paymaster (using the method postRelayCall).
-    ```solidity
-    vars.data = abi.encodeWithSelector(
-            IPaymaster.postRelayedCall.selector,
-            vars.recipientContext,
-            vars.relayedCallSuccess,
-            totalInitialGas - gasleft(), /*gasUseWithoutPost*/
-            relayRequest.relayData
-        );
-    ```
+        - This verification is done in the Relay Client and in the Relay Server as well, by calling the Relay Verifier. The verifier checks that it accepts the token used to pay and that the payer has a sufficient token balance. In addition, it verifies the used smart wallet is the correct one. 
+8. The RelayHub instructs the Smart Wallet to execute the Relay Request through the GsnEip712Library library.
+9. The Smart Wallet checks the signature and the nonce of the Requester, reverting if it fails the checking.
+10. Then, the Smart Wallet performs the token transfer between the Requester and the token recipient, using the data received within the Relay Request.
+11. It invokes the recipient contract with the indicated method in the Forward Request.
 
 ### Gasless Smart Wallet creation
 
