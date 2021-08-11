@@ -26,7 +26,7 @@ The plans must specify the:
 - The time window (in seconds) within a scheduled execution should run.
 - The maximum amount of gas the internal call can spend
 **The price of the plan strongly depends on these last two values**
-We recommend a value more than 15 seconds. This value will depend strongly on the [service](services) configuration.
+We recommend a value more than 15 seconds. This value will depend strongly on the [service](../services) configuration.
 For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:
 
  `scheduled time` - 10 <= `execution time` <=  `scheduled time` + 10
