@@ -5,6 +5,32 @@ tags: rif, enveloping, relay, rsk, envelope, architecture
 permalink: /rif/enveloping/architecture/
 ---
 
+## Table of Contents
+- [**Glossary**](#glossary)
+- [**On-Chain components**](#on-chain-components)
+  - [**Relay Hub**](#relay-hub)
+  - [**Smart Wallet**](#smart-wallet)
+  - [**Relay Manager**](#relay-manager)
+  - [**Relay Worker**](#relay-worker)
+  - [**Stake Manager**](#stake-manager)
+  - [**Relay & Deploy Verifier**](#relay--deploy-verifier)
+  - [**Proxies**](#proxies)
+    - [**Proxy Factory**](#proxy-factory)
+    - [**Proxy**](#proxy)
+  - [**GSNEip712Library**](#gsneip712library)
+- [**Off-Chain components**](#off-chain-components)
+  - [**Relay Server**](#relay-server)
+  - [**Relay & Deploy Requests**](#relay--deploy-requests)
+  - [**Tools**](#tools)
+    - [**Contract Interactor**](#contract-interactor)
+    - [**Relay Client**](#relay-client)
+    - [**Relay Provider**](#relay-provider)
+- [**Execution flow**](#execution-flow)
+  - [**Relaying (Smart Wallet already created)**](#relaying-smart-wallet-already-created)
+  - [**Gasless Smart Wallet creation**](#gasless-smart-wallet-creation)
+- [**Deprecated**](#deprecated)
+  - [**Paymaster**](#paymaster)
+
 ## Introduction
 
 The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by "sponsors" is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.
@@ -63,35 +89,13 @@ When a Relay Manager unauthorised a Relay Hub, it means it is unstaking from it,
 Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.
 
 ### Relay & Deploy Verifier
-Abstract contracts that authorizes a specific relay or deploy request (see the [Relay & Deploy Requests](#relay-and-deploy-requests) section).
+Abstract contracts that authorizes a specific relay or deploy request (see the [Relay & Deploy Requests](#relay--deploy-requests) section).
 
 The verifiers are abstract contracts that authorize and validate specific relay requests.
 
 Two example implementations are provided:
   - **Relay Verifier**: The Relay Verifier has a list of tokens that it accepts. When it receives a relay request, checks the token’s acceptance and the payer’s balance for the token.
   - **Deploy Verifier**: An implementation used in the SmartWallet deployment process. It performs the same relay verifier checks but also makes sure that the SmartWallet to be deployed doesn’t already exist. It also checks that a Proxy Factory address is provided in the Relay Request.
-
-## Off-chain components
-
-### Relay Server 
-The Relay Server receives sponsored transactions via HTTP.
-
-The server has only one Relay Manager address and at least one Relay Worker, and points to just one Relay Hub.
-
-When the Relay Server receives an HTTP Relay request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.
-
-The server is a service daemon, running as an HTTP service. It advertises itself (through the Relay Hub) and waits for client requests.
-
-### Relay and Deploy Requests
-An enveloping request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:
-- **Relay Data**: all information required to relay the defined Forward Request.
-- **Forward Request**: it is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
-
-When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Enveloping Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)
-
-The **Relay request** is structure that wraps the transaction sent by an end-user. It includes data required for relaying the trasaction e.g. address of the payer, address of the original requester, token payment data.
-
-The **Deploy request** structure that wraps the transaction sent to deploy a Smart wallet.
 
 ### Proxies
 
@@ -107,6 +111,33 @@ Moreover, when a proxy to the Smart Wallet is created, it can define a custom lo
 
 If a custom logic is set, it can be initialized (which would impact the proxy’s state of course). This happens automatically during the deployment of the Proxy if the code of the logic contract has defined a function that conforms to the initialize(bytes) ABI.
 
+### GSNEip712Library
+This is an auxiliary library that bridges the Relay Request into a call of a Smart Wallet or Proxy Factory (in such case, the Request is a Deploy Request).
+
+Detailed documentation can be found [here](https://eips.ethereum.org/EIPS/eip-712).
+
+## Off-chain components
+
+### Relay Server 
+The Relay Server receives sponsored transactions via HTTP.
+
+The server has only one Relay Manager address and at least one Relay Worker, and points to just one Relay Hub.
+
+When the Relay Server receives an HTTP Relay request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.
+
+The server is a service daemon, running as an HTTP service. It advertises itself (through the Relay Hub) and waits for client requests.
+
+### Relay & Deploy Requests
+An enveloping request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:
+- **Relay Data**: all information required to relay the defined Forward Request.
+- **Forward Request**: it is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
+
+When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Enveloping Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)
+
+The **Relay request** is structure that wraps the transaction sent by an end-user. It includes data required for relaying the trasaction e.g. address of the payer, address of the original requester, token payment data.
+
+The **Deploy request** structure that wraps the transaction sent to deploy a Smart wallet.
+
 ### Tools
 
 ### Contract Interactor
@@ -121,13 +152,6 @@ It is not _strictly_ needed since any dApp or user could relay transactions usin
 
 ### Relay Provider
 The access point to the Enveloping system for dApps using Web3. It wraps the RelayClient to provide Web3 compatibility.
-
-## Auxiliary
-
-### GSNEip712Library
-This is an auxiliary library that bridges the Relay Request into a call of a Smart Wallet or Proxy Factory (in such case, the Request is a Deploy Request).
-
-Detailed documentation can be found [here](https://eips.ethereum.org/EIPS/eip-712).
 
 ## Execution flow
 
