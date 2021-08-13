@@ -38,4 +38,4 @@ What you can do with this sdk?
 - [Query plans](../query-plans)
 - [Purchase one of this plans](../purchasing-plan)
 - [Schedule a transaction for the next minutes](../scheduling)
-- [Get status](../statuses)
+- [Get states](../states)
