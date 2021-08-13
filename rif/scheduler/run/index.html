@@ -1080,7 +1080,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-17 14:27:05 +0000T00:00:00.000Z">2021-06-17</time> | -->
+    <!--time role="presentation" datetime="2021-08-11 21:22:43 +0000T00:00:00.000Z">2021-08-11</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/run.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2022,7 +2022,7 @@ and run the service that will execute the transactions.</p>
   <li>plans</li>
   <li>paid tokens</li>
   <li>scheduled transactions</li>
-  <li>execution statuses</li>
+  <li>execution states</li>
 </ul>
 
 <blockquote>
@@ -2037,6 +2037,10 @@ and set it up as explained in the Readme.</p>
 You will find one for local networks,
 other for RSK Testnet and other for RSK Mainnet.</p>
 
+<blockquote>
+  <p>WARNING: Please note that the contract requires Solidity 0.8 or newer. Compiling it with older versions will expose it to security vulnerabilities.</p>
+</blockquote>
+
 <p>In the deployment you will need to provide two addresses in the constructor:</p>
 
 <ul>
@@ -2046,6 +2050,10 @@ Can create and remove plans. Can change the payee.</li>
   <li>
 <code class="highlighter-rouge">address payee_</code>:
 Receives the tokens paid after executions.</li>
+  <li>
+<code class="highlighter-rouge">uint256 minimumTimeBeforeExecution_</code>:
+Minimum amount of seconds required between the moment of the scheduling and the execution time requested.
+This must be greater than 15, it protects the service provider from timestamp manipulation.</li>
 </ul>
 
 <p>Take note of the address.</p>

@@ -1088,7 +1088,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-08-06 20:46:20 +0000T00:00:00.000Z">2021-08-06</time> | -->
+    <!--time role="presentation" datetime="2021-08-11 21:22:29 +0000T00:00:00.000Z">2021-08-11</time> | -->
      2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/query-plans.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2022,9 +2022,9 @@
 
 <p>To schedule a transaction you need to purchase a plan. Plans are paid in tokens or RBTC.</p>
 
-<p>First of all, you need to get a plan from the service provider, which will give you the price per execution, the payment token and the execution window in seconds, among other things.</p>
+<p>First of all, you need to get a plan from the service provider, which will give you the price per execution, the payment token,the execution window in seconds, the maximum gas that an execution can spend and its status.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RIFScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
 <span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
     <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
@@ -2040,6 +2040,7 @@
 <span class="c1">//    pricePerExecution: 10000000000000;</span>
 <span class="c1">//    window: 300;</span>
 <span class="c1">//    token: Token;</span>
+<span class="c1">//    gasLimit: 200000;</span>
 <span class="c1">//    active: true;</span>
 <span class="c1">//    ...</span>
 <span class="c1">//  }</span>
@@ -2049,7 +2050,7 @@
 
 <p>If you want to obtain all plans from the service provider, you must first get the plans count and then get the plans one by one.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RIFScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 
 <span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="p">{</span>
     <span class="na">contractAddress</span><span class="p">:</span> <span class="nx">serviceProviderContractAddress</span><span class="p">,</span>
@@ -2063,6 +2064,7 @@
 <span class="c1">//  [{</span>
 <span class="c1">//    pricePerExecution: 10000000000000;</span>
 <span class="c1">//    window: 300;</span>
+<span class="c1">//    gasLimit: 200000;</span>
 <span class="c1">//    token: Token;</span>
 <span class="c1">//    active: true;</span>
 <span class="c1">//    ...</span>
@@ -2070,6 +2072,7 @@
 <span class="c1">//  {</span>
 <span class="c1">//    pricePerExecution: 50000000000000;</span>
 <span class="c1">//    window: 600;</span>
+<span class="c1">//    gasLimit: 400000;</span>
 <span class="c1">//    token: Token;</span>
 <span class="c1">//    active: true;</span>
 <span class="c1">//    ...</span>
@@ -2083,7 +2086,7 @@
   <li><a href="../query-plans">Query plans</a></li>
   <li><a href="../purchasing-plan">Purchase one of this plans</a></li>
   <li><a href="../scheduling">Schedule a transaction for the next minutes</a></li>
-  <li><a href="../statuses">Get status</a></li>
+  <li><a href="../states">Get status</a></li>
 </ul>
 
 

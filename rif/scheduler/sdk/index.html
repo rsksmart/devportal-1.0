@@ -1080,7 +1080,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-08-06 20:56:06 +0000T00:00:00.000Z">2021-08-06</time> | -->
+    <!--time role="presentation" datetime="2021-08-11 21:22:29 +0000T00:00:00.000Z">2021-08-11</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/sdk/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2021,10 +2021,11 @@
   <li>Schedule transactions</li>
   <li>Schedule recurrent transactions</li>
   <li>Cancel a scheduling</li>
-  <li>Query transactions scheduled and statuses</li>
+  <li>Query transactions scheduled and states</li>
+  <li>Request refunds of overdue executions</li>
 </ul>
 
-<p>This is the official SDK for <a href="https://github.com/rsksmart/rif-scheduler-contracts" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">@rsksmart/rif-scheduler-contracts</code></a> smart contract. Use it to interact with the <code class="highlighter-rouge">OneShotScheduler</code> smart contract in a more simple way.</p>
+<p>This is the official SDK for <a href="https://github.com/rsksmart/rif-scheduler-contracts" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">@rsksmart/rif-scheduler-contracts</code></a> smart contract. Use it to interact with the <code class="highlighter-rouge">RIFScheduler</code> smart contract in a more simple way.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
@@ -2035,7 +2036,7 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i @rsksmart/rif-scheduler-sdk ethers
 </code></pre></div></div>
 
-<p>Use <a href="https://explorer.testnet.rsk.co/address/0x0372F6F8C7b2353b546F842Da0C44749664d1203" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">0x0372F6F8C7b2353b546F842Da0C44749664d1203</code></a> for RSK Testnet</p>
+<p>Use <a href="https://explorer.testnet.rsk.co/address/0xad249557515d8b89f2869834857bb872d7b5c398" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">0xad249557515d8b89f2869834857bb872d7b5c398</code></a> for RSK Testnet</p>
 <blockquote>
   <p>You can run your own instance following <a href="https://developers.rsk.co/rif/scheduler/run/" rel="external noopener noreferrer" target="_blank">this guide</a></p>
 </blockquote>
@@ -2046,9 +2047,11 @@
 
 <p>Using a <code class="highlighter-rouge">provider</code> will only allow <em>read-only</em> operations, such as <code class="highlighter-rouge">getPlan</code>. Using a <code class="highlighter-rouge">signer</code> will allow all operations, such as <code class="highlighter-rouge">purchasePlan</code>, <code class="highlighter-rouge">schedule</code>, etc.</p>
 
+<p>You can pass an object as optional third parameter with a property <code class="highlighter-rouge">supportedER677Tokens</code>, where you can configure a list of tokens supporting ERC677 interface like the RIF token.</p>
+
 <h4 id="for-example-to-connect-the-sdk-to-metamask">For example, to connect the SDK to Metamask</h4>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RIFScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">providers</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">ethers</span><span class="dl">"</span><span class="p">;</span>
 
 <span class="kd">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">providers</span><span class="p">.</span><span class="nx">Web3Provider</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">currentProvider</span><span class="p">);</span>
@@ -2070,7 +2073,7 @@
 
 <h4 id="to-connect-the-sdk-to-rpc--ganache">to connect the SDK to RPC / Ganache</h4>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RifScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">RIFScheduler</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-scheduler-sdk</span><span class="dl">"</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">providers</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">ethers</span><span class="dl">"</span><span class="p">;</span>
 
 <span class="kd">const</span> <span class="nx">url</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://localhost:8545</span><span class="dl">"</span><span class="p">;</span>
@@ -2098,7 +2101,7 @@
   <li><a href="query-plans">Query plans</a></li>
   <li><a href="purchasing-plan">Purchase one of this plans</a></li>
   <li><a href="scheduling">Schedule a transaction for the next minutes</a></li>
-  <li><a href="statuses">Get status</a></li>
+  <li><a href="states">Get status</a></li>
 </ul>
 
 

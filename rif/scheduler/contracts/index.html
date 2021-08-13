@@ -1080,8 +1080,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-15 02:59:44 +0000T00:00:00.000Z">2021-06-15</time> | -->
-     8' to read |
+    <!--time role="presentation" datetime="2021-08-11 21:22:43 +0000T00:00:00.000Z">2021-08-11</time> | -->
+     10' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/scheduler/contracts.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2038,17 +2038,22 @@ receive payments for the service and execute the requested transactions.</p>
 The plans must specify the:</p>
 <ul>
   <li>Price per execution,</li>
-  <li>The time window (in seconds) within a scheduled execution should run.
+  <li>The time window (in seconds) within a scheduled execution should run.</li>
+  <li>The maximum amount of gas the internal call can spend
+<strong>The price of the plan strongly depends on these last two values</strong>
+We recommend a value more than 15 seconds. This value will depend strongly on the <a href="../services">service</a> configuration.
 For example, if the time window for a plan is set to 100, then this following condition should apply, otherwise the execution will not performed:</li>
 </ul>
 
 <p><code class="highlighter-rouge">scheduled time</code> - 10 &lt;= <code class="highlighter-rouge">execution time</code> &lt;=  <code class="highlighter-rouge">scheduled time</code> + 10</p>
 <ul>
+  <li>The maximum gas that an schedule execution could spend.</li>
   <li>The address of the token used to purchase executions. If the address <code class="highlighter-rouge">0x0</code> passed as parameter the contract assumes that the executions will be paid with RBTC.</li>
 </ul>
 
 <div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Plan</span><span class="p">[]</span> <span class="kr">public</span> <span class="nx">plans</span><span class="p">;</span>
-<span class="kd">function</span> <span class="nx">addPlan</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">price</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nb">window</span><span class="p">,</span> <span class="nx">IERC677</span> <span class="nx">token</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">onlyProvider</span>
+<span class="kd">function</span> <span class="nx">addPlan</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">price</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nb">window</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">gasLimit</span><span class="p">,</span> <span class="nx">IERC677</span> <span class="nx">token</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">onlyProvider</span>
+
 <span class="kd">function</span> <span class="nx">removePlan</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">plan</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">onlyProvider</span>
 </code></pre></div></div>
 
@@ -2081,7 +2086,7 @@ that they want to purchase at the given price.</p>
 <h3 id="scheduling">Scheduling</h3>
 <p>The executions have an <strong>id</strong>. Use this hash function to calculate it:</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abi</span><span class="p">.</span><span class="nx">encode</span><span class="p">(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">requestor</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">plan</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abi</span><span class="p">.</span><span class="nx">encode</span><span class="p">(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">requestor</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">plan</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>Submit new transactions to be executed by the Service Provider.
@@ -2096,12 +2101,10 @@ When scheduling you must specify this fields:</p>
   <li>
 <code class="highlighter-rouge">data</code>: The <em>data</em> field of the transaction</li>
   <li>
-<code class="highlighter-rouge">gas</code>: Set a <em>gas limit</em> for the transaction</li>
-  <li>
 <code class="highlighter-rouge">timestamp</code>: When it must be executed, considering the window</li>
 </ul>
 
-<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">schedule</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">to</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">calldata</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">gas</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">timestamp</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">payable</span>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">schedule</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">plan</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">to</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">calldata</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">uint256</span> <span class="nx">timestamp</span><span class="p">)</span> <span class="nx">external</span> <span class="nx">payable</span>
 </code></pre></div></div>
 
 <p>It is possible to schedule multiple transactions at the same time by calling:</p>
@@ -2112,7 +2115,7 @@ When scheduling you must specify this fields:</p>
 <p>This function receives an array of ABI encoded transactions to be executed and the total RBTC required by them, if necessary.
 Each element of the transaction array should be encoded as follows:</p>
 
-<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abi</span><span class="p">.</span><span class="nx">encode</span><span class="p">([</span><span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">bytes</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="nx">execution</span><span class="p">.</span><span class="nx">plan</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span><span class="p">])</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">abi</span><span class="p">.</span><span class="nx">encode</span><span class="p">([</span><span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">address</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">bytes</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">uint256</span><span class="dl">'</span><span class="p">],</span> <span class="p">[</span><span class="nx">execution</span><span class="p">.</span><span class="nx">plan</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">timestamp</span><span class="p">,</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span><span class="p">])</span>
 </code></pre></div></div>
 
 <p>To cancel a scheduling before its execution use:</p>
@@ -2173,18 +2176,28 @@ The Service Providers performs the execution of the scheduled transaction by sub
 
 <p>This performs execution in this way:</p>
 
-<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nx">bool</span> <span class="nx">success</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">memory</span> <span class="nx">result</span><span class="p">)</span> <span class="o">=</span> <span class="nx">payable</span><span class="p">(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">).</span><span class="nx">call</span><span class="p">{</span> <span class="nl">gas</span><span class="p">:</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">value</span><span class="p">:</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span> <span class="p">}(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="nx">bool</span> <span class="nx">success</span><span class="p">,</span> <span class="nx">bytes</span> <span class="nx">memory</span> <span class="nx">result</span><span class="p">)</span> <span class="o">=</span> <span class="nx">payable</span><span class="p">(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">to</span><span class="p">).</span><span class="nx">call</span><span class="p">{</span> <span class="nl">gas</span><span class="p">:</span> <span class="nx">plan</span><span class="p">.</span><span class="nx">gas</span><span class="p">,</span> <span class="nx">value</span><span class="p">:</span> <span class="nx">execution</span><span class="p">.</span><span class="nx">value</span> <span class="p">}(</span><span class="nx">execution</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p>After execution is completed, the Service Provider will receive
 the payment for the execution.</p>
 
 <p>If the transaction is submitted before time window, the execution will be rejected and it will remain scheduled.
-If it is submitted after the time window, it won’t be executed an the requestor will be refunded.</p>
+If it is submitted after the time window, it won’t be executed and its state will be Overdue.</p>
 
 <p>In any case the Service Provider is not responsible for the successful execution of the submitted transaction. It will only guarantee that it is submitted as scheduled.</p>
 
-<h3 id="refunding">Refunding</h3>
+<h3 id="refunding-overdue-executions">Refunding overdue executions</h3>
+
+<p>The requestor can request the refund of the overdue scheduled transactions (those that were not executed on time, inside the execution window).
+To claim the refund, the requestor should call the following method:</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">requestExecutionRefund</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">id</span><span class="p">)</span> <span class="nx">external</span>
+</code></pre></div></div>
+
+<p>This will set the requested execution as refunded and the remaining executions for thar plan will be increased by one. Also if there was some value transferred during the scheduling, it will be returned to the requestor.</p>
+
+<h3 id="refunding-plans">Refunding plans</h3>
 
 <p>The following steps describe the procedure that should be followed in the case that the user provider stops offering the scheduling service. This allows users to get a refund for their available balance:</p>
 
@@ -2196,6 +2209,23 @@ If it is submitted after the time window, it won’t be executed an the requesto
 </ol>
 
 <p>Steps 2 and 3 can be repeated as many times as needed. These can also be combined in a single contract call using the <code class="highlighter-rouge">multicall</code> method.</p>
+
+<h3 id="multicall">Multicall</h3>
+
+<p>The contract allows one to combine multiple calls into a single one using this method.</p>
+
+<div class="language-solidity highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">multicall</span><span class="p">(</span><span class="nx">bytes</span><span class="p">[]</span> <span class="nx">calldata</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">bool</span> <span class="nx">revertIfFails</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>This method receives:</p>
+<ul>
+  <li>calldata: an array of encoded contract calls to be executed</li>
+  <li>revertIfFails: if true when a transaction in calldata is executed and it reverts, all the transactions will be reverted. Otherwise, it will continue executing the following transactions.</li>
+</ul>
+
+<blockquote>
+  <p>WARNING: using <code class="highlighter-rouge">revertIfFails</code> set to <code class="highlighter-rouge">true</code> can incur in DoS attackas: by spamming one transaction, all the others will fail. In the other hand, using <code class="highlighter-rouge">revertIfFails</code> set to <code class="highlighter-rouge">false</code> will only allow to retrieve the index of the calls that failed.</p>
+</blockquote>
 
 
                   
