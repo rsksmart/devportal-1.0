@@ -1,7 +1,7 @@
 ---
 layout: rsk
-title: RIF Savings and Vault Solution
-description: Overview of the RIF Savings and Vault solution
+title: RIF Multisig - Savings and Vault Solution
+description: Overview of the RIF Multisig - Savings and Vault solution
 tags: rif, gnosis, multisig
 ---
 
