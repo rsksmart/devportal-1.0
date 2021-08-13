@@ -25,7 +25,7 @@ Since it is open and transparent, there is nothing stopping multiple block explo
 
 ## View account in the block explorer
 
-This short video demonstrates how to view an account the RSK testnet explorer.
+Watch this short video demonstrating how to view an account in the block explorer.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/p-q7NBmEqBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
