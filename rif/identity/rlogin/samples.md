@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /rif/identity/rlogin
-redirect: /rif/rlogin/index
+permalink: /rif/identity/rlogin/samples
+redirect: /rif/rlogin/samles
 collection_order: 0
 ---

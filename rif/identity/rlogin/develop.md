@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /rif/identity/develop
+permalink: /rif/identity/rlogin/develop
 redirect: /rif/rlogin/develop
 collection_order: 0
 ---
