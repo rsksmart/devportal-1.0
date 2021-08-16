@@ -2669,3 +2669,53 @@ table.table.newsletter input[type='checkbox'] {
   border: 2px solid rgb(0, 181, 32, 0.2);
 }
 /* RIF Code snippet + parameters: END */
+
+/* on-page-navigation: START */
+.right-arrow::after {
+  content: "\2192";
+}
+
+.left-arrow::after {
+  content: "\2190";
+}
+
+.on-page-nav .col {
+  margin: 0.5rem;
+  padding: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0.5px 2px 6px 0px rgb(0 0 0 / 10%);
+  -moz-box-shadow: 0.5px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0.5px 2px 6px 0px rgb(0 0 0 / 10%);
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  -webkit-transition: border 250ms ease;
+  -moz-transition: border 250ms ease;
+  transition: border 250ms ease;
+}
+
+.on-page-nav .col:hover {
+  border-color: rgb(0, 181, 32);
+  border-width: 1px;
+  border-style: solid;
+}
+
+.on-page-nav .arrow {
+  line-height: 1;
+  font-size: 2rem;
+}
+
+.on-page-nav .text-secondary {
+  font-size: 0.7rem;
+  line-height: 0.7;
+}
+
+.text-main {
+  font-weight: 600;
+}
+
+.fa-1halfx {
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+/* on-page-navigation: END */

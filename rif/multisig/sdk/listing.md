@@ -4,6 +4,8 @@ title: RIF Multisig SDK - Transaction listing
 description: Safe transaction listing 
 tags: rif, gnosis, multisig
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/sdk/erc721/erc721_transactions/'
+nextUrl: '/rif/multisig/sdk/transaction_confirmation/'
 ---
 
 **Required packages**:

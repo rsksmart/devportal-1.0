@@ -4,6 +4,8 @@ title: RIF Multisig SDK - policies
 description: Creation of the transactions required to change safe policies (owners and threshold) 
 tags: rif, gnosis, multisig
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/sdk/creation/'
+nextUrl: '/rif/multisig/sdk/rbtc/receive_rbtc/'
 ---
 
 **Required packages**:
