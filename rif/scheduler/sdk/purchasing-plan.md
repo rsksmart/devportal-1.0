@@ -7,20 +7,28 @@ title: RIF Scheduler - SDK - Purchasing Plans
 
 With the information of the previous step, you can approve and purchase executions to be able to schedule them in the future.
 
-> If the token is one of the supported ERC-677 you don’t need to approve before purchasing. You can pass the list of supported tokens using [`options. supportedER677Tokens`](https://github.com/rsksmart/rif-scheduler-sdk/blob/develop/src/RifScheduler.ts#L14)
+> If the token is one of the supported ERC-677 you don’t need to approve before purchasing. You can pass the list of supported tokens using [`config.supportedERC677Tokens`](https://github.com/rsksmart/rif-scheduler-sdk/blob/develop/src/Base.ts#L6)
 
 ```javascript
-import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
+import { RIFScheduler } from "@rsksmart/rif-scheduler-sdk";
 
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+const config = {
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
+}
+
+const rifScheduler = new RIFScheduler(config);
 
 const executionsQuantity = 2;
+
+const plan = rifScheduler.getPlan(planIndex)
 const totalAmount = plan.pricePerExecution.mul(executionsQuantity)
 
-// first you need to approve the totalAmount of tokens
-await rifScheduler.approveToken(plan.token, totalAmount)
+// First, check if token requires approval
+if (plan.token.needsApproval(totalAmount))
+    await plan.token.approve(totalAmount)
 
-const purchaseTransaction = await rifScheduler.purchasePlan(planIndex, executionsQuantity)
+const purchaseTransaction = await plan.purchase(executionsQuantity)
 
 await purchaseTransaction.wait(12)
 ```
@@ -34,11 +42,17 @@ You will need to purchase some executions if you want to schedule something (see
 This is an optional step, but it is useful because it will give you feedback that everything you have done in the previous steps was correct.
 
 ```javascript
-import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
+import { RIFScheduler } from "@rsksmart/rif-scheduler-sdk";
 
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+const config = {
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
+}
 
-const remainingExecutions = await rifScheduler.remainingExecutions(planIndex)
+const rifScheduler = new RIFScheduler(config);
+const plan = rifScheduler.getPlan(planIndex)
+
+const remainingExecutions = await plan.getRemainingExecutions()
 
 //  2
 ```
@@ -49,4 +63,4 @@ What you can do with this sdk?
 - [Query plans](../query-plans)
 - [Purchase one of this plans](../purchasing-plan)
 - [Schedule a transaction for the next minutes](../scheduling)
-- [Get status](../statuses)
+- [Get status](../states)

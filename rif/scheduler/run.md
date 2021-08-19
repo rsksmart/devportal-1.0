@@ -15,7 +15,7 @@ The SP will deploy the smart contract that will keep track of:
 - plans
 - paid tokens
 - scheduled transactions
-- execution statuses
+- execution states
 
 > Read more about the smart contracts [here](../contracts)
 
@@ -27,12 +27,17 @@ Also, find the deployment scripts in the readme.
 You will find one for local networks,
 other for RSK Testnet and other for RSK Mainnet.
 
+> WARNING: Please note that the contract requires Solidity 0.8 or newer. Compiling it with older versions will expose it to security vulnerabilities.
+
 In the deployment you will need to provide two addresses in the constructor:
 
 - `address serviceProvider_`:
   Can create and remove plans. Can change the payee.
 - `address payee_`:
   Receives the tokens paid after executions.
+- `uint256 minimumTimeBeforeExecution_`:
+  Minimum amount of seconds required between the moment of the scheduling and the execution time requested.
+  This must be greater than 15, it protects the service provider from timestamp manipulation.
 
 Take note of the address.
 

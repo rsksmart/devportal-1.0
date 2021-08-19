@@ -5,17 +5,24 @@ title: RIF Scheduler - SDK - Getting status
 
 ### Verifying the status of a scheduled execution
 
-You can either provide the execution object (using the `executionFactory` function) or the `executionId` if you have one already.
+You can either get the execution by id or use any Execution instance if you have one already.
 
 ```javascript
 import { RifScheduler } from "@rsksmart/rif-scheduler-sdk";
 
-const rifScheduler = new RifScheduler(serviceProviderContractAddress, signer);
+const config = {
+    contractAddress: serviceProviderContractAddress,
+    providerOrSigner: signer
+}
 
-const state = await rifScheduler.getExecutionState(execution | executionId)
+const rifScheduler = new RIFScheduler(config);
+
+const execution = await rifScheduler.getExecution(executionId)
+
+const status = await execution.getState()
 
 // enum ExecutionState {
-//   NonExistent = 0,
+//   NotScheduled = 0,
 //   Scheduled = 1,
 //   ExecutionSuccessful = 2,
 //   ExecutionFailed = 3,
@@ -31,4 +38,4 @@ What you can do with this sdk?
 - [Query plans](../query-plans)
 - [Purchase one of this plans](../purchasing-plan)
 - [Schedule a transaction for the next minutes](../scheduling)
-- [Get status](../statuses)
+- [Get states](../states)
