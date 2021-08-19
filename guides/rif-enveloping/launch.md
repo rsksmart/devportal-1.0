@@ -8,7 +8,7 @@ permalink: /guides/rif-enveloping/launch/
 ## Run the Relay Server
 To start the relay server, you need to configure the json config file located at `<PROJECT_ROOT>/jsrelay/config/relay-config.json` which has this structure:
    
-```
+```json
 {
   "url": "localhost",
   "port": 8090,
