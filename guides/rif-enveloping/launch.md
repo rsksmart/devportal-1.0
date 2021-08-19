@@ -84,8 +84,15 @@ Relayer state: READY
 ```
 2. Send to relayManagerAddress at least 0.001 tRBTC to set it up
 3. Send to relayWorkerAddress at least 0.001 tRBTC to set it up
-4. Once both addresses have been funded, run `node dist/src/cli/commands/enveloping.js relayer-register --network <RSKJ_NODE_URL> --hub <RELAY_HUB_CONTRACT_ADDRESS> -m <secret_mnemonic> --from <ADDRESS>  --funds <FUNDS> --stake <STAKE> --relayUrl <RELAY_URL>` where `<secret_mnemonic>` contains the path to a file with the mnemonic of a funded account to use during the relay server registration, `<ADDRESS>` is the account address associated to that mnemonic.
+4. Once both addresses have been funded, run:
 
+```bash
+node dist/src/cli/commands/enveloping.js relayer-register --network <RSKJ_NODE_URL> --hub <RELAY_HUB_CONTRACT_ADDRESS> -m <secret_mnemonic> --from <ADDRESS>  --funds <FUNDS> --stake <STAKE> --relayUrl <RELAY_URL>
+``` 
+
+where: 
+- `<secret_mnemonic>` contains the path to a file with the mnemonic of a funded account to use during the relay server registration
+- `<ADDRESS>` is the account address associated to that mnemonic.
 
 ## Allow tokens
 
