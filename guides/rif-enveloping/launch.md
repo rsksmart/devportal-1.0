@@ -71,8 +71,16 @@ Relayer state: READY
 
 1.  In another terminal run `curl http://localhost:8090/getaddr`, which will return a JSON with information of the running jsRelay Server, for example:
 ```json
-{"relayWorkerAddress":"0xe722143177fe9c7c58057dc3d98d87f6c414dc95","relayManagerAddress":"0xe0820002dfaa69cbf8add6a738171e8eb0a5ee54",
-"relayHubAddress":"0x38bebd507aBC3D76B10d61f5C95668e1240D087F", "minGasPrice":"6000000000", "chainId":"31", "networkId":"31","ready":false,"version":"2.0.1"}
+{
+  "relayWorkerAddress": "0xe722143177fe9c7c58057dc3d98d87f6c414dc95",
+  "relayManagerAddress": "0xe0820002dfaa69cbf8add6a738171e8eb0a5ee54",
+  "relayHubAddress": "0x38bebd507aBC3D76B10d61f5C95668e1240D087F",
+  "minGasPrice": "6000000000",
+  "chainId": "31",
+  "networkId": "31",
+  "ready": false,
+  "version": "2.0.1"
+}
 ```
 2. Send to relayManagerAddress at least 0.001 tRBTC to set it up
 3. Send to relayWorkerAddress at least 0.001 tRBTC to set it up
