@@ -19,9 +19,18 @@ Installation instructions at Yarn's [site](https://yarnpkg.com/getting-started/i
 
 ### Node & NPM
 
-We use `Node` version `v12.18.3`.
+We use `Node` version `v12.18.3`. 
 
-Installation instructions at Node's [site](https://nodejs.org/en/). Check the install by running `node -v`.
+We recommend the use of [`nvm`](https://github.com/nvm-sh/nvm) and the `.nvmrc` file included at the root of this project, so you can install the correct node version through:
+
+```
+nvm use
+nvm install
+```
+
+If you choose to use node without `nvm`, you can find installation instructions at Node's [site](https://nodejs.org/en/). 
+
+You can check the installation by running `node -v`.
 
 ### Npx & Truffle
 
