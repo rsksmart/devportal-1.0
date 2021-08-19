@@ -48,7 +48,7 @@ If it's the first time you run the relay server, you will see a log saying that 
 Once the relay server is up, you need to register this server in order for it to be usable, to do so, first configure the script located on `<PROJECT_ROOT>/scripts/registerRelayServer` and replace the 
    values as you consider. The script contains the following:
 
-```
+```bash
 node dist/src/cli/commands/enveloping.js relayer-register --funds 100 --stake 200 --network http://rsk-node:4444/ --hub "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"
 ```
 
@@ -85,10 +85,9 @@ Now the final step is to allow some tokens to be used by enveloping on the smart
 
 ### On Regtest
 
-On regtest you can use a script located at `<PROJECT_ROOT>/scripts/allowTokens` this script needs to be configured, it looks
-   something like this:
+On regtest you can use a script located at `<PROJECT_ROOT>/scripts/allowTokens`. This script needs to be configured, and this is what it looks like:
    
-```
+```bash
 #!/bin/bash
 
 TOKEN_ADDRESSES="0x0E569743F573323F430B6E14E5676EB0cCAd03D9,0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"
