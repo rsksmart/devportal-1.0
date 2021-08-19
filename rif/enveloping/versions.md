@@ -34,7 +34,7 @@ It is important to recall that - as a security measure - version 1 contracts dep
 * RelayHub contract now handles relay manager staking.
 * Gas estimation improvements:
     * Gas overhead removed from RelayHub; there are no more validations against hardcoded values.
-    * The gas and token gas fields from the request can now be left undefined, and in that case they will automatically br estimated by the Relay Client.
+    * The gas and token gas fields from the request can now be left undefined, and in that case, they will automatically be estimated by the Relay Client.
     * The maximum gas estimation in the Relay Server is more precise now.
     * A new utility function is available to estimate the maximum gas a relay transaction would consume, based in a linear fit estimation. This can be used in applications that don't want to sign a payload each time they need an approximation of the cost of relaying the transaction.
 * Paymaster verifications are done off-chain to optimize gas costs, thus the paymasters are now called Verifiers and they are not part of the on-chain relay flow nor do they handle payments at all.
