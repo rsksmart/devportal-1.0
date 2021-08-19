@@ -25,6 +25,12 @@ Since it is open and transparent, there is nothing stopping multiple block explo
 
 ## View account in the block explorer
 
+Watch this short video demonstrating how to view an account in the block explorer.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/p-q7NBmEqBo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 For the RSK Mainnet, we would go to [`explorer.rsk.co`](https://explorer.rsk.co/).
 However, since we are currently connected to the RSK Testnet, we go to [`explorer.testnet.rsk.co`](https://explorer.testnet.rsk.co/) instead.
 
@@ -40,9 +46,9 @@ Then paste your address into the search box in the block explorer. The RSK Block
 
 ![View Address Block Explorer](/assets/img/guides/quickstart/transactions/view_address_block_explorer.png)
 
-You should see the “Balance” for this address, which should match the balance that you have received from the RBTC Testnet Faucet earlier. If you scroll down, you should see a list of transactions.
+You should see the "Balance" for this address, which should match the balance that you have received from the tRBTC Faucet earlier. If you scroll down in the block explorer, you should see a list of transactions.
 
-You should see 2 transactions: One in which the RBTC Testnet Faucet transferred the current balance into this address, and another in which the RIF Testnet Faucet transferred the current RIF tokens to this address.
+You should see 2 transactions: One in which the tRBTC Faucet transferred the current cryptocurrency into this address, and another in which the tRIF Faucet transferred the current tokens to this address.
 
 ![View Block Explorer Transaction](/assets/img/guides/quickstart/transactions/explorer_transactions.png)
 

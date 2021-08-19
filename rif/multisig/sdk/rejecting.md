@@ -2,7 +2,7 @@
 layout: rsk
 title: RIF Multisig SDK - rejecting
 description: Steps required to reject a transaction
-tags: rif gnosis multisig
+tags: rif, gnosis, multisig
 ---
 
 **Required packages**:
@@ -19,17 +19,20 @@ For instance, if the current threshold is set to 2, rejecting a transaction will
 
 ## Rejection transaction creation
 
+It creates a new transaction, `rejectionTx`,  that must be approved and executed in order to invalidate the original one.
+
+**Parameters**:
+- `safe: Safe` - the safe previously created
+- `transaction: SafeTransaction` - the transaction to be rejected.
+{:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
+
 ```ts
 import { rejectTx } from '@rsksmart/safe-transactions-sdk'
 
 const rejectionTx = await rejectTx(safe, transaction)
 ```
-
-It creates a new transaction `rejectionTx` that must to be approved and executed in order to invalidate the original one.
-
-Parameters:
-- `safe: Safe` - the safe previously created
-- `transaction: SafeTransaction` - the transaction we want to reject.
+{:.snippet__code.snippet__code--lightgreen.border-top-0}
 
 
-> **IMPORTANT**: With the previously mentioned method, we are creating the rejection transaction, but we are not executing it. The rejection is successful only once it signed (according to the safe threshold) and executed. Please refers to [transaction execution](/rif/multisig/sdk/transaction_confirmation) for further instructions.
+> **IMPORTANT**: With the previously mentioned method, we are creating the rejection transaction, but we are not executing it. The rejection is successful only once it's signed (according to the safe threshold) and executed. Please refer to [transaction execution](/rif/multisig/sdk/transaction_confirmation) for further instructions.
+{:.mt-3}

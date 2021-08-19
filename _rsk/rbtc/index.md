@@ -92,6 +92,12 @@ or use the exchanges listed below👇 to obtain RBTC.
 
 <div class="owl-carousel owl-theme">
     <div class="item">
+        <a href="/rsk/architecture/powpeg/" target="blank">
+        <img src="/assets/img/rsk/exchanges/logo_powpeg.png" alt="Powpeg">
+        <a class="company-name" href="/rsk/architecture/powpeg/" target="blank">Powpeg</a>
+    </a>
+    </div>
+    <div class="item">
         <a href="https://www.liquid.com/" target="blank">
         <img src="https://rsk.co/img/exchanges/liquid.png" alt="Liquid by QUOINE">
         <a class="company-name" href="https://www.liquid.com/" target="blank">Liquid</a>
@@ -152,12 +158,6 @@ or use the exchanges listed below👇 to obtain RBTC.
     </a>
     </div>
     <div class="item">
-        <a href="https://www.kucoin.com/" target="blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/logo_kucoin.png" alt="kucoin">
-        <a class="company-name" href="https://www.kucoin.com/" target="blank">Kucoin</a>
-    </a>
-    </div>
-    <div class="item">
         <a href="https://www.bitfinex.com/" target="blank">
         <img src="https://www.rifos.org/assets/img/exchanges/bitfinex-1.png" alt="bitfinex">
         <a class="company-name" href="https://www.bitfinex.com/" target="blank">Bitfinex</a>
@@ -165,7 +165,7 @@ or use the exchanges listed below👇 to obtain RBTC.
     </div>
     <div class="item">
         <a href="https://liquality.io/" target="blank">
-        <img src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
+        <img src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="Liquality">
         <a class="company-name" href="https://liquality.io/" target="blank">Liquality</a>
     </a>
     </div>
@@ -185,6 +185,12 @@ or use the exchanges listed below👇 to obtain RBTC.
         <a href="https://exolix.com/" target="blank">
         <img src="/assets/img/rif/exchanges/exolix_logo.png" alt="Exolix">
         <a class="company-name" href="https://exolix.com/" target="blank">Exolix</a>
+    </a>
+    </div>
+     <div class="item">
+        <a href="https://defiantapp.tech/home/" target="blank">
+        <img src="/assets/img/solutions/defiant/defiant-logo.png" alt="Defiant">
+        <a class="company-name" href="https://defiantapp.tech/home/" target="blank">Defiant</a>
     </a>
     </div>
 </div>
