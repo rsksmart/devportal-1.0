@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Gnosis Summary
+title: The RIF Multisig - Gnosis Summary
 description: Overview of the gnosis integration
 tags: rif, gnosis, multisig
 render_features: 'collapsible'

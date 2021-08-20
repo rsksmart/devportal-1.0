@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RIF Multisig Architecture - Safe Contracts
+title: RIF Multisig - Transaction Service
 description: API to keep track of transactions sent via Gnosis Safe smart contracts
 tags: rif, multisig, gnosis, service, backend
 ---

@@ -1,7 +1,7 @@
 ---
 layout: rsk
-title: RIF Savings and Vault Solution - Sample Application
-description: Sample application for the RIF Savings and Vault project showing the multisig SDKs usage.
+title: RIF Multisig - Savings and Vault Solution - Sample Application
+description: Sample application for the RIF Multisig - Savings and Vault project showing the multisig SDKs usage.
 tags: rif, gnosis, multisig, sdks, react
 ---
 
