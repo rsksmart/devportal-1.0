@@ -12,27 +12,27 @@ We are currently integrated with the following dApps
   * This is [RIF Name Service](/rif/rns) platform. Use it to:
     - Register .rsk domains
     - Administrate your domains
-    
+
   * URL: [manager.rns.rifos.org](https://manager.rns.rifos.org/) ([testnet.manager.rns.rifos.org](https://testnet.manager.rns.rifos.org/) for RSK Testnet)
-    
+
   * PRs:
     - [`rnsdomains/rns-manager-react#354`](https://github.com/rnsdomains/rns-manager-react/pull/354) - Add rLogin support with injected providers
     - [`rnsdomains/rns-manager-react#357`](https://github.com/rnsdomains/rns-manager-react/pull/357) - Add Wallet Connect
 
 - B) RSK Token Bridge
   * Use this app to cross tokens with Ethereum network. For example, you can secure your USDT tokens on RSK network.
-  
+
   * URL: [tokenbridge.rsk.co](https://tokenbridge.rsk.co/)
-    
+
   * PRs:
     - [`rsksmart/tokenbridge#147`](https://github.com/rsksmart/tokenbridge/pull/147) - Add rLogin with injected provider and Wallet Connect
     - [`rsksmart/tokenbridge#148`](https://github.com/rsksmart/tokenbridge/pull/148) and [#149](https://github.com/rsksmart/tokenbridge/pull/149) - minor fixes
 
 - C) RIF Faucet
   * This is the platform where you can get testnet RIF tokens to test the apps on their test modes.
-    
+
   * URL: [faucet.rifos.org](https://faucet.rifos.org/)
-    
+
   * PR: [`riflabs/rif-faucet-client#20`](https://github.com/riflabs/rif-faucet-client/pull/20) - Add rlogin, show message about missing gas, and minor cleanups
 
 - D) RIF Identity Manager
@@ -61,4 +61,4 @@ We are currently integrated with the following dApps
 - I) RIF on chain
   * Similar to Money on chain, but in this case backing the stable coins with RIF tokens.
   * URL: [rif.moneyonchain.com](https://rif.moneyonchain.com/)
-  * You may also want to see the [sample apps](/rif/identity/rlogin/samples) list.
+  * You may also want to see the [sample apps](/rif/rlogin/samples) list.

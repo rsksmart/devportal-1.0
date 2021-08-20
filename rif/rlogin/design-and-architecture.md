@@ -28,10 +28,10 @@ The rLogin design consists of 4 core modules:
     - [DID Auth client](../libraries/did-auth-client)
 
 - B) A cloud storage service where users can store their credentials
-  * Users will be able to save their information in their preferred place. Even so, we developed **the [RIF Data Vault](../../data-vault), a user-centric cloud service**. This service will allow users to store their information in a secure way, encrypting the data on the client side. This encrypted data can then be stored on any distributed network such as IPFS.
+  * Users will be able to save their information in their preferred place. Even so, we developed **the [RIF Data Vault](/rif/identity/data-vault), a user-centric cloud service**. This service will allow users to store their information in a secure way, encrypting the data on the client side. This encrypted data can then be stored on any distributed network such as IPFS.
   * The Data Vault then allows users to store their Verifiable Credentials, issued by different applications, and to access when authenticating to other applications, thus carrying their information automatically.
   * Read more:
-    - [RIF Data Vault](../../data-vault)
+    - [RIF Data Vault](/rif/identity/data-vault)
 
 - C) A standard interface for Verifiable Credentials enabling data portability
   * The metadata stored in the cloud must have a specific format so that the different applications can understand the meaning of it. Verifiable Credentials allow issuers to digitally sign the data they claim. In this project we began to develop a representation model that allows all applications to understand the same meaning for the same credentials, thus allowing users to port their data across the different applications with which it operates. This way users can build their reputation in a unique way.
@@ -40,7 +40,7 @@ The rLogin design consists of 4 core modules:
     - [VC JSON Schemas](../libraries/vc-json-schemas)
     - [VC JSON Schemas parser](../libraries/vc-json-schemas-parser)
 
-- D) A client library combining authentication against back-end 
+- D) A client library combining authentication against back-end
   * It leverages user's wallet and store credentials
   * All the communication with back end under this model is wrapped up in a front end library that enables developer to easily integrate into Self-sovereign Identity. With rLogin library users will be able to pick the wallet of choice to interact with any dApp. It also handles the process of disclosing the information with the application in a private and secure way.
   * In summary, the front end tool pops a modal that lets user follow this steps:

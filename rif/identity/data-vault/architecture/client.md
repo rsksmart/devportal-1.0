@@ -9,7 +9,7 @@ A Web Client to simplify the way the services provided by the IPFS Centralized D
 
 ### Features
 
-- Manage authentication according to the [DID Auth protocol](../../../rlogin/libraries/express-did-auth)
+- Manage authentication according to the [DID Auth protocol](/rif/rlogin/libraries/express-did-auth)
 - CRUD operations over the RIF Data Vault
 - Stores the authentication credentials in the given storage
 - Encrypts/decrypts data prior to save/return using the user wallet provider
@@ -50,7 +50,7 @@ const client = new DataVaultWebClient({
 
 ##### Auth Manager
 
-It manages authentication according to the [DID Auth protocol](../../../rlogin/libraries/express-did-auth). It is in charge of emitting the necessary events to be signed by the user and store the generated tokens. It will associate the generated tokens to the current DID so it allows multiple sessions with different DIDs.
+It manages authentication according to the [DID Auth protocol](/rif/rlogin/libraries/express-did-auth). It is in charge of emitting the necessary events to be signed by the user and store the generated tokens. It will associate the generated tokens to the current DID so it allows multiple sessions with different DIDs.
 
 It is instantiated with a `DIDAuthConfig` object, which contains the following fields:
 - `serviceUrl: string`: the IPFS Centralized Data Vault Service URL, which enables the user to be logged in.

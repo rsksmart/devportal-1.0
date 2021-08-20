@@ -21,7 +21,7 @@ User interfaces letting users form part of the model
 W eb services built to enable communication and interaction between actors
 - [Issuer service](../services/issuer-service) - allows receiving credential issuance requests and approving them manually
 - [Convey service](../services/convey-service) - Public transport layer for JWTs using IPFS
-- [Data Vault](../services/data-vault) - This service uses an IPFS node to pin files (POC implementation - productive implementation documentation [here](../../data-vault))
+- [Data Vault](../services/data-vault) - This service uses an IPFS node to pin files (POC implementation - productive implementation documentation [here](/rif/identity/data-vault))
 
 ![services](../assets/img/services.png)
 
@@ -34,7 +34,7 @@ Reusable and secure implementations compliant with the design protocols
 - [Ethr DID](../../libraries/ethr-did) - uPort `ethr-did` with RSK support
 - [DAF bindings](../../libraries/daf) - use uPort agent with RIF identity multi identity model
 - [VC Core module](../../libraries/core) - Verifiable Credentials in React.js + Redux
-- Express DID Auh - Express middleware to authenticate users using DIDs and VCs (POC implementation -  - productive implementation documentation [here](../../rlogin/libraries/express-did-auth))
+- Express DID Auh - Express middleware to authenticate users using DIDs and VCs (POC implementation -  - productive implementation documentation [here](/rif/rlogin/libraries/express-did-auth))
 
 ![libraries](../assets/img/libraries.png)
 
