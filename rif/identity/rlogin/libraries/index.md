@@ -1,7 +1,6 @@
 ---
-layout: rsk
+layout: redirect
+permalink: /rif/identity/rlogin/libraries/
+redirect: /rif/rlogin/libraries/intro
+collection_order: 0
 ---
-
-## rLogin - Libraries
-
-{% include rif-id/rlogin-libraries.md %}
