@@ -4,6 +4,8 @@ title: RIF Multisig SDK - ERC20 Transactions
 description: follow these steps to send erc20 tokens through multisig transactions
 tags: rif, gnosis, multisig, erc20
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/sdk/erc20/receive_erc20/'
+nextUrl: '/rif/multisig/sdk/erc721/receive_erc721/'
 ---
 
 ## ERC20 Transactions

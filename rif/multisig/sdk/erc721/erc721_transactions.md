@@ -4,6 +4,8 @@ title: RIF Multisig SDK - ERC721 Transactions
 description: follow these steps to send erc721 tokens through multisig transactions
 tags: rif, gnosis, multisig, erc721
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/sdk/erc721/receive_erc721/'
+nextUrl: '/rif/multisig/sdk/listing/'
 ---
 
 ## ERC721 Transactions

@@ -1,0 +1,38 @@
+{% if page.prevUrl or page.nextUrl %}
+<div class="container on-page-nav">
+  <div class="row">
+    {% if page.prevUrl %}
+    {% assign prevPage = site.pages | where_exp: "p", "p.url == page.prevUrl" | first %}
+    {% if prevPage %}
+    <div class="col">
+      <a href="{{prevPage.url}}" title="{{prevPage.title}}" class="d-flex text-decoration-none">
+        <span class="p-2 flex-shrink-1">
+          <i class="fas fa-arrow-left fa-1halfx"></i>
+        </span>
+        <div class="p-2 w-100 text-right">
+          <div class="text-secondary">Previous</div>
+          <div class="text-main">{{prevPage.title}}</div>
+        </div>
+      </a>
+    </div>
+    {% endif %}
+    {% endif %}
+    {% if page.nextUrl %}
+    {% assign nextPage = site.pages | where_exp: "p", "p.url == page.nextUrl" | first %}
+    {% if nextPage %}
+    <div class="col">
+      <a href="{{nextPage.url}}" title="{{nextPage.title}}" class="d-flex text-decoration-none">
+        <div class="p-2 w-100">
+          <div class="text-secondary">Next</div>
+            <div class="text-main">{{nextPage.title}}</div>
+        </div>
+        <span class="p-2 flex-shrink-1">
+          <i class="fas fa-arrow-right fa-1halfx"></i>
+        </span>
+      </a>
+    </div>
+    {% endif %}
+    {% endif %}
+  </div>
+</div>
+{% endif %}

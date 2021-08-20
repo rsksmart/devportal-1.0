@@ -1,8 +1,10 @@
 ---
 layout: rsk
-title: RIF Savings and Vault Solution - Sample Application
-description: Sample application for the RIF Savings and Vault project showing the multisig SDKs usage.
+title: RIF Multisig - Savings and Vault Solution - Sample Application
+description: Sample application for the RIF Multisig - Savings and Vault project showing the multisig SDKs usage.
 tags: rif, gnosis, multisig, sdks, react
+prevUrl: '/rif/multisig/sdk/rejecting/'
+nextUrl: '/rif/multisig/contracts/'
 ---
 
 The application contains many of the functions available from [@gnosis.pm/safe-core-sdk](https://github.com/gnosis/safe-core-sdk), [@rsksmart/safe-factory-sdk](https://github.com/rsksmart/safe-factory-sdk) and [@rsksmart/safe-transactions-sdk](https://github.com/rsksmart/safe-transactions-sdk).

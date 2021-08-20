@@ -4,6 +4,8 @@ title: RIF Multisig SDK - creation
 description: Multisig account creation
 tags: rif, gnosis, multisig
 render_features: 'collapsible tables-with-borders'
+prevUrl: '/rif/multisig/sdk/'
+nextUrl: '/rif/multisig/sdk/policies/'
 ---
 
 **Required packages**:
