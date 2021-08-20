@@ -3,6 +3,8 @@ layout: rsk
 title:  The RIF Multisig Product
 description: Overview of the RIF Multisig, Savings and Vault Solution
 tags: rif, gnosis, multisig
+prevUrl: '/rif/multisig/'
+nextUrl: '/rif/multisig/gnosis-summary/'
 ---
 
 The product for RIF Multisig consists of porting and increasing the existing Gnosis SDK to allow RSK developers to operate multisig accounts in a safe and intuitive way, following the documentation and a sample application that will help with the correct implementation of the Gnosis solution.

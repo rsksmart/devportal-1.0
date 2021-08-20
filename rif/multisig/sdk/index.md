@@ -4,6 +4,8 @@ title: RIF Multisig SDK
 description: Overview of the operations allowed through a Multisig account
 tags: rif, gnosis, multisig
 render_features: 'switch-container'
+prevUrl: '/rif/multisig/gnosis-summary/'
+nextUrl: '/rif/multisig/sdk/creation/'
 ---
 **Important**: all the SDKs and the sample apps described below support Safe contracts **v1.2.0** and ethers.js **v5** so far.
 

@@ -4,6 +4,8 @@ title: RIF Multisig SDK - Receive RBTC
 description: follow these steps to receive gas on the multisig account
 tags: rif, gnosis, multisig, rbtc
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/sdk/policies/'
+nextUrl: '/rif/multisig/sdk/rbtc/rbtc_transactions/'
 ---
 
 It is important to understand that in order to properly receive funds, the Multisig account address (instead of the owner address) must be used as the receiver.

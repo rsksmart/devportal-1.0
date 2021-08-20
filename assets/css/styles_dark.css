@@ -207,3 +207,26 @@
 .dark .switch__knob:hover {
     outline-color: #fff;
 }
+
+/* on-page-navigation: START */
+.dark .on-page-nav .col {
+    margin: 0.5rem;
+    padding: 0;
+    border-radius: 5px;
+    -webkit-box-shadow: 0.5px 2px 6px 0px rgb(255 255 255 / 20%);
+    -moz-box-shadow: 0.5px 2px 6px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0.5px 2px 6px 0px rgb(255 255 255 / 20%);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    -webkit-transition: border 250ms ease;
+    -moz-transition: border 250ms ease;
+    transition: border 250ms ease;
+}
+
+.dark .on-page-nav .col:hover {
+    border-color: rgb(0, 181, 32);
+    border-width: 1px;
+    border-style: solid;
+}
+/* on-page-navigation: END */
