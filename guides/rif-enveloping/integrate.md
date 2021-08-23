@@ -1,7 +1,8 @@
 ---
 layout: rsk
-title: Integration Guide
-tags: rif, enveloping, rsk, gas station network, gsn, defi, integrate
+title: RIF Enveloping Integration
+tags: rif, enveloping, envelope, relay, user, guide, integrate
+permalink: /guides/rif-enveloping/integrate/
 ---
 
 Enveloping allows users to pay transaction fees with tokens. For this purpose, the system exposes methods that dApps and wallets can consume to provide Enveloping as a service.

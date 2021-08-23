@@ -4,6 +4,8 @@ title: RIF Multisig SDK - transaction confirmation
 description: Steps required to confirm a transaction
 tags: rif, gnosis, multisig
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/sdk/listing/'
+nextUrl: '/rif/multisig/sdk/rejecting/'
 ---
 
 **Required packages**:

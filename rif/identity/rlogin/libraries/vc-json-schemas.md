@@ -1,7 +1,6 @@
 ---
-layout: rsk
+layout: redirect
+permalink: /rif/identity/rlogin/libraries/vc-json-schemas
+redirect: /rif/rlogin/libraries/vc-json-schemas
+collection_order: 0
 ---
-
-## rLogin - Verifiable Credentials JSON Schemas
-
-For more information please read [`rsksmart/vc-json-schemas`](https://github.com/rsksmart/vc-json-schemas)

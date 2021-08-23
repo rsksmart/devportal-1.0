@@ -1,11 +1,13 @@
 ---
 layout: rsk
-title:  The Product
-description: Overview of the RIF Savings and Vault Solution
+title:  The RIF Multisig Product
+description: Overview of the RIF Multisig, Savings and Vault Solution
 tags: rif, gnosis, multisig
+prevUrl: '/rif/multisig/'
+nextUrl: '/rif/multisig/gnosis-summary/'
 ---
 
-The product for RIF Savings and Vault consists of porting and increasing the existing Gnosis SDK to allow RSK developers to operate multisig accounts in a safe and intuitive way, following the documentation and a sample application that will help with the correct implementation of the Gnosis solution.
+The product for RIF Multisig consists of porting and increasing the existing Gnosis SDK to allow RSK developers to operate multisig accounts in a safe and intuitive way, following the documentation and a sample application that will help with the correct implementation of the Gnosis solution.
 
 In short, it implies:
 
@@ -17,7 +19,7 @@ In short, it implies:
 
 ## Features
 
-The RIF Savings and Vault solution will allow RSK developers to use our SDKs, and with the help of the documentation to:
+The RIF Multisig solution will allow RSK developers to use our SDKs, and with the help of the documentation to:
 
 * Create multisig account, choosing its owners and threshold
 * CRUD multisig owners and threshold

@@ -4,6 +4,8 @@ title: RIF Multisig SDK - Send RBTC
 description: follow these steps to send gas on the multisig account and to create raw transactions
 tags: rif, gnosis, multisig, rbtc
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/sdk/rbtc/receive_rbtc/'
+nextUrl: '/rif/multisig/sdk/erc20/receive_erc20/'
 ---
 
 **Required packages**:

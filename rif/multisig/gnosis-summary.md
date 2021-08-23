@@ -1,9 +1,11 @@
 ---
 layout: rsk
-title: Gnosis Summary
+title: The RIF Multisig - Gnosis Summary
 description: Overview of the gnosis integration
 tags: rif, gnosis, multisig
 render_features: 'collapsible'
+prevUrl: '/rif/multisig/product/'
+nextUrl: '/rif/multisig/sdk/'
 ---
 
 Gnosis Safe solution consists of four main modules. It currently supports Ethereum and other EVM networks (Rinkeby, xDai, EWC, Volta), including RSK.
