@@ -65,7 +65,7 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [rLogin](/rif/rlogin)
   - [Integrate](/rif/rlogin/integrate)
   - [Integrations](/rif/rlogin/integrations)
-  - [Design & architecture](/rif/rlogin/architecture)
+  - [Design & architecture](/rif/rlogin/design-and-architecture/)
   - [Libraries](/rif/rlogin/libraries)
     - [rLogin modal (client side)](/rif/rlogin/libraries/modal)
     - [DID Auth (server side)](/rif/rlogin/libraries/express-did-auth)
@@ -97,22 +97,6 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [Collaboration guidelines](contribute)
 - [Definitions](definitions)
 - [References](references)
-
-<!--
-- [RIF Identity Manager](manager)
-  - [User guide](manager/user-guide)
-  - [Design & architecture](manager/architecture)
-  - [Develop](manager/develop)
-- [rLogin](rlogin)
-  - [Integrate](rlogin/integrate)
-  - [Design & architecture](rlogin/architecture)
-  - [Implementation](rlogin/implementation)
-    - [rLogin modal (client side)](rlogin/implementation/modal)
-    - [DID Auth (server side)](rlogin/implementation/express-did-auth)
-    - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
-  - [Develop](rlogin/develop)
-- [FAQ](faq)
--->
 
 ## Repos
 

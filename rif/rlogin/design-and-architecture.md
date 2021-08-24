@@ -22,7 +22,7 @@ The rLogin design consists of 4 core modules:
   * Most applications have a backend, which defines the application model and an interface to interact and collaborate with the model. Users must be authenticated, that is, they must be authorized to use this model.
   * Today one of the most used authentication methods are [Google Identity](https://developers.facebook.com/products/facebook-login/) or [Facebook Login](https://developers.facebook.com/products/facebook-login/). A user of our application is recognized as such by having a Google or Facebook account. Google and Facebook will tell us the data that the user authorizes to share, such as their name or email. That data will be used to validate and accept a new user in our app.
   **Our model proposes a different methodology, where who shares the data is the user and not the third party.** Third parties will digitally sign the information that represents the user, issuing Verifiable Credentials, and users will save the information in their preferred store, thus avoiding depositing their information in data silos.
-  * To achieve this we designed and developed [DID Auth](../../specs/did-auth), an authentication protocol in which the application will only communicate with the user, and the user will not need any third party to share their information.
+  * To achieve this we designed and developed [DID Auth](/rif/identity/specs/did-auth), an authentication protocol in which the application will only communicate with the user, and the user will not need any third party to share their information.
   * Read more:
     - [Express.js DID Auth docs](../libraries/express-did-auth)
     - [DID Auth client](../libraries/did-auth-client)
