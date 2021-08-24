@@ -11,7 +11,7 @@ The RIF Identity MVP has the objective to develop a basic model putting into act
 - User-centric cloud storage
 - Identity and credential authentication
 
-The model is the emission of ID Cards, Driving Licenses and Parking Permits. _Citizens_ use a [mobile wallet application](applications/holder-app) where they input their identity details like name and age, and request any of these credentials to the _government_. The _government agent_ accesses a [web application](applications/issuer-app) where all the credential requests are listed and can be manually granted. Once credentials are granted, _Citizens_ store them in a user-centric cloud storage called [_The Data Vault_](../data-vault). _Police officers_ can verify _citizen's_ credentials scanning a QR code using another [mobile application](applications/verifier-app).
+The model is the emission of ID Cards, Driving Licenses and Parking Permits. _Citizens_ use a [mobile wallet application](applications/holder-app) where they input their identity details like name and age, and request any of these credentials to the _government_. The _government agent_ accesses a [web application](applications/issuer-app) where all the credential requests are listed and can be manually granted. Once credentials are granted, _Citizens_ store them in a user-centric cloud storage called [_The Data Vault_](/rif/identity/data-vault). _Police officers_ can verify _citizen's_ credentials scanning a QR code using another [mobile application](applications/verifier-app).
 
 To understand the model we identify three actors:
 - An issuer: the government

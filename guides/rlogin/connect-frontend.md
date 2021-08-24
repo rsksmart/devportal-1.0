@@ -261,7 +261,7 @@ this will be covered in the following article.
 * [rLogin: The New Authentication Libraries for Blockchain Based Apps on Hackernoon](https://hackernoon.com/rlogin-the-new-authentication-libraries-for-blockchain-based-apps-h619330z)
 * [RIF Identity docs](https://developers.rsk.co/rif/identity/)
 * [rLogin repo](https://github.com/rsksmart/rlogin)
-* [rLogin docs](https://developers.rsk.co/rif/identity/rlogin/)
+* [rLogin docs](https://developers.rsk.co/rif/rlogin/)
 * [rLogin sample apps](https://github.com/rsksmart/rlogin-sample-apps)
 * [`web3modal`](https://github.com/web3Modal/web3modal/)
 * [EIP-1193 - Ethereum Provider JavaScript API](https://eips.ethereum.org/EIPS/eip-1193)

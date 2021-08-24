@@ -107,7 +107,7 @@ platforms and APIs to create innovative experiences.
             <a href="/solutions/getblock/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/getblock/logo.svg" alt="started icon">
+                        <img src="/assets/img/solutions/getblock/getblock_logo.png" alt="getblock icon">
                     </div>
                 </div>
             </a>

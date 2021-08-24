@@ -52,27 +52,6 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 
 ![rif-identity-architecture](/rif/identity/assets/img/rif-identity-architecture.png)
 
-<!--
-  <div class="row rif_blue_text">
-    <div class="col">
-      <div class="rns-index-box">
-        <a href="rlogin">rLogin</a>
-        <br />
-        <br />
-        <p>Web3 based authentication</p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="rns-index-box">
-        <a href="manager">Manage</a>
-        <br />
-        <br />
-        <p>Let your users manage their identity</p>
-      </div>
-    </div>
-  </div>
--->
-
 ## Table of contents
 
 - [The MVP](mvp)
@@ -83,15 +62,15 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [Learnings](mvp/learnings)
   - [Acknowledgements](mvp/acknowledgements)
 - RIF Identity Manager ([more info](https://github.com/rsksmart/rif-identity-manager))
-- [rLogin](rlogin)
-  - [Integrate](rlogin/integrate)
-  - [Integrations](rlogin/integrations)
-  - [Design & architecture](rlogin/architecture)
-  - [Libraries](rlogin/libraries)
-    - [rLogin modal (client side)](rlogin/libraries/modal)
-    - [DID Auth (server side)](rlogin/libraries/express-did-auth)
-    - [Verifiable Credential schemas (communication)](rlogin/libraries/vc-json-schemas)
-  - [Develop](rlogin/develop)
+- [rLogin](/rif/rlogin)
+  - [Integrate](/rif/rlogin/integrate)
+  - [Integrations](/rif/rlogin/integrations)
+  - [Design & architecture](/rif/rlogin/design-and-architecture/)
+  - [Libraries](/rif/rlogin/libraries)
+    - [rLogin modal (client side)](/rif/rlogin/libraries/modal)
+    - [DID Auth (server side)](/rif/rlogin/libraries/express-did-auth)
+    - [Verifiable Credential schemas (communication)](/rif/rlogin/libraries/vc-json-schemas)
+  - [Develop](/rif/rlogin/develop)
 - [Data Vault](data-vault)
   - [Use](data-vault/use)
   - [Design & architecture](data-vault/architecture)
@@ -118,22 +97,6 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
 - [Collaboration guidelines](contribute)
 - [Definitions](definitions)
 - [References](references)
-
-<!--
-- [RIF Identity Manager](manager)
-  - [User guide](manager/user-guide)
-  - [Design & architecture](manager/architecture)
-  - [Develop](manager/develop)
-- [rLogin](rlogin)
-  - [Integrate](rlogin/integrate)
-  - [Design & architecture](rlogin/architecture)
-  - [Implementation](rlogin/implementation)
-    - [rLogin modal (client side)](rlogin/implementation/modal)
-    - [DID Auth (server side)](rlogin/implementation/express-did-auth)
-    - [Verifiable Credential schemas (communication)](rlogin/implementation/vc-json-schemas)
-  - [Develop](rlogin/develop)
-- [FAQ](faq)
--->
 
 ## Repos
 

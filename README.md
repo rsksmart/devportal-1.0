@@ -88,23 +88,20 @@ The `Gemfile.lock` file in the root may change whenever you run bundler commands
 However, do not commit this unless you explicitly want to update the dependencies.
 
 If you do wish to update the dependencies,
-do so in a separate branch whose name starts with `proj/`.
+do so in a **separate branch** whose name starts with `proj/`.
 This is to enforce separation of concerns,
-e.g. a documentation PR doees not contain dependency changes.
+e.g. a documentation PR does not contain dependency changes.
 
 ### Writing original documentation
 
 Steps:
 
 1. Create a markdown file in the appropriate folder.
-
-Tips:
-
-- Add `title`, `tags`, `description`, and `collection_order` attributes
-  to the front matter as appropriate - see below for more details.
-- If the new page is within a collection, and it is named `index.md`,
-  ensure that you set a `permalink` attribute in the front matter,
-  with a trailing `/`.
+1. Add `title`, `tags`, `description`, and `collection_order` attributes
+   to the front matter as appropriate - see below for more details.
+1. If the new page is within a collection, and it is named `index.md`,
+   ensure that you set a `permalink` attribute in the front matter,
+   with a trailing `/`.
 
 ### Replicating existing documentation
 
@@ -123,6 +120,44 @@ Tips:
 - Test the build output to ensure that the following common errors are fixed
   - Hyperlinks to anchors by ID attribute are correct
   - Referenced image files are also copied
+
+### Moving existing documentation
+
+This applies when you have documentation already published on the devportal,
+but wish to move or rename it.
+
+1. Do **not** use `git mv` to move/ rename the file
+1. Instead create a new file in the target location/ file path,
+   and leave the previous one there.
+1. In the new file, copy all the contents from the previous file.
+1. In the previous file, delete all contents,
+   and replace the front matter with redirection instructions.
+   Note that both URLs should be absolute and end with `/`.
+   For example:
+
+```yaml
+---
+layout: redirect
+permalink: /develop/apps/tools/stats/
+redirect: /tools/
+---
+```
+
+**Why**: This is done because when a page is published at a certain URL,
+that URL may be linked to externally.
+By renaming/ moving a page, the URL changes, and any external links
+may get a "404 Page Not Found" error.
+In this scenario, a redirect is preferred as it is
+much more user friendly, and search engine friendly.
+
+### Links
+
+1. When adding links, prefer absolute links - e.g. links beginning with `/`,
+   over relative links - e.g. links beginning with `./` or `../`
+1. Run `rake test_html_proofer` to identify any broken links -
+   this includes both links to other pages within devportal,
+   and links to anchor references within devportal pages,
+   however does not include links to external pages (not within devportal).
 
 ### Findability
 

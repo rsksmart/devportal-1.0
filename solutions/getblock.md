@@ -6,7 +6,7 @@ render_features: 'custom-terminals'
 layout: 'rsk'
 ---
 
-![GetBlock - Banner](/assets/img/solutions/getblock/logo.svg)
+![GetBlock - Banner](/assets/img/solutions/getblock/getblock_logo.png)
 
 ## Description
 
