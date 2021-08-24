@@ -88,23 +88,20 @@ The `Gemfile.lock` file in the root may change whenever you run bundler commands
 However, do not commit this unless you explicitly want to update the dependencies.
 
 If you do wish to update the dependencies,
-do so in a separate branch whose name starts with `proj/`.
+do so in a **separate branch** whose name starts with `proj/`.
 This is to enforce separation of concerns,
-e.g. a documentation PR doees not contain dependency changes.
+e.g. a documentation PR does not contain dependency changes.
 
 ### Writing original documentation
 
 Steps:
 
 1. Create a markdown file in the appropriate folder.
-
-Tips:
-
-- Add `title`, `tags`, `description`, and `collection_order` attributes
-  to the front matter as appropriate - see below for more details.
-- If the new page is within a collection, and it is named `index.md`,
-  ensure that you set a `permalink` attribute in the front matter,
-  with a trailing `/`.
+2. Add `title`, `tags`, `description`, and `collection_order` attributes
+   to the front matter as appropriate - see below for more details.
+3. If the new page is within a collection, and it is named `index.md`,
+   ensure that you set a `permalink` attribute in the front matter,
+   with a trailing `/`.
 
 ### Replicating existing documentation
 
@@ -123,6 +120,15 @@ Tips:
 - Test the build output to ensure that the following common errors are fixed
   - Hyperlinks to anchors by ID attribute are correct
   - Referenced image files are also copied
+
+### Links
+
+1. When adding links, prefer absolute links - e.g. links beginning with `/`,
+   over relative links - e.g. links beginning with `./` or `../`
+1. Run `rake test_html_proofer` to identify any broken links -
+   this includes both links to other pages within devportal,
+   and links to anchor references within devportal pages,
+   however does not include links to external pages (not within devportal).
 
 ### Findability
 
