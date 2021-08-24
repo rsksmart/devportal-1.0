@@ -121,6 +121,37 @@ Tips:
   - Hyperlinks to anchors by ID attribute are correct
   - Referenced image files are also copied
 
+### Moving existing documentation
+
+This applies when you have documentation already published on the devportal,
+but wish to move or rename it.
+
+1. Do **not** use `git mv` to move/ rename the file
+1. Instead create a new file in the target location/ file path,
+   and leave the previous one there.
+1. In the new file, copy all the contents from the previous file.
+1. In the previous file, delete all contents,
+   and replace the front matter with redirection instructions.
+   Note that both URLs should be absolute and end with `/`.
+   For example:
+
+```yaml
+---
+layout: redirect
+permalink: /develop/apps/tools/stats/
+redirect: /tools/
+---
+```
+
+**Why**
+
+This is done because when a page is published at a certain URL,
+that URL may be linked to externally.
+By renaming/ moving a page, the URL changes, and any external links
+may get a "404 Page Not Found" error.
+In this scenario, a redirect is preferred as it is
+much more user friendly, and search engine friendly.
+
 ### Links
 
 1. When adding links, prefer absolute links - e.g. links beginning with `/`,
