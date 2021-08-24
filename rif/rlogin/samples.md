@@ -37,4 +37,4 @@ Repo: https://github.com/rsksmart/rlogin-workshop
 
 > This repo was used in a live demo that will be uploaded soon. Stay tuned: https://youtube.com/rsksmart
 
-You may also want to see the [current integrations](/rif/identity/rlogin/integrations) featuring some Pull Requests.
+You may also want to see the [current integrations](/rif/rlogin/integrations) featuring some Pull Requests.
