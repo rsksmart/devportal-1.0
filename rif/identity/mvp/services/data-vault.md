@@ -4,7 +4,7 @@ tags: rif, rif-identity, service, data-vault, libraries, infrastructure, mobile,
 ---
 
 <div class="alert alert-danger">
-  This is a proof-od-concept implementation of the RIF Data Vault. The current implementation documentation can be found [here](../../../data-vault)
+  This is a proof-od-concept implementation of the RIF Data Vault. The current implementation documentation can be found [here](/rif/identity/data-vault)
 </div>
 
 ## Data Vault - user-centric cloud storage service

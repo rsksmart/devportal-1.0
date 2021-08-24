@@ -31,7 +31,7 @@ Take a look at the [Figma prototype](https://www.figma.com/proto/KFwPTkCesIMlnut
 
 - Creates an Identity based on a 12 seed mnemonic.
 - Internationalization - currently Spanish and English support, it is easy to extend to new languages.
-- Saves declarative details about the user and backs them up in the [data vault](../../../data-vault). These details are shared when the user requests credentials.
+- Saves declarative details about the user and backs them up in the [data vault](/rif/identity/data-vault). These details are shared when the user requests credentials.
 - Requests credentials to issuer service, and hold request information until the issuer approves or denies the request (following [this protocol](../../../specs/credential-requests)).
 - Saves received Credentials in its internal database and then backs them up in the data vault.
 - Creates Presentations of Verifiable Credentials to share with the Verifier app.

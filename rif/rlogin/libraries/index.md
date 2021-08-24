@@ -1,6 +1,6 @@
 ---
 layout: redirect
-permalink: /rif/identity/rlogin/libraries/
+permalink: /rif/rlogin/libraries/
 redirect: /rif/rlogin/libraries/intro/
 collection_order: 0
 ---

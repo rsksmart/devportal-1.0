@@ -77,7 +77,7 @@ Requiring information to the user is OPTIONAL, it depends on the service needs. 
 
 1. _Client_ sends `POST /request-signup { did }` to _Service_, where `did` is _User_'s DID
 2. _Service_ creates a random deterministic* _challenge_. Responds with `{ challenge, sdr? }` were `sdr?` is the OPTIONAL [selective disclosure request](#request) defined by the _Service_. The `sdr` MUST be sent in a signed JWT format.
-3. If `sdr`, _Client_ obtains the information required from the user's desired service or platform (for example, from the [RIF Data Vault](../../data-vault)), and builds a [selective disclosure](#response) (response)
+3. If `sdr`, _Client_ obtains the information required from the user's desired service or platform (for example, from the [RIF Data Vault](/rif/identity/data-vault)), and builds a [selective disclosure](#response) (response)
 4. _Client_ prompts user to sign a message with the following format using `personal_sign` as per EIP-191{% include rif-id-ref.html id="16" %} and EIP-155{% include rif-id-ref.html id="15" %}:
 
   ```
@@ -98,12 +98,12 @@ My credentials are: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJkaWQ6ZXRocjp
 POST /signup {
   did: <signer's DID>,
   sig: <message signature>,
-  credentials: <array of JWT credentials> 
+  credentials: <array of JWT credentials>
 }
   ```
   For the given example it is
   ```json
-{ 
+{
   "did": "did:ethr:rsk:0xa53...dec",
   "sig": "...",
   "credentials": [
@@ -112,7 +112,7 @@ POST /signup {
 }
   ```
 
-6. _Service_ receives the `response` and recovers the signer against this message (_Service_ needs the _User_'s DID to fetch the expected challenge): 
+6. _Service_ receives the `response` and recovers the signer against this message (_Service_ needs the _User_'s DID to fetch the expected challenge):
 
   ```
 <custom header set by the developer>
@@ -264,7 +264,7 @@ NOTE: The logout process does not invalidate the current _access token_, it will
 
 ## Implementations
 
-- [`@rsksmart/express-did-auth`](../../rlogin/libraries/express-did-auth) - in progress
+- [`@rsksmart/express-did-auth`](/rif/rlogin/libraries/express-did-auth) - in progress
 
 ## Extensions
 
@@ -347,7 +347,7 @@ Host: server.example.com
 
 ###### Cookie
 
-When the client performs a `POST /auth`, the server must set the `refresh-token` cookie with the following attributes: `HttpOnly`, `Secure` and `SameSite=Strict`. 
+When the client performs a `POST /auth`, the server must set the `refresh-token` cookie with the following attributes: `HttpOnly`, `Secure` and `SameSite=Strict`.
 
 For example:
 
