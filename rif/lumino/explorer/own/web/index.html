@@ -209,16 +209,16 @@
                 </ul>
               </li>
               <li>
-              <span class="fa fa-chevron-right"></span>
-              <a href="../../../../../rsk/node/configure/">Configure</a>
-              <ul>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../../rsk/node/configure/">Configure</a>
+                <ul>
                   <li class="hide-mobile"><a href="../../../../../rsk/node/configure/">Configure</a></li>
                   <li><a href="../../../../../rsk/node/configure/cli/">CLI</a></li>
                   <li><a href="../../../../../rsk/node/configure/reference/">Reference</a></li>
                   <li><a href="../../../../../rsk/node/configure/verbosity/">Verbosity</a></li>
                   <li><a href="../../../../../rsk/node/configure/switch-network/">Switch networks</a></li>
                   <li><a href="../../../../../rsk/node/configure/for-mining/">For mining</a></li>
-              </ul>
+                </ul>
               </li>
               <li>
                 <span class="fa fa-chevron-right"></span>
@@ -305,14 +305,35 @@
               <li><a href="../../../../identity/">Intro</a></li>
               <li><a href="../../../../identity/mvp/">The MVP</a></li>
               <li><a href="../../../../identity/manager/">Identity Manager</a></li>
-              <li><a href="../../../../identity/rlogin/">rLogin</a></li>
               <li><a href="../../../../identity/data-vault/">Data Vault</a></li>
               <li><a href="../../../../identity/libraries/">Libraries</a></li>
               <li><a href="../../../../identity/specs/">Specs</a></li>
               <li><a href="../../../../identity/faq/">FAQ</a></li>
               <li><a href="../../../../identity/#repos">Github repos</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Identity -->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../rlogin/">rLogin</a>
+            <ul>
+              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
+              <li><a href="../../../../rlogin/get-started/">Get Started</a></li>
+              <li><a href="../../../../rlogin/samples/">Sample Apps</a></li>
+              <li><a href="../../../../rlogin/design-and-architecture/">Design &amp; Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rlogin/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../../rlogin/libraries/intro/">Intro</a></li>
+                  <li><a href="../../../../rlogin/libraries/modal/">rLogin Modal (client side)</a></li>
+                  <li><a href="../../../../rlogin/libraries/express-did-auth/">DID Auth (server side)</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rlogin/integrate/">Integrate</a></li>
+              <li><a href="../../../../rlogin/integrations/">Integrations</a></li>
+
+            </ul>
+          </li> <!-- /rLogin -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../rns/">RNS</a>
@@ -436,7 +457,7 @@
               <li><a href="../../../../rns/mainnet/">Mainnet</a></li>
               <li><a href="../../../../rns/testnet/">Testnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RNS -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../payments/">Payments</a>
@@ -494,7 +515,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Payments -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../storage/">Storage</a>
@@ -551,7 +572,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Storage -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../marketplace/">Marketplace</a>
@@ -593,7 +614,7 @@
               <li><a href="../../../../marketplace/testnet/">Testnet</a></li>
               <li><a href="../../../../marketplace/mainnet/">Mainnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Marketplace -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../gateways/">Gateways</a>
@@ -617,7 +638,7 @@
                   </li>
                 </ul>
               </li>
-				<li>
+              <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../../gateways/triggers/">Triggers</a>
                 <ul>
@@ -636,23 +657,20 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Gateways -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../enveloping/">Enveloping</a>
             <ul>
               <li><a href="../../../../enveloping/">About</a></li>
-              <li><a href="../../../../enveloping/intro/">Introduction</a></li>
+              <li><a href="../../../../enveloping/overview/">Overview</a></li>
               <li><a href="../../../../enveloping/architecture/">Architecture</a></li>
-              <li><a href="../../../../enveloping/requirements/">Requirements</a></li>
-              <li><a href="../../../../enveloping/install/">Install</a></li>
-              <li><a href="../../../../enveloping/launch/">Launch</a></li>
+              <li><a href="../../../../enveloping/versions/">Versions</a></li>
               <li><a href="../../../../enveloping/gas-costs/">Gas Costs</a></li>
-              <li><a href="../../../../enveloping/testnet/">Testnet</a></li>
-              <li><a href="../../../../enveloping/changelog/">Changelog</a></li>
+              <li><a href="../../../../enveloping/contracts/">Contracts</a></li>
             </ul>
-          </li>
-	  <li>
+          </li> <!-- /RIF Enveloping -->
+          <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../scheduler/">Scheduler</a>
             <ul>
@@ -662,13 +680,10 @@
               <li><a href="../../../../scheduler/sdk/">SDK</a></li>
               <li><a href="../../../../scheduler/run/">Run an instance</a></li>
             </ul>
-          </li>
-          <li>
-            <a href="../../../../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Scheduler -->
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../../multisig/">Savings and Vault</a>
+            <a href="../../../../multisig/">Multisig</a>
             <ul>
               <li><a href="../../../../multisig/">Overview</a></li>
               <li><a href="../../../../multisig/product/">Product</a></li>
@@ -713,10 +728,10 @@
               <li><a href="../../../../multisig/contracts/">Smart contracts</a></li>
               <li><a href="../../../../multisig/transaction-service/">Transaction service</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Multisig -->
           <li>
             <a href="../../../../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Template -->
         </ul>
       </li> <!-- /RIF -->
       <li class="first_level">
@@ -775,9 +790,11 @@
             <a href="../../../../../guides/rif-enveloping/">Enveloping</a>
             <ul>
               <li><a href="../../../../../guides/rif-enveloping/">User Guide</a></li>
+              <li><a href="../../../../../guides/rif-enveloping/install/">Install</a></li>
+              <li><a href="../../../../../guides/rif-enveloping/launch/">Launch</a></li>
               <li><a href="../../../../../guides/rif-enveloping/develop/">Develop</a></li>
               <li><a href="../../../../../guides/rif-enveloping/integrate/">Integrate</a></li>
-              <li><a href="../../../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
+              <li><a href="../../../../../guides/rif-enveloping/smart-wallets/">Smart Wallets</a></li>
             </ul>
           </li>
           <li>
@@ -1194,16 +1211,16 @@
                 </ul>
               </li>
               <li>
-              <span class="fa fa-chevron-right"></span>
-              <a href="../../../../../rsk/node/configure/">Configure</a>
-              <ul>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../../rsk/node/configure/">Configure</a>
+                <ul>
                   <li class="hide-mobile"><a href="../../../../../rsk/node/configure/">Configure</a></li>
                   <li><a href="../../../../../rsk/node/configure/cli/">CLI</a></li>
                   <li><a href="../../../../../rsk/node/configure/reference/">Reference</a></li>
                   <li><a href="../../../../../rsk/node/configure/verbosity/">Verbosity</a></li>
                   <li><a href="../../../../../rsk/node/configure/switch-network/">Switch networks</a></li>
                   <li><a href="../../../../../rsk/node/configure/for-mining/">For mining</a></li>
-              </ul>
+                </ul>
               </li>
               <li>
                 <span class="fa fa-chevron-right"></span>
@@ -1290,14 +1307,35 @@
               <li><a href="../../../../identity/">Intro</a></li>
               <li><a href="../../../../identity/mvp/">The MVP</a></li>
               <li><a href="../../../../identity/manager/">Identity Manager</a></li>
-              <li><a href="../../../../identity/rlogin/">rLogin</a></li>
               <li><a href="../../../../identity/data-vault/">Data Vault</a></li>
               <li><a href="../../../../identity/libraries/">Libraries</a></li>
               <li><a href="../../../../identity/specs/">Specs</a></li>
               <li><a href="../../../../identity/faq/">FAQ</a></li>
               <li><a href="../../../../identity/#repos">Github repos</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Identity -->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../../../../rlogin/">rLogin</a>
+            <ul>
+              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
+              <li><a href="../../../../rlogin/get-started/">Get Started</a></li>
+              <li><a href="../../../../rlogin/samples/">Sample Apps</a></li>
+              <li><a href="../../../../rlogin/design-and-architecture/">Design &amp; Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../../../rlogin/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../../../../rlogin/libraries/intro/">Intro</a></li>
+                  <li><a href="../../../../rlogin/libraries/modal/">rLogin Modal (client side)</a></li>
+                  <li><a href="../../../../rlogin/libraries/express-did-auth/">DID Auth (server side)</a></li>
+                </ul>
+              </li>
+              <li><a href="../../../../rlogin/integrate/">Integrate</a></li>
+              <li><a href="../../../../rlogin/integrations/">Integrations</a></li>
+
+            </ul>
+          </li> <!-- /rLogin -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../rns/">RNS</a>
@@ -1421,7 +1459,7 @@
               <li><a href="../../../../rns/mainnet/">Mainnet</a></li>
               <li><a href="../../../../rns/testnet/">Testnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RNS -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../payments/">Payments</a>
@@ -1479,7 +1517,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Payments -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../storage/">Storage</a>
@@ -1536,7 +1574,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Storage -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../marketplace/">Marketplace</a>
@@ -1578,7 +1616,7 @@
               <li><a href="../../../../marketplace/testnet/">Testnet</a></li>
               <li><a href="../../../../marketplace/mainnet/">Mainnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Marketplace -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../gateways/">Gateways</a>
@@ -1602,7 +1640,7 @@
                   </li>
                 </ul>
               </li>
-				<li>
+              <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../../../../gateways/triggers/">Triggers</a>
                 <ul>
@@ -1621,23 +1659,20 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Gateways -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../enveloping/">Enveloping</a>
             <ul>
               <li><a href="../../../../enveloping/">About</a></li>
-              <li><a href="../../../../enveloping/intro/">Introduction</a></li>
+              <li><a href="../../../../enveloping/overview/">Overview</a></li>
               <li><a href="../../../../enveloping/architecture/">Architecture</a></li>
-              <li><a href="../../../../enveloping/requirements/">Requirements</a></li>
-              <li><a href="../../../../enveloping/install/">Install</a></li>
-              <li><a href="../../../../enveloping/launch/">Launch</a></li>
+              <li><a href="../../../../enveloping/versions/">Versions</a></li>
               <li><a href="../../../../enveloping/gas-costs/">Gas Costs</a></li>
-              <li><a href="../../../../enveloping/testnet/">Testnet</a></li>
-              <li><a href="../../../../enveloping/changelog/">Changelog</a></li>
+              <li><a href="../../../../enveloping/contracts/">Contracts</a></li>
             </ul>
-          </li>
-	  <li>
+          </li> <!-- /RIF Enveloping -->
+          <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../../../../scheduler/">Scheduler</a>
             <ul>
@@ -1647,13 +1682,10 @@
               <li><a href="../../../../scheduler/sdk/">SDK</a></li>
               <li><a href="../../../../scheduler/run/">Run an instance</a></li>
             </ul>
-          </li>
-          <li>
-            <a href="../../../../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Scheduler -->
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../../../../multisig/">Savings and Vault</a>
+            <a href="../../../../multisig/">Multisig</a>
             <ul>
               <li><a href="../../../../multisig/">Overview</a></li>
               <li><a href="../../../../multisig/product/">Product</a></li>
@@ -1698,10 +1730,10 @@
               <li><a href="../../../../multisig/contracts/">Smart contracts</a></li>
               <li><a href="../../../../multisig/transaction-service/">Transaction service</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Multisig -->
           <li>
             <a href="../../../../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Template -->
         </ul>
       </li> <!-- /RIF -->
       <li class="first_level">
@@ -1760,9 +1792,11 @@
             <a href="../../../../../guides/rif-enveloping/">Enveloping</a>
             <ul>
               <li><a href="../../../../../guides/rif-enveloping/">User Guide</a></li>
+              <li><a href="../../../../../guides/rif-enveloping/install/">Install</a></li>
+              <li><a href="../../../../../guides/rif-enveloping/launch/">Launch</a></li>
               <li><a href="../../../../../guides/rif-enveloping/develop/">Develop</a></li>
               <li><a href="../../../../../guides/rif-enveloping/integrate/">Integrate</a></li>
-              <li><a href="../../../../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
+              <li><a href="../../../../../guides/rif-enveloping/smart-wallets/">Smart Wallets</a></li>
             </ul>
           </li>
           <li>
@@ -2123,9 +2157,9 @@ To create a production build, use yarn build.
   <li><a href="http://explorer.lumino.rifos.org/" rel="external noopener noreferrer" target="_blank">RIF Lumino Explorer</a></li>
 </ul>
 
-
                   
 
+                  
                </div>
             </div>
 

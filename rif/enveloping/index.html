@@ -209,16 +209,16 @@
                 </ul>
               </li>
               <li>
-              <span class="fa fa-chevron-right"></span>
-              <a href="../../rsk/node/configure/">Configure</a>
-              <ul>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/configure/">Configure</a>
+                <ul>
                   <li class="hide-mobile"><a href="../../rsk/node/configure/">Configure</a></li>
                   <li><a href="../../rsk/node/configure/cli/">CLI</a></li>
                   <li><a href="../../rsk/node/configure/reference/">Reference</a></li>
                   <li><a href="../../rsk/node/configure/verbosity/">Verbosity</a></li>
                   <li><a href="../../rsk/node/configure/switch-network/">Switch networks</a></li>
                   <li><a href="../../rsk/node/configure/for-mining/">For mining</a></li>
-              </ul>
+                </ul>
               </li>
               <li>
                 <span class="fa fa-chevron-right"></span>
@@ -305,14 +305,35 @@
               <li><a href="../identity/">Intro</a></li>
               <li><a href="../identity/mvp/">The MVP</a></li>
               <li><a href="../identity/manager/">Identity Manager</a></li>
-              <li><a href="../identity/rlogin/">rLogin</a></li>
               <li><a href="../identity/data-vault/">Data Vault</a></li>
               <li><a href="../identity/libraries/">Libraries</a></li>
               <li><a href="../identity/specs/">Specs</a></li>
               <li><a href="../identity/faq/">FAQ</a></li>
               <li><a href="../identity/#repos">Github repos</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Identity -->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../rlogin/">rLogin</a>
+            <ul>
+              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
+              <li><a href="../rlogin/get-started/">Get Started</a></li>
+              <li><a href="../rlogin/samples/">Sample Apps</a></li>
+              <li><a href="../rlogin/design-and-architecture/">Design &amp; Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../rlogin/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../rlogin/libraries/intro/">Intro</a></li>
+                  <li><a href="../rlogin/libraries/modal/">rLogin Modal (client side)</a></li>
+                  <li><a href="../rlogin/libraries/express-did-auth/">DID Auth (server side)</a></li>
+                </ul>
+              </li>
+              <li><a href="../rlogin/integrate/">Integrate</a></li>
+              <li><a href="../rlogin/integrations/">Integrations</a></li>
+
+            </ul>
+          </li> <!-- /rLogin -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../rns/">RNS</a>
@@ -436,7 +457,7 @@
               <li><a href="../rns/mainnet/">Mainnet</a></li>
               <li><a href="../rns/testnet/">Testnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RNS -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../payments/">Payments</a>
@@ -494,7 +515,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Payments -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../storage/">Storage</a>
@@ -551,7 +572,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Storage -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../marketplace/">Marketplace</a>
@@ -593,7 +614,7 @@
               <li><a href="../marketplace/testnet/">Testnet</a></li>
               <li><a href="../marketplace/mainnet/">Mainnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Marketplace -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../gateways/">Gateways</a>
@@ -617,7 +638,7 @@
                   </li>
                 </ul>
               </li>
-				<li>
+              <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../gateways/triggers/">Triggers</a>
                 <ul>
@@ -636,23 +657,20 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Gateways -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="./">Enveloping</a>
             <ul>
               <li><a href="./">About</a></li>
-              <li><a href="intro/">Introduction</a></li>
+              <li><a href="overview/">Overview</a></li>
               <li><a href="architecture/">Architecture</a></li>
-              <li><a href="requirements/">Requirements</a></li>
-              <li><a href="install/">Install</a></li>
-              <li><a href="launch/">Launch</a></li>
+              <li><a href="versions/">Versions</a></li>
               <li><a href="gas-costs/">Gas Costs</a></li>
-              <li><a href="testnet/">Testnet</a></li>
-              <li><a href="changelog/">Changelog</a></li>
+              <li><a href="contracts/">Contracts</a></li>
             </ul>
-          </li>
-	  <li>
+          </li> <!-- /RIF Enveloping -->
+          <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../scheduler/">Scheduler</a>
             <ul>
@@ -662,13 +680,10 @@
               <li><a href="../scheduler/sdk/">SDK</a></li>
               <li><a href="../scheduler/run/">Run an instance</a></li>
             </ul>
-          </li>
-          <li>
-            <a href="../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Scheduler -->
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../multisig/">Savings and Vault</a>
+            <a href="../multisig/">Multisig</a>
             <ul>
               <li><a href="../multisig/">Overview</a></li>
               <li><a href="../multisig/product/">Product</a></li>
@@ -713,10 +728,10 @@
               <li><a href="../multisig/contracts/">Smart contracts</a></li>
               <li><a href="../multisig/transaction-service/">Transaction service</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Multisig -->
           <li>
             <a href="../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Template -->
         </ul>
       </li> <!-- /RIF -->
       <li class="first_level">
@@ -775,9 +790,11 @@
             <a href="../../guides/rif-enveloping/">Enveloping</a>
             <ul>
               <li><a href="../../guides/rif-enveloping/">User Guide</a></li>
+              <li><a href="../../guides/rif-enveloping/install/">Install</a></li>
+              <li><a href="../../guides/rif-enveloping/launch/">Launch</a></li>
               <li><a href="../../guides/rif-enveloping/develop/">Develop</a></li>
               <li><a href="../../guides/rif-enveloping/integrate/">Integrate</a></li>
-              <li><a href="../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
+              <li><a href="../../guides/rif-enveloping/smart-wallets/">Smart Wallets</a></li>
             </ul>
           </li>
           <li>
@@ -1072,8 +1089,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-01 19:22:05 +0000T00:00:00.000Z">2021-07-01</time> | -->
-     15' to read |
+    <!--time role="presentation" datetime="2021-08-06 19:29:41 +0000T00:00:00.000Z">2021-08-06</time> | -->
+     1' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/enveloping/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1170,16 +1187,16 @@
                 </ul>
               </li>
               <li>
-              <span class="fa fa-chevron-right"></span>
-              <a href="../../rsk/node/configure/">Configure</a>
-              <ul>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../../rsk/node/configure/">Configure</a>
+                <ul>
                   <li class="hide-mobile"><a href="../../rsk/node/configure/">Configure</a></li>
                   <li><a href="../../rsk/node/configure/cli/">CLI</a></li>
                   <li><a href="../../rsk/node/configure/reference/">Reference</a></li>
                   <li><a href="../../rsk/node/configure/verbosity/">Verbosity</a></li>
                   <li><a href="../../rsk/node/configure/switch-network/">Switch networks</a></li>
                   <li><a href="../../rsk/node/configure/for-mining/">For mining</a></li>
-              </ul>
+                </ul>
               </li>
               <li>
                 <span class="fa fa-chevron-right"></span>
@@ -1266,14 +1283,35 @@
               <li><a href="../identity/">Intro</a></li>
               <li><a href="../identity/mvp/">The MVP</a></li>
               <li><a href="../identity/manager/">Identity Manager</a></li>
-              <li><a href="../identity/rlogin/">rLogin</a></li>
               <li><a href="../identity/data-vault/">Data Vault</a></li>
               <li><a href="../identity/libraries/">Libraries</a></li>
               <li><a href="../identity/specs/">Specs</a></li>
               <li><a href="../identity/faq/">FAQ</a></li>
               <li><a href="../identity/#repos">Github repos</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Identity -->
+          <li>
+            <span class="fa fa-chevron-right"></span>
+            <a href="../rlogin/">rLogin</a>
+            <ul>
+              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
+              <li><a href="../rlogin/get-started/">Get Started</a></li>
+              <li><a href="../rlogin/samples/">Sample Apps</a></li>
+              <li><a href="../rlogin/design-and-architecture/">Design &amp; Architecture</a></li>
+              <li>
+                <span class="fa fa-chevron-right"></span>
+                <a href="../rlogin/libraries/">Libraries</a>
+                <ul>
+                  <li><a href="../rlogin/libraries/intro/">Intro</a></li>
+                  <li><a href="../rlogin/libraries/modal/">rLogin Modal (client side)</a></li>
+                  <li><a href="../rlogin/libraries/express-did-auth/">DID Auth (server side)</a></li>
+                </ul>
+              </li>
+              <li><a href="../rlogin/integrate/">Integrate</a></li>
+              <li><a href="../rlogin/integrations/">Integrations</a></li>
+
+            </ul>
+          </li> <!-- /rLogin -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../rns/">RNS</a>
@@ -1397,7 +1435,7 @@
               <li><a href="../rns/mainnet/">Mainnet</a></li>
               <li><a href="../rns/testnet/">Testnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RNS -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../payments/">Payments</a>
@@ -1455,7 +1493,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Payments -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../storage/">Storage</a>
@@ -1512,7 +1550,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Storage -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../marketplace/">Marketplace</a>
@@ -1554,7 +1592,7 @@
               <li><a href="../marketplace/testnet/">Testnet</a></li>
               <li><a href="../marketplace/mainnet/">Mainnet</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Marketplace -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../gateways/">Gateways</a>
@@ -1578,7 +1616,7 @@
                   </li>
                 </ul>
               </li>
-				<li>
+              <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../gateways/triggers/">Triggers</a>
                 <ul>
@@ -1597,23 +1635,20 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> <!-- /RIF Gateways -->
           <li>
             <span class="fa fa-chevron-right"></span>
             <a href="./">Enveloping</a>
             <ul>
               <li><a href="./">About</a></li>
-              <li><a href="intro/">Introduction</a></li>
+              <li><a href="overview/">Overview</a></li>
               <li><a href="architecture/">Architecture</a></li>
-              <li><a href="requirements/">Requirements</a></li>
-              <li><a href="install/">Install</a></li>
-              <li><a href="launch/">Launch</a></li>
+              <li><a href="versions/">Versions</a></li>
               <li><a href="gas-costs/">Gas Costs</a></li>
-              <li><a href="testnet/">Testnet</a></li>
-              <li><a href="changelog/">Changelog</a></li>
+              <li><a href="contracts/">Contracts</a></li>
             </ul>
-          </li>
-	  <li>
+          </li> <!-- /RIF Enveloping -->
+          <li>
             <span class="fa fa-chevron-right"></span>
             <a href="../scheduler/">Scheduler</a>
             <ul>
@@ -1623,13 +1658,10 @@
               <li><a href="../scheduler/sdk/">SDK</a></li>
               <li><a href="../scheduler/run/">Run an instance</a></li>
             </ul>
-          </li>
-          <li>
-            <a href="../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Scheduler -->
           <li>
             <span class="fa fa-chevron-right"></span>
-            <a href="../multisig/">Savings and Vault</a>
+            <a href="../multisig/">Multisig</a>
             <ul>
               <li><a href="../multisig/">Overview</a></li>
               <li><a href="../multisig/product/">Product</a></li>
@@ -1674,10 +1706,10 @@
               <li><a href="../multisig/contracts/">Smart contracts</a></li>
               <li><a href="../multisig/transaction-service/">Transaction service</a></li>
             </ul>
-          </li>
+          </li> <!-- /RIF Multisig -->
           <li>
             <a href="../templates/">Use a RIF Template</a>
-          </li>
+          </li> <!-- /RIF Template -->
         </ul>
       </li> <!-- /RIF -->
       <li class="first_level">
@@ -1736,9 +1768,11 @@
             <a href="../../guides/rif-enveloping/">Enveloping</a>
             <ul>
               <li><a href="../../guides/rif-enveloping/">User Guide</a></li>
+              <li><a href="../../guides/rif-enveloping/install/">Install</a></li>
+              <li><a href="../../guides/rif-enveloping/launch/">Launch</a></li>
               <li><a href="../../guides/rif-enveloping/develop/">Develop</a></li>
               <li><a href="../../guides/rif-enveloping/integrate/">Integrate</a></li>
-              <li><a href="../../guides/rif-enveloping/create-smart-wallet/">Create a Smart Wallet</a></li>
+              <li><a href="../../guides/rif-enveloping/smart-wallets/">Smart Wallets</a></li>
             </ul>
           </li>
           <li>
@@ -2002,225 +2036,24 @@
 
                   <h1 class="page-title" id="top">About RIF Enveloping</h1>
 
-                  <p>RIF Enveloping provides the RSK ecosystem with the means to allow blockchain applications and end-users (wallet-apps) to transact without needing RBTC.</p>
+                  <p>RIF Enveloping (also known as RIF Relay) is a secure sponsored transaction system that enables users to pay fees using ERC-20 tokens.</p>
 
+<p>For general information about Enveloping, including its design, architecture, and specifications, please refer to the table of contents down below.</p>
+
+<p>If you’re looking for a step-by-step walkthrough on getting started and using Enveloping, please check out the <a href="../../guides/rif-enveloping/">Enveloping guide</a> instead.</p>
+
+<h2 id="table-of-contents">Table of Contents</h2>
 <ul>
+  <li><a href="overview/">Overview</a></li>
   <li><a href="architecture/">Architecture</a></li>
-  <li><a href="intro/">Intro</a></li>
-  <li><a href="requirements/">Requirements</a></li>
-  <li><a href="install/">Install</a></li>
-  <li><a href="launch/">Launch</a></li>
-  <li><a href="../../guides/rif-enveloping/">User Guide</a></li>
+  <li><a href="versions/">Versions</a></li>
   <li><a href="gas-costs/">Gas Costs</a></li>
-  <li><a href="testnet/">Testnet</a></li>
-  <li><a href="changelog/">Changelog</a></li>
+  <li><a href="contracts/">Contracts</a></li>
 </ul>
-
-<h2 id="guide">Guide</h2>
-
-<p>Checkout out the <a href="../../guides/rif-enveloping/">Enveloping guide</a>
-for a step-by-step walkthrough on getting started and using Enveloping.</p>
-
-<h2 id="goals">Goals</h2>
-
-<p>Most blockchains have native tokens to pay for transaction fees. This simple design has many benefits. First, to bootstrap an economy, the native token model creates an initial demand for a new token. Second, it simplifies the interaction between users and miners because it forces them to use the same means of payment. Third, it reduces the complexity of the consensus rules. Finally, it provides Denial of Service (DoS) protection to the network as full nodes can pay what the miners expect to include a received transaction. This way nodes can decide to propagate a transaction or not, preventing the free consumption of network bandwidth, and stop spam transactions. But with the advent of Decentralized Finance (DeFi), several stable coins have become a preferred means of payment and savings for both users and miners, therefore, separate systems to facilitate alternative payment mechanisms. Transactions that enable paying transactions with any coin other than the native currency are named meta-transactions because in some systems the user transaction is embedded in a higher-level (or meta) transaction created by a third party. A more accessible term for these transactions is “envelopes” or, for the whole system, an Enveloping system. A meta-transaction/enveloping system can serve at least two different use cases: 1) pay the transaction fees with tokens, where one new party receives the tokens (from the user) and pays the gas on behalf of the user, and 2) enable smart contract developers to subsidize the gas used to interact with their contracts.</p>
-
-<p>The main goal of the RIF Enveloping Project is to provide the RSK ecosystem with the means to allow blockchain applications and end-users (wallet-apps) to transact without needing RBTC. The system should allow RSK users to pay transaction fees with methods of payment (i.e., tokens) other than RBTC while maintaining their accounts as transaction senders.</p>
-
-<p>The first iteration of RIF Enveloping was based on the great work done by the Gas Station Network team: <a href="https://www.opengsn.org/" rel="external noopener noreferrer" target="_blank">Gas Station Network</a>.</p>
-
-<h2 id="glossary">Glossary</h2>
-
-<ol>
-  <li>Sponsor: A third party that pays the gas consumed by a sponsored transaction (see below) by submitting it to the blockchain.</li>
-  <li>Sponsored Transaction: A transaction sent by the requester (see below) through the Sponsor, this type of transaction aims to separate the gas payer from the sender of the transaction.</li>
-  <li>Requester: It’s an EOA. The requester sends a sponsored transaction to the Sponsor. She does not pay the gas with native-currency but with a token accepted by the Sponsor, if they don’t subsidize it.</li>
-  <li>Recipient: An abbreviation for recipient contract. It’s the destination of the requester’s transaction.</li>
-  <li>Envelope: Using the “envelopes” analogy, it’s the transaction, (funded with native cryptocurrency as gas) sent by the Sponsor to the blockchain, that wraps the requester’s transaction payload (sponsored transaction).</li>
-  <li>Enveloping: The entire system which allows the relay of sponsored transactions.</li>
-  <li>DoS: A Denial of Service is an information-security threat whose goal is to become a service unavailable.</li>
-  <li>DeFi: An acronym for Decentralized Finance, it’s a novel form for finance based in blockchain technology.</li>
-  <li>EOA: An External Owned Account (EOA) is an account managed with a key, which is capable of signing and sending transactions, and paying the cost for it.</li>
-</ol>
-
-<h2 id="index-of-contracts-and-components">Index of Contracts and Components</h2>
-
-<ul>
-  <li>
-<strong>Relay Provider</strong> - The access point to the Enveloping system for dApps using Web3. It wraps the RelayClient to provide Web3 compatibility.</li>
-  <li>
-<strong>Relay Client</strong> - The access point to the Enveloping system. It creates, signs, and sends the Sponsored transaction, which is signed by the requester and forwarded to the Relay Server via the HTTP protocol.</li>
-  <li>
-<strong>Relay Server</strong> - The Relay Server receives the sponsored transaction via HTTP from the Relay Client.
-The server has only one Relay Manager address and only one Relay Worker and points to just one Relay Hub.
-When the Relay Server receives an http “relay” request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.</li>
-  <li>
-<strong>Contract Interactor</strong> - A provider and wrapper for all the smart contract ABIs.</li>
-  <li>
-<strong>Relay Manager</strong> - An on-chain account that has staked balance. It delegates the requests to Relay Workers, which are the actual initiators of the relay flow. Any penalization done against a Relay Worker impacts the Relay Manager’s stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: register the Relay Server and add relay workers, both in the Relay Hub.</li>
-  <li>
-<strong>Relay Worker</strong> - An EOA that belongs to only one Relay Manager. It’s the sender of the Relay Request.</li>
-  <li>
-<strong>Enveloping Request</strong> - It’s the Sponsored Transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request.
-    <ul>
-      <li>
-<strong>Relay Data</strong> - All information required to relay the defined Forward Request.</li>
-      <li>
-<strong>Forward Request</strong> - It is formed by all the “common” transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
-When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Enveloping Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)
-.</li>
-    </ul>
-  </li>
-  <li>
-<strong>Proxy Factory</strong>  - Factory of Proxies to the SmartWallet logic. The Smart Wallet itself is a template with portions delegated to an optional custom logic (which is also a proxy pattern).</li>
-  <li>
-<strong>Proxy</strong> - A simple proxy that delegates every call to a SmartWallet logic address. This proxy is the one instantiated per SmartWallet, and it will receive the SmartWallet template address as Master Copy (MC). So every call made to this proxy will end up executing the logic defined in the MC.
-For the transaction execution (<code class="highlighter-rouge">execute()</code> call), MC logic will do the signature verification and payment. Then it will execute the request, and, if custom logic was defined, it will forward the flow to it before returning.</li>
-  <li>
-<strong>Smart Wallet</strong> - It’s the “contract-based account” owned by the Requester’s EOA.
-It is the one that calls the Recipient contract (i.e, the <code class="highlighter-rouge">msg.sender</code> address the Recipient will see). During the execution,  the contract verifies the Enveloping Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.</li>
-</ul>
-
-<p>Moreover, when a proxy to the Smart Wallet is created, it can define a custom logic that replaces what is done with the Enveloping Request after verifying it. With no custom logic, the recipient is called, but with custom logic, the request is delegated to the logic code.
-If a custom logic is set, it can be initialized (which would impact the proxy’s state of course). This happens automatically during the deployment of the Proxy if the code of the logic contract has defined a function that conforms to the initialize(bytes) ABI.</p>
-
-<h2 id="ways-to-create-smart-wallets">Ways to create smart wallets</h2>
-
-<p>There are <strong>two ways</strong> to create a Smart Wallet:</p>
-
-<ol>
-  <li>
-<strong>Regular transaction:</strong> The Requester (or another account on behalf of the Requester) calls the Proxy Factory asking to get a new Smart Wallet. Therefore the Proxy Factory creates a proxy to the SmartWallet code, delegating the ownership to the Requester.</li>
-  <li>
-<strong>Sponsored:</strong> It needs to go through the Enveloping process, which is described in detail below. The requester asks a third party to pay for the Smart Wallet deployment, and the requester pays in tokens for that (or free if it is subsidized by the third-party, a.k.a, Sponsor).</li>
-</ol>
-
-<h2 id="terminology">Terminology</h2>
-
-<ul>
-  <li>
-<strong>GSNEip712Library</strong> - This is an auxiliary library that bridges the Relay Request into a call of a Smart Wallet or Proxy Factory (in such case, the Request is a Deploy Request).</li>
-  <li>
-<strong>Paymaster</strong> - The Paymaster is an abstract contract that authorizes a specific relay request, it is the one paying the RelayWorker with native cryptocurrency so, in the specific implementation to be used/implemented, it would be beneficial to check that the payment in tokens is destined to the paymaster itself or an account the paymaster accepts as a valid recipient.
-The abstract contract has two hook methods, one to authorize the request and perform all the logic before executing the request (preRelayedCall), and another one to do logic after the execution (postRelayedCall).
-Two example implementations are provided:
-    <ul>
-      <li>
-<strong>Relay Paymaster</strong> - The Relay Paymaster has a list of tokens that it accepts. When it receives a relay request, checks the token’s acceptance and the payer’s balance for the token.</li>
-      <li>
-<strong>Deploy Paymaster</strong> - An implementation used in the SmartWallet deployment process. It performs the same Token Paymaster’s checks but also, it makes sure that the SmartWallet to be deployed doesn’t already exist and that a Proxy Factory address is provided in the Relay Request and it is the factory instance accepted by the paymaster.</li>
-    </ul>
-  </li>
-  <li>
-<strong>Relay Hub</strong> - The Relay Hub is the main on-chain component of the Enveloping architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It receives the Relay Request and forwards it to the Smart Wallet. Also, the Relay Hub forms part of the relay worker’s registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the balances the Paymasters will use to pay the relay workers for their transaction submission. A Paymaster without enough balance in the Relay Hub to pay for the relay of a transaction will cause the relay call to revert.</li>
-  <li>
-<strong>Stake Manager</strong> - The Stake Manager supports multiple Relay Hubs, the stakers are the Relay Managers and they can authorize/de-authorize specific Relay Hubs so they can penalize the managers if needed. The staked cryptocurrency is held in the StakeManager contract.
-The account staking for a specific Relay Manager for the first time becomes the owner of the stake, only this account can make subsequent stakes for this specific RelayManager.
-  When a Relay Manager unauthorised a Relay Hub, it means it is unstaking from it, which also means not being able to relay through that hub any more. Any balance held in the Relay Hub (as a consequence of being paid by a Paymaster) is sent to the original sender of the stake (the owner). Also, the workers’ balances are transferred to the stake owner, and, if configured, the Relay Manager’s balance can also be transferred to the stake owner.
-  Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.</li>
-</ul>
-
-<p><strong>Execution flow (Smart Wallet already created)</strong></p>
-
-<p><img src="../../assets/img/rif-enveloping/Execution-flow.jpg" alt="Enveloping - Execution Flow"></p>
-
-<ol>
-  <li>A Requester creates a request.</li>
-  <li>A Requester sends the request to the Relay Client (through Relay Provider).</li>
-  <li>The Relay client wraps the request into a  Relay Request and signs it.</li>
-  <li>The Relay Client sends the Relay Request to the Relay Server (via HTTPClient-HTTPServer)</li>
-  <li>The Relay Server create a transaction including the Relay Request and signs it with a Relay Worker account</li>
-  <li>The Relay Worker account is an EOA registered in the Relay Hub</li>
-  <li>The Relay Server sends the transaction to the Relay Hub using the same worker account as the previous step, executing the relayCall function of the Relay Hub contract.
-    <div class="language-solidity highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>  <span class="kd">function</span> <span class="nx">relayCall</span><span class="p">(</span>
-    <span class="nx">uint</span> <span class="nx">paymasterMaxAcceptanceBudget</span><span class="p">,</span>
-    <span class="nx">GsnTypes</span><span class="p">.</span><span class="nx">RelayRequest</span> <span class="nx">calldata</span> <span class="nx">relayRequest</span><span class="p">,</span>
-    <span class="nx">bytes</span> <span class="nx">calldata</span> <span class="nx">signature</span><span class="p">,</span>
-    <span class="nx">bytes</span> <span class="nx">calldata</span> <span class="nx">approvalData</span><span class="p">,</span>
-    <span class="nx">uint</span> <span class="nx">externalGasLimit</span>
-<span class="p">)</span>
-</code></pre></div>    </div>
-    <ul>
-      <li>When the Relay Hub receives a transaction from a Relay Worker, it verifies with the StakeManager that the Worker’s Relay Manager has indeed locked funds for staking (using isStacked). If not, the execution is reverted.</li>
-      <li>The Relay Worker account must have funds to pay the consumed gas (RBTC).
-        <ul>
-          <li>This verification is done in the Relay Client and in the Relay Server as well. Then, it is done again in the Relay Hub.</li>
-        </ul>
-      </li>
-      <li>The Relay Hub takes the Relay Paymaster address from the Relay Request and checks if it has enough funds locked in the Relay Hub to cover the total maximum charge (RBTC) of the relay, if not the execution is reverted as well.</li>
-    </ul>
-  </li>
-  <li>The Relay Hub invokes the preRelayCall method in the Relay Paymaster contract passing the received Relay Request and waits for the Relay Paymaster to answer if it is possible to execute (true) or not (false).</li>
-  <li>The Relay Paymaster executes its preRelayCall method and must ensure that the Requester is able to pay the tokens.
-    <ul>
-      <li>The Relay Paymaster checks that it accepts the token used to pay and that the payer has a sufficient token balance. In addition, it verifies the used smart wallet is the correct one. If everything is okay, then the Paymaster returns true.</li>
-    </ul>
-  </li>
-  <li>The RelayHub instructs the Smart Wallet to execute the Relay Request.
-    <div class="language-solidity highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>  <span class="p">(</span><span class="nx">forwarderSuccess</span><span class="p">,</span> <span class="nx">vars</span><span class="p">.</span><span class="nx">relayedCallSuccess</span><span class="p">,</span><span class="nx">lastSuccTrx</span><span class="p">,</span> <span class="nx">vars</span><span class="p">.</span><span class="nx">relayedCallReturnValue</span><span class="p">)</span> <span class="o">=</span> <span class="nx">GsnEip712Library</span><span class="p">.</span><span class="nx">execute</span><span class="p">(</span><span class="nx">relayRequest</span><span class="p">,</span> <span class="nx">signature</span><span class="p">);</span>
-</code></pre></div>    </div>
-  </li>
-  <li>The Smart Wallet checks the signature and the nonce of the Requester, reverting if it fails the checking.</li>
-  <li>Then, the Smart Wallet performs the token transfer between the Requester and the token recipient, using the data received within the Relay Request.</li>
-  <li>It invokes the recipient contract with the indicated method in the Forward Request</li>
-  <li>Finally, the Relay Hub calls the Paymaster (using the method postRelayCall).
-    <div class="language-solidity highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nx">vars</span><span class="p">.</span><span class="nx">data</span> <span class="o">=</span> <span class="nx">abi</span><span class="p">.</span><span class="nx">encodeWithSelector</span><span class="p">(</span>
-        <span class="nx">IPaymaster</span><span class="p">.</span><span class="nx">postRelayedCall</span><span class="p">.</span><span class="nx">selector</span><span class="p">,</span>
-        <span class="nx">vars</span><span class="p">.</span><span class="nx">recipientContext</span><span class="p">,</span>
-        <span class="nx">vars</span><span class="p">.</span><span class="nx">relayedCallSuccess</span><span class="p">,</span>
-        <span class="nx">totalInitialGas</span> <span class="o">-</span> <span class="nx">gasleft</span><span class="p">(),</span> <span class="cm">/*gasUseWithoutPost*/</span>
-        <span class="nx">relayRequest</span><span class="p">.</span><span class="nx">relayData</span>
-    <span class="p">);</span>
-</code></pre></div>    </div>
-  </li>
-</ol>
-
-<p><strong>The Smart Wallet with gasless EOA creation flow</strong></p>
-
-<p><img src="../../assets/img/rif-enveloping/SmartWalletWithGasless.jpg" alt="Enveloping - Smart Wallet with Gasless EOA"></p>
-
-<p>The gas-less requester has a SmartWallet address where they receive tokens but don’t use them. If the requester needs to call a contract, e.g,  to send the tokens to another account, they must deploy a Smart Wallet first.</p>
-
-<ol>
-  <li>A Requester creates a deployWallet request.</li>
-  <li>A Requester sends the request to the Relay Server through Relay Client.</li>
-  <li>Relay Client wraps the transaction sent by the Requester in a Deploy Request to create the Smart Wallet and signs it.</li>
-  <li>The Relay Client sends to the Relay Server a Deploy Request (via HTTPClient-HTTPServer)</li>
-  <li>The Relay Server signs the transaction containing the Deploy Request, with the Relay Worker account.</li>
-  <li>The Relay Server sends the request to the Relay Hub using the Relay Worker account executing the relay call function of the Relay Hub contract. Following the same process from step 6.</li>
-  <li>The Relay Hub invokes the <code class="highlighter-rouge">preRelayCall</code> method in the Deploy Paymaster contract using the received Deploy Request as parameters.</li>
-  <li>The Deploy Paymaster must ensure:
-    <ul>
-      <li>The Paymaster accepts the offered tokens.</li>
-      <li>The Proxy Factory instance to use is known by the paymaster</li>
-      <li>The Proxy Factory contract isn’t creating an existing Smart Wallet.</li>
-      <li>The requester has enough tokens to pay.</li>
-    </ul>
-  </li>
-  <li>The Relay Hub calls the Proxy Factory using the method relayedUserSmartWalletCreation.</li>
-  <li>The Proxy Factory performs the following checks:
-    <ul>
-      <li>Checks the sender’s nonce.</li>
-      <li>Checks the Deploy Request signature</li>
-    </ul>
-  </li>
-  <li>The Proxy Factory using the <code class="highlighter-rouge">create2</code> opcode creates the Smart Wallet.</li>
-  <li>Then it calls the <code class="highlighter-rouge">initialize</code> function in the Smart Wallet contract.
-    <ul>
-      <li>The Smart Wallet, during its initialization, executes the token transfer.</li>
-      <li>Then it initializes the Smart Wallet state and sets the requester’s EOA as the owner of the Smart Wallet</li>
-      <li>In the case there is a custom logic,  its initialization is called as well.</li>
-    </ul>
-  </li>
-  <li>The Relay Hub executes <code class="highlighter-rouge">postRelayCall</code> in the Paymaster.</li>
-</ol>
-
 
                   
 
+                  
                </div>
             </div>
 
