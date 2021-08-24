@@ -97,9 +97,9 @@ e.g. a documentation PR does not contain dependency changes.
 Steps:
 
 1. Create a markdown file in the appropriate folder.
-2. Add `title`, `tags`, `description`, and `collection_order` attributes
+1. Add `title`, `tags`, `description`, and `collection_order` attributes
    to the front matter as appropriate - see below for more details.
-3. If the new page is within a collection, and it is named `index.md`,
+1. If the new page is within a collection, and it is named `index.md`,
    ensure that you set a `permalink` attribute in the front matter,
    with a trailing `/`.
 
@@ -143,9 +143,7 @@ redirect: /tools/
 ---
 ```
 
-**Why**
-
-This is done because when a page is published at a certain URL,
+**Why**: This is done because when a page is published at a certain URL,
 that URL may be linked to externally.
 By renaming/ moving a page, the URL changes, and any external links
 may get a "404 Page Not Found" error.
