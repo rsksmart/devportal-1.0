@@ -18,8 +18,8 @@ description: "The RSK community calls showcases the RSK Improvement Proposals - 
             <div class="content">
                 <a href="/community-calls/2021-05/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Community Call - May 2021 Summary</p>
-                        <p class="card-desc">The RSK community calls for May 2021 discusses about the RSKIP Process, and cummulative work in fork detection data which is related to the security of the RSK Platform.</p>
+                        <p class="card-title rsk_green">May 2021</p>
+                        <p class="card-desc">The RSK community call for May 2021 discusses the RSKIP Process, and cumulative work in fork detection data which is related to the security of the RSK Platform.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -41,8 +41,8 @@ description: "The RSK community calls showcases the RSK Improvement Proposals - 
             <div class="content">
                 <a href="/community-calls/2021-07/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Community Call - July 2021 Summary</p>
-                        <p class="card-desc">The RSK community calls for July 2021 Introduces Iris 3.0.0 network upgrades, powpeg security and the flyover protocol.</p>
+                        <p class="card-title rsk_green">July 2021</p>
+                        <p class="card-desc">The RSK community calls for July 2021 introduces Iris 3.0.0 network upgrades, PowPeg security, and the flyover protocol.</p>
                     </div>
                 </a>
                 <div class="btn-container">
