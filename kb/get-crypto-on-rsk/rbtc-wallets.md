@@ -159,6 +159,12 @@ Currently, it is the only wallet giving its users the possibility of swapping BT
 - Unless the wallet charges specific fees, there is no clear business model for a wallet to integrate this feature.
 - Same cons as the native RSK PowPeg method.
 
+#### How to Get RBTC with defiant wallet
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/0shCIS2LEbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ### Liquality
 
 Liquality is a software wallet that can be installed as a browser extension.
@@ -180,6 +186,12 @@ It works in a manner similar to other browser extension wallets, such as MetaMas
 - Users are charged a fee for the swap service.
 
 Check out the [Liquality solutions page](/solutions/liquality/) for more information!
+
+#### How to Get RBTC with liquality wallet
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/qD1lODbCBqE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Sending and Receiving RBTC
 
