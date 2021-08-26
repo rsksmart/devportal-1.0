@@ -52,5 +52,28 @@ description: "The RSK community calls showcases the RSK Improvement Proposals - 
             </div>
         </div>
     </li>
+     <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/community-calls/august-2021/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/community-calls/august-2021/Community-Call-August.jpg" alt="cc-august icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/community-calls/august-2021/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Community Call - August 2021 Summary</p>
+                        <p class="card-desc">The RSK community calls for August 2021 was all about expanding the emergency multi-sig, peg-out tx fee-bumping, time-lock refresh, bridge UTXOs selection, consolidation, and batching</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/community-calls/august-2021/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
