@@ -64,7 +64,7 @@ description: "The RSK community calls showcases the RSK Improvement Proposals - 
             <div class="content">
                 <a href="/community-calls/august-2021/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Community Call - August 2021 Summary</p>
+                        <p class="card-title rsk_green">August 2021</p>
                         <p class="card-desc">The RSK community calls for August 2021 was all about expanding the emergency multi-sig, peg-out tx fee-bumping, time-lock refresh, bridge UTXOs selection, consolidation, and batching</p>
                     </div>
                 </a>
