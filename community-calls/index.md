@@ -57,7 +57,7 @@ description: "The RSK community calls showcases the RSK Improvement Proposals - 
             <a href="/community-calls/2021-08/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/community-calls/august-2021/Community-Call-August.jpg" alt="cc-august icon">
+                        <img src="/assets/img/community-calls/2021-08/Community-Call-August.jpg" alt="cc-august icon">
                     </div>
                 </div>
             </a>
