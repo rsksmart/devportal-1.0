@@ -25,28 +25,27 @@ To start the relay server, you need to configure the json config file located at
 ```
 
 Where:
+- **url**: is the URL where the relay server will be deployed, it could be localhost or the IP of the host machine.
+- **port**: the port where the relay server will be hosted.
+- **relayHubAddress**: is the relay hub contract address, you can retrieve this from the contract summary.
+- **relayVerifierAddress**: is the relay verifier contract address, you can retrieve this from the contract summary.
+- **deployVerifierAddress**: is the deploy verifier contract address, you can retrieve this from the contract summary.
+- **gasPriceFactor**: is the gas price factor used to calculate the gas on the server, you can leave it as 1.
+- **rskNodeUrl**: is the RSK node endpoint URL, where the RSK node is located.
+- **devMode**: it indicates to the server if we are in development mode or not.
+- **customReplenish**: set if the server uses a custom replenish function or not.
+- **logLevel**: is the log level for the relay server.
+- **workdir**: is the absolute path to the folder where the server will store the database and all its data.
 
-* **url**: is the URL where the relay server will be deployed, it could be localhost or the IP of the host machine.
-* **port**: the port where the relay server will be hosted.
-* **relayHubAddress**: is the relay hub contract address, you can retrieve this from the contract summary.
-* **relayVerifierAddress**: is the relay verifier contract address, you can retrieve this from the contract summary.
-* **deployVerifierAddress**: is the deploy verifier contract address, you can retrieve this from the contract summary.
-* **gasPriceFactor**: is the gas price factor used to calculate the gas on the server, you can leave it as 1.
-* **rskNodeUrl**: is the RSK node endpoint URL, where the RSK node is located.
-* **devMode**: it indicates to the server if we are in development mode or not.
-* **customReplenish**: set if the server uses a custom replenish function or not.
-* **logLevel**: is the log level for the relay server.
-* **workdir**: is the absolute path to the folder where the server will store the database and all its data.
+Afterwards, run `yarn relay` to start the server.
 
-Now we can use the command `yarn relay` (on the root of the relay project) to start the relay server.
-If it's the first time you run the relay server, you will see a log saying that it isn't ready and that some values are wrong, that's ok, you just need to register this relay server into the relay hub in order to be usable by the clients.
+If it's the first time the server is run, some logs will state that the server isn't ready and that some values are wrong. This is expected, you just need to register the server on the relay hub in order for it to be usable by the clients.
 
 ## Register the Relay Server
 
 ### On Regtest
 
-Once the relay server is up, you need to register this server in order for it to be usable, to do so, first configure the script located on `<PROJECT_ROOT>/scripts/registerRelayServer` and replace the 
-   values as you consider. The script contains the following:
+Once the relay server is up, you need to register this server in order for it to be usable, to do so, first configure the script located on `<PROJECT_ROOT>/scripts/registerRelayServer` and replace the values as you see fit. The script contains the following:
 
 ```bash
 node dist/src/cli/commands/enveloping.js relayer-register --funds 100 --stake 200 --network http://rsk-node:4444/ --hub "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"
@@ -69,7 +68,7 @@ Relayer state: READY
 
 ### On Testnet
 
-1.  In another terminal run `curl http://localhost:8090/getaddr`, which will return a JSON with information of the running jsRelay Server, for example:
+1.  In another terminal run `curl http://<SERVER_URL>/getaddr`, which will return a JSON with information of the running jsRelay Server, for example:
 ```json
 {
   "relayWorkerAddress": "0xe722143177fe9c7c58057dc3d98d87f6c414dc95",
