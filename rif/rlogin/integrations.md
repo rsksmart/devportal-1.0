@@ -42,7 +42,6 @@ We are currently integrated with the following dApps
 
 - E) RSK Academy
   * RSK education platform. Find out brand new courses and live classes!
-  * URL: [academy.rsk.dev.br](https://academy.rsk.dev.br/)
   * Repo: [`rsksmart/rsk-academy`](https://github.com/rsksmart/rsk-academy)
 
 - F) rLending
