@@ -1107,7 +1107,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-08-19 14:11:56 +0000T00:00:00.000Z">2021-08-19</time> | -->
+    <!--time role="presentation" datetime="2021-09-01 17:48:04 +0000T00:00:00.000Z">2021-09-01</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-enveloping/launch.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2083,7 +2083,6 @@
 </span></code></pre></div></div>
 
 <p>Where:</p>
-
 <ul>
   <li>
 <strong>url</strong>: is the URL where the relay server will be deployed, it could be localhost or the IP of the host machine.</li>
@@ -2109,15 +2108,15 @@
 <strong>workdir</strong>: is the absolute path to the folder where the server will store the database and all its data.</li>
 </ul>
 
-<p>Now we can use the command <code class="highlighter-rouge">yarn relay</code> (on the root of the relay project) to start the relay server.
-If it’s the first time you run the relay server, you will see a log saying that it isn’t ready and that some values are wrong, that’s ok, you just need to register this relay server into the relay hub in order to be usable by the clients.</p>
+<p>Afterwards, run <code class="highlighter-rouge">yarn relay</code> to start the server.</p>
+
+<p>If it’s the first time the server is run, some logs will state that the server isn’t ready and that some values are wrong. This is expected, you just need to register the server on the relay hub in order for it to be usable by the clients.</p>
 
 <h2 id="register-the-relay-server">Register the Relay Server</h2>
 
 <h3 id="on-regtest">On Regtest</h3>
 
-<p>Once the relay server is up, you need to register this server in order for it to be usable, to do so, first configure the script located on <code class="highlighter-rouge">&lt;PROJECT_ROOT&gt;/scripts/registerRelayServer</code> and replace the 
-   values as you consider. The script contains the following:</p>
+<p>Once the relay server is up, you need to register this server in order for it to be usable, to do so, first configure the script located on <code class="highlighter-rouge">&lt;PROJECT_ROOT&gt;/scripts/registerRelayServer</code> and replace the values as you see fit. The script contains the following:</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node dist/src/cli/commands/enveloping.js relayer-register <span class="nt">--funds</span> 100 <span class="nt">--stake</span> 200 <span class="nt">--network</span> http://rsk-node:4444/ <span class="nt">--hub</span> <span class="s2">"0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"</span>
 </code></pre></div></div>
@@ -2145,7 +2144,7 @@ If it’s the first time you run the relay server, you will see a log saying tha
 <h3 id="on-testnet">On Testnet</h3>
 
 <ol>
-  <li>In another terminal run <code class="highlighter-rouge">curl http://localhost:8090/getaddr</code>, which will return a JSON with information of the running jsRelay Server, for example:
+  <li>In another terminal run <code class="highlighter-rouge">curl http://&lt;SERVER_URL&gt;/getaddr</code>, which will return a JSON with information of the running jsRelay Server, for example:
     <div class="language-json highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"relayWorkerAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xe722143177fe9c7c58057dc3d98d87f6c414dc95"</span><span class="p">,</span><span class="w">

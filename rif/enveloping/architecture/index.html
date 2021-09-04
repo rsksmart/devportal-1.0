@@ -1107,7 +1107,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-08-12 01:03:38 +0000T00:00:00.000Z">2021-08-12</time> | -->
+    <!--time role="presentation" datetime="2021-09-01 17:48:04 +0000T00:00:00.000Z">2021-09-01</time> | -->
      14' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/enveloping/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2194,7 +2194,7 @@
 <p>It is the component that calls the Recipient contract (i.e, the <code class="highlighter-rouge">msg.sender</code> address the Recipient will see). During the execution,  the contract verifies the Enveloping Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.</p>
 
 <h3 id="relay-manager">Relay Manager</h3>
-<p>An on-chain account that has staked balance. It delegates the requests to Relay Workers, which are the actual initiators of the relay flow. Any penalization done against a Relay Worker impacts the Relay Manager’s stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: register the Relay Server and add relay workers, both in the Relay Hub.</p>
+<p>An on-chain account that has staked balance. It delegates the requests to Relay Workers, which are the actual initiators of the relay flow. Any penalization done against a Relay Worker impacts the Relay Manager’s stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: registering the Relay Server and adding relay workers, both in the Relay Hub.</p>
 
 <h3 id="relay-worker">Relay Worker</h3>
 <p>An EOA that belongs to only one Relay Manager. It’s the sender of the Relay Request.</p>
