@@ -97,6 +97,12 @@ Then open up MetaMask, and in the main account screen, select the “Assets” t
 
 ## Transfer tRIF from one account to another
 
+Watch this short video demonstrating **how to transfer tRIF from one account to another**.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/ncCzQnnMVr8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 For the RIF Testnet Faucet:
 
 1- Go to [`faucet.rifos.org`](https://faucet.rifos.org), you will take similar steps to the one above but this time you will send tRIF back to the RIF Testnet faucet address instead.
