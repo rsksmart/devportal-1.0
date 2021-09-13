@@ -62,6 +62,12 @@ Here you should see the balance of the RIF tokens that you have.
 
 So far, you have not made any transactions from your address. The transactions that you see when you view the address in the block explorer were made from other addresses (in this case, a couple of Testnet faucets). Now, it’s time for you to initiate your own transactions!
 
+Watch this short video demonstrating **how to transfer tRBTC from one account to another**.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/fMdiNeDLKo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 We’ll start by transferring cryptocurrency from your address, back to the faucet’s address.
 
 In your address page, under transactions, you should see the “from” address of the RBTC Testnet Faucet. Click on the “copy” icon (looks like 2 sheets of paper stacked).
