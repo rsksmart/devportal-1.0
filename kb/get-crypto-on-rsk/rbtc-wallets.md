@@ -162,7 +162,7 @@ Currently, it is the only wallet giving its users the possibility of swapping BT
 #### How to Get RBTC with defiant wallet
 
 <div class="video-container">
-  <iframe width="949" height="534" src="https://www.youtube.com/embed/0shCIS2LEbk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/ptYfTMMA6DM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### Liquality
