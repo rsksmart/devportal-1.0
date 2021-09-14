@@ -33,6 +33,12 @@ There are currently two exchanges that allow users to trade between BTC and RBTC
 
 ![Bitfinex-RBTC](/assets/img/kb/get-crypto-on-rsk/bitfinex-rbtc.png)
 
+Watch this video demonstrating **how to get RBTC with Bitfinex**.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/ObJvvskyI9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 Bitfinex is a digital asset trading platform, it offers order books with top tier liquidity, allowing users to easily exchange BTC and RBTC, plus other cryptocurrencies and tokens. Bitfinex also provides other services, including margin trading, funding, order types, customizable interface, and security.
 
 ### Kucoin
