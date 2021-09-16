@@ -32,6 +32,8 @@ If you would like to know more about the values used in the
 built in network configurations, check out
 [account based addresses on RSK](/rsk/architecture/account-based/).
 
+> [Resolve Nifty Issue](https://developers.rsk.co/tutorials/resolve-nifty-issue/)
+
 ## Disclaimer
 
 - Currency may be mistakenly displayed as `ETH` within some screens of MetaMask.
