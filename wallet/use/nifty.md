@@ -32,7 +32,7 @@ If you would like to know more about the values used in the
 built in network configurations, check out
 [account based addresses on RSK](/rsk/architecture/account-based/).
 
-> [Resolve Nifty Issue](https://developers.rsk.co/tutorials/resolve-nifty-issue/)
+> Read more on how to [resolve Nifty Wallet Issue](/tutorials/resolve-nifty-issue/) and fix [incorrect addresses derived from mnemonic for custom networks (RSK/ETC)](https://github.com/poanetwork/nifty-wallet/issues/331). Also, learn how to use the correct derivation path for RSK and add RSK as custom node.
 
 ## Disclaimer
 
