@@ -787,6 +787,8 @@ when you used the `npm install` command
 
 ### 5.3 Configure `truffle-config.js` file
 
+Read about how to [Configure Truffle to Connect to RSK](/kb/configure/truffle-to-rsk) using Truffle's default configuration values(based on Ethereum), and using 2 relatively new config options to configure Truffle to better connect to an RSK node.
+
 In the root folder directory, locate the `truffle-config.js` file.
 Truffle has already been pre-configured to connect to
 your choice of RSK Regtest or RSK Testnet.
