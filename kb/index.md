@@ -283,5 +283,29 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/fungible-tokens-standard/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="fungible-tokens icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/fungible-tokens-standard/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Fungible Token Standards</p>
+                        <p class="card-desc">What is ERC20, and are there others like it? How do they work on RSK?
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/fungible-tokens-standard/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
