@@ -360,7 +360,7 @@ platforms and APIs to create innovative experiences.
             <a href="/solutions/givetrack/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/givetrack/logo-givetrack.png" alt="givetrack icon">
+                        <img src="/assets/img/solutions/givetrack/givetrack2-green.png" alt="givetrack icon">
                     </div>
                 </div>
             </a>
