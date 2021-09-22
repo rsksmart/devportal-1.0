@@ -5,7 +5,7 @@ tags: givetrack, rsk-solutions, rsk, bitgive, defi, dApps, blockchain, donations
 layout: 'rsk'
 ---
 
-![Givetrack-banner-image](/assets/img/solutions/givetrack/logo-givetrack-black.png)
+![Givetrack-banner-image](/assets/img/solutions/givetrack/logo-givetrack.png)
 
 [Givetrack](https://www.givetrack.org/) leverages Bitcoin and Blockchain technology to fund global projects with high **environmental** and **public health** impact using a radically transparent donation platform.
 
