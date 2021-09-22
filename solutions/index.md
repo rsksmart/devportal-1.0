@@ -355,5 +355,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
-
+<li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/givetrack/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/givetrack/logo-givetrack-black.png" alt="givetrack icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/givetrack/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Givetrack</p>
+                        <p class="card-desc">Revolutionary donation platform, providing real-time financial transparency and global impact powered by Blockchain technology.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/givetrack/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
