@@ -288,7 +288,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             <a href="/kb/fungible-tokens-standard/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="fungible-tokens icon">
+                        <img src="/assets/img/kb/fungible-token-standards/fungible-token-standards.jpg" alt="fungible-tokens icon">
                     </div>
                 </div>
             </a>
