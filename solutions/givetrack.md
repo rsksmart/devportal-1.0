@@ -63,11 +63,11 @@ Now with GiveTrack on RSK, BitGive is strengthening its impact!
 
 ### For donors
 
-- [How to Donate](https://www.givetrack.org/howtodonate)
+- [Donate to a project using GiveTrack on RSK](https://www.givetrack.org/howtodonate)
 
 ### For nonprofits
 
-#### How to set up a project using GiveTrack on RSK**
+How to set up a project using GiveTrack on RSK
 
 - Visit [https://givetrack.org](https://givetrack.org)
 
