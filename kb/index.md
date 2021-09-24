@@ -331,5 +331,29 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/send-tokens-through-metamask/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/send-rif-tokens-metamask/rif-logo.png" alt="rif icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/send-tokens-through-metamask/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Send RIF Tokens through Metamask</p>
+                        <p class="card-desc">Learn how to use Metamask wallet to send RIF Tokens
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/send-tokens-through-metamask/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
