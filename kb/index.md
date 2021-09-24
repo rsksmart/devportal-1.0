@@ -307,5 +307,29 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/resolve-nifty-issue/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/resolve-nifty-wallet/logo_nifty-wallet.png" alt="nifty icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/resolve-nifty-issue/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Resolve Nifty Issue</p>
+                        <p class="card-desc">Resolution for breaking change in derivation path for Nifty Wallet 5.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/resolve-nifty-issue/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
