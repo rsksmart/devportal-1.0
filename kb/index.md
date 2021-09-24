@@ -355,5 +355,29 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/using-blockmason/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/using-blockmason/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Using Blockmason</p>
+                        <p class="card-desc">Learn how to use RSK with Blockmason Link.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/using-blockmason/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
