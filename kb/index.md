@@ -307,5 +307,125 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/resolve-nifty-issue/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/resolve-nifty-wallet/logo_nifty-wallet.png" alt="nifty icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/resolve-nifty-issue/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Resolve Nifty Issue</p>
+                        <p class="card-desc">Resolution for breaking change in derivation path for Nifty Wallet 5.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/resolve-nifty-issue/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/send-tokens-through-metamask/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/send-rif-tokens-metamask/rif-logo.png" alt="rif icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/send-tokens-through-metamask/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Send RIF Tokens through Metamask</p>
+                        <p class="card-desc">Learn how to use Metamask wallet to send RIF Tokens
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/send-tokens-through-metamask/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/using-blockmason/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/using-blockmason/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Using Blockmason</p>
+                        <p class="card-desc">Learn how to use RSK with Blockmason Link.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/using-blockmason/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/rsk-api/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/rsk-api/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">RSK API CLI</p>
+                        <p class="card-desc">A library and commands to interact with RSK and Ethereum nodes.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/rsk-api/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/ethereum-dapp-to-rsk/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/ethereum-dapp-to-rsk/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Bring Your Ethereum dApp to RSK</p>
+                        <p class="card-desc">Learn how to cross your Ethereum dApps to RSK.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/ethereum-dapp-to-rsk/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
