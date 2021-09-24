@@ -7,7 +7,7 @@ layout: 'rsk'
 
 The objective of [BabelFish](https://babelfish.money/) is to aggregate **stablecoins**, enhance **multi-chain flow**, and accelerate **hyper-bitcoinization**.
 
-![Babelfish-banner](/assets/img/solutions/BabelFish/banner.png)
+![Babelfish-banner](/assets/img/solutions/babelfish/banner.png)
 
 ## How Babelfish Works
 
@@ -15,7 +15,7 @@ The objective of [BabelFish](https://babelfish.money/) is to aggregate **stablec
 
 ## How BabelFish integrates with RSK
   
- ![BabelFish-RSK-Integrations](/assets/img/solutions/BabelFish/babelFish-Integration-RSK-Diagram.jpg)
+ ![BabelFish-RSK-Integrations](/assets/img/solutions/babelfish/babelfish-integration-rsk-diagram.jpg)
 
 ## About BabelFish
 
