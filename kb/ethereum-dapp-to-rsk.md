@@ -1,11 +1,11 @@
 ---
 layout: rsk
-title: Bring your Ethereum token to RSK
+title: Bring your Ethereum dApp to RSK
 description: "Learn how to cross your Ethereum dApps to RSK"
 tags: token, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
-Our goal is to join forces and give options to people who believe in the power of smart contracts, and also believe in the security of Bitcoin, through RSK. Bring your Ethereum token to RSK!
+Our goal is to join forces and give options to people who believe in the power of smart contracts, and also believe in the security of Bitcoin, through RSK. Bring your Ethereum dApps to RSK!
 
 <a href="/slack/" target="_blank" class="next green-button">Get help</a>
 

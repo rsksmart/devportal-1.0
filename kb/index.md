@@ -415,7 +415,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             <div class="content">
                 <a href="/kb/ethereum-dapp-to-rsk/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Bring Your Ethereum Token to RSK</p>
+                        <p class="card-title rsk_green">Bring Your Ethereum dApp to RSK</p>
                         <p class="card-desc">Learn how to cross your Ethereum dApps to RSK.
                         </p>
                     </div>
