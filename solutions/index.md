@@ -383,7 +383,7 @@ platforms and APIs to create innovative experiences.
             <a href="/solutions/babelfish/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/babelfish/FISH_LOGO.png" alt="babelfish icon">
+                        <img src="/assets/img/solutions/babelfish/fish-logo.png" alt="babelfish icon">
                     </div>
                 </div>
             </a>
