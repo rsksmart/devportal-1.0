@@ -85,6 +85,12 @@ The Liquality Wallet is a browser extension for accessing Bitcoin and RSK applic
 
 [Exolix](https://exolix.com/) enables users to exchange BTC and RBTC cryptocurrencies instantly and without registration. 
 
+Watch this video demonstrating **how to get RBTC with Exolix**.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/0TIHolrcuF4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 **Pros**:
 - No registration or KYC required.
 - Easier to use than the RSK PowPeg.
