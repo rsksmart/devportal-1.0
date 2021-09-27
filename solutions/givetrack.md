@@ -19,7 +19,13 @@ GiveTrack is a platform nonprofits use to collect donations, and share updates w
 
 ## How GiveTrack integrates with RSK
 
+**Transactions for a project**
+
 ![GiveTrack-RSK-Integrations](/assets/img/solutions/givetrack/givetrack-rsk-int.png)
+
+**Funds flow for an organisation**
+
+![GiveTrack Funds Flow](/assets/img/solutions/givetrack/givetrack-funds-flow.jpg)
 
 ## About GiveTrack
 
