@@ -157,7 +157,7 @@ The access point to the Relay system for dApps using Web3. It wraps the RelayCli
 
 ### Relaying (Smart Wallet already created)
 
-![Relay - Execution Flow](/assets/img/rif-enveloping/Execution-flow.jpg)
+![Relay - Execution Flow](/assets/img/rif-relay/Execution-flow.jpg)
 
 1. A Requester creates a request.
 2. A Requester sends the request to the Relay Client (through a Relay Provider).
@@ -176,7 +176,7 @@ The access point to the Relay system for dApps using Web3. It wraps the RelayCli
 
 ### Gasless Smart Wallet creation
 
-![Relay - Smart Wallet with Gasless EOA](/assets/img/rif-enveloping/SmartWalletWithGasless.jpg)
+![Relay - Smart Wallet with Gasless EOA](/assets/img/rif-relay/SmartWalletWithGasless.jpg)
 
 The gas-less requester has a SmartWallet address where they receive tokens but don't use them. If the requester needs to call a contract, e.g., to send the tokens to another account, they must deploy a Smart Wallet first.
 
@@ -204,4 +204,4 @@ The gas-less requester has a SmartWallet address where they receive tokens but d
 ## Deprecated
 
 ### Paymaster
-V2 deprecated the Paymaster contracts in favor of the Verifiers (see [versions](/rif/enveloping/versions/)).
+V2 deprecated the Paymaster contracts in favor of the Verifiers (see [versions](/rif/relay/versions/)).
