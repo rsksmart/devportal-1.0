@@ -35,7 +35,7 @@ permalink: /rif/relay/architecture/
 
 The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by "sponsors" is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.
 
-The Relay system is made up for various components, some of which are essential and others which are auxiliary. 
+The RIF Relay system is made up for various components, some of which are essential and others which are auxiliary. 
 
 An overview of this is as follows:
 
