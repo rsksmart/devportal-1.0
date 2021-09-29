@@ -24,7 +24,7 @@ V2 introduces a cheaper template ([SmartWallet](https://github.com/rsksmart/rela
 Note that the instance of CustomSmartWallet used didn't point to any extra custom logic.
 
 ## Transaction Batching
-RIF relay also introduces transaction batching
+RIF Relay V2 also introduces transaction batching
 
 ### Scenarios
 
