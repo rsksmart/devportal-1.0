@@ -57,7 +57,7 @@ nvm use
 nvm install
 ```
 
-### Npx & Truffle
+### Npx and Truffle
 
 An important tool we use for interacting with the blockchain is `Truffle` version `v5.0.33` or higher.
 
