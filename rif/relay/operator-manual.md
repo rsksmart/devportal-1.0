@@ -63,6 +63,8 @@ An important tool we use for interacting with the blockchain is `Truffle` versio
 
 You can follow the installation guide in the official [site](https://www.trufflesuite.com/truffle).
 
+To install NPX execute `npm install -g npx`.
+
 ## Download and install
 
 Go to [RIF Relay](https://github.com/rsksmart/rif-relay) and download the release version.
@@ -203,7 +205,7 @@ where:
 - `<ADDRESS>` is the account address associated to that mnemonic.
 
 ## Allow Token Address to BlackList
-Now the final step is to allow some tokens to be used by enveloping on the smart wallets.
+Now the final step is to allow some tokens to be used by relay on the smart wallets.
 
 ### On Regtest
 
