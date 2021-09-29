@@ -5,7 +5,7 @@ tags: rif, envelope, relay, user, guide, integrate
 permalink: /guides/rif-relay/integrate/
 ---
 
-This guide goes over the exposed Relay methods that dApps and wallets can consume to provide relaying as a service, with the purpose of allowing users to pay transaction fees with tokens in a particular system.
+This guide goes over the exposed RIF Relay methods that dApps and wallets can consume to provide relaying as a service, with the purpose of allowing users to pay transaction fees with tokens in a particular system.
 
 ## Table of Contents
 - [**Introduction**](#introduction)
