@@ -17,3 +17,4 @@ If you're looking for a step-by-step walkthrough on getting started and using Re
 - [Versions](/rif/relay/versions/)
 - [Gas Costs](/rif/relay/gas-costs/)
 - [Contracts](/rif/relay/contracts/)
+- [Operator Manual](/rif/relay/operator-manual/)
