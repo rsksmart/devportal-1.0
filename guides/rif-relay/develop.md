@@ -8,7 +8,7 @@ permalink: /guides/rif-relay/develop/
 
 ## Initializing the project
 
-To use Relay, follow these steps to build the project.
+To use RIF Relay, follow these steps to build the project.
 
 ## Project structure
 
