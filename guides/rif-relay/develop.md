@@ -14,7 +14,7 @@ To use Relay, follow these steps to build the project.
 
 The project has on-chain and off-chain components.
 
-- The `contracts` directory in the root directory, contains all the smart contracts involved in Relay.
+- The `contracts` directory in the root directory, contains all the smart contracts involved in RIF Relay.
     - These can be compiled with `yarn prepare`. The changes will be reflected in the `build/contracts`.
     - If a new contract is created, it is important to add it to `migrations/2_deploy_contracts.js` for deploying it.
     - The solidity version used currently is `^0.6.12`.
