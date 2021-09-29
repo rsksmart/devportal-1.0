@@ -104,7 +104,7 @@ Each relayed transaction is signed by a Relay Worker account. The worker account
 
 Worker accounts must always have some minimum balance to pay gas for the transaction. These balances can be managed by implementing a replenishment strategy. The Relay Manager can use the strategy to top off a relay worker's account when the balance gets too low.
 
-We provide a default implementation for a replenishment strategy.  Relay solution integrators can implement their own replenish strategy.
+We provide a default implementation for a replenishment strategy. RIF Relay solution integrators can implement their own replenish strategy.
 
 To implement and use your own replenish strategy:
 
