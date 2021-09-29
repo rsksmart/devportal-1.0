@@ -62,7 +62,7 @@ Details for each of these components are expanded down below, as well as an intr
 ## On-Chain components
 
 ### Relay Hub
-The Relay Hub is the main on-chain component of the Relay architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts, and receives the Relay Request and forwards it to the Smart Wallet. 
+The Relay Hub is the main on-chain component of the RIF Relay architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts, and receives the Relay Request and forwards it to the Smart Wallet. 
 
 Also, the Relay Hub forms part of the relay worker’s registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the balances that will be used to pay the relay workers for their transaction submission. Without enough balance in the Relay Hub to pay for the relay of a transaction the relay call will be reverted.
 
