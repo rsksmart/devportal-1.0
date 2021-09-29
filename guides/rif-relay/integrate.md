@@ -50,7 +50,7 @@ In any case, you'll need to have the server installed and running. To achieve th
 
 ### Using the Relay Server directly
 
-The simplest option to use Relay in your wallet or dApp is by calling the Relay Server directly. The instructions for running a Relayer are here. The communication with the Relay Server is done through HTTP requests.
+The simplest option to use RIF Relay in your wallet or dApp is by calling the Relay Server directly. The instructions for running a Relayer are here. The communication with the Relay Server is done through HTTP requests.
 
 The order of events for relaying transactions or deploying smart wallets through the Relay Server is:
 1. Create a relay or deploy request.
