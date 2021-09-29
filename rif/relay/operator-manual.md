@@ -46,7 +46,7 @@ We use `yarn` version `v1.22.0` or higher for package management.
 
 Installation instructions at Yarn's [site](https://yarnpkg.com/getting-started/install). Check the install by running `yarn version`.
 
-### Node & NPM
+### Node and nvm
 
 We use `Node` version `v12.18.3` or higher.
 
