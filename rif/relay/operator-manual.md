@@ -247,9 +247,11 @@ only the owner can allow tokens on the contracts.
 
 ### On Testnet
 
-There is no script for this situation, so you will need to call the method `acceptToken(address token)` directly in the following contracts, using an account with tRBTC:
-
+There is no script for this situation, so you will need to use web3 to instanciate this contracts:
 - `SmartWalletDeployVerifier`
 - `SmartWalletRelayVerifier`
 - `CustomSmartWalletDeployVerifier`
 - `CustomSmartWalletRelayVerifier`
+
+ Then call the method `acceptToken(address token)` directly in each contracts, using an account with tRBTC:
+
