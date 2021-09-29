@@ -14,7 +14,7 @@ RIF Relay operator manual can guide you to set up RIF Relay server, register the
   - [**RSK Node**](#rsk-node)
   - [**Yarn**](#yarn)
   - [**Node & NPM**](#node--npm)
-  - [**Npx & Truffle**](#npx--truffle)
+  - [**Npx and Truffle**](#npx--truffle)
 - [**Deploy contracts locally**](#deploy-contracts-locally)
 - [**Deploy contracts on Testnet**](#deploy-contracts-on-testnet)
 - [**Run the Relay Server**](#run-the-relay-server)
