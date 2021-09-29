@@ -20,7 +20,7 @@ This guide goes over the exposed RIF Relay methods that dApps and wallets can co
 
 ## Introduction
 
-There are multiple ways to integrate Relay into a system. These will be detailed down below.
+There are multiple ways to integrate RIF Relay into a system. These will be detailed down below.
 
 Additionally, it's important to note that not _all_ of the Relay components are needed for a successful integration, as explained in the following section.
 
