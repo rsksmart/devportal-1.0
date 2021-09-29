@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RIF Enveloping Smart Wallets
+title: RIF Relay Smart Wallets
 tags: rif, envelope, relay, user, guide, smart, wallet
 permalink: /guides/rif-relay/smart-wallets/
 ---

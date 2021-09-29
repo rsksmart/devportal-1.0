@@ -1,7 +1,5 @@
 ---
-layout: rsk
-title: RIF Enveloping Overview
-tags: rif, envelope, relay, gas station network, gsn, overview
+layout: redirect
 permalink: /rif/enveloping/overview/
 redirect: /rif/relay/overview/
 ---

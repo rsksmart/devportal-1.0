@@ -5,7 +5,7 @@ tags: rif, relay, gas station network, gsn
 permalink: /rif/relay/operator-manual/
 ---
 
-RIF Relay operator manual can guide you to set up RIF Relay server, register the server, allow new tokens and execute transactions.
+RIF Relay operator manual can guide you to set up RIF Relay server, register the server, allow new tokens, create smart wallt, deploy smart wallet and execute transactions.
 
 ## Table of Contents
 - [**Hardware Requerements**](#hardware-requirements)
@@ -13,8 +13,8 @@ RIF Relay operator manual can guide you to set up RIF Relay server, register the
 - [**Download and install**](#download-and-install)
   - [**RSK Node**](#rsk-node)
   - [**Yarn**](#yarn)
-  - [**Node and nvm**](#node--npm)
-  - [**Npx and Truffle**](#npx--truffle)
+  - [**Node and nvm**](#node-and-nvm)
+  - [**Npx and Truffle**](#npx-and-truffle)
 - [**Deploy contracts locally**](#deploy-contracts-locally)
 - [**Deploy contracts on Testnet**](#deploy-contracts-on-testnet)
 - [**Run the Relay Server**](#run-the-relay-server)
@@ -24,6 +24,12 @@ RIF Relay operator manual can guide you to set up RIF Relay server, register the
 - [**Allow Token Address to BlackList**](#allow-token-address-to-blacklist)
   - [**On Regtest**](#on-regtest-1)
   - [**On Testnet**](#on-testnet-1)
+- [**How to Monitor the Address Used to Relay Transactions**](#how-to-monitor-the-address-used-to-relay-transactions)
+  - [**On Regtest**](#on-regtest-1)
+  - [**On Testnet**](#on-testnet-1)
+- [**Create a Small Wallet**](#create-a-smart-wallet)
+- [**Deploy a Smart Wallet**](#deploy-a-smart-wallet)
+- [**Relay Transaction**](#relay-transaction)
 
 ## Hardware requirements
 
@@ -255,3 +261,257 @@ There is no script for this situation, so you will need to use web3 to instancia
 
  Then call the method `acceptToken(address token)` directly in each contracts, using an account with tRBTC:
 
+## How to Monitor the Address Used to Relay Transactions
+Is important to verify the address used to relay transactions to have balance of rBTC.
+To get the relayWorkerAddress call the relay server endpoing <host:port>/getaddr to get:
+{
+  - `"relayWorkerAddress":"0x242870b75325309f3d1aa635fe175390fd8c15ea"`,
+  - `"relayManagerAddress":"0xaf0e7d0d4ca272181680897d9358724564e88828"`,
+  - `"relayHubAddress":"0x49b770a30156aDC02a08E1dd0d7CEAb021ABF34D"`,
+  - `"minGasPrice":"1"`,
+  - `"chainId":"33"`,
+  - `"networkId":"33"`,
+  - `"ready":true`,
+  - `"version":"2.0.1"`
+  }
+
+## Create a Smart Wallet
+
+There are **two ways** to create a Smart Wallet:
+
+1. **Regular transaction:** The Requester (or another account on behalf of the Requester) calls the Proxy Factory asking to get a new Smart Wallet. Therefore the Proxy Factory creates a proxy to the SmartWallet code, delegating the ownership to the Requester.
+2. **Sponsored:** It needs to go through the Enveloping process, which is described in detail below. The requester asks a third party to pay for the Smart Wallet deployment, and the requester pays in tokens for that (or free if it is subsidized by the third-party, a.k.a, Sponsor).
+
+
+## Deploy a Smart Wallet
+
+To deploy a smart wallet we need to do some steps to generate the wallet address,
+fund it and finally deploy the smart wallet. Here we are going to show you how to do that.
+
+1. Generate your smart wallet address. To do this you need to call the method `getSmartWalletAddress` on the
+   `SmartWalletFactory` contract, it can be found in the relay repo under `src/cli/compiled/SmartWalletFactory.json`.
+   You need to extract the abi from there and then use it to instantiate the contract with web3.
+   Here is an example of how to do it:
+   ```javascript
+        import Web3 from "web3";
+
+        const web3 = new Web3(<RSK_NODE_ENDPOINT>);
+
+        const smartWalletAddress = await new web3.eth.Contract(
+            <SMART_WALLET_FACTORY_ABI>,
+            <SMART_WALLET_FACTORY_ADDRESS>
+        ).methods.getSmartWalletAddress(
+            <RSK_ACCOUNT_ADDRESS>,
+            <SMART_WALLET_RECOVERER>,
+            <SMART_WALLET_INDEX>
+        ).call();
+   ```
+   Where variables are:
+
+   * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (ex: http://localhost:4444).
+   * **SMART_WALLET_FACTORY_ABI**: the smart wallet factory contract abi json to use.
+   * **SMART_WALLET_FACTORY_ADDRESS**: the deployed smart wallet factory contract address.
+   * **RSK_ACCOUNT_ADDRESS**: the rsk address that will own the smart wallet.
+   * **SMART_WALLET_RECOVERER**: the rsk address that will be the recoverer account, in case the owner account is lost.
+   * **SMART_WALLET_INDEX**: a wallet index, since we can have more than just one smart wallet per RSK address
+   you can specify the index of the wallet.
+
+2 (Optional). Now if you want, you can prefund this new address that will represent your smart wallet. To do that you can go
+to any wallet and send some tokens to that address. Also you can use web3 if you are working on regtest, here an
+   example:
+   ```javascript
+      import Web3 from "web3";
+
+      const web3 = new Web3(<RSK_NODE_ENDPOINT>);
+
+      const token = await new this.web3.eth.Contract(
+        <ERC20_TOKEN_ABI>,
+        <TOKEN_ADDRESS>
+      );
+     const accounts = await this.web3.eth.getAccounts();
+     await token.methods.transfer(<SMART_WALLET_ADDRESS>, this.web3.utils.toWei(<AMOUNT_OF_TOKENS>, "ether"))
+          .send({ from: accounts[0] });
+   ```
+   Where variables are:
+
+   * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (ex: http://localhost:4444).
+   * **ERC20_TOKEN_ABI**: the ERC20 token contract abi to use.
+   * **TOKEN_ADDRESS**: the token contract address.
+   * **SMART_WALLET_ADDRESS**: the generated address of last step.
+   * **AMOUNT_OF_TOKENS**: string containing the amount of tokens in decimal unit.
+
+   **NOTE: in this example we asume that the `account[0]` of regtest has tokens to use.**
+
+3. Finally you need to deploy your smart wallet, to do so you must follow these steps:
+
+   1. Use the provider from relay to that you have an example here:
+   ```javascript
+
+      import { RelayProvider, resolveConfiguration } from "@rsksmart/rif-relay";
+      import Web3 from "web3";
+
+      const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
+
+      const web3 = new Web3(<RSK_NODE_ENDPOINT>);
+
+      const config = await resolveConfiguration(web3.currentProvider,
+      {
+        verbose: window.location.href.includes("verbose"),
+        onlyPreferredRelays: true,
+        preferredRelays: ["http://localhost:8090"],
+        factory: <SMART_WALLET_FACTORY_CONTRACT_ADDRESS>,
+        gasPriceFactorPercent: 0,
+        relayLookupWindowBlocks: 1e5,
+        chainId: 33,
+        relayVerifierAddress: <RELAY_VERIFIER_CONTRACT_ADDRESS>,
+        deployVerifierAddress: <DEPLOY_VERIFIER_CONTRACT_ADDRESS>,
+        smartWalletFactoryAddress: <SMART_WALLET_FACTORY_CONTRACT_ADDRESS>
+      });
+      resolvedConfig.relayHubAddress = <RELAY_HUB_CONTRACT_ADDRESS>;
+
+      const provider = new RelayProvider(web3.currentProvider, config);
+
+      provider.addAccount({
+         address: <RSK_ACCOUNT_ADDRESS>,
+         privateKey: Buffer.from(<RSK_ACCOUNT_PRIVATE_KEY>.replaceAll("0x", ""), "hex")
+      });
+
+      web3.setProvider(provider);
+
+      const transaction = await provider.deploySmartWallet({
+        from: <RSK_ACCOUNT_ADDRESS>,
+        to: ZERO_ADDRESS,
+        gas: "0x27100",
+        value: "0",
+        callVerifier: <DEPLOY_VERIFIER_CONTRACT_ADDRESS>,
+        callForwarder: <SMART_WALLET_FACTORY_CONTRACT_ADDRESS>,
+        tokenContract: <TOKEN_ADDRESS>,
+        tokenAmount: <TOKEN_AMOUNT>,
+        data: "0x",
+        index: <SMART_WALLET_INDEX>,
+        recoverer: <SMART_WALLET_RECOVERER>,
+        isSmartWalletDeploy: true,
+        onlyPreferredRelays: true,
+        smartWalletAddress: <SMART_WALLET_ADDRESS>,
+      });
+   ```
+
+   Where variables are:
+
+   * **RSK_NODE_ENDPOINT**: the RSK node enpoint where is running (ex: http://localhost:4444).
+   * **SMART_WALLET_FACTORY_CONTRACT_ADDRESS**: the deployed smart wallet factory contract address.
+   * **RELAY_VERIFIER_CONTRACT_ADDRESS**: the deployed relay verifier contract address.
+   * **DEPLOY_VERIFIER_CONTRACT_ADDRESS**: the deployed deploy verifier contract address.
+   * **RELAY_HUB_CONTRACT_ADDRESS**: the deployed relay hub contract address.
+   * **RSK_ACCOUNT_ADDRESS**: the RSK account address.
+   * **RSK_ACCOUNT_PRIVATE_KEY**: the RSK account private key string.
+   * **TOKEN_ADDRESS**: the token address.
+   * **TOKEN_AMOUNT**: string containing the amount of tokens in decimal unit. This amount should be lower
+     or equal to the amount of tokens that you transferred to the smart wallet account. If you didn't, just set `0` here.
+   * **SMART_WALLET_INDEX**: a wallet index, since we can have more than just one smart wallet per RSK address
+   * **SMART_WALLET_RECOVERER**: the rsk address that will be the recoverer account, in case the owner account is lost.
+   * **SMART_WALLET_ADDRESS**: the address generated on the first step.
+
+After following all these steps you should be able to have a deployed smart wallet with tokens ready to be used.
+
+## Relay Transaction
+
+Another option is to use RIF Relay through a Relay Provider. A Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the Relay Provider uses a Relay Client instance to interact with the Relay Server.
+
+Here's a sample typescript snippet for relaying a transaction through the use of the Relay Provider.
+
+```typescript
+import { RelayProvider, resolveConfiguration } from "@rsksmart/rif-relay";
+import Web3 from "web3";
+
+const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
+
+const web3 = new Web3("http://localhost:4444");
+
+const smartWalletFactoryAbi = {
+  // JSON data containing the abi of the smart wallet factory contract
+}; 
+const smartWalletFactoryAddress = "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"; // the smart wallet factory contract address (can be retrieved from the deployment summary)
+const smartWalletIndex = 0; // the index of the smart wallet to use (leave as 0 for default behavior)
+
+const smartWalletAddress = await new web3.eth.Contract(
+    smartWalletFactoryAbi,
+    smartWalletFactoryAddress
+).methods.getSmartWalletAddress(
+    account.address,
+    ZERO_ADDRESS,
+    smartWalletIndex
+).call(); // this will generate an address for the Smart Wallet to be deployed
+
+const relayVerifierAddress = "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"; // the relay verifier contract address (can be retrieved from the deployment summary)
+const deployVerifierAddress = "0x1938517B0762103d52590Ca21d459968c25c9E67"; // the deploy verifier contract address (can be retrieved from the deployment summary)
+
+const config = await resolveConfiguration(web3.currentProvider,
+    {
+        verbose: true,
+        onlyPreferredRelays: true,
+        preferredRelays: ["http://localhost:8090"], // replace with your own if necessary
+        factory: smartWalletFactoryAddress,
+        gasPriceFactorPercent: 0,
+        relayLookupWindowBlocks: 1e5,
+        chainId: 33, // regtest
+        relayVerifierAddress,
+        deployVerifierAddress,
+        smartWalletFactoryAddress
+    });
+config.relayHubAddress = "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"; // the relay hub contract address (can be retrieved from the deployment summary)
+
+const provider = new RelayProvider(web3.currentProvider, config);
+
+provider.addAccount(account); // see note down below
+
+web3.setProvider(provider);
+
+// Deploy Smart Wallet
+
+const tokenContract = "0x0E569743F573323F430B6E14E5676EB0cCAd03D9"; // token address to use on smart wallet
+const tokenAmount = "100"; // total token amount for the smart wallet, the smart wallet address should have a balance greater than this number before calling the deploy
+
+// Relay Transaction
+
+const unsigned_tx = {
+  // some common web3 transaction with the usual parameters, for example:
+  "nonce": "0x0",
+  "to": "0xAfA16A8d7a94550079014D537e9440ddB7765d29",
+  "value": "0x00",
+  "data": "0x0a798f2400000000000000000000000020ff84b8da5034b51cf3dfdc7a92d2b7c3b6a2f30000000000000000000000001938517b0762103d52590ca21d459968c25c9e6700000000000000000000000000000000000000000000000000000000000001f4",
+  "chainId": "33"
+};
+
+const tokenAmountForRelay = "10"; // how many tokens will be used to pay for the relaying. if left at 0, transaction will be sponsored
+
+const relayTransaction = web3.eth.sendTransaction({
+    from: account.address,
+    callVerifier: relayVerifierAddress,
+    callForwarder: smartWalletAddress,
+    isSmartWalletDeploy: false,
+    onlyPreferredRelays: true,
+    tokenAmount: tokenAmountForRelay,
+    tokenContract,
+    ...unsigned_tx,
+});
+```
+
+**Note**: in the example above the `account` object is assumed as an object containing the address (as string) and the privateKey (as buffer). This is just an example, **DO NOT** use this in production:
+
+```typescript
+decryptedAccount = web3.eth.accounts.privateKeyToAccount(_privateKey);
+const account = {
+  address: decryptedAccount.address,
+  privateKey: Buffer.from(
+    decryptedAccount.privateKey.replaceAll("0x", ""),
+    "hex"
+  ),
+  privateKeyString: decryptedAccount.privateKey,
+}
+``` 
+
+Before running this example, you need to know of a few requirements:
+
+1. The smart wallet address generated by the contract call should be funded with tokens before running the deploy call. Otherwise, you can set `tokenAmount` to `0` (or remove it) to make a subsidized deploy instead.
+2. The token address you use needs to be explicitly allowed. To do so, make a call to the contracts involved to allow them to work with your particular token. These contracts are the relay and deploy verifiers. The method in question is called `acceptToken`, and it can be successfully called only from the contract deployer account (if you are running this in regtest, then `accounts[0]` is the owner).
