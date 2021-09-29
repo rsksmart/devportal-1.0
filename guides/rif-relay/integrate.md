@@ -115,7 +115,7 @@ To implement and use your own replenish strategy:
 
 ### Using a Relay Provider
 
-Another option is to use Relay through a Relay Provider. A Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the Relay Provider uses a Relay Client instance to interact with the Relay Server.
+Another option is to use RIF Relay through a Relay Provider. A Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the Relay Provider uses a Relay Client instance to interact with the Relay Server.
 
 Here's a sample typescript snippet for deploying a Smart Wallet address as well as relaying a transaction through the use of the Relay Provider.
 
