@@ -10,7 +10,7 @@ RIF Relay operator manual can guide you to set up RIF Relay server, register the
 ## Table of Contents
 - [**Hardware Requerements**](#hardware-requirements)
 - [**System Requerements**](#system-requerements)
-- [**Download And Install**](#download-and-install)
+- [**Download and install**](#download-and-install)
   - [**RSK Node**](#rsk-node)
   - [**Yarn**](#yarn)
   - [**Node & NPM**](#node--npm)
