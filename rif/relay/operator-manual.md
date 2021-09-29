@@ -63,7 +63,7 @@ An important tool we use for interacting with the blockchain is `Truffle` versio
 
 You can follow the installation guide in the official [site](https://www.trufflesuite.com/truffle).
 
-## Download And Install
+## Download and install
 
 Go to [RIF Relay](https://github.com/rsksmart/rif-relay) and download the release version.
 
