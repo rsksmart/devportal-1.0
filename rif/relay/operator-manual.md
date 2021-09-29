@@ -103,7 +103,7 @@ terminal, something similar to this:
 
 You'll need to save this summary for later use.
 
-## Deploy contracts On Testnet
+## Deploy contracts on Testnet
 
 We'll use `truffle` for deploying contracts.
 
