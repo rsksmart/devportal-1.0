@@ -261,4 +261,4 @@ await customSmartWalletRelayVerifier.methods.acceptToken(tokenAddress).send({fro
 
 ### Using Relay as a library
 
-Development of an SDK for the Relay project is underway, and will be released soon.
+Development of an SDK for the RIF Relay project is underway, and will be released soon.
