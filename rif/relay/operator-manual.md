@@ -342,7 +342,7 @@ to any wallet and send some tokens to that address. Also you can use web3 if you
 
    **NOTE: in this example we asume that the `account[0]` of regtest has tokens to use.**
 
-3. Finally you need to deploy your smart wallet, to do so you must follow these steps:
+3. Finally to deploy your smart wallet, you must follow these steps:
 
    1. Use the provider from relay to that you have an example here:
    ```javascript
