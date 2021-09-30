@@ -334,7 +334,7 @@ to any wallet and send some tokens to that address. Also you can use web3 if you
    ```
    Where variables are:
 
-   * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (ex: http://localhost:4444).
+   * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (e.g., http://localhost:4444).
    * **ERC20_TOKEN_ABI**: the ERC20 token contract abi to use.
    * **TOKEN_ADDRESS**: the token contract address.
    * **SMART_WALLET_ADDRESS**: the generated address of last step.
