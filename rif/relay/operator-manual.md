@@ -409,7 +409,7 @@ to any wallet and send some tokens to that address. Also you can use web3 if you
    * **TOKEN_AMOUNT**: string containing the amount of tokens in decimal unit. This amount should be lower
      or equal to the amount of tokens that you transferred to the smart wallet account. If you didn't, just set `0` here.
    * **SMART_WALLET_INDEX**: a wallet index, since we can have more than just one smart wallet per RSK address
-   * **SMART_WALLET_RECOVERER**: the rsk address that will be the recoverer account, in case the owner account is lost.
+   * **SMART_WALLET_RECOVERER**: the RSK address that will be the recoverer account, in case the owner account is lost.
    * **SMART_WALLET_ADDRESS**: the address generated on the first step.
 
 After following all these steps you should be able to have a deployed smart wallet with tokens ready to be used.
