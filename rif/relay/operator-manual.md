@@ -67,7 +67,7 @@ nvm install
 
 An important tool we use for interacting with the blockchain is `Truffle` version `v5.0.33` or higher.
 
-You can follow the installation guide in the official [site](https://www.trufflesuite.com/truffle).
+You can follow the installation guide on the official [site](https://www.trufflesuite.com/truffle).
 
 To install NPX execute `npm install -g npx`.
 
