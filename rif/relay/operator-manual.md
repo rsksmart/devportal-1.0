@@ -398,7 +398,7 @@ to any wallet and send some tokens to that address. Also you can use web3 if you
 
    Where variables are:
 
-   * **RSK_NODE_ENDPOINT**: the RSK node enpoint where is running (ex: http://localhost:4444).
+   * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (e.g., http://localhost:4444).
    * **SMART_WALLET_FACTORY_CONTRACT_ADDRESS**: the deployed smart wallet factory contract address.
    * **RELAY_VERIFIER_CONTRACT_ADDRESS**: the deployed relay verifier contract address.
    * **DEPLOY_VERIFIER_CONTRACT_ADDRESS**: the deployed deploy verifier contract address.
