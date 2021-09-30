@@ -308,7 +308,7 @@ fund it and finally deploy the smart wallet. Here we are going to show you how t
    ```
    Where variables are:
 
-   * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (ex: http://localhost:4444).
+   * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (e.g., http://localhost:4444).
    * **SMART_WALLET_FACTORY_ABI**: the smart wallet factory contract abi json to use.
    * **SMART_WALLET_FACTORY_ADDRESS**: the deployed smart wallet factory contract address.
    * **RSK_ACCOUNT_ADDRESS**: the rsk address that will own the smart wallet.
