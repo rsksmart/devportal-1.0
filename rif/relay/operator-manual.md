@@ -173,7 +173,7 @@ Where:
 * **--funds**: indicates the amount of RBTC that you will transfer from accounts[0] to the worker manager account.
 * **--stake**: how much RBTC the server will stake. twice the value of funds is an acceptable value.
 * **--hub**: is the relay hub contract address, you can retrieve this from the contract summary.
-* **--network**: is the url of the rsk node API.
+* **--network**: is the URL of the RSK node API.
 
 After doing that you need to open another terminal and run the `yarn registerRelay` command on the root of the relay project in order to register the relay. 
 
