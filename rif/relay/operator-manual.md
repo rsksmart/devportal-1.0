@@ -40,7 +40,7 @@ These are the minimum requirements that must be met to run an RIF Relay Server:
 - 50 GB storage
 - OS x64, Linux and Windows
 
-## System Requerements
+## System Requirements
 
 ### RSK Node
 
