@@ -123,7 +123,7 @@ npx truffle migrate --network rsktestnet
 These contracts have been deployed on Testnet. See [here](/rif/relay/contracts/) for their addresses.
 
 ## Run the Relay Server
-To start the relay server, you need to configure the json config file located at `<PROJECT_ROOT>/jsrelay/config/relay-config.json` which has this structure:
+To start the relay server, you need to configure the JSON config file located at `<PROJECT_ROOT>/jsrelay/config/relay-config.json` which has this structure:
    
 ```json
 {
