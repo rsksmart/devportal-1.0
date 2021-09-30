@@ -5,7 +5,7 @@ tags: rif, relay, gas station network, gsn
 permalink: /rif/relay/operator-manual/
 ---
 
-RIF Relay operator manual can guide you to set up RIF Relay server, register the server, allow new tokens, create smart wallt, deploy smart wallet and execute transactions.
+RIF Relay operator manual can guide you to set up RIF Relay server, register the server, allow new tokens, create smart wallets, deploy smart wallets and execute transactions.
 
 ## Table of Contents
 - [**Hardware Requerements**](#hardware-requirements)
