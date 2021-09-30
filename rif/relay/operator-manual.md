@@ -253,7 +253,7 @@ only the owner can allow tokens on the contracts.
 
 ### On Testnet
 
-There is no script for this situation, so you will need to use web3 to instanciate this contracts:
+There is no script for this situation, so you will need to use web3 to instantiate these contracts:
 - `SmartWalletDeployVerifier`
 - `SmartWalletRelayVerifier`
 - `CustomSmartWalletDeployVerifier`
