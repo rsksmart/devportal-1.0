@@ -259,7 +259,7 @@ There is no script for this situation, so you will need to use web3 to instantia
 - `CustomSmartWalletDeployVerifier`
 - `CustomSmartWalletRelayVerifier`
 
- Then call the method `acceptToken(address token)` directly in each contracts, using an account with tRBTC:
+ Then call the method `acceptToken(address token)` directly in each contract, using an account with tRBTC.
 
 ## How to Monitor the Address Used to Relay Transactions
 Is important to verify the address used to relay transactions to have balance of rBTC.
