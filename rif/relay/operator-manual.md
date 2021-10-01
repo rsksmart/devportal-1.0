@@ -307,7 +307,7 @@ To deploy a smart wallet, we need to do some steps to generate the wallet addres
    Where variables are:
 
    * **RSK_NODE_ENDPOINT**: the RSK node endpoint where is running (e.g., http://localhost:4444).
-   * **SMART_WALLET_FACTORY_ABI**: the smart wallet factory contract abi json to use.
+   * **SMART_WALLET_FACTORY_ABI**: the smart wallet factory contract ABI to use.
    * **SMART_WALLET_FACTORY_ADDRESS**: the deployed smart wallet factory contract address.
    * **RSK_ACCOUNT_ADDRESS**: the RSK address that will own the smart wallet.
    * **SMART_WALLET_RECOVERER**: the RSK address that will be the recoverer account, in case the owner account is lost.
