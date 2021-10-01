@@ -128,7 +128,7 @@ When the Relay Server receives an HTTP Relay request, it creates an Envelope, wr
 The server is a service daemon, running as an HTTP service. It advertises itself (through the Relay Hub) and waits for client requests.
 
 ### Relay & Deploy Requests
-An relay request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:
+A relay request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:
 - **Relay Data**: all information required to relay the defined Forward Request.
 - **Forward Request**: it is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
 
