@@ -284,8 +284,7 @@ There are **two ways** to create a Smart Wallet:
 
 ## Deploy a Smart Wallet
 
-To deploy a smart wallet we need to do some steps to generate the wallet address,
-fund it and finally deploy the smart wallet. Here we are going to show you how to do that.
+To deploy a smart wallet, we need to do some steps to generate the wallet address, fund it and finally deploy the smart wallet. Here below the steps required:
 
 1. Generate your smart wallet address. To do this you need to call the method `getSmartWalletAddress` on the
    `SmartWalletFactory` contract, it can be found in the relay repo under `src/cli/compiled/SmartWalletFactory.json`.
