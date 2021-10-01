@@ -288,7 +288,7 @@ To deploy a smart wallet, we need to do some steps to generate the wallet addres
 
 1. Generate your smart wallet address. To do this, you need to call the method `getSmartWalletAddress` on the
    `SmartWalletFactory` contract, it can be found in the relay repo under `src/cli/compiled/SmartWalletFactory.json`.
-   You need to extract the abi from there and then use it to instantiate the contract with web3.
+   You need to extract the ABI from there and then use it to instantiate the contract with web3.
    Here is an example of how to do it:
    ```javascript
         import Web3 from "web3";
