@@ -33,7 +33,7 @@ RIF Relay operator manual can guide you to set up RIF Relay server, register the
 
 ## Hardware requirements
 
-These are the minimum requirements that must be met to run an RIF Relay Server:
+These are the minimum requirements that must be met to run a RIF Relay Server:
 
 - 2 cores
 - 4 GB RAM
