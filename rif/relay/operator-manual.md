@@ -279,7 +279,7 @@ To get the `relayWorkerAddress`, the user can call the relay server endpoint `<h
 There are **two ways** to create a Smart Wallet:
 
 1. **Regular transaction:** The Requester (or another account on behalf of the Requester) calls the Proxy Factory asking to get a new Smart Wallet. Therefore the Proxy Factory creates a proxy to the SmartWallet code, delegating the ownership to the Requester.
-2. **Sponsored:** It needs to go through the RIF Relay process, which is described in detail below. The requester asks a third party to pay for the Smart Wallet deployment, and the requester pays in tokens for that (or free if it is subsidized by the third-party, a.k.a, Sponsor).
+2. **Sponsored:** It needs to go through the RIF Relay process, which is described in detail below. The Requester asks a third party to pay for the Smart Wallet deployment, and the Requester pays in tokens for that (or free if it is subsidized by the third-party, a.k.a, Sponsor).
 
 
 ## Deploy a Smart Wallet
