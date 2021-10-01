@@ -5,7 +5,7 @@ tags: rif, envelope, relay, user, guide, launch
 permalink: /guides/rif-relay/launch/
 ---
 
-## Run the Relay Server
+## Run the RIF Relay Server
 To start the relay server, you need to configure the json config file located at `<PROJECT_ROOT>/jsrelay/config/relay-config.json` which has this structure:
    
 ```json
@@ -41,7 +41,7 @@ Afterwards, run `yarn relay` to start the server.
 
 If it's the first time the server is run, some logs will state that the server isn't ready and that some values are wrong. This is expected, you just need to register the server on the relay hub in order for it to be usable by the clients.
 
-## Register the Relay Server
+## Register the RIF Relay Server
 
 ### On Regtest
 

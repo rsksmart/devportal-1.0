@@ -69,7 +69,7 @@ Also, the Relay Hub forms part of the relay worker’s registration process toge
 ### Smart Wallet
 It’s the “contract-based account” owned by the Requester’s EOA.
 
-Smart Wallet are contracts that verify forwarded data and subsequently invoke the recipient contract of the transaction. The smart wallet is deployed *counterfactually* at the moment it is needed. This happens, for instance, when a user with some token balances wants to move those tokens without spending gas, i.e. using the enveloping system.
+Smart Wallet are contracts that verify forwarded data and subsequently invoke the recipient contract of the transaction. The smart wallet is deployed *counterfactually* at the moment it is needed. This happens, for instance, when a user with some token balances wants to move those tokens without spending gas, i.e. using the relay system.
 
 It is the component that calls the Recipient contract (i.e, the `msg.sender` address the Recipient will see). During the execution,  the contract verifies the Relay Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.
 
@@ -128,7 +128,7 @@ When the Relay Server receives an HTTP Relay request, it creates an Envelope, wr
 The server is a service daemon, running as an HTTP service. It advertises itself (through the Relay Hub) and waits for client requests.
 
 ### Relay & Deploy Requests
-An enveloping request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:
+An relay request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:
 - **Relay Data**: all information required to relay the defined Forward Request.
 - **Forward Request**: it is formed by all the "common" transaction fields in addition to all the token-payment data and the Proxy Factory address as well.
 

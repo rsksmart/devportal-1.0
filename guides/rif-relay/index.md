@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RIF Relay User Guide
-tags: rif, enveloping, envelope, relay, user, guide
+tags: rif, envelope, relay, user, guide
 permalink: /guides/rif-relay/
 ---
 
@@ -14,4 +14,4 @@ This guide encompasses technical details for RIF Relay service operations.
 - [**Integration Guide**](/guides/rif-relay/integrate/)
 - [**Smart Wallets**](/guides/rif-relay/smart-wallets/)
 
-For general information about Relay, including its design, architecture, and specifications, please refer to the [RIF Relay documentation](/rif/relay/).
+For general information about RIF Relay, including its design, architecture, and specifications, please refer to the [RIF Relay documentation](/rif/relay/).

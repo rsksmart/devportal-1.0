@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RIF Relay Installation
-tags: rif, enveloping, envelope, relay, user, guide, install
+tags: rif, envelope, relay, user, guide, install
 permalink: /guides/rif-relay/install/
 ---
 

@@ -17,19 +17,19 @@ RIF Relay operator manual can guide you to set up RIF Relay server, register the
   - [**Npx and Truffle**](#npx-and-truffle)
 - [**Deploy contracts locally**](#deploy-contracts-locally)
 - [**Deploy contracts on Testnet**](#deploy-contracts-on-testnet)
-- [**Run the Relay Server**](#run-the-relay-server)
-- [**Register the Relay Server**](#register-the-relay-server)
+- [**Run the RIF Relay Server**](#run-the-rif-relay-server)
+- [**Register the RIF Relay Server**](#register-the-relay-server)
   - [**On Regtest**](#on-regtest)
   - [**On Testnet**](#on-testnet)
-- [**Allow Token Address to BlackList**](#allow-token-address-to-blacklist)
+- [**Allow Token Address to Whitelist**](#allow-token-address-to-whitelist)
   - [**On Regtest**](#on-regtest-1)
   - [**On Testnet**](#on-testnet-1)
-- [**How to Monitor the Address Used to Relay Transactions**](#how-to-monitor-the-address-used-to-relay-transactions)
+- [**How to Monitor the Address Used to RIF Relay Transactions**](#how-to-monitor-the-address-used-to-rif-relay-transactions)
   - [**On Regtest**](#on-regtest-1)
   - [**On Testnet**](#on-testnet-1)
 - [**Create a Small Wallet**](#create-a-smart-wallet)
 - [**Deploy a Smart Wallet**](#deploy-a-smart-wallet)
-- [**Relay Transaction**](#relay-transaction)
+- [**RIF Relay Transaction**](#rif-relay-transaction)
 
 ## Hardware requirements
 
@@ -122,8 +122,8 @@ npx truffle migrate --network rsktestnet
 
 These contracts have been deployed on Testnet. See [here](/rif/relay/contracts/) for their addresses.
 
-## Run the Relay Server
-To start the relay server, you need to configure the JSON config file located at `<PROJECT_ROOT>/jsrelay/config/relay-config.json` which has this structure:
+## Run the RIF Relay Server
+To start the RIF Relay server, you need to configure the JSON config file located at `<PROJECT_ROOT>/jsrelay/config/relay-config.json` which has this structure:
    
 ```json
 {
@@ -210,7 +210,7 @@ where:
 - `<secret_mnemonic>` contains the path to a file with the mnemonic of a funded account to use during the relay server registration
 - `<ADDRESS>` is the account address associated to that mnemonic.
 
-## Allow Token Address to BlackList
+## Allow Token Address to Whitelist
 Now the final step is to allow some tokens to be used by relay on the smart wallets.
 
 ### On Regtest
@@ -261,7 +261,7 @@ There is no script for this situation, so you will need to use web3 to instantia
 
  Then call the method `acceptToken(address token)` directly in each contract, using an account with tRBTC.
 
-## How to Monitor the Address Used to Relay Transactions
+## How to Monitor the Address Used to RIF Relay Transactions
 Is important to verify the address used to relay transactions to have balance of rBTC.
 To get the relayWorkerAddress call the relay server endpoing <host:port>/getaddr to get:
 {
@@ -280,7 +280,7 @@ To get the relayWorkerAddress call the relay server endpoing <host:port>/getaddr
 There are **two ways** to create a Smart Wallet:
 
 1. **Regular transaction:** The Requester (or another account on behalf of the Requester) calls the Proxy Factory asking to get a new Smart Wallet. Therefore the Proxy Factory creates a proxy to the SmartWallet code, delegating the ownership to the Requester.
-2. **Sponsored:** It needs to go through the Enveloping process, which is described in detail below. The requester asks a third party to pay for the Smart Wallet deployment, and the requester pays in tokens for that (or free if it is subsidized by the third-party, a.k.a, Sponsor).
+2. **Sponsored:** It needs to go through the RIF Relay process, which is described in detail below. The requester asks a third party to pay for the Smart Wallet deployment, and the requester pays in tokens for that (or free if it is subsidized by the third-party, a.k.a, Sponsor).
 
 
 ## Deploy a Smart Wallet
@@ -414,11 +414,11 @@ to any wallet and send some tokens to that address. Also you can use web3 if you
 
 After following all these steps you should be able to have a deployed smart wallet with tokens ready to be used.
 
-## Relay Transaction
+## RIF Relay Transaction
 
-Another option is to use RIF Relay through a Relay Provider. A Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the Relay Provider uses a Relay Client instance to interact with the Relay Server.
+Another option is to use RIF Relay through a RIF Relay Provider. A RIF Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the RIF Relay Provider uses a RIF Relay Client instance to interact with the RIF Relay Server.
 
-Here's a sample typescript snippet for relaying a transaction through the use of the Relay Provider.
+Here's a sample typescript snippet for relaying a transaction through the use of the RIF Relay Provider.
 
 ```typescript
 import { RelayProvider, resolveConfiguration } from "@rsksmart/rif-relay";
@@ -472,7 +472,7 @@ web3.setProvider(provider);
 const tokenContract = "0x0E569743F573323F430B6E14E5676EB0cCAd03D9"; // token address to use on smart wallet
 const tokenAmount = "100"; // total token amount for the smart wallet, the smart wallet address should have a balance greater than this number before calling the deploy
 
-// Relay Transaction
+// RIF Relay Transaction
 
 const unsigned_tx = {
   // some common web3 transaction with the usual parameters, for example:

@@ -10,13 +10,13 @@ This guide goes over the exposed RIF Relay methods that dApps and wallets can co
 ## Table of Contents
 - [**Introduction**](#introduction)
 - [**Requirements**](#requirements)
-  - [**Relay Smart Contracts**](#relay-smart-contracts)
-  - [**Relay Server**](#relay-server)
+  - [**RIF Relay Smart Contracts**](#rif-relay-smart-contracts)
+  - [**RIF Relay Server**](#rif-relay-server)
 - [**Integration options**](#integration-options)
-  - [**Using the Relay Server directly**](#using-the-relay-server-directly)
+  - [**Using the RIF Relay Server directly**](#using-the-rif-relay-server-directly)
     - [**Custom worker replenish function**](#custom-worker-replenish-function)
-  - [**Using a Relay Provider**](#using-a-relay-provider)
-  - [**Using Relay as a library**](#using-relay-as-a-library)
+  - [**Using a RIF Relay Provider**](#using-a-rif-relay-provider)
+  - [**Using RIF Relay as a library**](#using-rif-relay-as-a-library)
 
 ## Introduction
 
@@ -26,21 +26,21 @@ Additionally, it's important to note that not _all_ of the RIF Relay components 
 
 ## Requirements
 
-### Relay Smart Contracts
+### RIF Relay Smart Contracts
 
 These need to be deployed and their addresses known. For steps on how to do this, please refer to the [Deploy contracts locally section](/guides/rif-relay/install/#deploy-contracts-locally) of the Installation guide.
 
 Once deployed, you'll only need the RSK node to be running.
 
-### Relay Server
+### RIF Relay Server
 
-The Relay Server is the off-chain component in charge of receiving transactions and sending them to the on-chain components, chiefly the Relay Hub. The Relay Hub manages information about the Relay Workers and Relay Managers, but also communicates with the rest of the on-chain components in turn: the Smart Wallets, Factory and Verifier contracts.
+The RIF Relay Server is the off-chain component in charge of receiving transactions and sending them to the on-chain components, chiefly the RIF Relay Hub. The RIF Relay Hub manages information about the RIF Relay Workers and RIF Relay Managers, but also communicates with the rest of the on-chain components in turn: the Smart Wallets, Factory and Verifier contracts.
 
-The Relay Manager owns Relay Worker accounts with funds in native coin. To relay a transaction, a Worker signs it and sends it to the Relay Hub paying for the gas consumed. In the case of a happy flow, transactions will ultimately be relayed through the Relay Hub, using the EIP-712 library.
+The RIF Relay Manager owns RIF Relay Worker accounts with funds in native coin. To relay a transaction, a Worker signs it and sends it to the RIF Relay Hub paying for the gas consumed. In the case of a happy flow, transactions will ultimately be relayed through the RIF Relay Hub, using the EIP-712 library.
 
 For more details on this, please refer to the [Architecture page](/rif/relay/architecture/).
 
-Users can interact with the Relay Server directly or indirectly. For the latter, a user can communicate with a Relay Server through a Relay Client. A Relay Client knows the addresses of different Relay Servers and it can send on-chain requests to any one of them. The Relay Client then sends the transaction to be sponsored to the Relay Server via HTTP request.
+Users can interact with the RIF Relay Server directly or indirectly. For the latter, a user can communicate with a RIF Relay Server through a RIF Relay Client. A RIF Relay Client knows the addresses of different RIF Relay Servers and it can send on-chain requests to any one of them. The RIF Relay Client then sends the transaction to be sponsored to the RIF Relay Server via HTTP request.
 
 In any case, you'll need to have the server installed and running. To achieve this please refer to the following guides:
 1. [RIF Relay Installation](/guides/rif-relay/install/)
@@ -48,18 +48,18 @@ In any case, you'll need to have the server installed and running. To achieve th
 
 ## Integration options
 
-### Using the Relay Server directly
+### Using the RIF Relay Server directly
 
-The simplest option to use RIF Relay in your wallet or dApp is by calling the Relay Server directly. The instructions for running a Relayer are here. The communication with the Relay Server is done through HTTP requests.
+The simplest option to use RIF Relay in your wallet or dApp is by calling the RIF Relay Server directly. The instructions for running a Relayer are here. The communication with the RIF Relay Server is done through HTTP requests.
 
-The order of events for relaying transactions or deploying smart wallets through the Relay Server is:
+The order of events for relaying transactions or deploying smart wallets through the RIF Relay Server is:
 1. Create a relay or deploy request.
 2. Sign the structure (the wrapped transaction) using the EIP712 signature.
 3. Create the metadata with the signature.
 4. With the relay or deploy request and the metadata, create an HTTP request.
-5. Call the Relay Server `/relay` method using an HTTP POST request.
+5. Call the RIF Relay Server `/relay` method using an HTTP POST request.
 
-Here's an example of how the HTTP Relay Request might look like:
+Here's an example of how the HTTP RIF Relay Request might look like:
 
 ```json
 {
@@ -111,13 +111,13 @@ To implement and use your own replenish strategy:
 1. In the folder `src/relayserver`, open `ReplenishFunction.ts` with a text editor.
 2. On the function `replenishStrategy` write your new replenish strategy.
 3. Re build the project `yarn && yarn prepare`
-4. Add the command `--customReplenish` when running a Relay Server or change the config json file to set `customReplenish` on true.
+4. Add the command `--customReplenish` when running a RIF Relay Server or change the config json file to set `customReplenish` on true.
 
-### Using a Relay Provider
+### Using a RIF Relay Provider
 
-Another option is to use RIF Relay through a Relay Provider. A Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the Relay Provider uses a Relay Client instance to interact with the Relay Server.
+Another option is to use RIF RIF Relay through a RIF Relay Provider. A RIF Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the RIF Relay Provider uses a RIF Relay Client instance to interact with the RIF Relay Server.
 
-Here's a sample typescript snippet for deploying a Smart Wallet address as well as relaying a transaction through the use of the Relay Provider.
+Here's a sample typescript snippet for deploying a Smart Wallet address as well as relaying a transaction through the use of the RIF Relay Provider.
 
 ```typescript
 import { RelayProvider, resolveConfiguration } from "@rsksmart/rif-relay";
@@ -188,7 +188,7 @@ const deployTransaction = await provider.deploySmartWallet({
     smartWalletAddress
 });
 
-// Relay Transaction
+// RIF Relay Transaction
 
 const unsigned_tx = {
   // some common web3 transaction with the usual parameters, for example:
@@ -259,6 +259,6 @@ await customSmartWalletDeployVerifier.methods.acceptToken(tokenAddress).send({fr
 await customSmartWalletRelayVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
 ```
 
-### Using Relay as a library
+### Using RIF Relay as a library
 
-Development of an SDK for the RIF Relay project is underway, and will be released soon.
+Development of an SDK for the RIF RIF Relay project is underway, and will be released soon.
