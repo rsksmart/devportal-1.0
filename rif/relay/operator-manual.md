@@ -314,9 +314,7 @@ To deploy a smart wallet, we need to do some steps to generate the wallet addres
    * **SMART_WALLET_INDEX**: a wallet index, since we can have more than just one smart wallet per RSK address
    you can specify the index of the wallet.
 
-2 (Optional). Now if you want, you can prefund this new address that will represent your smart wallet. To do that you can go
-to any wallet and send some tokens to that address. Also you can use web3 if you are working on regtest, here an
-   example:
+2 (Optional). Now if you want, you can prefund this new address that will represent your smart wallet. To do that you can go to any wallet and send some tokens to that address. Also, you can use web3 if you are working on regtest, here is an example:
    ```javascript
       import Web3 from "web3";
 
