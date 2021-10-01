@@ -177,7 +177,7 @@ Where:
 
 After doing that, you need to open another terminal and run the `yarn registerRelay` command on the root of the relay project in order to register the relay. 
 
-After running this command you will be seeing several log entries indicating how everything is turning out. After a little while, look for this entry in the relay server execution terminal to make sure that the server is ready:
+After running this command, you will be seeing several log entries indicating how everything is turning out. After a little while, look for this entry in the relay server execution terminal to make sure that the server is ready:
 
 ```
 Relayer state: READY
