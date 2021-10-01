@@ -261,7 +261,7 @@ There is no script for this situation, so you will need to use web3 to instantia
  Then call the method `acceptToken(address token)` directly in each contract, using an account with tRBTC.
 
 ## How to Monitor the Address Used to RIF Relay Transactions
-Is important to verify the address used to relay transactions to have balance of rBTC.
+It is important to verify the address used to relay transactions to have enough balance (rBTC).
 To get the relayWorkerAddress call the relay server endpoing <host:port>/getaddr to get:
 {
   - `"relayWorkerAddress":"0x242870b75325309f3d1aa635fe175390fd8c15ea"`,
