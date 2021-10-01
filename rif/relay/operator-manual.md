@@ -286,7 +286,7 @@ There are **two ways** to create a Smart Wallet:
 
 To deploy a smart wallet, we need to do some steps to generate the wallet address, fund it and finally deploy the smart wallet. Here below the steps required:
 
-1. Generate your smart wallet address. To do this you need to call the method `getSmartWalletAddress` on the
+1. Generate your smart wallet address. To do this, you need to call the method `getSmartWalletAddress` on the
    `SmartWalletFactory` contract, it can be found in the relay repo under `src/cli/compiled/SmartWalletFactory.json`.
    You need to extract the abi from there and then use it to instantiate the contract with web3.
    Here is an example of how to do it:
