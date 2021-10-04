@@ -121,7 +121,7 @@ echo "${TRUFFLE_CONFIG}" > truffle-config.js
 
 Where:
 
-* **TOKEN_ADDRESSES**: it's a comma separated list of token addresses to be allowed.
+* **TOKEN_ADDRESSES**: it's a comma-separated list of token addresses to be allowed.
 * **SMART_WALLET_DEPLOY_VERIFIER_ADDRESS**: is the smart wallet deploy verifier contract address, you can retrieve this from the contract summary.
 * **SMART_WALLET_RELAY_VERIFIER_ADDRESS**: is the smart wallet relay verifier contract address, you can retrieve this from the contract summary.
 * **CUSTOM_SMART_WALLET_DEPLOY_VERIFIER_ADDRESS**: is the custom smart wallet deploy verifier contract address, you can retrieve this from the contract summary.
