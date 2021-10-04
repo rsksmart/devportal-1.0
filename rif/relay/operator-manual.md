@@ -8,7 +8,7 @@ permalink: /rif/relay/operator-manual/
 RIF Relay operator manual can guide you to set up RIF Relay server, register the server, allow new tokens, create smart wallets, deploy smart wallets and execute transactions.
 
 ## Table of Contents
-- [**Hardware Requirements**](#hardware-requirements)
+- [**Hardware Requerements**](#hardware-requirements)
 - [**System Requirements**](#system-requirements)
 - [**Download and install**](#download-and-install)
   - [**RSK Node**](#rsk-node)
@@ -208,7 +208,7 @@ node dist/src/cli/commands/enveloping.js relayer-register --network <RSKJ_NODE_U
 
 where: 
 - `<secret_mnemonic>` contains the path to a file with the mnemonic of a funded account to use during the relay server registration
-- `<ADDRESS>` is the account address associated with that mnemonic.
+- `<ADDRESS>` is the account address associated to that mnemonic.
 
 ## Allow Token Address to Whitelist
 Now the final step is to allow some tokens to be used by relay on the smart wallets.
@@ -263,16 +263,16 @@ There is no script for this situation, so you will need to use web3 to instantia
 ## How to Monitor the Address Used to RIF Relay Transactions
 It is important to verify the address used to relay transactions to have enough balance (rBTC).
 To get the `relayWorkerAddress`, the user can call the relay server endpoint `<host:port>/getaddr`. The following information will be returned:
-{
-  - `"relayWorkerAddress":"0x242870b75325309f3d1aa635fe175390fd8c15ea"`,
-  - `"relayManagerAddress":"0xaf0e7d0d4ca272181680897d9358724564e88828"`,
-  - `"relayHubAddress":"0x49b770a30156aDC02a08E1dd0d7CEAb021ABF34D"`,
-  - `"minGasPrice":"1"`,
-  - `"chainId":"33"`,
-  - `"networkId":"33"`,
-  - `"ready":true`,
-  - `"version":"2.0.1"`
-  }
+`{
+  "relayWorkerAddress":"0x242870b75325309f3d1aa635fe175390fd8c15ea",
+  "relayManagerAddress":"0xaf0e7d0d4ca272181680897d9358724564e88828",
+  "relayHubAddress":"0x49b770a30156aDC02a08E1dd0d7CEAb021ABF34D",
+  "minGasPrice":"1",
+  "chainId":"33",
+  "networkId":"33",
+  "ready":true,
+  "version":"2.0.1"
+}`
 
 ## Create a Smart Wallet
 
@@ -412,7 +412,7 @@ After following all these steps you should be able to have a deployed smart wall
 
 ## RIF Relay Transaction
 
-Another option is to use RIF Relay through a RIF Relay Provider. A RIF Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the RIF Relay Provider uses a RIF Relay Client instance to interact with the RIF Relay Server.
+A RIF Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the RIF Relay Provider uses a RIF Relay Client instance to interact with the RIF Relay Server.
 
 Here's a sample typescript snippet for relaying a transaction through the use of the RIF Relay Provider.
 
