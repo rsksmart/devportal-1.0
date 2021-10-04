@@ -208,7 +208,7 @@ node dist/src/cli/commands/enveloping.js relayer-register --network <RSKJ_NODE_U
 
 where: 
 - `<secret_mnemonic>` contains the path to a file with the mnemonic of a funded account to use during the relay server registration
-- `<ADDRESS>` is the account address associated to that mnemonic.
+- `<ADDRESS>` is the account address associated with that mnemonic.
 
 ## Allow Token Address to Whitelist
 Now the final step is to allow some tokens to be used by relay on the smart wallets.
