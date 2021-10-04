@@ -110,6 +110,6 @@ We'll use `truffle` for deploying contracts.
 ```
 npx truffle migrate --network rsktestnet
 ``` 
-*Disclaimer: to use testnet, you should have an unlocked account with funds or configure it in `truffle.js`.*
+> Disclaimer: to use testnet, you should have an unlocked account with funds or configure it in `truffle.js`.
 
 These contracts have been deployed on Testnet. See [here](/rif/relay/contracts/) for their addresses.
