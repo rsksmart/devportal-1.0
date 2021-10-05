@@ -263,7 +263,7 @@ There is no script for this situation, so you will need to use web3 to instantia
 ## How to Monitor the Address Used to RIF Relay Transactions
 It is important to verify the address used to relay transactions to have enough balance (rBTC).
 To get the `relayWorkerAddress`, the user can call the relay server endpoint `<host:port>/getaddr`. The following information will be returned:
-```
+```json
 {
   "relayWorkerAddress":"0x242870b75325309f3d1aa635fe175390fd8c15ea",
   "relayManagerAddress":"0xaf0e7d0d4ca272181680897d9358724564e88828",
