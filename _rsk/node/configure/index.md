@@ -23,7 +23,7 @@ It is a bit different if:
 &hellip; to run the node.
 
 > Remember:
-> You need to **restart** the node if you've changed any configuration option
+> You need to **restart** the node if you've changed any configuration option.
 
 ### Using Ubuntu, Azure, AWS or Docker
 
@@ -32,6 +32,10 @@ Default configurations are defined there and they are the same as [these ones](h
 
 You should edit the config related with the network you are using (`mainnet.conf`, `testnet.conf`, `regtest.conf`).
 Check [here](/rsk/node/configure/reference) all the configuration options you could change.
+
+### Using Windows
+
+For other operating systems, including Windows, please use the `-Drsk.conf.file` option as specified below.
 
 
 ### Using `java` command
