@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/enveloping/launch/
+permalink: /rif/relay/launch/
 redirect: /guides/rif-relay/launch/
 ---

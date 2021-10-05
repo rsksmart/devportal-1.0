@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/enveloping/create-smart-wallet/
-redirect: /guides/rif-enveloping/smart-wallets/
+permalink: /guides/rif-enveloping/create-smart-wallet/
+redirect: /guides/rif-relay/smart-wallets/
 ---

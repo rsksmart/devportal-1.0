@@ -1,5 +1,5 @@
 ---
 layout: redirect
 permalink: /guides/rif-enveloping/getting-started/
-redirect: /guides/rif-enveloping/
+redirect: /guides/rif-relay/getting-started/
 ---

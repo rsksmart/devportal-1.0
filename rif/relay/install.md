@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/enveloping/dev-setup/
+permalink: /rif/relay/install/
 redirect: /guides/rif-relay/install/
 ---

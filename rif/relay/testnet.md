@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/enveloping/testnet/
+permalink: /rif/relay/testnet/
 redirect: /rif/relay/contracts/
 ---

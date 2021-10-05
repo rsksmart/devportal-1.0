@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /guides/rif-enveloping/
+permalink: /guides/rif-relay/getting-started/
 redirect: /guides/rif-relay/
 ---

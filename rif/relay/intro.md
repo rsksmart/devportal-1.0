@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/enveloping/intro/
+permalink: /rif/relay/intro/
 redirect: /rif/relay/overview/
 ---

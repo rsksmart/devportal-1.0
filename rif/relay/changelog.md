@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rif/enveloping/versions/
+permalink: /rif/relay/changelog/
 redirect: /rif/relay/versions/
 ---
