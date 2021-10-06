@@ -5,6 +5,8 @@ title: rLogin - integrated backend authentication
 
 rLogin also integrates an authentication model based on the user's digital signature capabilities when connected to their wallets. The model is based on the SSI standards of DIDs, VCs and VC JSON Schemas
 
+Read more about standards in [RIF Identity specs](../../identity/specs/)
+
 ![identity-30](/rif/rlogin/assets/identity-30.png)
 
 This will require you to install the authentication library in your backend. First, follow [backend guidelines](../libraries/express-did-auth) to integrate the authentication model and then just add the backend url to rLogin.
