@@ -3,7 +3,7 @@ layout: rsk
 title: rLogin - Migrating
 ---
 
-The rLogin has ease migration process from other libraries
+It is easy to migrate from other libraries to rLogin!
 
 ### Web3modal
 
