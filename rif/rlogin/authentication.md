@@ -14,7 +14,7 @@ This will require you to install the authentication library in your backend. Fir
 
 ### Open flavor
 
-For apps that require authenticating users by their account. Configure the backend url in rLogin and the pop-up will prompt users to sign an access code.
+For apps that wish to authenticate users by their account. Configure the backend URL in rLogin and it will prompt users to sign the access code with their wallet.
 
 ```typescript
 const rLogin = new RLogin({
