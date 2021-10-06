@@ -215,7 +215,7 @@ Some wallets need the user to pick their wallet network conneciton from the UI. 
 
 If the user can choose the network in their wallet rLogin will ask the user to change the network before `rLogin.connect()` happens. This will ensure you the user is connected to the correct network when landing.
 
-It will also show up after logging in if the user changes the network and it is not supported.
+It will also show up after logging in, if the user changes the network and it is not supported.
 
 rLogin supports Metamask features to change the network from the app. For the other providers we show the list of available networks.
 
