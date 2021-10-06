@@ -175,7 +175,11 @@ Follow this guide to configure rLogin in minutes
   </div>
 </div>
 
-## EIP-1193
+## The developer experience
+
+rLogin is compatible with Metamask implementations! You can use rLogin in your dapp with your favourite libraries just as you did before.
+
+### EIP-1193
 
 rLogin supports [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md). This means rLogin `provider` is compatible with the API described in the standard, thus polymorphic with Metamask API. This also allows you to make a single implementation and integrate all the supported wallets instantly, and let you work with your favourite web3 client.
 
