@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: rLogin - features
+tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis
+description: rLogin - features - a list of features and how to use them
 ---
 
 Get the most from rLogin!
