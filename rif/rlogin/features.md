@@ -35,7 +35,7 @@ Restrict supported languages:
 ```typescript
 const rLogin = new RLogin({
     // ...
-    supportedLnaguages: ['en', 'es']
+    supportedLanguages: ['en', 'es']
 })
 ```
 
