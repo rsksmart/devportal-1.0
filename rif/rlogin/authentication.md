@@ -27,7 +27,7 @@ const rLogin = new RLogin({
 
 ### Data Vault flavor
 
-Additional, you can integrate SSI and request users for specific information such as their email. This flavor will integrate RIF Data Vault and enable you to operate with the user centric cloud system from your dApp.
+Additionally, you can integrate SSI. This can be used to request users for specific information such as their email. This flavor will integrate RIF Data Vault, and enables you to operate with the user centric cloud system from your dApp.
 
 ```typescript
 import * as RIFDataVault from '@rsksmart/ipfs-cpinner-client'
