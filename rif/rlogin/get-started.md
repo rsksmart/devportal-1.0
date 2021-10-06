@@ -193,7 +193,7 @@ Before logging in to the app the user will be able to validate the account and n
 
 ### Tutorials and helpers for hardware wallets
 
-Hardware wallets can be a headache... the rLogin includes some small tutorials that will help a lot the user to get connected to the different networks with the most secure devices.
+Hardware wallets can be quite hard to use. rLogin includes a few short tutorials that will help users to overcome these difficulties, and get connected to the different networks with the most secure devices.
 
 <p align="middle">
   <img src="https://i.imgur.com/dqGd4qO.png" alt="wallt info" height="350" />
