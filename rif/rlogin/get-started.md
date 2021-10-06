@@ -4,7 +4,7 @@ render_features: 'collapsible'
 title: rLogin - login tool for RSK
 ---
 
-Integrate rLogin into your app and allow your users to choose their favorite wallets to login. With a single tool you will get connected to their wallet using an API compatible with Metamask, continue developing as you did.
+Integrate rLogin into your app and allow your users to choose their favourite wallets to log in. With a single tool, you will get connected to their wallet using an API compatible with Metamask, continue developing as you did.
 
 <iframe src="https://codesandbox.io/embed/rlogin-9mmoc?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
@@ -119,7 +119,7 @@ Follow this guide to configure rLogin in minutes
   })
   ```
 
-  > We usually put this all together in a single file called `rlogin.ts` and export a single instance of `RLogin`. This ensures a single DOM element is creted.
+  > Tip: Put this all together in a single file named `rlogin.ts` and export a single instance of `RLogin`. This ensures that only a single DOM element is created.
 
 - 3) Connect!
   ```typescript
@@ -132,7 +132,7 @@ Follow this guide to configure rLogin in minutes
       })
   ```
 
-  You can use `provider` with your client of preference: [`Web3.js`](https://github.com/ethereum/web3.js/), [`ethjs`](https://github.com/ethjs/ethjs), [`ethers.js`](https://github.com/ethers-io/ethers.js/) or other.
+  You can use `provider` with your preferred client: [`Web3.js`](https://github.com/ethereum/web3.js/), [`ethjs`](https://github.com/ethjs/ethjs), [`ethers.js`](https://github.com/ethers-io/ethers.js/) or other.
 
   Use `disconnect` to disconnect from the selected wallet. This single function simplifies handling the wallet specifics at all.
 
@@ -185,11 +185,11 @@ rLogin supports [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip
 
 ## The UX
 
-The UX is the most important part of this project. This is the main point to consider integrating rLogin
+The UX is the most important part of this project. This is the main point to consider when integrating rLogin
 
 ### Wallet information
 
-Before logging in to the app the user will be able to validate the account and network they are connecting to.
+Before logging in to the app, the user will be able to validate the account and network they are connecting to.
 
 <p align="middle">
   <img src="https://i.imgur.com/OZjZZPb.png" alt="wallt info" height="400" />

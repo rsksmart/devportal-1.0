@@ -7,7 +7,7 @@ rLogin also integrates an authentication model based on the user's digital signa
 
 ![identity-30](/rif/rlogin/assets/identity-30.png)
 
-This will require you to install the authentication library in your backend. First follow [backend guidelines](../libraries/express-did-auth) to integrate the authentication model and then just add the backend url to rLogin.
+This will require you to install the authentication library in your backend. First, follow [backend guidelines](../libraries/express-did-auth) to integrate the authentication model and then just add the backend url to rLogin.
 
 - Sample app: https://data-vault-sample.rlogin.identity.rifos.org/
 - Repo: https://github.com/rsksmart/rLogin-sample-apps/tree/main/permissioned-app

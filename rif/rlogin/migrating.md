@@ -16,4 +16,4 @@ The Web3modal configuration will be completely compatible with rLogin configurat
 
 ### Web3 React
 
-Use the [`rsksmart/rLogin-web3-react-connector` adapter](https://github.com/rsksmart/rLogin-web3-react-connector) to ingtegrate rLogin on top of web3 React
+Use the [`rsksmart/rLogin-web3-react-connector` adapter](https://github.com/rsksmart/rLogin-web3-react-connector) to integrate rLogin on top of web3 React
