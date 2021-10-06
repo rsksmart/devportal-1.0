@@ -28,7 +28,7 @@ Integrate rLogin into your app and allow your users to choose their favorite wal
     <h3>Network support:</h3>
     <ul>
       <li>RSK Mainnet, RSK Testnet</li>
-      <li>Etheruem, Ropsten, Kovan, Rinkeby, Gorely</li>
+      <li>Ethereum, Ropsten, Kovan, Rinkeby, Goerli</li>
     </ul>
     <h3>Clients support</h3>
     <ul><li><code>ethers</code>, <code>web3.js</code> and others</li></ul>
