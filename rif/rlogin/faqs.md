@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: rLogin - FAQs
+tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis
+description: rLogin - FAQs - frequent asked questions
 ---
 
 Find all acknowledged bugs, future features, and improvements in [repo issues](http://github.com/rsksmart/rLogin/issues)
