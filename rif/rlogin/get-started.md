@@ -1,125 +1,228 @@
 ---
 layout: rsk
 render_features: 'collapsible'
+title: rLogin - login tool for RSK
 ---
 
-## rLogin - where web3 meets SSI
+Integrate rLogin into your app and allow your users to choose their favorite wallets to login. With a single tool you will get connected to their wallet using an API compatible with Metamask, continue developing as you did.
 
-rLogin is a tool that allows the developers to connect their users with both blockchain functionalities and self-sovereign identity (SSI) models seamlessly, giving the user the power of data privacy and portability.
+<iframe src="https://codesandbox.io/embed/rlogin-9mmoc?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="rlogin"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
+<div class="row">
+  <div class="col">
+    <h3>Wallet support:</h3>
+    <ul>
+      <li>Browser wallets: Metamask, Nifty, Liquality</li>
+      <li>Mobile wallets via Wallet Connect</li>
+      <li>Custodial wallets: Portis, Torus (beta)</li>
+      <li>Hardware wallets: Ledger, Trezor, D'Cent</li>
+    </ul>
+    <h3>EIP-1193 support</h3>
+  </div>
+  <div class="col">
+    <h3>Network support:</h3>
+    <ul>
+      <li>RSK Mainnet, RSK Testnet</li>
+      <li>Etheruem, Ropsten, Kovan, Rinkeby, Gorely</li>
+    </ul>
+    <h3>Clients support</h3>
+    <ul><li><code>ethers</code>, <code>web3.js</code> and others</li></ul>
+  </div>
+</div>
 
-**Quick start! Jump to [rLogin docs](/rif/rlogin/libraries/modal) to install the front end tool**
+Repo: [`rsksmart/rLogin`](https://github.com/rsksmart/rLogin)
 
-You may also want to see
+---
 
-- [current integrations](/rif/rlogin/integrations) as a reference,
-- some [sample apps](/rif/rlogin/samples) to try it on your own,
-- or follow this [series of articles](https://hackernoon.com/rlogin-the-new-authentication-libraries-for-blockchain-based-apps-h619330z) as a guide
+## Getting started
 
-**Quick start!**
+Follow this guide to configure rLogin in minutes
+
 
 [](#top "collapsible")
-- A) Install rLogin
-    ```ts
-    npm i
+- 1) Install rLogin
+    ```
+    yarn add @rsksmart/rlogin
     ```
 
-- B) Create rLogin DOM element, configure networks and wallet providers  
+    Add wallets peer dependecies:
+
+    | Wallet provider | Required package |
+    | - | - |
+    | Browser wallets | none |
+    | Wallet Connect | `@walletconnect/web3-provider` |
+    | Portis | `@portis/web3` |
+    | Torus (beta) | `@toruslabs/torus-embed` |
+    | Trezor | `@rsksmart/rlogin-trezor-provider` |
+    | Ledger | `@rsksmart/rlogin-ledger-provider` |
+    | D'Cent | `@rsksmart/rlogin-dcent-provider` |
+
+    ```
+    yarn add @walletconnect/web3-provider @portis/web3 @toruslabs/torus-embed @rsksmart/rlogin-trezor-provider @rsksmart/rlogin-ledger-provider @rsksmart/rlogin-dcent-provider
+    ```
+
+- 2) Create rLogin DOM element, configure networks and wallet providers  
   ```ts
   import RLogin from '@rsksmart/rlogin'
   import WalletConnectProvider from '@walletconnect/web3-provider'
-  
+  import Portis from '@portis/web3'
+  import Torus from '@toruslabs/torus-embed'
+  import { trezorProviderOptions } from '@rsksmart/rlogin-trezor-provider'
+  import { ledgerProviderOptions } from '@rsksmart/rlogin-ledger-provider'
+  import { dcentProviderOptions } from '@rsksmart/rlogin-dcent-provider'
+
+  const rpcUrls = {
+    30: 'https://public-node.rsk.co',
+    31: 'https://public-node.testnet.rsk.co',
+  }
+
+  const supportedChains = Object.keys(rpcUrls).map(Number)
+
   export const rLogin = new RLogin({
-    cachedProvider: false,
     providerOptions: {
       walletconnect: {
         package: WalletConnectProvider,
         options: {
-          rpc: {
-            1: 'https://mainnet.infura.io/v3/8043bb2cf99347b1bfadfb233c5325c0',
-            30: 'https://public-node.rsk.co',
-            31: 'https://public-node.testnet.rsk.co'
+          rpc: rpcUrls
+        }
+      },
+      portis: {
+        package: Portis,
+        options: {
+          id: "a1c8672b-7b1c-476b-b3d0-41c27d575920",
+          network: {
+            nodeUrl: 'https://public-node.testnet.rsk.co',
+            chainId: 31,
           }
+        }
+      },
+      torus: {
+          package: Torus,
+      },
+      'custom-ledger': ledgerProviderOptions,
+      'custom-dcent': dcentProviderOptions,
+      'custom-trezor': {
+        ...trezorProviderOptions,
+        options: {
+          manifestEmail: 'info@iovlabs.org',
+          manifestAppUrl: 'https://basic-sample.rlogin.identity.rifos.org/',
         }
       }
     },
-    supportedChains: [1, 30, 31]
+    rpcUrls,
+    supportedChains
   })
   ```
-  Sample: [https://github.com/rsksmart/rif-identity-manager/blob/main/src/rLogin.ts](https://github.com/rsksmart/rif-identity-manager/blob/main/src/rLogin.ts)
 
-- C) Show the pop-up to the user
-  ```ts
-  const handleLogin = () => {
-      rLogin.connect()
-        .then((rLoginResponse: any) => {
-          const provider = rLoginResponse.provider;
-          const dataVault = rLoginResponse.dataVault;
-          const disconnect = rLoginResponse.disconnect;
-  
-          // save the response to be used later, here we are using React context
-          context.rLoginresponse(rLoginResponse)
-        })
-        .catch((err: string) => console.log(err))
-  }
+  > We usually put this all together in a single file called `rlogin.ts` and export a single instance of `RLogin`. This ensures a single DOM element is creted.
+
+- 3) Connect!
+  ```typescript
+  import { providers } from 'ethers'
+
+  const login = () => rLogin.connect()
+      .then(({ provider, disconnect }) => {
+          const provider = new providers.Web3Provider(provider)
+          provider.getSigner(0).getAddress().then(console.log)
+      })
   ```
-  
-- D) Request RPC methods
-  ```ts
-  export const getAccounts = (provider: any) => provider.request({ method: 'eth_accounts' })
-  ```
-  - Or use provider as Web3 provider for your client of preference: Web3.js, ethjs, ethers.js or other.
-  - Sample: [https://github.com/rsksmart/rif-identity-manager/blob/main/src/helpers.ts](https://github.com/rsksmart/rif-identity-manager/blob/main/src/helpers.ts)
-  
 
+  You can use `provider` with your client of preference: [`Web3.js`](https://github.com/ethereum/web3.js/), [`ethjs`](https://github.com/ethjs/ethjs), [`ethers.js`](https://github.com/ethers-io/ethers.js/) or other.
 
-**After integrating rLogin you achieve:**
+  Use `disconnect` to disconnect from the selected wallet. This single function simplifies handling the wallet specifics at all.
 
-- a back-end authenticating users by their wallet addressed - their Decentralized Identifiers
-- a registration model capable of requesting users for data stored in its user-centric cloud storage, the [Data Vault](/rif/identity/data-vault)
-- a front-end capable of interacting with any wallet that the user chooses, with a pre-designed user experience for registration and login
-- compatibility with a unified platform where the user can control their identity and information, the [RIF Identity Manager](/rif/identity/manager)
+<div class="container the-stack">
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="../features">Features</a>
+        <br />
+        <br />
+        <p>i18n, theming, dark/light, listeners, triggers</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="../samples">rLogin sample apps</a>
+        <br />
+        <br />
+        <p>Sample apps! Find all the code you need</p>
+      </div>
+    </div>
+  </div>
+  <div class="row rif_blue_text">
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="../authentication">Integrated backend authentication</a>
+        <br />
+        <br />
+        <p>Integrate the authentication model based on the user's digital signature capabilities</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="rns-index-box">
+        <a href="../migrating">Migrating</a>
+        <br />
+        <br />
+        <p>From <code>web3modal</code> or <code>web3react</code></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+## EIP-1193
+
+rLogin supports [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md). This means rLogin `provider` is comaptible with the API discribed in the standard, thus polymorphic with Metamask API. This also allows you to make a single implementation and integrate all the supported wallets instantly, and let you work with your favourite web3 client.
+
+## The UX
+
+The UX is the most important part of this project. This is the main point to consider integrating rLogin
+
+### Wallet information
+
+Before logging in to the app the user will be able to validate the account and network they are connecting to.
+
+<p align="middle">
+  <img src="https://i.imgur.com/OZjZZPb.png" alt="wallt info" height="400" />
+</p>
+
+### Tutorials and helpers for hardware wallets
+
+Hardware wallets can be a headache... the rLogin includes some small tutorials that will help a lot the user to get connected to the different networks with the most secure devices.
+
+<p align="middle">
+  <img src="https://i.imgur.com/dqGd4qO.png" alt="wallt info" height="350" />
+</p>
+
+### Choose network
+
+Some wallets need the user to pick their wallet network conneciton from the UI. We added a selector for the networks that are listed in `rpcUrls` This step will be prompted for hardware wallets or Torus.
+
+<p align="middle">
+  <img src="https://i.imgur.com/KkJxOn0.png" alt="wallt info" height="200" />
+</p>
+
+### Supported networks
+
+If the user can choose the network in their wallet rLogin will ask the user to change the network before `rLogin.connect()` happens. This will ensure you the user is connected to the correct network when landing.
+
+It will also show up after logging in if the user changes the network and it is not supported.
+
+rLogin supports Metamask features to change the network from the app. For the other providers we show the list of available networks.
+
+<p align="middle">
+  <img src="https://i.imgur.com/xzXMtrX.png" alt="wallt info" height="350" />
+</p>
+
+## Design & architecture
 
 ![rlogin-architecture-simple](/rif/rlogin/assets/rlogin-architecture-simple.png)
 
-### State of the art
+Read more about the architecture [here](../design-and-architecture)
 
-We identify there are two types of decentralized applications: applications with a back-end and applications without a back-end. Applications without a backend interact directly with the blockchain, and probably with some public service (eg: RNS). Backend applications need a type of authentication that confirms the users are in control of their wallet (thus, their private keys) at the time of use (eg: Money on Chain). We call this the web 3.0.
-
-There are web 2.0 applications, where confidence in the authenticity of users relies on services provided by third parties, such as [Google Authentication](https://developers.google.com/identity). These applications require that the user log in to their account in a third party service. This third party service shares the user's private information, giving the application the necessary information to authenticate the user. The information is in control of the third-party, which can use it arbitrarily to gain future access.
-
-Today's decentralized apps have no way of requiring private user information in a unified way. Nor is there any platform that allows an application to obtain reliable proof that a user was authenticated by a third party service without having to communicate with it.
-
-![identity-30](/rif/rlogin/assets/identity-30.png)
-
-### Design & Architecture
-
-The rLogin design consists of 4 core modules:
-
-- A back-end authentication library
-- A cloud storage service where users can store their credentials
-- A standard interface for Verifiable Credentials enabling data portability
-- A client library combining authentication against back-end using user's wallet and store credentials
-
-[Read more](/rif/rlogin/design-and-architecture)
-
-![rlogin-architecture](/rif/rlogin/assets/rlogin-architecture.jpg)
-
-### Libraries
-
-{% include rif-id/rlogin-libraries.md %}
-
-### Integrate
-
-{% include rif-id/rlogin-integrate.html %}
-
----
-
-- [Integrate](/rif/rlogin/integrate/)
-- [Integrations](/rif/rlogin/integrations/)
-- [Design & architecture](/rif/rlogin/design-and-architecture/)
-- [Libraries](/rif/rlogin/libraries/)
-  - [rLogin modal (client side)](/rif/rlogin/libraries/modal/)
-  - [DID Auth (server side)](/rif/rlogin/libraries/express-did-auth/)
-  - [Verifiable Credential schemas (communication)](/rif/rlogin/libraries/vc-json-schemas/)
-- [Develop](/rif/rlogin/develop/)
+> Follow the [development guidelines](../develop) to collaborate
