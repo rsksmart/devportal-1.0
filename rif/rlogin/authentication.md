@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: rLogin - integrated backend authentication
+tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis
+description: rLogin - integrated backend authentication - how to use the rLogin with an authentication model based on the user's digital signature capabilities
 ---
 
 rLogin also integrates an authentication model based on the user's digital signature capabilities when connected to their wallets. The model is based on the SSI standards of DIDs, VCs and VC JSON Schemas
