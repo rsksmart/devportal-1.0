@@ -177,7 +177,7 @@ Follow this guide to configure rLogin in minutes
 
 ## EIP-1193
 
-rLogin supports [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md). This means rLogin `provider` is comaptible with the API discribed in the standard, thus polymorphic with Metamask API. This also allows you to make a single implementation and integrate all the supported wallets instantly, and let you work with your favourite web3 client.
+rLogin supports [EIP-1193](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md). This means rLogin `provider` is compatible with the API described in the standard, thus polymorphic with Metamask API. This also allows you to make a single implementation and integrate all the supported wallets instantly, and let you work with your favourite web3 client.
 
 ## The UX
 
