@@ -1,6 +1,8 @@
 ---
 layout: rsk
 title: rLogin - Migrating
+tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis
+description: rLogin - Migrating - guide to migrate from other login solutions
 ---
 
 It is easy to migrate from other libraries to rLogin!
