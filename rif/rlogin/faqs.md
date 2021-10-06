@@ -1,9 +1,7 @@
 ---
 layout: rsk
-title: rLogin - Acknowledgements
+title: rLogin - FAQs
 ---
-
-## Acknowledgements
 
 Find all acknowledged bugs, future features, and improvements in [repo issues](http://github.com/rsksmart/rLogin/issues)
 
