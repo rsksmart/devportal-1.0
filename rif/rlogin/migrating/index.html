@@ -14,8 +14,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
-      <link rel="canonical" href="https://developers.rsk.co/rif/rlogin/integrate/">
-   	<title> - RSK Developers Portal</title>
+      <link rel="canonical" href="https://developers.rsk.co/rif/rlogin/migrating/">
+   	<title>rLogin - Migrating - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../../assets/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="../../../assets/img/favicons/favicon-32x32.png">
@@ -329,22 +329,26 @@
             <span class="fa fa-chevron-right"></span>
             <a href="../">rLogin</a>
             <ul>
-              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
               <li><a href="../get-started/">Get Started</a></li>
+              <li><a href="../features/">Features</a></li>
               <li><a href="../samples/">Sample Apps</a></li>
+              <li><a href="../authentication/">Integrated backend authentication</a></li>
+              <li><a href="./">Migrating</a></li>
               <li><a href="../design-and-architecture/">Design &amp; Architecture</a></li>
+              <li><a href="../integrations/">Integrations</a></li>
+              <li><a href="../develop/">Develop</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../libraries/">Libraries</a>
                 <ul>
                   <li><a href="../libraries/intro/">Intro</a></li>
-                  <li><a href="../libraries/modal/">rLogin Modal (client side)</a></li>
-                  <li><a href="../libraries/express-did-auth/">DID Auth (server side)</a></li>
+                  <li><a href="../libraries/modal/">Client side (rLogin)</a></li>
+                  <li><a href="../libraries/express-did-auth/">Server side (DID Auth)</a></li>
+                  <li><a href="../libraries/vc-json-schemas/">Communications (VC JSON Schemas)</a></li>
                 </ul>
               </li>
-              <li><a href="./">Integrate</a></li>
-              <li><a href="../integrations/">Integrations</a></li>
-
+              <li><a href="../faqs/">FAQs</a></li>
+              <li><a href="https://github.com/rsksmart/rLogin" target="_blank" rel="external noopener noreferrer">Repo</a></li>
             </ul>
           </li> <!-- /rLogin -->
           <li>
@@ -1095,7 +1099,7 @@
 		
 			
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<span property="name"></span>
+					<span property="name">rLogin - Migrating</span>
 					<meta property="position" content="4" />
 				</li>
 				
@@ -1112,17 +1116,17 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-08-13 05:35:11 +0000T00:00:00.000Z">2021-08-13</time> | -->
-     3' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rlogin/integrate/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2021-10-06 14:23:11 +0000T00:00:00.000Z">2021-10-06</time> | -->
+     1' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rlogin/migrating.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/integrate/&amp;text=&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/integrate/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
-          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/integrate/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
-          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/integrate/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=&amp;body=%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/integrate/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
-          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/rlogin/integrate/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/migrating/&amp;text=rLogin%20-%20Migrating&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/migrating/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/migrating/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
+          <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/migrating/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=rLogin%20-%20Migrating&amp;body=rLogin%20-%20Migrating%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rif/rlogin/migrating/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rif/rlogin/migrating/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
     <button id="theme-toggler" type="button" name="dark_light" title="Toggle dark/light mode">Dark</button>
@@ -1330,22 +1334,26 @@
             <span class="fa fa-chevron-right"></span>
             <a href="../">rLogin</a>
             <ul>
-              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
               <li><a href="../get-started/">Get Started</a></li>
+              <li><a href="../features/">Features</a></li>
               <li><a href="../samples/">Sample Apps</a></li>
+              <li><a href="../authentication/">Integrated backend authentication</a></li>
+              <li><a href="./">Migrating</a></li>
               <li><a href="../design-and-architecture/">Design &amp; Architecture</a></li>
+              <li><a href="../integrations/">Integrations</a></li>
+              <li><a href="../develop/">Develop</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../libraries/">Libraries</a>
                 <ul>
                   <li><a href="../libraries/intro/">Intro</a></li>
-                  <li><a href="../libraries/modal/">rLogin Modal (client side)</a></li>
-                  <li><a href="../libraries/express-did-auth/">DID Auth (server side)</a></li>
+                  <li><a href="../libraries/modal/">Client side (rLogin)</a></li>
+                  <li><a href="../libraries/express-did-auth/">Server side (DID Auth)</a></li>
+                  <li><a href="../libraries/vc-json-schemas/">Communications (VC JSON Schemas)</a></li>
                 </ul>
               </li>
-              <li><a href="./">Integrate</a></li>
-              <li><a href="../integrations/">Integrations</a></li>
-
+              <li><a href="../faqs/">FAQs</a></li>
+              <li><a href="https://github.com/rsksmart/rLogin" target="_blank" rel="external noopener noreferrer">Repo</a></li>
             </ul>
           </li> <!-- /rLogin -->
           <li>
@@ -2072,57 +2080,21 @@
     </a>
 </div>
 
-                  <h1 class="page-title" id="top"></h1>
+                  <h1 class="page-title" id="top">rLogin - Migrating</h1>
 
-                  <h2 id="rlogin---integrate">rLogin - Integrate</h2>
+                  <p>It is easy to migrate from other libraries to rLogin!</p>
 
-<p>We have published two sample applications to show how to integrate with rLogin.</p>
+<h3 id="web3modal">Web3modal</h3>
 
-<ul>
-  <li>
-<a href="https://github.com/rsksmart/rlogin-sample-apps/tree/main/basic-dapp" rel="external noopener noreferrer" target="_blank"><strong>Basic Example</strong></a> - In this example, the rLogin modal popups up and the user selects the provider they wish to connect with. In the demo, we are connecting with the injected provider (i.e. a browser wallet such as Metamask) and Wallet Connect.</li>
-  <li>
-<a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app" rel="external noopener noreferrer" target="_blank"><strong>Permissioned Example</strong></a> - In this example, the user needs to provide a <em>Name</em> declarative detail and an <em>Email</em> credential to sign in. In order do this, there is a <a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/backend/index.js" rel="external noopener noreferrer" target="_blank">backend server implementation</a> and a <a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/frontend-app/src/App.js" rel="external noopener noreferrer" target="_blank">React frontend application</a>. After signing in, rLogin returns the DataVault as an object to be used.</li>
-</ul>
+<p>The Web3modal configuration will be completely compatible with rLogin configuration. The only required change is</p>
 
-<h3 id="basic-implementation">Basic implementation:</h3>
+<pre><code class="language-diff=">- web3modal.connect().then(provider =&gt; {})
++ rLogin.connect().then(({ provider }) =&gt; {})
+</code></pre>
 
-<p>To add rLogin to a project, first install the dependency:</p>
+<h3 id="web3-react">Web3 React</h3>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn add rLogin <span class="nt">--save</span>
-<span class="c"># or</span>
-npm <span class="nb">install </span>rLogin <span class="nt">--save</span>
-</code></pre></div></div>
-
-<p>In your application, create a rLogin instance. Make sure this instance is created outside of a render function as only one instance should be present at a time. Set the supported chain IDs. In the example below, it will connect with RSK Mainnet and RSK Testnet. rLogin has been tested with RSK (Mainnet and Testnet) and Ethereum (Mainnet and Testnet), however, it should work with any chain ID.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">RLogin</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/rlogin</span><span class="dl">'</span>
-<span class="p">...</span>
-<span class="kd">const</span> <span class="nx">rLogin</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RLogin</span><span class="p">({</span>
-  <span class="na">cacheProvider</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="na">providerOptions</span><span class="p">:</span> <span class="p">{</span>
-    <span class="na">injected</span><span class="p">:</span> <span class="p">{}</span>
-  <span class="p">},</span>
-  <span class="na">supportedChains</span><span class="p">:</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span> <span class="mi">31</span><span class="p">]</span>
-<span class="p">})</span>
-</code></pre></div></div>
-
-<p>Next, initiate the <code class="highlighter-rouge">connect()</code> function. This will cause the pop up to display and allow the user to connect with their provider. rLogin will provide an object with the Web3 Provider, the DataVault (if connected, <a href="https://github.com/rsksmart/rlogin-sample-apps/blob/main/permissioned-app/frontend-app/src/App.js#L63-L92" rel="external noopener noreferrer" target="_blank">see the permissioned example app</a>), and a disconnect/logout function.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">rLogin</span><span class="p">.</span><span class="nx">connect</span><span class="p">()</span>
-  <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="kd">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">provider</span>
-    <span class="kd">const</span> <span class="nx">dataVault</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">dataVault</span>
-    <span class="kd">const</span> <span class="nx">disconnect</span> <span class="o">=</span> <span class="nx">response</span><span class="p">.</span><span class="nx">disconnect</span>
-  <span class="p">})</span>
-</code></pre></div></div>
-
-<h3 id="disconnect">Disconnect:</h3>
-
-<p>To disconnect from the provider and clean up the <code class="highlighter-rouge">localStorage</code> and cookies set, use the disconnect function provided by the rLogin response. You may also have to clean up variables set in your app.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rLoginResponse.disconnect()
-</code></pre></div></div>
+<p>Use the <a href="https://github.com/rsksmart/rLogin-web3-react-connector" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">rsksmart/rLogin-web3-react-connector</code> adapter</a> to integrate rLogin on top of web3 React</p>
 
                   
 

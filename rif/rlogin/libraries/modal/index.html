@@ -329,22 +329,26 @@
             <span class="fa fa-chevron-right"></span>
             <a href="../../">rLogin</a>
             <ul>
-              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
               <li><a href="../../get-started/">Get Started</a></li>
+              <li><a href="../../features/">Features</a></li>
               <li><a href="../../samples/">Sample Apps</a></li>
+              <li><a href="../../authentication/">Integrated backend authentication</a></li>
+              <li><a href="../../migrating/">Migrating</a></li>
               <li><a href="../../design-and-architecture/">Design &amp; Architecture</a></li>
+              <li><a href="../../integrations/">Integrations</a></li>
+              <li><a href="../../develop/">Develop</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Libraries</a>
                 <ul>
                   <li><a href="../intro/">Intro</a></li>
-                  <li><a href="./">rLogin Modal (client side)</a></li>
-                  <li><a href="../express-did-auth/">DID Auth (server side)</a></li>
+                  <li><a href="./">Client side (rLogin)</a></li>
+                  <li><a href="../express-did-auth/">Server side (DID Auth)</a></li>
+                  <li><a href="../vc-json-schemas/">Communications (VC JSON Schemas)</a></li>
                 </ul>
               </li>
-              <li><a href="../../integrate/">Integrate</a></li>
-              <li><a href="../../integrations/">Integrations</a></li>
-
+              <li><a href="../../faqs/">FAQs</a></li>
+              <li><a href="https://github.com/rsksmart/rLogin" target="_blank" rel="external noopener noreferrer">Repo</a></li>
             </ul>
           </li> <!-- /rLogin -->
           <li>
@@ -1120,8 +1124,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-08-20 04:57:38 +0000T00:00:00.000Z">2021-08-20</time> | -->
-     5' to read |
+    <!--time role="presentation" datetime="2021-10-06 05:45:42 +0000T00:00:00.000Z">2021-10-06</time> | -->
+     1' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rlogin/libraries/modal.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1338,22 +1342,26 @@
             <span class="fa fa-chevron-right"></span>
             <a href="../../">rLogin</a>
             <ul>
-              <!--<li><a href="/rif/rlogin/">Overview</a></li>-->
               <li><a href="../../get-started/">Get Started</a></li>
+              <li><a href="../../features/">Features</a></li>
               <li><a href="../../samples/">Sample Apps</a></li>
+              <li><a href="../../authentication/">Integrated backend authentication</a></li>
+              <li><a href="../../migrating/">Migrating</a></li>
               <li><a href="../../design-and-architecture/">Design &amp; Architecture</a></li>
+              <li><a href="../../integrations/">Integrations</a></li>
+              <li><a href="../../develop/">Develop</a></li>
               <li>
                 <span class="fa fa-chevron-right"></span>
                 <a href="../">Libraries</a>
                 <ul>
                   <li><a href="../intro/">Intro</a></li>
-                  <li><a href="./">rLogin Modal (client side)</a></li>
-                  <li><a href="../express-did-auth/">DID Auth (server side)</a></li>
+                  <li><a href="./">Client side (rLogin)</a></li>
+                  <li><a href="../express-did-auth/">Server side (DID Auth)</a></li>
+                  <li><a href="../vc-json-schemas/">Communications (VC JSON Schemas)</a></li>
                 </ul>
               </li>
-              <li><a href="../../integrate/">Integrate</a></li>
-              <li><a href="../../integrations/">Integrations</a></li>
-
+              <li><a href="../../faqs/">FAQs</a></li>
+              <li><a href="https://github.com/rsksmart/rLogin" target="_blank" rel="external noopener noreferrer">Repo</a></li>
             </ul>
           </li> <!-- /rLogin -->
           <li>
@@ -2082,156 +2090,7 @@
 
                   <h1 class="page-title" id="top"></h1>
 
-                  <h2 id="rlogin---modal">rLogin - modal</h2>
-
-<p>rLogin is a tool that allows the front end developer to connect their user with blockchain functionalities and self-sovereign identity models seamlessly. It provides a standard button and a pop-up that, within its different flavors, allows the developer to correctly authenticate a user following the Decentralized Identity and Verifiable Credentials protocols. In addition, it will allow the developer to interact with a user-centric cloud like service called the <em>data vault</em>. This service can be used to store and retrieve user’s information with their permission.</p>
-
-<p>To understand the motivation, architecture and design please read <a href="../../">general rLogin docs</a></p>
-
-<h2 id="features">Features</h2>
-
-<ul>
-  <li>Supported wallet providers
-    <ul>
-      <li>Browser wallets - wallets that are installed as an extension of the web browser
-        <ul>
-          <li><a href="https://metamask.io/" rel="external noopener noreferrer" target="_blank">Metamask wallet</a></li>
-          <li><a href="https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid" rel="external noopener noreferrer" target="_blank">Nifty wallet</a></li>
-          <li><a href="https://liquality.io/atomic-swap-wallet.html" rel="external noopener noreferrer" target="_blank">Liquality wallet</a></li>
-        </ul>
-      </li>
-      <li>Mobile wallets - wallets that are installed in mobile phone and support <a href="https://walletconnect.org/" rel="external noopener noreferrer" target="_blank">Wallet Connect</a>
-        <ul>
-          <li><a href="https://developers.rsk.co/wallet/rwallet/" rel="external noopener noreferrer" target="_blank">rWallet</a></li>
-          <li><a href="https://trustwallet.com/" rel="external noopener noreferrer" target="_blank">Trust wallet</a></li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Supported networks
-    <ul>
-      <li>RSK Mainnet</li>
-      <li>RSK Testnet</li>
-      <li>Ethereum Mainnet</li>
-      <li>Ganache (test network)</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="flavors">Flavors</h3>
-
-<ul>
-  <li>
-    <p>Fully-decentralized apps: this kind of apps are used only client-side. The front-end will need to know user’s address and information for presentational purposes. The core operations are performed using blockchain transactions.</p>
-  </li>
-  <li>
-    <p>Open apps: this are apps that can be accessed by anyone controlling a wallet. This apps are usually decentralized applications where user relays some operations to a centralized service. This applications need a challenge-response authentication - use a seamless setup with <code class="highlighter-rouge">@rsksmart/express-did-auth</code></p>
-  </li>
-  <li>
-    <p>Permissioned apps: for example, apps using Google OAuth to receive user’s email are categorized in this flavor. This process of requestion credentials to grant user access is common and usually relies on centralized data silos. This dApp flavor will cover requesting user’s Verifiable Credentials in a fully user-centric manner - this is setup in the backend activating <em>Selective disclosure requests</em></p>
-  </li>
-  <li>
-    <p>Closed apps: for example, a back office. This are apps that only specific user’s can access. This flavor is used to prove the user accessing an app holds or is delegated by a specific identity - perform this validations in your server’s business logic</p>
-  </li>
-</ul>
-
-<h2 id="the-code">The code</h2>
-
-<p>The tool tries not to re-implement functionalities that are provided by other libraries. The work is strongly based on:</p>
-
-<ul>
-  <li>
-<a href="https://github.com/web3Modal/web3modal/" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">web3modal</code></a>
-    <ul>
-      <li>Wallet provider integrations are imported from npm package</li>
-      <li>Core and components are re-implemented to enable developing custom UX flow and custom components</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="run-for-development">Run for development</h2>
-
-<p><strong>Install dependencies</strong> - downloads and install dependencies from <code class="highlighter-rouge">npm</code></p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm i
-</code></pre></div></div>
-
-<p><strong>Run tests</strong> - runs with <code class="highlighter-rouge">jest</code></p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm <span class="nb">test</span>
-</code></pre></div></div>
-
-<p>Currently, there are no tests :(. Please test it with a <a href="#sample-apps">sample app</a>.</p>
-
-<p>The best way to test it is to run <code class="highlighter-rouge">npm build:dev</code> to update the bundle after saving files. You will need to reload page after rebuilding, that is not automated yet.</p>
-
-<p><strong>Lint</strong> - runs <code class="highlighter-rouge">eslint</code> syntax checks</p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run lint
-</code></pre></div></div>
-
-<p><strong>Build for production</strong> - builds <code class="highlighter-rouge">umd</code> into <code class="highlighter-rouge">dist/main.js</code></p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build
-</code></pre></div></div>
-
-<p><strong>Build in watch mode</strong> - builds each time a file in <code class="highlighter-rouge">src/</code> is updated</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run build:dev
-</code></pre></div></div>
-
-<p><strong>Serve the library</strong> - serves the library in <code class="highlighter-rouge">http://localhost:5005</code></p>
-
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm run serve
-</code></pre></div></div>
-
-<blockquote>
-  <p>Metamask cannot be accessed without <code class="highlighter-rouge">http</code> - see https://ethereum.stackexchange.com/a/62217/620</p>
-</blockquote>
-
-<h2 id="sample-apps">Sample apps</h2>
-
-<p>Please first build for production.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Flavor</th>
-      <th>Import from</th>
-      <th>Location</th>
-      <th>Command</th>
-      <th> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Fully-decentralized</td>
-      <td>HTML DOM</td>
-      <td><em>./sample/decentralized</em></td>
-      <td><code class="highlighter-rouge">npm run sample:dapp</code></td>
-      <td>Serves the library in <em>http://localhost:3005</em> and a dApp in <em>http://localhost:3006</em>. Go to <em>3006</em> with your browser</td>
-    </tr>
-    <tr>
-      <td>Open app</td>
-      <td>HTML DOM</td>
-      <td><em>./sample/with_be</em></td>
-      <td><code class="highlighter-rouge">npm run sample:open</code></td>
-      <td>Serves the library in <em>http://localhost:3005</em>, dApp in <em>http://localhost:3006/?backend=yes</em> and back end in <em>http://localhost:3007</em>. This mode will not ask for Data Vault access. Go to <em>3006</em> with your browser</td>
-    </tr>
-    <tr>
-      <td>Permissioned app</td>
-      <td>HTML DOM</td>
-      <td><em>./sample/decentralized</em></td>
-      <td><code class="highlighter-rouge">npm run sample:permissioned</code></td>
-      <td>Serves the library in <em>http://localhost:3005</em>, dApp in <em>http://localhost:3006</em> and back end in <em>http://localhost:3007</em>. This mode will ask for Data Vault access. Go to <em>3006</em> with your browser</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="acknowledgements">Acknowledgements</h2>
-
-<p>Find all acknowledged bugs, future features, and improvements in
-<a href="https://github.com/rsksmart/rLogin/issues" rel="external noopener noreferrer" target="_blank">repo issues</a></p>
+                  <p>See <a href="../../">rLlogin main docs</a></p>
 
                   
 
