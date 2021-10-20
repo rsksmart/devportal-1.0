@@ -29,13 +29,6 @@ https://public-node.testnet.rsk.co
 https://public-node.rsk.co
 ```
 
-## Versioning
-
-Current and previous versions are accessible through these routes:
-
-* `/`: version `3.1.0` (current)
-
-
 ## Supported RPC methods
 
 These nodes support the following JSON RPC methods:
