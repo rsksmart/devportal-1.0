@@ -9,7 +9,7 @@ permalink: /guides/rif-relay/install/
 
 ### RSK Node
 
-You need to have a running RSK node version [IRIS-3.0.0](https://github.com/rsksmart/rskj/releases) or higher.
+You need to have a running RSK node version [IRIS-3.1.0](https://github.com/rsksmart/rskj/releases) or higher.
 
 ### Yarn
 

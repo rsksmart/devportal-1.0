@@ -33,7 +33,7 @@ https://public-node.rsk.co
 
 Current and previous versions are accessible through these routes:
 
-* `/`: version `3.0.0` (current)
+* `/`: version `3.1.0` (current)
 
 
 ## Supported RPC methods
