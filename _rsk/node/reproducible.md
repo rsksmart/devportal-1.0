@@ -71,7 +71,7 @@ RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D89421
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN git clone --single-branch --depth 1 --branch IRIS-3.1.0 https://github.com/rsksmart/rskj.git ./code/rskj
 RUN git clone https://github.com/rsksmart/reproducible-builds 
-RUN CP /Users/{$USER}/reproducible-builds/rskj/3.1.0-papyrus/Dockerfile  /Users/{$USER}/code/rskj
+RUN CP /Users/{$USER}/reproducible-builds/rskj/3.1.0-iris/Dockerfile  /Users/{$USER}/code/rskj
 RUN CD /code/rskj
 RUN gpg --verify SHA256SUMS.asc
 RUN sha256sum --check SHA256SUMS.asc
