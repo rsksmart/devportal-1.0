@@ -123,6 +123,12 @@ Follow this guide to configure rLogin in minutes
 
   > Tip: Put this all together in a single file named `rlogin.ts` and export a single instance of `RLogin`. This ensures that only a single DOM element is created.
 
+  **How to Add Web3Modal Compatible Providers to rLogin**
+
+  You can add any [`web3modal`](https://github.com/web3Modal/web3modal) compatible providers to rLogin `providerOptions`. See the list of [compatible wallet providers](https://github.com/Web3Modal/web3modal/tree/master/docs/providers) and their setup.
+
+  > Note that these are not tested yet (the ones that are not on the default rLogin instance) and they might need extra configuration to work on RSK, because they are Ethereum based wallet providers.
+
 - 3) Connect!
   ```typescript
   import { providers } from 'ethers'
@@ -180,6 +186,7 @@ Follow this guide to configure rLogin in minutes
 ## The developer experience
 
 rLogin is compatible with Metamask implementations! You can use rLogin in your dapp with your favourite libraries just as you did before.
+
 
 ### EIP-1193
 
