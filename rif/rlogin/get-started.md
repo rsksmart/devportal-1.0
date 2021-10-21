@@ -123,6 +123,24 @@ Follow this guide to configure rLogin in minutes
 
   > Tip: Put this all together in a single file named `rlogin.ts` and export a single instance of `RLogin`. This ensures that only a single DOM element is created.
 
+  **How to add web3modal Compatible Providers to rLogin**
+
+  You can add the following web3modal providers to rLogin:
+
+  - [WalletConnect](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/walletconnect.md)
+  - [Fortmatic](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/fortmatic.md)
+  - [Torus](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/torus.md)
+  - [Portis](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/portis.md)
+  - [Authereum](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/authereum.md)
+  - [Frame](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/frame.md)
+  - [Bitski](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/bitski.md)
+  - [Arkane](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/arkane.md)
+  - [DCent](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/dcent.md)
+  - [BurnerConnect](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/burnerconnect.md)
+  - [MEWConnect](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/mewconnect.md)
+
+  > Note, that these are not tested yet (the ones that are not on the [list](https://github.com/rsksmart/rLogin/blob/develop/src/controllers/providers.ts)) and they might need extra configuration to work on RSK, because they are Ethereum based wallet providers.
+
 - 3) Connect!
   ```typescript
   import { providers } from 'ethers'
@@ -180,6 +198,7 @@ Follow this guide to configure rLogin in minutes
 ## The developer experience
 
 rLogin is compatible with Metamask implementations! You can use rLogin in your dapp with your favourite libraries just as you did before.
+
 
 ### EIP-1193
 
