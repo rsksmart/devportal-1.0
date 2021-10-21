@@ -123,7 +123,7 @@ Follow this guide to configure rLogin in minutes
 
   > Tip: Put this all together in a single file named `rlogin.ts` and export a single instance of `RLogin`. This ensures that only a single DOM element is created.
 
-  **How to add web3modal Compatible Providers to rLogin**
+  **How to Add Web3Modal Compatible Providers to rLogin**
 
   You can add the following web3modal providers to rLogin:
 
