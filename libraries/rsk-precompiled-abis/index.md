@@ -68,3 +68,4 @@ If the version to be installed is not defined in the command line, the version w
 | 3.0.0-PAPYRUS   | PAPYRUS-2.0.0 |
 | 3.0.0-PAPYRUS   | PAPYRUS-2.2.0 |
 | 3.0.0-IRIS      | IRIS-3.0.0    |
+| 3.1.0-IRIS      | IRIS-3.1.0    |

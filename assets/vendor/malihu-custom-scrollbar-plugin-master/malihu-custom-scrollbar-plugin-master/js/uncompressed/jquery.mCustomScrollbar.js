@@ -432,7 +432,7 @@ and dependencies (minified).
 					removeLiveTimers(liveSelector);
 				}
 				
-				/* options backward compatibility (for versions < 3.0.0) and normalization */
+				/* options backward compatibility (for versions < 3.1.0) and normalization */
 				options.setWidth=(options.set_width) ? options.set_width : options.setWidth;
 				options.setHeight=(options.set_height) ? options.set_height : options.setHeight;
 				options.axis=(options.horizontalScroll) ? "x" : _findAxis(options.axis);

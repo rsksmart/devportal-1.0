@@ -22,7 +22,7 @@ Running RSKj in Regtest mode is the best fit for these needs.
 
 - Navigate to [RSKj's releases page](https://github.com/rsksmart/rskj/releases)
 - From the **latest** release, download a file whose name looks like
-  `rskj-core-*.jar`, where `*` is replaced by the release tag name, for example `3.0.0-IRIS`.
+  `rskj-core-*.jar`, where `*` is replaced by the release tag name, for example `3.1.0-IRIS`.
   
 ### Run RSKj
 
