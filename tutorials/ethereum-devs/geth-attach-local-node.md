@@ -90,14 +90,14 @@ mkdir rskj-node
 cd rskj-node
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/rskj-core-2.0.1-PAPYRUS-all.jar \
-  > ./rskj-core-2.0.1-PAPYRUS-all.jar
+  https://github.com/rsksmart/rskj/releases/download/IRIS-3.1.0/rskj-core-3.1.0-IRIS-all.jar \
+  > ./rskj-core-3.1.0-IRIS-all.jar
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/SHA256SUMS.asc \
-  > ./rskj-core-2.0.1-PAPYRUS-all.SHA256SUMS.asc
-shasum rskj-core-2.0.1-PAPYRUS-all.jar
-grep "rskj-core" rskj-core-2.0.1-PAPYRUS-all.SHA256SUMS.asc
+  https://github.com/rsksmart/rskj/releases/download/IRIS-3.1.0/SHA256SUMS.asc \
+  > ./rskj-core-3.1.0-IRIS-all.SHA256SUMS.asc
+shasum rskj-core-3.1.0-IRIS-all.jar
+grep "rskj-core" rskj-core-3.1.0-IRIS-all.SHA256SUMS.asc
 ```
 
 The curl commands download a binary which is the RSKj executable, as well as a plain text file containing the checksum for the JAR file. The subsequent `shasum` (or `sha256sum` depending on your *NIX variety), and `grep` are used to verify that the checksum recorded as part of the release process does indeed match the computed checksum of the file that was downloaded.
@@ -118,20 +118,20 @@ java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --regtest
 
 
 I am using a Windows OS and I saved the file at `C:\RSK\node`,
-so for me the full path is `C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar`.
+so for me the full path is `C:\RSK\node\rskj-core-3.1.0-IRIS-all.jar`.
 
 The commands required to run the RSK node are:
 
 #### On Windows
 
 ```shell
-java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
+java -cp C:\RSK\node\rskj-core-3.1.0-IRIS-all.jar co.rsk.Start --regtest
 ```
 
 #### On Linux and Mac
 
 ```shell
-java -cp C:/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar co.rsk.Start --regtest
+java -cp C:/RSK/node/rskj-core-3.1.0-IRIS-all.jar co.rsk.Start --regtest
 ```
 
 If you do not have any output after running the command, this usually means that the node is running successfully. We will confirm this in the next step.

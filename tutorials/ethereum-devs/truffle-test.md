@@ -65,11 +65,11 @@ Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example:
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```shell
-  $ java -cp C:/RskjCode/rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+  $ java -cp C:/RskjCode/rskj-core-3.1.0-IRIS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
   ```
 - Windows
   ```windows-command-prompt
-  C:\> java -cp C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+  C:\> java -cp C:\RSK\node\rskj-core-3.1.0-IRIS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
   ```
 
 If you see no output - that is a good thing:
