@@ -125,21 +125,9 @@ Follow this guide to configure rLogin in minutes
 
   **How to Add Web3Modal Compatible Providers to rLogin**
 
-  You can add the following web3modal providers to rLogin:
+  You can add any [`web3modal`](https://github.com/web3Modal/web3modal) compatible providers to rLogin `providerOptions`. See the list of [compatible wallet providers](https://github.com/Web3Modal/web3modal/tree/master/docs/providers) and their setup.
 
-  - [WalletConnect](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/walletconnect.md)
-  - [Fortmatic](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/fortmatic.md)
-  - [Torus](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/torus.md)
-  - [Portis](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/portis.md)
-  - [Authereum](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/authereum.md)
-  - [Frame](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/frame.md)
-  - [Bitski](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/bitski.md)
-  - [Arkane](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/arkane.md)
-  - [DCent](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/dcent.md)
-  - [BurnerConnect](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/burnerconnect.md)
-  - [MEWConnect](https://github.com/Web3Modal/web3modal/blob/master/docs/providers/mewconnect.md)
-
-  > Note, that these are not tested yet (the ones that are not on the [list](https://github.com/rsksmart/rLogin/blob/develop/src/controllers/providers.ts)) and they might need extra configuration to work on RSK, because they are Ethereum based wallet providers.
+  > Note that these are not tested yet (the ones that are not on the default rLogin instance) and they might need extra configuration to work on RSK, because they are Ethereum based wallet providers.
 
 - 3) Connect!
   ```typescript
