@@ -1108,7 +1108,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-05-06 21:50:10 +0000T00:00:00.000Z">2021-05-06</time> | -->
+    <!--time role="presentation" datetime="2021-10-20 12:53:26 +0000T00:00:00.000Z">2021-10-20</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_quick-start/step1-install-rsk-local-node.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2163,23 +2163,23 @@ it is always good practice to verify that your copy is legitimate.</p>
 
 <p>Let’s compute the checksum using the following command:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sha256sum </span>rskj-core-2.0.1-PAPYRUS-all.jar
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sha256sum </span>rskj-core-3.1.0-IRIS-all.jar
 </code></pre></div></div>
 
 <p>For this version, the output should look like this:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 <span class="k">*</span>rskj-core-2.0.1-PAPYRUS-all.jar
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 <span class="k">*</span>rskj-core-3.1.0-IRIS-all.jar
 </code></pre></div></div>
 
 <p>On Windows, use this command instead:</p>
 
-<pre><code class="language-windows-command-prompt">C:\&gt;certutil -hashfile rskj-core-2.0.1-PAPYRUS-all.jar SHA256
+<pre><code class="language-windows-command-prompt">C:\&gt;certutil -hashfile rskj-core-3.1.0-IRIS-all.jar SHA256
 
 </code></pre>
 
 <p>For this version, the output on windows should look like this:</p>
 
-<pre><code class="language-windows-command-prompt">SHA256 hash of rskj-core-2.0.1-PAPYRUS-all.jar:
+<pre><code class="language-windows-command-prompt">SHA256 hash of rskj-core-3.1.0-IRIS-all.jar:
 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0
 CertUtil: -hashfile command completed successfully.
 
@@ -2205,7 +2205,7 @@ on how to do this.</p>
 <blockquote>
   <p>Example:</p>
 
-  <pre><code class="language-windows-command-prompt">C:\&gt;java -classpath C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start --regtest
+  <pre><code class="language-windows-command-prompt">C:\&gt;java -classpath C:\RSK\node\rskj-core-3.1.0-IRIS-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start --regtest
 
 </code></pre>
 </blockquote>

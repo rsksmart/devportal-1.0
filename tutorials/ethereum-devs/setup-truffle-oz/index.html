@@ -1116,7 +1116,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-26 05:55:14 +0000T00:00:00.000Z">2021-03-26</time> | -->
+    <!--time role="presentation" datetime="2021-10-20 12:53:26 +0000T00:00:00.000Z">2021-10-20</time> | -->
      25' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/ethereum-devs/setup-truffle-oz.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2279,12 +2279,12 @@ it is always a good idea to verify that your copy is legitimate.</p>
 
 <p>In the folder where you download the JAR file, go to a POSIX terminal and run this command:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sha256sum </span>rskj-core-2.0.1-PAPYRUS-all.jar
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sha256sum </span>rskj-core-3.1.0-IRIS-all.jar
 </code></pre></div></div>
 
 <p>For this version, it looked like this:</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 <span class="k">*</span>rskj-core-2.0.1-PAPYRUS-all.jar
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 <span class="k">*</span>rskj-core-3.1.0-IRIS-all.jar
 </code></pre></div></div>
 
 <p><img src="../../../assets/img/tutorials/setup-truffle-oz/image-08.png" alt="Verify authenticity"></p>
@@ -2309,23 +2309,23 @@ on how to do this.</p>
 <p>(Replace <path-to-the-rskj-jar> with your path to the JAR file).</path-to-the-rskj-jar></p>
 
 <p>I am using a Windows OS and I saved the file at <code class="highlighter-rouge">C:\RSK\node</code>,
-so for me the full path is <code class="highlighter-rouge">C:\RSK\node\rskj-core-2.0.1-PAPYRUS-all.jar</code>.</p>
+so for me the full path is <code class="highlighter-rouge">C:\RSK\node\rskj-core-3.1.0-IRIS-all.jar</code>.</p>
 
 <p>The commands required to run the RSK node are:</p>
 
 <h4 id="on-windows-terminal">On Windows terminal</h4>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> C:<span class="se">\R</span>SK<span class="se">\n</span>ode<span class="se">\r</span>skj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> C:<span class="se">\R</span>SK<span class="se">\n</span>ode<span class="se">\r</span>skj-core-3.1.0-IRIS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
 </code></pre></div></div>
 
 <h4 id="using-git-bash">Using Git Bash</h4>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> C:/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> C:/RSK/node/rskj-core-3.1.0-IRIS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
 </code></pre></div></div>
 
 <h4 id="on-linux-and-mac">On Linux and Mac</h4>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> ~/RSK/node/rskj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> ~/RSK/node/rskj-core-3.1.0-IRIS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
 </code></pre></div></div>
 
 <p>If you see no output - that is a good thing:
