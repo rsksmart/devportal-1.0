@@ -88,7 +88,7 @@ description: "The RSK community calls showcases the RSK Improvement Proposals - 
                 <a href="/community-calls/2021-10/">
                     <div class="content-container">
                         <p class="card-title rsk_green">October 2021</p>
-                        <p class="card-desc">The RSK community calls for October 2021 was all about the RSKj v3.1.0 release, aggregation & parallel transaction processing, and Rollup-optimized Ephemeral Call data.</p>
+                        <p class="card-desc">The RSK community calls for October 2021 was all about the RSKj v3.1.0 release, aggregation & parallel transaction processing, and rollup-optimized ephemeral call data.</p>
                     </div>
                 </a>
                 <div class="btn-container">
