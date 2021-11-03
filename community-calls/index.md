@@ -75,5 +75,28 @@ description: "The RSK community calls showcases the RSK Improvement Proposals - 
             </div>
         </div>
     </li>
+         <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/community-calls/2021-10/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/community-calls/2021-10/community_call_banner.jpg" alt="cc-october icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/community-calls/2021-10/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">October 2021</p>
+                        <p class="card-desc">The RSK community calls for October 2021 was all about the RSKj v3.1.0 release, Aggregation & parallel transaction processing, and Rollup-optimized Ephemeral Call data.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/community-calls/2021-10/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
