@@ -40,7 +40,7 @@ Inside the artifacts repo, you can choose which ***type of*** node you are going
 * A node connected to the public RSK Testnet: `Dockerfile.TestNet`
 * A node connected to a private RegTest network: `Dockerfile.RegTest`
 
-#### Install the node using Docker containers
+#### Install the node using Docker containers (Intel Chips)
 
 Then build the container by running (depending on your node's type):
 
@@ -73,6 +73,52 @@ To run the container, you should execute (depending on your node's type):
   ```
   docker run -d --name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
   ```
+
+#### Install the node using Docker containers (M1 Chips)
+
+To install the node using docker containers from Mac M1:
+
+* Pull `rskj-standlone` docker image and run container from this image with the following command:
+  ```
+  docker run rsksmart/rskj-standalone
+  ``` 
+
+*It's possible that you may need to enable experimental features of Docker if your version does not support BuildX plugin by default. In order to enable experimental features:*
+
+* You can update `/etc/docker/daemon.json` to add the property `experimental: true`.
+* If you have docker desktop just click: *Settings -> Docker Engine*. In the center you will see the same json from `daemon.json`, just add the property `experimental: true` at the top level of the json. Finally click on *Apply and Restart* 
+
+Then build the container by running (depending on your node's type):
+
+* Mainnet
+  ```
+  docker buildx build --platform linux/amd64 -t mainnet -f Dockerfile.MainNet .
+  ```
+* Testnet
+  ```
+  docker buildx build --platform linux/amd64 -t testnet -f Dockerfile.TestNet .
+  ```
+* Regtest
+  ```
+  docker buildx build --platform linux/amd64 -t regtest -f Dockerfile.RegTest .
+  ```
+
+When the build finishes, you have a container ready to run RSK.
+
+To run the container, you should execute (depending on your node's type):
+
+* Mainnet
+  ```
+  docker run -d --name mainnet-node-01  -p 4444:4444 -p 5050:5050 mainnet
+  ```
+* Testnet
+  ```
+  docker run -d --name testnet-node-01  -p 4444:4444 -p 50505:50505 testnet
+  ```
+* Regtest
+  ```
+  docker run -d --name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
+  `
 
 ## Video
 
