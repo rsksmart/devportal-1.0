@@ -1125,8 +1125,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 10:06:48 +0000T00:00:00.000Z">2021-06-03</time> | -->
-     2' to read |
+    <!--time role="presentation" datetime="2021-11-05 06:09:59 +0000T00:00:00.000Z">2021-11-05</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/install/docker.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2137,7 +2137,7 @@
 </li>
 </ul>
 
-<h4 id="install-the-node-using-docker-containers">Install the node using Docker containers</h4>
+<h4 id="install-the-node-using-docker-containers-intel-chips">Install the node using Docker containers (Intel Chips)</h4>
 
 <p>Then build the container by running (depending on your node’s type):</p>
 
@@ -2179,6 +2179,69 @@
 <div class="highlight"><pre class="highlight"><code>docker run -d --name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
 </code></pre></div>    </div>
   </li>
+</ul>
+
+<h4 id="install-the-node-using-docker-containers-m1-chips">Install the node using Docker containers (M1 Chips)</h4>
+
+<p>To install the node using docker containers from Mac M1:</p>
+
+<ul>
+  <li>
+    <p>Pull <code class="highlighter-rouge">rskj-standalone</code> docker image and run container from this image with the following command:</p>
+
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker run rsksmart/rskj-standalone
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p><em>It’s possible that you may need to enable experimental features of Docker if your version does not support BuildX plugin by default. In order to enable experimental features:</em></p>
+
+<ul>
+  <li>You can update <code class="highlighter-rouge">/etc/docker/daemon.json</code> to add the property <code class="highlighter-rouge">experimental: true</code>.</li>
+  <li>If you have docker desktop just click: <em>Settings -&gt; Docker Engine</em>. In the center you will see the same json from <code class="highlighter-rouge">daemon.json</code>, just add the property <code class="highlighter-rouge">experimental: true</code> at the top level of the json. Finally click on <em>Apply and Restart</em>
+</li>
+</ul>
+
+<p>Then build the container by running (depending on your node’s type):</p>
+
+<ul>
+  <li>Mainnet
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker buildx build --platform linux/amd64 -t mainnet -f Dockerfile.MainNet .
+</code></pre></div>    </div>
+  </li>
+  <li>Testnet
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker buildx build --platform linux/amd64 -t testnet -f Dockerfile.TestNet .
+</code></pre></div>    </div>
+  </li>
+  <li>Regtest
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker buildx build --platform linux/amd64 -t regtest -f Dockerfile.RegTest .
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<p>When the build finishes, you have a container ready to run RSK.</p>
+
+<p>To run the container, you should execute (depending on your node’s type):</p>
+
+<ul>
+  <li>Mainnet
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker run -d --name mainnet-node-01  -p 4444:4444 -p 5050:5050 mainnet
+</code></pre></div>    </div>
+  </li>
+  <li>Testnet
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker run -d --name testnet-node-01  -p 4444:4444 -p 50505:50505 testnet
+</code></pre></div>    </div>
+  </li>
+  <li>Regtest
+```
+docker run -d –name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
+`</li>
 </ul>
 
 <h2 id="video">Video</h2>
