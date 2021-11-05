@@ -78,7 +78,8 @@ To run the container, you should execute (depending on your node's type):
 
 To install the node using docker containers from Mac M1:
 
-* Pull `rskj-standlone` docker image and run container from this image with the following command:
+* Pull `rskj-standalone` docker image and run container from this image with the following command:
+
   ```
   docker run rsksmart/rskj-standalone
   ``` 
