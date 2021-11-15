@@ -15,7 +15,7 @@ You can go to our [release page](https://github.com/rnsdomains/RNS-SDK-android/r
 #### Method 2: Clone the project.
 
 ```console
-user@computer:~/some/path/$ git clone git@github.com:rnsdomamins/RNS-SDK-android.git
+user@computer:~/some/path/$ git clone git@github.com:rnsdomains/RNS-SDK-android.git
 Cloning into 'RNS-SDK-android'...
 
 user@computer:~/some/path/$ git checkout <INSERT_RELEASE_TAG_HERE>
