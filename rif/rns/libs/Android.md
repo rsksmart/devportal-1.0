@@ -15,7 +15,7 @@ You can go to our [release page](https://github.com/rnsdomains/RNS-SDK-android/r
 #### Method 2: Clone the project.
 
 ```console
-user@computer:~/some/path/$ git clone git@github.com:rnsdomamins/RNS-SDK-android.git
+user@computer:~/some/path/$ git clone git@github.com:rnsdomains/RNS-SDK-android.git
 Cloning into 'RNS-SDK-android'...
 
 user@computer:~/some/path/$ git checkout <INSERT_RELEASE_TAG_HERE>
@@ -42,7 +42,7 @@ android {
 
 ## How to use
 
-You will need access to a running rsk node that can made calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our `build.gradle` file. You can change this or use the constructors for the resolver that will be described below.
+You will need access to a running rsk node that can make calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our `build.gradle` file. You can change this or use the constructors for the resolver that will be described below.
 
 ```
   defaultConfig {
