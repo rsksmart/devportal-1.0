@@ -28,11 +28,11 @@ Real-world data for any smart contract platform.
 
 ![API3-RSK Integrations Banner](/assets/img/solutions/api3/rsk-api3-integrations-banner.jpg)
 
-API3 Integrates into RSK Protocol, deploying 12 Web2 APIs for Dapp’s to utilise, follwoing the recent upgrades to Airnode v0.2, the following 12 APIs are now integrated on RSK mainnet and are now accessible by engineers in the ecosystem.
+API3 Integrates into RSK Protocol, deploying 12 Web2 APIs for Dapp’s to utilise, following the recent upgrades to Airnode v0.2, the following 12 APIs are now integrated on RSK mainnet and are now accessible by engineers in the ecosystem.
 
-This provides an Improved data availability for Smart Contracts, often referred to as the Web3 Oracle category, means the introduction of smarter Dapps via Hybrid Smart Contracts and therefore new Web3 use-cases. This data is often delivered from the real world, or Web2, yet requires a consensus mechanism to prevent them from being a single-point of failure in a decentralised economy. 
+This provides an improved data availability for Smart Contracts, often referred to as the Web3 Oracle category, this means the introduction of smarter Dapps via Hybrid Smart Contracts and therefore new Web3 use-cases. This data is often delivered from the real world, or Web2, yet requires a consensus mechanism to prevent them from being a single-point of failure in a decentralised economy. 
 
-See high level diagram below to illustrate the integration;
+See a high level diagram below to illustrate the integration;
 
 ![API3 - Integration](/assets/img/solutions/api3/rsk-api3-integrations.png)
 
