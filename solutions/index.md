@@ -424,4 +424,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/api3/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/api3/api3-logo1.png" alt="api3 icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/api3/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">API3</p>
+                        <p class="card-desc">Connect Smart Contracts to Real-World Data.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/api3/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
