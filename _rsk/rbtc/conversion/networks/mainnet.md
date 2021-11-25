@@ -85,7 +85,7 @@ RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 <div class="fade alert alert-warning show">
   <strong>Important note</strong>:
   The minimum amount to send must be
-  <strong>at least 0.00800001 RBTC</strong>
+  <strong>at least 0.00400001 RBTC</strong>
   for Mainnet
   Sending any lower amount fails and
   <strong>funds will be lost</strong>.
