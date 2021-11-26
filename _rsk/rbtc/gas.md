@@ -77,7 +77,7 @@ You can obtain the average gas price that is being paid in the network:
 web3.eth.gasPrice()
 ```
 
-Despite the fact that this value is greater or equal to `minimumGasPrice`, it is recommended to add a small percentage to increase the priority of your transaction.
+Even though this value is greater than or equal to minimum gas price. (`gasPrice >= minimumGasPrice`), it is recommended to add a small percentage to increase the priority of your transaction.
 
 
 ### Appropriate gas limit
