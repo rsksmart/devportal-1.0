@@ -59,7 +59,7 @@ The `minimumGasPrice` is written in the block header by miners and establishes t
 web3.eth.getBlock('latest').minimumGasPrice
 ```
 
-Negotiated minimum gas price is described in [RSKIP09](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP09.md).
+The means by which minimum gas price is negotiated by miners is described in [RSKIP09](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP09.md).
 
 
 Here are some practical approaches to this subject:
