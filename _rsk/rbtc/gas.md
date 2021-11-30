@@ -26,13 +26,13 @@ There are four important concepts:
 Let's start with a simple analogy: A car.
 
 To drive a car you need gas. Gas price is the money you pay for each gallon. Gas limit is the max amount of gas you accept to consume, the gas you _charge_. The total gas is the amount you've spent at the end of the trip.
-You can calculate the total gas and set an appropriate gas limit so that our trip does not expend more than expected.
+You can calculate the total gas and set an appropriate gas limit so that your trip does not expend more than expected.
 
 Transactions are quite similar:
 
 Gas price is the price you set for operations. The gas limit is the maximum price you are going to pay for the transaction when operated. Then, when transaction is executed, the total gas is the price you finally pay.
 
-Gas is the _fee_ collected by the miner which mines the block that includes the transaction.
+Gas is the _fee_ collected by the miner who mines the block that includes the transaction.
 
 The resulting fee is:
 
@@ -53,11 +53,9 @@ Gas price changes with time. To choose an appropriate gas price you should consi
 
 ### Minimum Gas Price
 
-The `minimumGasPrice` is written in the block header by miners and establishes the minimum gas price a transaction should have in order to be included in that block.
-Negotiated minimum gas price is described in [RSKIP09](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP09.md).
+The `minimumGasPrice` is written in the block header by miners and establishes the minimum gas price a transaction should have in order to be included in that block. It can change with time, by up to 1% of the `minimumGasPrice` of the previous block. The latest block's minimum gas price can be obtained using this Web3 method:
 
-Minimum gas price is written in the block header by miners. It describes the minimum gas price a transaction should have to be included in that block. It can change with time, by up to 1% of the `minimumGasPrice` of the previous block.
-The latest block's minimum gas price can be obtained using this Web3 method:
+The means by which minimum gas price is negotiated by miners is described in [RSKIP09](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP09.md).
 
 ```javascript
 web3.eth.getBlock('latest').minimumGasPrice
@@ -65,20 +63,20 @@ web3.eth.getBlock('latest').minimumGasPrice
 
 Here are some practical approaches to this subject:
 
-1. Optimistic approach (not recommended)
-You can set `minimumGasPrice` as gas price parameter for the transaction **but if minimum gas price is under negatiaton and it gets higher, your transaction could be rejected**.
+1. Optimistic approach (not recommended):
+You can set `minimumGasPrice` as gas price parameter for the transaction **but if minimum gas price is under negotiation and it gets higher, your transaction could be rejected**.
 
-2. Sensible approach
+2. Sensible approach:
 Instead of using `minimumGasPrice` as it is, you may [add 10% to its value](#how-does-gas-price-change-over-time).
 
-3. Network average approach
+3. Network average approach:
 You can obtain the average gas price that is being paid in the network:
 
 ```javascript
 web3.eth.gasPrice()
 ```
 
-Despite the fact that this value is greater or equal than `minimumGasPrice`, it is recommended to add a small percentage to increase the priority of your transaction.
+Even though this value is greater than or equal to minimum gas price. (`gasPrice >= minimumGasPrice`), it is recommended to add a small percentage to increase the priority of your transaction.
 
 
 ### Appropriate gas limit
