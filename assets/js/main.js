@@ -182,9 +182,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const codeSnippets = document.querySelectorAll('pre > code');
   for (const snippet of codeSnippets) {
     const copyButton = document.createElement('button');
-    copyButton.innerHTML = '<img src="/assets/img/copy.svg" alt="Copy" />';
+    const copyImage = '<img src="/assets/img/copy.svg" alt="Copy" />';
+    copyButton.innerHTML = copyImage;
     copyButton.classList.add('copy-button');
-    copyButton.addEventListener('click', () => navigator.clipboard.writeText(snippet.innerText));
+    copyButton.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(snippet.innerText);
+        copyButton.innerHTML = 'OK';
+      } catch (error) {
+        copyButton.innerHTML = 'X';
+      } finally {
+        setTimeout(() => copyButton.innerHTML = copyImage, 1000);
+      }
+    });
     const codeContainer = snippet.parentNode;
     codeContainer.classList.add('code-snippet-container');
     codeContainer.appendChild(copyButton);
