@@ -182,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const codeSnippets = document.querySelectorAll('pre > code');
   for (const snippet of codeSnippets) {
     const copyButton = document.createElement('button');
-    copyButton.innerHTML = "Copy";
+    copyButton.innerHTML = '<img src="/assets/img/copy.svg" alt="Copy" />';
     copyButton.classList.add('copy-button');
     copyButton.addEventListener('click', () => navigator.clipboard.writeText(snippet.innerText));
     const codeContainer = snippet.parentNode;
