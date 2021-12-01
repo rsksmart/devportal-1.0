@@ -177,6 +177,19 @@ $(window).scroll(function () {
   }
 });
 
+// copy code snippets to a browser clipboard
+document.addEventListener('DOMContentLoaded', () => {
+  const codeSnippets = document.querySelectorAll('pre > code');
+  for (const snippet of codeSnippets) {
+    const copyButton = document.createElement('button');
+    copyButton.innerHTML = "Copy";
+    copyButton.classList.add('copy-button');
+    copyButton.addEventListener('click', () => navigator.clipboard.writeText(snippet.innerText));
+    const codeContainer = snippet.parentNode;
+    codeContainer.classList.add('code-snippet-container');
+    codeContainer.appendChild(copyButton);
+  }
+});
 
 // toggle between expand all and collapse all
 function toggleNavColumnVisibility (e) {
