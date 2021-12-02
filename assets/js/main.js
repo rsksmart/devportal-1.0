@@ -178,26 +178,50 @@ $(window).scroll(function () {
 });
 
 // copy code snippets to a browser clipboard
+class CopyButton {
+  constructor(codeSnippetText) {
+    this.node = document.createElement('button');
+    this.node.classList.add('copy-button');
+    this.image = document.createElement('img');
+    this.code = codeSnippetText;
+    this.node.appendChild(this.image);
+    this.node.addEventListener('click', this.listenToMouseClick.bind(this));
+    this.showCopyImage();
+  }
+  async listenToMouseClick() {
+    try {
+      await this.copyToClipboard();
+      this.showSuccessImage();
+    } catch (error) {
+      this.showFailImage();
+    } finally {
+      setTimeout(this.showCopyImage.bind(this), 1000);
+    }
+  }
+  async copyToClipboard () {
+    await navigator.clipboard.writeText(this.code);
+  }
+  showCopyImage() {
+    this.image.src = '/assets/img/copy-icon.svg';
+    this.image.alt = 'Copy';
+  }
+  showSuccessImage() {
+    this.image.src = '/assets/img/copied-green-icon.svg';
+    this.image.alt = 'Coppied';
+  }
+  showFailImage() {
+    this.image.src = '/assets/img/failed-red-icon.svg';
+    this.image.alt = 'Failed';
+  }
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const codeSnippets = document.querySelectorAll('pre > code');
   for (const snippet of codeSnippets) {
-    const copyButton = document.createElement('button');
-    const copyImage = '<img src="/assets/img/copy.svg" alt="Copy" />';
-    copyButton.innerHTML = copyImage;
-    copyButton.classList.add('copy-button');
-    copyButton.addEventListener('click', async () => {
-      try {
-        await navigator.clipboard.writeText(snippet.innerText);
-        copyButton.innerHTML = 'OK';
-      } catch (error) {
-        copyButton.innerHTML = 'X';
-      } finally {
-        setTimeout(() => copyButton.innerHTML = copyImage, 1000);
-      }
-    });
     const codeContainer = snippet.parentNode;
     codeContainer.classList.add('code-snippet-container');
-    codeContainer.appendChild(copyButton);
+    const copyButton = new CopyButton(snippet.innerText);
+    codeContainer.appendChild(copyButton.node);
   }
 });
 
