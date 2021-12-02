@@ -1972,6 +1972,43 @@ img {
   background: #aaaaaa;
 }
 
+/* code snippets */
+
+.code-snippet-container {
+  position: relative;
+}
+
+.code-snippet-container:hover .copy-button {
+  opacity: 1;
+}
+
+.copy-button:hover {
+  box-shadow: black 0px 1px 4px, #828282 0px 0px 0px 1px;
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+  height: 2.6rem;
+  width: 2rem;
+  cursor: pointer;
+  border: 0;
+  opacity: 0;
+  background-color: white;
+  box-shadow: #c1c1c1 0px 0px 0px 1px;
+  transition-property: opacity, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.copy-button > img {
+  margin: 0;
+  padding: 0;
+}
+
+
 /* sprite transform animation */
 
 .sprite-transform-animation {

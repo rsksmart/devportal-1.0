@@ -177,6 +177,61 @@ $(window).scroll(function () {
   }
 });
 
+// copy code snippets to a browser clipboard
+
+function createCopyButton(codeSnippetText) {
+  const button = document.createElement('button');
+  button.classList.add('copy-button');
+  const image = document.createElement('img');
+  button.appendChild(image);
+  
+  const showImage = (imageType = 'copy') => {
+    const options = {
+      copy: {
+        src: '/assets/img/copy-icon.svg', 
+        alt: 'Copy',
+      },
+      success: {
+        src: '/assets/img/copied-green-icon.svg', 
+        alt: 'Coppied',
+      },
+      fail: {
+        src: '/assets/img/failed-red-icon.svg', 
+        alt: 'Failed',
+      },
+    };
+    const { src = options.copy.src, alt = options.copy.alt } = options[imageType];
+    image.src = src;
+    image.alt = alt;
+  }
+
+  const listenToMouseClick = async () => {
+    try {
+      await navigator.clipboard.writeText(codeSnippetText);
+      showImage('success');
+    } catch (error) {
+      showImage('fail');
+    } finally {
+      setTimeout(showImage, 1000);
+    }
+  };
+
+  button.addEventListener('click', listenToMouseClick);
+  showImage();
+  return button;
+}
+
+function addCopyButtonsToCodeSnippets() {
+  const codeSnippets = document.querySelectorAll('pre > code');
+  for (const snippet of codeSnippets) {
+    const codeContainer = snippet.parentNode;
+    codeContainer.classList.add('code-snippet-container');
+    const copyButton = createCopyButton(snippet.innerText);
+    codeContainer.appendChild(copyButton);
+  }
+}
+
+$(document).ready(addCopyButtonsToCodeSnippets);
 
 // toggle between expand all and collapse all
 function toggleNavColumnVisibility (e) {
