@@ -178,52 +178,60 @@ $(window).scroll(function () {
 });
 
 // copy code snippets to a browser clipboard
-class CopyButton {
-  constructor(codeSnippetText) {
-    this.node = document.createElement('button');
-    this.node.classList.add('copy-button');
-    this.image = document.createElement('img');
-    this.code = codeSnippetText;
-    this.node.appendChild(this.image);
-    this.node.addEventListener('click', this.listenToMouseClick.bind(this));
-    this.showCopyImage();
+
+function createCopyButton(codeSnippetText) {
+  const button = document.createElement('button');
+  button.classList.add('copy-button');
+  const image = document.createElement('img');
+  button.appendChild(image);
+  
+  const showImage = (imageType = 'copy') => {
+    const options = {
+      copy: {
+        src: '/assets/img/copy-icon.svg', 
+        alt: 'Copy',
+      },
+      success: {
+        src: '/assets/img/copied-green-icon.svg', 
+        alt: 'Coppied',
+      },
+      fail: {
+        src: '/assets/img/failed-red-icon.svg', 
+        alt: 'Failed',
+      },
+    };
+    const { src = options.copy.src, alt = options.copy.alt } = options[imageType];
+    image.src = src;
+    image.alt = alt;
   }
-  async listenToMouseClick() {
+
+  const listenToMouseClick = async () => {
     try {
-      await this.copyToClipboard();
-      this.showSuccessImage();
+      await navigator.clipboard.writeText(codeSnippetText);
+      showImage('success');
     } catch (error) {
-      this.showFailImage();
+      showImage('fail');
     } finally {
-      setTimeout(this.showCopyImage.bind(this), 1000);
+      setTimeout(showImage, 1000);
     }
-  }
-  async copyToClipboard () {
-    await navigator.clipboard.writeText(this.code);
-  }
-  showCopyImage() {
-    this.image.src = '/assets/img/copy-icon.svg';
-    this.image.alt = 'Copy';
-  }
-  showSuccessImage() {
-    this.image.src = '/assets/img/copied-green-icon.svg';
-    this.image.alt = 'Coppied';
-  }
-  showFailImage() {
-    this.image.src = '/assets/img/failed-red-icon.svg';
-    this.image.alt = 'Failed';
-  }
+  };
+
+  button.addEventListener('click', listenToMouseClick);
+  showImage();
+  return button;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+function addCopyButtonsToCodeSnippets() {
   const codeSnippets = document.querySelectorAll('pre > code');
   for (const snippet of codeSnippets) {
     const codeContainer = snippet.parentNode;
     codeContainer.classList.add('code-snippet-container');
-    const copyButton = new CopyButton(snippet.innerText);
-    codeContainer.appendChild(copyButton.node);
+    const copyButton = createCopyButton(snippet.innerText);
+    codeContainer.appendChild(copyButton);
   }
-});
+}
+
+$(document).ready(addCopyButtonsToCodeSnippets);
 
 // toggle between expand all and collapse all
 function toggleNavColumnVisibility (e) {
