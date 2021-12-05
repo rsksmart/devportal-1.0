@@ -54,6 +54,8 @@ if ( hash == '' || hash == '#' || hash == undefined ) return false;
 
 
 $(document).ready(function () {
+  addCopyButtonsToCodeSnippets();
+  addUrlHoverIcons();
   setUpMainSearch();
   const renderFeatures = $('.render-features')
     .data('features')
@@ -231,7 +233,55 @@ function addCopyButtonsToCodeSnippets() {
   }
 }
 
-$(document).ready(addCopyButtonsToCodeSnippets);
+/**
+ * heading URL hover icon
+ */
+
+function scrollHTMLElementToPageHeader (headingHTMLElement) {
+  const pageHeader = document.getElementsByTagName('nav').item(0);
+  const pageHeaderBottom = pageHeader.getBoundingClientRect().bottom;
+  const headingTop = headingHTMLElement.getBoundingClientRect().top;
+  const scrollDistance = headingTop - pageHeaderBottom;
+  window.scrollBy({
+    top: scrollDistance,
+    behavior: 'smooth',
+  });
+}
+
+function overrideAnchorBehavior(
+  event,
+  anchorHTMLElement,
+  headingHTMLElement,
+) {
+  event.preventDefault();
+  const { href } = anchorHTMLElement;
+  history.pushState(null, href, href);
+  // instead of scrolling to window header
+  scrollHTMLElementToPageHeader(headingHTMLElement);
+}
+
+function createHeadingIcon(heading) {
+  const anchor = document.createElement('a');
+  anchor.classList.add('heading-icon-anchor');
+  anchor.href = `#${heading.id ?? ''}`;
+  const icon = document.createElement('img');
+  icon.src = '/assets/img/chain-icon.svg';
+  anchor.appendChild(icon);
+  anchor.addEventListener('click', (event) => 
+    overrideAnchorBehavior(event, anchor, heading));
+  return anchor;
+}
+
+function addUrlHoverIcons() {
+  const column = '.main-central-col';
+  const query = `${column} h1, ${column} h2, ${column} h3`;
+  const headings = document.querySelectorAll(query);
+  for (const heading of headings) {
+    heading.classList.add('heading-with-icon');
+    const icon = createHeadingIcon(heading);
+    heading.prepend(icon);
+  }
+}
 
 // toggle between expand all and collapse all
 function toggleNavColumnVisibility (e) {
