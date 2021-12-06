@@ -2026,27 +2026,19 @@ img {
   gap: var(--heading-icon-margin);
 }
 
-.heading-with-icon:hover .heading-icon-anchor {
+.heading-with-icon:hover .heading-icon {
   opacity: 1;
 }
 
-.heading-icon-anchor {
-  margin: 0;
-  padding: 0;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.heading-icon-anchor > img {
+img.heading-icon {
   width: var(--heading-icon-size);
   height: var(--heading-icon-size);
   margin: 0;
   padding: 0;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  cursor: pointer;
 }
-
 
 /* sprite transform animation */
 
