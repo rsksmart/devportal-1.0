@@ -179,58 +179,63 @@ $(window).scroll(function () {
   }
 });
 
-// copy code snippets to a browser clipboard
+/**
+ * copy code snippets to a browser clipboard
+ */
 
-function createCopyButton(codeSnippetText) {
-  const button = document.createElement('button');
-  button.classList.add('copy-button');
-  const image = document.createElement('img');
-  button.appendChild(image);
-  
-  const showImage = (imageType = 'copy') => {
-    const options = {
-      copy: {
-        src: '/assets/img/copy-icon.svg', 
-        alt: 'Copy',
-      },
-      success: {
-        src: '/assets/img/copied-green-icon.svg', 
-        alt: 'Coppied',
-      },
-      fail: {
-        src: '/assets/img/failed-red-icon.svg', 
-        alt: 'Failed',
-      },
-    };
-    const { src = options.copy.src, alt = options.copy.alt } = options[imageType];
-    image.src = src;
-    image.alt = alt;
-  }
+const copyButtonImageOptions = {
+  copy: {
+    src: '/assets/img/copy-init-icon.svg', 
+    alt: 'Copy',
+    className: 'copy-button-init',
+  },
+  success: {
+    src: '/assets/img/copied-green-icon.svg', 
+    alt: 'Coppied',
+    className: 'copy-button-success',
+  },
+  fail: {
+    src: '/assets/img/failed-red-icon.svg', 
+    alt: 'Failed',
+    className: 'copy-button-fail',
+  },
+};
 
-  const listenToMouseClick = async () => {
-    try {
-      await navigator.clipboard.writeText(codeSnippetText);
-      showImage('success');
-    } catch (error) {
-      showImage('fail');
-    } finally {
-      setTimeout(showImage, 1000);
-    }
-  };
-
-  button.addEventListener('click', listenToMouseClick);
-  showImage();
-  return button;
+function showCopyButtonImage(copyButtonImage, imageType = 'copy') {
+  const { src, alt, className } = copyButtonImageOptions[imageType];
+  copyButtonImage.src = src;
+  copyButtonImage.alt = alt;
+  copyButtonImage.className = 'copy-button';
+  copyButtonImage.classList.add(className);
 }
 
+async function handleCopyButtonClick(event) {
+  if (event.target.classList.contains('copy-button')) {
+    const copyButtonImage = event.target;
+    try {
+      const codeText = copyButtonImage.parentElement.querySelector('code').innerText.trim();
+      await navigator.clipboard.writeText(codeText);
+      showCopyButtonImage(copyButtonImage, 'success');
+    } catch (error) {
+      showCopyButtonImage(copyButtonImage, 'fail');
+    } finally {
+      setTimeout(() => showCopyButtonImage(copyButtonImage, 'copy'), 1000);
+    }
+  }
+}
+
+const codeSnippetSelector = '.main-central-col pre > code';
+
 function addCopyButtonsToCodeSnippets() {
-  const codeSnippets = document.querySelectorAll('pre > code');
+  const codeSnippets = document.querySelectorAll(codeSnippetSelector);
   for (const snippet of codeSnippets) {
     const codeContainer = snippet.parentNode;
     codeContainer.classList.add('code-snippet-container');
-    const copyButton = createCopyButton(snippet.innerText);
+    const copyButton = document.createElement('img');
+    showCopyButtonImage(copyButton, 'copy');
     codeContainer.appendChild(copyButton);
   }
+  window.addEventListener('click', handleCopyButtonClick);
 }
 
 /**
@@ -271,7 +276,7 @@ function addUrlHoverIcons() {
   const headings = document.querySelectorAll(addUrlHoverIconsSelector);
   for (const heading of headings) {
     heading.classList.add('heading-with-icon');
-    const icon = createHeadingIcon(heading);
+    const icon = createHeadingIcon();
     heading.prepend(icon);
   }
   window.addEventListener('click', handleHeadingIconClick);

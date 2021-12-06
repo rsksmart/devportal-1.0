@@ -1972,7 +1972,7 @@ img {
   background: #aaaaaa;
 }
 
-/* code snippets */
+/* code snippet copy button */
 
 .code-snippet-container {
   position: relative;
@@ -1983,31 +1983,33 @@ img {
 }
 
 .copy-button:hover {
-  box-shadow: black 0px 1px 4px, #828282 0px 0px 0px 1px;
+  box-shadow: inset 0px 0px 0px 1px #828282;
 }
 
-.copy-button {
+img.copy-button {
   position: absolute;
   top: 5px;
   right: 5px;
+  margin: 0;
   padding: 0;
-  height: 2.6rem;
+  height: 2rem;
   width: 2rem;
   cursor: pointer;
-  border: 0;
   opacity: 0;
-  background-color: white;
-  box-shadow: #c1c1c1 0px 0px 0px 1px;
+  background-color: white !important;
   transition-property: opacity, box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
 
-.copy-button > img {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+img.copy-button-init {
+  box-shadow: inset 0px 0px 0px 1px #c1c1c1;
+}
+img.copy-button-success {
+  box-shadow: inset 0px 0px 0px 1px #18ab19 !important;
+}
+img.copy-button-fail {
+  box-shadow: inset 0px 0px 0px 1px #eb4a1b !important;
 }
 
 /* Heading URL hover icon */
