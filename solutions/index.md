@@ -447,4 +447,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/fireblocks/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/fireblocks/fireblocks-logo.jpg" alt="fireblocks icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/fireblocks/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Fireblocks</p>
+                        <p class="card-desc">Fireblocks is an enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/fireblocks/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
