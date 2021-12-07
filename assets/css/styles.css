@@ -2028,7 +2028,15 @@ img.copy-button-fail {
   gap: var(--heading-icon-margin);
 }
 
-.heading-with-icon:hover .heading-icon {
+.heading-icon-container {
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-with-icon:hover .heading-icon-container {
   opacity: 1;
 }
 
@@ -2037,9 +2045,6 @@ img.heading-icon {
   height: var(--heading-icon-size);
   margin: 0;
   padding: 0;
-  opacity: 0;
-  transition: opacity 0.2s linear;
-  cursor: pointer;
 }
 
 /* sprite transform animation */
