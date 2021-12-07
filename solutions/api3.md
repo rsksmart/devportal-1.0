@@ -29,7 +29,7 @@ Real-world data for any smart contract platform.
 
 ![API3-RSK Integrations Banner](/assets/img/solutions/api3/rsk-api3-integrations-banner.jpg)
 
-API3 Integrates into RSK Protocol, deploying 12 Web2 APIs for Dapp’s to utilise, following the recent upgrades to Airnode v0.2, the following 12 APIs are now integrated on RSK mainnet and are now accessible by engineers in the ecosystem during the period of the hackathon in conjunction with a state-owned bank in El Salvador, Banco Hipotecario.
+API3 Integrates into RSK Protocol, deploying 12 Web2 APIs for Dapp’s to utilise, following the recent upgrades to Airnode v0.2, the following 12 APIs are now integrated on RSK Mainnet and are now accessible by engineers in the RSK ecosystem.
 
 ![API3-RSK-API-List](/assets/img/solutions/api3/rsk-api-list.png)
 
