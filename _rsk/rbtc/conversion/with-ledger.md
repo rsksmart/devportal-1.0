@@ -197,7 +197,7 @@ Then do a transaction to the Bridge Contract.
 
 Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> Note: The minimum amount to send must be greater than or equals to 0.004 RBTC for Mainnet
+> Note: The minimum amount to send in a peg-out transaction must be greater than or equals to 0.004 **RBTC** for Mainnet and the minimum amount to send in a peg-in transaction must be greater than or equals to 0.005 **BTC** for Mainnet
 > Gas Limit of the transaction needs to be manually set at 100,000 gas;
 > otherwise the transaction will fail.
 > Gas Price can be set to 0.06 gwei.
