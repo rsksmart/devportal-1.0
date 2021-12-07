@@ -253,17 +253,22 @@ function scrollHeadingToPageHeader (heading) {
   });
 }
 
-function createHeadingIcon() {
+function createHeadingIcon(href) {
+  const anchor = document.createElement('a');
+  anchor.href = href;
+  anchor.classList.add('heading-icon-container');
+  anchor.onclick = (e) => e.preventDefault();
   const iconImage = document.createElement('img');
   iconImage.src = '/assets/img/chain-icon.svg';
   iconImage.classList.add('heading-icon');
-  return iconImage;
+  anchor.append(iconImage);
+  return anchor;
 }
 
 function handleHeadingIconClick(event) {
   if (event.target.classList.contains('heading-icon')) {
     const headingIcon = event.target;
-    const href = `#${headingIcon.parentElement.id ?? ''}`;
+    const href = headingIcon.parentElement.href;
     history.pushState(null, href, href);
     scrollHeadingToPageHeader(headingIcon);
   };
@@ -276,7 +281,7 @@ function addUrlHoverIcons() {
   const headings = document.querySelectorAll(addUrlHoverIconsSelector);
   for (const heading of headings) {
     heading.classList.add('heading-with-icon');
-    const icon = createHeadingIcon();
+    const icon = createHeadingIcon(`#${heading.id ?? ''}`);
     heading.prepend(icon);
   }
   window.addEventListener('click', handleHeadingIconClick);
