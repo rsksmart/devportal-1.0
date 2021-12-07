@@ -179,68 +179,73 @@ $(window).scroll(function () {
   }
 });
 
-// copy code snippets to a browser clipboard
+/**
+ * copy code snippets to a browser clipboard
+ */
 
-function createCopyButton(codeSnippetText) {
-  const button = document.createElement('button');
-  button.classList.add('copy-button');
-  const image = document.createElement('img');
-  button.appendChild(image);
-  
-  const showImage = (imageType = 'copy') => {
-    const options = {
-      copy: {
-        src: '/assets/img/copy-icon.svg', 
-        alt: 'Copy',
-      },
-      success: {
-        src: '/assets/img/copied-green-icon.svg', 
-        alt: 'Coppied',
-      },
-      fail: {
-        src: '/assets/img/failed-red-icon.svg', 
-        alt: 'Failed',
-      },
-    };
-    const { src = options.copy.src, alt = options.copy.alt } = options[imageType];
-    image.src = src;
-    image.alt = alt;
-  }
+const copyButtonImageOptions = {
+  copy: {
+    src: '/assets/img/copy-init-icon.svg', 
+    alt: 'Copy',
+    className: 'copy-button-init',
+  },
+  success: {
+    src: '/assets/img/copied-green-icon.svg', 
+    alt: 'Coppied',
+    className: 'copy-button-success',
+  },
+  fail: {
+    src: '/assets/img/failed-red-icon.svg', 
+    alt: 'Failed',
+    className: 'copy-button-fail',
+  },
+};
 
-  const listenToMouseClick = async () => {
-    try {
-      await navigator.clipboard.writeText(codeSnippetText);
-      showImage('success');
-    } catch (error) {
-      showImage('fail');
-    } finally {
-      setTimeout(showImage, 1000);
-    }
-  };
-
-  button.addEventListener('click', listenToMouseClick);
-  showImage();
-  return button;
+function showCopyButtonImage(copyButtonImage, imageType = 'copy') {
+  const { src, alt, className } = copyButtonImageOptions[imageType];
+  copyButtonImage.src = src;
+  copyButtonImage.alt = alt;
+  copyButtonImage.className = 'copy-button';
+  copyButtonImage.classList.add(className);
 }
 
+async function handleCopyButtonClick(event) {
+  if (event.target.classList.contains('copy-button')) {
+    const copyButtonImage = event.target;
+    try {
+      const codeText = copyButtonImage.parentElement.querySelector('code').innerText.trim();
+      await navigator.clipboard.writeText(codeText);
+      showCopyButtonImage(copyButtonImage, 'success');
+    } catch (error) {
+      showCopyButtonImage(copyButtonImage, 'fail');
+    } finally {
+      setTimeout(() => showCopyButtonImage(copyButtonImage, 'copy'), 1000);
+    }
+  }
+}
+
+const codeSnippetSelector = '.main-central-col pre > code';
+
 function addCopyButtonsToCodeSnippets() {
-  const codeSnippets = document.querySelectorAll('pre > code');
+  const codeSnippets = document.querySelectorAll(codeSnippetSelector);
   for (const snippet of codeSnippets) {
     const codeContainer = snippet.parentNode;
     codeContainer.classList.add('code-snippet-container');
-    const copyButton = createCopyButton(snippet.innerText);
+    const copyButton = document.createElement('img');
+    showCopyButtonImage(copyButton, 'copy');
     codeContainer.appendChild(copyButton);
   }
+  window.addEventListener('click', handleCopyButtonClick);
 }
 
 /**
  * heading URL hover icon
  */
 
-function scrollHTMLElementToPageHeader (headingHTMLElement) {
+function scrollHeadingToPageHeader (heading) {
   const pageHeader = document.getElementsByTagName('nav').item(0);
   const pageHeaderBottom = pageHeader.getBoundingClientRect().bottom;
-  const headingTop = headingHTMLElement.getBoundingClientRect().top;
+  const headingTop = heading.getBoundingClientRect().top;
   const scrollDistance = headingTop - pageHeaderBottom;
   window.scrollBy({
     top: scrollDistance,
@@ -248,39 +253,33 @@ function scrollHTMLElementToPageHeader (headingHTMLElement) {
   });
 }
 
-function overrideAnchorBehavior(
-  event,
-  anchorHTMLElement,
-  headingHTMLElement,
-) {
-  event.preventDefault();
-  const { href } = anchorHTMLElement;
-  history.pushState(null, href, href);
-  // instead of scrolling to window header
-  scrollHTMLElementToPageHeader(headingHTMLElement);
+function createHeadingIcon() {
+  const iconImage = document.createElement('img');
+  iconImage.src = '/assets/img/chain-icon.svg';
+  iconImage.classList.add('heading-icon');
+  return iconImage;
 }
 
-function createHeadingIcon(heading) {
-  const anchor = document.createElement('a');
-  anchor.classList.add('heading-icon-anchor');
-  anchor.href = `#${heading.id ?? ''}`;
-  const icon = document.createElement('img');
-  icon.src = '/assets/img/chain-icon.svg';
-  anchor.appendChild(icon);
-  anchor.addEventListener('click', (event) => 
-    overrideAnchorBehavior(event, anchor, heading));
-  return anchor;
+function handleHeadingIconClick(event) {
+  if (event.target.classList.contains('heading-icon')) {
+    const headingIcon = event.target;
+    const href = `#${headingIcon.parentElement.id ?? ''}`;
+    history.pushState(null, href, href);
+    scrollHeadingToPageHeader(headingIcon);
+  };
 }
+
+const addUrlHoverIconsSelector = 
+  '.main-central-col h1, .main-central-col h2, .main-central-col h3';
 
 function addUrlHoverIcons() {
-  const column = '.main-central-col';
-  const query = `${column} h1, ${column} h2, ${column} h3`;
-  const headings = document.querySelectorAll(query);
+  const headings = document.querySelectorAll(addUrlHoverIconsSelector);
   for (const heading of headings) {
     heading.classList.add('heading-with-icon');
-    const icon = createHeadingIcon(heading);
+    const icon = createHeadingIcon();
     heading.prepend(icon);
   }
+  window.addEventListener('click', handleHeadingIconClick);
 }
 
 // toggle between expand all and collapse all
