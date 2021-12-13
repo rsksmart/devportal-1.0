@@ -7,7 +7,7 @@ layout: 'rsk'
 
 ![Fireblocks - banner](/assets/img/solutions/fireblocks/fireblocks-banner.jpg)
 
-[Fireblocks](https://www.fireblocks.com/) is an enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.
+[Fireblocks](https://www.fireblocks.com/) is an enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets aimed at institutional use cases.
 
 Fireblocks enables exchanges, custodians, banks, trading desks, and hedge funds to securely scale digital asset operations through patent-pending SGX & MPC technology. They have secured the transfer of over $1.75 trillion in digital assets and have a unique insurance policy that covers assets in storage & in transit. Fireblocks is the established leader for providing MPC-secured custody to crypto-native trading and retail service institutions.
 
