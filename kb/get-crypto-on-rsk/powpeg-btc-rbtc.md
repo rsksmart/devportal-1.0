@@ -94,7 +94,7 @@ as there is no application or tool to perform this.
   - For security reasons, a significant number of transaction
     confirmations need to occur before funds are released.
 - Minimum peg-in/ peg-out transaction values allowed are high
-  - Currently, amounts must exceed 0.01 BTC and 0.008 RBTC, respectively
+  - Currently, amounts must exceed 0.005 BTC and 0.004 RBTC, respectively
 - Hard to use for regular users without technical expertise.
 - Bitcoin network fees for peg-outs can be high.
 
