@@ -149,6 +149,41 @@ Connected (press CTRL+C to quit)
 < {"jsonrpc":"2.0","id":"healthcheck","result":{"number":"0x2f4d6d","hash":"0x7cec4e01768b4e009fa78d625024ec81dab7811dc2e497f6d831fb051f41c236","parentHash":"0xf0af3726672c218c33e81de33e5f69bb008555931bd63056d24bde6a2cbfca87"..........
 ```
 
+#### How to make a JSON-RPC request over CURL to RSK Testnet
+
+Mac OSX
+  ```shell
+curl --location --request POST 'https://rsk.getblock.io/testnet/' \
+--header 'x-api-key: <YOUR-API-KEY>' \
+--header 'Content-Type: application/json' \
+--data-raw '{"jsonrpc": "2.0",
+"method": "eth_chainId",
+"params": [],
+"id": "getblock.io"}'
+  ```
+
+ **Result**
+ ```
+  {"jsonrpc":"2.0","id":"getblock.io","result":"0x1f"}
+```
+
+#### How to make a JSON-RPC request over Websocket to RSK Testnet
+
+```shell
+wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
+```
+
+Then, send the request body:
+
+```
+wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
+
+Connected (press CTRL+C to quit)
+> {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
+< {"jsonrpc":"2.0","id":"healthcheck","result":{"number":"0x2f4d6d","hash":"0x7cec4e01768b4e009fa78d625024ec81dab7811dc2e497f6d831fb051f41c236","parentHash":"0xf0af3726672c218c33e81de33e5f69bb008555931bd63056d24bde6a2cbfca87"..........
+```
+
+
 ## Get in touch
 
 
