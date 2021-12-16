@@ -10,4 +10,5 @@ description: "Guides on RSK, workshops, and other guides"
 - [Getting started with RIF Relay](/guides/rif-relay/)
 - [Armadillo](/guides/armadillo/)
 - [Quick Start](/guides/quickstart/)
+- [The Complete Guide to Stablecoins](/guides/stablecoin/)
 
