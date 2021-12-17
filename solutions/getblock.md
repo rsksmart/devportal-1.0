@@ -63,157 +63,18 @@ GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs 
 - On-demand support — our team of experts guarantee fast consulting and personal support for both beginners and experienced developers
 - Privacy — the service doesn’t keep or ask for any information about keys, wallets, or any other private data. It receives from the clients only the encrypted transactions
 
-## Documentation
+## Endpoints
+### HTTP Mainnet
+- [How to make a JSON-RPC request over HTTP](/kb/connect-rsk-node-getblock/#mainnet)
 
-### Tutorials
+### HTTP Testnet
+- [How to make a JSON-RPC request over HTTP](/kb/connect-rsk-node-getblock/#testnet)
 
-- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, WebSockets, etc.)](https://getblock.io/docs)
+### WS Mainnet
+- [How to make a JSON-RPC request over Websocket](/kb/connect-rsk-node-getblock/#mainnet-1)
 
-### Guides
-
-- [About GetBlock](https://getblock.io/about)
-- [What is a Blockchain Node and How Does it Work?](https://getblock.io/blog/what-is-a-blockchain-node-and-how-does-it-work)
-
-### How to make a JSON-RPC requests over HTTP
-
-To send JSON RPC over HTTP, it is required to send the request using POST to URL `rsk.getblock.io` with the headers `Content-Type:application/json` and `x-api-key:your-api-key`, and also, the request body.
-
-Note that the RPC endpoint HTTP URLs differ between RSK Mainnet and RSK Testnet.
-
-#### cURL for RSK Mainnet
-
-[](#top "multiple-terminals")
-- Linux, Mac OSX
-  ```shell
-curl -X POST 'rsk.getblock.io' \
---header 'x-api-key: YOUR-API-KEY' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "jsonrpc": "2.0",
-    "id": "healthcheck",
-    "method": "eth_getBlockByNumber",
-    "params": ["latest", false]
-}'
-  ```
-- Windows
-  ```windows-command-prompt
-curl -X POST 'rsk.getblock.io' \
---header 'x-api-key: YOUR-API-KEY' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "jsonrpc": "2.0",
-    "id": "healthcheck",
-    "method": "eth_getBlockByNumber",
-    "params": ["latest", false]
-}'
-  ```
-
-#### cURL for RSK Testnet
-
-[](#top "multiple-terminals")
-- Linux, Mac OSX
-  ```shell
-curl --location --request POST 'https://rsk.getblock.io/testnet/' \
-  --header 'x-api-key: YOUR-API-KEY' \
-  --header 'Content-Type: application/json' \
-  --data-raw '{"jsonrpc": "2.0",
-    "method": "eth_chainId",
-    "params": [],
-    "id": "1"}'
-  ```
-- Windows
-  ```windows-command-prompt
-curl --location --request POST 'https://rsk.getblock.io/testnet/' \
-  --header 'x-api-key: YOUR-API-KEY' \
-  --header 'Content-Type: application/json' \
-  --data-raw '{"jsonrpc": "2.0",
-    "method": "eth_chainId",
-    "params": [],
-    "id": "1"}'
-  ```
-
- **Result**
-
- ```json
-  {"jsonrpc":"2.0","id":"1","result":"0x1f"}
-```
-
-#### Postman
-
-![GetBlock - PostmanRequest](/assets/img/solutions/getblock/postman.png)
-
-### How to make a JSON-RPC requests over WebSockets
-
-Websocket connections remain open, and are more session-based.
-Using a tool such as [`wscat`](https://www.npmjs.com/package/wscat),
-you can establish a single connection,
-and have multiple request-response cycles within its shell.
-
-Note that the RPC endpoint WebSockets URLs differ between RSK Mainnet and RSK Testnet.
-
-Note that the format of the RPC request bodies and response bodies are
-identical between HTTP and WebSockets,
-this is merely a transport layer difference.
-
-#### WebSockets for RSK Mainnet
-
-To send JSON RPC over Websocket, it is required to establish the connection:
-
-[](#top "multiple-terminals")
-- Linux, Mac OSX
-  ```shell
-wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
-  ```
-- Windows
-  ```windows-command-prompt
-wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
-  ```
-
-Then, send the request body:
-
-```json
-{"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
-```
-
-**Result**
-
-```
-wscat -c https://rsk.getblock.io/websocket -H "x-api-key:<YOUR-API-KEY>"
-
-Connected (press CTRL+C to quit)
-> {"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
-< {"jsonrpc":"2.0","id":"healthcheck","result":{"number":"0x2f4d6d","hash":"0x7cec4e01768b4e009fa78d625024ec81dab7811dc2e497f6d831fb051f41c236","parentHash":"0xf0af3726672c218c33e81de33e5f69bb008555931bd63056d24bde6a2cbfca87"..........
-```
-
-#### WebSockets for RSK Testnet
-
-To send JSON RPC over WebSockets, first establish a connection:
-
-[](#top "multiple-terminals")
-- Linux, Mac OSX
-  ```shell
-wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
-  ```
-- Windows
-  ```windows-command-prompt
-wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
-  ```
-
-Then, send the request body:
-
-```json
-{"jsonrpc": "2.0","id": "1","method": "eth_chainId","params": []}
-```
-
-**Result**
-
-```shell
-wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
-
-Connected (press CTRL+C to quit)
-> {"jsonrpc": "2.0","id": "1","method": "eth_chainId","params": []}
-< {"jsonrpc":"2.0","id":"1","result":"0x1f"}
-```
+### WS Testnet
+- [How to make a JSON-RPC request over Websocket](/kb/connect-rsk-node-getblock/#testnet-1)
 
 ## Get in touch
 
