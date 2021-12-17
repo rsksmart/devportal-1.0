@@ -21,19 +21,19 @@ GetBlock is a provider of access to full nodes of the most popular cryptocurrenc
 
 > Users of GetBlock can connect the [RSK](https://getblock.io/nodes/rsk) node to their application using a fully compliant JSON-RPC API method. In addition, statistics and parameters for the RSK node are displayed in real time on GetBlock which guarantees direct and instant synchronization with the blockchain.
 
-### About GetBlock
+## About GetBlock
 
 GetBlock is a service that provides a fast and easy connection to RSK nodes, and a continuously growing list of over 40 cryptocurrency nodes.
-In order to build a blockchain-based application, an individual or a company usually has to deploy and run several blockchain nodes. There is no need to launch and support all the nodes anymore as the GetBlock service will get access to all the available currencies automatically.
+In order to build a blockchain-based application, an individual or a company usually has to deploy and run several blockchain nodes. There is no need to launch and support all the nodes any more as the GetBlock service will get access to all the available currencies automatically.
 In order to get started with GetBlock, clients of the platform have to [register an account](https://account.getblock.io) and receive an API key which will be displayed on the dashboard together with the related data.
 
-### GetBlock's Goal
+## GetBlock's Goal
 
-The goal of Getblock is to provide users with access to full nodes from RSK, and many other leading blockchain platforms, allowing them to request on-chain information from a node without the need to set up one manually.
+The goal of GetBlock is to provide users with access to full nodes from RSK, and many other leading blockchain platforms, allowing them to request on-chain information from a node without the need to set up one manually.
 
 GetBlock guarantees a fast and stable connection to the RSK nodes by providing a turnkey infrastructure solution, so that a developer can easily integrate the RSK technology to the project without worrying about troubleshooting, updates, and constant syncing.
 
-### Features
+## Features
 
 Users of GetBlock will have a personal account with the following features included:
 
@@ -46,16 +46,13 @@ Users of GetBlock will have a personal account with the following features inclu
 - Automated updates
 - Technical support
 
-## General Description
-
 GetBlock is a complete solution for developers who don’t need to wait hours and hours for the RSK node to be synced, as the platform provides a cost-effective infrastructure that guarantees a fast and reliable connection to a blockchain via full nodes.
 
 ### Components
 
-GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs as REST, JSON-RPC, Websockets and IRI, which facilitates the whole process of building decentralized applications (dApps).
+GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs as REST, JSON-RPC, WebSockets and IRI, which facilitates the whole process of building decentralized applications (dApps).
 
 ![GetBlock - ConnectionImage](/assets/img/solutions/getblock/components.png)
-
 
 ### Why choose GetBlock?
 
@@ -70,24 +67,20 @@ GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs 
 
 ### Tutorials
 
-- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, Websockets, etc.)](https://getblock.io/docs)
+- [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, WebSockets, etc.)](https://getblock.io/docs)
 
 ### Guides
 
 - [About GetBlock](https://getblock.io/about)
 - [What is a Blockchain Node and How Does it Work?](https://getblock.io/blog/what-is-a-blockchain-node-and-how-does-it-work)
 
-#### How to make a JSON-RPC request over HTTP
+### How to make a JSON-RPC requests over HTTP
 
 To send JSON RPC over HTTP, it is required to send the request using POST to URL `rsk.getblock.io` with the headers `Content-Type:application/json` and `x-api-key:your-api-key`, and also, the request body.
 
-The example of receiving the number of the last block:
+Note that the RPC endpoint HTTP URLs differ between RSK Mainnet and RSK Testnet.
 
-```json
-{"jsonrpc": "2.0","id": "healthcheck","method": "eth_getBlockByNumber","params": ["latest", false]}
-```
-
-#### How to make a JSON-RPC request over CURL
+#### cURL for RSK Mainnet
 
 [](#top "multiple-terminals")
 - Linux, Mac OSX
@@ -115,11 +108,54 @@ curl -X POST 'rsk.getblock.io' \
 }'
   ```
 
-#### How to make a JSON-RPC request using Postman
+#### cURL for RSK Testnet
+
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+curl --location --request POST 'https://rsk.getblock.io/testnet/' \
+  --header 'x-api-key: YOUR-API-KEY' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{"jsonrpc": "2.0",
+    "method": "eth_chainId",
+    "params": [],
+    "id": "1"}'
+  ```
+- Windows
+  ```windows-command-prompt
+curl --location --request POST 'https://rsk.getblock.io/testnet/' \
+  --header 'x-api-key: YOUR-API-KEY' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{"jsonrpc": "2.0",
+    "method": "eth_chainId",
+    "params": [],
+    "id": "1"}'
+  ```
+
+ **Result**
+
+ ```json
+  {"jsonrpc":"2.0","id":"1","result":"0x1f"}
+```
+
+#### Postman
 
 ![GetBlock - PostmanRequest](/assets/img/solutions/getblock/postman.png)
 
-#### Websockets
+### How to make a JSON-RPC requests over WebSockets
+
+Websocket connections remain open, and are more session-based.
+Using a tool such as [`wscat`](https://www.npmjs.com/package/wscat),
+you can establish a single connection,
+and have multiple request-response cycles within its shell.
+
+Note that the RPC endpoint WebSockets URLs differ between RSK Mainnet and RSK Testnet.
+
+Note that the format of the RPC request bodies and response bodies are
+identical between HTTP and WebSockets,
+this is merely a transport layer difference.
+
+#### WebSockets for RSK Mainnet
 
 To send JSON RPC over Websocket, it is required to establish the connection:
 
@@ -149,8 +185,37 @@ Connected (press CTRL+C to quit)
 < {"jsonrpc":"2.0","id":"healthcheck","result":{"number":"0x2f4d6d","hash":"0x7cec4e01768b4e009fa78d625024ec81dab7811dc2e497f6d831fb051f41c236","parentHash":"0xf0af3726672c218c33e81de33e5f69bb008555931bd63056d24bde6a2cbfca87"..........
 ```
 
-## Get in touch
+#### WebSockets for RSK Testnet
 
+To send JSON RPC over WebSockets, first establish a connection:
+
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
+  ```
+- Windows
+  ```windows-command-prompt
+wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
+  ```
+
+Then, send the request body:
+
+```json
+{"jsonrpc": "2.0","id": "1","method": "eth_chainId","params": []}
+```
+
+**Result**
+
+```shell
+wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>"
+
+Connected (press CTRL+C to quit)
+> {"jsonrpc": "2.0","id": "1","method": "eth_chainId","params": []}
+< {"jsonrpc":"2.0","id":"1","result":"0x1f"}
+```
+
+## Get in touch
 
 If you have any technical issues write at [support@getblock.io](mailto:support@getblock.io), for general inquiries and partnership offers write at [marketing@getblock.io](mailto:marketing@getblock.io).
 
