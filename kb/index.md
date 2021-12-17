@@ -429,7 +429,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/kb/getblock-endpoint/">
+            <a href="/kb/getblock-rpc/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/solutions/getblock/getblock_logo.png" alt="getblock icon">
@@ -437,16 +437,16 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
                 </div>
             </a>
             <div class="content">
-                <a href="/kb/getblock-endpoint/">
+                <a href="/kb/getblock-rpc/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">How to connect to an RSK node using GetBlock</p>
+                        <p class="card-title rsk_green">RPC via GetBlock</p>
                         <p class="card-desc">Learn how to use the API methods within GetBlock to connect to an RSK node.
                         </p>
                     </div>
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/kb/getblock-endpoint/">Read More</a>
+                    <a class="green" href="/kb/getblock-rpc/">Read More</a>
                 </div>
             </div>
         </div>

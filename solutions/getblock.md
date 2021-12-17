@@ -63,18 +63,14 @@ GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs 
 - On-demand support — our team of experts guarantee fast consulting and personal support for both beginners and experienced developers
 - Privacy — the service doesn’t keep or ask for any information about keys, wallets, or any other private data. It receives from the clients only the encrypted transactions
 
-## Endpoints
-### HTTP Mainnet
-- [How to make a JSON-RPC request over HTTP](/kb/getblock-endpoint/#mainnet)
+## RPC Endpoints
 
-### HTTP Testnet
-- [How to make a JSON-RPC request over HTTP](/kb/getblock-endpoint/#testnet)
+- HTTP Mainnet: [https://rsk.getblock.io/mainnet](https://rsk.getblock.io/mainnet)
+- HTTP Testnet: [https://rsk.getblock.io/testnet/](https://rsk.getblock.io/testnet/)
+- WS Mainnet: [wss://rsk.getblock.io/websocket](wss://rsk.getblock.io/websocket)
+- WS Testnet: [wss://rsk.getblock.io/testnet/websocket](wss://rsk.getblock.io/testnet/websocket)
 
-### WS Mainnet
-- [How to make a JSON-RPC request over Websocket](/kb/getblock-endpoint/#mainnet-1)
-
-### WS Testnet
-- [How to make a JSON-RPC request over Websocket](/kb/getblock-endpoint/#testnet-1)
+See more details in [RPC via GetBlock](/kb/getblock-rpc/)
 
 ## Get in touch
 
