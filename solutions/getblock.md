@@ -65,16 +65,16 @@ GetBlock provides instant access to RSK nodes over HTTPS. It supports such APIs 
 
 ## Endpoints
 ### HTTP Mainnet
-- [How to make a JSON-RPC request over HTTP](/kb/connect-rsk-node-getblock/#mainnet)
+- [How to make a JSON-RPC request over HTTP](/kb/getblock-endpoint/#mainnet)
 
 ### HTTP Testnet
-- [How to make a JSON-RPC request over HTTP](/kb/connect-rsk-node-getblock/#testnet)
+- [How to make a JSON-RPC request over HTTP](/kb/getblock-endpoint/#testnet)
 
 ### WS Mainnet
-- [How to make a JSON-RPC request over Websocket](/kb/connect-rsk-node-getblock/#mainnet-1)
+- [How to make a JSON-RPC request over Websocket](/kb/getblock-endpoint/#mainnet-1)
 
 ### WS Testnet
-- [How to make a JSON-RPC request over Websocket](/kb/connect-rsk-node-getblock/#testnet-1)
+- [How to make a JSON-RPC request over Websocket](/kb/getblock-endpoint/#testnet-1)
 
 ## Get in touch
 
