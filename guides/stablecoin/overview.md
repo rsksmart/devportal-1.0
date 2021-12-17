@@ -39,6 +39,11 @@ Synthetic stablecoins aim to target a return to a reference asset, such as the U
 > Another way is through a peg that is actively managed using an algorithmic monetary policy or smart contract (eg Terra or Ampleforth).
 > These are often used in conjunction with oracles that provide on-chain access to price feeds for fiat and blockchain asset pairs.
 
+## Next
+
+Be sure to check out our next article in this guide,
+about [The difference between stablecoins and other digital assets - The Complete Guide to Stablecoins](/guides/stablecoin/stablecoin-vs-digital-assets/)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.
@@ -46,7 +51,7 @@ If you would like to delve deeper, here are some resources and tools that we rec
 **Resources**:
 
 - [Visit Our Developers Portal](https://github.com/rsksmart/devportal) 
-- [Dollar on Chain Chain: A stablecoin for bitcoiners, by bitcoiners](https://moneyonchain.com/blog/dollar-on-chain-chain-a-bitcoin-stablecoin-by-bitcoiners/)
+- [Dollar on Chain: A stablecoin for bitcoiners, by bitcoiners](https://moneyonchain.com/blog/dollar-on-chain-chain-a-bitcoin-stablecoin-by-bitcoiners/)
 - [Defiant: Solutions on RSK](https://developers.rsk.co/solutions/defiant/)
 - [RSK Token Bridge](https://tokenbridge.rsk.co/)
 - [Webinar: RSK - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
