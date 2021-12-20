@@ -5,7 +5,6 @@ tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides
 layout: rsk
 ---
 
-
 In this section, we will cover what a crypto-collateralized stablecoin is and the different types of stablecoin that exists on Bitcoins.
 
 ![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
@@ -57,11 +56,6 @@ Watch this explainer video below to understand more about the XUSD token.
 <div class="video-container">
   <iframe width="949" height="534" src="https://youtube.com/embed/SyR8BnvwsWc"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-## Next
-
-Be sure to check out our next article in this guide,
-on how to store stablecoins on RSK: [How to Store Stablecoins on RSK - The Complete Guide to Stablecoins](/wouOUFmpT4W4L-cPMIPVUA)
 
 ----
 
