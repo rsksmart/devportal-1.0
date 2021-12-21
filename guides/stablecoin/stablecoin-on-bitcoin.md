@@ -5,7 +5,6 @@ tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides
 layout: rsk
 ---
 
-
 In this section, we will cover what a crypto-collateralized stablecoin is and the different types of stablecoin that exists on Bitcoins.
 
 ![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
@@ -20,7 +19,7 @@ By using bitcoin as collateral, a stablecoin can incorporate decentralization an
 
 Some examples of these tokens backed by Bitcoin, are DOC, RDOC, and XUSD
 
-### DOC - Dollar on Chain
+### DOC: Dollar on Chain
 
 The [Dollar on Chain or DOC](https://moneyonchain.com/doc-bitcoin-backed-stablecoin/) stablecoin is one of the main assets on the Money on Chain DeFi platform. DOC is collateralized with bitcoin with a 1:1 USD peg guaranteed by the smart contract. It offers the best collateral as it doesn’t rely on fiat. All the collateral is bitcoin.  Its stability is guaranteed by the Smart Contract. What makes DOC unique is that the DOC collateral is not held in a third-party bank account, but within smart contracts on the RSK network, which is the most secure smart contract network.
 
@@ -30,7 +29,7 @@ Watch this explainer video below to understand more about DOC.
   <iframe width="949" height="534" src="https://youtube.com/embed/pQmUsxrgfj8"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### RDOC - RIF Dollar on Chain
+### RDOC: RIF Dollar on Chain
 
 The [RIF Dollar on Chain or RDOC](https://rifonchain.com/) stablecoin is one of the main assets on the RIF on Chain DeFi platform. RIF on Chain is powered by Money on chain, a stablecoin and leveraged token protocol, which runs on RSK smart contracts.
 
@@ -44,7 +43,7 @@ Watch this explainer video below to understand more about the RDOC token.
   <iframe width="949" height="534" src="https://youtube.com/embed/GskPs4v2zmQ"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### XUSD - Babelfish
+### XUSD: Babelfish
 
 [BabelFish](https://babelfish.money/) is a cross-chain protocol that aggregates stablecoin liquidity from multiple issuers and chains into one single token: XUSD.
 
@@ -57,11 +56,6 @@ Watch this explainer video below to understand more about the XUSD token.
 <div class="video-container">
   <iframe width="949" height="534" src="https://youtube.com/embed/SyR8BnvwsWc"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-## Next
-
-Be sure to check out our next article in this guide,
-on how to store stablecoins on RSK: [How to Store Stablecoins on RSK - The Complete Guide to Stablecoins](/wouOUFmpT4W4L-cPMIPVUA)
 
 ----
 
