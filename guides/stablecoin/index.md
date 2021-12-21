@@ -26,3 +26,5 @@ In this guide, you will learn about stablecoins, stablecoins on RSK, how to get 
     - [DOC - Dollar on Chain](/guides/stablecoin/stablecoin-on-bitcoin/#doc-dollar-on-chain)
     - [RDOC - RIF Dollar on Chain](/guides/stablecoin/stablecoin-on-bitcoin/#rdoc-rif-dollar-on-chain)
     - [XUSD - Babelfish](/guides/stablecoin/stablecoin-on-bitcoin/#xusd-babelfish)
+- [How to Store Stablecoins on RSK](/guides/stablecoin/           how-to-store-stablecoins/)
+    - [Using Software Wallets](/guides/stablecoin/how-to-store-stablecoins/#using-software-wallets)
