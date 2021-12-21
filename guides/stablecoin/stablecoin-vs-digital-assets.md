@@ -43,6 +43,11 @@ A stablecoin may or may not be regulated, while Central Bank Digital Currency (C
 
 ![Stablecoin vs CBDCs](/assets/img/guides/stablecoin/stablecoinvscbdc.png)
 
+## Next
+
+Be sure to check out our next article in this guide,
+about [Stablecoins on Bitcoin - The Complete Guide to Stablecoins](/guides/stablecoin/stablecoin-on-bitcoin/)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.
