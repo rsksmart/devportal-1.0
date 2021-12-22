@@ -1,8 +1,7 @@
 ---
 title: "How to Store Stablecoins on RSK - The Complete Guide to Stablecoins"
 description: "Learn about how to store stablecoins on RSK"
-tags: the-complete-guide-to-stablecoins
-slug: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain
+tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain
 layout: rsk
 ---
 
