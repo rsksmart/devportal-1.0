@@ -56,6 +56,7 @@ Watch this video on how to install and setup your Liquality wallet:
 For a list of supported cryptocurrencies and tokens, see the [Liquality Solutions Page](https://developers.rsk.co/solutions/liquality/).
 
 Visit the [Open Finance](https://www.rsk.co/openfinance/) solutions page to see the full list of wallets currently integrated with RSK.
+
 ## Next
 
 Be sure to check out our next article in this guide,
