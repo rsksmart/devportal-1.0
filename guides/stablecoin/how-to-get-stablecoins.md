@@ -11,7 +11,7 @@ In this section, we will cover how to get stablecoins on RSK, and their tools.
 
 ## Using A Decentralized Exchange
 
-You can buy Stablecoin tokens on a decentralized exchange(DEX). Examples of DEXes that support RSK;
+You can buy stablecoin tokens on a decentralized exchange (DEX). Examples of DEXes that support RSK;
 
 **RSKSwap**
 
@@ -33,7 +33,7 @@ What makes TEX special is that the mechanism used for trading is inspired by the
 
 With TEX, you can access RDOC, DOC and other tokens on the RSK network.
 
-![TEX Dashboard](https://i.imgur.com/KBkTUc3.png)
+![TEX Dashboard](/assets/img/guides/stablecoin/tex-dashboard.png)
 
 **Liquality Swap**
 
