@@ -57,6 +57,11 @@ For a list of supported cryptocurrencies and tokens, see the [Liquality Solution
 
 Visit the [Open Finance](https://www.rsk.co/openfinance/) solutions page to see the full list of wallets currently integrated with RSK.
 
+## Next
+
+Be sure to check out our next article in this guide,
+on [How to Get Stablecoins on RSK - The Complete Guide to Stablecoins](/guides/stablecoin/how-to-get-stablecoins/)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.

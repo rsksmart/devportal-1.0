@@ -57,6 +57,11 @@ Watch this explainer video below to understand more about the XUSD token.
   <iframe width="949" height="534" src="https://youtube.com/embed/SyR8BnvwsWc"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+## Next
+
+Be sure to check out our next article in this guide,
+on [How to Store Stablecoins on RSK - The Complete Guide to Stablecoins](/guides/stablecoin/how-to-store-stablecoins/)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.

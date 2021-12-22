@@ -28,3 +28,6 @@ In this guide, you will learn about stablecoins, stablecoins on RSK, how to get 
     - [XUSD - Babelfish](/guides/stablecoin/stablecoin-on-bitcoin/#xusd-babelfish)
 - [How to Store Stablecoins on RSK](/guides/stablecoin/how-to-store-stablecoins/)
     - [Using Software Wallets](/guides/stablecoin/how-to-store-stablecoins/#using-software-wallets)
+- [How to Get Stablecoins on RSK](/guides/stablecoin/how-to-get-stablecoins/)
+    - [Using a decentralized exchange](/guides/stablecoin/how-to-get-stablecoins/#using-a-decentralized-exchange)
+    - [Using the Token Bridge](/guides/stablecoin/how-to-get-stablecoins/#using-the-token-bridge)
