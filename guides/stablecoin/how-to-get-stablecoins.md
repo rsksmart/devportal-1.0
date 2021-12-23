@@ -55,6 +55,11 @@ Watch this explainer video below to learn how to use the RSK/Ethereum Token brid
   <iframe width="949" height="534" src="https://youtube.com/embed/rjxuQnJ-jv0"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+## Next
+
+Be sure to check out our next article in this guide,
+on [Understanding Cross Chain Bridges: How to use the RSK Token Bridge](/guides/stablecoin/how-to-use-rsk-tokenbridge/)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.
