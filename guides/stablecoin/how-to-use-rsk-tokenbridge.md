@@ -7,8 +7,7 @@ layout: rsk
 
 In this section, we will cover what cross chain bridges are, how they work and how to use the RSK Token bridge to cross token between chains.
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
-
+![RSK-Ethereum Token Bridge](/assets/img/tools/tokenbridge/token-bridge-diagram.png)
 
 ## What is a Cross-Chain Bridge?
 
@@ -22,8 +21,6 @@ Cross-chain events are very important in the future of cryptocurrencies. Exchang
 ## How do cross-chain bridges work?
 
 Different bridges work in different ways, however, the following diagram from the RSK token bridge illustrates the main concepts.
-
-![How Cross Chain Bridges Work](/assets/img/tools/tokenbridge/token-bridge-diagram.png)
 
 In a nutshell, federators sit between two blockchain networks, validating and voting on each request. They then allow tokens on one network to be locked on one network and unlocked on the other network.
 
