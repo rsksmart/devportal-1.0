@@ -11,7 +11,9 @@ The objective of [BabelFish](https://babelfish.money/) is to aggregate **stablec
 
 ## How Babelfish Works
 
-*Coming soon!*
+<div class="video-container">
+  <iframe width="949" height="534" src="https://youtube.com/embed/SyR8BnvwsWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## How BabelFish integrates with RSK
   
@@ -41,6 +43,9 @@ and thus more liquid stablecoin pool.
 ### Tutorials
 
 - [Bridge Stablecoins and experience XUSD with Sovryn](https://bridge.sovryn.app/)
+
+- [Mint XUSD with RDOC and Earn Yield](https://youtu.be/j8LZ3CJDfXc)
+
 
 ### DevTools
 
