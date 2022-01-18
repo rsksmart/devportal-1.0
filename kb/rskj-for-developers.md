@@ -44,11 +44,10 @@ and enables both CORS and `autoMine` (which makes it behave similar to ganache).
 Using `--import` indicates that the block database should be imported from an external source. This is typically expected to be used when connecting to RSK Testnet or RSK Mainnet, and when a reduction in “initial sync time” is desired.
 
 ```shell
-java -cp ${JAR} co.rsk.Start \
-  --regtest \
+java -cp ${JAR} \
   --import \
+  --testnet \
   -Drpc.providers.web.cors=* \
-  -Dminer.client.autoMine=true \
   co.rsk.Start
 ```
 
