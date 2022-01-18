@@ -51,6 +51,9 @@ java -cp ${JAR} co.rsk.Start \
   -Dminer.client.autoMine=true \
   co.rsk.Start
 ```
+
+> Note that the `--import` feature is to be used ONLY for testing and development purposes and not in production.
+
 ## Advanced
 
 ### Developer Tools
