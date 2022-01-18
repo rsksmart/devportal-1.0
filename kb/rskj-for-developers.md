@@ -46,7 +46,7 @@ Using `--import` indicates that the block database should be imported from an ex
 ```shell
 java -cp ${JAR} \
   --import \
-  --testnet \
+  --testnet
 ```
 
 > Note that the `--import` feature is to be used ONLY for testing and development purposes and not in production.
