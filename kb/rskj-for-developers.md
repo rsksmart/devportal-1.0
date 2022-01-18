@@ -47,8 +47,6 @@ Using `--import` indicates that the block database should be imported from an ex
 java -cp ${JAR} \
   --import \
   --testnet \
-  -Drpc.providers.web.cors=* \
-  co.rsk.Start
 ```
 
 > Note that the `--import` feature is to be used ONLY for testing and development purposes and not in production.
