@@ -39,7 +39,7 @@ java -cp ${JAR} co.rsk.Start \
 and enables both CORS and `autoMine` (which makes it behave similar to ganache).
 - These are the most useful and commonly used flags and options for when you are developing or testing smart contracts and DApps.
 
-### Import RSKj
+### Import
 
 Using `--import` indicates that the block database should be imported from an external source. This is typically expected to be used when connecting to RSK Testnet or RSK Mainnet, and when a reduction in “initial sync time” is desired.
 
