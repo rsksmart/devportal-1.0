@@ -16,6 +16,8 @@ This is an alternative to connecting to the
 
 RSKj can also run in a “localhost”-only environment, without connecting to any public network - [RSK Regtest](/rsk/node/configure/switch-network/#regtest)
 
+> The `--import` feature can be used to import the block database from an external source. See example for [using the import feature](/kb/rskj-for-developers/#import-rskj) 
+
 If you do one of the following activities, you are likely to need to run RSKj on your computer.
 
 - Development <!-- → /kb/rskj-for-developers TODO add link -->
