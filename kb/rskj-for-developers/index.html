@@ -1117,8 +1117,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-10-20 12:04:38 +0000T00:00:00.000Z">2021-10-20</time> | -->
-     2' to read |
+    <!--time role="presentation" datetime="2022-01-18 15:21:19 +0000T00:00:00.000Z">2022-01-18</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/rskj-for-developers.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2131,6 +2131,19 @@
 and enables both CORS and <code class="highlighter-rouge">autoMine</code> (which makes it behave similar to ganache).</li>
   <li>These are the most useful and commonly used flags and options for when you are developing or testing smart contracts and DApps.</li>
 </ul>
+
+<h3 id="import">Import</h3>
+
+<p>Using <code class="highlighter-rouge">--import</code> indicates that the block database should be imported from an external source. This is typically expected to be used when connecting to RSK Testnet or RSK Mainnet, and when a reduction in “initial sync time” is desired.</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> <span class="k">${</span><span class="nv">JAR</span><span class="k">}</span> co.rsk.Start <span class="se">\</span>
+  <span class="nt">--import</span> <span class="se">\</span>
+  <span class="nt">--testnet</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Note that the <code class="highlighter-rouge">--import</code> feature is to be used ONLY for testing and development purposes and not in production.</p>
+</blockquote>
 
 <h2 id="advanced">Advanced</h2>
 
