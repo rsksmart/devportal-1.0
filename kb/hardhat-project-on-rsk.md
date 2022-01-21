@@ -25,7 +25,7 @@ To follow this tutorial, you should have knowledge in:
 If you are not familiar with the above, it will be advisable to learn the basics by clicking the links above, before proceeding with this tutorial on how to set up a hardhat project.
 
 
-## What is Hardhat
+## What is Hardhat?
 
 Hardhat is a development environment that enables a developer to compile, deploy, test, and debug your RSK software. It helps to manage and automate the recurring tasks that are inherent to the process of building blockchain applications. 
 
@@ -77,7 +77,7 @@ In the same directory where you installed Hardhat run:
 
 `npx hardhat`
 
-Select **Create an empty hardhat.config.js** with your keyboard and hit enter.
+Select **Create an empty hardhat.config.js** with your keyboard and hit enter, do the same for the remaining prompts
 
 
 When Hardhat is run, it searches for the closest `hardhat.config.js` file starting from the current working directory. This file normally lives in the root of your project and an empty `hardhat.config.js` is enough for Hardhat to work. The entirety of your setup is contained in this file. Hardhat will create a `hardhat.config.js` like the following:
@@ -150,7 +150,7 @@ To set such networks, you’ll have to configure the object with following field
 
 ### 2.5. HD Wallet Configuration : 
 
-For using HD Wallet with Hardhat, you’ll have to set your network’s account with below fields.
+For using HD Wallet with Hardhat, you’ll have to set your network’s account with the below fields.
 
 * `mnemonic`: A string that is your seed phrase of the wallet
 * `path`: the HD parent of all derived keys. Default value : `m/44'/60'/0'/0`.
@@ -217,7 +217,7 @@ require('@nomiclabs/hardhat-waffle');
 const TESTNET_GAS_MULT = 1.1;
 ```
 
-The first line `const fs = require('fs');` provides access to the NodeJs built in File System, `fs` module.
+The first line `const fs = require('fs');` provides access to the NodeJs built-in File System, `fs` module.
 
 The second line, `require('@nomiclabs/hardhat-ethers');` gives us access to the plugin that brings to Hardhat the Ethereum library ethers.js, which allows you to interact with the Ethereum blockchain in a simple way. This plugins adds an `ethers` object to the Hardhat Runtime Environment.
 
@@ -357,8 +357,6 @@ code contracts/Token.sol
 
 Copy the below initial set up code for the Token transfer contract into your integrated development environment. We’ll implement the functions in the smart contract as we go along.
 
-> Note that there are several places marked with `// TODO` as comments.
-> This tutorial will guide you on how to complete this implementation.
 
 ### 4.2. Code walkthrough
 
@@ -400,9 +398,9 @@ contract Token {
 
 The first line - `pragma` - declares the version of Solidity you wish to write your code in. The declaration of the smart contract starts with the `contract` keyword, then the name of the contract. Here, `Token` is the name of our smart contract.
 
-Next, we declare a string variable called `name` to hold the name and identifier for the Token. The line `string public name = "My Hardhat Token";`declares a name variable that is public and of type string. This variables holds the identifier for the Token, which in our case is "My Hardhat Token"
+Next, we declare a string variable called `name` to hold the name and identifier for the Token. The line `string public name = "My Hardhat Token";` declares a named variable that is public and of type `string`. This variable holds the identifier for the Token, which in our case is "My Hardhat Token"
 
-Next, we declare a variable called "symbol" to hold the symbol for the token. The line `string public symbol = "MHT";`declares a symbol variable that is public and of type string. This variable stores the symbol by which the token should be known, in our case "MHT". 
+Next, we declare a variable called "symbol" to hold the symbol for the token. The line `string public symbol = "MHT";` declares a symbol variable that is public and of type `string`. This variable stores the symbol by which the token should be known, in our case "MHT". 
 
 Next, we declare a variable called `totalSupply` to hold the fixed amount of Token in circulation. The line `uint256 public totalSupply = 1000000;` declares a totalSupply variable that is public and of type `uint` (unsigned integer with 256 bits). This variable stores the fixed amount of tokens in supply, in our case is 1000000. 
 
@@ -436,7 +434,7 @@ constructor() {
 ```
 
 
-The line `balances[msg.sender] = totalSupply;` assigns the address of the person deploying the contract to the balances address field, and then assigns the `totalSupply` to the `uint256` field of the balances variable. The line `owner = msg.sender;` assigns the address of the person deploying the contract to the owner variable, which is of type address. 
+The line `balances[msg.sender] = totalSupply;` assigns the address of the person deploying the contract to the balances address field, and then assigns the `totalSupply` to the `uint256` field of the balances variable. The line `owner = msg.sender;` assigns the address of the person deploying the contract to the owner variable, which is of type `address`. 
 
 ### 4.6. Transfer Function
 
@@ -465,7 +463,7 @@ The function transfer takes two parameters, the first is the address to which To
         return balances[account];
     }
 ```
-The function `balanceOf` takes an address as parameter, and then returns the current balance of that address to the caller of the function. The view keyword in the declaration means that the function will not modify state of contract, while the returns keyword indicate that the function will return a `uint256` value.
+The function `balanceOf` takes an address as a parameter and then returns the current balance of that address to the caller of the function. The view keyword in the declaration means that the function will not modify the state of the contract, while the returns keyword indicate that the function will return a `uint256` value.
 
 ### The updated Smart Contract
 
@@ -544,7 +542,7 @@ contract Token {
 
 ### 4.8. Compiling contracts
 
-To compile the contract run `npx hardhat compile` in your terminal. The `compile` task is one of the built-in tasks.
+To compile the contract, run `npx hardhat compile` in your terminal. The `compile` task is one of the built-in tasks.
 
 ```
 $ npx hardhat compile
@@ -634,11 +632,11 @@ The line `const { expect } = require("chai");` imports `Chai` which is an assert
 This is why we're using the `@nomiclabs/hardhat-waffle` plugin, which makes it easier to assert values from Ethereum.
 
 The next line `describe` is a Mocha function that allows you to organize your tests. It's not actually needed, but having your tests organized makes debugging them easier. All Mocha functions are available in the global scope. `describe` receives the name of a section of your test suite, and a callback.
-The callback must define the tests of that section. This callback can't be an async function. Mocha has four functions that let you hook into the test runner's lifecyle. These are: `before`, `beforeEach`, `after`, `afterEach`.
+The callback must define the tests of that section. This callback can't be an async function. Mocha has four functions that let you hook into the test runner's lifecycle. These are: `before`, `beforeEach`, `after`, `afterEach`.
 
-They're very useful to setup the environment for tests, and to clean it up after they run. A common pattern is to declare some variables, and assign them in the`before` and `beforeEach` callbacks.`beforeEach` will run before each test, re-deploying the contract every time. It receives a callback, which can be async.
+They're very useful to set up the environment for tests and to clean it up after they run. A common pattern is to declare some variables, and assign them in the `before` and `beforeEach` callbacks.`beforeEach` will run before each test, re-deploying the contract every time. It receives a callback, which can be async.
 
-The lines `Token = await ethers.getContractFactory("Token");` and `[owner, addr1, addr2, ...addrs] = await ethers.getSigners();`,  get's the ContractFactory and Signers.
+The lines `Token = await ethers.getContractFactory("Token");` and `[owner, addr1, addr2, ...addrs] = await ethers.getSigners();`,  gets the ContractFactory and Signers.
 
 To deploy our contract, we just have to call Token.deploy() and await for it to be deployed(), which happens once its transaction has been mined. 
 
@@ -667,7 +665,7 @@ it("Should assign the total supply of tokens to the owner", async function () {
 });
 ```
 
-The above test assigns the total number of Tokens to the owner, and make sures the total number of tokens is equal to the onwer's balance.
+The above test assigns the total number of Tokens to the owner and makes sure the total number of tokens is equal to the owner's balance.
 
 ### 5.4. Testing transfer of Tokens from one account to another
 
@@ -704,7 +702,7 @@ The next line `await hardhatToken.connect(addr1).transfer(addr2.address, 50);` u
 ```
 
 The line `const initialOwnerBalance = await hardhatToken.balanceOf(owner.address);`, checks and returns the initial balance of the owner's address. The line `await expect( hardhatToken.connect(addr1).transfer(owner.address, 1)
-      ).to.be.revertedWith("Not enough tokens");`, try's to send 1 token from addr1 (0 tokens) to owner's address (1000000 tokens). 
+      ).to.be.revertedWith("Not enough tokens");`, tries to send 1 token from addr1 (0 tokens) to owner's address (1000000 tokens). 
       
 The line `expect(await hardhatToken.balanceOf(owner.address)).to.equal(initialOwnerBalance);`, test that Owner's balance is equal to initialOwnersBalance, and shouldn't have changed.
 
@@ -828,7 +826,7 @@ touch scripts/deploy.js
 code scripts/deploy.js
 ```
 
-Past the below code into your deploy.js file
+Paste the below code into your deploy.js file
 
 ```
 async function main() {
@@ -852,7 +850,7 @@ async function main() {
     });
 ```
 
-Run the below command to deploy your application
+Run the command below to deploy your application
 
 ```
 npx hardhat run scripts/deploy.js
