@@ -140,7 +140,7 @@ module.exports = {
 };
 ```
 
-To set such networks, you’ll have to configure the object with following fields : 
+To set such networks, you’ll have to configure the object with the following fields: 
 
 - `url`: This is the url of the node for custom networks.
 - `chainId`: This number is used to validate the network Hardhat connects to.
@@ -862,3 +862,5 @@ npx hardhat run scripts/deploy.js
 ```
 npx hardhat run scripts/deploy.js --network rsktestnet
 ```
+
+Congratulations! in this article, we were able to set up our environment, created and configured a new hardhat project, compiled and deployed a smart contract using hardhat on the RSK network.
