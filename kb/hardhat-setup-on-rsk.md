@@ -140,7 +140,7 @@ module.exports = {
 };
 ```
 
-To set such networks, you’ll have to configure the object with following fields : 
+To set such networks, you’ll have to configure the object with the following fields: 
 
 - `url`: This is the url of the node for custom networks.
 - `chainId`: This number is used to validate the network Hardhat connects to.
@@ -148,7 +148,7 @@ To set such networks, you’ll have to configure the object with following field
 - `gasMultiplier`: Default value : 1
 - `accounts`: This field controls the account that Hardhat uses. It can use node’s accounts or an HD Wallet. Default : “remote”.
 
-### 2.5. HD Wallet Configuration : 
+### 2.5. HD Wallet Configuration
 
 For using HD Wallet with Hardhat, you’ll have to set your network’s account with the below fields.
 

@@ -477,7 +477,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
     </li>
      <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/kb/hardhat-project-on-rsk/">
+            <a href="/kb/hardhat-setup-on-rsk/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
@@ -485,7 +485,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
                 </div>
             </a>
             <div class="content">
-                <a href="/kb/hardhat-project-on-rsk/">
+                <a href="/kb/hardhat-setup-on-rsk/">
                     <div class="content-container">
                         <p class="card-title rsk_green">How to set up a Hardhat project for RSK Testnet</p>
                         <p class="card-desc">Learn how to set up a Hardhat project for RSK Testnet.
@@ -494,7 +494,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/kb/hardhat-project-on-rsk/">Read More</a>
+                    <a class="green" href="/kb/hardhat-setup-on-rsk/">Read More</a>
                 </div>
             </div>
         </div>
