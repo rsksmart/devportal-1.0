@@ -6,6 +6,8 @@ render_features: 'custom-terminals'
 layout: rsk
 ---
 
+![Banner Image](/assets/img/kb/hardhat-setup-on-rsk/banner-hardhat-project-on-rsk.jpg)
+
 Welcome to the tutorial on how to set up a Hardhat project for RSK Testnet. In this tutorial, we'll do the following steps:
 
 - What is Hardhat?
@@ -862,3 +864,5 @@ npx hardhat run scripts/deploy.js
 ```
 npx hardhat run scripts/deploy.js --network rsktestnet
 ```
+
+Congratulations! In this article, we learnt what hardhat is, successfully setup our environment, created and configured a new hardhat project, compiled and tested the smart contract. 
