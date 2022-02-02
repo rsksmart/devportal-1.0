@@ -470,4 +470,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/bullanetwork/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/bullanetwork/bulla-logo.png" alt="bullanetwork icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/bullanetwork/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Bulla Network</p>
+                        <p class="card-desc">An on-chain credit protocol that helps unlock crypto commerce, allowing users to create and pay invoices in an entirely decentralized way.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/bullanetwork/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
