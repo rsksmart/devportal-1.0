@@ -95,3 +95,4 @@ If you would like to delve deeper, here are some resources and tools that we rec
 - [What are Stablecoins?](https://youtu.be/JHzyQS1rc_s)
 - [RSKSwap](https://app.rskswap.com/swap)
 - [RSK Explorer](https://explorer.rsk.co/)
+- [Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co/)
