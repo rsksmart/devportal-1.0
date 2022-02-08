@@ -57,6 +57,12 @@ For a list of supported cryptocurrencies and tokens, see the [Liquality Solution
 
 Visit the [Open Finance](https://www.rsk.co/openfinance/) solutions page to see the full list of wallets currently integrated with RSK.
 
+## Check out our Stablecoin Gas fee Comparison tool 
+
+This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
+
+[Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co/)
+
 ## Next
 
 Be sure to check out our next article in this guide,
