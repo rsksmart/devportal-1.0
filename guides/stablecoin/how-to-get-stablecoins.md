@@ -64,7 +64,7 @@ on [Understanding Cross Chain Bridges: How to use the RSK Token Bridge](/guides/
 
 This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
 
-[Stablecoin Gas Fee Comparison Tool](https:/stablecoins.rsk.co)
+[Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co)
 
 ----
 
