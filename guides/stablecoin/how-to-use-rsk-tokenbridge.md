@@ -78,6 +78,12 @@ Watch the explainer video below to learn how to cross DAI to rDAI using the RSK 
 
 In the above explainer video, we were able to cross DAI to rDAI directly in defiant wallet using the KriptonMarket option.
 
+## Stablecoin Gas fee Comparison tool 
+
+This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
+
+[Stablecoin Gas Fee Comparison Tool](https:/stablecoins.rsk.co)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.
@@ -95,3 +101,4 @@ If you would like to delve deeper, here are some resources and tools that we rec
 - [What are Stablecoins?](https://youtu.be/JHzyQS1rc_s)
 - [RSKSwap](https://app.rskswap.com/swap)
 - [RSK Explorer](https://explorer.rsk.co/)
+- [Stablecoin Gas Fee Comparison Tool](/guides/stablecoin/stablecoin-on-bitcoin/#stablecoin-gas-fee-comparison-tool)
