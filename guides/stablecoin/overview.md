@@ -39,6 +39,12 @@ Synthetic stablecoins aim to target a return to a reference asset, such as the U
 > Another way is through a peg that is actively managed using an algorithmic monetary policy or smart contract (eg Terra or Ampleforth).
 > These are often used in conjunction with oracles that provide on-chain access to price feeds for fiat and blockchain asset pairs.
 
+## Stablecoin Gas fee Comparison tool 
+
+This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
+
+[Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co)
+
 ## Next
 
 Be sure to check out our next article in this guide,
@@ -61,3 +67,4 @@ If you would like to delve deeper, here are some resources and tools that we rec
 - [What are Stablecoins?](https://youtu.be/JHzyQS1rc_s)
 - [RSKSwap](https://app.rskswap.com/swap)
 - [RSK Explorer](https://explorer.rsk.co/)
+- [Stablecoin Gas Fee Comparison Tool](/guides/stablecoin/stablecoin-on-bitcoin/#stablecoin-gas-fee-comparison-tool)
