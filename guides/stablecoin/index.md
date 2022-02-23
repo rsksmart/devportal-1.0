@@ -38,4 +38,5 @@ In this guide, you will learn about stablecoins, stablecoins on RSK, how to get 
     - [Cross DAI to rDAI](/guides/stablecoin/how-to-use-rsk-tokenbridge/#cross-dai-to-rdai)
         - [Using Defiant](/guides/stablecoin/how-to-use-rsk-tokenbridge/#using-defiant)
         - [Using KriptonMarket](/guides/stablecoin/how-to-use-rsk-tokenbridge/#using-kriptonmarket)
-- [Stablecoin Gas Fee Comparison Tool](https:/stablecoins.rsk.co)
+
+- [Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co)
