@@ -24,7 +24,7 @@ Owner of _rsk_ top level domain. It can `setSubdomainOwner` in RNS.
 
 ## Implementation
 
-RSK Owner is an [`Ownable`](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/ownership/Ownable.sol) contract and represents domain labels ownership fully compatible with [ERC-721](https://eips.ethereum.org/EIPS/eip-721) interface using [OpenZeppelin's implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol).
+RSK Owner is an [`Ownable`](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol) contract and represents domain labels ownership fully compatible with [ERC-721](https://eips.ethereum.org/EIPS/eip-721) interface using [OpenZeppelin's implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol).
 
 The implementation is divided into two main parts: The public methods exposed by RSK Owner, and the restricted access methods to manage upgrades to the solution. The latter will not be described in this article.
 

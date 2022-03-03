@@ -39,7 +39,7 @@ tags: address, erc20, defi, decentralized, token-bridge, tokens, addresses, brid
 
 ## List of ABIs
 
-[ABIs used](https://github.com/rsksmart/tokenbridge/tree/master/abis)
+[ABIs used](https://github.com/rsksmart/tokenbridge/tree/master/bridge/abi)
 
 ## RSK Testnet Explorer, Faucet and Stats
 - [explorer.testnet.rsk.co](https://explorer.testnet.rsk.co/)

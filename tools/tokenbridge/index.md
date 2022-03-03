@@ -38,7 +38,7 @@ Here are the ['addresses'](/tools/tokenbridge/contractaddresses/) of the deploye
 
 The smart contracts used by the bridge and the deploy instructions are in the token bridge repository in the ['bridge folder'](https://github.com/rsksmart/tokenbridge/tree/master/bridge/).
 
-The ABI to interact with the contracts are in the ['abis folder'](https://github.com/rsksmart/tokenbridge/tree/master/abis)
+The ABI to interact with the contracts are in the ['abis folder'](https://github.com/rsksmart/tokenbridge/tree/master/bridge/abi)
 
 
 ### Federation

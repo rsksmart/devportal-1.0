@@ -154,13 +154,13 @@ curl -X POST http://localhost:4444 -H 'Content-Type: application/json' -d '{"jso
 
 Notifier Provider CLI is a command line tool to configure and run the rif-notifier. 
 
-To install and use notifier provider cli see https://github.com/rsksmart/rif-notifier/tree/master/notifier-prov-cli
+To install and use notifier provider cli see [https://github.com/rsksmart/rif-notifier/tree/master/notifier-prov-cli](https://github.com/rsksmart/rif-notifier/tree/master/notifier-prov-cli)
 
 ## Notifier Consumer CLI
 
 Notifier Consumer CLI is a command line tool for RIF-Notifier consumers to perform operations like subscribe to a plan, renew a subscription, and list user subscriptions.
 
-To install and use notifier consumer cli see https://github.com/rsksmart/rif-notifier/tree/master/notifier-cons-cli 
+To install and use notifier consumer cli see [https://github.com/rsksmart/rif-notifier/tree/master/notifier-cons-cli](https://github.com/rsksmart/rif-notifier/tree/master/notifier-cons-cli) 
 
 ### Start the application
 
