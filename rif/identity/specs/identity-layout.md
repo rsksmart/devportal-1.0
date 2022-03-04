@@ -81,6 +81,6 @@ The exact way to detect if an account was used or not is not yet designed. As a 
 
 ## Implementations
 
-- Create mnemonic phrases and get derived seed: [`@rsksmart/rif-id-mnemonic`](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/rif-id-mnemoinc)
+- Create mnemonic phrases and get derived seed: [`@rsksmart/rif-id-mnemonic`](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/rif-id-mnemonic)
 - Get HD Key with RSK and RSK Testnet DID from a seed: [`@rsksmart/rif-id-ethr-did`](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/rif-id-ethr-did)
 - Derivation memoization: [`@rsksmart/rif-id-daf`](https://github.com/rsksmart/rif-identity.js/tree/develop/packages/rif-id-daf)

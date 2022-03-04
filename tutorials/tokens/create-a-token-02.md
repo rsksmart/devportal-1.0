@@ -86,7 +86,7 @@ The version 1.12.0 is what we need.
 
 **5. Install @truffle/hdwallet-provider.**
 
->To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [@truffle/hdwallet-provider](https://github.com/trufflesuite/@truffle/hdwallet-provider).(Node >= 7.6)
+>To connect to RSK, we are going to modify the Truffle configuration. We are going to use a provider that allows us to connect to any network but unlocking an account locally. We are going to use [@truffle/hdwallet-provider](https://github.com/trufflesuite/truffle-hdwallet-provider).(Node >= 7.6)
 
 ```shell
   npm install @truffle/hdwallet-provider

@@ -10,9 +10,9 @@ The overhead gas cost is the extra amount of gas required to process the relay c
 
 ## SmartWallet templates
 
-RIF Relay V1 only has one SmartWallet [template](https://github.com/rsksmart/relay/blob/v1.0.1/contracts/forwarder/SmartWallet.sol), which can be used as-is, or be injected with extra logic during the SmartWallet instance creation.
+RIF Relay V1 only has one SmartWallet [template](https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol), which can be used as-is, or be injected with extra logic during the SmartWallet instance creation.
 
-V2 introduces a cheaper template ([SmartWallet](https://github.com/rsksmart/relay/blob/master/contracts/smartwallet/SmartWallet.sol)), to be used when there's no need for extra custom-logic in the smart wallets. The behaviour is the same as the CustomSmartWallet [template](https://github.com/rsksmart/relay/blob/master/contracts/smartwallet/CustomSmartWallet.sol) of V2, but without this capability.
+V2 introduces a cheaper template ([SmartWallet](https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol)), to be used when there's no need for extra custom-logic in the smart wallets. The behaviour is the same as the CustomSmartWallet [template](https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol) of V2, but without this capability.
 
 
 | RIF Version | SW Template       | Avg. overhead gas |
