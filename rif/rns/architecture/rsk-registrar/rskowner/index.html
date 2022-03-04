@@ -1154,7 +1154,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 10:06:48 +0000T00:00:00.000Z">2021-06-03</time> | -->
+    <!--time role="presentation" datetime="2022-03-03 12:52:23 +0000T00:00:00.000Z">2022-03-03</time> | -->
      6' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/architecture/rsk-registrar/rskowner.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2171,7 +2171,7 @@
 
 <h2 id="implementation">Implementation</h2>
 
-<p>RSK Owner is an <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/ownership/Ownable.sol" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">Ownable</code></a> contract and represents domain labels ownership fully compatible with <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC-721</a> interface using <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol" rel="external noopener noreferrer" target="_blank">OpenZeppelin’s implementation</a>.</p>
+<p>RSK Owner is an <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">Ownable</code></a> contract and represents domain labels ownership fully compatible with <a href="https://eips.ethereum.org/EIPS/eip-721" rel="external noopener noreferrer" target="_blank">ERC-721</a> interface using <a href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol" rel="external noopener noreferrer" target="_blank">OpenZeppelin’s implementation</a>.</p>
 
 <p>The implementation is divided into two main parts: The public methods exposed by RSK Owner, and the restricted access methods to manage upgrades to the solution. The latter will not be described in this article.</p>
 
