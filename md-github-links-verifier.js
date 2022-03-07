@@ -34,7 +34,11 @@ function getGitHubLinks(dirPath = './') {
     const md = readFileSync(mdFile, 'utf8');
     const urls = markdownLinkExtractor(md);
     urls.forEach((url) => {
-      if (url.startsWith('https://github.com/')) {
+      if (
+        url.startsWith('https://github.com/') &&
+        // unless the item is already in the array
+        !githubLinks.some((item) => item.mdFile === mdFile && item.url === url)
+      ) {
         githubLinks.push({ mdFile, url });
       }
     });
@@ -47,45 +51,63 @@ const delay = (ms = 1000) =>
     setTimeout(r, ms);
   });
 
-async function getBrokenLinks(
-  items = [], // { mdFile, url }
-  pauseTime = 20000, // ms
+const deleteObject = (array = [], object = { url: '', mdFile: '' }) => {
+  const index = array.findIndex(
+    (element) => element.url === object.url && element.mdFile === object.mdFile,
+  );
+  if (index !== -1) array.splice(index, 1);
+};
+
+async function getBrokenLinksConcurrently(
+  items = [],
+  concurrency = 3,
+  pauseTime = 10000,
 ) {
   const itemsCopy = [...items];
-  const brokenLinks = [];
-  let counter = 1;
-  const fetchSequentially = async () => {
+  let brokenLinks = [];
+  const fetchInChunks = async () => {
     if (itemsCopy.length > 0) {
-      const [item] = itemsCopy.slice(0, 1);
-      console.log(`${counter} of ${items.length}. Checking ${item.url} `);
-      try {
-        await axios.get(item.url);
-        console.log('OK');
-      } catch (error) {
-        const errorCode = error?.response?.status;
-        if (errorCode === 429) {
-          console.log(`Too many requests. Waiting ${pauseTime} ms.`);
-          await delay(pauseTime);
-          await fetchSequentially();
+      const chunk = itemsCopy.slice(0, concurrency);
+      const promises = chunk.map((item) => axios.get(item.url, { item }));
+      const results = await Promise.allSettled(promises);
+      let tooManyRequests = false;
+      for (let result of results) {
+        let item;
+        if (result.status === 'rejected') {
+          const errorStatus = result?.reason?.response?.status;
+          if (errorStatus === 429) {
+            console.log(`Too many requests. Waiting ${pauseTime} ms.`);
+            tooManyRequests = true;
+            break;
+          } else {
+            item = result.reason.config.item;
+            console.log(item.url);
+            console.log('Broken');
+            item.status = errorStatus;
+            brokenLinks.push(item);
+          }
         } else {
-          console.log('Broken');
-          item.status = errorCode;
-          brokenLinks.push(item);
+          item = result.value.config.item;
+          console.log(item.url);
+          console.log('OK');
         }
+        deleteObject(itemsCopy, item);
       }
-      counter += 1;
-      itemsCopy.splice(0, 1);
-      await fetchSequentially();
+      if (tooManyRequests) {
+        await delay(pauseTime);
+      }
+      await fetchInChunks();
     }
   };
-  await fetchSequentially();
+  await fetchInChunks();
   return brokenLinks;
 }
 
 async function findBrokenLinks() {
   try {
     const githubLinks = getGitHubLinks();
-    const brokenLinks = await getBrokenLinks(githubLinks);
+    console.log(githubLinks.length);
+    const brokenLinks = await getBrokenLinksConcurrently(githubLinks);
     console.log(`Writing broken links to ${brokenLinksFile}`);
     writeFileSync(
       join(__dirname, brokenLinksFile),
