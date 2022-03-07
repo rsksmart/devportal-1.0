@@ -111,12 +111,12 @@ The model was designed to align the economic incentives of the different actors 
 - [FAQs](https://moneyonchain.com/faq-defi-for-bitcoin/)
 
 **API Docs**
-- [RBTC-collateralized stablecoin contract](https://github.com/money-on-chain/main-RBTC-contract/blob/master/README.md)
+- [RBTC-collateralized stablecoin contract](https://github.com/money-on-chain/main-RBTC-contract/#readme)
 - [Money on Chain API](https://github.com/money-on-chain/py_Moneyonchain/blob/master/README.md)
 - [Money on Chain Oracle](https://github.com/money-on-chain/Amphiraos-Oracle/blob/master/README.md)
 - [Money on Chain Price Feeder](https://github.com/money-on-chain/price-feeder/blob/master/README.md)
 - [Money on Chain Governance Smart Contract System](https://github.com/money-on-chain/Areopagus-Governance/blob/develop/README.md)
-- [RIF Dollar on Chain Contract](https://github.com/money-on-chain/RDOC-Contract/blob/master/README.md)
+- [RIF Dollar on Chain Contract](https://github.com/money-on-chain/RDOC-Contract/#readme)
 
 ### Get in touch
 

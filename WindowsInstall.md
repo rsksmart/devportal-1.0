@@ -92,7 +92,7 @@ If you get an error similar to this:
 Your Ruby version is 2.6.5, but your Gemfile specified 2.6.3
 ```
 
-You must install the correct Ruby version, look [here](https://github.com/solangegueiros/test/blob/feature/WindowsSetupInstructions/windowsInstall.md#ruby).
+You must install the correct Ruby version, look [here](https://github.com/rsksmart/devportal/blob/master/WindowsInstall.md#ruby).
 
 Verify your installation:
 
