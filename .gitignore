@@ -9,3 +9,4 @@ yarn.lock
 /node_modules
 /package-lock.json
 /Gemfile.lock
+/.scripts/broken-links.json
