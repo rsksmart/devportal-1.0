@@ -12,7 +12,7 @@ const markdownLinkExtractor = require('markdown-link-extractor');
 const excludes = ['node_modules'];
 const brokenLinksFile = 'broken-links.json';
 
-function getAllMdFiles(dirPath = './', arrayOfFiles = []) {
+function getAllMdFiles(dirPath = '../', arrayOfFiles = []) {
   let files = [...arrayOfFiles];
   readdirSync(dirPath).forEach((file) => {
     if (
@@ -27,7 +27,7 @@ function getAllMdFiles(dirPath = './', arrayOfFiles = []) {
   return files;
 }
 
-function getGitHubLinks(dirPath = './') {
+function getGitHubLinks(dirPath = '../') {
   const mdFiles = getAllMdFiles(dirPath);
   const githubLinks = [];
   mdFiles.forEach((mdFile) => {
@@ -58,6 +58,11 @@ const deleteObject = (array = [], object = { url: '', mdFile: '' }) => {
   if (index !== -1) array.splice(index, 1);
 };
 
+const printItem = (item) => {
+  console.log(item.mdFile);
+  console.log(item.url);
+};
+
 async function getBrokenLinksConcurrently(
   items = [],
   concurrency = 3,
@@ -81,14 +86,14 @@ async function getBrokenLinksConcurrently(
             break;
           } else {
             item = result.reason.config.item;
-            console.log(item.url);
+            printItem(item);
             console.log('Broken');
             item.status = errorStatus;
             brokenLinks.push(item);
           }
         } else {
           item = result.value.config.item;
-          console.log(item.url);
+          printItem(item);
           console.log('OK');
         }
         deleteObject(itemsCopy, item);
@@ -106,7 +111,7 @@ async function getBrokenLinksConcurrently(
 async function findBrokenLinks() {
   try {
     const githubLinks = getGitHubLinks();
-    console.log(githubLinks.length);
+    console.log(`Verifying ${githubLinks.length} links`);
     const brokenLinks = await getBrokenLinksConcurrently(githubLinks);
     console.log(`Writing broken links to ${brokenLinksFile}`);
     writeFileSync(
