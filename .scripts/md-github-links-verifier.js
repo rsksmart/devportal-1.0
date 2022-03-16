@@ -21,7 +21,7 @@ function getAllMdFiles(dirPath = '../', arrayOfFiles = []) {
     ) {
       files = getAllMdFiles(`${dirPath}/${file}`, files);
     } else if (extname(file) === '.md') {
-      files.push(join(dirPath, '/', file));
+      files.push(join(__dirname, '../', dirPath, '/', file));
     }
   });
   return files;
