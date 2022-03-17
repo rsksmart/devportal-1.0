@@ -10,7 +10,8 @@
     "generate-webinar-ical": "node .scripts/generate-webinar-ical.js",
     "generate-webinar-json": "node .scripts/generate-webinar-json.js",
     "generate-webinar-dedupe": "node .scripts/generate-webinar-dedupe.js",
-    "generate-webinar-pages": "node .scripts/generate-webinar-pages.js"
+    "generate-webinar-pages": "node .scripts/generate-webinar-pages.js",
+    "verify-github-links": "node .scripts/md-github-links-verifier.js"
   },
   "repository": {
     "type": "git",
