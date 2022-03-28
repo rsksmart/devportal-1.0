@@ -46,7 +46,17 @@ Users provide funding for the liquidity pools and get rewarded with transaction 
 
 The AMM-based DEXes can encounter *slippage*, which emerges due to a lack of liquidity. Slippage is  evident when the lack of liquidity leads to the buyer paying more than the market price on their orders. In such cases, the larger orders are more likely to encounter higher slippage. Furthermore, liquidity providers could also face the risks of impermanent loss due to the volatility of one asset in trading pairs. 
 
-The notable examples of AMM DEXes on RSK include [Sovryn](https://www.sovryn.app/), [Blindex](https://app.blindex.io/), and [RSKSwap](https://app.rskswap.com/).
+The notable examples of AMM DEXes on RSK include [Sovryn](/solutions/sovryn/), [Blindex](https://app.blindex.io/), and [RSKSwap](https://app.rskswap.com/).
+
+
+## Next
+
+Be sure to check out our next article in this guide,
+about [The difference between a Centralized and a Decentralized Exchange](/guides/dex/dex-vs-cex/)
+
+----
+
+If you would like to delve deeper, here are some resources and tools that we recommend.
 
 **Resources**:
 

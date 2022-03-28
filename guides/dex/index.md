@@ -18,3 +18,5 @@ In this guide, you will learn about decentralized exchanges (DEX), types of DEXe
         - [Order Book DEXes](/guides/dex/overview#order-book-dexes)
         - [DEX Aggregators](/guides/dex/overview#dex-aggregators)
         - [Automated Market Makers (AMMs)](/guides/dex/overview#automated-market-makers)
+- [The difference between a DEX and a CEX](/guides/dex/dex-vs-cex/)
+    - [Pros and Cons of a DEX](/guides/dex/dex-vs-cex#pros-and-cons-of-dexes)
