@@ -31,3 +31,8 @@ In this guide, you will learn about decentralized exchanges (DEX), types of DEXe
     - [Staking](/guides/dex/features-of-a-dex#staking)
     - [Liquidity Pools](/guides/dex/features-of-a-dex#liquidity-pools)
     - [Drawbacks](/guides/dex/features-of-a-dex#drawbacks)
+- [DEXes on RSK](/guides/dex/dexes-on-rsk/)
+    - [Sovryn](/guides/dex/dexes-on-rsk#sovryn)
+    - [RSK Swap](/guides/dex/dexes-on-rsk#rsk-swap)
+    - [BlinDEX](/guides/dex/dexes-on-rsk#blindex)
+    - [AtomicDEX](/guides/dex/dexes-on-rsk#atomicdex)

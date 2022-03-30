@@ -114,6 +114,10 @@ Impermanent loss happens when the price of a token increases or decreases after 
   <iframe width="949" height="534" src="https://www.youtube.com/embed/8XJ1MSTEuU0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+## Next
+Be sure to check out our next article in this guide,
+about [DEXes on RSK](/guides/dex/dexes-on-rsk/)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.
