@@ -29,6 +29,11 @@ The aspect of DEXes being more secure due to decentralization cuts both ways. An
 
 DEXes require users to manage their own wallet software. This is very difficult and too technical for many users, often resulting in poor user experience.
 
+## Next
+
+Be sure to check out our next article in this guide,
+about [The Features of a DEX](/guides/dex/features-of-a-dex/)
+
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.
