@@ -5,12 +5,6 @@ tags: tutorial, rsk, geth, remix, ethereum, smart contract
 description: "How to compile a smart contract using Remix and deploy it on a local node using Geth."
 ---
 
----
-layout: redirect
-permalink: /tutorials/ethereum-devs/geth-attach-deploy-smart-contract/
-redirect: /kb/geth-attach-deploy-smart-contracts/
----
-
 RSK’s virtual machine implementation is compatible with the Ethereum virtual machine (EVM), which enables us to make use of many of Ethereum developer tools.
 
 In this tutorial I will show you step-by-step how to compile a smart contract using Remix and deploy it on a local node using Geth.

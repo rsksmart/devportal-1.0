@@ -5,12 +5,6 @@ tags: tutorial, rsk, remix, metamask
 description: "Configure a wallet using Metamask, connect with Remix, compile and deploy a smart contract at RSK testnet."
 ---
 
----
-layout: redirect
-permalink: /tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/
-redirect: /kb/remix-and-metamask-with-rsk-testnet/
----
-
 RSK's virtual machine implementation is compatible with the Ethereum EVM,
 we can also use many of Ethereum's developer tools.
 

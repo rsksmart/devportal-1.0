@@ -5,12 +5,6 @@ tags: tutorial, rsk, frontend, web3
 description: "How to create a frontend for smart contracts using web3.js directly connected to a local node."
 ---
 
----
-layout: redirect
-permalink: /tutorials/frontend/frontend-web3-local/
-redirect: /kb/frontend-web3-local/
----
-
 In this tutorial I will show you step by step how to create a front end to interact with a smart contract deployed at RSK local network, using only Javascript and HTML.
 
 # Overview
