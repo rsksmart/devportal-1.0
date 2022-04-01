@@ -7,6 +7,8 @@ layout: rsk
 
 In this section, we will explore some of the different DEXes on RSK, and how to get started. We'll cover Sovryn, RSK Swap, BlinDEX, and AtomicDEX.
 
+![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpeg)
+
 ## Sovryn
 
 [Sovryn](https://developers.rsk.co/solutions/sovryn/) is a non-custodial and permissionless smart contract based system for Bitcoin lending, borrowing and margin trading. Users can buy SOV with RBTC, swap and trade: DOC, BPRO, rUSDT, xUSD, and MOC tokens on Sovryn.
