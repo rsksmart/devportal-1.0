@@ -7,6 +7,8 @@ layout: rsk
 
 In this section, We will explore the features of a DEX, such as Lending, Borrowing, Yield Farming, Staking, Liquidity Pools and the Drawbacks associated with DEXes.
 
+![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpeg)
+
 ## Lending
 
 A DeFi lending protocol is a platform where users can lend and borrow crypto assets without intermediaries via P2P. In a traditional financial system, banks give loans to the borrower. A DEX platform allows lenders to earn interest for lending their crypto assets. Additionally, these platforms provide ways for long-term investors to earn high-interest rates.

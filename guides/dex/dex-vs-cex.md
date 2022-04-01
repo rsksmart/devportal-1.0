@@ -7,6 +7,8 @@ layout: rsk
 
 In this section, We will explore the differences between a centralized exchange(CEX) and a decentralized Exchange (DEX). We'll also cover the pros and cons of DEXes.
 
+![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpeg)
+
 The idea of centralization refers to the use of a single entity that controls transactions. Buyers and sellers alike trust this entity to handle their assets. This is common in a bank setup, where a customer trusts the bank to hold his or her money. 
 
 ![dex-vs-cex](/assets/img/guides/dex/dex-vs-cex.png)
