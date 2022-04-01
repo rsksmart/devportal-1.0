@@ -1,6 +1,6 @@
 ---
-title: 'Confirm that you own an RSK address using RIF Identity Manager'
-description: 'Be sure that you truly "control" a particular address. All you need is Chrome and MetaMask. You do not need any RBTC balance!'
+title: 'Verify Address Ownership'
+description: 'Confirm that you own an RSK address using RIF Identity Manager'
 tags: metamask, address, account, rif-identity
 layout: 'rsk'
 ---
