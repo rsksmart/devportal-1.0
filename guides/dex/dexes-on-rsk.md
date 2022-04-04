@@ -7,7 +7,7 @@ layout: rsk
 
 In this section, we will explore some of the different DEXes on RSK, and how to get started. We'll cover Sovryn, RSK Swap, BlinDEX, and AtomicDEX.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpeg)
+![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
 
 ## Sovryn
 
