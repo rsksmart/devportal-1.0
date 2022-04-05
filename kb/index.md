@@ -394,7 +394,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             <div class="content">
                 <a href="/kb/hardhat-setup-on-rsk/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">How to set up a Hardhat project for RSK Testnet</p>
+                        <p class="card-title rsk_green">Setup a Hardhat project for RSK Testnet</p>
                         <p class="card-desc">Learn how to set up a Hardhat project for RSK Testnet.
                         </p>
                     </div>
@@ -402,6 +402,123 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/kb/hardhat-setup-on-rsk/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/geth-attach-local-node/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/geth-attach-local-node/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Geth attach to RSK local node</p>
+                        <p class="card-desc">Learn how to use the Ethereum client Geth to attach to an RSK local node (regtest) and run JSON-RPC commands.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/geth-attach-local-node/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/geth-attach-deploy-smart-contracts/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/geth-attach-deploy-smart-contracts/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Deploy smart contract using Remix and Geth</p>
+                        <p class="card-desc">Learn how to compile a smart contract using Remix and deploy it on a local node using Geth.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/geth-attach-deploy-smart-contracts/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/remix-and-metamask-with-rsk-testnet/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/remix-and-metamask-with-rsk-testnet/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Remix and Metamask with RSK testnet</p>
+                        <p class="card-desc">Learn how to configure a wallet using Metamask and Remix at RSK testnet.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/remix-and-metamask-with-rsk-testnet/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/first-frontend-web3-injected/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/first-frontend-web3-injected/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Create your first frontend</p>
+                        <p class="card-desc">Learn how to create your first frontend for smart contracts using an injected web3 provider.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/first-frontend-web3-injected/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/frontend-web3-local/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/frontend-web3-local/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Frontend with web3 in a local node</p>
+                        <p class="card-desc">Learn how to create a frontend for smart contracts using web3.js directly connected to a local node.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/frontend-web3-local/">Read More</a>
                 </div>
             </div>
         </div>

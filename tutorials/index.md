@@ -13,16 +13,8 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 
 ## For Ethereum developers
 
-- [Geth attach to RSK local node](/tutorials/ethereum-devs/geth-attach-local-node/)
-- [Deploy a smart contract using Remix and Geth](/tutorials/ethereum-devs/geth-attach-deploy-smart-contract/)
 - [Port Ethereum dApps](/tutorials/ethereum-devs/port-ethereum-dapps/)
-- [Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
 - [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
-
-## To build your front end
-
-- [How to create your first frontend for smart contracts](/tutorials/frontend/first-frontend-web3-injected/)
-- [How to create a frontend for smart contracts using web3 connected to a local node](/tutorials/frontend/frontend-web3-local/)
 
 ## To create tokens
 
