@@ -14,7 +14,7 @@ Satoshi consensus, based on proof-of-work (PoW), is the only consensus system th
 - Stable phase: Merge-mining is between 30% and 60% of Bitcoin hashrate.
 - Mature phase: Merge-mining is higher than 60% of Bitcoin hashrate.
 
-RSK has left behind its bootstrapping phase, when rogue merge-miners could theoretically revert RSK blockchain at a low cost. As of January 2019, more than 40% of Bitcoin miners are engaged in RSK merge-mining. But as RSK fees remain low compared to Bitcoin block reward, the cost to attack RSK through double-spending is lower than Bitcoin’s.
+RSK has left behind its bootstrapping phase, when rogue merge-miners could theoretically revert RSK blockchain at a low cost. As of December 2021, more than 50% of Bitcoin miners are engaged in RSK merge-mining. But as RSK fees remain low compared to Bitcoin block reward, the cost to attack RSK through double-spending is lower than Bitcoin’s.
 RSK has some properties to reduce the risk of double-spend attacks, such as long miner rewards maturity. Still RSK Lab research team has developed several protections to prevent attacks during the stable and mature phases of the project:
 
 * ___Signed notifications:___ RSK clients can make use of signed notifications by notaries. Nodes can use these notifications to detect Sybil attacks and inform the user.
