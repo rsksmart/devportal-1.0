@@ -500,7 +500,7 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
-        <li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/frontend-web3-local/">
                 <div class="icon rif h-100">
@@ -519,6 +519,98 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/kb/frontend-web3-local/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/interact-with-smart-contracts/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/interact-with-smart-contracts/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Interact with Smart Contracts</p>
+                        <p class="card-desc">Learn how to interact with a Smart Contract.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/interact-with-smart-contracts/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/compile-smart-contracts-go/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/compile-smart-contracts-go/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Compile Smart Contracts to Go</p>
+                        <p class="card-desc">Learn how to interact with a Smart Contract in a Go application.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/compile-smart-contracts-go/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/deploy-smart-contracts/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/deploy-smart-contracts/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Deploy Smart Contracts</p>
+                        <p class="card-desc">Learn how to develop and deploy smart contracts in RSK.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/deploy-smart-contracts/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+     <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/interface-registry/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/interface-registry/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Universal Smart Contract Interface Registry</p>
+                        <p class="card-desc">See the ERC1820 standard interface, address support and smart contract implementation.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/interface-registry/">Read More</a>
                 </div>
             </div>
         </div>
