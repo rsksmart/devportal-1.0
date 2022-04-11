@@ -615,5 +615,74 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             </div>
         </div>
     </li>
+         <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/create-a-token/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/create-a-token/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Create your first token</p>
+                        <p class="card-desc">Learn how to create a token with less than 10 lines of code, using Truffle and Open Zeppelin smart contracts at RSK testnet.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/create-a-token/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+     <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/create-a-token-02/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/create-a-token-02/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Create other ERC20 token</p>
+                        <p class="card-desc">Other approach to create a token using Truffle and Open Zeppelin smart contracts at RSK testnet.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/create-a-token-02/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/create-a-collectable-token/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/create-a-collectable-token/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Collectable tokens on RSK network</p>
+                        <p class="card-desc">Learn how to create your own collectable token on RSK network using Truffle framework, Open Zeppelin libraries and a react frontend.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/create-a-collectable-token/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
 
