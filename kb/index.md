@@ -673,13 +673,151 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials
             <div class="content">
                 <a href="/kb/create-a-collectable-token/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Collectable tokens on RSK network</p>
-                        <p class="card-desc">Learn how to create your own collectable token on RSK network using Truffle framework, Open Zeppelin libraries and a react frontend.</p>
+                        <p class="card-title rsk_green">Collectable tokens on RSK</p>
+                        <p class="card-desc">Learn how to create your own collectable token on RSK network using Truffle framework, and Open Zeppelin libraries</p>
                     </div>
                 </a>
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/kb/create-a-collectable-token/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/truffle-boxes-prerequisites/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/truffle-boxes-prerequisites/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Truffle Boxes Prerequisites</p>
+                        <p class="card-desc">Learn how to install and configure the prerequisites to use any RSK Truffle box on RSK networks.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/truffle-boxes-prerequisites/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/truffle-pet-shop-box/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/truffle-pet-shop-box/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Truffle Boxes with RSK</p>
+                        <p class="card-desc">Configure Truffle to connect to both Regtest and Testnet, deploy smart contracts to multiple networks.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/truffle-pet-shop-box/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+     <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/truffle-rsk-starter-box/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/truffle-rsk-starter-box/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Truffle Box RSK Starter Box</p>
+                        <p class="card-desc">Learn how to use the Truffle box rsk-starter-box, which comes with everything you need to start using Truffle on RSK networks.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/truffle-rsk-starter-box/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+     <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/truffle-rsk-react-box/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/truffle-rsk-react-box/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Truffle Box RSK React Box</p>
+                        <p class="card-desc">Learn how to install and use a Truffle box that comes with React and Express, and work with the RSK network.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/truffle-rsk-react-box/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/truffle-rsk-next-box/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/truffle-rsk-next-box/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Truffle Box RSK Next Box</p>
+                        <p class="card-desc">Learn how to install and use a Truffle box that comes with Next JS, and works with the RSK network.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/truffle-rsk-next-box/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+     <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/truffle-rsk-react-express-box/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/truffle-rsk-react-express-box/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Truffle Box RSK React Express Box</p>
+                        <p class="card-desc">Learn how to install and use a Truffle box that comes with React and Express, and work with the RSK network.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/truffle-rsk-react-express-box/">Read More</a>
                 </div>
             </div>
         </div>
