@@ -16,15 +16,6 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 - [Port Ethereum dApps](/tutorials/ethereum-devs/port-ethereum-dapps/)
 - [Setup a project with Truffle and OpenZeppelin](/tutorials/ethereum-devs/setup-truffle-oz/)
 
-## Truffle tutorials
-
-- [Truffle Boxes](/tutorials/truffle-boxes/)
-- [Using Truffle Boxes with RSK](/tutorials/truffle-boxes/pet-shop-box)
-- [rsk-starter-box](/tutorials/truffle-boxes/rsk-starter-box): This box comes with everything you need to start using smart contracts at RSK Network. It includes network configs for Mainnet and Testnet.
-- [rsk-react-box](/tutorials/truffle-boxes/rsk-react-box): This box comes with everything you need to start using smart contracts from a react app on RSK Network.
-- [rsk-next-box](/tutorials/truffle-boxes/rsk-next-box): In this box you'll find a basic starter pack. It includes Truffle and Next JS.
-- [rsk-react-express-box](/tutorials/truffle-boxes/rsk-react-express-box): In this box you'll find a basic starter pack. It includes Truffle, React and Express JS.
-
 ## Other tutorials
 
 - [Compile Smart Contracts to Go](/tutorials/compile-smart-contracts-go/)
