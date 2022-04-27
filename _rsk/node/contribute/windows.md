@@ -70,4 +70,4 @@ Inside the field `Program Arguments` in your run configuration.
 
 ## Any problems?
 
-We hope our [troubleshooting section](/rsk/node/troubleshooting) can help you!
+We hope the [troubleshooting section](/rsk/node/troubleshooting) can help you!

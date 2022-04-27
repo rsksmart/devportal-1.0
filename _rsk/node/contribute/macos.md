@@ -42,7 +42,7 @@ You have to run the following commands on terminal:
 
 ## Get the source code
 
-Using the installed command-line tool Git, you need to retrieve (or clone) the RskJ Github source code from [here](https://github.com/rsksmart/rskj).
+Using the installed command-line tool Git, you need to retrieve (or clone) the RSKj Github source code from [here](https://github.com/rsksmart/rskj).
 
 Run these commands on Git command line:
 
@@ -61,7 +61,7 @@ git checkout tags/IRIS-3.2.0 -b IRIS-3.2.0
 ## Get external dependencies
 
 Before you can launch IntelliJ IDEA, there is an important step.
-Browse in your RskJ cloned directory and then launch `configure.sh` with the following terminal command:
+Browse in your RSKj cloned directory and then launch `configure.sh` with the following terminal command:
 
 ```shell
 ./configure.sh
@@ -120,4 +120,4 @@ Inside the field `Program arguments` in your run configuration.
 
 ## Any problems?
 
-We hope our [troubleshooting section](/rsk/node/troubleshooting) can help you!
+We hope the [troubleshooting section](/rsk/node/troubleshooting) can help you!

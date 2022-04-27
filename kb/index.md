@@ -2,7 +2,7 @@
 layout: rsk
 title: Welcome to RSK and RIF Knowledgebase
 tags: knowledgebase, rsk, faqs, help, support
-description: "Welcome to RSK and RIF Knowledge-base; Explore our faqs, tutorials and guides to help you get started on building on RSK and RIF Technologies"
+description: "Welcome to RSK and RIF Knowledge-base; Explore RSK faqs, tutorials and guides to help you get started on building on RSK and RIF Technologies"
 ---
 
 <div class="row features-list">

@@ -49,7 +49,7 @@ git checkout tags/IRIS-3.2.0 -b IRIS-3.2.0
 ## Get external dependencies
 
 Before you can launch IntelliJ IDEA, there is an important step.
-Browse in your RskJ cloned directory and then launch `configure.sh` with the following terminal command:
+Browse in your RSKj cloned directory and then launch `configure.sh` with the following terminal command:
 
 ```shell
 ./configure.sh
@@ -116,4 +116,4 @@ Inside the field `Program Arguments` in your run configuration.
 
 ## Any problems?
 
-We hope our [troubleshooting section](/rsk/node/troubleshooting) can help you!
+We hope the [troubleshooting section](/rsk/node/troubleshooting) can help you!

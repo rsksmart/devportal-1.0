@@ -13,7 +13,7 @@ Chainbeat provides blockchain data insights to help understand usage and behavio
 
 - Access key developer insights like transactions, users, gas usage, and errors
 - Use proactive alerts to help with app development
-- Benchmark application usage data with other projects in another blockchain ecosystem (such as Ethereum) using our Report Studio
+- Benchmark application usage data with other projects in another blockchain ecosystem (such as Ethereum) using the Report Studio
 - Offline data access for advanced business analytics
 - Simple setup with no need for any additional software installation
 - Support for wallets to stay on top of everything
@@ -32,7 +32,7 @@ Unleash the true power of your data. Identify key trends, understand the **why**
 
 ### Chainbeat's Goal
 
-Our goal at Chainbeat is to provide blockchain data insights that can help understand usage and behavioral metrics for Decentralized Apps and protocols that are building web 3.0.
+Chainbeat's goal is to provide blockchain data insights that can help understand usage and behavioral metrics for Decentralized Apps and protocols that are building web 3.0.
 
 ### Functionalities
 
@@ -46,7 +46,7 @@ With Chainbeat you get access to the following:
 
 **Exports**: Download on-chain data slices and then use any BI tool to slice and dice the data off-chain to take your analytics to the next level.
 
-**Pricing Data**: Get key insights into how system and user activity impact market pricing with our custom pricing data integration.
+**Pricing Data**: Get key insights into how system and user activity impact market pricing with the custom pricing data integration.
 
 The first step is to [sign up for a free account](http://chainbeat.io/users/sign_up) with Chainbeat. Then [add a smart contract or wallet address](https://chainbeat.io/add-address-help) to begin your Chainbeat journey.
 
@@ -72,7 +72,7 @@ In addition, Chainbeat has custom reports and real-time alerts that allow the us
 
 ### Building Blocks
 
-Our infrastructure should be able to handle a high volume of data. So we went about architecting our system to be robust and scalable.
+The Chainbeat infrastructure should be able to handle a high volume of data. So we went about architecting the system to be robust and scalable.
 
 ![chainbeat-infrastructure](/assets/img/solutions/chainbeat/chainbeat-infrastructure.png)
 

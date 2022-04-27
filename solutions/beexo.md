@@ -60,7 +60,7 @@ The best in messaging privacy protection.
  
 **Infrastructure:**
 We have processed over 15 million transactions to date.
-We have our own nodes and super scalable infrastructure that allows us to support high demand.
+We have nodes and super scalable infrastructure that allows us to support high demand.
 Beexo currently interacts with 4 different blockchains. 
  
 **Transfer:**
@@ -76,7 +76,7 @@ and now with the recent addition of its desktop version,
 wallet access & control is even more convenient. 
  
 **Management of our own nodes:**
-We have our own nodes and a highly scalable infrastructure
+We have nodes and a highly scalable infrastructure
 which allows us to support high demand.
  
 **QR Scanner:**
@@ -88,7 +88,7 @@ and confirming the transaction.
 Import and manage an infinite number of wallets, each with its own encryption settings.
  
 **Safe and Secure:**
-Our prime focus is on the safety and anonymity of the users.
+The prime focus is on the safety and anonymity of the users.
 Client based storage makes sure that
 the keys are stored locally on the device,
 and authentication systems prevents unauthorized access.
@@ -110,7 +110,7 @@ No KYC bureaucracy needed to access your funds,
 no IP association,
 no identity linking,
 no transaction tracking.
-Our servers anonymise your requests
+The servers anonymise your requests
 by hiding your IP address from prying eyes. 
  
 **Enhanced privacy/anonymity:**
@@ -119,7 +119,7 @@ Strong wallet encryption and cryptography
 guarantee that your funds will remain safe under your ultimate control.
  
 **Testnet for all currencies:** 
-All the currencies listed in our wallet
+All the currencies listed in the Beexo wallet
 can be used in Testnet. 
 
 ### Supported Token Standards

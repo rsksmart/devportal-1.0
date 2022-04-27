@@ -30,7 +30,7 @@ The functionary’s role is to ensure that only valid multi-signature transactio
 
 ## Merged-miners and the Armadillo Monitor
 
-A large portion of Bitcoin miners participate in RSK merge-mining, providing the persistence and liveness blockchain properties required for effectively securing the RSK network. The role of merged-miners in the Powpeg protocol is the largest and most crucial layer of our defence-in-depth approach in securing the bridge between RSK and Bitcoin. Functionaries rely on the stability of merge-mining to ensure valid multi-signature transactions are signed and validated in a secure and timely manner.
+A large portion of Bitcoin miners participate in RSK merge-mining, providing the persistence and liveness blockchain properties required for effectively securing the RSK network. The role of merged-miners in the Powpeg protocol is the largest and most crucial layer of RSK's defence-in-depth approach in securing the bridge between RSK and Bitcoin. Functionaries rely on the stability of merge-mining to ensure valid multi-signature transactions are signed and validated in a secure and timely manner.
 
 ## Economic Actors and the Bridge Contract
 
@@ -58,7 +58,7 @@ Defence-in-depth is realized by a careful separation of responsibilities so that
 
 As described above, each functionary not only runs a Powpeg node, but also a PowHSM. In the coming months, all existing Powpeg members will have finished upgrading to the PowHSM version 2.0. As explained before, each PowHSM runs a consensus node in SPV mode, so commands need to be backed-up by real hashrate. Cheating the PowHSM becomes too difficult if not impossible without hacking several Bitcoin mining pools.
 
-The term “vetocracy” is very useful in this context. A vetocracy is a system of governance whereby no single entity can acquire enough power to make decisions and take effective charge. Our defence-in-depth approach to security of the RSK Powpeg follows such an ideology, rendering attacks ineffective. A good question to ask when designing a 2-way peg system should be: "how closely does our protocol resemble a vetocracy", saving many from endless religious debates over federated vs. decentralized systems.
+The term “vetocracy” is very useful in this context. A vetocracy is a system of governance whereby no single entity can acquire enough power to make decisions and take effective charge. RSK's defence-in-depth approach to security of the Powpeg follows such an ideology, rendering attacks ineffective. A good question to ask when designing a 2-way peg system should be: "how closely does the protocol resemble a vetocracy", saving many from endless religious debates over federated vs. decentralized systems.
 
 ## Coordination Transparency
 
@@ -68,7 +68,7 @@ Finally the bridge smart-contract builds the peg-out transaction and won’t let
 
 ## Firmware Attestation
 
-RSK PowHSM firmwares, as well the full node and Powpeg nodes, are generated using deterministic builds, yet currently the firmware installation on PowHSMs cannot be fully trust-free. An auditing group must attest for the correctness of the process of firmware installation on each new device or batch of devices. But we’re improving this area with a new defence: the next iteration of the PowHSM firmware (version 2.1) is capable of providing firmware attestation using security features provided by the device. Therefore, our next objective is to include firmware attestation as part of our deployment procedures, or even periodically as *keepalive* messages. Soon attestation messages will be stored in the blockchain and every member of the community will be able to validate PowHSM firmwares.
+RSK PowHSM firmwares, as well the full node and Powpeg nodes, are generated using deterministic builds, yet currently the firmware installation on PowHSMs cannot be fully trust-free. An auditing group must attest for the correctness of the process of firmware installation on each new device or batch of devices. But we’re improving this area with a new defence: the next iteration of the PowHSM firmware (version 2.1) is capable of providing firmware attestation using security features provided by the device. Therefore, the next objective is to include firmware attestation as part of RSK's deployment procedures, or even periodically as *keepalive* messages. Soon attestation messages will be stored in the blockchain and every member of the community will be able to validate PowHSM firmwares.
 
 ## Proof of Work is Proof of Time
 

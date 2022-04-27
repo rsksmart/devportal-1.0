@@ -11,7 +11,7 @@ layout: 'rsk'
 
 ## How Tenderly integrates with RSK
 
-Check out our knowledge base article on
+Check out the knowledge base article on
 [how to build on Tenderly with RSK.](/kb/build-with-tenderly/)
 
 ![Tenderly-RSK-Integrations](/assets/img/solutions/Tenderly/Tenderly-RSK-Integrations.jpg)

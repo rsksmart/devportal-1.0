@@ -7,7 +7,7 @@ layout: "rsk"
 ---
 
 **Defiant** is the first mobile platform and P2P marketplace for stablecoins.
-Our service allows the exchange of cryptocurrencies from the Bitcoin, RSK and Ethereum ecosystem, using geolocation.
+It's service allows the exchange of cryptocurrencies from the Bitcoin, RSK and Ethereum ecosystem, using geolocation.
 You can store, send and exchange crypto in an agile and secure way, without intermediaries.
 
 ![Defiant Banner](/assets/img/solutions/defiant/banner_rsk2.jpg)

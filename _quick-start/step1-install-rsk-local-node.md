@@ -127,7 +127,7 @@ The output checksum should match the checksum seen on the releases page.
 
 For more information about verifying that your copy is legitimate,
 including signature verification, check out the
-[full instructions](/rsk/node/security-chain/ 'Verify authenticity of RskJ source code and its binary dependencies')
+[full instructions](/rsk/node/security-chain/ 'Verify authenticity of RSKj source code and its binary dependencies')
 on how to do this.
 
 ### Run

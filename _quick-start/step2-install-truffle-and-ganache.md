@@ -53,7 +53,7 @@ and not a globally installed copy of truffle.
 ### Truffle Network Configuration
 
 Open the `truffle-config.js` file in the truffle directory. Locate the following part under `networks`.
-This part tells Truffle how to connect to our RegNet node.
+This part tells Truffle how to connect to our Regtest node.
 
 ```javascript
 module.exports = {
