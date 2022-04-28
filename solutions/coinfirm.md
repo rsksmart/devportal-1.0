@@ -42,7 +42,7 @@ Coinfirm’s industry-leading risk management helps blockchain technologies scal
 
 Founded in 2016 by experienced compliance, technology and finance professionals, Coinfirm has grown to become a globally recognized RegTech firm.
 The company’s solutions are deployed by market leaders ranging from crypto exchanges, to protocols, to major financial institutions.
-As well as working with our corporate partners, Coinfim also provides tools for individual users.
+As well as working with corporate partners, Coinfim also provides tools for individual users.
 
 ### AML Platform
 
@@ -61,7 +61,7 @@ Compliance Solutions for Banks and Financial Institutions
 - **Protocols:**
 Secure Compliance for Coins and Protocols Providers
 - **Investigation:**
-Coinfirm has built a real-time blockchain analytics and asset tracking technology that has proved as the key enabler of many successful investigations. Our team of blockchain forensic experts helps legal offices, law enforcement and corporate entities to conduct end-to-end crypto investigations.
+Coinfirm has built a real-time blockchain analytics and asset tracking technology that has proved as the key enabler of many successful investigations. Coinfirm's team of blockchain forensic experts helps legal offices, law enforcement and corporate entities to conduct end-to-end crypto investigations.
 
 ### AMLT Oracle
 

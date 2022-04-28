@@ -19,7 +19,8 @@ With the Run button, you're running your first miner node!
 
 To setup more mining nodes two more configurations are here: ([miner2.conf](/assets/files/mining-config/miner2.conf) and [miner3.conf](/assets/files/mining-config/miner3.conf)).
 
-We have now three configurations for different miners, now the funny part, let's run our local RSK Smart network.
+We now have three configurations for different miners.
+Now for the fun part, let's run a local RSK network!
 Go to *Run configuration* button again and start all the miners configurations one after the other.
 
 Congratulations! you're running a local RSK mining node!

@@ -60,7 +60,7 @@ If you would like to delve deeper, here are some resources and tools that we rec
 
 **Resources**:
 
-- [Visit Our Developers Portal](https://github.com/rsksmart/devportal) 
+- [Visit RSK Developers Portal](https://github.com/rsksmart/devportal) 
 - [Dollar on Chain: A stablecoin for bitcoiners, by bitcoiners](https://moneyonchain.com/blog/dollar-on-chain-chain-a-bitcoin-stablecoin-by-bitcoiners/)
 - [Defiant: Solutions on RSK](https://developers.rsk.co/solutions/defiant/)
 - [RSK Token Bridge](https://tokenbridge.rsk.co/)

@@ -18,6 +18,6 @@ To learn more about RSK architecture, please refer to the [Original](https://www
 RSK has two networks, one is a development or testing network (also known as Testnet), and the other a production network (Mainnet), with blocks every 30 seconds.
 
 To interact with the network, you need access to a node. The following are the available options:
-- [Use our public nodes](/rsk/public-nodes)
+- [Use public nodes](/rsk/public-nodes)
 - [Install node](/rsk/node/install)
 - [Compile the node code](/rsk/node/contribute/)

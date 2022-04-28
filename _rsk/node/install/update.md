@@ -6,7 +6,7 @@ tags: rsk, rskj, node, update, version
 description: "How to update RSKj, the RSK node, to a newer version, and verify that it works correctly. Also sign up for updates to get notified when there is a new version released."
 ---
 
-Sign up for our RSK Node update notifications. We will use your email only for the purpose of keeping your application connected to the most recent version of the node.
+Sign up for the RSK Node update notifications. We will use your email only for the purpose of keeping your application connected to the most recent version of the node.
 
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">

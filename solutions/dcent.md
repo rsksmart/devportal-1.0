@@ -12,7 +12,7 @@ layout: 'rsk'
 ![DCent Wallet- BannerImage](/assets/img/solutions/DCentWallet/DCent_BannerImage.jpg)
 
 
-On top of managing RBTC/RIF using our hardware wallet, D’CENT brings new features which support the RSK network based DApps through D’CENT Mobile App. Users can access DApp sites from the DApp browser in the Discovery tab of the D’CENT Mobile App, or by connecting the desired services through WalletConnect.
+On top of managing RBTC/RIF using D’CENT's hardware wallet, D’CENT brings new features which support the RSK network based DApps through D’CENT Mobile App. Users can access DApp sites from the DApp browser in the Discovery tab of the D’CENT Mobile App, or by connecting the desired services through WalletConnect.
 
 ## How D'Cent Wallet integrates with RSK
 

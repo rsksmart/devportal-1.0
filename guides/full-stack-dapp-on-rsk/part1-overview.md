@@ -67,6 +67,6 @@ Further Reading!
 
 ----
 
-[Visit Our Developers Portal](https://github.com/rsksmart/devportal) |
-[Contact us on our community Slack](/slack/) |
+[Visit RSK Developers Portal](https://github.com/rsksmart/devportal) |
+- [Get in touch on RSK Open Slack Community](https://developers.rsk.co/slack/) |
 [Visit our Webinars Section](https://developers.rsk.co/webinars/)

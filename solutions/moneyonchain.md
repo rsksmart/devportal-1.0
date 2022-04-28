@@ -39,7 +39,7 @@ Smart Contracts: gets data from OMoC
 
 ### Money on Chain's Goal
 
-The financial system is up against some serious challenges. Its overheads are large, transactions are slow, and frictions abound. Cryptocurrencies such as Bitcoin have emerged as alternatives to traditional fiat money, but they have proven to be extremely volatile. This limits their use. Our goal is to provide a Bitcoin-Collateralized Stablecoin, which solves the biggest problem for Bitcoin mainstream adoption: the volatility problem. The Dollar On Chain, a Bitcoin-Backed Stablecoin, uses a trust minimized, decentralized system.
+The financial system is up against some serious challenges. Its overheads are large, transactions are slow, and frictions abound. Cryptocurrencies such as Bitcoin have emerged as alternatives to traditional fiat money, but they have proven to be extremely volatile. This limits their use. MOC's goal is to provide a Bitcoin-Collateralized Stablecoin, which solves the biggest problem for Bitcoin mainstream adoption: the volatility problem. The Dollar On Chain, a Bitcoin-Backed Stablecoin, uses a trust minimized, decentralized system.
 
 ### Functionality
 

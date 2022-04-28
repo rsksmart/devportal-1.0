@@ -26,11 +26,11 @@ Miners earn a high percentage of transaction fees from the RSK block they mine. 
 
 ## What is the current RSK network's hashing power?
 
-You can see RSK network hashing power in our [Stats Website](https://stats.rsk.co).
+You can see RSK network hashing power in the [RSK Stats Website](https://stats.rsk.co).
 
 ## Implementation details for mining software pools
 
-Check our [implementation guide](/rsk/architecture/mining/implementation-guide).
+Check out the [implementation guide](/rsk/architecture/mining/implementation-guide).
 
 ## References:
 

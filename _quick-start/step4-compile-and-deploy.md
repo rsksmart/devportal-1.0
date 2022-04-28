@@ -58,6 +58,6 @@ To run the migrations, run the following command in a terminal
 truffle migrate --reset --network regtest
 ```
 
-Note that the `--network regtest` parameter tells Truffle to deploy this contract on our local RegNet node.
+Note that the `--network regtest` parameter tells Truffle to deploy this contract on our local Regtest node.
 
 The migration process may take several minutes depending on the block generation speed. You may want to run it twice to avoid a known issue with Truffle ([#2224](https://github.com/trufflesuite/truffle/issues/2224)).
