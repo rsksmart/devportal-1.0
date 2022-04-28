@@ -49,7 +49,7 @@ A few examples of smart contracts are:
 RSK MainNet network was released in early January 2018. The latest major version is called Wasabi.
 
 Live statistics about the entire RSK network is available at [RSK Stats](https://stats.rsk.co/).
-All the necessary source code can be found at RSK GitHub repository: [RSKSmart](https://github.com/rsksmart).
+All the necessary source code can be found at RSK GitHub organisation: [`github.com/rsksmart`](https://github.com/rsksmart).
 All the project information, including a getting started guide, can be found on the [RSK & RIF Developer Portal](https://developers.rsk.co/).
 
 For latest news and updates, check out [RSK Blog](https://blog.rsk.co/).
@@ -74,13 +74,13 @@ A PowPeg is a multi-signature management system where participants' nodes have n
 
 ### How does RSK plan to be a reference in terms of smart contracts?
 
-RSK is the most secure smart contracts platform in the world. Security has been and will continue to be one of RSK key competitive advantages and we will keep working at it. Secondly, scalability which is one of the obstacles for blockchain mass adoption has been and will be one of the key strategic objectives. While independent groups are porting Ethereum scaling solutions to RSK, The IOVLabs innovation  & research lab is working on layer 1 proposals to increase its transaction capacity, such as transaction compression, and signature aggregation. On top of this, the RIF payments protocols, such as the RIF Lumino Network also contributes towards this.
+RSK is the most secure smart contracts platform in the world. Security has been and will continue to be one of RSK's key competitive advantages and we will keep working at it. Secondly, scalability which is one of the obstacles for blockchain mass adoption has been and will be one of RSK's key strategic objectives. While independent groups are porting Ethereum scaling solutions to RSK, The IOVLabs innovation  & research lab is working on layer 1 proposals to increase its transaction capacity, such as transaction compression, and signature aggregation. On top of this, the RIF payments protocols, such as the RIF Lumino Network also contributes towards this.
 
 ### Can you talk about how RSK is approaching node diversity?
 
 *How many nodes does a healthy protocol need?*
 
-Decentralization should not be measured only by the number of nodes but also about the diversity and independence of nodes. A few hundred independent RSK nodes is enough to serve a global cryptocurrency network at this stage, but we must not feel confident by that metric alone. The platform's objective is that full nodes are run by a diverse set of individuals, organizations and companies. That is the true meaning of decentralization: **Don’t trust, verify** yourself. IOVLabs' innovation and research area has developed several decentralized incentivizations mechanisms that may one day be integrated into full nodes.  Also, we’ve put great effort to reduce the resource consumption of full nodes, such as the [Unitrie proposal]( https://www.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/) so that individuals can run nodes in standard laptops. Finally, we proposed a new technique for light clients [RSK Improvement Proposal](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP45.md), to onboard those users running nodes in mobile phones. In summary, we’re making sure that the network remains healthy and decentralized in the future, both in node quantity and quality.
+Decentralization should not be measured only by the number of nodes but also about the diversity and independence of nodes. A few hundred independent RSK nodes is enough to serve a global cryptocurrency network at this stage, but we must not feel confident by that metric alone. The RSK platform's objective is that full nodes are run by a diverse set of individuals, organizations and companies. That is the true meaning of decentralization: **Don’t trust, verify** yourself. IOVLabs' innovation and research area has developed several decentralized incentivizations mechanisms that may one day be integrated into full nodes.  Also, we’ve put great effort to reduce the resource consumption of full nodes, such as the [Unitrie proposal]( https://www.rsk.co/noticia/towards-higher-onchain-scalability-with-the-unitrie/) so that individuals can run nodes in standard laptops. Finally, there have been proposals for a new technique for light clients [RSK Improvement Proposal](https://github.com/rsksmart/RSKIPs/blob/master/IPs/RSKIP45.md), to onboard those users running nodes in mobile phones. In summary, we’re making sure that the RSK network remains healthy and decentralized in the future, both in node quantity and quality.
 
 ### Should dApps set up their own nodes?
 

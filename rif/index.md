@@ -55,7 +55,7 @@ Q: What’s the relationship between RIF Labs and the RSK platform?
 
 A: RIF Labs acquired RSK Labs, the company behind the construction of the open source RSK Smart Contract Network. Also given RSK Smart's unique position as the first open source Smart Contract platform secured by the Bitcoin Network it also chose to implement its RIF OS Protocols on top of it. For clear strategic reasons RIF Labs will take the lead on technology development and community growth for the the ecosystem as a whole.
 
-Both the RIF OS Protocols and RSK Smart Contract Network share the same principles and mission, and now they will be supported by the combined teams of RIF Labs and RSK Labs. Together, we will continue to focus on improving the lives of millions excluded around the world by building this next generation blockchain-based infrastructure that will bring to life the Internet of Value.
+Both the RIF OS Protocols and RSK Smart Contract Network share the same principles and mission, and now they will be supported by the combined teams of RIF Labs and RSK Labs. Together, RSK and RIF will continue to focus on improving the lives of millions excluded around the world by building this next generation blockchain-based infrastructure that will bring to life the Internet of Value.
 
 Q: Why did RIF Labs build RIF OS Protocols on top of the RSK Smart Contract Network?
 
