@@ -20,9 +20,8 @@ We recommend using GPG v1 to download the public key because GPG v2 encounters p
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```bash
-  $ gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 5DECF4415E3B8FA4
-  gpg: requesting key 5E3B8FA4 from https server secchannel.rsk.co
-  gpg: key 5E3B8FA4: public key "RSK Release Signing Key <support@rsk.co>"      imported
+  $ gpg --keyserver https://secchannel.rsk.co/SUPPORT.asc --recv-keys A6DBEAC640C5A14B
+  gpg: key A6DBEAC640C5A14B: "IOV Labs Support <support@iovlabs.org>"      imported
   gpg: Total number processed: 1
   gpg:               imported: 1  (RSA: 1)
   ```
@@ -32,13 +31,12 @@ We recommend using GPG v1 to download the public key because GPG v2 encounters p
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ``` bash
-  $ gpg --finger 5DECF4415E3B8FA4
-  pub   4096R/5E3B8FA4 2017-05-16 [expires: 2022-05-15]
-        Key fingerprint = 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
-  uid                  RSK Release Signing Key <support@rsk.co>
-  sub   4096R/A44DCC86 2017-05-16 [expires: 2022-05-15]
-  sub   4096R/5E488E87 2017-05-16 [expires: 2022-05-15]
-  sub   4096R/9FC3E7C2 2017-05-16 [expires: 2022-05-15]
+  $ gpg --finger A6DBEAC640C5A14B
+  pub   rsa4096 2022-05-11 [C]
+        1DC9 1579 9132 3D23 FD37  BAA7 A6DB EAC6 40C5 A14B
+  uid           [ unknown] IOV Labs Support <support@iovlabs.org>
+  sub   rsa4096 2022-05-11 [S]
+  sub   rsa4096 2022-05-11 [E]
   ```
 
 ## Verify the signature of SHA256SUMS.asc
@@ -48,12 +46,14 @@ The file`SHA256SUMS.asc` is signed with RSK public key and includes SHA256 hashe
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```bash
-  $ gpg --verify SHA256SUMS.asc
-  gpg: Signature made mar 16 may 2017 16:47:56 ART
-  gpg:                using RSA key 0x67D06695A44DCC86
-  gpg: Good signature from "RSK Release Signing Key <support@rsk.co>" [ultimate]
-  Primary key fingerprint: 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
-      Subkey fingerprint: D135 DDC0 B54D 6EF3 5901  52DF 67D0 6695 A44D CC86
+  $ gpg --verify SHA256SUMS.asc 
+  gpg: Signature made Wed May 11 10:50:48 2022 -03
+  gpg:                using RSA key 1F1AA750373B90D9792DC3217997999EEA3A9079
+  gpg: Good signature from "IOV Labs Support <support@iovlabs.org>" [unknown]
+  gpg: WARNING: This key is not certified with a trusted signature!
+  gpg:          There is no indication that the signature belongs to the owner.
+  Primary key fingerprint: 1DC9 1579 9132 3D23 FD37  BAA7 A6DB EAC6 40C5 A14B
+       Subkey fingerprint: 1F1A A750 373B 90D9 792D  C321 7997 999E EA3A 9079
   ```
 
 *Note:* Learn more about [key management](https://www.gnupg.org/gph/en/manual/x334.html) here.
