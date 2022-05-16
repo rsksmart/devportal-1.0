@@ -1137,7 +1137,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-08-18 03:22:36 +0000T00:00:00.000Z">2020-08-18</time> | -->
+    <!--time role="presentation" datetime="2022-05-14 00:58:26 +0000T00:00:00.000Z">2022-05-14</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/security-chain.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2137,9 +2137,8 @@ We recommend using GPG v1 to download the public key because GPG v2 encounters p
 <ul>
   <li>Linux, Mac OSX
     <div class="language-bash highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--keyserver</span> https://secchannel.rsk.co/release.asc <span class="nt">--recv-keys</span> 5DECF4415E3B8FA4
-gpg: requesting key 5E3B8FA4 from https server secchannel.rsk.co
-gpg: key 5E3B8FA4: public key <span class="s2">"RSK Release Signing Key &lt;support@rsk.co&gt;"</span>      imported
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--keyserver</span> https://secchannel.rsk.co/SUPPORT.asc <span class="nt">--recv-keys</span> A6DBEAC640C5A14B
+gpg: key A6DBEAC640C5A14B: <span class="s2">"IOV Labs Support &lt;support@iovlabs.org&gt;"</span>      imported
 gpg: Total number processed: 1
 gpg:               imported: 1  <span class="o">(</span>RSA: 1<span class="o">)</span>
 </code></pre></div>    </div>
@@ -2152,13 +2151,12 @@ gpg:               imported: 1  <span class="o">(</span>RSA: 1<span class="o">)<
 <ul>
   <li>Linux, Mac OSX
     <div class="language-bash highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--finger</span> 5DECF4415E3B8FA4
-pub   4096R/5E3B8FA4 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
-      Key fingerprint <span class="o">=</span> 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
-uid                  RSK Release Signing Key &lt;support@rsk.co&gt;
-sub   4096R/A44DCC86 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
-sub   4096R/5E488E87 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
-sub   4096R/9FC3E7C2 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--finger</span> A6DBEAC640C5A14B
+pub   rsa4096 2022-05-11 <span class="o">[</span>C]
+      1DC9 1579 9132 3D23 FD37  BAA7 A6DB EAC6 40C5 A14B
+uid           <span class="o">[</span> unknown] IOV Labs Support &lt;support@iovlabs.org&gt;
+sub   rsa4096 2022-05-11 <span class="o">[</span>S]
+sub   rsa4096 2022-05-11 <span class="o">[</span>E]
 </code></pre></div>    </div>
   </li>
 </ul>
@@ -2171,12 +2169,14 @@ sub   4096R/9FC3E7C2 2017-05-16 <span class="o">[</span>expires: 2022-05-15]
 <ul>
   <li>Linux, Mac OSX
     <div class="language-bash highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--verify</span> SHA256SUMS.asc
-gpg: Signature made mar 16 may 2017 16:47:56 ART
-gpg:                using RSA key 0x67D06695A44DCC86
-gpg: Good signature from <span class="s2">"RSK Release Signing Key &lt;support@rsk.co&gt;"</span> <span class="o">[</span>ultimate]
-Primary key fingerprint: 1A92 D894 2171 AFA9 51A8  5736 5DEC F441 5E3B 8FA4
-    Subkey fingerprint: D135 DDC0 B54D 6EF3 5901  52DF 67D0 6695 A44D CC86
+<div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>gpg <span class="nt">--verify</span> SHA256SUMS.asc 
+gpg: Signature made Wed May 11 10:50:48 2022 <span class="nt">-03</span>
+gpg:                using RSA key 1F1AA750373B90D9792DC3217997999EEA3A9079
+gpg: Good signature from <span class="s2">"IOV Labs Support &lt;support@iovlabs.org&gt;"</span> <span class="o">[</span>unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 1DC9 1579 9132 3D23 FD37  BAA7 A6DB EAC6 40C5 A14B
+     Subkey fingerprint: 1F1A A750 373B 90D9 792D  C321 7997 999E EA3A 9079
 </code></pre></div>    </div>
   </li>
 </ul>
