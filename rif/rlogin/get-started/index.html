@@ -1137,7 +1137,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-11-24 19:16:01 +0000T00:00:00.000Z">2021-11-24</time> | -->
+    <!--time role="presentation" datetime="2022-05-24 02:14:56 +0000T00:00:00.000Z">2022-05-24</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rlogin/get-started.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2227,6 +2227,11 @@
 <span class="p">}</span>
 
 <span class="kd">const</span> <span class="nx">supportedChains</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">keys</span><span class="p">(</span><span class="nx">rpcUrls</span><span class="p">).</span><span class="nx">map</span><span class="p">(</span><span class="nb">Number</span><span class="p">)</span>
+  
+<span class="kd">const</span> <span class="nx">infoOptions</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="mi">30</span><span class="p">:</span> <span class="p">{</span> <span class="na">addressBaseURL</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://explorer.rsk.co/address/</span><span class="dl">'</span> <span class="p">},</span>
+  <span class="mi">31</span><span class="p">:</span> <span class="p">{</span> <span class="na">addressBaseURL</span><span class="p">:</span> <span class="dl">'</span><span class="s1">https://explorer.testnet.rsk.co/address/</span><span class="dl">'</span> <span class="p">}</span>
+<span class="p">}</span>
 
 <span class="k">export</span> <span class="kd">const</span> <span class="nx">rLogin</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RLogin</span><span class="p">({</span>
   <span class="na">providerOptions</span><span class="p">:</span> <span class="p">{</span>
@@ -2260,7 +2265,8 @@
     <span class="p">}</span>
   <span class="p">},</span>
   <span class="nx">rpcUrls</span><span class="p">,</span>
-  <span class="nx">supportedChains</span>
+  <span class="nx">supportedChains</span><span class="p">,</span>
+  <span class="nx">infoOptions</span>
 <span class="p">})</span>
 </code></pre></div>    </div>
 
