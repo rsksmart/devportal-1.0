@@ -84,6 +84,11 @@ Follow this guide to configure rLogin in minutes
   }
 
   const supportedChains = Object.keys(rpcUrls).map(Number)
+  
+  const infoOptions = {
+    30: { addressBaseURL: 'https://explorer.rsk.co/address/' },
+    31: { addressBaseURL: 'https://explorer.testnet.rsk.co/address/' }
+  }
 
   export const rLogin = new RLogin({
     providerOptions: {
@@ -117,7 +122,8 @@ Follow this guide to configure rLogin in minutes
       }
     },
     rpcUrls,
-    supportedChains
+    supportedChains,
+    infoOptions
   })
   ```
 
