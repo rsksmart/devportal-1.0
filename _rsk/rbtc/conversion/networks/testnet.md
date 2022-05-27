@@ -11,7 +11,7 @@ In this section we will go over the steps of converting t-BTC to tRBTC,
 and vice versa on the Bitcoin and RSK Testnets.
 
 Note:
-The minimum amount of Bitcoin to convert is **0.01 tBTC** for Testnet.
+The minimum amount of Bitcoin to convert is **0.005 tBTC** for Testnet.
 
 ## tBTC to tRBTC conversion
 
