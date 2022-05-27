@@ -9,7 +9,7 @@ permalink: /rsk/rbtc/conversion/networks/mainnet/
 
 In this section we will go over the steps of converting BTC to RBTC and vice versa in Bitcoin and RSK Mainnets.
 
-> Note: The minimum amount of Bitcoin to convert is **0.01 BTC** for Mainnet.
+> Note: The minimum amount of Bitcoin to convert is **0.005 BTC** for Mainnet.
 
 ## BTC to RBTC conversion
 
