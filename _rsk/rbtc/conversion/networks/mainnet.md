@@ -88,7 +88,7 @@ RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
   <strong>at least 0.004 RBTC</strong>
   for Mainnet
   Sending any lower amount fails and
-  <strong>funds will be lost</strong>.
+  <strong>funds will be reimbursed</strong>.
   The Gas Limit of the transaction needs to be manually set at 100,000 gas;
   otherwise the transaction will fail.
   Gas Price can be set to 0.06 gwei
