@@ -269,7 +269,7 @@ you must include:
 { name: "mnr", version: "1.0", enabled: "true" }
 ```
 
-RPC methods for each module can be found [here](/_rsk/node/architecture/json-rpc#json-rpc-methods)
+RPC methods for each module can be found in the [JSON-RPC documentation](/rsk/node/architecture/json-rpc/).
 
 ## wallet
 

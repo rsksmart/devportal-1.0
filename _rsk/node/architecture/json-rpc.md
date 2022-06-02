@@ -79,11 +79,11 @@ and that `< ` marks responses that will be printed.)
 | ------ | ------ | ------ |
 | `web3` | [`web3_clientVersion`](#web3_clientversion) | YES | |
 | `web3` | [`web3_sha3`](#web3_sha3) | YES | |
-| `eth` | [`net_version`](#net_version) | YES | Mainnet Chain Id = "30", Testnet Chain Id = "31" |
+| `eth` | [`net_version`](#net_version) | YES | Mainnet Chain Id = `30`, Testnet Chain Id = `31` |
 | `eth` | [`net_peerCount`](#net_peercount) | YES | |
 | `eth` | [`net_peerList`](#net_peerlist) | YES | |
 | `eth` | [`net_listening`](#net_listening) | YES | |
-| `eth` | [`eth_chainId`](#eth_chainid) | YES | Same response than eth_protocolVersion |
+| `eth` | [`eth_chainId`](#eth_chainid) | YES | Same response as `eth_protocolVersion` |
 | `eth` | [`eth_protocolVersion`](#eth_protocolversion) | YES | |
 | `eth` | [`eth_syncing`](#eth_syncing) | YES | |
 | `eth` | [`eth_coinbase`](#eth_coinbase) | YES | |
