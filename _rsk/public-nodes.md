@@ -31,7 +31,7 @@ https://public-node.rsk.co
 
 ## Supported RPC methods
 
-List of supported RPC methods for each module can be found in the [JSON-RPC documentation](/rsk/node/architecture/json-rpc/).
+List of more supported RPC methods for each module can be found in the [JSON-RPC documentation](/rsk/node/architecture/json-rpc/).
 
 > **Note**: request headers must include `"Content-Type: application/json"`
 
