@@ -31,37 +31,7 @@ https://public-node.rsk.co
 
 ## Supported RPC methods
 
-These nodes support the following JSON RPC methods:
-
-| Method |
-| ------ |
-| `net_version` |
-| `net_listening` |
-| `net_peerCount` |
-| `eth_protocolVersion` |
-| `eth_hashrate` |
-| `eth_mining` |
-| `eth_call` |
-| `eth_estimateGas`|
-| `eth_gasPrice` |
-| `eth_blockNumber`|
-| `eth_getBalance` |
-| `eth_getBlockByHash` |
-| `eth_getBlockByNumber` |
-| `eth_getBlockTransactionCountByHash` |
-| `eth_getBlockTransactionCountByNumber` |
-| `eth_getCode` |
-| `eth_getStorageAt` |
-| `eth_getTransactionByBlockHashAndIndex` |
-| `eth_getTransactionByBlockNumberAndIndex` |
-| `eth_getTransactionByHash` |
-| `eth_getTransactionCount` |
-| `eth_getTransactionReceipt` |
-| `eth_getUncleByBlockHashAndIndex` |
-| `eth_getUncleByBlockNumberAndIndex` |
-| `eth_getUncleCountByBlockHash` |
-| `eth_getUncleCountByBlockNumber` |
-| `eth_sendRawTransaction` |
+List of supported RPC methods for each module can be found in the [JSON-RPC documentation](/rsk/node/architecture/json-rpc/).
 
 > **Note**: request headers must include `"Content-Type: application/json"`
 
