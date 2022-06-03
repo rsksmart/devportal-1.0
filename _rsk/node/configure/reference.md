@@ -269,6 +269,8 @@ you must include:
 { name: "mnr", version: "1.0", enabled: "true" }
 ```
 
+RPC methods for each module can be found in the [JSON-RPC documentation](/rsk/node/architecture/json-rpc/).
+
 ## wallet
 
 You can store your accounts on the node to use them to sign transactions. However, it is **not secure** to use a wallet in a public node.
