@@ -1145,8 +1145,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-07-29 09:24:08 +0000T00:00:00.000Z">2021-07-29</time> | -->
-     56' to read |
+    <!--time role="presentation" datetime="2022-06-02 07:32:06 +0000T00:00:00.000Z">2022-06-02</time> | -->
+     59' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/architecture/json-rpc.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2218,6 +2218,7 @@ and that <code class="highlighter-rouge">&lt; </code> marks responses that will 
 <table>
   <thead>
     <tr>
+      <th>Module</th>
       <th>Method</th>
       <th>Supported</th>
       <th>Comments</th>
@@ -2225,321 +2226,627 @@ and that <code class="highlighter-rouge">&lt; </code> marks responses that will 
   </thead>
   <tbody>
     <tr>
+      <td><code class="highlighter-rouge">web3</code></td>
       <td><a href="#web3_clientversion"><code class="highlighter-rouge">web3_clientVersion</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">web3</code></td>
       <td><a href="#web3_sha3"><code class="highlighter-rouge">web3_sha3</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#net_version"><code class="highlighter-rouge">net_version</code></a></td>
       <td>YES</td>
-      <td>Mainnet Chain Id = “30”, Testnet Chain Id = “31”</td>
+      <td>Mainnet Chain Id = <code class="highlighter-rouge">30</code>, Testnet Chain Id = <code class="highlighter-rouge">31</code>
+</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#net_peercount"><code class="highlighter-rouge">net_peerCount</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#net_peerlist"><code class="highlighter-rouge">net_peerList</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#net_listening"><code class="highlighter-rouge">net_listening</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_chainid"><code class="highlighter-rouge">eth_chainId</code></a></td>
       <td>YES</td>
-      <td>Same response than eth_protocolVersion</td>
+      <td>Same response as <code class="highlighter-rouge">eth_protocolVersion</code>
+</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_protocolversion"><code class="highlighter-rouge">eth_protocolVersion</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_syncing"><code class="highlighter-rouge">eth_syncing</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_coinbase"><code class="highlighter-rouge">eth_coinbase</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_mining"><code class="highlighter-rouge">eth_mining</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_hashrate"><code class="highlighter-rouge">eth_hashrate</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_gasprice"><code class="highlighter-rouge">eth_gasPrice</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_accounts"><code class="highlighter-rouge">eth_accounts</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_blocknumber"><code class="highlighter-rouge">eth_blockNumber</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getbalance"><code class="highlighter-rouge">eth_getBalance</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getstorageat"><code class="highlighter-rouge">eth_getStorageAt</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_gettransactioncount"><code class="highlighter-rouge">eth_getTransactionCount</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getblocktransactioncountbyhash"><code class="highlighter-rouge">eth_getBlockTransactionCountByHash</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getblocktransactioncountbynumber"><code class="highlighter-rouge">eth_getBlockTransactionCountByNumber</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getunclecountbyblockhash"><code class="highlighter-rouge">eth_getUncleCountByBlockHash</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getunclecountbyblocknumber"><code class="highlighter-rouge">eth_getUncleCountByBlockNumber</code></a></td>
       <td>PARTIALLY</td>
       <td>Option “pending” not yet supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getcode"><code class="highlighter-rouge">eth_getCode</code></a></td>
       <td>PARTIALLY</td>
       <td>Option “pending” not yet supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_sign"><code class="highlighter-rouge">eth_sign</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_sendtransaction"><code class="highlighter-rouge">eth_sendTransaction</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_sendrawtransaction"><code class="highlighter-rouge">eth_sendRawTransaction</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_call"><code class="highlighter-rouge">eth_call</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_estimategas"><code class="highlighter-rouge">eth_estimateGas</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getblockbyhash"><code class="highlighter-rouge">eth_getBlockByHash</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getblockbynumber"><code class="highlighter-rouge">eth_getBlockByNumber</code></a></td>
       <td>PARTIALLY</td>
       <td>Option “pending” not yet supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_gettransactionbyhash"><code class="highlighter-rouge">eth_getTransactionByHash</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_gettransactionbyblockhashandindex"><code class="highlighter-rouge">eth_getTransactionByBlockHashAndIndex</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_gettransactionbyblocknumberandindex"><code class="highlighter-rouge">eth_getTransactionByBlockNumberAndIndex</code></a></td>
       <td>PARTIALLY</td>
       <td>Option “pending” not yet supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_gettransactionreceipt"><code class="highlighter-rouge">eth_getTransactionReceipt</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getunclebyblockhashandindex"><code class="highlighter-rouge">eth_getUncleByBlockHashAndIndex</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getunclebyblocknumberandindex"><code class="highlighter-rouge">eth_getUncleByBlockNumberAndIndex</code></a></td>
       <td>PARTIALLY</td>
       <td>Option “pending” not yet supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><code class="highlighter-rouge">eth_getCompilers</code></td>
       <td>-</td>
       <td>For security reasons, we’ve decided not to include compilers in node.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><code class="highlighter-rouge">eth_compileLLL</code></td>
       <td>-</td>
       <td>For security reasons, we’ve decided not to include compilers in node.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><code class="highlighter-rouge">eth_compileSolidity</code></td>
       <td>-</td>
       <td>For security reasons, we’ve decided not to include compilers in node.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><code class="highlighter-rouge">eth_compileSerpent</code></td>
       <td>-</td>
       <td>For security reasons, we’ve decided not to include compilers in node.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_newfilter"><code class="highlighter-rouge">eth_newFilter</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_newblockfilter"><code class="highlighter-rouge">eth_newBlockFilter</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_newpendingtransactionfilter"><code class="highlighter-rouge">eth_newPendingTransactionFilter</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_uninstallfilter"><code class="highlighter-rouge">eth_uninstallFilter</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getfilterchanges"><code class="highlighter-rouge">eth_getFilterChanges</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getfilterlogs"><code class="highlighter-rouge">eth_getFilterLogs</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getlogs"><code class="highlighter-rouge">eth_getLogs</code></a></td>
       <td>YES</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_getwork"><code class="highlighter-rouge">eth_getWork</code></a></td>
       <td>YES</td>
       <td>Method name is <code class="highlighter-rouge">mnr_getWork</code>.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><a href="#eth_submitwork"><code class="highlighter-rouge">eth_submitWork</code></a></td>
       <td>YES</td>
       <td>Method name is <code class="highlighter-rouge">mnr_submitBitcoinBlock</code>.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
       <td><code class="highlighter-rouge">eth_submitHashrate</code></td>
       <td>-</td>
       <td> </td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
+      <td><code class="highlighter-rouge">eth_bridgeState</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">eth</code></td>
+      <td><code class="highlighter-rouge">eth_netHashrate</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">db</code></td>
       <td><code class="highlighter-rouge">db_putString</code></td>
       <td>-</td>
       <td>Deprecated</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">db</code></td>
       <td><code class="highlighter-rouge">db_getString</code></td>
       <td>-</td>
       <td>Deprecated</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">db</code></td>
       <td><code class="highlighter-rouge">db_putHex</code></td>
       <td>-</td>
       <td>Deprecated</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">db</code></td>
       <td><code class="highlighter-rouge">db_getHex</code></td>
       <td>-</td>
       <td>Deprecated</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">debug</code></td>
+      <td><code class="highlighter-rouge">debug_traceTransaction</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">debug</code></td>
+      <td><code class="highlighter-rouge">debug_traceBlockByHash</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">debug</code></td>
+      <td><code class="highlighter-rouge">debug_wireProtocolQueueSize</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evm</code></td>
+      <td><code class="highlighter-rouge">evm_increaseTime</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evm</code></td>
+      <td><code class="highlighter-rouge">evm_mine</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evm</code></td>
+      <td><code class="highlighter-rouge">evm_reset</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evm</code></td>
+      <td><code class="highlighter-rouge">evm_revert</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evm</code></td>
+      <td><code class="highlighter-rouge">evm_snapshot</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evm</code></td>
+      <td><code class="highlighter-rouge">evm_startMining</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">evm</code></td>
+      <td><code class="highlighter-rouge">evm_stopMining</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mnr</code></td>
+      <td><code class="highlighter-rouge">mnr_submitBitcoinBlock</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mnr</code></td>
+      <td><code class="highlighter-rouge">mnr_submitBitcoinBlockTransactions</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mnr</code></td>
+      <td><code class="highlighter-rouge">mnr_submitBitcoinBlockPartialMerkle</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">mnr</code></td>
+      <td><code class="highlighter-rouge">mnr_getWork</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_dumpRawKey</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_importRawKey</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_listAccounts</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_lockAccount</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_newAccountWithSeed</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_newAccount</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_sendTransaction</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">personal</code></td>
+      <td><code class="highlighter-rouge">personal_unlockAccount</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rsk</code></td>
+      <td><code class="highlighter-rouge">rsk_getRawTransactionReceiptByHash</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rsk</code></td>
+      <td><code class="highlighter-rouge">rsk_getTransactionReceiptNodesByHash</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rsk</code></td>
+      <td><code class="highlighter-rouge">rsk_getRawBlockHeaderByHash</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rsk</code></td>
+      <td><code class="highlighter-rouge">rsk_getRawBlockHeaderByNumber</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">rsk</code></td>
+      <td><code class="highlighter-rouge">rsk_protocolVersion</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">trace</code></td>
+      <td><code class="highlighter-rouge">trace_transaction</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">trace</code></td>
+      <td><code class="highlighter-rouge">trace_block</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">trace</code></td>
+      <td><code class="highlighter-rouge">trace_filter</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">txpool</code></td>
+      <td><code class="highlighter-rouge">txpool_content</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">txpool</code></td>
+      <td><code class="highlighter-rouge">txpool_inspect</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">txpool</code></td>
+      <td><code class="highlighter-rouge">txpool_status</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sco</code></td>
+      <td><code class="highlighter-rouge">sco_banAddress</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sco</code></td>
+      <td><code class="highlighter-rouge">sco_unbanAddress</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sco</code></td>
+      <td><code class="highlighter-rouge">sco_peerList</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sco</code></td>
+      <td><code class="highlighter-rouge">sco_bannedAddresses</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">sco</code></td>
+      <td><code class="highlighter-rouge">sco_reputationSummary</code></td>
+      <td>YES</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_post</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_version</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_newIdentity</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_hasIdentity</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_newGroup</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_addToGroup</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_newFilter</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_uninstallFilter</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_getFilterChanges</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
     </tr>
     <tr>
+      <td><code class="highlighter-rouge">shh</code></td>
       <td><code class="highlighter-rouge">shh_getMessages</code></td>
       <td>-</td>
       <td>Whisper protocol not supported.</td>
