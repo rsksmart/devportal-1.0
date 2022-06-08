@@ -11,7 +11,7 @@ In this section we will go over the steps of converting t-BTC to tRBTC,
 and vice versa on the Bitcoin and RSK Testnets.
 
 Note:
-The minimum amount of Bitcoin to convert is **0.01 tBTC** for Testnet.
+The minimum amount of Bitcoin to convert is **0.005 tBTC** for Testnet.
 
 ## tBTC to tRBTC conversion
 
@@ -88,7 +88,7 @@ You can get a corresponding tBTC address from your tRBTC private key by using [g
 
 RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
 
-> **Important note**: The minimum amount to send must be **greater than** 0.005 tRBTC for Testnet (sending the exact amount fails and funds get lost)
+> **Important note**: The minimum amount to send must be **at least** 0.004 tRBTC for Testnet, values below that will be rejected and reimbursed to the sender.
 
 Gas Limit of the transaction needs to be manually set at 100,000 gas;
 otherwise the transaction will fail.

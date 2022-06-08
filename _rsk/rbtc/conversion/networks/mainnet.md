@@ -9,7 +9,7 @@ permalink: /rsk/rbtc/conversion/networks/mainnet/
 
 In this section we will go over the steps of converting BTC to RBTC and vice versa in Bitcoin and RSK Mainnets.
 
-> Note: The minimum amount of Bitcoin to convert is **0.01 BTC** for Mainnet.
+> Note: The minimum amount of Bitcoin to convert is **0.005 BTC** for Mainnet.
 
 ## BTC to RBTC conversion
 
@@ -88,7 +88,7 @@ RSK Bridge Contract address: `0x0000000000000000000000000000000001000006`
   <strong>at least 0.004 RBTC</strong>
   for Mainnet
   Sending any lower amount fails and
-  <strong>funds will be lost</strong>.
+  <strong>funds will be reimbursed</strong>.
   The Gas Limit of the transaction needs to be manually set at 100,000 gas;
   otherwise the transaction will fail.
   Gas Price can be set to 0.06 gwei
