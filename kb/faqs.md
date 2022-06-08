@@ -262,7 +262,7 @@ General information: [Lumino](https://developers.rsk.co/rif/lumino/)
 
 ### What are your plans for bringing Lumino to the general public?
 
-The RIF Lumino network is already available to the general public. (for more information visit: [RIF Lumino](https://developers.rsk.co/rif/lumino/)
+The RIF Lumino network is already available to the general public. For more information visit: [RIF Payments](https://www.rifos.org/payments).
 
 Having said this, making Lumino a user-friendly internet of value is one of RIF's main priorities. For that reason, Lumino has already been integrated with the RIF Naming Service (RNS) which simplifies significantly the usability for non-technical users.
 
