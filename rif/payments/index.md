@@ -1,5 +1,5 @@
 ---
 layout: redirect
 permalink: /rif/payments/
-redirect: /rif/lumino
+redirect: https://www.rifos.org/payments
 ---

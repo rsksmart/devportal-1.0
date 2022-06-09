@@ -105,19 +105,19 @@ The Developer Portal is the home for RSK documentation for end users and develop
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/rif/lumino">
+            <a href="https://ambassadors.rsk.co/">
             <div class="icon tools h-100">
             <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/tools-icon.png" alt="started icon">
+            <img src="/assets/img/features/contract-icon.png" alt="started icon">
             </div>
             </div>
-            </a><div class="content"><a href="/rif/lumino">
+            </a><div class="content"><a href="https://ambassadors.rsk.co/">
             <div class="content-container">
-                <p class="card-title rsk_green">Lumino network</p>
-                <p class="card-desc">Launch a Lumino Node</p>
+                <p class="card-title rsk_green">Become an Ambassador</p>
+                <p class="card-desc">The RSK Ambassadors Program is a community empowerment initiative, designed to promote awareness, educate and drive adoption around RSK and RSK Infrastructure Framework (RIF).</p>
             </div>
-            </a><div class="btn-container"><a href="/rif/lumino">
-                </a><a class="green" href="/rif/lumino">Read More</a>
+            </a><div class="btn-container"><a href="https://ambassadors.rsk.co/">
+                </a><a class="green" href="https://ambassadors.rsk.co/">Read More</a>
             </div>
             </div>
         </div>
