@@ -1,13 +1,11 @@
 ---
-title: 'Deploy NFT on RSK'
+title: 'Deploy NFT on RSK | Write and Deploy an NFT project on the RSK Testnet'
 description: 'Learn about NFTs, create, connect, and deploy to the RSK Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
 
-<!-- /guides/nft/deploy-nft-on-rsk -->
-
-## How to deploy your NFT to RSK
+## How to deploy your NFT on RSK
 
 **Steps**
     
@@ -64,7 +62,7 @@ Go to networks -> Custom RPC, and enter the following values:
 
 After configuring it, select the RSK Testnet.
 
-![MetaMask screenshot before adding NFT collection](/assets/img/guides/nft/before.png)
+![MetaMask screenshot before adding NFT collection](/assets/img/guides/nft/before-importing-nfts.png)
 
 You should now see an account connected to the RSK Testnet.
 Not to worry if you see "No NFTs yet" under the NFTs tab,
@@ -76,7 +74,7 @@ Once you’re on the RSK network, select the “NFTs” tab on the right and add
 
 You may need to refresh the page to see your newly minted NFT.
 
-![MetaMask screenshot after adding NFT collection](/assets/img/guides/nft/after.PNG)
+![MetaMask screenshot after adding NFT collection](/assets/img/guides/nft/after-importing-nfts.PNG)
 
 Congratulations! In this article, we learnt about NFTs, IPFS, Hardhat, and we have successfully created and deployed our NFT project to the RSK Testnet.
 

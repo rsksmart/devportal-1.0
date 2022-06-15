@@ -1,11 +1,9 @@
 ---
-title: 'Configure NFT metadata'
+title: 'Configure NFT metadata | Write and Deploy an NFT project on the RSK Testnet'
 description: 'Learn about NFTs, create, connect, and deploy to the RSK Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
-
-<!-- guides/nft/configure-nft-metadata -->
 
 ## Configure the metadata for your NFT using Pinata
 

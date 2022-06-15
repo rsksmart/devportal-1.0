@@ -5,8 +5,6 @@ tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer
 layout: 'rsk'
 ---
 
-<!-- guides/nft/overview -->
-
 **We will do the following in this tutorial.**
 
 * A brief introduction to NFTs, and ERC-721
@@ -28,8 +26,6 @@ To follow this tutorial, you should have knowledge in:
 * Git 
 
 If you are not familiar with the above, it will be advisable to learn the basics by clicking the links above, before proceeding with this tutorial on how to create and deploy your NFT project to the RSK Testnet.
-
-<!-- Pg2 -->
 
 ### What is a Non-fungible Token (NFT)?
 

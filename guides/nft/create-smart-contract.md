@@ -1,11 +1,9 @@
 ---
-title: 'Create NFT Smart Contract on RSK'
+title: 'Create a Smart Contract | Write and Deploy an NFT project on the RSK Testnet'
 description: 'Learn about NFTs, create, connect, and deploy to the RSK Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
-
-<!-- guides/nft/create-smart-contract -->
 
 ## Create your NFT Smart Contract
      
