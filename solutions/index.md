@@ -493,4 +493,27 @@ platforms and APIs to create innovative experiences.
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/nownodes/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/nownodes/nownodes-logo.jpg" alt="nownodes icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/nownodes/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">NowNodes</p>
+                        <p class="card-desc">A blockchain-as-a-service enterprise solution that lets users get access to full Nodes and blockbook Explorers via an API.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/nownodes/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
