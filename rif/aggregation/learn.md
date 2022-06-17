@@ -55,7 +55,7 @@ ZkSync transactions can be initiated both on L1 and L2.
 
 - *ChangePubKey*: sets the signing public key of the L2 account. Without a signing key, the L2 account cannot perform any operation.
 - *Transfer*: transfers tokens between L2 accounts.
-- *TransferToNew*: transfers token to new L2 accounts, so it creates the receiver L2 account first and then perform the transfer.
+- *TransferToNew*: transfers token to new L2 accounts, so it creates the receiver L2 account first and then performs the transfer.
 - *Swap*: performs an atomic swap of funds between two existing L2 accounts.
 - *Withdraw*: withdraws funds from L2 to L1.
 - *ForcedExit*: allows a user (known as the initiator) to force a withdrawal of funds from another L2 account that doesn't have a signing key set (i.e. an unowned account), to the same target address on the L1.
