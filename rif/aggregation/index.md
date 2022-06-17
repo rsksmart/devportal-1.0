@@ -10,7 +10,7 @@ The objective of this project is to provide the RSK community with a scaling sol
 
 ## Abstract
 
-The current version of RI Aggregation is a port of [zkSync](https://docs.zksync.io/dev/), a layer 2 (L2) scaling solution developed by Matter Labs that uses Ethereum as L1.
+The current version of RIF Aggregation is a port of [zkSync](https://docs.zksync.io/dev/), a layer 2 (L2) scaling solution developed by Matter Labs that uses Ethereum as L1.
 ZkSync increases scalability by holding all funds on L1 ([Rollup Contract](https://github.com/rsksmart/ri-aggregation/blob/rsk_merge_master_Dec2021/contracts/contracts/ZkSync.sol)) and performing computation and storage management off-chain (L2).
 Furthermore, the state changes associated with all L2 transactions are stored on L1 using transaction [calldata](https://docs.soliditylang.org/en/latest/types.html?highlight=calldata#data-location), hence guaranteeing on-chain data availability: in case of L2 failures, users can reconstruct the L2 state and recover locked assets. For each Rollup block, a proof (SNARK proof) is generated and verified on L1.
 
