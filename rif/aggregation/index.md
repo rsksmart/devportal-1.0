@@ -29,7 +29,7 @@ The architecture provides the following guarantees:
         <a href="learn">Learn</a>
         <br />
         <br />
-        <p>Learn more about the RI Aggregation architecture</p>
+        <p>Learn more about the RIF Aggregation architecture</p>
       </div>
     </div>
     <div class="col">
