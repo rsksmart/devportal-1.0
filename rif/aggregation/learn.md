@@ -66,7 +66,7 @@ ZkSync transactions can be initiated both on L1 and L2.
 ## Accounts
 
 In order to perform transactions on L2, the user must be the owner of an L2 account, because those accounts use a different curve for signing, the [JubJub](https://z.cash/technology/jubjub/) curve that is better suited for ZK proofs.
-By default, each user owns a regular L1 account, so an L2 account creation and activation is required. For the L2 account creation, the user could deposit some tokens in the ZkSync SmartContract or receive funds to their L2 addresses. For the L2 account activation, the user must et its public key hash via a *ChangePubKey* transaction. The L2 account is created without public key (also known as *unowned*) because of the following reasons:
+By default, each user owns a regular L1 account, so an L2 account creation and activation is required. For the L2 account creation, the user could deposit some tokens in the ZkSync SmartContract or receive funds to their L2 addresses. For the L2 account activation, the user must set its public key hash via a *ChangePubKey* transaction. The L2 account is created without public key (also known as *unowned*) because of the following reasons:
 - if a transfer is valid in L1, it's also valid in L2
 - not every address can have a private key
 - transfers in L2 may happen without a confirmation by the receiver; in this case, if the receiver doesn't claim ownership, the funds can be transferred to an L1 account.
