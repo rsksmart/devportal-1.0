@@ -30,7 +30,7 @@ Database
 
 ZkSync transactions can be initiated both on L1 and L2.
 - Owners can submit some transaction requests (priority operations only) directly to the ZkSync SmartContract on L1
-- Owners can use the L2 API to submit transactions requests through the server.
+- Owners can use the L2 API to submit transaction requests through the server.
     1. Prepare and encode the transaction data into a byte sequence
     2. Create a zkSync signature for these bytes with the account private key
     3. Generate an [Ethereum signature](https://zksync.io/dev/payments/sending_transactions.html#sending-transactions-2) or provide an [EIP-1271](https://eips.ethereum.org/EIPS/eip-1271) signature
