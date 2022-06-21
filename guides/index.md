@@ -12,4 +12,4 @@ description: "Guides on RSK, workshops, and other guides"
 - [Quick Start](/guides/quickstart/)
 - [The Complete Guide to Stablecoins](/guides/stablecoin/)
 - [The Complete Guide to Decentralized Exchanges](/guides/dex/)
-
+- [Create, Deploy, and View NFT project on RSK](/guides/nft/)
