@@ -74,7 +74,7 @@ Once you’re on the RSK network, select the “NFTs” tab on the right and add
 
 You may need to refresh the page to see your newly minted NFT.
 
-![MetaMask screenshot after adding NFT collection](/assets/img/guides/nft/after-importing-nfts.png)
+![MetaMask screenshot after adding NFT collection](/assets/img/guides/nft/after-importing-nft.png)
 
 Congratulations! In this article, we learnt about NFTs, IPFS, Hardhat, and we have successfully created and deployed our NFT project to the RSK Testnet.
 
