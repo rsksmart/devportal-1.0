@@ -123,9 +123,10 @@ Options related to experimental import sync v0.1.
 
 ## keyvalue.datasource (experimental)
 
-Selects the database that will be used to store the information. Possible databases are to select are:
+Selects the database that will be used to store the information.
+Possible options are:
 
-* `leveldb` (default).
+* `leveldb` (default)
 * `rocksdb` (experimental)
 
 It is good idea to reset the database everytime you want to switch between different db storage, for instance from `leveldb` to `rocksdb` or viceversa, so that way the data is stored in the format of the selected DB.
