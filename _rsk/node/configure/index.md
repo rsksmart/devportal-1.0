@@ -89,7 +89,8 @@ Adventages (taken from source):
 Modify the relevant RSKj config file (`*.conf`) file
 and set the property `keyvalue.datasource=rocksdb`.
 
-`keyvalue.datasource` supports either: `rocksdb` or `leveldb`
+The `keyvalue.datasource` property in the config
+may only be either `rocksdb` or `leveldb`.
 
 It is good idea to reset the database everytime you want to switch between different db storage, for instance from `leveldb` to `rocksdb` or viceversa, so that way the data is stored in the format of the selected DB.
 
