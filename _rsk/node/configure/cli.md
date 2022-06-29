@@ -46,8 +46,9 @@ This is known as the *Blockchain Database*.
   Indicates that the block database should be erased, and should start from scratch,
   i.e. from genesis block.
   This is typically expected to be used when connecting to RSK Regtest,
-  or in select debugging scenarios. It is also used when switching between different databases,
-  i.e. from `leveldb` to `rocksdb`.
+  or in select debugging scenarios.
+  It is also used when switching between different databases,
+  e.g. between `leveldb` and `rocksdb`.
 - `--import`:
   Indicates that the block database should be imported from an external source.
   This is typically expected to be used when connecting to RSK Testnet or RSK Mainnet,
