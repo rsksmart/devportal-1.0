@@ -133,7 +133,7 @@ If you wish to switch between the different storage options,
 for example from `leveldb` to `rocksdb` or vice versa, 
 you must **restart** the node with the import option each time you do so.
 
-**Warning:** be aware that this is a experimental version and it is still in test.
+**Warning:** This feature is considered experimental, do not use in production.
 
 ## vm
 
