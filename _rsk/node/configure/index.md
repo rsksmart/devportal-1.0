@@ -66,6 +66,33 @@ This can be done in two ways:
 - Running the node with the `java` command, add `-Drsk.conf.file=path/to/your/file.conf`
 - Compiling the node with IntelliJ, add to VM options: `-Drsk.conf.file=path/to/your/file.conf`
 
+### Using RocksDb (Experimental)
+
+Our current application runs using [LevelDB](https://dbdb.io/db/leveldb) and now we are introudcing a second storage option, [RocksDB](http://rocksdb.org/).
+
+[RocksDB](http://rocksdb.org/) is a persistent key-value store for fast storage environments
+RocksDB is an embeddable persistent key-value store for fast storage.
+
+[GET STARTED](http://rocksdb.org/docs/getting-started.html).
+
+Adventages (taken from source):
+* RocksDB uses a log structured database engine, written entirely in C++, for maximum performance. Keys and values are just arbitrarily-sized byte streams.
+* RocksDB is optimized for fast, low latency storage such as flash drives and high-speed disk drives. RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
+* RocksDB is adaptable to different workloads. From database storage engines such as [MyRocks](https://github.com/facebook/mysql-5.6) to [application data caching](http://techblog.netflix.com/2016/05/application-data-caching-using-ssds.html) to embedded workloads, RocksDB can be used for a variety of data needs.
+* RocksDB provides basic operations such as opening and closing a database, reading and writing to more advanced operations such as merging and compaction filters.
+
+In order to take advange if it's high performance, we added this experimental feature to our app. It could be used in the `*.conf` file by just setting `keyvalue.datasource=rocksdb`.
+
+`keyvalue.datasource` supports either: `rocksdb` or `leveldb`
+
+It is good idea to reset the database everytime you want to switch between different db storage, for instance from `leveldb` to `rocksdb` or viceversa, so that way the data is stored in the format of the selected DB.
+
+Sample command using `rocksdb` when the previous db was `leveldb` (notice we add `--import` at the end to reset and re-import the database):
+
+* `java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import`
+
+**Warning:** be aware that this is a experimental version and it is still in test.
+
 ### Troubleshooting
 
 #### UDP port already in use

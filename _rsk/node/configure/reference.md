@@ -121,6 +121,17 @@ Options related to experimental import sync v0.1.
 * `database.import.enabled = [true/false]`
   enable the import sync.
 
+## keyvalue.datasource (experimental)
+
+Selects the database that will be used to store the information. Possible databases are to select are:
+
+* `leveldb` (default).
+* `rocksdb` (experimental)
+
+It is good idea to reset the database everytime you want to switch between different db storage, for instance from `leveldb` to `rocksdb` or viceversa, so that way the data is stored in the format of the selected DB.
+
+**Warning:** be aware that this is a experimental version and it is still in test.
+
 ## vm
 
 Enabling the `vm.structured` will log all the calls to the VM in the local database.
