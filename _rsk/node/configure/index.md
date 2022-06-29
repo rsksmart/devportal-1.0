@@ -92,9 +92,14 @@ and set the property `keyvalue.datasource=rocksdb`.
 The `keyvalue.datasource` property in the config
 may only be either `rocksdb` or `leveldb`.
 
-It is good idea to reset the database everytime you want to switch between different db storage, for instance from `leveldb` to `rocksdb` or viceversa, so that way the data is stored in the format of the selected DB.
+If you wish to switch between the different storage options,
+for example from `leveldb` to `rocksdb` or vice versa, 
+you must **restart** the node with the import option.
 
-Sample command using `rocksdb` when the previous db was `leveldb` (notice we add `--import` at the end to reset and re-import the database):
+The following sample command show how to do this when
+the RSKj node was previously running the default (`leveldb`),
+and wants to run with `rocksdb` next.
+Note the use of the `--import` flag, which resets and re-imports the database.
 
 * `java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import`
 
