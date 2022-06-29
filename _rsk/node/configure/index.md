@@ -103,7 +103,7 @@ Note the use of the `--import` flag, which resets and re-imports the database.
 
 * `java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import`
 
-**Warning:** be aware that this is a experimental version and it is still in test.
+**Warning:** This feature is considered experimental, do not use in production.
 
 ### Troubleshooting
 
