@@ -129,7 +129,9 @@ Possible options are:
 * `leveldb` (default)
 * `rocksdb` (experimental)
 
-It is good idea to reset the database everytime you want to switch between different db storage, for instance from `leveldb` to `rocksdb` or viceversa, so that way the data is stored in the format of the selected DB.
+If you wish to switch between the different storage options,
+for example from `leveldb` to `rocksdb` or vice versa, 
+you must **restart** the node with the import option each time you do so.
 
 **Warning:** be aware that this is a experimental version and it is still in test.
 
