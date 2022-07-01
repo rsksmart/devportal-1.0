@@ -1119,8 +1119,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-05-11 08:03:48 +0000T00:00:00.000Z">2021-05-11</time> | -->
-     3' to read |
+    <!--time role="presentation" datetime="2022-06-29 12:04:07 +0000T00:00:00.000Z">2022-06-29</time> | -->
+     4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/configure/cli.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2139,12 +2139,16 @@ This is known as the <em>Blockchain Database</em>.</p>
 Indicates that the block database should be erased, and should start from scratch,
 i.e. from genesis block.
 This is typically expected to be used when connecting to RSK Regtest,
-or in select debugging scenarios.</li>
+or in select debugging scenarios.
+It is also used when switching between different databases,
+e.g. between <code class="highlighter-rouge">leveldb</code> and <code class="highlighter-rouge">rocksdb</code>.</li>
   <li>
 <code class="highlighter-rouge">--import</code>:
 Indicates that the block database should be imported from an external source.
 This is typically expected to be used when connecting to RSK Testnet or RSK Mainnet,
-and when a reduction in “initial sync time” is desired.</li>
+and when a reduction in “initial sync time” is desired.
+It is also used when switching between different databases,
+e.g. between <code class="highlighter-rouge">leveldb</code> and <code class="highlighter-rouge">rocksdb</code>.</li>
 </ul>
 
 <h3 id="configuration-related">Configuration related</h3>
