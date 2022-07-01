@@ -66,7 +66,7 @@ This can be done in two ways:
 - Running the node with the `java` command, add `-Drsk.conf.file=path/to/your/file.conf`
 - Compiling the node with IntelliJ, add to VM options: `-Drsk.conf.file=path/to/your/file.conf`
 
-### Using RocksDb (Experimental)
+### Using RocksDB (Experimental)
 
 By default, RSKj runs using [LevelDB](https://dbdb.io/db/leveldb).
 There is an option to use an alternate storage option,
