@@ -66,6 +66,45 @@ This can be done in two ways:
 - Running the node with the `java` command, add `-Drsk.conf.file=path/to/your/file.conf`
 - Compiling the node with IntelliJ, add to VM options: `-Drsk.conf.file=path/to/your/file.conf`
 
+### Using RocksDB (Experimental)
+
+By default, RSKj runs using [LevelDB](https://dbdb.io/db/leveldb).
+There is an option to use an alternate storage option,
+[RocksDB](http://rocksdb.org/), instead.
+The RocksDB option was introduced to enable higher performance
+within the RSKj nodes.
+
+[RocksDB](http://rocksdb.org/) is a persistent key-value store for fast storage environments
+RocksDB is an embeddable persistent key-value store for fast storage.
+
+[GET STARTED](http://rocksdb.org/docs/getting-started.html).
+
+Advantages (taken from source):
+* RocksDB uses a log structured database engine, written entirely in C++, for maximum performance. Keys and values are just arbitrarily-sized byte streams.
+* RocksDB is optimized for fast, low latency storage such as flash drives and high-speed disk drives. RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
+* RocksDB is adaptable to different workloads. From database storage engines such as [MyRocks](https://github.com/facebook/mysql-5.6) to [application data caching](http://techblog.netflix.com/2016/05/application-data-caching-using-ssds.html) to embedded workloads, RocksDB can be used for a variety of data needs.
+* RocksDB provides basic operations such as opening and closing a database, reading and writing to more advanced operations such as merging and compaction filters.
+### How to use RocksDB
+
+Modify the relevant RSKj config file (`*.conf`) file
+and set the property `keyvalue.datasource=rocksdb`.
+
+The `keyvalue.datasource` property in the config
+may only be either `rocksdb` or `leveldb`.
+
+If you wish to switch between the different storage options,
+for example from `leveldb` to `rocksdb` or vice versa, 
+you must **restart** the node with the import option.
+
+The following sample command shows how to do this when
+the RSKj node was previously running the default (`leveldb`),
+and wants to run with `rocksdb` next.
+Note the use of the `--import` flag, which resets and re-imports the database.
+
+* `java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import`
+
+**Warning:** This feature is considered experimental, do not use in production.
+
 ### Troubleshooting
 
 #### UDP port already in use
