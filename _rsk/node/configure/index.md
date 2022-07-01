@@ -96,7 +96,7 @@ If you wish to switch between the different storage options,
 for example from `leveldb` to `rocksdb` or vice versa, 
 you must **restart** the node with the import option.
 
-The following sample command show how to do this when
+The following sample command shows how to do this when
 the RSKj node was previously running the default (`leveldb`),
 and wants to run with `rocksdb` next.
 Note the use of the `--import` flag, which resets and re-imports the database.
