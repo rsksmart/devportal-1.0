@@ -79,7 +79,7 @@ RocksDB is an embeddable persistent key-value store for fast storage.
 
 [GET STARTED](http://rocksdb.org/docs/getting-started.html).
 
-Adventages (taken from source):
+Advantages (taken from source):
 * RocksDB uses a log structured database engine, written entirely in C++, for maximum performance. Keys and values are just arbitrarily-sized byte streams.
 * RocksDB is optimized for fast, low latency storage such as flash drives and high-speed disk drives. RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
 * RocksDB is adaptable to different workloads. From database storage engines such as [MyRocks](https://github.com/facebook/mysql-5.6) to [application data caching](http://techblog.netflix.com/2016/05/application-data-caching-using-ssds.html) to embedded workloads, RocksDB can be used for a variety of data needs.
