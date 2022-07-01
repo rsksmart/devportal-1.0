@@ -71,7 +71,7 @@ This can be done in two ways:
 By default, RSKj runs using [LevelDB](https://dbdb.io/db/leveldb).
 There is an option to use an alternate storage option,
 [RocksDB](http://rocksdb.org/), instead.
-The RocksDb option was introduced to enable higher performance
+The RocksDB option was introduced to enable higher performance
 within the RSKj nodes.
 
 [RocksDB](http://rocksdb.org/) is a persistent key-value store for fast storage environments
