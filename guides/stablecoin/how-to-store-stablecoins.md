@@ -25,7 +25,7 @@ Also, watch this explainer video below to understand how crypto wallets work:
 
 ### Using Software Wallets
 
-You can add any of these stablecoins to a wallet integrated with the RSK network that lets you add custom tokens. This includes [Metamask](https://metamask.io/), [Nifty](https://www.poa.network/for-users/nifty-wallet), or any wallet that supports [WalletConnect](https://walletconnect.com/).
+You can add any of these stablecoins to a wallet integrated with the RSK network that lets you add custom tokens. This includes [Metamask](https://metamask.io/), or any wallet that supports [WalletConnect](https://walletconnect.com/).
 
 The following wallets can also be used to store stablecoins, as these wallets both support RSK and the ERC20 Token Standard.
 

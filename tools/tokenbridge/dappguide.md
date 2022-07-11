@@ -14,7 +14,6 @@ This guide describes the steps to transfer tokens using the Web Interface for th
 
 This will require the use of either Chrome or Chromium web browser, with one of the following wallet browser extensions:
 - [Metamask](https://metamask.io/download.html) using a [custom network](/develop/apps/wallets/metamask/) to add the RSK network.
-- [Nifty Wallet](https://www.poa.network/for-users/nifty-wallet)
 - [Liquality Wallet](https://liquality.io/)
 - [Definat Wallet](https://defiantapp.tech/)
 

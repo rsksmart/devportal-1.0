@@ -7,7 +7,7 @@ tags: rns, guide, rns-user-guide
 
 ## Locate Brave's Wallet
 
-The wallet in the Brave browser is not as prominent as it is with Chrome or Firefox Nifty and Metamask plugins. The wallet is located under the Main Menu / Crypto Wallet:
+The wallet in the Brave browser is not as prominent as it is with Chrome or Firefox Metamask plugins. The wallet is located under the Main Menu / Crypto Wallet:
 
 ![Brave - Locate Brave Wallet](/rif/rns/guide/images/brave-locate-brave-wallet.jpg)
 

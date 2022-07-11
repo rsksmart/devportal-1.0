@@ -13,7 +13,7 @@ RBank is a lending solution on the RSK network. It uses the money market protoco
 
 To use the application, we are going to need the following:
 
-1. An internet browser extension wallet. Read [Compatible wallets](https://developers.rsk.co/rif/rns/guide/setup/#compatible-wallets) on how to get a compatible wallet, or read the guides to connect [Nifty wallet](https://developers.rsk.co/rif/rns/guide/setup/#connect-nifty-wallet-to-rsk) and [Metamask wallet](https://developers.rsk.co/rif/rns/guide/setup/#connect-metamask-wallet-to-rsk) to RSK.
+1. An internet browser extension wallet. Read [Compatible wallets](https://developers.rsk.co/rif/rns/guide/setup/#compatible-wallets) on how to get a compatible wallet, or read the guide to connect [Metamask wallet](https://developers.rsk.co/rif/rns/guide/setup/#connect-metamask-wallet-to-rsk) to RSK.
 2. RBTC to pay for the transaction cost. See [Getting RBTC](https://developers.rsk.co/rif/rns/guide/setup/#getting-rbtc).
 3. Get an ERC20 based token set, at least 2 ([Know more about ERC20 tokens](https://eips.ethereum.org/EIPS/eip-20)). You don't need to be the owner of them but should have the contracts addresses.
 
@@ -25,7 +25,7 @@ To use the application, we are going to need the following:
 
 All the activities performed on RBank pass through a smart contract named Controller, which is in charge of the administration of the operation between markets and evaluates operations viability.
 
-The library - RBank-js allows to deploy a Controller in a web browser with a wallet such as Metamask or Nifty, making a single transaction through the create method of the Controller class:
+The library - RBank-js allows to deploy a Controller in a web browser with a wallet such as Metamask, making a single transaction through the create method of the Controller class:
 
 ```javascript
 import RBank from '@rsksmart/rbank';
@@ -67,7 +67,7 @@ The moment this health factor reaches 0%, it means that the money deposited in t
 
 ### Supply
 
-The supply operation deposits a quantity of tokens that an account owns (related in Metamask or Nifty). When entering the Supply / Borrow tab, you can see the list of markets that are created in RBank. To start, click on one of the markets in which you want to deposit money.
+The supply operation deposits a quantity of tokens that an account owns (related in Metamask). When entering the Supply / Borrow tab, you can see the list of markets that are created in RBank. To start, click on one of the markets in which you want to deposit money.
 
 ![RBank - Supply](/assets/img/kb/rbank/Supply1.jpg)
 
@@ -138,7 +138,7 @@ The repay operation is where you can make the payment of a previously requested 
 
 ![RBank - Repay](/assets/img/kb/rbank/Repay.jpg)
 
-Once you have entered a valid amount, taking into account the available tokens in your wallet account (Metamask or Nifty) and your current debt in that market, click on the lower button "Repay tokens".
+Once you have entered a valid amount, taking into account the available tokens in your wallet account (Metamask) and your current debt in that market, click on the lower button "Repay tokens".
 
 ![RBank - Repay2](/assets/img/kb/rbank/Repay2.jpg)
 
@@ -199,7 +199,7 @@ This sequence diagram shows how communication with RBank contracts happens throu
 
 ### Market creation
 
-If you are the administrator of RBank, you can create markets, by relating a token that complies with the ERC20 standard to a new contract in RBank of the Market type. To do this, you must log in with the administrator account in your browser wallet (Metamask or Nifty) and RBank will show you the administration view with the current markets. Click on "Add new market" at the top right.
+If you are the administrator of RBank, you can create markets, by relating a token that complies with the ERC20 standard to a new contract in RBank of the Market type. To do this, you must log in with the administrator account in your browser wallet (Metamask) and RBank will show you the administration view with the current markets. Click on "Add new market" at the top right.
 
 ![RBank - AdvancedAdminDashboard](/assets/img/kb/rbank/AdvancedAdminDashboard.jpg)
 

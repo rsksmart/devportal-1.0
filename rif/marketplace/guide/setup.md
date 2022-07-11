@@ -16,12 +16,13 @@ To use the Marketplace application and services, we are going to do the followin
 
 The RIF Marketplace can be used seamlessly with the following wallets. To setup your wallet, follow the instructions in [connect to RSK network](#connect-nifty-wallet-to-rsk).
 
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
 
 <div class="markdown-light-rounded-border markdown-width40 markdown-horizontal-margin30">
     <img src="/rif/marketplace/guide/images/nifty-wallet-logo.png" alt="Nifty Wallet Logo" />
     <p>
         Nifty wallet <span class="badge badge-primary">recommended</span><br/>
-        <a href="https://www.poa.network/for-users/nifty-wallet">Get the wallet</a>
+        <a href="https://www.poa.network/v/master-1/for-users/nifty-wallet">Get the wallet</a>
     </p>
 </div>
 
@@ -42,6 +43,8 @@ The RIF Marketplace can be used seamlessly with the following wallets. To setup 
 </div>
 
 #### Connect Nifty Wallet to RSK
+
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
 
 1. Open your wallet.
 2. Open network selector

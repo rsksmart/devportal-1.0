@@ -25,7 +25,6 @@ Surely you want to reserve the name of your dapp now! Search it here
 
 ## Use a compatible wallet
 
-  * Our recommendation: [Nifty wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid?hl=en)
   * [Metamask](https://metamask.io/)
   * [Brave](https://brave.com/)
   * If you use another wallet, [here](/develop/apps/wallets/) you may need to perform additional steps.

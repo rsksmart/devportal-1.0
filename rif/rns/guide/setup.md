@@ -22,7 +22,7 @@ The RNS Manager can be used seamlessly with the following wallets. To setup your
     <img src="https://i.imgur.com/xacetSm.png" alt="" />
     <p>
         Nifty wallet <span class="badge badge-primary">recommended</span><br/>
-        <a href="https://www.poa.network/for-users/nifty-wallet">Get the wallet</a>
+        <a href="https://www.poa.network/v/master-1/for-users/nifty-wallet">Get the wallet</a>
     </p>
 </div>
 
@@ -107,6 +107,8 @@ To see how many tokens you have in your wallet you should list the RIF Token.
     > You are also able to choose RNS Token. This represents the amount of .rsk domains owned by your wallet, you can add it too.
 
 5. Click next
+
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
 
 #### Display amount of tokens in the Metamask wallet
 

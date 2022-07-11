@@ -30,7 +30,6 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
       <br />
       <select name="walletName" id="rsk-token-bridge-support-walletName">
         <option value="metamask">MetaMask</option>
-        <option value="nifty">Nifty</option>
         <option value="liquality">Liquality</option>
       </select>
     </div>
@@ -101,13 +100,15 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Nifty respects this convention. In Nifty, add RSK as Custom RPC, to get the same address as ethereum, see: [Resolve Nifty Issue](https://developers.rsk.co/tutorials/resolve-nifty-issue/).
 
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
+
 8 - **Transferred tokens from RSK to Ethereum, but do not see them in Nifty**
 
 **Network:** RSK to ETH
 
 **When:** always
 
-**Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Nifty respects this convention. Copy your mnemonic or private key and use My Ether Wallet or My Crypto with the RSK derivation path m/44’/137’/0’/0 to get the same address as RSK.
+**Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Copy your mnemonic or private key and use My Ether Wallet or My Crypto with the RSK derivation path m/44’/137’/0’/0 to get the same address as RSK.
 
 9 - **Why does it take 24 hours? Can it be faster?**
 

@@ -32,7 +32,7 @@ const rns = new RNS(web3)
 
 > Remember that if you are running the code in a webpage, no `import` statements are needed, just instantiate the libs made available in the global scope.
 
-## Instance in Chrome with wallet extension (Metamask or Nifty)
+## Instance in Chrome with wallet extension (Metamask)
 
 ```javascript
 import Web3 from 'web3'

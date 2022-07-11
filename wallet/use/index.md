@@ -84,7 +84,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 - [Ledger](/wallet/use/ledger)
 - [MyCrypto](/wallet/use/mycrypto)
-- [Nifty](/wallet/use/nifty)
 - [Metamask](/wallet/use/metamask)
 - [RPC](/wallet/use/json-rpc)
 - [Defiant](/solutions/defiant/)
@@ -99,7 +98,6 @@ In the following matrix you can see the different features by wallet.
 | Trezor | | ✔ | | ✔ | | ❌ |
 | MyCrypto | | ✔ | | ✔ | | ✔ |
 | MEW | | ✔ | | ✔ | | ✔ |
-| Nifty | | ✔ | | ✔ | | ❌ |
 | Metamask | | ❌ | | ❌ | | ❌ |
 | rWallet | | ✔ | | ✔ | | ✔ |
 | Edge | | ✔ | | ✔ | | ❌ |

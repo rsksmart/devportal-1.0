@@ -3,6 +3,12 @@ layout: rsk
 title: Nifty
 tags: nifty, json-rpc, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
+
+
+"Nifty Wallet is discontinued. As a result of changing crypto market conditions and to continually improve support for our growing family of Gnosis Chain products, certain existing products will be retired in 2022. This list includes the Nifty Wallet browser wallet. Nifty Wallet extension will be delisted from Google Chrome web store in the near future. ([source](https://www.poa.network/v/master-1/for-users/nifty-wallet))" - Nifty Wallet Developers.
+
+See [guide](https://www.poa.network/v/master-1/for-users/nifty-wallet) on how to move or export your RBTC.
+
 # How To Create A Nifty Wallet
 
 ## Installing Nifty Wallet

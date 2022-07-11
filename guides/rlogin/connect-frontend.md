@@ -55,11 +55,7 @@ using any browser wallet or even any mobile wallet.
 
 Connect to RSK Testnet with your wallet
 (or pick another set of supported networks in the setup).
-We recommend trying the
-[Nifty browser wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid) first.
-This has an easy setup for RSK -
-just switch network in the top left corner of the wallet -
-and [Defiant mobile wallet](https://defiantapp.tech/)
+We recommend trying the [Defiant mobile wallet](https://defiantapp.tech/)
 that supports RSK by default.
 
 ```javascript

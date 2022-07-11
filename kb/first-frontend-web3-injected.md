@@ -217,7 +217,7 @@ Click the button **Compile Register.sol**.
 In the left side panel, go to the button Deploy and run transactions.
 
 Under `Environment`, make sure you have selected the `Injected Web3` option,
-as this tells Remix to use the Web3 provider injected by a browser plugin such as [MetaMask](https://metamask.io/) or [Nifty](https://www.poa.network/for-users/nifty-wallet).
+as this tells Remix to use the Web3 provider injected by a browser plugin such as [MetaMask](https://metamask.io/).
 
 ![Injected Web3](/assets/img/kb/first-frontend-web3-injected/image-13.png)
 
