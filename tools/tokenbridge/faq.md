@@ -41,7 +41,7 @@ The number of decimal places will be 18. These are the ['addresses'](/tools/toke
 
 ## How do I transform my original tokens to Side Tokens?
 
-The Token Bridge will be a public DApp where users will be able to access by using Nifty Wallet or Metamask. You will be able to send your original tokens and receive an equivalent amount of Side Tokens on the other network. By toggling the network on Metamask, you’re also able to transfer the other way around, by sending Side Tokens and receive original tokens.
+The Token Bridge will be a public DApp where users will be able to access by using Liquality Wallet or Metamask. You will be able to send your original tokens and receive an equivalent amount of Side Tokens on the other network. By toggling the network on Metamask, you’re also able to transfer the other way around, by sending Side Tokens and receive original tokens.
 
 ## If I sell my Side Tokens, what happens to my original tokens?
 

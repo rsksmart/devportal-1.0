@@ -98,7 +98,9 @@ Once the market is selected you will be able to see what is the money available 
 
 ![RBank - Borrow2](/assets/img/kb/rbank/Borrow2.jpg)
 
-Once you have entered a valid amount, click on the "Borrow Tokens" button. This operation will cause confirmation to be requested in the browser's wallet (Metamask or Nifty), once confirmed we wait for its validation on the network. This should take approximately 4 minutes.
+Once you have entered a valid amount, click on the "Borrow Tokens" button. This operation will cause confirmation to be requested in the browser's wallet (Metamask, Liquality or Nifty), once confirmed we wait for its validation on the network. This should take approximately 4 minutes.
+
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
 
 ![RBank - AwaitingTransactionApprovalForBorrow](/assets/img/kb/rbank/AwaitTransBorrow.jpg)
 
