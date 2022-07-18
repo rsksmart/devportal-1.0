@@ -17,7 +17,7 @@ forming an integral part of dApp architecture.
 > Note that these browser extensions store your private keys,
 > and use them to sign transactions. So keep them secure.
 
-There are currently three well known browser extensions that you can use to interact with the RSK blockchain: MetaMask, and [Liquality](https://chrome.google.com/webstore/detail/liquality-wallet/kpfopkelmapcoipemfendmdcghnegimn).
+There are currently two well known browser extensions that you can use to interact with the RSK blockchain: [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn), and [Liquality](https://chrome.google.com/webstore/detail/liquality-wallet/kpfopkelmapcoipemfendmdcghnegimn).
 Since this is a quick start, we will not go through all of them - just MetaMask.
 
 ## Install Metamask
