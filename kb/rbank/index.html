@@ -1103,7 +1103,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-12-18 15:13:33 +0000T00:00:00.000Z">2020-12-18</time> | -->
+    <!--time role="presentation" datetime="2022-07-13 12:16:50 +0000T00:00:00.000Z">2022-07-13</time> | -->
      15' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/rbank.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2073,7 +2073,7 @@
 <p>To use the application, we are going to need the following:</p>
 
 <ol>
-  <li>An internet browser extension wallet. Read <a href="https://developers.rsk.co/rif/rns/guide/setup/#compatible-wallets" rel="external noopener noreferrer" target="_blank">Compatible wallets</a> on how to get a compatible wallet, or read the guides to connect <a href="https://developers.rsk.co/rif/rns/guide/setup/#connect-nifty-wallet-to-rsk" rel="external noopener noreferrer" target="_blank">Nifty wallet</a> and <a href="https://developers.rsk.co/rif/rns/guide/setup/#connect-metamask-wallet-to-rsk" rel="external noopener noreferrer" target="_blank">Metamask wallet</a> to RSK.</li>
+  <li>An internet browser extension wallet. Read <a href="https://developers.rsk.co/rif/rns/guide/setup/#compatible-wallets" rel="external noopener noreferrer" target="_blank">Compatible wallets</a> on how to get a compatible wallet, or read the guide to connect <a href="https://developers.rsk.co/rif/rns/guide/setup/#connect-metamask-wallet-to-rsk" rel="external noopener noreferrer" target="_blank">Metamask wallet</a> to RSK.</li>
   <li>RBTC to pay for the transaction cost. See <a href="https://developers.rsk.co/rif/rns/guide/setup/#getting-rbtc" rel="external noopener noreferrer" target="_blank">Getting RBTC</a>.</li>
   <li>Get an ERC20 based token set, at least 2 (<a href="https://eips.ethereum.org/EIPS/eip-20" rel="external noopener noreferrer" target="_blank">Know more about ERC20 tokens</a>). You don’t need to be the owner of them but should have the contracts addresses.</li>
 </ol>
@@ -2086,7 +2086,7 @@
 
 <p>All the activities performed on RBank pass through a smart contract named Controller, which is in charge of the administration of the operation between markets and evaluates operations viability.</p>
 
-<p>The library - RBank-js allows to deploy a Controller in a web browser with a wallet such as Metamask or Nifty, making a single transaction through the create method of the Controller class:</p>
+<p>The library - RBank-js allows to deploy a Controller in a web browser with a wallet such as Metamask, making a single transaction through the create method of the Controller class:</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">RBank</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/rbank</span><span class="dl">'</span><span class="p">;</span>
 <span class="kd">const</span> <span class="nx">rbank</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RBank</span><span class="p">();</span>
@@ -2127,7 +2127,7 @@ The moment this health factor reaches 0%, it means that the money deposited in t
 
 <h3 id="supply">Supply</h3>
 
-<p>The supply operation deposits a quantity of tokens that an account owns (related in Metamask or Nifty). When entering the Supply / Borrow tab, you can see the list of markets that are created in RBank. To start, click on one of the markets in which you want to deposit money.</p>
+<p>The supply operation deposits a quantity of tokens that an account owns (related in Metamask). When entering the Supply / Borrow tab, you can see the list of markets that are created in RBank. To start, click on one of the markets in which you want to deposit money.</p>
 
 <p><img src="../../assets/img/kb/rbank/Supply1.jpg" alt="RBank - Supply"></p>
 
@@ -2157,7 +2157,11 @@ The moment this health factor reaches 0%, it means that the money deposited in t
 
 <p><img src="../../assets/img/kb/rbank/Borrow2.jpg" alt="RBank - Borrow2"></p>
 
-<p>Once you have entered a valid amount, click on the “Borrow Tokens” button. This operation will cause confirmation to be requested in the browser’s wallet (Metamask or Nifty), once confirmed we wait for its validation on the network. This should take approximately 4 minutes.</p>
+<p>Once you have entered a valid amount, click on the “Borrow Tokens” button. This operation will cause confirmation to be requested in the browser’s wallet (Metamask, Liquality or Nifty), once confirmed we wait for its validation on the network. This should take approximately 4 minutes.</p>
+
+<blockquote>
+  <p>Note: The Nifty browser wallet has been discontinued. See the <a href="https://developers.rsk.co/wallet/use/nifty" rel="external noopener noreferrer" target="_blank">Nifty Wallet)</a> page for more information.</p>
+</blockquote>
 
 <p><img src="../../assets/img/kb/rbank/AwaitTransBorrow.jpg" alt="RBank - AwaitingTransactionApprovalForBorrow"></p>
 
@@ -2197,7 +2201,7 @@ The moment this health factor reaches 0%, it means that the money deposited in t
 
 <p><img src="../../assets/img/kb/rbank/Repay.jpg" alt="RBank - Repay"></p>
 
-<p>Once you have entered a valid amount, taking into account the available tokens in your wallet account (Metamask or Nifty) and your current debt in that market, click on the lower button “Repay tokens”.</p>
+<p>Once you have entered a valid amount, taking into account the available tokens in your wallet account (Metamask) and your current debt in that market, click on the lower button “Repay tokens”.</p>
 
 <p><img src="../../assets/img/kb/rbank/Repay2.jpg" alt="RBank - Repay2"></p>
 
@@ -2260,7 +2264,7 @@ The moment this health factor reaches 0%, it means that the money deposited in t
 
 <h3 id="market-creation">Market creation</h3>
 
-<p>If you are the administrator of RBank, you can create markets, by relating a token that complies with the ERC20 standard to a new contract in RBank of the Market type. To do this, you must log in with the administrator account in your browser wallet (Metamask or Nifty) and RBank will show you the administration view with the current markets. Click on “Add new market” at the top right.</p>
+<p>If you are the administrator of RBank, you can create markets, by relating a token that complies with the ERC20 standard to a new contract in RBank of the Market type. To do this, you must log in with the administrator account in your browser wallet (Metamask) and RBank will show you the administration view with the current markets. Click on “Add new market” at the top right.</p>
 
 <p><img src="../../assets/img/kb/rbank/AdvancedAdminDashboard.jpg" alt="RBank - AdvancedAdminDashboard"></p>
 

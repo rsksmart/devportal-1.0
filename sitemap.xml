@@ -570,7 +570,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/libs/javascript/RNS-instance/</loc>
-<lastmod>2021-06-03T10:06:48+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/architecture/RSKResolver/</loc>
@@ -734,11 +734,11 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/guide/brave/</loc>
-<lastmod>2021-06-03T04:29:30+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/quickstart/browser/</loc>
-<lastmod>2021-06-28T03:03:31+00:00</lastmod>
+<lastmod>2022-07-18T09:00:48+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/contribute/bug-bounty-program/</loc>
@@ -798,7 +798,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/rlogin/connect-frontend/</loc>
-<lastmod>2021-08-20T04:57:38+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/tools/tokenbridge/contractaddresses/</loc>
@@ -902,7 +902,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/tools/tokenbridge/dappguide/</loc>
-<lastmod>2021-07-24T00:16:50+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/aggregation/dapps/</loc>
@@ -954,7 +954,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/marketplace/dev-setup/</loc>
-<lastmod>2021-03-03T03:52:15+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/relay/dev-setup/</loc>
@@ -1054,7 +1054,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/tools/tokenbridge/faq/</loc>
-<lastmod>2021-07-26T06:26:39+00:00</lastmod>
+<lastmod>2022-07-13T12:16:50+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/faqs/</loc>
@@ -1090,7 +1090,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/first-frontend-web3-injected/</loc>
-<lastmod>2022-04-05T11:32:32+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/tutorials/frontend/first-frontend-web3-injected/</loc>
@@ -1146,7 +1146,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rlogin/get-started/</loc>
-<lastmod>2022-05-24T02:14:56+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/getblock-rpc/</loc>
@@ -1222,7 +1222,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/stablecoin/how-to-store-stablecoins/</loc>
-<lastmod>2022-04-27T20:48:02+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/stablecoin/how-to-use-rsk-tokenbridge/</loc>
@@ -1514,7 +1514,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/marketplace/guide/</loc>
-<lastmod>2021-03-03T20:09:07+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/marketplace/services/rnsdomains/</loc>
@@ -1690,7 +1690,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/tools/tokenbridge/</loc>
-<lastmod>2022-03-03T12:52:23+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/tools/truffle/</loc>
@@ -1726,7 +1726,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/wallet/use/</loc>
-<lastmod>2021-06-03T10:06:48+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/wallet/</loc>
@@ -1762,7 +1762,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/integrate/integrate-dapp/</loc>
-<lastmod>2021-06-03T10:06:48+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/integrate/integrate-wallet/</loc>
@@ -1918,7 +1918,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/marketplace/mainnet/</loc>
-<lastmod>2021-03-31T11:18:04+00:00</lastmod>
+<lastmod>2022-07-13T12:16:50+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/mainnet/</loc>
@@ -1998,7 +1998,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/wallet/use/nifty/</loc>
-<lastmod>2021-09-16T14:00:32+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/gateways/dataservices/chainlink/node-operators/</loc>
@@ -2062,7 +2062,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part1-overview/</loc>
-<lastmod>2022-04-28T01:36:43+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part2-smart-contracts/</loc>
@@ -2070,7 +2070,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part3-front-end/</loc>
-<lastmod>2021-06-03T04:29:30+00:00</lastmod>
+<lastmod>2022-07-13T12:16:50+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/libraries/web3/personal/</loc>
@@ -2138,11 +2138,11 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/tutorials/quiz-app-to-dapp/</loc>
-<lastmod>2021-03-26T05:55:14+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/rbank/</loc>
-<lastmod>2020-12-18T15:13:33+00:00</lastmod>
+<lastmod>2022-07-13T12:16:50+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/guides/get-crypto-on-rsk/rbtc-exchanges/</loc>
@@ -2230,7 +2230,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/resolve-nifty-issue/</loc>
-<lastmod>2021-09-24T02:29:03+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/tutorials/resolve-nifty-issue/</loc>
@@ -2406,7 +2406,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/tutorials/ethereum-devs/setup-truffle-oz/</loc>
-<lastmod>2021-10-20T12:53:26+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/gateways/triggers/notifier/setup/</loc>
@@ -2414,11 +2414,11 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/marketplace/guide/setup/</loc>
-<lastmod>2021-03-24T14:12:45+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/guide/setup/</loc>
-<lastmod>2021-06-03T04:29:30+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/slack/</loc>
@@ -2518,7 +2518,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/marketplace/testnet/</loc>
-<lastmod>2021-03-05T17:35:17+00:00</lastmod>
+<lastmod>2022-07-13T12:16:50+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/relay/testnet/</loc>
@@ -2526,7 +2526,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/testnet/</loc>
-<lastmod>2021-06-08T11:10:58+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/token/</loc>
@@ -2534,7 +2534,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/tokenbridge-troubleshooting/</loc>
-<lastmod>2021-06-09T03:30:38+00:00</lastmod>
+<lastmod>2022-07-11T17:01:29+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/multisig/transaction-service/</loc>
@@ -2558,7 +2558,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/truffle-boxes-prerequisites/</loc>
-<lastmod>2022-04-21T12:20:31+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/tutorials/truffle-boxes/truffle-boxes-prerequisites/</loc>
@@ -2582,7 +2582,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/truffle-rsk-starter-box/</loc>
-<lastmod>2022-04-21T12:20:31+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/tutorials/ethereum-devs/truffle-test/</loc>
@@ -2590,7 +2590,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/rns/try-rns/</loc>
-<lastmod>2021-06-03T10:06:48+00:00</lastmod>
+<lastmod>2022-07-11T06:57:43+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/rif/identity/data-vault/use/</loc>
@@ -2634,7 +2634,7 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/verify-address-ownership/</loc>
-<lastmod>2022-04-01T06:15:01+00:00</lastmod>
+<lastmod>2022-07-13T12:16:50+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/kb/verify-smart-contract/</loc>
@@ -2678,22 +2678,22 @@
 </url>
 <url>
 <loc>https://developers.rsk.co/assets/vendor/revealjs-4.0.2/plugin/notes/speaker-view.html</loc>
-<lastmod>2022-07-01T16:46:14+00:00</lastmod>
+<lastmod>2022-07-19T01:59:07+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/grants/follow-up/</loc>
-<lastmod>2022-07-01T16:46:14+00:00</lastmod>
+<lastmod>2022-07-19T01:59:07+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/grants/terms.pdf</loc>
-<lastmod>2022-07-01T16:46:14+00:00</lastmod>
+<lastmod>2022-07-19T01:59:07+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/wallet/rwallet/android.html</loc>
-<lastmod>2022-07-01T16:46:14+00:00</lastmod>
+<lastmod>2022-07-19T01:59:07+00:00</lastmod>
 </url>
 <url>
 <loc>https://developers.rsk.co/wallet/rwallet/ios.html</loc>
-<lastmod>2022-07-01T16:46:14+00:00</lastmod>
+<lastmod>2022-07-19T01:59:07+00:00</lastmod>
 </url>
 </urlset>
