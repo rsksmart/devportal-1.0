@@ -34,7 +34,7 @@ and it is extremely important that you record this somewhere.
 **ℹ️** Enable only one Web3 browser extension
 
 If you have more than one Web3 browser extension installed,
-for example, if you have both MetaMask and Nifty,
+for example, if you have either MetaMask, Liquality or Nifty,
 be aware that they can conflict with each other.
 
 Paste `chrome://extensions/` in your address bar,
@@ -42,6 +42,8 @@ to see all the browser extensions that you have installed.
 Verify that you only have MetaMask installed, **or**
 if you have other Web3 browser extensions,
 you should disable all of the others by clicking on the toggle buttons.
+
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
 
 ![](/assets/img/kb/verify-address-ownership/rif-identity-metamask-disable-other-web3-extensions.png)
 

@@ -80,8 +80,9 @@ nd the full source code can be found in the
 In order for the `dapp.js` file to work,
 we would need to use a browser with
 a [Web3](https://web3js.readthedocs.io/en/v1.2.11/)-enabled browser extension.
-We suggest either [Metamask](https://metamask.io)
-or [Nifty Wallet](https://www.poa.network/for-users/nifty-wallet) for this.
+We suggest [Metamask](https://metamask.io) and the [Liquality Wallet](https://chrome.google.com/webstore/detail/liquality-wallet/kpfopkelmapcoipemfendmdcghnegimn).
+
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
 
 ```javascript
 import Web3 from 'web3';

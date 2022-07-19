@@ -23,7 +23,7 @@ The bridge contracts are upgradeable, this enables a smoother move to a more dec
 
 ## Usage
 
-You can use the ['Token Bridge Dapp'](https://tokenbridge.rsk.co/) together with [Nifty Wallet](https://chrome.google.com/webstore/detail/nifty-wallet/jbdaocneiiinmjbjlgalhcelgbejmnid) or [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) to move tokens between networks.
+You can use the ['Token Bridge Dapp'](https://tokenbridge.rsk.co/) together with [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) to move tokens between networks.
 
 Follow the [Dapp guide](/tools/tokenbridge/dappguide/) for more details on how to use the token bridge.
 

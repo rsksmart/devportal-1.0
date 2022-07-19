@@ -462,7 +462,7 @@ The best way is to create a wallet from a mnemonic, using the pattern defined at
 
 There are a few ways to do this.
 
-One is to create using a web wallet, such as [Metamask](https://metamask.io/) or [Nifty](https://www.poa.network/for-users/nifty-wallet) wallet.
+One is to create using a web wallet, such as [Metamask](https://metamask.io/).
 These wallets generate the mnemonic for you.
 If you wanted to create using Metamask, you can get the instructions here:
 

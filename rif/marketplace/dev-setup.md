@@ -93,7 +93,7 @@ Per network configuration file for the [RNS Domains Manager](https://github.com/
 
 ### 1.3. Browser wallet
 
-In MetaMask or Nifty, import the first address from the `keys.txt` file. The private key is `0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`
+In MetaMask, import the first address from the `keys.txt` file. The private key is `0x4f3edf983ac636a65a842ce7c78d9aa706d3b113bce9c46f30d7d21715b23b1d`
 
 Connect to the local ganache network (`localhost:8545` in the network dropdown). You should now see a balance of 99 ETH (or close to that - some gas was already used to deploy the Contracts).
 

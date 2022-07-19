@@ -19,7 +19,7 @@ Integrate rLogin into your app and allow your users to choose their favourite wa
   <div class="col">
     <h3>Wallet support:</h3>
     <ul>
-      <li>Browser wallets: Metamask, Nifty, Liquality</li>
+      <li>Browser wallets: Metamask, Liquality</li>
       <li>Mobile wallets via Wallet Connect</li>
       <li>Custodial wallets: Portis, Torus (beta)</li>
       <li>Hardware wallets: Ledger, Trezor, D'Cent</li>

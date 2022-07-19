@@ -101,6 +101,8 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **Answer:**  RSK has a different derivation path (m/44’/137’/0’/0) from Ethereum (m/44’/60’/0’/0). Nifty respects this convention. In Nifty, add RSK as Custom RPC, to get the same address as ethereum, see: [Resolve Nifty Issue](https://developers.rsk.co/tutorials/resolve-nifty-issue/).
 
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
+
 8 - **Transferred tokens from RSK to Ethereum, but do not see them in Nifty**
 
 **Network:** RSK to ETH

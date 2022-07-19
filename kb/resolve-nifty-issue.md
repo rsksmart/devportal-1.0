@@ -5,6 +5,8 @@ description: "Resolution for breaking change in derivation path for Nifty Wallet
 tags: tutorial, nifty, chainId, address, derivation, bip44, slip44
 ---
 
+> Note: The Nifty browser wallet has been discontinued. See the [Nifty Wallet)](https://developers.rsk.co/wallet/use/nifty) page for more information.
+
 ## Nifty wallet version 5
 
 Recently, Nifty Wallet has fixed this issue:

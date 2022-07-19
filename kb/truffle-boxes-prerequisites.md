@@ -157,9 +157,8 @@ The best way is to create a wallet from a mnemonic, using the pattern defined at
 There are a few ways to do this.
 
 One is to create using a web wallet, 
-such as [Metamask](https://metamask.io/) 
-or [Nifty](https://www.poa.network/for-users/nifty-wallet) wallet.
-These wallets generate the mnemonic for you.
+such as [Metamask](https://metamask.io/).
+This wallet generates the mnemonic for you.
 
 ### iancoleman.io/bip39
 
