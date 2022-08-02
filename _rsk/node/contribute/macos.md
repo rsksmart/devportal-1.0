@@ -192,7 +192,7 @@ Click on `start (green play icon at the left of your configuration name)`.
 
 ![img](/assets/img/rsk/howToInstallAndRun/VSCode_Run.png)
 
-Debug tools menu shows up at the top of the IDE window, were you could run step by step and more!
+A debug tools menu shows up at the top of the IDE window, were you could run the node step by step!
 
 #### Building the project with Gradle in Visual Studio Code
 
