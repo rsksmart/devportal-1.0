@@ -18,7 +18,7 @@ This page is organized in this way:
 
 ### Compiling the node 
 
-After opening IDEA we need to load the RskJ project, this can be done by using the *Import project* option in IDEA.
+After opening IDEA, we need to load the RSKj project, this can be done by using the *Import project* option in IDEA.
 
 To do that follow the next steps:
 
