@@ -85,7 +85,7 @@ When IntelliJ IDEA is launched you should have a window with different choices.
 #### IDEA Build/Run configuration
 
 We need to create a new configuration profile to run the node from IDEA.
-That can be done by clicking on *Run* -> *Edit Configurations* or as shown in the following picture:
+That can be done by clicking on *Run* -> *Edit Configurations* or as shown in the image below:
 
 ![img](/assets/img/rsk/howToInstallAndRun/EditConfigs.png)
 
