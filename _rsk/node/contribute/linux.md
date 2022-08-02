@@ -204,4 +204,4 @@ In order to run tests, we can simply go to the `Testing` tab where you can see a
 
 ## Any problems?
 
-We hope the [troubleshooting section](/rsk/node/troubleshooting) can help you!
+Check out the [troubleshooting section](/rsk/node/troubleshooting), hope it helps!
