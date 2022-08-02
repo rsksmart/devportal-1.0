@@ -133,22 +133,27 @@ In order to setup JDK configuration, we use `.vscode/settings.json`. Here we can
 **.vscode/settings.json**
 ```
 {
-   "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
+   "java.jdt.ls.java.home": "/lib/jvm/java-17-openjdk",
    "java.configuration.runtimes": [
       {
         "name": "JavaSE-1.8",
-        "path": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home",
+        "path": "/lib/jvm/java-1.8-openjdk",
         "default": true
       },
       {
         "name": "JavaSE-17",
-        "path": "/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home",
+        "path": "/lib/jvm/java-17-openjdk",
       },
     ]
 }
 ```
 
-In this example we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`
+In this example we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`.
+
+In order to list these paths you can run:
+```
+sudo update-alternatives --config java
+```
 
 In order to build, run or debug RSKj, we use `.vscode/launch.json`. Here we can setup the commands that will be used to run our application, for instance:
 
