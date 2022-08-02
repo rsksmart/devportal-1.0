@@ -77,7 +77,7 @@ This will download and set important components (e.g. Gradle Wrapper).
 ### Compiling the node 
 
 Now, you can launch IntelliJ IDEA.
-When IntelliJ IDEA is launched you should have a window with different choices.
+When IntelliJ IDEA is launched you should have a window with different options.
 
 - Choose *Import project*.
 - Browse in the RskJ downloaded code the file `rskj\build.gradle` and select it. Click *NEXT*.
