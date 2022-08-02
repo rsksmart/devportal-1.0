@@ -18,7 +18,7 @@ This page is organized in this way:
 
 ### Compiling the node 
 
-After opening IDEA we need to load the RskJ project, this can be done by using the *Import project* option in IDEA.
+After opening IDEA, we need to load the RSKj project, this can be done by using the *Import project* option in IDEA.
 
 To do that follow the next steps:
 
@@ -99,7 +99,7 @@ In order to setup JDK configuration, we use `.vscode/settings.json`. Here we can
 }
 ```
 
-In this example we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`. These paths should point to your java home.
+In this example, we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`. These paths should point to your java home.
 
 Be aware that the path may vary depending on how you installed it.
 
@@ -136,11 +136,11 @@ Click on `start (green play icon at the left of your configuration name)`.
 
 ![img](/assets/img/rsk/howToInstallAndRun/VSCode_Run.png)
 
-Debug tools menu shows up at the top of the IDE window, were you could run step by step and more!
+A debug tools menu shows up at the top of the IDE window, were you could run the node step by step!
 
 #### Building the project with Gradle in Visual Studio Code
 
-In order to build the project using `Gradle` we can simply go to the respective tab. There, we should be able to see all available `Gradle` configurations from the application. Select the project to be built and double-click the desired `Gradle Task`.
+In order to build the project using `Gradle`, we can simply go to the respective tab. On tab, we should be able to see all available `Gradle` configurations from the application. Select the project to be built and double-click the desired `Gradle Task`.
 
 ![img](/assets/img/rsk/howToInstallAndRun/VSCode_Gradle.png)
 
@@ -152,4 +152,4 @@ In order to run tests, we can simply go to the `Testing` tab where you can see a
 
 ## Any problems?
 
-We hope the [troubleshooting section](/rsk/node/troubleshooting) can help you!
+Check out the [troubleshooting section](/rsk/node/troubleshooting), hope it helps!

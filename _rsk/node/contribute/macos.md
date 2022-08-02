@@ -77,7 +77,7 @@ This will download and set important components (e.g. Gradle Wrapper).
 ### Compiling the node 
 
 Now, you can launch IntelliJ IDEA.
-When IntelliJ IDEA is launched you should have a window with different choices.
+When IntelliJ IDEA is launched you should have a window with different options.
 
 - Choose *Import project*.
 - Browse in the RskJ downloaded code the file `rskj\build.gradle` and select it. Click *NEXT*.
@@ -104,7 +104,7 @@ Then set the options as shown below:
 
 #### Running the node
 
-We are ready to run the node using IDEA, just press the *Start* (green arrow) button at the right of the configuration we've just created.
+We are ready to run the node using IDEA, just press the *Start* (green arrow) button at the right of the configuration just created.
 
 ![img](/assets/img/rsk/howToInstallAndRun/Run.png)
 
@@ -152,7 +152,7 @@ In order to setup JDK configuration, we use `.vscode/settings.json`. Here we can
 }
 ```
 
-In this example we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`.
+In this example, we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`.
 
 In order to list these paths you can run:
 ```
@@ -198,11 +198,11 @@ Click on `start (green play icon at the left of your configuration name)`.
 
 ![img](/assets/img/rsk/howToInstallAndRun/VSCode_Run.png)
 
-Debug tools menu shows up at the top of the IDE window, were you could run step by step and more!
+A debug tools menu shows up at the top of the IDE window, were you could run the node step by step!
 
 #### Building the project with Gradle in Visual Studio Code
 
-In order to build the project using `Gradle` we can simply go to the respective tab. There, we should be able to see all available `Gradle` configurations from the application. Select the project to be built and double-click the desired `Gradle Task`.
+In order to build the project using `Gradle`, we can simply go to the respective tab. On tab, we should be able to see all available `Gradle` configurations from the application. Select the project to be built and double-click the desired `Gradle Task`.
 
 ![img](/assets/img/rsk/howToInstallAndRun/VSCode_Gradle.png)
 
@@ -214,4 +214,4 @@ In order to run tests, we can simply go to the `Testing` tab where you can see a
 
 ## Any problems?
 
-We hope the [troubleshooting section](/rsk/node/troubleshooting) can help you!
+Check out the [troubleshooting section](/rsk/node/troubleshooting), hope it helps!
