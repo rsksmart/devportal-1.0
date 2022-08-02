@@ -176,7 +176,7 @@ In order to build, run or debug RSKj, we use `.vscode/launch.json`. Here we can 
 }
 ```
 
-In this example we are going to run the application with the following arguments: `--testnet -Xkeyvalue.datasource=leveldb`.
+In this example, we are going to run the application with the following arguments: `--testnet -Xkeyvalue.datasource=leveldb`.
 
 #### Running the project
 
