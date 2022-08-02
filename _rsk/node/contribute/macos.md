@@ -104,7 +104,7 @@ Then set the options as shown below:
 
 #### Running the node
 
-We are ready to run the node using IDEA, just press the *Start* (green arrow) button at the right of the configuration we've just created.
+We are ready to run the node using IDEA, just press the *Start* (green arrow) button at the right of the configuration just created.
 
 ![img](/assets/img/rsk/howToInstallAndRun/Run.png)
 
