@@ -152,7 +152,18 @@ In order to setup JDK configuration, we use `.vscode/settings.json`. Here we can
 }
 ```
 
-In this example we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`
+In this example we have setup `Java 17` for [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack) to work as expected and the default java compiler is `Java 1.8`.
+
+In order to list these paths you can run:
+```
+/usr/libexec/java_home -V
+```
+or
+```
+whereis java
+```
+
+Be aware that the path may vary depending on how you installed it.
 
 In order to build, run or debug RSKj, we use `.vscode/launch.json`. Here we can setup the commands that will be used to run our application, for instance:
 
