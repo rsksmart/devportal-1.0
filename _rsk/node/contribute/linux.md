@@ -192,7 +192,7 @@ A debug tools menu shows up at the top of the IDE window, where you could run th
 
 #### Building the project with Gradle in Visual Studio Code
 
-In order to build the project using `Gradle` we can simply go to the respective tab. There, we should be able to see all available `Gradle` configurations from the application. Select the project to be built and double-click the desired `Gradle Task`.
+In order to build the project using `Gradle`, we can simply go to the respective tab. On tab, we should be able to see all available `Gradle` configurations from the application. Select the project to be built and double-click the desired `Gradle Task`.
 
 ![img](/assets/img/rsk/howToInstallAndRun/VSCode_Gradle.png)
 
