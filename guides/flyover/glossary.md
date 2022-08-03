@@ -18,17 +18,19 @@ See a list of terms about/related to the Flyover Protocol and their meanings.
 - Liquidity Provider (LP): 
     - The [LP](/guides/flyover/design-architecture#liquidity-provider-lp) is in charge of making an RSK call or advancing funds on behalf of the user.
 - Liquidity Provider Server (LPS): 
-    - An [LPS](/guides/flyover/tools#liquidity-provider-server-lps) is a server that runs an LP node and allows a connection from remote LPs via HTTP. A Testnet instance of an LPS is available at: [http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/](http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/).
+    - An [LPS](/guides/flyover/tools#liquidity-provider-server-lps) is a server that runs an LP node and allows a connection from remote LPs via HTTP. A Testnet instance of an LPS is available at: [`http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/`](http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/).
 - Liquidity Bridge Contract (LBC): 
     - The [LBC](/guides/flyover/design-architecture#liquidity-bridge-contract-lbc) is the smart contract that controls the operations of the Flyover protocol. 
 - Locking cap: 
     - This is the limit specified in the bridge which rejects transactions once the lock cap is exceeded, and will begin accepting transactions when funds in the network decreases. Note: This limit is a security measure and may increase in the future.
 - PegIn: 
-    - This is the process of converting BTC to RBTC. See [Mainnet](https://developers.rsk.co/rsk/rbtc/conversion/networks/mainnet/) guide.
+    - This is the process of converting BTC to RBTC. See [Mainnet Guide](https://developers.rsk.co/rsk/rbtc/conversion/networks/mainnet/).
 - PegOut: 
-    - This is the process of converting RBTC to BTC. See [Mainnet](https://developers.rsk.co/rsk/rbtc/conversion/networks/mainnet/) guide.
+    - This is the process of converting RBTC to BTC. See [Mainnet Guide](https://developers.rsk.co/rsk/rbtc/conversion/networks/mainnet/) guide.
+- penaltyFee:
+    - The penalty fee that the LP pays if it fails to deliver the service. The `maxPenaltyFeePercent` is 1% (value 1000).
 - Powpeg:
-    - The [2wp-app](https://2wp-app.rsk.co/) is a tool that enables the easy use of the PowPeg. protocol.
+    - The [2wp-app](https://2wp-app.rsk.co/) is a tool that enables the easy use of the PowPeg protocol.
 - Refund address:
     - This address is used only in the case that the locking cap on the bridge is surpassed. There are two types of refund addresses; `rskRefundAddress` and `btcRefundAddress`. See [parameters](/guides/flyover/design-architecture#operations) section for more information.
 - Quote: 

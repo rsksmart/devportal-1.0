@@ -6,7 +6,7 @@ render_features: 'tables-with-borders'
 layout: rsk
 ---
 
-Find a list of tools and github repos to build dApps using the flyover protocol.
+Find a list of tools, scripts, and github repos to build dApps using the flyover protocol.
 
 ## Liquidity Provider Server (LPS)
 
@@ -19,52 +19,22 @@ The Testnet LP Server is hosted at:
 - go 1.16.5 or above
 - DB Browser for Sqlite (or equivalent) or sqlite3 cli tool
 
-**API**:
-
-### getQuote
-
-Computes and returns a quote for the service.
-
-**Parameters:**
-
-| Parameter | Type | Value |
-| -------- | -------- | -------- |
-|callContractAddress | address | contract address or EOA address |
-|callContractArguments| bytes  | Contract data    |
-|valueToTransfer| uint | Value to send in the call|
-|gasLimit  | uint | Gas limit to use in the call |
-|rskRefundAddress | address| User RSK refund address|
-|bitcoinRefundAddress | bytes21 | User Bitcoin refund address. Note: Must be a legacy address, segwit addresses are not accepted |
-
-**Returns**:
-
-`quotes` 
-    - a list of quotes for the service.
-
-| params | meaning |
-| -------- | -------- |
-| fedBtcAddress | The BTC address of the PowPeg |
-|  lbcAddress | The address of the LBC    |
-|  lpRSKAddr | The RSK address of the LP|
-|  btcRefundAddress | A User BTC refund address |
-|  rskRefundAddress | A User RSK refund address|
-|  lpBTCAddr | The BTC address of the LP |
-| callFee | The fee charged by the LP. See [CallFee](/guides/flyover/glossary/) |
-|  penaltyFee | The penalty fee that the LP pays if it fails to deliver the service |
-|  contractAddress | The destination address of the peg-in|
-|  data | The arguments to send in the call |
-|  gasLimit | the gas limit|
-|  nonce | A nonce that uniquely identifies this quote |
-|  value | The value to transfer in the call |
-|  agreementTimestamp | The timestamp of the agreement |
-|  timeForDeposit | The time (in seconds) that the user has to achieve one confirmation on the BTC deposit. |
-|  callTime | The time (in seconds) that the LP has to perform the call on behalf of the user after the deposit achieves the number of confirmations |
-|  confirmations | The number of confirmations that the LP requires before making the call |
-|  callOnRegister | a boolean value indicating whether the `callForUser` can be called on `registerPegIn`. |
-
 ### How to Set up LP Server Locally
 
-See the liquidity provider [repo](https://github.com/rsksmart/liquidity-provider-server) for instructions or use the [testnet instance](http://flyover-01.aws-us-east-2.testnet.dev.flyover.rskcomputing.net:8080/) of the Liquidity Provider Server. 
+See the liquidity provider [repo](https://github.com/rsksmart/liquidity-provider-server) for instructions.
+
+Alternatively, you may choose to use a Testnet instance of the Liquidity Provider Server: `http://flyover-01.aws-us-east-2.testnet.dev.flyover.rskcomputing.net:8080/`
+
+## Hardhat
+
+In this [custom hardhat script (hardhat + ethers.js)](https://github.com/Vovchyk/lbc-utils/blob/master/hardhat.config.ts#L26-L35), you can find an example of the `hashQuote` call. See an example of the execution below:
+
+```shell
+npx hardhat hash-quote --quote 
+'{"fedBTCAddr":"2N6JWYUb6Li4Kux6UB2eihT7n3rm3YX97uv","lbcAddr":"0x95357AE436F74E87d54f9Da6CC5fB88d91044bc3","lpRSKAddr":"0xd053b9B695BEb7104deEa56773197F05AD03E4e0","btcRefundAddr":"mnYcQxCZBbmLzNfE9BhV7E8E2u7amdz5y6","rskRefundAddr":"0x20E75e7287763de60851Ed020089ABf17a1e9a4d","lpBTCAddr":"mnYcQxCZBbmLzNfE9BhV7E8E2u7amdz5y6","callFee":1985872901000,"penaltyFee":1000000,"contractAddr":"0xa7047857679889B59fe01f6EFD01D074ab2bc2BF","data":"0xeb159db5000000000000000000000000caa520afa3c8ec7ce85bfca5a62f36159c73faa5000000000000000000000000e66fc9900e017c837f2f54fe3958f98f36064c11","gasLimit":3000000,"nonce":8863518911232213897,"value":50000000000000000,"agreementTimestamp":1659431697,"timeForDeposit":3600,"callTime":7200,"confirmations":2,"callOnRegister":false}'
+
+Quote hash:  0x4e8cfbdcd99d1ff57ce4773ebe21d5f2c8ff240b38e751353688d6c9daba1708
+```
 
 ## Github Repos
 

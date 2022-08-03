@@ -6,7 +6,11 @@ render_features: 'tables-with-borders'
 layout: rsk
 ---
 
-The flyover protocol enables the RSK community to build powerful decentralised applications and increase the use cases on the RSK network. In this section, we will cover the design, architecture, flow diagrams and minimum requirements needed to use the components of the Flyover Protocol.
+The flyover protocol enables the RSK community to build powerful decentralised applications.
+
+It also aims to increase number of possible use cases on the RSK network.
+
+In this section, we will cover the design, architecture, flow diagrams, and minimum requirements needed to use the components of the Flyover Protocol.
 
 The flyover system is composed of;
 
@@ -37,7 +41,7 @@ LPs are entities that provide advance payments in RSK and BTC on behalf of users
 
 To be able to participate as an LP, LPs must register themselves in a Liquidity Bridge Contract (LBC) and perform one mandatory deposit on RSK: a security bond that is slashed if they misbehave. A second deposit is optional: they can pre-deposit the BTC liquidity they wish to make available in RSK. While this has a financial cost, by doing so they signal the intent to fulfil the promise. Users can use this information to pick an LP that is well-funded and reduce the risk of deviations while expecting the advance payment.
 
-However, the LPs are incentivized to follow the protocol because they earn a share of each transfer they accelerate, and because if they fail to accelerate them, their security deposit (or collateral) is burned. Several other punishments are possible, such as locking the LP liquidity for a long period, which equates to a financial loss.
+However, the LPs are incentivized to follow the protocol because they earn a share of each transfer they accelerate, and because if they fail to accelerate them, their security deposit (or collateral) is burned. Several other penalties are possible, such as locking the LP liquidity for a long duration, which equates to a financial loss.
 Liquidity Providers can privately serve their own users or offer their services in an open marketplace. The [RIF marketplace](https://marketplace.rifos.org/) is one of such markets.
 
 Abstraction of a [Liquidity Provider’s](https://github.com/rsksmart/liquidity-provider) contract. The artefact is not deployed independently but as part of a dApp that uses one or more LPs.
@@ -54,12 +58,12 @@ Computes and returns a [quote](#quote) for the service.
 
 | Parameters | Type | Value |
 | -------- | -------- | -------- |
-|callContractAddress | address | contract address |
-|callContractArguments| bytes  | Contract data    |
-|valueToTransfer| uint | Value to send in the call|
-|gasLimit  | uint | Gas limit to use in the call |
-|rskRefundAddress | address| User RSK refund address|
-|bitcoinRefundAddress | bytes21 | User Bitcoin refund address |
+|`callContractAddress` | `address` | Contract address |
+|`callContractArguments`| `bytes`  | Contract data    |
+|`valueToTransfer`| `uint` | Value to send in the call|
+|`gasLimit`  | `uint` | Gas limit to use in the call |
+|`rskRefundAddress` | `address`| User RSK refund address|
+|`bitcoinRefundAddress` | `bytes21` | User Bitcoin refund address |
 
 **Returns:**
 
@@ -89,24 +93,24 @@ The [Liquidity Bridge Contract (LBC)](https://github.com/rsksmart/liquidity-brid
 
 The LBC provides the following API:
 
-| params | meaning |
+| function | meaning |
 | -------- | -------- 
-| getBridgeAddress | Returns the bridge address used by the LBC.
-| getMinCollateral | Returns the minimum allowed collateral for liquidity providers
-| getPenaltyRatio | Returns the penalty ratio
-| getRewardRatio | Returns the reward ratio
-| getResignationBlocks | Returns the number of blocks required to resign
-| register | Registers the sender as a liquidity provider with an amount of collateral
-| addCollateral | Increases the collateral of the sender, who must be a registered liquidity provider
-| getCollateral (address) - Address of the liquidity provider. | Returns ( uint) the amount of locked collateral of a liquidity provider
-| withdrawCollateral | Withdraws locked collateral
-| deposit | Increases the balance of the sender
-| getBalance (address) - Address of the liquidity provider | Returns (uint) the amount of funds of a liquidity provider
-| withdraw | Withdraws funds from the balance of the sender
-| isOperational  (address) - The address of the liquidity provider | Checks if a liquidity provider is registered and has enough locked collateral to operate and returns (`bool`)
-| resign | Used to resign as a liquidity provider
-| callForUser (quote) | Performs a call on behalf of a user and returns a bool if the call has been unsuccessful or not |
-| registerPegIn | Registers a peg-in transaction with the bridge and pays to the involved parties. Also penalises the liquidity provider in case of misbehaviour. Returns (int) the total amount of peg in or an error code.
+| `getBridgeAddress` | Returns the bridge address used by the LBC.
+| `getMinCollateral` | Returns the minimum allowed collateral for liquidity providers
+| `getPenaltyRatio` | Returns the penalty ratio
+| `getRewardRatio` | Returns the reward ratio
+| `getResignationBlocks` | Returns the number of blocks required to resign
+| `register` | Registers the sender as a liquidity provider with an amount of collateral
+| `addCollateral` | Increases the collateral of the sender, who must be a registered liquidity provider
+| `getCollateral (address)` - Address of the liquidity provider. | Returns ( uint) the amount of locked collateral of a liquidity provider
+| `withdrawCollateral` | Withdraws locked collateral
+| `deposit` | Increases the balance of the sender
+| `getBalance` (address) - Address of the liquidity provider | Returns (uint) the amount of funds of a liquidity provider
+| `withdraw` | Withdraws funds from the balance of the sender
+| `isOperational  (address)` - The address of the liquidity provider | Checks if a liquidity provider is registered and has enough locked collateral to operate and returns (`bool`)
+| `resign` | Used to resign as a liquidity provider
+| `callForUser (quote)` | Performs a call on behalf of a user and returns a `bool` if the call has been unsuccessful or not |
+| `registerPegIn` | Registers a peg-in transaction with the bridge and pays to the involved parties. Also penalises the liquidity provider in case of misbehaviour. Returns (int) the total amount of peg in or an error code.
 
 ### Quote
 
@@ -114,24 +118,24 @@ The quote structure defines the conditions of a service, and acts as a contract 
 
 | params | type | meaning |
 | -------- | -------- | -------- |
-| fedBtcAddress | bytes20 | The BTC address of the PowPeg |
-|  lbcAddress | address |  The address of the LBC    |
-|  lpRSKAddr | address | The RSK address of the LP|
-|  btcRefundAddress | bytes| A User BTC refund address |
-|  rskRefundAddress | address | A User RSK refund address|
-|  lpBTCAddr | bytes | The BTC address of the LP |
-| callFee | uint | The fee charged by the LP. See [callFee](/guides/flyover/glossary/) |
-|  penaltyFee | uint | The penalty fee that the LP pays if it fails to deliver the service |
-|  contractAddress | address| The destination address of the peg-in|
-|  data | bytes | The arguments to send in the call |
-|  gasLimit | uint | the gas limit|
-|  nonce | uint | A nonce that uniquely identifies this quote |
-|  value | uint | The value to transfer in the call |
-|  agreementTimestamp | uint | The timestamp of the agreement |
-|  timeForDeposit | uint | The time (in seconds) that the user has to achieve one confirmation on the BTC deposit. |
-|  callTime | uint | The time (in seconds) that the LP has to perform the call on behalf of the user after the deposit achieves the number of confirmations |
-|  depositConfirmations | uint | The number of confirmations that the LP requires before making the call |
-|  callOnRegister | bool | a boolean value indicating whether the `callForUser` can be called on `registerPegIn`. |
+| `fedBtcAddress` | `bytes20` | The BTC address of the PowPeg |
+|  `lbcAddress` | `address` |  The address of the LBC    |
+|  `lpRSKAddr` | `address` | The RSK address of the LP|
+|  `btcRefundAddress` | `bytes`| A User BTC refund address |
+|  `rskRefundAddress` | `address` | A User RSK refund address|
+|  `lpBTCAddr` | `bytes` | The BTC address of the LP |
+| `callFee` | `uint` | The fee charged by the LP. See [callFee](/guides/flyover/glossary/) |
+|  `penaltyFee` | `uint` | The penalty fee that the LP pays if it fails to deliver the service. See [maxPenaltyFeePercent](/guides/flyover/glossary/) |
+|  `contractAddress` | `address`| The destination address of the peg-in|
+|  `data` | `bytes` | The arguments to send in the call |
+|  `gasLimit` | `uint` | the gas limit|
+|  `nonce` | `uint` | A nonce that uniquely identifies this quote |
+|  `value` | `uint` | The value to transfer in the call |
+|  `agreementTimestamp` | `uint` | The timestamp of the agreement |
+|  `timeForDeposit` | `uint` | The time (in seconds) that the user has to achieve one confirmation on the BTC deposit. |
+|  `callTime` | `uint` | The time (in seconds) that the LP has to perform the call on behalf of the user after the deposit achieves the number of confirmations |
+|  `depositConfirmations` | `uint` | The number of confirmations that the LP requires before making the call |
+|  `callOnRegister` | `bool` | a boolean value indicating whether the `callForUser` can be called on `registerPegIn`. |
 
 ## ABI Signature
 
@@ -194,7 +198,7 @@ The flow diagram above shows the participants involved when trying to perform a 
 
 > Notes:
 > - The call to `isOperational` may be performed at a different point in the sequence, to that shown in this diagram.
->  - Making a call to `isOperational` is not necessary, it is intended to help check if the LP and LBC are operational.
+> - Making a call to `isOperational` is not necessary, it is intended to help check if the LP and LBC are operational.
 > - The call performed by the LP can be a transfer of value to an account or a call to a contract method. This is specified by the value and data arguments of the call.
 > - The first version of the Flyover converts only the peg-in process. Later versions will also enable to streamline the peg-out process.
 

@@ -6,7 +6,7 @@ render_features: 'tables-with-borders'
 layout: rsk
 ---
 
-In this section, we'll cover how to perform a [peg-in](/guides/flyover/glossary/) operation on Testnet, connect to an instance of the liquidity provider server (LPS), make API calls, verify signature and wallet address, and deposit test funds (tBTC) using faucets. 
+In this section, we'll cover how to perform a [peg-in](/guides/flyover/glossary/) operation on Testnet, connect to an instance of the liquidity provider server (LPS), make API calls, verify signature and wallet address, and deposit test funds (tBTC) using faucets. See [Overview](/rsk/architecture/flyover/) for more information.
 
 > The flyover protocol is currently only available on Testnet, and wallet services looking to integrate the flyover protocol may only do so on Testnet.
 
@@ -21,14 +21,14 @@ To use the flyover protocol, we are going to need:
 
 To perform a peg in operation on Testnet using the flyover protocol, we will do the following steps:
 
-1. Connect to an instance of the [LPS](http://flyover-01.aws-us-east-2.testnet.dev.flyover.rskcomputing.net:8080/)
+1. Connect to an instance of the LPS
 2. Make an API call to `getQuote`, `acceptQuote`
 3. Verify signature and deposit address
 4. Deposit Funds (tBTC)
 
 ###  Connect to an LPS Instance on Testnet
 
-An instance of the [LPS](http://flyover-01.aws-us-east-2.testnet.dev.flyover.rskcomputing.net:8080/) on Testnet has already been setup. 
+An instance of the LPS has already been set up on Testnet: `http://flyover-01.aws-us-east-2.testnet.dev.flyover.rskcomputing.net:8080/`
 
 > - The server's functionality is provided through a JSON HTTP interface. 
 > - The server needs access to both a Bitcoin node and an RSK node. Currently, there’s no web UI, so we will make an API call using Postman or cURL.
@@ -50,19 +50,19 @@ For peg-ins the following fields should be specified in the call to the [LBC](ht
 
 | Parameter | Type | Value |
 | -------- | -------- | -------- |
-|callContractAddress | address | contract address or EOA address |
-|callContractArguments| bytes  | Contract data    |
-|valueToTransfer| uint | Value to send in the call|
-|gasLimit  | uint | Gas limit to use in the call |
-|rskRefundAddress | address| User RSK refund address|
-|bitcoinRefundAddress | bytes21 | User Bitcoin refund address. Note: Must be a legacy address, segwit addresses are not accepted |
+|`callContractAddress` | `address` | contract address or EOA address |
+|`callContractArguments`| `bytes`  | Contract data    |
+|`valueToTransfer`| `uint` | Value to send in the call|
+|`gasLimit`  | `uint`| Gas limit to use in the call |
+|`rskRefundAddress` | `address`| User RSK refund address|
+|`bitcoinRefundAddress` | `bytes21` | User Bitcoin refund address. Note: Must be a legacy address, segwit addresses are not accepted |
 
 > - If `callContractAddress` is an [EOA](/guides/flyover/glossary/),  then the `data` parameter should be an empty string (""), and if it is a contract address, then the `data` parameter has to be specified.
 > - `valueToTransfer` is denominated in wei, where 1 RBTC = 10^18 wei
 
 ##### Using cURL:
 
-To make a request to `getQuote`, paste the following code into a terminal or send a `POST` request via [Postman]( http://flyover-01.aws-us-east-2.testnet.dev.flyover.rskcomputing.net:8080/getQuote).
+To make a request to `getQuote`, paste the following code into a terminal or send a `POST` request via any other HTTP client.
 
 ```shell
 curl \
@@ -85,25 +85,25 @@ The `getQuote` api returns a `quote`; this is a list of quotes for the service, 
 
 | Parameter | Value 
 | -------- | -------- 
-| fedBTCAddr     | 2N6JWYUb6Li4Kux6UB2eihT7n3rm3YX97uv
-| lbcAddr        | 0x20f1c96aF83f01c07277D100dd7c01d8C7c850e3
-| lpRSKAddr     | 0xd053b9B695BEb7104deEa56773197F05AD03E4e0
-| btcRefundAddr     | mnYcQxCZBbmLzNfE9BhV7E8E2u7amdz5y6
-| rskRefundAddr     | 0x20E75e7287763de60851Ed020089ABf17a1e9a4d
-| lpBTCAddr     | mnYcQxCZBbmLzNfE9BhV7E8E2u7amdz5y6
-| callFee     | 1368444001000
-| penaltyFee     | 1000000
-| contractAddr     | 0x20E75e7287763de60851Ed020089ABf17a1e9a4d
-| data     | ""
-| gasLimit     | 3000000
-| nonce     | 3390942776830067377
-| value     | 5000000000000000
-| agreementTimestamp     | 1657202610
-| timeForDeposit     | 3600
-| callTime     | 7200
-| confirmations     | 2
-| callOnRegister     | 2N6JWYUb6Li4Kux6UB2eihT7n3rm3YX97uv
-| fedBTCAddr     | false
+| `fedBTCAddr`    | 2N6JWYUb6Li4Kux6UB2eihT7n3rm3YX97uv
+| `lbcAddr`        | 0x20f1c96aF83f01c07277D100dd7c01d8C7c850e3
+| `lpRSKAddr`     | 0xd053b9B695BEb7104deEa56773197F05AD03E4e0
+| `btcRefundAddr`     | mnYcQxCZBbmLzNfE9BhV7E8E2u7amdz5y6
+| `rskRefundAddr`     | 0x20E75e7287763de60851Ed020089ABf17a1e9a4d
+| `lpBTCAddr`     | mnYcQxCZBbmLzNfE9BhV7E8E2u7amdz5y6
+| `callFee`     | 1368444001000
+| `penaltyFee`     | 1000000
+| `contractAddr`     | 0x20E75e7287763de60851Ed020089ABf17a1e9a4d
+| `data`     | ""
+| `gasLimit`     | 3000000
+| `nonce`     | 3390942776830067377
+| `value`     | 5000000000000000
+| `agreementTimestamp`     | 1657202610
+| `timeForDeposit`     | 3600
+| `callTime`     | 7200
+| `confirmations`    | 2
+| `callOnRegister`     | 2N6JWYUb6Li4Kux6UB2eihT7n3rm3YX97uv
+| `fedBTCAddr`    | false
 
 See more info in [Liquidity Bridge Contract](/guides/flyover/design-architecture#liquidity-bridge-contract-lbc).
 
@@ -117,7 +117,9 @@ See more info in [Liquidity Bridge Contract](/guides/flyover/design-architecture
 
 #### Getting quoteHash
 
-This is a 64 digit number that derives from a `quote` object. QuoteHash can be generated by calling `LBC.hashQuote()` [contract](https://github.com/rsksmart/liquidity-bridge-contract/blob/8dec3edfb8e27d87207edf8f5c477687baae606f/contracts/LiquidityBridgeContract.sol#L375) function. This is a local method provided by the LBC, and doesn’t require mining a transaction or use of funds. A wallet service could call the RSK network contacting the LBC to hash quote. This method is already implemented by the LBC and is not required by a wallet service. See [Glossary](/guides/flyover/glossary/) section for more info.
+This is a 64 digit number that derives from a `quote` object. QuoteHash can be generated by calling the [`LBC.hashQuote()` contract function](https://github.com/rsksmart/liquidity-bridge-contract/blob/8dec3edfb8e27d87207edf8f5c477687baae606f/contracts/LiquidityBridgeContract.sol#L375).
+
+This is a local method provided by the LBC, and doesn’t require mining a transaction or use of funds. A wallet service could call the RSK network contacting the LBC to hash quote. This method is already implemented by the LBC and is not required by a wallet service. See [Glossary](/guides/flyover/glossary/) section for more info.
 
 > The `quoteHash` is needed in order to make an API call to `acceptQuote`. There are different ways to get quoteHash. See examples below:
 
