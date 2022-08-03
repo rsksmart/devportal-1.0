@@ -1119,8 +1119,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-04-27 20:48:02 +0000T00:00:00.000Z">2022-04-27</time> | -->
-     2' to read |
+    <!--time role="presentation" datetime="2022-08-02 15:45:03 +0000T00:00:00.000Z">2022-08-02</time> | -->
+     5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/contribute/windows.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2087,12 +2087,14 @@
 <ul>
   <li><a href="#compiling-the-node">Compiling the node</a></li>
   <li><a href="#idea-buildrun-configuration">IDEA Build/Run configuration</a></li>
-  <li><a href="#running-the-node">Running the node</a></li>
+  <li><a href="https://code.visualstudio.com/" rel="external noopener noreferrer" target="_blank">Visual Studio Code</a></li>
 </ul>
 
-<h2 id="compiling-the-node">Compiling the node</h2>
+<h2 id="intellij-idea-setup">IntelliJ IDEA setup</h2>
 
-<p>After opening IDEA we need to load the RskJ project, this can be done by using the <em>Import project</em> option in IDEA.</p>
+<h3 id="compiling-the-node">Compiling the node</h3>
+
+<p>After opening IDEA, we need to load the RSKj project, this can be done by using the <em>Import project</em> option in IDEA.</p>
 
 <p>To do that follow the next steps:</p>
 
@@ -2105,7 +2107,7 @@
 
 <p><img src="../../../../assets/img/rsk/howToInstallAndRun/IdeaRskJWelcome.png" alt="img"></p>
 
-<h3 id="idea-buildrun-configuration">IDEA Build/Run configuration</h3>
+<h4 id="idea-buildrun-configuration">IDEA Build/Run configuration</h4>
 
 <p>We need to create a new configuration profile to run the node from IDEA.
 That can be done by clicking on <em>Run</em> -&gt; <em>Edit Configurations</em> or as shown in the following picture:</p>
@@ -2134,7 +2136,7 @@ That can be done by clicking on <em>Run</em> -&gt; <em>Edit Configurations</em> 
   <li>If the IDE doesn’t recognize the configuration options, open <code class="highlighter-rouge">rskj/rskj-core/build.gradle</code> and sync it from <code class="highlighter-rouge">Gradle</code> tab.</li>
 </ul>
 
-<h3 id="running-the-node">Running the node</h3>
+<h4 id="running-the-node">Running the node</h4>
 
 <p>We are ready to run the node using IDEA, just press the <em>Start</em> button at the right of the configuration we’ve just created.</p>
 
@@ -2159,9 +2161,90 @@ That can be done by clicking on <em>Run</em> -&gt; <em>Edit Configurations</em> 
 
 <p>Inside the field <code class="highlighter-rouge">Program Arguments</code> in your run configuration.</p>
 
+<h2 id="visual-studio-code-setup">Visual Studio Code setup</h2>
+
+<h3 id="recommended-plugins">Recommended Plugins</h3>
+
+<ul>
+  <li>
+<a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" rel="external noopener noreferrer" target="_blank">Extension Pack for Java</a>.</li>
+  <li><a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-gradle" rel="external noopener noreferrer" target="_blank">Gradle Plugin</a></li>
+</ul>
+
+<h4 id="visual-studio-configuration-files">Visual Studio Configuration Files:</h4>
+
+<p>In order to setup JDK configuration, we use <code class="highlighter-rouge">.vscode/settings.json</code>. Here we can setup the latest JDK for <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" rel="external noopener noreferrer" target="_blank">Extension Pack for Java</a>, then use the recommended version for RSKj, for instance:</p>
+
+<p><strong>.vscode/settings.json</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+   "java.jdt.ls.java.home": "C:\\jdk-17",
+   "java.configuration.runtimes": [
+      {
+        "name": "JavaSE-1.8",
+        "path": "C:\\jdk-1.8",
+        "default": true
+      },
+      {
+        "name": "JavaSE-17",
+        "path": "C:\\jdk-17",
+      },
+    ]
+}
+</code></pre></div></div>
+
+<p>In this example, we have setup <code class="highlighter-rouge">Java 17</code> for <a href="https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack" rel="external noopener noreferrer" target="_blank">Extension Pack for Java</a> to work as expected and the default java compiler is <code class="highlighter-rouge">Java 1.8</code>. These paths should point to your java home.</p>
+
+<p>Be aware that the path may vary depending on how you installed it.</p>
+
+<p>In order to build, run or debug RSKj, we use <code class="highlighter-rouge">.vscode/launch.json</code>. Here we can setup the commands that will be used to run our application, for instance:</p>
+
+<p><strong>.vscode/launch.json</strong></p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run RSK Start",
+            "request": "launch",
+            "mainClass": "co.rsk.Start",
+            "args" : "--testnet -Xkeyvalue.datasource=leveldb"
+        }
+    ]
+}
+</code></pre></div></div>
+
+<p>In this example we are going to run the application with the following arguments: <code class="highlighter-rouge">--testnet -Xkeyvalue.datasource=leveldb</code>.</p>
+
+<h4 id="running-the-project">Running the project</h4>
+
+<p>We are ready to run the node using Visual Studio Code, select your configuration from <code class="highlighter-rouge">launch.json</code> within <code class="highlighter-rouge">Run and Debug</code>.</p>
+
+<p><img src="../../../../assets/img/rsk/howToInstallAndRun/VSCode_Launch.png" alt="img"></p>
+
+<p>Click on <code class="highlighter-rouge">start (green play icon at the left of your configuration name)</code>.</p>
+
+<p><img src="../../../../assets/img/rsk/howToInstallAndRun/VSCode_Run.png" alt="img"></p>
+
+<p>A debug tools menu shows up at the top of the IDE window, were you could run the node step by step!</p>
+
+<h4 id="building-the-project-with-gradle-in-visual-studio-code">Building the project with Gradle in Visual Studio Code</h4>
+
+<p>In order to build the project using <code class="highlighter-rouge">Gradle</code>, we can simply go to the respective tab. On tab, we should be able to see all available <code class="highlighter-rouge">Gradle</code> configurations from the application. Select the project to be built and double-click the desired <code class="highlighter-rouge">Gradle Task</code>.</p>
+
+<p><img src="../../../../assets/img/rsk/howToInstallAndRun/VSCode_Gradle.png" alt="img"></p>
+
+<h4 id="testing-in-visual-studio-code">Testing in Visual Studio Code</h4>
+
+<p>In order to run tests, we can simply go to the <code class="highlighter-rouge">Testing</code> tab where you can see all the tests. We can also go directly to the test file and right-click the icon at the left of a declaration of a test and then decide to either run or debug the test.</p>
+
+<p><img src="../../../../assets/img/rsk/howToInstallAndRun/VSCode_Test_Debug.png" alt="img"></p>
+
 <h2 id="any-problems">Any problems?</h2>
 
-<p>We hope the <a href="../../troubleshooting/">troubleshooting section</a> can help you!</p>
+<p>Check out the <a href="../../troubleshooting/">troubleshooting section</a>, hope it helps!</p>
 
                   
   
