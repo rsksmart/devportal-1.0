@@ -15,7 +15,7 @@
       <meta name="description" content="RSK is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.">
       <meta name="author" content="RSK Developers Portal">
       <link rel="canonical" href="https://developers.rsk.co/rsk/node/install/docker/">
-   	<title>Setup node on Docker - RSK Developers Portal</title>
+   	<title>How to setup an RSK node on Docker - RSK Developers Portal</title>
       <!-- Favicons -->
       <link rel="apple-touch-icon" sizes="180x180" href="../../../../assets/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="../../../../assets/img/favicons/favicon-32x32.png">
@@ -1102,7 +1102,7 @@
 		
 			
 				<li class="breadcrumb-item" property="itemListElement" typeof="ListItem">
-					<span property="name">Setup node on Docker</span>
+					<span property="name">How to setup an RSK node on Docker</span>
 					<meta property="position" content="5" />
 				</li>
 				
@@ -1119,16 +1119,16 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-11-05 06:09:59 +0000T00:00:00.000Z">2021-11-05</time> | -->
-     4' to read |
+    <!--time role="presentation" datetime="2022-08-08 03:04:37 +0000T00:00:00.000Z">2022-08-08</time> | -->
+     5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/install/docker.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
-          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/&amp;text=Setup%20node%20on%20Docker&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
+          <li><a class="share-twitter" data-bi-name="twitter" href="https://twitter.com/intent/tweet?original_referer=https%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/&amp;text=How%20to%20setup%20an%20RSK%20node%20on%20Docker&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-twitter" aria-hidden="true"></span>Twitter</a></li>
           <li><a class="share-linkedin" data-bi-name="linkedin" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-linkedin" aria-hidden="true"></span>LinkedIn</a></li>
           <li><a class="share-facebook" data-bi-name="facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/" target="_blank" rel="external noopener noreferrer"><span class="docon docon-brand-facebook" aria-hidden="true"></span>Facebook</a></li>
-          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=Setup%20node%20on%20Docker&amp;body=Setup%20node%20on%20Docker%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
+          <li><a class="share-email" data-bi-name="email" href="mailto:?subject=How%20to%20setup%20an%20RSK%20node%20on%20Docker&amp;body=How%20to%20setup%20an%20RSK%20node%20on%20Docker%0A%0Ahttps%3A%2F%2Fdevelopers.rsk.co/rsk/node/install/docker/" target="_blank" rel="noopener noreferrer"><span class="docon docon-mail-message-fill" aria-hidden="true"></span>Email</a></li>
           <li><a class="share-link" data-bi-name="link" href="#" onclick="var el = $(document.createElement('input'));$('body').append(el);el.val('https://developers.rsk.co/rsk/node/install/docker/').select();document.execCommand('copy');$(el).remove(); return false;"><span class="docon docon-clipboard-message-fill" aria-hidden="true"></span>Copy link</a></li>
        </ul>
     </div> |
@@ -2078,13 +2078,13 @@
     </a>
 </div>
 
-                  <h1 class="page-title" id="top">Setup node on Docker</h1>
+                  <h1 class="page-title" id="top">How to setup an RSK node on Docker</h1>
 
-                  <p>Make sure your system meets the <a href="../requirements/">minimum requirements</a> before installing RSK nodes on it.</p>
+                  <p>Before installing Docker, ensure your system meets the <a href="../requirements/">minimum requirements</a> before installing the RSK node.</p>
 
 <h3 id="install-docker-desktop-client">Install Docker Desktop Client</h3>
 
-<p>Docker Desktop provides an easy and fast way for running containerized applications on various of operating systems.</p>
+<p><a href="https://www.docker.com/products/docker-desktop/" rel="external noopener noreferrer" target="_blank">Docker Desktop</a> provides an easy and fast way for running containerized applications on various operating systems.</p>
 
 <p>For Mac OSX and Windows:</p>
 
@@ -2112,7 +2112,8 @@
 
 <h2 id="install-rskj-using-docker">Install RSKj Using Docker</h2>
 
-<p>First of all, download the RSK a Dockerfile and supervisord.conf from <a href="https://github.com/rsksmart/artifacts/tree/master/Dockerfiles/RSK-Node" rel="external noopener noreferrer" target="_blank">artifacts repo</a>.</p>
+<p>To install an RSK node using Docker, download the RSKj Dockerfiles and <code class="highlighter-rouge">supervisord.conf</code> from the <a href="https://github.com/rsksmart/artifacts/tree/master/Dockerfiles/RSK-Node" rel="external noopener noreferrer" target="_blank">artifacts repo</a>
+or pull the image from <a href="https://hub.docker.com/r/rsksmart/rskj" rel="external noopener noreferrer" target="_blank">Docker Hub</a>.</p>
 
 <p>Inside the artifacts repo, you can choose which <strong><em>type of</em></strong> node you are going to install:</p>
 
@@ -2127,7 +2128,11 @@
 
 <h4 id="install-the-node-using-docker-containers-intel-chips">Install the node using Docker containers (Intel Chips)</h4>
 
-<p>Then build the container by running (depending on your node’s type):</p>
+<p>Build the container by running any of the following commands:</p>
+
+<blockquote>
+  <p>Note: The type of node to run is dependent on the node’s type installed in <a href="#install-rskj-using-docker">install RSKj using Docker</a>.</p>
+</blockquote>
 
 <ul>
   <li>Mainnet
@@ -2147,24 +2152,40 @@
   </li>
 </ul>
 
-<p>When the build finishes, you have a container ready to run RSK.</p>
+<p>When the build finishes, you should see an output similar to this:</p>
 
-<p>To run the container, you should execute (depending on your node’s type):</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  RSK-Node % docker build <span class="nt">-t</span> mainnet <span class="nt">-f</span> Dockerfile.MainNet <span class="nb">.</span> 
+  <span class="o">[</span>+] Building 452.4s <span class="o">(</span>12/12<span class="o">)</span> FINISHED                                            
+  <span class="o">=&gt;</span> <span class="o">[</span>internal] load build definition from Dockerfile.MainNet
+
+  Use <span class="s1">'docker scan'</span> to run Snyk tests against images to find vulnerabilities and learn how to fix them
+</code></pre></div></div>
+
+<p>Now you have a container ready to run RSK!</p>
+
+<p>To run the container, you should execute:</p>
 
 <ul>
   <li>Mainnet
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>docker run -d --name mainnet-node-01  -p 4444:4444 -p 5050:5050 mainnet
+<div class="highlight"><pre class="highlight"><code>docker run -p 5050:5050 rsksmart/rskj:latest
 </code></pre></div>    </div>
   </li>
+</ul>
+
+<blockquote>
+  <p>This will start a Mainnet node.</p>
+</blockquote>
+
+<ul>
   <li>Testnet
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>docker run -d --name testnet-node-01  -p 4444:4444 -p 50505:50505 testnet
+<div class="highlight"><pre class="highlight"><code>docker run -p 50505:50505 rsksmart/rskj:latest --testnet
 </code></pre></div>    </div>
   </li>
   <li>Regtest
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>docker run -d --name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
+<div class="highlight"><pre class="highlight"><code>docker run rsksmart/rskj:latest --regtest
 </code></pre></div>    </div>
   </li>
 </ul>
@@ -2191,7 +2212,11 @@
 </li>
 </ul>
 
-<p>Then build the container by running (depending on your node’s type):</p>
+<p>Build the container by running any of the following commands:</p>
+
+<blockquote>
+  <p>Note: The type of node to run is dependent on the node’s type installed in<a href="#install-rskj-using-docker">install RSKj using Docker</a>.</p>
+</blockquote>
 
 <ul>
   <li>Mainnet
@@ -2213,23 +2238,31 @@
 
 <p>When the build finishes, you have a container ready to run RSK.</p>
 
-<p>To run the container, you should execute (depending on your node’s type):</p>
+<p>To run the container, you should execute:</p>
 
 <ul>
   <li>Mainnet
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>docker run -d --name mainnet-node-01  -p 4444:4444 -p 5050:5050 mainnet
+<div class="highlight"><pre class="highlight"><code>docker run -p 5050:5050 rsksmart/rskj:latest
 </code></pre></div>    </div>
   </li>
+</ul>
+
+<blockquote>
+  <p>This will start a Mainnet node.</p>
+</blockquote>
+
+<ul>
   <li>Testnet
     <div class="highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>docker run -d --name testnet-node-01  -p 4444:4444 -p 50505:50505 testnet
+<div class="highlight"><pre class="highlight"><code>docker run -p 50505:50505 rsksmart/rskj:latest --testnet
 </code></pre></div>    </div>
   </li>
   <li>Regtest
-```
-docker run -d –name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
-`</li>
+    <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>docker run rsksmart/rskj:latest --regtest
+</code></pre></div>    </div>
+  </li>
 </ul>
 
 <h2 id="video">Video</h2>
@@ -2237,6 +2270,26 @@ docker run -d –name regtest-node-01  -p 4444:4444 -p 30305:30305 regtest
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/c-YGtE3UIjE?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 </div>
+
+<p>Keep in mind that RSK’s blockchain is stored locally in the container. If you want to save it to a permanent storage, you can use a volume mount while starting the container as shown in the command below:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p 5050:5050 -v /path/to/my/storage:/var/lib/rsk/.rsk rsksmart/rskj:latest
+</code></pre></div></div>
+
+<p>In order to interact with the node’s JSON-RPC endpoint, you’ll need to expose it to the host:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p 5050:5050 -p 127.0.0.1:4444:4444 rsksmart/rskj:latest
+</code></pre></div></div>
+
+<p>Then, you could, for example, query the current block number with</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-H</span> <span class="s2">"Content-type: application/json"</span> <span class="nt">-d</span> <span class="s1">'{"jsonrpc":"2.0","method":"eth_blockNumber","id":1}'</span> http://127.0.0.1:4444/
+</code></pre></div></div>
+
+<p>Finally, you can provide a custom configuration to the node with:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run -p 5050:5050 -v /path/to/my/custom/node.conf:/etc/rsk/node.conf rsksmart/rskj:latest
+</code></pre></div></div>
 
                   
   
