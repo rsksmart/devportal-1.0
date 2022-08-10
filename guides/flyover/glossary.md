@@ -18,7 +18,7 @@ See a list of terms about/related to the Flyover Protocol and their meanings.
 - Liquidity Provider (LP): 
     - The [LP](/guides/flyover/design-architecture#liquidity-provider-lp) is in charge of making an RSK call or advancing funds on behalf of the user.
 - Liquidity Provider Server (LPS): 
-    - An [LPS](/guides/flyover/tools#liquidity-provider-server-lps) is a server that runs an LP node and allows a connection from remote LPs via HTTP. A Testnet instance of an LPS is available at: [`http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/`](http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/).
+    - An [LPS](/guides/flyover/tools#liquidity-provider-server-lps) is a server that runs an LP node and allows a connection from remote LPs via HTTP. A Testnet instance of an LPS is available at: [`https://flyover-lps.testnet.rsk.co/`](https://flyover-lps.testnet.rsk.co/).
 - Liquidity Bridge Contract (LBC): 
     - The [LBC](/guides/flyover/design-architecture#liquidity-bridge-contract-lbc) is the smart contract that controls the operations of the Flyover protocol. 
 - Locking cap: 
@@ -28,7 +28,7 @@ See a list of terms about/related to the Flyover Protocol and their meanings.
 - PegOut: 
     - This is the process of converting RBTC to BTC. See [Mainnet Guide](https://developers.rsk.co/rsk/rbtc/conversion/networks/mainnet/) guide.
 - penaltyFee:
-    - The penalty fee that the LP pays if it fails to deliver the service. The `maxPenaltyFeePercent` is 1% (value 1000).
+    - The penalty fee that the LP pays if it fails to deliver the service. This is a value defined in the LPS's config file. As of now, in testnet it is set to `1000000` wei, for mainnet, this value is yet to be defined.
 - Powpeg:
     - The [2wp-app](https://2wp-app.rsk.co/) is a tool that enables the easy use of the PowPeg protocol.
 - Refund address:

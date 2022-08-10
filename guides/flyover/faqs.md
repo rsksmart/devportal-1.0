@@ -13,7 +13,7 @@ Here, you can find a list of frequently asked questions (FAQs) about the Flyover
 **Q: What type of Bitcoin addresses does the flyover support?**
 
 > A: The answer depends on which address we refer to.
-The bitcoin transaction the user performs is not restricted in any way, they can spend UTXOs from any kind. The address that is restricted to only legacy is the [refund address](/guides/flyover/glossary/). The flyover supports only **base58 addresses** - legacy, multi sigs, and all other types of base58 addresses, native segwit and bech32 addresses are **not** supported.
+Flyover protocol accepts funds from any kind of account when performing the BTC deposit. The Bitcoin refund address can only be a **legacy address**.
 
 **Q: What is the difference between liquidity provider and liquider provider server?**
 
