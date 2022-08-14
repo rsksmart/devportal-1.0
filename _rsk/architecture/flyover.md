@@ -7,7 +7,7 @@ layout: rsk
 
 ![Flyover-banner](/assets/img/guides/flyover/flyover-banner.gif)
 
-The Flyover protocol performs fast peg-ins. It provides a new feature to transfer BTC from Bitcoin directly to a smart contract or [EOA](/guides/flyover/glossary/) in RSK faster than the regular peg in protocol. See the [PowPeg](https://developers.rsk.co/rsk/architecture/powpeg/) documentation. 
+The Flyover protocol performs fast [peg-ins](/guides/flyover/glossary/). It provides a new feature to transfer BTC from Bitcoin directly to a smart contract or [EOA](/guides/flyover/glossary/) in RSK faster than the regular peg-in protocol. See the [PowPeg](https://developers.rsk.co/rsk/architecture/powpeg/) documentation. 
 
 For general information about the Flyover Protocol, design and architecture, how to [get started](/guides/flyover/get-started/) on Testnet, please refer to the [table of contents](#table-of-contents) section.
 
@@ -23,7 +23,7 @@ The outstanding feature of the Flyover system is that it does not give any third
 - Services that do this already exist (example: [Liquality](/solutions/liquality/)). However, they are based on proprietary methodologies and require trust in a centralised service.
 - Flyover provides a framework to accomplish the same outcome, but without having to place trust in a proprietary methodology or a centralised service, by providing a new open decentralised protocol.
 - The flyover protocol relies on a Liquidity Provider (LP), Liquidity Bridge Contract (LBC) and the Bridge itself.
-- Any wallet that integrates the flyover protocol will allow a user to specify a contract and the `data` that needs to be executed on RSK and by negotiating with a Liquidity Provider, the user gets a bitcoin address to send the funds.
+- Wallets that integrate the flyover protocol will allow a user to specify a contract address and the `data` that needs to be executed on RSK, and by negotiating with a [Liquidity Provider](/guides/flyover/design-architecture/#liquidity-provider-lp), the user gets a bitcoin address to send the funds.
 
 ### Benefits
 

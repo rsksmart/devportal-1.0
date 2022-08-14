@@ -13,7 +13,7 @@ Find a list of tools, scripts, and github repos to build dApps using the flyover
 This is a [server](https://github.com/rsksmart/liquidity-provider-server) that interacts with a Liquidity Bridge Contract (LBC) to provide liquidity for users as part of the Flyover protocol. The server runs a local Liquidity Provider (LP), and also allows connections from remote LPs. See the [Configuration File](https://github.com/rsksmart/liquidity-provider-server#configuration) for LPS.
 
 The Testnet LP Server is hosted at:
-[http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/](http://flyover-01.aws-us-east-2.innovation.rskcomputing.net:8080/)
+[https://flyover-lps.testnet.rsk.co:8080/](https://flyover-lps.testnet.rsk.co:8080/)
 
 **System requirements:**
 - go 1.16.5 or above
@@ -23,11 +23,11 @@ The Testnet LP Server is hosted at:
 
 See the liquidity provider [repo](https://github.com/rsksmart/liquidity-provider-server) for instructions.
 
-Alternatively, you may choose to use a Testnet instance of the Liquidity Provider Server: `http://flyover-01.aws-us-east-2.testnet.dev.flyover.rskcomputing.net:8080/`
+Alternatively, you may choose to use a Testnet instance of the Liquidity Provider Server: `https://flyover-lps.testnet.rsk.co:8080/`
 
 ## Hardhat
 
-In this [custom hardhat script (hardhat + ethers.js)](https://github.com/Vovchyk/lbc-utils/blob/master/hardhat.config.ts#L26-L35), you can find an example of the `hashQuote` call. See an example of the execution below:
+In this [custom script](https://github.com/Vovchyk/lbc-utils/blob/3662afed437c30ec7cd2b259247e4ed91db1442b/hardhat.config.ts#L26-L35) you can find an example of the `hashQuote` call, this uses hardhat + ethers.js to trigger hashQuote. See an example of the execution below:
 
 ```shell
 npx hardhat hash-quote --quote 

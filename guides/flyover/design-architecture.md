@@ -20,7 +20,7 @@ The flyover system is composed of;
 
 ## Client
 
-An RSK user sending BTC to RSK (Peg in). A client can also be RSK users that are willing to stake and advance their RBTC to users in order to receive a fee after the regular peg-in transaction is completed.
+An RSK user sending BTC to RSK (peg-in). A client can also be RSK users that are willing to stake and advance their RBTC to users in order to receive a fee after the regular peg-in transaction is completed.
 
 ## Liquidity Provider (LP)
 
@@ -58,7 +58,7 @@ Computes and returns a [quote](#quote) for the service.
 
 | Parameters | Type | Value |
 | -------- | -------- | -------- |
-|`callContractAddress` | `address` | Contract address |
+|`callContractAddress` | `address` | Contract or EOA address |
 |`callContractArguments`| `bytes`  | Contract data    |
 |`valueToTransfer`| `uint` | Value to send in the call|
 |`gasLimit`  | `uint` | Gas limit to use in the call |
@@ -213,12 +213,12 @@ Basic flyover workflow.
 
 ### Unsuccessful Call
 
-Fast bridge interactions when the call on behalf of the user is unsuccessful. The LP keeps the call fee and the rest is refunded to the refund RSK address.
+Flyover interactions when the call on behalf of the user is unsuccessful. The LP keeps the call fee and the rest is refunded to the RSK refund address.
 
 ![Unsuccessful Call](/assets/img/guides/flyover/unsuccessful-call.jpeg)
 
 ### No call
 
-Fast bridge interactions when the LP fails to call the LBC on behalf of the user. The LBC slashes the LP’s deposit and refunds the user on the refund RSK address.
+Flyover interactions when the LP fails to call the LBC on behalf of the user. The LBC slashes the LP’s collateral and refunds the user on the RSK refund address.
 
 ![no call](/assets/img/guides/flyover/no-call.jpg)
