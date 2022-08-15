@@ -28,7 +28,7 @@ To perform a peg in operation on Testnet using the flyover protocol, we will do 
 
 ###  Connect to an LPS Instance on Testnet
 
-An instance of the LPS has already been set up on Testnet: `https://flyover-lps.testnet.rsk.co:8080/`
+An instance of the LPS has already been set up on Testnet: `https://flyover-lps.testnet.rsk.co/`
 
 > - The server's functionality is provided through a JSON HTTP interface. 
 > - The server needs access to both a Bitcoin node and an RSK node. Currently, there’s no web UI, so we will make an API call using Postman or cURL.
@@ -67,7 +67,7 @@ To make a request to `getQuote`, paste the following code into a terminal or sen
 ```shell
 curl \
 --location \
---request POST 'https://flyover-lps.testnet.rsk.co:8080/getQuote' \
+--request POST 'https://flyover-lps.testnet.rsk.co/getQuote' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "callContractAddress":"0x20E75e7287763de60851Ed020089ABf17a1e9a4d",
@@ -168,7 +168,7 @@ Example:
 **Parameter:**
 
 ```shell
-curl --location --request POST 'https://flyover-lps.testnet.rsk.co:8080/acceptQuote' \
+curl --location --request POST 'https://flyover-lps.testnet.rsk.co/acceptQuote' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "quoteHash": "102e8332dfd95f9d911e14b51349ad9305a834c4f38c1aa7f39cebbf84600bee"
