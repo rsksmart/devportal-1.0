@@ -28,7 +28,7 @@ To perform a peg in operation on Testnet using the flyover protocol, we will do 
 
 ###  Connect to an LPS Instance on Testnet
 
-An instance of the LPS has already been set up on Testnet: `https://flyover-lps.testnet.rsk.co/`
+An instance of the LPS has already been set up on Testnet: `https://flyover-lps.testnet.rsk.co:8080/`
 
 > - The server's functionality is provided through a JSON HTTP interface. 
 > - The server needs access to both a Bitcoin node and an RSK node. Currently, there’s no web UI, so we will make an API call using Postman or cURL.
@@ -67,7 +67,7 @@ To make a request to `getQuote`, paste the following code into a terminal or sen
 ```shell
 curl \
 --location \
---request POST 'https://flyover-lps.testnet.rsk.co/getQuote' \
+--request POST 'https://flyover-lps.testnet.rsk.co:8080/getQuote' \
 --header 'Content-Type: application/json' \
 --data-raw '{
 "callContractAddress":"0x20E75e7287763de60851Ed020089ABf17a1e9a4d",
@@ -127,7 +127,7 @@ This is a local method provided by the LBC, and doesn’t require mining a trans
 
 The `quoteHash` could be calculated using the [LBC hash function](https://github.com/rsksmart/liquidity-bridge-contract/blob/8dec3edfb8e27d87207edf8f5c477687baae606f/contracts/LiquidityBridgeContract.sol#L375).
 
-```
+```shell
 function hashQuote(Quote memory quote) public view returns (bytes32) {
         return validateAndHashQuote(quote);
     }
@@ -137,7 +137,7 @@ function hashQuote(Quote memory quote) public view returns (bytes32) {
 
 Users can invoke the `eth_call` JSON-RPC directly, or by using a web3 library. Here's a sample ethers.js call below;
 
-```
+```shell
 npx hardhat hash-quote --quote
 ```
 
@@ -168,7 +168,7 @@ Example:
 **Parameter:**
 
 ```shell
-curl --location --request POST 'https://flyover-lps.testnet.rsk.co/acceptQuote' \
+curl --location --request POST 'https://flyover-lps.testnet.rsk.co:8080/acceptQuote' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "quoteHash": "102e8332dfd95f9d911e14b51349ad9305a834c4f38c1aa7f39cebbf84600bee"
