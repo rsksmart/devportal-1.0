@@ -20,7 +20,7 @@ See a list of terms about/related to the Flyover Protocol and their meanings.
 - Liquidity Provider Server (LPS): 
     - An [LPS](/guides/flyover/tools#liquidity-provider-server-lps) is a server that runs an LP node and allows a connection from remote LPs via HTTP. A Testnet instance of an LPS is available at: [`https://flyover-lps.testnet.rsk.co/`](https://flyover-lps.testnet.rsk.co/).
 - Liquidity Bridge Contract (LBC): 
-    - The [LBC](/guides/flyover/design-architecture#liquidity-bridge-contract-lbc) is the smart contract that controls the operations of the Flyover protocol. 
+    - The [LBC](/guides/flyover/design-architecture#liquidity-bridge-contract-lbc) is the smart contract that controls the operations of the Flyover protocol. See the verified LBC address on [RSK Testnet Explorer](https://explorer.testnet.rsk.co/address/0x0d77ed96104f41295d011ba16f4b79542bd7e390?__ctab=Code).
 - Locking cap: 
     - This is the limit specified in the bridge which rejects transactions once the lock cap is exceeded, and will begin accepting transactions when funds in the network decreases. Note: This limit is a security measure and may increase in the future.
 - PegIn: 
