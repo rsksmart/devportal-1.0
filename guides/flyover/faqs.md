@@ -13,7 +13,7 @@ Here, you can find a list of frequently asked questions (FAQs) about the Flyover
 **Q: What type of Bitcoin addresses does the flyover support?**
 
 > A: The answer depends on which address we refer to.
-Flyover protocol accepts funds from any kind of account when performing the BTC deposit. The Bitcoin refund address can only be a **legacy address**.
+The Flyover protocol accepts transfers to RSK from any kind of Bitcoin wallet, including those using segwit and taproot addresses.
 
 **Q: What is the difference between liquidity provider and liquider provider server?**
 

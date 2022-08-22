@@ -20,7 +20,7 @@ The flyover system is composed of;
 
 ## Client
 
-An RSK user sending BTC to RSK (peg-in). A client can also be RSK users that are willing to stake and advance their RBTC to users in order to receive a fee after the regular peg-in transaction is completed.
+An RSK user sending BTC to RSK (peg-in). A flyover peg-in protocol client would be a user holding BTC that wants to convert them to RBTC. This process is then facilitated by an [LP](#liquidity-provider-lp).
 
 ## Liquidity Provider (LP)
 
@@ -37,7 +37,7 @@ The [liquidity provider (LP)](https://github.com/rsksmart/liquidity-provider) is
 - Interact with the LBC to provide the service.
 - Interact with the LBC to penalise any misbehaving LPs.
 
-LPs are entities that provide advance payments in RSK and BTC on behalf of users. They may charge a service fee for their services. The workflows differ from peg-ins to peg-outs. While peg-ins require an off-chain interaction between the user wallet and the LP, the fast peg-out process can be executed without such interaction. We’ll first describe the peg-in process, and later we'll move to the peg-out process.
+LPs are entities that provide advance payments in RBTC and BTC on behalf of users. They may charge a service fee for their services. The workflows differ from peg-ins to peg-outs. While peg-ins require an off-chain interaction between the user wallet and the LP, the fast peg-out process can be executed without such interaction. We’ll first describe the peg-in process, and later we'll move to the peg-out process.
 
 To be able to participate as an LP, LPs must register themselves in a Liquidity Bridge Contract (LBC) and perform one mandatory deposit on RSK: a security bond that is slashed if they misbehave. A second deposit is optional: they can pre-deposit the BTC liquidity they wish to make available in RSK. While this has a financial cost, by doing so they signal the intent to fulfil the promise. Users can use this information to pick an LP that is well-funded and reduce the risk of deviations while expecting the advance payment.
 
@@ -157,7 +157,7 @@ See sample `callForUser` transaction in [Testnet Explorer](https://explorer.test
 
 ### registerPegIn
 
-This method requests the Bridge contract on RSK; a refund for the service. Internally, it is being triggered by the [LPS](/guides/flyover/tools#liquidity-provider-server-lps) once funds has been deposited  (tBTC) into a Bitcoin deposit address. This method returns the amount transferred to the contract or an [error code](https://github.com/rsksmart/RSKIPs/blob/fast-bridge-alternative/IPs/RSKIP176.md#error-codes).
+This method requests the Bridge contract on RSK to provide a refund for the service. Internally, it is being triggered by the [LPS](/guides/flyover/tools#liquidity-provider-server-lps) once funds has been deposited  (tBTC) into a Bitcoin deposit address. This method returns the amount transferred to the contract or an [error code](https://github.com/rsksmart/RSKIPs/blob/fast-bridge-alternative/IPs/RSKIP176.md#error-codes).
 
 Parameters;
 

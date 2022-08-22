@@ -23,7 +23,8 @@ The outstanding feature of the Flyover system is that it does not give any third
 - Services that do this already exist (example: [Liquality](/solutions/liquality/)). However, they are based on proprietary methodologies and require trust in a centralised service.
 - Flyover provides a framework to accomplish the same outcome, but without having to place trust in a proprietary methodology or a centralised service, by providing a new open decentralised protocol.
 - The flyover protocol relies on a Liquidity Provider (LP), Liquidity Bridge Contract (LBC) and the Bridge itself.
-- Wallets that integrate the flyover protocol will allow a user to specify a contract address and the `data` that needs to be executed on RSK, and by negotiating with a [Liquidity Provider](/guides/flyover/design-architecture/#liquidity-provider-lp), the user gets a bitcoin address to send the funds.
+- Wallets that integrate the flyover protocol will allow a user to specify a contract address and the `data` that needs to be executed on RSK, and by negotiating with a [Liquidity Provider](/guides/flyover/design-architecture/#liquidity-provider-lp), the user gets a bitcoin address to send the funds. The user wallet can also verify that the bitcoin address received is controlled by the Powpeg, and not by anyone else.
+- If the LP does not fulfill its duty of advancing the payment on time, the user can hand over the quote to another third party who can take the role of the faulty LP and collect its reward. This way, the fallback mechanism still enables the user to receive the RBTC in RSK, even without prior RBTC balance to execute RSK transactions.
 
 ### Benefits
 
