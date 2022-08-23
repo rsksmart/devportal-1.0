@@ -86,7 +86,7 @@ Computes and returns a [quote](#quote) for the service.
 
 The [Liquidity Bridge Contract (LBC)](https://github.com/rsksmart/liquidity-bridge-contract) manages the interaction between users and liquidity providers (LP) in order to achieve fast peg-ins.
 
-See contract address: [`0x0d77ed96104f41295d011ba16f4b79542bd7e390`](https://explorer.testnet.rsk.co/address/0x0d77ed96104f41295d011ba16f4b79542bd7e390?__ctab=Code).
+See **Testnet**: [0x0d77ed96104f41295d011ba16f4b79542bd7e390](https://explorer.testnet.rsk.co/address/0x0d77ed96104f41295d011ba16f4b79542bd7e390?__ctab=Code) and **Mainnet**: [0x0fc7386a22e00629fe611516b2c97004d5ff4082](https://explorer.rsk.co/address/0x0fc7386a22e00629fe611516b2c97004d5ff4082) contract addresses.
 
 **System requirements:**
 - [Node](https://nodejs.org/en/)
