@@ -53,10 +53,4 @@ tags: truffle, ganache, explorer, testnet, faucet, networks, deployment, gas-sta
         <a class="company-name" href="/tools/truffle">Truffle</a>
     </a>
     </div>
-    <!--<div class="item">
-        <a href="#" target="_blank">
-        <img src="img/tools/7-rsk3js.png" alt="Wallet Javascript Library">
-        <a class="company-name" href="#" target="_blank">Rsk3.js Wallet</a>
-    </a>
-    </div> -->
 </div>

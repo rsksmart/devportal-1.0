@@ -55,7 +55,7 @@ rWallet is an open-source easy to use blockchain wallet. It is the code-base to 
         <div class="row rowtop">
             <div class="col-3 pr-0-sm">
                 <div class="grafbox h-100 rsk_orange">
-                <span class="rotate"><a href="/libraries/">Web 3 & Other Librairies</a></span>
+                <span class="rotate"><a href="/libraries/">Web 3 & Other Libraries</a></span>
                 </div>
             </div>
             <div id="rsk3" class="col-sm-4 col-3 pr-0-sm">
