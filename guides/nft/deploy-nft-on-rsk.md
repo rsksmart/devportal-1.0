@@ -45,7 +45,7 @@ Write down your 12 word seed phrase. This is used to recover your account, in ca
 
 The seed phrase is the most important thing in a wallet / account!
     
-### Connect MetaMask to RSK testnet
+[Connect MetaMask to RSK testnet](https://metamask-landing.rifos.org/)
 
 Go to networks -> Custom RPC, and enter the following values:
 
