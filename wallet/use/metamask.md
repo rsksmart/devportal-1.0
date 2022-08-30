@@ -4,7 +4,9 @@ title: MetaMask
 tags: json-rpc, metamask, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
-For MetaMask installation, please <a href="https://metamask-landing.rifos.org/" target="_blank">visit here</a>.
+For MetaMask installation, please <a href="https://metamask.io/" target="_blank">visit here</a>.
+
+You can either use the [metamask-landing.rifos.org](https://metamask-landing.rifos.org/) tool to download/install Metamask, and add RSK custom network or follow the steps listed in [metamask.io](https://metamask.io/). 
 
 ## Connect with MetaMask
 

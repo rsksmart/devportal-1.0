@@ -26,5 +26,5 @@ Not to worry, if these terms are new to you — we will explain them!
 - [Create your Smart Contract](/guides/nft/create-smart-contract/#top/)
 - [How to deploy your NFT to RSK](/guides/nft/deploy-nft-on-rsk/#how-to-deploy-your-nft-on-rsk/)
     - [View NFT using Metamask](/guides/nft/deploy-nft-on-rsk/#view-nft-using-metamask/)
-    - [Connect MetaMask to RSK](/guides/nft/deploy-nft-on-rsk/#metamask/)
+    - [Connect MetaMask to RSK](/guides/nft/deploy-nft-on-rsk/#connect-metamask-to-rsk-testnet/)
     - [Add NFT to Metamask](/guides/nft/deploy-nft-on-rsk/#add-nft-to-metamask/)

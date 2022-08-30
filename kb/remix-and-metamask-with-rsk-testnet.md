@@ -56,7 +56,9 @@ Metamask is a kind of web wallet which facilitates transactions using yours acco
 It can be used with RSK networks too.
 It has versions for several browsers, like Chrome, Firefox, Opera and Brave.
 
-Go to [metamask-landing.rifos.org](https://metamask-landing.rifos.org/) and install it.
+Go to [metamask.io](https://metamask.io/) and install it.
+
+You can either use the [metamask-landing.rifos.org](https://metamask-landing.rifos.org/) tool to download/install Metamask, and add RSK custom network or follow the steps listed in [metamask.io](https://metamask.io/). 
 
 Create an account.
 
