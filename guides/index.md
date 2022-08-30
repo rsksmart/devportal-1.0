@@ -13,3 +13,4 @@ description: "Guides on RSK, workshops, and other guides"
 - [The Complete Guide to Stablecoins](/guides/stablecoin/)
 - [The Complete Guide to Decentralized Exchanges](/guides/dex/)
 - [Create, Deploy, and View NFT project on RSK](/guides/nft/)
+- [Flyover Protocol User Guide](/guides/flyover/)
