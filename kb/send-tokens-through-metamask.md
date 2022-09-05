@@ -7,6 +7,8 @@ tags: tokens, metamask, rif, rbtc, defi, decentralized, quick-start, guides, tut
 
 ## Send RIF Tokens through Metamask
 
+You can either use the [metamask-landing.rifos.org](https://metamask-landing.rifos.org/) tool to download/install Metamask, and add RSK custom network or follow the steps listed below. 
+
 1. Install [Metamask](https://metamask.io/)
 2. Connect MetaMask to RSK:
     1. Open 'Network' selector

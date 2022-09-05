@@ -44,8 +44,10 @@ Create an account.
 Write down your 12 word seed phrase. This is used to recover your account, in case you lose your password.
 
 The seed phrase is the most important thing in a wallet / account!
-    
+
 ### Connect MetaMask to RSK testnet
+
+You can either use the [metamask-landing.rifos.org](https://metamask-landing.rifos.org/) tool to download/install Metamask, and add RSK custom network or follow the steps listed below. 
 
 Go to networks -> Custom RPC, and enter the following values:
 

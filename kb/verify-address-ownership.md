@@ -25,6 +25,8 @@ You do not need any RBTC balance to do so!
 
 **ℹ️** Install MetaMask
 
+You can either use the [metamask-landing.rifos.org](https://metamask-landing.rifos.org/) tool to download/install Metamask, and add RSK custom network or follow the steps listed in [metamask.io](https://metamask.io/). 
+
 In Chrome, visit [metamask.io](https://metamask.io/),
 and follow the instructions to install this extension in your browser.
 If you are doing this for the first time,

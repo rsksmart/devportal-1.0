@@ -58,6 +58,8 @@ It has versions for several browsers, like Chrome, Firefox, Opera and Brave.
 
 Go to [metamask.io](https://metamask.io/) and install it.
 
+You can either use the [metamask-landing.rifos.org](https://metamask-landing.rifos.org/) tool to download/install Metamask, and add RSK custom network or follow the steps listed in [metamask.io](https://metamask.io/). 
+
 Create an account.
 
 Write down your seed phrase, or mnemonic, or backup phrase (all these terms mean the same), with 12 words. This is used to recover your account, in case you lose your password.
