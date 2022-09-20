@@ -5,7 +5,7 @@ tags: rsk, rskj, node, config
 description: "Run the RSK node with autominer - similar to Ganache default config"
 ---
 
-Ganahce local network runs like what RSK calls _autominer_ mode:
+Ganache local network runs like what RSK calls `autominer_ mode`:
 - Creates blocks when new transactions are sent to the node
 - Will not create blocks if no transactions are sent
 - Allows to mine blocks manually via RPC
