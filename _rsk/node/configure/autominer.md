@@ -15,7 +15,7 @@ To configure the node, we are going to:
 1. Run it in `--regtest` mode
 2. Use a custom config to activate the autominer
 
-The configuration we need to use is
+The configuration we need to use is:
 
 ```
 miner.client.autoMine = true
