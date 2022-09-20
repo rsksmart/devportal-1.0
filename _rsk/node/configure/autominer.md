@@ -2,7 +2,7 @@
 layout: rsk
 title: Run with autominer (Ganache-like)
 tags: rsk, rskj, node, config
-description: "Run the RSK node with autominer - simmilar to Ganache default config"
+description: "Run the RSK node with autominer - similar to Ganache default config"
 ---
 
 Ganahce local network runs like what RSK calls _autominer_ mode:
