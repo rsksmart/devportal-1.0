@@ -32,7 +32,7 @@ On top of the default configuration (Java version and main class), we will need 
 - Program arguments: `--regtest` and optionally `--reset` for database reset on restart
 - VM options: `-Drsk.conf.file=./autominer.conf` (or the path you chose)
 
-It should look like this
+It should look like this:
 
 ![autominer_inellij_config](/assets/img/rsk/autominer_intellij_config.png)
 
