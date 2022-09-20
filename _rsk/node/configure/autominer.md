@@ -48,6 +48,6 @@ java -cp rskj-core-4.1.0-HOP-all.jar -Drsk.conf.file=./autominer.conf co.rsk.Sta
 
 Now you have an RSK node running locally! It will create blocks only for new transactions, or arbitrarily by using the `evm_mine` RPC call.
 
-As a result you should be able to do this
+As a result, you should be able to do this
 
 ![autominer_demo](/assets/img/rsk/autominer_demo.mov)
