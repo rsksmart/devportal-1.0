@@ -23,7 +23,7 @@ miner.client.autoMine = true
 
 Create a `autominer.conf` file in the root of the repo (or other dir., remember to use the correct path afterwards)
 
-This option can be activate when using the node in different modes
+This option can be activated when using the node in different modes
 
 ### Setup autominer on IntelliJ
 
