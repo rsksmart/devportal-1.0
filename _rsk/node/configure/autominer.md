@@ -34,7 +34,7 @@ On top of the default configuration (Java version and main class), we will need 
 
 It should look like this
 
-![autominer_inellij_config]()
+![autominer_inellij_config](/assets/img/rsk/autominer_intellij_config.png)
 
 ### Setup autominer on CLI
 
@@ -50,4 +50,4 @@ Now you have an RSK node running locally! It will create blocks only for new tra
 
 As a result you should be able to do this
 
-![autominer_demo]()
+![autominer_demo](/assets/img/rsk/autominer_demo.mov)
