@@ -36,7 +36,7 @@ It should look like this:
 
 ![autominer_inellij_config](/assets/img/rsk/autominer_intellij_config.png)
 
-### Setup autominer on CLI
+### Setup Autominer on CLI
 
 For example, if you are running with JAR, use the command
 
