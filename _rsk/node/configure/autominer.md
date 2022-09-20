@@ -11,7 +11,7 @@ Ganahce local network runs like what RSK calls _autominer_ mode:
 - Allows to mine blocks manually via RPC
 - (optionally) Delete the database on restart
 
-To configure the node we are going to
+To configure the node, we are going to:
 1. Run it in `--regtest` mode
 2. Use a custom config to activate the autominer
 
