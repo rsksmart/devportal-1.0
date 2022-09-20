@@ -38,7 +38,7 @@ It should look like this:
 
 ### Setup Autominer on CLI
 
-For example, if you are running with JAR, use the command
+For example, if you are running with JAR, use the command:
 
 ```
 java -cp rskj-core-4.1.0-HOP-all.jar -Drsk.conf.file=./autominer.conf co.rsk.Start --regtest --reset
