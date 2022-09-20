@@ -25,7 +25,7 @@ Create a `autominer.conf` file in the root of the repo (or other dir., remember 
 
 This option can be activated when using the node in different modes
 
-### Setup autominer on IntelliJ
+### Setup Autominer on IntelliJ
 
 On top of the default configuration (Java version and main class), we will need to add
 
