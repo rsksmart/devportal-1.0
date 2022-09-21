@@ -2,10 +2,10 @@
 layout: rsk
 title: Run with autominer (Ganache-like)
 tags: rsk, rskj, node, config
-description: "Run the RSK node with autominer - similar to Ganache default config"
+description: "Learn how to run the RSK node with autominer - similar to Ganache default config"
 ---
 
-Ganache local network runs like what RSK calls `autominer mode`:
+[Ganache](https://trufflesuite.com/docs/ganache/quickstart/) local network runs like what RSK calls `autominer mode`, it:
 - Creates blocks when new transactions are sent to the node
 - Will not create blocks if no transactions are sent
 - Allows to mine blocks manually via RPC
@@ -38,9 +38,11 @@ It should look like this:
 
 ### Setup Autominer on CLI
 
-For example, if you are running with JAR, use the command:
+To setup autominer on CLI, use the command below;
 
-```
+> Use this if you are running with JAR.
+
+```java
 java -cp rskj-core-4.1.0-HOP-all.jar -Drsk.conf.file=./autominer.conf co.rsk.Start --regtest --reset
 ```
 
@@ -48,6 +50,6 @@ java -cp rskj-core-4.1.0-HOP-all.jar -Drsk.conf.file=./autominer.conf co.rsk.Sta
 
 Now you have an RSK node running locally! It will create blocks only for new transactions, or arbitrarily by using the `evm_mine` RPC call.
 
-As a result, you should be able to do this
+See gif image below for example on how to do this;
 
-![autominer_demo](/assets/img/rsk/autominer_demo.mov)
+![autominer_demo](/assets/img/rsk/autominer_demo.gif)
