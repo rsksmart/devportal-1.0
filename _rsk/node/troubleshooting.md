@@ -114,7 +114,7 @@ To use the `DbMigrate` tool to migrate between databases, we will need a tool cl
 
 The tool class is: `co.rsk.cli.tools.DbMigrate`
 
-Required cli args:
+Required CLI arguments:
 
 `args[0]` - database target where we are going to insert the information from the current selected database.
 Be aware that you cannot migrate to the same database or an error will be thrown.
