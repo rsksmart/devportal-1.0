@@ -110,6 +110,8 @@ This tool allows the user to migrate between different supported databases such 
 
 #### How to use
 
+To use the `DbMigrate` tool to migrate between databases, we will need a tool class and CLI arguments.
+
 The tool class is: `co.rsk.cli.tools.DbMigrate`
 
 Required cli args:
