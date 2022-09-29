@@ -108,7 +108,7 @@ The above command removes the blocks with number 1000001 or higher.
 
 This tool allows the user to migrate between different supported databases such as `rocksdb` and `leveldb`. 
 
-#### How to use it
+#### How to use
 
 The tool class is: `co.rsk.cli.tools.DbMigrate`
 
