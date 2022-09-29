@@ -117,7 +117,7 @@ The tool class is: `co.rsk.cli.tools.DbMigrate`
 Required CLI arguments:
 
 `args[0]` - database target where we are going to insert the information from the current selected database.
-Be aware that you cannot migrate to the same database or an error will be thrown.
+> Note: You cannot migrate to the same database or an error will be thrown. It is highly recommended to turn off the node in order to perform the migration since latest data could be lost.
 
 
 Example migrating from `leveldb` to `rocksdb`:
