@@ -2,13 +2,16 @@
 layout: rsk
 title: Powpeg
 collection_order: 4300
-tags: rsk, rbtc, btc, peg, powpeg
+tags: rsk, rbtc, btc, peg, powpeg, 2 way peg
 description: "Transfer BTC to RBTC, and RBTC to BTC through the Powpeg."
 ---
 
 ## Building the Most Secure, Permissionless and Uncensorable Bitcoin Peg
 
 RSK’s 2-way peg protocol, called “the **Powpeg**”, has matured from its inception in 2018 as a federation to now include many decentralized qualities. The new RSK Powpeg protects private keys stored in special purpose PowHSMs based on tamper-proof secure elements (SE). Each PowHSM runs an RSK node in SPV mode, and so signatures can only be commanded by chain cumulative proof of work. Security is established in the Powpeg through the simplicity of a layered design we refer to as defence-in-depth.
+
+> - The 2 Way Peg Application is now available on [Testnet](https://2wp-app.testnet.rsk.co/) and [Mainnet](https://2wp-app.rsk.co/). 
+> - For general information about the design and architecture, how to perform a peg-in transaction using Ledger and Trezor, Frequently asked questions and advanced operations you can perform on the 2 way peg app, please refer to the [2 way peg app user guide](/guides/two-way-peg-app/).
 
 ## The History of the Powpeg
 
