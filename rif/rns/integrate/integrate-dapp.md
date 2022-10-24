@@ -3,7 +3,6 @@ layout: rsk
 title: Integrate your dApp with RNS
 tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 description: Learn how to integrate RNS with your dApp.
-tags: rns, javascript, dapp, integrate
 ---
 
 Surely you want to reserve the name of your dapp now! Search it here
