@@ -5,6 +5,8 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, 
 layout: rsk
 ---
 
+![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
+
 The 2 way peg app is a web application that fosters the interaction between the bitcoin blockchain and the RSK network for easier exchange of BTC and RBTC. It provides a way to visualize the status of transactions, communicate with a user wallet (both hardware wallets and software wallets), while also providing the highest possible level of security for transactions.
 
 In this guide, we are going to learn how to use the 2 way peg app, its [features](/guides/two-way-peg-app/overview#features), [benefits](/guides/two-way-peg-app/overview#why-use-the-2-way-peg-app), [how it works](/guides/two-way-peg-app/overview#how-it-works), how to perform peg-ins using [hardware](/guides/two-way-peg-app/getting-started#using-hardware-wallets) and [software](/guides/two-way-peg-app/getting-started#using-software-wallets) wallets, how to [view a transaction status](/guides/two-way-peg-app/getting-started#view-transaction-status), and a brief overview of its [design and architecture](/guides/two-way-peg-app/design-architecture). 

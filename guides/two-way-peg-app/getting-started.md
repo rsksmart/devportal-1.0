@@ -6,7 +6,9 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, 
 layout: rsk
 ---
 
-In this section, we will learn how to get started using the 2 way peg app, [setting up your environment](#requirements), supported [browsers](#supported-browsers) and [wallets](#supported-wallets), [supported addresses](#supported-addresses), how to get [mainnet and testnet](#getting-funds) funds, how to perform a peg-in transaction with [hardware](#using-hardware-wallets) and [software](#using-software-wallets) wallets, and how to [view a transaction status](#view-transaction-status).
+![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/2-way-peg.gif)
+
+In this section, we will learn how to get started using the 2 way peg app, learn how to [set up your environment](#requirements), use supported [browsers](#supported-browsers) and [wallets](#supported-wallets), use [supported addresses](#supported-addresses), get [mainnet and testnet](#getting-funds) funds, perform a peg-in transaction with [hardware](#using-hardware-wallets) and [software](#using-software-wallets) wallets, and how to [view a transaction status](#view-transaction-status).
 
 ## Requirements
 
@@ -64,6 +66,7 @@ These addresses are the original BTC addresses. It uses a special script hash fu
 ## Install Apps
 
 - Bitcoin Testnet
+
 The Bitcoin testnet app does not show on Ledger live manager by default. To be able to see the BTC Testnet app you need to enable the developer mode in Ledger live.
 
 ### Enabling Developer Mode 
