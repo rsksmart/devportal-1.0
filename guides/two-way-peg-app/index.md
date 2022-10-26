@@ -1,5 +1,5 @@
 ---
-title: "Table of Content | 2 way peg app Documentation"
+title: "Table of Contents | 2 way peg app Documentation"
 description: "Welcome to the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
@@ -13,7 +13,7 @@ In this guide, we are going to learn how to use the 2 way peg app, its [features
 
 Here, you will also find instructions on how to perform [advanced operations](/guides/two-way-peg-app/advanced-operations/) on the 2 way peg app, including how to use different accounts, viewing advanced data, et cetera.
 
-## Table of Content
+## Table of Contents
 
 - [Overview](/guides/two-way-peg-app/overview/)
     - [How it Works](/guides/two-way-peg-app/overview#how-it-works)

@@ -8,7 +8,15 @@ layout: rsk
 
 ![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/2-way-peg.gif)
 
-In this section, we will learn how to get started using the 2 way peg app, learn how to [set up your environment](#requirements), use supported [browsers](#supported-browsers) and [wallets](#supported-wallets), use [supported addresses](#supported-addresses), get [mainnet and testnet](#getting-funds) funds, perform a peg-in transaction with [hardware](#using-hardware-wallets) and [software](#using-software-wallets) wallets, and how to [view a transaction status](#view-transaction-status).
+In this section, we will learn how to get started using the 2 way peg app to convert BTC to RBTC, we will do the following:
+
+1. [Set up your environment](#requirements)
+2. Use supported [browsers](#supported-browsers) and [wallets](#supported-wallets)
+3. Use [supported addresses](#supported-addresses)
+4. Get [mainnet and testnet](#getting-funds) funds
+5. Perform a peg-in transaction using [Ledger Hardware Wallet](#ledger-hardware-wallet)
+6. Perform a peg-in transaction using [Trezor Hardware Wallet](#trezor-hardware-wallet)
+7. [View a transaction status](#view-transaction-status).
 
 ## Requirements
 
@@ -153,6 +161,8 @@ In this guide, we will be using the 2 way peg app on [2 way peg app - Testnet](h
 ### Ledger Hardware Wallet
 
 ![Connect Ledger](/assets/img/guides/two-way-peg-app/1-connect-ledger.png)
+
+> Ensure to complete the steps in [install apps](#install-apps) and [requirements](#requirements) before proceeding with this section.
 
 **Step 1: Connect to a ledger wallet**
 - Plug your Ledger wallet by connecting the USB cable that comes with the Ledger.
