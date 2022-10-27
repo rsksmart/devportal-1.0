@@ -22,17 +22,18 @@ Running RSKj in Regtest mode is the best fit for these needs.
 
 - Navigate to [RSKj's releases page](https://github.com/rsksmart/rskj/releases)
 - From the **latest** release, download a file whose name looks like
-  `rskj-core-*.jar`, where `*` is replaced by the release tag name, for example `3.1.0-IRIS`.
+  `rskj-core-*.jar`, where `*` is replaced by the release tag name, for example `4.1.0-HOP`.
   
 ### Run RSKj
 
 ```shell
-java -cp ${JAR} co.rsk.Start \
-  --regtest \
-  --reset \
-  -Drpc.providers.web.cors=* \
+java \
+  -Drpc.providers.web.cors='*' \
   -Dminer.client.autoMine=true \
-  co.rsk.Start
+  -cp rskj-core-4.1.0-HOP-all.jar \
+  co.rsk.Start \
+  --regtest \
+  --reset
 ```
 
 - The above command runs RSKj connected to Regtest, which is a `localhost`-only network, clears the database each time the node is started,
