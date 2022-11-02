@@ -24,8 +24,6 @@ title: The Stack
             <div class="col"><span>Scoring</span></div>
             <div class="col"><span>Liquidity protocols</span></div>
         </div>
-
-    </div>
 </div>
 
 <div class="row has-unique-col rif_blue_text">
