@@ -1141,7 +1141,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-01-18 15:21:19 +0000T00:00:00.000Z">2022-01-18</time> | -->
+    <!--time role="presentation" datetime="2022-10-27 11:01:56 +0000T00:00:00.000Z">2022-10-27</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/kb/rskj-for-developers.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2161,17 +2161,18 @@
   <li>Navigate to <a href="https://github.com/rsksmart/rskj/releases" rel="external noopener noreferrer" target="_blank">RSKj’s releases page</a>
 </li>
   <li>From the <strong>latest</strong> release, download a file whose name looks like
-<code class="highlighter-rouge">rskj-core-*.jar</code>, where <code class="highlighter-rouge">*</code> is replaced by the release tag name, for example <code class="highlighter-rouge">3.1.0-IRIS</code>.</li>
+<code class="highlighter-rouge">rskj-core-*.jar</code>, where <code class="highlighter-rouge">*</code> is replaced by the release tag name, for example <code class="highlighter-rouge">4.1.0-HOP</code>.</li>
 </ul>
 
 <h3 id="run-rskj">Run RSKj</h3>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> <span class="k">${</span><span class="nv">JAR</span><span class="k">}</span> co.rsk.Start <span class="se">\</span>
-  <span class="nt">--regtest</span> <span class="se">\</span>
-  <span class="nt">--reset</span> <span class="se">\</span>
-  <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> <span class="se">\</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="se">\</span>
+  <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="s1">'*'</span> <span class="se">\</span>
   <span class="nt">-Dminer</span>.client.autoMine<span class="o">=</span><span class="nb">true</span> <span class="se">\</span>
-  co.rsk.Start
+  <span class="nt">-cp</span> rskj-core-4.1.0-HOP-all.jar <span class="se">\</span>
+  co.rsk.Start <span class="se">\</span>
+  <span class="nt">--regtest</span> <span class="se">\</span>
+  <span class="nt">--reset</span>
 </code></pre></div></div>
 
 <ul>
