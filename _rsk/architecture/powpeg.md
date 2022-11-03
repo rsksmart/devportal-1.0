@@ -98,3 +98,11 @@ Regarding the complete shutdown of the Powpeg by a single government, it would b
 The RSK peg has matured from a federation to a Powpeg. As the peg grows over time, more bitcoins are being moved into RSK.
 
 Developers can find a unique opportunity to build their dApps on our secure and efficient money vault. Compared to alternatives, the Powpeg combines strong security based on layered protections, with maximum decentralization within the constraints established by the Bitcoin scripting system.
+
+## Powpeg Verify Keys
+
+<div title="Powpeg Verify Keys">
+   <button id="sovButton">Sovryn</button>
+   <button id="pnetButton">pNetwork</button>
+   <iframe title="powpeg-verify-keys" id='frame' width="100%" height="400" frameborder="10"></iframe>
+</div>

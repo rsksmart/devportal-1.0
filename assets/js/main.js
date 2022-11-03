@@ -1040,3 +1040,20 @@ function renderSwitchContainer(elem, index) {
   ul.replaceWith(switchContainer)
   // elem.remove()
 }
+
+// render features: powpeg-verify-keys-frame
+
+let frame = document.getElementById("frame");
+
+let sovButton = document.getElementById("sovButton");
+let pnetButton = document.getElementById("pnetButton");
+
+sovButton.addEventListener("click", ShowSovryn)
+pnetButton.addEventListener("click", showpNetwork)
+
+function ShowSovryn(){
+  frame.src="/assets/rsk/architecture/powpeg-verify-keys/sovryn.html"
+}
+function showpNetwork(){
+  frame.src="/assets/rsk/architecture/powpeg-verify-keys/pnetwork.html"
+}
