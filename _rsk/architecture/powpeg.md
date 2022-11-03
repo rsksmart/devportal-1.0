@@ -102,7 +102,7 @@ Developers can find a unique opportunity to build their dApps on our secure and 
 ## Powpeg Verify Keys
 
 <div title="Powpeg Verify Keys">
-   <button id="sovButton">Sovryn</button>
-   <button id="pnetButton">pNetwork</button>
-   <iframe title="powpeg-verify-keys" id='frame' width="100%" height="400" frameborder="10"></iframe>
+   <button id="sov-button">Sovryn</button>
+   <button id="pnet-button">pNetwork</button>
+   <iframe title="powpeg-verify-keys" id='powpeg-verify-keys-frame' width="100%" height="400" frameborder="10"></iframe>
 </div>
