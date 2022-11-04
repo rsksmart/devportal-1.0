@@ -57,7 +57,6 @@ $(document).ready(function () {
   addCopyButtonsToCodeSnippets();
   addUrlHoverIcons();
   setUpMainSearch();
-  renderPowpegVerifyKeysFrame();
   const renderFeatures = $('.render-features').data('features').split(/\s+/);
   renderFeatures.forEach((feature) => {
     switch (feature) {
@@ -87,6 +86,9 @@ $(document).ready(function () {
         return;
       case 'switch-container':
         renderSwitchContainerSetup();
+        return;
+      case 'powpeg-verify-keys-frame':
+        renderPowpegVerifyKeysFrame();
         return;
       default:
         console.error('Unsupported render feature:', feature);
