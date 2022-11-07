@@ -87,8 +87,8 @@ $(document).ready(function () {
       case 'switch-container':
         renderSwitchContainerSetup();
         return;
-      case 'powpeg-verify-keys-frame':
-        renderPowpegVerifyKeysFrame();
+      case 'powpeg-verification-frame':
+        renderPowpegVerificationFrame();
         return;
       default:
         console.error('Unsupported render feature:', feature);
@@ -1111,15 +1111,16 @@ function renderSwitchContainer(elem, index) {
   // elem.remove()
 }
 
-// render features: powpeg-verify-keys-frame
-function renderPowpegVerifyKeysFrame() {
-  const frame = document.getElementById('powpeg-verify-keys-frame');
+// render features: powpeg-verification-frame
+
+function renderPowpegVerificationFrame() {
+  const frame = document.getElementById('powpeg-verification-frame');
 
   const showSovryn = () => {
-    frame.src = '/assets/rsk/architecture/powpeg-verify-keys/sovryn.html';
+    frame.src = '/assets/rsk/architecture/powpeg-verification/sovryn.html';
   };
   const showpNetwork = () => {
-    frame.src = '/assets/rsk/architecture/powpeg-verify-keys/pnetwork.html';
+    frame.src = '/assets/rsk/architecture/powpeg-verification/pnetwork.html';
   };
 
   // showing Sovryn frame at first

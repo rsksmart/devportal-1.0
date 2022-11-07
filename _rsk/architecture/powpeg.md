@@ -4,7 +4,7 @@ title: Powpeg
 collection_order: 4300
 tags: rsk, rbtc, btc, peg, powpeg, 2 way peg
 description: "Transfer BTC to RBTC, and RBTC to BTC through the Powpeg."
-render_features: 'powpeg-verify-keys-frame'
+render_features: 'powpeg-verification-frame'
 ---
 
 ## Building the Most Secure, Permissionless and Uncensorable Bitcoin Peg
@@ -100,10 +100,12 @@ The RSK peg has matured from a federation to a Powpeg. As the peg grows over tim
 
 Developers can find a unique opportunity to build their dApps on our secure and efficient money vault. Compared to alternatives, the Powpeg combines strong security based on layered protections, with maximum decentralization within the constraints established by the Bitcoin scripting system.
 
-## Powpeg Verify Keys
+## Powpeg Verification
 
-<div title="Powpeg Verify Keys">
+To verify the Powpeg nodes, follow the attestation process using the steps below:
+
+<div title="Powpeg Verification">
    <button id="sov-button">Sovryn</button>
    <button id="pnet-button">pNetwork</button>
-   <iframe title="powpeg-verify-keys" id='powpeg-verify-keys-frame' width="100%" height="400" frameborder="10"></iframe>
+   <iframe title="powpeg-verification" id='powpeg-verification-frame' width="100%" height="400" frameborder="10"></iframe>
 </div>
