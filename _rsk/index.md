@@ -21,3 +21,4 @@ To interact with the network, you need access to a node. The following are the a
 - [Use public nodes](/rsk/public-nodes)
 - [Install node](/rsk/node/install)
 - [Compile the node code](/rsk/node/contribute/)
+- [Powpeg Attestation](/rsk/architecture/powpeg#powpeg-verification)
