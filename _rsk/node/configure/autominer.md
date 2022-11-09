@@ -3,6 +3,7 @@ layout: rsk
 title: Run with autominer (Ganache-like)
 tags: rsk, rskj, node, config
 description: "Learn how to run the RSK node with autominer - similar to Ganache default config"
+collection_order: 2450
 ---
 
 [Ganache](https://trufflesuite.com/docs/ganache/quickstart/) local network runs like what RSK calls `autominer mode`, it:
