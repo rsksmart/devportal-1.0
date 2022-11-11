@@ -9,7 +9,7 @@ permalink: /guides/rif-relay/deployment/
 
 [](#top "collapsible")
 - 1) Contracts Deployment
-  * We will begin by deploying the on-chain components. All the necessary tools to do the deployments were included in [RIF Relay Contract](https://github.com/rsksmart/rif-relay-contracts). 
+  * We will begin by deploying the on-chain components. All the necessary tools to do the deployments are included in the [RIF Relay Contract](https://github.com/rsksmart/rif-relay-contracts). 
 
   [](#top "collapsible")
     - Regtest
@@ -21,7 +21,7 @@ permalink: /guides/rif-relay/deployment/
 
         > Note: The deploy script is using the Regtest configuration that was previously configured in the truffle.js file.
 
-        After the deployment we will see the summary of the deployed contracts. Most of this contracts are the on-chain components that will be used by RIF Relay and some are for testing purposes.
+        After the deployment, we will see the summary of the deployed contracts. Most of this contracts are the on-chain components that will be used by RIF Relay and some are for testing purposes.
 
         ```
         |===================================|============================================|
@@ -45,15 +45,15 @@ permalink: /guides/rif-relay/deployment/
         |===================================|============================================|
         ```
 
-        As we can see we have two sets of Smart Wallets with their own verifiers. This is because each verifier use the factory to do deploy and relay validations. For testing purposes we will be using the Smart Wallet Contracts.
+        As we can see we have two sets of Smart Wallets with their own verifiers. This is because each verifier uses the factory to do deploy and relay validations. For testing purposes, we will be using the Smart Wallet Contracts.
 
     - Testnet
-      * To start the process on `Testnet` we need an account with funds. The funds retreival con be done from the [tRBTC Faucet](https://faucet.rsk.co/).
+      * To start the process on `Testnet` we need an account with funds. The funds retreival can be done from the [tRBTC Faucet](https://faucet.rsk.co/).
 
         ```
         npm run deploy testnet
         ```
-        > Take in consideration that the testnet network needs to be configured in the truffle.js file.
+        > Take into consideration that testnet needs to be configured in the truffle.js file.
 
         RIF Relay already have contracts deployed on `Testnet` and can be found in the [contracts](/rif/relay/contracts) section.
     
@@ -61,12 +61,12 @@ permalink: /guides/rif-relay/deployment/
       * TBD
 
 - 2) Revenue Sharing
-  * The Revenue Sharing is an optional feature that can be implemented using a collector contract. In principle, any number of Collector contracts can be deployed and used. This does not automatically occur alongside the deployment of the rest of the Relay contracts. For an overview of the Collector contract please see [the corresponding architecture document section](/rif/relay/architecture/#collector).
+  * The Revenue Sharing is an optional feature that can be implemented using a collector contract. In principle, any number of `Collector` contracts can be deployed and used. This does not automatically occur alongside the deployment of the rest of the Relay contracts. For an overview of the `Collector` contract, please see [the corresponding architecture section](/rif/relay/architecture/#collector).
 
       Before deploying a Collector contract please make sure that:
       1. The token chosen for this contract matches the one used for relayed transaction fees. **Any tokens other than the one set at the time of the Collector deployment which are sent to the contract will be impossible to retrieve, including the native token**. 
-      2. The owner of the Collector contract has been chosen (be it a multisig contract address, a regular contract address or an EOA). This does not need to match the address deploying the contract, but please note that the owner should be able to call the withdraw function from the collector contract otherwise **all revenue sharing funds will be permanently locked in the contract**. 
-      3. Partners and their shares have been defined correctly. This means that beneficiary shares must collectively add up to 100. As with the previous point, any tokens sent to an address without its private key held by its beneficiary will be lost. For an example of a structurally valid revenue shares definition see [this deploy collector task input sample](https://github.com/rsksmart/rif-relay-contracts/blob/PP-94/revenue-sharing-model/deploy-collector.input.sample.json).
+      2. The owner of the Collector contract has been chosen (be it a multisig contract address, a regular contract address or an EOA). This does not need to match the address deploying the contract, please note that the owner should be able to call the withdraw function from the collector contract otherwise **all revenue sharing funds will be permanently locked in the contract**. 
+      3. Partners and their shares have been defined correctly. This means that beneficiary shares must collectively add up to 100. As with the previous point, any tokens sent to an address without its private key held by its beneficiary will be lost. For an example of a structurally valid revenue shares definition see [this deploy collector task input sample](https://github.com/rsksmart/rif-relay-contracts/blob/master/deploy-collector.input.sample.json).
 
   [](#top "collapsible")
     - Regtest
@@ -76,9 +76,9 @@ permalink: /guides/rif-relay/deployment/
         ```
         yarn truffle deploy --network regtest
         ```
-        > Take in consideration that the Regtest network needs to be added in the truffle.js file.
+        > Take into consideration that the Regtest network needs to be added in the truffle.js file.
 
-        After the deployment from the safe contracts, we need to switch back to the RIF Relay Contracts repository. In this repository there are some scripts that we will need to execute. Prior executing the scripts we need to update the tasks/utils.js with the contract addresses from the safe contracts deployment:
+        After the deployment from the safe contracts, we need to switch back to the RIF Relay Contracts repository. In this repository there are some scripts that we will need to execute. Prior to executing the scripts, we need to update the `tasks/utils.js` with the contract addresses from the safe contracts deployment:
 
           | Name                    | Mapped                 |
           | ----------------------- | ---------------------- |
@@ -134,7 +134,7 @@ permalink: /guides/rif-relay/deployment/
       * TBD
 
 - 3) Allow Tokens
-  * RIF Relay only accepts whitelisted tokens. There are multiple reasons to just allow whitelisted tokens but the main one is to ensure that RIF Relay it's accepting tokens that represent value for the sponsor.
+  * RIF Relay only accepts whitelisted tokens. There are multiple reasons to just allow whitelisted tokens but the main one is to ensure that RIF Relay is accepting tokens that represent value for the sponsor.
 
   * To whitelist a token we need to execute the `acceptToken(address token)` on the Relay Verifiers contracts:
       * `SmartWalletDeployVerifier`
@@ -143,7 +143,7 @@ permalink: /guides/rif-relay/deployment/
 
   [](#top "collapsible")
     - Regtest
-      * In the RIF Relay Contracts we will need to execute the command:
+      * In the RIF Relay Contracts, we will need to execute the command:
         ```
         npm run allowTokens 0x726ECC75d5D51356AA4d0a5B648790cC345985ED regtest
         ```
@@ -154,7 +154,7 @@ permalink: /guides/rif-relay/deployment/
         ```
         npm run allowTokens 0x77740cE4d7897430E74D5E06540A9Eac2C2Dee70 testnet
         ```
-        > The allowTokens script will use the testnet network configured in the truffle.js, this network will required to use the account that did deployment of the contracts. 
+        > The allowTokens script will use the test network configured in the truffle.js, this network will be required to use the account that did the deployment of the contracts.
 
     - Mainnet
       * TBD
@@ -163,7 +163,7 @@ permalink: /guides/rif-relay/deployment/
 - 4) Run RIF Relay Server
   * Once we have all the on-chain components, we will continue with the off-chain components. This process is done with the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server).
 
-    Prior starting the Relay Server, we need to update the configuration file, we save the configuration file as **server-config.json**. Some usefuls diagrams about the way that the Relay Server works can be found [here](/rif/relay/architecture/#relay-server).
+    Before starting the Relay Server, we need to update the configuration file, we save the configuration file as **server-config.json**. Some useful diagrams about the way that the Relay Server works can be found [here](/rif/relay/architecture/#relay-server).
 
   [](#top "collapsible")
     - Regtest
@@ -203,14 +203,14 @@ permalink: /guides/rif-relay/deployment/
         ```
         npm run register
         ```
-        > The command needs to be execute in a different terminal since it needs the server to be running to perform the registration.
+        > The command needs to be executed in a different terminal since it needs the server to be running to perform the registration.
 
         > The register command can receive multiple parameters to simplify the interaction, more information can be found in the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server#server-registration) documentation.
 
         The register process performs the following actions:
         - Stake the Relay Manager
-        - Add the Relay Worker
-        - Register the Relay Server
+        - Adds the Relay Worker
+        - Registers the Relay Server
 
 
         Now the server is ready to start processing transactions and a ready message will be on the console.
@@ -252,7 +252,7 @@ permalink: /guides/rif-relay/deployment/
         ```
         curl http://<SERVER_URL>/getaddr
         ```
-        > The command needs to be execute in a different terminal since it needs the server to be running to perform the request.
+        > The command needs to be executed in a different terminal since it needs the server to be running to perform the request.
 
         ```json
         {
@@ -269,7 +269,7 @@ permalink: /guides/rif-relay/deployment/
 
         Send at least 0.001 tRBTC to the Worker and Manager.
 
-        Now execute the command the register command.
+        Now execute the register command.
 
         ```
         npm run register -mnemonic <secret_mnemonic> --account <ADDRESS>  --funds <FUNDS> --stake <STAKE> --config_file <PATH>
@@ -277,8 +277,8 @@ permalink: /guides/rif-relay/deployment/
         > The register command can receive multiple parameters to simplify the interaction, more information can be found in the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server#server-registration) documentation.
 
         The register process performs the following actions:
-        - Add the Relay Worker
-        - Register the Relay Server
+        - Adds the Relay Worker
+        - Registers the Relay Server
 
         Now the server is ready to start processing transactions and a ready message will be on the console.
     - Mainnet

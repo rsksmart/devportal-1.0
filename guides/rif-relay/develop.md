@@ -33,6 +33,6 @@ To contribute to the project, create a branch with the name of the new feature y
 
 Common errors:
 
-#### Unknown network "NA". See your Truffle configuration file for available networks.
+**Unknown network "NA". See your Truffle configuration file for available networks.**
 
 Verify that the network that you are trying to connect is included in the truffle.js file in the RIF Relay Contracts module.
