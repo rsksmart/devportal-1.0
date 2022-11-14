@@ -154,7 +154,7 @@ permalink: /guides/rif-relay/deployment/
         ```
         npm run allowTokens 0x77740cE4d7897430E74D5E06540A9Eac2C2Dee70 testnet
         ```
-        > The allowTokens script will use the test network configured in the truffle.js, this network will be required to use the account that did the deployment of the contracts.
+        > The allowTokens script will use the testnet network configured in the truffle.js, this network will be required to use the account that did the deployment of the contracts.
 
     - Mainnet
       * TBD
@@ -208,7 +208,7 @@ permalink: /guides/rif-relay/deployment/
         > The register command can receive multiple parameters to simplify the interaction, more information can be found in the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server#server-registration) documentation.
 
         The register process performs the following actions:
-        - Stake the Relay Manager
+        - Stakes the Relay Manager
         - Adds the Relay Worker
         - Registers the Relay Server
 
@@ -277,6 +277,7 @@ permalink: /guides/rif-relay/deployment/
         > The register command can receive multiple parameters to simplify the interaction, more information can be found in the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server#server-registration) documentation.
 
         The register process performs the following actions:
+        - Stakes the Relay Manager
         - Adds the Relay Worker
         - Registers the Relay Server
 
