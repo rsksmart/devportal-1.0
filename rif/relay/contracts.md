@@ -12,7 +12,11 @@ TBD
 
 ## Testnet
 
-### V2
+### Version 1
+
+TBD
+
+### Version 0.2
 
 ### Primary contracts
 
@@ -41,7 +45,7 @@ TBD
 | SampleRecipient   | 0x4De3eB249409e8E40a99e3264a379BCfa10634F5 |
 | TestToken         | 0x77740cE4d7897430E74D5E06540A9Eac2C2Dee70 |
 
-### V1
+### Version 0.1
 
 | Contract       | Address                                    |
 |----------------|--------------------------------------------|
