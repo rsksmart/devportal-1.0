@@ -2650,6 +2650,12 @@ table.table.newsletter input[type='checkbox'] {
 .accordion__rsk .card-header .btn[aria-expanded=true]::after {
   content: 'Show less';
 }
+
+.accordion__rsk .highlight {
+  word-wrap: normal;
+  overflow-x: auto;
+  white-space: pre;
+}
 /* RIF Accordion customization: END */
 
 

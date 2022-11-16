@@ -790,8 +790,8 @@
             <a href="../../../guides/rif-relay/">RIF Relay</a>
             <ul>
               <li><a href="../../../guides/rif-relay/">User Guide</a></li>
-              <li><a href="../../../guides/rif-relay/install/">Install</a></li>
-              <li><a href="../../../guides/rif-relay/launch/">Launch</a></li>
+              <li><a href="../../../guides/rif-relay/installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../../../guides/rif-relay/deployment/">Deployment</a></li>
               <li><a href="../../../guides/rif-relay/develop/">Develop</a></li>
               <li><a href="../../../guides/rif-relay/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-relay/smart-wallets/">Smart Wallets</a></li>
@@ -1149,7 +1149,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-10-01 00:58:50 +0000T00:00:00.000Z">2021-10-01</time> | -->
+    <!--time role="presentation" datetime="2022-11-10 15:43:19 +0000T00:00:00.000Z">2022-11-10</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/relay/overview.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -1828,8 +1828,8 @@
             <a href="../../../guides/rif-relay/">RIF Relay</a>
             <ul>
               <li><a href="../../../guides/rif-relay/">User Guide</a></li>
-              <li><a href="../../../guides/rif-relay/install/">Install</a></li>
-              <li><a href="../../../guides/rif-relay/launch/">Launch</a></li>
+              <li><a href="../../../guides/rif-relay/installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../../../guides/rif-relay/deployment/">Deployment</a></li>
               <li><a href="../../../guides/rif-relay/develop/">Develop</a></li>
               <li><a href="../../../guides/rif-relay/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-relay/smart-wallets/">Smart Wallets</a></li>
@@ -2148,9 +2148,11 @@
 
                   <h1 class="page-title" id="top">RIF Relay Overview</h1>
 
-                  <p>Most blockchains have native tokens to pay for transaction fees. This simple design has many benefits. First, to bootstrap an economy, the native token model creates an initial demand for a new token. Second, it simplifies the interaction between users and miners because it forces them to use the same means of payment. Third, it reduces the complexity of the consensus rules. Finally, it provides Denial of Service (DoS) protection to the network as full nodes can pay what the miners expect to include a received transaction. This way nodes can decide to propagate a transaction or not, preventing the free consumption of network bandwidth, and stop spam transactions.</p>
+                  <p>Most blockchains have native cryptocurrency to pay for transaction fees and gas consumption; this simple design has many benefits. First, to bootstrap an economy, the native cryptocurrency model creates an initial demand for it. Second, it simplifies the interaction between users and miners because it forces them to use the same means of payment. Third, it reduces the complexity of the consensus rules. Finally, it provides Denial of Service (DoS) protection to the network as full nodes can pay what the miners expect to include a received transaction. This way nodes can decide to propagate a transaction or not, preventing the free consumption of network bandwidth, and stop spam transactions.</p>
 
-<p>But with the advent of Decentralized Finance (DeFi), several stable coins have become a preferred means of payment and savings for both users and miners, therefore, separate systems to facilitate alternative payment mechanisms. Transactions that enable paying transactions with any coin other than the native currency are named meta-transactions because in some systems the user transaction is embedded in a higher-level (or meta) transaction created by a third party. A more accessible term for these transactions is “envelopes” or, for the whole system, an relay system. A meta-transaction/relay system can serve at least two different use cases: 1) pay the transaction fees with tokens, where one new party receives the tokens (from the user) and pays the gas on behalf of the user, and 2) enable smart contract developers to subsidize the gas used to interact with their contracts.</p>
+<p>Cryptocurrencies tend to be associated with volatility and to counter measure this fact, Stablecoins were introduced. Stablecoins bridge the worlds of cryptocurrency and everyday fiat currency because their prices are pegged to a reserve asset like the U.S. dollar or gold.</p>
+
+<p>But with the advent of Decentralized Finance (DeFi), several stable coins have become a preferred means of payment and savings for both users and miners, therefore, separate systems to facilitate alternative payment mechanisms. Transactions that enable paying transactions with any coin other than the native currency are named meta-transactions because in some systems the user transaction is embedded in a higher-level (or meta) transaction created by a third party. A more accessible term for these transactions is “envelopes” or, for the whole system, a relay system. A meta-transaction/relay system can serve at least two different use cases: 1) pay the transaction fees with tokens, where one new party receives the tokens (from the user) and pays the fees on behalf of the user, and 2) enable smart contract developers to subsidize the gas used to interact with their contracts.</p>
 
 <p>With this in mind, the main goal of the RIF Relay Project is to <strong>provide the RSK ecosystem with the means to allow blockchain applications and end-users (wallet-apps) to transact without needing RBTC</strong>. The system should allow RSK users to pay transaction fees with methods of payment (i.e., tokens) other than RBTC while maintaining their accounts as transaction senders.</p>
 

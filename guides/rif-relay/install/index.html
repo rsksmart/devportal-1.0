@@ -790,8 +790,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="./">Install</a></li>
-              <li><a href="../launch/">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="../develop/">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../smart-wallets/">Smart Wallets</a></li>
@@ -1149,9 +1149,9 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-02-04 06:59:50 +0000T00:00:00.000Z">2022-02-04</time> | -->
-     4' to read |
-    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/install.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
+    <!--time role="presentation" datetime="2022-11-11 18:19:39 +0000T00:00:00.000Z">2022-11-11</time> | -->
+     0' to read |
+    <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/relay/install.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
        <ul class="dropdown-menu" aria-labelledby="share-menu" style="padding: 5px">
@@ -1828,8 +1828,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="./">Install</a></li>
-              <li><a href="../launch/">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="../develop/">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../smart-wallets/">Smart Wallets</a></li>
@@ -2148,112 +2148,7 @@
 
                   <h1 class="page-title" id="top">RIF Relay Installation</h1>
 
-                  <h2 id="requirements">Requirements</h2>
-
-<h3 id="rsk-node">RSK Node</h3>
-
-<p>You need to have a running RSK node version <a href="https://github.com/rsksmart/rskj/releases" rel="external noopener noreferrer" target="_blank">IRIS-3.2.0</a> or higher.</p>
-
-<h3 id="yarn">Yarn</h3>
-
-<p>We use <code class="highlighter-rouge">yarn</code> version <code class="highlighter-rouge">v1.22.0</code> for package management.</p>
-
-<p>Installation instructions at Yarn’s <a href="https://yarnpkg.com/getting-started/install" rel="external noopener noreferrer" target="_blank">site</a>. Check the install by running <code class="highlighter-rouge">yarn version</code>.</p>
-
-<h3 id="node--npm">Node &amp; NPM</h3>
-
-<p>We use <code class="highlighter-rouge">Node</code> version <code class="highlighter-rouge">v12.18.3</code>.</p>
-
-<p>We recommend the use of <a href="https://github.com/nvm-sh/nvm" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">nvm</code></a> and the <code class="highlighter-rouge">.nvmrc</code> file included at the root of this project, so you can install the correct node version through:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nvm use
-nvm install
-</code></pre></div></div>
-
-<p>If you choose to use node without <code class="highlighter-rouge">nvm</code>, you can find installation instructions at Node’s <a href="https://nodejs.org/en/" rel="external noopener noreferrer" target="_blank">site</a>.</p>
-
-<p>You can check the installation by running <code class="highlighter-rouge">node -v</code>.</p>
-
-<h3 id="npx--truffle">Npx &amp; Truffle</h3>
-
-<p>An important tool we use for interacting with the blockchain is <code class="highlighter-rouge">Truffle</code> version <code class="highlighter-rouge">v5.0.33</code>.</p>
-
-<p>You can follow the installation guide in the official <a href="https://www.trufflesuite.com/truffle" rel="external noopener noreferrer" target="_blank">site</a>.</p>
-
-<p>We run all truffle commands with the prefix <code class="highlighter-rouge">npx</code>. This is to execute node packages using the project’s version.</p>
-
-<p>Checking the install by running <code class="highlighter-rouge">npx truffle version</code>.</p>
-
-<p>The configuration file is <code class="highlighter-rouge">truffle.js</code>. Please see Truffle’s documentation for details about this file and how to use it.</p>
-
-<h3 id="docker">Docker</h3>
-
-<p>We recommend following the official <a href="https://docs.docker.com/get-docker/" rel="external noopener noreferrer" target="_blank">documentation</a> for installing Docker and keeping it updated.</p>
-
-<p>You’ll need to install both <code class="highlighter-rouge">docker</code> as well as <code class="highlighter-rouge">docker-compose</code>.</p>
-
-<h4 id="running-on-macos">Running on macOS</h4>
-<p>To run the project using Docker on a Mac, please follow these steps or the scripts and web apps will not work.</p>
-
-<ul>
-  <li>Patch <code class="highlighter-rouge">readlink</code>
-The startup scripts assume that GNU’s <code class="highlighter-rouge">readlink</code> command is available. But MacOS ships with BSD’s <code class="highlighter-rouge">readlink</code>, which is incompatible with GNU’s version. So we must patch <code class="highlighter-rouge">readlink</code>. This can be done using <a href="https://brew.sh/" rel="external noopener noreferrer" target="_blank">Homebrew</a> as follows:</li>
-</ul>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew install coreutils
-ln -s /usr/local/bin/greadlink /usr/local/bin/readlink
-</code></pre></div></div>
-
-<p>After this step, you must make sure that your <code class="highlighter-rouge">PATH</code> variable gives priority to <code class="highlighter-rouge">/usr/local/bin</code> over <code class="highlighter-rouge">/usr/bin</code>. You can check this with <code class="highlighter-rouge">which readlink</code>, which should output <code class="highlighter-rouge">/usr/local/bin/readlink</code>. Alternatively try executing <code class="highlighter-rouge">readlink -f .</code>, if it works you’re ok.</p>
-
-<h2 id="building-the-project">Building the project</h2>
-
-<p>Clone the project. Then run the following from the project’s 
-root directory to build it.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn install
-yarn prepare
-</code></pre></div></div>
-
-<h2 id="deploy-contracts-locally">Deploy contracts Locally</h2>
-
-<p>We’ll use <code class="highlighter-rouge">truffle</code> for deploying contracts. Have an RSK node up and running in regtest mode and then execute the following on the project’s root folder:</p>
-
-<p><code class="highlighter-rouge">npx truffle migrate --network rsk</code></p>
-
-<p>After running this command you will see a summary of contracts on the 
-terminal, something similar to this:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>|===================================|============================================|
-| Contract                          | Address                                    |
-|===================================|============================================|
-| Penalizer                         | 0xe8C7C6f18c3B9532343487faD807060750C1fE95 |
-| RelayHub                          | 0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701 |
-| SampleRecipient                   | 0x5D0aBdE7Ed6B7e122eD55EAe514E617d6c08f407 |
-| SmartWallet                       | 0xB7a001eE69E7C1eef25Eb8e628e46214Ea74BF0F |
-| SmartWalletFactory                | 0x8C1108cFCd7ddad09D8910e5f42982A6c54aD9cD |
-| SmartWalletDeployVerifier         | 0x1938517B0762103d52590Ca21d459968c25c9E67 |
-| SmartWalletRelayVerifier          | 0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2 |
-| CustomSmartWallet                 | 0x96A90Ee24C20c78Ba20AcE1a2aa4D59F79353C54 |
-| CustomSmartWalletFactory          | 0x89bac3BB0517F7Dc0E5E94265217A9Acc5cc489f |
-| CustomSmartWalletDeployVerifier   | 0x3eE31F6049065B616f85470985c0eF067f2bEbDE |
-| CustomSmartWalletRelayVerifier    | 0xDE8Ae20488BE104f0782C0126038b6682ECc1eC7 |
-|===================================|============================================|
-</code></pre></div></div>
-
-<p>You’ll need to save this summary for later use.</p>
-
-<h2 id="deploy-contracts-on-testnet">Deploy contracts On Testnet</h2>
-
-<p>We’ll use <code class="highlighter-rouge">truffle</code> for deploying contracts.</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx truffle migrate --network rsktestnet
-</code></pre></div></div>
-<blockquote>
-  <p>Disclaimer: to use testnet, you should have an unlocked account with funds or configure it in <code class="highlighter-rouge">truffle.js</code>.</p>
-</blockquote>
-
-<p>These contracts have been deployed on Testnet. See <a href="../../../rif/relay/contracts/">here</a> for their addresses.</p>
+                  
 
                   
 

@@ -790,8 +790,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="../install/">Install</a></li>
-              <li><a href="../launch/">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="./">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../smart-wallets/">Smart Wallets</a></li>
@@ -1149,8 +1149,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-10-01 00:58:50 +0000T00:00:00.000Z">2021-10-01</time> | -->
-     3' to read |
+    <!--time role="presentation" datetime="2022-11-11 18:19:39 +0000T00:00:00.000Z">2022-11-11</time> | -->
+     1' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/develop.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1828,8 +1828,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="../install/">Install</a></li>
-              <li><a href="../launch/">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="./">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../smart-wallets/">Smart Wallets</a></li>
@@ -2154,44 +2154,18 @@
 
 <h2 id="project-structure">Project structure</h2>
 
-<p>The project has on-chain and off-chain components.</p>
+<p>The project is divided into multiple modules that interact with each other.
+Each project has its own documentation in its repository.
+We have also developed an SDK to simplify the integration process.</p>
 
-<ul>
-  <li>The <code class="highlighter-rouge">contracts</code> directory in the root directory, contains all the smart contracts involved in RIF Relay.
-    <ul>
-      <li>These can be compiled with <code class="highlighter-rouge">yarn prepare</code>. The changes will be reflected in the <code class="highlighter-rouge">build/contracts</code>.</li>
-      <li>If a new contract is created, it is important to add it to <code class="highlighter-rouge">migrations/2_deploy_contracts.js</code> for deploying it.</li>
-      <li>The solidity version used currently is <code class="highlighter-rouge">^0.6.12</code>.</li>
-    </ul>
-  </li>
-  <li>The <code class="highlighter-rouge">src</code> directory contains the off-chain components such as <code class="highlighter-rouge">cli</code>, <code class="highlighter-rouge">relayclient</code> and <code class="highlighter-rouge">relayserver</code>. Everything here is coded in <code class="highlighter-rouge">typescript</code>.
-    <ul>
-      <li>To compile these typescript files, use <code class="highlighter-rouge">yarn tsc</code>. The changes will appear in the <code class="highlighter-rouge">dist</code> directory.</li>
-    </ul>
-  </li>
-  <li>The <code class="highlighter-rouge">jsrelay</code> directory contains files for running a RIF Relay Server. See here for more details.</li>
-  <li>
-<code class="highlighter-rouge">test</code> contains the test suite. See section below to learn how to test RIF Relay.</li>
-</ul>
-
-<h2 id="testing">Testing</h2>
-
-<p>When adding new tests, we should compile them first (with <code class="highlighter-rouge">yarn tsc</code>) before running them.</p>
-
-<ul>
-  <li>To run all the tests:</li>
-</ul>
-
-<p><code class="highlighter-rouge">./run-tests.sh</code></p>
-
-<p>Note: The script will start an RSK node in regtest mode and then run all the tests. So it takes some time to run the tests. You need to have <code class="highlighter-rouge">curl</code> in order to run it.</p>
-
-<ul>
-  <li>To run a specific test:</li>
-</ul>
-
-<p>Once the project is built, we can test it with truffle
-<code class="highlighter-rouge">yarn generate &amp;&amp; npx truffle test --network rsk test/Flows.test.ts</code> (with <a href="https://www.trufflesuite.com/" rel="external noopener noreferrer" target="_blank">truffle</a>)</p>
+<ol>
+  <li><a href="https://github.com/rsksmart/rif-relay-contracts" rel="external noopener noreferrer" target="_blank">RIF Relay Contracts</a></li>
+  <li><a href="https://github.com/rsksmart/rif-relay-common" rel="external noopener noreferrer" target="_blank">RIF Relay Common</a></li>
+  <li><a href="https://github.com/rsksmart/rif-relay-client" rel="external noopener noreferrer" target="_blank">RIF Relay Client</a></li>
+  <li><a href="https://github.com/rsksmart/rif-relay-server" rel="external noopener noreferrer" target="_blank">RIF Relay Server</a></li>
+  <li><a href="https://github.com/rsksmart/rif-relay-sdk" rel="external noopener noreferrer" target="_blank">RIF Relay SDK</a></li>
+  <li><a href="https://github.com/rsksmart/rif-relay-sample-dapp" rel="external noopener noreferrer" target="_blank">RIF Relay Sample dApp</a></li>
+</ol>
 
 <h2 id="committing-changes">Committing changes</h2>
 
@@ -2199,21 +2173,11 @@
 
 <h2 id="troubleshooting">Troubleshooting</h2>
 
-<p><a id="c07"></a></p>
+<p>Common errors:</p>
 
-<p>Common errors when testing</p>
+<p><strong>Unknown network “NA”. See your Truffle configuration file for available networks.</strong></p>
 
-<h4 id="running-a-test-throws-the-error-cannot-find-module-directory-to-the-projectrelayrsknodetestflowstestts">Running a test throws the Error: Cannot find module ‘directory-to-the-project/relay/rsknode/test/Flows.test.ts’</h4>
-
-<p>Ensure that you are in the project’s root directory and that the test’s name has no typos</p>
-
-<h4 id="running-flowstestts-test-throws-the-error-httplocalhost8090--error-local-view-call-to-relaycall-reverted-view-call-to-relaycall">Running Flows.test.ts test throws the error: http://localhost:8090 =&gt; Error: local view call to ‘relayCall()’ reverted: view call to ‘relayCall’..</h4>
-
-<p>Stop the running node and delete the db used by the node.</p>
-
-<h4 id="running-some-test-and-one-of-them-throws-error-listen-eaddrinuse-address-already-in-use-8090">Running some test and one of them throws: Error: listen EADDRINUSE: address already in use :::8090</h4>
-
-<p>The relay server running in the background. Run the bash file <code class="highlighter-rouge">scripts/kill-relay-server.sh</code></p>
+<p>Verify that the network that you are trying to connect is included in the truffle.js file in the RIF Relay Contracts module.</p>
 
                   
 

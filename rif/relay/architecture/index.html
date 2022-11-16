@@ -790,8 +790,8 @@
             <a href="../../../guides/rif-relay/">RIF Relay</a>
             <ul>
               <li><a href="../../../guides/rif-relay/">User Guide</a></li>
-              <li><a href="../../../guides/rif-relay/install/">Install</a></li>
-              <li><a href="../../../guides/rif-relay/launch/">Launch</a></li>
+              <li><a href="../../../guides/rif-relay/installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../../../guides/rif-relay/deployment/">Deployment</a></li>
               <li><a href="../../../guides/rif-relay/develop/">Develop</a></li>
               <li><a href="../../../guides/rif-relay/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-relay/smart-wallets/">Smart Wallets</a></li>
@@ -1149,8 +1149,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-10-01 11:34:55 +0000T00:00:00.000Z">2021-10-01</time> | -->
-     14' to read |
+    <!--time role="presentation" datetime="2022-11-16 02:14:47 +0000T00:00:00.000Z">2022-11-16</time> | -->
+     18' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/relay/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1828,8 +1828,8 @@
             <a href="../../../guides/rif-relay/">RIF Relay</a>
             <ul>
               <li><a href="../../../guides/rif-relay/">User Guide</a></li>
-              <li><a href="../../../guides/rif-relay/install/">Install</a></li>
-              <li><a href="../../../guides/rif-relay/launch/">Launch</a></li>
+              <li><a href="../../../guides/rif-relay/installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../../../guides/rif-relay/deployment/">Deployment</a></li>
               <li><a href="../../../guides/rif-relay/develop/">Develop</a></li>
               <li><a href="../../../guides/rif-relay/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-relay/smart-wallets/">Smart Wallets</a></li>
@@ -2157,12 +2157,14 @@
       <li><a href="#relay-hub"><strong>Relay Hub</strong></a></li>
       <li><a href="#smart-wallet"><strong>Smart Wallet</strong></a></li>
       <li><a href="#relay-manager"><strong>Relay Manager</strong></a></li>
-      <li><a href="#relay-worker"><strong>Relay Worker</strong></a></li>
       <li><a href="#stake-manager"><strong>Stake Manager</strong></a></li>
+      <li><a href="#relay-worker"><strong>Relay Worker</strong></a></li>
       <li><a href="#relay--deploy-verifier"><strong>Relay &amp; Deploy Verifier</strong></a></li>
+      <li><a href="#collector"><strong>Collector</strong></a></li>
       <li>
 <a href="#proxies"><strong>Proxies</strong></a>
         <ul>
+          <li><a href="#template"><strong>Template</strong></a></li>
           <li><a href="#proxy-factory"><strong>Proxy Factory</strong></a></li>
           <li><a href="#proxy"><strong>Proxy</strong></a></li>
         </ul>
@@ -2173,7 +2175,14 @@
   <li>
 <a href="#off-chain-components"><strong>Off-Chain components</strong></a>
     <ul>
-      <li><a href="#relay-server"><strong>Relay Server</strong></a></li>
+      <li>
+<a href="#relay-server"><strong>Relay Server</strong></a>
+        <ul>
+          <li><a href="#start-flow"><strong>Start Flow</strong></a></li>
+          <li><a href="#register-flow"><strong>Register Flow</strong></a></li>
+          <li><a href="#interval-handler"><strong>Interval Handler</strong></a></li>
+        </ul>
+      </li>
       <li><a href="#relay--deploy-requests"><strong>Relay &amp; Deploy Requests</strong></a></li>
       <li>
 <a href="#tools"><strong>Tools</strong></a>
@@ -2188,8 +2197,8 @@
   <li>
 <a href="#execution-flow"><strong>Execution flow</strong></a>
     <ul>
-      <li><a href="#relaying-smart-wallet-already-created"><strong>Relaying (Smart Wallet already created)</strong></a></li>
-      <li><a href="#gasless-smart-wallet-creation"><strong>Gasless Smart Wallet creation</strong></a></li>
+      <li><a href="#relaying-smart-wallet-already-deployed"><strong>Relaying (Smart Wallet already deployed)</strong></a></li>
+      <li><a href="#sponsored-smart-wallet-deployment"><strong>Sponsored Smart Wallet deployment</strong></a></li>
     </ul>
   </li>
   <li>
@@ -2202,15 +2211,14 @@
 
 <h2 id="introduction">Introduction</h2>
 
-<p>The system is designed to achieve deployments and transaction sponsorship at a low cost. The cost of the relay service provided by “sponsors” is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.</p>
+<p>The RIF Relay system is designed to achieve transaction sponsorship at a low cost. The cost of the relay service provided by the “sponsors” is agreed upon among the parties off-chain. The low cost of transactions on RSK contributes to keeping overall service costs low as well.</p>
 
-<p>The RIF Relay system is made up for various components, some of which are essential and others which are auxiliary.</p>
+<p>The RIF Relay system is made up of various components, some of which are essential and others which are auxiliary.
+An overview of this is as follows:</p>
 
-<p>An overview of this is as follows:</p>
+<p><strong>On-chain</strong>, the system cannot work without its Smart Contracts, which encompass Smart Wallets plus the Relay Hub.</p>
 
-<p>On-chain, the system cannot work without its Smart Contracts, which encompass Smart Wallets plus the Relay Hub, the latter of which keeps tracks of staked relay managers.</p>
-
-<p>Off-chain, at least 1 Relay Server is needed to interact with the contracts. Without a Relay Server, envelopes cannot be created and sent to the contracts.</p>
+<p><strong>Off-chain</strong>, at least one Relay Server is needed to interact with the contracts. Without a Relay Server, envelopes cannot be created and sent to the contracts.</p>
 
 <p>Details for each of these components are expanded down below, as well as an introductory glossary.</p>
 
@@ -2220,7 +2228,7 @@
   <thead>
     <tr>
       <th>Term</th>
-      <th>Desctiption</th>
+      <th>Description</th>
     </tr>
   </thead>
   <tbody>
@@ -2234,7 +2242,7 @@
     </tr>
     <tr>
       <td>Requester</td>
-      <td>It’s an EOA (see below). The requester sends a sponsored transaction to the Sponsor. They do not pay the gas with native-currency but with a token accepted by the Sponsor, if they don’t subsidize it.</td>
+      <td>It’s an EOA (see below). The requester sends a sponsored transaction to the Sponsor. They do not pay the gas with native cryptocurrency but with an accepted token by the Sponsor, if they don’t subsidize it.</td>
     </tr>
     <tr>
       <td>Recipient</td>
@@ -2260,28 +2268,42 @@
       <td>EOA</td>
       <td>An External Owned Account (EOA) is an account managed with a key, which is capable of signing and sending transactions, and paying the cost for it.</td>
     </tr>
+    <tr>
+      <td>Fee</td>
+      <td>Token amount that is being charged for each relayed transaction.</td>
+    </tr>
+    <tr>
+      <td>Revenue Sharing Model</td>
+      <td>A way to relay transactions so that fees are shared among multiple partners.</td>
+    </tr>
+    <tr>
+      <td>Fees Receiver</td>
+      <td>Is the designated Worker/Collector that will receive the fees</td>
+    </tr>
   </tbody>
 </table>
 
 <h2 id="on-chain-components">On-Chain components</h2>
 
 <h3 id="relay-hub">Relay Hub</h3>
-<p>The Relay Hub is the main on-chain component of the RIF Relay architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It manages the balances of the accounts involved and forwards Relays Requests to the rest of the contracts, and receives the Relay Request and forwards it to the Smart Wallet.</p>
+<p>The Relay Hub is the main component of the RIF Relay architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It forwards all the transactions to their respective contracts while checking the validity of the worker that is processing the transaction.</p>
 
-<p>Also, the Relay Hub forms part of the relay worker’s registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the balances that will be used to pay the relay workers for their transaction submission. Without enough balance in the Relay Hub to pay for the relay of a transaction the relay call will be reverted.</p>
+<p>It also forms part of the relay worker’s registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the stake amount for each Relay Manager to guarantee good behavior from their workers. 
+The account staking for a specific Relay Manager for the first time becomes the owner of the stake, only this account can make subsequent stakes for this specific RelayManager.</p>
+
+<p>When a Relay Manager unauthorized a Relay Hub, it means it is unstaking from it, which also means not being able to relay through that hub any more. Any balance held in the Relay Hub is sent to the original sender of the stake (the owner).</p>
+
+<p>Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.</p>
 
 <h3 id="smart-wallet">Smart Wallet</h3>
-<p>It’s the “contract-based account” owned by the Requester’s EOA.</p>
+<p>It’s the “contract-based account” owned by the Requester’s EOA. Before executing any transaction using the smart wallet, the smart wallet contract needs to be deployed.</p>
 
-<p>Smart Wallet are contracts that verify forwarded data and subsequently invoke the recipient contract of the transaction. The smart wallet is deployed <em>counterfactually</em> at the moment it is needed. This happens, for instance, when a user with some token balances wants to move those tokens without spending gas, i.e. using the relay system.</p>
+<p>Smart Wallet are contracts that verify forwarded data and subsequently invoke the recipient contract of the transaction. Creating smart wallets does not have any gas cost providing the advantage that can be deployed only when necessary.</p>
 
-<p>It is the component that calls the Recipient contract (i.e, the <code class="highlighter-rouge">msg.sender</code> address the Recipient will see). During the execution,  the contract verifies the Relay Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.</p>
+<p>It is the component that calls the Recipient contract (i.e, the <code class="highlighter-rouge">msg.sender</code> address the Recipient will see). During the execution, the contract verifies the Relay Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.</p>
 
 <h3 id="relay-manager">Relay Manager</h3>
-<p>An on-chain account that has staked balance. It delegates the requests to Relay Workers, which are the actual initiators of the relay flow. Any penalization done against a Relay Worker impacts the Relay Manager’s stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: registering the Relay Server and adding relay workers, both in the Relay Hub.</p>
-
-<h3 id="relay-worker">Relay Worker</h3>
-<p>An EOA that belongs to only one Relay Manager. It’s the sender of the Relay Request.</p>
+<p>An EOA that has a staked balance. Any penalization done against a Relay Worker impacts the Relay Manager’s stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: registering the Relay Server and adding relay workers, both in the Relay Hub.</p>
 
 <h3 id="stake-manager">Stake Manager</h3>
 <p>The Stake Manager supports multiple Relay Hubs, the stakers are the Relay Managers and they can authorize/de-authorize specific Relay Hubs so they can penalize the managers if needed. The staked cryptocurrency is held in the StakeManager contract.</p>
@@ -2292,32 +2314,46 @@
 
 <p>Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.</p>
 
-<h3 id="relay--deploy-verifier">Relay &amp; Deploy Verifier</h3>
-<p>Abstract contracts that authorizes a specific relay or deploy request (see the <a href="#relay--deploy-requests">Relay &amp; Deploy Requests</a> section).</p>
+<h3 id="relay-worker">Relay Worker</h3>
+<p>An EOA that belongs to only one Relay Manager. Since the Relay Worker is the sender of the request, it is the one that pays for the gas fees for each transaction. It <strong>may</strong> also collect the fees in ERC20 that are charged for relaying the transactions.</p>
 
-<p>The verifiers are abstract contracts that authorize and validate specific relay requests.</p>
+<h3 id="relay--deploy-verifier">Relay &amp; Deploy Verifier</h3>
+<p>Contracts that authorize a specific relay or deploy request (see the <a href="#relay--deploy-requests">Relay &amp; Deploy Requests</a> section).</p>
 
 <p>Two example implementations are provided:</p>
 <ul>
   <li>
-<strong>Relay Verifier</strong>: The Relay Verifier has a list of tokens that it accepts. When it receives a relay request, checks the token’s acceptance and the payer’s balance for the token.</li>
+<strong>Relay Verifier</strong>: The Relay Verifier has a list of tokens that it accepts. When it receives a relay request, it checks the token’s acceptance and the payer’s balance for the token.</li>
   <li>
 <strong>Deploy Verifier</strong>: An implementation used in the SmartWallet deployment process. It performs the same relay verifier checks but also makes sure that the SmartWallet to be deployed doesn’t already exist. It also checks that a Proxy Factory address is provided in the Relay Request.</li>
 </ul>
 
+<h3 id="collector">Collector</h3>
+
+<p>The Collector is an optional smart contract used for the Revenue Sharing feature. Normally, relay fees are paid to the worker account which relays the transaction.</p>
+
+<p>Collector contracts are designed to hold revenue generated from relayed transactions so that in the future they can be later given out to partners according to the distribution of shares written in the contract. They are initialized with a specific token to hold, a set of partner addresses (each set with their own share of collected revenues) plus an owner which can modify the shares or execute the withdrawal and distribution of funds. Shares for each partner are expressed in integers representing a percentage and must add up to exactly 100. Any number of partners can be specified.</p>
+
+<p>The owner of the contract can be any address, including but not limited to a multisig contract (see <a href="https://github.com/gnosis/safe-contracts" rel="external noopener noreferrer" target="_blank">Gnosis Safe Contracts</a>). Using a multisig address can be a good idea if ownership of the contract needs to be shared, so that decisions like distributing collected fees to partners or modifying revenue shares can be taken collectively. An ownership transfer function is also available.</p>
+
+<p>Any number of Collector contracts can be deployed and used to share revenue, as long as their addresses are specified in relay requests. The withdrawal of funds from any Collector contract is completely independent of the RIF Relay flow and can be executed at any arbitrary point in time.</p>
+
+<p>For steps on how to deploy a Collector contract (plus other technical details) please see <a href="../../../guides/rif-relay/deployment/">the Collector section</a> of the deployment process.</p>
+
 <h3 id="proxies">Proxies</h3>
 
+<h4 id="template">Template</h4>
+<p>It’s the logic that would be executed on each transaction. In this specific scenario, it is the Smart Wallet contract.</p>
+
 <h4 id="proxy-factory">Proxy Factory</h4>
-<p>Factory of Proxies to the SmartWallet logic. The Smart Wallet itself is a template with portions delegated to an optional custom logic (which is also a proxy pattern).</p>
+<p>Factory of Proxies to the SmartWallet. The proxy factory is in charge of deploying the smart wallets contracts using the template, during the deployment it executes the initialization from each smart wallet.</p>
 
 <h4 id="proxy">Proxy</h4>
-<p>A simple proxy that delegates every call to a SmartWallet logic address. This proxy is the one instantiated per SmartWallet, and it will receive the SmartWallet template address as Master Copy (MC). So every call made to this proxy will end up executing the logic defined in the MC.</p>
+<p>The proxy is only implemented in the Custom Smart Wallet because it delegates every call to a SmartWallet logic address. This proxy is the one instantiated per SmartWallet, and it will receive the SmartWallet address as Master Copy (MC). So every call made to this proxy will end up executing the logic defined in the MC.</p>
 
 <p>For the transaction execution (<code class="highlighter-rouge">execute()</code> call), MC logic will do the signature verification and payment. Then it will execute the request, and, if custom logic was defined, it will forward the flow to it before returning.</p>
 
-<p>Moreover, when a proxy to the Smart Wallet is created, it can define a custom logic that replaces what is done with the Relay Request after verifying it. With no custom logic, the recipient is called, but with custom logic, the request is delegated to the logic code.</p>
-
-<p>If a custom logic is set, it can be initialized (which would impact the proxy’s state of course). This happens automatically during the deployment of the Proxy if the code of the logic contract has defined a function that conforms to the initialize(bytes) ABI.</p>
+<p>During the initialization of the Custom Smart Wallet a custom logic can be set (which would impact the proxy’s state of course), the initialization process and set of the custom logic can only be done during the deployment of the smart wallet.</p>
 
 <h3 id="gsneip712library">GSNEip712Library</h3>
 <p>This is an auxiliary library that bridges the Relay Request into a call of a Smart Wallet or Proxy Factory (in such case, the Request is a Deploy Request).</p>
@@ -2329,19 +2365,76 @@
 <h3 id="relay-server">Relay Server</h3>
 <p>The Relay Server receives sponsored transactions via HTTP.</p>
 
-<p>The server has only one Relay Manager address and at least one Relay Worker, and points to just one Relay Hub.</p>
-
-<p>When the Relay Server receives an HTTP Relay request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.</p>
+<p>The server has only one Relay Manager address and at least one Relay Worker, and points to just one Relay Hub.
+When the Relay Server receives an HTTP Relay request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.</p>
 
 <p>The server is a service daemon, running as an HTTP service. It advertises itself (through the Relay Hub) and waits for client requests.</p>
 
+<p>The Relay Server has mechanisms that try to avoid running out of balance in the workers. The Relay Manager keeps sending native cryptocurrency to the workers based on a specific minimum balance.</p>
+
+<h4 id="start-flow">Start Flow</h4>
+
+<p>The start flow diagram represents the process that is followed by the Relay Server to start receiving requests, even that the server will be receiving requests doesn’t mean that can handle it, since it needs balance to process each request. 
+<img src="../../../assets/img/rif-relay/start.jpg" alt="Relay - Start Flow"></p>
+
+<ol>
+  <li>Generates(private keys) the Workers and Manager accounts.</li>
+  <li>Initialise the instance for each contract that will be interacting with the server.
+    <ul>
+      <li>The RelayHub contract is the key contract for the start flow since its the contract that have the events of interest.</li>
+    </ul>
+  </li>
+  <li>Initalise the Relay Server.
+  -The Relay Server has all logic for the interaction between off-chain and on-chain components.</li>
+  <li>Initialise the RegistationManager.
+    <ul>
+      <li>The Registration Manager starts querying for events related to the registration process(StakeAdded, WorkerAdded) to identify if can register the Server on the RelayHub.</li>
+    </ul>
+  </li>
+  <li>The Relay Server start querying for changes on the blochain using the RelayHub.</li>
+</ol>
+
+<h4 id="register-flow">Register Flow</h4>
+
+<p>The register flow diagram represents the process to provide the necessary stake/balance to the manager/workers for the Relay Server start processing requests and to register the server in the RelayHub.</p>
+
+<p><img src="../../../assets/img/rif-relay/register.jpg" alt="Relay - Register Flow"></p>
+
+<ol>
+  <li>Gets the Relay Server data.</li>
+  <li>Validate if the server was already register in the RelayHub.</li>
+  <li>Initialise the instance for each contract that will be interacting with the server.
+    <ul>
+      <li>The RelayHub contract is the key contract for the register flow since its the contract that have the events of interest.</li>
+    </ul>
+  </li>
+  <li>Query the stakeInfo for the manager and validates if already staked.</li>
+  <li>Funds the manager if necessary.</li>
+</ol>
+
+<h3 id="interval-handler">Interval Handler</h3>
+
+<p>The interval handler diagram represents the process from the Relay Server to interact with the blockchain and process the transactions.</p>
+
+<p><img src="../../../assets/img/rif-relay/interval-handler.jpg" alt="Relay - Interval Handler Flow"></p>
+
+<ol>
+  <li>Get the latest mined block by the blockachain.</li>
+  <li>Check if the Relay Server state needs to be refreshed based on the blocks minted.</li>
+  <li>Refresh the gas price.</li>
+  <li>Get the past events from the RelayHub.</li>
+  <li>Add the workers and register the Relay Server if meets the requirements.</li>
+  <li>Keep listening for transactions and new events.</li>
+</ol>
+
 <h3 id="relay--deploy-requests">Relay &amp; Deploy Requests</h3>
 <p>A relay request is the sponsored transaction, the structure used to relay a transaction. It is formed by Relay Data and Forward Request:</p>
+
 <ul>
   <li>
-<strong>Relay Data</strong>: all information required to relay the defined Forward Request.</li>
+<strong>Relay Data</strong>: All information required to relay the defined Forward Request.</li>
   <li>
-<strong>Forward Request</strong>: it is formed by all the “common” transaction fields in addition to all the token-payment data and the Proxy Factory address as well.</li>
+<strong>Forward/Deploy Request</strong>: It is formed by all the “common” transaction fields in addition to all the token-payment data.</li>
 </ul>
 
 <p>When the Sponsor creates an Envelope (the actual blockchain transaction to submit), it will add this Relay Request (sponsored transaction) as part of the encoded data, along with the contract and method to call (RelayHub and relayCall respectively)</p>
@@ -2353,23 +2446,23 @@
 <h3 id="tools">Tools</h3>
 
 <h3 id="contract-interactor">Contract Interactor</h3>
-<p>A provider and wrapper for all the smart contract ABIs.</p>
+<p>A provider and wrapper for all the smart contract methods which need to be exposed to interact with the other components.</p>
 
 <h3 id="relay-client">Relay Client</h3>
-<p>The Relay client is a typescript library for a client to access the blockchain through a relay. It provides APIs to find a relay, and to send transactions through it.</p>
+<p>This is a typescript library to interact with the RIF Relay system. It provides APIs to find a relay, and to send transactions through it. It also gives access to expose methods from Relay Common to interact with the blockchain.</p>
 
-<p>It can work access point to the Relay system. It creates, signs, and sends the Sponsored transaction, which is signed by the requester and forwarded to the Relay Server via the HTTP protocol.</p>
+<p>It can work as an access point to the Relay system. It creates, signs, and sends the Sponsored transaction, which is signed by the requester and forwarded to the Relay Server via the HTTP protocol.</p>
 
 <p>It is not <em>strictly</em> needed since any dApp or user could relay transactions using merely a Relay Server and the smart contracts, although this is arguably harder to do manually.</p>
 
 <h3 id="relay-provider">Relay Provider</h3>
-<p>The access point to the Relay system for dApps using Web3. It wraps the RelayClient to provide Web3 compatibility.</p>
+<p>The access point to the Relay system for dApps using Web3. It wraps the <code class="highlighter-rouge">RelayClient</code> to provide Web3 compatibility.</p>
 
 <h2 id="execution-flow">Execution flow</h2>
 
-<h3 id="relaying-smart-wallet-already-created">Relaying (Smart Wallet already created)</h3>
+<h3 id="relaying-smart-wallet-already-deployed">Relaying (Smart Wallet already deployed)</h3>
 
-<p><img src="../../../assets/img/rif-relay/Execution-flow.jpg" alt="Relay - Execution Flow"></p>
+<p><img src="../../../assets/img/rif-relay/execution.jpg" alt="Relay - Execution Flow"></p>
 
 <ol>
   <li>A Requester creates a request.</li>
@@ -2381,22 +2474,22 @@
   <li>The Relay Server sends the transaction to the Relay Hub using the same worker account as the previous step, executing the <code class="highlighter-rouge">relayCall</code> function of the Relay Hub contract.
     <ul>
       <li>When the Relay Hub receives a transaction from a Relay Worker, it verifies with the Stake Manager that the Worker’s Relay Manager has indeed locked funds for staking. If not, the execution is reverted.</li>
-      <li>The Relay Worker account must have funds to pay the consumed gas (RBTC).
+      <li>The Relay Worker account must have funds to pay for the consumed gas (RBTC).
         <ul>
-          <li>This verification is done in the Relay Client and in the Relay Server as well, by calling the Relay Verifier. The verifier checks that it accepts the token used to pay and that the payer has a sufficient token balance. In addition, it verifies the used smart wallet is the correct one.</li>
+          <li>This verification is done in the Relay Client and in the Relay Server as well, by calling the Relay Verifier. The verifier checks that it accepts the token used to pay and that the payer has a sufficient token balance. In addition, it verifies that the used smart wallet is the correct one.</li>
         </ul>
       </li>
     </ul>
   </li>
-  <li>The RelayHub instructs the Smart Wallet to execute the Relay Request through the GsnEip712Library library.</li>
-  <li>The Smart Wallet checks the signature and the nonce of the Requester, reverting if it fails the checking.</li>
+  <li>The RelayHub instructs the Smart Wallet to execute the Relay Request through the <a href="#gsneip712library">GsnEip712Library</a> library.</li>
+  <li>The Smart Wallet checks the signature and the nonce of the Requester, reverting if it fails the checks.</li>
   <li>Then, the Smart Wallet performs the token transfer between the Requester and the token recipient, using the data received within the Relay Request.</li>
   <li>It invokes the recipient contract with the indicated method in the Forward Request.</li>
 </ol>
 
-<h3 id="gasless-smart-wallet-creation">Gasless Smart Wallet creation</h3>
+<h3 id="sponsored-smart-wallet-deployment">Sponsored Smart Wallet deployment</h3>
 
-<p><img src="../../../assets/img/rif-relay/SmartWalletWithGasless.jpg" alt="Relay - Smart Wallet with Gasless EOA"></p>
+<p><img src="../../../assets/img/rif-relay/relay.jpg" alt="Relay - Sponsored Smart Wallet"></p>
 
 <p>The gas-less requester has a SmartWallet address where they receive tokens but don’t use them. If the requester needs to call a contract, e.g., to send the tokens to another account, they must deploy a Smart Wallet first.</p>
 
@@ -2437,7 +2530,7 @@
 <h2 id="deprecated">Deprecated</h2>
 
 <h3 id="paymaster">Paymaster</h3>
-<p>V2 deprecated the Paymaster contracts in favor of the Verifiers (see <a href="../versions/">versions</a>).</p>
+<p>V0.2 deprecated the Paymaster contracts in favor of the Verifiers (see <a href="../versions/">versions</a>).</p>
 
                   
 

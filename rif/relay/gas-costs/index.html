@@ -790,8 +790,8 @@
             <a href="../../../guides/rif-relay/">RIF Relay</a>
             <ul>
               <li><a href="../../../guides/rif-relay/">User Guide</a></li>
-              <li><a href="../../../guides/rif-relay/install/">Install</a></li>
-              <li><a href="../../../guides/rif-relay/launch/">Launch</a></li>
+              <li><a href="../../../guides/rif-relay/installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../../../guides/rif-relay/deployment/">Deployment</a></li>
               <li><a href="../../../guides/rif-relay/develop/">Develop</a></li>
               <li><a href="../../../guides/rif-relay/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-relay/smart-wallets/">Smart Wallets</a></li>
@@ -1149,8 +1149,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-03-03 12:52:23 +0000T00:00:00.000Z">2022-03-03</time> | -->
-     3' to read |
+    <!--time role="presentation" datetime="2022-11-10 15:43:19 +0000T00:00:00.000Z">2022-11-10</time> | -->
+     2' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/relay/gas-costs.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1828,8 +1828,8 @@
             <a href="../../../guides/rif-relay/">RIF Relay</a>
             <ul>
               <li><a href="../../../guides/rif-relay/">User Guide</a></li>
-              <li><a href="../../../guides/rif-relay/install/">Install</a></li>
-              <li><a href="../../../guides/rif-relay/launch/">Launch</a></li>
+              <li><a href="../../../guides/rif-relay/installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../../../guides/rif-relay/deployment/">Deployment</a></li>
               <li><a href="../../../guides/rif-relay/develop/">Develop</a></li>
               <li><a href="../../../guides/rif-relay/integrate/">Integrate</a></li>
               <li><a href="../../../guides/rif-relay/smart-wallets/">Smart Wallets</a></li>
@@ -2152,9 +2152,11 @@
 
 <h2 id="smartwallet-templates">SmartWallet templates</h2>
 
-<p>RIF Relay V1 only has one SmartWallet <a href="https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">template</a>, which can be used as-is, or be injected with extra logic during the SmartWallet instance creation.</p>
+<p>RIF Relay V0.1 only has one SmartWallet <a href="https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">template</a>, which can be used as-is, or be injected with extra logic during the SmartWallet instance creation.</p>
 
-<p>V2 introduces a cheaper template (<a href="https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">SmartWallet</a>), to be used when there’s no need for extra custom-logic in the smart wallets. The behaviour is the same as the CustomSmartWallet <a href="https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">template</a> of V2, but without this capability.</p>
+<p>V0.2 introduces a cheaper template (<a href="https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">SmartWallet</a>), to be used when there’s no need for extra custom-logic in the smart wallets. The behaviour is the same as the CustomSmartWallet <a href="https://github.com/rsksmart/rif-relay/blob/master/contracts/smartwallet/SmartWallet.sol" rel="external noopener noreferrer" target="_blank">template</a> of V0.2, but without this capability.</p>
+
+<h3 id="gas-cost-from-the-deployment-of-each-template">Gas cost from the deployment of each template.</h3>
 
 <table>
   <thead>
@@ -2166,160 +2168,34 @@
   </thead>
   <tbody>
     <tr>
-      <td>1</td>
+      <td>0.1</td>
       <td>SmartWallet</td>
       <td>172400</td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>0.2</td>
       <td>CustomSmartWallet</td>
       <td>98070</td>
     </tr>
     <tr>
-      <td>2</td>
+      <td>0.2</td>
       <td>SmartWallet</td>
       <td>97695</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>CustomSmartWallet</td>
+      <td>TBD</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>SmartWallet</td>
+      <td>TBD</td>
     </tr>
   </tbody>
 </table>
 
 <p>Note that the instance of CustomSmartWallet used didn’t point to any extra custom logic.</p>
-
-<h2 id="transaction-batching">Transaction Batching</h2>
-<p>RIF Relay V2 also introduces transaction batching</p>
-
-<h3 id="scenarios">Scenarios</h3>
-
-<h4 id="a">A</h4>
-<p>Each transaction has the same smart wallet, token payment and destination contract</p>
-
-<h4 id="b">B</h4>
-<p>Each transaction has the same smart wallet, token payment but each has a different destination contract</p>
-
-<p>The gas costs for scenarios A and B are the same</p>
-
-<h4 id="c">C</h4>
-<p>Each transaction has a different smart wallet, but the token payment and destination contract are the same</p>
-
-<h4 id="d">D</h4>
-<p>Each transaction has a different smart wallet and destination contract, but the same token payment</p>
-
-<p>The gas costs for scenarios C and D are the same</p>
-
-<h4 id="e">E</h4>
-<p>Each transaction has a different smart wallet and token payment but the same destination contract</p>
-
-<h4 id="f">F</h4>
-<p>Each transaction has a different  smart wallet, token payment and destination contract</p>
-
-<p>The gas costs for scenarios E and F are the same</p>
-
-<h3 id="overhead-costs-in-batching">Overhead costs in batching</h3>
-<p>The following table depicts the average gas overhead per transaction for the SmartWallet template when using transaction batching
-The gas difference of using the CustomSmartWallet template without extra logic versus using the SmartWallet template is approximately an extra of between 200 and 300 gas.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Tx per batch</th>
-      <th>A,B</th>
-      <th>C,D</th>
-      <th>E,F</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>50</td>
-      <td>44400</td>
-      <td>59033</td>
-      <td>73690</td>
-    </tr>
-    <tr>
-      <td>30</td>
-      <td>45050</td>
-      <td>59520</td>
-      <td>74006</td>
-    </tr>
-    <tr>
-      <td>25</td>
-      <td>45300</td>
-      <td>59720</td>
-      <td>74183</td>
-    </tr>
-    <tr>
-      <td>20</td>
-      <td>45990</td>
-      <td>60130</td>
-      <td>74405</td>
-    </tr>
-    <tr>
-      <td>15</td>
-      <td>46953</td>
-      <td>60853</td>
-      <td>74822</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>48800</td>
-      <td>62270</td>
-      <td>75743</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>49495</td>
-      <td>62760</td>
-      <td>to be continued</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>50240</td>
-      <td>63240</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>51200</td>
-      <td>64050</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td><strong>6</strong></td>
-      <td><strong>52600</strong></td>
-      <td><strong>65020</strong></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>54500</td>
-      <td>66430</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>57300</td>
-      <td>68553</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>62100</td>
-      <td>71985</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>71600</td>
-      <td>79130</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>100240</td>
-      <td>100240</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
 
                   
 

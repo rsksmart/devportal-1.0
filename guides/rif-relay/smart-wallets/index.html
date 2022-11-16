@@ -790,8 +790,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="../install/">Install</a></li>
-              <li><a href="../launch/">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="../develop/">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="./">Smart Wallets</a></li>
@@ -1149,8 +1149,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-10-01 00:58:50 +0000T00:00:00.000Z">2021-10-01</time> | -->
-     7' to read |
+    <!--time role="presentation" datetime="2022-11-10 15:43:19 +0000T00:00:00.000Z">2022-11-10</time> | -->
+     3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/smart-wallets.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1828,8 +1828,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="../install/">Install</a></li>
-              <li><a href="../launch/">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="../develop/">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="./">Smart Wallets</a></li>
@@ -2148,11 +2148,19 @@
 
                   <h1 class="page-title" id="top">RIF Relay Smart Wallets</h1>
 
-                  <h2 id="pre-requisites">Pre-Requisites</h2>
+                  <p>This guide is intended to explain more about the interaction and deployment of the Smart Wallets. We will be using additional testing contracts that were included in the project, like the TestToken(ERC20). All the utils scripts are executed from the account[0] from the regtest blockchain.</p>
+
+<h2 id="pre-requisites">Pre-Requisites</h2>
 
 <ul>
-  <li>Follow the system-setup guide.</li>
+  <li>Follow the deployment process in <a href="../deployment/">Deployment Guide</a>.</li>
+  <li>The defintion of the smart wallet can be found in <a href="../../../rif/relay/architecture/#smart-wallet">Architecture</a>
+</li>
 </ul>
+
+<h2 id="rif-relay-sdk">RIF Relay SDK</h2>
+
+<p>The SDK was developed to simplify the interaction between dapps and RIF Relay. For further details about the SDK usage, please refer to the <a href="../integrate#rif-relay-sdk">related guide</a>.</p>
 
 <h2 id="ways-to-create-smart-wallets">Ways to create smart wallets</h2>
 
@@ -2165,174 +2173,57 @@
 <strong>Sponsored:</strong> It needs to go through the RIF Relay process, which is described in detail below. The requester asks a third party to pay for the Smart Wallet deployment, and the requester pays in tokens for that (or free if it is subsidized by the third-party, a.k.a, Sponsor).</li>
 </ol>
 
+<h2 id="send-funds">Send funds</h2>
+
+<p>In the <a href="https://github.com/rsksmart/rif-relay-contracts" rel="external noopener noreferrer" target="_blank">RIF Relay Contracts</a> there is a script that would help us to send funds using the <code class="highlighter-rouge">account[0]</code> from Regtest.</p>
+
+<p>We need to execute the following script:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx truffle exec --network regtest tasks/mint.js --amount 50000000000000000000 --tokenReceiver &lt;ADDRESS&gt;
+</code></pre></div></div>
+<blockquote>
+  <p>The token that wold be sent is the Test Token that was deployed.</p>
+</blockquote>
+
 <h2 id="deploy-a-smart-wallet">Deploy a Smart Wallet</h2>
 
-<p>To deploy a smart wallet we need to do some steps to generate the wallet address,
-fund it and finally deploy the smart wallet. Here we are going to show you how to do that.</p>
+<p>To deploy a smart wallet we need to follow some steps that will be described below:</p>
 
 <ol>
-  <li>Generate your smart wallet address. To do this you need to call the method <code class="highlighter-rouge">getSmartWalletAddress</code> on the
-<code class="highlighter-rouge">SmartWalletFactory</code> contract, it can be found in the relay repo under <code class="highlighter-rouge">src/cli/compiled/SmartWalletFactory.json</code>.
-You need to extract the abi from there and then use it to instantiate the contract with web3.
-Here is an example of how to do it:
-    <div class="language-javascript highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>     <span class="k">import</span> <span class="nx">Web3</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">web3</span><span class="dl">"</span><span class="p">;</span>
-
-     <span class="kd">const</span> <span class="nx">web3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Web3</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">RSK_NODE_ENDPOINT</span><span class="o">&gt;</span><span class="p">);</span>
-
-     <span class="kd">const</span> <span class="nx">smartWalletAddress</span> <span class="o">=</span> <span class="k">await</span> <span class="k">new</span> <span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">Contract</span><span class="p">(</span>
-         <span class="o">&lt;</span><span class="nx">SMART_WALLET_FACTORY_ABI</span><span class="o">&gt;</span><span class="p">,</span>
-         <span class="o">&lt;</span><span class="nx">SMART_WALLET_FACTORY_ADDRESS</span><span class="o">&gt;</span>
-     <span class="p">).</span><span class="nx">methods</span><span class="p">.</span><span class="nx">getSmartWalletAddress</span><span class="p">(</span>
-         <span class="o">&lt;</span><span class="nx">RSK_ACCOUNT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-         <span class="o">&lt;</span><span class="nx">SMART_WALLET_RECOVERER</span><span class="o">&gt;</span><span class="p">,</span>
-         <span class="o">&lt;</span><span class="nx">SMART_WALLET_INDEX</span><span class="o">&gt;</span>
-     <span class="p">).</span><span class="nx">call</span><span class="p">();</span>
-</code></pre></div>    </div>
-    <p>Where variables are:</p>
-
-    <ul>
-      <li>
-<strong>RSK_NODE_ENDPOINT</strong>: the RSK node endpoint where is running (ex: http://localhost:4444).</li>
-      <li>
-<strong>SMART_WALLET_FACTORY_ABI</strong>: the smart wallet factory contract abi json to use.</li>
-      <li>
-<strong>SMART_WALLET_FACTORY_ADDRESS</strong>: the deployed smart wallet factory contract address.</li>
-      <li>
-<strong>RSK_ACCOUNT_ADDRESS</strong>: the rsk address that will own the smart wallet.</li>
-      <li>
-<strong>SMART_WALLET_RECOVERER</strong>: the rsk address that will be the recoverer account, in case the owner account is lost.</li>
-      <li>
-<strong>SMART_WALLET_INDEX</strong>: a wallet index, since we can have more than just one smart wallet per RSK address
-you can specify the index of the wallet.</li>
-    </ul>
+  <li>We need to generate the smart wallet address. As we mention before the Smart Wallet is a contract-based account, therefore, we can generate as many as we want without spending gas by calling the <code class="highlighter-rouge">generateSmartWallet</code> from the SDK.
+    <blockquote>
+      <p>A Smart Wallet only needs to be deployed when we need to execute a transaction. The deployment process use gas so we need to pay or it can subsidized.</p>
+    </blockquote>
   </li>
 </ol>
 
-<p>2 (Optional). Now if you want, you can prefund this new address that will represent your smart wallet. To do that you can go
-to any wallet and send some tokens to that address. Also you can use web3 if you are working on regtest, here an
-   example:</p>
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="k">import</span> <span class="nx">Web3</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">web3</span><span class="dl">"</span><span class="p">;</span>
+<p>At this point we should have the SDK object created and being called from a dApp.</p>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="kd">const</span> <span class="nx">smartWallet</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">relayingServices</span><span class="p">.</span><span class="nx">generateSmartWallet</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">SMART_WALLET_INDEX</span><span class="o">&gt;</span><span class="p">);</span>
 
-      <span class="kd">const</span> <span class="nx">web3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Web3</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">RSK_NODE_ENDPOINT</span><span class="o">&gt;</span><span class="p">);</span>
+      <span class="kd">const</span> <span class="nx">options</span><span class="p">:</span> <span class="nx">SmartWalletDeploymentOptions</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="na">tokenAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">TOKEN_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
+        <span class="na">tokenAmount</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">AMOUNT_OF_TOKENS</span><span class="o">&gt;</span>
+    <span class="p">}</span>
 
-      <span class="kd">const</span> <span class="nx">token</span> <span class="o">=</span> <span class="k">await</span> <span class="k">new</span> <span class="k">this</span><span class="p">.</span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">Contract</span><span class="p">(</span>
-        <span class="o">&lt;</span><span class="nx">ERC20_TOKEN_ABI</span><span class="o">&gt;</span><span class="p">,</span>
-        <span class="o">&lt;</span><span class="nx">TOKEN_ADDRESS</span><span class="o">&gt;</span>
-      <span class="p">);</span>
-     <span class="kd">const</span> <span class="nx">accounts</span> <span class="o">=</span> <span class="k">await</span> <span class="k">this</span><span class="p">.</span><span class="nx">web3</span><span class="p">.</span><span class="nx">eth</span><span class="p">.</span><span class="nx">getAccounts</span><span class="p">();</span>
-     <span class="k">await</span> <span class="nx">token</span><span class="p">.</span><span class="nx">methods</span><span class="p">.</span><span class="nx">transfer</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">SMART_WALLET_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span> <span class="k">this</span><span class="p">.</span><span class="nx">web3</span><span class="p">.</span><span class="nx">utils</span><span class="p">.</span><span class="nx">toWei</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">AMOUNT_OF_TOKENS</span><span class="o">&gt;</span><span class="p">,</span> <span class="dl">"</span><span class="s2">ether</span><span class="dl">"</span><span class="p">))</span>
-          <span class="p">.</span><span class="nx">send</span><span class="p">({</span> <span class="na">from</span><span class="p">:</span> <span class="nx">accounts</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">});</span>
+    <span class="k">await</span> <span class="nx">relayingServices</span><span class="p">.</span><span class="nx">deploySmartWallet</span><span class="p">(</span>
+        <span class="nx">smartWallet</span><span class="p">,</span>
+        <span class="nx">options</span>
+    <span class="p">);</span>
 </code></pre></div></div>
+<blockquote>
+  <p>Keep in mind that to pay any amount of token fees during the deployment, the smart wallet must receive funds first</p>
+</blockquote>
+
 <p>Where variables are:</p>
 
 <ul>
   <li>
-<strong>RSK_NODE_ENDPOINT</strong>: the RSK node endpoint where is running (ex: http://localhost:4444).</li>
-  <li>
-<strong>ERC20_TOKEN_ABI</strong>: the ERC20 token contract abi to use.</li>
+<strong>SMART_WALLET_INDEX</strong>: the index that we would like to use to generate the smart wallet.</li>
   <li>
 <strong>TOKEN_ADDRESS</strong>: the token contract address.</li>
   <li>
-<strong>SMART_WALLET_ADDRESS</strong>: the generated address of last step.</li>
-  <li>
 <strong>AMOUNT_OF_TOKENS</strong>: string containing the amount of tokens in decimal unit.</li>
 </ul>
-
-<p><strong>NOTE: in this example we asume that the <code class="highlighter-rouge">account[0]</code> of regtest has tokens to use.</strong></p>
-
-<ol>
-  <li>
-    <p>Finally you need to deploy your smart wallet, to do so you must follow these steps:</p>
-
-    <ol>
-      <li>Use the provider from relay to that you have an example here:
-        <div class="language-javascript highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">RelayProvider</span><span class="p">,</span> <span class="nx">resolveConfiguration</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-relay</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Web3</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">web3</span><span class="dl">"</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">ZERO_ADDRESS</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">0x0000000000000000000000000000000000000000</span><span class="dl">"</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">web3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Web3</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">RSK_NODE_ENDPOINT</span><span class="o">&gt;</span><span class="p">);</span>
-
-<span class="kd">const</span> <span class="nx">config</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">resolveConfiguration</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">currentProvider</span><span class="p">,</span>
-<span class="p">{</span>
-  <span class="na">verbose</span><span class="p">:</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">includes</span><span class="p">(</span><span class="dl">"</span><span class="s2">verbose</span><span class="dl">"</span><span class="p">),</span>
-  <span class="na">onlyPreferredRelays</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="na">preferredRelays</span><span class="p">:</span> <span class="p">[</span><span class="dl">"</span><span class="s2">http://localhost:8090</span><span class="dl">"</span><span class="p">],</span>
-  <span class="na">factory</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_FACTORY_CONTRACT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">gasPriceFactorPercent</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-  <span class="na">relayLookupWindowBlocks</span><span class="p">:</span> <span class="mi">1</span><span class="nx">e5</span><span class="p">,</span>
-  <span class="na">chainId</span><span class="p">:</span> <span class="mi">33</span><span class="p">,</span>
-  <span class="na">relayVerifierAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">RELAY_VERIFIER_CONTRACT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">deployVerifierAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">DEPLOY_VERIFIER_CONTRACT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">smartWalletFactoryAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_FACTORY_CONTRACT_ADDRESS</span><span class="o">&gt;</span>
-<span class="p">});</span>
-<span class="nx">resolvedConfig</span><span class="p">.</span><span class="nx">relayHubAddress</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">RELAY_HUB_CONTRACT_ADDRESS</span><span class="o">&gt;</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">provider</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">RelayProvider</span><span class="p">(</span><span class="nx">web3</span><span class="p">.</span><span class="nx">currentProvider</span><span class="p">,</span> <span class="nx">config</span><span class="p">);</span>
-
-<span class="nx">provider</span><span class="p">.</span><span class="nx">addAccount</span><span class="p">({</span>
-   <span class="na">address</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">RSK_ACCOUNT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-   <span class="na">privateKey</span><span class="p">:</span> <span class="nx">Buffer</span><span class="p">.</span><span class="k">from</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">RSK_ACCOUNT_PRIVATE_KEY</span><span class="o">&gt;</span><span class="p">.</span><span class="nx">replaceAll</span><span class="p">(</span><span class="dl">"</span><span class="s2">0x</span><span class="dl">"</span><span class="p">,</span> <span class="dl">""</span><span class="p">),</span> <span class="dl">"</span><span class="s2">hex</span><span class="dl">"</span><span class="p">)</span>
-<span class="p">});</span>
-
-<span class="nx">web3</span><span class="p">.</span><span class="nx">setProvider</span><span class="p">(</span><span class="nx">provider</span><span class="p">);</span>
-
-<span class="kd">const</span> <span class="nx">transaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">provider</span><span class="p">.</span><span class="nx">deploySmartWallet</span><span class="p">({</span>
-  <span class="na">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">RSK_ACCOUNT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">to</span><span class="p">:</span> <span class="nx">ZERO_ADDRESS</span><span class="p">,</span>
-  <span class="na">gas</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0x27100</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">value</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">callVerifier</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">DEPLOY_VERIFIER_CONTRACT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">callForwarder</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_FACTORY_CONTRACT_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">tokenContract</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">TOKEN_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">tokenAmount</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">TOKEN_AMOUNT</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">data</span><span class="p">:</span> <span class="dl">"</span><span class="s2">0x</span><span class="dl">"</span><span class="p">,</span>
-  <span class="na">index</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_INDEX</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">recoverer</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_RECOVERER</span><span class="o">&gt;</span><span class="p">,</span>
-  <span class="na">isSmartWalletDeploy</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="na">onlyPreferredRelays</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
-  <span class="na">smartWalletAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-<span class="p">});</span>
-</code></pre></div>        </div>
-      </li>
-    </ol>
-
-    <p>Where variables are:</p>
-
-    <ul>
-      <li>
-<strong>RSK_NODE_ENDPOINT</strong>: the RSK node enpoint where is running (ex: http://localhost:4444).</li>
-      <li>
-<strong>SMART_WALLET_FACTORY_CONTRACT_ADDRESS</strong>: the deployed smart wallet factory contract address.</li>
-      <li>
-<strong>RELAY_VERIFIER_CONTRACT_ADDRESS</strong>: the deployed relay verifier contract address.</li>
-      <li>
-<strong>DEPLOY_VERIFIER_CONTRACT_ADDRESS</strong>: the deployed deploy verifier contract address.</li>
-      <li>
-<strong>RELAY_HUB_CONTRACT_ADDRESS</strong>: the deployed relay hub contract address.</li>
-      <li>
-<strong>RSK_ACCOUNT_ADDRESS</strong>: the RSK account address.</li>
-      <li>
-<strong>RSK_ACCOUNT_PRIVATE_KEY</strong>: the RSK account private key string.</li>
-      <li>
-<strong>TOKEN_ADDRESS</strong>: the token address.</li>
-      <li>
-<strong>TOKEN_AMOUNT</strong>: string containing the amount of tokens in decimal unit. This amount should be lower
-or equal to the amount of tokens that you transferred to the smart wallet account. If you didn’t, just set <code class="highlighter-rouge">0</code> here.</li>
-      <li>
-<strong>SMART_WALLET_INDEX</strong>: a wallet index, since we can have more than just one smart wallet per RSK address</li>
-      <li>
-<strong>SMART_WALLET_RECOVERER</strong>: the rsk address that will be the recoverer account, in case the owner account is lost.</li>
-      <li>
-<strong>SMART_WALLET_ADDRESS</strong>: the address generated on the first step.</li>
-    </ul>
-  </li>
-</ol>
-
-<p>After following all these steps you should be able to have a deployed smart wallet with tokens ready to be used.</p>
 
 
                   

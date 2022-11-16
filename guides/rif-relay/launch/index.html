@@ -790,8 +790,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="../install/">Install</a></li>
-              <li><a href="./">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="../develop/">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../smart-wallets/">Smart Wallets</a></li>
@@ -1149,8 +1149,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-10-04 13:18:12 +0000T00:00:00.000Z">2021-10-04</time> | -->
-     7' to read |
+    <!--time role="presentation" datetime="2022-11-11 18:19:39 +0000T00:00:00.000Z">2022-11-11</time> | -->
+     0' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/launch.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1828,8 +1828,8 @@
             <a href="../">RIF Relay</a>
             <ul>
               <li><a href="../">User Guide</a></li>
-              <li><a href="../install/">Install</a></li>
-              <li><a href="./">Launch</a></li>
+              <li><a href="../installation-requirements/">Installation Requirements</a></li>
+              <li><a href="../deployment/">Deployment</a></li>
               <li><a href="../develop/">Develop</a></li>
               <li><a href="../integrate/">Integrate</a></li>
               <li><a href="../smart-wallets/">Smart Wallets</a></li>
@@ -2148,177 +2148,7 @@
 
                   <h1 class="page-title" id="top">RIF Relay Launch</h1>
 
-                  <h2 id="run-the-rif-relay-server">Run the RIF Relay Server</h2>
-<p>To start the relay server, you need to configure the json config file located at <code class="highlighter-rouge">&lt;PROJECT_ROOT&gt;/jsrelay/config/relay-config.json</code> which has this structure:</p>
-
-<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"localhost"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"port"</span><span class="p">:</span><span class="w"> </span><span class="mi">8090</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"relayHubAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"relayVerifierAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"deployVerifierAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x1938517B0762103d52590Ca21d459968c25c9E67"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"gasPriceFactor"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"rskNodeUrl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://rsk-node:4444"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"devMode"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"customReplenish"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"logLevel"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"workdir"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/home/user/workspace/relay"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div></div>
-
-<p>Where:</p>
-<ul>
-  <li>
-<strong>url</strong>: is the URL where the relay server will be deployed, it could be localhost or the IP of the host machine.</li>
-  <li>
-<strong>port</strong>: the port where the relay server will be hosted.</li>
-  <li>
-<strong>relayHubAddress</strong>: is the relay hub contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>relayVerifierAddress</strong>: is the relay verifier contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>deployVerifierAddress</strong>: is the deploy verifier contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>gasPriceFactor</strong>: is the gas price factor used to calculate the gas on the server, you can leave it as 1.</li>
-  <li>
-<strong>rskNodeUrl</strong>: is the RSK node endpoint URL, where the RSK node is located.</li>
-  <li>
-<strong>devMode</strong>: it indicates to the server if we are in development mode or not.</li>
-  <li>
-<strong>customReplenish</strong>: set if the server uses a custom replenish function or not.</li>
-  <li>
-<strong>logLevel</strong>: is the log level for the relay server.</li>
-  <li>
-<strong>workdir</strong>: is the absolute path to the folder where the server will store the database and all its data.</li>
-</ul>
-
-<p>Afterwards, run <code class="highlighter-rouge">yarn relay</code> to start the server.</p>
-
-<p>If it’s the first time the server is run, some logs will state that the server isn’t ready and that some values are wrong. This is expected, you just need to register the server on the relay hub in order for it to be usable by the clients.</p>
-
-<h2 id="register-the-rif-relay-server">Register the RIF Relay Server</h2>
-
-<h3 id="on-regtest">On Regtest</h3>
-
-<p>Once the relay server is up, you need to register this server in order for it to be usable, to do so, first configure the script located on <code class="highlighter-rouge">&lt;PROJECT_ROOT&gt;/scripts/registerRelayServer</code> and replace the values as you see fit. The script contains the following:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node dist/src/cli/commands/enveloping.js relayer-register <span class="nt">--funds</span> 100 <span class="nt">--stake</span> 200 <span class="nt">--network</span> http://rsk-node:4444/ <span class="nt">--hub</span> <span class="s2">"0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"</span>
-</code></pre></div></div>
-
-<p>Where:</p>
-
-<ul>
-  <li>
-<strong>–funds</strong>: indicates the amount of RBTC that you will transfer from accounts[0] to the worker manager account.</li>
-  <li>
-<strong>–stake</strong>: how much RBTC the server will stake. twice the value of funds is an acceptable value.</li>
-  <li>
-<strong>–hub</strong>: is the relay hub contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>–network</strong>: is the url of the rsk node API.</li>
-</ul>
-
-<p>After doing that you need to open another terminal and run the <code class="highlighter-rouge">yarn registerRelay</code> command on the root of the relay project in order to register the relay.</p>
-
-<p>After running this command you will be seeing several log entries indicating how everything is turning out. After a little while, look for this entry in the relay server execution terminal to make sure that the server is ready:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Relayer state: READY
-</code></pre></div></div>
-
-<h3 id="on-testnet">On Testnet</h3>
-
-<ol>
-  <li>In another terminal run <code class="highlighter-rouge">curl http://&lt;SERVER_URL&gt;/getaddr</code>, which will return a JSON with information of the running jsRelay Server, for example:
-    <div class="language-json highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"relayWorkerAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xe722143177fe9c7c58057dc3d98d87f6c414dc95"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"relayManagerAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xe0820002dfaa69cbf8add6a738171e8eb0a5ee54"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"relayHubAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x38bebd507aBC3D76B10d61f5C95668e1240D087F"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"minGasPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"6000000000"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"chainId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"networkId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"ready"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"version"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2.0.1"</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre></div>    </div>
-  </li>
-  <li>Send to relayManagerAddress at least 0.001 tRBTC to set it up</li>
-  <li>Send to relayWorkerAddress at least 0.001 tRBTC to set it up</li>
-  <li>Once both addresses have been funded, run:</li>
-</ol>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>node dist/src/cli/commands/enveloping.js relayer-register <span class="nt">--network</span> &lt;RSKJ_NODE_URL&gt; <span class="nt">--hub</span> &lt;RELAY_HUB_CONTRACT_ADDRESS&gt; <span class="nt">-m</span> &lt;secret_mnemonic&gt; <span class="nt">--from</span> &lt;ADDRESS&gt;  <span class="nt">--funds</span> &lt;FUNDS&gt; <span class="nt">--stake</span> &lt;STAKE&gt; <span class="nt">--relayUrl</span> &lt;RELAY_URL&gt;
-</code></pre></div></div>
-
-<p>where:</p>
-<ul>
-  <li>
-<code class="highlighter-rouge">&lt;secret_mnemonic&gt;</code> contains the path to a file with the mnemonic of a funded account to use during the relay server registration</li>
-  <li>
-<code class="highlighter-rouge">&lt;ADDRESS&gt;</code> is the account address associated with that mnemonic.</li>
-</ul>
-
-<h2 id="allow-tokens">Allow tokens</h2>
-
-<p>Now the final step is to allow some tokens to be used by enveloping on the smart wallets.</p>
-
-<h3 id="on-regtest-1">On Regtest</h3>
-
-<p>On regtest you can use a script located at <code class="highlighter-rouge">&lt;PROJECT_ROOT&gt;/scripts/allowTokens</code>. This script needs to be configured, and this is what it looks like:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
-
-<span class="nv">TOKEN_ADDRESSES</span><span class="o">=</span><span class="s2">"0x0E569743F573323F430B6E14E5676EB0cCAd03D9,0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"</span>
-<span class="nv">SMART_WALLET_DEPLOY_VERIFIER_ADDRESS</span><span class="o">=</span><span class="s2">"0x1938517B0762103d52590Ca21d459968c25c9E67"</span>
-<span class="nv">SMART_WALLET_RELAY_VERIFIER_ADDRESS</span><span class="o">=</span><span class="s2">"0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"</span>
-<span class="nv">CUSTOM_SMART_WALLET_DEPLOY_VERIFIER_ADDRESS</span><span class="o">=</span><span class="s2">"0x3eE31F6049065B616f85470985c0eF067f2bEbDE"</span>
-<span class="nv">CUSTOM_SMART_WALLET_RELAY_VERIFIER_ADDRESS</span><span class="o">=</span><span class="s2">"0xDE8Ae20488BE104f0782C0126038b6682ECc1eC7"</span>
-<span class="nv">NETWORK</span><span class="o">=</span>33
-<span class="nv">RSK_HOST</span><span class="o">=</span><span class="s2">"rsk-node"</span>
-<span class="nv">RSK_PORT</span><span class="o">=</span>4444
-
-<span class="nv">TRUFFLE_CONFIG</span><span class="o">=</span><span class="s2">"module.exports = {  networks: { development: { host: '</span><span class="k">${</span><span class="nv">RSK_HOST</span><span class="k">}</span><span class="s2">', port: </span><span class="k">${</span><span class="nv">RSK_PORT</span><span class="k">}</span><span class="s2">, network_id: '</span><span class="k">${</span><span class="nv">NETWORK</span><span class="k">}</span><span class="s2">' } } };"</span>
-
-<span class="nb">echo</span> <span class="s2">"</span><span class="k">${</span><span class="nv">TRUFFLE_CONFIG</span><span class="k">}</span><span class="s2">"</span> <span class="o">&gt;</span> truffle-config.js
-...
-</code></pre></div></div>
-
-<p>Where:</p>
-
-<ul>
-  <li>
-<strong>TOKEN_ADDRESSES</strong>: it’s a comma-separated list of token addresses to be allowed.</li>
-  <li>
-<strong>SMART_WALLET_DEPLOY_VERIFIER_ADDRESS</strong>: is the smart wallet deploy verifier contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>SMART_WALLET_RELAY_VERIFIER_ADDRESS</strong>: is the smart wallet relay verifier contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>CUSTOM_SMART_WALLET_DEPLOY_VERIFIER_ADDRESS</strong>: is the custom smart wallet deploy verifier contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>CUSTOM_SMART_WALLET_RELAY_VERIFIER_ADDRESS</strong>: is the custom smart wallet relay verifier contract address, you can retrieve this from the contract summary.</li>
-  <li>
-<strong>NETWORK</strong>: the network id that for regtest is 33 so can leave it as it is.</li>
-  <li>
-<strong>RSK_HOST</strong>: the RSK node endpoint host.</li>
-  <li>
-<strong>RSK_PORT</strong>: the RSK node endpoint port.</li>
-</ul>
-
-<p>After configuring that script you need to run it and wait until it finishes.</p>
-
-<p><strong>Important Note</strong>: the script to allow tokens assumes you are in regtest and uses the <code class="highlighter-rouge">account[0]</code> as the owner of the contracts and that’s important because
-only the owner can allow tokens on the contracts.</p>
-
-<h3 id="on-testnet-1">On Testnet</h3>
-
-<p>There is no script for this situation, so you will need to call the method <code class="highlighter-rouge">acceptToken(address token)</code> directly in the following contracts, using an account with tRBTC:</p>
-
-<ul>
-  <li><code class="highlighter-rouge">SmartWalletDeployVerifier</code></li>
-  <li><code class="highlighter-rouge">SmartWalletRelayVerifier</code></li>
-  <li><code class="highlighter-rouge">CustomSmartWalletDeployVerifier</code></li>
-  <li><code class="highlighter-rouge">CustomSmartWalletRelayVerifier</code></li>
-</ul>
+                  
 
                   
 
