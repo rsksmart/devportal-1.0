@@ -26,7 +26,7 @@ Additionally, it's important to note that not _all_ of the RIF Relay components 
 
 ### RIF Relay Smart Contracts
 
-These need to be deployed and their addresses known. For steps on how to do this, please refer to the [Contract Deployment Regtest](/guides/rif-relay/deployment/#regtest) of the Deployment guide.
+These need to be deployed and their addresses known. For steps on how to do this, please refer to the [Contract Deployment](/guides/rif-relay/deployment/) page of this guide.
 
 
 ### RIF Relay Server
