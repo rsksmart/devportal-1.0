@@ -238,7 +238,7 @@ The access point to the Relay system for dApps using Web3. It wraps the `RelayCl
     - When the Relay Hub receives a transaction from a Relay Worker, it verifies with the Stake Manager that the Worker’s Relay Manager has indeed locked funds for staking. If not, the execution is reverted.
     - The Relay Worker account must have funds to pay for the consumed gas (RBTC).
         - This verification is done in the Relay Client and in the Relay Server as well, by calling the Relay Verifier. The verifier checks that it accepts the token used to pay and that the payer has a sufficient token balance. In addition, it verifies that the used smart wallet is the correct one. 
-8. The RelayHub instructs the Smart Wallet to execute the Relay Request through the [GsnEip712Library](#GSNEip712Library) library.
+8. The RelayHub instructs the Smart Wallet to execute the Relay Request through the [GsnEip712Library](#gsneip712library) library.
 9. The Smart Wallet checks the signature and the nonce of the Requester, reverting if it fails the checks.
 10. Then, the Smart Wallet performs the token transfer between the Requester and the token recipient, using the data received within the Relay Request.
 11. It invokes the recipient contract with the indicated method in the Forward Request.
