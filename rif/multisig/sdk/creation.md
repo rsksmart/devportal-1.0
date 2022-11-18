@@ -55,9 +55,8 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
     safeSingletonAddress
   )
   ```
-  
-  > If you are working on RSK networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
-  {:.mt-3}
+
+  If you are working on RSK networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
 
 - C) Create a Safe
   * **Parameters**
