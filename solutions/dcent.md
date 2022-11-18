@@ -69,8 +69,8 @@ Visit the links below to download D'Cent Wallet.
 
 ### Fungible tokens
 
-| Symbol | Name | Token Standard | Network
-| --- | --- | --- | --- | --- |
+| Symbol | Name | Token Standard | Network |
+| --- | --- | --- | --- |
 | [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
 | [RDOC](https://explorer.rsk.co/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://moneyonchain.com/rif-dollar/) | ERC20 | RSK |
 | [DOC](https://explorer.rsk.co/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555) | [Dollar On Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | RSK |
