@@ -92,17 +92,13 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
                     </li>
                 </ul>
             </li>
-        </ul><div class="language-ts snippet__code snippet__code--lightgreen border-top-0">
-            <pre>                <code class="language-ts">
-import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk'
-</code><p><code class="language-ts">const safeFactory = new EthersSafeFactory(
-signer,
-proxyFactoryAddress,
+        </ul><div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">import</span> <span class="token punctuation">{</span> EthersSafeFactory <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@gnosis.pm/safe-core-sdk'</span> 
+
+<span class="token keyword">const</span> safeFactory <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EthersSafeFactory</span><span class="token punctuation">(</span>
+signer<span class="token punctuation">,</span>
+proxyFactoryAddress<span class="token punctuation">,</span>
 safeSingletonAddress
-)
-</code>
-</p></pre>
-</div><blockquote class="mt-3">
+<span class="token punctuation">)</span></code></pre></div><blockquote class="mt-3">
 <p>If you are working on RSK networks, you can use the contracts already deployed on <a href="#mainnet">MAINNET</a> OR <a href="#testnet">TESTNET</a>.</p>
 </blockquote></div></div></div><div class="card accordion__rsk"><div id="collapsible-0-header-2" class="card-header"><a class="btn collapsed" data-toggle="collapse" data-target="#collapsible-0-body-2">
 C) Create a Safe
@@ -119,35 +115,13 @@ C) Create a Safe
 </ul>
 </li>
 </ul><div class="language-ts snippet__code snippet__code--lightgreen border-top-0">
-<pre><code class="language-ts">
-const safeSdk = await safeFactory.createSafe({
-owners: ['0x1234...', '0xabcd...', '0x0987...'],
-threshold: 2
-})
-</code>
-</pre>
+<div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">const</span> safeSdk <span class="token operator">=</span> <span class="token keyword">await</span> safeFactory<span class="token punctuation">.</span><span class="token function">createSafe</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    owners<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'0x1234...'</span><span class="token punctuation">,</span> <span class="token string">'0xabcd...'</span><span class="token punctuation">,</span> <span class="token string">'0x0987...'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    threshold<span class="token operator">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
 </div></div></div></div></div>
 
 For further information on how to set up a safe account and how to choose the right parameters, please refer to the [official guidelines](https://help.gnosis-safe.io/en/articles/4772567-what-gnosis-safe-setup-should-i-use).
-
-
-```ts
-import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk' 
-
-const safeFactory = new EthersSafeFactory(
-    signer,
-    proxyFactoryAddress,
-    safeSingletonAddress
-)
-```
-
-
-```ts
-const safeSdk = await safeFactory.createSafe({
-    owners: ['0x1234...', '0xabcd...', '0x0987...'],
-    threshold: 2
-})
-```
 
 ## UI
 
