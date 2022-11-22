@@ -97,17 +97,14 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
             </li>
         </ul>
         <div class="language-ts snippet__code snippet__code--lightgreen border-top-0">
-            <pre>
-                <code class="language-ts">
-import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk'
-
-const safeFactory = new EthersSafeFactory(
-    signer,
-    proxyFactoryAddress,
-    safeSingletonAddress
-)
-                </code>
-            </pre>
+            <code class="language-ts">
+                import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk' 
+                const safeFactory = new EthersSafeFactory(
+                    signer,
+                    proxyFactoryAddress,
+                    safeSingletonAddress
+                )
+            </code>
         </div>
         <blockquote class="mt-3">
             <p>If you are working on RSK networks, you can use the contracts already deployed on <a href="#mainnet">MAINNET</a> OR <a href="#testnet">TESTNET</a>.</p>
@@ -129,14 +126,12 @@ const safeFactory = new EthersSafeFactory(
             </li>
         </ul>
         <div class="language-ts snippet__code snippet__code--lightgreen border-top-0">
-            <pre>
-                <code class="language-ts">
-const safeSdk = await safeFactory.createSafe({
-    owners: ['0x1234...', '0xabcd...', '0x0987...'],
-    threshold: 2
-})
-                </code>
-            </pre>
+            <code class="language-ts">
+                const safeSdk = await safeFactory.createSafe({
+                    owners: ['0x1234...', '0xabcd...', '0x0987...'],
+                    threshold: 2
+                })
+            </code>
         </div> 
     </li>
 </ul>
