@@ -96,9 +96,9 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
                 </ul>
             </li>
         </ul>
-        <div class="snippet__code snippet__code--lightgreen border-top-0">
+        <div class="language-ts snippet__code snippet__code--lightgreen border-top-0">
             <pre>
-                <code>
+                <code class="language-ts">
 import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk'
 
 const safeFactory = new EthersSafeFactory(
@@ -120,17 +120,17 @@ const safeFactory = new EthersSafeFactory(
                 <strong>Parameters</strong>
                 <ul>
                     <li>
-                        <code class="highlighter-rouge">owners: str[]</code> - list of owner addresses
+                        <code>owners: str[]</code> - list of owner addresses
                     </li>
                     <li>
-                        <code class="highlighter-rouge">threshold: number</code> - the minimum number of owner approvals required to execute a safe transaction.
+                        <code>threshold: number</code> - the minimum number of owner approvals required to execute a safe transaction.
                     </li>
                 </ul>
             </li>
         </ul>
-        <div class="snippet__code snippet__code--lightgreen border-top-0">
+        <div class="language-ts snippet__code snippet__code--lightgreen border-top-0">
             <pre>
-                <code>
+                <code class="language-ts">
 const safeSdk = await safeFactory.createSafe({
     owners: ['0x1234...', '0xabcd...', '0x0987...'],
     threshold: 2
