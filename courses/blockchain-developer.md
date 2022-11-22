@@ -1,0 +1,119 @@
+---
+layout: rsk
+title: Rootstock Blockchain Developer Course (beta)
+tags: rsk, faqs, help, support, course, rootstock, ambassador-program, beta
+description: "Welcome to the Rootstock Blockchain Developer Course (beta). Learn how to write, test, secure, deploy and verify smart contracts on the Rootstock blockchain network."
+render_features: 'collapsible'
+---
+
+Welcome to the Rootstock Blockchain Developer Course. 
+Your pathway to becoming a Blockchain Developer. 
+
+![blockchain-developer-banner](/assets/img/courses/welcome.jpg)
+
+This course aims to teach you how to develop on the Rootstock blockchain, with a major focus on smart contract development.
+
+In this course, you will learn about the Rootstock blockchain, how to write, test, compile, deploy, secure, and verify smart contracts using Solidity.
+
+## Who should take the course?
+
+* Developers or anyone familiar with programming in any language or are familiar with smart contract development on another network than Rootstock.
+
+> Note that this course does not require any pre-requisite knowledge about blockchain or web3; and neither does it aim to teach your about this topic. 
+> If you would like to learn about what blockchains are, how they work, and how to use them, there are plenty of other materials to learn from - including the [Rootstock Blockchain User Course](https://rsk.thinkific.com/courses/blockchain-user)!
+
+## What to expect
+
+**Note that this is not the complete course, and in this current iteration only the following materials are available**:
+
+* 8 Modules
+* Code examples (initial and completed)
+* Code assessments
+* Lab videos
+* Explainer videos (coming soon)
+• Students Handout
+* Slide decks
+* Quizzes
+
+### Modules
+<div class="owl-carousel owl-theme">
+    <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-01.jpg" alt="moduleOne">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Course Introduction</a>
+        </a>
+    </div>
+     <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-02.jpg" alt="moduleTwo">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Blockchain Nodes</a>
+        </a>
+     </div>
+     <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-03.jpg" alt="moduleThree">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Write Smart Contracts</a>
+        </a>
+     </div>
+      <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-04.jpg" alt="moduleFour">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Test Smart Contracts</a>
+        </a>
+     </div>
+     <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-05.jpg" alt="moduleFive">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Secure Smart Contracts</a>
+        </a>
+     </div>
+     <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-06.jpg" alt="moduleSix">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Deploy Smart Contracts</a>
+        </a>
+     </div>
+      <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-07.jpg" alt="moduleSeven">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Verify Smart Contracts</a>
+        </a>
+     </div>
+      <div class="item">
+        <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
+        <img src="/assets/img/courses/modules/modules-course-08.jpg" alt="moduleEight">
+        <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Course Completion</a>
+        </a>
+     </div>
+</div>
+
+## Benefits of taking the Blockchain Developer Course
+* its free
+* Level up your knowledge of smart contracts and smart contract security
+* Automatically stand a chance to become a developer ambassador and earn rewards
+* Earn a Certificate
+
+<button src="https://rsk.thinkific.com/courses/blockchain-developer/" class="orange-button">Become a Blockchain Developer</button>
+
+## FAQs
+
+See frequently asked questions about the Rootstock Blockchain Developer Course.
+
+[](#top "collapsible")
+- 1) Where can I go for help?
+    ```
+    A: Go to the Rootstock community slack: https://rsk.co/slack, and ask questions on the #rsk-user-course channel.
+    ```
+- 2) Is there a time frame for completing the course?
+  ```
+  A: No, this course is entirely self paced, and materials are available on demand. 
+  ```
+- 3) Are there any prior requirements for taking the course?
+  ```
+  A: This course does not require any pre-requisite knowledge about blockchain or web3; and neither does it aim to teach your about this topic. 
+  ```
+- 4) Will I get a Course completion certificate if I complete the course?
+  ```
+  A: This is not the complete course, so there's not a certificate at the end unfortunately! When the course is finalised we will enable certificates, and your progress in the beta will count towards completion.
+  ```
+
