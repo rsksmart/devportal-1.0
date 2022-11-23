@@ -108,14 +108,6 @@ Here are some frequently asked questions about the
 Rootstock Blockchain Developer Course.
 
 [](#top "collapsible")
-- Where can I go for help?
-  > A:
-  > Go to the Rootstock community slack: https://rsk.co/slack,
-  > and ask questions on the #rsk-user-course channel.
-- Is there a time frame for completing the course?
-  > A:
-  > No, this course is entirely self paced,
-  > and materials are available on demand.
 - Are there any prior requirements for taking the course?
   > A: This course does not require any pre-requisite knowledge
   > about blockchain or web3;
@@ -127,3 +119,14 @@ Rootstock Blockchain Developer Course.
   > When the course is finalised we will enable certificates,
   > and your progress during the beta will count towards completion,
   > and therefore the certificate as well.
+- Where can I go for help?
+  > A:
+  > Go to the [Rootstock community slack](https://rsk.co/slack),
+  > and ask questions on the `#rsk-dev-course` channel.
+- Is there a time frame for completing the course?
+  > A:
+  > No, this course is entirely self paced,
+  > and materials are available on demand.
+- Is this course really free?
+  > A:
+  > Yes, 100% free. Enjoy!
