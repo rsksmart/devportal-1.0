@@ -11,7 +11,7 @@ tags: newsletter, rif, rbtc, defi, decentralized, quick-start, guides, tutorial,
 
     <tr>
         <td>
-            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+            <label for="mce-EMAIL">Email Address <span><Julius1999.md@gmail.com> class="asterisk">*</span></label>
         </td>
         <td>
             <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
