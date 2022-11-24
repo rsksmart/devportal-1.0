@@ -17,7 +17,9 @@ In this course, you will learn how to write, test, compile, deploy, secure, and 
 
 ... and it is completely free!
 
-<button src="https://rsk.thinkific.com/courses/blockchain-developer/" class="orange-button">Become a Blockchain Developer</button>
+<a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="_blank">
+  <button class="orange-button">Become a Blockchain Developer</button>
+</a>
 
 ## Who should take the course?
 
@@ -100,7 +102,9 @@ Each module has the following types of material:
 * Earn a certificate upon completion
 * Qualify to become a Developer Ambassador (and earn rewards!)
 
-<button src="https://rsk.thinkific.com/courses/blockchain-developer/" class="orange-button">Become a Blockchain Developer</button>
+<a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="_blank">
+  <button class="orange-button">Become a Blockchain Developer</button>
+</a>
 
 ## FAQs
 
