@@ -68,7 +68,7 @@ If the RSKj process starts but then stops after a few seconds,
 there is likely an error during startup.
 Likewise, if the RSKj process crashes unexpectedly,
 there is also an error.
-However, there is no output in the terminal/ shell from RSKj.
+However, there is no output in the terminal/shell from RSKj.
 You need to view the log files, which are (by default)
 located in a `logs` directory in the same folder as the JAR file.
 Use the following command to see all of its output as it runs.
@@ -124,7 +124,7 @@ For example, on Linux, if your username is `bguiz` and RSK is running in `regtes
 the database directory default is `/home/bguiz/.rsk/regtest`.
 
 The data stored in this directory can get corrupted for several reasons,
-such as imporoperly shutting down the node.
+such as improperly shutting down the node.
 If this has happened, and you cannot recover by other means,
 you have several options:
 
