@@ -22,7 +22,7 @@ In this course, you will learn how to write, test, compile, deploy, secure, and 
 ## Who should take the course?
 
 * Developers or anyone familiar with programming in any language; or
-* Developers who are familiar with web3 on on blockchain networks
+* Developers who are familiar with web3 on blockchain networks
 
 > Note that this course does not require any pre-requisite knowledge about blockchain or web3.
 >
