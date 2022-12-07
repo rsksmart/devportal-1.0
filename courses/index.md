@@ -29,5 +29,27 @@ description: "Welcome to Rootstock Courses;  Explore learning materials and cour
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/courses/user-course/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/courses/rootstock-icon.png" alt="rootstock icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/courses/user-course/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Rootstock User Course</p>
+                        <p class="card-desc">Welcome to the Rootstock User Course. Learn how to use and interact with the Rootstock blockchain network!.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/courses/user-course/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
-
