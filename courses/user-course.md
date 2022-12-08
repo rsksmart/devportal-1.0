@@ -24,7 +24,10 @@ This course is for a technical user, but does not require or involve any program
 * Those who have a basic understanding of blockchain fundamentals
 * Those who want to go from *knowing what blockchain is* to *using blockchain* in a practical way.
 
-> If you would like to learn how to write, test, compile, deploy, secure, and verify smart contracts using Solidity, there are plenty of other materials to learn from - including the [Rootstock Blockchain Developer Course](https://rsk.thinkific.com/courses/blockchain-developer/)!
+> If you *do* know how to code, we also suggest taking the
+> [Rootstock Blockchain Developer Course](https://rsk.thinkific.com/courses/blockchain-developer/).
+> There you'll learn how to run your own blockchain node, as well as
+> write, test, compile, deploy, secure, and verify smart contracts using Solidity.
 
 ## What to expect
 
@@ -38,8 +41,8 @@ Each module has the following types of material:
 ## Benefits of taking the Blockchain Developer Course
 
 * It's free!
-* You will receive a completion certificate at the end of the course
-* You will acquire knowledge of key concepts in the blockchain and crypto space
+* Receive a completion certificate at the end of the course
+* Acquire hands-on experience on how to use blockchain technology
 * Qualify to become a Rootstock Ambassador (and earn rewards!)
 
 <a href="https://rsk.thinkific.com/courses/blockchain-user/" target="_blank">
@@ -54,7 +57,7 @@ Rootstock User Course.
 [](#top "collapsible")
 - Are there any prior requirements for taking the course?
   > A: 
-  > A basic understanding of blockchain fundamentals. 
+  > An understanding of blockchain fundamentals can be helpful, but is optional.
   > This course is focused on enabling the student to go from *knowing what blockchain is* to *using 
   > blockchain* in a practical way.
 - Is there a time frame for completing the course? 
@@ -63,7 +66,7 @@ Rootstock User Course.
 - Where can I go for help?
   > A:
   > Go to the [Rootstock community slack](https://rsk.co/slack),
-  > and ask questions on the `#rsk-dev-course` channel.
+  > and ask questions on the `#rsk-user-course` channel.
 - Is this course really free?
   > A:
   > Yes, 100% free. Enjoy!
