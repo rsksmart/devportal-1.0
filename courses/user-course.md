@@ -9,6 +9,8 @@ render_features: 'collapsible'
 Welcome to the Rootstock User Course.
 Your pathway to becoming a Rootstock User.
 
+![blockchain-developer-banner](/assets/img/courses/user-course-modules/welcome.jpg)
+
 This course aims to teach you how to use and interact with the Rootstock blockchain network.
 
 This course is for a technical user, but does not require or involve any programming knowledge.
@@ -37,6 +39,47 @@ Each module has the following types of material:
 * Lab videos
 * Explainer videos
 * Quizzes
+
+### Modules
+
+<div class="owl-carousel owl-theme">
+   <div class="item">
+      <a href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">
+      <img src="/assets/img/courses/user-course-modules/blockchain_accounts.jpg" alt="moduleOne">
+      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">Blockchain Accounts</a>
+      </a>
+   </div>
+   <div class="item">
+      <a href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">
+      <img src="/assets/img/courses/user-course-modules/transaction.jpg" alt="moduleTwo">
+      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">Transactions</a>
+      </a>
+   </div>
+   <div class="item">
+      <a href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">
+      <img src="/assets/img/courses/user-course-modules/getting_tokens.jpg" alt="moduleThree">
+      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">Tokens</a>
+      </a>
+   </div>
+   <div class="item">
+      <a href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">
+      <img src="/assets/img/courses/user-course-modules/security_wallets.jpg" alt="moduleFour">
+      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">Wallets</a>
+      </a>
+   </div>
+   <div class="item">
+      <a href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">
+      <img src="/assets/img/courses/user-course-modules/trade_fungible_tokens.jpg" alt="moduleFive">
+      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">Trade Fungible Tokens</a>
+      </a>
+   </div>
+   <div class="item">
+      <a href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">
+      <img src="/assets/img/courses/user-course-modules/lend_fungible_tokens.jpg" alt="moduleSix">
+      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-user/" target="blank">Lend Fungible Tokens</a>
+      </a>
+   </div>
+</div>
 
 ## Benefits of taking the Blockchain Developer Course
 
