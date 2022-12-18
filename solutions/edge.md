@@ -119,8 +119,8 @@ Watch this short explainer video:
 
 ### Fungible tokens
 
-| Symbol | Name | Token Standard | Network
-| --- | --- | --- | --- | --- |
+| Symbol | Name | Token Standard | Network |
+| --- | --- | --- | --- |
 | [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/ ) | ERC20 | Ethereum |
 | [USDT](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) | [Tether USD](https://tether.to/)  | ERC20 | Ethereum |
