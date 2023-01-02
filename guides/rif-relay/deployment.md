@@ -48,7 +48,7 @@ permalink: /guides/rif-relay/deployment/
         As shown, we have two sets of Smart Wallets with their own verifiers. This is because each verifier uses the factory to perform deploy and relay validations. For testing purposes, we will be using the Smart Wallet Contracts.
 
     - Testnet
-      * To start the process on `Testnet` we need an account with funds. The funds retrieval can be done from the [tRBTC Faucet](https://faucet.rsk.co/).
+      * To start the process on `Testnet`, we need an account with funds. The funds retrieval can be done from the [tRBTC Faucet](https://faucet.rsk.co/).
 
         ```
         npm run deploy testnet
