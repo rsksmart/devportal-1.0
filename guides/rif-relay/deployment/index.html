@@ -333,7 +333,6 @@
               <li><a href="../../../rif/relay/versions/">Versions</a></li>
               <li><a href="../../../rif/relay/gas-costs/">Gas Costs</a></li>
               <li><a href="../../../rif/relay/contracts/">Contracts</a></li>
-              <li><a href="../../../rif/relay/operator-manual/">Operator Manual</a></li>
             </ul>
           </li> <!-- /RIF Relay -->
           <li>
@@ -1157,8 +1156,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-11-16 02:14:47 +0000T00:00:00.000Z">2022-11-16</time> | -->
-     12' to read |
+    <!--time role="presentation" datetime="2023-01-02 14:28:16 +0000T00:00:00.000Z">2023-01-02</time> | -->
+     13' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/deployment.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -1379,7 +1378,6 @@
               <li><a href="../../../rif/relay/versions/">Versions</a></li>
               <li><a href="../../../rif/relay/gas-costs/">Gas Costs</a></li>
               <li><a href="../../../rif/relay/contracts/">Contracts</a></li>
-              <li><a href="../../../rif/relay/operator-manual/">Operator Manual</a></li>
             </ul>
           </li> <!-- /RIF Relay -->
           <li>
@@ -2210,14 +2208,14 @@
 |===================================|============================================|
 </code></pre></div>            </div>
 
-            <p>As we can see we have two sets of Smart Wallets with their own verifiers. This is because each verifier uses the factory to do deploy and relay validations. For testing purposes, we will be using the Smart Wallet Contracts.</p>
+            <p>As shown, we have two sets of Smart Wallets with their own verifiers. This is because each verifier uses the factory to perform deploy and relay validations. For testing purposes, we will be using the Smart Wallet Contracts.</p>
           </li>
         </ul>
       </li>
       <li>Testnet
         <ul>
           <li>
-            <p>To start the process on <code class="highlighter-rouge">Testnet</code> we need an account with funds. The funds retreival can be done from the <a href="https://faucet.rsk.co/" rel="external noopener noreferrer" target="_blank">tRBTC Faucet</a>.</p>
+            <p>To start the process on <code class="highlighter-rouge">Testnet</code>, we need an account with funds. The funds retrieval can be done from the <a href="https://faucet.rsk.co/" rel="external noopener noreferrer" target="_blank">tRBTC Faucet</a>.</p>
 
             <div class="highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code>npm run deploy testnet
@@ -2226,13 +2224,24 @@
               <p>Take into consideration that testnet needs to be configured in the truffle.js file.</p>
             </blockquote>
 
-            <p>RIF Relay already have contracts deployed on <code class="highlighter-rouge">Testnet</code> and can be found in the <a href="../../../rif/relay/contracts/">contracts</a> section.</p>
+            <p>RIF Relay already have contracts deployed on <code class="highlighter-rouge">Testnet</code>, and can be found in the <a href="../../../rif/relay/contracts/">contracts</a> section.</p>
           </li>
         </ul>
       </li>
       <li>Mainnet
         <ul>
-          <li>TBD</li>
+          <li>
+            <p>To start the process on <code class="highlighter-rouge">Mainnet</code>, we need an account with funds.</p>
+
+            <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>npm run deploy mainnet
+</code></pre></div>            </div>
+            <blockquote>
+              <p>Take into consideration that mainnet needs to be configured in the truffle.js file.</p>
+            </blockquote>
+
+            <p>RIF Relay already have contracts deployed on <code class="highlighter-rouge">Mainnet</code> and can be found in the <a href="../../../rif/relay/contracts/">contracts</a> section.</p>
+          </li>
         </ul>
       </li>
     </ul>
@@ -2398,7 +2407,14 @@
       </li>
       <li>Mainnet
         <ul>
-          <li>TBD</li>
+          <li>In the RIF Relay Contracts we will need to execute the command:
+            <div class="highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>npm run allowTokens 0x77740cE4d7897430E74D5E06540A9Eac2C2Dee70 mainnet
+</code></pre></div>            </div>
+            <blockquote>
+              <p>The <code class="highlighter-rouge">allowTokens</code> script will use the Mainnet network configured in <code class="highlighter-rouge">truffle.js</code>, this network will be required to use the account that did the deployment of the contracts.</p>
+            </blockquote>
+          </li>
         </ul>
       </li>
     </ul>
@@ -2417,7 +2433,7 @@
       <li>Regtest
         <ul>
           <li>
-            <p>Below is an example using the RSKj node locally and  the contracts that were deployed in <code class="highlighter-rouge">Regtest</code>.</p>
+            <p>Below is an example using the RSKj node locally and the contracts that were deployed in <code class="highlighter-rouge">Regtest</code>.</p>
 
             <div class="language-json highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
@@ -2481,7 +2497,7 @@
       <li>Testnet
         <ul>
           <li>
-            <p>Below is an example using the off-chain components deployed on RSK Testnet (https://public-node.testnet.rsk.co).</p>
+            <p>Below is an example using the off-chain components deployed on RSK Testnet (https://public-node.testnet.rsk.co). <strong>Important: keep in mind that due to some specific RSKj node modules enabled, it’s not possible to connect RIF Relay Server to the public nodes</strong></p>
 
             <div class="language-json highlighter-rouge">
 <div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
@@ -2559,13 +2575,13 @@
               <li>Registers the Relay Server</li>
             </ul>
 
-            <p>Now the server is ready to start processing transactions and a ready message will be on the console.</p>
+            <p>Now the server is ready to start processing transactions and a message with “ready” will be shown on the console.</p>
           </li>
         </ul>
       </li>
       <li>Mainnet
         <ul>
-          <li>TBD</li>
+          <li>To run RIF Relay Server on RSK Mainnet, the procedure is the same as the one on Testnet, the only part that is different is the configuration. We need to configure it to use contracts deployed on Mainnet and an RSKj node connected to Mainnet.</li>
         </ul>
       </li>
     </ul>
