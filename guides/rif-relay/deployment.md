@@ -45,20 +45,27 @@ permalink: /guides/rif-relay/deployment/
         |===================================|============================================|
         ```
 
-        As we can see we have two sets of Smart Wallets with their own verifiers. This is because each verifier uses the factory to do deploy and relay validations. For testing purposes, we will be using the Smart Wallet Contracts.
+        As shown, we have two sets of Smart Wallets with their own verifiers. This is because each verifier uses the factory to perform deploy and relay validations. For testing purposes, we will be using the Smart Wallet Contracts.
 
     - Testnet
-      * To start the process on `Testnet` we need an account with funds. The funds retreival can be done from the [tRBTC Faucet](https://faucet.rsk.co/).
+      * To start the process on `Testnet`, we need an account with funds. The funds retrieval can be done from the [tRBTC Faucet](https://faucet.rsk.co/).
 
         ```
         npm run deploy testnet
         ```
         > Take into consideration that testnet needs to be configured in the truffle.js file.
 
-        RIF Relay already have contracts deployed on `Testnet` and can be found in the [contracts](/rif/relay/contracts) section.
+        RIF Relay already have contracts deployed on `Testnet`, and can be found in the [contracts](/rif/relay/contracts) section.
     
     - Mainnet
-      * TBD
+      * To start the process on `Mainnet`, we need an account with funds.
+
+        ```
+        npm run deploy mainnet
+        ```
+        > Take into consideration that mainnet needs to be configured in the truffle.js file.
+
+        RIF Relay already have contracts deployed on `Mainnet` and can be found in the [contracts](/rif/relay/contracts) section.
 
 - 2) Revenue Sharing
   * The Revenue Sharing is an optional feature that can be implemented using a collector contract. In principle, any number of `Collector` contracts can be deployed and used. This does not automatically occur alongside the deployment of the rest of the Relay contracts. For an overview of the `Collector` contract, please see [the corresponding architecture section](/rif/relay/architecture/#collector).
@@ -157,7 +164,11 @@ permalink: /guides/rif-relay/deployment/
         > The allowTokens script will use the testnet network configured in the truffle.js, this network will be required to use the account that did the deployment of the contracts.
 
     - Mainnet
-      * TBD
+      * In the RIF Relay Contracts we will need to execute the command:
+        ```
+        npm run allowTokens 0x77740cE4d7897430E74D5E06540A9Eac2C2Dee70 mainnet
+        ```
+        > The `allowTokens` script will use the Mainnet network configured in `truffle.js`, this network will be required to use the account that did the deployment of the contracts.
 
 
 - 4) Run RIF Relay Server
@@ -167,7 +178,7 @@ permalink: /guides/rif-relay/deployment/
 
   [](#top "collapsible")
     - Regtest
-      * Below is an example using the RSKj node locally and  the contracts that were deployed in `Regtest`.
+      * Below is an example using the RSKj node locally and the contracts that were deployed in `Regtest`.
 
         ```json
         {
@@ -215,7 +226,7 @@ permalink: /guides/rif-relay/deployment/
 
         Now the server is ready to start processing transactions and a ready message will be on the console.
     - Testnet
-      * Below is an example using the off-chain components deployed on RSK Testnet (https://public-node.testnet.rsk.co). 
+      * Below is an example using the off-chain components deployed on RSK Testnet (https://public-node.testnet.rsk.co). **Important: keep in mind that due to some specific RSKj node modules enabled, it's not possible to connect RIF Relay Server to the public nodes**
 
         ```json
         {
@@ -281,6 +292,6 @@ permalink: /guides/rif-relay/deployment/
         - Adds the Relay Worker
         - Registers the Relay Server
 
-        Now the server is ready to start processing transactions and a ready message will be on the console.
+        Now the server is ready to start processing transactions and a message with "ready" will be shown on the console.
     - Mainnet
-      * TBD
+      * To run RIF Relay Server on RSK Mainnet, the procedure is the same as the one on Testnet, the only part that is different is the configuration. We need to configure it to use contracts deployed on Mainnet and an RSKj node connected to Mainnet.
