@@ -163,7 +163,8 @@ Then, send the request body:
 
 ## Resources
 
-- [Getblock Solutions Page](/solutions/getblock/)
+- [GetBlock Solutions Page](/solutions/getblock/)
+- [Watch the GetBlock - Rootstock AMA Recording on Youtube](https://www.youtube.com/watch?v=k8qowcdtxm0)
 - [About GetBlock](https://getblock.io/about)
 - [What is a Blockchain Node and How Does it Work?](https://getblock.io/blog/what-is-a-blockchain-node-and-how-does-it-work)
 - [Getting started with GetBlock: Authentication with API Key and API methods (JSON-RPC, REST, Websockets, etc.)](https://getblock.io/docs)

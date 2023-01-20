@@ -21,6 +21,13 @@ GetBlock is a provider of access to full nodes of the most popular cryptocurrenc
 
 > Users of GetBlock can connect the [RSK](https://getblock.io/nodes/rsk) node to their application using a fully compliant JSON-RPC API method. In addition, statistics and parameters for the RSK node are displayed in real time on GetBlock which guarantees direct and instant synchronization with the blockchain.
 
+## Watch GetBlock Rootstock AMA Recording on Youtube
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/k8qowcdtxm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+
 ## About GetBlock
 
 GetBlock is a service that provides a fast and easy connection to RSK nodes, and a continuously growing list of over 40 cryptocurrency nodes.
