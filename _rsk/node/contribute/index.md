@@ -17,6 +17,9 @@ Compile and run your own node, step by step:
   - [On Linux](/rsk/node/contribute/linux)
   - [On Mac](/rsk/node/contribute/macos)
 
+> Note that starting from v4.2.0, Rootstock (RSK) now supports ARM CPUs on Linux OS. 
+Read more in [RSK Hop Release v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0).
+
 After the previous steps have been completed, you can try these tutorials:
 
 - [From one node to a mining local network](/rsk/node/configure/for-mining)
