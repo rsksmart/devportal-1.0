@@ -33,15 +33,18 @@ Recommended IDEs:
 
 ## Get the source code
 
-Using the installed command-line tool Git, you need to retrieve (or clone) the RskJ Github source code from [here](https://github.com/rsksmart/rskj).
+Using the installed command-line tool Git, you need to retrieve (or clone) the RSKj Github source code from [here](https://github.com/rsksmart/rskj).
 
-Run these commands on Git command line:
+Run these commands in the terminal:
 
 ```shell
 git clone --recursive https://github.com/rsksmart/rskj.git
 cd rskj
 git checkout tags/IRIS-3.2.0 -b IRIS-3.2.0
 ```
+
+> Note that starting from v4.2.0, Rootstock (RSK) now supports ARM CPUs on Linux OS. 
+Read more in [RSK Hop Release v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0).
 
 *Note:* It is better to download the code into a short path.
 
