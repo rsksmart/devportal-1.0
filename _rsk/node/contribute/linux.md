@@ -43,10 +43,9 @@ cd rskj
 git checkout tags/IRIS-3.2.0 -b IRIS-3.2.0
 ```
 
-> Note that starting from v4.2.0, Rootstock (RSK) now supports ARM CPUs on Linux OS. 
-Read more in [RSK Hop Release v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0).
-
 *Note:* It is better to download the code into a short path.
+
+> **Important Notice: RSKj HOP v4.2.0 now supports ARM CPUs on Linux OS. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
 
 ## Ensure the security chain
 

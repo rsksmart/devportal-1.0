@@ -9,6 +9,8 @@ render_features: 'tables-with-borders'
 
 See [CLI flags](../cli/) for command line flag options.
 
+> **Important Notice: RSKj HOP v4.2.0, RocksDB is no longer experimental. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
+
 ## Advanced Configuration
 
 For advanced configuration requirements, please refer to this
@@ -127,13 +129,11 @@ Selects the database that will be used to store the information.
 Possible options are:
 
 * `leveldb` (default)
-* `rocksdb` (experimental)
+* `rocksdb`
 
 If you wish to switch between the different storage options,
 for example from `leveldb` to `rocksdb` or vice versa, 
 you must **restart** the node with the import option each time you do so.
-
-**Warning:** This feature is considered experimental, do not use in production.
 
 ## vm
 
