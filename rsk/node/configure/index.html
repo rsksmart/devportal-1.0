@@ -1156,8 +1156,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-09-07 16:23:24 +0000T00:00:00.000Z">2022-09-07</time> | -->
-     4' to read |
+    <!--time role="presentation" datetime="2023-02-04 04:44:55 +0000T00:00:00.000Z">2023-02-04</time> | -->
+     5' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/configure/index.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2226,7 +2226,12 @@ Check <a href="reference/">here</a> for all the configuration option.</p>
 </li>
 </ul>
 
-<h3 id="using-rocksdb-experimental">Using RocksDB (Experimental)</h3>
+<h3 id="using-rocksdb">Using RocksDB</h3>
+
+<blockquote>
+  <p>IMPORTANT NOTICE: Starting from RSKj HOP v4.2.0, RocksDB is <strong>no longer experimental</strong>.<br>
+Read more in <a href="https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0" rel="external noopener noreferrer" target="_blank">RSK Hop Release v4.2.0</a>.</p>
+</blockquote>
 
 <p>By default, RSKj runs using <a href="https://dbdb.io/db/leveldb" rel="external noopener noreferrer" target="_blank">LevelDB</a>.
 There is an option to use an alternate storage option,
@@ -2267,8 +2272,6 @@ Note the use of the <code class="highlighter-rouge">--import</code> flag, which 
 <ul>
   <li><code class="highlighter-rouge">java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import</code></li>
 </ul>
-
-<p><strong>Warning:</strong> This feature is considered experimental, do not use in production.</p>
 
 <h3 id="troubleshooting">Troubleshooting</h3>
 

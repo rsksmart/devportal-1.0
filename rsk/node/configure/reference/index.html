@@ -1164,7 +1164,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-06-29 13:26:20 +0000T00:00:00.000Z">2022-06-29</time> | -->
+    <!--time role="presentation" datetime="2023-02-03 15:48:26 +0000T00:00:00.000Z">2023-02-03</time> | -->
      11' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/_rsk/node/configure/reference.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2172,6 +2172,10 @@
 
                   <p>See <a href="../cli/">CLI flags</a> for command line flag options.</p>
 
+<blockquote>
+  <p><strong>Important Notice: RSKj HOP v4.2.0, RocksDB is no longer experimental. See <a href="../#using-rocksdb">using RocksDB</a></strong>.</p>
+</blockquote>
+
 <h2 id="advanced-configuration">Advanced Configuration</h2>
 
 <p>For advanced configuration requirements, please refer to this
@@ -2370,15 +2374,12 @@ Possible options are:</p>
 <ul>
   <li>
 <code class="highlighter-rouge">leveldb</code> (default)</li>
-  <li>
-<code class="highlighter-rouge">rocksdb</code> (experimental)</li>
+  <li><code class="highlighter-rouge">rocksdb</code></li>
 </ul>
 
 <p>If you wish to switch between the different storage options,
 for example from <code class="highlighter-rouge">leveldb</code> to <code class="highlighter-rouge">rocksdb</code> or vice versa, 
 you must <strong>restart</strong> the node with the import option each time you do so.</p>
-
-<p><strong>Warning:</strong> This feature is considered experimental, do not use in production.</p>
 
 <h2 id="vm">vm</h2>
 
