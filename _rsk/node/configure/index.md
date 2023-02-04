@@ -69,7 +69,7 @@ This can be done in two ways:
 ### Using RocksDB
 
 > IMPORTANT NOTICE: Starting from RSKj HOP v4.2.0, RocksDB is **no longer experimental**.  
-> - This release includes support for running RSKj on ARM processors, compatibility with Java 17, and fixes for JSON-RPC issues, among other things. Additionally, some features, such as Peer Scoring and support for RocksDB storage library, are now considered production-ready. Read more in [RSK Hop Release v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0).
+> Read more in [RSK Hop Release v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0).
 
 By default, RSKj runs using [LevelDB](https://dbdb.io/db/leveldb).
 There is an option to use an alternate storage option,
