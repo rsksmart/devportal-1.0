@@ -120,7 +120,7 @@ A logback configuration example can be downloaded from [here](https://github.com
 If you're running a node [using the release jar file](/rsk/node/install/java) use the following command:
 
 ```bash
-java -cp rskj-core-3.2.0-IRIS-all.jar -Dlogback.configurationFile=/full/path/to/logback.xml co.rsk.Start
+java -cp rskj-core-4.2.0-HOP-all.jar -Dlogback.configurationFile=/full/path/to/logback.xml co.rsk.Start
 ```
 
 #### Using logback with a compiled node
