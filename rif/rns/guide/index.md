@@ -10,9 +10,9 @@ tags: rns, guide, rns-user-guide
     - [Use the testnet](/rif/rns/guide/intro/#use-the-testnet)
 - ### [Setup](/rif/rns/guide/setup/)
     - ### [Compatible wallets](/rif/rns/guide/setup/#compatible-wallets)
-        - [Connect Nifty wallet to RSK](/rif/rns/guide/setup/#connect-nifty-wallet-to-rsk)
-        - [Connect Metamask wallet to RSK](/rif/rns/guide/setup/#connect-metamask-wallet-to-rsk)
-        - [Connect Brave to RSK](/rif/rns/guide/brave/)
+        - [Connect Nifty wallet to Rootstock (RSK)](/rif/rns/guide/setup/#connect-nifty-wallet-to-rootstock-rsk)
+        - [Connect Metamask wallet to Rootstock (RSK)](/rif/rns/guide/setup/#connect-metamask-wallet-to-rootstock-rsk)
+        - [Connect Brave to Rootstock (RSK)](/rif/rns/guide/brave/)
     - [Getting RBTC](/rif/rns/guide/setup/#getting-rbtc)
     - ### [Getting RIF Tokens](/rif/rns/guide/setup/#getting-rif-tokens)
         - [Display RIF Token in Nifty wallet](/rif/rns/guide/setup/#display-amount-of-tokens-in-the-nifty-wallet)
@@ -28,7 +28,7 @@ tags: rns, guide, rns-user-guide
         - [Extend your domain expiration time](/rif/rns/guide/operations/#extend-your-domain-expiration-time)
         - [Transfer your domain](/rif/rns/guide/operations/#transfer-your-domain)
     - [Your addresses](/rif/rns/guide/operations/#your-addresses)
-        - [Change the RSK address](/rif/rns/guide/operations/#change-the-rsk-address)
+        - [Change the Rootstock address](/rif/rns/guide/operations/#change-the-rootstock-rsk-address)
         - [Add a cryptocurrency address](/rif/rns/guide/operations/#add-a-currency-address)
         - [Update a cryptocurrency address](/rif/rns/guide/operations/#change-a-currency-address)
         - [Delete a cryptocurrency address](/rif/rns/guide/operations/#delete-a-currency-address)
@@ -41,6 +41,6 @@ tags: rns, guide, rns-user-guide
 
 ----
 
-[Contact us on the RSK community Slack](/slack/) |
+[Contact us on the Rootstock community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

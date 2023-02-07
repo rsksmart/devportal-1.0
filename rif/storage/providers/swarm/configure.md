@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Running Configurations for Swarm
-tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Use the following cheatsheet to run Swarm with the desired capabilities.
@@ -25,7 +25,7 @@ swarm --rns-api 0x99a12be4C89CbF6CFD11d1F2c029904a7B644368@https://public-node.r
 
 In this example:
 - `0x99a12be4C89CbF6CFD11d1F2c029904a7B644368` is the address for the RNS Resolver contract.
-- `https://public-node.rsk.co` is the RSK blockchain endpoint to be used when interacting with the contract.
+- `https://public-node.rsk.co` is the Rootstock (RSK) blockchain endpoint to be used when interacting with the contract.
 
 # • ENS Resolution
 

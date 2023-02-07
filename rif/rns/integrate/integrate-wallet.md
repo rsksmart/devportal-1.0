@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Integrate your wallet with RNS
-tags: rif, rns, javascript, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, javascript, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 The first thing you need to do is to register the name of your wallet now! Search for it here:
@@ -11,10 +11,10 @@ The first thing you need to do is to register the name of your wallet now! Searc
 **Content**
 
 * [Use domains instead of addresses within your wallet](#use-domains-instead-of-addresses-within-your-app)
-    * [Use RSK domains](#use-domains-for-rsk-addresses)
+    * [Use Rootstock (RSK) domains](#use-domains-for-rootstock-rsk-addresses)
     * [User other blockchain domains](#use-domains-in-other-blockchains)
 * [Set your users address resolution to domains](#set-address-resolution)
-    * [Set RSK address](#set-rsk-addresses)
+    * [Set Rootstock (RSK) address](#set-rootstock-rsk-addresses)
     * [Set other blockchain address](#set-other-blockchain-addresses)
 * [Register subdomains for newcomers](#register-subdomains-for-newcomers)
     * [Check for available subdomains](#check-subdomain-availability)
@@ -33,7 +33,7 @@ The first thing you need to do is to register the name of your wallet now! Searc
 
 A fundamental goal of RNS is to simplify blockchain user experience! Instead of typing addresses, why not let your users type domains? This is so much simpler!
 
-### Use domains for RSK Addresses
+### Use domains for Rootstock (RSK) Addresses
 
 The following code snippet is a method that receives a domain and returns an address. You can use it in your wallet inputs, allowing users to enter domains instead of addresses.
 
@@ -63,7 +63,7 @@ The coin ID should match the one in [SLIP-0044](https://github.com/satoshilabs/s
 
 Sometimes a user may choose to change their address, or your wallet may choose to do so for privacy purposes. It is important to keep the domain's address resolution updated.
 
-### Set RSK addresses
+### Set Rootstock (RSK) addresses
 
 Just make sure that the current user address is the owner of the domain, then copy the method placed below.
 

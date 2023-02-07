@@ -13,7 +13,7 @@ Contents
 
 ## Overview
 
- **RIF Notifier** at its core is composed of listeners that listen for events in RSK blockchain and notification services that send notifications on blockchain events to the outside world.
+ **RIF Notifier** at its core is composed of listeners that listen for events in Rootstock (RSK) blockchain and notification services that send notifications on blockchain events to the outside world.
 
  Users interact with RIF Notifier through two main services
 
@@ -29,8 +29,8 @@ Contents
  currency tokens are whitelisted by the marketplace.
 2. RIF marketplace gets the available subscription plans from the RIF notifier providers and presents to the customer.
 3. RIF marketplace sends a request to selected RIF notifier provider with the user selected subscription plan to create or renew a subscription with the topics and notification preferences.
-4. RIF notifier activates the subscription upon receipt of payment in notifier smart contract in rsk blockchain.
-5. RIF notifier listens to RSK network for the selected topics and send notifications.
+4. RIF notifier activates the subscription upon receipt of payment in notifier smart contract in Rootstock (RSK) blockchain.
+5. RIF notifier listens to Rootstock (RSK) network for the selected topics and send notifications.
 6. RIF notifier sends the notification based on selected notification preferences (SMS, EMAIL, API) for the user subscription.
 
 ## Notifier Lumino Interaction

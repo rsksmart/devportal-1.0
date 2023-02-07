@@ -1,12 +1,12 @@
 ---
 layout: rsk
 title: RNS JS Library - Advanced Usage
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Instantiate the lib with your local blockchain
 
-The library has already set the contract addresses for RSK Mainnet and Testnet, so if the Web3 instance points to one of those networks, no extra action is needed.
+The library has already set the contract addresses for Rootstock (RSK) Mainnet and Testnet, so if the Web3 instance points to one of those networks, no extra action is needed.
 If you want to use your local blockchain, contract addresses must be provided and should be sent as parameter.
 
 > If a custom blockchain has been set but the contracts addresses are not provided, it will throw [“No contract addresses provided”](/rif/rns/libs/javascript/Errors/) on the first operation invoked.
@@ -31,7 +31,7 @@ async function myCustomGetOwner(domain) {
 You can also specify a different `networkId` to perform checksum validations according to
 [EIP-1191](https://eips.ethereum.org/EIPS/eip-1191),
 it should be added in the `options` parameter.
-If the `networkId` is not provided, and the current blockchain is not RSK Mainnet or RSK Testnet, the library will validate addresses without taking in consideration the `networkId`, as explained in
+If the `networkId` is not provided, and the current blockchain is not Rootstock (RSK) Mainnet or Rootstock (RSK) Testnet, the library will validate addresses without taking in consideration the `networkId`, as explained in
 [EIP-55](https://eips.ethereum.org/EIPS/eip-55).
 
 **Example**

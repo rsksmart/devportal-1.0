@@ -1,9 +1,9 @@
 ---
 layout: rsk
 render_features: 'collapsible'
-title: rLogin - login tool for RSK
+title: rLogin - login tool for Rootstock (RSK)
 tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis
-description: rLogin - login tool for RSK
+description: rLogin - login tool for Rootstock (RSK)
 ---
 
 Integrate rLogin into your app and allow your users to choose their favourite wallets to log in. With a single tool, you will get connected to their wallet using an API compatible with Metamask, continue developing as you did.
@@ -29,7 +29,7 @@ Integrate rLogin into your app and allow your users to choose their favourite wa
   <div class="col">
     <h3>Network support:</h3>
     <ul>
-      <li>RSK Mainnet, RSK Testnet</li>
+      <li>Rootstock Mainnet, Rootstock Testnet</li>
       <li>Ethereum, Ropsten, Kovan, Rinkeby, Goerli</li>
     </ul>
     <h3>Clients support</h3>
@@ -133,7 +133,7 @@ Follow this guide to configure rLogin in minutes
 
   You can add any [`web3modal`](https://github.com/web3Modal/web3modal) compatible providers to rLogin `providerOptions`. See the list of [compatible wallet providers](https://github.com/Web3Modal/web3modal/tree/master/docs/providers) and their setup.
 
-  > Note that these are not tested yet (the ones that are not on the default rLogin instance) and they might need extra configuration to work on RSK, because they are Ethereum based wallet providers.
+  > Note that these are not tested yet (the ones that are not on the default rLogin instance) and they might need extra configuration to work on Rootstock (RSK), because they are Ethereum based wallet providers.
 
 - 3) Connect!
   ```typescript

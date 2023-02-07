@@ -44,7 +44,7 @@ ZkSync transactions can be initiated both on L1 and L2.
 
 ## Operations
 
-**Priority** operations are initiated on the ZkSync SmartContract by an RSK account. Those operations are then discovered by the server and included in a rollup block as any other **Rollup** operation.
+**Priority** operations are initiated on the ZkSync SmartContract by an Rootstock (RSK) account. Those operations are then discovered by the server and included in a rollup block as any other **Rollup** operation.
 
 ### Priority operations
 

@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Multi-Crypto Resolver
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## Multi-Crypto Resolver
@@ -95,7 +95,7 @@ function supportsInterface(bytes4 interfaceID) public pure returns (bool)
 
 #### addr
 
-Returns the address associated with an RNS node. Same as calling `chainAddr` with this node and RSK chain id as parameters.
+Returns the address associated with an RNS node. Same as calling `chainAddr` with this node and Rootstock (RSK) chain id as parameters.
 
 **Signature**
 ```js
@@ -109,7 +109,7 @@ function addr(bytes32 node) public view returns (address)
 - `string`: the associated address.
 
 #### setAddr
-Sets the address associated with an RNS node, using the RSK chain id as default chain. May only be called by the owner of that node in the RNS registry.
+Sets the address associated with an RNS node, using the Rootstock chain id as default chain. May only be called by the owner of that node in the RNS registry.
 
 **Signature**
 ```js

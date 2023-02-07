@@ -1,6 +1,6 @@
 ---
 layout: rsk
-tags: rif, rif-identity, specs, DID, encrytpion, layout, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-identity, specs, DID, encrytpion, layout, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 # Specs
@@ -30,7 +30,7 @@ JSON Web Token (JWT) is a compact, URL-safe means of representing claims to be t
 
 Decentralized identifiers (DIDs) are a new type of identifier that enables verifiable, decentralized digital identity.{% include rif-id-ref.html id="2" %} A DID identifies any subject such as a person, an organization, a thing, an abstract entity, and so on.
 
-DIDs are URIs that represent the identities in a unique manner - the DID URI contains a public key representing the owner of that identity. A DID identity is mapped to a DID Document that expresses current state of that identity. Control delegations and identity ownership transfers are some of the actions that can be performed to modify the public state of a DID Document - to do so in a secure and public way RSK blockchain is used.
+DIDs are URIs that represent the identities in a unique manner - the DID URI contains a public key representing the owner of that identity. A DID identity is mapped to a DID Document that expresses current state of that identity. Control delegations and identity ownership transfers are some of the actions that can be performed to modify the public state of a DID Document - to do so in a secure and public way Rootstock (RSK) blockchain is used.
 
 RIF Identity currently supports `rsk` and `rsk:testnet` Ethr-DID method{% include rif-id-ref.html id="3" %} networks. As an example, this two DIDs are valid RSK and RSK Testnet DIDs:
 
@@ -47,7 +47,7 @@ Imagine what would happen if each time you present your national identity card y
 
 This schema is based on BIP-32{% include rif-id-ref.html id="5" %} hierarchical deterministic derivations of public keys. With a seed you can create multiple private keys, those private keys control multiple identities. These identities, as far as the model is correctly designed, do not share information that can associate one with another.
 
-The master key entropy is represented by a BIP-39 mnemonic phrase{% include rif-id-ref.html id="4" %}. The derivation path used for RSK is `m/44'/137'/0'/0/i`{% include rif-id-ref.html id="6" %} where `i` is used to index different identities.
+The master key entropy is represented by a BIP-39 mnemonic phrase{% include rif-id-ref.html id="4" %}. The derivation path used for Rootstock (RSK) is `m/44'/137'/0'/0/i`{% include rif-id-ref.html id="6" %} where `i` is used to index different identities.
 
 ![multi_identity_model](assets/img/04_multi_identity_model.png)
 

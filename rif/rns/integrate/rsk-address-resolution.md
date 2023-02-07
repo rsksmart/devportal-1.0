@@ -1,9 +1,9 @@
 ---
 layout: rsk
-title: RSK Address Resolution guidelines
+title: Rootstock (RSK) Address Resolution guidelines
 ---
 
-Resolving an RSK address associated to a domain consist of 4 steps:
+Resolving an Rootstock (RSK) address associated to a domain consist of 4 steps:
 
 1. Obtain the identifier of the domain.
 

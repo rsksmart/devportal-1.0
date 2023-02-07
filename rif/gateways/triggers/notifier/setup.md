@@ -67,7 +67,7 @@ The latest version of the `git` client can be installed through:
 sudo apt update
 sudo apt install git
 ```
-#### 2. RSK Blockchain (Mainnet)
+#### 2. Rootstock (RSK) Blockchain (Mainnet)
 The next requirement is an RSK node which can be run using the **JAR file** method. Use the latest RSKj version avaiable and have it sync with mainnet.
 
 This node should be accessible through `localhost:4444`. For more information on how to achieve this, please consult the [_Setup node on Java_ section on the Developer Portal](https://developers.rsk.co/rsk/node/install/java/).
@@ -139,10 +139,10 @@ To update an already installed RIF Notifier follow these steps:
 ## Usage guide
 ### Preconditions
 
-RIF Notifier uses `eth_getLogs` rpc to get the information about events, therefore the RSK node must respond in a reasonable
+RIF Notifier uses `eth_getLogs` rpc to get the information about events, therefore the Rootstock (RSK) node must respond in a reasonable
 timeframe (< 30s)
 
-Since the `eth_getLogs` result is cached, it will take a long time for this call to finish the first time it is executed after the RSK node is started. This will happen each time the RSK node boots.
+Since the `eth_getLogs` result is cached, it will take a long time for this call to finish the first time it is executed after the Rootstock (RSK) node is started. This will happen each time the Rootstock (RSK) node boots.
 After this, each call should be finished in a reasonable time.
 
 Use this curl to test the `eth_getLogs` response:

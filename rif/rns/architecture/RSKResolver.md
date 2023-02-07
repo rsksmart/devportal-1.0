@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: RSK Resolver
+title: Rootstock (RSK) Resolver
 ---
 
 Along the RNS registry and initial registrar there is a public resolver deployed as well (see the RSKResolver contract). This contract is available for anybody to use it, but the only restriction is that only owners of a domain can modify its record in this resolver. This resolver implements all the methods described in the [Resolver specification](/rif/rns/architecture/Resolver)

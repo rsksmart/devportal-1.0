@@ -1,6 +1,6 @@
 ---
 layout: rsk
-tags: rif, rif-identity, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-identity, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## The MVP - Run Locally
@@ -10,7 +10,7 @@ Running the project consists of XXX main steps. To understand all the process pl
 ### 1. Run the infrastructure
 
 Requirements:
-- RSK node with `eth_getLogs` enabled - public nodes are:
+- Rootstock (RSK) node with `eth_getLogs` enabled - public nodes are:
   - For RSK Mainnet https://did.rsk.co:4444
   - For RSK Testnet https://did.testnet.rsk.co:4444
 - IPFS node on the same environment that the services will run

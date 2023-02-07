@@ -1,11 +1,11 @@
 ---
 layout: rsk
 title: RIF Scheduler - A service for scheduling transactions
-tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 The main motivation of this project is to build a reliable service
-that allows users to schedule RSK transactions that will be executed
+that allows users to schedule Rootstock (RSK) transactions that will be executed
 in the future by a third party.
 
 ## Quick start

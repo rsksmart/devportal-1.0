@@ -1,7 +1,7 @@
 ---
 layout: rsk
-title: "Connect Brave to the RSK Network - RNS User guide"
-description: "How to locate Brave's Wallet, connect to the RSK Mainnet and Testnet, get your RSK account address, add the RIF token"
+title: "Connect Brave to the Rootstock (RSK) Network - RNS User guide"
+description: "How to locate Brave's Wallet, connect to the Rootstock (RSK) Mainnet and Testnet, get your Rootstock account address, add the RIF token"
 tags: rns, guide, rns-user-guide
 ---
 
@@ -22,7 +22,7 @@ This should place Wallets on the bookmark bar for easy access. This will make it
 ![Brave - Switch networks](/rif/rns/guide/images/brave-switch-networks.jpg)
 
 
-## Connect to the RSK Mainnet and Testnet
+## Connect to the Rootstock (RSK) Mainnet and Testnet
 
 On the wallet screen, towards the right, it should show that it is connected to the Main Ethereum Network. If you toggle the dropdown, towards the bottom there is an option to connect to a "Custom RPC". See the image below;
 
@@ -45,7 +45,7 @@ The New Network tab will open and ask some questions about the network. For RSK 
 
 Hit Save and close settings.
 
-## Getting your RSK account address
+## Getting your Rootstock (RSK) account address
 
 If you closed out of the wallet, navigate back to your Crypto Wallets by using the bookmark you set. Under "Account 1" you will see your address and a copy button. Copy your address to the clipboard.
 
@@ -55,7 +55,7 @@ This is the address that you will use in the next step of getting RBTC.
 
 ## Add the RIF token
 
-Next, we need to add the RIF token which is used in the RSK network. While connected to the RSK Mainnet, on the Accounts page, towards the bottom there is a heading "Don't see your Tokens?" and a link to "Add Token":
+Next, we need to add the RIF token which is used in the Rootstock (RSK) network. While connected to the Rootstock (RSK) Mainnet, on the Accounts page, towards the bottom there is a heading "Don't see your Tokens?" and a link to "Add Token":
 
 ![Brave - Add RIF Token](/rif/rns/guide/images/brave-add-rif-token.png)
 
@@ -74,10 +74,10 @@ When you press tab, or move to the next field, Token Symbol and Decimals of Prec
 
 Click "Next" and then "Add Tokens".
 
-You can repeat these steps for the RSK Testnet.
+You can repeat these steps for the Rootstock (RSK) Testnet.
 
 ----
 
-[Contact us on the RSK community Slack](/slack/) |
+[Contact us on the Rootstock community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

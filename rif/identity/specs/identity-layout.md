@@ -1,6 +1,6 @@
 ---
 layout: rsk
-tags: rif, rif-identity, libraries, infrastructure, mobile, DID, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-identity, libraries, infrastructure, mobile, DID, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 # Identity layout
@@ -34,7 +34,7 @@ Each persona has a public identity identifier. The identifier is used in differe
 
   > For a given private key (`pr`), the Ethereum address (`A(pr)`) (a 160-bit value) to which it corresponds is defined as the rightmost 160-bits of the Keccak hash of the corresponding ECDSA public key: `A(pr) = [96:255]KEC(ECDSAPUBKEY(pr))`{% include rif-id-ref.html id="8" %}
 
-3. The DID for RSK (Mainnet) is `did:ethr:rsk:A(pr)`, and for RSK Testnet `did:ethr:rsk:testnet:A(pr)`
+3. The DID for Rootstock (Mainnet) is `did:ethr:rsk:A(pr)`, and for Rootstock (RSK) Testnet `did:ethr:rsk:testnet:A(pr)`
 
   > Checksum encoding in the address is not required but must be validated if received
 
@@ -46,7 +46,7 @@ For new users
 1. Create a new BIP-39{% include rif-id-ref.html id="4" %} compliant mnemonic phrase - for security reasons we recommend to use at least 12 words
 3. Calculate seed from mnemonic phrase
 4. Use calculated seed as entropy to create an HD Key following BIP-32{% include rif-id-ref.html id="5" %}
-5. Get an HD Key from a derivation path respecting RSKIP-57{% include rif-id-ref.html id="6" %} - RSK MainNet is	`m/44'/137'/0'/0/n` with `n` a nonce to obtain different accounts.
+5. Get an HD Key from a derivation path respecting RSKIP-57{% include rif-id-ref.html id="6" %} - Rootstock MainNet is	`m/44'/137'/0'/0/n` with `n` a nonce to obtain different accounts.
 6. Use `n=0` private key as the first persona private key
 7. Memoize the last nonce used is `0`
 

@@ -1,6 +1,6 @@
 ---
 layout: rsk
-tags: rlogin, rif, rif-identity, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rlogin, rif, rif-identity, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 # RIF Identity
@@ -79,8 +79,8 @@ The main goal of RIF Identity is to protect users’ personal data in a privacy 
   - [Develop](data-vault/develop)
 - [Libraries](libraries)
   - [Mnemonics](libraries/mnemonics) - identity derivation tools using mnemonic phrases
-  - [RSK DIDs](libraries/rsk-ethr-did) - handle Ethr DID method procedures in RSK network
-  - [Ethr DID](libraries/ethr-did) - uPort `ethr-did` with RSK support
+  - [RSK DIDs](libraries/rsk-ethr-did) - handle Ethr DID method procedures in Rootstock network
+  - [Ethr DID](libraries/ethr-did) - uPort `ethr-did` with Rootstock (RSK) support
   - [Ethr DID Utils](libraries/ethr-did-utils) - testing utilities for Ethr DID Registry
   - [DAF bindings](libraries/daf) - use uPort agent with RIF identity multi identity model
   - [VC Core module](libraries/core) - Verifiable Credentials in React.js + Redux
