@@ -9,7 +9,7 @@ tags: rns, guide, wallets, value
 
 **Enhance UX to improve user adoption**
 
-*   Simplify the way users send and receive crypto-assets (in RSK and other blockchains)
+*   Simplify the way users send and receive crypto-assets (in Rootstock and other blockchains)
 *   Avoid losing funds due to human errors and hacking/phishing.
 
 ### Problems to solve
@@ -77,7 +77,7 @@ This will send the funds to the app user’s Bitcoin address linked to `alice.yo
 
 [https://www.npmjs.com/package/@rsksmart/rns](https://www.npmjs.com/package/@rsksmart/rns)
 
-#### RNS in RSK Developer portal
+#### RNS in Rootstock (RSK) Developer portal
 
 [https://developers.rsk.co/rif/rns/](https://developers.rsk.co/rif/rns/)
 

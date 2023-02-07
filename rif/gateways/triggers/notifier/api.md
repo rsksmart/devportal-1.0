@@ -208,7 +208,7 @@ Header param:
 	value: API_KEY
 Query params:
 	nodehash [Optional]: Hashed name of the owner of the chain address
-	eventName [Optional]: "ChainAddrChanged" for all types of chain address or "AddrChanged" to RSK Chain addresses events
+	eventName [Optional]: "ChainAddrChanged" for all types of chain address or "AddrChanged" to Rootstock (RSK) Chain addresses events
 Short description: From this endpoint you can bring the events emmited by the chain addresses set.
 ```
 

@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: "Operations - RNS User guide"
-description: "How to login to your domain, extend your domain expiration time, transfer your domain, change the RSK address, add a cryptocurrency address, update a cryptocurrency address, delete a cryptocurrency address, activate multi chain functionality, create a subdomain, change a subdomain's owner, delete a subdomain"
+description: "How to login to your domain, extend your domain expiration time, transfer your domain, change the Rootstock address, add a cryptocurrency address, update a cryptocurrency address, delete a cryptocurrency address, activate multi chain functionality, create a subdomain, change a subdomain's owner, delete a subdomain"
 tags: rns, guide, rns-user-guide
 ---
 
@@ -11,7 +11,7 @@ These are the basic operations you can perform with the RNS manager:
     - [Extend your domain expiration time](#extend-your-domain-expiration-time)
     - [Transfer your domain](#transfer-your-domain)
 - [Your addresses](#your-addresses)
-    - [Change the RSK address](#change-the-rsk-address)
+    - [Change the Rootstock (RSK) address](#change-the-rootstock-rsk-address)
     - [Add a cryptocurrency address](#add-a-currency-address)
     - [Update a cryptocurrency address](#change-a-currency-address)
     - [Delete a cryptocurrency address](#delete-a-currency-address)
@@ -84,21 +84,21 @@ Each extra year over the three years cost 1 RIF token.
 
 ## Your addresses
 
-Here you can do a the basic setup for your domain. You can choose the RSK address you want your domain to map to.
+Here you can do a the basic setup for your domain. You can choose the Rootstock (RSK) address you want your domain to map to.
 
-When you change your RSK address you are not transferring the domain. You are marking that the result of inputting your domain will map to that address.
+When you change your Rootstock address you are not transferring the domain. You are marking that the result of inputting your domain will map to that address.
 
 You can also use your domain in other crypto currencies. You can set your other blockchain addresses here too.
 
-### Change the RSK address
+### Change the Rootstock (RSK) address
 
-1. Click on the button to edit the RSK Address.
+1. Click on the button to edit the Rootstock Address.
 
-    ![Operations - Edit RSK Address](/rif/rns/guide/images/operations-edit-rsk-address.png)
+    ![Operations - Edit Rootstock Address](/rif/rns/guide/images/operations-edit-rsk-address.png)
 
 2. Input the address you want to set as the address of your domain.
 
-    ![Operations - Set RSK Address](/rif/rns/guide/images/operations-set-rsk-address.png)
+    ![Operations - Set Rootstock Address](/rif/rns/guide/images/operations-set-rsk-address.png)
 
 3. Submit the transaction.
 
@@ -203,6 +203,6 @@ The owner of the subdomain is the account that can set the addresses for that su
 
 ----
 
-[Contact us on the RSK community Slack](/slack/) |
+[Contact us on the Rootstock community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

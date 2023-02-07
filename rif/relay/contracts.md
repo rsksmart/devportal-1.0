@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RIF Relay - Contracts
-tags: rif, relay, rsk, envelope, mainnet, testnet, contract
+tags: rif, relay, rootstock, rsk, envelope, mainnet, testnet, contract
 permalink: /rif/relay/contracts/
 render_features: 'collapsible tables-with-borders'
 ---

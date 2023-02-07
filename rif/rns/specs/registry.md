@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RNS Specs - Registry
-tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 The registry contract provides a simple mapping between a domain and its resolver. Everything related to domain ownership is managed in this contract, including ownership transfer and sub-domain creation. Each registry entry refers to a resolver which handles the [resolution](/rif/rns/specs/resolvers) between the name domain and the desired resource.

@@ -1,7 +1,7 @@
 ---
 layout: rsk
-title: Running a local Swarm network on RSK
-tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+title: Running a local Swarm network on Rootstock (RSK)
+tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 This guide sets up 2 Swarm nodes in a local private network. Each of the nodes is loaded into a specific directory; i.e. the folders `./s1` and `./s2`.
@@ -25,7 +25,7 @@ If you need these nodes to run without incentivization, please refer to the much
 
 ## 1. RSKj
 
-[RSKj](https://github.com/rsksmart/rskj) will be the node used to start the local RSK blockchain.
+[RSKj](https://github.com/rsksmart/rskj) will be the node used to start the local Rootstock (RSK) blockchain.
 
 Download it from:
 
@@ -242,4 +242,4 @@ It is unknown if this problem is due to SWAP or the RSK node.
 
 ---
 
-_Guide based on [Swap RSK Guide](https://hackmd.io/ijxzDYaySrqZ06LsR36OsA?view) by Ralph Pichler._
+_Guide based on [Swap Rootstock (RSK) Guide](https://hackmd.io/ijxzDYaySrqZ06LsR36OsA?view) by Ralph Pichler._

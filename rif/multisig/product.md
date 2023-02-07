@@ -7,11 +7,11 @@ prevUrl: '/rif/multisig/'
 nextUrl: '/rif/multisig/gnosis-summary/'
 ---
 
-The product for RIF Multisig consists of porting and increasing the existing Gnosis SDK to allow RSK developers to operate multisig accounts in a safe and intuitive way, following the documentation and a sample application that will help with the correct implementation of the Gnosis solution.
+The product for RIF Multisig consists of porting and increasing the existing Gnosis SDK to allow Rootstock (RSK) developers to operate multisig accounts in a safe and intuitive way, following the documentation and a sample application that will help with the correct implementation of the Gnosis solution.
 
 In short, it implies:
 
-* Deploying Gnosis smart contracts in RSK
+* Deploying Gnosis smart contracts in Rootstock (RSK)
 * Test (and correct if necessary) the existing functionality in the SDK
 * Adding the required functionalities that are not supported yet, either collaborating or creating our own libraries
 * Documenting the correct processes for creating and operating multisig accounts
@@ -19,7 +19,7 @@ In short, it implies:
 
 ## Features
 
-The RIF Multisig solution will allow RSK developers to use our SDKs, and with the help of the documentation to:
+The RIF Multisig solution will allow Rootstock (RSK) developers to use our SDKs, and with the help of the documentation to:
 
 * Create multisig account, choosing its owners and threshold
 * CRUD multisig owners and threshold

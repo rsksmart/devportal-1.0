@@ -1,11 +1,11 @@
 ---
 layout: rsk
 title: RNS JS Library
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 description: Learn more about RNS JS Library.
 ---
 
-**RNS JS** Library has been built to make blockchain easy for developers. In simple words, it allows developers to interact with the entire RNS suite without needing to go deep into the RNS blockchain solution architecture. No more ABIs to instantiate contracts, no more contract addresses, just one library: **RNS JS**. It is fully customizable and has the needed presets to work with either RSK Mainnet or RSK Testnet without any extra configuration.
+**RNS JS** Library has been built to make blockchain easy for developers. In simple words, it allows developers to interact with the entire RNS suite without needing to go deep into the RNS blockchain solution architecture. No more ABIs to instantiate contracts, no more contract addresses, just one library: **RNS JS**. It is fully customizable and has the needed presets to work with either Rootstock (RSK) Mainnet or Rootstock (RSK) Testnet without any extra configuration.
 
 ### Set it up in your local environment
 

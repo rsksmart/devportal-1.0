@@ -1,11 +1,11 @@
 ---
 layout: rsk
 title: Renewer
-tags: rif, renewer, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, renewer, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
-- RSK MainNet: [0x7a9872a7615c475b62a62b8f6e491077fb05f663](https://explorer.rsk.co/address/0x7a9872a7615c475b62a62b8f6e491077fb05f663)
-- RSK TestNet: [0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b](https://explorer.testnet.rsk.co/address/0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b)
+- Rootstock (RSK) MainNet: [0x7a9872a7615c475b62a62b8f6e491077fb05f663](https://explorer.rsk.co/address/0x7a9872a7615c475b62a62b8f6e491077fb05f663)
+- Rootstock (RSK) TestNet: [0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b](https://explorer.testnet.rsk.co/address/0xe48ad1d5fbf61394b5a7d81ab2f36736a046657b)
 Has renewer role in `RSK Owner`.
 - [Smart contract](https://github.com/rnsdomains/rns-rskregistrar/blob/master/contracts/Renewer.sol)
 

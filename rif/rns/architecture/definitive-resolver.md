@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Resolver
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 - RSK Mainnet: [`0xD87f8121D44F3717d4bAdC50b24E50044f86D64B`](https://explorer.rsk.co/address/0xd87f8121d44f3717d4badc50b24e50044f86d64b)
@@ -94,7 +94,7 @@ await resolver.multicall([setAddrData, setContenhashData]).send()
 function setAddr(bytes32 node, address a) external;
 ```
 
-Sets the RSK address associated with an RNS node.
+Sets the Rootstock address associated with an RNS node.
 
 ```
 function setAddr(bytes32 node, uint coinType, bytes memory a) public;
@@ -106,7 +106,7 @@ Sets the coin address associated with an RNS node.
 function addr(bytes32 node) public view returns (address payable);
 ```
 
-Returns the RSK address associated with an RNS node.
+Returns the Rootstock address associated with an RNS node.
 
 ```
 function addr(bytes32 node, uint coinType) public view returns(bytes memory);

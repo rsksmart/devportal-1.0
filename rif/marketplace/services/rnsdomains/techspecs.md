@@ -50,7 +50,7 @@ This is an entity relationship diagram (ERD), showing relationships between diff
 
 The main **high-level components** are:
 
-The architectre is composed of service-specific **smart contracts** deployed on the RSK blockchain, a shared read-only **cache** for performance and scalability, and a **front-end (UI)** application which allows users to easily connect, browse the available services and interact with other Marketplace participants. 
+The architectre is composed of service-specific **smart contracts** deployed on the Rootstock (RSK) blockchain, a shared read-only **cache** for performance and scalability, and a **front-end (UI)** application which allows users to easily connect, browse the available services and interact with other Marketplace participants. 
 
  - **RIF Marketplace UI** - the main web UI where all transactions originate.
  - **Cache** - a cache that stores the state of the Smart Contract in an easy-readable format and does some basic preprocessing on it.

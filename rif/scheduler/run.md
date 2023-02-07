@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RIF Scheduler - Run your own scheduler
-tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 By running your own scheduler you can provide the transaction execution service.
@@ -25,7 +25,7 @@ and set it up as explained in the Readme.
 
 Also, find the deployment scripts in the readme.
 You will find one for local networks,
-other for RSK Testnet and other for RSK Mainnet.
+other for Rootstock (RSK) Testnet and other for Rootstock (RSK) Mainnet.
 
 > WARNING: Please note that the contract requires Solidity 0.8 or newer. Compiling it with older versions will expose it to security vulnerabilities.
 

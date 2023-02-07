@@ -10,8 +10,8 @@ Use this service to **keep track of transactions** sent via Gnosis Safe contract
 
 To allow **offchain collecting of signatures**, transactions can also be sent to the service, informing the owners about a transaction that is pending to be sent to the blockchain.
 
-**[RSK Testnet (Swagger)](https://safe-transaction.testnet.rifos.org/)**
-**RSK Mainnet (Swagger)**
+**[Rootstock Testnet (Swagger)](https://safe-transaction.testnet.rifos.org/)**
+**Rootstock (RSK) Mainnet (Swagger)**
 
 Read more about it in Gnosis repo: [`gnosis/safe-transaction-service`](https://github.com/gnosis/safe-transaction-service)
 

@@ -5,7 +5,7 @@ title: RIF Scheduler - SDK
 
 Repository: [`rsksmart/rif-scheduler-sdk`](https://github.com/rsksmart/rif-scheduler-sdk)
 
-With the RIF Scheduler SDK you can schedule transactions in the RSK network.
+With the RIF Scheduler SDK you can schedule transactions in the Rootstock (RSK) network.
 
 Features:
 

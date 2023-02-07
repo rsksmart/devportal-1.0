@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Integrate your dApp with RNS
-tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 description: Learn how to integrate RNS with your dApp.
 tags: rns, javascript, dapp, integrate
 ---
@@ -55,9 +55,9 @@ if (window.ethereum) {
 
 Is important to confirm that the current blockchain is the one you are expecting.
 
->RSK Mainnet ID: 30
+>Rootstock (RSK) Mainnet ID: 30
 >
->RSK Testnet ID: 31
+>Rootstock (RSK) Testnet ID: 31
 
 ```javascript
 import Web3 from 'web3';

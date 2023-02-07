@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Full smart contracts suite
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Import contracts using [npm](https://www.npmjs.com/).
@@ -58,7 +58,7 @@ ERC-677 Token contract implementation, compatible with RIF Token implementation.
 
 ## Auction Registrar
 
-`0.5.0` implementation of RSK Auction Registrar (outdated).
+`0.5.0` implementation of Rootstock (RSK) Auction Registrar (outdated).
 
 - Source: [https://github.com/rnsdomains/rns-auction-registrar](https://github.com/rnsdomains/rns-auction-registrar)
 
@@ -68,9 +68,9 @@ ERC-677 Token contract implementation, compatible with RIF Token implementation.
     npm i @rsksmart/rns-auction-registrar
     ```
 
-## RSK Registrar
+## Rootstock (RSK) Registrar
 
-Current RSK Registrar.
+Current Rootstock (RSK) Registrar.
 
 - Source: [https://github.com/rnsdomains/rns-rskregistrar](https://github.com/rnsdomains/rns-rskregistrar)
 

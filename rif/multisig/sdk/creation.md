@@ -25,8 +25,8 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
 - [SafeSingleton](https://docs.gnosis.io/safe/docs/contracts_architecture/#1-transaction-management-core-contract) contract deployment
 
 [](#top "collapsible")
-- A) Contract addresses deployed on RSK
-  * Developers interacting with the RSK networks can use the address of the contracts already deployed
+- A) Contract addresses deployed on Rootstock
+  * Developers interacting with the Rootstock networks can use the address of the contracts already deployed
     * ### MAINNET
     
       | Contract          | Address                                    |
@@ -59,7 +59,7 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
   ```
   {:.snippet__code.snippet__code--lightgreen.border-top-0}
   
-  > If you are working on RSK networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
+  > If you are working on Rootstock networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
   {:.mt-3}
 
 - C) Create a Safe

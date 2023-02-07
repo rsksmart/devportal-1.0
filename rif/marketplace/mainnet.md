@@ -4,7 +4,7 @@ title: RIF Marketplace Mainnet
 tags: rif, marketplace, mainnet
 ---
 
-You can access the Marketplace on the RSK Mainnet: [marketplace.rifos.org](https://marketplace.rifos.org/)
+You can access the Marketplace on the Rootstock (RSK) Mainnet: [marketplace.rifos.org](https://marketplace.rifos.org/)
 
 ## Wallet Setup
 
