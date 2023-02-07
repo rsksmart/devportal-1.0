@@ -1172,7 +1172,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-24 14:12:45 +0000T00:00:00.000Z">2021-03-24</time> | -->
+    <!--time role="presentation" datetime="2023-02-07 07:59:04 +0000T00:00:00.000Z">2023-02-07</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/gateways/dataservices/chainlink/node-operators.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2178,9 +2178,9 @@
 
                   <h1 class="page-title" id="top">RIF Gateways Chainlink Node Operators</h1>
 
-                  <h2 id="node-operators---connect-your-chainlink-node-to-rsk-testnet">Node Operators - Connect your Chainlink node to RSK Testnet</h2>
+                  <h2 id="node-operators---connect-your-chainlink-node-to-rootstock-rsk-testnet">Node Operators - Connect your Chainlink node to Rootstock (RSK) Testnet</h2>
 
-<p>Provided you have a functioning Chainlink node, and are interested in trying the RSK Initiator and RSKTX Adapters to interact with RSK Network, you can follow these instructions to get started.</p>
+<p>Provided you have a functioning Chainlink node, and are interested in trying the Rootstock (RSK) Initiator and RSKTX Adapters to interact with Rootstock Network, you can follow these instructions to get started.</p>
 
 <h3 id="prerequisites">Prerequisites.</h3>
 
@@ -2199,7 +2199,7 @@ psql <span class="nt">-U</span> postgres <span class="nt">-c</span> <span class=
 
 <p>Create a <code class="highlighter-rouge">.env-testnet</code> file for each service and set the configuration environment variables.</p>
 
-<h4 id="rsk-initiator">RSK Initiator</h4>
+<h4 id="rootstock-rsk-initiator">Rootstock (RSK) Initiator</h4>
 
 <table>
   <thead>
@@ -2222,7 +2222,7 @@ psql <span class="nt">-U</span> postgres <span class="nt">-c</span> <span class=
     </tr>
     <tr>
       <td><code class="highlighter-rouge">INITIATOR_HOST</code></td>
-      <td>The hostname of the RSK Initiator</td>
+      <td>The hostname of the Rootstock Initiator</td>
       <td><code class="highlighter-rouge">localhost</code></td>
     </tr>
     <tr>
@@ -2242,12 +2242,12 @@ psql <span class="nt">-U</span> postgres <span class="nt">-c</span> <span class=
     </tr>
     <tr>
       <td><code class="highlighter-rouge">RSK_HOST</code></td>
-      <td>The hostname of the RSK Node RPC</td>
+      <td>The hostname of the Rootstock Node RPC</td>
       <td><code class="highlighter-rouge">localhost</code></td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">RSK_WS_PROTOCOL</code></td>
-      <td>The protocol that will be used to connect to the RSK Node RPC (ws or wss)</td>
+      <td>The protocol that will be used to connect to the Rootstock Node RPC (ws or wss)</td>
       <td><code class="highlighter-rouge">ws</code></td>
     </tr>
     <tr>
@@ -2257,7 +2257,7 @@ psql <span class="nt">-U</span> postgres <span class="nt">-c</span> <span class=
     </tr>
     <tr>
       <td><code class="highlighter-rouge">RSK_WS_URL</code></td>
-      <td>The RSK Node RPC websocket endpoint URL</td>
+      <td>The Rootstock Node RPC websocket endpoint URL</td>
       <td><code class="highlighter-rouge">/websocket</code></td>
     </tr>
   </tbody>
@@ -2301,22 +2301,22 @@ psql <span class="nt">-U</span> postgres <span class="nt">-c</span> <span class=
     </tr>
     <tr>
       <td><code class="highlighter-rouge">RSK_HOST</code></td>
-      <td>The hostname of the RSK Node RPC</td>
+      <td>The hostname of the Rootstock Node RPC</td>
       <td><code class="highlighter-rouge">localhost</code></td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">RSK_WS_PROTOCOL</code></td>
-      <td>The protocol that will be used to connect to the RSK Node RPC (ws or wss)</td>
+      <td>The protocol that will be used to connect to the Rootstock Node RPC (ws or wss)</td>
       <td><code class="highlighter-rouge">ws</code></td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">RSK_WS_PORT</code></td>
-      <td>The port to connect to the RSK Node RPC websocket</td>
+      <td>The port to connect to the Rootstock Node RPC websocket</td>
       <td><code class="highlighter-rouge">4445</code></td>
     </tr>
     <tr>
       <td><code class="highlighter-rouge">RSK_WS_URL</code></td>
-      <td>The RSK Node RPC websocket endpoint URL</td>
+      <td>The Rootstock Node RPC websocket endpoint URL</td>
       <td><code class="highlighter-rouge">/websocket</code></td>
     </tr>
   </tbody>
@@ -2332,7 +2332,7 @@ changethis
 
 <h3 id="4-configure-rsktx-adapter-account">4. Configure RSKTX Adapter account</h3>
 
-<p>The RSKTX Adapter needs an account to sign and send the transactions to the network. To configure the account, save its private key in a file and reference it later when running the adapter. This account will need to have RBTC to pay for the transactions sent to the network. Testnet RBTC can be obtained through the RSK Testnet Faucet in <a href="https://faucet.rsk.co/" rel="external noopener noreferrer" target="_blank">faucet.rsk.co</a>.</p>
+<p>The RSKTX Adapter needs an account to sign and send the transactions to the network. To configure the account, save its private key in a file and reference it later when running the adapter. This account will need to have RBTC to pay for the transactions sent to the network. Testnet RBTC can be obtained through the Rootstock (RSK) Testnet Faucet in <a href="https://faucet.rsk.co/" rel="external noopener noreferrer" target="_blank">faucet.rsk.co</a>.</p>
 
 <h3 id="5-build-the-rsk-initiator-and-rsktx-adapter-docker-images">5. Build the RSK Initiator and RSKTX Adapter Docker images</h3>
 
@@ -2349,12 +2349,12 @@ docker run <span class="nt">-v</span> /path/to/host/api/file:/home/rsktx-adapter
 </code></pre></div></div>
 <p>The services will configure the database and register the Initiator and Adapter in Chainlink Core when first started.</p>
 
-<h3 id="7-deploy-the-oracle-contract-to-rsk-testnet">7. Deploy the Oracle contract to RSK Testnet</h3>
+<h3 id="7-deploy-the-oracle-contract-to-rootstock-rsk-testnet">7. Deploy the Oracle contract to Rootstock (RSK) Testnet</h3>
 
 <p>You’ll need to deploy an Oracle contract on RSK Testnet to be able to receive requests. In the directory <code class="highlighter-rouge">testnet-deploy</code> there are some useful scripts to accomplish this.</p>
 
 <ul>
-  <li>Edit the <code class="highlighter-rouge">truffle-config.js</code> to configure the RSK node RPC connection.</li>
+  <li>Edit the <code class="highlighter-rouge">truffle-config.js</code> to configure the Rootstock node RPC connection.</li>
   <li>Configure the account that will be used to deploy the contract. To do this, save its private key on the <code class="highlighter-rouge">testnet-deploy/.deployerKey</code> file. Remember this account needs to be funded with RBTC.</li>
   <li>Edit the <code class="highlighter-rouge">testnet-deploy/migrations/2_deploy_oracle.js</code> and configure the <code class="highlighter-rouge">ADAPTER_ADDRESS</code> constant, setting the adapter’s account address. This is needed so the migration script, after the contract deploy, can call the <code class="highlighter-rouge">setFulfillmentPermission</code> function on the contract to authorize the adapter address to fulfill the Oracle’s requests.</li>
   <li>Step into the <code class="highlighter-rouge">testnet-deploy</code> directory, install the dependencies and run the first and second migrations using Truffle:</li>

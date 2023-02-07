@@ -1156,7 +1156,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-07-13 06:34:39 +0000T00:00:00.000Z">2020-07-13</time> | -->
+    <!--time role="presentation" datetime="2023-02-07 07:59:04 +0000T00:00:00.000Z">2023-02-07</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/marketplace/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2162,7 +2162,7 @@
 
                   <h1 class="page-title" id="top">RIF Marketplace Architecture</h1>
 
-                  <p>The <strong>RIF Marketplace</strong> at its core is composed of a set of <strong>smart contracts</strong> deployed on the RSK blockchain, a <strong>read-only cache</strong> for performance and scalability, and a <strong>front-end (UI)</strong> which allows users to easily connect, browse available services and features,  and interact with other participants. Each specific <strong>RIF service</strong> node (RIF Services) must connect to the Marketplace Smart Contracts, listen for the required events, and ensure a proper interaction and provision of that service to the End-user.</p>
+                  <p>The <strong>RIF Marketplace</strong> at its core is composed of a set of <strong>smart contracts</strong> deployed on the Rootstock (RSK) blockchain, a <strong>read-only cache</strong> for performance and scalability, and a <strong>front-end (UI)</strong> which allows users to easily connect, browse available services and features,  and interact with other participants. Each specific <strong>RIF service</strong> node (RIF Services) must connect to the Marketplace Smart Contracts, listen for the required events, and ensure a proper interaction and provision of that service to the End-user.</p>
 
 <p>The diagram below shows an overview of the <strong>RIF Marketplace</strong> architecture, which is explained next:</p>
 
@@ -2184,7 +2184,7 @@
 <p>The information presented in the UI comes from <strong>RIF Marketplace Cache</strong>. This component is always listening to the blockchain, and synchronising a database with the information from the smart contracts organized in a readable and optimized way. Its main objective is to improve the performance, scalability, and overall user experience of the RIF Marketplace. It is important to note the Cache can be reconstructed at any time from the information available in the Blockchain, and is accessible only in read-only mode providing information to the UI, but not modifying or altering any information on the smart contracts in any way.</p>
 
 <h2 id="smart-contracts">Smart Contracts</h2>
-<p>The blockchain layer consists of a set of <strong>Smart Contracts</strong> deployed on the RSK blockchain, and are divided into two main groups: Those related to buying/selling the specific <strong>RIF Service</strong> being offered (ie: Storage, Name Services, Communications, etc), and those related to common modules and activities of the RIF Marketplace such as the <strong>staking, slashing, SLAs, and dispute resolution</strong> mechanisms. These smart contracts are related, and interact with each other to ensure correct synchronization and agreements between each other.</p>
+<p>The blockchain layer consists of a set of <strong>Smart Contracts</strong> deployed on the Rootstock (RSK) blockchain, and are divided into two main groups: Those related to buying/selling the specific <strong>RIF Service</strong> being offered (ie: Storage, Name Services, Communications, etc), and those related to common modules and activities of the RIF Marketplace such as the <strong>staking, slashing, SLAs, and dispute resolution</strong> mechanisms. These smart contracts are related, and interact with each other to ensure correct synchronization and agreements between each other.</p>
 
                   
 

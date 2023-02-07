@@ -1172,7 +1172,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-03-03 12:52:23 +0000T00:00:00.000Z">2022-03-03</time> | -->
+    <!--time role="presentation" datetime="2023-02-07 07:59:04 +0000T00:00:00.000Z">2023-02-07</time> | -->
      6' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/gateways/triggers/notifier/setup.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2266,7 +2266,7 @@
 <div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
 <span class="nb">sudo </span>apt <span class="nb">install </span>git
 </code></pre></div></div>
-<h4 id="2-rsk-blockchain-mainnet">2. RSK Blockchain (Mainnet)</h4>
+<h4 id="2-rootstock-rsk-blockchain-mainnet">2. Rootstock (RSK) Blockchain (Mainnet)</h4>
 <p>The next requirement is an RSK node which can be run using the <strong>JAR file</strong> method. Use the latest RSKj version avaiable and have it sync with mainnet.</p>
 
 <p>This node should be accessible through <code class="highlighter-rouge">localhost:4444</code>. For more information on how to achieve this, please consult the <a href="https://developers.rsk.co/rsk/node/install/java/" rel="external noopener noreferrer" target="_blank"><em>Setup node on Java</em> section on the Developer Portal</a>.</p>
@@ -2334,10 +2334,10 @@
 <h2 id="usage-guide">Usage guide</h2>
 <h3 id="preconditions">Preconditions</h3>
 
-<p>RIF Notifier uses <code class="highlighter-rouge">eth_getLogs</code> rpc to get the information about events, therefore the RSK node must respond in a reasonable
+<p>RIF Notifier uses <code class="highlighter-rouge">eth_getLogs</code> rpc to get the information about events, therefore the Rootstock (RSK) node must respond in a reasonable
 timeframe (&lt; 30s)</p>
 
-<p>Since the <code class="highlighter-rouge">eth_getLogs</code> result is cached, it will take a long time for this call to finish the first time it is executed after the RSK node is started. This will happen each time the RSK node boots.
+<p>Since the <code class="highlighter-rouge">eth_getLogs</code> result is cached, it will take a long time for this call to finish the first time it is executed after the Rootstock (RSK) node is started. This will happen each time the Rootstock (RSK) node boots.
 After this, each call should be finished in a reasonable time.</p>
 
 <p>Use this curl to test the <code class="highlighter-rouge">eth_getLogs</code> response:</p>

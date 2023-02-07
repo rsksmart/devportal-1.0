@@ -1172,7 +1172,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-08-26 15:56:48 +0000T00:00:00.000Z">2020-08-26</time> | -->
+    <!--time role="presentation" datetime="2023-02-07 07:59:04 +0000T00:00:00.000Z">2023-02-07</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/gateways/dataservices/chainlink/architecture.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2178,11 +2178,11 @@
 
                   <h1 class="page-title" id="top">RIF Gateways Chainlink Architecture</h1>
 
-                  <p>When a <strong>Chainlink</strong> request is created, a <strong>Consumer</strong> contract sends an on-chain transaction to an <strong>Oracle</strong> Contract within the RSK blockchain. That transaction transfers payment tokens, along with the data representing your request. The <strong>Oracle</strong> Contract tracks balances from requesters and emits an event which notifies the off-chain <strong>Chainlink</strong> network (via the <strong>External Initiator</strong>), that this event needs to be processed.</p>
+                  <p>When a <strong>Chainlink</strong> request is created, a <strong>Consumer</strong> contract sends an on-chain transaction to an <strong>Oracle</strong> Contract within the Rootstock (RSK) blockchain. That transaction transfers payment tokens, along with the data representing your request. The <strong>Oracle</strong> Contract tracks balances from requesters and emits an event which notifies the off-chain <strong>Chainlink</strong> network (via the <strong>External Initiator</strong>), that this event needs to be processed.</p>
 
 <p>Once the request is received, <strong>Chainlink</strong> performs the work of the request and returns the answer to the <strong>Oracle</strong> contract (via the <strong>External Adapter</strong>). The <strong>Oracle</strong> Contract updates the balance to pay the node operator and returns the result to the <strong>Consumer</strong> Contract.</p>
 
-<p>The following diagram presents the <strong>Chainlink/RSK integration</strong> architecture and core components:</p>
+<p>The following diagram presents the <strong>Chainlink/Rootstock integration</strong> architecture and core components:</p>
 
 <p><img src="../../../../../assets/img/rif-gateways/rifgwy-chainlink.png" alt="Chainlink architecture"></p>
 
@@ -2201,15 +2201,15 @@
 
 <h2 id="chainlink-node">Chainlink Node</h2>
 
-<p>The Chainlink node handles jobs, tasks, scheduling, and signing transactions for the blockchain. The Chainlink node runs through a specified set of sequential processes and includes a number of <strong>core adapters</strong> which give it support to read and process data, and write to the blockchain. The Chainlink node also contains the keystores used to sign transactions. This prevents needing to keep the sensitive keystore files unlocked on the blockchain node. The Chainlink node can read open APIs, process their response, and write to the RSK blockchain through an <strong>external adapter</strong>.</p>
+<p>The Chainlink node handles jobs, tasks, scheduling, and signing transactions for the blockchain. The Chainlink node runs through a specified set of sequential processes and includes a number of <strong>core adapters</strong> which give it support to read and process data, and write to the blockchain. The Chainlink node also contains the keystores used to sign transactions. This prevents needing to keep the sensitive keystore files unlocked on the blockchain node. The Chainlink node can read open APIs, process their response, and write to the Rootstock (RSK) blockchain through an <strong>external adapter</strong>.</p>
 
 <h2 id="external-adapter">External Adapter</h2>
 
-<p>External Adapters (in our case <strong>RSK Adapter</strong>) allow for additional functionality outside of what is supported within the core Chainlink Adapters. External adapters may be written in any language and can operate as a separate service that accepts and responds with JSON formatted data. The node operator must provision and add each external adapter they are willing to support as a bridge, and the adapter may be on a separate system than that which the Chainlink node resides on.</p>
+<p>External Adapters (in our case <strong>Rootstock (RSK) Adapter</strong>) allow for additional functionality outside of what is supported within the core Chainlink Adapters. External adapters may be written in any language and can operate as a separate service that accepts and responds with JSON formatted data. The node operator must provision and add each external adapter they are willing to support as a bridge, and the adapter may be on a separate system than that which the Chainlink node resides on.</p>
 
 <h2 id="external-initiator">External Initiator</h2>
 
-<p>The External initiator  (<strong>RSK Initiator</strong>) listens for Oracle events in the RSK Blockchain. It will subscribe to the blockchain node in order to read events occurring on the blockchain, and send the corresponding request to the Chainlink node.</p>
+<p>The External initiator  (<strong>Rootstock Initiator</strong>) listens for Oracle events in the Rootstock Blockchain. It will subscribe to the blockchain node in order to read events occurring on the blockchain, and send the corresponding request to the Chainlink node.</p>
 
 <p>Additional information can be found in the <a href="https://docs.chain.link/docs/architecture-overview" rel="external noopener noreferrer" target="_blank">Chainlink Docs site</a></p>
 

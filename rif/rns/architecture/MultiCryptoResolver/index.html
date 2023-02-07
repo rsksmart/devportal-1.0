@@ -1164,7 +1164,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-06-03 10:06:48 +0000T00:00:00.000Z">2021-06-03</time> | -->
+    <!--time role="presentation" datetime="2023-02-07 07:59:04 +0000T00:00:00.000Z">2023-02-07</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rns/architecture/MultiCryptoResolver.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2294,7 +2294,7 @@
 
 <h4 id="addr">addr</h4>
 
-<p>Returns the address associated with an RNS node. Same as calling <code class="highlighter-rouge">chainAddr</code> with this node and RSK chain id as parameters.</p>
+<p>Returns the address associated with an RNS node. Same as calling <code class="highlighter-rouge">chainAddr</code> with this node and Rootstock (RSK) chain id as parameters.</p>
 
 <p><strong>Signature</strong></p>
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">addr</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">view</span> <span class="nx">returns</span> <span class="p">(</span><span class="nx">address</span><span class="p">)</span>
@@ -2313,7 +2313,7 @@
 </ul>
 
 <h4 id="setaddr">setAddr</h4>
-<p>Sets the address associated with an RNS node, using the RSK chain id as default chain. May only be called by the owner of that node in the RNS registry.</p>
+<p>Sets the address associated with an RNS node, using the Rootstock chain id as default chain. May only be called by the owner of that node in the RNS registry.</p>
 
 <p><strong>Signature</strong></p>
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">setAddr</span><span class="p">(</span><span class="nx">bytes32</span> <span class="nx">node</span><span class="p">,</span> <span class="nx">address</span> <span class="nx">addrValue</span><span class="p">)</span> <span class="kr">public</span> <span class="nx">only_owner</span><span class="p">(</span><span class="nx">node</span><span class="p">)</span>

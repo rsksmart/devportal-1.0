@@ -1156,7 +1156,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-10-06 14:25:15 +0000T00:00:00.000Z">2021-10-06</time> | -->
+    <!--time role="presentation" datetime="2023-02-07 07:59:04 +0000T00:00:00.000Z">2023-02-07</time> | -->
      1' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/rlogin/faqs.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2166,7 +2166,7 @@
 
 <h3 id="portis-support">Portis Support</h3>
 
-<p><a href="https://portis.io" rel="external noopener noreferrer" target="_blank">Portis</a> is not <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md" rel="external noopener noreferrer" target="_blank">EIP1193</a> compatible, however, rLogin creates a wrapper for it allowing <code class="highlighter-rouge">.request</code> methods to be called. Portis does not estimate the gasPrice correctly on RSK, so the wrapper will get the correct amount from the previous block. You can override this setting by passing <code class="highlighter-rouge">gasPrice</code> with your transaction. If your code uses the older <code class="highlighter-rouge">send</code> or <code class="highlighter-rouge">sendAsync</code> methods, you will also need to send the <code class="highlighter-rouge">gasPrice</code> attribute or the amount Portis adds will be too low.</p>
+<p><a href="https://portis.io" rel="external noopener noreferrer" target="_blank">Portis</a> is not <a href="https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1193.md" rel="external noopener noreferrer" target="_blank">EIP1193</a> compatible, however, rLogin creates a wrapper for it allowing <code class="highlighter-rouge">.request</code> methods to be called. Portis does not estimate the gasPrice correctly on Rootstock (RSK), so the wrapper will get the correct amount from the previous block. You can override this setting by passing <code class="highlighter-rouge">gasPrice</code> with your transaction. If your code uses the older <code class="highlighter-rouge">send</code> or <code class="highlighter-rouge">sendAsync</code> methods, you will also need to send the <code class="highlighter-rouge">gasPrice</code> attribute or the amount Portis adds will be too low.</p>
 
 <p>The following methods are confirmed to work: <code class="highlighter-rouge">eth_chainId</code>, <code class="highlighter-rouge">eth_accounts</code>, <code class="highlighter-rouge">net_version</code>, <code class="highlighter-rouge">eth_getBlockByNumber</code>, <code class="highlighter-rouge">eth_sendTransaction</code>, <code class="highlighter-rouge">eth_sendRawTransaction</code>, <code class="highlighter-rouge">personal_sign</code>, <code class="highlighter-rouge">eth_signTypedData</code>.</p>
 

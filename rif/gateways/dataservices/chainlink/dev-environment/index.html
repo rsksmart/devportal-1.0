@@ -1172,7 +1172,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2020-08-28 22:12:15 +0000T00:00:00.000Z">2020-08-28</time> | -->
+    <!--time role="presentation" datetime="2023-02-07 07:59:04 +0000T00:00:00.000Z">2023-02-07</time> | -->
      4' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/rif/gateways/dataservices/chainlink/dev-environment.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2201,11 +2201,11 @@
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose down <span class="nt">-v</span>
 </code></pre></div></div>
 
-<p>The objective of this local environment is to provide external data to a <strong>Consumer</strong> contract deployed on RSK network through the Chainlink Oracle system, using a simple and natural way to join both services thanks to the help of an <strong>external initiator</strong> and <strong>external adapter</strong>.</p>
+<p>The objective of this local environment is to provide external data to a <strong>Consumer</strong> contract deployed on Rootstock (RSK) network through the Chainlink Oracle system, using a simple and natural way to join both services thanks to the help of an <strong>external initiator</strong> and <strong>external adapter</strong>.</p>
 
 <p>A test runner is included to <strong>setup the environment</strong> and test the complete data flow, which will be:</p>
 
-<p><code class="highlighter-rouge">Consumer contract =&gt; Oracle contract =&gt; RSK Initiator =&gt; Chainlink =&gt; RSK TX Adapter =&gt; Oracle contract =&gt; Consumer contract</code></p>
+<p><code class="highlighter-rouge">Consumer contract =&gt; Oracle contract =&gt; Rootstock Initiator =&gt; Chainlink =&gt; Rootstock TX Adapter =&gt; Oracle contract =&gt; Consumer contract</code></p>
 
 <h2 id="services">Services:</h2>
 
@@ -2215,16 +2215,16 @@
   <li>
 <code class="highlighter-rouge">chainlink-node</code>, a Chainlink node connected to an Eth dev network, using the develop Docker image.</li>
   <li>
-<code class="highlighter-rouge">postgres-server</code>, a PostgreSQL server for the Chainlink node, RSK Initiator and RSKTX Adapter databases.</li>
+<code class="highlighter-rouge">postgres-server</code>, a PostgreSQL server for the Chainlink node, Rootstock Initiator and RSKTX Adapter databases.</li>
   <li>
 <code class="highlighter-rouge">ethereum-node</code>, an Ethereum geth node for the Chainlink node to connect to.</li>
   <li>
 <code class="highlighter-rouge">rsk-node</code>, a single RSK node configured to work on regtest network (private development network), using latest Docker image.</li>
   <li>
-<code class="highlighter-rouge">rsk-initiator</code>, an external initiator connected to the RSK node that reads the event log from an Oracle contract and invokes a job run. A new run created by the RSK Initiator is automatically given the parameters needed for the RSK TX adapter task to report the run
+<code class="highlighter-rouge">rsk-initiator</code>, an external initiator connected to the Rootstock node that reads the event log from an Oracle contract and invokes a job run. A new run created by the Rootstock (RSK) Initiator is automatically given the parameters needed for the Rootstock (RSK) TX adapter task to report the run
 back to the contract that originally created the event log, just like the native Runlog initiator.</li>
   <li>
-<code class="highlighter-rouge">rsktx-adapter</code>, an external adapter connected to the RSK node that takes the input given and places it into the data field of a transaction, just like the native EthTx adapter. It then signs the transaction and sends it to an address on RSK network.</li>
+<code class="highlighter-rouge">rsktx-adapter</code>, an external adapter connected to the Rootstock node that takes the input given and places it into the data field of a transaction, just like the native EthTx adapter. It then signs the transaction and sends it to an address on Rootstock (RSK) network.</li>
   <li>
 <code class="highlighter-rouge">test-runner</code>, a node script that initializes the testing environment, first deploying a SideToken contract and an Oracle contract. It then configures
 the Chainlink node, creating the initiator and adapter bridges and a job that includes them. Once the Chainlink node is ready, it deploys a Consumer contract configured with the previously deployed SideToken and Oracle contracts, and the previously created job. Then mints
@@ -2237,7 +2237,7 @@ tokens and sends some to the Consumer contract. Finally it calls the <code class
   <li>
 <code class="highlighter-rouge">Oracle</code>, the Oracle contract is the 0.5 version, with a single modification on the <code class="highlighter-rouge">onTokenTransfer</code> function of the LinkTokenReceiver to be able to work with the SideToken.</li>
   <li>
-<code class="highlighter-rouge">SideToken</code>, is the contract that will be created through the RSK Token Bridge, mirroring the LinkToken contract deployed on Ethereum network.</li>
+<code class="highlighter-rouge">SideToken</code>, is the contract that will be created through the Rootstock (RSK) Token Bridge, mirroring the LinkToken contract deployed on Ethereum network.</li>
   <li>
 <code class="highlighter-rouge">Consumer</code>, is the contract that will request the data to the Oracle. On test run, it will request last traded price of RIF/BTC pair from Liquid.com exchange.</li>
 </ul>
