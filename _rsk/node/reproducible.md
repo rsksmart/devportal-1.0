@@ -13,7 +13,7 @@ Gradle building
 
 *Setup instructions for gradle build in docker container.*
 
-This is a deterministic build process used to build RSK node JAR file. It provides a way to be reasonable sure that the JAR is built from GitHub RskJ repository. It also makes sure that the same tested dependencies are used and statically built into the executable.
+This is a deterministic build process used to build RSK node JAR file. It provides a way to be reasonable sure that the JAR is built from GitHub Rskj repository. It also makes sure that the same tested dependencies are used and statically built into the executable.
 
 It's strongly suggested to follow the steps by yourself to avoid any kind of contamination in the process.
 
@@ -51,9 +51,9 @@ RUN apt-get update -y && \
     apt-get clean
 RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN git clone --single-branch --depth 1 --branch IRIS-3.2.0 https://github.com/rsksmart/rskj.git /code/rskj
+RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git /code/rskj
 RUN git clone https://github.com/rsksmart/reproducible-builds 
-RUN CP /Users/{$USER}/reproducible-builds/rskj/3.2.0-iris/Dockerfile  /Users/{$USER}/code/rskj
+RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
 WORKDIR /code/rskj
 RUN gpg --verify SHA256SUMS.asc
 RUN sha256sum --check SHA256SUMS.asc
@@ -69,9 +69,9 @@ brew install git gnupg openjdk@8 && \
     brew cleanup
 RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
 RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN git clone --single-branch --depth 1 --branch IRIS-3.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
+RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
 RUN git clone https://github.com/rsksmart/reproducible-builds 
-RUN CP /Users/{$USER}/reproducible-builds/rskj/3.2.0-iris/Dockerfile  /Users/{$USER}/code/rskj
+RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
 RUN CD /code/rskj
 RUN gpg --verify SHA256SUMS.asc
 RUN sha256sum --check SHA256SUMS.asc
@@ -88,7 +88,7 @@ Run build
 To create a reproducible build, run:
 
 ```bash
-sudo docker build -t rskj-iris-3.2.0-reproducible .
+sudo docker build -t rskj-hop-4.2.0-reproducible .
 ```
 
 This may take several minutes to complete. What is done is:
@@ -101,7 +101,7 @@ This may take several minutes to complete. What is done is:
 To obtain SHA-256 checksums, run the following command:
 
 ```bash
-sudo docker run --rm rskj-iris-3.2.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-3.2.0-IRIS-all.jar /code/rskj/rskj-core/build/libs/rskj-core-3.2.0-IRIS-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-3.2.0-IRIS.jar /code/rskj/rskj-core/build/libs/rskj-core-3.2.0-IRIS.pom
+sudo docker run --rm rskj-hop-4.2.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP-all.jar /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP.jar /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP.pom
 ```
 
 Check Results
@@ -111,10 +111,10 @@ After running the build process, a JAR file will be created in ```/code/rskj-cor
 You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.
 
 ```bash
-fe8432293600ba403e48e50253c5cdf322d8ec578b1984d17a26bf508a061c8a rskj-core-3.2.0-IRIS-all.jar
-751d87b110205357478a9bd7909413bf80afacd51bd10eaa502bec50fda5a410  rskj-core/build/libs/rskj-core-3.2.0-IRIS-sources.jar
-d2f6594272748de21f70025e59525f2ffc6159ce21b6751590c3b535953c4d29  rskj-core/build/libs/rskj-core-3.2.0-IRIS.jar
-7204272b35891dca1d962af811dec92889d9564e5b200b5a50485101557e2f36  rskj-core/build/libs/rskj-core-3.2.0-IRIS.pom
+556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-4.2.0-HOP-all.jar
+e0544eaea2068f3ec9a99628f82b0163fc31d7be5282c925e34797e74982f826  rskj-core/build/libs/rskj-core-4.2.0-HOP-sources.jar
+42b0f44d0c612506ed39e186ffd8790fe5f775ee6bcd7d7189e01b0b9439c06d  rskj-core/build/libs/rskj-core-4.2.0-HOP.jar
+9160b4e02eef885afc672005a33e10ced8e4b9a7792039faf7f7a86880c165b0  rskj-core/build/libs/rskj-core-4.2.0-HOP.pom
 ```
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).
