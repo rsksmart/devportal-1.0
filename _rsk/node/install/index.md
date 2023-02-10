@@ -13,7 +13,7 @@ permalink: /rsk/node/install/
 
 Ensure that your system meets the [minimum requirements](./requirements/) before installing the RSK nodes on it.
 
-### Install RSK Node and Join the RSK Papyrus Mainnet
+### Install RSK Node and Join the RSK Hop Mainnet
 
 RSK nodes can be installed on all major platforms, including Linux, Windows, and Mac. Here we provide step-by-step instructions for all supported platforms. Depending on your network performance, it usually takes 10 to 15 mins to setup a working node on Mainnet.
 
