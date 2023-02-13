@@ -10,6 +10,10 @@ Make sure your system meets the [minimum requirements](../requirements/) before 
 
 You also need to install [Java 8 JDK](https://www.java.com/download/).
 
+#### For Mac M1 / M2 (Apple Chips)
+
+In order to run RSKj on Apple M1/M2 machines using x86 based software, make sure to have `Rosetta` installed in your device (it should be pre-installed by default on recent versions of macOS). Also you'd need an x86 JDK build. A suggestion could be [Azul Zulu 11 (x86)](https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jdk)
+
 ## Install the node using a JAR file
 
 The Fat JAR or Uber JAR can be [downloaded](https://github.com/rsksmart/rskj/releases) or compiled (in a [reproducible way](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [not](/rsk/node/contribute)).
