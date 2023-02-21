@@ -6,7 +6,7 @@ collection_order: 4800
 layout: rsk
 ---
 
-![Flyover-banner](/assets/img/guides/flyover/flyover-banner.gif)
+![Flyover-banner](/assets/img/guides/flyover/rootstock-peg-in-out.gif)
 
 The Flyover protocol performs fast [peg-ins](/guides/flyover/glossary/). It provides a new feature to transfer BTC from Bitcoin directly to a smart contract or [EOA](/guides/flyover/glossary/) in RSK faster than the regular peg-in protocol. See the [PowPeg](https://developers.rsk.co/rsk/architecture/powpeg/) documentation. 
 
