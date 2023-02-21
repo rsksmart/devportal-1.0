@@ -82,13 +82,13 @@ When a Relay Manager unauthorized a Relay Hub, it means it is unstaking from it,
 Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.
 
 ### Smart Wallet
-It’s the `contract-based account` owned by the Requester’s EOA. Before executing any transaction using the smart wallet, the smart wallet contract needs to be deployed. 
+It’s the “contract-based account” owned by the Requester’s EOA. Before executing any transaction using the smart wallet, the smart wallet contract needs to be deployed. 
 
 Smart Wallet are contracts that verify forwarded data and subsequently invoke the recipient contract of the transaction. Creating smart wallets does not have any gas cost providing the advantage that can be deployed only when necessary. 
 
 It is the component that calls the Recipient contract (i.e, the `msg.sender` address the Recipient will see). During the execution, the contract verifies the Relay Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.
 
-The `smart wallet` was designed to only interact with the RIF Relay system, therefore any native currency balance will be transferered back to the owner of `smart wallet` after each transaction. 
+The `smart wallet` was designed to only interact with the RIF Relay system, therefore any native currency balance will be transferred back to the owner of `smart wallet` after each transaction. 
 
 ### Native Holder Smart Wallet
 
@@ -229,7 +229,7 @@ It can work as an access point to the Relay system. It creates, signs, and sends
 It is not _strictly_ needed since any dApp or user could relay transactions using merely a Relay Server and the smart contracts, although this is arguably harder to do manually.
 
 ### Relay Provider
-Its the access point to the RIF Relay system. It wraps the `Relay Client` to simplify the interaction with the system. 
+It's the access point to the RIF Relay system. It wraps the `Relay Client` to provider Ethers.js compatibility. 
 
 ## Execution flow
 

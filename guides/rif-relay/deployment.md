@@ -24,22 +24,26 @@ permalink: /guides/rif-relay/deployment/
         After the deployment, we will see the summary of the deployed contracts. Most of this contracts are the on-chain components that will be used by RIF Relay and some are for testing purposes.
 
         ```
-        ┌─────────────────────────────────┬──────────────────────────────────────────────┐
-        │             (index)             │                    Values                    │
-        ├─────────────────────────────────┼──────────────────────────────────────────────┤
-        │            Penalizer            │ '0x77045E71a7A2c50903d88e564cD72fab11e82051' │
-        │            RelayHub             │ '0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974' │
-        │           SmartWallet           │ '0x83C5541A6c8D2dBAD642f385d8d06Ca9B6C731ee' │
-        │       SmartWalletFactory        │ '0xE0825f57Dd05Ef62FF731c27222A86E104CC4Cad' │
-        │         DeployVerifier          │ '0x73ec81da0C72DD112e06c09A6ec03B5544d26F05' │
-        │          RelayVerifier          │ '0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a' │
-        │        CustomSmartWallet        │ '0x1eD614cd3443EFd9c70F04b6d777aed947A4b0c4' │
-        │    CustomSmartWalletFactory     │ '0x5159345aaB821172e795d56274D0f5FDFdC6aBD9' │
-        │ CustomSmartWalletDeployVerifier │ '0x7557fcE0BbFAe81a9508FF469D481f2c72a8B5f3' │
-        │ CustomSmartWalletRelayVerifier  │ '0x0e19674ebc2c2B6Df3e7a1417c49b50235c61924' │
-        │            UtilToken            │ '0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8' │
-        │         VersionRegistry         │ '0x8901a2Bbf639bFD21A97004BA4D7aE2BD00B8DA8' │
-        └─────────────────────────────────┴──────────────────────────────────────────────┘
+        ┌───────────────────────────────────────┬──────────────────────────────────────────────┐
+        │             (index)                   │                    Values                    │
+        ├───────────────────────────────────────┼──────────────────────────────────────────────┤
+        │            Penalizer                  │ '0x77045E71a7A2c50903d88e564cD72fab11e82051' │
+        │            RelayHub                   │ '0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974' │
+        │           SmartWallet                 │ '0x83C5541A6c8D2dBAD642f385d8d06Ca9B6C731ee' │
+        │       SmartWalletFactory              │ '0xE0825f57Dd05Ef62FF731c27222A86E104CC4Cad' │
+        │         DeployVerifier                │ '0x73ec81da0C72DD112e06c09A6ec03B5544d26F05' │
+        │          RelayVerifier                │ '0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a' │
+        │        CustomSmartWallet              │ '0x1eD614cd3443EFd9c70F04b6d777aed947A4b0c4' │
+        │    CustomSmartWalletFactory           │ '0x5159345aaB821172e795d56274D0f5FDFdC6aBD9' │
+        │ CustomSmartWalletDeployVerifier       │ '0x7557fcE0BbFAe81a9508FF469D481f2c72a8B5f3' │
+        │ CustomSmartWalletRelayVerifier        │ '0x0e19674ebc2c2B6Df3e7a1417c49b50235c61924' │
+        │      NativeHolderSmartWallet          │ '0x4aC9422c7720eF71Cb219B006aB363Ab54BB4183' │
+        │    NativeHolderSmartWalletFactory     │ '0xBaDb31cAf5B95edd785446B76219b60fB1f07233' │
+        │ NativeHolderSmartWalletDeployVerifier │ '0xAe59e767768c6c25d64619Ee1c498Fd7D83e3c24' │
+        │ NativeHolderSmartWalletRelayVerifier  │ '0x5897E84216220663F306676458Afc7bf2A6A3C52' │
+        │            UtilToken                  │ '0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8' │
+        │         VersionRegistry               │ '0x8901a2Bbf639bFD21A97004BA4D7aE2BD00B8DA8' │
+        └───────────────────────────────────────┴──────────────────────────────────────────────┘
         ```
 
         As shown, we have two sets of Smart Wallets with their own verifiers. This is because each verifier uses the factory to perform deploy and relay validations. For testing purposes, we will be using the Smart Wallet Contracts.
@@ -99,7 +103,7 @@ permalink: /guides/rif-relay/deployment/
                   "share": 32
               }
           ],
-          "tokenAddress": "0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8",
+          "tokenAddresses": ["0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"],
           "remainderAddress": "0xc354D97642FAa06781b76Ffb6786f72cd7746C97"
         }
         ```
@@ -113,9 +117,15 @@ permalink: /guides/rif-relay/deployment/
 
         The collector is ready and can start receiving fees. 
     - Testnet
-      * TBD
+      * After creating the configuration file as described in the regtest section, we need to run the following command: 
+      ```
+      npx hardhat collector:deploy --network testnet
+      ```
     - Mainnet
-      * TBD
+      * After creating the configuration file as described in the regtest section, we need to run the following command: 
+      ```
+      npx hardhat collector:deploy --network mainnet
+      ```
 
 - 3) Allow Tokens
   * RIF Relay only accepts whitelisted tokens. There are multiple reasons to just allow whitelisted tokens but the main one is to ensure that RIF Relay is accepting tokens that represent value for the sponsor.
@@ -246,7 +256,7 @@ permalink: /guides/rif-relay/deployment/
 
         To obtain the addresses we need to execute the command:
         ```
-        curl http://<SERVER_URL>/getaddr
+        curl http://<SERVER_URL>/chain-info
         ```
         > The command needs to be executed in a different terminal since it needs the server to be running to perform the request.
 
@@ -255,6 +265,7 @@ permalink: /guides/rif-relay/deployment/
           "relayWorkerAddress": "0xabf898bd73b746298462915ca91623f5630f2462",
           "relayManagerAddress": "0xa71d65cbe28689e9358407f87e0b4481161c7e57",
           "relayHubAddress": "0xe90592939fE8bb6017A8a533264a5894B41aF7d5",
+          "feesReceiver": "0x52D107bB12d83EbCBFb4A6Ad0ec866Bb69FdB5Db",
           "minGasPrice": "6000000000",
           "chainId": "31",
           "networkId": "31",

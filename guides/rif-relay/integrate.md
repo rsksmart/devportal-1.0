@@ -13,6 +13,7 @@ This guide goes over the exposed RIF Relay methods that dApps and wallets can co
   - [**RIF Relay Smart Contracts**](#rif-relay-smart-contracts)
   - [**RIF Relay Server**](#rif-relay-server)
   - [**RIF Relay Client**](#rif-relay-client)
+    - [**Account Manager**](#account-manager)
   - [**Relay Transaction**](#relay-transaction)
   - [**Build Request**](#build-request)
     - [**Deploy Request**](#deploy-request)
@@ -46,7 +47,7 @@ In any case, you'll need to have the server installed and running. To achieve th
 1. [RIF Relay Installation Requirements](/guides/rif-relay/installation-requirements/)
 2. [RIF Relay Deployment](/guides/rif-relay/deployment/)
 
-### Relay Client
+### RIF Relay Client
 
 The `Relay Client` is a component from the RIF Relay Client library that helps to build a relay request, search for a server and send the request via http protocol. 
 
@@ -73,22 +74,24 @@ import {
   });
 
   setProvider(ethersProvider);
+  
+  const relayClient =  new RelayClient();
 ```
 
 Where variables are:
 
   * **CHAIN_ID**: The chain id that identify the network that the client will be interacting.
-  * **SERVER_URL_ARRAY**: An array of relay server url's that the client can interact with.
+  * **SERVER_URL_ARRAY**: An array of relay server URLs that the client can interact with.
   * **RELAY_HUB_ADDRESS**: The relay hub contract address.
   * **DEPLOY_VERIFIER_ADDRESS**: The deploy verifier contract address.
   * **RELAY_VERIFIER_ADDRESS**: The relay verifier contract address.
   * **SMART_WALLET_FACTORY_ADDRESS**: The smart wallet factory contract address.
 
-After setting the configuration and the ethers provider, we can create start creating instances from the `Relay Client`.
+After setting the configuration and the ethers provider, we can start creating instances from the `Relay Client`.
 
-### Account Manager
+#### Account Manager
 
-The `Account Manager` manager is a singleton component from the RIF Relay Client library that helps to sign the relay transactions.  This component can sign the transactions with an internal account that was previously added or using a wallet provider like [metamask](https://metamask.io/). The `Account Manager` will look first for internal accounts and if none is found, will try to use the provider that was [previously setup](/guides/rif-relay/integrate/#relay-client).
+The `Account Manager` manager is a singleton component from the RIF Relay Client library that helps to sign relay transactions.  This component can sign the transactions with an internal account that was previously added or using a wallet provider like [metamask](https://metamask.io/). The `Account Manager` will look first for manually added accounts and, if none is found, will try to use the provider that was [previously setup](/guides/rif-relay/integrate/#rif-relay-client).
 
 The `Account Manager` accepts [Ethers V5 Wallets](https://docs.ethers.org/v5/api/signer/#Wallet) as internal accounts.  
 
@@ -109,11 +112,11 @@ To interact with the `Account Manager` we need to follow the next steps:
 
 Where variables are:
 
-  * **INTERNAL_ACCOUNT_OBJECT**: Ethers V5 Wallet object.
+  * **INTERNAL_ACCOUNT_OBJECT**: [Ethers V5 Wallet](https://docs.ethers.org/v5/api/signer/#Wallet) object.
 
 ### Relay Transaction
 
-To relay transactions we need to have a smart wallet already deployed, the deployment process and definition of a smart wallet can be found [Smart Wallet](/guides/rif-relay/smart-wallets).
+To relay transactions we need a smart wallet already deployed, the deployment process and definition of a smart wallet can be found [Smart Wallet](/guides/rif-relay/smart-wallets).
 
 The steps that we must follow are:
 
@@ -143,8 +146,8 @@ The steps that we must follow are:
 Where variables are:
 
   * **EOA**: Externally Owned Account, the owner of the smart wallet.
-  * **DATA_TO_EXECUTE**: The data execution that we want to relay.
-  * **DESTINATION_ADDRESS**: The destination contract address from the data that we want to execute.
+  * **DATA_TO_EXECUTE**: The encoded function that we want to relay.
+  * **DESTINATION_ADDRESS**: The address of the destination contract that we want to execute.
   * **TOKEN_ADDRESS**: The token contract address that we want to use to pay for the fee.
   * **AMOUNT_OF_TOKENS_IN_WEI**: The amount that we want to pay for the fee in wei.
   * **SMART_WALLET_ADDRESS**: The smart wallet address that is going to execute the relayed transaction.
@@ -168,17 +171,17 @@ To obtain the verifier addresses we need to execute the command:
 
 ### Build Request
 
-To relay transactions through the Relay Server its only necessary to send a HTTP(post) request to the following path `http://<SERVER_URL>/relay`. The Relay Client provides an abstraction to build and send each transaction to the available servers, however, this process can be done manually. 
+To relay transactions, the Relay Server exposes an HTTP post handler to the following path `http://<SERVER_URL>/relay`. The Relay Client provides an abstraction to build and send each transaction to the available servers; although the client can simplify the interaction with the server, it's always possible to send HTTP requests to the server without using the Relay Client. 
 
-Each transaction that will be sent, needs to follow the next structure:
+Each transaction that will be sent, needs to have the following structure:
   ```json
     {
-      "relayRequest": "<DEPLOY|RELAY_REQUEST>",
+      "relayRequest": "<DEPLOY_REQUEST|RELAY_REQUEST>",
       "metadata": "<METADATA>"
     }
   ```
 
-Below we will describe each field that is needed in the json object that will be sent to the server. 
+Below we will describe each field that is required in the request. 
 
 #### Relay Request
 
@@ -208,15 +211,15 @@ Below we will describe each field that is needed in the json object that will be
 Where each key from `request` is:
 
   * **relayHub**: The relay hub address that will be used to validate the caller from the transaction.
-  * **to**: The destination contract address from the data that we want to execute.
-  * **data**: The data execution that we want to relay.
+  * **to**: The address of the destination contract that we want to execute.
+  * **data**: The encoded function that we want to relay.
   * **from**: Externally Owned Account, the owner of the smart wallet.
   * **value**: The native currency value that wants to be transferred from smart wallet during the execution.
   * **nonce**: Smart Wallet nonce to avoid replay attacks.
-  * **tokenAmount**: The amount that we want to pay for the fee in wei..
-  * **tokenGas**: The amount of gas limit for the token payment internal transaction.
-  * **tokenContract**: The token contract address that we want to use to pay for the fee..
-  * **gas**: The amount of gas limit for the execution of the relaying transaction.
+  * **tokenAmount**: The amount of token that we want to pay for the fee in wei.
+  * **tokenGas**: The gas limit for the token payment transaction.
+  * **tokenContract**: The token contract address that we want to use to pay for the fee.
+  * **gas**: The gas limit for the execution of the relaying transaction.
   * **validUntilTime**: Transaction expiration time in seconds.
 
 Where each key from `relayData` is:
@@ -224,7 +227,7 @@ Where each key from `relayData` is:
   * **gasPrice**: The gas price that will be used to relay the transaction.
   * **callVerifier**: The relay verifier address to validate the correctness of the transaction.
   * **callForwarder**: The smart wallet address that is going to execute the transaction. 
-  * **feesReceiver**: The address from the worker or collector contract that is going to receive fees.
+  * **feesReceiver**: The address of the worker or collector contract that is going to receive fees.
 
 #### Deploy Request
 
@@ -256,14 +259,14 @@ Where each key from `relayData` is:
 Where each key from `request` is:
 
   * **relayHub**: The relay hub address that will be used to validate the caller from the transaction.
-  * **to**: The destination contract address from the data that we want to execute.
-  * **data**: The data execution that we want to relay.
+  * **to**: The address of the destination contract that we want to execute (`0x0000000000000000000000000000000000000000` for the Smart Wallet deployment).
+  * **data**: The encoded function that we want to relay (`0x` for the Smart Wallet deployment).
   * **from**: Externally Owned Account, the owner of the smart wallet.
   * **value**: The native currency value that wants to be transferred from smart wallet during the execution.
   * **nonce**: Smart Wallet nonce to avoid replay attacks.
-  * **tokenAmount**: The amount that we want to pay for the fee in wei..
-  * **tokenGas**: The amount of gas limit for the token payment internal transaction.
-  * **tokenContract**: The token contract address that we want to use to pay for the fee..
+  * **tokenAmount**: The amount that we want to pay for the fee in wei.
+  * **tokenGas**: The gas limit for the token payment transaction.
+  * **tokenContract**: The token contract address that we want to use to pay for the fee.
   * **recoverer**: The recoverer address, to recover funds from the smart wallet. This feature is still pending to implement. 
   * **index**: The index from the smart wallet that we want to deploy.
   * **validUntilTime**: Transaction expiration time in seconds.
@@ -273,7 +276,7 @@ Where each key from `relayData` is:
 
   * **gasPrice**: The gas price that will be used to relay the transaction.
   * **callVerifier**: The deploy verifier address to validate the correctness of the transaction.
-  * **callForwarder**: The smart wallet factory addrss that is going to perform the deployment. 
+  * **callForwarder**: The smart wallet factory address that is going to perform the deployment. 
   * **feesReceiver**: The address from the worker or collector contract that is going to receive fees.
 
 #### Metadata

@@ -5,12 +5,12 @@ tags: rif, envelope, relay, user, guide, smart, wallet
 permalink: /guides/rif-relay/smart-wallets/
 ---
 
-This guide is intended to explain more about the interaction and deployment of the Smart Wallets. We will be using additional testing contracts that were included in the project, like the `UtilToken(ERC20)`. All the utils scripts are executed from the account[0] from the regtest blockchain. 
+This guide is intended to explain more about the interaction and deployment of the Smart Wallets. We will be using additional testing contracts that were included in the project, like the `UtilToken(ERC20)`. All the utils scripts are executed from the account[0] from the regtest network. 
 
 ## Pre-Requisites
 
 * Follow the deployment process in [Deployment Guide](/guides/rif-relay/deployment).
-* The defintion of the smart wallet can be found in [Architecture](/rif/relay/architecture/#smart-wallet)
+* The definition of the smart wallet can be found in [Architecture](/rif/relay/architecture/#smart-wallet)
 
 ## Ways to create smart wallets
 
@@ -34,8 +34,8 @@ npx hardhat mint --token-address <0xabc123> --amount <amount_in_wei> --receiver 
 
 To deploy a smart wallet we need to follow some steps that will be described below:
 
-1. We need to generate the smart wallet address. As we mention before, the Smart Wallet is a contract-based account, therefore, we can generate as many as we want without spending gas by calling the `getSmartWalletAddress` from the relay client library. 
-> A Smart Wallet only needs to be deployed when we need to execute a transaction. The deployment process use gas so we need to pay or it can subsidized.
+1. We need to generate the smart wallet address. As we mentioned before, the Smart Wallet is a contract-based account, therefore, we can generate as many smart wallet addresses as we want without spending gas by calling the `getSmartWalletAddress` from the relay client library. 
+> A Smart Wallet only needs to be deployed when we need to execute a transaction. The deployment process uses gas so, unless it's subsidized, we need to pay for it.
 
 
 At this point we should have the Relay Client object created. 
@@ -61,7 +61,7 @@ At this point we should have the Relay Client object created.
     );
 
    ```
-   > Keep in mind that to pay any amount of token fees during the deployment, the smart wallet must receive funds first
+   > Keep in mind that to pay any amount of token fees during the deployment, the smart wallet must receive funds first.
 
    Where variables are:
 
