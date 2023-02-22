@@ -49,13 +49,13 @@ In any case, you'll need to have the server installed and running. To achieve th
 
 ### RIF Relay Client
 
-The `Relay Client` is a component from the RIF Relay Client library that helps to build a relay request, search for a server and send the request via http protocol. 
+The `RelayClient` class, from the RIF Relay Client library, assists in building a relay request, searching for an available server and sending the request via http protocol. 
 
-To create a `Relay Client` we need to follow the next steps:
+To create a `RelayClient` we need to follow these steps:
 
 1. Set the configuration.
-2. Set the ethers provider.
-3. Create intances. 
+2. Set (ethers) provider.
+3. Create instance.
 
 ```typescript
 import {
@@ -65,7 +65,7 @@ import {
 } from '@rsksmart/rif-relay-client';
 
   setEnvelopingConfig({
-    chainId: <CHAIN_ID>,
+    chainId: <CHAIN_ID>, 
     preferredRelays: <SERVER_URL_ARRAY>,
     relayHubAddress: <RELAY_HUB_ADDRESS>,
     deployVerifierAddress: <DEPLOY_VERIFIER_ADDRESS>,
@@ -80,8 +80,8 @@ import {
 
 Where variables are:
 
-  * **CHAIN_ID**: The chain id that identify the network that the client will be interacting.
-  * **SERVER_URL_ARRAY**: An array of relay server URLs that the client can interact with.
+  * **CHAIN_ID**: Identifies a network to interact with.
+  * **SERVER_URL_ARRAY**: An array of relay server URL strings that the RelayClient can interact with.
   * **RELAY_HUB_ADDRESS**: The relay hub contract address.
   * **DEPLOY_VERIFIER_ADDRESS**: The deploy verifier contract address.
   * **RELAY_VERIFIER_ADDRESS**: The relay verifier contract address.
