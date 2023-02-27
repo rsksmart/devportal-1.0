@@ -1158,7 +1158,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-11-10 15:43:19 +0000T00:00:00.000Z">2022-11-10</time> | -->
+    <!--time role="presentation" datetime="2023-02-21 14:03:19 +0000T00:00:00.000Z">2023-02-21</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/smart-wallets.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2166,19 +2166,15 @@
 
                   <h1 class="page-title" id="top">RIF Relay Smart Wallets</h1>
 
-                  <p>This guide is intended to explain more about the interaction and deployment of the Smart Wallets. We will be using additional testing contracts that were included in the project, like the TestToken(ERC20). All the utils scripts are executed from the account[0] from the regtest blockchain.</p>
+                  <p>This guide is intended to explain more about the interaction and deployment of the Smart Wallets. We will be using additional testing contracts that were included in the project, like the <code class="highlighter-rouge">UtilToken(ERC20)</code>. All the utils scripts are executed from the account[0] from the regtest network.</p>
 
 <h2 id="pre-requisites">Pre-Requisites</h2>
 
 <ul>
   <li>Follow the deployment process in <a href="../deployment/">Deployment Guide</a>.</li>
-  <li>The defintion of the smart wallet can be found in <a href="../../../rif/relay/architecture/#smart-wallet">Architecture</a>
+  <li>The definition of the smart wallet can be found in <a href="../../../rif/relay/architecture/#smart-wallet">Architecture</a>
 </li>
 </ul>
-
-<h2 id="rif-relay-sdk">RIF Relay SDK</h2>
-
-<p>The SDK was developed to simplify the interaction between dapps and RIF Relay. For further details about the SDK usage, please refer to the <a href="../integrate#rif-relay-sdk">related guide</a>.</p>
 
 <h2 id="ways-to-create-smart-wallets">Ways to create smart wallets</h2>
 
@@ -2193,14 +2189,14 @@
 
 <h2 id="send-funds">Send funds</h2>
 
-<p>In the <a href="https://github.com/rsksmart/rif-relay-contracts" rel="external noopener noreferrer" target="_blank">RIF Relay Contracts</a> there is a script that would help us to send funds using the <code class="highlighter-rouge">account[0]</code> from Regtest.</p>
+<p>In the <a href="https://github.com/rsksmart/rif-relay-contracts" rel="external noopener noreferrer" target="_blank">RIF Relay Contracts</a> there is a script that would help us to mint ERC20 tokens.</p>
 
 <p>We need to execute the following script:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx truffle exec --network regtest tasks/mint.js --amount 50000000000000000000 --tokenReceiver &lt;ADDRESS&gt;
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npx hardhat mint --token-address &lt;0xabc123&gt; --amount &lt;amount_in_wei&gt; --receiver &lt;0xabc123&gt; --network regtest
 </code></pre></div></div>
 <blockquote>
-  <p>The token that wold be sent is the Test Token that was deployed.</p>
+  <p>The token contract needs to have a mint function.</p>
 </blockquote>
 
 <h2 id="deploy-a-smart-wallet">Deploy a Smart Wallet</h2>
@@ -2208,39 +2204,50 @@
 <p>To deploy a smart wallet we need to follow some steps that will be described below:</p>
 
 <ol>
-  <li>We need to generate the smart wallet address. As we mention before the Smart Wallet is a contract-based account, therefore, we can generate as many as we want without spending gas by calling the <code class="highlighter-rouge">generateSmartWallet</code> from the SDK.
+  <li>We need to generate the smart wallet address. As we mentioned before, the Smart Wallet is a contract-based account, therefore, we can generate as many smart wallet addresses as we want without spending gas by calling the <code class="highlighter-rouge">getSmartWalletAddress</code> from the relay client library.
     <blockquote>
-      <p>A Smart Wallet only needs to be deployed when we need to execute a transaction. The deployment process use gas so we need to pay or it can subsidized.</p>
+      <p>A Smart Wallet only needs to be deployed when we need to execute a transaction. The deployment process uses gas so, unless it’s subsidized, we need to pay for it.</p>
     </blockquote>
   </li>
 </ol>
 
-<p>At this point we should have the SDK object created and being called from a dApp.</p>
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="kd">const</span> <span class="nx">smartWallet</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">relayingServices</span><span class="p">.</span><span class="nx">generateSmartWallet</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">SMART_WALLET_INDEX</span><span class="o">&gt;</span><span class="p">);</span>
+<p>At this point we should have the Relay Client object created.</p>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">import</span> <span class="nx">type</span> <span class="p">{</span>
+      <span class="nx">getSmartWalletAddress</span><span class="p">,</span>
+      <span class="nx">UserDefinedDeployRequest</span><span class="p">,</span>
+    <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/rif-relay-client</span><span class="dl">'</span><span class="p">;</span>
 
-      <span class="kd">const</span> <span class="nx">options</span><span class="p">:</span> <span class="nx">SmartWalletDeploymentOptions</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="na">tokenAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">TOKEN_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-        <span class="na">tokenAmount</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">AMOUNT_OF_TOKENS</span><span class="o">&gt;</span>
-    <span class="p">}</span>
+    <span class="kd">const</span> <span class="nx">smartWalletAddress</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">getSmartWalletAddress</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">EOA</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="nx">INDEX</span><span class="o">&gt;</span><span class="p">);</span>
 
-    <span class="k">await</span> <span class="nx">relayingServices</span><span class="p">.</span><span class="nx">deploySmartWallet</span><span class="p">(</span>
-        <span class="nx">smartWallet</span><span class="p">,</span>
-        <span class="nx">options</span>
+    <span class="kd">const</span> <span class="nx">relayTransactionOpts</span><span class="p">:</span> <span class="nx">UserDefinedDeployRequest</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">request</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">EOA</span><span class="o">&gt;</span><span class="p">,</span>
+        <span class="na">tokenContract</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">TOKEN_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
+        <span class="na">tokenAmount</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">AMOUNT_OF_TOKENS_IN_WEI</span><span class="o">&gt;</span><span class="p">,</span>
+        <span class="na">index</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">INDEX</span><span class="o">&gt;</span><span class="p">,</span>
+      <span class="p">},</span>
+    <span class="p">};</span>
+
+    <span class="kd">const</span> <span class="nx">transaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">relayClient</span><span class="p">.</span><span class="nx">relayTransaction</span><span class="p">(</span>
+      <span class="nx">relayTransactionOpts</span>
     <span class="p">);</span>
+
 </code></pre></div></div>
 <blockquote>
-  <p>Keep in mind that to pay any amount of token fees during the deployment, the smart wallet must receive funds first</p>
+  <p>Keep in mind that to pay any amount of token fees during the deployment, the smart wallet must receive funds first.</p>
 </blockquote>
 
 <p>Where variables are:</p>
 
 <ul>
   <li>
-<strong>SMART_WALLET_INDEX</strong>: the index that we would like to use to generate the smart wallet.</li>
+<strong>EOA</strong>: Externally Owned Account, the owner of the smart wallet.</li>
   <li>
-<strong>TOKEN_ADDRESS</strong>: the token contract address.</li>
+<strong>INDEX</strong>: The index that we would like to use to generate the smart wallet.</li>
   <li>
-<strong>AMOUNT_OF_TOKENS</strong>: string containing the amount of tokens in decimal unit.</li>
+<strong>TOKEN_ADDRESS</strong>: The token contract address that we want to use to pay for the fee.</li>
+  <li>
+<strong>AMOUNT_OF_TOKENS_IN_WEI</strong>: The amount that we want to pay for the fee in wei.</li>
 </ul>
 
 

@@ -1158,8 +1158,8 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-11-16 02:14:47 +0000T00:00:00.000Z">2022-11-16</time> | -->
-     7' to read |
+    <!--time role="presentation" datetime="2023-02-22 12:38:49 +0000T00:00:00.000Z">2023-02-22</time> | -->
+     13' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/integrate.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
        <a href="#" id="share-menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Share</a>
@@ -2176,8 +2176,21 @@
     <ul>
       <li><a href="#rif-relay-smart-contracts"><strong>RIF Relay Smart Contracts</strong></a></li>
       <li><a href="#rif-relay-server"><strong>RIF Relay Server</strong></a></li>
-      <li><a href="#rif-relay-sdk"><strong>RIF Relay SDK</strong></a></li>
-      <li><a href="#relay-request"><strong>Relay Request</strong></a></li>
+      <li>
+<a href="#rif-relay-client"><strong>RIF Relay Client</strong></a>
+        <ul>
+          <li><a href="#account-manager"><strong>Account Manager</strong></a></li>
+        </ul>
+      </li>
+      <li><a href="#relay-transaction"><strong>Relay Transaction</strong></a></li>
+      <li>
+<a href="#build-request"><strong>Build Request</strong></a>
+        <ul>
+          <li><a href="#deploy-request"><strong>Deploy Request</strong></a></li>
+          <li><a href="#relay-request"><strong>Relay Request</strong></a></li>
+          <li><a href="#metadata"><strong>Metadata</strong></a></li>
+        </ul>
+      </li>
       <li><a href="#custom-worker-replenish-function"><strong>Custom worker replenish function</strong></a></li>
     </ul>
   </li>
@@ -2207,107 +2220,117 @@
 
 <p>In any case, you’ll need to have the server installed and running. To achieve this please refer to the following guides:</p>
 <ol>
-  <li><a href="../install/">RIF Relay Installation</a></li>
-  <li><a href="../deployment/">RIF Relay Launch</a></li>
+  <li><a href="../installation-requirements/">RIF Relay Installation Requirements</a></li>
+  <li><a href="../deployment/">RIF Relay Deployment</a></li>
 </ol>
 
-<h3 id="rif-relay-sdk">RIF Relay SDK</h3>
+<h3 id="rif-relay-client">RIF Relay Client</h3>
 
-<p>To simplify the integration process a SDK was developed, the SDK is a library that needs to be used from a dApp that will provide us a way to sign transactions.</p>
+<p>The <code class="highlighter-rouge">RelayClient</code> class, from the RIF Relay Client library, assists in building a relay request, searching for an available server and sending the request via http protocol.</p>
 
-<p>The SDK’s job is to provide a simple access to the general functions from the RIF Relay system. To create an instance of the SDK, follow the steps below:</p>
+<p>To create a <code class="highlighter-rouge">RelayClient</code> we need to follow these steps:</p>
 
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">import</span> <span class="p">{</span>
-      <span class="nx">DefaultRelayingServices</span><span class="p">,</span>
-      <span class="nx">EnvelopingConfig</span><span class="p">,</span>
-      <span class="nx">RelayingServicesAddresses</span>
-  <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-relay-sdk</span><span class="dl">"</span><span class="p">;</span>
-  <span class="k">import</span> <span class="nx">Web3</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">web3</span><span class="dl">"</span><span class="p">;</span>
+<ol>
+  <li>Set the configuration.</li>
+  <li>Set (ethers) provider.</li>
+  <li>Create instance.</li>
+</ol>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span>
+  <span class="nx">RelayClient</span><span class="p">,</span>
+  <span class="nx">setEnvelopingConfig</span><span class="p">,</span>
+  <span class="nx">setProvider</span><span class="p">,</span>
+<span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/rif-relay-client</span><span class="dl">'</span><span class="p">;</span>
+
+  <span class="nx">setEnvelopingConfig</span><span class="p">({</span>
+    <span class="na">chainId</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">CHAIN_ID</span><span class="o">&gt;</span><span class="p">,</span> 
+    <span class="na">preferredRelays</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SERVER_URL_ARRAY</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="na">relayHubAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">RELAY_HUB_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="na">deployVerifierAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">DEPLOY_VERIFIER_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="na">relayVerifierAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">RELAY_VERIFIER_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="na">smartWalletFactoryAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_FACTORY_ADDRESS</span><span class="o">&gt;</span>
+  <span class="p">});</span>
+
+  <span class="nx">setProvider</span><span class="p">(</span><span class="nx">ethersProvider</span><span class="p">);</span>
   
-   <span class="kd">const</span> <span class="nx">config</span><span class="p">:</span> <span class="nx">Partial</span><span class="o">&lt;</span><span class="nx">EnvelopingConfig</span><span class="o">&gt;</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="na">chainId</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">RSK_CHAIN_ID</span><span class="o">&gt;</span><span class="p">,</span>
-        <span class="na">preferredRelays</span><span class="p">:</span> <span class="p">[</span><span class="o">&lt;</span><span class="nx">RIF_RELAY_SERVER_URL</span><span class="o">&gt;</span><span class="p">],</span>
-        <span class="na">logLevel</span><span class="p">:</span> <span class="mi">0</span>
-    <span class="p">};</span>
-
-    <span class="kd">const</span> <span class="nx">contractAddresses</span><span class="p">:</span> <span class="nx">RelayingServicesAddresses</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="na">relayHub</span><span class="p">:</span> <span class="dl">'</span><span class="s1">0xE0825f57Dd05Ef62FF731c27222A86E104CC4Cad</span><span class="dl">'</span><span class="p">,</span>
-        <span class="na">smartWallet</span><span class="p">:</span> <span class="dl">'</span><span class="s1">0x73ec81da0C72DD112e06c09A6ec03B5544d26F05</span><span class="dl">'</span><span class="p">,</span>
-        <span class="na">smartWalletFactory</span><span class="p">:</span> <span class="dl">'</span><span class="s1">0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a</span><span class="dl">'</span><span class="p">,</span>
-        <span class="na">smartWalletDeployVerifier</span><span class="p">:</span> <span class="dl">'</span><span class="s1">0x1eD614cd3443EFd9c70F04b6d777aed947A4b0c4</span><span class="dl">'</span><span class="p">,</span>
-        <span class="na">smartWalletRelayVerifier</span><span class="p">:</span> <span class="dl">'</span><span class="s1">0x5159345aaB821172e795d56274D0f5FDFdC6aBD9</span><span class="dl">'</span><span class="p">,</span>
-        <span class="c1">// TODO: Why aren't these addresses required? we may set them as optional</span>
-        <span class="na">penalizer</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
-        <span class="na">customSmartWallet</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
-        <span class="na">customSmartWalletFactory</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
-        <span class="na">customSmartWalletDeployVerifier</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
-        <span class="na">customSmartWalletRelayVerifier</span><span class="p">:</span> <span class="dl">''</span><span class="p">,</span>
-        <span class="na">sampleRecipient</span><span class="p">:</span> <span class="dl">''</span>
-    <span class="p">};</span>
-
-    <span class="kd">const</span> <span class="nx">web3</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Web3</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">RSK_NODE_ENDPOINT</span><span class="o">&gt;</span><span class="p">);</span>
-
-    <span class="kd">const</span> <span class="nx">relayingServices</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">DefaultRelayingServices</span><span class="p">(</span><span class="nx">web3</span><span class="p">);</span>
-    <span class="k">await</span> <span class="nx">relayingServices</span><span class="p">.</span><span class="nx">initialize</span><span class="p">(</span><span class="nx">config</span><span class="p">,</span> <span class="nx">contractAddresses</span><span class="p">,</span> <span class="p">{</span>
-        <span class="na">loglevel</span><span class="p">:</span> <span class="mi">1</span>
-    <span class="p">});</span>
+  <span class="kd">const</span> <span class="nx">relayClient</span> <span class="o">=</span>  <span class="k">new</span> <span class="nx">RelayClient</span><span class="p">();</span>
 </code></pre></div></div>
-<blockquote>
-  <p>All the contracts addresses and the chainId are from RSK Node Regtest</p>
-</blockquote>
 
 <p>Where variables are:</p>
 
 <ul>
   <li>
-<strong>RSK_CHAIN_ID</strong>: The RSK node chain ID which is running (e.g. <code class="highlighter-rouge">33</code>).</li>
+<strong>CHAIN_ID</strong>: Identifies a network to interact with.</li>
   <li>
-<strong>RIF_RELAY_SERVER_URL</strong>: The RIF Relay Server URL (e.g. <code class="highlighter-rouge">http://localhost:8090</code>).</li>
+<strong>SERVER_URL_ARRAY</strong>: An array of relay server URL strings that the RelayClient can interact with.</li>
   <li>
-<strong>RSK_NODE_ENDPOINT</strong>: The RSK node endpoint which is running (e.g. <code class="highlighter-rouge">http://localhost:4444</code>).</li>
+<strong>RELAY_HUB_ADDRESS</strong>: The relay hub contract address.</li>
+  <li>
+<strong>DEPLOY_VERIFIER_ADDRESS</strong>: The deploy verifier contract address.</li>
+  <li>
+<strong>RELAY_VERIFIER_ADDRESS</strong>: The relay verifier contract address.</li>
+  <li>
+<strong>SMART_WALLET_FACTORY_ADDRESS</strong>: The smart wallet factory contract address.</li>
 </ul>
 
-<h3 id="relay-request">Relay Request</h3>
+<p>After setting the configuration and the ethers provider, we can start creating instances from the <code class="highlighter-rouge">Relay Client</code>.</p>
 
-<p>To relay transactions we need to have a smart wallet already deployed, the deployment process and definition of a smart wallet can be found <a href="../smart-wallets/">Smart Wallet</a>.</p>
+<h4 id="account-manager">Account Manager</h4>
+
+<p>The <code class="highlighter-rouge">Account Manager</code> manager is a singleton component from the RIF Relay Client library that helps to sign relay transactions.  This component can sign the transactions with an internal account that was previously added or using a wallet provider like <a href="https://metamask.io/" rel="external noopener noreferrer" target="_blank">metamask</a>. The <code class="highlighter-rouge">Account Manager</code> will look first for manually added accounts and, if none is found, will try to use the provider that was <a href="#rif-relay-client">previously setup</a>.</p>
+
+<p>The <code class="highlighter-rouge">Account Manager</code> accepts <a href="https://docs.ethers.org/v5/api/signer/#Wallet" rel="external noopener noreferrer" target="_blank">Ethers V5 Wallets</a> as internal accounts.</p>
+
+<p>To interact with the <code class="highlighter-rouge">Account Manager</code> we need to follow the next steps:</p>
+
+<ol>
+  <li>Get an instance.</li>
+  <li>Add a new account.</li>
+</ol>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="k">import</span> <span class="p">{</span>
+      <span class="nx">AccountManager</span><span class="p">,</span>
+    <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@rsksmart/rif-relay-client</span><span class="dl">'</span><span class="p">;</span>
+
+    <span class="kd">const</span> <span class="nx">accountManager</span> <span class="o">=</span> <span class="nx">AccountManager</span><span class="p">.</span><span class="nx">getInstance</span><span class="p">();</span>
+
+    <span class="nx">accountManager</span><span class="p">.</span><span class="nx">addAccount</span><span class="p">(</span><span class="o">&lt;</span><span class="nx">INTERNAL_ACCOUNT_OBJECT</span><span class="o">&gt;</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>Where variables are:</p>
+
+<ul>
+  <li>
+<strong>INTERNAL_ACCOUNT_OBJECT</strong>: <a href="https://docs.ethers.org/v5/api/signer/#Wallet" rel="external noopener noreferrer" target="_blank">Ethers V5 Wallet</a> object.</li>
+</ul>
+
+<h3 id="relay-transaction">Relay Transaction</h3>
+
+<p>To relay transactions we need a smart wallet already deployed, the deployment process and definition of a smart wallet can be found <a href="../smart-wallets/">Smart Wallet</a>.</p>
 
 <p>The steps that we must follow are:</p>
 
 <ol>
   <li>Deploy the smart wallet.</li>
   <li>Create the transaction that we would like to relay.</li>
-  <li>Envelope the transaction with the Token that we would like to use to pay to the worker and the amount to be paid.</li>
   <li>Relay the transaction.</li>
 </ol>
 
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">import</span> <span class="p">{</span>
-      <span class="nx">RelayingTransactionOptions</span><span class="p">,</span>
-      <span class="nx">SmartWallet</span><span class="p">,</span>
-      <span class="nx">RelayingResult</span>
-  <span class="p">}</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">@rsksmart/rif-relay-sdk</span><span class="dl">"</span><span class="p">;</span>
-  <span class="k">import</span> <span class="nx">Web3</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">web3</span><span class="dl">"</span><span class="p">;</span>
-  <span class="k">import</span> <span class="p">{</span> <span class="nx">TransactionConfig</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">web3-core</span><span class="dl">'</span><span class="p">;</span>
-
-    <span class="c1">// Step 1</span>
-    <span class="kd">const</span> <span class="nx">smartWallet</span><span class="p">:</span> <span class="nx">SmartWallet</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET</span><span class="o">&gt;</span><span class="p">;</span>
-
-    <span class="c1">// Step 2</span>
-    <span class="kd">const</span> <span class="nx">unsignedTx</span><span class="p">:</span> <span class="nx">TransactionConfig</span> <span class="o">=</span> <span class="p">{</span>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">const</span> <span class="nx">relayTransactionOpts</span><span class="p">:</span> <span class="nx">UserDefinedEnvelopingRequest</span> <span class="o">=</span> <span class="p">{</span>
+      <span class="na">request</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">from</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">EOA</span><span class="o">&gt;</span><span class="p">,</span>
+        <span class="na">data</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">DATA_TO_EXECUTE</span><span class="o">&gt;</span><span class="p">,</span>
         <span class="na">to</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">DESTINATION_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-        <span class="na">value</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">AMOUNT_TO_TRANSFER</span><span class="o">&gt;</span>
+        <span class="na">tokenContract</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">TOKEN_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
+        <span class="na">tokenAmount</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">AMOUNT_OF_TOKENS_IN_WEI</span><span class="o">&gt;</span><span class="p">,</span>
+      <span class="p">},</span>
+      <span class="na">relayData</span><span class="p">:</span> <span class="p">{</span>
+        <span class="na">callForwarder</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">SMART_WALLET_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
+      <span class="p">},</span>
     <span class="p">};</span>
 
-    <span class="c1">// Step 3</span>
-    <span class="kd">const</span> <span class="nx">relayTrxOpts</span><span class="p">:</span> <span class="nx">RelayingTransactionOptions</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="nx">smartWallet</span><span class="p">,</span>
-        <span class="nx">unsignedTx</span><span class="p">,</span>
-        <span class="na">tokenAddress</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">TOKEN_ADDRESS</span><span class="o">&gt;</span><span class="p">,</span>
-        <span class="na">tokenAmount</span><span class="p">:</span> <span class="o">&lt;</span><span class="nx">AMOUNT_OF_TOKENS</span><span class="o">&gt;</span>
-    <span class="p">};</span>
-
-    <span class="c1">// Step 4</span>
-    <span class="kd">const</span> <span class="nx">relayintResult</span><span class="p">:</span> <span class="nx">RelayingResult</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">relayingServices</span><span class="p">.</span><span class="nx">relayTransaction</span><span class="p">(</span>
-        <span class="nx">relayTrxOpts</span>
+    <span class="kd">const</span> <span class="nx">transaction</span><span class="p">:</span> <span class="nx">Transaction</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">relayClient</span><span class="p">.</span><span class="nx">relayTransaction</span><span class="p">(</span>
+      <span class="nx">relayTransactionOpts</span>
     <span class="p">);</span>
 </code></pre></div></div>
 
@@ -2315,11 +2338,199 @@
 
 <ul>
   <li>
-<strong>SMART_WALLET</strong>: the generated smart wallet from the deployment process.</li>
+<strong>EOA</strong>: Externally Owned Account, the owner of the smart wallet.</li>
   <li>
-<strong>TOKEN_ADDRESS</strong>: the token contract address.</li>
+<strong>DATA_TO_EXECUTE</strong>: The encoded function that we want to relay.</li>
   <li>
-<strong>AMOUNT_OF_TOKENS</strong>: string containing the amount of tokens in decimal unit.</li>
+<strong>DESTINATION_ADDRESS</strong>: The address of the destination contract that we want to execute.</li>
+  <li>
+<strong>TOKEN_ADDRESS</strong>: The token contract address that we want to use to pay for the fee.</li>
+  <li>
+<strong>AMOUNT_OF_TOKENS_IN_WEI</strong>: The amount that we want to pay for the fee in wei.</li>
+  <li>
+<strong>SMART_WALLET_ADDRESS</strong>: The smart wallet address that is going to execute the relayed transaction.</li>
+</ul>
+
+<h3 id="relay-verifiers">Relay Verifiers</h3>
+
+<p>To obtain the verifier addresses we need to execute the command:</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  curl http://&lt;SERVER_URL&gt;/verifiers
+</code></pre></div></div>
+<blockquote>
+  <p>The command needs to be executed in a different terminal since it needs the server to be running to perform the request.</p>
+</blockquote>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"trustedVerifiers"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="s2">"0x03f23ae1917722d5a27a2ea0bcc98725a2a2a49a"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"0x73ec81da0c72dd112e06c09a6ec03b5544d26f05"</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h3 id="build-request">Build Request</h3>
+
+<p>To relay transactions, the Relay Server exposes an HTTP post handler to the following path <code class="highlighter-rouge">http://&lt;SERVER_URL&gt;/relay</code>. The Relay Client provides an abstraction to build and send each transaction to the available servers; although the client can simplify the interaction with the server, it’s always possible to send HTTP requests to the server without using the Relay Client.</p>
+
+<p>Each transaction that will be sent, needs to have the following structure:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"relayRequest"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;DEPLOY_REQUEST|RELAY_REQUEST&gt;"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;METADATA&gt;"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Below we will describe each field that is required in the request.</p>
+
+<h4 id="relay-request">Relay Request</h4>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"relayHub"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xa9059cbb000000000000000000000000c60b724c0865e294d64c94fed89c1e90bce0a7fe0000000000000000000000000000000000000000000000008ac7230489e80000"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"from"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x553f430066ea56bd4fa9190218af17bad23dcdb1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"nonce"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tokenAmount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2803630780191436371"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tokenGas"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31643"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tokenContract"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x726ECC75d5D51356AA4d0a5B648790cC345985ED"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"gas"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31515"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"validUntilTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1676747217</span><span class="p">,</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"relayData"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"gasPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"60000000"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"callVerifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"callForwarder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x1C8bb3b6809b92F2e38e305FD6bDE9687Bb4ba54"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"feesReceiver"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x9C34f2225987b0725A4201F1C6EC1adB35562126"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+<p>Where each key from <code class="highlighter-rouge">request</code> is:</p>
+
+<ul>
+  <li>
+<strong>relayHub</strong>: The relay hub address that will be used to validate the caller from the transaction.</li>
+  <li>
+<strong>to</strong>: The address of the destination contract that we want to execute.</li>
+  <li>
+<strong>data</strong>: The encoded function that we want to relay.</li>
+  <li>
+<strong>from</strong>: Externally Owned Account, the owner of the smart wallet.</li>
+  <li>
+<strong>value</strong>: The native currency value that wants to be transferred from smart wallet during the execution.</li>
+  <li>
+<strong>nonce</strong>: Smart Wallet nonce to avoid replay attacks.</li>
+  <li>
+<strong>tokenAmount</strong>: The amount of token that we want to pay for the fee in wei.</li>
+  <li>
+<strong>tokenGas</strong>: The gas limit for the token payment transaction.</li>
+  <li>
+<strong>tokenContract</strong>: The token contract address that we want to use to pay for the fee.</li>
+  <li>
+<strong>gas</strong>: The gas limit for the execution of the relaying transaction.</li>
+  <li>
+<strong>validUntilTime</strong>: Transaction expiration time in seconds.</li>
+</ul>
+
+<p>Where each key from <code class="highlighter-rouge">relayData</code> is:</p>
+
+<ul>
+  <li>
+<strong>gasPrice</strong>: The gas price that will be used to relay the transaction.</li>
+  <li>
+<strong>callVerifier</strong>: The relay verifier address to validate the correctness of the transaction.</li>
+  <li>
+<strong>callForwarder</strong>: The smart wallet address that is going to execute the transaction.</li>
+  <li>
+<strong>feesReceiver</strong>: The address of the worker or collector contract that is going to receive fees.</li>
+</ul>
+
+<h4 id="deploy-request">Deploy Request</h4>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"request"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"relayHub"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"to"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x0000000000000000000000000000000000000000"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"from"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x553f430066EA56BD4fa9190218AF17bAD23dCdb1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"nonce"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tokenAmount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tokenGas"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"tokenContract"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"recoverer"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x0000000000000000000000000000000000000000"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"index"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"validUntilTime"</span><span class="p">:</span><span class="w"> </span><span class="mi">1676747036</span><span class="p">,</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"relayData"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"gasPrice"</span><span class="p">:</span><span class="w"> </span><span class="s2">"60000000"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"callVerifier"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x73ec81da0C72DD112e06c09A6ec03B5544d26F05"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"callForwarder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xE0825f57Dd05Ef62FF731c27222A86E104CC4Cad"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"feesReceiver"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0x9C34f2225987b0725A4201F1C6EC1adB35562126"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Where each key from <code class="highlighter-rouge">request</code> is:</p>
+
+<ul>
+  <li>
+<strong>relayHub</strong>: The relay hub address that will be used to validate the caller from the transaction.</li>
+  <li>
+<strong>to</strong>: The address of the destination contract that we want to execute (<code class="highlighter-rouge">0x0000000000000000000000000000000000000000</code> for the Smart Wallet deployment).</li>
+  <li>
+<strong>data</strong>: The encoded function that we want to relay (<code class="highlighter-rouge">0x</code> for the Smart Wallet deployment).</li>
+  <li>
+<strong>from</strong>: Externally Owned Account, the owner of the smart wallet.</li>
+  <li>
+<strong>value</strong>: The native currency value that wants to be transferred from smart wallet during the execution.</li>
+  <li>
+<strong>nonce</strong>: Smart Wallet nonce to avoid replay attacks.</li>
+  <li>
+<strong>tokenAmount</strong>: The amount that we want to pay for the fee in wei.</li>
+  <li>
+<strong>tokenGas</strong>: The gas limit for the token payment transaction.</li>
+  <li>
+<strong>tokenContract</strong>: The token contract address that we want to use to pay for the fee.</li>
+  <li>
+<strong>recoverer</strong>: The recoverer address, to recover funds from the smart wallet. This feature is still pending to implement.</li>
+  <li>
+<strong>index</strong>: The index from the smart wallet that we want to deploy.</li>
+  <li>
+<strong>validUntilTime</strong>: Transaction expiration time in seconds.</li>
+</ul>
+
+<p>Where each key from <code class="highlighter-rouge">relayData</code> is:</p>
+
+<ul>
+  <li>
+<strong>gasPrice</strong>: The gas price that will be used to relay the transaction.</li>
+  <li>
+<strong>callVerifier</strong>: The deploy verifier address to validate the correctness of the transaction.</li>
+  <li>
+<strong>callForwarder</strong>: The smart wallet factory address that is going to perform the deployment.</li>
+  <li>
+<strong>feesReceiver</strong>: The address from the worker or collector contract that is going to receive fees.</li>
+</ul>
+
+<h4 id="metadata">Metadata</h4>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">  </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"relayHubAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"signature"</span><span class="p">:</span><span class="w"> </span><span class="s2">"0xa9f579cf964c03ac194f577b5fca5271ba13e2965c..."</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"relayMaxNonce"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Where each key is:</p>
+
+<ul>
+  <li>
+<strong>relayHubAddress</strong>: The relay hub that will be used by the server to relay the transaction.</li>
+  <li>
+<strong>signature</strong>: The relay transaction signed by the owner. After signing the transaction, it cannot be changed, since there is a on-chain validation that is part of the EIP712.</li>
+  <li>
+<strong>relayMaxNonce</strong>: Relay worker nonce plus an extra gap.</li>
 </ul>
 
 <h3 id="custom-worker-replenish-function">Custom worker replenish function</h3>
@@ -2337,7 +2548,7 @@
   <li>On the function <code class="highlighter-rouge">replenishStrategy</code> write your new replenish strategy.</li>
   <li>Re build the project <code class="highlighter-rouge">npm run build</code>
 </li>
-  <li>Add the command <code class="highlighter-rouge">--customReplenish</code> when running a RIF Relay Server or change the config JSON file to set <code class="highlighter-rouge">customReplenish</code> on true.</li>
+  <li>Change the config JSON file to set <code class="highlighter-rouge">customReplenish</code> on true.</li>
 </ol>
 
                   

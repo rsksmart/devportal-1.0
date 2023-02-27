@@ -1158,7 +1158,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2022-11-10 15:43:19 +0000T00:00:00.000Z">2022-11-10</time> | -->
+    <!--time role="presentation" datetime="2023-02-17 17:20:15 +0000T00:00:00.000Z">2023-02-17</time> | -->
      3' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/installation-requirements.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2194,17 +2194,17 @@ nvm use  16
 
 <p>You can check the installation by running <code class="highlighter-rouge">node -v</code>.</p>
 
-<h3 id="truffle">Truffle</h3>
+<h3 id="hardhat">Hardhat</h3>
 
-<p>An important tool we use for interacting with the blockchain is <code class="highlighter-rouge">Truffle</code> version <code class="highlighter-rouge">v5.0.33</code>.</p>
+<p>An important tool we use for interacting with the blockchain is <code class="highlighter-rouge">Hardhat</code> version <code class="highlighter-rouge">v2.10.2</code>.</p>
 
-<p>You can follow the installation guide in the Truffle official <a href="https://www.trufflesuite.com/truffle" rel="external noopener noreferrer" target="_blank">website</a>.</p>
+<p>You can follow the installation guide in the Hardhat official <a href="https://hardhat.org/" rel="external noopener noreferrer" target="_blank">website</a>.</p>
 
-<p>Run all truffle commands with the prefix <code class="highlighter-rouge">npx</code>. This is to execute node packages using the project’s version.</p>
+<p>Run all hardhat commands with the prefix <code class="highlighter-rouge">npx</code>. This is to execute node packages using the project’s version.</p>
 
-<p>Check if the installation was successful by running <code class="highlighter-rouge">npx truffle version</code> in your terminal.</p>
+<p>Check if the installation was successful by running <code class="highlighter-rouge">npx hardhat version</code> in your terminal.</p>
 
-<p>The configuration file is <code class="highlighter-rouge">truffle.js</code>. Please see <a href="https://trufflesuite.com/docs/" rel="external noopener noreferrer" target="_blank">Truffle’s documentation</a> for details about this file and how to use it.</p>
+<p>The configuration file is <code class="highlighter-rouge">hardhat.config.ts</code>. Please see <a href="https://hardhat.org/docs" rel="external noopener noreferrer" target="_blank">Harhats’s documentation</a> for details about this file and how to use it.</p>
 
 <h3 id="using-docker">Using Docker</h3>
 
@@ -2212,7 +2212,7 @@ nvm use  16
 
 <p>You’ll need to install both <code class="highlighter-rouge">docker</code> as well as <code class="highlighter-rouge">docker-compose</code>.</p>
 
-<p>The RIF Relay components can be deployed using Docker or locally using <a href="../installation-requirements#truffle">Truffle</a></p>
+<p>The RIF Relay components can be deployed using Docker or locally using <a href="../installation-requirements#hardhat">Hardhat</a></p>
 
 <p>A guide for the <a href="https://github.com/rsksmart/rif-relay-server#execute-as-a-docker-container" rel="external noopener noreferrer" target="_blank">RIF Relay Server</a> can be found in the repository.</p>
 
@@ -2231,9 +2231,9 @@ ln -s /usr/local/bin/greadlink /usr/local/bin/readlink
 
 <p>After this step, ensure that the <code class="highlighter-rouge">PATH</code> variable gives priority to <code class="highlighter-rouge">/usr/local/bin</code> over <code class="highlighter-rouge">/usr/bin</code>. You can check this with <code class="highlighter-rouge">which readlink</code>, which should output <code class="highlighter-rouge">/usr/local/bin/readlink</code>. Alternatively, try executing <code class="highlighter-rouge">readlink -f .</code>, if it works, you’re ok.</p>
 
-<h3 id="web3">Web3</h3>
+<h3 id="ethers">Ethers</h3>
 
-<p>The interaction with the blockchain is done using web3.js <a href="https://www.npmjs.com/package/web3" rel="external noopener noreferrer" target="_blank">npm package</a>.</p>
+<p>The interaction with the blockchain is done using <a href="https://docs.ethers.org/v5/" rel="external noopener noreferrer" target="_blank">Ethers v5</a>.</p>
 
                   
 
