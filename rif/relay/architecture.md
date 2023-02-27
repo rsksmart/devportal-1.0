@@ -10,6 +10,8 @@ permalink: /rif/relay/architecture/
 - [**On-Chain components**](#on-chain-components)
   - [**Relay Hub**](#relay-hub)
   - [**Smart Wallet**](#smart-wallet)
+  - [**Native Holder Smart Wallet**](#native-holder-smart-wallet)
+  - [**Custom Smart Wallet**](#custom-smart-wallet)
   - [**Relay Manager**](#relay-manager)
   - [**Stake Manager**](#stake-manager)
   - [**Relay Worker**](#relay-worker)
@@ -27,7 +29,6 @@ permalink: /rif/relay/architecture/
     - [**Interval Handler**](#interval-handler)
   - [**Relay & Deploy Requests**](#relay--deploy-requests)
   - [**Tools**](#tools)
-    - [**Contract Interactor**](#contract-interactor)
     - [**Relay Client**](#relay-client)
     - [**Relay Provider**](#relay-provider)
 - [**Execution flow**](#execution-flow)
@@ -41,9 +42,10 @@ permalink: /rif/relay/architecture/
 The RIF Relay system is designed to achieve transaction sponsorship at a low cost. The cost of the relay service provided by the “sponsors” is agreed upon among the parties off-chain. The low cost of transactions on Rootstock (RSK) contributes to keeping overall service costs low as well.
 
 The RIF Relay system is made up of various components, some of which are essential and others which are auxiliary.
+
 An overview of this is as follows:
 
-**On-chain**, the system cannot work without its Smart Contracts, which encompass Smart Wallets plus the Relay Hub.
+**On-chain**, the system cannot work without its Smart Contracts, which encompass Smart Wallets plus the Relay Hub and Verifiers.
 
 **Off-chain**, at least one Relay Server is needed to interact with the contracts. Without a Relay Server, envelopes cannot be created and sent to the contracts.
 
@@ -61,23 +63,23 @@ Details for each of these components are expanded down below, as well as an intr
 | RIF Relay            | The entire system which allows the relay of sponsored transactions. |
 | DoS                   | A Denial of Service is an information-security threat whose goal is to become a service unavailable.    |
 | DeFi                  | An acronym for Decentralized Finance, it’s a novel form for finance based in blockchain technology. |
-| EOA                   | An External Owned Account (EOA) is an account managed with a key, which is capable of signing and sending transactions, and paying the cost for it.  |
+| EOA                   | An Externally Owned Account (EOA) is an account managed with a key, which is capable of signing and sending transactions, and paying the cost for it.  |
 | Fee                   | Token amount that is being charged for each relayed transaction.    |
 | Revenue Sharing Model | A way to relay transactions so that fees are shared among multiple partners. |
 | Fees Receiver | Is the designated Worker/Collector that will receive the fees |
+
 
 ## On-Chain components
 
 ### Relay Hub
 The Relay Hub is the main component of the RIF Relay architecture. It acts as an interface with the Relay Server and the whole on-chain architecture. It forwards all the transactions to their respective contracts while checking the validity of the worker that is processing the transaction. 	
 
-It also forms part of the relay worker’s registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the stake amount for each Relay Manager to guarantee good behavior from their workers. 
+It also forms part of the Relay Workers registration process together with the Relay Managers. Furthermore, the Relay Hub keeps the stake amount for each Relay Manager to guarantee good behavior from their workers. 
 The account staking for a specific Relay Manager for the first time becomes the owner of the stake, only this account can make subsequent stakes for this specific RelayManager.
 
 When a Relay Manager unauthorized a Relay Hub, it means it is unstaking from it, which also means not being able to relay through that hub any more. Any balance held in the Relay Hub is sent to the original sender of the stake (the owner). 
 
 Unstaking has a predefined delay (in blocks). This is intended to prevent the Relay Manager from unstaking before a slashing that was going to occur.
-
 
 ### Smart Wallet
 It’s the “contract-based account” owned by the Requester’s EOA. Before executing any transaction using the smart wallet, the smart wallet contract needs to be deployed. 
@@ -86,8 +88,20 @@ Smart Wallet are contracts that verify forwarded data and subsequently invoke th
 
 It is the component that calls the Recipient contract (i.e, the `msg.sender` address the Recipient will see). During the execution, the contract verifies the Relay Request and, if it’s valid, it calls the defined Recipient’s function, otherwise it reverts the invocation. The verification includes checking that the owner of the SmartWallet made the request, rejecting any request with an invalid signature, and preventing replay attacks using a nonce.
 
+The `smart wallet` was designed to only interact with the RIF Relay system, therefore any native currency balance will be transferred back to the owner of `smart wallet` after each transaction. 
+
+### Native Holder Smart Wallet
+
+The `native holder smart wallet` is a `smart wallet` that was designed to have interactions outside the RIF Relay system. This means that it can hold native currency as it's name describes.
+
+The behavior of the `native holder smart wallet` is the same as the `smart wallet` with the difference that the native currency will not be transferred back to the owner after each transaction and can dispose the usage of the native currency.
+
+### Custom Smart Wallet
+
+The `custom smart wallet` is a `smart wallet` that was designed to execute custom logic after each transaction. The custom logic is created at the moment of the contract deployment and can be executed on each transaction. 
+
 ### Relay Manager
-An EOA that has a staked balance. Any penalization done against a Relay Worker impacts the Relay Manager’s stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: registering the Relay Server and adding relay workers, both in the Relay Hub.
+An EOA that has a staked balance. Any penalization done against a Relay Worker impacts the Relay Manager’s stake. A Relay Worker can be managed by only one Relay Manager. A Relay Manager can have one or more Relay Workers. The responsibilities of the Relay Manager are: registering the Relay Server and adding Relay Workers, both in the Relay Hub.
 
 ### Stake Manager
 The Stake Manager supports multiple Relay Hubs, the stakers are the Relay Managers and they can authorize/de-authorize specific Relay Hubs so they can penalize the managers if needed. The staked cryptocurrency is held in the StakeManager contract.
@@ -120,7 +134,6 @@ Any number of Collector contracts can be deployed and used to share revenue, as 
 
 For steps on how to deploy a Collector contract (plus other technical details) please see [the Collector section](/guides/rif-relay/deployment) of the deployment process.
 
-
 ### Proxies
 
 #### Template
@@ -148,7 +161,7 @@ Detailed documentation can be found [here](https://eips.ethereum.org/EIPS/eip-71
 The Relay Server receives sponsored transactions via HTTP.
 
 The server has only one Relay Manager address and at least one Relay Worker, and points to just one Relay Hub.
-When the Relay Server receives an HTTP Relay request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker address and then sends it to the Relay Hub contract.
+When the Relay Server receives an HTTP Relay request, it creates an Envelope, wrapping the sponsored transaction, signs it using its Relay Worker account and then sends it to the Relay Hub contract.
 
 The server is a service daemon, running as an HTTP service. It advertises itself (through the Relay Hub) and waits for client requests.
 
@@ -208,19 +221,15 @@ The **Deploy request** structure that wraps the transaction sent to deploy a Sma
 
 ### Tools
 
-### Contract Interactor
-A provider and wrapper for all the smart contract methods which need to be exposed to interact with the other components.
-
 ### Relay Client
-This is a typescript library to interact with the RIF Relay system. It provides APIs to find a relay, and to send transactions through it. It also gives access to expose methods from Relay Common to interact with the blockchain.
+This is a typescript library to interact with the RIF Relay system. It provides APIs to find a relay, and to send transactions through it. It also exposes methods to interact with the blockchain.
 
 It can work as an access point to the Relay system. It creates, signs, and sends the Sponsored transaction, which is signed by the requester and forwarded to the Relay Server via the HTTP protocol.
-
 
 It is not _strictly_ needed since any dApp or user could relay transactions using merely a Relay Server and the smart contracts, although this is arguably harder to do manually.
 
 ### Relay Provider
-The access point to the Relay system for dApps using Web3. It wraps the `RelayClient` to provide Web3 compatibility.
+It's the access point to the RIF Relay system. It wraps the `Relay Client` to provider Ethers.js compatibility. 
 
 ## Execution flow
 

@@ -32,17 +32,17 @@ If you choose to use node without `nvm`, you can find the installation instructi
 
 You can check the installation by running `node -v`.
 
-### Truffle
+### Hardhat
 
-An important tool we use for interacting with the blockchain is `Truffle` version `v5.0.33`.
+An important tool we use for interacting with the blockchain is `Hardhat` version `v2.10.2`.
 
-You can follow the installation guide in the Truffle official [website](https://www.trufflesuite.com/truffle).
+You can follow the installation guide in the Hardhat official [website](https://hardhat.org/).
 
-Run all truffle commands with the prefix `npx`. This is to execute node packages using the project's version.
+Run all hardhat commands with the prefix `npx`. This is to execute node packages using the project's version.
 
-Check if the installation was successful by running `npx truffle version` in your terminal.
+Check if the installation was successful by running `npx hardhat version` in your terminal.
 
-The configuration file is `truffle.js`. Please see [Truffle's documentation](https://trufflesuite.com/docs/) for details about this file and how to use it.
+The configuration file is `hardhat.config.ts`. Please see [Harhats's documentation](https://hardhat.org/docs) for details about this file and how to use it.
 
 
 ### Using Docker
@@ -51,7 +51,7 @@ We recommend following the official [documentation](https://docs.docker.com/get-
 
 You'll need to install both `docker` as well as `docker-compose`.
 
-The RIF Relay components can be deployed using Docker or locally using [Truffle](/guides/rif-relay/installation-requirements#truffle)
+The RIF Relay components can be deployed using Docker or locally using [Hardhat](/guides/rif-relay/installation-requirements#hardhat)
 
 A guide for the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server#execute-as-a-docker-container) can be found in the repository.
 
@@ -69,6 +69,6 @@ ln -s /usr/local/bin/greadlink /usr/local/bin/readlink
 
 After this step, ensure that the `PATH` variable gives priority to `/usr/local/bin` over `/usr/bin`. You can check this with `which readlink`, which should output `/usr/local/bin/readlink`. Alternatively, try executing `readlink -f .`, if it works, you're ok.
 
-### Web3
+### Ethers
 
-The interaction with the blockchain is done using web3.js [npm package](https://www.npmjs.com/package/web3).
+The interaction with the blockchain is done using [Ethers v5](https://docs.ethers.org/v5/).
