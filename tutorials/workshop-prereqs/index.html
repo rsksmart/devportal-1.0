@@ -1150,7 +1150,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2021-03-26 05:26:24 +0000T00:00:00.000Z">2021-03-26</time> | -->
+    <!--time role="presentation" datetime="2023-02-10 13:13:23 +0000T00:00:00.000Z">2023-02-10</time> | -->
      7' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/tutorials/workshop-prereqs.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2300,10 +2300,10 @@ while you continue with other tasks in the foreground.</p>
 <span class="nb">cd</span> ~/code/rsk/rskj-node
 curl <span class="se">\</span>
   <span class="nt">-L</span> <span class="se">\</span>
-  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/rskj-core-2.0.1-PAPYRUS-all.jar <span class="se">\</span>
-  <span class="o">&gt;</span> ./rskj-core-2.0.1-PAPYRUS-all.jar
-<span class="nb">sha256sum </span>rskj-core-2.0.1-PAPYRUS-all.jar
-<span class="c"># 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 rskj-core-2.0.1-PAPYRUS-all.jar</span>
+  https://github.com/rsksmart/rskj/releases/download/HOP-4.2.0/rskj-core-4.2.0-HOP-all.jar <span class="se">\</span>
+  <span class="o">&gt;</span> ./rskj-core-4.2.0-HOP-all.jar
+<span class="nb">sha256sum </span>rskj-core-4.2.0-HOP-all.jar
+<span class="c"># 556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-4.2.0-HOP-all.jar</span>
 
 </code></pre></div></div>
 
@@ -2317,7 +2317,7 @@ on how to do this.</p>
 <p>For the purposes of this workshop,
 we will run RSKj on Regtest.</p>
 
-<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> rskj-core-2.0.1-PAPYRUS-all.jar <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java <span class="nt">-cp</span> rskj-core-4.2.0-HOP-all.jar  <span class="nt">-Drpc</span>.providers.web.cors<span class="o">=</span><span class="k">*</span> co.rsk.Start <span class="nt">--regtest</span>
 
 </code></pre></div></div>
 
