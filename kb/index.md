@@ -123,6 +123,29 @@ description: "Welcome to RSK and RIF Knowledge-base; Explore RSK faqs, tutorials
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
+            <a href="/kb/transaction-rate-limiter-rskj/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/rskj/developer.png" alt="rskjfordevs icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/transaction-rate-limiter-rskj/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Transaction Rate Limiter on the Rootsotck Network</p>
+                        <p class="card-desc">AKA Virtual Gas Limiter</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/transaction-rate-limiter-rskj/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
             <a href="/kb/build-with-tenderly/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
