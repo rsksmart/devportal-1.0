@@ -45,8 +45,6 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
     - `signer: Signer` - [ethers Signer](https://docs.ethers.io/v5/api/signer/#Signer)
     - `proxyFactoryAddress: str` - address of the deployed [ProxyFactory contract](https://docs.gnosis.io/safe/docs/contracts_architecture/#5-proxy-factory)
     - `safeSingletonAddress: str` - address of the deployed [SafeSingleton contract](https://docs.gnosis.io/safe/docs/contracts_architecture/#1-transaction-management-core-contract)
-  {:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
-    
   
   ```ts
   import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk'
@@ -57,16 +55,13 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
     safeSingletonAddress
   )
   ```
-  {:.snippet__code.snippet__code--lightgreen.border-top-0}
-  
-  > If you are working on Rootstock networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
-  {:.mt-3}
+
+  If you are working on RSK networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
 
 - C) Create a Safe
   * **Parameters**
     - `owners: str[]` - list of owner addresses
     - `threshold: number` - the minimum number of owner approvals required to execute a safe transaction.
-  {:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
 
   ```ts
   const safeSdk = await safeFactory.createSafe({
@@ -74,7 +69,6 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
     threshold: 2
   })
   ```
-  {:.snippet__code.snippet__code--lightgreen.border-top-0}
 
 For further information on how to set up a safe account and how to choose the right parameters, please refer to the [official guidelines](https://help.gnosis-safe.io/en/articles/4772567-what-gnosis-safe-setup-should-i-use).
 
