@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Rootstock
+title: Rootstock Blockchain
 tags: rsk
 description: "What is Rootstock?"
 collection_order: 1000
