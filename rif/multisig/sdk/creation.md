@@ -34,7 +34,7 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
                     <li>
                         <h3 class="heading-with-icon" id="mainnet">
                             <a href="#mainnet" class="heading-icon-container">
-                                <img src="/assets/img/link.svg" alt="MAINNET">
+                                <img id="anchor-icon-template" src="/assets/img/link.svg" alt="MAINNET">
                             </a>
                             MAINNET
                         </h3>
