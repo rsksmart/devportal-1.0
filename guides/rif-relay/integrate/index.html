@@ -1158,7 +1158,7 @@
     </div>
     <div class="col-lg-4 input-col">
        <div class="page-metadata">
-    <!--time role="presentation" datetime="2023-02-22 12:38:49 +0000T00:00:00.000Z">2023-02-22</time> | -->
+    <!--time role="presentation" datetime="2023-03-21 16:50:42 +0000T00:00:00.000Z">2023-03-21</time> | -->
      13' to read |
     <a href="https://github.com/rsksmart/rsksmart.github.io/edit/master/guides/rif-relay/integrate.md" target="_blank" rel="external noopener noreferrer">Edit</a> |
     <div class="dropdown" style="display: inline-block">
@@ -2419,7 +2419,7 @@
   <li>
 <strong>value</strong>: The native currency value that wants to be transferred from smart wallet during the execution.</li>
   <li>
-<strong>nonce</strong>: Smart Wallet nonce to avoid replay attacks.</li>
+<strong>nonce</strong>: Smart Wallet <a href="https://github.com/rsksmart/rif-relay-contracts/blob/d1b1ee1c429786f967205f32ed015b3f9a1edaaf/contracts/smartwallet/SmartWallet.sol#L18" rel="external noopener noreferrer" target="_blank">nonce</a> to avoid replay attacks.</li>
   <li>
 <strong>tokenAmount</strong>: The amount of token that we want to pay for the fee in wei.</li>
   <li>
@@ -2485,7 +2485,8 @@
   <li>
 <strong>value</strong>: The native currency value that wants to be transferred from smart wallet during the execution.</li>
   <li>
-<strong>nonce</strong>: Smart Wallet nonce to avoid replay attacks.</li>
+<strong>nonce</strong>: The SmartWalletFactory keeps track of the <a href="https://github.com/rsksmart/rif-relay-contracts/blob/d1b1ee1c429786f967205f32ed015b3f9a1edaaf/contracts/factory/SmartWalletFactory.sol#L95" rel="external noopener noreferrer" target="_blank">nonces</a> used for each smart wallet owner, to avoid replay attacks. It can be retrieved with <a href="https://github.com/rsksmart/rif-relay-contracts/blob/d1b1ee1c429786f967205f32ed015b3f9a1edaaf/contracts/interfaces/IWalletFactory.sol#L8" rel="external noopener noreferrer" target="_blank"><code class="highlighter-rouge">IWalletFactory.nonce(from)</code></a>
+</li>
   <li>
 <strong>tokenAmount</strong>: The amount that we want to pay for the fee in wei.</li>
   <li>
