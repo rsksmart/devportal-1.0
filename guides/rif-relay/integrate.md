@@ -215,7 +215,7 @@ Where each key from `request` is:
   * **data**: The encoded function that we want to relay.
   * **from**: Externally Owned Account, the owner of the smart wallet.
   * **value**: The native currency value that wants to be transferred from smart wallet during the execution.
-  * **nonce**: Smart Wallet nonce to avoid replay attacks.
+  * **nonce**: Smart Wallet [nonce](https://github.com/rsksmart/rif-relay-contracts/blob/d1b1ee1c429786f967205f32ed015b3f9a1edaaf/contracts/smartwallet/SmartWallet.sol#L18) to avoid replay attacks.
   * **tokenAmount**: The amount of token that we want to pay for the fee in wei.
   * **tokenGas**: The gas limit for the token payment transaction.
   * **tokenContract**: The token contract address that we want to use to pay for the fee.
@@ -263,7 +263,7 @@ Where each key from `request` is:
   * **data**: The encoded function that we want to relay (`0x` for the Smart Wallet deployment).
   * **from**: Externally Owned Account, the owner of the smart wallet.
   * **value**: The native currency value that wants to be transferred from smart wallet during the execution.
-  * **nonce**: Smart Wallet nonce to avoid replay attacks.
+  * **nonce**: The SmartWalletFactory keeps track of the [nonces](https://github.com/rsksmart/rif-relay-contracts/blob/d1b1ee1c429786f967205f32ed015b3f9a1edaaf/contracts/factory/SmartWalletFactory.sol#L95) used for each smart wallet owner, to avoid replay attacks. It can be retrieved with [`IWalletFactory.nonce(from)`](https://github.com/rsksmart/rif-relay-contracts/blob/d1b1ee1c429786f967205f32ed015b3f9a1edaaf/contracts/interfaces/IWalletFactory.sol#L8)
   * **tokenAmount**: The amount that we want to pay for the fee in wei.
   * **tokenGas**: The gas limit for the token payment transaction.
   * **tokenContract**: The token contract address that we want to use to pay for the fee.
