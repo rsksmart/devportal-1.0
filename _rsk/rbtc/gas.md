@@ -1,8 +1,9 @@
 ---
-layout: rsk
 title: Gas
 tags: gas, transactions, rbtc, mainnet, smart-contracts, rsk, conversion, bitcoin, price, gas-price, cost
-collection_order: 3200
+collection_order: 4
+menu_title: Gas
+menu_order: 3
 ---
 
 Gas is the internal pricing for running a transaction or contract.
