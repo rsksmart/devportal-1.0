@@ -1,10 +1,11 @@
 ---
-layout: rsk
 title: Merged Mining
 tags: rsk, mining, bitcoin, pow
 description: "How merge mining RSK with Bitcoin works, and its benefits"
-permalink: /rsk/architecture/mining/
-collection_order: 4400
+collection_order: 3
+menu_title: Merged Mining
+menu_order: 4
+section_title: Merged Mining
 ---
 
 Merged mining is the process that allows RSK blockchain to be mined simultaneously with Bitcoin blockchain. This can be done because both chains use the same proof-of-work (PoW) algorithm, double SHA-256.

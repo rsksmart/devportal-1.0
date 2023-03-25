@@ -1,9 +1,10 @@
 ---
-layout: rsk
 title: Security model
-collection_order: 4500
 tags: rsk, security, powpeg, peg, federation, 2-way peg
 description: "Achieving security in a Powpegged sidechain using proofs of payment"
+collection_order: 3
+menu_title: Security model
+menu_order: 5
 ---
 
 A sidechain is an independent blockchain whose native currency is pegged to the value of another blockchain currency. The peg can be enforced by a protocol or it can be synthetic. A [2-way peg](/rsk/architecture/powpeg/) is a protocol-enforced system allowing two currencies to be exchanged freely, automatically, and without incurring in a price negotiation. In RSK, the asset that can be freely moved is Bitcoin. When the network where the bitcoins exist is not clear from the context, we refer to RBTC to bitcoins existing in RSK.
