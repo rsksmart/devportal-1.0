@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Python Library
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, python, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, python, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 [Python Library](https://github.com/rnsdomains/rns-python-lib) to resolve your RIF Name Service address on your app.
@@ -16,7 +16,7 @@ tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, reso
 
 To run unit tests, clone this repository.
 
-Run Rsk Node and deploy resolver contracts.
+Run Rootstock (RSK) Node and deploy resolver contracts.
 Check constants folder to specify, RPC_CLIENT_URL in client_constants.py file and RNS_RESOLVER_ADDRESS in
 rns_constants.py file.
 

@@ -66,7 +66,10 @@ This can be done in two ways:
 - Running the node with the `java` command, add `-Drsk.conf.file=path/to/your/file.conf`
 - Compiling the node with IntelliJ, add to VM options: `-Drsk.conf.file=path/to/your/file.conf`
 
-### Using RocksDB (Experimental)
+### Using RocksDB
+
+> IMPORTANT NOTICE: Starting from RSKj HOP v4.2.0, RocksDB is **no longer experimental**.  
+> Read more in [RSK Hop Release v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0).
 
 By default, RSKj runs using [LevelDB](https://dbdb.io/db/leveldb).
 There is an option to use an alternate storage option,
@@ -103,8 +106,6 @@ and wants to run with `rocksdb` next.
 Note the use of the `--import` flag, which resets and re-imports the database.
 
 * `java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import`
-
-**Warning:** This feature is considered experimental, do not use in production.
 
 ### Troubleshooting
 

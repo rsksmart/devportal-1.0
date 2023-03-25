@@ -7,7 +7,7 @@ nextUrl: '/rif/multisig/product/'
 ---
 
 
-The objective of this project is to provide the RSK community with a safe and simple (from a technical POV) solution to create accounts that require multiple signatures to transact their funds.
+The objective of this project is to provide the Rootstock (RSK) community with a safe and simple (from a technical POV) solution to create accounts that require multiple signatures to transact their funds.
 
 ## Abstract
 

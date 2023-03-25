@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Rootstock
+title: Rootstock Blockchain
 tags: rsk
 description: "What is Rootstock?"
 collection_order: 1000
@@ -21,3 +21,4 @@ To interact with the network, you need access to a node. The following are the a
 - [Use public nodes](/rsk/public-nodes)
 - [Install node](/rsk/node/install)
 - [Compile the node code](/rsk/node/contribute/)
+- [Powpeg HSM Firmware Attestation](/rsk/architecture/powpeg#powpeg-hsm-firmware-attestation)

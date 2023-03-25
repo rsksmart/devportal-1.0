@@ -136,10 +136,10 @@ mkdir -p ~/code/rsk/rskj-node
 cd ~/code/rsk/rskj-node
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/PAPYRUS-2.0.1/rskj-core-2.0.1-PAPYRUS-all.jar \
-  > ./rskj-core-2.0.1-PAPYRUS-all.jar
-sha256sum rskj-core-2.0.1-PAPYRUS-all.jar
-# 43149abce0a737341a0b063f2016a1e73dae19b8af8f2e54657326ac8eedc8a0 rskj-core-2.0.1-PAPYRUS-all.jar
+  https://github.com/rsksmart/rskj/releases/download/HOP-4.2.0/rskj-core-4.2.0-HOP-all.jar \
+  > ./rskj-core-4.2.0-HOP-all.jar
+sha256sum rskj-core-4.2.0-HOP-all.jar
+# 556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-4.2.0-HOP-all.jar
 
 ```
 
@@ -152,7 +152,7 @@ For the purposes of this workshop,
 we will run RSKj on Regtest.
 
 ```shell
-java -cp rskj-core-2.0.1-PAPYRUS-all.jar -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp rskj-core-4.2.0-HOP-all.jar  -Drpc.providers.web.cors=* co.rsk.Start --regtest
 
 ```
 

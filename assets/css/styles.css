@@ -787,6 +787,21 @@ img {
   transition: all 0.5s ease;
 }
 
+.orange-button {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  background: #ff931e;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 50px;
+  padding: 8px 30px;
+  color: #000 !important;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
 /* prev-next-links */
 
 .prev-next-links {
@@ -2649,6 +2664,12 @@ table.table.newsletter input[type='checkbox'] {
 
 .accordion__rsk .card-header .btn[aria-expanded=true]::after {
   content: 'Show less';
+}
+
+.accordion__rsk .highlight {
+  word-wrap: normal;
+  overflow-x: auto;
+  white-space: pre;
 }
 /* RIF Accordion customization: END */
 

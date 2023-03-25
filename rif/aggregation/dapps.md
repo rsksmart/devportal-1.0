@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RIF Aggregation - Dapps
-description: RIF Aggregation dapps ported on RSK
+description: RIF Aggregation dapps ported on Rootstock (RSK)
 tags: rif, aggregation, zksync
 ---
 
@@ -20,7 +20,7 @@ tags: rif, aggregation, zksync
         <a href="http://explorer.dev.aggregation.rifcomputing.net/" rel="noopener noreferrer">Explorer</a>
         <br />
         <br />
-        <p>Take a look at the dapps currently available on RSK</p>
+        <p>Take a look at the dapps currently available on Rootstock (RSK)</p>
       </div>
     </div>
   </div>

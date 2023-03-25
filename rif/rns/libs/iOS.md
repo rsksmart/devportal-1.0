@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: iOS Library
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, ios, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, ios, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Implementation for resolvers for the RIF Name Service, available for iOS.
@@ -16,7 +16,7 @@ pod "Rns"
 
 ## How to use
 
-You will need access to a running rsk node that can made calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our `Info.plist` file. 
+You will need access to a running rootstock (rsk) node that can made calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our `Info.plist` file. 
 
 You can just create your resolver with the default constructor if you are going to use mainnet.
 

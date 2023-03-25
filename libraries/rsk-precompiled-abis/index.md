@@ -70,3 +70,8 @@ If the version to be installed is not defined in the command line, the version w
 | 3.0.0-IRIS      | IRIS-3.0.0    |
 | 3.1.0-IRIS      | IRIS-3.1.0    |
 | 3.2.0-IRIS      | IRIS-3.2.0    |
+| 3.3.0-IRIS      | IRIS-3.3.0    |
+| 4.0.0-HOP       |  HOP-4.0.0    |
+| 4.1.0-HOP       |  HOP-4.1.0    |
+| 4.1.1-HOP       |  HOP-4.1.1    |
+| 4.2.0-HOP       |  HOP-4.2.0    |

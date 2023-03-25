@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Connecting to testnet Swarm network
-tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## What is the RIF Storage testnet
@@ -33,9 +33,9 @@ TLDR; RIF Storage is operating a gateway service, so you can interact with Swarm
 - Unpack the binaries (e.g. `tar -xvf swarm-.(...)tar.gz`)
 - Make the binary executable: `cd` into the `swarm` folder and execute `chmod +x swarm`
 
-### Fund your RSK account:
+### Fund your Rootstock (RSK) account:
 
-Since the RIF Storage network is incentivized, you will need both tRIF and tRBTC to interact with the network. tRIF to pay for your bandwidth costs in the network (the proceedings will go to the nodes hosting and forwarding the files your request) and tRBTC to pay for the transaction costs in RSK.
+Since the RIF Storage network is incentivized, you will need both tRIF and tRBTC to interact with the network. tRIF to pay for your bandwidth costs in the network (the proceedings will go to the nodes hosting and forwarding the files your request) and tRBTC to pay for the transaction costs in Rootstock (RSK).
 
 Get the coins on any address via the faucets:
 - tRBTC: [faucet.rsk.co](https://faucet.rsk.co/)
@@ -49,7 +49,7 @@ To interact with Swarm, you need a connection to a blockchain backend.
 
 - Use the public node of rsk
 - Run your own RSKj Node
-Please head to the [RSKj WIKI](https://github.com/rsksmart/rskj/wiki) and follow the steps to install, compile and run an RSK node locally. Be sure to switch to the RSK TestNet (instructions to switch [here](https://github.com/rsksmart/rskj/wiki/Switching-networks)).
+Please head to the [RSKj WIKI](https://github.com/rsksmart/rskj/wiki) and follow the steps to install, compile and run an Rootstock (RSK) node locally. Be sure to switch to the RSK TestNet (instructions to switch [here](https://github.com/rsksmart/rskj/wiki/Switching-networks)).
 
 It will take some time for your node to synchronize with the network (+- 8 hours). You can verify that you are synched by requesting the current blockheight of your node:
 `curl -H"Content-type: application/json" -X POST --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}' 127.0.0.1:4444` and comparing the answer to the blockheight mentioned at the [official explorer](https://explorer.testnet.rsk.co/).

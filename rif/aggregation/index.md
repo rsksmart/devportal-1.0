@@ -6,7 +6,7 @@ tags: rif, aggregation, zksync
 ---
 
 
-The objective of this project is to provide the RSK community with a scaling solution based on [Zero-Knowledge Rollups](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/#zk-rollups).
+The objective of this project is to provide the Rootstock (RSK) community with a scaling solution based on [Zero-Knowledge Rollups](https://ethereum.org/en/developers/docs/scaling/layer-2-rollups/#zk-rollups).
 
 ## Abstract
 
@@ -37,7 +37,7 @@ The architecture provides the following guarantees:
         <a href="dapps">Dapps</a>
         <br />
         <br />
-        <p>Take a look at the dapps currently available on RSK</p>
+        <p>Take a look at the dapps currently available on Rootstock (RSK)</p>
       </div>
     </div>
   </div>

@@ -100,6 +100,6 @@ If you want to remove a domain from the list of logged in domains
 
 ----
 
-[Contact us on the RSK community Slack](/slack/) |
+[Contact us on the Rootstock community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

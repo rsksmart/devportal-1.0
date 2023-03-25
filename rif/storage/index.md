@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: About RIF Storage
-tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 RIF Storage is an open, censorship resistant, permissionless and decentralized storage protocol. It provides a unified interface to 3rd party decentralized storage providers like [IPFS](/rif/storage/providers/ipfs) or [Swarm](/rif/storage/providers/swarm). We are adding incentives to these systems to ensure resistance to trivial attacks, availability and to allow participants to be rewarded for their participation in the network.

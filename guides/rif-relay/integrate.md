@@ -12,11 +12,14 @@ This guide goes over the exposed RIF Relay methods that dApps and wallets can co
 - [**Requirements**](#requirements)
   - [**RIF Relay Smart Contracts**](#rif-relay-smart-contracts)
   - [**RIF Relay Server**](#rif-relay-server)
-- [**Integration options**](#integration-options)
-  - [**Using the RIF Relay Server directly**](#using-the-rif-relay-server-directly)
-    - [**Custom worker replenish function**](#custom-worker-replenish-function)
-  - [**Using a RIF Relay Provider**](#using-a-rif-relay-provider)
-  - [**Using RIF Relay as a library**](#using-rif-relay-as-a-library)
+  - [**RIF Relay Client**](#rif-relay-client)
+    - [**Account Manager**](#account-manager)
+  - [**Relay Transaction**](#relay-transaction)
+  - [**Build Request**](#build-request)
+    - [**Deploy Request**](#deploy-request)
+    - [**Relay Request**](#relay-request)
+    - [**Metadata**](#metadata)
+  - [**Custom worker replenish function**](#custom-worker-replenish-function)
 
 ## Introduction
 
@@ -28,9 +31,7 @@ Additionally, it's important to note that not _all_ of the RIF Relay components 
 
 ### RIF Relay Smart Contracts
 
-These need to be deployed and their addresses known. For steps on how to do this, please refer to the [Deploy contracts locally section](/guides/rif-relay/install/#deploy-contracts-locally) of the Installation guide.
-
-Once deployed, you'll only need the RSK node to be running.
+These need to be deployed and their addresses known. For steps on how to do this, please refer to the [Contract Deployment](/guides/rif-relay/deployment/) page of this guide.
 
 ### RIF Relay Server
 
@@ -43,222 +44,268 @@ For more details on this, please refer to the [Architecture page](/rif/relay/arc
 Users can interact with the RIF Relay Server directly or indirectly. For the latter, a user can communicate with a RIF Relay Server through a RIF Relay Client. A RIF Relay Client knows the addresses of different RIF Relay Servers and it can send on-chain requests to any one of them. The RIF Relay Client then sends the transaction to be sponsored to the RIF Relay Server via HTTP request.
 
 In any case, you'll need to have the server installed and running. To achieve this please refer to the following guides:
-1. [RIF Relay Installation](/guides/rif-relay/install/)
-2. [RIF Relay Launch](/guides/rif-relay/launch/)
+1. [RIF Relay Installation Requirements](/guides/rif-relay/installation-requirements/)
+2. [RIF Relay Deployment](/guides/rif-relay/deployment/)
 
-## Integration options
+### RIF Relay Client
 
-### Using the RIF Relay Server directly
+The `RelayClient` class, from the RIF Relay Client library, assists in building a relay request, searching for an available server and sending the request via http protocol. 
 
-The simplest option to use RIF Relay in your wallet or dApp is by calling the RIF Relay Server directly. The instructions for running a Relayer are here. The communication with the RIF Relay Server is done through HTTP requests.
+To create a `RelayClient` we need to follow these steps:
 
-The order of events for relaying transactions or deploying smart wallets through the RIF Relay Server is:
-1. Create a relay or deploy request.
-2. Sign the structure (the wrapped transaction) using the EIP712 signature.
-3. Create the metadata with the signature.
-4. With the relay or deploy request and the metadata, create an HTTP request.
-5. Call the RIF Relay Server `/relay` method using an HTTP POST request.
+1. Set the configuration.
+2. Set (ethers) provider.
+3. Create instance.
 
-Here's an example of how the HTTP RIF Relay Request might look like:
+```typescript
+import {
+  RelayClient,
+  setEnvelopingConfig,
+  setProvider,
+} from '@rsksmart/rif-relay-client';
 
-```json
-{
-  "relayRequest": {
-    "request": {
-      "relayHub": "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701",
-      "to": "0xafa16a8d7a94550079014d537e9440ddb7765d29",
-      "data": "0x0a798f2400000000000000000000000020ff84b8da5034b51cf3dfdc7a92d2b7c3b6a2f300000000000000000000000074dc4471fa8c8fbe09c7a0c400a0852b0a9d04b200000000000000000000000000000000000000000000000000000000000001f4",
-      "from": "0x20ff84b8da5034b51cf3dfdc7a92d2b7c3b6a2f3",
-      "value": "0x0",
-      "nonce": "0",
-      "gas": "92705",
-      "tokenAmount": "6",
-      "tokenGas": "16368",
-      "tokenContract": "0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"
-    },
-    "relayData": {
-      "gasPrice": "60000000",
-      "callVerifier": "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2",
-      "domainSeparator": "0xee8f106669d0f00ba21e4d25a7b02337c48fef88b142c67e6c9db7b2bc5b45d3",
-      "callForwarder": "0xD13377bAaE7D7Ef60bfeb95B6e4E6e66ca371618",
-      "relayWorker": "0x20bd539d672b605278f98cef7ee94d59bc3f1f17"
-    }
-  },
-  "metadata": {
-    "relayHubAddress": "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701",
-    "signature": "0xa28883f3072c3a5a5f77153540382e8bdfd2c91b74614b9e8cb84ecd3ba588f03c20793e44c567cfefebdf4e34872da83706c7f55af5c467aa47e622d08718511b",
-    "relayMaxNonce": 5
-  }
-}
+  setEnvelopingConfig({
+    chainId: <CHAIN_ID>, 
+    preferredRelays: <SERVER_URL_ARRAY>,
+    relayHubAddress: <RELAY_HUB_ADDRESS>,
+    deployVerifierAddress: <DEPLOY_VERIFIER_ADDRESS>,
+    relayVerifierAddress: <RELAY_VERIFIER_ADDRESS>,
+    smartWalletFactoryAddress: <SMART_WALLET_FACTORY_ADDRESS>
+  });
+
+  setProvider(ethersProvider);
+  
+  const relayClient =  new RelayClient();
 ```
 
-Here are some useful resources to help you manually put these structures together:
-1. [Relay Transaction Request structures](https://github.com/rsksmart/rif-relay/blob/master/src/relayclient/types/RelayTransactionRequest.ts)
-2. [Account Manager `sign` implementation](https://github.com/rsksmart/rif-relay/blob/master/src/relayclient/AccountManager.ts#L65)
-3. [HTTP Server `relayHandler` implementation](https://github.com/rsksmart/rif-relay/blob/master/src/relayserver/HttpServer.ts#L101)
-4. [EIP-712](https://eips.ethereum.org/EIPS/eip-712)
+Where variables are:
 
-#### Custom worker replenish function
+  * **CHAIN_ID**: Identifies a network to interact with.
+  * **SERVER_URL_ARRAY**: An array of relay server URL strings that the RelayClient can interact with.
+  * **RELAY_HUB_ADDRESS**: The relay hub contract address.
+  * **DEPLOY_VERIFIER_ADDRESS**: The deploy verifier contract address.
+  * **RELAY_VERIFIER_ADDRESS**: The relay verifier contract address.
+  * **SMART_WALLET_FACTORY_ADDRESS**: The smart wallet factory contract address.
+
+After setting the configuration and the ethers provider, we can start creating instances from the `Relay Client`.
+
+#### Account Manager
+
+The `Account Manager` manager is a singleton component from the RIF Relay Client library that helps to sign relay transactions.  This component can sign the transactions with an internal account that was previously added or using a wallet provider like [metamask](https://metamask.io/). The `Account Manager` will look first for manually added accounts and, if none is found, will try to use the provider that was [previously setup](/guides/rif-relay/integrate/#rif-relay-client).
+
+The `Account Manager` accepts [Ethers V5 Wallets](https://docs.ethers.org/v5/api/signer/#Wallet) as internal accounts.  
+
+To interact with the `Account Manager` we need to follow the next steps:
+
+1. Get an instance.
+2. Add a new account.
+
+```typescript
+    import {
+      AccountManager,
+    } from '@rsksmart/rif-relay-client';
+
+    const accountManager = AccountManager.getInstance();
+
+    accountManager.addAccount(<INTERNAL_ACCOUNT_OBJECT>);
+```
+
+Where variables are:
+
+  * **INTERNAL_ACCOUNT_OBJECT**: [Ethers V5 Wallet](https://docs.ethers.org/v5/api/signer/#Wallet) object.
+
+### Relay Transaction
+
+To relay transactions we need a smart wallet already deployed, the deployment process and definition of a smart wallet can be found [Smart Wallet](/guides/rif-relay/smart-wallets).
+
+The steps that we must follow are:
+
+1. Deploy the smart wallet.
+2. Create the transaction that we would like to relay.
+3. Relay the transaction.
+
+```typescript
+    const relayTransactionOpts: UserDefinedEnvelopingRequest = {
+      request: {
+        from: <EOA>,
+        data: <DATA_TO_EXECUTE>,
+        to: <DESTINATION_ADDRESS>,
+        tokenContract: <TOKEN_ADDRESS>,
+        tokenAmount: <AMOUNT_OF_TOKENS_IN_WEI>,
+      },
+      relayData: {
+        callForwarder: <SMART_WALLET_ADDRESS>,
+      },
+    };
+
+    const transaction: Transaction = await relayClient.relayTransaction(
+      relayTransactionOpts
+    );
+```
+
+Where variables are:
+
+  * **EOA**: Externally Owned Account, the owner of the smart wallet.
+  * **DATA_TO_EXECUTE**: The encoded function that we want to relay.
+  * **DESTINATION_ADDRESS**: The address of the destination contract that we want to execute.
+  * **TOKEN_ADDRESS**: The token contract address that we want to use to pay for the fee.
+  * **AMOUNT_OF_TOKENS_IN_WEI**: The amount that we want to pay for the fee in wei.
+  * **SMART_WALLET_ADDRESS**: The smart wallet address that is going to execute the relayed transaction.
+
+### Relay Verifiers
+
+To obtain the verifier addresses we need to execute the command:
+  ```
+  curl http://<SERVER_URL>/verifiers
+  ```
+  > The command needs to be executed in a different terminal since it needs the server to be running to perform the request.
+
+```json
+  {
+    "trustedVerifiers": [
+        "0x03f23ae1917722d5a27a2ea0bcc98725a2a2a49a",
+        "0x73ec81da0c72dd112e06c09a6ec03b5544d26f05"
+    ]
+  }
+```
+
+### Build Request
+
+To relay transactions, the Relay Server exposes an HTTP post handler to the following path `http://<SERVER_URL>/relay`. The Relay Client provides an abstraction to build and send each transaction to the available servers; although the client can simplify the interaction with the server, it's always possible to send HTTP requests to the server without using the Relay Client. 
+
+Each transaction that will be sent, needs to have the following structure:
+  ```json
+    {
+      "relayRequest": "<DEPLOY_REQUEST|RELAY_REQUEST>",
+      "metadata": "<METADATA>"
+    }
+  ```
+
+Below we will describe each field that is required in the request. 
+
+#### Relay Request
+
+  ```json
+    {
+      "request": {
+        "relayHub": "0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974",
+        "to": "0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8",
+        "data": "0xa9059cbb000000000000000000000000c60b724c0865e294d64c94fed89c1e90bce0a7fe0000000000000000000000000000000000000000000000008ac7230489e80000",
+        "from": "0x553f430066ea56bd4fa9190218af17bad23dcdb1",
+        "value": "0",
+        "nonce": "1",
+        "tokenAmount": "2803630780191436371",
+        "tokenGas": "31643",
+        "tokenContract": "0x726ECC75d5D51356AA4d0a5B648790cC345985ED",
+        "gas": "31515",
+        "validUntilTime": 1676747217,
+      },
+      "relayData": {
+        "gasPrice": "60000000",
+        "callVerifier": "0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a",
+        "callForwarder": "0x1C8bb3b6809b92F2e38e305FD6bDE9687Bb4ba54",
+        "feesReceiver": "0x9C34f2225987b0725A4201F1C6EC1adB35562126"
+      }
+    }
+  ```
+Where each key from `request` is:
+
+  * **relayHub**: The relay hub address that will be used to validate the caller from the transaction.
+  * **to**: The address of the destination contract that we want to execute.
+  * **data**: The encoded function that we want to relay.
+  * **from**: Externally Owned Account, the owner of the smart wallet.
+  * **value**: The native currency value that wants to be transferred from smart wallet during the execution.
+  * **nonce**: Smart Wallet nonce to avoid replay attacks.
+  * **tokenAmount**: The amount of token that we want to pay for the fee in wei.
+  * **tokenGas**: The gas limit for the token payment transaction.
+  * **tokenContract**: The token contract address that we want to use to pay for the fee.
+  * **gas**: The gas limit for the execution of the relaying transaction.
+  * **validUntilTime**: Transaction expiration time in seconds.
+
+Where each key from `relayData` is:
+
+  * **gasPrice**: The gas price that will be used to relay the transaction.
+  * **callVerifier**: The relay verifier address to validate the correctness of the transaction.
+  * **callForwarder**: The smart wallet address that is going to execute the transaction. 
+  * **feesReceiver**: The address of the worker or collector contract that is going to receive fees.
+
+#### Deploy Request
+
+  ```json
+    {
+      "request": {
+        "relayHub": "0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974",
+        "to": "0x0000000000000000000000000000000000000000",
+        "data": "0x",
+        "from": "0x553f430066EA56BD4fa9190218AF17bAD23dCdb1",
+        "value": "0",
+        "nonce": "0",
+        "tokenAmount": "0",
+        "tokenGas": "0",
+        "tokenContract": "0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8",
+        "recoverer": "0x0000000000000000000000000000000000000000",
+        "index": "1",
+        "validUntilTime": 1676747036,
+      },
+      "relayData": {
+        "gasPrice": "60000000",
+        "callVerifier": "0x73ec81da0C72DD112e06c09A6ec03B5544d26F05",
+        "callForwarder": "0xE0825f57Dd05Ef62FF731c27222A86E104CC4Cad",
+        "feesReceiver": "0x9C34f2225987b0725A4201F1C6EC1adB35562126"
+      }
+    }
+  ```
+
+Where each key from `request` is:
+
+  * **relayHub**: The relay hub address that will be used to validate the caller from the transaction.
+  * **to**: The address of the destination contract that we want to execute (`0x0000000000000000000000000000000000000000` for the Smart Wallet deployment).
+  * **data**: The encoded function that we want to relay (`0x` for the Smart Wallet deployment).
+  * **from**: Externally Owned Account, the owner of the smart wallet.
+  * **value**: The native currency value that wants to be transferred from smart wallet during the execution.
+  * **nonce**: Smart Wallet nonce to avoid replay attacks.
+  * **tokenAmount**: The amount that we want to pay for the fee in wei.
+  * **tokenGas**: The gas limit for the token payment transaction.
+  * **tokenContract**: The token contract address that we want to use to pay for the fee.
+  * **recoverer**: The recoverer address, to recover funds from the smart wallet. This feature is still pending to implement. 
+  * **index**: The index from the smart wallet that we want to deploy.
+  * **validUntilTime**: Transaction expiration time in seconds.
+
+
+Where each key from `relayData` is:
+
+  * **gasPrice**: The gas price that will be used to relay the transaction.
+  * **callVerifier**: The deploy verifier address to validate the correctness of the transaction.
+  * **callForwarder**: The smart wallet factory address that is going to perform the deployment. 
+  * **feesReceiver**: The address from the worker or collector contract that is going to receive fees.
+
+#### Metadata
+
+```json
+  {
+    "relayHubAddress": "0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974",
+    "signature": "0xa9f579cf964c03ac194f577b5fca5271ba13e2965c...",
+    "relayMaxNonce": 4
+  }
+```
+
+Where each key is:
+
+  * **relayHubAddress**: The relay hub that will be used by the server to relay the transaction.
+  * **signature**: The relay transaction signed by the owner. After signing the transaction, it cannot be changed, since there is a on-chain validation that is part of the EIP712.
+  * **relayMaxNonce**: Relay worker nonce plus an extra gap.
+
+### Custom worker replenish function
 
 Each relayed transaction is signed by a Relay Worker account. The worker accounts are controlled by the Relay Manager. When a relay worker signs and relays a transaction, the cost for that transaction is paid using the funds in that worker's account. If the transaction is not subsidized, then the worker is compensated with tokens.
 
 Worker accounts must always have some minimum balance to pay gas for the transaction. These balances can be managed by implementing a replenishment strategy. The Relay Manager can use the strategy to top off a relay worker's account when the balance gets too low.
 
-We provide a default implementation for a replenishment strategy. RIF Relay solution integrators can implement their own replenish strategy.
+We provide a default implementation for a replenish strategy. RIF Relay solution integrators can implement their own replenish strategy.
 
 To implement and use your own replenish strategy:
 
-1. In the folder `src/relayserver`, open `ReplenishFunction.ts` with a text editor.
+1. In the folder `src` from the RIF Relay Server project, open `ReplenishFunction.ts` with a text editor.
 2. On the function `replenishStrategy` write your new replenish strategy.
-3. Re build the project `yarn && yarn prepare`
-4. Add the command `--customReplenish` when running a RIF Relay Server or change the config json file to set `customReplenish` on true.
-
-### Using a RIF Relay Provider
-
-Another option is to use RIF RIF Relay through a RIF Relay Provider. A RIF Relay Provider is a web3 provider and all transactions and calls are handled through it. Under the hood, the RIF Relay Provider uses a RIF Relay Client instance to interact with the RIF Relay Server.
-
-Here's a sample typescript snippet for deploying a Smart Wallet address as well as relaying a transaction through the use of the RIF Relay Provider.
-
-```typescript
-import { RelayProvider, resolveConfiguration } from "@rsksmart/rif-relay";
-import Web3 from "web3";
-
-const ZERO_ADDRESS = "0x0000000000000000000000000000000000000000";
-
-const web3 = new Web3("http://localhost:4444");
-
-const smartWalletFactoryAbi = {
-  // JSON data containing the abi of the smart wallet factory contract
-}; 
-const smartWalletFactoryAddress = "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"; // the smart wallet factory contract address (can be retrieved from the deployment summary)
-const smartWalletIndex = 0; // the index of the smart wallet to use (leave as 0 for default behavior)
-
-const smartWalletAddress = await new web3.eth.Contract(
-    smartWalletFactoryAbi,
-    smartWalletFactoryAddress
-).methods.getSmartWalletAddress(
-    account.address,
-    ZERO_ADDRESS,
-    smartWalletIndex
-).call(); // this will generate an address for the Smart Wallet to be deployed
-
-const relayVerifierAddress = "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"; // the relay verifier contract address (can be retrieved from the deployment summary)
-const deployVerifierAddress = "0x1938517B0762103d52590Ca21d459968c25c9E67"; // the deploy verifier contract address (can be retrieved from the deployment summary)
-
-const config = await resolveConfiguration(web3.currentProvider,
-    {
-        verbose: true,
-        onlyPreferredRelays: true,
-        preferredRelays: ["http://localhost:8090"], // replace with your own if necessary
-        factory: smartWalletFactoryAddress,
-        gasPriceFactorPercent: 0,
-        relayLookupWindowBlocks: 1e5,
-        chainId: 33, // regtest
-        relayVerifierAddress,
-        deployVerifierAddress,
-        smartWalletFactoryAddress
-    });
-config.relayHubAddress = "0x3bA95e1cccd397b5124BcdCC5bf0952114E6A701"; // the relay hub contract address (can be retrieved from the deployment summary)
-
-const provider = new RelayProvider(web3.currentProvider, config);
-
-provider.addAccount(account); // see note down below
-
-web3.setProvider(provider);
-
-// Deploy Smart Wallet
-
-const tokenContract = "0x0E569743F573323F430B6E14E5676EB0cCAd03D9"; // token address to use on smart wallet
-const tokenAmount = "100"; // total token amount for the smart wallet, the smart wallet address should have a balance greater than this number before calling the deploy
-
-const deployTransaction = await provider.deploySmartWallet({
-    from: account.address,
-    to: ZERO_ADDRESS,
-    gas: "0x27100",
-    value: "0",
-    callVerifier: deployVerifierAddress,
-    callForwarder: smartWalletFactoryAddress,
-    tokenContract,
-    tokenAmount,
-    data: "0x",
-    index: smartWalletIndex,
-    recoverer: ZERO_ADDRESS,
-    isSmartWalletDeploy: true,
-    onlyPreferredRelays: true,
-    smartWalletAddress
-});
-
-// RIF Relay Transaction
-
-const unsigned_tx = {
-  // some common web3 transaction with the usual parameters, for example:
-  "nonce": "0x0",
-  "to": "0xAfA16A8d7a94550079014D537e9440ddB7765d29",
-  "value": "0x00",
-  "data": "0x0a798f2400000000000000000000000020ff84b8da5034b51cf3dfdc7a92d2b7c3b6a2f30000000000000000000000001938517b0762103d52590ca21d459968c25c9e6700000000000000000000000000000000000000000000000000000000000001f4",
-  "chainId": "33"
-};
-
-const tokenAmountForRelay = "10"; // how many tokens will be used to pay for the relaying. if left at 0, transaction will be sponsored
-
-const relayTransaction = web3.eth.sendTransaction({
-    from: account.address,
-    callVerifier: relayVerifierAddress,
-    callForwarder: smartWalletAddress,
-    isSmartWalletDeploy: false,
-    onlyPreferredRelays: true,
-    tokenAmount: tokenAmountForRelay,
-    tokenContract,
-    ...unsigned_tx,
-});
-```
-
-**Note**: in the example above the `account` object is assumed as an object containing the address (as string) and the privateKey (as buffer). This is just an example, **DO NOT** use this in production:
-
-```typescript
-decryptedAccount = web3.eth.accounts.privateKeyToAccount(_privateKey);
-const account = {
-  address: decryptedAccount.address,
-  privateKey: Buffer.from(
-    decryptedAccount.privateKey.replaceAll("0x", ""),
-    "hex"
-  ),
-  privateKeyString: decryptedAccount.privateKey,
-}
-``` 
-
-Before running this example, you need to know of a few requirements:
-
-1. The smart wallet address generated by the contract call should be funded with tokens before running the deploy call. Otherwise, you can set `tokenAmount` to `0` (or remove it) to make a subsidized deploy instead.
-2. The token address you use needs to be explicitly allowed. To do so, make a call to the contracts involved to allow them to work with your particular token. These contracts are the relay and deploy verifiers. The method in question is called `acceptToken`, and it can be successfully called only from the contract deployer account (if you are running this in regtest, then `accounts[0]` is the owner).
-
-You can allow tokens by calling the relay verifier and deploy verifier (for both wallets, smart wallet and custom smart wallet) contracts manually with web3.
-
-Here is an example of how to allow tokens using web3 on truffle console:
-```typescript
-const smartWalletDeployVerifierAbi = require("../src/cli/compiled/DeployVerifier.json").abi;
-const customSmartWalletDeployVerifierAbi = require("../src/cli/compiled/CustomSmartWalletDeployVerifier.json").abi;
-const relayVerifierAbi = require("../src/cli/compiled/RelayVerifier.json").abi;
-
-const relayVerifierAddress = "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"; // the relay verifier contract address (can be retrieved from the deployment summary)
-const deployVerifierAddress = "0x1938517B0762103d52590Ca21d459968c25c9E67"; // the deploy verifier contract address (can be retrieved from the deployment summary)
-const customRelayVerifierAddress = "0x74Dc4471FA8C8fBE09c7a0C400a0852b0A9d04b2"; // the custom smart wallet relay verifier contract address (can be retrieved from the deployment summary)
-const customDeployVerifierAddress = "0x1938517B0762103d52590Ca21d459968c25c9E67"; // the custom smart wallet deploy verifier contract address (can be retrieved from the deployment summary)
-
-const smartWalletDeployVerifier = await new web3.eth.Contract(smartWalletDeployVerifierAbi, deployVerifierAddress);
-const smartWalletRelayVerifier = await new web3.eth.Contract(relayVerifierAbi, relayVerifierAddress);
-const customSmartWalletDeployVerifier = await new web3.eth.Contract(customSmartWalletDeployVerifierAbi, customDeployVerifierAddress);
-const customSmartWalletRelayVerifier = await new web3.eth.Contract(relayVerifierAbi, customRelayVerifierAddress);
-const accounts = await web3.eth.getAccounts();
-
-const tokenAddress = "0x0E569743F573323F430B6E14E5676EB0cCAd03D9"; // token address to allow
-
-await smartWalletDeployVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
-await smartWalletRelayVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
-await customSmartWalletDeployVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
-await customSmartWalletRelayVerifier.methods.acceptToken(tokenAddress).send({from: accounts[0]});
-```
-
-### Using RIF Relay as a library
-
-Development of an SDK for the RIF RIF Relay project is underway, and will be released soon.
+3. Re build the project `npm run build`
+4. Change the config JSON file to set `customReplenish` on true.

@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Set chain address resolution
-tags: rif, rns, rif-name-service, domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 This operation is used to set a chain address resolution of a domain. If you are using your domain to receive assets, you may use this guide to change the wallet address where you receive payments.

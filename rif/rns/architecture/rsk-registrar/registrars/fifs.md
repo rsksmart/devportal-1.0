@@ -1,12 +1,12 @@
 ---
 layout: rsk
 title: First-in first-served .rsk registrar
-tags: rif, rns, fifs, registrar, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, fifs, registrar, rif-name-service, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 description: "Register an RNS address using the FIFS registrar, without address resolution"
 ---
 
-- RSK MainNet: [`0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61`](https://explorer.rsk.co/address/0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61)
-- RSK TestNet: [`0x36ffda909f941950a552011f2c50569fda14a169`](https://explorer.testnet.rsk.co/address/0x36ffda909f941950a552011f2c50569fda14a169)
+- Rootstock (RSK) MainNet: [`0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61`](https://explorer.rsk.co/address/0x779195c53cc7c1a33bd2eea5f63f2c1da8798d61)
+- Rootstock (RSK) TestNet: [`0x36ffda909f941950a552011f2c50569fda14a169`](https://explorer.testnet.rsk.co/address/0x36ffda909f941950a552011f2c50569fda14a169)
 - [Smart contract](https://github.com/rnsdomains/rns-rskregistrar/blob/master/contracts/FIFSRegistrar.sol)
 
 Has registration role in `RSK Owner`.

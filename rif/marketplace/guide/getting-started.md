@@ -133,7 +133,7 @@ Once you click on **WITHDRAW** this will submit a transaction that needs to be c
 
 ### Setup Pinning Service
 
-1 - Go to the Marketplace Storage Sell page and start the creation process: [RIF Marketplace Sell Page](https://marketplace.rifos.org/storage/sell). You will see that your RSK address is not registered as a Storage provider yet.
+1 - Go to the Marketplace Storage Sell page and start the creation process: [RIF Marketplace Sell Page](https://marketplace.rifos.org/storage/sell). You will see that your Rootstock address is not registered as a Storage provider yet.
 
 ![RIF Marketplace Register Page](/rif/marketplace/guide/images/userguide-marketplace-storage-sell-register.png)
 

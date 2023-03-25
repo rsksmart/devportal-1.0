@@ -19,8 +19,8 @@ We are currently integrated with the following dApps
     - [`rnsdomains/rns-manager-react#354`](https://github.com/rnsdomains/rns-manager-react/pull/354) - Add rLogin support with injected providers
     - [`rnsdomains/rns-manager-react#357`](https://github.com/rnsdomains/rns-manager-react/pull/357) - Add Wallet Connect
 
-- B) RSK Token Bridge
-  * Use this app to cross tokens with Ethereum network. For example, you can secure your USDT tokens on RSK network.
+- B) Rootstock (RSK) Token Bridge
+  * Use this app to cross tokens with Ethereum network. For example, you can secure your USDT tokens on Rootstock (RSK) network.
 
   * URL: [tokenbridge.rsk.co](https://tokenbridge.rsk.co/)
 
@@ -40,7 +40,7 @@ We are currently integrated with the following dApps
   * URL: [`identity.rifos.org`](https://identity.rifos.org/)
   * Repo: [`rif-identity-manager`](https://github.com/rsksmart/rif-identity-manager)
 
-- E) RSK Academy
+- E) Rootstock (RSK) Academy
   * RSK education platform. Find out brand new courses and live classes!
   * Repo: [`rsksmart/rsk-academy`](https://github.com/rsksmart/rsk-academy)
 

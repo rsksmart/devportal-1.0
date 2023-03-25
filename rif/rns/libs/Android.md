@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Android Library
-tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, android, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, android, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Android Library to resolve your RIF Name Service address on your app.
@@ -42,7 +42,7 @@ android {
 
 ## How to use
 
-You will need access to a running rsk node that can make calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our `build.gradle` file. You can change this or use the constructors for the resolver that will be described below.
+You will need access to a running rootstock (rsk) node that can make calls to the JSON-RPC. For this we have our public nodes available for you, that are already configured in our `build.gradle` file. You can change this or use the constructors for the resolver that will be described below.
 
 ```
   defaultConfig {

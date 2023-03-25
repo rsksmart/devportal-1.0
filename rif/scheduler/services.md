@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RIF Scheduler - Services
-tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Repo: [`rsksmart/rif-scheduler-services`](https://github.com/rsksmart/rif-scheduler-services)
@@ -19,7 +19,7 @@ It collects information from another source of trust: The smart contract.
 - Stores the requested transactions in a SQLite database (configurable)
 - Runs every 5 minutes collecting transactions that
   need to be executed (configurable)
-- Connects to RSK node using web sockets --
+- Connects to Rootstock (RSK) node using web sockets --
   it uses `eth_getLogs` and `eth_subscribe` RPC methods
 - It executes transactions storing a private key in a file --
   this can be easily improved

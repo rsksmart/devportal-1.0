@@ -8,7 +8,7 @@ prevUrl: '/rif/multisig/product/'
 nextUrl: '/rif/multisig/sdk/'
 ---
 
-Gnosis Safe solution consists of four main modules. It currently supports Ethereum and other EVM networks (Rinkeby, xDai, EWC, Volta), including RSK.
+Gnosis Safe solution consists of four main modules. It currently supports Ethereum and other EVM networks (Rinkeby, xDai, EWC, Volta), including Rootstock (RSK).
 
 [](#top "collapsible"){:.open}
 - A) The smart contracts

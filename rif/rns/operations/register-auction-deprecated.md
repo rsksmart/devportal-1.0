@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Register a domain - Deprecated
-tags: rif, rns, rif-name-service, domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+tags: rif, rns, rif-name-service, domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 <div class="alert alert-danger">
@@ -21,7 +21,7 @@ Any user can start an auction for any available domain name. It is a public auct
 
 A Vickrey auction is a type of blind auction. Bidders submit written bids without knowing the bid of the other people in the auction. The highest bidder wins, but the price paid is the second-highest bid.
 
-> The good obtained after the auction is a domain registered under the `rsk` top level domain in the **RIF Name Service running on the RSK blockchain**.
+> The good obtained after the auction is a domain registered under the `rsk` top level domain in the **RIF Name Service running on the Rootstock (RSK) blockchain**.
 
 <img src="/assets/img/rns/auction-phase.png" class="img-fluid" alt="auction-phase" />
 

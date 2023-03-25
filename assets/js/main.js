@@ -57,9 +57,7 @@ $(document).ready(function () {
   addCopyButtonsToCodeSnippets();
   addUrlHoverIcons();
   setUpMainSearch();
-  const renderFeatures = $('.render-features')
-    .data('features')
-    .split(/\s+/);
+  const renderFeatures = $('.render-features').data('features').split(/\s+/);
   renderFeatures.forEach((feature) => {
     switch (feature) {
       case '':
@@ -85,10 +83,13 @@ $(document).ready(function () {
         return;
       case 'collapsible':
         renderCollapsibleSetup();
-        return
+        return;
       case 'switch-container':
         renderSwitchContainerSetup();
-        return
+        return;
+      case 'powpeg-hsm-attestation-frame':
+        renderPowpegHSMAttestationFrame();
+        return;
       default:
         console.error('Unsupported render feature:', feature);
     }
@@ -100,7 +101,7 @@ $(function () {
   var pageUrl = location.href;
   $('a').each(function () {
     $(this).toggleClass('active', this.href === pageUrl);
-	});
+  });
 });
 
 $(document).ready(function () {
@@ -116,9 +117,14 @@ $('a[href^="#"]').on('click', function (event) {
   var target = $(this.getAttribute('href'));
   if (target.length) {
     event.preventDefault();
-    $('html, body').stop().animate({
-      scrollTop: target.offset().top - 100
-    }, 1000);
+    $('html, body')
+      .stop()
+      .animate(
+        {
+          scrollTop: target.offset().top - 100,
+        },
+        1000,
+      );
   }
 });
 
@@ -133,35 +139,46 @@ $(document).ready(function () {
   // traverse up the list of parents until we get to the top,
   // building up the links to them along the way for use as breadcrumbs,
   // plus setting them to `current` as well, so that they appear expanded
-  var crumbs = $('.current').parentsUntil('.exclude-doc-from-breadcrumbs')
-    .prev('a').add('.current')
+  var crumbs = $('.current')
+    .parentsUntil('.exclude-doc-from-breadcrumbs')
+    .prev('a')
+    .add('.current')
     .map(function () {
       var link = $(this).attr('href');
       var link_text = $(this).text();
       var title = $(this).attr('title');
-      var bc = '<li><a href='+link+' title='+''+'>'+link_text+'</a></li>';
+      var bc =
+        '<li><a href=' + link + ' title=' + '' + '>' + link_text + '</a></li>';
       return bc;
-    }).get().join('  ');
+    })
+    .get()
+    .join('  ');
   $('.breadcrumb').html(crumbs);
 });
 
 $(document).ready(function () {
-  var liText = '', liList = $('.breadcrumb li'), listForRemove = [];
+  var liText = '',
+    liList = $('.breadcrumb li'),
+    listForRemove = [];
   $(liList).each(function () {
     var text = $(this).text();
-    if (liText.indexOf('|'+ text + '|') == -1) {
-      liText += '|'+ text + '|';
+    if (liText.indexOf('|' + text + '|') == -1) {
+      liText += '|' + text + '|';
     } else {
       listForRemove.push($(this));
     }
   });
-  $(listForRemove).each(function () { $(this).remove(); });
+  $(listForRemove).each(function () {
+    $(this).remove();
+  });
 });
 
 $(document).ready(function () {
- $('.current').parentsUntil('.first_level').addClass('subnav-reveal rotate-chevron');
- $('.current').parents().addClass('rotate-chevron current');
- $('.toggle-nav-column-visibility').on('click', toggleNavColumnVisibility);
+  $('.current')
+    .parentsUntil('.first_level')
+    .addClass('subnav-reveal rotate-chevron');
+  $('.current').parents().addClass('rotate-chevron current');
+  $('.toggle-nav-column-visibility').on('click', toggleNavColumnVisibility);
 });
 
 // Header scroll class
@@ -185,17 +202,17 @@ $(window).scroll(function () {
 
 const copyButtonImageOptions = {
   copy: {
-    src: '/assets/img/copy-init-icon.svg', 
+    src: '/assets/img/copy-init-icon.svg',
     alt: 'Copy',
     className: 'copy-button-init',
   },
   success: {
-    src: '/assets/img/copied-green-icon.svg', 
+    src: '/assets/img/copied-green-icon.svg',
     alt: 'Coppied',
     className: 'copy-button-success',
   },
   fail: {
-    src: '/assets/img/failed-red-icon.svg', 
+    src: '/assets/img/failed-red-icon.svg',
     alt: 'Failed',
     className: 'copy-button-fail',
   },
@@ -213,7 +230,9 @@ async function handleCopyButtonClick(event) {
   if (event.target.classList.contains('copy-button')) {
     const copyButtonImage = event.target;
     try {
-      const codeText = copyButtonImage.parentElement.querySelector('code').innerText.trim();
+      const codeText = copyButtonImage.parentElement
+        .querySelector('code')
+        .innerText.trim();
       await navigator.clipboard.writeText(codeText);
       showCopyButtonImage(copyButtonImage, 'success');
     } catch (error) {
@@ -242,7 +261,7 @@ function addCopyButtonsToCodeSnippets() {
  * heading URL hover icon
  */
 
-function scrollHeadingToPageHeader (heading) {
+function scrollHeadingToPageHeader(heading) {
   const pageHeader = document.getElementsByTagName('nav').item(0);
   const pageHeaderBottom = pageHeader.getBoundingClientRect().bottom;
   const headingTop = heading.getBoundingClientRect().top;
@@ -271,10 +290,10 @@ function handleHeadingIconClick(event) {
     const href = headingIcon.parentElement.href;
     history.pushState(null, href, href);
     scrollHeadingToPageHeader(headingIcon);
-  };
+  }
 }
 
-const addUrlHoverIconsSelector = 
+const addUrlHoverIconsSelector =
   '.main-central-col h1, .main-central-col h2, .main-central-col h3';
 
 function addUrlHoverIcons() {
@@ -288,7 +307,7 @@ function addUrlHoverIcons() {
 }
 
 // toggle between expand all and collapse all
-function toggleNavColumnVisibility (e) {
+function toggleNavColumnVisibility(e) {
   // work out whether we are expanding or collapsing
   var target = $(this);
   target.toggleClass('collapsed');
@@ -310,15 +329,14 @@ function toggleNavColumnVisibility (e) {
 
 // search
 
-function setUpMainSearch () {
+function setUpMainSearch() {
   if (document.location.pathname.indexOf('/search/') !== 0) {
     // only relevant on the search page
     return;
   }
   const searchInput = document.getElementById('search-input');
   const resultsContainer = document.getElementById('results-container');
-  const searchResultTemplate =
-    `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`;
+  const searchResultTemplate = `<div class="container"><br/><div class="row"><a href="{url}"><h1>{title}</h1></a></div>{desc}<br/>{tags}</div>`;
 
   const defaultTruncateWordNum = 20;
 
@@ -326,13 +344,15 @@ function setUpMainSearch () {
     return str.split(' ').splice(0, numWords).join(' ');
   }
 
-  function templateMiddleware (prop, text) {
+  function templateMiddleware(prop, text) {
     $('.page-title').text(() => `Search results for "${searchInput.value}"`);
 
     if (prop === 'desc') {
       const searchInputValue = searchInput.value.toLowerCase();
-      const matchValueAndSiblings =
-        new RegExp('.(' + searchInputValue + ')\\b.*.', 'ig');
+      const matchValueAndSiblings = new RegExp(
+        '.(' + searchInputValue + ')\\b.*.',
+        'ig',
+      );
       const decodedText = decodeURIComponent(text);
 
       const result = [...decodedText.matchAll(matchValueAndSiblings)];
@@ -341,20 +361,18 @@ function setUpMainSearch () {
         // No match found, so we cannot skip ahead to that.
         // Instead we simply return the text from the start.
         const truncatedDesc = truncateWords(text);
-        const truncatedResult =
-          `<div class="row"><div class="col p-0">${truncatedDesc}</div></div>`;
+        const truncatedResult = `<div class="row"><div class="col p-0">${truncatedDesc}</div></div>`;
         return truncatedResult;
       }
 
       //only shows the first result and its first few words
       const resultString = truncateWords(result[0][0]);
-      const isUniqueResult = (result[0].length == 1);
-      const otherResults =
-        `<div class="row pt-0 pl-3" style="font-style: italic;">(multiple matches found)</div>`;
-      const uniqueAndMaybeOtherResults =
-        isUniqueResult ? resultString : resultString + otherResults;
-      const parsedResult =
-        `<div class="row"><div class="col p-0">${uniqueAndMaybeOtherResults}</div></div>`;
+      const isUniqueResult = result[0].length == 1;
+      const otherResults = `<div class="row pt-0 pl-3" style="font-style: italic;">(multiple matches found)</div>`;
+      const uniqueAndMaybeOtherResults = isUniqueResult
+        ? resultString
+        : resultString + otherResults;
+      const parsedResult = `<div class="row"><div class="col p-0">${uniqueAndMaybeOtherResults}</div></div>`;
 
       return parsedResult;
     } else if (prop === 'tags') {
@@ -364,7 +382,8 @@ function setUpMainSearch () {
       const badges = text
         .split(', ')
         .map(
-          (tag) => (`<a href="${`?q=${tag}&from=%2Fsearch%2F`}"><span class="badge badge-secondary p-1">${tag}</span><a/>`),
+          (tag) =>
+            `<a href="${`?q=${tag}&from=%2Fsearch%2F`}"><span class="badge badge-secondary p-1">${tag}</span><a/>`,
         )
         .join('');
 
@@ -389,7 +408,7 @@ function setUpMainSearch () {
     try {
       // if quick search has been used, use query parameters in URL to
       // perform search immediately
-      const queryParams = (new URL(document.location)).searchParams;
+      const queryParams = new URL(document.location).searchParams;
       const q = queryParams.get('q');
       if (typeof q !== 'undefined') {
         searchInput.value = q;
@@ -414,8 +433,14 @@ function renderEquationsSetup() {
   //   crossorigin="anonymous">
   const linkEl = document.createElement('link');
   linkEl.setAttribute('rel', 'stylesheet');
-  linkEl.setAttribute('href', 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css');
-  linkEl.setAttribute('integrity', 'sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq');
+  linkEl.setAttribute(
+    'href',
+    'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css',
+  );
+  linkEl.setAttribute(
+    'integrity',
+    'sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq',
+  );
   linkEl.setAttribute('crossorigin', 'anonymous');
   document.body.appendChild(linkEl);
   // <script
@@ -427,8 +452,14 @@ function renderEquationsSetup() {
   // </script>
   const scriptEl = document.createElement('script');
   scriptEl.setAttribute('defer', 'defer');
-  scriptEl.setAttribute('src', 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js');
-  scriptEl.setAttribute('integrity', 'sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz');
+  scriptEl.setAttribute(
+    'src',
+    'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js',
+  );
+  scriptEl.setAttribute(
+    'integrity',
+    'sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz',
+  );
   scriptEl.setAttribute('crossorigin', 'anonymous');
   scriptEl.setAttribute('onload', 'renderEquations();');
   document.body.appendChild(scriptEl);
@@ -455,38 +486,62 @@ function renderRskTokenBridgeSupportSetup() {
   // <script src="https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.js" integrity="sha256-/MFRLGofgwznc7HHZUDrZc092i65/yOFgHEdGI7qCDQ=" crossorigin="anonymous"></script>
   const scriptEl2 = document.createElement('script');
   scriptEl2.setAttribute('defer', 'defer');
-  scriptEl2.setAttribute('integrity', 'sha256-/MFRLGofgwznc7HHZUDrZc092i65/yOFgHEdGI7qCDQ=');
+  scriptEl2.setAttribute(
+    'integrity',
+    'sha256-/MFRLGofgwznc7HHZUDrZc092i65/yOFgHEdGI7qCDQ=',
+  );
   scriptEl2.setAttribute('crossorigin', 'anonymous');
-  scriptEl2.setAttribute('src', 'https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.js');
+  scriptEl2.setAttribute(
+    'src',
+    'https://cdn.jsdelivr.net/npm/markdown-it@12.0.6/dist/markdown-it.js',
+  );
   document.body.appendChild(scriptEl2);
   // <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js" integrity="sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=" crossorigin="anonymous"></script>
   const scriptEl = document.createElement('script');
   scriptEl.setAttribute('defer', 'defer');
-  scriptEl.setAttribute('integrity', 'sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=');
+  scriptEl.setAttribute(
+    'integrity',
+    'sha256-JLmknTdUZeZZ267LP9qB+/DT7tvxOOKctSKeUC2KT6E=',
+  );
   scriptEl.setAttribute('crossorigin', 'anonymous');
-  scriptEl.setAttribute('src', 'https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js');
+  scriptEl.setAttribute(
+    'src',
+    'https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js',
+  );
   scriptEl.setAttribute('onload', 'renderRskTokenBridgeSupport();');
   document.body.appendChild(scriptEl);
 }
 
 function renderRskTokenBridgeSupport() {
-  const checkButton = document.querySelector('#rsk-token-bridge-support-check-button');
-  checkButton.addEventListener('click', onRskTokenBridgeSupportCheckButtonClicked);
+  const checkButton = document.querySelector(
+    '#rsk-token-bridge-support-check-button',
+  );
+  checkButton.addEventListener(
+    'click',
+    onRskTokenBridgeSupportCheckButtonClicked,
+  );
 }
 
 function onRskTokenBridgeSupportCheckButtonClicked() {
   const selfServiceSupportBaseUrl = 'https://self-service.rsk.co';
-  const txHash = document.querySelector('#rsk-token-bridge-support-txHash').value;
-  const fromNetwork = document.querySelector('#rsk-token-bridge-support-fromNetwork').value;
-  const walletName = document.querySelector('#rsk-token-bridge-support-walletName').value;
-  const outputArea = document.querySelector('.rsk-token-bridge-support-output-area');
-  const url =
-    `${selfServiceSupportBaseUrl}/api/v1/rsk-token-bridge/options?fromNetwork=${fromNetwork}&txHash=${txHash}&walletName=${walletName}`;
+  const txHash = document.querySelector(
+    '#rsk-token-bridge-support-txHash',
+  ).value;
+  const fromNetwork = document.querySelector(
+    '#rsk-token-bridge-support-fromNetwork',
+  ).value;
+  const walletName = document.querySelector(
+    '#rsk-token-bridge-support-walletName',
+  ).value;
+  const outputArea = document.querySelector(
+    '.rsk-token-bridge-support-output-area',
+  );
+  const url = `${selfServiceSupportBaseUrl}/api/v1/rsk-token-bridge/options?fromNetwork=${fromNetwork}&txHash=${txHash}&walletName=${walletName}`;
   const reqOptions = {
     url,
     method: 'get',
     headers: {
-      'Accept': 'application/json',
+      Accept: 'application/json',
     },
     timeout: 2000,
     responseType: 'html',
@@ -495,32 +550,46 @@ function onRskTokenBridgeSupportCheckButtonClicked() {
     .request(reqOptions)
     .then((response) => {
       console.log(response);
-      removeSubsequentElems('.main-central-col', '.rsk-token-bridge-support', 'p');
-      const responseDataOptions = (response && response.data && response.data.options);
+      removeSubsequentElems(
+        '.main-central-col',
+        '.rsk-token-bridge-support',
+        'p',
+      );
+      const responseDataOptions =
+        response && response.data && response.data.options;
       if (!responseDataOptions) {
         outputArea.innerText = `Error\n\nUnable to render fetched response\n\n`;
       } else {
-        const outputHtml = renderSelfServiceSupportOptionsToHtml(responseDataOptions);
+        const outputHtml =
+          renderSelfServiceSupportOptionsToHtml(responseDataOptions);
         outputArea.innerHTML = `<h2>Result</h2><br>${outputHtml}`;
       }
     })
     .catch((error) => {
       console.error(error);
-      const errorResponseData = (error && error.response && error.response.data);
+      const errorResponseData = error && error.response && error.response.data;
       if (errorResponseData) {
-        outputArea.innerText = `Error\n\n${errorResponseData.error}\n\n${errorResponseData.value.join('\n\n')}\n\n`;
+        outputArea.innerText = `Error\n\n${
+          errorResponseData.error
+        }\n\n${errorResponseData.value.join('\n\n')}\n\n`;
       } else {
         outputArea.innerText = `Error\n\n${error.message}\n\n`;
       }
     });
 }
 
-function removeSubsequentElems(parentSelector, childSelector, subsequentChildSelector) {
+function removeSubsequentElems(
+  parentSelector,
+  childSelector,
+  subsequentChildSelector,
+) {
   const parentNode = document.querySelector(parentSelector);
   const subsequentElems = Array.from(
-    parentNode.querySelectorAll(`${childSelector} ~ ${subsequentChildSelector}`),
+    parentNode.querySelectorAll(
+      `${childSelector} ~ ${subsequentChildSelector}`,
+    ),
   );
-  subsequentElems.forEach(function(el) {
+  subsequentElems.forEach(function (el) {
     parentNode.removeChild(el);
   });
   return subsequentElems;
@@ -554,13 +623,18 @@ function render2WayPegVerifierSetup() {
   // </script>
   const scriptEl = document.createElement('script');
   scriptEl.setAttribute('defer', 'defer');
-  scriptEl.setAttribute('src', '/assets/vendor/pegin-address-verifier/pegin-address-verifier.umd.js');
+  scriptEl.setAttribute(
+    'src',
+    '/assets/vendor/pegin-address-verifier/pegin-address-verifier.umd.js',
+  );
   scriptEl.setAttribute('onload', 'render2WayPegVerifier();');
   document.body.appendChild(scriptEl);
 }
 
 function render2WayPegVerifier() {
-  var originalElem = document.querySelector('a[title="pegin-address-verifier"]');
+  var originalElem = document.querySelector(
+    'a[title="pegin-address-verifier"]',
+  );
   var newElem = document.createElement('div');
   newElem.innerHTML = `
     <div class="pegin-address-verifier">
@@ -570,12 +644,16 @@ function render2WayPegVerifier() {
     </div>
   `;
   originalElem.parentNode.replaceChild(newElem, originalElem);
-  document.querySelector('.pegin-address-verifier .check').addEventListener('click', render2WayPegVerifierCheck);
+  document
+    .querySelector('.pegin-address-verifier .check')
+    .addEventListener('click', render2WayPegVerifierCheck);
 }
 
 function render2WayPegVerifierCheck() {
   var result;
-  var address = document.querySelector('.pegin-address-verifier .address').value;
+  var address = document.querySelector(
+    '.pegin-address-verifier .address',
+  ).value;
   var info = RskPegInAddressVerifier.getAddressInformation(address);
   // e.g. {"network":"testnet","type":"p2pkh"}
   var displayAddress = `<code>${address}</code>`;
@@ -583,25 +661,18 @@ function render2WayPegVerifierCheck() {
     result = `The address ${displayAddress} is not valid.`;
   } else {
     var displayAddressType = `<code>${info.type.toUpperCase()}</code>`;
-    var displayNetwork = `<code>${info.network.charAt(0).toUpperCase()}${info.network.slice(1)}</code>`;
+    var displayNetwork = `<code>${info.network
+      .charAt(0)
+      .toUpperCase()}${info.network.slice(1)}</code>`;
     var canPegIn = RskPegInAddressVerifier.canPegIn(info);
     if (canPegIn) {
-      if (info.type == 'p2pkh'){
-        result = `The address ${displayAddress
-          } is a valid ${displayAddressType
-          } address, and may peg in on ${displayNetwork}.`;
-      }
-      else{
-        result = `The address ${displayAddress
-        } is a valid ${displayAddressType
-        } address, however, may not peg in on ${displayNetwork
-        }. Please check the compatibility matrix.`;
+      if (info.type == 'p2pkh') {
+        result = `The address ${displayAddress} is a valid ${displayAddressType} address, and may peg in on ${displayNetwork}.`;
+      } else {
+        result = `The address ${displayAddress} is a valid ${displayAddressType} address, however, may not peg in on ${displayNetwork}. Please check the compatibility matrix.`;
       }
     } else {
-      result = `The address ${displayAddress
-        } is a valid ${displayAddressType
-        } address, however, will not peg in on ${displayNetwork
-        }.<br/><strong>Do not use</strong> this wallet, your BTC will be <strong>lost</strong>. Please check the compatibility matrix.`;
+      result = `The address ${displayAddress} is a valid ${displayAddressType} address, however, will not peg in on ${displayNetwork}.<br/><strong>Do not use</strong> this wallet, your BTC will be <strong>lost</strong>. Please check the compatibility matrix.`;
     }
   }
   document.querySelector('.pegin-address-verifier .result').innerHTML = result;
@@ -613,20 +684,14 @@ function insertDomNodeRelativeTo(node, newNode, isAfter) {
   if (isAfter) {
     if (node.nextSibling) {
       // newNode will be after node, and before node's current next node
-      node.parentNode.insertBefore(
-        newNode,
-        node.nextSibling,
-      );
+      node.parentNode.insertBefore(newNode, node.nextSibling);
     } else {
       // newNode is after node, but node is the last child
       node.parentNode.appendChild(newNode);
     }
   } else {
     // newNode is before node
-    node.parentNode.insertBefore(
-      newNode,
-      node,
-    );
+    node.parentNode.insertBefore(newNode, node);
   }
 }
 
@@ -638,8 +703,7 @@ function removeAllEmptyTextNodes(node) {
   var el;
   for (var i = 0; i < childNodes.length; ++i) {
     el = childNodes[i];
-    if (el.nodeType === Node.TEXT_NODE &&
-      !el.textContent.trim()) {
+    if (el.nodeType === Node.TEXT_NODE && !el.textContent.trim()) {
       node.removeChild(el);
     }
   }
@@ -660,7 +724,7 @@ function savedOsSelection(os) {
 }
 
 function renderCustomTerminalsSetup() {
-  setupFeature('a[title="multiple-terminals"]', renderMultipleTerminals)
+  setupFeature('a[title="multiple-terminals"]', renderMultipleTerminals);
   renderCustomTerminalsFrames();
 }
 
@@ -681,7 +745,7 @@ function renderMultipleTerminals(el) {
     console.warn('Expected at least 1 <li> element:', ul);
     return;
   }
-  var errorIndices = children.reduce(function(acc, li, liIdx) {
+  var errorIndices = children.reduce(function (acc, li, liIdx) {
     if (!li.querySelector('code')) {
       acc.push(liIdx);
     }
@@ -699,14 +763,19 @@ function renderMultipleTerminals(el) {
     renderMultipleTerminalsListElem(ul, li, liIdx);
   });
   document.body.addEventListener(
-    'click', renderMultipleTerminalsOnClickTabTitle, false);
+    'click',
+    renderMultipleTerminalsOnClickTabTitle,
+    false,
+  );
 }
 
 function renderMultipleTerminalsListElem(ul, li, liIdx) {
   // validation
-  if (li.childNodes.length < 2 ||
-      li.childNodes[0].nodeType !== Node.TEXT_NODE ||
-      li.childNodes[1].nodeType !== Node.ELEMENT_NODE) {
+  if (
+    li.childNodes.length < 2 ||
+    li.childNodes[0].nodeType !== Node.TEXT_NODE ||
+    li.childNodes[1].nodeType !== Node.ELEMENT_NODE
+  ) {
     console.warn(
       `Child element #${liIdx} does not contain expected elements.`,
       ul,
@@ -715,14 +784,16 @@ function renderMultipleTerminalsListElem(ul, li, liIdx) {
     return;
   }
   var tabText = li.childNodes[0].textContent.trim();
-  var oses = tabText.split(', ').map(function (s) { return s.trim(); });
+  var oses = tabText.split(', ').map(function (s) {
+    return s.trim();
+  });
   oses.forEach(function (osText, osIdx) {
     renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul);
   });
 }
 
 function renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul) {
-  var os = (osText.split(' ')[0]).toLowerCase();
+  var os = osText.split(' ')[0].toLowerCase();
   if (['linux', 'mac', 'windows'].indexOf(os) < 0) {
     console.warn(
       `Child element #${liIdx} does not reference a supported OS terminal.`,
@@ -731,7 +802,7 @@ function renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul) {
     );
     return;
   }
-  var isLastOs = (osIdx === oses.length - 1);
+  var isLastOs = osIdx === oses.length - 1;
   var tab = li;
 
   // create a tabTitle <span> to replace the text node in <li>,
@@ -766,7 +837,9 @@ function renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul) {
   }
   removeAllEmptyTextNodes(tabContent);
   removeAllEmptyTextNodes(tabContent.querySelector('.language-shell'));
-  removeAllEmptyTextNodes(tabContent.querySelector('.language-shell > .highlight'));
+  removeAllEmptyTextNodes(
+    tabContent.querySelector('.language-shell > .highlight'),
+  );
 
   // place the tabContent <div> immediately subsequent to the <ul>
   // to which this <li> belongs
@@ -776,37 +849,34 @@ function renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul) {
   tab.classList.add(`multi-terminal-tab-${os}`);
   tab.setAttribute('data-os', os);
   var prevOs = savedOsSelection();
-  var isActiveTab = (prevOs === os) ||
-    (!prevOs && liIdx === 0 && osIdx === 0);
+  var isActiveTab = prevOs === os || (!prevOs && liIdx === 0 && osIdx === 0);
   tab.classList.toggle('active', isActiveTab);
   tabTitle.classList.toggle('active', isActiveTab);
   tabContent.classList.toggle('active', isActiveTab);
   insertDomNodeRelativeTo(ul, tabContent, true);
 }
 
-function renderMultipleTerminalsOnClickTabTitle (e) {
+function renderMultipleTerminalsOnClickTabTitle(e) {
   var tabTitle = e.target;
   if (tabTitle.classList.contains('multi-terminal-tabtitle')) {
     var tab = tabTitle.parentNode;
     var os = tab.getAttribute('data-os');
-    var allTabsNodeList =
-      document.querySelectorAll('.multi-terminal-tab');
-    var allTabs =
-      Array.prototype.slice.call(allTabsNodeList);
+    var allTabsNodeList = document.querySelectorAll('.multi-terminal-tab');
+    var allTabs = Array.prototype.slice.call(allTabsNodeList);
     allTabs.forEach(function (currTab) {
       currTab.classList.toggle(
         'active',
-        (currTab.getAttribute('data-os') === os),
+        currTab.getAttribute('data-os') === os,
       );
     });
-    var allTabsContentNodeList =
-      document.querySelectorAll('.multi-terminal-tabcontent');
-    var allTabsContent =
-      Array.prototype.slice.call(allTabsContentNodeList);
+    var allTabsContentNodeList = document.querySelectorAll(
+      '.multi-terminal-tabcontent',
+    );
+    var allTabsContent = Array.prototype.slice.call(allTabsContentNodeList);
     allTabsContent.forEach(function (currTabContent) {
       currTabContent.classList.toggle(
         'active',
-        (currTabContent.getAttribute('data-os') === os),
+        currTabContent.getAttribute('data-os') === os,
       );
     });
     savedOsSelection(os);
@@ -814,8 +884,9 @@ function renderMultipleTerminalsOnClickTabTitle (e) {
 }
 
 function renderCustomTerminalsFrames() {
-  var elemNodeList =
-    document.querySelectorAll('.language-windows-command-prompt');
+  var elemNodeList = document.querySelectorAll(
+    '.language-windows-command-prompt',
+  );
   var elems = Array.prototype.slice.call(elemNodeList);
   elems.forEach(function (el) {
     el.parentNode.classList.add('windows-command-prompt');
@@ -825,8 +896,7 @@ function renderCustomTerminalsFrames() {
 // render feature: tables with borders
 
 function renderTablesWithBorders() {
-  $('table')
-    .addClass('table-with-border');
+  $('table').addClass('table-with-border');
 }
 
 // render feature: next elem class
@@ -870,22 +940,20 @@ function renderNextElemClass(el) {
   });
 }
 
-$('#newsletter-form').submit(function() {
-
-  var output = jQuery.map($(':checkbox[name=skillscb]:checked'), function (n, i) {
+$('#newsletter-form').submit(function () {
+  var output = jQuery
+    .map($(':checkbox[name=skillscb]:checked'), function (n, i) {
       return n.value;
-  }).join(',');
+    })
+    .join(',');
 
-  $("#mce-SKILLS").val(output);
+  $('#mce-SKILLS').val(output);
 
   return true;
 });
 
-
 function setupFeature(querySelector, featureRenderer) {
-  const elemNodeList = document.querySelectorAll(
-    querySelector,
-  );
+  const elemNodeList = document.querySelectorAll(querySelector);
   const elems = Array.prototype.slice.call(elemNodeList);
   elems.forEach(featureRenderer);
 }
@@ -898,45 +966,45 @@ function renderCollapsibleSetup() {
 
 function renderAccordionHeader(li, headerId, bodyId, isOpen) {
   if (!li.firstChild) {
-    console.warn('Missing li child used as accordion header')
-    return
+    console.warn('Missing li child used as accordion header');
+    return;
   }
   const headerContainer = document.createElement('div');
-  headerContainer.setAttribute("id", headerId);
-  headerContainer.classList.add("card-header");
-  const a = document.createElement("a");
-  a.classList.add("btn");
-  
-  a.setAttribute("data-toggle", "collapse");
-  a.setAttribute("data-target", `#${bodyId}`);
+  headerContainer.setAttribute('id', headerId);
+  headerContainer.classList.add('card-header');
+  const a = document.createElement('a');
+  a.classList.add('btn');
+
+  a.setAttribute('data-toggle', 'collapse');
+  a.setAttribute('data-target', `#${bodyId}`);
   if (isOpen) {
-    a.setAttribute("aria-expanded", "true");
+    a.setAttribute('aria-expanded', 'true');
   } else {
-    a.classList.add("collapsed");
+    a.classList.add('collapsed');
   }
   a.textContent = li.firstChild.textContent;
-  const hint = document.createElement("span")
-  hint.classList.add("hint");
-  a.appendChild(hint)
-  headerContainer.appendChild(a)
-  return headerContainer
+  const hint = document.createElement('span');
+  hint.classList.add('hint');
+  a.appendChild(hint);
+  headerContainer.appendChild(a);
+  return headerContainer;
 }
 
 function renderAccordionBody(li, headerId, bodyId, isOpen) {
   if (!li.children) {
-    // we don't return here, we render the empty body 
-    console.warn("Accordion body empty")
+    // we don't return here, we render the empty body
+    console.warn('Accordion body empty');
   }
   const bodyContainer = document.createElement('div');
-  bodyContainer.setAttribute("id", bodyId);
-  bodyContainer.classList.add("collapse");
+  bodyContainer.setAttribute('id', bodyId);
+  bodyContainer.classList.add('collapse');
   if (isOpen) {
-    bodyContainer.classList.add("show");
+    bodyContainer.classList.add('show');
   }
-  bodyContainer.setAttribute("aria-labelledby", headerId);
+  bodyContainer.setAttribute('aria-labelledby', headerId);
   const body = document.createElement('div');
-  body.append(...li.children)
-  body.classList.add("card-body");
+  body.append(...li.children);
+  body.classList.add('card-body');
   bodyContainer.appendChild(body);
   return bodyContainer;
 }
@@ -947,12 +1015,12 @@ function renderAccordionItem(li, liIndex, collapsibleIndex, isOpen) {
 
   const headerContainer = renderAccordionHeader(li, headerId, bodyId, isOpen);
   const bodyContainer = renderAccordionBody(li, headerId, bodyId, isOpen);
-  const card = document.createElement("div");
-  card.classList.add("card");
-  card.classList.add("accordion__rsk");
+  const card = document.createElement('div');
+  card.classList.add('card');
+  card.classList.add('accordion__rsk');
   card.appendChild(headerContainer);
   card.appendChild(bodyContainer);
-  return card
+  return card;
 }
 
 function renderCollapsible(elem, collapsibleIndex) {
@@ -968,12 +1036,14 @@ function renderCollapsible(elem, collapsibleIndex) {
     console.warn('Expected at least 1 <li> element:', ul);
     return;
   }
-  const accordionItems = children.map((li, liIndex) => renderAccordionItem(li, liIndex, collapsibleIndex, isOpen));
-  const accordion = document.createElement("div");
-  accordion.classList.add("accordion");
+  const accordionItems = children.map((li, liIndex) =>
+    renderAccordionItem(li, liIndex, collapsibleIndex, isOpen),
+  );
+  const accordion = document.createElement('div');
+  accordion.classList.add('accordion');
   accordion.append(...accordionItems);
   ul.replaceWith(accordion);
-  elem.remove()
+  elem.remove();
 }
 
 // render features: 'switch-container'
@@ -982,43 +1052,43 @@ function renderSwitchContainerSetup() {
   setupFeature('a[title="switch-container"]', renderSwitchContainer);
 }
 
-function renderSwitchLabel(textContent){
-  const label = document.createElement("div");
-  label.classList.add("switch__label");
+function renderSwitchLabel(textContent) {
+  const label = document.createElement('div');
+  label.classList.add('switch__label');
   label.textContent = textContent;
-  return label
+  return label;
 }
 
 function renderSwitch(ul) {
   const basicChildren = Array.prototype.slice.call(ul.children[0].children);
-  const advancedChildren = Array.prototype.slice.call(ul.children[1].children);;
-  const switchContainer = document.createElement("div");
-  switchContainer.classList.add("switch");
+  const advancedChildren = Array.prototype.slice.call(ul.children[1].children);
+  const switchContainer = document.createElement('div');
+  switchContainer.classList.add('switch');
 
-  const switchContent = document.createElement("div");
-  switchContent.classList.add("switch__content");
-  const basicContent = document.createElement("div");
+  const switchContent = document.createElement('div');
+  switchContent.classList.add('switch__content');
+  const basicContent = document.createElement('div');
   basicContent.append(...basicChildren);
-  const advancedContent = document.createElement("div");
-  advancedContent.classList.add("d-none")
+  const advancedContent = document.createElement('div');
+  advancedContent.classList.add('d-none');
   advancedContent.append(...advancedChildren);
   switchContent.append(...[basicContent, advancedContent]);
 
   // <label>Basic</label>
   //   <div class="knob"></div>
   //   <label>Advanced</label>
-  const switchController = document.createElement("div");
-  switchController.classList.add("switch__controller");
-  switchController.addEventListener("click", function () {
-    this.classList.toggle("switch__controller--on");
-    for (let i = 0; i < switchContent.children.length; i++){
-      switchContent.children[i].classList.toggle('d-none')
+  const switchController = document.createElement('div');
+  switchController.classList.add('switch__controller');
+  switchController.addEventListener('click', function () {
+    this.classList.toggle('switch__controller--on');
+    for (let i = 0; i < switchContent.children.length; i++) {
+      switchContent.children[i].classList.toggle('d-none');
     }
   });
-  const basicLabel = renderSwitchLabel("Basic");
-  const knob = document.createElement("div");
-  knob.classList.add("switch__knob");
-  const advancedLabel = renderSwitchLabel("Advanced");
+  const basicLabel = renderSwitchLabel('Basic');
+  const knob = document.createElement('div');
+  knob.classList.add('switch__knob');
+  const advancedLabel = renderSwitchLabel('Advanced');
   switchController.append(...[basicLabel, knob, advancedLabel]);
 
   switchContainer.append(...[switchController, switchContent]);
@@ -1037,6 +1107,29 @@ function renderSwitchContainer(elem, index) {
   }
   const switchContainer = renderSwitch(ul);
 
-  ul.replaceWith(switchContainer)
+  ul.replaceWith(switchContainer);
   // elem.remove()
 }
+
+// render features: powpeg-hsm-attestation-frame
+
+function renderPowpegHSMAttestationFrame() {
+  const frame = document.getElementById('powpeg-hsm-attestation-frame');
+
+  const showSovryn = () => {
+    frame.src = '/assets/rsk/architecture/powpeg-hsm-attestation/sovryn.html';
+  };
+  const showpNetwork = () => {
+    frame.src = '/assets/rsk/architecture/powpeg-hsm-attestation/pnetwork.html';
+  };
+
+  // showing Sovryn frame at first
+  showSovryn();
+
+  // adding event listeners to buttons
+  document.getElementById('sov-button').addEventListener('click', showSovryn);
+  document
+    .getElementById('pnet-button')
+    .addEventListener('click', showpNetwork);
+}
+

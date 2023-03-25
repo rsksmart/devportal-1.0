@@ -1,20 +1,20 @@
 ---
 layout: rsk
 title: "Setup - RNS User guide"
-description: "Compatible wallets, connect Nifty wallet to RSK, connect Metamask wallet to RSK, get RBTC, get RIF Tokens, display amount of tokens in the Nifty wallet, display amount of tokens in the Metamask wallet"
+description: "Compatible wallets, connect Nifty wallet to Rootstock (RSK), connect Metamask wallet to Rootstock (RSK), get RBTC, get RIF Tokens, display amount of tokens in the Nifty wallet, display amount of tokens in the Metamask wallet"
 tags: rns, guide, rns-user-guide
 render_features: 'next-elem-class'
 ---
 
 To use the application and the service we are going to need three things:
 
-1. An internet browser extension wallet. Read [Compatible wallets](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rsk) to RSK
+1. An internet browser extension wallet. Read [Compatible wallets](#compatible-wallets) how to get a compatible wallet, or read the guides to connect [Nifty wallet](#connect-nifty-wallet-to-rootstock-rsk) and [Metamask wallet](#connect-metamask-wallet-to-rootstock-rsk) to Rootstock (RSK)
 2. RBTC to pay for the transaction cost. See [Getting RBTC](#getting-rbtc)
 3. RIF tokens to buy or extend the expiration of a domain. See [Getting RIF Tokens](#getting-rif-tokens). Also, read [here](#display-amount-of-tokens-in-the-nifty-wallet) on how to view your tokens in your wallet.
 
 ### Compatible wallets
 
-The RNS Manager can be used seamlessly with the following wallets. To setup your wallet, follow the instructions in [connect to RSK network](#connect-nifty-wallet-to-rsk).
+The RNS Manager can be used seamlessly with the following wallets. To setup your wallet, follow the instructions in [connect to Rootstock (RSK) network](#connect-nifty-wallet-to-rootstock-rsk).
 
 
 
@@ -43,7 +43,7 @@ The RNS Manager can be used seamlessly with the following wallets. To setup your
 </div>
 
 
-#### Connect Nifty wallet to RSK
+#### Connect Nifty wallet to Rootstock (RSK)
 
 1. Open your wallet.
 2. Open network selector
@@ -54,15 +54,15 @@ The RNS Manager can be used seamlessly with the following wallets. To setup your
 
     ![Setup - Nifty wallet network selector RSK](/rif/rns/guide/images/setup-nifty-wallet-network-selector-rsk.png)
 
-> To use the RSK testnet network choose the 'RSK Testnet' option instead of RSK.
+> To use the Rootstock (RSK) testnet network, choose the 'RSK Testnet' option instead of RSK.
 
-#### Connect Metamask wallet to RSK
+#### Connect Metamask wallet to Rootstock (RSK)
 
 Find the guide on [Metamask](https://developers.rsk.co/develop/apps/wallets/metamask/).
 
 ### Getting RBTC
 
-Since RNS works on top of RSK blockchain, to pay for transactional fees you will need RBTC tokens. This is going to be used in the registration and for updating any configuration on the domain.
+Since RNS works on top of Rootstock (RSK) blockchain, to pay for transactional fees you will need RBTC tokens. This is going to be used in the registration and for updating any configuration on the domain.
 
 Read the [RBTC Token](https://developers.rsk.co/rsk/rbtc/) to find exchanges and more RBTC token information.
 
@@ -91,7 +91,7 @@ Read [RIF Token](https://developers.rsk.co/rif/token/) to find exchagnes and mor
 
 To see how many tokens you have in your wallet you should list the RIF Token.
 
-1. Open your wallet ([ensure you are connected to RSK](#connect-nifty-wallet-to-rsk))
+1. Open your wallet ([ensure you are connected to Rootstock (RSK)](#connect-nifty-wallet-to-rootstock-rsk))
 2. Go to 'Tokens view'
 
     ![Setup - Nifty wallet Tokens View](/rif/rns/guide/images/setup-nifty-wallet-tokens-view.png)
@@ -116,6 +116,6 @@ Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/cus
 
 ----
 
-[Contact us on the RSK community Slack](/slack/) |
+[Contact us on the Rootstock (RSK) community Slack](/slack/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)
