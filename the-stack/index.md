@@ -2,7 +2,6 @@
 title: The Stack
 collection_order: 1
 menu_title: The Stack
-section_title: The Stack
 menu_order: 1
 ---
 
