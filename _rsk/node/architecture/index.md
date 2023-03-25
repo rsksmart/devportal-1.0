@@ -2,7 +2,6 @@
 title: Architecture
 tags: rsk, rskj, node, architecture
 description: "Architecture of RSK nodes: JSON-RPC, Web3, and storage."
-title: Architecture
 collection_order: 3
 menu_title: Architecture
 section_title: Architecture

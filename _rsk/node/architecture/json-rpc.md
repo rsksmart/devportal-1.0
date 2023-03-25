@@ -2,7 +2,6 @@
 title: JSON-RPC
 tags: rsk, rskj, node, rpc
 description: "The JSON-RPC methods supported by RSK nodes."
-title: JSON-RPC
 collection_order: 3
 menu_title: JSON-RPC
 menu_order: 2

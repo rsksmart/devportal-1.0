@@ -2,7 +2,6 @@
 title: Node (RSKj)
 tags: rsk, rskj, node
 description: "Learn more about RSKj, a node implementation for the RSK blockchain"
-title: Node (RSKj)
 collection_order: 2
 menu_title: Node (RSKj)
 section_title: Node (RSKj)
