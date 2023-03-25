@@ -2,7 +2,6 @@
 tags: rsk
 description: "What is Rootstock?"
 title: Rootstock Blockchain
-collection_order: 1
 menu_title: Rootstock Blockchain
 section_title: Rootstock Blockchain
 menu_order: 2
