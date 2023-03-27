@@ -1,6 +1,7 @@
 ---
 layout: redirect
-permalink: /rif/rlogin/
 redirect: /rif/rlogin/get-started/
-collection_order: 0
+menu_order: 5
+menu_title: rLogin
+section_title: rLogin
 ---
