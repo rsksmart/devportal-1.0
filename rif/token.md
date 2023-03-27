@@ -41,6 +41,7 @@ The RIF Token allows any token holder to consume the services that are compatibl
       <td>
         <img src="/assets/img/rif/rif-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
         <a href="/assets/img/rif/rif-logo.png" target="_blank">rif-logo.png</a>
+        ![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
       </td>
     </tr>
   </tbody>
