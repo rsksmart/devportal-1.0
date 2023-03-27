@@ -1,8 +1,8 @@
 ---
-layout: rsk
 title: RIF Relay Architecture
 tags: rif, relay, rsk, envelope, architecture
-permalink: /rif/relay/architecture/
+menu_order: 2
+menu_title: Architecture
 ---
 
 ## Table of Contents
