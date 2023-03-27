@@ -7,7 +7,19 @@ description: Learn how to integrate RNS with your dApp.
 
 Surely you want to reserve the name of your dapp now! Search it here
 
-{% include rns-register.html %}
+<form class="form" id="frm-rns-search">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
+      <div class="input-group-append">
+        <span class="input-group-text">.rsk</span>
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-rns-register">Register!</button>
+      </div>
+    </div>
+  </div>
+</form>
 
 
 **Content**

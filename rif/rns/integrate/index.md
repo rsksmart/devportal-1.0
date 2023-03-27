@@ -29,7 +29,19 @@ We are pretty sure that the provided example is not enough for all your needs, s
 
 ## Quick start
 
-{% include rns-register.html %}
+<form class="form" id="frm-rns-search">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
+      <div class="input-group-append">
+        <span class="input-group-text">.rsk</span>
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-rns-register">Register!</button>
+      </div>
+    </div>
+  </div>
+</form>
 
 <div class="container the-stack">
   <div class="row has-unique-col rif_blue_text">

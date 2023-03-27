@@ -6,7 +6,19 @@ tags: rif, rns, rif-name-service, node, sdk, libraries, infrastructure, protocol
 
 RNS provides an architecture which enables the identification of blockchain addresses by human-readable names.
 
-{% include rns-register.html %}
+<form class="form" id="frm-rns-search">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
+      <div class="input-group-append">
+        <span class="input-group-text">.rsk</span>
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-rns-register">Register!</button>
+      </div>
+    </div>
+  </div>
+</form>
 
 <div class="container the-stack">
   <div class="row rif_blue_text">
