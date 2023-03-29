@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Chainbeat
 title: 'Chainbeat - Solutions on RSK'
 description: 'Chainbeat provides blockchain data insights'
 tags: defiant, rsk-solutions, rsk

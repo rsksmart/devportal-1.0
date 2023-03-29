@@ -1,7 +1,10 @@
 ---
+layout: rsk
 title: Using RSK Public Nodes (Mainnet & Testnet) provided by IOVLabs
+menu_title: Use
 tags: rsk, networks, versions, rpc, mainnet, testnet, cUrl
 description: "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
+menu_order: 200
 ---
 
 ## Public Nodes

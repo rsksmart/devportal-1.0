@@ -1,11 +1,10 @@
 ---
+layout: rsk
+section_title: Architecture
 title: Turing complete
+menu_order: 400
 tags: rsk, rvm, evm, virtual machine
 description: "The RSK virtual machine is compatible with Ethereum Virtual machine at an opcode level."
-collection_order: 3
-menu_title: Turing complete
-menu_order: 4
-section_title: Architecture
 ---
 
 RSK virtual machine (RVM) is the core of the Smart Contract platform. Smart Contracts are executed by all network full nodes. The result of the execution of a Smart Contract can be the processing of inter-contract messages, creating monetary transactions and changing the state of contract-persistent memory. The RVM is compatible with EVM at the op-code level, allowing Ethereum contracts to run flawlessly on RSK.

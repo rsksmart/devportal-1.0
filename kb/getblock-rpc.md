@@ -1,4 +1,6 @@
 ---
+menu_order: 1700
+menu_title: RPC via GetBlock
 title: 'RPC via GetBlock'
 description: 'Learn how to use the API methods within GetBlock to connect to an RSK node'
 tags: GetBlock, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, tutorial, docs, api, websocket, json-rpc

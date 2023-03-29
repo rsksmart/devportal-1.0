@@ -1,11 +1,10 @@
 ---
+layout: rsk
 title: Powpeg
+menu_order: 300
 tags: rsk, rbtc, btc, peg, powpeg, 2 way peg
 description: "Transfer BTC to RBTC, and RBTC to BTC through the Powpeg."
 render_features: 'powpeg-hsm-attestation-frame'
-collection_order: 3
-menu_title: Powpeg
-menu_order: 3
 ---
 
 ## Building the Most Secure, Permissionless and Uncensorable Bitcoin Peg

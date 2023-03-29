@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Features
 layout: rsk
 title: rLogin - features
 tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis

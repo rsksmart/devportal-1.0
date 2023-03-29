@@ -1,4 +1,7 @@
 ---
+menu_order: 700
+section_title: RNS Wallets Value Proposition
+menu_title: Full Guide
 layout: rsk
 title: "Full Integration Guide and Value proposition of RNS for Wallets"
 description: "Phase 1: Problems to solve, UX proposal, Send BTC example, Feature summary, RNS Integration guidelines. Phase 2:  Problems to solve, Feature summary"

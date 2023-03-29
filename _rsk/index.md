@@ -1,10 +1,10 @@
 ---
+layout: rsk
+title: RSK Blockchain
 tags: rsk
-description: "What is Rootstock?"
-title: Rootstock Blockchain
-menu_title: Rootstock Blockchain
-section_title: Rootstock Blockchain
-menu_order: 2
+description: "What is RSK?"
+menu_order: 1000
+permalink: /rsk/
 ---
 
 RSK is the Smart Contract platform of Bitcoin. Its engine is a forked version of the EVM (Ethereum Virtual Machine), and the RVM (RSK Virtual Machine) is compatible with Ethereum [Smart Contracts](/develop) and the [tools](/tools) used to [deploy and interact](/tutorials/) with them.

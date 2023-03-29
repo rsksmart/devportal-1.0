@@ -1,9 +1,10 @@
 ---
 layout: rsk
+menu_title: CLI
 title: Command Line Interface
 tags: rsk, rskj, node, cli
 description: "Command Line Interface for RSK"
-collection_order: 2405
+menu_order: 100
 permalink: /rsk/node/configure/cli/
 render_features: 'custom-terminals'
 ---

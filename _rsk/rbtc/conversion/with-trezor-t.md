@@ -1,9 +1,10 @@
 ---
 layout: rsk
+menu_title: With Trezor T
 title: Accessing and using funds that are not in accounts derived with RSK dpath in Trezor T
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, trezor, dpath
 description: 'How to configure a Trezor T hardware wallet to derive with a custom dpath'
-collection_order: 3160
+menu_order: 400
 ---
 
 How to solve the problem of moving your funds when they are in an account that needs to

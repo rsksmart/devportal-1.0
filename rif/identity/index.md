@@ -1,9 +1,9 @@
 ---
-tags: rlogin, rif, rif-identity, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
-menu_order: 3
-title: RIF Identity
+menu_order: 200
 section_title: Identity
 menu_title: Intro
+layout: rsk
+tags: rlogin, rif, rif-identity, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 # RIF Identity

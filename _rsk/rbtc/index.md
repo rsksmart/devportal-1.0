@@ -1,10 +1,10 @@
 ---
 layout: rsk
+section_title: RBTC Cryptocurrency
 title: RBTC Token
 tags: mainnet, token, transactions, rbtc, gas, smart-contracts, rsk, conversion, price, gas-price, gas-cost, smart bitcoin, bitcoin
-menu_order: 3
-menu_title: RBTC Cryptocurrency
-section_title: RBTC Cryptocurrency
+menu_order: 200
+permalink: /rsk/rbtc/
 ---
 
 The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.

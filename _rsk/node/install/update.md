@@ -1,7 +1,8 @@
 ---
 layout: rsk
 title: RSK Node Updates
-collection_order: 2305
+menu_title: Update
+menu_order: 100
 tags: rsk, rskj, node, update, version
 description: "How to update RSKj, the RSK node, to a newer version, and verify that it works correctly. Also sign up for updates to get notified when there is a new version released."
 ---

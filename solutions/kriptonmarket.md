@@ -1,4 +1,6 @@
 ---
+menu_order: 1300
+menu_title: Kripton Market
 title: "Kripton Market - ON/Off Ramp Solutions on RSK"
 description: "Kripton seeks to develop a new economy: dynamic, decentralized, safe and profitable."
 tags: kripton-market, defi, exchange, crypto, buy, rsk-solutions, rsk, on-ramp, off-ramp

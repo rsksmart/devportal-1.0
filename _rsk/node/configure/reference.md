@@ -1,9 +1,10 @@
 ---
 layout: rsk
+menu_title: Reference
 title: Configuration reference
 tags: rsk, rskj, node, config
 description: "Configuration reference for RSKj"
-collection_order: 2410
+menu_order: 200
 render_features: 'tables-with-borders'
 ---
 

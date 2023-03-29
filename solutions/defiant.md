@@ -1,4 +1,6 @@
 ---
+menu_order: 100
+menu_title: Defiant
 title: "Defiant - Solutions on RSK"
 description: "Defiant is the first mobile platform and P2P marketplace for stablecoins"
 tags: defiant, rsk-solutions, rsk

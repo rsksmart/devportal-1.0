@@ -3,7 +3,6 @@ layout: rsk
 title: RIF Token
 tags: rif, token, erc677
 description: "Information about the RIF token, where to obtain it, how to transfer it, and technical details on its token standard"
-menu_order: 2
 ---
 
 The RIF Token allows any token holder to consume the services that are compatible with the [RIF architecture](/rif/).

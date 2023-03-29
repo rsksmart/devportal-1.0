@@ -1,4 +1,6 @@
 ---
+menu_order: 2900
+menu_title: Create your first token
 layout: rsk
 title: Create your first token
 tags: tutorial, rsk, token, openzeppelin, erc20, truffle 

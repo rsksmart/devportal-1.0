@@ -1,4 +1,7 @@
 ---
+menu_order: 500
+section_title: RNS
+menu_title: About
 layout: rsk
 title: RIF Name Service
 tags: rif, rns, rif-name-service, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
@@ -6,19 +9,7 @@ tags: rif, rns, rif-name-service, node, sdk, libraries, infrastructure, protocol
 
 RNS provides an architecture which enables the identification of blockchain addresses by human-readable names.
 
-<form class="form" id="frm-rns-search">
-  <div class="form-group">
-    <div class="input-group">
-      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
-      <div class="input-group-append">
-        <span class="input-group-text">.rsk</span>
-      </div>
-      <div class="input-group-append">
-        <button class="btn btn-rns-register">Register!</button>
-      </div>
-    </div>
-  </div>
-</form>
+{% include rns-register.html %}
 
 <div class="container the-stack">
   <div class="row rif_blue_text">

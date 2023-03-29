@@ -2,5 +2,5 @@
 layout: redirect
 permalink: /rsk/node/contribute/network-upgrade/
 redirect: /rsk/node/network-upgrade/
-collection_order: 0
+menu_order: 0
 ---

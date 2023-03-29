@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Hardware requirements
-collection_order: 2310
+menu_order: 200
 description: "Minimum hardware requirements for RSK"
 tags: hardware, specs, requirements
 ---

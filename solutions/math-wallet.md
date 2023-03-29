@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: Math Wallet
 title: 'Math Wallet - Solutions on RSK'
 description: 'CryptoWallet for 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi.'
 tags: Math Wallet, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet
@@ -36,8 +38,8 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 
 ### Fungible tokens
 
-| Symbol | Name | Token Standard | Network |
-| --- | --- | --- | --- |
+| Symbol | Name | Token Standard | Network
+| --- | --- | --- | --- | --- |
 | [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK
 | [RDOC](https://explorer.rsk.co/address/0x2d919f19D4892381d58EdEbEcA66D5642ceF1A1F) | [RIF Dollar On Chain](https://rif.moneyonchain.com) | ERC20 | RSK
 | [RIFP](https://explorer.rsk.co/address/0xF4d27C56595eD59B66cC7f03CFF5193E4Bd74a61) | [RIFPro](https://rif.moneyonchain.com) | ERC20 | RSK

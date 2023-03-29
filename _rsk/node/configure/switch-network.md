@@ -3,7 +3,7 @@ layout: rsk
 title: Switch network
 tags: rsk, rskj, node, config, network, mainnet, testnet, regtest
 description: "How to switch your RSK node between the Mainnet, Testnet, and RegTest networks"
-collection_order: 2430
+menu_order: 400
 ---
 
 If you want to switch your node to Mainnet, Testnet, or RegTest networks:

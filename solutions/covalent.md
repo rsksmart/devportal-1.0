@@ -1,4 +1,6 @@
 ---
+menu_order: 1500
+menu_title: Covalent
 title: 'Covalent - Solutions on RSK'
 description: 'Covalent provides a unified API bringing visibility to billions of blockchain data points.'
 tags: covalent, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts, API, data-points, indexing, query

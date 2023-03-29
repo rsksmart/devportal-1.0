@@ -1,10 +1,10 @@
 ---
 layout: rsk
+menu_order: 300
+section_title: RIF
+menu_title: About RSK Infrastructure Framework
 title: RSK Infrastructure Framework
 tags: rif, rif-storage, rif-lumino, rns, rif-identity, DID, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
-menu_order: 3
-section_title: RIF
-menu_title: RSK Infrastructure Framework
 ---
 
 ## RIF Services

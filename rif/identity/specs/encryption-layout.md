@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Encryption layout
 layout: rsk
 tags: rif, rif-identity, libraries, encryption, infrastructure, DID, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---

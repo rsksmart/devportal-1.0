@@ -1,4 +1,6 @@
 ---
+menu_order: 900
+menu_title: RSK Token Bridge Troubleshooting
 title: 'RSK Token Bridge Troubleshooting Guide'
 description: 'Having issues crossing your tokens on the token bridge? See the troubleshooting guide for help.'
 tags: knowledge-base, tokenbridge, blockchain, developers, tokens

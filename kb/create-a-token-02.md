@@ -1,4 +1,6 @@
 ---
+menu_order: 3000
+menu_title: Create other ERC20 token
 layout: rsk
 title: Create a token - other approach
 tags: tutorial, rsk, token, openzeppelin, erc20, truffle 

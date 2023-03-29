@@ -1,5 +1,7 @@
 ---
 layout: rsk
+menu_title: FAQ
+menu_order: 200
 title: Frequently Asked Questions
 tags: knowledgebase, rsk, faqs, help, support
 description: "Welcome to RSK and RIF Knowledge-base; Explore the RSK faqs section"

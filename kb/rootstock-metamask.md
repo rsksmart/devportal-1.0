@@ -1,4 +1,6 @@
 ---
+menu_order: 3800
+menu_title: Add Rootstock to Metamask Programmatically
 layout: 'rsk'
 title: 'How to add Rootstock to Metamask Programmatically'
 description: 'Learn how to add and initiate a network switch on Metamask from a website'

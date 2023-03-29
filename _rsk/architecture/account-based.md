@@ -1,10 +1,10 @@
 ---
+layout: rsk
+menu_title: Account Based
 title: Account Based RSK Addresses
+menu_order: 200
 tags: rsk, checksum, chainId, address, derivation, eip1191, eip155, bip44, slip44
 description: "EIP-1191 chainId is used in RSK addresses as a checksum. m/44'/137'/0'/0 is the derivation path used for BIP-44 compatible wallets."
-collection_order: 3
-menu_title: Account Based
-menu_order: 2
 ---
 
 RSK Addresses incorporate an optional blockchain identifier (also known as `chainId`). If the `chainId` is not present, it is assumed the address refers to the RSK main network.

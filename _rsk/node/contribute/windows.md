@@ -3,7 +3,7 @@ layout: rsk
 title: Windows
 tags: rsk, rskj, node, contribute, windows
 description: "How to compile and run an RSKj node on Windows. Installing pre-requisites. Get source code. Ensure security chain. Get external dependencies. Compile and run. Configuring your IDE."
-collection_order: 2540
+menu_order: 400
 ---
 
 Here you have the steps to compile and run an RSK node on Windows.

@@ -1,4 +1,6 @@
 ---
+menu_order: 2700
+menu_title: Deploy Smart Contracts
 layout: rsk
 title: Deploy Smart Contracts
 description: "Learn how to develop and deploy smart contracts in RSK"

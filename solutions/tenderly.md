@@ -1,4 +1,6 @@
 ---
+menu_order: 1200
+menu_title: Tenderly
 title: 'Tenderly - Solutions on RSK'
 description: 'Real-time monitoring, alerting and troubleshooting for Smart Contracts.'
 tags: tenderly, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts

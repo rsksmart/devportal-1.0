@@ -1,4 +1,6 @@
 ---
+menu_order: 2800
+menu_title: Interface Registry
 layout: rsk
 title: Universal Smart Contract Interface Registry
 description: "See the ERC1820 standard interface, address support and smart contract implementation"

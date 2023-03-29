@@ -1,4 +1,6 @@
 ---
+menu_order: 1700
+menu_title: BabelFish
 title: 'BabelFish - Solutions on RSK'
 description: 'BabelFish mind-boggling objective is to aggregate stablecoins, enhance multi-chain flow and accelerate hyperBitcoinization.'
 tags: babelfish, rsk-solutions, rsk, token, defi, dApps, blockchain, smart-contracts, stablecoins, bitcoin

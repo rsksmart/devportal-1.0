@@ -1,4 +1,6 @@
 ---
+menu_order: 2100
+menu_title: Bulla Network
 title: 'Bulla Network - Solutions on RSK'
 description: 'An on-chain credit protocol that helps unlock crypto commerce, allowing users to create and pay invoices in an entirely decentralized way.'
 tags: Bulla Network, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, bullabanker

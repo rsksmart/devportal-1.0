@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Config Truffle for RSK
 title: 'How to configure Truffle to connect to RSK'
 description: 'using the new provider.pollingInterval and deploymentPollingInterval options in truffle-config.js'
 tags: knowledge-base, truffle, rsk, javascript

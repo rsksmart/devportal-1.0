@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: GetBlock
 title: 'GetBlock - Solutions on RSK'
 description: 'Fast & Easy Connection to Major Blockchain Nodes.'
 tags: GetBlock, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node

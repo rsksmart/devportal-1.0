@@ -6,19 +6,7 @@ tags: rif, rns, javascript, rif-name-service, integrate, resolver, node, sdk, li
 
 The first thing you need to do is to register the name of your wallet now! Search for it here:
 
-<form class="form" id="frm-rns-search">
-  <div class="form-group">
-    <div class="input-group">
-      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
-      <div class="input-group-append">
-        <span class="input-group-text">.rsk</span>
-      </div>
-      <div class="input-group-append">
-        <button class="btn btn-rns-register">Register!</button>
-      </div>
-    </div>
-  </div>
-</form>
+{% include rns-register.html %}
 
 **Content**
 

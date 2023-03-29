@@ -3,7 +3,7 @@ layout: rsk
 title: CLI
 tags: rsk, rskj, node, contribute, cli
 description: "How to compile and run an RSKj node from the command line interface."
-collection_order: 2510
+menu_order: 200
 ---
 
 After fulfilling the steps *Pre-requisites*, *Get the source code*, *Ensure the security chain* and *Get external dependencies* according to your operating system ([Windows](/rsk/node/contribute/windows), [Linux](/rsk/node/contribute/linux), [Mac](/rsk/node/contribute/macos)), you can compile and run an RSK node from command line following these steps.

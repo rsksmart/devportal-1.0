@@ -1,9 +1,10 @@
 ---
 layout: rsk
+menu_title: Verbosity
 title: Configure Verbosity
 tags: rsk, rskj, node, config, logs
 description: "Configure RSKj for desired log verbosity, finding log files, and using logback."
-collection_order: 2420
+menu_order: 300
 ---
 
 You can configure the desired log verbosity for your RSK node installation according to your needs.

@@ -1,4 +1,6 @@
 ---
+menu_order: 1000
+menu_title: Verify address ownership
 title: 'Verify Address Ownership'
 description: 'Confirm that you own an RSK address using RIF Identity Manager'
 tags: metamask, address, account, rif-identity

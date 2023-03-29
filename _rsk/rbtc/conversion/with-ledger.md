@@ -1,9 +1,10 @@
 ---
 layout: rsk
+menu_title: With Ledger
 title: Conversion using a Ledger hardware wallet
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, ledger
 description: 'How to perform the Powpeg mechanism using Ledger'
-collection_order: 3140
+menu_order: 200
 ---
 
 In this section we will go over the steps of converting BTC to RBTC using Ledger hardware wallet, and vice versa on the Bitcoin and RSK networks.

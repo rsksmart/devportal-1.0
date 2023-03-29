@@ -1,4 +1,6 @@
 ---
+menu_order: 2600
+menu_title: Compile Smart Contracts to Go
 layout: rsk
 title: Compile Smart Contracts to Go
 description: "Learn how to interact with a Smart Contract in a Go application"

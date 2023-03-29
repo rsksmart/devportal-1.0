@@ -1,4 +1,7 @@
 ---
+menu_order: 200
+section_title: User Guide
+menu_title: About
 layout: rsk
 title: "RNS User guide"
 description: "A user guide for the RIF Name Service"

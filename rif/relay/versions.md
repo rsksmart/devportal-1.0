@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Versions
 layout: rsk
 title: RIF Relay Versions
 tags: rif, envelope, relay, gas station network, gsn, versions, changelog
