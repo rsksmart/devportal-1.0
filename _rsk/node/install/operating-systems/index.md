@@ -1,6 +1,6 @@
 ---
 section_title: Operating Systems
-menu_order: 300
+menu_order: 4
 menu_title: Setup node on Docker
 layout: rsk
 title: How to setup an RSK node on Docker

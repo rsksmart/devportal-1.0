@@ -3,7 +3,7 @@ layout: rsk
 title: Contribute
 tags: rsk, rskj, node, contribute
 description: "Getting set up with RSKj and contributing towards its development."
-menu_order: 500
+menu_order: 6
 permalink: /rsk/node/contribute/
 ---
 

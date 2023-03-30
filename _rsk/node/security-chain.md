@@ -4,7 +4,7 @@ menu_title: Ensure security chain
 title: Ensure security chain of RskJ source code
 tags: rsk, rskj, node, security, verification
 description: "All the different ways that you can verify RSKj: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
-menu_order: 700
+menu_order: 8
 permalink: /rsk/node/security-chain/
 render_features: 'custom-terminals'
 ---

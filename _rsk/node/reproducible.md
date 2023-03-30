@@ -3,7 +3,7 @@ layout: rsk
 title: Reproducible Build
 tags: rsk, node, compile, reproducible, checksum
 description: "A deterministic build process used to build RSK node JAR file. Provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. Makes sure that the same tested dependencies are used and statically built into the executable."
-menu_order: 600
+menu_order: 7
 permalink: /rsk/node/reproducible/
 render_features: 'custom-terminals'
 ---

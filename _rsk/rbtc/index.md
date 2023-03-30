@@ -3,7 +3,7 @@ layout: rsk
 section_title: RBTC Cryptocurrency
 title: RBTC Token
 tags: mainnet, token, transactions, rbtc, gas, smart-contracts, rsk, conversion, price, gas-price, gas-cost, smart bitcoin, bitcoin
-menu_order: 200
+menu_order: 3
 permalink: /rsk/rbtc/
 ---
 

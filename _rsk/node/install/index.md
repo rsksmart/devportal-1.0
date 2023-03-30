@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Install
-menu_order: 300
+menu_order: 4
 permalink: /rsk/node/install/
 ---
 

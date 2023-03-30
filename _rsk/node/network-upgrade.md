@@ -3,7 +3,7 @@ layout: rsk
 title: Network Upgrades
 tags: rsk, rskj, node, contribute, upgrade, protocol, consensus, rskip.
 description: "How to introduce consensus rules changes using network upgrades on an RSK node. What to consider. Adding a new rule. Running tests with new rules."
-menu_order: 800
+menu_order: 9
 ---
 
 ## What's a network upgrade ?

@@ -3,7 +3,7 @@ layout: rsk
 title: Node (RSKj)
 tags: rsk, rskj, node
 description: "Learn more about RSKj, a node implementation for the RSK blockchain"
-menu_order: 100
+menu_order: 2
 permalink: /rsk/node/
 ---
 

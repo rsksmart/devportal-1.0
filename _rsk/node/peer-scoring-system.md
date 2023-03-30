@@ -3,7 +3,7 @@ layout: rsk
 title: Peer Scoring System
 tags: rsk, rskj, node, config, peer, scoring, 
 description: " The peer scoring system protects the RSKj node's resources from abusive or malicious peers"
-menu_order: 1000
+menu_order: 11
 ---
 
 > **Important Notice: RSKj HOP v4.2.0, RocksDB is no longer experimental. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.

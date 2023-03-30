@@ -1,6 +1,6 @@
 ---
 section_title: Cloud fast deploy
-menu_order: 400
+menu_order: 5
 menu_title: Setup node on Azure
 layout: rsk
 title: Setup node on Azure

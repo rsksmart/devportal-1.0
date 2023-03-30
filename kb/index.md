@@ -1,10 +1,11 @@
 ---
 layout: rsk
-section_title: Knowladge Base
+section_title: Knowledge Base
 menu_title: About
 title: Welcome to RSK and RIF Knowledgebase
 tags: knowledgebase, rsk, faqs, help, support
 description: "Welcome to RSK and RIF Knowledge-base; Explore RSK faqs, tutorials and guides to help you get started on building on RSK and RIF Technologies"
+menu_order: 4
 ---
 
 <div class="row features-list">

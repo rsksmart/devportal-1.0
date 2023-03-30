@@ -2,7 +2,7 @@
 layout: rsk
 title: Setup node on Java
 tags: java, install, rsk, rskj, node, how-to, network, requirements, mainnet, jar
-menu_order: 400
+menu_order: 4
 render_features: 'custom-terminals'
 ---
 

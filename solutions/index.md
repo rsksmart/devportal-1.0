@@ -6,6 +6,7 @@ title: Solutions on RSK
 description: 'Check out the many ways IOV Labs partners leverage the RSK and RIF
 platforms and APIs to create innovative experiences.'
 tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
+menu_order: 7
 ---
 
 Check out the many ways IOV Labs partners leverage the RSK and RIF

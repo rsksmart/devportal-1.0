@@ -2,7 +2,7 @@
 layout: rsk
 title: Setup node on Ubuntu
 tags: ubuntu, install, rsk, rskj, node, how-to, network, requirements, mainnet
-menu_order: 200
+menu_order: 2
 ---
 
 Make sure your system meets the [minimum requirements](../requirements/) before installing RSK nodes on it.
