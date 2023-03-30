@@ -4,6 +4,7 @@ title: Courses on Rootstock
 tags: rsk, faqs, help, support, course, rootstock, ambassador-program
 description: "Welcome to Rootstock Courses;  Explore learning materials and courses to enable you get started on building on Rootstock and RIF Technologies."
 menu_order: 6
+menu_title: Courses
 ---
 
 <div class="row features-list">
