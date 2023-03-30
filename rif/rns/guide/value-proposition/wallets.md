@@ -1,5 +1,4 @@
 ---
-menu_order: 700
 section_title: RNS Wallets Value Proposition
 menu_title: Full Guide
 layout: rsk
