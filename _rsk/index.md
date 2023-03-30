@@ -1,8 +1,8 @@
 ---
 layout: rsk
-title: RSK Blockchain
+title: Rootstock Blockchain
 tags: rsk
-description: "What is RSK?"
+description: What is Rootstock?
 menu_order: 1000
 permalink: /rsk/
 ---
