@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Cryptocurrency vs Token
 title: 'The Difference between a Cryptocurrency and a Token'
 description: 'Understand the various types of digital assets, smart contracts, and the differences between a cryptocurrency and a token.'
 tags: knowledge-base, tokens, rsk, smart contracts, cryptocurrency

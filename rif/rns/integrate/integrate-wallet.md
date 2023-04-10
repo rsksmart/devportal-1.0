@@ -1,4 +1,6 @@
 ---
+menu_order: 400 
+menu_title: Integrate your wallet
 layout: rsk
 title: Integrate your wallet with RNS
 tags: rif, rns, javascript, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

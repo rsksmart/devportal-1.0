@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Front End
 layout: rsk
 title: The Complete Full Stack dApp Guide on RSK - Part 3:Front End
 description: 'Build a complete full stack decentralized application on RSK, from front-end to smart contracts'

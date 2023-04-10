@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: iOS
 layout: rsk
 title: iOS Library
 tags: rif, rns, rif-name-service, javascript,  domains, address, integrate, resolver, node, ios, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

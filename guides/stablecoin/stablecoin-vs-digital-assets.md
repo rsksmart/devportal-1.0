@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Stablecoin vs Digital Assets
 title: "The difference between stablecoins and other digital assets - The Complete Guide to Stablecoins"
 description: "Learn about the difference between stablecoins, and digital assets like bitcoins, altcoins, cbdcs, and fungible tokens"
 tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain

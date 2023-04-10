@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 section_title: Architecture
 menu_title: About
 layout: rsk

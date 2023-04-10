@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Stablecoin on Bitcoin
 title: "Stablecoins on Bitcoin - The Complete Guide to Stablecoins"
 description: "Learn about what a crypto-collateralized stablecoin is and the different types of stablecoin that exists on Bitcoins"
 tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain

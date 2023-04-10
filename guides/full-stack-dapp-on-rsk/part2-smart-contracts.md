@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Smart Contracts
 layout: rsk
 title: The Complete Full Stack dApp Guide on RSK - Part 2:Smart Contracts
 description: 'Build a complete full stack decentralized application on RSK, from front-end to smart contracts'

@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: About
 layout: rsk
 title: 'Armadillo - About'
 description: 'The guardian of RSK'

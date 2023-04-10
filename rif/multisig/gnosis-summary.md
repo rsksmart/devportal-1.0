@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Gnosis Summary
 layout: rsk
 title: The RIF Multisig - Gnosis Summary
 description: Overview of the gnosis integration

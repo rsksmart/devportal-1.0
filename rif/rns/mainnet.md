@@ -1,4 +1,6 @@
 ---
+menu_order: 900
+menu_title: Mainnet
 layout: rsk
 title: RNS Mainnet
 tags: rif, rns, rif-name-service, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

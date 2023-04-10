@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Dapps
 layout: rsk
 title: RIF Aggregation - Dapps
 description: RIF Aggregation dapps ported on Rootstock (RSK)

@@ -1,6 +1,6 @@
 ---
 layout: rsk
-section_title: mining
+section_title: Mining
 menu_title: For mining
 title: Configure RSKj node for mining
 tags: rsk, rskj, node, config, mining

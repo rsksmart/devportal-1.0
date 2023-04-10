@@ -1,4 +1,7 @@
 ---
+menu_order: 900
+section_title: Scheduler
+menu_title: Getting Started
 layout: rsk
 title: RIF Scheduler - A service for scheduling transactions
 tags: rif, rif-scheduler, sdk, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

@@ -1,5 +1,5 @@
 ---
-menu-title: Flyover Protocol
+menu_title: Flyover Protocol
 title: Flyover Protocol Documentation | Overview
 description: "Welcome to the flyover documentation, learn about the flyover architecture, how to get started and integrate the flyover protocol into your project."
 tags: flyover, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate

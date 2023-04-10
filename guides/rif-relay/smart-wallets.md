@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: Smart Wallets
 layout: rsk
 title: RIF Relay Smart Wallets
 tags: rif, envelope, relay, user, guide, smart, wallet

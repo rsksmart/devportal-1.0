@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Architecture
 layout: rsk
 title: RIF Notifier Architecture
 tags: rif, notifier, architecture

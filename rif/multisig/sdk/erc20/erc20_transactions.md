@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Create ERC20 Transactions
 layout: rsk
 title: RIF Multisig SDK - ERC20 Transactions
 description: follow these steps to send erc20 tokens through multisig transactions

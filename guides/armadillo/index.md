@@ -1,4 +1,7 @@
 ---
+menu_order: 600
+section_title: Armadillo
+menu_title: Table of Contents
 layout: rsk
 title: 'Armadillo'
 description: 'The guardian of RSK'

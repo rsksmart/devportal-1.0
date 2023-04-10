@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Learn
 layout: rsk
 title: RIF Aggregation - Architecture
 description: ZkSync main architecture

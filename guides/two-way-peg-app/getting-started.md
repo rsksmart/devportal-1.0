@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Getting Started
 title: "Getting Started | 2 way peg app Documentation"
 description: "Welcome to the 2 way peg app documentation."
 slug: 2wp-docs

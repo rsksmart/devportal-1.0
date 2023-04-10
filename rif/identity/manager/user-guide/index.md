@@ -1,7 +1,5 @@
 ---
-menu_order: 200
 section_title: User Guide
-menu_title: About
 layout: rsk
 tags: rlogin, rif, rif-identity, manager, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---

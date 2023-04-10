@@ -1,5 +1,7 @@
 ---
 layout: rsk
+menu_title: RIF Token
+menu_order: 100
 title: RIF Token
 tags: rif, token, erc677
 description: "Information about the RIF token, where to obtain it, how to transfer it, and technical details on its token standard"

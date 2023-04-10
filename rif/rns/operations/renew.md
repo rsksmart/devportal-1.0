@@ -1,4 +1,6 @@
 ---
+menu_order: 700
+menu_title: Renew a domain
 layout: rsk
 title: Renew a domain
 tags: rif, rns, rif-name-service, domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

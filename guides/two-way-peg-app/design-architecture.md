@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Design and Architecture
 title: "Design and Architecture | 2 way peg app Documentation"
 description: "Welcome to the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use

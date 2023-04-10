@@ -1,4 +1,6 @@
 ---
+menu_order: 800
+menu_title: Testnet
 layout: rsk
 title: RIF Marketplace Testnet
 tags: rif, marketplace, testnet

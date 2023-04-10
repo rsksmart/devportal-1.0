@@ -1,4 +1,7 @@
 ---
+menu_order: 800
+section_title: Integrate
+menu_title: Integration guidelines
 layout: rsk
 title: RNS Integration guidelines
 tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

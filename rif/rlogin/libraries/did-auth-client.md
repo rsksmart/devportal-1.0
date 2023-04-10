@@ -1,5 +1,4 @@
 ---
-menu_order: 350
 menu_title: DID Auth client
 layout: rsk
 ---

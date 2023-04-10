@@ -1,5 +1,7 @@
 ---
 layout: rsk
+section_title: Rootstock Blockchain
+menu_title: About Rootstock Blockchain
 title: Rootstock Blockchain
 tags: rsk
 description: What is Rootstock?

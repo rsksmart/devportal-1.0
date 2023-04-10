@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Deploy NFT on RSK
 title: 'Deploy NFT on RSK | Write and Deploy an NFT project on the RSK Testnet'
 description: 'Learn about NFTs, create, connect, and deploy to the RSK Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata

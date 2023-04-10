@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Transaction
 layout: rsk
 title: 'RSK Quick Start Guide | Exploring RSK Transactions'
 description: 'Learn how to interact with RSK in your web browser, how to look at RSK transactions, develop and deploy your very first smart contract to the RSK network.'

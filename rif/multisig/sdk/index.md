@@ -1,4 +1,7 @@
 ---
+menu_order: 400
+section_title: SDK
+menu_title: Get Started
 layout: rsk
 title: RIF Multisig SDK
 description: Overview of the operations allowed through a Multisig account

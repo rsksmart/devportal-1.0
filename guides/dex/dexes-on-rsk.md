@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: DEXes on RSK
 title: "DEXes on RSK - The Complete Guide to Decentralized Exchanges (DEX)"
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"
 tags: the-complete-guide-to-dexes, decentralized-exchanges, tutorial, overview, guides, tokens, sovryn, rskswap,tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain, lend, borrow, yield-farming, order-books, automated-market-maker- AMMs

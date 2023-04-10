@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Subdomain Tool
 layout: rsk
 title: RNS Manager
 tags: rif, rns, rif-name-service, sub-domain, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

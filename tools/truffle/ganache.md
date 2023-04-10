@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Ganache
 layout: rsk
 title: Ganache
 tags: ganache, tools, rsk, ethereum, smart-contracts, truffle, windows, mac, linux, get-started, how-to

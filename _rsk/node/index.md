@@ -1,5 +1,6 @@
 ---
 layout: rsk
+menu_title: About RSKj
 title: Node (RSKj)
 tags: rsk, rskj, node
 description: "Learn more about RSKj, a node implementation for the RSK blockchain"

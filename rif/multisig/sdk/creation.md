@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Create a Multisig Account
 layout: rsk
 title: RIF Multisig SDK - creation
 description: Multisig account creation

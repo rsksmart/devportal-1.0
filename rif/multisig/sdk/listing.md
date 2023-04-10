@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: Get the pending and past transactions
 layout: rsk
 title: RIF Multisig SDK - Transaction listing
 description: Safe transaction listing 

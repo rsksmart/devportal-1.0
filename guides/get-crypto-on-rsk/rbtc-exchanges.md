@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: Get RBTC using Exchanges
 title: "How to get RBTC using Exchanges"
 description: "Explore the various ways to get RBTC using the services of centralised cryptocurrency exchanges."
 tags: rbtc, rsk, wallets, defi, exchange, crypto, how-to, knowledge-base

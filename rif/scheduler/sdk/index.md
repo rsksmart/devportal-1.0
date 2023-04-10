@@ -1,4 +1,7 @@
 ---
+menu_order: 400
+section_title: SDK
+menu_title: SDK
 layout: rsk
 title: RIF Scheduler - SDK
 ---

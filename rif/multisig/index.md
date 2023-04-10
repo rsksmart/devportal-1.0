@@ -1,4 +1,7 @@
 ---
+menu_order: 1000
+section_title: Multisig
+menu_title: Overview
 layout: rsk
 title: RIF Multisig - Savings and Vault Solution
 description: Overview of the RIF Multisig - Savings and Vault solution

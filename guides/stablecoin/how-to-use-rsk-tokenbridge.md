@@ -1,4 +1,6 @@
 ---
+menu_order: 700
+menu_title: How to use the RSK Token Bridge
 title: "Understanding Cross Chain Bridges: How to use the RSK Token Bridge - The Complete Guide to Stablecoins"
 description: "Understand what cross chain bridges are, how they work, and how to cross tokens between chains using RSK token bridge"
 tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain

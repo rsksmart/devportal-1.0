@@ -1,4 +1,7 @@
 ---
+menu_order: 1100
+section_title: Aggregation
+menu_title: Overview
 layout: rsk
 title: RIF Aggregation
 description: RIF Aggregation overview

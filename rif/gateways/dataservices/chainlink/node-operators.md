@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Node Operators
 layout: rsk
 title: RIF Gateways Chainlink Node Operators
 tags: rif, gateways, data services, chainlink, node operators

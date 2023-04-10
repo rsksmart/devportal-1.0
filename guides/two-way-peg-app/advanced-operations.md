@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Advanced Operations
 title: "Advanced Operations | 2 way peg app Documentation"
 description: "Welcome to the advanced operations you can perform using the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
