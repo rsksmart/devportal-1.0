@@ -1,6 +1,6 @@
 ---
-menu_order: 300
-menu_title: Deployment
+menu_order: 400
+menu_title: Develop
 layout: rsk
 title: RIF Relay Develop
 tags: rif, envelope, relay, user, guide, develop

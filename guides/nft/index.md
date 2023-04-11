@@ -1,5 +1,5 @@
 ---
-menu_order: 900
+menu_order: 950
 section_title: Deploy NFTs on RSK
 menu_title: Table of Contents
 title: 'Introduction | Deploy an NFT project on the RSK Testnet'
