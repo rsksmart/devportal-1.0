@@ -1,5 +1,6 @@
 ---
 menu_title: Credential requests protocol
+menu_order: 500
 layout: rsk
 tags: rif, rif-identity, credential, request, self-sovereign, DID, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
