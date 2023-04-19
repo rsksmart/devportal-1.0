@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Fast payments
+menu_title: Fast payments
 menu_order: 700
 tags: rsk, remasc, interval, speed, propagation
 description: "Achieving faster on-chain block intervals"

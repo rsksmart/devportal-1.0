@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Troubleshooting
+menu_title: Troubleshooting
 tags: rsk, rskj, node, faq, troubleshoot
 description: "How to solve some known or frequently encountered issues when working with RSKj"
 menu_order: 10

@@ -3,6 +3,7 @@ layout: rsk
 section_title: Architecture
 title: Turing complete
 menu_order: 4
+menu_title: Architecture
 tags: rsk, rvm, evm, virtual machine
 description: "The RSK virtual machine is compatible with Ethereum Virtual machine at an opcode level."
 ---

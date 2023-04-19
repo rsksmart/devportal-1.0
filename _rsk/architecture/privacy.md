@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Transaction Privacy & scalability
+menu_title: Transaction Privacy & scalability
 menu_order: 600
 tags: rsk, privacy, anonymous, pseudonymous
 description: "Transaction pseudonymity vs transaction anonymity"

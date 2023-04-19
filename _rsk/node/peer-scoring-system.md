@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Peer Scoring System
+menu_title: Peer Scoring System
 tags: rsk, rskj, node, config, peer, scoring, 
 description: " The peer scoring system protects the RSKj node's resources from abusive or malicious peers"
 menu_order: 11

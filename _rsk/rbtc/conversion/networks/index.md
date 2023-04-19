@@ -2,6 +2,7 @@
 layout: rsk
 section_title: User Guides
 title: Mainnet Guide
+menu_title: Mainnet Guide
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation
 description: 'Converting BTC to RBTC (peg-in) and RBTC to BTC (peg-out).'
 menu_order: 100

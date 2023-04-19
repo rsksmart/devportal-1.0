@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Gas
+menu_title: Gas
 tags: gas, transactions, rbtc, mainnet, smart-contracts, rsk, conversion, bitcoin, price, gas-price, cost
 menu_order: 3
 ---

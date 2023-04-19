@@ -1,6 +1,7 @@
 ---
 layout: rsk
 title: Security model
+menu_title: Security model
 menu_order: 500
 tags: rsk, security, powpeg, peg, federation, 2-way peg
 description: "Achieving security in a Powpegged sidechain using proofs of payment"
