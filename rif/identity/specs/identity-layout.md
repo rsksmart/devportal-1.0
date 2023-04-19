@@ -1,5 +1,6 @@
 ---
 menu_title: Identity layout
+title: Identity layout
 menu_order: 200
 layout: rsk
 tags: rif, rif-identity, libraries, infrastructure, mobile, DID, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

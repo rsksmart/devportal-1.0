@@ -1,5 +1,5 @@
 ---
-menu_title: DID Auth client
+title: DID Auth client
 layout: rsk
 ---
 

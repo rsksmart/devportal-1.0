@@ -2,6 +2,7 @@
 menu_order: 500
 section_title: Services
 menu_title: About
+title: About
 layout: rsk
 tags: rif, rif-identity, libraries, service, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
