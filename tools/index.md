@@ -2,7 +2,7 @@
 layout: rsk
 title: Tools
 tags: truffle, ganache, explorer, testnet, faucet, networks, deployment, gas-station, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, wallets
-
+menu_order: 9
 section_title: Tools
 menu_title: Overview
 
