@@ -3,7 +3,7 @@ menu_order: 200
 section_title: Tutorials
 menu_title: Table of Contents
 layout: rsk
-title: 
+title: Table of Contents
 tags: tutorial, rsk
 description: "General tutorials, tutorials for ethereum developers, truffle tutorials, and other tutorials"
 ---
