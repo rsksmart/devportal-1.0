@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Addresses and Links
 layout: rsk
 title: Addresses and Links
 tags: address, erc20, defi, decentralized, token-bridge, tokens, addresses, bridge, multisig, federation, quick-start, guides, tutorial, testnet, faucet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, sidechain, contracts

@@ -1,7 +1,7 @@
 ---
-layout: redirect
-menu_order: 8
-section_title: Develop
+menu_order: 300
+menu_title: Integrate
+layout: rsk
 title: How to Integrate
 tags: apps, integrate, node, linux, windows, mac, rbtc, defi, decentralized, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets
 ---
