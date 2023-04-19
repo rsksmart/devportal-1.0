@@ -1,5 +1,4 @@
 ---
-layout: redirect
 menu_order: 8
 menu_title: How to Integrate
 section_title: Develop
