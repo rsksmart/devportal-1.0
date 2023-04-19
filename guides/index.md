@@ -3,7 +3,7 @@ layout: rsk
 title: Guides
 tags: guide, rsk
 description: "Guides on RSK, workshops, and other guides"
-menu_order: 5
+
 menu_title: About
 section_title: Guides
 ---

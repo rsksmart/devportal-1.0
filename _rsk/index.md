@@ -5,7 +5,7 @@ menu_title: About Rootstock Blockchain
 title: Rootstock Blockchain
 tags: rsk
 description: What is Rootstock?
-menu_order: 2
+
 permalink: /rsk/
 ---
 
