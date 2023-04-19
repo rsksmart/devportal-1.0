@@ -1,6 +1,6 @@
 ---
 layout: rsk
-menu_order: 3
+
 section_title: RIF
 menu_title: About RSK Infrastructure Framework
 title: RSK Infrastructure Framework
