@@ -1,7 +1,7 @@
 ---
 section_title: Quick Start
-menu_title: 200
-section_title: Step 1 - Install RSK Local Node
+menu_order: 200
+menu_title: Step 1 - Install RSK Local Node
 layout: rsk
 title: Quick Start - Step 1
 tags: quick-start, rskj
