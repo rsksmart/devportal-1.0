@@ -2,7 +2,6 @@
 layout: rsk
 menu_title: With SLI
 title: Conversion with node and console
-menu_title: Conversion with node and console
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, node, cli
 description: 'How to perform the Powpeg mechanism using node and console'
 menu_order: 300
