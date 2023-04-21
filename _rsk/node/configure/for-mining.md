@@ -1,3 +1,5 @@
 ---
-redirect: /rsk/node/configure/mining
+layout: redirect
+permalink: /rsk/node/configure/for-mining/
+redirect: /rsk/node/configure/mining/
 ---

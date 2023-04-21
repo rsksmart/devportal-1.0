@@ -1,4 +1,5 @@
 ---
 layout: redirect
-redirect: /rsk/node/install/operating-systems/index
+permalink: /rsk/node/install/docker/
+redirect: /rsk/node/install/operating-systems/
 ---

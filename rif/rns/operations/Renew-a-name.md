@@ -1,4 +1,5 @@
 ---
 layout: redirect
-redirect: /rif/rns/operations/renew
+permalink: /rif/rns/operations/renew-a-name/
+redirect: /rif/rns/operations/renew/
 ---

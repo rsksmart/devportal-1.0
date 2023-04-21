@@ -1,4 +1,5 @@
 ---
 layout: redirect
-redirect: /rsk/node/install/operating-systems/ubuntu
+permalink: /rsk/node/install/
+redirect: /rsk/node/install/operating-systems/ubuntu/
 ---

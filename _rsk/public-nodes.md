@@ -1,5 +1,5 @@
 ---
 layout: redirect
-permalink: /rsk/public_nodes/
+permalink: /rsk/public-nodes/
 redirect: /rsk/node/use/
 ---

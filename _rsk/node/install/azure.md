@@ -1,4 +1,5 @@
 ---
 layout: redirect
-redirect: /rsk/node/install/operating-systems/index
+permalink: /rsk/node/install/azure/
+redirect: /rsk/node/install/operating-systems/
 ---
