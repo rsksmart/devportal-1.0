@@ -7,7 +7,7 @@ title: How to setup an RSK node on Docker
 tags: docker, desktop, macOS, rskj, windows, install, rsk, node, how-to, network, requirements, mainnet, testnet, regtest
 ---
 
-Before installing Docker, ensure your system meets the [minimum requirements](../requirements/) before installing the RSK node.
+Before installing Docker, ensure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing the RSK node.
 
 ### Install Docker Desktop Client
 

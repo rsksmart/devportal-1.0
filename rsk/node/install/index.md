@@ -11,7 +11,7 @@ permalink: /rsk/node/install/
   }
 </style>
 
-Ensure that your system meets the [minimum requirements](./requirements/) before installing the RSK nodes on it.
+Ensure that your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing the RSK nodes on it.
 
 ### Install RSK Node and Join the RSK Hop Mainnet
 
@@ -88,28 +88,28 @@ RSK nodes can be installed on all major platforms, including Linux, Windows, and
 
 <img class="node-setup-img" src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="ubuntu logo"/>
 
-Visit [Setup Node on Ubuntu](./ubuntu) for instructions on installing RSK Node on ubuntu systems
+Visit [Setup Node on Ubuntu](/rsk/node/install/operating-systems/ubuntu/) for instructions on installing RSK Node on ubuntu systems
 
 #### Using Fat(or Uber) JAR
 
 <img class="node-setup-img" src="https://www.pngkey.com/png/detail/264-2646582_logo-transparent-background-java.png" alt="java logo"/>
 
-Visit [Setup Node through JAR](./java) for instructions on installing RSK Node on any system with Fat JAR or Uber JAR.
+Visit [Setup Node through JAR](/rsk/node/install/operating-systems/java/) for instructions on installing RSK Node on any system with Fat JAR or Uber JAR.
 
 #### Using Docker Container
 
 <img class="node-setup-img" height="25px" src="https://goto.docker.com/rs/929-FJL-178/images/Docker%20Horizontal%20Large.png" alt="docker logo"/>
 
-Visit [Setup Node through Docker](./docker) for instructions on installing RSK Node as a docker container on any system.
+Visit [Setup Node through Docker](/rsk/node/install/operating-systems/docker/) for instructions on installing RSK Node as a docker container on any system.
 
 #### Using AWS AMI
 
 <img class="node-setup-img" height="25px" src="https://kopano.com/wp-content/uploads/2018/04/AWSCloud.png" alt="aws logo"/>
 
-Visit [Setup Node through AWS AMI](./aws) for instructions on installing RSK Node on a AWS instance through marketplace AMI.
+Visit [Setup Node through AWS AMI](/rsk/node/install/cloud-fast-deploy/aws/) for instructions on installing RSK Node on a AWS instance through marketplace AMI.
 
 #### Using Azure
 
 <img class="node-setup-img" height="25px" src="https://scaidata.com/assets/img/scaidata_business_intelligence_azure_marketplace_azure_cloud1.png.png" alt="azure logo"/>
 
-Visit [Setup Node through Azure](./azure) for instructions on installing RSK Node on a Azure instance through marketplace image resource.
+Visit [Setup Node through Azure](/rsk/node/install/cloud-fast-deploy/) for instructions on installing RSK Node on a Azure instance through marketplace image resource.

@@ -6,7 +6,7 @@ tags: rsk, node, centos, install, rskj,  requirements, how-to, network, configur
 menu_order: 3
 ---
 
-Make sure your system meets the [minimum requirements](../requirements/) before installing RSK nodes on it.
+Make sure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing RSK nodes on it.
 
 ## Install RSK node in CentOS Distribution
 

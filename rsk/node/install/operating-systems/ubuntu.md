@@ -5,7 +5,7 @@ tags: ubuntu, install, rsk, rskj, node, how-to, network, requirements, mainnet
 menu_order: 2
 ---
 
-Make sure your system meets the [minimum requirements](../requirements/) before installing RSK nodes on it.
+Make sure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing RSK nodes on it.
 
 ## Install via Ubuntu Package Manager
 

@@ -85,7 +85,7 @@ Besides the parameters and flags, it's also possible to configure the node over 
 
 
 Most of the configurable options or settings for RSKj are available
-in "config". See [config reference](../reference/) for more details.
+in "config". See [config reference](/rsk/node/configure/reference/) for more details.
 
 ## Reference implementation
 
