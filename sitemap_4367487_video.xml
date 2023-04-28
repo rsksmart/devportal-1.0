@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"
+      xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+  <url>
+       <loc>https://dev.rootstock.io/rsk/node/install/operating-systems/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/c-YGtE3UIjE/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to setup an RSK node on Docker</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/c-YGtE3UIjE</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/rsk/node/install/operating-systems/ubuntu/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/eW9UF2aJQgs/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Setup node on Ubuntu</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/eW9UF2aJQgs</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/rsk/node/install/operating-systems/java/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/TxpS6WhxUiU/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Setup node on Java</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/TxpS6WhxUiU</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/rsk/node/install/cloud-fast-deploy/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/0gk10ob5dr4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Setup node on Azure</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/0gk10ob5dr4</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/rsk/node/install/cloud-fast-deploy/aws/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/6H5qWkx9Tcs/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Setup node on AWS</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/6H5qWkx9Tcs</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/rsk/rbtc/conversion/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/XTpQW9Rw838/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - BTC to RBTC Conversion</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/XTpQW9Rw838</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/rif/storage/providers/swarm/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/DZbhjnhP5g4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - About Swarm</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=DZbhjnhP5g4</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/9Cgyhsjsfbg/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - About Swarm</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=9Cgyhsjsfbg</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/kb/getblock-rpc/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/k8qowcdtxm0/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RPC via GetBlock</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=k8qowcdtxm0</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/kb/geth-attach-local-node/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/apcD6bcSWpw/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Using geth to attach to a RSK local node</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/apcD6bcSWpw</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/1Zs2m5z_S9g/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Using geth to attach to a RSK local node</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=1Zs2m5z_S9g</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/z5AiHy0mC8U/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Using geth to attach to a RSK local node</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=z5AiHy0mC8U</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/kb/remix-and-metamask-with-rsk-testnet/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/-pJahYxJ4ms/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Using Remix and Metamask with RSK testnet</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/-pJahYxJ4ms</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/TyKkkwF1PdM/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Using Remix and Metamask with RSK testnet</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=TyKkkwF1PdM</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/45ii2vFLKJc/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Using Remix and Metamask with RSK testnet</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=45ii2vFLKJc</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/kb/first-frontend-web3-injected/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/CoO9k1LYO04/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to create your first frontend for smart contracts</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube-nocookie.com/embed/CoO9k1LYO04</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/bm1dJyxe1mc/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to create your first frontend for smart contracts</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=bm1dJyxe1mc</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/kb/create-a-collectable-token/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/3gt-lmwZscE/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Create your own collectable token on RSK network</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=3gt-lmwZscE</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/kb/rootstock-metamask/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/VlyqXD1TjJk/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to add Rootstock to Metamask Programmatically</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/VlyqXD1TjJk</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/quickstart/browser/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/VyPewQoWhn0/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Quick Start Guide | Using RSK in the Browser</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/VyPewQoWhn0</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/twfK8Rd5hak/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Quick Start Guide | Using RSK in the Browser</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/twfK8Rd5hak</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/QCabRPfr2Zs/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Quick Start Guide | Using RSK in the Browser</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/QCabRPfr2Zs</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/ttb8EOTWey8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Quick Start Guide | Using RSK in the Browser</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/ttb8EOTWey8</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/quickstart/transactions/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/p-q7NBmEqBo/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Quick Start Guide | Exploring RSK Transactions</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/p-q7NBmEqBo</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/fMdiNeDLKo0/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Quick Start Guide | Exploring RSK Transactions</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/fMdiNeDLKo0</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/ncCzQnnMVr8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Quick Start Guide | Exploring RSK Transactions</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/ncCzQnnMVr8</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/stablecoin/overview/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/JHzyQS1rc_s/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Overview - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/JHzyQS1rc_s</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/3ZOvpLE3MvM/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Overview - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/3ZOvpLE3MvM</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/2yApyI9Zvu8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Overview - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/2yApyI9Zvu8</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/stablecoin/stablecoin-vs-digital-assets/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/GWoNxoaIsbQ/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - The difference between stablecoins and other digital assets - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/GWoNxoaIsbQ</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/stablecoin/stablecoin-on-bitcoin/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/pQmUsxrgfj8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Stablecoins on Bitcoin - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/pQmUsxrgfj8</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/GskPs4v2zmQ/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Stablecoins on Bitcoin - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/GskPs4v2zmQ</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/SyR8BnvwsWc/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Stablecoins on Bitcoin - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/SyR8BnvwsWc</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/stablecoin/how-to-store-stablecoins/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/hKW182_Izaw/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to Store Stablecoins on RSK - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/hKW182_Izaw</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/wjNjYbkRZ2A/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to Store Stablecoins on RSK - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/wjNjYbkRZ2A</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/j8laciB7ihw/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to Store Stablecoins on RSK - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/j8laciB7ihw</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/stablecoin/how-to-get-stablecoins/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/cLKZSH7gqxI/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to Get Stablecoins on RSK - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/cLKZSH7gqxI</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/G8zcvEy2Ccw/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to Get Stablecoins on RSK - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/G8zcvEy2Ccw</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/rjxuQnJ-jv0/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to Get Stablecoins on RSK - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/rjxuQnJ-jv0</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/stablecoin/how-to-use-rsk-tokenbridge/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/RS-_HNRJx04/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Understanding Cross Chain Bridges: How to use the RSK Token Bridge - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/RS-_HNRJx04</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/p6IodhKzpkg/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Understanding Cross Chain Bridges: How to use the RSK Token Bridge - The Complete Guide to Stablecoins</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/p6IodhKzpkg</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/dex/features-of-a-dex/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/aTp9er6S73M/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - The Features of a DEX - The Complete Guide to Decentralized Exchanges (DEX)</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/aTp9er6S73M</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/j8LZ3CJDfXc/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - The Features of a DEX - The Complete Guide to Decentralized Exchanges (DEX)</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/j8LZ3CJDfXc</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/cizLhxSKrAc/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - The Features of a DEX - The Complete Guide to Decentralized Exchanges (DEX)</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/cizLhxSKrAc</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/8XJ1MSTEuU0/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - The Features of a DEX - The Complete Guide to Decentralized Exchanges (DEX)</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/8XJ1MSTEuU0</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/dex/dexes-on-rsk/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/EXoiMn-o4KU/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - DEXes on RSK - The Complete Guide to Decentralized Exchanges (DEX)</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/EXoiMn-o4KU</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/4LhGFbLAKHk/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - DEXes on RSK - The Complete Guide to Decentralized Exchanges (DEX)</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/4LhGFbLAKHk</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/KmXayl_z9-0/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to get RBTC using RSK’s built in PowPeg</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/KmXayl_z9-0</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/get-crypto-on-rsk/rbtc-wallets/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/ptYfTMMA6DM/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to get RBTC using wallets</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/ptYfTMMA6DM</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/qD1lODbCBqE/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to get RBTC using wallets</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/qD1lODbCBqE</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/1kTJhlA-5V8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to get RBTC using wallets</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/1kTJhlA-5V8</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/ObJvvskyI9I/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to get RBTC using Exchanges</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/ObJvvskyI9I</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/0TIHolrcuF4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - How to get RBTC using Exchanges</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/0TIHolrcuF4</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/guides/two-way-peg-app/glossary/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/f3CFUbeehc8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Glossary | 2 way peg app Documentation</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/f3CFUbeehc8</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/defiant/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/_s32rKrmJ0A/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Defiant - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/_s32rKrmJ0A</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/chainbeat/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/ANN8QK1clWM/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Chainbeat - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/ANN8QK1clWM</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/moneyonchain/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/SM7EyR3kXz8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Money on Chain - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/SM7EyR3kXz8</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/QSMV0nY6ln4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Money on Chain - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/QSMV0nY6ln4</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/beexo/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/2SwmNNCtvlU/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Beexo - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/2SwmNNCtvlU</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/dcent/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/playlist/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - DCent - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/playlist</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/chainlink/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/ZJfkNzyO7-U/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Chainlink - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/ZJfkNzyO7-U</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/edge/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/5VDmSmgeqj8/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Edge Wallet - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/5VDmSmgeqj8</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/sovryn/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/z1iKPDXKjUo/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Sovryn - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://youtube.com/embed/z1iKPDXKjUo</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/covalent/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/MFinzg88sK4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Covalent - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/MFinzg88sK4</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/givetrack/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/wzoBQxAslRY/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/wzoBQxAslRY</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/wdryPVwUll4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/wdryPVwUll4</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/1iqQVBhaxLM/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/1iqQVBhaxLM</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/WqO3oJeGkfE/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=WqO3oJeGkfE</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/ga0yfiD5dwU/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/ga0yfiD5dwU</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/AaKCc1kdAKY/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=AaKCc1kdAKY</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/5Ej7CH8SE08/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=5Ej7CH8SE08</video:player_loc>
+       </video:video>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/x-uLvk_6MVY/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - GiveTrack - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/x-uLvk_6MVY</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/coinfirm/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/WqNMiR-bgZE/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Coinfirm - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/WqNMiR-bgZE</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/api3/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/pWxfLDC78xU/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - API3 - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/pWxfLDC78xU</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/fireblocks/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/7AqiL_dm3Q4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Fireblocks - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/7AqiL_dm3Q4</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/solutions/bullanetwork/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/yN3zwrZgKL4/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Bulla Network - Solutions on RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/yN3zwrZgKL4</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/develop/tutorials/ethereum-devs/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/-7Oi9_BDr5k/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Port Ethereum dApps</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/-7Oi9_BDr5k</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/community-calls/2021-05/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/Cl1NWsJrFmI/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Community Call, May 2021 - Summary</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/Cl1NWsJrFmI</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/community-calls/2021-07/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/H15kZD15oSg/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Community Call, July 2021 - Summary</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/H15kZD15oSg</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/community-calls/2021-08/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/lZ0Y4VHvR4Q/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Community Call, August 2021 - Summary</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/lZ0Y4VHvR4Q</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/community-calls/2021-10/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/mdCinpZ7Qcg/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Community Call, October 2021 - Summary</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/mdCinpZ7Qcg</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/community-calls/2021-12/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.8000</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/vWVbaYMaL6Y/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - RSK Community Call, December 2021 - Summary</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/embed/vWVbaYMaL6Y</video:player_loc>
+       </video:video>
+  </url>
+  <url>
+       <loc>https://dev.rootstock.io/kb/ethereum-dapp-to-rsk/</loc>
+       <lastmod>2023-04-27T13:54:41+00:00</lastmod>
+       <changefreq>daily</changefreq>
+       <priority>0.6400</priority>
+       <video:video>
+         <video:thumbnail_loc>https://i.ytimg.com/vi/6a4KD2CElQY/2.jpg</video:thumbnail_loc> 
+         <video:title>RSK Devportal - Bring your Ethereum dApp to RSK</video:title>
+         <video:description>Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.</video:description>
+         <video:player_loc allow_embed="yes" autoplay="ap=1">https://www.youtube.com/watch?v=6a4KD2CElQY</video:player_loc>
+       </video:video>
+  </url>
+</urlset>

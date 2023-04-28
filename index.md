@@ -2,9 +2,9 @@
 layout: home
 ---
 
-# Welcome to Rootstock (RSK)
+# Welcome to Rootstock
 
-The Developer Portal is the home for Rootstock documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
+The Developer Portal is the home for Rootstock (RSK) documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
 
 <div class="features-list">
     <ul id="card-list" class="row">
@@ -95,7 +95,7 @@ The Developer Portal is the home for Rootstock documentation for end users and d
             </a><div class="content"><a href="/rif/rns">
             <div class="content-container">
                 <p class="card-title rsk_green">Register a Domain</p>
-                <p class="card-desc">Learn more about RSK Name Service</p>
+                <p class="card-desc">Learn more about RIF Name Service</p>
             </div>
             </a><div class="btn-container"><a href="/rif/rns">
                 </a><a class="green" href="/rif/rns">Read More</a>
@@ -125,7 +125,7 @@ The Developer Portal is the home for Rootstock documentation for end users and d
     </ul>
 </div>
 
-# What is RSK?
+# What is Rootstock?
 
 Rootstock's full [technology stack](/the-stack) is built on top of bitcoin:
 From Rootstock smart contracts
@@ -141,9 +141,9 @@ with high infrastructure and energy costs
 create the new blocks to be added to the blockchain every 10 minutes.
 The more hashing power they provide, the more secure the network is.
 
-**RSK** is the first open source smart contract platform that is
+**Rootstock** is the first open source smart contract platform that is
 powered by the bitcoin network.
-RSK's goal is to add value and functionality to the
+Rootstock's goal is to add value and functionality to the
 bitcoin ecosystem by enabling smart-contracts,
 near instant payments, and higher-scalability.
 
