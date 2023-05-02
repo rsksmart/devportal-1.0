@@ -245,6 +245,6 @@ rLogin supports Metamask features to change the network from the app. For the ot
 
 ![rlogin-architecture-simple](/rif/rlogin/assets/rlogin-architecture-simple.png)
 
-Read more about the architecture [here](https://dev.rootstock.io/rif/rlogin/design-and-architecture/)
+Read more about the architecture [here](../rlogin/design-and-architecture.md)
 
-> Follow the [development guidelines](https://dev.rootstock.io/rif/rlogin/develop/) to collaborate
+> Follow the [development guidelines](../rlogin/develop.md) to collaborate
