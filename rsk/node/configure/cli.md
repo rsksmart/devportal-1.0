@@ -22,22 +22,10 @@ The CLI arguments have two forms; the parameter and the flag:
   - It's a single text, without spaces
   - Starts with a double dash
 
-Find below a list of cli flags and parameters available:
+Find below a list of CLI flags and parameters available:
 
 ## General Flags
-
-- `--main`
-- `--testnet`
-- `--regtest`
-- `--reset`
-- `--import`
-- `--verify-config`
-- `--print-system-info`
-- `--skip-java-check`
-- `-base-path`
-- `-rpccors`
-
-## Network related
+### Network related flags
 
 The following CLI flags determine which network the Rootstock (RSK) node will connect to.
 
@@ -50,9 +38,9 @@ This indicates that the configuration for the Rootstock Regtest (localhost netwo
   - Example: `java -cp rsk-core-<VERSION>.jar co.rsk.start --regtest`
 
 > - Only one of these three CLI flags should be specified.
-> - When none of these are specified, Rootstock Mainnet is used by default.
+> - When none of these are specified, **Rootstock Mainnet** is used by default.
 
-## Database related
+### Database related flags
 
 The Rootstock (RSK) node stores transactions, blocks,
 and other blockchain state on disk.
@@ -72,6 +60,30 @@ This is typically expected to be used when connecting to Rootstock Testnet or Ro
 and when a reduction in "initial sync time" is desired.
 It is also used when switching between different databases,
 e.g. between `leveldb` and `rocksdb`.
+
+### Configuration Flags
+
+- `--verify-config`:
+This indicates that the configuration file used by this run of the Rootstock (RSK) node should be validated. By default this step is always performed.
+- `--print-system-info`:
+This indicates that the system information of the computer that the Rootstock node is running on should be output. By default, this is always output.
+- `--skip-java-check`:
+This indicates that the detection of the version of the Java Virtual Machine that the Rootstock node is running in is supported. By default, this check is always performed, to ensure that the Rootstock node is running in a compatible environment.
+- `-base-path`: 
+This specifies the value of `database.dir`, where the blockchain database is stored.
+
+  Example: 
+    `java -cp rsk-core-<VERSION>.jar co.rsk.start -base-path home/rsk/data`
+
+- `-rpccors`: 
+This specifies the value of `rpc.providers.web.cors` to control `cors configuration`.
+
+  Example: 
+    `java -cp rsk-core-<VERSION>.jar co.rsk.start -rpccors *`
+
+## Command Line Tools
+
+### Database related commands
 
 - `ExportState`:
 The ExportState command is a tool for exporting the state at a specific block in the Rootstock blockchain to a file. 
@@ -135,25 +147,7 @@ The tool retrieves the block range and exports each block in the range to a spec
       100,b445214290eb98e1e066713aa8a76ff4282c7890d232471d62be5932d21f25b8,0f57a…
     ```
 
-## Configuration related
-
-- `--verify-config`:
-This indicates that the configuration file used by this run of the Rootstock (RSK) node should be validated. By default this step is always performed.
-- `--print-system-info`:
-This indicates that the system information of the computer that the Rootstock node is running on should be output. By default, this is always output.
-- `--skip-java-check`:
-This indicates that the detection of the version of the Java Virtual Machine that the Rootstock node is running in is supported. By default, this check is always performed, to ensure that the Rootstock node is running in a compatible environment.
-- `-base-path`: 
-This specifies the value of `database.dir`, where the blockchain database is stored.
-
-  Example: 
-    `java -cp rsk-core-<VERSION>.jar co.rsk.start -base-path home/rsk/data`
-
-- `-rpccors`: 
-This specifies the value of `rpc.providers.web.cors` to control `cors configuration`.
-
-  Example: 
-    `java -cp rsk-core-<VERSION>.jar co.rsk.start -rpccors *`
+### Configuration related commands
 
 - `StartBootstrap`: 
 This command starts a bootstrap node with one service, which only participates in the [peer discovery protocol](https://github.com/ethereum/devp2p/wiki/Discovery-Overview).
@@ -222,7 +216,7 @@ The DbMigrate command is a tool for migrating between different databases such a
     ```
   > Note: If the target database is the same as the one working on the node, the node will throw an error: **Cannot migrate to the same database, current db is X_DB and target db is X_DB**.
 
-## Dev-related
+## Dev-related commands
 
 - `ShowStateInfo`:
 The ShowStateInfo command is a tool for displaying state information of a specific block in the Rootstock blockchain.
