@@ -157,7 +157,7 @@ Follow this guide to configure rLogin in minutes
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="../features">Features</a>
+        <a href="../rlogin/features">Features</a>
         <br />
         <br />
         <p>i18n, theming, dark/light, listeners, triggers</p>
@@ -165,7 +165,7 @@ Follow this guide to configure rLogin in minutes
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="../samples">rLogin sample apps</a>
+        <a href="../rlogin/samples/">rLogin sample apps</a>
         <br />
         <br />
         <p>Sample apps! Find all the code you need</p>
@@ -175,7 +175,7 @@ Follow this guide to configure rLogin in minutes
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="../authentication">Integrated backend authentication</a>
+        <a href="../rlogin/authentication">Integrated backend authentication</a>
         <br />
         <br />
         <p>Integrate the authentication model based on the user's digital signature capabilities</p>
@@ -183,7 +183,7 @@ Follow this guide to configure rLogin in minutes
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="../migrating">Migrating</a>
+        <a href="../rlogin/migrating/">Migrating</a>
         <br />
         <br />
         <p>From <code>web3modal</code> or <code>web3react</code></p>
@@ -245,6 +245,6 @@ rLogin supports Metamask features to change the network from the app. For the ot
 
 ![rlogin-architecture-simple](/rif/rlogin/assets/rlogin-architecture-simple.png)
 
-Read more about the architecture [here](../design-and-architecture)
+Read more about the architecture [here](https://dev.rootstock.io/rif/rlogin/design-and-architecture/)
 
-> Follow the [development guidelines](../develop) to collaborate
+> Follow the [development guidelines](https://dev.rootstock.io/rif/rlogin/develop/) to collaborate
