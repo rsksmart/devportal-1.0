@@ -22,30 +22,31 @@ The CLI arguments have two forms; the parameter and the flag:
   - It's a single text, without spaces
   - Starts with a double dash
 
-Find below a list of cli flags and parameters available:
+Find below a list of CLI flags and parameters available:
 
-### Network related
+## General Flags
+### Network related flags
 
 The following CLI flags determine which network the Rootstock (RSK) node will connect to.
 
-- **main**:
+- `--main`:
 This indicates that the configuration for the Rootstock Mainnet (public network) should be used.
-- **testnet**:
+- `--testnet`:
 This indicates that the configuration for the Rootstock Testnet (public network) should be used.
-- **regtest**:
+- `--regtest`:
 This indicates that the configuration for the Rootstock Regtest (localhost network) should be used.
   - Example: `java -cp rsk-core-<VERSION>.jar co.rsk.start --regtest`
 
 > - Only one of these three CLI flags should be specified.
-> - When none of these are specified, Rootstock Mainnet is used by default.
+> - When none of these are specified, **Rootstock Mainnet** is used by default.
 
-### Database related
+### Database related flags
 
 The Rootstock (RSK) node stores transactions, blocks,
 and other blockchain state on disk.
 This is known as the *Blockchain Database*.
 
-- **--reset**:
+- `--reset`:
 This indicates that the block database should be erased, and should start from scratch,
 i.e. from genesis block.
 This is typically expected to be used when connecting to Rootstock Regtest,
@@ -53,15 +54,39 @@ or in select debugging scenarios.
 It is also used when switching between different databases,
 e.g. between `leveldb` and `rocksdb`.
 
-- **--import**:
+- `--import`:
 This indicates that the block database should be imported from an external source.
 This is typically expected to be used when connecting to Rootstock Testnet or Rootstock Mainnet,
 and when a reduction in "initial sync time" is desired.
 It is also used when switching between different databases,
 e.g. between `leveldb` and `rocksdb`.
 
-- **export-state**:
-The export-state command is a tool for exporting the state at a specific block in the Rootstock blockchain to a file. 
+### Configuration Flags
+
+- `--verify-config`:
+This indicates that the configuration file used by this run of the Rootstock (RSK) node should be validated. By default this step is always performed.
+- `--print-system-info`:
+This indicates that the system information of the computer that the Rootstock node is running on should be output. By default, this is always output.
+- `--skip-java-check`:
+This indicates that the detection of the version of the Java Virtual Machine that the Rootstock node is running in is supported. By default, this check is always performed, to ensure that the Rootstock node is running in a compatible environment.
+- `-base-path`: 
+This specifies the value of `database.dir`, where the blockchain database is stored.
+
+  Example: 
+    `java -cp rsk-core-<VERSION>.jar co.rsk.start -base-path home/rsk/data`
+
+- `-rpccors`: 
+This specifies the value of `rpc.providers.web.cors` to control `cors configuration`.
+
+  Example: 
+    `java -cp rsk-core-<VERSION>.jar co.rsk.start -rpccors *`
+
+## Command Line Tools
+
+### Database related commands
+
+- `ExportState`:
+The ExportState command is a tool for exporting the state at a specific block in the Rootstock blockchain to a file. 
 
   Usage:
     `java -cp rsk.jar co.rsk.cli.tools.ExportState -b <block_number> -f <file_path>`
@@ -89,8 +114,8 @@ The export-state command is a tool for exporting the state at a specific block i
       …etc
     ```
 
-- **export-blocks**:
-The `export-blocks` command is a tool for exporting blocks from a specific block range to a file. 
+- `ExportBlocks`:
+The ExportBlocks command is a tool for exporting blocks from a specific block range to a file. 
 The tool retrieves the block range and exports each block in the range to a specified file.
 
   Usage:
@@ -122,27 +147,9 @@ The tool retrieves the block range and exports each block in the range to a spec
       100,b445214290eb98e1e066713aa8a76ff4282c7890d232471d62be5932d21f25b8,0f57a…
     ```
 
-### Configuration related
+### Configuration related commands
 
-- **verify-config**:
-This indicates that the configuration file used by this run of the Rootstock (RSK) node should be validated. By default this step is always performed.
-- **print-system-info**:
-This indicates that the system information of the computer that the Rootstock node is running on should be output. By default, this is always output.
-- **skip-java-check**:
-This indicates that the detection of the version of the Java Virtual Machine that the Rootstock node is running in is supported. By default, this check is always performed, to ensure that the Rootstock node is running in a compatible environment.
-- **base-path**: 
-This specifies the value of `database.dir`, where the blockchain database is stored.
-
-  Example: 
-    `java -cp rsk-core-<VERSION>.jar co.rsk.start -base-path home/rsk/data`
-
-- **rpccors**: 
-This specifies the value of `rpc.providers.web.cors` to control `cors configuration`.
-
-  Example: 
-    `java -cp rsk-core-<VERSION>.jar co.rsk.start -rpccors *`
-
-- **start-bootstrap**: 
+- `StartBootstrap`: 
 This command starts a bootstrap node with one service, which only participates in the [peer discovery protocol](https://github.com/ethereum/devp2p/wiki/Discovery-Overview).
   
   Example:
@@ -156,8 +163,8 @@ This command starts a bootstrap node with one service, which only participates i
       ....
     ```
 
-- **rewind-blocks**:
-The `rewind-blocks` command is used to rewind the Rootstock blockchain to a specific block. It can also be used to find and print the minimum inconsistent block (a block with missing state in the states database).
+- `RewindBlocks`:
+The RewindBlocks command is used to rewind the Rootstock blockchain to a specific block. It can also be used to find and print the minimum inconsistent block (a block with missing state in the states database).
     
   Example:
     ```java
@@ -188,8 +195,8 @@ The `rewind-blocks` command is used to rewind the Rootstock blockchain to a spec
       INFO [clitool] [main]  RewindBlocks finished
     ```
 
-- **db-migrate**: 
-The `db-migrate` command is a tool for migrating between different databases such as leveldb and rocksdb.
+- `DbMigrate`: 
+The DbMigrate command is a tool for migrating between different databases such as leveldb and rocksdb.
 
   Usage:
     `java -cp rsk.jar co.rsk.cli.tools.DbMigrate -t <target_database>`
@@ -209,10 +216,10 @@ The `db-migrate` command is a tool for migrating between different databases suc
     ```
   > Note: If the target database is the same as the one working on the node, the node will throw an error: **Cannot migrate to the same database, current db is X_DB and target db is X_DB**.
 
-### Dev-related
+## Dev-related commands
 
-- **show-state-info**:
-The `show-state-info` command is a tool for displaying state information of a specific block in the Rootstock blockchain.
+- `ShowStateInfo`:
+The ShowStateInfo command is a tool for displaying state information of a specific block in the Rootstock blockchain.
 
   Usage:
     `java -cp rsk.jar co.rsk.cli.tools.ShowStateInfo -b <block_number>` 
@@ -238,8 +245,8 @@ The `show-state-info` command is a tool for displaying state information of a sp
       INFO [clitool] [main]  ShowStateInfo finished
     ```
 
-- **index-blooms**
-The `index-blooms` is a tool for indexing block blooms for a specific block range.
+- `IndexBlooms`
+The IndexBlooms is a tool for indexing block blooms for a specific block range.
 
   Usage:
     ```java
@@ -265,10 +272,10 @@ The `index-blooms` is a tool for indexing block blooms for a specific block rang
       INFO [c.r.c.t.IndexBlooms] [main]  Processed 92% of blocks
       INFO [c.r.c.t.IndexBlooms] [main]  Processed 100% of blocks
     ```
-> The `index-blooms` CLI tool indexes block blooms for a specific block range. The required arguments are `fromBlock` and `toBlock`, which specify the block range to be indexed.
+> The `IndexBlooms` CLI tool indexes block blooms for a specific block range. The required arguments are `fromBlock` and `toBlock`, which specify the block range to be indexed.
 
-- **import-state**:
-The `import-state` command is a tool for importing state data from a file into the Rootstock blockchain.
+- `ImportState`:
+The ImportState command is a tool for importing state data from a file into the Rootstock blockchain.
 
   Usage:
     `java -cp rsk.jar co.rsk.cli.tools.ImportState -f <file_path>`
@@ -287,8 +294,8 @@ The `import-state` command is a tool for importing state data from a file into t
       INFO [clitool] [main]  ImportState finished
     ```
 
-- **import-blocks**:
-The `import-blocks` command is a tool for importing blocks from a file into the Rootstock blockchain. The tool reads a file containing blocks, decodes them and saves them to the Rootstock database.
+- `ImportBlocks`:
+The ImportBlocks command is a tool for importing blocks from a file into the Rootstock blockchain. The tool reads a file containing blocks, decodes them and saves them to the Rootstock database.
 
   Usage:
     `java -cp rsk.jar co.rsk.cli.tools.ImportBlocks -f <file_path>`
@@ -307,8 +314,8 @@ The `import-blocks` command is a tool for importing blocks from a file into the 
       INFO [clitool] [main]  ImportBlocks finished
     ```
 
-- **execute-blocks**:
-The `execute-blocks` command is a tool for executing blocks for a specified block range. This command is useful for testing purposes, debugging or for analyzing the behavior of a blockchain in a given range of blocks.
+- `ExecuteBlocks`:
+The ExecuteBlocks command is a tool for executing blocks for a specified block range. This command is useful for testing purposes, debugging or for analyzing the behavior of a blockchain in a given range of blocks.
 
   Usage:
     `java -cp rsk.jar co.rsk.cli.tools.ExecuteBlocks -fb <from_block_number> -tb <to_block_number>`
@@ -330,8 +337,8 @@ The `execute-blocks` command is a tool for executing blocks for a specified bloc
       2023-04-24-16:28:02.0881 INFO [clitool] [main]  ExecuteBlocks finished
     ```
 
-- **connect-blocks**:
-The `connect-blocks` command is a tool for connecting blocks to a chain from an external source file.
+- `ConnectBlocks`:
+The ConnectBlocks command is a tool for connecting blocks to a chain from an external source file.
 
   Usage:
     `java -cp rsk.jar co.rsk.cli.tools.ConnectBlocks -f <file_path>`
@@ -344,8 +351,8 @@ The `connect-blocks` command is a tool for connecting blocks to a chain from an 
 
     `java -cp rsk.jar co.rsk.cli.tools.ConnectBlocks -f /path/to/blocks.txt`
 
-- **gen-rpc-docs**:
-The `gen-rpc-docs` command is a tool for generating an OpenRPC JSON doc file. 
+- `GenerateOpenRpcDoc`:
+The GenerateOpenRpcDoc command is a tool for generating an OpenRPC JSON doc file. 
 
   Usage:
     ```
