@@ -10,15 +10,9 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
     <ul id="card-list" class="row">
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/">
-            <div class="icon started h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/started-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/guides/quickstart/">
+<div class="content"><a href="/guides/quickstart/">
             <div class="content-container">
-                <p class="card-title rsk_green">Getting Started</p>
+                <p class="zg-text-bg">Getting Started</p><span class="zg-label">1</span>
                 <p class="card-desc">SmartBitcoin (RBTC) is linked 1:1 to Bitcoin (1 RBTC = 1 BTC)</p>
             </div>
             </a><div class="btn-container "><a href="/guides/quickstart/">
@@ -29,15 +23,9 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/rsk/node/install">
-            <div class="icon node h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/node-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/rsk/node/install">
+<div class="content"><a href="/rsk/node/install">
             <div class="content-container">
-                <p class="card-title rsk_green">Node Setup </p>
+                <p class="zg-text-bg bg-yellow">Node Setup </p><span class="zg-label bg-yellow">2</span>
                 <p class="card-desc">Learn how to set up a Rootstock node.</p>
             </div>
             </a><div class="btn-container"><a href="/rsk/node/install">
@@ -48,15 +36,9 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/ethereum-dapp-to-rsk">
-            <div class="icon smart h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/contract-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content two-line-title-content"><a href="/ethereum-dapp-to-rsk">
+<div class="content two-line-title-content"><a href="/ethereum-dapp-to-rsk">
             <div class="content-container">
-                <p class="card-title rsk_green">Smart Contract Development</p>
+                <p class="zg-text-bg bg-purple">Smart Contract Development</p><span class="zg-label bg-purple">3</span>
                 <p class="card-desc">Learn how to port Ethereum projects to Rootstock</p>
             </div>
             </a><div class="btn-container"><a href="/ethereum-dapp-to-rsk">
@@ -67,15 +49,9 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/rif">
-            <div class="icon rif h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/rif-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/rif">
+<div class="content"><a href="/rif">
             <div class="content-container">
-                <p class="card-title rsk_green">RIF Services</p>
+                <p class="zg-text-bg bg-pink">RIF Services</p><span class="zg-label bg-pink">4</span>
                 <p class="card-desc">Access storage, oracles, naming and CPU services all in one place with the RIF token</p>
             </div>
             </a><div class="btn-container"><a href="/rif">
@@ -86,15 +62,9 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/rif/rns">
-            <div class="icon domain h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/domain-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/rif/rns">
+<div class="content"><a href="/rif/rns">
             <div class="content-container">
-                <p class="card-title rsk_green">Register a Domain</p>
+                <p class="zg-text-bg bg-green">Register a Domain</p><span class="zg-label bg-green">5</span>
                 <p class="card-desc">Learn more about RIF Name Service</p>
             </div>
             </a><div class="btn-container"><a href="/rif/rns">
@@ -105,15 +75,9 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="https://rootstock.io/ambassadors-program/">
-            <div class="icon tools h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/contract-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="https://rootstock.io/ambassadors-program/">
+<div class="content"><a href="https://rootstock.io/ambassadors-program/">
             <div class="content-container">
-                <p class="card-title rsk_green">Become an Ambassador</p>
+                <p class="zg-text-bg bg-cyan">Become an Ambassador</p><span class="zg-label bg-cyan">6</span>
                 <p class="card-desc">The Rootstock Ambassadors Program is a community empowerment initiative, designed to promote awareness, educate and drive adoption around RSK and RSK Infrastructure Framework (RIF).</p>
             </div>
             </a><div class="btn-container"><a href="https://rootstock.io/ambassadors-program/">
