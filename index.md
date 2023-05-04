@@ -12,7 +12,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         <div class="feature-card">
 <div class="content"><a href="/guides/quickstart/">
             <div class="content-container">
-                <p class="zg-text-bg card-title">Getting Started</p><span class="zg-label ml-1">1</span>
+               <h2 class="card-title"><span class="zg-text-bg">Getting Started</span><span class="zg-label ml-1">1</span></h2> 
                 <p class="card-desc">SmartBitcoin (RBTC) is linked 1:1 to Bitcoin (1 RBTC = 1 BTC)</p>
             </div>
             </a><div class="btn-container "><a href="/guides/quickstart/">
@@ -25,7 +25,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         <div class="feature-card">
 <div class="content"><a href="/rsk/node/install">
             <div class="content-container">
-                <p class="zg-text-bg card-title bg-yellow">Node Setup </p><span class="zg-label ml-1 bg-yellow">2</span>
+              <h2 class="card-title"><span class="zg-text-bg bg-yellow">Node Setup </span><span class="zg-label ml-1 bg-yellow">2</span></h2> 
                 <p class="card-desc">Learn how to set up a Rootstock node.</p>
             </div>
             </a><div class="btn-container"><a href="/rsk/node/install">
@@ -38,7 +38,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         <div class="feature-card">
 <div class="content two-line-title-content"><a href="/ethereum-dapp-to-rsk">
             <div class="content-container">
-                <p class="zg-text-bg card-title bg-purple">Smart Contract Development</p><span class="zg-label ml-1 bg-purple">3</span>
+            <h2 class="card-title"><span class="zg-text-bg bg-purple">Smart Contract Development</span><span class="zg-label ml-1 bg-purple">3</span></h2>
                 <p class="card-desc">Learn how to port Ethereum projects to Rootstock</p>
             </div>
             </a><div class="btn-container"><a href="/ethereum-dapp-to-rsk">
@@ -51,7 +51,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         <div class="feature-card">
 <div class="content"><a href="/rif">
             <div class="content-container">
-                <p class="zg-text-bg card-title bg-pink">RIF Services</p><span class="zg-label ml-1 bg-pink">4</span>
+               <h2 class="card-title"><span class="zg-text-bg bg-pink">RIF Services</span><span class="zg-label ml-1 bg-pink">4</span></h2> 
                 <p class="card-desc">Access storage, oracles, naming and CPU services all in one place with the RIF token</p>
             </div>
             </a><div class="btn-container"><a href="/rif">
@@ -64,7 +64,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         <div class="feature-card">
 <div class="content"><a href="/rif/rns">
             <div class="content-container">
-                <p class="zg-text-bg card-title bg-green">Register a Domain</p><span class="zg-label ml-1 bg-green">5</span>
+               <h2 class="card-title"><span class="zg-text-bg bg-green">Register a Domain</span><span class="zg-label ml-1 bg-green">5</span></h2> 
                 <p class="card-desc">Learn more about RIF Name Service</p>
             </div>
             </a><div class="btn-container"><a href="/rif/rns">
@@ -77,7 +77,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         <div class="feature-card">
 <div class="content"><a href="https://rootstock.io/ambassadors-program/">
             <div class="content-container">
-                <p class="zg-text-bg card-title bg-cyan">Become an Ambassador</p><span class="zg-label ml-1 bg-cyan">6</span>
+               <h2 class="card-title"><span class="zg-text-bg bg-cyan">Become an Ambassador</span><span class="zg-label ml-1 bg-cyan">6</span></h2> 
                 <p class="card-desc">The Rootstock Ambassadors Program is a community empowerment initiative, designed to promote awareness, educate and drive adoption around RSK and RSK Infrastructure Framework (RIF).</p>
             </div>
             </a><div class="btn-container"><a href="https://rootstock.io/ambassadors-program/">
@@ -89,7 +89,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
     </ul>
 </div>
 
-# What is Rootstock?
+## What is Rootstock?
 
 Rootstock's full [technology stack](/the-stack) is built on top of bitcoin:
 From Rootstock smart contracts
@@ -113,7 +113,7 @@ near instant payments, and higher-scalability.
 
 How Rootstock (RSK) is connected to bitcoin?
 
-## Merged mining with Bitcoin
+### Merged mining with Bitcoin
 
 The first point of contact is through mining.
 
@@ -121,9 +121,6 @@ The bitcoin miners do what is known as
 [merged mining](/rsk/architecture/mining/),
 securing both networks with the same infrastructure and energy consumption.
 
-<div class="sprite-transform-animation-wrapper rsk-mining">
-  <div class="sprite-transform-animation rsk-mining"></div>
-</div>
 
 They create blocks on the bitcoin network every 10 minutes,
 including transfer of bitcoin from different addresses
@@ -137,7 +134,7 @@ but does earn a reward from the merged mining.
 Check out [https://rootstock.io/mine-btc-with-rootstock/](https://rootstock.io/mine-btc-with-rootstock/)
 to learn more about mining.
 
-## Powpeg with Bitcoin
+### Powpeg with Bitcoin
 
 The second point of contact is the
 [Powpeg](/rsk/architecture/powpeg/),
@@ -148,9 +145,6 @@ the transfer of bitcoins to Rootstock,
 thereby allowing developers to interact with smart contracts.
 They pay gas using the same bitcoin, the smart bitcoin.
 
-<div class="sprite-transform-animation-wrapper rsk-peg">
-  <div class="sprite-transform-animation rsk-peg"></div>
-</div>
 
 To do so, you send bitcoin to a special address,
 where they are locked in the bitcoin network.
@@ -163,7 +157,7 @@ You can do the reverse operation called peg-out,
 by sending your bitcoin to a special address in the Rootstock network,
 and receiving your bitcoin back in the bitcoin network.
 
-# Quick Links
+### Quick Links
 
 <ul>
   <li>Mainnet:
