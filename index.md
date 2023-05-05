@@ -97,7 +97,7 @@ to the Rootstock Infrastructure Framework.
 The stack is designed to create a
 more fair and inclusive financial system.
 
-![Rootstock Technology Stack - High Level](/assets/img/home/rif-relationship-rootstock-bitcoin.svg)
+![Rootstock Technology Stack - High Level](/assets/img/home/homepage-block-image.svg)
 
 **Bitcoin**, is a store and transfer of value.
 The blockchain is secure because miners
