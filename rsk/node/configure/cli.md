@@ -24,8 +24,8 @@ The CLI arguments have two forms; the parameter and the flag:
 
 Find below a list of CLI flags and parameters available:
 
-## General Flags
-### Network related flags
+## Parameters and Flags
+### Network related
 
 The following CLI flags determine which network the Rootstock (RSK) node will connect to.
 
@@ -40,7 +40,7 @@ This indicates that the configuration for the Rootstock Regtest (localhost netwo
 > - Only one of these three CLI flags should be specified.
 > - When none of these are specified, **Rootstock Mainnet** is used by default.
 
-### Database related flags
+### Database related
 
 The Rootstock (RSK) node stores transactions, blocks,
 and other blockchain state on disk.
@@ -61,7 +61,7 @@ and when a reduction in "initial sync time" is desired.
 It is also used when switching between different databases,
 e.g. between `leveldb` and `rocksdb`.
 
-### Configuration Flags
+### Configuration related
 
 - `--verify-config`:
 This indicates that the configuration file used by this run of the Rootstock (RSK) node should be validated. By default this step is always performed.
@@ -82,7 +82,6 @@ This specifies the value of `rpc.providers.web.cors` to control `cors configurat
     `java -cp rsk-core-<VERSION>.jar co.rsk.start -rpccors *`
 
 ## Command Line Tools
-
 ### Database related commands
 
 - `ExportState`:
@@ -215,6 +214,7 @@ The DbMigrate command is a tool for migrating between different databases such a
       INFO [clitool] [main]  DbMigrate finished
     ```
   > Note: If the target database is the same as the one working on the node, the node will throw an error: **Cannot migrate to the same database, current db is X_DB and target db is X_DB**.
+
 
 ## Dev-related commands
 
