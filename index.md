@@ -38,7 +38,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
         <div class="feature-card">
 <div class="content two-line-title-content"><a href="/ethereum-dapp-to-rsk">
             <div class="content-container">
-            <div class="card-title"><h2 class="zg-text-bg bg-purple">Smart Contract Development</h2><span class="zg-label ml-1 bg-purple">03</span></div>
+            <div class="card-title"><h2 class="zg-text-bg bg-purple">Smart Contract Dev</h2><span class="zg-label ml-1 bg-purple">03</span></div>
                 <p class="card-desc">Learn how to port Ethereum projects to Rootstock</p>
             </div>
             </a><div class="btn-container"><a href="/ethereum-dapp-to-rsk">
@@ -78,7 +78,7 @@ The Developer Portal is the home for Rootstock (RSK) documentation for end users
 <div class="content"><a href="https://rootstock.io/ambassadors-program/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg bg-cyan">Become an Ambassador</h2><span class="zg-label ml-1 bg-cyan">06</span></div> 
-                <p class="card-desc">The Rootstock Ambassadors Program is a community empowerment initiative, designed to promote awareness, educate and drive adoption around RSK and RSK Infrastructure Framework (RIF).</p>
+                <p class="card-desc">A community empowerment initiative, designed to promote awareness, educate and drive adoption around Rootstock and RIF.</p>
             </div>
             </a><div class="btn-container"><a href="https://rootstock.io/ambassadors-program/">
                 </a><a class="green" href="https://rootstock.io/ambassadors-program/">Read More</a>
