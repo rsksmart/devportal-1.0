@@ -99,9 +99,9 @@ more fair and inclusive financial system.
 
 ![Rootstock Technology Stack - High Level](/assets/img/home/rootstock-homepage.svg)
 
-
+<section>
 <div class="row">
-  <div class="col d-flex-col">
+  <div class="col pr-5">
   <div class="header-div">
       <h2 class="zg-text-bg fs-28">Bitcoin</h2><span class="ml-1 zg-label">BTC</span>
   </div>
@@ -111,7 +111,7 @@ with high infrastructure and energy costs
 create the new blocks to be added to the blockchain every 10 minutes.
 The more hashing power they provide, the more secure the network is.</p>
   </div>
-    <div class="col">
+    <div class="col pl-5">
         <div class="header-div"><h2 class="zg-text-bg bg-pink fs-28">Rootstock</h2><span class="ml-1 zg-label bg-pink">RSK</span></div>
     <p> is the first open source smart contract platform that is
 powered by the bitcoin network.
@@ -122,6 +122,8 @@ near instant payments, and higher-scalability.</p>
 </div>
 
 How Rootstock (RSK) is connected to bitcoin?
+</section>
+
 
 ### Merged mining with Bitcoin
 
