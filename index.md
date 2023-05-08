@@ -97,7 +97,7 @@ to the Rootstock Infrastructure Framework.
 The stack is designed to create a
 more fair and inclusive financial system.
 
-![Rootstock Technology Stack - High Level](/assets/img/home/homepage-block-image.svg)
+![Rootstock Technology Stack - High Level](/assets/img/home/rootstock-homepage.svg)
 
 **Bitcoin**, is a store and transfer of value.
 The blockchain is secure because miners
@@ -160,12 +160,20 @@ and receiving your bitcoin back in the bitcoin network.
 ### Quick Links
 
 <ul>
-  <li>Mainnet:
-    <a href="https://explorer.rsk.co/" target="_blank">Explorer</a>,
-    <a href="https://stats.rsk.co/" target="_blank">Stats</a>
+  <li><p class="btn-outline-white">Mainnet:</p>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Explorer,
+    </a>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://stats.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Stats
+    </a>
   </li>
-  <li>Testnet:
-    <a href="https://explorer.testnet.rsk.co/" target="_blank">Explorer</a>,
-    <a href="https://stats.testnet.rsk.co/" target="_blank">Stats</a>
-   </li>
+    <li><p class="btn-outline-white">Testnet:</p>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.testnet.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Explorer,
+    </a>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://stats.testnet.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Stats
+    </a>
+  </li>
 </ul>
