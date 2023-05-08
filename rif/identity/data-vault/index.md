@@ -16,9 +16,9 @@ That information may be declarative details, verifiable credentials or other met
 
 The first version of the RIF Data Vault is the [IPFS Centralized Pinner](./architecture)
 
-- [Use](use)
-- [Design & architecture](architecture)
-  - [Web client SDK](architecture/client)
-  - [HTTPS service](architecture/service)
-  - [Provider module](architecture/provider)
-- [Develop](develop)
+- [Use](./use/)
+- [Design & architecture](./architecture/)
+  - [Web client SDK](./architecture/client)
+  - [HTTPS service](./architecture/service)
+  - [Provider module](./architecture/provider)
+- [Develop](./develop/)
