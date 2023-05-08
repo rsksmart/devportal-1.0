@@ -14,11 +14,11 @@ That information may be declarative details, verifiable credentials or other met
 
 > The project has a known vulnerability that is being fixed right now. See [#74](https://github.com/rsksmart/rif-data-vault/pull/74).
 
-The first version of the RIF Data Vault is the [IPFS Centralized Pinner](./architecture)
+The first version of the RIF Data Vault is the [IPFS Centralized Pinner](https://dev.rootstock.io/rif/identity/data-vault/architecture/)
 
-- [Use](./use/)
-- [Design & architecture](./architecture/)
-  - [Web client SDK](./architecture/client)
-  - [HTTPS service](./architecture/service)
-  - [Provider module](./architecture/provider)
-- [Develop](./develop/)
+- [Use](https://dev.rootstock.io/rif/identity/data-vault/use/)
+- [Design & architecture](https://dev.rootstock.io/rif/identity/data-vault/architecture/)
+  - [Web client SDK](https://dev.rootstock.io/rif/identity/data-vault/architecture/client/t)
+  - [HTTPS service](https://dev.rootstock.io/rif/identity/data-vault/architecture/service/)
+  - [Provider module](https://dev.rootstock.io/rif/identity/data-vault/architecture/provider/)
+- [Develop](https://dev.rootstock.io/rif/identity/data-vault/develop/)

@@ -165,7 +165,7 @@ Follow this guide to configure rLogin in minutes
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="../rlogin/samples/">rLogin sample apps</a>
+        <a href="https://dev.rootstock.io/rif/rlogin/samples/">rLogin sample apps</a>
         <br />
         <br />
         <p>Sample apps! Find all the code you need</p>
@@ -175,7 +175,7 @@ Follow this guide to configure rLogin in minutes
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="../rlogin/authentication">Integrated backend authentication</a>
+        <a href="https://dev.rootstock.io/rif/rlogin/authentication/">Integrated backend authentication</a>
         <br />
         <br />
         <p>Integrate the authentication model based on the user's digital signature capabilities</p>
@@ -247,4 +247,4 @@ rLogin supports Metamask features to change the network from the app. For the ot
 
 Read more about the architecture [here](../../rif/rlogin/design-and-architecture/)
 
-> Follow the [development guidelines](../rlogin/develop/) to collaborate
+> Follow the [development guidelines](https://dev.rootstock.io/rif/rlogin/develop/) to collaborate
