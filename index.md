@@ -102,15 +102,17 @@ more fair and inclusive financial system.
 
 <div class="row">
   <div class="col d-flex-col">
-    <h2 class="zg-text-bg fs-28">Bitcoin</h2><span class="ml-1 zg-label">BTC</span>
+  <div class="header-div">
+      <h2 class="zg-text-bg fs-28">Bitcoin</h2><span class="ml-1 zg-label">BTC</span>
+  </div>
     <p> is a store and transfer of value.
 The blockchain is secure because miners
 with high infrastructure and energy costs
 create the new blocks to be added to the blockchain every 10 minutes.
 The more hashing power they provide, the more secure the network is.</p>
   </div>
-    <div class="col d-flex-col">
-        <h2 class="zg-text-bg bg-pink fs-28">Rootstock</h2><span class="ml-1 zg-label bg-pink">RSK</span>
+    <div class="col">
+        <div class="header-div"><h2 class="zg-text-bg bg-pink fs-28">Rootstock</h2><span class="ml-1 zg-label bg-pink">RSK</span></div>
     <p> is the first open source smart contract platform that is
 powered by the bitcoin network.
 Rootstock's goal is to add value and functionality to the
