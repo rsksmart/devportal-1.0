@@ -34,7 +34,7 @@ Reusable and secure implementations compliant with the design protocols
 
 - [Mnemonics](../../libraries/mnemonics) - identity derivation tools using mnemonic phrases
 - [RSK DIDs](../../libraries/rsk-ethr-did) - handle Ethr DID method procedures in Rootstock (RSK) network
-- [Ethr DID](../../libraries/ethr-did) - uPort `ethr-did` with Rootstock (RSK) support
+- [Ethr DID](../../identity/libraries/ethr-did - uPort `ethr-did` with Rootstock (RSK) support
 - [DAF bindings](../../libraries/daf) - use uPort agent with RIF identity multi identity model
 - [VC Core module](../../libraries/core) - Verifiable Credentials in React.js + Redux
 - Express DID Auh - Express middleware to authenticate users using DIDs and VCs (POC implementation -  - productive implementation documentation [here](/rif/rlogin/libraries/express-did-auth))

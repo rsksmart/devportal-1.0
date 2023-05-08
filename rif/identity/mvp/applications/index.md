@@ -9,6 +9,6 @@ tags: rif, rif-identity, libraries, infrastructure, mobile, protocols, mvp, desi
 
 ## The MVP - Applications
 
-- [Government app](issuer-app)
-- [Citizens app](holder-app)
-- [Police officers app](verifier-app)
+- [Government app](./issuer-app)
+- [Citizens app](./holder-app)
+- [Police officers app](./verifier-app)

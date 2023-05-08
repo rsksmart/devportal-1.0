@@ -157,7 +157,7 @@ Follow this guide to configure rLogin in minutes
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="../rlogin/features">Features</a>
+        <a href="../../rif/rlogin/features">Features</a>
         <br />
         <br />
         <p>i18n, theming, dark/light, listeners, triggers</p>
@@ -183,7 +183,7 @@ Follow this guide to configure rLogin in minutes
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="../rlogin/migrating/">Migrating</a>
+        <a href="../../rif/rlogin/migrating/">Migrating</a>
         <br />
         <br />
         <p>From <code>web3modal</code> or <code>web3react</code></p>
@@ -245,6 +245,6 @@ rLogin supports Metamask features to change the network from the app. For the ot
 
 ![rlogin-architecture-simple](/rif/rlogin/assets/rlogin-architecture-simple.png)
 
-Read more about the architecture [here](../rlogin/design-and-architecture.md)
+Read more about the architecture [here](../../rif/rlogin/design-and-architecture/)
 
-> Follow the [development guidelines](../rlogin/develop.md) to collaborate
+> Follow the [development guidelines](../rlogin/develop/) to collaborate

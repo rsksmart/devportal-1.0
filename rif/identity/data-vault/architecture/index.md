@@ -9,6 +9,6 @@ tags: rlogin, rif, rif-identity, data-vault, architecture, libraries, DID, infra
 
 ## Data vault - Architecture
 
-- [Web client SDK](client)
-- [HTTPS service](service)
-- [Provider module](provider)
+- [Web client SDK](./client)
+- [HTTPS service](./service)
+- [Provider module](./provider)

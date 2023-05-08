@@ -35,7 +35,7 @@ RNS provides an architecture which enables the identification of blockchain addr
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="integrate">Integrate with RNS</a>
+        <a href="./integrate">Integrate with RNS</a>
         <br />
         <br />
         <p>Easy guides on how to integrate RNS in your solution.</p>
@@ -95,7 +95,7 @@ The design goals of the RIF Name Service influence its structure.
 - Because we want the name space to be useful in dissimilar networks and applications, we provide the ability to use the same name space with different protocol families or management. The RNS tags all data with a class as well as the type, so that we can allow parallel use of different formats for data of type address.
 - There may be tradeoffs between the cost of acquiring data, the speed of updates, and the accuracy of caches. The owner of the domain, who is the source of the data, should weigh these tradeoffs, and decide what to store, and how to cache.
 
-[RNS specs](specs)
+[RNS specs](./specs)
 
 ## Elements of the RNS
 
@@ -105,34 +105,34 @@ RNS has two major components:
 
   Conceptually, each node and leaf of the domain name space tree names a set of information, and query operations are attempts to extract specific types of information from a particular set. A query names the domain name of interest and describes the type of resource information that is desired.
 
-  [Specs](specs/registry)
+  [Specs](./specs/registry)
 
-  [Implementation](architecture/registry)
+  [Implementation](./architecture/registry)
 
 - **RNS Resolvers** are contracts that provide information from a name in response to client requests.
 
   Resolvers must be able to answer a query directly, or pursue the query using referrals to other resolvers. A resolver will typically be a contract's public function that is directly accessible to user programs or other contracts; hence no protocol is necessary between the resolver and the user program.
 
-  [Specs](specs/resolvers)
+  [Specs](../specs/resolvers)
 
 These three components roughly correspond to the three layers or views of the domain system:
-- From the user's point of view, the domain system is accessed through a simple [resolution operation](operations/resolve). The domain space consists of a single tree and the user can request information from any section of the tree.
+- From the user's point of view, the domain system is accessed through a simple [resolution operation](../operations/resolve). The domain space consists of a single tree and the user can request information from any section of the tree.
 - From the resolver's point of view, the domain system is composed of an unknown number of names. Each name has a corresponding resolver that provides information for a set of resolution types directly.
-- From the registry's point of view, the domain system consists of a [hierarchical tree](architecture/registry) where each leaf has an owner (contract or account) and an associated resolver that provides information of the name.
+- From the registry's point of view, the domain system consists of a [hierarchical tree](../architecture/registry) where each leaf has an owner (contract or account) and an associated resolver that provides information of the name.
 
 ## Guidelines on use
 
 Before RNS can be used to hold naming information for some kind of object, two needs must be met:
 - A convention for mapping between object names and domain names. This describes how information about an object is accessed. Find specs [here](specs#name-mapping-convention)
-- Resource record types and data formats for describing the object. Find specs [here](specs/resolvers).
+- Resource record types and data formats for describing the object. Find specs [here](./specs/resolvers).
 
 The guideline for finding a specific record for a name is as follows:
 1. Calculate the name identifier with [`namehash` function](specs#name-mapping-convention).
 2. Get the name's resolver address via [`resolver(bytes32)`](specs/registry#access).
 3. Determine if resolver supports desired resource record via [ERC-165 interface detection](https://eips.ethereum.org/EIPS/eip-165).
-4. Get the desired resource record. Find currently standardized resolvers [here](specs/resolvers).
+4. Get the desired resource record. Find currently standardized resolvers [here](./specs/resolvers).
 
-> Guidelines on [integration](integrate)
+> Guidelines on [integration](./integrate)
 
 ### Resource records
 

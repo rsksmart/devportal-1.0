@@ -16,9 +16,9 @@ Main features:
 - API for storing, updating and deleting, accessible only proving DID control - uses [DID Auth](../../../specs/did-auth)
 - Open API for retrieving data - **It is strongly recommended to encrypt the content saved in IPFS using this package.**
 
-It is an API designed using [IPFS Centralized Pinner Provider](../provider)
+It is an API designed using [IPFS Centralized Pinner Provider](../architecture/provider)
 
-It is easy to use via [Web Client SDK](../client)
+It is easy to use via [Web Client SDK](../architecture/client)
 
 It has three layers:
 - HTTP layer: exposes a simple HTTP REST API to interact with from any web client.
