@@ -97,7 +97,27 @@ to the Rootstock Infrastructure Framework.
 The stack is designed to create a
 more fair and inclusive financial system.
 
-![Rootstock Technology Stack - High Level](/assets/img/home/homepage-block-image.svg)
+![Rootstock Technology Stack - High Level](/assets/img/home/rootstock-homepage.svg)
+
+
+<div class="row">
+  <div class="col">
+    <h2 class="zg-text-bg">Bitcoin</h2><span class="zg-label ml-1">BTC</span>
+    <p> is a store and transfer of value.
+The blockchain is secure because miners
+with high infrastructure and energy costs
+create the new blocks to be added to the blockchain every 10 minutes.
+The more hashing power they provide, the more secure the network is.</p>
+  </div>
+    <div class="col">
+        <h2 class="zg-text-bg">Rootstock</h2><span class="zg-label ml-1 bg-pink">RSK</span>
+    <p> is the first open source smart contract platform that is
+powered by the bitcoin network.
+Rootstock's goal is to add value and functionality to the
+bitcoin ecosystem by enabling smart-contracts,
+near instant payments, and higher-scalability.</p>
+  </div>
+</div>
 
 **Bitcoin**, is a store and transfer of value.
 The blockchain is secure because miners
@@ -160,12 +180,20 @@ and receiving your bitcoin back in the bitcoin network.
 ### Quick Links
 
 <ul>
-  <li>Mainnet:
-    <a href="https://explorer.rsk.co/" target="_blank">Explorer</a>,
-    <a href="https://stats.rsk.co/" target="_blank">Stats</a>
+  <li><p class="btn-outline-white">Mainnet:</p>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Explorer,
+    </a>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://stats.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Stats
+    </a>
   </li>
-  <li>Testnet:
-    <a href="https://explorer.testnet.rsk.co/" target="_blank">Explorer</a>,
-    <a href="https://stats.testnet.rsk.co/" target="_blank">Stats</a>
-   </li>
+    <li><p class="btn-outline-white">Testnet:</p>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.testnet.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Explorer,
+    </a>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://stats.testnet.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Stats
+    </a>
+  </li>
 </ul>

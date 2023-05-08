@@ -15,7 +15,7 @@ The RIF Identity MVP has the objective to develop a basic model putting into act
 - User-centric cloud storage
 - Identity and credential authentication
 
-The model is the emission of ID Cards, Driving Licenses and Parking Permits. _Citizens_ use a [mobile wallet application](./applications/holder-app) where they input their identity details like name and age, and request any of these credentials to the _government_. The _government agent_ accesses a [web application](./applications/issuer-app) where all the credential requests are listed and can be manually granted. Once credentials are granted, _Citizens_ store them in a user-centric cloud storage called [_The Data Vault_](/rif/identity/data-vault). _Police officers_ can verify _citizen's_ credentials scanning a QR code using another [mobile application](./applications/verifier-app).
+The model is the emission of ID Cards, Driving Licenses and Parking Permits. _Citizens_ use a [mobile wallet application](https://dev.rootstock.io/rif/identity/mvp/applications/holder-app/) where they input their identity details like name and age, and request any of these credentials to the _government_. The _government agent_ accesses a [web application](https://dev.rootstock.io/rif/identity/mvp/applications/issuer-app/) where all the credential requests are listed and can be manually granted. Once credentials are granted, _Citizens_ store them in a user-centric cloud storage called [_The Data Vault_](https://dev.rootstock.io/rif/identity/data-vault/). _Police officers_ can verify _citizen's_ credentials scanning a QR code using another [mobile application](https://dev.rootstock.io/rif/identity/mvp/applications/verifier-app/).
 
 To understand the model we identify three actors:
 - An issuer: the government
@@ -32,7 +32,7 @@ The main user story across this project is:
 1. As  the Government I would like to issue credentials when requested
   - I want to validate citizen information
   - The credentials must be digitally signed
-  - The credentials must comply with [W3C VCs specs](../specs/#verifiable-credentials-model)
+  - The credentials must comply with [W3C VCs specs](https://dev.rootstock.io/rif/identity/specs/#verifiable-credentials-model)
 1. As a citizen I would like to store the credential issued by the MoT  in my phone
 1. As a citizen I would like to access a list of my credentials and its details with my phone
 1. As a citizen I would like to present a credential in form of QR when a police officer ask for it
@@ -44,9 +44,9 @@ The main user story across this project is:
 ---
 
 Continue reading:
-- [Run the project locally](./run)
-- [Read more about the design & architecture](./architecture)
-- [Use and modify the applications](./applications)
-- [Run the services](./services)
-- [Learnings](./learnings)
-- [Acknowledgements](./acknowledgements)
+- [Run the project locally](https://dev.rootstock.io/rif/identity/mvp/run/)
+- [Read more about the design & architecture](https://dev.rootstock.io/rif/identity/mvp/architecture/)
+- [Use and modify the applications](https://dev.rootstock.io/rif/identity/mvp/applications/)
+- [Run the services](https://dev.rootstock.io/rif/identity/mvp/services/)
+- [Learnings](https://dev.rootstock.io/rif/identity/mvp/learnings/)
+- [Acknowledgements](https://dev.rootstock.io/rif/identity/mvp/acknowledgements/)
