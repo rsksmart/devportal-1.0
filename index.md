@@ -101,19 +101,19 @@ more fair and inclusive financial system.
 
 <section >
 <div class="row">
-  <div class="col">
+  <div class="col two-x-card">
   <div class="header-div">
       <h2 class="zg-text-bg fs-28">Bitcoin</h2><span class="ml-1 zg-label">BTC</span>
   </div>
-    <p> is a store and transfer of value.
+    <p> Is a store and transfer of value.
 The blockchain is secure because miners
 with high infrastructure and energy costs
 create the new blocks to be added to the blockchain every 10 minutes.
 The more hashing power they provide, the more secure the network is.</p>
   </div>
-    <div class="col">
+    <div class="col two-x-card">
         <div class="header-div"><h2 class="zg-text-bg bg-pink fs-28">Rootstock</h2><span class="ml-1 zg-label bg-pink">RSK</span></div>
-    <p> is the first open source smart contract platform that is
+    <p> Is the first open source smart contract platform that is
 powered by the bitcoin network.
 Rootstock's goal is to add value and functionality to the
 bitcoin ecosystem by enabling smart-contracts,
@@ -123,9 +123,9 @@ near instant payments, and higher-scalability.</p>
 </section>
 
 
-<h2 class="rsk-tag-wht">How Rootstock (RSK) is connected to bitcoin?</h2>
+<h2 class="rsk-tag-wht">How Rootstock is connected to bitcoin?</h2>
 
-### Merged mining with Bitcoin
+<h3 class="fs-48">Merged mining with Bitcoin</h3>
 
 The first point of contact is through mining.
 
@@ -146,7 +146,7 @@ but does earn a reward from the merged mining.
 Check out [https://rootstock.io/mine-btc-with-rootstock/](https://rootstock.io/mine-btc-with-rootstock/)
 to learn more about mining.
 
-### Powpeg with Bitcoin
+<h3 class="fs-48">Powpeg with Bitcoin</h3>
 
 The second point of contact is the
 [Powpeg](/rsk/architecture/powpeg/),
@@ -172,7 +172,7 @@ and receiving your bitcoin back in the bitcoin network.
 ### Quick Links
 
 <ul id="ql-list">
-  <li><p class="rsk-tag-wht">Mainnet:</p>
+  <li><p class="rsk-tag-wht">Mainnet</p><br>
     <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.rsk.co/">
     <img src="./assets/img/home/external.svg"/>Explorer,
     </a>
@@ -180,7 +180,7 @@ and receiving your bitcoin back in the bitcoin network.
     <img src="./assets/img/home/external.svg"/>Stats
     </a>
   </li>
-    <li><p class="rsk-tag-wht">Testnet:</p>
+    <li><p class="rsk-tag-wht">Testnet</p><br>
     <a className="btn ext-link zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.testnet.rsk.co/">
     <img src="./assets/img/home/external.svg"/>Explorer,
     </a>
