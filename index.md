@@ -122,10 +122,10 @@ near instant payments, and higher-scalability.</p>
 </div>
 </section>
 
-
+<section>
 <h2 class="rsk-tag-wht">How Rootstock is connected to bitcoin?</h2>
 
-<h3 class="fs-48">Merged mining with Bitcoin</h3>
+<h3 class="fs-48 mb-32">Merged mining with Bitcoin</h3>
 
 The first point of contact is through mining.
 
@@ -145,8 +145,9 @@ but does earn a reward from the merged mining.
 
 Check out [https://rootstock.io/mine-btc-with-rootstock/](https://rootstock.io/mine-btc-with-rootstock/)
 to learn more about mining.
-
-<h3 class="fs-48">Powpeg with Bitcoin</h3>
+</section>
+<section>
+<h3 class="fs-48 mb-32">Powpeg with Bitcoin</h3>
 
 The second point of contact is the
 [Powpeg](/rsk/architecture/powpeg/),
@@ -168,8 +169,11 @@ This is called peg-in.
 You can do the reverse operation called peg-out,
 by sending your bitcoin to a special address in the Rootstock network,
 and receiving your bitcoin back in the bitcoin network.
+</section>
 
-### Quick Links
+<hr>
+
+<h3 class="fs-48">Quick Links</h3>
 
 <ul id="ql-list">
   <li><p class="rsk-tag-wht">Mainnet</p><br>
