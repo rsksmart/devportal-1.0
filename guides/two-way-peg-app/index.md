@@ -41,6 +41,7 @@ Here, you will also find instructions on how to perform [advanced operations](/g
         - [Using Transaction Status Page](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page)
         - [Using Blockcypher Explorer](/guides/two-way-peg-app/getting-started#using-blockcypher-explorer)
 - [Advanced Operations](/guides/two-way-peg-app/advanced-operations/)
+    - [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address)
     - [Account Selection](/guides/two-way-peg-app/advanced-operations#account-selection)
     - [How to view advanced details](/guides/two-way-peg-app/advanced-operations#how-to-view-advanced-details)
     - [Adjusting network fees](/guides/two-way-peg-app/advanced-operations#adjusting-network-fees)

@@ -16,9 +16,10 @@ In this section, we will learn how to get started using the 2 way peg app to con
 2. Use supported [browsers](#supported-browsers) and [wallets](#supported-wallets)
 3. Use [supported addresses](#supported-addresses)
 4. Get [mainnet and testnet](#getting-funds) funds
-5. Perform a peg-in transaction using [Ledger Hardware Wallet](#ledger-hardware-wallet)
-6. Perform a peg-in transaction using [Trezor Hardware Wallet](#trezor-hardware-wallet)
-7. [View a transaction status](#view-transaction-status).
+5. Perform a peg-in (BTC - RBTC) transaction using [Ledger Hardware Wallet](#ledger-hardware-wallet)
+6. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](#trezor-hardware-wallet)
+7. Perform a peg-out (RBTC - BTC) transaction using [Electrum](/guides/two-way-peg-app/advanced-operations#converting-rbtc-to-btc)
+8. [View a transaction status](#view-transaction-status).
 
 ## Requirements
 
