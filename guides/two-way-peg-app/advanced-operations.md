@@ -11,7 +11,7 @@ This section contains detailed instructions on how to perform advanced operation
 
 These operations include;
 
-- Reviewing funds in Bitcoin after a pegout by [viewing a derived address](#how-to-view-a-derived-address), 
+- How to review funds in Bitcoin after a pegout by [viewing a derived address](#how-to-view-a-derived-address), 
 Convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](#import-key-in-electrum)
 - Selecting [different accounts](#account-selection)
 - Viewing [advanced details](#how-to-view-advanced-details)
@@ -31,7 +31,7 @@ Here, we will learn how to view a derived address and use [Liquality](#using-liq
 
 ### Using Liquality
 
-To get your wallet private key, follow the steps below; 
+To get your wallet private key, follow the steps below: 
 
 Note: To set up a Liquality or a Metamask wallet. Check here for a step by step process for how to add the Rootstock network to the Liquality browser wallet.
 
@@ -82,9 +82,13 @@ Note: To set up a Liquality or a Metamask wallet. Check here for a step by step 
 
 ### Converting RBTC to BTC
 
-Before converting the funds, we need to convert the private key into a [WIF](https://learnmeabitcoin.com/technical/wif). For more info, see the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Wallet_import_format#:~:text=A%20wallet%20import%20format%20(WIF,make%20it%20easier%20to%20copy.)
+Before converting the funds, we need to convert the private key into a [Wallet Import Format (WIF)](https://learnmeabitcoin.com/technical/wif). A WIF private key is just another way of representing your original private key. If you have a WIF private key, you can always convert it back in to its original format.
+
+For more info on WIF, see the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Wallet_import_format#:~:text=A%20wallet%20import%20format%20(WIF,make%20it%20easier%20to%20copy.)
 
 #### Using Rootstock Utils (Recommended)
+
+[Rootstock Utils](https://github.com/rsksmart/utils#rsk-utils) is used to convert keys from BTC to Rootstock.
 
 Step 1: Clone the [Rootstock utils project](https://github.com/rsksmart/utils).
 
