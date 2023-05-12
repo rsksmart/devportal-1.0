@@ -155,6 +155,8 @@ puts wif
 
 ### Import key in Electrum
 
+[Electrum](https://electrum.org/#download) is used to verify a derived address, this address will then be used to receive and verify the converted funds (RBTC - BTC) when the pegout process is finished.
+
 Step 1: Download Electrum for your OS from the [website](https://electrum.org/#download).
 
 Follow the steps below to create a new wallet in Electrum and import the **private key**:
