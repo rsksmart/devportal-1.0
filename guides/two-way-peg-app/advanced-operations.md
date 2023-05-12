@@ -12,7 +12,7 @@ This section contains detailed instructions on how to perform advanced operation
 These operations include;
 
 - Reviewing funds in Bitcoin after a pegout by [viewing a derived address](#how-to-view-a-derived-address), 
-Convert [BTC - RBTC](#converting-btc-to-rbtc) and import a [key in Electrum](#import-key-in-electrum)
+Convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](#import-key-in-electrum)
 - Selecting [different accounts](#account-selection)
 - Viewing [advanced details](#how-to-view-advanced-details)
 - Adjusting [network fees](#adjusting-network-fees)
@@ -20,10 +20,12 @@ Convert [BTC - RBTC](#converting-btc-to-rbtc) and import a [key in Electrum](#im
 
 ## How to view a derived address
 
-Here, we will learn how to view a derived address and use [Liquality](#using-liquality) and [Metamask](#using-metamask) to get a private key. We will also learn how to [convert BTC - RBTC](#converting-btc-to-rbtc) and [Import a Key in Elecrum](#import-key-in-electrum).
+Here, we will learn how to view a derived address and use [Liquality](#using-liquality) and [Metamask](#using-metamask) to get a private key. We will also learn how to [convert RBTC - BTC](#converting-btc-to-rbtc) and [Import a Key in Elecrum](#import-key-in-electrum).
 
 ### Prerequisites:
--  Wallet private key
+- Wallet private key
+- [Electrum](https://electrum.org/#download)
+- [Rootstock Utils](https://github.com/rsksmart/utils)
 
 ### Getting a wallet private key
 
@@ -78,52 +80,19 @@ Note: To set up a Liquality or a Metamask wallet. Check here for a step by step 
 
 ![metamask - copy_assets](/assets/img/guides/two-way-peg-app/metamask/copy_assets.png)
 
-### Converting BTC to RBTC
+### Converting RBTC to BTC
 
-Before converting the funds, we need to convert the private key into a [Wallet Import Format](https://learnmeabitcoin.com/technical/wif). 
+Before converting the funds, we need to convert the private key into a [WIF](https://learnmeabitcoin.com/technical/wif). For more info, see the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Wallet_import_format#:~:text=A%20wallet%20import%20format%20(WIF,make%20it%20easier%20to%20copy.)
 
-To do this, follow the steps below;
+#### Using Rootstock Utils (Recommended)
 
-Step 1: Visit the url: [https://learnmeabitcoin.com/technical/wif](https://learnmeabitcoin.com/technical/wif)
-
-![metamask - WIF](/assets/img/guides/two-way-peg-app/other/wif.png)
-
-> You will find the [Ruby](https://www.ruby-lang.org/en/) code and a tool to convert the private key into a WIF (Wallet Import Format).
-
-Step 2: Paste the private key gotten in [Getting a wallet private key](#getting-a-wallet-private-key) in the “Private Key” field
-
-Step 3: Choose the network: `Mainnet` or `Testnet`
-
-Step 4: Choose compressed option `true`
-
-Step 5: Copy WIF value
-
-> - IMPORTANT:  Using the Ruby code is highly **recommended**
-> - This code requires the `checksum.rb` and `base58_encode.rb` functions as shown in the code below.
-
-```
-require_relative 'checksum'
-require_relative 'base58_encode'
-
-# Convert Private Key to WIF
-
-privatekey = "4fd050a8e4fd767f759d75492b9894bc97875e8201873e38443e3f5eae9c8db2f"
-extended = "80" + privatekey + "01"
-extendedchecksum = extended + checksum(extended)
-wif = base58_encode(extendedchecksum)
-
-puts wif
-```
-
-#### Using Rootstock Utils 
-
-Step 1: Clone the Rootstock [utils project](https://github.com/rsksmart/utils).
+Step 1: Clone the [Rootstock utils project](https://github.com/rsksmart/utils).
 
 Step 2: Follow the steps explained in the [README](https://github.com/rsksmart/utils/blob/master/README.md).
 
 Step 3: Install webpack using the code below;
 
-    ```
+    ```javascript
     npm install webpack@4.46.0 -g
     npm i webpack-cli@3.3.12 -g
     npm install
@@ -142,9 +111,47 @@ Step 5: Open the file in your browser
 
 `./build/index.html`
 
-Step 6: Open the generated application and add your private key and convert to WIF, using the steps below:
+Step 6: Open the generated application and add your private key and convert to WIF, 
+as shown in the image below:
 
 ![browser - open_browser](/assets/img/guides/two-way-peg-app/other/open_browser.png)
+
+#### Using LearnMeABitcoin
+
+> - IMPORTANT: We discourage users from using websites on the internet, note that if your private key is exposed, your funds will also be exposed, therefore it's recommended that you use the offline option, like [Rootstock utils](#using-rootstock-utils).
+
+Follow the steps below to get started;
+
+Step 1: Visit the url: [https://learnmeabitcoin.com/technical/wif](https://learnmeabitcoin.com/technical/wif)
+
+![metamask - WIF](/assets/img/guides/two-way-peg-app/other/wif.png)
+
+> You will find the [Ruby](https://www.ruby-lang.org/en/) code and a tool to convert the private key into a WIF.
+
+Step 2: Paste the private key gotten in [Getting a wallet private key](#getting-a-wallet-private-key) in the “Private Key” field
+
+Step 3: Choose the network: `Mainnet` or `Testnet`
+
+Step 4: Choose compressed option `true`
+
+Step 5: Copy WIF value
+
+> - IMPORTANT:  Using the Ruby code is highly **recommended**
+> - This code requires the `checksum.rb` and `base58_encode.rb` functions as shown in the code below.
+
+```shell
+require_relative 'checksum'
+require_relative 'base58_encode'
+
+# Convert Private Key to WIF
+
+privatekey = "4fd050a8e4fd767f759d75492b9894bc97875e8201873e38443e3f5eae9c8db2f"
+extended = "80" + privatekey + "01"
+extendedchecksum = extended + checksum(extended)
+wif = base58_encode(extendedchecksum)
+
+puts wif
+```
 
 ### Import key in Electrum
 
