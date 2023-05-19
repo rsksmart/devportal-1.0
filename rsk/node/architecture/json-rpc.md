@@ -4,9 +4,10 @@ title: JSON-RPC
 tags: rsk, rskj, node, rpc
 description: "The JSON-RPC methods supported by RSK nodes."
 menu_order: 2
+render_features: 'tables-with-borders'
 ---
 
-RSK currently supports the following:
+Rootstock (RSK) currently supports the following:
 
 - [JSON RPC methods](#json-rpc-methods)
 - [Management API methods](#management-api-methods)
