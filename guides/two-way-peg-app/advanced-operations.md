@@ -84,7 +84,7 @@ Note: To set up a Liquality or a Metamask wallet. Check here for a step by step 
 
 Before converting the funds, we need to convert the private key into a [Wallet Import Format (WIF)](https://learnmeabitcoin.com/technical/wif). A WIF private key is just another way of representing your original private key. If you have a WIF private key, you can always convert it back in to its original format.
 
-For more info on WIF, see the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Wallet_import_format#:~:text=A%20wallet%20import%20format%20(WIF,make%20it%20easier%20to%20copy.)
+For more info on WIF, see the [Bitcoin Wiki](https://en.bitcoin.it/wiki/Wallet_import_format)
 
 #### Using Rootstock Utils (Recommended)
 
