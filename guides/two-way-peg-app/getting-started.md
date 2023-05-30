@@ -70,7 +70,8 @@ These addresses are the original BTC addresses. It uses a special script hash fu
     - Ledger
     - Trezor
 - Software wallets
-    - [Liquality](/solutions/liquality/) (Coming soon)
+    - Liquality
+    - Metamask
 
 > The current version of the 2 way peg app supports peg-in transactions using hardware wallets. Future releases of the 2 way peg app will include support for performing peg-in operations using **software wallets**.
 
