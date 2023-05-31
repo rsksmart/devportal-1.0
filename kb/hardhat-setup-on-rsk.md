@@ -43,19 +43,19 @@ You can skip this section if you already have a working Node.js >= 12.0 installa
 
 [](#top "multiple-terminals")
 - Linux
-  ```shell
+```shell
 sudo apt update
 sudo apt install curl git
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 sudo apt install nodejs
-  ```
+```
 - Windows
-  ```windows-command-prompt
+```windows-command-prompt
 [Git's installer for Windows](https://git-scm.com/download/win)
 node-v12.XX.XX-x64.msi [from](https://nodejs.org/dist/latest-v12.x/) here
 ```
 - Mac OSX
-  ```shell
+```shell
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
 nvm install 12
 nvm use 12
