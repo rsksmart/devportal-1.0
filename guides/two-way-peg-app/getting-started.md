@@ -18,8 +18,11 @@ In this section, we will learn how to get started using the 2 way peg app to con
 4. Get [mainnet and testnet](#getting-funds) funds
 5. Perform a peg-in (BTC - RBTC) transaction using [Ledger Hardware Wallet](#ledger-hardware-wallet)
 6. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](#trezor-hardware-wallet)
-7. Perform a peg-out (RBTC - BTC) transaction using [Electrum](/guides/two-way-peg-app/advanced-operations#converting-rbtc-to-btc)
+7. How to view a derived address using [Electrum](/guides/two-way-peg-app/advanced-operations#converting-rbtc-to-btc)
 8. [View a transaction status](#view-transaction-status).
+
+> For how to perform a peg-out transaction using software wallets. See [Getting started with pegouts](/guides/two-way-peg-app/getting-started#using-software-wallets).
+
 
 ## Requirements
 
@@ -69,8 +72,9 @@ These addresses are the original BTC addresses. It uses a special script hash fu
 - Hardware wallets
     - Ledger
     - Trezor
-- Software wallets
-    - [Liquality](/solutions/liquality/) (Coming soon)
+- Software wallets (Peg-out)
+    - [Liquality](/guides/two-way-peg-app/getting-started-pegout#connect-your-liquality-wallet)
+    - [Metamask](/guides/two-way-peg-app/getting-started-pegout#connect-your-metamask-wallet)
 
 > The current version of the 2 way peg app supports peg-in transactions using hardware wallets. Future releases of the 2 way peg app will include support for performing peg-in operations using **software wallets**.
 
@@ -437,8 +441,7 @@ Follow the same process in [Step 1 - 9: Performing a Pegin transaction with Ledg
 
 ## Using Software Wallets
 
-Coming soon.
-
+To get started with how to perform a pegout transaction using Metamask and Liquality. See section on [Getting started with Pegouts](/guides/two-way-peg-app/getting-started-pegout/).
 
 ## View transaction status
 
