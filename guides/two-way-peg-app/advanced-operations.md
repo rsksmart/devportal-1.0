@@ -18,18 +18,21 @@ Convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](#im
 - Adjusting [network fees](#adjusting-network-fees)
 - Viewing [Advanced data](#advanced-data)
 
-## How to view a derived address
 
-Here, we will learn how to view a derived address and use [Liquality](#using-liquality) and [Metamask](#using-metamask) to get a private key. We will also learn how to [convert RBTC - BTC](#converting-btc-to-rbtc) and [Import a Key in Elecrum](#import-key-in-electrum).
-
-### Prerequisites:
+## Prerequisites:
 - Wallet private key
 - [Electrum](https://electrum.org/#download)
 - [Rootstock Utils](https://github.com/rsksmart/utils)
 
+## How to view a derived address
+
+A derived address is the BTC address derived from the RBTC account. When using the 2 way peg app, it is important to know which address you will receive your BTCs. See [Viewing advanced details](#how-to-view-advanced-details).
+
+We will learn how to view a derived address and use [Liquality](#using-liquality) and [Metamask](#using-metamask) to get a private key. We will also learn how to [convert RBTC - BTC](#converting-btc-to-rbtc) and [Import a Key in Elecrum](#import-key-in-electrum).
+
 ### Getting a wallet private key
 
-### Using Liquality
+#### Using Liquality
 
 To get your wallet private key, follow the steps below: 
 
@@ -58,7 +61,7 @@ Note: To set up a Liquality or a Metamask wallet. Check here for a step by step 
 
 **Step 8**: Copy the private key and click on “Done”
 
-### Using Metamask
+#### Using Metamask
 
 **Step 1**: Open the Metamask wallet on your browser, you can find this in the extensions tab in your browser.
 
@@ -147,7 +150,7 @@ Step 5: Copy WIF value
 require_relative 'checksum'
 require_relative 'base58_encode'
 
-# Convert Private Key to WIF
+##### Convert Private Key to WIF
 
 privatekey = "4fd050a8e4fd767f759d75492b9894bc97875e8201873e38443e3f5eae9c8db2f"
 extended = "80" + privatekey + "01"
@@ -157,7 +160,7 @@ wif = base58_encode(extendedchecksum)
 puts wif
 ```
 
-### Import key in Electrum
+#### Import key in Electrum
 
 [Electrum](https://electrum.org/#download) is used to verify a derived address, this address will then be used to receive and verify the converted funds (RBTC - BTC) when the pegout process is finished.
 
