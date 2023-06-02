@@ -20,7 +20,7 @@ In this section, we will learn how to perform a [peg-out](/guides/two-way-peg-ap
 - [Metamask Wallet](/develop/wallet/use/metamask/), or
 - [Liquality Wallet](/solutions/liquality/)
 
-> - Ensure you have installed any of the following software wallet in your browser. For more information, see [Supported Browsers](/guides/two-way-peg-app/getting-started#supported-browsers) and [Supported Wallets](/guides/two-way-peg-app/getting-started#supported-wallets) section.
+> - Ensure you have installed any of the software wallet listed above in your browser. For more information, see the [Supported Browsers](/guides/two-way-peg-app/getting-started#supported-browsers) and [Supported Wallets](/guides/two-way-peg-app/getting-started#supported-wallets) section.
 ​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rsk.co/) for learning purposes.
 > - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://2wp-app.rsk.co/) application.
 
@@ -28,6 +28,7 @@ In this section, we will learn how to perform a [peg-out](/guides/two-way-peg-ap
 ## Performing a peg-out transaction using MetaMask
 ​
 **Step 1: Select conversion type**
+
 ​
 To perform a peg-out, open  the [2 way peg app - Testnet](https://2wp-app.testnet.rsk.co/) in your browser.
 
@@ -36,6 +37,7 @@ To perform a peg-out, open  the [2 way peg app - Testnet](https://2wp-app.testne
 ![Select rbtc to btc conversion](/assets/img/guides/two-way-peg-app/select-rbtc-to-btc-conversion.png)
 ​
 **Step 3: Connect your MetaMask wallet**
+
 ​
 Click on 'Connect wallet' and then select 'MetaMask'.
 ​
@@ -54,8 +56,9 @@ And then click 'Confirm' to complete the first step.
 ​
 **Step 4: Enter an amount**
 
-Enter the amount you want to send​. 
-You can either enter it manually or click 'Use max available balance' if you want to send all the RBTC you have.
+
+Enter the amount you want to send​. You can either enter it manually, 
+or click 'Use max available balance' if you want to send all the RBTC you have.
 ​
 ![RBTC amount to send input](/assets/img/guides/two-way-peg-app/amount-input.png)
 ​
@@ -77,7 +80,7 @@ After signing, you will be able to know the derived Bitcoin address where you wi
 ​
 **Step 6: Send transaction**
 
-​
+
 Confirm the information, click 'Send' in 2-Way Peg App and then  click 'Confirm' in MetaMask.
 ​
 ![Click to send pegout transaction](/assets/img/guides/two-way-peg-app/send-pegout.png)
@@ -90,12 +93,13 @@ See final screen as shown in the image below;
 ## Performing a peg-out transaction using Liquality
 
 The [Liquality Wallet](/solutions/liquality/) is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications. 
+
 ​
-Step 1: Choose the RBTC - BTC conversion type
+**Step 1: Choose the RBTC - BTC conversion type**
 
 ![Select rbtc to btc conversion](/assets/img/guides/two-way-peg-app/select-rbtc-to-btc-conversion.png)
 ​
-Step 2: Connect your Liquality wallet
+**Step 2: Connect your Liquality wallet**
 ​
 ![Click connect wallet](/assets/img/guides/two-way-peg-app/connect-wallet-btn.png)
 ![Select liquality wallet](/assets/img/guides/two-way-peg-app/select-liquality.png)
@@ -104,38 +108,43 @@ See how to unlock your wallet, if locked.
 ​
 ![Waiting wallet connection](/assets/img/guides/two-way-peg-app/unlock-liquality.png)
 ​
-and then click 'Confirm' to complete the first step.
+Then, click 'Confirm' to complete the first step.
 ​
 ![Confirm metamask wallet connection](/assets/img/guides/two-way-peg-app/confirm-liquality.png)
 ​
-Step 3: Enter the amount you want to send
+**Step 3: Enter the amount you want to send**
+
 ​
 You can either enter it manually or click 'Use max available balance' if you want to convert all the rbtc you have.
 ​
 ![Rbtc amount to send input](/assets/img/guides/two-way-peg-app/amount-input.png)
 ​
-Step 4: Verify your Bitcoin destination address
+**Step 4: Verify your Bitcoin destination address**
 
 We don't support the Bitcoin destination address' derivation from Liquality yet, so you have to follow the documentation linked here:
 ​
 ![Can't derive destination address using liquality](/assets/img/guides/two-way-peg-app/cant-derive-liquality.png)
 ​
-Step 5: Send transaction
+**Step 5: Send transaction**
 
-Review the information, click 'Send' in 2-way peg app and then click 'Confirm' in Liquality.
+
+Review the information, and click 'Send' in 2-way peg app and then click 'Confirm' in Liquality.
 ​
 ![Send pegout transaction](/assets/img/guides/two-way-peg-app/send-liquality.png)
 ![Confirm pegout transaction on liquality wallet](/assets/img/guides/two-way-peg-app/confirm-liquality.png)
+
 ​
 The final screen will be like the one below.
 ![Btc is on its way](/assets/img/guides/two-way-peg-app/final-screen-liquality.png)
+
 ​
-To see the status of a transaction, click on the *Go to status page* button, you will see a page  as shown below.
+To see the status of a transaction, click on the *Go to status page* button, you will see a page  as shown below, with your pegout tx and your Bitcoin recipient address information as well.
 ​
 ![Transaction status for pegout id](/assets/img/guides/two-way-peg-app/tx-status.png)
-​
- with your pegout tx and your Bitcoin recipient address information as well.
- This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address) and [How to check a transaction status](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page).
+
+
+This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address) and [How to check a transaction status](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page).
+
 ​
 ---
 ​
