@@ -44,41 +44,41 @@ Create a ```Dockerfile``` to setup the build environment
 [](#top "multiple-terminals")
 - Linux
   ```shell
-FROM ubuntu:16.04
-RUN apt-get update -y && \
-    apt-get install -y git curl gnupg-curl openjdk-8-jdk && \
-    rm -rf /var/lib/apt/lists/* && \
-    apt-get autoremove -y && \
-    apt-get clean
-RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git /code/rskj
-RUN git clone https://github.com/rsksmart/reproducible-builds 
-RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
-WORKDIR /code/rskj
-RUN gpg --verify SHA256SUMS.asc
-RUN sha256sum --check SHA256SUMS.asc
-RUN ./configure.sh
-RUN ./gradlew clean build -x test
+  FROM ubuntu:16.04
+  RUN apt-get update -y && \
+      apt-get install -y git curl gnupg-curl openjdk-8-jdk && \
+      rm -rf /var/lib/apt/lists/* && \
+      apt-get autoremove -y && \
+      apt-get clean
+  RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
+  RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
+  RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git /code/rskj
+  RUN git clone https://github.com/rsksmart/reproducible-builds 
+  RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
+  WORKDIR /code/rskj
+  RUN gpg --verify SHA256SUMS.asc
+  RUN sha256sum --check SHA256SUMS.asc
+  RUN ./configure.sh
+  RUN ./gradlew clean build -x test
   ```
 - Mac OSX
  ```terminal
-brew update && \
-brew install git gnupg openjdk@8 && \
-    rm -rf /var/lib/apt/lists/* && \
-    brew autoremove && \
-    brew cleanup
-RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
-RUN git clone https://github.com/rsksmart/reproducible-builds 
-RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
-RUN CD /code/rskj
-RUN gpg --verify SHA256SUMS.asc
-RUN sha256sum --check SHA256SUMS.asc
-RUN ./configure.sh
-RUN ./gradlew clean build -x test   
-```
+  brew update && \
+  brew install git gnupg openjdk@8 && \
+      rm -rf /var/lib/apt/lists/* && \
+      brew autoremove && \
+      brew cleanup
+  RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
+  RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
+  RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
+  RUN git clone https://github.com/rsksmart/reproducible-builds 
+  RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
+  RUN CD /code/rskj
+  RUN gpg --verify SHA256SUMS.asc
+  RUN sha256sum --check SHA256SUMS.asc
+  RUN ./configure.sh
+  RUN ./gradlew clean build -x test   
+  ```
 
 If you are not familiar with Docker or the ```Dockerfile``` format: what this does is use the Ubuntu 16.04 base image and install ```git```, ```curl```, ```gnupg-curl``` and ```openjdk-8-jdk```, required for building RSK node.
 
