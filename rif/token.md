@@ -84,69 +84,18 @@ See [supported wallets](/wallet/use/).
 
 ## Exchanges
 
+- [Sovryn](https://sovryn.app/convert)
+- [Binance](https://www.binance.com/en)
+- [Gate.io](https://www.gate.io/)
+- [Lbank](https://www.lbank.info/)
+- [MEXC](https://www.mexc.com/)
+- [Coinex](https://www.coinex.com/)
+- [Hotbit](https://www.hotbit.io/)
+
 Looking for [RBTC](/rsk/rbtc/)?
 
 You can obtain RBTC using [these exchanges](/rsk/rbtc/#exchanges),
 or use the exchanges listed below👇 to obtain the RIF token.
-
-<div class="owl-carousel owl-theme">
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.hotbit.io/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/hotbit.png" alt="Hotbit" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.mxc.com/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/MXC.png" alt="MXC" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.kucoin.com/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/logo_kucoin.png" alt="kucoin" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.bithumb.pro/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/Bithumb-Global-LOGO_black.png" alt="Bithumb-Global" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.liquid.com/buy-bitcoin/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="https://www.rifos.org/assets/img/exchanges/LiquidLogo.jpg" alt="Liquid" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.binance.com/en" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="/assets/img/rif/exchanges/bifinance.png" alt="Binance" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://www.gate.io/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="/assets/img/rif/exchanges/gate_io.png" alt="gate" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-  <div class="item" style="width: 275px;">
-    <div class="item">
-      <a href="https://exolix.com/" rel="nofollow noopener noreferrer" target="_blank">
-        <img src="/assets/img/rif/exchanges/exolix_logo.png" alt="Exolix" class="img-fluid usecase-logo">
-      </a>
-    </div>
-  </div>
-</div>
 
 ## Technical information
 
