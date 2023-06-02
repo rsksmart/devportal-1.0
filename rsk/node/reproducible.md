@@ -62,7 +62,7 @@ Create a ```Dockerfile``` to setup the build environment
   RUN ./gradlew clean build -x test
   ```
 - Mac OSX
- ```terminal
+  ```terminal
   brew update && \
   brew install git gnupg openjdk@8 && \
       rm -rf /var/lib/apt/lists/* && \
