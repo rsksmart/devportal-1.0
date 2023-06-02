@@ -14,6 +14,7 @@ RSK’s 2-way peg protocol, called “the **Powpeg**”, has matured from its in
 
 > - The 2 Way Peg Application is now available on [Testnet](https://2wp-app.testnet.rsk.co/) and [Mainnet](https://2wp-app.rsk.co/). 
 > - For general information about the design and architecture, how to perform a peg-in transaction using Ledger and Trezor, Frequently asked questions and advanced operations you can perform on the 2 way peg app, please refer to the [2 way peg app user guide](/guides/two-way-peg-app/).
+> - See the [Powpeg HSM Firmware Attestation](#powpeg-hsm-firmware-attestation)
 
 ## The History of the Powpeg
 
