@@ -11,6 +11,7 @@ In this section, we will learn how to perform a [peg-out](/guides/two-way-peg-ap
 
 1. Perform a peg-out using [Meta Mask wallet](#performing-a-peg-out-transaction-using-metamask)
 2. Perform a peg-out using [Liquality wallet](#performing-a-peg-out-transaction-using-liquality)
+3. Perform a peg-out using [Ledger+Liquality](#performing-a-peg-out-transaction-using-ledger-and-liquality)
 
 > For how to perform a peg-in transaction using hardware wallets. See [Getting started using hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets).
 
@@ -145,8 +146,44 @@ To see the status of a transaction, click on the *Go to status page* button, you
 
 This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address) and [How to check a transaction status](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page).
 
-​
+## Performing a peg-out transaction using Ledger and Liquality
+
+The [Liquality Wallet](/solutions/liquality/) is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications. 
+
+# Steps to use Ledger device with Liquality
+
+### Pre - conditions:
+* Plug the Ledger into the computer
+* Enter pin to unlock it
+* On the device, navigate to the TSK or RSK Test app.
 ---
+
+1. Open Liquality and select Ledger option
+
+![Select Ledger Option](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/1-ledger-steps.png)
+
+
+2. In the page chose RSK asset and click on "Connect" button
+
+
+![Connect Ledger](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/2-ledger-steps.png)
+
+
+3. Choose the account that you want to use with Liquality
+
+![Choose account](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/3-ledger-steps.png)
+
+
+4. Click "Close this Tab" button
+
+![Close tab](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/4-ledger-steps.png)
+
+
+5. Now you can see "Ledger" label in Liquality accounts
+
+![Final screen](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/5-ledger-steps.png)
+
+​---
 ​
 ## Resources
 - [Performing a Peg-in transaction using Hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets)
