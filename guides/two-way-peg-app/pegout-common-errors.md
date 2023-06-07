@@ -1,6 +1,6 @@
 # Liquality Common Errors
 
-### This will be a guide with common Liquality errors and how to fix them.
+## This will be a guide to show common errors when using Liquality with 2 way peg app and how to fix them.
 
 ![User Rejected error](/assets/img/guides/two-way-peg-app/liquality/common-errors/1-common-errors.png)
 
