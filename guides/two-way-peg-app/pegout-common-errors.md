@@ -25,7 +25,11 @@ This error occurs if you have MetaMask and Liquality enabled.
 
 And it will surely appear too if you do something outside the connecting process when it is happening (for example, disable the Liquality wallet extension in the middle of it).
 
-The way to fix the two errors is the same: go to manage chrome extensions, disable any other wallet extension, disable Liquality, enable it, refresh the page app.
+To fix both errors: 
+
+* Go to manage chrome extensions, and disable any other wallet extension, 
+* Disable Liquality, and  enable it
+* Refresh the 2 way peg app.
 
 ![Disable extensions](/assets/img/guides/two-way-peg-app/liquality/common-errors/4-common-errors.png)
 
