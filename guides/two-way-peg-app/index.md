@@ -43,6 +43,7 @@ Here, you will also find instructions on how to perform [advanced operations](/g
 - [Getting Started with Pegouts](/guides/two-way-peg-app/getting-started-pegout/)
     - [Using Meta Mask](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-metamask)
     - [Using Liquality](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-liquality)
+    - [Pegout common errors](/guides/two-way-peg-app/pegout-common-errors)
     - [Using Ledger + Liquality](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-ledger-and-liquality)
 - [Advanced Operations](/guides/two-way-peg-app/advanced-operations/)
     - [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address)
