@@ -2,6 +2,10 @@
 
 ## This will be a guide to show common errors when using Liquality with 2 way peg app and how to fix them.
 
+### User Rejected Error
+
+This error occurs when the user starts connecting its wallet and for some reason cancels it.
+
 ![User Rejected error](/assets/img/guides/two-way-peg-app/liquality/common-errors/1-common-errors.png)
 
 This error occurs when the user starts connecting its wallet and for some reason cancels it.
