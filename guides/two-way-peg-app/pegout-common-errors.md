@@ -13,6 +13,10 @@ This error occurs when the user starts connecting its wallet and for some reason
 
 ---
 
+### Error when connecting
+
+This error occurs if you have MetaMask and Liquality enabled in your browser. 
+
 ![Error connecting](/assets/img/guides/two-way-peg-app/liquality/common-errors/2-common-errors.png)
 
 This error occurs if you have MetaMask and Liquality enabled. 
