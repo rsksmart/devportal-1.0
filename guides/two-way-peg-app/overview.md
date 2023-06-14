@@ -52,7 +52,6 @@ The 2 way peg app communicates directly with the following services:
 - Trezor: Directly via usb
 - Ledger: Directly via usb and integrated with the manufacturer's application
 - Liquality: Directly through the application provided by the company
-- Nifty: Through the [rLogin](/rif/rlogin/) application
 - Metamask: Through the rLogin application. Learn more about the [rLogin application](https://github.com/rsksmart/rLogin)
 
 **Secure transactions**
