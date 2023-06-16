@@ -106,8 +106,9 @@ Developers can find a unique opportunity to build their dApps on our secure and 
 
 To verify the Powpeg nodes, follow the HSM firmware attestation process using the steps below:
 
-<div title="Powpeg HSM Firmware Attestation">
-   <button id="sov-button">Sovryn</button>
-   <button id="pnet-button">pNetwork</button>
-   <iframe title="powpeg-hsm-attestation" id='powpeg-hsm-attestation-frame' width="100%" height="400" frameborder="10"></iframe>
-</div>
+
+<iframe class="w-100 rounded-4" src="https://dev.rootstock.io/assets/rsk/architecture/powpeg-hsm-attestation/sovryn.html" title="Sovryn"></iframe>
+
+To verify the Powpeg nodes, follow the HSM firmware attestation process using the steps below:
+
+<iframe class="w-100 rounded-4" src="https://dev.rootstock.io/assets/rsk/architecture/powpeg-hsm-attestation/pnetwork.html" title="pNetwork"></iframe>
