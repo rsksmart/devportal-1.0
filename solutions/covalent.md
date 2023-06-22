@@ -1,18 +1,16 @@
 ---
 menu_order: 1500
 menu_title: Covalent
-title: 'Covalent - Solutions on RSK'
-description: 'Covalent provides a unified API bringing visibility to billions of blockchain data points.'
-tags: covalent, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts, API, data-points, indexing, query
+title: 'Covalent - Solutions on Rootstock'
+description: 'Covalent is a hosted blockchain data solution providing access to historical and current on-chain data for 100+ supported blockchains, including Rootstock'
+tags: covalent, rsk-solutions, rsk, rootstock, troubleshooting, defi, dApps, blockchain, smart-contracts, API, data-points, indexing, query
 layout: 'rsk'
+render_features: 'tables-with-borders'
 ---
 
-[Covalent](https://covalenthq.com/) provides a unified API bringing visibility to billions of blockchain data points.
+[Covalent](https://www.covalenthq.com/?utm_source=rootstock&utm_medium=partner-docs) is a hosted blockchain data solution providing access to historical and current on-chain data for 100+ supported blockchains, including [Rootstock](https://www.covalenthq.com/docs/networks/rootstock/?utm_source=rootstock&utm_medium=partner-docs).
 
 ![Covalent-banner](/assets/img/solutions/Covalent/Covalent_Banner.png)
-
-The Covalent API supports both the RSK Mainnet and RSK Testnet networks. See [RSK Indexing and Query Data API](https://www.covalenthq.com/docs/networks/rsk) for the full details, including `chain_id` values. All Covalent API [*Class A*](https://www.covalenthq.com/docs/api/#tag--Class-A) endpoints are supported for the RSK mainnet and testnet networks. You can query either network via the unified Covalent API by changing the `chainId`.
-
 ## How Covalent Works
 
 <div class="video-container">
@@ -21,52 +19,66 @@ The Covalent API supports both the RSK Mainnet and RSK Testnet networks. See [RS
 
 ## About Covalent
 
-[Covalent](https://www.covalenthq.com/) leverages big-data technologies to create meaning from hundreds of billions of data points, delivering actionable insights to investors and allowing developers to allocate resources to higher-utility goals within their organization. 
+Covalent provides the industry-leading Unified API bringing visibility to billions of Web3 data points. Developers use Covalent to build exciting multi-chain applications like crypto wallets, NFT galleries, and investor dashboard tools utilizing data from 100+ blockchains including Rootstock
 
-Instead of painstakingly sourcing data from a small handful of chains, Covalent aggregates information from across dozens of sources including nodes, chains, and data feeds. The Covalent API then sources end-users with individualized data by wallet, including current and historical investment performance across all types of digital assets. Most importantly, Covalent returns this data in a rapid and consistent manner, incorporating all relevant data within a single unified API interface.
+The Covalent API maintains a full archival copy of every supported blockchain, meaning every balance, transaction, log event, and NFT asset data is available from the genesis block. This data is available via:
+​
+1. [Unified API](#unified-api) - Incorporate blockchain data into your app with a familiar REST API
+2. [Increment](#increment) - Create and embed custom charts with no-code analytics
 
 ### Why use Covalent?
 
-Covalent provides a unified API  that brings full transparency and visibility to assets across all blockchain networks. This API allows you to pull detailed, granular and historical blockchain transaction data from RSK (and other blockchains) with no code. The Covalent API allows you to create entirely new applications or augment existing ones without configuring or maintaining infrastructure. 
+Use Covalent if you need:
+* Structured and enhanced on-chain data well beyond what you get from RPC providers
+* Broad and deep multi-chain data at scale
+* Enterprise-grade performance
+​
+> **[Sign up to start building on Rootstock](https://www.covalenthq.com/platform/?utm_source=rootstock&utm_medium=partner-docs)**
 
-### Features of Covalent
+## Unified API
+​
+[![example-api-response-json](https://www.datocms-assets.com/86369/1686100271-example-api-response-json-rootstock.png)](https://www.covalenthq.com/docs/api/balances/get-token-balances-for-address/?utm_source=rootstock&utm_medium=partner-docs)
+​
+The Covalent API is RESTful and offers the following for Rootstock:
 
-- 25 billion rich transactions indexed including every transaction since genesis for RSK and several other blockchains.
-- 200K+ smart contracts are available with internal data structures for querying.
-- 30K+ price feeds for fiat and crypto pairs.
-- 30-second refresh rate.
+​| **Features** |  |  
+| --- | --- |  
+| Response Formats | JSON, CSV |  
+| Real-Time Data Latency | 2 blocks |  
+| Batch Data Latency | 30 minutes |  
+| Supported Network (`chainName`, `chainId`) | Mainnet: `rsk-mainnet`, `30` <br> Testnet: `rsk-testnet`, `31` |  
+| API Tiers | [Free tier](https://www.covalenthq.com/docs/unified-api/pricing/?utm_source=rootstock&utm_medium=partner-docs#free-tier) <br> [Premium tier](https://www.covalenthq.com/docs/unified-api/pricing/?utm_source=rootstock&utm_medium=partner-docs#premium-tier) |  
+| API Categories | [Balances](https://www.covalenthq.com/docs/api/balances/get-token-balances-for-address/?utm_source=rootstock&utm_medium=partner-docs) <br> [NFTs](https://www.covalenthq.com/docs/api/nft/get-nfts-for-address/?utm_source=rootstock&utm_medium=partner-docs) <br> [Transactions](https://www.covalenthq.com/docs/api/transactions/get-transactions-for-address/?utm_source=rootstock&utm_medium=partner-docs) <br> [Security](https://www.covalenthq.com/docs/api/security/get-token-approvals-for-address/?utm_source=rootstock&utm_medium=partner-docs) <br> [Log Events & Others](https://www.covalenthq.com/docs/api/base/get-log-events-by-contract-address/?utm_source=rootstock&utm_medium=partner-docs) |
 
-### Use Cases
+### Get Started
+- [API Key](https://www.covalenthq.com/platform/?utm_source=rootstock&utm_medium=partner-docs) - sign up for free
+- [Quickstart](https://www.covalenthq.com/docs/unified-api/quickstart/?utm_source=rootstock&utm_medium=partner-docs) - summary of key resources to get you building immediately on blockchain
+- [API Reference](https://www.covalenthq.com/docs/api/?utm_source=rootstock&utm_medium=partner-docs) - try all the endpoints directly from your browser
+- [Guides](https://www.covalenthq.com/docs/unified-api/guides/?utm_source=rootstock&utm_medium=partner-docs) - learn how to build dapps, fetch data and extend your Web3 knowledge
 
-Access to rich, historical data on the RSK Blockchain unlocks a whole host of use cases, many of which are still unknown and coming to light with the rapid pace of innovation in this space. Some current use cases include:
+## Increment
+​
+[![example-increment-chart](https://www.datocms-assets.com/86369/1684974544-increment-example-partner-docs.png)](https://www.covalenthq.com/platform/increment/#/?utm_source=rootstock&utm_medium=partner-docs)
+​
+Increment is a novel no-code charting and reporting tool powered by Covalent, revolutionizing how the Web3 space approaches analytics. Many analytics tools let you write SQL to create charts, but *Increment is the only one to encode business logic - Reach, Retention, and Revenue - into an SQL compiler that can write valid SQL for you.*
+​
+### Use cases
+Increment can be used for:
+​
+- [Analyzing Blockchain Networks](https://www.covalenthq.com/docs/increment/data-models/chain-gdp/?utm_source=rootstock&utm_medium=partner-docs)
+- [Analyzing DEXs](https://www.covalenthq.com/docs/increment/data-models/swap-land/?utm_source=rootstock&utm_medium=partner-docs)
+- [Analyzing NFT Marketplaces](https://www.covalenthq.com/docs/increment/data-models/jpeg-analysis/?utm_source=rootstock&utm_medium=partner-docs)
+​
+For example, click on the following table to get the latest number of active wallets, transactions and tokens by day, week, month or year for Rootstock:
+[![example-network-status-increment](https://www.datocms-assets.com/86369/1686100924-example_network_status_increment_general.png)](https://www.covalenthq.com/docs/networks/rootstock/?utm_source=rootstock&utm_medium=partner-docs#network-status)
+​
 
-- DeFi on Bitcoin
-- Multi-chain wallets to present balances, transactions, ROI, portfolio values as well as analytics on token concentrations, volumes and distribution
-- NFT dashboards showing price trends, liquidity and ROI of collectibles
-- Tax compliance tools
-- DEX analytics and transparency dashboards
-- DAO governance and analytics dashboards
-
-To see what developers have built using the Covalent API, check out the Covalent [Project Showcase](https://www.covalenthq.com/docs/project-showcase) 
-
-## Documentation
-
-### Tutorials
-
-- [Get Started with Covalent](https://www.covalenthq.com/docs/learn)
-- [Get API key](https://www.covalenthq.com/platform/#/auth/register/)
-- [API Docs](https://www.covalenthq.com/docs/api)
-
-### Guides
-
-- [RSK Indexing and Query Data API](https://www.covalenthq.com/docs/networks/rsk)
-- [Class A endpoints](https://www.covalenthq.com/docs/api/#tag--Class-A)
-- [How to query the RSK network on Covalent API](https://replit.com/@1millionwallets/RSK-Wallet-Balance-Dashboard#README.md)
-- [Covalent Whitepaper](https://www.covalenthq.com/static/documents/Covalent%20Whitepaper%20Apr%202021%20v1%20Branded.pdf)
-
-### DevTools
-
-- See [Covalent DevTools](https://www.covalenthq.com/docs/tools)
+### Get started
+- [Increment](https://www.covalenthq.com/platform/increment/#/?utm_source=rootstock&utm_medium=partner-docs) - login via the Covalent Platform
+- [Docs](https://www.covalenthq.com/docs/increment/?utm_source=rootstock&utm_medium=partner-docs) - learn how to use Increment to build dynamic, custom charts
+- [Data Models Demo](https://www.covalenthq.com/docs/increment/data-models/model-intro/?utm_source=rootstock&utm_medium=partner-docs) - build analytics in 3 clicks
+- [Explore Models. Seek Alpha.](https://www.covalenthq.com/platform/increment/#/pages/covalent/chain-gdp/?utm_source=rootstock&utm_medium=partner-docs) - browse all data models
+- [Use Models. Become Alpha.](https://www.covalenthq.com/platform/increment/#/sql/query_b6c88fd8604f49d5920ca86fa7/?utm_source=rootstock&utm_medium=partner-docs) - use a data model
 
 ## Get in touch
 
@@ -74,7 +86,6 @@ If you have any technical issues write to [contact@covalenthq.com](mailto:contac
 
 - [Website](https://www.covalenthq.com/about/)
 - [Blog](https://www.covalenthq.com/blog/)
-- [Community](https://www.covalenthq.com/docs/tools/community)
 
 ### Socials
 
