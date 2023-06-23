@@ -22,7 +22,7 @@ render_features: 'tables-with-borders'
 Covalent provides the industry-leading Unified API bringing visibility to billions of Web3 data points. Developers use Covalent to build exciting multi-chain applications like crypto wallets, NFT galleries, and investor dashboard tools utilizing data from 100+ blockchains including Rootstock
 
 The Covalent API maintains a full archival copy of every supported blockchain, meaning every balance, transaction, log event, and NFT asset data is available from the genesis block. This data is available via:
-​
+
 1. [Unified API](#unified-api) - Incorporate blockchain data into your app with a familiar REST API
 2. [Increment](#increment) - Create and embed custom charts with no-code analytics
 
@@ -32,16 +32,16 @@ Use Covalent if you need:
 * Structured and enhanced on-chain data well beyond what you get from RPC providers
 * Broad and deep multi-chain data at scale
 * Enterprise-grade performance
-​
+
 > **[Sign up to start building on Rootstock](https://www.covalenthq.com/platform/?utm_source=rootstock&utm_medium=partner-docs)**
 
 ## Unified API
-​
+
 [![example-api-response-json](https://www.datocms-assets.com/86369/1686100271-example-api-response-json-rootstock.png)](https://www.covalenthq.com/docs/api/balances/get-token-balances-for-address/?utm_source=rootstock&utm_medium=partner-docs)
-​
+
 The Covalent API is RESTful and offers the following for Rootstock:
 
-​| **Features** |  |  
+| **Features** |  |  
 | --- | --- |  
 | Response Formats | JSON, CSV |  
 | Real-Time Data Latency | 2 blocks |  
