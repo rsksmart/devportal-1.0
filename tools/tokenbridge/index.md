@@ -3,11 +3,11 @@ menu_order: 500
 menu_title: Token Bridge
 section_title: Token Bridge
 layout: rsk
-title: Rootstock <-> ETH Token Bridge
+title: Rootstock (RSK) <-> ETH Token Bridge
 tags: erc20, bridge, faqs, rootstock, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
 ---
 
-Ethereum/Rootstock(RSK) Bridge that allows to move ERC20 tokens between one chain and the other.
+Ethereum/Rootstock Bridge that allows to move ERC20 tokens between one chain and the other.
 
 ## Rationale
 
