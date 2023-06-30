@@ -8,7 +8,7 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, 
 layout: rsk
 ---
 
-![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/2-way-peg.gif)
+![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/pegin.gif)
 
 In this section, we will learn how to get started using the 2 way peg app to convert BTC to RBTC, we will do the following:
 

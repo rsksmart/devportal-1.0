@@ -6,12 +6,15 @@ description: "Welcome to peg-outs using the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
+
+![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/pegout.gif)
 ​
 In this section, we will learn how to perform a [peg-out](/guides/two-way-peg-app/glossary/) transaction using the 2 way peg app, to convert RBTC to BTC (peg-out). We will do the following:
 
 1. Perform a peg-out using [Meta Mask wallet](#performing-a-peg-out-transaction-using-metamask)
 2. Perform a peg-out using [Liquality wallet](#performing-a-peg-out-transaction-using-liquality)
 3. Perform a peg-out using [Ledger+Liquality](#performing-a-peg-out-transaction-using-ledger-and-liquality)
+4. Steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
 
 > For how to perform a peg-in transaction using hardware wallets. See [Getting started using hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets).
 
