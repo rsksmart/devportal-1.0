@@ -16,6 +16,7 @@ In this section, we will learn how to perform a [peg-out](/guides/two-way-peg-ap
 3. Perform a peg-out using [Ledger+Liquality](#performing-a-peg-out-transaction-using-ledger-and-liquality)
 4. Perform a pegout-using [Hardware+Wallets](#performing-a-peg-out-transaction-using-rLogin)
 5. Steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
+6. Querying the [status of a pegout](#searching-the-status-of-a-pegout)
 
 
 ## Prerequisites
@@ -252,42 +253,83 @@ Step 4: Click on **Trezor** button
 ![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor.png)
 
 Step 5: The application will show what network you are connecting on. For this tutorial we are using **Testnet**
-![network](/assets/img/guides/two-way-peg-app/using-hd-wallets/network.png)
+![network](/assets/img/guides/two-way-peg-app/using-hd-wallets/use-ethereum-path.png)
 
-Step 6: The application will show a simple tutorial:
-![1-plug](/assets/img/guides/two-way-peg-app/using-hd-wallets/1-plug.png)
-![2-install](/assets/img/guides/two-way-peg-app/using-hd-wallets/2-install.png)
-![3-close](/assets/img/guides/two-way-peg-app/using-hd-wallets/3-close.png)
-![4-open](/assets/img/guides/two-way-peg-app/using-hd-wallets/4-open.png)
-![5-confirm](/assets/img/guides/two-way-peg-app/using-hd-wallets/5-confirm.png)
-Step 7: Click on the **Finish tutorial and connect** button:
-![6-finish](/assets/img/guides/two-way-peg-app/using-hd-wallets/6-finish.png)
 Step 8: Plugin your Trezor device:
-![7-plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/plugin.png)
+![plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/plugin.png)
 Step 9: The trezor window will open to insert the pin and export the addresses
-![7-plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/pin-and-address.png)
+![pin-and-address](/assets/img/guides/two-way-peg-app/using-hd-wallets/pin-and-address.png)
 Step 10: Insert the pin and click on confirm button
-![7-plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/insert-confirm.png)
+![insert-confirm](/assets/img/guides/two-way-peg-app/using-hd-wallets/insert-confirm.png)
 Step 11: Insert the passphrase
-![7-plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png)
+![insert-passphrase](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png)
 Step 12: Follow instructions on your device
-![7-plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/follow-device.png)
-Step 11: Insert the passphrase
-![7-plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png)
+![verify-device](/assets/img/guides/two-way-peg-app/using-hd-wallets/follow-device.png)
 
 ​> - Note the trezor app screen will be opened some times, because the system will ask for addresses, each ask will open again the trezor screen, and the user will need to inform the [trezor-pin](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png).
 
-Step 12: Select account
-![8-select](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-select-account.png)
+Step 13: Select account
+![select-account](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-select-account.png)
 
-Step 13: Success
-![8-select](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-sucess.png)
+Step 14: Success
+![success](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-sucess.png)
 
-Step 14: Continue filling in the other fields as amount and click on the Send button
+Step 15: Continue filling in the other fields as amount and click on the Send button
 
-Step 15: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
+Step 16: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
 
 --- 
+## Searching the status of a pegout
+
+The processing of a pegout transaction is made up of several dependencies, and for each dependency a processing step is added, and at each step in the process, the pegout is shown in a form on the transaction status query screen.
+
+After finish a pegout you can search for the current status in the [status page](https://app.2wp.rootstock.io/status)
+
+**Not mined status:**
+Just after finish a pegout transaction, this transaction is not mined in the RSK network yet, this status will be showed in the transaction status page:
+![not-mined](/assets/img/guides/two-way-peg-app/using-hd-wallets/1-not-mined.png)
+
+**Rejected status:**
+A pegout transaction mined and not valid, will be showed in the transaction status page:
+![rejected](/assets/img/guides/two-way-peg-app/using-hd-wallets/pegout-rejected.png)
+
+**Received status:**
+A pegout transaction mined and valid, will be showed in the transaction status page:
+![mined](/assets/img/guides/two-way-peg-app/using-hd-wallets/2-mined.png)
+
+**Waiting for confirmation status:**
+A pegout transaction mined and valid, and waiting for confirmation, will be showed in the transaction status page:
+![waiting-for-confirmation](/assets/img/guides/two-way-peg-app/using-hd-wallets/waiting-for-confirmation.png)
+
+**Released status:**
+A pegout transaction mined, valid, and with the btc transaction performed will be showed in the transaction status page:
+![waiting-for-confirmation](/assets/img/guides/two-way-peg-app/using-hd-wallets/released.png)
+
+**Operation summary:**
+The operation summary contains the transaction details:
+![mined](/assets/img/guides/two-way-peg-app/using-hd-wallets/operation-summary.png)
+
+---
+### Rootstock side
+
+**Sender address:** Contains the address from which the RBTC was sent.
+
+**Sent:** The amount in RBTC sent.
+
+**Transaction hash:** The hash of the transaction in the RSK network.
+
+--- 
+### Bitcoin side
+
+**Recipient:** The address where the BTC will be delivered.
+
+**Will Receive:** The amount to be delivered in the BTC address discounted the network fee.
+
+**Estimated fee:** The estimated network fee, if the BTC transaction is not finished yet, this label will be "Estimated", if the BTC transaction is sent to the BTC network the value presented will be the effective value and not the estimated.
+
+--- 
+
+
 ​
 ## Resources
 - [Performing a Peg-in transaction using Hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets)
