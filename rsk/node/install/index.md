@@ -98,7 +98,7 @@ Visit [Setup Node through JAR](/rsk/node/install/operating-systems/java/) for in
 
 #### Using Docker Container
 
-<img class="node-setup-img" height="25px" src="https://goto.docker.com/rs/929-FJL-178/images/Docker%20Horizontal%20Large.png" alt="docker logo"/>
+<img class="node-setup-img" height="25px" src="../../../assets/img/docker-logo.png" alt="docker logo"/>
 
 Visit [Setup Node through Docker](/rsk/node/install/operating-systems/docker/) for instructions on installing RSK Node as a docker container on any system.
 
