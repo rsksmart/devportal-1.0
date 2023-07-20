@@ -6,14 +6,17 @@ description: "Welcome to peg-outs using the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
+
+![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/pegout.gif)
 ​
 In this section, we will learn how to perform a [peg-out](/guides/two-way-peg-app/glossary/) transaction using the 2 way peg app, to convert RBTC to BTC (peg-out). We will do the following:
 
 1. Perform a peg-out using [Meta Mask wallet](#performing-a-peg-out-transaction-using-metamask)
 2. Perform a peg-out using [Liquality wallet](#performing-a-peg-out-transaction-using-liquality)
 3. Perform a peg-out using [Ledger+Liquality](#performing-a-peg-out-transaction-using-ledger-and-liquality)
-
-> For how to perform a peg-in transaction using hardware wallets. See [Getting started using hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets).
+4. Perform a pegout-using [Hardware+Wallets](#performing-a-peg-out-transaction-using-rLogin)
+5. Steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
+6. Querying the [status of a pegout](#searching-the-status-of-a-pegout)
 
 
 ## Prerequisites
@@ -183,12 +186,150 @@ Step 7: Click the "Close this Tab" button
 
 ![Close tab](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/4-ledger-steps.png)
 
-
 Now you can see "Ledger" label in Liquality accounts
 
 ![Final screen](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/5-ledger-steps.png)
+
+## Performing a peg-out transaction using rLogin(Trezor and Ledger)
+
+​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rsk.co/) for learning purposes.
+> - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://2wp-app.rsk.co/) application.
+> - We're using Ledger Nano and Trezor One hardware wallets on this tutorial.
+> - For how to perform a peg-in transaction using hardware wallets. See [Getting started using hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets).
+> - To use Ledger hardware wallet to create a **peg-in** see [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/getting-started#performing-a-peg-in-transaction-with-ledger)
+> - To use Trezor hardware wallet to create a **peg-in** see [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/getting-started#trezor-hardware-wallet)
+
+### Get started with Ledger
+
+To perform a peg-out transaction using the Ledger device directly, follow the steps below:
+
+Step 1:  Plug the Ledger device into the computer
+
+Step 2: Enter your pin to unlock it
+
+Step 3: On the device, navigate to the TRSK or RSK Test app on your Ledger device
 ​
+Step 4: Access **peg-out** screen:
+![pegout screen](/assets/img/guides/two-way-peg-app/using-hd-wallets/acessing-pegout-screen.png)
+
+Step 5: Click on **Connect wallet** button
+![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/connect-wallet.png)
+
+Step 6: Click on **Ledger** button
+![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/ledger.png)
+
+
+Step 8: The application will show what network you are connecting on. For this tutorial we are using **Testnet**
+![network](/assets/img/guides/two-way-peg-app/using-hd-wallets/network.png)
+
+Step 9: The application will show a simple tutorial:
+![1-plug](/assets/img/guides/two-way-peg-app/using-hd-wallets/1-plug.png)
+![2-install](/assets/img/guides/two-way-peg-app/using-hd-wallets/2-install.png)
+![3-close](/assets/img/guides/two-way-peg-app/using-hd-wallets/3-close.png)
+![4-open](/assets/img/guides/two-way-peg-app/using-hd-wallets/4-open.png)
+![5-confirm](/assets/img/guides/two-way-peg-app/using-hd-wallets/5-confirm.png)
+Step 10: Click on the **Finish tutorial and connect** button:
+![6-finish](/assets/img/guides/two-way-peg-app/using-hd-wallets/6-finish.png)
+Step 11: Select an account
+![7-select](/assets/img/guides/two-way-peg-app/using-hd-wallets/select.png)
+Step 12: Ledger Connected
+![8-connected](/assets/img/guides/two-way-peg-app/using-hd-wallets/ledger-connected.png)
+Step 13: Continue filling in the other fields as amount and click on the Send button
+Step 14: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
+
+### Get started with Trezor
+
+To perform a peg-out transaction using the Ledger device directly, follow the steps below:
+
+Step 1: Plug the Ledger device into the computer
+
+Step 2: Access **peg-out** screen:
+![pegout screen](/assets/img/guides/two-way-peg-app/using-hd-wallets/acessing-pegout-screen.png)
+
+Step 3: Click on **Connect wallet** button
+![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/connect-wallet.png)
+
+Step 4: Click on **Trezor** button
+![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor.png)
+
+Step 5: The application will show what network you are connecting on. For this tutorial we are using **Testnet**
+![network](/assets/img/guides/two-way-peg-app/using-hd-wallets/use-ethereum-path.png)
+
+Step 8: Plugin your Trezor device:
+![plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/plugin.png)
+Step 9: The trezor window will open to insert the pin and export the addresses
+![pin-and-address](/assets/img/guides/two-way-peg-app/using-hd-wallets/pin-and-address.png)
+Step 10: Insert the pin and click on confirm button
+![insert-confirm](/assets/img/guides/two-way-peg-app/using-hd-wallets/insert-confirm.png)
+Step 11: Insert the passphrase
+![insert-passphrase](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png)
+Step 12: Follow instructions on your device
+![verify-device](/assets/img/guides/two-way-peg-app/using-hd-wallets/follow-device.png)
+
+​> - Note the trezor app screen will be opened some times, because the system will ask for addresses, each ask will open again the trezor screen, and the user will need to inform the [trezor-pin](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png).
+
+Step 13: Select account
+![select-account](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-select-account.png)
+
+Step 14: Success
+![success](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-sucess.png)
+
+Step 15: Continue filling in the other fields as amount and click on the Send button
+
+Step 16: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
+
 --- 
+## Searching the status of a pegout
+
+The processing of a pegout transaction is made up of several dependencies, and for each dependency a processing step is added, and at each step in the process, the pegout is shown in a form on the transaction status query screen.
+
+After finish a pegout you can search for the current status in the [status page](https://app.2wp.rootstock.io/status)
+
+**Not mined status:**
+Just after finish a pegout transaction, this transaction is not mined in the RSK network yet, this status will be showed in the transaction status page:
+![not-mined](/assets/img/guides/two-way-peg-app/using-hd-wallets/1-not-mined.png)
+
+**Rejected status:**
+A pegout transaction mined and not valid, will be showed in the transaction status page:
+![rejected](/assets/img/guides/two-way-peg-app/using-hd-wallets/pegout-rejected.png)
+
+**Received status:**
+A pegout transaction mined and valid, will be showed in the transaction status page:
+![mined](/assets/img/guides/two-way-peg-app/using-hd-wallets/2-mined.png)
+
+**Waiting for confirmation status:**
+A pegout transaction mined and valid, and waiting for confirmation, will be showed in the transaction status page:
+![waiting-for-confirmation](/assets/img/guides/two-way-peg-app/using-hd-wallets/waiting-for-confirmation.png)
+
+**Released status:**
+A pegout transaction mined, valid, and with the btc transaction performed will be showed in the transaction status page:
+![waiting-for-confirmation](/assets/img/guides/two-way-peg-app/using-hd-wallets/released.png)
+
+**Operation summary:**
+The operation summary contains the transaction details:
+![mined](/assets/img/guides/two-way-peg-app/using-hd-wallets/operation-summary.png)
+
+---
+### Rootstock side
+
+**Sender address:** Contains the address from which the RBTC was sent.
+
+**Sent:** The amount in RBTC sent.
+
+**Transaction hash:** The hash of the transaction in the RSK network.
+
+--- 
+### Bitcoin side
+
+**Recipient:** The address where the BTC will be delivered.
+
+**Will Receive:** The amount to be delivered in the BTC address discounted the network fee.
+
+**Estimated fee:** The estimated network fee, if the BTC transaction is not finished yet, this label will be "Estimated", if the BTC transaction is sent to the BTC network the value presented will be the effective value and not the estimated.
+
+--- 
+
+
 ​
 ## Resources
 - [Performing a Peg-in transaction using Hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets)

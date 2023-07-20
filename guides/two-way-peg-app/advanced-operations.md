@@ -12,7 +12,7 @@ This section contains detailed instructions on how to perform advanced operation
 These operations include;
 
 - How to review funds in Bitcoin after a pegout by [viewing a derived address](#how-to-view-a-derived-address), 
-Convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](#import-key-in-electrum)
+convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](#import-key-in-electrum), import in Electrum if you are using [hardware wallets](#import-key-in-electrum-hardware-wallets)
 - Selecting [different accounts](#account-selection)
 - Viewing [advanced details](#how-to-view-advanced-details)
 - Adjusting [network fees](#adjusting-network-fees)
@@ -160,7 +160,9 @@ wif = base58_encode(extendedchecksum)
 puts wif
 ```
 
-#### Import key in Electrum
+## Import key in Electrum
+
+---
 
 [Electrum](https://electrum.org/#download) is used to verify a derived address, this address will then be used to receive and verify the converted funds (RBTC - BTC) when the pegout process is finished.
 
@@ -185,12 +187,78 @@ Step 5: Fill out the WIF value of the private key and click on “Next” button
 
 Step 6: Create a new wallet password and click on the “Next” button
 
-![wallet - electrum](/assets/img/guides/two-way-peg-app/other/electrum.png)
+![electrum - new](/assets/img/guides/two-way-peg-app/other/electrum.png)
 
 > In this screen, you will see the address to receive the BTC funds.
 
-## Account selection
+## Import key in Electrum using Hardware Wallets
 
+
+[Electrum](https://electrum.org/#download) is used to verify a derived address, this address will then be used to receive and verify the converted funds (RBTC - BTC) when the pegout process is finished.
+
+Step 1: Download Electrum for your OS from the [website](https://electrum.org/#download).
+
+Follow the steps below to create a new wallet in Electrum and connect to the **hardware wallets**:
+
+> NOTE: If you need to run Electrum in Testnet, execute the following commands:
+
+```
+cd /Applications/Electrum.app/Contents/MacOS
+./run_electrum --testnet
+```
+
+Step 2: Start with the “Create New Wallet” option
+
+Step 3: Fill out the name in “Wallet” field and click on “Next” button
+
+Step 4: Select “Standard wallet” option and click on “Next” button
+
+![wallet - electrum](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-1.png)
+
+Step 4: Select “Use a hardware device” option and click on “Next” button
+
+![wallet - electrum-hardware-device](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-2.png)
+
+Step 5: Select the hardware wallet and click on “Next” button
+
+> NOTE: The follow screen is an example of usage the Trezor Hardware Wallet
+
+![wallet - electrum-hardware-device-trezor](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-3.png)
+
+> NOTE: The follow screen is an example of usage the Ledger Hardware Wallet
+
+![wallet - electrum-hardware-device-ledger](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-4.png)
+
+Step 6: Select “legacy (p2pkh)” option, fill out a custom derivation path field and click on “Next” button
+
+```
+Custom derivation path:
+Mainnet: m/44'/137'/0'
+```
+
+![wallet - electrum-derivation-pathx](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-5.png)
+
+> NOTE: Testnet: m/44'/37310'/0'
+
+![wallet - electrum-derivation-legacy](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-6.png)
+
+> IMPORTANT: For Ledger it is necessary to approve the custom derivation path in the device
+
+![wallet - electrum-ledger-confirmation](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-7.png)
+
+Step 7:  Check “Encrypt wallet file” option and click on “Next” button
+
+![wallet - electrum-encrypt](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-8.png)
+
+Step 8: Finally in Electrum go to “Addresses” tab and you can see your funds
+
+![wallet - electrum-show-funds](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-9.png)
+
+
+--- 
+
+## Account selection
+### Pegin:
 There are three types of accounts on the 2 way peg app. See [supported addresses](/guides/two-way-peg-app/getting-started#supported-addresses) section for examples of these types of addresses.
 
 To select an account to send BTC from, click on **Select the account** as shown in the image below. This loads the balance for all the addresses in your hardware wallet.
