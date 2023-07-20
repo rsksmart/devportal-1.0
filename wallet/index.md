@@ -2,9 +2,6 @@
 layout: rsk
 title: Wallets
 tags: rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
-menu_order: 12
-menu_title: Wallets
-section_title: Wallets
 ---
 
 ## Use a wallet
