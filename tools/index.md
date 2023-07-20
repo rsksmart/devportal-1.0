@@ -17,26 +17,26 @@ menu_title: Overview
     </div-->
     <div class="item">
         <a href="https://explorer.rsk.co" target="blank">
-        <img src="https://rsk.co/img/tools/2-RSK_explorer.png" alt="Rootstock Explorer">
-        <a class="company-name" href="https://explorer.rsk.co" target="blank">Rootstock Explorer</a>
+        <img src="https://rsk.co/img/tools/2-RSK_explorer.png" alt="RSK Explorer">
+        <a class="company-name" href="https://explorer.rsk.co" target="blank">RSK Explorer</a>
     </a>
     </div>
     <div class="item">
         <a href="https://explorer.testnet.rsk.co" target="blank">
-        <img src="https://rsk.co/img/tools/2-RSK_explorer.png" alt="Rootstock Testnet Explorer">
-        <a class="company-name" href="https://explorer.testnet.rsk.co" target="blank">Rootstock Testnet Explorer</a>
+        <img src="https://rsk.co/img/tools/2-RSK_explorer.png" alt="RSK Testnet Explorer">
+        <a class="company-name" href="https://explorer.testnet.rsk.co" target="blank">RSK Testnet Explorer</a>
     </a>
     </div>
     <div class="item">
         <a href="https://stats.rsk.co" target="blank">
         <img src="https://rsk.co/img/tools/3-RSK_stat.png" alt="RSK Stats">
-        <a class="company-name" href="https://stats.rsk.co" target="blank">Rootstock Stats</a>
+        <a class="company-name" href="https://stats.rsk.co" target="blank">RSK Stats</a>
     </a>
     </div>
     <div class="item">
         <a href="https://stats.testnet.rsk.co" target="blank">
         <img src="https://rsk.co/img/tools/3-RSK_stat.png" alt="RSK Testnet Stats">
-        <a class="company-name" href="https://stats.testnet.rsk.co" target="blank">Rootstock Testnet Stats</a>
+        <a class="company-name" href="https://stats.testnet.rsk.co" target="blank">RSK Testnet Stats</a>
     </a>
     </div>
     <div class="item">
@@ -48,7 +48,7 @@ menu_title: Overview
     <div class="item">
         <a href="https://rskgasstation.info" target="blank">
         <img src="https://rsk.co/img/tools/5-RSK-Gas-Station.png" alt="RSK Gas Station<">
-        <a class="company-name" href="https://rskgasstation.info" target="blank">Rootstock Gas Station</a>
+        <a class="company-name" href="https://rskgasstation.info" target="blank">RSK Gas Station</a>
     </a>
     </div>
     <div class="item">

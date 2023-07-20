@@ -1,5 +1,5 @@
 ---
 layout: redirect
 permalink: /develop/apps/wallets/
-redirect: /wallet/use/
+redirect: /wallet/
 ---
