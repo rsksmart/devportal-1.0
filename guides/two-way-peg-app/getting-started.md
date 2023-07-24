@@ -48,7 +48,7 @@ The following are the setup requirements to get started with the 2 way peg app.
 - [Google Chrome](https://www.google.com/chrome/)
 - [Brave Browser](https://brave.com/)
 
-> Note: The current v1.1.0 of the 2 way peg app is currently not operational on mobile devices.
+> Note: The current v1.4.0 of the 2 way peg app is currently not operational on mobile devices.
 
 ![Supported Browser](/assets/img/guides/two-way-peg-app/supported-broswer.png)
 
