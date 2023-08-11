@@ -1,4 +1,7 @@
 ---
+menu_order: 700
+section_title: Pinning Service
+menu_title: About
 layout: rsk
 title: RIF Storage Pinning service
 tags: rif, rif-storage, rif-pinning, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

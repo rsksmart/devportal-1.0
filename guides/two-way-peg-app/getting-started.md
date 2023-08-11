@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Getting Started
 title: "Getting Started | 2 way peg app Documentation"
 description: "Welcome to the 2 way peg app documentation."
 slug: 2wp-docs
@@ -6,7 +8,7 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, 
 layout: rsk
 ---
 
-![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/2-way-peg.gif)
+![2 way peg app (peg-in)](/assets/img/guides/two-way-peg-app/pegin.gif)
 
 In this section, we will learn how to get started using the 2 way peg app to convert BTC to RBTC, we will do the following:
 
@@ -14,9 +16,13 @@ In this section, we will learn how to get started using the 2 way peg app to con
 2. Use supported [browsers](#supported-browsers) and [wallets](#supported-wallets)
 3. Use [supported addresses](#supported-addresses)
 4. Get [mainnet and testnet](#getting-funds) funds
-5. Perform a peg-in transaction using [Ledger Hardware Wallet](#ledger-hardware-wallet)
-6. Perform a peg-in transaction using [Trezor Hardware Wallet](#trezor-hardware-wallet)
-7. [View a transaction status](#view-transaction-status).
+5. Perform a peg-in (BTC - RBTC) transaction using [Ledger Hardware Wallet](#ledger-hardware-wallet)
+6. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](#trezor-hardware-wallet)
+7. How to view a derived address using [Electrum](/guides/two-way-peg-app/advanced-operations#converting-rbtc-to-btc)
+8. [View a transaction status](#view-transaction-status).
+
+> For how to perform a peg-out transaction using software wallets. See [Getting started with pegouts](/guides/two-way-peg-app/getting-started#using-software-wallets).
+
 
 ## Requirements
 
@@ -42,7 +48,7 @@ The following are the setup requirements to get started with the 2 way peg app.
 - [Google Chrome](https://www.google.com/chrome/)
 - [Brave Browser](https://brave.com/)
 
-> Note: The current v1.1.0 of the 2 way peg app is currently not operational on mobile devices.
+> Note: The current v1.4.0 of the 2 way peg app is currently not operational on mobile devices.
 
 ![Supported Browser](/assets/img/guides/two-way-peg-app/supported-broswer.png)
 
@@ -66,8 +72,9 @@ These addresses are the original BTC addresses. It uses a special script hash fu
 - Hardware wallets
     - Ledger
     - Trezor
-- Software wallets
-    - [Liquality](/solutions/liquality/) (Coming soon)
+- Software wallets (Peg-out)
+    - [Liquality](/guides/two-way-peg-app/getting-started-pegout#connect-your-liquality-wallet)
+    - [Metamask](/guides/two-way-peg-app/getting-started-pegout#connect-your-metamask-wallet)
 
 > The current version of the 2 way peg app supports peg-in transactions using hardware wallets. Future releases of the 2 way peg app will include support for performing peg-in operations using **software wallets**.
 
@@ -434,8 +441,7 @@ Follow the same process in [Step 1 - 9: Performing a Pegin transaction with Ledg
 
 ## Using Software Wallets
 
-Coming soon.
-
+To get started with how to perform a pegout transaction using Metamask and Liquality. See section on [Getting started with Pegouts](/guides/two-way-peg-app/getting-started-pegout/).
 
 ## View transaction status
 

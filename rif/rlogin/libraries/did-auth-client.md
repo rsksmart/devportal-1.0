@@ -1,4 +1,5 @@
 ---
+title: DID Auth client
 layout: rsk
 ---
 

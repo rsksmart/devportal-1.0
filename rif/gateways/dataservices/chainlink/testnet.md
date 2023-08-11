@@ -1,4 +1,6 @@
 ---
+menu_order: 700
+menu_title: Testnet
 layout: rsk
 title: RIF Gateways Chainlink Testnet
 tags: rif, gateways, chainlink, testnet

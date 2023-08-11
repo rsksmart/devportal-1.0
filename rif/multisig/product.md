@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Product
 layout: rsk
 title:  The RIF Multisig Product
 description: Overview of the RIF Multisig, Savings and Vault Solution

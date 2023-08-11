@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Receive ERC20 token
 layout: rsk
 title: RIF Multisig SDK - Receive ERC20 token
 description: follow these steps to receive erc20 tokens through multisig transactions

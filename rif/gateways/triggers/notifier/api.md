@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: API
 layout: rsk
 title: RIF Notifier API
 tags: rif, notifier, api

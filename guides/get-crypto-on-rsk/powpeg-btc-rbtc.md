@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Get RBTC using Powpeg
 title: "How to get RBTC using RSK’s built in PowPeg"
 description: "Learn how the RSK Powpeg works and how to use it to get RBTC via the peg-in and peg-out process"
 tags: rbtc, rsk, powpeg, 2-way peg, defi, exchange, crypto, buy, peg-in, peg-out, how-to

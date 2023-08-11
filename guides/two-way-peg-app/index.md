@@ -1,4 +1,7 @@
 ---
+menu_order: 1100
+section_title: 2 Way Peg App
+menu_title: Table of Contents
 title: "Table of Contents | 2 way peg app Documentation"
 description: "Welcome to the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
@@ -37,7 +40,13 @@ Here, you will also find instructions on how to perform [advanced operations](/g
     - [View Transaction Status](/guides/two-way-peg-app/getting-started#view-transaction-status)
         - [Using Transaction Status Page](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page)
         - [Using Blockcypher Explorer](/guides/two-way-peg-app/getting-started#using-blockcypher-explorer)
+- [Getting Started with Pegouts](/guides/two-way-peg-app/getting-started-pegout/)
+    - [Using Meta Mask](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-metamask)
+    - [Using Liquality](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-liquality)
+    - [Pegout common errors](/guides/two-way-peg-app/pegout-common-errors)
+    - [Using Ledger + Liquality](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-ledger-and-liquality)
 - [Advanced Operations](/guides/two-way-peg-app/advanced-operations/)
+    - [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address)
     - [Account Selection](/guides/two-way-peg-app/advanced-operations#account-selection)
     - [How to view advanced details](/guides/two-way-peg-app/advanced-operations#how-to-view-advanced-details)
     - [Adjusting network fees](/guides/two-way-peg-app/advanced-operations#adjusting-network-fees)

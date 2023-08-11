@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Faucet
 layout: rsk
 title: RSK Testnet Faucet
 tags: faucet, rsk, testnet, address, wallet, tools

@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Sample Apps
 layout: rsk
 title: rLogin - sample apps
 tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis

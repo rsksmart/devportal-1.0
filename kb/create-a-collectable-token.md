@@ -1,4 +1,6 @@
 ---
+menu_order: 3100
+menu_title: Create your own collectable token
 layout: rsk
 title: Create your own collectable token on RSK network
 tags: tutorial, rsk, token, openzeppelin, erc721, truffle, frontend, web3, react

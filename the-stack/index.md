@@ -1,57 +1,50 @@
 ---
-layout: rsk
 title: The Stack
+menu_title: The Stack
+menu_order: 1
 ---
 
 <div class="container the-stack">
-
-<div class="row has-unique-col">
-    <div class="col">
-        <div class="row rotate defi"><a href="/defi/">DeFi</a></div>
-        <div class="row rsk_blue dapps">
-            <div class="col"><span><a href="/wallet/">Wallet</a></span></div>
-            <div class="col"><span>Exchange</span></div>
-            <div class="col"><span><a href="/tutorials/tokens/create-a-token">Asset Tokenization</a></span></div>
-            <div class="col"><span>Stablecoins</span></div>
-            <div class="col"><span>Payments</span></div>
-            <div class="col"><span>Margin Trading</span></div>
-            <div class="col"><span>Lending and borrowing</span></div>
-            <div class="col"><span>Derivatives</span></div>
-            <div class="col"><span>Insurance</span></div>
-            <div class="col"><span>Escrow</span></div>
-            <div class="col"><span>Prediction Markets</span></div>
-            <div class="col"><span>Marketplaces</span></div>
-            <div class="col"><span>Scoring</span></div>
-            <div class="col"><span>Liquidity protocols</span></div>
+    <div class="row has-unique-col">
+        <div class="col">
+            <div class="row rotate defi"><a href="/defi/">DeFi</a></div>
+            <div class="row rsk_blue dapps">
+                <div class="col"><span><a href="/wallet/">Wallet</a></span></div>
+                <div class="col"><span>Exchange</span></div>
+                <div class="col"><span><a href="/tutorials/tokens/create-a-token">Asset Tokenization</a></span></div>
+                <div class="col"><span>Stablecoins</span></div>
+                <div class="col"><span>Payments</span></div>
+                <div class="col"><span>Margin Trading</span></div>
+                <div class="col"><span>Lending and borrowing</span></div>
+                <div class="col"><span>Derivatives</span></div>
+                <div class="col"><span>Insurance</span></div>
+                <div class="col"><span>Escrow</span></div>
+                <div class="col"><span>Prediction Markets</span></div>
+                <div class="col"><span>Marketplaces</span></div>
+                <div class="col"><span>Scoring</span></div>
+                <div class="col"><span>Liquidity protocols</span></div>
+            </div>
         </div>
-
+    <div class="row has-unique-col rif_blue_text">
+        <div class="col"><span><a href="/libraries/">Libraries</a></span></div>
     </div>
-</div>
-
-<div class="row has-unique-col rif_blue_text">
-    <div class="col"><span><a href="/libraries/">Libraries</a></span></div>
-</div>
-
-<div class="row has-unique-col">
-    <div class="col">
-        <div class="row rotate">RIF Marketplace</div>
-        <div class="row rif_blue dapps">
-            <div class="col"><span><a href="/rif/rns/">RIF Directory</a></span></div>
-            <div class="col"><span><a href="/rif/lumino/">RIF Payments</a></span></div>
-            <div class="col"><span><a href="/rif/storage/">RIF Storage</a></span></div>
-            <div class="col"><span>RIF Comms</span></div>
-            <div class="col"><span>RIF Gateways</span></div>
-            <div class="col grey"><span>Your sharing economy</span></div>
+    <div class="row has-unique-col">
+        <div class="col">
+            <div class="row rotate">RIF Marketplace</div>
+            <div class="row rif_blue dapps">
+                <div class="col"><span><a href="/rif/rns/">RIF Directory</a></span></div>
+                <div class="col"><span><a href="/rif/lumino/">RIF Payments</a></span></div>
+                <div class="col"><span><a href="/rif/storage/">RIF Storage</a></span></div>
+                <div class="col"><span>RIF Comms</span></div>
+                <div class="col"><span>RIF Gateways</span></div>
+                <div class="col grey"><span>Your sharing economy</span></div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="row has-unique-col rsk_green">
-    <div class="col"><span><a href="/rsk/">rsk smart contracts</a></span></div>
-</div>
-
-<div class="row has-unique-col bitcoin">
-    <div class="col"><span><a href="https://bitcoin.org/en/development">Bitcoin: Store of Value</a></span></div>
-</div>
-
+    <div class="row has-unique-col rsk_green">
+        <div class="col"><span><a href="/rsk/">rsk smart contracts</a></span></div>
+    </div>
+    <div class="row has-unique-col bitcoin">
+        <div class="col"><span><a href="https://bitcoin.org/en/development">Bitcoin: Store of Value</a></span></div>
+    </div>
 </div>

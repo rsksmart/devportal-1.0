@@ -1026,7 +1026,7 @@ img {
 /*carousel*/
 
 .owl-carousel {
-  background: white;
+  background: transparent;
 }
 
 .owl-carousel .owl-item {
@@ -1043,6 +1043,7 @@ img {
 }
 
 .company-name {
+  color: #fff;
   opacity: 0;
   transition: opacity 0.5s ease;
   position: relative;

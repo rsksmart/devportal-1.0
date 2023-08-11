@@ -1,4 +1,7 @@
 ---
+menu_order: 300
+section_title: RIF Relay
+menu_title: About
 layout: rsk
 title: About RIF Relay
 tags: rif, relay, gas station network, gsn

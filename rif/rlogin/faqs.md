@@ -1,4 +1,6 @@
 ---
+menu_order: 1000
+menu_title: FAQ
 layout: rsk
 title: rLogin - FAQs
 tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis

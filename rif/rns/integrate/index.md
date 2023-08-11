@@ -1,9 +1,11 @@
 ---
+menu_order: 800
+section_title: Integrate
+menu_title: Integration guidelines
 layout: rsk
 title: RNS Integration guidelines
 tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 description: Learn how to integrate RNS with your wallet or dApp.
-tags: rns, javascript, dapp, wallet, integrate
 ---
 
 RIF Name Service (RNS) is a decentralized service that allows users to have a readable domain in any blockchain. It can be used to identify other personal resources, such as payment, ID, storage or communication addresses.
@@ -30,7 +32,19 @@ We are pretty sure that the provided example is not enough for all your needs, s
 
 ## Quick start
 
-{% include rns-register.html %}
+<form class="form" id="frm-rns-search">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
+      <div class="input-group-append">
+        <span class="input-group-text">.rsk</span>
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-rns-register">Register!</button>
+      </div>
+    </div>
+  </div>
+</form>
 
 <div class="container the-stack">
   <div class="row has-unique-col rif_blue_text">

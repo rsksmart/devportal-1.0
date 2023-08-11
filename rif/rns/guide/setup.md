@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Setup
 layout: rsk
 title: "Setup - RNS User guide"
 description: "Compatible wallets, connect Nifty wallet to Rootstock (RSK), connect Metamask wallet to Rootstock (RSK), get RBTC, get RIF Tokens, display amount of tokens in the Nifty wallet, display amount of tokens in the Metamask wallet"
@@ -19,7 +21,7 @@ The RNS Manager can be used seamlessly with the following wallets. To setup your
 
 
 <div class="markdown-light-rounded-border markdown-width40 markdown-horizontal-margin30">
-    <img src="https://i.imgur.com/xacetSm.png" alt="" />
+    <img width="200" src="https://i.imgur.com/xacetSm.png" alt="" />
     <p>
         Nifty wallet <span class="badge badge-primary">recommended</span><br/>
         <a href="https://www.poa.network/v/master-1/for-users/nifty-wallet">Get the wallet</a>
@@ -27,7 +29,7 @@ The RNS Manager can be used seamlessly with the following wallets. To setup your
 </div>
 
 <div class="markdown-light-rounded-border markdown-width40">
-    <img src="https://i.imgur.com/JVWXQca.png" alt="" />
+    <img width="200" src="https://i.imgur.com/JVWXQca.png" alt="" />
     <p>
         Metamask<br />
         <a href="https://metamask.io/">Get the wallet</a>
@@ -35,7 +37,7 @@ The RNS Manager can be used seamlessly with the following wallets. To setup your
 </div>
 
 <div class="markdown-light-rounded-border markdown-width40">
-    <img src="https://i.imgur.com/CaM23s8.png" alt="" />
+    <img width="200" src="https://i.imgur.com/CaM23s8.png" alt="" />
     <p>
         Brave's Wallet<br />
         <a href="https://brave.com/">Get the browser</a>

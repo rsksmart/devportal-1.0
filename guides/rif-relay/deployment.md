@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Deployment
 layout: rsk
 title: RIF Relay Deployment
 description: RIF Relay deployment process

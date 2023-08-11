@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: How to Get Stablecoins
 title: "How to Get Stablecoins on RSK - The Complete Guide to Stablecoins"
 description: "Learn how to get stablecoins on RSK"
 tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain

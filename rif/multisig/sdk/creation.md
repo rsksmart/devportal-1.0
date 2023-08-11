@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Create a Multisig Account
 layout: rsk
 title: RIF Multisig SDK - creation
 description: Multisig account creation
@@ -25,56 +27,111 @@ It allows the creation of a safe account using the `ProxyFactory` and the `SafeS
 - [SafeSingleton](https://docs.gnosis.io/safe/docs/contracts_architecture/#1-transaction-management-core-contract) contract deployment
 
 [](#top "collapsible")
-- A) Contract addresses deployed on Rootstock
-  * Developers interacting with the Rootstock networks can use the address of the contracts already deployed
-    * ### MAINNET
-    
-      | Contract          | Address                                    |
-      |-------------------|--------------------------------------------|
-      | SafeSingleton       | `0xc6cfa90ff601d6aac45d8dcf194cf38b91aca368` |
-      | ProxyFactory        | `0x4b1af52ea200baebf79450dbc996573a7b75f65a` |
-    * ### TESTNET
+<div class="accordion"><div class="card accordion__rsk"><div id="collapsible-0-header-0" class="card-header"><a class="btn collapsed" data-toggle="collapse" data-target="#collapsible-0-body-0">
+        A) Contract addresses deployed on RSK
+        <span class="hint"></span></a></div><div id="collapsible-0-body-0" class="collapse" aria-labelledby="collapsible-0-header-0"><div class="card-body"><ul>
+            <li>
+                Developers interacting with the RSK networks can use the address of the contracts already deployed
+                <ul>
+                    <li>
+                        <h3 class="heading-with-icon" id="mainnet">
+                            <a href="#mainnet" class="heading-icon-container">
+                                <img id="anchor-icon-template" src="/assets/img/link.svg" alt="MAINNET">
+                            </a>
+                            MAINNET
+                        </h3>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Contract</th>
+                              <th>Address</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>SafeSingleton</td>
+                              <td><code>0xc6cfa90ff601d6aac45d8dcf194cf38b91aca368</code></td>
+                            </tr>
+                            <tr>
+                              <td>ProxyFactory</td>
+                              <td><code>0x4b1af52ea200baebf79450dbc996573a7b75f65a</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </li>
+                    <li>
+                        <h3 class="heading-with-icon" id="testnet">
+                            <a href="#testnet" class="heading-icon-container">
+                                <img src="/assets/img/link.svg" alt="MAINNET">
+                            </a>
+                            TESTNET
+                        </h3>
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Contract</th>
+                              <th>Address</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>SafeSingleton</td>
+                              <td><code class="highlighter-rouge">0xffd41b816f2821e579b4da85c7352bf4f17e4fa5</code></td>
+                            </tr>
+                            <tr>
+                              <td>ProxyFactory</td>
+                              <td><code class="highlighter-rouge">0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a</code></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </li>
+        </ul></div></div></div><div class="card accordion__rsk"><div id="collapsible-0-header-1" class="card-header"><a class="btn collapsed" data-toggle="collapse" data-target="#collapsible-0-body-1">
+        B) Create a SafeFactory instance
+        <span class="hint"></span></a></div><div id="collapsible-0-body-1" class="collapse" aria-labelledby="collapsible-0-header-1"><div class="card-body"><ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+            <li>
+                <strong>Parameters</strong>
+                <ul>
+                    <li>
+                        <code>signer: Signer</code> - <a href="https://docs.ethers.io/v5/api/signer/#Signer" rel="external noopener noreferrer" target="_blank">ethers Signer</a>
+                    </li>
+                    <li>
+                        <code>proxyFactoryAddress: str</code> - address of the deployed <a href="https://docs.gnosis.io/safe/docs/contracts_architecture/#5-proxy-factory" rel="external noopener noreferrer" target="_blank">ProxyFactory contract</a>
+                    </li>
+                    <li>
+                        <code>safeSingletonAddress: str</code> - address of the deployed <a href="https://docs.gnosis.io/safe/docs/contracts_architecture/#1-transaction-management-core-contract" rel="external noopener noreferrer" target="_blank">SafeSingleton contract</a>
+                    </li>
+                </ul>
+            </li>
+        </ul><div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">import</span> <span class="token punctuation">{</span> EthersSafeFactory <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@gnosis.pm/safe-core-sdk'</span> 
 
-      | Contract          | Address                                    |
-      |-------------------|--------------------------------------------|
-      | SafeSingleton       | `0xffd41b816f2821e579b4da85c7352bf4f17e4fa5` |
-      | ProxyFactory        | `0x5b836117aed4ca4dee8e2e464f97f7f59b426c5a` |
-
-- B) Create a SafeFactory instance  
-  - **Parameters**
-    - `signer: Signer` - [ethers Signer](https://docs.ethers.io/v5/api/signer/#Signer)
-    - `proxyFactoryAddress: str` - address of the deployed [ProxyFactory contract](https://docs.gnosis.io/safe/docs/contracts_architecture/#5-proxy-factory)
-    - `safeSingletonAddress: str` - address of the deployed [SafeSingleton contract](https://docs.gnosis.io/safe/docs/contracts_architecture/#1-transaction-management-core-contract)
-  {:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
-    
-  
-  ```ts
-  import { EthersSafeFactory } from '@gnosis.pm/safe-core-sdk'
-
-  const safeFactory = new EthersSafeFactory(
-    signer,
-    proxyFactoryAddress,
-    safeSingletonAddress
-  )
-  ```
-  {:.snippet__code.snippet__code--lightgreen.border-top-0}
-  
-  > If you are working on Rootstock networks, you can use the contracts already deployed on [MAINNET](#mainnet) OR [TESTNET](#testnet).
-  {:.mt-3}
-
-- C) Create a Safe
-  * **Parameters**
-    - `owners: str[]` - list of owner addresses
-    - `threshold: number` - the minimum number of owner approvals required to execute a safe transaction.
-  {:.snippet__parameters.snippet__parameters--lightgreen.border-bottom-0}
-
-  ```ts
-  const safeSdk = await safeFactory.createSafe({
-    owners: ['0x1234...', '0xabcd...', '0x0987...'],
-    threshold: 2
-  })
-  ```
-  {:.snippet__code.snippet__code--lightgreen.border-top-0}
+<span class="token keyword">const</span> safeFactory <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">EthersSafeFactory</span><span class="token punctuation">(</span>
+signer<span class="token punctuation">,</span>
+proxyFactoryAddress<span class="token punctuation">,</span>
+safeSingletonAddress
+<span class="token punctuation">)</span></code></pre></div><blockquote class="mt-3">
+<p>If you are working on RSK networks, you can use the contracts already deployed on <a href="#mainnet">MAINNET</a> OR <a href="#testnet">TESTNET</a>.</p>
+</blockquote></div></div></div><div class="card accordion__rsk"><div id="collapsible-0-header-2" class="card-header"><a class="btn collapsed" data-toggle="collapse" data-target="#collapsible-0-body-2">
+C) Create a Safe
+<span class="hint"></span></a></div><div id="collapsible-0-body-2" class="collapse" aria-labelledby="collapsible-0-header-2"><div class="card-body"><ul class="snippet__parameters snippet__parameters--lightgreen border-bottom-0">
+<li>
+<strong>Parameters</strong>
+<ul>
+<li>
+<code>owners: str[]</code> - list of owner addresses
+</li>
+<li>
+<code>threshold: number</code> - the minimum number of owner approvals required to execute a safe transaction.
+</li>
+</ul>
+</li>
+</ul><div class="language-ts snippet__code snippet__code--lightgreen border-top-0">
+<div class="gatsby-highlight" data-language="ts"><pre class="language-ts"><code class="language-ts"><span class="token keyword">const</span> safeSdk <span class="token operator">=</span> <span class="token keyword">await</span> safeFactory<span class="token punctuation">.</span><span class="token function">createSafe</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    owners<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">'0x1234...'</span><span class="token punctuation">,</span> <span class="token string">'0xabcd...'</span><span class="token punctuation">,</span> <span class="token string">'0x0987...'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    threshold<span class="token operator">:</span> <span class="token number">2</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
+</div></div></div></div></div>
 
 For further information on how to set up a safe account and how to choose the right parameters, please refer to the [official guidelines](https://help.gnosis-safe.io/en/articles/4772567-what-gnosis-safe-setup-should-i-use).
 

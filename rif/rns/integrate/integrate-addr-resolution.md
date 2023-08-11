@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Quick Start
 layout: rsk
 title: Use domains instead of long hexa addresses
 tags: rif, rns, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

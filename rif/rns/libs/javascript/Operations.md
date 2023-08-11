@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Operations
 layout: rsk
 title: RNS JS Library - Operations
 tags: rif, rns, rif-name-service, operations, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

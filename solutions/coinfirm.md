@@ -1,4 +1,6 @@
 ---
+menu_order: 1800
+menu_title: Coinfirm
 title: 'Coinfirm - Solutions on RSK'
 description: 'Analytics and Compliance Powering the Mass Adoption of Blockchain'
 tags: coinfirm, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles

@@ -1,4 +1,6 @@
 ---
+menu_order: 2700
+menu_title: Deploy Smart Contracts
 layout: rsk
 title: Deploy Smart Contracts
 description: "Learn how to develop and deploy smart contracts in RSK"
@@ -44,7 +46,7 @@ truffle console # Starts a web3 console
 * Initialize a Truffle project.
   ```shell
   truffle init
-```
+  ```
 
 If you see the following result on the terminal, this step is successful.
 
@@ -282,7 +284,7 @@ Let's get an instance of our contract! In migrations, we defined a name for our 
   },
   logs: []
 }
-```
+  ```
   The transaction generates a receipt. This is the data the blockchain generates to a transaction.
 
 4. To confirm that it was executed, we can run Step 2 again and see that the storage has changed.

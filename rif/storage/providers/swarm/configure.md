@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Configure
 layout: rsk
 title: Running Configurations for Swarm
 tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

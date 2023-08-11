@@ -1,4 +1,6 @@
 ---
+menu_order: 400 
+menu_title: Integrate your wallet
 layout: rsk
 title: Integrate your wallet with RNS
 tags: rif, rns, javascript, rif-name-service, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
@@ -6,7 +8,19 @@ tags: rif, rns, javascript, rif-name-service, integrate, resolver, node, sdk, li
 
 The first thing you need to do is to register the name of your wallet now! Search for it here:
 
-{% include rns-register.html %}
+<form class="form" id="frm-rns-search">
+  <div class="form-group">
+    <div class="input-group">
+      <input type="text" id="txt-rns-name" class="form-control" placeholder="find your domain" />
+      <div class="input-group-append">
+        <span class="input-group-text">.rsk</span>
+      </div>
+      <div class="input-group-append">
+        <button class="btn btn-rns-register">Register!</button>
+      </div>
+    </div>
+  </div>
+</form>
 
 **Content**
 

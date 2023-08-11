@@ -1,4 +1,7 @@
 ---
+menu_order: 400
+menu_title: Communications (VC JSON Schemas)
+title: Communications (VC JSON Schemas)
 layout: rsk
 ---
 

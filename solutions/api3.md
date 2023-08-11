@@ -1,4 +1,6 @@
 ---
+menu_order: 1900
+menu_title: API3
 title: 'API3 - Solutions on RSK'
 description: 'Connect Smart Contracts to Real-World Data.'
 tags: API3, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles

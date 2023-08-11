@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: Public Repositories
 layout: rsk
 title: RIF Notifier Public repositories
 tags: rif, notifier, github, repositories

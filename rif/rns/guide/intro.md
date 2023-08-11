@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Introduction
 layout: rsk
 title: "Intro - RNS User guide"
 description: "What is RNS, and how to use the testnet"

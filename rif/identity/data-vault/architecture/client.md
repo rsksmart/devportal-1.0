@@ -1,4 +1,7 @@
 ---
+menu_title: Web client SDK
+title: Web client SDK
+menu_order: 200
 layout: rsk
 tags: rlogin, rif, rif-identity, data-vault, architecture, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
@@ -109,7 +112,7 @@ const credentials = await client.get({ did, key })
 It returns an array of string with all the `keys` associated to the logged in `did`.
 If there are not `keys`, it returns an empty array.
 
-If the client is not logged in yet, it will log it in prior to get the `keys`, so it may prompt the user to sign the login message. Please refer to the [DID Auth protocol](../../../specs/did-auth) for more information.
+If the client is not logged in yet, it will log it in prior to get the `keys`, so it may prompt the user to sign the login message. Please refer to the [DID Auth protocol](../../specs/did-auth) for more information.
 
 ```typescript
 import DataVaultWebClient from '@rsksmart/ipfs-cpinner-client'

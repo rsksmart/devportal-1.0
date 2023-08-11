@@ -1,4 +1,6 @@
 ---
+menu_order: 3600
+menu_title: Truffle Box RSK Next Box
 layout: rsk
 title: Using Truffle box rsk-next-box
 tags: tutorial, rsk, truffle, truffle-box, next

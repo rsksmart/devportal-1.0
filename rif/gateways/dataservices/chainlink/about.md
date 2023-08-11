@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: About Chainlink
 layout: rsk
 title: RIF Gateways Chainlink
 tags: rif, gateways, data services, chainlink

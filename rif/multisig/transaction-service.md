@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: Transaction Service
 layout: rsk
 title: RIF Multisig - Transaction Service
 description: API to keep track of transactions sent via Gnosis Safe smart contracts

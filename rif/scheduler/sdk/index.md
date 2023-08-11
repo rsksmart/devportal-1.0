@@ -1,4 +1,7 @@
 ---
+menu_order: 400
+section_title: SDK
+menu_title: SDK
 layout: rsk
 title: RIF Scheduler - SDK
 ---
@@ -89,7 +92,7 @@ const rifScheduler = new RifScheduler({
 
 What you can do with this sdk?
 
-- [Query plans](query-plans)
-- [Purchase one of this plans](purchasing-plan)
-- [Schedule a transaction for the next minutes](scheduling)
-- [Get status](states)
+- [Query plans](./query-plans)
+- [Purchase one of this plans](./purchasing-plan)
+- [Schedule a transaction for the next minutes](./scheduling)
+- [Get status](./states)

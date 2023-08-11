@@ -1,4 +1,6 @@
 ---
+menu_order: 2300
+menu_title: Create your first frontend
 layout: rsk
 title: How to create your first frontend for smart contracts
 tags: tutorial, rsk, frontend, web3

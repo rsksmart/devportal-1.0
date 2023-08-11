@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Create ERC721 Transactions
 layout: rsk
 title: RIF Multisig SDK - ERC721 Transactions
 description: follow these steps to send erc721 tokens through multisig transactions

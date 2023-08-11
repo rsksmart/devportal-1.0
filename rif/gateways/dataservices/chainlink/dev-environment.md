@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Dev Environment
 layout: rsk
 title: RIF Gateways Chainlink Dev Environment
 tags: rif, gateways, data services, chainlink, dev environment

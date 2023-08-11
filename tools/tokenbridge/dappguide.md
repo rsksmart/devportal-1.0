@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Dapp Guide
 layout: rsk
 title: Token Bridge Dapp Guide
 tags: erc20, bridge, defi, decentralized, token-bridge, tokens, quick-start, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, guides, tutorial, install, get-started, how-to

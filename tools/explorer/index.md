@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Explorer
 layout: rsk
 title: Explorer
 tags: overview, explorer, rsk, search, blocks, transactions, mainnet, tools

@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Gas Costs
 layout: rsk
 title: RIF Relay Gas Costs
 tags: rif, envelope, relay, gas station network, gsn, overview, gas, costs

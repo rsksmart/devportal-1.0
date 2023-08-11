@@ -1,4 +1,6 @@
 ---
+menu_order: 1000
+menu_title: Chainlink
 title: 'Chainlink - Solutions on RSK'
 description: 'Connect your smart contracts to the outside world.'
 tags: chainlink, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts

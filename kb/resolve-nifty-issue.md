@@ -1,5 +1,7 @@
 ---
 layout: rsk
+menu_order: 1200
+menu_title: Resolve Nifty Issue
 title: Resolve Nifty Wallet Issue
 description: "Resolution for breaking change in derivation path for Nifty Wallet 5"
 tags: tutorial, nifty, chainId, address, derivation, bip44, slip44

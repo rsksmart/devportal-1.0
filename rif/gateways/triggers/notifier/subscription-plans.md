@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Subscription Plans
 layout: rsk
 title: RIF Notifier - Setup Subscription Plan
 tags: rif, notifier, setup, subscription plan

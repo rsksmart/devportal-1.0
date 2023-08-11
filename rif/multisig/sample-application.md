@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Sample Application
 layout: rsk
 title: RIF Multisig - Savings and Vault Solution - Sample Application
 description: Sample application for the RIF Multisig - Savings and Vault project showing the multisig SDKs usage.

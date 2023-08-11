@@ -1,4 +1,7 @@
 ---
+menu_order: 600
+menu_title: rns-artifacts
+section_title: rns-artifacts
 layout: rsk
 title: RNS Solidity artifacts
 tags: rns, artifacts

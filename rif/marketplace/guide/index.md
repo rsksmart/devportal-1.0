@@ -1,4 +1,7 @@
 ---
+menu_order: 200
+section_title: User Guides
+menu_title: User Guide
 layout: rsk
 title: "RIF Marketplace User Guide"
 tags: rif, marketplace, guide

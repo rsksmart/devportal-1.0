@@ -1,4 +1,7 @@
 ---
+menu_order: 400
+section_title: Complete a DApp with rLogin
+menu_title: Overview
 layout: rsk
 title: rLogin Guide
 tags: guide, rsk
@@ -8,7 +11,7 @@ description: "Guides on RSK, workshops, and other guides"
 In this series of three articles,
 we are going to build a decentralized application with a backend.
 We will use rLogin suite,
-developed by [RIF Identity](https://developers.rsk.co/rif/identity/) team,
+developed by [RIF Identity](../../rif/identity/) team,
 which will allow us to build a secure, reliable and scalable
 DApp from scratch.
 

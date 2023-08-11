@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Architecture
 layout: rsk
 title: RIF Gateways Chainlink Architecture
 tags: rif, gateways, data services, chainlink, architecture
