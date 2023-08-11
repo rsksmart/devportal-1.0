@@ -2,23 +2,17 @@
 layout: home
 ---
 
-# Welcome to RSK
+# Welcome to Rootstock
 
-The Developer Portal is the home for RSK documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
+The Developer Portal is the home for Rootstock (RSK) documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
 
 <div class="features-list">
     <ul id="card-list" class="row">
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/">
-            <div class="icon started h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/started-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/guides/quickstart/">
+<div class="content"><a href="/guides/quickstart/">
             <div class="content-container">
-                <p class="card-title rsk_green">Getting Started</p>
+               <div class="card-title"><h2 class="zg-text-bg">Getting Started</h2><span class="zg-label ml-1">01</span></div> 
                 <p class="card-desc">SmartBitcoin (RBTC) is linked 1:1 to Bitcoin (1 RBTC = 1 BTC)</p>
             </div>
             </a><div class="btn-container "><a href="/guides/quickstart/">
@@ -29,16 +23,10 @@ The Developer Portal is the home for RSK documentation for end users and develop
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/rsk/node/install">
-            <div class="icon node h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/node-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/rsk/node/install">
+<div class="content"><a href="/rsk/node/install">
             <div class="content-container">
-                <p class="card-title rsk_green">Node Setup </p>
-                <p class="card-desc">Learn how to set up a RSK node.</p>
+              <div class="card-title"><h2 class="zg-text-bg bg-yellow">Node Setup </h2><span class="zg-label ml-1 bg-yellow">02</span></div> 
+                <p class="card-desc">Learn how to set up a Rootstock node.</p>
             </div>
             </a><div class="btn-container"><a href="/rsk/node/install">
                 </a><a class="green" href="/rsk/node/install">Read More</a>
@@ -48,16 +36,10 @@ The Developer Portal is the home for RSK documentation for end users and develop
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/ethereum-dapp-to-rsk">
-            <div class="icon smart h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/contract-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content two-line-title-content"><a href="/ethereum-dapp-to-rsk">
+<div class="content two-line-title-content"><a href="/ethereum-dapp-to-rsk">
             <div class="content-container">
-                <p class="card-title rsk_green">Smart Contract Development</p>
-                <p class="card-desc">Learn how to port Ethereum projects to RSK</p>
+            <div class="card-title"><h2 class="zg-text-bg bg-purple">Smart Contract Dev</h2><span class="zg-label ml-1 bg-purple">03</span></div>
+                <p class="card-desc">Learn how to port Ethereum projects to Rootstock</p>
             </div>
             </a><div class="btn-container"><a href="/ethereum-dapp-to-rsk">
                 </a><a class="green" href="/ethereum-dapp-to-rsk">Read More</a>
@@ -67,15 +49,9 @@ The Developer Portal is the home for RSK documentation for end users and develop
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/rif">
-            <div class="icon rif h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/rif-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/rif">
+<div class="content"><a href="/rif">
             <div class="content-container">
-                <p class="card-title rsk_green">RIF Services</p>
+               <div class="card-title"><h2 class="zg-text-bg bg-pink">RIF Services</h2><span class="zg-label ml-1 bg-pink">04</span></div> 
                 <p class="card-desc">Access storage, oracles, naming and CPU services all in one place with the RIF token</p>
             </div>
             </a><div class="btn-container"><a href="/rif">
@@ -86,16 +62,10 @@ The Developer Portal is the home for RSK documentation for end users and develop
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/rif/rns">
-            <div class="icon domain h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/domain-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="/rif/rns">
+<div class="content"><a href="/rif/rns">
             <div class="content-container">
-                <p class="card-title rsk_green">Register a Domain</p>
-                <p class="card-desc">Learn more about RSK Name Service</p>
+               <div class="card-title"><h2 class="zg-text-bg bg-green">Register a Domain</h2><span class="zg-label ml-1 bg-green">05</span></div> 
+                <p class="card-desc">Learn more about RIF Name Service</p>
             </div>
             </a><div class="btn-container"><a href="/rif/rns">
                 </a><a class="green" href="/rif/rns">Read More</a>
@@ -105,19 +75,13 @@ The Developer Portal is the home for RSK documentation for end users and develop
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="https://ambassadors.rsk.co/">
-            <div class="icon tools h-100">
-            <div class="icon-cont text-center my-auto">
-            <img src="/assets/img/features/contract-icon.png" alt="started icon">
-            </div>
-            </div>
-            </a><div class="content"><a href="https://ambassadors.rsk.co/">
+<div class="content"><a href="https://rootstock.io/ambassadors-program/">
             <div class="content-container">
-                <p class="card-title rsk_green">Become an Ambassador</p>
-                <p class="card-desc">The RSK Ambassadors Program is a community empowerment initiative, designed to promote awareness, educate and drive adoption around RSK and RSK Infrastructure Framework (RIF).</p>
+               <div class="card-title"><h2 class="zg-text-bg bg-cyan">Become an Ambassador</h2><span class="zg-label ml-1 bg-cyan">06</span></div> 
+                <p class="card-desc">A community empowerment initiative, designed to promote awareness, educate and drive adoption around Rootstock and RIF.</p>
             </div>
-            </a><div class="btn-container"><a href="https://ambassadors.rsk.co/">
-                </a><a class="green" href="https://ambassadors.rsk.co/">Read More</a>
+            </a><div class="btn-container"><a href="https://rootstock.io/ambassadors-program/">
+                </a><a class="green" href="https://rootstock.io/ambassadors-program/">Read More</a>
             </div>
             </div>
         </div>
@@ -125,31 +89,43 @@ The Developer Portal is the home for RSK documentation for end users and develop
     </ul>
 </div>
 
-# What is RSK?
+## What is Rootstock?
 
-RSK's full [technology stack](/the-stack) is built on top of bitcoin:
-From RSK smart contracts
-to the RSK Infrastructure Framework.
+Rootstock's full [technology stack](/the-stack) is built on top of bitcoin:
+From Rootstock smart contracts
+to the Rootstock Infrastructure Framework.
 The stack is designed to create a
 more fair and inclusive financial system.
 
-![RSK Technology Stack - High Level](/assets/img/home/rsk-tech-stack-high-level.png)
+![Rootstock Technology Stack - High Level](/assets/img/home/rootstock-homepage.svg)
 
-**Bitcoin**, is a store and transfer of value.
+<section >
+<div class="row">
+  <div class="col two-x-card">
+  <div class="header-div">
+      <h2 class="zg-text-bg fs-28">Bitcoin</h2><span class="ml-1 zg-label">BTC</span>
+  </div>
+    <p> Is a store and transfer of value.
 The blockchain is secure because miners
 with high infrastructure and energy costs
 create the new blocks to be added to the blockchain every 10 minutes.
-The more hashing power they provide, the more secure the network is.
-
-**RSK** is the first open source smart contract platform that is
+The more hashing power they provide, the more secure the network is.</p>
+  </div>
+    <div class="col two-x-card">
+        <div class="header-div"><h2 class="zg-text-bg bg-pink fs-28">Rootstock</h2><span class="ml-1 zg-label bg-pink">RSK</span></div>
+    <p> Is the first open source smart contract platform that is
 powered by the bitcoin network.
-RSK's goal is to add value and functionality to the
+Rootstock's goal is to add value and functionality to the
 bitcoin ecosystem by enabling smart-contracts,
-near instant payments, and higher-scalability.
+near instant payments, and higher-scalability.</p>
+  </div>
+</div>
+</section>
 
-How RSK is connected to bitcoin?
+<section>
+<h2 class="rsk-tag-wht">How Rootstock is connected to bitcoin?</h2>
 
-## Merged mining with Bitcoin
+<h3 class="fs-48 mb-32">Merged mining with Bitcoin</h3>
 
 The first point of contact is through mining.
 
@@ -157,57 +133,63 @@ The bitcoin miners do what is known as
 [merged mining](/rsk/architecture/mining/),
 securing both networks with the same infrastructure and energy consumption.
 
-<div class="sprite-transform-animation-wrapper rsk-mining">
-  <div class="sprite-transform-animation rsk-mining"></div>
-</div>
 
 They create blocks on the bitcoin network every 10 minutes,
 including transfer of bitcoin from different addresses
 and in the process they create new bitcoins.
 
-On RSK, blocks are created every 30 seconds,
+On Rootstock, blocks are created every 30 seconds,
 to secure the execution of smart contracts.
 This does not mint any new coins in the process,
 but does earn a reward from the merged mining.
 
-Check out [mining.rsk.co](https://mining.rsk.co/)
+Check out [https://rootstock.io/mine-btc-with-rootstock/](https://rootstock.io/mine-btc-with-rootstock/)
 to learn more about mining.
-
-## Powpeg with Bitcoin
+</section>
+<section>
+<h3 class="fs-48 mb-32">Powpeg with Bitcoin</h3>
 
 The second point of contact is the
 [Powpeg](/rsk/architecture/powpeg/),
 also known as the bridge.
 
 This component connects both networks to allow
-the transfer of bitcoins to RSK,
+the transfer of bitcoins to Rootstock,
 thereby allowing developers to interact with smart contracts.
 They pay gas using the same bitcoin, the smart bitcoin.
 
-<div class="sprite-transform-animation-wrapper rsk-peg">
-  <div class="sprite-transform-animation rsk-peg"></div>
-</div>
 
 To do so, you send bitcoin to a special address,
 where they are locked in the bitcoin network.
-Next, in the same address over in the RSK network,
+Next, in the same address over in the Rootstock network,
 that same bitcoin is released to the user
-for use in the RSK network.
+for use in the Rootstock network.
 This is called peg-in.
 
 You can do the reverse operation called peg-out,
-by sending your bitcoin to a special address in the RSK network,
+by sending your bitcoin to a special address in the Rootstock network,
 and receiving your bitcoin back in the bitcoin network.
+</section>
 
-# Quick Links
+<hr>
 
-<ul>
-  <li>Mainnet:
-    <a href="https://explorer.rsk.co/" target="_blank">Explorer</a>,
-    <a href="https://stats.rsk.co/" target="_blank">Stats</a>
+<h3 class="fs-48">Quick Links</h3>
+
+<ul id="ql-list">
+  <li><p class="rsk-tag-wht">Mainnet</p><br>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Explorer,
+    </a>
+    <a className="btn btn-outline-white btn-outline-white--alt me-3 mb-3 d-inline-flex align-items-center zg-text-sm" target="_blank" rel="noreferrer" href="https://stats.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Stats
+    </a>
   </li>
-  <li>Testnet:
-    <a href="https://explorer.testnet.rsk.co/" target="_blank">Explorer</a>,
-    <a href="https://stats.testnet.rsk.co/" target="_blank">Stats</a>
-   </li>
+    <li><p class="rsk-tag-wht">Testnet</p><br>
+    <a className="btn ext-link zg-text-sm" target="_blank" rel="noreferrer" href="https://explorer.testnet.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Explorer,
+    </a>
+    <a className="btn ext-link zg-text-sm" target="_blank" rel="noreferrer" href="https://stats.testnet.rsk.co/">
+    <img src="./assets/img/home/external.svg"/>Stats
+    </a>
+  </li>
 </ul>

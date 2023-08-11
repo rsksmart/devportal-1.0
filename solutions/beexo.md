@@ -1,4 +1,6 @@
 ---
+menu_order: 700
+menu_title: Beexo
 title: 'Beexo - Solutions on RSK'
 description: 'Beexo is crypto made simple! A multi-currency digital wallet connecting you with the crypto world.'
 tags: beexo, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet
@@ -149,8 +151,8 @@ can be used in Testnet.
 
 ### Fungible tokens
 
-| Symbol | Name | Token Standard | Network
-| --- | --- | --- | --- | --- |
+| Symbol | Name | Token Standard | Network |
+| --- | --- | --- | --- |
 | [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
 | [RDOC](https://explorer.rsk.co/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://moneyonchain.com/rif-dollar/) | ERC20 | RSK |
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/ ) | ERC20 | Ethereum |

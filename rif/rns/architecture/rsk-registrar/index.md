@@ -1,4 +1,7 @@
 ---
+menu_order: 400
+section_title: .rsk Registrar
+menu_title: About .rsk Registrar
 layout: rsk
 title: .rsk Registrar
 tags: rif, rns, rif-name-service, registrar, javascript,  domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

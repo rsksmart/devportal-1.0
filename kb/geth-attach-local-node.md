@@ -1,4 +1,6 @@
 ---
+menu_order: 2000
+menu_title: Geth attach to RSK local node
 layout: rsk
 title: Using geth to attach to a RSK local node
 tags: tutorial, rsk, geth, ethereum

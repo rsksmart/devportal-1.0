@@ -1,4 +1,7 @@
 ---
+menu_order: 300
+section_title: Complete Full Stack dApp on RSK
+menu_title: Table of Contents
 layout: rsk
 title: Guides for Developers
 tags: guides, rsk, ethereum

@@ -1,5 +1,8 @@
 ---
 layout: rsk
+menu_order: 3
+section_title: RIF
+menu_title: About RSK Infrastructure Framework
 title: RSK Infrastructure Framework
 tags: rif, rif-storage, rif-lumino, rns, rif-identity, DID, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
@@ -21,25 +24,13 @@ RIF OS Protocols enable broad interoperability and faster time-to-deployment, an
 
 RNS is a decentralized service that allows users to have a readable domain or alias. It can be used to identify other personal resources, such as payment or communication addresses.
 
-Learn more about [RIF Name Service](./rns)
-
-#### RIF Lumino Network
-
-RIF Lumino Network is a third-layer solution to the Bitcoin blockchain, that enables state channels for every token built on Rootstock (RSK) increasing transaction throughput and reduces costs by orders of magnitude.
-
-Learn more about [RIF Lumino Network](./lumino)
-
-### RIF Marketplace
-
-RIF Marketplace provides a one-stop shop for a wide variety of decentralized services, presenting a unified/simplified interface and user experience. 
-
-Learn more about [RIF Marketplace](./marketplace)
+Learn more about [RIF Name Service](../rif/rns/)
 
 ### RIF Gateways
 
 RIF Gateways develops tools and technologies to allow decentralized applications to seamlessly connect to the external world. 
 
-Learn more about [RIF Gateways](./gateways)
+Learn more about [RIF Gateways](../rif/gateways/)
 
 #### RIF OS White Paper
 

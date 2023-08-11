@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: MyCrypto
 layout: rsk
 title: MyCrypto
 tags: rif, rns, rif-name-service, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

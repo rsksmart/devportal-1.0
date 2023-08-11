@@ -1,4 +1,6 @@
 ---
+menu_order: 1600
+menu_title: Givetrack
 title: 'GiveTrack - Solutions on RSK'
 description: 'Revolutionary donation platform, providing real-time financial transparency and global impact powered by Blockchain technology.'
 tags: givetrack, rsk-solutions, rsk, bitgive, defi, dApps, blockchain, donations

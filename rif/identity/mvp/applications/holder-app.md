@@ -1,4 +1,7 @@
 ---
+menu_title: Citizens App
+title: Citizens App
+menu_order: 200
 layout: rsk
 tags: rif, rif-identity, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
@@ -7,7 +10,7 @@ tags: rif, rif-identity, libraries, infrastructure, mobile, protocols, mvp, desi
 
 The Citizens app is a wallet that can be used to store the declarative details and credentials of its users. Built-in React Native it can be packaged for both iOS and Android, however, Android is the only officially supported platform.
 
-Read the [running guide](../../run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/IdentityApp) to run locally (please use tag `holder-v0.1.2`)
+Read the [running guide](../../../identity/mvp/run) to run the whole project or [browse the open-source repo](https://github.com/rsksmart/rif-identity-ui/tree/holder-v0.1.2/apps/IdentityApp) to run locally (please use tag `holder-v0.1.2`)
 
 Take a look at the [Figma prototype](https://www.figma.com/proto/KFwPTkCesIMlnutNDqJQLD/Gibraltar-Identity?node-id=0%3A1&scaling=scale-down)
 
@@ -32,7 +35,7 @@ Take a look at the [Figma prototype](https://www.figma.com/proto/KFwPTkCesIMlnut
 - Creates an Identity based on a 12 seed mnemonic.
 - Internationalization - currently Spanish and English support, it is easy to extend to new languages.
 - Saves declarative details about the user and backs them up in the [data vault](/rif/identity/data-vault). These details are shared when the user requests credentials.
-- Requests credentials to issuer service, and hold request information until the issuer approves or denies the request (following [this protocol](../../../specs/credential-requests)).
+- Requests credentials to issuer service, and hold request information until the issuer approves or denies the request (following [this protocol](../../../specs/credential-requests/)).
 - Saves received Credentials in its internal database and then backs them up in the data vault.
 - Creates Presentations of Verifiable Credentials to share with the Verifier app.
 

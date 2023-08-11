@@ -1,4 +1,6 @@
 ---
+menu_order: 3200
+menu_title: Truffle Boxes Prerequisites
 layout: rsk
 title: Truffle boxes prerequisites
 tags: tutorial, rsk, truffle, truffle-box 

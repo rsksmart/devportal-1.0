@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Getting Started with RSKj
 title: 'Getting Started with RSKj'
 description: 'Explore the different ways to get started with rskj as a developer, node runner or as miner on RSK '
 tags: knowledge-base, rskj, rsk, node, blockchain, developers, wallets

@@ -1,4 +1,7 @@
 ---
+menu_order: 300
+section_title: Specs
+menu_title: About
 layout: rsk
 title: RNS Specs
 description: "RNS specifications, and name mapping convention"

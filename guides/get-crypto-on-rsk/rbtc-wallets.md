@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Get RBTC using Wallets
 title: "How to get RBTC using wallets"
 description: "Understand what crypto wallets are and how they work, and then see how you can use RSK wallets that have the BTC and RBTC swapping feature built in"
 tags: rbtc, rsk, wallets, defi, exchange, crypto, how-to, knowledge-base

@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Getting Started
 layout: rsk
 title: "Getting started - RNS User guide"
 description: "How to register a domain, log in to a domain, log out of a domain, change the language"

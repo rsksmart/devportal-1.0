@@ -8,18 +8,7 @@ tags: rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, d
 
 Learn how to use a Wallet integrated with [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens.
 
-<a href="/wallet/use" class="green-button">Use</a>
-
-
-
-## Create or integrate a wallet
-
-rWallet is an open-source easy to use blockchain wallet. It is the code-base to create your own mobile phone wallet with the most secure blockchain. 
-
-<a href="/wallet/rwallet" class="green-button">Create a new wallet</a>
-
-<a href="/wallet/integrate" class="green-button">Integrate your own wallet</a>
-
+<a href="/develop/wallet/use/" class="green-button">Use</a>
 
 ### Multisig wallet
 

@@ -1,4 +1,6 @@
 ---
+menu_order: 3000
+menu_title: Create other ERC20 token
 layout: rsk
 title: Create a token - other approach
 tags: tutorial, rsk, token, openzeppelin, erc20, truffle 
@@ -290,6 +292,7 @@ Steps of usage:
 * 9.1 Create a file named 2_deploy_token.js in **~/token/migrations**
   <div style="text-align:center"><img src="/assets/img/kb/create-a-token-02/create-token7.png"></div>
 * 9.2 The code should look like:
+  
   ```javascript
     var YourNewToken = artifacts.require("./YourNewToken.sol");
     module.exports = function(deployer) {

@@ -1,4 +1,6 @@
 ---
+menu_order: 3500
+menu_title: Truffle Box RSK Starter Box
 layout: rsk
 title: Truffle Box (rsk-react-box)
 tags: tutorial, rsk, truffle, react

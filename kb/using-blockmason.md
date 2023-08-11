@@ -1,5 +1,7 @@
 ---
 layout: rsk
+menu_order: 1400
+menu_title: Using Blockmason
 title: Blockmason
 description: "How to use RSK with Blockmason Link, with an example of deploying a smart contract to the Testnet"
 tags: block-mason, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

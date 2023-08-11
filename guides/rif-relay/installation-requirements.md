@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Installation Requirements
 layout: rsk
 title: RIF Relay Installation Requirements
 tags: rif, envelope, relay, user, guide, install

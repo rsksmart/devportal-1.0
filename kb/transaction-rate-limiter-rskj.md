@@ -1,4 +1,6 @@
 ---
+menu_order: 700
+menu_title: Transaction Rate Limiter
 title: 'Transaction rate limiting on the Rootstock network. The features, their importance, how to use and configure them.'
 description: 'Also known as: Virtual Gas limiter.'
 tags: knowledge-base, node, rskj, rate, limit

@@ -1,4 +1,6 @@
 ---
+menu_order: 1700
+menu_title: RPC via GetBlock
 title: 'RPC via GetBlock'
 description: 'Learn how to use the API methods within GetBlock to connect to an RSK node'
 tags: GetBlock, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, tutorial, docs, api, websocket, json-rpc
@@ -32,29 +34,29 @@ Here's the full code sample:
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```shell
-curl --location --request POST         
-'https://rsk.getblock.io/mainnet/' \ 
---header 'x-api-key:<YOUR-API-KEY>' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "id": "blockNumber", 
-    "jsonrpc": "2.0", 
-    "method": "eth_getBlockByNumber", 
+  curl --location --request POST         
+  'https://rsk.getblock.io/mainnet/' \ 
+  --header 'x-api-key:<YOUR-API-KEY>' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+      "id": "blockNumber", 
+      "jsonrpc": "2.0", 
+      "method": "eth_getBlockByNumber", 
     "params": ["latest", false]}'
   ```
 - Windows
   ```windows-command-prompt
-curl --location --request POST         
-'https://rsk.getblock.io/mainnet/' \ 
---header 'x-api-key:<YOUR-API-KEY>' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "id": "blockNumber", 
-    "jsonrpc": "2.0", 
-    "method": "eth_getBlockByNumber", 
-    "params": ["latest", false]}'
-}'
-```
+  curl --location --request POST         
+  'https://rsk.getblock.io/mainnet/' \ 
+  --header 'x-api-key:<YOUR-API-KEY>' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+      "id": "blockNumber", 
+      "jsonrpc": "2.0", 
+      "method": "eth_getBlockByNumber", 
+      "params": ["latest", false]}'
+  }'
+  ```
 
 **Result**
 
@@ -77,26 +79,26 @@ Here's the full code sample:
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```shell
-curl --location --request POST         
-'https://rsk.getblock.io/testnet/' \ 
---header 'x-api-key:<YOUR-API-KEY>' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "id": "blockNumber", 
-    "jsonrpc": "2.0", 
-    "method": "eth_getBlockByNumber", 
+  curl --location --request POST         
+  'https://rsk.getblock.io/testnet/' \ 
+  --header 'x-api-key:<YOUR-API-KEY>' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+      "id": "blockNumber", 
+      "jsonrpc": "2.0", 
+      "method": "eth_getBlockByNumber", 
     "params": ["latest", false]}'
   ```
 - Windows
   ```windows-command-prompt
-curl --location --request POST         
-'https://rsk.getblock.io/testnet/' \ 
---header 'x-api-key:<YOUR-API-KEY>' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "id": "blockNumber", 
-    "jsonrpc": "2.0", 
-    "method": "eth_getBlockByNumber", 
+  curl --location --request POST         
+  'https://rsk.getblock.io/testnet/' \ 
+  --header 'x-api-key:<YOUR-API-KEY>' \
+  --header 'Content-Type: application/json' \
+  --data-raw '{
+      "id": "blockNumber", 
+      "jsonrpc": "2.0", 
+      "method": "eth_getBlockByNumber", 
     "params": ["latest", false]}'
   ```
 
@@ -121,11 +123,11 @@ To send JSON RPC over WebSockets, it is required to establish the connection:
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```shell
-wscat -c wss://rsk.getblock.io/mainnet/websocket -H "x-api-key:<YOUR-API-KEY>”
+  wscat -c wss://rsk.getblock.io/mainnet/websocket -H "x-api-key:<YOUR-API-KEY>”
   ```
 - Windows
   ```windows-command-prompt
-wscat -c wss://rsk.getblock.io/mainnet/websocket -H "x-api-key:<YOUR-API-KEY>”
+  wscat -c wss://rsk.getblock.io/mainnet/websocket -H "x-api-key:<YOUR-API-KEY>”
   ```
 
 Then, send the request body:
@@ -139,11 +141,11 @@ Then, send the request body:
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```shell
-wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>”
+  wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>”
   ```
 - Windows
   ```windows-command-prompt
-wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>”
+  wscat -c wss://rsk.getblock.io/testnet/websocket -H "x-api-key:<YOUR-API-KEY>”
   ```
     
 Then, send the request body:

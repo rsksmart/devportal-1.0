@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Bug Bounty Program
 layout: rsk
 title: Bug Bounty Program
 tags: rsk, rif, bounty, security

@@ -1,4 +1,8 @@
 ---
+menu_order: 600
+section_title: Specs
+menu_title: Specs
+title: Specs
 layout: rsk
 tags: rif, rif-identity, specs, DID, encrytpion, layout, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---

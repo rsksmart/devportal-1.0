@@ -1,4 +1,7 @@
 ---
+menu_order: 700
+section_title: Marketplace
+menu_title: About
 layout: rsk
 title: About RIF Marketplace
 permalink: /rif/marketplace/

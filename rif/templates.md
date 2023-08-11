@@ -1,4 +1,6 @@
 ---
+menu_order: 1200
+menu_title: Use a RIF Template
 layout: rsk
 title: RIF Templates
 tags: rif, templates, typescript, react, sdk

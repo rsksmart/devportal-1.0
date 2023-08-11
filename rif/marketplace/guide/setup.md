@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Setup
 layout: rsk
 title: "Setup - RIF Marketplace User Guide"
 tags: rif, marketplace, guide

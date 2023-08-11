@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Create RBTC Transactions
 layout: rsk
 title: RIF Multisig SDK - Send RBTC
 description: follow these steps to send gas on the multisig account and to create raw transactions

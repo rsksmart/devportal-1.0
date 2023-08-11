@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Technical Specs
 layout: rsk
 title: RIF Marketplace Storage Tech Specs
 tags: rif, marketplace, storage, IPFS, technical

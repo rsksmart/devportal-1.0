@@ -1,4 +1,6 @@
 ---
+menu_order: 2200
+menu_title: NowNodes
 title: 'NOWNodes - Solutions on RSK'
 description: 'NOWNodes - Blockchain service at your fingertips'
 tags: nownodes-docs

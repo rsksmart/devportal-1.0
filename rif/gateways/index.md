@@ -1,4 +1,7 @@
 ---
+menu_order: 800
+section_title: Gateways
+menu_title: About
 layout: rsk
 title: About RIF Gateways
 permalink: /rif/gateways/

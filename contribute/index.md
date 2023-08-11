@@ -1,6 +1,9 @@
 ---
 layout: rsk
 title: Contribute
+menu_order: 11
+menu_title: Contribute
+section_title: Contribute
 ---
 
 The RSK stack is open-source, if you are interested in colaborate, follow these links:

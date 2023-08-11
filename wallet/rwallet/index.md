@@ -1,11 +1,10 @@
 ---
-layout: rsk
-title: rWallet
+layout: redirect
+permalink: /wallet/rwallet/
+redirect: /develop/wallet/use/
 ---
 
-rWallet is being discontinued and will soon be replaced by RIF Wallet, bringing more features, functionalities and improved UX, all powered by smart contract technology. 
-
-If you are an rWallet user, we advise that you restore your seed in a different wallet to ensure the seamless transition of your assets until RIF Wallet becomes available. 
+> rWallet is being discontinued and will soon be replaced by RIF Wallet, bringing more features, functionalities and improved UX, all powered by smart contract technology. If you are an rWallet user, we advise that you restore your seed in a different wallet to ensure the seamless transition of your assets until RIF Wallet becomes available. 
 
 rWallet is an open-source easy to use blockchain wallet. It is the code-base to create your own mobile phone wallet with the most secure blockchain. Send, receive and swap Bitcoin (BTC), smartBitcoin (RBTC), RIF Token (RIF), Dollar on Chain (DOC) and more coming soon.
 

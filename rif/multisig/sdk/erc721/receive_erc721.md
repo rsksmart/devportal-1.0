@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Receive ERC721 tokens
 layout: rsk
 title: RIF Multisig SDK - Receive ERC721 token
 description: follow these steps to receive erc721 tokens through multisig transactions

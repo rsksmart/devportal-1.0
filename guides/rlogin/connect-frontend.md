@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Connect Frontend
 layout: rsk
 title: 'Build a DApp with rLogin - Part 1: Connect Frontend'
 description: 'Create a DApp, add the rLogin connect button, and perform several operations with the connected wallet'

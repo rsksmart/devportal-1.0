@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Interaction guide using MyCrypto
 layout: rsk
 title: Interaction guide using MyCrypto
 tags: erc20, bridge, mycrypto, defi, node, rbtc, ganache, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts

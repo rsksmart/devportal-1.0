@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: Contracts
 layout: rsk
 title: RIF Relay - Contracts
 tags: rif, relay, rootstock, rsk, envelope, mainnet, testnet, contract

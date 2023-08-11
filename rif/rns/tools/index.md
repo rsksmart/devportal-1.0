@@ -1,4 +1,7 @@
 ---
+menu_order: 600
+section_title: Tools
+menu_title: About Tools
 layout: rsk
 title: Tools
 tags: rif, rns, rif-name-service, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Dev Environment
 layout: rsk
 title: RIF Marketplace Development Environment
 tags: rif, marketplace, development, environment

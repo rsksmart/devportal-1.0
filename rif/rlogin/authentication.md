@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: Integrated backend authentication
 layout: rsk
 title: rLogin - integrated backend authentication
 tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis

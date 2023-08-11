@@ -1,8 +1,5 @@
 ---
-layout: rsk
-title: RIF Aggregation - Walkthrough
-description: A step-by-step guide to create your own zksync-based dapp
-tags: rif, aggregation, zksync
+layout: redirect
+permalink: /rif/aggregation/walkthrough/
+redirect: /rif/rollup/walkthrough/
 ---
-
-Coming soon...

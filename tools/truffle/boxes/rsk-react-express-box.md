@@ -1,4 +1,6 @@
 ---
+menu_order: 400
+menu_title: RSK react-express box
 layout: rsk
 title: Rsk react-express box
 tags: tutorial, rsk, truffle, truffle-box, react, express

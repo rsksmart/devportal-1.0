@@ -1,4 +1,6 @@
 ---
+menu_order: 1400
+menu_title: Sovryn
 title: "Sovryn - Solutions on RSK"
 description: "Sovryn is a non-custodial and permissionless smart contract-based system for Bitcoin lending, borrowing and margin trading"
 tags: sovryn, rsk-solutions, rsk, defi, bitcoin

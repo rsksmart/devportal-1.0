@@ -1,4 +1,6 @@
 ---
+menu_order: 600
+menu_title: RSKj for Developers
 title: 'RSKj for Developers'
 description: 'Setup your dev environment and build dApps faster using this quick start guide'
 tags: knowledge-base, rskj, rsk, node, blockchain, developers, wallets

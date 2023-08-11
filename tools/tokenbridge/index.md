@@ -1,10 +1,13 @@
 ---
+menu_order: 500
+menu_title: Token Bridge
+section_title: Token Bridge
 layout: rsk
-title: RSK <-> ETH Token Bridge
-tags: erc20, bridge, faqs, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
+title: Rootstock (RSK) <-> ETH Token Bridge
+tags: erc20, bridge, faqs, rootstock, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
 ---
 
-Ethereum/RSK Bridge that allows to move ERC20 tokens between one chain and the other.
+Ethereum/Rootstock Bridge that allows to move ERC20 tokens between one chain and the other.
 
 ## Rationale
 
@@ -15,7 +18,7 @@ Cross chain events are very important in the future of cryptocurrencies. Exchang
 We have a bridge smart contract on each network, the bridge on one chain will receive and lock the ERC20 tokens, then it will emit an event that will be served to the bridge on the other chain. There is a Federation in charge of sending the event from one contract to the other. Once the bridge on the other chain receives the event from the Federation, it mints the tokens on the mirror ERC20 contract.
 See the [FAQ](/tools/tokenbridge/faq/) to learn more about how it works!
 
-<img src="/assets/img/tools/tokenbridge/token-bridge-diagram.png"/>
+<img src="/assets/img/tools/tokenbridge/token-bridge-diagram.jpg"/>
 
 
 The bridge contracts are upgradeable, this enables a smoother move to a more decentralized bridge in the future. This is the

@@ -1,4 +1,6 @@
 ---
+menu_order: 500
+menu_title: Integrations
 layout: rsk
 title: RIF Relay Integration
 tags: rif, envelope, relay, user, guide, integrate

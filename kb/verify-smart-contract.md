@@ -1,4 +1,6 @@
 ---
+menu_order: 1800
+menu_title: Verify Smart Contracts
 title: 'How to verify a Smart Contract on the RSK Block Explorer'
 description: 'Learn how to verify a smart contract using the RSK Block Explorer'
 tags: knowledge-base, rskj, rsk, node, blockchain, developers, block-explorer

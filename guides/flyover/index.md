@@ -1,4 +1,7 @@
 ---
+menu_order: 1000
+section_title: Flyover Protocol
+menu_title: Table of Contents
 title: "Flyover Protocol Guide | Table of Contents"
 description: "Welcome to the flyover documentation, learn about the flyover architecture, how to get started and integrate the flyover protocol into your project."
 slug: flyover-docs

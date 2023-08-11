@@ -1,4 +1,7 @@
 ---
+menu_order: 300
+section_title: Truffle
+menu_title: Overview
 layout: rsk
 title: Truffle Overview
 tags: truffle, ganache, quick-start, truffle-boxes, open zeppelin, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, windows, mac, linux, get-started, how-to

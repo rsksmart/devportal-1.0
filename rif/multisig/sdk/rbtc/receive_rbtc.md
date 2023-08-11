@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Receive RBTC (gas)
 layout: rsk
 title: RIF Multisig SDK - Receive RBTC
 description: follow these steps to receive gas on the multisig account

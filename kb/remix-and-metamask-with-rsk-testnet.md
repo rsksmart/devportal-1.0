@@ -1,4 +1,6 @@
 ---
+menu_order: 2200
+menu_title: Remix and Metamask with RSK testnet
 layout: rsk
 title: Using Remix and Metamask with RSK testnet
 tags: tutorial, rsk, remix, metamask

@@ -1,4 +1,6 @@
 ---
+menu_order: 200
+menu_title: Local Network
 layout: rsk
 title: Running a local Swarm network
 tags: rif, rif-storage, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto

@@ -1,4 +1,7 @@
 ---
+menu_order: 510
+menu_title: About
+section_title: ERC721 tokens (collectibles)
 layout: rsk
 title: RIF Multisig SDK - ERC721
 description: follow these steps to send/receive erc721 tokens through multisig transactions

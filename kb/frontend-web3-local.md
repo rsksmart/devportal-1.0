@@ -1,4 +1,6 @@
 ---
+menu_order: 2400
+menu_title: Frontend with web3 in a local node
 layout: rsk
 title: Create a frontend for smart contracts using web3 connected to a local node
 tags: tutorial, rsk, frontend, web3

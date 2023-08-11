@@ -1,4 +1,6 @@
 ---
+menu_order: 300
+menu_title: Browsers
 layout: rsk
 title: 'RSK Quick Start Guide | Using RSK in the Browser'
 description: 'Learn how to interact with RSK in your web browser, how to look at RSK transactions, develop and deploy your very first smart contract to the RSK network.'

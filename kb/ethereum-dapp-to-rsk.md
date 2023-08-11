@@ -1,5 +1,7 @@
 ---
 layout: rsk
+menu_order: 1600
+menu_title: Bring your Ethereum dApp to RSK
 title: Bring your Ethereum dApp to RSK
 description: "Learn how to cross your Ethereum dApps to RSK"
 tags: token, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
