@@ -2000,12 +2000,11 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x12345
 
 Below are the configuration limits for the following JSON-RPC methods:
 
-> Note: This is available from Fingerroot v5.1.0.
+> Note: This is available from [Fingerroot v5.1.0](https://blog.rootstock.io/noticia/rsk-fingerroot-5-1-0-is-here/).
 
 ### JSON-RPC method eth_getLogs limits
 
 The added configuration in the RSKj client's configuration files allows the control of two limits related to the `eth_getLogs` JSON-RPC call, which is used to retrieve event logs from smart contracts on the Rootstock blockchain.
-
 
 ### Maximum blocks to query
 
@@ -2020,7 +2019,6 @@ The `maxLogsToReturn` refers to the maximum number of logs to return.
 This parameter determines the maximum number of event logs that the RSKj client will return in response to an `eth_getLogs` call. By default, this value is disabled (i.e, set to 0), indicating that the RSKj client will return all event logs that match the search criteria. If the limit is defined and the call exceeds this limit, the query execution will be terminated returning an error code.
 
 > Note: Disabling the limit (`maxLogsToReturn = 0`) could lead to the inclusion of a large number of logs in the response. However, enabling the limit helps protect the node's resources and prevents malicious usages.
-
 
 ## JSON-RPC Interface Limit
 
