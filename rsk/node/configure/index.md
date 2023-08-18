@@ -6,19 +6,19 @@ description: "Setting your own config preferences, when using the Java command, 
 menu_order: 5
 permalink: /rsk/node/configure/
 render_features: 'custom-terminals'
+render_features: 'collapsible'
 ---
 
 ## Command Line Interface
 
-The RSK node can be started with different
+The Rootstock (RSK) node can be started with different
 [CLI flags](./cli/).
+## Setting config preferences
 
-## Setting your own config preferences
+See how to set your config:
 
-It is a bit different if:
-
-- [You are using Ubuntu, Azure, AWS or Docker](#using-ubuntu-azure-aws-or-docker)
-- [You are using the `java` command](#using-java-command)
+- [Using Ubuntu, Azure, AWS or Docker](#using-ubuntu-azure-aws-or-docker)
+- [Using the `java` command](#using-java-command)
 
 &hellip; to run the node.
 
@@ -68,44 +68,44 @@ This can be done in two ways:
 
 ### Using RocksDB
 
-> IMPORTANT NOTICE: Starting from RSKj HOP v4.2.0, RocksDB is **no longer experimental**.  
-> Read more in [RSK Hop Release v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0).
+[](#top "collapsible")
+- **Important Info:**
+  > - Starting from RSKj HOP v4.2.0, RocksDB is no longer experimental. As of the most recent version, RocksDB has now been made the default storage library, replacing LevelDB. This change was made to tackle maintainability and performance issues of LevelDB.
+  > - Previously, RSKj ran using [LevelDB](https://dbdb.io/db/leveldb) by default, with the option to switch to [RocksDB](http://rocksdb.org/). Now, RocksDB is the default storage option, aiming to enable higher performance within the RSKj nodes.
 
-By default, RSKj runs using [LevelDB](https://dbdb.io/db/leveldb).
-There is an option to use an alternate storage option,
-[RocksDB](http://rocksdb.org/), instead.
-The RocksDB option was introduced to enable higher performance
-within the RSKj nodes.
+#### Get Started
 
-[RocksDB](http://rocksdb.org/) is a persistent key-value store for fast storage environments
-RocksDB is an embeddable persistent key-value store for fast storage.
-
-[GET STARTED](http://rocksdb.org/docs/getting-started.html).
-
-Advantages (taken from source):
-* RocksDB uses a log structured database engine, written entirely in C++, for maximum performance. Keys and values are just arbitrarily-sized byte streams.
-* RocksDB is optimized for fast, low latency storage such as flash drives and high-speed disk drives. RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
-* RocksDB is adaptable to different workloads. From database storage engines such as [MyRocks](https://github.com/facebook/mysql-5.6) to [application data caching](http://techblog.netflix.com/2016/05/application-data-caching-using-ssds.html) to embedded workloads, RocksDB can be used for a variety of data needs.
-* RocksDB provides basic operations such as opening and closing a database, reading and writing to more advanced operations such as merging and compaction filters.
-
-### How to use RocksDB
-
-Modify the relevant RSKj config file (`*.conf`) file
-and set the property `keyvalue.datasource=rocksdb`.
+RSKj nodes run using RocksDB by default (See important info section). To switch back to LevelDB, modify the relevant RSKj config file (`*.conf`) and set the config: `keyvalue.datasource=leveldb`.
 
 The `keyvalue.datasource` property in the config
 may only be either `rocksdb` or `leveldb`.
 
-If you wish to switch between the different storage options,
+> If you wish to switch between the different storage options,
 for example from `leveldb` to `rocksdb` or vice versa, 
 you must **restart** the node with the import option.
 
 The following sample command shows how to do this when
 the RSKj node was previously running the default (`leveldb`),
 and wants to run with `rocksdb` next.
-Note the use of the `--import` flag, which resets and re-imports the database.
 
-* `java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import`
+> Note the use of the `--import` flag, which resets and re-imports the database.
+
+```java
+java -Dkeyvalue.datasource=rocksdb -jar ./rskj-core/build/libs/rskj-core-*-all.jar --testnet --import
+```
+
+#### Advantages:
+
+* RocksDB uses a log structured database engine, written entirely in C++, for maximum performance. Keys and values are just arbitrarily-sized byte streams.
+* RocksDB is optimized for fast, low latency storage such as flash drives and high-speed disk drives. RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
+* RocksDB is adaptable to different workloads. From database storage engines such as [MyRocks](https://github.com/facebook/mysql-5.6) to [application data caching](http://techblog.netflix.com/2016/05/application-data-caching-using-ssds.html) to embedded workloads, RocksDB can be used for a variety of data needs.
+* RocksDB provides basic operations such as opening and closing a database, reading and writing to more advanced operations such as merging and compaction filters.
+
+### Switching between DB Kinds**
+
+Switching between different types of databases in your system requires you to modify configuration files, drop the existing database, and restart your node so the node will start syncing from scratch using the new db kind.
+
+> Note: Nodes that were already running on LevelDB will continue to use LevelDB, and the same applies to RocksDB. However, all nodes setup from scratch will use RocksDB by default.
 
 ### Troubleshooting
 
