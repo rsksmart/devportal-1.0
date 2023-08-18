@@ -1,8 +1,8 @@
 ---
 layout: rsk
 title: Architecture
-tags: rsk, rskj, node, architecture
-description: "Architecture of RSK nodes: JSON-RPC, Web3, and storage."
+tags: rsk, rskj, node, architecture, rootstock
+description: "Architecture of Rootstock nodes: JSON-RPC, Web3, and storage."
 menu_order: 2
 permalink: /rsk/node/architecture/
 ---
