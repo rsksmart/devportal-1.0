@@ -5,7 +5,6 @@ title: Configuration reference
 tags: rsk, rskj, node, config, rootstock
 description: "Configuration reference for RSKj"
 menu_order: 200
-render_features: 'tables-with-borders', 'collapsible'
 ---
 
 See [CLI flags](../cli/) for command line flag options.
