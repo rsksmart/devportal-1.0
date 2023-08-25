@@ -2000,7 +2000,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x12345
 
 Below are the configuration limits for the following JSON-RPC methods:
 
-> Note: This is available from Fingerroot v5.1.0.
+> Note: These limits are available from [Fingerroot v5.1.0](https://blog.rootstock.io/noticia/rsk-fingerroot-5-1-0-is-here/).
 
 ### JSON-RPC method eth_getLogs limits
 
