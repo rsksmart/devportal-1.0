@@ -6,7 +6,6 @@ tags: rsk, rskj, node, config, rootstock
 description: "Configuration reference for RSKj"
 menu_order: 200
 render_features: 'tables-with-borders'
-render_features: 'collapsible'
 ---
 
 See [CLI flags](../cli/) for command line flag options.
@@ -284,10 +283,10 @@ you must include:
 ```
 { name: "mnr", version: "1.0", enabled: "true" }
 ```
-[](#top "collapsible")
-- Important Info:
-  > - RPC methods for each module can be found in the [JSON-RPC documentation](/rsk/node/architecture/json-rpc/).
-  > - See the [JSON-RPC Configurable limits](/rsk/node/architecture/json-rpc#configuration-of-limits-for-json-rpc-interface)
+
+> Important Info:
+  - RPC methods for each module can be found in the [JSON-RPC documentation](/rsk/node/architecture/json-rpc/).
+  - See the [JSON-RPC Configurable limits](/rsk/node/architecture/json-rpc#configuration-of-limits-for-json-rpc-interface)
 
 ## wallet
 
