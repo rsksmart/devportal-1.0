@@ -6,7 +6,6 @@ description: "Setting your own config preferences, when using the Java command, 
 menu_order: 5
 permalink: /rsk/node/configure/
 render_features: 'custom-terminals'
-render_features: 'collapsible'
 ---
 
 ## Command Line Interface
@@ -68,7 +67,6 @@ This can be done in two ways:
 
 ### Using RocksDB
 
-[](#top "collapsible")
 - **Important Info:**
   > - Starting from RSKj HOP v4.2.0, RocksDB is no longer experimental. As of the most recent version, RocksDB has now been made the default storage library, replacing LevelDB. This change was made to tackle maintainability and performance issues of LevelDB.
   > - Previously, RSKj ran using [LevelDB](https://dbdb.io/db/leveldb) by default, with the option to switch to [RocksDB](http://rocksdb.org/). Now, RocksDB is the default storage option, aiming to enable higher performance within the RSKj nodes.
