@@ -82,7 +82,7 @@ and that `< ` marks responses that will be printed.)
 ### JSON RPC supported
 
 | Module | Method | Supported | Comments |
-| ------ | ------ | ------ |
+| ------ | ------ | ------ | ------ |
 | `web3` | [`web3_clientVersion`](#web3_clientversion) | YES | |
 | `web3` | [`web3_sha3`](#web3_sha3) | YES | |
 | `eth` | [`net_version`](#net_version) | YES | Mainnet Chain Id = `30`, Testnet Chain Id = `31` |
