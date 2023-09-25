@@ -774,7 +774,7 @@ params: [
 
 ##### Returns
 
-`QUANTITY` - integer of the number of transactions in this block.
+`QUANTITY` - integer of the number of transactions in this block, or `null` when no block was found.
 
 
 ##### Example
