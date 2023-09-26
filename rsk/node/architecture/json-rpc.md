@@ -11,7 +11,7 @@ Rootstock (RSK) currently supports the following:
 
 - [JSON RPC methods](#json-rpc-methods)
 - [Management API methods](#management-api-methods)
-- [RPC PUB SUB methods](#rpc-pub-sub-methods)\
+- [RPC PUB SUB methods](#rpc-pub-sub-methods)
 
 See the JSON-RPC configuration limits and usage:
 - [JSON RPC Configurable Limits](#configuration-of-limits-for-json-rpc-interface)
