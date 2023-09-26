@@ -58,7 +58,7 @@ bridge.methods.getFederationAddress().call().then(console.log);
 
 # Important note
 
-If the version to be installed is not defined in the command line, the version will correspond to the latest version in PAPYRUS.
+If the version to be installed is not defined in the command line, the version will correspond to the latest version in [rskj releases page](https://github.com/rsksmart/reproducible-builds/tree/master/rskj).
 
 # Versioning table
 
@@ -73,7 +73,12 @@ If the version to be installed is not defined in the command line, the version w
 | 3.1.0-IRIS      | IRIS-3.1.0    |
 | 3.2.0-IRIS      | IRIS-3.2.0    |
 | 3.3.0-IRIS      | IRIS-3.3.0    |
-| 4.0.0-HOP       |  HOP-4.0.0    |
-| 4.1.0-HOP       |  HOP-4.1.0    |
-| 4.1.1-HOP       |  HOP-4.1.1    |
-| 4.2.0-HOP       |  HOP-4.2.0    |
+| 4.0.0-HOP       | HOP-4.0.0    |
+| 4.1.0-HOP       | HOP-4.1.0    |
+| 4.1.1-HOP       | HOP-4.1.1    |
+| 4.2.0-HOP       | HOP-4.2.0    |
+| 4.3.0-HOP       | HOP-4.3.0    |
+| 4.4.0-HOP       | HOP-4.4.0    |
+| 5.0.0-fingerroot | FINGERROOT-5.0.0 |
+| 5.1.0-fingerroot | FINGERROOT-5.1.0 |
+| 5.2.0-fingerroot | FINGERROOT-5.2.0 |
