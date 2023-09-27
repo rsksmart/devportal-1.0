@@ -32,7 +32,7 @@ Running RSKj in Regtest mode is the best fit for these needs.
 java \
   -Drpc.providers.web.cors='*' \
   -Dminer.client.autoMine=true \
-  -cp rskj-core-4.1.0-HOP-all.jar \
+  -cp rskj-core-5.2.0-FINGERROOT-all.jar \
   co.rsk.Start \
   --regtest \
   --reset

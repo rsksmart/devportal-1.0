@@ -30,7 +30,7 @@ To run the node:
   C:\> java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
   ```
 
-Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-4.2.0-HOP-all.jar`
+Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-5.2.0-FINGERROOT-all.jar`
 
 ## Using import sync
 
@@ -71,7 +71,7 @@ to change the memory allocated to the process:
   C:\> java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
   ```
 
-Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-4.2.0-HOP-all.jar`
+Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-5.2.0-FINGERROOT-all.jar`
 
 For further reference, check out the
 [`database.import` configuration setting](/rsk/node/configure/reference/#databaseimport).
@@ -106,7 +106,7 @@ If you want to change the network use these commands:
 - Testnet: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --testnet`
 - Regtest: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest`
 
-Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-4.2.0-HOP-all.jar`
+Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-5.2.0-FINGERROOT-all.jar`
 
 ## Video
 

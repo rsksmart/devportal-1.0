@@ -52,7 +52,7 @@ Run these commands on Git command line:
 ```
 git clone --recursive https://github.com/rsksmart/rskj.git
 cd rskj
-git checkout tags/HOP-4.2.0 -b HOP-4.2.0
+git checkout tags/FINGERROOT-5.2.0 -b FINGERROOT-5.2.0
 ```
 
 *Note:* It is better to download the code into a short path.

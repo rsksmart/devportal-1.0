@@ -52,7 +52,7 @@ Create a ```Dockerfile``` to setup the build environment
       apt-get clean
   RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
   RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-  RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git /code/rskj
+  RUN git clone --single-branch --depth 1 --branch FINGERROOT-5.2.0 https://github.com/rsksmart/rskj.git /code/rskj
    RUN git clone https://github.com/rsksmart/reproducible-builds 
   RUN CP /Users/{$USER}/reproducible-builds/rskj/5.2.0-fingerroot/Dockerfile  /Users/{$USER}/code/rskj
   WORKDIR /code/rskj

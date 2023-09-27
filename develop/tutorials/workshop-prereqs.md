@@ -138,10 +138,10 @@ mkdir -p ~/code/rsk/rskj-node
 cd ~/code/rsk/rskj-node
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/HOP-4.2.0/rskj-core-4.2.0-HOP-all.jar \
-  > ./rskj-core-4.2.0-HOP-all.jar
-sha256sum rskj-core-4.2.0-HOP-all.jar
-# 556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-4.2.0-HOP-all.jar
+  https://github.com/rsksmart/rskj/releases/download/FINGERROOT-5.2.0/rskj-core-5.2.0-FINGERROOT-all.jar \
+  > ./rskj-core-5.2.0-FINGERROOT-all.jar
+sha256sum rskj-core-5.2.0-FINGERROOT-all.jar
+# 556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-5.2.0-FINGERROOT-all.jar
 
 ```
 
@@ -154,7 +154,7 @@ For the purposes of this workshop,
 we will run RSKj on Regtest.
 
 ```shell
-java -cp rskj-core-4.2.0-HOP-all.jar  -Drpc.providers.web.cors=* co.rsk.Start --regtest
+java -cp rskj-core-5.2.0-FINGERROOT-all.jar  -Drpc.providers.web.cors=* co.rsk.Start --regtest
 
 ```
 
