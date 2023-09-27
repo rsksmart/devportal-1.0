@@ -52,9 +52,9 @@ Create a ```Dockerfile``` to setup the build environment
       apt-get clean
   RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
   RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-  RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git /code/rskj
-  RUN git clone https://github.com/rsksmart/reproducible-builds 
-  RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
+  RUN git clone --single-branch --depth 1 --branch FINGERROOT-5.2.0 https://github.com/rsksmart/rskj.git /code/rskj
+   RUN git clone https://github.com/rsksmart/reproducible-builds 
+  RUN CP /Users/{$USER}/reproducible-builds/rskj/5.2.0-fingerroot/Dockerfile  /Users/{$USER}/code/rskj
   WORKDIR /code/rskj
   RUN gpg --verify SHA256SUMS.asc
   RUN sha256sum --check SHA256SUMS.asc
@@ -70,9 +70,9 @@ Create a ```Dockerfile``` to setup the build environment
       brew cleanup
   RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
   RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-  RUN git clone --single-branch --depth 1 --branch HOP-4.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
+  RUN git clone --single-branch --depth 1 --branch FINGERROOT-5.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
   RUN git clone https://github.com/rsksmart/reproducible-builds 
-  RUN CP /Users/{$USER}/reproducible-builds/rskj/4.2.0-hop/Dockerfile  /Users/{$USER}/code/rskj
+  RUN CP /Users/{$USER}/reproducible-builds/rskj/5.2.0-fingerroot/Dockerfile  /Users/{$USER}/code/rskj
   RUN CD /code/rskj
   RUN gpg --verify SHA256SUMS.asc
   RUN sha256sum --check SHA256SUMS.asc
@@ -80,17 +80,29 @@ Create a ```Dockerfile``` to setup the build environment
   RUN ./gradlew clean build -x test   
   ```
 
-If you are not familiar with Docker or the ```Dockerfile``` format: what this does is use the Ubuntu 16.04 base image and install ```git```, ```curl```, ```gnupg-curl``` and ```openjdk-8-jdk```, required for building RSK node.
+**Response:**
+
+You should get the following as the final response, 
+after running the above steps:
+
+```bash
+BUILD SUCCESSFUL in 55s
+14 actionable tasks: 13 executed, 1 up-to-date
+```
+
+If you are not familiar with Docker or the ```Dockerfile``` format: what this does is use the Ubuntu 16.04 base image and install ```git```, ```curl```, ```gnupg-curl``` and ```openjdk-8-jdk```, required for building the RSK node.
 
 
 Run build
 ---------
 
-To create a reproducible build, run:
+To create a reproducible build, run the command below in the same directory:
 
 ```bash
-sudo docker build -t rskj-hop-4.2.0-reproducible .
+$ docker build -t rskj/5.2.0-fingerroot .     
 ```
+
+> if you run into any problems, ensure you're running the commands on the right folder and also ensure docker daemon is running is updated to the recent version.
 
 This may take several minutes to complete. What is done is:
 - Place in the RSKj repository root because we need Gradle and the project.
@@ -99,25 +111,53 @@ This may take several minutes to complete. What is done is:
 - `./gradlew clean build -x test` builds without running tests.
 
 
-To obtain SHA-256 checksums, run the following command:
+Verify Build
+------------
+
+The last step of the build prints the `sha256sum` of the files, to obtain `SHA-256` checksums, run the following command in the same directory as shown above:
 
 ```bash
-sudo docker run --rm rskj-hop-4.2.0-reproducible sha256sum /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP-all.jar /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP-sources.jar /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP.jar /code/rskj/rskj-core/build/libs/rskj-core-4.2.0-HOP.pom
+$ docker run --rm rskj/5.2.0-fingerroot sh -c 'sha256sum * | grep -v javadoc.jar'
 ```
 
 Check Results
 -------------
-After running the build process, a JAR file will be created in ```/code/rskj-core/build/libs/```, into the docker container.
+After running the build process, a JAR file will be created in ```/rskj/rskj-core/build/libs/```, into the docker container.
 
 You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.
 
 ```bash
-556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-4.2.0-HOP-all.jar
-e0544eaea2068f3ec9a99628f82b0163fc31d7be5282c925e34797e74982f826  rskj-core/build/libs/rskj-core-4.2.0-HOP-sources.jar
-42b0f44d0c612506ed39e186ffd8790fe5f775ee6bcd7d7189e01b0b9439c06d  rskj-core/build/libs/rskj-core-4.2.0-HOP.jar
-9160b4e02eef885afc672005a33e10ced8e4b9a7792039faf7f7a86880c165b0  rskj-core/build/libs/rskj-core-4.2.0-HOP.pom
+70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f  rskj-core-5.2.0-FINGERROOT-all.jar
+6ed2bcb287e6b9e61bb99b65307e2e51b4231a92070fed4569443981fc2597ce  rskj-core-5.2.0-FINGERROOT-sources.jar
+3b1dd7d624137fb1bcc133927a7357eed3228457e8db29f17cf0a193370bbe12  rskj-core-5.2.0-FINGERROOT.jar
+4d588eae64108680c6ae6e895e2d6d4a07cdd05a31718d6f4a34870153a51d5a  rskj-core-5.2.0-FINGERROOT.module
+3903f17a97e7dbd55bac0dd02030f5297e364280e2b7a856aaf03b4d327dce3c  rskj-core-5.2.0-FINGERROOT.pom
 ```
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).
 
 If you check inside the JAR file, you will find that the dates of the files are the same as the version commit you are using.
+
+Run RSK Node (Optional)
+======================
+
+To start an RSK Node using the Dockerfile, run the command below:
+
+```bash
+$ docker run -d rskj/5.2.0-fingerroot
+```
+
+Extract JAR from image (Optional)
+================================
+
+```bash
+$ cid=$(docker run -d rskj/5.2.0-fingerroot /bin/true)
+$ docker cp "$cid":/home/rsk/ ./libs/
+$ docker rm "$cid"
+```
+
+More Resources
+==============
+
+* See [Reproducible builds](https://github.com/rsksmart/reproducible-builds/tree/master/rskj)
+* Check out the [latest rskj releases](https://github.com/rsksmart/rskj/releases)

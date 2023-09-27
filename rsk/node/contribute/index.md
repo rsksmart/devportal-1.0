@@ -17,7 +17,7 @@ Compile and run your own node, step by step:
   - [On Linux](/rsk/node/contribute/linux)
   - [On Mac](/rsk/node/contribute/macos)
 
-> **Important Notice: RSKj HOP v4.2.0 now supports ARM CPUs on Linux OS. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
+> **Important Notice: [RSKj HOP v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0) now supports ARM CPUs on Linux OS. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
 
 After the previous steps have been completed, you can try these tutorials:
 
