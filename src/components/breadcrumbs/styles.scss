@@ -1,0 +1,11 @@
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    &:last-child {
+      font-weight: 900;
+    }
+  }
+}

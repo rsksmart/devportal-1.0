@@ -1,0 +1,15 @@
+.sibling-articles-nav {
+  margin-top: 32px;
+  display: grid;
+  grid-template-areas: 'prev next';
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-between;
+  align-items: center;
+
+  .sibling-articles-nav__prev {
+    grid-area: prev;
+  }
+  .sibling-articles-nav__next {
+    grid-area: next;
+  }
+}

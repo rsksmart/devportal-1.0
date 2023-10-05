@@ -1,0 +1,18 @@
+.slack {
+  @extend .rounded-4;
+  margin-top: 40px;
+  display: block;
+  padding: 24px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  background-color: $pink;
+  font-weight: bold;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+
+  &:hover {
+    text-decoration: underline;
+    color: lighten(#000, 5%);
+    background-color: darken($pink, 3%);
+  }
+}

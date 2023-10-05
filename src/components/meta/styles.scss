@@ -1,0 +1,32 @@
+.meta {
+  margin-bottom: 21px;
+
+  &__actions {
+    display: flex;
+  }
+
+  a.meta__action {
+    text-decoration: none;
+  }
+
+  &__action {
+    & + & {
+      margin-left: 16px;
+    }
+  }
+
+  .dropdown-menu {
+    @extend .border;
+    padding: 10px;
+    margin-top: 10px;
+
+    .nav-link {
+      color: $white;
+      padding: 5px;
+      
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

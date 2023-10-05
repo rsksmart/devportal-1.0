@@ -1,0 +1,13 @@
+.newsletter-page {
+  tr {
+    td {
+      padding-bottom: 30px;
+
+      input[type="text"],
+      input[type="email"] {
+        @extend .form-control;
+        color: white !important;
+      }
+    }
+  }
+}

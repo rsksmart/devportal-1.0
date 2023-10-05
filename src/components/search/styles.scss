@@ -1,0 +1,46 @@
+.search {
+  @include media-breakpoint-up(lg) {
+    max-width: 90%;
+  }
+
+  &__button {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    letter-spacing: -0.01em;
+    border-radius: 40px !important;
+    border: 1px solid #000 !important;
+  }
+
+  &-results {
+    background-color: $dark;
+    top: calc(100% + 20px);
+    width: 100%;
+
+    @include media-breakpoint-up(lg) {
+      width: 300px;
+    }
+
+    &__list {
+      max-height: 300px;
+      overflow-y: auto;
+      margin: 0;
+      list-style-type: none;
+    }
+
+    &__item {
+      padding: 5px 0;
+    }
+
+    &__link {
+      color: white;
+      transition: color 0.15s ease-in-out;
+      font-size: 13px;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
