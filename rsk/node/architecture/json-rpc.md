@@ -12,6 +12,7 @@ Rootstock (RSK) currently supports the following:
 - [JSON RPC methods](#json-rpc-methods)
 - [Management API methods](#management-api-methods)
 - [RPC PUB SUB methods](#rpc-pub-sub-methods)
+- [Personal module methods](#personal-module-methods)
 
 See the JSON-RPC configuration limits and usage:
 - [JSON RPC Configurable Limits](#configuration-of-limits-for-json-rpc-interface)
@@ -1992,7 +1993,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x12345
 }
 ```
 
-***
+## Personal module methods
 
 #### personal_lockAccount
 
@@ -2013,7 +2014,7 @@ params: ['0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b']
 `Boolean` - `true` if the account was successfully locked, otherwise `false`.
 
 
-##### Example
+**Example**
 ```js
 // Request
 curl -X POST --data '{"jsonrpc":"2.0","method":"personal_lockAccount","params":["0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b"],"id":73}'
@@ -2026,7 +2027,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_lockAccount","params":[
 }
 ```
 
-***
 
 #### personal_unlockAccount
 
@@ -2100,7 +2100,7 @@ params: [{
 
 `DATA` - The transaction hash.
 
-##### Example
+** Example**
 ```js
 // Request
 curl -X POST --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{see above}],"id":1}'
@@ -2113,7 +2113,6 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","param
 }
 ```
 
-***
 
 #### personal_importRawKey
 
@@ -2137,7 +2136,7 @@ params: [
 
 `DATA` - The address of the new account.
 
-##### Example
+** Example**
 ```js
 // Request
 curl -X POST --data '{"jsonrpc":"2.0","method":"personal_importRawKey","params":["0xcd3376bb711cb332ee3fb2ca04c6a8b9f70c316fcdf7a1f44ef4c7999483295e",
@@ -2155,7 +2154,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"personal_importRawKey","params":
 
 #### personal_dumpRawKey
 
-Returns a hexadecimal representation of the private key of the given address.
+Returns an hexadecimal representation of the private key of the given address.
 
 ##### Parameters
 
@@ -2237,7 +2236,7 @@ params: ["seed"]
 
 `DATA` - The address of the newly created account.
 
-##### Example
+** Example**
 ```js
 // Request
 curl -X POST --data '{"jsonrpc":"2.0","method":"personal_newAccountWithSeed","params":["seed"],"id":1}'
