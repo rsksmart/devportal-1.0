@@ -623,8 +623,7 @@ Returns the balance of the account of given address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address to check for balance.
-2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -662,8 +661,7 @@ Returns the value from a storage position at a given address.
 
 1. `DATA`, 20 Bytes - address of the storage.
 2. `QUANTITY` - integer of the position in the storage.
-3. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+3. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Returns
 
@@ -726,8 +724,7 @@ Returns the number of transactions *sent* from an address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address.
-2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -907,8 +904,7 @@ Returns code at a given address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address.
-2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -1880,7 +1876,7 @@ Returns the account- and storage-values of the specified account including the M
 
 1. `DATA`, 20 bytes - address of the account or contract
 2. `ARRAY`, 32 Bytes - array of storage-keys which should be proofed and included. See eth_getStorageAt
-3. `QUANTITY|TAG` - integer block number, or the string "latest" or "earliest", see the default block parameter
+3. `QUANTITY|TAG` - integer block number, or the string "latest" or "earliest", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
 
 
 ##### Example Parameters
