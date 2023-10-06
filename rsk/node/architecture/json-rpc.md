@@ -1425,7 +1425,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 
 #### eth_getUncleByBlockHashAndIndex
 
-Returns information about a uncle of a block by hash and uncle index position.
+Returns information about an uncle of a block by hash and the uncle index position.
 
 
 ##### Parameters
