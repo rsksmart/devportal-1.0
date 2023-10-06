@@ -131,9 +131,6 @@ and that `< ` marks responses that will be printed.)
 | `eth` | [`eth_getFilterChanges`](#eth_getfilterchanges) | YES | |
 | `eth` | [`eth_getFilterLogs`](#eth_getfilterlogs) | YES | |
 | `eth` | [`eth_getLogs`](#eth_getlogs) | YES | |
-| `eth` | [`eth_getWork`](#eth_getwork) | YES | Method name is `mnr_getWork`. |
-| `eth` | [`eth_submitWork`](#eth_submitwork) | YES | Method name is `mnr_submitBitcoinBlock`. |
-| `eth` | `eth_submitHashrate` | - | |
 | `eth` | `eth_bridgeState` | YES | |
 | `eth` | `eth_netHashrate` | YES | |
 | `db` | `db_putString` | - | Deprecated |
@@ -264,13 +261,13 @@ none
 ##### Returns
 
 `String` - The current network id.
-- `"1"`: Ethereum Mainnet
-- `"2"`: Morden Testnet  (deprecated)
-- `"3"`: Ropsten Testnet
-- `"4"`: Rinkeby Testnet
-- `"42"`: Kovan Testnet
+- `"30"`: RSK Mainnet
+- `"31"`: Ethercamp test network
+- `"32"`: Developer network
+- `"33"`: RSK created local network
 
-##### Example
+**Example**
+
 ```js
 // Request
 curl -X POST --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":67}'
@@ -626,7 +623,8 @@ Returns the balance of the account of given address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address to check for balance.
-2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
+RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -664,7 +662,8 @@ Returns the value from a storage position at a given address.
 
 1. `DATA`, 20 Bytes - address of the storage.
 2. `QUANTITY` - integer of the position in the storage.
-3. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+3. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
+RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Returns
 
@@ -727,7 +726,8 @@ Returns the number of transactions *sent* from an address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address.
-2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
+RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -775,7 +775,7 @@ params: [
 
 ##### Returns
 
-`QUANTITY` - integer of the number of transactions in this block.
+`QUANTITY` - integer of the number of transactions in this block, or `null` when no block was found.
 
 
 ##### Example
@@ -907,7 +907,8 @@ Returns code at a given address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address.
-2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter).
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
+RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -976,10 +977,10 @@ Creates new message call transaction or a contract creation, if the data field c
 ##### Parameters
 
 1. `Object` - The transaction object
-  - `from`: `DATA`, 20 Bytes - The address the transaction is send from.
-  - `to`: `DATA`, 20 Bytes - (optional when creating new contract) The address the transaction is directed to.
+  - `from`: `DATA`, 20 Bytes - The address the transaction is sent from.
+  - `to`: `DATA`, 20 Bytes - (optional when creating new contract) The address the transaction is sent to.
   - `gas`: `QUANTITY`  - (optional, default: 90000) Integer of the gas provided for the transaction execution. It will return unused gas.
-  - `gasPrice`: `QUANTITY`  - (optional, default: To-Be-Determined) Integer of the gasPrice used for each paid gas
+  - `gasPrice`: `QUANTITY`  - (optional, default: 0) Integer of the gasPrice used for each paid gas
   - `value`: `QUANTITY`  - (optional) Integer of the value sent with this transaction
   - `data`: `DATA`  - The compiled code of a contract OR the hash of the invoked method signature and encoded parameters. For details see [Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI)
   - `nonce`: `QUANTITY`  - (optional) Integer of a nonce. This allows to overwrite your own pending transactions that use the same nonce.
@@ -1066,6 +1067,14 @@ Executes a new message call immediately without creating a transaction on the bl
   - `value`: `QUANTITY`  - (optional) Integer of the value sent with this transaction
   - `data`: `DATA`  - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI in the Solidity documentation](https://solidity.readthedocs.io/en/latest/abi-spec.html)
 2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+
+##### Example Parameters
+```js
+params: [{
+  "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
+  "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567"
+}, "latest"]
+```
 
 ##### Returns
 
@@ -1420,65 +1429,9 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 
 ***
 
-#### eth_pendingTransactions
-
-Returns the pending transactions list.
-
-##### Parameters
-none
-
-##### Returns
-
-`Array` - A list of pending transactions.
-
-##### Example
-```js
-// Request
-curl -X POST --data '{"jsonrpc":"2.0","method":"eth_pendingTransactions","params":[],"id":1}'
-
-// Result
-{
-"id":1,
-"jsonrpc":"2.0",
-"result": [{
-    blockHash: '0x0000000000000000000000000000000000000000000000000000000000000000',
-    blockNumber: null,
-    from: '0x28bdb9c230f4d5e45435e4d006326ee32e46cb31',
-    gas: '0x204734',
-    gasPrice: '0x4a817c800',
-    hash: '0x8dfa6a59307a490d672494a171feee09db511f05e9c097e098edc2881f9ca4f6',
-    input: '0x6080604052600',
-    nonce: '0x12',
-    to: null,
-    transactionIndex: '0x0',
-    value: '0x0',
-    v: '0x3d',
-    r: '0xaabc9ddafffb2ae0bac4107697547d22d9383667d9e97f5409dd6881ce08f13f',
-    s: '0x69e43116be8f842dcd4a0b2f760043737a59534430b762317db21d9ac8c5034'
-   },....,{
-    blockHash: '0x0000000000000000000000000000000000000000000000000000000000000000',
-    blockNumber: null,
-    from: '0x28bdb9c230f4d5e45435e4d006326ee32e487b31',
-    gas: '0x205940',
-    gasPrice: '0x4a817c800',
-    hash: '0x8e4340ea3983d86e4b6c44249362f716ec9e09849ef9b6e3321140581d2e4dac',
-    input: '0xe4b6c4424936',
-    nonce: '0x14',
-    to: null,
-    transactionIndex: '0x0',
-    value: '0x0',
-    v: '0x3d',
-    r: '0x1ec191ef20b0e9628c4397665977cbe7a53a263c04f6f185132b77fa0fd5ca44',
-    s: '0x8a58e00c63e05cfeae4f1cf19f05ce82079dc4d5857e2cc281b7797d58b5faf'
-   }]
-}
-```
-
-***
-
 #### eth_getUncleByBlockHashAndIndex
 
-Returns information about a uncle of a block by hash and uncle index position.
+Returns information about an uncle of a block by hash and the uncle index position.
 
 
 ##### Parameters
