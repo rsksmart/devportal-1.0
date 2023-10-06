@@ -12,6 +12,7 @@ Rootstock (RSK) currently supports the following:
 - [JSON RPC methods](#json-rpc-methods)
 - [Management API methods](#management-api-methods)
 - [RPC PUB SUB methods](#rpc-pub-sub-methods)
+- [Personal module methods](#personal-module-methods)
 
 See the JSON-RPC configuration limits and usage:
 - [JSON RPC Configurable Limits](#configuration-of-limits-for-json-rpc-interface)
@@ -1758,6 +1759,449 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getLogs","params":[{"topics"
 
 Result see [eth_getFilterChanges](#eth_getfilterchanges)
 
+***
+
+#### eth_getWork
+
+Returns the hash of the current block, the seedHash, and the boundary condition to be met ("target").
+
+##### Parameters
+none
+
+##### Returns
+
+`Array` - Array with the following properties:
+  1. `DATA`, 32 Bytes - current block header pow-hash
+  2. `DATA`, 32 Bytes - the seed hash used for the DAG.
+  3. `DATA`, 32 Bytes - the boundary condition ("target"), 2^256 / difficulty.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getWork","params":[],"id":73}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc":"2.0",
+  "result": [
+      "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+      "0x5EED00000000000000000000000000005EED0000000000000000000000000000",
+      "0xd1ff1c01710000000000000000000000d1ff1c01710000000000000000000000"
+    ]
+}
+```
+
+***
+
+#### eth_submitWork
+
+Used for submitting a proof-of-work solution.
+
+
+##### Parameters
+
+1. `DATA`, 8 Bytes - The nonce found (64 bits)
+2. `DATA`, 32 Bytes - The header's pow-hash (256 bits)
+3. `DATA`, 32 Bytes - The mix digest (256 bits)
+
+##### Example Parameters
+```js
+params: [
+  "0x0000000000000001",
+  "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef",
+  "0xD1FE5700000000000000000000000000D1FE5700000000000000000000000000"
+]
+```
+
+##### Returns
+
+`Boolean` - returns `true` if the provided solution is valid, otherwise `false`.
+
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0", "method":"eth_submitWork", "params":["0x0000000000000001", "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef", "0xD1GE5700000000000000000000000000D1GE5700000000000000000000000000"],"id":73}'
+
+// Result
+{
+  "id":73,
+  "jsonrpc":"2.0",
+  "result": true
+}
+```
+
+***
+
+#### eth_submitHashrate
+
+Used for submitting mining hashrate.
+
+
+##### Parameters
+
+1. `Hashrate`, a hexadecimal string representation (32 bytes) of the hash rate
+2. `ID`, String - A random hexadecimal(32 bytes) ID identifying the client
+
+##### Example Parameters
+```js
+params: [
+  "0x0000000000000000000000000000000000000000000000000000000000500000",
+  "0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"
+]
+```
+
+##### Returns
+
+`Boolean` - returns `true` if submitting went through succesfully and `false` otherwise.
+
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0", "method":"eth_submitHashrate", "params":["0x0000000000000000000000000000000000000000000000000000000000500000", "0x59daa26581d0acd1fce254fb7e85952f4c09d0915afd33d3886cd914bc7d283c"],"id":73}'
+
+// Result
+{
+  "id":73,
+  "jsonrpc":"2.0",
+  "result": true
+}
+```
+
+***
+
+#### eth_getProof
+
+Returns the account- and storage-values of the specified account including the Merkle-proof.
+
+##### Parameters
+
+1. `DATA`, 20 bytes - address of the account or contract
+2. `ARRAY`, 32 Bytes - array of storage-keys which should be proofed and included. See eth_getStorageAt
+3. `QUANTITY|TAG` - integer block number, or the string "latest" or "earliest", see the default block parameter
+
+
+##### Example Parameters
+```
+params: ["0x1234567890123456789012345678901234567890",["0x0000000000000000000000000000000000000000000000000000000000000000","0x0000000000000000000000000000000000000000000000000000000000000001"],"latest"]
+```
+
+##### Returns
+
+Returns
+`Object` - A account object:
+
+`balance`: `QUANTITY` - the balance of the account. See eth_getBalance
+
+`codeHash`: `DATA`, 32 Bytes - hash of the code of the account. For a simple Account without code it will return "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470"
+
+`nonce`: `QUANTITY`, - nonce of the account. See eth_getTransactionCount
+
+`storageHash`: `DATA`, 32 Bytes - SHA3 of the StorageRoot. All storage will deliver a MerkleProof starting with this rootHash.
+
+`accountProof`: `ARRAY` - Array of rlp-serialized MerkleTree-Nodes, starting with the stateRoot-Node, following the path of the SHA3 (address) as key.
+
+`storageProof`: `ARRAY` - Array of storage-entries as requested. Each entry is a object with these properties:
+
+`key`: `QUANTITY` - the requested storage key
+`value`: `QUANTITY` - the storage value
+`proof`: `ARRAY` - Array of rlp-serialized MerkleTree-Nodes, starting with the storageHash-Node, following the path of the SHA3 (key) as path.
+
+##### Example
+```
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getProof","params":["0x1234567890123456789012345678901234567890",["0x0000000000000000000000000000000000000000000000000000000000000000","0x0000000000000000000000000000000000000000000000000000000000000001"],"latest"],"id":1}' -H "Content-type:application/json" http://localhost:8545
+
+// Result
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "result": {
+    "address": "0x1234567890123456789012345678901234567890",
+    "accountProof": [
+      "0xf90211a090dcaf88c40c7bbc95a912cbdde67c175767b31173df9ee4b0d733bfdd511c43a0babe369f6b12092f49181ae04ca173fb68d1a5456f18d20fa32cba73954052bda0473ecf8a7e36a829e75039a3b055e51b8332cbf03324ab4af2066bbd6fbf0021a0bbda34753d7aa6c38e603f360244e8f59611921d9e1f128372fec0d586d4f9e0a04e44caecff45c9891f74f6a2156735886eedf6f1a733628ebc802ec79d844648a0a5f3f2f7542148c973977c8a1e154c4300fec92f755f7846f1b734d3ab1d90e7a0e823850f50bf72baae9d1733a36a444ab65d0a6faaba404f0583ce0ca4dad92da0f7a00cbe7d4b30b11faea3ae61b7f1f2b315b61d9f6bd68bfe587ad0eeceb721a07117ef9fc932f1a88e908eaead8565c19b5645dc9e5b1b6e841c5edbdfd71681a069eb2de283f32c11f859d7bcf93da23990d3e662935ed4d6b39ce3673ec84472a0203d26456312bbc4da5cd293b75b840fc5045e493d6f904d180823ec22bfed8ea09287b5c21f2254af4e64fca76acc5cd87399c7f1ede818db4326c98ce2dc2208a06fc2d754e304c48ce6a517753c62b1a9c1d5925b89707486d7fc08919e0a94eca07b1c54f15e299bd58bdfef9741538c7828b5d7d11a489f9c20d052b3471df475a051f9dd3739a927c89e357580a4c97b40234aa01ed3d5e0390dc982a7975880a0a089d613f26159af43616fd9455bb461f4869bfede26f2130835ed067a8b967bfb80",
+      "0xf90211a0395d87a95873cd98c21cf1df9421af03f7247880a2554e20738eec2c7507a494a0bcf6546339a1e7e14eb8fb572a968d217d2a0d1f3bc4257b22ef5333e9e4433ca012ae12498af8b2752c99efce07f3feef8ec910493be749acd63822c3558e6671a0dbf51303afdc36fc0c2d68a9bb05dab4f4917e7531e4a37ab0a153472d1b86e2a0ae90b50f067d9a2244e3d975233c0a0558c39ee152969f6678790abf773a9621a01d65cd682cc1be7c5e38d8da5c942e0a73eeaef10f387340a40a106699d494c3a06163b53d956c55544390c13634ea9aa75309f4fd866f312586942daf0f60fb37a058a52c1e858b1382a8893eb9c1f111f266eb9e21e6137aff0dddea243a567000a037b4b100761e02de63ea5f1fcfcf43e81a372dafb4419d126342136d329b7a7ba032472415864b08f808ba4374092003c8d7c40a9f7f9fe9cc8291f62538e1cc14a074e238ff5ec96b810364515551344100138916594d6af966170ff326a092fab0a0d31ac4eef14a79845200a496662e92186ca8b55e29ed0f9f59dbc6b521b116fea090607784fe738458b63c1942bba7c0321ae77e18df4961b2bc66727ea996464ea078f757653c1b63f72aff3dcc3f2a2e4c8cb4a9d36d1117c742833c84e20de994a0f78407de07f4b4cb4f899dfb95eedeb4049aeb5fc1635d65cf2f2f4dfd25d1d7a0862037513ba9d45354dd3e36264aceb2b862ac79d2050f14c95657e43a51b85c80",
+      "0xf90171a04ad705ea7bf04339fa36b124fa221379bd5a38ffe9a6112cb2d94be3a437b879a08e45b5f72e8149c01efcb71429841d6a8879d4bbe27335604a5bff8dfdf85dcea00313d9b2f7c03733d6549ea3b810e5262ed844ea12f70993d87d3e0f04e3979ea0b59e3cdd6750fa8b15164612a5cb6567cdfb386d4e0137fccee5f35ab55d0efda0fe6db56e42f2057a071c980a778d9a0b61038f269dd74a0e90155b3f40f14364a08538587f2378a0849f9608942cf481da4120c360f8391bbcc225d811823c6432a026eac94e755534e16f9552e73025d6d9c30d1d7682a4cb5bd7741ddabfd48c50a041557da9a74ca68da793e743e81e2029b2835e1cc16e9e25bd0c1e89d4ccad6980a041dda0a40a21ade3a20fcd1a4abb2a42b74e9a32b02424ff8db4ea708a5e0fb9a09aaf8326a51f613607a8685f57458329b41e938bb761131a5747e066b81a0a16808080a022e6cef138e16d2272ef58434ddf49260dc1de1f8ad6dfca3da5d2a92aaaadc58080",
+      "0xf851808080a009833150c367df138f1538689984b8a84fc55692d3d41fe4d1e5720ff5483a6980808080808080808080a0a319c1c415b271afc0adcb664e67738d103ac168e0bc0b7bd2da7966165cb9518080"
+    ],
+    "balance": "0x0",
+    "codeHash": "0xc5d2460186f7233c927e7db2dcc703c0e500b653ca82273b7bfad8045d85a470",
+    "nonce": "0x0",
+    "storageHash": "0x56e81f171bcc55a6ff8345e692c0f86e5b48e01b996cadc001622fb5e363b421",
+    "storageProof": [
+      {
+        "key": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "value": "0x0",
+        "proof": []
+      },
+      {
+        "key": "0x0000000000000000000000000000000000000000000000000000000000000001",
+        "value": "0x0",
+        "proof": []
+      }
+    ]
+  }
+}
+```
+
+## Personal module methods
+
+#### personal_lockAccount
+
+Locks the given account.
+
+##### Parameters
+
+1. `DATA`, 20 Bytes - address.
+
+##### Example Parameters
+
+```js
+params: ['0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b']
+```
+
+##### Returns
+
+`Boolean` - `true` if the account was successfully locked, otherwise `false`.
+
+
+**Example**
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_lockAccount","params":["0xa94f5374fce5edbc8e2a8697c15331677e6ebf0b"],"id":73}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": true
+}
+```
+
+
+#### personal_unlockAccount
+
+Unlocks the given account for a given amount of time.
+
+##### Parameters
+
+1. `DATA`, 20 Bytes - address.
+2. `String` - The passphrase of the account.
+3. `QUANTITY`  - (optional, default: 1800000 milliseconds) The duration for the account to remain unlocked.
+
+##### Example Parameters
+
+```js
+params: [
+  "0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe",
+  "test passphrase!",
+  "927C0" // 600000 milliseconds (10 min)
+]
+```
+
+##### Returns
+
+`Boolean` - `true` if the account was successfully unlocked, otherwise `false`.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_unlockAccount","params":["0x11f4d0A3c12e86B4b5F39B213F7E19D048276DAe", "test passphrase!",
+  "927C0"],"id":73}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": true
+}
+```
+
+***
+
+#### personal_sendTransaction
+
+Sends a transaction over the management API.
+
+##### Parameters
+
+1. `Object` - The transaction call object
+  - `from`: `DATA`, 20 Bytes - (optional) The address the transaction is sent from.
+  - `to`: `DATA`, 20 Bytes  - The address the transaction is directed to.
+  - `gas`: `QUANTITY`  - (optional) Integer of the gas provided for the transaction execution. eth_call consumes zero gas, but this parameter may be needed by some executions.
+  - `gasPrice`: `QUANTITY`  - (optional) Integer of the gasPrice used for each paid gas.
+  - `value`: `QUANTITY`  - (optional) Integer of the value sent with this transaction.
+  - `data`: `DATA`  - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI in the Solidity documentation](https://solidity.readthedocs.io/en/latest/abi-spec.html).
+2. `String` - The passphrase of the current account.
+
+##### Example Parameters
+
+```js
+params: [{
+  "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
+  "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567",
+  "gas": "0x76c0", // 30400
+  "gasPrice": "0x9184e72a000", // 10000000000000
+  "value": "0x9184e72a", // 2441406250
+  "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"
+}, "test passphrase!"]
+```
+
+##### Returns
+
+`DATA` - The transaction hash.
+
+** Example**
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_sendTransaction","params":[{see above}],"id":1}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": "0xe670ec64341771606e55d6b4ca35a1a6b75ee3d5145a99d05921026d1527331"
+}
+```
+
+
+#### personal_importRawKey
+
+Imports the given private key into the key store, encrypting it with the passphrase.
+
+##### Parameters
+
+1. `DATA` - An unencrypted private key (hex string).
+2. `String` - The passphrase of the current account.
+
+##### Example Parameters
+
+```js
+params: [
+  "0xcd3376bb711cb332ee3fb2ca04c6a8b9f70c316fcdf7a1f44ef4c7999483295e",
+  "test passphrase!"
+]
+```
+
+##### Returns
+
+`DATA` - The address of the new account.
+
+** Example**
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_importRawKey","params":["0xcd3376bb711cb332ee3fb2ca04c6a8b9f70c316fcdf7a1f44ef4c7999483295e",
+  "test passphrase!"],"id":1}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": "0x8f337bf484b2fc75e4b0436645dcc226ee2ac531"
+}
+```
+
+***
+
+#### personal_dumpRawKey
+
+Returns an hexadecimal representation of the private key of the given address.
+
+##### Parameters
+
+1. `DATA`, 20 Bytes - The address of the account, said account must be unlocked.
+
+##### Example Parameters
+
+```js
+params: ["0xcd3376bb711cb332ee3fb2ca04c6a8b9f70c316fcdf7a1f44ef4c7999483295e"]
+```
+
+##### Returns
+
+`DATA` - A hexadecimal representation of the account's key.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_dumpRawKey","params":["0xcd3376bb711cb332ee3fb2ca04c6a8b9f70c316fcdf7a1f44ef4c7999483295e"],"id":1}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": "777ebfc1e2b6930b09647e7a2273b3e53f759c751c0056695af466783db3642f"
+}
+```
+
+***
+
+#### personal_newAccount
+
+Creates a new account.
+
+##### Parameters
+
+1. `String` - The passphrase to encrypt this account with.
+
+##### Example Parameters
+
+```js
+params: ["test passphrase!"]
+```
+
+##### Returns
+
+`DATA` - The address of the newly created account.
+
+##### Example
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_newAccount","params":["test passphrase!"],"id":1}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": "0x8f337bf484b2fc75e4b0436645dcc226ee2ac531"
+}
+```
+
+***
+
+#### personal_newAccountWithSeed
+
+Creates a new account using a seed phrase.
+
+##### Parameters
+
+1. `String` - The seed phrase to encrypt this account with.
+
+##### Example Parameters
+
+```js
+params: ["seed"]
+```
+
+##### Returns
+
+`DATA` - The address of the newly created account.
+
+** Example**
+```js
+// Request
+curl -X POST --data '{"jsonrpc":"2.0","method":"personal_newAccountWithSeed","params":["seed"],"id":1}'
+
+// Result
+{
+  "id":1,
+  "jsonrpc": "2.0",
+  "result": "0x8f337bf484b2fc75e4b0436645dcc226ee2ac531"
+}
+```
+
 ## Configuration of Limits for JSON-RPC Interface
 
 Below are the configuration limits for the following JSON-RPC methods:
@@ -1869,7 +2313,7 @@ It is recommended to set reasonable values for these limits, considering the net
 
 | Method | Supported | Comments |
 | ------ | ------ | ------ |
-| `rsk_getRawBlockHeaderByNumber` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block number (in hexa) or the string "latest" "pending" "genesis". |
-| `rsk_getRawBlockHeaderByHash` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccack256 it gives the block hash. This function takes the block hash as parameter. |
-| `rsk_getRawTransactionReceiptByHash` | YES | Obtains the RLP encoded Transaction Receipt, if this is hashed using Keccack256 it gives the transaction receipt hash. This function takes the transaction hash as parameter.|
+| `rsk_getRawBlockHeaderByNumber` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccak256 it gives the block hash. This function takes the block number (in hexa) or the string "latest", "pending", "genesis". |
+| `rsk_getRawBlockHeaderByHash` | YES | Obtains the RLP encoded block header used for SPV, if this is hashed using Keccak256 it gives the block hash. This function takes the block hash as parameter. |
+| `rsk_getRawTransactionReceiptByHash` | YES | Obtains the RLP encoded Transaction Receipt, if this is hashed using Keccak256 it gives the transaction receipt hash. This function takes the transaction hash as parameter.|
 | `rsk_getTransactionReceiptNodesByHash` | YES | Obtains an array of nodes of the transactions receipt Trie. This is used to hash up to the transaction receipt root. This function takes the block hash and transaction hash as parameters.|
