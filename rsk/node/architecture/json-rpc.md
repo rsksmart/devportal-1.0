@@ -263,13 +263,13 @@ none
 ##### Returns
 
 `String` - The current network id.
-- `"1"`: Ethereum Mainnet
-- `"2"`: Morden Testnet  (deprecated)
-- `"3"`: Ropsten Testnet
-- `"4"`: Rinkeby Testnet
-- `"42"`: Kovan Testnet
+- `"30"`: RSK Mainnet
+- `"31"`: Ethercamp test network
+- `"32"`: Developer network
+- `"33"`: RSK created local network
 
-##### Example
+**Example**
+
 ```js
 // Request
 curl -X POST --data '{"jsonrpc":"2.0","method":"net_version","params":[],"id":67}'
