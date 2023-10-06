@@ -189,7 +189,7 @@ and that `< ` marks responses that will be printed.)
 ### JSON RPC method details
 
 These descriptions are taken from
-[Ethereum's JSON RPC documentation](https://github.com/ethereum/wiki/wiki/JSON-RPC).
+[Ethereum's JSON RPC documentation](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block).
 
 #### web3_clientVersion
 
@@ -623,8 +623,7 @@ Returns the balance of the account of given address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address to check for balance.
-2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -662,8 +661,7 @@ Returns the value from a storage position at a given address.
 
 1. `DATA`, 20 Bytes - address of the storage.
 2. `QUANTITY` - integer of the position in the storage.
-3. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+3. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Returns
 
@@ -726,8 +724,7 @@ Returns the number of transactions *sent* from an address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address.
-2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -800,7 +797,7 @@ Returns the number of transactions in a block matching the given block number.
 
 ##### Parameters
 
-1. `QUANTITY|TAG` - integer of a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter).
+1. `QUANTITY|TAG` - integer of a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block).
 
 ##### Example Parameters
 ```js
@@ -871,7 +868,7 @@ Returns the number of uncles in a block from a block matching the given block nu
 
 ##### Parameters
 
-1. `QUANTITY|TAG` - integer of a block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter).
+1. `QUANTITY|TAG` - integer of a block number, or the string "latest", "earliest" or "pending", see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block).
 
 ```js
 params: [
@@ -907,8 +904,7 @@ Returns code at a given address.
 ##### Parameters
 
 1. `DATA`, 20 Bytes - address.
-2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-
-RPC#the-default-block-parameter), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
+2. `QUANTITY|TAG|MAP` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block), or a map containing a block hash string, under the key `"blockHash"` or a string hexadecimal number, under the key `"blockNumber"`.
 
 ##### Example Parameters
 ```js
@@ -982,7 +978,7 @@ Creates new message call transaction or a contract creation, if the data field c
   - `gas`: `QUANTITY`  - (optional, default: 90000) Integer of the gas provided for the transaction execution. It will return unused gas.
   - `gasPrice`: `QUANTITY`  - (optional, default: 0) Integer of the gasPrice used for each paid gas
   - `value`: `QUANTITY`  - (optional) Integer of the value sent with this transaction
-  - `data`: `DATA`  - The compiled code of a contract OR the hash of the invoked method signature and encoded parameters. For details see [Ethereum Contract ABI](https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI)
+  - `data`: `DATA`  - The compiled code of a contract OR the hash of the invoked method signature and encoded parameters. For details see [Ethereum Contract ABI](https://docs.soliditylang.org/en/develop/abi-spec.html)
   - `nonce`: `QUANTITY`  - (optional) Integer of a nonce. This allows to overwrite your own pending transactions that use the same nonce.
 
 ##### Example Parameters
@@ -1066,7 +1062,7 @@ Executes a new message call immediately without creating a transaction on the bl
   - `gasPrice`: `QUANTITY`  - (optional) Integer of the gasPrice used for each paid gas
   - `value`: `QUANTITY`  - (optional) Integer of the value sent with this transaction
   - `data`: `DATA`  - (optional) Hash of the method signature and encoded parameters. For details see [Ethereum Contract ABI in the Solidity documentation](https://solidity.readthedocs.io/en/latest/abi-spec.html)
-2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter)
+2. `QUANTITY|TAG` - integer block number, or the string `"latest"`, `"earliest"` or `"pending"`, see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block)
 
 ##### Example Parameters
 ```js
@@ -1207,7 +1203,7 @@ Returns information about a block by block number.
 
 ##### Parameters
 
-1. `QUANTITY|TAG` - integer of a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter).
+1. `QUANTITY|TAG` - integer of a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block).
 2. `Boolean` - If `true` it returns the full transaction objects, if `false` only the hashes of the transactions.
 
 ##### Example Parameters
@@ -1336,7 +1332,7 @@ Returns information about a transaction by block number and transaction index po
 
 ##### Parameters
 
-1. `QUANTITY|TAG` - a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter).
+1. `QUANTITY|TAG` - a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block).
 2. `QUANTITY` - the transaction index position.
 
 ##### Example Parameters
@@ -1470,7 +1466,7 @@ Returns information about a uncle of a block by number and uncle index position.
 
 ##### Parameters
 
-1. `QUANTITY|TAG` - a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter).
+1. `QUANTITY|TAG` - a block number, or the string `"earliest"`, `"latest"` or `"pending"`, as in the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block).
 2. `QUANTITY` - the uncle's index position.
 
 ##### Example Parameters
@@ -1880,7 +1876,7 @@ Returns the account- and storage-values of the specified account including the M
 
 1. `DATA`, 20 bytes - address of the account or contract
 2. `ARRAY`, 32 Bytes - array of storage-keys which should be proofed and included. See eth_getStorageAt
-3. `QUANTITY|TAG` - integer block number, or the string "latest" or "earliest", see the default block parameter
+3. `QUANTITY|TAG` - integer block number, or the string "latest" or "earliest", see the [default block parameter](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block)
 
 
 ##### Example Parameters
