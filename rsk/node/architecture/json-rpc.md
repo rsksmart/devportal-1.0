@@ -980,8 +980,8 @@ Creates new message call transaction or a contract creation, if the data field c
 ##### Parameters
 
 1. `Object` - The transaction object
-  - `from`: `DATA`, 20 Bytes - The address the transaction is send from.
-  - `to`: `DATA`, 20 Bytes - (optional when creating new contract) The address the transaction is directed to.
+  - `from`: `DATA`, 20 Bytes - The address the transaction is sent from.
+  - `to`: `DATA`, 20 Bytes - (optional when creating new contract) The address the transaction is sent to.
   - `gas`: `QUANTITY`  - (optional, default: 90000) Integer of the gas provided for the transaction execution. It will return unused gas.
   - `gasPrice`: `QUANTITY`  - (optional, default: 0) Integer of the gasPrice used for each paid gas
   - `value`: `QUANTITY`  - (optional) Integer of the value sent with this transaction
