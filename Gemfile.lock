@@ -137,8 +137,14 @@ DEPENDENCIES
 RUBY VERSION
    ruby 2.6.3p62
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 BUNDLED WITH
    2.6.3
 =======
 >>>>>>> 4a5987c28 (fix bundle error)
+=======
+
+BUNDLED WITH
+   2.6.3
+>>>>>>> 31dbd8d27 (troubleshooting errors with vercel)
