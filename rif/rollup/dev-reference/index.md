@@ -1,8 +1,8 @@
 ---
-menu_order: 300
+menu_order: 1200
 menu_title: Developer Reference Guide
 layout: rsk
-title: Developer Reference Guide | Using the APIs and SDK
+title: Developer Reference Guide
 description: The developer reference section provides all information you need to use and integrate the RIF Rollup using the SDKs available. 
 tags: rif, aggregation, zksync, rollup
 ---

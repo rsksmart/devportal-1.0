@@ -2,7 +2,7 @@
 menu_order: 500
 menu_title: Glossary
 layout: rsk
-title: RIF Rollup Documentation | Glossary
+title: RIF Rollup | Glossary
 description: RIF Rollup Terms and Meaning
 tags: rif, aggregation, zksync, rollup, glossary, rif-rollup
 ---

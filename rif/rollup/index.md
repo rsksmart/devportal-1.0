@@ -1,7 +1,7 @@
 ---
 menu_order: 1100
-section_title: RIF Rollup Docs
-menu_title: RIF Rollup Documentation
+section_title: RIF Rollup
+menu_title: Introduction
 layout: rsk
 title: RIF Rollup Documentation | Introduction
 description: RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology.
@@ -44,9 +44,9 @@ Here are some important links to take note of:
 * RIF Rollup Wallet: Check your balances, NFTs, transactions history and contacts. See the [RIF Rollup Wallet - Testnet](https://wallet.testnet.rollup.rif.technology/)
 * RIF Rollup Explorer: Everything you need to explore all transactions and blocks on RIF Rollup. See the [RIF Rollup Explorer - Testnet](https://explorer.testnet.rollup.rif.technology/)
 
-See the [Glossary section](glossary) for definitions of terms.
 
-----
+Table of Contents
+-----------------
 
 <div class="container the-stack">
  <div class="row rif_blue_text">
@@ -58,23 +58,23 @@ See the [Glossary section](glossary) for definitions of terms.
         <p>All you need to know about the RIF Rollup</p>
       </div>
   </div>
-   <div class="col">
+  <div class="col">
       <div class="rns-index-box">
-        <a href="dev-reference">Developer Reference Guide</a>
+        <a href="./dev-reference/">Developer Reference Guide</a>
         <br />
         <br />
         <p>Get started building on RIF Rollup</p>
       </div>
   </div>
-  <div class="row rif_blue_text">
-    <div class="col">
+  <div class="col">
       <div class="rns-index-box">
-        <a href="design">Design and Architecture</a>
+        <a href="./dev-reference/design">Design and Architecture</a>
         <br />
         <br />
         <p>Learn more about the RIF Rollup architecture</p>
       </div>
-    </div>
+  </div>
+  <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
         <a href="dapps">dApps</a>
@@ -82,45 +82,51 @@ See the [Glossary section](glossary) for definitions of terms.
         <br />
         <p>Take a look at the dapps currently available on Rootstock (RSK)</p>
       </div>
-    </div>
   </div>
-   <div class="row rif_blue_text">
-    <div class="col">
+  <div class="col">
       <div class="rns-index-box">
-        <a href="/guides/rif-rollup/" rel="noopener noreferrer" >Tutorials</a>
+        <a href="/guides/rif-rollup/">Tutorials</a>
         <br />
         <br />
-        <p>A collection of tutorials and guides on how to perform selected tasks on RIF Rollup..</p>
+        <p>A collection of tutorials and guides on how to perform selected tasks on RIF Rollup.</p>
       </div>
     </div>
+  </div>
+  <div class="col">
+    <div class="rns-index-box">
+      <a href="./dev-reference/starter-kit">Starter Kit (Coming soon)</a>
+      <br />
+      <br />
+      <p>This kit comes with everything you need to start using the RIF Rollup inside your applications.</p>
+    </div>
+  </div>
+  <div class="col">
+    <div class="rns-index-box">
+        <a href="security">Security</a>
+        <br />
+        <br />
+        <p>See how security is achieved with the RIF Rollup.</p>
+    </div>
+  </div>
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="starter-kit" rel="noopener noreferrer" >Starter Kit (Coming soon)</a>
-        <br />
-        <br />
-        <p>This kit comes with everything you need to start using the RIF Rollup inside your applications. It also includes all the configuration required to deploy to different networks on Rootstock.</p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="rns-index-box">
-        <a href="faqs">Frequently Asked Questions</a>
+        <a href="faqs" rel="noopener noreferrer" >Frequently Asked Questions</a>
         <br />
         <br />
         <p>A set of frequently asked questions about the RIF Rollup.</p>
       </div>
     </div>
   </div>
-   <div class="col">
-      <div class="rns-index-box">
-        <a href="troubleshooting">Troubleshooting and Common Errors</a>
-        <br />
-        <br />
-        <p>Find common errors and how to troubleshoot them.</p>
+  <div class="col">
+    <div class="rns-index-box">
+      <a href="./dev-reference/troubleshooting">Troubleshooting and Common Errors</a>
+      <br />
+      <br />
+      <p>Find common errors and how to troubleshoot them.</p>
       </div>
-    </div>
   </div>
-   <div class="col">
+  <div class="col">
       <div class="rns-index-box">
         <a href="glossary">Glossary</a>
         <br />

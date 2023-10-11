@@ -18,3 +18,4 @@ section_title: Guides
 - [Create, Deploy, and View NFT project on RSK](/guides/nft/)
 - [Flyover Protocol User Guide](/guides/flyover/)
 - [2 Way Peg App User Guide](/guides/two-way-peg-app/)
+- [RIF Rollup User Guides](/guides/rif-rollup/)
