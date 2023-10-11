@@ -1,7 +1,7 @@
 # Used to lock to specific version of ruby, for consistency in CI
 # See https://bundler.io/v1.5/gemfile_ruby.html
 # Use https://rvm.io/ to manage multiple versions of ruby on your system
-ruby "2.6.3"
+ruby "2.7.2"
 
 source "https://rubygems.org"
 
