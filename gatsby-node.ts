@@ -299,7 +299,6 @@ export const createSchemaCustomization: GatsbyNode["createSchemaCustomization"] 
 export const onPostBuild: GatsbyNode['onPostBuild'] = () => {
   fs.cpSync(path.join(__dirname, '/content/rsk-devportal/dist/images'), path.join(__dirname, '/public/dist/images'), {recursive: true})
   fs.cpSync(path.join(__dirname, '/content/rsk-devportal/assets'), path.join(__dirname, '/public/assets'), {recursive: true})
-  fs.cpSync(path.join(__dirname, '/content/rsk-devportal/assets/img'), path.join(__dirname, '/public/assets/img'), {recursive: true})
 
   fs.cpSync(path.join(__dirname, '/content/rsk-devportal/grants'), path.join(__dirname, '/public/grants'), {recursive: true})
 
