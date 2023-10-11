@@ -1,8 +1,8 @@
 ---
 menu_order: 300
-menu_title: RIF Rollup | dApps on RIF Rollup
+menu_title: dApps on RIF Rollup
 layout: rsk
-title: RIF Rollup Documentation | dApps
+title: RIF Rollup | dApps
 description: RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology. See the dApps ported on Rootstock.
 tags: rif, aggregation, zksync, rollup
 ---

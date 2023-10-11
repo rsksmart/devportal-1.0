@@ -1,8 +1,8 @@
 ---
-menu_order: 700
+menu_order: 500
 menu_title: Troubleshooting
 layout: rsk
-title: RIF Rollup - Troubleshooting and Common Errors
+title: RIF Rollup | Troubleshooting and Common Errors
 description: RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology.
 tags: rif, aggregation, zksync, rollup, troubleshooting
 render_features: 'collapsible'

@@ -2,7 +2,7 @@
 menu_order: 400
 menu_title: FAQs
 layout: rsk
-title: RIF Rollup - Frequently Asked Questions
+title: Frequently Asked Questions
 description: A list of frequently asked questions on RIF Rollup
 tags: rif, aggregation, zksync, rollup, faqs
 render_features: 'collapsible'

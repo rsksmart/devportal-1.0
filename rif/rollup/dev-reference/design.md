@@ -1,8 +1,8 @@
 ---
-menu_order: 500
+menu_order: 300
 menu_title: Design and Architecture
 layout: rsk
-title: RIF Rollup Documentation | Design and Architecture
+title: RIF Rollup | Design and Architecture
 description: zkSync main architecture and design
 tags: rif, aggregation, zksync, rollup
 ---

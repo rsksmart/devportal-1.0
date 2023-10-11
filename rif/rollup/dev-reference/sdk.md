@@ -1,8 +1,8 @@
 ---
-menu_order: 400
+menu_order: 200
 menu_title: SDKs and APIs
 layout: rsk
-title: RIF Rollup Documentation | Using the API and SDKs
+title: RIF Rollup | Using the API and SDKs
 description: RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology. See the dApps ported to Rootstock.
 tags: rif, aggregation, zksync, rollup, sdks, apis, rif-rollup
 render_features: 'tables-with-borders'
