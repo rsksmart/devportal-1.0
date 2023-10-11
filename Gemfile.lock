@@ -135,14 +135,7 @@ DEPENDENCIES
   rouge (= 3.19.0)
 
 RUBY VERSION
-<<<<<<< Updated upstream
-   ruby 2.6.3p62
-
-BUNDLED WITH
-   2.1.4
-=======
    ruby 2.7.2p62
 
 BUNDLED WITH
    2.4.20
->>>>>>> Stashed changes
