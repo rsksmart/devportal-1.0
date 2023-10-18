@@ -1,0 +1,123 @@
+.btn-outline-white {
+    position: relative;
+    padding: 8px 12px;
+    border: 1px solid $white;
+    border-radius: 40px;
+    background-color: $black;
+
+    &::after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        height: 100%;
+        width: 100%;
+        padding: inherit;
+        border-radius: 40px;
+        border: 1px solid $white;
+        z-index: -1;
+    }
+}
+
+.btn-outline-black {
+    position: relative;
+    padding: 8px 12px;
+    border: 1px solid $black;
+    border-radius: 40px;
+
+    &::after {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        height: 100%;
+        width: 100%;
+        padding: inherit;
+        border-radius: 40px;
+        border: 1px solid $black;
+        z-index: -1;
+    }
+}
+.btn-lg{
+  padding: 16px 20px;
+  font-size: 16px;
+}
+.btn-alt{
+  position: relative;
+  display: inline-block;
+  border: none;
+  font: 400 16px/1 $font-family-base;
+  letter-spacing: -0.01em;
+  color: $white;
+  border-radius: 16px;
+  background: transparent;
+  padding: 0;
+  transition: opacity 0.2s;
+  text-decoration: none;
+  &:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  & > span, &:after{
+    min-width: 48px;
+    height: 48px;
+    border: 1px solid $white;
+    border-radius: inherit;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: $black;
+    color: inherit;
+    z-index: 1;
+    transition: 0.2s ease-out;
+    transition-property: color, background-color;
+  }
+  &:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+    transition: transform 0.2s ease-out;
+  }
+  &.active{
+    & > span{
+      background-color: $white;
+      color: $black;
+    }
+  }
+  @media (hover) {
+    &:not(span):hover {
+      color: $white;
+      &:after {
+        transform: translate(5px, 5px);
+      }
+    }
+  }
+  &--lg{
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    @include media-breakpoint-up(md) {
+      & > span, &:after{
+        font-size: 16px;
+        height: 56px;
+      }
+    }
+  }
+}
+.btn-page-number{
+  @include media-breakpoint-down(md) {
+    border-radius: 12px;
+
+    & > span, &:after {
+      min-width: 40px;
+      height: 40px;
+      padding: 0 8px;
+    }
+  }
+}

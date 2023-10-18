@@ -1,0 +1,59 @@
+.footer {
+  background-color: $black;
+}
+
+.footer-menu {
+  @include media-breakpoint-up(md) {
+    margin-right: 40px;
+  }
+  @include media-breakpoint-up(lg) {
+    margin-right: 48px;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  a {
+    &:not(.btn) {
+      color: $white;
+      text-decoration: none;
+      transition: color .3s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.zg-social-icon {
+  color: $white;
+  transition: color .3s ease-in-out;
+
+  &:hover, &:focus {
+    color: $primary;
+  }
+}
+
+.footer-menu-subtitle {
+  font-weight: 400;
+  font-size: 10px;
+  color: rgba($white, 0.5);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.footer-links {
+  a {
+    color: $white;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+}
