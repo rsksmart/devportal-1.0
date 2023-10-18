@@ -215,7 +215,7 @@ Step 4: Access **peg-out** screen:
 Step 5: Click on **Connect wallet** button
 ![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/connect-wallet.png)
 
-Step 6: Click on **Ledger** button
+Step 6: Click on **Ledger** button <br/>
 ![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/ledger.png)
 
 
@@ -228,13 +228,18 @@ Step 9: The application will show a simple tutorial:
 ![3-close](/assets/img/guides/two-way-peg-app/using-hd-wallets/3-close.png)
 ![4-open](/assets/img/guides/two-way-peg-app/using-hd-wallets/4-open.png)
 ![5-confirm](/assets/img/guides/two-way-peg-app/using-hd-wallets/5-confirm.png)
-Step 10: Click on the **Finish tutorial and connect** button:
+
+Step 10: Click on the **Finish tutorial and connect** button: <br/>
 ![6-finish](/assets/img/guides/two-way-peg-app/using-hd-wallets/6-finish.png)
-Step 11: Select an account
+
+Step 11: Select an account <br/>
 ![7-select](/assets/img/guides/two-way-peg-app/using-hd-wallets/select.png)
-Step 12: Ledger Connected
+
+Step 12: Ledger Connected <br/>
 ![8-connected](/assets/img/guides/two-way-peg-app/using-hd-wallets/ledger-connected.png)
+<br/>
 Step 13: Continue filling in the other fields as amount and click on the Send button
+
 Step 14: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
 
 ### Get started with Trezor
@@ -249,34 +254,34 @@ Step 2: Access **peg-out** screen:
 Step 3: Click on **Connect wallet** button
 ![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/connect-wallet.png)
 
-Step 4: Click on **Trezor** button
+Step 4: Click on **Trezor** button<br/>
 ![connect-wallet](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor.png)
 
-Step 5: The application will show what network you are connecting on. For this tutorial we are using **Testnet**
-![network](/assets/img/guides/two-way-peg-app/using-hd-wallets/use-ethereum-path.png)
+Step 5: The application will show what network you are connecting on. For this tutorial we are using **Testnet** <br/>
+![network](/assets/img/guides/two-way-peg-app/using-hd-wallets/network.png)
 
-Step 8: Plugin your Trezor device:
+Step 6: Plugin your Trezor device:<br/>
 ![plugin](/assets/img/guides/two-way-peg-app/using-hd-wallets/plugin.png)
-Step 9: The trezor window will open to insert the pin and export the addresses
+Step 7: The trezor window will open to insert the pin and export the addresses
 ![pin-and-address](/assets/img/guides/two-way-peg-app/using-hd-wallets/pin-and-address.png)
-Step 10: Insert the pin and click on confirm button
+Step 8: Insert the pin and click on confirm button
 ![insert-confirm](/assets/img/guides/two-way-peg-app/using-hd-wallets/insert-confirm.png)
-Step 11: Insert the passphrase
+Step 9: Insert the passphrase
 ![insert-passphrase](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png)
-Step 12: Follow instructions on your device
+Step 10: Follow instructions on your device <br/>
 ![verify-device](/assets/img/guides/two-way-peg-app/using-hd-wallets/follow-device.png)
 
 ​> - Note the trezor app screen will be opened some times, because the system will ask for addresses, each ask will open again the trezor screen, and the user will need to inform the [trezor-pin](/assets/img/guides/two-way-peg-app/using-hd-wallets/pass.png).
 
-Step 13: Select account
+Step 11: Select account <br/>
 ![select-account](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-select-account.png)
 
-Step 14: Success
+Step 12: Success
 ![success](/assets/img/guides/two-way-peg-app/using-hd-wallets/trezor-sucess.png)
 
-Step 15: Continue filling in the other fields as amount and click on the Send button
+Step 13: Continue filling in the other fields as amount and click on the Send button
 
-Step 16: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
+Step 14: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
 
 --- 
 ## Searching the status of a pegout

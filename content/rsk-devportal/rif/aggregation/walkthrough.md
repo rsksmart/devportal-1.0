@@ -1,5 +1,5 @@
 ---
 layout: redirect
 permalink: /rif/aggregation/walkthrough/
-redirect: /rif/rollup/walkthrough/
+redirect: /rif/rollup/
 ---

@@ -1,28 +1,32 @@
 ---
 menu_order: 300
-menu_title: RIF Rollup - Dapps
+menu_title: dApps on RIF Rollup
 layout: rsk
-title: RIF Rollup - Dapps
-description: RIF Rollup dapps ported on Rootstock (RSK)
+title: RIF Rollup | dApps
+description: RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology. See the dApps ported on Rootstock.
 tags: rif, aggregation, zksync, rollup
 ---
+
+The RIF Rollup Team have ported 2 dApps that implement important use cases: The RIF Rollup Wallet, and the L2 explorer. Both the wallet and explorer are available on [Testnet](https://wallet.testnet.rollup.rif.technology/).
+
+Developers can easily use or build on top the use cases using the SDKs.
 
 <div class="container the-stack">
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="http://wallet.dev.aggregation.rifcomputing.net/" rel="noopener noreferrer">Wallet</a>
+        <a href="https://wallet.testnet.rollup.rif.technology/" rel="noopener noreferrer">RIF Rollup Wallet</a>
         <br />
         <br />
-        <p>Learn more about the RIF Rollup architecture</p>
+        <p>The wallet enables checking your balances, transactions history and contacts.</p>
       </div>
     </div>
     <div class="col">
       <div class="rns-index-box">
-        <a href="http://explorer.dev.aggregation.rifcomputing.net/" rel="noopener noreferrer">Explorer</a>
+        <a href="https://explorer.testnet.rollup.rif.technology/" rel="noopener noreferrer">RIF Rollup Explorer</a>
         <br />
         <br />
-        <p>Take a look at the dapps currently available on Rootstock (RSK)</p>
+        <p>The explorer is everything you need to explore all transactions and blocks on RIF Rollup</p>
       </div>
     </div>
   </div>
