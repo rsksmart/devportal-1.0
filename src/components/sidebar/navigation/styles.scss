@@ -1,0 +1,55 @@
+.sidebar-nav {
+  &__list {
+    list-style-type: none;
+    padding: 0;
+
+    .sidebar-nav__list {
+      padding: 5px 0 5px 10px;
+
+      font-size: 14px;
+    }
+  }
+
+  &__item {
+    padding: 3px 0;
+    overflow: hidden;
+    margin: 7px 0;
+
+    @include media-breakpoint-up(lg) {
+      margin: 3px 0;
+    }
+  }
+
+  &__button {
+    text-align: left;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: color 0.15s ease-in-out;
+
+    &--active {
+      color: $primary;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.15s ease-in-out;
+
+    &--active {
+      color: $primary;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}

@@ -1,40 +1,63 @@
 {
-  "name": "rsk-devportal",
-  "version": "0.0.0",
+  "name": "rsk-devportal-gatsby",
+  "version": "1.0.0",
   "private": true,
-  "description": "RSK Developer Portal",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-webinar": "npm run generate-webinar-json && npm run generate-webinar-dedupe && npm run generate-webinar-ical && npm run generate-webinar-pages",
-    "generate-webinar-ical": "node .scripts/generate-webinar-ical.js",
-    "generate-webinar-json": "node .scripts/generate-webinar-json.js",
-    "generate-webinar-dedupe": "node .scripts/generate-webinar-dedupe.js",
-    "generate-webinar-pages": "node .scripts/generate-webinar-pages.js",
-    "verify-github-links": "node .scripts/md-github-links-verifier.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rootstock/rootstock.github.io.git"
-  },
+  "description": "rsk-devportal-gatsby",
+  "author": "Vladyslav Romanenko",
   "keywords": [
-    "rsk",
-    "developer",
-    "documentation"
+    "gatsby"
   ],
-  "author": "bguiz",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rootstock/rootstock.github.io/issues"
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
   },
-  "homepage": "https://github.com/rootstock/rootstock.github.io#readme",
   "dependencies": {
-    "csvtojson": "2.0.10",
-    "ical-generator": "1.9.4",
-    "webpack": "^5.82.1"
+    "add": "^2.0.6",
+    "babel-plugin-styled-components": "^2.0.7",
+    "bootstrap": "^5.2.2",
+    "classnames": "^2.3.2",
+    "eslint": "5",
+    "formik": "^2.2.9",
+    "gatsby": "^4.24.4",
+    "gatsby-plugin-csp": "^1.1.4",
+    "gatsby-plugin-git-lastmod": "^0.1.2",
+    "gatsby-plugin-local-search": "^2.0.1",
+    "gatsby-plugin-manifest": "^4.24.0",
+    "gatsby-plugin-netlify": "^5.1.0",
+    "gatsby-plugin-no-index": "^1.0.2",
+    "gatsby-plugin-sass": "^5.24.0",
+    "gatsby-plugin-sitemap": "3.3.0",
+    "gatsby-plugin-vercel": "^1.0.3",
+    "gatsby-remark-prismjs": "6",
+    "gatsby-source-filesystem": "^4.24.0",
+    "gatsby-source-git": "^1.1.0",
+    "gatsby-transformer-json": "4",
+    "gatsby-transformer-remark": "^5.24.0",
+    "jquery": "^3.6.1",
+    "lodash": "^4.17.21",
+    "lodash.camelcase": "^4.3.0",
+    "lodash.startcase": "^4.4.0",
+    "owl.carousel": "^2.3.4",
+    "prismjs": "^1.29.0",
+    "react": "^18.1.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.1.0",
+    "react-hubspot-form": "^1.3.7",
+    "react-use-flexsearch": "^0.1.1",
+    "sass": "^1.55.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
-    "axios": "0.26.0",
-    "markdown-link-extractor": "1.3.1"
+    "@types/classnames": "^2.3.1",
+    "@types/lodash.camelcase": "^4.3.7",
+    "@types/lodash.startcase": "^4.4.7",
+    "@types/node": "^17.0.45",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "typescript": "^4.8.3"
   }
 }

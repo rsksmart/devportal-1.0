@@ -1,0 +1,41 @@
+.zg-card {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.zg-card-stat {
+  padding: 20px;
+}
+
+.zg-card-image-r {
+  background-size: 200px;
+  background-position: bottom -20px right -20px;
+
+  @include media-breakpoint-up(lg) {
+    background-position: 95% 50%;
+    background-size: 250px;
+    padding-right: 50% !important;
+  }
+}
+
+.tab-content, .tab-pane {
+  height: 100%;
+}
+
+.zg-tab-card {
+  min-height: 390px;
+  @include media-breakpoint-up(md) {
+    padding-right: 35% !important;
+    min-height: 320px;
+    background-size: 255px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-right: 40% !important;
+    background-size: 200px;
+  }
+}
+
+.zg-card-community {
+  grid-column-start: 3;
+  grid-column-end: 1;
+}

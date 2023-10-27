@@ -1,0 +1,37 @@
+.sidebar {
+  padding: 40px 0;
+
+  &__wrapper {
+    min-height: calc(100% + 40px);
+    padding: 0 16px;
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 40px;
+      padding-left: 0;
+      border-right: 1px solid white;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  &__collapse {
+    border-radius: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 0;
+    transition: color 0.15s ease-in-out;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 20px;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
