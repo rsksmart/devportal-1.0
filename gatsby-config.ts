@@ -1,13 +1,13 @@
 import type {GatsbyConfig} from "gatsby";
 
 export const repo = `https://github.com/rsksmart/devportal.git`;
-const siteUrl = process.env.URL || `https://developers.rsk.co`
+const siteUrl = process.env.URL || `https://dev.rootstock.io`
 
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Rootstock Developers Portal`,
     siteUrl,
-    description: 'Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. RSK adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.'
+    description: 'Rootstock is the first open source Smart Contract platform secured by the Bitcoin Network. Rootstock adds value and expand functionality to the Bitcoin ecosystem by providing smart contracts and greater scalability.'
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
