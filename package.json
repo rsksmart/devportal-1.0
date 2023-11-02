@@ -1,12 +1,22 @@
 {
-  "name": "rsk-devportal-gatsby",
+  "name": "rootstock-rif-developer-portal",
   "version": "1.0.0",
   "private": true,
-  "description": "rsk-devportal-gatsby",
-  "author": "Vladyslav Romanenko",
+  "description": "Rootstock + RIF Developer Portal",
+  "author": "DevX",
+  "license": "MIT",
   "keywords": [
-    "gatsby"
+    "rootstock",
+    "rsk",
+    "developer",
+    "documentation",
+    "bitcoin",
+    "ethereum"
   ],
+  "bugs": {
+    "url": "https://github.com/rootstock/rootstock.github.io/issues"
+  },
+  "homepage": "https://github.com/rootstock/rootstock.github.io#readme",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
