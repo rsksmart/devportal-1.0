@@ -7,7 +7,7 @@ interface Props {
 
 const Slack = ({ className }: Props) => {
   return (
-    <a className={classnames('slack', className)} href="/slack" target="_blank" rel="noopener noreferrer">Join the Rootstock Open Slack Community to
+    <a className={classnames('slack', className)} href="https://rootstock.io/discord" target="_blank" rel="noopener noreferrer">Join the Rootstock Global Discord Community to
       get the latest updates from the Rootstock Ecosystem!
     </a>
   );
