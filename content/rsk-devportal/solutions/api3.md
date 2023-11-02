@@ -3,6 +3,7 @@ menu_order: 1900
 menu_title: API3
 title: 'API3 - Solutions on RSK'
 description: 'Connect Smart Contracts to Real-World Data.'
+render_features: 'tables-with-borders'
 tags: API3, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles
 layout: 'rsk'
 ---
@@ -21,7 +22,7 @@ API3 is a collaborative project to deliver traditional API services to smart con
 
 The vast majority of the external integrations that decentralized applications need are to "Web 2" APIs. These are built by traditional businesses to monetize their data and services. API3 bridges the gap between Web 2 and Web 3, by bringing this data on-chain.
 
-What is widely known as the oracle problem, in practice, is also an API connectivity problem.
+> What is widely known as the oracle problem, in practice, is also an API connectivity problem.
 
 Existing oracle solutions fall short because they fail to make this distinction, resulting in inferior solutions that depend on third-party oracles and ecosystems that exclude API providers. By refining the definition of the problem, API3 aims to provide a much more optimal solution.
 
@@ -130,12 +131,12 @@ The callback to the **Requester** contains two parameters:
 - [`requestId`](https://docs.api3.org/reference/airnode/latest/concepts/request.html#requestid): First acquired when making the request and passed here as a reference to identify the request for which the response is intended.
 - `data`: In case of a successful response, this is the requested data which has been encoded and contains a timestamp in addition to other response data. Decode it using the `decode()` function from the `abi` object.
 
-:::note
-Sponsors should not fund a `sponsorWallet` with more then they can trust the Airnode with, as the Airnode controls the private key to the `sponsorWallet`. The deployer of such Airnode 
+:::info Note
+Sponsors should not fund a `sponsorWallet` with more than they can trust the Airnode with, as the Airnode controls the private key to the `sponsorWallet`. The deployer of such Airnode 
 undertakes no custody obligations, and the risk of loss or misuse of any excess funds sent to the `sponsorWallet` remains with the sponsor
 :::
 
-### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
+> [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/Requester.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js)
 
 ## Using dAPIs - API3 Datafeeds
 
@@ -160,7 +161,7 @@ their own funds. The amount of gas supplied determines how long the dAPI will be
 available to use. If it runs out of gas, the dAPI will no longer be updated
 unless it is funded again.
 
-[Click here to read more about Self-funded dAPIs](https://docs.api3.org/guides/dapis/subscribing-self-funded-dapis/).
+> [Click here to read more about Self-funded dAPIs](https://docs.api3.org/guides/dapis/subscribing-self-funded-dapis/).
 
 ### Managed dAPIs
 [Managed dAPIs](https://docs.api3.org/reference/dapis/understand/managed.html) are sourced directly from multiple [first-party](https://docs.api3.org/explore/airnode/why-first-party-oracles.html) data providers
@@ -168,14 +169,12 @@ running an Airnode and aggregated using Airnode's signed data using
 a median function. The gas costs
 and availability of Managed dAPIs are managed by the [API3 DAO](https://docs.api3.org/explore/dao-members/).
 
-[Click here to read more about Managed dAPIs](https://docs.api3.org/reference/dapis/understand/managed.html).
+> [Click here to read more about Managed dAPIs](https://docs.api3.org/reference/dapis/understand/managed.html).
 
 ### Subscribing to Self-funded dAPIs
 
-:::note Info
-
+:::info Note
 While Managed dAPIs are just available on mainnets, Self-funded dAPIs are available on both mainnets and testnets. The process to read from a dAPI proxy remains same for both Self-funded and Managed dAPIs.
-
 :::
 
 The API3 Market lets users access both Self-funded and Managed dAPIs.
@@ -193,9 +192,10 @@ You can then decide if you want to use Self-funded or Managed dAPIs.
 
 #### Funding a sponsor wallet
 
-If you are trying to access Self-funded dAPIs, you need to make sure that the sponsor wallet for the dAPI is funded. You can activate it by using the [API3 Market](https://market.api3.org/) and send RBTC to the `sponsorWallet`. Make sure your:
+If you are trying to access Self-funded dAPIs, you need to make sure that the sponsor wallet for the dAPI is funded. You can activate it by using the [API3 Market](https://market.api3.org/) and sending RBTC to the `sponsorWallet`. 
 
-- Wallet is connected to the Market and is the same network as the dAPI you are funding.
+Ensure the:
+- Wallet is connected to the Market and is on the same network as the dAPI you are funding.
 - Balance of the wallet should be greater than the amount you are sending to the `sponsorWallet`.
 
 ![SS1](/assets/img/solutions/api3/SS1.png)
@@ -246,11 +246,9 @@ dAPIs, you will have the following options to choose from:
 | 0.5%      | 24 hours  |
 | 1%        | 24 hours  |
 
-:::note Info 
-
+:::info Note
 Not all dAPIs support all the configurations. It depends on the asset and chain.
 Check the [API3 Market](https://market.api3.org) for more info.
-
 :::
 
 After selecting the required deviation threshold and heartbeat, check the final price, and select **Add to Cart**. You can add more dAPIs on the same network to your cart. Once you are done, click on **Checkout**.
@@ -300,9 +298,9 @@ contract DataFeedReaderExample is Ownable {
 
 - `readDataFeed()` is a view function that returns the latest price of the set dAPI.
 
-You can read more about dAPIs [here](https://docs.api3.org/guides/dapis/subscribing-managed-dapis/). 
+You can read more [about dAPIs](https://docs.api3.org/guides/dapis/subscribing-managed-dapis/). 
 
-### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/DataFeedReader.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
+> [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/DataFeedReader.sol&lang=en&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.18+commit.87f61d96.js)
 
 ## Using API3 QRNG
 
@@ -389,9 +387,9 @@ contract RemixQrngExample is RrpRequesterV0 {
 
 - The targeted off-chain ANU Airnode gathers the request and performs a callback to the requester with the random number.
 
-You can read more about API3 QRNG [here](https://docs.api3.org/explore/qrng/).
+You can read more [about API3 QRNG](https://docs.api3.org/explore/qrng/).
 
-### [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/QrngRequesterUpdated.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
+> [Try deploying it on Remix!](https://remix.ethereum.org/#url=https://github.com/api3-ecosystem/remix-contracts/blob/master/contracts/QrngRequesterUpdated.sol&optimize=false&runs=200&evmVersion=null&version=soljson-v0.8.9+commit.e5eed63a.js&lang=en)
 
 ## ChainAPI
 
@@ -400,7 +398,7 @@ API providers can follow a simple GUI-based integration and deployment flow and 
 
 If you have a REST API, you can easily deploy your own Airnode using [ChainAPI](https://chainapi.com) to Rootstock's Mainnet/Testnet.
 
-Check out the API3 Docs [here](https://docs.api3.org).
+Check out the [API3 Docs](https://docs.api3.org).
 
 ## Features
 
