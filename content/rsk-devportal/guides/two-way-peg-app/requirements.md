@@ -4,8 +4,8 @@
 - [Liquality Wallet](/solutions/liquality/)
 
 > - Ensure you have installed any of the software wallet listed above in your browser. For more information, see the [Supported Browsers](/guides/two-way-peg-app/getting-started#supported-browsers) and [Supported Wallets](/guides/two-way-peg-app/getting-started#supported-wallets) section.
-​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rsk.co/) for learning purposes.
-> - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://2wp-app.rsk.co/) application.
+​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) for learning purposes.
+> - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://2wp-app.rootstock.io/) application.
 
 
 ## Install Apps

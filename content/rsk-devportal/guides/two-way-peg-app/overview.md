@@ -17,7 +17,7 @@ The 2 way peg app is a web application that fosters the interaction between the 
 
 The 2 way peg app uses a [REST API](https://en.wikipedia.org/wiki/Representational_state_transfer) and a [2 way peg api](https://github.com/rsksmart/2wp-api) as the backend, this API uses a [daemon](https://en.wikipedia.org/wiki/Daemon_(computing)) process, which is responsible for listening on blockchain transactions to update the state of peg-ins and in the future, the state of peg-outs, these state changes (tx hash, date change, last status) are stored in a mongodb database.
 
-> Currently, the 2 way peg app is available on both [RSK Mainnet](https://2wp-app.rsk.co/) and [RSK Testnet](https://2wp-app.testnet.rsk.co/). 
+> Currently, the 2 way peg app is available on both [RSK Mainnet](https://2wp-app.rootstock.io/) and [RSK Testnet](https://2wp-app.testnet.rootstock.io/). 
 
 The source code is available on github, and open source:
 - [Front end](https://github.com/rsksmart/2wp-app)

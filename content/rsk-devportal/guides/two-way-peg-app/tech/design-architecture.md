@@ -7,7 +7,7 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, 
 layout: rsk
 ---
 
-The [2 way peg app](https://2wp-app.rsk.co/) is a protocol to convert BTC to RBTC and vice versa. It is secured by the powpeg, which is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. See the history of the [Powpeg](/rsk/architecture/flyover).
+The [2 way peg app](https://2wp-app.rootstock.io/) is a protocol to convert BTC to RBTC and vice versa. It is secured by the powpeg, which is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. See the history of the [Powpeg](/rsk/architecture/flyover).
 
 In this section, we will cover the design and architecture used in building the 2 way peg application. It comprises of a [web interface](#high-level) built with Vue.js, a [backend application](#components) built with Node.js, and made to run via [containers](#containers).
 

@@ -11,7 +11,7 @@ See a list of terms about/related to the 2 way peg app and their meanings.
 
 **2 way peg app:**
 
-The [2 way peg app](https://2wp-app.rsk.co/) is a frontend application developed in Vue.js and typescript. The or 2 way peg app is a web application that fosters the interaction between the bitcoin blockchain and the RSK network for faster exchange of BTC and RBTC. See the [github repo](https://github.com/rsksmart/2wp-app).
+The [2 way peg app](https://2wp-app.rootstock.io/) is a frontend application developed in Vue.js and typescript. The or 2 way peg app is a web application that fosters the interaction between the bitcoin blockchain and the RSK network for faster exchange of BTC and RBTC. See the [github repo](https://github.com/rsksmart/2wp-app).
 
 **Amount in BTC:**
 
@@ -58,7 +58,7 @@ The bitcoin address to be refunded.
 
 **Powpeg**
 
-The powpeg is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. Read more about the [Powpeg](https://developers.rsk.co/rsk/architecture/powpeg/).
+The powpeg is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. Read more about the [Powpeg](https://developers.rootstock.io/rsk/architecture/powpeg/).
 
 **SegWit address**
 
@@ -69,7 +69,7 @@ Segwit, short for Segregated Witness, is an upgrade to the Bitcoin protocol, it 
 A software wallet is an application that is installed on a computer or smartphone. The private keys are stored on the computer or smartphone.
 
 **Testnet:**
-- This is a testing network used for testing and development purposes, assets on the Testnet have zero value, funds used in this network are called Test tokens (tRBTC), they can be gotten through a faucet that dispenses tokens. These tokens are utility tokens that are required to operate certain DApps. Developers of those DApps also need to test them on the Testnet, and hence these are provided as a convenience for them. The RSK network provides a cryptocurrency faucet. The tRBTC faucet provides the cryptocurrency required to pay for gas fees on the RSK Testnet. See how to get tRBTC using the [RSK Faucet](https://faucet.rsk.co/).
+- This is a testing network used for testing and development purposes, assets on the Testnet have zero value, funds used in this network are called Test tokens (tRBTC), they can be gotten through a faucet that dispenses tokens. These tokens are utility tokens that are required to operate certain DApps. Developers of those DApps also need to test them on the Testnet, and hence these are provided as a convenience for them. The RSK network provides a cryptocurrency faucet. The tRBTC faucet provides the cryptocurrency required to pay for gas fees on the RSK Testnet. See how to get tRBTC using the [RSK Faucet](https://faucet.rootstock.io/).
 
 **Transaction fee**
 

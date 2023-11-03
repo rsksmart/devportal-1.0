@@ -2,8 +2,8 @@
 
 ## Performing a peg-out transaction using rLogin(Trezor and Ledger)
 
-​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rsk.co/) for learning purposes.
-> - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://2wp-app.rsk.co/) application.
+​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) for learning purposes.
+> - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://2wp-app.rootstock.io/) application.
 > - We're using Ledger Nano and Trezor One hardware wallets on this tutorial.
 > - For how to perform a peg-in transaction using hardware wallets. See [Getting started using hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets).
 > - To use Ledger hardware wallet to create a **peg-in** see [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/getting-started#performing-a-peg-in-transaction-with-ledger)

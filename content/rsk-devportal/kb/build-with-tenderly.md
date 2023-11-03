@@ -52,4 +52,4 @@ For detailed steps on how to install the [Tenderly CLI](https://github.com/Tende
 
 You can visit [Tenderly](https://dashboard.tenderly.co/register) to get started or View [Tenderly on Github](https://github.com/Tenderly).
 
-For additional information and support, visit the [RSK Open Slack Community](https://developers.rsk.co/slack) to ask your questions!
+For additional information and support, visit the [RSK Open Slack Community](https://developers.rootstock.io/slack) to ask your questions!

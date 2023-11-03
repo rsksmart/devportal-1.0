@@ -5,7 +5,7 @@
 **Step 1: Select conversion type**
 
 ​
-To perform a peg-out, open  the [2 way peg app - Testnet](https://2wp-app.testnet.rsk.co/) in your browser.
+To perform a peg-out, open  the [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) in your browser.
 
 **Step 2: Choose the RBTC - BTC conversion type**
 ​
