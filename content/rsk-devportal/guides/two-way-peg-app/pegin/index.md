@@ -1,0 +1,15 @@
+In this section, we will learn how to perform a [peg-in and pegout](/guides/two-way-peg-app/glossary/) transaction using the 2 way peg app, to convert BTC to RBTC (peg-in). We will do the following:
+
+1. [Set up your environment](/guides/two-way-peg-app/requirements)
+2. Perform a peg-in (BTC - RBTC) transaction using [Ledger Hardware Wallet](/guides/two-way-peg-app/pegin/ledger-hardware-wallet/)
+3. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](/guides/two-way-peg-app/trezor-hardware-wallet/)
+4. Perform a peg-in (BTC - RBTC) transaction using [Liquality Software Wallet](/guides/two-way-peg-app/pegin/liquality-software-wallet/)
+5. [View a transaction status](/guides/two-way-peg-app/pegin/status/).
+
+## Resources
+- 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
+- 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
+- How to get [RBTC using RSK’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+- [RSK Testnet Faucet](https://faucet.rootstock.io/)
+- [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+- Application Architecture [Design architecture](/guides/two-way-peg-app/tech/design-architecture)

@@ -1,11 +1,5 @@
----
-menu_order: 400
-menu_title: Advanced Operations
-title: "Advanced Operations | 2 way peg app Documentation"
-description: "Welcome to the advanced operations you can perform using the 2 way peg app documentation."
-tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
-layout: rsk
----
+
+![2 way peg app (peg-out)](/assets/img/guides/two-way-peg-app/pegout.gif)
 
 This section contains detailed instructions on how to perform advanced operations on the 2 way peg app. 
 
@@ -18,6 +12,8 @@ convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](#im
 - Adjusting [network fees](#adjusting-network-fees)
 - Viewing [Advanced data](#advanced-data)
 
+## Why derive address using Eletrum?
+During the **oegout** process, the destination address of your BTC is derived from your signature, so to show which address you will receive your BTCs and so that you can use them you need to follow this step by step.
 
 ## Prerequisites:
 - Wallet private key
@@ -312,13 +308,14 @@ A fast transaction is the most expensive but the transaction confirms at the qui
 ## Next
 
 Be sure to check out our next article in this guide,
-on [Design & Architecture of the 2 way peg app](/guides/two-way-peg-app/design-architecture/)
+on [Search status of a pegout](/guides/two-way-peg-app/pegout/status/)
 
 ----
 
 ## Resources
 - 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 - 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using RSK’s built in Powpeg](https://developers.rsk.co/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [RSK Testnet Faucet](https://faucet.rsk.co/)
-- [Get RBTC using Exchanges](https://developers.rsk.co/guides/get-crypto-on-rsk/rbtc-exchanges/)
+- How to get [RBTC using RSK’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+- [RSK Testnet Faucet](https://faucet.rootstock.io/)
+- [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+- Application Architecture [Design architecture](/guides/two-way-peg-app/tech/design-architecture)
