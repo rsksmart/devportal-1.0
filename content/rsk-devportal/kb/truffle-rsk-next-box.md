@@ -768,11 +768,11 @@ Go to your browser at [http://localhost:3000/](http://localhost:3000/)
 In this tutorial you learned how to use the Truffle box [rsk-next-box](https://github.com/rsksmart/rsk-next-box),
 which comes with everything you need to start using Truffle on RSK networks.
 
-Check out [RSK Blockchain](https://developers.rsk.co/rsk/) for more details about us.
+Check out [Rootstock Blockchain](https://developers.rsk.co/rsk/) for more details about us.
 
 I hope this tutorial has been helpful and I'd appreciate your feedback.
 Share it if you like it :)
 
 **Do you have questions?**
 
-Ask in [the RSK community Slack](/slack/)
+Ask in [the Rootstock community discord](/discord/)

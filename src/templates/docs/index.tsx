@@ -3,7 +3,7 @@ import {graphql, HeadFC, PageProps} from "gatsby";
 import {QueryResult} from "../../graphql/types";
 import MainLayout from "../../layouts/main";
 import "../../styles/app.scss";
-import Slack from "../../components/slack";
+import BeforeContent from "../../components/before-content";
 import Meta from "../../components/meta";
 import Seo from "../../components/seo";
 import "prismjs/themes/prism-solarizedlight.css";
@@ -41,7 +41,7 @@ const DocsPageTemplate = ({data, location}: PageProps<QueryResult>) => {
     <MainLayout pathname={typeof location !== 'undefined' ? location.pathname : '/'}
                 href={typeof location !== 'undefined' ? location.href : '/'}>
       <Meta timeToRead={timeToRead} fileAbsolutePath={fileAbsolutePath} title={frontmatter.title}/>
-      <Slack className="mb-4 mt-3"/>
+      <BeforeContent className="mb-4 mt-3"/>
       <h1>{frontmatter.title}</h1>
       <div className="page-content__markdown main-central-col" dangerouslySetInnerHTML={{__html: html}}/>
       <div className="render-features" data-features={frontmatter.render_features || ''}/>

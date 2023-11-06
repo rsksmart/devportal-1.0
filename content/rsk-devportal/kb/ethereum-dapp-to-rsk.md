@@ -9,7 +9,7 @@ tags: token, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, netw
 
 Our goal is to join forces and give options to people who believe in the power of smart contracts, and also believe in the security of Bitcoin, through RSK. Bring your Ethereum dApps to RSK!
 
-<a href="/slack/" target="_blank" class="next green-button">Get help</a>
+<a href="/discord/" target="_blank" class="next green-button">Get help</a>
 
 
 <div class="features-list">

@@ -91,8 +91,8 @@ const links: NavLink[] = [
     label: 'Community',
     children: [
       {
-        label: 'Slack',
-        link: 'https://open-rsk-dev.slack.com/',
+        label: 'Discord',
+        link: 'https://rootstock.io/discord',
         external: true
       },
       {

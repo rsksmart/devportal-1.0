@@ -1007,4 +1007,4 @@ Share it if you like it :)
 
 **Do you have questions?**
 
-Ask in [the RSK community Slack](/slack/)
+Ask in [the Rootstock community discord](/discord/)

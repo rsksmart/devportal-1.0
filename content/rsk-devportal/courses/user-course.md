@@ -108,7 +108,7 @@ Rootstock User Course.
   > No, this course is entirely self paced, and materials are available on demand.
 - Where can I go for help?
   > A:
-  > Go to the [Rootstock community slack](https://rsk.co/slack),
+  > Go to the [Rootstock community discord](https://rootstock.io/discord),
   > and ask questions on the `#rsk-user-course` channel.
 - Is this course really free?
   > A:

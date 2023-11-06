@@ -1,12 +1,12 @@
 import * as React from "react"
 import type {HeadFC} from "gatsby"
-import Slack from "../components/slack";
+import BeforeContent from "../components/before-content";
 import MainLayout from "../layouts/main";
 
 const NewsletterPage = () => {
   return (
     <MainLayout pathname={'/'} href={'/'}>
-      <Slack/>
+      <BeforeContent/>
       <h1 className="mt-4">Newsletter</h1>
       <div className="newsletter-page">
         <>

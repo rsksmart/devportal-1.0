@@ -137,5 +137,5 @@ If you would like to delve deeper, here are some resources and tools that we rec
 **Resources**
 
 - [Visit Our Developers Portal](https://github.com/rsksmart/devportal) 
-- [RSK Open Slack Community](https://developers.rsk.co/slack/)
+- [RSK Global Discord Community](https://rootstock.io/discord)
 - [RSK](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)

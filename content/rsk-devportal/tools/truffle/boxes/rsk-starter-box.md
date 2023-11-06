@@ -175,4 +175,4 @@ Check out the [RSK developers portal](https://developers.rsk.co/).
 
 - **Do you have questions?**
 
-Ask in [the RSK community Slack](/slack/).
+Ask in [the Rootstock community Discord](https://rootstock.io/discord).
