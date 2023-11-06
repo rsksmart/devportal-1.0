@@ -1,5 +1,9 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 import classnames from "classnames";
+import ComponentOne from "./component-one";
+import ComponentTwo from "./component-two";
+import ComponentThree from "./component-three";
 
 interface Props {
   className?: string;
@@ -7,9 +11,14 @@ interface Props {
 
 const BeforeContent = ({ className }: Props) => {
   return (
-    <a className={classnames('before-content', className)} href="https://rootstock.io/discord" target="_blank" rel="noopener noreferrer">Join the Rootstock Global Discord Community to
-      get the latest updates from the Rootstock Ecosystem!
-    </a>
+    <Marquee className={classnames('before-content', className)} direction="right" pauseOnHover>      
+      &nbsp;     
+      <ComponentOne />
+      &nbsp;
+      <ComponentTwo />
+      &nbsp;
+      <ComponentThree />
+    </Marquee>
   );
 }
 
