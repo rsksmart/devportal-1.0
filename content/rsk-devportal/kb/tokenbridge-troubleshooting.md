@@ -60,7 +60,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** Current Block - Transaction Block Number > 5760
 
-**Answer:**  Look in the [Rootstock Explorer](https://explorer.rsk.co/) at the SAME ADDRESS on Rootstock. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the **#tokenbridge** channel on Rootstock Discord (go to [Discord Community](https://rootstock.io/discord) to join.
+**Answer:**  Look in the [Rootstock Explorer](https://explorer.rsk.co/) at the SAME ADDRESS on Rootstock. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the **#token-bridge** channel on Rootstock Discord (go to [Discord Community](https://rootstock.io/discord) to join.
 
 3 - **Transferred tokens from Rootstock, and after 24 hours have not received tokens on Ethereum**
 
@@ -76,7 +76,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** Current Block - Transaction Block Number > 2880
 
-**Answer:**  Look in [Etherscan](https://etherscan.io/) at the SAME ADDRESS on Rootstock. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the **#tokenbridge** channel on Rootstock Discord (go to [ Discord Community](https://rootstock.io/discord) to join).
+**Answer:**  Look in [Etherscan](https://etherscan.io/) at the SAME ADDRESS on Rootstock. If you do not see the correct balance in the tokens tab, please share your Transaction Hash in the **#token-bridge** channel on Rootstock Discord (go to [ Discord Community](https://rootstock.io/discord) to join).
 
 5 - **Transferred tokens from Ethereum to Rootstock, but do not see them in Liquality**
 
@@ -116,7 +116,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** always
 
-**Answer:**  This is usually a timeout as the Transaction was not mined on the time expected by Metamask. This does not mean that transaction has not been mined. Please share your Transaction Hash in the **#tokenbridge** channel on Rootstock Discord (go to [Discord Community](https://rootstock.io/discord) to join).
+**Answer:**  This is usually a timeout as the Transaction was not mined on the time expected by Metamask. This does not mean that transaction has not been mined. Please share your Transaction Hash in the **#token-bridge** channel on Rootstock Discord (go to [Discord Community](https://rootstock.io/discord) to join).
 
 12 - **I don't see my transaction on the Token Bridge list**
 
@@ -124,7 +124,7 @@ Visit the [Mainnet Token Bridge](https://tokenbridge.rsk.co/) or the [Testnet To
 
 **When:** always
 
-**Answer:**  The list is stored in the local cache, so it’s not shared across devices, and it's erased if you clear your browser cookies and temporary files. You can be sure that if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the `#tokenbridge` channel on Rootstock Discord (go to [Discord Community](https://rootstock.io/discord) to join).
+**Answer:**  The list is stored in the local cache, so it’s not shared across devices, and it's erased if you clear your browser cookies and temporary files. You can be sure that if the transaction is mined the tokens will cross no matter what the list says. If this is not the reason why it is not there please let us know in the `#token-bridge` channel on Rootstock Discord (go to [Discord Community](https://rootstock.io/discord) to join).
 
 13 - **I used the Sovryn Token Bridge**
 
