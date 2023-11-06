@@ -125,7 +125,7 @@ Rootstock Blockchain Developer Course.
   > and therefore the certificate as well.
 - Where can I go for help?
   > A:
-  > Go to the [Rootstock community slack](https://rsk.co/slack),
+  > Go to the [Rootstock community discord](https://rootstock.io/discord),
   > and ask questions on the `#rsk-dev-course` channel.
 - Is there a time frame for completing the course?
   > A:

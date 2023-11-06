@@ -127,6 +127,6 @@ To disable reverse resolution lookup, follow the same instructions in [Enable re
 
 ----
 
-[Contact us on the Rootstock community Slack](/slack/) |
+[Contact us on the Rootstock community Discord](https://rootstock.io/discord) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

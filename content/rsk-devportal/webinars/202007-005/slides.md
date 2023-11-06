@@ -492,7 +492,7 @@ Thank you!
 
 [developers.rsk.co/webinars](/webinars/)
 
-[developers.rsk.co/slack](https://developers.rsk.co/slack/)
+[https://rootstock.io/discord](https://rootstock.io/discord)
 
 NOTE:
 
@@ -502,7 +502,7 @@ Thanks to everyone for attending!
 
 Be sure to check out developers.rsk.co/webinars for more sessions on RSK and RIF!
 
-If you have any questions, please reach out to us at developers [at] iovlabs.org or the Slack link here.
+If you have any questions, please reach out to us at developers [at] iovlabs.org or the [Discord link](https://rootstock.io/discord) here.
 
 Thank you!
 

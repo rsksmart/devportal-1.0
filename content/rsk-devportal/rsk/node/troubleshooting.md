@@ -9,7 +9,7 @@ menu_order: 10
 
 This section explains how to solve some known or frequently encountered issues.
 
-If what you need is not in this section, **please contact us** without hesitation through the [RSK Community on Slack](/slack/). We will be happy to help you!
+If what you need is not in this section, **please contact us** without hesitation through the [Rootstock Community on Discord](https://rootstock.io/discord). We will be happy to help you!
 
 ## Index
 

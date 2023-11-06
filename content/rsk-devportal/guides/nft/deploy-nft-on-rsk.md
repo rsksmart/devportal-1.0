@@ -89,5 +89,5 @@ If you would like to delve deeper, here are some resources and tools that we rec
 **Resources**
 
 - [Visit Our Developers Portal](https://github.com/rsksmart/devportal) 
-- [RSK Open Slack Community](https://developers.rsk.co/slack/)
-- [RSK Youtube](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)
+- [Rootstock Global Discord Community](https://rootstock.io/discord)
+- [Rootstock Youtube](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)

@@ -837,11 +837,11 @@ Then go to your browser at [http://localhost:8080/](http://localhost:8080/)
 In this tutorial you learned how to use the Truffle box [rsk-react-express-box](https://github.com/rsksmart/rsk-react-express-box),
 which comes with everything you need to start using Truffle on RSK networks.
 
-Check out [RSK Blockchain](/rsk/) for more details about us.
+Check out [Rootstock (RSK) Blockchain](/rsk/) for more details about us.
 
 I hope this tutorial has been helpful and I'd appreciate your feedback.
 Share it if you like it :)
 
 **Do you have questions?**
 
-Ask in the [the RSK community Slack](/slack/).
+Ask in the [the RSK community Discord](/discord/).

@@ -72,4 +72,4 @@ npm i web3 @rsksmart/rns
 RNS JavaScript library related links:
 - Read the [docs](https://developers.rsk.co/rif/rns/libs/javascript)
 - Collaborate in [Github](https://github.com/rnsdomains/rns-js)
-- Contact us via [the Rootstock community Slack](/slack/)
+- Contact us via [the Rootstock community discord](https://rootstock.io/discord)

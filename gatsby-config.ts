@@ -190,8 +190,8 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `slack`,
-        path: `${__dirname}/content/rsk-devportal/slack`
+        name: `discord`,
+        path: `${__dirname}/content/rsk-devportal/discord`
       },
     },
     {

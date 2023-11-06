@@ -3,7 +3,7 @@ import type {HeadFC} from "gatsby"
 import {graphql, PageProps} from "gatsby";
 import {QueryResult} from "../graphql/types";
 import MainLayout from "../layouts/main";
-import Slack from "../components/slack";
+import BeforeContent from "../components/before-content";
 import Seo from "../components/seo";
 
 const IndexPage = ({data}: PageProps<QueryResult>) => {
@@ -12,7 +12,7 @@ const IndexPage = ({data}: PageProps<QueryResult>) => {
 
   return (
     <MainLayout pathname={typeof location !== 'undefined' ? location.pathname : '/'} href={typeof location !== 'undefined' ? location.href : '/'}>
-      <Slack/>
+      <BeforeContent/>
       <h1>{frontmatter.title}</h1>
       <div className="page-content__markdown" dangerouslySetInnerHTML={{__html: html}}/>
     </MainLayout>
