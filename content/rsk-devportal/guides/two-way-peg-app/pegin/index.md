@@ -1,6 +1,7 @@
 ---
 menu_order: 1000
-menu_title: Peg-in
+menu_title: Introduction
+section_title: Peg-in
 title: "Performing a peg-in | 2 way peg app Documentation"
 description: "Here, we will learn how to perform a peg-in transaction using the 2 way peg app."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use

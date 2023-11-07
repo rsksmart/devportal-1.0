@@ -90,7 +90,7 @@ layout: rsk
             <a href="/guides/two-way-peg-app/advanced-operations/">
                 <div class="content-container">
                     <p class="card-title rsk_green">Advanced Operations</p>
-                    <p class="card-title rsk_green">See supported address, wallets, browsers, and the design and architecture of the two-way peg app.</p>
+                    <p class="card-title rsk_green">See supported addresses, wallets, browsers, and the design and architecture of the two-way peg app.</p>
                 </div>
             </a>
         <div class="btn-container">
