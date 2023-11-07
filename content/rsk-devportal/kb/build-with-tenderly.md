@@ -51,5 +51,3 @@ For detailed steps on how to install the [Tenderly CLI](https://github.com/Tende
 ### Support
 
 You can visit [Tenderly](https://dashboard.tenderly.co/register) to get started or View [Tenderly on Github](https://github.com/Tenderly).
-
-For additional information and support, visit the [Rootstock Discord Community](https://rootstock.io/discord) to ask your questions!
