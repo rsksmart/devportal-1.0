@@ -1,3 +1,12 @@
+---
+menu_order: 1300
+menu_title: Peg-out using Liquality and Ledger
+title: "Performing a peg-out using Liquality and Ledger | 2 way peg app Documentation"
+description: "Here, we will learn how to perform a peg-out using Liquality and Ledger."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
+layout: rsk
+---
+
 
 ![2 way peg app (peg-out)](/assets/img/guides/two-way-peg-app/pegout.gif)
 

@@ -1,11 +1,27 @@
+---
+menu_order: 300
+menu_title: Prerequisites
+title: "Prerequisites | 2 way peg app Documentation"
+description: "Welcome to the overview section of the 2 way peg app documentation."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
+layout: rsk
+---
+
 ## Prerequisites
 
 - [Metamask Wallet](/develop/wallet/use/metamask/), or
 - [Liquality Wallet](/solutions/liquality/)
+- [Install Apps](/guides/two-way-peg-app/prerequisites#install-apps)
+- [Enabling Developer Mode](/guides/two-way-peg-app/prerequisites#enabling-developer-mode)
+- [Get Testnet Tokens](/guides/two-way-peg-app/prerequisites#getting-testnet-tokens)
+- [Get Mainnet Tokens](/content/rsk-devportal/guides/two-way-peg-app/prerequisites#getting-mainnet-tokens)
+- [Peg-in Requirements](/content/rsk-devportal/guides/two-way-peg-app/prerequisites#requirements-for-pegin)
+- [Peg-out Requirements](/content/rsk-devportal/guides/two-way-peg-app/prerequisites#requirements-for-pegout)
+
 
 > - Ensure you have installed any of the software wallet listed above in your browser. For more information, see the [Supported Browsers](/guides/two-way-peg-app/getting-started#supported-browsers) and [Supported Wallets](/guides/two-way-peg-app/getting-started#supported-wallets) section.
-​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) for learning purposes.
-> - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://2wp-app.rootstock.io/) application.
+​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://app.2wp.testnet.rootstock.io/) for learning purposes.
+> - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://app.2wp.rootstock.io/) application.
 
 
 ## Install Apps

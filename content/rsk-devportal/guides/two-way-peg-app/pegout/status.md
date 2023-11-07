@@ -1,3 +1,11 @@
+---
+menu_order: 1800
+menu_title: Peg-out Transaction Status
+title: "Viewing the status of a transaction after peg-out | 2 way peg app Documentation"
+description: "Here, we will learn how to view  a transaction status after a peg-out."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
+layout: rsk
+---
 
 ![2 way peg app (peg-out)](/assets/img/guides/two-way-peg-app/pegout.gif)
 

@@ -1,10 +1,19 @@
+---
+menu_order: 1600
+menu_title: Peg-out using Metamask
+title: "Performing a peg-out using Metamask Wallet | 2 way peg app Documentation"
+description: "Here, we will learn how to perform a peg-out using Metamask Wallet."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
+layout: rsk
+---
+
+
 ![2 way peg app (peg-out)](/assets/img/guides/two-way-peg-app/pegout.gif)
 
 ## Performing a peg-out transaction using MetaMask
 ​
 **Step 1: Select conversion type**
 
-​
 To perform a peg-out, open  the [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) in your browser.
 
 **Step 2: Choose the RBTC - BTC conversion type**

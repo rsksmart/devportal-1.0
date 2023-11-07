@@ -1,8 +1,17 @@
+---
+menu_order: 1200
+menu_title: Peg-in using Liquality Software Wallet
+title: "Performing a peg-in using Liquality Software Wallet | 2 way peg app Documentation"
+description: "Here, we will learn how to perform a peg-in transaction using the Liquality Software Wallet."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
+layout: rsk
+---
+
 ![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
 
-## Using Liquality Software wallet to perform a pegin
+## Using Liquality Software wallet to perform a peg-in
 
-In this guide, we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) for learning purposes, for transactions using real tokens, please use the [2 way peg app - Mainnet](https://2wp-app.rootstock.io/) application.
+In this guide, we will be using the [2 way peg app](https://app.2wp.rootstock.io/) application for unlockcing liquality, access peg-in to use liquality, and verify if peg-in is active.
 
 ### Acessing pegin to use Liquality
 

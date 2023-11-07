@@ -1,9 +1,9 @@
 ---
-menu_order: 700
+menu_order: 1500
 menu_title: Glossary
 title: "Glossary | 2 way peg app Documentation"
 description: "Welcome to the glossary section for the 2 way peg app documentation."
-tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
 
@@ -11,7 +11,7 @@ See a list of terms about/related to the 2 way peg app and their meanings.
 
 **2 way peg app:**
 
-The [2 way peg app](https://2wp-app.rootstock.io/) is a frontend application developed in Vue.js and typescript. The or 2 way peg app is a web application that fosters the interaction between the bitcoin blockchain and the RSK network for faster exchange of BTC and RBTC. See the [github repo](https://github.com/rsksmart/2wp-app).
+The [2 way peg app](https://app.2wp.rootstock.io/) is a frontend application developed in Vue.js and typescript. The or 2 way peg app is a web application that fosters the interaction between the bitcoin blockchain and the RSK network for faster exchange of BTC and RBTC. See the [github repo](https://github.com/rsksmart/2wp-app).
 
 **Amount in BTC:**
 

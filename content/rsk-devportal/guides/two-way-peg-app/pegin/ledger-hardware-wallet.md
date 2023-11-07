@@ -1,8 +1,17 @@
+---
+menu_order: 1100
+menu_title: Peg-in using Ledger Hardware Wallet
+title: "Performing a peg-in using Ledger Hardware Wallet | 2 way peg app Documentation"
+description: "Here, we will learn how to perform a peg-in transaction using the 2 way peg app."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
+layout: rsk
+---
+
 ![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
 
 ## Using hardware wallets
 
-In this guide, we will be using the 2 way peg app on [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) for learning purposes, for transactions using real tokens, please use the [2 way peg app - Mainnet](https://2wp-app.rootstock.io/) application.
+In this guide, we will be using the 2 way peg app on [2 way peg app - Testnet](https://app.2wp.testnet.rootstock.io/) for learning purposes, for transactions using real tokens, please use the [2 way peg app - Mainnet](https://app.2wp.rootstock.io/) application.
 
 
 ### Ledger Hardware Wallet

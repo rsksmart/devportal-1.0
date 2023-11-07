@@ -1,9 +1,9 @@
 ---
-menu_order: 500
+menu_order: 1300
 menu_title: Design and Architecture
 title: "Design and Architecture | 2 way peg app Documentation"
-description: "Welcome to the 2 way peg app documentation."
-tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
+description: "Two way peg design and architecture."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
 
@@ -30,11 +30,6 @@ The front-end application of the 2 way peg app is developed using Vue.js. The ba
 All applications are available to run using [Docker](https://www.docker.com/) and are built using a Dockerfile. The front-end application will start a node environment with nginx to serve the Vuejs application, and the back-end will start nodejs and start the daemon and api listening by default on port `3000`.
 
 ![Containers Diagram](/assets/img/guides/two-way-peg-app/59-containers-diagram.png)
-
-## Next
-
-Be sure to check out our next article in this guide,
-on [Frequently Asked Questions about the 2 way peg app](/guides/two-way-peg-app/faqs/)
 
 ----
 

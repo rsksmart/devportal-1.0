@@ -1,6 +1,11 @@
-
-
-## Supported Addresses
+---
+menu_order: 1400
+menu_title: Supported Addresses
+title: "Supported Addresses | 2 way peg app Documentation"
+description: "See supported addresses on the two way peg app"
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
+layout: rsk
+---
 
 The following address types are supported by the 2 way peg app.
 
@@ -16,7 +21,7 @@ These addresses are the original BTC addresses. It uses a special script hash fu
 ## Resources
 - 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 - 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using RSK’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [RSK Testnet Faucet](https://faucet.rootstock.io/)
+- How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+- [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
 - [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
 - Application Architecture [Design architecture](/guides/two-way-peg-app/tech/design-architecture)
