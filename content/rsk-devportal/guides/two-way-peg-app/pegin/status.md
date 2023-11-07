@@ -1,15 +1,11 @@
 ---
 menu_order: 1300
-menu_title: Transaction Status
+menu_title: Viewing Peg-in Transaction Status
 title: "Viewing Transaction Status | 2 way peg app Documentation"
 description: "Here, we will learn how to view a transaction status on the 2 way peg app."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk
 ---
-
-![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
-
-## View transaction status
 
 The transaction status shows the status of transactions performed using the 2 way peg application.
 
@@ -114,7 +110,7 @@ This shows the status for the transaction.
 ## Resources
 - 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 - 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using RSK’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [RSK Testnet Faucet](https://faucet.rootstock.io/)
+- How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+- [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
 - [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
-- Application Architecture [Design architecture](/guides/two-way-peg-app/tech/design-architecture)
+- [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)

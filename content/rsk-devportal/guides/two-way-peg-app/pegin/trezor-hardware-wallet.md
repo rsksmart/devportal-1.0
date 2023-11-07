@@ -7,13 +7,7 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, 
 layout: rsk
 ---
 
-![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
-
 In this guide, we will be using performing a peg in transaction using the [2 way peg app](https://app.2wp.rootstock.io/) application.
-
-We will do the following;
-- 
-
 
 ## Trezor Hardware Wallet
 
@@ -203,9 +197,10 @@ Click **Done**.
 **Now you have successfully performed a peg-in transaction using the 2 way peg application.**
 
 ## Resources
+
 - 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 - 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using RSK’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [RSK Testnet Faucet](https://faucet.rootstock.io/)
+- How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+- [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
 - [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
-- Application Architecture [Design architecture](/guides/two-way-peg-app/tech/design-architecture)
+- [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)

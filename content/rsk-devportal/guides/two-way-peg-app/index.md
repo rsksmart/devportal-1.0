@@ -8,6 +8,8 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock
 layout: rsk
 ---
 
+![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
+
 <div class="row features-list">
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">

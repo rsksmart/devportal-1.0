@@ -84,4 +84,4 @@ A fast transaction is the most expensive but the transaction confirms at the qui
 - How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
 - [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
 - [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
-- Application Architecture [Design architecture](/guides/two-way-peg-app/tech/design-architecture)
+- [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
