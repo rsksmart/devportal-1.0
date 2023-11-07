@@ -79,6 +79,6 @@ You can repeat these steps for the Rootstock (RSK) Testnet.
 
 ----
 
-[Contact us on the Rootstock community Slack](/slack/) |
+[Contact us on the Rootstock community discord](/discord/) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

@@ -118,6 +118,6 @@ Read [Config Custom Tokens](https://docs.matic.network/docs/develop/metamask/cus
 
 ----
 
-[Contact us on the Rootstock (RSK) community Slack](/slack/) |
+[Contact us on the Rootstock (RSK) community discord](https://rootstock.io/discord) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

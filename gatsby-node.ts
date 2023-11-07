@@ -163,15 +163,8 @@ export const createPages: GatsbyNode["createPages"] = async ({graphql, actions, 
 
   // @ts-ignore
   redirectsFile.redirects.push({
-    source: '/slack',
-    destination: 'https://open-rsk-dev.slack.com/',
-    permanent: true,
-  });
-
-  // @ts-ignore
-  redirectsFile.redirects.push({
     source: '/discord',
-    destination: 'https://discord.gg/fPerbqcWGE/',
+    destination: 'https://rootstock.io/discord',
     permanent: true,
   });
 

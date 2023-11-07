@@ -1072,5 +1072,5 @@ Check out the third part of
 ----
 
 [RSK Developers Portal](https://github.com/rsksmart/devportal) |
-[Contact us on our community Slack](/slack/) |
+[Contact us on our community Discord](/discord/) |
 [Visit our Webinars Section](https://developers.rsk.co/webinars/)

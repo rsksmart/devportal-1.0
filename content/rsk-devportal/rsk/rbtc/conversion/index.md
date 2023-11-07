@@ -68,4 +68,4 @@ There is a grace period for the RSK Federation address change. You will still be
 
 ### Feedback
 
-Join the [RSK Open Slack](https://developers.rsk.co/slack), to ask questions and get answers.
+Join the [Rootstock Global Dicord Community](https://rootstock.io/discord), to ask questions and get answers.

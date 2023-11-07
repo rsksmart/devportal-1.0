@@ -70,5 +70,5 @@ Further Reading!
 ----
 
 [Visit RSK Developers Portal](https://github.com/rsksmart/devportal) |
-- [Get in touch on RSK Open Slack Community](https://developers.rsk.co/slack/) |
+- [Get in touch on Rootstock Global Discord Community](https://rootstock.io/discord) |
 [Visit our Webinars Section](https://developers.rsk.co/webinars/)

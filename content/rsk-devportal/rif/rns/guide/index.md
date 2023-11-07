@@ -44,6 +44,6 @@ tags: rns, guide, rns-user-guide
 
 ----
 
-[Contact us on the Rootstock community Slack](/slack/) |
+[Contact us on the Rootstock community discord](https://rootstock.io/discord) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)

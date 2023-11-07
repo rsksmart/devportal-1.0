@@ -9532,6 +9532,11 @@ react-fast-compare@^2.0.1:
   resolved "https://registry.yarnpkg.com/react-fast-compare/-/react-fast-compare-2.0.4.tgz#e84b4d455b0fec113e0402c329352715196f81f9"
   integrity sha512-suNP+J1VU1MWFKcyt7RtjiSWUjvidmQSlqu+eHslq+342xCbGTYmC0mEhPCOHxlW0CywylOC1u2DFAT+bv4dBw==
 
+react-fast-marquee@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/react-fast-marquee/-/react-fast-marquee-1.6.2.tgz#86d4d86af4e9624129d852921dde1dce1a4f1604"
+  integrity sha512-bXUuW1r+Yzd8ZjsPmMDy8WJMubHAZd/7n0W/IzUQHtd0iBfxWohP6hzCFnEHWMCOtC9wxSAq/BiEnig4kdI2Vw==
+
 react-hubspot-form@^1.3.7:
   version "1.3.7"
   resolved "https://registry.yarnpkg.com/react-hubspot-form/-/react-hubspot-form-1.3.7.tgz#28912e93cab9ca99a95390e5fb7af28b8599b23a"

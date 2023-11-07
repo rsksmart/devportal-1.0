@@ -205,6 +205,6 @@ The owner of the subdomain is the account that can set the addresses for that su
 
 ----
 
-[Contact us on the Rootstock community Slack](/slack/) |
+[Contact us on the Rootstock community discord](https://rootstock.io/discord) |
 [Github](https://github.com/rnsdomains) |
 [Register Domain](https://manager.rns.rifos.org/search)
