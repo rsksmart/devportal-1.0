@@ -14,7 +14,7 @@ layout: rsk
           <a href="/guides/two-way-peg-app/overview/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">
-                    <img src="/assets/img/guides/two-way-peg-app/logo_black.svg" alt="rootstock icon">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
                 </div>
             </div>
          </a>
@@ -36,7 +36,7 @@ layout: rsk
           <a href="/guides/two-way-peg-app/pegin/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">
-                    <img src="/assets/img/guides/two-way-peg-app/logo_black.svg" alt="rootstock icon">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
                 </div>
             </div>
          </a>
@@ -58,7 +58,7 @@ layout: rsk
           <a href="/guides/two-way-peg-app/pegout/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">
-                    <img src="/assets/img/guides/two-way-peg-app/logo_black.svg" alt="rootstock icon">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
                 </div>
             </div>
          </a>
@@ -80,7 +80,7 @@ layout: rsk
           <a href="/guides/two-way-peg-app/advanced-operations/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">
-                    <img src="/assets/img/guides/two-way-peg-app/logo_black.svg" alt="rootstock icon">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
                 </div>
             </div>
          </a>
@@ -102,7 +102,7 @@ layout: rsk
           <a href="/guides/two-way-peg-app/faqs/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">
-                    <img src="/assets/img/guides/two-way-peg-app/logo_black.svg" alt="rootstock icon">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
                 </div>
             </div>
          </a>
@@ -124,7 +124,7 @@ layout: rsk
           <a href="/guides/two-way-peg-app/glossary/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">
-                    <img src="/assets/img/guides/two-way-peg-app/logo_black.svg" alt="rootstock icon">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
                 </div>
             </div>
          </a>
