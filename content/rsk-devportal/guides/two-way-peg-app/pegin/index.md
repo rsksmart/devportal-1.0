@@ -1,6 +1,6 @@
 ---
 menu_order: 1000
-menu_title: Introduction
+menu_title: Overview
 section_title: Peg-in
 title: "Performing a peg-in | 2 way peg app Documentation"
 description: "Here, we will learn how to perform a peg-in transaction using the 2 way peg app."
