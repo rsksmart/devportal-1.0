@@ -15,9 +15,9 @@ In this section, we will learn how to perform a [peg-in](/guides/two-way-peg-app
 We will do the following:
 
 1. [Set up your environment](/guides/two-way-peg-app/prerequisites/)
-2. Perform a peg-in (BTC - RBTC) transaction using [Ledger Hardware Wallet](/guides/two-way-peg-app/pegin/ledger-hardware-wallet/)
-3. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](/guides/two-way-peg-app/trezor-hardware-wallet/)
-4. Perform a peg-in (BTC - RBTC) transaction using [Liquality Software Wallet](/guides/two-way-peg-app/pegin/liquality-software-wallet/)
+2. Perform a peg-in (BTC - RBTC) transaction using [Ledger Hardware Wallet](/guides/two-way-peg-app/pegin/ledger/)
+3. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](/guides/two-way-peg-app/trezor/)
+4. Perform a peg-in (BTC - RBTC) transaction using [Liquality Software Wallet](/guides/two-way-peg-app/pegin/liquality/)
 5. [View a transaction status](/guides/two-way-peg-app/pegin/status/).
 
 ## Resources
