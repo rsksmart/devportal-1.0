@@ -62,12 +62,19 @@ Step 13: Continue filling in the other fields as amount and click on the Send bu
 
 Step 14: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
 
+---
+
+## Next
+
+* See [Performing a peg-out transaction using Ledger and Liquality](/guides/two-way-peg-app/pegout/ledger-liquality/)
+
+
 --- 
 
 ## Resources
-- 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
-- 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
-- [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
-- [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
+* 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
+* 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
+* How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+* [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
+* [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)

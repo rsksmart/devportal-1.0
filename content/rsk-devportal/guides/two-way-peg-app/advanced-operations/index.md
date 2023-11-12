@@ -1,7 +1,8 @@
 ---
 menu_order: 1200
-menu_title: Advanced Operations
-title: "Advanced Operations | 2 way peg app Documentation"
+menu_title: Overview
+section_title: Advanced Operations
+title: "Overview | 2 way peg app Documentation"
 description: "See how to perform advanced operations on the two way peg app"
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
@@ -11,12 +12,12 @@ This section contains detailed instructions on how to perform advanced operation
 
 These operations include;
 
-- How to review funds in Bitcoin after a pegout by [viewing a derived address](/guides/two-way-peg-app/pegout/deriving-electrum), 
-- Convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](/guides/two-way-peg-app/pegout/deriving-electrum#import-key-in-electrum), import in Electrum if you are using [hardware wallets](/guides/two-way-peg-app/pegout/deriving-electrum#import-key-in-electrum-using-hardware-wallets)
-- Selecting [different accounts](#account-selection)
-- Viewing [advanced details](#how-to-view-advanced-details)
-- Adjusting [network fees](#adjusting-network-fees)
-- Viewing [Advanced data](#advanced-data)
+* How to review funds in Bitcoin after a pegout by [viewing a derived address](/guides/two-way-peg-app/pegout/deriving-electrum), 
+* Convert [RBTC - BTC](#converting-rbtc-to-btc) and import a [key in Electrum](/guides/two-way-peg-app/pegout/deriving-electrum#import-key-in-electrum), import in Electrum if you are using [hardware wallets](/guides/two-way-peg-app/pegout/deriving-electrum#import-key-in-electrum-using-hardware-wallets)
+* Selecting [different accounts](#account-selection)
+* Viewing [advanced details](#how-to-view-advanced-details)
+* Adjusting [network fees](#adjusting-network-fees)
+* Viewing [Advanced data](#advanced-data)
 
 > For  more information, see [design and architecure](/guides/two-way-peg-app/advanced-operations/design-and-architecture/), [supported addresses](/guides/two-way-peg-app/advanced-operations/supported-addresses/), [supported wallets](/guides/two-way-peg-app/advanced-operations/supported-wallets/), [supported browsers](/guides/two-way-peg-app/advanced-operations/supported-browsers/)
 
@@ -79,9 +80,9 @@ A fast transaction is the most expensive but the transaction confirms at the qui
 ----
 
 ## Resources
-- 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
-- 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
-- [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
-- [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
+* 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
+* 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
+* How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+* [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
+* [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)

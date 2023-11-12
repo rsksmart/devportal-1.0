@@ -1,14 +1,18 @@
 ---
 menu_order: 1100
 section_title: 2 Way Peg App
-menu_title: Table of Contents
-title: "Table of Contents | 2 way peg app Documentation"
+menu_title: Introduction
+title: "Introduction | 2 way peg app Documentation"
 description: "Welcome to the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
 
 ![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
+
+The [2 way peg](https://app.2wp.rootstock.io/) is a protocol that converts BTC to RBTC and vice versa. It is secured by the [powpeg](/rsk/architecture/powpeg/), which is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. See the history of the [Powpeg](/rsk/architecture/powpeg/).
+
+To get started, see below for how to perform a **peg-in (BTC - RBTC)** or **peg-out (RBTC - BTC)** using the 2 way peg app.
 
 <div class="row features-list">
     <li class="col-xl-6 col-md-6">
@@ -34,7 +38,7 @@ layout: rsk
             </div>
         </div>
     <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
+        <div class="feature-card  pegin">
           <a href="/guides/two-way-peg-app/pegin/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">
@@ -56,7 +60,7 @@ layout: rsk
             </div>
         </div>
     <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
+        <div class="feature-card pegout">
           <a href="/guides/two-way-peg-app/pegout/">
             <div class="icon rif h-100">
                 <div class="icon-cont text-center my-auto">

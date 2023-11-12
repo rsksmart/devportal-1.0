@@ -51,10 +51,17 @@ Now you can see "Ledger" label in Liquality accounts
 
 ![Final screen](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/5-ledger-steps.png)
 
+---
+
+## Next
+* See [Performing a peg-out transaction using Trezor and Ledger](/guides/two-way-peg-app/pegout/trezor/)
+
+---
+
 ## Resources
-- 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
-- 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
-- [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
-- [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
+* 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
+* 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
+* How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+* [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
+* [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)

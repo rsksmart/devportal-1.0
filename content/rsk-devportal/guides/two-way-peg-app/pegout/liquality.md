@@ -66,9 +66,9 @@ To see the status of a transaction, click on the *Go to status page* button, you
 This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address) and [How to check a transaction status](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page).
 
 ## Resources
-- 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
-- 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
-- [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
-- [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
+* 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
+* 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
+* How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+* [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
+* [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
