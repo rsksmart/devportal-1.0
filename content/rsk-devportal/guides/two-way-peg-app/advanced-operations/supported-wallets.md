@@ -16,6 +16,8 @@ layout: rsk
     - [Liquality](/guides/two-way-peg-app/getting-started-pegout#connect-your-liquality-wallet)
     - [Metamask](/guides/two-way-peg-app/getting-started-pegout#connect-your-metamask-wallet)
 
+----
+
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 * 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)

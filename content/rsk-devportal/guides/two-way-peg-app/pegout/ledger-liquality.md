@@ -51,12 +51,12 @@ Now you can see "Ledger" label in Liquality accounts
 
 ![Final screen](/assets/img/guides/two-way-peg-app/liquality/ledger-steps/5-ledger-steps.png)
 
----
+----
 
 ## Next
 * See [Performing a peg-out transaction using Trezor and Ledger](/guides/two-way-peg-app/pegout/trezor/)
 
----
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

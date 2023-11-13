@@ -59,7 +59,7 @@ The 2 way peg app communicates directly with the following services:
 
 All transactions need to be confirmed via the device used by the customer, whether a hardware or software wallet, all transaction information and the appropriate signatures are generated through integration with the wallets.
 
----
+----
 
 ## Next
 
@@ -67,7 +67,7 @@ All transactions need to be confirmed via the device used by the customer, wheth
 * Convert [RBTC to BTC using the 2 way peg app](/guides/two-way-peg-app/pegout/).
 * View [Advanced Operations](/guides/two-way-peg-app/advanced-operations/)
 
----
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

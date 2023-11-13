@@ -107,21 +107,21 @@ After selecting the account you will like to send BTC from, the next step is to 
 > - The minimum amount to send to perform a pegin operation is **0.005 BTC**, any amount less than this throws an error message: **“You cannot send that amount of BTC, you can only send a minimum of 0.005 BTC”**.
 > - The minimum amount to send to perform a pegout operation is **0.004 RBTC**, any amount less than this throws an error message: **“You cannot send that amount of BTC, you can only send a minimum of 0.005 BTC”**.
 
-> - Note that the amount sent in BTC is the same amount to be received in RBTC on the RSK network.
+> - Note that the amount sent in BTC is the same amount to be received in RBTC on the Rootstock network.
 
 **Step 6: Enter address**
 
 To enter an address, we are provided with two options: 
 
-- (1) Manually enter or copy and paste an RSK compatible address. See [Account based addresses](/rsk/architecture/account-based/) 
+- (1) Manually enter or copy and paste an Rootstock compatible address. See [Account based addresses](/rsk/architecture/account-based/) 
 - (2) Connect to a software wallet. E.g, Metamask. Here, the address is automatically filled in by the account that is connected to your metamask wallet.
 
 ![Enter address](/assets/img/guides/two-way-peg-app/11-enter-address.png)
 
 **Tips:**
 
-> - Use the [address verifier](/kb/verify-address-ownership/) to verify if an address is RSK-compatible and can be used to perform a peg in a transaction.
-> - Use the [Metamask-RSK](https://metamask-landing.rifos.org/) tool to automatically connect to RSK mainnet or [manually connect metamask to the RSK mainnet or testnet](/guides/quickstart/browser/).
+> - Use the [address verifier](/kb/verify-address-ownership/) to verify if an address is Rootstock-compatible and can be used to perform a peg in a transaction.
+> - Use the [Metamask-Rootstock](https://metamask-landing.rifos.org/) tool to automatically connect to Rootstock mainnet or [manually connect metamask to the Rootstock mainnet or testnet](/guides/quickstart/browser/).
 
 **Step 6a: Click on Connect Wallet**
 
@@ -160,7 +160,7 @@ In this section, we can confirm the selected values:
 
 - Device account address
 - Amount in BTC
-- Destination RSK address
+- Destination Rootstock address
 - Refund Bitcoin address
 - Transaction fee in BTC and USD
 - Transaction total (BTCs amount + Transaction fee selected)
@@ -244,6 +244,8 @@ By clicking on the transaction link, the user can check the status directly in t
 Click **Done**.
 
 **Now you have successfully performed a peg-in transaction using the 2 way peg application.**
+
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

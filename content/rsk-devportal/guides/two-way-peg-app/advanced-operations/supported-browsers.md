@@ -17,6 +17,9 @@ layout: rsk
 
 ![Mobile browser not supported](/assets/img/guides/two-way-peg-app/mobile-not-supported.png)
 
+
+----
+
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 * 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)

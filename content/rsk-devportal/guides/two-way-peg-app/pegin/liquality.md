@@ -54,7 +54,7 @@ You can either enter it manually or click 'Use max available balance' if you wan
 
 **Step 2: Verify your RBTC destination address**
 
-You can choose the RBTC destination address filling the input with a RSK address.
+You can choose the RBTC destination address filling the input with a Rootstock address.
 ​
 ![liquality-set-destination-address](/assets/img/guides/two-way-peg-app/liquality/9a.png)
 

@@ -22,12 +22,12 @@ We will do the following:
 4. Perform a peg-in (BTC - RBTC) transaction using [Liquality Software Wallet](/guides/two-way-peg-app/pegin/liquality/)
 5. [View a transaction status](/guides/two-way-peg-app/pegin/status/).
 
----
+----
 
 ## Next
 * Convert [RBTC - BTC using the 2 way peg app](/guides/two-way-peg-app/pegout/).
 
----
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

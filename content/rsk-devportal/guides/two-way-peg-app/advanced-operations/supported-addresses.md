@@ -18,6 +18,8 @@ Also known as Bech32 address, native SegWit looks different from the P2-styles a
 - Legacy address:
 These addresses are the original BTC addresses. It uses a special script hash function called P2PKH (Pay-to-Pubkey Hash) address and starts with the number 1.
 
+----
+
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 * 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)

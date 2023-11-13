@@ -62,14 +62,14 @@ Step 13: Continue filling in the other fields as amount and click on the Send bu
 
 Step 14: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/advanced-operations/#electrum-hardware-wallets)
 
----
+----
 
 ## Next
 
 * See [Performing a peg-out transaction using Ledger and Liquality](/guides/two-way-peg-app/pegout/ledger-liquality/)
 
 
---- 
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

@@ -29,7 +29,7 @@ You may encounter the following errors when trying out the application:
     > - * Disable Liquality, and  enable it
     > ![Enable Liquality](/assets/img/guides/two-way-peg-app/liquality/common-errors/5-common-errors.png)
     > - * Refresh the 2 way peg app.
----
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

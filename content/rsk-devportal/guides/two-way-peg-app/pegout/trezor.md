@@ -61,7 +61,7 @@ To perform a peg-out transaction using the Ledger device directly, follow the st
 
 * Step 14: After finish the pegout transaction creation, click here to see how to see the steps to access to Bitcoin derived address in hardware wallet using [Electrum](/guides/two-way-peg-app/pegout/deriving-electrum)
 
---- 
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

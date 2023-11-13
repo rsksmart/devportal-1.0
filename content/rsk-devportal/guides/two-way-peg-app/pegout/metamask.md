@@ -74,6 +74,8 @@ See final screen as shown in the image below;
 ​
 ![BTC on its way](/assets/img/guides/two-way-peg-app/final-screen-summary.png)
 
+----
+
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 * 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)

@@ -12,7 +12,7 @@ The processing of a pegout transaction is made up of several dependencies, and f
 After finish a pegout you can search for the current status in the [status page](https://app.2wp.rootstock.io/status)
 
 **Not mined status:**
-Just after finish a pegout transaction, this transaction is not mined in the RSK network yet, this status will be showed in the transaction status page:
+Just after finish a pegout transaction, this transaction is not mined in the Rootstock network yet, this status will be showed in the transaction status page:
 ![not-mined](/assets/img/guides/two-way-peg-app/using-hd-wallets/1-not-mined.png)
 
 **Rejected status:**
@@ -42,7 +42,7 @@ The operation summary contains the transaction details:
 
 **Sent:** The amount in RBTC sent.
 
-**Transaction hash:** The hash of the transaction in the RSK network.
+**Transaction hash:** The hash of the transaction in the Rootstock network.
 
 --- 
 ### Bitcoin side
@@ -53,7 +53,7 @@ The operation summary contains the transaction details:
 
 **Estimated fee:** The estimated network fee, if the BTC transaction is not finished yet, this label will be "Estimated", if the BTC transaction is sent to the BTC network the value presented will be the effective value and not the estimated.
 
---- 
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

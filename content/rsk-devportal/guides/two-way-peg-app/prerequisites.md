@@ -103,9 +103,9 @@ _Note: You need at least **0.004 RBTC** to perform a pegout on Mainnet and Testn
 
 ### Getting Mainnet Tokens
 
-You can get BTC on Exchanges like [Liquality](/solutions/liquality/) and [Defiant](https://www.defiantapp.tech/en/en).  See [Get Crypto on RSK](/guides/get-crypto-on-rsk/) for how to get RBTC.
+You can get BTC on Exchanges like [Liquality](/solutions/liquality/) and [Defiant](https://www.defiantapp.tech/en/en).  See [Get Crypto on Rootstock](/guides/get-crypto-on-rsk/) for how to get RBTC.
 
-> - The 2 way peg app is available on both Mainnet and Testnet. Both applications follow the same process, for production purposes, use [Mainnet](https://2wp-app.rootstock.io/), for testing and development purposes, use the [Testnet](https://2wp-app.testnet.rootstock.io/). 
+> - The 2 way peg app is available on both Mainnet and Testnet. Both applications follow the same process, for production purposes, use [Mainnet](https://app.2wp.rootstock.io/), for testing and development purposes, use the [Testnet](https://app.2wp.testnet.rootstock.io/). 
 > - See [glossary](/guides/two-way-peg-app/glossary/) for explanation of these terms.
 
 ---
@@ -152,7 +152,7 @@ The following are the setup requirements to get started with the 2 way peg app.
 > - In this guide, we will be using the Ledger Nano S hardware wallet. All other versions of the Ledger and Trezor hardware wallets are also supported by the 2 way peg app.
 > - If you don’t own any of the hardware wallet devices listed above, please visit the official website of the [Ledger](https://shop.ledger.com/products/ledger-nano-s-plus) and [Trezor](https://shop.trezor.io/) hardware wallets to purchase one.
 
----
+----
 
 ## Next
 
@@ -160,7 +160,7 @@ The following are the setup requirements to get started with the 2 way peg app.
 * Convert [BTC to RBTC using the 2 way peg app](/guides/two-way-peg-app/pegin/).
 
 
----
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

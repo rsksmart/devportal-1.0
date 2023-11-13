@@ -36,7 +36,7 @@ Copy the transaction ID derived in [Step 12: Performing a Pegin transaction with
 
 **Step 3: View transaction status**
 
-This shows what stage the transaction is in, the transaction performed was a peg-in transaction (BTC to RBTC), in the image below, you will see whether funds have moved from the Bitcoin network to the RSK network, and also when the funds have been successfully delivered to an RSK address, here you can also view the total no of confirmations needed and the estimated time left. 
+This shows what stage the transaction is in, the transaction performed was a peg-in transaction (BTC to RBTC), in the image below, you will see whether funds have moved from the Bitcoin network to the Rootstock network, and also when the funds have been successfully delivered to an Rootstock address, here you can also view the total no of confirmations needed and the estimated time left. 
 
 ![Transaction status update](/assets/img/guides/two-way-peg-app/42-transaction-status-update.png)
 
@@ -54,7 +54,7 @@ Here, you can see the following information:
 **Amount in BTC:**
 - The amount a user is sending
 
-**Destination RSK address:**
+**Destination Rootstock address:**
 - The account address to receive the RBTC.
 
 **Refund Bitcoin address**
@@ -106,6 +106,8 @@ Paste transaction ID into search field and click on Search icon or press enter.
 This shows the status for the transaction.
 
 ![Blockcypher Transaction Status](/assets/img/guides/two-way-peg-app/50-blockcypher-transaction-status.png)
+
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)

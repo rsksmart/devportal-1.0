@@ -23,13 +23,13 @@ We will do the following:
 5. Querying the [status of a pegout](/guides/two-way-peg-app/pegout/status)
 6. [Troubleshooting and common errors](/guides/two-way-peg-app/pegout/pegout-common-errors/)
 
----
+----
 
 ## Next
 * Convert [BTC - RBTC using the 2 way peg app](/guides/two-way-peg-app/pegin/).
 * View [Advanced Operations](/guides/two-way-peg-app/advanced-operations/).
 
----
+----
 
 ## Resources
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
