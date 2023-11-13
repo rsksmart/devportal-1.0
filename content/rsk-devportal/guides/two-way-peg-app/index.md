@@ -1,55 +1,150 @@
 ---
 menu_order: 1100
 section_title: 2 Way Peg App
-menu_title: Table of Contents
-title: "Table of Contents | 2 way peg app Documentation"
+menu_title: Introduction
+title: "Introduction | 2 way peg app Documentation"
 description: "Welcome to the 2 way peg app documentation."
-tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
 
 ![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
 
-The 2 way peg app is a web application that fosters the interaction between the bitcoin blockchain and the RSK network for easier exchange of BTC and RBTC. It provides a way to visualize the status of transactions, communicate with a user wallet (both hardware wallets and software wallets), while also providing the highest possible level of security for transactions.
+The [2 way peg](https://app.2wp.rootstock.io/) is a protocol that converts BTC to RBTC and vice versa. It is secured by the [powpeg](/rsk/architecture/powpeg/), which is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. See the history of the [Powpeg](/rsk/architecture/powpeg/).
 
-In this guide, we are going to learn how to use the 2 way peg app, its [features](/guides/two-way-peg-app/overview#features), [benefits](/guides/two-way-peg-app/overview#why-use-the-2-way-peg-app), [how it works](/guides/two-way-peg-app/overview#how-it-works), how to perform peg-ins using [hardware](/guides/two-way-peg-app/getting-started#using-hardware-wallets) and [software](/guides/two-way-peg-app/getting-started#using-software-wallets) wallets, how to [view a transaction status](/guides/two-way-peg-app/getting-started#view-transaction-status), and a brief overview of its [design and architecture](/guides/two-way-peg-app/design-architecture). 
+To get started, see below for how to perform a **peg-in (BTC - RBTC)** or **peg-out (RBTC - BTC)** using the 2 way peg app.
 
-Here, you will also find instructions on how to perform [advanced operations](/guides/two-way-peg-app/advanced-operations/) on the 2 way peg app, including how to use different accounts, viewing advanced data, et cetera.
-
-## Table of Contents
-
-- [Overview](/guides/two-way-peg-app/overview/)
-    - [How it Works](/guides/two-way-peg-app/overview#how-it-works)
-    - [Features](/guides/two-way-peg-app/overview#features)
-    - [Why use the 2 way peg app?](/guides/two-way-peg-app/overview#why-use-the-2-way-peg-app)
-- [Getting Started](/guides/two-way-peg-app/getting-started/)
-    - [Requirements](/guides/two-way-peg-app/getting-started#requirements)
-    - [Supported Browsers](/guides/two-way-peg-app/getting-started#supported-browsers)
-    - [Supported Addresses](/guides/two-way-peg-app/getting-started#supported-addresses)
-    - [Supported Wallets](/guides/two-way-peg-app/getting-started#supported-wallets)
-    - [Install Apps](/guides/two-way-peg-app/getting-started#install-apps)
-    - [Getting Funds](/guides/two-way-peg-app/getting-started#getting-funds)
-        - [Mainnet](/guides/two-way-peg-app/getting-started#getting-mainnet-tokens)
-        - [Testnet](/guides/two-way-peg-app/getting-started#getting-testnet-tokens)
-    - [Using Hardware Wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets)
-        - [Ledger](/guides/two-way-peg-app/getting-started#ledger-hardware-wallet)
-            - [Performing a Peg-in Transaction with Ledger](/guides/two-way-peg-app/getting-started#performing-a-peg-in-transaction-with-ledger)
-        - [Trezor](/guides/two-way-peg-app/getting-started#trezor-hardware-wallet)
-            - [Performing a Peg-in Transaction with Trezor](/guides/two-way-peg-app/getting-started#performing-a-peg-in-transaction-with-trezor)
-    - [Using Software Wallets](/guides/two-way-peg-app/getting-started#using-software-wallets)
-    - [View Transaction Status](/guides/two-way-peg-app/getting-started#view-transaction-status)
-        - [Using Transaction Status Page](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page)
-        - [Using Blockcypher Explorer](/guides/two-way-peg-app/getting-started#using-blockcypher-explorer)
-- [Getting Started with Pegouts](/guides/two-way-peg-app/getting-started-pegout/)
-    - [Using Meta Mask](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-metamask)
-    - [Using Liquality](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-liquality)
-    - [Pegout common errors](/guides/two-way-peg-app/pegout-common-errors)
-    - [Using Ledger + Liquality](/guides/two-way-peg-app/getting-started-pegout#performing-a-peg-out-transaction-using-ledger-and-liquality)
-- [Advanced Operations](/guides/two-way-peg-app/advanced-operations/)
-    - [How to view a derived address](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address)
-    - [Account Selection](/guides/two-way-peg-app/advanced-operations#account-selection)
-    - [How to view advanced details](/guides/two-way-peg-app/advanced-operations#how-to-view-advanced-details)
-    - [Adjusting network fees](/guides/two-way-peg-app/advanced-operations#adjusting-network-fees)
-- [Design and Architecture](/guides/two-way-peg-app/design-architecture/)
-- [FAQs](/guides/two-way-peg-app/faqs/)
-- [Glossary](/guides/two-way-peg-app/glossary/)
+<div class="row features-list">
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+          <a href="/guides/two-way-peg-app/overview/">
+            <div class="icon rif h-100">
+                <div class="icon-cont text-center my-auto">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
+                </div>
+            </div>
+         </a>
+        <div class="content">
+            <a href="/guides/two-way-peg-app/overview/">
+                <div class="content-container">
+                    <p class="card-title rsk_green">Overview</p>
+                    <p class="card-title rsk_green">Learn how the 2 way peg app works, its features and benefits.</p>
+                </div>
+            </a>
+        <div class="btn-container">
+            <span></span>
+                <a class="green" href="/guides/two-way-peg-app/overview/">Read More</a>
+             </div>
+            </div>
+        </div>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card  pegin">
+          <a href="/guides/two-way-peg-app/pegin/">
+            <div class="icon rif h-100">
+                <div class="icon-cont text-center my-auto">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
+                </div>
+            </div>
+         </a>
+        <div class="content">
+            <a href="/guides/two-way-peg-app/pegin/">
+                <div class="content-container">
+                    <p class="card-title rsk_green">Performing a peg-in transaction</p>
+                    <p class="card-title rsk_green">Learn how to perform a peg-in (BTC-RBTC) transaction using the two way peg app.</p>
+                </div>
+            </a>
+        <div class="btn-container">
+            <span></span>
+                <a class="green" href="/guides/two-way-peg-app/pegin/">Read More</a>
+             </div>
+            </div>
+        </div>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card pegout">
+          <a href="/guides/two-way-peg-app/pegout/">
+            <div class="icon rif h-100">
+                <div class="icon-cont text-center my-auto">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
+                </div>
+            </div>
+         </a>
+        <div class="content">
+            <a href="/guides/two-way-peg-app/pegout/">
+                <div class="content-container">
+                    <p class="card-title rsk_green">Performing a peg-out transaction</p>
+                    <p class="card-title rsk_green">Learn how to perform a peg-out (RBTC-BTC) transaction using the two way peg app.</p>
+                </div>
+            </a>
+        <div class="btn-container">
+            <span></span>
+                <a class="green" href="/guides/two-way-peg-app/pegout/">Read More</a>
+             </div>
+            </div>
+    </div>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+          <a href="/guides/two-way-peg-app/advanced-operations/">
+            <div class="icon rif h-100">
+                <div class="icon-cont text-center my-auto">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
+                </div>
+            </div>
+         </a>
+        <div class="content">
+            <a href="/guides/two-way-peg-app/advanced-operations/">
+                <div class="content-container">
+                    <p class="card-title rsk_green">Advanced Operations</p>
+                    <p class="card-title rsk_green">See supported addresses, wallets, browsers, and the design and architecture of the two-way peg app.</p>
+                </div>
+            </a>
+        <div class="btn-container">
+            <span></span>
+                <a class="green" href="/guides/two-way-peg-app/advanced-operations/">Read More</a>
+             </div>
+            </div>
+    </div>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+          <a href="/guides/two-way-peg-app/faqs/">
+            <div class="icon rif h-100">
+                <div class="icon-cont text-center my-auto">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
+                </div>
+            </div>
+         </a>
+        <div class="content">
+            <a href="/guides/two-way-peg-app/faqs/">
+                <div class="content-container">
+                    <p class="card-title rsk_green">FAQs</p>
+                    <p class="card-title rsk_green">See frequently asked questions about the two way peg app.</p>
+                </div>
+            </a>
+        <div class="btn-container">
+            <span></span>
+                <a class="green" href="/guides/two-way-peg-app/faqs/">Read More</a>
+             </div>
+            </div>
+    </div>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+          <a href="/guides/two-way-peg-app/glossary/">
+            <div class="icon rif h-100">
+                <div class="icon-cont text-center my-auto">
+                    <img src="/assets/img/guides/two-way-peg-app/logo.svg" alt="rootstock icon">
+                </div>
+            </div>
+         </a>
+        <div class="content">
+            <a href="/guides/two-way-peg-app/glossary/">
+                <div class="content-container">
+                    <p class="card-title rsk_green">Glossary of terms</p>
+                    <p class="card-title rsk_green">See a glossary of terms used by the two way peg app.</p>
+                </div>
+            </a>
+        <div class="btn-container">
+            <span></span>
+                <a class="green" href="/guides/two-way-peg-app/glossary/">Read More</a>
+             </div>
+            </div>
+    </div>
+</div>

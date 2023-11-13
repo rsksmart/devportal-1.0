@@ -1,13 +1,13 @@
 ---
-menu_order: 500
+menu_order: 1300
 menu_title: Design and Architecture
 title: "Design and Architecture | 2 way peg app Documentation"
-description: "Welcome to the 2 way peg app documentation."
-tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, guide, setup, integrate, use
+description: "Two way peg design and architecture."
+tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
 
-The [2 way peg app](https://2wp-app.rsk.co/) is a protocol to convert BTC to RBTC and vice versa. It is secured by the powpeg, which is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. See the history of the [Powpeg](/rsk/architecture/flyover).
+The [2 way peg app](https://app.2wp.rootstock.io/) is a protocol to convert BTC to RBTC and vice versa. It is secured by the powpeg, which is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. See the history of the [Powpeg](/rsk/architecture/flyover).
 
 In this section, we will cover the design and architecture used in building the 2 way peg application. It comprises of a [web interface](#high-level) built with Vue.js, a [backend application](#components) built with Node.js, and made to run via [containers](#containers).
 
@@ -31,16 +31,12 @@ All applications are available to run using [Docker](https://www.docker.com/) an
 
 ![Containers Diagram](/assets/img/guides/two-way-peg-app/59-containers-diagram.png)
 
-## Next
-
-Be sure to check out our next article in this guide,
-on [Frequently Asked Questions about the 2 way peg app](/guides/two-way-peg-app/faqs/)
-
 ----
 
 ## Resources
-- 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
-- 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-- How to get [RBTC using RSK’s built in Powpeg](https://developers.rsk.co/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
-- [RSK Testnet Faucet](https://faucet.rsk.co/)
-- [Get RBTC using Exchanges](https://developers.rsk.co/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
+* 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
+* How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+* [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
+* [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
