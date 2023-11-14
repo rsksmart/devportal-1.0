@@ -11,7 +11,7 @@ interface Props {
 
 const BeforeContent = ({ className }: Props) => {
   return (
-    <Marquee className={classnames('before-content', className)} direction="left">      
+    <Marquee className={classnames('before-content', className)} direction="left" pauseOnHover>      
       {/* &nbsp;     
       <ComponentOne />
       &nbsp;
