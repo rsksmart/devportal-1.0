@@ -1,8 +1,8 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import classnames from "classnames";
-import ComponentOne from "./component-one";
-import ComponentTwo from "./component-two";
+// import ComponentOne from "./component-one";
+// import ComponentTwo from "./component-two";
 import ComponentThree from "./component-three";
 
 interface Props {
@@ -11,7 +11,7 @@ interface Props {
 
 const BeforeContent = ({ className }: Props) => {
   return (
-    <Marquee className={classnames('before-content', className)} direction="right" pauseOnHover>      
+    <Marquee className={classnames('before-content', className)} direction="left" pauseOnHover>      
       {/* &nbsp;     
       <ComponentOne />
       &nbsp;
