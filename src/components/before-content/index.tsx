@@ -12,11 +12,11 @@ interface Props {
 const BeforeContent = ({ className }: Props) => {
   return (
     <Marquee className={classnames('before-content', className)} direction="right" pauseOnHover>      
-      &nbsp;     
+      {/* &nbsp;     
       <ComponentOne />
       &nbsp;
       <ComponentTwo />
-      &nbsp;
+      &nbsp; */}
       <ComponentThree />
     </Marquee>
   );

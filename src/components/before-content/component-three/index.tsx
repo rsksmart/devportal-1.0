@@ -2,8 +2,8 @@ import React from "react";
 
 const ComponentThree = () => {
     return(
-        <a href="https://blog.rootstock.io/noticia/rsk-fingerroot-5-3-0-is-here/" target="_blank" rel="noopener noreferrer">  📢 RSK Fingerroot 5.3.0 is here. 
-      This version comes with improved client side JSON RPC, performance improvements, bug fixes and more. Read more!
+        <a href="https://iovlabs.typeform.com/devportalsurvey" target="_blank" rel="noopener noreferrer">  Help us make the DevPortal best in class with your input.
+        Take the Developer Portal Survey Now! &nbsp;
       </a>
     )
 }
