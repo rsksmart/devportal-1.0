@@ -7,7 +7,7 @@ description: "What is RNS, and how to use the testnet"
 tags: rns, guide, rns-user-guide
 ---
 
-RIF Name Service is a decentralized domain service built on top of Rootstock (RSK) blockchain. One of the ways to operate with the service is through the application known as the manager. One of the ways to operate with the service is through the application known as the manager, which allows registering and managing domains from the internet browser using an extension wallet. This guide details each operation available in the [RNS manager](https://manager.rns.rifos.org).
+RIF Name Service is a decentralized domain service built on top of Rootstock (RSK) blockchain. One of the ways to operate with the service is through the application known as the manager, which allows registering and managing domains from the internet browser using an extension wallet. This guide details each operation available in the [RNS manager](https://manager.rns.rifos.org).
 
 
 - [Setup](/rif/rns/guide/setup/)
