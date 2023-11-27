@@ -14,13 +14,13 @@ Rootstock’s (RSK) 2-way peg protocol, called “the **Powpeg**”, has matured
 
 > - The 2 Way Peg Application is now available on [Testnet](https://2wp-app.testnet.rsk.co/) and [Mainnet](https://2wp-app.rsk.co/). 
 > - For general information about the design and architecture, how to perform a peg-in transaction using Ledger and Trezor, Frequently asked questions and advanced operations you can perform on the 2 way peg app, please refer to the [2 way peg app user guide](/guides/two-way-peg-app/).
-> - See the [Powpeg HSM Firmware Attestation](#powpeg-hsm-firmware-attestation)
+> - Get information on the signatories and attestion in the [Powpeg HSM Firmware Attestation](#powpeg-hsm-firmware-attestation) section.
 
 ## The History of the Powpeg
 
 Two blockchains with distinct block formats can communicate in a fully decentralized manner if each one can evaluate the other blockchain’s consensus rules, and if cross-chain messages are not censored for long periods of time. Currently, only platforms with “Turing-complete” smart contracts can evaluate other blockchain consensus rules. Bitcoin, for better or for worse, lacks the ability to unlock coins over arbitrary predicates. Therefore, when Rootstock was created, it had to use the only existing technology in Bitcoin to distribute trust among parties: multi-signatures. With a multi-signature it is possible to give a group of notaries the task to protect locked bitcoins, tolerating a certain amount of malicious, hacked or unavailable parties.
 
-When the Rootstock genesis block was mined, the Rootstock Federation, an autonomous set of functionaries aimed at protecting the multi-signature, was born. The federation was controlled by the Rootstock Bridge, an unstoppable smart-contract running on Rootstock, and has been successfully working since its creation. In 2020 the Rootstock community decided it was time for the Rootstock peg to grow, both in security and in censorship resistance, evolving from a federated system to the Powpeg. The Powpeg is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. The set of functionaries still exists, but their role is mainly to keep their hardware and nodes connected and alive at all times; they do not directly control the Bitcoin multisig private keys.
+When the Rootstock genesis block was mined, the Rootstock Federation, an autonomous set of functionaries aimed at protecting the multi-signature, was born. The federation was controlled by the Rootstock Bridge, an unstoppable smart-contract running on Rootstock, and has been successfully working since its creation. In 2020 the Rootstock community decided it was time for the Rootstock peg to grow, both in security and in censorship resistance, evolving from a federated system to the Powpeg. The Powpeg is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. The set of functionaries still exists, but their role is mainly to keep their hardware and nodes connected and alive at all times; they do not directly control the Bitcoin multisig private keys. See [PowPeg HSM Firmware Attestation](#firmware-attestation)
 
 ## The Powpeg in Rootstock
 
@@ -96,12 +96,6 @@ The Rootstock Powpeg is also unique in the limited set of responsibilities deleg
 
 Regarding the complete shutdown of the Powpeg by a single government, it would be very difficult to pull off as the functionaries are geographically distributed all over the world. To protect from powerful worldwide coordinated attacks or attacks coming from three-letter agencies,Rootstock plans to add an emergency recovery multisig time-lock to activate one year after the Powpeg is proven dismantled. A shutdown attempt would only make Rootstock stronger and more resilient to subsequent attacks, as a new Rootstock Powpeg would rapidly expand and decentralize itself into a hundred individual users around the world, each running an PowHSM device and a Powpeg node over Tor.
 
-## Conclusion
-
-The Rootstock peg has matured from a federation to a Powpeg. As the peg grows over time, more bitcoins are being moved into Rootstock.
-
-Developers can find a unique opportunity to build their dApps on our secure and efficient money vault. Compared to alternatives, the Powpeg combines strong security based on layered protections, with maximum decentralization within the constraints established by the Bitcoin scripting system.
-
 ## Powpeg HSM Firmware Attestation
 
 To verify the Powpeg nodes, follow the HSM firmware attestation process using the steps below:
@@ -113,3 +107,18 @@ To verify the Powpeg nodes, follow the HSM firmware attestation process using th
 ### Powpeg HSM Firmware Attestation - pNetwork
 
 <iframe class="w-100 rounded-4" src="https://dev.rootstock.io/assets/rsk/architecture/powpeg-hsm-attestation/pnetwork.html" title="pNetwork" height="400"></iframe>
+
+### Frequently Asked Questions
+
+**Q: What is the multisig scheme for the powHSM? It is a M of N multisig. 
+What is M and what is N?**
+
+> - A: The best way to get this information is by querying the Bridge directly, since the number of members of the PowPeg may change after a PowPeg composition change. 
+> - You can use the following methods to query the bridge: `getFederationSize`, `getFederationThreshold`. 
+> - Note: By consensus the required amount of signers (M) will always be half plus one the total amount of pegnatories  `M = N / 2 + 1`. See the signatories and attestation information in [PowPeg HSM Firmware Attestation](#firmware-attestation).
+
+## Conclusion
+
+The Rootstock peg has matured from a federation to a Powpeg. As the peg grows over time, more bitcoins are being moved into Rootstock.
+
+Developers can find a unique opportunity to build their dApps on our secure and efficient money vault. Compared to alternatives, the Powpeg combines strong security based on layered protections, with maximum decentralization within the constraints established by the Bitcoin scripting system.
