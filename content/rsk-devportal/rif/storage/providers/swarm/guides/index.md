@@ -1,5 +1,5 @@
 ---
-menu_order: 600
+# menu_order: 600
 section_title: Guides
 menu_title: Connecting to Testnet
 layout: rsk

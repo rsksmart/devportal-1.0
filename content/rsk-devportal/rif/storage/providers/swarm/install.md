@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Installing
 layout: rsk
 title: Installing Swarm

@@ -1,5 +1,5 @@
 ---
-menu_order: 600
+# menu_order: 600
 menu_title: Public Repositories
 layout: rsk
 title: RIF Marketplace Public repositories

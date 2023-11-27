@@ -1,5 +1,5 @@
 ---
-menu_order: 700
+# menu_order: 700
 menu_title: Confirm pending transaction (on-chain and off-chain)
 layout: rsk
 title: RIF Multisig SDK - transaction confirmation

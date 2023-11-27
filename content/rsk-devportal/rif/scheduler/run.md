@@ -1,5 +1,5 @@
 ---
-menu_order: 500
+# menu_order: 500
 menu_title: Run an instance
 layout: rsk
 title: RIF Scheduler - Run your own scheduler

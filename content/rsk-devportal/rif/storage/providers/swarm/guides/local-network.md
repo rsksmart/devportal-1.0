@@ -1,5 +1,5 @@
 ---
-menu_order: 200
+# menu_order: 200
 menu_title: Local Network
 layout: rsk
 title: Running a local Swarm network

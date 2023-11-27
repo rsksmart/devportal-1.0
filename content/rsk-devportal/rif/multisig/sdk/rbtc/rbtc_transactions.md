@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Create RBTC Transactions
 layout: rsk
 title: RIF Multisig SDK - Send RBTC

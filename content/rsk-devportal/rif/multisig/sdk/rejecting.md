@@ -1,5 +1,5 @@
 ---
-menu_order: 800
+# menu_order: 800
 menu_title: Reject pending transaction
 layout: rsk
 title: RIF Multisig SDK - rejecting

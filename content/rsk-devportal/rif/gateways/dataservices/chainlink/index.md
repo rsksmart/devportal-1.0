@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 section_title: Chainlink
 menu_title: Table of contents
 layout: rsk

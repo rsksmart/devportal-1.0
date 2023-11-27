@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Change Owners and Threshold
 layout: rsk
 title: RIF Multisig SDK - policies

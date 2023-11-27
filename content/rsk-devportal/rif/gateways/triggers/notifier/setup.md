@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Setup
 layout: rsk
 title: RIF Notifier Setup and Install

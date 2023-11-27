@@ -1,5 +1,5 @@
 ---
-menu_order: 700
+# menu_order: 700
 menu_title: Contracts
 layout: rsk
 title: RIF Multisig Architecture - Safe Contracts

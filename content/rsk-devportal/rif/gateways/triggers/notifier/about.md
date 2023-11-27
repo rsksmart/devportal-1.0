@@ -1,5 +1,5 @@
 ---
-menu_order: 200
+# menu_order: 200
 menu_title: About Notifier
 layout: rsk
 title: RIF Notifier

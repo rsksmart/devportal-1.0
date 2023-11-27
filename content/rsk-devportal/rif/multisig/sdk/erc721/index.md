@@ -1,5 +1,5 @@
 ---
-menu_order: 510
+# menu_order: 510
 menu_title: About
 section_title: ERC721 tokens (collectibles)
 layout: rsk
