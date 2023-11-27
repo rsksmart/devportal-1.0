@@ -32,9 +32,9 @@ RIF Gateways develops tools and technologies to allow decentralized applications
 
 Learn more about [RIF Gateways](../rif/gateways/)
 
-#### RIF OS White Paper
+#### RIF White Paper
 
-To understand the general vision behind RIF OS, read the [RIF OS White Paper](https://docs.rifos.org/rif-whitepaper-en.pdf).
+To understand the general vision behind RIF OS, read the [RIF White Paper](https://rif.technology/static/add903ce229a6f45a606cd78b028cf9e/RIF-whitepaper-V2.pdf).
 
 #### RIF FAQ
 
