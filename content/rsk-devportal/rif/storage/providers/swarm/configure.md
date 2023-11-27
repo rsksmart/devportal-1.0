@@ -1,5 +1,5 @@
 ---
-menu_order: 500
+# menu_order: 500
 menu_title: Configure
 layout: rsk
 title: Running Configurations for Swarm

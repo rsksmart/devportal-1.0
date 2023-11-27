@@ -1,5 +1,5 @@
 ---
-menu_order: 400
+# menu_order: 400
 menu_title: Getting Started
 layout: rsk
 title: "Getting Started - RIF Marketplace User Guide"

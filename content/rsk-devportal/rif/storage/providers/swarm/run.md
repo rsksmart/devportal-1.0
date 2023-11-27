@@ -1,5 +1,5 @@
 ---
-menu_order: 400
+# menu_order: 400
 menu_title: Run
 layout: rsk
 title: Running Swarm for the first time

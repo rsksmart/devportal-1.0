@@ -1,5 +1,5 @@
 ---
-menu_order: 200
+# menu_order: 200
 menu_title: Receive RBTC (gas)
 layout: rsk
 title: RIF Multisig SDK - Receive RBTC

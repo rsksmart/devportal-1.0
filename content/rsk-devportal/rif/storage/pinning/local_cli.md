@@ -1,5 +1,5 @@
 ---
-menu_order: 200
+# menu_order: 200
 menu_title: Run Local Using CLI
 layout: rsk
 title: RIF Storage Pinning service - Local setup with storage dev CLI

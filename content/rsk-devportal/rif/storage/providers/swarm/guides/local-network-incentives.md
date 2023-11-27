@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Local Network with Incentives
 layout: rsk
 title: Running a local Swarm network on Rootstock (RSK)

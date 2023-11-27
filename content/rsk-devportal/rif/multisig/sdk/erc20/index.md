@@ -1,5 +1,5 @@
 ---
-menu_order: 500
+# menu_order: 500
 menu_title: About
 section_title: ERC20 tokens (including RIF tokens)
 layout: rsk

@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Create ERC20 Transactions
 layout: rsk
 title: RIF Multisig SDK - ERC20 Transactions

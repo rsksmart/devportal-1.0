@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 section_title: Libraries
 menu_title: RIF Storage JS
 layout: rsk

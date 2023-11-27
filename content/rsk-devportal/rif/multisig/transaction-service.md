@@ -1,5 +1,5 @@
 ---
-menu_order: 600
+# menu_order: 600
 menu_title: Transaction Service
 layout: rsk
 title: RIF Multisig - Transaction Service

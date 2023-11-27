@@ -1,7 +1,7 @@
 ---
 menu_title: Web client SDK
 title: Web client SDK
-menu_order: 200
+# menu_order: 200
 layout: rsk
 tags: rlogin, rif, rif-identity, data-vault, architecture, libraries, DID, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---

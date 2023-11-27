@@ -1,5 +1,5 @@
 ---
-menu_order: 200
+# menu_order: 200
 section_title: Swarm
 menu_title: About Swarm
 layout: rsk

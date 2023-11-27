@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 section_title: IPFS
 menu_title: About IPFS
 layout: rsk

@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Architecture
 layout: rsk
 title: RIF Marketplace Architecture

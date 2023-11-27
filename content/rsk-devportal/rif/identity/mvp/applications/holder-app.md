@@ -1,7 +1,7 @@
 ---
 menu_title: Citizens App
 title: Citizens App
-menu_order: 200
+# menu_order: 200
 layout: rsk
 tags: rif, rif-identity, libraries, infrastructure, mobile, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
