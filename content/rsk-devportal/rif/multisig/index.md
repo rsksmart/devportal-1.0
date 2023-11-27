@@ -1,5 +1,5 @@
 ---
-menu_order: 1000
+# menu_order: 1000
 section_title: Multisig
 menu_title: Overview
 layout: rsk

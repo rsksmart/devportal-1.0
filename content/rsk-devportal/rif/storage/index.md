@@ -1,5 +1,5 @@
 ---
-menu_order: 600
+# menu_order: 600
 section_title: Storage
 menu_title: About RIF Storage
 layout: rsk
