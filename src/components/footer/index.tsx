@@ -152,7 +152,7 @@ const Footer = () => {
                   </defs>
                 </svg>
               </a>
-              <a className="me-5 zg-social-icon" aria-label="Facebook" href="https://www.facebook.com/RSKsmart/"
+              <a className="me-5 zg-social-icon" aria-label="Facebook" href="https://www.facebook.com/rootstock.io/"
                  target="_blank"
                  rel="noopener noreferrer">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
