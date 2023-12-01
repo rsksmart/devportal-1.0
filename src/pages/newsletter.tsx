@@ -150,4 +150,4 @@ const NewsletterPage = () => {
 
 export default NewsletterPage;
 
-export const Head: HeadFC = () => <title>RSK Developers Portal - Newsletter</title>
+export const Head: HeadFC = () => <title>Rootstock Developers Portal - Newsletter</title>

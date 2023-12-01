@@ -86,7 +86,7 @@ Note: This is useful as a last resort when your local project seems to have [iss
 To run tests that check whether there are any errors in the site:
 
 ```bash
-??
+TODO
 ```
 
 This runs tests that check whether there are any errors in the site.

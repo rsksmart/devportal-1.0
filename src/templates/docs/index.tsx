@@ -79,7 +79,7 @@ export const Head: HeadFC = ({pageContext}) => {
   return (
     <>
       {/*@ts-ignore*/}
-      <Seo title={`RSK Devportal - ${pageContext.title}`}>
+      <Seo title={`Rootstock Devportal - ${pageContext.title}`}>
         <link href="/assets/css/owl.carousel.min.css" rel="stylesheet"/>
         <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet"/>
         <link href="/assets/css/code.css" rel="stylesheet"/>
