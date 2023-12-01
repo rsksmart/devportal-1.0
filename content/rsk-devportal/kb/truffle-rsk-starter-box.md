@@ -1,8 +1,8 @@
 ---
 menu_order: 3400
-menu_title: Truffle Boxes with RSK
+menu_title: Truffle RSK Starter Box
 layout: rsk
-title: Using Truffle box rsk-starter-box
+title: Using Truffle rsk-starter-box
 tags: tutorial, rsk, truffle, truffle-box
 description: "How to use the Truffle box rsk-starter-box, which comes with everything you need to start using Truffle on RSK networks. It includes network configurations for Mainnet, Testnet and the SimpleStorage contract as an example to deploy."
 render_features: "custom-terminals"
