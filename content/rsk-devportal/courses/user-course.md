@@ -17,9 +17,10 @@ This course is for a technical user, but does not require or involve any program
 
 ... and it is completely free!
 
-<a href="https://rsk.thinkific.com/courses/blockchain-user/" target="_blank">
-  <button class="orange-button">Become a Rootstock User</button>
-</a>
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="https://rsk.thinkific.com/courses/blockchain-user/">Become a Rootstock User</a>
+</div>
 
 ## Who should take the course?
 

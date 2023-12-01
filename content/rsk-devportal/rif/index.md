@@ -2,9 +2,9 @@
 layout: rsk
 menu_order: 3
 section_title: RIF
-menu_title: About RSK Infrastructure Framework
-title: RSK Infrastructure Framework
-tags: rif, rif-storage, rif-lumino, rns, rif-identity, DID, ipfs, swarm, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
+menu_title: About RIF
+title: Rootstock Infrastructure Framework
+tags: rif, rootstock, rif-rollup, rif-relay, rns, rif-wallet, storage, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 ## RIF Services
@@ -19,18 +19,59 @@ RIF OS Protocols enable broad interoperability and faster time-to-deployment, an
   <video style="width: 100%" controls src="https://cdn.rifos.org/home_video.mp4"></video>
 </div>
 
+#### RIF Wallet
+
+RIF Wallet provides a full stack library of functionalities that allow you to easily integrate crypto lending, saving and paying services into your existing product or launch your own smart wallet.
+
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="../rif/">Coming Soon</a>
+</div>
 
 #### RIF Name Service
 
 RNS is a decentralized service that allows users to have a readable domain or alias. It can be used to identify other personal resources, such as payment or communication addresses.
 
-Learn more about [RIF Name Service](../rif/rns/)
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="../rif/rns/">Create a domain or alias</a>
+</div>
 
-### RIF Gateways
+#### RIF Rollup
 
-RIF Gateways develops tools and technologies to allow decentralized applications to seamlessly connect to the external world. 
+RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology. Its current functionality and scope includes low gas transfers of RBTC and ERC20 tokens on the Rootstock network.
 
-Learn more about [RIF Gateways](../rif/gateways/)
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="../rif/rollup">Learn more about RIF Rollup</a>
+</div>
+
+#### rLogin
+
+Learn how to integrate rLogin into your app and allow users to choose their favourite wallets to log in. With a single tool, you will get connected to their wallet using an API compatible with Metamask and other wallets.
+
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="../rif/rlogin/">Get started</a>
+</div>
+
+#### RIF Flyover
+
+The Flyover protocol performs fast peg-ins. It provides a new feature to transfer BTC from Bitcoin directly to a smart contract or EOA in RSK faster than the regular [peg in](../rsk/architecture/powpeg/) protocol.
+
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="../guides/flyover/">Learn more about RIF Flyover</a>
+</div>
+
+#### RIF Relay
+
+RIF Relay is a secure sponsored transaction system that enables users to pay the transaction fees using ERC-20 tokens. This enables end users to transact entirely using one asset instead of having to manage a separate asset for gas.
+
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="../rif/relay/">Integrate RIF Relay</a>
+</div>
 
 #### RIF White Paper
 
