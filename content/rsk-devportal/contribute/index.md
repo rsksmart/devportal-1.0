@@ -6,7 +6,7 @@ menu_title: Contribute
 section_title: Contribute
 ---
 
-The RSK stack is open-source, if you are interested in colaborate, follow these links:
+The Rootstock stack is open-source, if you are interested in colaborate, follow these links:
 
 - [RSKj (node)](/rsk/node/contribute)
 - [RNS](https://github.com/rnsdomains/rnsips)
