@@ -59,8 +59,8 @@ const links: NavLink[] = [
     label: 'Learn',
     children: [
       {
-        label: 'Webinars',
-        link: '/webinars/'
+        label: 'Courses',
+        link: '/courses/'
       }
     ]
   },
@@ -78,7 +78,7 @@ const links: NavLink[] = [
       },
       {
         label: 'RIF Name Service',
-        link: 'https://www.rifos.org/nameservice/index',
+        link: 'https://rif.technology/solutions/#rns',
         external: true
       },
       {
