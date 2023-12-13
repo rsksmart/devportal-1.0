@@ -34,7 +34,7 @@ More information about Docker install [here](https://docs.docker.com/install/).
 
 ## Install RSKj Using Docker
 
-To install an RSK node using Docker, download the RSKj Dockerfiles and `supervisord.conf` from the [artifacts repo](https://github.com/rsksmart/artifacts/tree/master/Dockerfiles/RSK-Node)
+To install an RSK node using Docker, download the RSKj Dockerfiles and `supervisord.conf` from the [artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/5.3.0-fingerroot)
 or pull the image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj).
 
 Inside the artifacts repo, you can choose which ***type of*** node you are going to install:
@@ -43,7 +43,71 @@ Inside the artifacts repo, you can choose which ***type of*** node you are going
 * A node connected to the public RSK Testnet: `Dockerfile.TestNet`
 * A node connected to a private RegTest network: `Dockerfile.RegTest`
 
-#### Install the node using Docker containers (Intel Chips)
+Note that If you get the error:
+    
+    ```jsx
+     => ERROR [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.  0.0s
+      ------
+       > [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf:
+         ------
+           failed to compute cache key: "/supervisord.conf" not found: not found
+            ```
+            
+Ensure that supervisord.conf is in the same folder as the dockerfile.
+    
+When the build finishes, you should see an output similar to this:
+    
+    ```jsx
+    [+] Building 158.0s (11/11) FINISHED                                          
+    => [internal] load build definition from Dockerfile.RegTest               0.0s
+     => => transferring dockerfile: 293B
+      ....
+       => => exporting layers                                                    3.8s 
+        => => writing image sha256:d73739affdbe3f82a8ba9c686d34c04f48ac510568522  0.0s 
+        => => naming to docker.io/library/regtest                                 0.0s
+         Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+    ```
+Now you have a container ready to run Rootstock!
+    
+
+To run the RegTest node, you should execute:
+
+Pull the RSKj Docker Image
+
+```jsx
+docker pull rsksmart/rskj
+```
+
+Run the Node
+
+```jsx
+docker run -d --name rsk-node -p 4444:4444 -p 50505:50505 rsksmart/rskj node --regtest
+```
+
+If successful, the node should be running.
+
+Interacting with the Node
+
+```jsx
+curl -X POST -H "Content-Type: application/json" --data "{\"jsonrpc\":\"2.0\",\"method\":\"net_version\",\"params\":[],\"id\":1}" http://127.0.0.1:4444
+```
+
+---
+
+---
+
+You should see the below output:
+
+```bash
+{"jsonrpc":"2.0","id":1,"result":"33"}
+```
+
+To check that the node running, see section on Using the [JAR file](https://dev.rootstock.io/rsk/node/install/operating-systems/java/#check-the-rpc)
+
+Now, you have successfully setup a Rootstock node using the docker image.
+
+
+### Install the node using Docker containers (Intel Chips)
 
 Build the container by running any of the following commands:
 
