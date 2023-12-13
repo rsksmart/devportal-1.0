@@ -50,7 +50,7 @@ Go to chrome (manage extensions)[chrome://extensions/] and active your Liquality
 
 You can either enter it manually or click 'Use max available balance' if you want to convert all the rbtc you have. To perform a pegin the minimum amount allowed is 0,005 BTC.
 ​
-![Rbtc amount to send input](/assets/img/guides/two-way-peg-app/liquality/8.png)
+![Rbtc-amount-to-send-input](/assets/img/guides/two-way-peg-app/liquality/8.png)
 
 **Step 2: Verify your RBTC destination address**
 
