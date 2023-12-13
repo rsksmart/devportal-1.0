@@ -18,7 +18,30 @@ In order to run RSKj on Apple M1/M2 machines using x86 based software, make sure
 
 The Fat JAR or Uber JAR can be [downloaded](https://github.com/rsksmart/rskj/releases) or compiled (in a [reproducible way](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [not](/rsk/node/contribute)).
 
-To run the node:
+Create the directory for the node:
+
+```jsx
+mkdir rskj-node-jar
+cd ~/rskj-node-jar
+```
+
+Move or copy the just downloaded jar file to the directory
+
+```jsx
+mv ~/Downloads/rskj-core-5.3.0-FINGERROOT-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
+```
+
+Create another directory inside `~/rskj-node-jar/config`
+
+```jsx
+mkdir config
+```
+
+- Download this config file: [https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf](https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf)
+- Copy or move the `node.conf` file just downloaded into the config directory
+- CD into the folder containing the jar file
+
+### To run the node:
 
 [](#top "multiple-terminals")
 - Linux, Mac OSX
@@ -30,7 +53,7 @@ To run the node:
   C:\> java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
   ```
 
-Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-5.2.0-FINGERROOT-all.jar`
+Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-5.3.0-FINGERROOT-all.jar`
 
 ## Using import sync
 
@@ -71,7 +94,7 @@ to change the memory allocated to the process:
   C:\> java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
   ```
 
-Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-5.2.0-FINGERROOT-all.jar`
+Replace `<PATH-TO-THE-RSKJ-JAR>` with your path to the JAR file. As an example: `C:/RskjCode/rskj-core-5.3.0-FINGERROOT-all.jar`
 
 For further reference, check out the
 [`database.import` configuration setting](/rsk/node/configure/reference/#databaseimport).
@@ -80,21 +103,42 @@ For further reference, check out the
 
 If you see no output, it means that the node is running. To confirm, you can open a new console tab (it is important you do not close this tab or interrupt the process) and issue a request to the node's RPC HTTP server. This is an example using cURL:
 
+
 [](#top "multiple-terminals")
 - Linux, Mac OSX
   ```shell
-  $ curl http://localhost:4444/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+  $ curl http://localhost:4444 \  -s \   -X POST \    -H "Content-Type: application/json" \     --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
   ```
 - Windows
   ```windows-command-prompt
-  C:\> curl http://localhost:4444/ -X POST -H "Content-Type: application/json" --data '{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}'
+    C:\> curl http://localhost:4444 \   -s \   -X POST \   -H "Content-Type: application/json" \    --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
   ```
 
-The response should look similar to:
+It should output a response like this:
 
+```shell
+{"jsonrpc":"2.0","id":67,"result":"RskJ/5.3.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
 ```
-{"jsonrpc":"2.0","id":1,"result":"0xfc0"}
+
+Check the blockNumber:
+
+[](#top "multiple-terminals")
+- Linux, Mac OSX
+  ```shell
+  $ curl -X POST http://localhost:4444/ \ -H "Content-Type: application/json" \ --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
+  ```
+- Windows
+  ```windows-command-prompt
+    C:\> curl -X POST http://localhost:4444/ \ -H "Content-Type: application/json" \ --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
+  ```
+
+You should see the below output:
+
+```jsx
+{"jsonrpc":"2.0","id":1,"result":"0x0"}
 ```
+
+Now, you have successfully setup a Rootstock node using the jar file.
 
 ... where the `result` property is the number of the latest block that has been synced (in hexadecimal).
 
@@ -106,7 +150,7 @@ If you want to change the network use these commands:
 - Testnet: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --testnet`
 - Regtest: `java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest`
 
-Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-5.2.0-FINGERROOT-all.jar`
+Replace `<PATH-TO-THE-RSKJ-FATJAR>` with your path to the jar file. As an example: `C:/RskjCode/rskj-core-5.3.0-FINGERROOT-all.jar`
 
 ## Video
 
