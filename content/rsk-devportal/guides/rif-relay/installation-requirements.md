@@ -11,6 +11,20 @@ permalink: /guides/rif-relay/installation-requirements/
 
 To have the RIF Relay System running locally there are some tools that are required. All of these tools are open source and have their own support page. The functionality of RIF Relay does not depend on these technologies and could be updated or replaced, if necessary. 
 
+### Sotware and Hardware Requirements
+
+#### Hardware Requirements
+
+**Apple Silicon Mac:** A Mac with an Apple M1 chip (or later models) is required for this scenario.
+
+#### Software Requirements
+
+-	**macOS:** A recent version of macOS that supports both Apple Silicon (ARM architecture) and Rosetta 2 translation for running x86_64 applications.
+-	**Java Development Kit (JDK):** ARM-compatible JDK: An ARM-compatible version of Java (like OpenJDK for ARM).
+-	**x86_64 JDK:** For compatibility with specific libraries or applications not yet available for ARM, an x86_64 version of Java is also needed. This can be installed using Homebrew under Rosetta 2.
+-	**Rosetta 2:** This translation layer enables x86_64 applications to run on Apple Silicon. It's crucial for running software that is yet to be optimized for ARM architecture.
+-	**Homebrew:** This is a package manager for macOS used for installing various software, including the x86_64 version of Java. Depending on the software requirements, you might need both the ARM and x86_64 versions of Homebrew.
+
 ### RSK Node
 
 You need to have a running RSK node version [RSKj](https://github.com/rsksmart/rskj/releases). It is recommended to use the latest released version.
@@ -21,13 +35,13 @@ When running a local RSKj node, we can configure the node to connect to a specif
 
 ### Node & NPM
 
-The `Node` version used is `v16`. 
+The `Node` version used is `v18`. 
 
 We recommend the use of [`nvm`](https://github.com/nvm-sh/nvm). After the installation process you can execute the following commands to use node version 16.
 
 ```
-nvm install 16
-nvm use  16
+nvm install 18
+nvm use  18
 ```
 
 If you choose to use node without `nvm`, you can find the installation instructions at Node's [website](https://nodejs.org/en/). 
