@@ -11,94 +11,65 @@ This guide provides detailed instructions on how to set up a Rootstock node usin
 
 ### Using the JAR file
 
-To run the Rootstock node using the [JAR file](https://github.com/rsksmart/rskj/releases), see the instructions for how to **[Install the node using a JAR file](https://dev.rootstock.io/rsk/node/install/operating-systems/java/).**
+For details on how to run the Rootstock node using the [JAR file](https://github.com/rsksmart/rskj/releases), see the instructions for how to **[Install the node using a JAR file](https://dev.rootstock.io/rsk/node/install/operating-systems/java/).**
 
-- Create the directory for the node:
-
-```jsx
-mkdir rskj-node-jar
-cd ~/rskj-node-jar
-```
-
-- Move or copy the just downloaded jar file to the directory
-
-```jsx
-mv ~/Downloads/rskj-core-5.3.0-FINGERROOT-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
-```
-
-- Create another directory inside `~/rskj-node-jar/config`
-
-```jsx
-mkdir config
-```
-
-- Download this config file: [https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf](https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf)
-- Copy or move the `node.conf` file just downloaded into the config directory
-- CD into the folder containing the jar file
-
-Run the following command in the terminal:
-
-```bash
-arch -x86_64 /usr/local/opt/openjdk@8/bin/java -Drsk.conf.file=./config/node.conf -cp ./rskj-core-5.3.0-FINGERROOT-all.jar co.rsk.Start --regtest
-```
-
-OR
-
-```jsx
-java -Drsk.conf.file=./config/node.conf \
-cp ./<PATH-TO-JAR-FILE> co.rsk.Start \
--regtest
-```
-
----
-
-Leave the terminal running.
-
-Now let’s check that the node is running
-
-Open another terminal and enter the command below:
-
-```jsx
-curl http://localhost:4444 \
- -s \
- -X POST \
- -H "Content-Type: application/json" \
- --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
-```
-
-It should output a response like this:
-
-```jsx
-{"jsonrpc":"2.0","id":67,"result":"RskJ/5.3.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
-```
-
-Check the blockNumber:
-
-```jsx
-curl -X POST http://localhost:4444/ \
--H "Content-Type: application/json" \
---data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
-```
-
-You should see the below output:
-
-```jsx
-{"jsonrpc":"2.0","id":1,"result":"0x0"}
-```
-
+1. Create the directory for the node.
+   ```jsx
+   mkdir rskj-node-jar
+   cd ~/rskj-node-jar
+   ```
+1. Move or copy the just downloaded jar file to the directory.
+   ```jsx
+   mv ~/Downloads/rskj-core-5.3.0-FINGERROOT-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
+   ```
+1. Create another directory inside `~/rskj-node-jar/config`
+   ```jsx
+   mkdir config
+   ```
+1. Download this config file: [https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf](https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf)
+1. Copy or move the `node.conf` file just downloaded into the config directory
+1. In the folder containing the jar file, run the following command in the terminal:
+   ```bash
+   arch -x86_64 /usr/local/opt/openjdk@8/bin/java -Drsk.conf.file=./config/node.conf -cp ./rskj-core-5.3.0-FINGERROOT-all.jar co.rsk.Start --regtest
+   ```
+   OR
+   ```jsx
+   java -Drsk.conf.file=./config/node.conf \
+   cp ./<PATH-TO-JAR-FILE> co.rsk.Start \
+   -regtest
+   ```
+   Leave the terminal running.
+1. Check that the node is running by running the command below in the terminal:
+   ```jsx
+   curl http://localhost:4444 \
+    -s \
+    -X POST \
+    -H "Content-Type: application/json" \
+    --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
+   ```
+   It should output a response like this:
+   ```jsx
+   {"jsonrpc":"2.0","id":67,"result":"RskJ/5.3.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
+   ```
+1. Check the blockNumber
+   ```jsx
+   curl -X POST http://localhost:4444/ \
+   -H "Content-Type: application/json" \
+   --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
+   ```
+   You should see the below output:
+   ```jsx
+   {"jsonrpc":"2.0","id":1,"result":"0x0"}
+   ```
 Now, you have successfully setup a Rootstock node using the jar file.
 
 ### Using Docker
 
-### 
-
-- developer’s portal instructions
+Follow the instructions in [How to setup a Rootstock node using Docker](https://dev.rootstock.io/rsk/node/install/operating-systems/).
     
-    Follow the instructions in [How to setup a Rootstock node using Docker](https://dev.rootstock.io/rsk/node/install/operating-systems/).
+In this guide, we will run the node using the **[Dockerfile.RegTest](https://github.com/rsksmart/artifacts/blob/master/Dockerfiles/RSK-Node/Dockerfile.RegTest).** This means a node connected to a private `RegTest` network.
     
-    In this guide, we will run the node using the **[Dockerfile.RegTest](https://github.com/rsksmart/artifacts/blob/master/Dockerfiles/RSK-Node/Dockerfile.RegTest).** This means a node connected to a private `RegTest` network.
-    
-    Note that If you get the error:
+Note that If you get the error:
     
     ```jsx
     => ERROR [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.  0.0s
