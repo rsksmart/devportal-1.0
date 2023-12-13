@@ -3,7 +3,7 @@ menu_order: 300
 menu_title: Running the Rootstock node
 layout: rsk
 title: How to Run the Rootstock node
-tags: rif, envelope, relay, user, guide, install
+tags: rif, envelope, relay, user, guide, rootstock, node
 permalink: /guides/rif-relay/run-rootstock-node/
 ---
 
