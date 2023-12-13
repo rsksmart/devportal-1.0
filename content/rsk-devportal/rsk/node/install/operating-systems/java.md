@@ -42,11 +42,11 @@ To run RSKj on Apple M1/M2 devices using x86 based software, ensure you have `Ro
 ### Running the Node
 1. **Execute the Node**:
    [](#top "multiple-terminals")
-   - Linux, Mac OSX:
+   - Linux, Mac OSX
      ```shell
      java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
      ```
-   - Windows:
+   - Windows
      ```windows-command-prompt
      java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
      ```
@@ -60,11 +60,11 @@ Instead of the default synchronization, you can opt for import sync to import a 
 
 **Running Node with Import Sync**:
 [](#top "multiple-terminals")
-- Linux, Mac OSX:
+- Linux, Mac OSX
   ```shell
   java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
   ```
-- Windows:
+- Windows
   ```windows-command-prompt
   java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
   ```
@@ -87,11 +87,11 @@ After starting the node, if there's no output, it's running correctly.
 
 1. To confirm, open a new console tab (it is important you do not close this tab or interrupt the process) and test the node's RPC server. A sample cURL request:
     [](#top "multiple-terminals")
-    - Linux, Mac OSX:
+    - Linux, Mac OSX
       ```shell
       curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
       ```
-    - Windows:
+    - Windows
       ```windows-command-prompt
       curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
       ```
