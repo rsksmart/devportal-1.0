@@ -56,7 +56,7 @@ Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file such as `
 
 > **Note**: This is an optional, experimental feature first introduced in RSKj v2.0.1.
 
-Instead of the default synchronization, you can opt for import sync to import a pre-synchronized database, which is significantly faster. 
+Instead of the default synchronization, you can use import sync to import a pre-synchronized database from a trusted origin, which is significantly faster.
 
 **Running Node with Import Sync**:
 [](#top "multiple-terminals")
