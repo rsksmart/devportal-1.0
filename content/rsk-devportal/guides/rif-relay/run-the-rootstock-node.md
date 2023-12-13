@@ -1,6 +1,6 @@
 ---
 menu_order: 300
-menu_title: Running the Rootstock node
+menu_title: Run the Rootstock node
 layout: rsk
 title: How to Run the Rootstock node
 tags: rif, envelope, relay, user, guide, rootstock, node
