@@ -7,84 +7,52 @@ tags: rif, envelope, relay, user, guide, install
 permalink: /guides/rif-relay/installation-requirements/
 ---
 
-## Requirements
+## Installation Requirements
 
-To have the RIF Relay System running locally there are some tools that are required. All of these tools are open source and have their own support page. The functionality of RIF Relay does not depend on these technologies and could be updated or replaced, if necessary. 
+To set up the RIF Relay system running locally there are some tools that are required. All of these tools are open source and have their own support page. The functionality of RIF Relay does not depend on these technologies and could be updated or replaced, if necessary. 
 
-### Sotware and Hardware Requirements
+### Hardware Requirements
 
-#### Hardware Requirements
+- **Apple Silicon Mac:** A Mac with an Apple M1 chip (or later models) is required.
 
-**Apple Silicon Mac:** A Mac with an Apple M1 chip (or later models) is required for this scenario.
-
-#### Software Requirements
+### Software Requirements
 
 -	**macOS:** A recent version of macOS that supports both Apple Silicon (ARM architecture) and Rosetta 2 translation for running x86_64 applications.
 -	**Java Development Kit (JDK):** ARM-compatible JDK: An ARM-compatible version of Java (like OpenJDK for ARM).
 -	**x86_64 JDK:** For compatibility with specific libraries or applications not yet available for ARM, an x86_64 version of Java is also needed. This can be installed using Homebrew under Rosetta 2.
 -	**Rosetta 2:** This translation layer enables x86_64 applications to run on Apple Silicon. It's crucial for running software that is yet to be optimized for ARM architecture.
 -	**Homebrew:** This is a package manager for macOS used for installing various software, including the x86_64 version of Java. Depending on the software requirements, you might need both the ARM and x86_64 versions of Homebrew.
+-	**Docker:** You need to have `docker` and `docker-compose` installed locally. If you don't have these installed, we recommend following the guidelines in the official [Docker documentation](https://docs.docker.com/get-docker/) for installation and updates.
+-	**Node & NPM:** We use Node version `v18`. It's recommended to manage Node versions with [`nvm`](https://github.com/nvm-sh/nvm). After installing nvm, run these commands to install and switch to Node version 18:
+    ```bash
+    nvm install 18
+    nvm use 18
+    ```
+    To use Node without `nvm`, follow the installation instructions on Node's [official website](https://nodejs.org/en/). After installation, verify it by executing `node -v` in your command line, which will display the installed Node version. This step ensures Node is correctly installed on your system.
+- **Rootstock Node:** You need to have a running Rootstock node, preferably the latest version from RSKj releases. The node can operate locally or via Docker. For details on how to run a Rootstock node using a JAR file or Docker, see [Running the Rootstock Node](https://dev.rootstock.io/guides/rif-relay/running-the-rootstock-node)
+- **Ethers:** The interaction with the blockchain is done using [Ethers v5](https://docs.ethers.org/v5/).
 
-### RSK Node
-
-You need to have a running RSK node version [RSKj](https://github.com/rsksmart/rskj/releases). It is recommended to use the latest released version.
-
-> The node can be run locally or using docker.
-
-When running a local RSKj node, we can configure the node to connect to a specific network; in this guide we will use `Regtest` and `Testnet`. 
-
-### Node & NPM
-
-The `Node` version used is `v18`. 
-
-We recommend the use of [`nvm`](https://github.com/nvm-sh/nvm). After the installation process you can execute the following commands to use node version 16.
-
-```
-nvm install 18
-nvm use  18
-```
-
-If you choose to use node without `nvm`, you can find the installation instructions at Node's [website](https://nodejs.org/en/). 
-
-You can check the installation by running `node -v`.
+## RIF Relay Contract Deployment Requirements
 
 ### Hardhat
 
-An important tool we use for interacting with the blockchain is `Hardhat` version `v2.10.2`.
+We use `Hardhat` version `v2.10.2` for blockchain interactions. For details on how to install Hardhat, follow the instructions on the [Hardhat website](https://hardhat.org/hardhat-runner/docs/getting-started#installation). 
+Use the `npx` prefix for Hardhat commands to ensure the use of the project-specific version. Verify the installation with `npx hardhat version`. For configuration, refer to `hardhat.config.ts`. Detailed usage and configuration instructions are available in [Hardhat's documentation](https://hardhat.org/docs).
 
-You can follow the installation guide in the Hardhat official [website](https://hardhat.org/).
+### Running on macOS
 
-Run all hardhat commands with the prefix `npx`. This is to execute node packages using the project's version.
+To run the project on a Mac using Docker:
 
-Check if the installation was successful by running `npx hardhat version` in your terminal.
+1. **Patch `readlink`**: MacOS uses BSD's `readlink`, which differs from GNU's version. Install GNU's `readlink` via Homebrew:
 
-The configuration file is `hardhat.config.ts`. Please see [Harhats's documentation](https://hardhat.org/docs) for details about this file and how to use it.
+   ```
+   brew install coreutils
+   ln -s /usr/local/bin/greadlink /usr/local/bin/readlink
+   ```
 
+2. **Modify `PATH`**: Ensure `/usr/local/bin` takes precedence over `/usr/bin`. To verify the path, run `which readlink`; the output should be `/usr/local/bin/readlink`. To test, run `readlink -f .` to confirm the setup.
 
 ### Using Docker
 
-We recommend following the official [documentation](https://docs.docker.com/get-docker/) for installing Docker and keeping it updated.
-
-You'll need to install both `docker` as well as `docker-compose`.
-
-The RIF Relay components can be deployed using Docker or locally using [Hardhat](/guides/rif-relay/installation-requirements#hardhat)
-
+RIF Relay components can be deployed using Docker or locally using [Hardhat](/guides/rif-relay/installation-requirements#hardhat)
 A guide for the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server#execute-as-a-docker-container) can be found in the repository.
-
-#### Running on macOS
-
-To run the project using Docker on a Mac, please do the following: 
-
-- Patch `readlink`
-The startup scripts assume that GNU's `readlink` command is available. But MacOS ships with BSD's `readlink`, which is incompatible with GNU's version. So we must patch `readlink`. This can be done using [Homebrew](https://brew.sh/) as follows:
-
-```
-brew install coreutils
-ln -s /usr/local/bin/greadlink /usr/local/bin/readlink
-```
-
-After this step, ensure that the `PATH` variable gives priority to `/usr/local/bin` over `/usr/bin`. You can check this with `which readlink`, which should output `/usr/local/bin/readlink`. Alternatively, try executing `readlink -f .`, if it works, you're ok.
-
-### Ethers
-
-The interaction with the blockchain is done using [Ethers v5](https://docs.ethers.org/v5/).
