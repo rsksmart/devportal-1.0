@@ -29,7 +29,7 @@ To set up the RIF Relay system running locally there are some tools that are req
     nvm use 18
     ```
     To use Node without `nvm`, follow the installation instructions on Node's [official website](https://nodejs.org/en/). After installation, verify it by executing `node -v` in your command line, which will display the installed Node version. This step ensures Node is correctly installed on your system.
-- **Rootstock Node:** You need to have a running Rootstock node, preferably the latest version from RSKj releases. The node can operate locally or via Docker. For details on how to run a Rootstock node using a JAR file or Docker, see [Running the Rootstock Node](https://dev.rootstock.io/guides/rif-relay/running-the-rootstock-node)
+- **Rootstock Node:** You need to set up and run a Rootstock node, preferably the latest version from RSKj releases. The node can operate locally or via Docker. For details on how to run a Rootstock node using a JAR file, see [How to setup node on Java](https://dev.rootstock.io/rsk/node/install/operating-systems/java/). For Docker, see [How to setup an RSK node on Docker](https://dev.rootstock.io/rsk/node/install/operating-systems/).
 - **Ethers:** The interaction with the blockchain is done using [Ethers v5](https://docs.ethers.org/v5/).
 
 ## RIF Relay Contract Deployment Requirements
