@@ -16,7 +16,7 @@ You can either use the [metamask-landing.rifos.org](https://metamask-landing.rif
 
   <div style="text-align:center"><img class="metamask-screenshot" src="/assets/img/metamask/metamask.png"></div>
 
-(3) Fill with these values to connect to RSK Mainnet or Testnet
+(3) Fill with these values to connect to RSK Mainnet, Testnet, or Regnet
 
   <table class="table">
   <thead>
@@ -24,6 +24,7 @@ You can either use the [metamask-landing.rifos.org](https://metamask-landing.rif
       <th scope="col">Field</th>
       <th scope="col">RSK Mainnet</th>
       <th scope="col">RSK Testnet</th>
+      <th scope="col">RSK Regnet</th>
     </tr>
   </thead>
   <tbody>
@@ -31,21 +32,25 @@ You can either use the [metamask-landing.rifos.org](https://metamask-landing.rif
       <td>Network Name</td>
       <td>RSK Mainnet</td>
       <td>RSK Testnet</td>
+      <td>RSK Regnet</td>
     </tr>
     <tr>
       <td>RPC URL</td>
       <td>https://public-node.rsk.co</td>
       <td>https://public-node.testnet.rsk.co</td>
+      <td>http://127.0.0.1:4444</td>
     </tr>
     <tr>
       <td>ChainID</td>
       <td>30</td>
       <td>31</td>
+      <td>33</td>
     </tr>
     <tr>
       <td>Symbol</td>
       <td>RBTC</td>
       <td>tRBTC</td>
+       <td>tRBTC</td>
     </tr>
     <tr>
       <td>Block explorer URL</td>
