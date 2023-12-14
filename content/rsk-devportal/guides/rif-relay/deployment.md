@@ -11,7 +11,8 @@ permalink: /guides/rif-relay/deployment/
 
 ### Set up RIF Relay Contracts and Server
 
-[Contracts Deployment](#top "collapsible")
+[](#top "collapsible")
+Contracts Deployment
 
   We will begin by deploying the on-chain components. All the necessary tools to do the deployments are included in the [RIF Relay Contract](https://github.com/rsksmart/rif-relay-contracts). 
 
