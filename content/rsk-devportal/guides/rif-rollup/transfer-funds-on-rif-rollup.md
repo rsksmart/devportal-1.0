@@ -27,7 +27,7 @@ In this tutorial, we use RBTC, click on token.
 
 Enter a RIF Rollup (L2) wallet address and amount to transfer, the second field shows the transaction fees required to make a transfer transaction, this is auto-generated and cannot be changed.
 
-Note that on first interaction with the RIF Rollup Wallet dApp, you may need to provide another wallet address to be used for L2 transactions. See FAQ section.
+Note that on first interaction with the Add Rootstock to Metamask RIF Rollup Wallet dApp, you may need to provide another wallet address to be used for L2 transactions. See FAQ section.
 
 <center><img src="/assets/img/rif-rollup/13-authorize-to-send-tx.png"  title="Authorize" width="70%"/>
 </center>
