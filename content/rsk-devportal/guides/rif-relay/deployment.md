@@ -9,6 +9,8 @@ render_features: 'collapsible tables-with-borders'
 permalink: /guides/rif-relay/deployment/
 ---
 
+### Set up RIF Relay Contracts and Server
+
 [](#top "collapsible")
 - 1) Contracts Deployment
   * We will begin by deploying the on-chain components. All the necessary tools to do the deployments are included in the [RIF Relay Contract](https://github.com/rsksmart/rif-relay-contracts). 
@@ -18,6 +20,12 @@ permalink: /guides/rif-relay/deployment/
       * To start the process on `Regtest` we just execute the following command:
 
         ```
+        # clone repository
+        git clone https://github.com/rsksmart/rif-relay-contracts
+        cd rif-relay-contracts
+        # install dependencies
+        npm install
+        # deploy contracts to the network
         npx hardhat deploy --network regtest
         ```
 
