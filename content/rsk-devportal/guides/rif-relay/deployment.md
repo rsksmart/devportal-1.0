@@ -13,7 +13,6 @@ permalink: /guides/rif-relay/deployment/
 
 [](#top "collapsible")
 - Deploy Contracts
-    
     Start by deploying on-chain components. All tools needed are in the [RIF Relay Contract repository](https://github.com/rsksmart/rif-relay-contracts).
 
     [](#top "collapsible")
@@ -326,3 +325,6 @@ permalink: /guides/rif-relay/deployment/
     - Mainnet
         
         To run RIF Relay Server on RSK Mainnet, the procedure is the same as the one on Testnet, the only difference is the configuration. Configure it to use contracts deployed on Mainnet and an RSKj node connected to Mainnet.
+
+
+

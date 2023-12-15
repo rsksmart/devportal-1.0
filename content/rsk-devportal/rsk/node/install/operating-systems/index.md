@@ -10,7 +10,7 @@ render_features: 'collapsible'
 
 Before installing Docker, ensure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing the RSK node.
 
-## Install Docker Desktop Client
+### Install Docker Desktop Client
 
 [Docker Desktop](https://www.docker.com/products/docker-desktop/) provides an easy and fast way for running containerized applications on various operating systems.
 

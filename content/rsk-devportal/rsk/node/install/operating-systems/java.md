@@ -3,11 +3,10 @@ layout: rsk
 title: Setup node on Java
 tags: java, install, rsk, rskj, node, how-to, network, requirements, mainnet, jar
 menu_order: 4
-render_features: 'custom-terminals'
-render_features: 'collapsible'
+render_features: 'custom-terminals collapsible'
 ---
 
-## Requirements
+### Requirements
 
 - Ensure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing RSK nodes on it.
 - You also need to install [Java 8 JDK](https://www.java.com/download/).
