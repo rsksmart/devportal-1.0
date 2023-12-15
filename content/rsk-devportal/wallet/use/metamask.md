@@ -51,6 +51,7 @@ You can either use the [metamask-landing.rifos.org](https://metamask-landing.rif
       <td>Block explorer URL</td>
       <td><a href="https://explorer.rsk.co" target="_blank">https://explorer.rsk.co</a></td>
       <td><a href="https://explorer.testnet.rsk.co" target="_blank">https://explorer.testnet.rsk.co</a></td>
+      <td><a href="#" target="_blank">--------</a></td>
     </tr>
   </tbody>
   </table>
