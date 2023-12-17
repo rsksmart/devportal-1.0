@@ -11,24 +11,24 @@ permalink: /guides/rif-relay/deployment/
 
 ## Set Up RIF Relay Contracts and Server
 
+### Deploy Contracts
+Start by deploying on-chain components. All tools needed are in the [RIF Relay Contract repository](https://github.com/rsksmart/rif-relay-contracts)
+
 [](#top "collapsible")
-  - Deploy Contracts
-    - Start by deploying on-chain components. All tools needed are in the [RIF Relay Contract repository](https://github.com/rsksmart/rif-relay-contracts)
-[](#top "collapsible")
-  - Regtest
+- Regtest
     1. Clone the Repository:
-      ```bash
-      git clone https://github.com/rsksmart/rif-relay-contracts
-      ```
+        ```bash
+        git clone https://github.com/rsksmart/rif-relay-contracts
+        ```
     2. Navigate to the directory and install dependencies:
-      ```bash
-      cd rif-relay-contracts
-      npm install
-      ```
+        ```bash
+        cd rif-relay-contracts
+        npm install
+        ```
     3. Deploy the contract:
-      ```bash
-      npx hardhat deploy --network regtest
-      ```
+        ```bash
+        npx hardhat deploy --network regtest
+        ```
     > This uses the Regtest configuration from `hardhat.config.ts`.
     After deployment, you'll see a summary of the deployed contracts. This summary includes the on-chain components essential for RIF Relay, and additional contracts for testing and validation purposes.
       ```
@@ -54,219 +54,224 @@ permalink: /guides/rif-relay/deployment/
       └───────────────────────────────────────┴──────────────────────────────────────────────┘
       ```
     The deployment summary shows two sets of Smart Wallets, each paired with its verifiers. This is because each verifier uses the factorY for deployment and relay validation. For testing purposes, the focus will be on using these Smart Wallet Contracts.
-    - Testnet
-      1. Ensure your account is funded. You can get funds from the [tRBTC Faucet](https://faucet.rsk.co/).
-      2. Deploy on Testnet:
+- Testnet
+    1. Ensure your account is funded. You can get funds from the [tRBTC Faucet](https://faucet.rsk.co/).
+    2. Deploy on Testnet:
         ```bash
         npx hardhat deploy --network testnet
         ```
-      > Remember to configure Testnet in `hardhat.config.ts`.
-      Existing RIF Relay contracts deployed on Testnet can be found in the [contracts section](/rif/relay/contracts).
-    - Mainnet
-      1. Ensure your account is funded.
-      2. Deploy on Mainnet:
-         ```bash
-          npx hardhat deploy --network mainnet
-          ```
-      > Ensure Mainnet is set up in `hardhat.config.ts`.
-      Existing RIF Relay contracts deployed on Mainnet can be found in the [contracts section](/rif/relay/contracts).
-  - Revenue Sharing
-      Revenue Sharing is an optional feature in RIF Relay that can be implemented using collector contracts. You can deploy multiple Collector contracts, but they are not included in the default Relay contract deployment. For detailed information on Collector contracts, refer to the [architecture documentation](/rif/relay/architecture/#collector).
-    Before deploying a Collector contract ensure the following:
-    1. Ensure the chosen token for the Collector contract is the same as the one used for transaction fees. 
-        > **Note:** You cannot retrieve any other tokens other than the one set during Collector deployment.
-    2. Select an appropriate owner for the Collector contract. This owner doesn't have to be the deployer but must have the authority to execute the withdraw function, or else the revenue funds will be locked in the contract.
-    3. Set up partners and their share percentages, ensuring the total adds up to 100%. Incorrectly sent tokens to an inaccessible address without a private key from the beneficiary will be lost. For an example of a structurally valid revenue shares definition see [sample configuration](https://github.com/rsksmart/rif-relay-contracts/blob/master/deploy-collector.input.sample.json).
+        > Remember to configure Testnet in `hardhat.config.ts`.
+        Existing RIF Relay contracts deployed on Testnet can be found in the [contracts section](/rif/relay/contracts).
+- Mainnet
+    1. Ensure your account is funded.
+    2. Deploy on Mainnet:
+        ```bash
+        npx hardhat deploy --network mainnet
+        ```
+        > Ensure Mainnet is set up in `hardhat.config.ts`.
+        Existing RIF Relay contracts deployed on Mainnet can be found in the [contracts section](/rif/relay/contracts).
 
-    [](#top "collapsible")
-    - Regtest
-        1. To deploy the Collector contract, we'll use the [RIF Relay Contract](https://github.com/rsksmart/.
-        1. Create a configuration file named `deploy-collector.input.json` with the required structure:
-              ```json
-              {
-                "collectorOwner": "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826",
-                "partners": [
-                    {
-                      "beneficiary": "0x7986b3DF570230288501EEa3D890bd66948C9B79",
-                      "share": 20
-                    },
-                    {
-                      "beneficiary": "0x0a3aA774752ec2042c46548456c094A76C7F3a79",
-                      "share": 35
-                    },
-                    {
-                      "beneficiary": "0xCF7CDBbB5F7BA79d3ffe74A0bBA13FC0295F6036",
-                      "share": 13
-                    },
-                    {
-                      "beneficiary": "0x39B12C05E8503356E3a7DF0B7B33efA4c054C409",
-                      "share": 32
-                    }
-                ],
-                "tokenAddresses": ["0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"],
-                "remainderAddress": "0xc354D97642FAa06781b76Ffb6786f72cd7746C97"
-              }
-              ```
-              > **Note:** The `collectorOwner`, `beneficiaries`, and `remainderAddress` are the first five accounts provided by the node in Regtest.
-        2. Deploy the contract:
-            ```bash
-            npx hardhat collector:deploy --network regtest
-            ```
-            The collector is ready and can start receiving fees.
-    - Testnet
-        - Using the configuration file you created in the regtest section, run this command to deploy the contract: 
-            ```
-            npx hardhat collector:deploy --network testnet
-            ```
-    - Mainnet
-        - Using the configuration file you created in the regtest section, run this command to deploy the contract: 
-            ```
-            npx hardhat collector:deploy --network mainnet
-            ```
-- Allow Tokens
-    - RIF Relay only accepts whitelisted tokens, primarily to ensure only tokens of value to the sponsor are accepted. To whitelist a token:
-      Execute the `acceptToken(address token)` function on the Relay Verifiers contracts, which include:
-        - `SmartWalletDeployVerifier`
-        - `SmartWalletRelayVerifier`
-    > Note: This action must be performed by the contracts' owner, typically the account that conducted the deployment.
-    
-    [](#top "collapsible")
-    - Regtest
-        - In the RIF Relay Contracts, execute this command:
-            ```
-            npx hardhat allow-tokens --network regtest 0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8
-            ```
-            > The `allowTokens` uses the first account (referred to as account[0]) as the owner of the contracts. This is important because only the account owner can allow tokens. 
-    - Testnet
-        - In the RIF Relay Contracts, execute the command:
-            ```
-            npx hardhat allow-tokens --network testnet 0x3F49BaB0afdC36E9f5784da91b32E3D5156fAa5C
-            ```
-            > The `allowTokens` script will use the Testnet network configured in the `hardhat.config.ts`, this network will be required to use the account that deployed the contracts.
-    - Mainnet
-        - In the RIF Relay Contracts, execute the command:
+### Revenue Sharing
+Revenue Sharing is an optional feature in RIF Relay that can be implemented using collector contracts. You can deploy multiple Collector contracts, but they are not included in the default Relay contract deployment. For detailed information on Collector contracts, refer to the [architecture documentation](/rif/relay/architecture/#collector).
+
+Before deploying a Collector contract ensure the following:
+1. Ensure the chosen token for the Collector contract is the same as the one used for transaction fees. 
+    > **Note:** You cannot retrieve any other tokens other than the one set during Collector deployment.
+2. Select an appropriate owner for the Collector contract. This owner doesn't have to be the deployer but must have the authority to execute the withdraw function, or else the revenue funds will be locked in the contract.
+3. Set up partners and their share percentages, ensuring the total adds up to 100%. Incorrectly sent tokens to an inaccessible address without a private key from the beneficiary will be lost. For an example of a structurally valid revenue shares definition see [sample configuration](https://github.com/rsksmart/rif-relay-contracts/blob/master/deploy-collector.input.sample.json).
+
+[](#top "collapsible")
+- Regtest
+    1. To deploy the Collector contract, we'll use the [RIF Relay Contract](https://github.com/rsksmart/.
+    1. Create a configuration file named `deploy-collector.input.json` with the required structure:
+          ```json
+          {
+            "collectorOwner": "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826",
+            "partners": [
+                {
+                  "beneficiary": "0x7986b3DF570230288501EEa3D890bd66948C9B79",
+                  "share": 20
+                },
+                {
+                  "beneficiary": "0x0a3aA774752ec2042c46548456c094A76C7F3a79",
+                  "share": 35
+                },
+                {
+                  "beneficiary": "0xCF7CDBbB5F7BA79d3ffe74A0bBA13FC0295F6036",
+                  "share": 13
+                },
+                {
+                  "beneficiary": "0x39B12C05E8503356E3a7DF0B7B33efA4c054C409",
+                  "share": 32
+                }
+            ],
+            "tokenAddresses": ["0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8"],
+            "remainderAddress": "0xc354D97642FAa06781b76Ffb6786f72cd7746C97"
+          }
           ```
-          npx hardhat allow-tokens --network mainnet 0xe49b8906A3ceFd184621A4193e2451b1c3C3dB0B
-          ```
-          > The `allowTokens` script will use the Mainnet network configured in `hardhat.config.ts`, this network will be required to use the account that did the deployment of the contracts.
-- Run the RIF Relay Server
-    - After setting up on-chain components, the next step is to set up off-chain components, using the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server). 
-    Configuration of the Relay Server is streamlined using the [node-config](https://www.npmjs.com/package/config) package. For detailed advantages of this package, visit their [wiki](https://github.com/node-config/node-config/wiki).
-    <b>The TL;DR:</b> In the `config` directory, create a file named `local.json`.
-    For visual insights into how the Relay Server functions, refer to the diagrams available [here](/rif/relay/architecture/#relay-server).
+          > **Note:** The `collectorOwner`, `beneficiaries`, and `remainderAddress` are the first five accounts provided by the node in Regtest.
+    2. Deploy the contract:
+        ```bash
+        npx hardhat collector:deploy --network regtest
+        ```
+        The collector is ready and can start receiving fees.
+- Testnet
+    - Using the configuration file you created in the regtest section, run this command to deploy the contract: 
+        ```
+        npx hardhat collector:deploy --network testnet
+        ```
+- Mainnet
+    - Using the configuration file you created in the regtest section, run this command to deploy the contract: 
+        ```
+        npx hardhat collector:deploy --network mainnet
+        ```
+### Allow Tokens
+RIF Relay only accepts whitelisted tokens, primarily to ensure only tokens of value to the sponsor are accepted. To whitelist a token:
+Execute the `acceptToken(address token)` function on the Relay Verifiers contracts, which include:
+- `SmartWalletDeployVerifier`
+- `SmartWalletRelayVerifier`
+
+> Note: This action must be performed by the contracts' owner, typically the account that conducted the deployment.
+  
+[](#top "collapsible")
+- Regtest
+    - In the RIF Relay Contracts, execute this command:
+        ```
+        npx hardhat allow-tokens --network regtest 0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8
+        ```
+        > The `allowTokens` uses the first account (referred to as account[0]) as the owner of the contracts. This is important because only the account owner can allow tokens. 
+- Testnet
+    - In the RIF Relay Contracts, execute the command:
+        ```
+        npx hardhat allow-tokens --network testnet 0x3F49BaB0afdC36E9f5784da91b32E3D5156fAa5C
+        ```
+        > The `allowTokens` script will use the Testnet network configured in the `hardhat.config.ts`, this network will be required to use the account that deployed the contracts.
+- Mainnet
+    - In the RIF Relay Contracts, execute the command:
+      ```
+      npx hardhat allow-tokens --network mainnet 0xe49b8906A3ceFd184621A4193e2451b1c3C3dB0B
+      ```
+      > The `allowTokens` script will use the Mainnet network configured in `hardhat.config.ts`, this network will be required to use the account that did the deployment of the contracts.
+
+### Run the RIF Relay Server
+After setting up on-chain components, the next step is to set up off-chain components, using the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server). 
+Configuration of the Relay Server is streamlined using the [node-config](https://www.npmjs.com/package/config) package. For detailed advantages of this package, visit their [wiki](https://github.com/node-config/node-config/wiki).
+
+<b>The TL;DR:</b> In the `config` directory, create a file named `local.json`.
+For visual insights into how the Relay Server functions, refer to the diagrams available [here](/rif/relay/architecture/#relay-server).
     
-    [](#top "collapsible")
-    - Regtest
-        1. Here's a configuration example for setting up the RSKj node locally with the contracts deployed in Regtest:
-            ```json
-            {
-              "app": {
-                "url": "http://127.0.0.1",
+[](#top "collapsible")
+- Regtest
+    1. Here's a configuration example for setting up the RSKj node locally with the contracts deployed in Regtest:
+        ```json
+        {
+          "app": {
+            "url": "http://127.0.0.1",
+            "port": 8090,
+            "devMode": true,
+            "logLevel": 1,
+            "workdir": "./enveloping/environment/",
+          },
+          "blockchain": {
+            "rskNodeUrl": "http://127.0.0.1:4444",
+          },
+          "contracts": {
+            "relayHubAddress": "0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974",
+            "relayVerifierAddress": "0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a",
+            "deployVerifierAddress": "0x73ec81da0C72DD112e06c09A6ec03B5544d26F05"
+          }
+        }
+        ```
+        > **Note:** Relay and Deploy verifiers use the contracts from the Smart Wallet section in the summary.
+        The meaning of each key can be found in [RIF Relay Server Configuration](https://github.com/rsksmart/rif-relay-server#server-configuration)
+    1. To start the server, run the following command:
+        ```
+        npm run start
+        ```
+        > By default, the server uses the `default.json5` file in the config directory. Depending on the profile in `NODE_ENV`, the values in the `default.json5` file is overriden.
+        At this point the server should be running and ready to start processing transactions, however, you still need to register the off-chain components in the Relay Hub.
+    1. To enable the server for transaction processing, you must register the off-chain components in the Relay Hub. This step requires the server to be active. To register the components, in a different terminal window, execute the following command:
+        ```
+        npm run register
+        ```
+        The register process performs the following actions:
+        - Stakes the Relay Manager
+        - Adds the Relay Worker
+        - Registers the Relay Server
+        The server is now ready to start processing transactions and a ready message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).
+- Testnet
+    1. Here's an example configuration file using the off-chain components deployed on RSK Testnet (https://public-node.testnet.rsk.co). 
+        > **Important:** Due to specific modules enabled in the RSKj nodes, the RIF Relay Server cannot connect to the public nodes.            
+        ```json
+          {
+            "app": {
+                "url": "https://backend.dev.relay.rifcomputing.net",
                 "port": 8090,
                 "devMode": true,
                 "logLevel": 1,
-                "workdir": "./enveloping/environment/",
-              },
-              "blockchain": {
-                "rskNodeUrl": "http://127.0.0.1:4444",
-              },
-              "contracts": {
-                "relayHubAddress": "0xDA7Ce79725418F4F6E13Bf5F520C89Cec5f6A974",
-                "relayVerifierAddress": "0x03F23ae1917722d5A27a2Ea0Bcc98725a2a2a49a",
-                "deployVerifierAddress": "0x73ec81da0C72DD112e06c09A6ec03B5544d26F05"
-              }
+                "feePercentage": "0",
+                "workdir": "/srv/app/environment"
+            },
+            "blockchain": {
+                "rskNodeUrl": "http://172.17.0.1:4444"
+            },
+            "contracts": {
+                "relayHubAddress": "0xAd525463961399793f8716b0D85133ff7503a7C2",
+                "relayVerifierAddress": "0xB86c972Ff212838C4c396199B27a0DBe45560df8",
+                "deployVerifierAddress": "0xc67f193Bb1D64F13FD49E2da6586a2F417e56b16"
             }
-            ```
-            > **Note:** Relay and Deploy verifiers use the contracts from the Smart Wallet section in the summary.
-            The meaning of each key can be found in [RIF Relay Server Configuration](https://github.com/rsksmart/rif-relay-server#server-configuration)
-        1. To start the server, run the following command:
-            ```
-            npm run start
-            ```
-            > By default, the server uses the `default.json5` file in the config directory. Depending on the profile in `NODE_ENV`, the values in the `default.json5` file is overriden.
-            At this point the server should be running and ready to start processing transactions, however, you still need to register the off-chain components in the Relay Hub.
-        1. To enable the server for transaction processing, you must register the off-chain components in the Relay Hub. This step requires the server to be active. To register the components, in a different terminal window, execute the following command:
-            ```
-            npm run register
-            ```
-            The register process performs the following actions:
-            - Stakes the Relay Manager
-            - Adds the Relay Worker
-            - Registers the Relay Server
-            The server is now ready to start processing transactions and a ready message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).
-    - Testnet
-        1. Here's an example configuration file using the off-chain components deployed on RSK Testnet (https://public-node.testnet.rsk.co). 
-            > **Important:** Due to specific modules enabled in the RSKj nodes, the RIF Relay Server cannot connect to the public nodes.            
-            ```json
-              {
-                "app": {
-                    "url": "https://backend.dev.relay.rifcomputing.net",
-                    "port": 8090,
-                    "devMode": true,
-                    "logLevel": 1,
-                    "feePercentage": "0",
-                    "workdir": "/srv/app/environment"
-                },
-                "blockchain": {
-                    "rskNodeUrl": "http://172.17.0.1:4444"
-                },
-                "contracts": {
-                    "relayHubAddress": "0xAd525463961399793f8716b0D85133ff7503a7C2",
-                    "relayVerifierAddress": "0xB86c972Ff212838C4c396199B27a0DBe45560df8",
-                    "deployVerifierAddress": "0xc67f193Bb1D64F13FD49E2da6586a2F417e56b16"
-                }
-            }
-            ```
-            > The [contracts](https://developers.rsk.co/rif/relay/contracts/#primary-contracts) used in this setup are the primary contracts available on the RSK network. These primary contracts, however, do not include support for the `CustomSmartWallet`.            
-            For details of each configuration key used in setting up the RIF Relay Server, refer to the [RIF Relay Server Configuration](https://github.com/rsksmart/rif-relay-server#server-configuration) documentation.
-        1. To start the server, execute the following command:
-            ```
-            npm run start
-            ```
-            > By default, the server uses the `default.json5` file in the config directory. Depending on the profile in `NODE_ENV`, the values in the `default.json5` file is overriden. Therefore you need to setup the `NODE_ENV` environment to `testnet`.
+        }
+        ```
+        > The [contracts](https://developers.rsk.co/rif/relay/contracts/#primary-contracts) used in this setup are the primary contracts available on the RSK network. These primary contracts, however, do not include support for the `CustomSmartWallet`.            
+        For details of each configuration key used in setting up the RIF Relay Server, refer to the [RIF Relay Server Configuration](https://github.com/rsksmart/rif-relay-server#server-configuration) documentation.
+    1. To start the server, execute the following command:
+        ```
+        npm run start
+        ```
+        > By default, the server uses the `default.json5` file in the config directory. Depending on the profile in `NODE_ENV`, the values in the `default.json5` file is overriden. Therefore you need to setup the `NODE_ENV` environment to `testnet`.
 
-            At this point the server should be running and ready to start processing transactions, however, you still need to register the off-chain components in the Relay Hub. For the registration process, the Relay Manager and Worker must have funds.           
-        1. To get the addresses, this requires the server to be active. In a different terminal window, execute the following command:
-            ```
-            curl http://<SERVER_URL>/chain-info
-            ```
-            ```json
-            {
-              "relayWorkerAddress": "0xabf898bd73b746298462915ca91623f5630f2462",
-              "relayManagerAddress": "0xa71d65cbe28689e9358407f87e0b4481161c7e57",
-              "relayHubAddress": "0xe90592939fE8bb6017A8a533264a5894B41aF7d5",
-              "feesReceiver": "0x52D107bB12d83EbCBFb4A6Ad0ec866Bb69FdB5Db",
-              "minGasPrice": "6000000000",
-              "chainId": "31",
-              "networkId": "31",
-              "ready": false,
-              "version": "2.0.1"
-            }
-            ```
-        1. Send at least 0.001 tRBTC to the Worker and Manager.
-        1. Now execute the register command.
-            ```
-            npm run register
-            ```
-            Here's an example of the `register.json5`
-            ```json
-            {
-              "register": {
-                "stake": "REGISTER_STAKE",
-                "funds": "REGISTER_FUNDS",
-                "mnemonic": "REGISTER_MNEMONIC",
-                "privateKey": "REGISTER_PRIVATE_KEY",
-                "hub": "REGISTER_HUB_ADDRESS",
-                "gasPrice": "REGISTER_GAS_PRICE",
-                "relayUrl": "REGISTER_RELAY_URL",
-                "unstakeDelay": "REGISTER_UNSTAKE_DELAY"
-              }
-            }
-            ```
-            The register process performs the following actions:
-              - Stakes the Relay Manager
-              - Adds the Relay Worker
-              - Registers the Relay Server
-            The server is now ready to start processing transactions and a ready message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).         
-    - Mainnet
-        - To run RIF Relay Server on RSK Mainnet, the procedure is the same as the one on Testnet, the only difference is the configuration. Configure it to use contracts deployed on Mainnet and an RSKj node connected to Mainnet.
+        At this point the server should be running and ready to start processing transactions, however, you still need to register the off-chain components in the Relay Hub. For the registration process, the Relay Manager and Worker must have funds.           
+    1. To get the addresses, this requires the server to be active. In a different terminal window, execute the following command:
+        ```
+        curl http://<SERVER_URL>/chain-info
+        ```
+        ```json
+        {
+          "relayWorkerAddress": "0xabf898bd73b746298462915ca91623f5630f2462",
+          "relayManagerAddress": "0xa71d65cbe28689e9358407f87e0b4481161c7e57",
+          "relayHubAddress": "0xe90592939fE8bb6017A8a533264a5894B41aF7d5",
+          "feesReceiver": "0x52D107bB12d83EbCBFb4A6Ad0ec866Bb69FdB5Db",
+          "minGasPrice": "6000000000",
+          "chainId": "31",
+          "networkId": "31",
+          "ready": false,
+          "version": "2.0.1"
+        }
+        ```
+    1. Send at least 0.001 tRBTC to the Worker and Manager.
+    1. Now execute the register command.
+        ```
+        npm run register
+        ```
+        Here's an example of the `register.json5`
+        ```json
+        {
+          "register": {
+            "stake": "REGISTER_STAKE",
+            "funds": "REGISTER_FUNDS",
+            "mnemonic": "REGISTER_MNEMONIC",
+            "privateKey": "REGISTER_PRIVATE_KEY",
+            "hub": "REGISTER_HUB_ADDRESS",
+            "gasPrice": "REGISTER_GAS_PRICE",
+            "relayUrl": "REGISTER_RELAY_URL",
+            "unstakeDelay": "REGISTER_UNSTAKE_DELAY"
+          }
+        }
+        ```
+        The register process performs the following actions:
+          - Stakes the Relay Manager
+          - Adds the Relay Worker
+          - Registers the Relay Server
+        The server is now ready to start processing transactions and a ready message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).         
+- Mainnet
+    - To run RIF Relay Server on RSK Mainnet, the procedure is the same as the one on Testnet, the only difference is the configuration. Configure it to use contracts deployed on Mainnet and an RSKj node connected to Mainnet.
