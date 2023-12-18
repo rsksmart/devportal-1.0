@@ -32,7 +32,7 @@ const Sidebar = ({ className, pathname }: Props) => {
     }}>
       <div className={classnames(className, 'sidebar')}>
         <div className="sidebar__wrapper">          
-          <MendableSearchBar anon_key={mendableApiKey} style={mendableSearchBarStyle} language="en" showSimpleSearch/>
+          <MendableSearchBar anon_key={mendableApiKey} style={mendableSearchBarStyle} language="en" askAIText="Ask Rootstock AI" showSimpleSearch/>
           <div className="pr-4">
             <div className="my-2">
               <Link className="sidebar__link" to="/">Rootstock Documentation</Link>
