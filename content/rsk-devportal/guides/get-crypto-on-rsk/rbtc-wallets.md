@@ -2,19 +2,19 @@
 menu_order: 500
 menu_title: Get RBTC using Wallets
 title: "How to get RBTC using wallets"
-description: "Understand what crypto wallets are and how they work, and then see how you can use RSK wallets that have the BTC and RBTC swapping feature built in"
-tags: rbtc, rsk, wallets, defi, exchange, crypto, how-to, knowledge-base
+description: "Understand what crypto wallets are and how they work, and then see how you can use Rootstock wallets that have the BTC and RBTC swapping feature built in"
+tags: rbtc, Rootstock, wallets, defi, exchange, crypto, how-to, knowledge-base
 layout: "rsk"
 ---
 
-![How to get RBTC using wallets](/assets/img/guides/get-crypto-on-rsk/rbtc-wallets.jpg)
+![How to get RBTC using wallets](/assets/img/guides/get-crypto-on-Rootstock/rbtc-wallets.jpg)
 
 If the technical expertise required to
-[use the PowPeg to swap between BTC and RBTC](/kb/get-crypto-on-rsk/powpeg-btc-rbtc/) 
+[use the PowPeg to swap between BTC and RBTC](/kb/get-crypto-on-Rootstock/powpeg-btc-rbtc/) 
 is something that you prefer to avoid,
 you may wish to consider using crypto wallets that can make this process easier to do!
 Let’s first understand what crypto wallets are and how they work,
-and then see how you can use RSK wallets that have
+and then see how you can use Rootstock wallets that have
 the BTC and RBTC swapping feature built in.
 
 ## What wallets do
@@ -38,10 +38,10 @@ Underpinning all of this is their ability to use cryptography
 to **digitally sign transactions**.
 
 Some crypto wallets support **smart contracts** when
-they connect to blockchain networks such as RSK.
+they connect to blockchain networks such as Rootstock.
 They allow a user to invoke smart contract functions.
 Recall one of the
-[differences between tokens and cryptocurrency](/kb/get-crypto-on-rsk/cryptocurrency-vs-token/),
+[differences between tokens and cryptocurrency](/kb/get-crypto-on-Rootstock/cryptocurrency-vs-token/),
 which is that **tokens** are implemented using smart contracts.
 Thus crypto wallets which understand smart contracts
 are necessary to store and transfer tokens.
@@ -49,7 +49,7 @@ are necessary to store and transfer tokens.
 
 ## Difference between a Private and Public Key
 
-![Public and private keys](/assets/img/guides/get-crypto-on-rsk/PrivateVSPublicKey.png)
+![Public and private keys](/assets/img/guides/get-crypto-on-Rootstock/PrivateVSPublicKey.png)
 
 In crypto wallets, public keys and private keys are
 primarily used in digital signature algorithms.
@@ -62,7 +62,7 @@ think of it as analogous to your password.
 
 ## Hardware and Software Wallets
 
-![Hardware and Software Wallets](/assets/img/guides/get-crypto-on-rsk/hardwareVSsoftware.png)
+![Hardware and Software Wallets](/assets/img/guides/get-crypto-on-Rootstock/hardwareVSsoftware.png)
 
 A **hardware wallet** is a special-purpose device
 configured to accept supported cryptocurrencies and tokens.
@@ -97,7 +97,7 @@ between ease of use, and security.
 
 ## How wallets work
 
-![Wallet Image](/assets/img/guides/get-crypto-on-rsk/wallet.jpg)
+![Wallet Image](/assets/img/guides/get-crypto-on-Rootstock/wallet.jpg)
 
 **Watch this short explainer video to understand how crypto wallets work**
 
@@ -105,7 +105,7 @@ between ease of use, and security.
   <iframe width="949" height="534" src="https://www.youtube.com/embed/hKW182_Izaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-When a user wishes to interact with the RSK blockchain,
+When a user wishes to interact with the Rootstock blockchain,
 for example to transfer RBTC:
 
 - They input some instructions into the crypto wallet.
@@ -114,11 +114,11 @@ for example to transfer RBTC:
   - using a [digital signature algorithm](https://en.wikipedia.org/wiki/Digital_Signature_Algorithm).
 - This produces a signed transaction.
 - The wallet then submits the signed transaction to
-  computers running the RSK blockchain software,
+  computers running the Rootstock blockchain software,
   using RPC messages
 - If the user checks the state of the wallet, at this point,
   they will see the transaction that they input earlier as “pending”.
-- The RSK blockchain nodes form a peer to peer network,
+- The Rootstock blockchain nodes form a peer to peer network,
   and they each independently verify the transaction,
   and come to a consensus about whether the transaction
   is valid and should be confirmed.
@@ -130,25 +130,27 @@ for example to transfer RBTC:
 - If the user checks the state of the wallet, at this point,
   they will see the transaction that they input earlier as being “confirmed”.
 
-Both Bitcoin wallets and RSK wallets work in the manner described above.
+Both Bitcoin wallets and Rootstock wallets work in the manner described above.
 However, it is much more complex when a wallet needs to swap BTC with RBTC.
 This would need a special type of wallet that integrates with
-either the RSK native PowPeg,
+either the Rootstock native PowPeg,
 or a wallet that integrates with a 3rd party service that performs the swaps.
 
-Let’s take a look at two different RSK wallets, 
+Let’s take a look at two different Rootstock wallets, 
 each of which implements the above techniques.
 
-## Wallets that support RSK
+## Wallets that support Rootstock
+
+> For a list of updated wallets, see the [Wallets](/develop/wallet/use/) section.
 
 ### Defiant
 
 Defiant is a software wallet that can be installed on a smartphone.
 
-Currently, it is the only wallet giving its users the possibility of swapping BTC and RBTC through the native RSK PowPeg. This is an especially good option for users that are already using the wallet with BTC or RBTC balances.
+Currently, it is the only wallet giving its users the possibility of swapping BTC and RBTC through the native Rootstock PowPeg. This is an especially good option for users that are already using the wallet with BTC or RBTC balances.
 
-![Defiant Wallet Image](/assets/img/guides/get-crypto-on-rsk/rbtc-wallets-defiant.png)
-![Defiant Wallet Image 2](/assets/img/guides/get-crypto-on-rsk/rbtc-wallets-defiant-2.png)
+![Defiant Wallet Image](/assets/img/guides/get-crypto-on-Rootstock/rbtc-wallets-defiant.png)
+![Defiant Wallet Image 2](/assets/img/guides/get-crypto-on-Rootstock/rbtc-wallets-defiant-2.png)
 
 **Pros**:
 - Easy to use and less prone to error.
@@ -159,7 +161,7 @@ Currently, it is the only wallet giving its users the possibility of swapping BT
 **Cons**:
 - Users from other wallets need to move funds to the supported wallets to use this functionality.
 - Unless the wallet charges specific fees, there is no clear business model for a wallet to integrate this feature.
-- Same cons as the native RSK PowPeg method.
+- Same cons as the native Rootstock PowPeg method.
 
 #### How to Get RBTC with defiant wallet
 
@@ -171,7 +173,7 @@ Currently, it is the only wallet giving its users the possibility of swapping BT
 
 Liquality is a software wallet that can be installed as a browser extension.
 
-It works in a manner similar to other browser extension wallets, such as MetaMask. Its key feature allows users to swap between BTC and RBTC. However, unlike Defiant, the user does not have to deal directly with the native RSK PowPeg, and instead it performs cross-chain atomic swaps, using Liquality’s own technology.
+It works in a manner similar to other browser extension wallets, such as MetaMask. Its key feature allows users to swap between BTC and RBTC. However, unlike Defiant, the user does not have to deal directly with the native Rootstock PowPeg, and instead it performs cross-chain atomic swaps, using Liquality’s own technology.
 
 ![Wallet Screens Landing](/assets/img/solutions/Liquality/Wallet-Screens-Landing-p-1080.jpeg)
 
@@ -180,8 +182,8 @@ It works in a manner similar to other browser extension wallets, such as MetaMas
 - Users of the wallet don’t need to move to another tool or wallet to make use of this feature.
 - No registration or KYC required.
 - No need to relinquish keys to a counterparty
-- Faster than native RSK PowPeg.
-- No need for technical expertise or knowledge of the RSK PowPeg to operate.
+- Faster than native Rootstock PowPeg.
+- No need for technical expertise or knowledge of the Rootstock PowPeg to operate.
 
 **Cons**:
 - Users from other wallets need to move funds to the supported wallets to use this functionality.
@@ -214,5 +216,5 @@ Watch the videos below for a step by step guide on how to send and receive RBTC 
 ## Next
 
 Be sure to check out our next article in this series,
-about how to get the RSK cryptocurrency, RBTC,
-by using exchanges: [How to get RBTC using Exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges/)
+about how to get the Rootstock cryptocurrency, RBTC,
+by using exchanges: [How to get RBTC using Exchanges](/guides/get-crypto-on-Rootstock/rbtc-exchanges/)
