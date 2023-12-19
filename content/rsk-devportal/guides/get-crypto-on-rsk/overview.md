@@ -4,35 +4,31 @@ menu_title: Overview
 title: 'Get Crypto on Rootstock'
 description: 'See how to get RBTC using Powpeg and Wallets, and find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on the Rootstock Network'
 tags: knowledge-base, crypto, buy, swap, exchange, wallets, powpeg
-render_features: 'tables-with-borders'
+render_features: $`tables-with-borders` && $`collapsible`
 layout: 'rsk'
 ---
 
 Find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on the Rootstock Network.
 
-1. **I want to use fiat currency to obtain cryptocurrencies and tokens on the Rootstock network…**
+## Common Scenarios
 
-    - For USD, use [Binance](https://www.binance.com/en)
-    - For ARS, UYU, and VES, use [Defiant](https://dev.rootstock.io/solutions/defiant/)
+[](#top "collapsible")
+- I want to use fiat currency to obtain cryptocurrencies and tokens on the Rootstock network
+    > For USD, use [Binance](https://www.binance.com/en)
+    > For ARS, UYU, and VES, use [Defiant](https://dev.rootstock.io/solutions/defiant/)
+- I want to use Bitcoin to obtain cryptocurrencies and tokens on the Rootstock network
+    > - Use [Defiant](/solutions/defiant/)
+    > - Use [Liquality](/solutions/liquality/)	
+    > - Use [Sovryn](/solutions/sovryn/)
+- I want to swap cryptocurrencies and tokens on the Rootstock network
+    > - Use [Liquality](https://liquality.io/)
+    > - Use [TEX by Money on Chain](https://tex.moneyonchain.com/)
+    > - Use [RIF on Chain](https://rif.moneyonchain.com/)
+- I want to obtain currencies for testing on Rootstock Testnet
+    > - [For tRBTC use the Rootstock Faucet](https://faucet.rsk.co/)
+    > - [For tRIF use the RIF Faucet](https://faucet.rifos.org/)
 
-2. **I want to use Bitcoin to obtain cryptocurrencies and tokens on the Rootstock network…**
-
-    - Use [Defiant](/solutions/defiant/)
-    - Use [Liquality](/solutions/liquality/)	
-    - Use [Sovryn](/solutions/sovryn/)
-
-3. **I want to swap cryptocurrencies and tokens on the Rootstock network…**
-
-    - Use [Liquality](https://liquality.io/)
-    - Use [TEX by Money on Chain](https://tex.moneyonchain.com/)
-    - Use [RIF on Chain](https://rif.moneyonchain.com/)
-
-
-4. **I want to obtain currencies for testing on Rootstock Testnet…**
-
-    - [For tRBTC use the Rootstock Faucet](https://faucet.rsk.co/)
-    - [For tRIF use the RIF Faucet](https://faucet.rifos.org/)
-
+## Supported Tokens and Categories
 
 | Name | Network | Supported Rootstock Tokens| Supported Cryptocurrencies | Supported Fiat | Category
 | --- | --- | --- | --- | --- |   ---|
@@ -45,5 +41,5 @@ Find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on 
 |[RIF Faucet](https://faucet.rsk.co/) | Testnet | | [tRIF](https://faucet.rifos.org/)   |    |    Faucet |
 
 ## Next
-Be sure to check out our next article in this guide,
+Be sure to check out the next article in this guide,
 about [Cryptocurrency vs Token](/guides/get-crypto-on-rsk/cryptocurrency-vs-token/)
