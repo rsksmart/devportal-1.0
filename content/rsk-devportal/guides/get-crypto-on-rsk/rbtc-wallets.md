@@ -7,10 +7,10 @@ tags: rbtc, Rootstock, wallets, defi, exchange, crypto, how-to, knowledge-base
 layout: "rsk"
 ---
 
-![How to get RBTC using wallets](/assets/img/guides/get-crypto-on-Rootstock/rbtc-wallets.jpg)
+![How to get RBTC using wallets](/assets/img/guides/get-crypto-on-rsk/rbtc-wallets.jpg)
 
 If the technical expertise required to
-[use the PowPeg to swap between BTC and RBTC](/kb/get-crypto-on-Rootstock/powpeg-btc-rbtc/) 
+[use the PowPeg to swap between BTC and RBTC](/kb/get-crypto-on-rsk/powpeg-btc-rbtc/) 
 is something that you prefer to avoid,
 you may wish to consider using crypto wallets that can make this process easier to do!
 Let’s first understand what crypto wallets are and how they work,
@@ -41,7 +41,7 @@ Some crypto wallets support **smart contracts** when
 they connect to blockchain networks such as Rootstock.
 They allow a user to invoke smart contract functions.
 Recall one of the
-[differences between tokens and cryptocurrency](/kb/get-crypto-on-Rootstock/cryptocurrency-vs-token/),
+[differences between tokens and cryptocurrency](/kb/get-crypto-on-rsk/cryptocurrency-vs-token/),
 which is that **tokens** are implemented using smart contracts.
 Thus crypto wallets which understand smart contracts
 are necessary to store and transfer tokens.
@@ -49,7 +49,7 @@ are necessary to store and transfer tokens.
 
 ## Difference between a Private and Public Key
 
-![Public and private keys](/assets/img/guides/get-crypto-on-Rootstock/PrivateVSPublicKey.png)
+![Public and private keys](/assets/img/guides/get-crypto-on-rsk/PrivateVSPublicKey.png)
 
 In crypto wallets, public keys and private keys are
 primarily used in digital signature algorithms.
@@ -62,7 +62,7 @@ think of it as analogous to your password.
 
 ## Hardware and Software Wallets
 
-![Hardware and Software Wallets](/assets/img/guides/get-crypto-on-Rootstock/hardwareVSsoftware.png)
+![Hardware and Software Wallets](/assets/img/guides/get-crypto-on-rsk/hardwareVSsoftware.png)
 
 A **hardware wallet** is a special-purpose device
 configured to accept supported cryptocurrencies and tokens.
@@ -97,7 +97,7 @@ between ease of use, and security.
 
 ## How wallets work
 
-![Wallet Image](/assets/img/guides/get-crypto-on-Rootstock/wallet.jpg)
+![Wallet Image](/assets/img/guides/get-crypto-on-rsk/wallet.jpg)
 
 **Watch this short explainer video to understand how crypto wallets work**
 
@@ -149,8 +149,8 @@ Defiant is a software wallet that can be installed on a smartphone.
 
 Currently, it is the only wallet giving its users the possibility of swapping BTC and RBTC through the native Rootstock PowPeg. This is an especially good option for users that are already using the wallet with BTC or RBTC balances.
 
-![Defiant Wallet Image](/assets/img/guides/get-crypto-on-Rootstock/rbtc-wallets-defiant.png)
-![Defiant Wallet Image 2](/assets/img/guides/get-crypto-on-Rootstock/rbtc-wallets-defiant-2.png)
+![Defiant Wallet Image](/assets/img/guides/get-crypto-on-rsk/rbtc-wallets-defiant.png)
+![Defiant Wallet Image 2](/assets/img/guides/get-crypto-on-rsk/rbtc-wallets-defiant-2.png)
 
 **Pros**:
 - Easy to use and less prone to error.
@@ -217,4 +217,4 @@ Watch the videos below for a step by step guide on how to send and receive RBTC 
 
 Be sure to check out our next article in this series,
 about how to get the Rootstock cryptocurrency, RBTC,
-by using exchanges: [How to get RBTC using Exchanges](/guides/get-crypto-on-Rootstock/rbtc-exchanges/)
+by using exchanges: [How to get RBTC using Exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges/)

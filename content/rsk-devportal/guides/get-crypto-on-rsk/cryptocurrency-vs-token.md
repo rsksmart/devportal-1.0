@@ -7,7 +7,7 @@ tags: knowledge-base, tokens, Rootstock, smart contracts, cryptocurrency
 layout: 'rsk'
 ---
 
-![CryptovsTokenBanner](/assets/img/guides/get-crypto-on-Rootstock/crypto-token-banner.jpg)
+![CryptovsTokenBanner](/assets/img/guides/get-crypto-on-rsk/crypto-token-banner.jpg)
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/GWoNxoaIsbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -17,14 +17,14 @@ layout: 'rsk'
 
 In broad terms, a digital asset is a non-tangible asset that is created, traded, and stored in a digital format. Using this definition, in the context of blockchains, digital assets include cryptocurrency and crypto tokens.
 
-![CryptovsTokenList](/assets/img/guides/get-crypto-on-Rootstock/crypto-token-1.jpg)
+![CryptovsTokenList](/assets/img/guides/get-crypto-on-rsk/crypto-token-1.jpg)
 
 The blockchain terms; token and cryptocurrency are often used interchangeably, as these are both digital assets on blockchains. The biggest difference between a cryptocurrency and a token is that cryptocurrencies are the native asset of a
 blockchain like BTC, RBTC, or ETH, whereas tokens are built on an existing blockchain, using smart contracts. Most commonly, these are EIP-20 tokens.
 
 The following chart summarises the similarities between the two:
 
-![CryptovsTokenList2](/assets/img/guides/get-crypto-on-Rootstock/crypto-token-2.jpg)
+![CryptovsTokenList2](/assets/img/guides/get-crypto-on-rsk/crypto-token-2.jpg)
 
 As we can see, these are largely the same from the perspective of the end user. However, there are large technical differences between the two. Let’s dive a little bit deeper into the technical differences:
 
@@ -48,7 +48,7 @@ Note that many details have been left out of the above description, for the sake
 
 In Bitcoin, and in many other blockchains, the information being signed was about one account transferring units from itself to another account. These units are encoded into the software protocols of the blockchain software itself and are known as cryptocurrency. In this system, there is only one type of transaction.
 
-In Ethereum, Rootstock, and many other blockchains that support smart contracts, the information being signed was about one account transferring units of cryptocurrency from itself to another account too. However, these add a new concept where you could have “smart contracts” which are autonomously executing code and data stored on the blockchain. These smart contracts may be thought of as a special type of account. Now an account may sign information that does **not** transfer any units of cryptocurrency, but instead contains instructions for a smart contract to execute some code or store some data. In this system, there are two types of transaction. Read more about Smart contracts in [How to Build a Full Stack dApp on Rootstock](https://developers.Rootstock.co/guides/full-stack-dapp-on-Rootstock/part1-overview/).
+In Ethereum, Rootstock, and many other blockchains that support smart contracts, the information being signed was about one account transferring units of cryptocurrency from itself to another account too. However, these add a new concept where you could have “smart contracts” which are autonomously executing code and data stored on the blockchain. These smart contracts may be thought of as a special type of account. Now an account may sign information that does **not** transfer any units of cryptocurrency, but instead contains instructions for a smart contract to execute some code or store some data. In this system, there are two types of transaction. Read more about Smart contracts in [How to Build a Full Stack dApp on Rootstock](https://dev.rootstock.io/guides/full-stack-dapp-on-Rootstock/part1-overview/).
 
 ## Tokens
 
@@ -67,4 +67,4 @@ When interacting with blockchain networks, it is important to be aware of this d
 
 Be sure to check out our next article in this series,
 about how to get the Rootstock cryptocurrency, RBTC,
-by using the PowPeg: [How to get RBTC using Rootstock’s built in PowPeg](/guides/get-crypto-on-Rootstock/powpeg-btc-rbtc/)
+by using the PowPeg: [How to get RBTC using Rootstock’s built in PowPeg](/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)

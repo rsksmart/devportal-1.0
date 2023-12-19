@@ -7,7 +7,7 @@ tags: rbtc, Rootstock, powpeg, 2-way peg, defi, exchange, crypto, buy, peg-in, p
 layout: "rsk"
 ---
 
-![Powpeg Banner](/assets/img/guides/get-crypto-on-Rootstock/powpeg-banner.jpg)
+![Powpeg Banner](/assets/img/guides/get-crypto-on-rsk/powpeg-banner.jpg)
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/KmXayl_z9-0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -111,7 +111,7 @@ to the PowPeg address on the Bitcoin network,
 and subsequently inform the Bridge about this transaction.
 The Powpeg subsequently releases bitcoins (RBTC) on the Rootstock network.
 
-![Peg-In](/assets/img/guides/get-crypto-on-Rootstock/Bitcoin-Rootstock-Peg-In.gif)
+![Peg-In](/assets/img/guides/get-crypto-on-rsk/Bitcoin-RSK-Peg-In.gif)
 
 To summarise, a peg-in:
 
@@ -120,7 +120,7 @@ To summarise, a peg-in:
 - Releases RBTC on the Rootstock network
 
 > For a step-by step guide of the process, check out the
-[peg-in guide](/Rootstock/rbtc/conversion/networks/mainnet/#btc-to-rbtc-conversion)
+[peg-in guide](/rsk/rbtc/conversion/networks/mainnet/#btc-to-rbtc-conversion)
 (BTC → RBTC)
 
 ## Sending RBTC (peg-out)
@@ -133,7 +133,7 @@ Then wait for the required number of confirmation blocks,
 after which the Bridge builds the transaction
 to release bitcoins (BTC) on the Bitcoin network.
 
-![Peg-Out](/assets/img/guides/get-crypto-on-Rootstock/Rootstock-Bitcoin-Peg-Out.gif)
+![Peg-Out](/assets/img/guides/get-crypto-on-rsk/RSK-Bitcoin-Peg-Out.gif)
 
 To summarise, a peg-out:
 
@@ -142,7 +142,7 @@ To summarise, a peg-out:
 - Releases BTC on the Bitcoin network
 
 > For a step-by step guide of the process, check out the
-[peg-out guide](/Rootstock/rbtc/conversion/networks/mainnet/#rbtc-to-btc-conversion)
+[peg-out guide](/rsk/rbtc/conversion/networks/mainnet/#rbtc-to-btc-conversion)
 (RBTC → BTC)
 
 ## Get RBTC using PowPeg
@@ -158,4 +158,4 @@ between BTC and RBTC using the PowPeg protocol.
 
 Be sure to check out our next article in this series,
 about how to get the Rootstock cryptocurrency, RBTC,
-by using wallets: [How to get RBTC using Wallets](/guides/get-crypto-on-Rootstock/rbtc-wallets/)
+by using wallets: [How to get RBTC using Wallets](/guides/get-crypto-on-rsk/rbtc-wallets/)
