@@ -29,31 +29,25 @@ The way that exchanges work will be quite familiar if you have traded on a stock
 
 ## Exchanges with RBTC
 
-There are currently exchanges that allow users to trade between BTC and RBTC: Sovryn Fast BTC.
+There are currently exchanges that allow users to trade between BTC and RBTC using Buenbit and [Custodial Cryptocurrency Exchange](#centralised-cryptocurrency-exchanges).
 
-### Sovryn Fast BTC
+### Buenbit
 
-[Sovryn](https://dev.rootstock.io/solutions/sovryn/) is a non-custodial and permissionless smart contract based system for Bitcoin lending, borrowing and margin trading. Users can buy SOV with RBTC, swap and trade: DOC, BPRO, rUSDT, xUSD, and MOC tokens.
+[Buenbit](https://buenbit.com/) is an intelligent investment, savings and credit platform with an international Mastercard® card that allows you to use your balance to pay.
 
-[Get RBTC on Sovryn Fast BTC](https://alpha.sovryn.app/portfolio)
+It is available for iOS and Android devices where you can:
 
-<div class="video-container">
-  <iframe width="949" height="534" src="https://youtube.com/embed/8ds2_9hzZYM?si=d-pUCb8B6oWHVlQR" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+- Deposit and withdraw Fiat (local currency) by bank transfer to your own account.
+- Buy and sell your titles.
+- Buy and sell: BTC, ETH, RIF, RBTC and RDOC.
+
+[Download the Buenbit App](https://buenbit.com/)
 
 ## Custodial cryptocurrency exchanges
 
-In addition to centralised exchanges, there also is another category of exchange services for that act similar to exchanges, but do not require registration or KYC.
+In addition to centralised exchanges, there is another category of exchange services that act similar to exchanges, but do not require registration or KYC.
 
-There are services that allow users to trade between BTC and RBTC: Liquality, TEX, Mt Pelerin, RIF on Chain.
-
-### Mt Pelerin
-
-Mt Pelerin is a digital asset trading platform, it offers a way to buy cryptocurrencies such as RBTC and other assets on any of your wallets instantly by card or bank transfer. Including getting the live market price, the lowest fees and no hidden costs.
-
-[BTC/RBTC pair on MtPelerin](https://www.mtpelerin.com/exchange-crypto?ssa=0.01&wsc=BTC&wdc=RBTC&wsa=0.01)
-
-![MtPelerin-RBTC](/assets/img/guides/get-crypto-on-rsk/mt-pelerin-rbtc.png)
+There are services that allow users to trade between BTC and RBTC: [Sovryn](#sovryn-fast-btc), [Liquality](#liquality), [Bisq](#bisq), [TEX](#tex-by-moneyonchain), [Mt Pelerin](#mt-pelerin), [RIF on Chain](#rif-on-chain).
 
 **Pros**:
 - No registration or KYC required.
@@ -68,6 +62,32 @@ Mt Pelerin is a digital asset trading platform, it offers a way to buy cryptocur
 - Requires liquidity provision.
 - Potential regulatory, compliance, or money transmitter risks, for companies providing these services.
 
+### Sovryn Fast BTC
+
+[Sovryn](https://dev.rootstock.io/solutions/sovryn/) is a non-custodial and permissionless smart contract based system for Bitcoin lending, borrowing and margin trading. Users can buy SOV with RBTC, swap and trade: DOC, BPRO, rUSDT, xUSD, and MOC tokens.
+
+[Get RBTC on Sovryn Fast BTC](https://alpha.sovryn.app/portfolio)
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://youtube.com/embed/8ds2_9hzZYM?si=d-pUCb8B6oWHVlQR" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### Mt Pelerin
+
+Mt Pelerin is a digital asset trading platform, it offers a way to buy cryptocurrencies such as RBTC and other assets on any of your wallets instantly by card or bank transfer. Including getting the live market price, the lowest fees and no hidden costs.
+
+[BTC/RBTC pair on MtPelerin](https://www.mtpelerin.com/exchange-crypto?ssa=0.01&wsc=BTC&wdc=RBTC&wsa=0.01)
+
+![MtPelerin-RBTC](/assets/img/guides/get-crypto-on-rsk/mt-pelerin-rbtc.png)
+
+### Bisq
+
+[Bisq](https://bisq.network/) allow users to buy and sell bitcoin for fiat (or other cryptocurrencies including RBTC) privately and securely using Bisq's peer-to-peer network and open-source desktop software. No registration required.
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube.com/embed/EfNZIuK2I98?si=5dadyW0Ww_0W-hzq" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ### Liquality
 
 [Liquality](https://liquality.io/)
@@ -79,13 +99,13 @@ The Liquality Wallet is a browser extension for accessing Bitcoin and Rootstock 
 
 ### TEX by MoneyOnChain
 
-[Tex](https://tex.moneyonchain.com/?baseToken=WRBTC&secondaryToken=RIF) is a decentralized exchange powered by [Money on Chain](https://tex.moneyonchain.com/). MoC provides a Bitcoin-Collateralized Stablecoin. This solves the biggest problem for Bitcoin mainstream adoption: the volatility problem.
+[Tex](https://tex.moneyonchain.com/?baseToken=WRBTC&secondaryToken=RIF) is a decentralized exchange powered by [Money on Chain](https://tex.moneyonchain.com/).
 
 ![Tex-Exchange](/assets/img/guides/get-crypto-on-rsk/tex-rbtc.png)
 
 ### RIF on Chain
 
-[RIF On Chain](https://dapp.rifonchain.com/ipfs/QmYJU4vWHFxoybwTq9Jkn8PQiKA42m2x5sSfWjVgke1ci4/) is a fully decentralised protocol that gives users a stablecoin pegged 1:1 with USD, and also provides a leveraged token for RIF holders and traders. Convert BTC from the Bitcoin network to RBTC using the integrated [FastBTC from Sovryn](https://alpha.sovryn.app/portfolio).
+[RIF on Chain](https://dapp.rifonchain.com/ipfs/QmYJU4vWHFxoybwTq9Jkn8PQiKA42m2x5sSfWjVgke1ci4/) is a fully decentralised protocol that gives users a stablecoin pegged 1:1 with USD, and also provides a leveraged token for RIF holders and traders. Convert BTC from the Bitcoin network to RBTC using the integrated [FastBTC from Sovryn](https://alpha.sovryn.app/portfolio).
 
 ![RIF on Chain](/assets/img/guides/get-crypto-on-rsk/rif-on-chain.png)
 
