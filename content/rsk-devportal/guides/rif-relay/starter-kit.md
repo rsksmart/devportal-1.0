@@ -302,7 +302,7 @@ RIF Relay Server Repository: [https://github.com/rsksmart/rif-relay-server](http
 
 ## RIF Relay Sample dApp
 
-This sample dApp shows you how to send transactions to the Rootstock blockchain using the [RIF Relay SDK](https://github.com/infuy/relaying-services-sdk). You'll need to connect the dApp with MetaMask for signing transactions with the account managing your Smart Wallets.
+This sample dApp shows you how to send transactions to the Rootstock blockchain using the [RIF Relay Sample dApp SDK](https://github.com/rsksmart/rif-relay-sample-dapp). You'll need to connect the dApp with MetaMask for signing transactions with the account managing your Smart Wallets.
 
 [](#top "collapsible")
 - Clone SDK repository and install dependencies:

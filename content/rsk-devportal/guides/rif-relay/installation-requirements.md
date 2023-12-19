@@ -8,8 +8,6 @@ permalink: /guides/rif-relay/installation-requirements/
 render_features: 'collapsible'
 ---
 
-## Installation Requirements
-
 To set up the RIF Relay system running locally there are some tools that are required. All of these tools are open source and have their own support page. The functionality of RIF Relay does not depend on these technologies and could be updated or replaced, if necessary.
 
 [](#top "collapsible")
