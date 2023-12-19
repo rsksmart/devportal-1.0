@@ -3,7 +3,7 @@ layout: rsk
 title: Setup node on Java
 tags: java, install, rsk, rskj, node, how-to, network, requirements, mainnet, jar
 menu_order: 4
-render_features: 'custom-terminals collapsible'
+render_features: 'custom-terminals collapsible' 
 ---
 
 ### Requirements
@@ -19,7 +19,7 @@ To run RSKj on Apple M1/M2 devices using x86 based software, ensure you have `Ro
 
 #### Download and Setup
 
-1. **Download the JAR**: Obtain the Fat JAR or Uber JAR from [RSKj releases](https://github.com/rsksmart/rskj/releases), or compile it [reproducibly](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [otherwise](/rsk/node/contribute).
+1. **Download the JAR**: Download the Fat JAR or Uber JAR from [RSKj releases](https://github.com/rsksmart/rskj/releases), or compile it [reproducibly](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [otherwise](/rsk/node/contribute).
 1. **Create Directory**: Create a directory for the node.
     ```jsx
     mkdir rskj-node-jar
