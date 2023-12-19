@@ -1,9 +1,9 @@
 ---
 menu_order: 400
 menu_title: Get RBTC using Powpeg
-title: "How to get RBTC using RSK’s built in PowPeg"
-description: "Learn how the RSK Powpeg works and how to use it to get RBTC via the peg-in and peg-out process"
-tags: rbtc, rsk, powpeg, 2-way peg, defi, exchange, crypto, buy, peg-in, peg-out, how-to
+title: "How to get RBTC using Rootstock’s built in PowPeg"
+description: "Learn how the Rootstock Powpeg works and how to use it to get RBTC via the peg-in and peg-out process"
+tags: rbtc, Rootstock, powpeg, 2-way peg, defi, exchange, crypto, buy, peg-in, peg-out, how-to
 layout: "rsk"
 ---
 
@@ -19,9 +19,9 @@ ranging from exchanges, decentralised exchanges,
 and even peer-to-peer swaps -
 These are generally easier to use.
 
-The RSK blockchain protocol itself supports a method built into its
+The Rootstock blockchain protocol itself supports a method built into its
 blockchain protocol that allows for two-way swaps between BTC and RBTC:
-The RSK PowPeg.
+The Rootstock PowPeg.
 This is generally more difficult to use,
 and is intended for those with a more technical background.
 
@@ -29,20 +29,20 @@ Even if you intend to use those other services to obtain RBTC,
 it is still important to know about the PowPeg,
 as these other services ultimately rely on the PowPeg themselves.
 
-## What the RSK PowPeg does
+## What the Rootstock PowPeg does
 
 A two-way peg (2WP) protocol is a protocol that allows transfers of
 a cryptocurrency from a main blockchain
 to a secondary blockchain and vice versa.
 It requires low third party trust.
 
-In the case of RSK, the main blockchain is Bitcoin,
-and the secondary blockchain is RSK.
-Every RBTC (or fraction of RBTC) unlocked in the RSK platform
+In the case of Rootstock, the main blockchain is Bitcoin,
+and the secondary blockchain is Rootstock.
+Every RBTC (or fraction of RBTC) unlocked in the Rootstock platform
 requires BTC to be locked on the Bitcoin blockchain.
 This mechanism ensures there is a one-to-one relationship
 between BTC and RBTC (1 BTC = 1 RBTC),
-which is guaranteed by the RSK protocol.
+which is guaranteed by the Rootstock protocol.
 
 When a user wants to swap between BTC and RBTC,
 they need to send the cryptocurrency to the address
@@ -50,7 +50,7 @@ specified by the PowPeg,
 triggering a peg-in or a peg-out,
 which we will describe in more detail below.
 
-## How the RSK PowPeg works
+## How the Rootstock PowPeg works
 
 There are some restrictions and validations done when
 a peg-in or peg-out transaction is made, such as:
@@ -64,13 +64,13 @@ instead the receiving address is determined
 using the public key of the sender,
 so that both accounts are controlled by the same private key.
 
-> Note that in the upcoming RSK release (IRIS-3.0),
+> Note that in the upcoming Rootstock release (IRIS-3.0),
 > this is partially changing.
 > The PowPeg will allow the user to specify the
 > receiving address for peg-ins (BTC → RBTC).
 
 The process of peg-ins and peg-outs are done completely using
-Bitcoin wallet software and RSK wallet software.
+Bitcoin wallet software and Rootstock wallet software.
 The onus to perform the necessary checks and validations
 for compliance with the rules of the PowPeg lies on the user,
 as there is no application or tool to perform this.
@@ -104,12 +104,12 @@ as there is no application or tool to perform this.
 ## Receiving RBTC (peg-in)
 
 Peg-in is the standard term for the process that
-transfers bitcoins from the Bitcoin network to the RSK network.
+transfers bitcoins from the Bitcoin network to the Rootstock network.
 
 To perform a peg-in send the bitcoins (BTC)
 to the PowPeg address on the Bitcoin network,
 and subsequently inform the Bridge about this transaction.
-The Powpeg subsequently releases bitcoins (RBTC) on the RSK network.
+The Powpeg subsequently releases bitcoins (RBTC) on the Rootstock network.
 
 ![Peg-In](/assets/img/guides/get-crypto-on-rsk/Bitcoin-RSK-Peg-In.gif)
 
@@ -117,7 +117,7 @@ To summarise, a peg-in:
 
 - Converts BTC to RBTC
 - Locks BTC on the Bitcoin network
-- Releases RBTC on the RSK network
+- Releases RBTC on the Rootstock network
 
 > For a step-by step guide of the process, check out the
 [peg-in guide](/rsk/rbtc/conversion/networks/mainnet/#btc-to-rbtc-conversion)
@@ -126,7 +126,7 @@ To summarise, a peg-in:
 ## Sending RBTC (peg-out)
 
 Peg-out is the standard term for the process that transfers
-bitcoins from the RSK network to the Bitcoin network.
+bitcoins from the Rootstock network to the Bitcoin network.
 
 To perform peg-outs, send the bitcoins (RBTC) to the Bridge.
 Then wait for the required number of confirmation blocks,
@@ -138,7 +138,7 @@ to release bitcoins (BTC) on the Bitcoin network.
 To summarise, a peg-out:
 
 - Converts RBTC to BTC
-- Locks RBTC on the RSK network
+- Locks RBTC on the Rootstock network
 - Releases BTC on the Bitcoin network
 
 > For a step-by step guide of the process, check out the
@@ -157,5 +157,5 @@ between BTC and RBTC using the PowPeg protocol.
 ## Next
 
 Be sure to check out our next article in this series,
-about how to get the RSK cryptocurrency, RBTC,
+about how to get the Rootstock cryptocurrency, RBTC,
 by using wallets: [How to get RBTC using Wallets](/guides/get-crypto-on-rsk/rbtc-wallets/)
