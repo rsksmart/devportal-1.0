@@ -15,6 +15,8 @@ Another way to get RBTC is to use the services of centralised cryptocurrency exc
 
 The way that exchanges work will be quite familiar if you have traded on a stock exchange or a foreign currency exchange before. They typically have order books to match buy and sell orders among different users, with the price of a particular pair being the last match in the order book.
 
+> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/).
+
 ### How Exchanges work
 
 - Exchanges expose a list of **currency pairs**.
@@ -73,7 +75,7 @@ Mt Pelerin is a digital asset trading platform, it offers a way to buy cryptocur
 ![Liquality-Exchange](/assets/img/guides/get-crypto-on-rsk/liquality-exchange.png)
 
 [Liquality](/solutions/liquality/) 
-The Liquality Wallet is a browser extension for accessing Bitcoin and RSK applications. This alternative to MetaMask supports multiple blockchains and provides the easiest way to swap between BTC and RBTC, plus transact Rootstock tokens using built-in one-click atomic swaps.
+The Liquality Wallet is a browser extension for accessing Bitcoin and Rootstock applications. This alternative to MetaMask supports multiple blockchains and provides the easiest way to swap between BTC and RBTC, plus transact Rootstock tokens using built-in one-click atomic swaps.
 
 ### TEX by MoneyOnChain
 
@@ -89,21 +91,21 @@ The Liquality Wallet is a browser extension for accessing Bitcoin and RSK applic
 
 ## Sending and Receiving RBTC
 
-[RBTC is the built-in cryptocurrency of the Rootstock network](https://developers.rsk.co/kb/get-crypto-on-rsk/cryptocurrency-vs-token/). This means that (1) you should have a wallet that is configured to work with the RSK network, and (2) that wallet must have some RBTC if you wish to send transactions.
+[RBTC is the built-in cryptocurrency of the Rootstock network](https://developers.rsk.co/kb/get-crypto-on-rsk/cryptocurrency-vs-token/). This means that (1) you should have a wallet that is configured to work with the Rootstock network, and (2) that wallet must have some RBTC if you wish to send transactions.
 
-> Warning: A common mistake users make when interacting with exchanges is that they **confuse** Rootstock addresses/ wallets with Ethereum addresses/ wallets. Their addresses follow the same format, but they are otherwise incompatible. **Do not** send RBTC to an Ethereum address on an exchange. Similarly, **do not** send Ether to an RBTC address on an exchange. Your funds will be burnt (permanently lost) should you do so, as blockchain transactions are immutable, and therefore cannot be undone. It is **your own responsibility** to ensure that you are using the right wallet, and connected to the right network. RBTC can **only** be sent to and from RSK addresses on the Rootstock network.
+> Warning: A common mistake users make when interacting with exchanges is that they **confuse** Rootstock addresses/ wallets with Ethereum addresses/ wallets. Their addresses follow the same format, but they are otherwise incompatible. **Do not** send RBTC to an Ethereum address on an exchange. Similarly, **do not** send Ether to an RBTC address on an exchange. Your funds will be burnt (permanently lost) should you do so, as blockchain transactions are immutable, and therefore cannot be undone. It is **your own responsibility** to ensure that you are using the right wallet, and connected to the right network. RBTC can **only** be sent to and from Rootstock addresses on the Rootstock network.
 
 The general approach to use an exchange to convert BTC to RBTC:
 - Find the deposit address on the exchange on the Bitcoin network corresponding to your account on the exchange.
 - Use your Bitcoin wallet to send BTC to this Bitcoin address.
 - Wait for your BTC balance to appear on your account in the exchange
 - Find the BTC/RBTC pair in the exchange, and sell BTC to buy RBTC
-- Select a withdrawal address from your Rootstock wallet on the RSK network.
+- Select a withdrawal address from your Rootstock wallet on the Rootstock network.
 - Use the exchange’s user interface to withdraw RBTC to your Rootstock address.
 
 The general approach to use an exchange to convert RBTC to BTC:
 - Find the deposit address on the exchange on the Rootstock network corresponding to your account on the exchange.
-- Use your RSK wallet to send RBTC to this Rootstock address.
+- Use your Rootstock wallet to send RBTC to this Rootstock address.
 - Wait for your RBTC balance to appear on your account in the exchange
 - Find the BTC/RBTC pair in the exchange, and sell RBTC to buy BTC
 - Select a withdrawal address from your Bitcoin wallet on the Bitcoin network.

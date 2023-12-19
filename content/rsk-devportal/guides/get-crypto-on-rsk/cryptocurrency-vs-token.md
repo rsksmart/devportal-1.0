@@ -19,6 +19,8 @@ In broad terms, a digital asset is a non-tangible asset that is created, traded,
 
 ![CryptovsTokenList](/assets/img/guides/get-crypto-on-rsk/crypto-token-1.jpg)
 
+> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/).
+
 The blockchain terms; token and cryptocurrency are often used interchangeably, as these are both digital assets on blockchains. The biggest difference between a cryptocurrency and a token is that cryptocurrencies are the native asset of a
 blockchain like BTC, RBTC, or ETH, whereas tokens are built on an existing blockchain, using smart contracts. Most commonly, these are EIP-20 tokens.
 
