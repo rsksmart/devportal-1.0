@@ -13,7 +13,7 @@ Find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on 
 1. **I want to use fiat currency to obtain cryptocurrencies and tokens on the Rootstock network…**
 
     - For USD, use [Binance](https://www.binance.com/en)
-    - For ARS, UYU, and VES, use [Defiant](https://developers.Rootstock.co/solutions/defiant/)
+    - For ARS, UYU, and VES, use [Defiant](https://dev.rootstock.io/solutions/defiant/)
 
 2. **I want to use Bitcoin to obtain cryptocurrencies and tokens on the Rootstock network…**
 
