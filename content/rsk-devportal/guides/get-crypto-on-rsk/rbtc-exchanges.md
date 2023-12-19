@@ -9,15 +9,13 @@ layout: "rsk"
 
 ![How to get RBTC using Exchanges](/assets/img/guides/get-crypto-on-rsk/rbtc-exchanges.jpg)
 
-## Centralised cryptocurrency exchanges
+In this section, we will cover the following;
+- [How Exchanges Work](#how-exchanges-work)
+- [Centralized cryptocurrency exchanges](#centralized-cryptocurrency-exchanges)
+- [Decentralized cryptocurrency exchanges](#decentralized-cryptocurrency-exchanges)
+- [Sending and Receiving RBTC](#sending-and-receiving-rbtc)
 
-Another way to get RBTC is to use the services of centralised cryptocurrency exchanges. These are companies who provide a service which allows its users to trade between one cryptocurrency and another cryptocurrency, or a fiat currency and a cryptocurrency. These exchanges hold assets on your behalf - which means that in the case of cryptocurrencies, they operate crypto wallets on your behalf.
-
-The way that exchanges work will be quite familiar if you have traded on a stock exchange or a foreign currency exchange before. They typically have order books to match buy and sell orders among different users, with the price of a particular pair being the last match in the order book.
-
-> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/).
-
-### How Exchanges work
+## How Exchanges work
 
 - Exchanges expose a list of **currency pairs**.
 - Each currency pair is essentially a market where users can buy and sell units of one currency for units of the other currency in the pair
@@ -27,9 +25,15 @@ The way that exchanges work will be quite familiar if you have traded on a stock
 - Exchanges usually charge a fee each time a user buys or sells some currency
 - Exchanges usually charge a fee to deposit or withdraw currency between their custodial accounts and your personal accounts
 
-## Exchanges with RBTC
+## Centralized cryptocurrency exchanges
 
-There are currently exchanges that allow users to trade between BTC and RBTC using Buenbit and [Custodial Cryptocurrency Exchange](#centralised-cryptocurrency-exchanges).
+Another way to get RBTC is to use the services of centralized cryptocurrency exchanges. These are companies who provide a service which allows its users to trade between one cryptocurrency and another cryptocurrency, or a fiat currency and a cryptocurrency. These exchanges hold assets on your behalf - which means that in the case of cryptocurrencies, they operate crypto wallets on your behalf.
+
+The way that exchanges work will be quite familiar if you have traded on a stock exchange or a foreign currency exchange before. They typically have order books to match buy and sell orders among different users, with the price of a particular pair being the last match in the order book.
+
+> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/).
+
+There are currently exchanges that allow users to trade between BTC and RBTC in a centralized way:
 
 ### Buenbit
 
@@ -43,7 +47,7 @@ It is available for iOS and Android devices where you can:
 
 [Download the Buenbit App](https://buenbit.com/)
 
-## Custodial cryptocurrency exchanges
+## Decentralized Cryptocurrency Exchanges
 
 In addition to centralised exchanges, there is another category of exchange services that act similar to exchanges, but do not require registration or KYC.
 

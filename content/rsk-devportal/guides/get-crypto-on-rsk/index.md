@@ -35,9 +35,7 @@ See how to get RBTC using powpeg and wallets, and find a list of tokens, wallets
         - [How to Get RBTC with liquality wallet](/guides/get-crypto-on-rsk/rbtc-wallets#how-to-get-rbtc-with-liquality-wallet)
         - [Sending and Receiving RBTC](/guides/get-crypto-on-rsk/rbtc-wallets#sending-and-receiving-rbtc)
 - [How to get RBTC using Exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges/)
-    - [Centralised cryptocurrency exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges#centralised-cryptocurrency-exchanges)
     - [How Exchanges work](/guides/get-crypto-on-rsk/rbtc-exchanges#how-exchanges-work)
-    - [Exchanges with RBTC](/guides/get-crypto-on-rsk/rbtc-exchanges#exchanges-with-rbtc)
-    - [Custodial cryptocurrency exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges#custodial-cryptocurrency-exchanges)
+    - [Centralized cryptocurrency exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges#centralized-cryptocurrency-exchanges)
+    - [Decentralized cryptocurrency exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges#decentralized-cryptocurrency-exchanges)
     - [Sending and Receiving RBTC](/guides/get-crypto-on-rsk/rbtc-exchanges#sending-and-receiving-rbtc)
-
