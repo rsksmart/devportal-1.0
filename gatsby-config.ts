@@ -3,6 +3,10 @@ import type {GatsbyConfig} from "gatsby";
 export const repo = `https://github.com/rsksmart/devportal.git`;
 const siteUrl = process.env.URL || `https://dev.rootstock.io`
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 const config: GatsbyConfig = {
   siteMetadata: {
     title: `Rootstock Developers Portal`,
