@@ -127,12 +127,16 @@ To interact with the Rootstock network, you need to add it to Metamask. Follow t
 To add network to Metamask:
 
 1. On Metamask, click the network selector, and then “add network”.
-
+    ![Add network to Metamask](/assets/img/rif-relay/starter-kit/add-network-to-metamask.png)
 1. Click “Add a network manually” and enter the following data:
     - Network name: RSK regtest
     - New RPC URL: [http://127.0.0.1:4444](http://127.0.0.1:4444)
     - Chain ID: 33
     - Currency symbol: tRBTC
+
+    ![Add network manually](/assets/img/rif-relay/starter-kit/add-network-manually.png)
+
+    You should see a screen that says **Network added successfully!**
 
 For additional details on Metamask and how to add it to Rootstock programmatically, see [Metamask](https://dev.rootstock.io/develop/wallet/use/metamask/) and [How to add Metamask to Rootstock Programmatically](https://dev.rootstock.io/kb/rootstock-metamask/).
 
@@ -333,9 +337,13 @@ This sample dApp shows you how to send transactions to the Rootstock blockchain 
     # run app in regtest environment
     ENV_VALUE="regtest" npm run start
     ```
-<br>
-
-- Connect metamask wallet for signing.
-- Create a new smart wallet.
-- Mint tokens to the wallet (see command on contract deployment process).
-- Transfer to different addresses, using TKN for transfer fees payment, instead of RBTC.
+    ![Run the dApp](/assets/img/rif-relay/starter-kit/run-the-dapp.png)
+- Connect metamask wallet for signing
+    ![Connect Metamask Wallet](/assets/img/rif-relay/starter-kit/connect-metamask-wallet.png)
+- Create a new smart wallet
+    ![Create a new Smart Wallet](/assets/img/rif-relay/starter-kit/create-smart-wallet.png)
+- Mint tokens to the wallet
+    - For commands to mint token, See step 6 in the Set up RIF Relay contracts section above.
+    ![Mint Tokens](/assets/img/rif-relay/starter-kit/mint-tokens.png)
+- Transfer to different addresses, using TKN for transfer fees payment, instead of RBTC
+    ![Transfer using TKN](/assets/img/rif-relay/starter-kit/transfer-using-tkn.png)
