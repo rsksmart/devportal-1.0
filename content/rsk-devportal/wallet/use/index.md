@@ -15,9 +15,9 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
         </a>
     </div>
     <div class="item">
-        <a href="https://cobo.com/" target="blank">
-        <img src="/assets/img/rsk/wallets/cobo-logo.svg" alt="Cobo">
-        <a class="company-name" href="https://www.cobo.com/wallet" target="blank">Cobo</a>
+        <a href="https://metamask.io" target="blank">
+        <img src="/assets/img/rsk/wallets/metamask.svg" alt="Metamask">
+        <a class="company-name" href="https://metamask.io" target="blank">Metamask</a>
         </a>
     </div>
     <div class="item">
@@ -27,9 +27,9 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
         </a>
     </div>
     <div class="item">
-        <a href="https://www.portis.io/" target="blank">
-        <img src="/assets/img/rsk/wallets/portis-logo.svg" alt="Portis">
-        <a class="company-name" href="https://www.portis.io/" target="blank">Portis</a>
+        <a href="https://leadwallet.io/" target="blank">
+        <img src="/assets/img/rsk/wallets/lead-wallet.png" alt="Lead Wallet">
+        <a class="company-name" href="https://leadwallet.io/" target="blank">Lead Wallet</a>
         </a>
     </div>
     <div class="item">
@@ -170,23 +170,12 @@ In the following matrix you can see the different features by wallet.
 | Wallet | | RSK Checksum | | RSK dPath | | Customizable dPath |
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
 | Beexo | | ✔ | | ✔ | | ✔ |
-| Blockwallet | |  | |  | |  |
-| Coinhub | |  | |  | |  |
 | D'CENT | | ✔ | | ✔ | | ❌ |
 | Defiant | | ✔ | | ✔ | | ❌ |
 | Edge | | ✔ | | ✔ | | ❌ |
-| Enkrypt | |  | |  | |  |
-| Exodus | |  | |  | |  |
-| Frontier | |  | |  | |  |
-| Lead Wallet | |  | |  | |  |
 | Ledger | | ✔ | | ✔ | | ❌ |
-| Liquality | |  | |  | |  |
 | Math Wallet | | ❌ | | ❌ | | ❌ |
 | Metamask | | ❌ | | ❌ | | ❌ |
 | MEW | | ✔ | | ✔ | | ✔ |
-| Rabby Wallet | |  | |  | |  |
 | rWallet | | ✔ | | ✔ | | ✔ |
-| Tally | |  | |  | |  |
-| TorusLabs | |  | |  | |  |
 | Trezor | | ✔ | | ✔ | | ❌ |
-| Xcapit | |  | |  | |  |
