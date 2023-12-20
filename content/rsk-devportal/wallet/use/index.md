@@ -153,11 +153,19 @@ In the following matrix you can see the different features by wallet.
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
 | Ledger | | ✔ | | ✔ | | ❌ |
 | Trezor | | ✔ | | ✔ | | ❌ |
-| MyCrypto | | ✔ | | ✔ | | ✔ |
+| Exodus | | ✔ | | ✔ | | ✔ |
 | MEW | | ✔ | | ✔ | | ✔ |
-| Metamask | | ❌ | | ❌ | | ❌ |
+| Enkrypt | | ❌ | | ❌ | | ❌ |
 | Edge | | ✔ | | ✔ | | ❌ |
 | Defiant | | ✔ | | ✔ | | ❌ |
 | Math Wallet | | ❌ | | ❌ | | ❌ |
 | Beexo | | ✔ | | ✔ | | ✔ |
-| D'CENT | | ✔ | | ✔ | | ❌ |
+| Blockwallet | | ✔ | | ✔ | | ❌ |
+| Coinhub | | ✔ | | ✔ | | ❌ |
+| Frontier | | ✔ | | ✔ | | ❌ |
+| Tally | | ✔ | | ✔ | | ❌ |
+| Lead Wallet | | ✔ | | ✔ | | ❌ |
+| Liquality | | ✔ | | ✔ | | ❌ |
+| Xcapit | | ✔ | | ✔ | | ❌ |
+| Rabby Wallet | | ✔ | | ✔ | | ❌ |
+| TorusLabs | | ✔ | | ✔ | | ❌ |
