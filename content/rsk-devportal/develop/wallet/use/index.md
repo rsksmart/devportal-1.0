@@ -79,7 +79,25 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [MyCrypto](/wallet/use/mycrypto)
 - [Metamask](/wallet/use/metamask)
 - [RPC](/wallet/use/json-rpc)
+- [MyEtherWallet](https://dev.rootstock.io/wallet/use/myetherwallet/)
+- [Enkrypt](https://www.enkrypt.com/networks/rootstock-wallet/)
+- [Blockwallet](https://blockwallet.io/networks/rootstock-wallet)
+- [Coinhub](https://www.coinhub.org)
+- [Exodus](https://www.exodus.com/support/article/2898-rootstock-ecosystem)
+- [Frontier](https://www.frontier.xyz)
+- [Tally](https://taho.xyz)
 - [Defiant](/solutions/defiant/)
+- [Lead Wallet](https://leadwallet.io)
+- [Beexo](https://beexo.com)
+- [Liquality](/solutions/liquality/)
+- [Math Wallets](https://blog.mathwallet.org/?p=1625)
+- [Xcapit](https://www.xcapit.com)
+- [Edge](https://dev.rootstock.io/solutions/edge/)
+- [Trezor](https://trezor.io/trezor-suite)
+- [D'cent](https://dev.rootstock.io/solutions/dcent/)
+- [Rabby Wallet](https://rabby.io)
+- [TorusLabs](https://tor.us/index.html)
+
 
 ## Compatibility Matrix
 
@@ -89,19 +107,22 @@ In the following matrix you can see the different features by wallet.
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
 | Ledger | | ✔ | | ✔ | | ❌ |
 | Trezor | | ✔ | | ✔ | | ❌ |
-| Exodus | | ✔ | | ✔ | | ✔ |
+| Exodus | |  | |  | |  |
 | MEW | | ✔ | | ✔ | | ✔ |
-| Enkrypt | | ❌ | | ❌ | | ❌ |
+| Metamask | | ❌ | | ❌ | | ❌ |
+| Enkrypt | |  | |  | |  |
 | Edge | | ✔ | | ✔ | | ❌ |
 | Defiant | | ✔ | | ✔ | | ❌ |
 | Math Wallet | | ❌ | | ❌ | | ❌ |
 | Beexo | | ✔ | | ✔ | | ✔ |
-| Blockwallet | | ✔ | | ✔ | | ❌ |
-| Coinhub | | ✔ | | ✔ | | ❌ |
-| Frontier | | ✔ | | ✔ | | ❌ |
-| Tally | | ✔ | | ✔ | | ❌ |
-| Lead Wallet | | ✔ | | ✔ | | ❌ |
-| Liquality | | ✔ | | ✔ | | ❌ |
-| Xcapit | | ✔ | | ✔ | | ❌ |
-| Rabby Wallet | | ✔ | | ✔ | | ❌ |
-| TorusLabs | | ✔ | | ✔ | | ❌ |
+| Blockwallet | |  | |  | |  |
+| Coinhub | |  | |  | |  |
+| Frontier | |  | |  | |  |
+| Tally | |  | |  | |  |
+| Lead Wallet | |  | |  | |  |
+| Liquality | |  | |  | |  |
+| Xcapit | |  | |  | |  |
+| Rabby Wallet | |  | |  | |  |
+| TorusLabs | |  | |  | |  |
+| rWallet | | ✔ | | ✔ | | ✔ |
+| D'CENT | | ✔ | | ✔ | | ❌ |
