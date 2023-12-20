@@ -40,7 +40,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.ledger.com/" target="blank">
-        <img src="/assets/img/rsk/wallets/ledger-wordmark-logo.svg" alt="Ledge">
+        <img src="/assets/img/rsk/wallets/ledger-logo.png" alt="Ledger">
         <a class="company-name" href="https://www.ledger.com/" target="blank">Ledger</a>
         </a>
     </div>
@@ -58,7 +58,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://mathwallet.org/en-us/" target="blank">
-        <img src="/assets/img/rsk/wallets/MathWallet_Logo_Vertical_Black.png" alt="Math Wallet">
+        <img src="/assets/img/rsk/wallets/mathwallet.png" alt="Math Wallet">
         <a class="company-name" href="https://mathwallet.org/en-us/" target="blank">Math Wallet</a>
         </a>
     </div>
@@ -100,19 +100,19 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.frontier.xyz/" target="blank">
-            <img id="square-fix" src="/assets/img/rsk/wallets/frontier_logo.svg" alt="frontier">
+            <img id="square-fix" src="/assets/img/rsk/wallets/frontier-logo.png" alt="frontier">
             <a class="company-name" href="https://www.frontier.xyz/" target="blank">Frontier</a>
         </a>
     </div>
     <div class="item">
         <a href="https://taho.xyz/" target="blank">
-            <img id="square-fix" src="/assets/img/rsk/wallets/tally-wallet.svg" alt="tally">
-            <a class="company-name" href="https://taho.xyz/" target="blank">Tally</a>
+            <img id="square-fix" src="/assets/img/rsk/wallets/taho-logo.png" alt="taho">
+            <a class="company-name" href="https://taho.xyz/" target="blank">Taho</a>
         </a>
     </div>
     <div class="item">
         <a href="https://www.liquality.io/" target="blank">
-            <img id="square-fix" src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
+            <img id="square-fix" src="/assets/img/rsk/wallets/liquality-logo.jpeg" alt="liquality">
             <a class="company-name" href="https://www.liquality.io/" target="blank">Liquality</a>
         </a>
     </div>
