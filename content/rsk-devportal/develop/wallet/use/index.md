@@ -101,28 +101,30 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 ## Compatibility Matrix
 
+## Compatibility Matrix
+
 In the following matrix you can see the different features by wallet.
 
 | Wallet | | RSK Checksum | | RSK dPath | | Customizable dPath |
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
-| Ledger | | ✔ | | ✔ | | ❌ |
-| Trezor | | ✔ | | ✔ | | ❌ |
-| Exodus | |  | |  | |  |
-| MEW | | ✔ | | ✔ | | ✔ |
-| Metamask | | ❌ | | ❌ | | ❌ |
-| Enkrypt | |  | |  | |  |
-| Edge | | ✔ | | ✔ | | ❌ |
-| Defiant | | ✔ | | ✔ | | ❌ |
-| Math Wallet | | ❌ | | ❌ | | ❌ |
 | Beexo | | ✔ | | ✔ | | ✔ |
 | Blockwallet | |  | |  | |  |
 | Coinhub | |  | |  | |  |
-| Frontier | |  | |  | |  |
-| Tally | |  | |  | |  |
-| Lead Wallet | |  | |  | |  |
-| Liquality | |  | |  | |  |
-| Xcapit | |  | |  | |  |
-| Rabby Wallet | |  | |  | |  |
-| TorusLabs | |  | |  | |  |
-| rWallet | | ✔ | | ✔ | | ✔ |
 | D'CENT | | ✔ | | ✔ | | ❌ |
+| Defiant | | ✔ | | ✔ | | ❌ |
+| Edge | | ✔ | | ✔ | | ❌ |
+| Enkrypt | |  | |  | |  |
+| Exodus | |  | |  | |  |
+| Frontier | |  | |  | |  |
+| Lead Wallet | |  | |  | |  |
+| Ledger | | ✔ | | ✔ | | ❌ |
+| Liquality | |  | |  | |  |
+| Math Wallet | | ❌ | | ❌ | | ❌ |
+| Metamask | | ❌ | | ❌ | | ❌ |
+| MEW | | ✔ | | ✔ | | ✔ |
+| Rabby Wallet | |  | |  | |  |
+| rWallet | | ✔ | | ✔ | | ✔ |
+| Tally | |  | |  | |  |
+| TorusLabs | |  | |  | |  |
+| Trezor | | ✔ | | ✔ | | ❌ |
+| Xcapit | |  | |  | |  |
