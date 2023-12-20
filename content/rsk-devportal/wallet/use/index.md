@@ -138,28 +138,29 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 ## How to use
 
-- [Ledger](/wallet/use/ledger)
-- [MyCrypto](/wallet/use/mycrypto)
-- [Metamask](/wallet/use/metamask)
-- [RPC](/wallet/use/json-rpc)
-- [MyEtherWallet](https://dev.rootstock.io/wallet/use/myetherwallet/)
-- [Enkrypt](https://www.enkrypt.com/networks/rootstock-wallet/)
+- [Beexo](https://beexo.com)
 - [Blockwallet](https://blockwallet.io/networks/rootstock-wallet)
 - [Coinhub](https://www.coinhub.org)
+- [D'cent](https://dev.rootstock.io/solutions/dcent/)
+- [Defiant](/solutions/defiant/)
+- [Edge](https://dev.rootstock.io/solutions/edge/)
+- [Enkrypt](https://www.enkrypt.com/networks/rootstock-wallet/)
 - [Exodus](https://www.exodus.com/support/article/2898-rootstock-ecosystem)
 - [Frontier](https://www.frontier.xyz)
-- [Tally](https://taho.xyz)
-- [Defiant](/solutions/defiant/)
+- [Ledger](/wallet/use/ledger)
 - [Lead Wallet](https://leadwallet.io)
-- [Beexo](https://beexo.com)
 - [Liquality](/solutions/liquality/)
 - [Math Wallets](https://blog.mathwallet.org/?p=1625)
-- [Xcapit](https://www.xcapit.com)
-- [Edge](https://dev.rootstock.io/solutions/edge/)
-- [Trezor](https://trezor.io/trezor-suite)
-- [D'cent](https://dev.rootstock.io/solutions/dcent/)
+- [Metamask](/wallet/use/metamask)
+- [MyEtherWallet](https://dev.rootstock.io/wallet/use/myetherwallet/)
+- [MyCrypto](/wallet/use/mycrypto)
 - [Rabby Wallet](https://rabby.io)
+- [RPC](/wallet/use/json-rpc)
+- [Tally](https://taho.xyz)
 - [TorusLabs](https://tor.us/index.html)
+- [Trezor](https://trezor.io/trezor-suite)
+- [Xcapit](https://www.xcapit.com)
+
 
 
 ## Compatibility Matrix
