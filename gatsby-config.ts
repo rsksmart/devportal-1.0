@@ -1,7 +1,7 @@
 import type {GatsbyConfig} from "gatsby";
 
 require("dotenv").config({
-  path: `.env.${process.env.NODE_ENV}`,
+  path: `.env`,
 });
 
 export const repo = `https://github.com/rsksmart/devportal.git`;
