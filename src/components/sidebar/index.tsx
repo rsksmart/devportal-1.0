@@ -1,3 +1,4 @@
+
 import React, {createContext, useState} from "react";
 import Navigation from "./navigation";
 import Search from "../search";
@@ -23,8 +24,7 @@ export const SidebarContext = createContext<SidebarContextObject>({
 const Sidebar = ({ className, pathname }: Props) => {
   const [expanded, setExpanded] = useState(false);
   const mendableSearchBarStyle = { darkMode: true, accentColor: "#123456" }
-  const mendableApiKey = process.env.MENDABLE_API_KEY!!
-  console.log(mendableApiKey)
+  const mendableApiKey = process.env.GATSBY_MENDABLE_API_KEY!!
 
   return (
     <SidebarContext.Provider value={{
