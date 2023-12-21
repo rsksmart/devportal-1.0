@@ -1,6 +1,6 @@
 ---
 menu_order: 950
-section_title: Deploy NFTs on RSK
+section_title: Deploy NFTs on Rootstock
 menu_title: Table of Contents
 title: 'Introduction | Deploy an NFT project on the RSK Testnet'
 description: 'Learn about NFTs, create, connect, and deploy an NFT to the RSK Blockchain.'
