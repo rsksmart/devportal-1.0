@@ -1,3 +1,4 @@
+
 import React, {createContext, useState} from "react";
 import Navigation from "./navigation";
 import Search from "../search";
@@ -23,7 +24,7 @@ export const SidebarContext = createContext<SidebarContextObject>({
 const Sidebar = ({ className, pathname }: Props) => {
   const [expanded, setExpanded] = useState(false);
   const mendableSearchBarStyle = { darkMode: true, accentColor: "#123456" }
-  const mendableApiKey = process.env.MENDABLE_API_KEY!!  
+  const mendableApiKey = process.env.GATSBY_MENDABLE_API_KEY!!
 
   return (
     <SidebarContext.Provider value={{
@@ -32,7 +33,7 @@ const Sidebar = ({ className, pathname }: Props) => {
     }}>
       <div className={classnames(className, 'sidebar')}>
         <div className="sidebar__wrapper">
-          <Search />
+          <MendableSearchBar anon_key={mendableApiKey} style={mendableSearchBarStyle} language="en" askAIText="Ask Rootstock AI" showSimpleSearch/>
           <div className="pr-4">
             <div className="my-2">
               <Link className="sidebar__link" to="/">Rootstock Documentation</Link>
