@@ -178,5 +178,4 @@ In the following matrix you can see the different features by wallet.
 | Math Wallet | | ❌ | | ❌ | | ❌ |
 | Metamask | | ❌ | | ❌ | | ❌ |
 | MEW | | ✔ | | ✔ | | ✔ |
-| rWallet | | ✔ | | ✔ | | ✔ |
 | Trezor | | ✔ | | ✔ | | ❌ |
