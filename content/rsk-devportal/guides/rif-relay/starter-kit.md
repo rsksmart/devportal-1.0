@@ -36,14 +36,19 @@ You need to set up and run a Rootstock node, preferably the latest version from 
     1. Download this config file: [https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf](https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf)
     1. Move the `node.conf` file to the `config` directory.
     1. In the folder containing the jar file, run the following command in the terminal:
+    For M1:
         ```bash
         arch -x86_64 /usr/local/opt/openjdk@8/bin/java -Drsk.conf.file=./config/node.conf -cp ./rskj-core-5.3.0-FINGERROOT-all.jar co.rsk.Start --regtest
+        ```
+        Other x64 architecture:
+        ```bash
+        /usr/local/opt/openjdk@8/bin/java -Drsk.conf.file=./config/node.conf -cp ./rskj-core-5.3.0-FINGERROOT-all.jar co.rsk.Start --regtest
         ```
         OR
         ```jsx
         java -Drsk.conf.file=./config/node.conf \
         cp ./<PATH-TO-JAR-FILE> co.rsk.Start \
-        -regtest
+        --regtest
         ```
     Leave the terminal running.
     To ensure that the node is running as expected, refer to the section below to check that the node is running.
@@ -216,7 +221,11 @@ RIF Relay Contracts Repository: [https://github.com/rsksmart/rif-relay-contracts
             - `--amount` → quantity to be minted
             - `--receiver` → wallet address
             ```bash
-            npx hardhat mint --token-address 0x6f217dEd6c86A57f1211F464302e6fA544045B4f --amount 10000000000000000000 --receiver 0xcff73226883c1cE8b3bcCc28E45c3c92C843485c --network regtest 
+            npx hardhat mint \
+            --token-address 0x6f217dEd6c86A57f1211F464302e6fA544045B4f \
+            --amount 10000000000000000000 \
+            --receiver <wallet-address> \
+            --network regtest 
             ```
         - Import the minted token into the wallet.
         - To see the token in the wallet, click on “import tokens”, and then paste the token address.
