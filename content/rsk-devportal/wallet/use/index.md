@@ -40,7 +40,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.ledger.com/" target="blank">
-        <img src="/assets/img/rsk/wallets/ledger-logo.png" alt="Ledger">
+        <img src="/assets/img/rsk/wallets/ledger-wordmark-logo.svg" alt="Ledge">
         <a class="company-name" href="https://www.ledger.com/" target="blank">Ledger</a>
         </a>
     </div>
@@ -58,7 +58,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://mathwallet.org/en-us/" target="blank">
-        <img src="/assets/img/rsk/wallets/mathwallet.png" alt="Math Wallet">
+        <img src="/assets/img/rsk/wallets/MathWallet_Logo_Vertical_Black.png" alt="Math Wallet">
         <a class="company-name" href="https://mathwallet.org/en-us/" target="blank">Math Wallet</a>
         </a>
     </div>
@@ -100,19 +100,19 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.frontier.xyz/" target="blank">
-            <img id="square-fix" src="/assets/img/rsk/wallets/frontier-logo.png" alt="frontier">
+            <img id="square-fix" src="/assets/img/rsk/wallets/frontier_logo.svg" alt="frontier">
             <a class="company-name" href="https://www.frontier.xyz/" target="blank">Frontier</a>
         </a>
     </div>
     <div class="item">
         <a href="https://taho.xyz/" target="blank">
-            <img id="square-fix" src="/assets/img/rsk/wallets/taho-logo.png" alt="taho">
-            <a class="company-name" href="https://taho.xyz/" target="blank">Taho</a>
+            <img id="square-fix" src="/assets/img/rsk/wallets/tally-wallet.svg" alt="tally">
+            <a class="company-name" href="https://taho.xyz/" target="blank">Tally</a>
         </a>
     </div>
     <div class="item">
         <a href="https://www.liquality.io/" target="blank">
-            <img id="square-fix" src="/assets/img/rsk/wallets/liquality-logo.jpeg" alt="liquality">
+            <img id="square-fix" src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
             <a class="company-name" href="https://www.liquality.io/" target="blank">Liquality</a>
         </a>
     </div>
@@ -138,25 +138,31 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 ## How to use
 
+- [AirGap](https://beexo.com)
 - [Beexo](https://beexo.com)
-- [Blockwallet](https://blockwallet.io/networks/rootstock-wallet)
+- [Bitfinex](https://bitfinex.com)
+- [Cobo](https://www.cobo.com)
 - [Coinhub](https://www.coinhub.org)
 - [D'cent](https://dev.rootstock.io/solutions/dcent/)
 - [Defiant](/solutions/defiant/)
 - [Edge](https://dev.rootstock.io/solutions/edge/)
 - [Enkrypt](https://www.enkrypt.com/networks/rootstock-wallet/)
-- [Exodus](https://www.exodus.com/support/article/2898-rootstock-ecosystem)
-- [Frontier](https://www.frontier.xyz)
+- [Fireblocks](https://www.fireblocks.com)
+- [Gnosis Safe](https://www.safe.global)
+- [Keepkey](https://www.keepkey.com)
+- [KuCoin](https://www.kucoin.com)
 - [Ledger](/wallet/use/ledger)
+- [Ledger Nano](https://ledger.com)
 - [Lead Wallet](https://leadwallet.io)
-- [Liquality](/solutions/liquality/)
+- [Liquality Wallet](/solutions/liquality/)
 - [Math Wallets](https://blog.mathwallet.org/?p=1625)
 - [Metamask](/wallet/use/metamask)
-- [MyEtherWallet](https://dev.rootstock.io/wallet/use/myetherwallet/)
+- [MyEtherWallet](https://www.myetherwallet.com/)
 - [MyCrypto](/wallet/use/mycrypto)
+- [Portis](https://www.portis.io/)
+- [rWallet](https://github.com/rsksmart/rwallet)
 - [Rabby Wallet](https://rabby.io)
-- [RPC](/wallet/use/json-rpc)
-- [Tally](https://taho.xyz)
+- [TaHo](https://taho.xyz)
 - [TorusLabs](https://tor.us/index.html)
 - [Trezor](https://trezor.io/trezor-suite)
 - [Xcapit](https://www.xcapit.com)
