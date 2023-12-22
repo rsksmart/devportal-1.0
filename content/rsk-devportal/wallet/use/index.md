@@ -138,7 +138,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 ## How to use
 
-- [AirGap](https://beexo.com)
+- [AirGap](https://airgap.it)
 - [Beexo](https://beexo.com)
 - [Bitfinex](https://bitfinex.com)
 - [Cobo](https://www.cobo.com)
