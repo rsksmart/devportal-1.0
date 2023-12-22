@@ -112,7 +112,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.liquality.io/" target="blank">
-            <img id="square-fix" src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
+            <img id="square-fix" src="/assets/img/rsk/wallets/liquality-logo.png" alt="liquality">
             <a class="company-name" href="https://www.liquality.io/" target="blank">Liquality</a>
         </a>
     </div>
@@ -149,7 +149,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [Enkrypt](https://www.enkrypt.com/networks/rootstock-wallet/)
 - [Fireblocks](https://www.fireblocks.com)
 - [Gnosis Safe](https://www.safe.global)
-- [Keepkey](https://www.keepkey.com)
 - [KuCoin](https://www.kucoin.com)
 - [Ledger](/wallet/use/ledger)
 - [Ledger Nano](https://ledger.com)

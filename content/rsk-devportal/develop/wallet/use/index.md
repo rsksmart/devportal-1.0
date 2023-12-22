@@ -43,7 +43,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.ledger.com/" target="blank">
-        <img src="/assets/img/rsk/wallets/ledger-logo.png" alt="Ledge">
+        <img src="/assets/img/rsk/wallets/ledger-wordmark-logo.svg" alt="Ledge">
         <a class="company-name" href="https://www.ledger.com/" target="blank">Ledger</a>
         </a>
     </div>
@@ -61,7 +61,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://mathwallet.org/en-us/" target="blank">
-        <img src="/assets/img/rsk/wallets/mathwallet.png" alt="Math Wallet">
+        <img src="/assets/img/rsk/wallets/MathWallet_Logo_Vertical_Black.png" alt="Math Wallet">
         <a class="company-name" href="https://mathwallet.org/en-us/" target="blank">Math Wallet</a>
         </a>
     </div>
@@ -86,7 +86,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     <div class="item">
         <a href="https://www.enkrypt.com/" target="blank">
             <img id="square-fix" src="/assets/img/rsk/wallets/enkrypt-logo.png" alt="encrypt">
-            <a class="company-name" href="https://www.enkrypt.com/" target="blank">Enkrypt</a>
+            <a class="company-name" href="https://www.enkrypt.com/" target="blank">encrypt</a>
         </a>
     </div>
     <div class="item">
@@ -109,7 +109,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.liquality.io/" target="blank">
-            <img id="square-fix" src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
+            <img id="square-fix" src="/assets/img/rsk/wallets/liquality-logo.png" alt="liquality">
             <a class="company-name" href="https://www.liquality.io/" target="blank">Liquality</a>
         </a>
     </div>
@@ -162,7 +162,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [TaHo](https://taho.xyz)
 - [TorusLabs](https://tor.us/index.html)
 - [Trezor](https://trezor.io/trezor-suite)
-
 
 
 ## Compatibility Matrix
