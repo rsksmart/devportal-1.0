@@ -15,9 +15,9 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
         </a>
     </div>
     <div class="item">
-        <a href="https://cobo.com/" target="blank">
-        <img src="/assets/img/rsk/wallets/cobo-logo.svg" alt="Cobo">
-        <a class="company-name" href="https://www.cobo.com/wallet" target="blank">Cobo</a>
+        <a href="https://metamask.io" target="blank">
+        <img src="/assets/img/rsk/wallets/metamask.svg" alt="Metamask">
+        <a class="company-name" href="https://metamask.io" target="blank">Metamask</a>
         </a>
     </div>
     <div class="item">
@@ -27,9 +27,9 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
         </a>
     </div>
     <div class="item">
-        <a href="https://www.portis.io/" target="blank">
-        <img src="/assets/img/rsk/wallets/portis-logo.svg" alt="Portis">
-        <a class="company-name" href="https://www.portis.io/" target="blank">Portis</a>
+        <a href="https://leadwallet.io/" target="blank">
+        <img src="/assets/img/rsk/wallets/lead-wallet.png" alt="Lead Wallet">
+        <a class="company-name" href="https://leadwallet.io/" target="blank">Lead Wallet</a>
         </a>
     </div>
     <div class="item">
@@ -112,7 +112,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.liquality.io/" target="blank">
-            <img id="square-fix" src="/assets/img/solutions/Liquality/LiqualityHorizontal.png" alt="liquality">
+            <img id="square-fix" src="/assets/img/rsk/wallets/liquality-logo.png" alt="liquality">
             <a class="company-name" href="https://www.liquality.io/" target="blank">Liquality</a>
         </a>
     </div>
@@ -138,12 +138,34 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 ## How to use
 
-- [Ledger](/wallet/use/ledger)
-- [MyCrypto](/wallet/use/mycrypto)
-- [Metamask](/wallet/use/metamask)
-- [RPC](/wallet/use/json-rpc)
+- [AirGap](https://airgap.it)
+- [Beexo](https://beexo.com)
+- [Bitfinex](https://bitfinex.com)
+- [Cobo](https://www.cobo.com)
+- [Coinhub](https://www.coinhub.org)
+- [D'cent](https://dev.rootstock.io/solutions/dcent/)
 - [Defiant](/solutions/defiant/)
-- [Liquality](/solutions/liquality/)
+- [Edge](https://dev.rootstock.io/solutions/edge/)
+- [Enkrypt](https://www.enkrypt.com/networks/rootstock-wallet/)
+- [Fireblocks](https://www.fireblocks.com)
+- [Gnosis Safe](https://www.safe.global)
+- [KuCoin](https://www.kucoin.com)
+- [Ledger](/wallet/use/ledger)
+- [Ledger Nano](https://ledger.com)
+- [Lead Wallet](https://leadwallet.io)
+- [Liquality Wallet](/solutions/liquality/)
+- [Math Wallets](https://blog.mathwallet.org/?p=1625)
+- [Metamask Browser Extention](https://metamask.io/download)
+- [Metamask Mobile Wallet](/wallet/use/metamask)
+- [MyEtherWallet](https://www.myetherwallet.com/)
+- [MyCrypto](/wallet/use/mycrypto)
+- [Portis](https://www.portis.io/)
+- [rWallet](https://github.com/rsksmart/rwallet)
+- [Rabby Wallet](https://rabby.io)
+- [TaHo](https://taho.xyz)
+- [TorusLabs](https://tor.us/index.html)
+- [Trezor](https://trezor.io/trezor-suite)
+
 
 ## Compatibility Matrix
 
@@ -151,13 +173,13 @@ In the following matrix you can see the different features by wallet.
 
 | Wallet | | RSK Checksum | | RSK dPath | | Customizable dPath |
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
-| Ledger | | ✔ | | ✔ | | ❌ |
-| Trezor | | ✔ | | ✔ | | ❌ |
-| MyCrypto | | ✔ | | ✔ | | ✔ |
-| MEW | | ✔ | | ✔ | | ✔ |
-| Metamask | | ❌ | | ❌ | | ❌ |
-| Edge | | ✔ | | ✔ | | ❌ |
-| Defiant | | ✔ | | ✔ | | ❌ |
-| Math Wallet | | ❌ | | ❌ | | ❌ |
 | Beexo | | ✔ | | ✔ | | ✔ |
 | D'CENT | | ✔ | | ✔ | | ❌ |
+| Defiant | | ✔ | | ✔ | | ❌ |
+| Edge | | ✔ | | ✔ | | ❌ |
+| Ledger | | ✔ | | ✔ | | ❌ |
+| Math Wallet | | ❌ | | ❌ | | ❌ |
+| Metamask | | ❌ | | ❌ | | ❌ |
+| MEW | | ✔ | | ✔ | | ✔ |
+| rWallet | | ✔ | | ✔ | | ✔ |
+| Trezor | | ✔ | | ✔ | | ❌ |
