@@ -43,7 +43,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://www.ledger.com/" target="blank">
-        <img src="/assets/img/rsk/wallets/ledger-wordmark-logo.svg" alt="Ledge">
+        <img src="/assets/img/rsk/wallets/ledger-logo.png" alt="Ledge">
         <a class="company-name" href="https://www.ledger.com/" target="blank">Ledger</a>
         </a>
     </div>
@@ -61,7 +61,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     </div>
     <div class="item">
         <a href="https://mathwallet.org/en-us/" target="blank">
-        <img src="/assets/img/rsk/wallets/MathWallet_Logo_Vertical_Black.png" alt="Math Wallet">
+        <img src="/assets/img/rsk/wallets/mathwallet.png" alt="Math Wallet">
         <a class="company-name" href="https://mathwallet.org/en-us/" target="blank">Math Wallet</a>
         </a>
     </div>
@@ -86,7 +86,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
     <div class="item">
         <a href="https://www.enkrypt.com/" target="blank">
             <img id="square-fix" src="/assets/img/rsk/wallets/enkrypt-logo.png" alt="encrypt">
-            <a class="company-name" href="https://www.enkrypt.com/" target="blank">encrypt</a>
+            <a class="company-name" href="https://www.enkrypt.com/" target="blank">Enkrypt</a>
         </a>
     </div>
     <div class="item">
@@ -99,12 +99,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
         <a href="https://www.coinhub.org/" target="blank">
             <img id="square-fix" src="/assets/img/rsk/wallets/coinhub-logo.svg" alt="coinhub">
             <a class="company-name" href="https://www.coinhub.org/" target="blank">Coinhub</a>
-        </a>
-    </div>
-    <div class="item">
-        <a href="https://www.frontier.xyz/" target="blank">
-            <img id="square-fix" src="/assets/img/rsk/wallets/frontier_logo.svg" alt="frontier">
-            <a class="company-name" href="https://www.frontier.xyz/" target="blank">Frontier</a>
         </a>
     </div>
     <div class="item">
@@ -152,7 +146,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [Enkrypt](https://www.enkrypt.com/networks/rootstock-wallet/)
 - [Fireblocks](https://www.fireblocks.com)
 - [Gnosis Safe](https://www.safe.global)
-- [Keepkey](https://www.keepkey.com)
 - [KuCoin](https://www.kucoin.com)
 - [Ledger](/wallet/use/ledger)
 - [Ledger Nano](https://ledger.com)
