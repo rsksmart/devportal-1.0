@@ -1,6 +1,6 @@
 ---
 layout: rsk
-section_title: RSK Community Calls
+section_title: Rootstock Community Calls
 menu_title: Improvement Proposals
 title: Welcome to Rootstock (RSK) Community Calls | Rootstock (RSK) Improvement Proposals
 tags: rskip, rsk, rif, research, community-call
