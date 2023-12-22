@@ -169,7 +169,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [TaHo](https://taho.xyz)
 - [TorusLabs](https://tor.us/index.html)
 - [Trezor](https://trezor.io/trezor-suite)
-- [Xcapit](https://www.xcapit.com)
 
 
 
