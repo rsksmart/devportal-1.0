@@ -26,6 +26,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@mendable/search": "^0.0.194",
     "add": "^2.0.6",
     "babel-plugin-styled-components": "^2.0.7",
     "bootstrap": "^5.2.2",
@@ -60,8 +61,7 @@
     "react-hubspot-form": "^1.3.7",
     "react-use-flexsearch": "^0.1.1",
     "sass": "^1.55.0",
-    "yarn": "^1.22.19",
-    "@mendable/search": "^0.0.190"
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "@types/classnames": "^2.3.1",
