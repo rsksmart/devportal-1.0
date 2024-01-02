@@ -131,27 +131,29 @@ Execute the `acceptToken(address token)` function on the Relay Verifiers contrac
 - `SmartWalletDeployVerifier`
 - `SmartWalletRelayVerifier`
 
-> Note: This action must be performed by the contracts' owner, typically the account that conducted the deployment.
+> **Note:** This action must be performed by the contracts' owner, typically the account that conducted the deployment.
   
 [](#top "collapsible")
-- Regtest
+- **Regtest**
     - In the RIF Relay Contracts, execute this command:
         ```
-        npx hardhat allow-tokens --network regtest 0x1Af2844A588759D0DE58abD568ADD96BB8B3B6D8
+        npx hardhat allow-tokens --network regtest --token-list <TOKEN_ADDRESSES>
         ```
-        > The `allowTokens` uses the first account (referred to as account[0]) as the owner of the contracts. This is important because only the account owner can allow tokens. 
-- Testnet
+        > `<TOKEN_ADDRESSES>` is a comma-separated list of the token addresses to be allowed on the available verifiers. The `allowTokens` uses the first account (referred to as account[0]) as the owner of the contracts. This is important because only the account owner can allow tokens. 
+- **Testnet**
     - In the RIF Relay Contracts, execute the command:
         ```
-        npx hardhat allow-tokens --network testnet 0x3F49BaB0afdC36E9f5784da91b32E3D5156fAa5C
+        npx hardhat allow-tokens --network testnet --token-list <TOKEN_ADDRESSES>
         ```
-        > The `allowTokens` script will use the Testnet network configured in the `hardhat.config.ts`, this network will be required to use the account that deployed the contracts.
-- Mainnet
+        > `<TOKEN_ADDRESSES>` is a comma-separated list of the token addresses to be allowed on the available verifiers. The `allowTokens` script will use the Testnet network configured in the `hardhat.config.ts`, this network will be required to use the account that deployed the contracts.
+- **Mainnet**
     - In the RIF Relay Contracts, execute the command:
       ```
-      npx hardhat allow-tokens --network mainnet 0xe49b8906A3ceFd184621A4193e2451b1c3C3dB0B
+      npx hardhat allow-tokens --network mainnet --token-list <TOKEN_ADDRESSES>
       ```
-      > The `allowTokens` script will use the Mainnet network configured in `hardhat.config.ts`, this network will be required to use the account that did the deployment of the contracts.
+      > `<TOKEN_ADDRESSES>` is a comma-separated list of the token addresses to be allowed on the available verifiers. The `allowTokens` script will use the Mainnet network configured in `hardhat.config.ts`, this network will be required to use the account that did the deployment of the contracts.
+
+> **Note:** The network name; regtest, testnet, or mainnet, is an optional parameter that is taken from the hardhat.config.ts file. The network name you specify must be the same as the one used to deploy the contract. You can also query one or more verifiers using an additional `--verifier-list` option, followed by a comma-separated list of verifier addresses.
 
 ### Run the RIF Relay Server
 After setting up on-chain components, the next step is to set up off-chain components, using the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server). 
@@ -200,7 +202,7 @@ For visual insights into how the Relay Server functions, refer to the diagrams a
         - Registers the Relay Server
         The server is now ready to start processing transactions and a ready message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).
 - Testnet
-    1. Here's an example configuration file using the off-chain components deployed on RSK Testnet (https://public-node.testnet.rsk.co). 
+    1. Here's an example configuration file using the off-chain components deployed on the Rootstock Testnet (https://public-node.testnet.rsk.co). 
         > **Important:** Due to specific modules enabled in the RSKj nodes, the RIF Relay Server cannot connect to the public nodes.            
         ```json
           {
@@ -222,7 +224,7 @@ For visual insights into how the Relay Server functions, refer to the diagrams a
             }
         }
         ```
-        > The [contracts](https://developers.rsk.co/rif/relay/contracts/#primary-contracts) used in this setup are the primary contracts available on the RSK network. These primary contracts, however, do not include support for the `CustomSmartWallet`.            
+        > The [contracts](https://developers.rsk.co/rif/relay/contracts/#primary-contracts) used in this setup are the primary contracts available on the Rootstock network. These primary contracts, however, do not include support for the `CustomSmartWallet`.            
         For details of each configuration key used in setting up the RIF Relay Server, refer to the [RIF Relay Server Configuration](https://github.com/rsksmart/rif-relay-server#server-configuration) documentation.
     1. To start the server, execute the following command:
         ```
@@ -274,4 +276,4 @@ For visual insights into how the Relay Server functions, refer to the diagrams a
           - Registers the Relay Server
         The server is now ready to start processing transactions and a ready message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).         
 - Mainnet
-    - To run RIF Relay Server on RSK Mainnet, the procedure is the same as the one on Testnet, the only difference is the configuration. Configure it to use contracts deployed on Mainnet and an RSKj node connected to Mainnet.
+    - To run RIF Relay Server on the Rootstock Mainnet, the procedure is the same as the one on Testnet, the only difference is the configuration. Configure it to use contracts deployed on Mainnet and an RSKj node connected to Mainnet.
