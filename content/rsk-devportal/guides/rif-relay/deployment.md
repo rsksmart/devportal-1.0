@@ -53,7 +53,7 @@ Start by deploying on-chain components. All tools needed are in the [RIF Relay C
       │         VersionRegistry               │ '0x8901a2Bbf639bFD21A97004BA4D7aE2BD00B8DA8' │
       └───────────────────────────────────────┴──────────────────────────────────────────────┘
       ```
-    The deployment summary shows two sets of Smart Wallets, each paired with its verifiers. This is because each verifier uses the factorY for deployment and relay validation. For testing purposes, the focus will be on using these Smart Wallet Contracts.
+    The deployment summary shows two sets of Smart Wallets, each paired with its verifiers. This is because the verifier is used for both deployment and transaction validation. For testing purposes, the focus will be on using these Smart Wallet Contracts.
 - Testnet
     1. Ensure your account is funded. You can get funds from the [tRBTC Faucet](https://faucet.rsk.co/).
     2. Deploy on Testnet:
