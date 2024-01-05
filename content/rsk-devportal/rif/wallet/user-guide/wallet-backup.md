@@ -10,9 +10,8 @@ layout: rsk
 You can backup your wallet using the settings screen or
 when creating a new wallet.
 
-> If you lost access to your seed phrase, you can recover your wallet by visiting;
-> **Settings → Wallet Backup → View your phrase**
-> Note that anyone who has access to your wallet seed phrase, can access the funds. We recommend backing up your seed phrase in a physical location only known to you. Do not rely on only electronic backups of your seed phrase.
+> - If you lost access to your seed phrase, you can recover your wallet by visiting **Settings → Wallet Backup → View your phrase**.
+> - Note that anyone who has access to your wallet seed phrase, can access the funds. We recommend backing up your seed phrase in a physical location only known to you. Do not rely on only electronic backups of your seed phrase.
 
 Visit settings and click on "backup wallet". If creating a new wallet, follow the instructions below;
 

@@ -13,7 +13,6 @@ In this section, we will cover;
 * How to view your wallet address
 * Getting test tokens
 * Depositing to your wallet address via centralized and decentralized exchanges
-* Funding your wallet via Ramp network (Where you can exchange FIAT for USDRIF)
 
 > See the [different ways you can fund your wallet with RBTC](/guides/get-crypto-on-rsk/)
 
