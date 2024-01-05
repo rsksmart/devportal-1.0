@@ -47,4 +47,4 @@ For support and enquiries, [get free consultation](https://rif.technology/rif-wa
 * [RIF Wallet Services](https://github.com/rsksmart/rif-wallet-services)
 * [RIF Wallet Repo](https://github.com/rsksmart/rif-wallet)
 * [RIF Wallet Libraries](https://github.com/rsksmart/rif-wallet-libs)
-* [Frequently Asked Questions](/develop/wallet/rif-wallet#faqs)
+* [Frequently Asked Questions](/rif/wallet/faqs/)
