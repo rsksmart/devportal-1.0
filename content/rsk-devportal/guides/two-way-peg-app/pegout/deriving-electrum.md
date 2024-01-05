@@ -13,7 +13,7 @@ This section contains detailed instructions on how to review funds in Bitcoin af
 
 - Convert [RBTC - BTC](#converting-rbtc-to-btc) 
 - Import a [key in Electrum](#import-key-in-electrum) 
-- Import in Electrum if you are using [hardware wallets](#import-key-in-electrum-hardware-wallets)
+- Import in Electrum if you are using [hardware wallets](#import-key-in-electrum-using-hardware-wallets)
 
 ## Why derive address using Eletrum?
 
