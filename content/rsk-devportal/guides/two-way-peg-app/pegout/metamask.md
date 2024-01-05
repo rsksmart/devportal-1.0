@@ -59,7 +59,7 @@ After signing, you will be able to know the derived Bitcoin address where you wi
 ​
 ![Derived address](/assets/img/guides/two-way-peg-app/derivated-address.png)
 
-> For more details on derived addresses. See the [advanced operations](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address) section.
+> For more details on derived addresses. See the [advanced operations](/guides/two-way-peg-app/pegout/deriving-electrum) section.
 
 ​
 **Step 6: Send transaction**
