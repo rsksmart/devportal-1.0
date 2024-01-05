@@ -1,5 +1,5 @@
 ---
-menu_order: 1000
+menu_order: 1500
 menu_title: FAQs
 title: Frequently Asked Questions
 description: 'RIF Wallet is an open source smart contract wallet which enables businesses to create and deploy fully customizable on-chain wallets'
@@ -45,3 +45,5 @@ Here are some solutions to answer your questions.
     > - With a self-custodial wallet, security of your assets depends totally on you. 
     If you lose access to your wallet, no one else can restore access. Write down your 12-word phrase or keep it somewhere safe. 
     Self-custody wallets are often related to a more advanced approach, but we are working hard to abstract the complexity as much as we can. 
+- What is the difference between a MAINNET and TESTNET?
+    > - The mainnet is the primary network where the actual transactions occur. It's the "real" network, carrying actual value and involving real assets. The testnet serves as a sandbox or testing environment for developers. It's where they can experiment or test new features, smart contracts, or applications without affecting the mainnet.

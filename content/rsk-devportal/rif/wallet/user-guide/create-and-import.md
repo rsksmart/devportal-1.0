@@ -13,6 +13,14 @@ To create a new wallet, open the RIF Wallet App and click on Create a wallet. If
     <img src="/assets/img/rif-wallet/1-user-guide-rif-wallet.jpg"  title="RIF Wallet - Create Wallet"/>
 </div>
 
+**Accept the terms and conditions.**
+
+<div class="image-container">
+    <img src="/assets/img/rif-wallet/4b-rif-wallet-accept-terms.jpg"  title="RIF Wallet - Accept Terms and Conditions"/>
+</div>
+
+Click "Continue".
+
 **Secure your wallet**
 
 It is highly recommended that you generate and store your unique Master Key before creating a wallet, this key helps you restore your wallet and access your funds on a new device, in case of theft or missing device.
@@ -38,6 +46,14 @@ To import an existing wallet, click on the button as shown in the image below;
 <div class="image-container">
     <img src="/assets/img/rif-wallet/4-user-guide-import-existing-wallet.jpg"  title="RIF Wallet - Import Existing Wallet"/>
 </div>
+
+Accept the terms and conditions.
+
+<div class="image-container">
+    <img src="/assets/img/rif-wallet/4b-rif-wallet-accept-terms.jpg"  title="RIF Wallet - Accept Terms and Conditions"/>
+</div>
+
+Click "Continue".
 
 Enter the 12-word seed phrase and click **OK**.
 

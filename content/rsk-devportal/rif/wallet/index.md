@@ -14,7 +14,7 @@ The [RIF Wallet](https://rif.technology/rif-wallet/) is an open source smart con
 
 <a href="https://rif.technology/rif-wallet/" target="_blank" class="green-button">Download the RIF Wallet App</a>
 
-## For Developers 💡
+## For Developers
    - [RIF wallet](https://github.com/rsksmart/rif-wallet) provides the framework to build an intuitive and secure mobile-first Web3 experience, it uses account abstraction to pay the gas fees with ERC20 tokens using RIF Relay, wallet infrastructure APIs, and libraries. Businesses can now introduce to its end users a seamless way to onboard into the Web3 ecosystem without all the complexity. 
    - If you’re a business or partner looking to build on top of the RIF Wallet, See the [Developer Reference Docs](/rif/wallet/dev-reference/) for resources on how to get started.
 
@@ -24,9 +24,9 @@ To easily setup and run the RIF Wallet for development, use the Starter Kit or S
 
 * Coming soon
 
-### Networks
+### Configure Networks
 
-The app runs in both Rootstock mainnet and testnet with the default chain set to Testnet. You can configure this by changig the environment variable `DEFAULT_CHAIN_TYPE` to MAINNET in the [.env file](https://github.com/rsksmart/rif-wallet/blob/develop/.env).
+The app runs in both Rootstock mainnet and testnet with the default chain set to Testnet. You can configure this by changing the environment variable `DEFAULT_CHAIN_TYPE` to MAINNET in the [.env file](https://github.com/rsksmart/rif-wallet/blob/develop/.env). See how to [switch networks](/rif/wallet/user-guide/switch-networks/) using the application.
 
 ### API Docs
 

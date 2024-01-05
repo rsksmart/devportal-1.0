@@ -37,7 +37,7 @@ You can view your wallet address by clicking on the copy button as shown below.
 
 #### Getting test tokens
 
-_Note that test tokens are not real tokens and should only be used for development purposes._
+> Note: Test tokens are not real tokens and should only be used for development purposes. When sending or receiving tokens, wallet addresses change depending on the network environment. Ensure wallet is on the `TESTNET` environment. For transaction using real tokens, ensure to switch network  to use `MAINNET`. See [switch networks](/rif/wallet/user-guide/switch-networks/) for more information.
 
 If you’re a developer looking to use the RIF wallet app in Testnet. See video tutorials for how to get [test RBTC (tRBTC)](https://youtu.be/twfK8Rd5hak) or get [test RIF tokens (tRIF)](https://youtu.be/ttb8EOTWey8) from the Rootstock and RIF Testnet faucets.
 

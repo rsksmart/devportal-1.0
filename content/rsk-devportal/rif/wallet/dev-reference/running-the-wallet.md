@@ -108,4 +108,4 @@ Run the app again using `yarn ios:local`, and now you should successfully build 
 > Note: To reload the application, press  the R key on your keyboard. 
 Additionally, you can debug your application, by installing the [flipper desktop app](https://fbflipper.com/) for debugging or see the [troubleshooting guide](/rif/wallet/dev-reference/troubleshooting/) for how to solve some of the encountered errors.
 
-See how to use the libraries in [Using the Libraries](/rif/wallet/dev-reference/rif-wallet-libs/)
+See how to use the libraries in [Using the Libraries](/rif/wallet/dev-reference/rif-wallet-libs/). For development purposes, ensure to switch to a test environment. See [Switch networks](/rif/wallet/user-guide/switch-networks/) for more information.
