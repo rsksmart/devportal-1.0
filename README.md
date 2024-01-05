@@ -42,6 +42,12 @@ Clone this repository, and run the following commands in the root directory:
 ```shell
 yarn install
 ```
+```shell
+npm install gatsby
+```
+```shell
+npm install punycode
+```
 
 ## Usage
 
