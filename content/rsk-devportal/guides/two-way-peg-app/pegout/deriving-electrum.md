@@ -147,6 +147,9 @@ Step 5: Copy WIF value
 > - IMPORTANT:  Using the Ruby code is highly **recommended**
 > - This code requires the `checksum.rb` and `base58_encode.rb` functions as shown in the code below.
 
+Download the 'checksum' file [here](https://github.com/in3rsha/learnmeabitcoin-code/blob/master/checksum.rb).
+Download the 'base58_encode' file [here](https://github.com/in3rsha/learnmeabitcoin-code/blob/master/base58_encode.rb).
+
 ```shell
 require_relative 'checksum'
 require_relative 'base58_encode'

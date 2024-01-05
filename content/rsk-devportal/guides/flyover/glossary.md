@@ -32,7 +32,7 @@ See a list of terms about/related to the Flyover Protocol and their meanings.
 - penaltyFee:
     - The penalty fee that the LP pays if it fails to deliver the service. This is a value defined in the LPS's config file. As of now, in testnet it is set to `1000000` wei, for mainnet, this value is yet to be defined.
 - Powpeg:
-    - The [2wp-app](https://2wp-app.rsk.co/) is a tool that enables the easy use of the PowPeg protocol.
+    - The [2wp-app](https://app.2wp.rootstock.io/) is a tool that enables the easy use of the PowPeg protocol.
 - Refund address:
     - This address is used only in the case that the locking cap on the bridge is surpassed. There are two types of refund addresses; `rskRefundAddress` and `btcRefundAddress`. See [parameters](/guides/flyover/design-architecture#operations) section for more information.
 - Quote: 

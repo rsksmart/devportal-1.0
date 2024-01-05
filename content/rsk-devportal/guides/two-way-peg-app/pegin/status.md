@@ -20,7 +20,7 @@ To view a transaction status using the 2 way peg application, we will do the fol
 
 **Step 1: Go to the homepage**
 
-Visit: [2 way peg on Testnet](https://2wp-app.testnet.rootstock.io/). 
+Visit: [2 way peg on Testnet](https://app.2wp.testnet.rootstock.io/). 
 
 Click on transaction status.
 
