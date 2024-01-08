@@ -7,13 +7,11 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
-[RIF Wallet](https://rif.technology/rif-wallet/) is an open source wallet with account abstraction functionality enabling businesses to create and deploy fully customizable on-chain wallets. 
+Built with react native, account abstraction at its core, the [RIF wallet](https://github.com/rsksmart/rif-wallet) enables developers and businesses to build and deploy a smart wallet for their end-users. With features like sending and receiving crypto using human readable names, paying for gas fees using ERC20 tokens, safely transition your users into Web3 without hassle. See some of the [use cases](https://rif.technology/use-cases/) of the RIF Wallet.
 
-Easily build and deploy an on-chain wallet, using a set of wallet infrastructure APIs and libraries, the wallet uses the [RIF Relay](https://github.com/rsksmart/rif-relay) for payment of gas fees using ERC20 tokens, and the [RIF Name Service (RNS)](https://github.com/rsksmart/rns-manager-react) for sending and receiving crypto using a easy-to-remember nicknames.
+The wallet stack comprises of [RIF Relay](https://github.com/rsksmart/rif-relay) for payment of gas fees using ERC20 tokens, [RIF Name Service (RNS)](https://github.com/rsksmart/rns-manager-react) for sending and receiving crypto via usernames, and a set of wallet APIs and libraries for easy setup and development.
 
-Businesses can take advantage of the smart contract capabilities of the wallet, to build and customize their own custom wallet in a few minutes using the open source libraries. See some of the use cases when building on top of the [RIF Wallet](https://rif.technology/use-cases/).
-
-> See the different ways you can take advantage of the wallet capabilities in your dApp using the [developer reference guide](/rif/wallet/dev-reference/) or the [user guide](/rif/wallet/user-guide/) for informaton on how to download and use the application.
+> Get started with development using the [developer reference guide](/rif/wallet/dev-reference/) or visit the [user guide](/rif/wallet/user-guide/) section for informaton on how to download and start receiving crypto.
 
 ## Features of the wallet
 

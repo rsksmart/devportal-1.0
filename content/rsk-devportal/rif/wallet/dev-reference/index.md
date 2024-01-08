@@ -8,12 +8,12 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
-The developer reference documentation is intended for developers looking to build and deploy a custom smart contract wallet. 
+The developer reference documentation is intended for developers looking to build and deploy an account abstraction wallet on Rootstock. 
 
 In this section, we will cover:
  
 * Prerequisites needed to run the RIF Wallet
-* How to instal the tools
+* How to install the tools
 * Fees associated with the app
 * Deploying a wallet.
 
