@@ -7,17 +7,13 @@ section_title: Tools
 menu_title: Overview
 
 ---
+Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tools!
+
 
 <div id="stats-carousel" class="owl-carousel owl-theme">
-    <!--div class="item">
-        <a href="https://developers.doc.rsk.co/docs/javascript-wallet-library" target="_blank">
-        <img src="https://rsk.co/img/tools/1-wallet-API.png" alt="Wallet API">
-        <a class="company-name" href="https://developers.doc.rsk.co/docs/javascript-wallet-library" target="_blank">Wallet API</a>
-    </a>
-    </div-->
     <div class="item">
         <a href="https://explorer.rsk.co" target="blank">
-        <img src="https://rsk.co/img/tools/2-RSK_explorer.png" alt="RSK Explorer">
+        <img src="/assets/img/developer/explorer/explorer1.png" alt="RSK Explorer">
         <a class="company-name" href="https://explorer.rsk.co" target="blank">RSK Explorer</a>
     </a>
     </div>
@@ -47,14 +43,30 @@ menu_title: Overview
     </div>
     <div class="item">
         <a href="https://rskgasstation.info" target="blank">
-        <img src="https://rsk.co/img/tools/5-RSK-Gas-Station.png" alt="RSK Gas Station<">
+        <img src="https://rsk.co/img/tools/5-RSK-Gas-Station.png" alt="RSK Gas Station">
         <a class="company-name" href="https://rskgasstation.info" target="blank">RSK Gas Station</a>
     </a>
     </div>
     <div class="item">
         <a href="/tools/truffle">
-        <img src="https://rsk.co/img/tools/6-Truffle.png" alt="Truffle<" style="margin: 10px;">
+        <img src="https://rsk.co/img/tools/6-Truffle.png" alt="Truffle" style="margin: 10px;">
         <a class="company-name" href="/tools/truffle">Truffle</a>
     </a>
     </div>
 </div>
+
+
+Explore a suite of developer tools designed to empower blockchain developers and enthusiasts in the Rootstock and RIF ecosystems. Simplify your development process and make the most out of these platforms. 
+
+Discover the following tools:
+
+- [Explorer](https://dev.rootstock.io/tools/explorer/)
+- [Ganache](https://dev.rootstock.io/tools/truffle/ganache/)
+- [Hardhat](https://dev.rootstock.io/kb/hardhat-setup-on-rsk/)
+- [MetaMask](https://dev.rootstock.io/wallet/use/metamask/)
+- [Remix](https://dev.rootstock.io/kb/remix-and-metamask-with-rsk-testnet/)
+- [Rootstock Community Forum](https://dev.rootstock.io/discord/)
+- [Smart Contract Compiler](https://dev.rootstock.io/kb/compile-smart-contracts-go/)
+- [Token Generator](https://dev.rootstock.io/kb/create-a-token/)
+- [Truffle Suite](https://dev.rootstock.io/tools/truffle/)
+- [Web3.js](https://dev.rootstock.io/kb/frontend-web3-local/)
