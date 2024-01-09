@@ -18,38 +18,26 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
     </a>
     </div>
     <div class="item">
-        <a href="https://explorer.testnet.rsk.co" target="blank">
-        <img src="https://rsk.co/img/tools/2-RSK_explorer.png" alt="RSK Testnet Explorer">
-        <a class="company-name" href="https://explorer.testnet.rsk.co" target="blank">RSK Testnet Explorer</a>
-    </a>
-    </div>
-    <div class="item">
-        <a href="https://stats.rsk.co" target="blank">
-        <img src="https://rsk.co/img/tools/3-RSK_stat.png" alt="RSK Stats">
-        <a class="company-name" href="https://stats.rsk.co" target="blank">RSK Stats</a>
-    </a>
-    </div>
-    <div class="item">
-        <a href="https://stats.testnet.rsk.co" target="blank">
-        <img src="https://rsk.co/img/tools/3-RSK_stat.png" alt="RSK Testnet Stats">
-        <a class="company-name" href="https://stats.testnet.rsk.co" target="blank">RSK Testnet Stats</a>
+        <a href="https://metamask.io" target="blank">
+        <img src="/assets/img/metamask/metamask.png" alt="Metamask">
+        <a class="company-name" href="https://metamask.io" target="blank">Metamask</a>
     </a>
     </div>
     <div class="item">
         <a href="https://faucet.testnet.rsk.co" target="blank">
-        <img src="https://rsk.co/img/tools/4-testnet-faucet.png" alt="Testnet Faucet">
+        <img src="/assets/img/faucet/faucet1.png" alt="Testnet Faucet">
         <a class="company-name" href="https://faucet.testnet.rsk.co" target="blank">Testnet Faucet</a>
     </a>
     </div>
     <div class="item">
         <a href="https://rskgasstation.info" target="blank">
-        <img src="https://rsk.co/img/tools/5-RSK-Gas-Station.png" alt="RSK Gas Station">
+        <img src="/assets/img/gas-station/gas-station1.png" alt="RSK Gas Station">
         <a class="company-name" href="https://rskgasstation.info" target="blank">RSK Gas Station</a>
     </a>
     </div>
     <div class="item">
         <a href="/tools/truffle">
-        <img src="https://rsk.co/img/tools/6-Truffle.png" alt="Truffle" style="margin: 10px;">
+        <img src="/assets/img/home/6-Truffle.png" alt="Truffle" style="margin: 10px;">
         <a class="company-name" href="/tools/truffle">Truffle</a>
     </a>
     </div>
@@ -61,7 +49,9 @@ Explore a suite of developer tools designed to empower blockchain developers and
 Discover the following tools:
 
 - [Explorer](https://dev.rootstock.io/tools/explorer/)
+- [Faucet](https://dev.rootstock.io/tools/faucet/)
 - [Ganache](https://dev.rootstock.io/tools/truffle/ganache/)
+- [Gas Station](https://dev.rootstock.io/develop/apps/tools/gas-station/)
 - [Hardhat](https://dev.rootstock.io/kb/hardhat-setup-on-rsk/)
 - [MetaMask](https://dev.rootstock.io/wallet/use/metamask/)
 - [Remix](https://dev.rootstock.io/kb/remix-and-metamask-with-rsk-testnet/)
