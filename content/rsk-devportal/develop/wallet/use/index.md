@@ -157,7 +157,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [MyEtherWallet](https://www.myetherwallet.com/)
 - [MyCrypto](/wallet/use/mycrypto)
 - [Portis](https://www.portis.io/)
-- [rWallet](https://github.com/rsksmart/rwallet)
+- [RIF Wallet](/rif/wallet/dev-reference/)
 - [Rabby Wallet](https://rabby.io)
 - [TaHo](https://taho.xyz)
 - [TorusLabs](https://tor.us/index.html)

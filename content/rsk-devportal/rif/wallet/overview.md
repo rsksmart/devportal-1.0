@@ -7,7 +7,7 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
-Built with react native, account abstraction at its core, the [RIF wallet](https://github.com/rsksmart/rif-wallet) enables developers and businesses to build and deploy a DeFi wallet for their end-users. With features like sending and receiving crypto using human readable names, paying for gas fees using ERC20 tokens, safely transition your users into Web3 without hassle. See some of the [use cases](https://rif.technology/use-cases/) of the RIF Wallet.
+Built with react native, and account abstraction at its core, the [RIF wallet](https://github.com/rsksmart/rif-wallet) is a programmable wallet that enables developers and businesses to build and deploy a DeFi wallet for their end-users. With features like sending and receiving crypto using human readable names, paying for gas fees using ERC20 tokens, safely transition your users into Web3 without hassle. See some of the [use cases](https://rif.technology/use-cases/) of the RIF Wallet.
 
 The wallet stack comprises of [RIF Relay](https://github.com/rsksmart/rif-relay) for payment of gas fees using ERC20 tokens, [RIF Name Service (RNS)](https://github.com/rsksmart/rns-manager-react) for sending and receiving crypto via usernames, and a set of wallet APIs and libraries for easy setup and development.
 

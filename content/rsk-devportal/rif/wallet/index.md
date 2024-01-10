@@ -9,15 +9,19 @@ layout: rsk
 
 ![RIF Wallet App Banner](/assets/img/rif-wallet/rif-wallet-docs-banner.png)
 
-The [RIF wallet](https://github.com/rsksmart/rif-wallet) is a DeFi wallet enabling developers and businesses to build intuitive and secure mobile-first Web3 experiences for their end-users. Businesses can now transition its end users into the Web3 ecosystem without all the complexity associated with blockchain addresses. See [Overview](./overview/) section for more information.
+The [RIF wallet](https://github.com/rsksmart/rif-wallet) is a fully programmable and extensible DeFi wallet enabling developers and businesses to build intuitive and secure mobile-first Web3 experiences for their end-users. Businesses can now transition its end users into the Web3 ecosystem without all the complexity associated with blockchain addresses. 
 
-Are you a developer, or a business looking to build and deploy a smart wallet?
+See [Overview](./overview/) section for more information.
+
+## For Developers
+
+Are you a developer, or a business looking to build and deploy a fully programmable wallet on Bitcoin?
 
 <a href="/rif/wallet/dev-reference/" target="_blank" class="green-button">Start building</a>
 
 ### Configure Networks
 
-The app runs in both Rootstock mainnet and testnet with the default chain set to Testnet. You can configure this by changing the environment variable `DEFAULT_CHAIN_TYPE` to MAINNET in the [.env file](https://github.com/rsksmart/rif-wallet/blob/develop/.env). See how to [switch networks](/rif/wallet/user-guide/switch-networks/) using the application.
+The RIF Wallet app runs in both Rootstock mainnet and testnet with the default chain set to Testnet. You can configure this by changing the environment variable `DEFAULT_CHAIN_TYPE` to MAINNET in the [.env file](https://github.com/rsksmart/rif-wallet/blob/develop/.env). See how to [switch networks](/rif/wallet/user-guide/switch-networks/) using the application.
 
 ### API Docs
 
