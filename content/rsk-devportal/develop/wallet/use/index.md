@@ -174,7 +174,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 In the following matrix you can see the different features by wallet.
 
-| Wallet | | RSK Checksum | | RSK dPath | | Customizable dPath |
+| Wallet | | Rootstock Checksum | | Rootstock dPath | | Customizable dPath |
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
 | RIF Wallet | | ✔ | | ✔ | | ✔ |
 | Beexo | | ✔ | | ✔ | | ✔ |
