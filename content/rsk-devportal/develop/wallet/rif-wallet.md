@@ -5,7 +5,7 @@ layout: rsk
 title: RIF Wallet
 ---
 
-![RIF Wallet Logo](/assets/img/rif-wallet/logo-rif-wallet.png)
+![RIF Wallet gif](/assets/img/rif-wallet/rif-wallet-gif-overview.gif)
 
 [RIF Wallet](https://rif.technology/rif-wallet/) provides the framework to build an intuitive and secure mobile-first Web3 experience, it uses account abstraction to pay the gas fees with ERC20 tokens using RIF Relay, wallet infrastructure APIs, and libraries. Businesses can now transition its end users into the Web3 ecosystem without all the complexity. 
 

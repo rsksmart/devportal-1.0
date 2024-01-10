@@ -18,7 +18,7 @@ Rootstock nodes can be installed on all major platforms, including Linux, Window
 The Rootstock network is account-based and incorporates an optional blockchain identifier, also known as chain-id.
 
 <a href="/rsk/architecture/account-based" class="green-button">About addresses</a>
-<a href="/develop/wallet/" class="green-button">Create a Wallet</a>
+<a href="/develop/wallet/use/" class="green-button">Create a Wallet</a>
 <br/><br/>
 
 ## Step 3: Get RBTC
