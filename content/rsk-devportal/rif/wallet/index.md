@@ -9,7 +9,7 @@ layout: rsk
 
 ![RIF Wallet App Banner](/assets/img/rif-wallet/rif-wallet-docs-banner.png)
 
-The [RIF wallet](https://github.com/rsksmart/rif-wallet) is a smart wallet enabling developers and businesses to build intuitive and secure mobile-first Web3 experiences for their end-users. Businesses can now transition its end users into the Web3 ecosystem without all the complexity associated with blockchain addresses. See [Overview](./overview/) section for more information.
+The [RIF wallet](https://github.com/rsksmart/rif-wallet) is a DeFi wallet enabling developers and businesses to build intuitive and secure mobile-first Web3 experiences for their end-users. Businesses can now transition its end users into the Web3 ecosystem without all the complexity associated with blockchain addresses. See [Overview](./overview/) section for more information.
 
 Are you a developer, or a business looking to build and deploy a smart wallet?
 

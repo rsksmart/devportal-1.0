@@ -8,7 +8,7 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
-The developer reference documentation is intended for developers looking to build and deploy an account abstraction wallet on Rootstock. 
+The developer reference documentation is intended for developers looking to build and deploy a fully programmable DeFi on Bitcoin wallet. 
 
 In this section, we will cover:
  

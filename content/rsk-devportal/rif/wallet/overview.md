@@ -7,7 +7,7 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
-Built with react native, account abstraction at its core, the [RIF wallet](https://github.com/rsksmart/rif-wallet) enables developers and businesses to build and deploy a smart wallet for their end-users. With features like sending and receiving crypto using human readable names, paying for gas fees using ERC20 tokens, safely transition your users into Web3 without hassle. See some of the [use cases](https://rif.technology/use-cases/) of the RIF Wallet.
+Built with react native, account abstraction at its core, the [RIF wallet](https://github.com/rsksmart/rif-wallet) enables developers and businesses to build and deploy a DeFi wallet for their end-users. With features like sending and receiving crypto using human readable names, paying for gas fees using ERC20 tokens, safely transition your users into Web3 without hassle. See some of the [use cases](https://rif.technology/use-cases/) of the RIF Wallet.
 
 The wallet stack comprises of [RIF Relay](https://github.com/rsksmart/rif-relay) for payment of gas fees using ERC20 tokens, [RIF Name Service (RNS)](https://github.com/rsksmart/rns-manager-react) for sending and receiving crypto via usernames, and a set of wallet APIs and libraries for easy setup and development.
 
@@ -15,18 +15,22 @@ The wallet stack comprises of [RIF Relay](https://github.com/rsksmart/rif-relay)
 
 ## Features of the wallet
 
-Here are some notable features: 
+Here are some notable features of the RIF Wallet: 
 
-* Fully customizable and extensible smart wallet: 
+* Fully programmable and extensible smart wallet: 
 The RIF Wallet is a crypto wallet with smart contract functionalities. It is modular in nature and its functionalities can be extended.  Businesses can build and adapt it to suit their use cases. 
 * Pay gas fees using multiple ERC20 tokens:
 RIF Relay is a secure sponsored transaction system that enables users to pay the transaction fees using ERC-20 tokens. This enables end users to transact entirely using one asset instead of having to manage a separate asset for gas payments.
 * Personalized domain usernames:
 RNS (RIF Name Service) enables users to transfer and receive digital assets with the use of Aliases / usernames, to create a simple and seamless onboarding experience. Additionally, RNS domains are transferable and tradable as NFTs, allowing speculative use cases, collection, and easy change of ownership. 
+* Connect to other dApps using WalletConnect
+Establish seamless connections with various decentralized applications (dApps) by utilizing the WalletConnect feature, facilitating a user-friendly and integrated experience across the blockchain ecosystem.
+* Add a Contact 
+Effortlessly include a contact's details (Username and/or address, Name) in your Contact list, sparing you from the hassle of memorizing blockchain addresses.
 
 ## Benefits of using the RIF Wallet
-* Bitcoin and Rootstock Compatibility: No need for additional integration, take advantage of bitcoin security while utilizing the smart contract capabilties on Rootstock.
-* Easily create and deploy a customizable wallet for your end-users, with capabilities such as on-ramp, personalized domain usernames, cheap gas fee transaction and access to ERC-20 tokens in the Rootstock ecosystem.
+* Bitcoin and Rootstock Compatibility: No need for additional integration, take advantage of bitcoin security while utilizing the smart contract capabilties and also access native tokens (USDRIF, RIF and BTC and RBTC) on Rootstock
+* Easily create and deploy a full programmable DeFi on Bitcoin wallet for your end-users, with capabilities such as personalized domain usernames, cheap gas fee transaction fees using ERC-20 tokens.
 * Implementation support and collaboration:
     * Technical support and resources throughout the process to ensure all capabilities of the wallet are fully utilized.
 * Easily build a native wallet application from scratch on top of a secure set of pre-packaged libraries and APIs.
