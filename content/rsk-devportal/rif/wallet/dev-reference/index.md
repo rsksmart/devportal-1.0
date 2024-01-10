@@ -12,10 +12,9 @@ The developer reference documentation is intended for developers looking to buil
 
 In this section, we will cover:
  
-* Prerequisites needed to run the RIF Wallet
-* How to install the tools
-* Fees associated with the app
-* Deploying a wallet.
+* [Prerequisites](#prerequisites) needed to run the RIF Wallet App
+* [How to install the tools](#installing-the-tools)
+* [Deploying a wallet](#deploying-a-wallet)
 
 ## Prerequisites
 

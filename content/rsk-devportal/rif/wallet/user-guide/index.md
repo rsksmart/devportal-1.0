@@ -10,7 +10,9 @@ layout: rsk
 
 The RIF Wallet App user guide enables end-users to create and setup a wallet and perform basic functionalities like pay gas fees using ERC20 Tokens, sending and receving tokens via web3 usernames, etc.
 
-![RIF Wallet gif](/assets/img/rif-wallet/rif-wallet-gif-overview.gif)
+<div class="image-container">
+    <img src="/assets/img/rif-wallet/rif-wallet-gif-overview.gif"  title="RIF Wallet GIF"/>
+</div>
 
 > Are you a developer or business looking to build on top of the RIF Wallet? See the [Developer Reference Guide](/rif/wallet/dev-reference/)
 
