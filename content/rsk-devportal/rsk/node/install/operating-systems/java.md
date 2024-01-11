@@ -6,7 +6,7 @@ menu_order: 4
 render_features: 'custom-terminals'
 ---
 
-Make sure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing RSK nodes on it.
+Make sure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing Rootstock nodes on it.
 
 You also need to install [Java 8 JDK](https://www.java.com/download/).
 
@@ -16,7 +16,7 @@ In order to run RSKj on Apple M1/M2 machines using x86 based software, make sure
 
 ## Install the node using a JAR file
 
-The Fat JAR or Uber JAR can be [downloaded](https://github.com/rsksmart/rskj/releases) or compiled (in a [reproducible way](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [not](/rsk/node/contribute)).
+The Fat JAR or Uber JAR can be [downloaded](https://github.com/rsksmart/rskj/releases) or compiled (in a [reproducible way](/rsk/node/reproducible/) or [not](/rsk/node/contribute)).
 
 To run the node:
 

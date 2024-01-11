@@ -6,7 +6,7 @@ description: "How to compile and run an RSKj node on Windows. Installing pre-req
 menu_order: 500
 ---
 
-Here you have the steps to compile and run an RSK node on Windows.
+Here you have the steps to compile and run an Rootstock node on Windows.
 
 This page is organized in this way:
 
@@ -23,7 +23,7 @@ After opening IDEA, we need to load the RSKj project, this can be done by using 
 To do that follow the next steps:
 
 - Go to *File* -> *New* -> *Project from Existing Sources...*
-- Browse in the RskJ downloaded code the file `rskj\build.gradle` and select it.
+- Browse in the RSKj downloaded code the file `rskj\build.gradle` and select it.
 - Within the dialog select *Use default gradle wrapper* and then press *Finish*.
 
 ![img](/assets/img/rsk/howToInstallAndRun/IdeaRskJWelcome.png)
@@ -59,7 +59,7 @@ If everything is OK, you should see the debug information like that:
 
 ![img](/assets/img/rsk/howToInstallAndRun/Running.png)
 
-And yes! Congratulations! Now you're running a local RSK node :)
+And yes! Congratulations! Now you're running a local Rootstock node :)
 
 You're joined to Mainnet by default.
 
