@@ -46,17 +46,48 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
 
 Explore a suite of developer tools designed to empower blockchain developers and enthusiasts in the Rootstock and RIF ecosystems. Simplify your development process and make the most out of these platforms. 
 
-Discover the following tools:
+Discover the fully compatible tools to aid your development process:
 
-- [Explorer](https://dev.rootstock.io/tools/explorer/)
-- [Faucet](https://dev.rootstock.io/tools/faucet/)
-- [Ganache](https://dev.rootstock.io/tools/truffle/ganache/)
-- [Gas Station](https://dev.rootstock.io/develop/apps/tools/gas-station/)
+## Dev Environment
 - [Hardhat](https://dev.rootstock.io/kb/hardhat-setup-on-rsk/)
-- [MetaMask](https://dev.rootstock.io/wallet/use/metamask/)
 - [Remix](https://dev.rootstock.io/kb/remix-and-metamask-with-rsk-testnet/)
-- [Rootstock Community Forum](https://dev.rootstock.io/discord/)
 - [Smart Contract Compiler](https://dev.rootstock.io/kb/compile-smart-contracts-go/)
-- [Token Generator](https://dev.rootstock.io/kb/create-a-token/)
-- [Truffle Suite](https://dev.rootstock.io/tools/truffle/)
+- [Tenderly](https://dev.rootstock.io/kb/build-with-tenderly/)
+- [Token Generator](https://dev.rootstock.io/kb/create-a-token//)
+- [Truffle Suite](https://dev.rootstock.io/kb/configure-truffle-to-rsk/)
 - [Web3.js](https://dev.rootstock.io/kb/frontend-web3-local/)
+
+## Developer Platforms
+- [Forward Protocol](https://forwardprotocol.io/)
+- [Thirdweb](https://thirdweb.com/)
+- [UseDapp](https://usedapp.io/)
+
+## Explorers
+- [Rootstock Explorer](https://dev.rootstock.io/tools/explorer/)
+
+## Faucet
+- [Rootstock Faucet](https://dev.rootstock.io/tools/faucet/)
+
+## Gas Station
+- [Rootstock Gas Station](https://dev.rootstock.io/develop/apps/tools/gas-station/)
+
+## Wallet
+- [Rootstock Wallets](https://dev.rootstock.io/develop/wallet/use/)
+
+## SDKs
+
+### Code Quality
+- [SolidityScan](https://solidityscan.com/)
+- [Sourcify.dev](https://sourcify.dev)
+
+### Code Snippets
+- [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippet)
+
+### Developer Support and Resources
+- [Discord](https://dev.rootstock.io/discord/)
+- [Stackoverflow](https://stackoverflow.com/questions/tagged/rsk)
+- [FAQs](https://dev.rootstock.io/kb/faqs/)
+
+### Tutorials and Guides
+- [Knowledge base](https://dev.rootstock.io/kb/)
+- [Quick Start](https://dev.rootstock.io/guides/quickstart/)
