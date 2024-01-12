@@ -14,7 +14,7 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
     <div class="item">
         <a href="https://explorer.rsk.co" target="blank">
         <img src="/assets/img/developer/explorer/explorer1.png" alt="RSK Explorer">
-        <a class="company-name" href="https://explorer.rsk.co" target="blank">RSK Explorer</a>
+        <a class="company-name" href="https://explorer.rsk.co" target="blank">Rootstock Explorer</a>
     </a>
     </div>
     <div class="item">
