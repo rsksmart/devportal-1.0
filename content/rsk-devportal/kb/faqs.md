@@ -76,7 +76,7 @@ Here are some frequently asked questions about the Rootstock and RIF Platform.
     > - Portability: RBTC is pegged 1:1 to BTC and can be converted to and from BTC using the 2-way peg mechanism. RIF is an ERC20-compatible token that can be transferred across smart contract platforms.
     > - Supply: RBTC has the same supply as BTC, which is capped at 21 million. RIF has a fixed supply of 1 billion tokens, which were pre-mined and distributed according to a token sale and an allocation plan.
   - How can I obtain RBTC and RIF tokens?
-    * You can get RBTC by converting through BTC through the PowPeg mechanism. However, this requires that you get a Rootstock node. A faster and easier way to get either RBTC or RIF tokens is to buy from supported centralized and decentralized exchanges.
+    * You can get RBTC by converting through BTC through the [PowPeg mechanism](/rsk/architecture/powpeg/). However, this requires that you get a Rootstock node. A faster and easier way to get either RBTC or RIF tokens is to buy from supported centralized and decentralized exchanges. See [How to easily convert your BTC to RBTC](https://youtu.be/02M2lg80NbM?si=JB5cx59lNGTxXt2c) with the PowPeg.
   - Why is RBTC listed in exchanges?
     * RBTC is listed in exchanges to make it easier for less technical users to access it. It takes almost a day to transfer BTC to RBTC using the peg. Users need at least small amounts of RBTC to pay for transaction fees required for smart contract execution. Exchanges help to cater to the expected growth in demand for RBTC.
   - How does the RIF token accrue value?
