@@ -13,31 +13,31 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
 <div id="stats-carousel" class="owl-carousel owl-theme">
     <div class="item">
         <a href="https://explorer.rsk.co" target="blank">
-        <img src="/assets/img/developer/explorer/explorer1.png" alt="RSK Explorer">
+        <img src="/assets/img/tools/rsk explorer876.png" alt="RSK Explorer">
         <a class="company-name" href="https://explorer.rsk.co" target="blank">Rootstock Explorer</a>
     </a>
     </div>
     <div class="item">
         <a href="https://metamask.io" target="blank">
-        <img src="/assets/img/metamask/metamask.png" alt="Metamask">
+        <img src="/assets/img/tools/metamask154.png" alt="Metamask">
         <a class="company-name" href="https://metamask.io" target="blank">Metamask</a>
     </a>
     </div>
     <div class="item">
         <a href="https://faucet.testnet.rsk.co" target="blank">
-        <img src="/assets/img/faucet/faucet1.png" alt="Testnet Faucet">
+        <img src="/assets/img/tools/Testnet Faucet.png" alt="Testnet Faucet">
         <a class="company-name" href="https://faucet.testnet.rsk.co" target="blank">Testnet Faucet</a>
     </a>
     </div>
     <div class="item">
         <a href="https://rskgasstation.info" target="blank">
-        <img src="/assets/img/gas-station/gas-station1.png" alt="RSK Gas Station">
+        <img src="/assets/img/tools/gas-station3.png" alt="RSK Gas Station">
         <a class="company-name" href="https://rskgasstation.info" target="blank">RSK Gas Station</a>
     </a>
     </div>
     <div class="item">
         <a href="/tools/truffle">
-        <img src="/assets/img/home/6-Truffle.png" alt="Truffle" style="margin: 10px;">
+        <img src="/assets/img/tools/truffle34.png" alt="Truffle" style="margin: 10px;">
         <a class="company-name" href="/tools/truffle">Truffle</a>
     </a>
     </div>
