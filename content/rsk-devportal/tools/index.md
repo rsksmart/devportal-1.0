@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: Tools
-tags: truffle, ganache, explorer, testnet, faucet, networks, deployment, gas-station, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, wallets
+tags: hardhat explorer, testnet, faucet, networks, deployment, gas-station, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, wallets
 menu_order: 9
 section_title: Tools
 menu_title: Overview
@@ -36,9 +36,9 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
     </a>
     </div>
     <div class="item">
-        <a href="/tools/truffle">
-        <img src="/assets/img/tools/truffle34.png" alt="Truffle" style="margin: 10px;">
-        <a class="company-name" href="/tools/truffle">Truffle</a>
+       <a href="https://hardhat.org" target="blank">
+        <img src="/assets/img/tools/hardhat12456.jpg" alt="Hardhat" style="margin: 10px;">
+        <a class="company-name" href="https://hardhat.org">Hardhat</a>
     </a>
     </div>
 </div>
@@ -54,7 +54,6 @@ Discover the fully compatible tools to aid your development process:
 - [Smart Contract Compiler](https://dev.rootstock.io/kb/compile-smart-contracts-go/)
 - [Tenderly](https://dev.rootstock.io/kb/build-with-tenderly/)
 - [Token Generator](https://dev.rootstock.io/kb/create-a-token//)
-- [Truffle Suite](https://dev.rootstock.io/kb/configure-truffle-to-rsk/)
 - [Web3.js](https://dev.rootstock.io/kb/frontend-web3-local/)
 
 ## Developer Platforms
