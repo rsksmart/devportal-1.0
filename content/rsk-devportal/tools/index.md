@@ -13,7 +13,7 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
 <div id="stats-carousel" class="owl-carousel owl-theme">
     <div class="item">
         <a href="https://explorer.rsk.co" target="blank">
-        <img src="/assets/img/tools/3-rootstock-explorer.png" alt="Rootstock Explorer">
+        <img src="/assets/img/tools/4-rootstock-explorer.png" alt="Rootstock Explorer">
         <a class="company-name" href="https://explorer.rsk.co" target="blank">Rootstock Explorer</a>
     </a>
     </div>
@@ -25,7 +25,7 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
     </div>
     <div class="item">
         <a href="https://faucet.testnet.rsk.co" target="blank">
-        <img src="/assets/img/tools/4-testnet-faucet.png" alt="Testnet Faucet">
+        <img src="/assets/img/tools/5-testnet-faucet.png" alt="Testnet Faucet">
         <a class="company-name" href="https://faucet.testnet.rsk.co" target="blank">Testnet Faucet</a>
     </a>
     </div>
