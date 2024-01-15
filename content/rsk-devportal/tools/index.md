@@ -1,7 +1,7 @@
 ---
-layout: rsk
+layout: Rootstock
 title: Tools
-tags: hardhat explorer, testnet, faucet, networks, deployment, gas-station, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, wallets
+tags: hardhat explorer, testnet, faucet, networks, deployment, gas-station, tools, Rootstock, ethereum, smart-contracts, install, get-started, how-to, wallets
 menu_order: 9
 section_title: Tools
 menu_title: Overview
@@ -13,7 +13,7 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
 <div id="stats-carousel" class="owl-carousel owl-theme">
     <div class="item">
         <a href="https://explorer.rsk.co" target="blank">
-        <img src="/assets/img/tools/rsk explorer876.png" alt="RSK Explorer">
+        <img src="/assets/img/tools/rsk explorer876.png" alt="Rootstock Explorer">
         <a class="company-name" href="https://explorer.rsk.co" target="blank">Rootstock Explorer</a>
     </a>
     </div>
@@ -31,8 +31,8 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
     </div>
     <div class="item">
         <a href="https://rskgasstation.info" target="blank">
-        <img src="/assets/img/tools/gas-station3.png" alt="RSK Gas Station">
-        <a class="company-name" href="https://rskgasstation.info" target="blank">RSK Gas Station</a>
+        <img src="/assets/img/tools/gas-station3.png" alt="Rootstock Gas Station">
+        <a class="company-name" href="https://rskgasstation.info" target="blank">Rootstock Gas Station</a>
     </a>
     </div>
     <div class="item">
@@ -74,19 +74,22 @@ Discover the fully compatible tools to aid your development process:
 - [Rootstock Wallets](https://dev.rootstock.io/develop/wallet/use/)
 
 ## SDKs
+- [RIF Relay SDK](https://github.com/rsksmart/rif-relay-sample-dapp#rif-relaying-services-sdk-sample-dapp)
 
-### Code Quality
+
+## Code Quality
 - [SolidityScan](https://solidityscan.com/)
 - [Sourcify.dev](https://sourcify.dev)
 
-### Code Snippets
+## Code Snippets
 - [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippet)
 
-### Developer Support and Resources
+## Developer Support and Resources
 - [Discord](https://dev.rootstock.io/discord/)
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/rsk)
 - [FAQs](https://dev.rootstock.io/kb/faqs/)
 
-### Tutorials and Guides
+## Tutorials and Guides
 - [Knowledge base](https://dev.rootstock.io/kb/)
 - [Quick Start](https://dev.rootstock.io/guides/quickstart/)
+
