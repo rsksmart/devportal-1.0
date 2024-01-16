@@ -232,7 +232,7 @@ For visual insights into how the Relay Server functions, refer to the diagrams a
         ```
         > By default, the server uses the `default.json5` file in the config directory. Depending on the profile in `NODE_ENV`, the values in the `default.json5` file is overriden. Therefore you need to setup the `NODE_ENV` environment to `testnet`.
 
-        At this point the server should be running and ready to start processing transactions, however, you still need to register the off-chain components in the Relay Hub. For the registration process, the Relay Manager and Worker must have funds.           
+        At this point, the server should be running and ready to start processing transactions; however, you still need to register the off-chain components in the Relay Hub. For the registration process, the Relay Manager and Worker must have funds.           
     1. To get the addresses, this requires the server to be active. In a different terminal window, execute the following command:
         ```
         curl http://<SERVER_URL>/chain-info
