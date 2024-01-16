@@ -1,7 +1,7 @@
 ---
 menu_order: 300
 section_title: Hardhat
-menu_title: Overview
+menu_title: Hardhat
 layout: Rootstock
 title: Hardhat Overview
 tags: hardhat, quick-start, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, windows, mac, linux, get-started, how-to
