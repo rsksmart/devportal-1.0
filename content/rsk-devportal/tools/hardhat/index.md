@@ -1,5 +1,5 @@
 ---
-nu_order: 300
+menu_order: 300
 section_title: Hardhat
 menu_title: Overview
 layout: Rootstock
