@@ -23,8 +23,6 @@ Hardhat is an Ethereum development environment designed for professionals. It's 
 
 7. **Ethers.js and Waffle Integration:** These integrations provide a set of utilities for writing and testing smart contracts.
 
-<a href="/kb/hardhat-setup-on-rsk/" class="green-button">Quick start</a>
-
 ## Install:
 
 ```bash
