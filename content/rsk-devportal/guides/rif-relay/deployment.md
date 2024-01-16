@@ -126,7 +126,7 @@ Before deploying a Collector contract ensure the following:
         npx hardhat collector:deploy --network mainnet
         ```
 ### Allow Tokens
-RIF Relay only accepts whitelisted tokens, primarily to ensure only tokens of value to the sponsor are accepted. To whitelist a token:
+RIF Relay only accepts whitelisted tokens, primarily to ensure only tokens of value to the operator are accepted. To whitelist a token:
 Execute the `acceptToken(address token)` function on the Relay Verifiers contracts, which include:
 - `SmartWalletDeployVerifier`
 - `SmartWalletRelayVerifier`
