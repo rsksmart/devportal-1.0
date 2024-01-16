@@ -7,7 +7,7 @@ section_title: Tools
 menu_title: Overview
 ---
 
-Explore a suite of developer tools designed to empower blockchain developers and enthusiasts in the Rootstock and RIF ecosystems. Simplify your development process and make the most out of these platforms. 
+Explore a suite of fully compatible developer tools and guides designed to empower bitcoin and smart contract developers in the Rootstock and RIF ecosystems. 
 
 <div id="stats-carousel" class="owl-carousel owl-theme">
     <div class="item">
@@ -41,8 +41,6 @@ Explore a suite of developer tools designed to empower blockchain developers and
     </a>
     </div>
 </div>
-
-Discover tools that are fully compatible with Rootstock, Bitcoin, and Ethereum to aid the development process on Rootstock.
 
 ## Tutorials and Guides
 - [Knowledge base](/kb/)
