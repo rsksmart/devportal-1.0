@@ -42,7 +42,7 @@ Here are some solutions to answer your questions.
 - How can I backup my seed phrase or private key?
     > - See the section on [backing up your wallet](/rif/wallet/user-guide/wallet-backup/).
 - Can I add custom tokens to my RIF Wallet?
-    > - No, the current version of the RIF Wallet App does not support adding custom tokens. To add other tokens, you will need to receive the token in your wallet. Any of the Rootstock addresses in “receive” can be used to receive funds in your wallet. However, the default tokens in the user's wallet are simple to add, any ERC20 tokens received in your wallet appears on default. 
+    > - Developers can add custom tokens by default as well. To add other tokens, you will need to receive the token in your wallet. Any of the Rootstock addresses in “receive” can be used to receive funds in your wallet. However, the default tokens in the user's wallet are simple to add, any ERC20 tokens received in your wallet appears on default. 
 - Can I swap tokens within the RIF Wallet?
     > - The current version of the RIF Wallet does not include swaps as a built-in functionality yet. 
 - Why do I need to deploy my wallet?
@@ -52,7 +52,7 @@ Here are some solutions to answer your questions.
 - What are the requirements to set up a partner's wallet based on RIF's open source? 
     > - We have all the necessary documentation for a proper build and it should not be complicated. In practice, the developer will read the "readme" file, follow the described steps and will be able to build their wallet in a few minutes. However, to set up that environment may take a bit longer time. See the starter kit for instructions on how to quickly set up your environment to start building your wallet.
 - Are there any set-up or running costs associated with RIF Wallet?
-    > - While there might be infrastructure costs or resource requirements, the set-up and maintenance of RIF Wallet itself do not incur any direct costs. The open-source nature of the wallet allows for efficient implementation without additional financial obligations. 
+    > - Setting up and maintaining the RIF Wallet carries no direct costs for both general users and developers. Businesses may incur infrastructure costs or resource requirements based on their use-case. However, the wallet's open-source nature facilitates efficient implementation without imposing additional financial obligations on users or developers. 
 - What are the risks associated with the RIF Wallet? 
     > - With a self-custodial wallet, security of your assets depends totally on you. 
     If you lose access to your wallet, no one else can restore access. Write down your 12-word phrase or keep it somewhere safe. 

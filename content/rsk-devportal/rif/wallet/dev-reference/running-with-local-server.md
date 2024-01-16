@@ -1,23 +1,38 @@
 ---
-menu_order: 200
-menu_title: Getting Started
+menu_order: 300
+menu_title: Running with Local Server
 title: Getting Started
 description: 'RIF Wallet is an open source smart contract wallet which enables businesses to create and deploy fully customizable on-chain wallets'
 tags: rif-wallet, rif, rootstock, wallet, smart contracts
+render_features: 'custom-terminals'
 layout: rsk
 ---
 
-In this section, we will cover how to run the RIF Wallet app locally or [using an instance](#connect-to-an-instance).
+In this section, we will cover how to run the RIF Wallet app with local services or [via a shared instance](#connect-to-a-shared-instance).
 
+> To get started, ensure your environment is setup properly, using the [setup instructions](/rif/wallet/). See how to [run the wallet](/rif/wallet/dev-reference/running-the-wallet/) or how to [interact with the smart wallet](/rif/wallet/dev-reference/interact-with-the-wallet/).
+
+## Connect to a shared instance
+
+### Websocket
+
+RIF Wallet Services WebSocket allows you to get all updates (balances, transactions, events and prices) of a Smart Wallet. See the [websocket docs](https://github.com/rsksmart/rif-wallet-services/blob/develop/docs/websocket.md)
+
+See the [API docs on Testnet](https://rif-wallet-services.testnet.rifcomputing.net/api-docs/)
 
 ## Running the App with Local Services
 
 The RIF Wallet Services provides a basic account querying API to bootstrap your app. It uses a [backend server](https://github.com/rsksmart/rif-wallet-services) to connect to the Rootstock indexer and to collect USD prices.
 
-```javascript
-yarn ios:local
-yarn android:local
-```
+[](#top "multiple-terminals")
+- IOS
+  ```shell
+  yarn ios:local
+  ```
+- Android
+  ```shell
+  yarn android:local
+  ```
 
 You can build your own configuration and run:
 
@@ -25,13 +40,7 @@ You can build your own configuration and run:
 ENVFILE=.env.custom react-native run-ios
 ```
 
-## Connect to an instance
-
-### Websocket
-
-RIF Wallet Services WebSocket allows you to get all updates(balances, transactions, events and prices) of a Smart Wallet. See the [websocket docs](https://github.com/rsksmart/rif-wallet-services/blob/develop/docs/websocket.md)
-
-See the [API docs on Testnet](https://rif-wallet-services.testnet.rifcomputing.net/api-docs/)
+> You do not need to run the server to run the RIF Wallet app.
 
 ### Development
 

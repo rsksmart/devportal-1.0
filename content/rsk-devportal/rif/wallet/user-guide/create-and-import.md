@@ -16,27 +16,24 @@ To create a new wallet, open the RIF Wallet App and click on Create a wallet. If
 **Accept the terms and conditions.**
 
 <div class="image-container">
-    <img src="/assets/img/rif-wallet/4b-rif-wallet-accept-terms.jpg"  title="RIF Wallet - Accept Terms and Conditions"/>
+    <img src="/assets/img/rif-wallet/2-rif-wallet-accept-terms.jpg"  title="RIF Wallet - Accept Terms and Conditions"/>
 </div>
 
 Click "Continue".
 
 **Secure your wallet**
 
-It is highly recommended that you generate and store your unique Master Key before creating a wallet, this key helps you restore your wallet and access your funds on a new device, in case of theft or missing device.
+Read through the security advice, you can choose the options of securing the phrase now or later. To save your phrase, click on the "eye" icon to view and store.
 
-Click on the **Secure now** button
+> Recommended: Screenshots have been disabled. Write down the mnemonic phrase and store in a secure location before creating a wallet, this mnemonic phrase helps to restore your wallet and access the funds on a new device, in case of theft or missing device.
 
-<div class="image-container">
-    <img src="/assets/img/rif-wallet/2-user-guide-secure-wallet.png"  title="RIF Wallet - Secure Wallet"/>
-</div>
+Click on **Phrase secured, continue**.
 
-Read through the instructions, then swipe right or use the arrow button as shown in the image below. Click on the green button with a check mark.
+**Verify Seed Phrase**
 
 <div class="image-container">
-    <img src="/assets/img/rif-wallet/2a-user-guide-store-keys.png"  title="RIF Wallet - Store Wallet Keys"/>
-    <img src="/assets/img/rif-wallet/2b-user-guide-store-keys-important.png"  title="RIF Wallet - Store Wallet Keys"/>
-    <img src="/assets/img/rif-wallet/2c-user-guide-store-keys-get-started.png"  title="RIF Wallet - Store Wallet Keys"/>
+    <img src="/assets/img/rif-wallet/2b-user-guide-verify-seed-phrase.jpg"  title="RIF Wallet - Verify Wallet Mnemonic Phrase"/>
+    <img src="/assets/img/rif-wallet/3-user-guide-seed-phrase-successfully-verified.jpg"  title="RIF Wallet - Verify Wallet Mnemonic Successful"/>
 </div>
 
 ## Importing an existing wallet
@@ -50,7 +47,7 @@ To import an existing wallet, click on the button as shown in the image below;
 Accept the terms and conditions.
 
 <div class="image-container">
-    <img src="/assets/img/rif-wallet/4b-rif-wallet-accept-terms.jpg"  title="RIF Wallet - Accept Terms and Conditions"/>
+    <img src="/assets/img/rif-wallet/2-rif-wallet-accept-terms.jpg"  title="RIF Wallet - Accept Terms and Conditions"/>
 </div>
 
 Click "Continue".

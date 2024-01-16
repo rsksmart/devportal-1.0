@@ -1,5 +1,5 @@
 ---
-menu_order: 400
+menu_order: 500
 menu_title: Using the Libraries
 title: RIF Wallet Libraries
 description: 'RIF Wallet is an open source smart contract wallet which enables businesses to create and deploy fully customizable on-chain wallets'

@@ -11,7 +11,7 @@ The [RIF Wallet WebSocket](https://rif-wallet-services.testnet.rifcomputing.net/
 * Getting token balances, transactions and events of smart wallet
 * Get prices of all tokens available on a network
 
-![RIF Wallet Architecture](/assets/img/rif-wallet/rif-wallet-architecture-diagram.png)
+![RIF Wallet Architecture](/assets/img/rif-wallet/rif-wallet-architecture-diagram-black-bg.png)
 
 The RIF Wallet architecture follows a client-server architecture, the RIF Wallet is the client and the RIF Wallet Services is the server, which have two responsibilities:
 
@@ -34,7 +34,7 @@ Every time a profiler gets new updates, this is emitted to the WebSocket.
 
 ## Transactions
 
-![RIF Wallet Transaction Architecture](/assets/img/rif-wallet/rif-wallet-transactions.png)
+![RIF Wallet Transaction Architecture](/assets/img/rif-wallet/rif-wallet-transactions-black-bg.png)
 
 When we make a transaction using RIF Wallet, we are using RIF Relay smart contract to have the ability to pay fees with another token and not only with native cryptocurrency (RBTC).
 

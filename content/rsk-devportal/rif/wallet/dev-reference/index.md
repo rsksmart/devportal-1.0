@@ -6,9 +6,10 @@ title: Developer Reference Guide
 description: 'RIF Wallet is an open source smart contract wallet which enables businesses to create and deploy fully customizable on-chain wallets'
 tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
+render_features: 'collapsible'
 ---
 
-The developer reference documentation is intended for developers looking to build and deploy a fully programmable DeFi on Bitcoin wallet. 
+The developer reference documentation is intended for developers looking to build and deploy a fully programmable wallet compatible with Bitcoin and Rootstock networks. 
 
 In this section, we will cover:
  
@@ -62,6 +63,15 @@ To set up the RIF Wallet App, we need to clone the following repositories.
 
 ### Installing the tools
 
+#### Operating Systems
+
+[](#top "collapsible")
+- Android
+  > For android, ensure to install the following: Node, Watchman, JDK 11(Java development kit), Android Studio, Android SDK, and [Configure ANDROID_SDK_ROOT](#configuring-android_sdk_root). See the [setup instructions](https://reactnative.dev/docs/0.70/environment-setup?platform=android)
+- IOS
+   > - For IOS, you will need to install node, watchman, Ruby, Xcode, Xcode Command Line Tools, CocoaPods, IOS Simulator. See a detailed setup instructions in the [React Native Documentation](https://reactnative.dev/docs/environment-setup?platform=ios)
+   > - Using Android, see [setup instructions](https://reactnative.dev/docs/environment-setup?os=macos&platform=android&guide=native)
+
 #### Xcode
 
 Depending on your operating system, for Mac users, the easiest way to download and install [Xcode](https://developer.apple.com/xcode/resources/) is via the [Mac App Store](https://developer.apple.com/xcode/resources/). For other platforms, the easiest way is to install the [Android Studio](https://developer.android.com/) Development Tool.
@@ -78,14 +88,15 @@ npm install -g create-react-app
 
 #### React Native
 
-##### IOS
+We will need to install Node (16+), Yarn, Watchman, Ruby(2.7.6+), [Cocoapods](https://guides.cocoapods.org/using/getting-started.html), Xcode (Via Mac App Store), and IOS Simulator. 
 
-We will need to install Node (16+), Yarn, Watchman, Ruby(2.7.6+), [Cocoapods](https://guides.cocoapods.org/using/getting-started.html), XCode (Via Mac App Store), and IOS Simulator. See the [React Native CLI Quickstart](https://reactnative.dev/docs/environment-setup?guide=native) instructions, and follow the steps in the official documentation to install react native.
+> See the [React Native CLI Quickstart](https://reactnative.dev/docs/environment-setup?guide=native) instructions, and follow the steps in the official documentation to install react native.
 
-##### Android Studio
+### Android Studio Setup
 
 For Android setup, you will need Node, the React Native command line interface, a JDK, and Android Studio. 
-See the [Android Setup Instructions page](https://reactnative.dev/docs/0.70/environment-setup?os=linux&platform=android). 
+
+> See the [Android Setup Instructions page](https://reactnative.dev/docs/0.70/environment-setup?os=linux&platform=android). 
 
 ![Android Studio](/assets/img/rif-wallet/android-studio-setup-banner.png)
 
@@ -109,11 +120,11 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 ```
 
-#### Installing Emulator
+### Installing Emulator
 
 To install Emulator, see the guide in [Create and manage virtual devices](https://developer.android.com/studio/run/managing-avds.html).
 
-#### Ethersjs:
+## Ethersjs:
 
 To install Ethers, follow these steps in the [Ethersjs official documentation](https://docs.ethers.org/v5/getting-started/#installing) or use the command below.
 
@@ -129,4 +140,4 @@ See [Fees](/rif/wallet/overview#fees)
 
 To send a token out of the RIF Wallet, the user is required to deploy their wallet. 
 
-> Note that initial deployment of the wallet is **FREE** for end users and has been subsidized by IOV Labs. The wallet cannot be redeployed after deployment. See section on [deploying a wallet](/rif/wallet/user-guide/deploy-a-wallet/) for how to deploy a wallet using the App. 
+> Note that initial deployment of the wallet is **FREE** for end users and has been subsidized by IOV Labs. The wallet cannot be redeployed after deployment. See section on [deploying a wallet](/rif/wallet/user-guide/deploy-a-wallet/) for how to deploy the RIF Wallet. 

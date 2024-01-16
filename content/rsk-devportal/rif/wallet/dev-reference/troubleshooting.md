@@ -1,5 +1,5 @@
 ---
-menu_order: 500
+menu_order: 600
 menu_title: Troubleshooting
 title: Common Errors and Troubleshooting
 description: 'RIF Wallet is an open source smart contract wallet which enables businesses to create and deploy fully customizable on-chain wallets'
