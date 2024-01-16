@@ -200,7 +200,7 @@ For visual insights into how the Relay Server functions, refer to the diagrams a
         - Stakes the Relay Manager
         - Adds the Relay Worker
         - Registers the Relay Server
-        The server is now ready to start processing transactions and a ready message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).
+        The server is now ready to start processing transactions and a `ready` message is diplayed on the console. For more details on configuration and registration parameters, refer to the [RIF Relay Server documentation](https://github.com/rsksmart/rif-relay-server#overrides).
 - Testnet
     1. Here's an example configuration file using the off-chain components deployed on the Rootstock Testnet (https://public-node.testnet.rsk.co). 
         > **Important:** Due to specific modules enabled in the RSKj nodes, the RIF Relay Server cannot connect to the public nodes.            
