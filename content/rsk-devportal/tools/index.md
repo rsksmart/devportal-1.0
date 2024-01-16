@@ -1,7 +1,7 @@
 ---
 layout: Rootstock
 title: Tools
-tags: hardhat explorer, testnet, faucet, networks, deployment, gas-station, tools, Rootstock, ethereum, smart-contracts, install, get-started, how-to, wallets
+tags: hardhat, explorer, testnet, faucet, networks, deployment, gas-station, tools, Rootstock, ethereum, smart-contracts, install, get-started, how-to, wallets
 menu_order: 9
 section_title: Tools
 menu_title: Overview
