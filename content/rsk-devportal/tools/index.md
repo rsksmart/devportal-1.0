@@ -5,10 +5,9 @@ tags: hardhat, explorer, testnet, faucet, networks, deployment, gas-station, too
 menu_order: 9
 section_title: Tools
 menu_title: Overview
-
 ---
-Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tools!
 
+Explore a suite of developer tools designed to empower blockchain developers and enthusiasts in the Rootstock and RIF ecosystems. Simplify your development process and make the most out of these platforms. 
 
 <div id="stats-carousel" class="owl-carousel owl-theme">
     <div class="item">
@@ -24,9 +23,9 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
     </a>
     </div>
     <div class="item">
-        <a href="https://faucet.testnet.rsk.co" target="blank">
+        <a href="https://faucet.rsk.co/" target="blank">
         <img src="/assets/img/tools/5-testnet-faucet.png" alt="Testnet Faucet">
-        <a class="company-name" href="https://faucet.testnet.rsk.co" target="blank">Testnet Faucet</a>
+        <a class="company-name" href="https://faucet.rsk.co/" target="blank">Testnet Faucet</a>
     </a>
     </div>
     <div class="item">
@@ -43,53 +42,73 @@ Welcome to Rootstock and Rootstock Infrastructure Framework (RIF) Developer Tool
     </div>
 </div>
 
+Discover tools that are fully compatible with Rootstock, Bitcoin, and Ethereum to aid the development process on Rootstock.
 
-Explore a suite of developer tools designed to empower blockchain developers and enthusiasts in the Rootstock and RIF ecosystems. Simplify your development process and make the most out of these platforms. 
+## Tutorials and Guides
+- [Knowledge base](/kb/)
+- [Quick Start](/guides/quickstart/)
 
-Discover the fully compatible tools to aid your development process:
+### Starter Kits
+- [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippet)
 
-## Dev Environment
-- [Hardhat](https://dev.rootstock.io/kb/hardhat-setup-on-rsk/)
-- [Remix](https://dev.rootstock.io/kb/remix-and-metamask-with-rsk-testnet/)
-- [Smart Contract Compiler](https://dev.rootstock.io/kb/compile-smart-contracts-go/)
-- [Tenderly](https://dev.rootstock.io/kb/build-with-tenderly/)
-- [Token Generator](https://dev.rootstock.io/kb/create-a-token//)
-- [Web3.js](https://dev.rootstock.io/kb/frontend-web3-local/)
+## Libraries
+- [Web3.js](https://web3js.readthedocs.io/en/v1.10.0/)
+- [Pre-compiled ABIs](/develop/libs/rsk-precompilied-abis/)
+- [JSON-RPC](/rsk/node/architecture/json-rpc/)
+
+### RIF Libraries
+- [RNS](/rif/rns/libs)
+- [Wallet](/rif/wallet/)
+- [Relay](/rif/relay/)
+- [rLogin](/rif/rlogin/libraries/)
+
+## Dev Environments
+- [Hardhat](/kb/hardhat-setup-on-rsk/)
+- [Remix](/kb/remix-and-metamask-with-rsk-testnet/)
+- [Smart Contract Compiler](/kb/compile-smart-contracts-go/)
+- [Token Generator](/kb/create-a-token//)
 
 ## Developer Platforms
 - [Forward Protocol](https://forwardprotocol.io/)
 - [Thirdweb](https://thirdweb.com/)
 - [UseDapp](https://usedapp.io/)
 
+## Node RPC
+- [GetBlock](https://getblock.io/)
+- [NOWNodes](https://nownodes.io/)
+
+## Data and Analytics
+- [Covalent](/solutions/covalent/)
+- [Tenderly](/kb/build-with-tenderly/)
+- [DappRadar](https://dappradar.com/)
+- [Coinfirm](https://www.coinfirm.com/products/aml-platform/)
+- [DeFiLlama](https://defillama.com/)
+
 ## Explorers
-- [Rootstock Explorer](https://dev.rootstock.io/tools/explorer/)
+- [Rootstock Explorer](/tools/explorer/)
+- [Blockscout](https://rootstock.blockscout.com/)
+
+## Oracles
+- [API3](https://api3.org/)
 
 ## Faucet
-- [Rootstock Faucet](https://dev.rootstock.io/tools/faucet/)
+- [Rootstock Faucet](/tools/faucet/)
 
 ## Gas Station
-- [Rootstock Gas Station](https://dev.rootstock.io/develop/apps/tools/gas-station/)
+- [Rootstock Gas Station](/develop/apps/tools/gas-station/)
 
 ## Wallet
-- [Rootstock Wallets](https://dev.rootstock.io/develop/wallet/use/)
+- [Rootstock Wallets](/develop/wallet/use/)
 
 ## SDKs
 - [RIF Relay SDK](https://github.com/rsksmart/rif-relay-sample-dapp#rif-relaying-services-sdk-sample-dapp)
-
+- [RIF Rollup](https://github.com/rsksmart/rif-rollup-js-sdk)
 
 ## Code Quality
 - [SolidityScan](https://solidityscan.com/)
 - [Sourcify.dev](https://sourcify.dev)
 
-## Code Snippets
-- [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippet)
-
 ## Developer Support and Resources
 - [Discord](https://dev.rootstock.io/discord/)
 - [Stackoverflow](https://stackoverflow.com/questions/tagged/rsk)
-- [FAQs](https://dev.rootstock.io/kb/faqs/)
-
-## Tutorials and Guides
-- [Knowledge base](https://dev.rootstock.io/kb/)
-- [Quick Start](https://dev.rootstock.io/guides/quickstart/)
-
+- [FAQs](/kb/faqs/)
