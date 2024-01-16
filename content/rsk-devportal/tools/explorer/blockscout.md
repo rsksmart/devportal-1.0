@@ -29,5 +29,5 @@ print(f"Latest RSK Block Number: {latest_block}")
 This Python script uses the Blockscout API to fetch the latest block number on the Rootstock mainnet. You need to have Python and the `requests` library installed to run this script.
 
 ## More info
-- [Hardhat Documentation](https://docs.blockscout.com/)
+- [Hardhat Documentation](https://docs.blockscout.com)
 - [Github Repo](https://github.com/blockscout/blockscout)
