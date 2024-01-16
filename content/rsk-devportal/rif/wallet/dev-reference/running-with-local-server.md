@@ -1,7 +1,7 @@
 ---
 menu_order: 300
-menu_title: Running with Local Server
-title: Getting Started
+menu_title: Running with Local Services
+title: Running with Local Server
 description: 'RIF Wallet is an open source smart contract wallet which enables businesses to create and deploy fully customizable on-chain wallets'
 tags: rif-wallet, rif, rootstock, wallet, smart contracts
 render_features: 'custom-terminals'
