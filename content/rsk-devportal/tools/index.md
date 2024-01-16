@@ -85,6 +85,14 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 ## Explorers
 - [Rootstock Explorer](/tools/explorer/)
 - [Blockscout](https://rootstock.blockscout.com/)
+- [RIF Rollup Explorer](/rif/rollup/dapps/)
+
+## Bridges
+- [Rootstock <> Ethereum Tokenbridge](/tools/tokenbridge/)
+- [PowPeg](/rsk/architecture/powpeg/)
+    * [2 Way Peg App](/guides/two-way-peg-app/)
+- [Sovryn Fast BTC](https://wiki.sovryn.com/en/sovryn-dapp/bridge)
+- [MtPelerin](https://www.mtpelerin.com/exchange-crypto?ssa=0.01&wsc=BTC&wdc=RBTC&wsa=0.01)
 
 ## Oracles
 - [API3](https://api3.org/)
@@ -92,7 +100,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 ## Faucet
 - [Rootstock Faucet](/tools/faucet/)
 
-## Gas Station
+## Gas
 - [Rootstock Gas Station](/develop/apps/tools/gas-station/)
 
 ## Wallet
