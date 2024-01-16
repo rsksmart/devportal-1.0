@@ -76,6 +76,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 - [NOWNodes](https://nownodes.io/)
 
 ## Data and Analytics
+- [Rootstock Stats](https://stats.rsk.co/)
 - [Covalent](/solutions/covalent/)
 - [Tenderly](/kb/build-with-tenderly/)
 - [DappRadar](https://dappradar.com/)
