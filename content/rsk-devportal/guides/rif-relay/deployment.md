@@ -139,14 +139,14 @@ Execute the `acceptToken(address token)` function on the Relay Verifiers contrac
         ```
         npx hardhat allow-tokens --network regtest --token-list <TOKEN_ADDRESSES>
         ```
-        > `<TOKEN_ADDRESSES>` is a comma-separated list of the token addresses to be allowed on the available verifiers. The `allowTokens` uses the first account (referred to as account[0]) as the owner of the contracts. This is important because only the account owner can allow tokens. 
+        > `<TOKEN_ADDRESSES>` is a comma-separated list of the token addresses to be allowed on the available verifiers. The `allowTokens` uses the first account (referred to as account[0]) as the owner of the contracts. This is important because only the account owner can allow tokens.
 - **Testnet**
     - In the RIF Relay Contracts, execute the command:
         ```
         npx hardhat allow-tokens --network testnet --token-list <TOKEN_ADDRESSES>
         ```
         > `<TOKEN_ADDRESSES>` is a comma-separated list of the token addresses to be allowed on the available verifiers. The `allowTokens` script will use the Testnet network configured in the `hardhat.config.ts`, this network will be required to use the account that deployed the contracts.
-        > You can also modify the allowed tokens for specific verifiers only by using the --verifier-list option as follows:
+        > You can also modify the allowed tokens for specific verifiers only by using the `--verifier-list` option as follows:
         ```
         npx hardhat allow-tokens --network testnet --token-list <TOKEN_ADDRESSES> --verifier-list <VERIFIER_ADRESSES>
         ```
@@ -157,13 +157,13 @@ Execute the `acceptToken(address token)` function on the Relay Verifiers contrac
       npx hardhat allow-tokens --network mainnet --token-list <TOKEN_ADDRESSES>
       ```
       > `<TOKEN_ADDRESSES>` is a comma-separated list of the token addresses to be allowed on the available verifiers. The `allowTokens` script will use the Mainnet network configured in `hardhat.config.ts`, this network will be required to use the account that did the deployment of the contracts.
-      > You can also modify the allowed tokens for specific verifiers only by using the --verifier-list option as follows:
+      > You can also modify the allowed tokens for specific verifiers only by using the `--verifier-list` option as follows:
       ```
       npx hardhat allow-tokens --network testnet --token-list <TOKEN_ADDRESSES> --verifier-list <VERIFIER_ADRESSES>
       ```
       Like `<TOKEN_ADDRESSES>`, `<VERIFIER_ADDRESSES>` is a comma-seperated list of verifier addresses to allow the tokens for.
 
-> **Note:** The network name; regtest, testnet, or mainnet, is an optional parameter that is taken from the hardhat.config.ts file. The network name you specify must be the same as the one used to deploy the contract. You can also query one or more verifiers using an additional `--verifier-list` option, followed by a comma-separated list of verifier addresses.
+> **Note:** The network name; regtest, testnet, or mainnet, is an optional parameter that is taken from the hardhat.config.ts file. The network name you specify must be the same as the one used to deploy the contract.
 
 ### Run the RIF Relay Server
 After setting up on-chain components, the next step is to set up off-chain components, using the [RIF Relay Server](https://github.com/rsksmart/rif-relay-server). 
