@@ -42,7 +42,7 @@ To set up RIF relay contract, clone the RIF Relay Contracts Repository: https://
     npx hardhat allowed-tokens --network regtest
     ```
     Response:
-    ```jsx
+    ```bash
     rif-relay-contracts % npx hardhat allowed-tokens --network regtest
     deployVerifier [ '0x6f217dEd6c86A57f1211F464302e6fA544045B4f' ]
     relayVerifier [ '0x6f217dEd6c86A57f1211F464302e6fA544045B4f' ]

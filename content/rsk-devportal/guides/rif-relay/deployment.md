@@ -260,7 +260,7 @@ For visual insights into how the Relay Server functions, refer to the diagrams a
           "version": "2.0.1"
         }
         ```
-    1. Send at least 0.001 tRBTC to the Worker and Manager.
+    1. Send an arbitrary amount of tRBTC, 0.001 tRBTC for example, to the Worker and Manager.
     1. Now execute the register command.
         ```
         npm run register
