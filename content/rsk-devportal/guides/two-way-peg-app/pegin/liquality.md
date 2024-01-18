@@ -50,36 +50,36 @@ Go to chrome (manage extensions)[chrome://extensions/] and active your Liquality
 
 You can either enter it manually or click 'Use max available balance' if you want to convert all the rbtc you have. To perform a pegin the minimum amount allowed is 0,005 BTC.
 ​
-![Rbtc-amount-to-send-input](/assets/img/guides/two-way-peg-app/liquality/8.png)
+![Rbtc-amount-to-send-input](/assets/img/guides/two-way-peg-app/liquality/pegin/8.png)
 
 **Step 2: Verify your RBTC destination address**
 
 You can choose the RBTC destination address filling the input with a Rootstock address.
 ​
-![liquality-set-destination-address](/assets/img/guides/two-way-peg-app/liquality/9a.png)
+![liquality-set-destination-address](/assets/img/guides/two-way-peg-app/liquality/pegin/9a.png)
 
 **Step 3: Set the transaction fee**
 
-![liquality-set-tx-fee](/assets/img/guides/two-way-peg-app/liquality/10.png)
+![liquality-set-tx-fee](/assets/img/guides/two-way-peg-app/liquality/pegin/10.png)
 
 **Step 4: Verify if all fields are filled**
 
 After all fields are filled in, it should look like this.
 
-![liquality-all-page](/assets/img/guides/two-way-peg-app/liquality/11.png)
+![liquality-all-page](/assets/img/guides/two-way-peg-app/liquality/pegin/11.png)
 
 **Step 5: Verify the Transaction**
 
-![liquality-verify](/assets/img/guides/two-way-peg-app/liquality/confirm-details.png)
-![liquality-verify](/assets/img/guides/two-way-peg-app/liquality/summary.png)
+![liquality-verify](/assets/img/guides/two-way-peg-app/liquality/pegin/confirm-details.png)
+![liquality-verify](/assets/img/guides/two-way-peg-app/liquality/pegin/summary.png)
 
 **Step 6: Sign the Transaction**
 
-![liquality-sign](/assets/img/guides/two-way-peg-app/liquality/sign.png)
+![liquality-sign](/assets/img/guides/two-way-peg-app/liquality/pegin/sign.png)
 
 **Step 7: Go to status page to verify the status of the transaction**
 
-![liquality-sign](/assets/img/guides/two-way-peg-app/liquality/summary.png)
+![liquality-sign](/assets/img/guides/two-way-peg-app/liquality/pegin/summary.png)
 
 
 

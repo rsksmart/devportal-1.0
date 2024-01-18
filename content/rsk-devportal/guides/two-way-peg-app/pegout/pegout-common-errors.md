@@ -13,7 +13,11 @@ render_features: 'collapsible'
 You may encounter the following errors when trying out the application:
 
 [](#top "collapsible")
-- Liquality
+- Liquality 
+    > **Liquality is not showing BTC Address:** 
+    > ![Not Showing BTC Address](/assets/img/guides/two-way-peg-app/liquality/common-errors/liquality-no-address.png)
+    > - Problem: Liquality is not showing the BTC address.
+    > - Possible Fix: Some users have encountered difficulties while attempting to create new Bitcoin accounts in Liquality. It’s   important to note that this issue is unrelated to the 2WP app. If you experience this problem, we recommend selecting another wallet.
     > **User Rejected Error:** 
     > ![User Rejected error](/assets/img/guides/two-way-peg-app/liquality/common-errors/1-common-errors.png)
     > - Problem: This error occurs when the user starts connecting its wallet and for some reason cancels it.

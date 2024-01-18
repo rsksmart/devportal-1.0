@@ -6,7 +6,7 @@ description: "How to compile and run an RSKj node on Mac OSX. Installing pre-req
 menu_order: 400
 ---
 
-Here you have the steps to compile and run an RSK node on Mac.
+Here you have the steps to compile and run an Rootstock node on Mac.
 
 This page is organized in this way:
 
@@ -52,7 +52,7 @@ Run these commands on Git command line:
 ```
 git clone --recursive https://github.com/rsksmart/rskj.git
 cd rskj
-git checkout tags/FINGERROOT-5.2.0 -b FINGERROOT-5.2.0
+git checkout tags/FINGERROOT-5.3.0 -b FINGERROOT-5.3.0
 ```
 
 *Note:* It is better to download the code into a short path.
@@ -112,7 +112,7 @@ If everything is OK you should see the debug information like that:
 
 ![img](/assets/img/rsk/howToInstallAndRun/Running.png)
 
-And yes! Congratulations! Now you're running a local RSK node :)
+And yes! Congratulations! Now you're running a local Rootstock node :)
 
 You're joined to Mainnet by default.
 

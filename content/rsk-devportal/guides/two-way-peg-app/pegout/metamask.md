@@ -14,7 +14,7 @@ layout: rsk
 ​
 **Step 1: Select conversion type**
 
-To perform a peg-out, open  the [2 way peg app - Testnet](https://2wp-app.testnet.rootstock.io/) in your browser.
+To perform a peg-out, open  the [2 way peg app - Testnet](https://app.2wp.testnet.rootstock.io/) in your browser.
 
 **Step 2: Choose the RBTC - BTC conversion type**
 ​
@@ -59,7 +59,7 @@ After signing, you will be able to know the derived Bitcoin address where you wi
 ​
 ![Derived address](/assets/img/guides/two-way-peg-app/derivated-address.png)
 
-> For more details on derived addresses. See the [advanced operations](/guides/two-way-peg-app/advanced-operations#how-to-view-a-derived-address) section.
+> For more details on derived addresses. See the [advanced operations](/guides/two-way-peg-app/pegout/deriving-electrum) section.
 
 ​
 **Step 6: Send transaction**

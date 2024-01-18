@@ -1,8 +1,7 @@
 ---
-layout: rsk
-title: How to deploy your first decentralised website on Swarm
-tags: tutorial, rif, swarm, website, dweb
-description: "How to deploy a decentralised website using Swarm"
+layout: redirect
+permalink: /tutorials/dweb/first-swarm-website/
+redirect: /tutorials/
 ---
 
 ## Getting started

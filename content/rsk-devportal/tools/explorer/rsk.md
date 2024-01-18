@@ -1,4 +1,0 @@
----
-layout: rsk
-title: RSK
----

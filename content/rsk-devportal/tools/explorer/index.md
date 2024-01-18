@@ -2,11 +2,9 @@
 menu_order: 200
 menu_title: Explorer
 layout: rsk
-title: Explorer
+title: Overview of the Rootstock Explorer
 tags: overview, explorer, rsk, search, blocks, transactions, mainnet, tools
 ---
-
-## Overview Of The Explorer
 
 You can browse the overview of RSK on this page with [https://explorer.rsk.co/](https://explorer.rsk.co/)  like below.
 
