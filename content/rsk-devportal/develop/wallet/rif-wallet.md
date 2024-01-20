@@ -5,11 +5,11 @@ layout: rsk
 title: RIF Wallet
 ---
 
-<div class="image-container">
-    <img src="/assets/img/rif-wallet/rif-wallet-gif-overview.gif"  title="RIF Wallet GIF"/>
-</div>
-
 [RIF Wallet](https://rif.technology/rif-wallet/) provides the framework to build an intuitive and secure mobile-first Web3 experience, it uses account abstraction to pay the gas fees with ERC20 tokens using RIF Relay, wallet infrastructure APIs, and libraries. Businesses can now transition its end users into the Web3 ecosystem without all the complexity. 
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://youtube.com/embed/v=NWRRN9l3J4Q"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 - Provides a way to pay for gas fees with ERC20 Tokens using [RIF Relay](/rif/relay/)
 - 💰 RIF Wallet currently supports: BTC, RBTC, RIF, and other ERC20 tokens. 
