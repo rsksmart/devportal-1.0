@@ -50,7 +50,7 @@ A peg-in is the process of exchanging BTC for RBTC. See the [glossary](/guides/t
 
 > The minimum values allowed when creating a peg-in transaction is **0.005 BTC**. 
 
-Open [2 way peg application](https://2wp-app.testnet.rootstock.io/) on Testnet.
+Open [2 way peg application](https://app.2wp.testnet.rootstock.io/) on Testnet.
 
 **Step 1: Select Conversion Type**
 

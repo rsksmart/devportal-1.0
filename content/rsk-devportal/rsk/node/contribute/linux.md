@@ -45,7 +45,7 @@ git checkout tags/FINGERROOT-5.2.0 -b FINGERROOT-5.2.0
 
 *Note:* It is better to download the code into a short path.
 
-> **Important Notice: From [RSKj HOP v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0), ARM CPUs on Linux OS is now supported. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
+> **Important Notice: From [RSKj HOP v4.2.0](https://github.com/rsksmart/rskj/releases/), ARM CPUs on Linux OS is now supported. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
 
 ## Ensure the security chain
 

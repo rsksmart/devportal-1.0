@@ -1,16 +1,17 @@
 ---
 layout: rsk
-menu_title: About RSKj
-title: Node (RSKj)
+menu_title: About RSKj Node
+section_title: Rootstock Node
+title: Rootstock (RSKj) Node
 tags: rsk, rskj, node
-description: "Learn more about RSKj, a node implementation for the RSK blockchain"
+description: "Learn more about RSKj, a node implementation for the Rootstock blockchain"
 menu_order: 2
 permalink: /rsk/node/
 ---
 
-RSKj is a Java implementation of the [RSK blockchain](/rsk) node.
+RSKj is a Java implementation of the [Rootstock blockchain](/rsk) node.
 
-<a href="/quick-start/" class="green-button">Start now</a>
+<a href="/rsk/node/install/" class="green-button">Start now</a>
 
 # Learn more
 

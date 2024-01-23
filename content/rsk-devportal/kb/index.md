@@ -871,6 +871,29 @@ menu_order: 4
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/defillama/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/defillama/defillama-logo.png" alt="defillama icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/defillama/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">How to add a Protocol to DeFiLlama</p>
+                        <p class="card-desc">Learn how to list a DeFi project and write an SDK adapter to add a Protocol to DeFiLlama.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/defillama/">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </li>
 
 </div>
 

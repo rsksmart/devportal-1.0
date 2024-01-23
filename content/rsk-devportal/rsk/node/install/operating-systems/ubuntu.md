@@ -5,11 +5,17 @@ tags: ubuntu, install, rsk, rskj, node, how-to, network, requirements, mainnet
 menu_order: 2
 ---
 
-Make sure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing RSK nodes on it.
+Make sure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing Rootstock nodes on it.
+
+## Video
+
+<div class="video-container">
+  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/eW9UF2aJQgs?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Install via Ubuntu Package Manager
 
-The easiest way to install and run a RSK node on Ubuntu is to do it through Ubuntu Package Manager.
+The easiest way to install and run a Rootstock node on Ubuntu is to do it through Ubuntu Package Manager.
 
 Type the commands below to install RSKj on Ubuntu using our PPAs for Ubuntu.
 
@@ -96,9 +102,3 @@ sudo service rsk status
 ```
 
 <img alt="scripts" class="setup-node-ubuntu" src="/assets/img/ubuntu/ubuntu4.png">
-
-## Video
-
-<div class="video-container">
-  <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/eW9UF2aJQgs?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
