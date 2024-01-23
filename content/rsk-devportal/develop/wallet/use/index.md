@@ -11,6 +11,12 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 
 <div id="walletCarousel" class="owl-carousel owl-theme">
+     <div class="item">
+        <a href="https://rif.technology/rif-wallet/" target="blank">
+        <img src="/assets/img/rif-wallet/logo-rif-wallet.png" alt="RIF Wallet">
+        <a class="company-name" href="https://rif.technology/rif-wallet/" target="blank">RIF Wallet</a>
+        </a>
+    </div>
     <div class="item">
         <a href="https://mycrypto.com/account" target="blank">
         <img src="/assets/img/rsk/wallets/logo-mycrypto.svg" alt="MyCrypto">
@@ -135,6 +141,7 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 ## How to use
 
+- [RIF Wallet](/rif/wallet/dev-reference/)
 - [AirGap](https://airgap.it)
 - [Beexo](https://beexo.com)
 - [Bitfinex](https://bitfinex.com)
@@ -157,7 +164,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [MyEtherWallet](https://www.myetherwallet.com/)
 - [MyCrypto](/wallet/use/mycrypto)
 - [Portis](https://www.portis.io/)
-- [rWallet](https://github.com/rsksmart/rwallet)
 - [Rabby Wallet](https://rabby.io)
 - [TaHo](https://taho.xyz)
 - [TorusLabs](https://tor.us/index.html)
@@ -168,8 +174,9 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 
 In the following matrix you can see the different features by wallet.
 
-| Wallet | | RSK Checksum | | RSK dPath | | Customizable dPath |
+| Wallet | | Rootstock Checksum | | Rootstock dPath | | Customizable dPath |
 | :-- | | --- | | :---: | | --- | | :---: | | --- | | :---: |
+| RIF Wallet | | ✔ | | ✔ | | ✔ |
 | Beexo | | ✔ | | ✔ | | ✔ |
 | D'CENT | | ✔ | | ✔ | | ❌ |
 | Defiant | | ✔ | | ✔ | | ❌ |
