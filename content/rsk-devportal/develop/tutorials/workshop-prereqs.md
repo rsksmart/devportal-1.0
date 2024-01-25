@@ -4,10 +4,10 @@ menu_title: Setup for workshops
 layout: rsk
 title: "RSK Workshop: Pre-requisites"
 tags: rsk, workshop, pre-requisites
-description: "Several RSK workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
+description: "Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
 ---
 
-Several RSK workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
+Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
 
 Some workshops will require all of the following items,
 and some may only require a subset of the following items.
@@ -40,40 +40,38 @@ nvm use 12
 
 ```
 
-## Truffle
+## Hardhat
 
-- Install [`truffle`](https://www.npmjs.com/package/truffle)
+- Install [`hardhat`](https://hardhat.org/hardhat-runner/docs/getting-started)
 
 
 Use the following command.
 
 ```shell
-npm i -g truffle@5.1.22
+npm install --save-dev hardhat
 
 ```
 
 ## OpenZeppelin CLI
 
-- Install [`oz`](https://www.npmjs.com/package/@openzeppelin/cli)
+- Install [`oz`](https://docs.openzeppelin.com/cli/2.7/)
 
 Use the following command.
 
 ```
-npm i -g @openzeppelin/cli@2.8.2
+npm install @openzeppelin/cli
 ```
 
 
 ## Mnemonics
 
-- Install [`mnemonics`](https://www.npmjs.com/package/mnemonics),
-which is a simple utility that can be used to generate
-[BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
+- Install [`mnemonics`](https://pypi.org/project/mnemonic/)
 mnemonics
 
 Use the following command.
 
 ```shell
-npm i -g mnemonics@1.1.3
+pip install mnemonic
 
 ```
 
@@ -138,10 +136,10 @@ mkdir -p ~/code/rsk/rskj-node
 cd ~/code/rsk/rskj-node
 curl \
   -L \
-  https://github.com/rsksmart/rskj/releases/download/FINGERROOT-5.2.0/rskj-core-5.2.0-FINGERROOT-all.jar \
-  > ./rskj-core-5.2.0-FINGERROOT-all.jar
-sha256sum rskj-core-5.2.0-FINGERROOT-all.jar
-# 556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-5.2.0-FINGERROOT-all.jar
+  https://github.com/rsksmart/rskj/releases/download/FINGERROOT-5.3.0/rskj-core-5.3.0-FINGERROOT-all.jar \
+  > ./rskj-core-5.3.0-FINGERROOT-all.jar
+sha256sum rskj-core-5.3.0-FINGERROOT-all.jar
+# 556132bb0423f0ca0a101704d56daad17eaa124d4f88cf97ced8ca7ebcddb0b2 rskj-core-5.3.0-FINGERROOT-all.jar
 
 ```
 
