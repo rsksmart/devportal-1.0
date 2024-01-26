@@ -115,7 +115,7 @@ In this example, the state information of block 2000 will be exported to the fil
 
 The “test.txt” should look like this:
 
-```shell
+```text
   5c0700caa04b0e28aa38d3d4a74a560332c38111cb1ac2292a89512d009658d2a7ed7d2cecc372b5c25799434b1cc5e49d795fc371db88e3d0c3635e273fc3c496b897fdc60c
   4ce5c4861124fac10fdda43f62df4cf8137136e4c654305a8e9e3572f76b46c9fd9ce59676
   …etc
@@ -154,7 +154,7 @@ In this example, the blocks from block 2000 to block 3000 will be exported to th
 
 Blocks.txt should show the following:
 
-```shell
+```text
   50,d6c7a4388337d931d9478e742c34c276cefe0976e12b2f7077bd6664b6ecc163,0629fdd6…
   51,d4a9091304e64008f06c395b4f26da1c710bdd83f30f0d15666826b57c9b7a1e,0651fde4b…
   …
@@ -335,7 +335,7 @@ In this example, the state data from the file located at `test.txt` will be impo
 
 **Output:**
 
-```shell
+```text
   INFO [clitool] [main]  ImportState started
   INFO [clitool] [main]  ImportState finished
 ```
@@ -360,7 +360,7 @@ In this example, blocks will be imported from the file `/path/to/blocks_file.txt
   
 **Output:**
 
-```shell
+```text
   INFO [clitool] [main]  ImportBlocks started
   INFO [clitool] [main]  ImportBlocks finished
 ```
@@ -437,7 +437,7 @@ In this example, the tool will generate an OpenRPC JSON doc file located at `/pa
 
 **Output:**
     
-```shell
+```text
   2023-04-24-16:35:00.0617 INFO [c.r.c.t.GenerateOpenRpcDoc] [main]  Loading template...
   2023-04-24-16:35:00.0620 INFO [c.r.c.t.GenerateOpenRpcDoc] [main]  Loading file doc/rpc/template.json
   ...
