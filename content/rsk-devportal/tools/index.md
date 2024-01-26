@@ -23,9 +23,9 @@ Explore a suite of fully compatible developer tools and guides designed to empow
     </a>
     </div>
     <div class="item">
-        <a href="https://faucet.rsk.co/" target="blank">
+        <a href="https://faucet.rootstock.io/" target="blank">
         <img src="/assets/img/tools/5-testnet-faucet.png" alt="Testnet Faucet">
-        <a class="company-name" href="https://faucet.rsk.co/" target="blank">Testnet Faucet</a>
+        <a class="company-name" href="https://faucet.rootstock.io/" target="blank">Testnet Faucet</a>
     </a>
     </div>
     <div class="item">
@@ -47,7 +47,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 - [Quick Start](/guides/quickstart/)
 
 ### Starter Kits
-- [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippet)
+- [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippets)
 
 ## Libraries
 - [Web3.js](https://web3js.readthedocs.io/en/v1.10.0/)

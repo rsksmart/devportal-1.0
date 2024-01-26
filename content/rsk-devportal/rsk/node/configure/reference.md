@@ -129,8 +129,8 @@ Options related to experimental import sync v0.1.
 Selects the database that will be used to store the information.
 Possible options are:
 
-* `leveldb` (default)
-* `rocksdb`
+* `leveldb` 
+* `rocksdb` (default)
 
 If you wish to switch between the different storage options,
 for example from `leveldb` to `rocksdb` or vice versa, 

@@ -16,13 +16,12 @@ In this section we will go over the steps of converting BTC to RBTC using Ledger
 ## General Requirements
 
 - You need a [Ledger](https://www.ledger.com/) with Bitcoin and
-  RSK Apps installed. We recommend you to have
-  [Ledger Live](https://www.ledger.com/pages/ledger-live)
+  Rootstock(RSK) Apps installed. We recommend you to have
+  [Ledger Live](https://www.ledger.com/ledger-live)
   and review this tutorial:
-  [Use the Manager](https://support.ledgerwallet.com/hc/en-us/articles/360006523674-Use-the-Manager).
 - You need to have [Electrum](https://electrum.org/).
   Install it and [configure it to be used with Ledger](https://support.ledgerwallet.com/hc/en-us/articles/115005161925-Set-up-and-use-Electrum).
-- node >= 10.16.0
+- Node >= 10.16.0
 
 ## BTC to RBTC conversion
 
@@ -47,7 +46,7 @@ BTC Mainnet using Ledger hardware wallet.
 - Go to the third tab "Receive". You will see a Bitcoin address.
 
 > Note: Check out this article
-> [configure it to be used with Ledger](https://support.ledgerwallet.com/hc/en-us/articles/)
+> [configure it to be used with Ledger](/guides/two-way-peg-app/prerequisites#install-apps)
 
 > Note: The Bitcoin wallet needs to be legacy (not Segwit)
 > whose public key starts with either `m` or `n`,
