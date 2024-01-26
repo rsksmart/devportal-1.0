@@ -13,7 +13,7 @@ This section explains how to solve some known or frequently encountered issues.
 If what you need is not in this section, **please contact us** without hesitation through the [Rootstock Community on Discord](https://rootstock.io/discord). We will be happy to help you!
 
 [](#top "collapsible")
-- Error: Discovery can't be started
+- Discovery can't be started
     > - On Windows, if you start the node and it doesn't do anything, there is a high chance you have a problem with the UDP port of the node.
     > - The UDP port is configured in the node's configuration file, specifically with the value `peer.port`. By default this port is configured to `5050`.
     > - To check if that port is already taken by other application you can follow these steps:
@@ -22,15 +22,15 @@ If what you need is not in this section, **please contact us** without hesitatio
     > - * With the process ID (the value at the far right), run this command `tasklist /FI "PID eq processId-you-got"`.
     > - This will let you know which application/service is using this port.
     > - Please make sure the port of your preference is not taken by other application. If so, you need to change the node configuration [as explained here](/rsk/node/configure/#setting-your-own-config-preferences), by overwriting the [peer](/rsk/node/configure/reference/#peer) port option.
-- Error: I don't see the logs
+- I don't see the logs
     > - You can configure your own log level, following these [instructions](/rsk/node/configure/verbosity).
-- Error: Plugin with id witness not found
+- Plugin with id witness not found
     > - If you have this error it's possible that you have missed to run rskj's dependencies.
     > - So please, follow the instructions depending on your operation system:
         > - [On Windows](/rsk/node/contribute/windows)
         > - [On Linux](/rsk/node/contribute/linux)
         > - [On Mac](/rsk/node/contribute/macos)
-- Error: Truffle doesn't seem to work connected to Rootstock
+- Truffle doesn't seem to work connected to Rootstock
     > - If you can not get `truffle migrate` complete, you will see something like:
     ```javascript
         Writing artifacts to ./build/contracts
@@ -54,20 +54,20 @@ If what you need is not in this section, **please contact us** without hesitatio
         }
     };
     ```
-- Error: Can't get public IP
+- Can't get public IP
     > - If you get the error:
     > - `Can't get public IP` when you're trying to run your rskj node, the reason is that rskj uses Amazon Check IP service to set the [`public.ip`](/rsk/node/configure/reference/#publicip) parameter.
     > - To solve it, you need to change the `public.ip` key in config file with your IP address (if you don't know your IP, simply [search for it](https://www.google.com/search?q=what's+my+IP+address)).
     > - [This page](/rsk/node/configure) will show you how to change a node's configuration file.
-- Error: Rewind Blocks
+- Rewind Blocks
     > - This tool should be used in a scenario where an RSK node processes blocks that are corrupted or invalid, for example after a hard fork. It allows one to remove such blocks and start from a previously known state. It does so by removing the blocks with block number higher than the block number parameter command line argument.
     > - Note: The node must be turned off before the rewind, and restarted after.
     > - Example:
     `java -cp rsk-core-<VERSION>.jar co.rsk.cli.tools.RewindBlocks 1000000`
     > - The above command removes the blocks with number 1000001 or higher.
-- Error: DbMigrate: Migrate between databases
+- DbMigrate: Migrate between databases
     > - This tool allows the user to migrate between different supported databases such as `rocksdb` and `leveldb`. 
-- Error: How to use
+    > - How to use
     > - To use the `DbMigrate` tool to migrate between databases, we will need a tool class and CLI arguments.
     > - The tool class is: `co.rsk.cli.tools.DbMigrate`
     > - Required CLI arguments:

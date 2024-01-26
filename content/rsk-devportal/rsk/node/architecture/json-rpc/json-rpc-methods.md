@@ -10,7 +10,7 @@ render_features: 'tables-with-borders'
 
 Here are the supported JSON-RPC Methods.
 
-For a full description, see the [JSON RPC Method](#json-rpc-method-details) details.
+> For a full description, see the [JSON RPC Method](#json-rpc-method-details) details.
 
 | Module | Method | Supported | Comments |
 | ------ | ------ | ------ | ------ |

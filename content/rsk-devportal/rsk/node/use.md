@@ -14,7 +14,7 @@ IOVLabs currently provides two public nodes that you can use
 for testing purposes, and you will find that information below.
 
 Alternatively, follow the [installation instructions](/rsk/node/install/),
-to run your own Rootstock node.
+to run your own Rootstock node or use an [alternative node provider](#rpc-node-providers).
 This is highly recommended for production environments,
 and in accordance with the bitcoiners' maxim: **Don't trust. Verify.**
 
@@ -46,3 +46,9 @@ curl https://public-node.rsk.co \
     -X POST -H "Content-Type: application/json" \
     --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
 ```
+
+## RPC Node Providers
+
+Don't know how to run a Rootstock Node? Easily connect to Rootstock RPC Nodes using an alternative node provider such as [GetBlock](/solutions/getblock/) and [NOWNodes](/solutions/nownodes/). 
+- How to connect to Rootstock nodes using [GetBlock](/kb/getblock-rpc/) on Testnet, Mainnet and via Websocket.
+- How to connect to Rootstock nodes using [NOWNodes](/solutions/nownodes/) on Mainnet.
