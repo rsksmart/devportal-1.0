@@ -5,7 +5,7 @@ section_title: Transport Protocols
 menu_title: Transport Protocols
 tags: rsk, rskj, node, rpc, rootstock
 description: "The JSON-RPC methods supported by Rootstock nodes."
-menu_order: 1100
+menu_order: 100
 ---
 
 The following transport protocols are available on Rootstock:

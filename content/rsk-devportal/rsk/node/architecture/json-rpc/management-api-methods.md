@@ -5,7 +5,7 @@ section_title: Management API Methods
 menu_title: Management API Methods
 tags: rsk, rskj, node, rpc, rootstock
 description: "The JSON-RPC methods supported by Rootstock nodes."
-menu_order: 1500
+menu_order: 500
 render_features: 'tables-with-borders'
 ---
 
