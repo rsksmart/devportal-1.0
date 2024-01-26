@@ -5,7 +5,7 @@ section_title: Config Limits
 menu_title: Configuration Limits
 tags: rsk, rskj, node, rpc, rootstock
 description: "The JSON-RPC methods supported by Rootstock nodes."
-menu_order: 400
+menu_order: 1400
 render_features: 'tables-with-borders'
 ---
 

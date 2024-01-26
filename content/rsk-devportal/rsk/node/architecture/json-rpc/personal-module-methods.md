@@ -4,7 +4,7 @@ title: Personal Module Methods
 menu_title: JSON RPC - Personal Module
 tags: rsk, rskj, node, rpc, rootstock
 description: "The JSON-RPC methods supported by Rootstock nodes."
-menu_order: 300
+menu_order: 1300
 render_features: 'tables-with-borders'
 ---
 

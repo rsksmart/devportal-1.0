@@ -4,7 +4,7 @@ title: Supported JSON-RPC Methods
 menu_title: JSON-RPC Methods
 tags: rsk, rskj, node, rpc, rootstock
 description: "The JSON-RPC methods supported by Rootstock nodes."
-menu_order: 200
+menu_order: 1200
 render_features: 'tables-with-borders'
 ---
 
