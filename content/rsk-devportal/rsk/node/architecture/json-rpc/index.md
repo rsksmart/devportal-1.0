@@ -5,7 +5,7 @@ section_title: JSON-RPC API
 menu_title: Intro
 tags: rsk, rskj, node, rpc, rootstock
 description: "The JSON-RPC methods supported by Rootstock nodes."
-menu_order: 1000
+menu_order: 1100
 render_features: 'tables-with-borders'
 ---
 

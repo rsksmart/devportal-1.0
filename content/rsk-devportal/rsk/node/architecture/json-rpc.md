@@ -5,6 +5,3 @@ redirect: /rsk/node/architecture/json-rpc
 ---
 
 
-
-
-
