@@ -2,12 +2,12 @@
 menu_order: 300
 menu_title: Browsers
 layout: rsk
-title: 'RSK Quick Start Guide | Using RSK in the Browser'
-description: 'Learn how to interact with RSK in your web browser, how to look at RSK transactions, develop and deploy your very first smart contract to the RSK network.'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
+title: 'Rootstock Quick Start Guide | Using Rootstock in the Browser'
+description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 
-As RSK is a blockchain with smart contract capabilities,
+As Rootstock is a blockchain with smart contract capabilities,
 it is possible to build decentralised applications (dApps) with it.
 Most dApps are web applications that you access with a regular Internet browser, such as Chrome.
 However, the blockchain interactions require some additional software,
@@ -19,7 +19,7 @@ forming an integral part of dApp architecture.
 > Note that these browser extensions store your private keys,
 > and use them to sign transactions. So keep them secure.
 
-There are currently two well known browser extensions that you can use to interact with the RSK blockchain: [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn), and [Liquality](https://chrome.google.com/webstore/detail/liquality-wallet/kpfopkelmapcoipemfendmdcghnegimn).
+There are currently two well known browser extensions that you can use to interact with the Rootstock blockchain: [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn), and [Liquality](https://chrome.google.com/webstore/detail/liquality-wallet/kpfopkelmapcoipemfendmdcghnegimn).
 Since this is a quick start, we will not go through all of them - just MetaMask.
 
 ## Install Metamask
@@ -104,7 +104,7 @@ Congratulations, you have successfully setup MetaMask and created your first wal
 ### Private Keys and Public Keys
 
 In wallet software, you generally see “accounts” represented by addresses on the blockchain network.
-n the case of RSK, this is `0x` followed by a series of hexadecimal characters,
+n the case of Rootstock, this is `0x` followed by a series of hexadecimal characters,
 for example, `0xdfc0e6361fd1846a223e2d7834a5ebd441a16dd4`.
 There is some hidden complexity behind that, to do with cryptography,
 which is necessary to secure the account, and all the blockchain transactions it makes.
@@ -143,17 +143,17 @@ This process is described in detail in the BIP-44 technical standard.
 This ensures that the way that seed phrases work is the same between multiple crypto wallets,
 enabling the same phrase to be portable.
 
-## Configure custom network for RSK Testnet
+## Configure custom network for Rootstock Testnet
 
 MetaMask comes pre-configured with connections for Ethereum networks.
-Let’s use its custom networks feature to add a connection to an RSK network.
+Let’s use its custom networks feature to add a connection to an Rootstock network.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/VyPewQoWhn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-After creating the custom network for the RSK Testnet,
-you should be able to interact with smart contracts deployed on the RSK Testnet!
+After creating the custom network for the Rootstock Testnet,
+you should be able to interact with smart contracts deployed on the Rootstock Testnet!
 You should also see your balances in tRBTC (Testnet RBTC).
 This is currently zero, which means that we cannot send any transactions to the blockchain,
 so let’s get some using the RBTC faucet.
@@ -162,14 +162,14 @@ so let’s get some using the RBTC faucet.
   <iframe width="949" height="534" src="https://www.youtube.com/embed/twfK8Rd5hak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Now you should have a balance of tRBTC, and you will be able to send transactions on the RSK Testnet!
+Now you should have a balance of tRBTC, and you will be able to send transactions on the Rootstock Testnet!
 
 ## Configure Custom Token for tRIF
 
-The RSK Infrastructure Framework (RIF) includes multiple services for decentralised applications.
+The Rootstock Infrastructure Framework (RIF) includes multiple services for decentralised applications.
 These services may be paid for using the RIF token.
 Let’s configure MetaMask to be aware of the RIF token.
-We’ll use tRIF as the token symbol, since we’re on the RSK Testnet.
+We’ll use tRIF as the token symbol, since we’re on the Rootstock Testnet.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/QCabRPfr2Zs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -181,7 +181,7 @@ Now that MetaMask has the RIF token configured, let’s get some test tokens usi
   <iframe width="949" height="534" src="https://www.youtube.com/embed/ttb8EOTWey8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-Now you should have a balance of tRIF, and you will be able to use RIF services on the RSK Testnet!
+Now you should have a balance of tRIF, and you will be able to use RIF services on the Rootstock Testnet!
 
 ----
 
@@ -191,8 +191,8 @@ If you would like to delve deeper, here are some resources that we recommend.
 
 **Further Reading**:
 
-- [How to configure Metamask](https://developers.rsk.co/wallet/use/metamask/)
-- [Account based addresses on RSK](/rsk/architecture/account-based/) -
+- [How to configure Metamask](/develop/wallet/use/metamask/)
+- [Account based addresses on Rootstock](/rsk/architecture/account-based/) -
   includes information about derivation paths and checksums
 - About [the RIF token](/rif/token/)
 - About [the RBTC cryptocurrency](/rsk/rbtc/)

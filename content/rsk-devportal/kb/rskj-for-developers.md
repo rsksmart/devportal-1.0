@@ -96,7 +96,7 @@ If you see the following output within the logs shortly prior to
 the RSKj node exiting:
 
 ```
-ERROR [start] [main]  The Rootstock node main thread failed, closing program
+ERROR [start] [main]  The RSK node main thread failed, closing program
 java.net.BindException: Address already in use
 ```
 

@@ -121,7 +121,7 @@ To summarise, a peg-in:
 
 > For a step-by step guide of the process, check out the
 [peg-in guide](/rsk/rbtc/conversion/networks/mainnet/#btc-to-rbtc-conversion)
-(BTC → RBTC)
+(BTC → RBTC) or use the [2 way peg app](/guides/two-way-peg-app/)
 
 ## Sending RBTC (peg-out)
 

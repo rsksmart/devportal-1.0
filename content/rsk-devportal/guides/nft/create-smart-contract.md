@@ -1,9 +1,9 @@
 ---
 menu_order: 400
 menu_title: Create Smart Contract
-title: 'Create a Smart Contract | Write and Deploy an NFT project on the RSK Testnet'
-description: 'Learn about NFTs, create, connect, and deploy to the RSK Blockchain.'
-tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
+title: 'Create a Smart Contract | Write and Deploy an NFT project on the Rootstock Testnet'
+description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
+tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
 
@@ -128,7 +128,7 @@ Finally, we have our function `mintNFT(address recipient, string memory tokenURI
 ## Next
 
 Be sure to check out our next article in this series,
-about how to deploy your NFT smart contract on RSK, [Deploy NFT Smart Contract on RSK](/guides/nft/deploy-nft-on-rsk/)
+about how to deploy your NFT smart contract on Rootstock, [Deploy NFT Smart Contract on Rootstock](/guides/nft/deploy-nft-on-rsk/)
 
 ----
 
@@ -137,5 +137,5 @@ If you would like to delve deeper, here are some resources and tools that we rec
 **Resources**
 
 - [Visit Our Developers Portal](https://github.com/rsksmart/devportal) 
-- [RSK Global Discord Community](https://rootstock.io/discord)
-- [RSK](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)
+- [Rootstock Global Discord Community](https://rootstock.io/discord)
+- [Rootstock](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)
