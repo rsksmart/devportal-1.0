@@ -1,5 +1,5 @@
 ---
-menu_order: 3200
+# menu_order: 3200
 menu_title: Truffle Boxes Prerequisites
 layout: rsk
 title: Truffle boxes prerequisites
@@ -7,6 +7,8 @@ tags: tutorial, rsk, truffle, truffle-box
 description: "How to install and configure the prerequisites to use any RSK Truffle box on RSK networks."
 render_features: "custom-terminals"
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 Before you use a Truffle box, you need to have Truffle and other useful tools installed in your computer.
 In this tutorial, I will show you step-by-step on how to install and configure the prerequisites to use any RSK Truffle box on RSK networks.

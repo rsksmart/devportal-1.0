@@ -1,11 +1,13 @@
 ---
-menu_order: 400
+# menu_order: 400
 menu_title: Config Truffle for RSK
 title: 'How to configure Truffle to connect to RSK'
 description: 'using the new provider.pollingInterval and deploymentPollingInterval options in truffle-config.js'
 tags: knowledge-base, truffle, rsk, javascript
 layout: 'rsk'
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 ![Configure-Truffle-to-RSK](/assets/img/kb/ConfigureTruffleRSK/rsk-truffle-polling-interval.png)
 
