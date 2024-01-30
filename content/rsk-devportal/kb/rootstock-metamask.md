@@ -2,15 +2,12 @@
 menu_order: 3800
 menu_title: Add Rootstock to Metamask Programmatically
 layout: 'rsk'
-title: 'How to add Rootstock to Metamask Programmatically'
 description: 'Learn how to add and initiate a network switch on Metamask from a website'
 tags: rsk, rootstock, dApps, blockchain, smart-contracts, wallets, ethereum, programming, how-tos, tutorial, guide, developer
 render_features: 'collapsible'
 ---
 
 ![rootstock_metamask_banner](/assets/img/kb/rootstock-metamask/rootstock-metamask-banner.jpeg)
-
-## Introduction
 
 [Rootstock](https://rootstock.io/) is a blockchain with smart contract capabilities, it is possible to build decentralised applications (dApps) with it. Most dApps are web applications that you access with a regular Internet browser, such as Chrome. However, the blockchain interactions require some additional software, which comes in the form of browser extensions. These browser extensions insert a web3 provider object, with the Javascript parts of the web application used to interact with the blockchain, forming an integral part of a dApp architecture.
 
