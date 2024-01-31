@@ -58,7 +58,7 @@ npm install @openzeppelin/cli
 Use the following command:
 
 ```shell
-pip install mnemonic
+npm install mnemonics
 ```
 
 ## Java
