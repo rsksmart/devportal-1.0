@@ -8,23 +8,35 @@ description: "Several Rootstock workshops have common pre-requisites that you wi
 ---
 Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
 
-Some workshops will require all of the following items, and some may only require a subset of the following items.
+Some workshops will require all the following tools, while others may only require a subset of them.
 Each workshop should have a "pre-requisites" section and specify which ones are which.
 
-## Operating System
+## Operating system
 
-A modern operating system such as Windows, macOS, or Linux.
+To get started developing on Rootock, you need a modern operating system such as Windows, macOS, or Linux.
 
-## POSIX compliant shell
+
+## POSIX compliant shell/command line interface
 
 - **Mac OSX and Linux distributions:** Use the standard terminal
-- **Windows:** If you use the standard `cmd` terminal, or PowerShell, the commands here may not work. Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled.
-  Here's a great [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
+- **Windows:** If you use the standard `cmd` terminal, or PowerShell, the commands here may not work. Consider installing [Git for Windows](https://gitforwindows.org/), which comes with Git Bash bundled. Here's a great [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
+
+
+## cURL
+
+cURL is a command line tool that enables data exchange between a device and a server through a terminal.
+- run `curl --version` to confirm it's already installed on your computer. If not, [download cURL from the project website](https://curl.haxx.se/download.html).
+
+## Code editor
+
+To make it quick and easy to create and edit project files, you need a code editor—preferably one that has support for syntax highlighting for both Solidity and Javascript
+- [VS Code](https://code.visualstudio.com) is a good choice if you don't already have one
+
 
 ## NodeJs
 
-- The most fuss-free way to install and manage multiple versions of `node` on your computer is [nvm](https://github.com/nvm-sh/nvm).
-- This tutorial assumes that you have version 12 or later
+- The most fuss-free way to install and manage multiple versions of `node` on your computer is the [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm). You can install it by following the guide on the [project repository](https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating).
+- This tutorial requires NodeJs version 12 or later. You can swithc to this using the following command:
 
 ```shell
 nvm install 12
@@ -33,40 +45,20 @@ nvm use 12
 
 ## Hardhat
 
-- Install [`hardhat`](https://hardhat.org/hardhat-runner/docs/getting-started)
+- [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started) is at the heart of creating blockchain projects on the Rootstock platform.
 
-Use the following command:
+Install Hardhat in your project using the following command:
 
 ```shell
 npm install --save-dev hardhat
 ```
 
-## OpenZeppelin CLI
-
-- Install `OpenZeppelin`
-
-Use the following command:
-
-```shell
-npm install @openzeppelin/cli
-```
-
-## Mnemonics
-
-- Install [`mnemonics`](https://pypi.org/project/mnemonic/) mnemonics
-
-Use the following command:
-
-```shell
-npm install mnemonics
-```
-
 ## Java
 
-- You will need Java 8 in order to run RSKj
-- If `java -version` displays an error, or displays a version other than `1.8`, you will need to install it.
+To run the Rootstock blockchain node using RSKj, you will need Java 8. Run `java -version` to check if you already have it installed.
+- If you get an error message, or the command displays a version other than `1.8`, you will need to install it.
 
-There are a variety of ways to do this, and SDKman is one which allows you to install and switch between multiple versions as needed:
+There are a variety of ways you can install this specific version of Java, but SDKman is one which allows you to install and switch between multiple versions as needed:
 
 ```shell
 curl -s "https://get.sdkman.io/" | bash
@@ -87,22 +79,29 @@ java -version
 
 ```
 
-## curl
+## Mnemonics
 
-- This is a system command that is likely already installed on your system
-- If `curl --version` displays an error, [download `curl`](https://curl.haxx.se/download.html).
+[Mnemonics](https://www.npmjs.com/package/mnemonics) is a package that helps to generate BIP39 mnemonics that are used in creating seed phrases.
+You can install it using the following command:
 
-## Code editor
+```shell
+npm install mnemonics
+```
 
-- Software that is able to edit text files
-- Preferably one that has support for syntax highlighting for both Solidity and Javascript
-- [VS Code](https://code.visualstudio.com) is a good choice if you don't already have one
+## OpenZeppelin CLI
+
+OpenZepplin allows you to develop and manage lifecycle of decentralized applications.
+Install the tool using the following command:
+
+```shell
+npm install @openzeppelin/cli
+```
 
 ## RSKj
 
-Get RSKj running locally.
+RSKj is the java implementation of the Rootstock network that allows you to run a Rootstock node locally.
 
-This will provide you with a `localhost`-only network, for fast testing, called Regtest.
+This will provide you with a localhost-only network, for fast testing, called Regtest.
 The same node also can connect to permissionless decentralised networks of peer nodes also running RSKj - Testnet and Mainnet.
 
 For this part, open up a new shell, as you will need to leave the RSKj process running in the background while you continue with other tasks in the foreground.
