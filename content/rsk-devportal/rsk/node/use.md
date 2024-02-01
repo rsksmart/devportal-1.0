@@ -49,6 +49,7 @@ curl https://public-node.rsk.co \
 
 ## RPC Node Providers
 
-Don't know how to run a Rootstock Node? Easily connect to Rootstock RPC Nodes using an alternative node provider such as [GetBlock](/solutions/getblock/) and [NOWNodes](/solutions/nownodes/). 
-- How to connect to Rootstock nodes using [GetBlock](/kb/getblock-rpc/) on Testnet, Mainnet and via Websocket.
-- How to connect to Rootstock nodes using [NOWNodes](/solutions/nownodes/) on Mainnet.
+> Note that [Rootstock public nodes](/rsk/node/architecture/json-rpc/)
+> do not expose WebSockets, they are HTTP only.
+> To work around this, you may either run your own Rootstock node,
+> or use a third-party node provider, such as [Getblock](/solutions/getblock/) or [NowNodes](/solutions/nownodes/).

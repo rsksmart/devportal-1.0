@@ -45,12 +45,6 @@ A stablecoin may or may not be regulated, while Central Bank Digital Currency (C
 
 ![Stablecoin vs CBDCs](/assets/img/guides/stablecoin/stablecoinvscbdc.png)
 
-## Stablecoin Gas fee Comparison tool 
-
-This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
-
-[Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co)
-
 ## Next
 
 Be sure to check out our next article in this guide,
@@ -62,15 +56,13 @@ If you would like to delve deeper, here are some resources and tools that we rec
 
 **Resources**:
 
-- [Visit RSK Developers Portal](https://github.com/rsksmart/devportal) 
+- [Visit Rootstock Github](https://github.com/rsksmart/devportal) 
 - [Dollar on Chain: A stablecoin for bitcoiners, by bitcoiners](https://moneyonchain.com/blog/dollar-on-chain-chain-a-bitcoin-stablecoin-by-bitcoiners/)
-- [Defiant: Solutions on RSK](https://developers.rsk.co/solutions/defiant/)
-- [RSK Token Bridge](https://tokenbridge.rsk.co/)
-- [Webinar: RSK - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
+- [Defiant: Solutions on Rootstock](/solutions/defiant/)
+- [Rootstock Token Bridge](https://tokenbridge.rsk.co/)
+- [Webinar: Rootstock - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
 - [Build on Bitcoin using rDAI](https://youtu.be/2yApyI9Zvu8)
 - [Ask any Difference](https://askanydifference.com/)
-- [Difference between a Cryptocurrency and Token](https://developers.rsk.co/kb/get-crypto-on-rsk/cryptocurrency-vs-token/)
+- [Difference between a Cryptocurrency and Token](/guides/get-crypto-on-rsk/cryptocurrency-vs-token/)
 - [What are Stablecoins?](https://youtu.be/JHzyQS1rc_s)
-- [RSKSwap](https://app.rskswap.com/swap)
-- [RSK Explorer](https://explorer.rsk.co/)
-- [Stablecoin Gas Fee Comparison Tool](/guides/stablecoin/stablecoin-on-bitcoin/#stablecoin-gas-fee-comparison-tool)
+- [Rootstock Explorer](https://explorer.rsk.co/)

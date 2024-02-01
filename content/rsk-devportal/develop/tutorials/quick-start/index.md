@@ -1,15 +1,16 @@
 ---
 section_title: Quick Start
-menu_order: 200
+# menu_order: 200
 menu_title: Step 1 - Install RSK Local Node
 layout: rsk
 title: Quick Start - Step 1
 tags: quick-start, rskj
 description: 'quick start - install RSK local node - prep environment, verify and install RSKj'
-collection_order: 10
 render_custom_terminals: true
 render_features: 'custom-terminals'
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 # Step 1 : Install RSK local node
 
