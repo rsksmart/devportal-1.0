@@ -17,7 +17,7 @@ such as smart contracts, dApps, web3.
 
 ## What is a Decentralized Application (dApp)?
 
-![dApp architecture](/assets/img/guides/complete-full-stack-dapp/dapp architecture.jpg)
+![dApp architecture](/assets/img/guides/complete-full-stack-dapp/dapp-architecture.jpg)
 
 To understand the architecture of a dapp, you will need to understand how the web works. A web application runs on a cluster computers but is mainly controlled by a single person or company which makes it centralized, while a decentralized web application runs on a peer to peer network of computers. You might want to think of a dApp as having no central server which runs on multiple computers and is not controlled by a single person or company. Similarly, In centralized software systems, the components are located around and connected with one central component. In contrast, the components of distributed systems form a network of connected components without having any central element of coordination or control.
 This is illustrated in the image below;
@@ -28,7 +28,7 @@ This is illustrated in the image below;
 
 ## What Is A Smart Contract?
 
-![Smart Contract](/assets/img/guides/complete-full-stack-dapp/smart contracts.png)
+![Smart Contract](/assets/img/guides/complete-full-stack-dapp/smart-contracts.png)
 
 Smart contracts are simply computer programs that execute autonomously. It eliminates the need for a middleman, it is simply a self executing contract which contains terms and conditions of agreement between parties, these terms and conditions are represented in code.
 
