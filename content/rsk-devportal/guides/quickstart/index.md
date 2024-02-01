@@ -3,20 +3,17 @@ menu_order: 200
 section_title: Quick Start
 menu_title: Table of Contents
 layout: rsk
-title: 'RSK Quick Start Guide'
-description: 'Learn how to interact with RSK in your web browser, how to look at RSK transactions, develop and deploy your very first smart contract to the RSK network.'
+title: 'Rootstock Quick Start Guide'
+description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 
-Welcome to the RSK quickstart guide!.
+Welcome to the Rootstock quickstart guide!
 
 ![Quick Start Banner](/assets/img/guides/quickstart/quick-start-banner.jpg)
 
-Here you’ll get a whirlwind introduction to RSK,
-how to interact with RSK in your web browser,
-how to look at RSK transactions.
-Once that is done,
-we will even develop and deploy your very first smart contract to the RSK network.
+Here you’ll get a whirlwind introduction to Rootstock, how to interact with Rootstock in your web browser, how to look at Rootstock transactions.
+Once that is done, we will even develop and deploy your very first smart contract to the Rootstock network.
 
 Let’s dive in!
 
