@@ -17,7 +17,7 @@ We have developed a Subgraph Boilerplate for [Rootstock] (https://github.com/rsk
 
 This project aims to set up the bricks for easy implementation of a subgraph for the Rootstock Community. 
 
-Subgraph for Rootstock contains an example contract, RootstockEvent. It is deployed on Tesnet [here](https://explorer.testnet.rsk.co/address/0x8b73111467242aa8829bb17765718c3749df472b)
+The subgraph for Rootstock contains an example contract, `RootstockEvent`. It is deployed on [Testnet](https://explorer.testnet.rsk.co/address/0x8b73111467242aa8829bb17765718c3749df472b)
 
 ```
 // SPDX-License-Identifier: MIT
