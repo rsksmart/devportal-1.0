@@ -4,7 +4,7 @@ menu_title: Transaction
 layout: rsk
 title: 'Rootstock Quick Start Guide | Exploring Rootstock Transactions'
 description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
-tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rootstock, rsk, peer-to-peer, merged-mining, blockchain, powpeg
+tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 
 In the previous section, we set up a browser extension that is a crypto wallet, MetaMask. We connected to the Rootstock Testnet, and loaded this up with Rootstock’s cryptocurrency, RBTC, and an Rootstock-based token, RIF. 
@@ -215,4 +215,3 @@ A key indicator to look for is the average block time, which should be approxima
 - About [gas](/rsk/rbtc/gas/)
 - The [Rootstock Mainnet Stats Page](https://stats.rsk.co/)
 - The [Rootstock Testnet Stats Page](https://stats.testnet.rsk.co/)
-

@@ -4,7 +4,7 @@ menu_title: Browsers
 layout: rsk
 title: 'Rootstock Quick Start Guide | Using Rootstock in the Browser'
 description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 
 As Rootstock is a blockchain with smart contract capabilities,
@@ -191,8 +191,8 @@ If you would like to delve deeper, here are some resources that we recommend.
 
 **Further Reading**:
 
-- [How to configure Metamask](/develop/wallet/use/metamask/)
-- [Account based addresses on Rootstock](/rsk/architecture/account-based/) -
+- [How to configure Metamask](https://developers.rsk.co/wallet/use/metamask/)
+- [Account based addresses on RSK](/rsk/architecture/account-based/) -
   includes information about derivation paths and checksums
 - About [the RIF token](/rif/token/)
 - About [the RBTC cryptocurrency](/rsk/rbtc/)
