@@ -32,7 +32,7 @@ contract RootstockEvent {
 }
 ```
 
-This subgraph contains logic for transforming and storing blockchain events, and serving up a publicly available graphQL API for this data.
+This subgraph contains the logic for transforming and storing blockchain events, and serving up a publicly available graphQL API for this data.
 
 Please note that this is still an early version of the subgraph. While it has undergone testing, we are aware there may be some bugs.
 
