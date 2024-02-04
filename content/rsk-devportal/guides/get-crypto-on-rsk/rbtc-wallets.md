@@ -105,6 +105,8 @@ between ease of use, and security.
   <iframe width="949" height="534" src="https://www.youtube.com/embed/hKW182_Izaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+> For a list of updated wallets, see the [Wallets](/develop/wallet/use/) section.
+
 When a user wishes to interact with the Rootstock blockchain,
 for example to transfer RBTC:
 

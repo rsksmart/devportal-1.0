@@ -1,5 +1,5 @@
 ---
-menu_order: 3700
+# menu_order: 3700
 menu_title: Truffle RSK React Express Box
 layout: rsk
 title: Rsk react-express box
@@ -7,6 +7,8 @@ tags: tutorial, rsk, truffle, truffle-box, react, express
 description: "How to install and use a Truffle box that comes with React and Express, and work with the RSK network."
 render_features: "custom-terminals"
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 In this tutorial, I will show you step-by-step how to use the Truffle box
 [rsk-react-express-box](https://github.com/rsksmart/rsk-react-express-box),

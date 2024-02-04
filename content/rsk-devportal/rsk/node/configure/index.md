@@ -17,7 +17,7 @@ The Rootstock node can be started with different
 
 See how to set your config:
 
-- [Using Ubuntu, or Docker](#using-ubuntu-or-docker)
+- [Using Ubuntu or Docker](#using-ubuntu-or-docker)
 - [Using the `java` command](#using-java-command)
 
 &hellip; to run the node.

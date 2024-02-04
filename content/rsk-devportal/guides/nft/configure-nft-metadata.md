@@ -1,9 +1,9 @@
 ---
 menu_order: 300
 menu_title: Configure NFT Metadata
-title: 'Configure NFT metadata | Write and Deploy an NFT project on the RSK Testnet'
-description: 'Learn about NFTs, create, connect, and deploy to the RSK Blockchain.'
-tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
+title: 'Configure NFT metadata | Write and Deploy an NFT project on the Rootstock Testnet'
+description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
+tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
 
@@ -82,11 +82,11 @@ Seed phrases are a human-readable version of your private keys. You can sign tra
 }
 ```
 
-To interact with the RSK blockchain, you need an account, which consists of a private key, a public key, and an address.
+To interact with the Rootstock blockchain, you need an account, which consists of a private key, a public key, and an address.
 
 BIP-39 is a technical standard that allows the generation of multiple accounts from a set of dictionary words, plus a derivation path.
 Many software libraries and wallet software implement this technical standard, including both ethers.js and MetaMask, which we'll be using in this tutorial.
-Note that seed phrases should be treated as securely as private keys, so do not use the one in this tutorial on RSK Mainner - the usage here is sufficient for use on RSK Testnet only.
+Note that seed phrases should be treated as securely as private keys, so do not use the one in this tutorial on Rootstock Mainner - the usage here is sufficient for use on Rootstock Testnet only.
     
 ### Hardhat Configuration
 
@@ -105,7 +105,7 @@ task('deploy', 'Deploys smart contract to a blockchain').setAction(async () => {
 });
 ```
 
-When the `deploy` task is called, hardhat will deploy your smart contract to the RSK Blockchain. The function takes two metadata, and the second line `const meowContractFactory = await ethers.getContractFactory('Meow');` gets a `contractFactory` of the compiled source code. 
+When the `deploy` task is called, hardhat will deploy your smart contract to the Rootstock Blockchain. The function takes two metadata, and the second line `const meowContractFactory = await ethers.getContractFactory('Meow');` gets a `contractFactory` of the compiled source code. 
 
 `ContractFactory` in `ethers.js` is an abstraction used to deploy new smart contracts, so `Meow` here is a factory for instances of our Meow contract.
 
@@ -168,7 +168,7 @@ async function mintSequentially() {
     }
   }
 ```
-The module.export section has already been explained in the [JSON-RPC base networks](https://developers.rsk.co/kb/hardhat-setup-on-rsk/#24-json-rpc-based-networks) section of the "How to set up a Hardhat project for RSK Testnet " tutorial referred to in this article.
+The module.export section has already been explained in the [JSON-RPC base networks](https://developers.rsk.co/kb/hardhat-setup-on-rsk/#24-json-rpc-based-networks) section of the "How to set up a Hardhat project for Rootstock Testnet " tutorial referred to in this article.
     
 ### Complete Config File
 
@@ -239,6 +239,6 @@ If you would like to delve deeper, here are some resources and tools that we rec
 
 **Resources**
 
-- [Visit Our Developers Portal](https://github.com/rsksmart/devportal) 
-- [RSK Global Discord Community](https://rootstock.io/discord)
-- [RSK Youtube](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)
+- [Visit Rootstock Github Repo](https://github.com/rsksmart/devportal) 
+- [Rootstock Global Discord Community](https://rootstock.io/discord)
+- [Rootstock Youtube](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)

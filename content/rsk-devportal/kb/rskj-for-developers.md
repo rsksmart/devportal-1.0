@@ -96,7 +96,7 @@ If you see the following output within the logs shortly prior to
 the RSKj node exiting:
 
 ```
-ERROR [start] [main]  The Rootstock node main thread failed, closing program
+ERROR [start] [main]  The RSK node main thread failed, closing program
 java.net.BindException: Address already in use
 ```
 
@@ -145,8 +145,8 @@ you have several options:
 
 JSON-RPC is available over two network transport protocols: **HTTP** and **WebSockets**
 
-- [Configuring and using RPC over HTTP](/rsk/node/architecture/json-rpc/)
-- [Configuring and using RPC over WebSockets](/rsk/node/architecture/json-rpc/)
+- [Configuring and using RPC over HTTP](/rsk/node/architecture/json-rpc/transport-protocols#http-transport-protocol)
+- [Configuring and using RPC over WebSockets](/rsk/node/architecture/json-rpc/transport-protocols#websockets-transport-protocol)
 
 > Note that [Rootstock public nodes](/rsk/node/architecture/json-rpc/)
 > do not expose WebSockets, they are HTTP only.
