@@ -4,8 +4,9 @@ menu_title: Overview
 layout: rsk
 title: 'Rootstock Quick Start Guide | Overview'
 description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
 ---
+
 ## What is Rootstock?
 
 Rootstock’s full technology stack is built on top of Bitcoin:
@@ -79,19 +80,31 @@ Thus, the smart contract/dApp development skills that you’re used to will tran
 
 ![Rootstock Tools](/assets/img/guides/quickstart/rsk-tools.png)
 
-- [Hardhat](https://hardhat.org/docs) is an Ethereum development environment designed for professionals. It's primarily used in the development of smart contracts for the Ethereum blockchain.
-  Refer to the [Hardhat Overview](/tools/hardhat/) for an overview of how it's used on Rootstock.
+- [Truffle](https://www.trufflesuite.com/) is a development, testing, and deployment framework for smart contracts,
+and is an essential tool among blockchain developers.
+Truffle works well with Rootstock.
+In fact, we have our own [Truffle Boxes](https://developers.rsk.co/tools/truffle/boxes/),
+which are templates or starter projects that are already configured to connect to Rootstock.
+
+- [Ganache](https://www.trufflesuite.com/ganache) is your personal (localhost-only) simulated blockchain that has been optimised for smart contract development.
+You can use this to run tests, execute commands,
+and inspect state during development.
+We recommend using a combination of Ganache and RSKj in Regtest mode for local development.
+
 - [Metamask](https://metamask.io/) is a browser extension cryptocurrency wallet or mobile app,
-  enabling users to interact with the Rootstock blockchain,
-  including sending RBTC, sending Rootstock-based tokens such as RIF,
-  and interacting with smart contracts deployed to the Rootstock network.
-  See how to [configure MetaMask to connect to Rootstock](https://developers.rsk.co/wallet/use/metamask/).
+enabling users to interact with the Rootstock blockchain,
+including sending RBTC, sending Rootstock-based tokens such as RIF,
+and interacting with smart contracts deployed to the Rootstock network.
+See how to [configure MetaMask to connect to Rootstock](https://developers.rsk.co/wallet/use/metamask/).
+
 - [Mocha](https://mochajs.org/) is a popular JavaScript test framework running on Node.js.
-  See [Rootstock Workshop: Javascript Testing](https://developers.rsk.co/tutorials/workshop-js-testing/) to see how to use it to test your smart contracts on Rootstock.
+Smart contract testing in Truffle occurs through a slightly modified version of Truffle.
+See [Rootstock Workshop: Javascript Testing](https://developers.rsk.co/tutorials/workshop-js-testing/) to see how to use it to test your smart contracts on Rootstock.
+
 - [Solidity](https://docs.soliditylang.org/) is the most popular programming language for implementing smart contracts.
-  The bytecode and ABI that the Solidity compiler, `solc`, outputs can be used to deploy and interact with smart contracts on Rootstock,
-  thanks to the compatibility between RVM and EVM.
-  See [The Complete Full Stack Guide on Rootstock](https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part1-overview/) which will guide you through the process of developing and deploying a Solidity smart contract on Rootstock.
+The bytecode and ABI that the Solidity compiler, `solc`, outputs can be used to deploy and interact with smart contracts on Rootstock,
+thanks to the compatibility between RVM and EVM.
+See [The Complete Full Stack Guide on Rootstock](https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part1-overview/) which will guide you through the process of developing and deploying a Solidity smart contract on Rootstock.
 
 ## Ethereum compatible JSON RPC
 
@@ -106,13 +119,12 @@ Rootstock is not 100% compatible with Ethereum: It has differences in the way ch
 the derivation path it uses, and how gas is calculated.
 
 **Checksum differences**
-
 - Different Ethereum-compatible networks differentiate themselves using “chain IDs”.
 - Each blockchain network has its own unique chain ID.
 - Rootstock uses the chain ID when calculating checksums for its addresses,
-  whereas Ethereum does not take this into account.
+whereas Ethereum does not take this into account.
 - Checksums in both networks are represented using capitalisation (uppercase and lowercase letters),
-  so the “same” address will not pass checksum validations on both Rootstock and Ethereum.
+so the “same” address will not pass checksum validations on both Rootstock and Ethereum.
 
 **Derivation path differences**
 
@@ -134,17 +146,16 @@ Further to that, gas units are multiplied by gas price to calculate the transact
 Since Rootstock’s gas price is denominated in RBTC and Ethereum’s gas price is denominated in Ether,
 there is another difference between gas prices on Rootstock and Ethereum.
 
----
-
+----
 **Further Reading**:
 
 - About additional security and alerting systems for the merged mining process between Rootstock and Bitcoin,
-  check out the [Armadillo guide](/guides/armadillo).
+check out the [Armadillo guide](/guides/armadillo).
 - About [merged mining](/rsk/architecture/mining/)
 - About [PowPeg](/rsk/architecture/powpeg/)
 - About [gas, and gas calculations](/rsk/rbtc/gas/)
 - About [derivation path, checksum, and chain ID](/rsk/architecture/account-based/)
 - About [Turing completeness](/rsk/architecture/turing-complete/)
-- About [Rootstock Improvement Proposals](https://github.com/rsksmart/RSKIPs), many of which involve EVM compatibility
+- About [RSK Improvement Proposals](https://github.com/rsksmart/RSKIPs), many of which involve EVM compatibility
 - About [the RPCs that are available](/rsk/node/architecture/json-rpc/), including documentation with sample requests and responses
-- About [Rootstock public nodes](/rsk/public-nodes/), which expose RPC endpoints
+- About [RSK public nodes](/rsk/public-nodes/), which expose RPC endpoints
