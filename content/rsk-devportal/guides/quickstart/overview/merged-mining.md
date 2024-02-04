@@ -1,10 +1,11 @@
 ---
+menu_order: 200
+menu_title: Merged Mining
 layout: rsk
-title: 'Overview'
+title: 'Merged Mining: Layer 2 to Bitcoin layer 1'
 description: 'Learn about how the Rootstock merge-minig with Bitcoin works'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, merged-mining
 ---
-## Merged Mining: Layer 2 to Bitcoin layer 1
 
 The bitcoin miners do what is known as [merged mining](/rsk/architecture/mining/),
 securing both networks with the same infrastructure and energy consumption.

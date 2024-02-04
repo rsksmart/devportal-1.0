@@ -1,9 +1,12 @@
 ---
+menu_order: 400
+menu_title: Compatibility
 layout: rsk
-title: 'Overview'
+title: 'EVM Compatible Smart Contracts and Ethereum Compatible JSON RPC'
 description: 'Understand how Rootstock is compatible with EVM and other smart contract development tools'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
+
 ## EVM Compatible Smart Contracts
 
 If you are familiar with smart contract development or dApp development using solidity, web3, and other compatible technologies; you might be excited to know that the Rootstock Virtual Machine (RVM) is compatible with the Ethereum Virtual machine (EVM).
@@ -27,3 +30,11 @@ Thus, the smart contract/dApp development skills that you’re used to will tran
   The bytecode and ABI that the Solidity compiler, `solc`, outputs can be used to deploy and interact with smart contracts on Rootstock,
   thanks to the compatibility between RVM and EVM.
   See [The Complete Full Stack Guide on Rootstock](https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part1-overview/) which will guide you through the process of developing and deploying a Solidity smart contract on Rootstock.
+
+## Ethereum Compatible JSON RPC
+
+The set of remote procedure calls (RPCs) that Rootstock supports is largely the same as the RPCs supported by Ethereum.
+This is another layer of compatibility,
+in addition to the virtual machine implementation,
+which allows the same tools and libraries to be used.
+

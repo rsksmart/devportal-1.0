@@ -1,11 +1,11 @@
 ---
+menu_order: 100
+menu_title: What is Rootstock
 layout: rsk
-title: 'Overview'
+title: 'What is Rootstock?'
 description: 'Learn about Rootstock and how it enables smart contracts on Bitcoin'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock
 ---
-
-## What is Rootstock?
 
 Rootstock’s full technology stack is built on top of Bitcoin:
 From Rootstock smart contracts to the Rootstock Infrastructure Framework.

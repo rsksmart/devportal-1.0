@@ -1,16 +1,16 @@
 ---
+menu_order: 300
+menu_title: Differences with Ethereum
 layout: rsk
-title: 'Overview'
+title: 'Differences with Ethereum: Checksums, derivation paths, gas prices'
 description: 'Learn the differences in checksums, derivation paths and gas prices of Rootstock with Ethereum'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain, tools
 ---
 
-## Differences with Ethereum: Checksums, derivation paths, gas prices
-
 Rootstock is not 100% compatible with Ethereum: It has differences in the way checksums are calculated,
 the derivation path it uses, and how gas is calculated.
 
-**Checksum differences**
+## Checksum differences
 
 - Different Ethereum-compatible networks differentiate themselves using “chain IDs”.
 - Each blockchain network has its own unique chain ID.
@@ -19,7 +19,7 @@ the derivation path it uses, and how gas is calculated.
 - Checksums in both networks are represented using capitalisation (uppercase and lowercase letters),
   so the “same” address will not pass checksum validations on both Rootstock and Ethereum.
 
-**Derivation path differences**
+## Derivation path differences
 
 Remembering or storing private keys for your crypto wallets can be super challenging,
 even for technical people.
@@ -29,7 +29,7 @@ where using a seed phrase (a set of randomly chosen dictionary words),
 plus a “derivation path”. Rootstock and Ethereum have different derivation paths,
 therefore, the same seed phrase results in a different set of keys and addresses between Rootstock and Ethereum.
 
-**Gas differences**
+## Gas differences
 
 The EVM and RVM are compatible in that they support the same op-codes,
 and therefore can run the same smart contracts.

@@ -90,7 +90,7 @@ Let’s dive in!
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="">
+            <a href="/guides/quickstart/getting-started/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
@@ -98,15 +98,15 @@ Let’s dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="">
+                <a href="/guides/quickstart/getting-started/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Quickstart Guide</p>
+                        <p class="card-title rsk_green">Getting Started</p>
                         <p class="card-desc">Get started with creating a dApps on Rootstock using Hardhat and other tools.</p>
                     </div>
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="">Learn More</a>
+                    <a class="green" href="/guides/quickstart/getting-started/">Learn More</a>
                 </div>
             </div>
         </div>

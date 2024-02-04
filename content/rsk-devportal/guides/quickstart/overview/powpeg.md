@@ -1,11 +1,11 @@
 ---
+menu_order: 300
+menu_title: PowPeg
 layout: rsk
-title: 'Overview'
+title: 'PowPeg: 1-to-1 peg between BTC and RBTC'
 description: 'Learn about the PowPeg architecture and how Rootstock maintains a 1:1 peg of RBTC with BTC'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, powpeg
 ---
-
-## PowPeg: 1-to-1 peg between BTC and RBTC
 
 The second point of contact is the [Powpeg](/rsk/architecture/powpeg/).
 This component connects both networks to allow the transfer of bitcoins to Rootstock,
