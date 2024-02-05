@@ -16,11 +16,17 @@ In the previous section, we set up a browser extension that is a crypto wallet, 
 ## Contents
 
 - [Block Explorer](/guides/quickstart/transactions/block-explorer/#block-explorer)
+
 - [View Accounts In Block Explorer](/guides/quickstart/transactions/block-explorer/#view-account-in-the-block-explorer)
+
 - [Transfer tRBTC from one account to another](/guides/quickstart/transactions/transfer-trbtc)
+
 - [Transfer tRIF from one account to another](/guides/quickstart/transactions/transfer-trif)
+
 - [Why RBTC Balance Decreases (gas)](/guides/quickstart/transactions/rbtc-balance-decrease)
+
 - [View Transactions In The Block Explorer](/guides/quickstart/transactions/view-transactions)
+
 - [View Network Stats](/guides/quickstart/transactions/view-network-stats)
 
 ---
@@ -28,10 +34,17 @@ In the previous section, we set up a browser extension that is a crypto wallet, 
 **Further reading:**
 
 - The [Rootstock Mainnet Block Explorer](https://explorer.rsk.co/)
+
 - The [Rootstock Testnet Block Explorer](https://explorer.testnet.rsk.co/)
+
 - Alternative [Blockscout Rootstock Mainnet Block Explorer](https://blockscout.com/rsk/mainnet/)
+
 - [Convert Addresses to lowercase using ConvertCase](https://convertcase.net)
+
 - About [the RBTC cryptocurrency](/rsk/rbtc/)
+
 - About [gas](/rsk/rbtc/gas/)
+
 - The [Rootstock Mainnet Stats Page](https://stats.rsk.co/)
+
 - The [Rootstock Testnet Stats Page](https://stats.testnet.rsk.co/)

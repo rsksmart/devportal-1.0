@@ -10,14 +10,11 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, m
 MetaMask is the most popular browser extension with web3 provider capabilities.
 It enables users to buy, store, send and swap tokens.
 
-Metamask also equips you with a key vault, secure login, token wallet,
-and token exchange—everything you need to manage your digital assets.
+Metamask also equips you with a key vault, secure login, token wallet, and token exchange—everything you need to manage your digital assets.
 
-Open up Chrome browser, and install the extension from the
-[Chrome store](https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn).
+Open up Chrome browser, and install the extension from the [Chrome store](https://chrome.google.com/webstore/detail/nkbihfbeogaeaoehlefnkodbefgpgknn).
 
-This short video demonstrates how to download and install MetaMask on your browser,
-and also how to create a wallet to store your crypto assets.
+This short video demonstrates how to download and install MetaMask on your browser, and also how to create a wallet to store your crypto assets.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/VlyqXD1TjJk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

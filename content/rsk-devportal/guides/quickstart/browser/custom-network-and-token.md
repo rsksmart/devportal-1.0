@@ -16,11 +16,9 @@ Let’s use its custom networks feature to add a connection to an Rootstock netw
   <iframe width="949" height="534" src="https://www.youtube.com/embed/VyPewQoWhn0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-After creating the custom network for the Rootstock Testnet,
-you should be able to interact with smart contracts deployed on the Rootstock Testnet!
+After creating the custom network for the Rootstock Testnet, you should be able to interact with smart contracts deployed on the Rootstock Testnet!
 You should also see your balances in tRBTC (Testnet RBTC).
-This is currently zero, which means that we cannot send any transactions to the blockchain,
-so let’s get some using the RBTC faucet.
+This is currently zero, which means that we cannot send any transactions to the blockchain, so let’s get some using the RBTC faucet.
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/twfK8Rd5hak" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
