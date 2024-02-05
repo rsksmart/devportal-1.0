@@ -38,6 +38,8 @@ npm install --save-dev hardhat
 
 After installing, run `npx hardhat` in your project directory. You'll be presented with a few options. Select “Create an empty hardhat.config.js” if you want to start from scratch, or choose one of the sample projects to have some boilerplate code to start with.
 
+![Hardhat Installation Success](/assets/img/guides/quickstart/getting-started/install-success.png)
+
 Once setup is complete, you can verify Hardhat is installed correctly by running npx hardhat again. This time, it should display a help message with available tasks, indicating that Hardhat is installed and ready to use.
 
 #### Additional Plugins

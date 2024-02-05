@@ -10,11 +10,12 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 
 Common issues and solutions in Rootstock and Hardhat development.
 
+<table>
   <tr>
-   <td>**Issue**
+   <td> <b>Issue</b>
 
    </td>
-   <td>**Solution**
+   <td> <b>Solution</b>
 
    </td>
   </tr>
@@ -98,3 +99,4 @@ Common issues and solutions in Rootstock and Hardhat development.
 
    </td>
   </tr>
+</table>

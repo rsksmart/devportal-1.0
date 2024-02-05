@@ -254,3 +254,5 @@ npx http-server
 ```
 
 Navigate to the URL [http://127.0.0.1:8080](http://127.0.0.1:8080) to test the code in the browser and you should get a result similar to the image below:
+
+![Smart Contract Frontend](/assets/img/guides/quickstart/getting-started/frontend.png)

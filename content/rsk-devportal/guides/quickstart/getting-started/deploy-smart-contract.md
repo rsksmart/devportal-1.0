@@ -50,6 +50,8 @@ npx hardhat node
 
 This command will start a local blockchain network and display a list of available accounts and private keys:
 
+![Rootstock Node Running](/assets/img/guides/quickstart/getting-started/run-node.png)
+
 #### Deploying the Contract to the Local Network
 Deploy your contract to the local Hardhat network using the command below in another terminal or command prompt:
 
@@ -58,6 +60,8 @@ npx hardhat run --network hardhat scripts/deploy.js.
 ```
 
 #### This should give a result similar to the following:
+
+![Deploy Successful](/assets/img/guides/quickstart/getting-started/deploy-success.png)
 
 #### Deploy to Rootstock Testnet and Mainnet
 
@@ -93,5 +97,5 @@ npx hardhat run --network rskMainnet scripts/deploy.js
     - Chain ID: ‘31’
 
     - Currency Symbol (optional): ‘tRBTC’
-    
+
 4. Click "Save" to add the network
