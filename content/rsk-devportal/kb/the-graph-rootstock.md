@@ -7,13 +7,13 @@ tags: knowledge-base, the grpah, protocol, rootstock, defi, decentralized
 layout: 'rsk'
 ---
 
-![TheGraph](/assets/img/kb/the-graph/logo.png) 
+![The Graph](/assets/img/kb/the-graph/logo.png) 
 
-[TheGraph](https://thegraph.com/) is a decentralized protocol for indexing and querying blockchain data. For more information, visit [TheGraph](https://thegraph.com/docs/en/about/).
+[The Graph](https://thegraph.com/) is a decentralized protocol for indexing and querying blockchain data. For more information, visit [The Graph](https://thegraph.com/docs/en/about/).
 
 ## Rootstock Subgraph
 
-A Subgraph Boilerplate for [Rootstock] (https://github.com/rsksmart/rootstock-subgraph) has been developed, this project aims to set up the bricks for easy implementation of a subgraph for the Rootstock Community. 
+A Subgraph Boilerplate for [Rootstock](https://github.com/rsksmart/rootstock-subgraph) has been developed, this project aims to set up the bricks for easy implementation of a subgraph for the Rootstock Community. 
 
 > This solution was forked from [Sovryn Subgraph](https://github.com/DistributedCollective/Sovryn-subgraph). 
 
