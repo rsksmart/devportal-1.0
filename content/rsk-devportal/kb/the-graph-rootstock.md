@@ -13,7 +13,7 @@ layout: 'rsk'
 
 ## Rootstock Subgraph
 
-A Subgraph Boilerplate for [Rootstock] (https://github.com/rsksmart/rootstock-subgraph) has been developed, this project aims to set up the bricks for easy implementation of a subgraph for the Rootstock Community. 
+A Subgraph Boilerplate for [Rootstock](https://github.com/rsksmart/rootstock-subgraph) has been developed, this project aims to set up the bricks for easy implementation of a subgraph for the Rootstock Community. 
 
 > This solution was forked from [Sovryn Subgraph](https://github.com/DistributedCollective/Sovryn-subgraph). 
 
