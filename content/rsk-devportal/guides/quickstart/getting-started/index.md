@@ -36,7 +36,7 @@ Let's dive in!
                 <a href="/develop/tutorials/workshop-prereqs/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Prerequisites</p>
-                        <p class="card-desc">Learn about...</p>
+                        <p class="card-desc">Learn about the tools you need to have in place to follow along with this guide.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -59,7 +59,7 @@ Let's dive in!
                 <a href="/guides/quickstart/getting-started/set-up-environment/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Set Up Your Environment</p>
-                        <p class="card-desc">Learn how to...</p>
+                        <p class="card-desc">Learn how to set up your environment for development using Hardhat on Rootstock</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -82,7 +82,7 @@ Let's dive in!
                 <a href="/guides/quickstart/getting-started/create-smart-contract/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Create a Smart Contract</p>
-                        <p class="card-desc">.....</p>
+                        <p class="card-desc">Learn how to create a smart contract on the Rootstock network</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -105,7 +105,7 @@ Let's dive in!
                 <a href="/guides/quickstart/getting-started/test-smart-contract/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Test your Smart Contract</p>
-                        <p class="card-desc">....</p>
+                        <p class="card-desc">Learn how to test your smart contract to ensure it's working as expected.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -128,7 +128,7 @@ Let's dive in!
                 <a href="/guides/quickstart/getting-started/deploy-smart-contract/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Deploy your Smart Contract</p>
-                        <p class="card-desc">....</p>
+                        <p class="card-desc">Learn how to deploy your smart contract on your local environment</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -151,7 +151,7 @@ Let's dive in!
                 <a href="/guides/quickstart/getting-started/debugging-and-troubleshooting/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Debugging and Troubleshooting Tips</p>
-                        <p class="card-desc">....</p>
+                        <p class="card-desc">Learn about the common issues you can come across while building following this guide and how you can solve them.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -174,35 +174,12 @@ Let's dive in!
                 <a href="/guides/quickstart/getting-started/integrate-with-frontend/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Integrate with Front-end Applications</p>
-                        <p class="card-desc">....</p>
+                        <p class="card-desc">Learn how to integrate your smart contract with a front-end application.</p>
                     </div>
                 </a>
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/guides/quickstart/getting-started/integrate-with-frontend/">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/integrate-with-frontend/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/guides/quickstart/getting-started/integrate-with-frontend/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">Debugging and Troubleshooting Tips</p>
-                        <p class="card-desc">....</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/debugging/">Learn More</a>
                 </div>
             </div>
         </div>
