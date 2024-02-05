@@ -1,10 +1,10 @@
 ---
 layout: rsk
 section_title: Knowledge Base
-menu_title: About
-title: Welcome to RSK and RIF Knowledgebase
+menu_title: Overview
+title: Welcome to Rootstock and RIF Knowledgebase
 tags: knowledgebase, rsk, faqs, help, support
-description: "Welcome to RSK and RIF Knowledge-base; Explore RSK faqs, tutorials and guides to help you get started on building on RSK and RIF Technologies"
+description: "Welcome to Rootstock and RIF Knowledge-base; Explore Rootstock faqs, tutorials and guides to help you get started on building on Rootstock and RIF Technologies"
 menu_order: 4
 ---
 
@@ -12,16 +12,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/faqs/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/faqs/faqs_icon.png" alt="faq icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="faq icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/faqs/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">FAQs</p>
+                         <div class="card-title"><h2 class="zg-text-bg">Rootstock & RIF FAQs</h2><span class="zg-label ml-1">01</span></div> 
                         <p class="card-desc">Check out our faqs section to help you troubleshoot and view answers to questions you might have.</p>
                     </div>
                 </a>
@@ -34,40 +34,17 @@ menu_order: 4
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/kb/rbank/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/rbank/rbank logotype.svg" alt="rbank icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/kb/rbank/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">RBank</p>
-                        <p class="card-desc">RBank is a lending solution on the RSK network. Developers can use RBank tools to build DeFi products on RSK</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/kb/rbank/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
             <a href="/kb/rskj/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/rskj/explore.png" alt="getstartedwithrskj icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="getstartedwithrskj icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/rskj/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Getting started with RSKj</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-purple">Get Started with RSKj</h2><span class="zg-label ml-1 bg-purple">02</span></div> 
                         <p class="card-desc">Explore the different ways to get started with RSKj as a developer, node runner or as a miner on Rootstock.</p>
                     </div>
                 </a>
@@ -81,16 +58,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/rskj-for-developers/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/rskj/developer.png" alt="rskjfordevs icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rskjfordevs icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/rskj-for-developers/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">RSKj for Developers</p>
+                          <div class="card-title"><h2 class="zg-text-bg bg-pink">RSKj for Developers</h2><span class="zg-label ml-1 bg-pink">03</span></div> 
                         <p class="card-desc">Setup your dev environment and build dApps faster using this quick start guide</p>
                     </div>
                 </a>
@@ -103,17 +80,86 @@ menu_order: 4
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/kb/transaction-rate-limiter-rskj/">
-                <div class="icon rif h-100">
+            <a href="/kb/rootstock-metamask/">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/rskj/developer.png" alt="rskjfordevs icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/rootstock-metamask/">
+                    <div class="content-container">
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Add Rootstock to Metamask Programmatically</h2><span class="zg-label ml-1 bg-yellow">04</span></div> 
+                        <p class="card-desc">Learn how to add and initiate a network switch on Metamask from a website.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/rootstock-metamask/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/defillama/">
+                <div class="icon h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/defillama/defillama-logo.png" alt="defillama icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/defillama/">
+                    <div class="content-container">
+                        <div class="card-title"><h2 class="zg-text-bg">Add Protocol to DefiLlama</h2><span class="zg-label ml-1">05</span></div> 
+                        <p class="card-desc">Learn how to list a DeFi project and write an SDK adapter to add a Protocol to DeFiLlama.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/defillama/">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/the-graph-rootstock/">
+                <div class="icon h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/kb/the-graph/logo.png" alt="the-graph icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/the-graph-rootstock/">
+                    <div class="content-container">
+                        <div class="card-title"><h2 class="zg-text-bg">How to use TheGraph on Rootstock</h2><span class="zg-label ml-1">06</span></div> 
+                        <p class="card-desc">The Graph is a decentralized protocol for indexing and querying blockchain data</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/the-graph-rootstock/">Use TheGraph on Rootstock</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/transaction-rate-limiter-rskj/">
+                <div class="icon h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rootstock-icon.png" alt="rskjfordevs icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/transaction-rate-limiter-rskj/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Transaction Rate Limiter on the Rootsotck Network</p>
+                    <div class="card-title"><h2 class="zg-text-bg">Transaction Rate Limiter on the Rootsotck Network</h2></span></div> 
                         <p class="card-desc">AKA Virtual Gas Limiter</p>
                     </div>
                 </a>
@@ -127,7 +173,7 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/build-with-tenderly/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/kb/BuildWithTenderly/tenderly-rsk-banner.jpg" alt="rskontenderly icon">
                     </div>
@@ -136,7 +182,7 @@ menu_order: 4
             <div class="content">
                 <a href="/kb/build-with-tenderly/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Build on Rootstock with Tenderly</p>
+                        <div class="card-title"><h2 class="zg-text-bg">Build on Rootstock with Tenderly</h2></div> 
                         <p class="card-desc">Tenderly helps developers build, monitor, and improve smart contracts by providing a set of tools to boost productivity.</p>
                     </div>
                 </a>
@@ -150,16 +196,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/tokenbridge-troubleshooting/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="token-bridge icon">
+                        <img src="/assets/img/rootstock-logo.png" alt="token-bridge icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/tokenbridge-troubleshooting/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Rootstock Token Bridge Troubleshooting Guide</p>
+                        <div class="card-title"><h2 class="zg-text-bg">Rootstock Token Bridge Troubleshooting Guide</h2></div> 
                         <p class="card-desc">Having issues crossing your tokens on the Token Bridge? See the troubleshooting guide for help.</p>
                     </div>
                 </a>
@@ -175,15 +221,15 @@ menu_order: 4
             <a href="/kb/verify-address-ownership/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="RSK icon">
+                        <img src="/assets/img/kb/send-rif-tokens-metamask/rif_logo_blue.png" alt="Rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/verify-address-ownership/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Verify Address Ownership</p>
-                        <p class="card-desc">Confirm that you own an Rootstock address using RIF Identity Manager.</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-pink">Verify Address Ownership</h2></div> 
+                        <p class="card-desc">Confirm that you own a Rootstock address using RIF Identity Manager.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -205,7 +251,7 @@ menu_order: 4
             <div class="content">
                 <a href="/kb/fungible-tokens-standard/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Fungible Token Standards</p>
+                         <div class="card-title"><h2 class="zg-text-bg bg-purple">Fungible Token Standards</h2></div>
                         <p class="card-desc">What is ERC20, and are there others like it? How do they work on Rootstock?
                         </p>
                     </div>
@@ -222,14 +268,14 @@ menu_order: 4
             <a href="/kb/send-tokens-through-metamask/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/send-rif-tokens-metamask/rif-logo.png" alt="rif icon">
+                        <img src="/assets/img/kb/send-rif-tokens-metamask/rif_logo_blue.png" alt="rif icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/send-tokens-through-metamask/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Send RIF Tokens through Metamask</p>
+                         <div class="card-title"><h2 class="zg-text-bg bg-yellow">Send RIF Tokens through Metamask</h2></div>
                         <p class="card-desc">Learn how to use Metamask wallet to send RIF Tokens
                         </p>
                     </div>
@@ -244,16 +290,16 @@ menu_order: 4
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/using-blockmason/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rootstock icon">
+                        <img src="/assets/img/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/using-blockmason/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Using Blockmason</p>
+                         <div class="card-title"><h2 class="zg-text-bg bg-purple">Using Blockmason</h2></div>
                         <p class="card-desc">Learn how to use Rootstock with Blockmason Link.
                         </p>
                     </div>
@@ -268,16 +314,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/rsk-api/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rootstock icon">
+                        <img src="/assets/img/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/rsk-api/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Rootstock API CLI</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-pink">Rootstock API CLI</h2></div>
                         <p class="card-desc">A library and commands to interact with Rootstock and Ethereum nodes.
                         </p>
                     </div>
@@ -292,16 +338,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/ethereum-dapp-to-rsk/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rootstock icon">
+                        <img src="/assets/img/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/ethereum-dapp-to-rsk/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Bring Your Ethereum dApp to Rootstock</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-purple">Bring Your Ethereum dApp to Rootstock</h2></div>
                         <p class="card-desc">Learn how to cross your Ethereum dApps to Rootstock.
                         </p>
                     </div>
@@ -316,7 +362,7 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/getblock-rpc/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/solutions/getblock/getblock_logo.png" alt="getblock icon">
                     </div>
@@ -325,7 +371,7 @@ menu_order: 4
             <div class="content">
                 <a href="/kb/getblock-rpc/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">RPC via GetBlock</p>
+                        <div class="card-title"><h2 class="zg-text-bg">RPC via GetBlock</h2></div>
                         <p class="card-desc">Learn how to use the API methods within GetBlock to connect to an Rootstock node.
                         </p>
                     </div>
@@ -340,16 +386,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/verify-smart-contract/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/verify-smart-contract/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">How to verify a Smart Contract</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">How to verify a Smart Contract</h2></div>
                         <p class="card-desc">Learn how to verify a smart contract on the Rootstock Block Explorer.
                         </p>
                     </div>
@@ -364,16 +410,16 @@ menu_order: 4
      <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/hardhat-setup-on-rsk/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/hardhat-setup-on-rsk/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Setup a Hardhat project for Rootstock Testnet</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Setup a Hardhat project for Rootstock Testnet</h2></div>
                         <p class="card-desc">Learn how to set up a Hardhat project for Rootstock Testnet.
                         </p>
                     </div>
@@ -388,16 +434,16 @@ menu_order: 4
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/geth-attach-local-node/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/geth-attach-local-node/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Geth attach to Rootstock local node</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Geth attach to Rootstock local node</h2></div>
                         <p class="card-desc">Learn how to use the Ethereum client Geth to attach to an Rootstock local node (regtest) and run JSON-RPC commands.
                         </p>
                     </div>
@@ -412,16 +458,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/geth-attach-deploy-smart-contracts/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/geth-attach-deploy-smart-contracts/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Deploy smart contract using Remix and Geth</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-purple">Deploy smart contract using Remix and Geth</h2></div>
                         <p class="card-desc">Learn how to compile a smart contract using Remix and deploy it on a local node using Geth.
                         </p>
                     </div>
@@ -436,16 +482,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/remix-and-metamask-with-rsk-testnet/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/remix-and-metamask-with-rsk-testnet/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Remix and Metamask with Rootstock testnet</p>
+                        <div class="card-title"><h2 class="zg-text-bg">Remix and Metamask with Rootstock testnet</h2></div>
                         <p class="card-desc">Learn how to configure a wallet using Metamask and Remix at Rootstock testnet.</p>
                     </div>
                 </a>
@@ -459,16 +505,16 @@ menu_order: 4
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/first-frontend-web3-injected/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/first-frontend-web3-injected/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Create your first frontend</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-purple">Create your first frontend</h2></div>
                         <p class="card-desc">Learn how to create your first frontend for smart contracts using an injected web3 provider.</p>
                     </div>
                 </a>
@@ -482,16 +528,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/frontend-web3-local/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/frontend-web3-local/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Frontend with web3 in a local node</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Frontend with web3 in a local node</h2></div>
                         <p class="card-desc">Learn how to create a frontend for smart contracts using web3.js directly connected to a local node.</p>
                     </div>
                 </a>
@@ -505,16 +551,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/interact-with-smart-contracts/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/interact-with-smart-contracts/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Interact with Smart Contracts</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Interact with Smart Contracts</h2></div>
                         <p class="card-desc">Learn how to interact with a Smart Contract.</p>
                     </div>
                 </a>
@@ -528,16 +574,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/compile-smart-contracts-go/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/compile-smart-contracts-go/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Compile Smart Contracts to Go</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Compile Smart Contracts to Go</h2></div>
                         <p class="card-desc">Learn how to interact with a Smart Contract in a Go application.</p>
                     </div>
                 </a>
@@ -551,16 +597,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/deploy-smart-contracts/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rootstock icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/deploy-smart-contracts/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Deploy Smart Contracts</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-pink">Deploy Smart Contracts</h2></div>
                         <p class="card-desc">Learn how to develop and deploy smart contracts in Rootstock.</p>
                     </div>
                 </a>
@@ -574,16 +620,16 @@ menu_order: 4
      <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/interface-registry/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/interface-registry/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Universal Smart Contract Interface Registry</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Universal Smart Contract Interface Registry</h2></div>
                         <p class="card-desc">See the ERC1820 standard interface, address support and smart contract implementation.</p>
                     </div>
                 </a>
@@ -597,16 +643,16 @@ menu_order: 4
          <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/create-a-token/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/create-a-token/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Create your first token</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-purple">Create your first token</h2></div>
                         <p class="card-desc">Learn how to create a token with less than 10 lines of code, using Truffle and Open Zeppelin smart contracts at Rootstock testnet.</p>
                     </div>
                 </a>
@@ -620,16 +666,16 @@ menu_order: 4
      <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/create-a-token-02/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/create-a-token-02/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Create other ERC20 token</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Create other ERC20 token</h2></div>
                         <p class="card-desc">Other approach to create a token using Truffle and Open Zeppelin smart contracts at Rootstock testnet.</p>
                     </div>
                 </a>
@@ -643,16 +689,16 @@ menu_order: 4
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/kb/create-a-collectable-token/">
-                <div class="icon rif h-100">
+                <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
             <div class="content">
                 <a href="/kb/create-a-collectable-token/">
                     <div class="content-container">
-                        <p class="card-title rsk_green">Collectable tokens on Rootstock</p>
+                        <div class="card-title"><h2 class="zg-text-bg bg-pink">Collectable tokens on Rootstock</h2></div>
                         <p class="card-desc">Learn how to create your own collectable token on Rootstock network using Truffle framework, and Open Zeppelin libraries</p>
                     </div>
                 </a>
@@ -663,52 +709,5 @@ menu_order: 4
             </div>
         </div>
     </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/kb/rootstock-metamask/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/kb/rootstock-metamask/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">Add Rootstock to Metamask Programmatically</p>
-                        <p class="card-desc">Learn how to add and initiate a network switch on Metamask from a website.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/kb/rootstock-metamask/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/kb/defillama/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/defillama/defillama-logo.png" alt="defillama icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/kb/defillama/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">How to add a Protocol to DeFiLlama</p>
-                        <p class="card-desc">Learn how to list a DeFi project and write an SDK adapter to add a Protocol to DeFiLlama.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/kb/defillama/">Get Started</a>
-                </div>
-            </div>
-        </div>
-    </li>
-
-</div>
+    </div>
 
