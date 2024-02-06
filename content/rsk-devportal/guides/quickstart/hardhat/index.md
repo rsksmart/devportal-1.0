@@ -184,4 +184,27 @@ Let's dive in!
             </div>
         </div>
     </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/guides/quickstart/hardhat/development-libraries/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/guides/quickstart/hardhat/development-libraries/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Web3 Development Libraries</p>
+                        <p class="card-desc">Explore the web3 development libraries used in this guide and other alternatives.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/guides/quickstart/hardhat/development-libraries/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </li>
 </div>
