@@ -1,9 +1,9 @@
 ---
 menu_order: 600
-section_title: Getting Started
+section_title: Getting Started with Hardhat
 menu_title: Table of Contents
 layout: rsk
-title: 'Rootstock Quick Start Guide | Getting Started'
+title: 'Rootstock Quick Start Guide | Getting Started with Hardhat'
 description: 'Get started with creating a dApps on Rootstock using Hardhat and other tools.'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
@@ -48,7 +48,7 @@ Let's dive in!
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/set-up-environment/">
+            <a href="/guides/quickstart/hardhat/set-up-environment/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
@@ -56,7 +56,7 @@ Let's dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="/guides/quickstart/getting-started/set-up-environment/">
+                <a href="/guides/quickstart/hardhat/set-up-environment/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Set Up Your Environment</p>
                         <p class="card-desc">Learn how to set up your environment for development using Hardhat on Rootstock</p>
@@ -64,14 +64,14 @@ Let's dive in!
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/set-up-environment/">Learn More</a>
+                    <a class="green" href="/guides/quickstart/hardhat/set-up-environment/">Learn More</a>
                 </div>
             </div>
         </div>
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/create-smart-contract/">
+            <a href="/guides/quickstart/hardhat/create-smart-contract/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
@@ -79,7 +79,7 @@ Let's dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="/guides/quickstart/getting-started/create-smart-contract/">
+                <a href="/guides/quickstart/hardhat/create-smart-contract/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Create a Smart Contract</p>
                         <p class="card-desc">Learn how to create a smart contract on the Rootstock network</p>
@@ -87,14 +87,14 @@ Let's dive in!
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/create-smart-contract/">Learn More</a>
+                    <a class="green" href="/guides/quickstart/hardhat/create-smart-contract/">Learn More</a>
                 </div>
             </div>
         </div>
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/test-smart-contract/">
+            <a href="/guides/quickstart/hardhat/test-smart-contract/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
@@ -102,7 +102,7 @@ Let's dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="/guides/quickstart/getting-started/test-smart-contract/">
+                <a href="/guides/quickstart/hardhat/test-smart-contract/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Test your Smart Contract</p>
                         <p class="card-desc">Learn how to test your smart contract to ensure it's working as expected.</p>
@@ -110,14 +110,14 @@ Let's dive in!
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/test-smart-contract/">Learn More</a>
+                    <a class="green" href="/guides/quickstart/hardhat/test-smart-contract/">Learn More</a>
                 </div>
             </div>
         </div>
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/deploy-smart-contract/">
+            <a href="/guides/quickstart/hardhat/deploy-smart-contract/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
@@ -125,7 +125,7 @@ Let's dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="/guides/quickstart/getting-started/deploy-smart-contract/">
+                <a href="/guides/quickstart/hardhat/deploy-smart-contract/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Deploy your Smart Contract</p>
                         <p class="card-desc">Learn how to deploy your smart contract on your local environment</p>
@@ -133,14 +133,14 @@ Let's dive in!
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/deploy-smart-contract/">Learn More</a>
+                    <a class="green" href="/guides/quickstart/hardhat/deploy-smart-contract/">Learn More</a>
                 </div>
             </div>
         </div>
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/debugging-and-troubleshooting/">
+            <a href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
@@ -148,7 +148,7 @@ Let's dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="/guides/quickstart/getting-started/debugging-and-troubleshooting/">
+                <a href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Debugging and Troubleshooting Tips</p>
                         <p class="card-desc">Learn about the common issues you can come across while building following this guide and how you can solve them.</p>
@@ -156,14 +156,14 @@ Let's dive in!
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/debugging-and-troubleshooting/">Learn More</a>
+                    <a class="green" href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">Learn More</a>
                 </div>
             </div>
         </div>
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/integrate-with-frontend/">
+            <a href="/guides/quickstart/hardhat/integrate-with-frontend/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
@@ -171,7 +171,7 @@ Let's dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="/guides/quickstart/getting-started/integrate-with-frontend/">
+                <a href="/guides/quickstart/hardhat/integrate-with-frontend/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Integrate with Front-end Applications</p>
                         <p class="card-desc">Learn how to integrate your smart contract with a front-end application.</p>
@@ -179,7 +179,7 @@ Let's dive in!
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/integrate-with-frontend/">Learn More</a>
+                    <a class="green" href="/guides/quickstart/hardhat/integrate-with-frontend/">Learn More</a>
                 </div>
             </div>
         </div>

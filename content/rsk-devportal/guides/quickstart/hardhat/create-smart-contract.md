@@ -55,4 +55,4 @@ npx hardhat compile
 
 This will compile your smart contracts and generate artifacts:
 
-![Hardhat Compile Success](/assets/img/guides/quickstart/getting-started/compile-success.png)
+![Hardhat Compile Success](/assets/img/guides/quickstart/hardhat/compile-success.png)

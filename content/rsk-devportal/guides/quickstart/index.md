@@ -90,7 +90,7 @@ Let’s dive in!
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/guides/quickstart/getting-started/">
+            <a href="/guides/quickstart/hardhat/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
@@ -98,7 +98,7 @@ Let’s dive in!
                 </div>
             </a>
             <div class="content">
-                <a href="/guides/quickstart/getting-started/">
+                <a href="/guides/quickstart/hardhat/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Getting Started</p>
                         <p class="card-desc">Get started with creating a dApps on Rootstock using Hardhat and other tools.</p>
@@ -106,7 +106,7 @@ Let’s dive in!
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/guides/quickstart/getting-started/">Learn More</a>
+                    <a class="green" href="/guides/quickstart/hardhat/">Learn More</a>
                 </div>
             </div>
         </div>
