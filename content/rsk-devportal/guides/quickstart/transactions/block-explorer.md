@@ -3,15 +3,15 @@ menu_order: 100
 menu_title: Block Explorer
 layout: rsk
 title: 'Block Explorer'
-description: ''
+description: 'Understand how to use the Rotstock block explorer'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 ## Block Explorer
 
 Now that we are set up, let’s explore some transactions!
 The Rootstock network is an **immutable public ledger**.
 Let’s dissect that phrase:
+
 - **Ledger**: An ordered list of transactions recorded in some form
 - **Immutable**: The way this ledger is recorded and stored means that any existing transactions may not be deleted or modified. You may also think of it as being an “append-only” ledger.
 - **Public**: The contents of this ledger are open and transparent, therefore anyone connected to this network can view every single transaction in history.

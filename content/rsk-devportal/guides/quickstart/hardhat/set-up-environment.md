@@ -3,10 +3,9 @@ menu_order: 100
 menu_title: Set Up Your Environment
 layout: rsk
 title: 'Set Up Your Environment'
-description: ''
+description: 'Learn how to set up your environment for development on Rootstock'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
-
 ### Creating a Hardhat Project
 
 #### Creating a New Directory for Your Project
@@ -44,13 +43,14 @@ Once setup is complete, you can verify Hardhat is installed correctly by running
 
 #### Additional Plugins
 
-Consider installing additional Hardhat plugins as per your project's needs. These plugins can be added via npm, similar to installing Hardhat. 
+Consider installing additional Hardhat plugins as per your project's needs. These plugins can be added via npm, similar to installing Hardhat.
 For example, hardhat-ethers is a popular plugin used in this guide for integrating the Ethers.js library.
 Install hardhat-ethers using `npm install --save-dev @nomicfoundation/hardhat-ethers`
 
 ### Configuring Hardhat for Rootstock Mainnet and Testnet
 
 #### Configure Network Settings in hardhat.config.js
+
 Open or create the `hardhat.config.js` file in your project's root directory. Add configurations for Rootstock Mainnet and Testnet. Here's an example:
 
 ```js
@@ -77,6 +77,7 @@ module.exports = {
 
 To deploy contracts, you'll need Rootstock-compatible accounts. You can use existing accounts or create new ones.
 Following these steps, you'll have a fully set up Hardhat environment ready for smart contract development and deployment on the Rootstock network.
+
 > To set up a wallet and get a private key, see the section on [Using Rootstock in the Browser](https://dev.rootstock.io/guides/quickstart/browser/#private-keys-and-public-keys).
 
 **Install `dotenv` to manage environment variables:**
@@ -116,7 +117,6 @@ networks: {
 **Funding Your Accounts:**
 
 - For Mainnet, you'll need RBTC, which you can obtain from an exchange. See [Get RBTC using Exchanges](https://dev.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/).
-
 - For Testnet, you can get test RBTC from a Rootstock Testnet faucet: [https://faucet.rsk.co/](https://faucet.rsk.co/)
 
 **Note:** Explore this [GitHub commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/83f32831b14a646c7812752f1b3ba60c19ed7e39) to see what your project codebase should look like after this step.

@@ -3,10 +3,9 @@ menu_order: 200
 menu_title: Cryptography
 layout: rsk
 title: 'Cryptography in Crypto Wallets'
-description: ''
+description: 'Learn about how cryptographic security is implemented in crypto wallets'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 ## Private Keys and Public Keys
 
 In wallet software, you generally see “accounts” represented by addresses on the blockchain network.
@@ -15,10 +14,8 @@ There is some hidden complexity behind that, to do with cryptography, which is n
 
 - You start off with a private key, which is essentially an extremely large number, and should be randomly generated.
   You should keep the private key secret, because that is what is used to sign transactions.
-
 - A public key is generated from the private key, and this is also a very large number.
   This does not need to be kept secret, because others in the blockchain network use it to verify transactions.
-
 - An address is generated from the public key, and is the hexadecimal string that you see in your wallet software.
 
 ### Seed Phrases

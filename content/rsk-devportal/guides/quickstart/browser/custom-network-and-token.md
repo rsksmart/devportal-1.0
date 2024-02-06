@@ -3,10 +3,9 @@ menu_order: 300
 menu_title: Custom Network and Token
 layout: rsk
 title: 'Configure custom network for Rootstock Testnet'
-description: ''
+description: 'Learn how to configure custom network for Rootstock on Metamask'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 ## Configure custom network for Rootstock Testnet
 
 MetaMask comes pre-configured with connections for Ethereum networks.

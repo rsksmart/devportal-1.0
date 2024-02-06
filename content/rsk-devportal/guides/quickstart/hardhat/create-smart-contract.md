@@ -3,10 +3,9 @@ menu_order: 200
 menu_title: Create a Smart Contract
 layout: rsk
 title: 'Create a Smart Contract'
-description: ''
+description: 'Learn how to create a smart contract on the Rootstock network'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
-
 ### Creating a Smart Contract
 
 We delve into creating a smart contract utilizing the [OpenZeppelin library](https://www.openzeppelin.com/contracts). OpenZeppelin is widely chosen for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
@@ -47,6 +46,7 @@ contract MyToken is ERC20 {
 This contract defines an ERC20 token named "MyToken" with the symbol "MTK."
 
 #### Building the Contract
+
 Run npx hardhat compile in your project directory.
 
 ```shell

@@ -3,7 +3,7 @@ menu_order: 400
 menu_title: Deploy Smart Contract
 layout: rsk
 title: 'Deploy Smart Contract'
-description: ''
+description: 'Learn how to deploy your Rootstock smart contract on your local environment and Rootstock Testnet and Mainnet'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
 ### Create the Scripts Directory

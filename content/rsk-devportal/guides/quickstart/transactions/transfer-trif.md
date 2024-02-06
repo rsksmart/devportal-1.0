@@ -3,10 +3,9 @@ menu_order: 300
 menu_title: Transfer tRIF
 layout: rsk
 title: 'Transfer tRIF from one account to another'
-description: ''
+description: 'Learn how to transfer RIF between accounts'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 Watch this short video demonstrating **how to transfer tRIF from one account to another**.
 
 <div class="video-container">

@@ -3,11 +3,10 @@ menu_order: 600
 section_title: Getting Started with Hardhat
 menu_title: Table of Contents
 layout: rsk
-title: 'Rootstock Quick Start Guide | Getting Started with Hardhat'
+title: 'Getting Started with Hardhat'
 description: 'Get started with creating a dApps on Rootstock using Hardhat and other tools.'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 Welcome to the world of Web3 development! This guide is designed to smoothly transition Web2 developers into the Web3 ecosystem using the Rootstock network, a unique platform that is EVM (Ethereum Virtual Machine) compatible with Bitcoin's proven security. If you’re a web3 developer, this guide also provides a demo of deploying smart contracts on the Rootstock platform.
 
 As you embark on this journey, the focus is on leveraging the Rootstock network to its fullest potential, showcasing its EVM compatibility, robust decentralization backed by Bitcoin, and notably lower transaction fees.
@@ -15,6 +14,7 @@ As you embark on this journey, the focus is on leveraging the Rootstock network 
 Whether you have experience with other Web3 development tools or are just stepping into the world of smart contract development, this guide will equip you with the essential knowledge to navigate and utilize Hardhat on the Rootstock network.
 
 ## Why This Guide?
+
 This guide enables Web2 developers to get up to speed on Smart contracts and deployment. It focuses on the Rootstock network's unique features and procedures. It aims to provide an understanding of how to build on the Rootstock platform, offering foundational insights into blockchain technology and its practical applications in Web3 development with Hardhat.
 
 Already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to [Part 2, Section 2](https://docs.google.com/document/d/14753MjSL8kMXDB0vBJ3N-A9g4RO-b23JpZbWW3dOxUA/edit#heading=h.blzhed584kyc) in this guide to configure your Hardhat project for the Rootstock network.

@@ -3,10 +3,9 @@ menu_order: 300
 menu_title: Test Smart Contract
 layout: rsk
 title: 'Test Smart Contract'
-description: ''
+description: 'Learn how to test your Rootstock smart contract'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
-
 ### Testing the Contract
 
 #### Installing Testing Dependencies Mocha and Chai

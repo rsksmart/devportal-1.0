@@ -3,10 +3,9 @@ menu_order: 500
 menu_title: View Transactions
 layout: rsk
 title: 'View Transactions In The Block Explorer'
-description: ''
+description: 'Learn how to view transaction on the Rootsock block explorer'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 When you performed each of the transactions, you should have received notifications in popups.
 
 ![Confirmed Transaction](/assets/img/guides/quickstart/transactions/metamask_transaction_confirmed.png)
@@ -20,7 +19,6 @@ Then you click on any transaction, and click on the arrow button beside copy but
 ![View testnet explorer](/assets/img/guides/quickstart/transactions/view_testnet_explorer.png)
 
 ![View testnet explorer](/assets/img/guides/quickstart/transactions/view_testnet_explorer_2.png)
-
 
 If you clicked on the popup notification, or if you find it within the “Activity” tab, either way, this should open up the block explorer with the selected transaction selected.
 

@@ -3,10 +3,9 @@ menu_order: 600
 menu_title: View Network Stats
 layout: rsk
 title: 'View Network Stats'
-description: ''
+description: 'Learn how to view Rootstock network stats'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 So far we have checked out individual addresses and transactions. These are very detailed and specific information. What if you were after the big picture instead? A bird’s eye view of the Rootstock blockchain as a whole?
 
 For this, we will not use the Rootstock Block explorer, and instead use the Rootstock Stats page.

@@ -3,10 +3,9 @@ menu_order: 100
 menu_title: Install Metamask
 layout: rsk
 title: 'Install Metamask'
-description: ''
+description: 'Learn how to install Metamask wallet on your browser'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 MetaMask is the most popular browser extension with web3 provider capabilities.
 It enables users to buy, store, send and swap tokens.
 

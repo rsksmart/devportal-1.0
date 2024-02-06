@@ -3,11 +3,9 @@ menu_order: 100
 menu_title: Development Libraries
 layout: rsk
 title: 'Web3 Development Tools and Libraries'
-description: ''
+description: 'Explore the web3 development libraries used on Rootstock and their alternatives'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
-
-
 These tools are specifically tailored for Web3 development, and they can simplify the integration of blockchain functionaity into web interfaces. Here are a few recommended tools and libraries that are popular in the Web3 space, along with brief descriptions:
 
 ### [RainbowKit](https://www.rainbowkit.com/)
@@ -35,10 +33,13 @@ These tools are specifically tailored for Web3 development, and they can simplif
 **Why Use It:** Moralis can be a time-saver to build a more comprehensive application with backend support. It handles much of the backend complexity and lets you focus on front-end development.
 
 ## Exploring Alternative Testing Approaches and Frameworks
+
 In addition to Mocha and Chai, you can use several other frameworks and approaches in your Hardhat project. Each has its unique features and benefits.
 
 ### [Jest - A Delightful JavaScript Testing Framework](https://jestjs.io/)
+
 Jest is popular for its delightful syntax and focus on simplicity. It works well for testing both frontend and backend JavaScript applications.
 
 ### [Waffle - Ethereum Smart Contract Testing Library](https://getwaffle.io/)
+
 Waffle is a library for writing and testing smart contracts. It is often used with ethers.js and is known for its fluent syntax.

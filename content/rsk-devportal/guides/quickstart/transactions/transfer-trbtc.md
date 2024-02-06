@@ -3,10 +3,9 @@ menu_order: 200
 menu_title: Transfer tRBTC
 layout: rsk
 title: 'Transfer tRBTC from one account to another'
-description: ''
+description: 'Learn how to transfer RBTC between accounts'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
-
 So far, you have not made any transactions from your address. The transactions that you see when you view the address in the block explorer were made from other addresses (in this case, a couple of Testnet faucets). Now, it’s time for you to initiate your own transactions!
 
 Watch this short video demonstrating **how to transfer tRBTC from one account to another**.

@@ -3,10 +3,9 @@ menu_order: 600
 menu_title: Integrate with Front-end Applications
 layout: rsk
 title: 'Integrate with Front-end Applications'
-description: ''
+description: 'Learn how to integrate your Rootstock smart contract with front-end applications'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
-
 ### Connecting Smart Contracts with Web Interfaces Using Ethers.js
 
 Creating a user-friendly web interface for smart contracts on the Rootstock network can significantly enhance user interaction. Here, we'll focus on using ethers.js, a popular Ethereum library, for connecting your smart contracts to a web front-end.
@@ -56,6 +55,7 @@ npm install http-server
 
 </html>
 ```
+
 ### Import Ethers:
 
 - Import the Ethers library to interact with the wallet to the network.
@@ -93,7 +93,6 @@ npm install http-server
 ### Create a JavaScript File:
 
 - Create a JavaScript file with the name `index.js`.
-
 - Create the function to wait until the DOM is loaded, instance the HTML elements (buttons and divs), and declare some variables
 
 ```js
@@ -134,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 ```
 
-
 - Call the fetchABI function that loads the ABI and connects the wallet to the network
 
 ```js
@@ -164,7 +162,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     })});
 ```
-
 
 - Add a function responding to the click event on the get balance button.
 
