@@ -6,10 +6,11 @@ title: "Rootstock Workshop: Pre-requisites"
 tags: rootstock, workshop, pre-requisites
 description: "Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
 ---
-Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
+Welcome to the Rootstock Workshop Prerequisite Page! Whether you're here to dive into the world of Rootstock tools for the first time or to ensure you have all the necessary setup before advancing your existing projects, you're in the right place. This page is your guide to starting, outlining all the prerequisites needed to install and use any Rootstock tool effectively.
 
-Some workshops will require all the following tools, while others may only require a subset of them.
-Each workshop should have a "pre-requisites" section and specify which ones are which.
+We aim to make your preparation process as smooth as possible, ensuring everything is in place to work efficiently and easily. We've compiled essential information to kickstart your journey from system requirements and software dependencies to preliminary knowledge and resources.
+
+So, let's get you set up and ready to explore the full potential of Rootstock tools.
 
 ## Operating system
 
