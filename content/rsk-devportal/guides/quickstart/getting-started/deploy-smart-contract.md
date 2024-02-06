@@ -99,3 +99,43 @@ npx hardhat run --network rskMainnet scripts/deploy.js
     - Currency Symbol (optional): ‘tRBTC’
 
 4. Click "Save" to add the network
+
+### Deploying and Interacting on Rootstock Network
+
+#### Connecting Remix to Rootstock Testnet
+
+1. Open Remix IDE: Go to [Remix IDE](https://remix.ethereum.org/) in your browser.
+
+2. Connect MetaMask to Remix:
+
+    - In Remix, go to the "Deploy & run transactions" plugin.
+
+    - In the "Environment" dropdown, select "Injected Web3."
+    
+    - The remix will connect to MetaMask. Make sure MetaMask is on the Rootstock Testnet network that you configured earlier.
+
+#### Interacting with the Deployed Contract
+
+1. Load Your Deployed Contract:
+
+   - You can load your deployed contract in Remix by entering its address and the ABI.
+
+   - The ABI can be found in your project's build artifacts, or you can compile the contract in Remix to generate it.
+
+   - Paste the contract address and ABI in Remix's "Deployed Contracts" section.
+
+2. Test the Contract:
+
+    - Once the contract is loaded, you can interact with it through Remix.
+
+    - Call its functions, send transactions, and observe the results.
+
+    - Ensure you have enough testnet RBTC in your MetaMask wallet for transaction fees.
+
+3. Monitor Transactions:
+
+    - Use Remix and MetaMask to monitor transaction confirmations and results.
+
+    - You can also use a [Rootstock Testnet explorer](https://explorer.testnet.rsk.co/) to view transaction details and contract interactions.
+
+**Note:** Explore this [GitHub commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/846c60b867cd16541a40e9a57864a869004a0935) to see what your project codebase should look like after this step.

@@ -118,3 +118,5 @@ networks: {
 - For Mainnet, you'll need RBTC, which you can obtain from an exchange. See [Get RBTC using Exchanges](https://dev.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/).
 
 - For Testnet, you can get test RBTC from a Rootstock Testnet faucet: [https://faucet.rsk.co/](https://faucet.rsk.co/)
+
+**Note:** Explore this [GitHub commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/83f32831b14a646c7812752f1b3ba60c19ed7e39) to see what your project codebase should look like after this step.

@@ -63,3 +63,5 @@ You should get a response like below:
 ![Test Success](/assets/img/guides/quickstart/getting-started/test-success.png)
 
 By following these steps, you'll have the necessary testing frameworks installed and be well-prepared to write effective tests for your smart contract.
+
+**Note:** Explore this [GitHub commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/e55761a8438f61038e91bee561d9553ffda52c16) to see what your project codebase should look like after this step.

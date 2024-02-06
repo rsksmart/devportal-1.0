@@ -56,3 +56,5 @@ npx hardhat compile
 This will compile your smart contracts and generate artifacts:
 
 ![Hardhat Compile Success](/assets/img/guides/quickstart/getting-started/compile-success.png)
+
+**Note:** Explore this [GitHub commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/eff6d60a10ba3779d35eb53c4c7c99696dcf283c) to see what your project codebase should look like after this step.
