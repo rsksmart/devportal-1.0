@@ -2,8 +2,8 @@
 menu_order: 400
 menu_title: Setup for workshops
 layout: rsk
-title: "RSK Workshop: Pre-requisites"
-tags: rsk, workshop, pre-requisites
+title: "Rootstock Workshop: Pre-requisites"
+tags: rootstock, workshop, pre-requisites
 description: "Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
 ---
 Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
@@ -180,10 +180,10 @@ You should see a response similar to the following:
 {"jsonrpc":"2.0","id":1,"result":"0xca035"}
 ```
 
-> If this command fails, it is likely that your connection to RSK's public node is impeded in some way, and you should identify and relax any restrictive network firewall or proxy rules.
+> If this command fails, it is likely that your connection to Rootstock's public node is impeded in some way, and you should identify and relax any restrictive network firewall or proxy rules.
 
 The `result` property is the number of the latest block that has been synced.
 Note that this value (`0xca035`) is the block number in hexadecimal (base 16), so the output above indicates that the current block number is `827445` in decimal (base 10).
-This should match the "Best Block" field in the [RSK Testnet Stats](https://stats.testnet.rsk.co/) site.
+This should match the "Best Block" field in the [Rootstock Testnet Stats](https://stats.testnet.rsk.co/) site.
 
 ![](img/stats-testnet-block-number.png)
