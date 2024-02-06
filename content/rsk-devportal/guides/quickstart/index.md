@@ -24,7 +24,7 @@ Let’s dive in!
             <a href="/guides/quickstart/overview/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
@@ -47,7 +47,7 @@ Let’s dive in!
             <a href="/guides/quickstart/browser/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
@@ -70,7 +70,7 @@ Let’s dive in!
             <a href="/guides/quickstart/transactions/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
@@ -93,7 +93,7 @@ Let’s dive in!
             <a href="/guides/quickstart/getting-started/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rsk_logo.svg" alt="rsk icon">
+                        <img src="/assets/img/courses/rootstock-logo.png" alt="rootstock icon">
                     </div>
                 </div>
             </a>
