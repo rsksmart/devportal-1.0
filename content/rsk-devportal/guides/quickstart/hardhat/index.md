@@ -17,8 +17,9 @@ Whether you have experience with other Web3 development tools or are just steppi
 
 This guide enables Web2 developers to get up to speed on Smart contracts and deployment. It focuses on the Rootstock network's unique features and procedures. It aims to provide an understanding of how to build on the Rootstock platform, offering foundational insights into blockchain technology and its practical applications in Web3 development with Hardhat.
 
-Already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to [section 2](/guides/quickstart/hardhat/set-up-environment/) in this guide to configure your Hardhat project for the Rootstock network.
-To begin following this guide, clone the [GitHub](https://github.com/jesus-iov/rootstock-quick-start-guide) repository for the full project code and necessary installations.
+Already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to [Setting up your environment](/guides/quickstart/hardhat/set-up-environment/) in this guide to configure your Hardhat project for the Rootstock network.
+
+We've created a [GitHub repository](https://github.com/jesus-iov/rootstock-quick-start-guide) that fully explains this project and includes all required installations. Each commit in the repository represents a significant step in the project development. To explore the project at various stages, view the commit history and click on the commit corresponding to the stage you're interested in. Additionally, we'll reference the commits after each stage within this guide for easy access and reference.
 
 Let's dive in!
 

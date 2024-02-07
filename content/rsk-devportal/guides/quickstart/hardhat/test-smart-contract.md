@@ -6,9 +6,9 @@ title: 'Test Smart Contract'
 description: 'Learn how to test your Rootstock smart contract'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
 ---
-### Testing the Contract
+## Testing the Contract
 
-#### Installing Testing Dependencies Mocha and Chai
+### Installing Testing Dependencies Mocha and Chai
 
 Before writing tests for your token contract, ensure that you have the required testing dependencies installed in your project.
 
@@ -18,7 +18,7 @@ npm install --save-dev mocha chai@4.2.0
 
 Mocha is a feature-rich JavaScript test framework running on Node.js, making asynchronous testing simple and fun. Chai is an assertion library for Node and the browser that can be delightfully paired with any JavaScript testing framework.
 
-#### Create the Test Directory
+### Create the Test Directory
 
 If your project doesn't have a test directory yet, create one. In your project's root directory, run mkdir test in the terminal or command prompt. This is where you will store all your test files.
 
@@ -26,7 +26,7 @@ If your project doesn't have a test directory yet, create one. In your project's
 mkdir test
 ```
 
-#### Create a New Test File
+### Create a New Test File
 
 Create a new file for testing your token contract inside the test directory. For instance, name it **MyToken.test.js**.
 Write tests for your token contract in this file using Mocha and Chai. Here's a basic test example:
@@ -49,7 +49,7 @@ describe("MyToken", function () {
 });
 ```
 
-#### Run the Tests
+### Run the Tests
 
 To execute your tests, run npx hardhat test in your project's root directory. This will run your written tests, confirming that your contract operates as intended.
 
@@ -63,4 +63,4 @@ You should get a response like below:
 
 By following these steps, you'll have the necessary testing frameworks installed and be well-prepared to write effective tests for your smart contract.
 
-**Note:** Explore this [GitHub commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/e55761a8438f61038e91bee561d9553ffda52c16) to see what your project codebase should look like after this step.
+**Github Commit:** To examine the completed code for this section and compare your work, visit our GitHub repository: [View Commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/e55761a8438f61038e91bee561d9553ffda52c16). This link directs you to the specific commit with the updates made in this section.
