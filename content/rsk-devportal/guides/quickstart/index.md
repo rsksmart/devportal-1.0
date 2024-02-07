@@ -10,8 +10,6 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, m
 
 Welcome to the Rootstock quickstart guide!
 
-![Quick Start Banner](/assets/img/guides/quickstart/quick-start-banner.jpg)
-
 Here you’ll get a whirlwind introduction to Rootstock, how to interact with Rootstock in your web browser, how to look at Rootstock transactions.
 Once that is done, we will even develop and deploy your very first smart contract to the Rootstock network.
 
