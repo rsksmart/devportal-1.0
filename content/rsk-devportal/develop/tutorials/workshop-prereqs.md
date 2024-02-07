@@ -2,11 +2,11 @@
 menu_order: 400
 menu_title: Setup for workshops
 layout: rsk
-title: "Rootstock Workshop: Pre-requisites"
+title: "Rootstock Workshop Prerequisite"
 tags: rootstock, workshop, pre-requisites
 description: "Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
 ---
-Welcome to the Rootstock Workshop Prerequisite Page! Whether you're here to dive into the world of Rootstock tools for the first time or to ensure you have all the necessary setup before advancing your existing projects, you're in the right place. This page is your guide to starting, outlining all the prerequisites needed to install and use any Rootstock tool effectively.
+Welcome to the Rootstock Workshop Prerequisite! Whether you're here to dive into the world of Rootstock tools for the first time or to ensure you have all the necessary setup before advancing your existing projects, you're in the right place. This page is your guide to starting, outlining all the prerequisites needed to install and use any Rootstock tool effectively.
 
 We aim to make your preparation process as smooth as possible, ensuring everything is in place to work efficiently and easily. We've compiled essential information to kickstart your journey from system requirements and software dependencies to preliminary knowledge and resources.
 
@@ -78,15 +78,6 @@ sdk list java | grep installed
 sdk use java 8.0.242.j9-adpt
 java -version
 
-```
-
-## Mnemonics
-
-[Mnemonics](https://www.npmjs.com/package/mnemonics) is a package that helps to generate BIP39 mnemonics that are used in creating seed phrases.
-You can install it using the following command:
-
-```shell
-npm install mnemonics
 ```
 
 ## OpenZeppelin CLI
