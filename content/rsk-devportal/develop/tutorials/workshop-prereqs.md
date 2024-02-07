@@ -29,7 +29,7 @@ cURL is a command line tool that enables data exchange between a device and a se
 
 ## Code editor
 
-To make it quick and easy to create and edit project files, you need a code editor—preferably one that has support for syntax highlighting for both Solidity and Javascript
+To make it quick and easy to create and edit project files, you need a code editor—preferably one that has support for syntax highlighting for both Solidity and Javascript.
 
 - [VS Code](https://code.visualstudio.com) is a good choice if you don't already have one
 
