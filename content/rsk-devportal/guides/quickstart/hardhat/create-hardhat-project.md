@@ -1,12 +1,11 @@
 ---
 menu_order: 100
-menu_title: Set Up Environment
+menu_title: Create Hardhat Project
 layout: rsk
-title: 'Set Up Environment'
+title: 'Create Hardhat Project'
 description: 'Learn how to set up your environment for development using Hardhat'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
-
 ## Creating a Hardhat Project
 
 ### Creating a New Directory for Your Project

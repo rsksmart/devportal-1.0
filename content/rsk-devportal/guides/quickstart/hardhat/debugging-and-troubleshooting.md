@@ -1,5 +1,5 @@
 ---
-menu_order: 500
+menu_order: 700
 menu_title: Debugging and Troubleshooting
 layout: rsk
 title: 'Debugging and Troubleshooting Tips'
