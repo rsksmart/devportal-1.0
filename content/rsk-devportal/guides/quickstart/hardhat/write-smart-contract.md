@@ -6,9 +6,10 @@ title: 'Write a Smart Contract'
 description: 'Learn how to write a smart contract on the Rootstock network'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
-### Create a Smart Contract
 
-We delve into creating a smart contract utilizing the [OpenZeppelin library](https://www.openzeppelin.com/contracts). OpenZeppelin is widely chosen for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
+Let's delve into creating a smart contract utilizing the [OpenZeppelin library](https://www.openzeppelin.com/contracts). 
+
+OpenZeppelin is widely chosen for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
 
 ### Install OpenZeppelin Contracts
 
@@ -18,7 +19,7 @@ Run the following command to install OpenZeppelin's library of reusable smart co
 npm install @openzeppelin/contracts
 ```
 
-### Create the Contracts Directory
+#### Create the Contracts Directory
 
 If your project does not already have a contracts directory, create it in your project's root directory. You can `mkdir` contracts in your terminal or command prompt.
 
@@ -26,7 +27,7 @@ If your project does not already have a contracts directory, create it in your p
 mkdir contracts
 ```
 
-### Create Your Token Contract
+#### Create Your Token Contract
 
 Create a new file for your token contract inside the contracts directory, for example, **MyToken.sol.** Use OpenZeppelin's ERC20 standard implementation in your contract. Here's a basic example:
 
@@ -42,10 +43,9 @@ contract MyToken is ERC20 {
     }
 }
 ```
-
 This contract defines an ERC20 token named "MyToken" with the symbol "MTK."
 
-### Builde the Contract
+#### Building the Contract
 
 Run npx hardhat compile in your project directory.
 

@@ -33,13 +33,26 @@ Whether you have experience with other Web3 development tools or are just get st
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content"><a href="/guides/quickstart/hardhat/set-up-environment/">
+<div class="content"><a href="/guides/quickstart/hardhat/create-hardhat-project/">
             <div class="content-container">
-              <div class="card-title"><h2 class="zg-text-bg bg-yellow">Setup Environment</h2><span class="zg-label ml-1 bg-yellow">02</span></div> 
-                <p class="card-desc">Learn how to set up your environment for development using Hardhat on Rootstock</p>
+              <div class="card-title"><h2 class="zg-text-bg bg-yellow">Create Hardhat Project</h2><span class="zg-label ml-1 bg-yellow">02</span></div> 
+                <p class="card-desc">Learn how to set up your environment for development using Hardhat</p>
             </div>
-            </a><div class="btn-container"><a href="/guides/quickstart/hardhat/set-up-environment/">
-                </a><a class="green" href="/guides/quickstart/hardhat/set-up-environment/">Setup Environment</a>
+            </a><div class="btn-container"><a href="/guides/quickstart/hardhat/create-hardhat-project/">
+                </a><a class="green" href="/guides/quickstart/hardhat/create-hardhat-project/">Setup Environment</a>
+            </div>
+            </div>
+        </div>
+        </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+<div class="content"><a href="/guides/quickstart/hardhat/configure-hardhat/">
+            <div class="content-container">
+               <div class="card-title"><h2 class="zg-text-bg bg-yellow">Configure Hardhat for Rootstock</h2><span class="zg-label ml-1 bg-yellow">08</span></div> 
+                <p class="card-desc">Learn how to configure your Hardhat project for development on Rootstock testnet and mainnet.</p>
+            </div>
+            </a><div class="btn-container"><a href="/guides/quickstart/hardhat/configure-hardhat/">
+                </a><a class="green" href="/guides/quickstart/hardhat/configure-hardhat/">View the libraries</a>
             </div>
             </div>
         </div>
@@ -83,6 +96,19 @@ Whether you have experience with other Web3 development tools or are just get st
             </div>
         </div>
         </li>
+<li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+<div class="content"><a href="/guides/quickstart/hardhat/integrate-frontend/">
+            <div class="content-container">
+               <div class="card-title"><h2 class="zg-text-bg bg-cyan">Integrate with Frontend</h2><span class="zg-label ml-1 bg-cyan">07</span></div> 
+                <p class="card-desc">Learn how to integrate your smart contract with a front-end application.</p>
+            </div>
+            </a><div class="btn-container"><a href="/guides/quickstart/hardhat/integrate-frontend/">
+                </a><a class="green" href="/guides/quickstart/hardhat/integrate-frontend/">Start interacting</a>
+            </div>
+            </div>
+        </div>
+        </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
 <div class="content"><a href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">
@@ -92,32 +118,6 @@ Whether you have experience with other Web3 development tools or are just get st
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">
                 </a><a class="green" href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">Learn how to Debug</a>
-            </div>
-            </div>
-        </div>
-        </li>
-<li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-<div class="content"><a href="/guides/quickstart/hardhat/interact-with-frontend/">
-            <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-cyan">Interact with the Frontend</h2><span class="zg-label ml-1 bg-cyan">07</span></div> 
-                <p class="card-desc">Learn how to integrate your smart contract with a front-end application.</p>
-            </div>
-            </a><div class="btn-container"><a href="/guides/quickstart/hardhat/interact-with-frontend/">
-                </a><a class="green" href="/guides/quickstart/hardhat/interact-with-frontend/">Start interacting</a>
-            </div>
-            </div>
-        </div>
-        </li>
-<li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-<div class="content"><a href="/guides/quickstart/hardhat/development-libraries/">
-            <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-yellow">Web3 Dev Libraries</h2><span class="zg-label ml-1 bg-yellow">08</span></div> 
-                <p class="card-desc">Explore the web3 development libraries used in this guide and other alternatives.</p>
-            </div>
-            </a><div class="btn-container"><a href="/guides/quickstart/hardhat/development-libraries/">
-                </a><a class="green" href="/guides/quickstart/hardhat/development-libraries/">View the libraries</a>
             </div>
             </div>
         </div>
