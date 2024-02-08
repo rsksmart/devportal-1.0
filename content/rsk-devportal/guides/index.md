@@ -4,8 +4,8 @@ title: Guides on Rootstock
 tags: guide, rsk
 description: "View tutorials, user and integration guides, workshops on Rootstock"
 menu_order: 5
-menu_title: About
-section_title: Guides on Rootstock
+menu_title: Overview - Guides on Rootstock
+section_title: Guides
 ---
 
 <div class="features-list">
