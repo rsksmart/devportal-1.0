@@ -114,7 +114,7 @@ Whether you have experience with other Web3 development tools or are just get st
 <div class="content"><a href="/guides/quickstart/hardhat/development-libraries/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg bg-yellow">Web3 Dev Libraries</h2><span class="zg-label ml-1 bg-yellow">08</span></div> 
-                <p class="card-desc">>Explore the web3 development libraries used in this guide and other alternatives.</p>
+                <p class="card-desc">Explore the web3 development libraries used in this guide and other alternatives.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/development-libraries/">
                 </a><a class="green" href="/guides/quickstart/hardhat/development-libraries/">View the libraries</a>
