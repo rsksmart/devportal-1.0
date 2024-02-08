@@ -48,7 +48,7 @@ Whether you have experience with other Web3 development tools or are just get st
         <div class="feature-card">
 <div class="content"><a href="/guides/quickstart/hardhat/configure-hardhat/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-yellow">Configure Hardhat for Rootstock</h2><span class="zg-label ml-1 bg-yellow">08</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-yellow">Configure Hardhat for Rootstock</h2><span class="zg-label ml-1 bg-yellow">03</span></div> 
                 <p class="card-desc">Learn how to configure your Hardhat project for development on Rootstock testnet and mainnet.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/configure-hardhat/">
@@ -61,7 +61,7 @@ Whether you have experience with other Web3 development tools or are just get st
         <div class="feature-card">
 <div class="content two-line-title-content"><a href="/guides/quickstart/hardhat/write-smart-contract/">
             <div class="content-container">
-            <div class="card-title"><h2 class="zg-text-bg bg-purple">Write Smart Contracts</h2><span class="zg-label ml-1 bg-purple">03</span></div>
+            <div class="card-title"><h2 class="zg-text-bg bg-purple">Write Smart Contracts</h2><span class="zg-label ml-1 bg-purple">04</span></div>
                 <p class="card-desc">Learn how to create a smart contract on the Rootstock network</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/write-smart-contract/">
@@ -74,7 +74,7 @@ Whether you have experience with other Web3 development tools or are just get st
         <div class="feature-card">
 <div class="content"><a href="/guides/quickstart/hardhat/test-smart-contract/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-pink">Test Smart Contracts</h2><span class="zg-label ml-1 bg-pink">04</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-pink">Test Smart Contracts</h2><span class="zg-label ml-1 bg-pink">05</span></div> 
                 <p class="card-desc">Learn how to test your smart contract to ensure it's working as expected.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/test-smart-contract/">
@@ -87,7 +87,7 @@ Whether you have experience with other Web3 development tools or are just get st
         <div class="feature-card">
 <div class="content"><a href="/guides/quickstart/hardhat/deploy-smart-contract/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-green">Deploy Smart Contracts</h2><span class="zg-label ml-1 bg-green">05</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-green">Deploy Smart Contracts</h2><span class="zg-label ml-1 bg-green">06</span></div> 
                 <p class="card-desc">Learn how to deploy your smart contract on your local environment</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/deploy-smart-contract/">
@@ -113,7 +113,7 @@ Whether you have experience with other Web3 development tools or are just get st
         <div class="feature-card">
 <div class="content"><a href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-cyan">Debugging and Troubleshooting Tips</h2><span class="zg-label ml-1 bg-cyan">06</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-cyan">Debugging and Troubleshooting Tips</h2><span class="zg-label ml-1 bg-cyan">08</span></div> 
                 <p class="card-desc">Learn about the common issues you can come across while building following this guide and how you can solve them.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/debugging-and-troubleshooting/">
