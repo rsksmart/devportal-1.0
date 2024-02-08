@@ -5,7 +5,7 @@ tags: guide, rsk
 description: "View tutorials, user and integration guides, workshops on Rootstock"
 menu_order: 5
 menu_title: About
-section_title: Guides
+section_title: Guides on Rootstock
 ---
 
 <div class="features-list">
@@ -15,7 +15,7 @@ section_title: Guides
 <div class="content"><a href="/guides/quickstart/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg">Quick Start</h2><span class="zg-label ml-1">01</span></div> 
-                <p class="card-desc">Learn about Rootstock blockchain, how to view transaction, setup wallets, deploy a smart contract using Hardhat, and many more.</p>
+                <p class="card-desc">Learn about Rootstock blockchain, how to view transactions, setup wallets, deploy a smart contract using Hardhat, and many more.</p>
             </div>
             </a><div class="btn-container "><a href="/guides/quickstart/">
                 </a><a class="green" href="/guides/quickstart/">Get Started</a>
@@ -118,7 +118,7 @@ section_title: Guides
         <div class="feature-card">
 <div class="content"><a href="/guides/flyover/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-orange">Flyover Protocol User Guide</h2><span class="zg-label ml-1 bg-yellow">09</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-orange">Flyover Protocol User Guide</h2><span class="zg-label ml-1 bg-orange">09</span></div> 
                 <p class="card-desc">Learn how to use the Flyover dApp.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/flyover/">
@@ -144,7 +144,7 @@ section_title: Guides
         <div class="feature-card">
 <div class="content"><a href="/guides/rif-rollup/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-yellow">RIF Rollup User Guide</h2><span class="zg-label ml-1 bg-yellow">10</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-cyan">RIF Rollup User Guide</h2><span class="zg-label ml-1 bg-cyan">11</span></div> 
                 <p class="card-desc">Learn how to use the RIF Rollup.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/rif-rollup/">
@@ -157,7 +157,7 @@ section_title: Guides
         <div class="feature-card">
 <div class="content"><a href="/rif/wallet/user-guide/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-yellow">RIF Wallet User Guide</h2><span class="zg-label ml-1 bg-yellow">10</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-pink">RIF Wallet User Guide</h2><span class="zg-label ml-1 bg-pink">12</span></div> 
                 <p class="card-desc">Learn how to use the RIF Wallet App</p>
             </div>
             </a><div class="btn-container"><a href="/rif/wallet/user-guide/">
