@@ -1,7 +1,7 @@
 ---
 menu_order: 200
 menu_title: Overview
-title: Overview of the RIF Wallet
+title: RIF Wallet App - Overview
 description: 'RIF Wallet is an open source smart contract wallet which enables businesses to create and deploy fully customizable on-chain wallets'
 tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
