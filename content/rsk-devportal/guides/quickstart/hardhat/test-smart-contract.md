@@ -1,12 +1,11 @@
 ---
-menu_order: 300
+menu_order: 400
 menu_title: Test Smart Contracts
 layout: rsk
 title: 'Test Smart Contracts'
 description: 'Learn how to test your Rootstock smart contract'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
-
 #### Installing Testing Dependencies Mocha and Chai
 
 Before writing tests for your token contract, ensure that you have the required testing dependencies installed in your project.

@@ -1,13 +1,12 @@
 ---
-menu_order: 200
+menu_order: 300
 menu_title: Write a Smart Contract
 layout: rsk
 title: 'Write a Smart Contract'
 description: 'Learn how to write a smart contract on the Rootstock network'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
-
-Let's delve into creating a smart contract utilizing the [OpenZeppelin library](https://www.openzeppelin.com/contracts). 
+Let's delve into creating a smart contract utilizing the [OpenZeppelin library](https://www.openzeppelin.com/contracts).
 
 OpenZeppelin is widely chosen for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
 
@@ -43,6 +42,7 @@ contract MyToken is ERC20 {
     }
 }
 ```
+
 This contract defines an ERC20 token named "MyToken" with the symbol "MTK."
 
 #### Building the Contract
