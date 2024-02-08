@@ -1,10 +1,10 @@
 ---
 menu_order: 200
-menu_title: Create a Smart Contract
+menu_title: Write a Smart Contract
 layout: rsk
-title: 'Create a Smart Contract'
-description: 'Learn how to create a smart contract on the Rootstock network'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
+title: 'Write a Smart Contract'
+description: 'Learn how to write a smart contract on the Rootstock network'
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
 ### Create a Smart Contract
 

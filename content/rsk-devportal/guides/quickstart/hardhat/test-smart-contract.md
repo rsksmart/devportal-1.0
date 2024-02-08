@@ -1,14 +1,14 @@
 ---
 menu_order: 300
-menu_title: Test Smart Contract
+menu_title: Test Smart Contracts
 layout: rsk
-title: 'Test Smart Contract'
+title: 'Test Smart Contracts'
 description: 'Learn how to test your Rootstock smart contract'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
-## Testing the Contract
 
-### Installing Testing Dependencies Mocha and Chai
+
+## Installing Testing Dependencies Mocha and Chai
 
 Before writing tests for your token contract, ensure that you have the required testing dependencies installed in your project.
 
@@ -18,7 +18,7 @@ npm install --save-dev mocha chai@4.2.0
 
 Mocha is a feature-rich JavaScript test framework running on Node.js, making asynchronous testing simple and fun. Chai is an assertion library for Node and the browser that can be delightfully paired with any JavaScript testing framework.
 
-### Create the Test Directory
+## Create the Test Directory
 
 If your project doesn't have a test directory yet, create one. In your project's root directory, run mkdir test in the terminal or command prompt. This is where you will store all your test files.
 
@@ -26,7 +26,7 @@ If your project doesn't have a test directory yet, create one. In your project's
 mkdir test
 ```
 
-### Create a New Test File
+## Create a New Test File
 
 Create a new file for testing your token contract inside the test directory. For instance, name it **MyToken.test.js**.
 Write tests for your token contract in this file using Mocha and Chai. Here's a basic test example:
@@ -49,7 +49,7 @@ describe("MyToken", function () {
 });
 ```
 
-### Run the Tests
+## Run the Tests
 
 To execute your tests, run npx hardhat test in your project's root directory. This will run your written tests, confirming that your contract operates as intended.
 

@@ -1,11 +1,12 @@
 ---
 menu_order: 100
-menu_title: Set Up Your Environment
+menu_title: Set Up Environment
 layout: rsk
-title: 'Set Up Your Environment'
+title: 'Set Up Environment'
 description: 'Learn how to set up your environment for development on Rootstock'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
+
 ## Creating a Hardhat Project
 
 ### Creating a New Directory for Your Project

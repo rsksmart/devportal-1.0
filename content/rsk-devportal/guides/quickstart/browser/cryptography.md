@@ -4,7 +4,7 @@ menu_title: Cryptography
 layout: rsk
 title: 'Cryptography in Crypto Wallets'
 description: 'Learn about how cryptographic security is implemented in crypto wallets'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 ## Private Keys and Public Keys
 

@@ -4,10 +4,10 @@ menu_title: Deploy Smart Contract
 layout: rsk
 title: 'Deploy Smart Contract'
 description: 'Learn how to deploy your Rootstock smart contract on your local environment and Rootstock Testnet and Mainnet'
-tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, blockchain
+tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
 
-### Create the Scripts Directory
+## Create the Scripts Directory
 
 If your project doesn't have a script directory yet, create one. Run mkdir scripts in the terminal or command prompt in your project's root directory. This is where you will store all your script files.
 
@@ -15,7 +15,7 @@ If your project doesn't have a script directory yet, create one. Run mkdir scrip
 mkdir scripts
 ```
 
-### Create a New Deploy File
+## Create a New Deploy File
 
 Create a new deployment script in the scripts directory, e.g., **deploy.js**.
 Write the script to deploy your token:

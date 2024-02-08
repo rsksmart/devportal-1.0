@@ -11,7 +11,7 @@ Rootstock’s full technology stack is built on top of Bitcoin:
 From Rootstock smart contracts to the Rootstock Infrastructure Framework.
 The stack is designed to create a more fair and inclusive financial system.
 
-![Rootstock Stack](/assets/img/home/rsk-tech-stack-high-level.png)
+> See [The Stack](/the-stack/)
 
 Bitcoin, is a store and transfer of value.
 The blockchain is secure because miners with high infrastructure and energy costs create new blocks to be added to the blockchain every 10 minutes.
