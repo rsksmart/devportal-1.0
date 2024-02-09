@@ -1,6 +1,6 @@
 ---
 menu_order: 300
-section_title: Overview
+section_title: Rootstock Blockchain
 menu_title: Overview - Rootstock Blockchain
 layout: rsk
 title: 'Rootstock Blockchain'

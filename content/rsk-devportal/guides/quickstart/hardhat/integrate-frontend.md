@@ -5,33 +5,29 @@ layout: rsk
 title: 'Integrate with Front-end Applications'
 description: 'Learn how to integrate your Rootstock smart contract with front-end applications'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
+render_features: 'collapsible'
 ---
 Creating a user-friendly web interface for smart contracts on the Rootstock network can significantly enhance user interaction. Here, we'll focus on using ethers.js, a popular Ethereum library, for connecting your smart contracts to a web front-end.
 
 ## Project Setup and File Creation for Rootstock Network
 
-### Create a New Project Folder:
-
-Make a new folder for your Rootstock project: mkdir frontend, and navigate into it
-
-```shell
-mkdir frontend
-cd frontend
+[](#top "collapsible")
+- Create a New Project Folder:
+  Make a new folder for your Rootstock project: mkdir frontend, and navigate into it
+  ```shell
+  mkdir frontend
+  cd frontend
 ```
+- Initialize a Node.js Project:
+  ```shell
+  npm init -y
+  ```
+- Install ethers.js:
+  ```shell
+  npm install http-server
+  ```
 
-### Initialize a Node.js Project:
-
-```shell
-npm init -y
-```
-
-### Install ethers.js:
-
-```shell
-npm install http-server
-```
-
-## Creating HTML and JavaScript Files for Rootstock Smart Contract Interaction
+## Create HTML and JavaScript Files for Rootstock Smart Contract Interaction
 
 ### Create an HTML File:
 

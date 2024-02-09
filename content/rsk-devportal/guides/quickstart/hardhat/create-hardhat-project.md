@@ -5,35 +5,31 @@ layout: rsk
 title: 'Create Hardhat Project'
 description: 'Learn how to set up your environment for development using Hardhat'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
+render_features: 'collapsible'
 ---
-## Creating a Hardhat Project
+## Create a Hardhat Project
 
-### Creating a New Directory for Your Project
+To create a hardhat project:
 
-Before installing Hardhat, create a new directory for your project and navigate into the directory.
+[](#top "collapsible")
+- Create a new directory for your project:
+    - Before installing Hardhat, create a new directory for your project and navigate into the directory.
+    ```shell
+    mkdir your_project_name
+    cd your_project_name
+    ```
+- Initialize a Node.js project:
+    - This command creates a `package.json file` with default values.
+    ```shell
+    npm init -y
+    ```
+- Install Hardhat:
+    - This command adds Hardhat as a development dependency in your project.
+    ```shell
+    npm install --save-dev hardhat@2.19.4
+    ```
 
-```shell
-mkdir your_project_name
- cd your_project_name
-```
-
-### Initializing a Node.js Project:
-
-This command creates a `package.json file` with default values.
-
-```shell
-npm init -y
-```
-
-### Installing Hardhat:
-
-This command adds Hardhat as a development dependency in your project.
-
-```shell
-npm install --save-dev hardhat@2.19.4
-```
-
-### Setting Up the Hardhat Project
+### Set Up the Hardhat Project
 
 After installing, run `npx hardhat` in your project directory. You'll be presented with a few options. Select **"Create an empty hardhat.config.js"** if you want to start from scratch, or choose one of the sample projects to have some boilerplate code to start with.
 
