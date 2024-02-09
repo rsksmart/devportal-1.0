@@ -12,11 +12,13 @@ render_features: 'collapsible'
 To create a hardhat project:
 
 [](#top "collapsible")
-- Create a new directory for your project:
-    - Before installing Hardhat, create a new directory for your project and navigate into the directory.
+- Clone the repository for your project:
+    - Open your terminal or command prompt.
+    - Navigate to the directory where you want to clone the repository with `cd your-directory-path`.
+    - Use the git clone command followed by the repository's URL:
     ```shell
-    mkdir your_project_name
-    cd your_project_name
+   git clone https://github.com/zdaodu-iov/rootstock-quick-start-guide
+   cd rootstock-quick-start-guide
     ```
 - Initialize a Node.js project:
     - This command creates a `package.json file` with default values.
@@ -27,6 +29,7 @@ To create a hardhat project:
     - This command adds Hardhat as a development dependency in your project.
     ```shell
     npm install --save-dev hardhat@2.19.4
+    
     ```
 
 ### Set Up the Hardhat Project
@@ -35,6 +38,28 @@ After installing, run `npx hardhat` in your project directory. You'll be present
 
 ![Hardhat Installation Success](/assets/img/guides/quickstart/hardhat/install-success.png)
 
-Once setup is complete, you can verify Hardhat is installed correctly by running npx hardhat again. This time, it should display a help message with available tasks, indicating that Hardhat is installed and ready to use.
+### Configure Network Settings in hardhat.config.js
 
-**Github Commit:** To examine the completed code for this section and compare your work, visit our GitHub repository: [View Commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/eee29a35cca5bda9727db761ed4525af391e1a9f). This link directs you to the specific commit with the updates made in this section.
+Open or create the `hardhat.config.js` file in your project's root directory. Add configurations for Rootstock Mainnet and Testnet. Here's an example:
+
+```js
+// Hardhat configuration
+module.exports = {
+  solidity: "0.8.20",
+  networks: {
+    rskMainnet: {
+      url: "https://public-node.rsk.co",
+      chainId: 30,
+      gasPrice: 60000000,
+    },
+    rskTestnet: {
+      url: "https://public-node.testnet.rsk.co",
+      chainId: 31,
+      gasPrice: 60000000,
+    }
+  }
+};
+```
+
+Once setup is complete, you can verify Hardhat is installed correctly by running `npx hardhat` again. This time, it should display a help message with available tasks, indicating that Hardhat is installed and ready to use.
+
