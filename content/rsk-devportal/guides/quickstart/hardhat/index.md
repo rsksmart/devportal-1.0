@@ -12,9 +12,10 @@ Welcome to the world of Web3 development using Hardhat!
 
 This guide is designed to smoothly transition Web2 developers into the Web3 ecosystem using the Rootstock network, a unique platform that is EVM (Ethereum Virtual Machine) compatible with Bitcoin's proven security. If you’re a web3 developer, this guide also provides a demo application for deploying smart contracts on the Rootstock platform.
 
-As you embark on this journey, the focus is on leveraging the Rootstock network to its fullest potential, showcasing its EVM compatibility, robust decentralization backed by Bitcoin, and notably lower transaction fees.
+> Are you already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to the section on [Setting up your environment](/guides/quickstart/hardhat/create-hardhat-project/) in this guide to configure a Hardhat project for the Rootstock network.
 
-Whether you have experience with other Web3 development tools or are just get started with smart contract development, this guide will equip you with the essential knowledge to navigate and utilize Hardhat on the Rootstock network.
+> - We made a [GitHub repository](https://github.com/zdaodu-iov/rootstock-quick-start-guide) for this project that has everything you need, including how to set it up. Each stages shows each step of setting up the project. To see different parts of the project, first copy the project to your computer. Then, go through the steps from the beginning to the end. Remember, you can use the file links at each step to try the project yourself.
+
 
 <div class="features-list">
     <ul id="card-list" class="row">
