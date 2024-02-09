@@ -8,8 +8,6 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, bloc
 render_features: 'collapsible'
 ---
 
-### Setting Up Accounts
-
 To deploy contracts, you'll need Rootstock-compatible accounts. You can use existing accounts or create new ones.
 
 > First, set up a wallet and get a private key, see the section on [Using Rootstock in the Browser](https://dev.rootstock.io/guides/quickstart/browser/#private-keys-and-public-keys).

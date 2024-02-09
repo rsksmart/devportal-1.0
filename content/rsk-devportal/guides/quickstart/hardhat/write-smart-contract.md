@@ -11,8 +11,6 @@ Let's delve into creating a smart contract utilizing the [OpenZeppelin library](
 
 OpenZeppelin is widely chosen for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
 
-### Create a Smart Contract
-
 To create your smart contract:
 
 [](#top "collapsible")
@@ -41,15 +39,10 @@ To create your smart contract:
     }
     ```
     This contract defines an ERC20 token named "MyToken" with the symbol "MTK."
-
-### Build the Contract
-
-Run npx hardhat compile in your project directory.
-
-```shell
-npx hardhat compile
-```
-
-This will compile your smart contracts and generate artifacts:
-
-![Hardhat Compile Success](/assets/img/guides/quickstart/getting-started/compile-success.png)
+- Build the Contract
+  - Run npx hardhat compile in your project directory.
+    ```shell
+    npx hardhat compile
+    ```
+    This will compile your smart contracts and generate artifacts:
+    ![Hardhat Compile Success](/assets/img/guides/quickstart/getting-started/compile-success.png)

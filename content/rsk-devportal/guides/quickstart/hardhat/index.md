@@ -14,7 +14,7 @@ This guide is designed to smoothly transition Web2 developers into the Web3 ecos
 
 > Are you already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to the section on [Configuring Hardhat for Rootstock](/guides/quickstart/hardhat/configure-hardhat/) in this guide to configure your Hardhat project for the Rootstock network.
 
-> To begin following this guide, clone the [starting repository](https://github.com/jesus-iov/rootstock-quick-start-guide). To see the final state of the project, you can view the [final branch](https://github.com/jesus-iov/rootstock-quick-start-guide/tree/feat/complete) and use it to compare yours. Each commit message in the final branch highlights what your project should look like at each stage of following this guide.
+> To begin following this guide, clone the [starting repository](https://github.com/jesus-iov/rootstock-quick-start-guide). To see the final state of the project, you can view the [final branch](https://github.com/jesus-iov/rootstock-quick-start-guide/tree/feat/complete) and use it to compare yours.
 
 
 <div class="features-list">
