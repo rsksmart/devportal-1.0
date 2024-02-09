@@ -12,28 +12,27 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
 ## Project Setup and File Creation for Rootstock Network
 
 [](#top "collapsible")
-- Create a New Project Folder:
-  Make a new folder for your Rootstock project: mkdir frontend, and navigate into it
+- Create a New Project Folder
+  - Make a new folder for your Rootstock project: mkdir frontend, and navigate into it
   ```shell
   mkdir frontend
   cd frontend
-```
-- Initialize a Node.js Project:
+  ```
+- Initialize a Node.js Project
   ```shell
   npm init -y
   ```
-- Install ethers.js:
+- Install ethers.js
   ```shell
   npm install http-server
   ```
 
 ## Create HTML and JavaScript Files for Rootstock Smart Contract Interaction
 
-### Create an HTML File:
+### Create an HTML File
 
-1. Create an HTML file with name index.html.
-2. Write the basic HTML structure.
-
+[](#top "collapsible")
+1. Create an HTML file with name index.html and write the basic HTML structure.
    ```html
    <!DOCTYPE html>
    <html lang="en">
@@ -50,21 +49,22 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
    </html>
    ```
 
-### Import Ethers:
+### Import Ethers
 
+[](#top "collapsible")
 - Import the Ethers library to interact with the wallet to the network.
-
-```html
-  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
-```
+  * ```html
+    <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"></script>
+  ```
 
 ### Create HTML elements inside the body
 
-1. Create a button to trigger the function for connecting the wallet.
-2. Create a button to trigger the function to get balance.
-3. Create a div element to show the answer for the address connected.
-4. Create a div element to show the answer for wallet balance.
-
+[](#top "collapsible")
+- Create HTML body elements
+  1. Create a button to trigger the function for connecting the wallet.
+  2. Create a button to trigger the function to get balance.
+  3. Create a div element to show the answer for the address connected.
+  4. Create a div element to show the answer for wallet balance.
    ```html
    <body>
      <div>
@@ -76,33 +76,33 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
      </div>
    </body>
    ```
-5. Finally, import the javascript library that we will create in a further step
-
+- Import javascript file
+  - Finally, import the javascript library that we will create in a further step:
    ```html
      <script src="app.js"></script>
    </body>
    ```
 
-### Create a JavaScript File:
+### Create a JavaScript File
 
-1. Create a JavaScript file with the name `index.js`.
-2. Create the function to wait until the DOM is loaded, instance the HTML elements (buttons and divs), and declare some variables
+[](#top "collapsible")
+- Create basic javascript function
+  1. Create a JavaScript file with the name `app.js`.
+  2. Create the function to wait until the DOM is loaded, instance the HTML elements (buttons and divs), and declare some variables
+    ```js
+    document.addEventListener('DOMContentLoaded', function () {
+      const connectButton = document.getElementById('connectButton');
+      const getBalanceButton = document.getElementById('getBalanceButton');
+      const walletAddressDiv = document.getElementById('walletAddress');
+      const walletBalanceDiv = document.getElementById('walletBalance');
 
-   ```js
-   document.addEventListener('DOMContentLoaded', function () {
-     const connectButton = document.getElementById('connectButton');
-     const getBalanceButton = document.getElementById('getBalanceButton');
-     const walletAddressDiv = document.getElementById('walletAddress');
-     const walletBalanceDiv = document.getElementById('walletBalance');
-
-     let provider, account, myTokenContract;
-     let contractABI = [];
-     // Replace with your contract's address
-     const contractAddress = '0xa6fb392538BaC56e03a900BFDE22e76C05fb5122';
-   });
-   ```
-3. Add a function that fetches the ABI and stores it in a variable.
-
+      let provider, account, myTokenContract;
+      let contractABI = [];
+      // Replace with your contract's address
+      const contractAddress = '0xa6fb392538BaC56e03a900BFDE22e76C05fb5122';
+    });
+    ```
+- Add a function that fetches the ABI and stores it in a variable.
    ```js
      async function fetchABI() {
        // Place the token file generated after compiling the contracts
@@ -111,8 +111,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
        contractABI = data.abi;
      }
    ```
-4. Add a function that checks the wallet is connected to the Rootstock network.
-
+- Add a function that checks the wallet is connected to the Rootstock network.
    ```js
      async function checkNetwork() {
        const networkId = await window.ethereum.request({ method: 'net_version' });
@@ -123,8 +122,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
        }
      }
    ```
-5. Call the fetchABI function that loads the ABI and connects the wallet to the network
-
+- Call the fetchABI function that loads the ABI and connects the wallet to the network
    ```js
      fetchABI().then(() => {
        // Connect button
@@ -152,8 +150,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
          }
        })});
    ```
-6. Add a function responding to the click event on the get balance button.
-
+- Add a function responding to the click event on the get balance button.
    ```js
        // Get Balance Button
        getBalanceButton.addEventListener('click', async function () {
@@ -163,9 +160,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
          }
        });
    ```
-
-   The complete code of the javascript file should look like:
-
+- The complete code of the javascript file should look like the following:
    ```js
    document.addEventListener('DOMContentLoaded', function () {
      const connectButton = document.getElementById('connectButton');
@@ -231,9 +226,9 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
    });
    ```
 
-## Running the frontend:
+## Run the frontend
 
-Finally, we execute a local web server to test the HTML file using the command.
+Finally, we execute a local web server to test the HTML file using the following command:
 
 ```shell
 npx http-server
@@ -243,4 +238,3 @@ Navigate to the URL [http://127.0.0.1:8080](http://127.0.0.1:8080) to test the c
 
 ![Smart Contract Frontend](/assets/img/guides/quickstart/getting-started/frontend.png)
 
-**Github Commit:** To examine the completed code for this section and compare your work, visit our GitHub repository: [View Commit](https://github.com/jesus-iov/rootstock-quick-start-guide/commit/1e61250ba40c31c5b01869e365fc57bec495457f). This link directs you to the specific commit with the updates made in this section.

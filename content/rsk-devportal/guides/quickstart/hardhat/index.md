@@ -12,9 +12,9 @@ Welcome to the world of Web3 development using Hardhat!
 
 This guide is designed to smoothly transition Web2 developers into the Web3 ecosystem using the Rootstock network, a unique platform that is EVM (Ethereum Virtual Machine) compatible with Bitcoin's proven security. If you’re a web3 developer, this guide also provides a demo application for deploying smart contracts on the Rootstock platform.
 
-> Are you already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to the section on [Setting up your environment](/guides/quickstart/hardhat/create-hardhat-project/) in this guide to configure a Hardhat project for the Rootstock network.
+> Are you already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to the section on [Configuring Hardhat for Rootstock](/guides/quickstart/hardhat/configure-hardhat/) in this guide to configure your Hardhat project for the Rootstock network.
 
-> - We made a [GitHub repository](https://github.com/zdaodu-iov/rootstock-quick-start-guide) for this project that has everything you need, including how to set it up. Each stages shows each step of setting up the project. To see different parts of the project, first copy the project to your computer. Then, go through the steps from the beginning to the end. Remember, you can use the file links at each step to try the project yourself.
+> To begin following this guide, clone the [starting repository](https://github.com/jesus-iov/rootstock-quick-start-guide). To see the final state of the project, you can view the [final branch](https://github.com/jesus-iov/rootstock-quick-start-guide/tree/feat/complete) and use it to compare yours. Each commit message in the final branch highlights what your project should look like at each stage of following this guide.
 
 
 <div class="features-list">
@@ -37,7 +37,7 @@ This guide is designed to smoothly transition Web2 developers into the Web3 ecos
 <div class="content"><a href="/guides/quickstart/hardhat/create-hardhat-project/">
             <div class="content-container">
               <div class="card-title"><h2 class="zg-text-bg bg-yellow">Create Hardhat Project</h2><span class="zg-label ml-1 bg-yellow">02</span></div> 
-                <p class="card-desc">Learn how to set up your environment for development using Hardhat</p>
+                <p class="card-desc">Learn how to set up your environment for development using Hardhat.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/create-hardhat-project/">
                 </a><a class="green" href="/guides/quickstart/hardhat/create-hardhat-project/">Setup Environment</a>
@@ -63,7 +63,7 @@ This guide is designed to smoothly transition Web2 developers into the Web3 ecos
 <div class="content two-line-title-content"><a href="/guides/quickstart/hardhat/write-smart-contract/">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg bg-purple">Write Smart Contracts</h2><span class="zg-label ml-1 bg-purple">04</span></div>
-                <p class="card-desc">Learn how to create a smart contract on the Rootstock network</p>
+                <p class="card-desc">Learn how to create a smart contract on the Rootstock network.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/write-smart-contract/">
                 </a><a class="green" href="/guides/quickstart/hardhat/write-smart-contract/">Get Started</a>
@@ -89,7 +89,7 @@ This guide is designed to smoothly transition Web2 developers into the Web3 ecos
 <div class="content"><a href="/guides/quickstart/hardhat/deploy-smart-contract/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg bg-green">Deploy Smart Contracts</h2><span class="zg-label ml-1 bg-green">06</span></div> 
-                <p class="card-desc">Learn how to deploy your smart contract on your local environment</p>
+                <p class="card-desc">Learn how to deploy your smart contract on your local environment.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/deploy-smart-contract/">
                 </a><a class="green" href="/guides/quickstart/hardhat/deploy-smart-contract/">Start Deployment</a>
