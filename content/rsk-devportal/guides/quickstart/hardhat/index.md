@@ -14,7 +14,7 @@ This guide is designed to smoothly transition Web2 developers into the Web3 ecos
 
 > Are you already familiar with Web3 development and solidity and setting up a Hardhat project? You can skip to the section on [Configuring Hardhat for Rootstock](/guides/quickstart/hardhat/configure-hardhat/) in this guide to configure your Hardhat project for the Rootstock network.
 
-> To begin following this guide, clone the [starting repository](https://github.com/jesus-iov/rootstock-quick-start-guide). To see the final state of the project, you can view the [final branch](https://github.com/jesus-iov/rootstock-quick-start-guide/tree/feat/complete) and use it to compare yours.
+> We have set up a [GitHub repository](https://github.com/jesus-iov/rootstock-quick-start-guide) for this guide, with an initial project state in the [master branch](https://github.com/jesus-iov/rootstock-quick-start-guide/tree/master) and a [final branch](https://github.com/jesus-iov/rootstock-quick-start-guide/tree/feat/complete) with the complete project, including all necessary installations for your reference.
 
 
 <div class="features-list">
@@ -89,7 +89,7 @@ This guide is designed to smoothly transition Web2 developers into the Web3 ecos
 <div class="content"><a href="/guides/quickstart/hardhat/deploy-smart-contract/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg bg-green">Deploy Smart Contracts</h2><span class="zg-label ml-1 bg-green">06</span></div> 
-                <p class="card-desc">Learn how to deploy your smart contract on your local environment.</p>
+                <p class="card-desc">Learn how to deploy your smart contract to your local environment and the Rootstock network.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/quickstart/hardhat/deploy-smart-contract/">
                 </a><a class="green" href="/guides/quickstart/hardhat/deploy-smart-contract/">Start Deployment</a>

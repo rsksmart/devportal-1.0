@@ -5,44 +5,67 @@ layout: rsk
 title: 'Write a Smart Contract'
 description: 'Learn how to write a smart contract on the Rootstock network'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
-render_features: 'collapsible'
 ---
-Let's delve into creating a smart contract utilizing the [OpenZeppelin library](https://www.openzeppelin.com/contracts).
 
-OpenZeppelin is widely chosen for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
+In this section, we'll create a smart contract using the [OpenZeppelin library](https://www.openzeppelin.com/contracts).
+
+OpenZeppelin is widely used for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
+
+### Create Your Smart Contract
 
 To create your smart contract:
 
-[](#top "collapsible")
-- Install OpenZeppelin Contracts
-   * Run the following command to install OpenZeppelin's library of reusable smart contracts.
+#### Step 1: Install OpenZeppelin Contracts
+
+- Run the following command to install OpenZeppelin's library of reusable smart contracts.
     ```shell
     npm install @openzeppelin/contracts
     ```
-- Create the Contracts Directory
-   * If your project does not already have a contracts directory, create it in your project's root directory. You can `mkdir` contracts in your terminal or command prompt.
+
+#### Step 2: Create Your Token Contract
+
+To create your contract:
+
+1. Navigate to the `contracts` directory in the root directory of your project:
     ```shell
-    mkdir contracts
+    cd contracts
     ```
-- Create Your Token Contract
-   * Create a new file for your token contract inside the contracts directory, for example, **MyToken.sol.** Use OpenZeppelin's ERC20 standard implementation in your contract. Here's a basic example:
-    ```s
-    // SPDX-License-Identifier: MIT
-    pragma solidity ^0.8.20;
 
-    import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+2. In the contracts directory, open the `MyToken.sol` file for your token contract:
 
-    contract MyToken is ERC20 {
-        constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
-            _mint(msg.sender, initialSupply);
+    - `MyToken.sol` initial state:
+        ```s
+        // SPDX-License-Identifier: MIT
+        pragma solidity ^0.8.20;
+
+        # TODO: Configure ERC20 token
+
+        ```
+    
+    - To configure an ERC20 token, copy the code snipet below and paste it in your token file or see the [`MyToken.sol` file](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/feat/complete/contracts/MyToken.sol) on GitHub.
+        ```s
+        // SPDX-License-Identifier: MIT
+        pragma solidity ^0.8.20;
+
+        import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+        contract MyToken is ERC20 {
+            constructor(uint256 initialSupply) ERC20("MyToken", "MTK") {
+                _mint(msg.sender, initialSupply);
+            }
         }
-    }
-    ```
-    This contract defines an ERC20 token named "MyToken" with the symbol "MTK."
-- Build the Contract
-  - Run npx hardhat compile in your project directory.
-    ```shell
-    npx hardhat compile
-    ```
-    This will compile your smart contracts and generate artifacts:
-    ![Hardhat Compile Success](/assets/img/guides/quickstart/getting-started/compile-success.png)
+        ```
+
+    This contract defines an ERC20 token named `MyToken` with the symbol `MTK`, using OpenZeppelin's ERC20 standard implementation.
+
+### Build the Contract
+
+To build the contract, run the following command in your project's root directory.
+```shell
+npx hardhat compile
+```
+This will compile your smart contracts and generate artifacts:
+![Hardhat Compile Success](/assets/img/guides/quickstart/hardhat/compile-success.png)
+
+---
+Next, we'll [Test your Smart Contract](/guides/quickstart/hardhat/test-smart-contract/) to ensure it's working as expected.
