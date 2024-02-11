@@ -15,8 +15,6 @@ Thus, the smart contract/dApp development skills that you’re used to will tran
 
 ### Tools
 
-![Rootstock Tools](/assets/img/guides/quickstart/rsk-tools.png)
-
 - [Hardhat](https://hardhat.org/docs) is an Ethereum development environment designed for professionals. It's primarily used in the development of smart contracts for the Ethereum blockchain.
   Refer to the [Hardhat Overview](/tools/hardhat/) for an overview of how it's used on Rootstock.
 
