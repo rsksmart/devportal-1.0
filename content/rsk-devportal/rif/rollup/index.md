@@ -19,7 +19,7 @@ RIF Rollup can be used for the following purposes:
 
 > For a detailed exploration of these use cases, please refer to the [Top 4 Use Cases for Cheaper & Faster Payments](https://rif.technology/content-hub/rif-rollup-explained/).
 
-> To get started in using RIF Rollups, please check out the Starter kit, or see the [RIF Rollup Tutorials]( /guides/rif-rollup/)
+> To get started in using RIF Rollups, please check out the [Starter kit](/rif/rollup/starter-kit/), or see the [RIF Rollup Tutorials]( /guides/rif-rollup/)
 
 ### Credits
 
