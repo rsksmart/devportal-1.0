@@ -21,6 +21,14 @@ RIF Rollup can be used for the following purposes:
 
 > To get started in using RIF Rollups, please check out the Starter kit, or see the [RIF Rollup Tutorials]( /guides/rif-rollup/)
 
+### Credits
+
+- The zkSync platform, a Zero-knowledge Rollup implementation, was created by [Matter Labs - Creators of zkSync](https://matter-labs.io/) in 2020 to improve Ethereum scaling. 
+- The RIF Rollup Codebase, Javascript SDKs, and Rollup Tools like the [RIF Rollup Wallet](https://wallet.testnet.rollup.rif.technology/) and [RIF Rollup Explorer](https://explorer.testnet.rollup.rif.technology/) were forked from the zkSync Lite platform by [Matter Labs](https://matter-labs.io/).
+
+### Contact 
+
+For more information, support, and general inquiry on integrating the RIF Rollup or exploring use cases for your team, [contact us](https://rootstock.io/contact/) or join the [Rootstock Discord Community](https://rootstock.io/discord).
 
 ## Important Links
 
