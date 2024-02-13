@@ -1,7 +1,7 @@
 ---
 menu_order: 600
 section_title: Using the RIF Rollup Block Explorer
-menu_title:  WUsing the RIF Rollup Block Explorer
+menu_title:  Using the RIF Rollup Block Explorer
 layout: rsk
 title:  Using the RIF Rollup Block Explorer
 description: RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology.
