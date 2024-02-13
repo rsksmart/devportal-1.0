@@ -8,7 +8,7 @@ description: RIF Rollup is a trustless protocol for fast and scalable low-cost p
 tags: rif, aggregation, zkSync, rollup, rif-rollup
 ---
 
-RIF Rollup is a trustless protocol for fast, scalable, low-cost payments on Rootstock powered by zkRollup Technology. It is a fork of the Zero Knowledge zkSync Lite (v1) developed by [Matter Labs](https://matter-labs.io/). Its current functionality and scope include low gas transfers of RBTC and ERC20 tokens on the Rootstock network.
+RIF Rollup is a trustless protocol for **fast, scalable, low-cost payments** on Rootstock powered by zkRollup Technology. It is a fork of the Zero Knowledge zkSync Lite (v1) developed by [Matter Labs](https://matter-labs.io/). Its current functionality and scope include low gas transfers of RBTC and ERC20 tokens on the Rootstock network.
 > **Disclaimer:** The RIF Rollup is ONLY available on Testnet now.
 
 ### Use Cases
