@@ -141,13 +141,13 @@ Here are some important links to take note of:
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content"><a href="/rif/rollup/dev-reference/troubleshooting">
+<div class="content"><a href="/rif/wallet/dev-reference/troubleshooting/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg">Troubleshooting and Common Errors</h2><span class="zg-label ml-1">09</span></div> 
                 <p class="card-desc">Find common errors and how to troubleshoot them.</p>
             </div>
-            </a><div class="btn-container "><a href="/rif/rollup/dev-reference/troubleshooting">
-                </a><a class="green" href="/rif/rollup/dev-reference/troubleshooting">Troubleshoot</a>
+            </a><div class="btn-container "><a href="/rif/wallet/dev-reference/troubleshooting/">
+                </a><a class="green" href="/rif/wallet/dev-reference/troubleshooting/">Troubleshoot</a>
             </div>
             </div>
         </div>
