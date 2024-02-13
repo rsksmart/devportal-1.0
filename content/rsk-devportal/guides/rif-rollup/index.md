@@ -28,4 +28,4 @@ Embark on your RIF Rollup journey with these introductory tutorials:
 - **[Withdrawing Funds to RIF Rollup](/guides/rif-rollup/withdraw-funds-rootstock/):** Understand how to securely withdraw your funds from RIF Rollup back to the Rootstock network, ensuring your assets are always accessible.
 - **[Using the RIF Rollup Block Explorer](/guides/rif-rollup/using-rif-rollup-block-explorer/):** Master the use of the RIF Rollup Explorer to monitor transactions and gain insights into the blockchain's activity, enhancing your understanding and navigation of the ecosystem.
 
-These resources offer a seamless learning experience, ensuring you have the knowledge and tools to engage with the RIF Rollup platform effectively. Whether securing assets, participating in transactions, or simply exploring the capabilities of Layer 2 technologies, our guides support your journey at every step.
+These resources offer a seamless learning experience, ensuring you have the knowledge and tools to engage with the RIF Rollup platform effectively. 
