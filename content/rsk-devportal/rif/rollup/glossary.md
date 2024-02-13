@@ -189,7 +189,7 @@ Here is a list of terms used throughout the documentation and their meaning.
    <td>on-chain Data Availability
 
    </td>
-   <td>RThe process whereby, after off-chain transaction processing, a cryptographic proof (zkRollup) summarizing all transaction data is committed to the Rootstock blockchain. This includes a cryptographic hash representing state changes without detailing the transactions themselves, ensuring data availability and verifiability.
+   <td>The process whereby, after off-chain transaction processing, a cryptographic proof (zkRollup) summarizing all transaction data is committed to the Rootstock blockchain. This includes a cryptographic hash representing state changes without detailing the transactions themselves, ensuring data availability and verifiability.
 
    </td>
   </tr>
