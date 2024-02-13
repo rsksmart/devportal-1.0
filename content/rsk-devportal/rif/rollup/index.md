@@ -102,13 +102,13 @@ Here are some important links to take note of:
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content"><a href="/rif/rollup/dev-reference/starter-kit">
+<div class="content"><a href="/rif/rollup/starter-kit">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg bg-green">Starter Kit</h2><span class="zg-label ml-1 bg-green">06</span></div> 
                 <p class="card-desc">This kit comes with everything you need to start using the RIF Rollup inside your applications.</p>
             </div>
-            </a><div class="btn-container"><a href="/rif/rollup/dev-reference/starter-kit">
-                </a><a class="green" href="/rif/rollup/dev-reference/starter-kit">View the Starter Kit</a>
+            </a><div class="btn-container"><a href="/rif/rollup/starter-kit">
+                </a><a class="green" href="/rif/rollup/starter-kit">View the Starter Kit</a>
             </div>
             </div>
         </div>
