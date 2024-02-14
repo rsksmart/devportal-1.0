@@ -9,7 +9,7 @@ layout: rsk
 
 In this section, you will learn about what decentralized exchanges (DEX) are, types of DEXes such as order books (on-chain and off-chain), DEX aggregators, Automated Market Makers (AMMs) and AMM DEXes on Rootstock.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
+![DEXes Banner Image](/assets/img/guides/dex/dex.png)
 
 ## What is a DEX?
 

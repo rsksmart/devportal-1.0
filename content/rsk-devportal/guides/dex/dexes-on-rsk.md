@@ -9,7 +9,7 @@ layout: rsk
 
 In this section, we will explore some of the different DEXes on Rootstock, and how to get started. We'll cover Sovryn, and OKU Trade.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
+![DEXes Banner Image](/assets/img/guides/dex/dex.png)
 
 ## Sovryn
 

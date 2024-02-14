@@ -42,7 +42,7 @@ Watch these short explainer videos:
 
 ## Integration with RSK
 
-![Defiant RSK Integration](/assets/img/solutions/defiant/defiant_rsk.jpg)
+![Defiant RSK Integration](/assets/img/solutions/defiant/defiant-rsk.png)
 
 You can access cryptocurrencies and tokens on the RSK network,
 using local currencies in several Latin American countries,

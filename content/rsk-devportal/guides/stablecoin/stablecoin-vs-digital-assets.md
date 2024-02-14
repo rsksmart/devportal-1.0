@@ -7,7 +7,7 @@ tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides
 layout: rsk
 ---
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
+![stablecoin banner](/assets/img/guides/stablecoin/overview.png)
 
 In this section, we will cover the difference between a stablecoin and other digital assets like bitcoins, fiat currency, fungible tokens, Central Bank Digital Currency (CBDCs), and Altcoins.
 
@@ -15,13 +15,13 @@ In this section, we will cover the difference between a stablecoin and other dig
 
 A stablecoin is a token that has a non-volatile price and Bitcoin is a cryptocurrency whose price is volatile in nature. Stablecoins are used  to minimize the price volatility of cryptocurrencies like Bitcoins.
 
-![StablecoinVsBitcoins](/assets/img/guides/stablecoin/stablecoinvsbitcoin.png)
+![StablecoinVsBitcoins](/assets/img/guides/stablecoin/stablecoin-vs-btc.png)
 
 ## Stablecoin vs Altcoin
 
 Altcoins are cryptocurrencies other than Bitcoin. Similar comparisons apply, with regards to volatility.
 
-![Stablecoinvsaltcoin](/assets/img/guides/stablecoin/stablecoinvsaltcoins.png)
+![Stablecoinvsaltcoin](/assets/img/guides/stablecoin/stablecoin-vs-alt.png)
 
 ## Stablecoin vs Fiat
 
@@ -43,7 +43,7 @@ Read: [Cryptocurrency vs Token](https://developers.rsk.co/kb/get-crypto-on-rsk/c
 
 A stablecoin may or may not be regulated, while Central Bank Digital Currency (CBDC) is completely regulated by the monetary authorities of a nation. This means stablecoins are decentralized while CBDCs are centralized. Furthermore, CBDCs may be implemented with fungible tokens, in a manner similar to stablecoins, or they may be implemented using other technologies, including centralised ones.
 
-![Stablecoin vs CBDCs](/assets/img/guides/stablecoin/stablecoinvscbdc.png)
+![Stablecoin vs CBDCs](/assets/img/guides/stablecoin/stablecoin-vs-cbds.png)
 
 ## Next
 

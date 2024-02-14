@@ -16,7 +16,7 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 
 ## How Math Wallet integrates with RSK
 
-![MathWallet-RSK-Integrations](/assets/img/solutions/MathWallet/Diagram-MathWallet.png)
+![MathWallet-RSK-Integrations](/assets/img/solutions/MathWallet/math-wallet-diagram.png)
 
 ### Useful links
 

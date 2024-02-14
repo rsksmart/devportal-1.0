@@ -9,7 +9,7 @@ layout: rsk
 
 In this section, We will explore the features of a DEX, such as Lending, Borrowing, Yield Farming, Staking, Liquidity Pools and the Drawbacks associated with DEXes.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
+![DEXes Banner Image](/assets/img/guides/dex/dex.png)
 
 ## Lending
 

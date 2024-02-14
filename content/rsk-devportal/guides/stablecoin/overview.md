@@ -7,7 +7,7 @@ tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides
 layout: rsk
 ---
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
+![stablecoin banner](/assets/img/guides/stablecoin/overview.png)
 
 Rootstock is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin network to empower people and improve the quality of life of millions.
 

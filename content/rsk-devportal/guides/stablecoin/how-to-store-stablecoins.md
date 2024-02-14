@@ -9,7 +9,7 @@ layout: rsk
 
 In this section, we will cover how to store stablecoins on Rootstock.
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
+![stablecoin banner](/assets/img/guides/stablecoin/overview.png)
 
 Stablecoins can be stored using crypto-wallets. 
 

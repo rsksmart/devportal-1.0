@@ -9,7 +9,7 @@ layout: rsk
 
 In this section, we will cover how to get stablecoins on Rootstock, and their tools.
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
+![stablecoin banner](/assets/img/guides/stablecoin/overview.png)
 
 ## Using A Decentralized Exchange
 

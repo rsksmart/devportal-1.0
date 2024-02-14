@@ -9,7 +9,7 @@ layout: rsk
 
 In this section, we will cover what a crypto-collateralized stablecoin is and the different types of stablecoin that exists on Bitcoins.
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
+![stablecoin banner](/assets/img/guides/stablecoin/overview.png)
 
 In the overview section, we explained the different types of stablecoins. However, we would take a look at what a crypto-collateralized stablecoin is, and explore the dirafferent stablecoins backed by cryptocurrencies like Bitcoin, and Rootstock. 
 
