@@ -12,7 +12,6 @@ To create a hardhat project:
 
 ### Clone the Quickstart Repository
 
-Clone the initial state of the quickstart guide repository
 - To get started, clone the [rootstock-quick-start-guide](https://github.com/jesus-iov/rootstock-quick-start-guide.git) repository:
     ```shell
     git clone https://github.com/jesus-iov/rootstock-quick-start-guide.git
