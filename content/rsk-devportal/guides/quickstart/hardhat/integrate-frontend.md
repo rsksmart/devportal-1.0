@@ -96,14 +96,7 @@ Your `index.html` file should now look like the [`index.html` file](https://raw.
 [](#top "collapsible")
 - Create basic javascript function
   1. In the frontend directory, open the `app.js` file.
-      - `app.js` initial state:
-          ```js
-          document.addEventListener('DOMContentLoaded', function () {
-
-          // TODO: Create JavaScript Functions
-
-          });
-          ```
+      - `app.js` initial state and paste the [JavaScript content](https://github.com/jesus-iov/rootstock-quick-start-guide/blob/master/frontend/app.js)
   2. Create the function to wait until the DOM is loaded, instance the HTML elements (buttons and divs), and declare some variables:
       ```js
       document.addEventListener('DOMContentLoaded', function () {
