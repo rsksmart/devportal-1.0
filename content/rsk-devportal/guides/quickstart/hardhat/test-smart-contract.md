@@ -9,7 +9,7 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, bloc
 
 In this section, you'll set up a smart contract test and test your contract to ensure it works as expected.
 
-Follow these stepas to test your smart contract.
+Follow these steps below to test your smart contract.
 
 ### Step 1: Install Dependencies
 
