@@ -8,7 +8,6 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, bloc
 render_features: 'collapsible'
 ---
 
-To create a hardhat project:
 
 ### Clone the Project Repository
 
