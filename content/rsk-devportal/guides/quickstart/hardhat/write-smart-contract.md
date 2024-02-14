@@ -9,7 +9,7 @@ tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, bloc
 
 In this section, we'll create a smart contract using the [OpenZeppelin library](https://www.openzeppelin.com/contracts).
 
-OpenZeppelin is widely used for its secure, community-vetted, and standardized codebase, which greatly simplifies developing robust and secure smart contracts.
+OpenZeppelin is widely used for its secure, community-vetted, and standardized codebase, which simplifies developing robust and secure smart contracts.
 
 ### Create Your Smart Contract
 
