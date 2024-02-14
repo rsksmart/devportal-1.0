@@ -33,7 +33,7 @@ To create a hardhat project:
 
 ### Create Hardhat Project
 
-In this section, we will verify the installation of hradhat in your project and configure network settings in the `hardhat.config.js` file.
+In this section, we will verify the installation of hardhat in your project and configure network settings in the `hardhat.config.js` file.
 
 [](#top "collapsible")
 - Set Up the Hardhat Project
