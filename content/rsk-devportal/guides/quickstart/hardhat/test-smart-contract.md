@@ -24,7 +24,7 @@ Mocha is a JavaScript test framework running on Node.js. Chai is an assertion li
 
 ### Step 2: Create Tests
 
-1. Navigate to the `test` directory in the root directory of your project, this is where we recommend storing all test files:
+1. Navigate to the `test` directory in the root directory of your project, this is recommended for storing all test files:
     ```shell
     cd test
     ```
