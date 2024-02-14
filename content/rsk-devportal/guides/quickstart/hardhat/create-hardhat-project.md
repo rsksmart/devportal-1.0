@@ -21,7 +21,7 @@ To create a hardhat project:
 
 [](#top "collapsible")
 - Initialize a Node.js project
-    - This command creates a `package.json file` with default values:
+    - This command creates a `package.json` file with default values:
       ```shell
       npm init -y
       ```
