@@ -10,7 +10,7 @@ render_features: 'collapsible'
 
 To create a hardhat project:
 
-### Clone the Quickstart Repository
+### Clone the Project Repository
 
 - To get started, clone the [rootstock-quick-start-guide](https://github.com/jesus-iov/rootstock-quick-start-guide.git) repository:
     ```shell
