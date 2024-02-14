@@ -34,28 +34,6 @@ Follow these steps, to set up your Hardhat environment ready for smart contract 
 
 To configure your `rskMainnet` and `rskTestnet` private keys, you'll need to update your `hardhat.config.js` file in your project's root directory with your private keys.
 
-- `hardhat.config.js` initial state
-    ```js
-    // Hardhat configuration
-    module.exports = {
-      solidity: "0.8.20",
-      networks: {
-        rskMainnet: {
-          url: "https://public-node.rsk.co",
-          chainId: 30,
-          gasPrice: 60000000,
-          // TODO: configure rskMainnet private key
-        },
-        rskTestnet: {
-          url: "https://public-node.testnet.rsk.co",
-          chainId: 31,
-          gasPrice: 60000000,
-          // TODO: configure rskTestnet private key
-        }
-      }
-    };
-    ```
-
 - To configure your private keys, copy the `accounts` key in network configurations in the code snipet below and paste it in your `hardhat.config.js` file.
 
   ```js

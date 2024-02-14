@@ -33,19 +33,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
 [](#top "collapsible")
 - Update HTML File
     - In the frontend directory, open the `index.html` file:
-      - `index.html` initial state:
-        ```html
-        <!DOCTYPE html>
-        <html lang="en">
-
-        <head>
-        </head>
-
-        <body>
-        </body>
-
-        </html>
-        ```
+      - [`index.html` initial state](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/master/frontend/index.html)
       - Copy the code snipet below and paste it in your html file:
         ```html
         <!DOCTYPE html>

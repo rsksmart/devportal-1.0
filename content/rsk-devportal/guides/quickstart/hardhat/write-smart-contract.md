@@ -33,14 +33,7 @@ To create your contract:
 
 2. In the contracts directory, open the `MyToken.sol` file for your token contract:
 
-    - `MyToken.sol` initial state:
-        ```s
-        // SPDX-License-Identifier: MIT
-        pragma solidity ^0.8.20;
-
-        # TODO: Configure ERC20 token
-
-        ```
+    - [`MyToken.sol` initial state](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/master/contracts/MyToken.sol)
     
     - To configure an ERC20 token, copy the code snipet below and paste it in your token file or see the [`MyToken.sol` file](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/feat/complete/contracts/MyToken.sol) on GitHub.
         ```s
