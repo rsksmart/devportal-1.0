@@ -12,7 +12,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
 
 ### Project Setup
 
-1. Navigate to the `frontend` directory in the root directory of your project:
+1. Navigate to the `frontend` directory in the `MyToken` project:
     ```shell
     cd frontend
     ```
