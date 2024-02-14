@@ -14,7 +14,7 @@ In this section, we'll deploy your token contract to your local environment and 
 
 To configure your deployment file:
 
-1. Navigate to the `scripts` directory in the root directory of your project:
+1. Navigate to the `scripts` directory in the root directory of the quick start repo:
     ```shell
     cd scripts
     ```
@@ -94,7 +94,7 @@ Follow these steps to deploy your contract on Rootstock network:
    - Open MetaMask and set up a new connection for the Rootstock Testnet. You can do this by clicking on the network selection dropdown at the top and choosing **Custom RPC**.
 3. Enter network details
    - Enter the following network details:
-      - Network Name: Rootstock Testnet
+      - Network Name: RSK Testnet
       - New RPC URL: ‘https://public-node.testnet.rsk.co’
       - Chain ID: `31`
       - Currency Symbol (optional): `tRBTC`
@@ -111,9 +111,9 @@ Follow these steps to deploy your contract on Rootstock network:
 
    - In Remix, go to the **Deploy & run transactions** plugin.
    - In the **Environment** dropdown, select **Injected Web3**.
-   - The remix will connect to MetaMask. Make sure MetaMask is on the Rootstock Testnet network that you configured earlier.
+   - This will connect to MetaMask. Make sure MetaMask is on the RSK Testnet network that you configured earlier.
 
-### Step 4: Interact with Your Deployed Contract
+### Step 4: Interact with the Deployed Contract
 
 To interact with your deployed contract on Rootstock network:
 
