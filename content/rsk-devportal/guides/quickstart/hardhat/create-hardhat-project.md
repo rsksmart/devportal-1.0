@@ -11,9 +11,9 @@ render_features: 'collapsible'
 
 ### Clone the Project Repository
 
-- To get started, clone the [rootstock-quick-start-guide](https://github.com/jesus-iov/rootstock-quick-start-guide.git) repository:
+- To get started, clone the [rootstock-quick-start-guide](https://github.com/rsksmart/rootstock-quick-start-guide.git) repository:
     ```shell
-    git clone https://github.com/jesus-iov/rootstock-quick-start-guide.git
+    git clone https://github.com/rsksmart/rootstock-quick-start-guide.git
     ```
 
 ### Install Dependencies
@@ -41,7 +41,7 @@ In this section, we will verify the installation of hardhat in your project and 
     ![Hardhat Installation Success](/assets/img/guides/quickstart/hardhat/install-success.png)
 - Configure Network Settings in hardhat.config.js
   - [`hardhat.config.js` initial state](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/master/hardhat.config.js)
-  - To configure `rskMainnet` and `rskTestnet` nework settings, open the `hardhat.config.js` file in your project's root directory. Copy and paste the code snipet below in the file or see the code in the [`hardhat.config.js` file](https://github.com/jesus-iov/rootstock-quick-start-guide/blob/feat/complete/hardhat.config.js) in the `feat/complete` branch on GitHub:
+  - To configure `rskMainnet` and `rskTestnet` nework settings, open the `hardhat.config.js` file in your project's root directory. Copy and paste the code snipet below in the file or see the code in the [`hardhat.config.js` file](https://github.com/rsksmart/rootstock-quick-start-guide/blob/feat/complete/hardhat.config.js) in the `feat/complete` branch on GitHub:
       > **Note that the `rskMainnet` and `rskTestnet` private keys have been configured in the `feat/complete` branch on GitHub, we'll get to that soon in this guide.**
       ```js
       // Hardhat configuration

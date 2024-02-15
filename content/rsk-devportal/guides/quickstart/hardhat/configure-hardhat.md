@@ -52,7 +52,7 @@ To configure your `rskMainnet` and `rskTestnet` private keys, you'll need to upd
   }
   ```
 
-- Your `hardhat.config.js` file should look like the [`hardhat.config.js` file](https://github.com/jesus-iov/rootstock-quick-start-guide/blob/feat/complete/hardhat.config.js) on GitHub.
+- Your `hardhat.config.js` file should look like the [`hardhat.config.js` file](https://github.com/rsksmart/rootstock-quick-start-guide/blob/feat/complete/hardhat.config.js) on GitHub.
 
 ### Step 3: Fund Your Accounts
 
