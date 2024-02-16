@@ -7,8 +7,6 @@ description: 'The guardian of RSK'
 tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-mining, blockchain
 ---
 
-[![Armadillo-banner](/assets/img/guides/armadillo/armadillo.png)](/guides/armadillo/)
-
 ## What is a fork?
 
 A fork in the general sense is a chain of blocks that don't follow the [mainchain](/guides/armadillo/glossary/#mainchain).

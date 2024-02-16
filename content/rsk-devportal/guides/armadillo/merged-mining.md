@@ -7,8 +7,6 @@ description: 'The guardian of RSK'
 tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-mining, blockchain
 ---
 
-[![Armadillo-banner](/assets/img/guides/armadillo/armadillo.png)](/guides/armadillo/)
-
 ## What is merged mining?
 
 Merged mining is the process that allows RSK blockchain to be mined simultaneously with the Bitcoin blockchain.

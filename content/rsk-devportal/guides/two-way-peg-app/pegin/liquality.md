@@ -7,7 +7,6 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, 
 layout: rsk
 ---
 
-![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
 
 ## Using Liquality Software wallet to perform a peg-in
 

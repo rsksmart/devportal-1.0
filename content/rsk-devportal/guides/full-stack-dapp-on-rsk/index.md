@@ -15,8 +15,6 @@ We will cover the following topics in the course of this guide:
 - **Programming languages**: Solidity and Javascript
 - **Development tools**: Truffle and Mocha
 
-![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
-
 ## Overview
 
 Rootstock is the most secure smart contract network in the world

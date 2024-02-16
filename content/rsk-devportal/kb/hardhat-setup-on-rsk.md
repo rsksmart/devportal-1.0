@@ -8,7 +8,6 @@ render_features: 'custom-terminals'
 layout: rsk
 ---
 
-![Banner Image](/assets/img/kb/hardhat-setup-on-rsk/banner-hardhat-project-on-rsk.jpg)
 
 Welcome to the tutorial on how to set up a Hardhat project for Rootstock Testnet. In this tutorial, we'll do the following steps:
 
