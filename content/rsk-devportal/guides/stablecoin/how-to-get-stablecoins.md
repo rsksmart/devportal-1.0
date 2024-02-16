@@ -28,8 +28,6 @@ Watch this explainer video below to learn how to atomic swap DAI, USDC, USDT usi
 
 [OKU Trade](https://oku.trade/app/rootstock/) is a decentralized exchange for the Uniswap v3 protocol.
 
-![oku-Exchange](/assets/img/guides/get-crypto-on-rsk/oku-wrbtc-rusdt.png)
-
 ## Using the Token Bridge
 
 [Ethereum/Rootstock Bridge](https://developers.rsk.co/tools/tokenbridge/) that allows moving ERC20 tokens between one chain and the other.

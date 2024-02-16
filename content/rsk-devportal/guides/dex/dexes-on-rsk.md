@@ -25,8 +25,6 @@ Sovryn does not require you to send your assets to a centralized company, such a
 
 [OKU Trade](https://oku.trade/app/rootstock/) is an decentralized exchange for the Uniswap v3 Protocol. it features tracking order history, managing trades, adding liquidity on Uniswap v3.
 
-![OKU - Rootstock](/assets/img/guides/get-crypto-on-rsk/oku-wrbtc-rusdt.png)
-
 ----
 
 If you would like to delve deeper, here are some resources and tools that we recommend.
