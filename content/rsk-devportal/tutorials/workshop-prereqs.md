@@ -1,16 +1,16 @@
 ---
 layout: rsk
-title: "Rootstock Workshop: Pre-requisites"
+title: "RSK Workshop: Pre-requisites"
 tags: rsk, workshop, pre-requisites
-description: "Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
+description: "Several RSK workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
 ---
 
-Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
+Several RSK workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
 
 Some workshops will require all of the following items,
 and some may only require a subset of the following items.
 Each workshop should have a "pre-requisites" section
-and specify which of the following tools you need to install.
+and specify which ones are which.
 
 ## POSIX compliant shell
 
@@ -56,7 +56,7 @@ npm i -g truffle@5.1.22
 
 Use the following command.
 
-```shell
+```
 npm i -g @openzeppelin/cli@2.8.2
 ```
 
@@ -225,7 +225,7 @@ You should see a response similar to the following:
 ```
 
 > If this command fails,
-> it is likely that your connection to Rootstock's public node is impeded in some way,
+> it is likely that your connection to RSK's public node is impeded in some way,
 > and you should identify and relax any restrictive
 > network firewall or proxy rules.
 
@@ -235,6 +235,6 @@ is the block number in hexadecimal (base 16),
 so the output above indicates that the current block number
 is `827445` in decimal (base 10).
 This should match the "Best Block" field in the
-[Rootstock Testnet Stats](https://stats.testnet.rsk.co/) site.
+[RSK Testnet Stats](https://stats.testnet.rsk.co/) site.
 
 ![](img/stats-testnet-block-number.png)
