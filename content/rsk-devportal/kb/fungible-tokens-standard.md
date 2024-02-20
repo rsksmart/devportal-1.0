@@ -7,8 +7,6 @@ description: What is ERC20, and are there others like it? How do they work on RS
 layout: 'rsk'
 ---
 
-![Configure-Truffle-to-RSK](/assets/img/kb/fungible-token-standards/fungible-token-standards.jpg)
-
 ## ERCs vs EIPs vs RSKIPs
 
 [Ethereum Requests for Comment (ERCs)](https://docs.ethhub.io/built-on-ethereum/erc-token-standards/what-are-erc-tokens/),

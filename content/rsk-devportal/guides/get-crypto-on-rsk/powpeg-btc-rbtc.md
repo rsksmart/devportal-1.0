@@ -111,7 +111,7 @@ to the PowPeg address on the Bitcoin network,
 and subsequently inform the Bridge about this transaction.
 The Powpeg subsequently releases bitcoins (RBTC) on the Rootstock network.
 
-![Peg-In](/assets/img/guides/get-crypto-on-rsk/Bitcoin-RSK-Peg-In.gif)
+![Peg-In](/assets/img/guides/get-crypto-on-rsk/Peg-in.gif)
 
 To summarise, a peg-in:
 
@@ -133,7 +133,7 @@ Then wait for the required number of confirmation blocks,
 after which the Bridge builds the transaction
 to release bitcoins (BTC) on the Bitcoin network.
 
-![Peg-Out](/assets/img/guides/get-crypto-on-rsk/RSK-Bitcoin-Peg-Out.gif)
+![Peg-Out](/assets/img/guides/get-crypto-on-rsk/Peg-out.gif)
 
 To summarise, a peg-out:
 

@@ -38,21 +38,6 @@ tags: rns, guide, wallets, value
 2. _Press the PLAY ► button in the upper right corner._
    ![RNS for Wallets - Integration](/rif/rns/guide/images/rns-for-wallets-integration.png)
 
-### Quick example: Send BTC
-
-
-![RNS for Wallets - Walkthrough 01](/rif/rns/guide/images/rns-for-wallets-walkthrough-01.png)
-
-![RNS for Wallets - Walkthrough 02](/rif/rns/guide/images/rns-for-wallets-walkthrough-02.png)
-
-![RNS for Wallets - Walkthrough 03](/rif/rns/guide/images/rns-for-wallets-walkthrough-03.png)
-
-![RNS for Wallets - Walkthrough 04](/rif/rns/guide/images/rns-for-wallets-walkthrough-04.png)
-
-![RNS for Wallets - Walkthrough 05](/rif/rns/guide/images/rns-for-wallets-walkthrough-05.png)
-
-This will send the funds to the app user’s Bitcoin address linked to `alice.yourwallet.rsk`.
-
 ### Feature summary
 
 1. **YourWallet Nickname**

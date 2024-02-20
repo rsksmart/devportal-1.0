@@ -16,7 +16,7 @@ layout: 'rsk'
 
 See the diagram below for how NOWNodes integrates with RSK.
  
-![NOWNodes Integrations Diagram](/assets/img/solutions/nownodes/integration-diagram.jpeg)
+![NOWNodes Integrations Diagram](/assets/img/solutions/nownodes/nownodes-integration.png)
 
 > Note: In order to send requests to the node, need an API key. See the [documentation](https://documenter.getpostman.com/view/13630829/TVmFkLwy) for instructions or [sign up](https://nownodes.io/) to get an API Key.
 

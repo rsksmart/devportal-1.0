@@ -7,7 +7,7 @@ tags: knowledge-base, tokens, Rootstock, smart contracts, cryptocurrency
 layout: 'rsk'
 ---
 
-![CryptovsTokenBanner](/assets/img/guides/get-crypto-on-rsk/crypto-token-banner.jpg)
+![CryptovsTokenBanner](/assets/img/guides/get-crypto-on-rsk/crypto-token-banner.png)
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/GWoNxoaIsbQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -26,7 +26,7 @@ blockchain like BTC, RBTC, or ETH, whereas tokens are built on an existing block
 
 The following chart summarises the similarities between the two:
 
-![CryptovsTokenList2](/assets/img/guides/get-crypto-on-rsk/crypto-token-2.jpg)
+![CryptovsTokenList2](/assets/img/guides/get-crypto-on-rsk/cryptocurrency-vs-token.png)
 
 As we can see, these are largely the same from the perspective of the end user. However, there are large technical differences between the two. Let’s dive a little bit deeper into the technical differences:
 

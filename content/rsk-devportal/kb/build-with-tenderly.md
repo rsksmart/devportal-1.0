@@ -7,8 +7,6 @@ tags: knowledge-base, rif token, rsk, tenderly, smart contracts
 layout: 'rsk'
 ---
 
-![RSK-Tenderly-Banner](/assets/img/kb/BuildWithTenderly/tenderly-rsk-banner.jpg)
-
 [Tenderly](https://tenderly.co/) helps developers build, monitor, and improve smart contracts
 by providing a set of tools to boost productivity, time-save, and make sure smart contracts are working as expected.
 

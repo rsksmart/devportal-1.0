@@ -8,8 +8,6 @@ tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides
 layout: rsk
 ---
 
-![Stablecoin Banner](/assets/img/guides/stablecoin/stablecoin-banner.jpg)
-
 Welcome to the Complete Guide to Stablecoins!.
 
 In this guide, you will learn about stablecoins, stablecoins on Rootstock, how to get stablecoins, and the interoperability of blockchains. We will explore the differences between stablecoins and other types of digital assets, stablecoins on Bitcoin, where to store them, how to cross stablecoins using the Rootstock tokenbridge, and how blockchains achieve interoperability via cross-chain bridges.

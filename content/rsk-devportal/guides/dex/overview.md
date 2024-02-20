@@ -9,8 +9,6 @@ layout: rsk
 
 In this section, you will learn about what decentralized exchanges (DEX) are, types of DEXes such as order books (on-chain and off-chain), DEX aggregators, Automated Market Makers (AMMs) and AMM DEXes on Rootstock.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
-
 ## What is a DEX?
 
 A decentralized exchange, also known as DEX, is a peer-to-peer trading platform where cryptocurrency holders and traders make transactions directly without handing over management of their funds to an intermediary or a custodian. DEXes have become a pivotal element in the crypto world by enabling trading with considerable improvements in crypto volume. 
