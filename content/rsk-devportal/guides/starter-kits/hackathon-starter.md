@@ -7,7 +7,7 @@ tags: rootstock, workshop, pre-requisites
 description: "This guide provides essential setup instructions for Rootstock development, including hardware and key software installations."
 ---
 
-The hackathon starter kit guide details the necessary hardware and software requirements for developing on the Rootstock blockchain. It includes setup instructions for essential tools such as Node.js, Hardhat, and RSKj, ensuring developers have a clear path to prepare their environment for Rootstock projects, whether for local development, testing, or for deployment.
+The hackathon starter kit guide details the necessary tools and resources for developing on the Rootstock blockchain. It includes setup instructions for essential Dev tools such as Hardhat, and RSKj, wallets, ensuring developers have a clear path to prepare their environment for developing on Rootstock, whether for local development, testing, or for deployment.
 
 ## Hardware Requirements
 

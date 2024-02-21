@@ -4,14 +4,14 @@ menu_title: Smart Contract Testing with Truffle
 layout: rsk
 title: "Rootstock Workshop: Smart Contract Testing using Truffle"
 tags: rsk, workshop, solidity, testing, truffle
-description: "Look at smart contracts through the lens of state and state transitions, and learn how to test solidity smart contracts using Truffle on the RSK Regtest network"
+description: "Look at smart contracts through the lens of state and state transitions, and learn how to test solidity smart contracts using Truffle on the Rootstock Regtest network"
 ---
 
 ## Pre-requisites
 
 Prior to commencing this tutorial,
 please ensure that you have installed the following
-RSK workshop pre-requisites on your system:
+Rootstock workshop pre-requisites on your system:
 
 - [POSIX compliant shell](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#posix-compliant-shell)
 - [NodeJs](https://github.com/bguiz/workshop-rsk-prereqs/blob/master/walkthru.md#nodejs)
