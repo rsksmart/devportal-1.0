@@ -50,5 +50,4 @@ This guide details the necessary hardware and software requirements for developi
         npm install --save-dev hardhat@2.19.4
         ```
 
-## Conclusion
-This guide provides a comprehensive overview to prepare your development environment for Rootstock projects, covering both hardware and software aspects. Ensure all requirements are met before proceeding with development activities.
+This guide provides a comprehensive overview to prepare your development environment for Rootstock projects. Ensure all requirements are met before proceeding with development activities.
