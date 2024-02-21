@@ -79,7 +79,7 @@ Ensure your system meets the following minimum specifications:
 ## Tutorials
 
 - [RSKj for Developers](/kb/rskj-for-developers/)
-- [Rootstock Quick start Guides](/guides/quickstart/)
+- [Rootstock Quick Start Guides](/guides/quickstart/)
 
 ## Useful Links
 
