@@ -11,10 +11,11 @@ render_features: 'collapsible'
 
 ### Clone the Project Repository
 
-- To get started, clone the [rootstock-quick-start-guide](https://github.com/rsksmart/rootstock-quick-start-guide.git) repository:
-    ```shell
-    git clone https://github.com/rsksmart/rootstock-quick-start-guide.git
-    ```
+To get started, clone the [rootstock-quick-start-guide](https://github.com/rsksmart/rootstock-quick-start-guide.git) repository:
+
+```shell
+git clone https://github.com/rsksmart/rootstock-quick-start-guide.git
+```
 
 ### Install Dependencies
 
