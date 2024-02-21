@@ -21,9 +21,9 @@ To configure your deployment file:
 
 2. In the scripts directory, open the `deploy.js` deployment file:
 
-    - [`deploy.js` initial state](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/master/scripts/deploy.js)
+    - [`deploy.js` initial state](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/master/scripts/deploy.js)
     
-    - To deploy your token, copy the deployment script below and paste it in your deployment file or see the [`deploy.js` file](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/feat/complete/scripts/deploy.js) on GitHub.
+    - To deploy your token, copy the deployment script below and paste it in your deployment file or see the [`deploy.js` file](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/feat/complete/scripts/deploy.js) on GitHub.
       ```js
       async function main() {
       const [deployer] = await ethers.getSigners();

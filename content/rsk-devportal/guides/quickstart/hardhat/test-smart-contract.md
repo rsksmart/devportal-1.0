@@ -31,9 +31,9 @@ Mocha is a JavaScript test framework running on Node.js. Chai is an assertion li
 
 2. In the test directory, open the `MyToken.test.js` file where we'll write tests for your token contract using Mocha and Chai:
 
-    - [`MyToken.test.js` initial state](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/master/test/MyToken.test.js)
+    - [`MyToken.test.js` initial state](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/master/test/MyToken.test.js)
 
-    - Copy the code snipet below and paste it in your test file or see the [`MyToken.test.js` file](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/feat/complete/test/MyToken.test.js) on GitHub.
+    - Copy the code snipet below and paste it in your test file or see the [`MyToken.test.js` file](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/feat/complete/test/MyToken.test.js) on GitHub.
         ```js
         const { expect } = require("chai");
         const { ethers } = require("hardhat");

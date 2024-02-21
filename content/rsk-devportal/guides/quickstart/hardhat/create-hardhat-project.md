@@ -40,7 +40,7 @@ In this section, we will verify the installation of hardhat in your project and 
   - `npx hardhat` not only verifies installation but also allows you to initiate a new Hardhat project if it doesn't exist. For a new project, you'll be prompted to choose from several options. To create a blank project, select **Create an empty hardhat.config.js**, or pick one of the other options to begin with a pre-set template.
     ![Hardhat Installation Success](/assets/img/guides/quickstart/hardhat/install-success.png)
 - Configure Network Settings in hardhat.config.js
-  - [`hardhat.config.js` initial state](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/master/hardhat.config.js)
+  - [`hardhat.config.js` initial state](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/master/hardhat.config.js)
   - To configure `rskMainnet` and `rskTestnet` nework settings, open the `hardhat.config.js` file in your project's root directory. Copy and paste the code snipet below in the file or see the code in the [`hardhat.config.js` file](https://github.com/rsksmart/rootstock-quick-start-guide/blob/feat/complete/hardhat.config.js) in the `feat/complete` branch on GitHub:
       > **Note that the `rskMainnet` and `rskTestnet` private keys have been configured in the `feat/complete` branch on GitHub, we'll get to that soon in this guide.**
       ```js

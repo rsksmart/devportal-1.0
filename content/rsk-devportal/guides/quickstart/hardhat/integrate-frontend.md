@@ -33,7 +33,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
 [](#top "collapsible")
 - Update HTML File
     - In the frontend directory, open the `index.html` file:
-      - [`index.html` initial state](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/master/frontend/index.html)
+      - [`index.html` initial state](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/master/frontend/index.html)
       - Copy the code snipet below and paste it in your html file:
         ```html
         <!DOCTYPE html>
@@ -77,7 +77,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
       <script src="app.js"></script>
     ```
 
-Your `index.html` file should now look like the [`index.html` file](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/feat/complete/frontend/index.html) on GitHub.
+Your `index.html` file should now look like the [`index.html` file](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/feat/complete/frontend/index.html) on GitHub.
 
 ### Create JavaScript Functions
 
@@ -158,7 +158,7 @@ Your `index.html` file should now look like the [`index.html` file](https://raw.
         });
     ```
 
-Your javascript file should now look like the [`app.js` file](https://raw.githubusercontent.com/jesus-iov/rootstock-quick-start-guide/feat/complete/frontend/app.js) on GitHub.
+Your javascript file should now look like the [`app.js` file](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/feat/complete/frontend/app.js) on GitHub.
 
 ### Run the frontend
 
