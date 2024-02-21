@@ -1,62 +1,118 @@
 ---
 layout: rsk
-title: "RSK Workshop: Pre-requisites"
+<<<<<<<<< Temporary merge branch 1
+title: "Rootstock Workshop: Pre-requisites"
 tags: rsk, workshop, pre-requisites
-description: "Several RSK workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
+description: "Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop."
 ---
 
-Several RSK workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
+Several Rootstock workshops have common pre-requisites that you will need to have set up or configured on your system before proceeding. Here are some detailed instructions on how to prepare ahead of your next workshop.
 
 Some workshops will require all of the following items,
 and some may only require a subset of the following items.
 Each workshop should have a "pre-requisites" section
-and specify which ones are which.
+and specify which of the following tools you need to install.
+=========
+title: "Rootstock Development Environment Setup Guide"
+tags: rsk, rootstock, workshop, pre-requisites
+description: "This guide provides essential setup instructions for Rootstock development, including hardware and key software installations."
+---
 
-## POSIX compliant shell
+**Rootstock Development Environment Setup Guide!** 
 
-- Mac OSX and Linux distributions:
-  Use the standard terminal
-- Windows:
-  If you use the standard `cmd` terminal, or PowerShell,
-  the commands here may not work.
-  Consider installing
-  [Git for Windows](https://gitforwindows.org/),
-  which comes with Git Bash bundled.
-  Here's a great
-  [tutorial on installing and using Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
+This guide details the necessary hardware and software requirements for developing on the Rootstock blockchain. It includes setup instructions for essential tools such as Java, Node.js, Hardhat, and RSKj, ensuring developers have a clear path to prepare their environment for Rootstock projects, whether for local development, testing, or deployment.
+>>>>>>>>> Temporary merge branch 2
 
-## NodeJs
+## Hardware Requirements
 
-- The most fuss-free way to install and manage
-  multiple versions of `node` on your computer is
-  [nvm](https://github.com/nvm-sh/nvm).
-- This tutorial assumes that you have version 12 or later
+Ensure your system meets the following minimum specifications:
+- **CPU:** 2 cores
+- **Memory:** 8 GB RAM
+- **Storage:** 128 GB
+- **Operating System:** 64-bit
 
-```shell
-nvm install 12
-nvm use 12
+## Software Requirements
+### Operating Systems
 
-```
+- **Supported OS:** 
+    - macOS
+    - Windows
+    - Linux
 
-## Truffle
+> macOS users should have a version that supports Apple Silicon and Rosetta 2
 
-- Install [`truffle`](https://www.npmjs.com/package/truffle)
+### Command Line Tools
 
+#### POSIX Compliant Shell
 
-Use the following command.
+[](#top "collapsible")
+- macOS/Linux
+    - Standard terminal.
+- Windows
+    - Standard terminals like `cmd` or PowerShell may not support some commands. We recommended installing [Git for Windows](https://gitforwindows.org/) for Git Bash, which provides a more UNIX-like experience. Here's a [tutorial on Git Bash](https://www.atlassian.com/git/tutorials/git-bash).
 
-```shell
-npm i -g truffle@5.1.22
+### Development Tools
 
-```
+[](#top "collapsible")
+- Code Editor
+    - Recommended: A code editor with Solidity and JavaScript syntax support, such as [Visual Studio Code](https://code.visualstudio.com).
+- Node.js
+    - Essential for Rootstock development tools.
+    - **Version:** 12 or later. Use [Node Version Manager (NVM)](https://github.com/nvm-sh/nvm) for installation:
+        ```shell
+        nvm install 12
+        nvm use 12
+        ```
+- Hardhat
+    - Core tool for blockchain project development on Rootstock.
+    - Install with npm:
+        ```shell
+        npm install --save-dev hardhat
+        ```
+- Java
+    - Needed for RSKj, the Rootstock node software.
+    - **Version:** Java 8. We recommend installing Java using SDKman which allows you to install and switch between multiple versions if needed:
+        ```shell
+        curl -s "https://get.sdkman.io/" | bash
+        source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-## OpenZeppelin CLI
+        # to get a filtered list of available java versions
+        sdk list java | grep "8\."
 
+        # copy and install one of the options listed for use, e.g. 8.0.242.j9-adpt
+        sdk install java <selected-version>
+
+        # list installed versions, and switch to the selected one
+        sdk use java <selected-version>
+        java -version
+        ```
+- cURL
+    - For data exchange between your device and a server.
+    - Run `curl --version` to verify installation or download from [cURL website](https://curl.haxx.se/download.html).
+- OpenZeppelin CLI
+    - For developing, managing, and securing decentralized applications.
+    - Installation command:
+        ```shell
+        npm install @openzeppelin/cli
+        ```
+- RSKj
+    - RSKj allows you to run a Rootstock node, crucial for local development and testing. It supports connections to Regtest (local), Testnet (testing), and Mainnet (production).
+    - **Downloading RSKj:**
+        - Visit the [official RSKj GitHub repository](https://github.com/rsksmart/rskj) to download the latest stable release.
+    - **Running RSKj:**
+        - For local testing with Regtest, use the command:
+            ```shell
+            java -jar rskj-core-<version>.jar --regtest
+            ```
+        Replace `<version>` with the actual version number of your RSKj jar file. This command starts a local Rootstock node for development and testing.
+        - **Note:** Ensure your development environment has sufficient storage and memory, as connecting to Testnet or Mainnet requires downloading the blockchain.
+
+<<<<<<<<< Temporary merge branch 1
 - Install [`oz`](https://www.npmjs.com/package/@openzeppelin/cli)
 
 Use the following command.
 
-```
+```shell
 npm i -g @openzeppelin/cli@2.8.2
 ```
 
@@ -225,7 +281,7 @@ You should see a response similar to the following:
 ```
 
 > If this command fails,
-> it is likely that your connection to RSK's public node is impeded in some way,
+> it is likely that your connection to Rootstock's public node is impeded in some way,
 > and you should identify and relax any restrictive
 > network firewall or proxy rules.
 
@@ -235,6 +291,10 @@ is the block number in hexadecimal (base 16),
 so the output above indicates that the current block number
 is `827445` in decimal (base 10).
 This should match the "Best Block" field in the
-[RSK Testnet Stats](https://stats.testnet.rsk.co/) site.
+[Rootstock Testnet Stats](https://stats.testnet.rsk.co/) site.
 
 ![](img/stats-testnet-block-number.png)
+=========
+## Conclusion
+This guide provides a comprehensive overview to prepare your development environment for Rootstock projects, covering both hardware and software aspects. Ensure all requirements are met before proceeding with development activities.
+>>>>>>>>> Temporary merge branch 2
