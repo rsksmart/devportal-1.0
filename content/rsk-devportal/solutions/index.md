@@ -61,6 +61,29 @@ platforms and APIs to create innovative experiences.
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
+            <a href="/solutions/3xpl/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/3xpl/light.png" alt="started icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/3xpl/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">3xpl</p>
+                        <p class="card-desc">3xpl is a fast, ad-free blockchain explorer for 40+ blockchains, offering a simple interface, PDF receipts, and developer tools like APIs and data dumps.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/3xpl/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
             <a href="/solutions/moneyonchain/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
