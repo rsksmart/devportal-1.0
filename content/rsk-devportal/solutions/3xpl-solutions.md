@@ -1,5 +1,5 @@
 ---
-menu_order: 300
+menu_order: 2000
 menu_title: 3xpl Solution
 layout: rsk
 title: '3xpl - Solutions on Rootstock'
