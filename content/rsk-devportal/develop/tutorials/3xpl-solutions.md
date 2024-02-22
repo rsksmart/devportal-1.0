@@ -9,14 +9,10 @@ description: "3xpl, 3xplor3r, explorer, rootstock, blockchain"
 ---
 
 
-3xpl is a super-fast, ad-free universal explorer for 40+ popular public blockchains. It offers an easy-to-understand block explorer interface for ordinary crypto users that also lets you obtain PDF transaction receipts and wallet statements. For developers and analysts, it offers multiple APIs, Data Dumps, and other tools. 
-
-<div align="center"><img width="100%" src="/assets/img/3xpl/3xpl banner.png" alt="3xpl Solution"/></div>
-
-
-## Description
 3xpl (short for 3xplor3r) is a super-fast ad-free universal explorer for 40+ most popular public blockchains. It offers an easy-to-understand block explorer interface for ordinary crypto users that also lets you obtain PDF transaction receipts and wallet statements. Rootstock ERC-20, 721, 1155, and .rsk names are also supported. 
 For power users, developers, analysts, and academia, 3xpl has even more: JSON and WebSocket API to build apps, ClickHouse API to run analytical SQL queries, and downloadable database dumps to work with blockchain data locally. 
+
+<div align="center"><img width="100%" src="/assets/img/3xpl/3xpl banner.png" alt="3xpl Solution"/></div>
 
 ## About 3xpl 
 Most explorers support 3-4 blockchains at most or a single architecture. 3xpl aims to support as many blockchains as possible under a single interface and data format. This allows users to find their addresses and transactions without switching contexts. The universal search bar allows you to search all blockchains at once. 
