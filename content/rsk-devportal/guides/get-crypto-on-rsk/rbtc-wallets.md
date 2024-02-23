@@ -49,7 +49,7 @@ are necessary to store and transfer tokens.
 
 ## Difference between a Private and Public Key
 
-![Public and private keys](/assets/img/guides/get-crypto-on-rsk/PrivateVSPublicKey.png)
+![Public and private keys](/assets/img/guides/get-crypto-on-rsk/public-vs-private-key.png)
 
 In crypto wallets, public keys and private keys are
 primarily used in digital signature algorithms.
@@ -62,7 +62,7 @@ think of it as analogous to your password.
 
 ## Hardware and Software Wallets
 
-![Hardware and Software Wallets](/assets/img/guides/get-crypto-on-rsk/hardwareVSsoftware.png)
+![Hardware and Software Wallets](/assets/img/guides/get-crypto-on-rsk/hardware-software.png)
 
 A **hardware wallet** is a special-purpose device
 configured to accept supported cryptocurrencies and tokens.
@@ -97,13 +97,15 @@ between ease of use, and security.
 
 ## How wallets work
 
-![Wallet Image](/assets/img/guides/get-crypto-on-rsk/wallet.jpg)
+![Wallet Image](/assets/img/guides/get-crypto-on-rsk/wallet.png)
 
 **Watch this short explainer video to understand how crypto wallets work**
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube.com/embed/hKW182_Izaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+> For a list of updated wallets, see the [Wallets](/develop/wallet/use/) section.
 
 When a user wishes to interact with the Rootstock blockchain,
 for example to transfer RBTC:

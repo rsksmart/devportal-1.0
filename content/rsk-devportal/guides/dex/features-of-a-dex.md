@@ -3,13 +3,12 @@ menu_order: 400
 menu_title: Features of a DEX
 title: "The Features of a DEX - The Complete Guide to Decentralized Exchanges (DEX)"
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"
-tags: the-complete-guide-to-dexes, decentralized-exchanges, tutorial, overview, guides, tokens, sovryn, rskswap,tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain, lend, borrow, yield-farming, order-books, automated-market-maker- AMMs
+tags: the-complete-guide-to-dexes, decentralized-exchanges, tutorial, overview, guides, tokens, sovryn, rskswap,tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, lend, borrow, yield-farming, order-books, automated-market-maker- AMMs
 layout: rsk
 ---
 
 In this section, We will explore the features of a DEX, such as Lending, Borrowing, Yield Farming, Staking, Liquidity Pools and the Drawbacks associated with DEXes.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
 
 ## Lending
 
@@ -67,18 +66,12 @@ Users can lend or borrow any cryptocurrency on these platforms, set algorithms t
 
 ### Yield Farming Protocols on Bitcoin
 
-With RSK smart contract platform, users/investors can benefit from yield farming on Bitcoin. Several decentralized exchange platforms exist which enables users to access defi on Bitcoin, they are;
+With Rootstock smart contract platform, users/investors can benefit from yield farming on Bitcoin. Several decentralized exchange platforms exist which enables users to access defi on Bitcoin, they are;
 
 **Sovryn**
 
 Sovryn enables Bitcoin holders to yield interest on RBTC, XUSD, FISH, rUSDT, MOC, DOC, BPRO, RIF, MYNT, etc.
 To get started, visit the [Sovryn dApp](https://live.sovryn.app/yield-farm)
-
-**RSKSwap**
-
-RSKSwap is an Automated Liquidity Protocol on RSK. With RSKSwap, you can swap, send and pool tokens like RIF, DOC, BRZ, SOV, rUSDT, rUSDC, RDOC, rDAI, BPRO on the RSK network.
-
-To get started, visit [RSKSwap](https://app.rskswap.com/swap).
 
 **Watch How to Mint XUSD with RDOC and earn yield**
 
@@ -120,7 +113,7 @@ Impermanent loss happens when the price of a token increases or decreases after 
 
 ## Next
 Be sure to check out our next article in this guide,
-about [DEXes on RSK](/guides/dex/dexes-on-rsk/)
+about [DEXes on Rootstock](/guides/dex/dexes-on-rsk/)
 
 ----
 
@@ -128,16 +121,13 @@ If you would like to delve deeper, here are some resources and tools that we rec
 
 **Resources**:
 
-- [Visit RSK Developers Portal](https://github.com/rsksmart/devportal) 
-- [RSK Global Discord Community](https://rootstock.io/discord)
-- [RSK](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)
+- [Visit Rootstock Github](https://github.com/rsksmart/devportal) 
+- [Rootstock Global Discord Community](https://rootstock.io/discord)
+- [Rootstock Youtube](https://www.youtube.com/channel/UCYQSvSaqX8Q-XMbQmUG0yJg)
 - [Finematics](https://www.youtube.com/c/Finematics)
 - [101Blockchains.com](https://101blockchains.com/decentralized-exchanges/)
 - [API3](https://developers.rsk.co/solutions/api3/)
-- [Chainbeat](https://developers.rsk.co/solutions/chainbeat/)
 - [Chainlink](https://developers.rsk.co/solutions/chainlink/)
-- [OMOC: Solutions on RSK](https://developers.rsk.co/solutions/oraclemoneyonchain/)
-- [RSKSwap](https://app.rskswap.com/swap)
-- [BLINDEX](https://app.blindex.io/)
-- [atomicDEX](https://atomicdex.io/)
+- [OMOC: Solutions on Rootstock](https://developers.rsk.co/solutions/oraclemoneyonchain/)
 - [Sovryn](https://live.sovryn.app/)
+- [OKU Trade](https://oku.trade/app/rootstock/)

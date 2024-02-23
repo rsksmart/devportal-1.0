@@ -260,7 +260,7 @@ First, we need to obtain an account on RSK Testnet and get some tRBTC from the T
 
 **Get tRBTC**
 
-Visit the [faucet](https://faucet.testnet.rsk.co/) to gain some tRBTC to use in the Testnet.
+Visit the [faucet](https://faucet.rootstock.io/) to gain some tRBTC to use in the Testnet.
 
 Enter the account address from MetaMask and wait for several seconds for MetaMask to refresh the new balance.
 

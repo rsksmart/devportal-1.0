@@ -3,16 +3,14 @@ menu_order: 700
 section_title: The Complete Guide to Stablecoins
 menu_title: Table of Contents
 title: "The Complete Guide to Stablecoins"
-description: "Learn about stablecoins, types of stablecoins, where to get them, and how to use the RSK Tokenbridge to cross tokens"
-tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain
+description: "Learn about stablecoins, types of stablecoins, where to get them, and how to use the Rootstock Tokenbridge to cross tokens"
+tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain
 layout: rsk
 ---
 
-![Stablecoin Banner](/assets/img/guides/stablecoin/stablecoin-banner.jpg)
-
 Welcome to the Complete Guide to Stablecoins!.
 
-In this guide, you will learn about stablecoins, stablecoins on RSK, how to get stablecoins, and the interoperability of blockchains. We will explore the differences between stablecoins and other types of digital assets, stablecoins on Bitcoin, where to store them, how to cross stablecoins using the RSK tokenbridge, and how blockchains achieve interoperability via cross-chain bridges.
+In this guide, you will learn about stablecoins, stablecoins on Rootstock, how to get stablecoins, and the interoperability of blockchains. We will explore the differences between stablecoins and other types of digital assets, stablecoins on Bitcoin, where to store them, how to cross stablecoins using the Rootstock tokenbridge, and how blockchains achieve interoperability via cross-chain bridges.
 
 ## Contents
 
@@ -29,12 +27,12 @@ In this guide, you will learn about stablecoins, stablecoins on RSK, how to get 
     - [DOC - Dollar on Chain](/guides/stablecoin/stablecoin-on-bitcoin/#doc-dollar-on-chain)
     - [RDOC - RIF Dollar on Chain](/guides/stablecoin/stablecoin-on-bitcoin/#rdoc-rif-dollar-on-chain)
     - [XUSD - Babelfish](/guides/stablecoin/stablecoin-on-bitcoin/#xusd-babelfish)
-- [How to Store Stablecoins on RSK](/guides/stablecoin/how-to-store-stablecoins/)
+- [How to Store Stablecoins on Rootstock](/guides/stablecoin/how-to-store-stablecoins/)
     - [Using Software Wallets](/guides/stablecoin/how-to-store-stablecoins/#using-software-wallets)
-- [How to Get Stablecoins on RSK](/guides/stablecoin/how-to-get-stablecoins/)
+- [How to Get Stablecoins on Rootstock](/guides/stablecoin/how-to-get-stablecoins/)
     - [Using a decentralized exchange](/guides/stablecoin/how-to-get-stablecoins/#using-a-decentralized-exchange)
     - [Using the Token Bridge](/guides/stablecoin/how-to-get-stablecoins/#using-the-token-bridge)
-- [Understanding Cross Chain Bridges: How to use the RSK Token Bridge](/guides/stablecoin/how-to-use-rsk-tokenbridge/)
+- [Understanding Cross Chain Bridges: How to use the Rootstock Token Bridge](/guides/stablecoin/how-to-use-rsk-tokenbridge/)
     - [What is a Cross Chain Bridge?](/guides/stablecoin/how-to-use-rsk-tokenbridge/#what-is-a-cross-chain-bridge)
     - [Why are cross chain bridges important?](/guides/stablecoin/how-to-use-rsk-tokenbridge/#why-are-cross-chain-bridges-important)
     - [How do Cross Chain Bridges Work?](/guides/stablecoin/how-to-use-rsk-tokenbridge/#how-do-cross-chain-bridges-work)

@@ -1,8 +1,7 @@
 ---
-menu_order: 200
-menu_title: Create
-layout: rsk
-title: rWallet
+layout: redirect
+permalink: /develop/wallet/rwallet/
+redirect: /develop/wallet/rif-wallet/
 ---
 
 rWallet is being discontinued and will soon be replaced by RIF Wallet, bringing more features, functionalities and improved UX, all powered by smart contract technology. 

@@ -37,6 +37,18 @@ body.light {
     margin: 16px 0;
   }
 
+/*Styling for centering div with images*/
+
+  .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-container img{
+    width: 30%;
+  }
+
   .the-stack {
     padding: 0;
 

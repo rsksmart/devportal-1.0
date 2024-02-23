@@ -10,7 +10,7 @@ description: "General tutorials, tutorials for ethereum developers, truffle tuto
 
 ## General tutorials
 
-- [Quick Start](/quick-start)
+- [Quick Start](/guides/quickstart/)
 - [Deploy Smart Contract](/tutorials/deploy-smart-contracts/)
 - [Interact with Smart Contract](/tutorials/interact-with-smart-contracts/)
 

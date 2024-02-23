@@ -13,7 +13,7 @@ Chainlink's decentralized oracle network provides reliable, tamper-proof inputs 
 
 ## How Chainlink integrates with RSK
 
-![Chainlink-RSK-Integration](/assets/img/solutions/Chainlink/integration-image.png)
+![Chainlink-RSK-Integration](/assets/img/solutions/Chainlink/chainlink-integration.png)
 
 ## How Chainlink Works
 

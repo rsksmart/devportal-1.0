@@ -93,7 +93,19 @@ button:focus {
   width: 90px !important;
 }
 
+/*Styling for centering div with images*/
 
+.image-container{
+  width: 200px;
+  height: 200px;
+}
+
+.image-container img{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
 
 @media (min-width:992px) {
 .dropdown>.dropdown-menu {

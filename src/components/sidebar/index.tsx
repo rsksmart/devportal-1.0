@@ -1,10 +1,9 @@
 
 import React, {createContext, useState} from "react";
 import Navigation from "./navigation";
-import Search from "../search";
 import classnames from "classnames";
 import {Link} from "gatsby";
-import { MendableSearch, MendableSearchBar } from '@mendable/search'
+import { MendableSearchBar } from '@mendable/search';
 
 interface Props {
   className?: string;

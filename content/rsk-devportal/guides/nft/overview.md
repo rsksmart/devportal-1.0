@@ -1,9 +1,9 @@
 ---
 menu_order: 200
 menu_title: Overview
-title: 'Overview | Deploy an NFT project on the RSK Testnet'
-description: 'Learn about NFTs, create, connect, and deploy to the RSK Blockchain.'
-tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
+title: 'Overview | Deploy an NFT project on the Rootstock Testnet'
+description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
+tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
 
@@ -15,7 +15,7 @@ layout: 'rsk'
 * How to set up your Pinata account
 * Create NFT metadata (JSON File)
 * Create ERC 721 smart contract 
-* Deploy smart contract on the RSK blockchain
+* Deploy smart contract on the Rootstock blockchain
 
 
 ### Prerequisites 
@@ -27,7 +27,7 @@ To follow this tutorial, you should have knowledge in:
 * Command line
 * Git 
 
-If you are not familiar with the above, it will be advisable to learn the basics by clicking the links above, before proceeding with this tutorial on how to create and deploy your NFT project to the RSK Testnet.
+If you are not familiar with the above, it will be advisable to learn the basics by clicking the links above, before proceeding with this tutorial on how to create and deploy your NFT project to the Rootstock Testnet.
 
 ### What is a Non-fungible Token (NFT)?
 
@@ -61,9 +61,9 @@ Non-fungible is a term used to describe digital assets that represent real world
 
 ### What is Hardhat?
 
-Hardhat is a development environment that enables you to compile, deploy, test, and debug your RSK software. It helps to manage and automate the recurring tasks that are inherent to the process of building Blockchain applications.
+Hardhat is a development environment that enables you to compile, deploy, test, and debug your Rootstock software. It helps to manage and automate the recurring tasks that are inherent to the process of building Blockchain applications.
 
-Check out this step-by-step tutorial on [how to set up a Hardhat project to connect to the RSK Testnet](https://developers.rsk.co/kb/hardhat-setup-on-rsk/).
+Check out this step-by-step tutorial on [how to set up a Hardhat project to connect to the Rootstock Testnet](https://developers.rsk.co/kb/hardhat-setup-on-rsk/).
 
 ### What is ethers.js?
 
@@ -71,9 +71,9 @@ Ethers.js is a JavaScript library that allows developers to interact with the bl
 
 ### What is tRBTC (Smart Bitcoin in Testnet)?
 
-The Test Smart Bitcoin (tRBTC) is the token used to pay for the execution of transactions in the RSK Testnet environment.
+The Test Smart Bitcoin (tRBTC) is the token used to pay for the execution of transactions in the Rootstock Testnet environment.
 
-Watch this video tutorial on [How to Get tRBTC from the RSK Testnet Faucet](https://www.youtube.com/watch?v=twfK8Rd5hak). 
+Watch this video tutorial on [How to Get tRBTC from the Rootstock Testnet Faucet](https://www.youtube.com/watch?v=twfK8Rd5hak). 
 
 ### What is IPFS?
 

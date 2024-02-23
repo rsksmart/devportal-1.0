@@ -2,14 +2,12 @@
 menu_order: 200
 menu_title: Overview
 title: "Overview - The Complete Guide to Stablecoins"
-description: "Learn about stablecoins, types of stablecoins, where to get them, and how to use the RSK Tokenbridge to cross tokens"
-tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain
+description: "Learn about stablecoins, types of stablecoins, where to get them, and how to use the Rootstock Tokenbridge to cross tokens"
+tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain
 layout: rsk
 ---
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
-
-RSK is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin network to empower people and improve the quality of life of millions.
+Rootstock is the most secure smart contract network in the world and enables decentralized applications secured by the Bitcoin network to empower people and improve the quality of life of millions.
 
 In this section, we will cover what stablecoins are, and the types of stablecoins.
 
@@ -41,12 +39,6 @@ Synthetic stablecoins aim to target a return to a reference asset, such as the U
 > Another way is through a peg that is actively managed using an algorithmic monetary policy or smart contract (eg Terra or Ampleforth).
 > These are often used in conjunction with oracles that provide on-chain access to price feeds for fiat and blockchain asset pairs.
 
-## Stablecoin Gas fee Comparison tool 
-
-This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
-
-[Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co)
-
 ## Next
 
 Be sure to check out our next article in this guide,
@@ -58,15 +50,13 @@ If you would like to delve deeper, here are some resources and tools that we rec
 
 **Resources**:
 
-- [Visit RSK Developers Portal](https://github.com/rsksmart/devportal) 
+- [Visit Rootstock Github](https://github.com/rsksmart/devportal) 
 - [Dollar on Chain: A stablecoin for bitcoiners, by bitcoiners](https://moneyonchain.com/blog/dollar-on-chain-chain-a-bitcoin-stablecoin-by-bitcoiners/)
-- [Defiant: Solutions on RSK](https://developers.rsk.co/solutions/defiant/)
-- [RSK Token Bridge](https://tokenbridge.rsk.co/)
-- [Webinar: RSK - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
+- [Defiant: Solutions on Rootstock](https://developers.rsk.co/solutions/defiant/)
+- [Rootstock Token Bridge](https://tokenbridge.rsk.co/)
+- [Webinar: Rootstock - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
 - [Build on Bitcoin using rDAI](https://youtu.be/2yApyI9Zvu8)
 - [Ask any Difference](https://askanydifference.com/)
-- [Difference between a Cryptocurrency and Token](https://developers.rsk.co/kb/get-crypto-on-rsk/cryptocurrency-vs-token/)
+- [Difference between a Cryptocurrency and Token](/guides/get-crypto-on-rsk/cryptocurrency-vs-token/)
 - [What are Stablecoins?](https://youtu.be/JHzyQS1rc_s)
-- [RSKSwap](https://app.rskswap.com/swap)
 - [RSK Explorer](https://explorer.rsk.co/)
-- [Stablecoin Gas Fee Comparison Tool](/guides/stablecoin/stablecoin-on-bitcoin/#stablecoin-gas-fee-comparison-tool)

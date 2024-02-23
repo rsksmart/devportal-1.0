@@ -2,8 +2,8 @@
 layout: rsk
 title: Reproducible Build
 menu_title: Reproducible Build
-tags: rsk, node, compile, reproducible, checksum
-description: "A deterministic build process used to build RSK node JAR file. Provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. Makes sure that the same tested dependencies are used and statically built into the executable."
+tags: rsk, node, compile, reproducible, checksum, rootstock
+description: "A deterministic build process used to build Rootstock node JAR file. Provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. Makes sure that the same tested dependencies are used and statically built into the executable."
 menu_order: 7
 permalink: /rsk/node/reproducible/
 render_features: 'custom-terminals'
@@ -14,7 +14,7 @@ Gradle building
 
 *Setup instructions for gradle build in docker container.*
 
-This is a deterministic build process used to build RSK node JAR file. It provides a way to be reasonable sure that the JAR is built from GitHub Rskj repository. It also makes sure that the same tested dependencies are used and statically built into the executable.
+This is a deterministic build process used to build Rootstock node JAR file. It provides a way to be reasonable sure that the JAR is built from GitHub RSKj repository. It also makes sure that the same tested dependencies are used and statically built into the executable.
 
 It's strongly suggested to follow the steps by yourself to avoid any kind of contamination in the process.
 
@@ -90,7 +90,7 @@ BUILD SUCCESSFUL in 55s
 14 actionable tasks: 13 executed, 1 up-to-date
 ```
 
-If you are not familiar with Docker or the ```Dockerfile``` format: what this does is use the Ubuntu 16.04 base image and install ```git```, ```curl```, ```gnupg-curl``` and ```openjdk-8-jdk```, required for building the RSK node.
+If you are not familiar with Docker or the ```Dockerfile``` format: what this does is use the Ubuntu 16.04 base image and install ```git```, ```curl```, ```gnupg-curl``` and ```openjdk-8-jdk```, required for building the Rootstock node.
 
 
 Run build
@@ -124,7 +124,7 @@ Check Results
 -------------
 After running the build process, a JAR file will be created in ```/rskj/rskj-core/build/libs/```, into the docker container.
 
-You can check the SHA256 sum of the result file and compare it to the one published by RSK for that version.
+You can check the SHA256 sum of the result file and compare it to the one published by Rootstock for that version.
 
 ```bash
 70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f  rskj-core-5.2.0-FINGERROOT-all.jar
@@ -138,26 +138,9 @@ For SHA256 sum of older versions check the [releases page](https://github.com/rs
 
 If you check inside the JAR file, you will find that the dates of the files are the same as the version commit you are using.
 
-Run RSK Node (Optional)
-======================
-
-To start an RSK Node using the Dockerfile, run the command below:
-
-```bash
-$ docker run -d rskj/5.2.0-fingerroot
-```
-
-Extract JAR from image (Optional)
-================================
-
-```bash
-$ cid=$(docker run -d rskj/5.2.0-fingerroot /bin/true)
-$ docker cp "$cid":/home/rsk/ ./libs/
-$ docker rm "$cid"
-```
-
 More Resources
 ==============
 
+* [Install Rootstock Node](/rsk/node/install/)
 * See [Reproducible builds](https://github.com/rsksmart/reproducible-builds/tree/master/rskj)
 * Check out the [latest rskj releases](https://github.com/rsksmart/rskj/releases)

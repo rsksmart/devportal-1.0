@@ -9,7 +9,6 @@ layout: 'rsk'
 
 [Coinfirm](https://www.coinfirm.com/) is an industry leading analytics and compliance platform. Its AML solutions are trusted to best analyze and manage risk.
 
-![Coinfirm - banner](/assets/img/solutions/coinfirm/coinfirm-banner.png)
 
 ## How Coinfirm integrates with RSK
 

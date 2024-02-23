@@ -1,7 +1,7 @@
 ---
 layout: rsk
 title: RBank
-menu_order: 300
+# menu_order: 300
 tags: knowledgebase, rsk, rif , rbank, open-finance, tools, building blocks
 description: "RBank: A lending solution on RSK, based on the Compound money market protocol"
 ---

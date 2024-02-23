@@ -1,115 +1,21 @@
 ---
 layout: rsk
-title: Install
+menu_title: Overview
+section_title: Install Node
+title: Overview
 menu_order: 4
-permalink: /rsk/node/install/
+render_features: 'tables-with-borders'
 ---
 
-<style>
-  img.node-setup-img{
-    height:25px;
-  }
-</style>
+Rootstock nodes can be installed on Ubuntu OS, Windows, Docker and Java. Here, we provide step-by-step instructions for all supported dev environments. Depending on your network performance, it usually takes 10 to 15 mins to setup a working node on Mainnet.
 
-Ensure that your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing the RSK nodes on it.
+> Ensure that your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing the Rootstock nodes on it.
 
-### Install RSK Node and Join the RSK Mainnet
+## Supported Environments
 
-RSK nodes can be installed on all major platforms, including Linux, Windows, and Mac. Here we provide step-by-step instructions for all supported platforms. Depending on your network performance, it usually takes 10 to 15 mins to setup a working node on Mainnet.
-
-#### Supported Systems and Methods
-
-<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">Type</th>
-      <th scope="col">Platform</th>
-      <th scope="col">Supported Methods</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td scope="row">Local</td>
-      <td scope="row">Linux</td>
-      <td>
-        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>,
-        <a href="/rsk/node/install/centos">CentOS</a>,
-        <a href="/rsk/node/install/java">Fat JAR</a>,
-        <a href="/rsk/node/install/docker">Docker</a>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Local</td>
-      <td scope="row">Mac</td>
-      <td>
-        <a href="/rsk/node/install/java">Fat JAR</a>,
-        <a href="/rsk/node/install/docker">Docker</a>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Local</td>
-      <td scope="row">Windows</td>
-      <td>
-        <a href="/rsk/node/install/java">Fat JAR</a>,
-        <a href="/rsk/node/install/docker">Docker</a>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Cloud</td>
-      <td scope="row">AWS</td>
-      <td>
-        <a href="/rsk/node/install/aws">AWS AMI</a>,
-        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>,
-        <a href="/rsk/node/install/docker">Docker</a>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Cloud</td>
-      <td scope="row">Azure</td>
-      <td>
-        <a href="/rsk/node/install/azure">Azure VM Image</a>,
-        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>,
-        <a href="/rsk/node/install/docker">Docker</a>
-      </td>
-    </tr>
-    <tr>
-      <td scope="row">Cloud</td>
-      <td scope="row">Google</td>
-      <td>
-        <a href="/rsk/node/install/ubuntu">Ubuntu Package</a>,
-        <a href="/rsk/node/install/java">Fat JAR</a>,
-        <a href="/rsk/node/install/docker">Docker</a>
-      </td>
-    </tr>
-  </tbody>
-</table>
-
-#### Using Ubuntu Package
-
-<img class="node-setup-img" src="https://assets.ubuntu.com/v1/29985a98-ubuntu-logo32.png" alt="ubuntu logo"/>
-
-Visit [Setup Node on Ubuntu](/rsk/node/install/operating-systems/ubuntu/) for instructions on installing RSK Node on ubuntu systems
-
-#### Using Fat(or Uber) JAR
-
-<img class="node-setup-img" src="https://www.pngkey.com/png/detail/264-2646582_logo-transparent-background-java.png" alt="java logo"/>
-
-Visit [Setup Node through JAR](/rsk/node/install/operating-systems/java/) for instructions on installing RSK Node on any system with Fat JAR or Uber JAR.
-
-#### Using Docker Container
-
-<img class="node-setup-img" height="25px" src="../../../assets/img/docker-logo.png" alt="docker logo"/>
-
-Visit [Setup Node through Docker](/rsk/node/install/operating-systems/docker/) for instructions on installing RSK Node as a docker container on any system.
-
-#### Using AWS AMI
-
-<img class="node-setup-img" height="25px" src="https://kopano.com/wp-content/uploads/2018/04/AWSCloud.png" alt="aws logo"/>
-
-Visit [Setup Node through AWS AMI](/rsk/node/install/cloud-fast-deploy/aws/) for instructions on installing RSK Node on a AWS instance through marketplace AMI.
-
-#### Using Azure
-
-<img class="node-setup-img" height="25px" src="https://scaidata.com/assets/img/scaidata_business_intelligence_azure_marketplace_azure_cloud1.png.png" alt="azure logo"/>
-
-Visit [Setup Node through Azure](/rsk/node/install/cloud-fast-deploy/) for instructions on installing RSK Node on a Azure instance through marketplace image resource.
+| Environments | How to Install |
+| --- | --- |
+| [Ubuntu Package](/rsk/node/install/operating-systems/ubuntu/) | Visit [Setup Node on Ubuntu](/rsk/node/install/operating-systems/ubuntu/) for instructions on installing Rootstock Node on ubuntu systems |
+| [Java - Fat / Uber JAR](/rsk/node/install/operating-systems/java/) | Visit [Setup Node using JAR](/rsk/node/install/operating-systems/java/) for instructions on installing Rootstock Node on any system with Fat JAR or Uber JAR. |
+| [Docker](https://hub.docker.com/r/rsksmart/rskj) |  Visit the [Docker Hub](https://hub.docker.com/r/rsksmart/rskj) for instructions on installing Rootstock Node as a docker container on any system. |
+| [Windows](/rsk/node/contribute/windows/) | Visit [Setup Node on Windows OS](/rsk/node/contribute/windows/) |

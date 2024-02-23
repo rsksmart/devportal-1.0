@@ -1,12 +1,13 @@
 ---
-menu_order: 300
+# menu_order: 300
 menu_title: Step 3 - Edit Smart Contract
 layout: rsk
 title: Quick Start - Step 3
 tags: quick-start, solidity
 description: 'quick start - smart contracts, solidity'
-collection_order: 30
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 # Step 3 : Edit Smart Contract
 

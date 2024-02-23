@@ -1,7 +1,7 @@
 ---
 layout: rsk
 menu_title: Ensure security chain
-title: Ensure security chain of RskJ source code
+title: Ensure security chain of RSKj source code
 tags: rsk, rskj, node, security, verification
 description: "All the different ways that you can verify RSKj: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
 menu_order: 8
@@ -13,7 +13,7 @@ render_features: 'custom-terminals'
 
 The authenticity of the source code must be verified by checking the signature of the release tags in the official Git repository. The authenticity of the binary dependencies is verified by Gradle after following the steps below to install the necessary plugins.
 
-## Download RSK Release Signing Key public key
+## Download Rootstock Release Signing Key public key
 
 For Linux based OS (Ubuntu for example), it's recommended to install `curl` and `gnupg-curl` in order to download the key through HTTPS.
 We recommend using GPG v1 to download the public key because GPG v2 encounters problems when connecting to HTTPS key servers. You can also download the key using curl, wget or a web browser but always check the fingerprint before importing it.
@@ -42,7 +42,7 @@ We recommend using GPG v1 to download the public key because GPG v2 encounters p
 
 ## Verify the signature of SHA256SUMS.asc
 
-The file`SHA256SUMS.asc` is signed with RSK public key and includes SHA256 hashes of the files necessary to start the build process.
+The file`SHA256SUMS.asc` is signed with Rootstock public key and includes SHA256 hashes of the files necessary to start the build process.
 
 [](#top "multiple-terminals")
 - Linux, Mac OSX

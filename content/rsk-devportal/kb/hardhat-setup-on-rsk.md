@@ -1,16 +1,15 @@
 ---
 menu_order: 1900
-menu_title: Set up Hardhat project for RSK Testnet
-title: "How to set up a Hardhat project for RSK Testnet"
-description: "Learn about Hardhat, creating and configuring a new project, and connect to the RSK Blockchain"
+menu_title: Set up Hardhat project for Rootstock Testnet
+title: "How to set up a Hardhat project for Rootstock Testnet"
+description: "Learn about Hardhat, creating and configuring a new project, and connect to the Rootstock Blockchain"
 tags: hardhat, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain
 render_features: 'custom-terminals'
 layout: rsk
 ---
 
-![Banner Image](/assets/img/kb/hardhat-setup-on-rsk/banner-hardhat-project-on-rsk.jpg)
 
-Welcome to the tutorial on how to set up a Hardhat project for RSK Testnet. In this tutorial, we'll do the following steps:
+Welcome to the tutorial on how to set up a Hardhat project for Rootstock Testnet. In this tutorial, we'll do the following steps:
 
 - What is Hardhat?
 - Setting up your environment 
@@ -31,7 +30,7 @@ If you are not familiar with the above, it will be advisable to learn the basics
 
 ## What is Hardhat?
 
-Hardhat is a development environment that enables a developer to compile, deploy, test, and debug your RSK software. It helps to manage and automate the recurring tasks that are inherent to the process of building blockchain applications. 
+Hardhat is a development environment that enables a developer to compile, deploy, test, and debug your Rootstock software. It helps to manage and automate the recurring tasks that are inherent to the process of building blockchain applications. 
 
 ## 1. Setting up your node.js environment 
 
@@ -95,7 +94,7 @@ module.exports = {
 };
 ```
 
-### 2.1. Configure `hardhat.config.js` to connect to RSK Testnet
+### 2.1. Configure hardhat.config.js to connect to Rootstock Testnet
 
 To set up your config, you have to export an object from hardhat.config.js. This object can have entries like `defaultNetwork`, `networks`, `solidity`, `paths` and `mocha`. 
 
@@ -117,7 +116,7 @@ Hardhat Network has first-class support of Solidity. It always knows which smart
 
 ### 2.4. JSON-RPC based networks
 
-These are networks that connect to an external node. Nodes can run on your computer, like Ganache, or remotely, like RSK Testnet. We'll be configuring a network connection named `rsktestnet` for this tutorial.
+These are networks that connect to an external node. Nodes can run on your computer, like Ganache, or remotely, like Rootstock Testnet. We'll be configuring a network connection named `rsktestnet` for this tutorial.
 
 Include the following code in your `hardhat.config.js` file
 
@@ -263,7 +262,7 @@ if (
 console.log(`Minimum gas price Testnet: ${minimumGasPriceTestnet}`);
 ```
 
-The above script enables us to get the updated gas price from RSK Testnet, as  `minimumGasPriceTestnet`.
+The above script enables us to get the updated gas price from Rootstock Testnet, as  `minimumGasPriceTestnet`.
 
 
 ### The updated `hardhat.config.js` file:
@@ -414,7 +413,7 @@ Next, we declare a variable called `owner` to hold the address of the owner of t
 
 The address type comes in two flavours, which are largely identical:
 
-* `address`: Holds a 20 byte value (size of an RSK address).
+* `address`: Holds a 20 byte value (size of an Rootstock address).
 * `address payable`: Same as address, but with the additional members transfer and send.
 
 The idea behind this distinction is that address payable is an address you can send RBTC to, while a plain address cannot be sent RBTC. Read more on [Variable Declaration in Solidity](https://docs.soliditylang.org/en/v0.7.1/style-guide.html?highlight=bool#mappings)
@@ -557,7 +556,7 @@ The contract has been successfully compiled and it's ready to be used.
 
 ### Testing the smart contract
 
-Writing automated tests when building smart contracts is of crucial importance. In our tests we're going to use ethers.js to interact with the RSK contract we built in the previous section, and Mocha as our test runner.
+Writing automated tests when building smart contracts is of crucial importance. In our tests we're going to use ethers.js to interact with the Rootstock contract we built in the previous section, and Mocha as our test runner.
 
 ### 5. Writing tests
 
@@ -860,7 +859,7 @@ Run the command below to deploy your application
 npx hardhat run scripts/deploy.js
 ```
 
-### 7. Perform an actual deployment to RSK Testnet using the below command
+### 7. Perform an actual deployment to Rootstock Testnet using the below command
 
 
 ```

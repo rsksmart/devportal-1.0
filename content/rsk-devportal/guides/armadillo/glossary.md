@@ -7,8 +7,6 @@ description: 'The guardian of RSK'
 tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-mining, blockchain
 ---
 
-[![Armadillo-banner](/assets/img/guides/armadillo/Armadillo_banner.png)](/guides/armadillo/)
-
 ## Explanation of Key Terms
 
 ### Armadillo

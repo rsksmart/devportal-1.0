@@ -1,5 +1,5 @@
 ---
-menu_order: 500
+# menu_order: 500
 menu_title: Step 5 - Run Smart Contract
 layout: rsk
 title: Quick Start - Step 5
@@ -7,6 +7,8 @@ tags: quick-start, smart-contract, truffle, web3
 description: 'quick start - smart contract interactions through web3 REPL'
 collection_order: 50
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 # Step 5 : Run Smart Contracts
 

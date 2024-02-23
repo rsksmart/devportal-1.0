@@ -690,7 +690,7 @@ function renderMultipleTerminalsListElem(ul, li, liIdx) {
 
 function renderMultipleTerminalsListElemOs(osText, osIdx, oses, li, liIdx, ul) {
   var os = (osText.split(' ')[0]).toLowerCase();
-  if (['linux', 'mac', 'windows'].indexOf(os) < 0) {
+  if (['android', 'ios', 'linux', 'mac', 'windows'].indexOf(os) < 0) {
     console.warn(
       `Child element #${liIdx} does not reference a supported OS terminal.`,
       ul,

@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 menu_title: Truffle test
 layout: rsk
 title: Testing smart contracts using Truffle
@@ -7,6 +6,8 @@ tags: tutorial, rsk, truffle, test
 description: "How to create and run tests on your RSK smart contracts using Truffle."
 render_features: "custom-terminals"
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 In this tutorial, I will show you step-by-step how to create and run tests in smart contracts using Truffle framework connected to an RSK local node.
 

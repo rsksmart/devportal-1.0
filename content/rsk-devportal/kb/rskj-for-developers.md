@@ -11,7 +11,7 @@ layout: 'rsk'
 
 If you are developing smart contracts, developing DApps, or participating in a hackathon, you are likely to want to iterate fast, and therefore need quicker feedback loops.
 
-Running RSKj in Regtest mode is the best fit for these needs.
+Running RSKj in `Regtest` mode is the best fit for these needs.
 
 ## Steps
 
@@ -19,6 +19,8 @@ Running RSKj in Regtest mode is the best fit for these needs.
 
 - The RSKj executable is a JAR file, and requires Java to run.
 - Install the [Java 8 JDK](https://www.java.com/download/).
+
+> See how to [Install a Rootstock Node](/rsk/node/install/operating-systems/)
   
 ### Download RSKj JAR
 
@@ -58,11 +60,13 @@ java -cp ${JAR} co.rsk.Start \
 
 ### Developer Tools
 
-- [Configuring Truffle for RSK](/kb/configure-truffle-to-rsk/)
+- [Quick Start Guide](/guides/quickstart/)
+- [Configuring Hardhat for Rootstock](/kb/hardhat-setup-on-rsk/)
+- [More tools](/tools/)
 
 ## Debugging
 
-- [How to debug transactions in an RSK network?](https://stackoverflow.com/q/66144175/194982)
+- [How to debug transactions in the Rootstock network?](https://stackoverflow.com/q/66144175/194982)
 
 ## Crashes
 
@@ -99,13 +103,13 @@ java.net.BindException: Address already in use
 ... that means that another process is probably already bound to that port.
 You can check this using `lsof` on Linux and Mac OSX (El Capitan and later).
 
-```
+```shell
 lsof -P -i tcp:4444
 ```
 
 If you see output similar to this:
 
-```
+```shell
 COMMAND   PID  USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
 java    67228 bguiz  190u  IPv6 0x365a69c9fe805921      0t0  TCP localhost:4444 (LISTEN)
 ```
@@ -122,8 +126,8 @@ Your options are to:
 RSKj stores all data in a directory on disk.
 This defaults to `${HOME}/.rsk/${NETWORK}`.
 
-For example, on Linux, if your username is `bguiz` and RSK is running in `regtest`,
-the database directory default is `/home/bguiz/.rsk/regtest`.
+For example, on Linux, if your username is `joe` and Rootstock is running in `regtest`,
+the database directory default is `/home/joe/.rsk/regtest`.
 
 The data stored in this directory can get corrupted for several reasons,
 such as improperly shutting down the node.
@@ -137,14 +141,14 @@ you have several options:
 
 ### RPC
 
-[Remote procedure calls (JSON-RPC)](/rsk/node/architecture/json-rpc/) are the primary interface through which RSK nodes communicate over the network.
+[Remote procedure calls (JSON-RPC)](/rsk/node/architecture/json-rpc/) are the primary interface through which Rootstock nodes communicate over the network.
 
 JSON-RPC is available over two network transport protocols: **HTTP** and **WebSockets**
 
-- [Configuring and using RPC over HTTP](/rsk/node/architecture/json-rpc/)
-- [Configuring and using RPC over WebSockets](/rsk/node/architecture/json-rpc/)
+- [Configuring and using RPC over HTTP](/rsk/node/architecture/json-rpc/transport-protocols#http-transport-protocol)
+- [Configuring and using RPC over WebSockets](/rsk/node/architecture/json-rpc/transport-protocols#websockets-transport-protocol)
 
-> Note that [RSK public nodes](/rsk/node/architecture/json-rpc/)
+> Note that [Rootstock public nodes](/rsk/node/architecture/json-rpc/)
 > do not expose WebSockets, they are HTTP only.
-> To work around this, you may either run your own RSK node,
-> or use a third-party node provider, such as [Getblock](/solutions/getblock/).
+> To work around this, you may either run your own Rootstock node,
+> or use a third-party node provider, such as [Getblock](/solutions/getblock/) or [NowNodes](/solutions/nownodes/).

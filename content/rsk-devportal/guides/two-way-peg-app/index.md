@@ -8,8 +8,6 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock
 layout: rsk
 ---
 
-![2 way peg app banner](/assets/img/guides/two-way-peg-app/banner.jpg)
-
 The [2 way peg](https://app.2wp.rootstock.io/) is a protocol that converts BTC to RBTC and vice versa. It is secured by the [powpeg](/rsk/architecture/powpeg/), which is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. See the history of the [Powpeg](/rsk/architecture/powpeg/).
 
 To get started, see below for how to perform a **peg-in (BTC - RBTC)** or **peg-out (RBTC - BTC)** using the 2 way peg app.

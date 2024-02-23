@@ -7,8 +7,6 @@ tags: knowledge-base, rskj, rsk, node, blockchain, developers, block-explorer
 layout: 'rsk'
 ---
 
-![Banner Image](/assets/img/kb/verify-smart-contract/banner-image.jpg)
-
 Smart contracts are a means to execute code and store data on a blockchain.
 To understand how smart contracts work, read [What is a Smart Contract?](https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part1-overview/#what-is-a-smart-contract)
 

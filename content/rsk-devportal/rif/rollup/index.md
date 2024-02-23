@@ -26,7 +26,7 @@ To get started, read more in the [RIF Rollup Documentation | Overview](overview/
 
 ## For Developers
 
-If you are interested in developing with RIF Rollup. See the [developer reference guide](./dev-reference/) or use the [RIF Rollup Starter Kit](./dev-reference/starter-kit/).
+If you are interested in developing with RIF Rollup. See the [developer reference guide](./dev-reference/).
 
 ## Contact
 

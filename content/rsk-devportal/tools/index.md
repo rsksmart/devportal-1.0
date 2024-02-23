@@ -22,9 +22,9 @@ Explore a suite of fully compatible developer tools and guides designed to empow
     </a>
     </div>
     <div class="item">
-        <a href="https://faucet.rsk.co/" target="blank">
+        <a href="https://faucet.rootstock.io/" target="blank">
         <img src="/assets/img/tools/5-testnet-faucet.png" alt="Testnet Faucet">
-        <a class="company-name" href="https://faucet.rsk.co/" target="blank">Testnet Faucet</a>
+        <a class="company-name" href="https://faucet.rootstock.io/" target="blank">Testnet Faucet</a>
     </a>
     </div>
     <div class="item">
@@ -41,6 +41,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
     </div>
 </div>
 
+<<<<<<< HEAD
 | Tools                                          | Category                        | URL                                                                                     |
 | ---------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------- |
 | 2 Way Peg App                                  | Bridges                         | https://dev.rootstock.io/guides/two-way-peg-app/                                        |
@@ -86,3 +87,82 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | UseDapp                                        | Developer Platforms             | https://usedapp.io/                                                                     |
 | Wallet                                         | RIF Libraries                   | https://dev.rootstock.io/rif/wallet/                                                    |
 | Web3.js                                        | Libraries                       | https://web3js.readthedocs.io/en/v1.10.0/                                               |
+=======
+## Tutorials and Guides
+- [Knowledge base](/kb/)
+- [Quick Start](/guides/quickstart/)
+
+### Starter Kits
+- [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippets)
+
+## Libraries
+- [Web3.js](https://web3js.readthedocs.io/en/v1.10.0/)
+- [Pre-compiled ABIs](/develop/libs/rsk-precompilied-abis/)
+- [JSON-RPC](/rsk/node/architecture/json-rpc/)
+
+### RIF Libraries
+- [RNS](/rif/rns/libs)
+- [Wallet](/rif/wallet/)
+- [Relay](/rif/relay/)
+- [rLogin](/rif/rlogin/libraries/)
+
+## Dev Environments
+- [Hardhat](/kb/hardhat-setup-on-rsk/)
+- [Remix](/kb/remix-and-metamask-with-rsk-testnet/)
+- [Smart Contract Compiler](/kb/compile-smart-contracts-go/)
+- [Token Generator](/kb/create-a-token//)
+
+## Developer Platforms
+- [Forward Protocol](https://forwardprotocol.io/)
+- [Thirdweb](https://thirdweb.com/)
+- [UseDapp](https://usedapp.io/)
+
+## Node RPC
+- [GetBlock](https://getblock.io/)
+- [NOWNodes](https://nownodes.io/)
+
+## Data and Analytics
+- [Rootstock Stats](https://stats.rsk.co/)
+- [Covalent](/solutions/covalent/)
+- [Tenderly](/kb/build-with-tenderly/)
+- [DappRadar](https://dappradar.com/)
+- [Coinfirm](https://www.coinfirm.com/products/aml-platform/)
+- [DeFiLlama](https://defillama.com/)
+
+## Explorers
+- [Rootstock Explorer](/tools/explorer/)
+- [Blockscout](https://rootstock.blockscout.com/)
+- [RIF Rollup Explorer](/rif/rollup/dapps/)
+
+## Bridges
+- [Rootstock <> Ethereum Tokenbridge](/tools/tokenbridge/)
+- [PowPeg](/rsk/architecture/powpeg/)
+    * [2 Way Peg App](/guides/two-way-peg-app/)
+- [Sovryn Fast BTC](https://wiki.sovryn.com/en/sovryn-dapp/bridge)
+- [MtPelerin](https://www.mtpelerin.com/exchange-crypto?ssa=0.01&wsc=BTC&wdc=RBTC&wsa=0.01)
+
+## Oracles
+- [API3](https://api3.org/)
+
+## Faucet
+- [Rootstock Faucet](/tools/faucet/)
+
+## Gas
+- [Rootstock Gas Station](/develop/apps/tools/gas-station/)
+
+## Wallet
+- [Rootstock Wallets](/develop/wallet/use/)
+
+## SDKs
+- [RIF Relay SDK](https://github.com/rsksmart/rif-relay-sample-dapp#rif-relaying-services-sdk-sample-dapp)
+- [RIF Rollup](https://github.com/rsksmart/rif-rollup-js-sdk)
+
+## Code Quality
+- [SolidityScan](https://solidityscan.com/)
+- [Sourcify.dev](https://sourcify.dev)
+
+## Developer Support and Resources
+- [Discord](https://dev.rootstock.io/discord/)
+- [Stackoverflow](https://stackoverflow.com/questions/tagged/rsk)
+- [FAQs](/kb/faqs/)
+>>>>>>> master

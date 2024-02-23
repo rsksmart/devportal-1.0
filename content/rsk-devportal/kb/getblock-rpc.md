@@ -3,7 +3,7 @@ menu_order: 1700
 menu_title: RPC via GetBlock
 title: 'RPC via GetBlock'
 description: 'Learn how to use the API methods within GetBlock to connect to an RSK node'
-tags: GetBlock, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, tutorial, docs, api, websocket, json-rpc
+tags: GetBlock, rsk-solutions, rsk, rootstock, bitcoin, defi, dApps, blockchain, node, tutorial, docs, api, websocket, json-rpc
 render_features: 'custom-terminals'
 layout: 'rsk'
 ---
@@ -11,11 +11,11 @@ layout: 'rsk'
 ![GetBlock - Banner](/assets/img/solutions/getblock/getblock_logo.png)
 
 [GetBlock](/solutions/getblock/) is a provider of access to full nodes of the most popular cryptocurrencies:
-- Instant connection to blockchain nodes of 45+ cryptocurrencies including  RSK, Bitcoin (BTC), Ethereum (ETH), among others
+- Instant connection to blockchain nodes of 45+ cryptocurrencies including  Rootstock, Bitcoin (BTC), Ethereum (ETH), among others
 - Supports JSON-RPC, REST and Websocket APIs
 - Free plan — up to 40K requests/day
 
-In this tutorial, you will learn how to connect to an RSK node using different endpoints or API methods available within GetBlock.
+In this tutorial, you will learn how to connect to a Rootstock node using different endpoints or API methods available within GetBlock.
 
 ## How to make a JSON-RPC request over HTTP
 

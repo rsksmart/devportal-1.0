@@ -1,12 +1,13 @@
 ---
-menu_order: 200
+# menu_order: 200
 menu_title: Step 2 - Install Truffle & Ganache
 layout: rsk
 title: Quick Start - Step 2
 tags: quick-start, truffle, ganache
 description: 'quick start - tutorial project, install truffle, install ganache'
-collection_order: 20
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 # Step 2 : Install Truffle and Ganache
 

@@ -1,11 +1,13 @@
 ---
-menu_order: 3300
+# menu_order: 3300
 menu_title: Truffle Boxes with RSK
 layout: rsk
 title: Using Truffle Boxes with RSK
 tags: tutorial, rsk, truffle
 description: "setup RSKj Regtest; configure Truffle to connect to both Regtest and Testnet; write, compile, and test solidity smart contracts using Truffle; deploy smart contracts to multiple networks (Regtest and Testnet)"
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 What we will do in this workshop:
 

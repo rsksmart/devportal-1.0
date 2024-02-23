@@ -1,5 +1,5 @@
 ---
-menu_order: 400
+# menu_order: 400
 menu_title: Step 4 - Compile & Deploy
 layout: rsk
 title: Quick Start - Step 4
@@ -7,6 +7,8 @@ tags: quick-start, compile, deploy, regtest, truffle
 description: 'quick start - compile smart contracts, deploy smart contracts to regtest'
 collection_order: 40
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 # Step 4 : Compile and Deploy Contracts
 

@@ -1,7 +1,7 @@
 ---
 layout: redirect
 permalink: /wallet/rwallet/
-redirect: /develop/wallet/use/
+redirect: /develop/wallet/rif-wallet/
 ---
 
 > rWallet is being discontinued and will soon be replaced by RIF Wallet, bringing more features, functionalities and improved UX, all powered by smart contract technology. If you are an rWallet user, we advise that you restore your seed in a different wallet to ensure the seamless transition of your assets until RIF Wallet becomes available. 

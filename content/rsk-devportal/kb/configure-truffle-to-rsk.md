@@ -1,5 +1,5 @@
 ---
-menu_order: 400
+# menu_order: 400
 menu_title: Config Truffle for RSK
 title: 'How to configure Truffle to connect to RSK'
 description: 'using the new provider.pollingInterval and deploymentPollingInterval options in truffle-config.js'
@@ -7,7 +7,7 @@ tags: knowledge-base, truffle, rsk, javascript
 layout: 'rsk'
 ---
 
-![Configure-Truffle-to-RSK](/assets/img/kb/ConfigureTruffleRSK/rsk-truffle-polling-interval.png)
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 Understanding Truffle's default configuration values (based on Ethereum), in particular surrounding polling intervals; and using 2 relatively new config options allows one to configure Truffle to better connect to an RSK node.
 

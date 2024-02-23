@@ -45,7 +45,7 @@ Note: To set up a Liquality or a Metamask wallet. Check here for a step by step 
 ![liquality - connection](/assets/img/guides/two-way-peg-app/liquality/connection.png)
 
 **Step 3**: Choose the asset you want to use for the transaction
-![liquality - assets](/assets/img/guides/two-way-peg-app/liquality/connection.png)
+![liquality - assets](/assets/img/guides/two-way-peg-app/liquality/assets.png)
 
 **Step 4**: Click on the menu by the right, and this will open up a list of options. 
 

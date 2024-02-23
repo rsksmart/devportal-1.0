@@ -10,7 +10,7 @@ render_features: 'tables-with-borders'
 
 See [CLI flags](../cli/) for command line flag options.
 
-> **Important Notice: From [RSKj HOP v4.2.0](https://github.com/rsksmart/rskj/releases/tag/HOP-4.2.0), RocksDB is no longer experimental. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
+> **Important Notice: From [RSKj HOP v4.2.0](https://github.com/rsksmart/rskj/releases/), RocksDB is no longer experimental. See [using RocksDB](/rsk/node/configure/#using-rocksdb)**.
 
 ## Advanced Configuration
 
@@ -129,8 +129,8 @@ Options related to experimental import sync v0.1.
 Selects the database that will be used to store the information.
 Possible options are:
 
-* `leveldb` (default)
-* `rocksdb`
+* `leveldb` 
+* `rocksdb` (default)
 
 If you wish to switch between the different storage options,
 for example from `leveldb` to `rocksdb` or vice versa, 

@@ -1,19 +1,17 @@
 ---
 menu_order: 500
 menu_title: How to Store Stablecoins
-title: "How to Store Stablecoins on RSK - The Complete Guide to Stablecoins"
-description: "Learn about how to store stablecoins on RSK"
-tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain
+title: "How to Store Stablecoins on Rootstock - The Complete Guide to Stablecoins"
+description: "Learn about how to store stablecoins on Rootstock"
+tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain
 layout: rsk
 ---
 
-In this section, we will cover how to store stablecoins on RSK.
-
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
+In this section, we will cover how to store stablecoins on Rootstock.
 
 Stablecoins can be stored using crypto-wallets. 
 
-Some crypto wallets support smart contracts when they connect to blockchain networks such as RSK. They allow a user to invoke smart contract functions. Recall one of the differences between tokens and cryptocurrency, which is that tokens are implemented using smart contracts. Thus crypto wallets which understand smart contracts are necessary to store and transfer tokens.
+Some crypto wallets support smart contracts when they connect to blockchain networks such as Rootstock. They allow a user to invoke smart contract functions. Recall one of the differences between tokens and cryptocurrency, which is that tokens are implemented using smart contracts. Thus crypto wallets which understand smart contracts are necessary to store and transfer tokens.
 
 Read more in [What Wallets Do](https://developers.rsk.co/kb/get-crypto-on-rsk/rbtc-wallets/#what-wallets-do).
 
@@ -27,13 +25,13 @@ Also, watch this explainer video below to understand how crypto wallets work:
 
 ### Using Software Wallets
 
-You can add any of these stablecoins to a wallet integrated with the RSK network that lets you add custom tokens. This includes [Metamask](https://metamask.io/), or any wallet that supports [WalletConnect](https://walletconnect.com/).
+You can add any of these stablecoins to a [wallet integrated with the Rootstock network](/develop/wallet/use/) that lets you add custom tokens. This includes [Metamask](https://metamask.io/), or any wallet that supports [WalletConnect](https://walletconnect.com/).
 
-The following wallets can also be used to store stablecoins, as these wallets both support RSK and the ERC20 Token Standard.
+The following wallets can also be used to store stablecoins, as these wallets both support Rootstock and the ERC20 Token Standard.
 
 **Defiant**
 
-[Defiant](https://defiantapp.tech/) is the first mobile platform and geolocation-enabled P2P marketplace for stablecoins. It allows the exchange of cryptocurrencies from the Bitcoin, RSK and Ethereum ecosystem. You can store, send, and exchange crypto in an agile and secure way, without intermediaries.
+[Defiant](https://defiantapp.tech/) is the first mobile platform and geolocation-enabled P2P marketplace for stablecoins. It allows the exchange of cryptocurrencies from the Bitcoin, Rootstock and Ethereum ecosystem. You can store, send, and exchange crypto in an agile and secure way, without intermediaries.
 
 Watch the explainer video for how to install and setup Defiant wallet: 
 
@@ -47,7 +45,7 @@ For a list of supported Cryptocurrencies and Tokens, see the [Defiant Solutions 
 
 **Liquality**
 
-The [Liquality Wallet](https://liquality.io/) is a browser extension for accessing Bitcoin, RSK, and Ethereum networks. This MetaMask alternative supports multiple blockchains and provides the easiest way to flip between assets on the Bitcoin, Ethereum, and RSK networks with built-in one-click atomic swaps.
+The [Liquality Wallet](https://liquality.io/) is a browser extension for accessing Bitcoin, Rootstock, and Ethereum networks. This MetaMask alternative supports multiple blockchains and provides the easiest way to flip between assets on the Bitcoin, Ethereum, and Rootstock networks with built-in one-click atomic swaps.
 
 Watch this video on how to install and setup your Liquality wallet: 
 
@@ -57,18 +55,12 @@ Watch this video on how to install and setup your Liquality wallet:
 
 For a list of supported cryptocurrencies and tokens, see the [Liquality Solutions Page](https://developers.rsk.co/solutions/liquality/).
 
-Visit the [Open Finance](https://www.rsk.co/openfinance/) solutions page to see the full list of wallets currently integrated with RSK.
-
-## Stablecoin Gas fee Comparison tool 
-
-This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
-
-[Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co)
+Visit the [Open Finance](https://www.rsk.co/openfinance/) solutions page to see the full list of wallets currently integrated with Rootstock.
 
 ## Next
 
 Be sure to check out our next article in this guide,
-on [How to Get Stablecoins on RSK - The Complete Guide to Stablecoins](/guides/stablecoin/how-to-get-stablecoins/)
+on [How to Get Stablecoins on Rootstock - The Complete Guide to Stablecoins](/guides/stablecoin/how-to-get-stablecoins/)
 
 ----
 
@@ -76,15 +68,12 @@ If you would like to delve deeper, here are some resources and tools that we rec
 
 **Resources**:
 
-- [Visit RSK Developers Portal](https://github.com/rsksmart/devportal) 
+- [Visit Rootstock Github](https://github.com/rsksmart/devportal) 
 - [Dollar on Chain: A stablecoin for bitcoiners, by bitcoiners](https://moneyonchain.com/blog/dollar-on-chain-chain-a-bitcoin-stablecoin-by-bitcoiners/)
-- [Defiant: Solutions on RSK](https://developers.rsk.co/solutions/defiant/)
-- [RSK Token Bridge](https://tokenbridge.rsk.co/)
-- [Webinar: RSK - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
+- [Defiant: Solutions on Rootstock](https://developers.rsk.co/solutions/defiant/)
+- [Rootstock Token Bridge](https://tokenbridge.rsk.co/)
 - [Build on Bitcoin using rDAI](https://youtu.be/2yApyI9Zvu8)
 - [Ask any Difference](https://askanydifference.com/)
 - [Difference between a Cryptocurrency and Token](https://developers.rsk.co/kb/get-crypto-on-rsk/cryptocurrency-vs-token/)
 - [What are Stablecoins?](https://youtu.be/JHzyQS1rc_s)
-- [RSKSwap](https://app.rskswap.com/swap)
-- [RSK Explorer](https://explorer.rsk.co/)
-- [Stablecoin Gas Fee Comparison Tool](/guides/stablecoin/stablecoin-on-bitcoin/#stablecoin-gas-fee-comparison-tool)
+- [Rootstock Explorer](https://explorer.rsk.co/)

@@ -10,13 +10,14 @@ render_features: 'custom-terminals'
 
 ## Command Line Interface
 
-The Rootstock (RSK) node can be started with different
+The Rootstock node can be started with different
 [CLI flags](./cli/).
+
 ## Setting config preferences
 
 See how to set your config:
 
-- [Using Ubuntu, Azure, AWS or Docker](#using-ubuntu-azure-aws-or-docker)
+- [Using Ubuntu or Docker](#using-ubuntu-or-docker)
 - [Using the `java` command](#using-java-command)
 
 &hellip; to run the node.
@@ -24,7 +25,7 @@ See how to set your config:
 > Remember:
 > You need to **restart** the node if you've changed any configuration option.
 
-### Using Ubuntu, Azure, AWS or Docker
+### Using Ubuntu or Docker
 
 Your node's config file is in `/etc/rsk`.
 Default configurations are defined there and they are the same as [these ones](https://github.com/rsksmart/artifacts/tree/master/rskj-ubuntu-installer/config).

@@ -7,7 +7,6 @@ tags: rbtc, rsk, wallets, defi, exchange, crypto, how-to, knowledge-base, rootst
 layout: "rsk"
 ---
 
-![How to get RBTC using Exchanges](/assets/img/guides/get-crypto-on-rsk/rbtc-exchanges.jpg)
 
 In this section, we will cover the following;
 - [How Exchanges Work](#how-exchanges-work)
@@ -51,7 +50,7 @@ It is available for iOS and Android devices where you can:
 
 In addition to centralised exchanges, there is another category of exchange services that act similar to exchanges, but do not require registration or KYC.
 
-There are services that allow users to trade between BTC and RBTC: [Sovryn](#sovryn-fast-btc), [Liquality](#liquality), [Bisq](#bisq), [TEX](#tex-by-moneyonchain), [Mt Pelerin](#mt-pelerin), [RIF on Chain](#rif-on-chain).
+There are services that allow users to trade between BTC and RBTC: [Sovryn](#sovryn-fast-btc), [Liquality](#liquality), [Bisq](#bisq), [OKU Trade](#oku-trade), [Mt Pelerin](#mt-pelerin), [RIF on Chain](#rif-on-chain).
 
 **Pros**:
 - No registration or KYC required.
@@ -101,11 +100,11 @@ Mt Pelerin is a digital asset trading platform, it offers a way to buy cryptocur
 [Liquality](/solutions/liquality/) 
 The Liquality Wallet is a browser extension for accessing Bitcoin and Rootstock applications. This alternative to MetaMask supports multiple blockchains and provides the easiest way to swap between BTC and RBTC, plus transact Rootstock tokens using built-in one-click atomic swaps.
 
-### TEX by MoneyOnChain
+### OKU Trade
 
-[Tex](https://tex.moneyonchain.com/?baseToken=WRBTC&secondaryToken=RIF) is a decentralized exchange powered by [Money on Chain](https://tex.moneyonchain.com/).
+[OKU Trade](https://oku.trade/app/rootstock/) is a decentralized exchange for the Uniswap v3 protocol.
 
-![Tex-Exchange](/assets/img/guides/get-crypto-on-rsk/tex-rbtc.png)
+![oku-Exchange](/assets/img/guides/get-crypto-on-rsk/oku-wrbtc-rusdt.png)
 
 ### RIF on Chain
 

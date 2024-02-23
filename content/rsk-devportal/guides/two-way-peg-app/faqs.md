@@ -15,6 +15,8 @@ Here, you can find a list of frequently asked questions (FAQs) about the 2 way p
     > To know more about the requirements, see [requirements](/guides/two-way-peg-app/requirements/)
 - What are the common errors in peg-out transactions?
     > To know more about the common errors, see [common errors](/guides/two-way-peg-app/pegout/pegout-common-errors).
+- How do I derive a BTC private key after sending RBTC through the PowPeg?
+    > See section on [deriving electrum](/guides/two-way-peg-app/pegout/deriving-electrum#getting-a-wallet-private-key) for how to export a private key.
 - What is the difference between SegWit and Legacy addresses?
     > Legacy address is the original BTC address while SegWit is the newer address format with lower fees. SegWit means Segregated Witness, where Segregated is to separate and Witness is the transaction signatures involved with a specific transaction.
 - What type of addresses do I need to perform a peg in?

@@ -18,7 +18,7 @@ On top of managing RBTC/RIF using D’CENT's hardware wallet, D’CENT brings ne
 
 ## How D'Cent Wallet integrates with RSK
 
-![DCentWallet-RSK-Integrations](/assets/img/solutions/DCentWallet/DCent_IntegrationDiagram.jpg)
+![DCentWallet-RSK-Integrations](/assets/img/solutions/DCentWallet/dcent-diagram.png)
 
 ## How D'Cent Wallet Works
 

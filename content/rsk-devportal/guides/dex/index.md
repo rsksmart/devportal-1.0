@@ -4,15 +4,14 @@ section_title: The Complete Guide to DEXes
 menu_title: Table of Contents
 title: "The Complete Guide to Decentralized Exchanges (DEX)"
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"
-tags: the-complete-guide-to-dexes, decentralized-exchanges, tutorial, overview, guides, tokens, sovryn, rskswap,tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, peer-to-peer, blockchain, lend, borrow, yield-farming, order-books, automated-market-maker- AMMs
+tags: the-complete-guide-to-dexes, decentralized-exchanges, tutorial, overview, guides, tokens, sovryn, rskswap,tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, lend, borrow, yield-farming, order-books, automated-market-maker- AMMs
 layout: rsk
 ---
 
 Welcome to the Complete Guide to Decentralized Exchanges(DEX)!.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
 
-In this guide, you will learn about decentralized exchanges (DEX), types of DEXes, features of a DEX - lending, borrowing and yield farming. We will explore the differences between a centralised exchange(CEX) and a DEX, On-chain order books, Off-chain order books, Automated Market Makers (AMM), and the different types of DEXes on RSK.
+In this guide, you will learn about decentralized exchanges (DEX), types of DEXes, features of a DEX - lending, borrowing and yield farming. We will explore the differences between a centralised exchange(CEX) and a DEX, On-chain order books, Off-chain order books, Automated Market Makers (AMM), and the different types of DEXes on Rootstock.
 
 ## Contents
 
@@ -36,8 +35,6 @@ In this guide, you will learn about decentralized exchanges (DEX), types of DEXe
     - [Staking](/guides/dex/features-of-a-dex#staking)
     - [Liquidity Pools](/guides/dex/features-of-a-dex#liquidity-pools)
     - [Drawbacks](/guides/dex/features-of-a-dex#drawbacks)
-- [DEXes on RSK](/guides/dex/dexes-on-rsk/)
+- [DEXes on Rootstock](/guides/dex/dexes-on-rsk/)
     - [Sovryn](/guides/dex/dexes-on-rsk#sovryn)
-    - [RSK Swap](/guides/dex/dexes-on-rsk#rsk-swap)
-    - [BlinDEX](/guides/dex/dexes-on-rsk#blindex)
-    - [AtomicDEX](/guides/dex/dexes-on-rsk#atomicdex)
+    - [OKU Trade](https://oku.trade/app/rootstock/)

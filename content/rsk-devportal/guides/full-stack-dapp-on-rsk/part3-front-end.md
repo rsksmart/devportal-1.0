@@ -2,21 +2,19 @@
 menu_order: 400
 menu_title: Front End
 layout: rsk
-title: The Complete Full Stack dApp Guide on RSK - Part 3:Front End
-description: 'Build a complete full stack decentralized application on RSK, from front-end to smart contracts'
-tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp-examples, blockchain
+title: The Complete Full Stack dApp Guide on Rootstock - Part 3:Front End
+description: 'Build a complete full stack decentralized application on Rootstock, from front-end to smart contracts'
+tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides, smart-contracts, web3, bitcoin, rsk, Rootstock, peer-to-peer, dapp-examples, blockchain
 ---
 
 This is the third part of the series
-on [building a **complete full stack dApp on RSK**](/guides/full-stack-dapp-on-rsk/).
+on [building a **complete full stack dApp on Rootstock**](/guides/full-stack-dapp-on-rsk/).
 
 In this article, we’ll go through how to develop
 a simple voting app user interface using HTML and Javascript
 for our dApp that we started building in
-[The Complete Full Stack dApp Guide on RSK - Part 1: Overview](/guides/full-stack-dapp-on-rsk/part1-overview/) and
-[The Complete Full Stack dApp Guide on RSK - Part 2: Smart Contract](/guides/full-stack-dapp-on-rsk/part3-front-end/) guides.
-
-![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
+[The Complete Full Stack dApp Guide on Rootstock - Part 1: Overview](/guides/full-stack-dapp-on-rsk/part1-overview/) and
+[The Complete Full Stack dApp Guide on Rootstock - Part 2: Smart Contract](/guides/full-stack-dapp-on-rsk/part3-front-end/) guides.
 
 ## 1. Client Folder
 
@@ -77,7 +75,7 @@ The `package.json` is a JSON file that exists at the root of this project folder
 
 The JS portion of our dApp is placed at `./client/dapp.js`
 nd the full source code can be found in the
-[The Complete Full Stack dApp on RSK repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp).
+[The Complete Full Stack dApp on Rootstock repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp).
 
 In order for the `dapp.js` file to work,
 we would need to use a browser with
@@ -478,22 +476,22 @@ Output:
 
 ## 4.1. Connect to Metamask
 
-1. Configure [RSK Testnet](https://developers.rsk.co/wallet/use/metamask/)
+1. Configure [Rootstock Testnet](https://developers.rsk.co/wallet/use/metamask/)
    in your metamask wallet
 2. Click on import using account seed phrase.
-   ![RSK full stack dApp - Metamask](/assets/img/guides/complete-full-stack-dapp/Metamask.png)
+   ![Rootstock full stack dApp - Metamask](/assets/img/guides/complete-full-stack-dapp/Metamask.png)
 3. Insert Mnemonic phrase generated in `.testnet.seed-phrse`.
-   ![RSK full stack dApp - Metamask2](/assets/img/guides/complete-full-stack-dapp/MetamaskSeedPhrase.png)
+   ![Rootstock full stack dApp - Metamask2](/assets/img/guides/complete-full-stack-dapp/MetamaskSeedPhrase.png)
 4. Insert password
 5. Click on Restore
-   ![RSK full stack dApp - Metamask3](/assets/img/guides/complete-full-stack-dapp/MetamaskRestore.png)
+   ![Rootstock full stack dApp - Metamask3](/assets/img/guides/complete-full-stack-dapp/MetamaskRestore.png)
 6. View imported account with testnet funds
-   ![RSK full stack dapp](/assets/img/guides/complete-full-stack-dapp/MetamaskTestFunds.png)
+   ![Rootstock full stack dapp](/assets/img/guides/complete-full-stack-dapp/MetamaskTestFunds.png)
 
 > Reload the browser to ensure the green button showing connected is active.
 
 Congratulations👏👏!
-The dApp can now communicate with the RSK network!!!
+The dApp can now communicate with the Rootstock network!!!
 
 To view the dApp live, go to your browser, enter `localhost:8080`
 into the address bar.
@@ -501,7 +499,7 @@ Try voting and adding other functions to the smart contract.
 
 ![Election dApp - gif](/assets/img/guides/complete-full-stack-dapp/full stack dApp on RSK.gif)
 
-Thank you for completing the full stack dApp guide on RSK🤝!
+Thank you for completing the full stack dApp guide on Rootstock🤝!
 
 View the entire code for the [Complete Full Stack dApp repo](https://github.com/bguiz/workshop-rsk-full-stack-dapp/tree/feat/complete-a)
 
@@ -513,6 +511,5 @@ View the entire code for the [Complete Full Stack dApp repo](https://github.com/
 
 ----
 
-[RSK Developers Portal](https://github.com/rsksmart/devportal) |
-[Contact us on our community Discord](https://rootstock.io/discord) |
-[Visit our Webinars Section](https://developers.rsk.co/webinars/)
+[Rootstock Github](https://github.com/rsksmart/devportal) |
+[Contact us on our community Discord](https://rootstock.io/discord) 

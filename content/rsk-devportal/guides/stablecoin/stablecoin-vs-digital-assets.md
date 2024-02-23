@@ -7,21 +7,69 @@ tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides
 layout: rsk
 ---
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
-
 In this section, we will cover the difference between a stablecoin and other digital assets like bitcoins, fiat currency, fungible tokens, Central Bank Digital Currency (CBDCs), and Altcoins.
 
 ## Stablecoin vs Bitcoins
 
 A stablecoin is a token that has a non-volatile price and Bitcoin is a cryptocurrency whose price is volatile in nature. Stablecoins are used  to minimize the price volatility of cryptocurrencies like Bitcoins.
 
-![StablecoinVsBitcoins](/assets/img/guides/stablecoin/stablecoinvsbitcoin.png)
+<table>
+<thead>
+  <tr>
+    <th>Stablecoins</th>
+    <th>Bitcoins</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Regulated</td>
+    <td>Non-regulated</td>
+  </tr>
+  <tr>
+    <td>Non-volatile</td>
+    <td>Volatile</td>
+  </tr>
+  <tr>
+    <td>Used as an alternative to fiat currencies</td>
+    <td>Used for trading on exchanges</td>
+  </tr>
+  <tr>
+    <td>Means of payment</td>
+    <td>Means of payment</td>
+  </tr>
+</tbody>
+</table>
 
 ## Stablecoin vs Altcoin
 
 Altcoins are cryptocurrencies other than Bitcoin. Similar comparisons apply, with regards to volatility.
 
-![Stablecoinvsaltcoin](/assets/img/guides/stablecoin/stablecoinvsaltcoins.png)
+<table>
+<thead>
+  <tr>
+    <th>Stablecoins</th>
+    <th>Altcoins</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>A token built on a blockchain network backed by fiat and cryptocurrency</td>
+    <td>Any cryptocurrency other than bitcoin are known as altcoin</td>
+  </tr>
+  <tr>
+    <td>Token</td>
+    <td>Cryptocurrency</td>
+  </tr>
+  <tr>
+    <td>Stable</td>
+    <td>Volatile</td>
+  </tr>
+  <tr>
+    <td>Fiat-collateralized, crypto-collateralized, commodity-collateralized, non-collateralized</td>
+    <td>Rootstock, Ethereum</td>
+  </tr>
+</tbody>
+</table>
 
 ## Stablecoin vs Fiat
 
@@ -43,13 +91,32 @@ Read: [Cryptocurrency vs Token](https://developers.rsk.co/kb/get-crypto-on-rsk/c
 
 A stablecoin may or may not be regulated, while Central Bank Digital Currency (CBDC) is completely regulated by the monetary authorities of a nation. This means stablecoins are decentralized while CBDCs are centralized. Furthermore, CBDCs may be implemented with fungible tokens, in a manner similar to stablecoins, or they may be implemented using other technologies, including centralised ones.
 
-![Stablecoin vs CBDCs](/assets/img/guides/stablecoin/stablecoinvscbdc.png)
-
-## Stablecoin Gas fee Comparison tool 
-
-This is a tool for comparing average gas fees paid for the last 200 transfer transactions of DAI and USDT Stablecoins on Ethereum and RSK blockchains. The tool makes a live request to the Covalent database, gets the information about the latest transactions of selected Stablecoin and displays the prices converted to USD using the latest rBTC - USD and Ether - USD exchange rate.
-
-[Stablecoin Gas Fee Comparison Tool](https://stablecoins.rsk.co)
+<table>
+<thead>
+  <tr>
+    <th>Stablecoins</th>
+    <th>CBDC</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Decentralized</td>
+    <td>Centralized</td>
+  </tr>
+  <tr>
+    <td>Used as an alternative to fiat currencies</td>
+    <td>Used as a means of payment like the country's fiat currency</td>
+  </tr>
+  <tr>
+    <td>Cryptocurrency</td>
+    <td>Cryptocurrency</td>
+  </tr>
+  <tr>
+    <td>Uses private money</td>
+    <td>CBDCs use private money but guarded by reserve assets of the country</td>
+  </tr>
+</tbody>
+</table>
 
 ## Next
 
@@ -62,15 +129,13 @@ If you would like to delve deeper, here are some resources and tools that we rec
 
 **Resources**:
 
-- [Visit RSK Developers Portal](https://github.com/rsksmart/devportal) 
+- [Visit Rootstock Github](https://github.com/rsksmart/devportal) 
 - [Dollar on Chain: A stablecoin for bitcoiners, by bitcoiners](https://moneyonchain.com/blog/dollar-on-chain-chain-a-bitcoin-stablecoin-by-bitcoiners/)
-- [Defiant: Solutions on RSK](https://developers.rsk.co/solutions/defiant/)
-- [RSK Token Bridge](https://tokenbridge.rsk.co/)
-- [Webinar: RSK - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
+- [Defiant: Solutions on Rootstock](/solutions/defiant/)
+- [Rootstock Token Bridge](https://tokenbridge.rsk.co/)
+- [Webinar: Rootstock - Ethereum Tokenbridge](https://youtu.be/3ZOvpLE3MvM)
 - [Build on Bitcoin using rDAI](https://youtu.be/2yApyI9Zvu8)
 - [Ask any Difference](https://askanydifference.com/)
-- [Difference between a Cryptocurrency and Token](https://developers.rsk.co/kb/get-crypto-on-rsk/cryptocurrency-vs-token/)
+- [Difference between a Cryptocurrency and Token](/guides/get-crypto-on-rsk/cryptocurrency-vs-token/)
 - [What are Stablecoins?](https://youtu.be/JHzyQS1rc_s)
-- [RSKSwap](https://app.rskswap.com/swap)
-- [RSK Explorer](https://explorer.rsk.co/)
-- [Stablecoin Gas Fee Comparison Tool](/guides/stablecoin/stablecoin-on-bitcoin/#stablecoin-gas-fee-comparison-tool)
+- [Rootstock Explorer](https://explorer.rsk.co/)

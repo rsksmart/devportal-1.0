@@ -1,11 +1,13 @@
 ---
-menu_order: 3500
+# menu_order: 3500
 menu_title: Truffle Box RSK Starter Box
 layout: rsk
 title: Truffle Box (rsk-react-box)
 tags: tutorial, rsk, truffle, react
 description: "How to install and use a Truffle box that comes with React and Express, and work with the RSK network."
 ---
+
+> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
 # RSK React Truffle Box
 

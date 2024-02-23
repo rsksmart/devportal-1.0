@@ -8,7 +8,7 @@ menu_title: RBTC Token
 permalink: /rsk/rbtc/
 ---
 
-The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in RSK. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
+The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in Rootstock. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
 
 ## RBTC (Smart Bitcoin in Mainnet)
 
