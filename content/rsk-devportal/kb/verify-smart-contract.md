@@ -144,3 +144,9 @@ You'll also be able to see the compiler settings.
 
 Congratulations, you have successfully verified a smart contract on the RSK Block Explorer. To see a live example check out the one used in this article:
 [`0x111b836d63e507a45dee556b10aa17ef16d423ae`](https://explorer.testnet.rsk.co/address/0x111b836d63e507a45dee556b10aa17ef16d423ae?__ctab=Code).
+
+----
+## Resources
+
+- [Verify Smart Contracts with SolidityScan](https://blog.rootstock.io/noticia/rootstock-guide-to-verifying-smart-contracts-with-solidityscan/)
+- [Tools](/tools/)

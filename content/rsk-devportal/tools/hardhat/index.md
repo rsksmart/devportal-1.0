@@ -33,7 +33,8 @@ npm install --save-dev hardhat
 
 ----
 
-## More info
+## Related Docs
+- [Quick start guide with Hardhat](/guides/quickstart/hardhat/)
 - [Setting up Hardhat for Rootstock Testnet](/kb/hardhat-setup-on-rsk)
 - [Hardhat Documentation](https://hardhat.org/docs)
 - [Github Repo](https://github.com/NomicFoundation/hardhat)

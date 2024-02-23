@@ -1,121 +1,55 @@
 ---
 layout: Rootstock
-title: Tools
+title: Tools to build on Rootstock
 tags: hardhat, explorer, testnet, faucet, networks, deployment, gas-station, tools, Rootstock, ethereum, smart-contracts, install, get-started, how-to, wallets
 menu_order: 9
 section_title: Tools
 menu_title: Overview
 ---
+Explore a suite of fully compatible developer tools and guides designed to empower bitcoin and smart contract developers in the Rootstock and RIF ecosystems.
 
-Explore a suite of fully compatible developer tools and guides designed to empower bitcoin and smart contract developers in the Rootstock and RIF ecosystems. 
+> If what you need is not in this section, see [Frequently Asked Question](https://dev.rootstock.io/kb/faqs/), get your questions answered on [Stackoverflow](https://stackoverflow.com/questions/tagged/rsk) or **contact us** without hesitation through the [Rootstock Community on Discord](https://rootstock.io/discord).
 
-<div id="stats-carousel" class="owl-carousel owl-theme">
-    <div class="item">
-        <a href="https://explorer.rsk.co" target="blank">
-        <img src="/assets/img/tools/4-rootstock-explorer.png" alt="Rootstock Explorer">
-        <a class="company-name" href="https://explorer.rsk.co" target="blank">Rootstock Explorer</a>
-    </a>
-    </div>
-    <div class="item">
-        <a href="https://metamask.io" target="blank">
-        <img src="/assets/img/tools/3-metamask.png" alt="Metamask">
-        <a class="company-name" href="https://metamask.io" target="blank">Metamask</a>
-    </a>
-    </div>
-    <div class="item">
-        <a href="https://faucet.rootstock.io/" target="blank">
-        <img src="/assets/img/tools/5-testnet-faucet.png" alt="Testnet Faucet">
-        <a class="company-name" href="https://faucet.rootstock.io/" target="blank">Testnet Faucet</a>
-    </a>
-    </div>
-    <div class="item">
-        <a href="https://rskgasstation.info" target="blank">
-        <img src="/assets/img/tools/1-gasstation.png" alt="Rootstock Gas Station">
-        <a class="company-name" href="https://rskgasstation.info" target="blank">Rootstock Gas Station</a>
-    </a>
-    </div>
-    <div class="item">
-       <a href="https://hardhat.org" target="blank">
-        <img src="/assets/img/tools/2-hardhat.jpg" alt="Hardhat" style="margin: 10px;">
-        <a class="company-name" href="https://hardhat.org">Hardhat</a>
-    </a>
-    </div>
-</div>
-
-## Tutorials and Guides
-- [Knowledge base](/kb/)
-- [Quick Start](/guides/quickstart/)
-
-### Starter Kits
-- [Demo Code Snippets](https://github.com/rsksmart/demo-code-snippets)
-
-## Libraries
-- [Web3.js](https://web3js.readthedocs.io/en/v1.10.0/)
-- [Pre-compiled ABIs](/develop/libs/rsk-precompilied-abis/)
-- [JSON-RPC](/rsk/node/architecture/json-rpc/)
-
-### RIF Libraries
-- [RNS](/rif/rns/libs)
-- [Wallet](/rif/wallet/)
-- [Relay](/rif/relay/)
-- [rLogin](/rif/rlogin/libraries/)
-
-## Dev Environments
-- [Hardhat](/kb/hardhat-setup-on-rsk/)
-- [Remix](/kb/remix-and-metamask-with-rsk-testnet/)
-- [Smart Contract Compiler](/kb/compile-smart-contracts-go/)
-- [Token Generator](/kb/create-a-token//)
-
-## Developer Platforms
-- [Forward Protocol](https://forwardprotocol.io/)
-- [Thirdweb](https://thirdweb.com/)
-- [UseDapp](https://usedapp.io/)
-
-## Node RPC
-- [GetBlock](https://getblock.io/)
-- [NOWNodes](https://nownodes.io/)
-
-## Data and Analytics
-- [Rootstock Stats](https://stats.rsk.co/)
-- [Covalent](/solutions/covalent/)
-- [Tenderly](/kb/build-with-tenderly/)
-- [DappRadar](https://dappradar.com/)
-- [Coinfirm](https://www.coinfirm.com/products/aml-platform/)
-- [DeFiLlama](https://defillama.com/)
-
-## Explorers
-- [Rootstock Explorer](/tools/explorer/)
-- [Blockscout](https://rootstock.blockscout.com/)
-- [RIF Rollup Explorer](/rif/rollup/dapps/)
-
-## Bridges
-- [Rootstock <> Ethereum Tokenbridge](/tools/tokenbridge/)
-- [PowPeg](/rsk/architecture/powpeg/)
-    * [2 Way Peg App](/guides/two-way-peg-app/)
-- [Sovryn Fast BTC](https://wiki.sovryn.com/en/sovryn-dapp/bridge)
-- [MtPelerin](https://www.mtpelerin.com/exchange-crypto?ssa=0.01&wsc=BTC&wdc=RBTC&wsa=0.01)
-
-## Oracles
-- [API3](https://api3.org/)
-
-## Faucet
-- [Rootstock Faucet](/tools/faucet/)
-
-## Gas
-- [Rootstock Gas Station](/develop/apps/tools/gas-station/)
-
-## Wallet
-- [Rootstock Wallets](/develop/wallet/use/)
-
-## SDKs
-- [RIF Relay SDK](https://github.com/rsksmart/rif-relay-sample-dapp#rif-relaying-services-sdk-sample-dapp)
-- [RIF Rollup](https://github.com/rsksmart/rif-rollup-js-sdk)
-
-## Code Quality
-- [SolidityScan](https://solidityscan.com/)
-- [Sourcify.dev](https://sourcify.dev)
-
-## Developer Support and Resources
-- [Discord](https://dev.rootstock.io/discord/)
-- [Stackoverflow](https://stackoverflow.com/questions/tagged/rsk)
-- [FAQs](/kb/faqs/)
+| Name                                         | Category                        | Website                                                                                     |
+| ---------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------- |
+| 2 Way Peg App                                  | Bridges                         | [2 Way peg dApp](https://dev.rootstock.io/guides/two-way-peg-app/)                                        |
+| PowPeg                                         | Bridges                         | [PowPeg](https://dev.rootstock.io/rsk/architecture/powpeg/)                                       |
+| Rootstock Tokenbridge | Bridges                         | [Rootstock Tokenbridge](https://dev.rootstock.io/tools/tokenbridge/)                                             |
+| Sovryn Fast BTC                                | Bridges                         | [Sovryn](https://wiki.sovryn.com/en/sovryn-dapp/bridge)                                           |
+| API3                                           | Oracles                         | [API3](https://api3.org/)                                                                       |
+| Rootstock Explorer                             | Explorers                       | [Explorer](https://dev.rootstock.io/tools/explorer/)                                                |
+| Blockscout                                     | Explorers                       | [Blockscout](https://rootstock.blockscout.com/)                                                       |
+| RIF Rollup Explorer                            | Explorers                       | [Rollup Explorer](https://dev.rootstock.io/rif/rollup/dapps/)                                              |
+| Coinfirm                                       | Data and Analytics              | [Coinfirm](https://www.coinfirm.com/products/aml-platform/)                                         |
+| Covalent                                       | Data and Analytics              | [Covalent](https://dev.rootstock.io/solutions/covalent/)                                            |
+| DappRadar                                      | Data and Analytics              | [dApps](https://dappradar.com/)                                                                  |
+| DefiLlama                                      | Data and Analytics              | [DefiLLama](https://defillama.com/)                                                                  |
+| Tenderly                                       | Data and Analytics              | [Tenderly](https://dev.rootstock.io/kb/build-with-tenderly/)                                        |
+| Starter Kits                                   | Starter Kits                    | [Kits](https://dev.rootstock.io/guides/starter-kits/)                                           |
+| Knowledge base                                 | Tutorials and Guides            | [Rootstock KB](https://dev.rootstock.io/kb/)                                                            |
+| Thirdweb                                       | Developer Platforms             | [Thirdweb](https://thirdweb.com/)                                                                   |
+| UseDapp                                        | Developer Platforms             | [useDapp](https://usedapp.io/ )                                                                    |
+| Forward Protocol                               | Developer Platforms             | [Forward Protocol](https://forwardprotocol.io/)                                                             |
+| GetBlock                                       | Node RPC                        | [GetBlock](https://getblock.io/)                                                                    |
+| NOWNodes                                       | Node RPC                        | [NOWNodes](https://nownodes.io/)                                                                    |
+| JSON-RPC                                       | Libraries                       | [JSON RPC](https://dev.rootstock.io/rsk/node/architecture/json-rpc/)                                |
+| MtPelerin                                      | Bridges                         | [MtPelerin](https://www.mtpelerin.com/exchange-crypto?ssa=0.01&wsc=BTC&wdc=RBTC&wsa=0.01)            |
+| Pre-compiled ABIs                              | Libraries                       | [Precompiled ABIs](https://dev.rootstock.io/develop/libs/rsk-precompilied-abis/ )                           |
+| rLogin                                         | RIF Libraries                   | [rLogin](https://dev.rootstock.io/rif/rlogin/libraries/)                                          |
+| Relay                                          | RIF Libraries                   | [RIF Relay](https://dev.rootstock.io/rif/relay/)                                                     |
+| Hardhat                                        | Dev Environments                | [Hardhat](/tools/hardhat/) |
+| Remix                                          | Dev Environments                | [Remix](https://dev.rootstock.io/kb/remix-and-metamask-with-rsk-testnet/)                        |
+| RIF Relay SDK                                  | SDKs                            | [SDK](https://github.com/rsksmart/rif-relay-sample-dapp#rif-relaying-services-sdk-sample-dapp) |
+| RIF Rollup                                     | SDKs                            | [SDK](https://github.com/rsksmart/rif-rollup-js-sdk)                                           |
+| Rootstock Faucet                               | Faucet                          | [Faucet](https://dev.rootstock.io/tools/faucet/)                                                  |
+| Rootstock Gas Station                          | Gas                             | [Gas Station](https://dev.rootstock.io/develop/apps/tools/gas-station/)                                |
+| Rootstock Stats                                | Data and Analytics              | [Stats](https://stats.rsk.co/)                                                                   |
+| Wallet                                         | Wallet                  | [RIF Wallet](https://dev.rootstock.io/rif/wallet/)                                                    |
+| Rootstock Wallets                              | Wallet                          | [General Wallets](https://dev.rootstock.io/develop/wallet/use/)                                            |
+| Ethers.js                                        | Libraries                       | [Ethersjs](https://docs.ethers.org/v5/)
+| Web3.js                                        | Libraries                       | [web3js](https://web3js.readthedocs.io/en/v1.10.0/)|
+| RIF Name Service                                            | Libraries                   | [RNS](https://dev.rootstock.io/rif/rns/libs)
+| RIF Wallet Libraries                                            | Libraries                   | [RIF Wallet Libs](https://github.com/orgs/rsksmart/packages?repo_name=rif-wallet-libs)                                                   ||
+| Smart Contract Compiler                        | Compiler                | [Compiler](https://dev.rootstock.io/kb/compile-smart-contracts-go/)                                 |
+| SolidityScan                                   | Code Quality                    | [SolidityScan](https://solidityscan.com/)                                                               |
+| Sourcify.dev                                   | Code Quality                    | [Sourcify](https://sourcify.dev)                                                                    |

@@ -1435,10 +1435,10 @@
   resolved "https://registry.yarnpkg.com/@lmdb/lmdb-win32-x64/-/lmdb-win32-x64-2.5.3.tgz#c72e8b6faae31d925d23a6db0379cc3fe0216fdd"
   integrity sha512-cK+Elf3RjEzrm3SerAhrFWL5oQAsZSJ/LmjL1joIpTfEP1etJJ9CTRvdaV6XLYAxaEkfdhk/9hOvHLbR9yIhCA==
 
-"@mendable/search@^0.0.194":
-  version "0.0.194"
-  resolved "https://registry.yarnpkg.com/@mendable/search/-/search-0.0.194.tgz#0705144a8d73a90a5ae3c1441f5ad62dc24dd7df"
-  integrity sha512-iMR3ifhxGkBQaNW5J80Swy/I3yW3FrhpWahLJS67n8q4p+3Y2uZpRm3XZiPsRCxe7MYFSRG6QSfJsly47SRp5Q==
+"@mendable/search@^0.0.190":
+  version "0.0.190"
+  resolved "https://registry.yarnpkg.com/@mendable/search/-/search-0.0.190.tgz#738571498babe71743b25ba15694bf1e74a6bbf9"
+  integrity sha512-YUSp6vZJRj9oB4IIZ+MSKIeKO+tRaLNI4jtVgfz93osmyJyhOPgJpgFzmNYHhTOdazzevF9yGbxnmIOLdc1Tcw==
   dependencies:
     html-react-parser "^4.2.0"
     posthog-js "^1.45.1"
