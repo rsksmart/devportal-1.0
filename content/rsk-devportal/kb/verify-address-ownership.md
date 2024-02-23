@@ -228,3 +228,9 @@ the address of your account in MetaMask.
 ![](/assets/img/kb/verify-address-ownership/rif-identity-metamask-dashboard-persona-address.png)
 
 That's all - now you can be confident that you do control this address on the RSK Mainnet!
+
+----
+## Resources
+
+- [Verify Smart Contracts with SolidityScan](https://blog.rootstock.io/noticia/rootstock-guide-to-verifying-smart-contracts-with-solidityscan/)
+- [Tools](/tools/)
