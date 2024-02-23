@@ -1,7 +1,7 @@
 ---
 menu_order: 1300
 menu_title: FAQs
-title: "Frequently Asked Questions (FAQs) | 2 way peg app Documentation"
+title: "Frequently Asked Questions (FAQs)"
 description: "Frequently asked questions."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
