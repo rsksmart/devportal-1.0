@@ -1,13 +1,11 @@
 ---
 menu_order: 300
 menu_title: Prerequisites
-title: "Prerequisites | 2 way peg app Documentation"
+title: "Prerequisites"
 description: "Welcome to the overview section of the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
 ---
-
-## Prerequisites
 
 - [Metamask Wallet](/develop/wallet/use/metamask/), or
 - [Liquality Wallet](/solutions/liquality/)
