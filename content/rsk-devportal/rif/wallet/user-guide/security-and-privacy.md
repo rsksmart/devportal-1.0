@@ -41,7 +41,7 @@ src="/assets/img/rif-wallet/16d-converted-to-correct-checksum.jpg"  title="RIF W
 src="/assets/img/rif-wallet/16e-save-contact.jpg"  title="RIF Wallet - Save Contact"/>
 </div>
 
-> Note: Checksum Addresses are a specific pattern of uppercase and lowercase letters within a given address to reduce the risk of errors introduced from typing an address or cut and paste issues. See the [Differences with Ethereum: Checksums, derivation paths, gas prices](/guides/quickstart/overview/#differences-with-ethereum-checksums-derivation-paths-gas-prices).
+> Note: Checksum Addresses are a specific pattern of uppercase and lowercase letters within a given address to reduce the risk of errors introduced from typing an address or cut and paste issues. See the [Differences with Ethereum: Checksums, derivation paths, gas prices](/guides/quickstart/overview/rootstock-ethereum-differences/).
 
 **View Contact**
 

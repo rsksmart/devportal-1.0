@@ -1,45 +1,75 @@
 ---
 menu_order: 200
 section_title: Quick Start
-menu_title: Table of Contents
+menu_title: Overview - Quick Start
 layout: rsk
-title: 'Rootstock Quick Start Guide'
-description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
+title: 'Quick Start Guide - Overview'
+description: 'Learn how to interact with Rootstock in your web browser, how to view Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 
-Welcome to the Rootstock quickstart guide!.
 
-![Quick Start Banner](/assets/img/guides/quickstart/quick-start-banner.jpg)
+Welcome to the Rootstock quickstart guide!
 
-Here you’ll get a whirlwind introduction to Rootstock,
-how to interact with Rootstock in your web browser,
-how to look at Rootstock transactions.
-Once that is done,
-we will even develop and deploy your very first smart contract to the Rootstock network.
+Whether you're well-versed in other Web3 development tools or just diving into smart contract development, this guide will provide you with essential knowledge for writing, testing, deploying, and interacting with Smart Contracts on the Rootstock network.
 
-Let’s dive in!
+As you embark on this journey, the emphasis is on maximizing the potential of the Rootstock network. We'll highlight its EVM compatibility, robust decentralization supported by Bitcoin, and notably lower transaction fees.
 
-## Contents
+If you're already acquainted with creating and deploying smart contracts on other chains, head straight to the [Quick Start Guide with Hardhat section](/guides/quickstart/hardhat/) to jump into action.
 
-- [Overview](/guides/quickstart/overview/)
-    - [What is Rootstock](/guides/quickstart/overview/#what-is-rsk)
-    - [Merged mining: Layer 2 to Bitcoin’s layer 1](/guides/quickstart/overview/#merged-mining-layer-2-to-bitcoin-layer-1)
-    - [PowPeg: 1-to-1 peg between BTC and RBTC](/guides/quickstart/overview/#powpeg-1-to-1-peg-between-btc-and-rbtc)
-    - [EVM compatible smart contracts](/guides/quickstart/overview/#evm-compatible-smart-contracts)
-    - [Ethereum compatible JSON RPC](/guides/quickstart/overview/#ethereum-compatible-json-rpc)
-    - [Differences with Ethereum: Checksums, derivation paths, gas prices](/guides/quickstart/overview/#differences-with-ethereum-checksums-derivation-paths-gas-prices)
-- [Using Rootstock in the Browser](/guides/quickstart/browser/)
-    - [Install Metamask](/guides/quickstart/browser/#install-metamask)
-    - [Private Keys and Public Keys](/guides/quickstart/browser/#private-keys-and-public-keys)
-    - [Seed Phrases](/guides/quickstart/browser/#seed-phrases)
-    - [Configure custom networks for Rootstock Testnet](/guides/quickstart/browser/#configure-custom-network-for-rsk-testnet)
-    - [Configure custom token for tRIF](/guides/quickstart/browser/#configure-custom-token-for-trif)
-- [Exploring Rootstock Transactions](/guides/quickstart/transactions/)
-    - [Block Explorer](/guides/quickstart/transactions/#block-explorer)
-    - [View Accounts In Block Explorer](/guides/quickstart/transactions/#view-account-in-the-block-explorer)
-    - [Transfer tRBTC from one account to another](/guides/quickstart/transactions/#transfer-trbtc-from-one-account-to-another)
-    - [Transfer tRIF from one account to another](/guides/quickstart/transactions/#transfer-trif-from-one-account-to-another)
-    - [Why RBTC Balance Decreases (gas)](/guides/quickstart/transactions/#why-rbtc-balance-decreases-gas)
-    - [View Transactions In The Block Explorer](/guides/quickstart/transactions/#view-transactions-in-the-block-explorer)
-    - [View Network Stats](/guides/quickstart/transactions/#view-network-stats)
+<div class="features-list">
+    <ul id="card-list" class="row">
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+<div class="content"><a href="/guides/quickstart/overview/">
+            <div class="content-container">
+               <div class="card-title"><h2 class="zg-text-bg">Overview</h2><span class="zg-label ml-1">01</span></div> 
+                <p class="card-desc">Learn about Rootstock, how it enables smart contract on Bitcoin, and its compatibility with Ethereum and other platforms.</p>
+            </div>
+            </a><div class="btn-container "><a href="/guides/quickstart/overview/">
+                </a><a class="green" href="/guides/quickstart/overview/">Get Started</a>
+            </div>
+            </div>
+        </div>
+        </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+<div class="content"><a href="/guides/quickstart/browser/">
+            <div class="content-container">
+              <div class="card-title"><h2 class="zg-text-bg bg-yellow">Using Rootstock in the Browser</h2><span class="zg-label ml-1 bg-yellow">02</span></div> 
+                <p class="card-desc">Learn how to use MetaMask with the Rootstock blockchain and RIF services, and get test tokens from faucets.</p>
+            </div>
+            </a><div class="btn-container"><a href="/guides/quickstart/browser/">
+                </a><a class="green" href="/guides/quickstart/browser/">Get Started</a>
+            </div>
+            </div>
+        </div>
+        </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+<div class="content two-line-title-content"><a href="/guides/quickstart/transactions/">
+            <div class="content-container">
+            <div class="card-title"><h2 class="zg-text-bg bg-purple">Exploring Rootstock Transactions</h2><span class="zg-label ml-1 bg-purple">03</span></div>
+                <p class="card-desc">Explore the Rootstock blockchain transactions, addresses, smart contracts, and stats.</p>
+            </div>
+            </a><div class="btn-container"><a href="/guides/quickstart/transactions/">
+                </a><a class="green" href="/guides/quickstart/transactions/">Get Started</a>
+            </div>
+            </div>
+        </div>
+        </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+<div class="content"><a href="/guides/quickstart/hardhat/">
+            <div class="content-container">
+               <div class="card-title"><h2 class="zg-text-bg bg-pink">Get Started with Hardhat</h2><span class="zg-label ml-1 bg-pink">04</span></div> 
+                <p class="card-desc">Get started with creating a dApps on Rootstock using Hardhat and other tools.</p>
+            </div>
+            </a><div class="btn-container"><a href="/guides/quickstart/hardhat/">
+                </a><a class="green" href="/guides/quickstart/hardhat/">Get Started</a>
+            </div>
+            </div>
+        </div>
+        </li>
+    </ul>
+</div>
