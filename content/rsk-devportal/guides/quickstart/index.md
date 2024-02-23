@@ -15,7 +15,7 @@ Whether you're well-versed in other Web3 development tools or just diving into s
 
 As you embark on this journey, the emphasis is on maximizing the potential of the Rootstock network. We'll highlight its EVM compatibility, robust decentralization supported by Bitcoin, and notably lower transaction fees.
 
-If you're already acquainted with creating and deploying smart contracts on other chains, head straight to the [Quick Start Guide with Hardhat section](/guides/quickstart/hardhat/) to jump into action.
+If you're already acquainted with creating and deploying smart contracts on other chains, head straight to the [Quick Start Guide with Hardhat](/guides/quickstart/hardhat/) section to jump into action or use the [Starter Kits](/guides/starter-kits/) for easy development.
 
 <div class="features-list">
     <ul id="card-list" class="row">
