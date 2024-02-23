@@ -12,8 +12,6 @@ layout: "rsk"
 The service allows the exchange of cryptocurrencies from the Bitcoin, RSK and Ethereum ecosystem, using geolocation.
 You can store, send and exchange crypto in an agile and secure way, without intermediaries.
 
-![Defiant Banner](/assets/img/solutions/defiant/banner_rsk2.jpg)
-
 > This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
 
 Watch these short explainer videos:
@@ -42,7 +40,7 @@ Watch these short explainer videos:
 
 ## Integration with RSK
 
-![Defiant RSK Integration](/assets/img/solutions/defiant/defiant_rsk.jpg)
+![Defiant RSK Integration](/assets/img/solutions/defiant/defiant-rsk.png)
 
 You can access cryptocurrencies and tokens on the RSK network,
 using local currencies in several Latin American countries,

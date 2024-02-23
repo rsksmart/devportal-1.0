@@ -7,7 +7,6 @@ tags: rbtc, rsk, wallets, defi, exchange, crypto, how-to, knowledge-base, rootst
 layout: "rsk"
 ---
 
-![How to get RBTC using Exchanges](/assets/img/guides/get-crypto-on-rsk/rbtc-exchanges.jpg)
 
 In this section, we will cover the following;
 - [How Exchanges Work](#how-exchanges-work)

@@ -27,7 +27,7 @@ Enter a pin for your Trezor, displayed on your hardware wallet. Click **confirm*
 
 ![Insert Trezor Wallet Pin](/assets/img/guides/two-way-peg-app/35-insert-trezor-wallet-pin.png)
 
-![Insert Wallet Pin - Trezor](/assets/img/guides/two-way-peg-app/35a-insert-wallet-pin-trezor.jpg)
+![Insert Wallet Pin - Trezor](/assets/img/guides/two-way-peg-app/35a-insert-wallet-pin-trezor.png)
 
 **Step 4: Unlock Trezor with passphrase**
 
@@ -37,11 +37,11 @@ Step 5:
 - Type Trezor passphrase
 - Trezor will display the message: 'Please enter your passphrase using the computer's keyboard'.
 
-![Enter Passphrase using Keyboard](/assets/img/guides/two-way-peg-app/36a-enter-passphrase-keyboard.jpg)
+![Enter Passphrase using Keyboard](/assets/img/guides/two-way-peg-app/36a-enter-passphrase-keyboard.png)
 
 The user fills the passphrase, and confirms passphrase fields, using the Trezor Connect application. The user will see this screen on Trezor: "Access Hidden Wallet?".
 
-![Access hidden wallet notification](/assets/img/guides/two-way-peg-app/37-access-hidden-wallet-notification.jpg)
+![Access hidden wallet notification](/assets/img/guides/two-way-peg-app/37-access-hidden-wallet-notification.png)
 
 ![Use passphrase](/assets/img/guides/two-way-peg-app/37a-use-passphrase.png)
 
@@ -49,7 +49,7 @@ Now, you have successfully connected your Trezor to the Bitcoin network.
 
 ## Performing a peg-in transaction with Trezor
 
-![Waking Device](/assets/img/guides/two-way-peg-app/38-waking-device.jpg)
+![Waking Device](/assets/img/guides/two-way-peg-app/38-waking-device.png)
 
 **Step 1: Select Conversion Type**
 

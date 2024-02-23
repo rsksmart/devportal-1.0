@@ -9,8 +9,6 @@ layout: rsk
 
 In this section, we will cover how to store stablecoins on Rootstock.
 
-![stablecoin banner](/assets/img/guides/stablecoin/stablecoin-overview-banner.jpg)
-
 Stablecoins can be stored using crypto-wallets. 
 
 Some crypto wallets support smart contracts when they connect to blockchain networks such as Rootstock. They allow a user to invoke smart contract functions. Recall one of the differences between tokens and cryptocurrency, which is that tokens are implemented using smart contracts. Thus crypto wallets which understand smart contracts are necessary to store and transfer tokens.

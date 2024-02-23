@@ -10,7 +10,6 @@ layout: rsk
 
 Welcome to the Complete Guide to Decentralized Exchanges(DEX)!.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
 
 In this guide, you will learn about decentralized exchanges (DEX), types of DEXes, features of a DEX - lending, borrowing and yield farming. We will explore the differences between a centralised exchange(CEX) and a DEX, On-chain order books, Off-chain order books, Automated Market Makers (AMM), and the different types of DEXes on Rootstock.
 

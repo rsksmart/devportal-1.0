@@ -9,8 +9,6 @@ layout: rsk
 
 In this section, we will explore some of the different DEXes on Rootstock, and how to get started. We'll cover Sovryn, and OKU Trade.
 
-![DEXes Banner Image](/assets/img/guides/dex/dexes-banner-image.jpg)
-
 ## Sovryn
 
 [Sovryn](/solutions/sovryn/) is a non-custodial and permissionless smart contract based system for Bitcoin lending, borrowing and margin trading. Users can buy SOV with RBTC, swap and trade: DOC, BPRO, rUSDT, xUSD, and MOC tokens on Sovryn.
@@ -26,8 +24,6 @@ Sovryn does not require you to send your assets to a centralized company, such a
 ## OKU Trade
 
 [OKU Trade](https://oku.trade/app/rootstock/) is an decentralized exchange for the Uniswap v3 Protocol. it features tracking order history, managing trades, adding liquidity on Uniswap v3.
-
-![OKU - Rootstock](/assets/img/guides/get-crypto-on-rsk/oku-wrbtc-rusdt.png)
 
 ----
 

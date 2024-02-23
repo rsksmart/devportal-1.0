@@ -9,8 +9,6 @@ layout: 'rsk'
 
 > Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
-![Configure-Truffle-to-RSK](/assets/img/kb/ConfigureTruffleRSK/rsk-truffle-polling-interval.png)
-
 Understanding Truffle's default configuration values (based on Ethereum), in particular surrounding polling intervals; and using 2 relatively new config options allows one to configure Truffle to better connect to an RSK node.
 
 ## Public Nodes

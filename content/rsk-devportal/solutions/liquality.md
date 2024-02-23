@@ -28,7 +28,7 @@ The Liquality Wallet is the simplest way to store and atomic swap your crypto ac
 
 ## Integration with RSK
 
-![Liquality-RSK-Integration](/assets/img/solutions/Liquality/integration-diagram.jpg)
+![Liquality-RSK-Integration](/assets/img/solutions/Liquality/liquality-diagram.png)
 
 ## Supported Token Standards
 

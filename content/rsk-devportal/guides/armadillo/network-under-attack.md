@@ -7,8 +7,6 @@ description: 'The guardian of RSK'
 tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-mining, blockchain
 ---
 
-[![Armadillo-banner](/assets/img/guides/armadillo/Armadillo_banner.png)](/guides/armadillo/)
-
 ## What is a fork?
 
 A fork in the general sense is a chain of blocks that don't follow the [mainchain](/guides/armadillo/glossary/#mainchain).
@@ -37,7 +35,7 @@ This means that the fork could have started in the RSK block with height in the 
 
 Then, the worst case scenario is a fork of 4998 - 4672 = 326 blocks in length.
 
-![network under attack 2](/assets/img/guides/armadillo/network-under-attack-2.png)
+![network under attack 2](/assets/img/guides/armadillo/network-under-attack-1.png)
 
 This is a continuation of the previous example, where the attacker extends the malicious fork.
 The RSKtag in WBs at heights 8327 and 8332 do not match at the RSK network height.

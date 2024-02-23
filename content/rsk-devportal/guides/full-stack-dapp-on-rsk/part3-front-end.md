@@ -16,8 +16,6 @@ for our dApp that we started building in
 [The Complete Full Stack dApp Guide on Rootstock - Part 1: Overview](/guides/full-stack-dapp-on-rsk/part1-overview/) and
 [The Complete Full Stack dApp Guide on Rootstock - Part 2: Smart Contract](/guides/full-stack-dapp-on-rsk/part3-front-end/) guides.
 
-![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
-
 ## 1. Client Folder
 
 In this tutorial, a starting point for our front end application has already been included. This folder contains the following items as shown in the image below.

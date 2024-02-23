@@ -13,7 +13,6 @@ on [building a **complete full stack dApp on Rootstock**](/guides/full-stack-dap
 In this article, we will explain several fundamental blockchain concepts
 such as smart contracts, dApps, web3.
 
-![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
 
 ## What is a Decentralized Application (dApp)?
 

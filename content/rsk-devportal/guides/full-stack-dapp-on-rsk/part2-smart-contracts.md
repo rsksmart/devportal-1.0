@@ -15,7 +15,6 @@ of the development environment for coding, compiling and testing smart contracts
 You’ll also learn how to connect to the Rootstock network,
 and deploy your smart contracts on it.
 
-![The Complete Full Stack dApp guide](/assets/img/guides/complete-full-stack-dapp/Fullstack-tutorial2.jpg)
 
 We want to build a **simple voting application**.
 Rootstock allows us to build decentralised applications,

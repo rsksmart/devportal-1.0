@@ -10,7 +10,6 @@ render_features: 'tables-with-borders'
 
 Edge is a powerful and easy to use cryptocurrency wallet that allows users to easily control their own private keys with the familiarity and ease of mobile banking. Edge provides maximum security while keeping simplicity, allowing all types of users to easily manage, transfer & exchange their currencies.
 
-![Edge Wallet- BannerImage](/assets/img/solutions/edge/Edge_banner.png)
 
 Edge currently supports: RSK, Bitcoin, Ethereum and other cryptocurrencies. Neither Edge or any 3rd party can access your money or data. You get the financial privacy and autonomy that blockchain was designed for right at your fingertips.
 

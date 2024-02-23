@@ -482,7 +482,7 @@ truffle(testnet)> account
 
 > We mentioned before that RSK Testnet is a free network. To get funds to use in this network, we are going to use a faucet. A faucet is commonly a site where you enter your address and it automatically sends you some testnet funds for testing. Let's go to RSK Faucet: [https://faucet.testnet.rsk.co](https://faucet.testnet.rsk.co).
 
-![Faucet Image](/assets/img/kb/deploy-smart-contract/deploy-smart-contract4.png)
+![Faucet Image](/assets/img/kb/deploy-smart-contract/deploy-smart-contracts.png)
 
 > Steps of usage:
 
@@ -490,7 +490,7 @@ truffle(testnet)> account
 2. Enter the Enter check code 
 3. Submit form
 
-![Get Test RBTCs](/assets/img/kb/deploy-smart-contract/deploy-smart-contract5.png)
+![Get Test RBTCs](/assets/img/kb/deploy-smart-contract/deploy-smart-contracts-1.png)
 
 > Congratulations, you've got the balance for testing.
 

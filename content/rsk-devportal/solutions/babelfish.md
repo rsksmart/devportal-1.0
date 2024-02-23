@@ -19,7 +19,7 @@ The objective of [BabelFish](https://babelfish.money/) is to aggregate **stablec
 
 ## How BabelFish integrates with RSK
   
- ![BabelFish-RSK-Integrations](/assets/img/solutions/babelfish/babelfish-integration-rsk-diagram.jpg)
+ ![BabelFish-RSK-Integrations](/assets/img/solutions/babelfish/babelfish-integration.png)
 
 ## About BabelFish
 
