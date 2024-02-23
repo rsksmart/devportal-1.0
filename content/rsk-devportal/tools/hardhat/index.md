@@ -7,7 +7,7 @@ title: Hardhat Overview
 tags: hardhat, quick-start, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, windows, mac, linux, get-started, how-to
 ---
 
-[Hardhat](https://hardhat.org/docs) is an Ethereum development environment designed for professionals. It's primarily used in the development of smart contracts for the Ethereum blockchain. 
+[Hardhat](https://hardhat.org/docs) is an Ethereum development environment for developers. It's primarily used in the development of smart contracts for the Ethereum blockchain. 
 
 ## Key features of Hardhat
 
@@ -27,6 +27,8 @@ tags: hardhat, quick-start, testing, networks, deployment, npm, tools, rsk, ethe
 
 ## Install
 
+To install Hardhat, run the following command:
+
 ```bash
 npm install --save-dev hardhat
 ```
@@ -34,7 +36,9 @@ npm install --save-dev hardhat
 ----
 
 ## Related Docs
+
 - [Quick start guide with Hardhat](/guides/quickstart/hardhat/)
 - [Setting up Hardhat for Rootstock Testnet](/kb/hardhat-setup-on-rsk)
 - [Hardhat Documentation](https://hardhat.org/docs)
 - [Github Repo](https://github.com/NomicFoundation/hardhat)
+- [Tools](/tools/)
