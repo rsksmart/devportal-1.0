@@ -6,15 +6,16 @@ title: '3xpl - Solutions on Rootstock'
 tags: tutorial, rootstock
 description: 3xpl, 3xplor3r, explorer, rootstock, blockchain
 ---
-3xpl (3xplor3r) is a high-speed, advertisement-free universal blockchain explorer that supports over 40 of the most popular public blockchains. It provides an intuitive block explorer interface suitable for general cryptocurrency users, with the ability to generate PDF transaction receipts and wallet statements. The platform also includes support for Rootstock ERC-20, 721, 1155 tokens, and .rsk domains.
+
+3xpl (3xplor3r) is a high-speed, advertisement-free universal blockchain explorer that supports over 40 blockchains including Rootstock tokens (ERC-20, 721, 1155) and .rsk domains. It provides an intuitive block explorer interface suitable for general cryptocurrency users, with the ability to generate PDF transaction receipts and wallet statements.
+
+<div align="center"><img width="90%" src="/assets/img/solutions/3xpl/3xpl-banner.png" alt="3xpl Solution"/></div>
 
 For more advanced users such as developers, analysts, and academics, 3xpl offers additional resources:
 
 * JSON and WebSocket APIs for developing applications.
 * ClickHouse API to run analytical SQL queries.
 * An option to download database dumps for local analysis of blockchain data.
-
-<div align="center"><img width="90%" src="/assets/img/solutions/3xpl/3xpl-banner.png" alt="3xpl Solution"/></div>
 
 ## About 3xpl
 
@@ -29,7 +30,7 @@ Block explorers and their advertising partners tend to track users to maximize t
 
 ### Key Features
 
-- Support for over 40 blockchains in a single explorer
+- Support for Rootstock, and other blockchains in a single explorer
 - No advertisements for a cleaner user experience
 - Fast performance
 - Open-source for verifiable data
@@ -38,7 +39,7 @@ Block explorers and their advertising partners tend to track users to maximize t
 
 #### Get In Touch
 
-If you have any questions regarding the developer tools or partnerships, please contact us on our [Discord](https://3xpl.com/discord).
+If you have any questions regarding the developer tools or partnerships, please contact 3xpl on [Discord](https://3xpl.com/discord).
 
 - [Documentation](https://3xpl.com/data)
 - [Tor Onion](http://3xplor3rzajysy4j5fi3g3k27vivfcw75zjxdb2tg2wpz3i4cdiyhxyd.onion)
@@ -58,5 +59,4 @@ If you have any questions regarding the developer tools or partnerships, please 
 
 - [Discord](https://3xpl.com/discord)
 - [GitHub](https://github.com/3xplcom)
-
 - [X](https://twitter.com/3xplcom)
