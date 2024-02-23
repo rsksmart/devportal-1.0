@@ -2,12 +2,41 @@
 menu_order: 700
 menu_title: Debugging and Troubleshooting
 layout: rsk
-title: 'Debugging and Troubleshooting Tips'
+title: 'Common Errors and Tips'
 description: 'Learn about some potential issues you can run into and tips on how to resolve them'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
+render_features: 'collapsible'
 ---
 
-Common issues and solutions in Rootstock and Hardhat development.
+This section provides help on some potential issues you may run into and tips on how to resolve them. 
+
+[](#top "collapsible")
+- Error: Error HH8: There's one or more errors in your config file
+  ```shell
+    % npx hardhat compile
+    Error HH8: There's one or more errors in your config file:
+
+    * Invalid account: #0 for network: rskMainnet - Expected string, received undefined
+    * Invalid account: #0 for network: rskTestnet - Expected string, received undefined
+
+    To learn more about Hardhat's configuration, please go to https://hardhat.org/config/
+
+    For more info go to https://hardhat.org/HH8 or run Hardhat with --show-stack-traces
+  ```
+  > - FIX 1: Ensure the values in the environment variables matches with the hardhat network configuration `hardhat.config.js` file. For bash, run `source .env` in the root directory for dotenv to enable the environment variables.
+- Error: Nothing to Compile 
+  ```shell
+  % npx hardhat compile
+  Nothing to compile
+  ```
+  > - FIX 2: Delete artifacts folder and run the `npx hardhat compile` command to generate new artifacts.
+- Error:  "GET /MyToken.json" Error (404): "Not found"
+  - Check that contracts were compiled successfully, and artifacts folder was generated.
+  - Check that all the steps in [compile smart contracts](/content/rsk-devportal/guides/quickstart/hardhat/write-smart-contract#compile-the-contract) were followed sequentially.
+- ERROR: HH601: Script scripts/deploy.js doesn't exist.
+  - Ensure that you're running the `npx hardhat run --network hardhat scripts/deploy.js` command from the root directory
+
+## Tips
 
 <table>
     <tr>
@@ -99,35 +128,3 @@ Common issues and solutions in Rootstock and Hardhat development.
    </td>
   </tr>
 </table>
-
-### Web3 Development Tools and Libraries
-
-These tools are specifically tailored for Web3 development, and they can simplify the integration of blockchain functionaity into web interfaces. Here are a few recommended tools and libraries that are popular in the Web3 space, along with brief descriptions:
-
-[](#top "collapsible")
-- RainbowKit
-  - [RainbowKit](https://www.rainbowkit.com/) is a React library offering a comprehensive wallet connection solution. It provides a beautiful, easy-to-use wallet connection interface that supports multiple wallets and networks.
-  - **Why Use It:** 
-    RainbowKit is great for projects where you want a seamless and user-friendly wallet connection experience. It's easy to integrate and manage, especially in React-based applications.
-- Web3Modal
-  - [Web3Modal](https://web3modal.com/) is a JavaScript library that provides a simple, unified wallet connection modal for Web3 applications. It supports various wallet providers and can be used with different Web3 libraries.
-  - **Why Use It:** 
-    If you need to start using React or want a framework-agnostic wallet connection solution, Web3Modal is an excellent choice. It’s customizable and works well with both web3.js and ethers.js.
-- Wagmi
-  - [Wagmi](https://wagmi.sh/) is a React Hooks for Ethereum set that simplifies interactions with ethers.js. It provides hooks for wallet connection, contract interaction, balances, and more.
-  - **Why Use It:** 
-    For React developers who prefer a hooks-based approach, Wagmi offers an elegant way to integrate Ethereum functionality. It makes managing state and blockchain interactions more intuitive.
-- Moralis
-  - [Moralis](https://moralis.io/) is a fully managed backend platform for Web3 and blockchain applications. It offers a suite of tools for authentication, real-time databases, cloud functions, and syncing blockchain data.
-  - **Why Use It:** 
-    Moralis can be a time-saver to build a more comprehensive application with backend support. It handles much of the backend complexity and lets you focus on front-end development.
-
-#### Alternative Testing Approaches and Frameworks
-
-In addition to Mocha and Chai, you can use several other frameworks and approaches in your Hardhat project. Each has its unique features and benefits.
-
-[](#top "collapsible")
-- Jest - JavaScript Testing Framework
-  - [Jest](https://jestjs.io/) is popular for its delightful syntax and focus on simplicity. It works well for testing both frontend and backend JavaScript applications.
-- Waffle - Ethereum Smart Contract Testing Library
-  - [Waffle](https://getwaffle.io/) is a library for writing and testing smart contracts. It is often used with ethers.js and is known for its fluent syntax.

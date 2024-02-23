@@ -3,22 +3,19 @@ menu_order: 200
 section_title: Quick Start
 menu_title: Overview - Quick Start
 layout: rsk
-title: 'Quick Start Guide'
+title: 'Quick Start Guide - Overview'
 description: 'Learn how to interact with Rootstock in your web browser, how to view Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 
+
 Welcome to the Rootstock quickstart guide!
 
-This guide enables Web2 and web3 developers to get up to speed on Smart contracts and deployment. 
+Whether you're well-versed in other Web3 development tools or just diving into smart contract development, this guide will provide you with essential knowledge for writing, testing, deploying, and interacting with Smart Contracts on the Rootstock network.
 
-## What you will learn
+As you embark on this journey, the emphasis is on maximizing the potential of the Rootstock network. We'll highlight its EVM compatibility, robust decentralization supported by Bitcoin, and notably lower transaction fees.
 
-The quickstart guide focuses on the Rootstock network's unique features and components. It aims to provide an understanding of how to build and deploy smart contracts on Rootstock, offers foundational insights into blockchain technology and its practical applications in Web3 development.
-
-As you embark on this journey, the focus is on leveraging the Rootstock network to its fullest potential, showcasing its EVM compatibility, robust decentralization backed by Bitcoin, and notably lower transaction fees.
-
-Whether you have experience with other Web3 development tools or are just get started with smart contract development, this guide will equip you with the essential knowledge to navigate and utilize Hardhat on the Rootstock network.
+If you're already acquainted with creating and deploying smart contracts on other chains, head straight to the [Quick Start Guide with Hardhat section](/guides/quickstart/hardhat/) to jump into action.
 
 <div class="features-list">
     <ul id="card-list" class="row">
