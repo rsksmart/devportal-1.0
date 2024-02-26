@@ -34,7 +34,7 @@ The Bitcoin testnet app does not show on Ledger live manager by default. To be a
         5. On the next screen choose the address format (Native SegWit / SegWit).
         6. Click on **Add Account**:
             <div align="left"><img width="70%" src="/assets/img/guides/two-way-peg-app/add-account-3.png" alt="Add Accounts 3"/></div>
-        > Note: See [supported addresses](#supported-addresses) section for the types of addresses supported by the 2 way peg app.
+        > Note: See [supported addresses](/guides/two-way-peg-app/advanced-operations/supported-wallets/) for the types of addresses supported by the 2 way peg app.
         - You have successfully added the Bitcoin testnet app to your account.
             <div align="left"><img width="70%" src="/assets/img/guides/two-way-peg-app/account-added-successfully.png" alt="Account Added Successfully"/></div>
 

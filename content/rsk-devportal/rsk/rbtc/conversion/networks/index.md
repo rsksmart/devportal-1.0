@@ -19,7 +19,7 @@ Instructions on how to do a Mainnet peg-in.
 [](#top "collapsible")
 - Get a BTC address with balance
   - Any Bitcoin wallet that supports legacy (`p2pkh`) private key works for this step. In this section, we use the Electrum BTC wallet for connecting to BTC Mainnet.
-    1. Download the wallet from [Electrum Website](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/)
+    1. Download the wallet from [Electrum Website](https://electrum.org/)
     2. Install Electrum
     3. Start Electrum
     4. Once Electrum starts, create or import a wallet
