@@ -19,15 +19,15 @@ Instructions on how to do a Mainnet peg-in.
 [](#top "collapsible")
 - Get a BTC address with balance
   - Any Bitcoin wallet that supports legacy (`p2pkh`) private key works for this step, and here we recommend to use Electrum BTC wallet for connecting to BTC Mainnet.
-  - Download the wallet from [Electrum Website](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/)
-  - Install Electrum
-  - Start Electrum
-  - Once Electrum starts, create or import a wallet
-  - Go to the third tab "Receive". You will see a Bitcoin Testnet address like below:
-  ![Create a Legacy (`p2pkh`) wallet](/dist/images/legacy-private-key.png)
-  > Note: The Bitcoin wallet needs to be legacy (not Segwit)
-  > whose public key starts with either `m` or `n`,
-  > and private key starting with `p2pkh`.
+    1. Download the wallet from [Electrum Website](https://bitzuma.com/posts/a-beginners-guide-to-the-electrum-bitcoin-wallet/)
+    2. Install Electrum
+    3. Start Electrum
+    4. Once Electrum starts, create or import a wallet
+    5. Go to the third tab "Receive". You will see a Bitcoin Testnet address like below:
+    ![Create a Legacy (`p2pkh`) wallet](/dist/images/legacy-private-key.png)
+    > Note: The Bitcoin wallet needs to be legacy (not Segwit)
+    > whose public key starts with either m or n,
+    > and private key starting with p2pkh.
 - Send Bitcoin to RSK Federation address
   - The RSK Federation address is retrieved by making a Smart Contract call
     on RSK Mainnet. In order to make the call, you will need to have
@@ -36,7 +36,7 @@ Instructions on how to do a Mainnet peg-in.
     _"**MyCrypto** -> **Contracts** -> Select **Existing Contracts** -> **Bridge** -> **getFederationAddress**_
     to execute the call.
     It should look like the screenshot below:
-    ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
+      ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
     Once you have the RSK Federation address, you can send Bitcoin to it from your Bitcoin address.
     >
     > Note: You must send a minimum amount of 0.01 BTC.
