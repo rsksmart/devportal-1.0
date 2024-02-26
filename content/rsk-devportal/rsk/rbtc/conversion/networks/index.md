@@ -33,11 +33,12 @@ Instructions on how to do a Mainnet peg-in.
     on RSK Mainnet. In order to make the call, you will need to have
     [MyCrypto](https://mycrypto.com/contracts/interact) installed,
     select RSK Network, and Navigate to
-    _"**MyCrypto** -> **Contracts** -> Select **Existing Contracts** -> **Bridge** -> **getFederationAddress_**
+    _"**MyCrypto** -> **Contracts** -> Select **Existing Contracts** -> **Bridge** -> **getFederationAddress**_
     to execute the call.
-    It should look like the screenshot below.
+    It should look like the screenshot below:
     ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
     Once you have the RSK Federation address, you can send Bitcoin to it from your Bitcoin address.
+    >
     > Note: You must send a minimum amount of 0.01 BTC.
 - Wait for BTC confirmations
   -  To ensure the transaction, we need to wait 100 BTC confirmations.

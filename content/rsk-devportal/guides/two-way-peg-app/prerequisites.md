@@ -61,8 +61,7 @@ layout: rsk
     Use the following faucet to receive testnet tokens.
     - Open [Coinfaucet](https://coinfaucet.eu/en/btc-testnet/)
     - Paste the address into the field and click on Get Bitcoins. 
-    > _Note: You need at least **0.005 BTC** to perform a pegin on Mainnet and Testnet.Likewise,
-    you need at least **0.004 RBTC** to perform a pegout on Mainnet and Testnet._
+    > Note: You need at least **0.005 BTC** to perform a pegin on Mainnet and Testnet. Likewise, you need at least **0.004 RBTC** to perform a pegout on Mainnet and Testnet._
     **Getting Mainnet Tokens**
     You can get BTC on Exchanges like [Liquality](/solutions/liquality/) and [Defiant](https://www.defiantapp.tech/en/en).  See [Get Crypto on Rootstock](/guides/get-crypto-on-rsk/) for how to get RBTC.
     > - The 2 way peg app is available on both Mainnet and Testnet. Both applications follow the same process, for production purposes, use [Mainnet](https://app.2wp.rootstock.io/), for testing and development purposes, use the [Testnet](https://app.2wp.testnet.rootstock.io/). 
