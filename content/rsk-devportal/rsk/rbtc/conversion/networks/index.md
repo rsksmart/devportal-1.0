@@ -36,9 +36,9 @@ Instructions on how to do a Mainnet peg-in.
         <div align="left"><img width="70%" src="/dist/images/mycrypto-federation.png" alt="Get RSK Federation address from MyCrypto"/></div>
     Once you have the RSK Federation address, you can send Bitcoin to it from your Bitcoin address.
     >
-    > Note: You must send a minimum amount of 0.01 BTC.
+    > Note: You must send a minimum amount of 0.005 BTC.
 - Wait for BTC confirmations
-  -  To ensure the transaction, we need to wait 100 BTC confirmations.
+  -  To ensure the transaction is successful, we need to wait for 100 BTC network confirmations.
     > 100 blocks \* 10 minutes/block = 1000 minutes = 16.667 hours. That is, this will take approximately 17 hours.
 - Get RBTC address with BTC private key
   -  You can get a corresponding RBTC address from your BTC private key by using the [Rootstock Utils](https://github.com/rsksmart/utils). If you do not want to compile the utility, you can download the [latest release](https://github.com/rsksmart/utils/releases/latest).
