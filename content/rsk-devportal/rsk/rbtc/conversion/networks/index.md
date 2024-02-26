@@ -40,7 +40,7 @@ Instructions on how to do a Mainnet peg-in.
       ![Get RSK Federation address from MyCrypto](/dist/images/mycrypto-federation.png)
     - Once you have the RSK Federation address, you can send Bitcoin to it from your Bitcoin address.
     >
-    > Note: You must send a minimum amount of 0.01 BTC.
+    > Note: You must send a minimum amount of 0.005 BTC.
 - Wait for BTC confirmations
   -  To ensure the transaction is successful, we need to wait for 100 BTC network confirmations.
     > 100 blocks \* 10 minutes/block = 1000 minutes = 16.667 hours. That is, this will take approximately 17 hours.
