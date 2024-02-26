@@ -18,15 +18,15 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
   cd frontend
 ```
 
-2. Move the file from the `compiled contract` to the frontend directory
+2. Move the file from the `compiled contract` to the frontend directory.
 
-3. In the frontend directory, initialize a Node.js Project
+3. In the frontend directory, initialize a Node.js Project:
 
 ```shell
   npm init -y
 ```
 
-4. Install Ethers.js
+4. Install Ethers.js:
 
 ```shell
   npm install --save ethers
