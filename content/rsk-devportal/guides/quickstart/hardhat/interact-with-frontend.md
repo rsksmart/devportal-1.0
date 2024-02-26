@@ -18,7 +18,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
   cd frontend
 ```
 
-2. Move the file from the `compiled contract` to the frontend folder
+2. Move the file from the `compiled contract` to the frontend directory
 
 3. In the frontend directory, initialize a Node.js Project
 
