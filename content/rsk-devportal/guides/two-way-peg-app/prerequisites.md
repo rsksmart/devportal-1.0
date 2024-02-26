@@ -24,7 +24,7 @@ layout: rsk
 [](#top "collapsible")
 - Install Apps
     - The Bitcoin testnet app does not show on Ledger live manager by default. To be able to see the BTC Testnet app you need to enable the developer mode in Ledger live.
-    1. Enable Developer Mode for Bitcoin Testnet
+    1. **Enable Developer Mode for Bitcoin Testnet**
     - To enable developer mode, we will do the following:
         1. Connect your ledger hardware device and unlock it.
         2. Open Ledger live, click on Manager and open settings. 
@@ -33,7 +33,7 @@ layout: rsk
         4. Go to Ledger live manager and search for Bitcoin testnet app
         5. Click on install to install the Bitcoin Testnet application. To use the testnet app you also need the main Bitcoin app. So install both the apps to your device.
             ![Install bitcoin test](/assets/img/guides/two-way-peg-app/install-bitcoin-test.png)
-    2. Get Testnet address
+    2. **Get Testnet address**
     - On your ledger device, you’ll find all the apps installed on your device. The Bitcoin app to be used on Mainnet, and Bitcoin Test app to be used on Testnet. To start using testnet, we need the testnet address, to get this address:
         1. Open the Bitcoin test app on your ledger device. You will see a “Bitcoin Testnet is ready” screen
         2. In the ledger live app, go to accounts tab, click on add account.
