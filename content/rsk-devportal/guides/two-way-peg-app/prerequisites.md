@@ -29,34 +29,33 @@ layout: rsk
     - Connect your ledger hardware device and unlock it.
     - Open Ledger live, click on Manager and open settings. 
     - Navigate to the experimental features menu and enable developer mode. This will show developer and testnet apps in the manager.
-    ![Install Apps Settings](/assets/img/guides/two-way-peg-app/install-apps-settings.png)
-    Go to Ledger live manager and search for Bitcoin testnet app
-    ![Ledger live bitcoin test](/assets/img/guides/two-way-peg-app/ledger-live-bitcoin-test.png)
-    Click on install to install the Bitcoin Testnet application. To use the testnet app you also need the main Bitcoin app. So install both the apps to your device.
-    ![Install bitcoin test](/assets/img/guides/two-way-peg-app/install-bitcoin-test.png)
+        ![Install Apps Settings](/assets/img/guides/two-way-peg-app/install-apps-settings.png)
+    - Go to Ledger live manager and search for Bitcoin testnet app
+    - Click on install to install the Bitcoin Testnet application. To use the testnet app you also need the main Bitcoin app. So install both the apps to your device.
+        ![Install bitcoin test](/assets/img/guides/two-way-peg-app/install-bitcoin-test.png)
     **Get Testnet address**
     On your ledger device, you’ll find all the apps installed on your device. The Bitcoin app to be used on Mainnet, and Bitcoin Test app to be used on Testnet.
     To start using testnet, we need the testnet address, to get this address, 
     - Open the Bitcoin test app on your ledger device. You will see a “Bitcoin Testnet is ready” screen
     - In the ledger live app, go to accounts tab, click on add account.
-    ![Add Account](/assets/img/guides/two-way-peg-app/add-account.png)
-    Search testnet and select Bitcoin Testnet (BTC). Click on Continue
-    ![Add Account 2](/assets/img/guides/two-way-peg-app/add-accounts.png)
+        ![Add Account](/assets/img/guides/two-way-peg-app/add-account.png)
+    - Search testnet and select Bitcoin Testnet (BTC). Click on Continue
+        ![Add Account 2](/assets/img/guides/two-way-peg-app/add-accounts.png)
     - Approve the Bitcoin Test app on your hardware wallet device
     - On the next screen choose the address format (Native SegWit / SegWit).
-    Click on **Add Account**.
-    ![Add Accounts 3](/assets/img/guides/two-way-peg-app/add-account-3.png)
+    - Click on **Add Account**:
+        ![Add Accounts 3](/assets/img/guides/two-way-peg-app/add-account-3.png)
     >_Note: See [supported addresses](#supported-addresses) section for the types of addresses supported by the 2 way peg app._
+        ![Account Added Successfully](/assets/img/guides/two-way-peg-app/account-added-successfully.png)
     Now you have successfully added the Bitcoin testnet app to your account.
-    ![Account Added Successfully](/assets/img/guides/two-way-peg-app/account-added-successfully.png)
 - Getting Funds
     - **Getting Testnet Tokens**
-    Go to the receive tab on Ledger live.
-    ![Receive tab](/assets/img/guides/two-way-peg-app/receive-tab.png)
-    Select Bitcoin testnet and click on continue. 
-    ![Receive Tab - Select Bitcoin Testnet](/assets/img/guides/two-way-peg-app/receive-tab-select-bitcoin-testnet.png)
-    Copy BTC Testnet address
-    ![Copy BTC Testnet Address](/assets/img/guides/two-way-peg-app/copy-btc-testnet-address.png)
+        - Go to the receive tab on Ledger live.
+            ![Receive tab](/assets/img/guides/two-way-peg-app/receive-tab.png)
+        - Select Bitcoin testnet and click on continue. 
+            ![Receive Tab - Select Bitcoin Testnet](/assets/img/guides/two-way-peg-app/receive-tab-select-bitcoin-testnet.png)
+        - Copy BTC Testnet address
+            ![Copy BTC Testnet Address](/assets/img/guides/two-way-peg-app/copy-btc-testnet-address.png)
     **Getting Testnet Tokens**
     Use the following faucet to receive testnet tokens.
     - Open [Coinfaucet](https://coinfaucet.eu/en/btc-testnet/)
