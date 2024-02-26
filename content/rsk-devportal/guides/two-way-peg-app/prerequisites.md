@@ -24,7 +24,7 @@ layout: rsk
 [](#top "collapsible")
 - Install Apps
     - The Bitcoin testnet app does not show on Ledger live manager by default. To be able to see the BTC Testnet app you need to enable the developer mode in Ledger live.
-    **Enabling Developer Mode for Bitcoin Testnet**
+    1. Enable Developer Mode for Bitcoin Testnet
     - To enable developer mode, we will do the following:
     - Connect your ledger hardware device and unlock it.
     - Open Ledger live, click on Manager and open settings. 
@@ -33,9 +33,8 @@ layout: rsk
     - Go to Ledger live manager and search for Bitcoin testnet app
     - Click on install to install the Bitcoin Testnet application. To use the testnet app you also need the main Bitcoin app. So install both the apps to your device.
         ![Install bitcoin test](/assets/img/guides/two-way-peg-app/install-bitcoin-test.png)
-    **Get Testnet address**
-    On your ledger device, you’ll find all the apps installed on your device. The Bitcoin app to be used on Mainnet, and Bitcoin Test app to be used on Testnet.
-    To start using testnet, we need the testnet address, to get this address, 
+    2. Get Testnet address
+    On your ledger device, you’ll find all the apps installed on your device. The Bitcoin app to be used on Mainnet, and Bitcoin Test app to be used on Testnet. To start using testnet, we need the testnet address, to get this address:
     - Open the Bitcoin test app on your ledger device. You will see a “Bitcoin Testnet is ready” screen
     - In the ledger live app, go to accounts tab, click on add account.
         ![Add Account](/assets/img/guides/two-way-peg-app/add-account.png)
@@ -45,24 +44,24 @@ layout: rsk
     - On the next screen choose the address format (Native SegWit / SegWit).
     - Click on **Add Account**:
         ![Add Accounts 3](/assets/img/guides/two-way-peg-app/add-account-3.png)
-    >_Note: See [supported addresses](#supported-addresses) section for the types of addresses supported by the 2 way peg app._
+    > Note: See [supported addresses](#supported-addresses) section for the types of addresses supported by the 2 way peg app.
+    - You have successfully added the Bitcoin testnet app to your account.
         ![Account Added Successfully](/assets/img/guides/two-way-peg-app/account-added-successfully.png)
-    Now you have successfully added the Bitcoin testnet app to your account.
 - Getting Funds
     - **Getting Testnet Tokens**
-        - Go to the receive tab on Ledger live.
+        1. Go to the receive tab on Ledger live.
             ![Receive tab](/assets/img/guides/two-way-peg-app/receive-tab.png)
-        - Select Bitcoin testnet and click on continue. 
+        2. Select Bitcoin testnet and click on continue. 
             ![Receive Tab - Select Bitcoin Testnet](/assets/img/guides/two-way-peg-app/receive-tab-select-bitcoin-testnet.png)
-        - Copy BTC Testnet address
+        3. Copy BTC Testnet address
             ![Copy BTC Testnet Address](/assets/img/guides/two-way-peg-app/copy-btc-testnet-address.png)
-    Use the following faucet to receive testnet tokens.
-    - Open [Coinfaucet](https://coinfaucet.eu/en/btc-testnet/)
-    - Paste the address into the field and click on Get Bitcoins. 
-    > Note: You need at least **0.005 BTC** to perform a pegin on Mainnet and Testnet. Likewise, you need at least **0.004 RBTC** to perform a pegout on Mainnet and Testnet._
-    **Getting Mainnet Tokens**
-    You can get BTC on Exchanges like [Liquality](/solutions/liquality/) and [Defiant](https://www.defiantapp.tech/en/en).  See [Get Crypto on Rootstock](/guides/get-crypto-on-rsk/) for how to get RBTC.
-    > - The 2 way peg app is available on both Mainnet and Testnet. Both applications follow the same process, for production purposes, use [Mainnet](https://app.2wp.rootstock.io/), for testing and development purposes, use the [Testnet](https://app.2wp.testnet.rootstock.io/). 
+        4. Use the following faucet to receive testnet tokens:
+            - Open [Coinfaucet](https://coinfaucet.eu/en/btc-testnet/)
+            - Paste the address into the field and click on Get Bitcoins. 
+    > _Note: You need at least **0.005 BTC** to perform a pegin on Mainnet and Testnet. Likewise, you need at least **0.004 RBTC** to perform a pegout on Mainnet and Testnet._
+    - **Getting Mainnet Tokens**
+    - You can get BTC on Exchanges like [Liquality](/solutions/liquality/) and [Defiant](https://www.defiantapp.tech/en/en).  See [Get Crypto on Rootstock](/guides/get-crypto-on-rsk/) for how to get RBTC.
+    > The 2 way peg app is available on both Mainnet and Testnet. Both applications follow the same process, for production purposes, use [Mainnet](https://app.2wp.rootstock.io/), for testing and development purposes, use the [Testnet](https://app.2wp.testnet.rootstock.io/). 
     > - See [glossary](/guides/two-way-peg-app/glossary/) for explanation of these terms.
 - Requirements for Pegin
     - The following are the setup requirements to get started with the 2 way peg app.
