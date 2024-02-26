@@ -44,11 +44,11 @@ layout: rsk
         5. On the next screen choose the address format (Native SegWit / SegWit).
         6. Click on **Add Account**:
             ![Add Accounts 3](/assets/img/guides/two-way-peg-app/add-account-3.png)
-    > Note: See [supported addresses](#supported-addresses) section for the types of addresses supported by the 2 way peg app.
-    - You have successfully added the Bitcoin testnet app to your account.
-        ![Account Added Successfully](/assets/img/guides/two-way-peg-app/account-added-successfully.png)
+        > Note: See [supported addresses](#supported-addresses) section for the types of addresses supported by the 2 way peg app.
+        - You have successfully added the Bitcoin testnet app to your account.
+            ![Account Added Successfully](/assets/img/guides/two-way-peg-app/account-added-successfully.png)
 - Getting Funds
-    - **Getting Testnet Tokens**
+    1. **Getting Testnet Tokens**
         1. Go to the receive tab on Ledger live.
             ![Receive tab](/assets/img/guides/two-way-peg-app/receive-tab.png)
         2. Select Bitcoin testnet and click on continue. 
@@ -59,7 +59,7 @@ layout: rsk
             - Open [Coinfaucet](https://coinfaucet.eu/en/btc-testnet/)
             - Paste the address into the field and click on Get Bitcoins. 
     > _Note: You need at least **0.005 BTC** to perform a pegin on Mainnet and Testnet. Likewise, you need at least **0.004 RBTC** to perform a pegout on Mainnet and Testnet._
-    - **Getting Mainnet Tokens**
+    2. **Getting Mainnet Tokens**
     - You can get BTC on Exchanges like [Liquality](/solutions/liquality/) and [Defiant](https://www.defiantapp.tech/en/en).  See [Get Crypto on Rootstock](/guides/get-crypto-on-rsk/) for how to get RBTC.
     > The 2 way peg app is available on both Mainnet and Testnet. Both applications follow the same process, for production purposes, use [Mainnet](https://app.2wp.rootstock.io/), for testing and development purposes, use the [Testnet](https://app.2wp.testnet.rootstock.io/). 
     > - See [glossary](/guides/two-way-peg-app/glossary/) for explanation of these terms.
