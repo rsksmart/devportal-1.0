@@ -26,24 +26,24 @@ layout: rsk
     - The Bitcoin testnet app does not show on Ledger live manager by default. To be able to see the BTC Testnet app you need to enable the developer mode in Ledger live.
     1. Enable Developer Mode for Bitcoin Testnet
     - To enable developer mode, we will do the following:
-    - Connect your ledger hardware device and unlock it.
-    - Open Ledger live, click on Manager and open settings. 
-    - Navigate to the experimental features menu and enable developer mode. This will show developer and testnet apps in the manager.
-        ![Install Apps Settings](/assets/img/guides/two-way-peg-app/install-apps-settings.png)
-    - Go to Ledger live manager and search for Bitcoin testnet app
-    - Click on install to install the Bitcoin Testnet application. To use the testnet app you also need the main Bitcoin app. So install both the apps to your device.
-        ![Install bitcoin test](/assets/img/guides/two-way-peg-app/install-bitcoin-test.png)
+        1. Connect your ledger hardware device and unlock it.
+        2. Open Ledger live, click on Manager and open settings. 
+        3. Navigate to the experimental features menu and enable developer mode. This will show developer and testnet apps in the manager.
+            ![Install Apps Settings](/assets/img/guides/two-way-peg-app/install-apps-settings.png)
+        4. Go to Ledger live manager and search for Bitcoin testnet app
+        5. Click on install to install the Bitcoin Testnet application. To use the testnet app you also need the main Bitcoin app. So install both the apps to your device.
+            ![Install bitcoin test](/assets/img/guides/two-way-peg-app/install-bitcoin-test.png)
     2. Get Testnet address
-    On your ledger device, you’ll find all the apps installed on your device. The Bitcoin app to be used on Mainnet, and Bitcoin Test app to be used on Testnet. To start using testnet, we need the testnet address, to get this address:
-    - Open the Bitcoin test app on your ledger device. You will see a “Bitcoin Testnet is ready” screen
-    - In the ledger live app, go to accounts tab, click on add account.
-        ![Add Account](/assets/img/guides/two-way-peg-app/add-account.png)
-    - Search testnet and select Bitcoin Testnet (BTC). Click on Continue
-        ![Add Account 2](/assets/img/guides/two-way-peg-app/add-accounts.png)
-    - Approve the Bitcoin Test app on your hardware wallet device
-    - On the next screen choose the address format (Native SegWit / SegWit).
-    - Click on **Add Account**:
-        ![Add Accounts 3](/assets/img/guides/two-way-peg-app/add-account-3.png)
+    - On your ledger device, you’ll find all the apps installed on your device. The Bitcoin app to be used on Mainnet, and Bitcoin Test app to be used on Testnet. To start using testnet, we need the testnet address, to get this address:
+        1. Open the Bitcoin test app on your ledger device. You will see a “Bitcoin Testnet is ready” screen
+        2. In the ledger live app, go to accounts tab, click on add account.
+            ![Add Account](/assets/img/guides/two-way-peg-app/add-account.png)
+        3. Search testnet and select Bitcoin Testnet (BTC). Click on Continue
+            ![Add Account 2](/assets/img/guides/two-way-peg-app/add-accounts.png)
+        4. Approve the Bitcoin Test app on your hardware wallet device
+        5. On the next screen choose the address format (Native SegWit / SegWit).
+        6. Click on **Add Account**:
+            ![Add Accounts 3](/assets/img/guides/two-way-peg-app/add-account-3.png)
     > Note: See [supported addresses](#supported-addresses) section for the types of addresses supported by the 2 way peg app.
     - You have successfully added the Bitcoin testnet app to your account.
         ![Account Added Successfully](/assets/img/guides/two-way-peg-app/account-added-successfully.png)
@@ -79,18 +79,18 @@ layout: rsk
     > If you don’t own any of the hardware wallet devices listed above, please visit the official website of the [Ledger](https://shop.ledger.com/products/ledger-nano-s-plus) and [Trezor](https://shop.trezor.io/) hardware wallets to purchase one.
 - Requirements for Pegout
     - The following are the setup requirements to get started with the 2 way peg app:
-    - PC: A computer (at least Windows 8.1 (64-bit), macOS 10.10, or Linux) with internet connection.
-    - Ledger Nano S / Ledger Nano X hardware wallets.
-        - Download and install [Ledger Live](https://support.ledger.com/hc/en-us/articles/4404389503889-Getting-started-with-Ledger-Live?docs=true).
-            - You’ll need the Ledger Live application which is a must have companion to your Ledger device. Ledger live software is an interface app for your Ledger Nano X and Ledger Nano S device. The application allows users to manage their ledger device and is available for both desktop as well as mobile.
-            - You’ll need this to install the Bitcoin and Bitcoin testnet app on your ledger. We hope you have a ledger live application ready. If not you can download from [here](https://www.ledger.com/ledger-live/download).
-        - To install Ledger Nano S, see [setup](https://support.ledger.com/hc/en-us/articles/360000613793?docs=true) instructions.
-        - To install Ledger Nano X, see [setup](https://support.ledger.com/hc/en-us/articles/360018784134-Set-up-your-Ledger-Nano-X?docs=true) instructions.
-    - Trezor hardware Wallet
-        - How to [setup](https://wiki.trezor.io/User_manual:Setting_up_the_Trezor_device) a Trezor hardware wallet device.
-    - Liquality Software Wallet
-        - How to [setup](https://www.liquality.io/) a Liquality software wallet.
-    - Funds (at least 0.04 BTC)
+        - PC: A computer (at least Windows 8.1 (64-bit), macOS 10.10, or Linux) with internet connection.
+        - Ledger Nano S / Ledger Nano X hardware wallets.
+            - Download and install [Ledger Live](https://support.ledger.com/hc/en-us/articles/4404389503889-Getting-started-with-Ledger-Live?docs=true).
+                - You’ll need the Ledger Live application which is a must have companion to your Ledger device. Ledger live software is an interface app for your Ledger Nano X and Ledger Nano S device. The application allows users to manage their ledger device and is available for both desktop as well as mobile.
+                - You’ll need this to install the Bitcoin and Bitcoin testnet app on your ledger. We hope you have a ledger live application ready. If not you can download from [here](https://www.ledger.com/ledger-live/download).
+            - To install Ledger Nano S, see [setup](https://support.ledger.com/hc/en-us/articles/360000613793?docs=true) instructions.
+            - To install Ledger Nano X, see [setup](https://support.ledger.com/hc/en-us/articles/360018784134-Set-up-your-Ledger-Nano-X?docs=true) instructions.
+        - Trezor hardware Wallet
+            - How to [setup](https://wiki.trezor.io/User_manual:Setting_up_the_Trezor_device) a Trezor hardware wallet device.
+        - Liquality Software Wallet
+            - How to [setup](https://www.liquality.io/) a Liquality software wallet.
+        - Funds (at least 0.04 BTC)
     > In this guide, we will be using the Ledger Nano S hardware wallet. All other versions of the Ledger and Trezor hardware wallets are also supported by the 2 way peg app.
     > If you don’t own any of the hardware wallet devices listed above, please visit the official website of the [Ledger](https://shop.ledger.com/products/ledger-nano-s-plus) and [Trezor](https://shop.trezor.io/) hardware wallets to purchase one.  
 - Resources
