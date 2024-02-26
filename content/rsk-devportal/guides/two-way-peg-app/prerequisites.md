@@ -7,7 +7,7 @@ tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock
 layout: rsk
 ---
 
-- [Metamask Wallet](/develop/wallet/use/metamask/), or
+- [Metamask Wallet](/develop/wallet/use/metamask/)
 - [Liquality Wallet](/solutions/liquality/)
 - [Install Apps](/guides/two-way-peg-app/prerequisites#install-apps)
 - [Enabling Developer Mode](/guides/two-way-peg-app/prerequisites#enabling-developer-mode)
@@ -24,8 +24,8 @@ layout: rsk
 [](#top "collapsible")
 - Install Apps
     - The Bitcoin testnet app does not show on Ledger live manager by default. To be able to see the BTC Testnet app you need to enable the developer mode in Ledger live.
-    **Enabling Developer Mode for Bitcoin Testnet** 
-    To enable developer mode, we will do the following:
+    **Enabling Developer Mode for Bitcoin Testnet**
+    - To enable developer mode, we will do the following:
     - Connect your ledger hardware device and unlock it.
     - Open Ledger live, click on Manager and open settings. 
     - Navigate to the experimental features menu and enable developer mode. This will show developer and testnet apps in the manager.
@@ -56,7 +56,6 @@ layout: rsk
             ![Receive Tab - Select Bitcoin Testnet](/assets/img/guides/two-way-peg-app/receive-tab-select-bitcoin-testnet.png)
         - Copy BTC Testnet address
             ![Copy BTC Testnet Address](/assets/img/guides/two-way-peg-app/copy-btc-testnet-address.png)
-    **Getting Testnet Tokens**
     Use the following faucet to receive testnet tokens.
     - Open [Coinfaucet](https://coinfaucet.eu/en/btc-testnet/)
     - Paste the address into the field and click on Get Bitcoins. 
