@@ -36,7 +36,7 @@ To run RSKj on Apple M1/M2 devices using x86 based software, ensure you have `Ro
     ```jsx
     mkdir config
     ```
-1. **Download Config File**: Get `node.conf` from [here](https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf).
+1. **Download Config File**: Get `node.conf` from [here](https://github.com/rsksmart/rif-relay/blob/main/docker/node.conf).
 1. **Move Config File**: Move the `node.conf` file to the `config` directory.
 
 #### Run the Node
