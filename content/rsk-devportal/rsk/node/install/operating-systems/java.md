@@ -1,9 +1,11 @@
 ---
+section_title: Operating Systems
 layout: rsk
+menu_title: Setup node using Java
 title: Setup node using Java
-tags: java, install, rsk, rskj, node, how-to, network, requirements, mainnet, jar
+tags: java, install, rootstock, rskj, node, how-to, network, requirements, mainnet, jar
 menu_order: 4
-render_features: 'custom-terminals collapsible' 
+render_features: 'collapsible' 
 ---
 
 To setup a Rootstock node using Java, you need to:
@@ -36,7 +38,6 @@ Additinally for Mac M1 / M2 (Apple Chips) using x86 based software:
     1. **Download Config File**: Get `node.conf` from [here](https://github.com/rsksmart/rif-relay/blob/main/docker/node.conf).
     1. **Move Config File**: Move the `node.conf` file to the `config` directory.
 - Run the Node
-    [](#top "multiple-terminals")
     - Linux, Mac OSX
         ```shell
         java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
@@ -53,66 +54,57 @@ Additinally for Mac M1 / M2 (Apple Chips) using x86 based software:
 
 Instead of the default synchronization, you can use import sync to import a pre-synchronized database from a trusted origin, which is significantly faster.
 
-**Running Node with Import Sync:**
-
-
-[](#top "multiple-terminals")
-- Linux, Mac OSX
-    ```shell
-    java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
-    ```
-- Windows
-    ```windows-command-prompt
-    java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
-    ```
-
-> **Memory Issues?** If you encounter memory errors and meet the [minimum hardware requirements](/rsk/node/install/requirements/), consider using `-Xmx4G` flag to allocate more memory as shown below:
-
-[](#top "multiple-terminals")
-- Linux, Mac OSX
-    ```shell
-    $ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
-    ```
-- Windows
-    ```windows-command-prompt
-    C:\> java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
-    ```
-
-    > Replace `<PATH-TO-THE-RSKJ-JAR>` with your JAR file path. For configuration details, see [`database.import` setting](/rsk/node/configure/reference/#databaseimport).
+[](#top "collapsible")
+- Running node with Import Sync
+    - Linux, Mac OSX
+        ```shell
+        java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+        ```
+    - Windows
+        ```windows-command-prompt
+        java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+        ```
+- Resolving memory issues
+    - **Memory Issues?** If you encounter memory errors and meet the [minimum hardware requirements](/rsk/node/install/requirements/), consider using `-Xmx4G` flag to allocate more memory as shown below:
+    - Linux, Mac OSX
+        ```shell
+        $ java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+        ```
+    - Windows
+        ```windows-command-prompt
+        C:\> java -Xmx4G -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start --import
+        ```
+        > Replace `<PATH-TO-THE-RSKJ-JAR>` with your JAR file path. For configuration details, see [`database.import` setting](/rsk/node/configure/reference/#databaseimport).
 
 ### Check the RPC
 
 If you don't get any output after starting the node, then it's running correctly. To confirm, open a new console tab (it is important you do not close this tab or interrupt the process) and test the node's RPC server.
 
-- Run the following sample cURL request:
-
-    [](#top "multiple-terminals")
-    - Linux, Mac OSX
-        ```shell
-        curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
-        ```
-    - Windows
-        ```windows-command-prompt
-        curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
-        ```
-
-        Expect a response like:
-        ```shell
-        {"jsonrpc":"2.0","id":67,"result":"RskJ/5.4.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
-        ```
-
-- To check the block number:
-
-    [](#top "multiple-terminals")
-    - Linux, Mac OSX
-        ```shell
-        curl -X POST http://localhost:4444/ -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
-        ```
-    - Windows
-        ```windows-command-prompt
-        curl -X POST http://localhost:4444/ -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
-        ```
-
+[](#top "collapsible")
+- Run sample request
+    - Run the following sample cURL request:
+        - Linux, Mac OSX
+            ```shell
+            curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
+            ```
+        - Windows
+            ```windows-command-prompt
+            curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
+            ```
+            You should get a response like this:
+            ```shell
+            {"jsonrpc":"2.0","id":67,"result":"RskJ/5.4.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
+            ```
+- Check block number 
+    - To check the block number:
+        - Linux, Mac OSX
+            ```shell
+            curl -X POST http://localhost:4444/ -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
+            ```
+        - Windows
+            ```windows-command-prompt
+            curl -X POST http://localhost:4444/ -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
+            ```
         Output:
         ```jsx
         {"jsonrpc":"2.0","id":1,"result":"0x0"}
