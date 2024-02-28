@@ -3,12 +3,12 @@ section_title: Operating Systems
 menu_order: 4
 menu_title: Setup node on Docker
 layout: rsk
-title: How to setup an RSK node on Docker
+title: How to setup a Rootstock node on Docker
 tags: docker, desktop, macOS, rskj, windows, install, rsk, node, how-to, network, requirements, mainnet, testnet, regtest
 render_features: 'collapsible'
 ---
 
-Before installing Docker, ensure your system meets the [minimum requirements](/rsk/node/install/requirements/) before installing the RSK node.
+Before installing Docker, ensure your system meets the [minimum requirements](/rsk/node/install/requirements/) for installing the Rootstock node.
 
 ### Install Docker Desktop Client
 
@@ -18,53 +18,49 @@ Before installing Docker, ensure your system meets the [minimum requirements](/r
 - Mac OSX and Windows
     - [Download](https://www.docker.com/products/docker-desktop) and install
     - Start the Docker Desktop client
-    - Login with a Docker Hub free account
+    - Login with a free Docker Hub account
 - Linux
     - Install [Docker Engine Community](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-    - Note that you will need to use `sudo` for all docker commands, by default. To avoid this [additional steps](https://docs.docker.com/install/linux/linux-postinstall/) are required.
+    - By default you will need to use `sudo` for all docker commands. To avoid this, follow the [additional steps](https://docs.docker.com/install/linux/linux-postinstall/) required.
 
-Ensure that docker is running by running the following command - it should run without any errors.
+Ensure that docker is running by running the following command:
 
 ```shell
 docker ps
 ```
+This should run without errors.
+> To learn more about installing Docker, visit the [Docker installation page](https://docs.docker.com/install/).
 
-You can find more information about Docker install [here](https://docs.docker.com/install/).
+### Install RSKj using Docker image
+To install an Rootstock node using Docker:
 
-### Install RSKj Using Docker
-To install an RSK node using Docker:
-
-1. Download the RSKj Dockerfiles and `supervisord.conf` from the [artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/5.3.0-fingerroot) or pull the image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj).
-
-    In the artifacts repo, select which ***type of*** node you want to install:
-      * A node connected to the public RSK Mainnet: `Dockerfile.MainNet`
-      * A node connected to the public RSK Testnet: `Dockerfile.TestNet`
-      * A node connected to a private RegTest network: `Dockerfile.RegTest`
-
-    > **Note:** If you get the following error:
-      
-    ```jsx
-      => ERROR [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.  0.0s
-      ------
-        > [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf:
-          ------
-            failed to compute cache key: "/supervisord.conf" not found: not found
-    ```     
-    Ensure that supervisord.conf is in the same folder as the dockerfile.
-      
-    When the build finishes, you should see an output similar to this:
-      
-      ```jsx
-      [+] Building 158.0s (11/11) FINISHED                                          
-      => [internal] load build definition from Dockerfile.RegTest               0.0s
-      => => transferring dockerfile: 293B
-        ....
-        => => exporting layers                                                    3.8s 
-          => => writing image sha256:d73739affdbe3f82a8ba9c686d34c04f48ac510568522  0.0s 
-          => => naming to docker.io/library/regtest                                 0.0s
-          Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
-      ```
-    Now you have a container ready to run Rootstock!
+1. Pull the RSKj image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj). Alternatively, you can download the RSKj Dockerfiles and `supervisord.conf` from the [Rootstock artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/5.4.0-fingerroot).
+    [](#top "collapsible")
+    - Downloading from the artifacts repository
+        - If you're downloading from the artifacts repo, navigate to the repo and select which ***type of*** node you want to install:
+            * A node connected to the public Rootstock Mainnet: `Dockerfile.MainNet`
+            * A node connected to the public Rootstock Testnet: `Dockerfile.TestNet`
+            * A node connected to a private RegTest network: `Dockerfile.RegTest`
+        > **Note:** If you get the following error, ensure that supervisord.conf is in the same folder as the dockerfile:
+        ```jsx
+        => ERROR [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.  0.0s
+        ------
+            > [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf:
+            ------
+                failed to compute cache key: "/supervisord.conf" not found: not found
+        ```     
+        When the build finishes, you should see an output similar to this:
+        ```jsx
+        [+] Building 158.0s (11/11) FINISHED                                          
+        => [internal] load build definition from Dockerfile.RegTest               0.0s
+        => => transferring dockerfile: 293B
+            ....
+            => => exporting layers                                                    3.8s 
+            => => writing image sha256:d73739affdbe3f82a8ba9c686d34c04f48ac510568522  0.0s 
+            => => naming to docker.io/library/regtest                                 0.0s
+            Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+        ```
+        Now you have a Docker container ready to run the Rootstock node!
     
 1. To run the RegTest node, execute the following commands:
 
@@ -82,14 +78,14 @@ To install an RSK node using Docker:
     ```jsx
     curl -X POST -H "Content-Type: application/json" --data "{\"jsonrpc\":\"2.0\",\"method\":\"net_version\",\"params\":[],\"id\":1}" http://127.0.0.1:4444
     ```
-    You should see the below output:
-
+    This should return an output as follows:
     ```bash
     {"jsonrpc":"2.0","id":1,"result":"33"}
     ```
+
 1. To check that the node running, see the [Check the RPC](https://dev.rootstock.io/rsk/node/install/operating-systems/java/#check-the-rpc) section in Using the JAR file.
 
-Now, you have successfully setup a Rootstock node using the docker image.
+Now, you have successfully setup a Rootstock node using the Docker image.
 
 ### Install the node using Docker containers (Intel Chips)
 
@@ -119,7 +115,7 @@ Now, you have successfully setup a Rootstock node using the docker image.
 
       Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
     ```
-    Now you have a container ready to run RSK!
+    Now you have a container ready to run Rootstock node!
 
 1. To run the container, execute one of the following commands:
 
@@ -146,9 +142,7 @@ To install the node using docker containers from Mac M1:
     ```
     docker run rsksmart/rskj-standalone
     ``` 
-    *It's possible that you may need to enable experimental features of Docker if your version does not support BuildX plugin by default. In order to enable experimental features:*
-
-1. Update `/etc/docker/daemon.json` to add the property `experimental: true`.
+    > Note: You may need to enable experimental features of Docker if your version does not support BuildX plugin by default. To do this, you need to add the `experimental: true` property to your `/etc/docker/daemon.json`. Follwo the instruction in the next step for how to add it.
 
 1. If you have docker desktop:
 
@@ -156,7 +150,7 @@ To install the node using docker containers from Mac M1:
     1. In the center you will see the same json from `daemon.json`, add the property `experimental: true` at the top level of the json.
     1. Click **Apply and Restart**.
 
-1. To build the containe, execute any of the following commands:
+1. To build the container, execute any of the following commands:
 
     > **Note:** The type of node to run is dependent on the node's type installed in[install RSKj using Docker](#install-rskj-using-docker).
 
@@ -173,9 +167,9 @@ To install the node using docker containers from Mac M1:
         ```
         docker buildx build --platform linux/amd64 -t regtest -f Dockerfile.RegTest .
         ```
-    When the build finishes, you have a container ready to run RSK.
+    When the build finishes, you have a container ready to run Rootstock node.
     
-1. To run the container, execute any of the following commands:
+1. Once the restart is complete, run the container by executing any of the following commands:
 
     [](#top "collapsible")
     - Mainnet
@@ -192,7 +186,7 @@ To install the node using docker containers from Mac M1:
         docker run rsksmart/rskj:latest --regtest
         ```
 
-## Video
+### Video walkthrough
 
 <div class="video-container">
   <iframe width="949" height="534" src="https://www.youtube-nocookie.com/embed/c-YGtE3UIjE?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -208,11 +202,11 @@ To install the node using docker containers from Mac M1:
     ```
     docker run -p 5050:5050 -p 127.0.0.1:4444:4444 rsksmart/rskj:latest
     ```
-1. Then, you could, for example, query the current block number with:
+1. After exposing the endpoint, you  can interact with the node. The following example queries the current block number:
     ```shell
     curl -H "Content-type: application/json" -d '{"jsonrpc":"2.0","method":"eth_blockNumber","id":1}' http://127.0.0.1:4444/
     ```
-1. Finally, you can provide a custom configuration to the node with:
+1. To provide custom configuration to the node, you can run the command as follows:
     ```
     docker run -p 5050:5050 -v /path/to/my/custom/node.conf:/etc/rsk/node.conf rsksmart/rskj:latest
     ```
