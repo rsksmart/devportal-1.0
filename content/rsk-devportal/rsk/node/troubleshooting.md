@@ -75,8 +75,11 @@ If what you need is not in this section, **please contact us** without hesitatio
     > - Note: You cannot migrate to the same database or an error will be thrown. It is highly recommended to turn off the node in order to perform the migration since latest data could be lost.> > - Example migrating from `leveldb` to `rocksdb`:
     > - `java -cp rsk-core-<VERSION>.jar co.rsk.cli.tools.DbMigrate rocksdb`
 - ERROR: failed to solve: failed to read dockerfile
-    > - The first error indicates that Docker couldn't find the `Dockerfile` in your current directory. Make sure you're in the correct directory or specify the path to the `Dockerfile`.
+    > - The first error indicates that Docker couldn't find the `Dockerfile` in your current directory. Make sure you're in the correct directory or specify the path to the `Dockerfile`
     > - If your Dockerfile is in txt, move the Dockerfile.txt to Dockerfile: `mv /path/to/Dockerfile.txt /path/to/Dockerfile`
     > - Proceed with `Docker Build` command: `docker build -t regtest /path/to/rskj-node-jar`
+- WARNING: The requested image's platform (linux/amd64) does not match
+    > - This warning indicates that the platform of the image doesn't match the platform of your host machine. The image is built for linux/amd64 architecture, but your host machine is linux/arm64/v8 architecture.
+    > - Use a compatible image: `docker run -d --name rsk-node -p 4444:4444 -p 50505:50505 rsksmart/rskj:arm64v8-latest node --regtest`
 
 

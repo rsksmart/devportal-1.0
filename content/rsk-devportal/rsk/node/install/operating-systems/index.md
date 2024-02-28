@@ -96,24 +96,45 @@ Now, you have successfully setup a Rootstock node using the Docker image.
     [](#top "collapsible")
     - Mainnet
         ```
-        docker build -t mainnet -f Dockerfile.MainNet .
+        docker build -t rskj/5.4.0-fingerroot .
         ```
     - Testnet
         ```
-        docker build -t testnet -f Dockerfile.TestNet .
+        docker build -t rskj/5.4.0-fingerroot .
         ```
     - Regtest
         ```
-        docker build -t regtest -f Dockerfile.RegTest .
+        docker build -t rskj/5.4.0-fingerroot .
         ```
 
     When the build finishes, you should see an output similar to this:
     ```shell
-      RSK-Node % docker build -t mainnet -f Dockerfile.MainNet . 
-      [+] Building 452.4s (12/12) FINISHED                                            
-      => [internal] load build definition from Dockerfile.MainNet
+      docker build -t rskj/5.4.0-fingerroot . 
+      [+] Building 5.9s (15/15) FINISHED                        docker:desktop-linux
+ => [internal] load build definition from Dockerfile                      0.0s
+ => => transferring dockerfile: 1.97kB                                    0.0s
+ => [internal] load .dockerignore                                         0.0s
+ => => transferring context: 2B                                           0.0s
+ => [internal] load metadata for docker.io/library/openjdk:8-jre-slim-bu  5.9s
+ => [internal] load metadata for docker.io/library/openjdk:8-jdk-slim-bu  5.9s
+ => [runner 1/5] FROM docker.io/library/openjdk:8-jre-slim-buster@sha256  0.0s
+ => [builder 1/5] FROM docker.io/library/openjdk:8-jdk-slim-buster@sha25  0.0s
+ => CACHED [runner 2/5] RUN useradd -m rsk                                0.0s
+ => CACHED [runner 3/5] WORKDIR /home/rsk                                 0.0s
+ => CACHED [builder 2/5] RUN apt-get update -y &&     apt-get install -q  0.0s
+ => CACHED [builder 3/5] WORKDIR /code/rskj                               0.0s
+ => CACHED [builder 4/5] RUN gitrev=FINGERROOT-5.4.0 &&     git init &&   0.0s
+ => CACHED [builder 5/5] RUN gpg --keyserver https://secchannel.rsk.co/S  0.0s
+ => CACHED [runner 4/5] COPY --from=builder --chown=rsk:rsk /code/rskj/r  0.0s
+ => CACHED [runner 5/5] COPY --from=builder --chown=rsk:rsk /root/.m2/re  0.0s
+ => exporting to image                                                    0.0s
+ => => exporting layers                                                   0.0s
+ => => writing image sha256:e6ef5d147f12c24619b2d0b6f69375476c66f9f7abdf  0.0s
+ => => naming to docker.io/rskj/5.4.0-fingerroot                          0.0s
 
-      Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
+What's Next?
+  1. Sign in to your Docker account → docker login
+  2. View a summary of image vulnerabilities and recommendations → docker scout quickview
     ```
     Now you have a container ready to run Rootstock node!
 
