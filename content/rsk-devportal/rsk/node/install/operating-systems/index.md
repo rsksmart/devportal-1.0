@@ -178,15 +178,15 @@ To install the node using docker containers from Mac M1:
     [](#top "collapsible")
     - Mainnet
         ```
-        docker buildx build --platform linux/amd64 -t mainnet -f Dockerfile.MainNet .
+        docker buildx build --platform linux/amd64 -t mainnet -f /path/to/Dockerfile /path/to/rskj-node-jar
         ```
     - Testnet
         ```
-        docker buildx build --platform linux/amd64 -t testnet -f Dockerfile.TestNet .
+        docker buildx build --platform linux/amd64 -t testnet -f /path/to/Dockerfile /path/to/rskj-node-jar
         ```
     - Regtest
         ```
-        docker buildx build --platform linux/amd64 -t regtest -f Dockerfile.RegTest .
+        docker buildx build --platform linux/amd64 -t regtest -f /path/to/Dockerfile /path/to/rskj-node-jar
         ```
     When the build finishes, you have a container ready to run Rootstock node.
     
