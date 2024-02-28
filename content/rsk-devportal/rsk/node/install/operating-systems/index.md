@@ -91,7 +91,7 @@ Now, you have successfully setup a Rootstock node using the Docker image.
 
 1. Build the container by running any of the following commands:
 
-    > Note: The type of node to run is dependent on the node's type installed in [install RSKj using Docker](/#install-rskj-using-docker-image).
+    > Note: The type of node to run is dependent on the node's type installed in [install RSKj using Docker](/rsk/node/install/operating-systems/#install-rskj-using-docker-image).
 
     [](#top "collapsible")
     - Mainnet
