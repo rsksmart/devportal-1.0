@@ -46,6 +46,24 @@ It is available for iOS and Android devices where you can:
 
 [Download the Buenbit App](https://buenbit.com/)
 
+### Criptala
+
+[Criptala](https://criptala.io/) is a Uruguayan cryptocurrency exchange platform focused on facilitating buying and selling of cryptocurrencies for individuals in the country. It offers a user-friendly platform and allows users to:
+
+- Purchase and sell major cryptocurrencies, including BTC, ETH, RBTC, RIF, DOC and rDOC.
+- Deposit and withdraw funds using Uruguayan pesos (UYU) through bank transfers, cash, and wire transfers.
+- Convert between fiat and crypto through RedPagos, a widespread network of payment collection points in Uruguay, aiming to simplify access for users.
+
+[Register an account on the website](https://exchange.criptala.io/) and verify your account to start trading.
+
+### AgenteBTC: Invest and Trade in Cryptocurrencies
+
+[AgenteBTC](https://www.agentebtc.com/) is a Peruvian cryptocurrency exchange platform that allows users to:
+
+- Buy and sell cryptocurrencies like BTC, RBTC, SOL, and USDT using Peruvian Soles (PEN) or US Dollars (USD).
+- Invest and trade in cryptocurrencies by offering educational resources and various tools for trading strategies.
+- Deposit and withdraw funds through bank transfers or cash deposits at over 12,000 affiliated locations.
+
 ## Decentralized Cryptocurrency Exchanges
 
 In addition to centralised exchanges, there is another category of exchange services that act similar to exchanges, but do not require registration or KYC.
