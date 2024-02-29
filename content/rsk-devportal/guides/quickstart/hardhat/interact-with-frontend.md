@@ -12,21 +12,20 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
 
 ## Project Setup
 
-1. Navigate to the `frontend` directory in the `MyToken` project:
+1. Create a new folder called `frontend` and navigate to the directory:
     
 ```shell
+  mkdir frontend
   cd frontend
 ```
 
-2. Move the file from the `compiled contract` to the frontend directory.
-
-3. In the frontend directory, initialize a Node.js Project:
+2. In the frontend directory, initialize a Node.js Project:
 
 ```shell
   npm init -y
 ```
 
-4. Install Ethers.js:
+3. Install Ethers.js:
 
 ```shell
   npm install --save ethers
