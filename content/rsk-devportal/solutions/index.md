@@ -2,14 +2,13 @@
 layout: rsk
 section_title: Solutions
 menu_title: About
-title: Solutions on RSK
-description: 'Check out the many ways IOV Labs partners leverage the RSK and RIF
+title: Solutions on Rootstock
+description: 'Check out the many ways IOV Labs partners leverage the Rootstock and RIF
 platforms and APIs to create innovative experiences.'
 tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
 menu_order: 7
 ---
-
-Check out the many ways IOV Labs partners leverage the RSK and RIF
+Check out the many ways IOV Labs partners leverage the Rootstock and RIF
 platforms and APIs to create innovative experiences.
 
 <div class="row features-list">
@@ -26,7 +25,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/defiant/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Defiant</p>
-                        <p class="card-desc">Defiant is the first mobile platform and P2P marketplace for stablecoins. Check out how Defiant integrates with RSK.</p>
+                        <p class="card-desc">Defiant is the first mobile platform and P2P marketplace for stablecoins. Check out how Defiant integrates with Rootstock.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -49,7 +48,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/chainbeat/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Chainbeat</p>
-                        <p class="card-desc">Chainbeat provides blockchain data insights to help understand usage and behavioral metrics for smart contracts running on RSK. Check out how Chainbeat integrates with RSK.</p>
+                        <p class="card-desc">Chainbeat provides blockchain data insights to help understand usage and behavioral metrics for smart contracts running on Rootstock. Check out how Chainbeat integrates with Rootstock.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -72,7 +71,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/moneyonchain/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Money on Chain</p>
-                        <p class="card-desc">Money on Chain provides a Bitcoin-Collateralized Stablecoin. Check out how Money on Chain integrates with RSK.</p>
+                        <p class="card-desc">Money on Chain provides a Bitcoin-Collateralized Stablecoin. Check out how Money on Chain integrates with Rootstock.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -118,7 +117,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/getblock/">
                     <div class="content-container">
                         <p class="card-title rsk_green">GetBlock</p>
-                        <p class="card-desc">Fast & Easy Connection to Major Blockchain Nodes. Check out how GetBlock integrates with RSK</p>
+                        <p class="card-desc">Fast & Easy Connection to Major Blockchain Nodes. Check out how GetBlock integrates with Rootstock</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -141,7 +140,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/math-wallet/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Math Wallet</p>
-                        <p class="card-desc">CryptoWallet for 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi. Check out how Math Wallet integrates with RSK.</p>
+                        <p class="card-desc">CryptoWallet for 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi. Check out how Math Wallet integrates with Rootstock.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -279,7 +278,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/tenderly/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Tenderly</p>
-                        <p class="card-desc">Tenderly provides real-time monitoring, alerting and troubleshooting for Smart Contracts. Check out how to make use of Tenderly’s seamless tools to enhance your development processes on RSK.</p>
+                        <p class="card-desc">Tenderly provides real-time monitoring, alerting and troubleshooting for Smart Contracts. Check out how to make use of Tenderly’s seamless tools to enhance your development processes on Rootstock.</p>
                     </div>
                 </a>
                 <div class="btn-container">
@@ -302,7 +301,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/kriptonmarket/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Kripton Market</p>
-                        <p class="card-desc">Kripton integrates with RSK to provide an on/off ramp solution to give users in Latin American countries access to cryptocurrencies and tokens in the RSK network using their local currencies.</p>
+                        <p class="card-desc">Kripton integrates with Rootstock to provide an on/off ramp solution to give users in Latin American countries access to cryptocurrencies and tokens in the Rootstock network using their local currencies.</p>
                     </div>
                 </a>
                 <div class="btn-container">
