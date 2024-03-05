@@ -85,82 +85,120 @@ Your `index.html` file should now look like the [`index.html` file](https://raw.
 [](#top "collapsible")
 - Create basic javascript function
   1. In the frontend directory, open the `app.js` file.
-  2. Create the function to wait until the DOM is loaded, instance the HTML elements (buttons and divs), and declare some variables:
+  2. Copy the `MyToken.json` artifact file generated when building the contracts in `/artifacts/contracts/MyToken.sol/MyToken.json`.
+  3. Copy the `networks.json` file. [You can get the file from this link](https://github.com/jesus-iov/rootstock-quick-start-guide/blob/5cf8c1d2e50d967be9cfc653a045ca614c3c32aa/frontend/networks.json).
+  4. Create the function to wait until the DOM is loaded, instance the HTML elements (buttons and divs), and declare some variables:
       ```js
       document.addEventListener('DOMContentLoaded', function () {
+        // Instantiating HTML elements
         const connectButton = document.getElementById('connectButton');
         const getBalanceButton = document.getElementById('getBalanceButton');
         const walletAddressDiv = document.getElementById('walletAddress');
         const walletBalanceDiv = document.getElementById('walletBalance');
-
+        // Instantiating variables
         let provider, account, myTokenContract;
         let contractABI = [];
-        // Replace with your contract's address
-        const contractAddress = '0xa6fb392538BaC56e03a900BFDE22e76C05fb5122';
+        let networks = {};
+        const contractAddress = 'Replace with your contract\'s address'; // E.g. 0xa6fb392538BaC56e03a900BFDE22e76C05fb5122
       });
       ```
 - Add a function that fetches the ABI and stores it in a variable
     ```js
-      async function fetchABI() {
-        // Place the token file generated after compiling the contracts
-        const response = await fetch('MyToken.json');
-        const data = await response.json();
-        contractABI = data.abi;
-      }
+    async function fetchExternalFiles() {
+      // Place MyToken.json generated in artifacts after compiling the contracts
+      let response = await fetch('MyToken.json');
+      const data = await response.json();
+      contractABI = data.abi;
+      // Place networks.json to set the network automatically with the checkNetwork() function
+      // You can set it manually instead following this guide https://dev.rootstock.io/kb/rootstock-metamask/
+      response = await fetch('networks.json');
+      networks = await response.json();
+    }
     ```
 - Add a function that checks the wallet is connected to the Rootstock network
     ```js
-      async function checkNetwork() {
-        const networkId = await window.ethereum.request({ method: 'net_version' });
-        if ((networkId === "30") || (networkId === "31")) {
-          return true;
+    async function checkNetwork() {
+      try {
+        // Make sure Metamask is installed
+        if (!window.ethereum){
+          alert('Please install Metamask!');
+          return;
+        }
+        // Switch network
+        await window.ethereum.request({
+          method: 'wallet_switchEthereumChain',
+          params: [{ chainId: networks.rskTestnet.chainId }],
+        });
+      } catch (error) {
+        // This error code indicates that the chain has not been added to Metamask
+        if (error.code === 4902) {
+          // Trying to add new chain to Metamask
+          await window.ethereum.request({
+            method: 'wallet_addEthereumChain',
+            params: [networks.rskTestnet],
+          });
         } else {
-          return false;
+          // Rethrow all other errors
+          throw error;
         }
       }
+    }
     ```
 - Call the fetchABI function that loads the ABI and connects the wallet to the network
     ```js
-      fetchABI().then(() => {
-        // Connect button
-        connectButton.addEventListener('click', async function () {
-          const correctNetwork = await checkNetwork();
-          if (!correctNetwork) {
-            alert('Select the Rootstock Network on the Metamask wallet');
-            return
+    // Get the required data and set the events
+    fetchExternalFiles().then(() => {
+      // Connect button event
+      connectButton.addEventListener('click', async function () {
+        // Check the network is set properly
+        await checkNetwork();
+        if (typeof window.ethereum !== 'undefined') {
+          try {
+            // Get the account from Metamask
+            const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+            account = accounts[0];
+            // Update the front with the account address
+            walletAddressDiv.innerHTML = `Connected account: ${account}`;
+            // Get the network provider
+            provider = new ethers.providers.Web3Provider(window.ethereum);
+            // Get the signer for network interaction
+            signer = provider.getSigner();
+            // Activates the getBalanceButton
+            connectButton.disabled = true;
+            getBalanceButton.disabled = false;
+          } catch (error) {
+            console.error("Error connecting to MetaMask", error);
+            walletAddressDiv.innerHTML = `Error: ${error.message}`;
           }
-          if (typeof window.ethereum !== 'undefined') {
-            try {
-              const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
-              account = accounts[0];
-              walletAddressDiv.innerHTML = `Connected account: ${account}`;
-              provider = new ethers.providers.Web3Provider(window.ethereum);
-              signer = provider.getSigner();
-              myTokenContract = new ethers.Contract(contractAddress, contractABI, signer);
-              getBalanceButton.disabled = false;
-            } catch (error) {
-              console.error("Error connecting to MetaMask", error);
-              walletAddressDiv.innerHTML = `Error: ${error.message}`;
-            }
-          } else {
-            walletAddressDiv.innerHTML = 'Please install MetaMask!';
-          }
-        })});
+        } else {
+          walletAddressDiv.innerHTML = 'Please install MetaMask!';
+        }
+      });
     ```
 - Add a function responding to the click event on the get balance button.
     ```js
-        // Get Balance Button
-        getBalanceButton.addEventListener('click', async function () {
-          if (myTokenContract) {
-            const balance = await myTokenContract.balanceOf(account);
-            walletBalanceDiv.innerHTML = `MyToken Balance: ${balance} MTK`;
-          }
-        });
+    // Get balance button event
+    getBalanceButton.addEventListener('click', async function () {
+      // Verify contractAddress is a valid address
+      if (!ethers.utils.isAddress(contractAddress)){
+        alert('Please verify that contractAddress is set');
+        return;
+      }
+      // Instantiate the contract
+      myTokenContract = new ethers.Contract(contractAddress, contractABI, signer);
+      // Check if the contract is instatiated properly
+      if (myTokenContract) {
+        // Obtains the user balance
+        const balance = await myTokenContract.balanceOf(account);
+        // Show the user balance
+        walletBalanceDiv.innerHTML = `MyToken Balance: ${balance} MTK`;
+      }
+    });
     ```
 - View the Complete Code
   - [GitHub Link](https://raw.githubusercontent.com/rsksmart/rootstock-quick-start-guide/feat/complete/frontend/app.js)
     ```js
-      document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function () {
       // Instantiating HTML elements
       const connectButton = document.getElementById('connectButton');
       const getBalanceButton = document.getElementById('getBalanceButton');
@@ -170,10 +208,10 @@ Your `index.html` file should now look like the [`index.html` file](https://raw.
       let provider, account, myTokenContract;
       let contractABI = [];
       let networks = {};
-      const contractAddress = `Replace with your contract's address`;
+      const contractAddress = 'Replace with your contract\'s address'; // E.g. 0xa6fb392538BaC56e03a900BFDE22e76C05fb5122
 
       /**
-     * Load data from external JSON files
+    * Load data from external JSON files
     */
       async function fetchExternalFiles() {
         // Place MyToken.json generated in artifacts after compiling the contracts
@@ -233,9 +271,8 @@ Your `index.html` file should now look like the [`index.html` file](https://raw.
               provider = new ethers.providers.Web3Provider(window.ethereum);
               // Get the signer for network interaction
               signer = provider.getSigner();
-              // Instantiate the contract
-              myTokenContract = new ethers.Contract(contractAddress, contractABI, signer);
               // Activates the getBalanceButton
+              connectButton.disabled = true;
               getBalanceButton.disabled = false;
             } catch (error) {
               console.error("Error connecting to MetaMask", error);
@@ -248,6 +285,13 @@ Your `index.html` file should now look like the [`index.html` file](https://raw.
 
         // Get balance button event
         getBalanceButton.addEventListener('click', async function () {
+          // Verify contractAddress is a valid address
+          if (!ethers.utils.isAddress(contractAddress)){
+            alert('Please verify that contractAddress is set');
+            return;
+          }
+          // Instantiate the contract
+          myTokenContract = new ethers.Contract(contractAddress, contractABI, signer);
           // Check if the contract is instatiated properly
           if (myTokenContract) {
             // Obtains the user balance
