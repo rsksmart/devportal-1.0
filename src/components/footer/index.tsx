@@ -29,9 +29,10 @@ const menu1: NavLink[] = [
   }
 ];
 
+
 const menu2: NavLink[] = [
   {
-    label: ''
+    label: 'Resources'
   },
   {
     label: 'Merged Mining',
@@ -40,31 +41,8 @@ const menu2: NavLink[] = [
     subItem: true
   },
   {
-    label: 'Bounty Program',
-    link: 'https://hackerone.com/iovlabs?view_policy=true',
-    external: true,
-    subItem: true
-  },
-  {
     label: 'Rootstock (RSK) Explorer',
     link: 'https://explorer.rootstock.io/',
-    external: true,
-    subItem: true
-  },
-  {
-    label: 'Documentation',
-    link: '/',
-    isButton: true
-  }
-];
-
-const menu3: NavLink[] = [
-  {
-    label: 'Resources'
-  },
-  {
-    label: 'Build On Rootstock',
-    link: 'https://rootstock.io/build-defi-on-bitocoin',
     external: true,
     subItem: true
   },
@@ -82,18 +60,6 @@ const menu3: NavLink[] = [
   }
 ];
 
-const menu4: NavLink[] = [
-  {
-    label: 'Terms & Conditions',
-    link: 'https://rootstock.io/terms-conditions',
-    external: true
-  },
-  {
-    label: 'Privacy Policy',
-    link: 'https://rootstock.io/privacy-policy',
-    external: true
-  }
-];
 
 const Footer = () => {
   return (
@@ -112,11 +78,9 @@ const Footer = () => {
                 <FooterMenu items={menu1}/>
               </div>
             <div className="col-6 col-md-6 col-lg-3">
-                <FooterMenu items={menu3}/>
-            </div>
-            <div className="col-6 col-md-6 col-lg-3">
                 <FooterMenu items={menu2}/>
             </div>
+
             </div>
           </div>
         </div>
