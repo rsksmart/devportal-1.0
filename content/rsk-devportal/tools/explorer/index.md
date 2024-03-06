@@ -15,7 +15,8 @@ To browse an overview of transactions on the Rootstock network, navigate to [htt
 If you want to view some specific information, you can jump through the tab bar below.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer2.png" alt="tab of explorer"/></div>
-#### Search for some information you want
+
+## Search for some information you want
 
 * You can search for the information you want by entering the address,block number or tx hash in the search box.
 
