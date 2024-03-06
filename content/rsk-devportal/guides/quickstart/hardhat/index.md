@@ -14,7 +14,7 @@ The quick start guide is designed to smoothly transition Web2 developers into th
 
 > For your convenience, we've established a [GitHub repository](https://github.com/rsksmart/rootstock-quick-start-guide) dedicated to this guide. The [master branch](https://github.com/rsksmart/rootstock-quick-start-guide/tree/master) contains the initial project state, while the [feat/complete](https://github.com/rsksmart/rootstock-quick-start-guide/tree/feat/complete) branch features the complete project, equipped with all the necessary installations for your reference.
 
-> Note: This guide is optimized for Node.js version 18 or earlier. If you're using a later version, consider using a version manager to switch to a compatible version.
+> Note: This guide is optimized for Node.js version 18 or earlier. If you're using a later version, consider using a version manager like [NVM](https://github.com/nvm-sh/nvm/blob/master/README.md) to switch to a compatible version.
 
 
 <div class="features-list">
