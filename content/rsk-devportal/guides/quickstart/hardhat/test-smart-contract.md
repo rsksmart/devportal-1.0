@@ -47,7 +47,7 @@ Copy the code snippet below and paste it in your test file or see the [`MyToken.
     const myToken = await MyToken.deploy(1000);
     await myToken.deployed();
 
-    ((await myToken.totalSupply()).toString()).to.equal('1000');
+    expect((await myToken.totalSupply()).toString()).to.equal('1000');
     expect((await myToken.balanceOf(owner.address)).toString()).to.equal('1000');
       });
   });
