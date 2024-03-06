@@ -21,7 +21,7 @@ Before installing Docker, ensure your system meets the [minimum requirements](/r
     - Login with a free Docker Hub account
 - Linux
     - Install [Docker Engine Community](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-    - By default you will need to use `sudo` for all docker commands. To avoid this, follow the [additional steps](https://docs.docker.com/install/linux/linux-postinstall/) required.
+    - By default, you will need to use `sudo` for all docker commands. To avoid this, follow the [additional steps](https://docs.docker.com/install/linux/linux-postinstall/) required.
 
 Ensure that docker is running by running the following command:
 
