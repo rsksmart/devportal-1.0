@@ -99,7 +99,9 @@ Step 2: Follow the steps explained in the [README](https://github.com/rsksmart/u
 
 Step 3: Install webpack using the code below;
 
-    ``javascript     npm install webpack@4.46.0 -g     npm i webpack-cli@3.3.12 -g     npm install     webpack     ``
+    ```
+        javascript     npm install webpack@4.46.0 -g     npm i webpack-cli@3.3.12 -g     npm install     webpack
+    ```
 
 [Optional] you will need npm to install webpack:
 
