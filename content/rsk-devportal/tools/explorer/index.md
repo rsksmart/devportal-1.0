@@ -3,10 +3,10 @@ menu_order: 200
 menu_title: Explorer
 layout: rsk
 title: Overview of the Rootstock Explorer
-tags: overview, explorer, rsk, search, blocks, transactions, mainnet, tools
+tags: overview, explorer, rsk, rootstock, search, blocks, transactions, mainnet, tools
 ---
 
-You can browse the overview of RSK on this page with [https://explorer.rsk.co/](https://explorer.rsk.co/)  like below.
+To browse an overview of transactions on the Rootstock network, navigate to [https://explorer.rootstock.io/](https://explorer.rootstock.io/)
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer1.png" alt="overview of explorer"/></div>
 
@@ -35,13 +35,9 @@ The next section is a panel about the last block.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer4.png" alt="panel of last block"/></div>
 
-* If you don't need automatic update status, you can turn off the following switch.
+## Transaction Density
 
-<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer5.png" alt="switcher for auto update"/></div>
-
-## Last Block Transactions
-
-The bar chart below shows the frequency and number of transactions.
+The transaction density line graph shows the density and number of transactions on the Rootstock blockchain.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer6.png" alt="bar chart of transactions"/></div>
 
@@ -51,7 +47,7 @@ All the items in this list are the basic information of a block.
 
 * Click the link in the title location to update the list.
 
-* Click the link at the bottom to display the full list.
+* Click the **See all blocks>** to display the full list.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer7.png" alt="list of blocks"/></div>
 
@@ -59,6 +55,6 @@ All the items in this list are the basic information of a block.
 
 All the items in this list are the basic information of a transaction.
 
-* Click the link at the bottom to display the full list.
+* Click **See all transactions>** to display the full list.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer8.png" alt="list of transactions"/></div>
