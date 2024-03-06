@@ -18,6 +18,7 @@ Creating a user-friendly web interface for smart contracts on the Rootstock netw
   mkdir frontend
   cd frontend
 ```
+> However, if you clone the master branch, there's already a frontend folder, just `cd` into the frontend directory
 
 2. In the frontend directory, initialize a Node.js Project:
 
