@@ -6,7 +6,7 @@ title: Overview of the Rootstock Explorer
 tags: overview, explorer, rsk, search, blocks, transactions, mainnet, tools
 ---
 
-You can browse the overview of RSK on the [explorer page](https://explorer.rsk.co/)  like below.
+You can browse the overview of RSK on the [explorer page](https://explorer.rootstock.io/)  like below.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer1.png" alt="overview of explorer"/></div>
 
@@ -36,15 +36,11 @@ The next section is a panel about the last block.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer4.png" alt="panel of last block"/></div>
 
-* If you don't need automatic update status, you can turn off the following switch.
-
-<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer5.png" alt="switcher for auto update"/></div>
-
 ## Last Block Transactions
 
-The bar chart below shows the frequency and number of transactions.
+The line graph below shows the transaction density.
 
-<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer6.png" alt="bar chart of transactions"/></div>
+<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer5.png" alt="line graph of transactions"/></div>
 
 ## List of Blocks
 
@@ -54,7 +50,7 @@ All the items in this list are the basic information of a block.
 
 * Click the link at the bottom to display the full list.
 
-<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer7.png" alt="list of blocks"/></div>
+<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer6.png" alt="list of blocks"/></div>
 
 ## List of Transactions
 
@@ -62,4 +58,4 @@ All the items in this list are the basic information of a transaction.
 
 * Click the link at the bottom to display the full list.
 
-<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer8.png" alt="list of transactions"/></div>
+<div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer7.png" alt="list of transactions"/></div>
