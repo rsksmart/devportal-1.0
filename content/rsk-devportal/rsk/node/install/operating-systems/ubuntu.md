@@ -39,7 +39,7 @@ Choose `mainnet` and press `Enter` to continue
 
 ## Install via Direct Downloads
 
-You can also download the RSKj Ubuntu Package for the latest RSKj release `FINGERROOT 5.2.0` and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
+You can also download the RSKj Ubuntu Package for the latest RSKj release `ARROWHEAD 6.0.0` and install it with the `dpkg` command. Follow this [download link](https://launchpad.net/~rsksmart/+archive/ubuntu/rskj/+packages) to download the matching package for your ubuntu system.
 
 ```shell
 # first install openjdk-8-jre or oracle-java8-installer

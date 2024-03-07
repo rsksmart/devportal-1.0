@@ -98,26 +98,26 @@ it is always good practice to verify that your copy is legitimate.
 Let's compute the checksum using the following command:
 
 ```shell
-sha256sum rskj-core-rskj-core-5.2.0-FINGERROOT-all.jar
+sha256sum rskj-core-rskj-core-6.0.0-ARROWHEAD-all.jar
 ```
 
 For this version, the output should look like this:
 
 ```shell
-70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f  rskj-core-5.2.0-FINGERROOT-all.jar
+70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f  rskj-core-6.0.0-ARROWHEAD-all.jar
 ```
 
 On Windows, use this command instead:
 
 ```windows-command-prompt
-C:\>certutil -hashfile rskj-core-5.2.0-FINGERROOT-all.jar SHA256
+C:\>certutil -hashfile rskj-core-6.0.0-ARROWHEAD-all.jar SHA256
 
 ```
 
 For this version, the output on windows should look like this:
 
 ```windows-command-prompt
-SHA256 hash of rskj-core-5.2.0-FINGERROOT-all.jar:
+SHA256 hash of rskj-core-6.0.0-ARROWHEAD-all.jar:
 70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f
 CertUtil: -hashfile command completed successfully.
 
@@ -143,7 +143,7 @@ java -classpath <PATH-TO-THE-RSKJ-JAR> -Drpc.providers.web.cors=* -Drpc.provider
 > Example:
 >
 > ```windows-command-prompt
-> C:\>java -classpath C:\RSK\node\rskj-core-5.2.0-FINGERROOT-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start --regtest
+> C:\>java -classpath C:\RSK\node\rskj-core-6.0.0-ARROWHEAD-all.jar -Drpc.providers.web.cors=* -Drpc.providers.web.ws.enabled=true co.rsk.Start --regtest
 >
 > ```
 
