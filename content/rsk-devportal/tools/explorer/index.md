@@ -48,7 +48,7 @@ All the items in this list are the basic information of a block.
 
 * Click the link in the title location to update the list.
 
-* Click the link at the bottom to display the full list.
+* Click the **see all blocks** to display the full list.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer6.png" alt="list of blocks"/></div>
 
@@ -56,6 +56,6 @@ All the items in this list are the basic information of a block.
 
 All the items in this list are the basic information of a transaction.
 
-* Click the link at the bottom to display the full list.
+* Click the **see all transactions** to display the full list.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer7.png" alt="list of transactions"/></div>
