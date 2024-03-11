@@ -80,4 +80,3 @@ If the version to be installed is not defined in the command line, the version w
 | 5.0.0-fingerroot | FINGERROOT-5.0.0 |
 | 5.1.0-fingerroot | FINGERROOT-5.1.0 |
 | 5.2.0-fingerroot | FINGERROOT-5.2.0 |
-| 6.0.0-arrowhead | ARROWHEAD-6.0.0 |

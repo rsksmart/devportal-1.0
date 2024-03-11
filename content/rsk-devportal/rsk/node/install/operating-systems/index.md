@@ -34,7 +34,7 @@ This should run without errors.
 ### Install RSKj using Docker image
 To install an Rootstock node using Docker:
 
-1. Pull the RSKj image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj). Alternatively, you can download the RSKj Dockerfiles and `supervisord.conf` from the [Rootstock artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/6.0.0-arrowhead).
+1. Pull the RSKj image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj). Alternatively, you can download the RSKj Dockerfiles and `supervisord.conf` from the [Rootstock artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/5.4.0-fingerroot).
     [](#top "collapsible")
     - Downloading from the artifacts repository
         - If you're downloading from the artifacts repo, navigate to the repo and select which ***type of*** node you want to install:
@@ -96,20 +96,20 @@ Now, you have successfully setup a Rootstock node using the Docker image.
     [](#top "collapsible")
     - Mainnet
         ```
-        docker build -t rskj/6.0.0-arrowhead .
+        docker build -t rskj/5.4.0-fingerroot .
         ```
     - Testnet
         ```
-        docker build -t rskj/6.0.0-arrowhead .
+        docker build -t rskj/5.4.0-fingerroot .
         ```
     - Regtest
         ```
-        docker build -t rskj/6.0.0-arrowhead .
+        docker build -t rskj/5.4.0-fingerroot .
         ```
 
     When the build finishes, you should see an output similar to this:
     ```shell
-      docker build -t rskj/6.0.0-arrowhead . 
+      docker build -t rskj/5.4.0-fingerroot . 
       [+] Building 5.9s (15/15) FINISHED                        docker:desktop-linux
        => [internal] load build definition from Dockerfile                      0.0s
        => => transferring dockerfile: 1.97kB                                    0.0s
@@ -123,14 +123,14 @@ Now, you have successfully setup a Rootstock node using the Docker image.
        => CACHED [runner 3/5] WORKDIR /home/rsk                                 0.0s
        => CACHED [builder 2/5] RUN apt-get update -y &&     apt-get install -q  0.0s
        => CACHED [builder 3/5] WORKDIR /code/rskj                               0.0s
-       => CACHED [builder 4/5] RUN gitrev=ARROWHEAD-6.0.0 &&     git init &&   0.0s
+       => CACHED [builder 4/5] RUN gitrev=FINGERROOT-5.4.0 &&     git init &&   0.0s
        => CACHED [builder 5/5] RUN gpg --keyserver https://secchannel.rsk.co/S  0.0s
        => CACHED [runner 4/5] COPY --from=builder --chown=rsk:rsk /code/rskj/r  0.0s
        => CACHED [runner 5/5] COPY --from=builder --chown=rsk:rsk /root/.m2/re  0.0s
        => exporting to image                                                    0.0s
        => => exporting layers                                                   0.0s
        => => writing image sha256:e6ef5d147f12c24619b2d0b6f69375476c66f9f7abdf  0.0s
-       => => naming to docker.io/rskj/6.0.0-arrowhead                          0.0s
+       => => naming to docker.io/rskj/5.4.0-fingerroot                          0.0s
        What's Next?
        1. Sign in to your Docker account → docker login
        2. View a summary of image vulnerabilities and recommendations → docker scout quickview

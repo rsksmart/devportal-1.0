@@ -121,7 +121,7 @@ A logback configuration example can be downloaded from [here](https://github.com
 If you're running a node [using the release jar file](/rsk/node/install/java) use the following command:
 
 ```bash
-java -cp rskj-core-6.0.0-ARROWHEAD-all.jar -Dlogback.configurationFile=/full/path/to/logback.xml co.rsk.Start
+java -cp rskj-core-5.2.0-FINGERROOT-all.jar -Dlogback.configurationFile=/full/path/to/logback.xml co.rsk.Start
 ```
 
 #### Using logback with a compiled node

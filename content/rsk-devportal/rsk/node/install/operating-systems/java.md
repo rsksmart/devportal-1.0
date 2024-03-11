@@ -28,7 +28,7 @@ Additinally for Mac M1 / M2 (Apple Chips) using x86 based software:
         ```
     1. **Move the JAR**: Move or copy the just downloaded jar file to your directory.
         ```jsx
-        mv ~/Downloads/rskj-core-6.0.0-ARROWHEAD-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
+        mv ~/Downloads/rskj-core-5.4.0-FINGERROOT-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
         ```
 - Configuration
     1. **Create Config Directory**: Create another directory inside `~/rskj-node-jar/config`
@@ -46,7 +46,7 @@ Additinally for Mac M1 / M2 (Apple Chips) using x86 based software:
         ```windows-command-prompt
         java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
         ```
-        > Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file. For example, `C:/RskjCode/rskj-core-6.0.0-ARROWHEAD-all.jar`.
+        > Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file. For example, `C:/RskjCode/rskj-core-5.4.0-FINGERROOT-all.jar`.
 
 ### Using Import Sync
 
@@ -93,7 +93,7 @@ If you don't get any output after starting the node, then it's running correctly
             ```
             You should get a response like this:
             ```shell
-            {"jsonrpc":"2.0","id":67,"result":"RskJ/5.4.0/Mac OS X/Java1.8/ARROWHEAD-202f1c5"}
+            {"jsonrpc":"2.0","id":67,"result":"RskJ/5.4.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
             ```
 - Check block number 
     - To check the block number:
@@ -131,7 +131,7 @@ To change networks on the RSKj node, use the following commands:
     java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest
     ```
 
-> Replace `<PATH-TO-THE-RSKJ-FATJAR>` with the actual path to your jar file. For example: `C:/RskjCode/rskj-core-6.0.0-ARROWHEAD-all.jar`.
+> Replace `<PATH-TO-THE-RSKJ-FATJAR>` with the actual path to your jar file. For example: `C:/RskjCode/rskj-core-5.4.0-FINGERROOT-all.jar`.
 
 ### Video walkthrough
 

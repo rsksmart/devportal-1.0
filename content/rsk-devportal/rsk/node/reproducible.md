@@ -52,9 +52,9 @@ Create a ```Dockerfile``` to setup the build environment
       apt-get clean
   RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
   RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-  RUN git clone --single-branch --depth 1 --branch ARROWHEAD-6.0.0 https://github.com/rsksmart/rskj.git /code/rskj
+  RUN git clone --single-branch --depth 1 --branch FINGERROOT-5.2.0 https://github.com/rsksmart/rskj.git /code/rskj
    RUN git clone https://github.com/rsksmart/reproducible-builds 
-  RUN CP /Users/{$USER}/reproducible-builds/rskj/6.0.0-arrowhead/Dockerfile  /Users/{$USER}/code/rskj
+  RUN CP /Users/{$USER}/reproducible-builds/rskj/5.2.0-fingerroot/Dockerfile  /Users/{$USER}/code/rskj
   WORKDIR /code/rskj
   RUN gpg --verify SHA256SUMS.asc
   RUN sha256sum --check SHA256SUMS.asc
@@ -70,9 +70,9 @@ Create a ```Dockerfile``` to setup the build environment
       brew cleanup
   RUN gpg --keyserver https://secchannel.rsk.co/release.asc --recv-keys 1A92D8942171AFA951A857365DECF4415E3B8FA4
   RUN gpg --finger 1A92D8942171AFA951A857365DECF4415E3B8FA4
-  RUN git clone --single-branch --depth 1 --branch ARROWHEAD-6.0.0 https://github.com/rsksmart/rskj.git ./code/rskj
+  RUN git clone --single-branch --depth 1 --branch FINGERROOT-5.2.0 https://github.com/rsksmart/rskj.git ./code/rskj
   RUN git clone https://github.com/rsksmart/reproducible-builds 
-  RUN CP /Users/{$USER}/reproducible-builds/rskj/6.0.0-arrowhead/Dockerfile  /Users/{$USER}/code/rskj
+  RUN CP /Users/{$USER}/reproducible-builds/rskj/5.2.0-fingerroot/Dockerfile  /Users/{$USER}/code/rskj
   RUN CD /code/rskj
   RUN gpg --verify SHA256SUMS.asc
   RUN sha256sum --check SHA256SUMS.asc
@@ -99,7 +99,7 @@ Run build
 To create a reproducible build, run the command below in the same directory:
 
 ```bash
-$ docker build -t rskj/6.0.0-arrowhead .     
+$ docker build -t rskj/5.2.0-fingerroot .     
 ```
 
 > if you run into any problems, ensure you're running the commands on the right folder and also ensure docker daemon is running is updated to the recent version.
@@ -117,7 +117,7 @@ Verify Build
 The last step of the build prints the `sha256sum` of the files, to obtain `SHA-256` checksums, run the following command in the same directory as shown above:
 
 ```bash
-$ docker run --rm rskj/6.0.0-arrowhead sh -c 'sha256sum * | grep -v javadoc.jar'
+$ docker run --rm rskj/5.2.0-fingerroot sh -c 'sha256sum * | grep -v javadoc.jar'
 ```
 
 Check Results
@@ -127,11 +127,11 @@ After running the build process, a JAR file will be created in ```/rskj/rskj-cor
 You can check the SHA256 sum of the result file and compare it to the one published by Rootstock for that version.
 
 ```bash
-70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f  rskj-core-6.0.0-ARROWHEAD-all.jar
-6ed2bcb287e6b9e61bb99b65307e2e51b4231a92070fed4569443981fc2597ce  rskj-core-6.0.0-ARROWHEAD-sources.jar
-3b1dd7d624137fb1bcc133927a7357eed3228457e8db29f17cf0a193370bbe12  rskj-core-6.0.0-ARROWHEAD.jar
-4d588eae64108680c6ae6e895e2d6d4a07cdd05a31718d6f4a34870153a51d5a  rskj-core-6.0.0-ARROWHEAD.module
-3903f17a97e7dbd55bac0dd02030f5297e364280e2b7a856aaf03b4d327dce3c  rskj-core-6.0.0-ARROWHEAD.pom
+70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f  rskj-core-5.2.0-FINGERROOT-all.jar
+6ed2bcb287e6b9e61bb99b65307e2e51b4231a92070fed4569443981fc2597ce  rskj-core-5.2.0-FINGERROOT-sources.jar
+3b1dd7d624137fb1bcc133927a7357eed3228457e8db29f17cf0a193370bbe12  rskj-core-5.2.0-FINGERROOT.jar
+4d588eae64108680c6ae6e895e2d6d4a07cdd05a31718d6f4a34870153a51d5a  rskj-core-5.2.0-FINGERROOT.module
+3903f17a97e7dbd55bac0dd02030f5297e364280e2b7a856aaf03b4d327dce3c  rskj-core-5.2.0-FINGERROOT.pom
 ```
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).
