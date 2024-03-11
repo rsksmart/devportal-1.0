@@ -30,7 +30,7 @@ Another way to get RBTC is to use the services of centralized cryptocurrency exc
 
 The way that exchanges work will be quite familiar if you have traded on a stock exchange or a foreign currency exchange before. They typically have order books to match buy and sell orders among different users, with the price of a particular pair being the last match in the order book.
 
-> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/).
+> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/) or see how to [Get RBTC](https://rootstock.io/rbtc/#get-rbtc).
 
 There are currently exchanges that allow users to trade between BTC and RBTC in a centralized way:
 
