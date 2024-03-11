@@ -34,7 +34,7 @@ You can find more information about Docker install [here](https://docs.docker.co
 ### Install RSKj Using Docker
 To install an RSK node using Docker:
 
-1. Download the RSKj Dockerfiles and `supervisord.conf` from the [artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/5.3.0-fingerroot) or pull the image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj).
+1. Download the RSKj Dockerfiles and `supervisord.conf` from the [artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/6.0.0-arrowhead) or pull the image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj).
 
     In the artifacts repo, select which ***type of*** node you want to install:
       * A node connected to the public RSK Mainnet: `Dockerfile.MainNet`

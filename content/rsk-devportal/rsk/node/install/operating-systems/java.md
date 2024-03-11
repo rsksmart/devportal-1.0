@@ -27,7 +27,7 @@ To run RSKj on Apple M1/M2 devices using x86 based software, ensure you have `Ro
     ```
 1. **Move the JAR**: Move or copy the just downloaded jar file to your directory.
     ```jsx
-    mv ~/Downloads/rskj-core-5.3.0-FINGERROOT-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
+    mv ~/Downloads/rskj-core-6.0.0-ARROWHEAD-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
     ```
 
 #### Configuration
@@ -50,7 +50,7 @@ To run RSKj on Apple M1/M2 devices using x86 based software, ensure you have `Ro
     ```windows-command-prompt
     java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
     ```
-Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file such as `C:/RskjCode/rskj-core-5.3.0-FINGERROOT-all.jar`.
+Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file such as `C:/RskjCode/rskj-core-6.0.0-ARROWHEAD-all.jar`.
 
 ### Using Import Sync
 
@@ -103,7 +103,7 @@ After starting the node, if there's no output, it's running correctly.
 
         Expect a response like:
         ```shell
-        {"jsonrpc":"2.0","id":67,"result":"RskJ/5.3.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
+        {"jsonrpc":"2.0","id":67,"result":"RskJ/5.3.0/Mac OS X/Java1.8/ARROWHEAD-202f1c5"}
         ```
 
 1. To check the block number:
@@ -144,7 +144,7 @@ To change networks on the RSKj node, use the following commands, replacing `<PAT
     java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest
     ```
 
-For example: `C:/RskjCode/rskj-core-5.3.0-FINGERROOT-all.jar`.
+For example: `C:/RskjCode/rskj-core-6.0.0-ARROWHEAD-all.jar`.
 
 ## Video
 

@@ -4,13 +4,11 @@ title: RSK Pre-compiled ABIs
 tags: [libraries, abi, pre-compiled]
 ---
 
-<img src="./RSK_Logo_RGB_300dpi.png" alt="logo" height="200" />
-
-# Welcome to the precompiled ABIs from RSK.
+Welcome to the precompiled ABIs from RSK!
 
 Here you will find the ABIs for the existing precompiled contracts in RSK. You will also get their addresses and a builder to use it with web3js.
 
-# Version
+## Version
 
 Different versions of the package mentioned are required for different RSK releases.
 
@@ -18,7 +16,7 @@ The semantic versioning of this package doesn’t correlate to the semantic vers
 
 This package's support starts with ORCHID.
 
-# How to use it
+## How to use it
 
 For the installation of these package you must execute in a terminal window:
 
@@ -54,9 +52,8 @@ var bridge = precompiled.bridge.build(new Web3('http://localhost:4444'));
 bridge.methods.getFederationAddress().call().then(console.log);
 ```
 
-# Important note
-
-If the version to be installed is not defined in the command line, the version will correspond to the latest version in PAPYRUS.
+> Important note:
+> If the version to be installed is not defined in the command line, the version will correspond to the latest version.
 
 # Versioning table
 
@@ -66,17 +63,15 @@ If the version to be installed is not defined in the command line, the version w
 | 2.0.0-WASABI    | WASABI-1.0.0  |
 | 2.0.1-WASABI    | WASABI-1.0.0  |
 | 3.0.0-PAPYRUS   | PAPYRUS-2.0.0 |
-| 3.0.0-PAPYRUS   | PAPYRUS-2.2.0 |
-| 3.0.0-IRIS      | IRIS-3.0.0    |
-| 3.1.0-IRIS      | IRIS-3.1.0    |
-| 3.2.0-IRIS      | IRIS-3.2.0    |
-| 3.3.0-IRIS      | IRIS-3.3.0    |
-| 4.0.0-HOP       |  HOP-4.0.0    |
-| 4.1.0-HOP       |  HOP-4.1.0    |
-| 4.1.1-HOP       |  HOP-4.1.1    |
-| 4.2.0-HOP       |  HOP-4.2.0    |
-| 4.3.0-HOP       | HOP-4.3.0    |
-| 4.4.0-HOP       | HOP-4.4.0    |
-| 5.0.0-fingerroot | FINGERROOT-5.0.0 |
-| 5.1.0-fingerroot | FINGERROOT-5.1.0 |
-| 5.2.0-fingerroot | FINGERROOT-5.2.0 |
+
+| Package Version | Rootstock version   |
+|-----------------|---------------|
+| 1.0.0-ORCHID    | ORCHID-0.6.2  |
+| 2.0.0-WASABI    | WASABI-1.0.0  |
+| 2.0.1-WASABI    | WASABI-1.0.0  |
+| 3.0.0-PAPYRUS   | PAPYRUS-2.0.0 |
+| 4.0.0-IRIS      | IRIS-3.0.0    |
+| 4.0.2-IRIS      | IRIS-3.0.0    |
+| 5.0.0-HOP       | HOP-4.0.0    |
+| 5.0.0-FINGERROOT | FINGERROOT-5.0.0 |
+| 6.0.0-ARROWHEAD | ARROWHEAD-6.0.0 |

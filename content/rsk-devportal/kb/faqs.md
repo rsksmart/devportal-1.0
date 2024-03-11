@@ -29,7 +29,7 @@ Here are some frequently asked questions about the Rootstock and RIF Platform.
   - Do you plan to support smart contract programming languages other than Solidity?
     * Rootstock currently supports all the opcodes and precompiles contracts of Ethereum, and therefore, it can support any language that compiles to the EVM. This includes Solidity, Julia, and new or experimental programming languages like Vyper.
   - What is the current state of the Rootstock project?
-    * As of October 2023, the latest released version of Rootstock is the [Fingerroot v5.3.0](https://github.com/rsksmart/rskj/releases), an update that introduces several enhancements to the client's JSON-RPC interface, along with notable improvements in performance in the Rootstock node engine.
+    * As of October 2023, the latest released version of Rootstock is the [Arrowhead v5.3.0](https://github.com/rsksmart/rskj/releases), an update that introduces several enhancements to the client's JSON-RPC interface, along with notable improvements in performance in the Rootstock node engine.
     Live statistics about the entire Rootstock network are available at Rootstock Stats, and all the necessary source codes can be found at the Rootstock GitHub organization: `github.com/rsksmart`. Other information about the Rootstock project, including a [getting started guide](/guides/quickstart/), can be found on the Rootstock & RIF Developer Portal.
     For the latest news and updates, check out the Rootstock Blog.
   - How does Rootstock plan to be a reference in terms of smart contracts?
