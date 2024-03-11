@@ -10,6 +10,7 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
 
   &:hover * {
+    // text-decoration: underline;
     color: lighten(#000, 5%);
     background-color: darken($pink, 3%);
   }
