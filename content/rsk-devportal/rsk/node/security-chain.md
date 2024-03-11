@@ -1,7 +1,7 @@
 ---
 layout: rsk
-menu_title: Ensure security chain
-title: Ensure security chain of RSKj source code
+menu_title: Security Chain
+title: Verify security chain of RSKj source code
 tags: rsk, rskj, node, security, verification
 description: "All the different ways that you can verify RSKj: Release signing key, fingerprint of the public key, SHA256SUMS.asc, binary dependencies, secure environment script"
 menu_order: 8
@@ -11,7 +11,7 @@ render_features: 'custom-terminals'
 
 ## Verify authenticity of RSKj source code and its binary dependencies
 
-The authenticity of the source code must be verified by checking the signature of the release tags in the official Git repository. The authenticity of the binary dependencies is verified by [Gradle](./reproducible/) after following the steps below to install the necessary plugins.
+The authenticity of the source code must be verified by checking the signature of the release tags in the official Git repository. See [Reproducible builds](./reproducible/). The authenticity of the binary dependencies is verified by Gradle after following the steps below to install the necessary plugins.
 
 ### Download Rootstock Release Signing Key public key
 
@@ -23,10 +23,7 @@ We recommend using GPG v1 to download the public key because GPG v2 encounters p
 - Linux, Mac OSX
   ```bash
   $ gpg --keyserver https://secchannel.rsk.co/SUPPORT.asc --recv-keys A6DBEAC640C5A14B
-  ```
-  - Output
-
-  ```shell
+  Output:
   gpg: key A6DBEAC640C5A14B: "IOV Labs Support <support@iovlabs.org>" imported
   gpg: Total number processed: 1
   gpg: imported: 1  (RSA: 1)
@@ -36,12 +33,9 @@ We recommend using GPG v1 to download the public key because GPG v2 encounters p
 
 [](#top "multiple-terminals")
 - Linux, Mac OSX
-  ``` bash
+  ```bash
   $ gpg --finger A6DBEAC640C5A14B
-  ```
-  - Output:
-
-  ```shell
+  Output:
   pub   rsa4096 2022-05-11 [C]
   1DC9 1579 9132 3D23 FD37  BAA7 A6DB EAC6 40C5 A14B
   uid   [ unknown] IOV Labs Support <support@iovlabs.org>
@@ -59,10 +53,7 @@ _Note: Ensure to `cd` into the [`rskj`](https://github.com/rsksmart/rskj) direct
 - Linux, Mac OSX
   ```bash
   $ gpg --verify SHA256SUMS.asc 
-  ```
-  - Output:
-
-  ```shell
+  Output:
   gpg: Signature made Wed May 11 10:50:48 2022 -03
   gpg: using RSA key 1F1AA750373B90D9792DC3217997999EEA3A9079
   gpg: Good signature from "IOV Labs Support <support@iovlabs.org>" [unknown]
@@ -84,21 +75,14 @@ Linux - Windows (bash console)
 - Linux
   ```bash
   $ sha256sum --check SHA256SUMS.asc
-  ```
-  - Output:
-
-  ```shell
+  Output:
   configure.sh: OK
   sha256sum: WARNING: 19 lines are improperly formatted
   ```
 - Mac OSX
   ```bash
   $ shasum --check SHA256SUMS.asc
-  ```
-
-  - Output: 
-
-  ```shell
+  Output:
   configure.sh: OK
   sha256sum: WARNING: 19 lines are improperly formatted
   ```
