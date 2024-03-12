@@ -17,71 +17,49 @@ const menu1: NavLink[] = [
   },
   {
     label: 'Updated Whitepaper',
-    link: 'https://rootstock.io/rsk-white-paper-updated.pdf',
+    link: 'https://rootstock.io/static/a79b27d4889409602174df4710102056/RS-whitepaper.pdf',
     external: true,
     subItem: true
   },
   {
     label: 'RIF Whitepaper',
-    link: 'https://rootstock.io/rif-whitepaper-en.pdf',
+    link: 'https://rootstock.io/static/add903ce229a6f45a606cd78b028cf9e/RIF-whitepaper-V2.pdf',
+    external: true,
+    subItem: true
+  }
+];
+
+
+const menu2: NavLink[] = [
+  {
+    label: 'Resources'
+  },
+  {
+    label: 'Merged Mining',
+    link: 'https://rootstock.io/mine-btc-with-rootstock/',
     external: true,
     subItem: true
   },
   {
-    label: 'Rootstock (RSK) Explore',
-    link: 'https://explorer.rsk.co/',
-    external: true
-  }
-];
-
-const menu2: NavLink[] = [
-  {
-    label: 'Merged Mining',
-    link: 'https://mining.rsk.co/',
-    external: true
-  },
-  {
-    label: 'Bounty Program',
-    link: 'https://www.iovlabs.org/bug-bounty-program',
-    external: true
-  }
-];
-
-const menu3: NavLink[] = [
-  {
-    label: 'Build On Rootstock',
-    link: 'https://rootstock.io/build-defi-on-bitocoin',
-    external: true
-  },
-  {
-    label: 'Blog',
-    link: 'https://blog.rsk.co/',
-    external: true
-  }
-];
-
-const menu4: NavLink[] = [
-  {
-    label: 'Terms & Conditions',
-    link: 'https://rootstock.io/terms-conditions',
-    external: true
-  },
-  {
-    label: 'Privacy Policy',
-    link: 'https://rootstock.io/privacy-policy',
-    external: true
+    label: 'Rootstock (RSK) Explorer',
+    link: 'https://explorer.rootstock.io/',
+    external: true,
+    subItem: true
   },
   {
     label: 'About IOVlabs',
     link: 'https://www.iovlabs.org/about-us',
-    external: true
+    external: true,
+    subItem: true
   },
   {
-    label: 'Documentation',
-    link: '/',
-    isButton: true
-  },
+    label: 'Blog',
+    link: 'https://blog.rootstock.io/',
+    external: true,
+    subItem: true
+  }
 ];
+
 
 const Footer = () => {
   return (
@@ -94,20 +72,15 @@ const Footer = () => {
               <span className="bg-orange p-2 letter-spacing-6">Together</span>
             </h2>
           </div>
-          <div className="col-xl-8 col-lg-8 col-md-6">
-            <div className="row">
-              <div className="col-6 col-md-6 col-lg-3">
+          <div className="col-xl-8 col-lg-8 col-md-6 ">
+            <div className="row d-flex justify-content-end">
+            <div className="col-6 col-md-6 col-lg-3">
                 <FooterMenu items={menu1}/>
               </div>
-              <div className="col-6 col-md-6 col-lg-3">
+            <div className="col-6 col-md-6 col-lg-3">
                 <FooterMenu items={menu2}/>
-              </div>
-              <div className="col-6 col-md-6 col-lg-3">
-                <FooterMenu items={menu3}/>
-              </div>
-              <div className="col-6 col-md-6 col-lg-3">
-                <FooterMenu items={menu4}/>
-              </div>
+            </div>
+
             </div>
           </div>
         </div>
@@ -152,31 +125,17 @@ const Footer = () => {
                   </defs>
                 </svg>
               </a>
-              <a className="me-5 zg-social-icon" aria-label="Facebook" href="https://www.facebook.com/rootstock.io/"
-                 target="_blank"
-                 rel="noopener noreferrer">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                  <g clipPath="url(#clip0_2270_6077)">
-                    <path
-                      d="M32 16C32 7.16344 24.8366 0 16 0C7.16344 0 0 7.16344 0 16C0 23.9859 5.85094 30.6053 13.5 31.8056V20.625H9.4375V16H13.5V12.475C13.5 8.465 15.8888 6.25 19.5434 6.25C21.2934 6.25 23.125 6.5625 23.125 6.5625V10.5H21.1075C19.12 10.5 18.5 11.7334 18.5 13V16H22.9375L22.2281 20.625H18.5V31.8056C26.1491 30.6053 32 23.9859 32 16Z"
-                      fill="currentColor"/>
-                    <path
-                      d="M22.2281 20.625L22.9375 16H18.5V13C18.5 11.7347 19.12 10.5 21.1075 10.5H23.125V6.5625C23.125 6.5625 21.294 6.25 19.5434 6.25C15.8887 6.25 13.5 8.465 13.5 12.475V16H9.43748V20.625H13.5V31.8056C15.1566 32.0648 16.8434 32.0648 18.5 31.8056V20.625H22.2281Z"
-                      fill="black"/>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_2270_6077">
-                      <rect width="32" height="32" fill="white"/>
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
             </div>
           </div>
+          <div className="terms">
+              <a href="https://rootstock.io/terms-conditions" target="_blank" rel="noopener">Terms & Conditions</a>
+              <a href="https://rootstock.io/terms-conditions" target="_blank" rel="noopener">Privacy Policy</a>
+            </div>
         </div>
         <div className="row mt-6">
           <div className="col-md-6 col-lg-4 order-2 order-md-1 mt-md-0 mt-6">
             <p className="mb-0 fs-7 opacity-50">© {new Date().getFullYear()}. Rootstock. All rights reserved</p>
+
           </div>
         </div>
       </Container>

@@ -5,13 +5,37 @@ menu_title: About
 title: Solutions on Rootstock
 description: 'Check out the many ways IOV Labs partners leverage the Rootstock and RIF
 platforms and APIs to create innovative experiences.'
-tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
+tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
 menu_order: 7
 ---
+
 Check out the many ways IOV Labs partners leverage the Rootstock and RIF
 platforms and APIs to create innovative experiences.
 
 <div class="row features-list">
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/solutions/3xpl/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/3xpl/light.png" alt="3xpl icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/3xpl/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">3xpl</p>
+                        <p class="card-desc">3xpl (3xplor3r) is a high-speed, advertisement-free universal blockchain explorer that supports over 40 blockchains including Rootstock tokens (ERC-20, 721, 1155) and .rsk domains.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/3xpl/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
             <a href="/solutions/defiant/">

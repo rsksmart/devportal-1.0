@@ -6,7 +6,7 @@ title: Overview of the Rootstock Explorer
 tags: overview, explorer, rsk, search, blocks, transactions, mainnet, tools
 ---
 
-You can browse the overview of RSK on this page with [https://explorer.rsk.co/](https://explorer.rsk.co/)  like below.
+You can browse the overview of RSK on the [explorer page](https://explorer.rsk.co/)  like below.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer1.png" alt="overview of explorer"/></div>
 
@@ -15,7 +15,8 @@ You can browse the overview of RSK on this page with [https://explorer.rsk.co/](
 If you want to view some specific information, you can jump through the tab bar below.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/explorer2.png" alt="tab of explorer"/></div>
-#### Search for some information you want
+
+## Search for some information you want
 
 * You can search for the information you want by entering the address,block number or tx hash in the search box.
 
