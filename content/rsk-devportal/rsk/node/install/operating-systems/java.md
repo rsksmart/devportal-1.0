@@ -50,7 +50,6 @@ Additinally for Mac M1 / M2 (Apple Chips) using x86 based software:
 
 ### Using Import Sync
 
-> **Note**: This is an optional, experimental feature first introduced in RSKj v2.0.1.
 
 Instead of the default synchronization, you can use import sync to import a pre-synchronized database from a trusted origin, which is significantly faster.
 
