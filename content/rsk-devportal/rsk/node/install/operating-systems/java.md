@@ -12,7 +12,7 @@ To setup a Rootstock node using Java, you need to:
 
 - Ensure your system meets the [minimum requirements](/rsk/node/install/requirements/) for installing the Rootstock node.
 - Install [Java 8 JDK](https://www.java.com/download/).
-Additinally for Mac M1 / M2 (Apple Chips) using x86 based software:
+**For Mac M1 / M2 (Apple Chips) using x86 based software**:
 - Ensure you have `Rosetta` installed. This is typically pre-installed on recent macOS versions.
 - Download an x86 JDK build, such as [Azul Zulu 11 (x86)](https://www.azul.com/downloads/?version=java-11-lts&os=macos&package=jdk), to ensure compatibility with x86 based software.
 
