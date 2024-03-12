@@ -14,7 +14,7 @@ The hackathon dev starter guide details the necessary tools and resources for de
 This section includes setup instructions for the [Quick Start Guide on Rootstock using Hardhat](/guides/quickstart/hardhat/).
 
 [](#top "collapsible")
-- A. Installing Node.js and npm
+- A. Installing Node.js and NPM
     - Using [Node Version Manager (recommended)](https://nodejs.org/en/download/package-manager#nvm)
         - **Version:** 
             - 12 or later. 

@@ -118,12 +118,12 @@ Execute `test` or `npm test` script to run the tests using chromium.
             When I connect metamask
             Then I verify my wallet is successfully connected to the dApp
         ```
-- Defining step definitions to interact with Rootstock dApps
-    - An easy way to generate step definitions would be, thanks to the installed extensions:
+- Defining step definitions to interact with Rootstock DApps
+    - An easy way to generate step definitions would be:
         - Select a step in the feature file
         - Right mouse click
         - `Generate Step Definition: Copy To Clipboard option`
-        - ![Generate step definition](/content/rsk-devportal/assets/img/guides/starter-kits/dapp-testing/copy-to-clipboard.png)
+        - ![Generate step definition](/assets/img/guides/starter-kits/dapp-testing/copy-to-clipboard.png)
     - Then go to the `stepDefinitions` folder, create a new file with a `.steps.js` extension. For example, `sample.steps.js` and paste the generated step. A code snippet like this will be displayed:
         ```shell
         Then(/^I verify my wallet is successfully connected to the dApp$/, () => {
@@ -187,6 +187,6 @@ Execute `test` or `npm test` script to run the tests using chromium.
 Testing decentralized applications (dApps) is crucial for delivering a smooth user experience and ensuring the reliability of decentralized systems. Thorough testing of the frontend identifies and addresses usability issues, creating a user-friendly interface. [Cucumber](https://cucumber.io/) and [Playwright](https://playwright.dev/) form a dynamic duo in automated testing, blending behavior-driven development (BDD) and powerful browser automation capabilities. Cucumber, employing the human-readable Gherkin syntax, enables collaboration between technical and non-technical team members by describing application behavior in plain language.
 
 ## Useful Links
-- For information on other testing tools, see [Quick Start: Testing Smart Contracts](/content/rsk-devportal/guides/quickstart/hardhat/test-smart-contract/)
+- For information on other testing tools, see [Quick Start: Testing Smart Contracts](/guides/quickstart/hardhat/test-smart-contract/)
 - [Cucumber](https://cucumber.io/)
 - [Playwright](https://playwright.dev/)
