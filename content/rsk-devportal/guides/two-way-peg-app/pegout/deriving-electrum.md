@@ -6,20 +6,20 @@ description: "Here, we will learn how to view a derived address using Electrum."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk
 ---
-
 ![2 way peg app (peg-out)](/assets/img/guides/two-way-peg-app/pegout.gif)
 
-This section contains detailed instructions on how to review funds in Bitcoin after a pegout by: 
+This section contains detailed instructions on how to review funds in Bitcoin after a pegout by:
 
-- Convert [RBTC - BTC](#converting-rbtc-to-btc) 
-- Import a [key in Electrum](#import-key-in-electrum) 
+- Convert [RBTC - BTC](#converting-rbtc-to-btc)
+- Import a [key in Electrum](#import-key-in-electrum)
 - Import in Electrum if you are using [hardware wallets](#import-key-in-electrum-using-hardware-wallets)
 
-## Why derive address using Eletrum?
+## Why derive address using Electrum?
 
 During the **pegout** process, the destination address of your BTC is derived from your signature, this enables one to know which address will receive the BTCs, to view the destination address, follow this step by step guide.
 
 ## Prerequisites:
+
 - Wallet private key
 - [Electrum](https://electrum.org/#download)
 - [Rootstock Utils](https://github.com/rsksmart/utils)
@@ -28,13 +28,13 @@ During the **pegout** process, the destination address of your BTC is derived fr
 
 A derived address is the BTC address derived from the RBTC account. When using the 2 way peg app, it is important to know which address you will receive your BTCs. See [Viewing advanced details](#how-to-view-advanced-details).
 
-We will learn how to view a derived address and use [Liquality](#using-liquality) and [Metamask](#using-metamask) to get a private key. We will also learn how to [convert RBTC - BTC](#converting-btc-to-rbtc) and [Import a Key in Elecrum](#import-key-in-electrum).
+We will learn how to view a derived address and use [Liquality](#using-liquality) and [Metamask](#using-metamask) to get a private key. We will also learn how to [convert RBTC - BTC](#converting-btc-to-rbtc) and [Import a Key in Electrum](#import-key-in-electrum).
 
 ### Getting a wallet private key
 
 #### Using Liquality
 
-To get your wallet private key, follow the steps below: 
+To get your wallet private key, follow the steps below:
 
 Note: To set up a Liquality or a Metamask wallet. Check here for a step by step process for how to add the Rootstock network to the Liquality browser wallet.
 
@@ -47,7 +47,7 @@ Note: To set up a Liquality or a Metamask wallet. Check here for a step by step 
 **Step 3**: Choose the asset you want to use for the transaction
 ![liquality - assets](/assets/img/guides/two-way-peg-app/liquality/assets.png)
 
-**Step 4**: Click on the menu by the right, and this will open up a list of options. 
+**Step 4**: Click on the menu by the right, and this will open up a list of options.
 
 **Step 5**: Choose the option “Export private key” in the menu
 
@@ -99,11 +99,8 @@ Step 2: Follow the steps explained in the [README](https://github.com/rsksmart/u
 
 Step 3: Install webpack using the code below;
 
-    ```javascript
-    npm install webpack@4.46.0 -g
-    npm i webpack-cli@3.3.12 -g
-    npm install
-    webpack
+    ```
+        javascript     npm install webpack@4.46.0 -g     npm i webpack-cli@3.3.12 -g     npm install     webpack
     ```
 
 [Optional] you will need npm to install webpack:
@@ -118,7 +115,7 @@ Step 5: Open the file in your browser
 
 `./build/index.html`
 
-Step 6: Open the generated application and add your private key and convert to WIF, 
+Step 6: Open the generated application and add your private key and convert to WIF,
 as shown in the image below:
 
 ![browser - open_browser](/assets/img/guides/two-way-peg-app/other/open_browser.png)
@@ -196,7 +193,6 @@ Step 6: Create a new wallet password and click on the “Next” button
 
 ## Import key in Electrum using Hardware Wallets
 
-
 [Electrum](https://electrum.org/#download) is used to verify a derived address, this address will then be used to receive and verify the converted funds (RBTC - BTC) when the pegout process is finished.
 
 Step 1: Download Electrum for your OS from the [website](https://electrum.org/#download).
@@ -257,12 +253,18 @@ Step 8: Finally in Electrum go to “Addresses” tab and you can see your funds
 
 ![wallet - electrum-show-funds](/assets/img/guides/two-way-peg-app/using-hd-wallets/electrum-hdw-9.png)
 
-----
+---
 
 ## Resources
+
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 * 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
 * How to get [RBTC using Rootstock’s built in Powpeg](/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
 * [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
+<<<<<<< HEAD
 * [Get RBTC using Exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges/)
 * [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
+=======
+* [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)
+>>>>>>> master
