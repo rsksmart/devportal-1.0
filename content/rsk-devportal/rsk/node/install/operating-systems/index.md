@@ -136,7 +136,7 @@ Now, you have successfully setup a Rootstock node using the Docker image.
        2. View a summary of image vulnerabilities and recommendations → docker scout quickview
     ```
 
-    Now you have a container ready to run Rootstock node!
+    Now you have a container ready to run the Rootstock node!
 
 1. To run the container, execute one of the following commands:
 
