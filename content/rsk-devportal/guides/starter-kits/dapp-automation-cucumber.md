@@ -92,11 +92,6 @@ Since this is a boilerplate project, just a 'demo.feature' has been implemented.
 
 Execute `test` or `npm test` script to run the tests using chromium.
 
-### Reporting 
-
-- Generated reports will be located at `reports` folder
-- Since Cucumber is the chosen runner, reports and other config options can be found at `e2e_dapps_automation/cucumber.json`
-
 ## Writing E2E Tests using Cucumber
 
 [](#top "collapsible")
@@ -181,6 +176,11 @@ Execute `test` or `npm test` script to run the tests using chromium.
         }
         export default new DemoPage();
         ```
+
+### Reporting 
+
+- Generated reports will be located at `reports` folder
+- Since Cucumber is the chosen runner, reports and other config options can be found at `e2e_dapps_automation/cucumber.json`
 
 ## Conclusion
 
