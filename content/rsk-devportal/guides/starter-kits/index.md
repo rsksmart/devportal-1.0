@@ -68,7 +68,7 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
 <div class="content two-line-title-content"><a href="/guides/starter-kits/dapp-automation-cucumber/">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg bg-pink">DApp Automation with Cucumber</h2><span class="zg-label ml-1 bg-pink">05</span></div>
-                <p class="card-desc">Automation DApps using Cucumber and Playwright</p>
+                <p class="card-desc">Learn how to automate DApps using Cucumber Agile Automation Framework.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/starter-kits/dapp-automation-cucumber/">
                 </a><a class="green" href="/guides/starter-kits/dapp-automation-cucumber/">Get Started</a>
