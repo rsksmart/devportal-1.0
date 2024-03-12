@@ -32,7 +32,7 @@ This should run without errors.
 > To learn more about installing Docker, visit the [Docker installation page](https://docs.docker.com/install/).
 
 ### Install RSKj using Docker image
-To install an Rootstock node using Docker:
+To install a Rootstock node using Docker:
 
 1. Pull the RSKj image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj). Alternatively, you can download the RSKj Dockerfiles and `supervisord.conf` from the [Rootstock artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/5.4.0-fingerroot).
     [](#top "collapsible")
