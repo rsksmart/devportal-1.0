@@ -78,7 +78,7 @@ To install an Rootstock node using Docker:
     ```jsx
     curl -X POST -H "Content-Type: application/json" --data "{\"jsonrpc\":\"2.0\",\"method\":\"net_version\",\"params\":[],\"id\":1}" http://127.0.0.1:4444
     ```
-    This should return an output as follows:
+    This should return an output as shown below:
     ```bash
     {"jsonrpc":"2.0","id":1,"result":"33"}
     ```
