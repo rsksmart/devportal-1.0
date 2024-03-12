@@ -1,24 +1,26 @@
 ---
 menu_order: 500
-menu_title: Rootstock Pre-compiled ABIs
+menu_title: RSK Pre-compiled ABIs
 layout: rsk
-title: Rootstock Pre-compiled ABIs
+title: RSK Pre-compiled ABIs
 tags: [libraries, abi, pre-compiled]
 ---
 
 
 
-Here you will find information about the ABIs for existing precompiled contracts in Rootstock. You will also get their addresses and a builder to use it with web3js.
+# Welcome to the precompiled ABIs from RSK.
 
-## Version
+Here you will find the ABIs for the existing precompiled contracts in RSK. You will also get their addresses and a builder to use it with web3js.
 
-Different versions of the package mentioned are required for different Rootstock releases.
+# Version
 
-The semantic versioning of this package doesn’t correlate to the semantic versioning of Rootstock. For each named release of Rootstock, there will be a corresponding name version in npm.
+Different versions of the package mentioned are required for different RSK releases.
+
+The semantic versioning of this package doesn’t correlate to the semantic versioning of RSK. For each named release of RSK, there will be a corresponding name version in npm.
 
 This package's support starts with ORCHID.
 
-## How to use it
+# How to use it
 
 For the installation of these package you must execute in a terminal window:
 
@@ -54,19 +56,29 @@ var bridge = precompiled.bridge.build(new Web3('http://localhost:4444'));
 bridge.methods.getFederationAddress().call().then(console.log);
 ```
 
-> Important note:
-> If the version to be installed is not defined in the command line, the version will correspond to the latest version in [rskj releases page](https://github.com/rsksmart/reproducible-builds/tree/master/rskj).
+# Important note
 
-## Versioning table
+If the version to be installed is not defined in the command line, the version will correspond to the latest version in [rskj releases page](https://github.com/rsksmart/reproducible-builds/tree/master/rskj).
 
-| Package Version | Rootstock version   |
+# Versioning table
+
+| Package Version | RSK version   |
 |-----------------|---------------|
 | 1.0.0-ORCHID    | ORCHID-0.6.2  |
 | 2.0.0-WASABI    | WASABI-1.0.0  |
 | 2.0.1-WASABI    | WASABI-1.0.0  |
 | 3.0.0-PAPYRUS   | PAPYRUS-2.0.0 |
-| 4.0.0-IRIS      | IRIS-3.0.0    |
-| 4.0.2-IRIS      | IRIS-3.0.0    |
-| 5.0.0-HOP       | HOP-4.0.0    |
-| 5.0.0-FINGERROOT | FINGERROOT-5.0.0 |
-| 6.0.0-ARROWHEAD | ARROWHEAD-6.0.0 |
+| 3.0.0-PAPYRUS   | PAPYRUS-2.2.0 |
+| 3.0.0-IRIS      | IRIS-3.0.0    |
+| 3.1.0-IRIS      | IRIS-3.1.0    |
+| 3.2.0-IRIS      | IRIS-3.2.0    |
+| 3.3.0-IRIS      | IRIS-3.3.0    |
+| 4.0.0-HOP       | HOP-4.0.0    |
+| 4.1.0-HOP       | HOP-4.1.0    |
+| 4.1.1-HOP       | HOP-4.1.1    |
+| 4.2.0-HOP       | HOP-4.2.0    |
+| 4.3.0-HOP       | HOP-4.3.0    |
+| 4.4.0-HOP       | HOP-4.4.0    |
+| 5.0.0-fingerroot | FINGERROOT-5.0.0 |
+| 5.1.0-fingerroot | FINGERROOT-5.1.0 |
+| 5.2.0-fingerroot | FINGERROOT-5.2.0 |
