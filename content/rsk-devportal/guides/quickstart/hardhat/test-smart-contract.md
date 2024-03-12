@@ -7,7 +7,7 @@ description: 'Learn how to test your Rootstock smart contract'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, blockchain
 ---
 
-In this section, you'll set up a smart contract test and test your contract using Mocha and Chai testing frameworks.
+In this section, you'll set up a smart contract test and test your contract using Mocha and Chai testing frameworks. See DApps Automation using [Cucumber and Playwright](/guides/starter-kits/dapp-automation-cucumber/).
 
 Follow these steps below to test the smart contract.
 
@@ -78,3 +78,5 @@ In addition to Mocha and Chai, you can use several other frameworks and approach
   - [Jest](https://jestjs.io/) is popular for its delightful syntax and focus on simplicity. It works well for testing both frontend and backend JavaScript applications.
 - Waffle - Ethereum Smart Contract Testing Library
   - [Waffle](https://getwaffle.io/) is a library for writing and testing smart contracts. It is often used with ethers.js and is known for its fluent syntax.
+- Cucumber DApps Automation
+  - [DApp Automation with Cucumber](/guides/starter-kits/dapp-automation-cucumber/)
