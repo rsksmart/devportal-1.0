@@ -1,9 +1,9 @@
 ---
 menu_order: 1600
 menu_title: Givetrack
-title: 'GiveTrack - Solutions on RSK'
+title: 'GiveTrack - Solutions on Rootstock'
 description: 'Revolutionary donation platform, providing real-time financial transparency and global impact powered by Blockchain technology.'
-tags: givetrack, rsk-solutions, rsk, bitgive, defi, dApps, blockchain, donations
+tags: givetrack, rsk-solutions, rsk, bitgive, defi, dApps, blockchain, donations, rootstock
 layout: 'rsk'
 ---
 
@@ -19,11 +19,11 @@ GiveTrack is a platform nonprofits use to collect donations, and share updates w
   <iframe width="949" height="534" src="https://www.youtube.com/embed/wzoBQxAslRY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## How GiveTrack integrates with RSK
+## How GiveTrack integrates with Rootstock
 
 **Transactions for a project**
 
-![GiveTrack-RSK-Integrations](/assets/img/solutions/givetrack/givetrack-integration.png)
+![GiveTrack-Rootstock-Integrations](/assets/img/solutions/givetrack/givetrack-integration.png)
 
 **Funds flow for an organisation**
 
@@ -65,15 +65,15 @@ BitGive's founder has presented at several international conferences on the soci
 - [The Crypto Show With Andreas Antonopoulos & Connie Gallippi At LaBitConf, Santiago Chile](https://letstalkbitcoin.com/blog/post/the-crypto-show-with-andreas-antonopoulos-connie-gallippi-at-labitconf-santiago-chile)
 - ["DE-PHI" CRYPTO FOR GOOD](https://www.bitgivefoundation.org/conference2020/)
 
-Now with GiveTrack on RSK, BitGive is strengthening its impact!
+Now with GiveTrack on Rootstock, BitGive is strengthening its impact!
 
-### Why use GiveTrack on RSK?
+### Why use GiveTrack on Rootstock?
 
 - Rewards good actors in the nonprofit sector
 - Educates donors about effective outcomes
 - Identifies & avoids fraudulent activities along traditional paths
 
-#### Features of GiveTrack on RSK
+#### Features of GiveTrack on Rootstock
 
 - Blockchain technology: GiveTrack allows donors to trace transactions on a public platform in real-time
 - Donors can see how funds are spent and ensure they reach their final destination
@@ -83,11 +83,11 @@ Now with GiveTrack on RSK, BitGive is strengthening its impact!
 
 ### For donors
 
-- [Donate to a project using GiveTrack on RSK](https://www.givetrack.org/howtodonate)
+- [Donate to a project using GiveTrack on Rootstock](https://www.givetrack.org/howtodonate)
 
 ### For nonprofits
 
-How to set up a project using GiveTrack on RSK
+How to set up a project using GiveTrack on Rootstock
 
 - Visit [https://givetrack.org](https://givetrack.org)
 

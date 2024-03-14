@@ -1,9 +1,9 @@
 ---
 menu_order: 300
 menu_title: Money on Chain
-title: 'Money on Chain - Solutions on RSK'
+title: 'Money on Chain - Solutions on Rootstock'
 description: 'Money On Chain - DeFi for Bitcoin'
-tags: MoC, rsk-solutions, rsk, stablecoin, bitcoin, defi
+tags: MoC, rsk-solutions, rsk, stablecoin, bitcoin, defi, rootstock
 render_features: 'tables-with-borders'
 layout: 'rsk'
 ---
@@ -23,11 +23,11 @@ Within the Money On Chain architecture, we distinguish the following Platform us
 
 **MoC Holder:** A user who acquires MOC, which allows him to participate in the government of the platform and / or provide a service to it in exchange for receiving subsidies and part of the fees collected by the platform.
 
-**Any RSK Token (ART) Trader:** A user who owns a token compatible with the RSK Blockchain (could be BPro, DoC, MoC, rBTC, RIF, etc), and wants to perform a decentralized exchange operation.
+**Any Rootstock Token (ART) Trader:** A user who owns a token compatible with the Rootstock Blockchain (could be BPro, DoC, MoC, rBTC, RIF, etc), and wants to perform a decentralized exchange operation.
 Smart Contracts: gets data from OMoC
 
 
-**How Money on Chain integrates with RSK**
+**How Money on Chain integrates with Rootstock**
 
 
 ![moc-diagram](/assets/img/solutions/moneyonchain/moc_diagram.png)
@@ -56,7 +56,7 @@ The Bitcoin-collateralized stablecoin uses a trustless, decentralized two-token 
 5. Tokens Exchange (Tex) 
 6. Oracles Money On Chain (OMoC)
 
-A Bitcoin-collateralized stablecoin minimizes counterparty risk through a set of smart contracts. The stable token, DOC, is pegged to the RSK network’s native token, RBTC, which acts as collateral – though other collateral may be used to maintain pegs. RBTC is linked 1 : 1 to Bitcoin (1 RBTC = 1BTC) and is convertible to and from BTC. The Dollar on Chain (DOC), which is an RRC20 token, is pegged to the US dollar for risk-averse individuals, while the BitPro, also an RRC20 token, maintains Bitcoin’s price volatility. BTCX are positions in the system’s decentralized derivatives exchange (DEX). MOC Protocol, a set of smart contracts, returns the amount of DOCs equivalent to the amount of dollars received in RBTC at the time of confirmation of the transaction. BitPro is issued when RBTCs are sent to MOC Protocol. The system returns the equivalent amount at the time the transaction is recorded on the blockchain. The MoneyOnChain decentralized exchange’s native token, the non-transferable BTCX, represents leveraged positions on the price of RBTC, and they are created when an address sends RBTC to the smart contract. Participants purchase BitPros with RBTCs, and redeem them for RBTC at which time they are burned.
+A Bitcoin-collateralized stablecoin minimizes counterparty risk through a set of smart contracts. The stable token, DOC, is pegged to the Rootstock network’s native token, RBTC, which acts as collateral – though other collateral may be used to maintain pegs. RBTC is linked 1 : 1 to Bitcoin (1 RBTC = 1BTC) and is convertible to and from BTC. The Dollar on Chain (DOC), which is an RRC20 token, is pegged to the US dollar for risk-averse individuals, while the BitPro, also an RRC20 token, maintains Bitcoin’s price volatility. BTCX are positions in the system’s decentralized derivatives exchange (DEX). MOC Protocol, a set of smart contracts, returns the amount of DOCs equivalent to the amount of dollars received in RBTC at the time of confirmation of the transaction. BitPro is issued when RBTCs are sent to MOC Protocol. The system returns the equivalent amount at the time the transaction is recorded on the blockchain. The MoneyOnChain decentralized exchange’s native token, the non-transferable BTCX, represents leveraged positions on the price of RBTC, and they are created when an address sends RBTC to the smart contract. Participants purchase BitPros with RBTCs, and redeem them for RBTC at which time they are burned.
 
 
 #### Description of the model behind MOC Protocol
@@ -71,7 +71,7 @@ The model was designed to align the economic incentives of the different actors 
 1. The Dollar on Chain (DOC), is a RRC20 token pegged to the US Dollar for risk-averse individuals. Those who need a stable currency use the DOC, a token that maintains a peg with the US dollar. There is more than 4B usd already in these types of assets.
 2. The BitPro, is a RRC20 token for Bitcoin holders seeking a passive income in RBTC. Bitcoin holders, people who save their bitcoins for the long term and seek an income on their bitcoins, use BitPro, which is a token that pays a bitcoin interest rate in addition to being slightly leveraged, which increases the holding of RBTC when the price goes up. The rate is variable, and depends on market conditions. 65% of all bitcoins are in possession of these types of holders.
 3. BTCX are positions in a decentralized derivatives exchange (DEX). Traders looking for leverage during the RBTC price rise can use the BTCX which are positions leveraged in the RBTC price, these positions work as a future that expires every 90 days. The annual volume of these types of instruments is over 1 Trillion.
-4. In RSK the SmartBitcoin (RBTC) is linked 1: 1 to Bitcoin (1 RBTC = 1BTC), and can be converted in a decentralized way to and from BTC.
+4. In Rootstock the SmartBitcoin (RBTC) is linked 1: 1 to Bitcoin (1 RBTC = 1BTC), and can be converted in a decentralized way to and from BTC.
 
 ### Asset types
 
@@ -79,14 +79,14 @@ The model was designed to align the economic incentives of the different actors 
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [DOC](https://explorer.rsk.co/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db) | [Dollar on Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | RSK |
-| [BPRO](https://explorer.rsk.co/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | ERC20 | RSK |
+| [DOC](https://explorer.rootstock.io/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db) | [Dollar on Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | Rootstock |
+| [BPRO](https://explorer.rootstock.io/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | ERC20 | Rootstock |
 
 ### Non-token financial assets
 
 | Symbol | Name | Network |
 | --- | --- | --- |
-| [BTCX](https://explorer.rsk.co/address/0xf773b590af754d597770937fa8ea7abdf2668370) | [BTCX](https://moneyonchain.com/btcx-leveraged-bitcoin/) | RSK |
+| [BTCX](https://explorer.rootstock.io/address/0xf773b590af754d597770937fa8ea7abdf2668370) | [BTCX](https://moneyonchain.com/btcx-leveraged-bitcoin/) | Rootstock |
 
 
 
@@ -103,14 +103,14 @@ The model was designed to align the economic incentives of the different actors 
 **User Guides**
 
 - [Reference Guide](https://api.moneyonchain.com/docs/guide)
-- [Access Money on Chain on RSK Testnet](https://moc-testnet.moneyonchain.com)
+- [Access Money on Chain on Rootstock Testnet](https://wiki.moneyonchain.com/going-deeper/using-the-testnet)
 - [Configure a Wallet for Testnet](https://moneyonchain.com/how-to-defi-for-bitcoin/)
 
 **Reference Docs**
-- [Whitepaper](https://moneyonchain.com/whitepaper-defi-for-bitcoin/)
+- [Whitepaper](https://drive.google.com/file/d/10HIs1T4pD5MFSGjr-pnPrPD29DpFYKZN/view)
 - [Audit - RBTC](https://github.com/money-on-chain/Audits/tree/master/RBTC_collateral)
 - [Audit - RRC20](https://github.com/money-on-chain/Audits/tree/master/RRC-20_collateral)
-- [FAQs](https://moneyonchain.com/faq-defi-for-bitcoin/)
+- [FAQs](https://wiki.moneyonchain.com/frequently-asked-questions/protocol-frequently-asked-questions)
 
 **API Docs**
 - [RBTC-collateralized stablecoin contract](https://github.com/money-on-chain/main-RBTC-contract/#readme)

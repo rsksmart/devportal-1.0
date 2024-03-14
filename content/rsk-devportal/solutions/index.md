@@ -61,29 +61,6 @@ platforms and APIs to create innovative experiences.
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/solutions/chainbeat/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/chainbeat/chainbeat-logo-v.png" alt="started icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/solutions/chainbeat/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">Chainbeat</p>
-                        <p class="card-desc">Chainbeat provides blockchain data insights to help understand usage and behavioral metrics for smart contracts running on Rootstock. Check out how Chainbeat integrates with Rootstock.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/solutions/chainbeat/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
             <a href="/solutions/moneyonchain/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
@@ -239,29 +216,6 @@ platforms and APIs to create innovative experiences.
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/solutions/liquality/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/solutions/chainlink/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/Chainlink/Chainlink Symbol Blue.png" alt="started icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/solutions/chainlink/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">Chainlink</p>
-                        <p class="card-desc">Connect your smart contracts to the outside world.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/solutions/chainlink/">Read More</a>
                 </div>
             </div>
         </div>

@@ -1,10 +1,10 @@
 ---
 menu_order: 2200
 menu_title: NowNodes
-title: 'NOWNodes - Solutions on RSK'
+title: 'NOWNodes - Solutions on Rootstock'
 description: 'NOWNodes - Blockchain service at your fingertips'
 tags: nownodes-docs
-slug: NOWNodes, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts, API, data-points, indexing, query, node
+slug: NOWNodes, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts, API, data-points, indexing, query, node, rootstock
 layout: 'rsk'
 ---
 
@@ -12,19 +12,19 @@ layout: 'rsk'
 
 ![NOWNodes-banner](/assets/img/solutions/nownodes/nownodes-banner.png)
  
-## How NOWNodes integrates with RSK
+## How NOWNodes integrates with Rootstock
 
-See the diagram below for how NOWNodes integrates with RSK.
+See the diagram below for how NOWNodes integrates with Rootstock.
  
 ![NOWNodes Integrations Diagram](/assets/img/solutions/nownodes/nownodes-integration.png)
 
 > Note: In order to send requests to the node, need an API key. See the [documentation](https://documenter.getpostman.com/view/13630829/TVmFkLwy) for instructions or [sign up](https://nownodes.io/) to get an API Key.
 
-> Note: NowNodes does not provide public nodes for RSK; only private nodes for enterprise customers.
+> Note: NowNodes does not provide public nodes for Rootstock; only private nodes for enterprise customers.
 
 ## About NOWNodes
 
-NOWNodes enterprise service provides access to an RSK private node, and other blockchains such as Ethereum and Bitcoin.
+NOWNodes enterprise service provides access to an Rootstock private node, and other blockchains such as Ethereum and Bitcoin.
 
 ### Benefits of using NOWNodes
 
@@ -42,7 +42,7 @@ NOWNodes enterprise service provides access to an RSK private node, and other bl
 - Backup service solution for providing a high level of resilience
 - Access to block explorers — online blockchain browser that can show the details of all transactions that have ever happened on a blockchain network.
 
-**There is no free plan for NowNodes on RSK,
+**There is no free plan for NowNodes on Rootstock,
 enterprise plans only.**
 
 ### Why NOWNodes
