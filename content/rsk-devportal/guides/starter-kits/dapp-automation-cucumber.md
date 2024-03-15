@@ -60,14 +60,25 @@ const metamaskPath = await prepareMetamask(
 
 [Cucumber](https://cucumber.io/) already comes as a built-in dependency in this automation framework, when installing the dependencies, just be certain to add the vscode extensions as well, which will let you handle cucumber features seamlessly.
 
-```text
-{
-   "recommendations": [
-       "muralidharan92.cuke-step-definition-generator",
-       "alexkrechik.cucumberautocomplete"
-   ]
-}
-```
+[](#top "collapsible")
+- Cuke Step Definition Generator
+    - Author: Muralidharan Rajendran
+    - Description: This VSCode extension aids users by generating Cucumber Glue / Step Definition snippets for selected statements, streamlining work with Cucumber JS in VS Code.
+    - [View Cuke Step Definition Generator on Marketplace](https://marketplace.visualstudio.com/items?itemName=muralidharan92.cuke-step-definition-generator).
+- Cucumber Auto Complete (Gherkin) Full Support
+    - Author: Alexander Krechik
+    - Description: This extension provides comprehensive language support for Cucumber (Gherkin), including syntax highlighting, snippets, autocompletion, and format support across multiple programming languages such as JS, TS, Ruby, and Kotlin.
+    - [View Cucumber (Gherkin) Full Support on Marketplace](https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete).
+- Add Extensions on VSCode
+    ```text
+    {
+        "recommendations": [
+            "muralidharan92.cuke-step-definition-generator",
+            "alexkrechik.cucumberautocomplete"
+        ]
+    }
+    ```
+
 
 ## DApp Configuration
 
