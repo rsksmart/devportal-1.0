@@ -127,11 +127,11 @@ After running the build process, a JAR file will be created in ```/rskj/rskj-cor
 You can check the SHA256 sum of the result file and compare it to the one published by Rootstock for that version.
 
 ```bash
-70ae5209720ad6477c1c32d8a8d94e29ebb0db25d57e9903546519d614eddf9f  rskj-core-6.0.0-ARROWHEAD-all.jar
-6ed2bcb287e6b9e61bb99b65307e2e51b4231a92070fed4569443981fc2597ce  rskj-core-6.0.0-ARROWHEAD-sources.jar
-3b1dd7d624137fb1bcc133927a7357eed3228457e8db29f17cf0a193370bbe12  rskj-core-6.0.0-ARROWHEAD.jar
-4d588eae64108680c6ae6e895e2d6d4a07cdd05a31718d6f4a34870153a51d5a  rskj-core-6.0.0-ARROWHEAD.module
-3903f17a97e7dbd55bac0dd02030f5297e364280e2b7a856aaf03b4d327dce3c  rskj-core-6.0.0-ARROWHEAD.pom
+d3026daa1c4aa56741b4e45bb429d8d16d9bda664ebe3aa4394fe1fa13371769  rskj-core-6.0.0-ARROWHEAD-all.jar
+2510c8b2cc99300d2c3ca9765bd60847aca8b14da57a51c3eb080ab448f1db30  rskj-core-6.0.0-ARROWHEAD-sources.jar
+7012f7e29bf60bf6bcc072154978c58dbed07a043ce3218fd97035476151e717  rskj-core-6.0.0-ARROWHEAD.jar
+4b04ecb033c633c912ed5222e82f20c88d2593abc2fdf585771a818eb63c685d  rskj-core-6.0.0-ARROWHEAD.module
+984dc3bc3596623b74f457f96617765c685567cdde3c7f4a7279f0177ff5d978  rskj-core-6.0.0-ARROWHEAD.pom
 ```
 
 For SHA256 sum of older versions check the [releases page](https://github.com/rsksmart/rskj/releases).
