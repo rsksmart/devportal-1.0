@@ -21,13 +21,13 @@ The quick start guide is designed to smoothly transition Web2 developers into th
     <ul id="card-list" class="row">
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content"><a href="](/guides/starter-kits/hackathon-starter#quick-start-setup">
+<div class="content"><a href="/guides/starter-kits/hackathon-starter#quick-start-setup">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg">Prerequisites</h2><span class="zg-label ml-1">01</span></div> 
                 <p class="card-desc">Learn about the tools you need to have in place to follow along with this guide.</p>
             </div>
-            </a><div class="btn-container "><a href="](/guides/starter-kits/hackathon-starter#quick-start-setup">
-                </a><a class="green" href="](/guides/starter-kits/hackathon-starter#quick-start-setup">View the Prerequisites</a>
+            </a><div class="btn-container "><a href="/guides/starter-kits/hackathon-starter#quick-start-setup">
+                </a><a class="green" href="/guides/starter-kits/hackathon-starter#quick-start-setup">View the Prerequisites</a>
             </div>
             </div>
         </div>
