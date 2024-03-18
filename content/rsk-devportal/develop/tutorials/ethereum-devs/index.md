@@ -5,7 +5,7 @@ menu_title: Port Ethereum dApps
 layout: rsk
 title: Port Ethereum dApps
 tags: tutorial, rsk, ethereum dapps, ethereum, solidity
-description: "How to port an Ethereum dApp to RSK, using Truffle framework connected to RSK testnet"
+description: "How to port an Ethereum dApp to RSK, using Hardhat framework connected to RSK testnet"
 render_features: "custom-terminals"
 ---
 
@@ -16,7 +16,7 @@ render_features: "custom-terminals"
   }
 </style>
 
-Smart contracts for RSK are written using Solidity (a Javascript like programming language) and are fully compatible with Ethereum Smart Contracts, so you can migrate your existing Ethereum Smart Contract to RSK without changing the smart contract.
+Smart contracts for RSK are written using Solidity, a programming language similar to JavaScript, and are fully compatible with Ethereum Smart Contracts. This means you can migrate your existing Ethereum Smart Contracts to RSK without modifying the smart contract code. To develop and test your smart contracts on RSK, you can use Hardhat, a development environment that facilitates building, testing, and deploying smart contracts. Hardhat is designed to offer a flexible and powerful framework with advanced features such as console.log debugging, customizable build pipelines, and native TypeScript support.
 
 ### Translations
 
@@ -34,7 +34,7 @@ New to Solidity? You can learn more using the [Solidity docs](https://solidity.r
 
 * Code editor
 * Node.js and NPM (Node Package Manager)
-* Truffle Framework
+* Hardhat development environment
 
 ### Code editor
 
@@ -53,49 +53,43 @@ Note that NPM is usually installed together with Node.js, so after installing No
 If you want to have more than one version installed,
 the most fuss-free way to install and manage multiple versions of `node` on your computer is via [nvm](https://github.com/nvm-sh/nvm).
 
-### Truffle Framework
+### Hardhat Framework
 
-Truffle is an open source framework that facilitates the testing and development of smart contracts. It allows you to connect to a local RSK node and call the compiler, run unit tests, and publish your smart contracts easily. Check out [this tutorial](https://github.com/rsksmart/truffle-integration) which demonstrates the usage of Truffle and Ganache with a local RSK node.
+Hardhat is an advanced development environment for Ethereum, designed to help developers manage and automate the task of compiling, deploying, and testing smart contracts. It supports connecting to local and remote networks, making it easy to work with networks like RSK. For more information visit Hardhat's extensive [documentation](https://hardhat.org/docs).
 
-In this tutorial, we will use Truffle for compiling and publishing our smart contracts.
+In this tutorial, we'll utilize Hardhat for compiling, testing, and deploying our smart contracts.
 
-Enter the following command in the terminal to install truffle on your local machine:
+To install Hardhat on your local machine, enter the following command in the terminal:
 
 ```shell
-npm install -g truffle
+npm install --save-dev hardhat
 ```
 
 ## Step 1 : Import Existing Code
 
 First, you need to create a project.
 
-### Initialize an empty Truffle project
+### Initialize an Empty Hardhat Project
 
-Create a new folder and a Truffle project using the commands below:
-
-```shell
-mkdir rsk-truffle-example
-cd rsk-truffle-example
-truffle init
-```
-
-The init command will create 3 folders and a configuration file for this project. The solidity files are in the contracts folder.
-
-### Install HD wallet provider
-
-To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. We are going to use `@truffle/hdwallet-provider`.
-This can be used to sign transactions for addresses derived from a 12 or 24 word mnemonic.
-
-> You need to have Node >= 7.6 installed.
-
-In the terminal, inside the project folder, install the HD wallet provider with this command:
+Create a new folder for your project and initialize it as a Hardhat project with the following commands:
 
 ```shell
-npm install -E @truffle/hdwallet-provider@1.0.34
+mkdir rsk-hardhat-example
+cd rsk-hardhat-example
+npm init -y
+npm install --save-dev hardhat
+npx hardhat
 ```
 
-This `truffle package` comes with many dependencies, and can take a long time to complete.
-A successful installation message is shown if everything works fine.
+When you run `npx hardhat`, select "Create a basic sample project" by following the prompts. This command sets up a Hardhat project with a sample contract, a test file, and a script for deploying the contract.
+
+### Install Ethereum Wallet Provider
+
+To connect to the RSK network, we'll use @nomiclabs/hardhat-ethers and ethers.js libraries, which allow us to interact with Ethereum networks.
+
+```shell
+npm install --save-dev @nomiclabs/hardhat-ethers ethers
+```
 
 ### Copy Ethereum Contract Code
 
@@ -271,118 +265,123 @@ Enter the account address from MetaMask and wait for several seconds for MetaMas
 You will be able to check the Testnet's transactions and blocks in real time at 
 [explorer.testnet.rsk.co](https://explorer.testnet.rsk.co/)
 
-### Get the current gas price of testnet
+### Fetch the Current Gas Price of Testnet
 
-Get the current gas price of the testnet network, and save to `.gas-price-testnet.json`.
-
-In your project folder, run this cURL command:
+First, obtain the current gas price from the RSK Testnet network by running the following command in your project's root directory:
 
 ```shell
 curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
 ```
 
-You should receive a response similar to the following in the file:
+### Update Hardhat Configuration
 
-```json
-{"jsonrpc":"2.0","id":1,"result":"0x3938700"}
-```
+Next, you'll adjust your Hardhat setup to dynamically use the fetched gas price for transactions and configure the connection to the RSK testnet. Here's how to do it:
 
-The result value is presented in hexadecimal.
-
-### Truffle Configuration
-
-Edit the `truffle-config.js` to be same as the code below. The `truffle-config.js` file directs Truffle to connect to the public Testnet node.
+1. Modify hardhat.config.js to include the RSK testnet configuration and to automatically use the fetched gas price:
 
 ```javascript
-var HDWalletProvider = require('@truffle/hdwallet-provider')
-
-var mnemonic = 'thing tuition ranch ... YOUR MNEMONIC'
-var publicTestnetNode = 'https://public-node.testnet.rsk.co/'
-
+require("@nomiclabs/hardhat-ethers");
 const fs = require('fs');
+
+// Load the gas price from the previously saved file
 const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
 const gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
 if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
-  throw new Error('unable to retrieve network gas price from .gas-price-testnet.json');
+  throw new Error('Unable to retrieve network gas price from .gas-price-testnet.json');
 }
 console.log("Gas price Testnet: " + gasPriceTestnet);
 
 module.exports = {
+  solidity: "0.4.24",
   networks: {
     rskTestnet: {
-      provider: () => new HDWalletProvider(mnemonic, publicTestnetNode),
-      network_id: 31,
-      gasPrice: Math.floor(gasPriceTestnet * 1.1),
-      networkCheckTimeout: 1e9
+      url: "https://public-node.testnet.rsk.co/",
+      accounts: {mnemonic: 'your mnemonic here'}, // replace with your mnemonic
+      gasPrice: Math.floor(gasPriceTestnet * 1.1), // Adjusts the gas price
+      chainId: 31
     }
   },
-  compilers : {
-     solc: {
-      version: "0.4.24",
-      evmVersion: "byzantium"
-     }
-  }
-}
+};
 ```
 
-### Truffle Console connected to RSK network
+Replace 'your mnemonic here' with your actual mnemonic to ensure proper authorization on the network.
 
-Truffle has its own console to run commands, and can be connected on any network previously configured in `truffle-config.js` file. To connect Truffle console to a network, you need to specify the network.
+### Compile and Deploy Contracts
 
-In the terminal, inside the `rsk-truffle-example` folder, run this command to connect to RSK testnet:
+With Hardhat, you can compile and deploy your smart contracts using simple commands.
+
+#### Compile Contracts
+
+To compile your smart contracts, run:
 
 ```shell
-truffle console --network rskTestnet
+npx hardhat compile
 ```
 
-It may take a while to establish the connection.
-This will open a new console, with this prompt:
+This will process all contracts within your `contracts` directory.
 
-```windows-command-prompt
-truffle(rskTestnet)>  
-```
+#### Deploy Contracts
 
-### Compile and Deploy
-
-Enter the following commands in the Truffle console to compile and deploy the contracts.
+Make sure you have a deployment script ready in the `scripts` directory (e.g., `deploy.js`). Execute the script to deploy your contracts to the RSK Testnet by running:
 
 ```shell
-compile
-migrate
+npx hardhat run scripts/deploy.js --network rskTestnet
 ```
+
+This utilizes the network configuration specified in `hardhat.config.js` to deploy your contracts to the RSK Testnet.
+
+#### Interact with Your Contracts
+Hardhat provides a console for interacting with deployed contracts and the blockchain. To open the Hardhat console connected to the RSK Testnet, use:
+
+```shell
+npx hardhat console --network rskTestnet
+```
+Inside the console, you can run scripts, interact with contracts, or query the blockchain directly.
 
 ## Step 3 : Execute the Smart Contract
 
-Once the deployment is successful. We can call smart contract methods directly in the truffle console.
+After your contract has been successfully deployed, you can interact with it directly using Hardhat's console or scripting capabilities. Here's how to perform the specified operations:
 
 **Check Account Balance**
 
-Enter the following command into the truffle console.
-
-```javascript
-EIP20.deployed().then((instance=>instance.balanceOf("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52")))
-```
-
-EIP20 is the name of our contract. This command will print out the balance of account address `0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52` as a big number. To see it as an integer, change the command to
-
-```javascript
-EIP20.deployed().then((instance=>instance.balanceOf("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52").then(b=>b.toNumber())))
-```
-
-The balance is 0.
-
-**Transfer Token Directly Between Two Accounts**
-
-Now use the following command to transfer 1 token from the minter's account to the previous account
+First, enter the Hardhat console connected to your desired network:
 
 ```shell
-EIP20.deployed().then((instance=>instance.transfer("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52", 1)))
+npx hardhat console --network rskTestnet
 ```
 
-After its successful execution, check account `0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52` again to see the change in balance.
+Once inside the console, you can use the following commands to interact with your deployed EIP20 contract. Assume you've deployed your contract and know its address. You'd interact with it as follows (note that you need to replace `contractAddress` with your contract's actual deployed address):
 
 ```javascript
-EIP20.deployed().then((instance=>instance.balanceOf("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52").then(b=>b.toNumber())))
+const contract = await ethers.getContractAt("EIP20", "contractAddress")
+const balance = await contract.balanceOf("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52")
+console.log(balance.toString())
+```
+
+To convert the balance to a number for easier reading (assuming it's safe to do so without losing precision):
+
+```javascript
+console.log(balance.toNumber())
+```
+
+**Transfer Tokens Directly Between Two Accounts**
+
+To transfer tokens, you would typically need to ensure the account performing the transfer has enough tokens and is properly authorized (e.g., it's the account that deployed the contract or has been given approval to transfer tokens). Here's how you can initiate a transfer:
+
+```javascript
+const tx = await contract.transfer("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52", 1)
+await tx.wait()
+```
+
+This sends 1 token from the signer's account (default account in Hardhat's ethers plugin) to the specified account. Ensure you're connected to the correct network and using the right account that owns the tokens.
+
+**Check the Account Balance Again**
+
+After the transfer, to check the balance of the account again:
+
+```javascript
+const newBalance = await contract.balanceOf("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52")
+console.log(newBalance.toNumber())
 ```
 
 ## Step 4 : Deploy to Mainnet
@@ -393,50 +392,60 @@ Deploying Smart Contracts to RSK Mainnet can follow the same steps as the Testne
 
 The [public node](/rsk/public-nodes) of RSK Main Net is https://public-node.rsk.co
 
-#### Gasprice in Mainnet
+#### Gas Price on Mainnet
 
-Get the current gas price of the mainnet network, and save to `.gas-price-mainnet.json`.
-
-In your project folder, run this cURL command:
+To ensure your transactions are processed, obtain the current gas price on the RSK Mainnet and save it locally:
 
 ```shell
 curl https://public-node.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-mainnet.json
 ```
 
-#### Update truffle-config
+#### Update Hardhat Configuration
 
-In the `truffle-config.js` file, add the following code after the testnet part:
+In your Hardhat project, update the `hardhat.config.js` file to include the RSK Mainnet configuration. You'll need to adjust the script for fetching the mainnet gas price and include the mainnet configuration in the networks section. Here's how to do it:
+
+1. Add a segment for fetching the Mainnet gas price similar to how you did for Testnet. Ensure you've installed necessary dependencies:
 
 ```javascript
-var publicMainnetNode = 'https://public-node.rsk.co/'
+const fs = require('fs');
 
 const gasPriceMainnetRaw = fs.readFileSync(".gas-price-mainnet.json").toString().trim();
 const gasPriceMainnet = parseInt(JSON.parse(gasPriceMainnetRaw).result, 16);
 if (typeof gasPriceMainnet !== 'number' || isNaN(gasPriceMainnet)) {
-  throw new Error('unable to retrieve network gas price from .gas-price-mainnet.json');
+  throw new Error('Unable to retrieve network gas price from .gas-price-mainnet.json');
 }
 console.log("Gas price Mainnet: " + gasPriceMainnet);
 ```
 
-Also include this configuration at `network` section:
+2. Add the RSK Mainnet configuration in the networks section of your `hardhat.config.js`:
 
 ```javascript
+require("@nomiclabs/hardhat-ethers");
+// ... other requires and configurations
+
+module.exports = {
+  solidity: "0.4.24", // Adjust based on your contract's requirements
+  networks: {
+    // ... other network configurations
     rskMainnet: {
-      provider: () => new HDWalletProvider(mnemonic, publicMainnetNode),
-      network_id: 30,
-      gasPrice: Math.floor(gasPriceMainnet * 1.01),
-      networkCheckTimeout: 1e9
+      url: "https://public-node.rsk.co",
+      accounts: {mnemonic: 'your mnemonic here'}, // replace with your mnemonic
+      chainId: 30,
+      gasPrice: Math.floor(gasPriceMainnet * 1.01), // Use the fetched gas price
     },
+  },
+};
 ```
+
+Make sure to replace 'your mnemonic here' with the mnemonic phrase of the wallet you wish to use for deployment.
 
 #### Mainnet Explorer
 
-You will be able to check the Mainnet's transactions and blocks in real time on
-[explorer.rsk.co/](https://explorer.rsk.co/)
+After deploying your contracts to the Mainnet, you can monitor transactions and block confirmations in real-time using the RSK Mainnet explorer at [explorer.rsk.co/](https://explorer.rsk.co/).
 
-#### Get RBTC through Powpeg
+#### Acquiring RBTC for Deployment
 
-To deploy onto Mainnet, we need to get some [RBTC](/rsk/rbtc/).
+To deploy contracts on the RSK Mainnet, you need [RBTC](/rsk/rbtc/) to pay for transaction fees:
 
-- You can check the [Powpeg](/rsk/architecture/powpeg/) mechanism between BTC and RBTC.
-- Or you can buy in these [exchanges](/rsk/rbtc/#exchanges)
+- RBTC can be obtained by converting BTC to RBTC using the [Powpeg](/rsk/architecture/powpeg/) mechanism. Visit [RSK's Powpeg documentation](/rsk/architecture/powpeg/) for more information.
+- Alternatively, you can purchase RBTC directly from supported exchanges. A list of exchanges offering RBTC is available at [RSK's official RBTC page](/rsk/rbtc/#exchanges)
