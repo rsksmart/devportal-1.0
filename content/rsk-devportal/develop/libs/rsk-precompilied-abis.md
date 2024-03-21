@@ -14,7 +14,7 @@ Here you will find the ABIs for the existing precompiled contracts in RSK. You w
 
 Different versions of the package mentioned are required for different RSK releases.
 
-The semantic versioning of this package doesn’t correlate to the semantic versioning of RSK. For each named release of RSK, there will be a corresponding name version in npm.
+The semantic versioning of this package doesn’t correlate to the semantic versioning of Rootstock. For each named release of the RSKj node, there will be a corresponding name version in npm.
 
 This package's support starts with ORCHID.
 
