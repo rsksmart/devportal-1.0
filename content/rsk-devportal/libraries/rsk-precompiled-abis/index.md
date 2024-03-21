@@ -10,7 +10,7 @@ Here you will find the ABIs for the existing precompiled contracts in RSK. You w
 
 ## Version
 
-Different versions of the package mentioned are required for different RSK releases.
+Different versions of the package mentioned are required for different releases.
 
 The semantic versioning of this package doesn’t correlate to the semantic versioning of RSK. For each named release of RSK, there will be a corresponding name version in npm.
 
