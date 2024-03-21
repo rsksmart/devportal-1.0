@@ -4,7 +4,7 @@ title: RSK Pre-compiled ABIs
 tags: [libraries, abi, pre-compiled]
 ---
 
-Welcome to the precompiled ABIs from RSK!
+Welcome to the precompiled ABIs from Rootstock!
 
 Here you will find the ABIs for the existing precompiled contracts in RSK. You will also get their addresses and a builder to use it with web3js.
 
