@@ -15,20 +15,11 @@ It does not matter whether you are an experienced developer, or just learning to
 
 Here is a summary of the steps to be taken to build our project:
 
-1. Installation requirements;
+1. Requirements;
 2. Run a RSK local node;
 3. Initialize a project using Hardhat;
-4. Install Open Zeppelin smart contracts in our project;
-5. Install HD wallet provider;
-6. Create a wallet mnemonic;
-7. Configure Hardhat to connect to RSK networks;
-8. Use Hardhat console;
-9. Get some testnet RBTCs from the RSK faucet;
-
-## Translations
-
-This article is also available in
-[Português](https://rsk.solange.dev/#/pt/setup-truffle-open-zeppelin/readme "Como criar um projeto utilizando Hardhat e OpenZeppelin conectado à rede RSK").
+4. Configure Hardhat to connect to RSK networks;
+5. Get some testnet RBTCs from the RSK faucet;
 
 # Requirements
 
@@ -158,23 +149,13 @@ code -v
 
 ![vscode version](/assets/img/tutorials/setup-truffle-oz/image-04.png)
 
-## Hardhat
-
-Hardhat is a cutting-edge development environment designed for Ethereum application development. It aims to bring developers a robust framework for building, testing, and deploying smart contracts with ease. Key features of Hardhat include advanced Ethereum Virtual Machine (EVM) manipulation and debugging, comprehensive testing libraries, and seamless network management.
-
-Hardhat enhances the developer experience by allowing for the creation of local Ethereum networks, simulating how contracts interact in a real-world environment, and pinpointing errors with stack traces. This environment is particularly beneficial for intricate development workflows and offers detailed insights during the contract creation phase.
-
-For more detailed information and documentation, visit:
-
-[https://hardhat.org/](https://github.com/nvm-sh/nvm)
-
-# RSK regtest (Local node)
+# Run a RSK local node
 
 When we develop a project using Hardhat Framework, we need a blockchain node running locally. This is better for development, and running tests. We'll connect to the RSK network via this local node.
 
 There are several ways to set up a RSK local node. Here, we will download a JAR file and run it using the Java SDK that has been installed.
 
-### Download
+## Download
 
 Go to the [releases page](https://github.com/rsksmart/rskj/releases) and click on the most recent to download it.
 
@@ -185,8 +166,7 @@ It's name should be `rskj-core-*.jar`:
 
 ### Verify authenticity
 
-When installing and running the RSKj node,
-it is always a good idea to verify that your copy is legitimate.
+When installing and running the RSKj node, it is always a good idea to verify that your copy is legitimate.
 
 In the folder where you download the JAR file, go to a POSIX terminal and run this command:
 
@@ -210,7 +190,7 @@ including signature verification, check out the
 [full instructions](/rsk/node/security-chain/ "Verify authenticity of RskJ source code and its binary dependencies")
 on how to do this.
 
-### Run
+## Run
 
 To run the node:
 
@@ -290,7 +270,7 @@ The `result` property is the number of the latest block that has been synced. No
 * There are other ways to install an RSK node, in other supported platforms:
   Check out [installing RSKj](/rsk/node/install/).
 
-# RSK Testnet - verify the connection
+## RSK Testnet - verify the connection
 
 In addition to using the local node, we want to publish smart contracts to the testnet. Before it, let's check if the connection is working.
 
@@ -315,7 +295,17 @@ You can consult [testnet explorer](https://explorer.testnet.rsk.co/) and verify 
 
 ![explorer testnet block number](/assets/img/tutorials/setup-truffle-oz/image-12.png)
 
-# Initialize a Hardhat project
+# Initialize a project using Hardhat
+
+Hardhat is a cutting-edge development environment designed for Ethereum application development. It aims to bring developers a robust framework for building, testing, and deploying smart contracts with ease. Key features of Hardhat include advanced Ethereum Virtual Machine (EVM) manipulation and debugging, comprehensive testing libraries, and seamless network management.
+
+Hardhat enhances the developer experience by allowing for the creation of local Ethereum networks, simulating how contracts interact in a real-world environment, and pinpointing errors with stack traces. This environment is particularly beneficial for intricate development workflows and offers detailed insights during the contract creation phase.
+
+For more detailed information and documentation, visit:
+
+[https://hardhat.org/](https://github.com/nvm-sh/nvm)
+
+## Create the project directory
 
 Create a new directory for your project. As an example, we'll name it `myproject`. Navigate to your desired location, such as `C:\RSK\` on Windows, and create the directory:
 
@@ -371,6 +361,8 @@ After initializing your Hardhat project, you can open the folder in an IDE like 
 - `test/`: Directory for test files to test your contracts and scripts.
 - `hardhat.config.js`: Hardhat's configuration file.
 
+Note: Since Hardhat version `2.22.0` Hardhat Toolbox adds `Hardhat Ignition` as the default deployment system. It replaces the folder `scripts/` for `ignition/`. Hardhat Ignition is a declarative system for deploying smart contracts on Ethereum. It enables you to define smart contract instances you want to deploy, and any operation you want to run on them.
+
 ### Install OpenZeppelin Contracts
 
 OpenZeppelin Contracts is a library of secure and community-reviewed smart contracts for Ethereum and other EVM and eWASM blockchains. To install OpenZeppelin Contracts in your project, use the following command:
@@ -379,39 +371,27 @@ OpenZeppelin Contracts is a library of secure and community-reviewed smart contr
 npm install @openzeppelin/contracts
 ```
 
+Note: 
+
 ### Verify `package.json`
 
 After installing your dependencies, open your `package.json` file to verify the installations. You should see `@openzeppelin/contracts` and the Hardhat-related packages listed under `dependencies` or `devDependencies`.
 
-### Create a Wallet for Testnet Usage
+# Configure Hardhat to connect to RSK networks
 
-For interacting with testnets, you'll need a wallet with testnet ETH. You can generate a new mnemonic (a 12-word seed phrase) for your wallet using online tools like iancoleman.io/bip39 for educational purposes or by using a secure wallet application like MetaMask.
-
-### Store Your Mnemonic Securely
-
-Create a file named .secret in your project directory and paste your mnemonic there. This file should be excluded from version control by adding it to your .gitignore file to keep your mnemonic safe.
-
-With these steps, your Hardhat project setup is complete, and you're ready to start developing smart contracts and interacting with Ethereum networks.
-
-## Configure Hardhat to Connect to RSK Regtest (local node)
+## Connect to RSK Regtest (local node)
 
 In Hardhat, network configurations are managed within the `hardhat.config.js` file. To connect to the RSK regtest (local node), you will modify this configuration file accordingly.
-
-If you haven't installed @nomiclabs/hardhat-ethers, do so by running:
-
-```shell
-npm install --save-dev @nomiclabs/hardhat-ethers ethers
-```
 
 Open your `hardhat.config.js` file and include the RSK regtest network configuration within the networks section. If you're starting from a default Hardhat setup, you might need to add the networks key to the module exports object.
 
 Here's how to add the RSK regtest configuration:
 
 ```javascript
-    require("@nomiclabs/hardhat-ethers");
+    require("@nomicfoundation/hardhat-toolbox");
 
     module.exports = {
-      solidity: "0.8.4",
+      solidity: "0.8.24",
       networks: {
         rskRegtest: {
           url: "http://127.0.0.1:4444/",
@@ -425,71 +405,15 @@ This configuration specifies that the RSK regtest network is accessible through 
 
 After adding the configuration, your `hardhat.config.js` file should look similar to the example provided, albeit with possible differences in Solidity version or additional configurations depending on your project's requirements.
 
-## Verify Network Configuration
+## Connect to RSK testnet
 
-To ensure that your configuration is correct and that Hardhat can connect to the RSK regtest network, you can run the following command:
+### Create a Wallet for Testnet Usage
 
-```shell
-npx hardhat networks
-```
+For interacting with testnets, you'll need a wallet with testnet ETH. You can generate a new mnemonic (a 12-word seed phrase) for your wallet using online tools like iancoleman.io/bip39 for educational purposes or by using a secure wallet application like MetaMask.
 
-This command lists all configured networks in your Hardhat project. Verify that rskRegtest appears in the list with the correct settings.
+### Store Your Mnemonic Securely
 
-## Interacting with the RSK Regtest Network
-
-With the network configured, you can now deploy contracts, run scripts, and perform transactions on the RSK regtest network by specifying `--network rskRegtest` in your Hardhat commands. For example, to deploy a contract:
-
-```shell
-npx hardhat run scripts/deploy.js --network rskRegtest
-```
-
-This setup allows for a seamless development and testing workflow on the RSK regtest network, facilitating Ethereum-compatible smart contract development with Hardhat on the RSK blockchain.
-
-![network development](/assets/img/tutorials/setup-truffle-oz/image-24.png)
-
-## Get the current gas price of testnet
-
-First, ensure you have fs (File System module in Node.js) required at the top of your hardhat.config.js file to read from the filesystem:
-
-```javascript
-const fs = require('fs');
-```
-
-Next, insert the code snippet for reading the gas price from `.gas-price-testnet.json` into your hardhat.config.js. You'll adjust the code to fit into the Hardhat's module exports structure. Here’s how you can integrate it:
-
-```javascript
-require("@nomiclabs/hardhat-ethers");
-
-const fs = require('fs');
-
-let gasPriceTestnet = 0;
-
-try {
-  const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
-  gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
-  if (isNaN(gasPriceTestnet)) {
-    throw new Error('The gas price is not a number.');
-  }
-  console.log("Gas price Testnet: " + gasPriceTestnet);
-} catch (error) {
-  console.error(`Failed to read gas price from .gas-price-testnet.json: ${error}`);
-}
-
-module.exports = {
-  solidity: "0.8.4",
-  networks: {
-    // Your network configurations
-  }
-};
-```
-
-This code tries to read and parse the gas price from `.gas-price-testnet.json`. If successful, it prints the gas price to the console. If there's any error (e.g., file not found, content not as expected), it catches the error and prints an error message.
-
-## Configure Hardhat to connect to RSK testnet
-
-After successfully reading the gas price, you can use it in your network configurations. Modify the networks section in `hardhat.config.js` to include the gas price for the relevant network configuration.
-
-First, make sure you are securely managing your mnemonic. One common approach is to use a .env file and dotenv package. If you choose this method, first install dotenv:
+First, make sure you are securely managing your mnemonic. One common approach is to use a `.env` file and dotenv package. If you choose this method, first install dotenv:
 
 ```shell
 npm install --save-dev dotenv
@@ -497,101 +421,61 @@ npm install --save-dev dotenv
 
 Then, create a .env file at the root of your project (this file should be added to your .gitignore to keep your mnemonic secure) and add your mnemonic:
 
-```makefile
+```
 MNEMONIC=your_mnemonic_here
 ```
 
 Next, modify your hardhat.config.js to use the .env file and configure the RSK testnet connection:
 
 ```javascript
-require("@nomiclabs/hardhat-ethers");
+require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config();
 
 const { MNEMONIC } = process.env;
 
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.24",
   networks: {
+    rskRegtest: {
+      url: "http://127.0.0.1:4444/",
+      chainId: 33, // RSK regtest chainId
+    },
     testnet: {
       url: 'https://public-node.testnet.rsk.co/',
       accounts: {
         mnemonic: MNEMONIC,
       },
-      chainId: 31,
-      gasPrice: Math.floor(gasPriceTestnet * 1.1),
-      timeout: 2000000 // Increase network check timeout if needed
+      chainId: 31
     }
   }
 };
 ```
 
-This configuration uses the mnemonic from your .env file to generate accounts for transactions on the RSK testnet. The gasPrice is set dynamically based on your previously defined gasPriceTestnet variable, increasing it by 10% as suggested. The timeout parameter has been adjusted to 2000000 to accommodate the networkCheckTimeout equivalent in Hardhat, which might be necessary in some network conditions.
+This configuration uses the mnemonic from your .env file to generate accounts for transactions on the RSK testnet.
 
-## Hardhat config with local and testnet RSK networks
-
-This is the final `hardhat.config.js` file with configurations for both networks:
-
-```javascript
-require("@nomiclabs/hardhat-ethers");
-require('dotenv').config();
-const fs = require('fs');
-
-const { MNEMONIC } = process.env;
-
-let gasPriceTestnet = 0;
-
-try {
-  const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
-  gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
-  if (isNaN(gasPriceTestnet)) {
-    throw new Error('The gas price is not a number.');
-  }
-  console.log("Gas price Testnet: " + gasPriceTestnet);
-} catch (error) {
-  console.error(`Failed to read gas price from .gas-price-testnet.json: ${error}`);
-}
-
-module.exports = {
-  solidity: "0.8.4",
-  networks: {
-    development: {
-      url: "http://127.0.0.1:4444/",
-      chainId: 33, // Use appropriate chainId for RSK local
-    },
-    testnet: {
-      url: 'https://public-node.testnet.rsk.co/',
-      accounts: { mnemonic: MNEMONIC },
-      chainId: 31,
-      gasPrice: Math.floor(gasPriceTestnet * 1.1),
-      timeout: 2000000 // Increase network check timeout if needed
-    }
-  }
-}
-```
-
-Check out the VS Code image too:
-
-![truffle-config](/assets/img/tutorials/setup-truffle-oz/image-27.png)
-
-# Hardhat console connected to RSK network
+## Hardhat console connected to RSK network
 
 Hardhat has its own console to run commands, and can be connected on any network previously configured in `hardhat.config.js` file.
 
-## Connect to RSK regtest (local node)
+### Connect to RSK regtest (local node)
 
-Let's open a Hardhat console to connect to our local node. To start the Hardhat console connected to the RSK network (or any other configured network), you can use the --network flag followed by the name of the network you've configured in your hardhat.config.js file. For example, to connect to the RSK Testnet, you would run:
+Let's open a Hardhat console to connect to our local node. To start the Hardhat console you can use the --network flag followed by the name of the network you've configured in your hardhat.config.js file. For example, to connect to the RSK Testnet, you would run:
 
 ```shell
-npx hardhat console --network testnet
+npx hardhat console --network rskRegtest
 ```
 
 ![Truffle console development](/assets/img/tutorials/setup-truffle-oz/image-28.png)
 
 This command starts an interactive session where you can execute commands and interact with your smart contracts deployed on the RSK Testnet. Here are a few examples of what you can do within the Hardhat console:
 
-```javascript
-const Greeter = await ethers.getContractFactory("Greeter");
-const greeter = await Greeter.deploy("Hello, Hardhat!");
+<!-- TODO Run tests locally -->
+
+<!-- ```javascript
+const Lock = await ethers.getContractFactory("Lock");
+const JAN_1ST_2030 = 1893456000;
+const ONE_GWEI = 1_000_000_000n;
+const greeter = await Lock.deploy("Hello, Hardhat!");
 await greeter.deployed();
 console.log("Greeter deployed to:", greeter.address);
 ```
@@ -610,11 +494,11 @@ Send transactions and query balances:
 const [owner] = await ethers.getSigners();
 const balance = await owner.getBalance();
 console.log("Balance:", balance.toString());
-```
-
-## Connect to RSK testnet
+``` -->
 
 Thus far we have only connected to a blockchain that runs using just 1 node, that runs on your own computer.
+
+### Connect to RSK testnet
 
 Let's now switch to interacting with a "real" blockchain, which is running on multiple nodes distributed across multiple computers!
 
@@ -633,11 +517,11 @@ This will open a new console:
 
 ![truffle console network testnet](/assets/img/tutorials/setup-truffle-oz/image-29.png)
 
-## Test the connection to RSK network
+### Test the connection to RSK network
 
 On any of the networks, run this commands in the Hardhat console:
 
-### Block number
+#### Block number
 
 Shows the last block number.
 
@@ -647,23 +531,38 @@ Shows the last block number.
 
 ![getBlockNumber](/assets/img/tutorials/setup-truffle-oz/image-30.png)
 
-### Network ID
+#### Get addresses
 
-To get the network ID, run this command:
+We will use a special instruction in Hardhat console to get the address in our wallet for the RSK Testnet network, it is generated from our mnemonic.
 
 ```javascript
-(await ethers.provider.getNetwork()).chainId.toString()
+// Import ethers from the Hardhat environment
+const ethers = hre.ethers;
+
+// Define the mnemonic. You can paste your MNemonic here to use your current wallet.
+const mnemonic = "test test test test test test test test test test test junk";
+
+// Get address
+const address = ethers.Wallet.fromPhrase(mnemonic).address;
+console.log(address);
 ```
 
-For the local node, the network ID is `33`.
+![list accounts](/assets/img/tutorials/setup-truffle-oz/image-34.png)
 
-![getId local](/assets/img/tutorials/setup-truffle-oz/image-31.png)
+#### Check balance
 
-And for testnet, it is `31`.
+To check the balance of an account run this command in Hardhat console:
 
-![getId testnet](/assets/img/tutorials/setup-truffle-oz/image-32.png)
+```javascript
+const balance = await ethers.provider.getBalance(address);
+console.log(ethers.formatEther(balance));
+```
 
-## Exit Hardhat console
+![getBalance accounts 0](/assets/img/tutorials/setup-truffle-oz/image-37.png)
+
+The balance is 0 and we need some tRBTC to pay gas fees, which will be used to publish smart contracts and interact with them. We shall obtain some in the next step.
+
+#### Exit Hardhat console
 
 In the Hardhat console, enter this command to exit the terminal:
 
@@ -677,59 +576,11 @@ Ctrl+C
 
 ![exit Truffle console](/assets/img/tutorials/setup-truffle-oz/image-33.png)
 
-# Get addresses
-
-We will use a special instruction in Hardhat console to get the first 10 addresses in our hierarchical deterministic wallet for the RSK Testnet network, that are generated from our mnemonic.
-
-In the terminal, inside the `myproject` folder, go to the Hardhat console connected to testnet:
-
-```shell
-npx hardhat console --network testnet
-```
-
-And run this command to save the addresses at variable `accounts`:
-
-```javascript
-// Import ethers from the Hardhat environment
-const ethers = hre.ethers;
-
-// Define the mnemonic. For security, use environment variables or another secure method in production.
-const mnemonic = "test test test test test test test test test test test junk";
-
-// Define the number of addresses to generate
-const numberOfAccounts = 10;
-
-// Generate addresses
-const accounts = Array.from({ length: numberOfAccounts }, (_, i) =>
-  ethers.Wallet.fromMnemonic(mnemonic, `m/44'/60'/0'/0/${i}`).address
-);
-
-// List the generated addresses
-console.log(accounts);
-```
-
-![list accounts](/assets/img/tutorials/setup-truffle-oz/image-34.png)
-
-## Check balance
-
-To check the balance of an account, for example, the first account of our list (`account[0]`), run this command in Hardhat console:
-
-```javascript
-const balance = await ethers.provider.getBalance(accounts[0])
-console.log(ethers.utils.formatEther(balance))
-```
-
-![getBalance accounts 0](/assets/img/tutorials/setup-truffle-oz/image-37.png)
-
-The balance is 0 and we need some tRBTC to pay gas fees,
-which will be used to publish smart contracts and interact with them.
-We shall obtain some in the next step.
-
-# TestNet Faucet
+# Get some testnet RBTCs from the RSK faucet
 
 You can get some tRBTC from the [RSK Testnet faucet](https://faucet.testnet.rsk.co/).
 
-Copy the first address from `.accounts` file. In my case, it is
+Copy the address from the account. In my case, it is
 
 ```
 0xe16f6abdd5815f3d24b4e5c29138f863933b000a
@@ -756,8 +607,9 @@ Now I have 0.05 RBTC!
 To check balance again, run this command in the Hardhat console:
 
 ```javascript
-const balance = await ethers.provider.getBalance(accounts[0])
-console.log(ethers.utils.formatEther(balance))
+const address = '0xe16f6abdd5815f3d24b4e5c29138f863933b000a';
+const balance = await ethers.provider.getBalance(address);
+console.log(ethers.formatEther(balance));
 ```
 
 ![getBalance accounts 0 again](/assets/img/tutorials/setup-truffle-oz/image-41.png)
@@ -766,12 +618,9 @@ Great! Now I have 50000000000000000, which means that I have 0.05 tRBTC with 18 
 
 # Where to go from here
 
-At this point, we have installed all requirements and created a project using Hardhat framework and Open Zeppelin smart contracts library,
-connected to both an RSK local node (Regtest) and the RSK Testnet.
+At this point, we have installed all requirements and created a project using Hardhat framework and Open Zeppelin smart contracts library, connected to both an RSK local node (Regtest) and the RSK Testnet.
 
-We have not developed anything yet,
-but you are now ready to move on to the next tutorials,
-where we will develop some very cool projects!
+We have not developed anything yet, but you are now ready to move on to the next tutorials, where we will develop some very cool projects!
 
 Choose any of these to tutorials to begin:
 
