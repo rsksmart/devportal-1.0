@@ -377,6 +377,16 @@ Note:
 
 After installing your dependencies, open your `package.json` file to verify the installations. You should see `@openzeppelin/contracts` and the Hardhat-related packages listed under `dependencies` or `devDependencies`.
 
+### Executing the Project's Test Suite
+
+To verify the contract's functionality using the internal Hardhat network, execute the following command:
+
+```shell
+npx hardhat test
+```
+
+This command initiates the testing process, leveraging the Hardhat framework to compile your contracts and deploy them onto the internal network. Subsequently, it runs the test suite defined within your project, ensuring the integrity and functionality of your smart contracts.
+
 # Configure Hardhat to connect to RSK networks
 
 ## Connect to RSK Regtest (local node)
@@ -469,32 +479,32 @@ npx hardhat console --network rskRegtest
 
 This command starts an interactive session where you can execute commands and interact with your smart contracts deployed on the RSK Testnet. Here are a few examples of what you can do within the Hardhat console:
 
-<!-- TODO Run tests locally -->
-
-<!-- ```javascript
+```javascript
 const Lock = await ethers.getContractFactory("Lock");
 const JAN_1ST_2030 = 1893456000;
 const ONE_GWEI = 1_000_000_000n;
-const greeter = await Lock.deploy("Hello, Hardhat!");
-await greeter.deployed();
-console.log("Greeter deployed to:", greeter.address);
+const lock = await Lock.deploy(JAN_1ST_2030);
+const lock_address = await lock.getAddress();
+console.log("Lock deployed to:", lock_address);
 ```
 
 Interact with a deployed contract:
 
 ```javascript
-const greeter = await ethers.getContractAt("Greeter", "YOUR_DEPLOYED_CONTRACT_ADDRESS");
-const greeting = await greeter.greet();
-console.log(greeting);
+const lock_contract = await ethers.getContractAt("Lock", "REPLACE_WITH_CONTRACT_ADDRESS");
+const tx = await lock_contract.withdraw();
+result = tx.wait();
 ```
+
+The result of this transaction is an error message containing 'Error: transaction execution reverted'. This is an expected behavior, the contract has a time lock in order to allow withdrawing the funds deposited..
 
 Send transactions and query balances:
 
 ```javascript
 const [owner] = await ethers.getSigners();
-const balance = await owner.getBalance();
-console.log("Balance:", balance.toString());
-``` -->
+const balance = await ethers.provider.getBalance(owner.address);
+console.log("Address: ", owner.address, "Balance: ", ethers.formatEther(balance));
+```
 
 Thus far we have only connected to a blockchain that runs using just 1 node, that runs on your own computer.
 
