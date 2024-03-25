@@ -5,5 +5,4 @@ tags: chainlink, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, sma
 layout: 'rsk'
 ---
 
-> **Important Notice:** Chainlink is deprecated on Rootstock.
 
