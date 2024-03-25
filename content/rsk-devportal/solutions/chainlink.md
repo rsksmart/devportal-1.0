@@ -7,4 +7,3 @@ layout: 'rsk'
 
 > **Important Notice:** Chainlink is deprecated on Rootstock.
 
-> Rootstock is committed to staying at the forefront of decentralized solutions and interoperability features.
