@@ -1,9 +1,9 @@
 ---
 menu_order: 1200
 menu_title: Tenderly
-title: 'Tenderly - Solutions on RSK'
+title: 'Tenderly - Solutions on Rootstock'
 description: 'Real-time monitoring, alerting and troubleshooting for Smart Contracts.'
-tags: tenderly, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts
+tags: tenderly, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts, rootstock
 layout: 'rsk'
 ---
 
@@ -11,16 +11,16 @@ layout: 'rsk'
 
 [Tenderly](https://tenderly.co/) helps developers build, monitor, and improve smart contracts by providing a set of tools to boost productivity, save time, and ensure smart contracts are working as expected.
 
-## How Tenderly integrates with RSK
+## How Tenderly integrates with Rootstock
 
 Check out the knowledge base article on
-[how to build on Tenderly with RSK.](/kb/build-with-tenderly/)
+[how to build on Tenderly with Rootstock.](/kb/build-with-tenderly/)
 
-![Tenderly-RSK-Integrations](/assets/img/solutions/Tenderly/Tenderly-RSK-Integrations.jpg)
+![Tenderly-Rootstock-Integrations](/assets/img/solutions/Tenderly/Tenderly-RSK-Integrations.jpg)
 
 ## About Tenderly
 
-Tenderly is a monitoring, debugging and data platform for RSK and other Ethereum-compatible blockchain networks. It empowers blockchain teams and individuals by providing a powerful Debugger, intuitive Gas Profiler, Transaction Simulations, Monitoring and Alerting capabilities, Advanced Analytics and so much more.
+Tenderly is a monitoring, debugging and data platform for Rootstock and other Ethereum-compatible blockchain networks. It empowers blockchain teams and individuals by providing a powerful Debugger, intuitive Gas Profiler, Transaction Simulations, Monitoring and Alerting capabilities, Advanced Analytics and so much more.
 
 ### Why use Tenderly?
 

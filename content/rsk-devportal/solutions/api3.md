@@ -1,10 +1,10 @@
 ---
 menu_order: 1900
 menu_title: API3
-title: 'API3 - Solutions on RSK'
+title: 'API3 - Solutions on Rootstock'
 description: 'Connect Smart Contracts to Real-World Data.'
 render_features: 'tables-with-borders'
-tags: API3, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles
+tags: API3, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles, rootstock
 layout: 'rsk'
 ---
 
@@ -111,8 +111,8 @@ The `_rrpAddress` is the main `airnodeRrpAddress`. The RRP Contracts have alread
 
 |         Contract         |                     Addresses                    |
 |:------------------------:|:------------------------------------------------:|
-| `AirnodeRrpV0` on RSK Mainnet |   `0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd`    |
-| `AirnodeRrpV0` on RSK Testnet |   `0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd`    |
+| `AirnodeRrpV0` on Rootstock Mainnet |   `0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd`    |
+| `AirnodeRrpV0` on Rootstock Testnet |   `0xa0AD79D995DdeeB18a14eAef56A549A04e3Aa1Bd`    |
 
 
 ### Request parameters

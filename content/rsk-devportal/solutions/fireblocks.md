@@ -1,9 +1,9 @@
 ---
 menu_order: 2000
 menu_title: Fireblocks
-title: 'Fireblocks - Solutions on RSK'
+title: 'Fireblocks - Solutions on Rootstock'
 description: 'Fireblocks is an enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.'
-tags: Fireblocks, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, crypto, smart-contracts, digital-assets
+tags: Fireblocks, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, crypto, smart-contracts, digital-assets, rootstock
 layout: 'rsk'
 ---
 
@@ -21,7 +21,7 @@ Fireblocks enables exchanges, custodians, banks, trading desks, and hedge funds 
 
 ## About Fireblocks
 
-The Fireblocks platform supports growing demand from the world’s leading banks and traditional FIs who have turned their attention to digital assets on RSK and other blockchain networks. As the future of digital assets goes beyond bitcoin, the Fireblocks platform is ready to support the next generation of digital asset businesses, including everything from payments and settlement solutions to digital securities, gaming, and NFTs.
+The Fireblocks platform supports growing demand from the world’s leading banks and traditional FIs who have turned their attention to digital assets on Rootstock and other blockchain networks. As the future of digital assets goes beyond bitcoin, the Fireblocks platform is ready to support the next generation of digital asset businesses, including everything from payments and settlement solutions to digital securities, gaming, and NFTs.
 
 More than 750 digital asset businesses use Fireblocks software and APIs to custody, manage treasury operations, access DeFi, mint & burn tokens, and manage their digital asset operations.
 
@@ -45,7 +45,7 @@ More than 750 digital asset businesses use Fireblocks software and APIs to custo
 
 ### Reference Docs
 
-- [API Docs](https://docs.fireblocks.com/api/#introduction)
+- [API Docs](https://developers.fireblocks.com/)
 
 ### Conceptual Docs
 
@@ -64,5 +64,5 @@ If you have any technical issues, visit: [https://support.fireblocks.io/](https:
 ### Socials
 
 - [Twitter](https://twitter.com/FireblocksHQ)
-- [LinkedIn](https://www.linkedin.com/company/fireblocks) 
+- [LinkedIn](https://www.linkedin.com/company/fireblocks)
 - [Youtube](https://www.youtube.com/c/Fireblocks/featured)

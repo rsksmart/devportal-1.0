@@ -1,9 +1,9 @@
 ---
 menu_order: 1700
 menu_title: BabelFish
-title: 'BabelFish - Solutions on RSK'
+title: 'BabelFish - Solutions on Rootstock'
 description: 'BabelFish mind-boggling objective is to aggregate stablecoins, enhance multi-chain flow and accelerate hyperBitcoinization.'
-tags: babelfish, rsk-solutions, rsk, token, defi, dApps, blockchain, smart-contracts, stablecoins, bitcoin
+tags: babelfish, rsk-solutions, rsk, token, defi, dApps, blockchain, smart-contracts, stablecoins, bitcoin, rootstock
 layout: 'rsk'
 ---
 
@@ -17,9 +17,9 @@ The objective of [BabelFish](https://babelfish.money/) is to aggregate **stablec
   <iframe width="949" height="534" src="https://youtube.com/embed/SyR8BnvwsWc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## How BabelFish integrates with RSK
+## How BabelFish integrates with Rootstock
   
- ![BabelFish-RSK-Integrations](/assets/img/solutions/babelfish/babelfish-integration.png)
+ ![BabelFish-Rootstock-Integrations](/assets/img/solutions/babelfish/babelfish-integration.png)
 
 ## About BabelFish
 

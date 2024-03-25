@@ -1,14 +1,14 @@
 ---
 menu_order: 900
 menu_title: Liquality
-title: "Liquality - Solutions on RSK"
+title: "Liquality - Solutions on Rootstock"
 description: "The Liquality Wallet is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications. This MetaMask alternative supports multiple blockchains and provides the easiest way to flip between BTC, ETH, ERC20s, and RSK tokens with built-in one-click atomic swaps."
-tags: liquality, metamask, wallet, swap, rsk-solutions, rsk
+tags: liquality, metamask, wallet, swap, rsk-solutions, rsk, rootstock
 render_features: 'tables-with-borders'
 layout: "rsk"
 ---
 
-The Liquality Wallet is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications. This MetaMask alternative supports multiple blockchains and provides the easiest way to flip between BTC, ETH/ERC20s, and RSK tokens with built-in one-click atomic swaps.
+The Liquality Wallet is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications. This MetaMask alternative supports multiple blockchains and provides the easiest way to flip between BTC, ETH/ERC20s, and Rootstock tokens with built-in one-click atomic swaps.
 
 ![Liquality-banner-image](/assets/img/solutions/Liquality/Market-Swaps-Scene.png)
 
@@ -26,9 +26,9 @@ The Liquality Wallet is the simplest way to store and atomic swap your crypto ac
 
 - [Download liquality on Web](https://chrome.google.com/webstore/detail/liquality-wallet/kpfopkelmapcoipemfendmdcghnegimn)
 
-## Integration with RSK
+## Integration with Rootstock
 
-![Liquality-RSK-Integration](/assets/img/solutions/Liquality/liquality-diagram.png)
+![Liquality-Rootstock-Integration](/assets/img/solutions/Liquality/liquality-diagram.png)
 
 ## Supported Token Standards
 
@@ -62,23 +62,23 @@ The Liquality Wallet is the simplest way to store and atomic swap your crypto ac
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](/rsk/rbtc/) | Rootstock |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
-| [RDOC](https://explorer.rsk.co/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://moneyonchain.com/rif-dollar/) | ERC20 | RSK |
-| [DOC](https://explorer.rsk.co/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555) | [Dollar On Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | RSK |
+| [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock |
+| [RDOC](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://rifonchain.com/) | ERC20 | Rootstock |
+| [DOC](https://explorer.rootstock.io/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555) | [Dollar On Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | Rootstock |
 
 ### Non-token financial assets
 
 | Symbol | Name | Network |
 | --- | --- | --- |
-| [BPRO](https://explorer.rsk.co/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | RSK
-| [RIFP](https://explorer.rsk.co/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61) | [RIFPro](https://rif.moneyonchain.com/metrics) | RSK
+| [BPRO](https://explorer.rootstock.io/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | Rootstock
+| [RIFP](https://explorer.rootstock.io/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61) | [RIFPro](https://rif.moneyonchain.com/metrics) | Rootstock
 
 ## Get in touch
 

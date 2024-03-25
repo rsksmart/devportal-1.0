@@ -1,9 +1,9 @@
 ---
 menu_order: 400
 menu_title: Oracle Money on Chain
-title: 'Oracle Money on Chain - Solutions on RSK'
+title: 'Oracle Money on Chain - Solutions on Rootstock'
 description: 'Oracle Money On Chain - DeFi for Bitcoin'
-tags: OMOC, rsk-solutions, rsk, stablecoin, bitcoin, defi, MOC
+tags: OMOC, rsk-solutions, rsk, stablecoin, bitcoin, defi, MOC, rootstock
 layout: 'rsk'
 ---
 
@@ -11,12 +11,12 @@ layout: 'rsk'
 
 The Oracle Money on Chain (oMoC) protocol queries price pairs data from crypto exchanges and sends them into a smart contract on the blockchain. This way, the reported prices becomes available for other smart contracts. Normally, Oracles are centralized services causing the risks of any centralized architecture, i.e. being prone to single point of failure and to malicious behaviour. The Money on Chain (MOC) approach circumvents these problems through a decentralized price calculation by opening the possibility to any player to run an Oracle and participate in a consensus protocol for price feed publication. 
 
-**How Oracle Money on Chain integrates with RSK**
+**How Oracle Money on Chain integrates with Rootstock**
 
 The entire architecture is composed of three components:
 
 1. **Smart Contracts (Oracle System):** The onchain Oracle system consists of the smart contracts with their functionalities as described above. Smart contracts interact amongst themselves and can be manipulated from the Oracle server and the DApp. 
-2. **Oracle Server and Oracle Network:** The oracle server has an address in the RSK network and an HTTP address. The server communicates with the other Oracles to achieve consensus off-chain in the Oracle network and sends the price feed to the blockchain. 
+2. **Oracle Server and Oracle Network:** The oracle server has an address in the Rootstock network and an HTTP address. The server communicates with the other Oracles to achieve consensus off-chain in the Oracle network and sends the price feed to the blockchain. 
 3. **DApp:** This is the website which allows users to interact with the blockchain. Namely, Supporters and Oracles can register using this tool and can stake their MoC tokens.
 
 ![oracle-money-on-chain-rsk-integration-diagram](/assets/img/solutions/oraclemoneyonchain/omoc_model-100.jpg)
@@ -47,7 +47,7 @@ Oracles report the current RBTC/USD and RIF/BTC price taken from various cryptoc
 
 **Registration**
 
-Oracles must register as such by publishing their public address on the RSK network. Moreover, in order to be considered as an Oracle, the user must lock a minimum amount of stake. Oracles also must subscribe for each coin pair, e.g. RBTC/USD or RIF/BTC, separately to be considered in the selection for the next publishing round of these price pairs.
+Oracles must register as such by publishing their public address on the Rootstock network. Moreover, in order to be considered as an Oracle, the user must lock a minimum amount of stake. Oracles also must subscribe for each coin pair, e.g. RBTC/USD or RIF/BTC, separately to be considered in the selection for the next publishing round of these price pairs.
 Oracles who want to withdraw their locked stake, must first be inactive for one round by unsubscribing from all coin pairs. Once successfully unsubscribed, the same withdrawal rules  as for Supporters apply to them.
 
 **Rounds & Scheduler**

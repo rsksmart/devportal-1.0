@@ -1,9 +1,9 @@
 ---
 menu_order: 600
 menu_title: Math Wallet
-title: 'Math Wallet - Solutions on RSK'
+title: 'Math Wallet - Solutions on Rootstock'
 description: 'CryptoWallet for 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi.'
-tags: Math Wallet, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet
+tags: Math Wallet, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, rootstock
 render_features: 'tables-with-borders'
 layout: 'rsk'
 ---
@@ -12,11 +12,11 @@ layout: 'rsk'
 
 ## Description
 
-Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi. It's currently supported networks include: RSK, ETH, Polkadot, Near, Solana, Binance Smart Chain, Filecoin, EOS, TRON, Binance, cosmos, Irisnet, Ontology, Kulupu, chainX, Kusama, Edgeware, EOS Force, Enigma, Secret network, Nervos, vechain, FTchain, Harmony, Vapor, Zilliqa, YAS, Enumivo, BOS, Telos, NEO, Nebulas, ESN.
+Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi. It's currently supported networks include: Rootstock, ETH, Polkadot, Near, Solana, Binance Smart Chain, Filecoin, EOS, TRON, Binance, cosmos, Irisnet, Ontology, Kulupu, chainX, Kusama, Edgeware, EOS Force, Enigma, Secret network, Nervos, vechain, FTchain, Harmony, Vapor, Zilliqa, YAS, Enumivo, BOS, Telos, NEO, Nebulas, ESN.
 
-## How Math Wallet integrates with RSK
+## How Math Wallet integrates with Rootstock
 
-![MathWallet-RSK-Integrations](/assets/img/solutions/MathWallet/math-wallet-diagram.png)
+![MathWallet-Rootstock-Integrations](/assets/img/solutions/MathWallet/math-wallet-diagram.png)
 
 ### Useful links
 
@@ -33,16 +33,16 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](/rsk/rbtc/) | Rootstock |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK
-| [RDOC](https://explorer.rsk.co/address/0x2d919f19D4892381d58EdEbEcA66D5642ceF1A1F) | [RIF Dollar On Chain](https://rif.moneyonchain.com) | ERC20 | RSK
-| [RIFP](https://explorer.rsk.co/address/0xF4d27C56595eD59B66cC7f03CFF5193E4Bd74a61) | [RIFPro](https://rif.moneyonchain.com) | ERC20 | RSK
+| [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock
+| [RDOC](https://explorer.rootstock.io/address/0x2d919f19D4892381d58EdEbEcA66D5642ceF1A1F) | [RIF Dollar On Chain](https://rifonchainootstock.io) | ERC20 | Rootstock
+| [RIFP](https://explorer.rootstock.io/address/0xF4d27C56595eD59B66cC7f03CFF5193E4Bd74a61) | [RIFPro](https://rif.moneyonchain.com) | ERC20 | Rootstock
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/ ) | ERC20 | Ethereum
 | [UNI](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984) | [Uniswap](https://uniswap.org/) | ERC20 | Ethereum
 | [USDT](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) | [Tether USD](https://tether.to/)  | ERC20 | Ethereum
@@ -54,7 +54,7 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 
 ### Guides
 
-- [RSK Chrome Extension Wallet User Guide](https://blog.mathwallet.org/?p=1705)
+- [Rootstock Chrome Extension Wallet User Guide](https://blog.mathwallet.org/?p=1705)
 
 ### Get in touch
 

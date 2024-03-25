@@ -2,16 +2,16 @@
 menu_order: 1100
 menu_title: Edge
 layout: 'rsk'
-title: 'Edge Wallet - Solutions on RSK'
+title: 'Edge Wallet - Solutions on Rootstock'
 description: 'Edge is a powerful and easy to use cryptocurrency wallet that allows users to easily control their own private keys with the familiarity and ease of mobile banking.'
-tags: Edge Wallet, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet
+tags: Edge Wallet, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, rootstock
 render_features: 'tables-with-borders'
 ---
 
 Edge is a powerful and easy to use cryptocurrency wallet that allows users to easily control their own private keys with the familiarity and ease of mobile banking. Edge provides maximum security while keeping simplicity, allowing all types of users to easily manage, transfer & exchange their currencies.
 
 
-Edge currently supports: RSK, Bitcoin, Ethereum and other cryptocurrencies. Neither Edge or any 3rd party can access your money or data. You get the financial privacy and autonomy that blockchain was designed for right at your fingertips.
+Edge currently supports: Rootstock, Bitcoin, Ethereum and other cryptocurrencies. Neither Edge or any 3rd party can access your money or data. You get the financial privacy and autonomy that blockchain was designed for right at your fingertips.
 
 ## How Edge Wallet Works
 
@@ -21,9 +21,9 @@ Watch this short explainer video:
   <iframe width="949" height="534" src="https://youtube.com/embed/5VDmSmgeqj8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## How Edge Wallet integrates with RSK
+## How Edge Wallet integrates with Rootstock
 
-![EdgeWallet-RSK-Integrations](/assets/img/solutions/edge/Edge-RSK.jpg)
+![EdgeWallet-Rootstock-Integrations](/assets/img/solutions/edge/Edge-RSK.jpg)
 
 ### Supported Token Standards
 
@@ -115,14 +115,14 @@ Watch this short explainer video:
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](/rsk/rbtc/) | Rootstock |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
+| [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock |
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/ ) | ERC20 | Ethereum |
 | [USDT](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) | [Tether USD](https://tether.to/)  | ERC20 | Ethereum |
 | [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) | [USD Coin](https://www.centre.io/)  | ERC20 | Ethereum |

@@ -1,24 +1,24 @@
 ---
 menu_order: 800
 menu_title: D'Cent
-title: 'DCent - Solutions on RSK'
+title: 'DCent - Solutions on Rootstock'
 description: 'D’CENT Wallet is a new generation of über convenient, biometrically-powered cold storage tools that literally put the management of precious digital assets at your fingertips.'
-tags: DCent, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet
+tags: DCent, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, rootstock
 render_features: 'tables-with-borders'
 layout: 'rsk'
 ---
 
-**D’CENT** wallet is a new generation of über convenient, biometrically-powered cold storage tools that literally put the management of precious digital assets at your fingertips. D’CENT wallet has been a part of the RSK ecosystem since Q4 2018, working closely with RIF.
+**D’CENT** wallet is a new generation of über convenient, biometrically-powered cold storage tools that literally put the management of precious digital assets at your fingertips. D’CENT wallet has been a part of the Rootstock ecosystem since Q4 2018, working closely with RIF.
 
 
 ![DCent Wallet- BannerImage](/assets/img/solutions/DCentWallet/DCent_BannerImage.jpg)
 
 
-On top of managing RBTC/RIF using D’CENT's hardware wallet, D’CENT brings new features which support the RSK network based DApps through D’CENT Mobile App. Users can access DApp sites from the DApp browser in the Discovery tab of the D’CENT Mobile App, or by connecting the desired services through WalletConnect.
+On top of managing RBTC/RIF using D’CENT's hardware wallet, D’CENT brings new features which support the Rootstock network based DApps through D’CENT Mobile App. Users can access DApp sites from the DApp browser in the Discovery tab of the D’CENT Mobile App, or by connecting the desired services through WalletConnect.
 
-## How D'Cent Wallet integrates with RSK
+## How D'Cent Wallet integrates with Rootstock
 
-![DCentWallet-RSK-Integrations](/assets/img/solutions/DCentWallet/dcent-diagram.png)
+![DCentWallet-Rootstock-Integrations](/assets/img/solutions/DCentWallet/dcent-diagram.png)
 
 ## How D'Cent Wallet Works
 
@@ -60,7 +60,7 @@ Visit the links below to download D'Cent Wallet.
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](/rsk/rbtc/) | Rootstock |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 | XRP | [Ripple](https://ripple.com/xrp/) | Ripple |
 | LTC | [Litecoin](https://litecoin.com/en/) | Litecoin |
@@ -73,18 +73,18 @@ Visit the links below to download D'Cent Wallet.
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
-| [RDOC](https://explorer.rsk.co/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://moneyonchain.com/rif-dollar/) | ERC20 | RSK |
-| [DOC](https://explorer.rsk.co/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555) | [Dollar On Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | RSK |
-| [rDAI](https://explorer.rsk.co/address/0x6b1a73d547f4009a26b8485b63d7015d248ad406) | [Redeemable DAI](https://rdai.money/) | ERC20 | RSK |
+| [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock |
+| [RDOC](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://rifonchain.com/) | ERC20 | Rootstock |
+| [DOC](https://explorer.rootstock.io/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555) | [Dollar On Chain](https://moneyonchain.com/doc-stablecoin/) | ERC20 | Rootstock |
+| [rDAI](https://explorer.rootstock.io/address/0x6b1a73d547f4009a26b8485b63d7015d248ad406) | [Redeemable DAI](https://rdai.money/) | ERC20 | Rootstock |
 | [rDAI](https://etherscan.io/token/0x261b45d85ccfeabb11f022eba346ee8d1cd488c0) | [Redeemable DAI](https://rdai.money/) | ERC20 | Ethereum |
 
 ### Non-token financial assets
 
 | Symbol | Name | Network
 | --- | --- | --- |
-| [BPRO](https://explorer.rsk.co/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | RSK
-| [RIFP](https://explorer.rsk.co/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61) | [RIFPro](https://rif.moneyonchain.com/metrics) | RSK
+| [BPRO](https://explorer.rootstock.io/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-token/) | Rootstock
+| [RIFP](https://explorer.rootstock.io/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61) | [RIFPro](https://rif.moneyonchain.com/metrics) | Rootstock
 
 ## Get in touch
 

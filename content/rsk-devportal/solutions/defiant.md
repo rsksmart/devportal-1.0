@@ -1,15 +1,15 @@
 ---
 menu_order: 100
 menu_title: Defiant
-title: "Defiant - Solutions on RSK"
+title: "Defiant - Solutions on Rootstock"
 description: "Defiant is the first mobile platform and P2P marketplace for stablecoins"
-tags: defiant, rsk-solutions, rsk
+tags: defiant, rsk-solutions, rsk, rootstock
 render_features: 'tables-with-borders'
 layout: "rsk"
 ---
 
 **Defiant** is the first mobile platform and P2P marketplace for stablecoins.
-The service allows the exchange of cryptocurrencies from the Bitcoin, RSK and Ethereum ecosystem, using geolocation.
+The service allows the exchange of cryptocurrencies from the Bitcoin, Rootstock and Ethereum ecosystem, using geolocation.
 You can store, send and exchange crypto in an agile and secure way, without intermediaries.
 
 > This page is available in: [English](/solutions/defiant/) | [Tagalog (🇵🇭)](/solutions/defiant/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/defiant/bahasa)
@@ -38,11 +38,11 @@ Watch these short explainer videos:
 - [English](https://defiantapp.tech/wp-content/uploads/2020/08/android_eng.pdf)
 - [Español](https://defiantapp.tech/wp-content/uploads/2020/07/Guia-Defiant-Android.pdf )
 
-## Integration with RSK
+## Integration with Rootstock
 
 ![Defiant RSK Integration](/assets/img/solutions/defiant/defiant-rsk.png)
 
-You can access cryptocurrencies and tokens on the RSK network,
+You can access cryptocurrencies and tokens on the Rootstock network,
 using local currencies in several Latin American countries,
 through [Defiant's integration with Kripton Market](/solutions/kriptonmarket/#integration-with-rsk)!
 
@@ -50,7 +50,7 @@ through [Defiant's integration with Kripton Market](/solutions/kriptonmarket/#in
 
 ## Defiant's main characteristics
 
-- **Compatibility**: First wallet working for Bitcoin, RSK, and Ethereum.
+- **Compatibility**: First wallet working for Bitcoin, Rootstock, and Ethereum.
 - **Non-custodial**: Nobody has access to your crypto except you. You can take them wherever you want, whenever you want.
 - **P2P Market**: You can exchange crypto, peer to peer, within the app without intermediaries.
 - **Stable Coins**: You can store cryptocurrencies in parity with the dollar, such as Dollar on Chain (DOC) and DAI.
@@ -74,26 +74,26 @@ Defiant is your door into this new world and the new ones to come.
 | Symbol | Name | Network |
 | --- | --- | --- |
 | BTC | [Bitcoin](https://bitcoin.org/bitcoin.pdf) | Bitcoin |
-| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | RSK |
+| RBTC | [Smart Bitcoin](https://developers.rsk.co/rsk/rbtc/) | Rootstock |
 | ETH | [Ether](https://ethereum.org/en/eth/) | Ethereum |
 
 ### Fungible tokens
 
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
-| [RIF](https://explorer.rsk.co/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | RSK |
-| [DOC](https://explorer.rsk.co/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db) | [Dollar on Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | RSK |
-| [BPRO](https://explorer.rsk.co/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | ERC20 | RSK |
-| [RDOC](https://explorer.rsk.co/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar on Chain](https://rif.moneyonchain.com/metrics) | ERC20 | RSK |
-| [RIFP](https://explorer.rsk.co/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61) | [RIFPro](https://rif.moneyonchain.com/metrics) | ERC20 | RSK |
+| [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | Rootstock |
+| [DOC](https://explorer.rootstock.io/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db) | [Dollar on Chain](https://moneyonchain.com/doc-stablecoin/) | ERC20 | Rootstock |
+| [BPRO](https://explorer.rootstock.io/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-token/) | ERC20 | Rootstock |
+| [RDOC](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar on Chain](https://rif.moneyonchain.com/metrics) | ERC20 | Rootstock |
+| [RIFP](https://explorer.rootstock.io/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61) | [RIFPro](https://rif.moneyonchain.com/metrics) | ERC20 | Rootstock |
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/) | ERC20 | Ethereum |
 
 ### Non-token financial assets
 
 | Symbol | Name | Network |
 | --- | --- | --- |
-| [BTCX](https://explorer.rsk.co/address/0xf773b590af754d597770937fa8ea7abdf2668370) | [BTCX](https://moneyonchain.com/btcx-leveraged-bitcoin/) | RSK |
-| [RIFX](https://explorer.rsk.co/address/0xcff3fcaec2352c672c38d77cb1a064b7d50ce7e1) | [RIFX](https://rif.moneyonchain.com/metrics) | RSK |
+| [BTCX](https://explorer.rootstock.io/address/0xf773b590af754d597770937fa8ea7abdf2668370) | [BTCX](https://moneyonchain.com/) | Rootstock |
+| [RIFX](https://explorer.rootstock.io/address/0xcff3fcaec2352c672c38d77cb1a064b7d50ce7e1) | [RIFX](https://rif.moneyonchain.com/metrics) | Rootstock |
 
 ## How to get in touch with Defiant
 
