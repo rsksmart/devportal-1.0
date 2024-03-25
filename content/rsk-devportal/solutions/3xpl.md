@@ -1,5 +1,5 @@
 ---
-menu_order: 2000
+menu_order: 1900
 menu_title: 3xpl
 title: '3xpl - Solutions on Rootstock'
 description: 'Connect 3xpl with Rootstock'

@@ -3,7 +3,7 @@ menu_order: 2000
 menu_title: Envio
 title: 'Envio - Solutions on Rootstock'
 description: 'Connect Envio with Rootstock'
-tags: envio, 3xplor3r, explorer, rootstock, tutorial,blockchain
+tags: envio, rootstock, tutorial,blockchain
 layout: 'rsk'
 ---
 

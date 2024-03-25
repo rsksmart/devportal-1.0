@@ -9,8 +9,7 @@ tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, netwo
 menu_order: 7
 ---
 
-Check out the many ways IOV Labs partners leverage the Rootstock and RIF
-platforms and APIs to create innovative experiences.
+Check out the many ways IOV Labs partners leverage the Rootstock and RIF platforms and APIs to create innovative experiences.
 
 <div class="row features-list">
     <li class="col-xl-6 col-md-6">
