@@ -13,39 +13,39 @@ This process will confirm that your local node is operational and allow you to i
 ### Installing Rootstock Node
 [](#top "collapsible")
 -  Install Java
-  - First, check if you already have Java installed:
-    ```
-    java -version
-    ```
-  - If you don’t have it installed, go to [Java Download](https://www.java.com/en/download/) to install it:
-  > For Linux and Mac users, install Java using the SDKMAN! 
-  - Open your terminal and enter the following command:
-    ```
-    curl -s "https://get.sdkman.io" | bash
-    ```
-  > This command downloads and runs the SDKMAN installation script.
-  - After installation, you'll need to initialize SDKMAN with the following command:
-    ```
-    source "$HOME/.sdkman/bin/sdkman-init.sh"
-    ```
-  > This command adds SDKMAN to your current shell session.
-  - Install Java using SDKMAN. To install a specific version of Java, use:
-    ```
-    sdk install java 8.0.<version>-<dist>
-    ```
-  > Replace <version> with the update number, and <dist> with the distribution identifier, such as `adoptopenjdk` or any other distribution available through SDKMAN.
-  - If you just want to install the latest version of Java 8, you can use:
-    ```
-    sdk install java 8.0.<dist>
-    ```
-  - If you have multiple versions of Java installed, you can switch between them using:
-    ```
-    sdk use java <version>
-    ```
-  - To see all available Java versions and distributions, use:
-    ```
-    sdk list java
-    ```
+    - First, check if you already have Java installed:
+      ```
+      java -version
+      ```
+    - If you don’t have it installed, go to [Java Download](https://www.java.com/en/download/) to install it:
+    > For Linux and Mac users, install Java using the SDKMAN! 
+    - Open your terminal and enter the following command:
+      ```
+      curl -s "https://get.sdkman.io" | bash
+      ```
+    > This command downloads and runs the SDKMAN installation script.
+    - After installation, you'll need to initialize SDKMAN with the following command:
+      ```
+      source "$HOME/.sdkman/bin/sdkman-init.sh"
+      ```
+    > This command adds SDKMAN to your current shell session.
+    - Install Java using SDKMAN. To install a specific version of Java, use:
+      ```
+      sdk install java 8.0.<version>-<dist>
+      ```
+    > Replace <version> with the update number, and <dist> with the distribution identifier, such as `adoptopenjdk` or any other distribution available through SDKMAN.
+    - If you just want to install the latest version of Java 8, you can use:
+      ```
+      sdk install java 8.0.<dist>
+      ```
+    - If you have multiple versions of Java installed, you can switch between them using:
+      ```
+      sdk use java <version>
+      ```
+    - To see all available Java versions and distributions, use:
+      ```
+      sdk list java
+      ```
 - Installing Rootstock Local Node
   - To install a Rootstock node locally, follow the [full guide on installing RSKj](/rsk/node/install/).
 - Run RSKj
@@ -61,20 +61,20 @@ This process will confirm that your local node is operational and allow you to i
   > Replace <PATH-TO-THE-RSKJ-JAR> with the full path to the JAR file on your computer. Suppose you saved the JAR file at C:\Rootstock\node; the full path will be C:\Rootstock\node\rskj-core-6.0.0-ARROWHEAD-all.jar or similar.
   > **Note**: Do not close this terminal window. If closed, the Rootstock node will stop running.
 -  Check if the node is running using cURL
-  - To confirm that your Rootstock node is now running, open a new terminal window and send the following request to the node's RPC HTTP server:
-  ```
-  curl localhost:4444/1.1.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
-  ```
-  - This should return a response similar to the following:
-  ```
-  {"jsonrpc":"2.0","id":1,"result":"0xfc0"}
-  ```
-  >
-  > The result property in the response is the number of the latest block that has been synced. Note that this value is in hexadecimal, so the output above indicates that the current block number is 4032.
+    - To confirm that your Rootstock node is now running, open a new terminal window and send the following request to the node's RPC HTTP server:
+    ```
+    curl localhost:4444/1.1.0/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+    ```
+    - This should return a response similar to the following:
+    ```
+    {"jsonrpc":"2.0","id":1,"result":"0xfc0"}
+    ```
+    >
+    > The result property in the response is the number of the latest block that has been synced. Note that this value is in hexadecimal, so the output above indicates that the current block number is 4032.
 
 ### Download and Install Geth
 [](#top "collapsible")
-- Download Geth:
+- Download Geth
   - Visit the official Go-Ethereum website: https://geth.ethereum.org/downloads.
   - Select the appropriate download from the Stable Releases section for your operating system (Windows, macOS, Linux).
     > [Fig 2. Geth website UI]
@@ -91,7 +91,7 @@ This process will confirm that your local node is operational and allow you to i
       tar -xvf filename.tar.gz
       ```
     - Move the extracted folder (typically named geth) to a desired location using the mv command. For example,  mv geth /usr/local/bin
-- Verify Installation:
+- Verify Installation
   - Open a new terminal window.
   - Type geth version and press Enter.
   - If the command displays the installed Geth version, the installation was successful.
@@ -106,7 +106,7 @@ This process will confirm that your local node is operational and allow you to i
   > geth attach connects to the Rootstock local node with HTTP-RPC server enabled and listening on port 4444.
 
 
-### Interacting with Your Rootstock Node using Geth
+### Interact with Rootstock Node using Geth
 Once connected to your Rootstock node through Geth, you can explore its functionalities using various commands. Here's a breakdown of some commonly used commands:
 [](#top "collapsible")
 - Checking Node Information
