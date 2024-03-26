@@ -34,7 +34,7 @@ Indexers on Envio can be written in[ JavaScript](https://www.javascript.com/),[ 
 
 ### Envio HyperSync
 
-Envio supports[ HyperSync](https://docs.envio.dev/docs/hypersync) on Rootstock mainnet.
+Envio supports [HyperSync](https://docs.envio.dev/docs/hypersync) on the Rootstock Mainnet.
 
 HyperSync is an accelerated data query layer for the Rootstock blockchain, providing APIs that bypass JSON-RPC for 100x faster syncing of historical data. HyperSync is used by default in Envio's indexing framework, with RPC optional. Using HyperSync, application developers do not need to worry about RPC URLs, rate limits, or managing infrastructure. They can easily sync large datasets in a few minutes, something that would usually take hours or days using RPC.
 
