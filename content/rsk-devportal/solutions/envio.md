@@ -236,7 +236,7 @@ v polygon
 ```
 
 
-The Contract Import process will prompt the user whether they would like to finish the import process or continue adding more addresses for the same contract on the same network, addresses for the same contract on a different network or a different contract.
+The Contract Import process will prompt the user whether they would like to finish the import process or continue adding more addresses for the same contract on the same network, addresses for the same contract on a different network, or a different contract.
 
 For more information on the contract import feature, visit the documentation[ here](https://docs.envio.dev/docs/contract-import).
 
