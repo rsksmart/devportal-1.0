@@ -11,7 +11,13 @@ render_features: 'tables-with-borders'
 
 Here, you can find the JSON-RPC methods supported by Rootstock nodes.
 
-> Request headers must include `"Content-Type: application/json"`
+> Request headers must include `"Content-Type: application/json"`.
+
+## Rootstock RPC API Service
+
+The [RPC API](https://rpc.rootstock.io/) provides a seamless and intuitive web interface for developers to interact with Rootstock nodes via [JSON-RPC methods](#methods).
+
+See [how to get started](/tools/rpc-api/) and make your first API call in minutes.
 
 ## Protocols
 
