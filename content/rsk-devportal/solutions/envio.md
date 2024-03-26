@@ -23,7 +23,7 @@ Envio’s feature-rich indexing solution and data infrastructure provider for fa
 
 ## About Envio
 
-[Envio](https://envio.dev/) is a feature-rich indexing solution that provides developers with a seamless and efficient way to index and aggregate real-time or historical blockchain data for **any EVM,** including Rootstock. The indexed data is easily accessible through custom[ GraphQL](https://graphql.org/) queries, giving developers the flexibility and power to retrieve specific information.
+[Envio](https://envio.dev/) is a feature-rich indexing solution that provides developers with a seamless and efficient way to index and aggregate real-time or historical blockchain data for Rootstock, and **other EVM chains**. The indexed data is easily accessible through custom[ GraphQL](https://graphql.org/) queries, giving developers the flexibility and power to retrieve specific information.
 
 Envio offers native support for Rootstock and has been designed to support high-throughput blockchain applications that rely on real-time data for their business requirements.
 
