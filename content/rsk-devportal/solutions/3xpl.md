@@ -1,10 +1,10 @@
 ---
 menu_order: 2000
 menu_title: 3xpl
-layout: rsk
 title: '3xpl - Solutions on Rootstock'
-tags: tutorial, rootstock
-description: 3xpl, 3xplor3r, explorer, rootstock, blockchain
+description: 'Connect 3xpl to Rootstock.'
+tags: 3xpl, 3xplor3r, explorer, rootstock, blockchain, tutorial, rootstock
+layout: 'rsk'
 ---
 
 3xpl (3xplor3r) is a high-speed, advertisement-free universal blockchain explorer that supports over 40 blockchains including Rootstock tokens (ERC-20, 721, 1155) and .rsk domains. It provides an intuitive block explorer interface suitable for general cryptocurrency users, with the ability to generate PDF transaction receipts and wallet statements.
