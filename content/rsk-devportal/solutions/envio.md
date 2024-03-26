@@ -57,8 +57,10 @@ Envio supports indexing on Rootstock and **any EVM-compatible blockchain**, enab
 
 * Quickstart Templates: Use pre-defined indexing logic for popular OpenZeppelin contracts (e.g. ERC-20).
 
-[Start building on Rootstock](https://envio.dev/app/login)
-
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="https://envio.dev/app/login">Start building on Rootstock</a>
+</div>
 
 ## Getting Started
 
