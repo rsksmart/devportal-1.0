@@ -65,7 +65,6 @@ Envio supports indexing on Rootstock and **any EVM-compatible blockchain**, enab
 Developers can choose whether they want to start from a template (e.g. Blank, ERC-20, etc.), or use the Contract Import feature: 
 
 
-## Installation
 
 
 ### Prerequisites
