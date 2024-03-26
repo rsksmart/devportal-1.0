@@ -67,7 +67,7 @@ By providing a foundational understanding of the Rootstock ecosystem and its com
         <div class="feature-card">
 <div class="content"><a href="/tutorials/ethereum-devs/truffle-test/">
             <div class="content-container">
-               <div class="card-title"><h2 class="zg-text-bg bg-pink">Testing smart contracts using Hardhat</h2><span class="zg-label ml-1 bg-pink">05</span></div> 
+               <div class="card-title"><h2 class="zg-text-bg bg-pink">Testing smart contracts using Hardhat</h2><span class="zg-label ml-1 bg-pink">0</span></div> 
                 <p class="card-desc">Learn how to Test smart contracts using Hardhat.</p>
             </div>
             </a><div class="btn-container"><a href="/tutorials/ethereum-devs/truffle-test/">
