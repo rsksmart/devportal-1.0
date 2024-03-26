@@ -80,7 +80,7 @@ The following are the prerequisite packages required for Envio:
 Docker is required specifically for running the Envio indexer locally.
 
 
-### Install Envio
+### Installation
 
 You can install Envio by running the command below:
 
