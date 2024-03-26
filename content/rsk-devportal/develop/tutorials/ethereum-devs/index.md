@@ -18,14 +18,6 @@ render_features: "custom-terminals"
 
 Smart contracts for RSK are written using Solidity, a programming language similar to JavaScript, and are fully compatible with Ethereum Smart Contracts. This means you can migrate your existing Ethereum Smart Contracts to RSK without modifying the smart contract code. To develop and test your smart contracts on RSK, you can use Hardhat, a development environment that facilitates building, testing, and deploying smart contracts. Hardhat is designed to offer a flexible and powerful framework with advanced features such as console.log debugging, customizable build pipelines, and native TypeScript support.
 
-### Translations
-
-#### Portuguese - Português
-
-Este artigo está disponível em Português: [Migrando dApps do Ethereum para RSK](https://rsk.solange.dev/#/pt/port-ethereum-dapps/readme "Migrando dApps do Ethereum para RSK").
-
-E também fizemos um [webinar](/webinars/202007-006/ "Migrando dApps do Ethereum para RSK")  sobre o assunto, veja o [vídeo](https://youtu.be/-7Oi9_BDr5k)
-
 ### Solidity
 
 New to Solidity? You can learn more using the [Solidity docs](https://solidity.readthedocs.io/).
@@ -50,20 +42,13 @@ Another dependency is NPM, which comes bundled with Node.js. If you need it, go 
 
 Note that NPM is usually installed together with Node.js, so after installing Node.js, there's no need to install it separately.
 
-If you want to have more than one version installed,
-the most fuss-free way to install and manage multiple versions of `node` on your computer is via [nvm](https://github.com/nvm-sh/nvm).
+If you want to have more than one version installed, the most fuss-free way to install and manage multiple versions of `node` on your computer is via [nvm](https://github.com/nvm-sh/nvm).
 
 ### Hardhat Framework
 
 Hardhat is an advanced development environment for Ethereum, designed to help developers manage and automate the task of compiling, deploying, and testing smart contracts. It supports connecting to local and remote networks, making it easy to work with networks like RSK. For more information visit Hardhat's extensive [documentation](https://hardhat.org/docs).
 
 In this tutorial, we'll utilize Hardhat for compiling, testing, and deploying our smart contracts.
-
-To install Hardhat on your local machine, enter the following command in the terminal:
-
-```shell
-npm install --save-dev hardhat
-```
 
 ## Step 1 : Import Existing Code
 
@@ -81,21 +66,19 @@ npm install --save-dev hardhat
 npx hardhat
 ```
 
-When you run `npx hardhat`, select "Create a basic sample project" by following the prompts. This command sets up a Hardhat project with a sample contract, a test file, and a script for deploying the contract.
-
-### Install Ethereum Wallet Provider
-
-To connect to the RSK network, we'll use @nomiclabs/hardhat-ethers and ethers.js libraries, which allow us to interact with Ethereum networks.
-
-```shell
-npm install --save-dev @nomiclabs/hardhat-ethers ethers
-```
+When you run `npx hardhat`, select "Create an empty hardhat.config.js" by following the prompts. This command sets up an empty Hardhat project.
 
 ### Copy Ethereum Contract Code
 
 In this tutorial, we are going to use the token contract code from [Consensys/Token] (https://github.com/ConsenSys/Tokens) as the example.
 
-In the `contracts` folder, create two files named `EIP20.sol` and `EIP20Interface.sol`.
+To create a `contracts` folder for your project, execute the following command in your terminal:
+
+```shell
+mkdir contracts
+```
+
+Create two files named `EIP20.sol` and `EIP20Interface.sol`.
 
 #### EIP20Interface.sol
 
@@ -222,33 +205,36 @@ contract EIP20 is EIP20Interface {
 }
 ```
 
-We also need to create a migration script in the migrations folder: 
-`migrations/2_deploy_tokens.js`
-
-```
-const EIP20 = artifacts.require('./EIP20.sol');
-
-module.exports = (deployer) => {
-  deployer.deploy(EIP20, 10000, 'Simon Bucks', 1, 'SBX');
-};
-```
-
 ## Step 2 : Deploy Solidity Code as RSK Smart Contract
 
 We are going to deploy the example smart contract on to the RSK Testnet.
+
+### Setting Up a New Account with MetaMask
+
+To begin interacting with the network, it's essential to establish an account on the Metamask wallet. Please confirm that the Metamask extension is correctly installed in your browser. Additionally, it's crucial to adopt secure practices for managing your mnemonic phrase. A widely recommended strategy involves utilizing a `.env` file alongside the dotenv package for enhanced security. If you opt for this method, commence by integrating dotenv into your project with the following command:
+
+```shell
+npm install --save-dev dotenv
+```
+
+After installation, generate a `.env` file at your project's root. This file is critical for safeguarding your mnemonic and must be excluded from version control by listing it in your `.gitignore`. Populate the `.env` file with your mnemonic as shown below:
+
+```
+MNEMONIC=your_mnemonic_here
+```
+
+This setup ensures your account's mnemonic is securely stored and managed, paving the way for a seamless interaction with the network through Metamask.
 
 ### Testnet and Faucet
 
 First, we need to obtain an account on RSK Testnet and get some tRBTC from the Testnet faucet.
 
-**Create new Account with MetaMask**
-
 1. Open MetaMask Chrome extension
-1. In the network options, choose `custom RPC`
-1. Enter RSK Testnet as the Network Name
-1. Enter https://public-node.testnet.rsk.co as the RPC URL
-1. Enter RBTC as SymbolPut and Save
-1. Copy the account address
+2. In the network options, choose `custom RPC`
+3. Enter RSK Testnet as the Network Name
+4. Enter https://public-node.testnet.rsk.co as the RPC URL
+5. Enter RBTC as SymbolPut and Save
+6. Copy the account address
 
 <img alt="Configure MetaMask for RSK Testnet" class="port-eth-app-img" src="/assets/img/tutorials/port-ethereum-dapps/metamask-testnet.png">
 
@@ -262,8 +248,7 @@ Enter the account address from MetaMask and wait for several seconds for MetaMas
 
 ### Testnet Explorer
 
-You will be able to check the Testnet's transactions and blocks in real time at 
-[explorer.testnet.rsk.co](https://explorer.testnet.rsk.co/)
+You will be able to check the Testnet's transactions and blocks in real time at [explorer.testnet.rsk.co](https://explorer.testnet.rsk.co/)
 
 ### Fetch the Current Gas Price of Testnet
 
@@ -275,12 +260,18 @@ curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/j
 
 ### Update Hardhat Configuration
 
-Next, you'll adjust your Hardhat setup to dynamically use the fetched gas price for transactions and configure the connection to the RSK testnet. Here's how to do it:
+We will incorporate the `hardhat-toolbox` extension, strategically crafted to significantly boost the efficiency and streamline the processes involved in blockchain development workflows.
 
-1. Modify hardhat.config.js to include the RSK testnet configuration and to automatically use the fetched gas price:
+```shell
+npm i @nomicfoundation/hardhat-toolbox
+```
+
+Next, you'll adjust your Hardhat setup to dynamically use the fetched gas price for transactions and configure the connection to the RSK testnet. Modify hardhat.config.js to include the RSK testnet configuration and to automatically use the fetched gas price:
 
 ```javascript
-require("@nomiclabs/hardhat-ethers");
+require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
+const { MNEMONIC } = process.env;
 const fs = require('fs');
 
 // Load the gas price from the previously saved file
@@ -292,19 +283,17 @@ if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
 console.log("Gas price Testnet: " + gasPriceTestnet);
 
 module.exports = {
-  solidity: "0.4.24",
+  solidity: "0.4.21",
   networks: {
     rskTestnet: {
       url: "https://public-node.testnet.rsk.co/",
-      accounts: {mnemonic: 'your mnemonic here'}, // replace with your mnemonic
+      accounts: { mnemonic: MNEMONIC },
       gasPrice: Math.floor(gasPriceTestnet * 1.1), // Adjusts the gas price
       chainId: 31
     }
   },
 };
 ```
-
-Replace 'your mnemonic here' with your actual mnemonic to ensure proper authorization on the network.
 
 ### Compile and Deploy Contracts
 
@@ -322,7 +311,42 @@ This will process all contracts within your `contracts` directory.
 
 #### Deploy Contracts
 
-Make sure you have a deployment script ready in the `scripts` directory (e.g., `deploy.js`). Execute the script to deploy your contracts to the RSK Testnet by running:
+Create a `scripts` folder at the root of your Hardhat project:
+
+```shell
+mkdir scripts
+```
+
+Inside the `scripts` folder, create a new file named `deploy.js` (or any other name you prefer). This script will manage the deployment of your contracts.
+
+Open `deploy.js` and add the following deployment script. Adjust parameters like initial token amount, name, decimals, and symbol as needed for the EIP20 contract.
+
+```javascript
+// scripts/deploy.js
+async function main() {
+    const [deployer] = await ethers.getSigners();
+    console.log("Deploying contracts with the account:", deployer.address);
+    // Deploy EIP20
+    const EIP20 = await ethers.getContractFactory("EIP20");
+    const eip20 = await EIP20.deploy(
+      10000, // Initial supply
+      "Token Name", // Token name
+      18, // Decimals
+      "TOKEN" // Symbol
+    );
+    await eip20.waitForDeployment();
+    console.log("EIP20 deployed to:", await eip20.getAddress());
+}
+
+main()
+  .then(() => process.exit(0))
+  .catch(error => {
+      console.error(error);
+      process.exit(1);
+  });
+```
+
+Finally, run your deployment script:
 
 ```shell
 npx hardhat run scripts/deploy.js --network rskTestnet
@@ -331,6 +355,7 @@ npx hardhat run scripts/deploy.js --network rskTestnet
 This utilizes the network configuration specified in `hardhat.config.js` to deploy your contracts to the RSK Testnet.
 
 #### Interact with Your Contracts
+
 Hardhat provides a console for interacting with deployed contracts and the blockchain. To open the Hardhat console connected to the RSK Testnet, use:
 
 ```shell
@@ -353,15 +378,9 @@ npx hardhat console --network rskTestnet
 Once inside the console, you can use the following commands to interact with your deployed EIP20 contract. Assume you've deployed your contract and know its address. You'd interact with it as follows (note that you need to replace `contractAddress` with your contract's actual deployed address):
 
 ```javascript
-const contract = await ethers.getContractAt("EIP20", "contractAddress")
-const balance = await contract.balanceOf("0x7073F4af7bcBDd63aCC8Cb1D62877d3c7a96Ef52")
+contract = await ethers.getContractAt("EIP20", "contractAddress") // Replace with contract address
+balance = await contract.balanceOf("deployerAddress") // Replace with deployer address
 console.log(balance.toString())
-```
-
-To convert the balance to a number for easier reading (assuming it's safe to do so without losing precision):
-
-```javascript
-console.log(balance.toNumber())
 ```
 
 **Transfer Tokens Directly Between Two Accounts**
@@ -402,42 +421,46 @@ curl https://public-node.rsk.co/ -X POST -H "Content-Type: application/json" --d
 
 #### Update Hardhat Configuration
 
-In your Hardhat project, update the `hardhat.config.js` file to include the RSK Mainnet configuration. You'll need to adjust the script for fetching the mainnet gas price and include the mainnet configuration in the networks section. Here's how to do it:
-
-1. Add a segment for fetching the Mainnet gas price similar to how you did for Testnet. Ensure you've installed necessary dependencies:
+In your Hardhat project, update the `hardhat.config.js` file to include the RSK Mainnet configuration and adjust the script for fetching the mainnet gas price similar to how you did for Testnet. 
 
 ```javascript
+require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
+const { MNEMONIC } = process.env;
 const fs = require('fs');
 
+// Load the gas price from the previously saved file
 const gasPriceMainnetRaw = fs.readFileSync(".gas-price-mainnet.json").toString().trim();
 const gasPriceMainnet = parseInt(JSON.parse(gasPriceMainnetRaw).result, 16);
 if (typeof gasPriceMainnet !== 'number' || isNaN(gasPriceMainnet)) {
   throw new Error('Unable to retrieve network gas price from .gas-price-mainnet.json');
 }
 console.log("Gas price Mainnet: " + gasPriceMainnet);
-```
-
-2. Add the RSK Mainnet configuration in the networks section of your `hardhat.config.js`:
-
-```javascript
-require("@nomiclabs/hardhat-ethers");
-// ... other requires and configurations
+const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
+const gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
+if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
+  throw new Error('Unable to retrieve network gas price from .gas-price-testnet.json');
+}
+console.log("Gas price Testnet: " + gasPriceTestnet);
 
 module.exports = {
-  solidity: "0.4.24", // Adjust based on your contract's requirements
+  solidity: "0.4.21",
   networks: {
-    // ... other network configurations
     rskMainnet: {
       url: "https://public-node.rsk.co",
-      accounts: {mnemonic: 'your mnemonic here'}, // replace with your mnemonic
+      accounts: { mnemonic: MNEMONIC },
       chainId: 30,
-      gasPrice: Math.floor(gasPriceMainnet * 1.01), // Use the fetched gas price
+      gasPrice: Math.floor(gasPriceMainnet * 1.1), // Adjusts the gas price
     },
+    rskTestnet: {
+      url: "https://public-node.testnet.rsk.co/",
+      accounts: { mnemonic: MNEMONIC },
+      gasPrice: Math.floor(gasPriceTestnet * 1.1), // Adjusts the gas price
+      chainId: 31
+    }
   },
 };
 ```
-
-Make sure to replace 'your mnemonic here' with the mnemonic phrase of the wallet you wish to use for deployment.
 
 #### Mainnet Explorer
 
