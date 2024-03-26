@@ -251,7 +251,7 @@ Click[ here](https://docs.envio.dev/docs/example-uniswap-v3) for Envio Indexer E
 
 Indexing can be a rollercoaster, especially for more complex use cases. Our engineers are available to help you with your data availability needs.
 
-For any technical queries or issues feel free to reach us at <span style="text-decoration:underline;">hello@envio.dev</span>. 
+For any technical queries or issues feel free to reach us at [hello@envio.dev](mailto:hello@envio.dev). 
 
 
 ## Resources
