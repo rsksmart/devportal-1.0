@@ -51,9 +51,9 @@ Envio supports indexing on Rootstock and **any EVM-compatible blockchain**, enab
 
 * [Contract Import](https://docs.envio.dev/docs/contract-import): Autogenerate the key boilerplate for an entire Indexer project off a single or multiple smart contracts. Deploy within minutes.
 * [Multi-chain Support](https://docs.envio.dev/docs/multichain-indexing): Aggregate data across multiple networks into a single database. Query all your data with a unified GraphQL API.
-* [HyperSync](https://docs.envio.dev/docs/overview-hypersync): To ensure blazing-fast retrieval of historical on-chain data and a seamless developer experience, Envio’s HyperSync endpoint allows for 100x faster indexing than standard RPC. \
+* [HyperSync](https://docs.envio.dev/docs/overview-hypersync): To ensure blazing-fast retrieval of historical on-chain data and a seamless developer experience, Envio’s HyperSync endpoint allows for 100x faster indexing than standard RPC.
 
-* [Asynchronous Mode](https://docs.envio.dev/docs/async-mode): Fetch data from off-chain storage such as IPFS or contract state (e.g. smart contract view functions). \
+* [Asynchronous Mode](https://docs.envio.dev/docs/async-mode): Fetch data from off-chain storage such as IPFS or contract state (e.g. smart contract view functions).
 
 * Quickstart Templates: Use pre-defined indexing logic for popular OpenZeppelin contracts (e.g. ERC-20).
 
@@ -244,7 +244,7 @@ For more information on the contract import feature, visit the documentation[ he
 
 ## Envio Indexer Examples
 
-Click[ here](https://docs.envio.dev/docs/example-uniswap-v3) for Envio Indexer Examples.
+Click[here](https://docs.envio.dev/docs/example-uniswap-v3) for Envio Indexer Examples.
 
 
 ## Get in touch
