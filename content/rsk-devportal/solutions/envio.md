@@ -32,7 +32,7 @@ Designed to optimize the developer experience, Envio offers automatic code gener
 Indexers on Envio can be written in[ JavaScript](https://www.javascript.com/),[ TypeScript](https://www.typescriptlang.org/), or[ ReScript](https://rescript-lang.org/).
 
 
-## Envio HyperSync
+### Envio HyperSync
 
 Envio supports[ HyperSync](https://docs.envio.dev/docs/hypersync) on Rootstock mainnet.
 
