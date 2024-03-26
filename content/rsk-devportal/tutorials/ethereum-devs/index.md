@@ -7,9 +7,7 @@ description: "Tutorials for Ethereum developers: Using Geth, Remix, and MetaMask
 
 This guide serves as an invaluable roadmap for Ethereum developers aiming to transition their dApps to the Rootstock (RSK) platform, leveraging Ethereum's smart contract functionalities within the Bitcoin network to enhance scalability and security. 
 
-By providing a foundational understanding of the Rootstock ecosystem and its compatibility tools, the guide equips developers to effectively utilize Rootstock’s offerings, thereby capitalizing on their existing Ethereum development skills. 
-
-This strategic approach not only broadens the utility and reach of their applications but also taps into the robust security features of the Bitcoin network, making it a crucial resource for developers looking to expand their blockchain development repertoire.
+By providing a foundational understanding of the Rootstock ecosystem and its compatibility tools, the guide equips developers to effectively utilize Rootstock’s offerings, thereby capitalizing on their existing Ethereum development skills. This strategic approach not only broadens the utility and reach of their applications but also taps into the robust security features of the Bitcoin network, making it a crucial resource for developers looking to expand their blockchain development repertoire.
 
 <div class="features-list">
     <ul id="card-list" class="row">
