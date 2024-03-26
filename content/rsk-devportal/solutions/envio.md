@@ -7,7 +7,7 @@ tags: envio, explorer, rootstock, blockchain, tutorial, rootstock
 layout: 'rsk'
 ---
 
-**For ecosystem listing:**
+
 
 Envio is a modern, multi-chain EVM blockchain indexing framework speed-optimized for querying real-time and historical data.
 
