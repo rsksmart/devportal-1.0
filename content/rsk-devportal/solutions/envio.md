@@ -29,7 +29,7 @@ Envio offers native support for Rootstock and has been designed to support high-
 
 Designed to optimize the developer experience, Envio offers automatic code generation, flexible language support, quickstart templates, and a reliable, cost-effective hosted service.
 
-Indexers on Envio can be written in[ JavaScript](https://www.javascript.com/),[ TypeScript](https://www.typescriptlang.org/), or[ ReScript](https://rescript-lang.org/).
+Indexers on Envio can be written in [JavaScript](https://www.javascript.com/), [TypeScript](https://www.typescriptlang.org/), or [ReScript](https://rescript-lang.org/).
 
 
 ### Envio HyperSync
