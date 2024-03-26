@@ -59,6 +59,7 @@ This process will confirm that your local node is operational and allow you to i
     java -cp <PATH-TO-THE-RSKJ-JAR>.Start --regtest
   ```
   > Replace <PATH-TO-THE-RSKJ-JAR> with the full path to the JAR file on your computer. Suppose you saved the JAR file at C:\Rootstock\node; the full path will be C:\Rootstock\node\rskj-core-6.0.0-ARROWHEAD-all.jar or similar.
+
   > **Note**: Do not close this terminal window. If closed, the Rootstock node will stop running.
 -  Check if the node is running using cURL
     - To confirm that your Rootstock node is now running, open a new terminal window and send the following request to the node's RPC HTTP server:
@@ -77,7 +78,7 @@ This process will confirm that your local node is operational and allow you to i
 - Download Geth
   - Visit the official Go-Ethereum website: https://geth.ethereum.org/downloads.
   - Select the appropriate download from the Stable Releases section for your operating system (Windows, macOS, Linux).
-    > [Fig 2. Geth website UI]
+    ![Geth Website](/assets/img/kb/port-eth-dapp/geth-interface.png)
 - Install Geth
   - Windows:
     - Double-click the downloaded .exe file.
@@ -95,14 +96,14 @@ This process will confirm that your local node is operational and allow you to i
   - Open a new terminal window.
   - Type geth version and press Enter.
   - If the command displays the installed Geth version, the installation was successful.
-    > [Fig. 3 (Screenshot of terminal running geth version)]
+    ![Running Geth Version](/assets/img/kb/port-eth-dapp/running-geth-version.png)
 - Connect Geth to Roostock Node
   - Ensure your Rootstock node is up and running before connecting with Geth. You can verify this by following the instructions in the previous section on installing and running the node.
   - To connect Geth with your Rootstock local node, launch a new terminal window and run the following command:
     ```
     geth attach http://127.0.0.1:4444
     ```
-  > [Fig. 4 (Screenshot of the terminal after running geth attach)]
+  ![Running Geth Attach](/assets/img/kb/port-eth-dapp/running-geth-attach.png)
   > geth attach connects to the Rootstock local node with HTTP-RPC server enabled and listening on port 4444.
 
 
@@ -116,13 +117,13 @@ Once connected to your Rootstock node through Geth, you can explore its function
   - net.peerCount: This command checks the number of other nodes connected to your local node in the network. Since you're running a local node, this will likely return 0, indicating you're alone on the network.
 - Managing Accounts
   - personal: This command provides information about accounts and available functions on your local node. The example output shows that your pre-configured Rootstock node typically comes with some accounts.
-  >[Fig. 5 (Screenshot of terminal showing result of personal)]
+  ![Result of Personal](/assets/img/kb/port-eth-dapp/result-of-personal.png)
   - personal.listAccounts: This retrieves a list of all account addresses present on your local node. This is similar to running eth.accounts.
   - personal.newAccount("password"): This creates a new account on the node and requires assigning a strong password ("password" is a placeholder, use a complex and unique password you can remember). The command will return the newly created account's address.
 - Checking Account Balances
   - eth.getBalance(accountAddress): This command checks the balance of a specific account. Replace accountAddress with the actual address of the account you want to check. The returned value will be a large number in "wei," the smallest denomination of the currency.
   web3.fromWei(balanceInWei, "ether"): Use this command to convert the balance from wei to a more readable unit like Ether. Replace balanceInWei with the value obtained from eth.getBalance and specify "ether" as the conversion unit.
-  >[Fig. 6 (Screenshot of terminal after running getBalance and fromWei)]
+  ![Result of fromWei](/assets/img/kb/port-eth-dapp/getBalance-fromWei.png)
 - Transferring RBTC
   - eth.sendTransaction({from: senderAddress, to: receiverAddress, value: amountInWei}): This command initiates a transfer of RBTC from one account to another. Replace senderAddress and receiverAddress with the actual addresses of the sending and receiving accounts, respectively. The value parameter specifies the amount of RBTC to transfer, provided in wei.
 - Exploring Commands
