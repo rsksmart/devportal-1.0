@@ -39,13 +39,17 @@ In this guide, you will learn how to create an account and make your first API c
 
 Visit the [Rootstock RPC API](https://rpc.rootstock.io/)
 
-![RPC API Landing Page](/assets/img/tools/rpc-api/01-rpc-api-landing.png)
+<div align="center">
+    <img width="50%" src="/assets/img/tools/rpc-api/01-rpc-api-landing.png" alt="RPC API Landing Page"/>
+</div>
 
 ### Get a FREE account
 
 To create an account, click on _Sign up_
 
-![RPC API Sign Up](/assets/img/tools/rpc-api/02-sign-up.png)
+<div align="center">
+    <img width="50%" src="/assets/img/tools/rpc-api/02-sign-up.png" alt="RPC API Sign Up"/>
+</div>
 
 ### Get an API Key
 
@@ -53,21 +57,29 @@ To get an API key:
 
 Log in to the dashboard, and click on _New API key_:
 
-![Generate an API key](/assets/img/tools/rpc-api/03-generate-new-api-key.png)
+<div align="center">
+    <img width="50%" src="/assets/img/tools/rpc-api/03-generate-new-api-key.png" alt="Generate an API key"/>
+</div>
 
 Choose a name to identify your `apikey`, and the Network (either `Testnet` or `Mainnet`). You can also add a description (optional). Click on **Create**.
 
-![Create API key](/assets/img/tools/rpc-api/04-create-api-key.png)
+<div align="center">
+    <img width="50%" src="/assets/img/tools/rpc-api/04-create-api-key.png" alt="Create API key"/>
+</div>
 
 ### Make first API Call
 
 Click on the newly created `apikey` to get the details:
 
-![Make First API Call](/assets/img/tools/rpc-api/05-make-first-api-call.png)
+<div align="center">
+    <img width="50%" src="/assets/img/tools/rpc-api/05-make-first-api-call.png" alt="Make First API Call">
+</div>
 
 You can make your first api call by using one of the provided examples, or simply by adding a url and `apikey` to your application.
 
-![Make First API Call](/assets/img/tools/rpc-api/06-connect-api.png)
+<div align="center">
+    <img width="50%" src="/assets/img/tools/rpc-api/06-connect-api.png" alt="Connect API"/>
+</div>
 
 #### Example Request
 
@@ -84,7 +96,7 @@ curl --location --request POST 'https://rpc.testnet.rootstock.io/json-rpc/<your-
 
 **Response:**
 
-```text
+```shell
 {"jsonrpc":"2.0","id":0,"result":"0x4b7eca"}
 ```
 
