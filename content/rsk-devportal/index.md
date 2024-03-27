@@ -4,7 +4,7 @@ layout: home
 
 # Welcome to Rootstock
 
-The Developer Portal is the home for Rootstock documentation for developers and end-users. Check out our quickstarts, tutorials, API reference, and code examples.
+The Developer Portal is the home for Rootstock (RSK) documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
 
 <div class="features-list">
     <ul id="card-list" class="row">
@@ -112,7 +112,7 @@ create the new blocks to be added to the blockchain every 10 minutes.
 The more hashing power they provide, the more secure the network is.</p>
   </div>
     <div class="col two-x-card">
-        <div class="header-div"><h2 class="zg-text-bg bg-pink fs-28">Rootstock</h2><span class="ml-1 zg-label bg-pink">Rootstock</span></div>
+        <div class="header-div"><h2 class="zg-text-bg bg-pink fs-28">Rootstock</h2><span class="ml-1 zg-label bg-pink">RSK</span></div>
     <p> Is the first open source smart contract platform that is
 powered by the bitcoin network.
 Rootstock's goal is to add value and functionality to the
