@@ -4,7 +4,7 @@ layout: home
 
 # Welcome to Rootstock
 
-The Developer Portal is the home for Rootstock documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
+The Developer Portal is the home for Rootstock documentation for developers and end-users. Check out our quickstarts, tutorials, API reference, and code examples.
 
 <div class="features-list">
     <ul id="card-list" class="row">
