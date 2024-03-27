@@ -48,7 +48,7 @@ const menu2: NavLink[] = [
   },
   {
     label: 'About RootstockLabs',
-    link: 'https://www.rootstocklabs.com',
+    link: 'https://www.rootstocklabs.com/about-us/',
     external: true,
     subItem: true
   },
