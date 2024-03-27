@@ -86,8 +86,9 @@ Its output is directed to a log file.
 ```shell
 mkdir Register
 cd Register
-npx hardhat init
 npm init -y
+npm install --save-dev hardhat
+npx hardhat init
 ```
 
 If you would like more details about this step, you can see the tutorial previously mentioned:
@@ -105,10 +106,10 @@ code .
 Open `hardhat.config.js` file in your Hardhat project and overwrite it with the following code:
 
 ```javascript
-require("@nomiclabs/hardhat-waffle");
+require("@nomicfoundation/hardhat-toolbox");
 
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.24",
   networks: {
     hardhat: {
       chainId: 33 // This is the RSK regtest chain ID
@@ -129,10 +130,10 @@ Check out the VS Code image:
 
 # Smart contract Register.sol
 
-In your terminal, inside the project folder, create a new file under the `contracts` directory named `Register.sol`. You can use the following command or create the file directly from your text editor:
+Inside the `contracts` folder create a file named `Register.sol`. You can use the following command:
 
 ```shell
-touch contracts/Register.sol
+touch Register.sol
 ```
 Now, open the Register.sol file in your text editor and overwrite it with the following Solidity code:
 
@@ -194,7 +195,7 @@ describe("Register contract", function () {
   it("Should store and retrieve information", async function () {
     const Register = await ethers.getContractFactory("Register");
     const register = await Register.deploy();
-    await register.deployed();
+    await register.waitForDeployment();
 
     // Set information to "RSK"
     await register.setInfo("RSK");
@@ -214,10 +215,10 @@ This test script does the following:
 - The test deploys a new instance of the `Register` contract, then calls the `setInfo` function to store the string "RSK".
 - It retrieves the stored information using `getInfo` and asserts that the stored information is equal to "RSK".
 
-1. To run the tests, use the following command in the terminal:
+To run the tests, use the following command in the terminal:
 
 ```shell
-npx hardhat test
+npx hardhat test register_new.js
 ```
 
 After running this command, you should see output indicating that the test has passed, demonstrating that the smart contract's `setInfo` and `getInfo` functions are working as expected, without having deployed the contract to any blockchain network.
@@ -228,106 +229,47 @@ To deploy your smart contract to the RSK local node using Hardhat, follow these 
 
 ## Create the deployment script
 
-1. In the `scripts` folder of your Hardhat project, create a file named `deploy.js`.
-2. Copy and paste the following deployment script into `deploy.js`:
+1. In the `ignition/modules` folder of your Hardhat project, create a file named `Register.js`.
+2. Copy and paste the following deployment script into `Register.js`:
 
 ```javascript
-async function main() {
-  const [deployer] = await ethers.getSigners();
+const { buildModule } = require("@nomicfoundation/hardhat-ignition/modules");
 
-  console.log("Deploying contracts with the account:", deployer.address);
+module.exports = buildModule("RegisterModule", (m) => {
+  const register = m.contract("Register");
 
-  const Register = await ethers.getContractFactory("Register");
-  const register = await Register.deploy();
-
-  console.log("Register contract deployed to:", register.address);
-}
-
-main()
-  .then(() => process.exit(0))
-  .catch((error) => {
-    console.error(error);
-    process.exit(1);
-  });
+  return { register };
+});
 ```
-
-This script does the following:
-
-- Retrieves the deployer's address from the Hardhat's runtime environment.
-- Uses the `ethers` library, which is automatically available in the Hardhat environment, to get the `Register` contract factory.
-- Deploys the `Register` contract and logs its address to the console.
 
 ## Deploy the contract
 
-1. To deploy the contract to the RSK local node, run the deploy script using Hardhat:
+To deploy the contract to the RSK local node, run the deploy ignition module using:
 
 ```shell
-npx hardhat run scripts/deploy.js --network rskLocal
+npx hardhat ignition deploy ignition/modules/Register.js --network rskLocal
 ```
 
-This command specifies that you want to run the `deploy.js` script on the `rskLocal` network, which you should have defined in your `hardhat.config.js` file.
+This command specifies that you want to run the `Register.js` script on the `rskLocal` network, which you should have defined in your `hardhat.config.js` file.
 
 After running the command, you will see output similar to the following, indicating that your contract has been deployed:
 
 ```
-Deploying contracts with the account: [Deployer's Address]
-Register contract deployed to: [Register Contract Address]
+Hardhat Ignition 🚀
+
+Deploying [ RegisterModule ]
+
+Batch #1
+  Executed RegisterModule#Register
+
+[ RegisterModule ] successfully deployed 🚀
+
+Deployed Addresses
+
+RegisterModule#Register - [Register Contract Address]
 ```
 
 This output confirms that the `Register` contract has been successfully deployed to your local RSK node.
-
-# Testing a deployed smart contract
-
-To test a deployed smart contract using Hardhat, follow these steps:
-
-1. Inside your Hardhat project, ensure you have a test file for the `Register` contract. If not, create a new `test` file in the test folder. You can name it `register_deployed.js` for clarity.
-
-2. Copy and paste the following test code into register_deployed.js:
-
-
-```javascript
-const { expect } = require("chai");
-const { ethers } = require("hardhat");
-
-describe("Register contract", function () {
-  let register;
-  let deployer;
-
-  before(async function () {
-    // Deploy the contract before running tests
-    const Register = await ethers.getContractFactory("Register");
-    register = await Register.deploy();
-    await register.deployed();
-
-    [deployer] = await ethers.getSigners();
-  });
-
-  it("Should store and retrieve information", async function () {
-    // Set information to "RSK"
-    await register.setInfo("RSK");
-    // Get stored information
-    const storedInfo = await register.getInfo();
-
-    expect(storedInfo).to.equal("RSK");
-  });
-});
-```
-
-This test script does the following:
-
-- In the `before` hook, it deploys a new instance of the `Register` contract before the tests are run.
-
-- The `it` function defines a single test, "Should store and retrieve information", which interacts with the deployed contract to test its functionality.
-
-To run this specific test file, use the following command in the terminal:
-
-```shell
-npx hardhat test test/register_deployed.js
-```
-
-This command tells Hardhat to execute only the tests contained in the `register_deployed.js` file.
-
-After running this command, you should see output indicating that the test has passed, which confirms that the deployed `Register` contract's `setInfo` and `getInfo` functions are working as expected.
 
 # Final considerations
 
