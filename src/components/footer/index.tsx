@@ -47,7 +47,7 @@ const menu2: NavLink[] = [
     subItem: true
   },
   {
-    label: 'About Rootstock Labs',
+    label: 'About RootstockLabs',
     link: 'https://rootstocklabs.com',
     external: true,
     subItem: true
@@ -134,7 +134,7 @@ const Footer = () => {
         </div>
         <div className="row mt-6">
           <div className="col-md-6 col-lg-4 order-2 order-md-1 mt-md-0 mt-6">
-            <p className="mb-0 fs-7 opacity-50">© {new Date().getFullYear()}. Rootstock Labs. All rights reserved</p>
+            <p className="mb-0 fs-7 opacity-50">© {new Date().getFullYear()}. RootstockLabs. All rights reserved</p>
 
           </div>
         </div>

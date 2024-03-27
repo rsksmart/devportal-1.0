@@ -9,7 +9,7 @@ layout: rsk
 
 The RIF wallet is a smart contract, hence it needs to be deployed to the blockchain to enable transfer of funds and interaction with other decentralized apps. See [FAQs](/rif/wallet/faqs/) section on why deployment is needed.
 
-> **Note that initial deployment of the wallet is **FREE** for end users and has been subsidized by Rootstock Labs. The wallet cannot be redeployed after deployment.**
+> **Note that initial deployment of the wallet is **FREE** for end users and has been subsidized by RootstockLabs. The wallet cannot be redeployed after deployment.**
 
 **Step 1: Click on the Settings icon**
 

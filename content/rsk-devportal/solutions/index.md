@@ -3,13 +3,13 @@ layout: rsk
 section_title: Solutions
 menu_title: About
 title: Solutions on Rootstock
-description: 'Check out the many ways Rootstock Labs partners leverage the Rootstock and RIF
+description: 'Check out the many ways RootstockLabs partners leverage the Rootstock and RIF
 platforms and APIs to create innovative experiences.'
 tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
 menu_order: 7
 ---
 
-Check out the many ways Rootstock Labs partners leverage Rootstock and its products to create innovative experiences.
+Check out the many ways RootstockLabs partners leverage Rootstock and its products to create innovative experiences.
 
 <div class="row features-list">
     <li class="col-xl-6 col-md-6">
