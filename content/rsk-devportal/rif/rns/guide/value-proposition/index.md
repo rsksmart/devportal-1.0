@@ -48,7 +48,7 @@ tags: rns, guide, wallets, value
     *   It can be presented to end users as a “[YourWallet]’s **nickname**” to improve non-tech user adoption.
     *   Users won’t have to understand a new concept such as RNS nor smart contracts nor fees nor gas.
     *   Behind the scenes is simply an RNS subdomain of the yourwallet.rsk domain
-    *   Subsidized fees and gas by IOV Labs
+    *   Subsidized fees and gas by Rootstock Labs
     > Note: "yourwallet.rsk" is just an example main domain. Replace "yourwallet" for the domain you will use for your wallet (eg, if your wallet is called "Bitcoin Wallet" you could register bitcoinwallet.rsk and use it as your main domain).
     > Talk to your IOV account manager for more information. Or, if you prefer, just go to rns.rifos.org and register the main domain of your preference.
 2. **Send crypto-asset using human-readable addresses** (_YourWallet_ nicknames and any other RNS domain) while also maintaining traditional wallet addresses.
@@ -65,17 +65,17 @@ tags: rns, guide, wallets, value
 
 [https://www.npmjs.com/package/@rsksmart/rns](https://www.npmjs.com/package/@rsksmart/rns)
 
-#### RNS in Rootstock (RSK) Developer portal
+#### RNS in Rootstock Developer portal
 
-[https://developers.rsk.co/rif/rns/](https://developers.rsk.co/rif/rns/)
+[https://dev.rootstock.io/rif/rns/](https://developers.rsk.co/rif/rns/)
 
 #### Integrate Your Wallet with RNS
 
-[https://developers.rsk.co/rif/rns/integrate/integrate-wallet/](https://developers.rsk.co/rif/rns/integrate/integrate-wallet/)
+[https://dev.rootstock.io/rif/rns/integrate/integrate-wallet/](https://developers.rsk.co/rif/rns/integrate/integrate-wallet/)
 
 #### Integrate Your dApp with RNS
 
-[https://developers.rsk.co/rif/rns/integrate/integrate-dapp/](https://developers.rsk.co/rif/rns/integrate/integrate-dapp/)
+[https://dev.rootstock.io/rif/rns/integrate/integrate-dapp/](https://developers.rsk.co/rif/rns/integrate/integrate-dapp/)
 
 ## Phase 2 (optional)
 

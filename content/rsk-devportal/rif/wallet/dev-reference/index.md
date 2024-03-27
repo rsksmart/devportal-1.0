@@ -140,4 +140,4 @@ See [Fees](/rif/wallet/overview#fees)
 
 To send a token out of the RIF Wallet, the user is required to deploy their wallet. 
 
-> Note that initial deployment of the wallet is **FREE** for end users and has been subsidized by IOV Labs. The wallet cannot be redeployed after deployment. See section on [deploying a wallet](/rif/wallet/user-guide/deploy-a-wallet/) for how to deploy the RIF Wallet. 
+> Note that initial deployment of the wallet is **FREE** for end users and has been subsidized by [Rootstock Labs](https://rootstocklabs.com). The wallet cannot be redeployed after deployment. See section on [deploying a wallet](/rif/wallet/user-guide/deploy-a-wallet/) for how to deploy the RIF Wallet. 
