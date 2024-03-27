@@ -3,14 +3,14 @@
 menu_title: Use
 menu_order: 3
 layout: rsk
-title: Using RSK Public Nodes (Mainnet & Testnet) provided by RootstockLabs
+title: Using RSK Public Nodes (Mainnet & Testnet) provided by IOVLabs
 tags: rsk, networks, versions, rpc, mainnet, testnet, cUrl
 description: "RSK Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
 ---
 
 ## Public Nodes
 
-RootstockLabs currently provides two public nodes that you can use
+IOVLabs currently provides two public nodes that you can use
 for testing purposes, and you will find that information below.
 
 Alternatively, follow the [installation instructions](/rsk/node/install/),

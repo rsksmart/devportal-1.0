@@ -21,7 +21,7 @@ const links: NavLink[] = [
         external: true
       },
       {
-        label: 'RIF - Rootstock Infrastructure Framework',
+        label: 'RIF - Rootstock (RSK) Infrastructure Framework',
         link: 'https://www.rifos.org/',
         external: true
       }

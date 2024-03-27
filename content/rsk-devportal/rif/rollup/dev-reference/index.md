@@ -25,7 +25,7 @@ RIF Rollup requires fees for transactions to cover expenses for network operatio
 
 RIF Rollup can be used to transfer RBTC and ERC20 tokens. The full list of currently supported tokens is available under this [link](https://explorer.dev.aggregation.rifcomputing.net/). Read more in the [Token](https://github.com/rsksmart/rif-rollup/blob/main/docs/tokens.md#tokens) section.
 
-> DISCLAIMER: Listing of a token on RIF Rollup does not represent an endorsement for this token by the RIF Rollup team, RootstockLabs, or any other entity. We do not have competence and authority to analyze the token business model and smart contract security guarantees of a particular token. Please use any token at your own risk and judgment.
+> DISCLAIMER: Listing of a token on RIF Rollup does not represent an endorsement for this token by the RIF Rollup team, IOVLabs, or any other entity. We do not have competence and authority to analyze the token business model and smart contract security guarantees of a particular token. Please use any token at your own risk and judgment.
 
 ## Addresses
 
