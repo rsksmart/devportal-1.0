@@ -1,15 +1,13 @@
 ---
-menu_title: Setup a project with Truffle and OpenZeppelin
+menu_title: Setup a project with Hardhat and OpenZeppelin
 layout: rsk
-title: How to create a new project using Truffle and OpenZeppelin connected to RSK network
-tags: tutorial, rsk, openzeppelin, truffle
-description: "How to create a new blockchain project, using Truffle framework and Open Zeppelin library connected to a RSK local node and RSK testnet"
+title: How to create a new project using Hardhat and OpenZeppelin connected to RSK network
+tags: tutorial, rsk, openzeppelin, hardhat
+description: "How to create a new blockchain project, using Hardhat framework and Open Zeppelin library connected to a RSK local node and RSK testnet"
 render_features: "custom-terminals"
 ---
 
-> Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support Truffle and encourage immediate migration to [Hardhat](/tools/hardhat/).
-
-In this tutorial, I will show you step-by-step how to create a new blockchain project, using Truffle framework and Open Zeppelin smart contracts library, connected to a RSK local node or RSK testnet.
+In this tutorial, I will show you step-by-step how to create a new blockchain project, using Hardhat framework and Open Zeppelin smart contracts library, connected to a RSK local node or RSK testnet.
 
 It does not matter whether you are an experienced developer, or just learning to code, you do not need to be a blockchain expert to follow along.
 
@@ -17,20 +15,11 @@ It does not matter whether you are an experienced developer, or just learning to
 
 Here is a summary of the steps to be taken to build our project:
 
-1. Installation requirements;
+1. Requirements;
 2. Run a RSK local node;
-3. Initialize a project using Truffle;
-4. Install Open Zeppelin smart contracts in our project;
-5. Install HD wallet provider;
-6. Create a wallet mnemonic;
-7. Configure Truffle to connect to RSK networks;
-8. Use Truffle console;
-9. Get some testnet RBTCs from the RSK faucet;
-
-## Translations
-
-This article is also available in
-[Português](https://rsk.solange.dev/#/pt/setup-truffle-open-zeppelin/readme "Como criar um projeto utilizando Truffle e OpenZeppelin conectado à rede RSK").
+3. Initialize a project using Hardhat;
+4. Configure Hardhat to connect to RSK networks;
+5. Get some testnet RBTCs from the RSK faucet;
 
 # Requirements
 
@@ -39,7 +28,7 @@ This article is also available in
 * Java
 * Node.js and NPM (Node Package Manager)
 * Code editor: Visual Studio Code (VSCode) or any other editor of your choice
-* Truffle
+* Hardhat
 
 ## POSIX compliant shell
 
@@ -124,10 +113,10 @@ npm --version
 
 ```windows-command-prompt
 C:\>node --version
-v10.16.3
+v21.6.2
 
 C:\>npm --version
-v6.9.0
+10.2.4
 
 C:\>
 ```
@@ -160,39 +149,13 @@ code -v
 
 ![vscode version](/assets/img/tutorials/setup-truffle-oz/image-04.png)
 
-## Truffle
+# Run a RSK local node
 
-Truffle is a popular development framework with a mission to make smart contract development easier for developers. Amongst its features, it has a smart contract lifecycle management, scriptable deployment & migrations, automated contract testing and simple network management.
-
-It also makes developing on RSK easier, with the ability to configure custom networks for RSK.
-
-To install Truffle, input the command below into the terminal and press `enter` at your project location:
-
-```shell
-npm install -g truffle
-```
-
-![truffle install](/assets/img/tutorials/setup-truffle-oz/image-05.png)
-
-When the installation is finished, close the terminal, open it again and check the Truffle version:
-
-```shell
-truffle version
-```
-
-![truffle version](/assets/img/tutorials/setup-truffle-oz/image-06.png)
-
-For more info:
-
-[trufflesuite.com/truffle](https://www.trufflesuite.com/truffle)
-
-# RSK regtest (Local node)
-
-When we develop a project using Truffle Framework, we need a blockchain node running locally. This is better for development, and running tests. We'll connect to the RSK network via this local node.
+When we develop a project using Hardhat Framework, we need a blockchain node running locally. This is better for development, and running tests. We'll connect to the RSK network via this local node.
 
 There are several ways to set up a RSK local node. Here, we will download a JAR file and run it using the Java SDK that has been installed.
 
-### Download
+## Download
 
 Go to the [releases page](https://github.com/rsksmart/rskj/releases) and click on the most recent to download it.
 
@@ -203,8 +166,7 @@ It's name should be `rskj-core-*.jar`:
 
 ### Verify authenticity
 
-When installing and running the RSKj node,
-it is always a good idea to verify that your copy is legitimate.
+When installing and running the RSKj node, it is always a good idea to verify that your copy is legitimate.
 
 In the folder where you download the JAR file, go to a POSIX terminal and run this command:
 
@@ -228,7 +190,7 @@ including signature verification, check out the
 [full instructions](/rsk/node/security-chain/ "Verify authenticity of RskJ source code and its binary dependencies")
 on how to do this.
 
-### Run
+## Run
 
 To run the node:
 
@@ -308,7 +270,7 @@ The `result` property is the number of the latest block that has been synced. No
 * There are other ways to install an RSK node, in other supported platforms:
   Check out [installing RSKj](/rsk/node/install/).
 
-# RSK Testnet - verify the connection
+## RSK Testnet - verify the connection
 
 In addition to using the local node, we want to publish smart contracts to the testnet. Before it, let's check if the connection is working.
 
@@ -333,362 +295,231 @@ You can consult [testnet explorer](https://explorer.testnet.rsk.co/) and verify 
 
 ![explorer testnet block number](/assets/img/tutorials/setup-truffle-oz/image-12.png)
 
-# Initialize a Truffle project
+# Initialize a project using Hardhat
 
-We have two options for initializing a project:
+Hardhat is a cutting-edge development environment designed for Ethereum application development. It aims to bring developers a robust framework for building, testing, and deploying smart contracts with ease. Key features of Hardhat include advanced Ethereum Virtual Machine (EVM) manipulation and debugging, comprehensive testing libraries, and seamless network management.
 
-1. An empty project
-2. A project based in a Truffle Box
+Hardhat enhances the developer experience by allowing for the creation of local Ethereum networks, simulating how contracts interact in a real-world environment, and pinpointing errors with stack traces. This environment is particularly beneficial for intricate development workflows and offers detailed insights during the contract creation phase.
 
-## 1 - Initialize an empty Truffle project
+For more detailed information and documentation, visit:
 
-Create a new folder. For example, `myproject`, and navigate to the folder in the terminal.
+[https://hardhat.org/](https://github.com/nvm-sh/nvm)
 
-```shell
-mkdir myproject
-cd myproject
-```
+## Create the project directory
 
-For example, I will create a folder at this location - `C:\RSK\` (I'm using Windows).
-
-My project can be located in the folder `C:\RSK\myproject`.
-
-![myproject folder](/assets/img/tutorials/setup-truffle-oz/image-13.png)
-
-In your project folder, start an Truffle project by typing the command below into the terminal:
+Create a new directory for your project. As an example, we'll name it `myproject`. Navigate to your desired location, such as `C:\RSK\` on Windows, and create the directory:
 
 ```shell
-truffle init
+mkdir C:\RSK\myproject
+cd C:\RSK\myproject
 ```
 
-![truffle init](/assets/img/tutorials/setup-truffle-oz/image-14.png)
+Your project will be located in `C:\RSK\myproject`.
 
-Open the folder in VS Code to view the file structure like this:
+## Initialize an npm Project
 
-![truffle file structure](/assets/img/tutorials/setup-truffle-oz/image-15.png)
-
-* `./contracts`: All our smart contracts will be stored in this folder.
-* `./migrations`: Deployment scripts will be stored in this folder.
-* `./test`: Test scripts will be stored in this folder.
-* `./truffle-config.js`: This is Truffle's configuration file used to configure networks, including RSK networks.
-
-Note that the following files were also created:
-
-* `Migrations.sol`: Keeps track of which migrations were done on the current network.
-* `1_initial_migration.js`: Deployment instructions for `Migrations.sol`.
-
-### Initialize an npm project
-
-When we initialize an empty Truffle project, we also need to initialize an npm project.
-
-Start an npm project in the `myproject` folder by typing the following commands below into the terminal:
+It's also recommended to initialize an npm project within your `myproject` folder to manage dependencies:
 
 ```shell
 npm init -y
 ```
 
-![npm init](/assets/img/tutorials/setup-truffle-oz/image-16.png)
+This creates a `package.json` file in your project directory.
 
-## 2 - Initialize a project based in a Truffle Box
+## Starting with Hardhat
 
-> Note: Only do this if you have not done option 1.
-
-Truffle Boxes are templates.
-In addition to Truffle,
-Truffle Boxes can contain other helpful modules, such as Solidity smart contracts, libraries, front-end views, and more.
-
-In option 1, when we use `truffle init`, we used a special kind of truffle box.
-Check out other [boxes] (https://www.trufflesuite.com/boxes).
-
-Also we have some of them already configured for RSK, [check it out here](https://developers.rsk.co/tutorials/truffle-boxes/).
-
-## Install Open Zeppelin
-
-Open Zeppelin Contracts is a set of libraries of Solidity smart contracts for Ethereum and other blockchains.
-These libraries will install not only the main libraries required for our token,
-but also libraries for ownership, safe math, and many other utilities.
-It's worth mentioning that these libraries have been reviewed and audited to accomplish high standards of security,
-so contracts that depend on them are less susceptible to hacking when used correctly.
-
-In the terminal, inside `myproject` folder, install Open Zeppelin libraries using this command:
+To get started with Hardhat, run the following command in your project's root directory:
 
 ```shell
-npm install -E @openzeppelin/contracts@2.5.0
+npm install --save-dev hardhat
 ```
 
-The option `-E` is to save dependencies with an exact version rather than the latest version published on npm.
+This command sets up your Hardhat project and prepares it for development. You'll be prompted to create a sample project, including configuration and sample scripts, to kick-start your development process.
 
-![openzeppelin install](/assets/img/tutorials/setup-truffle-oz/image-17.png)
-
-> Some contracts may change over time, so it is important to set the version. This tutorial was written using this specific version.
-
-For more info:
-
-[openzeppelin.com/contracts](https://openzeppelin.com/contracts/)
-
-# Install HD wallet provider
-
-To connect to the RSK network, we are going to use a provider that allows us to connect to any network by unlocking an account locally. We are going to use `@truffle/hdwallet-provider`.
-This can be used to sign transactions for addresses derived from a 12 or 24 word mnemonic.
-
-> You need to have Node >= 7.6 installed.
-
-In the terminal, inside the `myproject` folder, install the HD wallet provider with this command:
+Check the version of Hardhat installed with:
 
 ```shell
-npm install -E @truffle/hdwallet-provider@1.0.34
+npx hardhat --version
 ```
 
-![hd wallet provider install](/assets/img/tutorials/setup-truffle-oz/image-18.png)
+![myproject folder](/assets/img/tutorials/setup-truffle-oz/image-13.png)
 
-This `truffle package` comes with many dependencies,
-and so can take a long time to complete.
-A successful installation message is shown if everything works fine.
-
-![hd wallet provider successful installation](/assets/img/tutorials/setup-truffle-oz/image-19.png)
-
-# Check package.json
-
-`package.json` is a file created by npm with some configurations,
-including the packages which we installed before using the command `npm init -y`.
-
-After the installations,
-I will open the project folder named `myproject` in VS Code and verify the file `package.json`.
-Let's take a look at the dependencies in the file:
-
-![package.json](/assets/img/tutorials/setup-truffle-oz/image-20.png)
-
-# Create a wallet
-
-To use testnet, we need tRBTC and an address to store them.
-The best way is to create a wallet from a mnemonic, using the pattern defined at [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki)
-
-There are a few ways to do this.
-
-One is to create using a web wallet, such as [Metamask](https://metamask.io/).
-These wallets generate the mnemonic for you.
-If you wanted to create using Metamask, you can get the instructions here:
-
-- [using Remix and Metamask with RSK testnet](/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/)
-
-## iancoleman.io/bip39
-
-Another way is using this web app:
-
-[iancoleman.io/bip39](https://iancoleman.io/bip39/)
-
-> Note: In this tutorial, the method used to store the mnemonic is not recommended to be used for any 'real' wallet because it's not secure enough to generate a private key in a website, however we will use this here for learning purposes, and because we're using the Testnet, so no real amounts are at stake.
-
-In the `Generate a random mnemonic` field, select `12 words` and click on the `generate` button.
-
-![Generate a random mnemonic](/assets/img/tutorials/setup-truffle-oz/image-21.png)
-
-The result appears in the `BIP39 Mnemonic` field.
-They should be 12 random words like the words in the image:
-
-![BIP39 Mnemonic](/assets/img/tutorials/setup-truffle-oz/image-22.png)
-
-My mnemonic is:
-
-```
-energy knife ice mouse merge track cram brown decorate atom rule virus
-```
-
-Copy these 12 words, we'll use it later in this tutorial.
-
-## mnemonics module
-
-Another alternative is using package [mnemonics](https://github.com/itinance/mnemonics),
-which is a simple utility that can be used to generate [BIP39](https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki) mnemonics.
-
-To install `mnemonics` globally, input the command below into the terminal and press `enter` at your project location:
+To initiate a Hardhat project in your `myproject` directory, enter the following command in the terminal:
 
 ```shell
-npm install -g mnemonics@1.1.3
+npx hardhat init
 ```
 
-Use this to generate a 12-word BIP39 mnemonic, by entering this command:
+Upon initialization, Hardhat will prompt you to create a sample project or start from scratch. Choose to create a sample project to automatically generate a basic project structure and configuration files.
+
+## Explore the Project Structure
+
+After initializing your Hardhat project, you can open the folder in an IDE like VS Code to see the file structure, which should include:
+
+- `contracts/`: Directory for Solidity smart contracts.
+- `scripts/`: Contains scripts for deployment and interaction with your contracts.
+- `test/`: Directory for test files to test your contracts and scripts.
+- `hardhat.config.js`: Hardhat's configuration file.
+
+Note: Since Hardhat version `2.22.0` Hardhat Toolbox adds `Hardhat Ignition` as the default deployment system. It replaces the folder `scripts/` for `ignition/`. Hardhat Ignition is a declarative system for deploying smart contracts on Ethereum. It enables you to define smart contract instances you want to deploy, and any operation you want to run on them.
+
+### Install OpenZeppelin Contracts
+
+OpenZeppelin Contracts is a library of secure and community-reviewed smart contracts for Ethereum and other EVM and eWASM blockchains. To install OpenZeppelin Contracts in your project, use the following command:
 
 ```shell
-mnemonics > .secret
+npm install @openzeppelin/contracts
 ```
 
-This saves a new mnemonic in the file named `.secret`, which is the next step.
+Note: 
 
-# Create .secret file
+### Verify `package.json`
 
-In the terminal, inside the `myproject` folder, create a file named `.secret`.
+After installing your dependencies, open your `package.json` file to verify the installations. You should see `@openzeppelin/contracts` and the Hardhat-related packages listed under `dependencies` or `devDependencies`.
 
-Do you remember your mnemonic?
-Paste your mnemonic in this file and save it.
+### Executing the Project's Test Suite
 
-![dot secret](/assets/img/tutorials/setup-truffle-oz/image-23.png)
+To verify the contract's functionality using the internal Hardhat network, execute the following command:
 
-# Configure Truffle to connect to RSK networks
+```shell
+npx hardhat test
+```
 
-Open `truffle-config.js` file in your Truffle project and overwrite it with the following code:
+This command initiates the testing process, leveraging the Hardhat framework to compile your contracts and deploy them onto the internal network. Subsequently, it runs the test suite defined within your project, ensuring the integrity and functionality of your smart contracts.
+
+# Configure Hardhat to connect to RSK networks
+
+## Connect to RSK Regtest (local node)
+
+In Hardhat, network configurations are managed within the `hardhat.config.js` file. To connect to the RSK regtest (local node), you will modify this configuration file accordingly.
+
+Open your `hardhat.config.js` file and include the RSK regtest network configuration within the networks section. If you're starting from a default Hardhat setup, you might need to add the networks key to the module exports object.
+
+Here's how to add the RSK regtest configuration:
 
 ```javascript
-const HDWalletProvider = require('@truffle/hdwallet-provider');
+    require("@nomicfoundation/hardhat-toolbox");
 
-const fs = require('fs');
-const mnemonic = fs.readFileSync(".secret").toString().trim();
-if (!mnemonic || mnemonic.split(' ').length !== 12) {
-  throw new Error('unable to retrieve mnemonic from .secret');
-}
+    module.exports = {
+      solidity: "0.8.24",
+      networks: {
+        rskRegtest: {
+          url: "http://127.0.0.1:4444/",
+          chainId: 33, // RSK regtest chainId
+        }
+      }
+    };
+```
+
+This configuration specifies that the RSK regtest network is accessible through HTTP at 127.0.0.1 on port 4444, which is the default configuration for a local RSK node. The chainId for RSK regtest is 33. Make sure that your local RSK node is running and accessible at these settings.
+
+After adding the configuration, your `hardhat.config.js` file should look similar to the example provided, albeit with possible differences in Solidity version or additional configurations depending on your project's requirements.
+
+## Connect to RSK testnet
+
+### Create a Wallet for Testnet Usage
+
+For interacting with testnets, you'll need a wallet with testnet ETH. You can generate a new mnemonic (a 12-word seed phrase) for your wallet using online tools like iancoleman.io/bip39 for educational purposes or by using a secure wallet application like MetaMask.
+
+### Store Your Mnemonic Securely
+
+First, make sure you are securely managing your mnemonic. One common approach is to use a `.env` file and dotenv package. If you choose this method, first install dotenv:
+
+```shell
+npm install --save-dev dotenv
+```
+
+Then, create a .env file at the root of your project (this file should be added to your .gitignore to keep your mnemonic secure) and add your mnemonic:
+
+```
+MNEMONIC=your_mnemonic_here
+```
+
+Next, modify your hardhat.config.js to use the .env file and configure the RSK testnet connection:
+
+```javascript
+require("@nomicfoundation/hardhat-toolbox");
+require('dotenv').config();
+
+const { MNEMONIC } = process.env;
 
 module.exports = {
+  solidity: "0.8.24",
   networks: {
-  },
-  compilers: {
-    solc: {
-    }
-  }
-}
-```
-
-The `hdwallet-provider` allows us to connect to any network by unlocking an account locally, including the RSK networks.
-
-Also we are loading the mnemonic stored in file `.secret`, and saving it at variable mnemonic.
-
-## Configure Truffle to connect to RSK regtest (local node)
-
-In the `truffle-config.js` file, include this configuration at `network` section:
-
-```javascript
-    development: {
-      host: "127.0.0.1",
-      port: 4444,
-      network_id: "*"
-    },
-```
-
-This is the result:
-
-![network development](/assets/img/tutorials/setup-truffle-oz/image-24.png)
-
-## Get the current gas price of testnet
-
-Get the current gas price of the testnet network, and save to `.gas-price-testnet.json`.
-
-In your project folder, run this cURL command:
-
-```shell
-curl https://public-node.testnet.rsk.co/ -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"eth_gasPrice","params":[],"id":1}' > .gas-price-testnet.json
-```
-
-![gas price result](/assets/img/tutorials/setup-truffle-oz/image-25.png)
-
-You should receive a response similar to the following in the file:
-
-```json
-{"jsonrpc":"2.0","id":1,"result":"0x3938700"}
-```
-
-![gas-price-testnet.json](/assets/img/tutorials/setup-truffle-oz/image-26.png)
-
-The result value is presented in hexadecimal.
-
-Modify the `truffle-config` file again to use the updated gas price. After mnemonic part, include this:
-
-```javascript
-const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
-const gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
-if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
-  throw new Error('unable to retrieve network gas price from .gas-price-testnet.json');
-}
-console.log("Gas price Testnet: " + gasPriceTestnet);
-```
-
-## Configure Truffle to connect to RSK testnet
-
-In the `truffle-config.js` file, include this configuration at `network` section:
-
-```javascript
-    testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/'),
-      network_id: 31,
-      gasPrice: Math.floor(gasPriceTestnet * 1.1),
-      networkCheckTimeout: 1e9
-    },
-```
-
-## Truffle config with local and testnet RSK networks
-
-This is the final `truffle-config.js` file with configurations for both networks:
-
-```javascript
-const HDWalletProvider = require('@truffle/hdwallet-provider');
-
-const fs = require('fs');
-const mnemonic = fs.readFileSync(".secret").toString().trim();
-if (!mnemonic || mnemonic.split(' ').length !== 12) {
-  throw new Error('unable to retrieve mnemonic from .secret');
-}
-
-const gasPriceTestnetRaw = fs.readFileSync(".gas-price-testnet.json").toString().trim();
-const gasPriceTestnet = parseInt(JSON.parse(gasPriceTestnetRaw).result, 16);
-if (typeof gasPriceTestnet !== 'number' || isNaN(gasPriceTestnet)) {
-  throw new Error('unable to retrieve network gas price from .gas-price-testnet.json');
-}
-console.log("Gas price Testnet: " + gasPriceTestnet);
-
-module.exports = {
-  networks: {
-    development: {
-      host: "127.0.0.1",
-      port: 4444,
-      network_id: "*"
+    rskRegtest: {
+      url: "http://127.0.0.1:4444/",
+      chainId: 33, // RSK regtest chainId
     },
     testnet: {
-      provider: () => new HDWalletProvider(mnemonic, 'https://public-node.testnet.rsk.co/'),
-      network_id: 31,
-      gasPrice: Math.floor(gasPriceTestnet * 1.1),
-      networkCheckTimeout: 1e9
-    },
-  },
-  compilers: {
-    solc: {
+      url: 'https://public-node.testnet.rsk.co/',
+      accounts: {
+        mnemonic: MNEMONIC,
+      },
+      chainId: 31
     }
   }
-}
+};
 ```
 
-Check out the VS Code image too:
+This configuration uses the mnemonic from your .env file to generate accounts for transactions on the RSK testnet.
 
-![truffle-config](/assets/img/tutorials/setup-truffle-oz/image-27.png)
+## Hardhat console connected to RSK network
 
-# Truffle Console connected to RSK network
+Hardhat has its own console to run commands, and can be connected on any network previously configured in `hardhat.config.js` file.
 
-Truffle has its own console to run commands, and can be connected on any network previously configured in `truffle-config.js` file.
+### Connect to RSK regtest (local node)
 
-## Connect to RSK regtest (local node)
-
-Let's open a Truffle console to connect to our local node.
-
-In the terminal, inside the `myproject` folder, run this command:
+Let's open a Hardhat console to connect to our local node. To start the Hardhat console you can use the --network flag followed by the name of the network you've configured in your hardhat.config.js file. For example, to connect to the RSK Testnet, you would run:
 
 ```shell
-truffle console
+npx hardhat console --network rskRegtest
 ```
 
 ![Truffle console development](/assets/img/tutorials/setup-truffle-oz/image-28.png)
 
-> Any network defined with the name `development` is considered the default network.
+This command starts an interactive session where you can execute commands and interact with your smart contracts deployed on the RSK Testnet. Here are a few examples of what you can do within the Hardhat console:
 
-## Connect to RSK testnet
+```javascript
+const Lock = await ethers.getContractFactory("Lock");
+const JAN_1ST_2030 = 1893456000;
+const ONE_GWEI = 1_000_000_000n;
+const lock = await Lock.deploy(JAN_1ST_2030);
+const lock_address = await lock.getAddress();
+console.log("Lock deployed to:", lock_address);
+```
+
+Interact with a deployed contract:
+
+```javascript
+const lock_contract = await ethers.getContractAt("Lock", "REPLACE_WITH_CONTRACT_ADDRESS");
+const tx = await lock_contract.withdraw();
+result = tx.wait();
+```
+
+The result of this transaction is an error message containing 'Error: transaction execution reverted'. This is an expected behavior, the contract has a time lock in order to allow withdrawing the funds deposited..
+
+Send transactions and query balances:
+
+```javascript
+const [owner] = await ethers.getSigners();
+const balance = await ethers.provider.getBalance(owner.address);
+console.log("Address: ", owner.address, "Balance: ", ethers.formatEther(balance));
+```
 
 Thus far we have only connected to a blockchain that runs using just 1 node, that runs on your own computer.
+
+### Connect to RSK testnet
+
 Let's now switch to interacting with a "real" blockchain, which is running on multiple nodes distributed across multiple computers!
 
-To connect Truffle console in another network, you need to specify the network:
+To connect Hardhat console in another network, you need to specify the network:
 
 Open up a new terminal.
 
 In the new terminal, inside the `myproject` folder, run this command:
 
 ```shell
-truffle console --network testnet
+npx hardhat console --network testnet
 ```
 
 It takes a little longer to establish this connection when compared to the local node.
@@ -696,101 +527,70 @@ This will open a new console:
 
 ![truffle console network testnet](/assets/img/tutorials/setup-truffle-oz/image-29.png)
 
-## Test the connection to RSK network
+### Test the connection to RSK network
 
-On any of the networks, run this commands in the Truffle console:
+On any of the networks, run this commands in the Hardhat console:
 
-### Block number
+#### Block number
 
 Shows the last block number.
 
 ```javascript
-(await web3.eth.getBlockNumber()).toString()
+(await ethers.provider.getBlockNumber()).toString()
 ```
 
 ![getBlockNumber](/assets/img/tutorials/setup-truffle-oz/image-30.png)
 
-### Network ID
+#### Get addresses
 
-To get the network ID, run this command:
+We will use a special instruction in Hardhat console to get the address in our wallet for the RSK Testnet network, it is generated from our mnemonic.
 
 ```javascript
-(await web3.eth.net.getId()).toString()
+// Import ethers from the Hardhat environment
+const ethers = hre.ethers;
+
+// Define the mnemonic. You can paste your MNemonic here to use your current wallet.
+const mnemonic = "test test test test test test test test test test test junk";
+
+// Get address
+const address = ethers.Wallet.fromPhrase(mnemonic).address;
+console.log(address);
 ```
 
-For the local node, the network ID is `33`.
+![list accounts](/assets/img/tutorials/setup-truffle-oz/image-34.png)
 
-![getId local](/assets/img/tutorials/setup-truffle-oz/image-31.png)
+#### Check balance
 
-And for testnet, it is `31`.
+To check the balance of an account run this command in Hardhat console:
 
-![getId testnet](/assets/img/tutorials/setup-truffle-oz/image-32.png)
+```javascript
+const balance = await ethers.provider.getBalance(address);
+console.log(ethers.formatEther(balance));
+```
 
-## Exit Truffle console
+![getBalance accounts 0](/assets/img/tutorials/setup-truffle-oz/image-37.png)
 
-In the Truffle console, enter this command to exit the terminal:
+The balance is 0 and we need some tRBTC to pay gas fees, which will be used to publish smart contracts and interact with them. We shall obtain some in the next step.
+
+#### Exit Hardhat console
+
+In the Hardhat console, enter this command to exit the terminal:
 
 ```shell
 .exit
 ```
 
+```shell
+Ctrl+C
+```
+
 ![exit Truffle console](/assets/img/tutorials/setup-truffle-oz/image-33.png)
 
-# Get addresses
-
-We will use a special instruction in Truffle console to get the first 10 addresses in our hierarchical deterministic wallet for the RSK Testnet network, that are generated from our mnemonic.
-
-In the terminal, inside the `myproject` folder, go to the Truffle console connected to testnet:
-
-```shell
-truffle console --network testnet
-```
-
-And run this command to save the addresses at variable `accounts`:
-
-```javascript
-const accounts = Object.keys(web3.currentProvider.wallets)
-```
-
-See the addresses after it by entering the command below:
-
-```javascript
-accounts
-```
-
-![list accounts](/assets/img/tutorials/setup-truffle-oz/image-34.png)
-
-Now we will write them to a file named `.accounts`
-
-```javascript
-await require('fs').promises.writeFile('.accounts', accounts.join('\n'))
-```
-
-![create file .accounts](/assets/img/tutorials/setup-truffle-oz/image-35.png)
-
-And we can check the file:
-
-![file .accounts](/assets/img/tutorials/setup-truffle-oz/image-36.png)
-
-## Check balance
-
-To check the balance of an account, for example, the first account of our list (`account[0]`), run this command in Truffle console:
-
-```javascript
-(await web3.eth.getBalance(accounts[0])).toString()
-```
-
-![getBalance accounts 0](/assets/img/tutorials/setup-truffle-oz/image-37.png)
-
-The balance is 0 and we need some tRBTC to pay gas fees,
-which will be used to publish smart contracts and interact with them.
-We shall obtain some in the next step.
-
-# TestNet Faucet
+# Get some testnet RBTCs from the RSK faucet
 
 You can get some tRBTC from the [RSK Testnet faucet](https://faucet.testnet.rsk.co/).
 
-Copy the first address from `.accounts` file. In my case, it is
+Copy the address from the account. In my case, it is
 
 ```
 0xe16f6abdd5815f3d24b4e5c29138f863933b000a
@@ -814,10 +614,12 @@ Now I have 0.05 RBTC!
 
 ## Recheck balance
 
-To check balance again, run this command in the Truffle console:
+To check balance again, run this command in the Hardhat console:
 
 ```javascript
-(await web3.eth.getBalance(accounts[0])).toString()
+const address = '0xe16f6abdd5815f3d24b4e5c29138f863933b000a';
+const balance = await ethers.provider.getBalance(address);
+console.log(ethers.formatEther(balance));
 ```
 
 ![getBalance accounts 0 again](/assets/img/tutorials/setup-truffle-oz/image-41.png)
@@ -826,12 +628,9 @@ Great! Now I have 50000000000000000, which means that I have 0.05 tRBTC with 18 
 
 # Where to go from here
 
-At this point, we have installed all requirements and created an empty project using Truffle framework and Open Zeppelin smart contracts library,
-connected to both an RSK local node (Regtest) and the RSK Testnet.
+At this point, we have installed all requirements and created a project using Hardhat framework and Open Zeppelin smart contracts library, connected to both an RSK local node (Regtest) and the RSK Testnet.
 
-We have not developed anything yet,
-but you are now ready to move on to the next tutorials,
-where we will develop some very cool projects!
+We have not developed anything yet, but you are now ready to move on to the next tutorials, where we will develop some very cool projects!
 
 Choose any of these to tutorials to begin:
 
