@@ -1,9 +1,9 @@
 ---
 menu_order: 2100
 menu_title: Bulla Network
-title: 'Bulla Network - Solutions on RSK'
+title: 'Bulla Network - Solutions on Rootstock'
 description: 'An on-chain credit protocol that helps unlock crypto commerce, allowing users to create and pay invoices in an entirely decentralized way.'
-tags: Bulla Network, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, bullabanker
+tags: Bulla Network, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, bullabanker, rootstock
 layout: 'rsk'
 ---
 
@@ -11,11 +11,11 @@ layout: 'rsk'
 
 ## Description
 
-[Bulla Network](https://www.bulla.network/), is one of the latest projects to join the RSK ecosystem,  it is an on-chain credit protocol that helps unlock crypto commerce, allowing users to create and pay invoices in an entirely decentralized way. BullaNetwork’s bankless Web3 accounting protocol helps DAOs, companies, and individuals send invoices and payments and manage the business and personal accounts in one ledger, all on-chain.
+[Bulla Network](https://www.bulla.network/), is one of the latest projects to join the Rootstock ecosystem,  it is an on-chain credit protocol that helps unlock crypto commerce, allowing users to create and pay invoices in an entirely decentralized way. BullaNetwork’s bankless Web3 accounting protocol helps DAOs, companies, and individuals send invoices and payments and manage the business and personal accounts in one ledger, all on-chain.
 
-BullaNetwork is deployed on the chains: RSK, xDAI, Celo, ETH, Polygon, Avalanche and Harmony. Users can transact in RDOC, RBTC, cUSD, USDC, WBTC, WETH and WxDAI stable tokens.  
+BullaNetwork is deployed on the chains: Rootstock, xDAI, Celo, ETH, Polygon, Avalanche and Harmony. Users can transact in RDOC, RBTC, cUSD, USDC, WBTC, WETH and WxDAI stable tokens.  
 
-## How Bulla Network integrates with RSK
+## How Bulla Network integrates with Rootstock
 
 _**Coming soon**_
 
@@ -29,9 +29,9 @@ _**Coming soon**_
 
 Bulla Network uses a first-ever protocol that allows users to send NFT invoices using its BullaBanker app. BullaBanker mints a non-fungible accounting journal token (NFAJT) when users send an invoice to someone on the blockchain. The platform automatically recognizes when an invoice has been paid, providing an on-chain accounting tool with an easy to use interface.
 
-BullaBanker allows users to send invoices on the blockchain, essentially tokenizing debt as an NFT. It doesn’t mean that the particular NFT is worth a certain amount, but it represents an understanding or contract between a service provider and a client. 
+BullaBanker allows users to send invoices on the blockchain, essentially tokenizing debt as an NFT. It doesn’t mean that the particular NFT is worth a certain amount, but it represents an understanding or contract between a service provider and a client.
 
-Anyone can use BullaBanker, all they need is a Metamask wallet connected to the RSK mainnet. The system allows users to add attachments on IPFS, for example, the invoice itself as a PDF. BullaBanker also allows users to tag transactions, creating ways to sort and categorize invoices.
+Anyone can use BullaBanker, all they need is a Metamask wallet connected to the Rootstock mainnet. The system allows users to add attachments on IPFS, for example, the invoice itself as a PDF. BullaBanker also allows users to tag transactions, creating ways to sort and categorize invoices.
 
 ### Components of Bulla Banker
 
@@ -43,7 +43,7 @@ BullaBanker is a blockchain agnostic simple accounting app that allows users to 
 
 **Easy Onboarding**
 
-Got a crypto wallet? Are you on a network like xDai, RSK or Mainnet? Open your wallet and go to Bulla.Network. You may already see a payable. If not, create your first BullaBanker and start to remit or invoice. It's that simple!
+Got a crypto wallet? Are you on a network like xDai, Rootstock or Mainnet? Open your wallet and go to Bulla.Network. You may already see a payable. If not, create your first BullaBanker and start to remit or invoice. It's that simple!
 
 **Tokenized Invoicing System**
 
@@ -51,7 +51,7 @@ Create and send claims (tokenize) from YOUR custom Bulla(s). Onboard friends wit
 
 ### Supported Networks
 
-- [RSK](https://www.rsk.co/)
+- [Rootstock](https://rootstock.io/)
 - [Rinkeby](https://www.rinkeby.io/#stats)
 - [xDai](https://www.xdaichain.com/)
 - [Polygon](https://polygon.technology/)

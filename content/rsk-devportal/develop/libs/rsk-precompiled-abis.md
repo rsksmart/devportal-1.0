@@ -79,6 +79,9 @@ bridge.methods.getFederationAddress().call().then(console.log);
 | 5.0.0-fingerroot | FINGERROOT-5.0.0 |
 | 5.1.0-fingerroot | FINGERROOT-5.1.0 |
 | 5.2.0-fingerroot | FINGERROOT-5.2.0 |
+<<<<<<< HEAD:content/rsk-devportal/develop/libs/rsk-precompilied-abis.md
 | 5.3.0-fingerroot | FINGERROOT-5.3.0 |
 | 5.4.0-fingerroot | FINGERROOT-5.4.0 |
 | 6.0.0-ARROWHEAD | ARROWHEAD-6.0.0 |
+=======
+>>>>>>> master:content/rsk-devportal/develop/libs/rsk-precompiled-abis.md

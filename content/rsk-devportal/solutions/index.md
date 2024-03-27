@@ -3,13 +3,13 @@ layout: rsk
 section_title: Solutions
 menu_title: About
 title: Solutions on Rootstock
-description: 'Check out the many ways IOV Labs partners leverage the Rootstock and RIF
+description: 'Check out the many ways RootstockLabs partners leverage the Rootstock and RIF
 platforms and APIs to create innovative experiences.'
 tags: solutions, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, on-ramp, off-ramp, payments, crypto
 menu_order: 7
 ---
 
-Check out the many ways IOV Labs partners leverage the Rootstock and RIF
+Check out the many ways RootstockLabs partners leverage the Rootstock and RIF
 platforms and APIs to create innovative experiences.
 
 <div class="row features-list">
@@ -38,6 +38,29 @@ platforms and APIs to create innovative experiences.
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
+            <a href="/solutions/envio/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/envio/light.png" alt="envio icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/3xpl/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">Envio</p>
+                        <p class="card-desc">Envio is a modern, multi-chain EVM blockchain indexing framework speed-optimized for querying real-time and historical data.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/envio/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
             <a href="/solutions/defiant/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
@@ -55,29 +78,6 @@ platforms and APIs to create innovative experiences.
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/solutions/defiant/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/solutions/chainbeat/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/chainbeat/chainbeat-logo-v.png" alt="started icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/solutions/chainbeat/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">Chainbeat</p>
-                        <p class="card-desc">Chainbeat provides blockchain data insights to help understand usage and behavioral metrics for smart contracts running on Rootstock. Check out how Chainbeat integrates with Rootstock.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/solutions/chainbeat/">Read More</a>
                 </div>
             </div>
         </div>
@@ -239,29 +239,6 @@ platforms and APIs to create innovative experiences.
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/solutions/liquality/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/solutions/chainlink/">
-                <div class="icon rif h-100">
-                    <div class="icon-cont text-center my-auto px-1">
-                        <img src="/assets/img/solutions/Chainlink/Chainlink Symbol Blue.png" alt="started icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/solutions/chainlink/">
-                    <div class="content-container">
-                        <p class="card-title rsk_green">Chainlink</p>
-                        <p class="card-desc">Connect your smart contracts to the outside world.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/solutions/chainlink/">Read More</a>
                 </div>
             </div>
         </div>

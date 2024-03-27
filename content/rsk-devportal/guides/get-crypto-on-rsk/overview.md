@@ -10,6 +10,8 @@ layout: 'rsk'
 
 Find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on the Rootstock Network.
 
+> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/) or see how to [Get RBTC](https://rootstock.io/rbtc/#get-rbtc).
+
 ## Common Scenarios
 
 [](#top "collapsible")

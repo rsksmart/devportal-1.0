@@ -9,7 +9,9 @@ render_features: 'tables-with-borders'
 layout: 'rsk'
 ---
 
-See how to get RBTC using powpeg and wallets, and find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on the Rootstock Network.
+See how to get RBTC using powpeg and wallets, and find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on the Rootstock network.
+
+> Read about the [3 Ways to Get RBTC](https://blog.rootstock.io/noticia/smart-bitcoin-3-easy-ways-to-get-rbtc/) or see how to [Get RBTC](https://rootstock.io/rbtc/#get-rbtc).
 
 ## Table of Contents
 

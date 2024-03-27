@@ -1,24 +1,24 @@
 ---
 menu_order: 1800
 menu_title: Coinfirm
-title: 'Coinfirm - Solutions on RSK'
+title: 'Coinfirm - Solutions on Rootstock'
 description: 'Analytics and Compliance Powering the Mass Adoption of Blockchain'
-tags: coinfirm, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles
+tags: coinfirm, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles, rootstock
 layout: 'rsk'
 ---
 
 [Coinfirm](https://www.coinfirm.com/) is an industry leading analytics and compliance platform. Its AML solutions are trusted to best analyze and manage risk.
 
 
-## How Coinfirm integrates with RSK
+## How Coinfirm integrates with Rootstock
 
 ![Coinfirm - Integration](/assets/img/solutions/coinfirm/coinfirm-rsk-integrations.png)
 
-The [RSK](https://rsk.co/) network and
-the [RIF](https://rifos.org/) platform
+The [Rootstock](https://rootstock.io/) network and
+the [RIF](https://rif.technology/) platform
 have integrated the DeFi AMLT Oracle by Coinfirm.
 By leveraging AMLT in DeFi,
-RSK’s network will have all the benefits the innovation brings
+Rootstock’s network will have all the benefits the innovation brings
 whilst maintaining institutional-grade compliance.
 
 ## How Coinfirm Works
@@ -82,9 +82,9 @@ Enables partners to report nefarious crypto addresses related to ransomware, hac
 - **Institutional Support:**
 Projects desiring institutional support must meet regulatory compliance standards the Oracle provides.
 - **Adaptive Application:**
-Can be deployed in various configurations & code revisions running in parallel for unique needs or protocol updates to each RSK- based DeFi app.
+Can be deployed in various configurations & code revisions running in parallel for unique needs or protocol updates to each Rootstock-based DeFi app.
 - **Protection against malicious actors:**
-DeFi RSK-interoperable platforms receive protection from actions by bad actors. They are notified in real time about scams, hacks & high-risk wallets’ activities.
+DeFi Rootstock-interoperable platforms receive protection from actions by bad actors. They are notified in real time about scams, hacks & high-risk wallets’ activities.
 
 ## Documentation
 

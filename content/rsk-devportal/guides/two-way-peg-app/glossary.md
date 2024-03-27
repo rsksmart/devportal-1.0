@@ -36,7 +36,7 @@ See a list of terms about/related to the 2 way peg app and their meanings.
 - Refund Bitcoin address
     > The bitcoin address to be refunded.
 - Powpeg
-    > The powpeg is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. Read more about the [Powpeg](https://developers.rootstock.io/rsk/architecture/powpeg/).
+    > The powpeg is a unique 2-way peg system that secures the locked bitcoins with the same Bitcoin hashrate that establishes consensus. Read more about the [Powpeg](/rsk/architecture/powpeg/).
 - SegWit address
     > Segwit, short for Segregated Witness, is an upgrade to the Bitcoin protocol, it separates the digital signature (also known as “the witness”) from the transaction, it is a newer address format with lower fees. It makes Bitcoin transaction sizes smaller, which allows Bitcoin to handle more transactions at once (scalability). Watch the video: [What is Segwit? Explained](https://youtu.be/f3CFUbeehc8).
 - Software Wallet
@@ -54,7 +54,7 @@ See a list of terms about/related to the 2 way peg app and their meanings.
 
 * 2 way peg app frontend [repo](https://github.com/rsksmart/2wp-app)
 * 2 way peg app backend [repo](https://github.com/rsksmart/2wp-api)
-* How to get [RBTC using Rootstock’s built in Powpeg](https://developers.rootstock.io/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
+* How to get [RBTC using Rootstock’s built in Powpeg](/guides/get-crypto-on-rsk/powpeg-btc-rbtc/)
 * [Rootstock Testnet Faucet](https://faucet.rootstock.io/)
-* [Get RBTC using Exchanges](https://developers.rootstock.io/guides/get-crypto-on-rsk/rbtc-exchanges/)
+* [Get RBTC using Exchanges](/guides/get-crypto-on-rsk/rbtc-exchanges/)
 * [Design architecture](/guides/two-way-peg-app/advanced-operations/design-architecture/)

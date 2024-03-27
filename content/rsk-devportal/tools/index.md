@@ -30,7 +30,8 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | Knowledge base                                 | Tutorials and Guides            | [Rootstock KB](https://dev.rootstock.io/kb/)                                                            |
 | Thirdweb                                       | Developer Platforms             | [Thirdweb](https://thirdweb.com/)                                                                   |
 | UseDapp                                        | Developer Platforms             | [useDapp](https://usedapp.io/ )                                                                    |
-| Forward Protocol                               | Developer Platforms             | [Forward Protocol](https://forwardprotocol.io/)                                                             |
+| Forward Protocol                               | Developer Platforms             | [Forward Protocol](https://forwardprotocol.io/)  
+| RPC API                                       | Node RPC API                       | [Rootstock RPC API](/tools/rpc-api/)                                                                    |                               |
 | GetBlock                                       | Node RPC                        | [GetBlock](https://getblock.io/)                                                                    |
 | NOWNodes                                       | Node RPC                        | [NOWNodes](https://nownodes.io/)                                                                    |
 | JSON-RPC                                       | Libraries                       | [JSON RPC](https://dev.rootstock.io/rsk/node/architecture/json-rpc/)                                |
