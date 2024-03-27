@@ -41,14 +41,14 @@ const menu2: NavLink[] = [
     subItem: true
   },
   {
-    label: 'Rootstock (RSK) Explorer',
+    label: 'Rootstock Explorer',
     link: 'https://explorer.rootstock.io/',
     external: true,
     subItem: true
   },
   {
-    label: 'About IOVlabs',
-    link: 'https://www.iovlabs.org/about-us',
+    label: 'About Rootstock Labs',
+    link: 'https://rootstocklabs.com',
     external: true,
     subItem: true
   },
@@ -134,7 +134,7 @@ const Footer = () => {
         </div>
         <div className="row mt-6">
           <div className="col-md-6 col-lg-4 order-2 order-md-1 mt-md-0 mt-6">
-            <p className="mb-0 fs-7 opacity-50">© {new Date().getFullYear()}. Rootstock. All rights reserved</p>
+            <p className="mb-0 fs-7 opacity-50">© {new Date().getFullYear()}. Rootstock Labs. All rights reserved</p>
 
           </div>
         </div>
