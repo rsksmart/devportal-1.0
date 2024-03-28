@@ -7,7 +7,7 @@ description: "Configure RSKj for desired log verbosity, finding log files, and u
 menu_order: 300
 ---
 
-You can configure the desired log verbosity for your RSK node installation according to your needs.
+You can configure the desired log verbosity for your Rootstock node installation according to your needs.
 More information can be found at: [Logback Project](https://logback.qos.ch/index.html).
 
 ## Requirements

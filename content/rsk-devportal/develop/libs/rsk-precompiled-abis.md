@@ -8,7 +8,7 @@ tags: [libraries, abi, pre-compiled]
 
 
 
-Here you will find the ABIs for the existing precompiled contracts in RSK. You will also get their addresses and a builder to use it with web3js.
+Here you will find the ABIs for the existing precompiled contracts in Rootstock. You will also get their addresses and a builder to use it with web3js.
 
 ## Version
 
