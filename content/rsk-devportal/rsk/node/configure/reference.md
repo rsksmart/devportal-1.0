@@ -129,11 +129,11 @@ Options related to experimental import sync v0.1.
 Selects the database that will be used to store the information.
 Possible options are:
 
-* `leveldb` 
+* `leveldb`
 * `rocksdb` (default)
 
 If you wish to switch between the different storage options,
-for example from `leveldb` to `rocksdb` or vice versa, 
+for example from `leveldb` to `rocksdb` or vice versa,
 you must **restart** the node with the import option each time you do so.
 
 ## vm
@@ -372,15 +372,17 @@ by `http://checkip.amazonaws.com`.
 
 ## genesis
 
-It is the path to the genesis file (in *resources/genesis*).
-The folder *resources/genesis* contains several versions of
-genesis configuration according to the network the peer will run on.
+It is the path to the genesis file.
+The folder *resources/genesis* contains several versions of genesis
+configuration according to the network the peer will run on. Either one of these,
+or an absolute path to a file within the filesystem may be used.
 
 |  | `genesis` |
 | - | - |
 | Regtest | rsk-dev.json |
 | Testnet | bamboo-testnet.json |
 | Mainnet | rsk-mainnet.json |
+| Custom | /home/username/rskj_config/genesis.json |
 
 ## transaction.outdated
 
