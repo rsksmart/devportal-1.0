@@ -18,42 +18,6 @@ To setup a Rootstock node using Java, you need to:
 
 ### Install the node using a JAR file
 
-<<<<<<< HEAD
-#### Download and Setup
-
-1. **Download the JAR**: Download the Fat JAR or Uber JAR from [RSKj releases](https://github.com/rsksmart/rskj/releases), or compile it [reproducibly](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [otherwise](/rsk/node/contribute).
-1. **Create Directory**: Create a directory for the node.
-    ```jsx
-    mkdir rskj-node-jar
-    cd ~/rskj-node-jar
-    ```
-1. **Move the JAR**: Move or copy the just downloaded jar file to your directory.
-    ```jsx
-    mv ~/Downloads/rskj-core-6.0.0-ARROWHEAD-all.jar SHA256SUMS.asc /Users/{user}/rskj-node-jar/
-    ```
-
-#### Configuration
-
-1. **Create Config Directory**: Create another directory inside `~/rskj-node-jar/config`
-    ```jsx
-    mkdir config
-    ```
-1. **Download Config File**: Get `node.conf` from [here](https://github.com/rsksmart/rif-relay/blob/develop/docker/node.conf).
-1. **Move Config File**: Move the `node.conf` file to the `config` directory.
-
-#### Run the Node
-
-[](#top "multiple-terminals")
-- Linux, Mac OSX
-    ```shell
-    java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
-    ```
-- Windows
-    ```windows-command-prompt
-    java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
-    ```
-Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file such as `C:/RskjCode/rskj-core-6.0.0-ARROWHEAD-all.jar`.
-=======
 [](#top "collapsible")
 - Download and Setup
     1. **Download the JAR**: Download the Fat JAR or Uber JAR from [RSKj releases](https://github.com/rsksmart/rskj/releases), or compile it [reproducibly](https://github.com/rsksmart/rskj/wiki/Reproducible-Build) or [otherwise](/rsk/node/contribute).
@@ -83,7 +47,6 @@ Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file such as `
         java -cp <PATH-TO-THE-RSKJ-JAR> co.rsk.Start
         ```
         > Replace `<PATH-TO-THE-RSKJ-JAR>` with the actual path to your JAR file. For example, `C:/RskjCode/rskj-core-5.4.0-FINGERROOT-all.jar`.
->>>>>>> master
 
 ### Using Import Sync
 
@@ -114,7 +77,6 @@ Instead of the default synchronization, you can use import sync to import a pre-
 
 ### Check the RPC
 
-<<<<<<< HEAD
 After starting the node, if there's no output, it's running correctly. 
 
 1. To confirm, open a new console tab (it is important you do not close this tab or interrupt the process) and test the node's RPC server. A sample cURL request:
@@ -131,7 +93,7 @@ After starting the node, if there's no output, it's running correctly.
 
         Expect a response like:
         ```shell
-        {"jsonrpc":"2.0","id":67,"result":"RskJ/5.3.0/Mac OS X/Java1.8/ARROWHEAD-202f1c5"}
+        {"jsonrpc":"2.0","id":67,"result":"RskJ/5.3.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
         ```
 
 1. To check the block number:
@@ -145,35 +107,7 @@ After starting the node, if there's no output, it's running correctly.
         ```windows-command-prompt
         curl -X POST http://localhost:4444/ -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
         ```
-=======
-If you don't get any output after starting the node, then it's running correctly. To confirm, open a new console tab (it is important you do not close this tab or interrupt the process) and test the node's RPC server.
->>>>>>> master
 
-[](#top "collapsible")
-- Run sample request
-    - Run the following sample cURL request:
-        - Linux, Mac OSX
-            ```shell
-            curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
-            ```
-        - Windows
-            ```windows-command-prompt
-            curl http://localhost:4444 -s -X POST -H "Content-Type: application/json" --data '{"jsonrpc":"2.0","method":"web3_clientVersion","params":[],"id":67}'
-            ```
-            You should get a response like this:
-            ```shell
-            {"jsonrpc":"2.0","id":67,"result":"RskJ/5.4.0/Mac OS X/Java1.8/FINGERROOT-202f1c5"}
-            ```
-- Check block number 
-    - To check the block number:
-        - Linux, Mac OSX
-            ```shell
-            curl -X POST http://localhost:4444/ -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
-            ```
-        - Windows
-            ```windows-command-prompt
-            curl -X POST http://localhost:4444/ -H "Content-Type: application/json" --data '{"jsonrpc":"2.0", "method":"eth_blockNumber","params":[],"id":1}'
-            ```
         Output:
         ```jsx
         {"jsonrpc":"2.0","id":1,"result":"0x0"}
@@ -200,11 +134,7 @@ To change networks on the RSKj node, use the following commands:
     java -cp <PATH-TO-THE-RSKJ-FATJAR> co.rsk.Start --regtest
     ```
 
-<<<<<<< HEAD
-For example: `C:/RskjCode/rskj-core-6.0.0-ARROWHEAD-all.jar`.
-=======
 > Replace `<PATH-TO-THE-RSKJ-FATJAR>` with the actual path to your jar file. For example: `C:/RskjCode/rskj-core-5.4.0-FINGERROOT-all.jar`.
->>>>>>> master
 
 ### Video walkthrough
 

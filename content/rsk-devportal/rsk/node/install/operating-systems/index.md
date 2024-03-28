@@ -34,42 +34,6 @@ This should run without errors.
 ### Install RSKj using Docker image
 To install a Rootstock node using Docker:
 
-<<<<<<< HEAD
-### Install RSKj Using Docker
-To install an Rootstock node using Docker:
-
-1. Download the RSKj Dockerfiles and `supervisord.conf` from the [artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/6.0.0-arrowhead) or pull the image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj).
-
-    In the artifacts repo, select which ***type of*** node you want to install:
-      * A node connected to the public RSK Mainnet: `Dockerfile.MainNet`
-      * A node connected to the public RSK Testnet: `Dockerfile.TestNet`
-      * A node connected to a private RegTest network: `Dockerfile.RegTest`
-
-    > **Note:** If you get the following error:
-      
-    ```jsx
-      => ERROR [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.  0.0s
-      ------
-        > [6/6] COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf:
-          ------
-            failed to compute cache key: "/supervisord.conf" not found: not found
-    ```     
-    Ensure that supervisord.conf is in the same folder as the dockerfile.
-      
-    When the build finishes, you should see an output similar to this:
-      
-      ```jsx
-      [+] Building 158.0s (11/11) FINISHED                                          
-      => [internal] load build definition from Dockerfile.RegTest               0.0s
-      => => transferring dockerfile: 293B
-        ....
-        => => exporting layers                                                    3.8s 
-          => => writing image sha256:d73739affdbe3f82a8ba9c686d34c04f48ac510568522  0.0s 
-          => => naming to docker.io/library/regtest                                 0.0s
-          Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
-      ```
-    Now you have a container ready to run Rootstock!
-=======
 1. Pull the RSKj image from [Docker Hub](https://hub.docker.com/r/rsksmart/rskj). Alternatively, you can download the RSKj Dockerfiles and `supervisord.conf` from the [Rootstock artifacts repo](https://github.com/rsksmart/reproducible-builds/tree/master/rskj/5.4.0-fingerroot).
     [](#top "collapsible")
     - Downloading from the artifacts repository
@@ -97,7 +61,6 @@ To install an Rootstock node using Docker:
             Use 'docker scan' to run Snyk tests against images to find vulnerabilities and learn how to fix them
         ```
         Now you have a Docker container ready to run the Rootstock node!
->>>>>>> master
     
 1. To run the RegTest node, execute the following commands:
 
