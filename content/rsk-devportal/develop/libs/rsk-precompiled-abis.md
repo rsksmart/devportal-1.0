@@ -1,26 +1,24 @@
 ---
 menu_order: 500
-menu_title: RSK Pre-compiled ABIs
+menu_title: Rootstock Pre-compiled ABIs
 layout: rsk
-title: RSK Pre-compiled ABIs
+title: Rootstock Pre-compiled ABIs
 tags: [libraries, abi, pre-compiled]
 ---
 
 
 
-# Welcome to the precompiled ABIs from RSK.
+Here you will find the ABIs for the existing precompiled contracts in Rootstock. You will also get their addresses and a builder to use it with web3js.
 
-Here you will find the ABIs for the existing precompiled contracts in RSK. You will also get their addresses and a builder to use it with web3js.
+## Version
 
-# Version
+Different versions of the package mentioned are required for different Rootstock releases.
 
-Different versions of the package mentioned are required for different RSK releases.
-
-The semantic versioning of this package doesn’t correlate to the semantic versioning of RSK. For each named release of RSK, there will be a corresponding name version in npm.
+The semantic versioning of this package doesn’t correlate to the semantic versioning of Rootstock. For each named release of the RSKj node, there will be a corresponding name version in npm.
 
 This package's support starts with ORCHID.
 
-# How to use it
+## How to use it
 
 For the installation of these package you must execute in a terminal window:
 
@@ -56,13 +54,12 @@ var bridge = precompiled.bridge.build(new Web3('http://localhost:4444'));
 bridge.methods.getFederationAddress().call().then(console.log);
 ```
 
-# Important note
+> Important note:
+> If the version to be installed is not defined in the command line, the version will correspond to the latest version in [rskj releases page](https://github.com/rsksmart/reproducible-builds/tree/master/rskj).
 
-If the version to be installed is not defined in the command line, the version will correspond to the latest version in [rskj releases page](https://github.com/rsksmart/reproducible-builds/tree/master/rskj).
+## Versioning table
 
-# Versioning table
-
-| Package Version | RSK version   |
+| Package Version | Rootstock version   |
 |-----------------|---------------|
 | 1.0.0-ORCHID    | ORCHID-0.6.2  |
 | 2.0.0-WASABI    | WASABI-1.0.0  |
@@ -82,3 +79,6 @@ If the version to be installed is not defined in the command line, the version w
 | 5.0.0-fingerroot | FINGERROOT-5.0.0 |
 | 5.1.0-fingerroot | FINGERROOT-5.1.0 |
 | 5.2.0-fingerroot | FINGERROOT-5.2.0 |
+| 5.3.0-fingerroot | FINGERROOT-5.3.0 |
+| 5.4.0-fingerroot | FINGERROOT-5.4.0 |
+| 6.0.0-ARROWHEAD | ARROWHEAD-6.0.0 |
