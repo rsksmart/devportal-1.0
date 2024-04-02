@@ -6,7 +6,7 @@ title: Rootstock Testnet Faucet
 tags: faucet, Rootstock, testnet, address, wallet, tools
 ---
 
-Rootstock [Testnet Faucet](https://faucet.rsk.co/) can provide you with small denomination RBTC coins for Testnet after you input your wallet address and pass the CAPTCHA. See [How to get crypto on Rootstock](/content/rsk-devportal/guides/get-crypto-on-rsk/)
+Rootstock [Testnet Faucet](https://faucet.rsk.co/) can provide you with small denomination RBTC coins for Testnet after you input your wallet address and pass the CAPTCHA. See [How to get crypto on Rootstock](/guides/get-crypto-on-rsk/)
 
 <div align="center"><img width="100%" src="/assets/img/faucet/1-faucet.png" alt="overview of faucet"/></div>
 

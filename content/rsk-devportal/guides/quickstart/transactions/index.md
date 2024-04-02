@@ -8,9 +8,9 @@ description: 'Learn how to interact with Rootstock in your web browser, how to l
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---
 
-In the [previous section](/guides/quickstart/overview/browser), we set up a browser extension that is a crypto wallet, MetaMask. We connected to the Rootstock Testnet, and loaded this up with Rootstock’s cryptocurrency, RBTC, and an Rootstock-based token, RIF.
+In the [previous section](/guides/quickstart/browser), we set up a browser extension that is a crypto wallet, MetaMask. We connected to the Rootstock Testnet, and loaded this up with Rootstock’s cryptocurrency, RBTC, and an Rootstock-based token, RIF.
 
-> Note, if you are yet to do the above, we encourage you to go back and complete that step first. See: [Using Rootstock in the browser](/guides/quickstart/overview/browser).
+> Note, if you are yet to do the above, we encourage you to go back and complete that step first. See: [Using Rootstock in the browser](/guides/quickstart/browser).
 
 <div class="features-list">
     <ul id="card-list" class="row">

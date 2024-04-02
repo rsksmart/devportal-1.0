@@ -118,7 +118,7 @@ RNS has two major components:
 These three components roughly correspond to the three layers or views of the domain system:
 - From the user's point of view, the domain system is accessed through a simple [resolution operation](../operations/resolve). The domain space consists of a single tree and the user can request information from any section of the tree.
 - From the resolver's point of view, the domain system is composed of an unknown number of names. Each name has a corresponding resolver that provides information for a set of resolution types directly.
-- From the registry's point of view, the domain system consists of a [hierarchical tree](../architecture/registry) where each leaf has an owner (contract or account) and an associated resolver that provides information of the name.
+- From the registry's point of view, the domain system consists of a [hierarchical tree](../rns/architecture/registry) where each leaf has an owner (contract or account) and an associated resolver that provides information of the name.
 
 ## Guidelines on use
 
