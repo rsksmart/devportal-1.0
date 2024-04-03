@@ -42,7 +42,7 @@ Find a list of tokens, wallets and exchanges to buy, swap or exchange crypto on 
 |[TEX](https://tex.moneyonchain.com/) | Mainnet | RIF Token, BPro, RIF Dollar on chain, DOC, RIF Pro  | [RBTC](https://dev.rootstock.io/rsk/rbtc/), [BTC](https://bitcoin.org/bitcoin.pdf)    |    |    Decentralised Exchange|
 |[RIF on Chain](https://rif.moneyonchain.com/) | Mainnet | RIF, RDOC, RIFP, RIFX  | [RBTC](https://dev.rootstock.io/rsk/rbtc/), [BTC](https://bitcoin.org/bitcoin.pdf)    |    |    Decentralised Exchange|
 |[Liquality Swap](https://liquality.io/atomic-swap-wallet.html) | Mainnet | RIF Token, BPro, RIF Dollar on chain, RIF Pro  | [RBTC](https://dev.rootstock.io/rsk/rbtc/), [BTC](https://bitcoin.org/bitcoin.pdf)    |    |   Wallet + P2P Swap|
-|[Rootstock Faucet](https://faucet.rsk.co/) | Testnet | | [tRBTC](https://dev.rootstock.io/RSK/rbtc/)   |    |    Faucet |
+|[Rootstock Faucet](https://faucet.rsk.co/) | Testnet | | [tRBTC](https://dev.rootstock.io/rsk/rbtc/)   |    |    Faucet |
 |[RIF Faucet](https://faucet.rsk.co/) | Testnet | | [tRIF](https://faucet.rifos.org/)   |    |    Faucet |
 
 ## Next

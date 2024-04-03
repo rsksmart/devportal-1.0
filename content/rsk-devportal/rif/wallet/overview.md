@@ -40,4 +40,4 @@ Effortlessly include a contact's details (Username and/or address, Name) in your
 
 The RIF Wallet uses RIF Relay to invoke any smart contract method paying the fees with ERC20 token, such as RIF, USDRIF. When performing a transaction using the RIF Wallet, we use RIF Relay to pay the fees with ERC20 tokens, hence, we do not need the native cryptocurrency (RBTC) to pay the transaction fee. 
 
-> No direct fees are incurred when performing transactions using the RIF Wallet App. See [FAQs](/content/rsk-devportal/rif/wallet/faqs#general).
+> No direct fees are incurred when performing transactions using the RIF Wallet App. See [FAQs](../faqs#general).

@@ -36,7 +36,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | NOWNodes                                       | Node RPC                        | [NOWNodes](https://nownodes.io/)                                                                    |
 | JSON-RPC                                       | Libraries                       | [JSON RPC](https://dev.rootstock.io/rsk/node/architecture/json-rpc/)                                |
 | MtPelerin                                      | Bridges                         | [MtPelerin](https://www.mtpelerin.com/exchange-crypto?ssa=0.01&wsc=BTC&wdc=RBTC&wsa=0.01)            |
-| Pre-compiled ABIs                              | Libraries                       | [Precompiled ABIs](https://dev.rootstock.io/develop/libs/rsk-precompilied-abis/ )                           |
+| Pre-compiled ABIs                              | Libraries                       | [Precompiled ABIs](https://dev.rootstock.io/develop/libs/rsk-precompiled-abis/ )                           |
 | rLogin                                         | RIF Libraries                   | [rLogin](https://dev.rootstock.io/rif/rlogin/libraries/)                                          |
 | Relay                                          | RIF Libraries                   | [RIF Relay](https://dev.rootstock.io/rif/relay/)                                                     |
 | Hardhat                                        | Dev Environments                | [Hardhat](/tools/hardhat/) |

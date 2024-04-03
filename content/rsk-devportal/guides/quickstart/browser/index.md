@@ -31,8 +31,8 @@ If you would like to delve deeper, here are some resources that we recommend.
                <div class="card-title"><h2 class="zg-text-bg">Metamask</h2><span class="zg-label ml-1">01</span></div> 
                 <p class="card-desc">Learn how to install Metamask</p>
             </div>
-            </a><div class="btn-container "><a href="/guides/quickstart/browser/install-metamask)">
-                </a><a class="green" href="/guides/quickstart/browser/install-metamask)">Install Metamask</a>
+            </a><div class="btn-container "><a href="/guides/quickstart/browser/install-metamask/">
+                </a><a class="green" href="/guides/quickstart/browser/install-metamask/">Install Metamask</a>
             </div>
             </div>
         </div>
