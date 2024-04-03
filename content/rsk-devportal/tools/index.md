@@ -1,5 +1,5 @@
 ---
-layout: Rootstock
+layout: rsk
 title: Tools to build on Rootstock
 tags: hardhat, explorer, testnet, faucet, networks, deployment, gas-station, tools, Rootstock, ethereum, smart-contracts, install, get-started, how-to, wallets
 menu_order: 9

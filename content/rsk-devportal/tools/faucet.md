@@ -1,7 +1,7 @@
 ---
 menu_order: 400
 menu_title: Faucet
-layout: Rootstock
+layout: rsk
 title: Rootstock Testnet Faucet
 tags: faucet, Rootstock, testnet, address, wallet, tools
 ---

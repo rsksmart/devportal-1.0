@@ -2,6 +2,7 @@
 title: The Stack
 menu_title: The Stack
 menu_order: 1
+layout: 'rsk'
 ---
 
 <div class="container the-stack">

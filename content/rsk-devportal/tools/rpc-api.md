@@ -2,7 +2,7 @@
 menu_order: 500
 menu_title: Rootstock RPC API
 section_title: RPC API
-layout: Rootstock
+layout: rsk
 title: Getting Started with Rootstock RPC API 
 description: "Easily create, interact and deploy EVM compatible smart contracts using a robust set of JSON RPC methods available through the RPC API."
 tags: faucet, Rootstock, testnet, address, wallet, tools
