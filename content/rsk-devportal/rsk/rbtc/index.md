@@ -8,7 +8,14 @@ menu_title: RBTC Token
 permalink: /rsk/rbtc/
 ---
 
-The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in Rootstock. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/rsk/architecture/powpeg/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or [exchanges](#exchanges) in Mainnet.
+RBTC is the token used to [pay for the execution](/rsk/rbtc/gas/) of transactions in Rootstock. You can [convert BTC into RBTC](/rsk/rbtc/conversion/) by sending BTC through the [Powpeg](/guides/two-way-peg-app/) (both in Testnet and Mainnet), or by using the [faucet in Testnet](https://faucet.testnet.rsk.co/), or via decentralized exchanges.
+
+See [supported wallets](/wallet/use/).
+
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="https://rootstock.io/rbtc/#get-rbtc">Get RBTC</a>
+</div>
 
 ## RBTC (Smart Bitcoin in Mainnet)
 
@@ -34,8 +41,7 @@ The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/
       <td scope="row">How to get</td>
       <td>
         <ul>
-            <li><a href="#exchanges" target="_blank">Exchanges</a></li>
-            <li><a href="/rsk/architecture/powpeg/" target="_blank">Powpeg</a></li>
+            <li><a href="https://rootstock.io/rbtc/#get-rbtc" target="_blank">Get RBTC</a></li>
         </ul>
       </td>
     </tr>
@@ -43,7 +49,7 @@ The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/
       <td scope="row">Logo</td>
       <td>
         <img src="/assets/img/rsk/RBTC-logo.png" style="border: 2px solid black; width: 200px; height: 200px; background: white;" />
-        <a href="/assets/img/rsk/RBTC-logo.png" target="_blank">RBTC-logo.png</a>
+        <a href="/assets/img/rsk/RBTC-logo.png" target="_blank">RBTC</a>
       </td>
     </tr>
   </tbody>
@@ -74,20 +80,8 @@ The Smart Bitcoin (RBTC) is the token used to [pay for the execution](/rsk/rbtc/
       <td>
         <ul>
             <li><a href="https://faucet.rsk.co" target="_blank">Faucet</a></li>
-            <li><a href="/rsk/architecture/powpeg/" target="_blank">Powpeg</a></li>
         </ul>
       </td>
     </tr>
   </tbody>
 </table>
-
-## Wallets
-
-See [supported wallets](/wallet/use/).
-
-## Exchanges
-
-Looking for [RIF Token](/rif/token/)?
-
-You can obtain the RIF Token using [these exchanges](/rif/token/#exchanges),
-or see [How to Get RBTC](https://rootstock.io/rbtc/#get-rbtc) to obtain RBTC.

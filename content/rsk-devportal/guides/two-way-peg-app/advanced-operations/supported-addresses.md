@@ -1,7 +1,7 @@
 ---
 menu_order: 1400
 menu_title: Supported Addresses
-title: "Supported Addresses | 2 way peg app Documentation"
+title: "Supported Addresses"
 description: "See supported addresses on the two way peg app"
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk

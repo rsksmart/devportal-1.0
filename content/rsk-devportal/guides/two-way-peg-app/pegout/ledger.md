@@ -1,7 +1,7 @@
 ---
 menu_order: 1400
 menu_title: Peg-out using Ledger
-title: "Performing a peg-out using Ledger Hardware Wallet | 2 way peg app Documentation"
+title: "Performing a peg-out using Ledger Hardware Wallet"
 description: "Here, we will learn how to perform a peg-out using Ledger Hardware Wallet."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk

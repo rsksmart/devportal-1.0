@@ -2,7 +2,7 @@
 menu_order: 1100
 menu_title: Overview
 section_title: Peg-out
-title: "Overview | 2 way peg app Documentation"
+title: "Overview | Pegout"
 description: "Here, we will learn how to perform a peg-out transaction using the 2 way peg app."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk

@@ -48,7 +48,7 @@ To run the RIF Wallet Application, you need to set up your development environme
 * [RIF Wallet Libs](https://github.com/rsksmart/rif-wallet-libs)
 
 > - To use the RIF Wallet Libs, see section on [using the Libraries](/rif/wallet/dev-reference/rif-wallet-libs/).
-> - If you already have these prerequisites set up in your environment, you can skip to section on [Installing the tools](/rif/wallet/dev-reference/index#installing-the-tools) for more instructions.
+> - If you already have these prerequisites set up in your environment, you can skip to section on [Installing the tools](/rif/wallet/dev-reference/#installing-the-tools) for more instructions.
 
 ## Installation and Setup Instructions
 

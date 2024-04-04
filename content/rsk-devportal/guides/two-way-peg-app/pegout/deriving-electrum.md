@@ -1,7 +1,7 @@
 ---
 menu_order: 1200
 menu_title: Viewing a derived bitcoin address
-title: "Viewing a derived bitcoin address | 2 way peg app Documentation"
+title: "Viewing a derived bitcoin address"
 description: "Here, we will learn how to view a derived address using Electrum."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk

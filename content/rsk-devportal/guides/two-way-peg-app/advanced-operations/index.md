@@ -2,7 +2,7 @@
 menu_order: 1200
 menu_title: Overview
 section_title: Advanced Operations
-title: "Overview | 2 way peg app Documentation"
+title: "Overview | Advanced Operations"
 description: "See how to perform advanced operations on the two way peg app"
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk

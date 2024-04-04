@@ -1,7 +1,7 @@
 ---
 menu_order: 1600
 menu_title: Supported Wallets
-title: "Supported Wallets | 2 way peg app Documentation"
+title: "Supported Wallets"
 description: "See wallets which supports the two way peg app"
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk

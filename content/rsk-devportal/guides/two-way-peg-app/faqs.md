@@ -1,7 +1,7 @@
 ---
 menu_order: 1300
 menu_title: FAQs
-title: "Frequently Asked Questions (FAQs) | 2 way peg app Documentation"
+title: "Frequently Asked Questions (FAQs)"
 description: "Frequently asked questions."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
@@ -12,7 +12,7 @@ Here, you can find a list of frequently asked questions (FAQs) about the 2 way p
 
 [](#top "collapsible")
 - What are the requirements to use 2wp-app?
-    > To know more about the requirements, see [requirements](/guides/two-way-peg-app/requirements/)
+    > To know more about the requirements, see [prerequisites](/guides/two-way-peg-app/prerequisites/)
 - What are the common errors in peg-out transactions?
     > To know more about the common errors, see [common errors](/guides/two-way-peg-app/pegout/pegout-common-errors).
 - How do I derive a BTC private key after sending RBTC through the PowPeg?
@@ -21,16 +21,16 @@ Here, you can find a list of frequently asked questions (FAQs) about the 2 way p
     > Legacy address is the original BTC address while SegWit is the newer address format with lower fees. SegWit means Segregated Witness, where Segregated is to separate and Witness is the transaction signatures involved with a specific transaction.
 - What type of addresses do I need to perform a peg in?
     > - For information on the type of addresses to use when performing a peg-in transaction
-    > - See the [supported addresses](/guides/two-way-peg-app/supported-addresses) page.
+    > - See the [supported addresses](/guides/two-way-peg-app/advanced-operations/supported-addresses/) page.
 - Why use the 2 way peg instead of the PowPeg directly? 
     > - The 2 way peg app has a lot of benefits including enabling easier and simplified peg-in transactions.
     > - See [why use the 2 way peg app?](/guides/two-way-peg-app/overview#why-use-the-2-way-peg-app) for a list of benefits when you use the application.
 - What are the supported browsers to use 2wp-app?
     > - To know more about the supported browsers
-    > - See the [supported browsers](/guides/two-way-peg-app/supported-browsers).
+    > - See the [supported browsers](/guides/two-way-peg-app/advanced-operations/supported-browsers/).
 - What are the supported wallets to use 2wp-app?**
     > - To know more about the requirements;
-    > - See [supported wallets](/guides/two-way-peg-app/supported-wallets).
+    > - See [supported wallets](/guides/two-way-peg-app/advanced-operations/supported-wallets/).
 
 ----
 

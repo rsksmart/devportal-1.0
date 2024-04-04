@@ -1,7 +1,7 @@
 ---
 menu_order: 1600
 menu_title: Peg-out using Metamask
-title: "Performing a peg-out using Metamask Wallet | 2 way peg app Documentation"
+title: "Performing a peg-out using Metamask Wallet"
 description: "Here, we will learn how to perform a peg-out using Metamask Wallet."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk
