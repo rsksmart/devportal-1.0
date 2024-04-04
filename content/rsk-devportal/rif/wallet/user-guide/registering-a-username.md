@@ -17,7 +17,7 @@ To register a username, follow the steps below;
 
 Open the RIF Wallet application, and click on the “No username” at the top left corner. 
 
-> Ensure the RIF token is selected as shown in the image below. To register a .rsk username, you need some RIF tokens in your wallet. See section on [Funding Your Wallet](./funding-a-wallet/) for ways on how to fund your wallet with the RIF Token.
+> Ensure the RIF token is selected as shown in the image below. To register a .rsk username, you need some RIF tokens in your wallet. See section on [Funding Your Wallet](/rif/wallet/user-guide/funding-a-wallet/) for ways on how to fund your wallet with the RIF Token.
 
 <div class="image-container">
     <img src="/assets/img/rif-wallet/9-open-the-rif-wallet.jpg"  title="RIF Wallet - Open RIF Wallet"/>

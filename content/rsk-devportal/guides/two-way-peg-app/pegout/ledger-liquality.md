@@ -16,7 +16,7 @@ The [Liquality Wallet](/solutions/liquality/) is a browser extension for accessi
 
 We will perform a peg-out transaction using the Ledger Hardware Wallet and Liquality.
 
-> See [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/getting-started#performing-a-peg-in-transaction-with-ledger)
+> See [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/pegin/ledger/)
 
 ### Get started
 

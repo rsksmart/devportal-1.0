@@ -32,7 +32,7 @@ The 2 way peg app, has two primary features, they are:
 - Peg-in: A conversion from BTC to RBTC. See [Glossary](/guides/two-way-peg-app/glossary/) page for more explanation. 
     - **Note: The peg-in process is final and cannot be reverted**.
 
-- Peg-out: A conversion from RBTC to BTC. This current version of the 2 way peg app. See [pegout](/guides/two-way-peg/pegout/index/) for more explanation.
+- Peg-out: A conversion from RBTC to BTC. This current version of the 2 way peg app. See [pegout](/guides/two-way-peg-app/pegout/) for more explanation.
 
 ## Why use the 2 way peg app?
 

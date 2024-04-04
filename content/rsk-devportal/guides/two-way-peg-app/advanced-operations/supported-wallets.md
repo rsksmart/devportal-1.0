@@ -10,11 +10,11 @@ layout: rsk
 ## Supported Wallets
 
 - Hardware wallets
-    - Ledger
-    - Trezor
-- Software wallets (Peg-out)
-    - [Liquality](/guides/two-way-peg-app/getting-started-pegout#connect-your-liquality-wallet)
-    - [Metamask](/guides/two-way-peg-app/getting-started-pegout#connect-your-metamask-wallet)
+    - [Ledger](/guides/two-way-peg-app/pegin/ledger/)
+    - [Trezor](/guides/two-way-peg-app/pegin/trezor/)
+    - Leather Hardware Wallet
+- Software wallets
+    - [Liquality](/guides/two-way-peg-app/pegin/liquality/)
 
 ----
 

@@ -21,7 +21,7 @@ RIF Rollup can be used for the following purposes:
 
 Read the article on [RIF Rollup Explained: Top 4 Use Cases for Cheaper & Faster Payments](https://rif.technology/content-hub/rif-rollup-explained/).
 
-To get started, read more in the [RIF Rollup Documentation | Overview](overview/) or see the [RIF Rollup Tutorials](/guides/rif-rollup/)
+To get started, read more in the [RIF Rollup Documentation | Overview](/rif/rollup/overview/) or see the [RIF Rollup Tutorials](/guides/rif-rollup/)
 
 
 ## For Developers
@@ -52,7 +52,7 @@ Table of Contents
  <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="overview">Overview</a>
+        <a href="/rif/rollup/overview/">Overview</a>
         <br />
         <br />
         <p>All you need to know about the RIF Rollup</p>
@@ -60,7 +60,7 @@ Table of Contents
   </div>
   <div class="col">
       <div class="rns-index-box">
-        <a href="./dev-reference/">Developer Reference Guide</a>
+        <a href="/rif/rollup/dev-reference/">Developer Reference Guide</a>
         <br />
         <br />
         <p>Get started building on RIF Rollup</p>
@@ -68,7 +68,7 @@ Table of Contents
   </div>
   <div class="col">
       <div class="rns-index-box">
-        <a href="./dev-reference/design">Design and Architecture</a>
+        <a href="/rif/rollup/dev-reference/design/">Design and Architecture</a>
         <br />
         <br />
         <p>Learn more about the RIF Rollup architecture</p>
@@ -77,7 +77,7 @@ Table of Contents
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="dapps">dApps</a>
+        <a href="/rif/rollup/dapps/">dApps</a>
         <br />
         <br />
         <p>Take a look at the dapps currently available on Rootstock (RSK)</p>
@@ -94,15 +94,7 @@ Table of Contents
   </div>
   <div class="col">
     <div class="rns-index-box">
-      <a href="./dev-reference/starter-kit">Starter Kit (Coming soon)</a>
-      <br />
-      <br />
-      <p>This kit comes with everything you need to start using the RIF Rollup inside your applications.</p>
-    </div>
-  </div>
-  <div class="col">
-    <div class="rns-index-box">
-        <a href="security">Security</a>
+        <a href="/rif/rollup/security/">Security</a>
         <br />
         <br />
         <p>See how security is achieved with the RIF Rollup.</p>
@@ -111,7 +103,7 @@ Table of Contents
   <div class="row rif_blue_text">
     <div class="col">
       <div class="rns-index-box">
-        <a href="faqs" rel="noopener noreferrer" >Frequently Asked Questions</a>
+        <a href="/rif/rollup/faqs/" rel="noopener noreferrer" >Frequently Asked Questions</a>
         <br />
         <br />
         <p>A set of frequently asked questions about the RIF Rollup.</p>
@@ -120,7 +112,7 @@ Table of Contents
   </div>
   <div class="col">
     <div class="rns-index-box">
-      <a href="./dev-reference/troubleshooting">Troubleshooting and Common Errors</a>
+      <a href="/rif/rollup/dev-reference/troubleshooting/">Troubleshooting and Common Errors</a>
       <br />
       <br />
       <p>Find common errors and how to troubleshoot them.</p>
@@ -128,7 +120,7 @@ Table of Contents
   </div>
   <div class="col">
       <div class="rns-index-box">
-        <a href="glossary">Glossary</a>
+        <a href="/rif/rollup/glossary/">Glossary</a>
         <br />
         <br />
         <p>A set of terms used on RIF Rollup.</p>

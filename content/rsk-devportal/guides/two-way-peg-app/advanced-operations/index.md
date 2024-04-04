@@ -19,7 +19,7 @@ These operations include;
 * Adjusting [network fees](#adjusting-network-fees)
 * Viewing [Advanced data](#advanced-data)
 
-> For  more information, see [design and architecure](/guides/two-way-peg-app/advanced-operations/design-and-architecture/), [supported addresses](/guides/two-way-peg-app/advanced-operations/supported-addresses/), [supported wallets](/guides/two-way-peg-app/advanced-operations/supported-wallets/), [supported browsers](/guides/two-way-peg-app/advanced-operations/supported-browsers/)
+> For  more information, see [design and architecure](/guides/two-way-peg-app/advanced-operations/design-architecture/), [supported addresses](/guides/two-way-peg-app/advanced-operations/supported-addresses/), [supported wallets](/guides/two-way-peg-app/advanced-operations/supported-wallets/), [supported browsers](/guides/two-way-peg-app/advanced-operations/supported-browsers/)
 
 --- 
 
@@ -27,7 +27,7 @@ These operations include;
 
 ### Pegin:
 
-There are three types of accounts on the 2 way peg app. See [supported addresses](/guides/two-way-peg-app/getting-started#supported-addresses) section for examples of these types of addresses.
+There are three types of accounts on the 2 way peg app. See [supported addresses](/guides/two-way-peg-app/advanced-operations/supported-addresses/) section for examples of these types of addresses.
 
 To select an account to send BTC from, click on **Select the account** as shown in the image below. This loads the balance for all the addresses in your hardware wallet.
 
@@ -35,7 +35,7 @@ To select an account to send BTC from, click on **Select the account** as shown 
 
 ![Bitcoin account to send from](/assets/img/guides/two-way-peg-app/51-bitcoin-account-to-send-from.png)
 
-Choose the address you want to send TBTC from. See the [getting funds](/guides/two-way-peg-app/getting-started#getting-funds) section for how to get BTC or TBTC.
+Choose the address you want to send TBTC from. See the [getting funds](/guides/two-way-peg-app/prerequisites#get-funds) section for how to get BTC or TBTC.
 
 ## How to view advanced details
 

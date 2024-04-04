@@ -59,7 +59,7 @@ If you would like to skip this step above, go ahead and follow the steps startin
 To set up the RIF Wallet App, we need to clone the following repositories.
 
 * Clone the [RIF Wallet Repo](https://github.com/rsksmart/rif-wallet)
-* Run [Backend Server](https://github.com/rsksmart/rif-wallet-services) locally or [connect to an instance](/rif/wallet/dev-reference/getting-started#connect-to-an-instance).
+* Run [Backend Server](https://github.com/rsksmart/rif-wallet-services) locally or [connect to an instance](/rif/wallet/dev-reference/running-with-local-server#connect-to-a-shared-instance).
 
 ### Installing the tools
 
@@ -76,7 +76,7 @@ To set up the RIF Wallet App, we need to clone the following repositories.
 
 Depending on your operating system, for Mac users, the easiest way to download and install [Xcode](https://developer.apple.com/xcode/resources/) is via the [Mac App Store](https://developer.apple.com/xcode/resources/). For other platforms, the easiest way is to install the [Android Studio](https://developer.android.com/) Development Tool.
 
-See the [Troubleshooting](#troubleshooting) section, for information on how to resolve some issues.
+See the [Troubleshooting](/rif/wallet/dev-reference/troubleshooting/) section, for information on how to resolve some issues.
 
 #### React
 

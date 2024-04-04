@@ -65,13 +65,13 @@ Learn about Rootstock, how it enables smart contract on Bitcoin, and its compati
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content"><a href="/guides/quickstart/overview/eth-rpc/">
+<div class="content"><a href="/guides/quickstart/overview/evm-compatibility/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg bg-green">JSON RPC</h2><span class="zg-label ml-1 bg-green">05</span></div> 
                 <p class="card-desc">Learn about ethereum compatible json-rpc methods on Rootstock</p>
             </div>
-            </a><div class="btn-container"><a href="/guides/quickstart/overview/eth-rpc/">
-                </a><a class="green" href="/guides/quickstart/overview/eth-rpc/">Read More</a>
+            </a><div class="btn-container"><a href="/guides/quickstart/overview/evm-compatibility/">
+                </a><a class="green" href="/guides/quickstart/overview/evm-compatibility/">Read More</a>
             </div>
             </div>
         </div>

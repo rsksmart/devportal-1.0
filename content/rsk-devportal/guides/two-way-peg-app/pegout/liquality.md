@@ -63,7 +63,7 @@ To see the status of a transaction, click on the *Go to status page* button, you
 ![Transaction status for pegout id](/assets/img/guides/two-way-peg-app/tx-status.png)
 
 
-This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/pegout/deriving-electrum) and [How to check a transaction status](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page).
+This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/pegout/deriving-electrum) and [How to check a transaction status](/guides/two-way-peg-app/pegin/status/).
 
 ----
 

@@ -14,9 +14,8 @@ layout: rsk
 ​> - Note that we will be using the 2 way peg app on [2 way peg app - Testnet](https://app.2wp.testnet.rootstock.io/) for learning purposes.
 > - For transactions using **real tokens**, use the [2 way peg app - Mainnet](https://app.2wp.rootstock.io/) application.
 > - We're using Ledger Nano and Trezor One hardware wallets on this tutorial.
-> - For how to perform a peg-in transaction using hardware wallets. See [Getting started using hardware wallets](/guides/two-way-peg-app/getting-started#using-hardware-wallets).
-> - To use Ledger hardware wallet to create a **peg-in** see [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/getting-started#performing-a-peg-in-transaction-with-ledger)
-> - To use Trezor hardware wallet to create a **peg-in** see [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/getting-started#trezor-hardware-wallet)
+> - To use Ledger hardware wallet to create a **peg-in** see [How to perform a peg-in transaction using Ledger](/guides/two-way-peg-app/pegin/ledger/)
+> - To use Trezor hardware wallet to create a **peg-in** see [How to perform a peg-in transaction using Trezor](/guides/two-way-peg-app/pegin/trezor/)
 
 
 ### Get started with Ledger

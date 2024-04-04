@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://dev.rootstock.io">
-    <img alt="Rootstock-logo" src="./content/rsk-devportal/assets/img/courses/rootstock-logo.png" width="100" />
+    <img alt="Rootstock-logo" src="/content/rsk-devportal/assets/img/courses/rootstock-logo.png" width="100" />
   </a>
 </p>
 <h1 align="center">
@@ -9,7 +9,7 @@
 
 This repo contains the Rootstock + RIF Developer Portal:[https://dev.rootstock.io](https://dev.rootstock.io). The Developer Portal is the home for Rootstock (RSK) documentation for end users and developers. Check out our quickstarts, tutorials, API reference, and code examples.
 
-_Start your journey to building dApps on Rootstock, see the [quick start guide](./content/rsk-devportal/guides/quickstart/) or see [setup](#set-up) instructions, or the [contributing](#contributing) guide for how to contribute to the Rootstock Developer Portal._
+_Start your journey to building dApps on Rootstock, see the [quick start guide](/guides/quickstart/) or see [setup](#set-up) instructions, or the [contributing](#contributing) guide for how to contribute to the Rootstock Developer Portal._
 
 🚀 [Send us feedback](#issues)
 
