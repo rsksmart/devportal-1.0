@@ -2,7 +2,7 @@
 menu_order: 1000
 menu_title: Overview
 section_title: Peg-in
-title: "Overview | 2 way peg app Documentation"
+title: "Overview | Peg-in"
 description: "Here, we will learn how to perform a peg-in transaction using the 2 way peg app."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk
@@ -18,7 +18,7 @@ We will do the following:
 
 1. [Set up environment](/guides/two-way-peg-app/prerequisites/)
 2. Perform a peg-in (BTC - RBTC) transaction using [Ledger Hardware Wallet](/guides/two-way-peg-app/pegin/ledger/)
-3. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](/guides/two-way-peg-app/trezor/)
+3. Perform a peg-in (BTC - RBTC) transaction using [Trezor Hardware Wallet](/guides/two-way-peg-app/pegin/ledger/)
 4. Perform a peg-in (BTC - RBTC) transaction using [Liquality Software Wallet](/guides/two-way-peg-app/pegin/liquality/)
 5. [View a transaction status](/guides/two-way-peg-app/pegin/status/).
 

@@ -1,7 +1,7 @@
 ---
 menu_order: 200
 menu_title: Overview
-title: "Overview | 2 way peg app Documentation"
+title: "Overview"
 description: "Welcome to the overview section of the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
@@ -32,7 +32,7 @@ The 2 way peg app, has two primary features, they are:
 - Peg-in: A conversion from BTC to RBTC. See [Glossary](/guides/two-way-peg-app/glossary/) page for more explanation. 
     - **Note: The peg-in process is final and cannot be reverted**.
 
-- Peg-out: A conversion from RBTC to BTC. This current version of the 2 way peg app. See [pegout](/guides/two-way-peg/pegout/index/) for more explanation.
+- Peg-out: A conversion from RBTC to BTC. This current version of the 2 way peg app. See [pegout](/guides/two-way-peg-app/pegout/) for more explanation.
 
 ## Why use the 2 way peg app?
 

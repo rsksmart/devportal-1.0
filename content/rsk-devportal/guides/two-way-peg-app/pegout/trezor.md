@@ -1,7 +1,7 @@
 ---
 menu_order: 1900
 menu_title: Peg-out using rLogin (Trezor and Ledger)
-title: "Performing a peg-out transaction using rLogin (Trezor and Ledger)| 2 way peg app Documentation"
+title: "Performing a peg-out transaction using rLogin (Trezor and Ledger)"
 description: "Here, we will learn how to perform a peg-out using Trezor."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk

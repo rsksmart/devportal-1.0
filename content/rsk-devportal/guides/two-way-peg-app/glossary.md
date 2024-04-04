@@ -1,7 +1,7 @@
 ---
 menu_order: 1500
 menu_title: Glossary
-title: "Glossary | 2 way peg app Documentation"
+title: "Glossary"
 description: "Welcome to the glossary section for the 2 way peg app documentation."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk

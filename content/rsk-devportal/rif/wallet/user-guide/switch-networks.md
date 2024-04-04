@@ -7,7 +7,7 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
-The RIF Wallet is a versatile wallet suitable for end users and developers. During development, developers may use an environment called `TESTNET` to build and test applications, and this requires use of test tokens. See [Getting Test Tokens](/rif/wallet/user-guide/funding-a-wallet#getting-test-tokens). On default, the RIF wallet application uses the `TESTNET` environment which involves transactions using test tokens.
+The RIF Wallet is a versatile wallet suitable for end users and developers. During development, developers may use an environment called `TESTNET` to build and test applications, and this requires use of test tokens. See [Getting Test Tokens](/rif/wallet/dev-reference/). On default, the RIF wallet application uses the `TESTNET` environment which involves transactions using test tokens.
 
 > CRUCIAL: Confirm you're on `MAINNET` before transacting with real tokens to avoid potential loss. See how to switch to mainnet below. For developers, set default network in [configure networks](/rif/wallet#configure-networks).
 

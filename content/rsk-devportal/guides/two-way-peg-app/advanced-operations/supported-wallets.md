@@ -1,7 +1,7 @@
 ---
 menu_order: 1600
 menu_title: Supported Wallets
-title: "Supported Wallets | 2 way peg app Documentation"
+title: "Supported Wallets"
 description: "See wallets which supports the two way peg app"
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk
@@ -10,11 +10,11 @@ layout: rsk
 ## Supported Wallets
 
 - Hardware wallets
-    - Ledger
-    - Trezor
-- Software wallets (Peg-out)
-    - [Liquality](/guides/two-way-peg-app/getting-started-pegout#connect-your-liquality-wallet)
-    - [Metamask](/guides/two-way-peg-app/getting-started-pegout#connect-your-metamask-wallet)
+    - [Ledger](/guides/two-way-peg-app/pegin/ledger/)
+    - [Trezor](/guides/two-way-peg-app/pegin/trezor/)
+    - Leather Hardware Wallet
+- Software wallets
+    - [Liquality](/guides/two-way-peg-app/pegin/liquality/)
 
 ----
 

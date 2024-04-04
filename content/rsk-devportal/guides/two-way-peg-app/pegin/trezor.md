@@ -1,7 +1,7 @@
 ---
 menu_order: 1400
 menu_title: Peg-in using Trezor Hardware Wallet
-title: "Performing a peg-in in using Trezor Hardware Wallet | 2 way peg app Documentation"
+title: "Performing a peg-in in using Trezor Hardware Wallet"
 description: "Here, we will learn how to perform a peg-in transaction using the Trezor Hardware Wallet."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk

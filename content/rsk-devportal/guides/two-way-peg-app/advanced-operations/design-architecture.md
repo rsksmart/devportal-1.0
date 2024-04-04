@@ -1,7 +1,7 @@
 ---
 menu_order: 1300
 menu_title: Design and Architecture
-title: "Design and Architecture | 2 way peg app Documentation"
+title: "Design and Architecture"
 description: "Two way peg design and architecture."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, rootstock, testnet, mainnet, guide, setup, integrate, use
 layout: rsk

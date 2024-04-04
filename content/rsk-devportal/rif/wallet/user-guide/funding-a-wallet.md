@@ -14,7 +14,7 @@ In this section, we will cover;
 * Getting test tokens
 * Depositing to your wallet address via centralized and decentralized exchanges
 
-> See the [different ways you can fund your wallet with RBTC](/guides/get-crypto-on-rsk/)
+> See the [different ways you can fund your wallet with RBTC](https://rootstock.io/rbtc/#get-rbtc)
 
 ## Viewing your wallet address
 
@@ -47,7 +47,7 @@ If you’re a developer looking to use the RIF wallet app in Testnet. See video 
 You can deposit to your wallet using the native Rootstock Powpeg, or using the 2 way peg app or via Sovryn Fast BTC:
 
 * How to get RBTC using the [Rootstock built-in PowPeg](/guides/get-crypto-on-rsk/powpeg-btc-rbtc/) or watch the Youtube video on [How to convert BTC to RBTC using the Powpeg](https://youtu.be/t4y6SXbGvWs)
-* How to [convert BTC to RBTC](/guides/two-way-peg-app/getting-started/) using the 2way Peg App and a hardware wallet.
+* How to [convert BTC to RBTC](/guides/two-way-peg-app/pegin/) using the 2way Peg App
 * How to [Get RBTC using Sovryn](https://www.youtube.com/watch?v=8ds2_9hzZYM&ab_channel=Rootstock)
 
 #### Depositing to a wallet address using a Centralized Exchange

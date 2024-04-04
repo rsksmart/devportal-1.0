@@ -1,7 +1,7 @@
 ---
 menu_order: 1700
 menu_title: Troubleshooting and Common Errors
-title: "Common errors when using the app | 2 way peg app Documentation"
+title: "Common errors when using the app"
 description: "Here, we will learn how to perform a peg-out using Metamask Wallet."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk

@@ -1,7 +1,7 @@
 ---
 menu_order: 1500
 menu_title: Peg-out using Liquality
-title: "Performing a peg-out using Liquality Wallet | 2 way peg app Documentation"
+title: "Performing a peg-out using Liquality Wallet"
 description: "Here, we will learn how to perform a peg-out using Liquality Software Wallet."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk
@@ -63,7 +63,7 @@ To see the status of a transaction, click on the *Go to status page* button, you
 ![Transaction status for pegout id](/assets/img/guides/two-way-peg-app/tx-status.png)
 
 
-This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/pegout/deriving-electrum) and [How to check a transaction status](/guides/two-way-peg-app/getting-started#using-the-transaction-status-page).
+This address should match the one you can access through Electrum. See [How to view a derived address](/guides/two-way-peg-app/pegout/deriving-electrum) and [How to check a transaction status](/guides/two-way-peg-app/pegin/status/).
 
 ----
 

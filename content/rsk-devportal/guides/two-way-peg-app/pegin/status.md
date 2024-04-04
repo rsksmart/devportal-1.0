@@ -1,7 +1,7 @@
 ---
 menu_order: 1300
 menu_title: Viewing Peg-in Transaction Status
-title: "Viewing Transaction Status | 2 way peg app Documentation"
+title: "Viewing Transaction Status"
 description: "Here, we will learn how to view a transaction status on the 2 way peg app."
 tags: 2 way peg, powpeg, peg-in, peg-out, 2way-peg, bridge, rbtc, btc, testnet, mainnet, trezor, liquality, leger, guide, setup, integrate, use
 layout: rsk
