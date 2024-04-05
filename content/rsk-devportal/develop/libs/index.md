@@ -15,7 +15,7 @@ Apologies for any inconvenience this may have caused. Also reach out to us on [C
 
 ## Rootstock Libraries
 
-- [Rootstock Pre-compiled ABIs](/libraries/rsk-precompiled-abis/)
+- [Rootstock Pre-compiled ABIs](./rsk-precompiled-abis/)
 
 ## Rootstock Libraries - External
 

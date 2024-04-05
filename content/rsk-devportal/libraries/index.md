@@ -12,7 +12,7 @@ Apologies for any inconvenience this may have caused. Also reach out to us on [D
 
 ## RSK Libraries
 
-- [RSK Pre-compiled ABIs](/libraries/rsk-precompiled-abis/)
+- [RSK Pre-compiled ABIs](../develop/libs/rsk-precompiled-abis)
 
 ## RSK Libraries - External
 

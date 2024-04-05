@@ -9,7 +9,7 @@ layout: rsk
 
 In this section, we will cover what cross chain bridges are, how they work and how to use the Rootstock - Ethereum Token bridge to cross token between chains.
 
-![Rootstock-Ethereum Token Bridge](/assets/img/tools/tokenbridge/token-bridge-diagram.png)
+![Rootstock-Ethereum Token Bridge](../../../assets/img/tools/tokenbridge/token-bridge-diagram.jpg)
 
 ## What is a Cross-Chain Bridge?
 
