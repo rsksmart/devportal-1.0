@@ -13,7 +13,6 @@ Kripton integrates with Rootstock to provide an on/off ramp solution to give use
 
 ![Kripton-banner-image](/assets/img/solutions/kriptonmarket/kripton-banner.jpg)
 
-> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/kriptonmarket/bahasa)
 
 ## Integration with Rootstock
 
@@ -107,4 +106,4 @@ Kripton integrates with Rootstock to provide an on/off ramp solution to give use
 - [Twitter](https://twitter.com/Kriptonmarket)
 - [Telegram](https://t.me/kriptonmarket)
 
-> This page is available in: [English](/solutions/kriptonmarket/) | [Tagalog (🇵🇭)](/solutions/kriptonmarket/tagalog/) | [Bahasa (🇮🇩/🇲🇾/🇸🇬)](/solutions/kriptonmarket/bahasa)
+

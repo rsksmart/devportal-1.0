@@ -8,7 +8,7 @@ tags: erc20, bridge, faqs, defi, rbtc, decentralized, token-bridge, tokens, quic
 
 ## Troubleshooting
 
-If you need guide troublehsooting an issue go to [https://developers.rsk.co/kb/tokenbridge-troubleshooting/](https://developers.rsk.co/kb/tokenbridge-troubleshooting/)
+If you need guide troublehsooting an issue go to [/kb/tokenbridge-troubleshooting/](/kb/tokenbridge-troubleshooting/)
 
 ## What is the Token Bridge?
 
@@ -18,7 +18,7 @@ The UI is available at:
 - Mainnet: [tokenbridge.rsk.co](https://tokenbridge.rsk.co/)
 - Testnet: [testnet.tokenbridge.rsk.co](https://testnet.tokenbridge.rsk.co/)
 
-<img src="/assets/img/tools/tokenbridge/token-bridge-diagram.png"/>
+![Rootstock-Ethereum Token Bridge](../../../assets/img/tools/tokenbridge/token-bridge-diagram.jpg)
 
 ## What is a Side Token (mirror ERC20)?
 
