@@ -12,7 +12,7 @@ tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-min
 
 ![Armadillo Workflow](/assets/img/guides/armadillo/armadillo-workflow.png)
 
-![Armadillo Workflow 2](/assets/img/guides/armadillo/armadiallo-workflow-1.png)
+![Armadillo Workflow 2](/assets/img/guides/armadillo/armadillo-workflow-1.png)
 
 ## Armadillo Infrastructure
 

@@ -901,6 +901,4 @@ const rbtcId = await rbtcProxy.resolveTokenId('0x0000000000000000000000000000000
 const erc20Id = await rbtcProxy.resolveTokenId('0xFab46E002BbF0b4509813474841E0716E6730136');
 ```
 
-> See configuration examples for how to deploy to different Rootstock networks using the RIF Rollup [Starter Kit](../../walkthrough).
-
-
+> See [configuration examples](#connecting-to-rif-rollup-network) for how to deploy to different Rootstock networks.

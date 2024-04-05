@@ -8,7 +8,7 @@ tags: erc20, bridge, faqs, defi, rbtc, decentralized, token-bridge, tokens, quic
 
 ## Troubleshooting
 
-If you need guide troublehsooting an issue go to [https://dev.rootstock.io/kb/tokenbridge-troubleshooting/](https://dev.rootstock.io/kb/tokenbridge-troubleshooting/)
+If you need guide troublehsooting an issue go to [/kb/tokenbridge-troubleshooting/](/kb/tokenbridge-troubleshooting/)
 
 ## What is the Token Bridge?
 
