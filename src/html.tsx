@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 export default function HTML(props: any) {
   return (
-    <html {...props.htmlAttributes}>
+    <html lang="en" {...props.htmlAttributes}>
     <head>
       <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
