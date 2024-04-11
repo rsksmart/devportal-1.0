@@ -31,6 +31,3 @@ Here are some dApps on Rootstock with account abstraction functionalities.
 [](#top "collapsible")
 - RIF Wallet
     - Built with react native, and account abstraction at its core, the [RIF wallet](https://github.com/rsksmart/rif-wallet) is a programmable wallet that enables developers and businesses to build and deploy a DeFi wallet for their end-users. With features like sending and receiving crypto using human readable names, paying for gas fees using ERC20 tokens, safely transition your users into Web3 without hassle. See some of the [use cases](https://rif.technology/use-cases/) of the RIF Wallet.
-
-----
-Next: Setup a dApp to use account abstraction.
