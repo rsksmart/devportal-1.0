@@ -41,6 +41,7 @@ The following detail the most commonly used configuration fields parsed by RSKj.
 - [`public.ip`](#publicip)
 - [`genesis`](#genesis)
 - [`transaction.outdated`](#transactionoutdated)
+- [`transaction.gasPriceCalculatorType`](#transactionGasPriceCalculatorType)
 - [`play.vm`](#playvm)
 - [`hello.phrase`](#hellophrase)
 - [`details.inmemory.storage.limit`](#detailsinmemorystoragelimit)
@@ -394,6 +395,15 @@ It defines when a transaction is outdated:
 * `transaction.outdated.timeout = int`
   is the number of seconds that should pass before pending transaction is removed.
   Suggested value: `100` (10 blocks * 10 seconds per block).
+
+## transaction.gasPriceCalculatorType
+
+It defines the type of gas price calculator being used.
+
+Possible Values: `WEIGHTED_PERCENTILE`, `PLAIN_PERCENTILE` (default)
+
+Setting this value to `WEIGHTED_PERCENTILE` allows for the gas used by the tx to
+be taken into account.
 
 ## play.vm
 
