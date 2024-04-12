@@ -106,6 +106,14 @@ Switching between different types of databases in your system requires you to mo
 
 > Note: Nodes that were already running on LevelDB will continue to use LevelDB, and the same applies to RocksDB. However, all nodes setup from scratch will use RocksDB by default.
 
+### Gas Price Setting
+
+The value returned by `eth_gasPrice` can be modified by setting a multiplier to
+be used while calculating the aforementioned gas price.
+
+This can be done by setting a numeric value on `rpc.gasPriceMultiplier` in the
+configuration file. Default value is `1.1`.
+
 ### Troubleshooting
 
 #### UDP port already in use
