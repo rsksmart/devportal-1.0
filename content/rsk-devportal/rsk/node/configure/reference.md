@@ -63,9 +63,6 @@ Describes how your node peers with other nodes.
   | Regtest | Not applicable |
   | Testnet |`"bootstrap02.testnet.rsk.co:50505","bootstrap03.testnet.rsk.co:50505","bootstrap04.testnet.rsk.co:50505","bootstrap05.testnet.rsk.co:50505"` |
   | Mainnet | `"bootstrap01.rsk.co:5050","bootstrap02.rsk.co:5050","bootstrap03.rsk.co:5050","bootstrap04.rsk.co:5050","bootstrap05.rsk.co:5050","bootstrap06.rsk.co:5050","bootstrap07.rsk.co:5050","bootstrap08.rsk.co:5050","bootstrap09.rsk.co:5050","bootstrap10.rsk.co:5050","bootstrap11.rsk.co:5050","bootstrap12.rsk.co:5050","bootstrap13.rsk.co:5050","bootstrap14.rsk.co:5050","bootstrap15.rsk.co:5050","bootstrap16.rsk.co:5050"` |
-* `peer.discovery.bucketSize = number`
-  is used to define the maximum number of peers to connect to.
-  Default value: `16`.
 * `peer.active = []`
   is used to connect to specific nodes.
   It can be empty.
