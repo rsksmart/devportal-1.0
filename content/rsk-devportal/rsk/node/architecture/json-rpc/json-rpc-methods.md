@@ -1366,7 +1366,7 @@ none
 
 ##### Returns
 
-`Array` - A list of pending transactions submitted by node operator.
+`Array` - A list of pending transactions submitted by the node operator.
 
 ##### Example
 ```js
