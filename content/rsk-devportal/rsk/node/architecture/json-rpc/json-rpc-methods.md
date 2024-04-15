@@ -1359,7 +1359,7 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
 
 #### eth_pendingTransactions
 
-Returns the pending transactions submitted by node operator.
+Returns the pending transactions submitted by the node operator.
 
 ##### Parameters
 none
