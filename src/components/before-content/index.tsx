@@ -10,7 +10,7 @@ interface Props {
 const BeforeContent = ({ className }: Props) => {
   return ( 
       <div className={classnames('before-content', className)}> 
-      <Marquee>    
+      <Marquee style={{'minHeight': '30px'}}>    
         <ComponentTwo />
         &nbsp;
       </Marquee>
