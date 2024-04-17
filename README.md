@@ -17,27 +17,37 @@ _Start your journey to building dApps on Rootstock, see the [quick start guide](
 
 ## Table of Contents
 
-* [Requirements](#requirements)
-* [Set up](#set-up)
-* [Development mode](#development-mode)
-* [Preview site](#preview-site)
-* [Cleaning cache](#cleaning-cache)
-* [Test build outputs](#test-build-outputs)
-* [Contributing](#contributing)
-* [Links](#links)
-* [Findability](#findability)
-* [Navigation menu](#navigation-menu)
-* [Search results](#search-results)
-* [Updating RSKj](#updating-rskj)
-* [Issues](#issues)
-* [Pull requests](#pull-requests)
+- [Table of Contents](#table-of-contents)
+- [Requirements](#requirements)
+- [Set up](#set-up)
+- [Usage](#usage)
+  - [Production build](#production-build)
+  - [Development mode](#development-mode)
+  - [Preview Site](#preview-site)
+  - [Cleaning Cache](#cleaning-cache)
+  - [Test build outputs](#test-build-outputs)
+- [Contributing](#contributing)
+  - [Writing original documentation](#writing-original-documentation)
+  - [Replicating existing documentation](#replicating-existing-documentation)
+  - [Moving existing documentation](#moving-existing-documentation)
+  - [Links](#links)
+  - [Findability](#findability)
+    - [Navigation menu](#navigation-menu)
+    - [Search results](#search-results)
+  - [Updating RSKj](#updating-rskj)
+  - [Issues](#issues)
+  - [Pull Requests](#pull-requests)
 
 ## Requirements
 * Yarn
+* [nvm](https://github.com/nvm-sh/nvm)
 
 ## Set up
 
 Clone this repository, and run the following commands in the root directory:
+```shell
+nvm use
+```
 
 ```shell
 yarn install
