@@ -29,6 +29,8 @@ const DocsPageTemplate = ({data, location}: PageProps<QueryResult>) => {
     switches();
     // @ts-ignore
     customTerminals();
+    // @ts-ignore
+    equations();
 
     if (window.location.hash) {
       // @ts-ignore
