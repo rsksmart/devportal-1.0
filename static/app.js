@@ -743,8 +743,8 @@ const equations = () => {
   }
 
   function renderEquation(el) {
-    var equation = el.getAttribute('title').slice('tex-render '.length);
-    var equationEl = document.createElement('span');
+    const equation = el.getAttribute('title').slice('tex-render '.length);
+    const equationEl = document.createElement('span');
     katex.render(equation, equationEl, {
       throwOnError: false,
     });
