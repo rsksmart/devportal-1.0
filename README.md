@@ -34,10 +34,14 @@ _Start your journey to building dApps on Rootstock, see the [quick start guide](
 
 ## Requirements
 * Yarn
+* [nvm](https://github.com/nvm-sh/nvm)
 
 ## Set up
 
 Clone this repository, and run the following commands in the root directory:
+```shell
+nvm use
+```
 
 ```shell
 yarn install
