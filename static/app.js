@@ -687,6 +687,75 @@ const customTerminals = () => {
   renderCustomTerminalsSetup();
 }
 
+const equations = () => {
+  function renderEquations() {
+    var originalElem = document.querySelector('a[title^="tex-render "]');
+    if (!originalElem) {
+      return;
+    }
+
+    renderEquationsSetup();
+  }
+
+  function renderEquationsSetup() {
+    // katex for rendering math equations
+    // <link
+    //   rel="stylesheet"
+    //   href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"
+    //   integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq"
+    //   crossorigin="anonymous">
+    const linkEl = document.createElement('link');
+    linkEl.setAttribute('rel', 'stylesheet');
+    linkEl.setAttribute(
+      'href',
+      'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css',
+    );
+    linkEl.setAttribute(
+      'integrity',
+      'sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq',
+    );
+    linkEl.setAttribute('crossorigin', 'anonymous');
+    document.body.appendChild(linkEl);
+    // <script
+    //   defer
+    //   src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"
+    //   integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz"
+    //   crossorigin="anonymous"
+    //   onload="onKatexScriptLoad();">
+    // </script>
+    const scriptEl = document.createElement('script');
+    scriptEl.setAttribute('defer', 'defer');
+    scriptEl.setAttribute(
+      'src',
+      'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js',
+    );
+    scriptEl.setAttribute(
+      'integrity',
+      'sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz',
+    );
+    scriptEl.setAttribute('crossorigin', 'anonymous');
+    scriptEl.onload = onKatexScriptLoad;
+    document.body.appendChild(scriptEl);
+  }
+
+  function onKatexScriptLoad() {
+    setupFeature('a[title^="tex-render "]', renderEquation);
+  }
+
+  function renderEquation(el) {
+    const equation = el.getAttribute('title').slice('tex-render '.length);
+    const equationEl = document.createElement('span');
+    katex.render(equation, equationEl, {
+      throwOnError: false,
+    });
+    equationEl.setAttribute('title', equation);
+    equationEl.classList.add('tex-rendered');
+    el.replaceWith(equationEl);
+  }
+
+  renderEquations();
+}
+
 $(document).ready(function() {
   $('#frm-rns-search').on('submit', (e) => {
     e.preventDefault();
