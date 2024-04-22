@@ -40,6 +40,7 @@
     "gatsby-plugin-manifest": "^4.24.0",
     "gatsby-plugin-netlify": "^5.1.0",
     "gatsby-plugin-no-index": "^1.0.2",
+    "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^5.24.0",
     "gatsby-plugin-sitemap": "3.3.0",
     "gatsby-plugin-vercel": "^1.0.3",
