@@ -32,6 +32,12 @@ const config: GatsbyConfig = {
       }
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://dev.rootstock.io`,
+      },
+    },
+    {
       // gatsby-plugin-sitemap version is 3.0.0 because of https://stackoverflow.com/questions/69452298/problem-with-sitemap-generation-in-gatsby-js
       resolve: "gatsby-plugin-sitemap",
       options: {
