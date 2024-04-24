@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Port Ethereum dApps
+title: "Port Ethereum (ETH) DApps: Expand Your Reach to RSK | Rootstock (RSK)"
 tags: tutorial, rsk, ethereum dapps, ethereum, solidity
 description: "How to port an Ethereum dApp to RSK, using Truffle framework connected to RSK testnet"
 render_features: "custom-terminals"

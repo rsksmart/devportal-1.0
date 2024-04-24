@@ -1,7 +1,7 @@
 ---
 layout: rsk
 menu_title: Reference
-title: Configuration reference
+title: Rootstock Node Configuration Reference | Rootstock (RSK)
 tags: rsk, rskj, node, config, rootstock
 description: "Configuration reference for RSKj"
 menu_order: 200

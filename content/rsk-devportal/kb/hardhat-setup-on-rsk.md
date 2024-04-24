@@ -1,7 +1,7 @@
 ---
 menu_order: 1900
 menu_title: Set up Hardhat project for Rootstock Testnet
-title: "How to set up a Hardhat project for Rootstock Testnet"
+title: "How to set up a Hardhat project for Rootstock Testnet | Rootstock (RSK)"
 description: "Learn about Hardhat, creating and configuring a new project, and connect to the Rootstock Blockchain"
 tags: hardhat, tutorial, overview, guides, tokens, web3, bitcoin, rsk, peer-to-peer, blockchain
 render_features: 'custom-terminals'

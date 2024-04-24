@@ -2,7 +2,7 @@
 menu_order: 200
 menu_title: Register an .rsk domain
 layout: rsk
-title: Register a domain
+title: Register a domain - RSK Registration | Rootstock (RSK)
 tags: rif, rns, rif-name-service, domains, address, integrate, resolver, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 

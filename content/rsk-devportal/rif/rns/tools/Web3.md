@@ -2,7 +2,7 @@
 menu_order: 200
 menu_title: Web3
 layout: rsk
-title: Web3
+title: How to Use Web3 to Interact with Smart Contracts | Rootstock (RSK)
 tags: rif, rns, rif-name-service, node, sdk, libraries, infrastructure, protocols, mvp, design, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rootstock, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 

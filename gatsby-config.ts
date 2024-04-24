@@ -32,6 +32,10 @@ const config: GatsbyConfig = {
           {userAgent: '*', allow: '/', disallow: '/rif/identity'},
           { userAgent: '*', disallow: '/rif/scheduler'}, 
           { userAgent: '*', disallow: '/rif/marketplace'}, 
+          { userAgent: '*', disallow: '/wallet/'}, 
+          { userAgent: '*', disallow: '/tutorials/'}, 
+          { userAgent: '*', disallow: '/libraries/'}, 
+          { userAgent: '*', disallow: '/community-calls/'}, 
       ]
       }
     },
@@ -68,7 +72,10 @@ const config: GatsbyConfig = {
           "/develop/apps/wallets/",
           "/tutorials/rsk-api/",
           "/kb/get-crypto-on-rsk/powpeg-btc-rbtc/",
-      
+          "/wallet/",
+          "/tutorials/",
+          "/libraries/",
+          "/community-calls/",
       ], 
         query: `{
           site {

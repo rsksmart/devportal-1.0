@@ -1,7 +1,7 @@
 ---
 menu_order: 1200
 menu_title: Tenderly
-title: 'Tenderly - Solutions on Rootstock'
+title: 'Tenderly Solutions & Tools for Improving Smart Contracts | Rootstock'
 description: 'Real-time monitoring, alerting and troubleshooting for Smart Contracts.'
 tags: tenderly, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts, rootstock
 layout: 'rsk'

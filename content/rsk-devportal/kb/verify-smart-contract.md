@@ -1,7 +1,7 @@
 ---
 menu_order: 1800
 menu_title: Verify Smart Contracts
-title: 'How to verify a Smart Contract on the RSK Block Explorer'
+title: 'Verify and Deploy Smart Contracts on RSK Block Explorer | Rootstock (RSK)'
 description: 'Learn how to verify a smart contract using the RSK Block Explorer'
 tags: knowledge-base, rskj, rsk, node, blockchain, developers, block-explorer
 layout: 'rsk'

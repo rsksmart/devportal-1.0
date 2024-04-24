@@ -2,7 +2,7 @@
 layout: rsk
 menu_order: 1300
 menu_title: Send RIF Tokens through Metamask
-title: Send RIF Tokens through Metamask
+title: Send RIF Tokens through Metamask | Rootstock (RSK)
 description: "Learn how to use metamask wallet to send RIF Tokens"
 tags: tokens, metamask, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---

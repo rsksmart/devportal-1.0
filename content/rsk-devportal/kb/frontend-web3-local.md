@@ -2,7 +2,7 @@
 menu_order: 2400
 menu_title: Frontend with web3 in a local node
 layout: rsk
-title: Create a frontend for smart contracts using web3 connected to a local node
+title: Web3 Frontend Interaction Guide for Local Development | Rootstock (RSK)
 tags: tutorial, rsk, frontend, web3
 description: "How to create a frontend for smart contracts using web3.js directly connected to a local node."
 ---

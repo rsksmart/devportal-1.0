@@ -2,7 +2,7 @@
 menu_order: 3100
 menu_title: Create your own collectable token
 layout: rsk
-title: Create your own collectable token on RSK network
+title: Create your own collectable token on Rootstock network | Rootstock (RSK)
 tags: tutorial, rsk, token, openzeppelin, erc721, truffle, frontend, web3, react
 description: "How to create your own collectable token on RSK network using Truffle framework, Open Zeppelin libraries and a react frontend."
 ---

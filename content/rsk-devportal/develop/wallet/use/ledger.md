@@ -2,11 +2,9 @@
 menu_order: 200
 menu_title: Ledger
 layout: rsk
-title: Ledger App
+title: How to install & manage Rootstock (RSK) in your Ledger Wallet
 tags: json-rpc, ledger, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
-
-# RSK App in Ledger
 
 ## Installation steps
 

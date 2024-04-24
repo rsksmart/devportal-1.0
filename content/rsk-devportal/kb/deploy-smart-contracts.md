@@ -2,7 +2,7 @@
 menu_order: 2700
 menu_title: Deploy Smart Contracts
 layout: rsk
-title: Deploy Smart Contracts
+title: Deploy Smart Contracts using Truffle & Granache | Rootstock (RSK)
 description: "Learn how to develop and deploy smart contracts in RSK"
 tags: rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---

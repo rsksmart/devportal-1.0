@@ -2,7 +2,7 @@
 layout: rsk
 menu_title: About RSKj Node
 section_title: Rootstock Node
-title: Rootstock (RSKj) Node
+title: RSKj Node Installation Requirements | Roostock (RSK)
 tags: rsk, rskj, node
 description: "Learn more about RSKj, a node implementation for the Rootstock blockchain"
 menu_order: 2

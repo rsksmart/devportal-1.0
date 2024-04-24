@@ -1,7 +1,7 @@
 ---
 layout: rsk
 menu_title: With Ledger
-title: Conversion using a Ledger hardware wallet
+title: Conversion using a Ledger hardware wallet | Rootstock (RSK)
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, ledger
 description: 'How to perform the Powpeg mechanism using Ledger'
 menu_order: 200

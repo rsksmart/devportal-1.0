@@ -1,7 +1,7 @@
 ---
 menu_order: 1300
 menu_title: Kripton Market
-title: "Kripton Market - On/Off Ramp Solutions on Rootstock"
+title: "Kripton Market - ON/Off Ramp Solutions on Rootstock | Rootstock (RSK)"
 description: "Kripton seeks to develop a new economy: dynamic, decentralized, safe and profitable."
 tags: kripton-market, defi, exchange, crypto, buy, rsk-solutions, rsk, on-ramp, off-ramp, rootstock
 render_features: 'tables-with-borders'

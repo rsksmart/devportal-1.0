@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: JSON-RPC API Documentation
+title: "Rootstock Node Architecture Documentation: Understanding JSON-RPC Functionality"
 section_title: JSON-RPC API
 menu_title: Intro
 tags: rsk, rskj, node, rpc, rootstock

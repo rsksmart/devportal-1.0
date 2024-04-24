@@ -3,7 +3,7 @@ menu_order: 500
 section_title: Rootstock Transactions
 menu_title: Overview - Exploring Rootstock Transactions
 layout: rsk
-title: 'Exploring Rootstock Transactions'
+title: 'Exploring Rootstock Transactions | Rootstock (RSK)'
 description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---

@@ -2,7 +2,7 @@
 menu_order: 2000
 menu_title: Geth attach to RSK local node
 layout: rsk
-title: Using geth to attach to a RSK local node
+title: Using geth to attach to a RSK local node | Rootstock (RSK)
 tags: tutorial, rsk, geth, ethereum
 description: "How to use the Ethereum client Geth to attach to an RSK local node (regtest) and run JSON-RPC commands."
 ---

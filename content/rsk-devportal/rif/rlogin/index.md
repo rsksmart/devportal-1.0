@@ -4,9 +4,9 @@ section_title: rLogin
 menu_title: Get Started
 layout: rsk
 render_features: 'collapsible'
-title: rLogin - login tool for Rootstock (RSK)
-tags: rlogin, rif, rif-identity, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis
-description: rLogin - login tool for Rootstock (RSK)
+title: rLogin - Integrate rLogin into Your App | Rootstock (RSK)
+tags: rlogin, rif, rif-identity, rsk login, rif login, web3, react, frontend, dapp, metamask, ledger, trezor, dcent, liquality, portis
+description: "Integrate rLogin into your app and allow your users to choose their favourite wallets to log in"
 ---
 
 Integrate rLogin into your app and allow your users to choose their favourite wallets to log in. With a single tool, you will get connected to their wallet using an API compatible with Metamask, continue developing as you did.

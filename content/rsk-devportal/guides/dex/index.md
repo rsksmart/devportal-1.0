@@ -2,7 +2,7 @@
 menu_order: 800
 section_title: The Complete Guide to DEXes
 menu_title: Table of Contents
-title: "The Complete Guide to Decentralized Exchanges (DEX)"
+title: "Complete Guide to Decentralized Exchanges (DEX) | Rootstock (RSK)"
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"
 tags: the-complete-guide-to-dexes, decentralized-exchanges, tutorial, overview, guides, tokens, sovryn, rskswap,tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, lend, borrow, yield-farming, order-books, automated-market-maker- AMMs
 layout: rsk

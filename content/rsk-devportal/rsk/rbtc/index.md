@@ -1,7 +1,7 @@
 ---
 layout: rsk
 section_title: RBTC Cryptocurrency
-title: RBTC Token
+title: Smart Bitcoin RBTC Token on RSK - BTC to RBTC | Rootstock (RSK)
 tags: mainnet, token, transactions, rbtc, gas, smart-contracts, rsk, conversion, price, gas-price, gas-cost, smart bitcoin, bitcoin
 menu_order: 3
 menu_title: RBTC Token

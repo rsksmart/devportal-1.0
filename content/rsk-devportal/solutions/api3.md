@@ -1,7 +1,7 @@
 ---
 menu_order: 1900
 menu_title: API3
-title: 'API3 - Solutions on Rootstock'
+title: 'API3 - Oracle to Connect Web2 APIs with Web3 | Rootstock (RSK)'
 description: 'Connect Smart Contracts to Real-World Data.'
 render_features: 'tables-with-borders'
 tags: API3, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, smart-contracts, oracles, rootstock

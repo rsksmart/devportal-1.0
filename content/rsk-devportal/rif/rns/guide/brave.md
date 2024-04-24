@@ -1,7 +1,7 @@
 ---
 menu_title: Connect Brave
 layout: rsk
-title: "Connect Brave to the Rootstock (RSK) Network - RNS User guide"
+title: "RNS User Guide to Connect Brave to the Rootstock (RSK) Network"
 description: "How to locate Brave's Wallet, connect to the Rootstock (RSK) Mainnet and Testnet, get your Rootstock account address, add the RIF token"
 tags: rns, guide, rns-user-guide
 ---

@@ -3,7 +3,7 @@ menu_order: 200
 section_title: Quick Start
 menu_title: Overview - Quick Start
 layout: rsk
-title: 'Quick Start Guide - Overview'
+title: 'Writing, Deploying & Interacting with Smart Contracts on Rootstock'
 description: 'Learn how to interact with Rootstock in your web browser, how to view Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
 ---

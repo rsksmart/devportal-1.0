@@ -1,7 +1,7 @@
 ---
 menu_order: 500
 menu_title: GetBlock
-title: 'GetBlock - Solutions on Rootstock'
+title: 'GetBlock Solution: Streamlining Blockchain Access | Rootstock (RSK)'
 description: 'Fast & Easy Connection to Major Blockchain Nodes.'
 tags: GetBlock, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, node, rootstock
 render_features: 'custom-terminals'

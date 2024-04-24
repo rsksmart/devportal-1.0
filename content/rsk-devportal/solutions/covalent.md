@@ -1,7 +1,7 @@
 ---
 menu_order: 1500
 menu_title: Covalent
-title: 'Covalent - Solutions on Rootstock'
+title: 'Covalent - Hosted Blockchain Data Solution | Rootstock (RSK)'
 description: 'Covalent is a hosted blockchain data solution providing access to historical and current on-chain data for 100+ supported blockchains, including Rootstock'
 tags: covalent, rsk-solutions, rsk, rootstock, troubleshooting, defi, dApps, blockchain, smart-contracts, API, data-points, indexing, query
 layout: 'rsk'

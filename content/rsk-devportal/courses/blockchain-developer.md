@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Rootstock Blockchain Developer Course
+title: Rootstock Blockchain Developer Course | Rootstock (RSK)
 tags: rsk, faqs, help, support, course, rootstock, ambassador-program
 description: "Welcome to the Rootstock Blockchain Developer Course. Learn how to write, test, secure, deploy and verify smart contracts on the Rootstock blockchain network."
 render_features: 'collapsible'

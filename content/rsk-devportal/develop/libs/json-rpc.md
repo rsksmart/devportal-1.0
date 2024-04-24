@@ -2,7 +2,7 @@
 menu_order: 200
 menu_title: JSON-RPC
 layout: rsk
-title: JSON-RPC
+title: JSON-RPC Library | Rootstock (RSK)
 tags: rsk, rskj, node, rpc
 description: "The JSON-RPC methods supported by Rootstock nodes."
 ---

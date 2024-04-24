@@ -2,7 +2,7 @@
 menu_order: 400
 menu_title: Token Bridge FAQ
 layout: rsk
-title: Token Bridge FAQ
+title: "TokenBridge FAQ: Answers to Your Rootstock-Ethereum Bridge Queries"
 tags: erc20, bridge, faqs, defi, rbtc, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets
 ---
 

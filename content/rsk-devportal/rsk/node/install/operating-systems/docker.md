@@ -3,7 +3,7 @@ section_title: Operating Systems
 menu_order: 5
 menu_title: Setup node on Docker
 layout: rsk
-title: Setup node on Docker
+title: How to setup a Rootstock node on Docker | Rootstock (RSK)
 tags: docker, rootstock, desktop, macOS, rskj, windows, install, rsk, node, how-to, network, requirements, mainnet, testnet, regtest
 ---
 

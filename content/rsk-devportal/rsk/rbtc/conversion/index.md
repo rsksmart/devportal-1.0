@@ -1,7 +1,7 @@
 ---
 layout: rsk
 section_title: Conversions
-title: BTC to RBTC Conversion
+title: "RBTC Conversion: Seamlessly Transition to Bitcoin | Rootstock (RSK)"
 menu_title: BTC to RBTC Conversion
 tags: rsk, rbtc, conversion, peg, 2-way, peg-in, peg-out, federation, powpeg
 description: 'Converting RBTC to BTC (peg-in) and BTC to RBTC (peg-out), for both Mainnet and Testnet.'

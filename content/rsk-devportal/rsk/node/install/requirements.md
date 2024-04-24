@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Hardware requirements
+title: Minimum Hardware Requirements to Run Roostock Node | Rootstock (RSK)
 menu_order: 3
 description: "Minimum hardware requirements for Rootstock"
 tags: hardware, specs, requirements

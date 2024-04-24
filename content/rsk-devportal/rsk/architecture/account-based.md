@@ -1,7 +1,7 @@
 ---
 layout: rsk
 menu_title: Account Based
-title: Account Based RSK Addresses
+title: Account Based Rootstock Addresses | Rootstock (RSK)
 menu_order: 2
 tags: rsk, checksum, chainId, address, derivation, eip1191, eip155, bip44, slip44
 description: "EIP-1191 chainId is used in RSK addresses as a checksum. m/44'/137'/0'/0 is the derivation path used for BIP-44 compatible wallets."

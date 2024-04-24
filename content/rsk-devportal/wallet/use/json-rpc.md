@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: JSON-RPC
+title: Using JSON-RPC - remote procedure call protocol | Rootstock (RSK)
 tags: json-rpc, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 

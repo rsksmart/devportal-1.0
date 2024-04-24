@@ -3,7 +3,7 @@ menu_order: 600
 section_title: Getting Started with Hardhat
 menu_title: Overview - Introduction to Hardhat
 layout: rsk
-title: 'Getting Started with Hardhat'
+title: 'Getting Started with Hardhat | Rootstock (RSK)'
 description: 'Get started with creating a dApps on Rootstock using Hardhat and other tools.'
 tags: quick-start, getting-started, guide, how-to, transactions, explorer, bitcoin, rsk, rootstock, peer-to-peer, merged-mining, blockchain, powpeg
 ---

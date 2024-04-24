@@ -3,7 +3,7 @@ menu_order: 400
 section_title: Using Rootstock in the Browser
 menu_title: Overview - Using Rootstock in the Browser
 layout: rsk
-title: 'Using Rootstock in the Browser'
+title: 'Using Rootstock with a Browser Extension | Rootstock (RSK)'
 description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, rsk, rootstock, merged-mining, blockchain, powpeg
 ---

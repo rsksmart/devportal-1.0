@@ -1,7 +1,7 @@
 ---
 menu_order: 1000
 menu_title: Verify address ownership
-title: 'Verify Address Ownership'
+title: 'Verify Address Ownership with Metamask Wallet | Rootstock (RSK)'
 description: 'Confirm that you own an RSK address using RIF Identity Manager'
 tags: metamask, address, account, rif-identity
 layout: 'rsk'
@@ -23,7 +23,7 @@ and be sure that you truly "control" a particular address.
 All you need is Chrome (web browser) and MetaMask (browser extension).
 You do not need any RBTC balance to do so!
 
-## Before you begin
+## Getting Started
 
 **ℹ️** Install MetaMask
 

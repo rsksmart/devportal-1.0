@@ -1,9 +1,9 @@
 ---
 menu_order: 1400
 menu_title: Sovryn
-title: "Sovryn - Solutions on Rootstock"
+title: "Sovryn (SOV) | Lending, Borrowing & Margin Trading | Rootstock (RSK)"
 description: "Sovryn is a non-custodial and permissionless smart contract-based system for Bitcoin lending, borrowing and margin trading"
-tags: sovryn, rsk-solutions, rsk, defi, bitcoin, rootstock
+tags: sovryn, rsk-solutions, rsk, defi, token, bitcoin, rootstock, sovryn, sovryn wallet, sovryn btc, sovryn coin
 render_features: 'tables-with-borders'
 layout: "rsk"
 ---

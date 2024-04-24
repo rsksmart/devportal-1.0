@@ -1,7 +1,7 @@
 ---
 menu_order: 400
 menu_title: Oracle Money on Chain
-title: 'Oracle Money on Chain - Solutions on Rootstock'
+title: 'Oracle Money on Chain Solutions | Rootstock (RSK)'
 description: 'Oracle Money On Chain - DeFi for Bitcoin'
 tags: OMOC, rsk-solutions, rsk, stablecoin, bitcoin, defi, MOC, rootstock
 layout: 'rsk'

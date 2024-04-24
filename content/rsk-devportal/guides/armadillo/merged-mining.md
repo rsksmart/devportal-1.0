@@ -2,20 +2,20 @@
 menu_order: 300
 menu_title: Merged Mining
 layout: rsk
-title: 'Armadillo - Merged Mining'
-description: 'The guardian of RSK'
-tags: armadillo, guard, security, guides, bitcoin, rsk, peer-to-peer, merged-mining, blockchain
+title: 'Armadillo Merged Mining: Setup, Route, and Security | Rootstock (RSK)'
+description: 'The guardian of Rootstock'
+tags: armadillo, guard, security, guides, bitcoin, rootstock, rsk, peer-to-peer, merged-mining, blockchain
 ---
 
 ## What is merged mining?
 
-Merged mining is the process that allows RSK blockchain to be mined simultaneously with the Bitcoin blockchain.
+Merged mining is the process that allows Rootstock blockchain to be mined simultaneously with the Bitcoin blockchain.
 This can be done because both chains use the same [proof-of-work (PoW)](https://en.wikipedia.org/wiki/Proof_of_work) algorithm,
 double SHA-256.
 
 ## How it works
 
-[Bitcoin mining pools](https://developers.rsk.co/rsk/architecture/mining/) include a reference to RSK’s block in every the block candidate they deliver to miners as a mining job. This reference is included in the latest output of the Bitcoin coinbase transaction. The proof of work puzzle difficulty informed by the mining pool to miners is called the share difficulty. The share difficulty is lower than RSK block difficulty, which is in turn lower than Bitcoin block difficulty. 
+[Bitcoin mining pools](https://dev.rootstock.io/rsk/architecture/mining/) include a reference to RSK’s block in every the block candidate they deliver to miners as a mining job. This reference is included in the latest output of the Bitcoin coinbase transaction. The proof of work puzzle difficulty informed by the mining pool to miners is called the share difficulty. The share difficulty is lower than RSK block difficulty, which is in turn lower than Bitcoin block difficulty. 
 Every time miners find a solution to a share, it is submitted to the mining pool and there it is compared to both RSK and Bitcoin networks’ difficulties,
 delivering three possible outcomes:
 

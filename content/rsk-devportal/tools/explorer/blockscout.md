@@ -2,7 +2,7 @@
 menu_order: 201
 menu_title: Blockscout
 layout: Rootstock
-title: Overview of Blockscout
+title: Overview of Blockscout - Rootstock on Blockscout | Rootstock (RSK)
 tags: overview, explorer, rootstock, Blockscout, search, blocks, transactions, mainnet, tools
 ---
 

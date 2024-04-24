@@ -2,7 +2,7 @@
 menu_order: 2100
 menu_title: Deploy a smart contract using Remix and Geth
 layout: rsk
-title: Deploy a smart contract at RSK local node using Geth and Remix
+title: Deploy Smart Contracts at RSK Local Node with Geth and Remix
 tags: tutorial, rsk, geth, remix, ethereum, smart contract
 description: "How to compile a smart contract using Remix and deploy it on a local node using Geth."
 ---

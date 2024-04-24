@@ -2,7 +2,7 @@
 menu_order: 2200
 menu_title: Remix and Metamask with RSK testnet
 layout: rsk
-title: Using Remix and Metamask with RSK testnet
+title: Remix and Metamask Integration on RSK Testnet | Rootstock (RSK)
 tags: tutorial, rsk, remix, metamask
 description: "Configure a wallet using Metamask, connect with Remix, compile and deploy a smart contract at RSK testnet."
 ---

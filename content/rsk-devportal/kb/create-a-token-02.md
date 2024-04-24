@@ -2,10 +2,11 @@
 menu_order: 3000
 menu_title: Create other ERC20 token
 layout: rsk
-title: Create a token - other approach
+title: Create a Token on Rootstock - Solidity, Open Zeppelin, Truffle | Roostock (RSK)
 tags: tutorial, rsk, token, openzeppelin, erc20, truffle 
-description: "Other approach to create a token using Truffle and Open Zeppelin smart contracts at RSK testnet"
+description: "Another approach to create a token using Truffle and Open Zeppelin smart contracts at Rootstock testnet"
 ---
+
 ## Preparing the environment
 
 **Install truffle**

@@ -1,7 +1,7 @@
 ---
 menu_order: 600
 menu_title: How to Get Stablecoins
-title: "How to Get Stablecoins on Rootstock - The Complete Guide to Stablecoins"
+title: "How to Get Stablecoins on Rootstock - Complete Guide to Stablecoins"
 description: "Learn how to get stablecoins on Rootstock"
 tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain
 layout: rsk

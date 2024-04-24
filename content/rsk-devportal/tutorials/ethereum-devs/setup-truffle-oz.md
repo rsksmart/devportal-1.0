@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: How to create a new project using Truffle and OpenZeppelin connected to RSK network
+title: Create a new project using Truffle and OpenZeppelin on RSK network
 tags: tutorial, rsk, openzeppelin, truffle
 description: "How to create a new blockchain project, using Truffle framework and Open Zeppelin library connected to a RSK local node and RSK testnet"
 render_features: "custom-terminals"

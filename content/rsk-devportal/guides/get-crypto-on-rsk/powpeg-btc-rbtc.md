@@ -1,7 +1,7 @@
 ---
 menu_order: 400
 menu_title: Get RBTC using Powpeg
-title: "How to get RBTC using Rootstock’s built in PowPeg"
+title: "How to get RBTC using Rootstock’s built in PowPeg | Rootstock (RSK)"
 description: "Learn how the Rootstock Powpeg works and how to use it to get RBTC via the peg-in and peg-out process"
 tags: rbtc, Rootstock, powpeg, 2-way peg, defi, exchange, crypto, buy, peg-in, peg-out, how-to
 layout: "rsk"

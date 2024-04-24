@@ -2,7 +2,7 @@
 menu_order: 200
 menu_title: Explorer
 layout: rsk
-title: Overview of the Rootstock Explorer
+title: Overview of the Rootstock Explorer | Rootstock (RSK)
 tags: overview, explorer, rsk, search, blocks, transactions, mainnet, tools
 ---
 

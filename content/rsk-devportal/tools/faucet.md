@@ -2,7 +2,7 @@
 menu_order: 400
 menu_title: Faucet
 layout: Rootstock
-title: Rootstock Testnet Faucet
+title: Guide to Using Rootstock Testnet Faucet | Rootstock (RSK)
 tags: faucet, Rootstock, testnet, address, wallet, tools
 ---
 
