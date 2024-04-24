@@ -17,19 +17,16 @@ Visit settings and click on "backup wallet". If creating a new wallet, follow th
 
 Click on the striked eye icon as shown in the image below to view your seed phrase. Click on the copy icon by the right and paste the seed phrase in a secure location.
 
-> Note: It is important to write down and secure your seed phrase in a location only known by you. Anyone who has your seed phrase can access the funds in your wallet. Note that the seed phrase shown in this guide is for testing purposes only.
-> - This action **CANNOT BE REVERSED**, if you need to go ahead with this, ensure you have saved your seed phrase. Without the seed phrase, you will not be able to recover the funds in your wallet. Rootstock will not be held responsible for loss of funds in your wallet. See section on [backing up your wallet]().
-
-After securing your seed phrase, click on the button **Phrase secured, Continue**.
-
 <div class="image-container">
     <img src="/assets/img/rif-wallet/17-view-your-phrase.jpg"  title="RIF Wallet - View and Save Wallet Seed phrase"/>
 </div>
+
+> Note: It is important to write down and secure your seed phrase in a location only known by you. Anyone who has your seed phrase can access the funds in your wallet. Note that the seed phrase shown in this guide is for testing purposes only.
+> - This action **CANNOT BE REVERSED**, if you need to go ahead with this, ensure you have saved your seed phrase. Without the seed phrase, you will not be able to recover the funds in your wallet. Rootstock will not be held responsible for loss of funds in your wallet. See section on [backing up your wallet]().
 
 To verify your seed phrase, enter the words in the order placed, as shown in your wallet and click **OK**.
 
 <div class="image-container">
     <img src="/assets/img/rif-wallet/2b-user-guide-verify-seed-phrase.jpg"  title="RIF Wallet - Verify Wallet Seed phrase"/>
+    <img src="/assets/img/rif-wallet/3-user-guide-seed-phrase-successfully-verified.jpg"  title="RIF Wallet - Verify Wallet Seed phrase"/>
 </div>
-
-Congratulations, your seed phrase has been verified successfully.
