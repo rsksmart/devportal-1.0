@@ -2,14 +2,13 @@
 menu_order: 2600
 menu_title: Compile Smart Contracts to Go
 layout: rsk
-title: "Compiling Smart Contracts in Go: Developer Insights on Rootstock (RSK)""
+title: "Compiling Smart Contracts in Go: Developer Insights on Rootstock (RSK)"
 description: "Learn how to interact with a Smart Contract in a Go application"
 tags: go, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
-###### (instructions valid for Ubuntu) 
-
-In order to interact with a Smart Contract in a Go application, the ABI ([application binary interface](https://solidity.readthedocs.io/en/latest/abi-spec.html)) of the contract must first be generated, and then compiled so that it can be imported in said application.
+> Instructions valid for Ubuntu
+> - In order to interact with a Smart Contract in a Go application, the ABI ([application binary interface](https://solidity.readthedocs.io/en/latest/abi-spec.html)) of the contract must first be generated, and then compiled so that it can be imported in said application.
 
 ## 1. Prerequisites
 ### 1.1 Solidity compiler
