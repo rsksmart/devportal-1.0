@@ -2,8 +2,12 @@ import React from "react"
 import PropTypes from "prop-types"
 
 export default function HTML(props: any) {
+  const { siteUrl } = props.pageContext.site.siteMetadata; // Access siteUrl from page context
+
+  // Construct self-referencing hreflang URL
+  const selfHreflangUrl = `${siteUrl}${props.path}`;
   return (
-    <html {...props.htmlAttributes}>
+    <html {...props.htmlAttributes} lang="en">
     <head>
       <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -12,6 +16,7 @@ export default function HTML(props: any) {
       })(window,document,'script','dataLayer','GTM-WTWVB2C');`}} />
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
+      <link rel="alternate" hrefLang="en" href={selfHreflangUrl} />
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
