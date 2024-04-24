@@ -28,7 +28,11 @@ const config: GatsbyConfig = {
       options: {
         host: 'https://dev.rootstock.io',
         sitemap: 'https://dev.rootstock.io/sitemap.xml',
-        policy: [{userAgent: '*', allow: '/', disallow: '/rif/identity'}]
+        policy: [
+          {userAgent: '*', allow: '/', disallow: '/rif/identity'},
+          { userAgent: '*', disallow: '/rif/scheduler'}, 
+          { userAgent: '*', disallow: '/rif/marketplace'}, 
+      ]
       }
     },
     {
@@ -41,6 +45,31 @@ const config: GatsbyConfig = {
       // gatsby-plugin-sitemap version is 3.0.0 because of https://stackoverflow.com/questions/69452298/problem-with-sitemap-generation-in-gatsby-js
       resolve: "gatsby-plugin-sitemap",
       options: {
+        exclude: [
+          "/tutorials/deploy-smart-contracts/", 
+          "/rif/identity/*", 
+          "/rif/scheduler/*",
+          "/rif/marketplace/*",
+          "/rsk/architecture/turing-complete/",
+          "/tutorials/interface-registry/",
+          "/rsk/public-nodes/",
+          "/tutorials/interact-with-smart-contracts/",
+          "/defi/",
+          "/rsk/rbtc/conversion/networks/mainnet/",
+          "/discord/",
+          "/tutorials/send-tokens-through-metamask/",
+          "/rsk/node/configure/autominer/",
+          "/develop/apps/wallets/metamask/",
+          "/rsk/node/install/java/",
+          "/tutorials/compile-smart-contracts-go/",
+          "/kb/get-crypto-on-rsk/cryptocurrency-vs-token/",
+          "/tutorials/using-blockmason/",
+          "/tutorials/ethereum-devs/remix-and-metamask-with-rsk-testnet/",
+          "/develop/apps/wallets/",
+          "/tutorials/rsk-api/",
+          "/kb/get-crypto-on-rsk/powpeg-btc-rbtc/",
+      
+      ], 
         query: `{
           site {
             siteMetadata {
