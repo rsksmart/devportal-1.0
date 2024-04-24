@@ -1,7 +1,7 @@
 ---
 menu_order: 1700
 menu_title: RPC via GetBlock
-title: 'RPC via GetBlock'
+title: 'RPC via GetBlock - Instant connection to blockchain nodes | Rootstock'
 description: 'Learn how to use the API methods within GetBlock to connect to an RSK node'
 tags: GetBlock, rsk-solutions, rsk, rootstock, bitcoin, defi, dApps, blockchain, node, tutorial, docs, api, websocket, json-rpc
 render_features: 'custom-terminals'

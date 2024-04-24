@@ -2,7 +2,7 @@
 layout: rsk
 section_title: Knowledge Base
 menu_title: Overview
-title: Welcome to Rootstock and RIF Knowledgebase
+title: Welcome to Rootstock and RIF Knowledgebase | Rootstock (RSK)
 tags: knowledgebase, rsk, faqs, help, support
 description: "Welcome to Rootstock and RIF Knowledge-base; Explore Rootstock faqs, tutorials and guides to help you get started on building on Rootstock and RIF Technologies"
 menu_order: 4

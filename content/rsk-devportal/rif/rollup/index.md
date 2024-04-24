@@ -3,7 +3,7 @@ menu_order: 1100
 section_title: RIF Rollup
 menu_title: Introduction
 layout: rsk
-title: RIF Rollup Documentation | Introduction
+title: Introduction & Documentation to RIF Rollup | Rootstock (RSK)
 description: RIF Rollup is a trustless protocol for fast and scalable low-cost payments on Rootstock powered by zkRollup Technology.
 tags: rif, aggregation, zkSync, rollup, rif-rollup
 ---

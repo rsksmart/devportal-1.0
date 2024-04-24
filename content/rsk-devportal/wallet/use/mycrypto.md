@@ -1,10 +1,8 @@
 ---
 layout: rsk
-title: MyCrypto
+title: MyCrypto App & Wallet - Securely Manage Your Assets | Rootstock (RSK)
 tags: mycrypto, json-rpc, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
-
-## RSK With MyCrypto
 
 You can manage your account easily with MyCrypto.
 

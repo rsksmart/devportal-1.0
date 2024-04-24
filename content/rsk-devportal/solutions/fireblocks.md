@@ -1,7 +1,7 @@
 ---
 menu_order: 2000
 menu_title: Fireblocks
-title: 'Fireblocks - Solutions on Rootstock'
+title: 'Fireblocks - What is Fireblocks & How It Works | Rootstock (RSK)'
 description: 'Fireblocks is an enterprise-grade platform delivering a secure infrastructure for moving, storing, and issuing digital assets.'
 tags: Fireblocks, rsk-solutions, rsk, bitcoin, defi, dApps, blockchain, crypto, smart-contracts, digital-assets, rootstock
 layout: 'rsk'

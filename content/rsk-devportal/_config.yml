@@ -1,8 +1,8 @@
-title: RSK Developer Portal
+title: Devportal - RSK Developer Portal | Rootstock (RSK)
 
 description: >
-  RSK is the first open source Smart Contract platform secured by the
-  Bitcoin Network. RSK adds value and expands the functionality of the
+  Rootstock (RSK) is the first open source Smart Contract platform secured by the
+  Bitcoin Network. Rootstock adds value and expands the functionality of the
   Bitcoin ecosystem by providing smart contracts and greater scalability.
 
 collections:
@@ -24,8 +24,8 @@ permalink: pretty
 
 repository: rsksmart/rsksmart.github.io
 
-domain: "developers.rsk.co"
-url: "https://developers.rsk.co"
+domain: "dev.rootstock.io"
+url: "https://dev.rootstock.io"
 redirect_base: ""
 redirect_time: 0
 

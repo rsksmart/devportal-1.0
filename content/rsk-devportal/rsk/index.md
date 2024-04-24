@@ -2,7 +2,7 @@
 layout: rsk
 section_title: Rootstock Blockchain
 menu_title: About Rootstock Blockchain
-title: Rootstock Blockchain
+title: Resources for Building on Bitcoin | Rootstock (RSK)
 tags: rsk
 description: Rootstock is the Smart Contract platform of Bitcoin. Its engine is a forked version of the EVM (Ethereum Virtual Machine), and the RVM (Rootstock Virtual Machine) is compatible with Ethereum Smart Contracts and the tools used to deploy and interactwith them.
 menu_order: 2

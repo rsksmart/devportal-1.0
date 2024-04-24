@@ -1,7 +1,7 @@
 ---
 menu_order: 500
 menu_title: Get RBTC using Wallets
-title: "How to get RBTC using wallets"
+title: "How to get RBTC using wallets | Rootstock (RSK)"
 description: "Understand what crypto wallets are and how they work, and then see how you can use Rootstock wallets that have the BTC and RBTC swapping feature built in"
 tags: rbtc, Rootstock, wallets, defi, exchange, crypto, how-to, knowledge-base
 layout: "rsk"

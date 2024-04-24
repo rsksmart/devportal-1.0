@@ -1,7 +1,7 @@
 ---
 menu_order: 700
 menu_title: How to use the Rootstock Token Bridge
-title: "Understanding Cross Chain Bridges: How to use the Rootstock Token Bridge - The Complete Guide to Stablecoins"
+title: "Cross Chain Bridges: How to use the Rootstock (RSK) Token Bridge"
 description: "Understand what cross chain bridges are, how they work, and how to cross tokens between chains using Rootstock token bridge"
 tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain
 layout: rsk

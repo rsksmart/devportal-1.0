@@ -1,9 +1,9 @@
 ---
 menu_order: 1100
 menu_title: Fungible Token Standards
-title: "Fungible Token Standards"
-tags: kb, rsk, tokens, fungible-tokens
-description: What is ERC20, and are there others like it? How do they work on RSK?
+title: "Ethereum Fungible Tokens Standard ERC1363, ERC223, ERC677 | Roostock (RSK)"
+tags: kb, rsk, tokens, rootstock, fungible-tokens
+description: What is ERC20, and are there others like it? How do they work on Rootstock?
 layout: 'rsk'
 ---
 

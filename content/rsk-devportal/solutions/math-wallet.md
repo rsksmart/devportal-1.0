@@ -1,7 +1,7 @@
 ---
 menu_order: 600
 menu_title: Math Wallet
-title: 'Math Wallet - Solutions on Rootstock'
+title: 'How Math Wallet integrates with RSK | Rootstock (RSK)'
 description: 'CryptoWallet for 1 million users, 50+ blockchains, 2000+ dApps, 200+ DeFi.'
 tags: Math Wallet, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, rootstock
 render_features: 'tables-with-borders'

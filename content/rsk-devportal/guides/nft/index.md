@@ -2,7 +2,7 @@
 menu_order: 950
 section_title: Deploy NFTs on Rootstock
 menu_title: Table of Contents
-title: 'Introduction | Deploy an NFT project on the Rootstock Testnet'
+title: 'Deploy an NFT project on the Rootstock Testnet | Rootstock (RSK)'
 description: 'Learn about NFTs, create, connect, and deploy an NFT to the Rootstock Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'

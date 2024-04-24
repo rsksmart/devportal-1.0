@@ -1,7 +1,7 @@
 ---
 menu_order: 900
 menu_title: Liquality
-title: "Liquality - Solutions on Rootstock"
+title: "Liquality Wallet & Browser Extention | Rootstock (RSK)"
 description: "The Liquality Wallet is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications. This MetaMask alternative supports multiple blockchains and provides the easiest way to flip between BTC, ETH, ERC20s, and RSK tokens with built-in one-click atomic swaps."
 tags: liquality, metamask, wallet, swap, rsk-solutions, rsk, rootstock
 render_features: 'tables-with-borders'

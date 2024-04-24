@@ -1,7 +1,7 @@
 ---
 menu_order: 900
 menu_title: Rootstock (RSK) Token Bridge Troubleshooting
-title: 'Rootstock (RSK) Token Bridge Troubleshooting Guide'
+title: 'Rootstock (RSK) Token Bridge Troubleshooting Guide | Rootstock (RSK)'
 description: 'Having issues crossing your tokens on the token bridge? See the troubleshooting guide for help.'
 tags: knowledge-base, tokenbridge, blockchain, developers, tokens, rootstock, rsk
 layout: 'rsk'

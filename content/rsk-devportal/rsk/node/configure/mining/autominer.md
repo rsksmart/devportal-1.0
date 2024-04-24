@@ -1,7 +1,7 @@
 ---
 layout: rsk
 menu_title: Using autominer
-title: Run with autominer (Ganache-like)
+title: Run with autominer (Ganache-like) | Roostock (RSK)
 tags: rsk, rskj, node, config
 description: "Learn how to run the RSK node with autominer - similar to Ganache default config"
 menu_order: 200

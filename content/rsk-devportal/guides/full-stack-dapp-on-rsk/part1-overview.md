@@ -2,7 +2,7 @@
 menu_order: 200
 menu_title: Overview
 layout: rsk
-title: The Complete Full Stack dApp Guide on Rootstock - Part 1:Overview
+title: Full Stack dApp Development Guide on Rootstock | Rootstock (RSK)
 description: 'Build a complete full stack decentralized application on Rootstock, from front-end to smart contracts'
 tags: the-complete-full-stack-dapp-guide, full-stack, dapp, tutorial, overview, front-end, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp-examples, blockchain
 ---

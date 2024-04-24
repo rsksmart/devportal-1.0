@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: Powpeg
+title: "Powpeg: Securing Bitcoin-RSK Interoperability | Rootstock (RSK)"
 menu_title: Powpeg
 menu_order: 3
 tags: rsk, rbtc, btc, peg, powpeg, 2 way peg

@@ -3,7 +3,7 @@
 menu_title: Use
 menu_order: 3
 layout: rsk
-title: Using Rootstock Public Nodes (Mainnet & Testnet) provided by RootstockLabs
+title: Using RSK Public Nodes (Mainnet & Testnet) | Rootstock (RSK)
 tags: rsk, networks, versions, rpc, mainnet, testnet, cUrl
 description: "Rootstock Nodes: Public nodes (Mainnet, Testnet), Versioning, RPC Methods, and cUrl example"
 ---

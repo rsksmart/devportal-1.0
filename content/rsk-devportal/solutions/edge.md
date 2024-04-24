@@ -2,7 +2,7 @@
 menu_order: 1100
 menu_title: Edge
 layout: 'rsk'
-title: 'Edge Wallet - Solutions on Rootstock'
+title: 'Edge Wallet - Crypto Wallet Solutions on RSK | Rootstock (RSK)'
 description: 'Edge is a powerful and easy to use cryptocurrency wallet that allows users to easily control their own private keys with the familiarity and ease of mobile banking.'
 tags: Edge Wallet, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, rootstock
 render_features: 'tables-with-borders'

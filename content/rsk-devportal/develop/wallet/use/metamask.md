@@ -2,7 +2,8 @@
 menu_order: 500
 menu_title: MetaMask
 layout: rsk
-title: MetaMask
+title: MetaMask Wallet Integration Guide for Rootstock | Rootstock (RSK)
+description: "Learn how to connect to Rootstock with a Metamask Wallet"
 tags: json-rpc, metamask, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 

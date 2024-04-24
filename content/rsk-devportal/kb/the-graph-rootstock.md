@@ -1,7 +1,7 @@
 ---
 menu_order: 880
 menu_title: The Graph Integration
-title: 'How to use The Graph on Rootstock'
+title: 'How to use The Graph on Rootstock | Rootstock (RSK)'
 description: 'The Graph is a decentralized protocol for indexing and querying blockchain data. The Rootstock subgraph project aims to set up the bricks for easy implementation of a subgraph for the Rootstock Community'
 tags: knowledge-base, the grpah, protocol, rootstock, defi, decentralized
 layout: 'rsk'

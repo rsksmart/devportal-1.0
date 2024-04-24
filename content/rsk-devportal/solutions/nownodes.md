@@ -1,7 +1,7 @@
 ---
 menu_order: 2200
 menu_title: NowNodes
-title: 'NOWNodes - Solutions on Rootstock'
+title: 'NowNodes - Blockchain Node Service | Rootstock (RSK)'
 description: 'NOWNodes - Blockchain service at your fingertips'
 tags: nownodes-docs
 slug: NOWNodes, rsk-solutions, rsk, troubleshooting, defi, dApps, blockchain, smart-contracts, API, data-points, indexing, query, node, rootstock

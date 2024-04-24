@@ -1,7 +1,7 @@
 ---
 layout: rsk
 section_title: Architecture
-title: Turing complete
+title: Run Ethereum dApps with Bitcoin Network Security | Rootstock (RSK)
 menu_order: 4
 menu_title: Architecture
 tags: rsk, rootstock, rvm, evm, virtual machine

@@ -3,7 +3,7 @@ menu_order: 300
 section_title: RIF Relay
 menu_title: About
 layout: rsk
-title: About RIF Relay
+title: RIF Relay - Secure Sponsored Transaction System | Rootstock (RSK)
 tags: rif, relay, gas station network, gsn
 permalink: /rif/relay/
 ---

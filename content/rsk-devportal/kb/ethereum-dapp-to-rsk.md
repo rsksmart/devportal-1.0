@@ -2,14 +2,14 @@
 layout: rsk
 menu_order: 1600
 menu_title: Bring your Ethereum dApp to RSK
-title: Bring your Ethereum dApp to RSK
+title: Bring Your Ethereum Dapp to Rootstock - Developer Guide | Rootstock (RSK)
 description: "Learn how to cross your Ethereum dApps to RSK"
 tags: token, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---
 
 Our goal is to join forces and give options to people who believe in the power of smart contracts, and also believe in the security of Bitcoin, through RSK. Bring your Ethereum dApps to RSK!
 
-<a href="/discord/" target="_blank" class="next green-button">Get help</a>
+<a href="https://rootstock.io/discord/" target="_blank" class="next green-button">Get help</a>
 
 
 <div class="features-list">

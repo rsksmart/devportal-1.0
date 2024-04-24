@@ -2,14 +2,12 @@
 menu_order: 200
 menu_title: Connect Frontend
 layout: rsk
-title: 'Build a DApp with rLogin - Part 1: Connect Frontend'
+title: 'Build a DApp with rLogin - Part 1: Connect Frontend | Rootstock (RSK)'
 description: 'Create a DApp, add the rLogin connect button, and perform several operations with the connected wallet'
 tags: rLogin, frontend, backend, dapp, tutorial, overview, guides, smart-contracts, web3, bitcoin, rsk, peer-to-peer, dapp-examples, blockchain, auth, libraries
 ---
 
-## Connect to the wallet
-
-In this first article,
+In this article,
 we are going to connect to the user's wallet from
 a React.js application.
 To summarize, we are going to:

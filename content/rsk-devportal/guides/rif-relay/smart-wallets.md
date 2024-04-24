@@ -2,7 +2,7 @@
 menu_order: 600
 menu_title: Smart Wallets
 layout: rsk
-title: RIF Relay Smart Wallets
+title: RIF Relay Smart Wallets | Rootstock (RSK)
 tags: rif, envelope, relay, user, guide, smart, wallet
 permalink: /guides/rif-relay/smart-wallets/
 ---

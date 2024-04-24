@@ -1,6 +1,6 @@
 ---
 layout: rsk
-title: JSON-RPC API
+title: JSON-RPC API for Mining Pools & Merged Mining | Rootstock (RSK)
 tags: API, json, rpc, json-rpc, transactions, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, mining
 ---
 

@@ -1,7 +1,7 @@
 ---
 menu_order: 100
 menu_title: Defiant
-title: "Defiant - Solutions on Rootstock"
+title: "Defiant Mobile Platform & P2P Marketplace for Stablecoins | Rootstock"
 description: "Defiant is the first mobile platform and P2P marketplace for stablecoins"
 tags: defiant, rsk-solutions, rsk, rootstock
 render_features: 'tables-with-borders'

@@ -1,7 +1,7 @@
 ---
 menu_order: 300
 menu_title: Money on Chain
-title: 'Money on Chain - Solutions on Rootstock'
+title: 'Empowering Financial Solutions - Money on Chain | Rootstock (RSK)'
 description: 'Money On Chain - DeFi for Bitcoin'
 tags: MoC, rsk-solutions, rsk, stablecoin, bitcoin, defi, rootstock
 render_features: 'tables-with-borders'

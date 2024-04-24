@@ -2,6 +2,7 @@
 menu_order: 3800
 menu_title: Add Rootstock to Metamask Programmatically
 layout: 'rsk'
+title: Add Rootstock (RSK) to Metamask - Integration Guide - Rootstock (RSK)
 description: 'Learn how to add and initiate a network switch on Metamask from a website'
 tags: rsk, rootstock, dApps, blockchain, smart-contracts, wallets, ethereum, programming, how-tos, tutorial, guide, developer
 render_features: 'collapsible'

@@ -1,7 +1,7 @@
 ---
 menu_order: 300
 menu_title: Cryptocurrency vs Token
-title: 'The Difference between a Cryptocurrency and a Token'
+title: What are Crypto Tokens - Difference between Cryptocurrency and Tokens
 description: 'Understand the various types of digital assets, smart contracts, and the differences between a cryptocurrency and a token.'
 tags: knowledge-base, tokens, Rootstock, smart contracts, cryptocurrency
 layout: 'rsk'

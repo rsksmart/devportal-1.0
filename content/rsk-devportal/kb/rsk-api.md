@@ -2,7 +2,7 @@
 layout: rsk
 menu_order: 1600
 menu_title: RSK API CLI
-title: RSK API
+title: RSK API Library - Interact with RSK & Ethereum nodes | Roostock (RSK)
 description: "A library and commands to interact with RSK and Ethereum nodes"
 tags: tutorial, rsk, cli
 ---

@@ -1,7 +1,7 @@
 ---
 menu_order: 800
 menu_title: D'Cent
-title: 'DCent - Solutions on Rootstock'
+title: 'DCent - Biometrically-Powered Cold Storage Tools | Rootstock (RSK)'
 description: 'D’CENT Wallet is a new generation of über convenient, biometrically-powered cold storage tools that literally put the management of precious digital assets at your fingertips.'
 tags: DCent, rsk-solutions, rsk, wallet, bitcoin, defi, dApps, blockchain, cryptowallet, rootstock
 render_features: 'tables-with-borders'

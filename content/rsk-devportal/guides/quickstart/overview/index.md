@@ -3,7 +3,7 @@ menu_order: 300
 section_title: Rootstock Blockchain
 menu_title: Overview - Rootstock Blockchain
 layout: rsk
-title: 'Rootstock Blockchain'
+title: 'Getting Started with Rootstock (RSK) Development | Rootstock (RSK)'
 description: 'Learn how to interact with Rootstock in your web browser, how to look at Rootstock transactions, develop and deploy your very first smart contract to the Rootstock network.'
 tags: quick-start, getting-started, guide, how-to, bitcoin, rsk, peer-to-peer, merged-mining, blockchain, powpeg
 ---

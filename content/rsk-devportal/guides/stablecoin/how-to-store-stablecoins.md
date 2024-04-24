@@ -1,7 +1,7 @@
 ---
 menu_order: 500
 menu_title: How to Store Stablecoins
-title: "How to Store Stablecoins on Rootstock - The Complete Guide to Stablecoins"
+title: "How to Store Stablecoins on Rootstock - Complete Guide to Stablecoins"
 description: "Learn about how to store stablecoins on Rootstock"
 tags: the-complete-guide-to-stablecoins, stablecoins, tutorial, overview, guides, tokens, defiant, tokenbridge, cross-chain, bridge, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain
 layout: rsk

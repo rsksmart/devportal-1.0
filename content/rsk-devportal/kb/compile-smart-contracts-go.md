@@ -2,7 +2,7 @@
 menu_order: 2600
 menu_title: Compile Smart Contracts to Go
 layout: rsk
-title: Compile Smart Contracts to Go
+title: "Compiling Smart Contracts in Go: Developer Insights on Rootstock (RSK)""
 description: "Learn how to interact with a Smart Contract in a Go application"
 tags: go, rif, rbtc, defi, decentralized, quick-start, guides, tutorial, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, contracts, wallets, web3, crypto
 ---

@@ -2,7 +2,7 @@
 layout: rsk
 menu_title: FAQ
 menu_order: 200
-title: Frequently Asked Questions
+title: Frequently Asked Questions | Rootstock (RSK)
 tags: knowledgebase, rsk, faqs, help, support, rootstock
 description: "Welcome to Rootstock and RIF Knowledge-base; Explore the Rootstock faqs section"
 render_features: 'collapsible'

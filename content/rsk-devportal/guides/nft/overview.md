@@ -1,7 +1,7 @@
 ---
 menu_order: 200
 menu_title: Overview
-title: 'Overview | Deploy an NFT project on the Rootstock Testnet'
+title: 'Deploy an NFT project on the Rootstock Testnet | Rootstock (RSK)'
 description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'

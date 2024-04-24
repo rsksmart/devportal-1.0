@@ -1,7 +1,7 @@
 ---
 layout: rsk
 section_title: Merged Mining
-title: How it works
+title: How RSK Mining Architecture Works | Rootstock (RSK)
 tags: rsk, mining, bitcoin, pow
 description: "How merge mining RSK with Bitcoin works, and its benefits"
 permalink: /rsk/architecture/mining/

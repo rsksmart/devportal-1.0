@@ -2,7 +2,7 @@
 layout: rsk
 section_title: Mining
 menu_title: For mining
-title: Configure RSKj node for mining
+title: How to Configure RSKj node for mining | Rootstock (RSK)
 tags: rsk, rskj, node, config, mining
 description: "How to run RSKj in a manner suited for mining."
 menu_order: 500
