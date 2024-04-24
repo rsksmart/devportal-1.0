@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-export default function HTML(props: any) {
+export default function HTML(props: { pageContext: { site: { siteMetadata: { siteUrl: any; }; }; }; path: any; htmlAttributes: JSX.IntrinsicAttributes & React.ClassAttributes<HTMLHtmlElement> & React.HtmlHTMLAttributes<HTMLHtmlElement>; headComponents: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; bodyAttributes: JSX.IntrinsicAttributes & React.ClassAttributes<HTMLBodyElement> & React.HTMLAttributes<HTMLBodyElement>; preBodyComponents: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; body: any; postBodyComponents: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }) {
   const { siteUrl } = props.pageContext.site.siteMetadata; // Access siteUrl from page context
 
   // Construct self-referencing hreflang URL
