@@ -1,10 +1,10 @@
 ---
 menu_order: 2000
-menu_title: Geth attach to RSK local node
+menu_title: Geth attach to Rootstock local node
 layout: rsk
-title: Using geth to attach to a RSK local node | Rootstock (RSK)
+title: Using geth to attach to a Rootstock local node | Rootstock (RSK)
 tags: tutorial, rsk, geth, ethereum
-description: "How to use the Ethereum client Geth to attach to an RSK local node (regtest) and run JSON-RPC commands."
+description: "How to use the Ethereum client Geth to attach to an Rootstock local node (regtest) and run JSON-RPC commands."
 ---
 
 RSK's virtual machine implementation is compatible with the Ethereum virtual machine (EVM), which enables us to make use of many Ethereum developer tools.

@@ -35,7 +35,7 @@ Convertible stablecoins are backed by assets that are held in a reserve, where t
 
 Synthetic stablecoins aim to target a return to a reference asset, such as the USD, but they are not directly convertible for fiat currencies. 
 
-> One way to achieve the target stability is by using crypto-collateralization (for example, DOC or RDOC), or using derivatives (eg XUSD).
+> One way to achieve the target stability is by using crypto-collateralization (for example, DOC or USDRIF), or using derivatives (eg XUSD).
 > Another way is through a peg that is actively managed using an algorithmic monetary policy or smart contract (eg Terra or Ampleforth).
 > These are often used in conjunction with oracles that provide on-chain access to price feeds for fiat and blockchain asset pairs.
 

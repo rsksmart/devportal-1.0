@@ -25,7 +25,7 @@ In this guide, you will learn about stablecoins, stablecoins on Rootstock, how t
     - [Stablecoin vs CBDCs](/guides/stablecoin/stablecoin-vs-digital-assets/#stablecoin-vs-cbdcs)
 - [Stablecoins on Bitcoin](/guides/stablecoin/stablecoin-on-bitcoin/)
     - [DOC - Dollar on Chain](/guides/stablecoin/stablecoin-on-bitcoin/#doc-dollar-on-chain)
-    - [RDOC - RIF Dollar on Chain](/guides/stablecoin/stablecoin-on-bitcoin/#rdoc-rif-dollar-on-chain)
+    - [USDRIF - RIF US Dollar](/guides/stablecoin/stablecoin-on-bitcoin/#usdrif-rif-us-dollar)
     - [XUSD - Babelfish](/guides/stablecoin/stablecoin-on-bitcoin/#xusd-babelfish)
 - [How to Store Stablecoins on Rootstock](/guides/stablecoin/how-to-store-stablecoins/)
     - [Using Software Wallets](/guides/stablecoin/how-to-store-stablecoins/#using-software-wallets)

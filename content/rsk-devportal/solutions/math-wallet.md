@@ -41,7 +41,7 @@ Math Wallet is a CryptoWallet used by 1 million users, 50+ blockchains, 2000+ dA
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
 | [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock
-| [RDOC](https://explorer.rootstock.io/address/0x2d919f19D4892381d58EdEbEcA66D5642ceF1A1F) | [RIF Dollar On Chain](https://rifonchainootstock.io) | ERC20 | Rootstock
+| [USDRIF](https://explorer.rootstock.io/address/0x2d919f19D4892381d58EdEbEcA66D5642ceF1A1F) | [RIF US Dollar](https://rifonchainootstock.io) | ERC20 | Rootstock
 | [RIFP](https://explorer.rootstock.io/address/0xF4d27C56595eD59B66cC7f03CFF5193E4Bd74a61) | [RIFPro](https://rif.moneyonchain.com) | ERC20 | Rootstock
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/ ) | ERC20 | Ethereum
 | [UNI](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984) | [Uniswap](https://uniswap.org/) | ERC20 | Ethereum

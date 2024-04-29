@@ -13,7 +13,7 @@ layout: 'rsk'
 
 [Bulla Network](https://www.bulla.network/), is one of the latest projects to join the Rootstock ecosystem,  it is an on-chain credit protocol that helps unlock crypto commerce, allowing users to create and pay invoices in an entirely decentralized way. BullaNetwork’s bankless Web3 accounting protocol helps DAOs, companies, and individuals send invoices and payments and manage the business and personal accounts in one ledger, all on-chain.
 
-BullaNetwork is deployed on the chains: Rootstock, xDAI, Celo, ETH, Polygon, Avalanche and Harmony. Users can transact in RDOC, RBTC, cUSD, USDC, WBTC, WETH and WxDAI stable tokens.  
+BullaNetwork is deployed on the chains: Rootstock, xDAI, Celo, ETH, Polygon, Avalanche and Harmony. Users can transact in USDRIF, RBTC, cUSD, USDC, WBTC, WETH and WxDAI stable tokens.  
 
 ## How Bulla Network integrates with Rootstock
 

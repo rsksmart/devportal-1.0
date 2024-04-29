@@ -15,7 +15,7 @@ This course aims to teach you how to develop on the Rootstock blockchain, with a
 
 In this course, you will learn how to write, test, compile, deploy, secure, and verify smart contracts using Solidity.
 
-... and it is completely free!
+... and it is completely FREE!
 
 <div class="btn-container">
   <span></span>
@@ -46,66 +46,24 @@ Each module has the following types of material:
 
 ### Modules
 
-<div class="owl-carousel owl-theme">
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-02.jpg" alt="moduleTwo">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Blockchain Nodes</a>
-      </a>
-   </div>
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-03.jpg" alt="moduleThree">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Write Smart Contracts</a>
-      </a>
-   </div>
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-04.jpg" alt="moduleFour">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Test Smart Contracts</a>
-      </a>
-   </div>
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-05.jpg" alt="moduleFive">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Secure Smart Contracts</a>
-      </a>
-   </div>
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-06.jpg" alt="moduleSix">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Deploy Smart Contracts</a>
-      </a>
-   </div>
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-07.jpg" alt="moduleSeven">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Verify Smart Contracts</a>
-      </a>
-   </div>
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-08.jpg" alt="moduleEight">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Course Completion</a>
-      </a>
-   </div>
-   <div class="item">
-      <a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">
-      <img src="/assets/img/courses/modules/modules-course-01.jpg" alt="moduleOne">
-      <a class="module-name" href="https://rsk.thinkific.com/courses/blockchain-developer/" target="blank">Course Introduction</a>
-      </a>
-   </div>
-</div>
+* M01: Course Introduction
+* M02: Blockchain Nodes
+* M03: Write Smart Contracts
+* M04: Test Smart Contracts
+* M05: Secure Smart Contracts
+* M06: Deploy Smart Contracts
+* M07: Verify Smart Contracts
+* M08: Course Completion
 
 ## Benefits of taking the Blockchain Developer Course
-
 * Level up your knowledge about smart contracts
 * Earn a certificate upon completion
 * Qualify to become a Developer Ambassador (and earn rewards!)
 
-<a href="https://rsk.thinkific.com/courses/blockchain-developer/" target="_blank">
-  <button class="orange-button">Become a Blockchain Developer</button>
-</a>
+<div class="btn-container">
+  <span></span>
+    <a class="green" href="https://rsk.thinkific.com/courses/blockchain-developer/">Become a Blockchain Developer</a>
+</div>
 
 ## FAQs
 
@@ -119,15 +77,11 @@ Rootstock Blockchain Developer Course.
   > and neither does it aim to teach your about this topic.
 - Will I get a Course completion certificate if I complete the course?
   > A:
-  > This is not the complete course yet - it is still in beta at the moment -
-  > so there isn't a certificate at the end unfortunately!
-  > When the course is finalised we will enable certificates,
-  > and your progress during the beta will count towards completion,
-  > and therefore the certificate as well.
+  > Yes, you get a certificate at the end of the course.
 - Where can I go for help?
   > A:
   > Go to the [Rootstock community discord](https://rootstock.io/discord),
-  > and ask questions on the `#rsk-dev-course` channel.
+  > and ask questions on the `#support` forum.
 - Is there a time frame for completing the course?
   > A:
   > No, this course is entirely self paced,

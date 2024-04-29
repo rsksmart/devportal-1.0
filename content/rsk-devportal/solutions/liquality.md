@@ -70,7 +70,7 @@ The Liquality Wallet is the simplest way to store and atomic swap your crypto ac
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
 | [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock |
-| [RDOC](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://rifonchain.com/) | ERC20 | Rootstock |
+| [USDRIF](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF US Dollar](https://rifonchain.com/) | ERC20 | Rootstock |
 | [DOC](https://explorer.rootstock.io/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555) | [Dollar On Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20 | Rootstock |
 
 ### Non-token financial assets

@@ -2,8 +2,8 @@ import React from "react";
 
 const ComponentThree = () => {
     return(
-        <a href="https://iovlabs.typeform.com/devportalsurvey" target="_blank" rel="noopener noreferrer">  Help us make the DevPortal best in class with your input.
-        Take the Developer Portal Survey Now! &nbsp;
+        <a href="https://blog.rootstock.io/noticia/merged-mining-insights-report-q1-2024/" target="_blank" rel="noopener noreferrer"> Rootstock x Bitcoin: Merged Mining Insights Report | Q4 2024. 
+        Read on for insights on the top mining pools, average hashrate and more.
       </a>
     )
 }

@@ -17,7 +17,7 @@ Bitcoin is the most liquid cryptocurrency. It has the largest market capitalizat
 
 By using bitcoin as collateral, a stablecoin can incorporate decentralization and censorship resistance properties that characterize bitcoin. In addition, it minimizes counterparty risks found in other stable currencies, such as traditional bank accounts if they use fiat currencies as collateral, or use less established crypto assets as collateral that may be less efficient to use.
 
-Some examples of these tokens backed by Bitcoin, are DOC, RDOC, and XUSD
+Some examples of these tokens backed by Bitcoin, are DOC, USDRIF, and XUSD
 
 ### DOC: Dollar on Chain
 
@@ -29,19 +29,13 @@ Watch this explainer video below to understand more about DOC.
   <iframe width="949" height="534" src="https://youtube.com/embed/pQmUsxrgfj8"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### RDOC: RIF Dollar on Chain
+### USDRIF: RIF US Dollar
 
-The [RIF Dollar on Chain or RDOC](https://rifonchain.com/) stablecoin is one of the main assets on the RIF on Chain DeFi platform. RIF on Chain is powered by Money on chain, a stablecoin and leveraged token protocol, which runs on Rootstock smart contracts.
+[RIF US Dollar (USDRIF)](https://rifonchain.com/) stablecoin is one of the main assets on the [RIF on Chain](https://dapp.rifonchain.com/ipfs/QmZXq8XJidqJcrnP64DYZGSAQHCvx4vWASZR88BP9tmQav/#/wallet/stable) DeFi platform. RIF on Chain is powered by Money on chain, a stablecoin and leveraged token protocol, which runs on Rootstock smart contracts.
 
-RDOC is a crypto-collateralized stablecoin that uses the RIF token as collateral. It’s 1:1 pegged to the US Dollar guaranteed by the smart contract.
+USDRIF is a crypto-collateralized stablecoin that uses the RIF token as collateral. It’s 1:1 pegged to the US Dollar guaranteed by the smart contract.
 
-Unlike the majority of other DeFi protocol stablecoins where users are required to provide collateral or a collateralized debt position to borrow funds - similar to the Ether-backed decentralized stablecoin DAI - RDOC can be acquired by platform users directly by spending RIF, which is a unique feature that some users may prefer.
-
-Watch this explainer video below to understand more about the RDOC token.
-
-<div class="video-container">
-  <iframe width="949" height="534" src="https://youtube.com/embed/GskPs4v2zmQ"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+Unlike the majority of other DeFi protocol stablecoins where users are required to provide collateral or a collateralized debt position to borrow funds - similar to the Ether-backed decentralized stablecoin DAI - USDRIF can be acquired by platform users directly by spending RIF, which is a unique feature that some users may prefer.
 
 ### XUSD: Babelfish
 

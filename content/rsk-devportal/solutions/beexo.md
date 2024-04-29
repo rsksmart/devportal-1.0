@@ -157,7 +157,7 @@ can be used in Testnet.
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
 | [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock |
-| [RDOC](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar On Chain](https://moneyonchain.com/rif-dollar/) | ERC20 | Rootstock |
+| [USDRIF](https://explorer.rsk.co/address/0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37) | [RIF US Dollar](https://moneyonchain.com/rif-dollar/) | ERC20 | Rootstock |
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/ ) | ERC20 | Ethereum |
 | [USDT](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7) | [Tether USD](https://tether.to/)  | ERC20 | Ethereum |
 | [FLIXX](https://etherscan.io/token/0xf04a8ac553fcedb5ba99a64799155826c136b0be) | [Flixx](https://flixxo.com/) | ERC20 | Ethereum |

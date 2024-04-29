@@ -21,7 +21,7 @@ menu_title: Courses
                 <a href="/courses/blockchain-developer/">
                     <div class="content-container">
                         <p class="card-title rsk_green">Rootstock Blockchain Developer Course</p>
-                        <p class="card-desc">Welcome to the Rootstock Dev Course Beta. Become a Blockchain Developer. Learn how to code smart contracts in Solidity, then compile, test, deploy, secure, and verify them.</p>
+                        <p class="card-desc">Welcome to the Rootstock Dev Course. Become a Blockchain Developer. Learn how to code smart contracts in Solidity, then compile, test, deploy, secure, and verify them.</p>
                     </div>
                 </a>
                 <div class="btn-container">

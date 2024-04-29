@@ -118,7 +118,6 @@ The model was designed to align the economic incentives of the different actors 
 - [Money on Chain Oracle](https://github.com/money-on-chain/Amphiraos-Oracle/blob/master/README.md)
 - [Money on Chain Price Feeder](https://github.com/money-on-chain/price-feeder/blob/master/README.md)
 - [Money on Chain Governance Smart Contract System](https://github.com/money-on-chain/Areopagus-Governance/blob/develop/README.md)
-- [RIF Dollar on Chain Contract](https://github.com/money-on-chain/RDOC-Contract/#readme)
 
 ### Get in touch
 
