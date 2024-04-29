@@ -55,7 +55,7 @@ Kripton integrates with Rootstock to provide an on/off ramp solution to give use
 
 | Symbol                                                                                | Name                                                             | Token Standard | Network   |
 | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------- | --------- |
-| [USDRIF](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF USD](https://rifonchain.com/)                      | ERC20          | Rootstock |
+| [USDRIF](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF US Dollar](https://rifonchain.com/)                      | ERC20          | Rootstock |
 | [DOC](https://explorer.rootstock.io/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555)  | [Dollar On Chain](https://moneyonchain.com/doc-bitcoin-stablecoin/) | ERC20          | Rootstock |
 | [BPRO](https://explorer.rootstock.io/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-income-for-bitcoin-holders/) | N/A            | Rootstock |
 | [USDT](https://etherscan.io/token/0xdac17f958d2ee523a2206206994597c13d831ec7)            | [Tether USD](https://tether.to/)                                    | ERC20          | Ethereum  |

@@ -74,7 +74,7 @@ Visit the links below to download D'Cent Wallet.
 | Symbol | Name | Token Standard | Network |
 | --- | --- | --- | --- |
 | [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](/rif/token/) | ERC677 | Rootstock |
-| [USDRIF](https://explorer.rsk.co/address/0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37) | [RIF USD](https://rifonchain.com/) | ERC20 | Rootstock |
+| [USDRIF](https://explorer.rsk.co/address/0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37) | [RIF US Dollar](https://rifonchain.com/) | ERC20 | Rootstock |
 | [DOC](https://explorer.rootstock.io/address/0x809c4db849948bfa6cb84501e5a7b5c9da8fc555) | [Dollar On Chain](https://moneyonchain.com/doc-stablecoin/) | ERC20 | Rootstock |
 | [rDAI](https://explorer.rootstock.io/address/0x6b1a73d547f4009a26b8485b63d7015d248ad406) | [Redeemable DAI](https://rdai.money/) | ERC20 | Rootstock |
 | [rDAI](https://etherscan.io/token/0x261b45d85ccfeabb11f022eba346ee8d1cd488c0) | [Redeemable DAI](https://rdai.money/) | ERC20 | Ethereum |

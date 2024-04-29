@@ -29,9 +29,9 @@ Watch this explainer video below to understand more about DOC.
   <iframe width="949" height="534" src="https://youtube.com/embed/pQmUsxrgfj8"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-### USDRIF
+### USDRIF: RIF US Dollar
 
-[USDRIF](https://rifonchain.com/) stablecoin is one of the main assets on the RIF on Chain DeFi platform. RIF on Chain is powered by Money on chain, a stablecoin and leveraged token protocol, which runs on Rootstock smart contracts.
+[RIF US Dollar (USDRIF)](https://rifonchain.com/) stablecoin is one of the main assets on the [RIF on Chain](https://dapp.rifonchain.com/ipfs/QmZXq8XJidqJcrnP64DYZGSAQHCvx4vWASZR88BP9tmQav/#/wallet/stable) DeFi platform. RIF on Chain is powered by Money on chain, a stablecoin and leveraged token protocol, which runs on Rootstock smart contracts.
 
 USDRIF is a crypto-collateralized stablecoin that uses the RIF token as collateral. It’s 1:1 pegged to the US Dollar guaranteed by the smart contract.
 
