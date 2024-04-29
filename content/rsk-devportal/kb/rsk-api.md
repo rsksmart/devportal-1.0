@@ -1,13 +1,10 @@
 ---
 layout: rsk
-menu_order: 1600
-menu_title: RSK API CLI
-title: RSK API Library - Interact with RSK & Ethereum nodes | Roostock (RSK)
-description: "A library and commands to interact with RSK and Ethereum nodes"
+menu_title: Rootstock API CLI
+title: Rootstock API Library - Interact with Rootstock & Ethereum nodes | Roostock (RSK)
+description: "A library and commands to interact with Rootstock and Ethereum nodes"
 tags: tutorial, rsk, cli
 ---
-
-# A library and commands to interact with RSK and Ethereum nodes
 
 In recent years I have carried out various experiments
 with [RSK](https://www.rsk.co/) blockchains nodes (local, testnet, mainnet)

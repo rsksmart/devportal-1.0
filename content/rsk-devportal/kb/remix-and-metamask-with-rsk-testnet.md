@@ -1,10 +1,10 @@
 ---
 menu_order: 2200
-menu_title: Remix and Metamask with RSK testnet
+menu_title: Remix and Metamask with Rootstock testnet
 layout: rsk
-title: Remix and Metamask Integration on RSK Testnet | Rootstock (RSK)
+title: Remix and Metamask Integration on Rootstock Testnet | Rootstock (RSK)
 tags: tutorial, rsk, remix, metamask
-description: "Configure a wallet using Metamask, connect with Remix, compile and deploy a smart contract at RSK testnet."
+description: "Configure a wallet using Metamask, connect with Remix, compile and deploy a smart contract at Rootstock testnet."
 ---
 
 RSK's virtual machine implementation is compatible with the Ethereum EVM,
