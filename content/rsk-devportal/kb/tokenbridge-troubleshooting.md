@@ -143,7 +143,7 @@ To get support, please ask on the
 
 **When:** always
 
-Note that if you have tokens on the Rootstock network, such as RIF or RDOC,
+Note that if you have tokens on the Rootstock network, such as RIF or USDRIF,
 including "crossed" tokens such as rUSDT or rDAI,
 you **should not** send them to an Ethereum address in a regular transaction.
 This **does not** work!

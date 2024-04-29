@@ -73,12 +73,6 @@ With Rootstock smart contract platform, users/investors can benefit from yield f
 Sovryn enables Bitcoin holders to yield interest on RBTC, XUSD, FISH, rUSDT, MOC, DOC, BPRO, RIF, MYNT, etc.
 To get started, visit the [Sovryn dApp](https://live.sovryn.app/yield-farm)
 
-**Watch How to Mint XUSD with RDOC and earn yield**
-
-<div class="video-container">
-  <iframe width="949" height="534" src="https://www.youtube.com/embed/j8LZ3CJDfXc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
 ## Staking
 
 Staking is a way of earning rewards for holding certain cryptocurrencies. Cryptocurrencies that allow staking use a “consensus mechanism” called Proof of Stake, which is the way they ensure that all transactions are verified and secured without a bank or payment processor in the middle. 

@@ -71,7 +71,7 @@ src="/assets/img/rif-wallet/11b-click-upward-arrow-to-send.jpg"  title="RIF Wall
 
 Enter an amount, select the asset you would like to send to contact, by clicking on the dropdown **change tx asset**. 
 
-Note: You can also choose the asset you would like to use to pay for transaction fees. You can pay for gas fees using native tokens on Rootstock like the RIF, RDOC, not that gas fees cannot be paid for in RBTC. This is a native feature of RIF Relay.
+Note: You can also choose the asset you would like to use to pay for transaction fees. You can pay for gas fees using native tokens on Rootstock like the RIF, USDRIF, not that gas fees cannot be paid for in RBTC. This is a native feature of RIF Relay.
 
 <div class="image-container">
     <img 

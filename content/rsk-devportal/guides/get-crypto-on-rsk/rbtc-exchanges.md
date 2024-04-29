@@ -27,11 +27,11 @@ There are currently exchanges that allow users to trade between BTC and RBTC in 
   It is available for iOS and Android devices where you can:
     - Deposit and withdraw Fiat (local currency) by bank transfer to your own account.
     - Buy and sell your titles.
-    - Buy and sell: BTC, ETH, RIF, RBTC and RDOC.
+    - Buy and sell: BTC, ETH, RIF, RBTC and USDRIF.
     [Download the Buenbit App](https://buenbit.com/)
 - Criptala
   - [Criptala](https://criptala.io/) is a Uruguayan cryptocurrency exchange platform focused on facilitating buying and selling of cryptocurrencies for individuals in the country. It offers a user-friendly platform and allows users to:
-    - Purchase and sell major cryptocurrencies, including BTC, ETH, RBTC, RIF, DOC and rDOC.
+    - Purchase and sell major cryptocurrencies, including BTC, ETH, RBTC, RIF, DOC and USDRIF.
     - Deposit and withdraw funds using Uruguayan pesos (UYU) through bank transfers, cash, and wire transfers.
     - Convert between fiat and crypto through RedPagos, a widespread network of payment collection points in Uruguay, aiming to simplify access for users.
     [Register an account on the website](https://exchange.criptala.io/) and verify your account to start trading.

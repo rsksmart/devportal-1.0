@@ -83,7 +83,7 @@ Defiant is your door into this new world and the new ones to come.
 | [RIF](https://explorer.rootstock.io/address/0x2acc95758f8b5f583470ba265eb685a8f45fc9d5) | [RIF Token](https://developers.rsk.co/rif/token/) | ERC677 | Rootstock |
 | [DOC](https://explorer.rootstock.io/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db) | [Dollar on Chain](https://moneyonchain.com/doc-stablecoin/) | ERC20 | Rootstock |
 | [BPRO](https://explorer.rootstock.io/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8) | [BitPro](https://moneyonchain.com/bpro-token/) | ERC20 | Rootstock |
-| [RDOC](https://explorer.rootstock.io/address/0x2d919f19d4892381d58edebeca66d5642cef1a1f) | [RIF Dollar on Chain](https://rif.moneyonchain.com/metrics) | ERC20 | Rootstock |
+| [USDRIF](https://explorer.rsk.co/address/0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37) | [RIF USD](https://rif.moneyonchain.com/metrics) | ERC20 | Rootstock |
 | [RIFP](https://explorer.rootstock.io/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61) | [RIFPro](https://rif.moneyonchain.com/metrics) | ERC20 | Rootstock |
 | [DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) | [Dai](https://makerdao.com/) | ERC20 | Ethereum |
 

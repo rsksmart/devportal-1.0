@@ -26,7 +26,7 @@ The objective of [BabelFish](https://babelfish.money/) is to aggregate **stablec
 The cornerstone of Babelfish is the XUSD token,
 which is itself a USD pegged stablecoin,
 while aggregating multiple other USD pegged stablecoins,
-such as DOC, RDOC, and others,
+such as DOC, USDRIF, and others,
 providing a simplified and unified user experience
 for interacting with stablecoins.
 
@@ -46,7 +46,7 @@ and thus more liquid stablecoin pool.
 
 - [Bridge Stablecoins and experience XUSD with Sovryn](https://bridge.sovryn.app/)
 
-- [Mint XUSD with RDOC and Earn Yield](https://youtu.be/j8LZ3CJDfXc)
+- [Mint XUSD with USDRIF and Earn Yield](https://youtu.be/j8LZ3CJDfXc)
 
 
 ### DevTools
