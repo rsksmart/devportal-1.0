@@ -1,5 +1,5 @@
 ---
-menu_order: 500
+menu_order: 450
 menu_title: Rootstock RPC API
 section_title: RPC API
 layout: rsk

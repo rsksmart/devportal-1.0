@@ -1,5 +1,5 @@
 ---
-menu_order: 1100
+menu_order: 1002
 menu_title: Hackathon Dev Starter Kit
 layout: rsk
 title: "Rootstock Hackathon Dev Starter"

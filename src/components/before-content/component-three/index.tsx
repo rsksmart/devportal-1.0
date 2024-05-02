@@ -2,8 +2,8 @@ import React from "react";
 
 const ComponentThree = () => {
     return(
-        <a href="https://blog.rootstock.io/noticia/merged-mining-insights-report-q1-2024/" target="_blank" rel="noopener noreferrer"> Rootstock x Bitcoin: Merged Mining Insights Report | Q4 2024. 
-        Read on for insights on the top mining pools, average hashrate and more.
+        <a href="https://taikai.network/en/rootstock/hackathons/bitcoin-rootstock-hackathon/overview" target="_blank" rel="noopener noreferrer"> Bitcoin Meets Solidity Hackathon now open for registration.
+        This hackathon brings together developers & blockchain enthusiasts to build on top of #Bitcoin technology using Rootstock.
       </a>
     )
 }

@@ -1,5 +1,5 @@
 ---
-menu_order: 1000
+menu_order: 1001
 menu_title: Starter Kits
 layout: rsk
 title: "Starter Kits for easy Rootstock Development"
