@@ -40,6 +40,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | rLogin                                         | RIF Libraries                   | [rLogin](https://dev.rootstock.io/rif/rlogin/libraries/)                                          |
 | Relay                                          | RIF Libraries                   | [RIF Relay](https://dev.rootstock.io/rif/relay/)                                                     |
 | Hardhat                                        | Dev Environments                | [Hardhat](/tools/hardhat/) |
+| Foundry                                        | Dev Environments                | [Foundry](/tools/foundry/) |
 | Remix                                          | Dev Environments                | [Remix](https://dev.rootstock.io/kb/remix-and-metamask-with-rsk-testnet/)                        |
 | RIF Relay SDK                                  | SDKs                            | [SDK](https://github.com/rsksmart/rif-relay-sample-dapp#rif-relaying-services-sdk-sample-dapp) |
 | RIF Rollup                                     | SDKs                            | [SDK](https://github.com/rsksmart/rif-rollup-js-sdk)                                           |

@@ -13,7 +13,7 @@ This section provides help on some potential issues you may run into and tips on
 ## Errors
 
 [](#top "collapsible")
-- Error: Error HH8: There's one or more errors in your config file
+- Error HH8: There's one or more errors in your config file
   ```shell
     % npx hardhat compile
     Error HH8: There's one or more errors in your config file:
