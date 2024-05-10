@@ -2,7 +2,7 @@
 menu_order: 1300
 menu_title: WakeUp Labs
 section_title: WakeUp Labs
-title: 'WakeUp Platform - Create and Deploy Smart Contracts with ease'
+title: 'WakeUp Developer-Oriented Platform for Creating and Deploying Smart Contracts | Rootstock'
 description: 'The WakeUp platform is a developer-oriented platform integrated with the Rootstock blockchain, aimed at facilitating development on Rootstock through easy to integrate APIs.'
 tags: wakeuplabs, rootstock-solutions, rootstock, bitcoin, defi, dApps, blockchain, node, smart-contracts
 layout: 'rsk'
@@ -10,7 +10,7 @@ layout: 'rsk'
 
 [WakeUp Labs](http://www.wakeuplabs.io) is a software development studio that assists EVM-Compatible Blockchains, DAOs and traditional organizations in overcoming technical challenges and expediting product development. 
 
-Its developer-oriented platform called [WakeUp](https://platform.wakeuplabs.io/) has integrated the Rootstock blockchain, which allows developers without prior experience in blockchain development to create and deploy smart contracts with ease.
+Its developer-oriented platform called [WakeUp](https://platform.wakeuplabs.io/) has integrated the Rootstock blockchain, which allows developers without prior experience in blockchain development to create and deploy smart contracts.
 
 The platform currently supports [Rootstock](https://rootstock.io/), [Optimism](https://www.optimism.io/), [Polygon](https://polygon.technology/), [Arbitrum](https://arbitrum.io/), [Scroll](https://scroll.io/), and other EVM-compatible chains.
 
