@@ -8,11 +8,13 @@ tags: wakeuplabs, rootstock-solutions, rootstock, bitcoin, defi, dApps, blockcha
 layout: 'rsk'
 ---
 
-[WakeUp Labs](http://www.wakeuplabs.io) is a software development studio that assists EVM-Compatible Blockchains, DAOs and traditional organizations in overcoming technical challenges and expediting product development. Its platform called [WakeUp](https://platform.wakeuplabs.io/), a developer-oriented platform has integrated the Rootstock blockchain, facilitating development on Rootstock through easy to integrate APIs. This approach aims to enable more projects to be easily deployed on Rootstock and foster new developers to join the Blockchain revolution.
+[WakeUp Labs](http://www.wakeuplabs.io) is a software development studio that assists EVM-Compatible Blockchains, DAOs and traditional organizations in overcoming technical challenges and expediting product development. 
+
+Its developer-oriented platform called [WakeUp](https://platform.wakeuplabs.io/) has integrated the Rootstock blockchain, aimed at facilitating development on Rootstock through easy to integrate APIs. Enabling more projects to be easily deployed on Rootstock.
 
 ![WakeUpLabs-banner](/assets/img/solutions/wakeuplabs/wakeuplabs-banner.png)
 
-The platform supports [Rootstock](https://rootstock.io/), [Optimism](https://www.optimism.io/), [Polygon](https://polygon.technology/), [Arbitrum](https://arbitrum.io/), [Scroll](https://scroll.io/), and other EVM-compatible chains.
+The platform currently supports [Rootstock](https://rootstock.io/), [Optimism](https://www.optimism.io/), [Polygon](https://polygon.technology/), [Arbitrum](https://arbitrum.io/), [Scroll](https://scroll.io/), and other EVM-compatible chains.
 
  ## How WakeUp Platform Works
 
