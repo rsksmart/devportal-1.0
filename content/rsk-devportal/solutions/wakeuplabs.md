@@ -3,7 +3,7 @@ menu_order: 1300
 menu_title: WakeUp Labs
 section_title: WakeUp Labs
 title: 'WakeUp Platform - Facilitating development on Rootstock through easy to integrate APIs'
-description: 'WakeUp Labs is a software development studio that helps EVM-Compatible Blockchains, DAOs and traditional organizations to solve technical challenges and bring products to life faster. '
+description: 'The WakeUp platform is a developer-oriented platform integrated with the Rootstock blockchain, aimed at facilitating development on Rootstock through easy to integrate APIs.'
 tags: wakeuplabs, rootstock-solutions, rootstock, bitcoin, defi, dApps, blockchain, node, smart-contracts
 layout: 'rsk'
 ---
@@ -28,11 +28,9 @@ The platform currently supports [Rootstock](https://rootstock.io/), [Optimism](h
 
 ## About WakeUp Labs
 
-WakeUp Labs is a software development studio that assists EVM-Compatible Blockchains, DAOs and traditional organizations in overcoming technical challenges and expediting product development. 
+[WakeUp Labs](http://www.wakeuplabs.io) is a software development studio that assists EVM-Compatible Blockchains, DAOs and traditional organizations in overcoming technical challenges and expediting product development. 
 
-> Note: The [WakeUp Labs platform](https://platform.wakeuplabs.io/) designed for developers, which allows people without prior experience in crypto development to create and deploy a Smart Contract with ease, just by using traditional APIs.
-
-This is very important for reducing entry barriers into the ecosystem, providing a first version of a project without diving into the complexities involved, and beginning to familiarize oneself with the different concepts.
+> Note: The [WakeUp Labs platform](https://platform.wakeuplabs.io/) designed for developers, which allows people without prior experience in crypto development to create and deploy a Smart Contract with ease, just by using traditional APIs. This is very important for reducing entry barriers into the ecosystem, providing a first version of a project without diving into the complexities involved, and beginning to familiarize oneself with the different concepts.
 
 ## Getting Started
 
