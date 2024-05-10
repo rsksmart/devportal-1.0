@@ -342,3 +342,5 @@ These tools are specifically tailored for Web3 development, and they can simplif
   - [Moralis](https://moralis.io/) is a fully managed backend platform for Web3 and blockchain applications. It offers a suite of tools for authentication, real-time databases, cloud functions, and syncing blockchain data.
   - **Why Use It:** 
     It can be a time-saver to build a more comprehensive application with backend support. It handles much of the backend complexity and lets you focus on front-end development.
+- Foundry
+  - [Foundry](https://book.getfoundry.sh) is a smart contract development toolchain, and user-friendly development environment used for writing and advanced smart contracts testing in Solidity.

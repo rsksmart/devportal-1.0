@@ -2,72 +2,87 @@
 section_title: Foundry
 menu_title: Foundry
 layout: rsk
-title: Foundry Overview
-tags: foundry, quick-start, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, windows, mac, linux, get-started, how-to
-menu_order: 4
+title: Getting Started with Foundry
+description: 'How to write, test, and deploy smart contracts with Foundry'
+tags: foundry, quick-start, rootstock, testing, networks, deployment, npm, tools, rsk, ethereum, smart-contracts, install, windows, mac, linux, get-started, how-to
+menu_order: 410
+render_features: 'collapsible'
 ---
 
-[Foundry](https://book.getfoundry.sh) is a smart contract development toolchain. Foundry manages your dependencies, compiles your project, runs tests, deploys, and lets you interact with the chain from the command-line and via Solidity scripts. Foundry offers a user-friendly development environment to write and test smart contracts in Solidity. 
+[Foundry](https://book.getfoundry.sh) is a smart contract development toolchain, and user-friendly development environment for writing and testing smart contracts in Solidity. It manages dependencies, compiles, run tests, deploy contracts and allows for interaction with EVM-compatible chains using a command-line tool called [Forge](https://book.getfoundry.sh/forge/). 
 
+In this guide, we will learn about Foundry and its benefits for smart contract development, how to setup your environment, create a Foundry project and execute a deployment script.
 
-## Foundry Advantages Over Hardhat
+## Why use Foundry?
 
-Foundry is more solidity friendly and ideal for advanced smart contract analysis, auditing, and fast execution of Solidity tests. However you can use hardhat-foundry plugin to have your Foundry project work alongside hardhat benefiting the best from both.
+Forge is ideal for advanced smart contract analysis, auditing, and for fast execution of smart contract tests. 
 
-1. **Local Networks:** It provides a local blockchain environment using `anvil` tool, allowing developers to deploy contracts, run tests, and debug their code. It can also be used to fork other EVM compatible networks.
+> Note: Use the [hardhat-foundry plugin](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-foundry) to have your Foundry project work alongside Hardhat. 
+
+Here are some reason why you may prefer Foundry:
+
+1. Local Networks: 
+It provides a local blockchain environment using the [anvil tool](https://book.getfoundry.sh/reference/anvil/), allowing developers to deploy contracts, run tests, and debug code. It can also be used to fork other EVM compatible networks.
  
-   
-   **Read more:** [https://book.getfoundry.sh/reference/anvil/](https://book.getfoundry.sh/reference/anvil/)
-
-2. **Advanced Testing:** Forge comes with a number of advanced testing methods including:
-
+2. Advanced Testing: 
+[Forge](https://book.getfoundry.sh/forge/advanced-testing) comes with a number of advanced testing methods including:
    - Fuzz testing
    - Invariant testing
    - Differential testing
    - Symbolic Execution
    - Mutation Testing
+
+3. Advanced Debugging: 
+[Forge](https://book.getfoundry.sh/forge/debugger) allows for advanced debugging using an interactive debugger. 
+
+The debugger terminal is divided into four quadrants:
+
+[](#top "collapsible")
+- Quadrant 1
+   - The opcodes in the debugging session, with the current opcode highlighted. Additionally, the address of the current account, the program counter and the accumulated gas usage is also displayed.
+- Quadrant 2
+   - The current stack, as well as the size of the stack
+- Quadrant 3
+   - The source view.
+- Quadrant 4
+   - The current memory of the EVM.
  
    
-   **Read more:** [https://book.getfoundry.sh/forge/advanced-testing](https://book.getfoundry.sh/forge/advanced-testing)
+## Getting Started
 
-3. **Advanced Debugging:** Forge gives advanced debugging divided in four quadrants:
+### Prerequisites
 
-   - Quadrant 1: The opcodes in the debugging session, with the current opcode highlighted. Additionally, the address of the current account, the program counter and the accumulated gas usage is also displayed
-   - Quadrant 2: The current stack, as well as the size of the stack
-   - Quadrant 3: The source view
-   - Quadrant 4: The current memory of the EVM
- 
-   
-   **Read more:** [https://book.getfoundry.sh/forge/debugger](https://book.getfoundry.sh/forge/debugger)
+To get started with Foundry, ensure the following tools are installed:
+- The [Rust](https://rust-lang.org/) Compiler
+- Cargo Package Manager
 
-## Prerequisites
+> For an easy installation of the above tools, use the [rustup installer](https://rustup.rs).
 
-You will need the [Rust](https://rust-lang.org/) compiler and Cargo, the Rust package manager. The easiest way to install both is with [rustup.rs](https://rustup.rs).
+### Installation
 
-## Install
-
-To install using Foundryup. Foundryup is the Foundry toolchain installer. You can find more about it [here](https://github.com/foundry-rs/foundry/blob/master/foundryup/README.md).
+To install, use Foundryup. Foundryup is the Foundry toolchain installer. You can find more information in the [Foundry README](https://github.com/foundry-rs/foundry/blob/master/foundryup/README.md).
 
 ```bash
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-Running foundryup by itself will install the latest (nightly) precompiled binaries: forge, cast, anvil, and chisel.
+Running foundryup by itself will install the latest (nightly) precompiled binaries: `forge`, `cast`, `anvil`, and `chisel`.
 
-See full setup guide [here](https://book.getfoundry.sh/getting-started/installation)
+> Visit the [installation guides](https://book.getfoundry.sh/getting-started/installation) for more information.
 
+### Create a foundry project
 
-## Create foundry project
 To start a new project with Foundry, use [forge init](https://book.getfoundry.sh/reference/forge/forge-init.html).
 
 ```bash
 forge init hello_foundry
 ```
-See more details on project [setup](https://book.getfoundry.sh/projects/creating-a-new-project)
 
-## Write your first contract
-Let’s check what the default foundry project looks like:
+> See more details on how to [create a new project](https://book.getfoundry.sh/projects/creating-a-new-project) using the Foundry guide.
 
+### Write your first contract
+
+Let’s view the file structure for a default foundry project:
 
 ```bash
 $ cd hello_foundry
@@ -79,10 +94,9 @@ $ tree . -d -L 1
 └── test
 
 4 directories
-
 ```
 
-The src directory contains counter smart contract with test written in test directory. Now let's build the foundry project.
+The `src` directory contains counter smart contract with test written in the `test` directory. Now, let's build the foundry project.
 
 ```bash
 forge build
@@ -94,29 +108,33 @@ And then run tests.
 forge test
 ```
 
-## Deploy your contract on Rootstock chain
+### Deploy contract on the Rootstock
 
-To deploy the counter contract on Rootstock mainnet or testnet configure Foundry a bit by setting up Rootstock RPC url and a private key of an account that’s funded with tRBTC. 
+To deploy the counter contract on Rootstock mainnet or testnet, further configure Foundry by setting up a Rootstock RPC url and a private key of an account that’s funded with tRBTC. 
 
 #### Environment Configuration
 
-Once you have an accound with private key then create a .env file in the root of foundry project and add the variables. Foundry automatically loads in a .env file present in your project directory.
+Once you have an account with a private key, create a `.env` file in the root of the foundry project and add the variables. 
 
-The .env file should follow this format:
+Foundry automatically loads a `.env` file present in the project directory.
+
+The `.env` file should follow this format:
 
 ```bash
 ROOTSTOCK_RPC_URL=https://public-node.testnet.rsk.co
 PRIVATE_KEY=0x...
 ```
 
-At the root of the project run:
+At the root of the project, run:
+
 ```bash
 # To load the variables in the .env file
 source .env
 ```
 
 #### Modify Deployment Script
-Now modify the deployment counter deploy script in scripts directory to use the private key by modifying the run method, see below example:
+
+Modify the deployment counter deploy script in the `scripts` directory to use the private key by modifying the run method, see below example:
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
@@ -142,32 +160,33 @@ contract CounterScript is Script {
 
 ```
 
-By default, scripts are executed by calling the function named run, our entrypoint.
+By default, scripts are executed by calling the function named `run` at the entrypoint.
 
 ```solidity
 uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
 ```
 
-Note: you must be careful when exposing private keys in a .env file and loading them into programs. This is only recommended for use with non-privileged deployers or for local / test setups.
+> - CAUTION: Be cautious when exposing private keys in a `.env` file and loading them into programs. 
+   > - This is only recommended for use with non-privileged deployers or for local / test setups.
 
-When we call `vm.startBroadcast()` the contract creation will be recorded by Forge, and we can broadcast the transaction to deploy the contract on-chain.
-
+When calling `vm.startBroadcast()`, the contract creation will be recorded by Forge, and we can broadcast the transaction to deploy the contract on-chain.
 
 #### Execute the deployment script
 
-Now we will use Forge to run our script and broadcast the transactions for us - this can take a little while, since Forge will also wait for the transaction receipts. 
-
+We will use Forge to run our script and broadcast the transactions - this can take a little while, since Forge also waits for the transaction receipts. 
 
 ```bash
 forge script script/Counter.s.sol --rpc-url $ROOTSTOCK_RPC_URL --broadcast --legacy
 ```
 
-Note: EIP-1559 is not supported or not activated on the Rootstock RPC url so that's why pass the --legacy flag to use legacy transactions instead of the EIP-1559 ones.
+[](#top "collapsible")
+- Note:
+   - [EIP-1559](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md) is not supported or not activated on the Rootstock RPC url
+   - The `--legacy` flag is passed to use legacy transactions instead of `EIP-1559`.
 
-You should see something like this after a minute or so:
+The result should look like this:
 
 ```bash
-
 [⠰] Compiling...
 No files changed, compilation skipped
 Script ran successfully.
@@ -199,8 +218,6 @@ Contract Address: 0x64B24E046259042e16a337Be4648CeAAF8Eb72C6
 Block: 5071408
 Gas Used: 106719
 
-
-
 ==========================
 
 ONCHAIN EXECUTION COMPLETE & SUCCESSFUL.
@@ -209,24 +226,22 @@ Total Paid: 0. ETH (106719 gas * avg 0 gwei)
 Transactions saved to: /hello_foundry/broadcast/Counter.s.sol/31/run-latest.json
 
 Sensitive values saved to: /hello_foundry/cache/Counter.s.sol/31/run-latest.json
-
 ```
-The broadcast directory will be updated automatically with the latest output of the deployment. 
 
+> The broadcast directory will be updated automatically with the latest output of the deployment. 
 
-See foundry deployment documentation [here](https://book.getfoundry.sh/tutorials/solidity-scripting#deploying-our-contract)
+See the [foundry deployment documentation](https://book.getfoundry.sh/tutorials/solidity-scripting#deploying-our-contract).
 
-
-
-## Related Docs
+### Related Docs
 
 - [Foundry Project Layout](https://book.getfoundry.sh/projects/project-layout)
 - [RPC Calls Using Cast](https://book.getfoundry.sh/cast/)
 - [Foundry Configurations](https://book.getfoundry.sh/config/)
 - [Solidity Scripting](https://book.getfoundry.sh/tutorials/solidity-scripting)
 - [Deploy Smart Contracts To Deterministic Addresses](https://book.getfoundry.sh/tutorials/create2-tutorial)
+- [Getting Started with Hardhat](/guides/quickstart/hardhat/)
 - [Gas Tracking](https://book.getfoundry.sh/forge/gas-tracking)
 - [Debugging](https://book.getfoundry.sh/forge/debugger)
 - [Chisel](https://book.getfoundry.sh/chisel/)
-- [Deploy and Verify](https://book.getfoundry.sh/forge/deploying)
-- [Testing](https://book.getfoundry.sh/forge/advanced-testing)
+- [Forge - Deploy and Verify ](https://book.getfoundry.sh/forge/deploying)
+- [Forge - Advanced Testing](https://book.getfoundry.sh/forge/advanced-testing)
