@@ -2,7 +2,7 @@
 menu_order: 1300
 menu_title: WakeUp Labs
 section_title: WakeUp Labs
-title: 'WakeUp Developer-Oriented Platform for Creating and Deploying Smart Contracts | Rootstock'
+title: 'WakeUp Platform for Creating and Deploying Smart Contracts'
 description: 'The WakeUp platform is a developer-oriented platform integrated with the Rootstock blockchain, aimed at facilitating development on Rootstock through easy to integrate APIs.'
 tags: wakeuplabs, rootstock-solutions, rootstock, bitcoin, defi, dApps, blockchain, node, smart-contracts
 layout: 'rsk'
