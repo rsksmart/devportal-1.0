@@ -15,6 +15,29 @@ platforms and APIs to create innovative experiences.
 <div class="row features-list">
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
+            <a href="/solutions/wakeuplabs/">
+                <div class="icon rif h-100">
+                    <div class="icon-cont text-center my-auto px-1">
+                        <img src="/assets/img/solutions/wakeuplabs/wakeup-logo.png" alt="wakeup icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/solutions/wakeuplabs/">
+                    <div class="content-container">
+                        <p class="card-title rsk_green">WakeUp Labs</p>
+                        <p class="card-desc">WakeUp Labs integrates the Rootstock blockchain into its developer oriented platform, facilitating development on Rootstock through traditional APIs.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/solutions/wakeuplabs/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
             <a href="/solutions/3xpl/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto px-1">
