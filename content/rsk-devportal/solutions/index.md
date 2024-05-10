@@ -26,7 +26,7 @@ platforms and APIs to create innovative experiences.
                 <a href="/solutions/wakeuplabs/">
                     <div class="content-container">
                         <p class="card-title rsk_green">WakeUp Labs</p>
-                        <p class="card-desc">The WakeUp platform is a developer-oriented platform integrated with the Rootstock blockchain, aimed at facilitating development on Rootstock through easy to integrate APIs.</p>
+                        <p class="card-desc">The WakeUp platform is a developer-oriented platform integrated with the Rootstock blockchain, which allows developers without prior experience in blockchain development to create and deploy smart contracts with ease.</p>
                     </div>
                 </a>
                 <div class="btn-container">
