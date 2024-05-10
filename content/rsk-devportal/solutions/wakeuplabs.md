@@ -10,9 +10,7 @@ layout: 'rsk'
 
 [WakeUp Labs](http://www.wakeuplabs.io) is a software development studio that assists EVM-Compatible Blockchains, DAOs and traditional organizations in overcoming technical challenges and expediting product development. 
 
-Its developer-oriented platform called [WakeUp](https://platform.wakeuplabs.io/) has integrated the Rootstock blockchain, aimed at facilitating development on Rootstock through easy to integrate APIs. Enabling more projects to be easily deployed on Rootstock.
-
-![WakeUpLabs-banner](/assets/img/solutions/wakeuplabs/wakeuplabs-banner.png)
+Its developer-oriented platform called [WakeUp](https://platform.wakeuplabs.io/) has integrated the Rootstock blockchain, which allows developers without prior experience in blockchain development to create and deploy smart contracts with ease.
 
 The platform currently supports [Rootstock](https://rootstock.io/), [Optimism](https://www.optimism.io/), [Polygon](https://polygon.technology/), [Arbitrum](https://arbitrum.io/), [Scroll](https://scroll.io/), and other EVM-compatible chains.
 
@@ -24,37 +22,47 @@ The platform currently supports [Rootstock](https://rootstock.io/), [Optimism](h
 
 ## How WakeUp APIs integrates with Rootstock
 
-![WakeUpLabs-banner](/assets/img/solutions/wakeuplabs/Diagram-WakeUp-RSK.png)
+<center>
+    <img src="/assets/img/solutions/wakeuplabs/Diagram-WakeUp-RSK.png"  title="WakeUpLabs-banner" width="50%"/>
+</center>
 
 ## About WakeUp Labs
 
-[WakeUp Labs](http://www.wakeuplabs.io) is a software development studio that assists EVM-Compatible Blockchains, DAOs and traditional organizations in overcoming technical challenges and expediting product development. 
-
-> Note: The [WakeUp Labs platform](https://platform.wakeuplabs.io/) designed for developers, which allows people without prior experience in crypto development to create and deploy a Smart Contract with ease, just by using traditional APIs. This is very important for reducing entry barriers into the ecosystem, providing a first version of a project without diving into the complexities involved, and beginning to familiarize oneself with the different concepts.
+The [WakeUp Labs platform](https://platform.wakeuplabs.io/) designed for developers, which allows people without prior experience in blockchain development to create and deploy a Smart Contract with ease, just by using traditional APIs. This is very important for reducing entry barriers into the ecosystem, providing a first version of a project without diving into the complexities involved, and beginning to familiarize oneself with the different concepts.
 
 ## Getting Started
 
-![WakeUpLabs Available Chains](/assets/img/solutions/wakeuplabs/wakeuplabs-available-chains.gif)
+<center>
+    <img src="/assets/img/solutions/wakeuplabs/wakeuplabs-available-chains.gif"  title="WakeUpLabs Available Chains" width="50%"/>
+</center>
 
-> This GIF showcases a project developed by a developer using our APIs, thus displaying information about the contracts deployed on the platform to date. 
+> This GIF showcases a project developed using our APIs, thus displaying information about the contracts deployed on the platform to date. 
 
 To get started, visit the [WakeUp Platform](https://platform.wakeuplabs.io) to create an account.
 
-(If you're unable to log in, try using Chrome or Safari).
+> If you're unable to log in, try using Chrome or Safari.
 
-![WakeUp Platform Banner](/assets/img/solutions/wakeuplabs/wake-up-platform-banner.png)
+<center>
+    <img src="/assets/img/solutions/wakeuplabs/wake-up-platform-banner.png"  title="WakeUp Platform Banner" width="50%"/>
+</center>
 
 Once registered, you will be provided with a dashboard containing relevant information, such as the number of contracts created or NFTs issued.
 
-![WakeUp Platform Dashboard](/assets/img/solutions/wakeuplabs/wakeup-dashboard.png)
+<center>
+    <img src="/assets/img/solutions/wakeuplabs/wakeup-dashboard.png"  title="WakeUp Platform Dashboard" width="50%"/>
+</center>
 
 On the left sidebar, go to the API Key section, where you'll be able to generate your API key needed to use the APIs provided by WakeUp for creating or executing Smart Contracts with well known programming languages.
 
-![WakeUp API Key](/assets/img/solutions/wakeuplabs/wakeup-api-key.png)
+<center>
+    <img src="/assets/img/solutions/wakeuplabs/wakeup-api-key.png"  title="WakeUp API Key" width="50%"/>
+</center>
 
 In the same left sidebar where you found the API KEY section, you can navigate to the website documentation. This will take you to our Stoplight portal. Stoplight is a collaborative API design platform that helps you build top-notch APIs and establish scalable API programs that drive innovation. In this case, it will allow you to utilize the APIs created by WakeUp.
 
-![WakeUp Mint NFT](/assets/img/solutions/wakeuplabs/wake-mint-an-nft.png)
+<center>
+    <img src="/assets/img/solutions/wakeuplabs/wake-mint-an-nft.png"  title="WakeUp Mint NFT" width="50%"/>
+</center>
 
 You can determine if the API is a `POST`, `GET`, `PUT`, or other types.
 
