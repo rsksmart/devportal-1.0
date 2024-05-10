@@ -2,7 +2,7 @@
 menu_order: 1300
 menu_title: WakeUp Labs
 section_title: WakeUp Labs
-title: 'WakeUp Labs - Facilitating development on Rootstock through easy to integrate APIs'
+title: 'WakeUp Platform - Facilitating development on Rootstock through easy to integrate APIs'
 description: 'WakeUp Labs is a software development studio that helps EVM-Compatible Blockchains, DAOs and traditional organizations to solve technical challenges and bring products to life faster. '
 tags: wakeuplabs, rootstock-solutions, rootstock, bitcoin, defi, dApps, blockchain, node, smart-contracts
 layout: 'rsk'
