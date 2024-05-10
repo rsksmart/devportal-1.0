@@ -39,7 +39,7 @@ In this guide, you will learn:
 
 ## Getting Started
 
-> Note: The RPC API is currently available ONLY on Testnet.
+> Note: The RPC API is available on Testnet and Mainnet.
 
 Visit the [Rootstock RPC API](https://rpc.rootstock.io/)
 
@@ -88,7 +88,7 @@ You can make your first api call by using one of the provided examples, or simpl
 #### Example Request
 
 ```shell
-curl --location --request POST 'https://rpc.testnet.rootstock.io/json-rpc/<your-apikey>' \
+curl --location --request POST 'https://rpc.testnet.rootstock.io/<your-apikey>' \
 --header 'Content-Type: application/json' \
 --data ' {
 "jsonrpc": "2.0",
@@ -104,7 +104,7 @@ curl --location --request POST 'https://rpc.testnet.rootstock.io/json-rpc/<your-
 {"jsonrpc":"2.0","id":0,"result":"0x4b7eca"}
 ```
 
-> The daily limit is 25,000 requests per user, and each user can have up to 4 api keys, which allows an easy differentiation for different applications the user wants to test.
+> The daily limit is 25,000 requests per user, and each user can have up to 4 API keys, which allows an easy differentiation for different applications the user wants to test.
 
 ## JSON RPC methods
 
@@ -116,7 +116,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - Returns a list of addresses owned by the client. Since Rootstock RPC API does not store keys, this will always return empty.
     - _Params:_ None
     ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
     --request POST \
     --header 'accept: application/json' \
     --header 'Content-Type: application/json' \
@@ -140,7 +140,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - Returns the number of the most recent block.
     - _Params:_ None
     ```shell
-    curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+    curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
     --request POST \
     --header 'accept: application/json' \
     --header 'Content-Type: application/json' \
@@ -165,7 +165,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
     - _Params:_ None
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json' \
@@ -197,7 +197,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - if not specified, it will return the balance at the latest block available.
     - Example request by `blockNumber`:
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json' \
@@ -220,7 +220,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
     ```
     - Example request by `blockHash`:
     ```shell
-    curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+    curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
     --request POST \
     --header 'accept: application/json' \
     --header 'Content-Type: application/json' \
@@ -244,7 +244,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
     ```
     - Example request by `blockTag`:
     ```shell
-    curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+    curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
     --request POST \
     --header 'accept: application/json' \
     --header 'Content-Type: application/json' \
@@ -303,7 +303,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **cumulativeDifficulty:** It represents the total difficulty of the chain up to the current block.
     - **Example Request:**
         ```shell
-            curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+            curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
             --request POST \
             --header 'accept: application/json' \
             --header 'Content-Type: application/json' \
@@ -396,7 +396,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - cumulativeDifficulty: It represents the total difficulty of the chain up to the current block.
     - **Example Request:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json' \
@@ -459,7 +459,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
     - **Example Request:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json' \
@@ -518,7 +518,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - If `fromBlock`, `toBlock`, or `blockHash` are not specified, the query will return the logs corresponding to the latest block
     - Example request by blockHash:
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json' \
@@ -554,7 +554,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         ```
     - Example request by blockHash and address:
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json' \
@@ -589,7 +589,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         ```
     - Example request by fromBlock, toBlock:
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -650,7 +650,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - `value`: The value transferred in Wei.
     - **Example Request:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -701,7 +701,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - **transaction count:** A hexadecimal equivalent of the integer representing the number of transactions sent from the given address.
     - **Example Request:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -745,7 +745,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - `type`: the transaction type.
     - **Example Request:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -787,7 +787,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - `blockHash`: String, required. The hash of the block from which the number of transactions is required.
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -817,7 +817,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
     - **Example**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -844,7 +844,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - index: String, required. The position number of the transaction (in Hex).
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -894,7 +894,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **index:** String, required. The position number of the transaction (in Hex).
     - Example:
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -940,7 +940,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - `blockHash`: String, required. The hash of the block from which the number of uncles is required.
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -971,7 +971,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -1008,7 +1008,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         -   **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -1051,7 +1051,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -1085,7 +1085,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - `transactionData`: Required, the signed transaction data (typically signed with a library, using your private key). Use `eth_getTransactionReceipt` to get the contract address, after the transaction was mined, when you created a contract.
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -1115,7 +1115,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - `0x1e` -> Rootstock Mainnet
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json'  \
@@ -1143,7 +1143,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - `30` -> Rootstock Mainnet
     - **Example:**
         ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/json-rpc/<api-key>' \
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
         --header 'Content-Type: application/json' \
