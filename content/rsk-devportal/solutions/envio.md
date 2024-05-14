@@ -13,9 +13,11 @@ Envio offers native support for Rootstock and has been designed to support high-
 
 ## How it Works
 
-Envio’s feature-rich indexing solution and data infrastructure provider for fast and flexible access to real-time and historical data for any EVM including Rootstock⚡.
+Envio’s feature-rich indexing solution and data infrastructure provider for fast and flexible access to real-time and historical data for any EVM including Rootstock.
 
 <div align="center"><img width="90%" src="/assets/img/solutions/envio/envio-diagram.png" alt="envio Solution"/></div>
+
+> See the [Contract Import Tutorial](#contract-import-tutorial)
 
 ## About Envio
 

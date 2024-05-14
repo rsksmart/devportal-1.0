@@ -8,12 +8,9 @@ tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, p
 layout: 'rsk'
 ---
 
-Welcome to the Complete Guide on **How to Create and Deploy an NFT Smart Contract on Rootstock**.
+In this guide, we will take you through a step by step process on how to write a ERC-721 smart contract, and deploy to the Rootstock testnet using the following tools:
+Solidity, Hardhat, Ethers.js, IPFS, Pinata, and get Test RBTC (tRBTC) from the [Rootstock Faucet](https://faucet.rootstock.io).
 
-### Introduction
-
-In this tutorial, we will take you through a step by step process on how to write a ERC-721 smart contract, and deploy to the Rootstock testnet using the following tools:
-Solidity, Hardhat, Ether.js, Rootstock Testnet, IPFS, Pinata, and Test RBTC from a faucet.
 Not to worry, if these terms are new to you — we will explain them!
 
 ## Contents

@@ -62,7 +62,7 @@ Non-fungible is a term used to describe digital assets that represent real world
 
 Hardhat is a development environment that enables you to compile, deploy, test, and debug your Rootstock software. It helps to manage and automate the recurring tasks that are inherent to the process of building Blockchain applications.
 
-Check out this step-by-step tutorial on [how to set up a Hardhat project to connect to the Rootstock Testnet](https://developers.rsk.co/kb/hardhat-setup-on-rsk/).
+Check out the quick start guide on [how to get started with Hardhat](/guides/quickstart/hardhat/).
 
 ### What is ethers.js?
 
