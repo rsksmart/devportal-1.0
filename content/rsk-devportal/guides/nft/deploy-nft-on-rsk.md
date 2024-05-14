@@ -1,17 +1,15 @@
 ---
-menu_order: 500
+menu_order: 954
 menu_title: Deploy NFT on Rootstock
-title: 'Deploy NFT on Rootstock | Write and Deploy an NFT project on the Rootstock Testnet'
+title: 'Deploy NFT on the Rootstock Testnet'
 description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
 
-## How to deploy your NFT on Rootstock
+To deploy an NFT on Rootstock, we will do the following steps;
 
-**Steps**
-    
-we will do the following steps;
+> Note: You can also deploy an NFT on Rootstock using [NFTs2Me](https://nfts2me.com/). Want to launch and grow your NFT project on Rootstock? Visit the [Artoshi NFT Marketplace](https://artoshi.io/).
 
 * Switch to Node.js 12 for Hardhat to work
 `nvm use 12`
@@ -46,7 +44,7 @@ Create an account.
 
 Write down your 12 word seed phrase. This is used to recover your account, in case you lose your password.
 
-The seed phrase is the most important thing in a wallet / account!
+The seed phrase is the most important thing in a wallet or an account!
 
 ### Connect MetaMask to Rootstock testnet
 
@@ -67,7 +65,9 @@ Go to networks -> Custom RPC, and enter the following values:
 
 After configuring it, select the Rootstock Testnet.
 
-![MetaMask screenshot before adding NFT collection](/assets/img/guides/nft/before-importing-nfts.png)
+<center>
+    <img src="/assets/img/guides/nft/before-importing-nfts.png"  title="MetaMask screenshot before adding NFT collection" width="50%"/>
+</center>
 
 You should now see an account connected to the Rootstock Testnet.
 Not to worry if you see "No NFTs yet" under the NFTs tab,
@@ -79,7 +79,9 @@ Once you’re on the Rootstock network, select the “NFTs” tab on the right a
 
 You may need to refresh the page to see your newly minted NFT.
 
-![MetaMask screenshot after adding NFT collection](/assets/img/guides/nft/after-importing-nft.png)
+<center>
+    <img src="/assets/img/guides/nft/after-importing-nft.png"  title="MetaMask screenshot after adding NFT collection" width="50%"/>
+</center>
 
 Congratulations! In this article, we learnt about NFTs, IPFS, Hardhat, and we have successfully created and deployed our NFT project to the Rootstock Testnet.
 

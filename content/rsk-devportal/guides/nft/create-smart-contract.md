@@ -1,5 +1,5 @@
 ---
-menu_order: 400
+menu_order: 953
 menu_title: Create Smart Contract
 title: 'Write & Deploy NFT Smart Contracts on Rootstock Testnet | Rootstock'
 description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
@@ -7,7 +7,6 @@ tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, p
 layout: 'rsk'
 ---
 
-## Create your NFT Smart Contract
      
 In your root directory, start by creating a new directory called contracts and create a file inside the directory called `Meow.sol`.
     

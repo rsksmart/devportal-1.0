@@ -1,7 +1,7 @@
 ---
-menu_order: 200
+menu_order: 951
 menu_title: Overview
-title: 'Deploy an NFT project on the Rootstock Testnet | Rootstock (RSK)'
+title: 'Deploy an NFT project on the Rootstock Testnet'
 description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
@@ -16,7 +16,6 @@ layout: 'rsk'
 * Create NFT metadata (JSON File)
 * Create ERC 721 smart contract 
 * Deploy smart contract on the Rootstock blockchain
-
 
 ### Prerequisites 
 
@@ -63,7 +62,7 @@ Non-fungible is a term used to describe digital assets that represent real world
 
 Hardhat is a development environment that enables you to compile, deploy, test, and debug your Rootstock software. It helps to manage and automate the recurring tasks that are inherent to the process of building Blockchain applications.
 
-Check out this step-by-step tutorial on [how to set up a Hardhat project to connect to the Rootstock Testnet](https://developers.rsk.co/kb/hardhat-setup-on-rsk/).
+Check out the quick start guide on [how to get started with Hardhat](/guides/quickstart/hardhat/).
 
 ### What is ethers.js?
 

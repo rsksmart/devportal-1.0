@@ -1,13 +1,11 @@
 ---
-menu_order: 300
+menu_order: 952
 menu_title: Configure NFT Metadata
-title: 'Configuring NFT Metadata: Enhancing Assets on Rootstock (RSK)'
+title: 'Configuring NFT Metadata for your NFT using Pinata'
 description: 'Learn about NFTs, create, connect, and deploy to the Rootstock Blockchain.'
 tags: NFTs, tutorial, overview, guides, tokens, web3, bitcoin, rsk, rootstock, peer-to-peer, blockchain, nft, ERC-721, smart-contract, hardhat, ethersjs, ipfs, metamask, testnet, pinata
 layout: 'rsk'
 ---
-
-## Configure the metadata for your NFT using Pinata
 
 To get our `tokenURI` parameter, that should resolve to a JSON document describing our NFT's metadata which will include properties such as name, description, image, and other attributes, we would need to set up [Pinata](https://app.pinata.cloud/), a convenient IPFS API and toolkit, to store our NFT asset and metadata.
 

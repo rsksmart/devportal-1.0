@@ -58,7 +58,7 @@ On the left sidebar, go to the API Key section, where you'll be able to generate
     <img src="/assets/img/solutions/wakeuplabs/wakeup-api-key.png"  title="WakeUp API Key" width="50%"/>
 </center>
 
-In the same left sidebar where you found the API KEY section, you can navigate to the website documentation. This will take you to our Stoplight portal. Stoplight is a collaborative API design platform that helps you build top-notch APIs and establish scalable API programs that drive innovation. In this case, it will allow you to utilize the APIs created by WakeUp.
+In the same left sidebar where you found the API KEY section, you can navigate to the [website documentation](https://wakeuplabs.stoplight.io/docs/stoplight-platform/rbnrnmfi9fu1s-how-to-mint-an-nft-step-by-step). This will take you to our Stoplight portal. Stoplight is a collaborative API design platform that helps you build top-notch APIs and establish scalable API programs that drive innovation. In this case, it will allow you to utilize the APIs created by WakeUp.
 
 <center>
     <img src="/assets/img/solutions/wakeuplabs/wake-mint-an-nft.png"  title="WakeUp Mint NFT" width="50%"/>
