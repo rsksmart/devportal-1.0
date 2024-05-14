@@ -7,13 +7,9 @@ tags: envio, explorer, rootstock, blockchain, tutorial, rootstock
 layout: 'rsk'
 ---
 
-
-
 Envio is a modern, multi-chain EVM blockchain indexing framework speed-optimized for querying real-time and historical data.
 
 Envio offers native support for Rootstock and has been designed to support high-throughput blockchain applications that rely on real-time data for their business requirements.
-
-<div align="center"><img width="50%" src="/assets/img/solutions/envio/envio.png" alt="envio Solution"/></div>
 
 ## How it Works
 
@@ -23,7 +19,7 @@ Envio’s feature-rich indexing solution and data infrastructure provider for fa
 
 ## About Envio
 
-[Envio](https://envio.dev/) is a feature-rich indexing solution that provides developers with a seamless and efficient way to index and aggregate real-time or historical blockchain data for Rootstock, and **other EVM chains**. The indexed data is easily accessible through custom[ GraphQL](https://graphql.org/) queries, giving developers the flexibility and power to retrieve specific information.
+[Envio](https://envio.dev/) is a feature-rich indexing solution that provides developers with a seamless and efficient way to index and aggregate real-time or historical blockchain data for Rootstock, and **other EVM chains**. The indexed data is easily accessible through custom [GraphQL](https://graphql.org/) queries, giving developers the flexibility and power to retrieve specific information.
 
 Envio offers native support for Rootstock and has been designed to support high-throughput blockchain applications that rely on real-time data for their business requirements.
 
@@ -245,7 +241,7 @@ For more information on the contract import feature, visit the documentation[ he
 
 ## Envio Indexer Examples
 
-Click[here](https://docs.envio.dev/docs/example-uniswap-v3) for Envio Indexer Examples.
+Click [here](https://docs.envio.dev/docs/example-uniswap-v3) for more examples.
 
 
 ## Get in touch
@@ -256,8 +252,6 @@ For any technical queries or issues feel free to reach us at [hello@envio.dev](m
 
 
 ## Resources
-
-
 
 * [Landing page](https://envio.dev/)
 * [Documentation](https://docs.envio.dev/docs/overview)
