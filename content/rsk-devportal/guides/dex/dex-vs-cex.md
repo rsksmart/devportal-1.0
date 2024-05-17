@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 menu_title: DEX vs CES
 title: Decentralized Exchange (DEX) vs Centralized Exchange (CEX) | Rootstock (RSK)
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"

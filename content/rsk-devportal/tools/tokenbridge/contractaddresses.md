@@ -1,5 +1,4 @@
 ---
-menu_order: 500
 menu_title: Addresses and Links
 layout: rsk
 title: Token Bridge MainNet Addresses and Links | Rootstock (RSK)

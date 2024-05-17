@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 menu_title: Stablecoin on Bitcoin
 title: "The Complete Guide to Stablescoins on Bitcoin | Rootstock (RSK)"
 description: "Learn about what a crypto-collateralized stablecoin is and the different types of stablecoin that exists on Bitcoins"

@@ -1,5 +1,4 @@
 ---
-menu_order: 2500
 menu_title: Interact with Smart Contracts
 layout: rsk
 title: Interact with Smart Contracts

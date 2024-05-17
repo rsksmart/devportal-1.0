@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 menu_title: Interaction guide using MyCrypto
 layout: rsk
 title: Interaction guide using MyCrypto

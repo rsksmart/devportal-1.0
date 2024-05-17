@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 menu_title: Getting Started
 title: "Flyover Protocol Documentation | Getting Started"
 description: "Welcome to the flyover documentation, learn about the flyover architecture, how to get started and integrate the flyover protocol into your project."

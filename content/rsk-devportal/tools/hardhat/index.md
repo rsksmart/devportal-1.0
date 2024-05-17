@@ -38,8 +38,6 @@ npm install --save-dev hardhat
 ## Related Docs
 
 - [Quick start guide with Hardhat](/guides/quickstart/hardhat/)
-- [Setting up Hardhat for Rootstock Testnet](/kb/hardhat-setup-on-rsk)
-- [Hardhat Documentation](https://hardhat.org/docs)
 - [Getting Started with Foundry](/tools/foundry/)
 - [Github Repo](https://github.com/NomicFoundation/hardhat)
 - [Tools](/tools/)

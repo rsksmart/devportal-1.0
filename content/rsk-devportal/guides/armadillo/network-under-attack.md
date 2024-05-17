@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 menu_title: Network Under Attack
 layout: rsk
 title: 'Armadillo - Network Under Attack'

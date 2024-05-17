@@ -1,5 +1,4 @@
 ---
-menu_order: 500
 menu_title: FAQs
 title: "Flyover Protocol Documentation | Frequently Asked Questions"
 description: "Welcome to the flyover documentation, learn about the flyover architecture, how to get started and integrate the flyover protocol into your project."

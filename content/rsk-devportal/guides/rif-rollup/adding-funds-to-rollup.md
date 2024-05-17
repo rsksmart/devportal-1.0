@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 section_title: Adding Funds to RIF Rollup from Metamask
 menu_title: Adding Funds to RIF Rollup from Metamask
 layout: rsk

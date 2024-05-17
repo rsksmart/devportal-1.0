@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 menu_title: Front End
 layout: rsk
 title: Full Stack dApp Guide on Rootstock - Part 3 | Rootstock (RSK)

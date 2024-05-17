@@ -1,5 +1,4 @@
 ---
-menu_order: 2700
 menu_title: Deploy Smart Contracts
 layout: rsk
 title: Deploy Smart Contracts using Truffle & Granache | Rootstock (RSK)

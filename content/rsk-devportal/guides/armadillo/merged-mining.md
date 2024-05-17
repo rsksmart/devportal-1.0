@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 menu_title: Merged Mining
 layout: rsk
 title: 'Armadillo Merged Mining: Setup, Route, and Security | Rootstock (RSK)'

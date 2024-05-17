@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 section_title: User Guide | RIF Rollup
 menu_title: User Guide
 layout: rsk

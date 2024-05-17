@@ -1,5 +1,4 @@
 ---
-menu_order: 700
 section_title: Withdraw Funds to Rootstock
 menu_title:  Withdraw Funds to Rootstock
 layout: rsk

@@ -1,5 +1,4 @@
 ---
-menu_order: 800
 section_title: The Complete Guide to DEXes
 menu_title: Table of Contents
 title: "Complete Guide to Decentralized Exchanges (DEX) | Rootstock (RSK)"

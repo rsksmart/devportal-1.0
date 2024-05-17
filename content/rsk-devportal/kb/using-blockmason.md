@@ -1,6 +1,5 @@
 ---
 layout: rsk
-menu_order: 1400
 menu_title: Using Blockmason
 title: Blockmason
 description: "How to use RSK with Blockmason Link, with an example of deploying a smart contract to the Testnet"

@@ -1,5 +1,4 @@
 ---
-menu_order: 500
 menu_title: Token Bridge
 section_title: Token Bridge
 layout: rsk

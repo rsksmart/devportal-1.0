@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 menu_title: Overview
 layout: rsk
 title: 'Armadillo - Overview'

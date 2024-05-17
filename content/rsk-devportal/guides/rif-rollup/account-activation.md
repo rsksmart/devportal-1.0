@@ -1,5 +1,4 @@
 ---
-menu_order: 500
 section_title: Account Activation
 menu_title: Account Activation
 layout: rsk

@@ -1,5 +1,4 @@
 ---
-menu_order: 2200
 menu_title: Remix and Metamask with Rootstock testnet
 layout: rsk
 title: Remix and Metamask Integration on Rootstock Testnet | Rootstock (RSK)

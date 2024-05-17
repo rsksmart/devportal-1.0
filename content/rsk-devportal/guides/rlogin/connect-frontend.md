@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 menu_title: Connect Frontend
 layout: rsk
 title: 'Build a DApp with rLogin - Part 1: Connect Frontend | Rootstock (RSK)'

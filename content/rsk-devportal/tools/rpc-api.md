@@ -9,9 +9,7 @@ tags: faucet, Rootstock, testnet, address, wallet, tools
 render_features: 'collapsible'
 ---
 
-The [RPC API](http://rpc.rootstock.io/) provides a seamless and intuitive web interface for developers to interact with [Rootstock nodes](/rsk/node/) via [JSON-RPC methods](/rsk/node/architecture/json-rpc/). It aims to address the challenges faced by developers when trying to access critical information like logs, transactions, and balances through RPC, which can significantly impact the timely development of DApps on the Rootstock blockchain.
-
-Easily create, interact and deploy EVM compatible smart contracts using a robust set of JSON RPC methods available on Rootstock.
+The [RPC API](http://rpc.rootstock.io/) provides a seamless and intuitive web interface for developers to interact with [Rootstock nodes](/rsk/node/) via [JSON-RPC methods](/rsk/node/architecture/json-rpc/). It aims to address the challenges faced by developers when trying to access critical information like logs, transactions, and balances through RPC, which can significantly impact the timely development of dApps on the Rootstock blockchain.
 
 In this guide, you will learn: 
 
@@ -34,7 +32,7 @@ In this guide, you will learn:
 - Make the First API call in minutes.
 
 **API Key Authentication:**
-- Provides secure authentication for decentralized applications (DApps).
+- Provides secure authentication for decentralized applications (dApps).
 - Limits API requests on a daily or monthly basis.
 
 ## Getting Started

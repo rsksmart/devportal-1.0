@@ -1,5 +1,4 @@
 ---
-menu_order: 600
 menu_title: How to Get Stablecoins
 title: "How to Get Stablecoins on Rootstock - Complete Guide to Stablecoins"
 description: "Learn how to get stablecoins on Rootstock"

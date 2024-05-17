@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 menu_title: Features of a DEX
 title: "How does a DEX work? Guide to Decentralized Exchanges | Rootstock"
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"

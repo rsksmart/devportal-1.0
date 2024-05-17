@@ -1,6 +1,5 @@
 ---
 section_title: For Ethereum developers
-menu_order: 300
 menu_title: Port Ethereum dApps
 layout: rsk
 title: Port Ethereum dApps
