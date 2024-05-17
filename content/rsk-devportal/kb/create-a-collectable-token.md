@@ -1,5 +1,4 @@
 ---
-menu_order: 3100
 menu_title: Create your own collectable token
 layout: rsk
 title: Create your own collectable token on Rootstock network | Rootstock (RSK)

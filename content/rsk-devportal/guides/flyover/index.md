@@ -1,5 +1,4 @@
 ---
-menu_order: 1000
 section_title: Flyover Protocol
 menu_title: Table of Contents
 title: "Flyover Protocol Guide | Table of Contents"

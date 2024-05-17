@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 menu_title: Smart Contracts
 layout: rsk
 title: The Complete Full Stack dApp Guide on Rootstock - Part 2:Smart Contracts

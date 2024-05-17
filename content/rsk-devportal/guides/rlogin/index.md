@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 section_title: Complete a DApp with rLogin
 menu_title: Overview
 layout: rsk

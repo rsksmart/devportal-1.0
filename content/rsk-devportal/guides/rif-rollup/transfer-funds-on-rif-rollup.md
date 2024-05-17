@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 section_title: Transfer Funds on RIF Rollup
 menu_title: Transfer Funds on RIF Rollup
 layout: rsk

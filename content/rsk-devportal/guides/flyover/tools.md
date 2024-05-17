@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 menu_title: Tools
 title: "Flyover Protocol Documentation | Tools"
 description: "Welcome to the flyover documentation, learn about the flyover architecture, how to get started and integrate the flyover protocol into your project."

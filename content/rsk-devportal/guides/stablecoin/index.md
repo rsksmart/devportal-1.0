@@ -1,5 +1,4 @@
 ---
-menu_order: 700
 section_title: The Complete Guide to Stablecoins
 menu_title: Table of Contents
 title: "The Complete Guide to Stablecoins"

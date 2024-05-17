@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 menu_title: Design and Architecture
 title: "Flyover Protocol Documentation | Design and Architecture"
 description: "Welcome to the flyover documentation, learn about the flyover architecture, how to get started and integrate the flyover protocol into your project."

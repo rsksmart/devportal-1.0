@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 menu_title: Dapp Guide
 layout: rsk
 title: Token Bridge DApp Guide - Cross-Chain Transactions | Rootstock (RSK)

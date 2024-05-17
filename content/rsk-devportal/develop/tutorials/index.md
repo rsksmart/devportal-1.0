@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 section_title: Tutorials
 menu_title: Table of Contents
 layout: rsk

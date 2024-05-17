@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 menu_title: Stablecoin vs Digital Assets
 title: What is a Stablecoin? Difference between Stablecoins & Digital Assets
 description: "Learn about the difference between stablecoins, and digital assets like bitcoins, altcoins, cbdcs, and fungible tokens"

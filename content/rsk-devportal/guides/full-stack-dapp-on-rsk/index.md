@@ -1,5 +1,4 @@
 ---
-menu_order: 300
 section_title: Complete Full Stack dApp on Rootstock
 menu_title: Table of Contents
 layout: rsk

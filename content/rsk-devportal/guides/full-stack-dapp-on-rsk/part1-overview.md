@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 menu_title: Overview
 layout: rsk
 title: Full Stack dApp Development Guide on Rootstock | Rootstock (RSK)

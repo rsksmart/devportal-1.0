@@ -1,5 +1,4 @@
 ---
-menu_order: 700
 menu_title: How to use the Rootstock Token Bridge
 title: "Cross Chain Bridges: How to use the Rootstock (RSK) Token Bridge"
 description: "Understand what cross chain bridges are, how they work, and how to cross tokens between chains using Rootstock token bridge"

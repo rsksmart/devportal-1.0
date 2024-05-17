@@ -1,16 +1,16 @@
 ---
 menu_order: 1005
-menu_title: DApp Automation with Cucumber
-title: 'DApp Automation with Cucumber & Playwright'
-description: 'Testing decentralized applications (DApps) is crucial for delivering a smooth user experience and ensuring the reliability of decentralized systems. Thorough testing of the frontend identifies and addresses usability issues, creating a user-friendly interface. Cucumber and Playwright form a dynamic duo in automated testing, blending behavior-driven development (BDD) and powerful browser automation capabilitie.'
-tags: knowledge-base, e2e, tests, dapp-automation, rootstock, smart contracts
+menu_title: dApp Automation with Cucumber
+title: 'dApp Automation with Cucumber & Playwright'
+description: 'Testing decentralized applications (dApps) is crucial for delivering a smooth user experience and ensuring the reliability of decentralized systems. Thorough testing of the frontend identifies and addresses usability issues, creating a user-friendly interface. Cucumber and Playwright form a dynamic duo in automated testing, blending behavior-driven development (BDD) and powerful browser automation capabilitie.'
+tags: knowledge-base, e2e, tests, dapp-automation, rootstock, smart contracts, dapps
 layout: 'rsk'
 render_features: 'collapsible'
 ---
 
 Rootstock is a blockchain platform that extends the capabilities of the Bitcoin network by incorporating smart contract functionality. Built to be EVM (Ethereum Virtual Machine) compatible, Rootstock enables developers to deploy and execute smart contracts using the same programming languages and tools as Ethereum.
 
-This guide aim to introduce you to an [agile automation framework](https://github.com/rsksmart/e2e_dapps_automation) designed exclusively for decentralized applications (DApps) automation and E2E testing. 
+This guide aim to introduce you to an [agile automation framework](https://github.com/rsksmart/e2e_dapps_automation) designed exclusively for decentralized applications (dApps) automation and E2E testing. 
 
 This solution seamlessly brings together Cucumber's user-friendly behavior-driven development, Playwright's precise browser automation, and the tailored DApp testing capabilities of Synpress. With Cucumber's Gherkin syntax, teams collaboratively define DApp behaviors. Playwright, customized for Chrome, adds finesse to browser automation. Synpress, in its Playwright version, effortlessly integrates with MetaMask (more software wallets to come) for thorough DApp testing. 
 This way, developers enjoy expressive scenarios, targeted browser automation, and specialized DApp testing features.
@@ -106,7 +106,7 @@ Execute `test` or `npm test` script to run the tests using chromium.
 ## Writing E2E Tests using Cucumber
 
 [](#top "collapsible")
-- A. Identifying test scenarios for DApps on Rootstock
+- A. Identifying test scenarios for dApps on Rootstock
     - Identifying scenarios to automate in a UI framework involves considering various factors related to your application, testing goals, and the nature of the scenarios. Here are some guidelines specific to UI automation:
         - **Frequently Executed and Stable Tests:**
         Prioritize automating scenarios that are executed frequently, especially as part of your regression testing suite. Stable features with consistent behavior are good candidates.
@@ -129,7 +129,7 @@ Execute `test` or `npm test` script to run the tests using chromium.
             When I connect metamask
             Then I verify my wallet is successfully connected to the DApp
         ```
-- Defining step definitions to interact with Rootstock DApps
+- Defining step definitions to interact with Rootstock dApps
     - An easy way to generate step definitions would be:
         - Select a step in the feature file
         - Right mouse click
@@ -195,7 +195,7 @@ Execute `test` or `npm test` script to run the tests using chromium.
 
 ## Conclusion
 
-Testing decentralized applications (DApps) is crucial for delivering a smooth user experience and ensuring the reliability of decentralized systems. Thorough testing of the frontend identifies and addresses usability issues, creating a user-friendly interface. [Cucumber](https://cucumber.io/) and [Playwright](https://playwright.dev/) form a dynamic duo in automated testing, blending behavior-driven development (BDD) and powerful browser automation capabilities. Cucumber, employing the human-readable Gherkin syntax, enables collaboration between technical and non-technical team members by describing application behavior in plain language.
+Testing decentralized applications (dApps) is crucial for delivering a smooth user experience and ensuring the reliability of decentralized systems. Thorough testing of the frontend identifies and addresses usability issues, creating a user-friendly interface. [Cucumber](https://cucumber.io/) and [Playwright](https://playwright.dev/) form a dynamic duo in automated testing, blending behavior-driven development (BDD) and powerful browser automation capabilities. Cucumber, employing the human-readable Gherkin syntax, enables collaboration between technical and non-technical team members by describing application behavior in plain language.
 
 ## Useful Links
 - For information on other testing tools, see [Quick Start: Testing Smart Contracts](/guides/quickstart/hardhat/test-smart-contract/)

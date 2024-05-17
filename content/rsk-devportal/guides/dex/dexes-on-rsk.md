@@ -1,5 +1,4 @@
 ---
-menu_order: 500
 menu_title: DEXes on Rootstock
 title: "DEXes on Rootstock - Complete Guide to Decentralized Exchanges (DEX)"
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"

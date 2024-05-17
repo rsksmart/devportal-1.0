@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 menu_title: Overview
 title: "Guide to Synthentic & Convertable Stablecoins | Rootstock (RSK)"
 description: "Learn about stablecoins, types of stablecoins, where to get them, and how to use the Rootstock Tokenbridge to cross tokens"

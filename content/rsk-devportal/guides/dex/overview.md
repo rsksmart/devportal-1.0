@@ -1,5 +1,4 @@
 ---
-menu_order: 200
 menu_title: Overview
 title: "The Complete Guide to Decentralized Exchanges (DEX) | Rootstock (RSK)"
 description: "Learn about DEXes, types of decentralized exchanges, CEXes vs DEXes, features of a DEX, and DEXes on Bitcoin"

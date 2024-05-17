@@ -1,5 +1,4 @@
 ---
-menu_order: 2900
 menu_title: Create your first token
 layout: rsk
 title: How to Create Your Own Token on Rootstock | Rootstock (RSK)

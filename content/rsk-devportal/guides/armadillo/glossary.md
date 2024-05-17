@@ -1,5 +1,4 @@
 ---
-menu_order: 600
 menu_title: Glossary
 layout: rsk
 title: 'Armadillo - Glossary'

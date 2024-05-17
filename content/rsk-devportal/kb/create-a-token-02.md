@@ -1,5 +1,4 @@
 ---
-menu_order: 3000
 menu_title: Create other ERC20 token
 layout: rsk
 title: Create a Token on Rootstock - Solidity, Open Zeppelin, Truffle | Roostock (RSK)

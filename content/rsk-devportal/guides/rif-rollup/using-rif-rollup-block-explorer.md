@@ -1,5 +1,4 @@
 ---
-menu_order: 600
 section_title: Using the RIF Rollup Block Explorer
 menu_title:  WUsing the RIF Rollup Block Explorer
 layout: rsk

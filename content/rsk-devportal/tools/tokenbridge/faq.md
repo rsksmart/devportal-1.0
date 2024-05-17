@@ -1,5 +1,4 @@
 ---
-menu_order: 400
 menu_title: Token Bridge FAQ
 layout: rsk
 title: "TokenBridge FAQ: Answers to Your Rootstock-Ethereum Bridge Queries"

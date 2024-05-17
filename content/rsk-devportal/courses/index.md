@@ -26,7 +26,7 @@ menu_title: Courses
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/courses/blockchain-developer/">Read More</a>
+                    <a class="green" href="/courses/blockchain-developer/">Become a Blockchain Developer</a>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@ menu_title: Courses
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/courses/user-course/">Read More</a>
+                    <a class="green" href="/courses/user-course/">Become a Rootstock User</a>
                 </div>
             </div>
         </div>

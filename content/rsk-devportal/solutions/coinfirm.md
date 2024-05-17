@@ -1,5 +1,4 @@
 ---
-menu_order: 1800
 menu_title: Coinfirm
 title: 'How Coinfirm Integrates with RSK | Rootstock (RSK)'
 description: 'Analytics and Compliance Powering the Mass Adoption of Blockchain'
