@@ -1,5 +1,4 @@
 ---
-menu_order: 1020
 menu_title: Account Abstraction on Rootstock using Etherspot Prime SDK
 layout: rsk
 title: "Build an Account Abstraction dApp on Rootstock using Etherspot Prime SDK"

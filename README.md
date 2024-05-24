@@ -33,7 +33,7 @@ _Start your journey to building dApps on Rootstock, see the [quick start guide](
 * [Pull requests](#pull-requests)
 
 ## Requirements
-* Yarn
+* [Yarn](https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable)
 * [nvm](https://github.com/nvm-sh/nvm)
 
 ## Set up
@@ -90,7 +90,7 @@ Note: This is useful as a last resort when your local project seems to have [iss
 To run tests that check whether there are any errors in the site:
 
 ```bash
-TODO
+NA
 ```
 
 This runs tests that check whether there are any errors in the site.

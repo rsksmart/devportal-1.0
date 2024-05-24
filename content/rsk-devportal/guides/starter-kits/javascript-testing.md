@@ -1,5 +1,4 @@
 ---
-menu_order: 1003
 menu_title: Javascript Testing Kits
 layout: rsk
 title: "Rootstock Workshop: Javascript Testing"

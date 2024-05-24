@@ -1,5 +1,4 @@
 ---
-menu_order: 1004
 menu_title: Smart Contract Testing with Truffle
 layout: rsk
 title: "Rootstock Workshop: Smart Contract Testing using Truffle"

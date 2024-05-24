@@ -6,6 +6,7 @@ menu_order: 9
 section_title: Tools
 menu_title: Overview
 ---
+
 Explore a suite of fully compatible developer tools and guides designed to empower bitcoin and smart contract developers in the Rootstock and RIF ecosystems.
 
 > If what you need is not in this section, see [Frequently Asked Question](https://dev.rootstock.io/kb/faqs/), get your questions answered on [Stackoverflow](https://stackoverflow.com/questions/tagged/rsk) or **contact us** without hesitation through the [Rootstock Community on Discord](https://rootstock.io/discord).

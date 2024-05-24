@@ -1,5 +1,4 @@
 ---
-menu_order: 1015
 menu_title: Introduction to Account Abstraction
 layout: rsk
 title: "Introduction to Account Abstraction"
