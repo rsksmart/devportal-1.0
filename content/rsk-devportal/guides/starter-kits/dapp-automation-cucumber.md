@@ -1,5 +1,4 @@
 ---
-menu_order: 1005
 menu_title: dApp Automation with Cucumber
 title: 'dApp Automation with Cucumber & Playwright'
 description: 'Testing decentralized applications (dApps) is crucial for delivering a smooth user experience and ensuring the reliability of decentralized systems. Thorough testing of the frontend identifies and addresses usability issues, creating a user-friendly interface. Cucumber and Playwright form a dynamic duo in automated testing, blending behavior-driven development (BDD) and powerful browser automation capabilitie.'

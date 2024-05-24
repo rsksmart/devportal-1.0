@@ -1,5 +1,4 @@
 ---
-menu_order: 1010
 menu_title: Overview
 section_title: Account Abstraction on Rootstock
 layout: rsk

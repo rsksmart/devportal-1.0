@@ -1,6 +1,7 @@
 ---
 menu_order: 1001
 menu_title: Starter Kits
+section_title: Overview - Starter Kits
 layout: rsk
 title: "Starter Kits for easy Rootstock Development"
 tags: rootstock, workshop, pre-requisites
@@ -13,7 +14,7 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
     <ul id="card-list" class="row">
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content two-line-title-content"><a href="/guides/quickstart/hardhat/">
+        <div class="content two-line-title-content"><a href="/guides/quickstart/hardhat/">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg bg-pink">Getting Started with Hardhat</h2><span class="zg-label ml-1 bg-pink">01</span></div>
                 <p class="card-desc">Getting Started with Hardhat</p>
@@ -24,9 +25,9 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
             </div>
         </div>
         </li>
-        <li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content"><a href="/guides/starter-kits/hackathon-starter/">
+        <div class="content"><a href="/guides/starter-kits/hackathon-starter/">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg">Hackathon and Workshop Setup</h2><span class="zg-label ml-1">02</span></div> 
                 <p class="card-desc">Hackathon and Workshop Guides</p>
@@ -37,38 +38,38 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
             </div>
         </div>
         </li>
-        <li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content"><a href="/guides/starter-kits/javascript-testing/">
+            <div class="content"><a href="https://github.com/rsksmart/rootstock-hardhat-starterkit">
             <div class="content-container">
-              <div class="card-title"><h2 class="zg-text-bg bg-yellow">Javascript Testing</h2><span class="zg-label ml-1 bg-yellow">03</span></div> 
-                <p class="card-desc">Javascript Testing Guides</p>
+              <div class="card-title"><h2 class="zg-text-bg bg-yellow">Rootstock Hardhat Starter Kit</h2><span class="zg-label ml-1 bg-yellow">03</span></div> 
+                <p class="card-desc">Smart Contract examples, Tests, Deployments and Tasks for Common ERC Standards (ERC20, ERC721, ERC1155).</p>
             </div>
-            </a><div class="btn-container"><a href="/guides/starter-kits">
-                </a><a class="green" href="/guides/starter-kits/javascript-testing/">Start Testing</a>
+            </a><div class="btn-container"><a href="https://github.com/rsksmart/rootstock-hardhat-starterkit">
+                </a><a class="green" href="https://github.com/rsksmart/rootstock-hardhat-starterkit">Use the Kit</a>
             </div>
             </div>
         </div>
         </li>
         <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content two-line-title-content"><a href="/guides/starter-kits/smart-contract-testing/">
+            <div class="content two-line-title-content"><a href="https://github.com/rsksmart/rsk-wagmi-starter-kit">
             <div class="content-container">
-            <div class="card-title"><h2 class="zg-text-bg bg-purple">Smart Contract Testing</h2><span class="zg-label ml-1 bg-purple">04</span></div>
-                <p class="card-desc">Smart contract testing guides</p>
+            <div class="card-title"><h2 class="zg-text-bg bg-purple">Rootstock Wagmi Starter Kit</h2><span class="zg-label ml-1 bg-purple">04</span></div>
+                <p class="card-desc">This starter kit provides a foundation for building decentralized applications (dApps) on the Rootstock blockchain using React, Wagmi and Shadcn libraries.</p>
             </div>
-            </a><div class="btn-container"><a href="/guides/starter-kits/smart-contract-testing/">
-                </a><a class="green" href="/guides/starter-kits/smart-contract-testing/">Get Started</a>
+            </a><div class="btn-container"><a href="https://github.com/rsksmart/rsk-wagmi-starter-kit">
+                </a><a class="green" href="https://rsk-wagmi-starter-kit.vercel.app/">Try it</a>
             </div>
             </div>
         </div>
         </li>
-<li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content two-line-title-content"><a href="/guides/starter-kits/dapp-automation-cucumber/">
+            <div class="content two-line-title-content"><a href="/guides/starter-kits/dapp-automation-cucumber/">
             <div class="content-container">
-            <div class="card-title"><h2 class="zg-text-bg bg-pink">DApp Automation with Cucumber</h2><span class="zg-label ml-1 bg-pink">05</span></div>
-                <p class="card-desc">Learn how to automate DApps using Cucumber Agile Automation Framework.</p>
+            <div class="card-title"><h2 class="zg-text-bg bg-pink">dApp Automation with Cucumber</h2><span class="zg-label ml-1 bg-pink">05</span></div>
+                <p class="card-desc">Learn how to automate dApps using Cucumber Agile Automation Framework.</p>
             </div>
             </a><div class="btn-container"><a href="/guides/starter-kits/dapp-automation-cucumber/">
                 </a><a class="green" href="/guides/starter-kits/dapp-automation-cucumber/">Get Started</a>
@@ -76,9 +77,9 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
             </div>
         </div>
         </li>
-        <li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content two-line-title-content"><a href="https://github.com/rsksmart/demo-code-snippets">
+            <div class="content two-line-title-content"><a href="https://github.com/rsksmart/demo-code-snippets">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg bg-pink">Demo Code Snippets</h2><span class="zg-label ml-1 bg-pink">06</span></div>
                 <p class="card-desc">Mini demos and code snippets for use on the Rootstock network</p>
@@ -89,9 +90,9 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
             </div>
         </div>
         </li>
-           <li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content two-line-title-content"><a href="/guides/rif-relay/starter-kit/">
+            <div class="content two-line-title-content"><a href="/guides/rif-relay/starter-kit/">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg bg-purple">RIF Relay Starter Kit</h2><span class="zg-label ml-1 bg-purple">07</span></div>
                 <p class="card-desc">Starter kit to develop on RIF Relay</p>
@@ -102,9 +103,9 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
             </div>
         </div>
         </li>
-        <li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content two-line-title-content"><a href="https://github.com/orgs/rsksmart/packages?repo_name=rif-wallet-libs">
+            <div class="content two-line-title-content"><a href="https://github.com/orgs/rsksmart/packages?repo_name=rif-wallet-libs">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg bg-yellow">RIF Wallet Libraries</h2><span class="zg-label ml-1 bg-yellow">08</span></div>
                 <p class="card-desc">Libraries to build on the RIF Wallet</p>
@@ -115,9 +116,9 @@ Ready to use starter dApps, demo code examples, boilerplates, and libraries for 
             </div>
         </div>
         </li>
-         <li class="col-xl-6 col-md-6">
+    <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-<div class="content two-line-title-content"><a href="/kb/the-graph-rootstock/">
+            <div class="content two-line-title-content"><a href="/kb/the-graph-rootstock/">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg">TheGraph - Rootstock Subgraph Boilerplate</h2><span class="zg-label ml-1">09</span></div>
                 <p class="card-desc">Subgraph boilerplate for Rootstock</p>
