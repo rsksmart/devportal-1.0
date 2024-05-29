@@ -25,9 +25,9 @@ Contest entries should showcase thought leadership, dev stack and tooling, and a
 
 The contest welcomes submissions under the following themes:
 
-* Thought Leadership: Writers will explore various Bitcoin topics, both new and old, such as Runes, ordinals, layer 2 solutions, sidechains, etc. This theme aims to associate Rootstock with all Bitcoin related topics surfacing Rootstock as a thought leader in the space. 
-* Dev Stack and Tooling: Articles will delve into the development stack and tooling related to building on Bitcoin, including SDKs, APIs, smart contract development frameworks, etc. This theme aims to attract developers and showcase the technical capabilities for building on Bitcoin.
-* Tutorials and Guides: Writers will provide step-by-step tutorials on how to build applications, smart contracts, or implement specific features on Rootstock. These tutorials will serve as practical guides for developers and enthusiasts looking to start building on Bitcoin.
+* Thought Leadership: Explore various topics about Bitcoin, both new and old, such as Runes, what Satoshi’s writings mean to you, ordinals, layer 2 solutions, sidechains, how Bitcoin changed finance forever, and/or quality analysis about its price prediction or impact on inflation. 
+* Dev Stack and Tooling: Delve into the development stack and tooling related to building on Bitcoin, including SDKs, APIs, smart contract development frameworks, etc. Developers and makers should showcase the technical capabilities for building with Bitcoin.
+* Tutorials and Guides: Provide step-by-step tutorials and guides on how to build applications, smart contracts, or implement specific features. Bonus points for building with Rootstock. These tutorials and guides will serve as practical guides for developers and enthusiasts looking to start building on Bitcoin.
 
 ### Timeline and Rounds
 
