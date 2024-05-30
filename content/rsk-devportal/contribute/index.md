@@ -8,15 +8,17 @@ description: "An overview of different ways you can contribute to Rootstock."
 tags: rootstock, workshop, pre-requisites
 ---
 
-Are you passionate about web3, bitcoin and the Blockchain? Do you have a passion for Open Source and Web3? Do you enjoy writing, coding, and solving real-world problems, and eager to contribute to the future of decentralized finance? Join the [Rootstock Ecosystem Discord](https://rootstock.io/discord) and start making contributions to the Rootstock Platform!
+Are you passionate about web3, bitcoin and the Blockchain? Do you have a passion for Open Source and Web3? Do you enjoy writing, coding, bounty-hunting, solving real-world problems, and eager to contribute to the future of Bitcoin and Decentralized Finance? Join the [Rootstock Discord Community](https://rootstock.io/discord) and start making contributions to the Rootstock Platform!
 
 ## Who is it for?
-Whether you're a seasoned developer, a creative writer, a bug bounty hunter, or simply enthusiastic about blockchain, our program welcomes contributors from all backgrounds. If you have a skill or an idea to share, we want to hear from you.
+
+Whether you're a seasoned developer, creative writer, researcher, bug bounty hunter, or simply enthusiastic about blockchain, the program welcomes contributors from all backgrounds.
 
 ## Rewards and Recognition
+
 From writing contests to bug bounties and open-source projects, there are various ways to participate and earn valuable incentives. Not only that, but you'll also get a chance to build your portfolio by writing and solving problems with real problems and use-cases in the Rootstock ecosystem.
 
-Explore the diverse ways you can contribute:
+Explore the various ways you can contribute to Rootstock:
 
 <div class="features-list">
     <ul id="card-list" class="row">
