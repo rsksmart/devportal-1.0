@@ -25,7 +25,7 @@ Explore the diverse ways you can contribute:
         <div class="content two-line-title-content"><a href="https://hackerone.com/rootstocklabs">
             <div class="content-container">
             <div class="card-title"><h2 class="zg-text-bg bg-pink">Bug Bounty Program</h2><span class="zg-label ml-1 bg-pink">01</span></div>
-                <p class="card-desc">RootstockLabs has created this bug bounty program to reward security researchers that dedicate time and effort to improve the RootstockLabs platforms.</p>
+                <p class="card-desc">RootstockLabs has created the bug bounty program to reward researchers that submit valid vulnerabilities to improve the RootstockLabs platforms security.</p>
             </div>
             </a><div class="btn-container"><a href="https://hackerone.com/rootstocklabs">
                 </a><a class="green" href="https://hackerone.com/rootstocklabs">Rootstock Bug Bounty Program</a>
@@ -38,7 +38,7 @@ Explore the diverse ways you can contribute:
         <div class="content"><a href="https://github.com/rsksmart">
             <div class="content-container">
                <div class="card-title"><h2 class="zg-text-bg">Open Source Code</h2><span class="zg-label ml-1">02</span></div> 
-                <p class="card-desc">Contribute Code to Open Source Repos on Rootstock</p>
+                <p class="card-desc">Contribute to Rootstock's Open Source Code Repos</p>
             </div>
             </a><div class="btn-container "><a href="https://github.com/rsksmart">
                 </a><a class="green" href="https://github.com/rsksmart">Star on GitHub</a>
@@ -51,7 +51,7 @@ Explore the diverse ways you can contribute:
             <div class="content"><a href="/contribute/writing-contests/">
             <div class="content-container">
               <div class="card-title"><h2 class="zg-text-bg bg-yellow">Bitcoin Writing Contest</h2><span class="zg-label ml-1 bg-yellow">03</span></div> 
-                <p class="card-desc">Contribute articles, tutorials and guides on Rootstock.</p>
+                <p class="card-desc">Contribute articles, tutorials and guides about Rootstock, Bitcoin, etc.</p>
             </div>
             </a><div class="btn-container"><a href="/contribute/writing-contests/">
                 </a><a class="green" href="https://www.contests.hackernoon.com/bitcoin-writing-contest">Enter the Contest</a>
