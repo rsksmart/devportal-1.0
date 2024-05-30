@@ -2,7 +2,8 @@ import React from "react";
 
 const ComponentTwo = () => {
     return(
-        <a href="https://blog.rootstock.io/noticia/rootstock-roadmap-2024-2025/" target="_blank" rel="noopener noreferrer"> Introducing the Rootstock Roadmap for 2024/25, from BitVMX-based trustless bridges to Lightning and Boltz integrations boosting accessibility, deep dive into the roadmap now!.
+        <a href="https://blog.rootstock.io/noticia/rootstock-ambassador-program/" target="_blank" rel="noopener noreferrer"> Applications to the Rootstock Ambassador Program is now open! 
+        Click to read more about the program and earn rewards while contributing to the Rootstock Platform.
       </a>
     )
 }

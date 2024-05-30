@@ -11,14 +11,14 @@ render_features: 'collapsible'
 
 The #bitcoin Writing Contest, presented by Rootstock and HackerNoon, is now live with a total prize pool of $17,500 up for grabs! 
 
-Contest entries should showcase thought leadership, dev stack and tooling, and also creating engaging tutorials and guides in the realm of Bitcoin and Rootstock. Submit a story with the #bitcoin tag on HackerNoon. Submit a story with the `#bitcoin` tag on HackerNoon.
+Contest entries should showcase thought leadership, dev stack and tooling, and also creating engaging tutorials and guides in the realm of Bitcoin and Rootstock. Submit a story with the #bitcoin tag on HackerNoon. Submit a story with the `#bitcoin` tag on HackerNoon, read the [3 Steps to Enter The #bitcoin Writing Contest](https://www.contests.hackernoon.com/how-to-enter-bitcoin-writing-contest).
 
 > Looking to contribute code or contribute to the security of the Rootstock platform? 
 > - See the [Contribute](/contribute/) section for more exciting ways to contribute to Rootstock.
 
 <div class="btn-container">
   <span></span>
-    <a class="green" href="https://www.contests.hackernoon.com/bitcoin-writing-contest">Register for the Contest on Hackernoon</a>
+    <a class="green" href="https://www.contests.hackernoon.com/bitcoin-writing-contest">Register for the Contest on HackerNoon</a>
 </div>
 
 ## Contest Themes
@@ -50,7 +50,8 @@ Here's a breakdown of the prizes for the best submissions.
 > 2 Bonus Prizes worth $650 each for bitcoin thought-leadership submissions every round!
 
 ### Rules and Guidelines
-Read the guidelines for the contest on [hackernoon](https://www.contests.hackernoon.com/bitcoin-writing-contest).
+
+Read the guidelines for the contest on [HackerNoon](https://www.contests.hackernoon.com/bitcoin-writing-contest).
 
 ## FAQs
 
@@ -58,7 +59,7 @@ Here are some frequently asked questions about the contest. For more information
 see the [#bitcoin Writing Contest Rules & Guidelines](https://www.contests.hackernoon.com/bitcoin-writing-contest).
 
 [](#top "collapsible")
-- Who can participate in the Hackernoon Writing Contest?
+- Who can participate in the HackerNoon Writing Contest?
     - Anyone passionate about Bitcoin and Rootstock can participate. Whether you're a developer, enthusiast, or industry expert, we welcome your unique perspectives.
 - What types of content are eligible for submission?
     - We accept articles showcasing thought leadership, development insights, and tutorials related to Bitcoin and Rootstock. This includes opinion pieces, technical guides, and how-to tutorials.
@@ -69,15 +70,15 @@ see the [#bitcoin Writing Contest Rules & Guidelines](https://www.contests.hacke
 - What are the prizes for the winners?
     - Details about contest prizes will be announced closer to the submission deadline. Stay tuned for exciting rewards!
 - How do I register for the contest?
-    - To register, visit the [Contest Page on Hackernoon](https://www.contests.hackernoon.com/bitcoin-writing-contest) and follow the instructions to sign up as a participant.
+    - To register, visit the [Contest Page on HackerNoon](https://www.contests.hackernoon.com/bitcoin-writing-contest) and follow the instructions to sign up as a participant.
 - Are there any specific guidelines for submissions?
-    - Yes, detailed contest rules and guidelines are provided on the [Hackernoon platform](https://www.contests.hackernoon.com/bitcoin-writing-contest). Make sure to review them before submitting your entry.
+    - Yes, detailed contest rules and guidelines are provided on the [HackerNoon platform](https://www.contests.hackernoon.com/bitcoin-writing-contest). Make sure to review them before submitting your entry.
 - Where can I find more information about Rootstock?
     - Explore additional resources such as the Rootstock website, Developer Portal, Blog, and Discord Community for insights and inspiration. See [Useful Guides and Resources](#useful-guides-and-resources)
 - How will winners be notified?
-    - Winners will be notified via email or through official announcements on Hackernoon and Rootstock platforms.
+    - Winners will be notified via email or through official announcements on HackerNoon and Rootstock platforms.
 - Can I republish my contest entry elsewhere after submission?
-    - Participants retain the rights to their submissions but should review [Hackernoon's guidelines](https://www.contests.hackernoon.com/bitcoin-writing-contest) regarding republishing after the contest.
+    - Participants retain the rights to their submissions but should review [HackerNoon's guidelines](https://www.contests.hackernoon.com/bitcoin-writing-contest) regarding republishing after the contest.
 
 ## Useful Guides and Resources
 * [Rootstock Website](https://rootstock.io/)
