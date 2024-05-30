@@ -3,7 +3,7 @@ import classnames from "classnames";
 import Marquee from "react-fast-marquee";
 import ComponentOne from "./component-one";
 import ComponentTwo from "./component-two";
-import ComponentThree from "./component-three";
+// import ComponentThree from "./component-three";
 
 interface Props {
   className?: string;
@@ -17,8 +17,8 @@ const BeforeContent = ({ className }: Props) => {
         &nbsp;
         <ComponentTwo />
         &nbsp;
-        <ComponentThree />
-        &nbsp;
+        {/* <ComponentThree />
+        &nbsp; */}
       </Marquee>
       </div> 
   );
