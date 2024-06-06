@@ -157,6 +157,119 @@ Find below a list of JSON-RPC methods available on the RPC API.
         "result": "0x4bdcfb"
     }
     ```
+- eth_call
+    - Executes a new message call immediately without creating a transaction on the block chain.
+    - _Params:_ 
+        - `transaction`: object, the transaction call object which contains the following fields:
+            - **from:** String, the address from which the transaction is sent
+            - **to:** String, required, the address to which the transaction is addressed
+            - **gas:** String, the integer of gas provided for the transaction execution
+            - **gasPrice:** String, the integer of gasPrice used for each paid gas encoded as hexadecimal
+            - **value:** String, the integer of value sent with this transaction encoded as hexadecimal
+            - **data:** string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the Solidity documentation
+        - `blockNumber`: String, required. The number of the block (in hex) from which the number of transactions is required, OR one of the following block tags:
+        -   **latest:** the most recent block the client has available.
+        -   **earliest:** the lowest numbered block the client has available.
+        -   **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
+    - **Example:**
+        ```shell
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
+        --request POST \
+        --header 'accept: application/json' \
+        --header 'Content-Type: application/json'  \
+        --data '{
+            "jsonrpc":"2.0",
+            "method":"eth_call",
+            "params":[{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155", 
+                "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567", 
+                "gas": "0x76c0", 
+                "gasPrice": "0x9184e72a000", 
+                "value": "0x9184e72a", 
+                "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}, 
+                "latest"
+        ],
+            "id":0
+        }'
+        ```
+    - **Example Response:**
+        ```shell
+        {
+            "jsonrpc": "2.0",
+            "id": 0,
+            "result": "0x"
+        }
+        ```
+- eth_chainId
+    - _Method:_ `eth_chainId`
+        - Returns the number of the network, in hexadecimal value.
+    - _Params:_ None
+    - _Responses:_
+        - `0x1f` -> Rootstock Testnet
+        - `0x1e` -> Rootstock Mainnet
+    - **Example:**
+        ```shell
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
+        --request POST \
+        --header 'accept: application/json' \
+        --header 'Content-Type: application/json'  \
+        --data '{
+            "jsonrpc":"2.0",
+            "method":"eth_chainId",
+            "params":[],
+            "id":0
+        }'
+        ```
+    - **Example Response:**
+        ```shell
+        {
+            "jsonrpc": "2.0",
+            "id": 0,
+            "result": "0x1f"
+        }
+        ```
+- eth_estimateGas
+    - _Method:_
+        - Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. 
+    - _Params:_
+        - **transaction:** object, the transaction call object which contains the following fields:
+            - **from:** String, the address from which the transaction is sent
+            - **to:** String, required, the address to which the transaction is addressed
+            - **gas:** String, the integer of gas provided for the transaction execution
+            - `gasPrice`: String, the integer of gasPrice used for each paid gas encoded as hexadecimal
+            - `value`: String, the integer of value sent with this transaction encoded as hexadecimal
+            - `data`: string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the Solidity documentation
+        - `blockNumber`: String, optional. The number of the block (in hex) from which the number of transactions is required, OR one of the following block tags:
+            - **latest:** the most recent block the client has available.
+            - **earliest:** the lowest numbered block the client has available.
+            - **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
+    - **Example:**
+        ```shell
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
+        --request POST \
+        --header 'accept: application/json' \
+        --header 'Content-Type: application/json'  \
+        --data '{
+            "jsonrpc":"2.0",
+            "method":"eth_estimateGas",
+            "params":[{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155", 
+                "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567", 
+                "gas": "0x76c0", 
+                "gasPrice": "0x9184e72a000", 
+                "value": "0x9184e72a", 
+                "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}, 
+                "latest"
+        ],
+            "id":0
+        }'
+        ```
+    - **Example Response:**
+        ```shell
+        {
+            "jsonrpc": "2.0",
+            "id": 0,
+            "result": "0x5cec"
+        }
+        ```
 - eth_gasPrice
     - _Method:_ `eth_gasPrice`
         - Returns the current price per gas in wei (hexadecimal).
@@ -189,10 +302,10 @@ Find below a list of JSON-RPC methods available on the RPC API.
     - _Params:_
         - **Address:** String, required - 20 Bytes (type: account)
         - **Block:** String: optional, either the hexadecimal value of a **blockNumber**, OR a blockHash, OR one of the following block tags:
-        - **Latest:** the most recent block the client has available.
-        - **Earliest:** the lowest numbered block the client has available.
-        - **Pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
-        - if not specified, it will return the balance at the latest block available.
+            - **Latest:** the most recent block the client has available.
+            - **Earliest:** the lowest numbered block the client has available.
+            - **Pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
+            - if not specified, it will return the balance at the latest block available.
     - Example request by `blockNumber`:
         ```shell
         curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
@@ -359,12 +472,12 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - Returns information about a block by blockNumber.
     - _Params:_
         - Block: String: required, either the hexadecimal value of a blockNumber, OR one of the following block tags:
-        - latest: the most recent block the client has available.
-        - earliest: the lowest numbered block the client has available.
-        - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet.
+            - latest: the most recent block the client has available.
+            - earliest: the lowest numbered block the client has available.
+            - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet.
         - Option: Boolean, optional. 
-        - false: returns only the hashes of the transactions (default)
-        - true: returns the full transactions objects
+            - false: returns only the hashes of the transactions (default)
+            - true: returns the full transactions objects
     - Returns:
         - object - A block object, or null when no block was found. The returned object has the following properties:
         - number - The block number of the requested block encoded as a hexadecimal string. null if pending.
@@ -452,9 +565,9 @@ Find below a list of JSON-RPC methods available on the RPC API.
     - _Params:_
         - Address: String: required, address
         - Block: String, required, either the hexadecimal value of a blockNumber, OR a blockHash, OR one of the following block tags:
-        - latest: the most recent block the client has available.
-        - earliest: the lowest numbered block the client has available.
-        - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
+            - latest: the most recent block the client has available.
+            - earliest: the lowest numbered block the client has available.
+            - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
     - **Example Request:**
         ```shell
         curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
@@ -624,6 +737,39 @@ Find below a list of JSON-RPC methods available on the RPC API.
                 }, {...}
             ] }
         ```
+- eth_getStorageAt
+    - _Method:_ `eth_getStorageAt`
+        - Returns the value from a storage position at a given address.
+    - _Params:_
+        - **Address:** String, required - A string representing the address (20 bytes) of the storage.
+        - **Position:** String, required - A hexadecimal code of the position in the storage.
+        - **Block:** String: required, either the hexadecimal value of a **blockNumber**, OR a blockHash, OR one of the following block tags:
+            - **Latest:** the most recent block the client has available.
+            - **Earliest:** the lowest numbered block the client has available.
+            - **Pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
+    - Example request:
+        ```shell
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
+        --request POST \
+        --header 'accept: application/json' \
+        --header 'Content-Type: application/json' \
+        --data '{
+            "jsonrpc":"2.0",
+            "method":"eth_getStorageAt",
+            "params":[
+        "0x295a70b2de5e3953354a6a8344e616ed314d7251","0x0" 
+        "latest"],
+            "id":0
+        }'
+        ```
+    - Example Response:
+    ```shell
+    {
+        "jsonrpc": "2.0",
+        "id": 0,
+        "result": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    }
+    ```
 - eth_getTransactionByHash
     - _Method:_ `eth_getTransactionByHash`
         - Returns the information about a transaction requested by transaction hash. In the response object, `blockHash`, `blockNumber`, and `transactionIndex` are null when the transaction is pending.
@@ -889,7 +1035,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **latest:** the most recent block the client has available.
             - **earliest:** the lowest numbered block the client has available.
             - **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
-            - **index:** String, required. The position number of the transaction (in Hex).
+        - **index:** String, required. The position number of the transaction (in Hex).
     - Example:
         ```shell
         curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
@@ -990,37 +1136,20 @@ Find below a list of JSON-RPC methods available on the RPC API.
             "result": "0x3"
         }
         ```
-- eth_call
-    - Executes a new message call immediately without creating a transaction on the block chain.
-    - _Params:_ 
-        - `transaction`: object, the transaction call object which contains the following fields:
-            - **from:** String, the address from which the transaction is sent
-            - **to:** String, required, the address to which the transaction is addressed
-            - **gas:** String, the integer of gas provided for the transaction execution
-            - **gasPrice:** String, the integer of gasPrice used for each paid gas encoded as hexadecimal
-            - **value:** String, the integer of value sent with this transaction encoded as hexadecimal
-            - **data:** string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the Solidity documentation
-        - `blockNumber`: String, required. The number of the block (in hex) from which the number of transactions is required, OR one of the following block tags:
-        -   **latest:** the most recent block the client has available.
-        -   **earliest:** the lowest numbered block the client has available.
-        -   **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
+- eth_protocolVersion
+    - _Method:_ `eth_protocolVersion`
+        - Returns the current protocol version.
+    - _Params:_ None
     - **Example:**
         ```shell
         curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
         --request POST \
         --header 'accept: application/json' \
-        --header 'Content-Type: application/json'  \
+        --header 'Content-Type: application/json' \
         --data '{
             "jsonrpc":"2.0",
-            "method":"eth_call",
-            "params":[{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155", 
-                "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567", 
-                "gas": "0x76c0", 
-                "gasPrice": "0x9184e72a000", 
-                "value": "0x9184e72a", 
-                "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}, 
-                "latest"
-        ],
+            "method":"eth_protocolVersion",
+            "params":[],
             "id":0
         }'
         ```
@@ -1029,50 +1158,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         {
             "jsonrpc": "2.0",
             "id": 0,
-            "result": "0x"
-        }
-        ```
-- eth_estimateGas
-    - _Method:_
-        - Generates and returns an estimate of how much gas is necessary to allow the transaction to complete. The transaction will not be added to the blockchain. 
-    - _Params:_
-        - **transaction:** object, the transaction call object which contains the following fields:
-            - **from:** String, the address from which the transaction is sent
-            - **to:** String, required, the address to which the transaction is addressed
-            - **gas:** String, the integer of gas provided for the transaction execution
-            - `gasPrice`: String, the integer of gasPrice used for each paid gas encoded as hexadecimal
-            - `value`: String, the integer of value sent with this transaction encoded as hexadecimal
-            - `data`: string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the Solidity documentation
-        - `blockNumber`: String, optional. The number of the block (in hex) from which the number of transactions is required, OR one of the following block tags:
-            - **latest:** the most recent block the client has available.
-            - **earliest:** the lowest numbered block the client has available.
-            - **pending:** A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
-    - **Example:**
-        ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
-        --request POST \
-        --header 'accept: application/json' \
-        --header 'Content-Type: application/json'  \
-        --data '{
-            "jsonrpc":"2.0",
-            "method":"eth_estimateGas",
-            "params":[{"from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155", 
-                "to": "0xd46e8dd67c5d32be8058bb8eb970870f07244567", 
-                "gas": "0x76c0", 
-                "gasPrice": "0x9184e72a000", 
-                "value": "0x9184e72a", 
-                "data": "0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072445675"}, 
-                "latest"
-        ],
-            "id":0
-        }'
-        ```
-    - **Example Response:**
-        ```shell
-        {
-            "jsonrpc": "2.0",
-            "id": 0,
-            "result": "0x5cec"
+            "result": "0x3e"
         }
         ```
 - eth_sendRawTransaction
@@ -1104,34 +1190,6 @@ Find below a list of JSON-RPC methods available on the RPC API.
             "result": "0x359f6010957a25b885387e3201c9262c71f91e47ff487c49e5168a54fc8ea110"
         }
         ```
-- eth_chainId
-    - _Method:_ `eth_chainId`
-        - Returns the number of the network, in hexadecimal value.
-    - _Params:_ None
-    - _Responses:_
-        - `0x1f` -> Rootstock Testnet
-        - `0x1e` -> Rootstock Mainnet
-    - **Example:**
-        ```shell
-        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
-        --request POST \
-        --header 'accept: application/json' \
-        --header 'Content-Type: application/json'  \
-        --data '{
-            "jsonrpc":"2.0",
-            "method":"eth_chainId",
-            "params":[],
-            "id":0
-        }'
-        ```
-    - **Example Response:**
-        ```shell
-        {
-            "jsonrpc": "2.0",
-            "id": 0,
-            "result": "0x1f"
-        }
-        ```
 - net_version
     - _Method:_ `net_version`
         - Returns the number of the network, in decimal value.
@@ -1160,7 +1218,57 @@ Find below a list of JSON-RPC methods available on the RPC API.
             "result": "31"
         }
         ```
-
+- web3_clientVersion
+    - _Method:_ `web3_clientVersion`
+        - Returns the current client version.
+    - _Params:_ None
+    - **Example:**
+        ```shell
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
+        --request POST \
+        --header 'accept: application/json' \
+        --header 'Content-Type: application/json' \
+        --data '{
+            "jsonrpc":"2.0",
+            "method":"web3_clientVersion",
+            "params":[],
+            "id":0
+        }'
+        ```
+    - **Example Response:**
+        ```shell
+        {
+            "jsonrpc": "2.0",
+            "id": 0,
+            "result": "RskJ/6.2.0/Linux/Java1.8/ARROWHEAD-45eb751"
+        }
+        ```
+- web3_sha3
+    - _Method:_ `web3_sha3`
+        - Returns Keccak-256 (not the standardized SHA3-256) hash of the given data.
+    - _Params:_ 
+        - `data`: Required, string: The data in hexadecimal form to convert into a SHA3 hash
+    - **Example:**
+        ```shell
+        curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
+        --request POST \
+        --header 'accept: application/json' \
+        --header 'Content-Type: application/json' \
+        --data '{
+            "jsonrpc":"2.0",
+            "method":"web3_sha3",
+            "params":["0x68656c6c6f20776f726c64"],
+            "id":0
+        }'
+        ```
+    - **Example Response:**
+        ```shell
+        {
+            "jsonrpc": "2.0",
+            "id": 0,
+            "result": "0x47173285a8d7341e5e972fc677286384f802f8ef42a5ec5f03bbfa254cb01fad"
+        }
+        ```
 
 ## Get Support
 
