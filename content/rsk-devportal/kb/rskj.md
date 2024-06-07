@@ -13,8 +13,7 @@ You can run
 [RSKj](/rsk/node/) locally to connect to the public Rootstock networks -
 [RSK Mainnet](https://explorer.rsk.co/), and the
 [RSK Testnet](https://explorer.testnet.rsk.co/).
-This is an alternative to connecting to the
-[public nodes](/rsk/public-nodes/).
+This is an alternative to using the [RPC API](/tools/rpc-api/).
 
 RSKj can also run in a “localhost”-only environment, without connecting to any public network - [Rootstock Regtest](/rsk/node/configure/switch-network/#regtest)
 
