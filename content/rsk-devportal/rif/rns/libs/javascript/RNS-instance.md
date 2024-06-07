@@ -28,11 +28,13 @@ Or just use it directly in your webpage:
 import Web3 from 'web3'
 import RNS from '@rsksmart/rns'
 
-const web3 = new Web3('https://public-node.rsk.co') // or 'https://public-node.testnet.rsk.co'
+const web3 = new Web3('https://rpc.testnet.rootstock.io/API_KEY') // or 'https://rpc.rootstock.io/'
 const rns = new RNS(web3)
 ```
 
 > Remember that if you are running the code in a webpage, no `import` statements are needed, just instantiate the libs made available in the global scope.
+
+See [how to get started with RPC API](/tools/rpc-api/) and make your first API call in minutes.
 
 ## Instance in Chrome with wallet extension (Metamask)
 

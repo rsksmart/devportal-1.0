@@ -39,7 +39,7 @@ If the `networkId` is not provided, and the current blockchain is not Rootstock 
 **Example**
 ```javascript
 async function myCustomGetOwner(domain) {
-  const web3 = new Web3('https://public-node.rsk.co');
+  const web3 = new Web3('https://rpc.testnet.rootstock.io/API_KEY') // or 'https://rpc.rootstock.io/';
 
   const options = {
     contractAddresses: {
@@ -54,6 +54,7 @@ async function myCustomGetOwner(domain) {
 }
 ```
 
+See [how to get started with RPC API](/tools/rpc-api/) and make your first API call in minutes.
 
 ## Advanced usage
 
@@ -63,7 +64,7 @@ The library must be composed before accessing to the contracts, if not, it will 
 
 ```javascript
 async function myCustomGetOwner(domain) {
-  const web3 = new Web3('https://public-node.rsk.co')
+  const web3 = new Web3('https://rpc.testnet.rootstock.io/API_KEY') // or 'https://rpc.rootstock.io/'
   const rns = new RNS(web3)
   await rns.compose()
 

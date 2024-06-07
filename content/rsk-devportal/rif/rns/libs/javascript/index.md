@@ -24,9 +24,11 @@ npm i web3 @rsksmart/rns
 import Web3 from 'web3'
 import RNS from '@rsksmart/rns'
 
-const web3 = new Web3('https://public-node.rsk.co')
+const web3 = new Web3('https://rpc.testnet.rootstock.io/API_KEY') // or 'https://rpc.rootstock.io/'
 const rns = new RNS(web3)
 ```
+
+See [how to get started with RPC API](/tools/rpc-api/) and make your first API call in minutes.
 
 ## 3. Get an address!
 
