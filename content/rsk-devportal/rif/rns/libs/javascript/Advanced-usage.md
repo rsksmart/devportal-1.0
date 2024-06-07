@@ -54,7 +54,7 @@ async function myCustomGetOwner(domain) {
 }
 ```
 
-See [how to get started with RPC API](/tools/rpc-api/) and make your first API call in minutes.
+> Replace `"API_KEY"` with the api key that you have created for this App. For information on how to create an api key, see [How to get started with RPC API](/tools/rpc-api/).
 
 ## Advanced usage
 

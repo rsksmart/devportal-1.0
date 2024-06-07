@@ -34,7 +34,7 @@ const rns = new RNS(web3)
 
 > Remember that if you are running the code in a webpage, no `import` statements are needed, just instantiate the libs made available in the global scope.
 
-See [how to get started with RPC API](/tools/rpc-api/) and make your first API call in minutes.
+> Replace `"API_KEY"` with the api key that you have created for this App. For information on how to create an api key, see [How to get started with RPC API](/tools/rpc-api/).
 
 ## Instance in Chrome with wallet extension (Metamask)
 

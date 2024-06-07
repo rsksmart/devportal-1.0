@@ -28,7 +28,7 @@ const web3 = new Web3('https://rpc.testnet.rootstock.io/API_KEY') // or 'https:/
 const rns = new RNS(web3)
 ```
 
-See [how to get started with RPC API](/tools/rpc-api/) and make your first API call in minutes.
+> Replace `"API_KEY"` with the api key that you have created for this App. For information on how to create an api key, see [How to get started with RPC API](/tools/rpc-api/).
 
 ## 3. Get an address!
 
