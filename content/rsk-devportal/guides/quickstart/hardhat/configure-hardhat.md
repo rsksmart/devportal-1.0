@@ -36,6 +36,8 @@ To manage environment variables, install `dotenv` using the following command:
 
 > Note: Depending on your desired network, using a Testnet and Mainnet private key is optional, as you're not required to have separate private keys in your environment variable.
 
+> Replace `"your_mainnet_private_key"` and `"your_testnet_private_key"` with your private keys. For information on how to retrieve your private keys, see [How to export an account's private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key).
+
 ### Step 2: Configure Private Keys
 
 To configure your `rskMainnet` and `rskTestnet` private keys, you'll need to update your `hardhat.config.js` file in the root directory with your private keys.
@@ -51,13 +53,13 @@ To configure your `rskMainnet` and `rskTestnet` private keys, you'll need to upd
     solidity: "0.8.20",
     networks: {
       rskMainnet: {
-        url: "https://public-node.rsk.co",
+        url: "https://rpc.rootstock.io/API_KEY",
         chainId: 30,
         gasPrice: 60000000,
         accounts: [process.env.ROOTSTOCK_MAINNET_PRIVATE_KEY]
       },
       rskTestnet: {
-        url: "https://public-node.testnet.rsk.co",
+        url: "https://rpc.testnet.rootstock.io/API_KEY",
         chainId: 31,
         gasPrice: 60000000,
         accounts: [process.env.ROOTSTOCK_TESTNET_PRIVATE_KEY]
@@ -66,7 +68,7 @@ To configure your `rskMainnet` and `rskTestnet` private keys, you'll need to upd
   };
 ```
 
-> Replace `"your_mainnet_private_key"` and `"your_testnet_private_key"` with your private keys. For information on how to retrieve your private keys, see [How to export an account's private key](https://support.metamask.io/hc/en-us/articles/360015289632-How-to-export-an-account-s-private-key).
+> Replace `"API_KEY"` with the api key that you have created for this App. For information on how to create an api key, see [How to get started with RPC API](/tools/rpc-api/).
 
 ### Step 3: Fund Your Accounts
 [](#top "collapsible")
