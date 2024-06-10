@@ -73,4 +73,6 @@ async function myCustomGetOwner(domain) {
 }
 ```
 
+> Replace `"API_KEY"` with the api key that you have created for this App. For information on how to create an api key, see [How to get started with RPC API](/tools/rpc-api/).
+
 ## Want to contribute? Find the process [here](/rif/rns/libs/javascript/Contribute/)
