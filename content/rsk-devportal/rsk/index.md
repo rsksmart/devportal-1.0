@@ -20,7 +20,7 @@ To learn more about Rootstock architecture, please refer to the [Original](https
 Rootstock has two networks, one is a development or testing network (also known as Testnet), and the other a production network (Mainnet), with blocks every 30 seconds.
 
 To interact with the network, you need access to a node. The following are the available options:
-- [Use public nodes](/rsk/public-nodes)
+- [RPC API](/tools/rpc-api/)
 - [Install node](/rsk/node/install)
 - [Compile the node code](/rsk/node/contribute/)
 - [Powpeg HSM Firmware Attestation](/rsk/architecture/powpeg#powpeg-hsm-firmware-attestation)
