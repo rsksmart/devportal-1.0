@@ -35,3 +35,10 @@ More information about Docker install [here](https://docs.docker.com/install/).
 ## Install RSKj Using Docker
 
 To install a Rootstock node using Docker, visit the [Docker Hub](https://hub.docker.com/r/rsksmart/rskj) for installation instructions.
+
+## Logging in a RSKj Docker Container
+
+By default, a RSKj Docker container prints logs to STDOUT, making it easy to view the logs while the container is running. In order to not have them printed to STDOUT you can run the Docker container with the environment variable left empty. That command should follow this estructure:
+```
+docker run -e LOGGING_STDOUT= <container-name>
+```
