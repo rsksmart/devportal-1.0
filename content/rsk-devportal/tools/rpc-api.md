@@ -567,7 +567,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         - Block: String, required, either the hexadecimal value of a blockNumber, OR a blockHash, OR one of the following block tags:
             - latest: the most recent block the client has available.
             - earliest: the lowest numbered block the client has available.
-            - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
+            - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from a local mempool. Intuitively, you can think of these as blocks that have not been mined yet. 
     - **Example Request:**
         ```shell
         curl --location 'https://rpc.testnet.rootstock.io/<api-key>' \
