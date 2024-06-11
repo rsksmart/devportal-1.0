@@ -158,7 +158,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
     }
     ```
 - eth_call
-    - Executes a new message call immediately without creating a transaction on the block chain.
+    - Executes a new message call immediately without creating a transaction on the blockchain.
     - _Params:_ 
         - `transaction`: object, the transaction call object which contains the following fields:
             - **from:** String, the address from which the transaction is sent
