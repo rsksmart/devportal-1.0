@@ -1163,7 +1163,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
         ```
 - eth_sendRawTransaction
     - _Method:_ `eth_sendRawTransaction`
-        - Creates new message call transaction or a contract creation for signed transactions.
+        - Creates a new message call transaction or a contract creation for signed transactions.
     - _Response:_ The transaction hash, or the zero hash if the transaction is not yet available.
     - _Params:_
         - `transactionData`: Required, the signed transaction data (typically signed with a library, using your private key). Use `eth_getTransactionReceipt` to get the contract address, after the transaction was mined, when you created a contract.
