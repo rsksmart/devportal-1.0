@@ -477,7 +477,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - pending: A sample next block built by the client on top of latest and containing the set of transactions usually taken from local mempool. Intuitively, you can think of these as blocks that have not been mined yet.
         - Option: Boolean, optional. 
             - false: returns only the hashes of the transactions (default)
-            - true: returns the full transactions objects
+            - true: returns the full transactions object
     - Returns:
         - object - A block object, or null when no block was found. The returned object has the following properties:
         - number - The block number of the requested block encoded as a hexadecimal string. null if pending.
