@@ -166,7 +166,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **gas:** String, the integer of gas provided for the transaction execution
             - **gasPrice:** String, the integer of the `gasPrice` used for each paid gas, encoded as a hexadecimal
             - **value:** String, the integer of value sent with this transaction encoded as hexadecimal
-            - **data:** string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the Solidity documentation
+            - **data:** string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the [Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html)
         - `blockNumber`: String, required. The number of the block (in hex) from which the number of transactions is required, OR one of the following block tags:
         -   **latest:** the most recent block the client has available.
         -   **earliest:** the lowest numbered block the client has available.
@@ -237,7 +237,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **gas:** String, the integer of gas provided for the transaction execution
             - `gasPrice`: String, the integer of gasPrice used for each paid gas encoded as hexadecimal
             - `value`: String, the integer of value sent with this transaction encoded as hexadecimal
-            - `data`: string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the Solidity documentation
+            - `data`: string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the [Solidity documentation](https://docs.soliditylang.org/en/latest/abi-spec.html)
         - `blockNumber`: String, optional. The number of the block (in hex) from which the number of transactions is required, OR one of the following block tags:
             - **latest:** the most recent block the client has available.
             - **earliest:** the lowest numbered block the client has available.
