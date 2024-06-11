@@ -164,7 +164,7 @@ Find below a list of JSON-RPC methods available on the RPC API.
             - **from:** String, the address from which the transaction is sent
             - **to:** String, required, the address to which the transaction is addressed
             - **gas:** String, the integer of gas provided for the transaction execution
-            - **gasPrice:** String, the integer of gasPrice used for each paid gas encoded as hexadecimal
+            - **gasPrice:** String, the integer of the `gasPrice` used for each paid gas, encoded as a hexadecimal
             - **value:** String, the integer of value sent with this transaction encoded as hexadecimal
             - **data:** string, the hash of the method signature and encoded parameters. For more information, see the Contract ABI description in the Solidity documentation
         - `blockNumber`: String, required. The number of the block (in hex) from which the number of transactions is required, OR one of the following block tags:
