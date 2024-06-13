@@ -61,7 +61,7 @@ This is a demonstration of how to get the address of a domain. We are going to d
 
         this.setState({ getting: true, addr: null, error: null  });
 
-        const web3 = new Web3('https://rpc.rootstock.io/API_KEY') // or 'https://rpc.testnet.rootstock.io'
+        const web3 = new Web3('https://rpc.mainnet.rootstock.io/API_KEY') // or 'https://rpc.testnet.rootstock.io'
         const rns = new RNS(web3);
 
         rns.addr(domain)
