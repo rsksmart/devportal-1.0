@@ -43,7 +43,7 @@ By default, logs are exclusively directed to a single file. However, if you wish
 java -Dlogging.stdout=INFO -cp <classpath> co.rsk.Start --reset --<RSK network>
 ```
 
-Regarding the RSKj Docker containers, logs are printed to STDOUT by default, making it easy to view the logs while the container is running. In order to modify this, you can run the Docker container with the environment variable set to a different LOG_LEVEL (For example, DEBUG log level). That command should follow this structure:
+Regarding the RSKj Docker containers, logs are printed to both log file and STDOUT by default, making it easy to view the logs while the container is running. In order to modify this, you can run the Docker container with the environment variable set to a different LOG_LEVEL (For example, DEBUG log level). That command should follow this structure:
 ```
 docker run -e RSKJ_LOG_PROPS=DEBUG <container-name>
 ```
