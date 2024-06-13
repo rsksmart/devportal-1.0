@@ -35,3 +35,15 @@ More information about Docker install [here](https://docs.docker.com/install/).
 ## Install RSKj Using Docker
 
 To install a Rootstock node using Docker, visit the [Docker Hub](https://hub.docker.com/r/rsksmart/rskj) for installation instructions.
+
+## Logging in RSKj
+
+By default, logs are exclusively directed to a single file. However, if you wish to enable the logging output to STDOUT, you can specify this system property via the command line using `-Dlogging.stdout=<LOG_LEVEL>`. That command should look something like this:
+```
+java -Dlogging.stdout=INFO -cp <classpath> co.rsk.Start --reset --<RSK network>
+```
+
+Regarding the RSKj Docker containers, logs are printed to STDOUT by default, making it easy to view the logs while the container is running. In order to modify this, you can run the Docker container with the environment variable set to a different LOG_LEVEL (For example, DEBUG log level). That command should follow this structure:
+```
+docker run -e RSKJ_LOG_PROPS=DEBUG <container-name>
+```
