@@ -85,7 +85,7 @@ This is a demonstration of how to get the address of a domain. We are going to d
     };
     ```
 
-    See [how to get started with RPC API](/tools/rpc-api/) and make your first API call in minutes.
+> Replace `"API_KEY"` with the api key that you have created for this App. For information on how to create an api key, see [How to get started with RPC API](/tools/rpc-api/).
 
 4. Start the app
 
