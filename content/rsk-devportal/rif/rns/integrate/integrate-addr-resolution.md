@@ -61,7 +61,7 @@ This is a demonstration of how to get the address of a domain. We are going to d
 
         this.setState({ getting: true, addr: null, error: null  });
 
-        const web3 = new Web3('https://public-node.rsk.co')
+        const web3 = new Web3('https://rpc.mainnet.rootstock.io/API_KEY') // or 'https://rpc.testnet.rootstock.io'
         const rns = new RNS(web3);
 
         rns.addr(domain)
@@ -84,6 +84,8 @@ This is a demonstration of how to get the address of a domain. We are going to d
     }
     };
     ```
+
+> Replace `"API_KEY"` with the api key that you have created for this App. For information on how to create an api key, see [How to get started with RPC API](/tools/rpc-api/).
 
 4. Start the app
 
