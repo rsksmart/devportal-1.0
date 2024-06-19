@@ -444,7 +444,7 @@ menu_order: 4
                 <a href="/kb/hardhat-verify-plugin/">
                     <div class="content-container">
                         <div class="card-title"><h2 class="zg-text-bg bg-yellow">Set up Hardhat Verify plugin for Rootstock</h2></div>
-                        <p class="card-desc">Learn How to Set up Hardhat Verify plugin for Rootstock.
+                        <p class="card-desc">Learn How to Verify Contracts using the Hardhat Verify plugin for Rootstock.
                         </p>
                     </div>
                 </a>
