@@ -1,5 +1,5 @@
 ---
-menu_order: 1800
+# menu_order: 1800
 menu_title: Verify Smart Contracts
 title: 'Verify and Deploy Smart Contracts on RSK Block Explorer | Rootstock (RSK)'
 description: 'Learn how to verify a smart contract using the RSK Block Explorer'
