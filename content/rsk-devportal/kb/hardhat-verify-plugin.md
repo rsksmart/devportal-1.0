@@ -127,6 +127,8 @@ const config: HardhatUserConfig = {
         ]
       },
 };
+
+export default config;
 ```
 
 Now, run the verify task, passing the address of the contract, 
