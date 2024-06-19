@@ -385,30 +385,6 @@ menu_order: 4
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/kb/verify-smart-contract/">
-                <div class="icon h-100">
-                    <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rootstock-logo.png" alt="rootstock icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/kb/verify-smart-contract/">
-                    <div class="content-container">
-                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">How to verify a Smart Contract</h2></div>
-                        <p class="card-desc">Learn how to verify a smart contract on the Rootstock Block Explorer.
-                        </p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/kb/verify-smart-contract/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-     <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
             <a href="/kb/hardhat-setup-on-rsk/">
                 <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
@@ -427,6 +403,30 @@ menu_order: 4
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/kb/hardhat-setup-on-rsk/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </li>
+     <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/hardhat-verify-plugin/">
+                <div class="icon h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rootstock-logo.png" alt="rootstock icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/hardhat-verify-plugin/">
+                    <div class="content-container">
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Verify a Smart Contract using the Hardhat Verify Plugin</h2></div>
+                        <p class="card-desc">Learn How to Verify Contracts using the Hardhat Verify plugin for Rootstock.
+                        </p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/hardhat-verify-plugin/">Read More</a>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 ---
-menu_order: 1800
+# menu_order: 1800
 menu_title: Verify Smart Contracts
 title: 'Verify and Deploy Smart Contracts on RSK Block Explorer | Rootstock (RSK)'
 description: 'Learn how to verify a smart contract using the RSK Block Explorer'
@@ -150,3 +150,4 @@ Congratulations, you have successfully verified a smart contract on the RSK Bloc
 
 - [Verify Smart Contracts with SolidityScan](https://blog.rootstock.io/noticia/rootstock-guide-to-verifying-smart-contracts-with-solidityscan/)
 - [Tools](/tools/)
+- [Verify Smart Contracts using Hardhat Verify Plugin for Rootstock](/kb/hardhat-verify-plugin/)
