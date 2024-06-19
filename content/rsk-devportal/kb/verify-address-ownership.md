@@ -234,3 +234,4 @@ That's all - now you can be confident that you do control this address on the RS
 
 - [Verify Smart Contracts with SolidityScan](https://blog.rootstock.io/noticia/rootstock-guide-to-verifying-smart-contracts-with-solidityscan/)
 - [Tools](/tools/)
+- [Verify Smart Contracts using Hardhat Verify Plugin for Rootstock](/kb/hardhat-verify-plugin/)
