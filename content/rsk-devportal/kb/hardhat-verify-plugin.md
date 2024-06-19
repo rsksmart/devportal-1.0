@@ -37,7 +37,7 @@ The [hardhat-verify plugin](https://hardhat.org/hardhat-runner/plugins/nomicfoun
 npm install --save-dev @nomicfoundation/hardhat-verify
 ```
 
-And add the following code to your `hardhat.config.js` file:
+And add the following code to your `hardhat.config.ts` file:
 
 ```bash
 require("@nomicfoundation/hardhat-verify");
@@ -52,7 +52,7 @@ import "@nomicfoundation/hardhat-verify";
 
 ### Usage
 
-You need to add the following Etherscan config to your `hardhat.config.js` file:
+You need to add the following Etherscan config to your `hardhat.config.ts` file:
 
 ```bash
 // Hardhat configuration
