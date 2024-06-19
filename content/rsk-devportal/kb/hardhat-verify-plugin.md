@@ -1,5 +1,5 @@
 ---
-menu_title: Verify Contracts using the Hardhat Verification Plugin for Rootstock
+menu_title: Verify Contracts using the Hardhat Verification Plugin on the Rootstock Blockscout Explorer
 menu_order: 1801
 title: "How to Verify a Smart Contract using the Hardhat Verification Plugin"
 description: "Configuring Hardhat Verification plugin for Rootstock"

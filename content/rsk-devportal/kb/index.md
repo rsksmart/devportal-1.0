@@ -419,7 +419,7 @@ menu_order: 4
             <div class="content">
                 <a href="/kb/hardhat-verify-plugin/">
                     <div class="content-container">
-                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Set up Hardhat Verify plugin for Rootstock</h2></div>
+                        <div class="card-title"><h2 class="zg-text-bg bg-yellow">Verify a Smart Contract using the Hardhat Verify Plugin</h2></div>
                         <p class="card-desc">Learn How to Verify Contracts using the Hardhat Verify plugin for Rootstock.
                         </p>
                     </div>
