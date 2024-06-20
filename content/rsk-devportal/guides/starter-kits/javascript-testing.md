@@ -1,7 +1,7 @@
 ---
-menu_title: Javascript Testing Kits
+menu_title: JavaScript Testing Kits
 layout: rsk
-title: "Rootstock Workshop: Javascript Testing"
+title: "Rootstock Workshop: JavaScript Testing"
 tags: rsk, workshop, javascript, testing, mocha
 description: "Learn about implementations and specifications, and use mocha as a test runner in this hands-on workshop"
 ---
@@ -307,6 +307,6 @@ Of course, also write our implementations such that
 only **true positives** are the only results that eventuate.
 
 Check out
-[DApps Dev Club's Javascript Testing Hands-on](https://dappsdev.org/hands-on/mocha-intro/)
+[DApps Dev Club's JavaScript Testing Hands-on](https://dappsdev.org/hands-on/mocha-intro/)
 if you would like to explore the **extended version** of this tutorial.
 (This workshop is a partial extract from that original.)
