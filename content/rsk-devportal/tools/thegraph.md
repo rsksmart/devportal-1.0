@@ -44,6 +44,9 @@ On your local machine run the following:
 ```
 npm install -g @graphprotocol/graph-cli
 ```
+You must have at least v0.76.0 to deploy subgraphs on Rootstock mainnet.
+
+
 ### Initialize your Subgraph⁠
 
 You can copy this directly from your subgraph page to include your specific subgraph slug:
