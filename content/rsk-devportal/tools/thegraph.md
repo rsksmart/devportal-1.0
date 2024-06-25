@@ -100,6 +100,9 @@ When publishing, you’ll see the option to curate your subgraph. As of May 2024
 
 ![Publish screen](https://lh7-us.googleusercontent.com/docsz/AD_4nXerUr-IgWjwBZvp9Idvz5hTq8AFB0n_VlXCzyDtUxKaCTANT4gkk-2O77oW-a0ZWOh3hnqQsY7zcSaLeCQin9XU1NTX1RVYOLFX9MuVxBEqcMryqgnGQKx-MbDnOWKuMoLBhgyVWQereg3cdWtCPcTQKFU?key=fnI6SyFgXU9SZRNX5C5vPQ)
 
+> **Note:** The Graph's smart contracts are all on Arbitrum One, even though your subgraph is indexing data from Rootstock or any other supported chain. 
+
+
 ## 3. Query your Subgraph
 
 Congratulations! You can now query your subgraph on the decentralized network!
