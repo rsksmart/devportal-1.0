@@ -3,17 +3,14 @@ menu_order: 500
 menu_title: The Graph
 section_title: The Graph
 layout: rsk
-title: Getting Started with The Graph
+title: Get Started with The Graph
 description: "Easily query on-chain data through a decentralized network of indexers"
 tags: TheGraph, indexers, data, subgraphs, dApps
-render_features: 'collapsible'
 ---
 
-Getting historical data on a smart contract can be challenging when you’re building a dApp. [The Graph](https://thegraph.com/) provides an easy way to query smart contract data through APIs known as subgraphs. Its infrastructure relies on a decentralized network of indexers, enabling your dApp to become truly decentralized.
+Getting historical data on a smart contract can be challenging when building a dApp. [The Graph](https://thegraph.com/) provides an easy way to query smart contract data through APIs known as subgraphs. Its infrastructure relies on a decentralized network of indexers, enabling your dApps to become truly decentralized.
 
-## Quick Start
-
-These subgraphs only take a few minutes to set up and get running. 
+These subgraphs only take a few minutes to set up and get running.
 
 To get started, follow these three steps:
 1. Initialize your subgraph project
@@ -209,7 +206,7 @@ axios(graphQLRequest)
   });
 ```
 
-### Additional resources:
+### Additional resources
 
 - To explore all the ways you can optimize & customize your subgraph for a better performance, read more about [creating a subgraph here](https://thegraph.com/docs/en/developing/creating-a-subgraph/).
 - For more information about querying data from your subgraph, read more [here](https://thegraph.com/docs/en/querying/querying-the-graph/).
