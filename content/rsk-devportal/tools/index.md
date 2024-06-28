@@ -26,7 +26,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | DappRadar                                      | Data and Analytics              | [dApps](https://dappradar.com/)                                                                  |
 | DefiLlama                                      | Data and Analytics              | [DefiLLama](https://defillama.com/)                                                                  |
 | Tenderly                                       | Data and Analytics              | [Tenderly](https://dev.rootstock.io/kb/build-with-tenderly/)                                        |
-| TheGraph - Rootstock Subgraph                  | Data and Analytics              | [Rootstock Subgraphs](/kb/the-graph-rootstock/)                                        |
+| TheGraph - Rootstock Subgraph                  | Data and Analytics              | [Rootstock Subgraphs](/tools/thegraph/)                                        |
 | Starter Kits                                   | Starter Kits                    | [Kits](https://dev.rootstock.io/guides/starter-kits/)                                           |
 | Knowledge base                                 | Tutorials and Guides            | [Rootstock KB](https://dev.rootstock.io/kb/)                                                            |
 | Thirdweb                                       | Developer Platforms             | [Thirdweb](https://thirdweb.com/)                                                                   |
