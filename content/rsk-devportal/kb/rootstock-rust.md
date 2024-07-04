@@ -1,30 +1,39 @@
 ---
-menu_title: Getting started with Rootstock using Rust
-title: 'Interact with Rootstock blockchain using Rust'
+menu_order: 1850
+menu_title: Interact with Rootstock using Rust
+title: 'Interact with Rootstock using Rust'
 description: 'Rust is extensively getting used on backend side of many defi applications, dApps, developer tools, indexers and bridges. This guide will help developers to start using Rust on Rootstock blockchain.'
-tags: knowledge-base, rust, rootstock, ethers, alloy-rs, tutorial, overview, guides, web3, bitcoin, rsk, peer-to-peer, blockchain
+tags: knowledge-base, rust, rootstock, ethers, alloy-rs, tutorial, rsk, blockchain
 layout: 'rsk'
+render_features: 'collapsible'
 ---
 
-Rust is a powerful language with memory safety, performance and great community. Most of the blockchain nodes, indexers, defi projects are built using Rust making it most loved programming language by developers. 
+Rust is a fast and memory-efficient language, it can power performance-critical services, 
+run on embedded devices, and easily integrate with other languages.
 
-This tutorial helps to get start on Rootstock using Rust by performing basic operations such as sending transactions and calling contracts by using alloy crate similiar to ethers. 
+> This tutorial helps to get started on Rootstock using Rust by performing basic operations such as sending transactions and calling contracts using alloy crate, similiar to ethers. 
 
 ## Alloy Introduction
-Alloy connects applications to blockchains. [alloy](https://github.com/alloy-rs/alloy) is a rewrite of [ethers-rs](https://github.com/gakonst/ethers-rs) from the ground up, with exciting new features, high performance, and excellent docs.
+
+[Alloy](https://github.com/alloy-rs/alloy) connects applications to blockchains, it serves as an entry point to connect with evm compatible blockchains. It is a rewrite of [ethers-rs](https://github.com/gakonst/ethers-rs) library from the ground up, with new features, high performance, etc. An example is Foundry, a tool written in Rust which uses Alloy as a dependency to connect with blockchains. 
+
+See [Alloy Examples](https://github.com/alloy-rs/examples) to help you get started.
 
 ## Prerequisites
-Install latest version of [Rust](https://www.rust-lang.org/tools/install). If you already have Rust installed, make sure to use the latest version or update using `rustup` toolchain. 
+* Rust
+    Install the latest version of [Rust](https://www.rust-lang.org/tools/install). If you already have Rust installed, make sure to use the latest version or update using the `rustup` toolchain. 
 
-## Create a Rust project
-Use cargo to create a starter project.
+## Getting Started
+
+### Create a Rust project
+
+Run the command below using cargo to create a starter project.
 
 ```bash
 cargo new rootstock-rs
-
 ```
 
-Next step is to update cargo.toml file with dependencies explained in next section.
+> Next step is to update `cargo.toml` file with dependencies explained in next section.
 
 ## Setup Alloy 
 
@@ -37,11 +46,9 @@ cargo add alloy --git https://github.com/alloy-rs/alloy
 
 Find more about alloy setup using meta crate [here](https://alloy.rs/getting-started/installation.html)
 
-All the dependencies required for this tutorial are mentioned in below toml file. 
+> Note: All the dependencies required are mentioned in the `.toml` file below. Copy and paste into the `cargo.toml` file.
 
 ```bash
-// Cargo.toml
-
 [package]
 name = "rootstock-alloy"
 version = "0.1.0"
@@ -52,23 +59,32 @@ alloy = { git = "https://github.com/alloy-rs/alloy", version = "0.1.3", default-
 eyre = "0.6.12"
 futures-util = "0.3.30"
 tokio = { version = "1", features = ["full"] }
-
 ```
 
-## Disclaimer 
-The types and import statements in [alloy](https://github.com/alloy-rs/alloy) dependencies are expected to change. If you face any type relelated errors while running the given examples in the tutorial, its recommended to check the [alloy](https://github.com/alloy-rs/alloy) repo and [documentation](https://alloy.rs/).
+> The types and import statements in [alloy](https://github.com/alloy-rs/alloy) dependencies are expected to change. If you face any type related errors while running the given examples in this tutorial, its recommended to check the [alloy](https://github.com/alloy-rs/alloy) repo and [documentation](https://alloy.rs/).
 
 ## Connect with Rootstock node
-Connecting to a blockchain node requires a provider setup. [Provider](https://alloy-rs.github.io/alloy/alloy_provider/provider/trait/trait.Provider.html) is an abstraction of a connection to the Rootstock network, providing a concise, consistent interface to standard Ethereum node functionality. Run this program using: `cargo run`. 
 
-Make sure to run the cargo command in the root of the project:
+To connect to the Rootstock node., we will require a provider setup. A [Provider](https://alloy-rs.github.io/alloy/alloy_provider/provider/trait/trait.Provider.html) is an abstraction of a connection to the Rootstock network, it provides a concise, and consistent interface to standard Ethereum node functionality. 
+
+To run this program, use: `cargo run` in the root of the project:
 
 ```bash
 cd rootstock-rs
 cargo run
 ```
 
-Update the rootstock-rs/src/main.rs file with this program:
+The response should look like this:
+
+```bash
+Finished `dev` profile [unoptimized + debuginfo] target(s) in 29.28s
+    Running `target/debug/rootstock-alloy`
+Hello, world!
+```
+
+Next, update the `rootstock-rs/src/main.rs` file with the program below:
+
+> Note: Replace `API_KEY` with your RPC API Key. To get an API_KEY, see the [RPC Docs](/tools/rpc-api/). 
 
 ```rs
 use alloy::providers::{ Provider, ProviderBuilder };
@@ -77,7 +93,7 @@ use eyre::Result;
 #[tokio::main]
 async fn main() -> eyre::Result<()> {
     // Set up the HTTP transport which is consumed by the RPC client.
-    let rpc_url = "https://rpc.testnet.rootstock.io/API_KEY".parse()?;
+    let rpc_url = "https://rpc.testnet.rootstock.io/bTPTpbcH6gs5aELtWxZlf9vwGZ1Jzo-T".parse()?;
 
     // Create a provider with the HTTP transport using the `reqwest` crate.
     let provider = ProviderBuilder::new().on_http(rpc_url);
@@ -94,29 +110,44 @@ async fn main() -> eyre::Result<()> {
 
     Ok(())
 }
+```
 
+The response should look like this:
+
+```bash
+Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.43s
+    Running `target/debug/rootstock-alloy`
+chain id: 31
+Latest block number: 5292505
 ```
 
 ## Get RBTC / RIF balance
 
-After setting up the provider, interact with Rootstock node, fetch balance of an address or call a contract. See the below example code or run it using: `cargo run`.
+After setting up the provider, interact with Rootstock node, fetch balance of an address or call a contract. Now, copy and paste the code below.
 
-Make sure to run the cargo command in the root of the project:
+We will do the following: 
+* Codegen from ABI file to interact with the contract.
+* Create an abi directory in the root of the project and put RIF token abi in rif.json file.
+
+Run the below commands in root:
 
 ```bash
-cd rootstock-rs
-cargo run
+mkdir abi
+touch rif.json
 ```
 
-Update the rootstock-rs/src/main.rs file with this program:
+Replace `rootstock-rs/abi/rif.json file` with the RIF Abi below:
+
+```bash
+[ { "constant": true, "inputs": [ { "name": "_owner", "type": "address" } ], "name": "balanceOf", "outputs": [ { "name": "balance", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "transfer", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" } ]
+```
+
+Update the `rootstock-rs/src/main.rs` file with this program:
 
 ```rs 
 use alloy::providers::{Provider, ProviderBuilder};
 use alloy::sol;
 use alloy::primitives::{ address, utils::format_units  };
-
-// Codegen from ABI file to interact with the contract.
-// Make a abi directory in the root of the project and put RIF token abi in rif.json file.
  
 sol!(
     #[allow(missing_docs)]
@@ -124,11 +155,6 @@ sol!(
     RIF,
     "abi/rif.json"
 );
-
-// See the contents of rootstock-rs/abi/rif.json file below.
-/*
-[ { "constant": true, "inputs": [ { "name": "_owner", "type": "address" } ], "name": "balanceOf", "outputs": [ { "name": "balance", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "transfer", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" } ]
-*/
 
 #[tokio::main]
 async fn main() -> eyre::Result<()> {
@@ -157,24 +183,50 @@ async fn main() -> eyre::Result<()> {
 
     Ok(())
 }
+```
 
+> Note: Replace `API_KEY` with your RPC API Key. To get an API_KEY, see the [RPC Docs](/tools/rpc-api/). Also replace RIF Testnet contract addresses with your own address as you would be required to use a private key later.
+
+Make sure to run the cargo command in the root of the project:
+
+```bash
+cd rootstock-rs
+cargo run
+```
+
+You should get the following response:
+
+```bash
+Finished `dev` profile [unoptimized + debuginfo] target(s) in 3.01s
+    Running `target/debug/rootstock-alloy`
+Balance of alice: 0.315632721175825996 rbtc
+Rif balance: 183000000000000000000
 ```
 
 ## Send a transaction
 
-Following program sends tRBTC from one account to the other using TransactionRequest Builder. Running this program will require setting `PRIVATE_KEY` env variable and then run program using `cargo run` command.  
+The following program sends tRBTC from one account to the other using `TransactionRequest` Builder. 
 
-
-Make sure to run the cargo command in the root of the project:
+Running this program will require setting your `PRIVATE_KEY` env variable and then run the program using `cargo run` in root.   
 
 ```bash
 cd rootstock-rs
 PRIVATE_KEY=0x12... cargo run
 ```
 
-Replace your private key in above command to run this program.
+Replace PRIVATE_KEY with your private key in the command above to run this program.
 
-Update the rootstock-rs/src/main.rs file with this program:
+You should see the following response:
+
+```bash
+% cargo run
+Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.35s
+    Running `target/debug/rootstock-alloy`
+Balance of alice: 0.315632721175825996 rbtc
+Rif balance: 183000000000000000000
+```
+
+Next, update the `rootstock-rs/src/main.rs` file with this program:
 
 ```rs
 use alloy::{
@@ -255,26 +307,16 @@ async fn main() -> Result<()> {
 }
 ```
 
-Note: It's expected to that you will face missing `effectiveGasPrice` error. 
-
-```bash
-Error: deserialization error: missing field `effectiveGasPrice` at line 1 column 959
-```
-
-Ignore this error. Rskj team is familiar with this error and fix would be part of new release. This error does not block the sending of a transaction. Transaction will be mined successfully. 
+[](#top "collapsible")
+- ERROR: deserialization error: missing field effectiveGasPrice at line 1 column 959
+    - FIX: It's expected that you will encounter a missing `effectiveGasPrice` error. 
+        - Kindly ignore above error. RSKj team is familiar with this error and fix would be part of new release. This error does not block the sending of a transaction. Transaction will be mined successfully. 
 
 ## Transfer ERC20 Token
 
-This program setups up wallet with provider and sends RIf from one account to the other. Run this program using: `cargo run`.
+This program setups up wallet with provider and sends RIF from one account to the other. Run this program using: `cargo run`.
 
-```bash
-cd rootstock-rs
-PRIVATE_KEY=0x12... cargo run
-```
-
-Replace your private key in above command to run this program.
-
-Update the rootstock-rs/src/main.rs file with this program:
+Update the `rootstock-rs/src/main.rs` file with this program:
 
 ```rs
 use alloy::{
@@ -359,20 +401,23 @@ async fn main() -> eyre::Result<()> {
     println!("Send transaction: {}", receipt.transaction_hash);
 
     Ok(())
-
+}
 ```
 
-For more details see the complete example [here](https://alloy.rs/examples/transactions/transfer_erc20.html)
+```bash
+cd rootstock-rs
+PRIVATE_KEY=0x12... cargo run
+```
 
+> Replace `PRIVATE_KEY` with your private key in the command above to run this program.
 
-## Conclusion
-Alloy serves as an entry point to connect with evm compatible blockchains. For example, Foundry is a tool written in Rust and uses Alloy as dependency to connect with blockchains. 
+For more details, see the [complete code example](https://alloy.rs/examples/transactions/transfer_erc20.html)
 
 See [foundry](https://github.com/foundry-rs/foundry) codebase for more advanced usage of Rust and Alloy to interact with EVM compatible blockchains including Rootstock.
 
-## Resources
+## Useful Resources
 
 - [Alloy website](https://www.paradigm.xyz/oss/alloy)
-- See Alloy reference documentation [here](https://alloy.rs/index.html)
-- To see more code examples using Alloy [see this repo](https://github.com/alloy-rs/examples)
-- Alloy github [repo](https://github.com/alloy-rs)
+- See [Alloy reference documentation](https://alloy.rs/index.html)
+- Code examples using Alloy [visit this repo](https://github.com/alloy-rs/examples)
+- Alloy GitHub [repo](https://github.com/alloy-rs)

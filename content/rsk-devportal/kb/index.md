@@ -126,7 +126,7 @@ menu_order: 4
     </li>
     <li class="col-xl-6 col-md-6">
         <div class="feature-card">
-            <a href="/kb/the-graph-rootstock/">
+            <a href="/tools/thegraph/">
                 <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
                         <img src="/assets/img/kb/the-graph/logo.png" alt="the-graph icon">
@@ -134,15 +134,38 @@ menu_order: 4
                 </div>
             </a>
             <div class="content">
-                <a href="/kb/the-graph-rootstock/">
+                <a href="/tools/thegraph/">
                     <div class="content-container">
                         <div class="card-title"><h2 class="zg-text-bg">How to use TheGraph on Rootstock</h2><span class="zg-label ml-1">06</span></div> 
-                        <p class="card-desc">The Graph is a decentralized protocol for indexing and querying blockchain data</p>
+                        <p class="card-desc">Learn how to use a Rootstock Subgraph.</p>
                     </div>
                 </a>
                 <div class="btn-container">
                     <span></span>
-                    <a class="green" href="/kb/the-graph-rootstock/">Use TheGraph on Rootstock</a>
+                    <a class="green" href="/tools/thegraph/">Use TheGraph on Rootstock</a>
+                </div>
+            </div>
+        </div>
+    </li>
+        <li class="col-xl-6 col-md-6">
+        <div class="feature-card">
+            <a href="/kb/rootstock-rust/">
+                <div class="icon h-100">
+                    <div class="icon-cont text-center my-auto">
+                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
+                    </div>
+                </div>
+            </a>
+            <div class="content">
+                <a href="/kb/rootstock-rust/">
+                    <div class="content-container">
+                        <div class="card-title"><h2 class="zg-text-bg bg-pink">Interact with Rootstock using Rust</h2></div>
+                        <p class="card-desc">Learn how to interact with Rootstock Blockchain using Rust and Alloy crates.</p>
+                    </div>
+                </a>
+                <div class="btn-container">
+                    <span></span>
+                    <a class="green" href="/kb/rootstock-rust/">Read More</a>
                 </div>
             </div>
         </div>
@@ -159,7 +182,7 @@ menu_order: 4
             <div class="content">
                 <a href="/kb/transaction-rate-limiter-rskj/">
                     <div class="content-container">
-                    <div class="card-title"><h2 class="zg-text-bg">Transaction Rate Limiter on the Rootsotck Network</h2></span></div> 
+                    <div class="card-title"><h2 class="zg-text-bg">Transaction Rate Limiter on the Rootstock Network</h2></span></div> 
                         <p class="card-desc">AKA Virtual Gas Limiter</p>
                     </div>
                 </a>
@@ -175,7 +198,7 @@ menu_order: 4
             <a href="/kb/build-with-tenderly/">
                 <div class="icon h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/BuildWithTenderly/tenderly-rsk-banner.jpg" alt="rskontenderly icon">
+                        <img src="/assets/img/kb/BuildWithTenderly/tenderly-rootstock-banner.png" alt="rskontenderly icon">
                     </div>
                 </div>
             </a>
@@ -189,29 +212,6 @@ menu_order: 4
                 <div class="btn-container">
                     <span></span>
                     <a class="green" href="/kb/build-with-tenderly/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/kb/tokenbridge-troubleshooting/">
-                <div class="icon h-100">
-                    <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rootstock-logo.png" alt="token-bridge icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/kb/tokenbridge-troubleshooting/">
-                    <div class="content-container">
-                        <div class="card-title"><h2 class="zg-text-bg">Rootstock Token Bridge Troubleshooting Guide</h2></div> 
-                        <p class="card-desc">Having issues crossing your tokens on the Token Bridge? See the troubleshooting guide for help.</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/kb/tokenbridge-troubleshooting/">Read More</a>
                 </div>
             </div>
         </div>
@@ -244,7 +244,7 @@ menu_order: 4
             <a href="/kb/fungible-tokens-standard/">
                 <div class="icon rif h-100">
                     <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/kb/fungible-token-standards/fungible-token-standards.jpg" alt="fungible-tokens icon">
+                        <img src="/assets/img/kb/fungible-token-standards/fungible-token-standards.png" alt="fungible-tokens icon">
                     </div>
                 </div>
             </a>
@@ -709,28 +709,5 @@ menu_order: 4
             </div>
         </div>
     </li>
-    <li class="col-xl-6 col-md-6">
-        <div class="feature-card">
-            <a href="/kb/interact-with-rootstock-using-rust/">
-                <div class="icon h-100">
-                    <div class="icon-cont text-center my-auto">
-                        <img src="/assets/img/rootstock-icon.png" alt="rootstock icon">
-                    </div>
-                </div>
-            </a>
-            <div class="content">
-                <a href="/kb/interact-with-rootstock-using-rust/">
-                    <div class="content-container">
-                        <div class="card-title"><h2 class="zg-text-bg bg-pink">Get start on Rootstock using Rust</h2></div>
-                        <p class="card-desc">Learn how to interact with Rootstock Blockchain using Rust and Alloy crate</p>
-                    </div>
-                </a>
-                <div class="btn-container">
-                    <span></span>
-                    <a class="green" href="/kb/interact-with-rootstock-using-rust/">Read More</a>
-                </div>
-            </div>
-        </div>
-    </li>
-    </div>
+</div>
 
