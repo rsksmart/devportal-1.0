@@ -94,7 +94,7 @@ use eyre::Result;
 #[tokio::main]
 async fn main() -> eyre::Result<()> {
     // Set up the HTTP transport which is consumed by the RPC client.
-    let rpc_url = "https://rpc.testnet.rootstock.io/bTPTpbcH6gs5aELtWxZlf9vwGZ1Jzo-T".parse()?;
+    let rpc_url = "https://rpc.testnet.rootstock.io/API_KEY".parse()?;
 
     // Create a provider with the HTTP transport using the `reqwest` crate.
     let provider = ProviderBuilder::new().on_http(rpc_url);
