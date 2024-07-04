@@ -5,9 +5,9 @@ title: Interaction guide using MyCrypto
 tags: erc20, bridge, mycrypto, defi, node, rbtc, ganache, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts
 ---
 
-This guide describes the necessary steps to perform a token transfer between two blockchain networks, which we will refer to to as **Mainchain** and **Sidechain**, through interaction with special contracts that make up a subsystem called **TokenBridge**.
+This guide describes the necessary steps to perform a token transfer between two blockchain networks, which we will refer to as **Mainchain** and **Sidechain**, through interaction with special contracts that make up a subsystem called **TokenBridge**.
 
-The test performed uses the RSK (with a local regtest node) and Ethereum (through the Ganache client) nodes as Mainchain and Sidechain respectively. The demonstration images to interact with both Blockchain were taken from the MyCrypto application. Alternatively, MyEtherWallet or similar can be used which will give the same results.
+The test performed uses the Rootstock (with a local regtest node) and Ethereum (through the Ganache client) nodes as Mainchain and Sidechain respectively. The demonstration images to interact with both Blockchain were taken from the MyCrypto application. Alternatively, MyEtherWallet or similar can be used which will give the same results.
 
 ### Preconditions
 
@@ -25,7 +25,7 @@ The following list summarizes the tools and components that are necessary to go 
 
 In particular for this use case, it was used:
 
-* [RSK (regtest node)](https://developers.rsk.co/rsk/node/install/)
+* [Rootstock (regtest node)](https://dev.rootstock.io/rsk/node/install/)
 * [Ethereum (through Ganache)](https://geth.ethereum.org/docs/install-and-build/installing-geth)
 * [MyCrypto](https://mycrypto.com/)
 
@@ -45,13 +45,13 @@ Then access your account using one of the methods available in your application.
 
 The first step to perform the cross-transfer consists in the interaction with the contract located in the Mainchain that contains the tokens to be sent. In this case we will use an `IERC20` contract as an example, but it is not subject to any custom functionality so any other ERC20-based contract can be used.
 
-To continue enter the `address` of the contract and its `JSON ABI` interface
+To continue, enter the `address` of the contract and its `JSON ABI` interface
 
 !["Access Contract"](/assets/img/tools/tokenbridge/access_contract.png "Access Contract")
 
 ---
 
-Afterwards select the `approve` method and complete the parameters with the information of the recipient and the amount we want to send in unit of wei. The spender address will be the address of the so-called Bridge contract in the Mainchain network that will be used as an intermediary for the transfer.
+Afterward select the `approve` method and complete the parameters with the information of the recipient and the amount we want to send in unit of wei. The spender address will be the address of the so-called Bridge contract in the Mainchain network that will be used as an intermediary for the transfer.
 
 !["Contract Approve"](/assets/img/tools/tokenbridge/contract_approve.png "Contract Approve")
 

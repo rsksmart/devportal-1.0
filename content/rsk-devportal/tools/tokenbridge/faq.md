@@ -11,7 +11,7 @@ If you need guide troublehsooting an issue go to [/kb/tokenbridge-troubleshootin
 
 ## What is the Token Bridge?
 
-The Token Bridge is an interoperability protocol which allows users to move their own RSK or Ethereum ERC20 Tokens between networks in a quick and cost-efficient manner.
+The Token Bridge is an interoperability protocol which allows users to move their own Rootstock or Ethereum ERC20 Tokens between networks in a quick and cost-efficient manner.
 The UI is available at:
 
 - Mainnet: [tokenbridge.rsk.co](https://tokenbridge.rsk.co/)
@@ -21,7 +21,7 @@ The UI is available at:
 
 ## What is a Side Token (mirror ERC20)?
 
-Side Token is an ERC777 representation of a ERC20 compatible tokens which is on another network(could be  on Ethereum or RSK network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
+Side Token is an ERC777 representation of a ERC20 compatible tokens which is on another network(could be  on Ethereum or Rootstock network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
 
 ## What is the purpose of having a Side Token?
 
@@ -29,15 +29,15 @@ Side Tokens are minted to prove cross chain bridges can work in a safe and secur
 
 ## Will the supply of the original token will increase as a result of Side Tokens?
 
-No! It’s important to note that there will be no increase in the original tokens. The existing amount of circulating original tokens will stay the same and simply be distributed across 2 networks (RSK Network & Ethereum network) instead of 1.
+No! It’s important to note that there will be no increase in the original tokens. The existing amount of circulating original tokens will stay the same and simply be distributed across 2 networks (Rootstock Network & Ethereum network) instead of 1.
 
 ## What is the difference between original tokens and Side Tokens?
 
-The original token lives on the network that it was deployed for example Ethereum, while the Side Token is a representation of the original token on the other network, for example RSK.
+The original token lives on the network that it was deployed for example Ethereum, while the Side Token is a representation of the original token on the other network, for example Rootstock.
 
 ## What is the Side Token Contract Address, Symbol, and # of Decimal Places in order to add it as a Custom Coin on MyEtherWallet?
 
-The symbol of the Side Token is the original token symbol with an `r` prefix if it is created in RSK or an `e` prefix if it is created in Ethereum. For example, if we cross the `RIF` token from RSK to Ethereum, the Side Token symbol would be `eRIF`.
+The symbol of the Side Token is the original token symbol with an `r` prefix if it is created in Rootstock or an `e` prefix if it is created in Ethereum. For example, if we cross the `RIF` token from Rootstock to Ethereum, the Side Token symbol would be `eRIF`.
 The number of decimal places will be 18. These are the ['addresses'](/tools/tokenbridge/contractaddresses/) of the deployed contracts in the different networks.
 
 ## How do I transform my original tokens to Side Tokens?
@@ -46,7 +46,7 @@ The Token Bridge will be a public DApp where users will be able to access by usi
 
 ## If I sell my Side Tokens, what happens to my original tokens?
 
-Upon receiving your Side Tokens, you no longer own your original tokens. The moment you use the bridge to send them to the other network (RSK or Ethereum), they are locked up and stored in the contract address. Thus you effectively have no original tokens on the original network and now have Side Tokens on the other network.
+Upon receiving your Side Tokens, you no longer own your original tokens. The moment you use the bridge to send them to the other network (Rootstock or Ethereum), they are locked up and stored in the contract address. Thus you effectively have no original tokens on the original network and now have Side Tokens on the other network.
 
 ## Is there a limit on how many tokens can be bridged over?
 
@@ -84,4 +84,4 @@ When original tokens are moved to the other network
 
 When Side Tokens are moved back from the other network
 - Side Tokens are burned
-- Original tokens are unlocked in the Token Bridge smart contract, and transfered to the same address that originally called the bridge contract.
+- Original tokens are unlocked in the Token Bridge smart contract, and transferred to the same address that originally called the bridge contract.

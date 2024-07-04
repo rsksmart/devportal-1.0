@@ -9,18 +9,18 @@ This Decentralized Application helps you to interact with the Token Bridge contr
 
 ## Description
 
-This guide describes the steps to transfer tokens using the Web Interface for the RSK Token Bridge system. Please refer to the project documentation if you’d like to know more about how this bridge works. It is possible to test the transfer of tokens between RSK Testnet and Kovan networks, or RSK Mainnet and Ethereum networks using the RSK Token Bridge web interface.
+This guide describes the steps to transfer tokens using the Web Interface for the Rootstock Token Bridge system. Please refer to the project documentation if you’d like to know more about how this bridge works. It is possible to test the transfer of tokens between Rootstock Testnet and Sepolia networks, or RSK Mainnet and Ethereum networks using the RSK Token Bridge web interface.
 
 ### Prerequisites
 
 This will require the use of either Chrome or Chromium web browser, with one of the following wallet browser extensions:
-- [Metamask](https://metamask.io/download.html) using a [custom network](/develop/apps/wallets/metamask/) to add the RSK network.
+- [Metamask](https://metamask.io/download.html) using a [custom network](/develop/apps/wallets/metamask/) to add the Rootstock network.
 - [Liquality Wallet](https://liquality.io/)
 - [Definat Wallet](https://defiantapp.tech/)
 
 ## Steps
 
-Start by connecting your wallet and select the network of your choice, in this case we will use RSK Testnet network.
+Start by connecting your wallet and select the network of your choice, in this case we will use Rootstock Testnet network.
 
 <img src="/assets/img/tools/tokenbridge/dapp-image1-1.png" alt="token bridge connect"/>
 
@@ -54,7 +54,7 @@ Once the tokens have cross **you need to claim them on the other network**. To d
 
 <img src="/assets/img/tools/tokenbridge/dapp-image7.png" alt="token bridge claim button" />
 
-A confirmation popup will appear to send the claim trasnaction to the network, submit it. After the transaction get mined, you will see your transaction as Claimed
+A confirmation popup will appear to send the claim transaction to the network, submit it. After the transaction get mined, you will see your transaction as Claimed
 
 <img src="/assets/img/tools/tokenbridge/dapp-image8.png" alt="token bridge claimed transaction"/>
 
