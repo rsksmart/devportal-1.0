@@ -11,7 +11,7 @@ render_features: 'collapsible'
 Rust is a fast and memory-efficient language, it can power performance-critical services, 
 run on embedded devices, and easily integrate with other languages.
 
-> This tutorial helps to get started on Rootstock using Rust by performing basic operations such as sending transactions and calling contracts using alloy crate, similiar to ethers. 
+> This tutorial helps to get started on Rootstock using Rust by performing basic operations such as sending transactions and calling contracts using Alloy crate, similiar to ethers. 
 
 ## Introduction to Alloy
 
@@ -38,14 +38,14 @@ cargo new rootstock-rs
 
 ## Setup Alloy 
 
-To install [alloy](https://github.com/alloy-rs/alloy) run the following command in the root directory of the project:
+To install [Alloy](https://github.com/alloy-rs/alloy) run the following command below in the root directory of the project:
 
 ```bash
 cd rootstock-rs
 cargo add alloy --git https://github.com/alloy-rs/alloy
 ```
 
-Find more about alloy setup using meta crate [here](https://alloy.rs/getting-started/installation.html)
+Find more about Alloy setup using meta crate [here](https://alloy.rs/getting-started/installation.html)
 
 > Note: All the dependencies required are mentioned in the `.toml` file below. Copy and paste into the `cargo.toml` file.
 
@@ -62,13 +62,13 @@ futures-util = "0.3.30"
 tokio = { version = "1", features = ["full"] }
 ```
 
-> The types and import statements in [alloy](https://github.com/alloy-rs/alloy) dependencies are expected to change. If you face any type related errors while running the given examples in this tutorial, its recommended to check the [alloy](https://github.com/alloy-rs/alloy) repo and [documentation](https://alloy.rs/).
+> The types and import statements in [Alloy](https://github.com/alloy-rs/alloy) dependencies are expected to change. If you face any type related errors while running the given examples in this tutorial, its recommended to check the [Alloy](https://github.com/alloy-rs/alloy) repo and [documentation](https://alloy.rs/).
 
 ## Connect with Rootstock node
 
 To connect to the Rootstock node., we will require a provider setup. A [Provider](https://alloy-rs.github.io/alloy/alloy_provider/provider/trait/trait.Provider.html) is an abstraction of a connection to the Rootstock network, it provides a concise, and consistent interface to standard Ethereum node functionality. 
 
-To run this program, use: `cargo run` in the root of the project:
+To run this program, use `cargo run` in the root of the project:
 
 ```bash
 cd rootstock-rs
@@ -130,7 +130,7 @@ We will do the following:
 * Codegen from ABI file to interact with the contract.
 * Create an abi directory in the root of the project and put RIF token abi in rif.json file.
 
-Run the below commands in root:
+Run the below commands in the root folder:
 
 ```bash
 mkdir abi
@@ -188,7 +188,7 @@ async fn main() -> eyre::Result<()> {
 
 > Note: Replace `API_KEY` with your RPC API Key. To get an API_KEY, see the [RPC Docs](/tools/rpc-api/). Also replace RIF Testnet contract addresses with your own address as you would be required to use a private key later.
 
-Make sure to run the cargo command in the root of the project:
+Note: Run the cargo command in the root of the project:
 
 ```bash
 cd rootstock-rs
@@ -215,7 +215,7 @@ cd rootstock-rs
 PRIVATE_KEY=0x12... cargo run
 ```
 
-Replace PRIVATE_KEY with your private key in the command above to run this program.
+Replace `PRIVATE_KEY` with your private key in the command above to run this program.
 
 You should see the following response:
 
@@ -310,7 +310,7 @@ async fn main() -> Result<()> {
 
 [](#top "collapsible")
 - ERROR: deserialization error: missing field effectiveGasPrice at line 1 column 959
-    - FIX: It's expected that you will encounter a missing `effectiveGasPrice` error. 
+    - It's expected that you will encounter a missing `effectiveGasPrice` error. 
         - Kindly ignore above error. RSKj team is familiar with this error and fix would be part of new release. This error does not block the sending of a transaction. Transaction will be mined successfully. 
 
 ## Transfer ERC20 Token
