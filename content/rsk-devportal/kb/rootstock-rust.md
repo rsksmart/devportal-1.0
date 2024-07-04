@@ -13,15 +13,16 @@ run on embedded devices, and easily integrate with other languages.
 
 > This tutorial helps to get started on Rootstock using Rust by performing basic operations such as sending transactions and calling contracts using alloy crate, similiar to ethers. 
 
-## Alloy Introduction
+## Introduction to Alloy
 
-[Alloy](https://github.com/alloy-rs/alloy) connects applications to blockchains, it serves as an entry point to connect with evm compatible blockchains. It is a rewrite of [ethers-rs](https://github.com/gakonst/ethers-rs) library from the ground up, with new features, high performance, etc. An example is Foundry, a tool written in Rust which uses Alloy as a dependency to connect with blockchains. 
+[Alloy](https://github.com/alloy-rs/alloy) connects applications to blockchains, it serves as an entry point to connect with evm compatible blockchains. It is a rewrite of [ethers-rs](https://github.com/gakonst/ethers-rs) library from the ground up, with new features, high performance, etc. An example is [Foundry](https://github.com/foundry-rs/foundry), a tool written in Rust which uses Alloy as a dependency to connect with blockchains. 
 
-See [Alloy Examples](https://github.com/alloy-rs/examples) to help you get started.
+For more information, see [Alloy Examples](https://github.com/alloy-rs/examples) to help you get started.
 
 ## Prerequisites
+
 * Rust
-    Install the latest version of [Rust](https://www.rust-lang.org/tools/install). If you already have Rust installed, make sure to use the latest version or update using the `rustup` toolchain. 
+    * Install the latest version of [Rust](https://www.rust-lang.org/tools/install). If you already have Rust installed, make sure to use the latest version or update using the `rustup` toolchain. 
 
 ## Getting Started
 
@@ -404,12 +405,14 @@ async fn main() -> eyre::Result<()> {
 }
 ```
 
+Run the below command to transfer an ERC20 Token:
+
 ```bash
 cd rootstock-rs
 PRIVATE_KEY=0x12... cargo run
 ```
 
-> Replace `PRIVATE_KEY` with your private key in the command above to run this program.
+> Note to replace `PRIVATE_KEY` with your private key in the command above to run this program.
 
 For more details, see the [complete code example](https://alloy.rs/examples/transactions/transfer_erc20.html)
 
