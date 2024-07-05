@@ -2,10 +2,11 @@
 menu_order: 602
 menu_title: Addresses and Links
 layout: rsk
-title: Tokenbridge MainNet Addresses and Links
+title: Tokenbridge Mainnet Addresses and Links
 tags: address, erc20, defi, decentralized, token-bridge, tokens, addresses, bridge, multisig, federation, quick-start, guides, tutorial, testnet, faucet, networks, dApps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, sidechain, contracts
 ---
 
+Here, you can find a list of mainnet and testnet addresses for the Tokenbridge.
 
 ## Tokenbridge Mainnet Rootstock Addresses
   - Bridge: [`0x9d11937e2179dc5270aa86a3f8143232d6da0e69`](https://explorer.rootstock.io/address/0x9d11937e2179dc5270aa86a3f8143232d6da0e69)
