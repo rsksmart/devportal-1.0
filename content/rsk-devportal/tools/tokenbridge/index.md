@@ -1,12 +1,13 @@
 ---
-menu_title: Tokenbridge
+menu_order: 600
+menu_title: Overview
 section_title: Tokenbridge
 layout: rsk
 title: Rootstock Tokenbridge
-tags: erc20, bridge, faqs, rootstock, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dApps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
+tags: erc20, bridge, faqs, rootstock, defi, decentralized, tokenbridge, tokens, quick-start, guides, tutorial, testnet, networks, dApps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
 ---
 
-Ethereum/Rootstock Bridge that allows to move ERC20 tokens between one chain and the other.
+Safely move your ERC20 tokens between Rootstock and Ethereum with the Tokenbridge dApp. This user-friendly interface lets you interact with the Tokenbridge contracts directly. It is available on [Mainnet](https://tokenbridge.rsk.co/) or [Testnet](https://testnet.tokenbridge.rsk.co/).
 
 ## Rationale
 
