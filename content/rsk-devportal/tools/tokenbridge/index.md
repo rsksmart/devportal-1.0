@@ -1,8 +1,8 @@
 ---
-menu_title: Token Bridge
-section_title: Token Bridge
+menu_title: Tokenbridge
+section_title: Tokenbridge
 layout: rsk
-title: Rootstock (RSK) and Ethereum (ETH) Token Bridge | Rootstock (RSK)
+title: Rootstock Tokenbridge
 tags: erc20, bridge, faqs, rootstock, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dApps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
 ---
 

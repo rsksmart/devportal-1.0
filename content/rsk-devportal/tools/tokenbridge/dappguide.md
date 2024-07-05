@@ -2,7 +2,7 @@
 menu_order: 
 menu_title: dApp Guide
 layout: rsk
-title: Token Bridge dApp Guide - Cross-Chain Transactions
+title: Tokenbridge dApp Guide - Cross-Chain Transactions
 tags: erc20, bridge, defi, decentralized, token-bridge, tokens, quick-start, testnet, networks, dApps, tools, rsk, ethereum, smart-contracts, guides, tutorial, install, get-started, how-to
 ---
 
