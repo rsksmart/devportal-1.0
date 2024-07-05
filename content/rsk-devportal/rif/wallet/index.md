@@ -34,7 +34,7 @@ The RIF Wallet app runs in both Rootstock mainnet and testnet with the default c
 Watch the video on how to get started with the RIF Wallet:
 
 <div class="video-container">
-  <iframe width="949" height="534" src="https://youtube.com/embed/v=NWRRN9l3J4Q"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="949" height="534" src="https://youtube.com/embed/NWRRN9l3J4Q"   frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <a href="https://rif.technology/rif-wallet/" target="_blank" class="green-button">Download the RIF Wallet App</a>
