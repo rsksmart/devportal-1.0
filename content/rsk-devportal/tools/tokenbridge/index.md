@@ -3,7 +3,7 @@ menu_title: Token Bridge
 section_title: Token Bridge
 layout: rsk
 title: Rootstock (RSK) and Ethereum (ETH) Token Bridge | Rootstock (RSK)
-tags: erc20, bridge, faqs, rootstock, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
+tags: erc20, bridge, faqs, rootstock, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dApps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
 ---
 
 Ethereum/Rootstock Bridge that allows to move ERC20 tokens between one chain and the other.
@@ -25,9 +25,9 @@ The bridge contracts are upgradeable, this enables a smoother move to a more dec
 
 ## Usage
 
-You can use the ['Token Bridge Dapp'](https://tokenbridge.rsk.co/) together with [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) to move tokens between networks.
+You can use the ['Token Bridge dApp'](https://tokenbridge.rsk.co/) together with [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) to move tokens between networks.
 
-Follow the [Dapp guide](/tools/tokenbridge/dappguide/) for more details on how to use the token bridge.
+Follow the [dApp guide](/tools/tokenbridge/dappguide/) for more details on how to use the token bridge.
 
 Alternatively, you can use a wallet or web3js with the ABI of the contracts. See ['interaction guide using MyCrypto'](/tools/tokenbridge/usingmycrypto/) for more information on how to use the bridge.
 

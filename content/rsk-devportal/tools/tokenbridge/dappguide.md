@@ -1,22 +1,20 @@
 ---
-menu_title: Dapp Guide
+menu_order: 
+menu_title: dApp Guide
 layout: rsk
-title: Token Bridge DApp Guide - Cross-Chain Transactions | Rootstock (RSK)
-tags: erc20, bridge, defi, decentralized, token-bridge, tokens, quick-start, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, guides, tutorial, install, get-started, how-to
+title: Token Bridge dApp Guide - Cross-Chain Transactions
+tags: erc20, bridge, defi, decentralized, token-bridge, tokens, quick-start, testnet, networks, dApps, tools, rsk, ethereum, smart-contracts, guides, tutorial, install, get-started, how-to
 ---
 
-This Decentralized Application helps you to interact with the Token Bridge contracts, to safely cross your tokens between RSK and Ethereum networks. It is available at [tokenbridge.rsk.co](https://tokenbridge.rsk.co/) for mainnet or [testnet.tokenbridge.rsk.co](https://testnet.tokenbridge.rsk.co/) for testnet.
+Safely move your tokens between Rootstock and Ethereum with the Tokenbridge dApp. This user-friendly interface lets you interact with the Tokenbridge contracts directly. It is available at [https://tokenbridge.rsk.co/](https://tokenbridge.rsk.co/) for mainnet or [testnet.tokenbridge.rsk.co](https://testnet.tokenbridge.rsk.co/) for testnet.
 
-## Description
+This guide describes the steps to transfer tokens using the Web Interface for the Rootstock Tokenbridge dApp. Please refer to the project documentation, if you’d like to know more about how this bridge works. It is possible to test the transfer of tokens between Rootstock Testnet and Sepolia networks, or Rootstock Mainnet and Ethereum networks using the Rootstock Tokenbridge web interface.
 
-This guide describes the steps to transfer tokens using the Web Interface for the Rootstock Token Bridge system. Please refer to the project documentation if you’d like to know more about how this bridge works. It is possible to test the transfer of tokens between Rootstock Testnet and Sepolia networks, or RSK Mainnet and Ethereum networks using the RSK Token Bridge web interface.
-
-### Prerequisites
+## Prerequisites
 
 This will require the use of either Chrome or Chromium web browser, with one of the following wallet browser extensions:
 - [Metamask](https://metamask.io/download.html) using a [custom network](/develop/apps/wallets/metamask/) to add the Rootstock network.
-- [Liquality Wallet](https://liquality.io/)
-- [Definat Wallet](https://defiantapp.tech/)
+- [Defiant Wallet](https://defiantapp.tech/)
 
 ## Steps
 

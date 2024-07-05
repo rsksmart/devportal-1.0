@@ -2,16 +2,17 @@
 menu_title: Token Bridge FAQ
 layout: rsk
 title: "TokenBridge FAQ: Answers to Your Rootstock-Ethereum Bridge Queries"
-tags: erc20, bridge, faqs, defi, rbtc, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets
+tags: erc20, bridge, faqs, defi, rbtc, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dApps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, wallets
 ---
 
 ## Troubleshooting
 
 If you need guide troublehsooting an issue go to [/kb/tokenbridge-troubleshooting/](/kb/tokenbridge-troubleshooting/)
 
-## What is the Token Bridge?
+## What is the Tokenbridge?
 
-The Token Bridge is an interoperability protocol which allows users to move their own Rootstock or Ethereum ERC20 Tokens between networks in a quick and cost-efficient manner.
+The Tokenbridge is an interoperability protocol which allows users to move their own Rootstock or Ethereum ERC20 Tokens between networks in a quick and cost-efficient manner.
+
 The UI is available at:
 
 - Mainnet: [tokenbridge.rsk.co](https://tokenbridge.rsk.co/)
@@ -21,7 +22,7 @@ The UI is available at:
 
 ## What is a Side Token (mirror ERC20)?
 
-Side Token is an ERC777 representation of a ERC20 compatible tokens which is on another network(could be  on Ethereum or Rootstock network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
+Side Token is an ERC777 representation of a ERC20 compatible tokens which is on another network (could be  on Ethereum or Rootstock network). The Side Token displays the exact same properties as the standard ERC20 token and allows it to be used in all the same places as ERC20.
 
 ## What is the purpose of having a Side Token?
 
@@ -42,7 +43,7 @@ The number of decimal places will be 18. These are the ['addresses'](/tools/toke
 
 ## How do I transform my original tokens to Side Tokens?
 
-The Token Bridge will be a public DApp where users will be able to access by using Liquality Wallet or Metamask. You will be able to send your original tokens and receive an equivalent amount of Side Tokens on the other network. By toggling the network on Metamask, you’re also able to transfer the other way around, by sending Side Tokens and receive original tokens.
+The Tokenbridge will be a public dApp where users will be able to access by using Liquality Wallet or Metamask. You will be able to send your original tokens and receive an equivalent amount of Side Tokens on the other network. By toggling the network on Metamask, you’re also able to transfer the other way around, by sending Side Tokens and receive original tokens.
 
 ## If I sell my Side Tokens, what happens to my original tokens?
 
@@ -66,9 +67,9 @@ There is a 0.2% fee charge when crossing the tokens, this fee goes to the valida
 
 Confirmations depends on the amount being crossed:
 
-- Small amounts needs 60 confirmations on the RSK Mainnet, and 120 confirmations on the Ethereum Mainnet.
-- Medium amounts needs 120 confirmations on the RSK Mainnet, and 240 confirmations on the Ethereum Mainnet.
-- Large amounts needs 2880 confirmations on the RSK Mainnet, and 5760 confirmations on the Ethereum Mainnet.
+- Small amounts needs 60 confirmations on the Rootstock Mainnet, and 120 confirmations on the Ethereum Mainnet.
+- Medium amounts needs 120 confirmations on the Rootstock Mainnet, and 240 confirmations on the Ethereum Mainnet.
+- Large amounts needs 2880 confirmations on the Rootstock Mainnet, and 5760 confirmations on the Ethereum Mainnet.
 
 > Note that the values of small, medium, and large amount are defined per token basis,
 > and may change over time.
@@ -76,10 +77,10 @@ Confirmations depends on the amount being crossed:
 
 ## How does the Token Bridge work?
 
-The Token Bridge functionality is quite unique, yet simple to understand. The ratio of tokens during network transfer always remains 1:1 and behaves in the following manner:
+The Tokenbridge functionality is quite unique, yet simple to understand. The ratio of tokens during network transfer always remains 1:1 and behaves in the following manner:
 
 When original tokens are moved to the other network
-- Original tokens are locked in the Token Bridge smart contract
+- Original tokens are locked in the Tokenbridge smart contract
 - Side Tokens are minted and assigned to the same address that originally called the bridge
 
 When Side Tokens are moved back from the other network

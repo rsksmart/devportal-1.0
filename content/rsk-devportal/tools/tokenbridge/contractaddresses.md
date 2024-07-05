@@ -2,25 +2,25 @@
 menu_title: Addresses and Links
 layout: rsk
 title: Token Bridge MainNet Addresses and Links | Rootstock (RSK)
-tags: address, erc20, defi, decentralized, token-bridge, tokens, addresses, bridge, multisig, federation, quick-start, guides, tutorial, testnet, faucet, networks, dapps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, sidechain, contracts
+tags: address, erc20, defi, decentralized, token-bridge, tokens, addresses, bridge, multisig, federation, quick-start, guides, tutorial, testnet, faucet, networks, dApps, tools, rsk, ethereum, smart-contracts, install, get-started, how-to, mainnet, sidechain, contracts
 ---
 
 
-### Token bridge Mainnet Rootstock Addresses
+## Token bridge Mainnet Rootstock Addresses
   - Bridge: [`0x9d11937e2179dc5270aa86a3f8143232d6da0e69`](https://explorer.rootstock.io/address/0x9d11937e2179dc5270aa86a3f8143232d6da0e69)
   - Federation: [`0x7eCfda6072942577D36F939aD528b366b020004b`](https://explorer.rootstock.io/address/0x7ecfda6072942577d36f939ad528b366b020004b)
   - AllowTokens: [`0xcB789036894a83a008a2AA5b3c2DDe41D0605A9A`](https://explorer.rootstock.io/address/0xcb789036894a83a008a2aa5b3c2dde41d0605a9a)
   - MultiSigWallet: [`0x040007b1804ad78a97f541bebed377dcb60e4138`](https://blockscout.com/rsk/mainnet/address/0x040007b1804aD78A97f541bEBED377dcb60E4138)
 
-### Token bridge Mainnet Ethereum Addresses
+## Token bridge Mainnet Ethereum Addresses
   - Bridge: [`0x12ed69359919fc775bc2674860e8fe2d2b6a7b5d`](https://etherscan.io/address/0x12ed69359919fc775bc2674860e8fe2d2b6a7b5d)
   - Federation: [`0x5e29C223d99648C88610519f96E85E627b3ABe17`](https://etherscan.io/address/0x5e29C223d99648C88610519f96E85E627b3ABe17)
   - AllowTokens: [`0xA3FC98e0a7a979677BC14d541Be770b2cb0A15F3`](https://etherscan.io/address/0xa3fc98e0a7a979677bc14d541be770b2cb0a15f3)
   - MultiSigWallet: [`0x040007b1804ad78a97f541bebed377dcb60e4138`](https://etherscan.io/address/0x040007b1804ad78a97f541bebed377dcb60e4138)
 
-# Testnet Addresses and Links
+## Testnet Addresses and Links
 
-### On RSK Testnet
+### On Rootstock Testnet
 
   - Bridge: [`0x21df59aef6175467fefb9e44fbb98911978a13f2`](https://explorer.testnet.rootstock.io/address/0x21df59aef6175467fefb9e44fbb98911978a13f2)
   - Federation: [`0x73de98b3eb19cae5dfc71fb3e54f3ffd4aa02705`](https://explorer.testnet.rootstock.io/address/0x73de98b3eb19cae5dfc71fb3e54f3ffd4aa02705)
@@ -39,7 +39,7 @@ tags: address, erc20, defi, decentralized, token-bridge, tokens, addresses, brid
 
 [ABIs used](https://github.com/rsksmart/tokenbridge/tree/master/bridge/abi)
 
-## RSK Testnet Explorer, Faucet and Stats
+## Rootstock Testnet Explorer, Faucet and Stats
 - [explorer.testnet.rootstock.io](https://explorer.testnet.rootstock.io/)
 - [stats.testnet.rootstock.io](https://stats.testnet.rootstock.io/)
 - [faucet.rootstock.io](https://faucet.rootstock.io/)
