@@ -48,8 +48,3 @@ The ABI to interact with the contracts are in the ['abis folder'](https://github
 
 There is a federation in charge of notifying the events that have happened in the bridge between one chain and the other. The federation is composed of the creators of the token contracts who want to enable their token for crossing.
 See in the ['token bridge federator repository'](https://github.com/rsksmart/tokenbridge-federator) for more information.
-
-
-## Troubleshooting
-
-If you need guide troublehsooting an issue go to [https://dev.rootstock.io/kb/tokenbridge-troubleshooting/](https://dev.rootstock.io/kb/tokenbridge-troubleshooting/)
