@@ -1,12 +1,13 @@
 ---
-menu_title: Token Bridge
-section_title: Token Bridge
+menu_order: 300
+menu_title: Overview
+section_title: Tokenbridge
 layout: rsk
-title: Rootstock (RSK) and Ethereum (ETH) Token Bridge | Rootstock (RSK)
-tags: erc20, bridge, faqs, rootstock, defi, decentralized, token-bridge, tokens, quick-start, guides, tutorial, testnet, networks, dapps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
+title: Rootstock Tokenbridge
+tags: erc20, bridge, faqs, rootstock, defi, decentralized, tokenbridge, tokens, quick-start, guides, tutorial, testnet, networks, dApps, tools, rsk, ethereum, eth, rbtc, smart-contracts, install, get-started, how-to, mainnet, testnet, sidechain, contracts, swaps
 ---
 
-Ethereum/Rootstock Bridge that allows to move ERC20 tokens between one chain and the other.
+Safely move your ERC20 tokens between Rootstock and Ethereum with the Tokenbridge dApp. This user-friendly interface lets you interact with the Tokenbridge contracts directly. It is available on [Mainnet](https://tokenbridge.rsk.co/) or [Testnet](https://testnet.tokenbridge.rsk.co/).
 
 ## Rationale
 
@@ -25,9 +26,9 @@ The bridge contracts are upgradeable, this enables a smoother move to a more dec
 
 ## Usage
 
-You can use the ['Token Bridge Dapp'](https://tokenbridge.rsk.co/) together with [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) to move tokens between networks.
+You can use the ['Token Bridge dApp'](https://tokenbridge.rsk.co/) together with [Metamask with custom network](https://developers.rsk.co/develop/apps/wallets/metamask/) to move tokens between networks.
 
-Follow the [Dapp guide](/tools/tokenbridge/dappguide/) for more details on how to use the token bridge.
+Follow the [dApp guide](/tools/tokenbridge/dappguide/) for more details on how to use the token bridge.
 
 Alternatively, you can use a wallet or web3js with the ABI of the contracts. See ['interaction guide using MyCrypto'](/tools/tokenbridge/usingmycrypto/) for more information on how to use the bridge.
 
@@ -46,9 +47,4 @@ The ABI to interact with the contracts are in the ['abis folder'](https://github
 ### Federation
 
 There is a federation in charge of notifying the events that have happened in the bridge between one chain and the other. The federation is composed of the creators of the token contracts who want to enable their token for crossing.
-See in the token bridge repository the ['federator folder'](https://github.com/rsksmart/tokenbridge/tree/master/federator) for more information.
-
-
-## Troubleshooting
-
-If you need guide troublehsooting an issue go to [https://developers.rsk.co/kb/tokenbridge-troubleshooting/](https://developers.rsk.co/kb/tokenbridge-troubleshooting/)
+See in the ['token bridge federator repository'](https://github.com/rsksmart/tokenbridge-federator) for more information.
