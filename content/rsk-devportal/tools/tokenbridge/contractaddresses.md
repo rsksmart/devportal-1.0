@@ -1,5 +1,5 @@
 ---
-menu_order: 602
+menu_order: 302
 menu_title: Addresses and Links
 layout: rsk
 title: Tokenbridge Mainnet Addresses and Links

@@ -1,5 +1,5 @@
 ---
-menu_order: 604
+menu_order: 304
 menu_title: Tokenbridge FAQ
 layout: rsk
 title: "Tokenbridge FAQ"

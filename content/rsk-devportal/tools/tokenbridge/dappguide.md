@@ -1,5 +1,5 @@
 ---
-menu_order: 601
+menu_order: 301
 menu_title: dApp Guide
 layout: rsk
 title: Tokenbridge dApp Guide - Cross-Chain Transactions

@@ -1,5 +1,5 @@
 ---
-menu_order: 600
+menu_order: 300
 menu_title: Overview
 section_title: Tokenbridge
 layout: rsk
