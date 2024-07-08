@@ -13,6 +13,7 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 
 | Name                                         | Category                        | Website                                                                                     |
 | ---------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------- |
+| Starter Kits                                   | Demo dApps                    | [Use the Starter Kits](https://dev.rootstock.io/guides/starter-kits/)                                           |
 | 2 Way Peg App                                  | Bridges                         | [2 Way peg dApp](https://dev.rootstock.io/guides/two-way-peg-app/)                                        |
 | PowPeg                                         | Bridges                         | [PowPeg](https://dev.rootstock.io/rsk/architecture/powpeg/)                                       |
 | Rootstock Tokenbridge | Bridges                         | [Rootstock Tokenbridge](https://dev.rootstock.io/tools/tokenbridge/)                                             |
@@ -25,8 +26,6 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | DefiLlama                                      | Data and Analytics              | [DefiLLama](https://defillama.com/)                                                                  |
 | Tenderly                                       | Data and Analytics              | [Tenderly](https://dev.rootstock.io/kb/build-with-tenderly/)                                        |
 | TheGraph - Rootstock Subgraph                  | Data and Analytics              | [Rootstock Subgraphs](/tools/thegraph/)                                        |
-| Starter Kits                                   | Starter Kits                    | [Kits](https://dev.rootstock.io/guides/starter-kits/)                                           |
-| Knowledge base                                 | Tutorials and Guides            | [Rootstock KB](https://dev.rootstock.io/kb/)                                                            |
 | Thirdweb                                       | Developer Platforms             | [Thirdweb](https://thirdweb.com/)                                                                   |
 | UseDapp                                        | Developer Platforms             | [useDapp](https://usedapp.io/ )                                                                    |
 | Forward Protocol                               | Developer Platforms             | [Forward Protocol](https://forwardprotocol.io/)  
