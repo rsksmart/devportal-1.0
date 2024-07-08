@@ -8,8 +8,6 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
-![RIF Wallet App Banner](/assets/img/rif-wallet/rif-wallet-docs-banner.png)
-
 The [RIF wallet](https://github.com/rsksmart/rif-wallet) is a fully programmable and extensible DeFi wallet enabling developers and businesses to build intuitive and secure mobile-first Web3 experiences for their end-users. Businesses can now transition its end users into the Web3 ecosystem without all the complexity associated with blockchain addresses. 
 
 See [Overview](./overview/) section for more information.
