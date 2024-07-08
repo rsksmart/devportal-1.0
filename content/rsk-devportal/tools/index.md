@@ -17,7 +17,6 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | PowPeg                                         | Bridges                         | [PowPeg](https://dev.rootstock.io/rsk/architecture/powpeg/)                                       |
 | Rootstock Tokenbridge | Bridges                         | [Rootstock Tokenbridge](https://dev.rootstock.io/tools/tokenbridge/)                                             |
 | Sovryn Fast BTC                                | Bridges                         | [Sovryn](https://wiki.sovryn.com/en/sovryn-dapp/bridge)                                           |
-| API3                                           | Oracles                         | [API3](https://api3.org/)                                                                       |
 | Rootstock Explorer                             | Explorers                       | [Explorer](https://dev.rootstock.io/tools/explorer/)                                                |
 | Blockscout                                     | Explorers                       | [Blockscout](https://rootstock.blockscout.com/)                                                       |
 | RIF Rollup Explorer                            | Explorers                       | [Rollup Explorer](https://dev.rootstock.io/rif/rollup/dapps/)                                              |

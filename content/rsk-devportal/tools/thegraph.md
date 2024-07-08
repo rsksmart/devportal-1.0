@@ -17,7 +17,7 @@ To get started, follow these steps below:
 2. Deploy & Publish
 3. Query from a dApp
 
-> Pricing: **All developers receive 100K free queries per month on the decentralized network**. After these free queries, you only pay based on usage at $4 for every 100K queries.
+> Pricing: **Developers are eligible to receive 100K free queries per month on the decentralized network**. After these free queries, you only pay based on usage at $4 for every 100K queries.
 
 ## Getting Started
 

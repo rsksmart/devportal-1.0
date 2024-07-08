@@ -64,9 +64,9 @@ tokio = { version = "1", features = ["full"] }
 
 > The types and import statements in [Alloy](https://github.com/alloy-rs/alloy) dependencies are expected to change. If you face any type related errors while running the given examples in this tutorial, its recommended to check the [Alloy](https://github.com/alloy-rs/alloy) repo and [documentation](https://alloy.rs/).
 
-## Connect with Rootstock node
+## Connect to the Rootstock node
 
-To connect to the Rootstock node., we will require a provider setup. A [Provider](https://alloy-rs.github.io/alloy/alloy_provider/provider/trait/trait.Provider.html) is an abstraction of a connection to the Rootstock network, it provides a concise, and consistent interface to standard Ethereum node functionality. 
+To connect to the Rootstock node, we will require a provider setup. A [Provider](https://alloy-rs.github.io/alloy/alloy_provider/provider/trait/trait.Provider.html) is an abstraction of a connection to the Rootstock network, it provides a concise, and consistent interface to standard Ethereum node functionality. 
 
 To run this program, use `cargo run` in the root of the project:
 

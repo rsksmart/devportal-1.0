@@ -94,7 +94,7 @@ See [supported wallets](/wallet/use/).
 
 Looking for [RBTC](/rsk/rbtc/)?
 
-You can obtain RBTC using [these exchanges](/rsk/rbtc/#exchanges),
+You can obtain RBTC using [these exchanges](/rsk/rbtc/),
 or use the exchanges listed below👇 to obtain the RIF token.
 
 ## Technical information
