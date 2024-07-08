@@ -84,18 +84,9 @@ See [supported wallets](/wallet/use/).
 
 ## Exchanges
 
-- [Sovryn](https://sovryn.app/convert)
-- [Binance](https://www.binance.com/en)
-- [Gate.io](https://www.gate.io/)
-- [Lbank](https://www.lbank.info/)
-- [MEXC](https://www.mexc.com/)
-- [Coinex](https://www.coinex.com/)
-- [Hotbit](https://www.hotbit.io/)
+* [View the list of Exchanges](https://rif.technology/rif-token/) to get the RIF Token.
 
-Looking for [RBTC](/rsk/rbtc/)?
-
-You can obtain RBTC using [these exchanges](/rsk/rbtc/),
-or use the exchanges listed below👇 to obtain the RIF token.
+> Looking for [RBTC](/rsk/rbtc/)? You can obtain RBTC using [these exchanges](https://rootstock.io/rbtc/).
 
 ## Technical information
 

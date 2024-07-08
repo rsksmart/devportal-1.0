@@ -45,7 +45,7 @@ cd rootstock-rs
 cargo add alloy --git https://github.com/alloy-rs/alloy
 ```
 
-Find more about Alloy setup using meta crate [here](https://alloy.rs/getting-started/installation.html)
+Find more about [Alloy setup using meta crate](https://alloy.rs/getting-started/installation.html)
 
 > Note: All the dependencies required are mentioned in the `.toml` file below. Copy and paste into the `cargo.toml` file.
 
