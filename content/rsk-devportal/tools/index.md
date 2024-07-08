@@ -19,7 +19,6 @@ Explore a suite of fully compatible developer tools and guides designed to empow
 | Sovryn Fast BTC                                | Bridges                         | [Sovryn](https://wiki.sovryn.com/en/sovryn-dapp/bridge)                                           |
 | Rootstock Explorer                             | Explorers                       | [Explorer](https://dev.rootstock.io/tools/explorer/)                                                |
 | Blockscout                                     | Explorers                       | [Blockscout](https://rootstock.blockscout.com/)                                                       |
-| RIF Rollup Explorer                            | Explorers                       | [Rollup Explorer](https://dev.rootstock.io/rif/rollup/dapps/)                                              |
 | Coinfirm                                       | Data and Analytics              | [Coinfirm](https://www.coinfirm.com/products/aml-platform/)                                         |
 | Covalent                                       | Data and Analytics              | [Covalent](https://dev.rootstock.io/solutions/covalent/)                                            |
 | DappRadar                                      | Data and Analytics              | [dApps](https://dappradar.com/)                                                                  |
