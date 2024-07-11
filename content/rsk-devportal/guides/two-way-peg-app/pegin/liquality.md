@@ -8,6 +8,10 @@ layout: rsk
 ---
 
 
+> We regret to inform you that the Liquality Wallet has been discontinued. To continue managing your assets seamlessly, we encourage you 
+> to transition to alternative wallet solutions as all functionality has ceased. 
+> Find the best solution for your needs at [Rootstock   Wallets](https://blog.rootstock.io/noticia/rootstock-wallets/).
+
 ## Using Liquality Software wallet to perform a peg-in
 
 In this guide, we will be using the [2 way peg app](https://app.2wp.rootstock.io/) application for unlockcing liquality, access peg-in to use liquality, and verify if peg-in is active.

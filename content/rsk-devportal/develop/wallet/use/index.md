@@ -157,7 +157,6 @@ The following wallets support [RBTC](/rsk/rbtc/) and [RIF](/rif/token) tokens, c
 - [Ledger](/wallet/use/ledger)
 - [Ledger Nano](https://ledger.com)
 - [Lead Wallet](https://leadwallet.io)
-- [Liquality Wallet](/solutions/liquality/)
 - [Math Wallets](https://blog.mathwallet.org/?p=1625)
 - [Metamask Browser Extention](https://metamask.io/download)
 - [Metamask Mobile Wallet](/wallet/use/metamask)

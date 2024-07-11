@@ -8,6 +8,10 @@ layout: rsk
 ---
 
 
+> We regret to inform you that the Liquality Wallet has been discontinued. To continue managing your assets seamlessly, we encourage you 
+> to transition to alternative wallet solutions as all functionality has ceased. 
+> Find the best solution for your needs at [Rootstock   Wallets](https://blog.rootstock.io/noticia/rootstock-wallets/).
+
 ![2 way peg app (peg-out)](/assets/img/guides/two-way-peg-app/pegout.gif)
 
 ## Performing a peg-out transaction using Ledger and Liquality

@@ -12,6 +12,8 @@ render_features: 'custom-terminals'
 
 > Sunsetting Truffle: Truffle has been sunsetted, see [Consensys Announcement](https://consensys.io/blog/consensys-announces-the-sunset-of-truffle-and-ganache-and-new-hardhat). Rootstock will no longer support and encourage immediate migration to [Hardhat](/tools/hardhat/).
 
+
+
 # Step 1 : Install RSK local node
 
 RSK node can be installed on all major platforms,

@@ -8,6 +8,11 @@ layout: rsk
 ---
 ![2 way peg app (peg-out)](/assets/img/guides/two-way-peg-app/pegout.gif)
 
+
+> We regret to inform you that the Liquality Wallet has been discontinued. To continue managing your assets seamlessly, we encourage you 
+> to transition to alternative wallet solutions as all functionality has ceased. 
+> Find the best solution for your needs at [Rootstock   Wallets](https://blog.rootstock.io/noticia/rootstock-wallets/).
+
 This section contains detailed instructions on how to review funds in Bitcoin after a pegout by:
 
 - Convert [RBTC - BTC](#converting-rbtc-to-btc)
