@@ -7,6 +7,10 @@ tags: rif-wallet, rif, rootstock, wallet, smart contracts
 layout: rsk
 ---
 
+> We regret to inform you that the Liquality Wallet has been discontinued. To continue managing your assets seamlessly, we encourage you 
+> to transition to alternative wallet solutions as all functionality has ceased. 
+> Find the best solution for your needs at [Rootstock   Wallets](https://blog.rootstock.io/noticia/rootstock-wallets/).
+
 There are several ways to fund your RIF Wallet.
 
 In this section, we will cover;

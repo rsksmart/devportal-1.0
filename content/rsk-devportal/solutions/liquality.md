@@ -7,6 +7,10 @@ render_features: 'tables-with-borders'
 layout: "rsk"
 ---
 
+> We regret to inform you that the Liquality Wallet has been discontinued. To continue managing your assets seamlessly, we encourage you 
+> to transition to alternative wallet solutions as all functionality has ceased. 
+> Find the best solution for your needs at [Rootstock   Wallets](https://blog.rootstock.io/noticia/rootstock-wallets/).
+
 The Liquality Wallet is a browser extension for accessing Bitcoin, Rootstock, and Ethereum applications. This MetaMask alternative supports multiple blockchains and provides the easiest way to flip between BTC, ETH/ERC20s, and Rootstock tokens with built-in one-click atomic swaps.
 
 ![Liquality-banner-image](/assets/img/solutions/Liquality/Market-Swaps-Scene.png)
