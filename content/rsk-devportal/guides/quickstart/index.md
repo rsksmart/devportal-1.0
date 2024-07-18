@@ -108,8 +108,8 @@ If you're already acquainted with creating and deploying smart contracts on othe
                         </div>
                     </a>
                     <div class="btn-container">
-                        <a href="/guides/quickstart/hardhat/"></a>
-                        <a class="green" href="/guides/quickstart/hardhat/">Get Started</a>
+                        <a href="/guides/quickstart/web3-python/"></a>
+                        <a class="green" href="/guides/quickstart/web3-python/">Get Started</a>
                     </div>
                 </div>
             </div>
