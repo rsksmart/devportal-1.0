@@ -29,7 +29,8 @@ Thus, the smart contract/dApp development skills that you’re used to will tran
 
 - [Solidity](https://docs.soliditylang.org/) is the most popular programming language for implementing smart contracts.
   The bytecode and ABI that the Solidity compiler, `solc`, outputs can be used to deploy and interact with smart contracts on Rootstock, thanks to the compatibility between RVM and EVM.
-  See [The Complete Full Stack Guide on Rootstock](https://developers.rsk.co/guides/full-stack-dapp-on-rsk/part1-overview/) which will guide you through the process of developing and deploying a Solidity smart contract on Rootstock.
+  See latest version of Solidity supported by Rootstock in [prerequisites](/guides/starter-kits/hackathon-starter/).
+
 
 ## Ethereum Compatible JSON RPC
 

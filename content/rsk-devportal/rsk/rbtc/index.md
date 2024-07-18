@@ -31,7 +31,7 @@ See [supported wallets](/wallet/use/).
     </tr>
     <tr>
       <td scope="row">Circulating supply</td>
-      <td><a href="https://backend.explorer.rsk.co/circulating/circulatingSupply" target="_blank">API</a></td>
+      <td><a href="https://be.explorer.rootstock.io/circulating" target="_blank">API</a></td>
     </tr>
     <tr>
       <td scope="row">Contract Type</td>
@@ -69,7 +69,7 @@ See [supported wallets](/wallet/use/).
     </tr>
     <tr>
       <td scope="row">Circulating supply</td>
-      <td><a href="https://backend.explorer.testnet.rsk.co/circulating/circulatingSupply" target="_blank">API</a></td>
+      <td><a href="https://be.explorer.testnet.rootstock.io/circulating" target="_blank">API</a></td>
     </tr>
     <tr>
       <td scope="row">Contract Type</td>
