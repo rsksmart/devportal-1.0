@@ -8,7 +8,7 @@ tags: overview, explorer, rootstock, Blockscout, search, blocks, transactions, m
 
 ## Rootstock On Blockscout
 
-Blockscout is a robust open-source tool for exploring transactions on any EVM blockchain, including Rootstock, the leading Bitcoin sidechain1. With Blockscout, you can access in-depth information, verify and interact with smart contracts, create and manage your account, view advanced statistics, and more.
+Blockscout is a robust open-source tool for exploring transactions on any EVM blockchain, including Rootstock, the leading Bitcoin sidechain. With Blockscout, you can access in-depth information, verify and interact with smart contracts, create and manage your account, view advanced statistics, and more.
 
 <div align="center"><img width="100%" src="/assets/img/developer/explorer/blockscout-1.png" alt="Roostock blockscout page"/></div>
 

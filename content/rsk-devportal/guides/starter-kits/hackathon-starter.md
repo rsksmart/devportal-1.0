@@ -41,6 +41,8 @@ This section includes setup instructions for the [Quick Start Guide on Rootstock
         ```
 - C. RSKj
     - To install RSKj. See [Node Setup](#rskj-node-setup).
+- D. Solidity Version
+    - The latest solidity version supported on Rootstock is: `0.8.19`.
 
 Make sure to adapt the commands based on your system and preferences. Always refer to the official documentation for the latest and most accurate information: [Node.js Downloads](https://nodejs.org/en/download) and [npm documentation](https://docs.npmjs.com/).
 
