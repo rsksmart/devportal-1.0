@@ -1,11 +1,11 @@
 ---
 menu_order: 700
-section_title: Deploy and Interact with a Smart Contract Using Web3.py
+section_title: Deploy and Interact with a Smart Contract using Web3.py
 menu_title: Getting Started with Web3.py
 layout: rsk
-title: Deploy and Interact with a Smart Contract Using Web3.py
+title: Deploy and Interact with a Smart Contract using Web3.py
 tags: guides, rsk, ethereum, python, web3
-description: "Deploy and Interact with a Smart Contract Using Web3.py"
+description: "Deploy and Interact with a Smart Contract using Web3.py"
 render_features: 'collapsible'
 ---
 
