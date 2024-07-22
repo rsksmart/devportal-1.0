@@ -1333,6 +1333,7 @@ params: [
   - `contractAddress `: `DATA`, 20 Bytes - The contract address created, if the transaction was a contract creation, otherwise `null`.
   - `logs`: `Array` - Array of log objects, which this transaction generated.
   - `logsBloom`: `DATA`, 256 Bytes - Bloom filter for light clients to quickly retrieve related logs.
+  - `effectiveGasPrice`: `QUANTITY` - The actual value per gas deducted on the transaction.
 
 It also returns _either_ :
 
@@ -1361,7 +1362,8 @@ curl -X POST --data '{"jsonrpc":"2.0","method":"eth_getTransactionReceipt","para
          // logs as returned by getFilterLogs, etc.
      }, ...],
      logsBloom: "0x00...0", // 256 byte bloom filter
-     status: '0x1'
+     status: '0x1',
+     effectiveGasPrice: '0x64' // 100
   }
 }
 ```
