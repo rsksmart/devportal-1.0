@@ -114,7 +114,7 @@ To deploy the counter contract on Rootstock mainnet or testnet, further configur
 
 #### Environment Configuration
 
-Once you have an account with a private key and a API key to interact with the RPC API, create a `.env` file in the root of the foundry project and add the variables. 
+Once you have an account with a private key and an API key to interact with the RPC API, create a `.env` file in the root of the foundry project and add the variables. 
 
 Foundry automatically loads a `.env` file present in the project directory.
 
