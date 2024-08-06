@@ -24,7 +24,7 @@ npm i web3 @rsksmart/rns
 import Web3 from 'web3'
 import RNS from '@rsksmart/rns'
 
-const web3 = new Web3('https://rpc.testnet.rootstock.io/API_KEY') // or 'https://rpc.rootstock.io/'
+const web3 = new Web3('https://rpc.testnet.rootstock.io/API_KEY') // or 'https://rpc.mainnet.rootstock.io/API_KEY'
 const rns = new RNS(web3)
 ```
 
